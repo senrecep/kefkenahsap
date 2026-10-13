@@ -329,6 +329,13 @@ F2: Rehber dizini + yazı şablonu (TOC, FAQ, "AI'ya kopyala" butonu, yazar kutu
 6. info@kefkenahsap.com aktifleşince NAP güncellemesi (tek global alan).
 7. Müşteri yorumları ve referans logo izinleri.
 
+## 13.1 Lansman sonrası kullanıcı işleri (not alındı, en sonda yapılacak)
+- [ ] GSC: Domain mülkü doğrulaması (TXT → Cloudflare'e eklenir), GA4 ↔ GSC bağlantısı, Performans (16 ay, sorgu+sayfa) ve Sayfalar raporu CSV dışa aktarımı → `docs/legacy/gsc/`.
+- [ ] GBP: ana kategori (Millwork shop → asıl işi anlatan kategori) + ek kategoriler, 11 hizmet (site kategorileriyle aynı adlar), fotoğraflar, gönderiler, yorum isteme linkinin eski müşterilere gönderimi, website linki → `https://www.kefkenahsap.com/tr?utm_source=gbp&utm_medium=organic`.
+- [ ] Instagram kullanıcı adının marka ile tutarlı hale getirilmesi → siteSettings'te URL güncelle.
+- [ ] Murat Şen'in mesleğe başlama yılının teyidi → siteSettings (o zamana kadar yalnızca "2009'dan beri").
+- [ ] info@kefkenahsap.com (MX/Mailu) — ayrı iş.
+
 ## 14. Riskler
 | Risk | Etki | Önlem |
 |---|---|---|

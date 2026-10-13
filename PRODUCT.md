@@ -37,14 +37,15 @@ The site is a public portfolio and lead generator, replacing a 2018 WordPress si
 - Work categories (11): Ahşap Yapılar, Boya Tamir ve Bakım, Çiçeklik ve Oturma Grubu, Deck ve Zeminler, Ireko-Teak, Kapı Dolap ve Seperatör, Köprü ve İskele, Korkuluk ve Çit, Merdivenler, Mobilya ve Cila, Pergola ve Kamelyalar.
 - Content model: categories, tags (wood species, setting, color/finish, before/after/process/detail), projects (location, year, wood, size, duration, finish, testimonial), guides/blog, admin-managed region pages, references.
 - Location: Mavigöl, Münteha Sk. No:31, Arnavutköy/İstanbul. Service area is Istanbul first, then all of Türkiye.
-- Contact channels: WhatsApp/GSM 0532 295 84 16, landline 0212 322 43 59, kefkenahsapdekorasyon@gmail.com (info@kefkenahsap.com once active). Instagram, Facebook and a Google Business Profile exist.
+- Contact channels: WhatsApp/GSM 0532 295 84 16, landline 0212 322 43 59, kefkenahsapdekorasyon@gmail.com (info@kefkenahsap.com once active). Instagram (instagram.com/kefken_ahsap_dek_gokturk; the handle will be renamed), Facebook (facebook.com/kefkenahsapdekorasyon) and a verified Google Business Profile (5.0, 9 reviews) exist.
 
 ## Capabilities and Constraints
 
 - Every photo is a real job photo. Most are older phone or Facebook-era shots of mixed quality and resolution, and many carry an existing www.kefkenahsap.com watermark, which stays. 568 curated launch images are in kefken-data/Webiste; a larger archive (Kaliteli, 3250) will be added later.
 - Galleries hold many images (up to ~140 per category), so they need masonry, infinite scroll, a lightbox, and an SSR page per image.
 - Performance targets: Lighthouse mobile 95+, Core Web Vitals green, initial JS ≤150KB gz. Any 3D or WebGL loads lazily and is optional.
-- Undecided: founding year, founder/master's name, team size, project count. These are admin placeholders; do not state "30 years" until it is confirmed.
+- Confirmed: the company was founded in **2009**. The founder and master craftsman is **Murat Şen** (born 1968). He grew up working with his carpenter father and became a full-time craftsman in his early twenties. This is a two-generation family craft.
+- Undecided: the exact year Murat Şen started as a full-time craftsman, team size, project count. These are admin placeholders. Until they are confirmed, write "since 2009" and never "30 years".
 
 ## Brand Commitments
 
