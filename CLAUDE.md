@@ -1,0 +1,89 @@
+# kefkenahsap.com — instructions for agents
+
+The site of a wood fabrication and installation contractor in Istanbul. Next.js 16 + Payload CMS 3 in one app, bilingual (TR/EN, AR/RU/DE later).
+
+**Read in this order before any work:**
+1. `docs/PLAN.md` — the approved plan. Single source of truth for architecture, data model, URLs, SEO/GEO, AI and phases.
+2. `PRODUCT.md` — users, positioning, brand commitments, and claims that must not be invented.
+3. `docs/legacy/decisions.md` — the user's confirmed decisions (#1–#59). Don't reopen them; ask if something seems wrong.
+4. The active goal in `.omc/ultragoal/` — which phase is running and its acceptance criteria.
+
+User-visible copy is in Turkish. Code, identifiers, commits and tests are in English.
+
+## Hard rules
+
+- **Never invent a claim.** Years of experience ("30 yıl"), project counts, prices, testimonials and certificates come only from the admin (siteSettings / collections). An empty field renders nothing.
+- **Don't add a feature outside the plan.** If something is needed, add it to the "Açık noktalar" section of `docs/PLAN.md` and ask.
+- Stack is fixed: bun, Next 16 App Router, Payload 3.x (the version pinned in the spike), Postgres 17, Tailwind 4, next-intl 4, Vercel AI SDK + OpenRouter, Motion / GSAP / OGL (lazy loaded only). Ask before adding a new dependency. Don't add a package for something a few lines can do.
+- Next 16: `proxy.ts` (not `middleware`), `revalidateTag(tag, 'max')`.
+- No hardcoded locales: always use `routing.locales` and Payload `localization`. Write CSS with logical properties (`ms-`/`me-`, `start`/`end`) — Arabic RTL comes later.
+- Media is served directly from the CDN (`media.kefkenahsap.com`), never through `/api/media/file`. Lead photos go only to the private bucket.
+- Performance budget: initial JS ≤150KB gz, Lighthouse mobile ≥95, CLS <0.05. Any heavy library goes behind a dynamic import.
+- Accessibility: WCAG 2.2 AA. Published images must have approved alt text. Admin tap targets are ≥48px.
+- Secrets come only from env. `.env*` is never committed.
+
+## Development: TDD (red → green → refactor)
+
+Use the `oh-my-claudecode:tdd` workflow. One test, one implementation, small steps.
+
+1. **Write the test first** and watch it fail for the right reason. Compute expected values independently of the code: from the plan, the legacy data or a hand calculation. Never copy them from the implementation's output.
+2. Write the minimum implementation to pass it, then refactor.
+3. `test.skip`, `.only`, empty or placeholder tests, and TODO branches are blockers, not done.
+4. Commit only when tests pass.
+
+**Test seams** (pure logic goes here, kept separate from Payload and Next):
+
+| Seam | Location | What it tests |
+|---|---|---|
+| Legacy redirect resolver | `src/lib/legacy/` | Every URL in `docs/legacy/wp-media.json`: URI decode + NFC, `-WxH`/`-N`/`.jpg1_` suffixes, trailing slash, Turkish characters → 301 target or 410, in a single hop |
+| Locale "published" rule | `src/lib/i18n/` | slug + title filled → hreflang/sitemap/noindex decision |
+| WhatsApp message builder | `src/lib/whatsapp.ts` | Template per page type, URL encoding |
+| SEO/JSON-LD builders | `src/lib/seo/` | Output for each schema type; no field missing from the visible text |
+| Slug / SEO filename | `src/lib/slug.ts` | Turkish → ASCII, length limit, uniqueness per locale |
+| Lead validation + retention | `src/lib/leads/` | Required fields, file limits, 2-year deletion date (with the fake time provider) |
+| AI output schemas | `src/ai/` | Zod schemas, JSON repair, model-chain fallback (fake provider; no real API in tests) |
+| Gallery cursor / masonry layout | `src/lib/gallery/` | Cursor stability, column distribution from known aspect ratios |
+
+- Unit/integration: Vitest. E2E: Playwright (smoke, the full legacy redirect map, i18n/hreflang, sitemap, JSON-LD, form, admin upload/reorder). Accessibility: axe. Performance: Lighthouse CI.
+- Payload integration tests use a real Postgres (compose `postgres`). Don't mock the DB; mock only external services (OpenRouter, Resend, Cloudflare, Turnstile) at the seam.
+
+## Error handling: tsentials
+
+Use [`tsentials`](https://github.com/senrecep/tsentials) (latest at plan time: v0.1.12). Install its skills once at the start of F0: `npx skills add senrecep/tsentials`. Use them for the correct API and import paths.
+
+- **Return `Result<T>` from domain and service functions.** Don't throw inside the domain. Every seam above returns `Result<T>` / `ResultAsync<T>`.
+- Create errors with `Err.*`. Codes are `Area.Reason`, e.g. `Lead.PhoneRequired`, `Legacy.UnknownMedia`, `AI.BudgetExceeded`, `Translate.SchemaMismatch`.
+- External HTTP (Cloudflare purge, OpenRouter `/models`, Turnstile verify) goes through `tsentials/http` `fetchResult`. JSON parsing goes through `tsentials/json` `parseAndValidate` / `safeJsonParse`.
+- Write async chains with `fromAsync(...).andThen().ensure().map()`. Don't scatter `await`/`try` around them.
+- Get time from `DateTimeProvider` (`SystemDateTimeProvider` in production, `createFakeDateTimeProvider` in tests). Never call `new Date()` directly in the domain.
+- Use `Maybe<T>` for optional content (founding year, price range, testimonial). This enforces the "no claim when empty" rule in types.
+- **Edges only:** in Payload hooks/endpoints and Next route handlers/server actions, unwrap the `Result` with `match`. On failure, map it to `APIError` / an HTTP status / a form error. That is the only place `try/catch` and `throw` are allowed.
+- Import subpaths only (`tsentials/result`, `tsentials/errors`, …) — this keeps them tree-shakeable.
+
+## Design: impeccable
+
+- `PRODUCT.md` is in place (init done). The visual direction is the **category standard executed at full craft**. The quality bar is `docs/PLAN.md` §11 (Millboard, Archadeck, Oakwrights).
+- At the start of F1, run `/impeccable hooks on`. The design detector then runs automatically after every UI file edit.
+- Before writing the first public UI, follow impeccable `new-work` (code-led). The direction contract goes into the surface brief. Finish with the finish review, then write `DESIGN.md` + `.impeccable/design.json`.
+- Admin screens are Operate mode, guides are Read mode, and galleries are Experience mode.
+
+## AI content
+
+- Prompts live in `src/ai/prompts/` as TS modules with a version constant. Turkish rules are in `docs/AI-PROMPTS.md`: correct Turkish characters, apostrophe before suffixes on proper nouns, no translationese, no list of clichés ("eşsiz", "hayallerinizdeki"…), and no invented facts.
+- Nothing is published automatically. AI output always lands in a `pending`/draft state.
+- Seed metadata (568 images) is prepared locally with Claude and reviewed, then loaded as `approved`. Runtime `tagImage` is for new uploads only.
+
+## Commands (fill in during F0)
+
+```bash
+bun install
+bun dev                      # Next + Payload (localhost:3000, /admin)
+bun test                     # vitest
+bun run test:e2e             # playwright
+bun run typecheck && bun run lint
+docker compose --profile local up -d   # postgres + minio (+ umami)
+```
+
+## Work order
+
+Phases come from the ultragoal ledger: F0 spike → F1 launch → F2 content and AI tools → F3 expansion. Before you finish a goal, check its acceptance criteria with evidence (test output, Lighthouse report, screenshots) and get an independent review from the `verifier` / `code-reviewer` agent.

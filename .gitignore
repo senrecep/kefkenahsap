@@ -1,0 +1,26 @@
+# deps / build
+node_modules/
+.next/
+out/
+dist/
+coverage/
+playwright-report/
+test-results/
+*.tsbuildinfo
+next-env.d.ts
+
+# env / secrets
+.env
+.env.*
+!.env.example
+
+# OMC runtime state (ultragoal ledger is committed on purpose)
+.omc/*
+!.omc/ultragoal/
+
+# impeccable local config
+.impeccable/config.local.json
+
+# misc
+.DS_Store
+*.log

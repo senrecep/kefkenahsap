@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "createdAt": "2026-10-13T23:40:40.734Z",
+  "updatedAt": "2026-10-13T23:40:40.734Z",
+  "briefPath": ".omc/ultragoal/brief.md",
+  "goalsPath": ".omc/ultragoal/goals.json",
+  "ledgerPath": ".omc/ultragoal/ledger.jsonl",
+  "claudeGoalMode": "aggregate",
+  "goals": [
+    {
+      "id": "G001-f0-spike",
+      "title": "F0 Spike",
+      "objective": "Scaffold Next16+Payload3+Postgres+MinIO and verify PLAN §12 F0 items (a)-(i): orderable join, S3 direct CDN URLs + sharp sizes + custom loader, Lexical live preview, bun standalone Docker on Dokploy, AR admin RTL, per-locale slug uniqueness, jobs.autoRun, proxy.ts single-hop legacy redirect, AI SDK generateObject+OpenRouter; install tsentials skills. Acceptance: docs/SPIKE.md with pass/fail evidence per item, pinned versions, PLAN.md updated for any failure; tests green.",
+      "status": "pending",
+      "attempt": 0,
+      "createdAt": "2026-10-13T23:40:40.734Z",
+      "updatedAt": "2026-10-13T23:40:40.734Z"
+    },
+    {
+      "id": "G002-f1a-foundations",
+      "title": "F1a Foundations",
+      "objective": "First run '/impeccable hooks on'. Repo, compose (app/postgres/umami/glitchtip/minio profiles), Dockerfile, GitHub Actions CI (lint, typecheck, vitest, playwright, lighthouse) to GHCR + Dokploy webhook, staging. Acceptance: CI green on main, staging deploy reachable with noindex+basic auth.",
+      "status": "pending",
+      "attempt": 0,
+      "createdAt": "2026-10-13T23:40:40.734Z",
+      "updatedAt": "2026-10-13T23:40:40.734Z"
+    },
+    {
+      "id": "G003-f1b-content-model-admin",
+      "title": "F1b Content model & admin",
+      "objective": "All collections/globals/roles per PLAN §4, editor-only menu, custom mobile-first Galeri view (upload, approve, drag-reorder, PWA), leads with private bucket and 2-year retention job. Acceptance: TDD seams green; editor can add/reorder/approve a photo from a phone in a recorded 15-min usability test.",
+      "status": "pending",
+      "attempt": 0,
+      "createdAt": "2026-10-13T23:40:40.734Z",
+      "updatedAt": "2026-10-13T23:40:40.734Z"
+    },
+    {
+      "id": "G004-f1c-seed-legacy-redirects",
+      "title": "F1c Seed & legacy redirects",
+      "objective": "Locally prepare 568 image metadata with Claude (reuse pipeline 27/09 review tools), seed approved media in legacy order, CLIP project suggestions, legacy redirect resolver for 16 pages + attachments + all 14,468 media URLs (301/410). Acceptance: redirect E2E covers every URL in docs/legacy/wp-media.json in one hop; seed idempotent.",
+      "status": "pending",
+      "attempt": 0,
+      "createdAt": "2026-10-13T23:40:40.734Z",
+      "updatedAt": "2026-10-13T23:40:40.734Z"
+    },
+    {
+      "id": "G005-f1d-public-site-design",
+      "title": "F1d Public site & design",
+      "objective": "impeccable new-work (code-led, category standard; refs Millboard/Archadeck/Oakwrights): header/mobile action bar, homepage blocks, category, gallery (masonry+infinite+PhotoSwipe), image page, project, references, about, contact form (Turnstile, Resend), legal, 404, search, TR+EN. Acceptance: finish review 'ship', DESIGN.md + design.json written, axe 0 critical, Lighthouse mobile >=95 all templates.",
+      "status": "pending",
+      "attempt": 0,
+      "createdAt": "2026-10-13T23:40:40.734Z",
+      "updatedAt": "2026-10-13T23:40:40.734Z"
+    },
+    {
+      "id": "G006-f1e-seo-geo-analytics-launch",
+      "title": "F1e SEO/GEO, analytics & launch",
+      "objective": "PLAN §7 complete (metadata, hreflang via locale-published rule, single robots group, sitemaps, JSON-LD, llms.txt), 3-4 core guides, Umami + GA4 consent (page_locale), GlitchTip, Cloudflare DNS cutover from guzelhosting (MX preserved), GSC sitemap, GBP NAP check. Acceptance: post-launch 2 weeks 404=0 from legacy URLs, CWV green, conversions tracked.",
+      "status": "pending",
+      "attempt": 0,
+      "createdAt": "2026-10-13T23:40:40.734Z",
+      "updatedAt": "2026-10-13T23:40:40.734Z"
+    },
+    {
+      "id": "G007-f2-content-ai-tools",
+      "title": "F2 Content & AI tools",
+      "objective": "Remaining guides (AI draft + human approval), admin 'AI ile çevir'/'AI ile taslak' buttons, aiSettings model chains with OpenRouter model picker + budget/cost panel, region pages with publishGate, OGL 3D wood samples, category texts/FAQs completed. Acceptance: no auto-publish path exists (test), budget stop works (test), geolyt score measured vs baseline.",
+      "status": "pending",
+      "attempt": 0,
+      "createdAt": "2026-10-13T23:40:40.734Z",
+      "updatedAt": "2026-10-13T23:40:40.734Z"
+    },
+    {
+      "id": "G008-f3-expansion",
+      "title": "F3 Expansion",
+      "objective": "AR (RTL), RU, DE locales; curated additions from Kaliteli archive; geolyt-driven improvement round. Acceptance: RTL layout verified by screenshots, hreflang correct for 5 locales, Lighthouse budgets still met.",
+      "status": "pending",
+      "attempt": 0,
+      "createdAt": "2026-10-13T23:40:40.734Z",
+      "updatedAt": "2026-10-13T23:40:40.734Z"
+    }
+  ],
+  "claudeObjective": "Complete all ultragoal stories in .omc/ultragoal/goals.json: G001-f0-spike F0 Spike; G002-f1a-foundations F1a Foundations; G003-f1b-content-model-admin F1b Content model & admin; G004-f1c-seed-legacy-redirects F1c Seed & legacy redirects; G005-f1d-public-site-design F1d Public site & design; G006-f1e-seo-geo-analytics-launch F1e SEO/GEO, analytics & launch; G007-f2-content-ai-tools F2 Content & AI tools; G008-f3-expansion F3 Expansion"
+}

@@ -1,0 +1,130 @@
+{
+  "title": "Kefken Ahşap — görsel dünya",
+  "question": "Zar 'Uygulama Paftası' yönünü atadı. Bunu seçebilir, alternatifi alabilir ya da yeniden zar atabilirsiniz.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Uygulama Paftası",
+      "kicker": "THE ROLL",
+      "lineage": "Aydınger üzerine kurşun kalem uygulama çizimleri, ozalit kopyalar ve pafta antetleri",
+      "thesis": "Her işin gerçek fotoğrafı, ölçüsü, ahşap türü ve yeri işaretlenmiş bir uygulama paftası olarak sunulur.",
+      "palette": ["#EEF1F0", "#2B2E2F", "#3F4BA0", "#C8372D", "#009444"],
+      "materials": ["aydınger (tracing paper)", "ozalit mavi baskı", "kurşun kalem ölçü çizgileri", "pafta anteti"],
+      "viewport": "Sayfanın üçte ikisini büyük bir deck fotoğrafı kaplar; üzerine ölçü çizgileri ve not okları çizilir ('Iroko 21×145 · 240 m² · Riva'). Sağda pafta anteti yer alır: logo, 'Ne yaptırmak istiyorsunuz?' çipleri ve WhatsApp butonu. Üst menü bir pafta dizini gibidir (A-01 Deck, A-02 Pergola…).",
+      "risk": "Fotoğraflar küçülürse villa sahibine soğuk ve mühendislik gibi gelebilir; sıcaklığı büyük fotoğraflar ve el yazısı notlar taşımalı.",
+      "raised": [
+        {"from": "challenger-coil", "raise": "Tahta sıraları: Dikey ritim bir tahta modülüne bağlanır, her bölüm bir sıra olarak döşenir."},
+        {"from": "challenger-detector", "raise": "Odaklama: Bir not ya da etiket seçildiğinde çizimin geri kalanı soluklaşır."},
+        {"from": "challenger-tanaka", "raise": "Üç mürekkep: Grafit, ozalit mavisi ve düzeltme kırmızısı kullanılır; yeşil yalnızca antet mührüne çıkar."},
+        {"from": "challenger-brine", "raise": "Eskime durumları: Bakım işleri tarihli bir durum skalasıyla gösterilir (yeni → grileşmiş → yenilendi)."}
+      ],
+      "html": ".impeccable/mocks/decision/assigned.html"
+    },
+    {
+      "id": "model-pick",
+      "label": "Kereste Deposu",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "Kereste istifleri, uç boyası mühürleri ve stencil parti numaraları",
+      "thesis": "Her kategori, istifteki bir tahta ucudur: boyalı mühür, stencil ad ve adet.",
+      "palette": ["#1E1D1B", "#C08A55", "#2F5DA8", "#E3B23C", "#B5372A"],
+      "materials": ["kesit/uç damarı", "sprey stencil", "uç mühür boyası", "çelik çember"],
+      "viewport": "İlk ekranı bir istifin uç kesitleri doldurur. Her uç bir kategoridir, renkli mühürle ve stencil yazıyla işaretlenir; tıklayınca o işin fotoğraf yüzü açılır. Altta WhatsApp çubuğu yer alır.",
+      "risk": "Ahşap dokusu her yerde olunca bu kategorideki çoğu sitenin vardığı kahverengi tona kayar; tanıdık bir yön.",
+      "html": ".impeccable/mocks/decision/model-pick.html"
+    },
+    {
+      "id": "challenger-coil",
+      "label": "Coiled Earth Tower",
+      "verdict": "declined",
+      "lineage": "toprak sarmal kule",
+      "thesis": "Sıra sıra yükselen yapım kaydı.",
+      "palette": ["#B4643C", "#6E4A2E", "#EDE3D3"],
+      "materials": ["kil sarmal", "astar dikiş"],
+      "viewport": "Yatay sıralar halinde yükselen kule.",
+      "risk": "Kil, ahşap müşterisine yabancı gelir.",
+      "case": "Birleşimi zayıf: Ziyaretçi kilde kendini bulmuyor.",
+      "kept": "Her satırın ölçüsünün kendi sırasına oturması: tahta sıraları ritmi.",
+      "hero": "https://impeccable.style/worlds/cards/clay-ceramics-fracture-coiled-earth-tower-hero.webp"
+    },
+    {
+      "id": "challenger-brine",
+      "label": "Pickling Brine Calendar",
+      "verdict": "declined",
+      "lineage": "turşu kavanozu takvimi",
+      "thesis": "Zamanla olgunlaşan durumlar.",
+      "palette": ["#E9EFE8", "#E2725B", "#9B2242", "#8A6A43"],
+      "materials": ["kavanoz camı", "kraft etiket"],
+      "viewport": "Mevsimlik kavanoz rafı.",
+      "risk": "Gıda dünyası ürünle ilgisiz.",
+      "case": "Birleşimi zayıf: Yalnızca bakım vaadine dokunuyor.",
+      "kept": "Zamana bağlı durum skalası: ahşabın eskime ve yenilenme aşamaları.",
+      "hero": "https://impeccable.style/worlds/cards/food-fermentation-culinary-theater-pickling-brine-calendar-hero.webp"
+    },
+    {
+      "id": "challenger-detector",
+      "label": "Particle Event Display",
+      "verdict": "declined",
+      "lineage": "çarpıştırıcı olay ekranı",
+      "thesis": "Bir izi seç, gerisi soluklaşsın.",
+      "palette": ["#0B0E14", "#5B7896", "#F2D23C", "#D2382E"],
+      "materials": ["dedektör halkaları", "iz çizgileri"],
+      "viewport": "Merkezden açılan halka kesiti.",
+      "risk": "Bilimsel karanlık; esnaf sıcaklığına ters.",
+      "case": "Birleşimi zayıf: Hedef kitle bağı yok.",
+      "kept": "Seç ve izole et: odaklanılan dışında her şey geri çekilir.",
+      "hero": "https://impeccable.style/worlds/cards/scientific-notation-particle-detector-event-display-hero.webp"
+    },
+    {
+      "id": "challenger-tanaka",
+      "label": "Tanaka Plane Portrait",
+      "verdict": "declined",
+      "lineage": "Ikko Tanaka afişleri",
+      "thesis": "Birkaç düz düzlem, sessiz grid.",
+      "palette": ["#F1EEE6", "#D9452B", "#2B3A67", "#D8A93B"],
+      "materials": ["düz renk düzlemleri"],
+      "viewport": "Düzlemlerden kurulmuş anıtsal figür.",
+      "risk": "Fotoğraf odaklı bir portfolyoyu soyutlar.",
+      "case": "Birleşimi zayıf: Gerçek fotoğrafların yerini alır.",
+      "kept": "Ekonomi: Az sayıda kendinden emin mürekkep.",
+      "hero": "https://impeccable.style/worlds/cards/tanaka-plane-portrait-hero.webp"
+    },
+    {
+      "id": "challenger-ink",
+      "label": "Fluid Ink Basin",
+      "verdict": "declined",
+      "lineage": "suminagashi",
+      "thesis": "Sayfanın kendisi sıvı bir malzeme.",
+      "palette": ["#F4F4F2", "#1F2A55", "#2A2A2A"],
+      "materials": ["ebru mürekkebi"],
+      "viewport": "Tek parça mürekkep havuzu.",
+      "risk": "GPU yükü ve konu dışı.",
+      "case": "Birleşimi zayıf: Performans bütçesi ve konuyla çelişiyor.",
+      "kept": "Kontrollere dürüst fiziksel adlar vermek."
+    },
+    {
+      "id": "challenger-menhera",
+      "label": "Menhera Pastel",
+      "verdict": "declined",
+      "lineage": "pastel karakter sayfası",
+      "thesis": "Tatlı ve sert birlikte.",
+      "palette": ["#F7A8C4", "#A8E6CF", "#111111"],
+      "materials": ["kalın kontur"],
+      "viewport": "Ortada maskot, motif bordür.",
+      "risk": "Marka ile tamamen uyumsuz.",
+      "case": "Birleşimi zayıf: Her iki eksende de kaybediyor.",
+      "kept": "Tekrarlayan motifin hep bütün birimler halinde kırılması."
+    }
+  ],
+  "reroll": {"registers": ["safer", "bolder"]},
+  "canon": true,
+  "canonCard": {
+    "label": "Kategori standardı",
+    "thesis": "Bir ahşap/peyzaj firmasının beklenen sitesi, kusursuz işçilikle.",
+    "palette": ["#FFFFFF", "#1F2A1F", "#39B54A"],
+    "materials": ["temiz grid", "tam genişlik fotoğraf"],
+    "viewport": "Tam ekran fotoğraf slider, ortada başlık ve yeşil buton, altında hizmet kartları gridi.",
+    "risk": "Tasarım gereği rakiplerden ayırt edilemez.",
+    "html": ".impeccable/mocks/decision/canon.html"
+  },
+  "steer": true
+}
