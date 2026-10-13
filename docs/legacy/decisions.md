@@ -69,3 +69,5 @@
 57. Rehber: lansmanda 3-4 temel rehber, kalanı F2.
 58. 568 görselin metadatası lokalde Claude ile üretilip gözden geçirilir, seed'e approved olarak girer; runtime AI yalnızca yeni yüklemeler.
 59. Critic düzeltmeleri plana işlendi: WebP-only, medya doğrudan CDN (disablePayloadAccessControl), lead foto private bucket, dil-yayında sinyali = slug+title dolu, untranslated = sadece noindex, tek robots grubu, jobs.autoRun, purge_everything, KVKK yurt dışı aktarım.
+60. Altyapı: mevcut private repo senrecep/kefkenahsap kullanılır (eski içerik archive/gemini-plan), default main, development dalı → development.kefkenahsap.com (Dokploy `kefkenahsap` projesinde `development` ortamı). Staging yerine development.
+61. Cloudflare zone zaten aktif; MX yok (info@ ayrı iş, Mailu ile). Lansmanda yalnızca apex/www A kaydı çevrilir.

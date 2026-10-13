@@ -260,8 +260,8 @@ F2: Rehber dizini + yazı şablonu (TOC, FAQ, "AI'ya kopyala" butonu, yazar kutu
 
 ## 10. Altyapı, CI/CD, güvenlik
 
-- **GitHub** repo; Actions: `lint` (Biome veya ESLint — AÇIK: kullanıcının diğer projeleriyle hizalanacak), `typecheck`, `vitest`, `playwright` (smoke + redirect haritası + i18n/hreflang + sitemap + JSON-LD + form + admin upload/sıralama), Lighthouse CI → Docker image → **GHCR** → Dokploy deploy webhook. `main` → prod, `staging` → `staging.kefkenahsap.com` (noindex + basic auth).
-- **Cloudflare**: DNS güzelhosting'den taşınır (MX kayıtları korunur), proxy açık, SSL Full (strict), HTTP/3, Early Hints, Brotli; Cache Rules: `/_next/static/*` ve medya 1 yıl immutable, HTML edge 5 dk + Payload purge, `/admin` `/api` bypass; Turnstile (form); R2 custom domain `media.kefkenahsap.com`.
+- **GitHub** repo; Actions: `lint` (Biome veya ESLint — AÇIK: kullanıcının diğer projeleriyle hizalanacak), `typecheck`, `vitest`, `playwright` (smoke + redirect haritası + i18n/hreflang + sitemap + JSON-LD + form + admin upload/sıralama), Lighthouse CI → Docker image → **GHCR** → Dokploy deploy webhook. `main` → prod, `development` → **`development.kefkenahsap.com`** (noindex + basic auth; staging'in yerine).
+- **Cloudflare**: zone zaten Cloudflare'de (Free plan, SSL Full); lansmanda yalnızca apex/www A kayıtları güzelhosting'den (104.247.167.3) sunucuya çevrilir, cPanel kayıtları WP yedeği için kalır. **MX kaydı yok** → @kefkenahsap.com e-postası şu an çalışmıyor (info@ ayrı iş; sunucudaki Mailu ile açılabilir). proxy açık, SSL Full (strict), HTTP/3, Early Hints, Brotli; Cache Rules: `/_next/static/*` ve medya 1 yıl immutable, HTML edge 5 dk + Payload purge, `/admin` `/api` bypass; Turnstile (form); R2 custom domain `media.kefkenahsap.com`.
 - **Güvenlik**: Payload auth (admin/editor, güçlü şifre, login rate limit, opsiyonel 2FA — AÇIK), form: Turnstile + honeypot + rate limit + dosya türü/boyut doğrulama (≤10MB, image/*), lead fotoğrafları private bucket + imzalı URL, CSP + güvenlik başlıkları, secrets yalnızca Dokploy env.
 - **KVKK**: talep verisi yurt dışı servislerden geçer (Cloudflare, Resend, Gmail; foto/metin AI'ya **gönderilmez**) → aydınlatma metni ve rıza metninde yurt dışına aktarım açıkça belirtilir. Aydınlatma metni + çerez politikası (şablon; avukat kontrolü önerilir), form açık rıza kutusu, talepler 2 yıl sonra otomatik silinir (job), log'larda kişisel veri yok.
 
@@ -310,6 +310,15 @@ F2: Rehber dizini + yazı şablonu (TOC, FAQ, "AI'ya kopyala" butonu, yazar kutu
 - AR (RTL), RU, DE; Kaliteli arşivinden seçme ekleme; geolyt skoruyla iyileştirme turu.
 
 ---
+
+## 12.1 Mevcut altyapı (2026-10-14 kuruldu)
+| Kaynak | Değer |
+|---|---|
+| GitHub | `senrecep/kefkenahsap` (private), default `main`; `development` dalı; eski Gemini planı `archive/gemini-plan` (ve dokunulmamış `master`) |
+| Dokploy | proje `kefkenahsap` (`mvsnFfucr2AZAO1cyJISY`); ortamlar `production` (mevcut, wood-material-calculator içerir) + `development` (`QdLx3aVSsHEUs0FXGlSXK`, boş) |
+| Sunucu | 45.196.28.107 (`ssh senrecep`, anahtar parola korumalı) |
+| Cloudflare | zone `04160cf76d6ba4ad5d37d83145eaae57`; `development.kefkenahsap.com` A → 45.196.28.107 (proxied) |
+| Sunucuda zaten olan | Uptime Kuma (tools), Umami/OpenObserve (monitoring), Seq (logging), Mailu (mail) — compose bunlara bağımlı değil; Uptime Kuma'ya site monitörü eklenir |
 
 ## 13. Açık noktalar (implementasyonu bloklamaz)
 1. Referans sitelerin mobil görünümü implementasyon başında telefonda gözle kontrol edilecek (araştırma ekran görüntüsüz yapıldı).
