@@ -1,7 +1,7 @@
 import type { GlobalConfig } from 'payload'
 
 import { isAdminField, isStaff } from '@/access'
-import { validateHref } from '@/lib/http/safe-href'
+import { validateHref, validateMapEmbedUrl } from '@/lib/http/safe-href'
 import { revalidateGlobal } from '@/hooks/revalidate'
 
 // Single source for NAP, founder facts, socials and WhatsApp templates (schema.org, footer, llms.txt read from here).
@@ -64,6 +64,14 @@ export const SiteSettings: GlobalConfig = {
                 { name: 'country', type: 'text', defaultValue: 'TR' },
                 { type: 'row', fields: [{ name: 'lat', type: 'number' }, { name: 'lng', type: 'number' }] },
                 { name: 'mapUrl', type: 'text', validate: validateHref, label: 'Yol tarifi linki (Google Maps)' },
+                {
+                  name: 'mapEmbedUrl',
+                  type: 'text',
+                  validate: validateMapEmbedUrl,
+                  label: 'Harita gömme adresi (Google Maps)',
+                  admin: { description: 'Google Haritalar → Paylaş → Harita yerleştirin: iframe kodundaki src="…" değeri. Ziyaretçi tıklayınca yüklenir.' },
+                },
+                { name: 'appleMapsUrl', type: 'text', validate: validateHref, label: 'Apple Haritalar linki' },
               ],
             },
             {

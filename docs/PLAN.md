@@ -179,7 +179,7 @@ Tüm metin alanları `localized: true`. Taslak/versiyon (`versions.drafts`) + Li
 - **Proje sayfası**: kapak + künye (yer, yıl, ahşap, m², süre, finish) → hikaye → sıralı galeri → müşteri yorumu → benzer projeler.
 - **Görsel sayfası**: büyük görsel, başlık/alt/açıklama, etiket çipleri, bağlı proje/kategori, ilgili görseller; lightbox açılınca URL `history.replaceState` ile bu sayfaya döner.
 - **Galeri**: tüm görseller, kategori + etiket filtreleri (URL query, SSR), infinite scroll, skeleton.
-- **İletişim**: form (ad*, telefon* + opsiyonel alanlar, ≤5 foto, KVKK onayı*), harita (statik görsel + "Yol tarifi" linki — iframe yok, performans), NAP, çalışma saatleri.
+- **İletişim**: form (ad*, telefon* + opsiyonel alanlar, ≤5 foto, KVKK onayı*), harita (tıklayınca yüklenen Google gömme haritası — tıklamadan Google'a istek yok, KVKK + performans; Google/Apple Haritalar linkleri; sahibinin isteği #143), NAP, çalışma saatleri.
 - **WhatsApp**: `wa.me/905322958416?text=` + bağlama göre şablon ("Merhaba, *Deck ve Zeminler* hakkında bilgi almak istiyorum. — kefkenahsap.com/tr/deck-ve-zeminler"); masaüstünde QR popover; mesai dışında bilgi notu; Umami event `whatsapp_click {page, category}`.
 - **Durumlar**: skeleton (galeri, arama), boş durum (etiket/arama sonucu yok), hata (form gönderilemedi → WhatsApp alternatifi), 404 (arama + popüler kategoriler).
 - **Çerez banner'ı**: Consent Mode v2; reddedince GA4 yüklenmez; Umami her zaman.

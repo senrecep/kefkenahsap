@@ -1429,6 +1429,11 @@ export interface SiteSetting {
     lat?: number | null;
     lng?: number | null;
     mapUrl?: string | null;
+    /**
+     * Google Haritalar → Paylaş → Harita yerleştirin: iframe kodundaki src="…" değeri. Ziyaretçi tıklayınca yüklenir.
+     */
+    mapEmbedUrl?: string | null;
+    appleMapsUrl?: string | null;
   };
   hours?:
     | {
@@ -1669,6 +1674,8 @@ export interface SiteSettingsSelect<T extends boolean = true> {
         lat?: T;
         lng?: T;
         mapUrl?: T;
+        mapEmbedUrl?: T;
+        appleMapsUrl?: T;
       };
   hours?:
     | T

@@ -52,5 +52,12 @@
       "RateLimited": "Zu viele Anfragen in kurzer Zeit. Versuchen Sie es in ein paar Minuten erneut oder schreiben Sie per WhatsApp.",
       "SaveFailed": "Ihre Anfrage konnte gerade nicht gespeichert werden. Bitte versuchen Sie es erneut oder schreiben Sie per WhatsApp."
     }
+  },
+  "Map": {
+    "show": "Karte anzeigen",
+    "note": "Die Karte wird von Google geladen.",
+    "title": "Unser Standort (Google Maps)",
+    "google": "In Google Maps öffnen",
+    "apple": "In Apple Karten öffnen"
   }
 }

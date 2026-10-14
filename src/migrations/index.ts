@@ -18,6 +18,7 @@ import * as migration_20261014_130823_media_w800 from './20261014_130823_media_w
 import * as migration_20261014_144607_ru_de_locales from './20261014_144607_ru_de_locales';
 import * as migration_20261014_145205_ar_locale from './20261014_145205_ar_locale';
 import * as migration_20261014_161144_media_portrait from './20261014_161144_media_portrait';
+import * as migration_20261014_220922_contact_map from './20261014_220922_contact_map';
 
 export const migrations = [
   {
@@ -118,6 +119,11 @@ export const migrations = [
   {
     up: migration_20261014_161144_media_portrait.up,
     down: migration_20261014_161144_media_portrait.down,
-    name: '20261014_161144_media_portrait'
+    name: '20261014_161144_media_portrait',
+  },
+  {
+    up: migration_20261014_220922_contact_map.up,
+    down: migration_20261014_220922_contact_map.down,
+    name: '20261014_220922_contact_map'
   },
 ];

@@ -4,6 +4,7 @@ import type { ReactNode } from 'react'
 
 import { GalleryFilters } from '@/components/gallery/GalleryFilters'
 import { GalleryGrid } from '@/components/gallery/GalleryGrid'
+import { LocationMap } from '@/components/site/LocationMap'
 import { buttonClass } from '@/components/ui/button'
 import { JsonLd } from '@/components/seo/JsonLd'
 import { Container } from '@/components/ui/Container'
@@ -265,11 +266,7 @@ export async function Contact({ locale, heading }: Heading & { locale: Locale })
               </dt>
               <dd>
                 <address className="not-italic">{address.join(', ')}</address>
-                {a?.mapUrl && (
-                  <a href={a.mapUrl} target="_blank" rel="noopener" className="mt-1 inline-block text-action underline">
-                    {t('directions')}
-                  </a>
-                )}
+                <LocationMap address={a} className="mt-3" />
               </dd>
             </div>
           )}
