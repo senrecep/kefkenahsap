@@ -128,7 +128,8 @@ export default buildConfig({
       collections: {
         media: {
           // Optional key prefix per environment (e.g. "dev") when environments share one bucket.
-          prefix: process.env.S3_PREFIX || undefined,
+          // Always defined ("" when unset) so the media.prefix column exists in every environment and one schema fits all.
+          prefix: process.env.S3_PREFIX ?? '',
           disablePayloadAccessControl: true,
           generateFileURL: ({ filename, prefix }) =>
             [process.env.MEDIA_PUBLIC_URL, prefix, filename].filter(Boolean).join('/'),

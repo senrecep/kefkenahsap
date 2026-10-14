@@ -232,6 +232,7 @@ export interface Media {
       | null;
     attachmentUrl?: string | null;
   };
+  prefix?: string | null;
   _objectKey?: string | null;
   updatedAt: string;
   createdAt: string;
@@ -835,6 +836,7 @@ export interface MediaSelect<T extends boolean = true> {
             };
         attachmentUrl?: T;
       };
+  prefix?: T;
   _objectKey?: T;
   updatedAt?: T;
   createdAt?: T;
