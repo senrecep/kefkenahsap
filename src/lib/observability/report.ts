@@ -54,7 +54,7 @@ export async function reportError(err: unknown, req: Req, route: string, o: { ds
   const event = buildEvent(err, req, route, { environment: o.environment, eventId: crypto.randomUUID().replaceAll('-', ''), timestampMs: o.clock.utcNowMs() })
   const r = await fetchResult.post(dsn.value.storeUrl, event, {
     headers: { 'X-Sentry-Auth': `Sentry sentry_version=7, sentry_key=${dsn.value.publicKey}, sentry_client=kefken/1` },
-    signal: AbortSignal.timeout(2000),
+    timeout: 2000, // not a caller signal: tsentials rejects on caller abort, but a timeout is a failure Result
   })
   return r.ok ? Result.ok() : Result.failure(...r.errors)
 }

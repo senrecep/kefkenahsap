@@ -71,6 +71,20 @@ describe('verifyTurnstile', () => {
     vi.stubGlobal('fetch', vi.fn().mockRejectedValue(new Error('offline')))
     expect(Result.isFailure(await verifyTurnstile({ token: 'tok', secret: 'sec' }))).toBe(true)
   })
+
+  it('fails closed (no throw) when Cloudflare does not answer within 5 s', async () => {
+    vi.useFakeTimers()
+    try {
+      const hang = (_: unknown, init: RequestInit) => new Promise<Response>((_, rej) => init.signal!.addEventListener('abort', () => rej(init.signal!.reason)))
+      vi.stubGlobal('fetch', vi.fn(hang))
+      const p = verifyTurnstile({ token: 'tok', secret: 'sec' })
+      await vi.advanceTimersByTimeAsync(5000)
+      const r = await p
+      expect(Result.isFailure(r) && r.errors[0]!.code).toBe('Lead.SpamCheckFailed')
+    } finally {
+      vi.useRealTimers()
+    }
+  })
 })
 
 describe('pickUtm', () => {

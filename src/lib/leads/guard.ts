@@ -47,7 +47,7 @@ export async function verifyTurnstile(args: { token: string; secret: string | un
   const r = await fetchResult.post<{ success?: boolean }>(
     SITEVERIFY,
     { secret: args.secret, response: args.token, ...(args.ip ? { remoteip: args.ip } : {}) },
-    { signal: AbortSignal.timeout(5000) }, // a timeout is a failure too (fails closed)
+    { timeout: 5000 }, // a timeout is a failure too (fails closed); a caller signal would reject instead
   )
   return r.ok && r.value?.success === true ? Result.ok() : Result.failure(spam())
 }

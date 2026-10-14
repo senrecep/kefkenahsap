@@ -80,6 +80,20 @@ describe('reportError', () => {
     expect(body.event_id).toMatch(/^[0-9a-f]{32}$/)
   })
 
+  it('resolves to a failure (no rejection) when the store endpoint does not answer within 2 s', async () => {
+    vi.useFakeTimers()
+    try {
+      const hang = (_: unknown, init: RequestInit) => new Promise<Response>((_, rej) => init.signal!.addEventListener('abort', () => rej(init.signal!.reason)))
+      vi.stubGlobal('fetch', vi.fn(hang))
+      const p = reportError(new Error('x'), { path: '/', method: 'GET' }, '/', { dsn: 'https://k@gt.example/1', environment: 'x', clock: createFakeDateTimeProvider(new Date(0)) })
+      await vi.advanceTimersByTimeAsync(2000)
+      const r = await p
+      expect(!r.ok && r.errors[0]!.code).toBe('Http.Timeout')
+    } finally {
+      vi.useRealTimers()
+    }
+  })
+
   it('fails without sending when the DSN is invalid', async () => {
     const fetch = vi.fn()
     vi.stubGlobal('fetch', fetch)

@@ -5,13 +5,13 @@
       "source": "senrecep/tsentials",
       "sourceType": "github",
       "skillPath": ".well-known/agent-skills/tsentials/SKILL.md",
-      "computedHash": "f77fac4f0e4f94753f47bb5296f089af1f6cf1513015407927d088ad2b1075aa"
+      "computedHash": "fb36dc2fc40f54ef49378c35807ad77efea22f83e9a92e9281f2ad315248c0ca"
     },
     "tsentials-clone": {
       "source": "senrecep/tsentials",
       "sourceType": "github",
       "skillPath": ".well-known/agent-skills/tsentials-clone/SKILL.md",
-      "computedHash": "865dae36b185c91502d684b7505f6d38dd188a9884dba789e1aac92c9d71bc15"
+      "computedHash": "24ae28a882761ae6a7c6a63c8f1bc8455f4ab52996463641b3308963f0a5f254"
     },
     "tsentials-entity": {
       "source": "senrecep/tsentials",
@@ -19,17 +19,23 @@
       "skillPath": ".well-known/agent-skills/tsentials-entity/SKILL.md",
       "computedHash": "be8d439f72b334a7ffc201c43f9704da642846728c4457053512470fb04cbdd3"
     },
+    "tsentials-enums": {
+      "source": "senrecep/tsentials",
+      "sourceType": "github",
+      "skillPath": ".well-known/agent-skills/tsentials-enums/SKILL.md",
+      "computedHash": "12dcf482785b1c7eea8481efb62f3bed17019190409c37a4030ab91445afd152"
+    },
     "tsentials-errors": {
       "source": "senrecep/tsentials",
       "sourceType": "github",
       "skillPath": ".well-known/agent-skills/tsentials-errors/SKILL.md",
-      "computedHash": "92caacd75abc487d8745c75cff8a758bbbbc2301bddf5fc23027d2b6cc340030"
+      "computedHash": "515a5f74e1ed5e06d42872d7b8ed8ce4b95118ba64b0e0b522ac9e61fe6da6e1"
     },
     "tsentials-http": {
       "source": "senrecep/tsentials",
       "sourceType": "github",
       "skillPath": ".well-known/agent-skills/tsentials-http/SKILL.md",
-      "computedHash": "2c091f687f258c440a3f373c732abfe464229167d53c60216b77985356388787"
+      "computedHash": "bcd2a3d36d42e2f83265651ed5c71057b8373653cfad83988a9a438257b6128e"
     },
     "tsentials-json": {
       "source": "senrecep/tsentials",
@@ -41,25 +47,43 @@
       "source": "senrecep/tsentials",
       "sourceType": "github",
       "skillPath": ".well-known/agent-skills/tsentials-maybe/SKILL.md",
-      "computedHash": "7648f1d85779c538b09b282ff2c8f1b75e33b3bf69c4e39ec74855770f82dc69"
+      "computedHash": "47b5ca78a05633ccef8d353b186ed412b0ccdcf554d42db8d1cf7e65ad42245c"
+    },
+    "tsentials-mediator": {
+      "source": "senrecep/tsentials",
+      "sourceType": "github",
+      "skillPath": ".well-known/agent-skills/tsentials-mediator/SKILL.md",
+      "computedHash": "2868ebe3a46e22de37979d9e31ef076f575fc0cc55b704175607a659943283ba"
     },
     "tsentials-meta": {
       "source": "senrecep/tsentials",
       "sourceType": "github",
       "skillPath": ".well-known/agent-skills/tsentials-meta/SKILL.md",
-      "computedHash": "84f124aab877558b0080455656ad392a6b986cb33a884faa75dc044a9b1bf5a7"
+      "computedHash": "54680ee630d720a2ab3cc1cbe0e368a341de19cefcc5a235d93612f8d69b15ab"
+    },
+    "tsentials-pagination": {
+      "source": "senrecep/tsentials",
+      "sourceType": "github",
+      "skillPath": ".well-known/agent-skills/tsentials-pagination/SKILL.md",
+      "computedHash": "d818e93eaf306e72c0fe2e166314415a164b4ace5f5d88e891c25654b6b53215"
+    },
+    "tsentials-resilience": {
+      "source": "senrecep/tsentials",
+      "sourceType": "github",
+      "skillPath": ".well-known/agent-skills/tsentials-resilience/SKILL.md",
+      "computedHash": "60c76e6dee516c4a057869b0a872bf45c29c629c6ba7db4b999194ed83477fda"
     },
     "tsentials-result": {
       "source": "senrecep/tsentials",
       "sourceType": "github",
       "skillPath": ".well-known/agent-skills/tsentials-result/SKILL.md",
-      "computedHash": "745a7eadd1e97b546a517569fb8f4af06dc82aaabb225190bce158aaa4d68f15"
+      "computedHash": "8550ec8c804b96917151cf7211cb72b71878c69abd845c06dd6736d50271e3b2"
     },
     "tsentials-rules": {
       "source": "senrecep/tsentials",
       "sourceType": "github",
       "skillPath": ".well-known/agent-skills/tsentials-rules/SKILL.md",
-      "computedHash": "e65ffc5969a7599e8325a445465e605878bc6bf3c3adf3e3bb9fb7f65146200d"
+      "computedHash": "06a448ce7e68d7ea2f070f28b53f95095541605ba49063a95e3002d54f0e462a"
     },
     "tsentials-string": {
       "source": "senrecep/tsentials",
@@ -71,13 +95,19 @@
       "source": "senrecep/tsentials",
       "sourceType": "github",
       "skillPath": ".well-known/agent-skills/tsentials-time/SKILL.md",
-      "computedHash": "8b199b908cade297e65e2b0d90f94db9b985bce65655d6f914208cd352f83f97"
+      "computedHash": "a165cf661f3e51dfd136c51ca04a4afbc4aa6969f030a00e83ea7ec98c49f771"
     },
     "tsentials-union": {
       "source": "senrecep/tsentials",
       "sourceType": "github",
       "skillPath": ".well-known/agent-skills/tsentials-union/SKILL.md",
       "computedHash": "d8574bc8e1c60c9348b5172f1d34f77874c7c275cf7397e7a54c451c00887143"
+    },
+    "tsentials-validation": {
+      "source": "senrecep/tsentials",
+      "sourceType": "github",
+      "skillPath": ".well-known/agent-skills/tsentials-validation/SKILL.md",
+      "computedHash": "e4fb6c62b011230260c3bedf375e4b8684e4b96d882d25a6eab5475b18e649f1"
     }
   }
 }
