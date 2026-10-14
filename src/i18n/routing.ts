@@ -15,6 +15,7 @@ export const routing = defineRouting({
     '/projeler/[slug]': { tr: '/projeler/[slug]', en: '/projects/[slug]' },
     '/rehber': { tr: '/rehber', en: '/guides' },
     '/rehber/[slug]': { tr: '/rehber/[slug]', en: '/guides/[slug]' },
+    '/bolgeler/[slug]': { tr: '/bolgeler/[slug]', en: '/areas/[slug]' },
     '/referanslar': { tr: '/referanslar', en: '/references' },
     '/hakkimizda': { tr: '/hakkimizda', en: '/about' },
     '/iletisim': { tr: '/iletisim', en: '/contact' },

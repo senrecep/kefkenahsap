@@ -11,7 +11,7 @@ const HOUR = 3600
 const published = { _status: { equals: 'published' } } as const
 const isApproved = (m: unknown): m is Media => typeof m === 'object' && m !== null && (m as Media).status === 'approved'
 
-const card = (p: Pick<Project, 'id' | 'title' | 'slug' | 'city' | 'district' | 'year' | 'cover' | 'gallery' | 'categories'>) => ({
+export const card = (p: Pick<Project, 'id' | 'title' | 'slug' | 'city' | 'district' | 'year' | 'cover' | 'gallery' | 'categories'>) => ({
   id: p.id,
   title: p.title,
   slug: p.slug!,

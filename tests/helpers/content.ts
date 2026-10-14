@@ -22,7 +22,7 @@ export async function createDoc<T = { id: number }>(api: APIRequestContext, coll
 }
 
 /** Uploads a small generated, approved photo (status approved needs a Turkish alt). */
-export async function uploadPhoto(api: APIRequestContext, data: { seoFilename: string; category?: number; alt?: string }, shade = 0) {
+export async function uploadPhoto(api: APIRequestContext, data: { seoFilename: string; category?: number; alt?: string; status?: 'pending' | 'approved' | 'hidden' }, shade = 0) {
   const buffer = await sharp({ create: { width: 1600, height: 900, channels: 3, background: { r: 90 + (shade % 7) * 20, g: 80, b: 60 } } }).webp().toBuffer()
   const res = await api.post('/api/media?locale=tr', {
     multipart: {
