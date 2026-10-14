@@ -96,6 +96,8 @@ export const Media: CollectionConfig = {
       admin: { readOnly: true, description: 'Model, prompt sürümü ve önerilen metinler (yalnızca öneri).' },
     },
     { name: 'lqip', type: 'text', admin: { readOnly: true, hidden: true } },
+    // Stable identity of seeded images (<category>/<source file>) so the seed is idempotent.
+    { name: 'seedKey', type: 'text', unique: true, index: true, admin: { readOnly: true, hidden: true } },
     { name: 'dominantColor', type: 'text', admin: { readOnly: true, hidden: true } },
     {
       name: 'legacy',
