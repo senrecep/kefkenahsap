@@ -1,0 +1,251 @@
+{
+ "model": "ViT-B-32/laion2b_s34b_b79k",
+ "options": {
+  "threshold": 0.82,
+  "sameDayBonus": 0.1,
+  "maxGapDays": 30,
+  "minSize": 3,
+  "maxSize": 24
+ },
+ "clusters": [
+  {
+   "n": 1,
+   "key": "895d59681133",
+   "candidate": 3,
+   "title": "Balkon deck'i ve metal korkuluk",
+   "category": "deck-ve-zeminler",
+   "from": "2018-01-31",
+   "to": "2018-01-31",
+   "seedKeys": [
+    "deck-ve-zeminler/IMG_20180131_125731.jpg1_.webp",
+    "deck-ve-zeminler/WhatsApp Image 2026-08-07 at 17.59.55.webp",
+    "deck-ve-zeminler/WhatsApp Image 2026-08-07 at 17.59.58 (4).webp",
+    "deck-ve-zeminler/WhatsApp Image 2026-08-07 at 18.00.01 (1).webp"
+   ]
+  },
+  {
+   "n": 2,
+   "key": "3701b6dfcc3a",
+   "candidate": 4,
+   "title": "Bahçede yükseltilmiş küçük deck platformu",
+   "category": "deck-ve-zeminler",
+   "seedKeys": [
+    "deck-ve-zeminler/18.webp",
+    "deck-ve-zeminler/19.webp",
+    "deck-ve-zeminler/WhatsApp-Image-2021-04-30-at-20.41.46.webp"
+   ]
+  },
+  {
+   "n": 3,
+   "key": "251cab6282a8",
+   "candidate": 5,
+   "title": "Kapı önünde küçük bahçe deck'i",
+   "category": "deck-ve-zeminler",
+   "from": "2021-06-08",
+   "to": "2021-06-27",
+   "seedKeys": [
+    "deck-ve-zeminler/WhatsApp-Image-2021-06-08-at-23.27.44.webp",
+    "deck-ve-zeminler/WhatsApp-Image-2021-06-27-at-20.13.45-1-2.webp",
+    "deck-ve-zeminler/WhatsApp-Image-2021-06-27-at-20.13.45-3.webp",
+    "deck-ve-zeminler/WhatsApp-Image-2021-06-27-at-20.13.46-1-2.webp"
+   ]
+  },
+  {
+   "n": 4,
+   "key": "2e2333d9f45d",
+   "candidate": 7,
+   "title": "Ahşap teras, korkuluk ve çatılı kamelya (2014)",
+   "category": "pergola-ve-kamelyalar",
+   "from": "2014-06-13",
+   "to": "2014-06-13",
+   "seedKeys": [
+    "pergola-ve-kamelyalar/251820_406039149440690_716310992_n.webp",
+    "pergola-ve-kamelyalar/598608_406038439440761_1961507705_n.webp",
+    "pergola-ve-kamelyalar/600585_406043102773628_2044150304_n.webp"
+   ]
+  },
+  {
+   "n": 5,
+   "key": "2b2ce79b888c",
+   "candidate": 8,
+   "title": "Bahçe sınırında ahşap çit",
+   "category": "korkuluk-ve-cit",
+   "seedKeys": [
+    "korkuluk-ve-cit/WhatsApp-Image-2021-04-30-at-20.32.59-1-1.webp",
+    "korkuluk-ve-cit/WhatsApp-Image-2021-04-30-at-20.32.58-3.webp",
+    "korkuluk-ve-cit/WhatsApp-Image-2021-04-30-at-20.32.58-2-1.webp",
+    "korkuluk-ve-cit/WhatsApp-Image-2021-04-30-at-20.32.57-3.webp",
+    "korkuluk-ve-cit/WhatsApp-Image-2021-04-30-at-20.32.57-2-1.webp",
+    "korkuluk-ve-cit/WhatsApp-Image-2021-04-30-at-20.32.57-1-1.webp"
+   ]
+  },
+  {
+   "n": 6,
+   "key": "dea60c169453",
+   "candidate": 9,
+   "title": "Su kenarında ahşap yürüme yolu",
+   "category": "kopru-ve-iskele",
+   "from": "2006-06-16",
+   "to": "2006-06-16",
+   "seedKeys": [
+    "kopru-ve-iskele/1472755_890180847693182_3594639781431809733_n.webp",
+    "kopru-ve-iskele/img14.webp",
+    "kopru-ve-iskele/img11.webp"
+   ]
+  },
+  {
+   "n": 7,
+   "key": "5d3f916c5c27",
+   "candidate": 10,
+   "title": "Çapraz korkuluklu ahşap dış merdiven (2016)",
+   "category": "merdivenler",
+   "from": "2016-08-24",
+   "to": "2016-08-24",
+   "seedKeys": [
+    "merdivenler/8-3.webp",
+    "merdivenler/24-3.webp",
+    "merdivenler/29.webp",
+    "merdivenler/33-1.webp"
+   ]
+  },
+  {
+   "n": 8,
+   "key": "80f8a9a6f478",
+   "candidate": 11,
+   "title": "Dış mekân ahşap dolapları",
+   "category": "kapi-dolap-ve-seperator",
+   "from": "2016-10-08",
+   "to": "2016-10-08",
+   "seedKeys": [
+    "kapi-dolap-ve-seperator/98.webp",
+    "kapi-dolap-ve-seperator/99.webp",
+    "kapi-dolap-ve-seperator/100.webp"
+   ]
+  },
+  {
+   "n": 9,
+   "key": "3dcd0f485042",
+   "candidate": 12,
+   "title": "Terasta pergola, çıtalı duvar ve dış mutfak",
+   "category": "ireko-teak",
+   "from": "2021-06-08",
+   "to": "2021-06-08",
+   "seedKeys": [
+    "ireko-teak/WhatsApp-Image-2021-06-08-at-23.27.35-1.webp",
+    "ireko-teak/WhatsApp-Image-2021-06-08-at-23.27.36-1.webp",
+    "ireko-teak/WhatsApp-Image-2021-06-08-at-23.27.36.webp",
+    "ireko-teak/WhatsApp-Image-2021-06-08-at-23.27.41.webp",
+    "ireko-teak/WhatsApp-Image-2021-06-08-at-23.27.42-1.webp",
+    "ireko-teak/WhatsApp-Image-2021-06-08-at-23.27.42-2.webp",
+    "ireko-teak/WhatsApp-Image-2021-06-08-at-23.27.42.webp",
+    "ireko-teak/WhatsApp-Image-2021-06-08-at-23.27.43-1.webp"
+   ]
+  },
+  {
+   "n": 10,
+   "key": "5468593ff723",
+   "candidate": 13,
+   "title": "Yarım daire ahşap oturma bankı",
+   "category": "ireko-teak",
+   "from": "2021-06-08",
+   "to": "2021-06-08",
+   "seedKeys": [
+    "ireko-teak/WhatsApp-Image-2021-06-08-at-23.27.44-3-1.webp",
+    "ireko-teak/WhatsApp-Image-2021-06-08-at-23.27.45-1.webp",
+    "ireko-teak/WhatsApp-Image-2021-06-08-at-23.27.45.webp"
+   ]
+  },
+  {
+   "n": 11,
+   "key": "5b9bef6d04c7",
+   "candidate": 14,
+   "title": "Ahşap yemek masası ve bank",
+   "category": "ireko-teak",
+   "from": "2021-06-27",
+   "to": "2021-06-27",
+   "seedKeys": [
+    "ireko-teak/WhatsApp-Image-2021-06-27-at-20.13.40-1.webp",
+    "ireko-teak/WhatsApp-Image-2021-06-27-at-20.13.41-1-1.webp",
+    "ireko-teak/WhatsApp-Image-2021-06-27-at-20.13.41-2-1.webp",
+    "ireko-teak/WhatsApp-Image-2021-06-27-at-20.13.41-3.webp"
+   ]
+  },
+  {
+   "n": 12,
+   "key": "61f9cc3852b5",
+   "candidate": 15,
+   "title": "Beyaz mutfak dolapları",
+   "category": "mobilya-ve-cila",
+   "seedKeys": [
+    "mobilya-ve-cila/3.webp",
+    "mobilya-ve-cila/4cfce54c-4177-4a57-94e0-34fc0f335c48.webp",
+    "mobilya-ve-cila/81e195cc-fcb3-4bc6-b4f4-24e797152c17-1.webp",
+    "mobilya-ve-cila/81e195cc-fcb3-4bc6-b4f4-24e797152c17.webp",
+    "mobilya-ve-cila/bd9e2e56-6158-4784-babe-c46d0cdcf529.webp"
+   ]
+  },
+  {
+   "n": 13,
+   "key": "1c41e979b94c",
+   "candidate": 16,
+   "title": "Ahşap tezgâhlı mutfak bar masası",
+   "category": "mobilya-ve-cila",
+   "seedKeys": [
+    "mobilya-ve-cila/5c082fb0-87cd-4296-86fe-c2d4d0f8f7e9.webp",
+    "mobilya-ve-cila/2776f54d-8bb8-49d2-8241-cf822c1813c1.webp",
+    "mobilya-ve-cila/e07dc209-8f5e-4e0e-a04c-03c4d70d9b76.webp"
+   ]
+  },
+  {
+   "n": 14,
+   "key": "2d910786b640",
+   "candidate": 17,
+   "title": "Kapaklı ahşap dolap",
+   "category": "mobilya-ve-cila",
+   "seedKeys": [
+    "mobilya-ve-cila/8e277099-c75c-43c8-ad57-9fe340d2aa17.webp",
+    "mobilya-ve-cila/68bbda53-f679-4447-a23f-e258cc48dbb6.webp",
+    "mobilya-ve-cila/d155e589-e0c2-478e-b8e0-113b0dbe0e34.webp"
+   ]
+  },
+  {
+   "n": 15,
+   "key": "3e5f8b4e23af",
+   "candidate": 18,
+   "title": "Ofis resepsiyon bankosu ve çalışma alanı",
+   "category": "mobilya-ve-cila",
+   "seedKeys": [
+    "mobilya-ve-cila/5cd4edde-77aa-4a95-aa3a-00b5d4bf7a4b.webp",
+    "mobilya-ve-cila/6e619fdd-30c3-445d-aba1-d10228378349.webp",
+    "mobilya-ve-cila/0549a210-04f5-48cc-bc42-6e003b7829ce.webp",
+    "mobilya-ve-cila/4747c67c-fd27-420e-832f-e000a0c21295.webp",
+    "mobilya-ve-cila/19534b08-75bb-43fe-a1d7-2cc4cc65bb19.webp",
+    "mobilya-ve-cila/b627db22-82b1-49c6-9f18-f4a3ac26425d.webp"
+   ]
+  },
+  {
+   "n": 16,
+   "key": "d9162a0eb096",
+   "candidate": 19,
+   "title": "Beyaz oymalı vitrin ve konsol",
+   "category": "mobilya-ve-cila",
+   "seedKeys": [
+    "mobilya-ve-cila/523d7efa-ab12-4665-853f-0dccb19dcfdb.webp",
+    "mobilya-ve-cila/777f9655-dd21-46e2-a9a4-1df83a74092c.webp",
+    "mobilya-ve-cila/837a1af1-4823-44d6-917b-59f095d37efb.webp"
+   ]
+  },
+  {
+   "n": 17,
+   "key": "c373d7f2da4f",
+   "candidate": 20,
+   "title": "Ahşap çıta kaplamalı ofis odası",
+   "category": "mobilya-ve-cila",
+   "seedKeys": [
+    "mobilya-ve-cila/d01889b4-e0cc-4ccd-a650-017258352ae2.webp",
+    "mobilya-ve-cila/dd7c5680-ef9f-4185-baba-4ec637dc4c21.webp",
+    "mobilya-ve-cila/e3bad3a3-b954-4198-a83b-e21ed2622c59.webp"
+   ]
+  }
+ ]
+}
