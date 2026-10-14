@@ -6,7 +6,7 @@ import { startTransition, useActionState, useEffect, useRef, useState, type Form
 
 import { Link } from '@/i18n/navigation'
 import { buttonClass } from '@/components/ui/button'
-import { MAX_PHOTOS } from '@/lib/leads/validate'
+import { LEAD_PHOTO_TYPES, MAX_PHOTOS } from '@/lib/leads/validate'
 import { fitWithin } from '@/lib/media/galeri'
 
 import { submitLead, type LeadField, type LeadFormState } from './actions'
@@ -24,7 +24,8 @@ declare global {
 
 const MAX_EDGE = 2560
 
-const toBlob = (canvas: HTMLCanvasElement, type: string) => new Promise<Blob | null>((resolve) => canvas.toBlob(resolve, type, 0.85))
+const toBlob = (canvas: HTMLCanvasElement, type: string, quality = 0.85) =>
+  new Promise<Blob | null>((resolve) => canvas.toBlob(resolve, type, quality))
 
 /** Downscale to ≤2560px and re-encode (drops EXIF/GPS) — same approach as the admin Galeri upload. */
 async function prepare(file: File): Promise<File> {
@@ -38,6 +39,8 @@ async function prepare(file: File): Promise<File> {
   // Safari can't encode WebP and silently returns PNG; JPEG keeps the upload small there.
   let blob = await toBlob(canvas, 'image/webp')
   if (blob?.type !== 'image/webp') blob = await toBlob(canvas, 'image/jpeg')
+  // Busy photos can stay large at q0.85; one more pass keeps 5 photos under the 16 MB request limit.
+  if (blob && blob.size > 3 * 1024 * 1024) blob = (await toBlob(canvas, blob.type, 0.7)) ?? blob
   if (!blob) throw new Error('encode failed')
   const ext = blob.type === 'image/webp' ? 'webp' : 'jpg'
   return new File([blob], `${file.name.replace(/\.[^.]+$/, '') || 'foto'}.${ext}`, { type: blob.type })
@@ -225,7 +228,7 @@ export function ContactForm({
           id="photos"
           name="photos"
           type="file"
-          accept="image/*"
+          accept={LEAD_PHOTO_TYPES.join(',')}
           multiple
           onChange={(e) => onPhotos(e.currentTarget)}
           aria-invalid={!!photoErr}
