@@ -7,7 +7,7 @@ import { CookiesDraft } from '@/content/legal/cookies'
 import type { Locale } from '@/i18n/routing'
 import { getPage } from '@/lib/data/pages'
 import { getSiteSettings } from '@/lib/data/site'
-import { staticAlternates } from '@/lib/seo/static-alternates'
+import { pageMetadata, staticPaths } from '@/lib/seo/page-metadata'
 
 const SLUGS = ['cerez-politikasi', 'cookies']
 type Props = { params: Promise<{ locale: string }> }
@@ -15,11 +15,13 @@ type Props = { params: Promise<{ locale: string }> }
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params
   const [t, page, settings] = await Promise.all([getTranslations({ locale, namespace: 'Legal' }), getPage(locale as Locale, SLUGS), getSiteSettings(locale as Locale)])
-  return {
-    title: page?.seo?.title || `${page?.title ?? t('cookiesTitle')} | ${settings.companyName}`,
+  // An admin-written SEO title is complete; otherwise the layout template appends the company name.
+  return pageMetadata({
+    locale: locale as Locale,
+    title: page?.seo?.title ? { absolute: page.seo.title } : (page?.title ?? t('cookiesTitle')),
     description: page?.seo?.description || t('cookiesDescription', { company: settings.companyName }),
-    alternates: staticAlternates(locale, '/cerez-politikasi'),
-  }
+    paths: staticPaths('/cerez-politikasi'),
+  })
 }
 
 export default async function Page({ params }: Props) {

@@ -11,7 +11,7 @@ import type { Locale } from '@/i18n/routing'
 import { getPayload } from '@/lib/data/payload'
 import { getNavCategories } from '@/lib/data/site'
 import { searchSite, type SearchResults } from '@/lib/search/search'
-import { staticAlternates } from '@/lib/seo/static-alternates'
+import { pageMetadata, staticPaths } from '@/lib/seo/page-metadata'
 
 type Props = { params: Promise<{ locale: string }>; searchParams: Promise<{ q?: string | string[] }> }
 
@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'Search' })
   // Search result pages are never indexed (PLAN §5.1); robots.ts also disallows /*/ara.
-  return { title: t('title'), robots: { index: false, follow: true }, alternates: staticAlternates(locale, '/ara') }
+  return pageMetadata({ locale: locale as Locale, title: t('title'), paths: staticPaths('/ara'), noindex: true })
 }
 
 const h2 = 'font-[family-name:var(--font-display)] text-xl font-semibold'

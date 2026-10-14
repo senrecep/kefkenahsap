@@ -34,7 +34,7 @@ async function firstImagePath(request: APIRequestContext) {
 test.describe('page metadata', () => {
   test('public templates are indexable with complete tags', async ({ request }) => {
     const image = await firstImagePath(request)
-    for (const [path, og] of [['/tr', 'tr_TR'], ['/en', 'en_US'], ['/tr/galeri', 'tr_TR'], ['/en/gallery', 'en_US'], [image, 'tr_TR']] as const) {
+    for (const [path, og] of [['/tr', 'tr_TR'], ['/en', 'en_US'], ['/tr/galeri', 'tr_TR'], ['/en/gallery', 'en_US'], ['/tr/hakkimizda', 'tr_TR'], ['/en/about', 'en_US'], ['/tr/kvkk', 'tr_TR'], ['/en/cookies', 'en_US'], [image, 'tr_TR']] as const) {
       const m = await head(request, path)
       expect(m.title, path).toBeTruthy()
       expect(m.description, path).toBeTruthy()
@@ -50,10 +50,14 @@ test.describe('page metadata', () => {
   test('titles follow "page | company" (homepage is absolute)', async ({ request }) => {
     expect((await head(request, '/tr/galeri')).title).toMatch(/^Galeri \| .+/)
     expect((await head(request, '/tr')).title).not.toContain(' | ')
+    // No doubled suffix on pages that used to append the company name themselves.
+    expect((await head(request, '/tr/hakkimizda')).title).toMatch(/^[^|]+ \| [^|]+$/)
   })
 
-  test('paginated gallery duplicates are noindex but keep follow', async ({ request }) => {
+  test('expected noindex pages: paginated gallery duplicates and search (follow kept)', async ({ request }) => {
     expect((await head(request, '/tr/galeri?sayfa=2')).robots).toBe('noindex, follow')
+    expect((await head(request, '/tr/ara?q=deck')).robots).toBe('noindex, follow')
+    expect((await head(request, '/en/search')).robots).toBe('noindex, follow')
   })
 
   test('OG images are real 1200×630 JPEGs (default card and per photo)', async ({ request, baseURL }) => {
