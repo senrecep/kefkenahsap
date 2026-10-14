@@ -1,6 +1,7 @@
 import { type APIRequestContext, expect, test } from '@playwright/test'
 
 import { adminApi, createDoc, deleteDocs } from '../helpers/content'
+import { expectTrailMatches } from '../helpers/breadcrumb'
 
 // Guide template SEO (PLAN §7): metadata, Article + FAQPage + BreadcrumbList that repeat only the visible text.
 // Self-contained: seed guides are drafts, so two published guides are created through the REST API and removed.
@@ -31,7 +32,7 @@ test.describe('guide SEO', () => {
     await deleteDocs(api, 'guides', ids)
   })
 
-  test('guide page: metadata, Article / FAQPage / BreadcrumbList match the page', async ({ request }) => {
+  test('guide page: metadata, Article / FAQPage / BreadcrumbList match the page', async ({ request, page }) => {
     const founder = ((await (await api.get('/api/globals/siteSettings?locale=tr&depth=0')).json()) as { founder?: { name?: string | null } }).founder?.name || undefined
     const path = `/tr/rehber/${withAuthor.tr}`
     let html = ''
@@ -69,6 +70,9 @@ test.describe('guide SEO', () => {
     expect(items.map((i) => i.position)).toEqual([1, 2, 3])
     expect(new URL(items[1]!.item).pathname).toBe('/tr/rehber')
     expect(items[2]).toMatchObject({ name: withAuthor.title, item: article!.url })
+    // PLAN §7: the JSON-LD names are exactly the visible trail.
+    await page.goto(path)
+    await expectTrailMatches(page, items)
   })
 
   test('byline off: no author; no FAQ shown: no FAQPage; Turkish-only guide has no English hreflang', async ({ request }) => {

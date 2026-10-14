@@ -123,6 +123,8 @@ test.describe('region pages and publish gate', () => {
 
     await page.goto(path)
     await expect(page.getByRole('heading', { level: 1, name: fail.name })).toBeVisible()
+    // The visible trail stays; only its structured data is withheld.
+    await expect(page.getByRole('navigation', { name: 'Konum' }).locator('li')).toHaveText(['Ana sayfa', fail.name])
     await expect(page.locator('footer').getByRole('link', { name: fail.name })).toHaveCount(0)
 
     const xml = await (await request.get('/sitemap.xml')).text()

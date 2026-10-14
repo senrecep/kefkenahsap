@@ -4,8 +4,8 @@ import { getTranslations, setRequestLocale } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 
 import { ProjectCard } from '@/components/projects/ProjectCard'
+import { Breadcrumb } from '@/components/site/Breadcrumb'
 import { CtaBand } from '@/components/site/CtaBand'
-import { JsonLd } from '@/components/seo/JsonLd'
 import { Container } from '@/components/ui/Container'
 import { Picture } from '@/components/ui/Picture'
 import { getPathname, Link } from '@/i18n/navigation'
@@ -15,7 +15,6 @@ import { metaDescription } from '@/lib/guides/meta'
 import { safeDecode } from '@/lib/http/safe-decode'
 import { bodyText } from '@/lib/regions/gate'
 import { siteUrl } from '@/lib/seo/alternates'
-import { breadcrumbJsonLd } from '@/lib/seo/jsonld'
 import { pageMetadata } from '@/lib/seo/page-metadata'
 
 type Params = Promise<{ locale: Locale; slug: string }>
@@ -40,39 +39,18 @@ export default async function RegionPage({ params }: { params: Params }) {
   const data = await getRegion(locale, slug)
   if (!data) notFound()
   const { region, cards, photos } = data
-  const [t, tNav] = await Promise.all([getTranslations('Regions'), getTranslations('Nav')])
+  const t = await getTranslations('Regions')
   const site = siteUrl().replace(/\/$/, '')
-  const home = site + getPathname({ locale, href: '/' })
-  const url =
-    site + getPathname({ locale, href: { pathname: '/bolgeler/[slug]', params: { slug } } })
+  const pathname = getPathname({ locale, href: { pathname: '/bolgeler/[slug]', params: { slug } } })
+  const url = site + pathname
   const text = bodyText(region.body)
   const h2 = 'text-[1.6rem] leading-tight md:text-[2rem]'
 
   return (
     <>
-      {/* Only for an indexable page (gate passed here); the crumbs repeat the visible trail below. */}
-      {data.paths[locale] && (
-        <JsonLd
-          data={breadcrumbJsonLd([
-            { name: tNav('home'), url: home },
-            { name: region.name, url },
-          ])}
-        />
-      )}
       <Container as="header" className="pt-6 pb-8 md:pt-10 md:pb-10">
-        <nav aria-label={t('breadcrumb')} className="text-[0.95rem] text-ink-soft">
-          <ol className="flex flex-wrap gap-x-2">
-            <li>
-              <Link href="/" className="text-action underline">
-                {tNav('home')}
-              </Link>
-              <span aria-hidden className="ms-2">
-                /
-              </span>
-            </li>
-            <li aria-current="page">{region.name}</li>
-          </ol>
-        </nav>
+        {/* JSON-LD only for an indexable page (gate passed here). */}
+        <Breadcrumb locale={locale} items={[{ name: region.name, path: pathname }]} structured={Boolean(data.paths[locale])} />
         <h1 className="mt-6 max-w-[24ch] text-[2.1rem] leading-[1.08] md:text-[3.2rem]">
           {region.name}
         </h1>

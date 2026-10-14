@@ -2,6 +2,7 @@ import { type APIRequestContext, expect, test } from '@playwright/test'
 import sharp from 'sharp'
 
 import { adminApi, createDoc, deleteDocs, uploadPhoto } from '../helpers/content'
+import { expectTrailMatches } from '../helpers/breadcrumb'
 
 // Category template SEO (PLAN §7): own OG image, Service + FAQPage + BreadcrumbList that repeat the visible text.
 // Self-contained: the seed categories have no FAQ yet, so a category with one is created and removed.
@@ -32,7 +33,7 @@ test.describe('category SEO', () => {
     await deleteDocs(api, 'categories', ids.categories)
   })
 
-  test('own OG photo, and Service / FAQPage / BreadcrumbList match the page', async ({ request, baseURL }) => {
+  test('own OG photo, and Service / FAQPage / BreadcrumbList match the page', async ({ request, baseURL, page }) => {
     const path = `/tr/${slug}`
     const html = await (await request.get(path)).text()
     expect(attr(html, /<meta name="robots" content="([^"]*)"/) ?? '').not.toMatch(/noindex/)
@@ -65,7 +66,9 @@ test.describe('category SEO', () => {
     expect(items.map((i) => i.position)).toEqual([1, 2, 3])
     expect(new URL(items[1]!.item).pathname).toBe('/tr/hizmetlerimiz')
     expect(items[2]).toMatchObject({ name, item: service!.url })
-    for (const i of items) expect(visible).toContain(i.name)
+    // PLAN §7: the JSON-LD names are exactly the visible trail.
+    await page.goto(path)
+    await expectTrailMatches(page, items)
   })
 
   test('unknown category: no OG image route', async ({ request }) => {

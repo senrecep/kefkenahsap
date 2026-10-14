@@ -7,6 +7,7 @@ import { GuideBody } from '@/components/guides/GuideBody'
 import WoodSamples from '@/components/guides/WoodSamples'
 import { JsonLd } from '@/components/seo/JsonLd'
 import { buttonClass } from '@/components/ui/button'
+import { Breadcrumb } from '@/components/site/Breadcrumb'
 import { Container } from '@/components/ui/Container'
 import { WhatsAppButton } from '@/components/ui/WhatsAppButton'
 import { getPathname } from '@/i18n/navigation'
@@ -17,7 +18,7 @@ import { metaDescription } from '@/lib/guides/meta'
 import { tableOfContents } from '@/lib/guides/toc'
 import { siteUrl } from '@/lib/seo/alternates'
 import { hasWoodSamples } from '@/lib/wood/samples'
-import { articleJsonLd, breadcrumbJsonLd, faqJsonLd } from '@/lib/seo/jsonld'
+import { articleJsonLd, faqJsonLd } from '@/lib/seo/jsonld'
 import { pageMetadata } from '@/lib/seo/page-metadata'
 
 type Props = { params: Promise<{ locale: Locale; slug: string }> }
@@ -58,17 +59,16 @@ export default async function GuidePage({ params }: Props) {
         data={[
           articleJsonLd({ site, headline: guide.title, url, description: guide.excerpt, author: founder?.name, dateModified: guide.updatedAt }),
           faqJsonLd(faq),
-          breadcrumbJsonLd([
-            { name: settings.companyName, url: site + getPathname({ locale, href: '/' }) },
-            { name: t('title'), url: site + getPathname({ locale, href: '/rehber' }) },
-            { name: guide.title, url },
-          ]),
         ]}
       />
       <Container as="article" className="pt-6 pb-16 md:pt-10">
-        <a href={getPathname({ locale, href: '/rehber' })} className="text-[0.95rem] text-action underline">
-          {t('back')}
-        </a>
+        <Breadcrumb
+          locale={locale}
+          items={[
+            { name: t('title'), path: getPathname({ locale, href: '/rehber' }) },
+            { name: guide.title, path: getPathname({ locale, href: { pathname: '/rehber/[slug]', params: { slug } } }) },
+          ]}
+        />
         <header className="mt-6 max-w-[46rem]">
           <h1 className="text-[clamp(1.9rem,4vw,2.9rem)]">{guide.title}</h1>
           <p className="mt-4 text-[0.95rem] text-ink-soft">
