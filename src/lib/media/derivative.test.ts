@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { derivativeFilename, needsDerivative } from './derivative'
+import { derivativeFilename, focalCrop, needsDerivative } from './derivative'
 
 describe('derivativeFilename', () => {
   // Payload names sizes `<name>-<width>x<height>.<ext>` (e.g. bahce-zemin-kat-ahsap-deck-960x720.webp in the seed).
@@ -28,3 +28,24 @@ describe('needsDerivative', () => {
     expect(needsDerivative({ ...doc, filename: null }, 'w480', 480)).toBe(false)
   })
 })
+
+describe('focalCrop', () => {
+  // Same box Payload cuts at upload (createImageSizes, resizeWithFocalPoint): scale to cover, then centre on the focal point.
+  it('scales a landscape to the target height and centres the cut on the focal point', () => {
+    expect(focalCrop({ width: 2560, height: 1920 }, { width: 400, height: 711 }, { x: 50, y: 50 })).toEqual({
+      resize: { height: 711 },
+      extract: { left: 274, top: 0, width: 400, height: 711 },
+    })
+  })
+  it('keeps the box inside the image when the focal point is near an edge', () => {
+    expect(focalCrop({ width: 2560, height: 1920 }, { width: 400, height: 711 }, { x: 98, y: 50 }).extract.left).toBe(548)
+    expect(focalCrop({ width: 2560, height: 1920 }, { width: 400, height: 711 }, { x: 2, y: 50 }).extract.left).toBe(0)
+  })
+  it('scales a taller-than-target source to the target width and cuts vertically', () => {
+    expect(focalCrop({ width: 1000, height: 2000 }, { width: 400, height: 711 }, { x: 50, y: 50 })).toEqual({
+      resize: { width: 400 },
+      extract: { left: 0, top: 44, width: 400, height: 711 },
+    })
+  })
+})
+

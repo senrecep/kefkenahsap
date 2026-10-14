@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { responsiveImage } from './image'
+import { portraitOf, responsiveImage } from './image'
 
 const media = {
   url: 'https://cdn.kefkenahsap.com/deck.webp',
@@ -62,5 +62,20 @@ describe('responsiveImage', () => {
   })
   it('keeps the largest candidate when every one is below minWidth', () => {
     expect(responsiveImage(media, { minWidth: 4000 }).srcSet).toBe('https://cdn.kefkenahsap.com/deck.webp 1600w')
+  })
+  it('leaves the portrait crop out of the landscape srcset (same width, different shape)', () => {
+    const withPortrait = { ...media, sizes: { ...media.sizes, portrait: { url: 'https://cdn.kefkenahsap.com/deck-400x711.webp', width: 400, height: 711 } } }
+    expect(responsiveImage(withPortrait).srcSet).toBe(responsiveImage(media).srcSet)
+  })
+})
+
+describe('portraitOf', () => {
+  it('returns the portrait crop as its own image', () => {
+    const m = { ...media, sizes: { portrait: { url: 'https://cdn.kefkenahsap.com/deck-400x711.webp', width: 400, height: 711 } } }
+    expect(portraitOf(m)).toEqual({ url: 'https://cdn.kefkenahsap.com/deck-400x711.webp', width: 400, height: 711 })
+  })
+  it('is undefined until the crop exists (not generated yet, or source too small)', () => {
+    expect(portraitOf(media)).toBeUndefined()
+    expect(portraitOf({ ...media, sizes: { portrait: { url: null, width: null, height: null } } })).toBeUndefined()
   })
 })

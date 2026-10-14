@@ -25,7 +25,11 @@ export type ResponsiveImage = {
 export function responsiveImage(m: MediaLike, opts: { maxWidth?: number; minWidth?: number } = {}): ResponsiveImage {
   const max = opts.maxWidth ?? Infinity
   const sorted = [
-    ...Object.values(m.sizes ?? {}).filter((s): s is NonNullable<Size> => Boolean(s?.url && s.width)),
+    // `portrait` is a phone-hero crop, not another width of this image.
+    ...Object.entries(m.sizes ?? {})
+      .filter(([name]) => name !== 'portrait')
+      .map(([, s]) => s)
+      .filter((s): s is NonNullable<Size> => Boolean(s?.url && s.width)),
     ...(m.url && m.width ? [{ url: m.url, width: m.width, height: m.height }] : []),
   ]
     .filter((s) => s.width! <= max)
@@ -45,4 +49,10 @@ export function responsiveImage(m: MediaLike, opts: { maxWidth?: number; minWidt
     ...(m.lqip ? { placeholder: m.lqip } : {}),
     ...(m.dominantColor ? { color: m.dominantColor } : {}),
   }
+}
+
+/** The upload-time portrait crop (Media `portrait` size) as its own image, once it exists. */
+export function portraitOf(m: MediaLike): MediaLike | undefined {
+  const p = m.sizes?.portrait
+  return p?.url && p.width && p.height ? { url: p.url, width: p.width, height: p.height } : undefined
 }

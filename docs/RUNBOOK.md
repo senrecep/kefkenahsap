@@ -56,7 +56,7 @@ ssh senrecep "docker rm -f kefken-gh-runner-$N; mkdir -p /var/lib/kefken-runner-
 
 ### New image sizes for existing media
 
-When `Media.upload.imageSizes` gains a width (`w480` in #116, `w800` in #129), the deploy runs the migration, but existing approved media only gets the new size from a one-off script.
+When `Media.upload.imageSizes` gains a size (`w480` in #116, `w800` and the 400×711 phone-hero `portrait` crop in #129), the deploy runs the migration, but existing approved media only gets the new size from a one-off script. Until it runs, the home hero on phones keeps cropping the landscape w960.
 - It is idempotent: it skips media that already has the size or whose original isn't wider, so a re-run only does what is left.
 - It reads each original from S3, writes only the new derivative and its size entry, and never rewrites the original or the other sizes.
 - It prints the database host, bucket and endpoint first. Unless both the database and the S3 endpoint are local, it needs `--yes`.

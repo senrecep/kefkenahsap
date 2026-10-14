@@ -13,6 +13,10 @@ import { revalidateAfterChange, revalidateAfterDelete } from '@/hooks/revalidate
 // Existing media gets it from scripts/media/add-sizes.ts.
 // 800: page heroes on phones (~380 CSS px × DPR 1.75–2 ≈ 665–760 px) fetched w960 (#129).
 export const MEDIA_WIDTHS = [320, 480, 640, 800, 960, 1280, 1920] as const
+// Phone home hero (#129): a 9:16 crop around the focal point. Cover-cropping a landscape into the tall phone hero shows
+// ~1 image px per CSS px even at w960 (148 KB); this crop shows the same framing at that sharpness in ~45 KB, which
+// moves mobile LCP by ~1 s. q70 at phone scale was indistinguishable from today's w960 in a side-by-side.
+export const PORTRAIT = { width: 400, height: 711, quality: 70 } as const
 
 /** Tiny blurred placeholder + dominant colour, computed once at upload (skeleton/LQIP, CLS-free gallery). */
 const placeholder: CollectionBeforeChangeHook = async ({ data, req }) => {
@@ -121,11 +125,20 @@ export const Media: CollectionConfig = {
     mimeTypes: ['image/*'],
     focalPoint: true,
     formatOptions: { format: 'webp', options: { quality: 82 } },
-    imageSizes: MEDIA_WIDTHS.map((w) => ({
-      name: `w${w}`,
-      width: w,
-      withoutEnlargement: true,
-      formatOptions: { format: 'webp' as const, options: { quality: 80 } },
-    })),
+    imageSizes: [
+      ...MEDIA_WIDTHS.map((w) => ({
+        name: `w${w}`,
+        width: w,
+        withoutEnlargement: true,
+        formatOptions: { format: 'webp' as const, options: { quality: 80 } },
+      })),
+      {
+        name: 'portrait',
+        width: PORTRAIT.width,
+        height: PORTRAIT.height,
+        withoutEnlargement: true,
+        formatOptions: { format: 'webp' as const, options: { quality: PORTRAIT.quality } },
+      },
+    ],
   },
 }

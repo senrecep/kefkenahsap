@@ -9,6 +9,10 @@ test.describe('gallery', () => {
     await expect(page.getByRole('heading', { level: 1, name: 'Galeri' })).toBeVisible()
     const visible = page.locator('[data-gallery-item]:visible')
     await expect(visible).toHaveCount(PAGE_SIZE)
+    // LCP (#129): only the phone grid's first row loads eagerly; the hidden 3/4-column copies stay lazy.
+    const eager = page.locator('[data-gallery-item] img[loading="eager"]')
+    expect(await eager.count()).toBeLessThanOrEqual(2)
+    for (const img of await eager.all()) await expect(img.locator('xpath=ancestor::div[contains(@class, "grid-cols-2")]')).toHaveCount(1)
 
     // Scrolling to the end appends the next page from the feed.
     await page.getByRole('link', { name: 'Daha fazla göster' }).scrollIntoViewIfNeeded()

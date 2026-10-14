@@ -33,11 +33,24 @@ test.describe('homepage', () => {
     const anim = async (reducedMotion: 'reduce' | 'no-preference') => {
       const page = await (await browser.newContext({ reducedMotion })).newPage()
       await page.goto('/tr')
-      const photo = page.locator('main section').first().locator('img').locator('..')
+      // The animated wrapper is the img's nearest span (a phone-crop <picture> may sit in between).
+      const photo = page.locator('main section').first().locator('img').locator('xpath=ancestor::span[1]')
       return photo.evaluate((el) => getComputedStyle(el).animationName)
     }
     expect(await anim('no-preference')).toBe('settle')
     expect(await anim('reduce')).toBe('none')
+  })
+
+  test('phones load the hero\'s portrait source, not the landscape', async ({ browser }) => {
+    const page = await (await browser.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2 })).newPage()
+    await page.goto('/tr')
+    const hero = page.locator('main section').first().locator('img')
+    await expect(hero).toHaveJSProperty('complete', true)
+    const source = page.locator('main section').first().locator('source[media="(max-width: 767px)"]')
+    // Seed-agnostic: a photo too small for the crop (or not yet backfilled) has no phone source.
+    test.skip(!(await source.count()), 'hero photo has no portrait crop')
+    const portrait = (await source.getAttribute('srcset'))!.split(', ').map((c) => c.split(' ')[0])
+    expect(portrait).toContain(await hero.evaluate((img: HTMLImageElement) => img.currentSrc))
   })
 
   test('english homepage', async ({ page }) => {

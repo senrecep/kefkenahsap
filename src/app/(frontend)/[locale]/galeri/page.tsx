@@ -54,7 +54,7 @@ export default async function GalleryPage({ params, searchParams }: Props) {
         <p className="mt-3 max-w-[60ch] text-ink-soft">{t('intro')}</p>
         <GalleryFilters locale={locale} categories={categories} tags={tags} active={{ category: q.category, tag: q.tag }} className="mt-6 mb-8" />
         {page.items.length ? (
-          <GalleryGrid key={JSON.stringify(filter)} initial={page.items} total={page.total} nextCursor={page.nextCursor} feedUrl={feedUrl} moreHref={moreHref} />
+          <GalleryGrid key={JSON.stringify(filter)} initial={page.items} total={page.total} nextCursor={page.nextCursor} feedUrl={feedUrl} moreHref={moreHref} priority />
         ) : (
           <div className="rounded-[var(--radius-photo)] border border-line px-6 py-12 text-center">
             <p>{t('empty')}</p>
