@@ -8,6 +8,7 @@ import sharp from 'sharp'
 import { Users } from './collections/Users'
 import { Media } from './collections/Media'
 import { Categories } from './collections/Categories'
+import { Tags } from './collections/Tags'
 import { s3Storage } from '@payloadcms/storage-s3'
 import { tr } from '@payloadcms/translations/languages/tr'
 import { en } from '@payloadcms/translations/languages/en'
@@ -28,7 +29,7 @@ export default buildConfig({
       baseDir: path.resolve(dirname),
     },
   },
-  collections: [Users, Media, Categories],
+  collections: [Users, Media, Categories, Tags],
   endpoints: [
     {
       // Liveness + DB reachability for the container healthcheck.
@@ -74,6 +75,8 @@ export default buildConfig({
     s3Storage({
       collections: {
         media: {
+          // Optional key prefix per environment (e.g. "dev") when environments share one bucket.
+          prefix: process.env.S3_PREFIX || undefined,
           disablePayloadAccessControl: true,
           generateFileURL: ({ filename, prefix }) =>
             [process.env.MEDIA_PUBLIC_URL, prefix, filename].filter(Boolean).join('/'),
