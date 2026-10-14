@@ -41,8 +41,14 @@ test.afterAll(async () => {
 
 test.describe('guides', () => {
   test('guide page: TOC anchors, body table, FAQ, author box, updated date, hreflang', async ({ page }) => {
+    await page.setViewportSize({ width: 1440, height: 900 })
     await page.goto(`/tr/rehber/${slugs.tr}`)
     await expect(page.getByRole('heading', { level: 1, name: seed.tr.title })).toBeVisible()
+    // Screenshots before any scrolling, so the sticky header stays at the top of the full-page image.
+    await page.screenshot({ path: 'docs/screens/guide-desktop.png', fullPage: true })
+    await page.setViewportSize({ width: 390, height: 844 })
+    await page.screenshot({ path: 'docs/screens/guide-mobile.png', fullPage: true })
+    await page.setViewportSize({ width: 1440, height: 900 })
 
     // Every TOC link points at an H2 that exists on the page.
     const toc = page.getByRole('navigation', { name: 'Bu yazıda' })
@@ -59,9 +65,6 @@ test.describe('guides', () => {
     await expect(page.locator('time[datetime]').first()).toBeVisible()
     await expect(page.locator(`link[rel="alternate"][hreflang="en"]`)).toHaveAttribute('href', new RegExp(`/en/guides/${slugs.en}$`))
 
-    await page.screenshot({ path: 'docs/screens/guide-desktop.png', fullPage: true })
-    await page.setViewportSize({ width: 390, height: 844 })
-    await page.screenshot({ path: 'docs/screens/guide-mobile.png', fullPage: true })
   })
 
   test('EN guide path and index page', async ({ page }) => {
@@ -69,6 +72,7 @@ test.describe('guides', () => {
     await expect(page.getByRole('heading', { level: 1, name: seed.en.title })).toBeVisible()
     await expect(page.getByRole('navigation', { name: 'In this guide' })).toBeVisible()
 
+    await page.setViewportSize({ width: 1440, height: 900 })
     await page.goto('/tr/rehber')
     await expect(page.getByRole('heading', { level: 1, name: 'Rehber' })).toBeVisible()
     // Index is cached per hour: assert structure, not this run's fixture.
