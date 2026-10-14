@@ -475,6 +475,8 @@ export interface Lead {
   photos?: (number | LeadPhoto)[] | null;
   status?: ('new' | 'contacted' | 'closed') | null;
   consentKvkk: boolean;
+  consentAt?: string | null;
+  consentTextVersion?: string | null;
   locale?: string | null;
   sourcePage?: string | null;
   utm?:
@@ -1039,6 +1041,8 @@ export interface LeadsSelect<T extends boolean = true> {
   photos?: T;
   status?: T;
   consentKvkk?: T;
+  consentAt?: T;
+  consentTextVersion?: T;
   locale?: T;
   sourcePage?: T;
   utm?: T;

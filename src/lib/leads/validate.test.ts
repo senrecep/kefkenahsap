@@ -34,6 +34,8 @@ describe('validateLead', () => {
     expect(codes(validateLead({ ...ok, photos: Array(MAX_PHOTOS + 1).fill(img) }))).toEqual(['Lead.TooManyPhotos'])
     expect(codes(validateLead({ ...ok, photos: [{ type: 'image/png', size: MAX_PHOTO_BYTES + 1 }] }))).toEqual(['Lead.PhotoTooLarge'])
     expect(codes(validateLead({ ...ok, photos: [{ type: 'application/pdf', size: 10 }] }))).toEqual(['Lead.PhotoType'])
+    // Scriptable SVG is an image/* type but never a lead photo.
+    expect(codes(validateLead({ ...ok, photos: [{ type: 'image/svg+xml', size: 10 }] }))).toEqual(['Lead.PhotoType'])
   })
 
   it('caps free text lengths', () => {

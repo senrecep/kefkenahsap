@@ -52,7 +52,16 @@ test.beforeAll(async () => {
     data: {},
     file: { data: img, mimetype: 'image/webp', name: `zeytinlik-${stamp}.webp`, size: img.length },
   })
-  await payload.update({ collection: 'media', id: media.id, locale: 'tr', data: { status: 'approved', title: `Zeytinlik kameriye ${stamp}`, alt: `Bahçede zeytinlik kameriye ${stamp}` } })
+  // Give the photo a category that already has photos (global-setup's in CI, the seed's locally): if an interrupted
+  // run leaves it behind, the gallery still shows it like any other photo, with related photos on its page.
+  const peer = await payload.find({ collection: 'media', where: { and: [{ status: { equals: 'approved' } }, { category: { exists: true } }] }, limit: 1, depth: 0 })
+  const category = (peer.docs[0]?.category as number | undefined) ?? cat.id
+  await payload.update({
+    collection: 'media',
+    id: media.id,
+    locale: 'tr',
+    data: { status: 'approved', category, title: `Zeytinlik kameriye ${stamp}`, alt: `Bahçede zeytinlik kameriye ${stamp}` },
+  })
   ids.media = media.id
 })
 
