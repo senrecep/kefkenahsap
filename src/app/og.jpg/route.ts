@@ -1,18 +1,22 @@
 import { routing } from '@/i18n/routing'
-import { getGalleryPage } from '@/lib/data/gallery'
-import { getNavCategories, getSiteSettings } from '@/lib/data/site'
-import { responsiveImage } from '@/lib/media/image'
+import { getHeroFallback, getHomepage } from '@/lib/data/home'
+import { getSiteSettings } from '@/lib/data/site'
+import { responsiveImage, type MediaLike } from '@/lib/media/image'
 import { ogPhoto } from '@/lib/seo/og-image'
+
+const media = (v: unknown) => (v && typeof v === 'object' ? (v as MediaLike) : undefined)
 
 /**
  * Site-wide OG card at a stable URL (pages without their own `opengraph-image` point here):
- * the admin's default OG image, else the newest approved photo of the first service.
+ * the admin's default OG image, else the homepage hero photo (admin pick, else its fallback).
  */
 export async function GET() {
   const locale = routing.defaultLocale
-  const settings = await getSiteSettings(locale)
-  if (settings.defaultOgImage && typeof settings.defaultOgImage === 'object') return ogPhoto(responsiveImage(settings.defaultOgImage).src)
-  const first = (await getNavCategories(locale))[0]
-  const photo = first ? (await getGalleryPage(locale, { categoryId: first.id, limit: 1 })).items[0] : undefined
-  return ogPhoto(photo && responsiveImage(photo.media).src)
+  const [settings, home] = await Promise.all([getSiteSettings(locale), getHomepage(locale).catch(() => null)])
+  const hero = home?._status === 'published' ? home.layout?.find((b) => b.blockType === 'hero') : undefined
+  const photo =
+    media(settings.defaultOgImage) ??
+    media(hero && 'image' in hero ? hero.image : undefined) ??
+    (await getHeroFallback(locale).catch(() => null))?.media
+  return ogPhoto(photo && responsiveImage(photo).src)
 }
