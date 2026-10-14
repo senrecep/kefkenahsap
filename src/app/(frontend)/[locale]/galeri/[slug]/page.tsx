@@ -9,7 +9,8 @@ import { WhatsAppButton } from '@/components/ui/WhatsAppButton'
 import { getPathname } from '@/i18n/navigation'
 import { routing, type Locale } from '@/i18n/routing'
 import { getGalleryPage, getImage } from '@/lib/data/gallery'
-import { buildAlternates, siteUrl } from '@/lib/seo/alternates'
+import { siteUrl } from '@/lib/seo/alternates'
+import { pageMetadata } from '@/lib/seo/page-metadata'
 
 type Props = { params: Promise<{ locale: Locale; slug: string }> }
 
@@ -17,19 +18,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = await params
   const image = await getImage(locale, slug)
   if (!image) return {}
+  // A locale without its own title shows Turkish fallback text: noindex, and left out of hreflang.
   const paths = Object.fromEntries(
     routing.locales.map((l) => [l, image.titledLocales.includes(l) ? getPathname({ locale: l, href: { pathname: '/galeri/[slug]', params: { slug } } }) : null]),
   )
-  const { item } = image
-  const og = item.media.sizes?.w1280?.url ?? item.media.url
-  return {
-    title: item.title,
-    description: item.caption ?? item.alt,
-    alternates: buildAlternates({ current: locale, paths, site: siteUrl() }),
-    // Shown with Turkish fallback text when this locale has no own title: keep it out of the index.
-    ...(image.titledLocales.includes(locale) ? {} : { robots: { index: false, follow: true } }),
-    ...(og ? { openGraph: { images: [{ url: og, alt: item.alt }] } } : {}),
-  }
+  return pageMetadata({ locale, title: image.item.title, description: image.item.caption ?? image.item.alt, paths, ownOgImage: true })
 }
 
 export default async function ImagePage({ params }: Props) {
