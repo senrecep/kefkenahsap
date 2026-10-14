@@ -7,11 +7,14 @@ import { sinceYear } from '@/lib/company'
 import { telLink, waLink } from '@/lib/contact'
 import { getNavCategories, getSiteSettings } from '@/lib/data/site'
 
+import { CookiePreferencesButton } from './CookiePreferencesButton'
+
 export async function Footer({ locale }: { locale: Locale }) {
-  const [t, tNav, tDays, settings, categories] = await Promise.all([
+  const [t, tNav, tDays, tConsent, settings, categories] = await Promise.all([
     getTranslations('Footer'),
     getTranslations('Nav'),
     getTranslations('Days'),
+    getTranslations('Consent'),
     getSiteSettings(locale),
     getNavCategories(locale).then((cs) => cs.filter((c) => c.slug)),
   ])
@@ -85,6 +88,9 @@ export async function Footer({ locale }: { locale: Locale }) {
             <li><Link href="/hakkimizda" className="text-paper/90 hover:underline">{tNav('about')}</Link></li>
             <li><Link href="/kvkk" className="text-paper/90 hover:underline">{t('privacy')}</Link></li>
             <li><Link href="/cerez-politikasi" className="text-paper/90 hover:underline">{t('cookies')}</Link></li>
+            {process.env.NEXT_PUBLIC_GA_ID && (
+              <li><CookiePreferencesButton label={tConsent('preferences')} className="text-start text-paper/90 hover:underline" /></li>
+            )}
           </ul>
           <div className="mt-6 flex gap-3">
             {settings.social?.instagram && <a href={settings.social.instagram} rel="noopener me" target="_blank" className="text-paper/90 hover:underline">Instagram</a>}

@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 import type { ReactNode } from 'react'
 import localFont from 'next/font/local'
 
+import { Analytics } from '@/components/site/Analytics'
 import { Footer } from '@/components/site/Footer'
 import { Header } from '@/components/site/Header'
 import { MobileActionBar } from '@/components/site/MobileActionBar'
@@ -35,6 +36,7 @@ export default async function LocaleLayout({
           <main id="main">{children}</main>
           <Footer locale={locale as Locale} />
           <MobileActionBar locale={locale as Locale} />
+          <Analytics locale={locale} />
         </NextIntlClientProvider>
       </body>
     </html>
