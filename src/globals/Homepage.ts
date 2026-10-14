@@ -1,6 +1,7 @@
 import type { Block, GlobalConfig } from 'payload'
 
 import { isStaff } from '@/access'
+import { revalidateGlobal } from '@/hooks/revalidate'
 
 const enabled = { name: 'enabled', type: 'checkbox' as const, defaultValue: true, label: 'Göster' }
 const heading = { name: 'heading', type: 'text' as const, localized: true, label: 'Başlık' }
@@ -46,6 +47,7 @@ export const Homepage: GlobalConfig = {
   slug: 'homepage',
   label: 'Ana Sayfa',
   admin: { group: 'İçerik' },
+  hooks: { afterChange: [revalidateGlobal('homepage')] },
   access: { read: () => true, update: isStaff },
   versions: { drafts: true },
   fields: [{ name: 'layout', type: 'blocks', label: 'Bölümler (sürükleyerek sıralayın)', blocks }],

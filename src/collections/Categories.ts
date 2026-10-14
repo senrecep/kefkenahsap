@@ -2,6 +2,7 @@ import type { CollectionConfig } from 'payload'
 
 import { isStaff, publishedOrStaff } from '@/access'
 import { slugFrom } from '@/hooks/slug'
+import { revalidateAfterChange, revalidateAfterDelete } from '@/hooks/revalidate'
 
 export const Categories: CollectionConfig = {
   slug: 'categories',
@@ -15,6 +16,7 @@ export const Categories: CollectionConfig = {
         `${process.env.NEXT_PUBLIC_SITE_URL}/${locale?.code ?? 'tr'}/${data?.slug ?? ''}?preview=1`,
     },
   },
+  hooks: { afterChange: [revalidateAfterChange('categories', 'media')], afterDelete: [revalidateAfterDelete('categories', 'media')] },
   access: { read: publishedOrStaff, create: isStaff, update: isStaff, delete: isStaff },
   orderable: true,
   versions: { drafts: true },
