@@ -48,9 +48,10 @@ test.describe('homepage', () => {
     await expect(hero).toHaveJSProperty('complete', true)
     const source = page.locator('main section').first().locator('source[media="(max-width: 767px)"]')
     // Seed-agnostic: a photo too small for the crop (or not yet backfilled) has no phone source.
-    test.skip(!(await source.count()), 'hero photo has no portrait crop')
-    const portrait = (await source.getAttribute('srcset'))!.split(', ').map((c) => c.split(' ')[0])
-    expect(portrait).toContain(await hero.evaluate((img: HTMLImageElement) => img.currentSrc))
+    if (await source.count()) {
+      const portrait = (await source.getAttribute('srcset'))!.split(', ').map((c) => c.split(' ')[0])
+      expect(portrait).toContain(await hero.evaluate((img: HTMLImageElement) => img.currentSrc))
+    }
   })
 
   test('english homepage', async ({ page }) => {

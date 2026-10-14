@@ -78,4 +78,7 @@ describe('portraitOf', () => {
     expect(portraitOf(media)).toBeUndefined()
     expect(portraitOf({ ...media, sizes: { portrait: { url: null, width: null, height: null } } })).toBeUndefined()
   })
+  it('is undefined when the source was too small to crop (withoutEnlargement keeps it landscape)', () => {
+    expect(portraitOf({ ...media, sizes: { portrait: { url: 'https://cdn.kefkenahsap.com/small-300x200.webp', width: 300, height: 200 } } })).toBeUndefined()
+  })
 })

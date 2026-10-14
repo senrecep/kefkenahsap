@@ -51,8 +51,9 @@ export function responsiveImage(m: MediaLike, opts: { maxWidth?: number; minWidt
   }
 }
 
-/** The upload-time portrait crop (Media `portrait` size) as its own image, once it exists. */
+/** The upload-time portrait crop (Media `portrait` size) as its own image, once it exists and is portrait-shaped. */
 export function portraitOf(m: MediaLike): MediaLike | undefined {
   const p = m.sizes?.portrait
-  return p?.url && p.width && p.height ? { url: p.url, width: p.width, height: p.height } : undefined
+  // A source smaller than the box is only shrunk (withoutEnlargement), so its "portrait" can still be landscape.
+  return p?.url && p.width && p.height && p.height > p.width ? { url: p.url, width: p.width, height: p.height } : undefined
 }
