@@ -36,7 +36,7 @@ const skeleton = (v: unknown): unknown =>
 let payload: Payload
 let editor: User
 let req: PayloadRequest
-const cleanup: { collection: 'guides' | 'categories' | 'users' | 'ai-usage'; id: number }[] = []
+const cleanup: { collection: 'guides' | 'categories' | 'pages' | 'users' | 'ai-usage'; id: number }[] = []
 
 beforeAll(async () => {
   const { default: config } = await import('@/payload.config')
@@ -63,7 +63,7 @@ describe('translateDocument (#55)', () => {
     cleanup.push({ collection: 'guides', id: g.id })
     const settings = await payload.findGlobal({ slug: 'aiSettings' })
 
-    const r = await translateDocument({ payload, req, collection: 'guides', id: g.id, settings })
+    const r = await translateDocument({ payload, req, collection: 'guides', id: g.id, settings, remainingUsd: 1000 })
     expect(Result.isSuccess(r) && r.value.locales).toEqual(['en'])
 
     const enDraft = await payload.findByID({ collection: 'guides', id: g.id, locale: 'en', fallbackLocale: false, draft: true })
@@ -97,7 +97,7 @@ describe('translateDocument (#55)', () => {
     cleanup.push({ collection: 'guides', id: g.id })
     await payload.update({ collection: 'guides', id: g.id, locale: 'en', data: { title: `Full ${stamp}` } })
     const calls = fakeCalls.length
-    const r = await translateDocument({ payload, req, collection: 'guides', id: g.id, settings: await payload.findGlobal({ slug: 'aiSettings' }) })
+    const r = await translateDocument({ payload, req, collection: 'guides', id: g.id, settings: await payload.findGlobal({ slug: 'aiSettings' }), remainingUsd: 1000 })
     expect(Result.isFailure(r) && r.errors[0]?.code).toBe('Translate.NothingMissing')
     expect(fakeCalls.length).toBe(calls)
   })
@@ -109,12 +109,43 @@ describe('translateDocument (#55)', () => {
       data: { name: `Kamelya ${stamp}`, shortDesc: 'Bahçe için kamelya.', priceGuide: { min: 100, note: 'Ölçüye göre değişir.' } },
     })
     cleanup.push({ collection: 'categories', id: c.id })
-    const r = await translateDocument({ payload, req, collection: 'categories', id: c.id, settings: await payload.findGlobal({ slug: 'aiSettings' }) })
+    const r = await translateDocument({ payload, req, collection: 'categories', id: c.id, settings: await payload.findGlobal({ slug: 'aiSettings' }), remainingUsd: 1000 })
     expect(Result.isSuccess(r)).toBe(true)
     const en = await payload.findByID({ collection: 'categories', id: c.id, locale: 'en', fallbackLocale: false, draft: true })
     expect(en.name).toBe(`[EN] Kamelya ${stamp}`)
     expect(en.priceGuide?.note).toBe('[EN] Ölçüye göre değişir.')
     expect(en.priceGuide?.min).toBe(100)
+  })
+})
+
+describe('translateDocument refuses before any model call', () => {
+  const longBody = (n: number) => ({
+    root: { type: 'root', format: '', indent: 0, version: 1, direction: null, children: Array.from({ length: n }, () => ({
+      type: 'paragraph', format: '', indent: 0, version: 1, direction: null, textFormat: 0, children: [text('a'.repeat(1000))],
+    })) },
+  })
+
+  it('more than 20k source characters → Translate.TooLong', async () => {
+    const p = await payload.create({ collection: 'pages', locale: 'tr', data: { title: `Uzun ${stamp}`, body: longBody(21) as never } })
+    cleanup.push({ collection: 'pages', id: p.id })
+    const calls = fakeCalls.length
+    const r = await translateDocument({ payload, req, collection: 'pages', id: p.id, settings: await payload.findGlobal({ slug: 'aiSettings' }), remainingUsd: 1000 })
+    expect(Result.isFailure(r) && r.errors[0]?.code).toBe('Translate.TooLong')
+    expect(fakeCalls.length).toBe(calls)
+  })
+
+  it('estimated cost above the remaining budget → AI.BudgetInsufficient', async () => {
+    const p = await payload.create({ collection: 'pages', locale: 'tr', data: { title: `Bütçe ${stamp}`, body: longBody(5) as never } })
+    cleanup.push({ collection: 'pages', id: p.id })
+    const calls = fakeCalls.length
+    const r = await translateDocument({ payload, req, collection: 'pages', id: p.id, settings: await payload.findGlobal({ slug: 'aiSettings' }), remainingUsd: 0.001 })
+    expect(Result.isFailure(r) && r.errors[0]?.code).toBe('AI.BudgetInsufficient')
+    expect(fakeCalls.length).toBe(calls)
+  })
+
+  it('a record the user cannot see → Translate.NotFound', async () => {
+    const r = await translateDocument({ payload, req, collection: 'guides', id: 999_999_999, settings: await payload.findGlobal({ slug: 'aiSettings' }), remainingUsd: 1000 })
+    expect(Result.isFailure(r) && r.errors[0]?.code).toBe('Translate.NotFound')
   })
 })
 

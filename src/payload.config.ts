@@ -63,6 +63,9 @@ export default buildConfig({
       },
     },
   },
+  // CSRF: in a deployed image (SITE_ENV) the auth cookie is accepted only from the site's own origin.
+  // Local dev and CI run on varying ports, so no list there (SameSite=Lax cookie + JSON-only AI endpoints still apply).
+  csrf: process.env.SITE_ENV && process.env.NEXT_PUBLIC_SITE_URL ? [new URL(process.env.NEXT_PUBLIC_SITE_URL).origin] : [],
   collections: [Users, Media, Categories, Tags, Projects, References, Pages, Guides, Leads, LeadPhotos, AiUsage],
   // Real e-mail only outside tests; without a key Payload logs e-mails to the console.
   email:

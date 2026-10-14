@@ -25,9 +25,9 @@ export function AiTranslateButton() {
       const body = await res.json().catch(() => ({}))
       if (!res.ok) return setState({ kind: 'error', message: body.error || 'Çeviri yapılamadı. Tekrar deneyin.' })
       const langs = (body.locales as string[]).map((l) => l.toUpperCase()).join(', ')
-      setState({ kind: 'done', message: `${langs} çevirisi taslak olarak kaydedildi. Sayfa yenileniyor…` })
+      setState({ kind: 'done', message: `${langs} çevirisi taslak olarak kaydedildi. Bir sonraki Yayınla bu dilleri de yayınlar; önce kontrol edin. Sayfa yenileniyor…` })
       // Reload so the form shows the new draft; nothing is published until someone presses Yayınla.
-      setTimeout(() => window.location.reload(), 1200)
+      setTimeout(() => window.location.reload(), 4000)
     } catch {
       setState({ kind: 'error', message: 'Bağlantı kurulamadı. İnternetinizi kontrol edip tekrar deneyin.' })
     }
@@ -39,7 +39,7 @@ export function AiTranslateButton() {
       <button type="button" className="ai-btn" onClick={translate} disabled={Boolean(blocked) || state.kind === 'busy' || state.kind === 'done'}>
         {state.kind === 'busy' ? 'Çevriliyor…' : 'AI ile çevir'}
       </button>
-      <p className="ai-action__hint">{blocked ?? 'Boş dilleri doldurur, taslak olarak kaydeder. Dolu alanlara dokunmaz.'}</p>
+      <p className="ai-action__hint">{blocked ?? 'Boş dilleri doldurur, taslak olarak kaydeder. Dolu alanlara dokunmaz. Yayınla tüm dilleri birlikte yayınlar.'}</p>
       <p className="ai-action__status" aria-live="polite">
         {state.kind === 'busy' && 'Çeviri hazırlanıyor, bu bir dakika kadar sürebilir.'}
         {state.kind === 'done' && state.message}

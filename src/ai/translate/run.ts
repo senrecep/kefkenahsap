@@ -6,10 +6,13 @@ import { routing } from '@/i18n/routing'
 import type { AiSetting } from '@/payload-types'
 import { aiModel, resolveChain } from '../models'
 import { glossaryFrom, toSegmentMap, TRANSLATE_PROMPT_VERSION, translateInput, translateSchema, translateSystem } from '../prompts/translate'
-import { runStructured } from '../run'
-import { applySegments, collectSegments, isMissing, TRANSLATE_SPECS, type Segment, type TranslatableCollection } from './segments'
+import { estimateCost, failureUsage, runStructured } from '../run'
+import { applySegments, collectSegments, isMissing, sourceChars, TRANSLATE_SPECS, type Segment, type TranslatableCollection } from './segments'
 
 type Doc = Record<string, unknown>
+
+/** Per press: about 20k characters of source text (a long guide); longer content is translated in parts by hand. */
+export const MAX_SOURCE_CHARS = 20_000
 
 /**
  * "AI ile çevir": fills the locales whose title is empty from the first locale that has one, in one model call for all of
@@ -22,6 +25,8 @@ export async function translateDocument(a: {
   collection: TranslatableCollection
   id: number | string
   settings: AiSetting
+  /** What is left of this month's budget (aiGate); a press whose estimated cost exceeds it is refused up front. */
+  remainingUsd: number
 }): Promise<Result<{ locales: string[]; segments: number; model: string; promptVersion: string }>> {
   const { payload, req, collection, id } = a
   const spec = TRANSLATE_SPECS[collection]
@@ -41,16 +46,20 @@ export async function translateDocument(a: {
   const perTarget = new Map(targets.map((t) => [t, collectSegments(docs[source], docs[t], spec)]))
   const segments = [...new Map([...perTarget.values()].flat().map((s): [string, Segment] => [s.id, s])).values()]
 
-  const run = await runStructured({
-    chain: resolveChain('translate', { translate: a.settings.translate }, process.env),
-    getModel: aiModel('translate'),
-    schema: translateSchema(targets),
-    system: translateSystem({ glossary: glossaryFrom(a.settings.glossary), source, targets }),
-    prompt: translateInput(segments, source, targets),
-  })
+  const chars = sourceChars(segments)
+  if (chars > MAX_SOURCE_CHARS) return Result.failure(Err.validation('Translate.TooLong', `${chars} source chars > ${MAX_SOURCE_CHARS}`))
+  const chain = resolveChain('translate', { translate: a.settings.translate }, process.env)
+  const system = translateSystem({ glossary: glossaryFrom(a.settings.glossary), source, targets })
+  const prompt = translateInput(segments, source, targets)
+  // Worst case: every model in the chain answers once; output ≈ 1.5 × the source per target (JSON + longer languages).
+  const estimate = chain.length * estimateCost(Math.ceil((system.length + prompt.length) / 4), Math.ceil((chars / 4) * 1.5 * targets.length))
+  if (estimate > a.remainingUsd)
+    return Result.failure(Err.forbidden('AI.BudgetInsufficient', `estimate ${estimate.toFixed(4)} > remaining ${a.remainingUsd.toFixed(4)}`))
+
+  const run = await runStructured({ chain, getModel: aiModel('translate'), schema: translateSchema(targets), system, prompt })
   const docRef = `${collection}:${id}`
   if (!run.ok) {
-    await payload.create({ collection: 'ai-usage', data: { task: 'translate', ok: false, docRef, error: run.errors[0]!.description } })
+    await payload.create({ collection: 'ai-usage', data: { task: 'translate', ok: false, docRef, costUsd: failureUsage(run.errors).costUsd, error: run.errors[0]!.description } })
     return run
   }
   const { output, model, costUsd, inputTokens, outputTokens } = run.value

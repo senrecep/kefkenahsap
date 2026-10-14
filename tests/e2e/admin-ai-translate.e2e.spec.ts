@@ -48,3 +48,12 @@ test('the translate endpoint refuses a request without a signed-in user', async 
   expect(res.status()).toBe(401)
   expect((await res.json()).error).toContain('giriş yapın')
 })
+
+test('the translate endpoint refuses a non-JSON (form) body even when signed in', async ({ request }) => {
+  await seedTestUser()
+  const auth = await request.post('/api/users/login', { data: { email: testUser.email, password: testUser.password } })
+  expect(auth.ok()).toBe(true)
+  const res = await request.post('/api/ai/translate', { form: { collection: 'guides', id: '1' } })
+  expect(res.status()).toBe(415)
+  expect((await res.json()).error).toBe('Geçersiz istek.')
+})

@@ -69,10 +69,16 @@ Hedef dil Türkçe ise:
 ${TURKISH_RULES}`
 }
 
+/** Output bounds: a segment is one text node or field (source ≤ 20k chars per press in total). */
+const MAX_SEGMENT_OUT = 8000
+const MAX_ITEMS = 2000
+
 export const translateInput = (segments: Segment[], source: string, targets: string[]) => JSON.stringify({ source, targets, segments })
 
 export const translateSchema = (targets: string[]) =>
-  z.object({ items: z.array(z.object({ id: z.string(), ...Object.fromEntries(targets.map((t) => [t, z.string()])) })) })
+  z.object({
+    items: z.array(z.object({ id: z.string().max(80), ...Object.fromEntries(targets.map((t) => [t, z.string().max(MAX_SEGMENT_OUT)])) })).max(MAX_ITEMS),
+  })
 
 /** id → text per target locale. Every segment needs a non-blank answer in every locale; edge spaces come from the source. */
 export function toSegmentMap(

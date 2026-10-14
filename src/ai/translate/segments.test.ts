@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { applySegments, collectSegments, isMissing, TRANSLATE_SPECS } from './segments'
+import { applySegments, collectSegments, isMissing, isTranslatable, sourceChars, TRANSLATE_SPECS } from './segments'
 
 const text = (t: string, format = 0) => ({ mode: 'normal', text: t, type: 'text', style: '', detail: 0, format, version: 1 })
 // Shaped like the seed guides: heading, paragraph with bold + link, list, a line break, a table cell.
@@ -98,5 +98,35 @@ describe('translate segments: only Lexical text nodes and plain text fields go t
     const emptyBody = { root: { type: 'root', children: [{ type: 'paragraph', children: [] }] } }
     const segs = collectSegments({ title: 'x', body }, { body: emptyBody }, TRANSLATE_SPECS.pages)
     expect(segs.map((s) => s.text)).toContain('Kamelya')
+  })
+})
+
+describe('translate scope guards', () => {
+  it('isTranslatable: own keys only (no prototype keys, no other collections)', () => {
+    for (const c of ['categories', 'projects', 'pages', 'guides']) expect(isTranslatable(c)).toBe(true)
+    for (const c of ['users', 'media', 'ai-usage', 'constructor', '__proto__', 'toString', 'hasOwnProperty', ''])
+      expect(isTranslatable(c), c).toBe(false)
+  })
+
+  it('leaves autolinks and inline code untouched: their text is a URL / code, not prose', () => {
+    const doc = {
+      root: { type: 'root', children: [{ type: 'paragraph', children: [
+        { type: 'text', text: 'Bakın: ', format: 0 },
+        { type: 'autolink', fields: { url: 'https://kefkenahsap.com' }, children: [{ type: 'text', text: 'kefkenahsap.com', format: 0 }] },
+        { type: 'text', text: 'npm run build', format: 16 },
+        { type: 'text', text: ' sonra', format: 0 },
+      ] }] },
+    }
+    const segs = collectSegments({ title: 't', body: doc }, {}, TRANSLATE_SPECS.pages)
+    expect(segs.map((s) => s.text)).toEqual(['t', 'Bakın: ', ' sonra'])
+    const out = Object.fromEntries(segs.map((s) => [s.id, `EN:${s.text}`]))
+    const json = JSON.stringify(applySegments({ title: 't', body: doc }, {}, TRANSLATE_SPECS.pages, out).body)
+    expect(json).toContain('"text":"kefkenahsap.com"')
+    expect(json).toContain('"text":"npm run build"')
+    expect(json).toContain('"text":"EN: sonra"')
+  })
+
+  it('sourceChars: total characters a press would send', () => {
+    expect(sourceChars([{ id: 'a', text: 'abc' }, { id: 'b', text: 'de' }])).toBe(5)
   })
 })

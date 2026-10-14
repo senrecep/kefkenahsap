@@ -23,7 +23,7 @@ export const TRANSLATE_SPECS = {
 } satisfies Record<string, TranslateSpec>
 
 export type TranslatableCollection = keyof typeof TRANSLATE_SPECS
-export const isTranslatable = (c: string): c is TranslatableCollection => c in TRANSLATE_SPECS
+export const isTranslatable = (c: string): c is TranslatableCollection => Object.hasOwn(TRANSLATE_SPECS, c)
 
 export type Segment = { id: string; text: string }
 type Doc = Record<string, unknown> | null | undefined
@@ -34,8 +34,12 @@ const get = (doc: Doc, path: string): unknown =>
 const blank = (v: unknown) => typeof v !== 'string' || !v.trim()
 
 /** Every text node in document order (depth first), with its node so the caller can read or replace the text. */
+const IS_CODE = 16 // Lexical text format bit
+/** Not prose: an autolink's text is its URL, code blocks and inline code stay as written. */
+const untranslatable = (n: LexNode) => n.type === 'autolink' || n.type === 'code' || (n.type === 'text' && ((n.format as number) & IS_CODE) !== 0)
+
 function textNodes(node: LexNode | undefined, out: LexNode[] = []): LexNode[] {
-  if (!node || typeof node !== 'object') return out
+  if (!node || typeof node !== 'object' || untranslatable(node)) return out
   if (node.type === 'text' && typeof node.text === 'string') out.push(node)
   for (const c of node.children ?? []) textNodes(c, out)
   return out
@@ -43,6 +47,8 @@ function textNodes(node: LexNode | undefined, out: LexNode[] = []): LexNode[] {
 const lexRoot = (v: unknown) => (v as { root?: LexNode } | null)?.root
 const richBlank = (v: unknown) => textNodes(lexRoot(v)).every((n) => blank(n.text))
 const arrayBlank = (v: unknown) => !Array.isArray(v) || v.length === 0
+
+export const sourceChars = (segs: Segment[]) => segs.reduce((n, s) => n + s.text.length, 0)
 
 export const isMissing = (target: Doc, spec: TranslateSpec) => blank(get(target, spec.title))
 
