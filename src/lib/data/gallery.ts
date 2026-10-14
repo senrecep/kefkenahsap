@@ -2,8 +2,9 @@ import { unstable_cache } from 'next/cache'
 
 import { getPathname } from '@/i18n/navigation'
 import type { Locale } from '@/i18n/routing'
+import { categoryRank, diversify } from '@/lib/gallery/curate'
 import type { GalleryItem } from '@/lib/gallery/item'
-import { encodeCursor, galleryWhere, type GalleryQuery } from '@/lib/gallery/query'
+import { encodeCursor, galleryWhere, PAGE_SIZE, type GalleryQuery } from '@/lib/gallery/query'
 import type { Category, Media, Project } from '@/payload-types'
 
 import { getPayload, TAGS } from './payload'
@@ -25,6 +26,7 @@ const select = {
   sizes: true,
   lqip: true,
   dominantColor: true,
+  featured: true,
 } as const
 const populate = { categories: { name: true, slug: true }, projects: { title: true, slug: true } } as const
 
@@ -58,10 +60,23 @@ export function toGalleryItem(doc: Media, locale: Locale): GalleryItem {
   }
 }
 
+/** Featured first, then a round-robin across categories (outdoor first), max 2 per category in the first 12. */
+export async function curate(docs: Media[]): Promise<Media[]> {
+  // Ranked by the Turkish slugs, the same in every locale.
+  const cats = await getNavCategories('tr')
+  const slugById = new Map(cats.map((c) => [String(c.id), c.slug ?? '']))
+  const rank = categoryRank(cats.map((c) => c.slug ?? ''))
+  const catId = (d: Media) => String(typeof d.category === 'object' && d.category ? d.category.id : (d.category ?? ''))
+  return diversify(docs, { group: catId, rank: (id) => rank(slugById.get(id) ?? ''), featured: (d) => Boolean(d.featured) })
+}
+
 export type GalleryPage = { items: GalleryItem[]; total: number; nextCursor: string | null }
 
-/** Newest first, keyset-paginated by id (stable when new photos are added). */
-export function getGalleryPage(locale: Locale, f: { categoryId?: number; tagId?: number; cursor?: number; limit: number }) {
+/**
+ * Newest first, keyset-paginated by id (stable when new photos are added).
+ * `curated` reorders only the first page's own photos, so the cursor (the oldest id on it) and later pages are unchanged.
+ */
+export function getGalleryPage(locale: Locale, f: { categoryId?: number; tagId?: number; cursor?: number; limit: number; curated?: boolean }) {
   const load = async (): Promise<GalleryPage> => {
     const res = await (await getPayload()).find({
       collection: 'media',
@@ -71,11 +86,13 @@ export function getGalleryPage(locale: Locale, f: { categoryId?: number; tagId?:
       sort: '-id',
       limit: f.limit,
     })
-    const docs = res.docs as Media[]
+    let docs = res.docs as Media[]
+    const nextCursor = res.hasNextPage && docs.length ? encodeCursor(docs.at(-1)!.id) : null
+    if (f.curated && !f.cursor) docs = [...(await curate(docs.slice(0, PAGE_SIZE))), ...docs.slice(PAGE_SIZE)]
     return {
       items: docs.map((d) => toGalleryItem(d, locale)),
       total: res.totalDocs,
-      nextCursor: res.hasNextPage && docs.length ? encodeCursor(docs.at(-1)!.id) : null,
+      nextCursor,
     }
   }
   // Cursor pages are visitor-chosen keys: never cache them in-process (the feed's Cache-Control covers the edge).

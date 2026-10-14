@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest'
 import { Maybe } from 'tsentials/maybe'
 import { createFakeDateTimeProvider } from 'tsentials/time'
 
-import { craftYears, sinceYear } from './company'
+import { areaLine, craftYears, sinceYear } from './company'
 
 const clock = createFakeDateTimeProvider(new Date('2026-10-14T12:00:00Z'))
 
@@ -28,5 +28,19 @@ describe('craft years bounds', () => {
   it('a future or current start year produces no claim', () => {
     expect(Maybe.isNone(craftYears({ craftStartYear: 2030 }, clock))).toBe(true)
     expect(Maybe.isNone(craftYears({ craftStartYear: 2026 }, clock))).toBe(true)
+  })
+})
+
+describe('areaLine', () => {
+  const tr = (c: string) => `${c} geneli`
+  it('reads "İstanbul ve Türkiye geneli" for a city plus a country', () => {
+    expect(areaLine([{ name: 'İstanbul', kind: 'city' }, { name: 'Türkiye', kind: 'country' }], 'tr', tr)).toBe('İstanbul ve Türkiye geneli')
+  })
+  it('lists places with the locale conjunction and drops empty names', () => {
+    expect(areaLine([{ name: 'Sarıyer', kind: 'district' }, { name: '' }, { name: 'Beykoz' }, { name: 'Şile' }], 'tr', tr)).toBe('Sarıyer, Beykoz ve Şile')
+    expect(areaLine([{ name: 'Istanbul', kind: 'city' }, { name: 'Türkiye', kind: 'country' }], 'en', (c) => `across ${c}`)).toBe('Istanbul and across Türkiye')
+  })
+  it('is empty without areas', () => {
+    expect(areaLine(null, 'tr', tr)).toBe('')
   })
 })

@@ -14,3 +14,11 @@ export const craftYears = (f: Facts, clock: DateTimeProvider): Maybe<number> => 
   const years = clock.utcNow().getUTCFullYear() - f.craftStartYear
   return years >= 1 ? Maybe.some(years) : Maybe.none()
 }
+
+type Area = { name?: string | null; kind?: string | null }
+
+/** "İstanbul ve Türkiye geneli": areaServed as one phrase; a country reads as nationwide coverage. */
+export const areaLine = (areas: readonly Area[] | null | undefined, locale: string, nationwide: (country: string) => string): string =>
+  new Intl.ListFormat(locale, { type: 'conjunction' }).format(
+    (areas ?? []).filter((a) => a.name).map((a) => (a.kind === 'country' ? nationwide(a.name!) : a.name!)),
+  )
