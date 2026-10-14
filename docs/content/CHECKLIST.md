@@ -112,6 +112,36 @@ Dört rehber (`seed/content/guides/*.json`) taslak olarak yüklenir. Sahibin ona
 10. **Pergola SSS:** "Pergolaya sonradan çatı çoğu zaman eklenebilir, ama kirişlerin ek yükü taşıyıp taşımayacağına bakmak gerekir." Doğru mu?
 11. **EN metinler** ilk çeviridir; bir İngilizce okurun gözden geçirmesi iyi olur.
 
+## Rehberler (#58)
+
+Beş yeni rehber (`seed/content/guides/`) aynı yükleyiciyle taslak olarak yüklenir. TR gövdeler 550–800 kelime, her dilde 5 SSS. Fiyat yok. Metinlerdeki ahşap bilgisi genel bilgi olarak yazıldı ("genellikle", "kaynaklarda", "yaygındır"). Firmanın kendi yöntemi olarak yalnızca teyitli olanlar geçiyor: keşif, aynı ekiple imalat ve montaj, başka firmaların işlerine bakım ve onarım.
+
+| Rehber (TR slug) | Gövde TR / EN (kelime) | Giriş TR | H2 | SSS |
+|---|---|---|---|---|
+| Thermowood nedir, nerede kullanılır? (`thermowood-nedir`) | 563 / 698 | 77 | 6 | 5 / 5 |
+| Emprenyeli ahşap nedir? (`emprenyeli-ahsap-nedir`) | 562 / 688 | 66 | 7 | 5 / 5 |
+| Korkuluk: ahşap mı metal mi? (`korkuluk-ahsap-mi-metal-mi`) | 553 / 696 | 78 | 6 | 5 / 5 |
+| Havuz kenarı deck'i nasıl seçilir? (`havuz-kenari-deck`) | 557 / 710 | 74 | 6 | 5 / 5 |
+| Pergola mı kamelya mı? (`pergola-mi-kamelya-mi`) | 555 / 734 | 81 | 7 | 5 / 5 |
+
+Sahibin onaylaması gerekenler:
+
+1. **Thermowood işi:** Rehber thermowood'u yalnızca genel bilgi olarak anlatıyor; firmanın thermowood ile çalıştığı yazmıyor. Thermowood ile iş yapıyor musunuz? Yapıyorsanız rehbere ve Deck kategorisine bir cümle eklenebilir.
+2. **Thermowood deck:** "Deck'te genellikle yalnızca tahtalar thermowood olur, altındaki kirişler emprenyeli çamdır" ve "vidalamadan önce kılavuz delik açmak yaygındır" yazıyor. Doğru mu?
+3. **Emprenye, kesilen uçlar:** "Kesilen uçlara ve deliklere uç koruyucu sürmek yaygındır." Siz de uyguluyor musunuz?
+4. **Emprenye, bağlantı:** "Paslanmaz ya da galvanizli vida ve bağlantı parçaları tercih edilir" (emprenye, korkuluk ve havuz rehberlerinde). Kullandığınız vida ve cıvata bu mu?
+5. **Emprenye, koruma düzeyi:** "Toprağa ya da suya girecek parçalar için bu kullanıma uygun olduğu belirtilen ürün seçilir" yazıyor; sınıf adı ya da numarası yazılmadı. Tedarikçinizin verdiği sınıfı yazmak ister misiniz?
+6. **Metal korkuluk:** Rehber metal ve karma (metal dikme + ahşap küpeşte) korkuluğu yalnızca genel bilgi olarak anlatıyor; firmanın yaptığı yazmıyor. Metal ya da karma korkuluk yapıyor musunuz, yoksa yalnızca ahşap kısmını mı? (Proje taslağı "Balkon deck'i ve metal korkuluk" fotoğraflarındaki metal korkuluğu siz mi yaptınız?)
+7. **Korkuluk yüksekliği:** Yükseklik ve dolgu aralığı için rakam yazılmadı, "yapının kullanımına ve ilgili yönetmeliğe göre belirlenir" deniyor. Bir ölçü yazılsın mı? Yazılacaksa kaynağı ne?
+8. **Küpeşte ve dikme başı:** "Küpeştenin üstüne hafif bir eğim vermek ya da dikme başlarını eğimli kesmek suyun üstte durmasını önler." Uygulamanızla uyumlu mu?
+9. **Havuz kenarı, oluklu tahta:** Oluklu deck tahtası genel bilgi olarak geçiyor ("tutunmayı artırabilir, ama düzenli fırçalanmaları gerekir"). Açık soru 13 (kaydırmaz detay) ile bağlantılı. Bunu kullanıyor musunuz?
+10. **Havuz kenarı, sökülebilir bölüm:** "Havuzun teknik kapakları deck'in altında kalacaksa onlara ulaşmak için deck'te sökülebilir bir bölüm bırakmak gerekir." Böyle yapıyor musunuz?
+11. **Havuz kenarı, yağ:** "Yağın havuz kenarında kullanıma uygun olduğunu ürünün talimatından kontrol edin." Havuz kenarında kullandığınız bir ürün türü varsa yazılabilir.
+12. **Kamelya:** "Kamelyanın çatısı ahşap kaplama üzerine örtüyle yapılır", "Kamelya çoğu zaman kendi ahşap döşemesiyle birlikte yapılır; döşeme yerden yükseltilir." Doğru mu? Çatı örtüsünü (shingle vb.) ve oluğu siz mi yapıyorsunuz? (#49 soru 9 ile aynı.)
+13. **Tanımlar:** Kamelya "kapalı çatılı, çoğu zaman bağımsız yapı", çardak "daha basit, açık, üzerine bitki sarılan yapı" diye anlatılıyor. Sizin ve müşterilerinizin kullandığı anlamla uyuşuyor mu?
+14. **Yayın sırası:** Yeni rehberler birbirine ve #49 rehberlerine bağlantı veriyor (ör. Pergola mı kamelya mı? → Emprenyeli ahşap nedir?, Pergola fiyatını ne belirler?). Yayınlanmamış rehbere giden bağlantı düz metin görünür; birlikte yayınlamak en temizi.
+15. **EN metinler** ilk geçiştir; bir İngilizce okurun gözden geçirmesi iyi olur.
+
 ## Notlar
 
 - **Referanslar:** 9 referans, PRODUCT.md ve decisions.md'deki yazımla yüklenir ("Kemer Golf & Country Club", "Nurol A.Ş.", "İBB Sosyal Tesisler", "İGK"). Tek kaynak `seed/content/references.json`. Yükleme yalnızca koleksiyon boşken yapılır; dolu bir koleksiyona hiç dokunulmaz.
