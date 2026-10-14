@@ -13,6 +13,7 @@ import * as migration_20261014_065329_media_prefix from './20261014_065329_media
 import * as migration_20261014_070517_guides from './20261014_070517_guides';
 import * as migration_20261014_075707_home_hero_mobile_image from './20261014_075707_home_hero_mobile_image';
 import * as migration_20261014_090734_regions from './20261014_090734_regions';
+import * as migration_20261014_100749_media_w480 from './20261014_100749_media_w480';
 
 export const migrations = [
   {
@@ -88,6 +89,11 @@ export const migrations = [
   {
     up: migration_20261014_090734_regions.up,
     down: migration_20261014_090734_regions.down,
-    name: '20261014_090734_regions'
+    name: '20261014_090734_regions',
+  },
+  {
+    up: migration_20261014_100749_media_w480.up,
+    down: migration_20261014_100749_media_w480.down,
+    name: '20261014_100749_media_w480'
   },
 ];
