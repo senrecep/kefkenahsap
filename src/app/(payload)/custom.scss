@@ -1,0 +1,24 @@
+/* #27: Admin for non-technical editors: 16px content text (Payload: 13px, 12px on phones) and 48px tap targets.
+   The root font-size is left alone on purpose: Payload's layout (nav width, gutters) is rem-based and breaks at 390px if it grows. */
+.template-default__wrap,
+.template-default__wrap input,
+.template-default__wrap textarea,
+.template-default__wrap select,
+.nav__link {
+  font-size: 16px;
+}
+
+.nav__link,
+.nav a,
+.template-default__wrap .btn:not(.btn--icon-only),
+.template-default__wrap input:not([type='checkbox']):not([type='radio']):not([type='file']),
+.template-default__wrap select,
+.template-default__wrap .react-select .rs__control {
+  min-block-size: 48px;
+}
+
+.nav__link,
+.nav a {
+  display: flex;
+  align-items: center;
+}
