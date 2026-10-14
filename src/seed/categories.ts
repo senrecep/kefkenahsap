@@ -12,6 +12,6 @@ export const SEED_CATEGORIES: SeedCategory[] = [
   { folder: 'Ciceklik ve Oturma Grubu', slug: { tr: 'ciceklik-ve-oturma-grubu', en: 'planters-and-seating' }, name: { tr: 'Çiçeklik ve Oturma Grubu', en: 'Planters and Seating' } },
   { folder: 'Kapi Dolap ve Seperator', slug: { tr: 'kapi-dolap-ve-seperator', en: 'doors-cabinets-and-partitions' }, name: { tr: 'Kapı, Dolap ve Seperatör', en: 'Doors, Cabinets and Partitions' } },
   { folder: 'Ireko-Teak', slug: { tr: 'ireko-teak', en: 'iroko-and-teak' }, name: { tr: 'Iroko ve Teak', en: 'Iroko and Teak' } },
-  { folder: 'Mobilya ve Cila', slug: { tr: 'mobilya-ve-cila', en: 'furniture-and-varnish' }, name: { tr: 'Mobilya ve Cila', en: 'Furniture and Varnish' } },
+  { folder: 'Mobilya ve Cila', slug: { tr: 'mobilya-ve-cila', en: 'furniture-and-finishing' }, name: { tr: 'Mobilya ve Cila', en: 'Furniture and Varnish' } },
   { folder: 'Boya Tamir ve Bakim', slug: { tr: 'boya-tamir-ve-bakim', en: 'painting-repair-and-maintenance' }, name: { tr: 'Boya, Tamir ve Bakım', en: 'Painting, Repair and Maintenance' } },
 ]

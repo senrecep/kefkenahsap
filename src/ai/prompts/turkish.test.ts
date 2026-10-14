@@ -1,4 +1,5 @@
 import { existsSync } from 'node:fs'
+import path from 'node:path'
 import { describe, expect, it } from 'vitest'
 
 import { tagImageSystem } from './tagImage'
@@ -7,6 +8,6 @@ import { tagImageSystem } from './tagImage'
 describe('Turkish rules', () => {
   it('reference docs/CONTENT-STYLE-TR.md, which exists', () => {
     expect(tagImageSystem('2026-10-14')).toContain('docs/CONTENT-STYLE-TR.md')
-    expect(existsSync('docs/CONTENT-STYLE-TR.md')).toBe(true)
+    expect(existsSync(path.resolve(__dirname, '../../../docs/CONTENT-STYLE-TR.md'))).toBe(true)
   })
 })

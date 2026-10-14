@@ -16,7 +16,7 @@ Diğer belgelerle ilişkisi:
 - Okura "siz" diye seslenilir. Firma kendinden "biz" diye söz eder; "firmamız" ve "şirketimiz" kullanılmaz.
 - Kısa cümleler kurulur, bir cümlede bir bilgi verilir. Bir paragraf kendi başına okunduğunda da anlaşılır olmalıdır.
 - Somut olan yazılır: ahşap türü, ölçü, yer, iş adımı. Sıfat yığını kullanılmaz ("sağlam, estetik, kaliteli, şık…").
-- Bilinmeyen boş bırakılır. Emin olunmayan bilgi yazılmaz; "olabilir" diye yumuşatıp yine de yazmak da yasaktır.
+- Bilinmeyen boş bırakılır. Emin olunmayan bilgi "olabilir" diye yumuşatılarak yazılmaz. "-abilir" yalnızca gerçekten koşula bağlı durumlarda kullanılır.
 
 ## 2. Yapı (özet; asıl kaynak PLAN §7)
 
@@ -25,15 +25,15 @@ Diğer belgelerle ilişkisi:
 - Karşılaştırmalar **tablo** ile yapılır (iroko / teak / çam / thermowood).
 - Rehber ve kategori sayfasında **"Güncellendi: tarih"** görünür.
 - Doldurma yapılmaz: ilçe listesi yığılmaz, anahtar kelime tekrar edilmez, gizli metin yazılmaz.
-- Marka adı başlıkta, H1'de ve ilk paragrafta aynı yazılır: **Kefken Ahşap Dekorasyon**, kısaca **Kefken Ahşap**. EN metinde de çevrilmez.
+- Marka adı geçtiği her yerde aynı yazılır: **Kefken Ahşap Dekorasyon**, kısaca **Kefken Ahşap**. EN metinde de çevrilmez.
 
 ## 3. Türkçe karakter ve büyük harf
 
 - Türkçe karakterler her yerde kullanılır: ç, ğ, ı, İ, ö, ş, ü. "Ahsap", "Kefken Ahsap" gibi ASCII yazımlar yalnızca URL ve dosya adında geçerlidir.
 - **I/İ dönüşümüne dikkat edilir.** Küçük harfle "iroko" yazılan kelime cümle başında ve başlıkta "**İroko**" olur, "Iroko" değil. Aynı şekilde "ışık" kelimesinin büyüğü "Işık"tır. Kod içinde büyük harfe çevirirken `toLocaleUpperCase('tr')` kullanılır.
-- Ahşap türleri cins isimdir ve cümle içinde küçük yazılır: iroko, teak, çam, meşe, thermowood. Büyük harf yalnızca cümle başında, başlıkta ve kategori adında kullanılır ("İroko ve Teak").
+- Ahşap türleri cins isimdir ve cümle içinde küçük yazılır: iroko, teak, çam, meşe, thermowood. "ThermoWood®" yalnızca o marka kastediliyorsa yazılır. Büyük harf yalnızca cümle başında, başlıkta ve kategori adında kullanılır ("İroko ve Teak").
 - Kişi ve kurum adları büyük harfle başlar: Murat Şen, İBB Sosyal Tesisler, Nurol A.Ş.
-- Başlıklarda yalnızca ilk kelime ve özel isimler büyük yazılır: "Ahşap deck bakımı nasıl yapılır?" Her kelimeyi büyük yazmak İngilizce başlık alışkanlığıdır.
+- **Ev kuralı: başlıklar cümle düzeninde yazılır** (TR ve EN). Yalnızca ilk kelime ve özel isimler büyük harfle başlar: "Ahşap deck bakımı nasıl yapılır?", "How do you maintain a timber deck?" Her kelimeyi büyük yazmak İngilizce başlık alışkanlığıdır.
 
 ## 4. Ekler ve kesme işareti
 
@@ -58,7 +58,7 @@ Yazılışı okunuşundan farklı yabancı cins isimlerde ek kesme işaretiyle a
 
 | Kelime (okunuş) | Örnek |
 |---|---|
-| deck (dek) | deck'in, deck'i, deck'e, deck'ler, deck'imi |
+| deck (dek) | deck'in, deck'i, deck'e, deck'imi; çoğulda kesme yok: deckler, decklerin |
 | thermowood (termovud) | thermowood'un, thermowood'dan |
 | teak (tik) | teak'in, teak'ten |
 
@@ -74,7 +74,7 @@ Bu bir ev kuralıdır ve TDK teyidi bekler; bkz. §9 Açık sorular. Kelime Tür
 
 Bu ifadeler hiçbir metinde kullanılmaz. Yıldızlı (*) olanlar admin'de teyitli bir veri varsa ve yalnızca o veriyle birlikte yazılabilir.
 
-**Klişeler:** eşsiz, benzersiz, mükemmel, kusursuz, hayallerinizdeki, kaliteden ödün vermeden, en iyi hizmet, müşteri memnuniyeti odaklı, profesyonel çözümler, uzman ekibimiz, alanında lider, son teknoloji, A'dan Z'ye, yaşam alanlarınıza değer katın, fark yaratan, ayrıcalıklı.
+**Klişeler:** eşsiz, benzersiz, mükemmel, kusursuz, hayallerinizdeki, kaliteden ödün vermeden, en iyi hizmet, müşteri memnuniyeti odaklı, profesyonel çözümler, uzman ekibimiz, alanında lider, son teknoloji, A'dan Z'ye, yaşam alanlarınıza değer katın, fark yaratan, ayrıcalıklı, firmamız, şirketimiz.
 
 **Uydurma iddia riski taşıyanlar:**
 - yıllardır, onlarca yıl, otuz yıl, "X yıllık tecrübe"* (yıl yalnızca `siteSettings.foundingYear` / `founder.craftStartYear` doluysa yazılır).
@@ -116,7 +116,7 @@ Kontrol yöntemi: cümleyi sesli okuyun. Usta telefonda bu cümleyi kurmazdı di
    - **Çam sert ağaç değildir.** Çam iğne yapraklıdır ve yumuşak ağaç sınıfındadır. "Sert ağaç" (hardwood) iroko, teak, meşe gibi geniş yapraklılar için kullanılır.
    - **İroko ve teak'in dayanımı öz maddelerinden gelir.** Doğru ifade: "doğal dayanımı yüksek", "öz maddeleri sayesinde çürümeye ve böceğe dirençli". "Yağlı" sözü yalnızca teak için kullanılır: "teak ayrıca çok yağlıdır." İroko yağlı ağaç diye anlatılmaz.
    - **Emprenye bakım gerektirir.** Emprenye ahşabın içine işlenen koruyucudur. Yüzeydeki yağ, vernik veya boyanın yerini tutmaz, "bakım istemez" diye anlatılmaz.
-   - **Thermowood** ısıl işlemle boyutsal kararlılık kazanır, çürümeye dayanımı artar; buna karşılık biraz daha kırılgan olabilir. Özgül ağırlık veya ömür gibi rakamlar kaynak gösterilmeden yazılmaz.
+   - **thermowood** ısıl işlemle boyutsal kararlılık kazanır, çürümeye dayanımı artar; buna karşılık daha kırılgandır, eğilme dayanımı düşer. Özgül ağırlık veya ömür gibi rakamlar kaynak gösterilmeden yazılmaz.
    - Bilimsel adlarda güncel ad kullanılır: iroko *Milicia excelsa* (eski sitedeki *Chlorophora excelsa* eski addır), teak *Tectona grandis*, sarıçam *Pinus sylvestris*.
 4. **Rakam yalnızca kaynağıyla yazılır.** Eski site tablosundaki özgül ağırlık gibi değerler "yaklaşık, kaynaklarda verilen değer" diye sunulur. Firma ölçümü gibi gösterilmez.
 5. **Sözü edilen hizmet gerçekten verilmeli.** "Garaj kapısı", "kaydırmaz basamak", "beton temel" gibi işler yalnızca firma yaptığını teyit ettiyse yazılır (bkz. `docs/content/CHECKLIST.md`).
@@ -137,22 +137,23 @@ Kontrol yöntemi: cümleyi sesli okuyun. Usta telefonda bu cümleyi kurmazdı di
 | emprenyeli çam | pressure-treated pine | |
 | iroko | iroko | TR'de cümle başında "İroko" yazılır. |
 | teak | teak | TR'de "tik" de denir, sitede "teak" kullanılır. |
-| thermowood, ısıl işlem görmüş ahşap | thermally modified timber, Thermowood | "Thermowood" bir ticari addır; genel anlatımda "thermally modified" kullanılır. |
+| thermowood, ısıl işlem görmüş ahşap | thermally modified timber (thermowood) | "ThermoWood®" bir ticari addır; yalnızca o marka kastediliyorsa yazılır. Genel anlatımda "thermally modified timber". |
 | çam, sarıçam | pine, Scots pine | |
 | meşe | oak | |
 | sert ağaç / yumuşak ağaç | hardwood / softwood | Çam softwood'dur. |
-| korkuluk | railing, balustrade | Merdiven korkuluğu için "balustrade/handrail". |
+| korkuluk | railing; balustrade | Teras/balkon korkuluğu "railing"; dikmeli merdiven veya balkon korkuluğunun tamamı "balustrade". Tutunulan üst parça "handrail" (küpeşte). |
 | küpeşte | handrail | |
 | çit | fence | |
 | bahçe kapısı | garden gate | |
 | seperatör (bölme) | partition, room divider | TR yazımı açık soru (§9). |
-| cila | finish, varnish | Parlak koruyucu kat için "varnish"; genel son kat için "finish". |
+| cila | lacquer, polish (genel: finish) | varnish = vernik. Genel son kat için "finish". |
 | vernik | varnish | |
 | ahşap yağı | wood oil, decking oil | |
 | boya | paint, stain | Ahşap rengini gösteren yarı saydam boya "stain"dir. |
-| zımpara | sanding | |
+| zımpara | sandpaper (malzeme), sanding (işlem) | |
 | bakım | maintenance | |
-| iskele | jetty, pier | |
+| iskele (su kenarı) | jetty, pier | |
+| iskele (yapı) | scaffolding | |
 | köprü (bahçe) | (garden) footbridge | |
 | merdiven / basamak | staircase / step, tread | |
 | çiçeklik | planter | |
