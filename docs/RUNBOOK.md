@@ -73,6 +73,23 @@ bun run payload run scripts/media/add-sizes.ts -- --yes       # ~2.5 min for 568
 
 Check the printed host, bucket and endpoint before adding `--yes`. Run it after the deploy that carries the migration; until then, pages simply use the existing sizes.
 
+### Loading translations
+
+Translations for the locales other than TR/EN live in `seed/i18n/<locale>/`, which mirrors `seed/` (`content/**`, `media-meta/**`, `media-meta-archive/**`). Sentence-case title fixes live in `seed/i18n/sentence-case.json`. The loaders fill only empty fields and skip missing files. A re-run writes nothing.
+- Categories, guides, pages and project stories (drafts only) land as **new drafts**. The owner publishes them after review.
+- Reference locations and photo texts have no drafts, so they are live as soon as they are written. `media-locales` never changes a photo's `status`, so pending archive photos stay pending.
+- `media-title-case` changes a TR/EN title only while it is still exactly the seeded one. Owner edits are kept.
+- `media-locales` and `media-title-case` print the database host first, and a non-local host needs `--yes`. A tunnelled DB reads as `localhost`, so check the host and run `--dry-run` first.
+
+```bash
+bun run payload run scripts/seed/content.ts            # categories, pages, guides, reference locations
+bun run payload run scripts/seed/project-stories.ts    # draft projects: title + story
+bun run payload run scripts/seed/media-locales.ts -- --dry-run && bun run payload run scripts/seed/media-locales.ts
+bun run payload run scripts/seed/media-title-case.ts -- --dry-run && bun run payload run scripts/seed/media-title-case.ts
+```
+
+Run these after `seed.ts` and `archive.ts`. `--force` on the first two overwrites with the committed text (as new drafts). `media-title-case.ts -- --seed-files` rewrites the committed `seed/media-meta*` titles instead of the DB.
+
 ## Observability
 
 ### GlitchTip (errors)

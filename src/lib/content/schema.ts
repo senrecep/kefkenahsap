@@ -49,5 +49,19 @@ export const parseGuide = parseWith(guideSchema)
 export const parseReferences = parseWith(referencesSchema)
 export const parseProjectStories = parseWith(projectStoriesSchema)
 
+// #138: one-locale overlays for the locales beyond TR/EN (seed/i18n/<locale>/…, same tree as seed/). A category also
+// carries its name and slug there (TR/EN come from src/seed/categories.ts).
+export const parseCategoryOverlay = parseWith(categoryLocale.extend({ name: text, slug: text }))
+export const parseGuideOverlay = parseWith(guideLocale)
+export const parsePageOverlay = parseWith(pageLocale)
+export const parseProjectStoriesOverlay = parseWith(z.record(z.string(), z.object({ title: text, story: text })))
+/** reference name (never translated) → location */
+export const parseReferencesOverlay = parseWith(z.record(z.string(), text))
+// alt ≤ 125 = Media.alt maxLength, so a long one fails here and not halfway through a run.
+export const parseMediaMetaOverlay = parseWith(z.object({ title: text, alt: text.max(125), caption: text }))
+const titleChange = z.object({ old: text, new: text })
+/** seed/i18n/sentence-case.json: path under seed/ → the seeded title and its sentence-case form, per locale. */
+export const parseSentenceCase = parseWith(z.record(z.string(), z.object({ tr: titleChange.optional(), en: titleChange.optional() })))
+
 /** Words in a markdown text, ignoring heading/list/emphasis markers. */
 export const wordCount = (md: string): number => md.replace(/^\s*[-*]\s+/gm, ' ').replace(/[#*_>`]+/g, ' ').split(/\s+/).filter((w) => /\p{L}|\p{N}/u.test(w)).length

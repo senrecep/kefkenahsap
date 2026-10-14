@@ -2,6 +2,8 @@ import type { SerializedEditorState } from '@payloadcms/richtext-lexical/lexical
 import { RichText, type JSXConvertersFunction } from '@payloadcms/richtext-lexical/react'
 import type { ReactNode } from 'react'
 
+import { isGuideLink } from '@/lib/guides/links'
+
 // Reading typography for guide bodies (Read mode): 65–75ch measure, more space above headings than below.
 const prose =
   'max-w-[68ch] text-[1.0625rem] leading-[1.7] md:text-[1.125rem] ' +
@@ -13,7 +15,6 @@ const prose =
 
 type Cell = { headerState?: number; children?: unknown[] }
 type Row = { children?: Cell[] }
-const GUIDE_LINK = /^\/[a-z]{2}\/(rehber|guides)\/[^/?#]+$/
 
 /**
  * Lexical body: H2 anchor ids from the same `idOf` that built the TOC; tables with a header row in <thead> and the
@@ -42,7 +43,7 @@ export function GuideBody({
     },
     link: (args) => {
       const url = (args.node.fields as { url?: string } | undefined)?.url ?? ''
-      if (GUIDE_LINK.test(url) && !publishedHrefs.has(url)) return <span>{args.nodesToJSX({ nodes: args.node.children })}</span>
+      if (isGuideLink(url) && !publishedHrefs.has(url)) return <span>{args.nodesToJSX({ nodes: args.node.children })}</span>
       const fallback = defaultConverters.link
       return typeof fallback === 'function' ? fallback(args) : null
     },

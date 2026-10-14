@@ -1,0 +1,93 @@
+// #138: shared by the seed loaders for the per-locale "fill only empty fields" write and the local-database guard.
+import type { Payload } from 'payload'
+import { Maybe } from 'tsentials/maybe'
+import type { Result } from 'tsentials/result'
+
+import { fillEmpty } from '@/lib/content/merge'
+import { mediaSeedKey, overlayLocales, readOverlay } from '@/lib/content/overlay'
+import { parseMediaMetaOverlay } from '@/lib/content/schema'
+import { databaseHost, isLocalHost } from '@/lib/quality/target'
+import type { Config } from '@/payload-types'
+
+type Locale = Config['locale']
+type Collection = 'categories' | 'pages' | 'guides' | 'projects' | 'references' | 'media'
+
+/** Edge unwrap for the seed scripts: a bad seed file stops the run. */
+export function unwrap<T>(r: Result<T>): T {
+  if (!r.ok) throw new Error(r.errors.map((e) => e.description).join('; '))
+  return r.value
+}
+
+/** The overlay for one locale, undefined when there is none (see readOverlay). */
+export function loadOverlay<T>(seedDir: string, locale: string, rel: string, parse: (json: string) => Result<T>): T | undefined {
+  const m = unwrap(readOverlay(seedDir, locale, rel, parse))
+  return Maybe.isSome(m) ? m.value : undefined
+}
+
+/** Configured locales that come from overlays (all but TR/EN). */
+export const payloadOverlayLocales = (payload: Payload) => overlayLocales((payload.config.localization ? payload.config.localization.localeCodes : []) as Locale[])
+
+/**
+ * Writes, per locale, the incoming fields that are empty in the stored document (all of them with `force`).
+ * With `draft` the read is the latest draft and the write a new draft version; the published version is untouched.
+ * Returns the number of locale writes (or would-be writes with `dryRun`).
+ */
+export async function fillLocales(
+  payload: Payload,
+  collection: Collection,
+  id: number,
+  byLocale: Partial<Record<Locale, Record<string, unknown>>>,
+  opts: { label: string; draft?: boolean; force?: boolean; dryRun?: boolean },
+): Promise<number> {
+  let writes = 0
+  for (const [locale, incoming] of Object.entries(byLocale) as [Locale, Record<string, unknown>][]) {
+    const current = await payload.findByID({ collection, id, locale, fallbackLocale: false, draft: opts.draft, depth: 0 })
+    const patch = fillEmpty(current as unknown as Record<string, unknown>, incoming, { force: opts.force })
+    if (!Object.keys(patch).length) continue
+    // skipAi: seeded text never queues an AI suggestion (Media), harmless elsewhere.
+    if (!opts.dryRun) await payload.update({ collection, id, locale, draft: opts.draft, data: patch as never, context: { skipAi: true } })
+    writes++
+    console.log(`${opts.dryRun ? '[dry run] ' : ''}${opts.label} [${locale}]: ${Object.keys(patch).join(', ')}`)
+  }
+  return writes
+}
+
+/** Prints the database host; exits unless it is local, or the run is a --dry-run, or --yes confirms a remote one. */
+export function guardTarget(dryRun: boolean) {
+  const host = databaseHost(process.env.DATABASE_URL)
+  console.log(`database host: ${host || '?'}${dryRun ? ' · dry run' : ''}`)
+  if (!isLocalHost(host) && !dryRun && !process.argv.includes('--yes')) {
+    console.error('Not a local database: check the host above, then re-run with --yes (or --dry-run first).')
+    process.exit(1)
+  }
+}
+
+/**
+ * Fills empty title/alt/caption of the overlay locales on the media seeded from the given meta files (paths under seed/).
+ * Never sends `status`, so a pending archive photo stays pending and an approved one stays approved.
+ */
+export async function seedMediaLocales(payload: Payload, { seedDir, rels, dryRun }: { seedDir: string; rels: string[]; dryRun?: boolean }) {
+  const locales = payloadOverlayLocales(payload)
+  const counts = { writes: 0, media: 0, noOverlay: 0, noMedia: 0 }
+  for (const rel of rels) {
+    const byLocale: Partial<Record<Locale, Record<string, unknown>>> = {}
+    for (const locale of locales) {
+      const meta = loadOverlay(seedDir, locale, rel, parseMediaMetaOverlay)
+      if (meta) byLocale[locale] = meta
+    }
+    if (!Object.keys(byLocale).length) {
+      counts.noOverlay++
+      continue
+    }
+    const seedKey = unwrap(mediaSeedKey(seedDir, rel))
+    const doc = (await payload.find({ collection: 'media', where: { seedKey: { equals: seedKey } }, limit: 1, depth: 0, select: { seedKey: true } })).docs[0]
+    if (!doc) {
+      counts.noMedia++
+      continue
+    }
+    const writes = await fillLocales(payload, 'media', doc.id, byLocale, { label: seedKey, dryRun })
+    counts.writes += writes
+    if (writes) counts.media++
+  }
+  return counts
+}

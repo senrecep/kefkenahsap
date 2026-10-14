@@ -1,6 +1,8 @@
 // #34: idempotent content loader — category texts + FAQ, Hakkımızda / İletişim pages, the 9 references, and (#49) the guides.
 // Source: seed/content/** (markdown bodies → Lexical). Writes land as drafts; the owner publishes after review.
 // Fills only empty fields per locale, so a re-run never overwrites what the owner edited.
+// #138: the other locales (ru/de/ar…) come from seed/i18n/<locale>/content/** when present (see RUNBOOK "Loading
+//   translations"); a category's overlay also carries its name and slug. Same draft + fill-empty rules; missing files are skipped.
 // --force: overwrites shortDesc/body/faq of every category, title/slug/body of the two pages and the guide fields in every locale
 //   with the committed text (as a new draft; the published version is untouched). References are never forced:
 //   they are create-only (see ./references.ts). Pass it after `--`, or `payload run` drops it.
@@ -12,15 +14,16 @@ import { getPayload } from 'payload'
 import type { Result } from 'tsentials/result'
 
 import config from '@/payload.config'
-import { fillEmpty } from '@/lib/content/merge'
 import { guideBodyFeatures } from '@/collections/Guides'
-import { parseCategory, parseGuide, parsePage } from '@/lib/content/schema'
+import { type GuideContent, parseCategory, parseCategoryOverlay, parseGuide, parseGuideOverlay, parsePage, parsePageOverlay } from '@/lib/content/schema'
 import { SEED_CATEGORIES } from '@/seed/categories'
 
+import { fillLocales, loadOverlay, payloadOverlayLocales } from './i18n'
 import { seedReferences } from './references'
 
 const force = process.argv.includes('--force')
-const DIR = path.resolve(process.cwd(), 'seed/content')
+const SEED = path.resolve(process.cwd(), 'seed')
+const DIR = path.join(SEED, 'content')
 const load = <T>(file: string, parse: (json: string) => Result<T>): T => {
   const r = parse(readFileSync(path.join(DIR, file), 'utf8'))
   if (!r.ok) throw new Error(`${file}: ${r.errors.map((e) => e.description).join('; ')}`)
@@ -31,6 +34,13 @@ const payload = await getPayload({ config: await config })
 const editorConfig = await editorConfigFactory.default({ config: payload.config })
 const lexical = (markdown: string) => convertMarkdownToLexical({ editorConfig, markdown })
 const locales = (payload.config.localization ? payload.config.localization.localeCodes : []) as ('tr' | 'en')[]
+const extra = payloadOverlayLocales(payload)
+/** Overlay locale → mapped overlay content, for the locales that have the file. */
+const overlays = <T, U>(rel: string, parse: (json: string) => Result<T>, map: (o: T) => U) =>
+  Object.fromEntries(extra.flatMap((l) => {
+    const o = loadOverlay(SEED, l, rel, parse)
+    return o ? [[l, map(o)]] : []
+  }))
 let writes = 0
 
 for (const cat of SEED_CATEGORIES) {
@@ -38,15 +48,11 @@ for (const cat of SEED_CATEGORIES) {
   const found = await payload.find({ collection: 'categories', locale: 'tr', draft: true, where: { slug: { equals: cat.slug.tr } }, limit: 1, depth: 0 })
   const id = found.docs[0]?.id
   if (!id) throw new Error(`category ${cat.slug.tr} not found — run scripts/seed/seed.ts first`)
-  for (const locale of locales.filter((l) => l in content)) {
-    const c = content[locale]
-    const current = await payload.findByID({ collection: 'categories', id, locale, fallbackLocale: false, draft: true, depth: 0 })
-    const patch = fillEmpty(current, { shortDesc: c.shortDesc, body: lexical(c.body), faq: c.faq }, { force })
-    if (!Object.keys(patch).length) continue
-    await payload.update({ collection: 'categories', id, locale, draft: true, data: patch })
-    writes++
-    console.log(`category ${cat.slug.tr} [${locale}]: ${Object.keys(patch).join(', ')}`)
+  const byLocale = {
+    ...Object.fromEntries(locales.filter((l) => l in content).map((l) => [l, { shortDesc: content[l].shortDesc, body: lexical(content[l].body), faq: content[l].faq }])),
+    ...overlays(`categories/${cat.slug.tr}.json`, parseCategoryOverlay, (c) => ({ name: c.name, slug: c.slug, shortDesc: c.shortDesc, body: lexical(c.body), faq: c.faq })),
   }
+  writes += await fillLocales(payload, 'categories', id, byLocale, { label: `category ${cat.slug.tr}`, draft: true, force })
 }
 
 for (const file of ['hakkimizda', 'iletisim']) {
@@ -59,15 +65,9 @@ for (const file of ['hakkimizda', 'iletisim']) {
     writes++
     console.log(`page ${file} created (draft)`)
   }
-  for (const locale of locales.filter((l) => l in content)) {
-    const p = content[locale]
-    const current = await payload.findByID({ collection: 'pages', id, locale, fallbackLocale: false, draft: true, depth: 0 })
-    const patch = fillEmpty(current, { title: p.title, slug: p.slug, body: lexical(p.body) }, { force })
-    if (!Object.keys(patch).length) continue
-    await payload.update({ collection: 'pages', id, locale, draft: true, data: patch })
-    writes++
-    console.log(`page ${file} [${locale}]: ${Object.keys(patch).join(', ')}`)
-  }
+  const page = (p: { title: string; slug: string; body: string }) => ({ title: p.title, slug: p.slug, body: lexical(p.body) })
+  const byLocale = { ...Object.fromEntries(locales.filter((l) => l in content).map((l) => [l, page(content[l])])), ...overlays(`pages/${file}.json`, parsePageOverlay, page) }
+  writes += await fillLocales(payload, 'pages', id, byLocale, { label: `page ${file}`, draft: true, force })
 }
 
 // #49 guides: created as drafts only; the owner publishes after review. Bodies use the guides editor (tables).
@@ -88,15 +88,9 @@ for (const file of readdirSync(path.join(DIR, 'guides')).filter((f) => f.endsWit
     writes++
     console.log(`guide ${file} created (draft)`)
   }
-  for (const locale of locales.filter((l) => l in content)) {
-    const g = content[locale]
-    const current = await payload.findByID({ collection: 'guides', id, locale, fallbackLocale: false, draft: true, depth: 0 })
-    const patch = fillEmpty(current, { title: g.title, slug: g.slug, excerpt: g.excerpt, body: guideLexical(g.body), faq: g.faq }, { force })
-    if (!Object.keys(patch).length) continue
-    await payload.update({ collection: 'guides', id, locale, draft: true, data: patch })
-    writes++
-    console.log(`guide ${file} [${locale}]: ${Object.keys(patch).join(', ')}`)
-  }
+  const guide = (g: GuideContent['tr']) => ({ title: g.title, slug: g.slug, excerpt: g.excerpt, body: guideLexical(g.body), faq: g.faq })
+  const byLocale = { ...Object.fromEntries(locales.filter((l) => l in content).map((l) => [l, guide(content[l])])), ...overlays(`guides/${file}`, parseGuideOverlay, guide) }
+  writes += await fillLocales(payload, 'guides', id, byLocale, { label: `guide ${file}`, draft: true, force })
 }
 
 console.log(await seedReferences(payload))
