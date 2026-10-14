@@ -7,6 +7,7 @@ import { startTransition, useActionState, useEffect, useRef, useState, type Form
 import { Link } from '@/i18n/navigation'
 import { buttonClass } from '@/components/ui/button'
 import { MAX_PHOTOS } from '@/lib/leads/validate'
+import { fitWithin } from '@/lib/media/galeri'
 
 import { submitLead, type LeadField, type LeadFormState } from './actions'
 
@@ -28,10 +29,10 @@ const toBlob = (canvas: HTMLCanvasElement, type: string) => new Promise<Blob | n
 /** Downscale to ≤2560px and re-encode (drops EXIF/GPS) — same approach as the admin Galeri upload. */
 async function prepare(file: File): Promise<File> {
   const bitmap = await createImageBitmap(file, { imageOrientation: 'from-image' })
-  const scale = Math.min(1, MAX_EDGE / Math.max(bitmap.width, bitmap.height))
+  const { width, height } = fitWithin(bitmap.width, bitmap.height, MAX_EDGE)
   const canvas = document.createElement('canvas')
-  canvas.width = Math.round(bitmap.width * scale)
-  canvas.height = Math.round(bitmap.height * scale)
+  canvas.width = width
+  canvas.height = height
   canvas.getContext('2d')!.drawImage(bitmap, 0, 0, canvas.width, canvas.height)
   bitmap.close()
   // Safari can't encode WebP and silently returns PNG; JPEG keeps the upload small there.
