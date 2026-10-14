@@ -13,6 +13,7 @@ next-env.d.ts
 .env
 .env.*
 !.env.example
+!.env.dokploy.example
 
 # OMC runtime state (ultragoal ledger is committed on purpose)
 .omc/*
