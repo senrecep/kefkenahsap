@@ -10,10 +10,14 @@ FROM node:24-alpine AS builder
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
-ENV NEXT_TELEMETRY_DISABLED=1
+ARG NEXT_PUBLIC_SITE_URL NEXT_PUBLIC_GA_ID NEXT_PUBLIC_UMAMI_WEBSITE_ID NEXT_PUBLIC_UMAMI_SRC
+ENV NEXT_TELEMETRY_DISABLED=1 \
+    NEXT_PUBLIC_SITE_URL=$NEXT_PUBLIC_SITE_URL NEXT_PUBLIC_GA_ID=$NEXT_PUBLIC_GA_ID \
+    NEXT_PUBLIC_UMAMI_WEBSITE_ID=$NEXT_PUBLIC_UMAMI_WEBSITE_ID NEXT_PUBLIC_UMAMI_SRC=$NEXT_PUBLIC_UMAMI_SRC
 # Build-time placeholders only; real values come from the runtime environment.
 ENV PAYLOAD_SECRET=build-placeholder \
-    DATABASE_URL=postgres://build:build@localhost:5432/build
+    DATABASE_URL=postgres://build:build@localhost:5432/build \
+    MEDIA_PUBLIC_URL=https://build.invalid
 RUN mkdir -p public && npx next build
 
 FROM node:24-alpine AS runner

@@ -1,0 +1,118 @@
+# Deploy stack for Dokploy (development and production environments).
+# Domains/TLS are configured in the Dokploy UI (Traefik on dokploy-network).
+# Optional services: set COMPOSE_PROFILES=observability in the Dokploy environment to run GlitchTip.
+# Deploy each environment with Dokploy "isolated deployment" so service names never collide on dokploy-network.
+name: kefkenahsap
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      # NEXT_PUBLIC_* are inlined into the client bundle at build time.
+      args:
+        NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL:?}
+        NEXT_PUBLIC_GA_ID: ${NEXT_PUBLIC_GA_ID:-}
+        NEXT_PUBLIC_UMAMI_WEBSITE_ID: ${NEXT_PUBLIC_UMAMI_WEBSITE_ID:-}
+        NEXT_PUBLIC_UMAMI_SRC: ${NEXT_PUBLIC_UMAMI_SRC:-}
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: postgres://kefken:${POSTGRES_PASSWORD:?}@postgres:5432/kefken
+      PAYLOAD_SECRET: ${PAYLOAD_SECRET:?}
+      NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL:?}
+      S3_ENDPOINT: ${S3_ENDPOINT:?}
+      S3_REGION: ${S3_REGION:-auto}
+      S3_BUCKET: ${S3_BUCKET:?}
+      S3_LEADS_BUCKET: ${S3_LEADS_BUCKET:?}
+      S3_ACCESS_KEY_ID: ${S3_ACCESS_KEY_ID:?}
+      S3_SECRET_ACCESS_KEY: ${S3_SECRET_ACCESS_KEY:?}
+      S3_FORCE_PATH_STYLE: ${S3_FORCE_PATH_STYLE:-false}
+      MEDIA_PUBLIC_URL: ${MEDIA_PUBLIC_URL:?}
+      OPENROUTER_API_KEY: ${OPENROUTER_API_KEY:-}
+      RESEND_API_KEY: ${RESEND_API_KEY:-}
+      LEADS_NOTIFY_EMAIL: ${LEADS_NOTIFY_EMAIL:-}
+      SENTRY_DSN: ${SENTRY_DSN:-}
+      NEXT_PUBLIC_GA_ID: ${NEXT_PUBLIC_GA_ID:-}
+      NEXT_PUBLIC_UMAMI_WEBSITE_ID: ${NEXT_PUBLIC_UMAMI_WEBSITE_ID:-}
+      NEXT_PUBLIC_UMAMI_SRC: ${NEXT_PUBLIC_UMAMI_SRC:-}
+      SITE_ENV: ${SITE_ENV:-development}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks: [default, dokploy-network]
+
+  postgres:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: kefken
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?}
+      POSTGRES_DB: kefken
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./docker/postgres/init-databases.sh:/docker-entrypoint-initdb.d/10-init-databases.sh:ro
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U kefken -d kefken']
+      interval: 5s
+      retries: 20
+
+  umami:
+    image: ghcr.io/umami-software/umami:3.0.3
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: postgres://kefken:${POSTGRES_PASSWORD:?}@postgres:5432/umami
+      APP_SECRET: ${UMAMI_APP_SECRET:?}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks: [default, dokploy-network]
+
+  glitchtip-web:
+    image: glitchtip/glitchtip:6
+    profiles: [observability]
+    restart: unless-stopped
+    environment: &glitchtip-env
+      DATABASE_URL: postgres://kefken:${POSTGRES_PASSWORD:?}@postgres:5432/glitchtip
+      VALKEY_URL: redis://valkey:6379/0
+      REDIS_URL: redis://valkey:6379/0 # older GlitchTip releases
+      SECRET_KEY: ${GLITCHTIP_SECRET_KEY:-}
+      GLITCHTIP_DOMAIN: ${GLITCHTIP_DOMAIN:-}
+      DEFAULT_FROM_EMAIL: ${GLITCHTIP_FROM_EMAIL:-}
+      ENABLE_USER_REGISTRATION: 'false'
+    depends_on:
+      glitchtip-migrate:
+        condition: service_completed_successfully
+      valkey:
+        condition: service_started
+    networks: [default, dokploy-network]
+
+  glitchtip-worker:
+    image: glitchtip/glitchtip:6
+    profiles: [observability]
+    restart: unless-stopped
+    command: ./bin/run-celery-with-beat.sh
+    environment: *glitchtip-env
+    depends_on:
+      glitchtip-migrate:
+        condition: service_completed_successfully
+
+  glitchtip-migrate:
+    image: glitchtip/glitchtip:6
+    profiles: [observability]
+    command: ./bin/run-migrate.sh
+    environment: *glitchtip-env
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  valkey:
+    image: valkey/valkey:8-alpine
+    profiles: [observability]
+    restart: unless-stopped
+
+volumes:
+  pgdata:
+
+networks:
+  dokploy-network:
+    external: true
