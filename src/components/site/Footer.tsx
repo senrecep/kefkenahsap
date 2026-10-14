@@ -24,12 +24,13 @@ export async function Footer({ locale }: { locale: Locale }) {
   const since = sinceYear({ foundingYear: settings.foundingYear })
   const h = 'mb-3 font-[family-name:var(--font-display)] text-sm font-semibold uppercase tracking-wide text-paper/70'
   return (
-    <footer className="mt-24 bg-ink pb-28 text-paper lg:pb-10">
+    <footer className="mt-24 [main:has(>[data-end-band]:last-child)~&]:mt-0 bg-ink pb-28 text-paper lg:pb-10">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 md:grid-cols-2 md:px-6 lg:grid-cols-4">
         <div>
           <p className="font-[family-name:var(--font-display)] text-lg font-semibold">{settings.companyName}</p>
           {Maybe.isSome(since) && <p className="mt-1 text-paper/75">{t('since', { year: since.value })}</p>}
-          {settings.founder?.name && <p className="mt-4 text-paper/85">{settings.founder.name}</p>}
+          {settings.founder?.name && <p className="mt-4 text-paper/85">{t('founder', { name: settings.founder.name })}</p>}
+          <Link href="/hakkimizda" className="mt-4 inline-block text-paper/90 hover:underline">{tNav('about')}</Link>
         </div>
         <div>
           <p className={h}>{t('contact')}</p>
@@ -85,7 +86,6 @@ export async function Footer({ locale }: { locale: Locale }) {
         <div>
           <p className={h}>{t('legal')}</p>
           <ul className="grid gap-1.5">
-            <li><Link href="/hakkimizda" className="text-paper/90 hover:underline">{tNav('about')}</Link></li>
             <li><Link href="/kvkk" className="text-paper/90 hover:underline">{t('privacy')}</Link></li>
             <li><Link href="/cerez-politikasi" className="text-paper/90 hover:underline">{t('cookies')}</Link></li>
             {process.env.NEXT_PUBLIC_GA_ID && (
@@ -99,9 +99,11 @@ export async function Footer({ locale }: { locale: Locale }) {
           {tel && <a href={tel.href} className="mt-6 inline-block font-[family-name:var(--font-display)] text-xl font-semibold">{tel.label}</a>}
         </div>
       </div>
-      <p className="mx-auto max-w-7xl border-t border-paper/15 px-4 pt-6 text-sm text-paper/60 md:px-6">
-        © {settings.companyName}. {t('rights')}
-      </p>
+      <div className="mx-auto max-w-7xl px-4 md:px-6">
+        <p className="border-t border-paper/15 pt-6 text-sm text-paper/60">
+          © {settings.companyName}. {t('rights')}
+        </p>
+      </div>
     </footer>
   )
 }

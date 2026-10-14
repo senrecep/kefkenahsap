@@ -16,20 +16,23 @@ export async function Hero({ locale, image, heading, subheading, priority = true
     <section className="relative isolate flex h-[calc(100svh-4.5rem)] min-h-[30rem] items-end overflow-hidden bg-ink text-white md:h-[78vh] md:max-h-[56rem]">
       {image && (
         <div className="absolute inset-0 -z-10">
-          <Picture media={image} sizes="100vw" priority={priority} className="h-full !aspect-auto motion-safe:animate-settle" />
+          <Picture media={image} sizes="100vw" priority={priority} className="h-full !aspect-auto motion-safe:animate-settle" imgClassName="object-[50%_85%]" />
         </div>
       )}
-      <div aria-hidden className="absolute inset-x-0 bottom-0 -z-10 h-3/4 motion-safe:animate-scrim bg-[linear-gradient(to_top,rgb(20_21_19/0.82),rgb(20_21_19/0.45)_45%,transparent)]" />
-      <Container className="pb-24 lg:pb-16">
-        <h1 className="max-w-[22ch] text-[clamp(2.1rem,5vw,3.6rem)] leading-[1.08] text-white">{heading || t('heroTitle')}</h1>
-        <p className="mt-4 max-w-[52ch] text-[1.0625rem] text-white/90 md:text-lg">{subheading || t('heroText')}</p>
-        <div className="mt-7 flex flex-wrap gap-3">
-          <WhatsAppButton locale={locale} place="hero" />
-          <Link href="/iletisim" className={buttonClass.onPhoto}>
-            {tCta('quote')}
-          </Link>
-        </div>
-      </Container>
+      <div className="relative w-full">
+        {/* Scrim anchored to the text block, not the section: 0.64 ink under the H1 and subline keeps white text ≥4.5:1 even over a white patch or the watermark, at any viewport height; it fades out over 6rem above the H1. */}
+        <div aria-hidden className="absolute inset-x-0 -top-24 bottom-0 -z-10 motion-safe:animate-scrim bg-[linear-gradient(to_top,rgb(29_31_28/0.64)_calc(100%-6rem),transparent)]" />
+        <Container className="pb-24 lg:pb-16">
+          <h1 className="max-w-[22ch] text-[clamp(2.1rem,5vw,3.6rem)] leading-[1.08] text-white">{heading || t('heroTitle')}</h1>
+          <p className="mt-4 max-w-[52ch] text-[1.0625rem] text-white md:text-lg">{subheading || t('heroText')}</p>
+          <div className="mt-7 flex flex-wrap gap-3">
+            <WhatsAppButton locale={locale} place="hero" />
+            <Link href="/iletisim" className={buttonClass.onPhoto}>
+              {tCta('quote')}
+            </Link>
+          </div>
+        </Container>
+      </div>
     </section>
   )
 }

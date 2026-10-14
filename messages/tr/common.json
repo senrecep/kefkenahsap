@@ -23,6 +23,7 @@
     "callUs": "Bizi arayın"
   },
   "Footer": {
+    "founder": "Kurucu: {name}",
     "contact": "İletişim",
     "hours": "Çalışma saatleri",
     "services": "Hizmetler",

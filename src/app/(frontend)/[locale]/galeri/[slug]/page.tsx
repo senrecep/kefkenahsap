@@ -45,7 +45,7 @@ export default async function ImagePage({ params }: Props) {
           {t('back')}
         </a>
         <div className="mt-4 grid gap-8 lg:grid-cols-[minmax(0,1fr)_22rem] lg:items-start">
-          <figure className="mx-auto w-full max-w-[min(100%,calc(80svh*var(--ratio)))]" style={{ ['--ratio' as string]: item.width && item.height ? item.width / item.height : 1.333 }}>
+          <figure className="me-auto w-full max-w-[min(100%,calc(80svh*var(--ratio)))]" style={{ ['--ratio' as string]: item.width && item.height ? item.width / item.height : 1.333 }}>
             <Picture media={item.media} alt={item.alt} sizes="(min-width: 1280px) 880px, (min-width: 1024px) 66vw, 100vw" priority className="rounded-[var(--radius-photo)]" />
           </figure>
           <div>

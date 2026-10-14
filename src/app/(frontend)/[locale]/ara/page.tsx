@@ -74,9 +74,7 @@ export default async function SearchPage({ params, searchParams }: Props) {
             {res.media.map((m) => (
               <li key={m.id}>
                 <Link href={{ pathname: '/galeri/[slug]', params: { slug: m.seoFilename ?? String(m.id) } }} className="group block">
-                  <span className="block aspect-[4/3] overflow-hidden rounded-[var(--radius-photo)]">
-                    <Picture media={m} sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw" maxWidth={960} className="h-full" imgClassName="transition-opacity group-hover:opacity-90" />
-                  </span>
+                  <Picture media={m} sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw" maxWidth={960} className="aspect-[4/3]! rounded-[var(--radius-photo)]" imgClassName="transition-opacity group-hover:opacity-90" />
                   {m.title && <span className="mt-2 line-clamp-2 block text-[0.98rem] text-ink">{m.title}</span>}
                 </Link>
               </li>

@@ -20,7 +20,7 @@ export default async function NotFound() {
       </div>
       <h2 className="mt-12 font-[family-name:var(--font-display)] text-xl font-semibold">{t('popular')}</h2>
       <PopularCategories categories={categories} />
-      <Link href="/" className={`${buttonClass.quiet} mt-8 -ms-3`}>{t('home')}</Link>
+      <Link href="/" className={`${buttonClass.quiet} mt-8`}>{t('home')}</Link>
     </Container>
   )
 }

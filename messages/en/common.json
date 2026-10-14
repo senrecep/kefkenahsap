@@ -23,6 +23,7 @@
     "callUs": "Call us"
   },
   "Footer": {
+    "founder": "Founder: {name}",
     "contact": "Contact",
     "hours": "Opening hours",
     "services": "Services",

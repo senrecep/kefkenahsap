@@ -10,21 +10,22 @@ const chip =
 const on = `${chip} border-ink bg-ink text-paper`
 const off = `${chip} border-line bg-paper text-ink hover:border-ink/40`
 
-/** Shareable filter chips (`?kategori=&etiket=`); tags appear only once tags exist. */
+/** Shareable filter chips (`?kategori=&etiket=`); tags appear only once tags exist. Without `active` (homepage) they are plain links into the gallery. */
 export async function GalleryFilters({
   locale,
   categories,
   tags,
-  active,
+  active: activeProp,
   className = '',
 }: {
   locale: Locale
   categories: Option[]
   tags: Option[]
-  active: { category?: string; tag?: string }
+  active?: { category?: string; tag?: string }
   className?: string
 }) {
   const t = await getTranslations('Gallery')
+  const active = activeProp ?? {}
   const base = getPathname({ locale, href: '/galeri' })
   const href = (q: { kategori?: string; etiket?: string }) => {
     const qs = new URLSearchParams(Object.entries(q).filter((e): e is [string, string] => Boolean(e[1]))).toString()
@@ -32,9 +33,11 @@ export async function GalleryFilters({
   }
   const row = (label: string, options: Option[], key: 'kategori' | 'etiket', current?: string) => (
     <div role="group" aria-label={label} className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-1 [scrollbar-width:none] md:mx-0 md:flex-wrap md:overflow-visible md:px-0">
-      <a href={href({ kategori: key === 'kategori' ? undefined : active.category, etiket: key === 'etiket' ? undefined : active.tag })} aria-current={!current ? 'page' : undefined} className={!current ? on : off}>
-        {t('all')}
-      </a>
+      {activeProp && (
+        <a href={href({ kategori: key === 'kategori' ? undefined : active.category, etiket: key === 'etiket' ? undefined : active.tag })} aria-current={!current ? 'page' : undefined} className={!current ? on : off}>
+          {t('all')}
+        </a>
+      )}
       {options.map((o) =>
         o.slug ? (
           <a

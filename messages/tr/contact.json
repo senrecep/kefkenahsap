@@ -25,6 +25,7 @@
     "message": "Mesajınız",
     "messageHint": "Ölçü, ahşap türü, yer gibi bildiklerinizi yazın.",
     "photos": "Fotoğraflar",
+    "photosChoose": "Fotoğraf seç",
     "photosHint": "En fazla 5 fotoğraf. Yüklemeden önce telefonunuzda küçültülür.",
     "photosSelected": "{count, plural, one {# fotoğraf seçildi} other {# fotoğraf seçildi}}",
     "photosPreparing": "Fotoğraflar hazırlanıyor…",

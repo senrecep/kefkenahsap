@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation'
 import { Maybe } from 'tsentials/maybe'
 
 import { ProjectCard } from '@/components/projects/ProjectCard'
+import { CtaBand } from '@/components/site/CtaBand'
 import { Container } from '@/components/ui/Container'
 import { Picture } from '@/components/ui/Picture'
 import { WhatsAppButton } from '@/components/ui/WhatsAppButton'
@@ -14,7 +15,6 @@ import type { Locale } from '@/i18n/routing'
 import { galleryLimit, hasRichText, pageFromQuery, priceGuide } from '@/lib/category/category'
 import { getCategory } from '@/lib/data/categories'
 import { getProjectCards } from '@/lib/data/projects'
-import { getSiteSettings } from '@/lib/data/site'
 import { safeDecode } from '@/lib/http/safe-decode'
 import { livePaths } from '@/lib/i18n/published'
 import { siteUrl } from '@/lib/seo/alternates'
@@ -57,16 +57,14 @@ export default async function CategoryPage({ params, searchParams }: { params: P
   const photos = rest.slice(0, limit)
   const hasMore = data.hasMore || rest.length > limit
 
-  const [t, tCta, format, settings, projects] = await Promise.all([
+  const [t, tCta, format, projects] = await Promise.all([
     getTranslations('Category'),
     getTranslations('Cta'),
     getFormatter(),
-    getSiteSettings(locale),
     getProjectCards(locale).then((cards) => cards.filter((c) => c.categories.some((x) => x.id === category.id)).slice(0, 6)),
   ])
   const price = priceGuide(category.priceGuide, locale)
   const faq = (category.faq ?? []).filter((f) => f.q && f.a)
-  const areas = (settings.areaServed ?? []).map((a) => a.name).filter(Boolean)
   const url = siteUrl() + categoryPath(locale, slug)
   const wa = { kind: 'category' as const, vars: { category: category.name, url } }
   const h2 = 'text-[1.6rem] leading-tight md:text-[2rem]'
@@ -198,23 +196,7 @@ export default async function CategoryPage({ params, searchParams }: { params: P
         </Container>
       )}
 
-      <section aria-labelledby="cta-h" className="mt-16 border-y border-line bg-mist md:mt-20">
-        <Container className="flex flex-col gap-6 py-12 md:flex-row md:items-center md:justify-between md:py-14">
-          <div>
-            <h2 id="cta-h" className="text-[1.5rem] md:text-[1.85rem]">
-              {t('ctaTitle', { category: category.name })}
-            </h2>
-            <p className="mt-2 max-w-[56ch] text-ink-soft">{t('ctaText')}</p>
-            {areas.length > 0 && <p className="mt-3 max-w-[56ch] text-[0.95rem] text-ink-soft">{t('areas', { areas: areas.join(', ') })}</p>}
-          </div>
-          <div className="flex shrink-0 flex-wrap gap-3">
-            <WhatsAppButton locale={locale} context={wa} place="category_cta" />
-            <Link href="/iletisim" className={buttonClass.outline}>
-              {tCta('quote')}
-            </Link>
-          </div>
-        </Container>
-      </section>
+      <CtaBand locale={locale} title={t('ctaTitle', { category: category.name })} wa={wa} place="category_cta" />
     </>
   )
 }

@@ -37,7 +37,7 @@ export default async function GalleryPage({ params, searchParams }: Props) {
   const [t, { categories, tags, category, tag, unknown }] = await Promise.all([getTranslations('Gallery'), resolveGalleryFilter(locale, q)])
   const page = unknown
     ? { items: [], total: 0, nextCursor: null }
-    : await getGalleryPage(locale, { categoryId: category?.id, tagId: tag?.id, limit: PAGE_SIZE * q.page })
+    : await getGalleryPage(locale, { categoryId: category?.id, tagId: tag?.id, limit: PAGE_SIZE * q.page, curated: !category && !tag })
 
   const filter = { ...(q.category ? { kategori: q.category } : {}), ...(q.tag ? { etiket: q.tag } : {}) }
   const base = getPathname({ locale, href: '/galeri' })

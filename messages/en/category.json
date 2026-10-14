@@ -9,7 +9,9 @@
     "projects": "Projects in this area",
     "areas": "Areas we serve: {areas}",
     "ctaTitle": "Get a price and timeline for {category}",
-    "ctaText": "Send a photo and the measurements of the space on WhatsApp and we will get back to you."
+    "ctaText": "Send a photo and the measurements of the space on WhatsApp and we will get back to you.",
+    "ctaTitleGeneric": "Get a price and timeline for your space",
+    "nationwide": "across {country}"
   },
   "Services": {
     "title": "Our services",

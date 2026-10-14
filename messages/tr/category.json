@@ -9,7 +9,9 @@
     "projects": "Bu alandaki projeler",
     "areas": "Hizmet verdiğimiz bölgeler: {areas}",
     "ctaTitle": "{category} için fiyat ve süre öğrenin",
-    "ctaText": "Alanın fotoğrafını ve ölçüsünü WhatsApp'tan gönderin, size dönüş yapalım."
+    "ctaText": "Alanın fotoğrafını ve ölçüsünü WhatsApp'tan gönderin, size dönüş yapalım.",
+    "ctaTitleGeneric": "Alanınız için fiyat ve süre öğrenin",
+    "nationwide": "{country} geneli"
   },
   "Services": {
     "title": "Hizmetlerimiz",

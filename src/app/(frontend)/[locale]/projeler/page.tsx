@@ -3,6 +3,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server'
 import { Maybe } from 'tsentials/maybe'
 
 import { ProjectCard } from '@/components/projects/ProjectCard'
+import { CtaBand } from '@/components/site/CtaBand'
 import { Container } from '@/components/ui/Container'
 import { buttonClass } from '@/components/ui/button'
 import { getPathname, Link } from '@/i18n/navigation'
@@ -32,50 +33,53 @@ export default async function ProjectsPage({ params, searchParams }: { params: P
   const chip = 'inline-flex min-h-11 items-center rounded-full border px-4 text-[0.95rem] font-semibold font-[family-name:var(--font-display)]'
 
   return (
-    <Container className="pt-10 md:pt-16">
-      <h1 className="text-[2.1rem] leading-[1.08] md:text-[3.2rem]">{t('title')}</h1>
-      <p className="mt-5 max-w-[62ch] text-[1.15rem] text-ink-soft md:text-[1.25rem]">{t('description')}</p>
+    <>
+      <Container className="pt-10 md:pt-16">
+        <h1 className="text-[2.1rem] leading-[1.08] md:text-[3.2rem]">{t('title')}</h1>
+        <p className="mt-5 max-w-[62ch] text-[1.15rem] text-ink-soft md:text-[1.25rem]">{t('description')}</p>
 
-      {used.length > 1 && (
-        <nav aria-label={t('filter')} className="mt-8">
-          <ul className="flex flex-wrap gap-2">
-            {[{ id: 0, slug: undefined, name: t('all') }, ...used].map((c) => {
-              const on = c.slug ? Maybe.isSome(active) && active.value.id === c.id : Maybe.isNone(active)
-              return (
-                <li key={c.id}>
-                  <Link
-                    href={c.slug ? { pathname: '/projeler', query: { kategori: c.slug } } : '/projeler'}
-                    aria-current={on ? 'page' : undefined}
-                    className={`${chip} ${on ? 'border-ink bg-ink text-paper' : 'border-line bg-paper text-ink hover:border-ink/40'}`}
-                  >
-                    {c.name}
-                  </Link>
-                </li>
-              )
-            })}
+        {used.length > 1 && (
+          <nav aria-label={t('filter')} className="mt-8">
+            <ul className="flex flex-wrap gap-2">
+              {[{ id: 0, slug: undefined, name: t('all') }, ...used].map((c) => {
+                const on = c.slug ? Maybe.isSome(active) && active.value.id === c.id : Maybe.isNone(active)
+                return (
+                  <li key={c.id}>
+                    <Link
+                      href={c.slug ? { pathname: '/projeler', query: { kategori: c.slug } } : '/projeler'}
+                      aria-current={on ? 'page' : undefined}
+                      className={`${chip} ${on ? 'border-ink bg-ink text-paper' : 'border-line bg-paper text-ink hover:border-ink/40'}`}
+                    >
+                      {c.name}
+                    </Link>
+                  </li>
+                )
+              })}
+            </ul>
+          </nav>
+        )}
+
+        <h2 id="list-h" className="sr-only">
+          {t('list')}
+        </h2>
+        {shown.length > 0 ? (
+          <ul aria-labelledby="list-h" className="mt-10 grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
+            {shown.map((p, i) => (
+              <li key={p.id}>
+                <ProjectCard project={p} priority={i < 3} />
+              </li>
+            ))}
           </ul>
-        </nav>
-      )}
-
-      <h2 id="list-h" className="sr-only">
-        {t('list')}
-      </h2>
-      {shown.length > 0 ? (
-        <ul aria-labelledby="list-h" className="mt-10 grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
-          {shown.map((p, i) => (
-            <li key={p.id}>
-              <ProjectCard project={p} priority={i < 3} />
-            </li>
-          ))}
-        </ul>
-      ) : (
-        <div className="mt-10 max-w-xl rounded-[var(--radius-photo)] border border-line p-8">
-          <p className="text-[1.1rem]">{cards.length ? t('emptyFiltered') : t('empty')}</p>
-          <Link href="/galeri" className={`${buttonClass.outline} mt-5`}>
-            {t('toGallery')}
-          </Link>
-        </div>
-      )}
-    </Container>
+        ) : (
+          <div className="mt-10 max-w-xl rounded-[var(--radius-photo)] border border-line p-8">
+            <p className="text-[1.1rem]">{cards.length ? t('emptyFiltered') : t('empty')}</p>
+            <Link href="/galeri" className={`${buttonClass.outline} mt-5`}>
+              {t('toGallery')}
+            </Link>
+          </div>
+        )}
+      </Container>
+      <CtaBand locale={locale} place="projects_cta" />
+    </>
   )
 }

@@ -16,7 +16,7 @@ export async function MobileActionBar({ locale, wa }: { locale: Locale; wa?: WaC
     <div className="fixed inset-x-0 bottom-0 z-40 border-t border-line bg-paper pb-[env(safe-area-inset-bottom)] shadow-[0_-6px_20px_-12px_rgb(29_31_28/0.35)] lg:hidden">
       <div className="mx-auto flex max-w-xl">
         {whatsapp && (
-          <a href={whatsapp} target="_blank" rel="noopener" data-umami-event="whatsapp_click" data-umami-event-place="mobile-bar" className={`${cell} bg-whatsapp text-white`}>
+          <a href={whatsapp} target="_blank" rel="noopener" data-umami-event="whatsapp_click" data-umami-event-place="mobile-bar" className={`${cell} bg-action text-white hover:bg-action-deep`}>
             <MessageCircle aria-hidden size={22} strokeWidth={1.75} />
             {t('whatsappShort')}
           </a>
