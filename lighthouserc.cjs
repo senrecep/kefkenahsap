@@ -9,7 +9,15 @@ const KEY_TEMPLATES = ['home', 'category', 'gallery', 'project', 'contact', 'gui
 const base = process.env.LHCI_BASE_URL ?? 'http://localhost:3210'
 // assert/upload load this config too; only collect needs the paths.
 const targets = existsSync(TARGETS) ? JSON.parse(readFileSync(TARGETS, 'utf8')) : {}
-const paths = Object.values(targets).flatMap((byTemplate) => KEY_TEMPLATES.map((t) => byTemplate[t]))
+// LHCI_LOCALES picks locales and, per locale, optionally fewer templates: "tr,en,ar:home+category+gallery+contact".
+// Unset: every locale in the targets file with every key template.
+const plan = process.env.LHCI_LOCALES
+  ? process.env.LHCI_LOCALES.split(',').map((entry) => {
+      const [locale, only] = entry.trim().split(':')
+      return [locale, only ? only.split('+') : KEY_TEMPLATES]
+    })
+  : Object.keys(targets).map((locale) => [locale, KEY_TEMPLATES])
+const paths = plan.flatMap(([locale, templates]) => templates.map((t) => targets[locale]?.[t]).filter(Boolean))
 
 module.exports = {
   ci: {
