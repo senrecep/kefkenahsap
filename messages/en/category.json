@@ -1,0 +1,18 @@
+{
+  "Category": {
+    "gallery": "Our work",
+    "more": "Show more",
+    "price": "Price guide",
+    "perUnit": { "m2": "per m²", "m": "per metre", "piece": "per piece" },
+    "updated": "Updated:",
+    "faq": "Frequently asked questions",
+    "projects": "Projects in this area",
+    "areas": "Areas we serve: {areas}",
+    "ctaTitle": "Get a price and timeline for {category}",
+    "ctaText": "Send a photo and the measurements of the space on WhatsApp and we will get back to you."
+  },
+  "Services": {
+    "title": "Our services",
+    "description": "Decking, pergolas, railings, stairs and our other woodwork, each shown with photos of real jobs."
+  }
+}
