@@ -1,0 +1,11 @@
+[
+  { "name": "Cennetköy Sitesi", "location": { "tr": "Yalıkavak / Bodrum", "en": "Yalıkavak / Bodrum" } },
+  { "name": "Riva Konakları Sitesi", "location": { "tr": "Riva / İstanbul", "en": "Riva / Istanbul" } },
+  { "name": "Kemer Golf & Contry Clup", "location": { "tr": "Göktürk / istanbul", "en": "Göktürk / Istanbul" } },
+  { "name": "Neo Gölpark Evleri", "location": { "tr": "Bolluca / İstanbul", "en": "Bolluca / Istanbul" } },
+  { "name": "İ.B.B Sosyal Tesisler", "location": { "tr": "İ.B.B / İstanbul", "en": "İ.B.B / Istanbul" } },
+  { "name": "Mesa Mesken", "location": { "tr": "Bahçeşehir / İstanbul", "en": "Bahçeşehir / Istanbul" } },
+  { "name": "Nurol A.S", "location": { "tr": "Bahçeşehir / İstanbul", "en": "Bahçeşehir / Istanbul" } },
+  { "name": "Yaşar Holding", "location": { "tr": "Tripoli / Libya", "en": "Tripoli / Libya" } },
+  { "name": "İ.G.K", "location": { "tr": "Levent / İstanbul", "en": "Levent / Istanbul" } }
+]
