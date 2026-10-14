@@ -71,6 +71,7 @@ export const Media: CollectionConfig = {
     { name: 'seoFilename', type: 'text', label: 'SEO dosya adı', index: true },
     { name: 'category', type: 'relationship', relationTo: 'categories', index: true, label: 'Kategori' },
     { name: 'tags', type: 'relationship', relationTo: 'tags', hasMany: true, label: 'Etiketler' },
+    { name: 'project', type: 'relationship', relationTo: 'projects', index: true, label: 'Proje' },
     { name: 'featured', type: 'checkbox', label: 'Öne çıkan', admin: { position: 'sidebar' } },
     { name: 'capturedAt', type: 'date', label: 'Çekim tarihi', admin: { position: 'sidebar' } },
     {

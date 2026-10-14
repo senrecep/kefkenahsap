@@ -9,6 +9,11 @@ import { Users } from './collections/Users'
 import { Media } from './collections/Media'
 import { Categories } from './collections/Categories'
 import { Tags } from './collections/Tags'
+import { Projects } from './collections/Projects'
+import { References } from './collections/References'
+import { Pages } from './collections/Pages'
+import { redirectsPlugin } from '@payloadcms/plugin-redirects'
+import { isStaff } from './access'
 import { SiteSettings } from './globals/SiteSettings'
 import { Homepage } from './globals/Homepage'
 import { Navigation } from './globals/Navigation'
@@ -32,7 +37,7 @@ export default buildConfig({
       baseDir: path.resolve(dirname),
     },
   },
-  collections: [Users, Media, Categories, Tags],
+  collections: [Users, Media, Categories, Tags, Projects, References, Pages],
   globals: [SiteSettings, Homepage, Navigation],
   endpoints: [
     {
@@ -76,6 +81,16 @@ export default buildConfig({
   }),
   sharp,
   plugins: [
+    // Manual redirects managed in the admin (old WP pages/attachments and future URL changes).
+    // Bulk WP media redirects live in a JSON map (#32), not here.
+    redirectsPlugin({
+      collections: ['pages', 'categories', 'projects'],
+      redirectTypes: ['301', '302'],
+      overrides: {
+        admin: { group: 'Yönetim' },
+        access: { read: () => true, create: isStaff, update: isStaff, delete: isStaff },
+      },
+    }),
     s3Storage({
       collections: {
         media: {
