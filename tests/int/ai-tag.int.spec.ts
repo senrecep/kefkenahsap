@@ -4,36 +4,12 @@ import os from 'os'
 import path from 'path'
 import { getPayload, type Payload } from 'payload'
 import sharp from 'sharp'
-import { afterAll, beforeAll, describe, expect, it, vi } from 'vitest'
+import { afterAll, beforeAll, describe, expect, it } from 'vitest'
 
-const SUGGESTION = {
-  title: { tr: 'Havuz kenarı ahşap deck', en: 'Poolside timber deck' },
-  alt: { tr: 'Havuz kenarında açık renkli ahşap deck zemin', en: 'Light timber decking beside a pool' },
-  caption: { tr: 'Bahçe havuzu çevresine döşenen deck.', en: 'Decking laid around a garden pool.' },
-  seoFilename: 'havuz-kenari-ahsap-deck',
-  tags: { wood: [], setting: ['havuz kenarı'], finish: ['doğal'], stage: ['finished'] },
-  categoryAgrees: true,
-  confidence: 0.9,
-}
+import { FAKE_TAG_IMAGE } from '@/ai/fake'
 
-vi.mock('@/ai/models', async (orig) => {
-  const real = await orig<typeof import('@/ai/models')>()
-  const { MockLanguageModelV4 } = await import('ai/test')
-  return {
-    ...real,
-    openRouterModel: (id: string) =>
-      new MockLanguageModelV4({
-        modelId: id,
-        doGenerate: {
-          content: [{ type: 'text', text: JSON.stringify(SUGGESTION) }],
-          finishReason: { unified: 'stop', raw: 'stop' },
-          usage: { inputTokens: { total: 1000, noCache: 1000, cacheRead: 0, cacheWrite: 0 }, outputTokens: { total: 200, text: 200, reasoning: 0 } },
-          warnings: [],
-          providerMetadata: { openrouter: { usage: { cost: 0.0042 } } },
-        } as never,
-      }),
-  }
-})
+// Model calls go to the deterministic fake (AI_FAKE_PROVIDER=1, set in vitest.setup.ts).
+const SUGGESTION = FAKE_TAG_IMAGE
 
 let payload: Payload
 const IMG = path.join(os.tmpdir(), 'kefken-ai', 'deck.webp')
@@ -48,7 +24,7 @@ beforeAll(async () => {
 })
 afterAll(async () => {
   for (const c of created.reverse()) await payload.delete({ collection: c.collection, id: c.id }).catch(() => {})
-  await payload.updateGlobal({ slug: 'aiSettings', data: { monthlyBudgetUsd: 10 } })
+  await payload.updateGlobal({ slug: 'aiSettings', data: { monthlyBudgetUsd: 10, tagImage: [] } })
 })
 
 describe('tagImage job', () => {
@@ -102,5 +78,25 @@ describe('tagImage job', () => {
     const tr = await payload.findByID({ collection: 'media', id: m.id, locale: 'tr' })
     expect(tr.alt ?? null).toBeNull()
     await payload.updateGlobal({ slug: 'aiSettings', data: { monthlyBudgetUsd: 1000 } })
+  })
+
+  it('#57: a model changed in AI Ayarları is used by the next job', async () => {
+    const envChain = process.env.AI_TAGIMAGE_MODELS
+    delete process.env.AI_TAGIMAGE_MODELS // env beats settings; this test is about the admin setting
+    try {
+      await payload.updateGlobal({ slug: 'aiSettings', data: { tagImage: ['test/changed-model'] } })
+      const m = await payload.create({ collection: 'media', data: {}, filePath: IMG })
+      created.push({ collection: 'media', id: m.id })
+      await payload.jobs.queue({ task: 'tagImage', input: { mediaId: String(m.id) } })
+      await payload.jobs.run()
+      const tr = await payload.findByID({ collection: 'media', id: m.id, locale: 'tr' })
+      expect((tr.aiSuggestion as { model: string }).model).toBe('test/changed-model')
+      const usage = await payload.find({ collection: 'ai-usage', where: { docRef: { equals: `media:${m.id}` } } })
+      usage.docs.forEach((d) => created.push({ collection: 'ai-usage', id: d.id }))
+      expect(usage.docs.map((d) => d.model)).toEqual(['test/changed-model'])
+    } finally {
+      if (envChain !== undefined) process.env.AI_TAGIMAGE_MODELS = envChain
+      await payload.updateGlobal({ slug: 'aiSettings', data: { tagImage: [] } })
+    }
   })
 })

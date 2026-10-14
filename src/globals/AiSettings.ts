@@ -7,7 +7,7 @@ const chain = (name: string, label: string) => ({
   type: 'text' as const,
   hasMany: true,
   label,
-  admin: { description: 'OpenRouter model kimlikleri, sırayla denenir. Boşsa varsayılanlar kullanılır.' },
+  admin: { components: { Field: '/components/admin/ai/ModelChainField#ModelChainField' } },
 })
 
 export const AiSettings: GlobalConfig = {
@@ -17,10 +17,12 @@ export const AiSettings: GlobalConfig = {
   access: { read: isAdmin, update: isAdmin },
   fields: [
     { name: 'enabled', type: 'checkbox', defaultValue: true, label: 'Yeni yüklemelerde otomatik öneri üret' },
+    { name: 'costPanel', type: 'ui', admin: { components: { Field: '/components/admin/ai/AiCostPanel#AiCostPanel' } } },
     { name: 'monthlyBudgetUsd', type: 'number', defaultValue: 10, label: 'Aylık bütçe (USD); dolunca AI işleri durur' },
     chain('tagImage', 'Görsel etiketleme modelleri'),
     chain('translate', 'Çeviri modelleri'),
-    chain('draftGuide', 'Taslak yazı modelleri'),
+    chain('draftGuide', 'Rehber taslağı modelleri'),
+    chain('draftProjectStory', 'Proje hikayesi taslağı modelleri'),
     {
       name: 'glossary',
       type: 'array',

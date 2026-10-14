@@ -4,7 +4,7 @@ import { APICallError } from 'ai'
 import { Result } from 'tsentials/result'
 import { z } from 'zod'
 
-import { runStructured } from './run'
+import { failureUsage, runStructured } from './run'
 
 const usage = {
   inputTokens: { total: 100, noCache: 100, cacheRead: 0, cacheWrite: 0 },
@@ -38,7 +38,8 @@ describe('runStructured', () => {
     if (Result.isSuccess(r)) {
       expect(r.value.output).toEqual({ title: 'Iroko deck' })
       expect(r.value.model).toBe('b')
-      expect(r.value.costUsd).toBe(0.004)
+      // a's failed (schema-invalid) attempt is paid too: 100 in × $3/M + 20 out × $15/M = 0.0006 (estimate), + b's 0.004.
+      expect(r.value.costUsd).toBeCloseTo(0.0046, 10)
       expect(r.value.attempts.map((a) => a.model)).toEqual(['a', 'b'])
     }
   })
@@ -66,5 +67,23 @@ describe('runStructured', () => {
   it('fails fast on an empty chain', async () => {
     const r = await runStructured({ ...base, chain: [], getModel: () => reply('{}') })
     expect(Result.isFailure(r) && r.errors[0]?.code).toBe('AI.NoModels')
+  })
+
+  it('estimates the cost from tokens when the provider reports none (budget always counts)', async () => {
+    const r = await runStructured({ ...base, chain: ['a'], getModel: () => reply('{"title":"ok"}') })
+    expect(Result.isSuccess(r) && r.value.costUsd).toBeCloseTo(0.0006, 10) // 100 × 3e-6 + 20 × 15e-6
+  })
+
+  it('a failed run still reports what it cost: every attempt, schema failures and provider errors included', async () => {
+    const models: Record<string, MockLanguageModelV4> = { a: reply('x'), b: failing(500) }
+    const r = await runStructured({ ...base, system: 's'.repeat(400), prompt: 'p'.repeat(400), chain: ['a', 'b'], getModel: (id) => models[id]! })
+    expect(Result.isFailure(r)).toBe(true)
+    // a: usage 100/20 → 0.0006; b (no usage): input estimated from 800 chars / 4 = 200 tokens × 3e-6 = 0.0006.
+    expect(Result.isFailure(r) && failureUsage(r.errors).costUsd).toBeCloseTo(0.0012, 10)
+  })
+
+  it('a 402 stop reports the estimated input cost of that attempt', async () => {
+    const r = await runStructured({ ...base, prompt: 'p'.repeat(399), chain: ['a'], getModel: () => failing(402) })
+    expect(Result.isFailure(r) && failureUsage(r.errors).costUsd).toBeCloseTo(100 * 3e-6, 10) // ceil(400/4) tokens
   })
 })
