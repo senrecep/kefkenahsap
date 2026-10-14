@@ -4,7 +4,11 @@ import type { DateTimeProvider } from 'tsentials/time'
 
 import { normalizeTrPhone } from '@/lib/whatsapp'
 
+/** Accepted lead photo types (no SVG: scriptable). Shared with the LeadPhotos upload config. */
+export const LEAD_PHOTO_TYPES = ['image/jpeg', 'image/png', 'image/webp', 'image/heic', 'image/heif']
 export const MAX_PHOTOS = 5
+/** Version of the KVKK notice the consent box links to; stored on every lead. Bump when the text changes. */
+export const KVKK_TEXT_VERSION = 'kvkk-taslak-2026-10-14'
 export const MAX_PHOTO_BYTES = 10 * 1024 * 1024
 const MAX_TEXT = 5000
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/
@@ -35,7 +39,7 @@ export function validateLead(input: LeadInput): Result<ValidLead> {
   if ((input.message?.length ?? 0) > MAX_TEXT) errors.push(Err.validation('Lead.MessageTooLong', 'Mesaj çok uzun.'))
   const photos = input.photos ?? []
   if (photos.length > MAX_PHOTOS) errors.push(Err.validation('Lead.TooManyPhotos', `En fazla ${MAX_PHOTOS} fotoğraf.`))
-  if (photos.some((p) => !p.type.startsWith('image/'))) errors.push(Err.validation('Lead.PhotoType', 'Yalnızca fotoğraf yüklenebilir.'))
+  if (photos.some((p) => !LEAD_PHOTO_TYPES.includes(p.type))) errors.push(Err.validation('Lead.PhotoType', 'Yalnızca fotoğraf yüklenebilir.'))
   if (photos.some((p) => p.size > MAX_PHOTO_BYTES)) errors.push(Err.validation('Lead.PhotoTooLarge', 'Fotoğraf en fazla 10 MB olabilir.'))
   if (errors.length || !Result.isSuccess(phone)) return Result.failure(...errors)
   return Result.success({
