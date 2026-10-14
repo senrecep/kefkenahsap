@@ -11,7 +11,7 @@ export function localizedPathname<P extends string>(routing: { pathnames: Record
   const { pathname, params = {}, query } = typeof args.href === 'string' ? { pathname: args.href } : args.href
   const config = routing.pathnames[pathname]
   let path = typeof config === 'string' ? config : (config[args.locale] ?? pathname)
-  for (const [key, value] of Object.entries(params)) path = path.replaceAll(`[${key}]`, String(value))
+  for (const [key, value] of Object.entries(params)) path = path.replaceAll(`[${key}]`, encodeURIComponent(String(value)))
   if (path.includes('[')) throw new Error(`Missing params for ${pathname}: ${JSON.stringify(params)}`)
   path = new URL(path, 'http://l').pathname
   if (path !== '/' && path.endsWith('/')) path = path.slice(0, -1)

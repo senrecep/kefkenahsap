@@ -1,62 +1,119 @@
-// #52: one published project and one published guide at fixed slugs, so Lighthouse CI and the axe spec can reach
-// those templates (seed projects and guides are drafts; CI starts from an empty DB). Idempotent.
+// #52: a published project and guide in every locale, so the axe spec and Lighthouse CI reach those templates (seed
+// projects and guides are drafts; CI starts from an empty DB). Idempotent. Writes .quality-targets.json: the localized
+// path of every public template per locale (routing.locales + getPathname), read by the axe spec and lighthouserc.cjs.
 // Uses approved photos already in the DB (the real seed locally, tests/e2e/global-setup.ts photos in CI).
+// Refuses to run outside CI or a local database, and always with SITE_ENV=production (src/lib/quality/target.ts).
 // Run: bun run payload run scripts/quality/fixtures.ts [-- --remove]
-import { readFileSync } from 'node:fs'
+import { readFileSync, rmSync, writeFileSync } from 'node:fs'
 import path from 'node:path'
 import { convertMarkdownToLexical, editorConfigFactory } from '@payloadcms/richtext-lexical'
 import { getPayload } from 'payload'
 
 import config from '@/payload.config'
 import { guideBodyFeatures } from '@/collections/Guides'
+import { routing, type Locale } from '@/i18n/routing'
+import { localizedPathname } from '@/lib/i18n/pathname'
+import type { Project } from '@/payload-types'
+import { fixtureTarget } from '@/lib/quality/target'
 import F from './fixtures.json'
 
+const target = fixtureTarget({ databaseUrl: process.env.DATABASE_URL, ci: process.env.CI, siteEnv: process.env.SITE_ENV })
+if (!target.ok) {
+  console.error(target.errors.map((e) => e.description).join('\n'))
+  process.exit(1)
+}
+
+const TARGETS = path.resolve('.quality-targets.json')
+const { defaultLocale, locales } = routing
+const slug = (base: string, locale: Locale) => `${base}-${locale}`
 const payload = await getPayload({ config: await config })
-const find = (collection: 'projects' | 'guides', slug: string) =>
-  payload.find({ collection, locale: 'tr', draft: true, where: { slug: { equals: slug } }, limit: 1, depth: 0 }).then((r) => r.docs[0])
+const find = (collection: 'projects' | 'guides', base: string) =>
+  payload
+    .find({ collection, locale: defaultLocale, draft: true, where: { slug: { equals: slug(base, defaultLocale) } }, limit: 1, depth: 0 })
+    .then((r) => r.docs[0])
 
 if (process.argv.includes('--remove')) {
-  for (const [collection, slug] of [['projects', F.project.tr], ['guides', F.guide.tr]] as const) {
-    const doc = await find(collection, slug)
+  for (const [collection, base] of [['projects', F.project], ['guides', F.guide]] as const) {
+    const doc = await find(collection, base)
     if (doc) await payload.delete({ collection, id: doc.id })
   }
+  rmSync(TARGETS, { force: true })
   console.log('quality fixtures removed')
   process.exit(0)
 }
 
-if (!(await find('projects', F.project.tr))) {
+// Copy exists in Turkish and English; any later locale (F3) gets the English text under its own slug.
+const pick = <T>(byLocale: { tr: T; en: T }, locale: Locale): T => (locale === 'tr' ? byLocale.tr : byLocale.en)
+
+let project = (await find('projects', F.project)) as Project | undefined
+if (!project) {
   const photos = await payload.find({ collection: 'media', where: { status: { equals: 'approved' } }, limit: 8, depth: 0, sort: 'id' })
   if (photos.docs.length === 0) throw new Error('No approved photos: seed media first')
   const category = photos.docs.find((m) => m.category)?.category
-  const doc = await payload.create({
+  const title = { tr: 'Bahçe deck ve pergola', en: 'Garden deck and pergola' }
+  project = await payload.create({
     collection: 'projects',
-    locale: 'tr',
+    locale: defaultLocale,
     context: { skipAi: true },
     data: {
       _status: 'published',
-      title: 'Bahçe deck ve pergola',
-      slug: F.project.tr,
+      title: pick(title, defaultLocale),
+      slug: slug(F.project, defaultLocale),
       ...(category ? { categories: [category as number] } : {}),
       gallery: photos.docs.map((m) => m.id),
       city: 'İstanbul',
     },
   })
-  await payload.update({ collection: 'projects', id: doc.id, locale: 'en', data: { _status: 'published', title: 'Garden deck and pergola', slug: F.project.en } })
+  for (const locale of locales.filter((l) => l !== defaultLocale))
+    await payload.update({ collection: 'projects', id: project.id, locale, context: { skipAi: true }, data: { _status: 'published', title: pick(title, locale), slug: slug(F.project, locale) } })
 }
 
-if (!(await find('guides', F.guide.tr))) {
-  const seed = JSON.parse(readFileSync(path.resolve('seed/content/guides/iroko-mu-teak-mi.json'), 'utf8'))
+if (!(await find('guides', F.guide))) {
+  type GuideCopy = { title: string; body: string } & Record<string, unknown>
+  const seed = JSON.parse(readFileSync(path.resolve('seed/content/guides/iroko-mu-teak-mi.json'), 'utf8')) as { tr: GuideCopy; en: GuideCopy }
   const editorConfig = await editorConfigFactory.fromFeatures({ config: payload.config, features: guideBodyFeatures })
-  const body = (md: string) => convertMarkdownToLexical({ editorConfig, markdown: md })
-  const doc = await payload.create({ collection: 'guides', locale: 'tr', data: { ...seed.tr, slug: F.guide.tr, body: body(seed.tr.body), _status: 'published' } })
-  await payload.update({ collection: 'guides', id: doc.id, locale: 'en', data: { ...seed.en, slug: F.guide.en, body: body(seed.en.body), _status: 'published' } })
+  const data = (locale: Locale) => {
+    const copy = pick(seed, locale)
+    return { ...copy, slug: slug(F.guide, locale), body: convertMarkdownToLexical({ editorConfig, markdown: copy.body }), _status: 'published' as const }
+  }
+  const doc = await payload.create({ collection: 'guides', locale: defaultLocale, data: data(defaultLocale) })
+  for (const locale of locales.filter((l) => l !== defaultLocale)) await payload.update({ collection: 'guides', id: doc.id, locale, data: data(locale) })
 }
-// CI's seeded category (tests/e2e/global-setup.ts) has no description, which Lighthouse scores as a missing meta
-// description on the category page; real categories always have one. CI's DB is throwaway, so fill it there only.
-if (process.env.CI) {
-  const cat = await payload.find({ collection: 'categories', locale: 'tr', where: { slug: { equals: 'e2e-deck' } }, limit: 1, depth: 0 })
-  const doc = cat.docs[0]
-  if (doc && !doc.shortDesc) await payload.update({ collection: 'categories', id: doc.id, locale: 'tr', data: { shortDesc: 'Bahçe ve teras için ahşap deck uygulamaları.' } })
+
+// Category and photo pages: the fixture project's own category and first photo.
+const categoryId = project.categories?.[0]
+const photoId = project.gallery?.[0]
+if (!categoryId || !photoId) throw new Error('The fixture project needs a category and photos')
+const image = await payload.findByID({ collection: 'media', id: typeof photoId === 'object' ? photoId.id : photoId, depth: 0 })
+
+const targets: Record<string, Record<string, string>> = {}
+for (const locale of locales) {
+  const category = await payload.findByID({ collection: 'categories', id: typeof categoryId === 'object' ? categoryId.id : categoryId, locale, depth: 0 })
+  // CI's seeded category has no description, which Lighthouse scores as a missing meta description (real categories
+  // always have one). Same guard as above; filled in CI only, where the database is thrown away.
+  if (process.env.CI && !category.shortDesc)
+    await payload.update({ collection: 'categories', id: category.id, locale, data: { shortDesc: pick({ tr: 'Bahçe ve teras için ahşap deck.', en: 'Timber decking for gardens and terraces.' }, locale) } })
+  const p = (href: Parameters<typeof localizedPathname<keyof typeof routing.pathnames>>[1]['href']) => localizedPathname(routing, { locale, href })
+  targets[locale] = {
+    home: p('/'),
+    services: p('/hizmetlerimiz'),
+    category: p({ pathname: '/[category]', params: { category: category.slug! } }),
+    gallery: p('/galeri'),
+    image: p({ pathname: '/galeri/[slug]', params: { slug: image.seoFilename ?? String(image.id) } }),
+    projects: p('/projeler'),
+    project: p({ pathname: '/projeler/[slug]', params: { slug: slug(F.project, locale) } }),
+    references: p('/referanslar'),
+    about: p('/hakkimizda'),
+    contact: p('/iletisim'),
+    kvkk: p('/kvkk'),
+    cookies: p('/cerez-politikasi'),
+    search: p({ pathname: '/ara', query: { q: 'deck' } }),
+    searchEmpty: p({ pathname: '/ara', query: { q: 'zzqx-sonuc-yok' } }),
+    notFound: `${p('/')}/boyle-bir-sayfa-yok`,
+    guides: p('/rehber'),
+    guide: p({ pathname: '/rehber/[slug]', params: { slug: slug(F.guide, locale) } }),
+  }
 }
-console.log('quality fixtures ready')
+writeFileSync(TARGETS, `${JSON.stringify(targets, null, 2)}\n`)
+console.log(`quality fixtures ready (${locales.join(', ')}) → ${path.basename(TARGETS)}`)
 process.exit(0)

@@ -6,10 +6,12 @@ Budgets come from `CLAUDE.md`: initial JS ≤150 KB gz, Lighthouse mobile ≥95,
 
 | Gate | Where | Blocks CI? |
 |---|---|---|
-| axe (`tests/e2e/a11y.e2e.spec.ts`): WCAG 2.0/2.1/2.2 A+AA tags, every public template at 1440 and 390 px, plus lightbox, mobile menu and cookie banner open | e2e job, production build | yes, like every e2e spec |
-| Lighthouse CI (`lighthouserc.cjs`): perf/a11y/best-practices/SEO ≥0.95, CLS <0.05, total JS ≤160 KB, on home, category, gallery, project, contact and guide (3 runs, median) | CI step after e2e, same build; reports are uploaded as the `lighthouse` artifact | no (`continue-on-error`): lab scores on a shared runner are noisy, and CI photos are synthetic |
+| axe (`tests/e2e/a11y.e2e.spec.ts`): WCAG 2.0/2.1/2.2 A+AA tags, every public template in every locale (including empty search results and 404) at 1440 and 390 px, plus lightbox, cookie banner, contact form errors and mobile menu open | e2e job, production build | yes, like every e2e spec |
+| Lighthouse CI (`lighthouserc.cjs`): perf/a11y/best-practices/SEO ≥0.95, CLS <0.05, total JS ≤160 KB, on home, category, gallery, project, contact and guide in every locale (3 runs, median) | CI step after e2e, same build; reports are uploaded as the `lighthouse` artifact | no (`continue-on-error`): lab scores on a shared runner are noisy, and CI photos are synthetic |
 
-- Both use `scripts/quality/fixtures.ts`. It creates a published project and guide at the fixed slugs in `scripts/quality/fixtures.json`, because seed projects and guides are drafts and CI starts from an empty DB.
+- Both use `scripts/quality/fixtures.ts`. It publishes a project and a guide in every locale (`<base>-<locale>` slugs, bases in `scripts/quality/fixtures.json`), because seed projects and guides are drafts and CI starts from an empty DB.
+  - It writes `.quality-targets.json`: every template's path per locale, built from `routing.locales` and `getPathname`. The axe spec and `lighthouserc.cjs` read it, so a new locale is covered without edits.
+  - It refuses to run unless `CI` is set or `DATABASE_URL` points at localhost/127.0.0.1/::1, and always with `SITE_ENV=production`.
 - `is-crawlable` is the only skipped audit. Non-production builds send `X-Robots-Tag: noindex` on purpose, and that header is fixed at build time.
 - CI builds with `NEXT_PUBLIC_SITE_URL` set to the probed port, so canonical and hreflang URLs point at the server under test.
 
@@ -21,7 +23,7 @@ NEXT_PUBLIC_SITE_URL=http://localhost:3210 bun run build
 rm -rf .next/cache                                          # a fixture created after a visit stays cached as 404
 NEXT_PUBLIC_SITE_URL=http://localhost:3210 bun run start -- -p 3210
 export CHROME_PATH=$(node -p "require('playwright-core').chromium.executablePath()")
-LHCI_CATEGORY=deck-ve-zeminler bunx lhci collect --config=lighthouserc.cjs && bunx lhci assert --config=lighthouserc.cjs
+bunx lhci collect --config=lighthouserc.cjs && bunx lhci assert --config=lighthouserc.cjs
 bun run payload run scripts/quality/fixtures.ts -- --remove # don't leave them in a shared DB
 ```
 

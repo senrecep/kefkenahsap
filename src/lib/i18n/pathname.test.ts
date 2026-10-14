@@ -29,6 +29,12 @@ describe('localizedPathname', () => {
     expect(path({ locale: 'tr', href: { pathname: '/galeri/[slug]', params: { slug: 'çam' } } })).toBe('/tr/galeri/%C3%A7am')
   })
 
+  // Reserved characters stay inside their segment. next-intl leaves them raw and returns '/tr/galeri/a' for this slug,
+  // so it is checked here rather than in the parity loop below.
+  it('percent-encodes reserved characters in params', () => {
+    expect(path({ locale: 'tr', href: { pathname: '/galeri/[slug]', params: { slug: 'a?b/c#d%e' } } })).toBe('/tr/galeri/a%3Fb%2Fc%23d%25e')
+  })
+
   it('throws when a param is missing', () => {
     expect(() => path({ locale: 'tr', href: { pathname: '/rehber/[slug]', params: {} } })).toThrow()
   })

@@ -1,10 +1,15 @@
-// #52 Lighthouse CI: mobile (Lighthouse default emulation) on the key templates, against a production build.
-// Needs the published project + guide from scripts/quality/fixtures.ts; LHCI_BASE_URL and LHCI_CATEGORY set the target.
+// #52 Lighthouse CI: mobile (Lighthouse default emulation) on the key templates in every locale, against a production
+// build. Paths come from .quality-targets.json, written by scripts/quality/fixtures.ts from routing.locales + getPathname
+// (this CommonJS file can't import the TS routing). LHCI_BASE_URL sets the server.
 // eslint-disable-next-line @typescript-eslint/no-require-imports -- LHCI loads its config as CommonJS
-const F = require('./scripts/quality/fixtures.json')
+const { existsSync, readFileSync } = require('node:fs')
 
+const TARGETS = `${__dirname}/.quality-targets.json`
+const KEY_TEMPLATES = ['home', 'category', 'gallery', 'project', 'contact', 'guide']
 const base = process.env.LHCI_BASE_URL ?? 'http://localhost:3210'
-const paths = ['/tr', `/tr/${process.env.LHCI_CATEGORY ?? 'e2e-deck'}`, '/tr/galeri', `/tr/projeler/${F.project.tr}`, '/tr/iletisim', `/tr/rehber/${F.guide.tr}`]
+// assert/upload load this config too; only collect needs the paths.
+const targets = existsSync(TARGETS) ? JSON.parse(readFileSync(TARGETS, 'utf8')) : {}
+const paths = Object.values(targets).flatMap((byTemplate) => KEY_TEMPLATES.map((t) => byTemplate[t]))
 
 module.exports = {
   ci: {
@@ -23,6 +28,7 @@ module.exports = {
     assert: {
       aggregationMethod: 'median-run',
       assertions: {
+        // Known red on the photo-heavy templates (home, category, gallery, project ≈ 80–90 locally) until #116 lands.
         'categories:performance': ['error', { minScore: 0.95 }],
         'categories:accessibility': ['error', { minScore: 0.95 }],
         'categories:best-practices': ['error', { minScore: 0.95 }],
