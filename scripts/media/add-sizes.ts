@@ -1,4 +1,4 @@
-// #116: adds image sizes that were introduced after upload (w480) to existing approved media.
+// #116: adds image sizes that were introduced after upload (any of Media's widths) to existing approved media.
 // Idempotent: media that already has the size, or whose original is not wider, is skipped, so a re-run (or a run cut
 // short) only does what is left. Reads the stored original from S3 (GetObject), resizes it the way Payload does at
 // upload (EXIF-rotated, same width, WebP q80, no enlargement), writes `<name>-<w>x<h>.webp` next to the other sizes,
@@ -11,10 +11,12 @@ import { getPayload } from 'payload'
 import sharp from 'sharp'
 
 import config from '@/payload.config'
+import { MEDIA_WIDTHS } from '@/collections/Media'
 import { derivativeFilename, needsDerivative } from '@/lib/media/derivative'
 import { databaseHost, isLocalHost } from '@/lib/quality/target'
 
-const SIZES = { w480: 480 } as const
+// Every configured size: one added to Media later (w480 #116, w800 #129) is filled in on the next run.
+const SIZES = Object.fromEntries(MEDIA_WIDTHS.map((w) => [`w${w}`, w]))
 const QUALITY = 80 // = Media.upload.imageSizes formatOptions
 const dryRun = process.argv.includes('--dry-run')
 

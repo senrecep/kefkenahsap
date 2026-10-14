@@ -11,7 +11,8 @@ import { revalidateAfterChange, revalidateAfterDelete } from '@/hooks/revalidate
 // WebP only: sources are already WebP; AVIF would double storage and encode time (PLAN §3.3).
 // 480: 2-column phone grids render ~184 CSS px, which at DPR 1.75–2.6 needs 322–480 px; without it they fetched 640 (#116).
 // Existing media gets it from scripts/media/add-sizes.ts.
-const widths = [320, 480, 640, 960, 1280, 1920] as const
+// 800: page heroes on phones (~380 CSS px × DPR 1.75–2 ≈ 665–760 px) fetched w960 (#129).
+export const MEDIA_WIDTHS = [320, 480, 640, 800, 960, 1280, 1920] as const
 
 /** Tiny blurred placeholder + dominant colour, computed once at upload (skeleton/LQIP, CLS-free gallery). */
 const placeholder: CollectionBeforeChangeHook = async ({ data, req }) => {
@@ -120,7 +121,7 @@ export const Media: CollectionConfig = {
     mimeTypes: ['image/*'],
     focalPoint: true,
     formatOptions: { format: 'webp', options: { quality: 82 } },
-    imageSizes: widths.map((w) => ({
+    imageSizes: MEDIA_WIDTHS.map((w) => ({
       name: `w${w}`,
       width: w,
       withoutEnlargement: true,
