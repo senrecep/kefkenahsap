@@ -58,6 +58,8 @@ export const getProject = (locale: Locale, slug: string) =>
       })) as unknown as { slug?: Record<string, string | null>; title?: Record<string, string | null> }
       const slugs: Record<string, string> = {}
       for (const [l, s] of Object.entries(all.slug ?? {})) if (s && all.title?.[l]) slugs[l] = s
+      // Draft categories stay off the public page (the local API returns them).
+      project.categories = (project.categories ?? []).filter((c) => typeof c === 'object' && c?._status === 'published')
       return { project, gallery: (project.gallery ?? []).filter(isApproved), cover: isApproved(project.cover) ? project.cover : undefined, slugs }
     },
     ['project', locale, slug],

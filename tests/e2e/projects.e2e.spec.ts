@@ -20,6 +20,7 @@ test.describe('Projects, project page and references', () => {
     references: [],
     tags: [],
   }
+  let galleryFiles: string[] = []
   let full: { slug: string; title: string }
   let bare: { slug: string; title: string }
 
@@ -50,6 +51,9 @@ test.describe('Projects, project page and references', () => {
         depth: 0,
       })
     ).docs
+    // Saved order deliberately differs from the query order.
+    const ordered = [...photos].reverse()
+    galleryFiles = ordered.map((p) => p.seoFilename!)
     const wood = await create<{ id: number }>('tags', { name: `E2E Iroko ${stamp}`, axis: 'wood' })
     const ref = await create<{ id: number }>('references', {
       name: `E2E Referans ${stamp}`,
@@ -61,7 +65,7 @@ test.describe('Projects, project page and references', () => {
       _status: 'published',
       title: `E2E Havuz Deck ${stamp}`,
       categories: [deck.id],
-      gallery: photos.map((p) => p.id),
+      gallery: ordered.map((p) => p.id),
       city: 'İstanbul',
       district: 'Beykoz',
       year: 2019,
@@ -97,6 +101,9 @@ test.describe('Projects, project page and references', () => {
     await expect(facts.locator('dt')).toHaveText(['Yer', 'Yıl', 'Alan', 'Ahşap türü', 'Kategori'])
     await expect(facts).toContainText('Beykoz, İstanbul')
     await expect(facts).toContainText('120 m²')
+    // No cover: the first gallery photo is the hero, the rest follow in saved order.
+    const hrefs = await page.locator('#photos-h + ul a').evaluateAll((as) => as.map((a) => a.getAttribute('href')))
+    expect(hrefs).toEqual(galleryFiles.slice(1).map((f) => `/tr/galeri/${f}`))
     await expect(page.getByText('Gizli yorum')).toHaveCount(0)
     await expect(page.getByRole('heading', { name: 'Benzer projeler' })).toBeVisible()
     await expect(page.getByRole('link', { name: new RegExp(bare.title) })).toBeVisible()
