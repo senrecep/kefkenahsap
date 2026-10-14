@@ -86,6 +86,7 @@ export function Lightbox({ items, index, total, onIndex, onClose, labels }: Ligh
             width={img.width || undefined}
             height={img.height || undefined}
             alt={item.alt}
+            lang={item.altLang}
             className="max-h-full w-auto max-w-full rounded-[var(--radius-photo)] object-contain"
             style={{ backgroundColor: img.color }}
           />

@@ -13,8 +13,6 @@ export async function GET(req: NextRequest) {
     return [routing.defaultLocale]
   })
   const locale = rootLocale({ accept: req.headers.get('accept-language'), cookie: req.cookies.get('NEXT_LOCALE')?.value, live })
-  const res = NextResponse.redirect(new URL(`/${locale}${req.nextUrl.search}`, req.url), 302)
-  // Depends on the visitor's headers and cookie: never cached.
-  res.headers.set('Cache-Control', 'private, no-store')
-  return res
+  // Relative Location: correct behind any proxy/host. Depends on the visitor's headers and cookie: never cached.
+  return new NextResponse(null, { status: 302, headers: { Location: `/${locale}${req.nextUrl.search}`, 'Cache-Control': 'private, no-store' } })
 }

@@ -6,7 +6,9 @@ import { routing } from '@/i18n/routing'
 
 // Fixed route segments (TR internal + translated public paths): a category slug may not shadow them.
 const RESERVED = new Set([
-  ...Object.entries(routing.pathnames).flatMap(([internal, p]) => [internal, ...(typeof p === 'string' ? [] : Object.values(p))].map((x) => x.split('/')[1]!)),
+  ...Object.entries(routing.pathnames)
+    .flatMap(([internal, p]) => [internal, ...(typeof p === 'string' ? [] : Object.values(p))].map((x) => x.split('/')[1]!))
+    .filter((seg) => seg && !seg.startsWith('[')), // '/' and dynamic segments are not reserved words
   'admin',
   'api',
   'wp-content',

@@ -11,12 +11,14 @@ type Props = {
   /** Smallest candidate for `media` (not `mobile`): for slots that crop with object-cover and so render wider than `sizes`. */
   minWidth?: number
   alt?: string
+  /** Language of an explicit `alt` when it is a stand-in from another locale. */
+  altLang?: string
   /** Art direction: shown below 768px instead of `media` (e.g. a portrait crop for the phone hero). */
   mobile?: MediaLike
 }
 
 /** CDN image with srcset, intrinsic size (no CLS) and a blurred LQIP/dominant-colour backdrop while loading. */
-export function Picture({ media, sizes, className = '', imgClassName = '', priority = false, maxWidth, minWidth, alt, mobile }: Props) {
+export function Picture({ media, sizes, className = '', imgClassName = '', priority = false, maxWidth, minWidth, alt, altLang, mobile }: Props) {
   const img = responsiveImage(media, { maxWidth, minWidth })
   const small = mobile ? responsiveImage(mobile, { maxWidth }) : undefined
   if (!img.src) return null
@@ -28,6 +30,7 @@ export function Picture({ media, sizes, className = '', imgClassName = '', prior
       width={img.width || undefined}
       height={img.height || undefined}
       alt={alt ?? img.alt}
+      lang={alt === undefined ? img.altLang : altLang}
       loading={priority ? 'eager' : 'lazy'}
       decoding="async"
       fetchPriority={priority ? 'high' : undefined}

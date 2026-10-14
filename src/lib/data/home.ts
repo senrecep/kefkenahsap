@@ -8,6 +8,7 @@ import type { Where } from 'payload'
 import type { Media } from '@/payload-types'
 
 import { getCuratedSelection, mediaQuery, toGalleryItem } from './gallery'
+import { markFallbackAlt } from './media-alt'
 import { getPayload, TAGS } from './payload'
 
 const HOUR = 3600
@@ -38,7 +39,7 @@ export const getHeroFallback = (locale: Locale) =>
           limit: 20,
         })
         const doc = (res.docs as Media[]).find((d) => (d.width ?? 0) > (d.height ?? 0))
-        if (doc) return toGalleryItem(doc, locale)
+        if (doc) return toGalleryItem((await markFallbackAlt(payload, locale, [doc]))[0]!, locale)
       }
       return null
     },

@@ -142,7 +142,7 @@ Tüm metin alanları `localized: true`. Taslak/versiyon (`versions.drafts`) + Li
 - Kanonik host **www.kefkenahsap.com**; `kefkenahsap.com` → www (Cloudflare tek kural, host+path birlikte, 301).
 - `/` → çerez (`NEXT_LOCALE`) + `Accept-Language` ile, **yalnızca içeriği olan dillerden** biri (sabit rotalarla aynı kural, `getContentLocales`; içeriği olmayan tercih edilen dil atlanır, hiçbiri yoksa `/tr`; #64 kararı, `rootLocale`) (**302**, `/` Cloudflare cache bypass; `x-default` = `/tr`).
 - **Dil "yayında" sinyali**: bir dokümanın o dildeki `slug` ve `title` alanları doluysa o dil yayında sayılır (Payload draft'ları tüm dilleri birlikte yayınlar; per-locale status deneysel). Bu tek kural hreflang, sitemap ve noindex'i yönetir.
-- Dil seçici: aynı dokümanın diğer dildeki slug'ını çözer; yoksa o dilin ana sayfasına gider.
+- Dil seçici: yalnızca içeriği olan dilleri (+ o anki dili) gösterir (#64 inceleme kararı: noindex kabuk sayfalara taranabilir link yok); aynı dokümanın diğer dildeki slug'ını çözer, yoksa o dilin ana sayfasına gider.
 - Lokalize slug benzersizliği dil başına: lokalize alanda `unique: true` yeterli (`(slug, _locale)` index'i; F0 spike #12 doğruladı, hook yok).
 - Her sayfada `hreflang` (tr, en, x-default) — yalnızca **çevirisi yayınlanmış** diller listelenir; çevirisi olmayan dil sayfası **yalnızca noindex** (çapraz-dil canonical yok, hreflang'de yer almaz).
 - RU/DE sabit rota adları (#64): DE Almanca ASCII, RU Latin harfle transliterasyon (Kiril URL'de yüzde-kodlanır). Doküman slug'ları RU başlıktan otomatik Latin harfe çevrilir (`src/lib/slug.ts`).

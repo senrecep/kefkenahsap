@@ -41,6 +41,16 @@ describe('validateLead', () => {
     expect(phone('+90 532 11')).toBeNull() // +90 must still be a valid Turkish number
   })
 
+  it('drops a trunk 0 written after the country code (+49 0170…, +49 (0)30…); a second 0 is still invalid', () => {
+    const phone = (p: string) => { const r = validateLead({ ...ok, phone: p }); return Result.isSuccess(r) ? r.value.phone : null }
+    expect(phone('+49 0170 1234567')).toBe('491701234567')
+    expect(phone('+49 (0)30 1234567')).toBe('49301234567')
+    expect(phone('0049-0170-1234567')).toBe('491701234567')
+    expect(phone('+90 0532 111 22 33')).toBe('905321112233')
+    expect(phone('+49 00170 1234567')).toBeNull()
+    expect(phone('+4930 1234567')).toBe('49301234567') // no separator after the code: nothing is dropped
+  })
+
   it('validates optional e-mail only when given', () => {
     expect(codes(validateLead({ ...ok, email: 'not-an-email' }))).toEqual(['Lead.EmailInvalid'])
     expect(Result.isSuccess(validateLead({ ...ok, email: 'a@b.co' }))).toBe(true)

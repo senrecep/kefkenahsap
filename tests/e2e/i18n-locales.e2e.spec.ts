@@ -75,9 +75,12 @@ test.describe('new locales without content', () => {
     }
   })
 
-  test('the language switcher offers every locale (PLAN §5.1: no translation → that locale’s home)', async ({ request }) => {
-    const { html } = await page(request, '/tr/galeri')
-    for (const l of routing.locales) expect(html, l).toMatch(new RegExp(`<a href="/${l}" hrefLang="${l}"`))
+  test('the language switcher links only locales with content, plus the current one (no links to noindex shells)', async ({ request }) => {
+    const links = (html: string) => [...html.matchAll(/<a href="\/([a-z]{2})" hrefLang="\1"/g)].map((m) => m[1])
+    const tr = links((await page(request, '/tr/galeri')).html)
+    expect(tr).toEqual(expect.arrayContaining(['tr', 'en']))
+    for (const l of NEW) expect(tr, l).not.toContain(l)
+    for (const l of NEW) expect(links((await page(request, `/${l}`)).html), l).toEqual(expect.arrayContaining(['tr', 'en', l]))
   })
 })
 
@@ -107,6 +110,8 @@ test.describe('a locale goes live with its content (data-driven)', () => {
     await expect.poll(async () => (await page(request, '/tr')).hreflang, { timeout: 20_000 }).toContain(l)
     await expect.poll(async () => (await request.get('/sitemap.xml')).text(), { timeout: 20_000 }).toMatch(new RegExp(`<loc>[^<]*/${l}</loc>`))
     expect(await (await request.get('/sitemap.xml')).text()).toContain(`/${l}/e2e-${l}-${stamp}`)
+    // …the switcher now links it…
+    expect((await page(request, '/tr')).html).toMatch(new RegExp(`<a href="/${l}" hrefLang="${l}"`))
     // …and `/` now sends a browser that prefers it there (a fresh context: no NEXT_LOCALE cookie from the visits above).
     const fresh = await playwright.request.newContext({ baseURL })
     const root = await fresh.get('/', { headers: { 'Accept-Language': l }, maxRedirects: 0 })

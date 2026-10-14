@@ -13,11 +13,18 @@ export const MAX_PHOTO_BYTES = 10 * 1024 * 1024
 const MAX_TEXT = 5000
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/
 
+// A national trunk 0 written after the country code: "+49 0170…", "+49 (0)30…" (needs a separator after the code;
+// "+490170…" cannot be told apart and is taken as written).
+const TRUNK = /^(\s*(?:\+|00)\s*\d{1,3})(?:[\s\-./]+0|[\s\-./]*\(0\))/
+
 /**
  * Lead phone → E.164 digits without "+". A number written with + or 00 and a country code other than 90 is
- * international (8–15 digits, E.164); everything else, +90 included, must be a valid Turkish number.
+ * international (8–15 digits, E.164); everything else, +90 included, must be a valid Turkish number. One trunk 0
+ * after the country code is dropped.
  */
-function leadPhone(input: string): Result<string> {
+function leadPhone(raw: string): Result<string> {
+  const input = raw.replace(TRUNK, '$1 ')
+  if (TRUNK.test(input)) return Result.failure(Err.validation('Phone.Invalid', 'Geçersiz telefon numarası'))
   const digits = input.replace(/\D/g, '').replace(/^00/, '')
   if (/^\s*(\+|00)/.test(input) && !digits.startsWith('90'))
     return Result.successIf(/^[1-9]\d{7,14}$/.test(digits), digits, Err.validation('Phone.Invalid', 'Geçersiz telefon numarası'))

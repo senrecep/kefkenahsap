@@ -7,6 +7,7 @@ import type { GalleryItem } from '@/lib/gallery/item'
 import { encodeCursor, galleryWhere, PAGE_SIZE, START_CURSOR_ID, type GalleryQuery } from '@/lib/gallery/query'
 import type { Category, Media, Project } from '@/payload-types'
 
+import { markFallbackAlt, type WithAltLang } from './media-alt'
 import { getPayload, TAGS } from './payload'
 import { getNavCategories } from './site'
 
@@ -41,7 +42,7 @@ export const mediaQuery = { depth: 1, select, populate, fallbackLocale: 'tr', ov
 
 const rel = <T extends object>(v: number | T | null | undefined) => (v && typeof v === 'object' ? v : undefined)
 
-export function toGalleryItem(doc: Media, locale: Locale): GalleryItem {
+export function toGalleryItem(doc: WithAltLang<Media>, locale: Locale): GalleryItem {
   const slug = doc.seoFilename ?? '' // galleryWhere only returns media with a seoFilename
   const cat = rel<Category>(doc.category)
   const sizes = Object.fromEntries(
@@ -54,6 +55,7 @@ export function toGalleryItem(doc: Media, locale: Locale): GalleryItem {
     href: getPathname({ locale, href: { pathname: '/galeri/[slug]', params: { slug } } }),
     title: doc.title ?? '',
     alt: doc.alt ?? '',
+    ...(doc.altLang ? { altLang: doc.altLang } : {}),
     ...(doc.caption ? { caption: doc.caption } : {}),
     width: doc.width ?? 0,
     height: doc.height ?? 0,
@@ -95,7 +97,8 @@ export const getCuratedSelection = (locale: Locale) =>
         // shortcut: the mix draws from the newest 200 candidates; raise if large photos outgrow it.
         limit: 200,
       })
-      return (await curate(res.docs as Media[])).slice(0, PAGE_SIZE).map((d) => toGalleryItem(d, locale))
+      const payload = await getPayload()
+      return (await markFallbackAlt(payload, locale, (await curate(res.docs as Media[])).slice(0, PAGE_SIZE))).map((d) => toGalleryItem(d, locale))
     },
     ['curatedSelection', locale],
     { tags, revalidate: HOUR },
@@ -114,7 +117,7 @@ export function getGalleryPage(locale: Locale, f: { categoryId?: number; tagId?:
     })
     const docs = res.docs as Media[]
     return {
-      items: docs.map((d) => toGalleryItem(d, locale)),
+      items: (await markFallbackAlt(await getPayload(), locale, docs)).map((d) => toGalleryItem(d, locale)),
       total: res.totalDocs,
       nextCursor: res.hasNextPage && docs.length ? encodeCursor(docs.at(-1)!.id) : null,
     }
@@ -163,7 +166,7 @@ export const getImage = (locale: Locale, slug: string) =>
       const titles = (all.docs[0]?.title ?? {}) as unknown as Record<string, string | null | undefined>
       const project = rel<Project>(doc.project)
       return {
-        item: toGalleryItem(doc, locale),
+        item: toGalleryItem((await markFallbackAlt(payload, locale, [doc]))[0]!, locale),
         categoryId: rel<Category>(doc.category)?.id,
         project: project?.slug
           ? { title: project.title, href: getPathname({ locale, href: { pathname: '/projeler/[slug]', params: { slug: project.slug } } }) }

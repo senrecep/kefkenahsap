@@ -46,6 +46,18 @@ describe('leads', () => {
     send.mockRestore()
   })
 
+  it('the e-mail shows the phone as +E.164 with call and WhatsApp links, and the visitor’s language', async () => {
+    process.env.RESEND_API_KEY ||= 're_test'
+    const send = vi.spyOn(payload, 'sendEmail').mockResolvedValue(undefined as never)
+    const lead = await payload.create({ collection: 'leads', data: { name: `Anna ${stamp}`, phone: '491701234567', consentKvkk: true, locale: 'de' } })
+    created.push({ collection: 'leads', id: lead.id })
+    const { html } = send.mock.calls[0]![0] as { html: string }
+    expect(html).toContain('<a href="tel:+491701234567">+491701234567</a>')
+    expect(html).toContain('<a href="https://wa.me/491701234567">WhatsApp</a>')
+    expect(html).toMatch(/<b>Dil<\/b><\/td><td>de</)
+    send.mockRestore()
+  })
+
   it('skips the notification (no personal data to the console mailer) without a Resend key', async () => {
     const key = process.env.RESEND_API_KEY
     delete process.env.RESEND_API_KEY

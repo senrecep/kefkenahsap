@@ -124,6 +124,7 @@ export function GalleryGridClient({
                       <Picture
                         media={item.media}
                         alt={item.alt}
+                        altLang={item.altLang}
                         sizes={SIZES}
                         maxWidth={960}
                         imgClassName="transition-transform duration-500 ease-[var(--ease-out-expo)] group-hover:scale-[1.03]"
