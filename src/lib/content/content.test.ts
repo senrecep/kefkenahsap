@@ -5,7 +5,7 @@ import { describe, expect, it } from 'vitest'
 
 import { SEED_CATEGORIES } from '@/seed/categories'
 
-import { parseCategory, parseGuide, parsePage, parseReferences, wordCount } from './schema'
+import { parseCategory, parseGuide, parsePage, parseProjectStories, parseReferences, wordCount } from './schema'
 
 const DIR = path.resolve(process.cwd(), 'seed/content')
 const read = (p: string) => readFileSync(path.join(DIR, p), 'utf8')
@@ -124,6 +124,30 @@ describe('guides (#49)', () => {
           else expect(categorySlugs[locale].has(a!), href).toBe(true)
         }
       })
+    })
+  })
+})
+
+describe('project stories (#61)', () => {
+  // One story per reviewed photo cluster (seed/clusters/clusters.json, the 17 draft projects from #33).
+  const { clusters } = JSON.parse(readFileSync(path.resolve(process.cwd(), 'seed/clusters/clusters.json'), 'utf8')) as { clusters: { key: string }[] }
+  const stories = parseProjectStories(read('project-stories.json'))
+
+  it('parses and covers every cluster exactly once', () => {
+    expect(stories.ok).toBe(true)
+    expect(Object.keys(stories.ok ? stories.value : {}).sort()).toEqual(clusters.map((c) => c.key).sort())
+  })
+
+  describe.each(clusters.map((c) => c.key))('%s', (key) => {
+    const s = stories.ok ? stories.value[key] : undefined
+    it.each(['tr', 'en'] as const)('%s story is 60–120 words, with no year, banned claim or cliché', (locale) => {
+      const story = s![locale].story
+      const n = wordCount(story)
+      expect(n).toBeGreaterThanOrEqual(60)
+      expect(n).toBeLessThanOrEqual(120)
+      // Years stay in the working titles (EXIF); the story describes only what the photos show.
+      expect(story).not.toMatch(/\b(19|20)\d{2}\b/)
+      for (const re of BANNED) expect(textOf(s![locale]), String(re)).not.toMatch(re)
     })
   })
 })
