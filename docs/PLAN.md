@@ -140,7 +140,7 @@ Tüm metin alanları `localized: true`. Taslak/versiyon (`versions.drafts`) + Li
 | Yasal | `/tr/kvkk`, `/tr/cerez-politikasi` | `/en/privacy`, `/en/cookies` | `/ru/konfidentsialnost`, `/ru/cookies` | `/de/datenschutz`, `/de/cookies` |
 
 - Kanonik host **www.kefkenahsap.com**; `kefkenahsap.com` → www (Cloudflare tek kural, host+path birlikte, 301).
-- `/` → `Accept-Language` + çerez ile `/tr` veya `/en` (**302**, `/` Cloudflare cache bypass; `x-default` = `/tr`).
+- `/` → çerez (`NEXT_LOCALE`) + `Accept-Language` ile, **yalnızca içeriği olan dillerden** biri (sabit rotalarla aynı kural, `getContentLocales`; içeriği olmayan tercih edilen dil atlanır, hiçbiri yoksa `/tr`; #64 kararı, `rootLocale`) (**302**, `/` Cloudflare cache bypass; `x-default` = `/tr`).
 - **Dil "yayında" sinyali**: bir dokümanın o dildeki `slug` ve `title` alanları doluysa o dil yayında sayılır (Payload draft'ları tüm dilleri birlikte yayınlar; per-locale status deneysel). Bu tek kural hreflang, sitemap ve noindex'i yönetir.
 - Dil seçici: aynı dokümanın diğer dildeki slug'ını çözer; yoksa o dilin ana sayfasına gider.
 - Lokalize slug benzersizliği dil başına: lokalize alanda `unique: true` yeterli (`(slug, _locale)` index'i; F0 spike #12 doğruladı, hook yok).

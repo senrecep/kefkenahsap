@@ -15,7 +15,7 @@
     "optional": "isteğe bağlı",
     "name": "Ad soyad",
     "phoneLabel": "Telefon",
-    "phoneHint": "Örnek: 0532 123 45 67",
+    "phoneHint": "Örnek: 0532 123 45 67 · uluslararası numaralarda ülke koduyla (+49…)",
     "emailLabel": "E-posta",
     "service": "Hizmet",
     "servicePlaceholder": "Seçin",
@@ -40,7 +40,7 @@
     "whatsappAlt": "WhatsApp'tan yazın",
     "errors": {
       "NameRequired": "Ad soyad boş. Size nasıl hitap edeceğimizi yazın.",
-      "PhoneInvalid": "Telefon numarası eksik ya da hatalı. 0532 123 45 67 biçiminde yazın.",
+      "PhoneInvalid": "Telefon numarası eksik ya da hatalı. 0532 123 45 67 biçiminde, uluslararası numaralarda ülke koduyla (+49…) yazın.",
       "ConsentRequired": "KVKK onayı verilmedi. Göndermek için kutuyu işaretleyin.",
       "EmailInvalid": "E-posta adresi hatalı görünüyor. ad@ornek.com biçiminde yazın ya da boş bırakın.",
       "MessageTooLong": "Mesaj çok uzun. 5000 karakterin altına indirin.",

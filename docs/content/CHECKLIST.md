@@ -223,7 +223,7 @@ Kategori metinleri ve SSS #34'te yazıldı ve testler bunları her kategori içi
 - Marka adı çevrilmedi: "Kefken Ahşap Dekorasyon".
 
 Kontrol edilecekler:
-1. Ana sayfa ahşap tablosu TR kaynağa sadık çevrildi. TR kaynakta iroko için "doğal yağı" yazıyor; §7.3'e göre iroko yağlı ağaç diye anlatılmamalı. TR düzeltilirse RU/DE/EN de düzeltilmeli.
-2. Telefon örneği ve doğrulama Türkiye numarası istiyor (0532 …). Yurt dışından gelen RU/DE ziyaretçi +7/+49 numarasıyla formu gönderemez; WhatsApp çalışır. Ayrı karar.
+1. Ana sayfa ahşap tablosu: TR kaynaktaki iroko satırı §7.3'e göre düzeltildi ("öz maddeleri sayesinde çürümeye ve böceğe dirençli"; "yağlı" yalnızca teak için). EN/RU/DE de buna göre güncellendi.
+2. Form uluslararası numarayı kabul eder: + (ya da 00) ve ülke koduyla 8–15 hane (E.164). Türkiye numaraları eskisi gibi (0532…, 532…, +90…).
 3. KVKK ve çerez politikası taslak metinleri RU/DE'de İngilizce gösterilir (`lang="en"`). Hukukçu onaylı çeviri admin'de Sayfalar'a girilince o dil kendi metnini gösterir.
 4. Kategori, proje, rehber, görsel başlık/alt metinleri RU/DE'de boş. Bir dil, o dilde en az bir kategori ad + slug ile yayınlanana kadar noindex kalır (PLAN §5.1). Admin'deki "AI ile çevir" RU/DE'yi de taslak olarak doldurur; yayından önce anadili kontrolü gerekir.

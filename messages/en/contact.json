@@ -15,7 +15,7 @@
     "optional": "optional",
     "name": "Full name",
     "phoneLabel": "Phone",
-    "phoneHint": "Example: 0532 123 45 67",
+    "phoneHint": "Example: 0532 123 45 67 · international numbers with the country code (+49…)",
     "emailLabel": "E-mail",
     "service": "Service",
     "servicePlaceholder": "Choose",
@@ -40,7 +40,7 @@
     "whatsappAlt": "Message us on WhatsApp",
     "errors": {
       "NameRequired": "Name is empty. Tell us how to address you.",
-      "PhoneInvalid": "Phone number is missing or wrong. Write it like 0532 123 45 67.",
+      "PhoneInvalid": "Phone number is missing or wrong. Write it like 0532 123 45 67, or with the country code for international numbers (+49…).",
       "ConsentRequired": "Consent not given. Tick the box to send.",
       "EmailInvalid": "E-mail looks wrong. Write it like name@example.com or leave it empty.",
       "MessageTooLong": "Message is too long. Keep it under 5000 characters.",

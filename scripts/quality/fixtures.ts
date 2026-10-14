@@ -88,7 +88,13 @@ const image = await payload.findByID({ collection: 'media', id: typeof photoId =
 
 const targets: Record<string, Record<string, string>> = {}
 for (const locale of locales) {
-  const category = await payload.findByID({ collection: 'categories', id: typeof categoryId === 'object' ? categoryId.id : categoryId, locale, depth: 0 })
+  let category = await payload.findByID({ collection: 'categories', id: typeof categoryId === 'object' ? categoryId.id : categoryId, locale, depth: 0 })
+  // A later locale (ru/de/ar…) has no category text yet. CI gives the seeded category one so the template is audited;
+  // a local run leaves the shared DB alone and audits that locale's not-found page in its place.
+  if (process.env.CI && !category.slug) {
+    const en = await payload.findByID({ collection: 'categories', id: category.id, locale: 'en', depth: 0 })
+    category = await payload.update({ collection: 'categories', id: category.id, locale, data: { name: en.name, slug: `${en.slug}-${locale}` } })
+  }
   // CI's seeded category has no description, which Lighthouse scores as a missing meta description (real categories
   // always have one). Same guard as above; filled in CI only, where the database is thrown away.
   if (process.env.CI && !category.shortDesc)
@@ -97,7 +103,7 @@ for (const locale of locales) {
   targets[locale] = {
     home: p('/'),
     services: p('/hizmetlerimiz'),
-    category: p({ pathname: '/[category]', params: { category: category.slug! } }),
+    category: category.slug ? p({ pathname: '/[category]', params: { category: category.slug } }) : `${p('/')}/boyle-bir-sayfa-yok`,
     gallery: p('/galeri'),
     image: p({ pathname: '/galeri/[slug]', params: { slug: image.seoFilename ?? String(image.id) } }),
     projects: p('/projeler'),

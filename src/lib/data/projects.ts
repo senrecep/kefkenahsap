@@ -4,6 +4,7 @@ import type { Locale } from '@/i18n/routing'
 import { publishedLocales } from '@/lib/i18n/published'
 import type { Category, Media, Project } from '@/payload-types'
 
+import { withDefaultAlt } from './media-alt'
 import { getPayload, TAGS } from './payload'
 
 const HOUR = 3600
@@ -62,7 +63,9 @@ export const getProject = (locale: Locale, slug: string) =>
       for (const l of publishedLocales(byLocale)) slugs[l] = all.slug![l]!
       // Draft categories stay off the public page (the local API returns them).
       project.categories = (project.categories ?? []).filter((c) => typeof c === 'object' && c?._status === 'published')
-      return { project, gallery: (project.gallery ?? []).filter(isApproved), cover: isApproved(project.cover) ? project.cover : undefined, slugs }
+      const cover = isApproved(project.cover) ? project.cover : undefined
+      const [gallery, covers] = await Promise.all([withDefaultAlt(payload, locale, (project.gallery ?? []).filter(isApproved)), withDefaultAlt(payload, locale, cover ? [cover] : [])])
+      return { project, gallery, cover: covers[0], slugs }
     },
     ['project', locale, slug],
     { tags: [TAGS.projects, TAGS.media, TAGS.categories, TAGS.tags], revalidate: HOUR },

@@ -1,6 +1,6 @@
 {
   "Consent": {
-    "label": "Настройки cookie",
+    "label": "Использование cookie",
     "text": "Файлы cookie Google Analytics для подсчёта посещений мы используем только с вашего согласия. Подробнее — в <link>политике использования cookie</link>.",
     "accept": "Принять",
     "reject": "Отклонить",

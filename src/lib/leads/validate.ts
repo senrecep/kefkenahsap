@@ -13,6 +13,17 @@ export const MAX_PHOTO_BYTES = 10 * 1024 * 1024
 const MAX_TEXT = 5000
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/
 
+/**
+ * Lead phone → E.164 digits without "+". A number written with + or 00 and a country code other than 90 is
+ * international (8–15 digits, E.164); everything else, +90 included, must be a valid Turkish number.
+ */
+function leadPhone(input: string): Result<string> {
+  const digits = input.replace(/\D/g, '').replace(/^00/, '')
+  if (/^\s*(\+|00)/.test(input) && !digits.startsWith('90'))
+    return Result.successIf(/^[1-9]\d{7,14}$/.test(digits), digits, Err.validation('Phone.Invalid', 'Geçersiz telefon numarası'))
+  return normalizeTrPhone(input)
+}
+
 export type LeadInput = {
   name: string
   phone: string
@@ -31,7 +42,7 @@ export function validateLead(input: LeadInput): Result<ValidLead> {
   const errors: AppError[] = []
   const name = input.name?.trim() ?? ''
   if (!name) errors.push(Err.validation('Lead.NameRequired', 'Ad soyad gerekli.'))
-  const phone = normalizeTrPhone(input.phone ?? '')
+  const phone = leadPhone(input.phone ?? '')
   if (Result.isFailure(phone)) errors.push(Err.validation('Lead.PhoneInvalid', 'Geçerli bir telefon numarası girin.'))
   if (!input.consentKvkk) errors.push(Err.validation('Lead.ConsentRequired', 'KVKK aydınlatma metnini onaylayın.'))
   const email = input.email?.trim()

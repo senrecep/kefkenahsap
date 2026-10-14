@@ -15,7 +15,7 @@
     "optional": "optional",
     "name": "Vor- und Nachname",
     "phoneLabel": "Telefon",
-    "phoneHint": "Beispiel: 0532 123 45 67",
+    "phoneHint": "Beispiel: 0532 123 45 67 · internationale Nummern mit Ländervorwahl (+49…)",
     "emailLabel": "E-Mail",
     "service": "Leistung",
     "servicePlaceholder": "Bitte wählen",
@@ -40,7 +40,7 @@
     "whatsappAlt": "Per WhatsApp schreiben",
     "errors": {
       "NameRequired": "Der Name fehlt. Schreiben Sie, wie wir Sie ansprechen sollen.",
-      "PhoneInvalid": "Die Telefonnummer ist unvollständig oder falsch. Schreiben Sie sie im Format 0532 123 45 67.",
+      "PhoneInvalid": "Die Telefonnummer ist unvollständig oder falsch. Schreiben Sie sie im Format 0532 123 45 67, internationale Nummern mit Ländervorwahl (+49…).",
       "ConsentRequired": "Die KVKK-Einwilligung fehlt. Setzen Sie zum Senden das Häkchen.",
       "EmailInvalid": "Die E-Mail-Adresse scheint falsch zu sein. Schreiben Sie sie im Format name@beispiel.de oder lassen Sie das Feld leer.",
       "MessageTooLong": "Die Nachricht ist zu lang. Kürzen Sie sie auf unter 5000 Zeichen.",

@@ -67,6 +67,14 @@ test.describe('new locales without content', () => {
     for (const l of NEW) expect(llms, l).not.toContain(`Services (${l})`)
   })
 
+  test('`/` never sends a browser to a locale without content: it falls back to tr', async ({ request }) => {
+    for (const l of NEW) {
+      const res = await request.get('/', { headers: { 'Accept-Language': `${l};q=1` }, maxRedirects: 0 })
+      expect(res.status(), l).toBe(302)
+      expect(new URL(res.headers()['location']!, 'http://x').pathname, l).toBe('/tr')
+    }
+  })
+
   test('the language switcher offers every locale (PLAN §5.1: no translation → that locale’s home)', async ({ request }) => {
     const { html } = await page(request, '/tr/galeri')
     for (const l of routing.locales) expect(html, l).toMatch(new RegExp(`<a href="/${l}" hrefLang="${l}"`))
@@ -93,11 +101,15 @@ test.describe('a locale goes live with its content (data-driven)', () => {
     await expect.poll(async () => (await request.get('/sitemap.xml')).text(), { timeout: 30_000 }).not.toMatch(new RegExp(`/${l}(/|<)`))
   })
 
-  test(`one live ${l} category makes the ${l} fixed routes indexable, in hreflang and in the sitemap`, async ({ request }) => {
+  test(`one live ${l} category makes the ${l} fixed routes indexable, in hreflang and in the sitemap`, async ({ request, playwright, baseURL }) => {
     // Cache tags are revalidated stale-while-revalidate ('max'), so the first hit may still be the old page.
     await expect.poll(async () => (await page(request, `/${l}`)).robots, { timeout: 20_000 }).not.toContain('noindex')
     await expect.poll(async () => (await page(request, '/tr')).hreflang, { timeout: 20_000 }).toContain(l)
     await expect.poll(async () => (await request.get('/sitemap.xml')).text(), { timeout: 20_000 }).toMatch(new RegExp(`<loc>[^<]*/${l}</loc>`))
     expect(await (await request.get('/sitemap.xml')).text()).toContain(`/${l}/e2e-${l}-${stamp}`)
+    // …and `/` now sends a browser that prefers it there (a fresh context: no NEXT_LOCALE cookie from the visits above).
+    const fresh = await playwright.request.newContext({ baseURL })
+    const root = await fresh.get('/', { headers: { 'Accept-Language': l }, maxRedirects: 0 })
+    expect(new URL(root.headers()['location']!, 'http://x').pathname).toBe(`/${l}`)
   })
 })
