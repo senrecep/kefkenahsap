@@ -29,6 +29,17 @@ test.describe('homepage', () => {
     expect(h2s.at(-1)).toBe(tr.Home.contactTitle)
   })
 
+  test('hero motion: settles in by default, none with reduced motion', async ({ browser }) => {
+    const anim = async (reducedMotion: 'reduce' | 'no-preference') => {
+      const page = await (await browser.newContext({ reducedMotion })).newPage()
+      await page.goto('/tr')
+      const photo = page.locator('main section').first().locator('img').locator('..')
+      return photo.evaluate((el) => getComputedStyle(el).animationName)
+    }
+    expect(await anim('no-preference')).toBe('settle')
+    expect(await anim('reduce')).toBe('none')
+  })
+
   test('english homepage', async ({ page }) => {
     await page.goto('/en')
     await expect(page.getByRole('heading', { level: 2, name: en.Home.servicesTitle })).toBeVisible()
