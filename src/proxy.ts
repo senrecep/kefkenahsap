@@ -84,7 +84,8 @@ export default function proxy(req: NextRequest) {
   const isLocalized = routing.locales.some((l) => pathname === `/${l}` || pathname.startsWith(`/${l}/`))
   if (isLocalized && pathname.length > 1 && pathname.endsWith('/')) {
     // Same safe construction as the apex branch: only the path changes, never the host.
-    const to = req.nextUrl.clone()
+    // A plain URL: NextURL.clone() re-applies the trailing slash on serialisation.
+    const to = new URL(req.url)
     to.pathname = pathname.replace(/\/+$/, '')
     return NextResponse.redirect(to, 308)
   }
