@@ -1,0 +1,38 @@
+{
+  "file": "60432079_2483718571672727_8607638773611626496_n.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Teras Üstü Ahşap Pergola ve Şeffaf Çatı",
+    "en": "Rooftop Terrace Wooden Pergola with Clear Roof"
+  },
+  "alt": {
+    "tr": "Çatı terasında koyu kahverengi ahşap taşıyıcılı pergola, şeffaf plaka örtü, ahşap oturma bankı ve saksılı döşeme",
+    "en": "Rooftop terrace pergola with dark brown wooden frame, clear panel roof, built-in bench and potted plants on a tiled deck"
+  },
+  "caption": {
+    "tr": "Apartman çatı terasına yapılan ahşap pergola. Üstü şeffaf plakalarla kapatıldı, yanda ahşap oturma bankı var, zeminde ahşap karolar döşeli.",
+    "en": "A wooden pergola built over an apartment rooftop terrace. The top is covered with clear panels, with a built-in wooden bench along the side and wood deck tiles on the floor."
+  },
+  "seoFilename": "teras-ustu-ahsap-pergola-seffaf-cati",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "teras",
+      "çatı terası",
+      "apartman",
+      "şehir manzarası"
+    ],
+    "finish": [
+      "vernikli",
+      "koyu kahverengi",
+      "şeffaf çatı örtüsü"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

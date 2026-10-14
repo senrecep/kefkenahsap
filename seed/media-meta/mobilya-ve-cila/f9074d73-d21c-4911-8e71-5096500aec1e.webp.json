@@ -1,0 +1,36 @@
+{
+  "file": "f9074d73-d21c-4911-8e71-5096500aec1e.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Cam Bölmeli Toplantı Odası, Geometrik Desenli Duvar Paneli",
+    "en": "Glass-Walled Meeting Room with Geometric Wall Panel"
+  },
+  "alt": {
+    "tr": "Cam bölmeli toplantı odasında oval masa, tekerlekli koltuklar ve ekranın bulunduğu geometrik desenli kahverengi duvar paneli",
+    "en": "Glass-walled meeting room with an oval table, swivel chairs and a brown geometric-patterned wall panel holding a screen"
+  },
+  "caption": {
+    "tr": "Cam bölmeli toplantı odasında oyma geometrik desenli duvar paneli, oval masa ve koltuklar. Duvardaki ekran panelin üzerine yerleştirilmiş.",
+    "en": "A glass-partitioned meeting room with a carved geometric wall panel, an oval table and chairs. The screen is mounted on the panel."
+  },
+  "seoFilename": "toplanti-odasi-geometrik-desenli-duvar-paneli",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "ofis",
+      "toplantı odası",
+      "iç mekan"
+    ],
+    "finish": [
+      "mat",
+      "koyu kahve"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

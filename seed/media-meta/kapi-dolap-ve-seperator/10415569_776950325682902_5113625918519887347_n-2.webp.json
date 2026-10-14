@@ -1,0 +1,33 @@
+{
+  "file": "10415569_776950325682902_5113625918519887347_n-2.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Metal Karkaslı Ahşap Sürgülü Bahçe Kapısı",
+    "en": "Sliding Wooden Garden Gate with Metal Frame"
+  },
+  "alt": {
+    "tr": "Siyah metal çerçeve içine dikey ahşap latalarla hazırlanmış sürgülü bahçe giriş kapısı.",
+    "en": "Sliding driveway gate with vertical wooden slats built into a black metal frame."
+  },
+  "caption": {
+    "tr": "Bahçe ve otopark girişi için metal konstrüksiyon üzerine dikey ahşap çıtalarla uygulanan raylı dış mekan kapısı.",
+    "en": "Outdoor sliding gate built with vertical wood slats mounted on a durable metal frame for site entrance."
+  },
+  "seoFilename": "ahsap-surgulu-bahce-kapisi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "villa"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

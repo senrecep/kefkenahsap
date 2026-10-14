@@ -1,0 +1,36 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 18.00.37 (1).webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe Tipi Çapraz Korkuluklu Ahşap Kamelya",
+    "en": "Wooden Garden Gazebo with Cross Pattern Railings"
+  },
+  "alt": {
+    "tr": "Beton kaide üzerine kurulmuş, kırma çatılı ve ahşap korkuluklu bahçe kamelyası.",
+    "en": "Wooden garden gazebo with a hip roof and cross-braced railings on a concrete pad."
+  },
+  "caption": {
+    "tr": "Bahçede beton zemin üzerine kurulan, iç kısmında oturma bankları ve masası bulunan çatılı ahşap çardak imalatı.",
+    "en": "Finished installation of a wooden garden gazebo featuring integrated benches, table, and cross-pattern railings."
+  },
+  "seoFilename": "bahce-ahsap-kamelya-montaji",
+  "tags": {
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "bahçe",
+      "dış mekan"
+    ],
+    "finish": [
+      "ahşap koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.98
+}

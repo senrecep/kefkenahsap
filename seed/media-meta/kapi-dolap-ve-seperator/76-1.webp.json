@@ -1,0 +1,36 @@
+{
+  "file": "76-1.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe İçin Çift Kapaklı Ahşap Depolama Dolabı",
+    "en": "Double-Door Wooden Storage Cabinet for the Garden"
+  },
+  "alt": {
+    "tr": "Çim bahçenin köşesinde, yatay ahşap çıtalarla kaplı, çift kapaklı koyu kahverengi bahçe dolabı",
+    "en": "Dark brown garden cabinet with two doors, clad in horizontal wooden slats, standing in a corner of a lawn"
+  },
+  "caption": {
+    "tr": "Bahçe köşesine yerleştirilmiş, yatay çıta kaplı çift kapaklı ahşap dolap. Koyu tonlu vernik, dış mekâna uygun bir görünüm veriyor.",
+    "en": "A double-door wooden cabinet with horizontal slat cladding, placed in a garden corner. The dark stain suits the outdoor setting."
+  },
+  "seoFilename": "bahce-ahsap-depolama-dolabi-cift-kapakli",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "site bahçesi"
+    ],
+    "finish": [
+      "koyu vernik",
+      "yatay çıta kaplama"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.88
+}

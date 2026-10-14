@@ -1,0 +1,35 @@
+{
+  "file": "WhatsApp-Image-2021-04-30-at-20.32.58-1-1.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe İçin Alçak Ahşap Çit",
+    "en": "Low Wooden Garden Fence"
+  },
+  "alt": {
+    "tr": "Çim alanı beton yürüyüş yolundan ayıran, üstü yuvarlatılmış çıtalardan yapılmış alçak, açık renkli ahşap bahçe çiti",
+    "en": "Low light-colored wooden garden fence with rounded pickets separating a lawn from a concrete walkway"
+  },
+  "caption": {
+    "tr": "Çim alan ile yürüyüş yolunun arasına yaptığımız alçak çit. Çıtaların üstü yuvarlatıldı, bahçeye hafif ve düzenli bir görünüm veriyor.",
+    "en": "A low fence we built between the lawn and the walkway. The pickets have rounded tops, giving the garden a light and tidy edge."
+  },
+  "seoFilename": "bahce-alcak-ahsap-cit",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "çim alan",
+      "yürüyüş yolu"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

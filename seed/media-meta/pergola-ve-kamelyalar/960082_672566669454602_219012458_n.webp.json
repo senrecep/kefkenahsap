@@ -1,0 +1,35 @@
+{
+  "file": "960082_672566669454602_219012458_n.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Kare Kafesli Ahşap Paravan Duvar",
+    "en": "Wooden Lattice Screen Wall"
+  },
+  "alt": {
+    "tr": "Teras kenarında sıralanmış, kare kafes dolgulu ahşap çerçeveli paravan panelleri ve gölgesi zemine düşen üst kiriş",
+    "en": "Row of wooden framed screen panels with square lattice infill along a terrace, with the top beam casting shade on the floor"
+  },
+  "caption": {
+    "tr": "Teras boyunca sıralanan kare kafesli ahşap paravan panelleri. Kafesin arasından ışık süzülüyor, arka tarafta oturma alanı görünüyor.",
+    "en": "Square-lattice wooden screen panels lined up along a terrace. Light filters through the lattice, with a seating area visible behind."
+  },
+  "seoFilename": "kare-kafesli-ahsap-paravan-teras",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "teras",
+      "açık alan",
+      "bahçe"
+    ],
+    "finish": [
+      "yeşilimsi emprenye tonu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.6
+}

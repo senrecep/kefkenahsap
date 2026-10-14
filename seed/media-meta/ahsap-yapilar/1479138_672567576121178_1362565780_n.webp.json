@@ -1,0 +1,36 @@
+{
+  "file": "1479138_672567576121178_1362565780_n.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçeye Açılan Ahşap Çerçeveli Cam Kapalı Alan",
+    "en": "Glass Enclosed Garden Room with Wooden Frame"
+  },
+  "alt": {
+    "tr": "Bahçede ahşap kirişli, geniş cam yüzeyli ve koyu renk kapılı cam kapalı alan; önünde taş döşeli zemin var",
+    "en": "Garden room with timber posts, large glass panels and a dark door, set on a stone-paved floor next to a lawn"
+  },
+  "caption": {
+    "tr": "Bahçe katındaki teras, ahşap taşıyıcılar arasına cam yerleştirilerek kapalı bir alana dönüştürüldü. Önünde taş döşeli zemin yer alıyor.",
+    "en": "A garden-level terrace turned into an enclosed room by setting glass between timber posts, with a stone-paved floor in front."
+  },
+  "seoFilename": "bahce-ahsap-cerceveli-cam-kapali-alan",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras",
+      "konut"
+    ],
+    "finish": [
+      "vernikli",
+      "cam"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

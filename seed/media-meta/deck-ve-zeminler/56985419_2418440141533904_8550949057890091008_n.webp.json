@@ -1,0 +1,35 @@
+{
+  "file": "56985419_2418440141533904_8550949057890091008_n.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede L Şeklinde Ahşap Deck Yolu",
+    "en": "L-Shaped Wooden Deck Path in a Garden"
+  },
+  "alt": {
+    "tr": "Çimenlik bahçede L şeklinde uzanan bal rengi ahşap deck, solda çiçek açmış pembe ağaç dalları, sağda metal korkuluk",
+    "en": "Honey-toned wooden deck running in an L shape beside a lawn, with pink blossoms on the left and a metal railing on the right"
+  },
+  "caption": {
+    "tr": "Bahçedeki çimlik alanın kenarını izleyen, dar şeritli tahtalardan yapılmış deck zemin. Tahtalar boyuna sıralanmış, yüzey yağlanmış gibi sıcak bir ton almış.",
+    "en": "A deck floor of narrow boards following the edge of the garden lawn. The boards run lengthwise and the surface has a warm, oiled-looking tone."
+  },
+  "seoFilename": "bahce-ahsap-deck-yolu-l-seklinde",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras",
+      "dış mekan"
+    ],
+    "finish": [
+      "yağlı finish"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

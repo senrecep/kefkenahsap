@@ -1,0 +1,36 @@
+{
+  "file": "WhatsApp-Image-2021-04-30-at-20.41.53-1.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Seramik Karo Kaplı Tekerlekli Ahşap Sehpa",
+    "en": "Wooden Coffee Table with Tiled Top on Casters"
+  },
+  "alt": {
+    "tr": "Mavi-beyaz desenli seramik karo kaplı, koyu kahverengi ahşap gövdeli ve tekerlekli alçak sehpa atölye zemininde duruyor",
+    "en": "Low dark brown wooden table with a blue and white patterned ceramic tile top and casters, standing on a workshop floor"
+  },
+  "caption": {
+    "tr": "Üstü mavi-beyaz desenli karolarla kaplanmış, koyu renkli ahşap gövdeli sehpa. Altındaki tekerlekler sayesinde kolayca yer değiştiriyor. Fotoğraf atölyede çekildi.",
+    "en": "A coffee table with a blue and white patterned tile top and a dark stained wooden body. The casters underneath make it easy to move. Photographed in the workshop."
+  },
+  "seoFilename": "seramik-karo-kapli-tekerlekli-ahsap-sehpa",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "atölye",
+      "iç mekan"
+    ],
+    "finish": [
+      "koyu vernik",
+      "seramik karo"
+    ],
+    "stage": [
+      "finished",
+      "detail"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.6
+}

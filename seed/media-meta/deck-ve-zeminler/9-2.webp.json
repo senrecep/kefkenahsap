@@ -1,0 +1,33 @@
+{
+  "file": "9-2.webp",
+  "category": "deck-ve-zeminler",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede Ahşap Deck Platform ve Korkuluk",
+    "en": "Wooden Garden Deck Platform with Railings"
+  },
+  "alt": {
+    "tr": "Ağaçlar arasında yükseltilmiş, çapraz korkuluklu ahşap bahçe deck platformu.",
+    "en": "Raised wooden garden deck platform with cross-pattern railings set among pine trees."
+  },
+  "caption": {
+    "tr": "Villa bahçesinde mevcut çam ağaçlarına uyum sağlayacak şekilde inşa edilmiş, çapraz korkuluklu yükseltilmiş ahşap deck platformu.",
+    "en": "A raised wooden deck platform with cross-pattern railings, built harmoniously around pine trees in a residential garden."
+  },
+  "seoFilename": "bahce-ahsap-deck-platform-korkuluk",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "villa"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

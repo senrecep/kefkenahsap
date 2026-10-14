@@ -1,0 +1,37 @@
+{
+  "file": "7c907629-6c61-4d17-8e42-acb671ec9d53.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Gri Boyalı WC Kapısı ve Parke Zeminli Koridor",
+    "en": "Grey Painted WC Door and Hallway with Wood Flooring"
+  },
+  "alt": {
+    "tr": "Gri duvarlı koridorda panelli, gri boyalı WC kapısı; zeminde kahverengi ahşap parke, sağda açık gri başka bir kapı",
+    "en": "Grey-walled hallway with a paneled grey WC door with a vent grille, wood parquet floor and another grey door on the right"
+  },
+  "caption": {
+    "tr": "Koridordaki gri boyalı panelli kapılar ve kasa söveleri, ahşap parke zeminle birlikte. WC kapısının alt kısmında havalandırma ızgarası var.",
+    "en": "Grey painted paneled doors with matching frames in a hallway with a wood parquet floor. The WC door has a ventilation grille at the bottom."
+  },
+  "seoFilename": "gri-boyali-wc-kapisi-parke-koridor",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "koridor",
+      "iç mekan",
+      "kapı"
+    ],
+    "finish": [
+      "boya",
+      "gri",
+      "mat"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

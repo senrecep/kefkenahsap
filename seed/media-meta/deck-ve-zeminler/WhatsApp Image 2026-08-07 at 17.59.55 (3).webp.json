@@ -1,0 +1,33 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 17.59.55 (3).webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Havuz Kenarı Deck Altyapısı",
+    "en": "Pool-Side Deck Substructure"
+  },
+  "alt": {
+    "tr": "Bahçedeki havuzun yanında, çim alana komşu zeminde ahşap taşıyıcı çıtalar yan yana dizilmiş, deck döşemesi henüz yapılmamış",
+    "en": "Wooden joists laid across a base beside a garden pool and lawn, with the deck boards not yet installed"
+  },
+  "caption": {
+    "tr": "Havuz kenarındaki deck zemininin altyapı aşaması: ahşap taşıyıcı çıtalar sıralandı, üst döşeme tahtaları henüz çakılmadı.",
+    "en": "The substructure stage of a pool-side deck: wooden joists are laid out and the surface boards are not yet fixed."
+  },
+  "seoFilename": "havuz-kenari-deck-altyapisi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "havuz kenarı",
+      "bahçe",
+      "dış mekan"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

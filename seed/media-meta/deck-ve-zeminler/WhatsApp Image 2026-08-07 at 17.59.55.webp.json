@@ -1,0 +1,38 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 17.59.55.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe Kenarında Ahşap Deck ve Korkuluk",
+    "en": "Wooden Deck with Metal Railing Beside a Garden"
+  },
+  "alt": {
+    "tr": "Bahçeye bakan ahşap deck zemin, kenarında demir baklava başlıklı korkuluk ve ahşap tutamak",
+    "en": "Wooden deck floor facing a garden, with a wrought iron railing and a wooden handrail"
+  },
+  "caption": {
+    "tr": "Bahçeye bakan terasta yan yana döşenmiş ahşap deck tahtaları ve demir korkuluk. Tahtalardaki damar ve renk geçişleri açıkça görülüyor.",
+    "en": "Deck boards laid side by side on a terrace overlooking a garden, with an iron railing. The grain and colour variation of the boards is clearly visible."
+  },
+  "seoFilename": "bahce-kenari-ahsap-deck-demir-korkuluk",
+  "tags": {
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "teras",
+      "bahçe",
+      "dış mekan"
+    ],
+    "finish": [
+      "doğal ton",
+      "yağ bakımlı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,36 @@
+{
+  "file": "45-1.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Demir Karkaslı Ahşap Bahçe Kapısı",
+    "en": "Metal-Framed Wooden Garden Gate"
+  },
+  "alt": {
+    "tr": "Siyah demir karkas içine yatay ahşap paneller yerleştirilmiş sürgülü bahçe kapısı.",
+    "en": "Sliding garden gate featuring horizontal wood panels set in a black metal frame."
+  },
+  "caption": {
+    "tr": "Dış mekan için üretilen siyah profil konstrüksiyonlu, yatay ahşap kaplamalı ve ferforje detaylı sürgülü bahçe kapısı.",
+    "en": "Sliding exterior garden gate constructed with a black metal frame, wrought iron accents, and horizontal wood cladding."
+  },
+  "seoFilename": "demir-karkasli-ahsap-bahce-kapisi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "villa"
+    ],
+    "finish": [
+      "vernikli",
+      "boyalı metal"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

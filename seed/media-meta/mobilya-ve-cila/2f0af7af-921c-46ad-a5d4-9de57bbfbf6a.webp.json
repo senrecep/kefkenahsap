@@ -1,0 +1,37 @@
+{
+  "file": "2f0af7af-921c-46ad-a5d4-9de57bbfbf6a.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Minderli Beyaz Ayakkabılık Bank",
+    "en": "White Shoe Storage Bench with Cushioned Seat"
+  },
+  "alt": {
+    "tr": "Antrede bej minderli, açık kapaklı beyaz ayakkabılık bank; zeminde açık renk seramik fayans var",
+    "en": "White storage bench with beige padded seat and open doors in a hallway with light ceramic tile floor"
+  },
+  "caption": {
+    "tr": "Antre için yaptığımız minderli ayakkabılık bank. Üstü oturmaya uygun, içi iki kapaklı depolama alanı.",
+    "en": "A shoe storage bench we built for a hallway. The padded top works as a seat, with two doors opening to storage inside."
+  },
+  "seoFilename": "minderli-beyaz-ayakkabilik-bank",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "antre",
+      "iç mekan",
+      "apartman dairesi"
+    ],
+    "finish": [
+      "beyaz boya",
+      "döşemeli minder",
+      "kumaş kaplama"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,36 @@
+{
+  "file": "20-3.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Site Girişinde Ahşap Çıtalı Sürgülü Kapı",
+    "en": "Sliding Wooden Slat Gate at a Residential Entrance"
+  },
+  "alt": {
+    "tr": "Çatılı taş ayaklı bir giriş yapısının önünde, metal çerçeveli dikey ahşap çıtalardan yapılmış geniş sürgülü kapı",
+    "en": "Wide sliding gate of vertical wooden slats in a metal frame in front of a roofed stone-pillar entrance structure"
+  },
+  "caption": {
+    "tr": "Taş ayaklı, ahşap çatılı giriş yapısının önüne metal çerçeveli, dikey ahşap çıtalı sürgülü kapı yapıldı. Arkada kaldırım taşı döşeli giriş yolu görünüyor.",
+    "en": "A sliding gate with a metal frame and vertical wooden slats stands in front of an entrance structure with stone pillars and a timber roof. A cobblestone road lies in the foreground."
+  },
+  "seoFilename": "ahsap-citali-surgulu-giris-kapisi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "site girişi",
+      "bahçe kapısı",
+      "dış mekan"
+    ],
+    "finish": [
+      "vernikli",
+      "metal çerçeve"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

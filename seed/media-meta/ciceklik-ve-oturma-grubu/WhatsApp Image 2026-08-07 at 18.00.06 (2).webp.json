@@ -1,0 +1,37 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 18.00.06 (2).webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe Çiti Boyunca Kapaklı Ahşap Dolap",
+    "en": "Long Wooden Storage Cabinet Along a Garden Fence"
+  },
+  "alt": {
+    "tr": "Tel çitin önünde, kilit taşı zemin üzerinde duran koyu kahverengi, siyah menteşeli çok kapaklı uzun ahşap dolap",
+    "en": "Long dark brown wooden cabinet with black hinges and several doors, standing on cobblestone paving in front of a wire fence"
+  },
+  "caption": {
+    "tr": "Tel çitin boyunca uzanan, çok kapaklı ve düz üstlü ahşap dolap. Koyu kahve vernikli yüzeyde yatay tahtalar ve siyah demir menteşeler görünüyor.",
+    "en": "A multi-door wooden cabinet with a flat top running along a wire fence. The dark brown stained surface shows horizontal boards and black iron hinges."
+  },
+  "seoFilename": "bahce-citi-boyunca-kapakli-ahsap-dolap",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "kilit taşı zemin",
+      "tel çit"
+    ],
+    "finish": [
+      "koyu kahve vernik",
+      "siyah demir menteşe"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.8
+}

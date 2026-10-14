@@ -1,0 +1,35 @@
+{
+  "file": "39243115_2051741308203791_98833588392296448_n.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Balkonda Ahşap Klima Kasası ve Çıtalı Duvar Paneli",
+    "en": "Wooden Air Conditioner Cover and Slatted Wall Panel on a Balcony"
+  },
+  "alt": {
+    "tr": "Balkon duvarında yatay çıtalı ahşap panel, altında klima dış ünitesini saran çıtalı ahşap kasa",
+    "en": "Horizontal slatted wooden panel on a balcony wall above a slatted wooden cover enclosing an air conditioner unit"
+  },
+  "caption": {
+    "tr": "Balkondaki klima dış ünitesi için yatay çıtalı ahşap kasa yaptık. Üstteki duvar paneli de aynı çıta düzeniyle hazırlandı. Çıtaların arası açık, hava geçişi sürüyor.",
+    "en": "A horizontal slatted wooden cover built for the outdoor air conditioner unit on this balcony. The wall panel above uses the same slat layout, and the gaps between slats keep air flowing."
+  },
+  "seoFilename": "balkon-klima-kasasi-ahsap-cita-panel",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "balkon",
+      "apartman",
+      "klima kasası"
+    ],
+    "finish": [
+      "bal rengi ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.8
+}

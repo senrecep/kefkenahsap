@@ -1,0 +1,37 @@
+{
+  "file": "WhatsApp-Image-2021-06-08-at-23.27.44-3-1.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede Yuvarlak Kavisli Ahşap Oturma Bankı",
+    "en": "Curved Wooden Bench in a Garden"
+  },
+  "alt": {
+    "tr": "Bahçede beton zemin çevresinde yarım daire kavisli, sırt dayamalı ahşap oturma bankı; arkada ağaçlar ve bir ev görünüyor",
+    "en": "Semicircular wooden bench with a tall backrest curving around a concrete patio in a garden, with trees and a house behind"
+  },
+  "caption": {
+    "tr": "Bahçedeki beton zemini yarım daire şeklinde saran, dikey tahtalı sırtlığı olan kavisli ahşap oturma bankı. Tahtalar kıvrıma uyacak şekilde tek tek yerleştirildi.",
+    "en": "A curved wooden bench wrapping around a concrete garden patio, with a backrest made of vertical slats fitted one by one along the curve."
+  },
+  "seoFilename": "bahce-kavisli-ahsap-oturma-banki",
+  "tags": {
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "oturma alanı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

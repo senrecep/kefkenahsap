@@ -1,0 +1,36 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 18.00.08 (1).webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Beyaz Boyalı Ahşap Bahçe Kapısı ve Pergola Girişi",
+    "en": "White Painted Wooden Garden Gate and Pergola Entrance"
+  },
+  "alt": {
+    "tr": "Çit bitkileri arasında beyaz çıtalı ahşap bahçe kapısı ve arkasında kafes yan panelli beyaz pergola ile villa girişi",
+    "en": "White picket wooden garden gate between hedges, with a white pergola with lattice side panel over a villa entrance"
+  },
+  "caption": {
+    "tr": "Villa girişinde, çit bitkilerinin arasına yerleştirilmiş beyaz boyalı çıtalı bahçe kapısı. Arkada kafes panelli, aynı renkte pergola görülüyor.",
+    "en": "A white painted picket garden gate set between hedges at a villa entrance, with a matching white pergola with lattice panel behind it."
+  },
+  "seoFilename": "beyaz-citali-ahsap-bahce-kapisi-pergola",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "villa",
+      "bahçe girişi",
+      "dış mekan",
+      "taş döşeli yol"
+    ],
+    "finish": [
+      "beyaz boya"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.86
+}

@@ -1,0 +1,36 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 18.00.08 (2).webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Yatay Çıtalı Paravanlı Ahşap Çiçeklik",
+    "en": "Wooden Planter Box with Horizontal Slat Screen"
+  },
+  "alt": {
+    "tr": "Kaldırımda duran, arkasında yatay çıtalı ahşap paravan bulunan koyu kahverengi uzun ahşap çiçeklik sandığı",
+    "en": "Long dark brown wooden planter box on a paved sidewalk with a horizontal slatted wooden screen at the back"
+  },
+  "caption": {
+    "tr": "Yatay çıtalı paravanı olan, kaldırıma yerleştirilmiş uzun ahşap çiçeklik. Yanında aynı modelden bir çiçeklik daha görünüyor.",
+    "en": "A long wooden planter with a horizontal slat screen, placed on the sidewalk. A second planter of the same design is visible beside it."
+  },
+  "seoFilename": "yatay-citali-paravanli-ahsap-ciceklik",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "kaldırım",
+      "dış mekan",
+      "bina girişi"
+    ],
+    "finish": [
+      "koyu kahverengi vernik",
+      "ahşap koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

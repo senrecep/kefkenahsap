@@ -1,0 +1,33 @@
+{
+  "file": "WhatsApp-Image-2021-04-30-at-20.41.51.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Çim Zemin Üzerinde Deck Alt Konstrüksiyonu",
+    "en": "Deck Sub-Frame Laid on a Lawn"
+  },
+  "alt": {
+    "tr": "Çimlik zemine yan yana serilmiş ahşap taşıyıcı kirişler, kenarda çalışan bir usta ve arkada ağaç gövdesi",
+    "en": "Wooden joists laid in rows across a lawn, with a worker crouching at the side and a tree trunk behind"
+  },
+  "caption": {
+    "tr": "Deck zemininin ilk aşaması: kirişler çimin üzerine aralıklı sıralanmış, altlarına takozlar konmuş. Üzerine tahta çakılmadan önce seviye ve aralıklar bu aşamada ayarlanıyor.",
+    "en": "First stage of a deck floor: joists set out in spaced rows on the grass with small blocks beneath them. Levels and spacing are adjusted at this point, before the boards go on."
+  },
+  "seoFilename": "cim-zemin-deck-alt-konstruksiyon-kirisler",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "çim alan",
+      "açık hava"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,36 @@
+{
+  "file": "5c12ed49-546c-4151-84df-5faf42ec9fa0.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Restoran Salonunda Masif Ahşap Masalar ve Deri Sandalyeler",
+    "en": "Solid Wood Tables and Leather Chairs in a Restaurant Dining Room"
+  },
+  "alt": {
+    "tr": "Büyük camlı bir salonda açık renk ahşap masalar, kahverengi deri döşemeli sandalyeler ve koyu renk ahşap parke zemin",
+    "en": "Restaurant dining room with light wood tables, brown leather chairs and dark wood floor beside large glass doors"
+  },
+  "caption": {
+    "tr": "Bahçeye bakan salonda açık tonlu ahşap masalar, deri döşemeli sandalyeler ve duvar kenarındaki uzun bar masası. Tavanda gizli ışıklı kaset detaylar var.",
+    "en": "Light-toned wooden tables, leather-upholstered chairs and a long wall counter in a dining room facing the garden, with a coffered ceiling lit by a concealed light strip."
+  },
+  "seoFilename": "restoran-salonu-ahsap-masa-sandalye",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "restoran",
+      "salon",
+      "iç mekan"
+    ],
+    "finish": [
+      "vernikli",
+      "naturel ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

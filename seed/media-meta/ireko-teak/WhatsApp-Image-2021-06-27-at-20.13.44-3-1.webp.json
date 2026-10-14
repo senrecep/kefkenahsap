@@ -1,0 +1,37 @@
+{
+  "file": "WhatsApp-Image-2021-06-27-at-20.13.44-3-1.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Iroko Katlanır Bahçe Sandalyeleri",
+    "en": "Iroko Folding Garden Chairs"
+  },
+  "alt": {
+    "tr": "Güneş altında yan yana dizilmiş, çıtalı oturaklı ve kollu ahşap katlanır sandalyeler; sıcak kahverengi tonlarda cilalı yüzey",
+    "en": "Wooden folding chairs with slatted seats and armrests lined up in the sun, with a warm brown finished surface"
+  },
+  "caption": {
+    "tr": "Çıtalı oturağı ve yuvarlatılmış kolçaklarıyla katlanır ahşap sandalyeler; yağlı cilayla ahşabın damarları öne çıkmış.",
+    "en": "Folding wooden chairs with slatted seats and rounded armrests; the oiled finish brings out the grain of the wood."
+  },
+  "seoFilename": "iroko-katlanir-bahce-sandalyesi",
+  "tags": {
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "bahçe",
+      "açık hava"
+    ],
+    "finish": [
+      "vernik"
+    ],
+    "stage": [
+      "finished",
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

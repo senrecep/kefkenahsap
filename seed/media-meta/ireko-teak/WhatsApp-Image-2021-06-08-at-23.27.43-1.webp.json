@@ -1,0 +1,37 @@
+{
+  "file": "WhatsApp-Image-2021-06-08-at-23.27.43-1.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ahşap Çıtalı Pergola Tavanı ve Teras",
+    "en": "Timber Slat Pergola Ceiling and Terrace"
+  },
+  "alt": {
+    "tr": "Metal çerçeveli pergolanın altından görünen sık ahşap çıta tavan, ahşap teras zemini ve vadideki evlere bakan manzara",
+    "en": "Dense wooden slat ceiling of a metal-framed pergola above a timber deck terrace, overlooking houses in a valley"
+  },
+  "caption": {
+    "tr": "Metal taşıyıcılı pergolada tavan, yan yana dizilmiş ahşap çıtalarla kaplandı. Altındaki teras zemini de ahşap döşeme.",
+    "en": "The pergola has a metal frame and a ceiling of closely spaced wooden slats, with a timber deck floor below."
+  },
+  "seoFilename": "ahsap-citali-pergola-tavani-teras",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "pergola",
+      "teras",
+      "dış mekan",
+      "manzara"
+    ],
+    "finish": [
+      "çıta kaplama",
+      "ahşap deck"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

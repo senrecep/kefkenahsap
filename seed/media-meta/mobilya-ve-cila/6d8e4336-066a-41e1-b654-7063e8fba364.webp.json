@@ -1,0 +1,36 @@
+{
+  "file": "6d8e4336-066a-41e1-b654-7063e8fba364.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Antre İçin Minderli Beyaz Puf Sandık",
+    "en": "White Entryway Storage Bench with Upholstered Seat"
+  },
+  "alt": {
+    "tr": "Giriş holünde, beyaz dolabın yanında duran bej döşemeli oturma minderli beyaz puf, arkada ahşap görünümlü kapı",
+    "en": "White storage bench with a beige upholstered seat in an entryway beside a white cabinet, wood-look door behind"
+  },
+  "caption": {
+    "tr": "Giriş holüne ölçüyle yaptığımız, üstü döşemeli beyaz puf. Ayakkabı çıkarıp giymek için rahat bir oturak, içi de eşya koymaya uygun.",
+    "en": "A white bench with an upholstered top, made to fit an entryway. It gives a comfortable place to sit when putting on shoes, with storage space inside."
+  },
+  "seoFilename": "antre-minderli-beyaz-puf-sandik",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "giriş holü",
+      "antre",
+      "daire içi"
+    ],
+    "finish": [
+      "beyaz boya",
+      "kumaş döşeme"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

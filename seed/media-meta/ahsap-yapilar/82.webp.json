@@ -1,0 +1,38 @@
+{
+  "file": "82.webp",
+  "category": "ahsap-yapilar",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ahşap Ev Dış Mekan Merdiveni ve Balkon Korkuluğu",
+    "en": "Exterior Wooden Staircase and Balcony Railing"
+  },
+  "alt": {
+    "tr": "Taş duvarlı ahşap evin üst katına çıkan ahşap korkuluklu dış mekan merdiveni ve sundurması.",
+    "en": "Exterior wooden staircase with railings leading to the upper deck of a timber and stone house."
+  },
+  "caption": {
+    "tr": "Doğal taş ve ahşap karkasın birleştiği yapıda dış mekan merdiveni, taşıyıcı dikmeler ve üst kat balkon korkulukları.",
+    "en": "Exterior wooden staircase, structural posts, and upper floor balcony railings integrated with timber and stone facade."
+  },
+  "seoFilename": "ahsap-ev-dis-mekan-merdiveni-ve-balkon",
+  "tags": {
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "dış mekan",
+      "dağ evi",
+      "veranda"
+    ],
+    "finish": [
+      "ahşap koruyucu",
+      "vernikli"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

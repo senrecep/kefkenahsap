@@ -1,0 +1,37 @@
+{
+  "file": "7e4ef7eb-3568-4de8-b7f7-d49f8084d3dc.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Parlak Cilalı Ceviz Görünümlü TV Ünitesi",
+    "en": "High-Gloss Walnut-Look TV Unit"
+  },
+  "alt": {
+    "tr": "Atölyede duran parlak cilalı, ceviz tonlu ahşap TV ünitesi; iki kapak, ortada raf ve çekmece, eğik ayaklar",
+    "en": "Glossy walnut-toned wooden TV unit in a workshop with two doors, a center shelf and drawer, and splayed legs"
+  },
+  "caption": {
+    "tr": "Atölyede cilası tamamlanmış TV ünitesi. Yan yüzeyleri yuvarlatılmış, iki kapaklı, ortasında açık raf ve çekmece bulunan modelin üstü ayna gibi parlak vernikle kaplandı.",
+    "en": "A TV unit with its varnish finished, shot in the workshop. The model has rounded sides, two doors, an open center shelf and a drawer, and a mirror-like glossy top."
+  },
+  "seoFilename": "parlak-cilali-tv-unitesi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "atölye",
+      "salon",
+      "TV ünitesi"
+    ],
+    "finish": [
+      "parlak vernik",
+      "yüksek parlaklık cila",
+      "ceviz tonu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

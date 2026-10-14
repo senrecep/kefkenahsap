@@ -1,0 +1,33 @@
+{
+  "file": "740053_672565079454761_1091831598_o.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Havuz Kenarı Deck Alt Konstrüksiyonu",
+    "en": "Poolside Deck Substructure"
+  },
+  "alt": {
+    "tr": "Havuz kenarında çim zemin üzerine kurulmuş, yay biçimli ahşap deck alt iskeleti ve üzerinde duran metal profil",
+    "en": "Curved timber deck frame built over grass beside a swimming pool, with a metal profile lying across the joists"
+  },
+  "caption": {
+    "tr": "Havuz kenarında deck döşemesi öncesi hazırlanan alt iskelet. Kirişler yay şeklinde kesilmiş, tahta çıtalar su giderinin üzerinden geçiyor.",
+    "en": "Substructure prepared before laying deck boards beside a pool. The joists follow a curved edge and run over the drainage channel."
+  },
+  "seoFilename": "havuz-kenari-deck-alt-konstruksiyon",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "havuz kenarı",
+      "bahçe",
+      "açık hava"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

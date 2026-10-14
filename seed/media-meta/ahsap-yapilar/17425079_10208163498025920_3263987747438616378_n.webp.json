@@ -1,0 +1,37 @@
+{
+  "file": "17425079_10208163498025920_3263987747438616378_n.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Eğik Dikmeli Ahşap Çardak Çatısı",
+    "en": "Wooden Pergola Roof with Angled Braces"
+  },
+  "alt": {
+    "tr": "Alttan görünen ahşap çardak çatısı; kirişler, çapraz destekler ve tahta kaplama tavan, arkada kırmızı binalar ve ağaçlar",
+    "en": "Underside of a wooden pavilion roof with beams, diagonal braces and board ceiling, red buildings and trees behind"
+  },
+  "caption": {
+    "tr": "Bahçede kurulan ahşap çardağın çatı iskeleti: ana kirişler, eğik dikmeler ve altı tahta kaplı çatı.",
+    "en": "Roof frame of a wooden pavilion built in a garden: main beams, angled posts and a board-lined underside."
+  },
+  "seoFilename": "ahsap-cardak-cati-iskeleti",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "çardak",
+      "dış mekan"
+    ],
+    "finish": [
+      "vernikli",
+      "açık ton"
+    ],
+    "stage": [
+      "finished",
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.86
+}

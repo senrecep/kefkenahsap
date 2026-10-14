@@ -1,0 +1,35 @@
+{
+  "file": "img2-1.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe Girişi İçin Ahşap Çit Kapısı",
+    "en": "Wooden Picket Garden Gate"
+  },
+  "alt": {
+    "tr": "Yuvarlak başlı çıtalardan yapılmış açık renkli ahşap bahçe kapısı, iki yanında kalın direkler ve sarı menteşeler var",
+    "en": "Light wooden picket garden gate with rounded slats, thick side posts and brass-colored hinges beside shrubs and a garden wall"
+  },
+  "caption": {
+    "tr": "Yuvarlak uçlu çıtalardan yapılmış alçak bahçe kapısı. Kalın direkler arasına menteşeyle monte edildi, önünde taş döşeli bir giriş var.",
+    "en": "A low garden gate built from rounded-top pickets, hung with hinges between thick posts at a stone-paved garden entrance."
+  },
+  "seoFilename": "ahsap-bahce-kapisi-cit",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "giriş",
+      "ev önü"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

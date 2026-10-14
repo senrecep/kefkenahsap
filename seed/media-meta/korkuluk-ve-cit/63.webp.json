@@ -1,0 +1,35 @@
+{
+  "file": "63.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Çapraz Desenli Ahşap Bahçe Kapısı",
+    "en": "Wooden Garden Gate with Cross Pattern"
+  },
+  "alt": {
+    "tr": "Taş duvarlar arasında çapraz çıtalı açık renk ahşap bahçe kapısı, yanında bordo yapraklı bitkiler ve taş döşeli yol",
+    "en": "Light wooden garden gate with crossed slats between stone walls, burgundy-leaved plants and a cobblestone path beside it"
+  },
+  "caption": {
+    "tr": "Taş duvar arasına yaptığımız, çapraz çıtalı ahşap bahçe kapısı. Üst ve orta kuşaklar kapıya sağlam bir iskelet veriyor.",
+    "en": "A wooden garden gate with crossed slats, built between two stone walls. The top and middle rails give the frame its strength."
+  },
+  "seoFilename": "capraz-desenli-ahsap-bahce-kapisi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "taş duvar",
+      "giriş"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

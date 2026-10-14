@@ -1,0 +1,36 @@
+{
+  "file": "1525240_672564922788110_1661865919_n.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ahşap Paravanlı Bahçe Duşu",
+    "en": "Garden Shower with Wooden Screen"
+  },
+  "alt": {
+    "tr": "Yatay ahşap çıtalı bir paravanın önünde duran paslanmaz çelik bahçe duşu, yanında taş duvar var",
+    "en": "Stainless steel outdoor shower in front of a horizontal slatted wooden screen, with a stone wall beside it"
+  },
+  "caption": {
+    "tr": "Yatay çıtalı ahşap paravan, taş duvarın yanında paslanmaz çelik duş ünitesine fon oluşturuyor.",
+    "en": "A horizontal slatted wooden screen forms the backdrop for a stainless steel shower unit next to a stone wall."
+  },
+  "seoFilename": "ahsap-cita-paravan-bahce-dusu",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "duş alanı",
+      "taş duvar"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

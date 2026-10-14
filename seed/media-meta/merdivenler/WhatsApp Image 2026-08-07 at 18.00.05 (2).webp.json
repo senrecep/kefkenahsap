@@ -1,0 +1,35 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 18.00.05 (2).webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Taş Duvar Arasında Beyaz Çift Kanatlı Bahçe Kapısı",
+    "en": "White Double Picket Garden Gate Between Stone Walls"
+  },
+  "alt": {
+    "tr": "İki taş duvar arasında, uçları sivri çıtalardan yapılmış beyaz boyalı çift kanatlı bahçe kapısı ve zemine düşen gölgesi",
+    "en": "White painted double picket garden gate with pointed slats set between two stone walls, casting shadows on the paving"
+  },
+  "caption": {
+    "tr": "Taş duvarların arasına yerleştirdiğimiz beyaz boyalı, çapraz destekli çift kanatlı bahçe kapısı. Siyah sürgü ile kapanıyor.",
+    "en": "A white painted double-leaf garden gate with diagonal braces, fitted between stone walls and closed with a black latch."
+  },
+  "seoFilename": "tas-duvar-beyaz-cift-kanatli-bahce-kapisi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "giriş",
+      "taş duvar"
+    ],
+    "finish": [
+      "beyaz boya"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.93
+}

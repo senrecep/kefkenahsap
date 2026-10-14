@@ -1,0 +1,36 @@
+{
+  "file": "44.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Yatay Çıtalı Ahşap Deck Korkuluğu",
+    "en": "Horizontal Slat Wooden Deck Railing"
+  },
+  "alt": {
+    "tr": "Yamaca bakan ahşap deck teraşının köşeli, yatay çıtalı ahşap korkuluğu; arkada çıplak ağaçlar ve yamaçta evler görünüyor",
+    "en": "Angled wooden deck railing with horizontal slats on a terrace overlooking a hillside with bare trees and houses"
+  },
+  "caption": {
+    "tr": "Yamaca bakan ahşap deck teras için yaptığımız yatay çıtalı korkuluk. Küpeşte kalın tutuldu, köşelerde kalın direkler kullanıldı.",
+    "en": "A horizontal slat railing we built for a wooden deck terrace on a hillside. It has a thick handrail and sturdy posts at the corners."
+  },
+  "seoFilename": "yatay-citali-ahsap-deck-korkulugu",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "teras",
+      "deck",
+      "yamaç",
+      "dış mekan"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

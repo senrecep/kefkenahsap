@@ -1,0 +1,36 @@
+{
+  "file": "6c90680a-82f6-4633-bdaa-d09aabc72051.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Beyaz Boyalı Makyaj Masası ve Kapı",
+    "en": "White Painted Vanity Table and Door"
+  },
+  "alt": {
+    "tr": "Açık kapının ardında aynalı duvar önünde beyaz çekmeceli makyaj masası, puflu tabure ve gri perdeler",
+    "en": "White vanity table with drawers and cushioned stool in front of a mirrored wall, gray curtains, open white door"
+  },
+  "caption": {
+    "tr": "Beyaz mat boyalı, çekmeceli makyaj masası ve çerçeve kabartmalı iç kapı. Yanındaki tabure de aynı beyaz tonda.",
+    "en": "A white painted vanity table with drawers and a paneled interior door, with a matching cushioned stool beside it."
+  },
+  "seoFilename": "beyaz-boyali-makyaj-masasi-ve-kapi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "iç mekan",
+      "yatak odası",
+      "giyinme odası"
+    ],
+    "finish": [
+      "beyaz boya",
+      "mat"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

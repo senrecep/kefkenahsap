@@ -1,0 +1,37 @@
+{
+  "file": "48.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe Merdiveni ve Ahşap Korkuluk Uygulaması",
+    "en": "Garden Staircase and Wooden Railings"
+  },
+  "alt": {
+    "tr": "Kademeli bahçe merdiveni kenarında emprenyeli ahşap dikmeli korkuluklar ve ahşap istinat kaplaması.",
+    "en": "Pressure-treated wooden railings with vertical slats installed along an outdoor stepped garden staircase."
+  },
+  "caption": {
+    "tr": "Eğimli bahçe kotlarına uygun olarak hazırlanan emprenyeli çam merdiven ve set korkulukları.",
+    "en": "Pressure-treated pine railings custom-fitted along terraced garden levels and an outdoor wooden staircase."
+  },
+  "seoFilename": "ahsap-bahce-merdiven-korkulugu",
+  "tags": {
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "merdiven"
+    ],
+    "finish": [
+      "emprenye"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

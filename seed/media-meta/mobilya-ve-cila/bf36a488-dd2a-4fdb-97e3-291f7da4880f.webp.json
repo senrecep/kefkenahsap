@@ -1,0 +1,34 @@
+{
+  "file": "bf36a488-dd2a-4fdb-97e3-291f7da4880f.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Siyah Çerçeveli Füme Cam Kapı",
+    "en": "Smoked Glass Door with Black Frame"
+  },
+  "alt": {
+    "tr": "Gri sıvalı duvar ile kahverengi mermer tezgâh arasında siyah çerçeveli, füme camlı kapı",
+    "en": "Smoked glass door with a black frame between a grey plastered wall and a brown marble countertop"
+  },
+  "caption": {
+    "tr": "Lavabo alanının girişindeki siyah çerçeveli füme cam kapı. Çerçevenin malzemesi fotoğraftan anlaşılmıyor.",
+    "en": "A smoked glass door with a black frame at the entrance of a washroom area. The frame material is not clear from the photo."
+  },
+  "seoFilename": "siyah-cerceveli-fume-cam-kapi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "lavabo alanı",
+      "iç mekan"
+    ],
+    "finish": [
+      "siyah çerçeve"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.45
+}

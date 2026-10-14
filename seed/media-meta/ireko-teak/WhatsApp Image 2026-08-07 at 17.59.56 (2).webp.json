@@ -1,0 +1,34 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 17.59.56 (2).webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Şömineli Terasta Ahşap Deck Zemin",
+    "en": "Wooden Deck Flooring on a Terrace with Fireplace"
+  },
+  "alt": {
+    "tr": "Gri taş kaplı şöminenin önünde, iki yanda odunluk bulunan teras zemininde bal rengi ahşap deck tahtaları",
+    "en": "Honey-brown wooden deck boards on a terrace floor in front of a gray stone fireplace with log holders on both sides"
+  },
+  "caption": {
+    "tr": "Gri taş kaplı şöminenin önüne döşediğimiz dar tahtalı ahşap deck. İki yanda tel kafesli odunluklar yer alıyor.",
+    "en": "Narrow-board wooden decking laid in front of a gray stone fireplace, with mesh log holders on both sides."
+  },
+  "seoFilename": "somineli-teras-ahsap-deck-zemin",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "teras",
+      "açık alan",
+      "şömine",
+      "deck"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

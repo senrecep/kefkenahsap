@@ -1,0 +1,38 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 18.00.11.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Iroko Deck Zemin ve Ahşap Dolap Kapağı",
+    "en": "Iroko Decking and Timber Cabinet Door"
+  },
+  "alt": {
+    "tr": "Islak iroko deck döşemenin üzerinde, taş ızgara tezgâhının altında dikey tahtalı, paslanmaz menteşeli ahşap dolap kapağı",
+    "en": "Wooden cabinet door with vertical slats and steel hinges under a stone grill counter, above wet iroko decking"
+  },
+  "caption": {
+    "tr": "Taş ızgara tezgâhının altındaki dolap kapağı, deck zeminle aynı ahşaptan yapıldı. Tahtalar dikey çakıldı, menteşe ve sürgü paslanmaz çelik.",
+    "en": "The cabinet door under the stone grill counter is made from the same wood as the decking. The boards run vertically, with steel hinges and a latch."
+  },
+  "seoFilename": "iroko-deck-zemin-ahsap-dolap-kapagi",
+  "tags": {
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "bahçe",
+      "teras",
+      "ızgara"
+    ],
+    "finish": [
+      "doğal ahşap tonu"
+    ],
+    "stage": [
+      "finished",
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.82
+}

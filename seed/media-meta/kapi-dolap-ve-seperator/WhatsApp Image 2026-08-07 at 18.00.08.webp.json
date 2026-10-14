@@ -1,0 +1,34 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 18.00.08.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Taş Duvarlı Bahçe Duşu: Ahşap Zemin ve Kapılar",
+    "en": "Garden Shower with Stone Walls, Wooden Floor and Doors"
+  },
+  "alt": {
+    "tr": "Taş duvarlı açık hava duşunda ahşap çıtalı zemin, iki yanda açık duran koyu renkli ahşap kapı kanatları, önde çimen",
+    "en": "Outdoor stone-walled shower with a slatted wooden floor, dark wooden door leaves open on both sides, lawn in front"
+  },
+  "caption": {
+    "tr": "Bahçedeki taş duvarlı duş köşesi için yaptığımız çıtalı ahşap zemin ve ahşap kapı kanatları.",
+    "en": "A slatted wooden floor and wooden door leaves made for a stone-walled shower corner in the garden."
+  },
+  "seoFilename": "bahce-dusu-ahsap-zemin-ve-kapi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "açık hava",
+      "duş",
+      "taş duvar"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.6
+}

@@ -1,0 +1,36 @@
+{
+  "file": "98.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Dış Cephe Duvarına Yaslı Çift Kapaklı Ahşap Depolama Dolabı",
+    "en": "Double-Door Wooden Storage Cabinet Against an Exterior Wall"
+  },
+  "alt": {
+    "tr": "Bahçede krem rengi duvarın önünde, yatay çıtalı, çift kapaklı, koyu kahverengi ahşap dış mekan dolabı",
+    "en": "Dark brown outdoor wooden cabinet with horizontal slats and double doors in front of a cream-colored garden wall"
+  },
+  "caption": {
+    "tr": "Yatay çıtalı iki kapaklı dış mekan dolabı; metal menteşe ve sürgülü mandalla kapanıyor, ahşap koyu cevizimsi bir koruyucu ile boyanmış.",
+    "en": "Outdoor cabinet with two doors and horizontal slats, closed with metal hinges and a sliding latch, finished in a dark walnut-toned wood stain."
+  },
+  "seoFilename": "dis-mekan-ahsap-dolap-cift-kapakli",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "konut"
+    ],
+    "finish": [
+      "koyu vernik",
+      "koruyucu cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.88
+}

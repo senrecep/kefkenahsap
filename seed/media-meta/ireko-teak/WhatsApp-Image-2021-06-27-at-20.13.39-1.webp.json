@@ -1,0 +1,38 @@
+{
+  "file": "WhatsApp-Image-2021-06-27-at-20.13.39-1.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede Zemine Oturan Ahşap Deck Platform",
+    "en": "Freestanding Wooden Deck Platform in the Garden"
+  },
+  "alt": {
+    "tr": "Çimlerin üzerinde, bir ağacın yanında duran kızıl kahverengi ahşap deck platform; arkada yeşil çit ve çiçek açmış manolya",
+    "en": "Reddish-brown wooden deck platform on a lawn beside a tree, with a green hedge and a blooming magnolia behind"
+  },
+  "caption": {
+    "tr": "Bahçedeki çimlerin üzerine kurduğumuz, sıcak kızıl tonlu ahşap deck platform. Arkada koyu yeşil çit ve çiçek açmış manolya var.",
+    "en": "A wooden deck platform we built on the garden lawn, in a warm reddish tone, with a dark green hedge and a blooming magnolia behind it."
+  },
+  "seoFilename": "bahce-ahsap-deck-platform-cim-zemin",
+  "tags": {
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "bahçe",
+      "çim alan",
+      "dış mekan"
+    ],
+    "finish": [
+      "doğal ton",
+      "yağlı kaplama"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

@@ -1,0 +1,37 @@
+{
+  "file": "IMG_20180131_125731.jpg1_.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Cam kapı önünde yağlanmış ahşap deck zemin",
+    "en": "Oiled wooden deck in front of a glass door"
+  },
+  "alt": {
+    "tr": "Camlı kapının önünde, bal ve kızıl kahve tonlarında damarları belirgin dar tahtalı ahşap deck zemin; solda yeşil yapraklar",
+    "en": "Narrow-board wooden deck in honey and reddish-brown tones with visible grain in front of a glass door, green leaves at left"
+  },
+  "caption": {
+    "tr": "Giriş kapısının önüne döşenmiş dar tahtalı ahşap deck. Yüzeydeki damar deseni ve sıcak renk tonu ışıkta net görünüyor.",
+    "en": "A narrow-board wooden deck laid at the entrance. The grain pattern and warm colour tones show clearly in the light."
+  },
+  "seoFilename": "cam-kapi-onu-ahsap-deck-zemin",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "teras",
+      "bahçe girişi",
+      "dış mekan"
+    ],
+    "finish": [
+      "yağlı bitiş",
+      "doğal ton"
+    ],
+    "stage": [
+      "finished",
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.82
+}

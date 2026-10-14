@@ -1,0 +1,38 @@
+{
+  "file": "12794668_1111882005523064_8626405051701727182_o-2.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Koyu Cilalı Ahşap Pergola Kirişleri",
+    "en": "Dark Stained Wooden Pergola Beams"
+  },
+  "alt": {
+    "tr": "Koyu kahverengi cilalı ahşap pergola, altta üst üste sıralanmış kirişler, tuğla ayak ve mavi gökyüzü",
+    "en": "Dark brown stained wooden pergola with layered beams, a brick pillar and blue sky"
+  },
+  "caption": {
+    "tr": "Bahçede ahşap taşıyıcı kirişler üzerine oturan, koyu tonda cilalanmış pergola. Kirişlerin birleşim detayı yakından görülüyor.",
+    "en": "A pergola finished in a dark stain, with slats resting on timber support beams. The beam junction is visible up close."
+  },
+  "seoFilename": "koyu-cilali-ahsap-pergola-kirisleri",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "pergola",
+      "dış mekan",
+      "müstakil ev"
+    ],
+    "finish": [
+      "koyu kahve cila",
+      "vernik"
+    ],
+    "stage": [
+      "finished",
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

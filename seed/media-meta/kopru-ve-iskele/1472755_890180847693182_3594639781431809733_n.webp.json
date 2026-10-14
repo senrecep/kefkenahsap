@@ -1,0 +1,36 @@
+{
+  "file": "1472755_890180847693182_3594639781431809733_n.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Göl Kıyısında Ahşap Yürüyüş Köprüsü",
+    "en": "Wooden Walkway Bridge on a Lakeshore"
+  },
+  "alt": {
+    "tr": "Sazlık ve toprak zemin arasından göle doğru uzanan, üç sıra korkuluklu açık renk ahşap yürüyüş köprüsü",
+    "en": "Light wooden walkway with three-rail railings running between reeds and bare soil toward a lake"
+  },
+  "caption": {
+    "tr": "Göl kenarında, taş duvarlı bir alanın yanından geçen korkuluklu ahşap köprü. Zemin ve korkuluk tahtaları yeşilimsi tonda, emprenye görünümünde.",
+    "en": "A railed wooden bridge beside a stone-walled area on a lakeshore. The deck and railing boards have a greenish, pressure-treated look."
+  },
+  "seoFilename": "gol-kenari-ahsap-yuruyus-koprusu",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "göl kıyısı",
+      "sazlık",
+      "açık hava",
+      "yürüyüş yolu"
+    ],
+    "finish": [
+      "emprenyeli görünüm"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,35 @@
+{
+  "file": "separator2.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Beyaz Ahşap Kafes Seperatör",
+    "en": "White Wooden Lattice Screen Partition"
+  },
+  "alt": {
+    "tr": "Veranda zeminine yerleştirilmiş beyaz boyalı çapraz çıtalı ahşap kafes seperatör.",
+    "en": "White wooden lattice screen divider standing on a patio floor."
+  },
+  "caption": {
+    "tr": "Teras ve bahçe alanları için tasarlanan beyaz boyalı ahşap kafes seperatör. Dış mekânda mahremiyet sağlarken ferah bir görünüm sunar.",
+    "en": "White painted wooden lattice screen partition designed for patio and garden areas, providing privacy while keeping an open feel."
+  },
+  "seoFilename": "beyaz-ahsap-kafes-seperator",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "teras",
+      "veranda",
+      "bahçe"
+    ],
+    "finish": [
+      "beyaz boya"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.98
+}

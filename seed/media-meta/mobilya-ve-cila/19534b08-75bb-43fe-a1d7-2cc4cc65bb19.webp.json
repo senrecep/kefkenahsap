@@ -1,0 +1,36 @@
+{
+  "file": "19534b08-75bb-43fe-a1d7-2cc4cc65bb19.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ofis Çalışma Alanı ve Ahşap Kaplamalı Bölme Panoları",
+    "en": "Office Workspace with Wood-Veneer Partition Panels"
+  },
+  "alt": {
+    "tr": "Siyah çerçeveli cam bölmenin ardında açık ahşap paneller, beyaz masalar, gri sandalyeler ve kapitone oturma bankı olan ofis",
+    "en": "Office seen through a black-framed glass partition, with light wood panels, white desks, grey chairs and a tufted bench"
+  },
+  "caption": {
+    "tr": "Siyah metal çerçeveli cam bölmeyle ayrılmış ofis alanı. Çalışma masalarının yan panellerinde açık renk ahşap kaplama, arkada raf ünitesi ve oturma bankı var.",
+    "en": "An office area divided by a black metal-framed glass partition. The desk side panels have a light wood finish, with a shelving unit and a bench seat behind."
+  },
+  "seoFilename": "ofis-calisma-alani-ahsap-panel-cam-bolme",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "ofis",
+      "iç mekan",
+      "çalışma alanı"
+    ],
+    "finish": [
+      "açık ahşap kaplama",
+      "mat"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.62
+}

@@ -1,0 +1,36 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 18.00.40.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe İçin Ahşap Asma Çardağı ve Bağ İskelesi",
+    "en": "Wooden Vineyard Trellis and Vine Pergola Frame"
+  },
+  "alt": {
+    "tr": "Bahçede sıra halinde dikilmiş yuvarlak ahşap direkler ve gergi tellerinden oluşan asma iskeleti.",
+    "en": "Row of round treated timber posts and support wires for climbing grapevines in an open garden."
+  },
+  "caption": {
+    "tr": "Bahçe ve bağ alanları için yuvarlak emprenyeli ahşap direkler ve gergi telleriyle kurulan uzun asma destek sistemi.",
+    "en": "Long vine support trellis constructed with pressure-treated round timber posts and wire lines for garden vines."
+  },
+  "seoFilename": "ahsap-bag-asma-cardagi-iskelesi",
+  "tags": {
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe",
+      "bağ"
+    ],
+    "finish": [
+      "emprenye"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.85
+}

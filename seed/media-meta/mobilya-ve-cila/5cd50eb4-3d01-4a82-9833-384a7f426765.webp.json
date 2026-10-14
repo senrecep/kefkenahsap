@@ -1,0 +1,37 @@
+{
+  "file": "5cd50eb4-3d01-4a82-9833-384a7f426765.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Oyma Taçlı Klasik Vitrinli Büfe",
+    "en": "Classic Display Cabinet with Carved Crest"
+  },
+  "alt": {
+    "tr": "Koyu cilalı, üstü oyma taçlı klasik büfe; üst bölümde camlı kapılar, alt dolap kapaklarında çiçek motifli kakma var",
+    "en": "Dark-stained classic cabinet with a carved crest, glass upper doors and floral inlay panels on the lower doors"
+  },
+  "caption": {
+    "tr": "Koyu cilalı klasik büfe ve vitrin takımı. Üstte oyma taç, alt kapaklarda çiçek kakmaları, köşelerde oymalı sütunlar görülüyor.",
+    "en": "A classic dark-varnished buffet and display cabinet with a carved crest, floral inlays on the lower doors and carved corner columns."
+  },
+  "seoFilename": "oyma-tacli-klasik-vitrinli-bufe",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "salon",
+      "oturma odası",
+      "iç mekan"
+    ],
+    "finish": [
+      "koyu cila",
+      "kakma",
+      "oyma"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,37 @@
+{
+  "file": "34.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Köşe Küvete Ahşap Pervaz Kaplaması",
+    "en": "Wood Panel Cladding on a Corner Bathtub"
+  },
+  "alt": {
+    "tr": "Bej fayanslı banyoda beyaz köşe jakuzi küvetin ön yüzü dikey ahşap çıtalarla kaplanmış",
+    "en": "Corner whirlpool bathtub in a beige-tiled bathroom with its front clad in vertical wooden slats"
+  },
+  "caption": {
+    "tr": "Köşe küvetin kavisli ön yüzü, dikey dizilmiş ahşap çıtalarla kaplandı. Çıtalar kavisi takip ediyor, beyaz küvetle fayansların arasında sıcak bir geçiş sağlıyor.",
+    "en": "The curved front of this corner tub is clad in vertical wooden slats that follow the curve, adding a warm contrast to the white tub and beige tiles."
+  },
+  "seoFilename": "kose-kuvet-ahsap-kaplama",
+  "tags": {
+    "wood": [
+      "teak"
+    ],
+    "setting": [
+      "banyo",
+      "iç mekan",
+      "küvet"
+    ],
+    "finish": [
+      "vernikli"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.8
+}

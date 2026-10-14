@@ -1,0 +1,36 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 18.00.08 (4).webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Paravanlı Ahşap Çiçeklik",
+    "en": "Wooden Planter Box with Slatted Privacy Screen"
+  },
+  "alt": {
+    "tr": "Kaldırımda duran, arkasında yatay çıtalı yüksek ahşap panel bulunan koyu cilalı dikdörtgen ahşap çiçeklik; toprağı henüz boş",
+    "en": "Dark-stained rectangular wooden planter on a paved sidewalk with a tall horizontal-slat wooden screen, soil not yet planted"
+  },
+  "caption": {
+    "tr": "Kaldırım önüne yapılan uzun çiçeklik. Arkasındaki yatay çıtalı panel hem sınır oluşturuyor hem de dışarıdan gelen bakışları kesiyor.",
+    "en": "A long planter box built for a sidewalk frontage. The horizontal slat panel behind it works as a divider and screens the view from outside."
+  },
+  "seoFilename": "citali-paravanli-ahsap-ciceklik",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "kaldırım",
+      "bina önü",
+      "dış mekan"
+    ],
+    "finish": [
+      "koyu ceviz tonu vernik",
+      "ahşap koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

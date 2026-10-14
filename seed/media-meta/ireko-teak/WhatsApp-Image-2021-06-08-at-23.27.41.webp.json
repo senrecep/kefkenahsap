@@ -1,0 +1,37 @@
+{
+  "file": "WhatsApp-Image-2021-06-08-at-23.27.41.webp",
+  "category": "ireko-teak",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Dış Mekan Mutfak Arkası İroko Çıta Duvar ve Tavan Kaplaması",
+    "en": "Outdoor Kitchen Iroko Slat Wall and Ceiling Cladding"
+  },
+  "alt": {
+    "tr": "Bahçe mutfağında dikey ahşap çıtalı duvar ve tavan kaplaması, paslanmaz barbekü tezgahı.",
+    "en": "Outdoor kitchen featuring vertical wood slat wall and ceiling cladding behind a stainless grill counter."
+  },
+  "caption": {
+    "tr": "Açık hava mutfağı ve barbekü alanı arkasında dikey iroko çıtalarla duvar ve tavan kaplaması uygulaması.",
+    "en": "Custom iroko wood batten wall and ceiling cladding installed behind an outdoor kitchen and barbecue station."
+  },
+  "seoFilename": "bahce-mutfagi-iroko-cita-duvar-tavan-kaplama",
+  "tags": {
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "bahce",
+      "veranda",
+      "teras"
+    ],
+    "finish": [
+      "yag"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

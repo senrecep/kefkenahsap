@@ -1,0 +1,35 @@
+{
+  "file": "23-1.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Havuz Kenarı Ahşap Deck Zemin",
+    "en": "Wooden Pool Deck Flooring"
+  },
+  "alt": {
+    "tr": "Mozaik kaplı havuzun kenarında kızıl kahve tonlu, dar tahtalardan döşenmiş ahşap deck zemin ve arkasında bambu bitkileri",
+    "en": "Reddish-brown narrow-plank wooden deck beside a mosaic-tiled pool, with bamboo plants along the back edge"
+  },
+  "caption": {
+    "tr": "Havuz çevresine döşenen deck zemin. Dar tahtalar boyuna sıralanmış, havuz kenarına kadar uzanıyor.",
+    "en": "A deck laid around a pool. Narrow boards run lengthwise and extend right up to the pool edge."
+  },
+  "seoFilename": "havuz-kenari-ahsap-deck-zemin",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "havuz kenarı",
+      "bahçe",
+      "dış mekan"
+    ],
+    "finish": [
+      "yağlı doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

@@ -1,0 +1,37 @@
+{
+  "file": "61683910_2495298413848076_2085826626506981376_n.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede Koyu Tonlu Ahşap Pergola",
+    "en": "Dark-Stained Wooden Pergola in a Garden"
+  },
+  "alt": {
+    "tr": "Bahçe yolunun üzerinde kahverengi boyalı ahşap pergola, kirişlerin ardında çim alan, çiçek tarhı ve ağaçlar",
+    "en": "Brown-stained wooden pergola over a garden path, with a lawn, flower bed and trees visible beyond the beams"
+  },
+  "caption": {
+    "tr": "Bahçe girişindeki yürüme yolunun üzerine kurulmuş, koyu vernikli ahşap pergola. Açık kirişlerden gün ışığı süzülüyor.",
+    "en": "A dark-varnished wooden pergola built over the garden walkway. Daylight filters through the open beams."
+  },
+  "seoFilename": "bahce-ahsap-pergola-koyu-vernik",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "pergola",
+      "yürüme yolu",
+      "dış mekan"
+    ],
+    "finish": [
+      "koyu vernik",
+      "kahverengi koruyucu boya"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

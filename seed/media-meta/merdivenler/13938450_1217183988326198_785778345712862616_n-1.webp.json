@@ -1,0 +1,35 @@
+{
+  "file": "13938450_1217183988326198_785778345712862616_n-1.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Beyaz Boyalı Ahşap Dış Merdiven",
+    "en": "White Painted Wooden Outdoor Staircase"
+  },
+  "alt": {
+    "tr": "Bahçede çimenlik alanın yanında yükselen, beyaz boyalı korkuluklu ahşap dış merdiven ve yanındaki beyaz ahşap depo",
+    "en": "White painted wooden outdoor staircase with railings rising beside a lawn, next to a white wooden storage shed"
+  },
+  "caption": {
+    "tr": "Bahçeden üst kata çıkan beyaz boyalı ahşap merdiven. Yanındaki depo ve çitle aynı beyaz tonda yapılmış.",
+    "en": "A white painted wooden staircase leading from the garden up to the upper level, finished in the same white as the shed and fence beside it."
+  },
+  "seoFilename": "beyaz-boyali-ahsap-dis-merdiven-bahce",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "villa"
+    ],
+    "finish": [
+      "beyaz boya"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

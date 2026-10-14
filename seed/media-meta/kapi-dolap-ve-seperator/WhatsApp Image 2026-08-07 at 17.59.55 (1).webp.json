@@ -1,0 +1,38 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 17.59.55 (1).webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ferforje Detaylı Ahşap Bahçe Kapısı",
+    "en": "Wooden Garden Gate with Wrought Iron Frame"
+  },
+  "alt": {
+    "tr": "Siyah ferforje metal çerçeve içine yatay ahşap panellerle yapılmış iki kanatlı bahçe giriş kapısı.",
+    "en": "Double-leaf garden entrance gate with horizontal wood panels set in a black wrought iron frame."
+  },
+  "caption": {
+    "tr": "Siyah ferforje iskelet üzerine yatay ahşap çıtalarla tamamlanan çift kanatlı bahçe kapısı. Taş duvar ve posta kutusuna uyumlu şekilde monte edildi.",
+    "en": "Double-leaf garden gate built with horizontal wooden slats within a black wrought iron frame, installed beside a stone entry pillar."
+  },
+  "seoFilename": "ferforje-demir-ahsap-bahce-kapisi",
+  "tags": {
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "villa"
+    ],
+    "finish": [
+      "ahşap koruyucu",
+      "vernik"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

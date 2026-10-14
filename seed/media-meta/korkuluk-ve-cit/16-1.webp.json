@@ -1,0 +1,37 @@
+{
+  "file": "16-1.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Çift Kanatlı Ahşap Çiftlik Kapısı ve Çit",
+    "en": "Wooden Farm Gate and Post-and-Rail Fence"
+  },
+  "alt": {
+    "tr": "Çim alan girişinde ahşap dikmeler ve çapraz destekli çift kanatlı ahşap çiftlik kapısı.",
+    "en": "Wooden double farm gate with diagonal bracing installed on a grassy field."
+  },
+  "caption": {
+    "tr": "Açık alan sınırlandırması için emprenyeli ahşaptan üretilen çift kanatlı çiftlik kapısı ve devamındaki ahşap çit hattı.",
+    "en": "Treated wooden double farm gate and continuous wooden fencing installed for open field perimeter."
+  },
+  "seoFilename": "cift-kanatli-ahsap-ciftlik-kapisi-ve-cit",
+  "tags": {
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe",
+      "çiftlik",
+      "açık alan"
+    ],
+    "finish": [
+      "emprenye"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

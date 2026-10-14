@@ -1,0 +1,38 @@
+{
+  "file": "WhatsApp-Image-2021-04-30-at-20.41.45.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Çam Ağaçları Arasında Antrasit Ahşap Çiçeklik",
+    "en": "Anthracite Wooden Planter Among Pine Trees"
+  },
+  "alt": {
+    "tr": "Çam ağaçlı bir bahçede, taş zeminin kenarında duran koyu gri boyalı uzun ahşap çiçeklik; içinde yeni sürgün veren çalılar var",
+    "en": "Long dark gray painted wooden planter on a stone patio in a pine garden, with shrubs sprouting new leaves"
+  },
+  "caption": {
+    "tr": "Koyu gri boyalı, yatay çıtalı uzun çiçeklik. Taş zeminin kenarına yerleştirilmiş, arkasında çimenlik ve çam ağaçları var.",
+    "en": "A long planter in dark gray paint with horizontal slats, set at the edge of a stone patio with a lawn and pine trees behind it."
+  },
+  "seoFilename": "antrasit-ahsap-ciceklik-bahce",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras",
+      "çam ormanı",
+      "açık hava"
+    ],
+    "finish": [
+      "boyalı",
+      "koyu gri",
+      "antrasit"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

@@ -1,0 +1,37 @@
+{
+  "file": "img14.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Nehir Kenarında Ahşap Yürüyüş Yolu",
+    "en": "Wooden Boardwalk Along the River"
+  },
+  "alt": {
+    "tr": "Nehir kıyısı boyunca uzanan, iki yanında ahşap korkuluk bulunan yüksek ahşap yürüyüş platformu; solda taş duvar var",
+    "en": "Raised wooden boardwalk with railings running along a riverbank, with a stone wall on the left"
+  },
+  "caption": {
+    "tr": "Dere kenarında, kazıklar üzerine kurulmuş ahşap yürüyüş yolu. Korkulukları çift kat yatay çıtalarla yapılmış, yanında taş duvar örülmüş.",
+    "en": "A wooden walkway built on posts beside a river, with double horizontal rail guardrails and a stone retaining wall alongside."
+  },
+  "seoFilename": "nehir-kenari-ahsap-yuruyus-yolu-korkuluk",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "nehir kenarı",
+      "yürüyüş yolu",
+      "dış mekan",
+      "köprü ve iskele"
+    ],
+    "finish": [
+      "doğal ahşap",
+      "korkuluk"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.82
+}

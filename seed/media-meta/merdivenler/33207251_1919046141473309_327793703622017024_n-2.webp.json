@@ -1,0 +1,35 @@
+{
+  "file": "33207251_1919046141473309_327793703622017024_n-2.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe Çıkışı İçin Çapraz Korkuluklu Ahşap Merdiven",
+    "en": "Outdoor Wooden Staircase with Cross-Braced Railing"
+  },
+  "alt": {
+    "tr": "Bahçeden üst kata çıkan açık renkli ahşap merdiven, çapraz çıtalı korkuluk ve altında kapaklı depo bölmesi",
+    "en": "Light wooden garden staircase with cross-braced railing and a small storage space with doors beneath it"
+  },
+  "caption": {
+    "tr": "Villa bahçesinde yapılan ahşap dış merdiven. Korkuluk çapraz çıtalarla örüldü, merdivenin altındaki boşluk kapaklı depo olarak değerlendirildi.",
+    "en": "A wooden exterior staircase built in a villa garden. The railing is made of crossed slats, and the space under the stairs became a storage cupboard with doors."
+  },
+  "seoFilename": "capraz-korkuluklu-ahsap-dis-merdiven",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "villa"
+    ],
+    "finish": [
+      "doğal ahşap"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

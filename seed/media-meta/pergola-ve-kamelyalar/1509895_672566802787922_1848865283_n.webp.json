@@ -1,0 +1,37 @@
+{
+  "file": "1509895_672566802787922_1848865283_n.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe Yolunda Ahşap Pergola",
+    "en": "Wooden Pergola over a Garden Path"
+  },
+  "alt": {
+    "tr": "Taş döşeli bahçe yolunun üzerinde, yeşilimsi emprenyeli ahşaptan yapılmış, yan korkuluklu ve kirişli pergola",
+    "en": "Pergola of green-tinted pressure-treated timber with side rails and cross beams over a stone-paved garden path"
+  },
+  "caption": {
+    "tr": "Taş döşeli bahçe yolunu çevreleyen, yan korkuluklu ve üstü kirişli ahşap pergola. Çevresinde sarkan söğüt dalları, bahçe lambaları ve alçak bir ahşap çit görülüyor.",
+    "en": "A wooden pergola with side rails and an open beam roof, framing a stone-paved garden path. Weeping willow branches, garden lamps and a low wooden fence surround it."
+  },
+  "seoFilename": "bahce-yolu-ahsap-pergola",
+  "tags": {
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe",
+      "bahçe yolu",
+      "dış mekan"
+    ],
+    "finish": [
+      "emprenyeli"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

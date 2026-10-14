@@ -1,0 +1,36 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 18.00.37.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe Girişinde Beyaz Kafesli Pergola Kapı",
+    "en": "White Lattice Pergola Gateway at a Garden Entrance"
+  },
+  "alt": {
+    "tr": "Taş kolonlar üzerinde beyaz kafes yan panelli ahşap pergola, yanında beyaz bahçe kapısı ve taş döşeli giriş yolu",
+    "en": "White wooden pergola with lattice side panels on stone pillars, next to a white garden gate and a paved entry path"
+  },
+  "caption": {
+    "tr": "Site bahçesinin girişine yapılan beyaz boyalı pergola. İki yanda kafes paneller, yanında küçük bir bahçe kapısı var.",
+    "en": "A white-painted pergola built at the entrance of a residential garden, with lattice panels on both sides and a small garden gate beside it."
+  },
+  "seoFilename": "bahce-girisi-beyaz-kafesli-pergola",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "site girişi",
+      "villa bahçesi",
+      "dış mekan"
+    ],
+    "finish": [
+      "beyaz boya"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

@@ -1,0 +1,38 @@
+{
+  "file": "DSC_0286.webp",
+  "category": "boya-tamir-ve-bakim",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Veranda Direklerinin Yenilenmesi",
+    "en": "Replacing the Veranda Posts"
+  },
+  "alt": {
+    "tr": "Evin verandasında koyu boyalı eski yuvarlak direkler yanında yeni, boyasız açık renkli ahşap kiriş ve geçici destek tahtaları",
+    "en": "Veranda with old dark-stained round posts beside a new unfinished light timber beam and temporary support boards"
+  },
+  "caption": {
+    "tr": "Veranda çatısını taşıyan eski direklerin yanında yeni kiriş yerine konmuş, geçici tahtalarla desteklenmiş. Yeni ahşap henüz boyanmadı.",
+    "en": "A new beam has been set in place next to the old veranda posts and held up by temporary boards. The new timber is not yet stained."
+  },
+  "seoFilename": "veranda-direk-kiris-yenileme",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "veranda",
+      "bahçe",
+      "ev",
+      "dış mekan"
+    ],
+    "finish": [
+      "boyasız",
+      "koyu kahverengi koruyucu boya"
+    ],
+    "stage": [
+      "process",
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.72
+}

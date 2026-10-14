@@ -1,0 +1,38 @@
+{
+  "file": "1483185_672566806121255_300404056_n.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ağacı Çevreleyen Ahşap Tavanlı Kapalı Teras",
+    "en": "Covered Wooden Terrace Built Around a Living Tree"
+  },
+  "alt": {
+    "tr": "Ortasından canlı bir ağaç gövdesi geçen ahşap tavanlı teras, demir şamdanlar ve sarı perdeler, dışarıda bahçe",
+    "en": "Wooden-ceiling terrace with a tree trunk passing through it, wrought-iron candle lamps and yellow curtains, garden outside"
+  },
+  "caption": {
+    "tr": "Mevcut ağaç kesilmeden tavandan geçirilmiş, çıtalı ahşap kaplı tavan ve demir avizelerle tamamlanmış kapalı teras.",
+    "en": "A covered terrace where the existing tree was left in place and passes through the ceiling, finished with a slatted wood ceiling and wrought-iron chandeliers."
+  },
+  "seoFilename": "agac-govdeli-ahsap-tavanli-kapali-teras",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "teras",
+      "restoran bahçesi",
+      "kapalı alan",
+      "ağaç gövdesi"
+    ],
+    "finish": [
+      "çıtalı tavan kaplaması",
+      "demir avize",
+      "yeşilimsi ahşap tonu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.72
+}

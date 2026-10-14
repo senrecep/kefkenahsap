@@ -1,0 +1,36 @@
+{
+  "file": "WhatsApp-Image-2021-06-27-at-20.13.46-3.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Beyaz Karo Arasında Iroko Deck Zemin",
+    "en": "Iroko Deck Floor Set Between White Tiles"
+  },
+  "alt": {
+    "tr": "Açık renk karoların arasına yerleştirilmiş, çerçeveli ve dar aralıklı bal rengi ahşap deck tahtaları",
+    "en": "Honey-colored wooden deck boards with narrow gaps and a border, set into light-colored floor tiles"
+  },
+  "caption": {
+    "tr": "Beyaz karo zeminin içine oturtulan iroko deck. Tahtalar dar derzle döşendi, kenarları düz bir çerçeve tahtayla toparlandı.",
+    "en": "An iroko deck inlaid into a white tiled floor. The boards are laid with narrow gaps and edged with a straight border board."
+  },
+  "seoFilename": "iroko-deck-zemin-karo-arasi",
+  "tags": {
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "teras",
+      "dış mekan"
+    ],
+    "finish": [
+      "doğal yağ"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

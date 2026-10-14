@@ -1,0 +1,36 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 18.00.10 (3).webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede Koyu Cilalı Ahşap Depo",
+    "en": "Dark-Stained Wooden Storage Shed in a Garden"
+  },
+  "alt": {
+    "tr": "Çam ağaçlarının yanında, yeni serilmiş çimenin kenarında duran koyu kahverengi yatay kaplamalı tek eğimli ahşap depo",
+    "en": "Dark brown wooden shed with horizontal cladding and a single-slope roof beside pine trees and freshly laid turf"
+  },
+  "caption": {
+    "tr": "Bahçeye yapılan, yatay tahta kaplamalı ve tek eğimli çatılı ahşap depo. Koyu kahverengi koruyucu ile boyanmış, beton temel üzerine oturtulmuş; ön yüzde çift kanatlı kapı var.",
+    "en": "A garden storage shed with horizontal board cladding and a single-slope roof, finished in a dark brown stain and set on a concrete base. The front has a double-leaf door."
+  },
+  "seoFilename": "bahce-ahsap-depo-koyu-cilali",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "açık hava",
+      "çam ağaçları"
+    ],
+    "finish": [
+      "koyu kahverengi",
+      "koruyucu cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.86
+}

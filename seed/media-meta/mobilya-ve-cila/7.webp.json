@@ -1,0 +1,36 @@
+{
+  "file": "7.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Beyaz Boyalı Panelli Gömme Dolap",
+    "en": "White Painted Built-in Wardrobe with Panel Doors"
+  },
+  "alt": {
+    "tr": "Duvara gömülü, dört kapaklı beyaz boyalı çerçeveli panel dolap; koyu yeşil taş zemin ve bej duvar yanında",
+    "en": "Built-in white painted four-door wardrobe with framed panels beside a beige wall and dark green stone floor"
+  },
+  "caption": {
+    "tr": "Duvar boşluğuna ölçüyle yapılmış, dört kapaklı beyaz boyalı gömme dolap. Kapaklarda çerçeveli panel detayı var, etrafı pervazla çevrilmiş.",
+    "en": "A white painted four-door built-in wardrobe made to fit a wall recess. The doors have framed panel detailing and the unit is trimmed with molding."
+  },
+  "seoFilename": "beyaz-boyali-panelli-gomme-dolap",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "iç mekan",
+      "giriş holü",
+      "gömme dolap"
+    ],
+    "finish": [
+      "beyaz boya",
+      "mat boya"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

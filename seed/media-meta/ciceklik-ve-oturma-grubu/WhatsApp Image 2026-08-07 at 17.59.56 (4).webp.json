@@ -1,0 +1,35 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 17.59.56 (4).webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçeye Arkalıklı Dolaplı Ahşap Bank",
+    "en": "Garden Wooden Bench with Backrest and Storage Cabinets"
+  },
+  "alt": {
+    "tr": "Taş döşeli bahçe yolu kenarında arkalıklı, ön yüzü dolaplı uzun ahşap bank; arkada tel çitte saksılar asılı",
+    "en": "Long wooden bench with backrest and cabinet front beside a cobblestone garden path, planters on the fence behind"
+  },
+  "caption": {
+    "tr": "Bahçe kenarına yapılmış arkalıklı, altı dolaplı uzun ahşap bank. Oturma yüzeyi ve arkalık yatay, dolap ön yüzü dikey çıtalarla kaplandı; yüzey parlak cilalı.",
+    "en": "A long built-in wooden bench with a backrest and cabinets underneath, set along a garden path. The seat and backrest use horizontal slats, the cabinet fronts vertical ones, with a glossy finish."
+  },
+  "seoFilename": "bahce-arkalikli-dolapli-ahsap-bank",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "açık hava",
+      "taş döşeli yol"
+    ],
+    "finish": [
+      "parlak cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

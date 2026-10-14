@@ -1,0 +1,37 @@
+{
+  "file": "3ae55d46-6c3c-44b1-944b-bc0c97625863.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Beyaz Cilalı Klasik Yemek Odası Takımı",
+    "en": "White Lacquered Classic Dining Room Set"
+  },
+  "alt": {
+    "tr": "Oyma işlemeli beyaz oval yemek masası, kumaş döşemeli sandalyeler, vitrin ve konsol; mobilyalar koruyucu naylonla kaplı",
+    "en": "White oval dining table with carved details, upholstered chairs, display cabinet and buffet, covered in protective plastic"
+  },
+  "caption": {
+    "tr": "Oyma işlemeli klasik yemek odası takımı beyaz cilasıyla yerinde teslime hazırlanıyor. Sandalyelerin üzeri koruyucu naylonla kapatılmış, zemine de örtü serilmiş.",
+    "en": "A classic carved dining room set in a white finish, being readied for delivery on site. The chairs are wrapped in protective plastic and the floor is covered with sheeting."
+  },
+  "seoFilename": "beyaz-cilali-klasik-yemek-odasi-takimi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "yemek odası",
+      "iç mekan",
+      "ev"
+    ],
+    "finish": [
+      "beyaz cila",
+      "boya",
+      "oyma işleme"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

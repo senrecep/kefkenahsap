@@ -1,0 +1,35 @@
+{
+  "file": "3-2.webp",
+  "category": "merdivenler",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Beyaz Ahşap Merdiven Korkuluğu ve Kapısı",
+    "en": "White Wooden Stair Railing and Gate"
+  },
+  "alt": {
+    "tr": "Taş merdiven kenarında beyaz ahşap tırabzan korkuluğu ve çapraz desenli ahşap güvenlik kapısı.",
+    "en": "White wooden railing and cross-brace garden gate mounted along outdoor stone steps."
+  },
+  "caption": {
+    "tr": "Bahçe taş basamakları için hazırladığımız beyaz boyalı ahşap merdiven korkuluğu ve kilitlenebilir emniyet kapısı.",
+    "en": "White painted wooden staircase railing and matching garden gate installed along outdoor stone steps."
+  },
+  "seoFilename": "beyaz-ahsap-merdiven-korkulugu-ve-kapisi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "outdoor",
+      "garden"
+    ],
+    "finish": [
+      "painted",
+      "white"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.92
+}

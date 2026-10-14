@@ -1,0 +1,35 @@
+{
+  "file": "61152708_2495298553848062_8206232452977393664_n.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede Köşe Ahşap Pergola",
+    "en": "Corner Wooden Pergola in a Garden"
+  },
+  "alt": {
+    "tr": "Bahçede kızıl kahve vernikli ahşap pergola, çapraz destekler ve üstte sıralı kirişler, arkada taş duvar ve sarmaşık",
+    "en": "Reddish-brown stained wooden pergola in a garden with diagonal braces and slatted beams, ivy wall behind"
+  },
+  "caption": {
+    "tr": "Küçük bir bahçenin köşesine kurulan ahşap pergola. Kalın direkler çapraz payandalarla desteklenmiş, üstte uçları eğik kesilmiş kirişler sıralanıyor. Çakıl zemin ve sarmaşıklı duvarla iyi uyum sağlamış.",
+    "en": "A wooden pergola built in the corner of a small garden. Thick posts are held by diagonal braces, and the beams on top have angled cut ends. It sits well against the gravel ground and the ivy-covered wall."
+  },
+  "seoFilename": "bahce-kose-ahsap-pergola",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "köşe pergola"
+    ],
+    "finish": [
+      "koyu kızıl kahve koruyucu vernik"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

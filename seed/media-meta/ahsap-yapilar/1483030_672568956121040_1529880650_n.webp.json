@@ -1,0 +1,36 @@
+{
+  "file": "1483030_672568956121040_1529880650_n.webp",
+  "category": "ahsap-yapilar",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe İçi Müstakil Ahşap Ev",
+    "en": "Freestanding Wooden Garden Cabin"
+  },
+  "alt": {
+    "tr": "Taş subasman üzerine inşa edilmiş kiremit çatılı ahşap bahçe evi.",
+    "en": "Wooden garden cabin with a tiled roof built on a stone foundation."
+  },
+  "caption": {
+    "tr": "Doğal taş temel üzerine kiremit çatılı ve ahşap kaplamalı olarak inşa edilen tek katlı bahçe evi uygulaması.",
+    "en": "Single-story wooden garden cabin featuring a natural stone foundation, tiled roof, and a small deck entrance."
+  },
+  "seoFilename": "bahce-ici-mustakil-ahsap-ev",
+  "tags": {
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "bahçe",
+      "dış mekan"
+    ],
+    "finish": [
+      "vernik"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

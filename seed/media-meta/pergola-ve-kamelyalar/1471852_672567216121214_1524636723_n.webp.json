@@ -1,0 +1,36 @@
+{
+  "file": "1471852_672567216121214_1524636723_n.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Çapraz Kafesli Ahşap Pergola",
+    "en": "Wooden Pergola with Diagonal Lattice Panel"
+  },
+  "alt": {
+    "tr": "Bahçede kalın ahşap kolonlu pergola, çapraz kafes panel ve üstte yatay kirişler; arkada çim ve ağaçlar görünüyor",
+    "en": "Garden pergola with thick timber posts, a diagonal lattice panel and overhead beams, with lawn and trees behind"
+  },
+  "caption": {
+    "tr": "Bahçedeki taş zemin üzerine kurulan pergolanın yan yüzünde çapraz çıtalı kafes panel var. Üst kirişler dışarı taşan uçlarıyla gölge düşürüyor.",
+    "en": "A pergola built on a stone base in a garden, with a diagonal slatted lattice panel on one side. The overhead beams extend outward and cast shade."
+  },
+  "seoFilename": "capraz-kafesli-ahsap-pergola",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras",
+      "açık hava"
+    ],
+    "finish": [
+      "vernikli",
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

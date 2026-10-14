@@ -1,0 +1,33 @@
+{
+  "file": "WhatsApp-Image-2021-06-08-at-23.27.42-3.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Havuz Kenarında Ahşap Deck Platformu",
+    "en": "Wooden Deck Platform Beside a Garden Pool"
+  },
+  "alt": {
+    "tr": "Bahçedeki üst havuzun yanında, çimenin üzerinde yükseltilmiş ahşap deck platformu ve küçük bir rampa; arkada ahşap korkuluk",
+    "en": "Raised wooden deck platform with a small ramp beside an above-ground garden pool, with a wooden railing behind"
+  },
+  "caption": {
+    "tr": "Bahçedeki havuzun kenarına yapılan, çıtalı ahşap deck platformu. Havuza geçişi kolaylaştıran küçük bir rampası var, arkada ahşap korkuluk görünüyor.",
+    "en": "A slatted wooden deck platform built beside a garden pool. A small ramp eases access, and a wooden railing runs behind it."
+  },
+  "seoFilename": "havuz-kenari-ahsap-deck-platformu",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "havuz kenarı",
+      "dış mekan"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

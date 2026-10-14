@@ -1,0 +1,36 @@
+{
+  "file": "IMG_20180425_121027.jpg1_.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Tel Örgülü Ahşap Bahçe Kapısı",
+    "en": "Wooden Garden Gate with Wire Mesh"
+  },
+  "alt": {
+    "tr": "Bahçe geçişine monte edilmiş, ortası tel örgülü ve çapraz çıtalı koyu renk ahşap kapı.",
+    "en": "Dark stained wooden gate with X-brace design and wire mesh installed in an outdoor walkway."
+  },
+  "caption": {
+    "tr": "Bahçe geçişi için üretilen, tel örgülü ve çapraz atkılı ahşap kanatlı kapı montajı.",
+    "en": "Custom wooden garden gate with integrated wire mesh and cross bracing installed for outdoor passage."
+  },
+  "seoFilename": "tel-orgulu-ahsap-bahce-kapisi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "teras"
+    ],
+    "finish": [
+      "koyu meşe",
+      "ahşap boyası"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

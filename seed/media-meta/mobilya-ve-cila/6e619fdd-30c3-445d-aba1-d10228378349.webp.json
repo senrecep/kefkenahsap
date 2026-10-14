@@ -1,0 +1,36 @@
+{
+  "file": "6e619fdd-30c3-445d-aba1-d10228378349.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ofis Resepsiyon Bankosu ve Ahşap Çıta Duvar",
+    "en": "Office Reception Counter and Slatted Wood Wall"
+  },
+  "alt": {
+    "tr": "Açık renk ahşap üstlü L şeklinde resepsiyon bankosu, arkasında siyah çerçeveli raflar, çıtalı duvar ve gri kanepe",
+    "en": "L-shaped reception counter with a light wood top, black-framed shelves, a slatted wall and a grey sofa behind it"
+  },
+  "caption": {
+    "tr": "Ofis için hazırlanan L şeklinde resepsiyon bankosu. Açık renk ahşap yüzey, koyu gövde ve arkadaki siyah metal çerçeveli raflarla uyum içinde. Duvarda dikey ahşap çıtalar var.",
+    "en": "An L-shaped reception counter made for an office. The light wood surface sits against a dark body and black metal-framed shelves, with vertical wood slats on the wall behind."
+  },
+  "seoFilename": "ofis-resepsiyon-bankosu-ahsap-citali-duvar",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "ofis",
+      "resepsiyon",
+      "iç mekan"
+    ],
+    "finish": [
+      "doğal ahşap görünümlü",
+      "mat siyah"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

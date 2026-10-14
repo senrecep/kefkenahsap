@@ -1,0 +1,36 @@
+{
+  "file": "31.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Park Bahçesinde Yuvarlak Ahşap Korkuluklu Dış Mekan Merdiveni",
+    "en": "Outdoor Park Staircase with Round Timber Railing"
+  },
+  "alt": {
+    "tr": "Çim eğimli bir parkta, yuvarlak ahşap direklerle çevrili açık basamaklı ahşap merdiven ve yukarıda devam eden korkuluk",
+    "en": "Open-tread wooden staircase in a grassy park, lined with round timber posts and a railing continuing at the top"
+  },
+  "caption": {
+    "tr": "Parktaki eğimli arazide çıkışı sağlayan ahşap merdiven. Yan duvarlar ve korkuluk yan yana dizilmiş yuvarlak ahşap direklerden yapıldı.",
+    "en": "A wooden staircase built to climb a sloped park area. The side walls and railing are made of round timber posts set side by side."
+  },
+  "seoFilename": "park-ahsap-merdiven-yuvarlak-direkli-korkuluk",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "park",
+      "bahçe",
+      "dış mekan",
+      "eğimli arazi"
+    ],
+    "finish": [
+      "doğal ahşap"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

@@ -1,0 +1,36 @@
+{
+  "file": "7214f37b-ce0b-4997-9e58-2603f7e6706c.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Altın Sarısı Çizgili Kapaklı Siyah Dolap",
+    "en": "Black Cabinet with Gold Ribbed Doors"
+  },
+  "alt": {
+    "tr": "Siyah çerçeveli, ince çapraz oluklu altın rengi iki kapaklı dolap; üstünde sarı zeminli bir tablo, yanında bir bitki var.",
+    "en": "Black-framed two-door cabinet with gold diagonal ribbed doors, a yellow painting above it and a plant beside it."
+  },
+  "caption": {
+    "tr": "Siyah çerçeveli, altın rengi çapraz oluklu kapakları olan iki kapaklı dolap. Siyah ayaklı ayaklık üzerinde duruyor, cilası mat bir görünümde.",
+    "en": "A two-door cabinet with a black frame and gold diagonal ribbed doors, standing on slim black legs with a matte finish."
+  },
+  "seoFilename": "altin-kapakli-siyah-dolap",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "iç mekan",
+      "otel veya restoran"
+    ],
+    "finish": [
+      "siyah boya",
+      "altın yaldız rengi",
+      "mat cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.72
+}

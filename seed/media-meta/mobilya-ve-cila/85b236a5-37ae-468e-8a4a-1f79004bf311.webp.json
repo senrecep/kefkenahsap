@@ -1,0 +1,34 @@
+{
+  "file": "85b236a5-37ae-468e-8a4a-1f79004bf311.webp",
+  "category": "mobilya-ve-cila",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Aynalı ve Pirinç Çıtalı Antrasit Gardırop",
+    "en": "Charcoal Built-in Wardrobe with Mirrors and Brass Trim"
+  },
+  "alt": {
+    "tr": "Yatak odasında pirinç çıtalı aynalı kapakları ve metal kulpları olan antrasit köşe gardırop.",
+    "en": "Dark charcoal corner wardrobe featuring mirrored doors bordered with brass trim and matching handles."
+  },
+  "caption": {
+    "tr": "Yatak odası için özel ölçü üretilen köşe gardırop; antrasit mat lake yüzeyi, pirinç çerçeveli ayna kapakları ve kulplarıyla tamamlandı.",
+    "en": "Custom fitted corner wardrobe finished in charcoal lacquer, complemented by mirrored door panels with brass trims and matching pulls."
+  },
+  "seoFilename": "aynali-antrasit-kose-gardirop",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "yatak odası",
+      "iç mekan"
+    ],
+    "finish": [
+      "lake"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

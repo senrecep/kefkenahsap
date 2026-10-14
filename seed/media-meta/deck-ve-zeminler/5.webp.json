@@ -1,0 +1,33 @@
+{
+  "file": "5.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe Deck Alt Konstrüksiyonu",
+    "en": "Garden Deck Substructure"
+  },
+  "alt": {
+    "tr": "Bahçede toprak zemin üzerine ahşap ayaklar ve kirişlerle kurulmuş deck iskeleti, kirişlerin yanında ip ve kablo duruyor",
+    "en": "Wooden deck frame in a garden, built with posts and joists over bare soil, with a cord and cable lying nearby"
+  },
+  "caption": {
+    "tr": "Deck döşemesinden önce bahçede kurulan taşıyıcı iskelet: ahşap ayaklar, kenar kirişi ve sıralı ara kirişler yerinde.",
+    "en": "The load-bearing frame set up in the garden before decking boards go on: wooden posts, an edge beam and evenly spaced joists in place."
+  },
+  "seoFilename": "bahce-deck-alt-konstruksiyon-iskelet",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

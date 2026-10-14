@@ -1,0 +1,36 @@
+{
+  "file": "9b2a2584-7efd-461c-a74c-2d2311204f19.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Yıldız Motifli Oymalı Çift Kanatlı Kapı",
+    "en": "Double Door with Star-Pattern Carved Panels"
+  },
+  "alt": {
+    "tr": "Çift kanatlı ahşap kapı; yıldız motifli geometrik oyma paneller ve üstte Arapça hat yazılı iki levha var",
+    "en": "Double wooden door with geometric star-pattern carved panels and two panels of Arabic calligraphy at the top"
+  },
+  "caption": {
+    "tr": "Her kanadında hat yazılı bir levha ile iki yıldız motifli oyma panel bulunan çift kanatlı kapı. Paneller ince şeritlerle çerçevelenmiş, kapı vernikle bal rengine getirilmiş.",
+    "en": "A double door with a calligraphy panel and two carved star-pattern panels on each leaf. The panels are framed with thin inlaid strips, and the door is varnished in a honey tone."
+  },
+  "seoFilename": "yildiz-motifli-oymali-cift-kanatli-kapi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "kapı",
+      "çift kanatlı kapı"
+    ],
+    "finish": [
+      "vernik",
+      "oyma",
+      "geometrik motif"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.6
+}

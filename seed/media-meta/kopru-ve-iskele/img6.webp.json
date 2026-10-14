@@ -1,0 +1,33 @@
+{
+  "file": "img6.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Korkuluk Direğinde Cıvata Montajı",
+    "en": "Bolting a Railing Post in Place"
+  },
+  "alt": {
+    "tr": "Ahşap korkuluk direğine cırcırlı lokma anahtarla cıvata sıkılıyor, üstte bir mengene direği sabit tutuyor.",
+    "en": "A ratchet wrench tightens a bolt through a wooden railing post while a clamp holds the post steady."
+  },
+  "caption": {
+    "tr": "Korkuluk direği tahtalara cıvatayla bağlanıyor. Montaj sırasında direk mengeneyle sabitlenip lokma takımıyla sıkıştırılıyor.",
+    "en": "The railing post is bolted to the boards. During assembly it is held with a clamp and tightened with a socket wrench."
+  },
+  "seoFilename": "korkuluk-direk-civata-montaji",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "korkuluk",
+      "dış mekan"
+    ],
+    "finish": [],
+    "stage": [
+      "process",
+      "detail"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.6
+}

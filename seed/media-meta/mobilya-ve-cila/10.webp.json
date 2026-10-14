@@ -1,0 +1,37 @@
+{
+  "file": "10.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Parlak Beyaz Mutfak Dolapları ve Granit Tezgâh",
+    "en": "Glossy White Kitchen Cabinets with Granite Countertop"
+  },
+  "alt": {
+    "tr": "Parlak beyaz boy dolaplar arasına yerleştirilmiş çelik buzdolabı, ankastre fırın ve koyu granit tezgâhlı ada",
+    "en": "Glossy white tall kitchen cabinets around a steel fridge and built-in oven, with a dark granite counter in front"
+  },
+  "caption": {
+    "tr": "Tavana kadar uzanan parlak beyaz mutfak dolapları; buzdolabı ve ankastre fırın dolap hattının içine yerleştirildi. Önde koyu granit tezgâhlı bir ada var.",
+    "en": "Floor-to-ceiling glossy white kitchen cabinets with the fridge and built-in oven set into the run. A dark granite-topped island sits in front."
+  },
+  "seoFilename": "parlak-beyaz-mutfak-dolabi-granit-tezgah",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "mutfak",
+      "iç mekan",
+      "ankastre"
+    ],
+    "finish": [
+      "parlak beyaz",
+      "yüksek parlaklık",
+      "granit tezgâh"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

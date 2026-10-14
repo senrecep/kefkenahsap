@@ -1,0 +1,36 @@
+{
+  "file": "7ffe504c-558e-4640-871c-6938975d88e7.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Koyu Renk Kapılı Ofis Koridoru",
+    "en": "Office Corridor with Dark Doors"
+  },
+  "alt": {
+    "tr": "Mermer zeminli uzun koridorda iki yanda koyu renk kapılar, camlı bölmeler ve tavanda ışıklı panel",
+    "en": "Long corridor with marble floor, dark doors on both sides, glass partitions and a lit ceiling panel"
+  },
+  "caption": {
+    "tr": "Mermer zeminli koridorun iki yanında koyu renk boyalı kapılar ve çerçeveler sıralanıyor. Soldaki kapıda delikli desenli bir yüzey var.",
+    "en": "Dark-finished doors and frames line both sides of a marble-floored corridor. The door on the left has a perforated pattern."
+  },
+  "seoFilename": "koyu-renk-kapili-ofis-koridoru",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "ofis",
+      "koridor",
+      "iç mekan"
+    ],
+    "finish": [
+      "koyu renk boya",
+      "mat"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.55
+}

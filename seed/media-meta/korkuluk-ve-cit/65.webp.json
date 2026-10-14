@@ -1,0 +1,37 @@
+{
+  "file": "65.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Deniz Kenarı Ahşap Deck ve Çapraz Korkuluk",
+    "en": "Seaside Wooden Deck with Cross-Pattern Railing"
+  },
+  "alt": {
+    "tr": "Denize bakan ahşap deck zemin ve kenarında X desenli çapraz çıtalı açık renkli ahşap korkuluk, yanında basamaklı bir yapı",
+    "en": "Wooden deck by the sea with a light wood railing in an X cross pattern and a stepped structure beside it"
+  },
+  "caption": {
+    "tr": "Deniz kıyısındaki deck alanında, çapraz çıtalı ahşap korkuluk uygulaması. Zemin kaplaması ve korkuluk aynı tonda yapılmış.",
+    "en": "A cross-braced wooden railing on a deck right by the sea. The flooring and railing are finished in the same warm tone."
+  },
+  "seoFilename": "deniz-kenari-ahsap-deck-capraz-korkuluk",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "deniz kenarı",
+      "deck",
+      "iskele",
+      "dış mekan"
+    ],
+    "finish": [
+      "doğal ton",
+      "vernik"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

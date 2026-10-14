@@ -1,0 +1,36 @@
+{
+  "file": "WhatsApp-Image-2021-06-27-at-20.13.42-3.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Jakuzi Kaplaması ve Basamak, Ahşap Deck",
+    "en": "Wooden Jacuzzi Surround, Step and Deck Tiles"
+  },
+  "alt": {
+    "tr": "Beyaz küvetli jakuzinin ahşap çıtalarla kaplı yan yüzeyi, önünde ahşap basamak ve zeminde karo deck döşeme",
+    "en": "Jacuzzi tub with a wood-slat side panel, a matching wooden step and interlocking deck tiles on the floor"
+  },
+  "caption": {
+    "tr": "Balkondaki jakuzinin yan yüzeyi dikey ahşap çıtalarla kaplandı, önüne aynı malzemeden bir basamak yapıldı. Zeminde karo deck döşendi.",
+    "en": "The side of the balcony jacuzzi is clad in vertical wood slats, with a matching step built in front. The floor is laid with deck tiles."
+  },
+  "seoFilename": "jakuzi-kaplama-ahsap-basamak-deck-doseme",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "balkon",
+      "jakuzi",
+      "iç mekan"
+    ],
+    "finish": [
+      "vernikli",
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

@@ -1,0 +1,37 @@
+{
+  "file": "226cc7cc-2f4e-4b59-ac19-72cca217e70d.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Balık Sırtı Parke Zemin ve Metal Sürgülü Panel",
+    "en": "Herringbone Parquet Floor with Metal Sliding Panel"
+  },
+  "alt": {
+    "tr": "Beyaz metro fayans duvarlı odada balık sırtı ahşap parke, metal çerçeveli sürgülü panel, çalışma masası ve duvar rafı",
+    "en": "Room with white subway tile wall, herringbone wood parquet, metal-framed sliding panel, a work table and a wall shelf"
+  },
+  "caption": {
+    "tr": "Balık sırtı döşenmiş parke zemin, bronz tonlu metal çerçeveli sürgülü panel ve duvara monte raf. Zemin cilalı, sıcak kahverengi tonda.",
+    "en": "Herringbone-laid parquet floor, a sliding panel in a bronze-toned metal frame and a wall-mounted shelf. The floor has a warm brown varnished finish."
+  },
+  "seoFilename": "balik-sirti-parke-metal-surgulu-panel",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "iç mekan",
+      "ofis",
+      "oda"
+    ],
+    "finish": [
+      "cilalı parke",
+      "balık sırtı",
+      "metal çerçeve"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

@@ -1,0 +1,35 @@
+{
+  "file": "87c587ac-8147-450d-94be-de360e32f466.webp",
+  "category": "mobilya-ve-cila",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Yatak Başı Köprü Dolap ve Özel Ölçü Yatak Odası Ünitesi",
+    "en": "Custom Over-Bed Wardrobe and Bedroom Bridge Unit"
+  },
+  "alt": {
+    "tr": "Yatak başını çevreleyen antrasit renkli, altın çıtalı ve aynalı kapaklara sahip özel yapım yatak odası dolabı.",
+    "en": "Custom dark bedroom bridge wardrobe unit framing the headboard with gold-trimmed moldings and mirrored doors."
+  },
+  "caption": {
+    "tr": "Yatak odasında alan tasarrufu sağlayan, başucu üstü ve yanlarını çevreleyen lake köprü dolap montajı. Kapaklarda altın çıta ve bronz ayna detayları kullanıldı.",
+    "en": "Space-saving over-bed bridge unit with custom lacquered cabinet doors, decorative gold trim profiles, and bronze mirror details."
+  },
+  "seoFilename": "yatak-basi-kopru-dolap-lake-unite",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "yatak odası",
+      "iç mekan"
+    ],
+    "finish": [
+      "lake",
+      "mat"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

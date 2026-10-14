@@ -1,0 +1,36 @@
+{
+  "file": "1526574_672566202787982_159837314_n.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Beyaz Tavanda Koyu Renk Ahşap Kirişler",
+    "en": "Dark Wooden Beams on a White Ceiling"
+  },
+  "alt": {
+    "tr": "Beyaz eğimli tavanda koyu kahverengi ahşap kirişler ve ortadan geçen yuvarlak kesitli kalın bir mertek",
+    "en": "Dark brown wooden beams across a white sloped ceiling with a thick round beam running through the middle"
+  },
+  "caption": {
+    "tr": "Eğimli beyaz tavanda koyu kahve boyalı kirişler. Ortadaki yuvarlak mertek, dikdörtgen kesitli kirişlerle birlikte tavana rustik bir görünüm veriyor.",
+    "en": "Dark brown stained beams on a sloped white ceiling. The round central beam sits alongside rectangular beams for a rustic look."
+  },
+  "seoFilename": "beyaz-tavanda-koyu-ahsap-kirisler",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "iç mekan",
+      "tavan",
+      "eğimli tavan"
+    ],
+    "finish": [
+      "koyu kahve",
+      "vernik"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

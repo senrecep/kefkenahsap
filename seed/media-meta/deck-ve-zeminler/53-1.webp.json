@@ -1,0 +1,34 @@
+{
+  "file": "53-1.webp",
+  "category": "deck-ve-zeminler",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Deniz Kenarı Kafe Ahşap Deck ve Korkuluk Uygulaması",
+    "en": "Seaside Cafe Wooden Deck and Railing Installation"
+  },
+  "alt": {
+    "tr": "Deniz kıyısında ahşap deck zemin, korkuluklar ve üzerinde oturma grupları olan kafe terası.",
+    "en": "Wooden deck terrace by the sea with railing, flower boxes, and outdoor dining tables and chairs."
+  },
+  "caption": {
+    "tr": "Deniz kenarındaki kafe için yapılan ahşap deck zemin döşemesi, emniyet korkulukları ve basamak kenarı ahşap saksılıklar.",
+    "en": "Wooden deck flooring, safety railings, and wooden planters built for an open-air seaside cafe dining terrace."
+  },
+  "seoFilename": "deniz-kenari-ahsap-deck-teras-kaplama",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "outdoor",
+      "cafe",
+      "terrace",
+      "seaside"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

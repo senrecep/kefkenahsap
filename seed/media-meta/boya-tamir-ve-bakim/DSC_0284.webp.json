@@ -1,0 +1,35 @@
+{
+  "file": "DSC_0284.webp",
+  "category": "boya-tamir-ve-bakim",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Çürümüş Teras Kirişi ve Deck Söküm Aşaması",
+    "en": "Rotted Terrace Beam During Deck Repair"
+  },
+  "alt": {
+    "tr": "Ahşap teras kenarında çürümüş, parçalanmış kiriş ucu; yanında talaşlı deck tahtaları, yuvarlak direk ve arkada ağaçlar",
+    "en": "Rotted, splintered beam end at the edge of a wooden terrace, with deck boards, a round post and trees behind"
+  },
+  "caption": {
+    "tr": "Ormanlık bir arazideki ahşap terasta kiriş ucu çürümüş. Tamir öncesinde hasarlı bölüm açıldı, deck tahtaları kenara alındı.",
+    "en": "On a wooden terrace in a wooded site, the beam end has rotted. Before repair, the damaged section was opened up and the deck boards set aside."
+  },
+  "seoFilename": "curumus-teras-kirisi-deck-tamir",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "teras",
+      "bahçe",
+      "orman",
+      "dış mekan"
+    ],
+    "finish": [],
+    "stage": [
+      "before",
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.86
+}

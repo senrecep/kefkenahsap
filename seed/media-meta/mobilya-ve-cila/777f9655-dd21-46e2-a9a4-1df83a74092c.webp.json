@@ -1,0 +1,36 @@
+{
+  "file": "777f9655-dd21-46e2-a9a4-1df83a74092c.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Oymalı Krem Renkli Vitrin Dolabı",
+    "en": "Carved Cream Display Cabinet"
+  },
+  "alt": {
+    "tr": "Üstünde oymalı taç bulunan, camlı bölmeli ve kabartma detaylı krem renkli klasik vitrin dolabı",
+    "en": "Cream-colored classic display cabinet with carved crown, glass sections and relief detailing"
+  },
+  "caption": {
+    "tr": "Klasik tarzda, el işi oyma süslemeli krem boyalı vitrin. Üst bölümde camlı kapılar, alt bölümde kabartmalı çift kapaklı dolap var.",
+    "en": "Classic-style cream painted display cabinet with carved ornaments. Glass doors on top, a lower cabinet with relief-panelled doors."
+  },
+  "seoFilename": "oymali-krem-vitrin-dolabi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "salon",
+      "ev içi"
+    ],
+    "finish": [
+      "krem boya",
+      "patina",
+      "oyma süsleme"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

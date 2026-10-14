@@ -1,0 +1,34 @@
+{
+  "file": "separator1.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Dikey Çıtalı Beyaz Kasa",
+    "en": "White Box with Vertical Slats"
+  },
+  "alt": {
+    "tr": "Atölyede çalışma masasının üstünde duran, ön yüzü dikey çıtalı beyaz boyalı kasa",
+    "en": "White painted box with a vertically slatted front, sitting on a workbench in a workshop"
+  },
+  "caption": {
+    "tr": "Ön yüzü dikey çıtalı, beyaz boyalı kasa. Atölyedeki tezgâhta, teslimden önce çekildi.",
+    "en": "A white painted box with a vertically slatted front, photographed on the workshop bench."
+  },
+  "seoFilename": "dikey-citali-beyaz-kasa",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "atölye",
+      "tezgâh"
+    ],
+    "finish": [
+      "beyaz boya"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.55
+}

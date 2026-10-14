@@ -1,0 +1,35 @@
+{
+  "file": "4c317b0c-b24a-4b1d-bf12-79a400900273.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Beyaz Çerçeveli Kapaklı Mutfak Dolapları",
+    "en": "White Shaker-Style Kitchen Cabinets"
+  },
+  "alt": {
+    "tr": "Pencere önünde beyaz tezgâh, altında paslanmaz çelik bulaşık makinesi ve yanında beyaz çerçeveli uzun dolap kapağı",
+    "en": "White countertop by a window with a stainless dishwasher below and a tall white paneled cabinet door beside it"
+  },
+  "caption": {
+    "tr": "Mutfakta pencere önüne yerleştirilen beyaz boyalı dolaplar. Çerçeveli kapak modeli, sade ve temiz bir görünüm veriyor.",
+    "en": "White painted kitchen cabinets fitted around the window. The framed door style gives a plain, clean look."
+  },
+  "seoFilename": "beyaz-cerceveli-kapakli-mutfak-dolaplari",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "mutfak",
+      "iç mekan"
+    ],
+    "finish": [
+      "beyaz boya",
+      "mat cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

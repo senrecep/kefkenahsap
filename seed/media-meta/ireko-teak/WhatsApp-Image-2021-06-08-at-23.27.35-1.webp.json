@@ -1,0 +1,37 @@
+{
+  "file": "WhatsApp-Image-2021-06-08-at-23.27.35-1.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe Mutfağında Çıtalı Ahşap Tavan ve Duvar Kaplaması",
+    "en": "Slatted Wood Ceiling and Wall Cladding in a Garden Kitchen"
+  },
+  "alt": {
+    "tr": "Bahçedeki açık mutfakta dikey ahşap çıtalı duvar, çıtalı tavan, pirinç sarkıt lambalar ve gri tezgâh",
+    "en": "Outdoor garden kitchen with vertical wood slat wall, slatted ceiling, brass pendant lamps and a grey counter"
+  },
+  "caption": {
+    "tr": "Açık hava mutfağında duvar ve tavan, aralıklı dizilmiş ahşap çıtalarla kaplandı. Çıtalar gölge ve hava akışı sağlıyor, bahçenin yeşiliyle de uyum yakalıyor.",
+    "en": "In this outdoor kitchen, the wall and ceiling are clad in evenly spaced wood slats. They give shade and airflow and sit well with the greenery of the garden."
+  },
+  "seoFilename": "bahce-mutfagi-citali-ahsap-tavan-duvar-kaplama",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "açık mutfak",
+      "pergola",
+      "dış mekan"
+    ],
+    "finish": [
+      "çıtalı kaplama",
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

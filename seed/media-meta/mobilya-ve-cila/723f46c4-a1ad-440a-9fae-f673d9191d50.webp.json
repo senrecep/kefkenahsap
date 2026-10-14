@@ -1,0 +1,38 @@
+{
+  "file": "723f46c4-a1ad-440a-9fae-f673d9191d50.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Beyaz Gardırop, Askılık ve Raflı İç Düzen",
+    "en": "White Wardrobe with Hanging Rail and Shelves"
+  },
+  "alt": {
+    "tr": "Kapağı açık beyaz gardırop; üstte askı çubuğu, altta iki raf, yanında aynalı kapak ve fayans zemin",
+    "en": "White wardrobe with open door, a hanging rail on top, two shelves below, a mirrored door beside it and a tiled floor"
+  },
+  "caption": {
+    "tr": "Beyaz cepheli gardırobun iç düzeni: üstte askı çubuğu, altta iki raf bölmesi. Yanındaki kapakta ayna var.",
+    "en": "Interior of a white wardrobe: a hanging rail at the top and two shelf compartments below. The neighbouring door has a mirror."
+  },
+  "seoFilename": "beyaz-gardirop-askilik-raf-ic-duzen",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "iç mekan",
+      "yatak odası",
+      "gardırop"
+    ],
+    "finish": [
+      "beyaz",
+      "parlak yüzey",
+      "aynalı kapak"
+    ],
+    "stage": [
+      "finished",
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

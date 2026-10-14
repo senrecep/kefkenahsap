@@ -1,0 +1,38 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 17.59.58 (2).webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Atölyede Hazırlanan Dikdörtgen Ahşap Çiçeklikler",
+    "en": "Rectangular Wooden Planters Built in the Workshop"
+  },
+  "alt": {
+    "tr": "Atölyede mavi örtünün üzerinde sıralanmış, balık sırtı kenarlı, içi siyah boyalı uzun ahşap çiçeklik sandıkları",
+    "en": "Long wooden planter boxes with black-coated interiors lined up on a blue tarp in a workshop"
+  },
+  "caption": {
+    "tr": "Yatay tahta kaplamalı uzun çiçeklik sandıkları atölyede hazır. İç yüzeyleri siyah koruyucuyla kaplandı, dış yüzeye kızıl kahve ton verildi.",
+    "en": "Long planter boxes with horizontal board cladding, ready in the workshop. The insides have a black protective coating and the outside has a reddish-brown stain."
+  },
+  "seoFilename": "atolyede-hazirlanan-dikdortgen-ahsap-ciceklikler",
+  "tags": {
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "atölye",
+      "bahçe",
+      "teras"
+    ],
+    "finish": [
+      "kızıl kahve vernik",
+      "siyah iç kaplama"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

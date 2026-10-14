@@ -1,0 +1,37 @@
+{
+  "file": "d4e78835-70dd-4780-bb07-5dce01433487.webp",
+  "category": "mobilya-ve-cila",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Özel Üretim Ahşap Şarap Mahzeni ve Raf Sistemleri",
+    "en": "Custom Wooden Wine Cellar and Bottle Racks"
+  },
+  "alt": {
+    "tr": "Kemerli cam kapı arkasında ahşap şarap rafları, aydınlatma ve ortada ahşap fıçı bulunan şarap odası.",
+    "en": "Custom wooden wine room with illuminated bottle racks and a center wine barrel behind glass doors."
+  },
+  "caption": {
+    "tr": "Özel ölçü ahşap şaraplık rafları, gizli LED aydınlatmaları ve fıçı detaylı sunum alanıyla tasarlanan cam bölmeli mahzen uygulaması.",
+    "en": "Custom-built wooden wine cellar featuring integrated LED lighting, tailored bottle racks, and a central barrel tasting table."
+  },
+  "seoFilename": "ahsap-sarap-mahzeni-raf-sistemi",
+  "tags": {
+    "wood": [
+      "meşe"
+    ],
+    "setting": [
+      "iç mekan",
+      "mahzen",
+      "restoran"
+    ],
+    "finish": [
+      "doğal vernik"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

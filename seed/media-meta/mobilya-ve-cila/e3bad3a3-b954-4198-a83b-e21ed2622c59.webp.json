@@ -1,0 +1,38 @@
+{
+  "file": "e3bad3a3-b954-4198-a83b-e21ed2622c59.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ofis İç Mekânında Meşe Görünümlü Kaplama ve Antrasit Kapı",
+    "en": "Office Interior with Oak-Look Veneer Panels and Anthracite Door"
+  },
+  "alt": {
+    "tr": "Ahşap kaplı sütun, çıtalı duvar ve tavan, yan duvarda çekmeceli açık renk konsol ile antrasit renkli kapı olan ofis odası",
+    "en": "Office room with wood-clad column, slatted wall and ceiling, a drawer console in light wood and a dark grey door"
+  },
+  "caption": {
+    "tr": "Açık tonlu ahşap kaplama sütun, dikey çıtalı duvar ve tavan, çekmeceli konsol ile antrasit boyalı kapı bir arada uygulanmış ofis odası.",
+    "en": "An office room combining a light wood-clad column, vertical slatted wall and ceiling, a drawer console and a dark grey painted door."
+  },
+  "seoFilename": "ofis-ahsap-kaplama-citali-duvar-konsol-antrasit-kapi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "ofis",
+      "iç mekân",
+      "çıtalı duvar",
+      "tavan kaplaması"
+    ],
+    "finish": [
+      "ahşap kaplama",
+      "mat boya",
+      "antrasit"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

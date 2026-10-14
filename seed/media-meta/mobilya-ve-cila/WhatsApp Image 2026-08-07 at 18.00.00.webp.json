@@ -1,0 +1,36 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 18.00.00.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Atölyede Yuvarlak Masa Tablası",
+    "en": "Round Table Top in the Workshop"
+  },
+  "alt": {
+    "tr": "Atölyede, beyaz örtüyle kısmen sarılı, açık renkli yuvarlak masa tablası; arkada duvarda asılı el aletleri ve sandalyeler",
+    "en": "Light-colored round wooden table top partly covered with white sheeting in a workshop, hand tools on the wall behind"
+  },
+  "caption": {
+    "tr": "Yuvarlak masa tablası atölyede, cila öncesi çıplak ahşap haliyle. Damarlar ve kenar profili net görünüyor.",
+    "en": "A round table top in the workshop, bare wood before varnishing. The grain and the edge profile are clearly visible."
+  },
+  "seoFilename": "atolyede-yuvarlak-masa-tablasi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "atölye",
+      "iç mekan"
+    ],
+    "finish": [
+      "cilasız",
+      "ham ahşap"
+    ],
+    "stage": [
+      "process",
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

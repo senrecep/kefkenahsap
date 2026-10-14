@@ -1,0 +1,36 @@
+{
+  "file": "f1ee2865-8802-4093-87f2-7757f774ebac.webp",
+  "category": "mobilya-ve-cila",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Klasik Oymalı Konsol ve Aynalık Cila Uygulaması",
+    "en": "Classic Carved Sideboard and Ornate Mirror Finish"
+  },
+  "alt": {
+    "tr": "Oymalı, eskitme beyaz cilalı klasik konsol ve üzerinde geniş oymalı ayna çerçevesi.",
+    "en": "Carved classic wooden sideboard buffet with distressed white finish and matching mirror frame."
+  },
+  "caption": {
+    "tr": "Klasik tarzda ince işçilikli konsol ve aynalık için atölyemizde patina eskitme cila yenilemesi yapıldı, salondaki yerine teslim edildi.",
+    "en": "Classic carved sideboard and ornate mirror frame restored with an antique patina finish, installed in the dining area."
+  },
+  "seoFilename": "klasik-oymali-konsol-ayna-cila",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "salon",
+      "yemek-odasi"
+    ],
+    "finish": [
+      "patina",
+      "eskitme",
+      "lake"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

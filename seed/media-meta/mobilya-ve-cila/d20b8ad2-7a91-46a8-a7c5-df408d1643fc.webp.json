@@ -1,0 +1,36 @@
+{
+  "file": "d20b8ad2-7a91-46a8-a7c5-df408d1643fc.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Toplantı Odası İçin Ahşap Masa",
+    "en": "Wooden Table for a Meeting Room"
+  },
+  "alt": {
+    "tr": "Toplantı odasında bal rengi uzun ahşap masa, etrafında gri sandalyeler, arkada pencere ve tavanda projeksiyon cihazı",
+    "en": "Long honey-toned wooden table in a meeting room with grey chairs, a window behind and a projector on the ceiling"
+  },
+  "caption": {
+    "tr": "Ofis toplantı odası için yapılan uzun ahşap masa. Masa üstünde kablo geçişleri için siyah kapaklı açıklıklar var, pencere önündeki ahşap tezgâh da aynı tonda.",
+    "en": "A long wooden table made for an office meeting room. The top has black-covered cable openings, and the wooden counter by the window matches its tone."
+  },
+  "seoFilename": "toplanti-odasi-ahsap-masa",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "ofis",
+      "toplantı odası",
+      "iç mekan"
+    ],
+    "finish": [
+      "vernikli",
+      "mat cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

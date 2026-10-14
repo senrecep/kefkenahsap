@@ -1,0 +1,37 @@
+{
+  "file": "12963551_1139945266050071_9171299007154272680_n.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Yatak Başı Ahşap Panel Seperatör",
+    "en": "Wooden Panel Headboard Partition"
+  },
+  "alt": {
+    "tr": "Yatak odasında yatağın arkasında, farklı boylarda koyu kahverengi ahşap çıtalardan yapılmış yatak başı paneli",
+    "en": "Dark brown wooden slat headboard panel of varying lengths standing behind a bed in a bedroom"
+  },
+  "caption": {
+    "tr": "Yatağın arkasına kurulan, farklı boylarda ahşap çıtalarla kaplı yatak başı paneli. Aynı zamanda oda içinde bölme görevi görüyor.",
+    "en": "A headboard panel clad in wooden slats of varying lengths, set up behind the bed. It also works as a room divider."
+  },
+  "seoFilename": "yatak-basi-ahsap-panel-seperator",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "yatak odası",
+      "iç mekan",
+      "yatak başı",
+      "seperatör"
+    ],
+    "finish": [
+      "koyu kahverengi",
+      "mat"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

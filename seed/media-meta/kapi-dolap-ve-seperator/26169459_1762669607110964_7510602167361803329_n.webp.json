@@ -1,0 +1,37 @@
+{
+  "file": "26169459_1762669607110964_7510602167361803329_n.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Sarmaşıklı Yatay Çıtalı Ahşap Panel",
+    "en": "Horizontal Slat Wood Panel with Climbing Vine"
+  },
+  "alt": {
+    "tr": "Açık renkli bir dış cephe duvarına monte edilmiş yatay çıtalı ahşap panel, üzerine yeşil yapraklı sarmaşık tırmanıyor",
+    "en": "Horizontal slatted wood panel mounted on a light exterior wall, with a green leafy vine climbing across it"
+  },
+  "caption": {
+    "tr": "Dış duvara sabitlenmiş, aralıklı yatay çıtalardan yapılmış panel. Sarmaşık çıtaların arasından tutunarak yukarı çıkıyor.",
+    "en": "A panel of evenly spaced horizontal slats fixed to an exterior wall. The vine holds onto the slats as it climbs."
+  },
+  "seoFilename": "sarmasikli-yatay-citali-ahsap-panel",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "dış mekan",
+      "cephe",
+      "bahçe",
+      "duvar"
+    ],
+    "finish": [
+      "doğal ton",
+      "vernikli"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.6
+}

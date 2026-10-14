@@ -1,0 +1,37 @@
+{
+  "file": "60450716_2483719031672681_3575836277108375552_n.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Teras Üstü Ahşap Pergola ve Şeffaf Çatı",
+    "en": "Rooftop Terrace Wooden Pergola with Clear Roof"
+  },
+  "alt": {
+    "tr": "Teras üzerinde koyu kızıl vernikli ahşap pergola, kirişlerin üstünde şeffaf çatı paneli ve arkada çatı katlı evler",
+    "en": "Wooden pergola with dark red stain on a terrace, clear roof panels over the beams, and attic houses behind"
+  },
+  "caption": {
+    "tr": "Teras katına yapılan ahşap pergola. Kolonlar köşe destekleriyle taşıyıcı kirişlere bağlanmış, üstü şeffaf panellerle kapatılmış. Yanında ahşap oturma bankı ve korkuluk var.",
+    "en": "A wooden pergola built on a terrace floor. The posts are tied to the main beams with corner braces, and the top is covered with clear panels. A wooden bench and railing sit beside it."
+  },
+  "seoFilename": "teras-ahsap-pergola-seffaf-cati",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "teras",
+      "çatı katı",
+      "dış mekan",
+      "konut"
+    ],
+    "finish": [
+      "koyu kızıl vernik",
+      "ahşap koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

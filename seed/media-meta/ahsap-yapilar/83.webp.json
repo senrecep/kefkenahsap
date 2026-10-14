@@ -1,0 +1,36 @@
+{
+  "file": "83.webp",
+  "category": "ahsap-yapilar",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ahşap Bahçe Kulübesi ve Depo Yapısı",
+    "en": "Wooden Garden Shed and Storage Structure"
+  },
+  "alt": {
+    "tr": "Taş zemin üzerinde yeşil çatılı ve cam kapılı ahşap bahçe kulübeleri.",
+    "en": "Wooden garden sheds with green shingle roofs and glass doors on stone pavement."
+  },
+  "caption": {
+    "tr": "Bahçede doğal taş zemin üzerine inşa edilmiş, yeşil şıngıl çatılı ve ahşap panjur detaylı dış mekan kulübe uygulaması.",
+    "en": "Outdoor wooden storage sheds built on natural stone flooring, featuring green shingle roofing and wood paneling."
+  },
+  "seoFilename": "ahsap-bahce-kulubesi-depo",
+  "tags": {
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "bahçe",
+      "dış mekan"
+    ],
+    "finish": [
+      "emprenye"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

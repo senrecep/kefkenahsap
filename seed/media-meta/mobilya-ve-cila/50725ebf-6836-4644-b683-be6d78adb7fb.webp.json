@@ -1,0 +1,36 @@
+{
+  "file": "50725ebf-6836-4644-b683-be6d78adb7fb.webp",
+  "category": "mobilya-ve-cila",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ev Tipi Ahşap Bebek Karyolası",
+    "en": "House-Shaped Wooden Baby Crib"
+  },
+  "alt": {
+    "tr": "Gri ve beyaz tonlarında boyalı, çatılı ve pencereli ev formunda ahşap bebek karyolası.",
+    "en": "Gray and white painted house-shaped wooden baby crib with roof trim and decorative windows."
+  },
+  "caption": {
+    "tr": "Çocuk odası için özel ölçüyle imal edilen ev tasarımlı ahşap bebek karyolası. Korkuluk mekanizması ve çatı detaylarıyla montajı tamamlandı.",
+    "en": "Custom-built house-frame wooden crib for a nursery, crafted with safety railings and decorative roof detailing."
+  },
+  "seoFilename": "ev-tipi-ahsap-bebek-karyolasi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bebek odası",
+      "çocuk odası",
+      "iç mekan"
+    ],
+    "finish": [
+      "lake boya",
+      "mat boya"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

@@ -1,0 +1,36 @@
+{
+  "file": "4c6c8e61-a757-4b25-b37b-619ba6f02bf5.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Beyaz Oymalı Klasik Kanepe, Streç Filmle Korunmuş",
+    "en": "White Carved Classic Sofa Wrapped in Protective Film"
+  },
+  "alt": {
+    "tr": "Beyaz boyalı, oymalı ahşap çerçeveli gri kapitone sırtlı klasik kanepe, streç film ve mavi naylonla kaplı zeminde duruyor",
+    "en": "Classic sofa with white-painted carved wooden frame and grey tufted back, wrapped in film on a blue plastic-covered floor"
+  },
+  "caption": {
+    "tr": "Beyaz cilası tamamlanan oymalı klasik kanepe, teslimat öncesi streç filmle sarılmış. Zemin de boya ve cila tozuna karşı naylonla örtülmüş.",
+    "en": "A carved classic sofa with a finished white coat, wrapped in stretch film before delivery. The floor is covered with plastic sheeting."
+  },
+  "seoFilename": "beyaz-oymali-klasik-kanepe-cila",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "ev içi",
+      "oturma odası"
+    ],
+    "finish": [
+      "beyaz boya",
+      "beyaz cila",
+      "oyma işçiliği"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

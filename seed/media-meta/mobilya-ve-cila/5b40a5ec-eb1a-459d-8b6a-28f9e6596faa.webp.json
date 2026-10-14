@@ -1,0 +1,35 @@
+{
+  "file": "5b40a5ec-eb1a-459d-8b6a-28f9e6596faa.webp",
+  "category": "mobilya-ve-cila",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Tekne Kamarası İçin Özel Yapım Ahşap Çalışma Masası",
+    "en": "Custom Wooden Desk and Shelf for Vessel Cabin"
+  },
+  "alt": {
+    "tr": "Tekne kamarasında köşeye monte edilmiş çekmeceli ahşap çalışma masası, duvar rafı ve deri koltuk.",
+    "en": "Custom corner wooden desk with drawers, wall shelf, and leather armchair in a boat cabin."
+  },
+  "caption": {
+    "tr": "Tekne kamarasına özel ölçüde üretilen L formunda ahşap çalışma masası, çekmeceli keson ve duvara monte raf uygulaması.",
+    "en": "Custom-built L-shaped wooden study desk with drawer cabinet and wall-mounted shelving unit inside a boat cabin."
+  },
+  "seoFilename": "tekne-ici-ahsap-calisma-masasi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "tekne",
+      "iç mekan",
+      "çalışma odası"
+    ],
+    "finish": [
+      "mat"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

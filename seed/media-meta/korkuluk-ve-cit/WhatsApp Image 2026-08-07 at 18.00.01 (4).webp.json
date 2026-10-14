@@ -1,0 +1,39 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 18.00.01 (4).webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe Merdiveninde Ahşap Küpeştesi Olan Metal Korkuluk",
+    "en": "Metal Railing with Wooden Handrail on a Garden Staircase"
+  },
+  "alt": {
+    "tr": "Bahçe merdiveninin yanında koyu gri dikmeli korkuluk, üstünde turuncu-kahve ahşap küpeşte; arkada havuz ve çim alan",
+    "en": "Garden staircase with a dark grey balustrade and an orange-brown wooden handrail, with a pool and lawn beyond"
+  },
+  "caption": {
+    "tr": "Koyu renk metal dikmeli korkuluğun üzerine ahşap küpeşte uygulandı. Merdiven, havuz ve çim alanla uyumlu sade bir görünüm verdi.",
+    "en": "A wooden handrail fitted on a dark metal balustrade. It gives the staircase a clean look that suits the pool and lawn below."
+  },
+  "seoFilename": "bahce-merdiveni-ahsap-kupeste-metal-korkuluk",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "merdiven",
+      "havuz kenarı",
+      "dış mekan"
+    ],
+    "finish": [
+      "doğal ahşap tonu",
+      "vernikli",
+      "koyu gri metal dikme"
+    ],
+    "stage": [
+      "finished",
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

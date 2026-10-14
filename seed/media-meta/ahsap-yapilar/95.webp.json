@@ -1,0 +1,37 @@
+{
+  "file": "95.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Yatay Ahşap Cephe Kaplaması ve Antrasit Bant Detayı",
+    "en": "Horizontal Wood Facade Cladding with Anthracite Band Detail"
+  },
+  "alt": {
+    "tr": "Köşeli bir binada bal rengi yatay ahşap cephe kaplaması, ortada koyu gri metal bant ve ahşap çerçeveli pencereler",
+    "en": "Honey-toned horizontal wood cladding on a building corner with a dark grey band and wood-framed windows"
+  },
+  "caption": {
+    "tr": "Yatay çakılmış ahşap cephe kaplaması, katlar arasında koyu gri bant ve ahşap çerçeveli pencerelerle birlikte. Köşe birleşimleri düzgün kapatılmış.",
+    "en": "Horizontally fixed wood facade cladding with a dark grey band between floors and wood-framed windows. The corner joints are neatly finished."
+  },
+  "seoFilename": "yatay-ahsap-cephe-kaplamasi-kose-detayi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "cephe",
+      "dış mekan",
+      "konut",
+      "köşe birleşimi"
+    ],
+    "finish": [
+      "bal rengi vernik",
+      "koyu gri metal bant"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.86
+}

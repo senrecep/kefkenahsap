@@ -1,0 +1,35 @@
+{
+  "file": "54-1.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Taş Duvar Üzerinde Sivri Uçlu Ahşap Çit",
+    "en": "Pointed-Top Wooden Fence on a Stone Wall"
+  },
+  "alt": {
+    "tr": "Taş duvar üzerine dikey ve sivri uçlu ahşap çıtalarla yapılmış uzun çit, arkada mavi gökyüzü ve selvi ağaçları",
+    "en": "Long fence of vertical pointed wooden boards set on a stone retaining wall, with blue sky and cypress trees behind"
+  },
+  "caption": {
+    "tr": "Taş duvarın üzerine dikey çıtalarla çakılmış, uçları sivri kesilmiş ahşap çit. Açık renkli ahşap taşın koyu tonuyla güzel bir kontrast oluşturuyor.",
+    "en": "A wooden fence of vertical boards with pointed tops, mounted on a stone wall. The light timber contrasts nicely with the dark stone."
+  },
+  "seoFilename": "tas-duvar-ustu-sivri-uclu-ahsap-cit",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "taş duvar",
+      "dış mekan"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

@@ -1,0 +1,37 @@
+{
+  "file": "d3e92d1b-3735-4553-8a4c-102c474de306.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Pencere Altı Fan Coil Kasası, Ahşap Üst Tabla",
+    "en": "Under-Window Fan Coil Cover with Wooden Top"
+  },
+  "alt": {
+    "tr": "Pencere önünde siyah gövdeli, ahşap üst tablalı ve ortasında siyah ızgara bulunan fan coil kasası",
+    "en": "Black fan coil cover under a window with a wooden top panel and a black grille set into the middle"
+  },
+  "caption": {
+    "tr": "Pencere altındaki cihaz için ölçüye göre yapılmış kasa. Gövde siyah, üst tabla ahşap; ortadaki ızgara havanın çıkışına açık bırakıldı.",
+    "en": "A made-to-measure cover for the unit under the window. The body is black with a wooden top, and the grille in the middle leaves the air outlet open."
+  },
+  "seoFilename": "pencere-alti-fan-coil-kasasi-ahsap-tabla",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "otel odası",
+      "pencere önü",
+      "iç mekan"
+    ],
+    "finish": [
+      "siyah boya",
+      "doğal ahşap görünümlü üst tabla",
+      "ızgara"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.72
+}

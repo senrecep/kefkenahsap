@@ -1,0 +1,37 @@
+{
+  "file": "dd7c5680-ef9f-4185-baba-4ec637dc4c21.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ofiste Ahşap Duvar Kaplaması ve Kalorifer Kapağı",
+    "en": "Office Wood Wall Paneling and Radiator Cover"
+  },
+  "alt": {
+    "tr": "Ofis odasında ahşap lamba kaplı duvar ve tavan, pencere altında ızgaralı ahşap kalorifer kapağı, koyu renk kapı",
+    "en": "Office with slatted wood wall and ceiling panels, a louvered wood radiator cover under the window and a dark door"
+  },
+  "caption": {
+    "tr": "Duvar ve tavanda dikey ahşap lamba kaplama, pencere altında ızgaralı kalorifer kapağı ve kolon kaplaması. Doğal ahşap tonları koyu zeminle dengelenmiş.",
+    "en": "Vertical wood slat cladding on the wall and ceiling, a louvered radiator cover under the window and a clad column. Natural wood tones are set against dark panels."
+  },
+  "seoFilename": "ofis-ahsap-duvar-kaplama-kalorifer-kapagi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "ofis",
+      "iç mekan",
+      "duvar kaplaması",
+      "tavan kaplaması"
+    ],
+    "finish": [
+      "doğal ahşap tonu",
+      "mat cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.72
+}

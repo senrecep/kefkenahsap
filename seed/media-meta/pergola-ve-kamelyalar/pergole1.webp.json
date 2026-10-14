@@ -1,0 +1,36 @@
+{
+  "file": "pergole1.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Hasır Çatılı Bahçe Kamelyası",
+    "en": "Thatched-Roof Garden Gazebo"
+  },
+  "alt": {
+    "tr": "Çimenlik bahçede koyu kahverengi direkli, hasır çatılı ve ahşap zeminli kare kamelya; yanında küçük bir merdiven var",
+    "en": "Square gazebo with a thatched roof, dark brown posts and a wooden floor on a lawn, with a small set of steps at the side"
+  },
+  "caption": {
+    "tr": "Çit bitkileriyle çevrili çimenlik alanda, hasır çatılı ve yerden yükseltilmiş ahşap zeminli kamelya.",
+    "en": "A thatched-roof gazebo with a raised wooden floor, set on a lawn surrounded by a hedge."
+  },
+  "seoFilename": "hasir-catili-bahce-kamelyasi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "çimenlik",
+      "açık hava"
+    ],
+    "finish": [
+      "koyu kahverengi boya",
+      "hasır çatı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

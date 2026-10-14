@@ -1,0 +1,36 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 17.59.56 (1).webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede Ahşap Çit, Paravan ve Pergola",
+    "en": "Wooden Fence, Screen and Pergola in a Garden"
+  },
+  "alt": {
+    "tr": "Çimenli bahçede ahşap korkuluk çit, yatay çıtalı ahşap paravan ve taş zeminli teras üzerinde pergola",
+    "en": "Garden lawn with a wooden railing fence, horizontal slat screen and a pergola over a stone-paved terrace"
+  },
+  "caption": {
+    "tr": "Müstakil bir evin bahçesinde ahşap çit, yatay çıtalı paravan ve teras üzerindeki pergola aynı ton ve işçilikle yapıldı.",
+    "en": "In the garden of a detached house, the wooden fence, horizontal slat screen and terrace pergola share the same tone and craftsmanship."
+  },
+  "seoFilename": "bahce-ahsap-cit-paravan-pergola",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras",
+      "müstakil ev"
+    ],
+    "finish": [
+      "vernikli",
+      "bal rengi"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.7
+}

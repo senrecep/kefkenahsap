@@ -1,0 +1,36 @@
+{
+  "file": "5c082fb0-87cd-4296-86fe-c2d4d0f8f7e9.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Mutfak Bar Tezgahı: Masif Ahşap Üst, Gri Parlak Ayaklar",
+    "en": "Kitchen Bar Counter with Solid Wood Top and Grey Gloss Legs"
+  },
+  "alt": {
+    "tr": "Mutfak girişinde, parlak gri iki ayak üzerine oturan, ahşap lamelli açık renk bar tezgahı",
+    "en": "Kitchen bar counter with a light wood strip top on two glossy grey legs, beside white cabinets"
+  },
+  "caption": {
+    "tr": "Mutfak ile oturma alanını ayıran bar tezgahı. Üst yüzey ahşap lamellerin yan yana birleştirilmesiyle yapıldı, cilası yapılmış. Ayaklar parlak gri panel.",
+    "en": "A bar counter dividing the kitchen from the living area. The top is made of wood strips glued side by side and finished with a clear coat, set on glossy grey panel legs."
+  },
+  "seoFilename": "mutfak-bar-tezgahi-masif-ahsap-gri-ayak",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "mutfak",
+      "ev",
+      "bar tezgahı"
+    ],
+    "finish": [
+      "vernik",
+      "şeffaf cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

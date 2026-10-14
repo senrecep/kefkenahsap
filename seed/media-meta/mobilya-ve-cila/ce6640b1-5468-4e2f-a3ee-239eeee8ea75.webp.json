@@ -1,0 +1,36 @@
+{
+  "file": "ce6640b1-5468-4e2f-a3ee-239eeee8ea75.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Aynalı Gardırop ve Gri Boyalı Kapı",
+    "en": "Mirrored Wardrobe and Grey Painted Door"
+  },
+  "alt": {
+    "tr": "Yatak odasında boydan boya ayna kaplı dolap yüzeyi, açık gri boyalı çerçeveli kapı ve aynada görünen yatak",
+    "en": "Bedroom with a full-width mirrored wardrobe, a light grey painted paneled door and the bed reflected in the mirror"
+  },
+  "caption": {
+    "tr": "Yatak odası için yaptığımız boydan boya aynalı dolap ve açık gri boyalı, çerçeveli oda kapısı. Aynada karşı duvardaki panelli dolaplar da görünüyor.",
+    "en": "A full-width mirrored wardrobe and a light grey painted paneled room door made for a bedroom. The paneled wardrobes on the opposite wall are visible in the reflection."
+  },
+  "seoFilename": "aynali-gardirop-gri-boyali-kapi-yatak-odasi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "yatak odası",
+      "iç mekan"
+    ],
+    "finish": [
+      "mat boya",
+      "gri boya",
+      "aynalı kapak"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

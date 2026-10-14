@@ -1,0 +1,37 @@
+{
+  "file": "14457265_1270526632991933_8472340271345044235_n.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "İç Yalıtımlı Ahşap Bahçe Saksısı",
+    "en": "Lined Wooden Garden Planter Box"
+  },
+  "alt": {
+    "tr": "İçi yalıtımlı membranla kaplı, koyu renk yatay çıtalı dikdörtgen ahşap saksı.",
+    "en": "Rectangular dark-stained wooden planter box lined with protective waterproof membrane."
+  },
+  "caption": {
+    "tr": "Bahçe ve teraslar için üretilen, iç kısmı drenaj membranıyla korumaya alınmış koyu renk ahşap çiçeklik.",
+    "en": "Custom dark-stained wooden planter box built for outdoor gardens and terraces, featuring an interior protective drainage liner."
+  },
+  "seoFilename": "ahsap-bahce-saksisi-ciceklik",
+  "tags": {
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "bahçe",
+      "teras",
+      "dış mekan"
+    ],
+    "finish": [
+      "ahşap koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

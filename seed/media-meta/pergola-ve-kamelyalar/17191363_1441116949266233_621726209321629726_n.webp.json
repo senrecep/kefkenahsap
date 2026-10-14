@@ -1,0 +1,36 @@
+{
+  "file": "17191363_1441116949266233_621726209321629726_n.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe Duvarı Önünde Beyaz Boyalı Ahşap Bank ve Pergola",
+    "en": "White Painted Wooden Pergola Bench in Front of a Garden Wall"
+  },
+  "alt": {
+    "tr": "Beyaz tuğla desenli bahçe duvarının önünde, üstü kirişli beyaz boyalı ahşap pergola ve içinde sabit ahşap bank",
+    "en": "White painted wooden pergola with a built-in bench, standing in front of a white brick-pattern garden wall"
+  },
+  "caption": {
+    "tr": "Bahçe duvarının önüne yerleştirilen, beyaz boyalı ahşap pergola ve banktan oluşan oturma köşesi. Yan yüzlerde dikey çıtalı ahşap kafes, üstte dalgalı kenarlı kirişler var.",
+    "en": "A seating corner made of a white painted wooden pergola and bench, set against a garden wall. The sides have vertical slat lattice panels and the top beams have scalloped edges."
+  },
+  "seoFilename": "beyaz-boyali-ahsap-pergola-bank",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "bahçe duvarı",
+      "oturma alanı"
+    ],
+    "finish": [
+      "beyaz boya"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

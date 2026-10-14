@@ -1,0 +1,30 @@
+{
+  "file": "1511096_901726189871981_3287958022940860004_n.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Altın Tonlu Ahşap Deck Zemin Detayı",
+    "en": "Golden-Toned Wooden Deck Flooring Detail"
+  },
+  "alt": {
+    "tr": "Altın kahverengi ahşap deck tahtalarının yakından görünümü; tahtalar arasında ince derzler ve damar desenleri seçiliyor.",
+    "en": "Close-up of golden-brown wooden deck boards with thin gaps between them and visible grain patterns."
+  },
+  "caption": {
+    "tr": "Dar tahtalardan döşenmiş deck zemin. Tahtaların arasında ince bir aralık bırakılmış, ek yerleri kademeli ilerliyor.",
+    "en": "Deck flooring laid with narrow boards. A thin gap is left between the boards, and the end joints are staggered."
+  },
+  "seoFilename": "dar-tahta-ahsap-deck-zemin-detay",
+  "tags": {
+    "wood": [],
+    "setting": [],
+    "finish": [],
+    "stage": [
+      "finished",
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

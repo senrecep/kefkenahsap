@@ -1,0 +1,36 @@
+{
+  "file": "8e277099-c75c-43c8-ad57-9fe340d2aa17.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Kapaklı Ahşap Konsol Dolabı, Koyu Cilalı",
+    "en": "Wooden Sideboard Cabinet with Panelled Doors, Dark Varnish"
+  },
+  "alt": {
+    "tr": "Beyaz nişli bir duvarın önünde, çerçeveli iki kapaklı, koyu kahverengi cilalı ahşap konsol dolabı",
+    "en": "Dark brown varnished wooden sideboard with two panelled doors in front of a white wall with recessed shelves"
+  },
+  "caption": {
+    "tr": "Çerçeveli kapakları ve profilli kenarlarıyla klasik çizgide bir ahşap konsol. Yüzeyi koyu kahverengi cilalı; üst tablada yıpranma izleri görülüyor.",
+    "en": "A classic-style wooden sideboard with panelled doors and moulded edges. The surface has a dark brown varnish, and the top shows some signs of wear."
+  },
+  "seoFilename": "kapakli-ahsap-konsol-dolabi-koyu-cila",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "salon",
+      "ev içi",
+      "konsol dolabı"
+    ],
+    "finish": [
+      "koyu kahverengi cila",
+      "vernik"
+    ],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

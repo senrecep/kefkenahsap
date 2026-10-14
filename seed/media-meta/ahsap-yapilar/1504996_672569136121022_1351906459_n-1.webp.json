@@ -1,0 +1,38 @@
+{
+  "file": "1504996_672569136121022_1351906459_n-1.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Kiremit Çatılı Ahşap Dinlenme Tesisi",
+    "en": "Wooden Pavilion with Red Tile Roof"
+  },
+  "alt": {
+    "tr": "Çim alanın kenarında, kırmızı kiremit çatılı, açık gezinti bölümü ve taş kaplı tabanı olan tek katlı ahşap yapı",
+    "en": "Single-storey wooden building with red tile roof, open covered walkway and stone-clad base beside a lawn"
+  },
+  "caption": {
+    "tr": "Kırmızı kiremit çatılı, önü açık ve kolonlu ahşap yapı. Taş kaplı kaide üzerine oturuyor, çevresi çim alanla çevrili.",
+    "en": "A wooden building with a red tile roof and an open, columned front. It sits on a stone-clad base and is surrounded by lawn."
+  },
+  "seoFilename": "kiremit-catili-ahsap-dinlenme-tesisi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "açık alan",
+      "çim saha",
+      "tesis"
+    ],
+    "finish": [
+      "kiremit çatı",
+      "taş kaplama",
+      "doğal ahşap tonu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

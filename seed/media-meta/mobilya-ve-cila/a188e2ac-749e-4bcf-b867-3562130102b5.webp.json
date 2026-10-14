@@ -1,0 +1,37 @@
+{
+  "file": "a188e2ac-749e-4bcf-b867-3562130102b5.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Klasik Yemek Odası Konsolu ve Ayna, Parlak Cila",
+    "en": "Classic Dining Room Sideboard and Mirror with Glossy Varnish"
+  },
+  "alt": {
+    "tr": "Oymalı ve boncuk profilli klasik ahşap konsol, üstünde ayna, yanında kırmızı kumaş döşemeli sandalyeler",
+    "en": "Classic carved wooden sideboard with beaded trim and a mirror, beside chairs upholstered in red fabric"
+  },
+  "caption": {
+    "tr": "Oyma detaylı klasik bir yemek odası konsolu. Yüzey parlak cilayla yenilenmiş, ayna ve sandalyelerle takımı tamamlıyor.",
+    "en": "A classic dining room sideboard with carved details. The surface has a glossy varnish finish, and it forms a set with the mirror and chairs."
+  },
+  "seoFilename": "klasik-yemek-odasi-konsolu-parlak-cila",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "yemek odası",
+      "iç mekan",
+      "klasik mobilya"
+    ],
+    "finish": [
+      "parlak cila",
+      "vernik",
+      "oyma detay"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

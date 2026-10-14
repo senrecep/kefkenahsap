@@ -1,0 +1,36 @@
+{
+  "file": "304d15b1-c115-44c7-a4ab-cba472471691.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Çalışma Köşesi: Çekmeceli Masa ve Duvar Rafları",
+    "en": "Study Corner with Drawer Desk and Wall Shelves"
+  },
+  "alt": {
+    "tr": "Çekmeceli açık renk çalışma masası, yanında mavi minderli oturma bankı, duvarda aynalı dolaplar ve iki kutu raf",
+    "en": "Light wood desk with drawers, a blue-cushioned bench, mirrored wall cabinets and two box shelves"
+  },
+  "caption": {
+    "tr": "Küçük bir odaya göre ölçülen çalışma köşesi: çekmeceli masa, mindeli oturma bankı, aynalı dolaplar ve duvara asılan kutu raflar.",
+    "en": "A study corner fitted to a small room: drawer desk, cushioned bench, mirrored cabinets and wall-mounted box shelves."
+  },
+  "seoFilename": "cekmeceli-calisma-masasi-kutu-raf-oturma-banki",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "çocuk odası",
+      "çalışma odası",
+      "ev içi"
+    ],
+    "finish": [
+      "melamin kaplama",
+      "açık meşe tonu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

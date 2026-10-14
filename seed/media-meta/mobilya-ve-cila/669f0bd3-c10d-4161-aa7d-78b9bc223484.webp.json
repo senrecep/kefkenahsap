@@ -1,0 +1,36 @@
+{
+  "file": "669f0bd3-c10d-4161-aa7d-78b9bc223484.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Gri Boyalı Altı Çekmeceli Şifonyer",
+    "en": "Grey Painted Six-Drawer Dresser"
+  },
+  "alt": {
+    "tr": "Duvar dibinde, üstünde dalgalı kenar korumaları olan, gri boyalı, iki sıra halinde altı çekmeceli şifonyer",
+    "en": "Grey painted dresser with six drawers in two columns and wavy raised edges on top, standing against a wall"
+  },
+  "caption": {
+    "tr": "Üst yüzeyinde dalgalı kenar korumaları bulunan, düğme kulplu ve gri renge boyanmış altı çekmeceli şifonyer. Ölçüye göre yapıldığı yerinde kuruldu.",
+    "en": "A six-drawer dresser painted grey, with round knobs and wavy raised edges on the top surface, installed in place."
+  },
+  "seoFilename": "gri-boyali-alti-cekmeceli-sifonyer",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "iç mekan",
+      "çocuk odası",
+      "yatak odası"
+    ],
+    "finish": [
+      "mat boya",
+      "gri"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

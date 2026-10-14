@@ -1,0 +1,34 @@
+{
+  "file": "1-1.webp",
+  "category": "deck-ve-zeminler",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe İçi Ahşap Deck Platformu",
+    "en": "Wooden Garden Deck Platform"
+  },
+  "alt": {
+    "tr": "Çim bahçede veranda önüne kurulmuş açık renkli ahşap deck platformu ve saksılık basamağı.",
+    "en": "Light wood decking platform and planter step built over green lawn by the patio door."
+  },
+  "caption": {
+    "tr": "Bahçe çıkışına zemin kotundan hafif yükseltilerek uygulanan emprenyeli çam deck platformu ve uyumlu saksılık alanı.",
+    "en": "Treated pine wood deck platform slightly elevated above the lawn by the garden patio door, with a matching planter step."
+  },
+  "seoFilename": "bahce-ahsap-deck-platformu",
+  "tags": {
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe",
+      "veranda"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.98
+}

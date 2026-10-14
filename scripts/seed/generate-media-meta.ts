@@ -46,7 +46,7 @@ async function work(job: Job) {
         role: 'user',
         content: [
           { type: 'text', text: `Kategori: ${job.cat.name.tr} (${job.cat.name.en})` },
-          { type: 'image', image: new Uint8Array(image), mediaType: 'image/jpeg' },
+          { type: 'file', data: new Uint8Array(image), mediaType: 'image/jpeg' },
         ],
       },
     ],

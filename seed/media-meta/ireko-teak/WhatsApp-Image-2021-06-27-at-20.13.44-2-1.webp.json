@@ -1,0 +1,35 @@
+{
+  "file": "WhatsApp-Image-2021-06-27-at-20.13.44-2-1.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Iroko Çıtalı Çerçeveli Panel",
+    "en": "Iroko Slatted Panel with Frame"
+  },
+  "alt": {
+    "tr": "Beyaz seramik zemin üzerinde duran, etrafı çerçeveli, koyu renkli bir çıtası olan açık tonlu ahşap çıta paneli",
+    "en": "Light-toned wooden slat panel with a frame and one darker slat, lying on a white tiled floor"
+  },
+  "caption": {
+    "tr": "Çerçevesi birleştirilmiş, çıtaları yan yana dizilmiş iroko panel. Ortadaki koyu çıta, ahşabın doğal ton farkını gösteriyor.",
+    "en": "Iroko panel with a mitered frame and slats laid side by side. The darker slat in the middle shows the natural tone variation of the wood."
+  },
+  "seoFilename": "iroko-citali-cerceveli-panel",
+  "tags": {
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "atölye"
+    ],
+    "finish": [
+      "doğal"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

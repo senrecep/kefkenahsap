@@ -1,0 +1,38 @@
+{
+  "file": "45b1a48e-cfa7-4bae-b940-7eefe66ed65c.webp",
+  "category": "mobilya-ve-cila",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ahşap Ofis Duvar Ünitesi ve Çıtalı Tavan Uygulaması",
+    "en": "Custom Wood Office Wall Unit and Slatted Ceiling"
+  },
+  "alt": {
+    "tr": "Ofis odasında meşe kaplama dolaplar, dekoratif raf ünitesi ve tavanda ahşap çıta detayları.",
+    "en": "Office interior featuring oak veneer cabinets, display shelf unit, and a wooden slatted ceiling."
+  },
+  "caption": {
+    "tr": "Ofis için tasarlanan meşe kaplama depolama dolapları, arka panelli açık raf ünitesi ve tavandaki çıtalı ahşap tavan kaplaması.",
+    "en": "Custom oak-veneered office storage cabinetry, open display shelving with a dark backdrop, and decorative wooden ceiling slats."
+  },
+  "seoFilename": "ahsap-ofis-duvar-unitesi-ve-tavan-citasi",
+  "tags": {
+    "wood": [
+      "meşe"
+    ],
+    "setting": [
+      "ofis",
+      "iç mekan",
+      "çalışma odası"
+    ],
+    "finish": [
+      "doğal cila",
+      "mat vernik"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

@@ -1,0 +1,38 @@
+{
+  "file": "24fd39cf-3f99-4e8a-a3ae-848017a1924b.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Dikey Çıtalı Ahşap Panolarla Ayrılmış Mutfak",
+    "en": "Kitchen Behind Black Vertical Slat Screens"
+  },
+  "alt": {
+    "tr": "Siyah dikey ahşap çıta panoların arkasında beyaz dolaplı, ahşap tezgâhlı ve çelik buzdolaplı bir mutfak",
+    "en": "Kitchen with white cabinets, wooden worktop and steel fridge behind black vertical wooden slat screens"
+  },
+  "caption": {
+    "tr": "Siyah boyalı dikey çıta panolar mutfağı ortak alandan ayırıyor. Beyaz dolapların arasında doğal tonlu ahşap tezgâh ve tezgâh arkası öne çıkıyor.",
+    "en": "Black-painted vertical slat screens separate the kitchen from the shared space. A natural-toned wooden worktop and backsplash stand out between the white cabinets."
+  },
+  "seoFilename": "dikey-citali-ahsap-panolu-mutfak",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "mutfak",
+      "ofis",
+      "bölme panosu",
+      "iç mekan"
+    ],
+    "finish": [
+      "siyah boya",
+      "doğal ahşap tezgâh",
+      "beyaz dolap"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.72
+}

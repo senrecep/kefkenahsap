@@ -1,0 +1,37 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 18.00.00 (1).webp",
+  "category": "deck-ve-zeminler",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe Ahşap Deck ve Oturma Alanı Uygulaması",
+    "en": "Garden Wooden Deck and Integrated Bench Seating"
+  },
+  "alt": {
+    "tr": "Bahçe içinde çim ve çalıların kenarına döşenmiş ahşap deck, korkuluk ve ahşap basamak oturma alanı.",
+    "en": "Wooden decking with built-in wooden bench and railing in a lush garden setting."
+  },
+  "caption": {
+    "tr": "Bahçede yeşilliklerle çevrili alana uygulanan ahşap deck kaplama, kenar korkulukları ve ahşap oturma basamağı montajı tamamlanmış hali.",
+    "en": "Completed installation of an outdoor wooden deck with integrated low bench seating and safety railings in a private garden."
+  },
+  "seoFilename": "bahce-ahsap-deck-kaplama-ve-oturma-alani",
+  "tags": {
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "teras"
+    ],
+    "finish": [
+      "deck yağı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.96
+}

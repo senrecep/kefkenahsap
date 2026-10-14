@@ -1,0 +1,37 @@
+{
+  "file": "cd502767-153f-4a5d-a6c4-be4b0cfa51fd.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Şarap Rafı ve Şişe Gözleri, Meşe Görünümlü Duvar Ünitesi",
+    "en": "Wall-Height Wine Rack Unit with Bottle Slots"
+  },
+  "alt": {
+    "tr": "Duvar boyunca uzanan açık tonlu ahşap şarap dolabı; üstte dikey şişe gözleri, altta eğimli raflar ve çapraz bölmeler",
+    "en": "Light wood wine rack wall with vertical bottle slots above, angled shelves in the middle and diagonal cubbies below"
+  },
+  "caption": {
+    "tr": "Duvarın tamamını kaplayan şarap rafı. Üstte dikey şişe gözleri, ortada yatık şişe rafları, altta çapraz bölmeler var. Üst kenardaki LED şerit ışığı rafların üzerine düşüyor.",
+    "en": "A wine rack covering the full wall: vertical bottle slots at the top, angled bottle shelves in the middle and diagonal cubbies at the bottom. An LED strip along the top edge lights the shelves."
+  },
+  "seoFilename": "sarap-rafi-duvar-unitesi-led-aydinlatmali",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "iç mekan",
+      "şarap odası",
+      "duvar ünitesi"
+    ],
+    "finish": [
+      "vernikli",
+      "açık ton"
+    ],
+    "stage": [
+      "finished",
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

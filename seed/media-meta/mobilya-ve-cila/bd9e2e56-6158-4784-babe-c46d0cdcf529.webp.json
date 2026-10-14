@@ -1,0 +1,37 @@
+{
+  "file": "bd9e2e56-6158-4784-babe-c46d0cdcf529.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Beyaz Çerçeveli Kapaklı Mutfak Dolapları",
+    "en": "White Shaker-Style Kitchen Cabinets"
+  },
+  "alt": {
+    "tr": "Beyaz çerçeveli kapaklı mutfak dolapları, mermer desenli tezgah, ocak, ankastre fırın ve davlumbaz ile L planlı mutfak",
+    "en": "L-shaped kitchen with white framed-door cabinets, marble-look countertop, hob, built-in oven and hood"
+  },
+  "caption": {
+    "tr": "Beyaz boyalı, çerçeveli kapaklı mutfak dolapları. Tezgah ve arka panel açık renk mermer desenli, ocak ile fırın dolap hattına yerleştirilmiş.",
+    "en": "Kitchen cabinets with painted white framed doors. The countertop and backsplash have a light marble pattern, with the hob and oven set into the cabinet run."
+  },
+  "seoFilename": "beyaz-capli-kapakli-mutfak-dolaplari",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "mutfak",
+      "iç mekan",
+      "ev"
+    ],
+    "finish": [
+      "beyaz boya",
+      "mat cila"
+    ],
+    "stage": [
+      "finished",
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

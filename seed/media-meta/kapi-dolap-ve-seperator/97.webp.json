@@ -1,0 +1,36 @@
+{
+  "file": "97.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe Duvarına Yaslı Ahşap Depo",
+    "en": "Wooden Storage Shed Beside a Garden Wall"
+  },
+  "alt": {
+    "tr": "Bahçede duvara yaslanmış, yeşil shingle çatılı, yatay kaplamalı ve tek kapılı açık renk ahşap depo",
+    "en": "Light wooden storage shed with horizontal cladding, a single door and a green shingle roof, set against a garden wall"
+  },
+  "caption": {
+    "tr": "Bahçe köşesine yapılmış tek kapılı küçük ahşap depo. Yatay kaplama tahtaları ve yeşil shingle çatısıyla bahçedeki aletlere yer açıyor.",
+    "en": "A small single-door wooden shed built in a garden corner, with horizontal cladding boards and a green shingle roof for storing garden tools."
+  },
+  "seoFilename": "bahce-ahsap-depo-tek-kapili",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "depo"
+    ],
+    "finish": [
+      "shingle çatı",
+      "yatay kaplama"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,36 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 17.59.58 (1).webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ahşap Yükseltilmiş Bahçe Yatakları",
+    "en": "Wooden Raised Garden Beds"
+  },
+  "alt": {
+    "tr": "Toprakla doldurulmayı bekleyen açık renk ahşap yükseltilmiş bahçe yatakları, arkada servi ağaçları ve çıta kafes panel",
+    "en": "Light wooden raised garden beds waiting to be filled with soil, with cypress trees and a lattice panel behind"
+  },
+  "caption": {
+    "tr": "Dış mekânda kurulan ahşap yükseltilmiş yataklar. İç yüzeyleri membranla kaplanmış, toprak dolgusu başlamış.",
+    "en": "Raised wooden beds built outdoors. The inner faces are lined with membrane and soil filling has begun."
+  },
+  "seoFilename": "ahsap-yukseltilmis-bahce-yatagi",
+  "tags": {
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "bahçe",
+      "dış mekan"
+    ],
+    "finish": [
+      "doğal"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.8
+}

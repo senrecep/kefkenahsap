@@ -1,0 +1,36 @@
+{
+  "file": "99.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe Duvarı Kenarında Çift Kapaklı Ahşap Depo Dolabı",
+    "en": "Double-Door Wooden Storage Cabinet Beside a Garden Wall"
+  },
+  "alt": {
+    "tr": "Taş kaplı villa duvarının yanında, bahçede duran koyu kahverengi yatay çıtalı çift kapaklı ahşap depo dolabı",
+    "en": "Dark brown wooden storage cabinet with horizontal slats and double doors, standing in a garden beside a stone-clad wall"
+  },
+  "caption": {
+    "tr": "Bahçe duvarının köşesine yerleştirdiğimiz, tek eğimli çatılı ve çift kapaklı ahşap depo dolabı. Tabanına çakıl serildi, kapılar paslanmaz menteşe ve sürgüyle kapanıyor.",
+    "en": "A wooden storage cabinet with a single-pitch roof and double doors, placed in the corner of the garden wall. Gravel was laid around the base, and the doors close with metal hinges and a latch."
+  },
+  "seoFilename": "bahce-ahsap-depo-dolabi-cift-kapakli",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "villa",
+      "dış mekan"
+    ],
+    "finish": [
+      "vernik",
+      "koyu ceviz tonu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

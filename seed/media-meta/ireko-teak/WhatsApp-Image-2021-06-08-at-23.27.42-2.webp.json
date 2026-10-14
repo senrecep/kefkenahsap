@@ -1,0 +1,39 @@
+{
+  "file": "WhatsApp-Image-2021-06-08-at-23.27.42-2.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe Terasında Ahşap Deck ve Tavan Çıtası",
+    "en": "Wooden Deck and Slatted Ceiling on a Garden Terrace"
+  },
+  "alt": {
+    "tr": "Kapalı teras: kırmızımsı kahverengi ahşap zemin, çıtalı ahşap tavan, ortada taş tezgâhlı bar ve sarkıt lambalar",
+    "en": "Covered terrace with reddish-brown wood decking, slatted wood ceiling, a patterned bar counter and pendant lamps"
+  },
+  "caption": {
+    "tr": "Zeminde sıcak tonlu ahşap deck, tavanda sık aralıklı ahşap çıtalar var. Arka duvar da dikey çıtalarla kaplanmış, ortada bar tezgâhı duruyor.",
+    "en": "Warm-toned wood decking on the floor and closely spaced wood slats overhead. The back wall is clad in vertical slats, with a bar counter in the middle."
+  },
+  "seoFilename": "bahce-terasi-ahsap-deck-cita-tavan",
+  "tags": {
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "teras",
+      "bahçe",
+      "dış mekan",
+      "bar"
+    ],
+    "finish": [
+      "doğal",
+      "yağlı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.72
+}

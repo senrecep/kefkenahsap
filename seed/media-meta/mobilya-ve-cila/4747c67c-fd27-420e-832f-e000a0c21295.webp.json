@@ -1,0 +1,36 @@
+{
+  "file": "4747c67c-fd27-420e-832f-e000a0c21295.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Açık Ofis Çalışma Masaları ve Kumaş Paravanlar",
+    "en": "Open Office Desks with Upholstered Partitions"
+  },
+  "alt": {
+    "tr": "Açık ofiste beyaz çalışma masaları, gri kumaş kaplı dikey dikişli paravanlar, arkada metal raf ve cam bölmeler",
+    "en": "Open-plan office with white desks, gray upholstered ribbed partitions, a metal shelf unit and glass walls behind"
+  },
+  "caption": {
+    "tr": "Açık ofis düzeninde beyaz çalışma masaları, aralarında gri kumaş kaplı paravanlar. Arka planda metal raflı bölme ve cam bölmeli toplantı alanı görünüyor.",
+    "en": "An open-plan office layout with white desks separated by gray fabric-upholstered partitions. A metal shelving divider and glass-walled meeting area are visible in the background."
+  },
+  "seoFilename": "acik-ofis-calisma-masalari-kumas-paravan",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "ofis",
+      "açık ofis",
+      "ticari mekan"
+    ],
+    "finish": [
+      "kumaş kaplama",
+      "beyaz yüzey"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.6
+}
