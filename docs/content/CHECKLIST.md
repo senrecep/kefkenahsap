@@ -148,3 +148,68 @@ Sahibin onaylaması gerekenler:
 - **EN marka adı:** EN metinlerde "Kefken Ahşap Dekorasyon" çevrilmeden kullanılır. siteSettings'in EN açıklaması #96'da düzeltiliyor.
 - **İletişim sayfasında** adres, telefon ve e-posta yok. Bunlar siteSettings'ten render edilir; aynı bilgiyi iki yerde tutmamak için gövdeye yazılmadı. Çalışma saatleri bilinmediği için onlar da yazılmadı.
 - **SEO alanları** (`seo.title` / `seo.description`) bu geçişte doldurulmadı.
+
+## Fiyat rehberi (#61): sahibinden bekleniyor
+
+Fiyat aralıklarını yalnızca sahibi verebilir. Bu geçişte hiçbir fiyat yazılmadı ve her kategoride `priceGuide` boş. Alan boş kaldığı sürece sitede fiyat görünmez. #61, bu bilgiler gelmeden kapanamaz.
+
+Her kategori için şunlar gerekiyor (admin › Kategoriler › "Fiyat rehberi"):
+- **Birim** (`unit`): m², metre ya da adet.
+- **En az** (`min`) ve **En çok** (`max`): bu birim başına fiyat aralığı.
+- **Para birimi** (`currency`): TRY, EUR ya da USD.
+- **Fiyat güncelleme tarihi** (`updatedAt`): fiyatın geçerli olduğu tarih. Sitede "Güncellendi" olarak görünür.
+- İsteğe bağlı **Not** (`note`, TR/EN): aralığı neyin değiştirdiği, ör. "ahşap türüne ve zemine göre değişir".
+
+| Kategori | Birim | En az | En çok | Para birimi | Tarih |
+|---|---|---|---|---|---|
+| Ahşap Yapılar | | | | | |
+| Deck ve Zeminler | | | | | |
+| Pergola ve Kamelyalar | | | | | |
+| Korkuluk ve Çit | | | | | |
+| Köprü ve İskele | | | | | |
+| Merdivenler | | | | | |
+| Çiçeklik ve Oturma Grubu | | | | | |
+| Kapı, Dolap ve Seperatör | | | | | |
+| İroko ve Teak | | | | | |
+| Mobilya ve Cila | | | | | |
+| Boya, Tamir ve Bakım | | | | | |
+
+Bir kategoride tek bir aralık anlamlı değilse (ör. Mobilya ve Cila, Köprü ve İskele) o satır boş bırakılabilir. Boş satır sitede hiçbir şey göstermez.
+
+## Proje taslakları (#61)
+
+#33'teki 17 taslak projeye kısa bir hikâye (TR + EN) ve EN başlık eklendi. Kaynak `seed/content/project-stories.json`, yükleyici `scripts/seed/project-stories.ts`. Yükleyici yalnızca hiç yayınlanmamış taslaklarda ve yalnızca boş alanları doldurur. Yazdığı her şey taslaktır; tekrar çalıştırıldığında hiçbir şey yazmaz.
+
+Hikâyeler yalnızca fotoğrafta görüneni anlatıyor: yapı, görünen malzeme ve renk, çevre. Konum, müşteri, ölçü, süre ve yıl yazılmadı; başlıklardaki yıllar (2014, 2016) fotoğrafın EXIF tarihinden geliyor. Ahşap türü hikâyelere yazılmadı. Aşağıdaki tahminler yalnızca bu listede duruyor; doğruysa admin'de "Ahşap türü" alanına girilebilir.
+
+Her proje için sahibinden beklenenler: il/ilçe, yıl, ölçü ve süre, ahşap türü, son kat. Bunlar bilinmeden proje yayınlanabilir, ama alanlar boş kalır.
+
+| # | Taslak (TR başlık) | Hikâye TR / EN (kelime) | Ahşap türü | Sahibine soru |
+|---|---|---|---|---|
+| 1 | Balkon deck'i ve metal korkuluk | 66 / 88 | iroko (görselden tahmin) | Metal korkuluğu siz mi yaptınız? Küpeşte ahşap mı? |
+| 2 | Bahçede yükseltilmiş küçük deck platformu | 64 / 82 | tanımlanamadı (iroko ya da teak olabilir) | Platformlar taşınabilir mi, yere sabit mi? |
+| 3 | Kapı önünde küçük bahçe deck'i | 63 / 92 | tanımlanamadı (bal rengi sert ağaç) | Fotoğraflar farklı evlerden görünüyor. Tek proje mi, ayrılsın mı? |
+| 4 | Ahşap teras, korkuluk ve çatılı kamelya (2014) | 65 / 79 | emprenyeli çam (görselden tahmin) | 2014 işin yılı mı? Gölgeliklerin çatı kaplaması nedir? |
+| 5 | Bahçe sınırında ahşap çit | 60 / 80 | emprenyeli çam (görselden tahmin) | Çit boyandı ya da yağlandı mı, yoksa ham mı bırakıldı? |
+| 6 | Su kenarında ahşap yürüme yolu | 62 / 69 | emprenyeli çam (görselden tahmin) | Kurum ya da referans işi mi? Referansa bağlansın mı? |
+| 7 | Çapraz korkuluklu ahşap dış merdiven (2016) | 65 / 96 | emprenyeli çam (görselden tahmin) | Birden fazla merdiven görünüyor (aynı site?). Tek proje mi? 2016 işin yılı mı? |
+| 8 | Dış mekân ahşap dolapları | 68 / 77 | çam, koyu koruyucu katlı (görselden tahmin) | Yağmur borusunun yanındaki kutu klima kasası mı, dolap mı? |
+| 9 | Terasta pergola, çıtalı duvar ve dış mutfak | 67 / 81 | deck: iroko (görselden tahmin); çıtalar tanımlanamadı | Metal çerçeveyi siz mi yaptınız? Çıtalar hangi ağaç? |
+| 10 | Yarım daire ahşap oturma bankı | 73 / 105 | iroko (görselden tahmin) | Beton zemin sizin işiniz mi? |
+| 11 | Ahşap yemek masası ve bank | 63 / 81 | iroko (görselden tahmin) | Takım kaç bank? Bahçe için mi yapıldı? |
+| 12 | Beyaz mutfak dolapları | 62 / 77 | boyalı, tür görünmüyor | İki farklı mutfak görünüyor. Tek proje mi? Gövde ve kapak malzemesi nedir? |
+| 13 | Ahşap tezgâhlı mutfak bar masası | 60 / 82 | tanımlanamadı (lamelli masif panel) | Tabla ve asma raf hangi ağaç? |
+| 14 | Kapaklı ahşap dolap | 66 / 86 | tanımlanamadı | Yeni imalat mı, yenileme mi? Fotoğraflar işin öncesi mi? |
+| 15 | Ofis resepsiyon bankosu ve çalışma alanı | 63 / 82 | tanımlanamadı (açık renkli lamelli panel) | Hangi parçalar sizin işiniz (banko, bölmeler, raflar, mutfak)? |
+| 16 | Beyaz oymalı vitrin ve konsol | 63 / 81 | boyalı, tür görünmüyor | İmalat mı, boya ve patina yenilemesi mi? |
+| 17 | Ahşap çıta kaplamalı ofis odası | 66 / 91 | tanımlanamadı | Çıtalar masif mi, kaplama mı? Dolaplar ve kalorifer kapağı da sizin mi? |
+
+EN başlık ve hikâyeler ilk geçiştir. **Dikkat:** EN başlık doluyken proje yayınlanırsa EN sayfa da açılır (EN slug başlıktan üretilir; slug + başlık dolu olan dil yayında sayılır). Yayınlamadan önce EN metni gözden geçirin ya da EN başlığı ve hikâyeyi boşaltın.
+
+Hikâyeler yalnızca görüneni anlatır: "yağlanmış" gibi son kat bilgisi yerine "parlak görünüyor" yazıldı. Gerçek son kat admin'deki "Finish / renk" alanına girilir.
+
+## Kategori metinleri ve SSS (#61)
+
+Kategori metinleri ve SSS #34'te yazıldı ve testler bunları her kategori için zorunlu tutuyor (300–600 kelime, soru H2'ler, 4–6 SSS). Yukarıdaki "Sahibinin onaylaması gereken cümleler" ve "Açık sorular" sahibine sorulan sorulardır, metin boşluğu değildir. Bu yüzden bu geçişte kategori metinlerine dokunulmadı. Sahibin cevapları gelince ilgili cümleler düzeltilecek ya da silinecek.
+
+"Notlar"daki boş SEO alanları (`seo.title` / `seo.description`) bir boşluk değildir. Kategori sayfası boş `seo.title` için kategori adını, boş `seo.description` için kısa açıklamayı kullanır (`src/app/(frontend)/[locale]/[category]/page.tsx`). Bu yüzden bu alanlar da boş bırakıldı.

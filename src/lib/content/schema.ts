@@ -22,10 +22,15 @@ const guideSchema = z.object({ relatedCategories: z.array(text), tr: guideLocale
 
 const referencesSchema = z.array(z.object({ name: text, location: z.object({ tr: text, en: text }) }))
 
+// #61: neutral short stories for the draft projects, keyed by photo-cluster key (seed/clusters/clusters.json).
+// TR keeps the cluster's working title; EN also carries a title, since the drafts have none in EN.
+const projectStoriesSchema = z.record(z.string(), z.object({ tr: z.object({ story: text }), en: z.object({ title: text, story: text }) }))
+
 export type CategoryContent = z.infer<typeof categorySchema>
 export type PageContent = z.infer<typeof pageSchema>
 export type GuideContent = z.infer<typeof guideSchema>
 export type ReferenceContent = z.infer<typeof referencesSchema>
+export type ProjectStoriesContent = z.infer<typeof projectStoriesSchema>
 
 const parseWith =
   <T>(schema: z.ZodType<T>) =>
@@ -42,6 +47,7 @@ export const parseCategory = parseWith(categorySchema)
 export const parsePage = parseWith(pageSchema)
 export const parseGuide = parseWith(guideSchema)
 export const parseReferences = parseWith(referencesSchema)
+export const parseProjectStories = parseWith(projectStoriesSchema)
 
 /** Words in a markdown text, ignoring heading/list/emphasis markers. */
 export const wordCount = (md: string): number => md.replace(/^\s*[-*]\s+/gm, ' ').replace(/[#*_>`]+/g, ' ').split(/\s+/).filter((w) => /\p{L}|\p{N}/u.test(w)).length
