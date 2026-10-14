@@ -20,6 +20,7 @@ import { tagImageTask } from './jobs/tagImage'
 import { AiUsage } from './collections/AiUsage'
 import { AiSettings } from './globals/AiSettings'
 import { isFakeAi } from './ai/models'
+import { aiTranslateEndpoint } from './endpoints/ai'
 import { resendAdapter } from '@payloadcms/email-resend'
 import { redirectsPlugin } from '@payloadcms/plugin-redirects'
 import { hiddenFromEditor, isStaff } from './access'
@@ -88,6 +89,7 @@ export default buildConfig({
         }
       },
     },
+    aiTranslateEndpoint,
   ],
   i18n: { supportedLanguages: { tr, en, ar }, fallbackLanguage: 'tr' },
   localization: {

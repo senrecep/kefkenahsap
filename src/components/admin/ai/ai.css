@@ -102,3 +102,25 @@
   border-block-end: 1px solid var(--theme-elevation-100);
   text-align: start;
 }
+
+.ai-action {
+  display: grid;
+  gap: 0.5rem;
+  margin-block-end: 1.5rem;
+}
+
+.ai-action__hint,
+.ai-action__status {
+  margin: 0;
+  color: var(--theme-elevation-650);
+}
+
+.ai-action__status:empty {
+  display: none;
+}
+
+.ai-action__error {
+  margin: 0;
+  color: var(--theme-error-500);
+  font-weight: 600;
+}

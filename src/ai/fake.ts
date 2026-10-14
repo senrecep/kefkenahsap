@@ -20,9 +20,28 @@ export const FAKE_TAG_IMAGE = {
 export type FakeCall = { prompt: { role: string; content: unknown }[] }
 type Responder = (call: FakeCall) => unknown
 
+const userText = (call: FakeCall) =>
+  call.prompt
+    .filter((m) => m.role === 'user')
+    .flatMap((m) => (Array.isArray(m.content) ? m.content : []))
+    .map((p: { type?: string; text?: string }) => (p.type === 'text' ? p.text : ''))
+    .join('')
+
 const RESPONDERS: Partial<Record<AiTask, Responder>> = {
   tagImage: () => FAKE_TAG_IMAGE,
+  // "[EN] <source text, trimmed like a real model would>" per segment and target locale: deterministic and easy to assert.
+  translate: (call) => {
+    const input = JSON.parse(userText(call)) as { targets: string[]; segments: { id: string; text: string }[] }
+    return {
+      items: input.segments.map((s) => ({ id: s.id, ...Object.fromEntries(input.targets.map((t) => [t, `[${t.toUpperCase()}] ${s.text.trim()}`])) })),
+    }
+  },
 }
+
+/** The last fake calls (system prompt + model id), newest last; tests read what the model was told. */
+export const fakeCalls: { task: AiTask; model: string; system: string }[] = []
+const systemText = (call: FakeCall) =>
+  call.prompt.filter((m) => m.role === 'system').map((m) => (typeof m.content === 'string' ? m.content : '')).join('\n')
 
 /** Deterministic stand-in for an OpenRouter model (AI_FAKE_PROVIDER=1). Answers with the model id it was asked for. */
 export function fakeModel(task: AiTask, id: string): LanguageModel {
@@ -32,6 +51,8 @@ export function fakeModel(task: AiTask, id: string): LanguageModel {
     doGenerate: async (call) => {
       const respond = RESPONDERS[task]
       if (!respond) throw new Error(`No fake response for task ${task}`)
+      fakeCalls.push({ task, model: id, system: systemText(call as FakeCall) })
+      if (fakeCalls.length > 20) fakeCalls.shift()
       return {
         content: [{ type: 'text', text: JSON.stringify(respond(call as FakeCall)) }],
         finishReason: { unified: 'stop', raw: 'stop' },
