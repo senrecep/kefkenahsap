@@ -1,6 +1,8 @@
 import { expect, test, type APIRequestContext } from '@playwright/test'
 import sharp from 'sharp'
 
+import { adminApi, createDoc, deleteDocs } from '../helpers/content'
+
 // PLAN §7 Teknik 2–4: every public template has a title, description, self-canonical, hreflang (+ x-default),
 // og:locale and a 1200×630 OG image — and never an accidental noindex / nosnippet / max-snippet:0.
 // The meta tag is asserted, not the header: non-production responses carry X-Robots-Tag noindex on purpose.
@@ -33,9 +35,26 @@ async function firstImagePath(request: APIRequestContext) {
 }
 
 test.describe('page metadata', () => {
+  // Own bilingual category (CI starts from an empty DB, so no seed slugs).
+  let api: APIRequestContext
+  const stamp = Date.now()
+  const category = { tr: `e2e-meta-${stamp}`, en: `e2e-meta-en-${stamp}` }
+  let categoryId = 0
+
+  test.beforeAll(async () => {
+    api = await adminApi()
+    categoryId = (await createDoc(api, 'categories', { _status: 'published', name: `E2E Meta ${stamp}`, slug: category.tr, shortDesc: 'Deck ve zemin işleri.' })).id
+    const en = await api.patch(`/api/categories/${categoryId}?locale=en`, { data: { name: `E2E Meta EN ${stamp}`, slug: category.en, shortDesc: 'Decking and flooring.' } })
+    expect(en.ok()).toBe(true)
+  })
+
+  test.afterAll(async () => {
+    await deleteDocs(api, 'categories', [categoryId])
+  })
+
   test('public templates are indexable with complete tags', async ({ request }) => {
     const image = await firstImagePath(request)
-    for (const [path, og] of [['/tr', 'tr_TR'], ['/en', 'en_US'], ['/tr/galeri', 'tr_TR'], ['/en/gallery', 'en_US'], ['/tr/hakkimizda', 'tr_TR'], ['/en/about', 'en_US'], ['/tr/kvkk', 'tr_TR'], ['/en/cookies', 'en_US'], ['/tr/iletisim', 'tr_TR'], ['/en/contact', 'en_US'], ['/tr/projeler', 'tr_TR'], ['/en/references', 'en_US'], ['/tr/hizmetlerimiz', 'tr_TR'], ['/en/decking-and-flooring', 'en_US'], [image, 'tr_TR']] as const) {
+    for (const [path, og] of [['/tr', 'tr_TR'], ['/en', 'en_US'], ['/tr/galeri', 'tr_TR'], ['/en/gallery', 'en_US'], ['/tr/hakkimizda', 'tr_TR'], ['/en/about', 'en_US'], ['/tr/kvkk', 'tr_TR'], ['/en/cookies', 'en_US'], ['/tr/iletisim', 'tr_TR'], ['/en/contact', 'en_US'], ['/tr/projeler', 'tr_TR'], ['/en/references', 'en_US'], ['/tr/hizmetlerimiz', 'tr_TR'], [`/tr/${category.tr}`, 'tr_TR'], [`/en/${category.en}`, 'en_US'], [image, 'tr_TR']] as const) {
       const m = await head(request, path)
       expect(m.title, path).toBeTruthy()
       expect(m.description, path).toBeTruthy()
