@@ -32,3 +32,12 @@ Kuralların tek kaynağı **[CONTENT-STYLE-TR.md](CONTENT-STYLE-TR.md)**: ton, e
 
 ## Görsel etiketleme (`prompts/tagImage.ts`, `tagImage@2`)
 Çıktı: TR/EN başlık (≤80), alt metin (≤125, "fotoğraf" diye başlamaz), açıklama (≤240), ASCII SEO dosya adı, etiketler (ahşap/mekan/finish/aşama), `categoryAgrees`, `confidence`. Filigran yazısı hiçbir metne girmez.
+
+## Çeviri (`prompts/translate.ts`, `translate@1`)
+Admin'de kategori, proje, sayfa ve yazı düzenleme ekranının yan panelindeki **AI ile çevir** düğmesi (`POST /api/ai/translate`):
+- Başlığı (kategoride adı) boş olan diller hedeftir; kaynak, başlığı dolu ilk dildir. Tüm hedef diller tek çağrıda istenir.
+- Modele yalnızca düz metin alanları ve Lexical metin düğümleri gider (`src/ai/translate/segments.ts`); zengin metin JSON'u düğüm düğüm aynı kurulur, yalnızca `text` değerleri değişir. Hedef dilde dolu olan alan gönderilmez ve üzerine yazılmaz. Müşteri yorumu çevrilmez.
+- Terim sözlüğü sistem prompt'una eklenir; adres (slug) çevrilen başlıktan slug kancasıyla üretilir.
+- Sonuç her dil için **taslak sürüm** olarak kaydedilir; yayındaki sürüm değişmez, yayın bir insanın "Yayınla"sıyla olur.
+- **Dikkat:** Payload'da yayın durumu dil başına değil, kayıt başınadır. Bir sonraki **Yayınla** bu dilleri de yayınlar; önce kontrol edin. Düğme bunu başarı mesajında da söyler. (Payload 3.90'daki deneysel `localizeStatus` dil başına yayını sağlar ama şema göçü ve herkese açık okuma kurallarında (`_status`) değişiklik ister; deneysel olduğu için şimdilik açılmadı.)
+- Uç nokta yalnızca giriş yapmış yönetim kullanıcısına ve `application/json` isteğe açıktır, kullanıcı başına 10 dakikada 10 istekle sınırlıdır ve aylık bütçe kontrolünden geçer (`src/ai/guard.ts`). Bir basışta en çok ~20.000 karakter kaynak metin gönderilir (`Translate.TooLong`); tahmini maliyet kalan bütçeyi aşarsa model çağrılmaz (`AI.BudgetInsufficient`). Hata mesajları her kod için sabit Türkçe metindir; ayrıntılar yalnızca sunucu günlüğüne yazılır.

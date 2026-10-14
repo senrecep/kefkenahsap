@@ -6,6 +6,7 @@ import { slugFrom } from '@/hooks/slug'
 // Fixed route segments (TR internal + translated public paths): a category slug may not shadow them.
 const RESERVED = new Set(['hizmetlerimiz', 'galeri', 'projeler', 'rehber', 'referanslar', 'hakkimizda', 'iletisim', 'ara', 'kvkk', 'cerez-politikasi', 'services', 'gallery', 'projects', 'guides', 'references', 'about', 'contact', 'search', 'privacy', 'cookies', 'admin', 'api', 'wp-content'])
 import { revalidateAfterChange, revalidateAfterDelete } from '@/hooks/revalidate'
+import { aiTranslateField } from './aiFields'
 
 export const Categories: CollectionConfig = {
   slug: 'categories',
@@ -25,6 +26,7 @@ export const Categories: CollectionConfig = {
   versions: { drafts: true },
   fields: [
     { name: 'name', type: 'text', localized: true, required: true, label: 'Ad' },
+    aiTranslateField,
     {
       name: 'slug',
       type: 'text',
