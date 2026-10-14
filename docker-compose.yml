@@ -1,0 +1,60 @@
+# Local development services. The app itself runs with `bun dev` on the host.
+# Deploys use docker-compose.dokploy.yml (F1a).
+# Host networking: works even when the bridge driver is unavailable (e.g. kernel updated, not yet rebooted).
+# S3: MinIO stopped publishing Docker images in 2025, so local dev uses RustFS (S3-compatible). Prod uses Cloudflare R2.
+name: kefkenahsap
+
+services:
+  postgres:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    network_mode: host
+    environment:
+      POSTGRES_USER: kefken
+      POSTGRES_PASSWORD: kefken
+      POSTGRES_DB: kefken
+      PGPORT: 5433
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U kefken -d kefken -p 5433']
+      interval: 5s
+      retries: 10
+
+  s3:
+    image: rustfs/rustfs:1.0.1
+    profiles: [local]
+    restart: unless-stopped
+    network_mode: host
+    environment:
+      RUSTFS_ADDRESS: ':9000'
+      RUSTFS_CONSOLE_ADDRESS: ':9001'
+      RUSTFS_CONSOLE_ENABLE: 'true'
+      RUSTFS_ACCESS_KEY: minio
+      RUSTFS_SECRET_KEY: minio12345
+    volumes:
+      - s3data:/data
+
+  # Creates the public media bucket (anonymous read) and the private leads bucket.
+  s3-init:
+    image: amazon/aws-cli:2.38.0
+    profiles: [local]
+    network_mode: host
+    depends_on: [s3]
+    environment:
+      AWS_ACCESS_KEY_ID: minio
+      AWS_SECRET_ACCESS_KEY: minio12345
+      AWS_DEFAULT_REGION: us-east-1
+    entrypoint: ['/bin/sh', '-c']
+    command:
+      - |
+        E=--endpoint-url=http://localhost:9000
+        for i in $$(seq 1 30); do aws $$E s3 ls >/dev/null 2>&1 && break; sleep 1; done
+        aws $$E s3 mb s3://kefken-media 2>/dev/null || true
+        aws $$E s3 mb s3://kefken-leads 2>/dev/null || true
+        aws $$E s3api put-bucket-policy --bucket kefken-media --policy '{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Principal":"*","Action":["s3:GetObject"],"Resource":["arn:aws:s3:::kefken-media/*"]}]}'
+        echo s3-init done
+
+volumes:
+  pgdata:
+  s3data:
