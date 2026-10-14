@@ -69,9 +69,15 @@ describe('businessJsonLd (HomeAndConstructionBusiness)', () => {
     expect(businessJsonLd(full, { site: SITE, url: `${SITE}/tr` })).not.toHaveProperty('areaServed')
   })
 
-  it('geo only with a visible street address', () => {
-    const out = businessJsonLd({ companyName: 'K', address: { city: 'İstanbul', lat: 41.2, lng: 28.7 } }, { site: SITE, url: `${SITE}/tr` })
+  it('geo and hasMap only with a visible street address', () => {
+    const out = businessJsonLd({ companyName: 'K', address: { city: 'İstanbul', lat: 41.2, lng: 28.7, mapUrl: 'https://maps.app.goo.gl/x' } }, { site: SITE, url: `${SITE}/tr` })
     expect(out).not.toHaveProperty('geo')
+    expect(out).not.toHaveProperty('hasMap')
+  })
+
+  it('hasMap is the Google Maps link next to geo', () => {
+    const out = businessJsonLd({ companyName: 'K', address: { street: 'S', lat: 41.2043, lng: 28.7616, mapUrl: 'https://maps.app.goo.gl/GJ64LpWJjXS3Zvqc8' } }, { site: SITE, url: `${SITE}/tr` })
+    expect(out).toMatchObject({ geo: { latitude: 41.2043, longitude: 28.7616 }, hasMap: 'https://maps.app.goo.gl/GJ64LpWJjXS3Zvqc8' })
   })
 
   it('empty fields are left out (no founder, no founding date, no geo, no sameAs)', () => {

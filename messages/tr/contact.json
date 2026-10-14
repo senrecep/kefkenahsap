@@ -52,5 +52,12 @@
       "RateLimited": "Kısa sürede çok fazla gönderim yapıldı. Birkaç dakika sonra tekrar deneyin ya da WhatsApp'tan yazın.",
       "SaveFailed": "Talebiniz şu an kaydedilemedi. Lütfen tekrar deneyin ya da WhatsApp'tan yazın."
     }
+  },
+  "Map": {
+    "show": "Haritayı göster",
+    "note": "Harita Google'dan yüklenir.",
+    "title": "Konumumuz (Google Haritalar)",
+    "google": "Google Haritalar'da aç",
+    "apple": "Apple Haritalar'da aç"
   }
 }

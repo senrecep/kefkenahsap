@@ -103,3 +103,53 @@ test.describe('Contact page', () => {
     expect(totalDocs).toBe(0)
   })
 })
+
+// #143: click-to-load map. Runs after the form tests (workers: 1); afterAll restores the original address.
+test.describe('Contact map', () => {
+  const embed = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001.8!2d28.759!3d41.204!5e0!3m2!1str!2str'
+  test.beforeAll(async () => {
+    const res = await api.post('/api/globals/siteSettings?locale=tr', {
+      data: {
+        address: {
+          street: `E2E Sk. ${stamp}`,
+          city: 'İstanbul',
+          mapUrl: 'https://maps.app.goo.gl/GJ64LpWJjXS3Zvqc8',
+          mapEmbedUrl: embed,
+          appleMapsUrl: 'https://maps.apple.com/place?place-id=IC3F39D941423A558',
+        },
+      },
+    })
+    expect(res.ok()).toBe(true)
+  })
+
+  test('rejects a non-embed iframe source in the admin field', async () => {
+    const res = await api.post('/api/globals/siteSettings?locale=tr', { data: { address: { mapEmbedUrl: 'https://evil.example/maps/embed?x' } } })
+    expect(res.ok()).toBe(false)
+  })
+
+  test('shows Google / Apple links, and asks Google for nothing until the visitor clicks', async ({ page }) => {
+    const google: string[] = []
+    page.on('request', (r) => /(^|\.)(google\.com|gstatic\.com)$/.test(new URL(r.url()).hostname) && google.push(r.url()))
+    // CI may have no outbound network: answer the iframe locally instead of waiting on Google.
+    await page.route('https://www.google.com/maps/embed**', (r) => r.fulfill({ contentType: 'text/html', body: '<p>map</p>' }))
+    await page.goto('/tr/iletisim')
+    const main = page.locator('main')
+    await expect(main.getByRole('link', { name: "Google Haritalar'da aç" })).toHaveAttribute('href', 'https://maps.app.goo.gl/GJ64LpWJjXS3Zvqc8')
+    await expect(main.getByRole('link', { name: "Apple Haritalar'da aç" })).toHaveAttribute('href', /maps\.apple\.com\/place\?place-id=IC3F39D941423A558/)
+    await expect(main.getByRole('link', { name: 'Yol tarifi' })).toHaveCount(0)
+    await expect(main.locator('iframe')).toHaveCount(0)
+    await page.waitForLoadState('networkidle')
+    expect(google).toHaveLength(0)
+
+    const box = await main.getByRole('button', { name: /Haritayı göster/ }).boundingBox()
+    await main.getByRole('button', { name: /Haritayı göster/ }).click()
+    const frame = main.locator('iframe')
+    await expect(frame).toHaveAttribute('src', embed)
+    await expect(frame).toHaveAttribute('title', 'Konumumuz (Google Haritalar)')
+    await expect(frame).toHaveAttribute('loading', 'lazy')
+    await expect(frame).toHaveAttribute('referrerpolicy', 'strict-origin-when-cross-origin')
+    // Same aspect-ratio box before and after: the swap does not shift the layout.
+    expect((await frame.boundingBox())!.height).toBeCloseTo(box!.height, 0)
+    await expect.poll(() => google.length).toBeGreaterThan(0)
+  })
+})

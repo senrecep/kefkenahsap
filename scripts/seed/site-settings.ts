@@ -30,7 +30,20 @@ const TR = {
     { label: 'Sabit hat', number: '0212 322 43 59', whatsapp: false },
   ],
   email: 'kefkenahsapdekorasyon@gmail.com',
-  address: { street: 'Mavigöl, Münteha Sk. No:31', district: 'Arnavutköy', city: 'İstanbul', postalCode: '34287', country: 'TR' },
+  address: {
+    street: 'Mavigöl, Münteha Sk. No:31',
+    district: 'Arnavutköy',
+    city: 'İstanbul',
+    postalCode: '34287',
+    country: 'TR',
+    // #143: the owner's Google / Apple Maps pins.
+    lat: 41.2043,
+    lng: 28.7616,
+    mapUrl: 'https://maps.app.goo.gl/GJ64LpWJjXS3Zvqc8',
+    mapEmbedUrl:
+      'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001.8025799595057!2d28.759035577552922!3d41.2042774713238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab2ea32631179%3A0x8087e41ff058a31d!2sKefken%20Ah%C5%9Fap%20Dekorasyon!5e0!3m2!1str!2str!4v1792015446274!5m2!1str!2str',
+    appleMapsUrl: 'https://maps.apple.com/place?place-id=IC3F39D941423A558',
+  },
   areaServed: [
     { name: 'İstanbul', kind: 'city' },
     { name: 'Türkiye', kind: 'country' },

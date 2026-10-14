@@ -2,6 +2,7 @@ import { Mail, MapPin, Phone } from 'lucide-react'
 import type { Metadata } from 'next'
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server'
 
+import { LocationMap } from '@/components/site/LocationMap'
 import { Container } from '@/components/ui/Container'
 import { buttonClass } from '@/components/ui/button'
 import { WhatsAppButton } from '@/components/ui/WhatsAppButton'
@@ -108,12 +109,14 @@ export default async function ContactPage({ params, searchParams }: Props) {
                   {(a.district || a.city) && <><br />{[a.postalCode, a.district, a.city].filter(Boolean).join(' ')}</>}
                 </span>
               </address>
-              {directions && (
+              {/* With a Google Maps link set, LocationMap's "Google Haritalar'da aç" replaces the address search. */}
+              {directions && !a.mapUrl && (
                 <a href={directions} target="_blank" rel="noopener" className={`${buttonClass.outline} mt-4`}>
                   <MapPin aria-hidden size={18} strokeWidth={1.75} />
                   {t('directions')}
                 </a>
               )}
+              <LocationMap address={a} className="mt-4" />
             </div>
           )}
 

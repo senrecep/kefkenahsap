@@ -52,5 +52,12 @@
       "RateLimited": "Too many submissions in a short time. Try again in a few minutes or message us on WhatsApp.",
       "SaveFailed": "Your request could not be saved right now. Please try again or message us on WhatsApp."
     }
+  },
+  "Map": {
+    "show": "Show the map",
+    "note": "The map loads from Google.",
+    "title": "Our location (Google Maps)",
+    "google": "Open in Google Maps",
+    "apple": "Open in Apple Maps"
   }
 }

@@ -28,7 +28,7 @@ export function telLink(s: Settings): { href: string; label: string } | null {
 
 type Address = { street?: string | null; district?: string | null; city?: string | null; postalCode?: string | null; mapUrl?: string | null }
 
-/** "Yol tarifi" link: the admin's Google Maps link, else a Maps search of the address (no embedded map — PLAN §6). */
+/** "Yol tarifi" link: the admin's Google Maps link, else a Maps search of the address (the click-to-load map is LocationMap, #143). */
 export function directionsUrl(a: Address | null | undefined): string | null {
   if (a?.mapUrl) return a.mapUrl
   const q = [a?.street, a?.district, a?.city].filter(Boolean).join(', ')

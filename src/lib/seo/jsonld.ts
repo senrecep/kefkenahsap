@@ -42,14 +42,15 @@ export type BusinessInput = {
   founder?: { name?: Text } | null
   phones?: { number: string; label?: Text }[] | null
   email?: Text
-  address?: { street?: Text; district?: Text; city?: Text; postalCode?: Text; country?: Text; lat?: number | null; lng?: number | null } | null
+  address?: { street?: Text; district?: Text; city?: Text; postalCode?: Text; country?: Text; lat?: number | null; lng?: number | null; mapUrl?: Text } | null
   hours?: { days?: readonly (keyof typeof DAYS)[] | null; opens: string; closes: string }[] | null
   social?: { instagram?: Text; facebook?: Text; googleBusiness?: Text } | null
 }
 
 /**
- * Site-wide HomeAndConstructionBusiness: only the siteSettings facts the footer shows on every page. areaServed is
- * not shown there, so it is left out here; each category's Service carries its visible areas line instead.
+ * Site-wide HomeAndConstructionBusiness: only the siteSettings facts the footer shows on every page, plus hasMap (the
+ * contact page's Google Maps link). areaServed is not shown there, so it is left out here; each category's Service
+ * carries its visible areas line instead.
  */
 export function businessJsonLd(s: BusinessInput, o: { site: string; url: string; logo?: string; image?: Text }) {
   const a = s.address
@@ -75,6 +76,7 @@ export function businessJsonLd(s: BusinessInput, o: { site: string; url: string;
     },
     // The footer prints the address on every page only when a street is set; the pin belongs to that visible address.
     geo: a?.street?.trim() && typeof a.lat === 'number' && typeof a.lng === 'number' ? { '@type': 'GeoCoordinates', latitude: a.lat, longitude: a.lng } : undefined,
+    hasMap: a?.street?.trim() && a.mapUrl ? a.mapUrl : undefined,
     openingHoursSpecification: s.hours?.map((h) => ({ '@type': 'OpeningHoursSpecification', dayOfWeek: (h.days ?? []).map((d) => DAYS[d]), opens: h.opens, closes: h.closes })),
     sameAs: [s.social?.instagram, s.social?.facebook, s.social?.googleBusiness],
   })
