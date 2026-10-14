@@ -6,7 +6,7 @@ import { buttonClass } from '@/components/ui/button'
 import { Picture } from '@/components/ui/Picture'
 import type { GalleryItem } from '@/lib/gallery/item'
 import type { GalleryLabels } from '@/lib/gallery/labels'
-import { distribute } from '@/lib/gallery/masonry'
+import { distribute, largestFirstScreenItem } from '@/lib/gallery/masonry'
 
 import type { LightboxProps } from './Lightbox'
 
@@ -19,9 +19,10 @@ const LAYOUTS = [
 // Scrolling loads at most this many pages by itself; then the button takes over so the footer stays reachable.
 const AUTO_PAGES = 2
 const SIZES = '(min-width: 1280px) 296px, (min-width: 1024px) 23vw, (min-width: 768px) 31vw, 48vw'
-// `priority` (a grid at the top of the page): the phone grid's first two cards per column fill the first screen and hold
-// its LCP, so they load eagerly (#129). Only the 2-column copy: an eager image in a display:none copy still downloads.
-const PRIORITY_ROWS = 1
+// `priority` (a grid at the top of the page): the phone grid's likely LCP card, the tallest of the first two rows, loads
+// eagerly (#129). Just that one: every eager byte competes with it. Only in the 2-column copy, because an eager image in
+// a display:none copy still downloads (on desktop it resolves to the w320 the visible grid uses anyway).
+const FIRST_SCREEN_ROWS = 2
 
 /** Masonry gallery: SSR first page, infinite feed appended to column ends, lightbox loaded on first open. */
 export function GalleryGridClient({
@@ -52,6 +53,7 @@ export function GalleryGridClient({
   const sentinel = useRef<HTMLDivElement>(null)
 
   const layouts = useMemo(() => LAYOUTS.map((l) => ({ ...l, columns: distribute(items, l.cols) })), [items])
+  const lcpItem = priority ? largestFirstScreenItem(items, layouts[0]!.columns, FIRST_SCREEN_ROWS) : undefined
 
   const loadMore = useCallback(async () => {
     if (!cursor || !feedUrl || inFlight.current) return
@@ -115,7 +117,7 @@ export function GalleryGridClient({
         <div key={layout.cols} className={layout.className}>
           {layout.columns.map((col, c) => (
             <ul key={c} className="flex min-w-0 flex-col gap-2 sm:gap-3 md:gap-4">
-              {col.map((i, row) => {
+              {col.map((i) => {
                 const item = items[i]!
                 return (
                   <li key={item.id}>
@@ -132,7 +134,7 @@ export function GalleryGridClient({
                         altLang={item.altLang}
                         sizes={SIZES}
                         maxWidth={960}
-                        priority={priority && layout.cols === 2 && row < PRIORITY_ROWS}
+                        priority={layout.cols === 2 && i === lcpItem}
                         imgClassName="transition-transform duration-500 ease-[var(--ease-out-expo)] group-hover:scale-[1.03]"
                       />
                     </a>
