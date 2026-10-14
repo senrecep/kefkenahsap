@@ -12,6 +12,11 @@ type Title = string | { absolute: string }
  */
 export const DEFAULT_OG_IMAGE = { url: '/og.jpg', width: 1200, height: 630 }
 
+/** The <title> as rendered: the layout template appends " | company" unless the title is absolute. */
+export const fullTitle = (title: Title, siteName: string) => (typeof title === 'string' ? `${title} | ${siteName}` : title.absolute)
+
+const TITLE_MAX = 60
+
 export function buildMetadata(args: {
   locale: string
   title: Title
@@ -22,6 +27,11 @@ export function buildMetadata(args: {
   noindex?: boolean
   ownOgImage?: boolean
 }): Metadata {
+  const rendered = fullTitle(args.title, args.siteName)
+  // Dev aid only: CMS titles are the editor's call, so production never warns.
+  if (process.env.NODE_ENV !== 'production' && rendered.length > TITLE_MAX) {
+    console.warn(`[seo] title is ${rendered.length} chars (> ${TITLE_MAX}, may be cut in results): "${rendered}"`)
+  }
   const seo = localeSeo({ current: args.locale, paths: args.paths, site: args.site })
   const title = typeof args.title === 'string' ? args.title : args.title.absolute
   const text = { title, ...(args.description?.trim() ? { description: args.description.trim() } : {}) }

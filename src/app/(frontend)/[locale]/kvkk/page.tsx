@@ -5,9 +5,9 @@ import { getTranslations, setRequestLocale } from 'next-intl/server'
 import { ContentPage } from '@/components/content/ContentPage'
 import { KvkkDraft } from '@/content/legal/kvkk'
 import type { Locale } from '@/i18n/routing'
-import { getPage } from '@/lib/data/pages'
+import { getPage, getPageTitles } from '@/lib/data/pages'
 import { getSiteSettings } from '@/lib/data/site'
-import { pageMetadata, staticPaths } from '@/lib/seo/page-metadata'
+import { cmsPagePaths, pageMetadata } from '@/lib/seo/page-metadata'
 
 const SLUGS = ['kvkk', 'privacy']
 type Props = { params: Promise<{ locale: string }> }
@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     locale: locale as Locale,
     title: page?.seo?.title ? { absolute: page.seo.title } : (page?.title ?? t('kvkkTitle')),
     description: page?.seo?.description || t('kvkkDescription', { company: settings.companyName }),
-    paths: staticPaths('/kvkk'),
+    paths: cmsPagePaths('/kvkk', await getPageTitles(SLUGS)),
   })
 }
 

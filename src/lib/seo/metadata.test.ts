@@ -1,6 +1,6 @@
-import { describe, expect, it } from 'vitest'
+import { afterEach, describe, expect, it, vi } from 'vitest'
 
-import { buildMetadata } from './metadata'
+import { buildMetadata, fullTitle } from './metadata'
 
 const SITE = 'https://www.kefkenahsap.com'
 const base = { siteName: 'Kefken Ahşap Dekorasyon', site: SITE, title: 'Deck ve Zeminler', description: 'Iroko ve teak deck.' }
@@ -54,5 +54,24 @@ describe('buildMetadata', () => {
     expect(m).not.toHaveProperty('description')
     expect(m.openGraph).not.toHaveProperty('description')
     expect(m.twitter).not.toHaveProperty('description')
+  })
+})
+
+describe('title length (SERP shows ~60 chars)', () => {
+  afterEach(() => vi.restoreAllMocks())
+
+  it('measures the rendered title: the layout template adds " | company" unless absolute', () => {
+    expect(fullTitle('Galeri', 'Kefken Ahşap Dekorasyon')).toBe('Galeri | Kefken Ahşap Dekorasyon')
+    expect(fullTitle({ absolute: 'Kefken Ahşap' }, 'Kefken Ahşap Dekorasyon')).toBe('Kefken Ahşap')
+  })
+
+  it('warns outside production when the rendered title is over 60 characters', () => {
+    const warn = vi.spyOn(console, 'warn').mockImplementation(() => {})
+    buildMetadata({ ...base, title: 'Bahçede iroko deck, pergola ve korkuluk uygulaması', locale: 'tr', paths: { tr: '/tr/x' } })
+    expect(warn).toHaveBeenCalledOnce()
+    expect(warn.mock.calls[0]![0]).toContain('76')
+    warn.mockClear()
+    buildMetadata({ ...base, locale: 'tr', paths: { tr: '/tr/x' } })
+    expect(warn).not.toHaveBeenCalled()
   })
 })

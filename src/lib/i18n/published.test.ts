@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { livePaths, localeSeo, ogLocale, publishedLocales } from './published'
+import { cmsRoutePaths, livePaths, localeSeo, ogLocale, publishedLocales } from './published'
 
 const SITE = 'https://www.kefkenahsap.com'
 
@@ -26,6 +26,16 @@ describe('livePaths', () => {
       (l, slug) => `/${l}/p/${slug}`,
     )
     expect(paths).toEqual({ tr: '/tr/p/kosk', en: null })
+  })
+})
+
+describe('cmsRoutePaths (about, legal)', () => {
+  const paths = { tr: '/tr/hakkimizda', en: '/en/about' }
+  it('no CMS page: the in-repo template exists in every locale', () => {
+    expect(cmsRoutePaths(paths, null)).toEqual(paths)
+  })
+  it('a CMS page without an English title: English is not live', () => {
+    expect(cmsRoutePaths(paths, { tr: 'Hakkımızda', en: null })).toEqual({ tr: '/tr/hakkimizda', en: null })
   })
 })
 

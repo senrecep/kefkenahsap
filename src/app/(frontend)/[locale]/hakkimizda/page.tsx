@@ -9,9 +9,9 @@ import { WhatsAppButton } from '@/components/ui/WhatsAppButton'
 import { Link } from '@/i18n/navigation'
 import type { Locale } from '@/i18n/routing'
 import { sinceYear } from '@/lib/company'
-import { getPage } from '@/lib/data/pages'
+import { getPage, getPageTitles } from '@/lib/data/pages'
 import { getSiteSettings } from '@/lib/data/site'
-import { pageMetadata, staticPaths } from '@/lib/seo/page-metadata'
+import { cmsPagePaths, pageMetadata } from '@/lib/seo/page-metadata'
 
 const SLUGS = ['hakkimizda', 'about']
 type Props = { params: Promise<{ locale: string }> }
@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     locale: locale as Locale,
     title: page?.seo?.title ? { absolute: page.seo.title } : (page?.title ?? t('title')),
     description: page?.seo?.description || t('metaDescription', { company: settings.companyName, district: settings.address?.district || settings.address?.city || 'none' }),
-    paths: staticPaths('/hakkimizda'),
+    paths: cmsPagePaths('/hakkimizda', await getPageTitles(SLUGS)),
   })
 }
 
