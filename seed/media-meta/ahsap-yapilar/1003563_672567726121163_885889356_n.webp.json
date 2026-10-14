@@ -1,0 +1,35 @@
+{
+  "file": "1003563_672567726121163_885889356_n.webp",
+  "category": "ahsap-yapilar",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Orman İçinde Balkonlu Ahşap Ev",
+    "en": "Wooden House with Balcony in Forest Setting"
+  },
+  "alt": {
+    "tr": "Taş temel üzerine kurulu, ahşap korkuluklu balkona ve ahşap cepheye sahip iki katlı ahşap ev.",
+    "en": "Two-story wooden house built on a stone base, featuring a timber balcony and railings among trees."
+  },
+  "caption": {
+    "tr": "Doğal taş kaide üzerine inşa ettiğimiz, geniş ahşap balkona ve dış cephe kaplamasına sahip iki katlı ahşap ev uygulaması.",
+    "en": "A two-story wooden house project built over a natural stone foundation, featuring a wide timber balcony and exterior cladding."
+  },
+  "seoFilename": "orman-ici-balkonlu-ahsap-ev",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "dış mekan",
+      "bahçe",
+      "orman"
+    ],
+    "finish": [
+      "ahşap koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

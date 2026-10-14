@@ -1,0 +1,37 @@
+{
+  "file": "10930995_958666760844590_2263822729182818482_n.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Yatay Ahşap Cephe Kaplamalı Bahçe Yapısı",
+    "en": "Garden Structure with Horizontal Wood Cladding"
+  },
+  "alt": {
+    "tr": "Yatay ahşap kaplamalı, çift eğimli çatılı küçük ahşap yapı; çatı alınlığında siyah panel, önünde taş zemin var",
+    "en": "Small wooden building with horizontal cladding and a gabled roof, black panels in the gable and a stone-paved ground in front"
+  },
+  "caption": {
+    "tr": "Yatay lambri kaplı cephesi ve görünür kirişli çatısıyla küçük ahşap yapı. Etrafı taş zemin ve taş duvarla çevrili.",
+    "en": "A small wooden building with horizontal board cladding and a roof with exposed beams, surrounded by stone paving and a stone wall."
+  },
+  "seoFilename": "yatay-ahsap-cephe-kaplamali-bahce-yapisi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "taş zemin"
+    ],
+    "finish": [
+      "bal rengi",
+      "yatay lambri",
+      "vernik"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}
