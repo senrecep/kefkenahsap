@@ -53,12 +53,12 @@ export default async function ProjectPage({ params }: { params: Params }) {
   const similar = cards.filter((c) => c.id !== project.id && c.categories.some((x) => catIds.has(x.id))).slice(0, 3)
   const hero = cover ?? gallery[0]
   const photos = gallery.filter((m) => m.id !== hero?.id)
-  const wa = { kind: 'project' as const, vars: { project: project.title, url: siteUrl() + projectPath(locale, slug) } }
+  const wa = { kind: 'project' as const, vars: { project: project.title, url: siteUrl().replace(/\/$/, '') + projectPath(locale, slug) } }
   const h2 = 'text-[1.6rem] leading-tight md:text-[2rem]'
   const wood = facts.find((f) => f.key === 'wood')?.value
   // Only what the page shows: title, the künye facts and the photos on the page.
   const work = creativeWorkJsonLd({
-    site: siteUrl(),
+    site: siteUrl().replace(/\/$/, ''),
     name: project.title,
     url: wa.vars.url,
     year: project.year,

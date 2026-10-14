@@ -61,9 +61,17 @@ describe('businessJsonLd (HomeAndConstructionBusiness)', () => {
       },
       geo: { '@type': 'GeoCoordinates', latitude: 41.2, longitude: 28.7 },
       openingHoursSpecification: [{ '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Saturday'], opens: '08:00', closes: '19:00' }],
-      areaServed: [{ '@type': 'City', name: 'İstanbul' }, { '@type': 'Country', name: 'Türkiye' }],
       sameAs: ['https://instagram.com/k', 'https://facebook.com/k', 'https://g.page/k'],
     })
+  })
+
+  it('no areaServed on the site-wide node (the footer does not show it; categories carry their visible areas line)', () => {
+    expect(businessJsonLd(full, { site: SITE, url: `${SITE}/tr` })).not.toHaveProperty('areaServed')
+  })
+
+  it('geo only with a visible street address', () => {
+    const out = businessJsonLd({ companyName: 'K', address: { city: 'İstanbul', lat: 41.2, lng: 28.7 } }, { site: SITE, url: `${SITE}/tr` })
+    expect(out).not.toHaveProperty('geo')
   })
 
   it('empty fields are left out (no founder, no founding date, no geo, no sameAs)', () => {

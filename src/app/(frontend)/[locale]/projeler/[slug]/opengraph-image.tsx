@@ -1,4 +1,6 @@
-import type { Locale } from '@/i18n/routing'
+import { hasLocale } from 'next-intl'
+
+import { routing, type Locale } from '@/i18n/routing'
 import { getProject } from '@/lib/data/projects'
 import { safeDecode } from '@/lib/http/safe-decode'
 import { responsiveImage } from '@/lib/media/image'
@@ -10,7 +12,7 @@ export const contentType = OG_CONTENT_TYPE
 /** The project's cover (else its first photo), as on the page hero. */
 export default async function Image({ params }: { params: Promise<{ locale: Locale; slug: string }> }) {
   const { locale, slug } = await params
-  if (slug.length > 200) return new Response(null, { status: 404 })
+  if (!hasLocale(routing.locales, locale) || slug.length > 200) return new Response(null, { status: 404 })
   const data = await getProject(locale, safeDecode(slug))
   if (!data) return new Response(null, { status: 404 })
   const photo = data.cover ?? data.gallery[0]

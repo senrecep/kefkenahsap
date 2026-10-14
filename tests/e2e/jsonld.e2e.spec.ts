@@ -1,50 +1,98 @@
-import { expect, test, type Page } from '@playwright/test'
+import { type APIRequestContext, expect, test, type Page } from '@playwright/test'
 
-// PLAN §7 Structured data: every template's JSON-LD parses, carries its required fields, and the names it
-// states are text the visitor can see on that page. Seed-agnostic (samples the first item of each list).
+import { adminApi, createDoc, deleteDocs, uploadPhoto } from '../helpers/content'
+
+// PLAN §7 Structured data: the site-wide business node states exactly the siteSettings facts that are filled
+// (read from the API, so it holds on any DB), each of them visible on the page; empty ones are absent.
 
 type Node = Record<string, unknown> & { '@type': string }
+type Settings = {
+  companyName: string
+  foundingYear?: number | null
+  founder?: { name?: string | null } | null
+  phones?: { number: string }[] | null
+  email?: string | null
+  address?: { street?: string | null } | null
+  social?: { instagram?: string | null; facebook?: string | null; googleBusiness?: string | null } | null
+}
 
 async function jsonLd(page: Page) {
-  const raw = await page.locator('script[type="application/ld+json"]').allTextContents()
-  return raw.map((r) => JSON.parse(r) as Node)
+  return (await page.locator('script[type="application/ld+json"]').allTextContents()).map((r) => JSON.parse(r) as Node)
 }
 const byType = (nodes: Node[], type: string) => nodes.filter((n) => n['@type'] === type)
-const visible = (page: Page) => page.locator('body').innerText()
 
 test.describe('JSON-LD', () => {
-  test('every page: HomeAndConstructionBusiness + WebSite from siteSettings (no SearchAction)', async ({ page }) => {
+  let api: APIRequestContext
+  const stamp = Date.now()
+  const ids = { categories: [] as number[], media: [] as number[] }
+  const photo = { seo: `e2e-jsonld-foto-${stamp}`, title: `E2E JSON-LD fotoğrafı ${stamp}`, caption: `Bahçede iroko deck ${stamp}.` }
+
+  test.beforeAll(async () => {
+    api = await adminApi()
+    const c = await createDoc(api, 'categories', { _status: 'published', name: `E2E JSON-LD ${stamp}`, slug: `e2e-jsonld-${stamp}` })
+    ids.categories.push(c.id)
+    const m = await uploadPhoto(api, { seoFilename: photo.seo, category: c.id }, 5)
+    ids.media.push(m.id)
+    expect((await api.patch(`/api/media/${m.id}?locale=tr`, { data: { title: photo.title, caption: photo.caption } })).ok()).toBe(true)
+  })
+
+  test.afterAll(async () => {
+    await deleteDocs(api, 'media', ids.media)
+    await deleteDocs(api, 'categories', ids.categories)
+  })
+
+  test('every page: HomeAndConstructionBusiness = the filled siteSettings facts, all visible; WebSite without SearchAction', async ({ page }) => {
+    const s = (await (await api.get('/api/globals/siteSettings?locale=tr&depth=0')).json()) as Settings
     await page.goto('/tr')
     const nodes = await jsonLd(page)
     const [biz] = byType(nodes, 'HomeAndConstructionBusiness')
-    expect(biz).toBeTruthy()
-    for (const k of ['@id', 'name', 'url']) expect(biz![k], k).toBeTruthy()
-    // Optional facts appear only when siteSettings has them, and then exactly as the footer shows them.
-    const text = await visible(page)
-    expect(text).toContain(biz!.name as string)
-    if (biz!.telephone) expect(text).toContain(biz!.telephone as string)
-    const street = (biz!.address as { streetAddress?: string } | undefined)?.streetAddress
+    const text = await page.locator('body').innerText()
+
+    expect(biz!['@id']).toMatch(/#business$/)
+    expect(biz!.name).toBe(s.companyName)
+    expect(text).toContain(s.companyName)
+    // [JSON-LD key, expected from settings (undefined when empty), visible text to find]
+    const facts: [string, unknown, string | undefined][] = [
+      ['telephone', s.phones?.[0]?.number, s.phones?.[0]?.number],
+      ['email', s.email || undefined, s.email || undefined],
+      ['foundingDate', s.foundingYear ? String(s.foundingYear) : undefined, s.foundingYear ? String(s.foundingYear) : undefined],
+      ['founder', s.founder?.name ? { '@type': 'Person', name: s.founder.name } : undefined, s.founder?.name || undefined],
+    ]
+    for (const [key, expected, visible] of facts) {
+      if (expected === undefined) expect(biz, key).not.toHaveProperty(key)
+      else {
+        expect(biz![key], key).toEqual(expected)
+        expect(text, key).toContain(visible)
+      }
+    }
+    const street = s.address?.street || undefined
+    expect((biz!.address as { streetAddress?: string } | undefined)?.streetAddress).toBe(street)
     if (street) expect(text).toContain(street)
-    if (biz!.founder) expect(text).toContain((biz!.founder as { name: string }).name)
-    if (biz!.foundingDate) expect(text).toContain(biz!.foundingDate as string)
-    for (const url of (biz!.sameAs as string[] | undefined) ?? []) expect(url).toMatch(/^https:\/\//)
+    else expect(biz).not.toHaveProperty('geo')
+    const profiles = [s.social?.instagram, s.social?.facebook, s.social?.googleBusiness].filter(Boolean)
+    if (profiles.length) expect(biz!.sameAs).toEqual(profiles)
+    else expect(biz).not.toHaveProperty('sameAs')
+    expect(biz).not.toHaveProperty('areaServed')
+
     const [site] = byType(nodes, 'WebSite')
     expect(site?.publisher).toEqual({ '@id': biz!['@id'] })
     expect(JSON.stringify(nodes)).not.toContain('SearchAction')
   })
 
   test('photo page: ImageObject + BreadcrumbList match the visible title and caption', async ({ page }) => {
-    await page.goto('/tr/galeri')
-    await page.goto((await page.locator('[data-gallery-item]:visible').first().getAttribute('href'))!)
+    await expect.poll(async () => (await page.goto(`/tr/galeri/${photo.seo}`))?.status(), { timeout: 20_000 }).toBe(200)
     const nodes = await jsonLd(page)
     const [img] = byType(nodes, 'ImageObject')
-    expect(img?.contentUrl).toMatch(/^https?:\/\//)
-    expect(img?.name).toBe(await page.getByRole('heading', { level: 1 }).innerText())
-    if (img?.caption) expect(await visible(page)).toContain(img.caption as string)
-    expect(new URL(img!.url as string).pathname).toBe(new URL(page.url()).pathname)
+    expect(img!.name).toBe(photo.title)
+    await expect(page.getByRole('heading', { level: 1 })).toHaveText(photo.title)
+    expect(img!.caption).toBe(photo.caption)
+    await expect(page.getByText(photo.caption)).toBeVisible()
+    expect(img!.contentUrl).toMatch(/^https?:\/\//)
+    expect(new URL(img!.url as string).pathname).toBe(`/tr/galeri/${photo.seo}`)
     const [crumbs] = byType(nodes, 'BreadcrumbList')
     const items = crumbs!.itemListElement as { position: number; name: string; item: string }[]
-    expect(items.map((i) => i.position)).toEqual(items.map((_, n) => n + 1))
-    expect(items.at(-1)!.name).toBe(img!.name)
+    expect(items.map((i) => i.position)).toEqual([1, 2, 3])
+    expect(new URL(items[1]!.item).pathname).toBe('/tr/galeri')
+    expect(items[2]).toMatchObject({ name: photo.title, item: img!.url })
   })
 })

@@ -1,4 +1,6 @@
-import type { Locale } from '@/i18n/routing'
+import { hasLocale } from 'next-intl'
+
+import { routing, type Locale } from '@/i18n/routing'
 import { getCategory } from '@/lib/data/categories'
 import { safeDecode } from '@/lib/http/safe-decode'
 import { responsiveImage } from '@/lib/media/image'
@@ -10,7 +12,7 @@ export const contentType = OG_CONTENT_TYPE
 /** The approved cover, else the first gallery photo: the same header photo the page shows. */
 export default async function Image({ params }: { params: Promise<{ locale: Locale; category: string }> }) {
   const { locale, category: slug } = await params
-  if (slug.length > 200) return new Response(null, { status: 404 })
+  if (!hasLocale(routing.locales, locale) || slug.length > 200) return new Response(null, { status: 404 })
   const data = await getCategory(locale, safeDecode(slug), 1)
   if (!data) return new Response(null, { status: 404 })
   const { cover } = data.category

@@ -35,7 +35,6 @@ export const safeJsonLd = (data: unknown) =>
   JSON.stringify(data).replace(/</g, '\\u003c').replace(/\u2028/g, '\\u2028').replace(/\u2029/g, '\\u2029')
 
 const DAYS = { Mo: 'Monday', Tu: 'Tuesday', We: 'Wednesday', Th: 'Thursday', Fr: 'Friday', Sa: 'Saturday', Su: 'Sunday' } as const
-const AREA = { city: 'City', country: 'Country', district: 'AdministrativeArea' } as const
 
 export type BusinessInput = {
   companyName: string
@@ -45,11 +44,13 @@ export type BusinessInput = {
   email?: Text
   address?: { street?: Text; district?: Text; city?: Text; postalCode?: Text; country?: Text; lat?: number | null; lng?: number | null } | null
   hours?: { days?: readonly (keyof typeof DAYS)[] | null; opens: string; closes: string }[] | null
-  areaServed?: { name: string; kind?: keyof typeof AREA | null }[] | null
   social?: { instagram?: Text; facebook?: Text; googleBusiness?: Text } | null
 }
 
-/** Site-wide HomeAndConstructionBusiness, from siteSettings (rendered in the footer of every page). */
+/**
+ * Site-wide HomeAndConstructionBusiness: only the siteSettings facts the footer shows on every page. areaServed is
+ * not shown there, so it is left out here; each category's Service carries its visible areas line instead.
+ */
 export function businessJsonLd(s: BusinessInput, o: { site: string; url: string; logo?: string; image?: Text }) {
   const a = s.address
   const founded = sinceYear({ foundingYear: s.foundingYear })
@@ -72,9 +73,9 @@ export function businessJsonLd(s: BusinessInput, o: { site: string; url: string;
       postalCode: a.postalCode,
       addressCountry: a.country,
     },
-    geo: typeof a?.lat === 'number' && typeof a.lng === 'number' ? { '@type': 'GeoCoordinates', latitude: a.lat, longitude: a.lng } : undefined,
+    // The footer prints the address on every page only when a street is set; the pin belongs to that visible address.
+    geo: a?.street?.trim() && typeof a.lat === 'number' && typeof a.lng === 'number' ? { '@type': 'GeoCoordinates', latitude: a.lat, longitude: a.lng } : undefined,
     openingHoursSpecification: s.hours?.map((h) => ({ '@type': 'OpeningHoursSpecification', dayOfWeek: (h.days ?? []).map((d) => DAYS[d]), opens: h.opens, closes: h.closes })),
-    areaServed: s.areaServed?.map((x) => ({ '@type': AREA[x.kind ?? 'district'], name: x.name })),
     sameAs: [s.social?.instagram, s.social?.facebook, s.social?.googleBusiness],
   })
 }
