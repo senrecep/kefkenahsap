@@ -14,8 +14,8 @@
   --color-error: #b42318;       /* form errors (6.5:1 on paper) */
   --color-error-soft: #fef3f2;
 
-  --font-display: var(--font-montserrat-cyr), var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
-  --font-body: var(--font-source-sans-cyr), var(--font-source-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-arabic), var(--font-montserrat-cyr), var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+  --font-body: var(--font-arabic), var(--font-source-sans-cyr), var(--font-source-sans), ui-sans-serif, system-ui, sans-serif;
 
   --radius-photo: 10px;
   --radius-control: 10px;
@@ -72,4 +72,11 @@
   outline: 3px solid var(--color-ink);
   outline-offset: 2px;
   box-shadow: 0 0 0 2px #fff;
+}
+
+/* Arabic letters join: any tracking (tracking-tight/-wide) breaks the joins, and there is no uppercase.
+   Unlayered, so it wins over the tracking utilities. */
+:lang(ar),
+:lang(ar) * {
+  letter-spacing: 0;
 }

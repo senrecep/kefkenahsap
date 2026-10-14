@@ -16,6 +16,7 @@ import * as migration_20261014_090734_regions from './20261014_090734_regions';
 import * as migration_20261014_100749_media_w480 from './20261014_100749_media_w480';
 import * as migration_20261014_130823_media_w800 from './20261014_130823_media_w800';
 import * as migration_20261014_144607_ru_de_locales from './20261014_144607_ru_de_locales';
+import * as migration_20261014_145205_ar_locale from './20261014_145205_ar_locale';
 
 export const migrations = [
   {
@@ -106,6 +107,11 @@ export const migrations = [
   {
     up: migration_20261014_144607_ru_de_locales.up,
     down: migration_20261014_144607_ru_de_locales.down,
-    name: '20261014_144607_ru_de_locales'
+    name: '20261014_144607_ru_de_locales',
+  },
+  {
+    up: migration_20261014_145205_ar_locale.up,
+    down: migration_20261014_145205_ar_locale.down,
+    name: '20261014_145205_ar_locale'
   },
 ];

@@ -34,7 +34,7 @@ import { en } from '@payloadcms/translations/languages/en'
 import { ar } from '@payloadcms/translations/languages/ar'
 import { de } from '@payloadcms/translations/languages/de'
 import { ru } from '@payloadcms/translations/languages/ru'
-import { routing } from './i18n/routing'
+import { localeDir, routing } from './i18n/routing'
 import { migrations } from './migrations'
 
 for (const key of ['PAYLOAD_SECRET', 'DATABASE_URL', 'MEDIA_PUBLIC_URL'])
@@ -100,7 +100,8 @@ export default buildConfig({
   ],
   i18n: { supportedLanguages: { tr, en, ar, ru, de }, fallbackLanguage: 'tr' },
   localization: {
-    locales: [...routing.locales],
+    // rtl: Arabic fields are edited right-to-left in the admin.
+    locales: routing.locales.map((code) => ({ code, label: code.toUpperCase(), rtl: localeDir(code) === 'rtl' })),
     defaultLocale: routing.defaultLocale,
     fallback: false,
   },

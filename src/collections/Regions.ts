@@ -1,7 +1,7 @@
 import type { CollectionConfig } from 'payload'
 
 import { hiddenFromEditor, isStaff, publishedOrStaff } from '@/access'
-import { slugFrom } from '@/hooks/slug'
+import { slugFrom, validSlug } from '@/hooks/slug'
 import { revalidateAfterChange, revalidateAfterDelete } from '@/hooks/revalidate'
 
 /**
@@ -37,6 +37,7 @@ export const Regions: CollectionConfig = {
       unique: true,
       index: true,
       hooks: { beforeValidate: [slugFrom('name')] },
+      validate: validSlug,
       admin: { position: 'sidebar', description: 'Boş bırakılırsa addan üretilir.' },
     },
     { name: 'body', type: 'richText', localized: true, label: 'Metin (elle yazılır, en az 250 kelime)' },

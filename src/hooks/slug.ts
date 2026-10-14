@@ -18,3 +18,7 @@ export const slugFrom =
     const r = slugify(from, undefined, req?.locale ?? undefined)
     return Result.isSuccess(r) ? r.value : value
   }
+
+/** Slug field validation: an Arabic (or any non-Latin) slug the auto-fill could not convert is refused, not saved. */
+export const validSlug = (v: unknown): true | string =>
+  !v || (typeof v === 'string' && /^[a-z0-9-]+$/.test(v)) ? true : 'Adres (slug) yalnızca küçük Latin harf, rakam ve tire içerebilir; ör. ahsap-deck.'

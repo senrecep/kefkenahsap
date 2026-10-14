@@ -121,9 +121,9 @@ jobs:
           node_modules/.bin/next start -p "$E2E_PORT" > lhci-server.log 2>&1 &
           trap "kill $! || true" EXIT
           for i in $(seq 60); do curl -sf -o /dev/null "http://localhost:$E2E_PORT/brand/logo.png" && break; sleep 1; done
-          # Every key template for tr/en only (job time: ~14 s per run × 3 runs per URL). ru/de share the LTR layout and
-          # are covered by the reduced axe matrix; an RTL locale adds its own templates here (#63).
-          export LHCI_LOCALES="tr,en"
+          # Every key template for tr/en (job time: ~14 s per run × 3 runs per URL). ru/de share the LTR layout and are
+          # covered by the reduced axe matrix; for RTL, the templates whose layout it changes most (#63).
+          export LHCI_LOCALES="tr,en,ar:home+category+gallery+contact"
           export CHROME_PATH="$(node -e "console.log(require('playwright-core').chromium.executablePath())")" LHCI_BASE_URL="http://localhost:$E2E_PORT"
           # Warm-up: a cold first render streams metadata into <body>, which Lighthouse reads as a missing description.
           for u in $(node -p "require('./lighthouserc.cjs').ci.collect.url.join(' ')"); do curl -s -o /dev/null "$u"; done

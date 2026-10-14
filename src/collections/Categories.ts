@@ -1,7 +1,7 @@
 import type { CollectionConfig } from 'payload'
 
 import { isStaff, publishedOrStaff } from '@/access'
-import { slugFrom } from '@/hooks/slug'
+import { slugFrom, validSlug } from '@/hooks/slug'
 import { routing } from '@/i18n/routing'
 
 // Fixed route segments (TR internal + translated public paths): a category slug may not shadow them.
@@ -42,7 +42,7 @@ export const Categories: CollectionConfig = {
       unique: true,
       index: true,
       hooks: { beforeValidate: [slugFrom('name')] },
-      validate: (v: unknown) => (typeof v === 'string' && RESERVED.has(v) ? 'Bu adres sitede başka bir sayfaya ait; farklı bir slug seçin.' : true),
+      validate: (v: unknown) => (typeof v === 'string' && RESERVED.has(v) ? 'Bu adres sitede başka bir sayfaya ait; farklı bir slug seçin.' : validSlug(v)),
       admin: { position: 'sidebar', description: 'Boş bırakılırsa addan üretilir.' },
     },
     { name: 'shortDesc', type: 'textarea', localized: true, label: 'Kısa açıklama (cevap-önce giriş)' },

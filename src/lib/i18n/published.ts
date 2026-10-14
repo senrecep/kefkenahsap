@@ -28,7 +28,7 @@ export function cmsRoutePaths(paths: Record<string, string | null>, titles: Reco
 export const fixedRoutePaths = (paths: Record<string, string | null>, contentLocales: readonly string[]) =>
   Object.fromEntries(Object.entries(paths).map(([l, p]) => [l, contentLocales.includes(l) ? p : null]))
 
-const OG_LOCALES: Record<string, string> = { tr: 'tr_TR', en: 'en_US', ru: 'ru_RU', de: 'de_DE' }
+const OG_LOCALES: Record<string, string> = { tr: 'tr_TR', en: 'en_US', ru: 'ru_RU', de: 'de_DE', ar: 'ar_AR' }
 export const ogLocale = (locale: string) => OG_LOCALES[locale] ?? locale
 
 /**

@@ -106,6 +106,8 @@ for (const locale of locales) {
   // A later locale (ru/de/ar…) may have no category text yet: audit the fixture category there instead of writing
   // into a seeded one. It exists only while the fixtures do (`--remove` deletes it), so which locales have content,
   // and so their noindex/hreflang state, is back to the real data afterwards (tests/e2e/i18n-locales).
+  // Its text (and `pick`'s copy for project and guide) is English, so e.g. the ar pages audited here carry Latin text
+  // inside an RTL layout: right for axe/Lighthouse structure, not representative of real Arabic content.
   if (!category.slug) category = await fixtureCategory(locale)
   // CI's seeded category has no description, which Lighthouse scores as a missing meta description (real categories
   // always have one). Filled in CI only, where the database is thrown away.

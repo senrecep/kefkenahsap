@@ -20,3 +20,12 @@ Cyrillic files (`*-cyrillic.woff2`, for ru) come from the same instances (Montse
 
     pyftsubset M.ttf --unicodes="U+0400-045F,U+0490-0491,U+2116" --flavor=woff2 \
       --layout-features+=kern,liga,calt,lnum,tnum --output-file=Montserrat-cyrillic.woff2
+
+`NotoSansArabic.woff2` (ar, SIL OFL 1.1, licence beside it) from github.com/google/fonts `ofl/notosansarabic`: instanced to
+wght 400–700 at normal width and subset to Arabic, Arabic Supplement, the presentation forms and the joiner/bidi controls, with
+the shaping features (~68 KB). It stands in for both
+Montserrat and Source Sans 3, which have no Arabic glyphs, and loads only on pages with Arabic text (unicode-range):
+
+    fonttools varLib.instancer "NotoSansArabic[wdth,wght].ttf" wght=400:700 wdth=100 -o A.ttf
+    pyftsubset A.ttf --unicodes="U+0600-06FF,U+0750-077F,U+FB50-FDFF,U+FE70-FEFF,U+200C-200F,U+2066-2069" --flavor=woff2 \
+      --layout-features='ccmp,isol,init,medi,fina,rlig,liga,calt,mark,mkmk,kern,curs' --output-file=NotoSansArabic.woff2

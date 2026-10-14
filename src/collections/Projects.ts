@@ -1,7 +1,7 @@
 import type { CollectionConfig, FieldAccess } from 'payload'
 
 import { isStaff, publishedOrStaff } from '@/access'
-import { slugFrom } from '@/hooks/slug'
+import { slugFrom, validSlug } from '@/hooks/slug'
 import { revalidateAfterChange, revalidateAfterDelete } from '@/hooks/revalidate'
 import { aiDraftField, aiTranslateField } from './aiFields'
 
@@ -37,6 +37,7 @@ export const Projects: CollectionConfig = {
       unique: true,
       index: true,
       hooks: { beforeValidate: [slugFrom('title')] },
+      validate: validSlug,
       admin: { position: 'sidebar' },
     },
     { name: 'featured', type: 'checkbox', label: 'Öne çıkan', admin: { position: 'sidebar' } },

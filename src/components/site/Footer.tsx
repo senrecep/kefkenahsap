@@ -48,7 +48,7 @@ export async function Footer({ locale }: { locale: Locale }) {
             {settings.phones?.map((p) => (
               <a key={p.number} href={telLink({ phones: [p] })?.href} className="hover:underline">
                 {p.label ? `${p.label}: ` : ''}
-                {p.number}
+                <bdi dir="ltr">{p.number}</bdi>
               </a>
             ))}
             {settings.email && (
@@ -68,7 +68,7 @@ export async function Footer({ locale }: { locale: Locale }) {
               <ul className="grid gap-1 text-paper/90">
                 {settings.hours.map((r) => (
                   <li key={r.id ?? `${r.days?.join()}${r.opens}`}>
-                    {(r.days ?? []).map((d) => tDays(d)).join(', ')}: {r.opens}–{r.closes}
+                    {(r.days ?? []).map((d) => tDays(d)).join(', ')}: <bdi dir="ltr">{r.opens}–{r.closes}</bdi>
                   </li>
                 ))}
               </ul>
@@ -114,7 +114,7 @@ export async function Footer({ locale }: { locale: Locale }) {
             {settings.social?.instagram && <a href={settings.social.instagram} rel="noopener me" target="_blank" className="text-paper/90 hover:underline">Instagram</a>}
             {settings.social?.facebook && <a href={settings.social.facebook} rel="noopener me" target="_blank" className="text-paper/90 hover:underline">Facebook</a>}
           </div>
-          {tel && <a href={tel.href} className="mt-6 inline-block font-[family-name:var(--font-display)] text-xl font-semibold">{tel.label}</a>}
+          {tel && <a href={tel.href} className="mt-6 inline-block font-[family-name:var(--font-display)] text-xl font-semibold"><bdi dir="ltr">{tel.label}</bdi></a>}
         </div>
       </div>
       <div className="mx-auto max-w-7xl px-4 md:px-6">
