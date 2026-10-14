@@ -93,6 +93,7 @@ export default buildConfig({
     },
   }),
   sharp,
+  upload: { limits: { fileSize: 25 * 1024 * 1024 } }, // lead photos are additionally capped at 10 MB by the form (#41)
   plugins: [
     // Manual redirects managed in the admin (old WP pages/attachments and future URL changes).
     // Bulk WP media redirects live in a JSON map (#32), not here.

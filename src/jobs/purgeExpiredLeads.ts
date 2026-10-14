@@ -16,11 +16,18 @@ export const purgeExpiredLeads: TaskConfig<'purgeExpiredLeads'> = {
       pagination: false,
       req,
     })
+    let deleted = 0
     for (const lead of expired.docs) {
       const photoIds = (lead.photos ?? []).map((p) => (typeof p === 'object' ? p.id : p))
-      if (photoIds.length) await req.payload.delete({ collection: 'lead-photos', where: { id: { in: photoIds } }, req })
-      await req.payload.delete({ collection: 'leads', id: lead.id, req })
+      try {
+        // Lead first: a half-finished run never leaves a lead pointing at deleted photos.
+        await req.payload.delete({ collection: 'leads', id: lead.id, req })
+        if (photoIds.length) await req.payload.delete({ collection: 'lead-photos', where: { id: { in: photoIds } }, req })
+        deleted++
+      } catch (err) {
+        req.payload.logger.error({ err, lead: lead.id }, 'purgeExpiredLeads: failed for one lead, continuing')
+      }
     }
-    return { output: { deleted: expired.docs.length } }
+    return { output: { deleted } }
   },
 }

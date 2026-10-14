@@ -23,8 +23,10 @@ const nextConfig: NextConfig = {
   },
   // Anything that is not production must never be indexed.
   async headers() {
-    if (process.env.SITE_ENV === 'production') return []
-    return [{ source: '/:path*', headers: [{ key: 'X-Robots-Tag', value: 'noindex, nofollow' }] }]
+    // Personal data (lead photos) must never be stored by a shared cache (Cloudflare, proxies).
+    const privateFiles = { source: '/api/lead-photos/:path*', headers: [{ key: 'Cache-Control', value: 'private, no-store' }] }
+    if (process.env.SITE_ENV === 'production') return [privateFiles]
+    return [privateFiles, { source: '/:path*', headers: [{ key: 'X-Robots-Tag', value: 'noindex, nofollow' }] }]
   },
   turbopack: {
     root: path.resolve(dirname),

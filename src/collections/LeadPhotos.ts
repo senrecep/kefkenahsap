@@ -12,7 +12,9 @@ export const LeadPhotos: CollectionConfig = {
   access: { read: isStaff, create: isStaff, update: isStaff, delete: isStaff },
   upload: {
     staticDir: process.env.LEAD_PHOTOS_DIR || path.resolve(process.cwd(), 'data/lead-photos'),
-    mimeTypes: ['image/*'],
+    // No SVG (scriptable); originals re-encoded to WebP, which drops EXIF/GPS metadata.
+    mimeTypes: ['image/jpeg', 'image/png', 'image/webp', 'image/heic', 'image/heif'],
+    formatOptions: { format: 'webp', options: { quality: 85 } },
     imageSizes: [{ name: 'thumb', width: 480, withoutEnlargement: true, formatOptions: { format: 'webp' } }],
     adminThumbnail: 'thumb',
   },
