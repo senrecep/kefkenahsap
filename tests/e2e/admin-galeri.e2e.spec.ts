@@ -49,7 +49,8 @@ test('Galeri: upload two photos, move the second up, approve with alt text', asy
     await first.getByRole('button', { name: 'Kaydet ve onayla' }).click()
     await expect(first.locator('.galeri__badge')).toHaveText('Yayında')
     await expect(first.locator('.galeri__alt')).toHaveText('Mavi tonlarda ahşap deck örneği')
-    await page.screenshot({ path: 'docs/screens/admin-galeri-mobile.png', fullPage: true })
+    // Docs screenshot only on demand (UPDATE_SCREENSHOTS=1) to avoid churn in normal runs.
+    if (process.env.UPDATE_SCREENSHOTS) await page.screenshot({ path: 'docs/screens/admin-galeri-mobile.png', fullPage: true })
   } finally {
     await payload.delete({ collection: 'media', where: { category: { equals: cat.id } } })
     await payload.delete({ collection: 'categories', id: cat.id })
