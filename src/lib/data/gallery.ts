@@ -4,7 +4,7 @@ import { getPathname } from '@/i18n/navigation'
 import type { Locale } from '@/i18n/routing'
 import { categoryRank, diversify } from '@/lib/gallery/curate'
 import type { GalleryItem } from '@/lib/gallery/item'
-import { encodeCursor, galleryWhere, PAGE_SIZE, type GalleryQuery } from '@/lib/gallery/query'
+import { encodeCursor, galleryWhere, PAGE_SIZE, START_CURSOR_ID, type GalleryQuery } from '@/lib/gallery/query'
 import type { Category, Media, Project } from '@/payload-types'
 
 import { getPayload, TAGS } from './payload'
@@ -72,11 +72,33 @@ export async function curate(docs: Media[]): Promise<Media[]> {
 
 export type GalleryPage = { items: GalleryItem[]; total: number; nextCursor: string | null }
 
+// Old watermarked photos vary a lot; the curated pool uses featured or large ones only.
+const LARGE = 1280
+
 /**
- * Newest first, keyset-paginated by id (stable when new photos are added).
- * `curated` reorders only the first page's own photos, so the cursor (the oldest id on it) and later pages are unchanged.
+ * One curated selection (ids, one page) shared by the homepage gallery and the first page of the unfiltered /galeri:
+ * featured first, then large photos mixed across categories, outdoor first.
  */
-export function getGalleryPage(locale: Locale, f: { categoryId?: number; tagId?: number; cursor?: number; limit: number; curated?: boolean }) {
+export const getCuratedSelection = (locale: Locale) =>
+  unstable_cache(
+    async () => {
+      const res = await (await getPayload()).find({
+        collection: 'media',
+        locale,
+        ...mediaQuery,
+        where: { and: [...galleryWhere({}).and, { or: [{ featured: { equals: true } }, { width: { greater_than_equal: LARGE } }] }] },
+        sort: ['-featured', '-id'],
+        // shortcut: the mix draws from the newest 200 candidates; raise if large photos outgrow it.
+        limit: 200,
+      })
+      return (await curate(res.docs as Media[])).slice(0, PAGE_SIZE).map((d) => toGalleryItem(d, locale))
+    },
+    ['curatedSelection', locale],
+    { tags, revalidate: HOUR },
+  )()
+
+/** Newest first, keyset-paginated by id (stable when new photos are added); `exclude` skips the curated first page. */
+export function getGalleryPage(locale: Locale, f: { categoryId?: number; tagId?: number; cursor?: number; exclude?: number[]; limit: number }) {
   const load = async (): Promise<GalleryPage> => {
     const res = await (await getPayload()).find({
       collection: 'media',
@@ -86,18 +108,32 @@ export function getGalleryPage(locale: Locale, f: { categoryId?: number; tagId?:
       sort: '-id',
       limit: f.limit,
     })
-    let docs = res.docs as Media[]
-    const nextCursor = res.hasNextPage && docs.length ? encodeCursor(docs.at(-1)!.id) : null
-    if (f.curated && !f.cursor) docs = [...(await curate(docs.slice(0, PAGE_SIZE))), ...docs.slice(PAGE_SIZE)]
+    const docs = res.docs as Media[]
     return {
       items: docs.map((d) => toGalleryItem(d, locale)),
       total: res.totalDocs,
-      nextCursor,
+      nextCursor: res.hasNextPage && docs.length ? encodeCursor(docs.at(-1)!.id) : null,
     }
   }
   // Cursor pages are visitor-chosen keys: never cache them in-process (the feed's Cache-Control covers the edge).
   if (f.cursor) return load()
   return unstable_cache(load, ['galleryPage', locale, JSON.stringify(f)], { tags, revalidate: HOUR })()
+}
+
+/**
+ * Unfiltered gallery, `pages` pages deep: page 1 is the curated selection, then the rest newest-first.
+ * The feed continues from START_CURSOR_ID with the same exclusion, so nothing repeats or goes missing.
+ */
+export async function getUnfilteredGallery(locale: Locale, pages: number): Promise<GalleryPage> {
+  const curated = await getCuratedSelection(locale)
+  const exclude = curated.map((i) => i.id)
+  // Payload treats limit 0 as "no limit": on page 1 fetch one row only for the count.
+  const rest = await getGalleryPage(locale, { exclude, limit: Math.max(1, PAGE_SIZE * (pages - 1)) })
+  return {
+    items: [...curated, ...(pages > 1 ? rest.items : [])],
+    total: curated.length + rest.total,
+    nextCursor: pages > 1 ? rest.nextCursor : rest.total > 0 ? encodeCursor(START_CURSOR_ID) : null,
+  }
 }
 
 export const getGalleryTags = (locale: Locale) =>

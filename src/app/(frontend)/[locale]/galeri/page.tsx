@@ -7,7 +7,7 @@ import { GalleryGrid } from '@/components/gallery/GalleryGrid'
 import { Container } from '@/components/ui/Container'
 import { getPathname } from '@/i18n/navigation'
 import type { Locale } from '@/i18n/routing'
-import { getGalleryPage, resolveGalleryFilter } from '@/lib/data/gallery'
+import { getGalleryPage, getUnfilteredGallery, resolveGalleryFilter } from '@/lib/data/gallery'
 import { PAGE_SIZE, parseGalleryQuery } from '@/lib/gallery/query'
 import { pageMetadata, staticPaths } from '@/lib/seo/page-metadata'
 
@@ -37,7 +37,9 @@ export default async function GalleryPage({ params, searchParams }: Props) {
   const [t, { categories, tags, category, tag, unknown }] = await Promise.all([getTranslations('Gallery'), resolveGalleryFilter(locale, q)])
   const page = unknown
     ? { items: [], total: 0, nextCursor: null }
-    : await getGalleryPage(locale, { categoryId: category?.id, tagId: tag?.id, limit: PAGE_SIZE * q.page, curated: !category && !tag })
+    : !category && !tag
+      ? await getUnfilteredGallery(locale, q.page)
+      : await getGalleryPage(locale, { categoryId: category?.id, tagId: tag?.id, limit: PAGE_SIZE * q.page })
 
   const filter = { ...(q.category ? { kategori: q.category } : {}), ...(q.tag ? { etiket: q.tag } : {}) }
   const base = getPathname({ locale, href: '/galeri' })

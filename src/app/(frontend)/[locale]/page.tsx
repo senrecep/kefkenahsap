@@ -56,7 +56,9 @@ export default async function HomePage({ params }: Props) {
       case 'hero': {
         const b = s as Fields<'hero'>
         const image = b.image && typeof b.image === 'object' ? b.image : (fallback?.media ?? null)
-        return () => Hero({ locale, image, heading: b.heading, subheading: b.subheading, priority: i === firstHero })
+        // Read with overrideAccess: false, so an unapproved phone photo arrives as a bare id and is skipped.
+        const mobileImage = b.mobileImage && typeof b.mobileImage === 'object' ? b.mobileImage : null
+        return () => Hero({ locale, image, mobileImage, heading: b.heading, subheading: b.subheading, priority: i === firstHero })
       }
       case 'featuredGallery': {
         const b = s as Fields<'featuredGallery'>

@@ -7,7 +7,7 @@ import type { Where } from 'payload'
 
 import type { Media } from '@/payload-types'
 
-import { curate, mediaQuery, toGalleryItem } from './gallery'
+import { getCuratedSelection, mediaQuery, toGalleryItem } from './gallery'
 import { getPayload, TAGS } from './payload'
 
 const HOUR = 3600
@@ -46,24 +46,8 @@ export const getHeroFallback = (locale: Locale) =>
     { tags: [TAGS.media, TAGS.categories], revalidate: HOUR },
   )()
 
-/** Homepage gallery: featured photos first, then large photos mixed across categories (outdoor first). */
-export const getFeaturedImages = (locale: Locale, limit: number) =>
-  unstable_cache(
-    async () => {
-      const res = await (await getPayload()).find({
-        collection: 'media',
-        locale,
-        ...mediaQuery,
-        where: { and: [...galleryWhere({}).and, { or: [{ featured: { equals: true } }, { width: { greater_than_equal: LARGE_LANDSCAPE } }] }] },
-        sort: ['-featured', '-id'],
-        // shortcut: the mix draws from the newest 200 candidates; raise if large photos outgrow it.
-        limit: 200,
-      })
-      return (await curate(res.docs as Media[])).slice(0, limit).map((d) => toGalleryItem(d, locale))
-    },
-    ['featuredImages', locale, String(limit)],
-    { tags: [TAGS.media, TAGS.categories], revalidate: HOUR },
-  )()
+/** Homepage gallery: the head of the curated selection the unfiltered /galeri also opens with. */
+export const getFeaturedImages = async (locale: Locale, limit: number) => (await getCuratedSelection(locale)).slice(0, limit)
 
 export const getFeaturedProjects = (locale: Locale) =>
   unstable_cache(
