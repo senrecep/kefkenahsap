@@ -69,7 +69,7 @@ Use [`tsentials`](https://github.com/senrecep/tsentials) (latest at plan time: v
 
 ## AI content
 
-- Prompts live in `src/ai/prompts/` as TS modules with a version constant. Turkish rules are in `docs/AI-PROMPTS.md`: correct Turkish characters, apostrophe before suffixes on proper nouns, no translationese, no list of clichés ("eşsiz", "hayallerinizdeki"…), and no invented facts.
+- Prompts live in `src/ai/prompts/` as TS modules with a version constant. Turkish rules are in `docs/CONTENT-STYLE-TR.md` (prompt summary: `src/ai/prompts/turkish.ts`, workflow: `docs/AI-PROMPTS.md`): correct Turkish characters, apostrophe before suffixes on proper nouns, no translationese, no list of clichés ("eşsiz", "hayallerinizdeki"…), and no invented facts.
 - Nothing is published automatically. AI output always lands in a `pending`/draft state.
 - Seed metadata (568 images) is prepared locally with Claude and reviewed, then loaded as `approved`. Runtime `tagImage` is for new uploads only.
 
