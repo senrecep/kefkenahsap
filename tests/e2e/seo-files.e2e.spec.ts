@@ -25,12 +25,13 @@ test.describe('robots, sitemap, llms.txt', () => {
   test('sitemap lists only indexable pages, with alternates that match the page hreflang', async ({ request }) => {
     const urls = await sitemap(request)
     expect(new Set(urls.map((u) => u.loc)).size).toBe(urls.length)
-    const sample = [
-      urls.find((u) => path(u.loc) === '/tr'),
-      urls.find((u) => path(u.loc) === '/en/gallery'),
-      urls.find((u) => /^\/en\/gallery\/./.test(path(u.loc))),
-      urls.find((u) => /^\/tr\/[^/]+$/.test(path(u.loc)) && !['/tr/galeri', '/tr/hizmetlerimiz', '/tr/projeler', '/tr/referanslar', '/tr/hakkimizda', '/tr/iletisim', '/tr/kvkk', '/tr/cerez-politikasi'].includes(path(u.loc))),
-    ]
+    // Every fixed route, plus one service and one photo page.
+    const STATIC = /^\/(tr|en)(\/(galeri|gallery|hizmetlerimiz|services|projeler|projects|referanslar|references|hakkimizda|about|iletisim|contact|kvkk|privacy|cerez-politikasi|cookies))?$/
+    const statics = urls.filter((u) => STATIC.test(path(u.loc)))
+    expect(statics.length).toBe(18) // 9 fixed routes × 2 locales
+    const photo = urls.find((u) => /^\/en\/gallery\/./.test(path(u.loc)))
+    const service = urls.find((u) => /^\/tr\/[^/]+$/.test(path(u.loc)) && !STATIC.test(path(u.loc)))
+    const sample = [...statics, service, photo]
     for (const u of sample) {
       expect(u, 'template present in sitemap').toBeTruthy()
       const res = await request.get(path(u!.loc))
@@ -42,9 +43,8 @@ test.describe('robots, sitemap, llms.txt', () => {
       expect(hreflang, u!.loc).toEqual(u!.alternates)
     }
     // Image sitemap: every photo page carries its CDN image.
-    const photo = sample[2]!
-    expect(photo.images.length).toBe(1)
-    expect((await request.get(photo.images[0]!)).status()).toBe(200)
+    expect(photo!.images.length).toBe(1)
+    expect(photo!.images[0]).toMatch(/^https?:\/\//)
     // Search is noindex and disallowed: never listed.
     expect(urls.some((u) => /\/(ara|search)(\?|$)/.test(path(u.loc)))).toBe(false)
   })

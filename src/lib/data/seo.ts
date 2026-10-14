@@ -3,7 +3,7 @@ import { unstable_cache } from 'next/cache'
 import { getPathname } from '@/i18n/navigation'
 import { routing } from '@/i18n/routing'
 import { galleryWhere } from '@/lib/gallery/query'
-import { publishedLocales } from '@/lib/i18n/published'
+import { livePaths } from '@/lib/i18n/published'
 import { responsiveImage, type MediaLike } from '@/lib/media/image'
 import type { SitemapDoc } from '@/lib/seo/sitemap'
 
@@ -13,10 +13,8 @@ const HOUR = 3600
 type ByLocale<T = string> = Record<string, T | null | undefined> | null | undefined
 
 /** Per-locale paths of a localized document; null where the translation is not live (PLAN §5.1). */
-const docPaths = (slug: ByLocale, title: ByLocale, path: (locale: string, slug: string) => string) => {
-  const live = publishedLocales(Object.fromEntries(routing.locales.map((l) => [l, { slug: slug?.[l], title: title?.[l] }])))
-  return Object.fromEntries(routing.locales.map((l) => [l, live.includes(l) ? path(l, slug![l]!) : null]))
-}
+const docPaths = (slug: ByLocale, title: ByLocale, path: (locale: string, slug: string) => string) =>
+  livePaths(Object.fromEntries(routing.locales.map((l) => [l, { slug: slug?.[l], title: title?.[l] }])), path)
 
 type Locale = (typeof routing.locales)[number]
 const categoryPath = (l: string, category: string) => getPathname({ locale: l as Locale, href: { pathname: '/[category]', params: { category } } })
