@@ -225,7 +225,8 @@ export async function Contact({ locale, heading }: Heading & { locale: Locale })
   const tel = telLink(settings)
   const a = settings.address
   const address = [a?.street, [a?.postalCode, a?.district, a?.city].filter(Boolean).join(' ')].filter(Boolean)
-  const row = 'flex gap-3 border-b border-line py-4'
+  // dt/dd sit directly in the row div (a valid <dl> group); the icon lives in <dt>, hung in the start padding.
+  const row = 'relative border-b border-line py-4 ps-8'
   return (
     <Section title={heading || t('contactTitle')} className="pb-8 md:pb-12">
       <div className="grid gap-10 lg:grid-cols-2">
@@ -242,34 +243,34 @@ export async function Contact({ locale, heading }: Heading & { locale: Locale })
         <dl className="border-t border-line">
           {tel && (
             <div className={row}>
-              <Phone aria-hidden size={20} strokeWidth={1.75} className="mt-0.5 shrink-0 text-action" />
-              <div>
-                <dt className="text-[0.95rem] text-ink-soft">{t('phone')}</dt>
-                <dd>
-                  {settings.phones?.map((p) => (
-                    <a key={p.number} href={telLink({ phones: [p] })?.href} data-umami-event="phone_click" data-umami-event-place="home-contact" className="block font-[family-name:var(--font-display)] font-semibold hover:text-action">
-                      {p.number}
-                      {p.whatsapp && <MessageCircle aria-label="WhatsApp" size={16} strokeWidth={1.75} className="ms-2 inline align-[-2px] text-action" />}
-                    </a>
-                  ))}
-                </dd>
-              </div>
+              <dt className="text-[0.95rem] text-ink-soft">
+                <Phone aria-hidden size={20} strokeWidth={1.75} className="absolute start-0 top-[1.125rem] text-action" />
+                {t('phone')}
+              </dt>
+              <dd>
+                {settings.phones?.map((p) => (
+                  <a key={p.number} href={telLink({ phones: [p] })?.href} data-umami-event="phone_click" data-umami-event-place="home-contact" className="block font-[family-name:var(--font-display)] font-semibold hover:text-action">
+                    {p.number}
+                    {p.whatsapp && <MessageCircle aria-label="WhatsApp" size={16} strokeWidth={1.75} className="ms-2 inline align-[-2px] text-action" />}
+                  </a>
+                ))}
+              </dd>
             </div>
           )}
           {address.length > 0 && (
             <div className={row}>
-              <MapPin aria-hidden size={20} strokeWidth={1.75} className="mt-0.5 shrink-0 text-action" />
-              <div>
-                <dt className="text-[0.95rem] text-ink-soft">{t('address')}</dt>
-                <dd>
-                  <address className="not-italic">{address.join(', ')}</address>
-                  {a?.mapUrl && (
-                    <a href={a.mapUrl} target="_blank" rel="noopener" className="mt-1 inline-block text-action underline">
-                      {t('directions')}
-                    </a>
-                  )}
-                </dd>
-              </div>
+              <dt className="text-[0.95rem] text-ink-soft">
+                <MapPin aria-hidden size={20} strokeWidth={1.75} className="absolute start-0 top-[1.125rem] text-action" />
+                {t('address')}
+              </dt>
+              <dd>
+                <address className="not-italic">{address.join(', ')}</address>
+                {a?.mapUrl && (
+                  <a href={a.mapUrl} target="_blank" rel="noopener" className="mt-1 inline-block text-action underline">
+                    {t('directions')}
+                  </a>
+                )}
+              </dd>
             </div>
           )}
         </dl>

@@ -10,7 +10,8 @@ export default defineConfig({
       {
         extends: true,
         // Pure seams: no DB, no network.
-        test: { name: 'unit', environment: 'node', include: ['src/**/*.test.ts', 'src/**/*.test.tsx'] },
+        // next-intl is inlined so its extensionless `next/*` imports resolve (pathname parity test).
+        test: { name: 'unit', environment: 'node', include: ['src/**/*.test.ts', 'src/**/*.test.tsx'], server: { deps: { inline: ['next-intl'] } } },
       },
       {
         extends: true,

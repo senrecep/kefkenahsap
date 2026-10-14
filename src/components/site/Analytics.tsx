@@ -1,4 +1,6 @@
-import Script from 'next/script'
+import { getTranslations } from 'next-intl/server'
+
+import { Link } from '@/i18n/navigation'
 
 import { CookieConsent } from './CookieConsent'
 
@@ -12,14 +14,27 @@ export function Analytics({ locale }: { locale: string }) {
   const umamiId = process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID
   return (
     <>
-      {umamiSrc && umamiId && <Script src={umamiSrc} data-website-id={umamiId} data-domains="kefkenahsap.com,www.kefkenahsap.com" strategy="afterInteractive" />}
+      {umamiSrc && umamiId && <script defer src={umamiSrc} data-website-id={umamiId} data-domains="kefkenahsap.com,www.kefkenahsap.com" />}
       {gaId && (
         <>
           {/* Inline so it runs during parsing, before any client code can call gtag. */}
           <script id="consent-defaults" dangerouslySetInnerHTML={{ __html: consentDefaults }} />
-          <CookieConsent gaId={gaId} locale={locale} />
+          <ConsentBanner gaId={gaId} locale={locale} />
         </>
       )}
     </>
   )
+}
+
+/** Banner copy is translated here only when GA is configured (the banner exists only then). */
+async function ConsentBanner({ gaId, locale }: { gaId: string; locale: string }) {
+  const t = await getTranslations({ locale, namespace: 'Consent' })
+  const text = t.rich('text', {
+    link: (chunks) => (
+      <Link href="/cerez-politikasi" className="font-semibold text-action underline underline-offset-2 hover:text-action-deep">
+        {chunks}
+      </Link>
+    ),
+  })
+  return <CookieConsent gaId={gaId} locale={locale} text={text} labels={{ label: t('label'), reject: t('reject'), accept: t('accept') }} />
 }

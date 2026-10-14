@@ -34,3 +34,5 @@ next-env.d.ts
 
 # private volume data (lead photos)
 /data/
+.lighthouseci/
+.quality-targets.json
