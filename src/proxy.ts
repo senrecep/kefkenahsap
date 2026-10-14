@@ -51,7 +51,7 @@ export default function proxy(req: NextRequest) {
   if (pathname === '/admin.webmanifest' || pathname.startsWith('/brand/pwa-')) return NextResponse.next()
 
   // The deployed development environment sits entirely behind HTTP Basic auth (pages, admin, API, files)
-  // and fails closed when the credential is missing.
+  // and fails closed when the credential is missing. SITE_BASIC_AUTH=off opens it on purpose (pages stay noindex).
   const basic = process.env.SITE_BASIC_AUTH
   if (process.env.SITE_ENV === 'development' && !basic) return new NextResponse('Not configured', { status: 503 })
   if (!isAuthorized(req.headers.get('authorization'), basic)) {
