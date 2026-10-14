@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test'
 
-// Single-hop legacy redirects (spike #13). `maxRedirects: 0` asserts the very first response.
+// Single-hop legacy redirects (#32), against the seeded maps in src/lib/legacy/. `maxRedirects: 0` asserts the very first response.
 const hop = (request: import('@playwright/test').APIRequestContext, url: string) =>
   request.get(url, { maxRedirects: 0 })
 
@@ -13,7 +13,17 @@ test('old WP page with trailing slash → /tr/<slug> in one 301', async ({ reque
 test('WP size variant of a known image → CDN original in one 301', async ({ request }) => {
   const r = await hop(request, '/wp-content/uploads/2018/09/1-1-400x400.jpg')
   expect(r.status()).toBe(301)
-  expect(r.headers().location).toBe(`${process.env.MEDIA_PUBLIC_URL}/deck-ve-zeminler/1-1.webp`)
+  expect(r.headers().location).toBe(`${process.env.MEDIA_PUBLIC_URL}/bahce-ahsap-deck-platformu.webp`)
+})
+
+test('old attachment page → its image page in one 301', async ({ request }) => {
+  const r = await hop(request, '/1-4/')
+  expect(r.status()).toBe(301)
+  expect(new URL(r.headers().location, 'http://x').pathname).toBe('/tr/galeri/bahce-yukseltilmis-ahsap-deck')
+})
+
+test('WP internals → 410', async ({ request }) => {
+  expect((await hop(request, '/wp-login.php')).status()).toBe(410)
 })
 
 test('unknown WP upload (Turkish characters, encoded) → 410', async ({ request }) => {
