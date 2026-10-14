@@ -4,12 +4,11 @@ import type { ReactNode } from 'react'
 
 import { Hero } from '@/components/home/Hero'
 import { Contact, Faq, FeaturedGallery, FeaturedProjects, Process, References, Services, WoodTypes } from '@/components/home/Sections'
-import { getPathname } from '@/i18n/navigation'
-import { routing, type Locale } from '@/i18n/routing'
+import type { Locale } from '@/i18n/routing'
 import { getHeroFallback, getHomepage } from '@/lib/data/home'
 import { getSiteSettings } from '@/lib/data/site'
 import { homeSections } from '@/lib/home/sections'
-import { buildAlternates, siteUrl } from '@/lib/seo/alternates'
+import { pageMetadata, staticPaths } from '@/lib/seo/page-metadata'
 import type { Homepage } from '@/payload-types'
 
 type Props = { params: Promise<{ locale: Locale }> }
@@ -20,12 +19,12 @@ type Fields<T extends Block['blockType']> = Partial<Extract<Block, { blockType: 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params
   const [t, settings] = await Promise.all([getTranslations({ locale, namespace: 'Home' }), getSiteSettings(locale)])
-  const paths = Object.fromEntries(routing.locales.map((l) => [l, getPathname({ locale: l, href: '/' })]))
-  return {
+  return pageMetadata({
+    locale,
     title: { absolute: t('metaTitle') },
     description: settings.defaultDescription || t('heroText'),
-    alternates: buildAlternates({ current: locale, paths, site: siteUrl() }),
-  }
+    paths: staticPaths('/'),
+  })
 }
 
 /** A section whose loader fails renders nothing instead of taking the whole page down. */

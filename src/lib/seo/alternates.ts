@@ -8,4 +8,10 @@ export function buildAlternates(args: { current: string; paths: Record<string, s
   return { canonical: own ? abs(own) : undefined, languages }
 }
 
-export const siteUrl = () => process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.kefkenahsap.com'
+/** Canonical origin. Outside production a missing value is a setup error: fail loudly rather than emit production URLs. */
+export function siteUrl() {
+  const url = process.env.NEXT_PUBLIC_SITE_URL
+  if (url) return url
+  if (process.env.SITE_ENV === 'production') return 'https://www.kefkenahsap.com'
+  throw new Error('NEXT_PUBLIC_SITE_URL is not set (required outside production)')
+}

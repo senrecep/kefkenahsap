@@ -9,9 +9,9 @@ import { WhatsAppButton } from '@/components/ui/WhatsAppButton'
 import { Link } from '@/i18n/navigation'
 import type { Locale } from '@/i18n/routing'
 import { sinceYear } from '@/lib/company'
-import { getPage } from '@/lib/data/pages'
+import { getPage, getPageTitles } from '@/lib/data/pages'
 import { getSiteSettings } from '@/lib/data/site'
-import { staticAlternates } from '@/lib/seo/static-alternates'
+import { cmsPagePaths, pageMetadata } from '@/lib/seo/page-metadata'
 
 const SLUGS = ['hakkimizda', 'about']
 type Props = { params: Promise<{ locale: string }> }
@@ -19,11 +19,13 @@ type Props = { params: Promise<{ locale: string }> }
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params
   const [t, page, settings] = await Promise.all([getTranslations({ locale, namespace: 'About' }), getPage(locale as Locale, SLUGS), getSiteSettings(locale as Locale)])
-  return {
-    title: page?.seo?.title || `${page?.title ?? t('title')} | ${settings.companyName}`,
+  // An admin-written SEO title is complete; otherwise the layout template appends the company name.
+  return pageMetadata({
+    locale: locale as Locale,
+    title: page?.seo?.title ? { absolute: page.seo.title } : (page?.title ?? t('title')),
     description: page?.seo?.description || t('metaDescription', { company: settings.companyName, district: settings.address?.district || settings.address?.city || 'none' }),
-    alternates: staticAlternates(locale, '/hakkimizda'),
-  }
+    paths: cmsPagePaths('/hakkimizda', await getPageTitles(SLUGS)),
+  })
 }
 
 export default async function AboutPage({ params }: Props) {

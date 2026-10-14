@@ -6,10 +6,10 @@ import { GalleryFilters } from '@/components/gallery/GalleryFilters'
 import { GalleryGrid } from '@/components/gallery/GalleryGrid'
 import { Container } from '@/components/ui/Container'
 import { getPathname } from '@/i18n/navigation'
-import { routing, type Locale } from '@/i18n/routing'
+import type { Locale } from '@/i18n/routing'
 import { getGalleryPage, resolveGalleryFilter } from '@/lib/data/gallery'
 import { PAGE_SIZE, parseGalleryQuery } from '@/lib/gallery/query'
-import { buildAlternates, siteUrl } from '@/lib/seo/alternates'
+import { pageMetadata, staticPaths } from '@/lib/seo/page-metadata'
 
 type Props = { params: Promise<{ locale: Locale }>; searchParams: Promise<Record<string, string | string[] | undefined>> }
 
@@ -17,14 +17,14 @@ export async function generateMetadata({ params, searchParams }: Props): Promise
   const [{ locale }, query] = await Promise.all([params, searchParams])
   const parsed = parseGalleryQuery(query)
   const t = await getTranslations({ locale, namespace: 'Gallery' })
-  const paths = Object.fromEntries(routing.locales.map((l) => [l, getPathname({ locale: l, href: '/galeri' })]))
-  return {
+  return pageMetadata({
+    locale,
     title: t('title'),
     description: t('metaDescription'),
-    alternates: buildAlternates({ current: locale, paths, site: siteUrl() }),
+    paths: staticPaths('/galeri'),
     // No-JS "?sayfa=N" pages repeat page 1's photos; index only the first.
-    ...(parsed.ok && parsed.value.page > 1 ? { robots: { index: false, follow: true } } : {}),
-  }
+    noindex: parsed.ok && parsed.value.page > 1,
+  })
 }
 
 export default async function GalleryPage({ params, searchParams }: Props) {
