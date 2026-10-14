@@ -114,13 +114,12 @@ export default async function CategoryPage({ params, searchParams }: { params: P
             {t('gallery')}
           </h2>
           <ul className="grid grid-cols-2 gap-2 md:grid-cols-3 md:gap-3 lg:grid-cols-4">
-            {photos.map((m, i) => {
+            {photos.map((m) => {
               const pic = (
                 <Picture
                   media={m}
                   sizes="(min-width: 1280px) 304px, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw"
                   maxWidth={960}
-                  priority={i < 2}
                   className="aspect-[4/3]! rounded-[var(--radius-photo)]"
                   imgClassName="transition-transform duration-500 ease-[var(--ease-out-expo)] motion-safe:group-hover:scale-[1.03]"
                 />
