@@ -12,7 +12,7 @@ export function Analytics({ locale }: { locale: string }) {
   const umamiId = process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID
   return (
     <>
-      {umamiSrc && umamiId && <Script src={umamiSrc} data-website-id={umamiId} strategy="afterInteractive" />}
+      {umamiSrc && umamiId && <Script src={umamiSrc} data-website-id={umamiId} data-domains="kefkenahsap.com,www.kefkenahsap.com" strategy="afterInteractive" />}
       {gaId && (
         <>
           {/* Inline so it runs during parsing, before any client code can call gtag. */}

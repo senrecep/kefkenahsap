@@ -34,9 +34,10 @@ export default async function LocaleLayout({
         <NextIntlClientProvider>
           <Header locale={locale as Locale} />
           <main id="main">{children}</main>
+          {/* Right after the content so keyboard users reach the cookie choice before the footer. */}
+          <Analytics locale={locale} />
           <Footer locale={locale as Locale} />
           <MobileActionBar locale={locale as Locale} />
-          <Analytics locale={locale} />
         </NextIntlClientProvider>
       </body>
     </html>

@@ -33,6 +33,20 @@ export default defineConfig({
   projects: [
     {
       name: 'chromium',
+      testIgnore: /consent\.e2e\.spec\.ts/,
+      // A stored "denied" choice keeps the cookie banner from covering controls in unrelated specs.
+      use: {
+        ...devices['Desktop Chrome'],
+        channel: 'chromium',
+        storageState: {
+          cookies: [{ name: 'kh_consent', value: 'denied', domain: 'localhost', path: '/', expires: -1, httpOnly: false, secure: false, sameSite: 'Lax' }],
+          origins: [],
+        },
+      },
+    },
+    {
+      name: 'consent',
+      testMatch: /consent\.e2e\.spec\.ts/,
       use: { ...devices['Desktop Chrome'], channel: 'chromium' },
     },
   ],

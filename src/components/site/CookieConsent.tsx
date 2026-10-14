@@ -5,7 +5,7 @@ import { useEffect, useState, useSyncExternalStore } from 'react'
 
 import { Link } from '@/i18n/navigation'
 import { buttonClass } from '@/components/ui/button'
-import { consentCookie, readConsent, type Consent } from '@/lib/consent/consent'
+import { consentCookie, gaCookieDeletions, readConsent, type Consent } from '@/lib/consent/consent'
 
 declare global {
   interface Window {
@@ -65,7 +65,15 @@ export function CookieConsent({ gaId, locale }: { gaId: string; locale: string }
   }, [locale])
 
   function choose(value: Consent) {
+    const withdrawn = value === 'denied' && stored === 'granted'
     document.cookie = consentCookie(value, location.protocol === 'https:')
+    if (withdrawn) {
+      // Withdrawal must stop GA now: opt out, drop its cookies, reload so the loaded gtag.js is gone too.
+      ;(window as unknown as Record<string, boolean>)[`ga-disable-${gaId}`] = true
+      for (const c of gaCookieDeletions(document.cookie, location.hostname)) document.cookie = c
+      location.reload()
+      return
+    }
     window.gtag?.('consent', 'update', { analytics_storage: value })
     setReopened(false)
     window.dispatchEvent(new Event(CHANGE_EVENT))

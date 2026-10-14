@@ -13,3 +13,13 @@ export function readConsent(cookies: string): Consent | null {
 
 export const consentCookie = (value: Consent, secure: boolean) =>
   `${CONSENT_COOKIE}=${value}; Max-Age=${SIX_MONTHS}; Path=/; SameSite=Lax${secure ? '; Secure' : ''}`
+
+/** Cookie strings that expire Google Analytics cookies (`_ga`, `_ga_<id>`) on withdrawal; GA sets them on the apex domain. */
+export function gaCookieDeletions(cookies: string, hostname: string): string[] {
+  const apex = hostname.includes('.') ? hostname.split('.').slice(-2).join('.') : null
+  return cookies
+    .split(';')
+    .map((p) => p.trim().split('=')[0]!)
+    .filter((n) => n === '_ga' || n.startsWith('_ga_'))
+    .flatMap((n) => [`${n}=; Max-Age=0; Path=/`, ...(apex ? [`${n}=; Max-Age=0; Path=/; Domain=${apex}`] : [])])
+}
