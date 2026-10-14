@@ -199,7 +199,7 @@ The page is a single centred column with a 1280px maximum width. Side gutters ar
 The system is flat. Depth comes from photographs, Ink surfaces (footer, hero fallback, lightbox) and hairlines, not from shadows. One soft, diffuse shadow exists, and only on things that float above the page: the services dropdown, the consent banner and the lightbox controls. The mobile action bar uses an upward variant of the same softness. Nothing at rest in the page flow has a shadow.
 
 ### Shadow Vocabulary
-- **Float** (`box-shadow: 0 8px 24px -8px rgb(29 31 28 / 0.28), 0 2px 6px -2px rgb(29 31 28 / 0.16)`): the services dropdown, the consent banner and the lightbox round controls.
+- **Float** (`box-shadow: 0 8px 24px -8px rgb(29 31 28 / 0.28), 0 2px 6px -2px rgb(29 31 28 / 0.16)`): the services dropdown, the language menu, the consent banner and the lightbox round controls.
 - **Bar lift** (`box-shadow: 0 -6px 20px -12px rgb(29 31 28 / 0.35)`): the fixed mobile action bar only.
 
 ### Named Rules
@@ -239,7 +239,7 @@ Corners are gently rounded and consistent. Photos and controls (buttons, inputs,
 - **Consent:** a required checkbox (accent Action Green) whose label links to the KVKK notice and names the processors (Cloudflare, Resend, Google).
 
 ### Navigation
-- **Header:** sticky, 4.5rem tall, Paper with a hairline bottom border. The logo sits on the left. The links are Montserrat 600 at 0.95rem in ink and turn Action Green on hover. Hizmetler opens a two-column services panel on hover or focus that works without JS. On the right are the phone number (the number shows from `xl`, an icon below that) and the TR / EN switch.
+- **Header:** sticky, 4.5rem tall, Paper with a hairline bottom border. The logo sits on the left. The links are Montserrat 600 at 0.95rem in ink and turn Action Green on hover. Hizmetler opens a two-column services panel on hover or focus that works without JS. On the right are the phone number (the number shows from `xl`, an icon below that) and the language menu: a globe + current code (e.g. "TR") opening a Float panel of the languages with content, each named in itself (Türkçe, English, Русский, Deutsch, العربية), the current one checked; it aligns to the inline end, closes on outside click or Esc. The mobile menu lists the same links open, as 48px rows.
 - **Mobile menu:** a full panel. Services sit in a disclosure, the links are 48px rows, and focus is trapped while it is open. WhatsApp and "Teklif al" are pinned to the bottom edge of the panel.
 - **Mobile action bar:** three equal cells (WhatsApp · Ara · Teklif al), each 56px tall with an icon over a label. WhatsApp is the only filled cell, in Action Green. It is mounted once in the locale layout, so it is identical on every template. It hides from `lg` up.
 

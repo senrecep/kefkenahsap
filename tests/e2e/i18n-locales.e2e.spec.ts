@@ -18,6 +18,11 @@ const pathOf = (p: (typeof FIXED)[number], l: (typeof routing.locales)[number]) 
   return s === '/' ? `/${l}` : `/${l}${s}`
 }
 
+// Sitemap <loc> of a fixed route in any of the given locales. Photo pages (/xx/galeri/<slug>) are left out on purpose:
+// they are legitimately live per locale once the media has a title in it (seeded DB).
+const fixedLoc = (ls: readonly (typeof routing.locales)[number][]) =>
+  new RegExp(`<loc>[^<]*(${ls.flatMap((l) => FIXED.map((p) => pathOf(p, l))).join('|')})</loc>`)
+
 const page = async (request: APIRequestContext, path: string) => {
   const res = await request.get(path)
   expect(res.status(), path).toBe(200)
@@ -36,7 +41,7 @@ test.describe('new locales without content', () => {
   test.beforeAll(async ({ request }) => {
     for (const l of NEW) await expect.poll(async () => (await page(request, `/${l}`)).robots, { timeout: 30_000 }).toContain('noindex')
     await expect.poll(async () => (await page(request, '/tr')).hreflang.some((h) => NEW.includes(h as never)), { timeout: 30_000 }).toBe(false)
-    const leaked = new RegExp(`/(${NEW.join('|')})(/|<)`)
+    const leaked = fixedLoc(NEW)
     await expect.poll(async () => leaked.test(await (await request.get('/sitemap.xml')).text()), { timeout: 30_000 }).toBe(false)
   })
 
@@ -62,7 +67,7 @@ test.describe('new locales without content', () => {
       for (const l of NEW) expect(m.hreflang, path).not.toContain(l)
     }
     const xml = await (await request.get('/sitemap.xml')).text()
-    for (const l of NEW) expect(xml, l).not.toMatch(new RegExp(`/${l}(/|<)`))
+    for (const l of NEW) expect(xml, l).not.toMatch(fixedLoc([l]))
     const llms = await (await request.get('/llms.txt')).text()
     for (const l of NEW) expect(llms, l).not.toContain(`Services (${l})`)
   })
@@ -101,7 +106,7 @@ test.describe('a locale goes live with its content (data-driven)', () => {
   test.afterAll(async ({ request }) => {
     await deleteDocs(api, 'categories', ids)
     await expect.poll(async () => (await page(request, '/tr')).hreflang, { timeout: 30_000 }).not.toContain(l)
-    await expect.poll(async () => (await request.get('/sitemap.xml')).text(), { timeout: 30_000 }).not.toMatch(new RegExp(`/${l}(/|<)`))
+    await expect.poll(async () => (await request.get('/sitemap.xml')).text(), { timeout: 30_000 }).not.toMatch(fixedLoc([l]))
   })
 
   test(`one live ${l} category makes the ${l} fixed routes indexable, in hreflang and in the sitemap`, async ({ request, playwright, baseURL }) => {
@@ -116,5 +121,65 @@ test.describe('a locale goes live with its content (data-driven)', () => {
     const fresh = await playwright.request.newContext({ baseURL })
     const root = await fresh.get('/', { headers: { 'Accept-Language': l }, maxRedirects: 0 })
     expect(new URL(root.headers()['location']!, 'http://x').pathname).toBe(`/${l}`)
+  })
+})
+
+// #142: the header language menu is a native <details> dropdown; the mobile menu lists the same links open.
+test.describe('header language menu', () => {
+  test('opens and closes by mouse and keyboard; endonyms, current marked, aligned to the inline end in rtl', async ({ page }) => {
+    test.setTimeout(90_000)
+    await page.setViewportSize({ width: 1440, height: 900 })
+    await page.goto('/tr')
+    const menu = page.getByRole('navigation', { name: 'Dil' })
+    const summary = menu.locator('summary')
+    const english = menu.getByRole('link', { name: 'English' })
+    await expect(summary).toHaveText(/TR/)
+    await expect(english).toBeHidden()
+
+    await summary.click()
+    await expect(english).toBeVisible()
+    await expect(english).toHaveAttribute('hreflang', 'en')
+    await expect(english).toHaveAttribute('lang', 'en')
+    await expect(menu.getByRole('link', { name: 'Türkçe' })).toHaveAttribute('aria-current', 'true')
+    if (process.env.UPDATE_SCREENSHOTS) await page.screenshot({ path: 'docs/screens/142-lang-menu-open-1440.png', animations: 'disabled' })
+    await page.locator('h1').first().click() // outside click closes
+    await expect(english).toBeHidden()
+    if (process.env.UPDATE_SCREENSHOTS) await page.screenshot({ path: 'docs/screens/142-lang-menu-closed-1440.png', animations: 'disabled' })
+
+    await summary.focus()
+    await page.keyboard.press('Enter')
+    await expect(english).toBeVisible()
+    await page.keyboard.press('Tab')
+    await expect(menu.getByRole('link', { name: 'Türkçe' })).toBeFocused()
+    await page.keyboard.press('Escape')
+    await expect(english).toBeHidden()
+    await expect(summary).toBeFocused()
+    await page.keyboard.press('Enter')
+    await expect(english).toBeVisible()
+    await page.keyboard.press('Shift+Tab') // tabbing out of the menu closes it
+    await expect(english).toBeHidden()
+
+    await page.goto('/ar')
+    const ar = page.getByRole('navigation', { name: 'اللغة' })
+    await ar.locator('summary').click()
+    const panel = ar.locator('ul')
+    await expect(panel).toBeVisible()
+    await expect(ar.getByRole('link', { name: 'العربية' })).toHaveAttribute('aria-current', 'true')
+    const [d, p] = [await ar.locator('details').boundingBox(), await panel.boundingBox()]
+    expect(Math.abs(p!.x - d!.x), 'panel starts at the details’ left (inline-end) edge').toBeLessThan(1)
+    if (process.env.UPDATE_SCREENSHOTS) await page.screenshot({ path: 'docs/screens/142-lang-menu-open-ar-1440.png', animations: 'disabled' })
+  })
+
+  test('mobile: the menu panel lists the languages open', async ({ page }) => {
+    await page.setViewportSize({ width: 390, height: 844 })
+    for (const [l, name, current] of [['tr', 'Dil', 'Türkçe'], ['ar', 'اللغة', 'العربية']] as const) {
+      await page.goto(`/${l}`)
+      if (l === 'tr' && process.env.UPDATE_SCREENSHOTS) await page.screenshot({ path: 'docs/screens/142-lang-menu-closed-390.png', animations: 'disabled' })
+      await page.locator('button[aria-controls="mobile-menu"]').click()
+      const list = page.locator('#mobile-menu').getByRole('navigation', { name })
+      await list.scrollIntoViewIfNeeded()
+      await expect(list.getByRole('link', { name: current })).toHaveAttribute('aria-current', 'true')
+      if (process.env.UPDATE_SCREENSHOTS) await page.screenshot({ path: `docs/screens/142-lang-menu-open-${l === 'tr' ? '' : 'ar-'}390.png`, animations: 'disabled' })
+    }
   })
 })
