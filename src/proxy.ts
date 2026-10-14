@@ -61,6 +61,9 @@ export default function proxy(req: NextRequest) {
     return new NextResponse('Bad request', { status: 400 })
   }
 
+  // `/` picks a language with content (src/app/route.ts), which next-intl's negotiation cannot know.
+  if (pathname === '/') return NextResponse.next()
+
   const isLocalized = routing.locales.some((l) => pathname === `/${l}` || pathname.startsWith(`/${l}/`))
   if (isLocalized && pathname.length > 1 && pathname.endsWith('/')) {
     return NextResponse.redirect(new URL(pathname.replace(/\/+$/, '') + req.nextUrl.search, req.url), 308)

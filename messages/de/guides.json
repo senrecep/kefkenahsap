@@ -1,0 +1,30 @@
+{
+  "Guides": {
+    "title": "Ratgeber",
+    "intro": "Kurze, einfache Texte zur Holzauswahl, zur Pflege und dazu, was den Preis bestimmt.",
+    "metaDescription": "Einfache Ratgeber von Kefken Ahşap Dekorasyon zur Holzauswahl, zur Pflege und dazu, was den Preis bestimmt.",
+    "empty": "Noch kein Ratgeber veröffentlicht. Stellen Sie Ihre Frage gern per WhatsApp.",
+    "back": "Alle Ratgeber",
+    "updated": "Aktualisiert",
+    "toc": "In diesem Beitrag",
+    "faq": "Häufige Fragen",
+    "author": "Autor",
+    "authorRole": "Gründer und Handwerker, {company}",
+    "related": "Passende Leistungen",
+    "ctaTitle": "Sprechen wir über Ihr Vorhaben",
+    "ctaText": "Schicken Sie uns ein paar Fotos der Fläche; dann besprechen wir gemeinsam das passende Holz und die Arbeit.",
+    "table": "Tabelle (seitlich scrollbar)"
+  },
+  "WoodSamples": {
+    "title": "Holzmuster",
+    "hint": "Zum Drehen ziehen oder die Pfeiltasten nutzen",
+    "note": "Die Texturen stammen aus Fotos unserer Arbeiten.",
+    "names": {
+      "iroko": "Iroko",
+      "teak": "Teak",
+      "cam": "Kesseldruckimprägnierte Kiefer",
+      "thermowood": "Thermoholz"
+    },
+    "roledescription": "3D-Muster"
+  }
+}

@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { cmsRoutePaths, livePaths, localeSeo, ogLocale, publishedLocales } from './published'
+import { cmsRoutePaths, fixedRoutePaths, livePaths, localeSeo, ogLocale, publishedLocales } from './published'
 
 const SITE = 'https://www.kefkenahsap.com'
 
@@ -69,5 +69,17 @@ describe('ogLocale', () => {
   it('maps to Open Graph language_TERRITORY', () => {
     expect(ogLocale('tr')).toBe('tr_TR')
     expect(ogLocale('en')).toBe('en_US')
+    expect(ogLocale('ru')).toBe('ru_RU')
+    expect(ogLocale('de')).toBe('de_DE')
+  })
+})
+
+describe('fixedRoutePaths (a fixed route is live only in a locale that has its own content)', () => {
+  const paths = { tr: '/tr/galeri', en: '/en/gallery', ru: '/ru/galereya', de: '/de/galerie' }
+  it('null for locales without content, so they are noindex and left out of hreflang/sitemap', () => {
+    expect(fixedRoutePaths(paths, ['tr', 'en'])).toEqual({ tr: '/tr/galeri', en: '/en/gallery', ru: null, de: null })
+  })
+  it('keeps an already-null path null', () => {
+    expect(fixedRoutePaths({ tr: '/tr/kvkk', en: null }, ['tr', 'en'])).toEqual({ tr: '/tr/kvkk', en: null })
   })
 })

@@ -8,6 +8,7 @@ import { afterAll, beforeAll, describe, expect, it } from 'vitest'
 import { fakeCalls } from '@/ai/fake'
 import { aiGate } from '@/ai/guard'
 import { translateDocument } from '@/ai/translate/run'
+import { routing } from '@/i18n/routing'
 import { createRateLimiter } from '@/lib/leads/guard'
 import type { User } from '@/payload-types'
 
@@ -64,7 +65,8 @@ describe('translateDocument (#55)', () => {
     const settings = await payload.findGlobal({ slug: 'aiSettings' })
 
     const r = await translateDocument({ payload, req, collection: 'guides', id: g.id, settings, remainingUsd: 1000 })
-    expect(Result.isSuccess(r) && r.value.locales).toEqual(['en'])
+    // Every locale but the TR source is missing (EN, plus RU/DE/… as they are added).
+    expect(Result.isSuccess(r) && r.value.locales).toEqual(routing.locales.filter((l) => l !== 'tr'))
 
     const enDraft = await payload.findByID({ collection: 'guides', id: g.id, locale: 'en', fallbackLocale: false, draft: true })
     expect(enDraft._status).toBe('draft')
@@ -95,7 +97,9 @@ describe('translateDocument (#55)', () => {
   it('nothing missing → a clear error and no model call', async () => {
     const g = await payload.create({ collection: 'guides', locale: 'tr', data: { title: `Tam ${stamp}` } })
     cleanup.push({ collection: 'guides', id: g.id })
-    await payload.update({ collection: 'guides', id: g.id, locale: 'en', data: { title: `Full ${stamp}` } })
+    for (const locale of routing.locales.filter((l) => l !== 'tr')) {
+      await payload.update({ collection: 'guides', id: g.id, locale, data: { title: `Full ${locale} ${stamp}` } })
+    }
     const calls = fakeCalls.length
     const r = await translateDocument({ payload, req, collection: 'guides', id: g.id, settings: await payload.findGlobal({ slug: 'aiSettings' }), remainingUsd: 1000 })
     expect(Result.isFailure(r) && r.errors[0]?.code).toBe('Translate.NothingMissing')

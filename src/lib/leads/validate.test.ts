@@ -24,6 +24,33 @@ describe('validateLead', () => {
     expect(Result.isSuccess(validateLead({ ...ok, phone: '0212 322 43 59' }))).toBe(true)
   })
 
+  it('keeps every Turkish form: 0xxx, 5xx, +90 and 0090 → 90… digits', () => {
+    const phone = (p: string) => { const r = validateLead({ ...ok, phone: p }); return Result.isSuccess(r) ? r.value.phone : null }
+    for (const p of ['0532 111 22 33', '532 111 22 33', '+90 532 111 22 33', '0090 532 111 22 33']) expect(phone(p), p).toBe('905321112233')
+  })
+
+  it('accepts international numbers in E.164 form: + (or 00) and a country code, 8–15 digits', () => {
+    const phone = (p: string) => { const r = validateLead({ ...ok, phone: p }); return Result.isSuccess(r) ? r.value.phone : null }
+    expect(phone('+49 30 1234567')).toBe('49301234567') // 10 digits after +: not read as a Turkish number
+    expect(phone('+7 916 123-45-67')).toBe('79161234567')
+    expect(phone('0049 1512 3456789')).toBe('4915123456789')
+    expect(phone('+44 20 7946 0958')).toBe('442079460958')
+    expect(phone('+1234567')).toBeNull() // 7 digits: too short
+    expect(phone('+1234567890123456')).toBeNull() // 16 digits: too long
+    expect(phone('+0 123 456 789')).toBeNull() // no country code starts with 0
+    expect(phone('+90 532 11')).toBeNull() // +90 must still be a valid Turkish number
+  })
+
+  it('drops a trunk 0 written after the country code (+49 0170…, +49 (0)30…); a second 0 is still invalid', () => {
+    const phone = (p: string) => { const r = validateLead({ ...ok, phone: p }); return Result.isSuccess(r) ? r.value.phone : null }
+    expect(phone('+49 0170 1234567')).toBe('491701234567')
+    expect(phone('+49 (0)30 1234567')).toBe('49301234567')
+    expect(phone('0049-0170-1234567')).toBe('491701234567')
+    expect(phone('+90 0532 111 22 33')).toBe('905321112233')
+    expect(phone('+49 00170 1234567')).toBeNull()
+    expect(phone('+4930 1234567')).toBe('49301234567') // no separator after the code: nothing is dropped
+  })
+
   it('validates optional e-mail only when given', () => {
     expect(codes(validateLead({ ...ok, email: 'not-an-email' }))).toEqual(['Lead.EmailInvalid'])
     expect(Result.isSuccess(validateLead({ ...ok, email: 'a@b.co' }))).toBe(true)

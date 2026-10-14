@@ -19,23 +19,27 @@ const notify: CollectionAfterChangeHook = async ({ doc, operation, req }) => {
     req.payload.logger.warn({ lead: doc.id }, 'lead notification skipped: RESEND_API_KEY is not set')
     return doc
   }
-  const lines = [
+  const esc = (s: string) => String(s).replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`)
+  // Stored as E.164 digits without "+" (validateLead), so the same value dials and opens WhatsApp from any country.
+  const phone = esc(String(doc.phone ?? ''))
+  const rows: [string, unknown, string?][] = [
     ['Ad', doc.name],
-    ['Telefon', doc.phone],
+    ['Telefon', doc.phone, `<a href="tel:+${phone}">+${phone}</a> · <a href="https://wa.me/${phone}">WhatsApp</a>`],
     ['E-posta', doc.email],
     ['Hizmet', doc.service],
     ['Konum', [doc.district, doc.city].filter(Boolean).join(', ')],
     ['Mesaj', doc.message],
     ['Sayfa', doc.sourcePage],
+    ['Dil', doc.locale],
     ['Fotoğraf', doc.photos?.length ? `${doc.photos.length} adet (panelde)` : ''],
-  ].filter(([, v]) => v)
-  const esc = (s: string) => String(s).replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`)
+  ]
+  const lines = rows.filter(([, v]) => v)
   try {
     await req.payload.sendEmail({
       to,
       subject: `Yeni talep #${doc.id}${doc.service ? ` — ${doc.service}` : ''}`,
       html:
-        `<p>Siteden yeni bir talep geldi.</p><table>${lines.map(([k, v]) => `<tr><td><b>${k}</b></td><td>${esc(String(v))}</td></tr>`).join('')}</table>` +
+        `<p>Siteden yeni bir talep geldi.</p><table>${lines.map(([k, v, html]) => `<tr><td><b>${k}</b></td><td>${html ?? esc(String(v))}</td></tr>`).join('')}</table>` +
         `<p><a href="${process.env.NEXT_PUBLIC_SITE_URL}/admin/collections/leads/${doc.id}">Talebi panelde aç</a></p>`,
     })
   } catch (err) {

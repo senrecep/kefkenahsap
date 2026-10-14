@@ -15,6 +15,7 @@ import * as migration_20261014_075707_home_hero_mobile_image from './20261014_07
 import * as migration_20261014_090734_regions from './20261014_090734_regions';
 import * as migration_20261014_100749_media_w480 from './20261014_100749_media_w480';
 import * as migration_20261014_130823_media_w800 from './20261014_130823_media_w800';
+import * as migration_20261014_144607_ru_de_locales from './20261014_144607_ru_de_locales';
 
 export const migrations = [
   {
@@ -100,6 +101,11 @@ export const migrations = [
   {
     up: migration_20261014_130823_media_w800.up,
     down: migration_20261014_130823_media_w800.down,
-    name: '20261014_130823_media_w800'
+    name: '20261014_130823_media_w800',
+  },
+  {
+    up: migration_20261014_144607_ru_de_locales.up,
+    down: migration_20261014_144607_ru_de_locales.down,
+    name: '20261014_144607_ru_de_locales'
   },
 ];

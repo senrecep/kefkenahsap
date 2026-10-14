@@ -21,6 +21,10 @@ import './styles.css'
 // Self-hosted (OFL, Latin subset, Montserrat 600 / Source Sans 3 400–600; src/app/fonts/README.md): no Google Fonts at build.
 const montserrat = localFont({ src: '../../fonts/Montserrat.woff2', weight: '600', variable: '--font-montserrat', display: 'swap' })
 const sourceSans = localFont({ src: '../../fonts/SourceSans3.woff2', weight: '400 600', variable: '--font-source-sans', display: 'swap' })
+// Cyrillic subsets (ru): unicode-range makes the browser fetch them only for pages with Cyrillic text, so no preload;
+// no fallback font, else the stack would draw Latin text in it before reaching the Latin face.
+const montserratCyr = localFont({ src: '../../fonts/Montserrat-cyrillic.woff2', weight: '600', variable: '--font-montserrat-cyr', display: 'swap', preload: false, adjustFontFallback: false, declarations: [{ prop: 'unicode-range', value: 'U+0400-045F, U+0490-0491, U+2116' }] })
+const sourceSansCyr = localFont({ src: '../../fonts/SourceSans3-cyrillic.woff2', weight: '400 600', variable: '--font-source-sans-cyr', display: 'swap', preload: false, adjustFontFallback: false, declarations: [{ prop: 'unicode-range', value: 'U+0400-045F, U+0490-0491, U+2116' }] })
 
 // Pages read CMS data per request (cached via unstable_cache tags + Cloudflare edge); no DB needed at build time.
 export const dynamic = 'force-dynamic'
@@ -54,7 +58,7 @@ export default async function LocaleLayout({
   const site = siteUrl().replace(/\/$/, '')
   const home = `${site}/${locale}`
   return (
-    <html lang={locale} dir={localeDir(locale)} className={`${montserrat.variable} ${sourceSans.variable}`}>
+    <html lang={locale} dir={localeDir(locale)} className={`${montserrat.variable} ${sourceSans.variable} ${montserratCyr.variable} ${sourceSansCyr.variable}`}>
       <body className="min-h-dvh antialiased">
         {/* No site-wide NextIntlClientProvider: client components get server-translated props, which keeps
             next-intl's message formatter out of every page's JS (budget, #52). */}

@@ -18,6 +18,23 @@ describe('slugify', () => {
     expect(value('Boya, Tamir ve Bakım')).toBe('boya-tamir-ve-bakim')
   })
 
+  it('transliterates Russian (Cyrillic) and German ß, so ru/de titles give Latin slugs', () => {
+    // Hand-written from the BGN/PCGN-style table (ж zh, х kh, ц ts, щ shch, я ya; ъ/ь dropped).
+    expect(value('Деревянные конструкции')).toBe('derevyannye-konstruktsii')
+    expect(value('Щётка и Объём')).toBe('shchetka-i-obem')
+    expect(value('Große Terrasse')).toBe('grosse-terrasse')
+  })
+
+  it('German umlauts in a de title follow German spelling (ä→ae, ö→oe, ü→ue); other locales keep ö→o', () => {
+    const slug = (t: string, locale: string) => { const r = slugify(t, 80, locale); return Result.isSuccess(r) ? r.value : null }
+    const de = (t: string) => slug(t, 'de')
+    expect(de('Über uns')).toBe('ueber-uns')
+    expect(de('Größe der Terrasse')).toBe('groesse-der-terrasse')
+    expect(de('Gartenhäuser')).toBe('gartenhaeuser')
+    expect(value('Köprü ve İskele')).toBe('kopru-ve-iskele')
+    expect(slug('Über uns', 'en')).toBe('uber-uns')
+  })
+
   it('keeps the existing WordPress category slugs stable', () => {
     expect(value('Deck ve Zeminler')).toBe('deck-ve-zeminler')
     expect(value('Kapı, Dolap ve Seperatör')).toBe('kapi-dolap-ve-seperator')

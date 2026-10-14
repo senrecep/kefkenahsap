@@ -5,7 +5,7 @@ import { readFileSync } from 'fs'
 
 import { routing } from '../../src/i18n/routing'
 
-// #52: axe (WCAG 2.2 AA tags) on every public template in every locale, desktop and mobile, plus the interactive
+// #52: axe (WCAG 2.2 AA tags) on every public template in every locale (see A11Y_FULL_LOCALES below), desktop and mobile, plus the interactive
 // states (lightbox, cookie banner, contact form errors, mobile menu). No rule is disabled: findings are fixed in source.
 const TAGS = ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa']
 const VIEWPORTS = { desktop: { width: 1440, height: 900 }, mobile: { width: 390, height: 844 } }
@@ -32,13 +32,31 @@ test.beforeAll(async () => {
     messages[locale] = { ...(await json(locale, 'common')), ...(await json(locale, 'consent')), ...(await json(locale, 'contact')) } as Messages
 })
 
-// CI keeps them for the Lighthouse step (an ephemeral DB, and a re-created doc would meet stale cached pages);
-// locally they would otherwise show up in the shared dev DB's lists, search and sitemap.
+// Always removed: the fixtures publish text in every locale (a project, a guide, a category for locales the seed
+// lacks), which would make those locales live for every later spec (i18n-locales checks the no-content state).
+// The Lighthouse step runs the fixtures script again itself, on a fresh cache.
 test.afterAll(() => {
-  if (!process.env.CI) fixtures(' -- --remove')
+  fixtures(' -- --remove')
 })
 
+// A11Y_FULL_LOCALES (e.g. "tr,en") get the whole matrix; every other locale only the templates its own text changes
+// most, on mobile (CI time). Unset: every locale is full.
+const FULL = process.env.A11Y_FULL_LOCALES?.split(',').map((l) => l.trim())
+const REDUCED: readonly (typeof TEMPLATES)[number][] = ['home', 'category', 'contact', 'notFound']
+
 for (const locale of routing.locales) {
+  if (FULL && !FULL.includes(locale)) {
+    test.describe(`axe ${locale} mobile (reduced)`, () => {
+      test.use({ viewport: VIEWPORTS.mobile })
+      for (const template of REDUCED) {
+        test(template, async ({ page }) => {
+          await page.goto(targets[locale]![template])
+          await audit(page)
+        })
+      }
+    })
+    continue
+  }
   for (const [device, viewport] of Object.entries(VIEWPORTS)) {
     test.describe(`axe ${locale} ${device}`, () => {
       test.use({ viewport })

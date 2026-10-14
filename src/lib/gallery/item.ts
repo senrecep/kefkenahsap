@@ -7,6 +7,8 @@ export type GalleryItem = {
   href: string
   title: string
   alt: string
+  /** Set when `alt` is the default locale's stand-in. */
+  altLang?: string
   caption?: string
   width: number
   height: number

@@ -214,3 +214,16 @@ Hikâyeler yalnızca görüneni anlatır: "yağlanmış" gibi son kat bilgisi ye
 Kategori metinleri ve SSS #34'te yazıldı ve testler bunları her kategori için zorunlu tutuyor (300–600 kelime, soru H2'ler, 4–6 SSS). Yukarıdaki "Sahibinin onaylaması gereken cümleler" ve "Açık sorular" sahibine sorulan sorulardır, metin boşluğu değildir. Bu yüzden bu geçişte kategori metinlerine dokunulmadı. Sahibin cevapları gelince ilgili cümleler düzeltilecek ya da silinecek.
 
 "Notlar"daki boş SEO alanları (`seo.title` / `seo.description`) bir boşluk değildir. Kategori sayfası boş `seo.title` için kategori adını, boş `seo.description` için kısa açıklamayı kullanır (`src/app/(frontend)/[locale]/[category]/page.tsx`). Bu yüzden bu alanlar da boş bırakıldı.
+
+## RU ve DE arayüz metinleri (#64)
+
+**Durum: İLK GEÇİŞ. Anadili Rusça ve Almanca olan birinin kontrolü gerekiyor.** `messages/ru/*.json` ve `messages/de/*.json` TR kaynaktan Claude ile lokalde çevrildi (OpenRouter kullanılmadı). §8 terim sözlüğüne göre:
+- RU: deck → терраса / деревянный настил, kamelya → беседка, emprenyeli çam → сосна, пропитанная под давлением, thermowood → термодревесина, keşif → выезд на объект, teklif → расчёт. Okura "вы".
+- DE: deck → Holzterrasse, kamelya → Gartenpavillon, emprenyeli çam → kesseldruckimprägnierte Kiefer, thermowood → Thermoholz, keşif → Besichtigung, teklif → Angebot. Okura "Sie". "usta" için "Meister" değil "Handwerker" yazıldı (Almanya'da Meister bir unvandır, uydurma iddia olur).
+- Marka adı çevrilmedi: "Kefken Ahşap Dekorasyon".
+
+Kontrol edilecekler:
+1. Ana sayfa ahşap tablosu: TR kaynaktaki iroko satırı §7.3'e göre düzeltildi ("öz maddeleri sayesinde çürümeye ve böceğe dirençli"; "yağlı" yalnızca teak için). EN/RU/DE de buna göre güncellendi.
+2. Form uluslararası numarayı kabul eder: + (ya da 00) ve ülke koduyla 8–15 hane (E.164). Türkiye numaraları eskisi gibi (0532…, 532…, +90…).
+3. KVKK ve çerez politikası taslak metinleri RU/DE'de İngilizce gösterilir (`lang="en"`). Hukukçu onaylı çeviri admin'de Sayfalar'a girilince o dil kendi metnini gösterir.
+4. Kategori, proje, rehber, görsel başlık/alt metinleri RU/DE'de boş. Bir dil, o dilde en az bir kategori ad + slug ile yayınlanana kadar noindex kalır (PLAN §5.1). Admin'deki "AI ile çevir" RU/DE'yi de taslak olarak doldurur; yayından önce anadili kontrolü gerekir.

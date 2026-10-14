@@ -36,7 +36,7 @@ export async function renderLlms(full: boolean) {
         const faq = (c.faq?.[l] ?? []).filter((f) => f.q?.trim() && f.a?.trim()).map((f) => `**${f.q}**\n${f.a}`)
         return { name: c.name![l]!, url: `${site}${c.paths[l]}`, text: full ? [c.shortDesc?.[l], ...faq].filter(Boolean).join('\n\n') : c.shortDesc?.[l] }
       }),
-  }))
+  })).filter((sec) => sec.items.length) // a locale with no live service yet gets no empty heading
   return llmsTxt({ title: s.companyName, summary: s.defaultDescription, facts, sections, full })
 }
 

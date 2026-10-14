@@ -3,7 +3,8 @@ import type { Payload } from 'payload'
 import { Err } from 'tsentials/errors'
 import { fromAsync, ResultAsync } from 'tsentials/result'
 
-import type { Locale } from '@/i18n/routing'
+import { markFallbackAlt } from '@/lib/data/media-alt'
+import { routing, type Locale } from '@/i18n/routing'
 import type { Category, Media, Project, Tag } from '@/payload-types'
 
 import { normalizeQuery, prefixTsQuery, type NormalizedQuery } from './normalize'
@@ -83,11 +84,15 @@ async function hydrate<T extends { id: number }>(payload: Payload, g: Group, ids
     // Public view: populated relations (covers, galleries, categories) obey access too — no pending media or drafts.
     overrideAccess: false,
     draft: false,
+    // Untranslated photo titles/alt text show in the default locale rather than as nameless links (as in the gallery).
+    ...(g.collection === 'media' ? { fallbackLocale: routing.defaultLocale } : {}),
     limit: ids.length,
     pagination: false,
     where: { id: { in: ids } },
   })
-  const byId = new Map((res.docs as unknown as T[]).map((d) => [d.id, d]))
+  // Photo results fall back to Turkish text; the alt that is a stand-in gets its `lang` (altLang).
+  const docs = g.collection === 'media' ? await markFallbackAlt(payload, locale, res.docs as Media[]) : res.docs
+  const byId = new Map((docs as unknown as T[]).map((d) => [d.id, d]))
   return ids.flatMap((id) => byId.get(id) ?? [])
 }
 

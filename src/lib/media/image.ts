@@ -4,6 +4,8 @@ export type MediaLike = {
   width?: number | null
   height?: number | null
   alt?: string | null
+  /** Set when `alt` is another locale's stand-in (see withDefaultAlt): the img's `lang`. */
+  altLang?: string
   lqip?: string | null
   dominantColor?: string | null
   sizes?: Record<string, Size> | null
@@ -14,6 +16,7 @@ export type ResponsiveImage = {
   width: number
   height: number
   alt: string
+  altLang?: string
   placeholder?: string
   color?: string
 }
@@ -38,6 +41,7 @@ export function responsiveImage(m: MediaLike, opts: { maxWidth?: number; minWidt
     width: m.width ?? preferred?.width ?? 0,
     height: m.height ?? preferred?.height ?? 0,
     alt: m.alt ?? '',
+    ...(m.altLang ? { altLang: m.altLang } : {}),
     ...(m.lqip ? { placeholder: m.lqip } : {}),
     ...(m.dominantColor ? { color: m.dominantColor } : {}),
   }

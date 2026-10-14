@@ -15,7 +15,7 @@ type Params = Promise<{ locale: Locale }>
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'References' })
-  return pageMetadata({ locale, title: t('title'), description: t('description'), paths: staticPaths('/referanslar') })
+  return pageMetadata({ locale, title: t('title'), description: t('description'), paths: await staticPaths('/referanslar') })
 }
 
 export default async function ReferencesPage({ params }: { params: Params }) {

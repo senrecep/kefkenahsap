@@ -61,7 +61,7 @@ export default async function ImagePage({ params }: Props) {
         />
         <div className="mt-6 grid gap-8 lg:grid-cols-[minmax(0,1fr)_22rem] lg:items-start">
           <figure className="me-auto w-full max-w-[min(100%,calc(80svh*var(--ratio)))]" style={{ ['--ratio' as string]: item.width && item.height ? item.width / item.height : 1.333 }}>
-            <Picture media={item.media} alt={item.alt} sizes="(min-width: 1280px) 880px, (min-width: 1024px) 66vw, (min-width: 768px) calc(100vw - 3rem), calc(100vw - 2rem)" priority className="rounded-[var(--radius-photo)]" />
+            <Picture media={item.media} alt={item.alt} altLang={item.altLang} sizes="(min-width: 1280px) 880px, (min-width: 1024px) 66vw, (min-width: 768px) calc(100vw - 3rem), calc(100vw - 2rem)" priority className="rounded-[var(--radius-photo)]" />
           </figure>
           <div>
             <h1 className="text-[clamp(1.6rem,3vw,2.25rem)]">{item.title}</h1>

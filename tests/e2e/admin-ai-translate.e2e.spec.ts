@@ -1,12 +1,13 @@
 import { expect, test } from '@playwright/test'
 import { getPayload } from 'payload'
 
+import { routing } from '../../src/i18n/routing'
 import config from '../../src/payload.config.js'
 import { login } from '../helpers/login'
 import { seedTestUser, testUser } from '../helpers/seedUser'
 
 // #55: "AI ile çevir" on a guide edit view; the server answers from the fake model (AI_FAKE_PROVIDER=1).
-test('AI ile çevir: fills the empty EN locale of a guide as a draft', async ({ page }) => {
+test('AI ile çevir: fills the empty locales (EN, …) of a guide as a draft', async ({ page }) => {
   test.setTimeout(120_000)
   await seedTestUser()
   const payload = await getPayload({ config })
@@ -22,7 +23,7 @@ test('AI ile çevir: fills the empty EN locale of a guide as a draft', async ({ 
     const button = page.getByRole('button', { name: 'AI ile çevir' })
     await expect(button).toBeEnabled()
     await button.click()
-    await expect(page.getByText('EN çevirisi taslak olarak kaydedildi.', { exact: false })).toBeVisible({ timeout: 30_000 })
+    await expect(page.getByText(`${routing.locales.filter((l) => l !== 'tr').map((l) => l.toUpperCase()).join(', ')} çevirisi taslak olarak kaydedildi.`, { exact: false })).toBeVisible({ timeout: 30_000 })
     await page.waitForLoadState('load')
 
     const en = await payload.findByID({ collection: 'guides', id: guide.id, locale: 'en', fallbackLocale: false, draft: true })

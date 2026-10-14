@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     locale: locale as Locale,
     title: page?.seo?.title ? { absolute: page.seo.title } : (page?.title ?? t('kvkkTitle')),
     description: page?.seo?.description || t('kvkkDescription', { company: settings.companyName }),
-    paths: cmsPagePaths('/kvkk', await getPageTitles(SLUGS)),
+    paths: await cmsPagePaths('/kvkk', await getPageTitles(SLUGS)),
   })
 }
 

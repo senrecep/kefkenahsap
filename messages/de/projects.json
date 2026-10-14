@@ -1,0 +1,32 @@
+{
+  "Projects": {
+    "title": "Projekte",
+    "description": "Ausgewählte abgeschlossene Holzarbeiten mit Ort, Jahr, verwendetem Holz und Fotos.",
+    "filter": "Nach Kategorie",
+    "all": "Alle",
+    "empty": "In diesem Bereich sind noch keine Projekte eingetragen. Unsere Arbeiten sehen Sie vorerst in der Galerie.",
+    "emptyFiltered": "In dieser Kategorie gibt es noch keine Projekte.",
+    "toGallery": "Zur Galerie",
+    "list": "Projektliste"
+  },
+  "Project": {
+    "facts": "Projektdaten",
+    "location": "Ort",
+    "year": "Jahr",
+    "area": "Fläche",
+    "duration": "Dauer",
+    "wood": "Holzart",
+    "finish": "Oberfläche / Farbe",
+    "categories": "Kategorie",
+    "units": { "m2": "m²", "m": "Meter", "piece": "Stück" },
+    "gallery": "Fotos",
+    "similar": "Ähnliche Projekte",
+    "ctaTitle": "Planen Sie eine ähnliche Arbeit?",
+    "ctaText": "Schicken Sie uns ein Foto und die Maße der Fläche per WhatsApp, wir melden uns bei Ihnen."
+  },
+  "References": {
+    "title": "Referenzen",
+    "description": "Wohnanlagen, Einrichtungen und Firmen, mit denen wir gearbeitet haben.",
+    "empty": "Die Referenzliste wird vorbereitet."
+  }
+}

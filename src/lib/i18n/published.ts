@@ -16,12 +16,19 @@ export function livePaths(byLocale: Record<string, Localized | null | undefined>
  * A fixed route whose text may come from a CMS page: with no page every locale shows the in-repo template (live);
  * with one, a locale lacking its own title shows fallback text, so it is noindex and left out of hreflang.
  */
-export function cmsRoutePaths(paths: Record<string, string>, titles: Record<string, string | null | undefined> | null) {
+export function cmsRoutePaths(paths: Record<string, string | null>, titles: Record<string, string | null | undefined> | null) {
   if (!titles) return paths
   return livePaths(Object.fromEntries(Object.keys(paths).map((l) => [l, { slug: paths[l], title: titles[l] }])), (l) => paths[l]!)
 }
 
-const OG_LOCALES: Record<string, string> = { tr: 'tr_TR', en: 'en_US' }
+/**
+ * A fixed route (home, gallery, services, contact…) is a shell of UI strings around CMS content, so it counts as
+ * translated only in `contentLocales` (locales whose own content is live); elsewhere its path is null → noindex.
+ */
+export const fixedRoutePaths = (paths: Record<string, string | null>, contentLocales: readonly string[]) =>
+  Object.fromEntries(Object.entries(paths).map(([l, p]) => [l, contentLocales.includes(l) ? p : null]))
+
+const OG_LOCALES: Record<string, string> = { tr: 'tr_TR', en: 'en_US', ru: 'ru_RU', de: 'de_DE' }
 export const ogLocale = (locale: string) => OG_LOCALES[locale] ?? locale
 
 /**

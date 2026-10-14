@@ -27,7 +27,8 @@ export function CookiesDraft({ locale, name }: { locale: string; name: string })
       </>
     )
   return (
-    <>
+    // English is the fallback for every other locale until a translated legal page exists in the CMS.
+    <div lang="en" className="contents">
       <p>The {name} website uses only the cookies and similar technologies listed below.</p>
       <h2>Necessary</h2>
       <ul>
@@ -47,6 +48,6 @@ export function CookiesDraft({ locale, name }: { locale: string; name: string })
         Use the &quot;Cookie preferences&quot; link at the bottom of every page at any time. More on your personal data in the{' '}
         <Link href="/kvkk">privacy notice</Link>.
       </p>
-    </>
+    </div>
   )
 }

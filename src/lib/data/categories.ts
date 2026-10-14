@@ -1,9 +1,10 @@
 import { unstable_cache } from 'next/cache'
 
-import type { Locale } from '@/i18n/routing'
+import { routing, type Locale } from '@/i18n/routing'
 import { pickCover } from '@/lib/gallery/curate'
 import type { Media } from '@/payload-types'
 
+import { withDefaultAlt } from './media-alt'
 import { getPayload, TAGS } from './payload'
 
 const HOUR = 3600
@@ -35,7 +36,7 @@ export const getCategory = (locale: Locale, slug: string, limit: number) =>
         select: { slug: true, name: true },
       })) as unknown as { slug?: Record<string, string | null>; name?: Record<string, string | null> }
       const locales = Object.fromEntries(Object.keys(all.slug ?? {}).map((l) => [l, { slug: all.slug?.[l], title: all.name?.[l] }]))
-      const photos = (doc.media?.docs ?? []).filter((m): m is Media => typeof m === 'object')
+      const photos = await withDefaultAlt(payload, locale, (doc.media?.docs ?? []).filter((m): m is Media => typeof m === 'object'))
       return { category: doc, photos, hasMore: Boolean(doc.media?.hasNextPage), locales }
     },
     ['category', locale, slug, String(limit)],
@@ -67,3 +68,11 @@ export const getServiceTiles = (locale: Locale) =>
     ['serviceTiles', locale],
     { tags: [TAGS.categories, TAGS.media], revalidate: HOUR },
   )()
+
+/** Locales with at least one live service (dil-yayında: slug + name), plus the default: the input for fixedRoutePaths. */
+export const getContentLocales = async () => {
+  const live = await Promise.all(
+    routing.locales.map(async (l) => l === routing.defaultLocale || (await getServiceTiles(l)).some((c) => c.name?.trim())),
+  )
+  return routing.locales.filter((_, i) => live[i])
+}

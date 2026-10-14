@@ -32,6 +32,8 @@ import { s3Storage } from '@payloadcms/storage-s3'
 import { tr } from '@payloadcms/translations/languages/tr'
 import { en } from '@payloadcms/translations/languages/en'
 import { ar } from '@payloadcms/translations/languages/ar'
+import { de } from '@payloadcms/translations/languages/de'
+import { ru } from '@payloadcms/translations/languages/ru'
 import { routing } from './i18n/routing'
 import { migrations } from './migrations'
 
@@ -96,7 +98,7 @@ export default buildConfig({
     aiTranslateEndpoint,
     aiDraftEndpoint,
   ],
-  i18n: { supportedLanguages: { tr, en, ar }, fallbackLanguage: 'tr' },
+  i18n: { supportedLanguages: { tr, en, ar, ru, de }, fallbackLanguage: 'tr' },
   localization: {
     locales: [...routing.locales],
     defaultLocale: routing.defaultLocale,

@@ -2,9 +2,10 @@ import { ChevronDown, MessageCircle, Phone } from 'lucide-react'
 import { getTranslations } from 'next-intl/server'
 
 import { Link } from '@/i18n/navigation'
-import type { Locale } from '@/i18n/routing'
+import { routing, type Locale } from '@/i18n/routing'
 import { buttonClass } from '@/components/ui/button'
 import { telLink, waLink } from '@/lib/contact'
+import { getContentLocales } from '@/lib/data/categories'
 import { getProjectCards } from '@/lib/data/projects'
 import { getNavCategories, getSiteSettings } from '@/lib/data/site'
 
@@ -16,13 +17,16 @@ const linkCls =
   'inline-flex min-h-11 items-center rounded-[var(--radius-control)] px-3 font-[family-name:var(--font-display)] text-[0.95rem] font-semibold text-ink hover:text-action'
 
 export async function Header({ locale }: { locale: Locale }) {
-  const [t, tCta, settings, allCategories, projects] = await Promise.all([
+  const [t, tCta, settings, allCategories, projects, contentLocales] = await Promise.all([
     getTranslations('Nav'),
     getTranslations('Cta'),
     getSiteSettings(locale),
     getNavCategories(locale),
     getProjectCards(locale),
+    getContentLocales(),
   ])
+  // Only languages with their own content (plus the current one): no crawlable links to noindex shells.
+  const locales = routing.locales.filter((l) => l === locale || contentLocales.includes(l))
   const categories = allCategories.filter((c) => c.slug)
   const tel = telLink(settings)
   const wa = waLink(settings)
@@ -74,7 +78,7 @@ export async function Header({ locale }: { locale: Locale }) {
               <span className="sr-only xl:hidden">{`${tCta('callUs')}: ${tel.label}`}</span>
             </a>
           )}
-          <LanguageSwitcher locale={locale} label={t('language')} className="hidden sm:flex" />
+          <LanguageSwitcher locale={locale} locales={locales} label={t('language')} className="hidden sm:flex" />
           <MobileMenu label={t('menu')} closeLabel={t('close')}>
             <ul className="grid gap-1">
               <li>
@@ -107,7 +111,7 @@ export async function Header({ locale }: { locale: Locale }) {
                 </li>
               ))}
             </ul>
-            <LanguageSwitcher locale={locale} label={t('language')} className="mt-6" />
+            <LanguageSwitcher locale={locale} locales={locales} label={t('language')} className="mt-6" />
             {/* Pinned to the panel's bottom edge: the two actions stay one tap away however long the list gets. */}
             <div className="sticky bottom-0 -mx-4 mt-auto flex gap-3 border-t border-line bg-paper px-4 pt-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))]">
               {wa && (

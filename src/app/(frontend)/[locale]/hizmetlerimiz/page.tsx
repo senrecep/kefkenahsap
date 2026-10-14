@@ -14,7 +14,7 @@ type Params = Promise<{ locale: Locale }>
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'Services' })
-  return pageMetadata({ locale, title: t('title'), description: t('description'), paths: staticPaths('/hizmetlerimiz') })
+  return pageMetadata({ locale, title: t('title'), description: t('description'), paths: await staticPaths('/hizmetlerimiz') })
 }
 
 export default async function ServicesPage({ params }: { params: Params }) {

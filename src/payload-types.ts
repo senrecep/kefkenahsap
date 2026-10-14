@@ -120,7 +120,8 @@ export interface Config {
   db: {
     defaultIDType: number;
   };
-  fallbackLocale: ('false' | 'none' | 'null') | false | null | ('tr' | 'en') | ('tr' | 'en')[];
+  fallbackLocale:
+    ('false' | 'none' | 'null') | false | null | ('tr' | 'en' | 'ru' | 'de') | ('tr' | 'en' | 'ru' | 'de')[];
   globals: {
     siteSettings: SiteSetting;
     homepage: Homepage;
@@ -135,7 +136,7 @@ export interface Config {
     aiSettings: AiSettingsSelect<false> | AiSettingsSelect<true>;
     'payload-jobs-stats': PayloadJobsStatsSelect<false> | PayloadJobsStatsSelect<true>;
   };
-  locale: 'tr' | 'en';
+  locale: 'tr' | 'en' | 'ru' | 'de';
   widgets: {
     collections: CollectionsWidget;
   };
