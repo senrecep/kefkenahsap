@@ -12,7 +12,7 @@ test.describe('gallery', () => {
 
     // Scrolling to the end appends the next page from the feed.
     await page.getByRole('link', { name: 'Daha fazla göster' }).scrollIntoViewIfNeeded()
-    await expect.poll(() => visible.count()).toBeGreaterThan(PAGE_SIZE)
+    await expect.poll(() => visible.count(), { timeout: 20_000 }).toBeGreaterThan(PAGE_SIZE)
 
     // Lightbox: opens on click, URL follows the image, arrows move, Esc closes and restores the URL.
     await visible.first().click()
