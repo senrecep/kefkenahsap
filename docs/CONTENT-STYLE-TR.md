@@ -116,7 +116,7 @@ Kontrol yöntemi: cümleyi sesli okuyun. Usta telefonda bu cümleyi kurmazdı di
    - **Çam sert ağaç değildir.** Çam iğne yapraklıdır ve yumuşak ağaç sınıfındadır. "Sert ağaç" (hardwood) iroko, teak, meşe gibi geniş yapraklılar için kullanılır.
    - **İroko ve teak'in dayanımı öz maddelerinden gelir.** Doğru ifade: "doğal dayanımı yüksek", "öz maddeleri sayesinde çürümeye ve böceğe dirençli". "Yağlı" sözü yalnızca teak için kullanılır: "teak ayrıca çok yağlıdır." İroko yağlı ağaç diye anlatılmaz.
    - **Emprenye bakım gerektirir.** Emprenye ahşabın içine işlenen koruyucudur. Yüzeydeki yağ, vernik veya boyanın yerini tutmaz, "bakım istemez" diye anlatılmaz.
-   - **Thermowood** ısıl işlemle boyutsal kararlılık ve dayanım kazanır. Özgül ağırlık veya ömür gibi rakamlar kaynak gösterilmeden yazılmaz.
+   - **Thermowood** ısıl işlemle boyutsal kararlılık kazanır, çürümeye dayanımı artar; buna karşılık biraz daha kırılgan olabilir. Özgül ağırlık veya ömür gibi rakamlar kaynak gösterilmeden yazılmaz.
    - Bilimsel adlarda güncel ad kullanılır: iroko *Milicia excelsa* (eski sitedeki *Chlorophora excelsa* eski addır), teak *Tectona grandis*, sarıçam *Pinus sylvestris*.
 4. **Rakam yalnızca kaynağıyla yazılır.** Eski site tablosundaki özgül ağırlık gibi değerler "yaklaşık, kaynaklarda verilen değer" diye sunulur. Firma ölçümü gibi gösterilmez.
 5. **Sözü edilen hizmet gerçekten verilmeli.** "Garaj kapısı", "kaydırmaz basamak", "beton temel" gibi işler yalnızca firma yaptığını teyit ettiyse yazılır (bkz. `docs/content/CHECKLIST.md`).
