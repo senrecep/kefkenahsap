@@ -16,18 +16,20 @@ Operational notes for kefkenahsap.com. Secrets are never written here.
 
 ## CI runner (self-hosted)
 
-GitHub-hosted Actions minutes are unavailable for this account (billing), so CI runs on a self-hosted runner on the server.
+GitHub-hosted Actions minutes are unavailable for this account (billing), so CI runs on two self-hosted runners on the server (two PRs check in parallel).
 
-- Container `kefken-gh-runner` (`myoung34/github-runner:ubuntu-noble`), `--network host`, Docker socket mounted, label `kefken`, restart `unless-stopped`.
+- Containers `kefken-gh-runner-1` / `-2` (`myoung34/github-runner:ubuntu-noble`), `--network host`, Docker socket mounted, label `kefken`, restart `unless-stopped`.
+- Work dirs are `/var/lib/kefken-runner-<n>` on the root disk. **Not `/tmp`**: it is a 2 GB tmpfs on the server, and two Next builds + Playwright filled it (ENOSPC mid-job).
 - Jobs use service containers on **ephemeral host ports** (the server runs other stacks), exported to the job env in the "Point env at this job's service ports" step.
-- Re-register (e.g. after the container is removed):
+- A run on a superseded commit keeps its runner busy; cancel it (`gh run cancel <id>`) when a newer push is waiting.
+- Re-register (e.g. after a container is removed), for `N` in 1 2:
 
 ```sh
-TOKEN=$(gh api -X POST repos/senrecep/kefkenahsap/actions/runners/registration-token -q .token)
-ssh senrecep "docker rm -f kefken-gh-runner; docker run -d --name kefken-gh-runner --restart unless-stopped --network host \
-  -e REPO_URL=https://github.com/senrecep/kefkenahsap -e RUNNER_TOKEN=$TOKEN -e RUNNER_NAME=senrecep-kefken \
-  -e LABELS=kefken -e RUNNER_SCOPE=repo -e RUNNER_WORKDIR=/tmp/kefken-runner -e DISABLE_AUTOMATIC_DEREGISTRATION=true \
-  -v /var/run/docker.sock:/var/run/docker.sock -v /tmp/kefken-runner:/tmp/kefken-runner myoung34/github-runner:ubuntu-noble"
+N=1; TOKEN=$(gh api -X POST repos/senrecep/kefkenahsap/actions/runners/registration-token -q .token)
+ssh senrecep "docker rm -f kefken-gh-runner-$N; mkdir -p /var/lib/kefken-runner-$N; docker run -d --name kefken-gh-runner-$N --restart unless-stopped --network host \
+  -e REPO_URL=https://github.com/senrecep/kefkenahsap -e RUNNER_TOKEN=$TOKEN -e RUNNER_NAME=senrecep-kefken-$N \
+  -e LABELS=kefken -e RUNNER_SCOPE=repo -e RUNNER_WORKDIR=/var/lib/kefken-runner-$N -e DISABLE_AUTOMATIC_DEREGISTRATION=true \
+  -v /var/run/docker.sock:/var/run/docker.sock -v /var/lib/kefken-runner-$N:/var/lib/kefken-runner-$N myoung34/github-runner:ubuntu-noble"
 ```
 
 - Security: the runner has the host Docker socket, so CI only runs PRs from branches of this (private) repository; forks never reach it. Workflow token is `contents: read`. Keep fork-PR workflows disabled in repo settings.
