@@ -1,4 +1,6 @@
-import { APIError, type CollectionBeforeChangeHook, type CollectionConfig } from 'payload'
+import { type CollectionBeforeChangeHook, type CollectionConfig } from 'payload'
+
+import { publicError } from '@/lib/http/public-error'
 
 import { adminOrSelf, isAdmin, isAdminField } from '@/access'
 
@@ -17,7 +19,7 @@ export const canDemoteAdmin = (adminCount: number) => adminCount > 1
 const keepOneAdmin: CollectionBeforeChangeHook = async ({ data, operation, originalDoc, req }) => {
   if (operation !== 'update' || originalDoc?.role !== 'admin' || data.role === undefined || data.role === 'admin') return data
   const { totalDocs } = await req.payload.count({ collection: 'users', where: { role: { equals: 'admin' } }, req })
-  if (!canDemoteAdmin(totalDocs)) throw new APIError('Son yönetici hesabının rolü değiştirilemez.', 400, undefined, true)
+  if (!canDemoteAdmin(totalDocs)) throw publicError('Son yönetici hesabının rolü değiştirilemez.', 'role')
   return data
 }
 
