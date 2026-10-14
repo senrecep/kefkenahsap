@@ -1,0 +1,50 @@
+{
+  "media-meta/korkuluk-ve-cit/62.webp.json": {
+    "caption": {
+      "tr": {
+        "old": "Beyaz sıvalı, alt kısmı tuğla kaplı evin geniş çatı saçakları ve pencere çevreleri koyu renk ahşapla yapıldı. Fotoğrafta korkuluk ya da çit görünmüyor.",
+        "new": "Beyaz sıvalı, alt kısmı tuğla kaplı evin geniş çatı saçakları ve pencere çevreleri koyu renk ahşapla yapıldı."
+      },
+      "en": {
+        "old": "The wide roof eaves and window surrounds of this white-plastered house with a brick base are made of dark-stained wood. No railing or fence is visible in the photo.",
+        "new": "The wide roof eaves and window surrounds of this white-plastered house with a brick base are made of dark-stained wood."
+      }
+    }
+  },
+  "media-meta/merdivenler/4-3.webp.json": {
+    "caption": {
+      "tr": {
+        "old": "Villa bahçesinde çam ağaçlarının arasına kurulmuş, X desenli korkuluğu olan ahşap platform. Fotoğrafta merdiven görünmüyor, platform ve korkuluk öne çıkıyor.",
+        "new": "Villa bahçesinde çam ağaçlarının arasına kurulmuş, X desenli korkuluğu olan ahşap platform."
+      },
+      "en": {
+        "old": "A wooden platform with an X-pattern railing built among the pine trees of a villa garden. No staircase is visible; the platform and railing are the focus.",
+        "new": "A wooden platform with an X-pattern railing built among the pine trees of a villa garden."
+      }
+    }
+  },
+  "media-meta/mobilya-ve-cila/714d8202-2479-4eac-a30b-4a450a35ab9d.webp.json": {
+    "caption": {
+      "tr": {
+        "old": "Koridor duvarında bronz ayna paneller ve koyu renk çerçeveli kapılar. Ahşap bu işte görünmüyor, kategori ile uyumu zayıf.",
+        "new": "Koridor duvarında bronz ayna paneller ve koyu renk çerçeveli kapılar."
+      },
+      "en": {
+        "old": "Bronze mirror panels and dark-framed doors along a corridor wall. No wood is clearly visible, so the fit with the category is weak.",
+        "new": "Bronze mirror panels and dark-framed doors along a corridor wall."
+      }
+    }
+  },
+  "media-meta/mobilya-ve-cila/bf36a488-dd2a-4fdb-97e3-291f7da4880f.webp.json": {
+    "caption": {
+      "tr": {
+        "old": "Lavabo alanının girişindeki siyah çerçeveli füme cam kapı. Çerçevenin malzemesi fotoğraftan anlaşılmıyor.",
+        "new": "Lavabo alanının girişindeki siyah çerçeveli füme cam kapı."
+      },
+      "en": {
+        "old": "A smoked glass door with a black frame at the entrance of a washroom area. The frame material is not clear from the photo.",
+        "new": "A smoked glass door with a black frame at the entrance of a washroom area."
+      }
+    }
+  }
+}
