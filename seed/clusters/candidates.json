@@ -1,0 +1,265 @@
+{
+ "options": {
+  "threshold": 0.82,
+  "sameDayBonus": 0.1,
+  "maxGapDays": 30,
+  "minSize": 3,
+  "maxSize": 24
+ },
+ "candidates": [
+  {
+   "n": 1,
+   "category": "deck-ve-zeminler",
+   "keys": [
+    "deck-ve-zeminler/3-1.webp",
+    "deck-ve-zeminler/WhatsApp Image 2026-08-07 at 17.59.55 (3).webp",
+    "deck-ve-zeminler/WhatsApp Image 2026-08-07 at 17.59.58 (3).webp",
+    "deck-ve-zeminler/WhatsApp Image 2026-08-07 at 17.59.59 (2).webp",
+    "deck-ve-zeminler/WhatsApp Image 2026-08-07 at 18.00.00 (1).webp",
+    "deck-ve-zeminler/WhatsApp Image 2026-08-07 at 18.00.06 (1).webp",
+    "deck-ve-zeminler/WhatsApp Image 2026-08-07 at 18.00.07 (3).webp"
+   ],
+   "from": "2024-08-07",
+   "to": "2024-08-07"
+  },
+  {
+   "n": 2,
+   "category": "deck-ve-zeminler",
+   "keys": [
+    "deck-ve-zeminler/1511096_901726189871981_3287958022940860004_n.webp",
+    "deck-ve-zeminler/deck4.webp",
+    "deck-ve-zeminler/deck5.webp"
+   ]
+  },
+  {
+   "n": 3,
+   "category": "deck-ve-zeminler",
+   "keys": [
+    "deck-ve-zeminler/IMG_20180131_105338.jpg1_.webp",
+    "deck-ve-zeminler/56985419_2418440141533904_8550949057890091008_n.webp",
+    "deck-ve-zeminler/IMG_20180131_125731.jpg1_.webp",
+    "deck-ve-zeminler/WhatsApp Image 2026-08-07 at 17.59.55.webp",
+    "deck-ve-zeminler/WhatsApp Image 2026-08-07 at 17.59.58 (4).webp",
+    "deck-ve-zeminler/WhatsApp Image 2026-08-07 at 18.00.01 (1).webp",
+    "deck-ve-zeminler/WhatsApp Image 2026-08-07 at 18.00.09 (1).webp"
+   ],
+   "from": "2018-01-31",
+   "to": "2018-01-31"
+  },
+  {
+   "n": 4,
+   "category": "deck-ve-zeminler",
+   "keys": [
+    "deck-ve-zeminler/IMG_20180604_164216.jpg1_.webp",
+    "deck-ve-zeminler/18.webp",
+    "deck-ve-zeminler/19.webp",
+    "deck-ve-zeminler/WhatsApp-Image-2021-04-30-at-20.41.46.webp"
+   ],
+   "from": "2018-06-04",
+   "to": "2018-06-04"
+  },
+  {
+   "n": 5,
+   "category": "deck-ve-zeminler",
+   "keys": [
+    "deck-ve-zeminler/WhatsApp-Image-2021-06-08-at-23.27.44.webp",
+    "deck-ve-zeminler/WhatsApp-Image-2021-06-27-at-20.13.45-1-2.webp",
+    "deck-ve-zeminler/WhatsApp-Image-2021-06-27-at-20.13.45-3.webp",
+    "deck-ve-zeminler/WhatsApp-Image-2021-06-27-at-20.13.46-1-2.webp",
+    "deck-ve-zeminler/WhatsApp-Image-2021-06-27-at-20.13.46-2-2.webp",
+    "deck-ve-zeminler/WhatsApp-Image-2021-06-27-at-20.13.47-3.webp"
+   ],
+   "from": "2021-06-08",
+   "to": "2021-06-27"
+  },
+  {
+   "n": 6,
+   "category": "pergola-ve-kamelyalar",
+   "keys": [
+    "pergola-ve-kamelyalar/74-1.webp",
+    "pergola-ve-kamelyalar/46.webp",
+    "pergola-ve-kamelyalar/17191363_1441116949266233_621726209321629726_n.webp"
+   ],
+   "from": "2005-02-01",
+   "to": "2005-02-01"
+  },
+  {
+   "n": 7,
+   "category": "pergola-ve-kamelyalar",
+   "keys": [
+    "pergola-ve-kamelyalar/251820_406039149440690_716310992_n.webp",
+    "pergola-ve-kamelyalar/598608_406038439440761_1961507705_n.webp",
+    "pergola-ve-kamelyalar/600585_406043102773628_2044150304_n.webp"
+   ],
+   "from": "2014-06-13",
+   "to": "2014-06-13"
+  },
+  {
+   "n": 8,
+   "category": "korkuluk-ve-cit",
+   "keys": [
+    "korkuluk-ve-cit/WhatsApp-Image-2021-04-30-at-20.32.59-1-1.webp",
+    "korkuluk-ve-cit/WhatsApp-Image-2021-04-30-at-20.32.58-3.webp",
+    "korkuluk-ve-cit/WhatsApp-Image-2021-04-30-at-20.32.58-2-1.webp",
+    "korkuluk-ve-cit/WhatsApp-Image-2021-04-30-at-20.32.57-3.webp",
+    "korkuluk-ve-cit/WhatsApp-Image-2021-04-30-at-20.32.57-2-1.webp",
+    "korkuluk-ve-cit/WhatsApp-Image-2021-04-30-at-20.32.57-1-1.webp"
+   ]
+  },
+  {
+   "n": 9,
+   "category": "kopru-ve-iskele",
+   "keys": [
+    "kopru-ve-iskele/1472755_890180847693182_3594639781431809733_n.webp",
+    "kopru-ve-iskele/img14.webp",
+    "kopru-ve-iskele/img11.webp"
+   ],
+   "from": "2006-06-16",
+   "to": "2006-06-16"
+  },
+  {
+   "n": 10,
+   "category": "merdivenler",
+   "keys": [
+    "merdivenler/8-3.webp",
+    "merdivenler/24-3.webp",
+    "merdivenler/28.webp",
+    "merdivenler/29.webp",
+    "merdivenler/33-1.webp"
+   ],
+   "from": "2016-08-24",
+   "to": "2016-08-24"
+  },
+  {
+   "n": 11,
+   "category": "kapi-dolap-ve-seperator",
+   "keys": [
+    "kapi-dolap-ve-seperator/98.webp",
+    "kapi-dolap-ve-seperator/99.webp",
+    "kapi-dolap-ve-seperator/100.webp"
+   ],
+   "from": "2016-10-08",
+   "to": "2016-10-08"
+  },
+  {
+   "n": 12,
+   "category": "ireko-teak",
+   "keys": [
+    "ireko-teak/WhatsApp-Image-2021-06-08-at-23.27.35-1.webp",
+    "ireko-teak/WhatsApp-Image-2021-06-08-at-23.27.36-1.webp",
+    "ireko-teak/WhatsApp-Image-2021-06-08-at-23.27.36.webp",
+    "ireko-teak/WhatsApp-Image-2021-06-08-at-23.27.41.webp",
+    "ireko-teak/WhatsApp-Image-2021-06-08-at-23.27.42-1.webp",
+    "ireko-teak/WhatsApp-Image-2021-06-08-at-23.27.42-2.webp",
+    "ireko-teak/WhatsApp-Image-2021-06-08-at-23.27.42.webp",
+    "ireko-teak/WhatsApp-Image-2021-06-08-at-23.27.43-1.webp"
+   ],
+   "from": "2021-06-08",
+   "to": "2021-06-08"
+  },
+  {
+   "n": 13,
+   "category": "ireko-teak",
+   "keys": [
+    "ireko-teak/WhatsApp-Image-2021-06-08-at-23.27.44-3-1.webp",
+    "ireko-teak/WhatsApp-Image-2021-06-08-at-23.27.45-1.webp",
+    "ireko-teak/WhatsApp-Image-2021-06-08-at-23.27.45.webp"
+   ],
+   "from": "2021-06-08",
+   "to": "2021-06-08"
+  },
+  {
+   "n": 14,
+   "category": "ireko-teak",
+   "keys": [
+    "ireko-teak/WhatsApp-Image-2021-06-08-at-23.27.44.webp",
+    "ireko-teak/WhatsApp-Image-2021-06-27-at-20.13.38-1.webp",
+    "ireko-teak/WhatsApp-Image-2021-06-27-at-20.13.39-1.webp",
+    "ireko-teak/WhatsApp-Image-2021-06-27-at-20.13.40-1.webp",
+    "ireko-teak/WhatsApp-Image-2021-06-27-at-20.13.41-1-1.webp",
+    "ireko-teak/WhatsApp-Image-2021-06-27-at-20.13.41-2-1.webp",
+    "ireko-teak/WhatsApp-Image-2021-06-27-at-20.13.41-3.webp",
+    "ireko-teak/WhatsApp-Image-2021-06-27-at-20.13.42-1-1.webp",
+    "ireko-teak/WhatsApp-Image-2021-06-27-at-20.13.42-2-1.webp",
+    "ireko-teak/WhatsApp-Image-2021-06-27-at-20.13.42-3.webp",
+    "ireko-teak/WhatsApp-Image-2021-06-27-at-20.13.43-1-1.webp",
+    "ireko-teak/WhatsApp-Image-2021-06-27-at-20.13.43-2-1.webp",
+    "ireko-teak/WhatsApp-Image-2021-06-27-at-20.13.43-3.webp",
+    "ireko-teak/WhatsApp-Image-2021-06-27-at-20.13.44-1-1.webp",
+    "ireko-teak/WhatsApp-Image-2021-06-27-at-20.13.44-2-1.webp",
+    "ireko-teak/WhatsApp-Image-2021-06-27-at-20.13.44-3-1.webp",
+    "ireko-teak/WhatsApp-Image-2021-06-27-at-20.13.44-4.webp",
+    "ireko-teak/WhatsApp-Image-2021-06-27-at-20.13.45-1-1.webp",
+    "ireko-teak/WhatsApp-Image-2021-06-27-at-20.13.45-2.webp",
+    "ireko-teak/WhatsApp-Image-2021-06-27-at-20.13.46-1-1.webp",
+    "ireko-teak/WhatsApp-Image-2021-06-27-at-20.13.46-3.webp",
+    "ireko-teak/WhatsApp-Image-2021-06-27-at-20.13.47-2.webp",
+    "ireko-teak/WhatsApp-Image-2021-06-27-at-20.13.48-1-1.webp",
+    "ireko-teak/WhatsApp-Image-2021-06-27-at-20.13.48-2.webp"
+   ],
+   "from": "2021-06-08",
+   "to": "2021-06-27"
+  },
+  {
+   "n": 15,
+   "category": "mobilya-ve-cila",
+   "keys": [
+    "mobilya-ve-cila/3.webp",
+    "mobilya-ve-cila/4cfce54c-4177-4a57-94e0-34fc0f335c48.webp",
+    "mobilya-ve-cila/81e195cc-fcb3-4bc6-b4f4-24e797152c17-1.webp",
+    "mobilya-ve-cila/81e195cc-fcb3-4bc6-b4f4-24e797152c17.webp",
+    "mobilya-ve-cila/bd9e2e56-6158-4784-babe-c46d0cdcf529.webp"
+   ]
+  },
+  {
+   "n": 16,
+   "category": "mobilya-ve-cila",
+   "keys": [
+    "mobilya-ve-cila/5c082fb0-87cd-4296-86fe-c2d4d0f8f7e9.webp",
+    "mobilya-ve-cila/2776f54d-8bb8-49d2-8241-cf822c1813c1.webp",
+    "mobilya-ve-cila/e07dc209-8f5e-4e0e-a04c-03c4d70d9b76.webp"
+   ]
+  },
+  {
+   "n": 17,
+   "category": "mobilya-ve-cila",
+   "keys": [
+    "mobilya-ve-cila/8e277099-c75c-43c8-ad57-9fe340d2aa17.webp",
+    "mobilya-ve-cila/68bbda53-f679-4447-a23f-e258cc48dbb6.webp",
+    "mobilya-ve-cila/d155e589-e0c2-478e-b8e0-113b0dbe0e34.webp"
+   ]
+  },
+  {
+   "n": 18,
+   "category": "mobilya-ve-cila",
+   "keys": [
+    "mobilya-ve-cila/5cd4edde-77aa-4a95-aa3a-00b5d4bf7a4b.webp",
+    "mobilya-ve-cila/6e619fdd-30c3-445d-aba1-d10228378349.webp",
+    "mobilya-ve-cila/0549a210-04f5-48cc-bc42-6e003b7829ce.webp",
+    "mobilya-ve-cila/4747c67c-fd27-420e-832f-e000a0c21295.webp",
+    "mobilya-ve-cila/19534b08-75bb-43fe-a1d7-2cc4cc65bb19.webp",
+    "mobilya-ve-cila/b627db22-82b1-49c6-9f18-f4a3ac26425d.webp"
+   ]
+  },
+  {
+   "n": 19,
+   "category": "mobilya-ve-cila",
+   "keys": [
+    "mobilya-ve-cila/5cd50eb4-3d01-4a82-9833-384a7f426765.webp",
+    "mobilya-ve-cila/492db16f-e1e9-4975-a2da-62859b3b7241.webp",
+    "mobilya-ve-cila/523d7efa-ab12-4665-853f-0dccb19dcfdb.webp",
+    "mobilya-ve-cila/777f9655-dd21-46e2-a9a4-1df83a74092c.webp",
+    "mobilya-ve-cila/837a1af1-4823-44d6-917b-59f095d37efb.webp"
+   ]
+  },
+  {
+   "n": 20,
+   "category": "mobilya-ve-cila",
+   "keys": [
+    "mobilya-ve-cila/d01889b4-e0cc-4ccd-a650-017258352ae2.webp",
+    "mobilya-ve-cila/dd7c5680-ef9f-4185-baba-4ec637dc4c21.webp",
+    "mobilya-ve-cila/e3bad3a3-b954-4198-a83b-e21ed2622c59.webp"
+   ]
+  }
+ ]
+}
