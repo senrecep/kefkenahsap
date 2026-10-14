@@ -1,11 +1,12 @@
 # Görsel incelemesi: işaretli görseller, kapaklar ve hero
 
-Bu rapor, sitedeki 568 fotoğrafın elle yapılan incelemesidir. Her fotoğrafa tek tek bakıldı. Veritabanında hiçbir şey değiştirilmedi. Öneriler yalnızca öneridir: uygulayıp uygulamamak sizin kararınız. Admin'den elle uygulayabilirsiniz. Onaylarsanız `recommendations.json` dosyasıyla bir betik de uygulayabilir.
+Bu rapor, sitedeki fotoğrafların elle yapılan incelemesidir. Gözle bakılanlar şunlar: işaretli 59 görselin hepsi ve her kategoride kapak adayı olan en geniş yatay fotoğraflar (toplam yaklaşık 250 fotoğraf). Kalan yaklaşık 300 fotoğrafa (çoğu dikey) tek tek bakılmadı. Bunlar yalnızca otomatik kopya taramasından geçti: 568 fotoğrafın hepsi görsel benzerlikle karşılaştırıldı. Veritabanında hiçbir şey değiştirilmedi. Öneriler yalnızca öneridir: uygulayıp uygulamamak sizin kararınız. Admin'den elle uygulayabilirsiniz. Onaylarsanız `recommendations.json` dosyasıyla bir betik de uygulayabilir.
 
 Dosyalar:
 - `recommendations.json`: makinenin okuyacağı öneriler. `seedKey`, veritabanındaki `media.seedKey` alanıyla aynıdır.
 - `flagged-1…4.webp`: işaretli 59 görselin küçük önizlemeleri. Numaralar aşağıdaki tablodaki numaralarla aynı.
 - `covers-1…2.webp`: önerilen kategori kapakları. `heroes-1.webp`: hero önerileri.
+- Kopya taraması bir tahmindir. Eşleşen çiftlerin hepsine gözle bakılmadı, yalnızca işaretli görsellerdekilere bakıldı.
 
 ## Özet
 
@@ -14,12 +15,12 @@ Dosyalar:
   - Gizlenecek 8 görselde ahşap iş görünmüyor. Bunların 7'si `mobilya-ve-cila`'daki ofis, banyo ve koridor fotoğrafları, biri metal gölgelik.
   - Kalan 3'ü konu dışı: dükkân tabelası, başka bir markanın tabelası ve şap zemin.
   - Taşınacakların hedefleri: Kapı, Dolap ve Seperatör 6, Mobilya ve Cila 6, Korkuluk ve Çit 5, Çiçeklik ve Oturma Grubu 5, Ahşap Yapılar 4.
-- **Metin düzeltmesi:** 5 görselin başlık, alt metin veya açıklaması fotoğrafta görünenle uyuşmuyor. Düzeltilmiş TR/EN metin aşağıdaki tabloda.
+- **Metin düzeltmesi:** 6 görselin başlık, alt metin veya açıklaması fotoğrafta görünenle uyuşmuyor. Düzeltilmiş TR/EN metin aşağıdaki tabloda.
   - Örnek: "sarmaşık teli" denmiş, fotoğrafta ahşap kafes var.
-  - Örnek: "özel ölçüde üretilen" yazılmış, bu fotoğraftan görülemez.
+  - Örnek: "özel ölçüde üretilen" ve "ölçüye göre yapılmış" yazılmış, bunlar fotoğraftan görülemez.
   - Örnek: kapıların ahşap olduğu anlaşılmıyor ama metin "ahşap" diyor.
 - **Genel not (başlık yazımı):** Seed metinlerindeki bütün başlıklar Her Kelimesi Büyük yazılmış ("Beyaz Boyalı Ahşap Dış Merdiven"). Yazım rehberi §3 başlıkların cümle düzeninde yazılmasını istiyor ("Beyaz boyalı ahşap dış merdiven"). Bu 568 başlığın hepsini etkiliyor. Toplu bir düzeltme ayrı bir iş olarak ele alınabilir. Bu rapordaki önerilen başlıklar cümle düzeninde yazıldı.
-- **Kapaklar:** Kapak seçilmemiş kategorilerde site şu an en geniş fotoğrafı kullanıyor (`getCategoryPhotos`, genişliğe göre sıralar). Merdivenler'in kapağı bu yüzden şap zemin fotoğrafı, Korkuluk ve Çit'inki tarih damgalı bir fotoğraf. Her kategori için bir ya da iki kapak önerisi aşağıda. Kapak alanı herhangi bir görseli kabul ediyor, kategori sınırı yok.
+- **Kapaklar:** Kategoriye kapak seçilmemişse ana sayfadaki hizmet kutusu kategorinin en geniş fotoğrafını kullanıyor (`getCategoryPhotos`). Kategori sayfası ise galerinin ilk fotoğrafını kullanıyor. Merdivenler'in en geniş fotoğrafı şap zemin fotoğrafı, ana sayfada bu yüzden o görünüyor. Korkuluk ve Çit'te en geniş iki fotoğraf aynı genişlikte (2560 px); biri tarih damgalı `50.webp`. Hangisinin göründüğü kayıt sırasına bağlı. Admin'de kapak seçilince hem ana sayfa hem kategori sayfası onu kullanır. Kapak alanı herhangi bir görseli kabul ediyor, kategori sınırı yok. Her kategori için bir ya da iki kapak önerisi aşağıda.
 - **Çözünürlük:** Birçok kategoride 1280 px'ten geniş, yatay ve konuyu iyi gösteren fotoğraf yok. Merdivenler, Köprü ve İskele, Mobilya ve Cila'da önerilen kapakların bir kısmı 960–1280 px. Bunlar tabloda belirtildi. İleride çekilecek yeni fotoğraflar bu açığı kapatır.
 - **Filigran:** Fotoğrafların çoğunda ortada "kefkenahsap.com" filigranı var. Eski fotoğraflarda iki satırlı, kalın "kefken ahşap dekorasyon / www.kefkenahsap.com" filigranı ve kameranın tarih damgası da var. Ayrıntı "Filigran notları" bölümünde.
 
@@ -36,7 +37,7 @@ Dosyalar:
 | 5 | `21.webp` | Deck ve Zeminler | Gizlensin | Aynı fotoğraf zaten merdivenler/21.webp ve ahsap-yapilar/82.webp olarak var; kopya. | — |
 | 6 | `30.webp` | Deck ve Zeminler | Gizlensin | Aynı fotoğraf zaten ahsap-yapilar/30.webp olarak var; kopya. | — |
 | 7 | `32.webp` | Deck ve Zeminler | Gizlensin | Aynı fotoğraf zaten merdivenler/32.webp (ve ahsap-yapilar/80.webp) olarak var; kopya. | — |
-| 8 | `8.webp` | Deck ve Zeminler | Taşınsın → Kapı, Dolap ve Seperatör | Gömme dolap; deck ile ilgisi yok. Aynı fotoğraf mobilya-ve-cila/8.webp olarak da var; orada kalabilir ya da gizlenebilir. | — |
+| 8 | `8.webp` | Deck ve Zeminler | Taşınsın → Kapı, Dolap ve Seperatör | Gömme dolap; deck ile ilgisi yok. Aynı fotoğraf mobilya-ve-cila/8.webp olarak da var; orada kalabilir ya da gizlenebilir. "Ölçüye göre yapılmış / custom-fitted" fotoğraftan görülmüyor, çıkarıldı. | **Açıklama:** Hol duvarına gömülü, kapakları çerçeveli panel işlemeli beyaz boyalı dolap. Kapaklar duvarla aynı hizada. / _A white painted cabinet built into the hall wall, with framed raised-panel doors sitting flush with the wall._ |
 | 9 | `WhatsApp Image 2026-08-07 at 17.59.56 (1).webp` | Deck ve Zeminler | Taşınsın → Korkuluk ve Çit | Ön planda ahşap çit ve çıtalı paravan var; zemin işi görünmüyor. | — |
 | 10 | `WhatsApp Image 2026-08-07 at 17.59.58 (1).webp` | Deck ve Zeminler | Taşınsın → Çiçeklik ve Oturma Grubu | Yükseltilmiş ahşap bahçe yatakları (çiçeklik). | — |
 | 11 | `WhatsApp Image 2026-08-07 at 18.00.35.webp` | Deck ve Zeminler | Taşınsın → Çiçeklik ve Oturma Grubu | Ateş çukuru çevresinde L biçimli ahşap oturma bankı. | — |
@@ -129,6 +130,7 @@ Her kategoride en geniş 15–25 yatay fotoğrafa bakıldı (1280 px ve üstü �
   - Ahşap Yapılar'ın çatı fotoğrafının yerine kütük ev önerildi.
   - Mobilya ve Cila'nın buzdolaplı mutfak fotoğrafının yerine (`mobilya-ve-cila/2.webp`) cilalı konsol önerildi.
   - Merdivenler'in şap zemin fotoğrafının yerine kıvrılan bahçe merdiveni önerildi.
+- Mobilya ve Cila'da en geniş üç fotoğraf aynı genişlikte (1600 px); buzdolaplı mutfak (`2.webp`) bunlardan biri.
 - Merdivenler için başka bir seçenek de var: `merdivenler/21.webp`. Kütük evin dış merdivenini gösteriyor. Aynı fotoğraf `deck-ve-zeminler/21.webp` olarak da var, o kopyanın gizlenmesi önerildi.
 
 ## Ana sayfa hero önerileri
@@ -137,11 +139,11 @@ Her kategoride en geniş 15–25 yatay fotoğrafa bakıldı (1280 px ve üstü �
 
 | Sıra | Görsel | Boyut | Neden |
 |---|---|---|---|
-| 1 | `ciceklik-ve-oturma-grubu/IMG_20180601_103750.webp` | 3264×2448 | Boğaz manzaralı terasta ahşap zemin ve ahşap çiçeklikler. Sol alt düz zemin tahtası. Filigran ortada (yaklaşık %50 yükseklikte), alt %40'ın dışında. |
-| 2 | `deck-ve-zeminler/IMG_20180503_114721.jpg1_.webp` | 2560×1920 | Bahçede deck, çiçekli saksılar, sandalyeler. Alt kısım çimen. Filigran ortada ve soluk. |
-| 3 | `pergola-ve-kamelyalar/251820_406039149440690_716310992_n.webp` | 2000×1500 | Palmiyeler arasında pergola ve deck. Alt kısım açık renk deck tahtası. Filigran yaklaşık %50 yükseklikte, alt %40'ın dışında. |
+| 1 | `deck-ve-zeminler/IMG_20180604_164216.jpg1_.webp` | 2560×1920 | Bahçede yeni döşenmiş deck. Sol alt düz çimen, metin için en sakin aday. Filigran ortada ve soluk. Sağ altta hortum makarası var; metin solda olacağı için kırpılabilir. |
+| 2 | `deck-ve-zeminler/IMG_20180503_114721.jpg1_.webp` | 2560×1920 | Bahçede deck, çiçekli saksılar, sandalyeler. Alt kısım çimen. Sol alt köşede bir yaprak var. Filigran ortada ve soluk. |
+| 3 | `ciceklik-ve-oturma-grubu/IMG_20180601_103750.webp` | 3264×2448 | Boğaz manzaralı terasta ahşap zemin ve ahşap çiçeklikler. Sol alt çiçekliğin düz, tek renk ön yüzü; metin için hafif bir karartma gerekir. Filigran ortada (yaklaşık %50 yükseklikte), alt %40'ın dışında. |
 
-Yedek: `deck-ve-zeminler/IMG_20180604_164216.jpg1_.webp` (2560×1920). Sol alt sakin, ama sağ altta hortum ve makara var.
+İlk aday olan `pergola-ve-kamelyalar/251820_…` (2000×1500) elendi. Alt %40'ında filigran yok, ama sol altında çapraz korkuluk ve istiflenmiş sandalyeler var. Kapak olarak önerilmeye devam ediyor.
 
 ## Filigran notları
 

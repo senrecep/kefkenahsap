@@ -39,7 +39,13 @@
       "seedKey": "deck-ve-zeminler/8.webp",
       "action": "move",
       "toCategory": "kapi-dolap-ve-seperator",
-      "reason": "Gömme dolap; deck ile ilgisi yok. Aynı fotoğraf mobilya-ve-cila/8.webp olarak da var; orada kalabilir ya da gizlenebilir."
+      "reason": "Gömme dolap; deck ile ilgisi yok. Aynı fotoğraf mobilya-ve-cila/8.webp olarak da var; orada kalabilir ya da gizlenebilir. \"Ölçüye göre yapılmış / custom-fitted\" fotoğraftan görülmüyor, çıkarıldı.",
+      "fixes": {
+        "caption": {
+          "tr": "Hol duvarına gömülü, kapakları çerçeveli panel işlemeli beyaz boyalı dolap. Kapaklar duvarla aynı hizada.",
+          "en": "A white painted cabinet built into the hall wall, with framed raised-panel doors sitting flush with the wall."
+        }
+      }
     },
     {
       "seedKey": "deck-ve-zeminler/WhatsApp Image 2026-08-07 at 17.59.56 (1).webp",
@@ -423,8 +429,8 @@
     ]
   },
   "heroes": [
-    "ciceklik-ve-oturma-grubu/IMG_20180601_103750.webp",
+    "deck-ve-zeminler/IMG_20180604_164216.jpg1_.webp",
     "deck-ve-zeminler/IMG_20180503_114721.jpg1_.webp",
-    "pergola-ve-kamelyalar/251820_406039149440690_716310992_n.webp"
+    "ciceklik-ve-oturma-grubu/IMG_20180601_103750.webp"
   ]
 }
