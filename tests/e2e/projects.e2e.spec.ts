@@ -1,70 +1,39 @@
-import { type APIRequestContext, expect, request, test } from '@playwright/test'
-import { getPayload, type Payload } from 'payload'
+import { type APIRequestContext, expect, test } from '@playwright/test'
 
-import config from '../../src/payload.config.js'
-import { seedTestUser, testUser } from '../helpers/seedUser'
+import { adminApi, createDoc, deleteDocs, ensureWhatsApp, uploadPhoto } from '../helpers/content'
 
-// The seed has no projects: create two temporary ones (and a reference), delete them afterwards.
-// Writes go through the REST API so Payload's hooks run inside the Next server and revalidate its cached loaders.
+// Self-contained (CI starts from an empty DB): its own category, photos, tag, reference and two projects,
+// all created through the REST API and deleted afterwards.
 test.describe('Projects, project page and references', () => {
-  let payload: Payload
   let api: APIRequestContext
-  const create = async <T>(collection: string, data: Record<string, unknown>): Promise<T> => {
-    const res = await api.post(`/api/${collection}?locale=tr`, { data })
-    expect(res.ok(), await res.text()).toBe(true)
-    return (await res.json()).doc as T
-  }
+  let restoreWhatsApp = async () => {}
   const stamp = Date.now()
-  const ids: { projects: number[]; references: number[]; tags: number[] } = {
-    projects: [],
-    references: [],
-    tags: [],
-  }
+  const ids = { projects: [] as number[], media: [] as number[], categories: [] as number[], references: [] as number[], tags: [] as number[] }
+  const categorySlug = `e2e-proje-kategori-${stamp}`
   let galleryFiles: string[] = []
   let full: { slug: string; title: string }
   let bare: { slug: string; title: string }
 
   test.beforeAll(async () => {
-    payload = await getPayload({ config })
-    await seedTestUser()
-    const baseURL = `http://localhost:${process.env.E2E_PORT ?? 3000}`
-    const login = await (
-      await request.newContext({ baseURL })
-    ).post('/api/users/login', { data: { email: testUser.email, password: testUser.password } })
-    api = await request.newContext({
-      baseURL,
-      extraHTTPHeaders: { Authorization: `JWT ${(await login.json()).token}` },
-    })
-    const deck = (
-      await payload.find({
-        collection: 'categories',
-        locale: 'tr',
-        where: { slug: { equals: 'deck-ve-zeminler' } },
-        depth: 0,
-      })
-    ).docs[0]!
-    const photos = (
-      await payload.find({
-        collection: 'media',
-        where: { and: [{ status: { equals: 'approved' } }, { category: { equals: deck.id } }] },
-        limit: 4,
-        depth: 0,
-      })
-    ).docs
-    // Saved order deliberately differs from the query order.
+    api = await adminApi()
+    restoreWhatsApp = await ensureWhatsApp(api)
+    const category = await createDoc(api, 'categories', { _status: 'published', name: `E2E Proje Kategori ${stamp}`, slug: categorySlug })
+    ids.categories.push(category.id)
+    const photos = []
+    for (let i = 0; i < 4; i++) photos.push(await uploadPhoto(api, { seoFilename: `e2e-proje-${stamp}-${i}`, category: category.id }, i))
+    ids.media.push(...photos.map((p) => p.id))
+    // Saved order deliberately differs from the upload order.
     const ordered = [...photos].reverse()
-    galleryFiles = ordered.map((p) => p.seoFilename!)
-    const wood = await create<{ id: number }>('tags', { name: `E2E Iroko ${stamp}`, axis: 'wood' })
-    const ref = await create<{ id: number }>('references', {
-      name: `E2E Referans ${stamp}`,
-      location: 'Riva / İstanbul',
-    })
+    galleryFiles = ordered.map((p) => p.seoFilename)
+    const wood = await createDoc(api, 'tags', { name: `E2E Iroko ${stamp}`, axis: 'wood' })
+    ids.tags.push(wood.id)
+    const ref = await createDoc(api, 'references', { name: `E2E Referans ${stamp}`, location: 'Riva / İstanbul' })
     ids.references.push(ref.id)
     type P = { id: number; slug: string; title: string }
-    const a = await create<P>('projects', {
+    const a = await createDoc<P>(api, 'projects', {
       _status: 'published',
       title: `E2E Havuz Deck ${stamp}`,
-      categories: [deck.id],
+      categories: [category.id],
       gallery: ordered.map((p) => p.id),
       city: 'İstanbul',
       district: 'Beykoz',
@@ -75,21 +44,20 @@ test.describe('Projects, project page and references', () => {
       reference: ref.id,
       testimonial: { quote: 'Gizli yorum', author: 'A. Müşteri', consentGiven: false },
     })
-    const b = await create<P>('projects', {
+    const b = await createDoc<P>(api, 'projects', {
       _status: 'published',
       title: `E2E Boş Künye ${stamp}`,
-      categories: [deck.id],
+      categories: [category.id],
       testimonial: { quote: 'Çok memnun kaldık.', author: 'B. Müşteri', consentGiven: true },
     })
     ids.projects.push(a.id, b.id)
     full = a
     bare = b
-    ids.tags.push(wood.id)
   })
 
   test.afterAll(async () => {
-    for (const [collection, list] of Object.entries(ids))
-      for (const id of list) await api.delete(`/api/${collection}/${id}`)
+    for (const [collection, list] of Object.entries(ids)) await deleteDocs(api, collection, list)
+    await restoreWhatsApp()
   })
 
   test('project page shows only filled facts, ordered gallery, consented testimonial only, similar projects and CTA', async ({
@@ -122,7 +90,7 @@ test.describe('Projects, project page and references', () => {
   test('index filters by category through the URL', async ({ page }) => {
     await page.goto('/tr/projeler')
     await expect(page.getByRole('link', { name: new RegExp(full.title) })).toBeVisible()
-    await page.goto('/tr/projeler?kategori=deck-ve-zeminler')
+    await page.goto(`/tr/projeler?kategori=${categorySlug}`)
     await expect(page.getByRole('link', { name: new RegExp(bare.title) })).toBeVisible()
     await page.goto('/tr/projeler?kategori=boyle-bir-kategori-yok')
     await expect(page.getByRole('link', { name: new RegExp(bare.title) })).toBeVisible() // unknown/unused filter → all projects
