@@ -5,11 +5,11 @@ import { getTranslations, setRequestLocale } from 'next-intl/server'
 import { ContentPage } from '@/components/content/ContentPage'
 import { KvkkDraft } from '@/content/legal/kvkk'
 import type { Locale } from '@/i18n/routing'
-import { getPage, getPageTitles } from '@/lib/data/pages'
+import { CMS_PAGES, getPage, getPageTitles } from '@/lib/data/pages'
 import { getSiteSettings } from '@/lib/data/site'
 import { cmsPagePaths, pageMetadata } from '@/lib/seo/page-metadata'
 
-const SLUGS = ['kvkk', 'privacy']
+const SLUGS = CMS_PAGES['/kvkk']
 type Props = { params: Promise<{ locale: string }> }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
