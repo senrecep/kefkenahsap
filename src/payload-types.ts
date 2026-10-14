@@ -76,6 +76,7 @@ export interface Config {
     pages: Page;
     leads: Lead;
     'lead-photos': LeadPhoto;
+    'ai-usage': AiUsage;
     redirects: Redirect;
     'payload-kv': PayloadKv;
     'payload-jobs': PayloadJob;
@@ -101,6 +102,7 @@ export interface Config {
     pages: PagesSelect<false> | PagesSelect<true>;
     leads: LeadsSelect<false> | LeadsSelect<true>;
     'lead-photos': LeadPhotosSelect<false> | LeadPhotosSelect<true>;
+    'ai-usage': AiUsageSelect<false> | AiUsageSelect<true>;
     redirects: RedirectsSelect<false> | RedirectsSelect<true>;
     'payload-kv': PayloadKvSelect<false> | PayloadKvSelect<true>;
     'payload-jobs': PayloadJobsSelect<false> | PayloadJobsSelect<true>;
@@ -116,12 +118,14 @@ export interface Config {
     siteSettings: SiteSetting;
     homepage: Homepage;
     navigation: Navigation;
+    aiSettings: AiSetting;
     'payload-jobs-stats': PayloadJobsStat;
   };
   globalsSelect: {
     siteSettings: SiteSettingsSelect<false> | SiteSettingsSelect<true>;
     homepage: HomepageSelect<false> | HomepageSelect<true>;
     navigation: NavigationSelect<false> | NavigationSelect<true>;
+    aiSettings: AiSettingsSelect<false> | AiSettingsSelect<true>;
     'payload-jobs-stats': PayloadJobsStatsSelect<false> | PayloadJobsStatsSelect<true>;
   };
   locale: 'tr' | 'en';
@@ -132,6 +136,7 @@ export interface Config {
   jobs: {
     tasks: {
       purgeExpiredLeads: TaskPurgeExpiredLeads;
+      tagImage: TaskTagImage;
       inline: {
         input: unknown;
         output: unknown;
@@ -514,6 +519,26 @@ export interface LeadPhoto {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ai-usage".
+ */
+export interface AiUsage {
+  id: number;
+  task: string;
+  model?: string | null;
+  ok?: boolean | null;
+  costUsd?: number | null;
+  inputTokens?: number | null;
+  outputTokens?: number | null;
+  /**
+   * collection:id
+   */
+  docRef?: string | null;
+  error?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "redirects".
  */
 export interface Redirect {
@@ -609,7 +634,7 @@ export interface PayloadJob {
     | {
         executedAt: string;
         completedAt: string;
-        taskSlug: 'inline' | 'purgeExpiredLeads';
+        taskSlug: 'inline' | 'purgeExpiredLeads' | 'tagImage';
         taskID: string;
         input?:
           | {
@@ -642,7 +667,7 @@ export interface PayloadJob {
         id?: string | null;
       }[]
     | null;
-  taskSlug?: ('inline' | 'purgeExpiredLeads') | null;
+  taskSlug?: ('inline' | 'purgeExpiredLeads' | 'tagImage') | null;
   queue?: string | null;
   waitUntil?: string | null;
   processing?: boolean | null;
@@ -700,6 +725,10 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'lead-photos';
         value: number | LeadPhoto;
+      } | null)
+    | ({
+        relationTo: 'ai-usage';
+        value: number | AiUsage;
       } | null)
     | ({
         relationTo: 'redirects';
@@ -1048,6 +1077,22 @@ export interface LeadPhotosSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ai-usage_select".
+ */
+export interface AiUsageSelect<T extends boolean = true> {
+  task?: T;
+  model?: T;
+  ok?: T;
+  costUsd?: T;
+  inputTokens?: T;
+  outputTokens?: T;
+  docRef?: T;
+  error?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "redirects_select".
  */
 export interface RedirectsSelect<T extends boolean = true> {
@@ -1336,6 +1381,36 @@ export interface Navigation {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "aiSettings".
+ */
+export interface AiSetting {
+  id: number;
+  enabled?: boolean | null;
+  monthlyBudgetUsd?: number | null;
+  /**
+   * OpenRouter model kimlikleri, sırayla denenir. Boşsa varsayılanlar kullanılır.
+   */
+  tagImage?: string[] | null;
+  /**
+   * OpenRouter model kimlikleri, sırayla denenir. Boşsa varsayılanlar kullanılır.
+   */
+  translate?: string[] | null;
+  /**
+   * OpenRouter model kimlikleri, sırayla denenir. Boşsa varsayılanlar kullanılır.
+   */
+  draftGuide?: string[] | null;
+  glossary?:
+    | {
+        tr: string;
+        en: string;
+        id?: string | null;
+      }[]
+    | null;
+  updatedAt?: string | null;
+  createdAt?: string | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "payload-jobs-stats".
  */
 export interface PayloadJobsStat {
@@ -1558,6 +1633,27 @@ export interface NavigationSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "aiSettings_select".
+ */
+export interface AiSettingsSelect<T extends boolean = true> {
+  enabled?: T;
+  monthlyBudgetUsd?: T;
+  tagImage?: T;
+  translate?: T;
+  draftGuide?: T;
+  glossary?:
+    | T
+    | {
+        tr?: T;
+        en?: T;
+        id?: T;
+      };
+  updatedAt?: T;
+  createdAt?: T;
+  globalType?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "payload-jobs-stats_select".
  */
 export interface PayloadJobsStatsSelect<T extends boolean = true> {
@@ -1584,6 +1680,18 @@ export interface TaskPurgeExpiredLeads {
   input?: unknown;
   output: {
     deleted?: number | null;
+  };
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "TaskTagImage".
+ */
+export interface TaskTagImage {
+  input: {
+    mediaId: string;
+  };
+  output: {
+    result?: string | null;
   };
 }
 /**

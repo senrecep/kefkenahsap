@@ -5,6 +5,7 @@ import * as migration_20261014_015435_core_collections from './20261014_015435_c
 import * as migration_20261014_021522_globals from './20261014_021522_globals';
 import * as migration_20261014_022343_projects_references_pages from './20261014_022343_projects_references_pages';
 import * as migration_20261014_023200_leads from './20261014_023200_leads';
+import * as migration_20261014_024225_ai from './20261014_024225_ai';
 
 export const migrations = [
   {
@@ -40,6 +41,11 @@ export const migrations = [
   {
     up: migration_20261014_023200_leads.up,
     down: migration_20261014_023200_leads.down,
-    name: '20261014_023200_leads'
+    name: '20261014_023200_leads',
+  },
+  {
+    up: migration_20261014_024225_ai.up,
+    down: migration_20261014_024225_ai.down,
+    name: '20261014_024225_ai'
   },
 ];

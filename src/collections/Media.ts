@@ -1,5 +1,5 @@
 import sharp from 'sharp'
-import { APIError, type CollectionBeforeChangeHook, type CollectionConfig } from 'payload'
+import { APIError, type CollectionAfterChangeHook, type CollectionBeforeChangeHook, type CollectionConfig } from 'payload'
 import { Result } from 'tsentials/result'
 
 import { approvedOrStaff, isStaff } from '@/access'
@@ -45,12 +45,22 @@ const publishGate: CollectionBeforeChangeHook = async ({ data, req, originalDoc,
   return data
 }
 
+/** New upload → queue an AI suggestion job (skipped in tests, without a key, when disabled, or for seeded media). */
+const queueAiSuggestion: CollectionAfterChangeHook = async ({ doc, operation, req, context }) => {
+  if (operation !== 'create' || context?.skipAi || doc.status === 'approved') return doc
+  if (!process.env.OPENROUTER_API_KEY || process.env.NODE_ENV === 'test') return doc
+  const settings = await req.payload.findGlobal({ slug: 'aiSettings', req })
+  if (settings.enabled === false) return doc
+  await req.payload.jobs.queue({ task: 'tagImage', input: { mediaId: String(doc.id) }, req })
+  return doc
+}
+
 export const Media: CollectionConfig = {
   slug: 'media',
   labels: { singular: 'Görsel', plural: 'Görseller' },
   admin: { useAsTitle: 'title', defaultColumns: ['filename', 'title', 'category', 'status'], group: 'İçerik' },
   access: { read: approvedOrStaff, create: isStaff, update: isStaff, delete: isStaff },
-  hooks: { beforeChange: [placeholder, publishGate] },
+  hooks: { beforeChange: [placeholder, publishGate], afterChange: [queueAiSuggestion] },
   fields: [
     {
       name: 'status',
