@@ -11,6 +11,7 @@ import config from '@/payload.config'
 import { SEED_CATEGORIES } from '@/seed/categories'
 import { fileKey, orderForCategory, uploadsForPhoto } from '@/seed/order'
 
+import { seedReferences } from './references'
 import { seedSiteSettings } from './site-settings'
 
 const ROOT = process.cwd()
@@ -50,6 +51,7 @@ const seededSlugs = new Set(SEED_CATEGORIES.map((c) => c.slug.tr))
 
 const payload = await getPayload({ config: await config })
 console.log(await seedSiteSettings(payload))
+console.log(await seedReferences(payload))
 const ctx = { skipAi: true }
 const tmp = mkdtempSync(path.join(os.tmpdir(), 'kefken-seed-'))
 

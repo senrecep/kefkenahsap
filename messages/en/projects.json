@@ -6,7 +6,8 @@
     "all": "All",
     "empty": "No projects have been added here yet. In the meantime you can see our work in the gallery.",
     "emptyFiltered": "No projects in this category yet.",
-    "toGallery": "Go to the gallery"
+    "toGallery": "Go to the gallery",
+    "list": "Project list"
   },
   "Project": {
     "facts": "Project facts",

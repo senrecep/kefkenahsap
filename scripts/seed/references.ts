@@ -1,9 +1,6 @@
 // #40: the 9 references from the old site (docs/legacy/crawl-md/www.kefkenahsap.com_referanslar_.md), names and locations as listed, no logos.
-// Idempotent: a reference whose name already exists is left as the owner edited it.
-// Run: bun run payload run scripts/seed/references.ts
-import { getPayload } from 'payload'
+import type { Payload } from 'payload'
 
-import config from '@/payload.config'
 import { routing } from '@/i18n/routing'
 
 const REFERENCES: [name: string, location: string][] = [
@@ -18,17 +15,21 @@ const REFERENCES: [name: string, location: string][] = [
   ['İ.G.K', 'Levent / İstanbul'],
 ]
 
-const payload = await getPayload({ config })
-let created = 0
-for (const [name, location] of REFERENCES) {
-  const found = await payload.find({ collection: 'references', where: { name: { equals: name } }, limit: 1, depth: 0 })
-  if (found.docs.length) continue
-  const doc = await payload.create({ collection: 'references', locale: routing.defaultLocale, data: { name, location } })
-  // Place names read the same in every locale.
-  for (const locale of routing.locales.filter((l) => l !== routing.defaultLocale)) {
-    await payload.update({ collection: 'references', id: doc.id, locale, data: { location } })
+/** Idempotent by name: existing references keep the owner's edits; only a missing location in a locale is filled. */
+export async function seedReferences(payload: Payload): Promise<string> {
+  let created = 0
+  let filled = 0
+  for (const [name, location] of REFERENCES) {
+    const found = await payload.find({ collection: 'references', where: { name: { equals: name } }, limit: 1, depth: 0 })
+    const id = found.docs[0]?.id ?? (await payload.create({ collection: 'references', locale: routing.defaultLocale, data: { name, location } })).id
+    if (!found.docs.length) created++
+    // Place names read the same in every locale.
+    for (const locale of routing.locales) {
+      const doc = await payload.findByID({ collection: 'references', id, locale, depth: 0 })
+      if (doc.location) continue
+      await payload.update({ collection: 'references', id, locale, data: { location } })
+      if (found.docs.length) filled++
+    }
   }
-  created++
+  return `references: ${created} created, ${REFERENCES.length - created} already present, ${filled} missing locations filled`
 }
-console.log(`references: ${created} created, ${REFERENCES.length - created} already present`)
-process.exit(0)

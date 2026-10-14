@@ -57,8 +57,11 @@ export default async function ProjectsPage({ params, searchParams }: { params: P
         </nav>
       )}
 
+      <h2 id="list-h" className="sr-only">
+        {t('list')}
+      </h2>
       {shown.length > 0 ? (
-        <ul className="mt-10 grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
+        <ul aria-labelledby="list-h" className="mt-10 grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
           {shown.map((p, i) => (
             <li key={p.id}>
               <ProjectCard project={p} priority={i < 3} />

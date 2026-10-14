@@ -124,7 +124,7 @@ test.describe('Projects, project page and references', () => {
     await expect(page.getByRole('link', { name: new RegExp(full.title) })).toBeVisible()
     await page.goto('/tr/projeler?kategori=deck-ve-zeminler')
     await expect(page.getByRole('link', { name: new RegExp(bare.title) })).toBeVisible()
-    await page.goto('/tr/projeler?kategori=merdivenler')
+    await page.goto('/tr/projeler?kategori=boyle-bir-kategori-yok')
     await expect(page.getByRole('link', { name: new RegExp(bare.title) })).toBeVisible() // unknown/unused filter → all projects
   })
 
@@ -142,5 +142,7 @@ test.describe('Projects, project page and references', () => {
 
   test('unknown project is a 404', async ({ page }) => {
     expect((await page.goto('/tr/projeler/boyle-bir-proje-yok'))?.status()).toBe(404)
+    // Next may reject a malformed escape itself (400); it must never reach a 500.
+    expect([400, 404]).toContain((await page.goto('/tr/projeler/%E0%A4%A'))?.status())
   })
 })

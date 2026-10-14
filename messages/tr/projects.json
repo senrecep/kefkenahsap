@@ -6,7 +6,8 @@
     "all": "Tümü",
     "empty": "Bu bölüme henüz proje eklenmedi. Yaptığımız işleri şimdilik galeride görebilirsiniz.",
     "emptyFiltered": "Bu kategoride henüz proje yok.",
-    "toGallery": "Galeriye git"
+    "toGallery": "Galeriye git",
+    "list": "Proje listesi"
   },
   "Project": {
     "facts": "Proje künyesi",
@@ -15,7 +16,7 @@
     "area": "Alan",
     "duration": "Süre",
     "wood": "Ahşap türü",
-    "finish": "Finish / renk",
+    "finish": "Yüzey / renk",
     "categories": "Kategori",
     "units": { "m2": "m²", "m": "metre", "piece": "adet" },
     "gallery": "Fotoğraflar",

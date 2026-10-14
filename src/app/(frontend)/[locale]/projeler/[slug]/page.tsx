@@ -13,6 +13,7 @@ import { getPathname, Link } from '@/i18n/navigation'
 import { routing, type Locale } from '@/i18n/routing'
 import { getProject, getProjectCards } from '@/lib/data/projects'
 import { projectFacts } from '@/lib/projects/facts'
+import { safeDecode } from '@/lib/http/safe-decode'
 import { publicTestimonial } from '@/lib/projects/testimonial'
 import { buildAlternates, siteUrl } from '@/lib/seo/alternates'
 
@@ -24,7 +25,7 @@ const hasText = (n: LexicalNode | undefined): boolean => Boolean(n && (n.type ==
 
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
   const { locale, slug } = await params
-  const data = await getProject(locale, decodeURIComponent(slug))
+  const data = await getProject(locale, safeDecode(slug))
   // notFound() here sets a real 404 status before the page body streams.
   if (!data) notFound()
   const paths = Object.fromEntries(routing.locales.map((l) => [l, data.slugs[l] ? projectPath(l, data.slugs[l]) : null]))
@@ -39,7 +40,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
 export default async function ProjectPage({ params }: { params: Params }) {
   const { locale, slug: raw } = await params
   setRequestLocale(locale)
-  const slug = decodeURIComponent(raw)
+  const slug = safeDecode(raw)
   const data = await getProject(locale, slug)
   if (!data) notFound()
   const { project, gallery, cover } = data
