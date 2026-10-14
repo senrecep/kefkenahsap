@@ -2,7 +2,7 @@ import { z } from 'zod'
 
 import { TURKISH_RULES } from './turkish'
 
-export const TAG_IMAGE_PROMPT_VERSION = 'tagImage@1'
+export const TAG_IMAGE_PROMPT_VERSION = 'tagImage@2'
 
 export const TagImageSchema = z.object({
   title: z.object({ tr: z.string().min(3).max(80), en: z.string().min(3).max(80) }),

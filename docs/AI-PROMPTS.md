@@ -15,12 +15,13 @@ Kod: `src/ai/` (zincir: `models.ts`, çalıştırıcı: `run.ts`, prompt'lar: `p
 AI çıktısı yalnızca **boş** alanları doldurur ve görsel `pending` (Onay bekliyor) kalır. Yayın bir insanın "Onayla"sıyla olur. İnsanın yazdığı metin asla üzerine yazılmaz.
 
 ## Türkçe yazım kuralları (`prompts/turkish.ts`)
-- Türkçe karakterler zorunlu (ç, ğ, ı, İ, ö, ş, ü).
-- Özel isimlere gelen ekler kesme işaretiyle: İstanbul'da, Riva'daki, Kefken Ahşap'ın.
-- Çeviri kokan kalıplar yok ("…'e sahip olmak", "…sağlamaktadır" yığınları).
-- Yasak klişeler: "eşsiz", "hayallerinizdeki", "kaliteden ödün vermeden", "en iyi hizmet", "mükemmel", "benzersiz".
-- Esnaf sıcaklığında, sade, somut. Ahşap türü, yer, ölçü yalnızca görülen/verilen bilgiyle.
-- Bilinmeyen alan boş kalır; rakam, yıl, fiyat, müşteri yorumu uydurulmaz.
+Kuralların tek kaynağı **[CONTENT-STYLE-TR.md](CONTENT-STYLE-TR.md)**: ton, ekler ve kesme işareti, çeviri kokan yapılar, yasak ifadeler, doğruluk kuralları ve TR↔EN terim sözlüğü.
+`TURKISH_RULES` bu belgenin prompt'a sığan özetidir ve her prompt'a eklenir. Belgede bir kural değişince:
+1. `TURKISH_RULES` güncellenir.
+2. Onu kullanan her prompt'un sürüm sabiti artırılır (ör. `tagImage@2`), böylece `aiSuggestion.promptVersion` hangi kuralla üretildiğini gösterir.
+3. Yasak listesi değiştiyse seed içerik testindeki `BANNED` dizisi de güncellenir (`src/lib/content/content.test.ts`).
 
-## Görsel etiketleme (`prompts/tagImage.ts`, `tagImage@1`)
+Çeviri görevi (`translate`) terim sözlüğünü `aiSettings.glossary`'den alır; boşsa CONTENT-STYLE-TR §8 tablosu esas alınır.
+
+## Görsel etiketleme (`prompts/tagImage.ts`, `tagImage@2`)
 Çıktı: TR/EN başlık (≤80), alt metin (≤125, "fotoğraf" diye başlamaz), açıklama (≤240), ASCII SEO dosya adı, etiketler (ahşap/mekan/finish/aşama), `categoryAgrees`, `confidence`. Filigran yazısı hiçbir metne girmez.
