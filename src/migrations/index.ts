@@ -10,6 +10,7 @@ import * as migration_20261014_025409_media_seed_key from './20261014_025409_med
 import * as migration_20261014_033742_search from './20261014_033742_search';
 import * as migration_20261014_043715_lead_consent from './20261014_043715_lead_consent';
 import * as migration_20261014_065329_media_prefix from './20261014_065329_media_prefix';
+import * as migration_20261014_070517_guides from './20261014_070517_guides';
 
 export const migrations = [
   {
@@ -70,6 +71,11 @@ export const migrations = [
   {
     up: migration_20261014_065329_media_prefix.up,
     down: migration_20261014_065329_media_prefix.down,
-    name: '20261014_065329_media_prefix'
+    name: '20261014_065329_media_prefix',
+  },
+  {
+    up: migration_20261014_070517_guides.up,
+    down: migration_20261014_070517_guides.down,
+    name: '20261014_070517_guides',
   },
 ];

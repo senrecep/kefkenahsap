@@ -1,0 +1,18 @@
+{
+  "Guides": {
+    "title": "Guides",
+    "intro": "Short, plain guides on choosing timber, maintenance and what drives the price.",
+    "metaDescription": "Plain guides from Kefken Ahşap Dekorasyon on choosing timber, maintenance and what drives the price.",
+    "empty": "No guides are published yet. You can ask us your question on WhatsApp.",
+    "back": "All guides",
+    "updated": "Updated",
+    "toc": "In this guide",
+    "faq": "Frequently asked questions",
+    "author": "Author",
+    "authorRole": "Founder and master craftsman, {company}",
+    "related": "Related services",
+    "ctaTitle": "Let's talk about your project",
+    "ctaText": "Send us a few photos of the space and we'll choose the right timber and approach together.",
+    "table": "Table (scrolls sideways)"
+  }
+}

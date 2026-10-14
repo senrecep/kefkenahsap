@@ -1,0 +1,18 @@
+{
+  "Guides": {
+    "title": "Rehber",
+    "intro": "Ahşap seçimi, bakım ve fiyatı belirleyen etkenler hakkında kısa, sade yazılar.",
+    "metaDescription": "Ahşap seçimi, bakım ve fiyatı belirleyen etkenler üzerine Kefken Ahşap Dekorasyon'dan sade rehberler.",
+    "empty": "Henüz yayında bir rehber yok. Sorunuzu WhatsApp'tan sorabilirsiniz.",
+    "back": "Tüm rehberler",
+    "updated": "Güncellendi",
+    "toc": "Bu yazıda",
+    "faq": "Sık sorulan sorular",
+    "author": "Yazar",
+    "authorRole": "Kurucu ve usta, {company}",
+    "related": "İlgili hizmetler",
+    "ctaTitle": "Kendi işiniz için konuşalım",
+    "ctaText": "Alanın birkaç fotoğrafını gönderin; uygun ahşabı ve yapılacak işi birlikte konuşalım.",
+    "table": "Tablo (yana kaydırılabilir)"
+  }
+}

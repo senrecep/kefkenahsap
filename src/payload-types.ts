@@ -74,6 +74,7 @@ export interface Config {
     projects: Project;
     references: Reference;
     pages: Page;
+    guides: Guide;
     leads: Lead;
     'lead-photos': LeadPhoto;
     'ai-usage': AiUsage;
@@ -100,6 +101,7 @@ export interface Config {
     projects: ProjectsSelect<false> | ProjectsSelect<true>;
     references: ReferencesSelect<false> | ReferencesSelect<true>;
     pages: PagesSelect<false> | PagesSelect<true>;
+    guides: GuidesSelect<false> | GuidesSelect<true>;
     leads: LeadsSelect<false> | LeadsSelect<true>;
     'lead-photos': LeadPhotosSelect<false> | LeadPhotosSelect<true>;
     'ai-usage': AiUsageSelect<false> | AiUsageSelect<true>;
@@ -462,6 +464,53 @@ export interface Page {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "guides".
+ */
+export interface Guide {
+  id: number;
+  title: string;
+  /**
+   * Boş bırakılırsa başlıktan üretilir.
+   */
+  slug?: string | null;
+  excerpt?: string | null;
+  body?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  faq?:
+    | {
+        q: string;
+        a: string;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Açıksa yazının altında kurucunun adı (Site Bilgileri › Kurucu) yazar olarak görünür.
+   */
+  showAuthor?: boolean | null;
+  relatedCategories?: (number | Category)[] | null;
+  seo?: {
+    title?: string | null;
+    description?: string | null;
+  };
+  updatedAt: string;
+  createdAt: string;
+  _status?: ('draft' | 'published') | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "leads".
  */
 export interface Lead {
@@ -721,6 +770,10 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'pages';
         value: number | Page;
+      } | null)
+    | ({
+        relationTo: 'guides';
+        value: number | Guide;
       } | null)
     | ({
         relationTo: 'leads';
@@ -1018,6 +1071,34 @@ export interface PagesSelect<T extends boolean = true> {
   title?: T;
   slug?: T;
   body?: T;
+  seo?:
+    | T
+    | {
+        title?: T;
+        description?: T;
+      };
+  updatedAt?: T;
+  createdAt?: T;
+  _status?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "guides_select".
+ */
+export interface GuidesSelect<T extends boolean = true> {
+  title?: T;
+  slug?: T;
+  excerpt?: T;
+  body?: T;
+  faq?:
+    | T
+    | {
+        q?: T;
+        a?: T;
+        id?: T;
+      };
+  showAuthor?: T;
+  relatedCategories?: T;
   seo?:
     | T
     | {

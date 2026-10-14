@@ -1,11 +1,11 @@
-// #34: idempotent content loader — category texts + FAQ, Hakkımızda / İletişim pages, the 9 references.
+// #34: idempotent content loader — category texts + FAQ, Hakkımızda / İletişim pages, the 9 references, and (#49) the guides.
 // Source: seed/content/** (markdown bodies → Lexical). Writes land as drafts; the owner publishes after review.
 // Fills only empty fields per locale, so a re-run never overwrites what the owner edited.
-// --force: overwrites shortDesc/body/faq of every category and title/slug/body of the two pages in every locale
+// --force: overwrites shortDesc/body/faq of every category, title/slug/body of the two pages and the guide fields in every locale
 //   with the committed text (as a new draft; the published version is untouched). References are never forced:
 //   they are create-only (see ./references.ts). Pass it after `--`, or `payload run` drops it.
 // Run: bun run payload run scripts/seed/content.ts [-- --force]   (needs the categories from scripts/seed/seed.ts)
-import { readFileSync } from 'node:fs'
+import { readdirSync, readFileSync } from 'node:fs'
 import path from 'node:path'
 import { convertMarkdownToLexical, editorConfigFactory } from '@payloadcms/richtext-lexical'
 import { getPayload } from 'payload'
@@ -13,7 +13,8 @@ import type { Result } from 'tsentials/result'
 
 import config from '@/payload.config'
 import { fillEmpty } from '@/lib/content/merge'
-import { parseCategory, parsePage } from '@/lib/content/schema'
+import { guideBodyFeatures } from '@/collections/Guides'
+import { parseCategory, parseGuide, parsePage } from '@/lib/content/schema'
 import { SEED_CATEGORIES } from '@/seed/categories'
 
 import { seedReferences } from './references'
@@ -66,6 +67,35 @@ for (const file of ['hakkimizda', 'iletisim']) {
     await payload.update({ collection: 'pages', id, locale, draft: true, data: patch })
     writes++
     console.log(`page ${file} [${locale}]: ${Object.keys(patch).join(', ')}`)
+  }
+}
+
+// #49 guides: created as drafts only; the owner publishes after review. Bodies use the guides editor (tables).
+const guideEditor = await editorConfigFactory.fromFeatures({ config: payload.config, features: guideBodyFeatures })
+const guideLexical = (markdown: string) => convertMarkdownToLexical({ editorConfig: guideEditor, markdown })
+for (const file of readdirSync(path.join(DIR, 'guides')).filter((f) => f.endsWith('.json')).sort()) {
+  const content = load(`guides/${file}`, parseGuide)
+  // Match on the TR slug, else the EN slug, so renaming one slug in the admin doesn't create a duplicate draft.
+  const bySlug = async (locale: 'tr' | 'en') =>
+    (await payload.find({ collection: 'guides', locale, draft: true, where: { slug: { equals: content[locale].slug } }, limit: 1, depth: 0 })).docs[0]?.id
+  let id = (await bySlug('tr')) ?? (await bySlug('en'))
+  if (!id) {
+    const cats = await payload.find({ collection: 'categories', locale: 'tr', draft: true, where: { slug: { in: content.relatedCategories } }, limit: 20, depth: 0, select: { slug: true } })
+    const relatedCategories = content.relatedCategories.flatMap((s) => cats.docs.filter((c) => c.slug === s).map((c) => c.id))
+    const t = content.tr
+    const created = await payload.create({ collection: 'guides', locale: 'tr', draft: true, data: { title: t.title, slug: t.slug, excerpt: t.excerpt, body: guideLexical(t.body), faq: t.faq, relatedCategories, _status: 'draft' } })
+    id = created.id
+    writes++
+    console.log(`guide ${file} created (draft)`)
+  }
+  for (const locale of locales.filter((l) => l in content)) {
+    const g = content[locale]
+    const current = await payload.findByID({ collection: 'guides', id, locale, fallbackLocale: false, draft: true, depth: 0 })
+    const patch = fillEmpty(current, { title: g.title, slug: g.slug, excerpt: g.excerpt, body: guideLexical(g.body), faq: g.faq }, { force })
+    if (!Object.keys(patch).length) continue
+    await payload.update({ collection: 'guides', id, locale, draft: true, data: patch })
+    writes++
+    console.log(`guide ${file} [${locale}]: ${Object.keys(patch).join(', ')}`)
   }
 }
 

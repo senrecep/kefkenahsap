@@ -46,7 +46,7 @@ Her kategoride ortak olanlar:
   - İş türlerine örnekler: köpek kulübesi, kemerli köprü, T iskele, klima kasası, tekne konsolu.
 - **Eski siteden alınanlar:** "her türlü ahşap ve emprenyeli ahşap imalat ve montaj", "gelenekten geleceğe uzanan ahşap sevdamız", "her türlü tamirat ve bakım işleri yapılır" ve Hizmetlerimiz listesi.
 - **Eski siteden bilerek alınmayanlar** (CLAUDE.md, decisions #33/#54): "30 senelik tecrübe", "hızlı teslim", "yüksek kalite", "uzman ekipler", "ileri yapım teknikleri".
-- **Thermowood ve kompozit hiçbir metinde yok.** Ne eski sitede ne fotoğraf etiketlerinde geçiyor.
+- **Thermowood ve kompozit kategori metinlerinde yok.** Ne eski sitede ne fotoğraf etiketlerinde geçiyor. Thermowood yalnızca "Ahşap türleri" rehberinde (#49) genel bilgi olarak anlatılıyor; firmanın thermowood işi yaptığı söylenmiyor.
 
 ## Sahibinin onaylaması gereken cümleler
 
@@ -95,6 +95,22 @@ Genel bilgi ya da fotoğraf etiketlerinden çıkarım. Yanlışsa düzeltilmeli 
   - "Garaj ve Garaj Kapıları" ile "Dış Cephe Ahşap Kaplama" Pergola'ya gidiyor.
 
   Metinlerde cephe kaplaması Ahşap Yapılar'a, bahçe kapıları Kapı, Dolap ve Seperatör ile Korkuluk ve Çit'e yazıldı. Garaj kapısı hiçbir metinde yok. Garaj kapısı yapılıyor mu?
+
+## Rehberler (#49)
+
+Dört rehber (`seed/content/guides/*.json`) taslak olarak yüklenir. Sahibin onaylaması gerekenler:
+
+1. **Yazar adı:** Rehberlerin altında "Murat Şen · Kurucu ve usta" yazsın mı? Her rehberde "Yazar kutusunu göster" kutusu varsayılan olarak kapalıdır; onay gelince açılır.
+2. **Yayın sırası:** "İroko mu teak mi?" ve "Pergola fiyatını ne belirler?" rehberleri "Ahşap türleri" rehberine bağlantı veriyor. Yayınlanmamış rehbere giden bağlantı sitede düz metin olarak görünür; dördünü birlikte yayınlamak en temizi.
+3. **Ahşap türleri tablosu:** tür listesi (sedir, sarıçam, ladin, iroko, teak, meşe, meranti, sapelli) ve yoğunluklar eski sitedeki tablodan alındı, "kaynaklardaki yaklaşık değer" diye sunuluyor. "Dış mekânda" sütunu (Evet / Emprenye ile / Kısmen) genel bilgidir. Hiç çalışmadığınız türler tablodan çıkarılsın mı?
+4. **Thermowood satırı** eski tabloda yoktu; genel bilgi olarak eklendi ("toprakla temas etmeyen yerlerde", "daha kırılgandır").
+5. **Yağlama aralığı:** "Yağlama aralığını kullanılan ürün ve yüzeyin aldığı güneş belirler; çoğu üretici güneş alan zeminlerde yılda bir ya da iki kat önerir." Uygulamanızla uyumlu mu?
+6. **Deck bakımı:** "deckte vernik gibi film oluşturan katlar genellikle önerilmez", "iroko ve teak deckler genellikle boyanmaz, yağlanır", "yüksek basınçlı yıkama makinesini yakından tutmayın". Doğru mu?
+7. **Deck tahtası bağlantısı:** "vidayla ya da gizli klipsle tutturulur" yazıyor. Siz hangisini kullanıyorsunuz?
+8. **Başka firmaların işleri:** "Kendi yaptığımız ya da başka firmaların döşediği decklerin bakımını ve onarımını yapıyoruz." (Deck kategorisindeki cümleyle aynı.) Doğru mu?
+9. **Pergola rehberi:** fiyat yok, yalnızca etkenler var. Tente, şeffaf örtü ve oluk hizmet olarak değil, "ahşap dışı parçalar ayrı malzeme ve uygulama gerektirir" diye anlatılıyor. Bunları siz de yapıyor musunuz, yoksa başka bir ustaya mı yönlendiriyorsunuz?
+10. **Pergola SSS:** "Pergolaya sonradan çatı çoğu zaman eklenebilir, ama kirişlerin ek yükü taşıyıp taşımayacağına bakmak gerekir." Doğru mu?
+11. **EN metinler** ilk çeviridir; bir İngilizce okurun gözden geçirmesi iyi olur.
 
 ## Notlar
 

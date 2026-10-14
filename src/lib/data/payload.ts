@@ -11,6 +11,7 @@ export const TAGS = {
   media: 'media',
   projects: 'projects',
   pages: 'pages',
+  guides: 'guides',
   references: 'references',
   tags: 'tags',
   homepage: 'homepage',
