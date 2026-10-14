@@ -93,6 +93,20 @@ describe('guides (#49)', () => {
 
   it('has the 3–4 launch guides', () => expect(files.length).toBeGreaterThanOrEqual(3))
 
+  // #58 F2 guides: a fuller brief than the launch guides — TR body 550–800 words, 4–6 FAQ items per locale.
+  it.each(['emprenyeli-ahsap-nedir', 'havuz-kenari-deck', 'korkuluk-ahsap-mi-metal-mi', 'pergola-mi-kamelya-mi', 'thermowood-nedir'])('%s meets the #58 brief', (name) => {
+    const g = guides.find((x) => x.file === `${name}.json`)?.g
+    expect(g?.ok, name).toBe(true)
+    if (!g?.ok) return
+    const n = wordCount(g.value.tr.body)
+    expect(n).toBeGreaterThanOrEqual(550)
+    expect(n).toBeLessThanOrEqual(800)
+    for (const l of ['tr', 'en'] as const) {
+      expect(g.value[l].faq.length).toBeGreaterThanOrEqual(4)
+      expect(g.value[l].faq.length).toBeLessThanOrEqual(6)
+    }
+  })
+
   describe.each(files)('%s', (file) => {
     const g = guides.find((x) => x.file === file)!.g
     it('parses, and related categories exist', () => {
