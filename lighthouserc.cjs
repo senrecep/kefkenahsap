@@ -12,7 +12,9 @@ module.exports = {
       url: paths.map((p) => base + p),
       numberOfRuns: 3,
       settings: {
-        chromeFlags: '--no-sandbox --headless=new',
+        // The self-hosted runner crashed the tab (TARGET_CRASHED) during the full-page screenshot: small /dev/shm.
+        chromeFlags: '--no-sandbox --headless=new --disable-dev-shm-usage --disable-gpu',
+        disableFullPageScreenshot: true,
         // Non-production builds send `X-Robots-Tag: noindex` on purpose (next.config.ts, fixed at build time).
         // Skipped audits leave the SEO score, so every other SEO audit still counts.
         skipAudits: ['is-crawlable'],
