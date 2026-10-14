@@ -1,35 +1,21 @@
-// #40: the 9 references from the old site (docs/legacy/crawl-md/www.kefkenahsap.com_referanslar_.md), names and locations as listed, no logos.
+// The 9 references from the old site (#34, #40). Single source: seed/content/references.json (names as in PRODUCT.md).
+// Create-only: runs only while the collection is empty, so an admin rename or delete is never undone by a re-run.
+import { readFileSync } from 'node:fs'
+import path from 'node:path'
 import type { Payload } from 'payload'
 
-import { routing } from '@/i18n/routing'
+import { parseReferences } from '@/lib/content/schema'
 
-const REFERENCES: [name: string, location: string][] = [
-  ['Cennetköy Sitesi', 'Yalıkavak / Bodrum'],
-  ['Riva Konakları Sitesi', 'Riva / İstanbul'],
-  ['Kemer Golf & Contry Clup', 'Göktürk / istanbul'],
-  ['Neo Gölpark Evleri', 'Bolluca / İstanbul'],
-  ['İ.B.B Sosyal Tesisler', 'İ.B.B / İstanbul'],
-  ['Mesa Mesken', 'Bahçeşehir / İstanbul'],
-  ['Nurol A.S', 'Bahçeşehir / İstanbul'],
-  ['Yaşar Holding', 'Tripoli / Libya'],
-  ['İ.G.K', 'Levent / İstanbul'],
-]
-
-/** Idempotent by name: existing references keep the owner's edits; only a missing location in a locale is filled. */
 export async function seedReferences(payload: Payload): Promise<string> {
-  let created = 0
-  let filled = 0
-  for (const [name, location] of REFERENCES) {
-    const found = await payload.find({ collection: 'references', where: { name: { equals: name } }, limit: 1, depth: 0 })
-    const id = found.docs[0]?.id ?? (await payload.create({ collection: 'references', locale: routing.defaultLocale, data: { name, location } })).id
-    if (!found.docs.length) created++
-    // Place names read the same in every locale.
-    for (const locale of routing.locales) {
-      const doc = await payload.findByID({ collection: 'references', id, locale, depth: 0 })
-      if (doc.location) continue
-      await payload.update({ collection: 'references', id, locale, data: { location } })
-      if (found.docs.length) filled++
-    }
+  const { totalDocs } = await payload.count({ collection: 'references' })
+  if (totalDocs > 0) return `references: ${totalDocs} already present, left as is`
+  const parsed = parseReferences(readFileSync(path.resolve(process.cwd(), 'seed/content/references.json'), 'utf8'))
+  if (!parsed.ok) throw new Error(`references.json: ${parsed.errors.map((e) => e.description).join('; ')}`)
+  const locales = payload.config.localization ? payload.config.localization.localeCodes : []
+  for (const ref of parsed.value) {
+    const [first, ...rest] = locales.filter((l): l is keyof typeof ref.location => l in ref.location)
+    const doc = await payload.create({ collection: 'references', locale: first, data: { name: ref.name, location: ref.location[first] } })
+    for (const locale of rest) await payload.update({ collection: 'references', id: doc.id, locale, data: { location: ref.location[locale] } })
   }
-  return `references: ${created} created, ${REFERENCES.length - created} already present, ${filled} missing locations filled`
+  return `references: ${parsed.value.length} created`
 }
