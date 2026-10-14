@@ -95,6 +95,7 @@ Genel bilgi ya da fotoğraf etiketlerinden çıkarım. Yanlışsa düzeltilmeli 
   - "Garaj ve Garaj Kapıları" ile "Dış Cephe Ahşap Kaplama" Pergola'ya gidiyor.
 
   Metinlerde cephe kaplaması Ahşap Yapılar'a, bahçe kapıları Kapı, Dolap ve Seperatör ile Korkuluk ve Çit'e yazıldı. Garaj kapısı hiçbir metinde yok. Garaj kapısı yapılıyor mu?
+- **Teak ve thermowood için yakın çekim fotoğraf (#60):** rehberdeki "Ahşap numuneleri" bloğu şimdilik yalnızca iroko ve emprenyeli çamı gösteriyor, çünkü arşivde teak ya da thermowood fotoğrafı yok ve ahşap çizilmiyor (DESIGN.md). Her biri için filigransız, düz bir yüzeye yakından çekilmiş bir fotoğraf gönderilirse doku `scripts/wood-textures.ts` ile kırpılır, `src/lib/wood/samples.ts` içinde yolu girilir ve numune sayfada görünür; başka değişiklik gerekmez.
 
 ## Rehberler (#49)
 

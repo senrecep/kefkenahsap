@@ -1,11 +1,28 @@
-/** The four species of the 3D samples (PLAN §6 F2). Teak and thermowood have no library photo, so their texture is procedural. */
-export const WOOD_SAMPLES = [
-  { key: 'iroko', texture: '/wood/iroko.webp', procedural: false },
-  { key: 'teak', texture: '/wood/teak.webp', procedural: true },
-  { key: 'cam', texture: '/wood/cam.webp', procedural: false },
-  { key: 'thermowood', texture: '/wood/thermowood.webp', procedural: true },
-] as const
+/**
+ * The four species of the 3D samples (PLAN §6 F2). DESIGN.md: wood is never drawn, so a species shows only once it has a
+ * crop from a real job photo (scripts/wood-textures.ts). Teak and thermowood wait for owner photos (docs/content/CHECKLIST.md).
+ */
+export const WOOD_SAMPLES: readonly {
+  key: 'iroko' | 'teak' | 'cam' | 'thermowood'
+  texture: string | null
+}[] = [
+  { key: 'iroko', texture: '/wood/iroko.webp' },
+  { key: 'teak', texture: null },
+  { key: 'cam', texture: '/wood/cam.webp' },
+  { key: 'thermowood', texture: null },
+]
 export type WoodKey = (typeof WOOD_SAMPLES)[number]['key']
+
+/** Species that have a real-photo texture, in display order. */
+export const shownSamples = () =>
+  WOOD_SAMPLES.filter((s): s is { key: WoodKey; texture: string } => s.texture !== null)
+
+type LexNode = { type?: string; fields?: { blockType?: string }; children?: LexNode[] }
+const hasBlock = (n: LexNode): boolean =>
+  (n.type === 'block' && n.fields?.blockType === 'woodSamples') || (n.children ?? []).some(hasBlock)
+/** Whether a Lexical body holds the woodSamples block: the page loads the samples component only then. */
+export const hasWoodSamples = (body: { root?: LexNode } | null | undefined) =>
+  Boolean(body?.root && hasBlock(body.root))
 
 /** PLAN §9: the WebGL view loads only with WebGL, no reduced-motion, no Save-Data and not on a low-memory device. */
 export const can3d = (env: {

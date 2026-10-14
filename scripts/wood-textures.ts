@@ -1,6 +1,6 @@
 // #60: textures for the 3D wood samples → public/wood/*.webp (committed; rerun only to change them).
 // Iroko and pine are crops of real library photos (clear of the watermark, rotated so the boards run along the plank).
-// The library has no teak or thermowood photo, so those two are procedural wood, labelled as such on the page.
+// No drawn wood (DESIGN.md): teak and thermowood get a texture only once a real close-up photo exists; add a crop here.
 // Run: bun scripts/wood-textures.ts   (MEDIA_BASE defaults to the local S3 bucket)
 import { mkdir } from 'node:fs/promises'
 
@@ -54,48 +54,7 @@ async function crop(c: Crop) {
     .resize(W, H)
 }
 
-// Value noise (deterministic hash) for the procedural grain.
-const hash = (x: number, y: number) => {
-  const s = Math.sin(x * 127.1 + y * 311.7) * 43758.5453
-  return s - Math.floor(s)
-}
-const noise = (x: number, y: number) => {
-  const xi = Math.floor(x)
-  const yi = Math.floor(y)
-  const xf = x - xi
-  const yf = y - yi
-  const u = xf * xf * (3 - 2 * xf)
-  const v = yf * yf * (3 - 2 * yf)
-  const a = hash(xi, yi) + (hash(xi + 1, yi) - hash(xi, yi)) * u
-  const b = hash(xi, yi + 1) + (hash(xi + 1, yi + 1) - hash(xi, yi + 1)) * u
-  return a + (b - a) * v
-}
-
-/** Flat-sawn grain running along x: wavy growth rings between a light and a dark tone. */
-function procedural(
-  light: [number, number, number],
-  dark: [number, number, number],
-  rings: number,
-) {
-  const px = Buffer.alloc(W * H * 3)
-  for (let y = 0; y < H; y++)
-    for (let x = 0; x < W; x++) {
-      const warp = noise(x / 160, y / 40) * 1.1 + noise(x / 30, y / 8) * 0.12
-      const t = (y / H) * rings + warp
-      const ring = Math.pow(Math.abs(Math.sin(t * Math.PI)), 12)
-      const fleck = noise(x / 4, y / 1.2) * 0.18
-      const k = Math.min(1, ring * 0.55 + fleck)
-      for (let c = 0; c < 3; c++)
-        px[(y * W + x) * 3 + c] = Math.round(light[c]! + (dark[c]! - light[c]!) * k)
-    }
-  return sharp(px, { raw: { width: W, height: H, channels: 3 } })
-}
-
 await mkdir(out, { recursive: true })
 await (await crop(crops.iroko!)).webp({ quality: 80 }).toFile(`${out}/iroko.webp`)
 await (await crop(crops.cam!)).webp({ quality: 80 }).toFile(`${out}/cam.webp`)
-await procedural([176, 128, 72], [112, 76, 40], 16).webp({ quality: 80 }).toFile(`${out}/teak.webp`)
-await procedural([122, 84, 58], [72, 46, 30], 18)
-  .webp({ quality: 80 })
-  .toFile(`${out}/thermowood.webp`)
 console.log('wrote', out)

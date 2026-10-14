@@ -18,7 +18,7 @@
   "WoodSamples": {
     "title": "Wood samples",
     "hint": "Drag or use the arrow keys to turn them",
-    "note": "The iroko and pine textures come from photos of our jobs; the teak and thermowood textures are drawn.",
+    "note": "The textures come from photos of our jobs.",
     "names": {
       "iroko": "Iroko",
       "teak": "Teak",

@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 
-import { can3d, keyRotation, rotate, WOOD_SAMPLES, type WoodKey } from '@/lib/wood/samples'
+import { can3d, keyRotation, rotate, shownSamples, type WoodKey } from '@/lib/wood/samples'
 
 import type { WoodScene } from './wood-scene'
 
@@ -58,7 +58,7 @@ export function WoodSamplesView({ labels }: { labels: Labels }) {
         {labels.title}
       </figcaption>
       <ul className="mt-4! grid list-none! grid-cols-2 gap-x-4 gap-y-6 ps-0!">
-        {WOOD_SAMPLES.map((s) => (
+        {shownSamples().map((s) => (
           <Sample
             key={s.key}
             src={s.texture}

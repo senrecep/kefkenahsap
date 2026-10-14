@@ -1,15 +1,46 @@
 import { describe, expect, it } from 'vitest'
 
-import { can3d, keyRotation, MAX_TILT, rotate, WOOD_SAMPLES } from './samples'
+import {
+  can3d,
+  hasWoodSamples,
+  keyRotation,
+  MAX_TILT,
+  rotate,
+  shownSamples,
+  WOOD_SAMPLES,
+} from './samples'
 
 describe('WOOD_SAMPLES', () => {
-  it('has the four species of PLAN §6 F2, each with a texture; only the photo-less ones are procedural', () => {
+  it('lists the four species of PLAN §6 F2; only real-photo textures are shown (no drawn wood, DESIGN.md)', () => {
     expect(WOOD_SAMPLES.map((s) => s.key)).toEqual(['iroko', 'teak', 'cam', 'thermowood'])
-    expect(WOOD_SAMPLES.filter((s) => s.procedural).map((s) => s.key)).toEqual([
-      'teak',
-      'thermowood',
+    expect(shownSamples().map((s) => [s.key, s.texture])).toEqual([
+      ['iroko', '/wood/iroko.webp'],
+      ['cam', '/wood/cam.webp'],
     ])
-    for (const s of WOOD_SAMPLES) expect(s.texture).toBe(`/wood/${s.key}.webp`)
+  })
+})
+
+describe('hasWoodSamples', () => {
+  const block = (blockType: string) => ({ type: 'block', fields: { blockType } })
+  const doc = (...children: object[]) => ({ root: { type: 'root', children } })
+  it('is true only when the body holds a woodSamples block, at any depth', () => {
+    expect(hasWoodSamples(doc({ type: 'paragraph', children: [] }, block('woodSamples')))).toBe(
+      true,
+    )
+    expect(
+      hasWoodSamples(
+        doc({ type: 'list', children: [{ type: 'listitem', children: [block('woodSamples')] }] }),
+      ),
+    ).toBe(true)
+    expect(
+      hasWoodSamples(
+        doc(block('other'), {
+          type: 'paragraph',
+          children: [{ type: 'text', text: 'woodSamples' }],
+        }),
+      ),
+    ).toBe(false)
+    expect(hasWoodSamples(null)).toBe(false)
   })
 })
 

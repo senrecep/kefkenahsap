@@ -4,7 +4,7 @@ import { getFormatter, getTranslations, setRequestLocale } from 'next-intl/serve
 import { notFound } from 'next/navigation'
 
 import { GuideBody } from '@/components/guides/GuideBody'
-import { WoodSamplesView } from '@/components/guides/WoodSamplesView'
+import WoodSamples from '@/components/guides/WoodSamples'
 import { JsonLd } from '@/components/seo/JsonLd'
 import { buttonClass } from '@/components/ui/button'
 import { Container } from '@/components/ui/Container'
@@ -16,7 +16,7 @@ import { getSiteSettings } from '@/lib/data/site'
 import { metaDescription } from '@/lib/guides/meta'
 import { tableOfContents } from '@/lib/guides/toc'
 import { siteUrl } from '@/lib/seo/alternates'
-import { WOOD_SAMPLES, type WoodKey } from '@/lib/wood/samples'
+import { hasWoodSamples } from '@/lib/wood/samples'
 import { articleJsonLd, breadcrumbJsonLd, faqJsonLd } from '@/lib/seo/jsonld'
 import { pageMetadata } from '@/lib/seo/page-metadata'
 
@@ -42,10 +42,9 @@ export default async function GuidePage({ params }: Props) {
   const found = await getGuide(locale, slug)
   if (!found) notFound()
   const { guide, categories } = found
-  const [t, tCta, tWood, format, settings, published] = await Promise.all([
+  const [t, tCta, format, settings, published] = await Promise.all([
     getTranslations('Guides'),
     getTranslations('Cta'),
-    getTranslations('WoodSamples'),
     getFormatter(),
     getSiteSettings(locale),
     getGuides(locale),
@@ -138,18 +137,7 @@ export default async function GuidePage({ params }: Props) {
                 idOf={toc.idOf}
                 tableLabel={t('table')}
                 publishedHrefs={new Set(published.map((g) => g.href))}
-                woodSamples={
-                  <WoodSamplesView
-                    labels={{
-                      title: tWood('title'),
-                      hint: tWood('hint'),
-                      note: tWood('note'),
-                      names: Object.fromEntries(
-                        WOOD_SAMPLES.map((s) => [s.key, tWood(`names.${s.key}`)]),
-                      ) as Record<WoodKey, string>,
-                    }}
-                  />
-                }
+                woodSamples={hasWoodSamples(body) && <WoodSamples />}
               />
             )}
 

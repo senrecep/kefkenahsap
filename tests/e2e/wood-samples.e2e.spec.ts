@@ -44,11 +44,13 @@ const body = {
 }
 // The scene chunk is recognised by its content (chunk names are hashed in production builds).
 const isScene = (js: string) => js.includes('WEBGL_lose_context')
+const isIsland = (js: string) => js.includes('wood-samples-title')
 
 test.describe('wood samples block', () => {
   let api: APIRequestContext
   const stamp = Date.now()
   const slug = `e2e-ahsap-numune-${stamp}`
+  const plain = `e2e-ahsap-numunesiz-${stamp}`
   const ids: number[] = []
 
   test.beforeAll(async () => {
@@ -60,6 +62,19 @@ test.describe('wood samples block', () => {
           title: `E2E Ahşap numuneleri ${stamp}`,
           slug,
           body,
+        })
+      ).id,
+    )
+  })
+  test.beforeAll(async () => {
+    const noBlock = { root: { ...body.root, children: filler } }
+    ids.push(
+      (
+        await createDoc(api, 'guides', {
+          _status: 'published',
+          title: `E2E Numunesiz ${stamp}`,
+          slug: plain,
+          body: noBlock,
         })
       ).id,
     )
@@ -78,8 +93,10 @@ test.describe('wood samples block', () => {
       .toBe(200)
     const figure = page.locator('figure', { hasText: 'Ahşap numuneleri' })
     // Static first: four labelled photos, server-rendered.
-    await expect(figure.locator('img[src^="/wood/"]')).toHaveCount(4)
-    for (const name of ['İroko', 'Teak', 'Emprenyeli çam', 'Thermowood'])
+    await expect(figure.locator('img[src^="/wood/"]')).toHaveCount(2)
+    // Only species with a real-photo texture (no drawn wood, DESIGN.md).
+    await expect(figure.getByText('Teak', { exact: true })).toHaveCount(0)
+    for (const name of ['İroko', 'Emprenyeli çam'])
       await expect(figure.getByText(name, { exact: true })).toBeVisible()
     return { figure, scripts }
   }
@@ -93,7 +110,7 @@ test.describe('wood samples block', () => {
     const plank = figure.getByRole('img', { name: /^İroko\. Sürükleyerek/ })
     await expect(plank).toBeVisible({ timeout: 15_000 })
     await expect.poll(() => scripts.some(isScene)).toBe(true)
-    await expect(figure.locator('canvas')).toHaveCount(4)
+    await expect(figure.locator('canvas')).toHaveCount(2)
 
     const before = await plank.screenshot()
     await plank.focus()
@@ -110,6 +127,22 @@ test.describe('wood samples block', () => {
     await page.waitForTimeout(1500)
     await expect(figure.locator('canvas')).toHaveCount(0)
     await expect(figure.locator('[tabindex="0"]')).toHaveCount(0)
+    expect(scripts.some(isScene)).toBe(false)
+  })
+
+  test('a guide without the block loads none of the samples code', async ({ page }) => {
+    const scripts: string[] = []
+    page.on('response', async (r) => {
+      if (r.request().resourceType() === 'script') scripts.push(await r.text().catch(() => ''))
+    })
+    await expect
+      .poll(async () => (await page.goto(`/tr/rehber/${plain}`))?.status(), { timeout: 20_000 })
+      .toBe(200)
+    await page.waitForLoadState('networkidle')
+    await page.mouse.wheel(0, 20_000)
+    await page.waitForTimeout(1000)
+    expect(scripts.length).toBeGreaterThan(0)
+    expect(scripts.some(isIsland)).toBe(false)
     expect(scripts.some(isScene)).toBe(false)
   })
 })
