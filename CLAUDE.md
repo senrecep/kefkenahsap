@@ -49,7 +49,7 @@ Use the `oh-my-claudecode:tdd` workflow. One test, one implementation, small ste
 
 ## Error handling: tsentials
 
-Use [`tsentials`](https://github.com/senrecep/tsentials) (latest at plan time: v0.1.12). Install its skills once at the start of F0: `npx skills add senrecep/tsentials`. Use them for the correct API and import paths.
+Use [`tsentials`](https://github.com/senrecep/tsentials) (pinned: v1.0.0, see #134; 0.1.x → 1.0 behaviour changes: its `docs/BEHAVIOUR-CHANGES.md`). Install its skills once at the start of F0: `npx skills add senrecep/tsentials`. Use them for the correct API and import paths.
 
 - **Return `Result<T>` from domain and service functions.** Don't throw inside the domain. Every seam above returns `Result<T>` / `ResultAsync<T>`.
 - Create errors with `Err.*`. Codes are `Area.Reason`, e.g. `Lead.PhoneRequired`, `Legacy.UnknownMedia`, `AI.BudgetExceeded`, `Translate.SchemaMismatch`.

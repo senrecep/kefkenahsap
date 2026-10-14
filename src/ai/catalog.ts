@@ -50,6 +50,6 @@ export const modelCatalog = createModelCatalog({
   fetchList: () =>
     isFakeAi()
       ? Promise.resolve(Result.success(FAKE_LIST))
-      : fetchResult.get<unknown>('https://openrouter.ai/api/v1/models', { signal: AbortSignal.timeout(5000) }),
+      : fetchResult.get<unknown>('https://openrouter.ai/api/v1/models', { timeout: 5000 }),
   clock: SystemDateTimeProvider,
 })

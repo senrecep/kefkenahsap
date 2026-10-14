@@ -11,7 +11,7 @@ Epic #1 · Issue'lar #10–#16 · Plan: `docs/PLAN.md` §12 F0
 | next-intl | 4.14.9 | |
 | ai (Vercel AI SDK) | 7.0.139 | **v7: `generateObject` yok** → `generateText({ output: Output.object({ schema }) })` |
 | @openrouter/ai-sdk-provider | 3.1.0 | `usage: { include: true }` ile maliyet yanıtta geliyor |
-| tsentials | 0.1.12 | |
+| tsentials | 1.0.0 | spike: 0.1.12; 1.0 yükseltmesi #134 |
 | zod | 4.6.7 | |
 | bun | 1.3.14 | kurulum; çalışma zamanı Node 24 (alpine) |
 | Postgres | 17-alpine | |
