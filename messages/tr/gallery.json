@@ -1,0 +1,28 @@
+{
+  "Gallery": {
+    "title": "Galeri",
+    "intro": "Tamamladığımız işlerden gerçek fotoğraflar. Bir fotoğrafa dokunup büyütün; benzer bir iş için WhatsApp'tan yazın.",
+    "metaDescription": "Ahşap deck, pergola, korkuluk, iskele ve diğer ahşap işlerimizden gerçek fotoğraflar. Kategoriye göre filtreleyin.",
+    "filters": "Galeri filtreleri",
+    "categories": "Kategoriler",
+    "tags": "Etiketler",
+    "all": "Tümü",
+    "more": "Daha fazla göster",
+    "loading": "Yükleniyor…",
+    "retry": "Tekrar dene",
+    "loadFailed": "Fotoğraflar yüklenemedi. Bağlantınızı kontrol edip tekrar deneyin.",
+    "empty": "Bu filtreye uyan fotoğraf yok.",
+    "clear": "Tüm fotoğrafları göster",
+    "lightbox": "Fotoğraf görüntüleyici",
+    "counter": "{current} / {total}",
+    "close": "Kapat",
+    "prev": "Önceki fotoğraf",
+    "next": "Sonraki fotoğraf",
+    "openPage": "Fotoğrafın sayfası",
+    "back": "Galeriye dön",
+    "category": "Kategori",
+    "project": "Proje",
+    "askAbout": "Bu iş için WhatsApp'tan yazın",
+    "related": "Aynı kategoriden"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Gallery": {
+    "title": "Gallery",
+    "intro": "Real photos of work we have finished. Tap a photo to enlarge it, and message us on WhatsApp about a similar job.",
+    "metaDescription": "Real photos of our timber decks, pergolas, railings, piers and other woodwork. Filter by category.",
+    "filters": "Gallery filters",
+    "categories": "Categories",
+    "tags": "Tags",
+    "all": "All",
+    "more": "Show more",
+    "loading": "Loading…",
+    "retry": "Try again",
+    "loadFailed": "Photos could not be loaded. Check your connection and try again.",
+    "empty": "No photos match this filter.",
+    "clear": "Show all photos",
+    "lightbox": "Photo viewer",
+    "counter": "{current} / {total}",
+    "close": "Close",
+    "prev": "Previous photo",
+    "next": "Next photo",
+    "openPage": "Photo page",
+    "back": "Back to gallery",
+    "category": "Category",
+    "project": "Project",
+    "askAbout": "Ask about this job on WhatsApp",
+    "related": "From the same category"
+  }
+}
