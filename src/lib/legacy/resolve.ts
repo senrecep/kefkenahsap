@@ -59,9 +59,10 @@ export function resolveLegacy(pathname: string, search: string, maps: LegacyMaps
     const s = new URLSearchParams(search).get('s')
     return s ? redirect(`/tr/ara?q=${encodeURIComponent(s)}`) : { kind: 'pass' }
   }
-  if (path === '/feed' || path === '/feed/') return redirect('/tr')
+  if (/^\/feed\/?$/i.test(path)) return redirect('/tr')
 
-  const trimmed = path.replace(/^\/+|\/+$/g, '')
+  // WordPress matched slugs case-insensitively (/Deck-ve-Zeminler/ worked), so we do too.
+  const trimmed = path.replace(/^\/+|\/+$/g, '').toLowerCase()
   if (PAGES[trimmed]) return redirect(PAGES[trimmed] + search)
   const withSlash = `/${trimmed}/`
   const hit = maps.attachments[withSlash]

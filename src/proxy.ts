@@ -35,7 +35,12 @@ export default function proxy(req: NextRequest) {
 
   // Old WordPress URLs (incl. dotted ones like /wp-login.php): one hop to the new page/CDN file, or 410 (PLAN §5.2).
   const legacy = resolveLegacy(pathname, req.nextUrl.search, legacyMaps, mediaBase)
-  if (legacy.kind === 'redirect') return NextResponse.redirect(new URL(legacy.location, req.url), legacy.status)
+  if (legacy.kind === 'redirect') {
+    const res = NextResponse.redirect(new URL(legacy.location, req.url), legacy.status)
+    // Browsers keep a bare 301 forever; a day lets a corrected map take effect.
+    res.headers.set('Cache-Control', 'public, max-age=86400')
+    return res
+  }
   if (legacy.kind === 'gone') return new NextResponse(null, { status: 410 })
 
   // Other files (robots.txt, sitemap.xml, icons): no locale handling.

@@ -17,9 +17,9 @@ test('WP size variant of a known image → CDN original in one 301', async ({ re
 })
 
 test('old attachment page → its image page in one 301', async ({ request }) => {
-  const r = await hop(request, '/1-4/')
+  const r = await hop(request, '/deck-ve-zeminler/1-6/')
   expect(r.status()).toBe(301)
-  expect(new URL(r.headers().location, 'http://x').pathname).toBe('/tr/galeri/bahce-yukseltilmis-ahsap-deck')
+  expect(new URL(r.headers().location, 'http://x').pathname).toBe('/tr/galeri/bahce-ahsap-deck-platformu')
 })
 
 test('WP internals → 410', async ({ request }) => {

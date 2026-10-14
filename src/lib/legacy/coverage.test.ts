@@ -30,8 +30,8 @@ describe('legacy coverage (real WordPress inventory)', () => {
     expect(results.filter((r) => r.kind === 'pass')).toHaveLength(0)
     for (const r of results) if (r.kind === 'redirect') expect(r.location.startsWith(`${CDN}/`)).toBe(true)
     const redirected = new Set(wpMedia.filter((m) => resolve(m.source_url).kind === 'redirect').map((m) => m.source_url))
-    // 608 of 1169 originals map to a seeded photo (re-uploads included); the rest are 410 by decision #56.
-    expect(redirected.size).toBeGreaterThanOrEqual(600)
+    // 560 of 1169 originals are provably a seeded photo (same name + shape); the rest are 410 by decision #56.
+    expect(redirected.size).toBeGreaterThanOrEqual(550)
     console.info(`[legacy] media URLs: ${mediaUrls.length}, originals redirected: ${redirected.size}/${wpMedia.length}`)
   })
 

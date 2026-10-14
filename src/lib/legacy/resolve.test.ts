@@ -35,6 +35,13 @@ describe('resolveLegacy — pages', () => {
     expect(r('/hakkimizda/')).toEqual({ kind: 'redirect', status: 301, location: '/tr/hakkimizda' })
     expect(r('/kefken-ahsap-dekorasyon/')).toEqual({ kind: 'redirect', status: 301, location: '/tr' })
   })
+  it('matches old page slugs case-insensitively, like WordPress did', () => {
+    expect(r('/Deck-ve-Zeminler/')).toEqual({ kind: 'redirect', status: 301, location: '/tr/deck-ve-zeminler' })
+    expect(r('/FEED/')).toEqual({ kind: 'redirect', status: 301, location: '/tr' })
+  })
+  it('survives a malformed percent-escape', () => {
+    expect(r('/wp-content/uploads/2018/09/%E0%A4%A.jpg')).toEqual({ kind: 'gone' })
+  })
   it('keeps the query string on page redirects', () => {
     expect(r('/iletisim/', '?utm_source=gbp')).toEqual({ kind: 'redirect', status: 301, location: '/tr/iletisim?utm_source=gbp' })
   })
