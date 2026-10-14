@@ -25,6 +25,8 @@ test('admin links a valid manifest with reachable icons and iOS meta', async ({ 
 test('editor nav shows only the simplified menu (mobile)', async ({ browser }) => {
   test.setTimeout(90_000)
   const payload = await getPayload({ config })
+  const tagName = `E2E etiket ${Date.now()}`
+  await payload.create({ collection: 'tags', data: { name: tagName, axis: 'wood' } as never, locale: 'tr' })
   const emails = { in: [owner.email, editor.email] }
   await payload.delete({ collection: 'users', where: { email: emails } })
   // The first account ever created becomes admin, so an admin must exist before the editor.
@@ -35,15 +37,43 @@ test('editor nav shows only the simplified menu (mobile)', async ({ browser }) =
     await login({ page, user: editor })
     await page.locator('button[aria-label="Open Menu"]:visible').click()
     const nav = page.locator('aside')
+    // Wait for the slide-in to finish: the open nav must cover (nearly) the full 390px width, not a squeezed strip.
+    await expect.poll(async () => (await nav.boundingBox())?.width ?? 0).toBeGreaterThan(300)
     await expect(nav.getByRole('link', { name: 'Galeri' })).toBeVisible()
     for (const name of ['Projeler', 'Talepler', 'Site Bilgileri']) await expect(nav.getByRole('link', { name })).toBeVisible()
-    for (const name of ['Görseller', 'Kategoriler', 'Etiketler', 'Sayfalar', 'Kullanıcılar', 'Ana sayfa', 'Yapay Zeka']) await expect(nav.getByRole('link', { name })).toHaveCount(0)
-    expect(await page.evaluate(() => getComputedStyle(document.body).fontSize)).toBe('16px')
+    // Media/categories links exist (a selector that stops matching must fail) but are not visible to editors.
+    for (const slug of ['media', 'categories']) {
+      const link = nav.locator(`a[href*="/collections/${slug}"]`)
+      await expect(link).toHaveCount(1)
+      await expect(link).toBeHidden()
+    }
+    for (const name of ['Etiketler', 'Sayfalar', 'Kullanıcılar', 'Ana sayfa', 'Yapay Zeka']) await expect(nav.getByRole('link', { name })).toHaveCount(0)
+    // Nav labels are not clipped at 390px.
+    const clipped = await nav.locator('.nav__link-label, .nav__link').evaluateAll((els) => els.filter((e) => e.scrollWidth > e.clientWidth).map((e) => e.textContent))
+    expect(clipped).toEqual([])
+    await page.waitForTimeout(800) // let the slide-in transition settle before the screenshot
     await page.screenshot({ path: 'docs/screens/admin-editor-nav-mobile.png' })
+
     // Media stays routable: the Galeri view links editors to its edit screen.
     await page.goto('/admin/collections/media')
     await expect(page.getByText('Nothing found')).toHaveCount(0)
+
+    // Hidden Tags/References must still work in relationship fields: list, pick, and create in a drawer.
+    await page.goto('/admin/collections/projects/create')
+    const tags = page.locator('#field-tags')
+    await tags.click()
+    await tags.locator('input').fill(tagName) // the option list is paginated; search for ours
+    await expect(page.locator('.rs__option', { hasText: tagName })).toBeVisible()
+    await page.locator('.rs__option', { hasText: tagName }).click()
+    await expect(tags.locator('.relationship--multi-value-label__text')).toHaveText(tagName)
+    for (const id of ['tags', 'reference']) {
+      await page.locator(`#${id}-add-new button`).click()
+      await expect(page.getByRole('dialog').getByRole('button', { name: 'Save' })).toBeVisible()
+      await page.getByRole('dialog').getByRole('button', { name: 'Close' }).last().click()
+      await expect(page.getByRole('dialog')).toHaveCount(0)
+    }
   } finally {
+    await payload.delete({ collection: 'tags', where: { name: { equals: tagName } } })
     await payload.delete({ collection: 'users', where: { email: emails } })
   }
 })

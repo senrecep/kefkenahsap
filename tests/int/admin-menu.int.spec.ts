@@ -2,6 +2,7 @@
 // for the Galeri view (their nav links are hidden by GaleriNavLink instead); admins see all. Access control is untouched.
 import { describe, expect, it } from 'vitest'
 
+import { hiddenFromEditor } from '@/access'
 import config from '@/payload.config'
 
 const editor = { id: 1, role: 'editor' }
@@ -19,5 +20,10 @@ describe('admin nav per role', async () => {
 
   it('admin sees everything except the always-hidden lead photos', () => {
     expect(entities.filter((e) => isHidden(e, admin)).map((e) => e.slug)).toEqual(['lead-photos'])
+  })
+
+  it('a missing user is treated as hidden (fail closed)', () => {
+    expect(hiddenFromEditor({ user: undefined })).toBe(true)
+    expect(hiddenFromEditor({ user: null })).toBe(true)
   })
 })

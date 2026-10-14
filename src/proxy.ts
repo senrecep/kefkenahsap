@@ -18,6 +18,8 @@ export default function proxy(req: NextRequest) {
 
   // The container healthcheck must work without credentials.
   if (pathname === '/api/health') return NextResponse.next()
+  // Admin PWA assets hold no secrets; browsers fetch the manifest without credentials, so exempt them (installability on dev).
+  if (pathname === '/admin.webmanifest' || pathname.startsWith('/brand/pwa-')) return NextResponse.next()
 
   // The deployed development environment sits entirely behind HTTP Basic auth (pages, admin, API, files)
   // and fails closed when the credential is missing.

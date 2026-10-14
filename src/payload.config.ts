@@ -44,7 +44,7 @@ export default buildConfig({
     meta: {
       titleSuffix: '- Kefken Ahşap',
       icons: [
-        { rel: 'icon', type: 'image/png', url: '/brand/pwa-192.png' },
+        { rel: 'icon', type: 'image/png', url: '/icon.png' },
         { rel: 'apple-touch-icon', url: '/brand/apple-touch-icon.png' },
       ],
       manifest: '/admin.webmanifest',
