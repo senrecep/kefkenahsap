@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { localeSeo, ogLocale, publishedLocales } from './published'
+import { livePaths, localeSeo, ogLocale, publishedLocales } from './published'
 
 const SITE = 'https://www.kefkenahsap.com'
 
@@ -16,6 +16,16 @@ describe('publishedLocales (PLAN §5.1: slug + title filled → the locale is li
   })
   it('treats whitespace-only values as empty', () => {
     expect(publishedLocales({ tr: { slug: 'a', title: 'A' }, en: { slug: ' ', title: 'B' } })).toEqual(['tr'])
+  })
+})
+
+describe('livePaths', () => {
+  it('a path for each live locale, null for the rest (feeds hreflang, sitemap and noindex alike)', () => {
+    const paths = livePaths(
+      { tr: { slug: 'kosk', title: 'Köşk' }, en: { slug: 'mansion', title: null } },
+      (l, slug) => `/${l}/p/${slug}`,
+    )
+    expect(paths).toEqual({ tr: '/tr/p/kosk', en: null })
   })
 })
 

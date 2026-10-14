@@ -4,6 +4,9 @@ import { getSiteSettings } from '@/lib/data/site'
 import { responsiveImage, type MediaLike } from '@/lib/media/image'
 import { ogPhoto } from '@/lib/seo/og-image'
 
+// Reads CMS data per request (no DB at build time).
+export const dynamic = 'force-dynamic'
+
 const media = (v: unknown) => (v && typeof v === 'object' ? (v as MediaLike) : undefined)
 
 /**

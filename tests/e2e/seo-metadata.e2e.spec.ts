@@ -20,9 +20,15 @@ const head = async (request: APIRequestContext, path: string) => {
   }
 }
 
+/** First photo page whose stored file is reachable (local DBs can hold uploads whose S3 object is gone). */
 async function firstImagePath(request: APIRequestContext) {
-  const html = await (await request.get('/tr/galeri')).text()
-  return html.match(/href="(\/tr\/galeri\/[a-z0-9-]+)"/)![1]!
+  type Item = { href: string; media: { sizes: Record<string, { url: string } | null> } }
+  const { items } = (await (await request.get('/tr/galeri/feed')).json()) as { items: Item[] }
+  for (const i of items) {
+    const src = Object.values(i.media.sizes).find((s) => s?.url)?.url
+    if (src && (await request.get(src)).ok()) return i.href
+  }
+  throw new Error('no gallery photo with a reachable file')
 }
 
 test.describe('page metadata', () => {
@@ -58,6 +64,8 @@ test.describe('page metadata', () => {
       expect(res.status(), path).toBe(200)
       expect(res.headers()['content-type']).toBe('image/jpeg')
       const buf = await res.body()
+      // A real photo, not the ~2.5KB plain fallback card.
+      expect(buf.length, path).toBeGreaterThan(20_000)
       // JPEG SOF0/SOF2 marker carries height then width.
       const sof = buf.findIndex((b, i) => b === 0xff && (buf[i + 1] === 0xc0 || buf[i + 1] === 0xc2))
       expect([buf.readUInt16BE(sof + 7), buf.readUInt16BE(sof + 5)], path).toEqual([1200, 630])

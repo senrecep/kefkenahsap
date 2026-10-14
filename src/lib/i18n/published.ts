@@ -6,6 +6,12 @@ type Localized = { slug?: string | null; title?: string | null }
 export const publishedLocales = (byLocale: Record<string, Localized | null | undefined>) =>
   Object.keys(byLocale).filter((l) => byLocale[l]?.slug?.trim() && byLocale[l]?.title?.trim())
 
+/** Each locale's URL path where the translation is live, else null: the input for localeSeo and the sitemap. */
+export function livePaths(byLocale: Record<string, Localized | null | undefined>, toPath: (locale: string, slug: string) => string) {
+  const live = publishedLocales(byLocale)
+  return Object.fromEntries(Object.keys(byLocale).map((l) => [l, live.includes(l) ? toPath(l, byLocale[l]!.slug!) : null]))
+}
+
 const OG_LOCALES: Record<string, string> = { tr: 'tr_TR', en: 'en_US' }
 export const ogLocale = (locale: string) => OG_LOCALES[locale] ?? locale
 
