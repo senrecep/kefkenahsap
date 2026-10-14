@@ -97,8 +97,18 @@ test.describe('Projects, project page and references', () => {
   })
 
   test('references list names, locations and linked projects', async ({ page }) => {
-    await page.goto('/tr/referanslar')
     const row = page.locator('li', { hasText: `E2E Referans ${stamp}` })
+    // The reference is written from this process; a production server may serve the list from its data cache
+    // until the revalidation lands, so reload until it shows.
+    await expect
+      .poll(
+        async () => {
+          await page.goto('/tr/referanslar')
+          return row.count()
+        },
+        { timeout: 30_000, intervals: [500, 1_000, 2_000] },
+      )
+      .toBeGreaterThan(0)
     await expect(row).toContainText('Riva / İstanbul')
     await expect(row.getByRole('link', { name: full.title })).toHaveAttribute(
       'href',
