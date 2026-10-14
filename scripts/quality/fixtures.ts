@@ -27,13 +27,13 @@ const TARGETS = path.resolve('.quality-targets.json')
 const { defaultLocale, locales } = routing
 const slug = (base: string, locale: Locale) => `${base}-${locale}`
 const payload = await getPayload({ config: await config })
-const find = (collection: 'projects' | 'guides', base: string) =>
+const find = (collection: 'projects' | 'guides' | 'categories', base: string) =>
   payload
     .find({ collection, locale: defaultLocale, draft: true, where: { slug: { equals: slug(base, defaultLocale) } }, limit: 1, depth: 0 })
     .then((r) => r.docs[0])
 
 if (process.argv.includes('--remove')) {
-  for (const [collection, base] of [['projects', F.project], ['guides', F.guide]] as const) {
+  for (const [collection, base] of [['projects', F.project], ['guides', F.guide], ['categories', F.category]] as const) {
     const doc = await find(collection, base)
     if (doc) await payload.delete({ collection, id: doc.id })
   }
@@ -86,24 +86,36 @@ const photoId = project.gallery?.[0]
 if (!categoryId || !photoId) throw new Error('The fixture project needs a category and photos')
 const image = await payload.findByID({ collection: 'media', id: typeof photoId === 'object' ? photoId.id : photoId, depth: 0 })
 
+const DECK_DESC = { tr: 'Bahçe ve teras için ahşap deck.', en: 'Timber decking for gardens and terraces.' }
+// Created on first use, with its text in every locale (the English copy for later ones).
+let fixtureCat: Awaited<ReturnType<typeof find>> | undefined
+async function fixtureCategory(locale: Locale) {
+  fixtureCat ??= await find('categories', F.category)
+  if (!fixtureCat) {
+    const name = { tr: 'Bahçe deck (LHCI)', en: 'Garden decking (LHCI)' }
+    fixtureCat = await payload.create({ collection: 'categories', locale: defaultLocale, data: { _status: 'published', name: pick(name, defaultLocale), slug: slug(F.category, defaultLocale), shortDesc: pick(DECK_DESC, defaultLocale) } })
+    for (const l of locales.filter((x) => x !== defaultLocale))
+      await payload.update({ collection: 'categories', id: fixtureCat.id, locale: l, data: { _status: 'published', name: pick(name, l), slug: slug(F.category, l), shortDesc: pick(DECK_DESC, l) } })
+  }
+  return payload.findByID({ collection: 'categories', id: fixtureCat.id, locale, depth: 0 })
+}
+
 const targets: Record<string, Record<string, string>> = {}
 for (const locale of locales) {
   let category = await payload.findByID({ collection: 'categories', id: typeof categoryId === 'object' ? categoryId.id : categoryId, locale, depth: 0 })
-  // A later locale (ru/de/ar…) has no category text yet. CI gives the seeded category one so the template is audited;
-  // a local run leaves the shared DB alone and audits that locale's not-found page in its place.
-  if (process.env.CI && !category.slug) {
-    const en = await payload.findByID({ collection: 'categories', id: category.id, locale: 'en', depth: 0 })
-    category = await payload.update({ collection: 'categories', id: category.id, locale, data: { name: en.name, slug: `${en.slug}-${locale}` } })
-  }
+  // A later locale (ru/de/ar…) may have no category text yet: audit the fixture category there instead of writing
+  // into a seeded one. It exists only while the fixtures do (`--remove` deletes it), so which locales have content,
+  // and so their noindex/hreflang state, is back to the real data afterwards (tests/e2e/i18n-locales).
+  if (!category.slug) category = await fixtureCategory(locale)
   // CI's seeded category has no description, which Lighthouse scores as a missing meta description (real categories
-  // always have one). Same guard as above; filled in CI only, where the database is thrown away.
+  // always have one). Filled in CI only, where the database is thrown away.
   if (process.env.CI && !category.shortDesc)
-    await payload.update({ collection: 'categories', id: category.id, locale, data: { shortDesc: pick({ tr: 'Bahçe ve teras için ahşap deck.', en: 'Timber decking for gardens and terraces.' }, locale) } })
+    await payload.update({ collection: 'categories', id: category.id, locale, data: { shortDesc: pick(DECK_DESC, locale) } })
   const p = (href: Parameters<typeof localizedPathname<keyof typeof routing.pathnames>>[1]['href']) => localizedPathname(routing, { locale, href })
   targets[locale] = {
     home: p('/'),
     services: p('/hizmetlerimiz'),
-    category: category.slug ? p({ pathname: '/[category]', params: { category: category.slug } }) : `${p('/')}/boyle-bir-sayfa-yok`,
+    category: p({ pathname: '/[category]', params: { category: category.slug! } }),
     gallery: p('/galeri'),
     image: p({ pathname: '/galeri/[slug]', params: { slug: image.seoFilename ?? String(image.id) } }),
     projects: p('/projeler'),

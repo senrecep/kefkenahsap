@@ -32,10 +32,11 @@ test.beforeAll(async () => {
     messages[locale] = { ...(await json(locale, 'common')), ...(await json(locale, 'consent')), ...(await json(locale, 'contact')) } as Messages
 })
 
-// CI keeps them for the Lighthouse step (an ephemeral DB, and a re-created doc would meet stale cached pages);
-// locally they would otherwise show up in the shared dev DB's lists, search and sitemap.
+// Always removed: the fixtures publish text in every locale (a project, a guide, a category for locales the seed
+// lacks), which would make those locales live for every later spec (i18n-locales checks the no-content state).
+// The Lighthouse step runs the fixtures script again itself, on a fresh cache.
 test.afterAll(() => {
-  if (!process.env.CI) fixtures(' -- --remove')
+  fixtures(' -- --remove')
 })
 
 for (const locale of routing.locales) {
