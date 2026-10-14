@@ -84,6 +84,30 @@ bun run typecheck && bun run lint
 docker compose --profile local up -d   # postgres + minio (+ umami)
 ```
 
-## Work order
+## Work order and GitHub flow
 
-Phases come from the ultragoal ledger: F0 spike → F1 launch → F2 content and AI tools → F3 expansion. Before you finish a goal, check its acceptance criteria with evidence (test output, Lighthouse report, screenshots) and get an independent review from the `verifier` / `code-reviewer` agent.
+Phases come from the ultragoal ledger: F0 spike → F1 launch → F2 content and AI tools → F3 expansion. Each phase maps to an epic on GitHub:
+
+| Ultragoal | Epic | Milestone |
+|---|---|---|
+| G001 F0 Spike | #1 | F0 Spike |
+| G002 F1a Foundations | #2 | F1 Lansman |
+| G003 F1b Content model & admin | #3 | F1 Lansman |
+| G004 F1c Seed & legacy redirects | #4 | F1 Lansman |
+| G005 F1d Public site & design | #5 | F1 Lansman |
+| G006 F1e SEO/GEO & launch | #6 | F1 Lansman |
+| G007 F2 Content & AI tools | #7 | F2 İçerik & AI |
+| G008 F3 Expansion | #8 | F3 Genişleme |
+
+- Issues: https://github.com/senrecep/kefkenahsap/issues. Board: https://github.com/users/senrecep/projects/5. Key → number map: `docs/issue-map.json`.
+- **Order**: work the epic's sub-issues top to bottom. Don't start an issue until the issues in its "Bağımlılıklar" (dependencies) line are closed.
+- **One issue = one branch = one worktree = one PR**:
+  1. Set the issue to "In Progress" on the board and assign it.
+  2. Create a branch from `development`: `feat/<no>-<slug>`, `spike/<no>-<slug>`, `chore/…`, `docs/…` or `design/…`.
+  3. `git worktree add ../kefkenahsap-wt/<no>-<slug> -b <branch> development`. Parallel work happens only in separate worktrees.
+  4. TDD commits use Conventional Commits and reference the issue (`feat(legacy): resolve WP size variants (#20)`).
+  5. Open the PR against `development`. Put `Closes #<no>` and `Part of #<epic>` in the body, add the matching labels and milestone, and list the acceptance criteria as a checklist with evidence (test output, screenshots, Lighthouse).
+  6. Merge only when CI is green and the `code-reviewer` / `verifier` review is clean (squash). Then remove the worktree.
+- When the epic's last sub-issue closes, check the epic's acceptance criteria with evidence, close the epic, and run the ultragoal `checkpoint`.
+- `development` → `main` (production) happens at the end of the phase through a release PR. The F1 release is the launch issue.
+- New work that comes up is never done silently: open a new issue (link it to the right epic as a sub-issue) and write it into the plan.
