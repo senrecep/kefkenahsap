@@ -14,5 +14,16 @@
     "ctaTitle": "Kendi işiniz için konuşalım",
     "ctaText": "Alanın birkaç fotoğrafını gönderin; uygun ahşabı ve yapılacak işi birlikte konuşalım.",
     "table": "Tablo (yana kaydırılabilir)"
+  },
+  "WoodSamples": {
+    "title": "Ahşap numuneleri",
+    "hint": "Sürükleyerek ya da ok tuşlarıyla çevirin",
+    "note": "İroko ve çam dokuları işlerimizin fotoğraflarından alındı; teak ve thermowood dokuları çizimdir.",
+    "names": {
+      "iroko": "İroko",
+      "teak": "Teak",
+      "cam": "Emprenyeli çam",
+      "thermowood": "Thermowood"
+    }
   }
 }

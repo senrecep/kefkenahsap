@@ -14,5 +14,16 @@
     "ctaTitle": "Let's talk about your project",
     "ctaText": "Send us a few photos of the space and we'll choose the right timber and approach together.",
     "table": "Table (scrolls sideways)"
+  },
+  "WoodSamples": {
+    "title": "Wood samples",
+    "hint": "Drag or use the arrow keys to turn them",
+    "note": "The iroko and pine textures come from photos of our jobs; the teak and thermowood textures are drawn.",
+    "names": {
+      "iroko": "Iroko",
+      "teak": "Teak",
+      "cam": "Treated pine",
+      "thermowood": "Thermowood"
+    }
   }
 }
