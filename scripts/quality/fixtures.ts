@@ -51,5 +51,12 @@ if (!(await find('guides', F.guide.tr))) {
   const doc = await payload.create({ collection: 'guides', locale: 'tr', data: { ...seed.tr, slug: F.guide.tr, body: body(seed.tr.body), _status: 'published' } })
   await payload.update({ collection: 'guides', id: doc.id, locale: 'en', data: { ...seed.en, slug: F.guide.en, body: body(seed.en.body), _status: 'published' } })
 }
+// CI's seeded category (tests/e2e/global-setup.ts) has no description, which Lighthouse scores as a missing meta
+// description on the category page; real categories always have one. CI's DB is throwaway, so fill it there only.
+if (process.env.CI) {
+  const cat = await payload.find({ collection: 'categories', locale: 'tr', where: { slug: { equals: 'e2e-deck' } }, limit: 1, depth: 0 })
+  const doc = cat.docs[0]
+  if (doc && !doc.shortDesc) await payload.update({ collection: 'categories', id: doc.id, locale: 'tr', data: { shortDesc: 'Bahçe ve teras için ahşap deck uygulamaları.' } })
+}
 console.log('quality fixtures ready')
 process.exit(0)
