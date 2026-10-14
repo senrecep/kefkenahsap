@@ -23,7 +23,7 @@ export default defineConfig({
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
-    baseURL: 'http://localhost:3000',
+    baseURL: `http://localhost:${process.env.E2E_PORT ?? 3000}`,
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
@@ -35,8 +35,11 @@ export default defineConfig({
     },
   ],
   webServer: {
-    command: 'bun run dev',
-    reuseExistingServer: true,
-    url: 'http://localhost:3000',
+    // CI runs against the production build (E2E_START_COMMAND=bun run start).
+    command: process.env.E2E_START_COMMAND ?? 'bun run dev',
+    timeout: 180_000,
+    // Locally reuse a running `bun dev`; in CI always start our own server on the probed free port.
+    reuseExistingServer: !process.env.CI,
+    url: `http://localhost:${process.env.E2E_PORT ?? 3000}`,
   },
 })

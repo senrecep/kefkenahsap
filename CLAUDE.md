@@ -83,7 +83,7 @@ bun dev                                 # Next + Payload (localhost:3000 → /tr
 bun run test                            # vitest: unit (src/**/*.test.ts) + int (tests/int, needs postgres)
 bun run test:e2e                        # playwright (starts bun dev if not running)
 bun run typecheck && bun run lint
-bun run check:generated                 # payload types + admin import map are committed and current (CI runs it once #19 lands)
+bun run check:generated                 # payload types + admin import map are committed and current (CI enforces it)
 bun run migrate:create <name>           # schema changes only via migrations (push is off)
 ```
 

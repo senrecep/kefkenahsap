@@ -9,7 +9,7 @@ test('admin in Arabic is RTL', async ({ browser }) => {
   const context = await browser.newContext()
   const page = await context.newPage()
   await login({ page, user: testUser })
-  await context.addCookies([{ name: 'payload-lng', value: 'ar', url: 'http://localhost:3000' }])
+  await context.addCookies([{ name: 'payload-lng', value: 'ar', url: `http://localhost:${process.env.E2E_PORT ?? 3000}` }])
   await page.goto('/admin')
   await expect(page.getByRole('button', { name: 'المجموعات' })).toBeVisible()
   const direction = await page.evaluate(() => getComputedStyle(document.querySelector('nav') ?? document.body).direction)
