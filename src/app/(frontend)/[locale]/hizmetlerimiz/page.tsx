@@ -35,7 +35,7 @@ export default async function ServicesPage({ params }: { params: Params }) {
                     media={c.image}
                     sizes="(min-width: 1280px) 400px, (min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                     maxWidth={1280}
-                    priority={i < 3}
+                    priority={i === 0}
                     className="aspect-[4/3]! rounded-[var(--radius-photo)]"
                     imgClassName="transition-transform duration-500 ease-[var(--ease-out-expo)] motion-safe:group-hover:scale-[1.03]"
                   />
