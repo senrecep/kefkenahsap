@@ -95,8 +95,16 @@ export interface Config {
     defaultIDType: number;
   };
   fallbackLocale: ('false' | 'none' | 'null') | false | null | ('tr' | 'en') | ('tr' | 'en')[];
-  globals: {};
-  globalsSelect: {};
+  globals: {
+    siteSettings: SiteSetting;
+    homepage: Homepage;
+    navigation: Navigation;
+  };
+  globalsSelect: {
+    siteSettings: SiteSettingsSelect<false> | SiteSettingsSelect<true>;
+    homepage: HomepageSelect<false> | HomepageSelect<true>;
+    navigation: NavigationSelect<false> | NavigationSelect<true>;
+  };
   locale: 'tr' | 'en';
   widgets: {
     collections: CollectionsWidget;
@@ -612,6 +620,409 @@ export interface PayloadMigrationsSelect<T extends boolean = true> {
   batch?: T;
   updatedAt?: T;
   createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "siteSettings".
+ */
+export interface SiteSetting {
+  id: number;
+  companyName: string;
+  /**
+   * Doluysa "…’dan beri" yazılır.
+   */
+  foundingYear?: number | null;
+  founder?: {
+    name?: string | null;
+    phone?: string | null;
+    /**
+     * Doğrulanmadan boş bırakın; boşsa "X yıllık" ifadesi kullanılmaz.
+     */
+    craftStartYear?: number | null;
+    bio?: string | null;
+  };
+  teamSize?: number | null;
+  projectCount?: number | null;
+  phones?:
+    | {
+        label: string;
+        number: string;
+        whatsapp?: boolean | null;
+        id?: string | null;
+      }[]
+    | null;
+  email?: string | null;
+  address?: {
+    street?: string | null;
+    district?: string | null;
+    city?: string | null;
+    postalCode?: string | null;
+    country?: string | null;
+    lat?: number | null;
+    lng?: number | null;
+    mapUrl?: string | null;
+  };
+  hours?:
+    | {
+        days: ('Mo' | 'Tu' | 'We' | 'Th' | 'Fr' | 'Sa' | 'Su')[];
+        opens: string;
+        closes: string;
+        id?: string | null;
+      }[]
+    | null;
+  areaServed?:
+    | {
+        name: string;
+        kind?: ('district' | 'city' | 'country') | null;
+        id?: string | null;
+      }[]
+    | null;
+  whatsappNumber?: string | null;
+  whatsappTemplates?: {
+    default?: string | null;
+    category?: string | null;
+    project?: string | null;
+    image?: string | null;
+    contact?: string | null;
+  };
+  officeHoursNote?: string | null;
+  social?: {
+    instagram?: string | null;
+    facebook?: string | null;
+    googleBusiness?: string | null;
+  };
+  defaultDescription?: string | null;
+  defaultOgImage?: (number | null) | Media;
+  gaId?: string | null;
+  updatedAt?: string | null;
+  createdAt?: string | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "homepage".
+ */
+export interface Homepage {
+  id: number;
+  layout?:
+    | (
+        | {
+            enabled?: boolean | null;
+            image: number | Media;
+            heading?: string | null;
+            subheading?: string | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'hero';
+          }
+        | {
+            enabled?: boolean | null;
+            heading?: string | null;
+            limit?: number | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'featuredGallery';
+          }
+        | {
+            enabled?: boolean | null;
+            heading?: string | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'services';
+          }
+        | {
+            enabled?: boolean | null;
+            heading?: string | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'featuredProjects';
+          }
+        | {
+            enabled?: boolean | null;
+            heading?: string | null;
+            steps?:
+              | {
+                  title: string;
+                  text?: string | null;
+                  id?: string | null;
+                }[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'process';
+          }
+        | {
+            enabled?: boolean | null;
+            heading?: string | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'references';
+          }
+        | {
+            enabled?: boolean | null;
+            heading?: string | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'woodTypes';
+          }
+        | {
+            enabled?: boolean | null;
+            heading?: string | null;
+            items?:
+              | {
+                  q: string;
+                  a: string;
+                  id?: string | null;
+                }[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'faq';
+          }
+        | {
+            enabled?: boolean | null;
+            heading?: string | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'contact';
+          }
+      )[]
+    | null;
+  _status?: ('draft' | 'published') | null;
+  updatedAt?: string | null;
+  createdAt?: string | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "navigation".
+ */
+export interface Navigation {
+  id: number;
+  header?:
+    | {
+        label: string;
+        /**
+         * Dil öneki olmadan, ör. /referanslar
+         */
+        href: string;
+        id?: string | null;
+      }[]
+    | null;
+  footer?:
+    | {
+        label: string;
+        /**
+         * Dil öneki olmadan, ör. /referanslar
+         */
+        href: string;
+        id?: string | null;
+      }[]
+    | null;
+  updatedAt?: string | null;
+  createdAt?: string | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "siteSettings_select".
+ */
+export interface SiteSettingsSelect<T extends boolean = true> {
+  companyName?: T;
+  foundingYear?: T;
+  founder?:
+    | T
+    | {
+        name?: T;
+        phone?: T;
+        craftStartYear?: T;
+        bio?: T;
+      };
+  teamSize?: T;
+  projectCount?: T;
+  phones?:
+    | T
+    | {
+        label?: T;
+        number?: T;
+        whatsapp?: T;
+        id?: T;
+      };
+  email?: T;
+  address?:
+    | T
+    | {
+        street?: T;
+        district?: T;
+        city?: T;
+        postalCode?: T;
+        country?: T;
+        lat?: T;
+        lng?: T;
+        mapUrl?: T;
+      };
+  hours?:
+    | T
+    | {
+        days?: T;
+        opens?: T;
+        closes?: T;
+        id?: T;
+      };
+  areaServed?:
+    | T
+    | {
+        name?: T;
+        kind?: T;
+        id?: T;
+      };
+  whatsappNumber?: T;
+  whatsappTemplates?:
+    | T
+    | {
+        default?: T;
+        category?: T;
+        project?: T;
+        image?: T;
+        contact?: T;
+      };
+  officeHoursNote?: T;
+  social?:
+    | T
+    | {
+        instagram?: T;
+        facebook?: T;
+        googleBusiness?: T;
+      };
+  defaultDescription?: T;
+  defaultOgImage?: T;
+  gaId?: T;
+  updatedAt?: T;
+  createdAt?: T;
+  globalType?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "homepage_select".
+ */
+export interface HomepageSelect<T extends boolean = true> {
+  layout?:
+    | T
+    | {
+        hero?:
+          | T
+          | {
+              enabled?: T;
+              image?: T;
+              heading?: T;
+              subheading?: T;
+              id?: T;
+              blockName?: T;
+            };
+        featuredGallery?:
+          | T
+          | {
+              enabled?: T;
+              heading?: T;
+              limit?: T;
+              id?: T;
+              blockName?: T;
+            };
+        services?:
+          | T
+          | {
+              enabled?: T;
+              heading?: T;
+              id?: T;
+              blockName?: T;
+            };
+        featuredProjects?:
+          | T
+          | {
+              enabled?: T;
+              heading?: T;
+              id?: T;
+              blockName?: T;
+            };
+        process?:
+          | T
+          | {
+              enabled?: T;
+              heading?: T;
+              steps?:
+                | T
+                | {
+                    title?: T;
+                    text?: T;
+                    id?: T;
+                  };
+              id?: T;
+              blockName?: T;
+            };
+        references?:
+          | T
+          | {
+              enabled?: T;
+              heading?: T;
+              id?: T;
+              blockName?: T;
+            };
+        woodTypes?:
+          | T
+          | {
+              enabled?: T;
+              heading?: T;
+              id?: T;
+              blockName?: T;
+            };
+        faq?:
+          | T
+          | {
+              enabled?: T;
+              heading?: T;
+              items?:
+                | T
+                | {
+                    q?: T;
+                    a?: T;
+                    id?: T;
+                  };
+              id?: T;
+              blockName?: T;
+            };
+        contact?:
+          | T
+          | {
+              enabled?: T;
+              heading?: T;
+              id?: T;
+              blockName?: T;
+            };
+      };
+  _status?: T;
+  updatedAt?: T;
+  createdAt?: T;
+  globalType?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "navigation_select".
+ */
+export interface NavigationSelect<T extends boolean = true> {
+  header?:
+    | T
+    | {
+        label?: T;
+        href?: T;
+        id?: T;
+      };
+  footer?:
+    | T
+    | {
+        label?: T;
+        href?: T;
+        id?: T;
+      };
+  updatedAt?: T;
+  createdAt?: T;
+  globalType?: T;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema

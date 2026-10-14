@@ -9,6 +9,9 @@ import { Users } from './collections/Users'
 import { Media } from './collections/Media'
 import { Categories } from './collections/Categories'
 import { Tags } from './collections/Tags'
+import { SiteSettings } from './globals/SiteSettings'
+import { Homepage } from './globals/Homepage'
+import { Navigation } from './globals/Navigation'
 import { s3Storage } from '@payloadcms/storage-s3'
 import { tr } from '@payloadcms/translations/languages/tr'
 import { en } from '@payloadcms/translations/languages/en'
@@ -30,6 +33,7 @@ export default buildConfig({
     },
   },
   collections: [Users, Media, Categories, Tags],
+  globals: [SiteSettings, Homepage, Navigation],
   endpoints: [
     {
       // Liveness + DB reachability for the container healthcheck.
