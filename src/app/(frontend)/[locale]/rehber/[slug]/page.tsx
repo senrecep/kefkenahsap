@@ -4,6 +4,7 @@ import { getFormatter, getTranslations, setRequestLocale } from 'next-intl/serve
 import { notFound } from 'next/navigation'
 
 import { GuideBody } from '@/components/guides/GuideBody'
+import { JsonLd } from '@/components/seo/JsonLd'
 import { buttonClass } from '@/components/ui/button'
 import { Container } from '@/components/ui/Container'
 import { WhatsAppButton } from '@/components/ui/WhatsAppButton'
@@ -13,7 +14,9 @@ import { getGuide, getGuides } from '@/lib/data/guides'
 import { getSiteSettings } from '@/lib/data/site'
 import { metaDescription } from '@/lib/guides/meta'
 import { tableOfContents } from '@/lib/guides/toc'
-import { buildAlternates, siteUrl } from '@/lib/seo/alternates'
+import { siteUrl } from '@/lib/seo/alternates'
+import { articleJsonLd, breadcrumbJsonLd, faqJsonLd } from '@/lib/seo/jsonld'
+import { pageMetadata } from '@/lib/seo/page-metadata'
 
 type Props = { params: Promise<{ locale: Locale; slug: string }> }
 
@@ -22,12 +25,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const found = await getGuide(locale, slug)
   if (!found) return {}
   const { guide, paths } = found
-  return {
-    title: guide.seo?.title || guide.title,
-    description: guide.seo?.description || metaDescription(guide.excerpt),
-    alternates: buildAlternates({ current: locale, paths, site: siteUrl() }),
-    openGraph: { type: 'article', modifiedTime: guide.updatedAt },
-  }
+  const m = await pageMetadata({ locale, title: guide.seo?.title || guide.title, description: guide.seo?.description || metaDescription(guide.excerpt), paths })
+  return { ...m, openGraph: { ...m.openGraph, type: 'article', modifiedTime: guide.updatedAt } }
 }
 
 export default async function GuidePage({ params }: Props) {
@@ -42,7 +41,8 @@ export default async function GuidePage({ params }: Props) {
   // Byline only when the owner opted in for this guide (and a founder name is set).
   const founder = guide.showAuthor && settings.founder?.name ? settings.founder : null
   const faq = guide.faq ?? []
-  const url = `${siteUrl().replace(/\/$/, '')}${getPathname({ locale, href: { pathname: '/rehber/[slug]', params: { slug } } })}`
+  const site = siteUrl().replace(/\/$/, '')
+  const url = `${site}${getPathname({ locale, href: { pathname: '/rehber/[slug]', params: { slug } } })}`
   const updated = (
     <>
       {t('updated')}: <time dateTime={guide.updatedAt}>{format.dateTime(new Date(guide.updatedAt), { dateStyle: 'long' })}</time>
@@ -51,7 +51,18 @@ export default async function GuidePage({ params }: Props) {
 
   return (
     <>
-      {/* #48: Article + Person (siteSettings.founder) + FAQPage JSON-LD for this page goes here, built from `guide`, `faq` and `founder`. */}
+      {/* Only what the page shows: title, excerpt, the "updated" date, the byline when shown, and the FAQ list. */}
+      <JsonLd
+        data={[
+          articleJsonLd({ site, headline: guide.title, url, description: guide.excerpt, author: founder?.name, dateModified: guide.updatedAt }),
+          faqJsonLd(faq),
+          breadcrumbJsonLd([
+            { name: settings.companyName, url: site + getPathname({ locale, href: '/' }) },
+            { name: t('title'), url: site + getPathname({ locale, href: '/rehber' }) },
+            { name: guide.title, url },
+          ]),
+        ]}
+      />
       <Container as="article" className="pt-6 pb-16 md:pt-10">
         <a href={getPathname({ locale, href: '/rehber' })} className="text-[0.95rem] text-action underline">
           {t('back')}

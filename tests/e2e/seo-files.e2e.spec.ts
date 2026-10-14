@@ -33,7 +33,8 @@ async function expectIndexable(request: APIRequestContext, u: Entry) {
 test.describe('robots, sitemap, llms.txt', () => {
   let api: APIRequestContext
   const stamp = Date.now()
-  const ids = { categories: [] as number[], media: [] as number[] }
+  const ids = { categories: [] as number[], media: [] as number[], guides: [] as number[] }
+  const guide = { tr: `e2e-rehber-${stamp}`, en: `e2e-guide-${stamp}` }
   const both = { tr: `e2e-harita-${stamp}`, en: `e2e-map-${stamp}`, trName: `E2E Harita ${stamp}`, enName: `E2E Map ${stamp}` }
   const trOnly = `e2e-yalniz-tr-${stamp}`
   const photo = `e2e-harita-foto-${stamp}`
@@ -45,6 +46,9 @@ test.describe('robots, sitemap, llms.txt', () => {
     expect((await api.patch(`/api/categories/${c.id}?locale=en`, { data: { name: both.enName, slug: both.en } })).ok()).toBe(true)
     const t = await createDoc(api, 'categories', { _status: 'published', name: `E2E Yalnız TR ${stamp}`, slug: trOnly })
     ids.categories.push(c.id, t.id)
+    const g = await createDoc(api, 'guides', { _status: 'published', title: `E2E rehber ${stamp}`, slug: guide.tr, excerpt: 'Kısa cevap.' })
+    expect((await api.patch(`/api/guides/${g.id}?locale=en`, { data: { title: `E2E guide ${stamp}`, slug: guide.en, excerpt: 'Short answer.' } })).ok()).toBe(true)
+    ids.guides.push(g.id)
     const m = await uploadPhoto(api, { seoFilename: photo, category: c.id }, 4)
     ids.media.push(m.id)
     for (const [locale, title] of [['tr', `E2E harita fotoğrafı ${stamp}`], ['en', `E2E map photo ${stamp}`]]) {
@@ -53,6 +57,7 @@ test.describe('robots, sitemap, llms.txt', () => {
   })
 
   test.afterAll(async () => {
+    await deleteDocs(api, 'guides', ids.guides)
     await deleteDocs(api, 'media', ids.media)
     await deleteDocs(api, 'categories', ids.categories)
   })
@@ -64,6 +69,8 @@ test.describe('robots, sitemap, llms.txt', () => {
   })
 
   test('sitemap lists only indexable pages, with alternates that match the page hreflang', async ({ request }) => {
+    // Renders ~25 pages (every fixed route in both locales plus the fixtures).
+    test.setTimeout(120_000)
     let urls: Entry[] = []
     // Payload's revalidation hook runs after each write; wait for the fixtures to appear.
     await expect.poll(async () => (urls = await sitemap(request)).some((u) => path(u.loc) === `/en/gallery/${photo}`), { timeout: 20_000 }).toBe(true)
@@ -77,16 +84,20 @@ test.describe('robots, sitemap, llms.txt', () => {
     // Turkish-only service: the English page would be noindex, so only Turkish is listed.
     expect(at(`/tr/${trOnly}`)?.alternates).toEqual({ tr: `/tr/${trOnly}`, 'x-default': `/tr/${trOnly}` })
     expect(urls.some((u) => path(u.loc).startsWith('/en/') && path(u.loc).includes(trOnly))).toBe(false)
+    // Guide: both locales, and the guide index (listed only once a guide is published in that locale).
+    const trGuide = at(`/tr/rehber/${guide.tr}`)
+    expect(trGuide?.alternates).toEqual({ tr: `/tr/rehber/${guide.tr}`, en: `/en/guides/${guide.en}`, 'x-default': `/tr/rehber/${guide.tr}` })
+    expect(at('/tr/rehber')).toBeTruthy()
     // Photo page with its image (image sitemap extension).
     const photoEntry = at(`/en/gallery/${photo}`)!
     expect(photoEntry.images).toHaveLength(1)
     expect((await request.get(photoEntry.images[0]!)).status()).toBe(200)
 
     // Every fixed route is listed at least in Turkish; every listed fixed URL is indexable.
-    const FIXED = /^\/(tr|en)(\/(galeri|gallery|hizmetlerimiz|services|projeler|projects|referanslar|references|hakkimizda|about|iletisim|contact|kvkk|privacy|cerez-politikasi|cookies))?$/
+    const FIXED = /^\/(tr|en)(\/(galeri|gallery|hizmetlerimiz|services|projeler|projects|referanslar|references|hakkimizda|about|iletisim|contact|kvkk|privacy|cerez-politikasi|cookies|rehber|guides))?$/
     const fixed = urls.filter((u) => FIXED.test(path(u.loc)))
-    expect(fixed.filter((u) => path(u.loc).startsWith('/tr')).length).toBe(9)
-    for (const u of [...fixed, trService!, at(`/en/${both.en}`)!, at(`/tr/${trOnly}`)!, photoEntry]) await expectIndexable(request, u)
+    expect(fixed.filter((u) => path(u.loc).startsWith('/tr')).length).toBe(10)
+    for (const u of [...fixed, trGuide!, at(`/en/guides/${guide.en}`)!, trService!, at(`/en/${both.en}`)!, at(`/tr/${trOnly}`)!, photoEntry]) await expectIndexable(request, u)
     // Search is noindex and disallowed: never listed.
     expect(urls.some((u) => /\/(ara|search)$/.test(path(u.loc)))).toBe(false)
   })

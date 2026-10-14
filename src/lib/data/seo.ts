@@ -19,6 +19,7 @@ const docPaths = (slug: ByLocale, title: ByLocale, path: (locale: string, slug: 
 type Locale = (typeof routing.locales)[number]
 const categoryPath = (l: string, category: string) => getPathname({ locale: l as Locale, href: { pathname: '/[category]', params: { category } } })
 const projectPath = (l: string, slug: string) => getPathname({ locale: l as Locale, href: { pathname: '/projeler/[slug]', params: { slug } } })
+const guidePath = (l: string, slug: string) => getPathname({ locale: l as Locale, href: { pathname: '/rehber/[slug]', params: { slug } } })
 const imagePath = (l: string, slug: string) => getPathname({ locale: l as Locale, href: { pathname: '/galeri/[slug]', params: { slug } } })
 
 /** Published services with every locale's text (public reads only). */
@@ -44,15 +45,24 @@ export const getServicesAllLocales = () =>
     { tags: [TAGS.categories], revalidate: HOUR },
   )()
 
-/** Sitemap documents: services, published projects and approved photos — only their live locales. */
+/** Sitemap documents: services, published projects and guides, and approved photos — only their live locales. */
 export const getSitemapDocs = () =>
   unstable_cache(
     async (): Promise<SitemapDoc[]> => {
       const payload = await getPayload()
-      const [services, projects, media] = await Promise.all([
+      const [services, projects, guides, media] = await Promise.all([
         getServicesAllLocales(),
         payload.find({
           collection: 'projects',
+          locale: 'all',
+          pagination: false,
+          depth: 0,
+          overrideAccess: false,
+          where: { _status: { equals: 'published' } },
+          select: { title: true, slug: true, updatedAt: true },
+        }),
+        payload.find({
+          collection: 'guides',
           locale: 'all',
           pagination: false,
           depth: 0,
@@ -77,6 +87,10 @@ export const getSitemapDocs = () =>
           const p = d as unknown as { title: ByLocale; slug: ByLocale; updatedAt: string }
           return { paths: docPaths(p.slug, p.title, projectPath), lastModified: p.updatedAt }
         }),
+        ...guides.docs.map((d) => {
+          const g = d as unknown as { title: ByLocale; slug: ByLocale; updatedAt: string }
+          return { paths: docPaths(g.slug, g.title, guidePath), lastModified: g.updatedAt }
+        }),
         ...media.docs.map((d) => {
           const m = d as unknown as MediaLike & { title: ByLocale; seoFilename: string; updatedAt: string }
           const slug = Object.fromEntries(routing.locales.map((l) => [l, m.seoFilename]))
@@ -86,5 +100,5 @@ export const getSitemapDocs = () =>
       ]
     },
     ['seoSitemapDocs'],
-    { tags: [TAGS.categories, TAGS.projects, TAGS.media], revalidate: HOUR },
+    { tags: [TAGS.categories, TAGS.projects, TAGS.guides, TAGS.media], revalidate: HOUR },
   )()

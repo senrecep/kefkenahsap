@@ -2,6 +2,7 @@ import { unstable_cache } from 'next/cache'
 
 import { getPathname } from '@/i18n/navigation'
 import { routing, type Locale } from '@/i18n/routing'
+import { livePaths } from '@/lib/i18n/published'
 import type { Category } from '@/payload-types'
 
 import { getPayload, TAGS } from './payload'
@@ -41,11 +42,10 @@ export const getGuide = (locale: Locale, slug: string) =>
       if (!doc?.title) return null
       const all = await payload.find({ collection: 'guides', locale: 'all', where: { id: { equals: doc.id } }, limit: 1, depth: 0, overrideAccess: false, select: { slug: true, title: true } })
       const loc = all.docs[0] as unknown as { slug?: Record<string, string | null>; title?: Record<string, string | null> } | undefined
-      const paths = Object.fromEntries(
-        routing.locales.map((l) => {
-          const s = loc?.slug?.[l]
-          return [l, s && loc?.title?.[l] ? getPathname({ locale: l, href: { pathname: '/rehber/[slug]', params: { slug: s } } }) : null]
-        }),
+      // dil-yayında: a locale is live only with both its own slug and title.
+      const paths = livePaths(
+        Object.fromEntries(routing.locales.map((l) => [l, { slug: loc?.slug?.[l], title: loc?.title?.[l] }])),
+        (l, s) => getPathname({ locale: l as Locale, href: { pathname: '/rehber/[slug]', params: { slug: s } } }),
       )
       const categories = (doc.relatedCategories ?? [])
         .filter((c): c is Category => typeof c === 'object' && c._status === 'published' && Boolean(c.slug && c.name))
