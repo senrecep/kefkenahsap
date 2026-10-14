@@ -130,7 +130,7 @@ With option A:
 1. [ ] Add the Dokploy domain on the production `app` compose: host `www.kefkenahsap.com`, path `/`, service `app`, port `3000`, HTTPS on, certificate **Let's Encrypt**.
    - A compose domain is applied through Traefik labels, so **redeploy the compose** after saving it (the data is kept; this only recreates the containers). The route then exists before the DNS change.
    - Let's Encrypt fails at this point because DNS still points at the old host. That's expected.
-2. [ ] No Dokploy domain for the apex. `kefkenahsap.com → www` is handled by Cloudflare redirect rules at the edge (PLAN §5.1; steps 5.1 and 5.3), so the apex never reaches the origin.
+2. [ ] Optional, once the apex one-hop redirect (#120) is deployed (**the open-redirect fix in `proxy.ts`, paths like `//evil.com`, must ship before this domain is added**): add a second Dokploy domain on the same compose: host `kefkenahsap.com`, path `/`, service `app`, port `3000`, HTTPS on, **Let's Encrypt**. `proxy.ts` then answers any request on the apex host (the `www.`-less form of `NEXT_PUBLIC_SITE_URL`) with one 301 straight to the final legacy target on www, a 410, or the same path on www. Without this domain the apex never reaches the origin and the Cloudflare rules in step 5 do the apex → www job. Redeploy the compose after saving. DNS and Cloudflare are not touched by this step.
 3. [ ] Check the route before DNS changes. The origin answers for the host, using Traefik's default cert, hence `-k`:
    ```bash
    curl -sk -o /dev/null -w '%{http_code}\n' --resolve www.kefkenahsap.com:443:45.196.28.107 https://www.kefkenahsap.com/tr   # 200
@@ -157,7 +157,7 @@ There is no MX record. Zone SSL is `full`, Always Use HTTPS is off, and there ar
 - The web records are **proxied**. Resolvers see only Cloudflare's anycast IPs, so changing the origin IP takes effect at Cloudflare's edge within seconds, whatever the TTL. Rollback is just as fast.
 - The only DNS-only record that would have followed the apex is `mail`, and step 1.4 moved it off a day before. Nothing needs a TTL lowered.
 
-1. [ ] **OWNER APPROVAL REQUIRED.** Add the general apex → www rule **before** the flip.
+1. [ ] **OWNER APPROVAL REQUIRED.** Add the general apex → www rule **before** the flip. **Optional** once the apex has its own Dokploy domain (step 4.2): the app then redirects the apex itself, in one hop. Until then this rule is what keeps the apex off the origin.
    - The old WordPress already answers the apex with `301 → https://www.kefkenahsap.com/` (checked 2026-10-14), so the rule changes nothing for the old site.
    - After the flip, it keeps the apex from ever hitting the new origin, which has no route for it.
    - Go to Cloudflare → Rules → Redirect Rules → Create.
@@ -165,11 +165,11 @@ There is no MX record. Zone SSL is `full`, Always Use HTTPS is off, and there ar
    - When: custom filter `(http.host eq "kefkenahsap.com")`.
    - Then: Dynamic, `concat("https://www.kefkenahsap.com", http.request.uri.path)`, status **301**, **Preserve query string** on.
    - Check it: `curl -sI 'https://kefkenahsap.com/deck-ve-zeminler/?a=1'` → `301`, `location: https://www.kefkenahsap.com/deck-ve-zeminler/?a=1`.
-   - **Two hops on the apex, accepted.** Old media and attachment URLs on the apex (`kefkenahsap.com/wp-content/uploads/…`, `kefkenahsap.com/<page>/<attachment>/`) take two hops: this rule, then the app's single 301 (or 410). Google indexed the old site on www, where they stay one hop, so this is accepted. Old **pages** get a direct rule in step 5.3. Follow-up: the apex gets a Dokploy domain, and `proxy.ts` sends non-www hosts straight to the resolved legacy target (#120).
+   - **Two hops on the apex, accepted.** Old media and attachment URLs on the apex (`kefkenahsap.com/wp-content/uploads/…`, `kefkenahsap.com/<page>/<attachment>/`) take two hops: this rule, then the app's single 301 (or 410). Google indexed the old site on www, where they stay one hop, so this is accepted. Old **pages** get a direct rule in step 5.3. With the apex Dokploy domain (step 4.2) the app does all of this in one hop and these rules can go.
 2. [ ] **OWNER APPROVAL REQUIRED.** Change **one** record: `A kefkenahsap.com` `104.247.167.3` → **`45.196.28.107`**, keep it **Proxied**, TTL Auto.
    - `www` is a CNAME to the apex and follows it. Leave it as it is.
    - Leave the cPanel records (`cpanel`, `cpcontacts`, `webmail`, `whm`, SRV/TXT) alone. WordPress stays reachable on the old host as a backup.
-3. [ ] **OWNER APPROVAL REQUIRED.** Add `kefken: apex legacy pages` **after** the flip, and drag it **above** `kefken: apex to www`. The first matching redirect rule wins.
+3. [ ] **OWNER APPROVAL REQUIRED. Optional** once the apex has its own Dokploy domain (step 4.2), which makes this rule and the one above unnecessary: the app sends every legacy URL on the apex to its final target in one hop (`proxy.ts`, #120). Without that domain, add `kefken: apex legacy pages` **after** the flip, and drag it **above** `kefken: apex to www`. The first matching redirect rule wins.
    - Why after: the targets `/tr/<slug>` don't exist on WordPress, so before the flip this rule would 404 old pages.
    - It sends the 15 old pages on the apex (`PAGES` in `src/lib/legacy/resolve.ts`, minus the home page) to their new path in one hop.
    - When:
