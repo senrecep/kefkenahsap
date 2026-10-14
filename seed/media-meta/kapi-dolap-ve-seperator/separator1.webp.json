@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Dikey Çıtalı Beyaz Kasa",
-    "en": "White Box with Vertical Slats"
+    "tr": "Dikey çıtalı beyaz kasa",
+    "en": "White box with vertical slats"
   },
   "alt": {
     "tr": "Atölyede çalışma masasının üstünde duran, ön yüzü dikey çıtalı beyaz boyalı kasa",

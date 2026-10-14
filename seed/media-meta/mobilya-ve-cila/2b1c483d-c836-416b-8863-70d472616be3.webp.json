@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Geometrik Desenli Tavan ve Modern Mutfak",
-    "en": "Modern Kitchen with Geometric Pattern Ceiling"
+    "tr": "Geometrik desenli tavan ve modern mutfak",
+    "en": "Modern kitchen with geometric pattern ceiling"
   },
   "alt": {
     "tr": "Geometrik desenli tavan kaplaması, bar tezgâhı ve taş yüzeyli yemek masası olan modern bir mutfak",

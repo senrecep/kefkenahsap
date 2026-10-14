@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Koyu Renk Kapılı Ofis Koridoru",
-    "en": "Office Corridor with Dark Doors"
+    "tr": "Koyu renk kapılı ofis koridoru",
+    "en": "Office corridor with dark doors"
   },
   "alt": {
     "tr": "Mermer zeminli uzun koridorda iki yanda koyu renk kapılar, camlı bölmeler ve tavanda ışıklı panel",

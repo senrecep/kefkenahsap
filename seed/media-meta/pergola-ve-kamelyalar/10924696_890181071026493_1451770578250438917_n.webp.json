@@ -4,8 +4,8 @@
   "model": "google/gemini-3.8-flash",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Müstakil Ev Verandasında Ahşap Sundurma Yapımı",
-    "en": "Wooden Veranda Canopy Construction for Villa Patio"
+    "tr": "Müstakil ev verandasında ahşap sundurma yapımı",
+    "en": "Wooden veranda canopy construction for villa patio"
   },
   "alt": {
     "tr": "Müstakil evin havuz başı verandasına kurulan çatılı ahşap sundurma ve taşıyıcı direkler.",

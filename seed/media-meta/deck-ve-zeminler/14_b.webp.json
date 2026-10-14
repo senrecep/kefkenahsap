@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Deck Altyapısı: Ahşap Kirişler ve Çakıl Dolgu",
-    "en": "Deck Substructure: Timber Joists and Gravel Fill"
+    "tr": "Deck altyapısı: ahşap kirişler ve çakıl dolgu",
+    "en": "Deck substructure: timber joists and gravel fill"
   },
   "alt": {
     "tr": "Bahçede gri çakıl dolgulu aralıklarla yerleştirilmiş ahşap deck taşıyıcı kirişleri, arkada şimşir çalıları ve taş sütunlu çit",

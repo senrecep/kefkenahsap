@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Bahçede Çatılı Ahşap Kamelya",
-    "en": "Wooden Gazebo with Roof in a Garden"
+    "tr": "Bahçede çatılı ahşap kamelya",
+    "en": "Wooden gazebo with roof in a garden"
   },
   "alt": {
     "tr": "Bahçede dört kolonlu, kafes şeritli ve üst kısmı kule çatılı açık renkli ahşap kamelya, önünde yuvarlak budanmış bir ağaç var",

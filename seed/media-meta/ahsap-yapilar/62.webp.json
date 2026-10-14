@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Kiremit Çatılı İki Katlı Ev, Koyu Ahşap Saçak ve Pencere Çerçeveleri",
-    "en": "Two-Storey House with Tiled Roof and Dark Wooden Eaves and Window Frames"
+    "tr": "Kiremit çatılı iki katlı ev, koyu ahşap saçak ve pencere çerçeveleri",
+    "en": "Two-storey house with tiled roof and dark wooden eaves and window frames"
   },
   "alt": {
     "tr": "Beyaz sıvalı, alt kısmı tuğla kaplı iki katlı evde kiremit çatı, koyu renk ahşap saçaklar ve ahşap pencere çerçeveleri",

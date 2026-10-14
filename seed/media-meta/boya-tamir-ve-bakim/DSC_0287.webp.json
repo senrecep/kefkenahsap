@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Kütük Direkli Sundurmada Bakım ve Onarım",
-    "en": "Maintenance and Repair on a Log-Column Porch"
+    "tr": "Kütük direkli sundurmada bakım ve onarım",
+    "en": "Maintenance and repair on a log-column porch"
   },
   "alt": {
     "tr": "Bahçeye bakan sundurmada koyu boyalı kütük direkler, geçici kalaslarla desteklenen kirişler ve çalışan bir usta",

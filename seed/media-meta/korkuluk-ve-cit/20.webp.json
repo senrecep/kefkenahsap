@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Bahçe İçin Kafesli Ahşap Çit",
-    "en": "Wooden Garden Fence with Lattice Panels"
+    "tr": "Bahçe için kafesli ahşap çit",
+    "en": "Wooden garden fence with lattice panels"
   },
   "alt": {
     "tr": "Site bahçesinde çim alanı çevreleyen, üstü kafesli ve altı dikey çıtalı açık yeşilimsi ahşap çit",

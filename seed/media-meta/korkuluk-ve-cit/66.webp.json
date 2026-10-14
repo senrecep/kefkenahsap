@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Ağaç Gövdesini Saran Ahşap Deck ve Çapraz Korkuluk",
-    "en": "Wooden Deck with X-Pattern Railing Built Around a Tree"
+    "tr": "Ağaç gövdesini saran ahşap deck ve çapraz korkuluk",
+    "en": "Wooden deck with X-pattern railing built around a tree"
   },
   "alt": {
     "tr": "Çam ormanında basamaklı ahşap deck, gövdesi zeminden geçen ağaç ve çapraz çıtalı ahşap korkuluk",

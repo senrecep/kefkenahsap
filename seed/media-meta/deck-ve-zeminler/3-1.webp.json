@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Havuz Kenarı Ahşap Deck",
-    "en": "Poolside Wooden Deck"
+    "tr": "Havuz kenarı ahşap deck",
+    "en": "Poolside wooden deck"
   },
   "alt": {
     "tr": "Havuz kenarında açık tonlu ahşap deck zemini, yanında taş kenarlık, oluk ızgarası ve kırmızı sardunyalar",

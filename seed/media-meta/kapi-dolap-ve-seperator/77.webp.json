@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Çift Kapılı Ahşap Kabin",
-    "en": "Wooden Cabin with Double Doors"
+    "tr": "Çift kapılı ahşap kabin",
+    "en": "Wooden cabin with double doors"
   },
   "alt": {
     "tr": "Taş duvarın önünde, kırmızı kaplama zemin üzerinde duran, çift kapılı ve OSB çatılı açık renkli ahşap kabin",

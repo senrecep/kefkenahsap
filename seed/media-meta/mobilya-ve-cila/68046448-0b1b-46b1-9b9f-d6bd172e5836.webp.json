@@ -4,8 +4,8 @@
   "model": "google/gemini-3.8-flash",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Ofis Girişi ve Cam Bölme Kapı Uygulaması",
-    "en": "Office Entrance and Glass Partition Door"
+    "tr": "Ofis girişi ve cam bölme kapı uygulaması",
+    "en": "Office entrance and glass partition door"
   },
   "alt": {
     "tr": "Siyah profilli cam kapı ve aydınlatmalı tabela bulunan modern ofis giriş koridoru.",

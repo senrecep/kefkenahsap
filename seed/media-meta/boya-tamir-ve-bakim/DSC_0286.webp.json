@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Veranda Direklerinin Yenilenmesi",
-    "en": "Replacing the Veranda Posts"
+    "tr": "Veranda direklerinin yenilenmesi",
+    "en": "Replacing the veranda posts"
   },
   "alt": {
     "tr": "Evin verandasında koyu boyalı eski yuvarlak direkler yanında yeni, boyasız açık renkli ahşap kiriş ve geçici destek tahtaları",

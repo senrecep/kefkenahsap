@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Ormanlık Arazide Taş Duvarlı Ahşap Ev",
-    "en": "Wooden House with Stone Wall in a Wooded Lot"
+    "tr": "Ormanlık arazide taş duvarlı ahşap ev",
+    "en": "Wooden house with stone wall in a wooded lot"
   },
   "alt": {
     "tr": "Ağaçların arasında, taş istinat duvarının üstünde duran iki katlı ahşap ev; üst katta korkuluklu geniş teras var.",

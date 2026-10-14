@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Ormanlık Arazide Çift Katlı Ahşap Ev",
-    "en": "Two-Storey Wooden House in a Wooded Setting"
+    "tr": "Ormanlık arazide çift katlı ahşap ev",
+    "en": "Two-storey wooden house in a wooded setting"
   },
   "alt": {
     "tr": "Ağaçlarla çevrili çimenlik arazide, balkonlu ve kırma çatılı çift katlı ahşap ev; önde tel örgü ve çalılar var",

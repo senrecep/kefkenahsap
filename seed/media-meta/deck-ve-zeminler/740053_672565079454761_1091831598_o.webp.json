@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Havuz Kenarı Deck Alt Konstrüksiyonu",
-    "en": "Poolside Deck Substructure"
+    "tr": "Havuz kenarı deck alt konstrüksiyonu",
+    "en": "Poolside deck substructure"
   },
   "alt": {
     "tr": "Havuz kenarında çim zemin üzerine kurulmuş, yay biçimli ahşap deck alt iskeleti ve üzerinde duran metal profil",

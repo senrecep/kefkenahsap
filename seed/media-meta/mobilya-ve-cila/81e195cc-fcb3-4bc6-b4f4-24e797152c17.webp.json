@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Beyaz Boyalı Çerçeveli Kapı Açıklığı ve U Tipi Mutfak",
-    "en": "White Painted Door Frame and U-Shaped Kitchen"
+    "tr": "Beyaz boyalı çerçeveli kapı açıklığı ve U tipi mutfak",
+    "en": "White painted door frame and U-shaped kitchen"
   },
   "alt": {
     "tr": "Beyaz boyalı geniş kasalı kapı açıklığından görünen, çerçeveli beyaz dolapları ve ankastre ocak ile fırını olan U tipi mutfak",

@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Bahçeli İki Katlı Ahşap Ev",
-    "en": "Two-Storey Timber House with Garden"
+    "tr": "Bahçeli iki katlı ahşap ev",
+    "en": "Two-storey timber house with garden"
   },
   "alt": {
     "tr": "Taş duvarlı bahçenin ardında, balkonlu ve kiremit çatılı iki katlı ahşap ev; önünde servi ağaçları var",

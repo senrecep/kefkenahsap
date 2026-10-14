@@ -4,8 +4,8 @@
   "model": "google/gemini-3.8-flash",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Bahçe İçin Yükseltilmiş Ahşap Deck ve Korkuluk",
-    "en": "Raised Garden Wood Deck with Railing"
+    "tr": "Bahçe için yükseltilmiş ahşap deck ve korkuluk",
+    "en": "Raised garden wood deck with railing"
   },
   "alt": {
     "tr": "Çim bahçede basamağı ve ahşap korkuluğu bulunan açık renkli yükseltilmiş deck zemin.",

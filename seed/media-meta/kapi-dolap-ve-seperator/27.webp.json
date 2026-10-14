@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Havuz Kenarı Ahşap Kabin",
-    "en": "Wooden Cabin by the Pool"
+    "tr": "Havuz kenarı ahşap kabin",
+    "en": "Wooden cabin by the pool"
   },
   "alt": {
     "tr": "Havuz kenarında, bahçede duran açık renkli ahşap kabin; çapraz destekli kapısı ve üstünde çıkıntılı bir saçak var.",

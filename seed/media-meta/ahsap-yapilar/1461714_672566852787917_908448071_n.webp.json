@@ -4,8 +4,8 @@
   "model": "google/gemini-3.8-flash",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Ahşap Restoran Çatı ve Tavan Konstrüksiyonu",
-    "en": "Wooden Restaurant Roof and Ceiling Structure"
+    "tr": "Ahşap restoran çatı ve tavan konstrüksiyonu",
+    "en": "Wooden restaurant roof and ceiling structure"
   },
   "alt": {
     "tr": "Ahşap karkas çatılı ve tekerlek avizeli restoran tavanı ile masa düzeni.",

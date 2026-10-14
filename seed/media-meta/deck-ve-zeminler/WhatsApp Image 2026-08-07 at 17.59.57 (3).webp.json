@@ -4,8 +4,8 @@
   "model": "google/gemini-3.8-flash",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Bahçede Kademeli Ahşap Deck Uygulaması",
-    "en": "Multi-Level Wooden Garden Decking"
+    "tr": "Bahçede kademeli ahşap deck uygulaması",
+    "en": "Multi-level wooden garden decking"
   },
   "alt": {
     "tr": "Bahçede ağaç etrafına kademeli olarak döşenmiş ahşap deck kaplama ve çim alan.",

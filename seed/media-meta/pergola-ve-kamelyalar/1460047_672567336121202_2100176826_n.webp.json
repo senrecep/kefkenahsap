@@ -4,8 +4,8 @@
   "model": "google/gemini-3.8-flash",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Site Bahçesi İçin Ahşap Kamelya",
-    "en": "Wooden Gazebo for Residential Garden"
+    "tr": "Site bahçesi için ahşap kamelya",
+    "en": "Wooden gazebo for residential garden"
   },
   "alt": {
     "tr": "Site bahçesinde kırmızı şıngıl çatılı, ahşap korkuluklu ve oturma banklı sekizgen kamelya.",

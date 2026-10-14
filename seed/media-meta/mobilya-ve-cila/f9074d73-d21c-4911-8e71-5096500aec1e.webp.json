@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Cam Bölmeli Toplantı Odası, Geometrik Desenli Duvar Paneli",
-    "en": "Glass-Walled Meeting Room with Geometric Wall Panel"
+    "tr": "Cam bölmeli toplantı odası, geometrik desenli duvar paneli",
+    "en": "Glass-walled meeting room with geometric wall panel"
   },
   "alt": {
     "tr": "Cam bölmeli toplantı odasında oval masa, tekerlekli koltuklar ve ekranın bulunduğu geometrik desenli kahverengi duvar paneli",

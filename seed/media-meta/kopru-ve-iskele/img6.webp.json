@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Korkuluk Direğinde Cıvata Montajı",
-    "en": "Bolting a Railing Post in Place"
+    "tr": "Korkuluk direğinde cıvata montajı",
+    "en": "Bolting a railing post in place"
   },
   "alt": {
     "tr": "Ahşap korkuluk direğine cırcırlı lokma anahtarla cıvata sıkılıyor, üstte bir mengene direği sabit tutuyor.",

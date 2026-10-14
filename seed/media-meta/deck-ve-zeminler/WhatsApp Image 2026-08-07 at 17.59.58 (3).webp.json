@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Havuz Çevresi Ahşap Deck",
-    "en": "Wooden Pool Deck"
+    "tr": "Havuz çevresi ahşap deck",
+    "en": "Wooden pool deck"
   },
   "alt": {
     "tr": "Bahçedeki dikdörtgen havuzun çevresini saran, kısa tahtalardan döşenmiş ahşap deck ve paslanmaz halat korkuluk",

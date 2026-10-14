@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Bahçede Ahşap Çit, Paravan ve Pergola",
-    "en": "Wooden Fence, Screen and Pergola in a Garden"
+    "tr": "Bahçede ahşap çit, paravan ve pergola",
+    "en": "Wooden fence, screen and pergola in a garden"
   },
   "alt": {
     "tr": "Çimenli bahçede ahşap korkuluk çit, yatay çıtalı ahşap paravan ve taş zeminli teras üzerinde pergola",

@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Beyaz Üst, Gri Alt Dolaplı L Mutfak",
-    "en": "L-Shaped Kitchen with White Upper and Grey Lower Cabinets"
+    "tr": "Beyaz üst, gri alt dolaplı L mutfak",
+    "en": "L-shaped kitchen with white upper and grey lower cabinets"
   },
   "alt": {
     "tr": "Beyaz üst dolapları ve gri çekmeceli alt dolapları olan L şekilli mutfak, tezgah ve armatürler henüz takılmamış",

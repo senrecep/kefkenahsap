@@ -4,8 +4,8 @@
   "model": "google/gemini-3.8-flash",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Ahşap Dış Mekan Merdiveni ve Balkon Korkuluğu",
-    "en": "Wooden Outdoor Staircase and Balcony Railing"
+    "tr": "Ahşap dış mekan merdiveni ve balkon korkuluğu",
+    "en": "Wooden outdoor staircase and balcony railing"
   },
   "alt": {
     "tr": "Taş duvarlı evin dış cephesinde üst kata çıkan ahşap merdiven ve parmaklıklı korkuluklar.",
