@@ -11,13 +11,11 @@ import { Picture } from '@/components/ui/Picture'
 import { getPathname, Link } from '@/i18n/navigation'
 import type { Locale } from '@/i18n/routing'
 import { getRegion } from '@/lib/data/regions'
-import { getSiteSettings } from '@/lib/data/site'
 import { metaDescription } from '@/lib/guides/meta'
 import { safeDecode } from '@/lib/http/safe-decode'
-import { responsiveImage } from '@/lib/media/image'
 import { bodyText } from '@/lib/regions/gate'
 import { siteUrl } from '@/lib/seo/alternates'
-import { breadcrumbJsonLd, serviceJsonLd } from '@/lib/seo/jsonld'
+import { breadcrumbJsonLd } from '@/lib/seo/jsonld'
 import { pageMetadata } from '@/lib/seo/page-metadata'
 
 type Params = Promise<{ locale: Locale; slug: string }>
@@ -42,8 +40,9 @@ export default async function RegionPage({ params }: { params: Params }) {
   const data = await getRegion(locale, slug)
   if (!data) notFound()
   const { region, cards, photos } = data
-  const [t, settings] = await Promise.all([getTranslations('Regions'), getSiteSettings(locale)])
+  const [t, tNav] = await Promise.all([getTranslations('Regions'), getTranslations('Nav')])
   const site = siteUrl().replace(/\/$/, '')
+  const home = site + getPathname({ locale, href: '/' })
   const url =
     site + getPathname({ locale, href: { pathname: '/bolgeler/[slug]', params: { slug } } })
   const text = bodyText(region.body)
@@ -51,24 +50,30 @@ export default async function RegionPage({ params }: { params: Params }) {
 
   return (
     <>
-      {/* Only what the page shows: the region name (H1, also the area served), its photos and the breadcrumb trail. */}
-      <JsonLd
-        data={[
-          serviceJsonLd({
-            site,
-            name: region.name,
-            url,
-            image: photos[0] && responsiveImage(photos[0]).src,
-            areaServed: [region.name],
-          }),
-          breadcrumbJsonLd([
-            { name: settings.companyName, url: site + getPathname({ locale, href: '/' }) },
+      {/* Only for an indexable page (gate passed here); the crumbs repeat the visible trail below. */}
+      {data.paths[locale] && (
+        <JsonLd
+          data={breadcrumbJsonLd([
+            { name: tNav('home'), url: home },
             { name: region.name, url },
-          ]),
-        ]}
-      />
-      <Container as="header" className="pt-10 pb-8 md:pt-16 md:pb-10">
-        <h1 className="max-w-[24ch] text-[2.1rem] leading-[1.08] md:text-[3.2rem]">
+          ])}
+        />
+      )}
+      <Container as="header" className="pt-6 pb-8 md:pt-10 md:pb-10">
+        <nav aria-label={t('breadcrumb')} className="text-[0.95rem] text-ink-soft">
+          <ol className="flex flex-wrap gap-x-2">
+            <li>
+              <Link href="/" className="text-action underline">
+                {tNav('home')}
+              </Link>
+              <span aria-hidden className="ms-2">
+                /
+              </span>
+            </li>
+            <li aria-current="page">{region.name}</li>
+          </ol>
+        </nav>
+        <h1 className="mt-6 max-w-[24ch] text-[2.1rem] leading-[1.08] md:text-[3.2rem]">
           {region.name}
         </h1>
       </Container>

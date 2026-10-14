@@ -92,9 +92,9 @@ export async function Footer({ locale }: { locale: Locale }) {
               <ul className="grid gap-1.5">
                 {regions.map((r) => (
                   <li key={r.id}>
-                    <a href={r.href} className="text-paper/90 hover:underline">
+                    <Link href={{ pathname: '/bolgeler/[slug]', params: { slug: r.slug } }} className="text-paper/90 hover:underline">
                       {r.name}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>

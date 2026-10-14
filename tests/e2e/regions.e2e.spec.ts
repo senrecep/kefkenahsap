@@ -21,8 +21,10 @@ test.describe('region pages and publish gate', () => {
   const ids = { projects: [] as number[], regions: [] as number[], media: [] as number[] }
   const pass = { name: `E2E Bölge Geçer ${stamp}`, slug: `e2e-bolge-gecer-${stamp}` }
   const fail = { name: `E2E Bölge Kalır ${stamp}`, slug: `e2e-bolge-kalir-${stamp}` }
+  const passEn = { name: `E2E Area ${stamp}`, slug: `e2e-area-${stamp}` }
   const projectSlugs: string[] = []
   let photoSlug = ''
+  let pendingSlug = ''
 
   test.beforeAll(async () => {
     test.setTimeout(120_000)
@@ -30,17 +32,29 @@ test.describe('region pages and publish gate', () => {
     const photo = await uploadPhoto(api, { seoFilename: `e2e-bolge-${stamp}` })
     ids.media.push(photo.id)
     photoSlug = photo.seoFilename
+    // A photo not yet approved must never reach the page, even inside a counted project's gallery.
+    const pending = await uploadPhoto(api, { seoFilename: `e2e-bolge-bekleyen-${stamp}`, status: 'pending' }, 3)
+    ids.media.push(pending.id)
+    pendingSlug = pending.seoFilename
     const a = await createDoc(api, 'regions', { _status: 'published', ...pass, body })
+    // English text long enough, but only 2 of its 3 projects have English text → English stays below the gate.
+    expect((await api.patch(`/api/regions/${a.id}?locale=en`, { data: { ...passEn, body } })).ok()).toBe(true)
     const b = await createDoc(api, 'regions', { _status: 'published', ...fail, body })
     ids.regions.push(a.id, b.id)
     for (const [region, n] of [[a.id, 3], [b.id, 2]] as const) {
       for (let i = 0; i < n; i++) {
         const slug = `e2e-bolge-proje-${region}-${i}-${stamp}`
-        const p = await createDoc(api, 'projects', { _status: 'published', title: `E2E Bölge Projesi ${region}-${i}`, slug, region, gallery: [photo.id], year: 2020 + i })
+        const p = await createDoc(api, 'projects', { _status: 'published', title: `E2E Bölge Projesi ${region}-${i}`, slug, region, gallery: [photo.id, pending.id], year: 2020 + i })
         ids.projects.push(p.id)
         if (region === a.id) projectSlugs.push(slug)
+        if (region === a.id && i < 2) {
+          const en = { title: `E2E Area project ${region}-${i}`, slug: `e2e-area-project-${region}-${i}-${stamp}` }
+          expect((await api.patch(`/api/projects/${p.id}?locale=en`, { data: en })).ok()).toBe(true)
+        }
       }
     }
+    // A draft third project must not lift the failing region over the gate.
+    ids.projects.push((await createDoc(api, 'projects', { _status: 'draft', title: `E2E Bölge Taslak ${stamp}`, slug: `e2e-bolge-taslak-${stamp}`, region: b.id })).id)
   })
 
   test.afterAll(async () => {
@@ -55,17 +69,19 @@ test.describe('region pages and publish gate', () => {
     const html = await (await request.get(path)).text()
     expect(attr(html, /<meta name="robots" content="([^"]*)"/) ?? '').not.toMatch(/noindex/)
     expect(new URL(attr(html, /<link rel="canonical" href="([^"]*)"/)!).pathname).toBe(path)
-    // No English name/slug → no English page in hreflang.
+    // The English page exists but fails the gate (2 English projects) → no English hreflang.
     expect(html).not.toMatch(/<link rel="alternate" hrefLang="en"/)
 
     const nodes = jsonLd(html)
-    const [service] = nodes.filter((n) => n['@type'] === 'Service')
-    expect(service).toMatchObject({ name: pass.name, areaServed: [pass.name] })
-    expect(new URL(service!.url as string).pathname).toBe(path)
+    // A place is not a service: breadcrumbs only.
+    expect(nodes.filter((n) => n['@type'] === 'Service')).toEqual([])
     const [crumbs] = nodes.filter((n) => n['@type'] === 'BreadcrumbList')
     const items = crumbs!.itemListElement as { position: number; name: string; item: string }[]
     expect(items.map((i) => i.position)).toEqual([1, 2])
-    expect(items[1]).toMatchObject({ name: pass.name, item: service!.url })
+    expect(items[0]!.name).toBe('Ana sayfa')
+    expect(new URL(items[0]!.item).pathname).toBe('/tr')
+    expect(items[1]!.name).toBe(pass.name)
+    expect(new URL(items[1]!.item).pathname).toBe(path)
 
     await page.goto(path)
     await expect(page.getByRole('heading', { level: 1, name: pass.name })).toBeVisible()
@@ -73,6 +89,9 @@ test.describe('region pages and publish gate', () => {
     const projects = page.getByRole('region', { name: 'Bu bölgede yaptığımız işler' })
     for (const slug of projectSlugs) await expect(projects.locator(`a[href="/tr/projeler/${slug}"]`)).toBeVisible()
     await expect(page.getByRole('region', { name: 'Bu işlerden fotoğraflar' }).locator(`a[href="/tr/galeri/${photoSlug}"]`)).toHaveCount(1)
+    await expect(page.locator(`a[href="/tr/galeri/${pendingSlug}"]`)).toHaveCount(0)
+    expect(await page.content()).not.toContain(pendingSlug)
+    await expect(page.getByRole('navigation', { name: 'Konum' }).getByRole('link', { name: 'Ana sayfa' })).toHaveAttribute('href', '/tr')
     await expect(page.locator('main [data-end-band]')).toBeVisible()
     await expect(page.locator('footer').getByRole('link', { name: pass.name })).toHaveAttribute('href', path)
 
@@ -80,12 +99,27 @@ test.describe('region pages and publish gate', () => {
     await expect.poll(async () => (await request.get('/sitemap.xml')).text(), { timeout: 20_000 }).toContain(`/tr/bolgeler/${pass.slug}</loc>`)
   })
 
-  test('failing region (2 projects): noindex, no canonical, not in the sitemap or footer', async ({ page, request }) => {
+  test('English page of the passing region: 2 English projects → noindex, and TR lists no English hreflang', async ({ request }) => {
+    const path = `/en/areas/${passEn.slug}`
+    await expect.poll(async () => (await request.get(path)).status(), { timeout: 20_000 }).toBe(200)
+    const html = await (await request.get(path)).text()
+    expect(attr(html, /<meta name="robots" content="([^"]*)"/)).toMatch(/noindex/)
+    expect(html).not.toMatch(/<link rel="canonical"/)
+    expect(jsonLd(html).filter((n) => n['@type'] === 'BreadcrumbList')).toEqual([])
+    const tr = await (await request.get(`/tr/bolgeler/${pass.slug}`)).text()
+    expect(tr).not.toMatch(/<link rel="alternate" hrefLang="en"/)
+    expect(await (await request.get('/sitemap.xml')).text()).not.toContain(passEn.slug)
+  })
+
+  test('failing region (2 published projects + 1 draft): noindex, no canonical, not in the sitemap or footer', async ({ page, request }) => {
     const path = `/tr/bolgeler/${fail.slug}`
     await expect.poll(async () => (await request.get(path)).status(), { timeout: 20_000 }).toBe(200)
     const html = await (await request.get(path)).text()
     expect(attr(html, /<meta name="robots" content="([^"]*)"/)).toMatch(/noindex/)
     expect(html).not.toMatch(/<link rel="canonical"/)
+    // No English name/slug → no English hreflang; noindex → no JSON-LD.
+    expect(html).not.toMatch(/<link rel="alternate" hrefLang="en"/)
+    expect(jsonLd(html).filter((n) => n['@type'] === 'BreadcrumbList')).toEqual([])
 
     await page.goto(path)
     await expect(page.getByRole('heading', { level: 1, name: fail.name })).toBeVisible()
