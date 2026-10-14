@@ -23,6 +23,7 @@ import { UnderlineFeatureClient as UnderlineFeatureClient_e70f5e05f09f93e00b997e
 import { BoldFeatureClient as BoldFeatureClient_e70f5e05f09f93e00b997edb1ef0c864 } from '@payloadcms/richtext-lexical/client'
 import { ItalicFeatureClient as ItalicFeatureClient_e70f5e05f09f93e00b997edb1ef0c864 } from '@payloadcms/richtext-lexical/client'
 import { AiDraftButton as AiDraftButton_74b3403b486755396cc9d93394c1a645 } from '../../../components/admin/ai/AiDraftButton'
+import { BlocksFeatureClient as BlocksFeatureClient_e70f5e05f09f93e00b997edb1ef0c864 } from '@payloadcms/richtext-lexical/client'
 import { TableFeatureClient as TableFeatureClient_e70f5e05f09f93e00b997edb1ef0c864 } from '@payloadcms/richtext-lexical/client'
 import { AiCostPanel as AiCostPanel_9e84ffc77357795b8d99f5a230450311 } from '../../../components/admin/ai/AiCostPanel'
 import { ModelChainField as ModelChainField_d77a712d1bedd37370d3a63d45d5b63e } from '../../../components/admin/ai/ModelChainField'
@@ -58,6 +59,7 @@ export const importMap = {
   "@payloadcms/richtext-lexical/client#BoldFeatureClient": BoldFeatureClient_e70f5e05f09f93e00b997edb1ef0c864,
   "@payloadcms/richtext-lexical/client#ItalicFeatureClient": ItalicFeatureClient_e70f5e05f09f93e00b997edb1ef0c864,
   "/components/admin/ai/AiDraftButton#AiDraftButton": AiDraftButton_74b3403b486755396cc9d93394c1a645,
+  "@payloadcms/richtext-lexical/client#BlocksFeatureClient": BlocksFeatureClient_e70f5e05f09f93e00b997edb1ef0c864,
   "@payloadcms/richtext-lexical/client#TableFeatureClient": TableFeatureClient_e70f5e05f09f93e00b997edb1ef0c864,
   "/components/admin/ai/AiCostPanel#AiCostPanel": AiCostPanel_9e84ffc77357795b8d99f5a230450311,
   "/components/admin/ai/ModelChainField#ModelChainField": ModelChainField_d77a712d1bedd37370d3a63d45d5b63e,
