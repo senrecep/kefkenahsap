@@ -48,6 +48,12 @@ ssh senrecep "docker rm -f kefken-gh-runner-$N; mkdir -p /var/lib/kefken-runner-
 - `SITE_ENV` in the Dokploy env must equal the CI environment name (`development`/`production`): the compose runs image `kefkenahsap-app:${SITE_ENV}` with `pull_policy: never`.
 - Production: deploy job is disabled until the repo variable `PRODUCTION_DEPLOY_APPROVED=true` is set by the owner (GitHub plan has no environment reviewers).
 
+### Production environment
+
+- Dokploy compose `app` (id `e9_MpMOeFkF1QLwEItoeq`, appName `compose-reboot-haptic-feed-t5r4ra`) in project `kefkenahsap` / environment `production`, raw compose = `docker-compose.dokploy.yml`, isolated deployment. The same environment holds the unrelated `wood-material-calculator` stack.
+- Env in Dokploy and in the owner's local `.dokploy-prod.env`; `COMPOSE_PROFILES=backup`, no basic auth.
+- Cutover steps (deploy gate, seed, domain/TLS, DNS, rollback): `docs/LAUNCH.md`.
+
 ## Observability
 
 ### GlitchTip (errors)
@@ -73,7 +79,7 @@ ssh senrecep "docker rm -f kefken-gh-runner-$N; mkdir -p /var/lib/kefken-runner-
 - `/api/health` skips basic auth and returns `{"ok":true}` (200) when the app and DB are up, 503 otherwise.
 - Monitors (Add New Monitor):
   1. Type **HTTP(s) - Keyword**, name `kefkenahsap development`, URL `https://development.kefkenahsap.com/api/health`, keyword `"ok":true`, interval 60 s, retries 2, accepted status codes `200-299`; attach the existing notification channel.
-  2. At launch: the same for `https://kefkenahsap.com/api/health` (`kefkenahsap production`).
+  2. At launch: the same for `https://www.kefkenahsap.com/api/health` (`kefkenahsap production`; the apex 301s to www).
 
 ## Backups
 
