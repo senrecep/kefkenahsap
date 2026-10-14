@@ -91,10 +91,13 @@ test.describe('Category page', () => {
   })
 
   test('services page links the categories', async ({ page }) => {
-    await page.goto('/tr/hizmetlerimiz')
-    await expect(page.locator('h1')).toHaveText('Hizmetlerimiz')
-    await expect(page.locator(`main a[href="/tr/${full.tr}"]`)).toHaveCount(1)
-    await page.goto('/en/services')
-    await expect(page.locator(`main a[href="/en/${full.en}"]`)).toHaveCount(1)
+    // revalidateTag(..., 'max') is stale-while-revalidate: the first hit after a write may still serve the old list.
+    for (const [path, href] of [['/tr/hizmetlerimiz', `/tr/${full.tr}`], ['/en/services', `/en/${full.en}`]]) {
+      await expect(async () => {
+        await page.goto(path)
+        await expect(page.locator(`main a[href="${href}"]`)).toHaveCount(1, { timeout: 1000 })
+      }).toPass({ timeout: 15_000 })
+    }
+    await expect(page.locator('h1')).toHaveText('Our services')
   })
 })
