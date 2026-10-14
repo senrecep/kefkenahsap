@@ -7,6 +7,7 @@ import { useEffect, useRef, useState, type ReactNode } from 'react'
 export function MobileMenu({ label, closeLabel, children }: { label: string; closeLabel: string; children: ReactNode }) {
   const [open, setOpen] = useState(false)
   const panel = useRef<HTMLDivElement>(null)
+  const toggle = useRef<HTMLButtonElement>(null)
   useEffect(() => {
     if (!open) return
     const onKey = (e: KeyboardEvent) => e.key === 'Escape' && setOpen(false)
@@ -16,11 +17,13 @@ export function MobileMenu({ label, closeLabel, children }: { label: string; clo
     return () => {
       document.removeEventListener('keydown', onKey)
       document.body.style.overflow = ''
+      toggle.current?.focus() // return focus to the toggle on close
     }
   }, [open])
   return (
     <div className="lg:hidden">
       <button
+        ref={toggle}
         type="button"
         aria-expanded={open}
         aria-controls="mobile-menu"

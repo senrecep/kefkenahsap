@@ -6,8 +6,9 @@ const bust = (tags: string[]) => {
   for (const t of tags) {
     try {
       revalidateTag(t, 'max')
-    } catch {
-      // Not inside Next (CLI/seed/tests): nothing cached to invalidate.
+    } catch (err) {
+      // Outside a Next runtime (seed/CLI/tests) there is no cache to invalidate; anything else is a real failure.
+      if (!/static generation store|incrementalCache|outside a request/i.test(String(err))) console.error('revalidateTag failed', t, err)
     }
   }
 }

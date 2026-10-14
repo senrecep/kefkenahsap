@@ -13,7 +13,7 @@ export async function Footer({ locale }: { locale: Locale }) {
     getTranslations('Nav'),
     getTranslations('Days'),
     getSiteSettings(locale),
-    getNavCategories(locale),
+    getNavCategories(locale).then((cs) => cs.filter((c) => c.slug)),
   ])
   const tel = telLink(settings)
   const wa = waLink(settings)
@@ -72,7 +72,7 @@ export async function Footer({ locale }: { locale: Locale }) {
           <ul className="grid gap-1.5">
             {categories.map((c) => (
               <li key={c.id}>
-                <Link href={{ pathname: '/[category]', params: { category: c.slug ?? '' } }} className="text-paper/90 hover:underline">
+                <Link href={{ pathname: '/[category]', params: { category: c.slug! } }} className="text-paper/90 hover:underline">
                   {c.name}
                 </Link>
               </li>
