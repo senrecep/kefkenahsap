@@ -7,7 +7,9 @@ Dosyalar:
 - `docs/media-archive/<kategori>.webp`: seçilen fotoğrafların küçük önizlemeleri. Altındaki yazı SEO dosya adıdır.
 - Yükleme betiği: `scripts/seed/archive.ts`. Arşiv dosyaları depoya konmadı.
 
-## Kategori başına
+## Kategori başına (fotoğrafın konduğu kategoriye göre)
+
+Bu tablo, fotoğrafın sitede gösterileceği kategoriye göredir. Arşiv klasörüne göre sayılar aşağıdaki "Klasör başına" tablosunda.
 
 | Kategori | Sitede (onaylı) | Arşivden eklenen | Toplam (onaydan sonra) |
 |---|---:|---:|---:|
@@ -65,7 +67,9 @@ Gözle incelemede elenen 642 fotoğrafın gerekçeleri:
 | Ahşap dışı iş | 6 |
 | Okunabilir plaka | 5 |
 
-Klasör başına ("Seçilen" klasöre göredir; kategoriye göre dağılım ilk tabloda):
+### Klasör başına (fotoğrafın arşivdeki klasörüne göre)
+
+Bu tablo eleme aşamalarını arşiv klasörüne göre gösterir. "Seçilen" sütunu, o klasörden seçilen fotoğraf sayısıdır. Bunların 17'si başka bir kategoriye kondu, bu yüzden toplamlar ilk tablodaki kategori sayılarıyla satır satır tutmaz. İki tablonun genel toplamı aynıdır: 210.
 
 | Klasör | Arşivde | Sitede var | Arşivde kopya | Teknik eleme | Otomatik işaret | Gözle bakılan | Seçilen |
 |---|---:|---:|---:|---:|---:|---:|---:|
@@ -84,7 +88,7 @@ Klasör başına ("Seçilen" klasöre göredir; kategoriye göre dağılım ilk 
 ## Onaylarken bakmanız gerekenler
 
 - **Filigran:** Fotoğrafların çoğunun ortasında ince "kefkenahsap.com" yazısı var; bu kabul edildi. Kalın iki satırlı filigran veya tarih damgası işin üstündeyse fotoğraf elendi. Tek istisna havuz üstündeki kavisli deck (Deck ve Zeminler/3680): bu işin başka karesi yok.
-- **Telefon damgası:** Birkaç fotoğrafın köşesinde "Redmi Note 8 Pro" yazısı var. İşin üstünde değil, ama kırpmak isteyebilirsiniz: Korkuluk ve Cit/12239, 12237, 12242; Pergola ve Kamelyalar/12190.
+- **Telefon damgası:** Birkaç fotoğrafın köşesinde "Redmi Note 8 Pro" yazısı var. İşin üstünde değil, ama kırpmak isteyebilirsiniz: Korkuluk ve Çit'te 12239 ve 12242, Merdivenler'de 12237 (arşivde Korkuluk ve Cit klasöründe), Pergola ve Kamelyalar'da 12190.
 - **Ahşap türü:** İroko ve Teak'e eklenen 15 fotoğrafta tür yazılmadı, çünkü fotoğraftan anlaşılmıyor. Bunların gerçekten iroko veya teak olduğunu teyit edin; değilse başka kategoriye taşıyın.
 - **Sizin işiniz mi:** Yeşil metal korkuluklu ahşap köprü (Kopru ve Iskele/1446), parktaki eskimiş köprü (Kopru ve Iskele/11007), lamine ahşap çatılı büyük salon (Ahsap Yapilar/6306), ahşap kaplamalı cumbalı ev (Ahsap Yapilar/12542; yalnızca kaplama mı, bütün ev mi?).
 - **Ne olduğu:** Merdiven altındaki kapaklı bölümler "dolap/depo" diye anlatıldı (5 fotoğraf). Bir verandadaki çıtalı paravan klima dış ünitesini gizliyor diye yazıldı (Korkuluk ve Cit/13925). Yanlışsa metni düzeltin.
@@ -97,5 +101,13 @@ Klasör başına ("Seçilen" klasöre göredir; kategoriye göre dağılım ilk 
 # Önce seed.ts çalışmış olmalı (kategoriler gerekli). Tekrar çalıştırmak güvenli: var olanları atlar.
 KEFKEN_ARCHIVE=/yol/kefken-data/Kaliteli bun run payload run scripts/seed/archive.ts
 ```
+
+## Onaydan sonra sıralama
+
+- **Kategori sayfaları** kayıtlı sırayı (`_media_media_order`) kullanır. Arşiv fotoğrafları seed'den sonra yüklendiği için her kategoride mevcut fotoğrafların arkasına gelir. Sırayı admin › Galeri'de sürükleyerek değiştirebilirsiniz.
+- **Galeri** bu sırayı kullanmaz, yükleme sırasına (id) bakar:
+  - Filtresiz /galeri'nin ilk sayfası en yeni 200 öne çıkan veya büyük (≥1280 px) fotoğraftan kategorilere dağıtılarak seçilir. Ana sayfadaki galeri de bu seçimin başıdır.
+  - Sonraki sayfalar, kategori/etiket filtreli galeri ve fotoğraf sayfasındaki "aynı kategoriden" listesi en yeniden eskiye gider.
+  - Bu yüzden onaylanan arşiv fotoğrafları galeride öne çıkar: ilk sayfanın seçim havuzuna girer, sonraki sayfalarda başta görünür.
 
 Lokal sonuç: 210 fotoğraf `pending` olarak yüklendi, onaylı 568 fotoğraf değişmedi, her kategoride yeni fotoğraflar mevcut sıranın sonuna eklendi, ikinci çalıştırma 0 yeni kayıt oluşturdu.

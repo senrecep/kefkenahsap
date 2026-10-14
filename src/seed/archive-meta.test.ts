@@ -17,6 +17,13 @@ const BANNED = [/eşsiz/i, /hayallerinizdeki/i, /kaliteden ödün/i, /en iyi hiz
 // Words a sentence-case title may still capitalise mid-sentence: proper nouns that appear in this set.
 const PROPER = /^(İroko|Iroko|Teak|İstanbul|Istanbul|Kefken|Şile|Riva)$/
 
+// A timber species named in the text must be visible and tagged (tags.wood); trees in the scenery ("çamlar arasında",
+// "pine trees") are fine. (?<!\p{L}) / (?!\p{L}) act as Unicode word edges.
+const SPECIES = /(?<!\p{L})(iroko|teak|tik|meşe|thermowood|ladin|sedir|oak|cedar|spruce|çam(?! ağaç)|pine(?! trees?))(?!\p{L})/gu
+const untaggedSpecies = (text: string, wood: string[]) =>
+  // Lower-cased the Turkish way first: a regex /i flag does not fold "İ" to "i".
+  [...text.toLocaleLowerCase('tr').matchAll(SPECIES)].map((m) => m[1]!).filter((w) => !wood.some((t) => t.toLocaleLowerCase('tr').includes(w)))
+
 /** "Every Word Capitalised" is title case; sentence case leaves later words lower case (CONTENT-STYLE-TR §3). */
 const isTitleCase = (s: string) => {
   const words = s.split(/\s+/).slice(1).filter((w) => /^\p{L}/u.test(w) && w.length > 3 && !PROPER.test(w))
@@ -31,6 +38,16 @@ describe('isTitleCase', () => {
   })
 })
 
+describe('untaggedSpecies', () => {
+  it('flags an untagged species but not scenery trees', () => {
+    expect(untaggedSpecies('İroko deck havuz kenarında', [])).toEqual(['iroko'])
+    expect(untaggedSpecies('İroko deck havuz kenarında', ['iroko'])).toEqual([])
+    expect(untaggedSpecies('Çamlar arasında ahşap köprü; çam ağaçlarının altında', [])).toEqual([])
+    expect(untaggedSpecies('Deck among pines and pine trees', [])).toEqual([])
+    expect(untaggedSpecies('Pine decking by a pool', [])).toEqual(['pine'])
+  })
+})
+
 describe('archive media metadata', () => {
   it('exists for at least one photo', () => expect(files.length).toBeGreaterThan(0))
 
@@ -40,9 +57,13 @@ describe('archive media metadata', () => {
     expect(meta.source).toMatch(/^[^/]+\/[^/]+\.webp$/)
     expect(TagImageSchema.safeParse(meta).success).toBe(true)
     expect(meta.generatedAt).toMatch(/^\d{4}-\d{2}-\d{2}/)
-    for (const l of ['tr', 'en'] as const) expect(isTitleCase(meta.title[l]), meta.title[l]).toBe(false)
+    for (const l of ['tr', 'en'] as const) {
+      expect(isTitleCase(meta.title[l]), meta.title[l]).toBe(false)
+      expect(meta.alt[l].length, meta.alt[l]).toBeLessThanOrEqual(125)
+    }
     const text = JSON.stringify({ title: meta.title, alt: meta.alt, caption: meta.caption })
     for (const re of BANNED) expect(text, String(re)).not.toMatch(re)
+    expect(untaggedSpecies(text, meta.tags.wood)).toEqual([])
   })
 
   it('uses each archive photo and SEO file name once', () => {

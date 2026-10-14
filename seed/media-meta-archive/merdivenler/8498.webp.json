@@ -5,8 +5,8 @@
   "promptVersion": "tagImage@2",
   "generatedAt": "2026-10-14",
   "title": {
-    "tr": "Villa yan bahçesinde ahşap merdiven",
-    "en": "Timber staircase in a villa side yard"
+    "tr": "Yan bahçede ahşap merdiven",
+    "en": "Timber staircase in a side yard"
   },
   "alt": {
     "tr": "Ev cephesinin önünde, servi fidanlarının yanında yükselen çapraz korkuluklu ahşap merdiven",
@@ -16,12 +16,11 @@
     "tr": "Evin yan bahçesinden üst seviyeye çıkan ahşap merdiven. İki yandaki korkuluklar çapraz dikmeli.",
     "en": "A timber staircase leading from the side yard of a house to the upper level, with cross-braced railings on both sides."
   },
-  "seoFilename": "villa-yan-bahcesinde-ahsap-merdiven-servi",
+  "seoFilename": "yan-bahcede-ahsap-merdiven-servi",
   "tags": {
     "wood": [],
     "setting": [
       "bahçe",
-      "villa",
       "dış mekân"
     ],
     "finish": [],

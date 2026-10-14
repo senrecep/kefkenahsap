@@ -8,6 +8,7 @@ import sharp from 'sharp'
  * `servedDigests` (served md5 → source md5) is shared across one run.
  */
 export async function verifyStored(stored: string, upload: string, size: { width: number; height: number }, servedDigests: Map<string, string>) {
+  if (!process.env.MEDIA_PUBLIC_URL) throw new Error('MEDIA_PUBLIC_URL is not set: cannot fetch stored files to verify them')
   const res = await fetch([process.env.MEDIA_PUBLIC_URL, process.env.S3_PREFIX, stored].filter(Boolean).join('/'))
   if (!res.ok) throw new Error(`fetching stored ${stored} failed: ${res.status}`)
   const served = Buffer.from(await res.arrayBuffer())
