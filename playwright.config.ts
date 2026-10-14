@@ -35,7 +35,9 @@ export default defineConfig({
     },
   ],
   webServer: {
-    command: 'bun run dev',
+    // CI runs against the production build (E2E_START_COMMAND=bun run start).
+    command: process.env.E2E_START_COMMAND ?? 'bun run dev',
+    timeout: 180_000,
     reuseExistingServer: true,
     url: 'http://localhost:3000',
   },
