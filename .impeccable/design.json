@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-14T11:30:00+03:00",
+  "title": "Design System: Kefken Ahşap Dekorasyon",
+  "extensions": {
+    "colorMeta": {
+      "action": { "role": "primary", "displayName": "Action Green", "canonical": "#0b7a3e", "tonalRamp": ["#001300", "#003103", "#005117", "#007136", "#359658", "#6bb981", "#a5dab2", "#dcf7e2"] },
+      "action-deep": { "role": "primary", "displayName": "Deep Action Green", "canonical": "#075c2e", "tonalRamp": ["#001300", "#003104", "#004f21", "#236e3f", "#4a9261", "#6fb884", "#a5dab2", "#dcf7e2"] },
+      "paper": { "role": "neutral", "displayName": "Warm Paper", "canonical": "#fbfaf7", "tonalRamp": ["#0c0b09", "#252422", "#40403d", "#5e5d5b", "#81807d", "#a5a4a2", "#cbcac7", "#efeeeb"] },
+      "mist": { "role": "neutral", "displayName": "Mist", "canonical": "#f2f0eb", "tonalRamp": ["#0c0b08", "#252420", "#41403c", "#5f5d59", "#82807c", "#a6a4a0", "#cccac5", "#f0eee9"] },
+      "line": { "role": "neutral", "displayName": "Hairline", "canonical": "#e4e1da", "tonalRamp": ["#0d0b07", "#26241f", "#423f3a", "#605d57", "#83807a", "#a7a49e", "#cdcac3", "#f1eee7"] },
+      "ink": { "role": "neutral", "displayName": "Ink", "canonical": "#1d1f1c", "tonalRamp": ["#0a0c09", "#232522", "#3e403d", "#5c5e5b", "#7e817d", "#a3a5a1", "#c9cbc7", "#edefeb"] },
+      "ink-soft": { "role": "neutral", "displayName": "Soft Ink", "canonical": "#5c5f58", "tonalRamp": ["#0a0c07", "#23251f", "#3e413a", "#5c5f58", "#7e827a", "#a3a69e", "#c8ccc4", "#ecf0e8"] },
+      "error": { "role": "feedback", "displayName": "Error Red", "canonical": "#b42318", "tonalRamp": ["#220000", "#4c0000", "#75170f", "#9d362a", "#c35d4f", "#e2897b", "#f9b8ad", "#ffe5e0"] },
+      "error-soft": { "role": "feedback", "displayName": "Error Wash", "canonical": "#fef3f2", "tonalRamp": ["#100909", "#2a2221", "#463d3d", "#645b5a", "#877e7d", "#aca2a1", "#d2c8c7", "#f6eceb"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero H1 only, white over the scrim, max 22ch (≤2 lines on desktop)." },
+      "headline": { "displayName": "Headline", "purpose": "Inner-page H1 (contact, search, 404, content pages)." },
+      "title": { "displayName": "Title", "purpose": "Homepage section H2s; closing bands step down to 1.5→1.85rem." },
+      "body": { "displayName": "Body", "purpose": "All running text, 17px / 1.6, prose capped at 52–65ch." },
+      "button": { "displayName": "Button", "purpose": "Every button; nav links at 0.95rem in the same face and weight." },
+      "label": { "displayName": "Label", "purpose": "Uppercase Soft Ink labels that are themselves the heading or term (footer column heads, contact section heads, fact terms). Never a kicker above a heading." }
+    },
+    "shadows": [
+      { "name": "float", "value": "0 8px 24px -8px rgb(29 31 28 / 0.28), 0 2px 6px -2px rgb(29 31 28 / 0.16)", "purpose": "Floating elements only: services dropdown, consent banner, lightbox controls." },
+      { "name": "bar-lift", "value": "0 -6px 20px -12px rgb(29 31 28 / 0.35)", "purpose": "Fixed mobile action bar only." }
+    ],
+    "motion": [
+      { "name": "ease-out-expo", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Easing for the hero settle and scrim fade." },
+      { "name": "settle", "value": "settle 1.8s var(--ease-out-expo) both; from { transform: scale(1.04) }", "purpose": "The one authored moment: hero photo settles in; visible from frame one." },
+      { "name": "scrim", "value": "scrim 1.2s var(--ease-out-expo) both; from { opacity: 0.8 }", "purpose": "Hero scrim fades up alongside the settle." },
+      { "name": "state-change", "value": "colors 150ms", "purpose": "Every hover/press colour change. Reduced motion collapses all animation and transition to 0.01ms." }
+    ],
+    "focus": [
+      { "name": "focus-global", "value": "outline: 3px solid var(--color-action); outline-offset: 3px; border-radius: 4px", "purpose": "Every focusable element via :focus-visible." },
+      { "name": "focus-field", "value": "border-color: var(--color-action); outline: 2px solid var(--color-action); outline-offset: 1px", "purpose": "Text inputs and textareas." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" },
+      { "name": "xl", "value": "1280px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "WhatsApp Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The primary action everywhere: solid Action Green, lucide message-circle icon, page-specific prefilled message.",
+      "html": "<a class=\"ds-btn ds-btn-primary\" href=\"#\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719\"/></svg>WhatsApp'tan yazın</a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 0 20px; border-radius: 10px; font-family: Montserrat, ui-sans-serif, system-ui, sans-serif; font-size: 0.98rem; font-weight: 600; text-decoration: none; transition: background-color 150ms, border-color 150ms, color 150ms; } .ds-btn:focus-visible { outline: 3px solid var(--color-action, #0b7a3e); outline-offset: 3px; } .ds-btn-primary { background: var(--color-action, #0b7a3e); color: #fff; } .ds-btn-primary:hover { background: var(--color-action-deep, #075c2e); }"
+    },
+    {
+      "name": "Outline Button (Teklif al)",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Secondary action on paper; also both consent choices at equal weight.",
+      "html": "<a class=\"ds-btn-outline\" href=\"#\">Teklif al</a>",
+      "css": ".ds-btn-outline { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 20px; border-radius: 10px; border: 1px solid rgb(29 31 28 / 0.2); background: var(--color-paper, #fbfaf7); color: var(--color-ink, #1d1f1c); font-family: Montserrat, ui-sans-serif, system-ui, sans-serif; font-size: 0.98rem; font-weight: 600; text-decoration: none; transition: background-color 150ms, border-color 150ms; } .ds-btn-outline:hover { border-color: rgb(29 31 28 / 0.4); background: var(--color-mist, #f2f0eb); } .ds-btn-outline:focus-visible { outline: 3px solid var(--color-action, #0b7a3e); outline-offset: 3px; }"
+    },
+    {
+      "name": "On-photo Button",
+      "kind": "button",
+      "refersTo": "button-on-photo",
+      "description": "Hero-only secondary: white outline over the scrim, paired with the WhatsApp button.",
+      "html": "<div class=\"ds-photo-demo\"><a class=\"ds-btn-onphoto\" href=\"#\">Teklif al</a></div>",
+      "css": ".ds-photo-demo { padding: 24px; background: #1d1f1c; } .ds-btn-onphoto { display: inline-flex; align-items: center; min-height: 48px; padding: 0 20px; border-radius: 10px; border: 1px solid rgb(255 255 255 / 0.7); background: rgb(255 255 255 / 0.1); color: #fff; font-family: Montserrat, ui-sans-serif, system-ui, sans-serif; font-size: 0.98rem; font-weight: 600; text-decoration: none; transition: background-color 150ms; } .ds-btn-onphoto:hover { background: rgb(255 255 255 / 0.2); } .ds-btn-onphoto:focus-visible { outline: 3px solid var(--color-action, #0b7a3e); outline-offset: 3px; }"
+    },
+    {
+      "name": "Filter Chips",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Shareable gallery facet links; active chip is an ink pill.",
+      "html": "<nav class=\"ds-chips\"><a class=\"ds-chip ds-chip-on\" href=\"#\" aria-current=\"page\">Tümü</a><a class=\"ds-chip\" href=\"#\">Deck ve Zeminler</a><a class=\"ds-chip\" href=\"#\">Pergola ve Kamelyalar</a></nav>",
+      "css": ".ds-chips { display: flex; flex-wrap: wrap; gap: 8px; } .ds-chip { display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px; border-radius: 9999px; border: 1px solid var(--color-line, #e4e1da); background: var(--color-paper, #fbfaf7); color: var(--color-ink, #1d1f1c); font-family: Montserrat, ui-sans-serif, system-ui, sans-serif; font-size: 0.875rem; font-weight: 600; white-space: nowrap; text-decoration: none; transition: border-color 150ms, background-color 150ms; } .ds-chip:hover { border-color: rgb(29 31 28 / 0.4); } .ds-chip-on, .ds-chip-on:hover { border-color: var(--color-ink, #1d1f1c); background: var(--color-ink, #1d1f1c); color: var(--color-paper, #fbfaf7); } .ds-chip:focus-visible { outline: 3px solid var(--color-action, #0b7a3e); outline-offset: 3px; }"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "White field with a zorunlu / isteğe bağlı marker on every label.",
+      "html": "<label class=\"ds-label\" for=\"ds-phone\">Telefon <span>(zorunlu)</span></label><input class=\"ds-input\" id=\"ds-phone\" type=\"tel\" placeholder=\"05xx xxx xx xx\">",
+      "css": ".ds-label { display: block; margin-bottom: 6px; font-family: Montserrat, ui-sans-serif, system-ui, sans-serif; font-weight: 600; color: var(--color-ink, #1d1f1c); } .ds-label span { font-family: 'Source Sans 3', ui-sans-serif, system-ui, sans-serif; font-weight: 400; color: var(--color-ink-soft, #5c5f58); } .ds-input { display: block; width: 100%; padding: 12px 14px; border-radius: 10px; border: 1px solid rgb(29 31 28 / 0.25); background: #fff; color: var(--color-ink, #1d1f1c); font-size: 1rem; } .ds-input::placeholder { color: rgb(92 95 88 / 0.8); } .ds-input:focus { border-color: var(--color-action, #0b7a3e); outline: 2px solid var(--color-action, #0b7a3e); outline-offset: 1px; } .ds-input[aria-invalid=true] { border-color: var(--color-error, #b42318); }"
+    },
+    {
+      "name": "Header Navigation",
+      "kind": "nav",
+      "description": "Slim sticky paper header: logo left, Montserrat links, phone + TR/EN right.",
+      "html": "<header class=\"ds-header\"><strong class=\"ds-logo\">KEFKEN</strong><nav class=\"ds-nav\"><a href=\"#\">Hizmetler</a><a href=\"#\">Galeri</a><a href=\"#\">Rehber</a><a href=\"#\">Referanslar</a><a href=\"#\">İletişim</a></nav><a class=\"ds-tel\" href=\"#\"><svg aria-hidden=\"true\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384\"/></svg>0532 295 84 16</a></header>",
+      "css": ".ds-header { display: flex; align-items: center; gap: 16px; height: 72px; padding: 0 24px; background: var(--color-paper, #fbfaf7); border-bottom: 1px solid var(--color-line, #e4e1da); } .ds-logo { color: var(--color-ink, #1d1f1c); font-family: Montserrat, sans-serif; } .ds-nav { display: flex; gap: 4px; margin-inline-start: auto; } .ds-nav a, .ds-tel { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 12px; border-radius: 10px; font-family: Montserrat, ui-sans-serif, system-ui, sans-serif; font-size: 0.95rem; font-weight: 600; color: var(--color-ink, #1d1f1c); text-decoration: none; } .ds-nav a:hover, .ds-tel:hover { color: var(--color-action, #0b7a3e); } .ds-nav a:focus-visible, .ds-tel:focus-visible { outline: 3px solid var(--color-action, #0b7a3e); outline-offset: 3px; }"
+    },
+    {
+      "name": "Mobile Action Bar",
+      "kind": "custom",
+      "refersTo": "mobile-action-cell",
+      "description": "Fixed bottom bar below lg on every template: WhatsApp (filled) · Ara · Teklif al.",
+      "html": "<div class=\"ds-bar\"><a class=\"ds-cell ds-cell-wa\" href=\"#\"><svg aria-hidden=\"true\" width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719\"/></svg>WhatsApp</a><a class=\"ds-cell\" href=\"#\"><svg aria-hidden=\"true\" width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384\"/></svg>Ara</a><a class=\"ds-cell\" href=\"#\">Teklif al</a></div>",
+      "css": ".ds-bar { display: flex; max-width: 390px; border-top: 1px solid var(--color-line, #e4e1da); background: var(--color-paper, #fbfaf7); box-shadow: 0 -6px 20px -12px rgb(29 31 28 / 0.35); } .ds-cell { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; min-height: 56px; font-family: Montserrat, ui-sans-serif, system-ui, sans-serif; font-size: 0.75rem; font-weight: 600; color: var(--color-ink, #1d1f1c); text-decoration: none; } .ds-cell-wa { background: var(--color-action, #0b7a3e); color: #fff; } .ds-cell-wa:hover { background: var(--color-action-deep, #075c2e); } .ds-cell:focus-visible { outline: 3px solid var(--color-action, #0b7a3e); outline-offset: -3px; }"
+    },
+    {
+      "name": "Closing Band",
+      "kind": "custom",
+      "refersTo": "closing-band",
+      "description": "Mist band that ends category, references and projects pages: heading, one line, WhatsApp + Teklif al.",
+      "html": "<section class=\"ds-band\"><div><h2>Deck projeniz için konuşalım</h2><p>Alanınızın fotoğrafını gönderin, birlikte planlayalım.</p></div><div class=\"ds-band-actions\"><a class=\"ds-band-wa\" href=\"#\">WhatsApp'tan yazın</a><a class=\"ds-band-out\" href=\"#\">Teklif al</a></div></section>",
+      "css": ".ds-band { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px; padding: 48px 24px; background: var(--color-mist, #f2f0eb); border-top: 1px solid var(--color-line, #e4e1da); } .ds-band h2 { margin: 0; font-family: Montserrat, ui-sans-serif, system-ui, sans-serif; font-weight: 600; font-size: 1.5rem; letter-spacing: -0.015em; color: var(--color-ink, #1d1f1c); } .ds-band p { margin: 8px 0 0; max-width: 56ch; color: var(--color-ink-soft, #5c5f58); } .ds-band-actions { display: flex; gap: 12px; } .ds-band-wa, .ds-band-out { display: inline-flex; align-items: center; min-height: 48px; padding: 0 20px; border-radius: 10px; font-family: Montserrat, ui-sans-serif, system-ui, sans-serif; font-weight: 600; text-decoration: none; } .ds-band-wa { background: var(--color-action, #0b7a3e); color: #fff; } .ds-band-wa:hover { background: var(--color-action-deep, #075c2e); } .ds-band-out { border: 1px solid rgb(29 31 28 / 0.2); background: var(--color-paper, #fbfaf7); color: var(--color-ink, #1d1f1c); } .ds-band-out:hover { background: var(--color-mist, #f2f0eb); }"
+    },
+    {
+      "name": "Lightbox Controls",
+      "kind": "custom",
+      "description": "Dark stage with n / N counter, 48px round controls carrying the Float shadow.",
+      "html": "<div class=\"ds-stage\"><span class=\"ds-count\">12 / 140</span><button class=\"ds-round\" aria-label=\"Kapat\"><svg aria-hidden=\"true\" width=\"26\" height=\"26\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M18 6 6 18\"/><path d=\"m6 6 12 12\"/></svg></button></div>",
+      "css": ".ds-stage { display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; background: #141513; color: #fff; } .ds-count { font-family: Montserrat, ui-sans-serif, system-ui, sans-serif; font-size: 0.875rem; font-weight: 600; font-variant-numeric: tabular-nums; } .ds-round { display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; border: 0; border-radius: 9999px; background: rgb(0 0 0 / 0.45); color: #fff; box-shadow: 0 8px 24px -8px rgb(29 31 28 / 0.28), 0 2px 6px -2px rgb(29 31 28 / 0.16); transition: background-color 150ms; cursor: pointer; } .ds-round:hover { background: rgb(0 0 0 / 0.7); } .ds-round:focus-visible { outline: 3px solid var(--color-action, #0b7a3e); outline-offset: 3px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Finished Job, One Tap From a Human",
+    "overview": "The category standard for a contractor site, executed at full craft. Real job photographs carry every section, copy is short and plain, and a way to reach a person (WhatsApp, a call, a quote form) stays within reach on every page. The system adds no decoration of its own: wood comes only from the photos, the ground is a warm white, text is a near-black ink, and one green marks every action. The craft is in the execution: AA contrast over photos, 48px tap targets, hairline structure, a single motion moment, and empty states that always offer a next step.\n\nDensity is calm and documentary: photo grids and hairline lists separated by generous vertical rhythm, with no cards and no icon tiles. It reads as a tradesman's honest portfolio, neither a luxury brand nor a template theme. It deliberately refuses the template version of the genre: slider heroes, icon-card grids, stock photos, and green everywhere.",
+    "keyCharacteristics": [
+      "Full-bleed real photography. Nothing is illustrated, and wood is never drawn.",
+      "One action green, reserved for buttons, links and the WhatsApp cell.",
+      "Montserrat 600 for headings, nav and buttons. Source Sans 3 for body text.",
+      "10px corners on photos and controls. Pills only for filter chips and lightbox controls.",
+      "Structure comes from 1px hairlines, not cards or boxes.",
+      "Flat at rest, with one soft shadow reserved for floating elements.",
+      "One authored motion moment (the hero settle). Everything else is instant or a 150ms colour change."
+    ],
+    "rules": [
+      { "name": "The One Green Rule", "body": "Action Green is the only green on the page outside the logo. The logo's own greens live inside the logo image and are never used as UI colour. Two such tokens are declared in the stylesheet and unused: `--color-brand` (#009444) and `--color-leaf` (#39b54a). No UI fill, border, icon or text uses them.", "section": "colors" },
+      { "name": "The Photo Brings the Warmth Rule", "body": "No wood textures, beige gradients or tinted section washes. Warmth comes from the photographs on a paper ground.", "section": "colors" },
+      { "name": "The Two Faces Rule", "body": "Montserrat is for anything you navigate or press, and for headings. Source Sans 3 is for anything you read. Headings are always weight 600, balanced (`text-wrap: balance`), and slightly tightened.", "section": "typography" },
+      { "name": "The No Kicker Rule", "body": "No small uppercase line sits above a headline. A heading speaks for itself.", "section": "typography" },
+      { "name": "The Closing Band Rule", "body": "Every category page, the references page and the projects index ends with a full-width Mist band containing a heading, one line of text, an optional service-area line, WhatsApp and \"Teklif al\". When the band is the last thing in `<main>`, the footer drops its top margin so the band sits directly on the footer. Project pages close with the same WhatsApp + \"Teklif al\" pair inline.", "section": "layout" },
+      { "name": "The Float Only Rule", "body": "A shadow means \"this is above the page and will go away\". Section content, photos, list rows and in-flow buttons never carry one. Shadows are always soft and diffuse, never hard-offset.", "section": "elevation" },
+      { "name": "The Functional Scrim Rule", "body": "The hero's bottom scrim is the only gradient in the system. It runs from Ink at 0.64 to transparent and is anchored behind the text block, not the whole section. It keeps white text at AA or better over any photo, including bright patches and the watermark, and fades out over 6rem above the H1. It exists for legibility, not decoration.", "section": "elevation" }
+    ],
+    "dos": [
+      "**Do** let a real job photo lead every section. Use a 4:3 crop in grids, `object-contain` in the lightbox, and a 10px radius everywhere.",
+      "**Do** reserve Action Green for things that act: buttons, links, the WhatsApp cell, focus and selection.",
+      "**Do** pair WhatsApp (solid green) with \"Teklif al\" (outline) wherever a page asks for contact, and end category, references and project pages with that pair.",
+      "**Do** keep the hero H1 at two lines or fewer on desktop, followed by one sentence of subline, with the scrim anchored behind the text block.",
+      "**Do** use hairline lists (`line`, 1px) for text-led collections.",
+      "**Do** keep every tap target at 44px or more (48px for buttons and menu rows), and write layout with logical properties.",
+      "**Do** give every empty state a next step: chips to categories, or a WhatsApp button.",
+      "**Do** mark every form field \"zorunlu\" or \"isteğe bağlı\", and name the data processors in the consent label.",
+      "**Do** keep motion to the hero settle. Everything else is an instant or 150ms colour change, and all of it stops under reduced motion."
+    ],
+    "donts": [
+      "**Don't** add eyebrow or kicker labels above headings. Uppercase labels are allowed only when they are the heading or the term itself.",
+      "**Don't** use decorative gradients. The hero scrim is the one gradient, and it exists for legibility.",
+      "**Don't** use glass: no `backdrop-filter`, no frosted panels.",
+      "**Don't** use hard or offset shadows, or shadows on anything that sits in the page flow. Use Float only for floating elements.",
+      "**Don't** build icon-card grids or boxed cards. Use photos for work and hairline lists for text.",
+      "**Don't** mix icon sets or use glyph or emoji icons. Use lucide only, with a 1.75 stroke.",
+      "**Don't** use the logo greens (#009444, #39b54a) in UI, and don't add a second accent colour.",
+      "**Don't** use sliders, autoplay, carousels or stock or illustrated imagery.",
+      "**Don't** nudge consent: Reddet and Kabul et always look identical."
+    ]
+  }
+}
