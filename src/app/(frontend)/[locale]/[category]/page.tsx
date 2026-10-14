@@ -10,31 +10,35 @@ import { Picture } from '@/components/ui/Picture'
 import { WhatsAppButton } from '@/components/ui/WhatsAppButton'
 import { buttonClass } from '@/components/ui/button'
 import { getPathname, Link } from '@/i18n/navigation'
-import { routing, type Locale } from '@/i18n/routing'
+import type { Locale } from '@/i18n/routing'
 import { galleryLimit, hasRichText, pageFromQuery, priceGuide } from '@/lib/category/category'
 import { getCategory } from '@/lib/data/categories'
 import { getProjectCards } from '@/lib/data/projects'
 import { getSiteSettings } from '@/lib/data/site'
 import { safeDecode } from '@/lib/http/safe-decode'
-import { buildAlternates, siteUrl } from '@/lib/seo/alternates'
+import { livePaths } from '@/lib/i18n/published'
+import { siteUrl } from '@/lib/seo/alternates'
+import { pageMetadata } from '@/lib/seo/page-metadata'
 
 type Params = Promise<{ locale: Locale; category: string }>
 type Search = Promise<{ sayfa?: string | string[] }>
 
 const categoryPath = (locale: Locale, slug: string) => getPathname({ locale, href: { pathname: '/[category]', params: { category: slug } } })
 
-export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
-  const { locale, category: slug } = await params
-  const data = await getCategory(locale, safeDecode(slug), galleryLimit(1))
+export async function generateMetadata({ params, searchParams }: { params: Params; searchParams: Search }): Promise<Metadata> {
+  const [{ locale, category: slug }, { sayfa }] = await Promise.all([params, searchParams])
+  const data = await getCategory(locale, safeDecode(slug), galleryLimit(1) + 1)
   // notFound() here sets a real 404 status before the page body streams.
   if (!data) notFound()
-  const { category, slugs } = data
-  const paths = Object.fromEntries(routing.locales.map((l) => [l, slugs[l] ? categoryPath(l, slugs[l]) : null]))
-  return {
+  const { category, locales } = data
+  return pageMetadata({
+    locale,
     title: category.seo?.title || category.name,
-    description: category.seo?.description || category.shortDesc || undefined,
-    alternates: buildAlternates({ current: locale, paths, site: siteUrl() }),
-  }
+    description: category.seo?.description || category.shortDesc,
+    paths: livePaths(locales, (l, s) => categoryPath(l as Locale, s)),
+    // "?sayfa=N" repeats page 1's photos; index only the first.
+    noindex: pageFromQuery(sayfa) > 1,
+  })
 }
 
 export default async function CategoryPage({ params, searchParams }: { params: Params; searchParams: Search }) {

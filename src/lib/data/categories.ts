@@ -25,7 +25,7 @@ export const getCategory = (locale: Locale, slug: string, limit: number) =>
       })
       const doc = res.docs[0]
       if (!doc) return null
-      // Every locale's slug + name of the same document, for hreflang alternates and the language switcher.
+      // Every locale's slug + name of the same document: the input for livePaths (dil yayında rule).
       const all = (await payload.findByID({
         collection: 'categories',
         id: doc.id,
@@ -33,10 +33,9 @@ export const getCategory = (locale: Locale, slug: string, limit: number) =>
         depth: 0,
         select: { slug: true, name: true },
       })) as unknown as { slug?: Record<string, string | null>; name?: Record<string, string | null> }
-      const slugs: Record<string, string> = {}
-      for (const [l, s] of Object.entries(all.slug ?? {})) if (s && all.name?.[l]) slugs[l] = s
+      const locales = Object.fromEntries(Object.keys(all.slug ?? {}).map((l) => [l, { slug: all.slug?.[l], title: all.name?.[l] }]))
       const photos = (doc.media?.docs ?? []).filter((m): m is Media => typeof m === 'object')
-      return { category: doc, photos, hasMore: Boolean(doc.media?.hasNextPage), slugs }
+      return { category: doc, photos, hasMore: Boolean(doc.media?.hasNextPage), locales }
     },
     ['category', locale, slug, String(limit)],
     { tags: [TAGS.categories, TAGS.media], revalidate: HOUR },

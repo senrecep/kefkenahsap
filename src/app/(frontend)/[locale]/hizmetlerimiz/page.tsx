@@ -3,18 +3,17 @@ import { getTranslations, setRequestLocale } from 'next-intl/server'
 
 import { Container } from '@/components/ui/Container'
 import { Picture } from '@/components/ui/Picture'
-import { getPathname, Link } from '@/i18n/navigation'
-import { routing, type Locale } from '@/i18n/routing'
+import { Link } from '@/i18n/navigation'
+import type { Locale } from '@/i18n/routing'
 import { getServiceTiles } from '@/lib/data/categories'
-import { buildAlternates, siteUrl } from '@/lib/seo/alternates'
+import { pageMetadata, staticPaths } from '@/lib/seo/page-metadata'
 
 type Params = Promise<{ locale: Locale }>
 
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'Services' })
-  const paths = Object.fromEntries(routing.locales.map((l) => [l, getPathname({ locale: l, href: '/hizmetlerimiz' })]))
-  return { title: t('title'), description: t('description'), alternates: buildAlternates({ current: locale, paths, site: siteUrl() }) }
+  return pageMetadata({ locale, title: t('title'), description: t('description'), paths: staticPaths('/hizmetlerimiz') })
 }
 
 export default async function ServicesPage({ params }: { params: Params }) {

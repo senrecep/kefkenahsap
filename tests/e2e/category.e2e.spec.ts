@@ -54,6 +54,7 @@ test.describe('Category page', () => {
     await expect(photos.first().locator('a')).toHaveAttribute('href', /^\/tr\/galeri\/[a-z0-9-]+$/)
     await page.getByRole('link', { name: 'Daha fazla göster' }).click()
     await expect(page).toHaveURL(/\?sayfa=2$/)
+    await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', /noindex/)
     await expect.poll(() => photos.count()).toBeGreaterThan(first)
     await expect(page.locator('a[data-umami-event="whatsapp_click"][data-umami-event-place="category_cta"]')).toHaveAttribute('href', /^https:\/\/wa\.me\//)
   })
