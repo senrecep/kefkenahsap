@@ -1,0 +1,9 @@
+{
+  "Consent": {
+    "label": "Çerez tercihi",
+    "text": "Ziyaretleri ölçmek için Google Analytics çerezlerini yalnızca onay verirseniz kullanırız. Ayrıntılar <link>çerez politikasında</link>.",
+    "accept": "Kabul et",
+    "reject": "Reddet",
+    "preferences": "Çerez tercihleri"
+  }
+}
