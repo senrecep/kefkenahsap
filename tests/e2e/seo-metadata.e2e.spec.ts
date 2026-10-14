@@ -35,7 +35,7 @@ async function firstImagePath(request: APIRequestContext) {
 test.describe('page metadata', () => {
   test('public templates are indexable with complete tags', async ({ request }) => {
     const image = await firstImagePath(request)
-    for (const [path, og] of [['/tr', 'tr_TR'], ['/en', 'en_US'], ['/tr/galeri', 'tr_TR'], ['/en/gallery', 'en_US'], ['/tr/hakkimizda', 'tr_TR'], ['/en/about', 'en_US'], ['/tr/kvkk', 'tr_TR'], ['/en/cookies', 'en_US'], ['/tr/iletisim', 'tr_TR'], ['/en/contact', 'en_US'], ['/tr/projeler', 'tr_TR'], ['/en/references', 'en_US'], [image, 'tr_TR']] as const) {
+    for (const [path, og] of [['/tr', 'tr_TR'], ['/en', 'en_US'], ['/tr/galeri', 'tr_TR'], ['/en/gallery', 'en_US'], ['/tr/hakkimizda', 'tr_TR'], ['/en/about', 'en_US'], ['/tr/kvkk', 'tr_TR'], ['/en/cookies', 'en_US'], ['/tr/iletisim', 'tr_TR'], ['/en/contact', 'en_US'], ['/tr/projeler', 'tr_TR'], ['/en/references', 'en_US'], ['/tr/hizmetlerimiz', 'tr_TR'], ['/en/decking-and-flooring', 'en_US'], [image, 'tr_TR']] as const) {
       const m = await head(request, path)
       expect(m.title, path).toBeTruthy()
       expect(m.description, path).toBeTruthy()

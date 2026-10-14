@@ -93,9 +93,15 @@ test.describe('project SEO', () => {
     expect(mine && new URL(mine.url).pathname).toBe(`/tr/projeler/${slug}`)
     expect(items.map((i) => i.position)).toEqual(items.map((_, n) => n + 1))
 
-    const refs = await (await request.get('/tr/referanslar')).text()
-    const [refList] = jsonLd(refs).filter((n) => n['@type'] === 'ItemList')
-    expect((refList!.itemListElement as { name: string }[]).map((i) => i.name)).toContain(refName)
+    // Payload's revalidation hook runs after the write; give the cached list a moment to refresh.
+    let refs = ''
+    await expect
+      .poll(async () => {
+        refs = await (await request.get('/tr/referanslar')).text()
+        const [refList] = jsonLd(refs).filter((n) => n['@type'] === 'ItemList')
+        return ((refList?.itemListElement ?? []) as { name: string }[]).map((i) => i.name)
+      }, { timeout: 15_000 })
+      .toContain(refName)
     expect(text(refs)).toContain(refName)
   })
 })

@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation'
 import { Maybe } from 'tsentials/maybe'
 
 import { ProjectCard } from '@/components/projects/ProjectCard'
+import { JsonLd } from '@/components/seo/JsonLd'
 import { Container } from '@/components/ui/Container'
 import { Picture } from '@/components/ui/Picture'
 import { WhatsAppButton } from '@/components/ui/WhatsAppButton'
@@ -17,7 +18,9 @@ import { getProjectCards } from '@/lib/data/projects'
 import { getSiteSettings } from '@/lib/data/site'
 import { safeDecode } from '@/lib/http/safe-decode'
 import { livePaths } from '@/lib/i18n/published'
+import { responsiveImage } from '@/lib/media/image'
 import { siteUrl } from '@/lib/seo/alternates'
+import { breadcrumbJsonLd, faqJsonLd, serviceJsonLd } from '@/lib/seo/jsonld'
 import { pageMetadata } from '@/lib/seo/page-metadata'
 
 type Params = Promise<{ locale: Locale; category: string }>
@@ -38,6 +41,7 @@ export async function generateMetadata({ params, searchParams }: { params: Param
     paths: livePaths(locales, (l, s) => categoryPath(l as Locale, s)),
     // "?sayfa=N" repeats page 1's photos; index only the first.
     noindex: pageFromQuery(sayfa) > 1,
+    ownOgImage: true,
   })
 }
 
@@ -57,9 +61,10 @@ export default async function CategoryPage({ params, searchParams }: { params: P
   const photos = rest.slice(0, limit)
   const hasMore = data.hasMore || rest.length > limit
 
-  const [t, tCta, format, settings, projects] = await Promise.all([
+  const [t, tCta, tNav, format, settings, projects] = await Promise.all([
     getTranslations('Category'),
     getTranslations('Cta'),
+    getTranslations('Nav'),
     getFormatter(),
     getSiteSettings(locale),
     getProjectCards(locale).then((cards) => cards.filter((c) => c.categories.some((x) => x.id === category.id)).slice(0, 6)),
@@ -70,9 +75,21 @@ export default async function CategoryPage({ params, searchParams }: { params: P
   const url = siteUrl() + categoryPath(locale, slug)
   const wa = { kind: 'category' as const, vars: { category: category.name, url } }
   const h2 = 'text-[1.6rem] leading-tight md:text-[2rem]'
+  const site = siteUrl().replace(/\/$/, '')
+  // Same strings the page renders: name, intro, header photo, the areas line and the FAQ list.
+  const structured = [
+    serviceJsonLd({ site, name: category.name, url, description: category.shortDesc, image: hero && responsiveImage(hero).src, areaServed: areas }),
+    faqJsonLd(faq),
+    breadcrumbJsonLd([
+      { name: settings.companyName, url: site + getPathname({ locale, href: '/' }) },
+      { name: tNav('services'), url: site + getPathname({ locale, href: '/hizmetlerimiz' }) },
+      { name: category.name, url },
+    ]),
+  ]
 
   return (
     <>
+      <JsonLd data={structured} />
       <Container as="header" className="pt-10 pb-8 md:pt-16 md:pb-12">
         <h1 className="max-w-[22ch] text-[2.1rem] leading-[1.08] md:text-[3.2rem]">{category.name}</h1>
         {category.shortDesc && <p className="mt-5 max-w-[62ch] text-[1.15rem] text-ink-soft md:text-[1.25rem]">{category.shortDesc}</p>}
