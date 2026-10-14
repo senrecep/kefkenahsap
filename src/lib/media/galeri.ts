@@ -43,3 +43,7 @@ export function reorder<T extends Orderable>(
     },
   }
 }
+
+/** Page size of the Galeri media query; a full page means more photos may exist than are listed. */
+export const MEDIA_LIMIT = 200
+export const isTruncated = (count: number) => count >= MEDIA_LIMIT

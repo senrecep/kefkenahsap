@@ -85,6 +85,12 @@
   border-radius: var(--style-radius-m, 6px);
 }
 
+.galeri__queue:empty {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
 .galeri__queue ul {
   margin: 0;
   padding: 0;
@@ -253,7 +259,8 @@
   font-size: 1.375rem;
 }
 
-.galeri__btn:disabled {
+.galeri__btn:disabled,
+.galeri__btn[aria-disabled='true'] {
   opacity: 0.45;
   cursor: not-allowed;
 }

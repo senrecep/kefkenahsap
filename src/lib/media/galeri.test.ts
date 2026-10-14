@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { fitWithin, mediaBadge, reorder } from './galeri'
+import { fitWithin, isTruncated, MEDIA_LIMIT, mediaBadge, reorder } from './galeri'
 
 describe('fitWithin (client downscale to a 2560px long edge, PLAN §4)', () => {
   it('scales a landscape photo so the long edge is 2560', () => {
@@ -78,5 +78,20 @@ describe('reorder (optimistic list + Payload /api/reorder request)', () => {
     expect(reorder(list, 2, 3)).toBeNull()
     expect(reorder(list, 1, 1)).toBeNull()
     expect(ids(list)).toEqual([1, 2, 3])
+  })
+
+  it('returns null when the moved or target item is gone from a refreshed list (findIndex → -1)', () => {
+    // Retry after Payload's "initial migration": a vanished item must abort, not resend a stale request.
+    expect(reorder(list, -1, 1)).toBeNull()
+    expect(reorder(list, 1, -1)).toBeNull()
+  })
+})
+
+describe('isTruncated (Galeri lists at most MEDIA_LIMIT photos)', () => {
+  it('flags a full page as possibly truncated', () => {
+    expect(MEDIA_LIMIT).toBe(200)
+    expect(isTruncated(200)).toBe(true)
+    expect(isTruncated(199)).toBe(false)
+    expect(isTruncated(0)).toBe(false)
   })
 })

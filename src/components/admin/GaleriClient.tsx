@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { useCallback, useEffect, useRef, useState } from 'react'
 
 import type { Media } from '@/payload-types'
-import { fitWithin, mediaBadge, reorder } from '@/lib/media/galeri'
+import { fitWithin, isTruncated, MEDIA_LIMIT, mediaBadge, reorder } from '@/lib/media/galeri'
 import './galeri.css'
 
 type Option = { id: number; name: string }
@@ -73,6 +73,10 @@ export function GaleriClient({ categories, projects }: { categories: Option[]; p
   const [busy, setBusy] = useState<number | null>(null)
   const [moving, setMoving] = useState(false)
   const dragFrom = useRef<number | null>(null)
+  const thumbs = useRef(new Map<number, HTMLButtonElement>())
+  // Files picked while a run is in progress join the same strictly sequential run.
+  const pending = useRef<{ file: File; key: string; target: { category: number; project?: number } }[]>([])
+  const uploading = useRef(false)
   // The upload loop outlives re-renders; it reads the current category from a ref.
   const categoryRef = useRef(category)
   useEffect(() => {
@@ -98,7 +102,7 @@ export function GaleriClient({ categories, projects }: { categories: Option[]; p
   }
 
   const load = useCallback(async (id: number) => {
-    const qs = `where[category][equals]=${id}&sort=_media_media_order&limit=200&depth=0&locale=tr`
+    const qs = `where[category][equals]=${id}&sort=_media_media_order&limit=${MEDIA_LIMIT}&depth=0&locale=tr`
     const { docs } = await api<{ docs: Item[] }>(`/api/media?${qs}`)
     return docs
   }, [])
@@ -123,10 +127,17 @@ export function GaleriClient({ categories, projects }: { categories: Option[]; p
   async function upload(files: FileList | null) {
     if (!files?.length || !category) return
     const target = { category, project }
-    const entries = Array.from(files).map((file, i) => ({ file, key: `${Date.now()}-${i}`, name: file.name }))
-    setQueue((q) => [...q.filter((e) => e.state !== 'done'), ...entries.map(({ key, name }) => ({ key, name, state: 'waiting' as const }))])
+    const entries = Array.from(files).map((file, i) => ({ file, key: `${Date.now()}-${i}`, target }))
+    setQueue((q) => [
+      ...(uploading.current ? q : q.filter((e) => e.state !== 'done')),
+      ...entries.map(({ key, file }) => ({ key, name: file.name, state: 'waiting' as const })),
+    ])
+    pending.current.push(...entries)
+    if (uploading.current) return
+    uploading.current = true
     // One at a time keeps phones responsive and memory bounded.
-    for (const { file, key } of entries) {
+    for (let next = pending.current.shift(); next; next = pending.current.shift()) {
+      const { file, key, target } = next
       setEntry(key, { state: 'working' })
       try {
         const form = new FormData()
@@ -139,7 +150,14 @@ export function GaleriClient({ categories, projects }: { categories: Option[]; p
         setEntry(key, { state: 'error', message: (e as Error).message })
       }
     }
+    uploading.current = false
   }
+
+  function closeEditor(id: number) {
+    setEditing(null)
+    thumbs.current.get(id)?.focus()
+  }
+
   async function patch(id: number, data: Partial<Pick<Media, 'status' | 'title' | 'alt'>>) {
     setBusy(id)
     setCardError(({ [id]: _, ...rest }) => rest)
@@ -167,6 +185,10 @@ export function GaleriClient({ categories, projects }: { categories: Option[]; p
     const before = items
     setItems(r.next)
     setMoving(true)
+    const fail = (message: string) => {
+      setItems(before)
+      setCardError((errs) => ({ ...errs, [r.request.id]: `Sıra değiştirilemedi. ${message}` }))
+    }
     try {
       const send = () =>
         api<{ message?: string }>('/api/reorder', {
@@ -184,16 +206,18 @@ export function GaleriClient({ categories, projects }: { categories: Option[]; p
       if ((await send()).message === 'initial migration') {
         const fresh = await load(category)
         const again = reorder(fresh, fresh.findIndex((d) => d.id === r.request.id), fresh.findIndex((d) => d.id === r.request.target.id))
-        if (again) Object.assign(r.request, again.request)
+        if (!again) return fail('Liste değişmiş; sayfayı yenileyip tekrar deneyin.')
+        Object.assign(r.request, again.request)
         await send()
       }
-      setItems(await load(category)) // fresh order keys for the next move
     } catch (e) {
-      setItems(before)
-      setCardError((errs) => ({ ...errs, [r.request.id]: `Sıra değiştirilemedi. ${(e as Error).message}` }))
+      fail((e as Error).message)
+      return
     } finally {
       setMoving(false)
     }
+    // The move is saved; a failed refresh only leaves stale keys, so it must not revert the order.
+    load(category).then(setItems, () => undefined)
   }
 
   if (!categories.length)
@@ -251,31 +275,35 @@ export function GaleriClient({ categories, projects }: { categories: Option[]; p
         <span aria-hidden="true">＋</span> Fotoğraf ekle
       </label>
 
-      {queue.length > 0 && (
-        <section className="galeri__queue" aria-live="polite" aria-label="Yükleme durumu">
-          {doneCount > 0 && <p className="galeri__queue-ok">{doneCount} fotoğraf yüklendi.</p>}
-          <ul>
-            {activeQueue.map((e) => (
-              <li key={e.key} data-state={e.state}>
-                <span className="galeri__queue-name">{e.name}</span>
-                <span>
-                  {e.state === 'waiting' && 'Sırada'}
-                  {e.state === 'working' && 'Yükleniyor…'}
-                  {e.state === 'error' && `Yüklenemedi: ${e.message}`}
-                </span>
-              </li>
-            ))}
-          </ul>
-          {activeQueue.length === 0 && (
-            <button type="button" className="galeri__btn" onClick={() => setQueue([])}>
-              Tamam
-            </button>
-          )}
-        </section>
-      )}
+      {/* Always mounted so screen readers announce updates. */}
+      <section className="galeri__queue" aria-live="polite" aria-label="Yükleme durumu">
+        {queue.length > 0 && (
+          <>
+            {doneCount > 0 && <p className="galeri__queue-ok">{doneCount} fotoğraf yüklendi.</p>}
+            <ul>
+              {activeQueue.map((e) => (
+                <li key={e.key} data-state={e.state}>
+                  <span className="galeri__queue-name">{e.name}</span>
+                  <span>
+                    {e.state === 'waiting' && 'Sırada'}
+                    {e.state === 'working' && 'Yükleniyor…'}
+                    {e.state === 'error' && `Yüklenemedi: ${e.message}`}
+                  </span>
+                </li>
+              ))}
+            </ul>
+            {activeQueue.length === 0 && (
+              <button type="button" className="galeri__btn" onClick={() => setQueue([])}>
+                Tamam
+              </button>
+            )}
+          </>
+        )}
+      </section>
 
       {loadError && <p className="galeri__error">{loadError}</p>}
       {loading && <p className="galeri__note">Fotoğraflar yükleniyor…</p>}
+      {isTruncated(items.length) && <p className="galeri__note">Yalnızca ilk {MEDIA_LIMIT} fotoğraf listeleniyor.</p>}
       {!loading && !loadError && items.length === 0 && <p className="galeri__note">Bu kategoride henüz fotoğraf yok.</p>}
 
       <ol className="galeri__grid">
@@ -305,6 +333,10 @@ export function GaleriClient({ categories, projects }: { categories: Option[]; p
               <button
                 type="button"
                 className="galeri__thumb"
+                ref={(el) => {
+                  if (el) thumbs.current.set(m.id, el)
+                  else thumbs.current.delete(m.id)
+                }}
                 onClick={() => setEditing(editing === m.id ? null : m.id)}
                 aria-expanded={editing === m.id}
                 aria-label={`${label}, ${badge.label}: metni düzenle`}
@@ -332,9 +364,9 @@ export function GaleriClient({ categories, projects }: { categories: Option[]; p
                 <Editor
                   item={m}
                   busy={busy === m.id}
-                  onCancel={() => setEditing(null)}
+                  onCancel={() => closeEditor(m.id)}
                   onSave={async (data) => {
-                    if (await patch(m.id, data)) setEditing(null)
+                    if (await patch(m.id, data)) closeEditor(m.id)
                   }}
                 />
               )}
@@ -361,7 +393,7 @@ export function GaleriClient({ categories, projects }: { categories: Option[]; p
                 <button
                   type="button"
                   className="galeri__btn galeri__btn--icon"
-                  disabled={i === 0 || moving}
+                  aria-disabled={i === 0 || moving}
                   onClick={() => void move(i, i - 1)}
                   aria-label={`${label}: yukarı taşı`}
                 >
@@ -370,7 +402,7 @@ export function GaleriClient({ categories, projects }: { categories: Option[]; p
                 <button
                   type="button"
                   className="galeri__btn galeri__btn--icon"
-                  disabled={i === items.length - 1 || moving}
+                  aria-disabled={i === items.length - 1 || moving}
                   onClick={() => void move(i, i + 1)}
                   aria-label={`${label}: aşağı taşı`}
                 >
@@ -398,6 +430,8 @@ function Editor({
 }) {
   const [title, setTitle] = useState(item.title ?? '')
   const [alt, setAlt] = useState(item.alt ?? '')
+  const first = useRef<HTMLInputElement>(null)
+  useEffect(() => first.current?.focus(), [])
   return (
     <form
       className="galeri__editor"
@@ -408,7 +442,7 @@ function Editor({
     >
       <label className="galeri__field">
         <span>Başlık</span>
-        <input value={title} onChange={(e) => setTitle(e.target.value)} />
+        <input ref={first} value={title} onChange={(e) => setTitle(e.target.value)} />
       </label>
       <label className="galeri__field">
         <span>Alt metin (fotoğrafta ne görünüyor?)</span>
