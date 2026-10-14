@@ -48,7 +48,7 @@ services:
     volumes:
       - pgdata:/var/lib/postgresql/data
     healthcheck:
-      test: ['CMD-SHELL', 'pg_isready -U kefken -d kefken']
+      test: ['CMD-SHELL', 'pg_isready -h 127.0.0.1 -U kefken -d kefken'] # TCP: not ready during the init-time server
       interval: 5s
       retries: 20
 

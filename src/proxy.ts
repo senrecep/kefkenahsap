@@ -14,12 +14,23 @@ const LEGACY_MEDIA: Record<string, string> = { '1-1': 'deck-ve-zeminler/1-1.webp
 export default function proxy(req: NextRequest) {
   const { pathname } = req.nextUrl
 
-  // Non-production environments sit behind HTTP Basic auth (admin and API keep their own auth).
-  if (!isAuthorized(req.headers.get('authorization'), process.env.SITE_BASIC_AUTH)) {
+  // The container healthcheck must work without credentials.
+  if (pathname === '/api/health') return NextResponse.next()
+
+  // The deployed development environment sits entirely behind HTTP Basic auth (pages, admin, API, files)
+  // and fails closed when the credential is missing.
+  const basic = process.env.SITE_BASIC_AUTH
+  if (process.env.SITE_ENV === 'development' && !basic) return new NextResponse('Not configured', { status: 503 })
+  if (!isAuthorized(req.headers.get('authorization'), basic)) {
     return new NextResponse('Authentication required', {
       status: 401,
-      headers: { 'WWW-Authenticate': 'Basic realm="kefkenahsap development"' },
+      headers: { 'WWW-Authenticate': 'Basic realm="kefkenahsap development", charset="UTF-8"' },
     })
+  }
+
+  // Payload admin/API and static files: auth only, no locale handling.
+  if (/^\/(admin|api)(\/|$)/.test(pathname) || /\.[a-z0-9]+$/i.test(pathname) && !pathname.startsWith('/wp-content/')) {
+    return NextResponse.next()
   }
 
   const mk = mediaKey(pathname)
@@ -44,6 +55,6 @@ export default function proxy(req: NextRequest) {
 }
 
 export const config = {
-  // Everything except Payload (admin, api), Next internals and files — plus old WP upload URLs, which contain dots.
-  matcher: ['/((?!admin(?:/|$)|api(?:/|$)|_next|_vercel|.*\\..*).*)', '/wp-content/uploads/:path*'],
+  // Everything except Next's own static assets; admin/API/files only pass the auth gate (see above).
+  matcher: ['/((?!_next/static|_next/image).*)'],
 }
