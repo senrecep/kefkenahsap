@@ -114,6 +114,8 @@ jobs:
         continue-on-error: true
         run: |
           bun run payload run scripts/quality/fixtures.ts
+          # Local-API writes can't revalidate the data cache the e2e server left behind.
+          rm -rf .next/cache
           node_modules/.bin/next start -p "$E2E_PORT" > lhci-server.log 2>&1 &
           trap "kill $! || true" EXIT
           for i in $(seq 60); do curl -sf -o /dev/null "http://localhost:$E2E_PORT/brand/logo.png" && break; sleep 1; done
