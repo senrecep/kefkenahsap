@@ -11,3 +11,6 @@ export const routing = defineRouting({
 })
 
 export type Locale = (typeof routing.locales)[number]
+
+const RTL_LOCALES = new Set(['ar'])
+export const localeDir = (locale: string): 'rtl' | 'ltr' => (RTL_LOCALES.has(locale) ? 'rtl' : 'ltr')

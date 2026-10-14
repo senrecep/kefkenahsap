@@ -3,7 +3,7 @@ import { setRequestLocale } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 import type { ReactNode } from 'react'
 
-import { routing } from '@/i18n/routing'
+import { localeDir, routing } from '@/i18n/routing'
 import './styles.css'
 
 export function generateStaticParams() {
@@ -21,7 +21,7 @@ export default async function LocaleLayout({
   if (!hasLocale(routing.locales, locale)) notFound()
   setRequestLocale(locale)
   return (
-    <html lang={locale} dir="ltr">
+    <html lang={locale} dir={localeDir(locale)}>
       <body>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
