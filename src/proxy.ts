@@ -2,6 +2,7 @@ import createMiddleware from 'next-intl/middleware'
 import { NextResponse, type NextRequest } from 'next/server'
 
 import { routing } from './i18n/routing'
+import { isAuthorized } from './lib/http/basic-auth'
 import { mediaKey, pageKey } from './lib/legacy/normalize'
 
 const intl = createMiddleware(routing)
@@ -12,6 +13,14 @@ const LEGACY_MEDIA: Record<string, string> = { '1-1': 'deck-ve-zeminler/1-1.webp
 
 export default function proxy(req: NextRequest) {
   const { pathname } = req.nextUrl
+
+  // Non-production environments sit behind HTTP Basic auth (admin and API keep their own auth).
+  if (!isAuthorized(req.headers.get('authorization'), process.env.SITE_BASIC_AUTH)) {
+    return new NextResponse('Authentication required', {
+      status: 401,
+      headers: { 'WWW-Authenticate': 'Basic realm="kefkenahsap development"' },
+    })
+  }
 
   const mk = mediaKey(pathname)
   if (mk !== null) {

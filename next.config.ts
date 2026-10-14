@@ -21,6 +21,11 @@ const nextConfig: NextConfig = {
     }
     return webpackConfig
   },
+  // Anything that is not production must never be indexed.
+  async headers() {
+    if (process.env.SITE_ENV === 'production') return []
+    return [{ source: '/:path*', headers: [{ key: 'X-Robots-Tag', value: 'noindex, nofollow' }] }]
+  },
   turbopack: {
     root: path.resolve(dirname),
   },

@@ -98,13 +98,30 @@ jobs:
           retention-days: 7
 
   deploy:
-    # Dokploy builds and runs docker-compose.dokploy.yml; only after checks pass on a deploy branch.
+    # Builds the image on the server, then Dokploy redeploys the compose; only after checks pass on a deploy branch.
     needs: check
-    if: github.event_name == 'push' && (github.ref == 'refs/heads/development' || github.ref == 'refs/heads/main')
+    # Production deploys stay off until the owner sets the repo variable PRODUCTION_DEPLOY_APPROVED=true (launch, #53).
+    if: >-
+      github.event_name == 'push' &&
+      (github.ref == 'refs/heads/development' || (github.ref == 'refs/heads/main' && vars.PRODUCTION_DEPLOY_APPROVED == 'true'))
     runs-on: [self-hosted, kefken]
     concurrency: deploy-${{ github.ref }}
     environment: ${{ github.ref == 'refs/heads/main' && 'production' || 'development' }}
+    env:
+      SITE_ENV: ${{ github.ref == 'refs/heads/main' && 'production' || 'development' }}
     steps:
+      - uses: actions/checkout@v4
+      # Built straight into the server's Docker (the runner uses the host socket); Dokploy runs this image.
+      - name: Build app image
+        run: |
+          docker build -t "kefkenahsap-app:$SITE_ENV" \
+            --build-arg SITE_ENV="$SITE_ENV" \
+            --build-arg NEXT_PUBLIC_SITE_URL="${{ vars.NEXT_PUBLIC_SITE_URL }}" \
+            --build-arg NEXT_PUBLIC_GA_ID="${{ vars.NEXT_PUBLIC_GA_ID }}" \
+            --build-arg NEXT_PUBLIC_UMAMI_WEBSITE_ID="${{ vars.NEXT_PUBLIC_UMAMI_WEBSITE_ID }}" \
+            --build-arg NEXT_PUBLIC_UMAMI_SRC="${{ vars.NEXT_PUBLIC_UMAMI_SRC }}" \
+            --build-arg NEXT_PUBLIC_TURNSTILE_SITE_KEY="${{ vars.NEXT_PUBLIC_TURNSTILE_SITE_KEY }}" \
+            .
       - name: Trigger Dokploy deploy
         env:
           DOKPLOY_URL: ${{ secrets.DOKPLOY_URL }}

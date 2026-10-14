@@ -6,15 +6,9 @@ name: kefkenahsap
 
 services:
   app:
-    build:
-      context: .
-      dockerfile: Dockerfile
-      # NEXT_PUBLIC_* are inlined into the client bundle at build time.
-      args:
-        NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL:?}
-        NEXT_PUBLIC_GA_ID: ${NEXT_PUBLIC_GA_ID:-}
-        NEXT_PUBLIC_UMAMI_WEBSITE_ID: ${NEXT_PUBLIC_UMAMI_WEBSITE_ID:-}
-        NEXT_PUBLIC_UMAMI_SRC: ${NEXT_PUBLIC_UMAMI_SRC:-}
+    # Built on the server by CI (docker build -t kefkenahsap-app:<SITE_ENV> .); see docs/RUNBOOK.md.
+    image: kefkenahsap-app:${SITE_ENV:?}
+    pull_policy: never
     restart: unless-stopped
     environment:
       DATABASE_URL: postgres://kefken:${POSTGRES_PASSWORD:?}@postgres:5432/kefken
@@ -35,7 +29,10 @@ services:
       NEXT_PUBLIC_GA_ID: ${NEXT_PUBLIC_GA_ID:-}
       NEXT_PUBLIC_UMAMI_WEBSITE_ID: ${NEXT_PUBLIC_UMAMI_WEBSITE_ID:-}
       NEXT_PUBLIC_UMAMI_SRC: ${NEXT_PUBLIC_UMAMI_SRC:-}
-      SITE_ENV: ${SITE_ENV:-development}
+      SITE_ENV: ${SITE_ENV:?}
+      SITE_BASIC_AUTH: ${SITE_BASIC_AUTH:-}
+      NEXT_PUBLIC_TURNSTILE_SITE_KEY: ${NEXT_PUBLIC_TURNSTILE_SITE_KEY:-}
+      TURNSTILE_SECRET_KEY: ${TURNSTILE_SECRET_KEY:-}
     depends_on:
       postgres:
         condition: service_healthy
@@ -50,11 +47,27 @@ services:
       POSTGRES_DB: kefken
     volumes:
       - pgdata:/var/lib/postgresql/data
-      - ./docker/postgres/init-databases.sh:/docker-entrypoint-initdb.d/10-init-databases.sh:ro
     healthcheck:
       test: ['CMD-SHELL', 'pg_isready -U kefken -d kefken']
       interval: 5s
       retries: 20
+
+  # Creates the umami/glitchtip databases if missing (idempotent, runs on every deploy; no bind-mounted files).
+  db-init:
+    image: postgres:17-alpine
+    restart: 'no'
+    environment:
+      PGPASSWORD: ${POSTGRES_PASSWORD:?}
+    entrypoint: ['/bin/sh', '-c']
+    command:
+      - |
+        for db in umami glitchtip; do
+          psql -h postgres -U kefken -d kefken -tc "SELECT 1 FROM pg_database WHERE datname='$$db'" | grep -q 1 \
+            || psql -h postgres -U kefken -d kefken -c "CREATE DATABASE $$db"
+        done
+    depends_on:
+      postgres:
+        condition: service_healthy
 
   umami:
     image: ghcr.io/umami-software/umami:3.0.3
@@ -63,8 +76,8 @@ services:
       DATABASE_URL: postgres://kefken:${POSTGRES_PASSWORD:?}@postgres:5432/umami
       APP_SECRET: ${UMAMI_APP_SECRET:?}
     depends_on:
-      postgres:
-        condition: service_healthy
+      db-init:
+        condition: service_completed_successfully
     networks: [default, dokploy-network]
 
   glitchtip-web:
@@ -102,8 +115,8 @@ services:
     command: ./bin/run-migrate.sh
     environment: *glitchtip-env
     depends_on:
-      postgres:
-        condition: service_healthy
+      db-init:
+        condition: service_completed_successfully
 
   valkey:
     image: valkey/valkey:8-alpine
