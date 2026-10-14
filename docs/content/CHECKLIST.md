@@ -179,3 +179,5 @@ EN başlık ve hikâyeler ilk geçiştir.
 ## Kategori metinleri ve SSS (#61)
 
 Kategori metinleri ve SSS #34'te yazıldı ve testler bunları her kategori için zorunlu tutuyor (300–600 kelime, soru H2'ler, 4–6 SSS). Yukarıdaki "Sahibinin onaylaması gereken cümleler" ve "Açık sorular" sahibine sorulan sorulardır, metin boşluğu değildir. Bu yüzden bu geçişte kategori metinlerine dokunulmadı. Sahibin cevapları gelince ilgili cümleler düzeltilecek ya da silinecek.
+
+"Notlar"daki boş SEO alanları (`seo.title` / `seo.description`) bir boşluk değildir. Kategori sayfası boş `seo.title` için kategori adını, boş `seo.description` için kısa açıklamayı kullanır (`src/app/(frontend)/[locale]/[category]/page.tsx`). Bu yüzden bu alanlar da boş bırakıldı.
