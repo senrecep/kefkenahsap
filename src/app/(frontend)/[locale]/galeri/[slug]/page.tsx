@@ -4,16 +4,16 @@ import { notFound } from 'next/navigation'
 
 import { GalleryGrid } from '@/components/gallery/GalleryGrid'
 import { JsonLd } from '@/components/seo/JsonLd'
+import { Breadcrumb } from '@/components/site/Breadcrumb'
 import { Container } from '@/components/ui/Container'
 import { Picture } from '@/components/ui/Picture'
 import { WhatsAppButton } from '@/components/ui/WhatsAppButton'
 import { getPathname } from '@/i18n/navigation'
 import { routing, type Locale } from '@/i18n/routing'
 import { getGalleryPage, getImage } from '@/lib/data/gallery'
-import { getSiteSettings } from '@/lib/data/site'
 import { responsiveImage } from '@/lib/media/image'
 import { siteUrl } from '@/lib/seo/alternates'
-import { breadcrumbJsonLd, imageObjectJsonLd } from '@/lib/seo/jsonld'
+import { imageObjectJsonLd } from '@/lib/seo/jsonld'
 import { pageMetadata } from '@/lib/seo/page-metadata'
 
 type Props = { params: Promise<{ locale: Locale; slug: string }> }
@@ -35,10 +35,9 @@ export default async function ImagePage({ params }: Props) {
   const image = await getImage(locale, slug)
   if (!image) notFound()
   const { item, project, categoryId } = image
-  const [t, related, settings] = await Promise.all([
+  const [t, related] = await Promise.all([
     getTranslations('Gallery'),
     categoryId ? getGalleryPage(locale, { categoryId, limit: 9 }) : null,
-    getSiteSettings(locale),
   ])
   const others = (related?.items ?? []).filter((r) => r.id !== item.id).slice(0, 8)
   const site = siteUrl().replace(/\/$/, '')
@@ -50,18 +49,17 @@ export default async function ImagePage({ params }: Props) {
       <JsonLd
         data={[
           imageObjectJsonLd({ site, contentUrl: photo.src, url, name: item.title, caption: item.caption }),
-          breadcrumbJsonLd([
-            { name: settings.companyName, url: `${site}${getPathname({ locale, href: '/' })}` },
-            { name: t('title'), url: `${site}${getPathname({ locale, href: '/galeri' })}` },
-            { name: item.title, url },
-          ]),
         ]}
       />
       <Container className="pt-6 pb-12 md:pt-10">
-        <a href={getPathname({ locale, href: '/galeri' })} className="text-[0.95rem] text-action underline">
-          {t('back')}
-        </a>
-        <div className="mt-4 grid gap-8 lg:grid-cols-[minmax(0,1fr)_22rem] lg:items-start">
+        <Breadcrumb
+          locale={locale}
+          items={[
+            { name: t('title'), path: getPathname({ locale, href: '/galeri' }) },
+            { name: item.title, path: item.href },
+          ]}
+        />
+        <div className="mt-6 grid gap-8 lg:grid-cols-[minmax(0,1fr)_22rem] lg:items-start">
           <figure className="me-auto w-full max-w-[min(100%,calc(80svh*var(--ratio)))]" style={{ ['--ratio' as string]: item.width && item.height ? item.width / item.height : 1.333 }}>
             <Picture media={item.media} alt={item.alt} sizes="(min-width: 1280px) 880px, (min-width: 1024px) 66vw, 100vw" priority className="rounded-[var(--radius-photo)]" />
           </figure>

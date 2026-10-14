@@ -6,6 +6,7 @@ import { Maybe } from 'tsentials/maybe'
 
 import { ProjectCard } from '@/components/projects/ProjectCard'
 import { CtaBand } from '@/components/site/CtaBand'
+import { Breadcrumb } from '@/components/site/Breadcrumb'
 import { JsonLd } from '@/components/seo/JsonLd'
 import { Container } from '@/components/ui/Container'
 import { Picture } from '@/components/ui/Picture'
@@ -21,7 +22,7 @@ import { safeDecode } from '@/lib/http/safe-decode'
 import { livePaths } from '@/lib/i18n/published'
 import { responsiveImage } from '@/lib/media/image'
 import { siteUrl } from '@/lib/seo/alternates'
-import { breadcrumbJsonLd, faqJsonLd, serviceJsonLd } from '@/lib/seo/jsonld'
+import { faqJsonLd, serviceJsonLd } from '@/lib/seo/jsonld'
 import { pageMetadata } from '@/lib/seo/page-metadata'
 
 type Params = Promise<{ locale: Locale; category: string }>
@@ -81,18 +82,20 @@ export default async function CategoryPage({ params, searchParams }: { params: P
   const structured = [
     serviceJsonLd({ site, name: category.name, url, description: category.shortDesc, image: hero && responsiveImage(hero).src, areaServed: areas }),
     faqJsonLd(faq),
-    breadcrumbJsonLd([
-      { name: settings.companyName, url: site + getPathname({ locale, href: '/' }) },
-      { name: tNav('services'), url: site + getPathname({ locale, href: '/hizmetlerimiz' }) },
-      { name: category.name, url },
-    ]),
   ]
 
   return (
     <>
       <JsonLd data={structured} />
-      <Container as="header" className="pt-10 pb-8 md:pt-16 md:pb-12">
-        <h1 className="max-w-[22ch] text-[2.1rem] leading-[1.08] md:text-[3.2rem]">{category.name}</h1>
+      <Container as="header" className="pt-6 pb-8 md:pt-10 md:pb-12">
+        <Breadcrumb
+          locale={locale}
+          items={[
+            { name: tNav('services'), path: getPathname({ locale, href: '/hizmetlerimiz' }) },
+            { name: category.name, path: categoryPath(locale, slug) },
+          ]}
+        />
+        <h1 className="mt-6 max-w-[22ch] text-[2.1rem] leading-[1.08] md:text-[3.2rem]">{category.name}</h1>
         {category.shortDesc && <p className="mt-5 max-w-[62ch] text-[1.15rem] text-ink-soft md:text-[1.25rem]">{category.shortDesc}</p>}
         <div className="mt-7 flex flex-wrap gap-3">
           <WhatsAppButton locale={locale} context={wa} place="category_intro" />

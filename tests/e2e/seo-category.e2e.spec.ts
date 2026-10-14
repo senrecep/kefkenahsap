@@ -32,7 +32,7 @@ test.describe('category SEO', () => {
     await deleteDocs(api, 'categories', ids.categories)
   })
 
-  test('own OG photo, and Service / FAQPage / BreadcrumbList match the page', async ({ request, baseURL }) => {
+  test('own OG photo, and Service / FAQPage / BreadcrumbList match the page', async ({ request, baseURL, page }) => {
     const path = `/tr/${slug}`
     const html = await (await request.get(path)).text()
     expect(attr(html, /<meta name="robots" content="([^"]*)"/) ?? '').not.toMatch(/noindex/)
@@ -65,7 +65,10 @@ test.describe('category SEO', () => {
     expect(items.map((i) => i.position)).toEqual([1, 2, 3])
     expect(new URL(items[1]!.item).pathname).toBe('/tr/hizmetlerimiz')
     expect(items[2]).toMatchObject({ name, item: service!.url })
-    for (const i of items) expect(visible).toContain(i.name)
+    // PLAN §7: the JSON-LD names are exactly the visible trail.
+    await page.goto(path)
+    const trail = (await page.getByRole('navigation', { name: 'Konum' }).locator('li').allInnerTexts()).map((t) => t.replace(/\s*\/$/, ''))
+    expect(trail).toEqual(items.map((i) => i.name))
   })
 
   test('unknown category: no OG image route', async ({ request }) => {

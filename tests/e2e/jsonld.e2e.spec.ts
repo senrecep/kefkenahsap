@@ -94,5 +94,8 @@ test.describe('JSON-LD', () => {
     expect(items.map((i) => i.position)).toEqual([1, 2, 3])
     expect(new URL(items[1]!.item).pathname).toBe('/tr/galeri')
     expect(items[2]).toMatchObject({ name: photo.title, item: img!.url })
+    // PLAN §7: the JSON-LD names are exactly the visible trail.
+    const trail = (await page.getByRole('navigation', { name: 'Konum' }).locator('li').allInnerTexts()).map((t) => t.replace(/\s*\/$/, ''))
+    expect(trail).toEqual(items.map((i) => i.name))
   })
 })
