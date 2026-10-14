@@ -156,25 +156,27 @@ Her proje için sahibinden beklenenler: il/ilçe, yıl, ölçü ve süre, ahşap
 
 | # | Taslak (TR başlık) | Hikâye TR / EN (kelime) | Ahşap türü | Sahibine soru |
 |---|---|---|---|---|
-| 1 | Balkon deck'i ve metal korkuluk | 63 / 81 | iroko (görselden tahmin) | Metal korkuluğu siz mi yaptınız? Küpeşte ahşap mı? |
-| 2 | Bahçede yükseltilmiş küçük deck platformu | 60 / 80 | tanımlanamadı (iroko ya da teak olabilir) | Platformlar taşınabilir mi, yere sabit mi? |
-| 3 | Kapı önünde küçük bahçe deck'i | 64 / 97 | tanımlanamadı (bal rengi sert ağaç) | Fotoğraflar farklı evlerden görünüyor. Tek proje mi, ayrılsın mı? |
-| 4 | Ahşap teras, korkuluk ve çatılı kamelya (2014) | 68 / 85 | emprenyeli çam (görselden tahmin) | 2014 işin yılı mı? Gölgeliklerin çatı kaplaması nedir? |
-| 5 | Bahçe sınırında ahşap çit | 61 / 83 | emprenyeli çam (görselden tahmin) | Çit boyandı ya da yağlandı mı, yoksa ham mı bırakıldı? |
-| 6 | Su kenarında ahşap yürüme yolu | 62 / 72 | emprenyeli çam (görselden tahmin) | Kurum ya da referans işi mi? Referansa bağlansın mı? |
-| 7 | Çapraz korkuluklu ahşap dış merdiven (2016) | 61 / 89 | emprenyeli çam (görselden tahmin) | Birden fazla merdiven görünüyor (aynı site?). Tek proje mi? 2016 işin yılı mı? |
-| 8 | Dış mekân ahşap dolapları | 70 / 78 | çam, koyu koruyucu katlı (görselden tahmin) | Yağmur borusunun yanındaki kutu klima kasası mı, dolap mı? |
+| 1 | Balkon deck'i ve metal korkuluk | 66 / 88 | iroko (görselden tahmin) | Metal korkuluğu siz mi yaptınız? Küpeşte ahşap mı? |
+| 2 | Bahçede yükseltilmiş küçük deck platformu | 64 / 82 | tanımlanamadı (iroko ya da teak olabilir) | Platformlar taşınabilir mi, yere sabit mi? |
+| 3 | Kapı önünde küçük bahçe deck'i | 63 / 92 | tanımlanamadı (bal rengi sert ağaç) | Fotoğraflar farklı evlerden görünüyor. Tek proje mi, ayrılsın mı? |
+| 4 | Ahşap teras, korkuluk ve çatılı kamelya (2014) | 65 / 79 | emprenyeli çam (görselden tahmin) | 2014 işin yılı mı? Gölgeliklerin çatı kaplaması nedir? |
+| 5 | Bahçe sınırında ahşap çit | 60 / 80 | emprenyeli çam (görselden tahmin) | Çit boyandı ya da yağlandı mı, yoksa ham mı bırakıldı? |
+| 6 | Su kenarında ahşap yürüme yolu | 62 / 69 | emprenyeli çam (görselden tahmin) | Kurum ya da referans işi mi? Referansa bağlansın mı? |
+| 7 | Çapraz korkuluklu ahşap dış merdiven (2016) | 65 / 96 | emprenyeli çam (görselden tahmin) | Birden fazla merdiven görünüyor (aynı site?). Tek proje mi? 2016 işin yılı mı? |
+| 8 | Dış mekân ahşap dolapları | 68 / 77 | çam, koyu koruyucu katlı (görselden tahmin) | Yağmur borusunun yanındaki kutu klima kasası mı, dolap mı? |
 | 9 | Terasta pergola, çıtalı duvar ve dış mutfak | 67 / 81 | deck: iroko (görselden tahmin); çıtalar tanımlanamadı | Metal çerçeveyi siz mi yaptınız? Çıtalar hangi ağaç? |
-| 10 | Yarım daire ahşap oturma bankı | 72 / 104 | iroko (görselden tahmin) | Beton zemin sizin işiniz mi? |
-| 11 | Ahşap yemek masası ve bank | 67 / 89 | iroko (görselden tahmin) | Takım kaç bank? Bahçe için mi yapıldı? |
+| 10 | Yarım daire ahşap oturma bankı | 73 / 105 | iroko (görselden tahmin) | Beton zemin sizin işiniz mi? |
+| 11 | Ahşap yemek masası ve bank | 63 / 81 | iroko (görselden tahmin) | Takım kaç bank? Bahçe için mi yapıldı? |
 | 12 | Beyaz mutfak dolapları | 62 / 77 | boyalı, tür görünmüyor | İki farklı mutfak görünüyor. Tek proje mi? Gövde ve kapak malzemesi nedir? |
-| 13 | Ahşap tezgâhlı mutfak bar masası | 62 / 83 | tanımlanamadı (lamelli masif panel) | Tabla ve asma raf hangi ağaç? |
-| 14 | Kapaklı ahşap dolap | 62 / 90 | tanımlanamadı | Yeni imalat mı, yenileme mi? Fotoğraflar işin öncesi mi? |
+| 13 | Ahşap tezgâhlı mutfak bar masası | 60 / 82 | tanımlanamadı (lamelli masif panel) | Tabla ve asma raf hangi ağaç? |
+| 14 | Kapaklı ahşap dolap | 66 / 86 | tanımlanamadı | Yeni imalat mı, yenileme mi? Fotoğraflar işin öncesi mi? |
 | 15 | Ofis resepsiyon bankosu ve çalışma alanı | 63 / 82 | tanımlanamadı (açık renkli lamelli panel) | Hangi parçalar sizin işiniz (banko, bölmeler, raflar, mutfak)? |
 | 16 | Beyaz oymalı vitrin ve konsol | 63 / 81 | boyalı, tür görünmüyor | İmalat mı, boya ve patina yenilemesi mi? |
 | 17 | Ahşap çıta kaplamalı ofis odası | 66 / 91 | tanımlanamadı | Çıtalar masif mi, kaplama mı? Dolaplar ve kalorifer kapağı da sizin mi? |
 
-EN başlık ve hikâyeler ilk geçiştir.
+EN başlık ve hikâyeler ilk geçiştir. **Dikkat:** EN başlık doluyken proje yayınlanırsa EN sayfa da açılır (EN slug başlıktan üretilir; slug + başlık dolu olan dil yayında sayılır). Yayınlamadan önce EN metni gözden geçirin ya da EN başlığı ve hikâyeyi boşaltın.
+
+Hikâyeler yalnızca görüneni anlatır: "yağlanmış" gibi son kat bilgisi yerine "parlak görünüyor" yazıldı. Gerçek son kat admin'deki "Finish / renk" alanına girilir.
 
 ## Kategori metinleri ve SSS (#61)
 

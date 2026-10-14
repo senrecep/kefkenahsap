@@ -132,6 +132,8 @@ describe('project stories (#61)', () => {
   // One story per reviewed photo cluster (seed/clusters/clusters.json, the 17 draft projects from #33).
   const { clusters } = JSON.parse(readFileSync(path.resolve(process.cwd(), 'seed/clusters/clusters.json'), 'utf8')) as { clusters: { key: string }[] }
   const stories = parseProjectStories(read('project-stories.json'))
+  // Species are guessed from photos only, so they never go into public text (CHECKLIST, "görselden tahmin").
+  const WOOD_SPECIES = /(?<!\p{L})(iroko|teak|çam|pine|meşe|oak|ceviz|walnut|kayın|beech|ladin|spruce|sedir|cedar|thermowood|emprenye|pressure-treated|meranti|sapelli)/iu
 
   it('parses and covers every cluster exactly once', () => {
     expect(stories.ok).toBe(true)
@@ -148,6 +150,9 @@ describe('project stories (#61)', () => {
       // Years stay in the working titles (EXIF); the story describes only what the photos show.
       expect(story).not.toMatch(/\b(19|20)\d{2}\b/)
       for (const re of BANNED) expect(textOf(s![locale]), String(re)).not.toMatch(re)
+    })
+    it.each(['tr', 'en'] as const)('%s text names no wood species (guesses stay in the owner checklist)', (locale) => {
+      expect(textOf(s![locale])).not.toMatch(WOOD_SPECIES)
     })
   })
 })
