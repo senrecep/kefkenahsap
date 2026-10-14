@@ -11,6 +11,7 @@ export type Check = {
   /** Pages: self canonical on the site origin plus tr + x-default hreflang. */
   html?: boolean
   bodyIncludes?: string[]
+  bodyMatches?: RegExp[]
   bodyExcludes?: RegExp[]
 }
 export type Answer = { status: number; location: string | null; body: string }
@@ -25,7 +26,7 @@ export function smokeChecks(opts: { site: string; mediaBase: string; production:
     ...['/tr', '/en', '/tr/deck-ve-zeminler', '/tr/iletisim'].map((path) => ({ path, status: 200, html: true })),
     opts.production
       ? { path: '/robots.txt', status: 200, bodyIncludes: [`Sitemap: ${site}/sitemap.xml`], bodyExcludes: [/^Disallow: \/\s*$/m] }
-      : { path: '/robots.txt', status: 200, bodyIncludes: ['Disallow: /'], bodyExcludes: [/^Sitemap:/im] },
+      : { path: '/robots.txt', status: 200, bodyMatches: [/^Disallow: \/\s*$/m], bodyExcludes: [/^Sitemap:/im] },
     { path: '/sitemap.xml', status: 200, bodyIncludes: ['<urlset', `<loc>${site}/tr</loc>`] },
     // Old WordPress URLs: one 301 each (pages, the WP home page, a size variant, an attachment page).
     { path: '/deck-ve-zeminler/', status: 301, location: '/tr/deck-ve-zeminler' },
@@ -57,6 +58,7 @@ export function evaluate(check: Check, res: Answer, site: string): string[] {
     if (!same) problems.push(`location ${got || '(none)'}, expected ${check.location}`)
   }
   for (const s of check.bodyIncludes ?? []) if (!res.body.includes(s)) problems.push(`body lacks ${s}`)
+  for (const r of check.bodyMatches ?? []) if (!r.test(res.body)) problems.push(`body does not match ${r}`)
   for (const r of check.bodyExcludes ?? []) if (r.test(res.body)) problems.push(`body matches ${r}`)
   if (check.html) {
     const links = [...res.body.matchAll(/<link\b[^>]*>/gi)].map((m) => attrs(m[0]))

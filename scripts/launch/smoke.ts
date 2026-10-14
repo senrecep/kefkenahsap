@@ -4,7 +4,7 @@
 //   --media-base  where legacy media redirects go (default https://cdn.kefkenahsap.com; dev: https://cdn.kefkenahsap.com/dev)
 //   --production  robots must allow crawling and list the sitemap (otherwise it must block everything)
 // Basic auth (development): SMOKE_BASIC_AUTH=user:password. It is sent only to the base URL's origin, never the CDN.
-// Exit code 1 when any check fails.
+// Each request times out after 15 s. Exit code 1 when any check fails.
 import { parseArgs } from 'node:util'
 
 import { evaluate, smokeChecks } from '@/lib/launch/smoke'
@@ -18,6 +18,10 @@ if (!base) {
   console.error('usage: bun scripts/launch/smoke.ts <baseUrl> [--site <origin>] [--media-base <url>] [--production]')
   process.exit(2)
 }
+if (new URL(base).username || new URL(base).password) {
+  console.error('put credentials in SMOKE_BASIC_AUTH, not in the URL (it would end up in logs and shell history)')
+  process.exit(2)
+}
 const site = values.site ?? base
 const auth = process.env.SMOKE_BASIC_AUTH
 const checks = smokeChecks({ site, mediaBase: values['media-base'] ?? 'https://cdn.kefkenahsap.com', production: values.production })
@@ -29,7 +33,7 @@ for (const check of checks) {
   if (auth && url.origin === new URL(base).origin) headers.authorization = `Basic ${Buffer.from(auth).toString('base64')}`
   let problems: string[]
   try {
-    const res = await fetch(url, { redirect: 'manual', headers })
+    const res = await fetch(url, { redirect: 'manual', headers, signal: AbortSignal.timeout(15_000) })
     problems = evaluate(check, { status: res.status, location: res.headers.get('location'), body: await res.text() }, site)
   } catch (err) {
     problems = [`request failed: ${(err as Error).message}`]

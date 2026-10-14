@@ -74,6 +74,8 @@ describe('evaluate', () => {
     const devRobots = smokeChecks({ site: SITE, mediaBase: CDN, production: false }).find((c) => c.path === '/robots.txt')!
     expect(evaluate(devRobots, ok('User-Agent: *\nDisallow: /\n'), SITE)).toEqual([])
     expect(evaluate(devRobots, ok(good), SITE).length).toBeGreaterThan(0)
+    // "Disallow: /admin" alone must not count as blocking everything.
+    expect(evaluate(devRobots, ok('User-Agent: *\nDisallow: /admin\n'), SITE).length).toBeGreaterThan(0)
   })
 
   it('sitemap must list the site home page', () => {
