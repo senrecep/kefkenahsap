@@ -138,7 +138,8 @@ for (const [index, cat] of SEED_CATEGORIES.entries()) {
       // Guard against a silent storage mix-up (seen once: every original held the first photo's bytes).
       // Originals are re-encoded on upload, so compare shape and uniqueness, not bytes.
       const res = await fetch([process.env.MEDIA_PUBLIC_URL, process.env.S3_PREFIX, stored].filter(Boolean).join('/'))
-      const served = Buffer.from(await res.arrayBuffer() as ArrayBuffer)
+      if (!res.ok) throw new Error(`fetching stored ${stored} failed: ${res.status}`)
+      const served = Buffer.from(await res.arrayBuffer())
       const got = await sharp(served).metadata()
       const digest = createHash('md5').update(served).digest('hex')
       const source = createHash('md5').update(readFileSync(upload)).digest('hex')
