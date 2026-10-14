@@ -1,0 +1,81 @@
+{
+  "Home": {
+    "title": "Kefken Wood Decoration",
+    "metaTitle": "Kefken Ahşap Dekorasyon — timber decks, pergolas and outdoor woodwork",
+    "heroTitle": "Timber decks, pergolas and outdoor woodwork",
+    "heroText": "Site survey, fabrication and installation in Istanbul and across Turkey. Send us a photo of your space on WhatsApp and we will plan it together.",
+    "galleryTitle": "From our work",
+    "galleryAll": "See the full gallery",
+    "servicesTitle": "What we build",
+    "projectsTitle": "Featured projects",
+    "processTitle": "How we work",
+    "steps": {
+      "survey": {
+        "title": "Survey",
+        "text": "We visit the site, take measurements and talk through how you will use the space."
+      },
+      "quote": {
+        "title": "Quote",
+        "text": "A written quote covering the wood species, sizes and labour."
+      },
+      "build": {
+        "title": "Fabrication",
+        "text": "Parts are cut to size, worked and treated in our workshop."
+      },
+      "install": {
+        "title": "Installation",
+        "text": "Our own team does the installation."
+      },
+      "care": {
+        "title": "Care",
+        "text": "We stay available afterwards for oiling, painting and repairs."
+      }
+    },
+    "referencesTitle": "References",
+    "woodTitle": "Wood species compared",
+    "woodIntro": "General properties of the four woods most used outdoors. The right choice depends on sun and water exposure, budget and how much upkeep you want.",
+    "woodCols": {
+      "type": "Wood",
+      "origin": "Origin",
+      "durability": "Outdoor durability",
+      "care": "Upkeep",
+      "use": "Typical use"
+    },
+    "woods": {
+      "iroko": {
+        "name": "Iroko",
+        "origin": "West African hardwood",
+        "durability": "High; natural oils resist rot and insects",
+        "care": "Regular oiling to keep the colour",
+        "use": "Decks, pool surrounds, piers"
+      },
+      "teak": {
+        "name": "Teak",
+        "origin": "Southeast Asian hardwood",
+        "durability": "Very high; oily, dense grain, water resistant",
+        "care": "Regular oiling; weathers to silver grey if left untreated",
+        "use": "Boats, decks, garden furniture"
+      },
+      "pine": {
+        "name": "Treated pine",
+        "origin": "Softwood, pressure-impregnated with preservative",
+        "durability": "Moderate; relies on treatment and upkeep",
+        "care": "Regular protective stain or varnish",
+        "use": "Pergolas, fences, gazebos, planters"
+      },
+      "thermo": {
+        "name": "Thermowood",
+        "origin": "Heat-treated wood (mostly pine or spruce)",
+        "durability": "High; moves less with moisture, no chemical preservatives",
+        "care": "Oil against UV; dents more easily than solid hardwood",
+        "use": "Cladding, decks, saunas"
+      }
+    },
+    "faqTitle": "Frequently asked questions",
+    "contactTitle": "Contact",
+    "contactText": "Send a photo and rough size of your space on WhatsApp; we will talk it through and book a site visit.",
+    "phone": "Phone",
+    "address": "Address",
+    "directions": "Get directions"
+  }
+}

@@ -22,6 +22,8 @@ export const getNavCategories = (locale: Locale) =>
         sort: '_order',
         limit: 50,
         depth: 1,
+        // Public read: an unapproved cover comes back as a bare id instead of a populated image.
+        overrideAccess: false,
         where: { _status: { equals: 'published' } },
         select: { name: true, slug: true, cover: true, shortDesc: true },
       })
