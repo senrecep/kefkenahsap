@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
+import type { ReactNode } from 'react'
 
 import { Hero } from '@/components/home/Hero'
 import { Contact, Faq, FeaturedGallery, FeaturedProjects, Process, References, Services, WoodTypes } from '@/components/home/Sections'
@@ -27,47 +28,66 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 }
 
+/** A section whose loader fails renders nothing instead of taking the whole page down. */
+async function Isolated({ name, render }: { name: string; render: () => Promise<ReactNode> }) {
+  try {
+    return await render()
+  } catch (err) {
+    console.error(`homepage section "${name}" failed`, err)
+    return null
+  }
+}
+
 export default async function HomePage({ params }: Props) {
   const { locale } = await params
   setRequestLocale(locale)
-  const homepage = await getHomepage(locale)
+  const homepage = await getHomepage(locale).catch((err) => {
+    console.error('homepage global failed; using default sections', err)
+    return null
+  })
   // A never-published (draft-only) homepage keeps the default sections.
-  const sections = homeSections(homepage._status === 'published' ? homepage.layout : undefined)
+  const sections = homeSections(homepage?._status === 'published' ? homepage.layout : undefined)
   const needsFallback = sections.some((s) => s.blockType === 'hero' && !(s as Fields<'hero'>).image)
-  const fallback = needsFallback ? await getHeroFallback(locale) : null
+  // Without any photo the hero still renders its text and buttons.
+  const fallback = needsFallback ? await getHeroFallback(locale).catch(() => null) : null
+  const firstHero = sections.findIndex((s) => s.blockType === 'hero')
 
-  return sections.map((s, i) => {
-    const key = ('id' in s && s.id) || `${s.blockType}-${i}`
+  const render = (s: (typeof sections)[number], i: number): (() => Promise<ReactNode>) | null => {
     switch (s.blockType) {
       case 'hero': {
         const b = s as Fields<'hero'>
         const image = b.image && typeof b.image === 'object' ? b.image : (fallback?.media ?? null)
-        return <Hero key={key} locale={locale} image={image} heading={b.heading} subheading={b.subheading} />
+        return () => Hero({ locale, image, heading: b.heading, subheading: b.subheading, priority: i === firstHero })
       }
       case 'featuredGallery': {
         const b = s as Fields<'featuredGallery'>
-        return <FeaturedGallery key={key} locale={locale} heading={b.heading} limit={'id' in b ? b.limit : 12} />
+        return () => FeaturedGallery({ locale, heading: b.heading, limit: b.limit })
       }
       case 'services':
-        return <Services key={key} locale={locale} heading={(s as Fields<'services'>).heading} />
+        return () => Services({ locale, heading: (s as Fields<'services'>).heading })
       case 'featuredProjects':
-        return <FeaturedProjects key={key} locale={locale} heading={(s as Fields<'featuredProjects'>).heading} />
+        return () => FeaturedProjects({ locale, heading: (s as Fields<'featuredProjects'>).heading })
       case 'process': {
         const b = s as Fields<'process'>
-        return <Process key={key} heading={b.heading} steps={b.steps} />
+        return () => Process({ heading: b.heading, steps: b.steps })
       }
       case 'references':
-        return <References key={key} locale={locale} heading={(s as Fields<'references'>).heading} />
+        return () => References({ locale, heading: (s as Fields<'references'>).heading })
       case 'woodTypes':
-        return <WoodTypes key={key} heading={(s as Fields<'woodTypes'>).heading} />
+        return () => WoodTypes({ heading: (s as Fields<'woodTypes'>).heading })
       case 'faq': {
         const b = s as Fields<'faq'>
-        return <Faq key={key} heading={b.heading} items={b.items} />
+        return () => Faq({ heading: b.heading, items: b.items })
       }
       case 'contact':
-        return <Contact key={key} locale={locale} heading={(s as Fields<'contact'>).heading} />
+        return () => Contact({ locale, heading: (s as Fields<'contact'>).heading })
       default:
         return null
     }
+  }
+
+  return sections.map((s, i) => {
+    const fn = render(s, i)
+    return fn ? <Isolated key={('id' in s && s.id) || `${s.blockType}-${i}`} name={s.blockType} render={fn} /> : null
   })
 }

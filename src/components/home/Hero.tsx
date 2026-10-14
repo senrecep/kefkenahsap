@@ -9,14 +9,14 @@ import type { Locale } from '@/i18n/routing'
 import type { MediaLike } from '@/lib/media/image'
 
 /** First viewport: full-bleed real job photo, bottom-left H1 + one sentence + WhatsApp / Teklif al on a bottom scrim. */
-export async function Hero({ locale, image, heading, subheading }: { locale: Locale; image: MediaLike | null; heading?: string | null; subheading?: string | null }) {
+export async function Hero({ locale, image, heading, subheading, priority = true }: { locale: Locale; image: MediaLike | null; heading?: string | null; subheading?: string | null; priority?: boolean }) {
   const t = await getTranslations('Home')
   const tCta = await getTranslations('Cta')
   return (
     <section className="relative isolate flex h-[calc(100svh-4.5rem)] min-h-[30rem] items-end overflow-hidden bg-ink text-white md:h-[78vh] md:max-h-[56rem]">
       {image && (
         <div className="absolute inset-0 -z-10">
-          <Picture media={image} sizes="100vw" priority className="h-full !aspect-auto" />
+          <Picture media={image} sizes="100vw" priority={priority} className="h-full !aspect-auto" />
         </div>
       )}
       <div aria-hidden className="absolute inset-x-0 bottom-0 -z-10 h-3/4 bg-[linear-gradient(to_top,rgb(20_21_19/0.82),rgb(20_21_19/0.45)_45%,transparent)]" />

@@ -7,3 +7,6 @@ export function homeSections<B extends Block>(layout: readonly B[] | null | unde
   if (!layout?.length) return DEFAULT_SECTIONS.map((blockType) => ({ blockType }))
   return layout.filter((b) => b.enabled !== false)
 }
+
+/** Published homepage, read as the public: a hero image that is not approved comes back as a bare id (→ fallback photo). */
+export const homepageQuery = { slug: 'homepage', depth: 1, draft: false, overrideAccess: false } as const

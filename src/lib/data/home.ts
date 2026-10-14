@@ -2,6 +2,7 @@ import { unstable_cache } from 'next/cache'
 
 import type { Locale } from '@/i18n/routing'
 import { galleryWhere } from '@/lib/gallery/query'
+import { homepageQuery } from '@/lib/home/sections'
 import type { Where } from 'payload'
 
 import type { Media } from '@/payload-types'
@@ -15,7 +16,7 @@ const LARGE_LANDSCAPE = 1280
 
 export const getHomepage = (locale: Locale) =>
   unstable_cache(
-    async () => (await getPayload()).findGlobal({ slug: 'homepage', locale, depth: 1, draft: false }),
+    async () => (await getPayload()).findGlobal({ ...homepageQuery, locale }),
     ['homepage', locale],
     { tags: [TAGS.homepage, TAGS.media], revalidate: HOUR },
   )()
@@ -25,7 +26,7 @@ export const getHeroFallback = (locale: Locale) =>
   unstable_cache(
     async () => {
       const payload = await getPayload()
-      const deck = await payload.find({ collection: 'categories', locale: 'tr', where: { slug: { equals: 'deck-ve-zeminler' } }, limit: 1, depth: 0, select: { slug: true } })
+      const deck = await payload.find({ collection: 'categories', locale: 'tr', where: { slug: { equals: 'deck-ve-zeminler' } }, limit: 1, depth: 0, overrideAccess: false, select: { slug: true } })
       const passes: Where[] = [{ featured: { equals: true } }, ...(deck.docs[0] ? [{ category: { equals: deck.docs[0].id } }] : []), {}]
       for (const extra of passes) {
         const res = await payload.find({
@@ -95,6 +96,7 @@ export const getFeaturedProjects = (locale: Locale) =>
         collection: 'projects',
         locale,
         draft: false,
+        overrideAccess: false,
         where: { and: [{ _status: { equals: 'published' } }, { featured: { equals: true } }] },
         sort: '-updatedAt',
         limit: 6,
@@ -110,7 +112,7 @@ export const getFeaturedProjects = (locale: Locale) =>
 export const getReferences = (locale: Locale) =>
   unstable_cache(
     async () => {
-      const res = await (await getPayload()).find({ collection: 'references', locale, sort: 'name', limit: 50, depth: 0, select: { name: true, location: true } })
+      const res = await (await getPayload()).find({ collection: 'references', locale, sort: 'name', limit: 50, depth: 0, overrideAccess: false, select: { name: true, location: true } })
       return res.docs
     },
     ['references', locale],

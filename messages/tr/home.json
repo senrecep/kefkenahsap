@@ -10,21 +10,66 @@
     "projectsTitle": "Öne çıkan projeler",
     "processTitle": "Nasıl çalışıyoruz",
     "steps": {
-      "survey": { "title": "Keşif", "text": "Alanı yerinde görür, ölçü alır, kullanımınızı ve beklentinizi konuşuruz." },
-      "quote": { "title": "Teklif", "text": "Ahşap türü, ölçü ve işçiliği ayrı ayrı yazdığımız net bir teklif hazırlarız." },
-      "build": { "title": "İmalat", "text": "Parçaları atölyede ölçüye göre keser, işler ve koruyucu uygularız." },
-      "install": { "title": "Montaj", "text": "Ekibimiz kurulumu yapar, alanı temiz teslim eder." },
-      "care": { "title": "Bakım", "text": "Yağlama, boya ve tamir için sonradan da yanınızdayız." }
+      "survey": {
+        "title": "Keşif",
+        "text": "Alanı yerinde görür, ölçü alır, kullanımınızı ve beklentinizi konuşuruz."
+      },
+      "quote": {
+        "title": "Teklif",
+        "text": "Ahşap türü, ölçü ve işçiliği içeren yazılı bir teklif hazırlarız."
+      },
+      "build": {
+        "title": "İmalat",
+        "text": "Parçaları atölyede ölçüye göre keser, işler ve koruyucu uygularız."
+      },
+      "install": {
+        "title": "Montaj",
+        "text": "Montajı kendi ekibimiz yapar."
+      },
+      "care": {
+        "title": "Bakım",
+        "text": "Yağlama, boya ve tamir için sonradan da yanınızdayız."
+      }
     },
     "referencesTitle": "Referanslar",
     "woodTitle": "Ahşap türleri karşılaştırması",
     "woodIntro": "Dış mekânda en sık kullanılan dört ahşabın genel özellikleri. Seçim; alanın güneş ve suyla ilişkisine, bütçeye ve bakım alışkanlığınıza göre değişir.",
-    "woodCols": { "type": "Ahşap", "origin": "Kaynak", "durability": "Dış mekân dayanımı", "care": "Bakım", "use": "Sık kullanım" },
+    "woodCols": {
+      "type": "Ahşap",
+      "origin": "Kaynak",
+      "durability": "Dış mekân dayanımı",
+      "care": "Bakım",
+      "use": "Sık kullanım"
+    },
     "woods": {
-      "iroko": { "name": "İroko", "origin": "Batı Afrika sert ağacı", "durability": "Yüksek; doğal yağı çürümeye ve böceğe karşı dirençli", "care": "Rengini korumak için yılda 1–2 kez yağ", "use": "Deck, havuz kenarı, iskele" },
-      "teak": { "name": "Tik (teak)", "origin": "Güneydoğu Asya sert ağacı", "durability": "Çok yüksek; yağlı ve sık lifli, suya dayanıklı", "care": "Az bakım; yağlanmazsa gümüş griye döner", "use": "Tekne, deck, bahçe mobilyası" },
-      "pine": { "name": "Emprenyeli çam", "origin": "Yumuşak ağaç, basınçla koruyucu emdirilmiş", "durability": "Orta; dayanımı emprenye ve bakımla gelir", "care": "Düzenli koruyucu boya ya da vernik", "use": "Pergola, çit, kamelya, çiçeklik" },
-      "thermo": { "name": "Thermowood", "origin": "Yüksek ısıyla işlenmiş ahşap (çoğunlukla çam, ladin)", "durability": "Yüksek; nemle daha az çalışır, kimyasal koruyucu içermez", "care": "UV için yağ; darbelere masif sert ağaçtan hassas", "use": "Cephe kaplama, deck, sauna" }
+      "iroko": {
+        "name": "İroko",
+        "origin": "Batı Afrika sert ağacı",
+        "durability": "Yüksek; doğal yağı çürümeye ve böceğe karşı dirençli",
+        "care": "Rengini korumak için düzenli yağ bakımı",
+        "use": "Deck, havuz kenarı, iskele"
+      },
+      "teak": {
+        "name": "Tik (teak)",
+        "origin": "Güneydoğu Asya sert ağacı",
+        "durability": "Çok yüksek; yağlı ve sık lifli, suya dayanıklı",
+        "care": "Düzenli yağ bakımı; yağlanmazsa gümüş griye döner",
+        "use": "Tekne, deck, bahçe mobilyası"
+      },
+      "pine": {
+        "name": "Emprenyeli çam",
+        "origin": "Yumuşak ağaç, basınçla koruyucu emdirilmiş",
+        "durability": "Orta; dayanımı emprenye ve bakımla gelir",
+        "care": "Düzenli koruyucu boya ya da vernik",
+        "use": "Pergola, çit, kamelya, çiçeklik"
+      },
+      "thermo": {
+        "name": "Thermowood",
+        "origin": "Yüksek ısıyla işlenmiş ahşap (çoğunlukla çam, ladin)",
+        "durability": "Yüksek; nemle daha az çalışır, kimyasal koruyucu içermez",
+        "care": "UV için yağ; darbelere masif sert ağaçtan hassas",
+        "use": "Cephe kaplama, deck, sauna"
+      }
     },
     "faqTitle": "Sık sorulan sorular",
     "contactTitle": "İletişim",

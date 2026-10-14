@@ -30,7 +30,7 @@ function Section({ title, children, aside, className = '' }: { title: string; ch
 const more = 'inline-flex min-h-11 items-center gap-2 font-[family-name:var(--font-display)] font-semibold text-action hover:text-action-deep'
 
 export async function FeaturedGallery({ locale, heading, limit }: Heading & { locale: Locale; limit?: number | null }) {
-  const [t, items] = await Promise.all([getTranslations('Home'), getFeaturedImages(locale, Math.min(limit || 12, 24))])
+  const [t, items] = await Promise.all([getTranslations('Home'), getFeaturedImages(locale, Math.min(Math.max(limit || 12, 1), 24))])
   if (!items.length) return null
   return (
     <Section
@@ -50,6 +50,7 @@ export async function FeaturedGallery({ locale, heading, limit }: Heading & { lo
 export async function Services({ locale, heading }: Heading & { locale: Locale }) {
   const [t, categories] = await Promise.all([getTranslations('Home'), getNavCategories(locale)])
   const listed = categories.filter((c) => c.slug)
+  if (!listed.length) return null
   const photos = await getCategoryPhotos(locale, listed.filter((c) => !c.cover || typeof c.cover !== 'object').map((c) => c.id))
   return (
     <Section title={heading || t('servicesTitle')}>
