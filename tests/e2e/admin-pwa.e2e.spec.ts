@@ -40,7 +40,7 @@ test('editor nav shows only the simplified menu (mobile)', async ({ browser }) =
     // Wait for the slide-in to finish: the open nav must cover (nearly) the full 390px width, not a squeezed strip.
     await expect.poll(async () => (await nav.boundingBox())?.width ?? 0).toBeGreaterThan(300)
     await expect(nav.getByRole('link', { name: 'Galeri' })).toBeVisible()
-    for (const name of ['Projeler', 'Talepler', 'Site Bilgileri']) await expect(nav.getByRole('link', { name })).toBeVisible()
+    for (const name of ['Projeler', 'Yazılar', 'Talepler', 'Site Bilgileri']) await expect(nav.getByRole('link', { name })).toBeVisible()
     // Media/categories links exist (a selector that stops matching must fail) but are not visible to editors.
     for (const slug of ['media', 'categories']) {
       const link = nav.locator(`a[href*="/collections/${slug}"]`)

@@ -5,7 +5,7 @@ import { describe, expect, it } from 'vitest'
 
 import { SEED_CATEGORIES } from '@/seed/categories'
 
-import { parseCategory, parsePage, parseReferences, wordCount } from './schema'
+import { parseCategory, parseGuide, parsePage, parseReferences, wordCount } from './schema'
 
 const DIR = path.resolve(process.cwd(), 'seed/content')
 const read = (p: string) => readFileSync(path.join(DIR, p), 'utf8')
@@ -79,5 +79,51 @@ describe('references', () => {
       'Yaşar Holding',
       'İGK',
     ])
+  })
+})
+
+describe('guides (#49)', () => {
+  const files = readdirSync(path.join(DIR, 'guides')).sort()
+  const guides = files.map((f) => ({ file: f, g: parseGuide(read(`guides/${f}`)) }))
+  const slugs = { tr: new Set<string>(), en: new Set<string>() }
+  for (const { g } of guides) if (g.ok) for (const l of ['tr', 'en'] as const) slugs[l].add(g.value[l].slug)
+  const categorySlugs = { tr: new Set(SEED_CATEGORIES.map((c) => c.slug.tr)), en: new Set(SEED_CATEGORIES.map((c) => c.slug.en)) }
+  // Old "ağaç yaşı" content stays out (decisions #3, #57); the price guide explains factors only (PLAN §7).
+  const EXTRA = [/ağaç(ların)?\s+yaşı|yaş\s+halka|yıllık\s+halka|dendrokronoloji|tree\s+age|growth\s+ring/i, /\d[\d.,]*\s*(lira|euro|dolar|dollar)/i]
+
+  it('has the 3–4 launch guides', () => expect(files.length).toBeGreaterThanOrEqual(3))
+
+  describe.each(files)('%s', (file) => {
+    const g = guides.find((x) => x.file === file)!.g
+    it('parses, and related categories exist', () => {
+      expect(g.ok).toBe(true)
+      for (const c of g.ok ? g.value.relatedCategories : []) expect(categorySlugs.tr.has(c), c).toBe(true)
+    })
+
+    describe.each(['tr', 'en'] as const)('%s', (locale) => {
+      const c = g.ok ? g.value[locale] : undefined
+      it('answers first: excerpt ≤150 words', () => expect(wordCount(c!.excerpt)).toBeLessThanOrEqual(150))
+      it('has ≥3 H2s and all are questions', () => {
+        const h2 = c!.body.split('\n').filter((l) => l.startsWith('## '))
+        expect(h2.length).toBeGreaterThanOrEqual(3)
+        for (const h of h2) expect(h.trimEnd().endsWith('?'), h).toBe(true)
+      })
+      it('has 3–6 FAQ items', () => {
+        expect(c!.faq.length).toBeGreaterThanOrEqual(3)
+        expect(c!.faq.length).toBeLessThanOrEqual(6)
+      })
+      it('makes no banned claims, prices or tree-age content', () => {
+        for (const re of [...BANNED, ...EXTRA]) expect(textOf(c), String(re)).not.toMatch(re)
+      })
+      it('links only to guides and categories that exist', () => {
+        const base = locale === 'tr' ? 'rehber' : 'guides'
+        for (const [, href] of c!.body.matchAll(/\]\((\/[^)]+)\)/g)) {
+          const [, l, a, b] = href!.split('/')
+          expect(l, href).toBe(locale)
+          if (b) expect(a === base && slugs[locale].has(b), href).toBe(true)
+          else expect(categorySlugs[locale].has(a!), href).toBe(true)
+        }
+      })
+    })
   })
 })

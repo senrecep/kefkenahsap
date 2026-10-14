@@ -12,6 +12,7 @@ import { Tags } from './collections/Tags'
 import { Projects } from './collections/Projects'
 import { References } from './collections/References'
 import { Pages } from './collections/Pages'
+import { Guides } from './collections/Guides'
 import { Leads } from './collections/Leads'
 import { LeadPhotos } from './collections/LeadPhotos'
 import { purgeExpiredLeads } from './jobs/purgeExpiredLeads'
@@ -60,7 +61,7 @@ export default buildConfig({
       },
     },
   },
-  collections: [Users, Media, Categories, Tags, Projects, References, Pages, Leads, LeadPhotos, AiUsage],
+  collections: [Users, Media, Categories, Tags, Projects, References, Pages, Guides, Leads, LeadPhotos, AiUsage],
   // Real e-mail only outside tests; without a key Payload logs e-mails to the console.
   email:
     process.env.RESEND_API_KEY && process.env.NODE_ENV !== 'test'

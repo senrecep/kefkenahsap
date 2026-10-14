@@ -1,4 +1,4 @@
-// #27: `admin.hidden` per role. Editors keep Projeler, Talepler, Site Bilgileri plus media/categories, which stay routable
+// #27: `admin.hidden` per role. Editors keep Projeler, Yazılar (#49), Talepler, Site Bilgileri plus media/categories, which stay routable
 // for the Galeri view (their nav links are hidden by GaleriNavLink instead); admins see all. Access control is untouched.
 import { describe, expect, it } from 'vitest'
 
@@ -7,7 +7,7 @@ import config from '@/payload.config'
 
 const editor = { id: 1, role: 'editor' }
 const admin = { id: 2, role: 'admin' }
-const editorVisible = ['projects', 'leads', 'siteSettings', 'media', 'categories']
+const editorVisible = ['projects', 'guides', 'leads', 'siteSettings', 'media', 'categories']
 
 describe('admin nav per role', async () => {
   const c = await config
