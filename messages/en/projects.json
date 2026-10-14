@@ -1,0 +1,31 @@
+{
+  "Projects": {
+    "title": "Projects",
+    "description": "Selected woodwork projects we have completed, with location, year, wood used and photos.",
+    "filter": "By category",
+    "all": "All",
+    "empty": "No projects have been added here yet. In the meantime you can see our work in the gallery.",
+    "emptyFiltered": "No projects in this category yet.",
+    "toGallery": "Go to the gallery"
+  },
+  "Project": {
+    "facts": "Project facts",
+    "location": "Location",
+    "year": "Year",
+    "area": "Area",
+    "duration": "Duration",
+    "wood": "Wood species",
+    "finish": "Finish / colour",
+    "categories": "Category",
+    "units": { "m2": "m²", "m": "metres", "piece": "pieces" },
+    "gallery": "Photos",
+    "similar": "Similar projects",
+    "ctaTitle": "Planning something similar?",
+    "ctaText": "Send a photo and the measurements of the space on WhatsApp and we will get back to you."
+  },
+  "References": {
+    "title": "References",
+    "description": "Residential sites, institutions and companies we have worked with.",
+    "empty": "The reference list is being prepared."
+  }
+}
