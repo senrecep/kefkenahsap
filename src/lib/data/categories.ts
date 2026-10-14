@@ -67,22 +67,3 @@ export const getServiceTiles = (locale: Locale) =>
     ['serviceTiles', locale],
     { tags: [TAGS.categories, TAGS.media], revalidate: HOUR },
   )()
-
-/** Published projects tagged with this category (newest first). */
-export const getCategoryProjects = (locale: Locale, categoryId: number, limit = 6) =>
-  unstable_cache(
-    async () => {
-      const res = await (await getPayload()).find({
-        collection: 'projects',
-        locale,
-        depth: 1,
-        limit,
-        sort: '-year',
-        where: { and: [published, { categories: { contains: categoryId } }] },
-        select: { title: true, slug: true, cover: true, city: true, district: true, year: true },
-      })
-      return res.docs.filter((p) => p.slug)
-    },
-    ['categoryProjects', locale, String(categoryId), String(limit)],
-    { tags: [TAGS.projects, TAGS.media], revalidate: HOUR },
-  )()

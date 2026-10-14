@@ -4,6 +4,7 @@ import { getFormatter, getTranslations, setRequestLocale } from 'next-intl/serve
 import { notFound } from 'next/navigation'
 import { Maybe } from 'tsentials/maybe'
 
+import { ProjectCard } from '@/components/projects/ProjectCard'
 import { Container } from '@/components/ui/Container'
 import { Picture } from '@/components/ui/Picture'
 import { WhatsAppButton } from '@/components/ui/WhatsAppButton'
@@ -11,8 +12,10 @@ import { buttonClass } from '@/components/ui/button'
 import { getPathname, Link } from '@/i18n/navigation'
 import { routing, type Locale } from '@/i18n/routing'
 import { galleryLimit, hasRichText, pageFromQuery, priceGuide } from '@/lib/category/category'
-import { getCategory, getCategoryProjects } from '@/lib/data/categories'
+import { getCategory } from '@/lib/data/categories'
+import { getProjectCards } from '@/lib/data/projects'
 import { getSiteSettings } from '@/lib/data/site'
+import { safeDecode } from '@/lib/http/safe-decode'
 import { buildAlternates, siteUrl } from '@/lib/seo/alternates'
 
 type Params = Promise<{ locale: Locale; category: string }>
@@ -22,7 +25,7 @@ const categoryPath = (locale: Locale, slug: string) => getPathname({ locale, hre
 
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
   const { locale, category: slug } = await params
-  const data = await getCategory(locale, decodeURIComponent(slug), galleryLimit(1))
+  const data = await getCategory(locale, safeDecode(slug), galleryLimit(1))
   // notFound() here sets a real 404 status before the page body streams.
   if (!data) notFound()
   const { category, slugs } = data
@@ -37,21 +40,25 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
 export default async function CategoryPage({ params, searchParams }: { params: Params; searchParams: Search }) {
   const { locale, category: rawSlug } = await params
   setRequestLocale(locale)
-  const slug = decodeURIComponent(rawSlug)
+  const slug = safeDecode(rawSlug)
   const page = pageFromQuery((await searchParams).sayfa)
-  const data = await getCategory(locale, slug, galleryLimit(page))
+  const limit = galleryLimit(page)
+  // One extra photo, so the grid stays full when the header photo comes from the gallery.
+  const data = await getCategory(locale, slug, limit + 1)
   if (!data) notFound()
-  const { category, hasMore } = data
+  const { category } = data
   // Header photo: the approved cover, else the first gallery photo (which then leaves the grid).
   const hero = typeof category.cover === 'object' && category.cover?.status === 'approved' ? category.cover : data.photos[0]
-  const photos = data.photos.filter((m) => m.id !== hero?.id)
+  const rest = data.photos.filter((m) => m.id !== hero?.id)
+  const photos = rest.slice(0, limit)
+  const hasMore = data.hasMore || rest.length > limit
 
   const [t, tCta, format, settings, projects] = await Promise.all([
     getTranslations('Category'),
     getTranslations('Cta'),
     getFormatter(),
     getSiteSettings(locale),
-    getCategoryProjects(locale, category.id),
+    getProjectCards(locale).then((cards) => cards.filter((c) => c.categories.some((x) => x.id === category.id)).slice(0, 6)),
   ])
   const price = priceGuide(category.priceGuide, locale)
   const faq = (category.faq ?? []).filter((f) => f.q && f.a)
@@ -177,18 +184,10 @@ export default async function CategoryPage({ params, searchParams }: { params: P
           <h2 id="projects-h" className={h2}>
             {t('projects')}
           </h2>
-          <ul className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <ul className="mt-6 grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
             {projects.map((p) => (
               <li key={p.id}>
-                <Link href={{ pathname: '/projeler/[slug]', params: { slug: p.slug! } }} className="group block">
-                  {typeof p.cover === 'object' && p.cover && (
-                    <Picture media={p.cover} sizes="(min-width: 1024px) 400px, (min-width: 640px) 50vw, 100vw" maxWidth={1280} className="aspect-[3/2]! rounded-[var(--radius-photo)]" />
-                  )}
-                  <h3 className="mt-3 text-[1.15rem] group-hover:text-action">{p.title}</h3>
-                  {(p.district || p.city || p.year) && (
-                    <p className="mt-1 text-ink-soft">{[[p.district, p.city].filter(Boolean).join(', '), p.year].filter(Boolean).join(' · ')}</p>
-                  )}
-                </Link>
+                <ProjectCard project={p} />
               </li>
             ))}
           </ul>
