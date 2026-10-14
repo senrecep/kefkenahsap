@@ -1,4 +1,5 @@
 import { expect, test, type APIRequestContext } from '@playwright/test'
+import sharp from 'sharp'
 
 // PLAN §7 Teknik 2–4: every public template has a title, description, self-canonical, hreflang (+ x-default),
 // og:locale and a 1200×630 OG image — and never an accidental noindex / nosnippet / max-snippet:0.
@@ -67,12 +68,12 @@ test.describe('page metadata', () => {
       const res = await request.get(`${baseURL}${og.pathname}${og.search}`)
       expect(res.status(), path).toBe(200)
       expect(res.headers()['content-type']).toBe('image/jpeg')
-      const buf = await res.body()
-      // A real photo, not the ~2.5KB plain fallback card.
-      expect(buf.length, path).toBeGreaterThan(20_000)
-      // JPEG SOF0/SOF2 marker carries height then width.
-      const sof = buf.findIndex((b, i) => b === 0xff && (buf[i + 1] === 0xc0 || buf[i + 1] === 0xc2))
-      expect([buf.readUInt16BE(sof + 7), buf.readUInt16BE(sof + 5)], path).toEqual([1200, 630])
+      const img = sharp(await res.body())
+      const meta = await img.metadata()
+      expect([meta.width, meta.height], path).toEqual([1200, 630])
+      // A real photo, not the plain paper-coloured fallback card (#fbfaf7).
+      const { channels } = await img.stats()
+      expect(channels.slice(0, 3).map((c) => Math.round(c.mean)), path).not.toEqual([251, 250, 247])
     }
   })
 })
