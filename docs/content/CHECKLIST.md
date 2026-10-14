@@ -118,11 +118,11 @@ Beş yeni rehber (`seed/content/guides/`) aynı yükleyiciyle taslak olarak yük
 
 | Rehber (TR slug) | Gövde TR / EN (kelime) | Giriş TR | H2 | SSS |
 |---|---|---|---|---|
-| Thermowood nedir, nerede kullanılır? (`thermowood-nedir`) | 564 / 697 | 77 | 6 | 5 / 5 |
-| Emprenyeli ahşap nedir? (`emprenyeli-ahsap-nedir`) | 562 / 688 | 66 | 7 | 5 / 5 |
-| Korkuluk: ahşap mı metal mi? (`korkuluk-ahsap-mi-metal-mi`) | 553 / 696 | 78 | 6 | 5 / 5 |
-| Havuz kenarı deck'i nasıl seçilir? (`havuz-kenari-deck`) | 557 / 710 | 74 | 6 | 5 / 5 |
-| Pergola mı kamelya mı? (`pergola-mi-kamelya-mi`) | 555 / 734 | 81 | 7 | 5 / 5 |
+| Thermowood nedir, nerede kullanılır? (`thermowood-nedir`) | 569 / 698 | 77 | 6 | 5 / 5 |
+| Emprenyeli ahşap nedir? (`emprenyeli-ahsap-nedir`) | 570 / 697 | 66 | 7 | 5 / 5 |
+| Korkuluk: ahşap mı metal mi? (`korkuluk-ahsap-mi-metal-mi`) | 552 / 693 | 78 | 6 | 5 / 5 |
+| Havuz kenarı deck'i nasıl seçilir? (`havuz-kenari-deck`) | 571 / 719 | 75 | 6 | 5 / 5 |
+| Pergola mı kamelya mı? (`pergola-mi-kamelya-mi`) | 560 / 737 | 86 | 7 | 5 / 5 |
 
 Sahibin onaylaması gerekenler:
 
