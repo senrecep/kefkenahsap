@@ -15,6 +15,9 @@ import { Pages } from './collections/Pages'
 import { Leads } from './collections/Leads'
 import { LeadPhotos } from './collections/LeadPhotos'
 import { purgeExpiredLeads } from './jobs/purgeExpiredLeads'
+import { tagImageTask } from './jobs/tagImage'
+import { AiUsage } from './collections/AiUsage'
+import { AiSettings } from './globals/AiSettings'
 import { resendAdapter } from '@payloadcms/email-resend'
 import { redirectsPlugin } from '@payloadcms/plugin-redirects'
 import { isStaff } from './access'
@@ -41,7 +44,7 @@ export default buildConfig({
       baseDir: path.resolve(dirname),
     },
   },
-  collections: [Users, Media, Categories, Tags, Projects, References, Pages, Leads, LeadPhotos],
+  collections: [Users, Media, Categories, Tags, Projects, References, Pages, Leads, LeadPhotos, AiUsage],
   // Real e-mail only outside tests; without a key Payload logs e-mails to the console.
   email:
     process.env.RESEND_API_KEY && process.env.NODE_ENV !== 'test'
@@ -51,7 +54,7 @@ export default buildConfig({
           defaultFromName: 'Kefken Ahşap',
         })
       : undefined,
-  globals: [SiteSettings, Homepage, Navigation],
+  globals: [SiteSettings, Homepage, Navigation, AiSettings],
   endpoints: [
     {
       // Liveness + DB reachability for the container healthcheck.
@@ -74,7 +77,7 @@ export default buildConfig({
     fallback: false,
   },
   jobs: {
-    tasks: [purgeExpiredLeads],
+    tasks: [purgeExpiredLeads, tagImageTask],
     // Runs queued jobs (AI tagging, retention, purge) every minute; tasks are added per feature.
     autoRun: [{ cron: '* * * * *', queue: 'default' }],
   },
