@@ -3,6 +3,10 @@ import type { CollectionConfig } from 'payload'
 import { isStaff, publishedOrStaff } from '@/access'
 import { slugFrom } from '@/hooks/slug'
 
+// Fixed route segments (TR internal + translated public paths): a category slug may not shadow them.
+const RESERVED = new Set(['hizmetlerimiz', 'galeri', 'projeler', 'rehber', 'referanslar', 'hakkimizda', 'iletisim', 'ara', 'kvkk', 'cerez-politikasi', 'services', 'gallery', 'projects', 'guides', 'references', 'about', 'contact', 'search', 'privacy', 'cookies', 'admin', 'api', 'wp-content'])
+import { revalidateAfterChange, revalidateAfterDelete } from '@/hooks/revalidate'
+
 export const Categories: CollectionConfig = {
   slug: 'categories',
   labels: { singular: 'Kategori', plural: 'Kategoriler' },
@@ -15,6 +19,7 @@ export const Categories: CollectionConfig = {
         `${process.env.NEXT_PUBLIC_SITE_URL}/${locale?.code ?? 'tr'}/${data?.slug ?? ''}?preview=1`,
     },
   },
+  hooks: { afterChange: [revalidateAfterChange('categories', 'media')], afterDelete: [revalidateAfterDelete('categories', 'media')] },
   access: { read: publishedOrStaff, create: isStaff, update: isStaff, delete: isStaff },
   orderable: true,
   versions: { drafts: true },
@@ -27,6 +32,7 @@ export const Categories: CollectionConfig = {
       unique: true,
       index: true,
       hooks: { beforeValidate: [slugFrom('name')] },
+      validate: (v: unknown) => (typeof v === 'string' && RESERVED.has(v) ? 'Bu adres sitede başka bir sayfaya ait; farklı bir slug seçin.' : true),
       admin: { position: 'sidebar', description: 'Boş bırakılırsa addan üretilir.' },
     },
     { name: 'shortDesc', type: 'textarea', localized: true, label: 'Kısa açıklama (cevap-önce giriş)' },

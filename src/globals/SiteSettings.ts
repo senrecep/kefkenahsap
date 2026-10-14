@@ -2,6 +2,7 @@ import type { GlobalConfig } from 'payload'
 
 import { isAdminField, isStaff } from '@/access'
 import { validateHref } from '@/lib/http/safe-href'
+import { revalidateGlobal } from '@/hooks/revalidate'
 
 // Single source for NAP, founder facts, socials and WhatsApp templates (schema.org, footer, llms.txt read from here).
 // Empty optional fields render nothing anywhere (PRODUCT.md: no invented claims).
@@ -9,6 +10,7 @@ export const SiteSettings: GlobalConfig = {
   slug: 'siteSettings',
   label: 'Site Bilgileri',
   admin: { group: 'Yönetim' },
+  hooks: { afterChange: [revalidateGlobal('site')] },
   access: { read: () => true, update: isStaff },
   fields: [
     {

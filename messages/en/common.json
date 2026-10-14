@@ -1,0 +1,37 @@
+{
+  "Site": { "name": "Kefken Wood Decoration", "tagline": "Timber decking, pergolas and outdoor woodwork — Istanbul and across Türkiye" },
+  "Nav": {
+    "skip": "Skip to content",
+    "services": "Services",
+    "allServices": "All services",
+    "projects": "Projects",
+    "gallery": "Gallery",
+    "guides": "Guides",
+    "references": "References",
+    "about": "About",
+    "contact": "Contact",
+    "menu": "Menu",
+    "close": "Close",
+    "language": "Language",
+    "home": "Home"
+  },
+  "Cta": {
+    "whatsapp": "Message us on WhatsApp",
+    "whatsappShort": "WhatsApp",
+    "call": "Call",
+    "quote": "Get a quote",
+    "callUs": "Call us"
+  },
+  "Footer": {
+    "contact": "Contact",
+    "hours": "Opening hours",
+    "services": "Services",
+    "legal": "Legal",
+    "privacy": "Privacy notice",
+    "cookies": "Cookie policy",
+    "rights": "All rights reserved.",
+    "since": "since {year}"
+  },
+  "Days": { "Mo": "Mon", "Tu": "Tue", "We": "Wed", "Th": "Thu", "Fr": "Fri", "Sa": "Sat", "Su": "Sun" },
+  "Home": { "title": "Kefken Wood Decoration" }
+}

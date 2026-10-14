@@ -2,6 +2,7 @@ import type { Field, GlobalConfig } from 'payload'
 
 import { isStaff } from '@/access'
 import { validateHref } from '@/lib/http/safe-href'
+import { revalidateGlobal } from '@/hooks/revalidate'
 
 const link: Field[] = [
   { name: 'label', type: 'text', localized: true, required: true },
@@ -12,6 +13,7 @@ export const Navigation: GlobalConfig = {
   slug: 'navigation',
   label: 'Menüler',
   admin: { group: 'Yönetim' },
+  hooks: { afterChange: [revalidateGlobal('site')] },
   access: { read: () => true, update: isStaff },
   fields: [
     { name: 'header', type: 'array', label: 'Üst menü', fields: link },

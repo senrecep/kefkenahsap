@@ -4,6 +4,7 @@ import { Result } from 'tsentials/result'
 
 import { approvedOrStaff, isStaff } from '@/access'
 import { checkPublishable, type MediaStatus } from '@/lib/media/publish'
+import { revalidateAfterChange, revalidateAfterDelete } from '@/hooks/revalidate'
 
 // WebP only: sources are already WebP; AVIF would double storage and encode time (PLAN §3.3).
 const widths = [320, 640, 960, 1280, 1920] as const
@@ -65,7 +66,7 @@ export const Media: CollectionConfig = {
   labels: { singular: 'Görsel', plural: 'Görseller' },
   admin: { useAsTitle: 'title', defaultColumns: ['filename', 'title', 'category', 'status'], group: 'İçerik' },
   access: { read: approvedOrStaff, create: isStaff, update: isStaff, delete: isStaff },
-  hooks: { beforeChange: [placeholder, publishGate], afterChange: [queueAiSuggestion] },
+  hooks: { beforeChange: [placeholder, publishGate], afterChange: [revalidateAfterChange('media', 'categories', 'projects'), queueAiSuggestion], afterDelete: [revalidateAfterDelete('media', 'categories', 'projects')] },
   fields: [
     {
       name: 'status',

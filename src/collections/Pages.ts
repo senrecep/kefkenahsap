@@ -2,6 +2,7 @@ import type { CollectionConfig } from 'payload'
 
 import { isStaff, publishedOrStaff } from '@/access'
 import { slugFrom } from '@/hooks/slug'
+import { revalidateAfterChange, revalidateAfterDelete } from '@/hooks/revalidate'
 
 /** Simple content pages: Hakkımızda, KVKK, Çerez Politikası, Süreç. */
 export const Pages: CollectionConfig = {
@@ -15,6 +16,7 @@ export const Pages: CollectionConfig = {
         `${process.env.NEXT_PUBLIC_SITE_URL}/${locale?.code ?? 'tr'}/${data?.slug ?? ''}?preview=1`,
     },
   },
+  hooks: { afterChange: [revalidateAfterChange('pages')], afterDelete: [revalidateAfterDelete('pages')] },
   access: { read: publishedOrStaff, create: isStaff, update: isStaff, delete: isStaff },
   versions: { drafts: true },
   fields: [

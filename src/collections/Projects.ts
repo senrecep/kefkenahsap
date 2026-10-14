@@ -2,6 +2,7 @@ import type { CollectionConfig, FieldAccess } from 'payload'
 
 import { isStaff, publishedOrStaff } from '@/access'
 import { slugFrom } from '@/hooks/slug'
+import { revalidateAfterChange, revalidateAfterDelete } from '@/hooks/revalidate'
 
 // Testimonial text is readable by the public only with recorded consent (API and frontend alike).
 const consentedOrStaff: FieldAccess = ({ req, siblingData }) => Boolean(req.user) || Boolean(siblingData?.consentGiven)
@@ -21,6 +22,7 @@ export const Projects: CollectionConfig = {
       },
     },
   },
+  hooks: { afterChange: [revalidateAfterChange('projects', 'references')], afterDelete: [revalidateAfterDelete('projects', 'references')] },
   access: { read: publishedOrStaff, create: isStaff, update: isStaff, delete: isStaff },
   versions: { drafts: true },
   fields: [

@@ -4,15 +4,17 @@ import { notFound } from 'next/navigation'
 import type { ReactNode } from 'react'
 import { Montserrat, Source_Sans_3 } from 'next/font/google'
 
-import { localeDir, routing } from '@/i18n/routing'
+import { Footer } from '@/components/site/Footer'
+import { Header } from '@/components/site/Header'
+import { MobileActionBar } from '@/components/site/MobileActionBar'
+import { localeDir, routing, type Locale } from '@/i18n/routing'
 import './styles.css'
 
-const montserrat = Montserrat({ subsets: ['latin', 'latin-ext'], weight: ['500', '600', '700'], variable: '--font-montserrat', display: 'swap' })
+const montserrat = Montserrat({ subsets: ['latin', 'latin-ext'], weight: ['600', '700'], variable: '--font-montserrat', display: 'swap' })
 const sourceSans = Source_Sans_3({ subsets: ['latin', 'latin-ext'], weight: ['400', '600'], variable: '--font-source-sans', display: 'swap' })
 
-export function generateStaticParams() {
-  return routing.locales.map((locale) => ({ locale }))
-}
+// Pages read CMS data per request (cached via unstable_cache tags + Cloudflare edge); no DB needed at build time.
+export const dynamic = 'force-dynamic'
 
 export default async function LocaleLayout({
   children,
@@ -26,8 +28,13 @@ export default async function LocaleLayout({
   setRequestLocale(locale)
   return (
     <html lang={locale} dir={localeDir(locale)} className={`${montserrat.variable} ${sourceSans.variable}`}>
-      <body>
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+      <body className="min-h-dvh antialiased">
+        <NextIntlClientProvider>
+          <Header locale={locale as Locale} />
+          <main id="main">{children}</main>
+          <Footer locale={locale as Locale} />
+          <MobileActionBar locale={locale as Locale} />
+        </NextIntlClientProvider>
       </body>
     </html>
   )
