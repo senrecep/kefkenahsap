@@ -53,11 +53,19 @@
   }
   p { text-wrap: pretty; }
   ::selection { background: var(--color-action); color: #fff; }
-  :focus-visible { outline: 3px solid var(--color-action); outline-offset: 3px; border-radius: 4px; }
+  /* Two-tone ring: white inner + ink outer. One of the two always holds ≥3:1 against any ground (paper, footer, photo, lightbox). */
+  :focus-visible { outline: 3px solid var(--color-ink); outline-offset: 2px; box-shadow: 0 0 0 2px #fff; border-radius: 4px; }
   a { text-underline-offset: 0.2em; text-decoration-thickness: 1px; }
   input, textarea { caret-color: var(--color-action); }
   img { max-width: 100%; height: auto; }
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
   }
+}
+
+/* The same ring for a visible stand-in of a visually hidden control (e.g. `peer-focus-visible:focus-ring`). */
+@utility focus-ring {
+  outline: 3px solid var(--color-ink);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px #fff;
 }

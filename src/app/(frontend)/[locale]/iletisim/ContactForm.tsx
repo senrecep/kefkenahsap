@@ -47,7 +47,7 @@ async function prepare(file: File): Promise<File> {
 }
 
 const field =
-  'block w-full rounded-[var(--radius-control)] border border-ink/25 bg-white px-3.5 py-3 text-base text-ink placeholder:text-ink-soft/80 focus:border-action focus:outline-2 focus:outline-offset-1 focus:outline-action aria-[invalid=true]:border-error'
+  'block w-full rounded-[var(--radius-control)] border border-ink/25 bg-white px-3.5 py-3 text-base text-ink placeholder:text-ink-soft/80 focus:border-action aria-[invalid=true]:border-error'
 const labelCls = 'mb-1.5 block font-[family-name:var(--font-display)] text-sm font-semibold text-ink'
 
 export function ContactForm({
@@ -236,7 +236,7 @@ export function ContactForm({
           className="peer sr-only"
         />
         {/* The native input stays focusable (visually hidden); this label is its visible button. */}
-        <label htmlFor="photos" className={`${buttonClass.outline} cursor-pointer peer-focus-visible:outline-3 peer-focus-visible:outline-offset-3 peer-focus-visible:outline-action`}>
+        <label htmlFor="photos" className={`${buttonClass.outline} cursor-pointer peer-focus-visible:focus-ring`}>
           <ImagePlus aria-hidden size={20} strokeWidth={1.75} />
           {t('photosChoose')}
         </label>

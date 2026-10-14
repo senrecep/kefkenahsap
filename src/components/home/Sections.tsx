@@ -4,6 +4,7 @@ import type { ReactNode } from 'react'
 
 import { GalleryFilters } from '@/components/gallery/GalleryFilters'
 import { GalleryGrid } from '@/components/gallery/GalleryGrid'
+import { buttonClass } from '@/components/ui/button'
 import { Container } from '@/components/ui/Container'
 import { Picture } from '@/components/ui/Picture'
 import { WhatsAppButton } from '@/components/ui/WhatsAppButton'
@@ -216,7 +217,7 @@ export async function Faq({ heading, items }: Heading & { items?: { q: string; a
 }
 
 export async function Contact({ locale, heading }: Heading & { locale: Locale }) {
-  const [t, settings] = await Promise.all([getTranslations('Home'), getSiteSettings(locale)])
+  const [t, tCta, settings] = await Promise.all([getTranslations('Home'), getTranslations('Cta'), getSiteSettings(locale)])
   const tel = telLink(settings)
   const a = settings.address
   const address = [a?.street, [a?.postalCode, a?.district, a?.city].filter(Boolean).join(' ')].filter(Boolean)
@@ -226,7 +227,13 @@ export async function Contact({ locale, heading }: Heading & { locale: Locale })
       <div className="grid gap-10 lg:grid-cols-2">
         <div>
           <p className="max-w-[48ch] text-lg">{t('contactText')}</p>
-          <WhatsAppButton locale={locale} place="home-contact" context={{ kind: 'contact' }} className="mt-6" />
+          {/* The homepage's closing pair (same as CtaBand elsewhere), so the page does not end twice. */}
+          <div className="mt-6 flex flex-wrap gap-3">
+            <WhatsAppButton locale={locale} place="home-contact" context={{ kind: 'contact' }} />
+            <Link href="/iletisim" className={buttonClass.outline}>
+              {tCta('quote')}
+            </Link>
+          </div>
         </div>
         <dl className="border-t border-line">
           {tel && (

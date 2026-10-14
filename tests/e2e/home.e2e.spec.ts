@@ -66,6 +66,10 @@ test.describe('site navigation', () => {
     await page.goto('/tr/referanslar')
     await expect(page.locator('main > [data-end-band]')).toBeVisible()
     expect(await page.locator('footer').evaluate((el) => getComputedStyle(el).marginTop)).toBe('0px')
+    for (const path of ['/tr/galeri', '/tr/hizmetlerimiz']) {
+      await page.goto(path)
+      await expect(page.locator('main > [data-end-band]')).toBeVisible()
+    }
     await page.goto('/tr/hakkimizda')
     expect(await page.locator('footer').evaluate((el) => getComputedStyle(el).marginTop)).not.toBe('0px')
   })

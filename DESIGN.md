@@ -141,7 +141,7 @@ Recorded adaptations from the direction contract (accepted deviations, not drift
 The palette is a warm neutral paper with near-black ink and a single deep green that means "act here".
 
 ### Primary
-- **Action Green** (`action`): the only colour that signals an action. It is used for primary and WhatsApp buttons, the WhatsApp cell of the mobile action bar, inline links, the "Tüm galeriyi gör" text link, the text selection, the caret, checkbox accents and the focus outline. It passes AA as text on paper, and white text passes AA on it.
+- **Action Green** (`action`): the only colour that signals an action. It is used for primary and WhatsApp buttons, the WhatsApp cell of the mobile action bar, inline links, the "Tüm galeriyi gör" text link, the text selection, the caret and checkbox accents. It is not the focus colour (see Focus below). It passes AA as text on paper, and white text passes AA on it.
 - **Deep Action Green** (`action-deep`): hover and pressed states of everything drawn in Action Green. It is never used at rest.
 
 ### Neutral
@@ -220,7 +220,8 @@ Corners are gently rounded and consistent. Photos and controls (buttons, inputs,
 - **Outline ("Teklif al", secondary):** Paper fill, ink text and a 1px Ink-at-20% border. On hover the border darkens to 40% and the fill turns Mist.
 - **On photo:** used only on the hero. It has a white 70% border, a white 10% fill and white text, turning to a 20% fill on hover. It pairs with the WhatsApp button as "Teklif al".
 - **Quiet:** an Action Green text link with no side padding, so it aligns with the column edge. It underlines on hover and is used for "see all" links with a trailing arrow.
-- **Hover / Focus:** a 150ms colour transition only. The global focus outline is 3px Action Green with a 3px offset. Text fields use a 2px Action Green outline with a 1px offset, plus a green border.
+- **Hover:** a 150ms colour transition only.
+- **Focus:** one global two-tone ring on `:focus-visible`: a 2px white inner ring (`box-shadow: 0 0 0 2px #fff`) inside a 3px Ink outer ring (`outline: 3px solid ink; outline-offset: 2px`). One of the two rings holds at least 3:1 against any ground: paper, the dark footer, the hero photo and the lightbox stage. Text fields use the same ring and also turn their border Action Green. A visually hidden control shows the ring on its visible label (`peer-focus-visible:focus-ring`).
 
 ### Chips (gallery filters)
 - **Style:** pill, 44px minimum height, Montserrat 600 at 0.875rem, single line.
@@ -233,7 +234,7 @@ Corners are gently rounded and consistent. Photos and controls (buttons, inputs,
 ### Inputs / Fields
 - **Style:** white fill, 1px Ink-at-25% border, 10px radius, 12×14px padding, 16px text. Placeholders use Soft Ink.
 - **Labels:** Montserrat label text followed by "(zorunlu)" or "(isteğe bağlı)" in Source Sans Soft Ink. Every field states which one it is.
-- **Focus:** the border turns Action Green, with a 2px green outline.
+- **Focus:** the border turns Action Green, and the global two-tone focus ring applies.
 - **Error:** the border turns Error Red. An error summary box on Error Wash appears, and focus moves to the first invalid field.
 - **Consent:** a required checkbox (accent Action Green) whose label links to the KVKK notice and names the processors (Cloudflare, Resend, Google).
 
@@ -258,7 +259,7 @@ An empty result always offers a way forward. No search results and the 404 page 
 
 ### Do:
 - **Do** let a real job photo lead every work section. Use a 4:3 crop in grids, `object-contain` in the lightbox, and a 10px radius everywhere.
-- **Do** reserve Action Green for things that act: buttons, links, the WhatsApp cell, focus and selection.
+- **Do** reserve Action Green for things that act: buttons, links, the WhatsApp cell and selection. Focus uses the two-tone ink/white ring, not green.
 - **Do** pair WhatsApp (solid green) with "Teklif al" (outline) wherever a page asks for contact, and end category, references and project pages with that pair.
 - **Do** keep the hero H1 at two lines or fewer on desktop, followed by one sentence of subline, with the scrim anchored behind the text block.
 - **Do** use hairline lists (`line`, 1px) for text-led collections.

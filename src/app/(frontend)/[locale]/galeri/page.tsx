@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 
 import { GalleryFilters } from '@/components/gallery/GalleryFilters'
 import { GalleryGrid } from '@/components/gallery/GalleryGrid'
+import { CtaBand } from '@/components/site/CtaBand'
 import { Container } from '@/components/ui/Container'
 import { getPathname } from '@/i18n/navigation'
 import type { Locale } from '@/i18n/routing'
@@ -47,18 +48,21 @@ export default async function GalleryPage({ params, searchParams }: Props) {
   const moreHref = `${base}?${new URLSearchParams({ ...filter, sayfa: String(q.page + 1) })}`
 
   return (
-    <Container className="pt-8 pb-20 md:pt-12">
-      <h1 className="text-[clamp(2rem,4vw,3rem)]">{category ? `${t('title')}: ${category.name}` : t('title')}</h1>
-      <p className="mt-3 max-w-[60ch] text-ink-soft">{t('intro')}</p>
-      <GalleryFilters locale={locale} categories={categories} tags={tags} active={{ category: q.category, tag: q.tag }} className="mt-6 mb-8" />
-      {page.items.length ? (
-        <GalleryGrid key={JSON.stringify(filter)} initial={page.items} total={page.total} nextCursor={page.nextCursor} feedUrl={feedUrl} moreHref={moreHref} />
-      ) : (
-        <div className="rounded-[var(--radius-photo)] border border-line px-6 py-12 text-center">
-          <p>{t('empty')}</p>
-          <a href={base} className="mt-3 inline-block text-action underline">{t('clear')}</a>
-        </div>
-      )}
-    </Container>
+    <>
+      <Container className="pt-8 md:pt-12">
+        <h1 className="text-[clamp(2rem,4vw,3rem)]">{category ? `${t('title')}: ${category.name}` : t('title')}</h1>
+        <p className="mt-3 max-w-[60ch] text-ink-soft">{t('intro')}</p>
+        <GalleryFilters locale={locale} categories={categories} tags={tags} active={{ category: q.category, tag: q.tag }} className="mt-6 mb-8" />
+        {page.items.length ? (
+          <GalleryGrid key={JSON.stringify(filter)} initial={page.items} total={page.total} nextCursor={page.nextCursor} feedUrl={feedUrl} moreHref={moreHref} />
+        ) : (
+          <div className="rounded-[var(--radius-photo)] border border-line px-6 py-12 text-center">
+            <p>{t('empty')}</p>
+            <a href={base} className="mt-3 inline-block text-action underline">{t('clear')}</a>
+          </div>
+        )}
+      </Container>
+      <CtaBand locale={locale} place="gallery_cta" />
+    </>
   )
 }
