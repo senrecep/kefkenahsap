@@ -11,6 +11,8 @@ describe('foldText (Turkish-aware folding, mirrors SQL search_norm)', () => {
     ['Çiçeklik ve Oturma Grubu', 'ciceklik ve oturma grubu'],
     ['KÖPRÜ İSKELE', 'kopru iskele'],
     ['Ağaç', 'agac'],
+    ['Straße Æsir Øresund Łódź', 'strasse aesir oresund lodz'],
+    ['i\u0307stanbul', 'istanbul'],
   ])('%s → %s', (input, expected) => {
     expect(foldText(input)).toBe(expected)
   })

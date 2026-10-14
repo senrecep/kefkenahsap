@@ -7,8 +7,9 @@ export async function up({ db }: MigrateUpArgs): Promise<void> {
   CREATE EXTENSION IF NOT EXISTS pg_trgm;
   CREATE EXTENSION IF NOT EXISTS unaccent;
   CREATE OR REPLACE FUNCTION search_norm(text) RETURNS text
+    -- chr(775) = combining dot above (decomposed İ, or i + U+0307): dropped like the TS side does.
     LANGUAGE sql IMMUTABLE STRICT PARALLEL SAFE
-    AS $$ SELECT lower(public.unaccent('public.unaccent'::regdictionary, translate($1, 'İIı', 'iii'))) $$;
+    AS $$ SELECT lower(public.unaccent('public.unaccent'::regdictionary, translate($1, 'İIı' || chr(775), 'iii'))) $$;
 
   CREATE INDEX "media_locales_search_fts" ON "media_locales" USING gin (to_tsvector('simple', search_norm(coalesce("title", '') || ' ' || coalesce("alt", '') || ' ' || coalesce("caption", ''))));
   CREATE INDEX "media_locales_search_trgm" ON "media_locales" USING gin (search_norm(coalesce("title", '') || ' ' || coalesce("alt", '') || ' ' || coalesce("caption", '')) gin_trgm_ops);

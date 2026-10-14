@@ -20,7 +20,7 @@ type Group = {
   visible: string
 }
 
-const GROUPS: Group[] = [
+export const GROUPS: Group[] = [
   {
     collection: 'categories',
     table: 'categories_locales',
@@ -50,18 +50,27 @@ const GROUPS: Group[] = [
  * Match = FTS prefix query ('simple' config on folded text) OR trigram word similarity (`<%`, pg_trgm default
  * threshold 0.6: "pergole" vs "pergola" = 0.75).
  */
-async function rankedIds(payload: Payload, g: Group, q: NormalizedQuery, limit: number): Promise<number[]> {
-  const db = (payload.db as unknown as PostgresAdapter).drizzle
+/** Match predicate on the locales row `l`; written to hit the migration's GIN expression indexes. */
+export const matchSql = (g: Group, q: NormalizedQuery) => {
   const doc = sql.raw(g.doc)
-  const res = await db.execute(sql`
+  return sql`(to_tsvector('simple', ${doc}) @@ to_tsquery('simple', ${prefixTsQuery(q.tokens)}) OR ${q.text} <% ${doc})`
+}
+
+function rankedIdsSql(g: Group, q: NormalizedQuery, limit: number) {
+  const doc = sql.raw(g.doc)
+  return sql`
     SELECT l."_parent_id" AS id,
       max(ts_rank(to_tsvector('simple', ${doc}), to_tsquery('simple', ${prefixTsQuery(q.tokens)})) + word_similarity(${q.text}, ${doc})) AS score
     FROM ${sql.raw(`"${g.table}"`)} l JOIN ${sql.raw(`"${g.parent}"`)} p ON p."id" = l."_parent_id"
     WHERE ${sql.raw(g.visible)}
-      AND (to_tsvector('simple', ${doc}) @@ to_tsquery('simple', ${prefixTsQuery(q.tokens)}) OR ${q.text} <% ${doc})
+      AND ${matchSql(g, q)}
     GROUP BY l."_parent_id"
     ORDER BY score DESC, l."_parent_id"
-    LIMIT ${limit}`)
+    LIMIT ${limit}`
+}
+
+async function rankedIds(payload: Payload, g: Group, q: NormalizedQuery, limit: number): Promise<number[]> {
+  const res = await (payload.db as unknown as PostgresAdapter).drizzle.execute(rankedIdsSql(g, q, limit))
   return res.rows.map((r) => Number(r.id))
 }
 
@@ -71,6 +80,9 @@ async function hydrate<T extends { id: number }>(payload: Payload, g: Group, ids
     collection: g.collection,
     locale,
     depth: 1,
+    // Public view: populated relations (covers, galleries, categories) obey access too — no pending media or drafts.
+    overrideAccess: false,
+    draft: false,
     limit: ids.length,
     pagination: false,
     where: { id: { in: ids } },
@@ -81,7 +93,7 @@ async function hydrate<T extends { id: number }>(payload: Payload, g: Group, ids
 
 /** Site search over categories, approved media, published projects and tags; docs come back in `locale`, best first. */
 export function searchSite(payload: Payload, raw: string, locale: Locale, opts: { limit?: number } = {}): ResultAsync<SearchResults> {
-  const limit = opts.limit ?? 24
+  const limit = Math.min(100, Math.max(1, Math.trunc(opts.limit ?? 24)))
   return fromAsync(Promise.resolve(normalizeQuery(raw))).andThen((q) =>
     ResultAsync.try(
       async () => {
@@ -90,7 +102,10 @@ export function searchSite(payload: Payload, raw: string, locale: Locale, opts: 
         )
         return { categories, media, projects, tags } as SearchResults
       },
-      (e) => Err.unexpected('Search.QueryFailed', e instanceof Error ? e.message : String(e)),
+      (err) => {
+        payload.logger.error({ err }, 'search failed')
+        return Err.unexpected('Search.QueryFailed', 'Arama şu an yapılamadı.')
+      },
     ),
   )
 }

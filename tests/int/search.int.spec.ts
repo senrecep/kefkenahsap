@@ -11,13 +11,15 @@ import { afterAll, beforeAll, describe, expect, it } from 'vitest'
 
 import config from '@/payload.config'
 import { foldText } from '@/lib/search/normalize'
-import { searchSite, type SearchResults } from '@/lib/search/search'
+import { normalizeQuery } from '@/lib/search/normalize'
+import { GROUPS, matchSql, searchSite, type SearchResults } from '@/lib/search/search'
 
 let payload: Payload
 const stamp = Date.now()
 const IMG = path.join(os.tmpdir(), 'kefken-search', 'wood.webp')
 const cleanup: { collection: 'media' | 'categories' | 'projects' | 'tags'; id: number }[] = []
 const ids: Record<string, number> = {}
+let pendingStatus: string | null | undefined
 
 const run = async (q: string, locale: 'tr' | 'en' = 'tr'): Promise<SearchResults> => {
   const r = await searchSite(payload, q, locale, { limit: 50 })
@@ -45,11 +47,18 @@ beforeAll(async () => {
     draft: true,
   })
   ids.draft = draft.id
+  const pending = await payload.create({ collection: 'media', locale: 'tr', data: { alt: 'Bahçede iroko ağacından deck zemin' }, filePath: IMG })
+  ids.pending = pending.id
+  pendingStatus = pending.status
   const project = await payload.create({
     collection: 'projects',
     locale: 'tr',
-    data: { title: `Rıva İskele Projesi ${stamp}`, _status: 'published' },
+    data: { title: `Rıva İskele Projesi ${stamp}`, _status: 'published', cover: pending.id, gallery: [pending.id] },
   })
+  // Published category with a newer, unpublished draft: search must see only the published text.
+  const edited = await payload.create({ collection: 'categories', locale: 'tr', data: { name: `Yayındaki Ad ${stamp}`, _status: 'published' } })
+  await payload.update({ collection: 'categories', id: edited.id, locale: 'tr', data: { name: `Gizli Taslak Ad ${stamp}` }, draft: true })
+  ids.edited = edited.id
   ids.project = project.id
   const tag = await payload.create({ collection: 'tags', locale: 'tr', data: { name: `Thermowood ${stamp}`, axis: 'wood' } })
   ids.tag = tag.id
@@ -61,9 +70,8 @@ beforeAll(async () => {
     data: { status: 'approved', title: 'Bahçede ırok deck', alt: 'Bahçede iroko ağacından deck zemin' },
   })
   ids.media = approved.id
-  const pending = await payload.create({ collection: 'media', locale: 'tr', data: { alt: 'Bahçede iroko ağacından deck zemin' }, filePath: IMG })
-  ids.pending = pending.id
   cleanup.push(
+    { collection: 'categories', id: edited.id },
     { collection: 'categories', id: cat.id },
     { collection: 'categories', id: draft.id },
     { collection: 'projects', id: project.id },
@@ -78,7 +86,7 @@ afterAll(async () => {
 })
 
 describe('search_norm (SQL) matches foldText (TS)', () => {
-  it.each(['İSTANBUL', 'IŞIK', 'ışık', 'Çiçeklik ve Oturma', 'KÖPRÜ İSKELE', 'Ağaç Güneşlik'])('%s', async (s) => {
+  it.each(['İSTANBUL', 'IŞIK', 'ışık', 'Çiçeklik ve Oturma', 'KÖPRÜ İSKELE', 'Ağaç Güneşlik', 'ß æ ø ł Œ', 'i\u0307stanbul', 'İSTANBUL'.normalize('NFD')])('%s', async (s) => {
     const db = (payload.db as unknown as PostgresAdapter).drizzle
     const res = await db.execute(sql`SELECT search_norm(${s}) AS v`)
     expect(res.rows[0]!.v).toBe(foldText(s))
@@ -104,10 +112,40 @@ describe('searchSite', () => {
   })
 
   it('returns only approved media and published categories', async () => {
+    expect(pendingStatus).toBe('pending')
     const media = idsOf((await run('iroko deck zemin')).media)
     expect(media).toContain(ids.media)
     expect(media).not.toContain(ids.pending)
     expect(idsOf((await run('somine taslak')).categories)).not.toContain(ids.draft)
+  })
+
+  it('never exposes pending media through a published project (cover, gallery)', async () => {
+    const hit = (await run('riva iskele')).projects.find((p) => p.id === ids.project)
+    expect(hit).toBeDefined()
+    // Unreadable relations stay unpopulated (bare id): no URL, alt or sizes of the pending image reach the page.
+    expect(typeof hit!.cover).not.toBe('object')
+    expect((hit!.gallery ?? []).every((m) => typeof m === 'number')).toBe(true)
+  })
+
+  it('searches the published version, not a newer draft', async () => {
+    const r = await run('yayindaki ad')
+    expect(r.categories.find((c) => c.id === ids.edited)?.name).toBe(`Yayındaki Ad ${stamp}`)
+    expect(idsOf((await run('gizli taslak ad')).categories)).not.toContain(ids.edited)
+  })
+
+  it('uses the expression indexes from the migration (expressions stay in sync)', async () => {
+    const db = (payload.db as unknown as PostgresAdapter).drizzle
+    const q = normalizeQuery('pergola')
+    if (!q.ok) throw new Error('bad query')
+    for (const g of GROUPS) {
+      const plan = await db.transaction(async (tx) => {
+        await tx.execute(sql`SET LOCAL enable_seqscan = off`)
+        return tx.execute(sql`EXPLAIN SELECT 1 FROM ${sql.raw(`"${g.table}"`)} l WHERE ${matchSql(g, q.value)}`)
+      })
+      const text = plan.rows.map((r) => Object.values(r)[0]).join('\n')
+      expect(text, g.table).toContain(`${g.table}_search_fts`)
+      expect(text, g.table).toContain(`${g.table}_search_trgm`)
+    }
   })
 
   it('fails with a validation error for a too-short query', async () => {

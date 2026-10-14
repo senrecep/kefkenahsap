@@ -15,7 +15,11 @@ export function foldText(input: string): string {
     .toLowerCase()
     .normalize('NFD')
     .replace(/\p{M}/gu, '')
+    .replace(/[ßæœøłđ]/g, (c) => LETTERS[c]!)
 }
+
+// Letters without a combining-mark decomposition that Postgres unaccent still folds.
+const LETTERS: Record<string, string> = { ß: 'ss', æ: 'ae', œ: 'oe', ø: 'o', ł: 'l', đ: 'd' }
 
 export type NormalizedQuery = { text: string; tokens: string[] }
 
