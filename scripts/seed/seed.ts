@@ -10,6 +10,8 @@ import config from '@/payload.config'
 import { SEED_CATEGORIES } from '@/seed/categories'
 import { fileKey, orderForCategory } from '@/seed/order'
 
+import { seedSiteSettings } from './site-settings'
+
 const ROOT = process.cwd()
 const DATA = process.env.KEFKEN_DATA ?? path.resolve(ROOT, '../../kefken-data/Webiste')
 const META = path.resolve(ROOT, 'seed/media-meta')
@@ -43,6 +45,8 @@ for (const m of wpMedia) {
 }
 
 const payload = await getPayload({ config: await config })
+await seedSiteSettings(payload)
+console.log('site settings seeded')
 const ctx = { skipAi: true }
 const tmp = path.join(os.tmpdir(), 'kefken-seed')
 mkdirSync(tmp, { recursive: true })
