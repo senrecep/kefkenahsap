@@ -1,4 +1,4 @@
-import { revalidateTag } from 'next/cache'
+import { revalidateTag } from 'next/cache.js' // explicit path: Playwright imports this config under plain Node ESM
 import type { CollectionAfterChangeHook, CollectionAfterDeleteHook, GlobalAfterChangeHook } from 'payload'
 
 /** Invalidate cached public data when content changes (no-op outside a Next.js runtime, e.g. seed scripts). */
