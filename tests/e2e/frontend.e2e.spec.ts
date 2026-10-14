@@ -16,9 +16,9 @@ test.describe('Frontend smoke', () => {
 
   test('each locale renders its own heading', async ({ page }) => {
     await page.goto('/tr')
-    await expect(page.locator('h1')).toHaveText('Kefken Ahşap Dekorasyon')
+    await expect(page.locator('h1')).toHaveText('Ahşap deck, pergola ve dış mekân ahşap işleri')
     await page.goto('/en')
     await expect(page.locator('html')).toHaveAttribute('lang', 'en')
-    await expect(page.locator('h1')).toHaveText('Kefken Wood Decoration')
+    await expect(page.locator('h1')).toHaveText('Timber decks, pergolas and outdoor woodwork')
   })
 })
