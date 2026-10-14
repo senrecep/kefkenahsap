@@ -41,7 +41,10 @@ export default async function CategoryPage({ params, searchParams }: { params: P
   const page = pageFromQuery((await searchParams).sayfa)
   const data = await getCategory(locale, slug, galleryLimit(page))
   if (!data) notFound()
-  const { category, photos, hasMore } = data
+  const { category, hasMore } = data
+  // Header photo: the approved cover, else the first gallery photo (which then leaves the grid).
+  const hero = typeof category.cover === 'object' && category.cover?.status === 'approved' ? category.cover : data.photos[0]
+  const photos = data.photos.filter((m) => m.id !== hero?.id)
 
   const [t, tCta, format, settings, projects] = await Promise.all([
     getTranslations('Category'),
@@ -70,6 +73,12 @@ export default async function CategoryPage({ params, searchParams }: { params: P
         </div>
       </Container>
 
+      {hero && (
+        <Container className="mb-3 md:mb-4">
+          <Picture media={hero} sizes="(min-width: 1280px) 1232px, 100vw" priority className="aspect-[4/3]! rounded-[var(--radius-photo)] md:aspect-[21/9]!" />
+        </Container>
+      )}
+
       {photos.length > 0 && (
         <Container as="section" aria-labelledby="gallery-h" className="scroll-mt-24">
           <h2 id="gallery-h" className="sr-only">
@@ -82,9 +91,9 @@ export default async function CategoryPage({ params, searchParams }: { params: P
                   media={m}
                   sizes="(min-width: 1280px) 304px, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw"
                   maxWidth={960}
-                  priority={i < 4}
+                  priority={i < 2}
                   className="aspect-[4/3]! rounded-[var(--radius-photo)]"
-                  imgClassName="transition-transform duration-500 ease-[var(--ease-out-expo)] group-hover:scale-[1.03]"
+                  imgClassName="transition-transform duration-500 ease-[var(--ease-out-expo)] motion-safe:group-hover:scale-[1.03]"
                 />
               )
               return (
@@ -130,7 +139,7 @@ export default async function CategoryPage({ params, searchParams }: { params: P
             </h2>
             <p className="mt-3 font-[family-name:var(--font-display)] text-[1.75rem] font-semibold tabular-nums">
               {price.value.range}
-              {price.value.unit && <span className="ms-2 text-[1rem] font-normal text-ink-soft">{t(`perUnit.${price.value.unit as 'm2' | 'm' | 'piece'}`)}</span>}
+              {price.value.unit && <span className="ms-2 text-[1rem] font-normal text-ink-soft">{t(`perUnit.${price.value.unit}`)}</span>}
             </p>
             {price.value.note && <p className="mt-3 max-w-[60ch] text-ink-soft">{price.value.note}</p>}
             {price.value.updatedAt && (

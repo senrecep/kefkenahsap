@@ -21,17 +21,26 @@ type PriceInput = {
   note?: string | null
   updatedAt?: string | null
 }
-export type PriceGuide = { range: string; unit?: string; note?: string; updatedAt?: string }
+const UNITS = ['m2', 'm', 'piece'] as const
+export type PriceUnit = (typeof UNITS)[number]
+export type PriceGuide = { range: string; unit?: PriceUnit; note?: string; updatedAt?: string }
+const isUnit = (u: unknown): u is PriceUnit => UNITS.includes(u as PriceUnit)
 
 /** Price range only when the owner entered at least one bound (no invented prices). */
 export function priceGuide(p: PriceInput | null | undefined, locale: string): Maybe<PriceGuide> {
   const bounds = [p?.min, p?.max].filter((n): n is number => typeof n === 'number')
   if (!bounds.length) return Maybe.none()
-  const fmt = new Intl.NumberFormat(locale, { style: 'currency', currency: p?.currency || 'TRY', maximumFractionDigits: 0 })
+  let fmt: Intl.NumberFormat
+  try {
+    fmt = new Intl.NumberFormat(locale, { style: 'currency', currency: p?.currency || 'TRY', maximumFractionDigits: 0 })
+  } catch {
+    // An invalid currency code from the CMS: show no price rather than break the page.
+    return Maybe.none()
+  }
   const range = [...new Set(bounds)].map((n) => fmt.format(n)).join(' – ')
   return Maybe.some({
     range,
-    ...(p?.unit ? { unit: p.unit } : {}),
+    ...(isUnit(p?.unit) ? { unit: p.unit } : {}),
     ...(p?.note?.trim() ? { note: p.note.trim() } : {}),
     ...(p?.updatedAt ? { updatedAt: p.updatedAt } : {}),
   })

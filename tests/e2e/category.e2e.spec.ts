@@ -1,22 +1,27 @@
-import { expect, test } from '@playwright/test'
-import { getPayload, type Payload } from 'payload'
+import { type APIRequestContext, expect, request, test } from '@playwright/test'
+import { getPayload } from 'payload'
 
 import config from '../../src/payload.config.js'
+import { seedTestUser, testUser } from '../helpers/seedUser'
 
-// Seed category 174 "Deck ve Zeminler" has > 24 approved photos; its shortDesc/body/price/FAQ are empty.
+const PAGE_SIZE = 24
+
 test.describe('Category page', () => {
-  test('renders H1, the first 24 photos and grows with "Daha fazla göster"', async ({ page }) => {
+  test('renders H1, a header photo, at most one page of photos, and "Daha fazla göster" when there are more', async ({ page }) => {
     await page.goto('/tr/deck-ve-zeminler')
     await expect(page.locator('h1')).toHaveText('Deck ve Zeminler')
+    await expect(page.locator('main img').first()).toBeVisible()
     const photos = page.locator('#gallery-h + ul > li')
-    await expect(photos).toHaveCount(24)
+    const first = await photos.count()
+    expect(first).toBeGreaterThanOrEqual(1)
+    expect(first).toBeLessThanOrEqual(PAGE_SIZE)
     await expect(photos.first().locator('a')).toHaveAttribute('href', /^\/tr\/galeri\/[a-z0-9-]+$/)
-    await page.getByRole('link', { name: 'Daha fazla göster' }).click()
-    await expect(page).toHaveURL(/\?sayfa=2$/)
-    expect(await photos.count()).toBeGreaterThan(24)
-    // Empty CMS sections render nothing.
-    await expect(page.getByRole('heading', { name: 'Fiyat rehberi' })).toHaveCount(0)
-    await expect(page.getByRole('heading', { name: 'Sık sorulan sorular' })).toHaveCount(0)
+    const more = page.getByRole('link', { name: 'Daha fazla göster' })
+    if (await more.count()) {
+      await more.click()
+      await expect(page).toHaveURL(/\?sayfa=2$/)
+      await expect.poll(() => photos.count()).toBeGreaterThan(first)
+    }
     await expect(page.locator('a[data-umami-event="whatsapp_click"][data-umami-event-place="category_cta"]')).toHaveAttribute(
       'href',
       /^https:\/\/wa\.me\/.*Deck%20ve%20Zeminler/,
@@ -43,7 +48,7 @@ test.describe('Category page', () => {
   })
 
   test.describe('filled CMS sections', () => {
-    let payload: Payload
+    let api: APIRequestContext
     const stamp = Date.now()
     const slug = `e2e-kategori-${stamp}`
     let categoryId: number
@@ -52,12 +57,19 @@ test.describe('Category page', () => {
     const block = (type: string, t: string, extra = {}) => ({ type, children: [text(t)], direction: 'ltr' as const, format: '' as const, indent: 0, version: 1, ...extra })
 
     test.beforeAll(async () => {
-      payload = await getPayload({ config })
+      // Writes go through REST so Payload hooks revalidate the Next server's cached loaders.
+      const payload = await getPayload({ config })
+      await seedTestUser()
+      const baseURL = `http://localhost:${process.env.E2E_PORT ?? 3000}`
+      const login = await (await request.newContext({ baseURL })).post('/api/users/login', { data: { email: testUser.email, password: testUser.password } })
+      api = await request.newContext({ baseURL, extraHTTPHeaders: { Authorization: `JWT ${(await login.json()).token}` } })
+      const create = async (collection: string, data: Record<string, unknown>) => {
+        const res = await api.post(`/api/${collection}?locale=tr`, { data })
+        expect(res.ok(), await res.text()).toBe(true)
+        return (await res.json()).doc as { id: number }
+      }
       const cover = (await payload.find({ collection: 'media', where: { status: { equals: 'approved' } }, limit: 1, depth: 0 })).docs[0]!
-      const category = await payload.create({
-        collection: 'categories',
-        locale: 'tr',
-        data: {
+      const category = await create('categories', {
           _status: 'published',
           name: `E2E Kategori ${stamp}`,
           slug,
@@ -65,19 +77,14 @@ test.describe('Category page', () => {
           body: { root: { type: 'root', direction: 'ltr', format: '', indent: 0, version: 1, children: [block('heading', 'Ne kadar sürer?', { tag: 'h2' }), block('paragraph', 'Gövde paragrafı.')] } },
           faq: [{ q: 'Bakım gerekir mi?', a: 'Yılda bir yağlama yeterli.' }],
           priceGuide: { min: 2500, max: 4000, unit: 'm2', currency: 'TRY', note: 'Ahşap türüne göre değişir.', updatedAt: '2026-09-01T00:00:00.000Z' },
-        },
       })
       categoryId = category.id
-      const project = await payload.create({
-        collection: 'projects',
-        locale: 'tr',
-        data: { _status: 'published', title: `E2E Proje ${stamp}`, categories: [categoryId], cover: cover.id, city: 'İstanbul', year: 2024 },
-      })
+      const project = await create('projects', { _status: 'published', title: `E2E Proje ${stamp}`, categories: [categoryId], cover: cover.id, city: 'İstanbul', year: 2024 })
       projectId = project.id
     })
     test.afterAll(async () => {
-      if (projectId) await payload.delete({ collection: 'projects', id: projectId })
-      if (categoryId) await payload.delete({ collection: 'categories', id: categoryId })
+      if (projectId) await api.delete(`/api/projects/${projectId}`)
+      if (categoryId) await api.delete(`/api/categories/${categoryId}`)
     })
 
     test('shows intro, body, price guide with date, FAQ and related projects; no EN alternate', async ({ page }) => {

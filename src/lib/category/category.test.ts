@@ -34,6 +34,13 @@ describe('priceGuide', () => {
     expect(p.value.note).toBe('Ahşap türüne göre')
     expect(p.value.updatedAt).toBe('2026-09-01T00:00:00.000Z')
   })
+  it('drops a unit outside m2 / m / piece', () => {
+    const p = priceGuide({ min: 100, unit: 'ton' }, 'tr')
+    expect(Maybe.isSome(p) && p.value.unit).toBeUndefined()
+  })
+  it('is none when the currency cannot be formatted', () => {
+    expect(Maybe.isNone(priceGuide({ min: 100, currency: 'not-a-currency' }, 'tr'))).toBe(true)
+  })
   it('shows a single bound when only one is set', () => {
     const p = priceGuide({ min: 100, currency: 'EUR' }, 'en')
     expect(Maybe.isSome(p) && p.value.range).toBe('€100')

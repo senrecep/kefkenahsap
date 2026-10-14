@@ -36,7 +36,7 @@ export default async function ServicesPage({ params }: { params: Params }) {
                   maxWidth={1280}
                   priority={i < 3}
                   className="aspect-[4/3]! rounded-[var(--radius-photo)]"
-                  imgClassName="transition-transform duration-500 ease-[var(--ease-out-expo)] group-hover:scale-[1.03]"
+                  imgClassName="transition-transform duration-500 ease-[var(--ease-out-expo)] motion-safe:group-hover:scale-[1.03]"
                 />
               )}
               <h2 className="mt-4 text-[1.3rem] group-hover:text-action">{c.name}</h2>
