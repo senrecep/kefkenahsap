@@ -43,7 +43,7 @@ const body = {
   },
 }
 // The scene chunk is recognised by its content (chunk names are hashed in production builds).
-const isScene = (js: string) => js.includes('WEBGL_lose_context')
+const isScene = (js: string) => js.includes('webglcontextlost')
 const isIsland = (js: string) => js.includes('wood-samples-title')
 
 test.describe('wood samples block', () => {
@@ -106,9 +106,17 @@ test.describe('wood samples block', () => {
     await page.waitForLoadState('networkidle')
     expect(scripts.some(isScene)).toBe(false)
 
+    const hint = 'Sürükleyerek ya da ok tuşlarıyla çevirin'
+    await expect(figure.getByText(hint)).toHaveCount(0)
     await figure.scrollIntoViewIfNeeded()
-    const plank = figure.getByRole('img', { name: /^İroko\. Sürükleyerek/ })
+    const plank = figure.getByRole('group', { name: 'İroko', exact: true })
     await expect(plank).toBeVisible({ timeout: 15_000 })
+    await expect(plank).toHaveAttribute('aria-roledescription', '3B numune')
+    // The hint appears once, in the figure, and describes each plank.
+    await expect(figure.getByText(hint)).toHaveCount(1)
+    expect(await figure.getByText(hint).getAttribute('id')).toBe(
+      await plank.getAttribute('aria-describedby'),
+    )
     await expect.poll(() => scripts.some(isScene)).toBe(true)
     await expect(figure.locator('canvas')).toHaveCount(2)
 
@@ -118,6 +126,18 @@ test.describe('wood samples block', () => {
     await page.keyboard.press('ArrowRight')
     await page.keyboard.press('ArrowDown')
     expect((await plank.screenshot()).equals(before)).toBe(false)
+
+    // A lost WebGL context drops that plank and brings its photo back; the other plank stays live.
+    await plank.evaluate((el) => {
+      const c = el.querySelector('canvas')!
+      return (c.getContext('webgl2') ?? c.getContext('webgl'))!
+        .getExtension('WEBGL_lose_context')!
+        .loseContext()
+    })
+    await expect(plank).toHaveCount(0)
+    await expect(figure.locator('canvas')).toHaveCount(1)
+    await expect(figure.getByRole('group')).toHaveCount(1)
+    await expect(figure.locator('img[src="/wood/iroko.webp"]')).not.toHaveClass(/opacity-0/)
   })
 
   test('reduced motion keeps the static photos and never loads OGL', async ({ page }) => {
@@ -129,6 +149,47 @@ test.describe('wood samples block', () => {
     await expect(figure.locator('[tabindex="0"]')).toHaveCount(0)
     expect(scripts.some(isScene)).toBe(false)
   })
+
+  // PLAN §9: no 3D (and no OGL download) under Save-Data, on low-memory devices or without WebGL.
+  for (const [name, init] of [
+    [
+      'Save-Data',
+      () =>
+        Object.defineProperty(navigator, 'connection', {
+          value: { saveData: true },
+          configurable: true,
+        }),
+    ],
+    [
+      'low device memory',
+      () => Object.defineProperty(navigator, 'deviceMemory', { value: 1, configurable: true }),
+    ],
+    [
+      'no WebGL',
+      () => {
+        const get = HTMLCanvasElement.prototype.getContext
+        HTMLCanvasElement.prototype.getContext = function (
+          this: HTMLCanvasElement,
+          type: string,
+          ...rest: unknown[]
+        ) {
+          return /webgl/.test(type)
+            ? null
+            : (get as (...a: unknown[]) => unknown).call(this, type, ...rest)
+        } as typeof get
+      },
+    ],
+  ] as const) {
+    test(`${name}: static photos, no scene chunk`, async ({ page }) => {
+      await page.addInitScript(init)
+      const { figure, scripts } = await open(page)
+      await figure.scrollIntoViewIfNeeded()
+      await page.waitForTimeout(1500)
+      await expect(figure.locator('canvas')).toHaveCount(0)
+      await expect(figure.locator('[tabindex="0"]')).toHaveCount(0)
+      expect(scripts.some(isScene)).toBe(false)
+    })
+  }
 
   test('a guide without the block loads none of the samples code', async ({ page }) => {
     const scripts: string[] = []

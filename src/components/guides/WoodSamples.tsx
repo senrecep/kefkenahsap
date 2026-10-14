@@ -10,8 +10,18 @@ import { WoodSamplesLazy } from './WoodSamplesLazy'
  */
 export default async function WoodSamples() {
   const t = await getTranslations('WoodSamples')
-  const names = Object.fromEntries(
+  const names: Partial<Record<WoodKey, string>> = Object.fromEntries(
     shownSamples().map((s) => [s.key, t(`names.${s.key}`)]),
-  ) as Record<WoodKey, string>
-  return <WoodSamplesLazy labels={{ title: t('title'), hint: t('hint'), note: t('note'), names }} />
+  )
+  return (
+    <WoodSamplesLazy
+      labels={{
+        title: t('title'),
+        hint: t('hint'),
+        note: t('note'),
+        roledescription: t('roledescription'),
+        names,
+      }}
+    />
+  )
 }

@@ -27,12 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const found = await getGuide(locale, slug)
   if (!found) return {}
   const { guide, paths } = found
-  const m = await pageMetadata({
-    locale,
-    title: guide.seo?.title || guide.title,
-    description: guide.seo?.description || metaDescription(guide.excerpt),
-    paths,
-  })
+  const m = await pageMetadata({ locale, title: guide.seo?.title || guide.title, description: guide.seo?.description || metaDescription(guide.excerpt), paths })
   return { ...m, openGraph: { ...m.openGraph, type: 'article', modifiedTime: guide.updatedAt } }
 }
 
@@ -42,13 +37,7 @@ export default async function GuidePage({ params }: Props) {
   const found = await getGuide(locale, slug)
   if (!found) notFound()
   const { guide, categories } = found
-  const [t, tCta, format, settings, published] = await Promise.all([
-    getTranslations('Guides'),
-    getTranslations('Cta'),
-    getFormatter(),
-    getSiteSettings(locale),
-    getGuides(locale),
-  ])
+  const [t, tCta, format, settings, published] = await Promise.all([getTranslations('Guides'), getTranslations('Cta'), getFormatter(), getSiteSettings(locale), getGuides(locale)])
   const body = guide.body as SerializedEditorState | null | undefined
   const toc = tableOfContents(body)
   // Byline only when the owner opted in for this guide (and a founder name is set).
@@ -58,10 +47,7 @@ export default async function GuidePage({ params }: Props) {
   const url = `${site}${getPathname({ locale, href: { pathname: '/rehber/[slug]', params: { slug } } })}`
   const updated = (
     <>
-      {t('updated')}:{' '}
-      <time dateTime={guide.updatedAt}>
-        {format.dateTime(new Date(guide.updatedAt), { dateStyle: 'long' })}
-      </time>
+      {t('updated')}: <time dateTime={guide.updatedAt}>{format.dateTime(new Date(guide.updatedAt), { dateStyle: 'long' })}</time>
     </>
   )
 
@@ -70,14 +56,7 @@ export default async function GuidePage({ params }: Props) {
       {/* Only what the page shows: title, excerpt, the "updated" date, the byline when shown, and the FAQ list. */}
       <JsonLd
         data={[
-          articleJsonLd({
-            site,
-            headline: guide.title,
-            url,
-            description: guide.excerpt,
-            author: founder?.name,
-            dateModified: guide.updatedAt,
-          }),
+          articleJsonLd({ site, headline: guide.title, url, description: guide.excerpt, author: founder?.name, dateModified: guide.updatedAt }),
           faqJsonLd(faq),
           breadcrumbJsonLd([
             { name: settings.companyName, url: site + getPathname({ locale, href: '/' }) },
@@ -87,10 +66,7 @@ export default async function GuidePage({ params }: Props) {
         ]}
       />
       <Container as="article" className="pt-6 pb-16 md:pt-10">
-        <a
-          href={getPathname({ locale, href: '/rehber' })}
-          className="text-[0.95rem] text-action underline"
-        >
+        <a href={getPathname({ locale, href: '/rehber' })} className="text-[0.95rem] text-action underline">
           {t('back')}
         </a>
         <header className="mt-6 max-w-[46rem]">
@@ -99,29 +75,19 @@ export default async function GuidePage({ params }: Props) {
             {founder && <>{founder.name} · </>}
             {updated}
           </p>
-          {guide.excerpt && (
-            <p className="mt-6 text-[1.1875rem] leading-relaxed md:text-[1.3125rem]">
-              {guide.excerpt}
-            </p>
-          )}
+          {guide.excerpt && <p className="mt-6 text-[1.1875rem] leading-relaxed md:text-[1.3125rem]">{guide.excerpt}</p>}
         </header>
 
         <div className="mt-10 grid gap-10 border-t border-line pt-10 lg:grid-cols-[15rem_minmax(0,1fr)] lg:gap-16">
           {toc.items.length > 1 && (
             <nav aria-labelledby="toc-title" className="lg:sticky lg:top-24 lg:self-start">
-              <h2
-                id="toc-title"
-                className="font-[family-name:var(--font-display)] text-[0.95rem] font-semibold"
-              >
+              <h2 id="toc-title" className="font-[family-name:var(--font-display)] text-[0.95rem] font-semibold">
                 {t('toc')}
               </h2>
               <ol className="mt-3 space-y-1 border-s border-line text-[0.95rem]">
                 {toc.items.map((item) => (
                   <li key={item.id}>
-                    <a
-                      href={`#${item.id}`}
-                      className="-ms-px block border-s-2 border-transparent py-1.5 ps-4 text-ink-soft hover:border-action hover:text-ink"
-                    >
+                    <a href={`#${item.id}`} className="-ms-px block border-s-2 border-transparent py-1.5 ps-4 text-ink-soft hover:border-action hover:text-ink">
                       {item.text}
                     </a>
                   </li>
@@ -131,15 +97,7 @@ export default async function GuidePage({ params }: Props) {
           )}
 
           <div className="min-w-0 lg:col-start-2">
-            {body && (
-              <GuideBody
-                data={body}
-                idOf={toc.idOf}
-                tableLabel={t('table')}
-                publishedHrefs={new Set(published.map((g) => g.href))}
-                woodSamples={hasWoodSamples(body) && <WoodSamples />}
-              />
-            )}
+            {body && <GuideBody data={body} idOf={toc.idOf} tableLabel={t('table')} publishedHrefs={new Set(published.map((g) => g.href))} woodSamples={hasWoodSamples(body) && <WoodSamples />} />}
 
             {faq.length > 0 && (
               <section aria-labelledby="faq" className="mt-16 max-w-[68ch]">
@@ -149,9 +107,7 @@ export default async function GuidePage({ params }: Props) {
                 <dl className="mt-4 divide-y divide-line border-y border-line">
                   {faq.map((item) => (
                     <div key={item.id ?? item.q} className="py-5">
-                      <dt className="font-[family-name:var(--font-display)] font-semibold">
-                        {item.q}
-                      </dt>
+                      <dt className="font-[family-name:var(--font-display)] font-semibold">{item.q}</dt>
                       <dd className="mt-2 text-ink-soft">{item.a}</dd>
                     </div>
                   ))}
@@ -160,16 +116,9 @@ export default async function GuidePage({ params }: Props) {
             )}
 
             {founder && (
-              <aside
-                aria-label={t('author')}
-                className="mt-12 max-w-[68ch] rounded-[var(--radius-control)] bg-mist p-6"
-              >
-                <p className="font-[family-name:var(--font-display)] text-lg font-semibold">
-                  {founder.name}
-                </p>
-                <p className="text-[0.95rem] text-ink-soft">
-                  {t('authorRole', { company: settings.companyName })}
-                </p>
+              <aside aria-label={t('author')} className="mt-12 max-w-[68ch] rounded-[var(--radius-control)] bg-mist p-6">
+                <p className="font-[family-name:var(--font-display)] text-lg font-semibold">{founder.name}</p>
+                <p className="text-[0.95rem] text-ink-soft">{t('authorRole', { company: settings.companyName })}</p>
                 {founder.bio && <p className="mt-3">{founder.bio}</p>}
                 <p className="mt-3 text-[0.95rem] text-ink-soft">{updated}</p>
               </aside>
@@ -204,11 +153,7 @@ export default async function GuidePage({ params }: Props) {
             <p className="mt-2 text-ink-soft">{t('ctaText')}</p>
           </div>
           <div className="flex flex-col gap-3 sm:flex-row">
-            <WhatsAppButton
-              locale={locale}
-              place="guide"
-              context={{ kind: 'default', vars: { url } }}
-            />
+            <WhatsAppButton locale={locale} place="guide" context={{ kind: 'default', vars: { url } }} />
             <a href={getPathname({ locale, href: '/iletisim' })} className={buttonClass.outline}>
               {tCta('quote')}
             </a>

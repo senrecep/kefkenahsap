@@ -1,10 +1,4 @@
-import {
-  BlocksFeature,
-  EXPERIMENTAL_TableFeature,
-  HeadingFeature,
-  lexicalEditor,
-  type FeatureProviderServer,
-} from '@payloadcms/richtext-lexical'
+import { BlocksFeature, EXPERIMENTAL_TableFeature, HeadingFeature, lexicalEditor, type FeatureProviderServer } from '@payloadcms/richtext-lexical'
 import type { Block, CollectionConfig } from 'payload'
 
 import { isStaff, publishedOrStaff } from '@/access'
@@ -12,8 +6,8 @@ import { slugFrom } from '@/hooks/slug'
 import { revalidateAfterChange, revalidateAfterDelete } from '@/hooks/revalidate'
 import { aiDraftField, aiTranslateField } from './aiFields'
 
-// #60: the 3D wood samples (iroko, teak, çam, thermowood), placed by the editor anywhere in a guide body. Fixed content,
-// so no fields; the page renders it from src/lib/wood/samples.ts.
+// #60: the 3D wood samples, placed by the editor anywhere in a guide body. Fixed content, so no fields; the page
+// renders it from src/lib/wood/samples.ts.
 export const WoodSamplesBlock: Block = {
   slug: 'woodSamples',
   labels: { singular: 'Ahşap numuneleri (3D)', plural: 'Ahşap numuneleri (3D)' },
@@ -22,11 +16,7 @@ export const WoodSamplesBlock: Block = {
 
 // Guides compare wood species in tables (PLAN §7), so their body adds the table feature; headings are H2/H3 only
 // (H1 is the title, the TOC lists H2s). The seed loader and e2e reuse this list.
-export const guideBodyFeatures = ({
-  defaultFeatures,
-}: {
-  defaultFeatures: FeatureProviderServer[]
-}) => [
+export const guideBodyFeatures = ({ defaultFeatures }: { defaultFeatures: FeatureProviderServer[] }) => [
   ...defaultFeatures.filter((f) => f.key !== 'heading'),
   HeadingFeature({ enabledHeadingSizes: ['h2', 'h3'] }),
   EXPERIMENTAL_TableFeature(),
@@ -48,10 +38,7 @@ export const Guides: CollectionConfig = {
       },
     },
   },
-  hooks: {
-    afterChange: [revalidateAfterChange('guides')],
-    afterDelete: [revalidateAfterDelete('guides')],
-  },
+  hooks: { afterChange: [revalidateAfterChange('guides')], afterDelete: [revalidateAfterDelete('guides')] },
   access: { read: publishedOrStaff, create: isStaff, update: isStaff, delete: isStaff },
   versions: { drafts: true },
   fields: [
@@ -67,19 +54,8 @@ export const Guides: CollectionConfig = {
       hooks: { beforeValidate: [slugFrom('title')] },
       admin: { position: 'sidebar', description: 'Boş bırakılırsa başlıktan üretilir.' },
     },
-    {
-      name: 'excerpt',
-      type: 'textarea',
-      localized: true,
-      label: 'Kısa cevap (ilk paragraf, en çok 150 kelime)',
-    },
-    {
-      name: 'body',
-      type: 'richText',
-      localized: true,
-      label: 'Yazı',
-      editor: lexicalEditor({ features: guideBodyFeatures }),
-    },
+    { name: 'excerpt', type: 'textarea', localized: true, label: 'Kısa cevap (ilk paragraf, en çok 150 kelime)' },
+    { name: 'body', type: 'richText', localized: true, label: 'Yazı', editor: lexicalEditor({ features: guideBodyFeatures }) },
     {
       name: 'faq',
       type: 'array',
@@ -95,20 +71,9 @@ export const Guides: CollectionConfig = {
       type: 'checkbox',
       defaultValue: false,
       label: 'Yazar kutusunu göster',
-      admin: {
-        position: 'sidebar',
-        description:
-          'Açıksa yazının altında kurucunun adı (Site Bilgileri › Kurucu) yazar olarak görünür.',
-      },
+      admin: { position: 'sidebar', description: 'Açıksa yazının altında kurucunun adı (Site Bilgileri › Kurucu) yazar olarak görünür.' },
     },
-    {
-      name: 'relatedCategories',
-      type: 'relationship',
-      relationTo: 'categories',
-      hasMany: true,
-      label: 'İlgili hizmetler',
-      admin: { position: 'sidebar' },
-    },
+    { name: 'relatedCategories', type: 'relationship', relationTo: 'categories', hasMany: true, label: 'İlgili hizmetler', admin: { position: 'sidebar' } },
     {
       name: 'seo',
       type: 'group',

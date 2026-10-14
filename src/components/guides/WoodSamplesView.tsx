@@ -1,12 +1,18 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useId, useRef, useState } from 'react'
 
 import { can3d, keyRotation, rotate, shownSamples, type WoodKey } from '@/lib/wood/samples'
 
 import type { WoodScene } from './wood-scene'
 
-type Labels = { names: Record<WoodKey, string>; hint: string; note: string; title: string }
+type Labels = {
+  names: Partial<Record<WoodKey, string>>
+  hint: string
+  note: string
+  title: string
+  roledescription: string
+}
 const START = { x: 0.35, y: -0.5 }
 
 function env() {
@@ -16,7 +22,10 @@ function env() {
   }
   let webgl = false
   try {
-    webgl = Boolean(document.createElement('canvas').getContext('webgl'))
+    const gl = document.createElement('canvas').getContext('webgl')
+    webgl = Boolean(gl)
+    // Release the probe's context at once: browsers cap live WebGL contexts.
+    gl?.getExtension('WEBGL_lose_context')?.loseContext()
   } catch {}
   return {
     webgl,
@@ -27,12 +36,17 @@ function env() {
 }
 
 /**
- * Four wood samples. Server-rendered as flat photos (also the fallback: no WebGL, reduced motion, Save-Data). Once the
- * figure nears the viewport and 3D is allowed, OGL is imported and each photo becomes a plank turned by drag or arrow keys.
+ * Wood samples with a real-photo texture. Server-rendered as flat photos (also the fallback: no WebGL, reduced motion,
+ * Save-Data, low memory, lost context). Once the figure nears the viewport and 3D is allowed, OGL is imported and each
+ * photo becomes a plank turned by drag or arrow keys.
  */
 export function WoodSamplesView({ labels }: { labels: Labels }) {
   const root = useRef<HTMLElement>(null)
   const [on, setOn] = useState(false)
+  const [live, setLive] = useState(0)
+  const titleId = useId()
+  const onReady = useCallback((ready: boolean) => setLive((n) => n + (ready ? 1 : -1)), [])
+  const hintId = useId()
 
   useEffect(() => {
     const el = root.current
@@ -50,71 +64,105 @@ export function WoodSamplesView({ labels }: { labels: Labels }) {
   }, [])
 
   return (
-    <figure ref={root} className="mt-8" aria-labelledby="wood-samples-title">
-      <figcaption
-        id="wood-samples-title"
-        className="font-[family-name:var(--font-display)] font-semibold"
-      >
+    <figure ref={root} className="mt-8" aria-labelledby={titleId}>
+      <figcaption id={titleId} className="font-[family-name:var(--font-display)] font-semibold">
         {labels.title}
       </figcaption>
-      <ul className="mt-4! grid list-none! grid-cols-2 gap-x-4 gap-y-6 ps-0!">
+      <ul role="list" className="mt-4! grid list-none! grid-cols-2 gap-x-4 gap-y-6 ps-0!">
         {shownSamples().map((s) => (
           <Sample
             key={s.key}
             src={s.texture}
-            name={labels.names[s.key]}
-            hint={labels.hint}
+            name={labels.names[s.key] ?? s.key}
+            roledescription={labels.roledescription}
+            hintId={hintId}
             on={on}
+            onReady={onReady}
           />
         ))}
       </ul>
       <p className="mt-4 text-[0.95rem] text-ink-soft">
         {labels.note}
-        {on && <> {labels.hint}.</>}
+        {/* The hint appears once, and only while at least one plank can actually be turned. */}
+        {live > 0 && <span id={hintId}> {labels.hint}.</span>}
       </p>
     </figure>
   )
 }
 
-function Sample({ src, name, hint, on }: { src: string; name: string; hint: string; on: boolean }) {
-  const canvas = useRef<HTMLCanvasElement>(null)
+function Sample(props: {
+  src: string
+  name: string
+  roledescription: string
+  hintId: string
+  on: boolean
+  onReady: (ready: boolean) => void
+}) {
+  const { src, name, roledescription, hintId, on, onReady } = props
+  const frame = useRef<HTMLDivElement>(null)
   const scene = useRef<WoodScene | null>(null)
   const rot = useRef(START)
   const drag = useRef<{ x: number; y: number } | null>(null)
   const [ready, setReady] = useState(false)
 
   useEffect(() => {
-    if (!on || !canvas.current) return
+    if (!on || !frame.current) return
+    // A fresh canvas per mount: under StrictMode's double effect the first run's loseContext must not hit the second's.
+    const canvas = document.createElement('canvas')
+    canvas.setAttribute('aria-hidden', 'true')
+    canvas.className = 'absolute inset-0 size-full'
+    frame.current.append(canvas)
     let cancelled = false
+    let shown = false
+    const hide = () => {
+      if (shown) onReady(false)
+      shown = false
+      setReady(false)
+    }
     import('./wood-scene')
-      .then(({ mountWoodScene }) => mountWoodScene(canvas.current!, src, rot.current))
+      .then(({ mountWoodScene }) =>
+        mountWoodScene(canvas, src, rot.current, () => {
+          // Context lost: drop the plank, the photo comes back.
+          scene.current = null
+          canvas.remove()
+          hide()
+        }),
+      )
       .then((s) => {
         if (cancelled) return s.destroy()
         scene.current = s
+        shown = true
+        onReady(true)
         setReady(true)
       })
-      .catch(() => {}) // the flat photo stays: that is the fallback
+      .catch(() => canvas.remove()) // the flat photo stays: that is the fallback
     return () => {
       cancelled = true
       scene.current?.destroy()
       scene.current = null
+      canvas.remove()
+      hide()
     }
-  }, [on, src])
+  }, [on, src, onReady])
 
   const turn = (d: { x: number; y: number }) => {
     rot.current = rotate(rot.current, d)
     scene.current?.setRotation(rot.current.x, rot.current.y)
   }
+  const endDrag = () => (drag.current = null)
 
   return (
     <li className="mt-0! ps-0!">
       <div
+        ref={frame}
         className="relative aspect-[2/1] overflow-hidden rounded-[var(--radius-photo)] bg-mist focus-visible:outline-2 focus-visible:outline-offset-2"
         {...(ready
           ? {
               tabIndex: 0,
-              role: 'img',
-              'aria-label': `${name}. ${hint}`,
+              role: 'group',
+              'aria-roledescription': roledescription,
+              'aria-label': name,
+              'aria-describedby': hintId,
               onKeyDown: (e: React.KeyboardEvent) => {
                 const d = keyRotation(e.key)
                 if (!d) return
@@ -133,7 +181,9 @@ function Sample({ src, name, hint, on }: { src: string; name: string; hint: stri
                 })
                 drag.current = { x: e.clientX, y: e.clientY }
               },
-              onPointerUp: () => (drag.current = null),
+              onPointerUp: endDrag,
+              onPointerCancel: endDrag,
+              onLostPointerCapture: endDrag,
               style: { touchAction: 'pan-y', cursor: 'grab' },
             }
           : {})}
@@ -146,7 +196,6 @@ function Sample({ src, name, hint, on }: { src: string; name: string; hint: stri
           loading="lazy"
           className={`size-full object-cover transition-opacity duration-150 ${ready ? 'opacity-0' : ''}`}
         />
-        {on && <canvas ref={canvas} aria-hidden className="absolute inset-0 size-full" />}
       </div>
       <p className="mt-2! font-[family-name:var(--font-display)] font-semibold">{name}</p>
     </li>

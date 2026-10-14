@@ -42,8 +42,7 @@ export function GuideBody({
     },
     link: (args) => {
       const url = (args.node.fields as { url?: string } | undefined)?.url ?? ''
-      if (GUIDE_LINK.test(url) && !publishedHrefs.has(url))
-        return <span>{args.nodesToJSX({ nodes: args.node.children })}</span>
+      if (GUIDE_LINK.test(url) && !publishedHrefs.has(url)) return <span>{args.nodesToJSX({ nodes: args.node.children })}</span>
       const fallback = defaultConverters.link
       return typeof fallback === 'function' ? fallback(args) : null
     },
@@ -53,40 +52,13 @@ export function GuideBody({
       const cells = (row: Row, head: boolean) =>
         (row.children ?? []).map((cell, i) => {
           const content = nodesToJSX({ nodes: (cell.children ?? []) as never[] })
-          if (head)
-            return (
-              <th
-                key={i}
-                scope="col"
-                className="bg-mist px-3 py-2.5 text-start align-top font-[family-name:var(--font-display)] text-[0.85rem] font-semibold [&_p]:m-0"
-              >
-                {content}
-              </th>
-            )
-          if (i === 0)
-            return (
-              <th
-                key={i}
-                scope="row"
-                className="px-3 py-2.5 text-start align-top font-semibold [&_p]:m-0"
-              >
-                {content}
-              </th>
-            )
-          return (
-            <td key={i} className="px-3 py-2.5 text-start align-top [&_p]:m-0">
-              {content}
-            </td>
-          )
+          if (head) return <th key={i} scope="col" className="bg-mist px-3 py-2.5 text-start align-top font-[family-name:var(--font-display)] text-[0.85rem] font-semibold [&_p]:m-0">{content}</th>
+          if (i === 0) return <th key={i} scope="row" className="px-3 py-2.5 text-start align-top font-semibold [&_p]:m-0">{content}</th>
+          return <td key={i} className="px-3 py-2.5 text-start align-top [&_p]:m-0">{content}</td>
         })
       const body = hasHead ? rows.slice(1) : rows
       return (
-        <div
-          className="mt-6 overflow-x-auto rounded-[var(--radius-control)] border border-line"
-          tabIndex={0}
-          role="region"
-          aria-label={tableLabel}
-        >
+        <div className="mt-6 overflow-x-auto rounded-[var(--radius-control)] border border-line" tabIndex={0} role="region" aria-label={tableLabel}>
           <table className="w-full border-collapse text-[0.95rem] leading-snug [font-variant-numeric:tabular-nums]">
             {hasHead && (
               <thead>
