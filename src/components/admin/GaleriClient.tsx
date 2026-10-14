@@ -1,0 +1,438 @@
+'use client'
+
+import Link from 'next/link'
+import { useCallback, useEffect, useRef, useState } from 'react'
+
+import type { Media } from '@/payload-types'
+import { fitWithin, mediaBadge, reorder } from '@/lib/media/galeri'
+import './galeri.css'
+
+type Option = { id: number; name: string }
+type Item = Pick<Media, 'id' | 'status' | 'title' | 'alt' | 'aiSuggestion' | 'url' | 'filename' | 'sizes' | '_media_media_order'>
+type QueueEntry = { key: string; name: string; state: 'waiting' | 'working' | 'done' | 'error'; message?: string }
+
+const MAX_EDGE = 2560
+const STORE_KEY = 'galeri.secim'
+const NETWORK_ERROR = 'Bağlantı kurulamadı. İnternetinizi kontrol edip tekrar deneyin.'
+
+/** fetch + Payload error unwrapping; throws an Error with a Turkish, user-facing message. */
+async function api<T>(path: string, init?: RequestInit): Promise<T> {
+  let res: Response
+  try {
+    res = await fetch(path, { credentials: 'include', ...init })
+  } catch {
+    throw new Error(NETWORK_ERROR)
+  }
+  const body = await res.json().catch(() => ({}))
+  if (!res.ok) throw new Error(body?.errors?.[0]?.message || body?.error || 'İşlem tamamlanamadı. Tekrar deneyin.')
+  return body as T
+}
+
+const toBlob = (canvas: HTMLCanvasElement, type: string) =>
+  new Promise<Blob | null>((resolve) => canvas.toBlob(resolve, type, 0.9))
+
+/** Downscale to ≤2560px and re-encode; drawing through a canvas drops EXIF (GPS included). */
+async function prepare(file: File): Promise<File> {
+  let bitmap: ImageBitmap
+  try {
+    bitmap = await createImageBitmap(file, { imageOrientation: 'from-image' })
+  } catch {
+    throw new Error('Bu fotoğraf açılamadı. Başka bir fotoğraf seçin.')
+  }
+  const { width, height } = fitWithin(bitmap.width, bitmap.height, MAX_EDGE)
+  const canvas = document.createElement('canvas')
+  canvas.width = width
+  canvas.height = height
+  canvas.getContext('2d')!.drawImage(bitmap, 0, 0, width, height)
+  bitmap.close()
+  // Safari cannot encode WebP and silently returns PNG; JPEG keeps the upload small there.
+  let blob = await toBlob(canvas, 'image/webp')
+  if (blob?.type !== 'image/webp') blob = await toBlob(canvas, 'image/jpeg')
+  if (!blob) throw new Error('Fotoğraf hazırlanamadı. Tekrar deneyin.')
+  const ext = blob.type === 'image/webp' ? 'webp' : 'jpg'
+  return new File([blob], `${file.name.replace(/\.[^.]+$/, '') || 'foto'}.${ext}`, { type: blob.type })
+}
+
+function readStored(): { category?: number; project?: number } {
+  try {
+    return JSON.parse(localStorage.getItem(STORE_KEY) ?? '{}')
+  } catch {
+    return {}
+  }
+}
+
+export function GaleriClient({ categories, projects }: { categories: Option[]; projects: Option[] }) {
+  const [category, setCategory] = useState<number | undefined>(categories[0]?.id)
+  const [project, setProject] = useState<number | undefined>()
+  const [items, setItems] = useState<Item[]>([])
+  const [loading, setLoading] = useState(false)
+  const [loadError, setLoadError] = useState('')
+  const [queue, setQueue] = useState<QueueEntry[]>([])
+  const [editing, setEditing] = useState<number | null>(null)
+  const [cardError, setCardError] = useState<Record<number, string>>({})
+  const [busy, setBusy] = useState<number | null>(null)
+  const [moving, setMoving] = useState(false)
+  const dragFrom = useRef<number | null>(null)
+  // The upload loop outlives re-renders; it reads the current category from a ref.
+  const categoryRef = useRef(category)
+  useEffect(() => {
+    categoryRef.current = category
+  }, [category])
+
+  // Restore the last choice after hydration (localStorage is client-only).
+  useEffect(() => {
+    const stored = readStored()
+    if (categories.some((c) => c.id === stored.category)) setCategory(stored.category)
+    if (projects.some((p) => p.id === stored.project)) setProject(stored.project)
+  }, [categories, projects])
+
+  // Saved on user change only: a mount-time write would clobber the stored choice before it is restored.
+  function choose(next: { category?: number; project?: number }) {
+    setCategory(next.category)
+    setProject(next.project)
+    try {
+      localStorage.setItem(STORE_KEY, JSON.stringify(next))
+    } catch {
+      // Private mode / blocked storage: remembering the choice is a convenience only.
+    }
+  }
+
+  const load = useCallback(async (id: number) => {
+    const qs = `where[category][equals]=${id}&sort=_media_media_order&limit=200&depth=0&locale=tr`
+    const { docs } = await api<{ docs: Item[] }>(`/api/media?${qs}`)
+    return docs
+  }, [])
+
+  useEffect(() => {
+    if (!category) return
+    let live = true
+    setLoading(true)
+    setLoadError('')
+    load(category)
+      .then((docs) => live && setItems(docs))
+      .catch((e: Error) => live && setLoadError(e.message))
+      .finally(() => live && setLoading(false))
+    return () => {
+      live = false
+    }
+  }, [category, load])
+
+  const setEntry = (key: string, patch: Partial<QueueEntry>) =>
+    setQueue((q) => q.map((e) => (e.key === key ? { ...e, ...patch } : e)))
+
+  async function upload(files: FileList | null) {
+    if (!files?.length || !category) return
+    const target = { category, project }
+    const entries = Array.from(files).map((file, i) => ({ file, key: `${Date.now()}-${i}`, name: file.name }))
+    setQueue((q) => [...q.filter((e) => e.state !== 'done'), ...entries.map(({ key, name }) => ({ key, name, state: 'waiting' as const }))])
+    // One at a time keeps phones responsive and memory bounded.
+    for (const { file, key } of entries) {
+      setEntry(key, { state: 'working' })
+      try {
+        const form = new FormData()
+        form.append('file', await prepare(file))
+        form.append('_payload', JSON.stringify(target))
+        const { doc } = await api<{ doc: Item }>('/api/media?depth=0&locale=tr', { method: 'POST', body: form })
+        setEntry(key, { state: 'done' })
+        if (target.category === categoryRef.current) setItems((list) => [...list, doc])
+      } catch (e) {
+        setEntry(key, { state: 'error', message: (e as Error).message })
+      }
+    }
+  }
+  async function patch(id: number, data: Partial<Pick<Media, 'status' | 'title' | 'alt'>>) {
+    setBusy(id)
+    setCardError(({ [id]: _, ...rest }) => rest)
+    try {
+      const { doc } = await api<{ doc: Item }>(`/api/media/${id}?depth=0&locale=tr`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      })
+      setItems((list) => list.map((m) => (m.id === id ? doc : m)))
+      return true
+    } catch (e) {
+      setCardError((errs) => ({ ...errs, [id]: (e as Error).message }))
+      // Approval fails without Turkish alt text: open the editor right away.
+      if (data.status === 'approved') setEditing(id)
+      return false
+    } finally {
+      setBusy(null)
+    }
+  }
+
+  async function move(from: number, to: number) {
+    const r = reorder(items, from, to)
+    if (!r || moving || !category) return
+    const before = items
+    setItems(r.next)
+    setMoving(true)
+    try {
+      const send = () =>
+        api<{ message?: string }>('/api/reorder', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            collectionSlug: 'media',
+            docsToMove: [r.request.id],
+            newKeyWillBe: r.request.newKeyWillBe,
+            orderableFieldName: '_media_media_order',
+            target: r.request.target,
+          }),
+        })
+      // A target without an order key makes Payload assign keys ("initial migration") instead of moving.
+      if ((await send()).message === 'initial migration') {
+        const fresh = await load(category)
+        const again = reorder(fresh, fresh.findIndex((d) => d.id === r.request.id), fresh.findIndex((d) => d.id === r.request.target.id))
+        if (again) Object.assign(r.request, again.request)
+        await send()
+      }
+      setItems(await load(category)) // fresh order keys for the next move
+    } catch (e) {
+      setItems(before)
+      setCardError((errs) => ({ ...errs, [r.request.id]: `Sıra değiştirilemedi. ${(e as Error).message}` }))
+    } finally {
+      setMoving(false)
+    }
+  }
+
+  if (!categories.length)
+    return (
+      <div className="galeri">
+        <h1 className="galeri__title">Galeri</h1>
+        <p className="galeri__note">
+          Fotoğraf eklemek için önce bir kategori oluşturun.{' '}
+          <Link href="/admin/collections/categories/create">Kategori ekle</Link>
+        </p>
+      </div>
+    )
+
+  const activeQueue = queue.filter((e) => e.state !== 'done')
+  const doneCount = queue.filter((e) => e.state === 'done').length
+
+  return (
+    <div className="galeri">
+      <h1 className="galeri__title">Galeri</h1>
+
+      <div className="galeri__pickers">
+        <label className="galeri__field">
+          <span>Kategori</span>
+          <select value={category ?? ''} onChange={(e) => choose({ category: Number(e.target.value), project })}>
+            {categories.map((c) => (
+              <option key={c.id} value={c.id}>
+                {c.name}
+              </option>
+            ))}
+          </select>
+        </label>
+        <label className="galeri__field">
+          <span>Proje (isteğe bağlı)</span>
+          <select value={project ?? ''} onChange={(e) => choose({ category, project: e.target.value ? Number(e.target.value) : undefined })}>
+            <option value="">Proje yok</option>
+            {projects.map((p) => (
+              <option key={p.id} value={p.id}>
+                {p.name}
+              </option>
+            ))}
+          </select>
+        </label>
+      </div>
+
+      <label className="galeri__add">
+        <input
+          type="file"
+          accept="image/*"
+          multiple
+          onChange={(e) => {
+            void upload(e.target.files)
+            e.target.value = ''
+          }}
+        />
+        <span aria-hidden="true">＋</span> Fotoğraf ekle
+      </label>
+
+      {queue.length > 0 && (
+        <section className="galeri__queue" aria-live="polite" aria-label="Yükleme durumu">
+          {doneCount > 0 && <p className="galeri__queue-ok">{doneCount} fotoğraf yüklendi.</p>}
+          <ul>
+            {activeQueue.map((e) => (
+              <li key={e.key} data-state={e.state}>
+                <span className="galeri__queue-name">{e.name}</span>
+                <span>
+                  {e.state === 'waiting' && 'Sırada'}
+                  {e.state === 'working' && 'Yükleniyor…'}
+                  {e.state === 'error' && `Yüklenemedi: ${e.message}`}
+                </span>
+              </li>
+            ))}
+          </ul>
+          {activeQueue.length === 0 && (
+            <button type="button" className="galeri__btn" onClick={() => setQueue([])}>
+              Tamam
+            </button>
+          )}
+        </section>
+      )}
+
+      {loadError && <p className="galeri__error">{loadError}</p>}
+      {loading && <p className="galeri__note">Fotoğraflar yükleniyor…</p>}
+      {!loading && !loadError && items.length === 0 && <p className="galeri__note">Bu kategoride henüz fotoğraf yok.</p>}
+
+      <ol className="galeri__grid">
+        {items.map((m, i) => {
+          const badge = mediaBadge(m)
+          const src = m.sizes?.w640?.url || m.url || ''
+          const label = m.title || m.filename || `Görsel ${m.id}`
+          return (
+            <li
+              key={m.id}
+              className="galeri__card"
+              data-id={m.id}
+              draggable={!moving && editing !== m.id}
+              onDragStart={(e) => {
+                // Firefox only starts a drag when data is set.
+                e.dataTransfer.setData('text/plain', String(m.id))
+                e.dataTransfer.effectAllowed = 'move'
+                dragFrom.current = i
+              }}
+              onDragOver={(e) => e.preventDefault()}
+              onDrop={(e) => {
+                e.preventDefault()
+                if (dragFrom.current !== null) void move(dragFrom.current, i)
+                dragFrom.current = null
+              }}
+            >
+              <button
+                type="button"
+                className="galeri__thumb"
+                onClick={() => setEditing(editing === m.id ? null : m.id)}
+                aria-expanded={editing === m.id}
+                aria-label={`${label}, ${badge.label}: metni düzenle`}
+              >
+                {/* Already-resized w640 CDN rendition; next/image would re-proxy it. */}
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                {src && <img src={src} alt="" loading="lazy" decoding="async" />}
+                <span className="galeri__badge" data-tone={badge.tone}>
+                  {badge.label}
+                </span>
+              </button>
+
+              <div className="galeri__text">
+                <p className="galeri__name">{label}</p>
+                <p className={m.alt ? 'galeri__alt' : 'galeri__alt galeri__alt--empty'}>{m.alt || 'Alt metin yok'}</p>
+              </div>
+
+              {cardError[m.id] && (
+                <p className="galeri__error" role="alert">
+                  {cardError[m.id]}
+                </p>
+              )}
+
+              {editing === m.id && (
+                <Editor
+                  item={m}
+                  busy={busy === m.id}
+                  onCancel={() => setEditing(null)}
+                  onSave={async (data) => {
+                    if (await patch(m.id, data)) setEditing(null)
+                  }}
+                />
+              )}
+
+              <div className="galeri__actions">
+                {m.status !== 'approved' && (
+                  <button
+                    type="button"
+                    className="galeri__btn galeri__btn--primary"
+                    disabled={busy === m.id}
+                    onClick={() => void patch(m.id, { status: 'approved' })}
+                  >
+                    Onayla
+                  </button>
+                )}
+                {m.status !== 'hidden' && (
+                  <button type="button" className="galeri__btn" disabled={busy === m.id} onClick={() => void patch(m.id, { status: 'hidden' })}>
+                    Gizle
+                  </button>
+                )}
+                <Link className="galeri__btn" href={`/admin/collections/media/${m.id}`}>
+                  Düzenle
+                </Link>
+                <button
+                  type="button"
+                  className="galeri__btn galeri__btn--icon"
+                  disabled={i === 0 || moving}
+                  onClick={() => void move(i, i - 1)}
+                  aria-label={`${label}: yukarı taşı`}
+                >
+                  ↑
+                </button>
+                <button
+                  type="button"
+                  className="galeri__btn galeri__btn--icon"
+                  disabled={i === items.length - 1 || moving}
+                  onClick={() => void move(i, i + 1)}
+                  aria-label={`${label}: aşağı taşı`}
+                >
+                  ↓
+                </button>
+              </div>
+            </li>
+          )
+        })}
+      </ol>
+    </div>
+  )
+}
+
+function Editor({
+  item,
+  busy,
+  onCancel,
+  onSave,
+}: {
+  item: Item
+  busy: boolean
+  onCancel: () => void
+  onSave: (data: { title: string; alt: string; status?: 'approved' }) => Promise<void>
+}) {
+  const [title, setTitle] = useState(item.title ?? '')
+  const [alt, setAlt] = useState(item.alt ?? '')
+  return (
+    <form
+      className="galeri__editor"
+      onSubmit={(e) => {
+        e.preventDefault()
+        void onSave({ title, alt })
+      }}
+    >
+      <label className="galeri__field">
+        <span>Başlık</span>
+        <input value={title} onChange={(e) => setTitle(e.target.value)} />
+      </label>
+      <label className="galeri__field">
+        <span>Alt metin (fotoğrafta ne görünüyor?)</span>
+        <textarea value={alt} maxLength={125} rows={3} onChange={(e) => setAlt(e.target.value)} />
+        <small>{alt.length} / 125</small>
+      </label>
+      <div className="galeri__actions">
+        {item.status !== 'approved' && (
+          <button
+            type="button"
+            className="galeri__btn galeri__btn--primary"
+            disabled={busy}
+            onClick={() => void onSave({ title, alt, status: 'approved' })}
+          >
+            Kaydet ve onayla
+          </button>
+        )}
+        <button type="submit" className="galeri__btn" disabled={busy}>
+          Kaydet
+        </button>
+        <button type="button" className="galeri__btn" onClick={onCancel}>
+          Vazgeç
+        </button>
+      </div>
+    </form>
+  )
+}
