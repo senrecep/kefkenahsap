@@ -1,0 +1,35 @@
+{
+  "source": "Kapi Dolap ve Seperator/10665.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Deck üzerinde açık renk ahşap depo",
+    "en": "Light timber storage unit on a deck"
+  },
+  "alt": {
+    "tr": "Ahşap deck üzerinde, ev duvarına yaslanan tek kapaklı ve tek yöne eğimli çatılı açık renk ahşap depo",
+    "en": "Light timber storage unit with a single door and a lean-to roof against a house wall, on a deck"
+  },
+  "caption": {
+    "tr": "Dar depo evin duvarına yaslandı, çatısı tek yöne eğimli. Altındaki deck de açık renk ahşaptan.",
+    "en": "The narrow storage unit leans against the house wall under a single-pitch roof, standing on a light timber deck."
+  },
+  "seoFilename": "deck-uzerinde-acik-renk-ahsap-depo",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "teras",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

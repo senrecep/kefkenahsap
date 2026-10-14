@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/12542.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Cumbalı evde kızıl kahve ahşap cephe",
+    "en": "Reddish brown timber facade with a bay window"
+  },
+  "alt": {
+    "tr": "Yatay ahşap kaplamalı kızıl kahve tonlu dar cephe, üst katta cumba ve altta ahşap kapı",
+    "en": "Narrow facade clad in reddish brown horizontal timber, with a bay window above and a timber door below"
+  },
+  "caption": {
+    "tr": "Cephe yatay ahşap kaplamayla kaplandı, üst kattaki cumba ve kapı aynı tonda.",
+    "en": "The facade is clad in horizontal timber, with the upper bay window and the door in the same tone."
+  },
+  "seoFilename": "cumbali-ev-ahsap-cephe-kaplama",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "dış cephe",
+      "sokak"
+    ],
+    "finish": [
+      "koyu ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

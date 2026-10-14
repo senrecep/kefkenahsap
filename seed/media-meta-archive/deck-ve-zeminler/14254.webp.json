@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14254.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Duvar dibinde parlak koyu tonlu ahşap deck",
+    "en": "Glossy dark timber deck along a wall"
+  },
+  "alt": {
+    "tr": "Tuğla kaplı duvarın dibinde, bitkilerle çevrili parlak koyu tonlu ahşap deck",
+    "en": "Glossy dark-toned timber deck at the foot of a brick-clad wall, framed by plants"
+  },
+  "caption": {
+    "tr": "Ev duvarı ile çit arasındaki dar alanı kaplayan ahşap deck. Kenarda beyaz çakıllar ve küçük bir bahçe lambası var.",
+    "en": "A timber deck filling the narrow space between the house wall and the hedge, with white pebbles and a small garden lamp at the edge."
+  },
+  "seoFilename": "tugla-duvar-dibinde-parlak-koyu-ahsap-deck",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "ev önü",
+      "dış mekân"
+    ],
+    "finish": [
+      "koyu ton",
+      "parlak yüzey"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

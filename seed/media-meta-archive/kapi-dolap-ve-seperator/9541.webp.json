@@ -1,0 +1,35 @@
+{
+  "source": "Kapi Dolap ve Seperator/9541.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Parke taş avluda çift kapaklı ahşap dolap",
+    "en": "Double-door timber cabinet on a paved courtyard"
+  },
+  "alt": {
+    "tr": "Parke taş zemin üzerinde yatay tahtalı, metal menteşeli çift kapaklı koyu ahşap dolap",
+    "en": "Dark timber cabinet with horizontal board double doors and metal hinges on paved ground"
+  },
+  "caption": {
+    "tr": "Dolabın iki kapağı yatay tahtalardan yapıldı, metal menteşe ve kollarla takıldı.",
+    "en": "The cabinet's two doors are made of horizontal boards, hung on metal hinges with metal handles."
+  },
+  "seoFilename": "parke-tas-avlu-cift-kapakli-ahsap-dolap",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "avlu",
+      "dış mekân"
+    ],
+    "finish": [
+      "koyu ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

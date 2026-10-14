@@ -1,0 +1,33 @@
+{
+  "source": "Merdivenler/1094.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Deniz kıyısında sahanlıklı ahşap merdiven",
+    "en": "Timber staircase with a landing by the sea"
+  },
+  "alt": {
+    "tr": "Taş duvarın yanında, sahanlıktan üst kata dönen çapraz korkuluklu ahşap merdiven, arkada deniz",
+    "en": "Cross-braced timber staircase turning at a landing beside a stone wall, with the sea behind"
+  },
+  "caption": {
+    "tr": "Taş duvar boyunca yükselen, ara sahanlıkta dönüş yapan ahşap merdiven. Dikmeler karo zemine metal ayaklarla oturuyor.",
+    "en": "A timber staircase rising along a stone wall and turning at a mid landing. The posts sit on metal bases on the tiled ground."
+  },
+  "seoFilename": "sahanlikli-ahsap-merdiven-tas-duvar-deniz",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "deniz kenarı",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

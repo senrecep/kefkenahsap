@@ -1,0 +1,33 @@
+{
+  "source": "Merdivenler/13310.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Sade korkuluklu ahşap yan bahçe merdiveni",
+    "en": "Timber side-yard staircase with a simple railing"
+  },
+  "alt": {
+    "tr": "Ev duvarı boyunca beyaz çite doğru yükselen, sade küpeşteli ahşap merdiven",
+    "en": "Timber staircase with a plain handrail climbing along a house wall towards a white fence"
+  },
+  "caption": {
+    "tr": "Evin yan bahçesinden üst seviyeye çıkan merdiven. Korkuluk, dikmeler üzerinde tek küpeşteden oluşuyor.",
+    "en": "The staircase climbs from the side yard to the upper level, with a railing of a single handrail on posts."
+  },
+  "seoFilename": "sade-kupesteli-ahsap-yan-bahce-merdiveni",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

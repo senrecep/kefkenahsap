@@ -1,0 +1,36 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/9997.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "İki kademeli ahşap bank",
+    "en": "Two-tier timber bench"
+  },
+  "alt": {
+    "tr": "Çimenlik bahçede çit önünde duran kızıl kahve tonlu iki kademeli uzun ahşap bank",
+    "en": "Reddish-brown two-tier timber bench standing in front of a hedge on a lawn"
+  },
+  "caption": {
+    "tr": "Arkadaki yüksek oturak ve öndeki alçak bankla iki sıra oturma sağlanmış. Dikmeler yukarı doğru uzanıyor.",
+    "en": "A higher seat at the back and a lower bench in front give two rows of seating. The posts extend upward."
+  },
+  "seoFilename": "iki-kademeli-kizil-kahve-bahce-banki",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "çimenlik",
+      "dış mekân"
+    ],
+    "finish": [
+      "kızıl kahve ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

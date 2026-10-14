@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/7151.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Revak tavanında iki tonlu ahşap lambri",
+    "en": "Two-tone timber ceiling under a colonnade"
+  },
+  "alt": {
+    "tr": "Tuğla kaplı kolonlar arasında açık ve koyu tonlu lambrilerle kare desen oluşturan revak tavanı",
+    "en": "Colonnade ceiling with light and dark timber boards forming squares between brick-faced columns"
+  },
+  "caption": {
+    "tr": "Revak tavanı açık ve koyu tonlu lambrilerle kaplandı, koyu çerçeveler iç içe kareler oluşturuyor. Altta masalar ve banklar duruyor.",
+    "en": "Light and dark timber boards line the colonnade ceiling, the dark frames forming nested squares above tables and benches."
+  },
+  "seoFilename": "revak-tavani-iki-tonlu-ahsap-lambri",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "revak",
+      "dış mekân"
+    ],
+    "finish": [
+      "açık ton",
+      "koyu ton"
+    ],
+    "stage": [
+      "detail",
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

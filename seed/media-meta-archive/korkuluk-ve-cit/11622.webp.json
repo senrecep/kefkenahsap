@@ -1,0 +1,35 @@
+{
+  "source": "Korkuluk ve Cit/11622.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Telli çapraz desenli ahşap bahçe kapısı",
+    "en": "Cross-pattern timber garden gate with mesh"
+  },
+  "alt": {
+    "tr": "Yeşillikler arasında, kahverengi tonlu çapraz desenli ve arkası tel örgülü çift kanatlı ahşap bahçe kapısı",
+    "en": "Brown toned double timber garden gate with a cross pattern and wire mesh backing, set among shrubs"
+  },
+  "caption": {
+    "tr": "Çapraz desenli kanatların arkasına ince tel örgü gerilmiş. Kapı, aynı desenle devam eden ahşap çitin parçası.",
+    "en": "Fine wire mesh is stretched behind the cross-pattern leaves, and the gate is part of a timber fence that continues in the same pattern."
+  },
+  "seoFilename": "telli-capraz-desenli-ahsap-bahce-kapisi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "kahverengi ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,33 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/10797.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Gül duvarı önünde açık renk çiçeklikler",
+    "en": "Light timber planters by a rose wall"
+  },
+  "alt": {
+    "tr": "Kırmızı karo zeminde, içi siyah astarlı, dikey tahtalı ve köşe dikmeli açık renk ahşap çiçeklikler",
+    "en": "Light timber planters with vertical boards, corner posts and black liners on red tiles"
+  },
+  "caption": {
+    "tr": "Dikey tahtalarla kaplı çiçeklikler, gül ve sarmaşıklarla örtülü duvarın önüne yerleştirilmiş. İçleri siyah astarla kaplı.",
+    "en": "Planters clad in vertical boards, set in front of a wall covered in roses and climbers. The insides are lined in black."
+  },
+  "seoFilename": "gul-duvari-acik-renk-ahsap-ciceklik",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,35 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/10911.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Sıra sıra dizilmiş ahşap çiçeklikler",
+    "en": "Rows of timber planters"
+  },
+  "alt": {
+    "tr": "Taş zeminde sıralar halinde dizilmiş, içi siyah astarlı, bal rengi kare ve dikdörtgen ahşap çiçeklikler",
+    "en": "Rows of honey-toned square and rectangular timber planters with black liners on a stone floor"
+  },
+  "caption": {
+    "tr": "Bal rengi çiçeklikler bina önünde yan yana dizilmiş. Kenarlardaki geniş başlık tahtaları köşelerde gönyeyle birleşiyor.",
+    "en": "Honey-toned planters lined up in front of a building. Wide capping boards meet at mitred corners."
+  },
+  "seoFilename": "sira-sira-bal-rengi-ahsap-ciceklik",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bina önü",
+      "dış mekân"
+    ],
+    "finish": [
+      "bal rengi"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

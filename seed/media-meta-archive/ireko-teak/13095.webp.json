@@ -1,0 +1,36 @@
+{
+  "source": "Ireko-Teak/13095.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Kavisli ahşap oturma bankı",
+    "en": "Curved timber bench"
+  },
+  "alt": {
+    "tr": "Ağaçların önünde, yüksek ahşap sırtlıkla birlikte kavis çizen ahşap oturma bankı",
+    "en": "Curved timber bench with a tall timber backrest sweeping in front of trees"
+  },
+  "caption": {
+    "tr": "Avluyu yay şeklinde saran ahşap bank. Sırtlık dikey tahtalardan yapılmış, oturma yüzeyi kavisi izliyor.",
+    "en": "A timber bench curving around the courtyard; the backrest is built from vertical boards and the seat follows the curve."
+  },
+  "seoFilename": "kavisli-ahsap-oturma-banki-yuksek-sirtlik",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "avlu",
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "koyu ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

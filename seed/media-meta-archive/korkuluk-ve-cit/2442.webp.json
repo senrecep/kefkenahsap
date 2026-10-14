@@ -1,0 +1,35 @@
+{
+  "source": "Korkuluk ve Cit/2442.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Taş duvar arasında sivri uçlu ahşap çit",
+    "en": "Pointed timber fence between stone walls"
+  },
+  "alt": {
+    "tr": "İki taş duvar ayağı arasında, taş duvar üstüne kurulmuş sivri uçlu dikey tahtalı ahşap çit",
+    "en": "Timber fence of pointed vertical boards set on a stone wall between two stone piers"
+  },
+  "caption": {
+    "tr": "Sivri uçlu dikey tahtalar taş duvarın üstünde sık aralıklarla dizilmiş. Çit, iki taş ayak arasında evin önünü kapatıyor.",
+    "en": "Pointed vertical boards stand close together on the stone wall, closing off the front of the house between two stone piers."
+  },
+  "seoFilename": "tas-duvar-arasinda-sivri-uclu-ahsap-cit",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "ev önü",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ahşap"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

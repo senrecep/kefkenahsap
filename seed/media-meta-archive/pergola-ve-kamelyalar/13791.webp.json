@@ -1,0 +1,35 @@
+{
+  "source": "Pergola ve Kamelyalar/13791.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Koyu tonlu ahşap çatı ve makaslar",
+    "en": "Dark brown timber roof with exposed trusses"
+  },
+  "alt": {
+    "tr": "Ahşap lambri tavanlı geniş bir kamelyanın içinden görülen koyu kahve tonlu çatı makasları ve kirişler",
+    "en": "Dark brown roof trusses and beams seen from inside a large gazebo with a timber-lined ceiling"
+  },
+  "caption": {
+    "tr": "Geniş bir kamelyanın içinden çatı. Koyu tonlu makaslar ve kirişler lambri kaplı tavanı taşıyor.",
+    "en": "The roof of a large gazebo seen from inside. Dark-toned trusses and beams carry the timber-lined ceiling."
+  },
+  "seoFilename": "koyu-tonlu-kamelya-cati-makaslari",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "dış mekân"
+    ],
+    "finish": [
+      "koyu kahve ton"
+    ],
+    "stage": [
+      "detail",
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

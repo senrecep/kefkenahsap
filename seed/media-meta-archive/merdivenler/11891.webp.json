@@ -1,0 +1,33 @@
+{
+  "source": "Merdivenler/11891.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Taş sütun yanında ahşap avlu merdiveni",
+    "en": "Courtyard timber staircase beside a stone pillar"
+  },
+  "alt": {
+    "tr": "Fayans döşeli avluda, taş sütun ile cam kapı arasında yükselen çapraz korkuluklu ahşap merdiven",
+    "en": "Cross-braced timber staircase rising between a stone pillar and a glass door in a tiled courtyard"
+  },
+  "caption": {
+    "tr": "Alt kattaki avludan üst bahçeye çıkan merdiven. Üstte beyaz ahşap çit ve tel çit görülüyor.",
+    "en": "The staircase climbs from the lower courtyard to the upper garden, with a white timber fence and a mesh fence above."
+  },
+  "seoFilename": "tas-sutun-yaninda-ahsap-avlu-merdiveni",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "avlu",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.88
+}

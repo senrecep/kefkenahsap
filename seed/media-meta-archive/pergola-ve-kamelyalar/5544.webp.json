@@ -1,0 +1,33 @@
+{
+  "source": "Pergola ve Kamelyalar/5544.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Gün batımında kıyı boyunca kamelyalar",
+    "en": "Shoreline gazebos at sunset"
+  },
+  "alt": {
+    "tr": "Kıyıda çapraz korkuluklu deck'ler, çıtalı çatılı kamelya ve kumsala inen ahşap merdivenler",
+    "en": "Decks with cross-braced railings, a gazebo with a slatted roof and timber steps down to the beach"
+  },
+  "caption": {
+    "tr": "Kıyı boyunca sıralanan deck'ler ve kamelyalar akşam ışığında. Ahşap merdivenler taş duvardan kumsala iniyor.",
+    "en": "Decks and gazebos along the shore in evening light. Timber steps lead down from the stone wall to the beach."
+  },
+  "seoFilename": "gun-batimi-kiyi-kamelya-deck-merdiven",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "deniz kenarı",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

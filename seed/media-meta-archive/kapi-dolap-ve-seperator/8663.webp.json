@@ -1,0 +1,36 @@
+{
+  "source": "Korkuluk ve Cit/8663.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Merdiven altında ahşap kaplamalı depo",
+    "en": "Timber clad storage under a staircase"
+  },
+  "alt": {
+    "tr": "Ahşap dış merdivenin altını kapatan yatay tahta kaplama ve sürgülü, metal kollu depo kapağı",
+    "en": "Horizontal timber cladding closing in the space under an outdoor staircase, with a bolted door and handle"
+  },
+  "caption": {
+    "tr": "Merdivenin altı yatay tahtalarla kapatılıp depoya çevrilmiş. Kapak sürgü ve metal kolla açılıyor.",
+    "en": "The space under the stairs is closed in with horizontal boards to make storage, opened by a door with a bolt and handle."
+  },
+  "seoFilename": "merdiven-alti-ahsap-kaplama-depo-kapagi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "dış mekân",
+      "merdiven altı"
+    ],
+    "finish": [
+      "doğal ahşap"
+    ],
+    "stage": [
+      "detail",
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

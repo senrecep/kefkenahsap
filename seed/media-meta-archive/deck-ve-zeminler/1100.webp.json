@@ -1,0 +1,33 @@
+{
+  "source": "Merdivenler/1100.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Deniz kıyısında yükseltilmiş ahşap teras",
+    "en": "Raised timber terrace by the sea"
+  },
+  "alt": {
+    "tr": "Kayalık kıyının yanında, korkuluklu ve pergolalı yükseltilmiş ahşap deck ve geçitler",
+    "en": "Raised timber decks and walkways with railings and pergolas beside a rocky shore"
+  },
+  "caption": {
+    "tr": "Kıyı boyunca kurulan yükseltilmiş deckler korkuluklu geçitlerle birbirine bağlanıyor. Üstte ahşap pergolalar var.",
+    "en": "Raised decks along the shore are linked by railed walkways, with timber pergolas above."
+  },
+  "seoFilename": "deniz-kiyisinda-yukseltilmis-ahsap-teras",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "deniz kenarı",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

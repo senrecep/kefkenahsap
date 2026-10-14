@@ -1,0 +1,36 @@
+{
+  "source": "Korkuluk ve Cit/4047.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Orman kenarında çapraz desenli ahşap korkuluk",
+    "en": "Cross-pattern timber railing at a forest edge"
+  },
+  "alt": {
+    "tr": "Çimenli bahçenin kenarında, istinat duvarı üzerinde çapraz desenli ahşap korkuluk",
+    "en": "Cross-pattern timber railing on a retaining wall at the edge of a lawn"
+  },
+  "caption": {
+    "tr": "Çimenin kenarındaki istinat duvarının üstüne çapraz desenli ahşap korkuluk yapılmış. Korkuluk arkadaki deck'in çevresinde devam ediyor.",
+    "en": "A cross-pattern timber railing sits on the retaining wall at the edge of the lawn and continues around the deck behind."
+  },
+  "seoFilename": "capraz-desenli-korkuluk-istinat-duvari-orman",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "orman kenarı",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ahşap"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

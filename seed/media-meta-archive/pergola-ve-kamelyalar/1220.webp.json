@@ -1,0 +1,34 @@
+{
+  "source": "Pergola ve Kamelyalar/1220.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Şezlong alanı üzerinde ahşap pergola",
+    "en": "Timber pergola over a sun lounger area"
+  },
+  "alt": {
+    "tr": "Taş duvar dibinde, şezlongların durduğu yükseltilmiş deck, üstünde beşik çatılı pergola ve ahşap merdiven",
+    "en": "Raised deck with sun loungers under a gabled pergola, with a timber staircase and a stone wall beside it"
+  },
+  "caption": {
+    "tr": "Şezlongların durduğu yükseltilmiş deck'in üstü çıtalı bir pergolayla örtülmüş. Çapraz korkuluklu merdiven alt seviyeye iniyor.",
+    "en": "Sun loungers sit on a raised deck covered by a slatted pergola. A staircase with cross-braced railings leads down to the lower level."
+  },
+  "seoFilename": "sezlong-alani-pergola-yukseltilmis-deck",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "deniz kenarı",
+      "taş duvar",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

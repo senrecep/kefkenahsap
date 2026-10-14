@@ -1,0 +1,35 @@
+{
+  "source": "Korkuluk ve Cit/13496.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Köpek kulübesi çevresinde ahşap çit",
+    "en": "Timber fence around a dog kennel"
+  },
+  "alt": {
+    "tr": "Sarmaşıklı bahçe köşesinde ahşap kulübeyi çevreleyen kahverengi tonlu sivri uçlu ahşap çit",
+    "en": "Brown toned pointed picket fence enclosing a wooden kennel in a garden corner with ivy"
+  },
+  "caption": {
+    "tr": "Kahverengi tonlu çit, içinde kulübe olan ahşap tabanlı alanı çeviriyor. Çitin bir bölümü menteşeli kapı olarak açılıyor.",
+    "en": "A brown toned picket fence encloses a timber floored pen with a kennel inside; one section is hinged to open as a gate."
+  },
+  "seoFilename": "kopek-kulubesi-ahsap-cit-bahce-kosesi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "kahverengi ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

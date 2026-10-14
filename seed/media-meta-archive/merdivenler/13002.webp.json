@@ -1,0 +1,33 @@
+{
+  "source": "Merdivenler/13002.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Bahçede çit kenarında ahşap dış merdiven",
+    "en": "Outdoor timber staircase beside a garden hedge"
+  },
+  "alt": {
+    "tr": "Yüksek yeşil çitin yanında, çimenlikten bahçe duvarının üstüne çıkan ahşap merdiven",
+    "en": "Timber staircase climbing from the lawn to the top of a garden wall beside a tall hedge"
+  },
+  "caption": {
+    "tr": "Çimenlikten duvarın üstündeki seviyeye çıkan ahşap merdiven. Çapraz korkuluklar iki yanda boydan boya uzanıyor.",
+    "en": "A timber staircase leading from the lawn up to the level above the wall, with cross-braced railings along both sides."
+  },
+  "seoFilename": "cit-kenarinda-ahsap-dis-merdiven-cimenlik",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

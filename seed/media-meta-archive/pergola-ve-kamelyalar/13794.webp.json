@@ -1,0 +1,35 @@
+{
+  "source": "Pergola ve Kamelyalar/13794.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Kavisli çatılı ahşap pergola",
+    "en": "Timber pergola with a curved roof"
+  },
+  "alt": {
+    "tr": "Ahşap desenli zeminli terasta kavisli kirişli çatısı ve ahşap korkuluklarıyla koyu tonlu pergola",
+    "en": "Dark-toned pergola with curved roof beams and timber railings on a terrace with wood-pattern tiles"
+  },
+  "caption": {
+    "tr": "Terasın üst seviyesindeki pergolanın çatı kirişleri kavisli kesilmiş. Arkada çit ve kiremit çatılı evler görünüyor.",
+    "en": "The roof beams of the pergola on the upper terrace level are cut in a curve. A hedge and tiled-roof houses show behind."
+  },
+  "seoFilename": "kavisli-catili-koyu-pergola-teras",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "teras",
+      "dış mekân"
+    ],
+    "finish": [
+      "koyu ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

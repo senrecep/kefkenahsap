@@ -1,0 +1,36 @@
+{
+  "source": "Kapi Dolap ve Seperator/13233.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Dış mutfakta ahşap kapaklı dolaplar",
+    "en": "Timber-fronted cabinets in an outdoor kitchen"
+  },
+  "alt": {
+    "tr": "Ahşap deck üzerinde, metal çerçeveli ve ahşap kapaklı L biçimli dış mutfak dolapları",
+    "en": "L-shaped outdoor kitchen cabinets with timber doors and metal frames on a timber deck"
+  },
+  "caption": {
+    "tr": "Dış mutfağın dolap kapakları ahşaptan yapıldı, gövdeler metal çerçeveye oturuyor. Altında koyu tonlu bir deck var.",
+    "en": "The outdoor kitchen cabinets have timber doors on metal frames, set on a dark deck."
+  },
+  "seoFilename": "dis-mutfak-ahsap-kapakli-dolaplar-deck",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "dış mutfak",
+      "teras",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

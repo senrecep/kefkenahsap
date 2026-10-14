@@ -1,0 +1,36 @@
+{
+  "source": "Kapi Dolap ve Seperator/9312.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Avluda kızıl kahve ahşap dolap",
+    "en": "Reddish brown timber cabinet in a courtyard"
+  },
+  "alt": {
+    "tr": "Karo zemin üzerinde yatay tahtalı, üç kapaklı ve parlak kızıl kahve tonlu ahşap dolap",
+    "en": "Glossy reddish brown timber cabinet with three horizontal board doors on a tiled courtyard"
+  },
+  "caption": {
+    "tr": "Üç kapaklı dolap yatay tahtalardan yapıldı ve parlak bir yüzeyle bitirildi.",
+    "en": "The three-door cabinet is built from horizontal boards and has a glossy finish."
+  },
+  "seoFilename": "avlu-parlak-kizil-kahve-ahsap-dolap",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "avlu",
+      "dış mekân"
+    ],
+    "finish": [
+      "parlak yüzey",
+      "koyu ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

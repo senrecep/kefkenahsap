@@ -1,0 +1,33 @@
+{
+  "source": "Pergola ve Kamelyalar/2210.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Merdivenli iki katlı ahşap kamelya",
+    "en": "Two-level timber gazebo with stairs"
+  },
+  "alt": {
+    "tr": "Deniz kıyısında, çapraz korkuluklu üst katına ahşap merdivenle çıkılan, çıtalı çatılı kamelya",
+    "en": "Seaside timber gazebo with a slatted roof, cross-braced railings and a staircase to the upper level"
+  },
+  "caption": {
+    "tr": "Su kenarında yükseltilmiş bir kamelya. Üst kata ahşap merdivenle çıkılıyor, çıtalı çatı gölge sağlıyor.",
+    "en": "A raised gazebo by the water. A timber staircase leads to the upper level, and the slatted roof gives shade."
+  },
+  "seoFilename": "merdivenli-iki-katli-kamelya-deniz-kenari",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "deniz kenarı",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,33 @@
+{
+  "source": "Pergola ve Kamelyalar/7829.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Koya bakan ahşap pergola ve deck",
+    "en": "Timber pergola and deck overlooking a bay"
+  },
+  "alt": {
+    "tr": "Sakin bir koya bakan, çapraz korkuluklu ahşap deck ve üzerindeki kalın kirişli pergola",
+    "en": "Timber deck with cross-braced railings and a heavy-beamed pergola, overlooking a calm bay"
+  },
+  "caption": {
+    "tr": "Su kenarındaki deck'in üstünde kalın kirişli bir pergola. Korkulukların arasından koy ve karşı kıyıdaki yapılar görünüyor.",
+    "en": "A heavy-beamed pergola over a deck by the water. The bay and buildings on the far shore show through the railings."
+  },
+  "seoFilename": "koya-bakan-pergola-deck-su-kenari",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "deniz kenarı",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

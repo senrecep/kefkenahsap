@@ -1,0 +1,34 @@
+{
+  "source": "Pergola ve Kamelyalar/1140.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Palmiyeli bahçede ahşap pergola",
+    "en": "Timber pergola in a garden with palms"
+  },
+  "alt": {
+    "tr": "Çiçekli taş duvarın üzerinde, palmiyeler arasında deck'e kurulmuş beşik çatılı ahşap pergola",
+    "en": "Gabled timber pergola set on a deck among palms, above a stone wall covered in flowers"
+  },
+  "caption": {
+    "tr": "Deck üzerine kurulan pergolanın bir bölümü beşik çatılı, devamı düz kirişli. Önündeki taş duvar çiçeklerle kaplı.",
+    "en": "Part of the pergola on the deck has a gabled roof, and the rest continues with flat beams. The stone wall in front is covered in flowers."
+  },
+  "seoFilename": "palmiyeli-bahce-besik-catili-pergola",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "taş duvar",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

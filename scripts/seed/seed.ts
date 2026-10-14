@@ -4,7 +4,6 @@
 import { copyFileSync, existsSync, mkdtempSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import os from 'node:os'
 import path from 'node:path'
-import { createHash } from 'node:crypto'
 import { getPayload } from 'payload'
 import sharp from 'sharp'
 
@@ -14,6 +13,7 @@ import { fileKey, orderForCategory, uploadsForPhoto } from '@/seed/order'
 
 import { seedReferences } from './references'
 import { seedSiteSettings } from './site-settings'
+import { verifyStored } from './verify-stored'
 
 const ROOT = process.cwd()
 const DATA = process.env.KEFKEN_DATA ?? path.resolve(ROOT, '../../kefken-data/Webiste')
@@ -137,19 +137,7 @@ for (const [index, cat] of SEED_CATEGORIES.entries()) {
       stored = doc.filename ?? undefined
       // The redirect map derives the gallery slug from the file name.
       if (stored !== `${name}.webp`) throw new Error(`stored as ${stored}, expected ${name}.webp`)
-      // Guard against a silent storage mix-up (seen once: every original held the first photo's bytes).
-      // Originals are re-encoded on upload, so compare shape and uniqueness, not bytes.
-      const res = await fetch([process.env.MEDIA_PUBLIC_URL, process.env.S3_PREFIX, stored].filter(Boolean).join('/'))
-      if (!res.ok) throw new Error(`fetching stored ${stored} failed: ${res.status}`)
-      const served = Buffer.from(await res.arrayBuffer())
-      const got = await sharp(served).metadata()
-      const digest = createHash('md5').update(served).digest('hex')
-      const source = createHash('md5').update(readFileSync(upload)).digest('hex')
-      // The same photo can sit in two categories, so a repeated digest is only wrong when the sources differ.
-      if (got.width !== width || got.height !== height || (servedDigests.get(digest) ?? source) !== source) {
-        throw new Error(`storage returned wrong bytes for ${stored}`)
-      }
-      servedDigests.set(digest, source)
+      await verifyStored(stored, upload, { width, height }, servedDigests)
       created++
     } else {
       skipped++

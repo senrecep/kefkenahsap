@@ -1,0 +1,33 @@
+{
+  "source": "Pergola ve Kamelyalar/299.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Uzun kamelyanın ahşap çatısı",
+    "en": "Timber roof of a long gazebo"
+  },
+  "alt": {
+    "tr": "Ahşap lambri tavanlı, makaslı çatısı ve kafes dolgulu korkulukları olan uzun bir kamelyanın içi",
+    "en": "Inside a long gazebo with a timber-lined ceiling, exposed trusses and lattice railings"
+  },
+  "caption": {
+    "tr": "Çimenlik bir alandaki uzun kamelyanın içinden bakış. Makaslar lambri tavanı taşıyor, kenarlarda kafes dolgulu korkuluklar uzanıyor.",
+    "en": "Looking along a long gazebo on a grassy site. Trusses carry the timber-lined ceiling, with lattice-filled railings along the sides."
+  },
+  "seoFilename": "uzun-kamelya-lambri-tavan-cimenlik",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "çimenlik",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

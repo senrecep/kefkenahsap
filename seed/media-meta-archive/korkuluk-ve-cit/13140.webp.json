@@ -1,0 +1,35 @@
+{
+  "source": "Korkuluk ve Cit/13140.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Çimenli bahçede sivri uçlu ahşap çit",
+    "en": "Picket fence around a lawn"
+  },
+  "alt": {
+    "tr": "Çimenli bahçenin kenarında, menteşeli küçük kapısı olan alçak sivri uçlu ahşap çit",
+    "en": "Low timber picket fence with a small hinged gate along the edge of a lawn"
+  },
+  "caption": {
+    "tr": "Alçak ahşap çit bahçenin bir köşesini çeviriyor. Kapı bölümü menteşelerle açılıyor, çitin geri kalanı ağaçların altından dolanıyor.",
+    "en": "A low timber picket fence encloses one corner of the garden, with a hinged gate section and the rest of the fence curving under the trees."
+  },
+  "seoFilename": "cimenli-bahce-alcak-sivri-uclu-ahsap-cit",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ahşap"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

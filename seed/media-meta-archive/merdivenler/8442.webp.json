@@ -1,0 +1,33 @@
+{
+  "source": "Merdivenler/8442.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Taş duvar yanında ahşap bahçe merdiveni",
+    "en": "Timber garden staircase beside a stone wall"
+  },
+  "alt": {
+    "tr": "Çimenlikten başlayıp taş duvar ve tel çit boyunca yükselen ahşap merdiven",
+    "en": "Timber staircase starting on the lawn and rising alongside a stone wall and mesh fence"
+  },
+  "caption": {
+    "tr": "Çimenden üst bahçe seviyesine çıkan ahşap merdiven. Sol tarafta taş duvar uzanıyor.",
+    "en": "A timber staircase leading from the lawn to the upper garden level, with a stone wall running along its left side."
+  },
+  "seoFilename": "tas-duvar-yaninda-ahsap-bahce-merdiveni",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

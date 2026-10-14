@@ -1,0 +1,35 @@
+{
+  "source": "Kapi Dolap ve Seperator/9350.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Havalandırma pencereli ahşap depo",
+    "en": "Timber storage unit with vent openings"
+  },
+  "alt": {
+    "tr": "Karo zemin üzerinde yatay tahtalı, ortada kapısı ve üstte iki kafes havalandırması olan ahşap depo",
+    "en": "Horizontal board timber storage unit with a central door and two lattice vents on a tiled patio"
+  },
+  "caption": {
+    "tr": "Uzun deponun ortasında tek bir kapı var, üst köşelerde kafesli havalandırma açıklıkları bırakıldı.",
+    "en": "The long storage unit has a single central door, with lattice vents near the top corners."
+  },
+  "seoFilename": "havalandirma-pencereli-ahsap-depo-avlu",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "avlu",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

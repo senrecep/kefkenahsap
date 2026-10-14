@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/13932.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Lavanta tarhını çevreleyen ahşap deck",
+    "en": "Timber deck wrapped around a lavender bed"
+  },
+  "alt": {
+    "tr": "Cam kapılı evin önünde, lavanta tarhının çevresini saran ahşap deck ve çimenlik",
+    "en": "Timber deck wrapping around a lavender bed in front of a house with glass doors, beside a lawn"
+  },
+  "caption": {
+    "tr": "Deck, lavanta tarhının etrafından dolaşarak çimenliğe kadar iniyor. Ahşap dikmeler tarhın kenarında yükseliyor.",
+    "en": "The deck runs around the lavender bed down to the lawn, with timber posts standing at the bed's edge."
+  },
+  "seoFilename": "lavanta-tarhini-cevreleyen-ahsap-deck-cimenlik",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "ev önü",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

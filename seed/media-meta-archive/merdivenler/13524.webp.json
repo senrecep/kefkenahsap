@@ -1,0 +1,35 @@
+{
+  "source": "Merdivenler/13524.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Taş duvar önünde koyu renkli ahşap merdiven",
+    "en": "Dark-toned timber staircase by a stone wall"
+  },
+  "alt": {
+    "tr": "Taş kaplı duvarın önünde, dikey korkuluklu koyu kahve ahşap merdiven ve üstte aynı tonda korkuluk",
+    "en": "Dark brown timber staircase with vertical balusters in front of a stone-clad wall, with a matching railing above"
+  },
+  "caption": {
+    "tr": "Koyu kahve tonlu ahşap merdiven, üst bahçedeki korkulukla aynı renkte. Korkuluklarda dikey çıtalar kullanılmış.",
+    "en": "A dark brown timber staircase in the same tone as the railing of the upper garden, with vertical balusters."
+  },
+  "seoFilename": "koyu-renkli-ahsap-merdiven-tas-duvar",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "koyu kahve ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.88
+}

@@ -1,0 +1,36 @@
+{
+  "source": "Ahsap Yapilar/3890.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Kamelya çatısında ahşap makaslar",
+    "en": "Timber roof trusses inside a gazebo"
+  },
+  "alt": {
+    "tr": "Lambri kaplı kamelya çatısının altında kızıl kahve tonlu ahşap makaslar ve arkada yeşil ağaçlar",
+    "en": "Reddish brown timber trusses under a boarded gazebo roof, with green trees behind"
+  },
+  "caption": {
+    "tr": "Kamelyanın çatısı kalın ahşap makaslarla taşınıyor, iç yüzü lambriyle kaplı. Açık kenarlardan arkadaki ağaçlık görünüyor.",
+    "en": "Heavy timber trusses carry the gazebo roof, which is boarded on the inside. The trees beyond show through the open sides."
+  },
+  "seoFilename": "kamelya-cati-ahsap-makas-agaclik",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "ağaçlık alan",
+      "dış mekân"
+    ],
+    "finish": [
+      "koyu ton"
+    ],
+    "stage": [
+      "detail",
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

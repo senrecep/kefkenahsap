@@ -1,0 +1,35 @@
+{
+  "source": "Korkuluk ve Cit/12242.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Bahçede korkuluklu ahşap deck alanı",
+    "en": "Garden deck area with timber railings"
+  },
+  "alt": {
+    "tr": "Çimenli bahçenin ucunda dikey çıtalı ahşap korkulukla çevrili ahşap deck ve yanında mavi kapılı bahçe evi",
+    "en": "Timber deck enclosed by a vertical slatted railing at the end of a lawn, beside a garden shed with a blue door"
+  },
+  "caption": {
+    "tr": "Bahçenin en ucundaki deck, dikey çıtalı ahşap korkulukla çevrilmiş. Basamak taşları çimenden deck'e doğru ilerliyor.",
+    "en": "The deck at the far end of the garden is enclosed by a vertical slatted timber railing, with stepping stones leading to it across the lawn."
+  },
+  "seoFilename": "bahce-ucunda-korkuluklu-ahsap-deck-alani",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ahşap"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

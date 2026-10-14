@@ -1,0 +1,34 @@
+{
+  "source": "Merdivenler/2242.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Taş yol önünde ahşap platform ve merdiven",
+    "en": "Timber platform and staircase above a stone path"
+  },
+  "alt": {
+    "tr": "Taş döşeli yolun önünde, alçak ahşap platformdan üst terasa çıkan korkuluklu merdiven",
+    "en": "Railed timber staircase leading from a low platform to an upper terrace, with a flagstone path in front"
+  },
+  "caption": {
+    "tr": "Alçak bir ahşap platformdan başlayıp üstü örtülü terasa çıkan merdiven. Basamakların altında taş duvar var.",
+    "en": "The staircase starts from a low timber platform and climbs to a covered terrace, with a stone wall beneath the steps."
+  },
+  "seoFilename": "ahsap-platform-ve-merdiven-tas-yol",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "deniz kenarı",
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,34 @@
+{
+  "source": "Merdivenler/10759.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Yukarıdan altı depolu ahşap merdiven",
+    "en": "Timber staircase with storage, seen from above"
+  },
+  "alt": {
+    "tr": "Yukarıdan görülen, çimenlik üzerinde altı kapaklı ahşap kaplamalı çapraz korkuluklu merdiven",
+    "en": "View from above of a cross-braced timber staircase over a lawn, with a door in its boarded base"
+  },
+  "caption": {
+    "tr": "Balkon hizasından bakınca basamaklar ve merdivenin altındaki kapaklı depo birlikte görülüyor.",
+    "en": "From balcony height, the treads and the storage door in the boarded base are seen together."
+  },
+  "seoFilename": "yukaridan-alti-depolu-ahsap-merdiven-cimen",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "villa",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

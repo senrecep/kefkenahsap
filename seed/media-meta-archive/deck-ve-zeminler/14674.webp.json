@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/14674.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Ağaç çevresinde iki kotlu koyu renk ahşap deck",
+    "en": "Two-level dark timber deck around a tree"
+  },
+  "alt": {
+    "tr": "Çimenliğin kenarında, büyük bir ağacın çevresine kurulmuş iki kotlu koyu renk ahşap deck",
+    "en": "Two-level dark timber deck built around a large tree at the edge of a lawn"
+  },
+  "caption": {
+    "tr": "Bahçedeki ağacın çevresine kurulan iki kotlu deck. Kenarlarda ahşap dikmeler arasında çelik halatlı korkuluk var.",
+    "en": "A two-level deck built around the garden tree, with steel cable railing between timber posts along the edges."
+  },
+  "seoFilename": "agac-cevresinde-iki-kotlu-koyu-ahsap-deck-bahce",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "çimenlik",
+      "dış mekân"
+    ],
+    "finish": [
+      "koyu ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

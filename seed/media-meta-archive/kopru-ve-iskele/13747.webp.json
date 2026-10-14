@@ -1,0 +1,34 @@
+{
+  "source": "Kopru ve Iskele/13747.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Söğütler arasında yükseltilmiş ahşap yol",
+    "en": "Raised timber walkway among willows"
+  },
+  "alt": {
+    "tr": "Söğüt dalları arasından görülen, dikmeli korkuluklu yükseltilmiş ahşap yürüyüş yolu",
+    "en": "Raised timber walkway with a spindle railing seen through willow branches"
+  },
+  "caption": {
+    "tr": "Eğimli zeminin üzerinden geçen yükseltilmiş ahşap yol. Önde aynı korkuluğun küpeştesi görünüyor.",
+    "en": "A raised timber walkway crossing sloping ground, with the handrail of the same railing in the foreground."
+  },
+  "seoFilename": "sogutler-arasi-yukseltilmis-ahsap-yol",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "ağaçlık alan",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

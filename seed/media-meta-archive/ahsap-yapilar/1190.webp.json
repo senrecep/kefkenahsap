@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/1190.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Ahşap saçak altı ve kiriş detayı",
+    "en": "Timber eave soffit and beam detail"
+  },
+  "alt": {
+    "tr": "Lambri kaplı saçak altı, dikme ile kirişin birleştiği köşe ve arkada mavi gökyüzü",
+    "en": "Tongue and groove eave soffit with a post and beam corner joint against a blue sky"
+  },
+  "caption": {
+    "tr": "Saçak altı lambriyle kaplandı, dikme ve kiriş köşede birleşiyor.",
+    "en": "The eave soffit is lined with tongue and groove boards, with the post and beam meeting at the corner."
+  },
+  "seoFilename": "ahsap-sacak-alti-lambri-kiris-detayi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail",
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

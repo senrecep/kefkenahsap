@@ -1,0 +1,35 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14359.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Çıtalı paravanlı ahşap çiçeklik",
+    "en": "Timber planter with a slatted screen"
+  },
+  "alt": {
+    "tr": "Parke taşı zeminde, arkasında yatay çıtalı yüksek paravan bulunan koyu tonlu ahşap çiçeklik",
+    "en": "Dark-toned timber planter with a tall horizontal slatted screen, on a paved walkway"
+  },
+  "caption": {
+    "tr": "Çiçekliğin arka kenarından yükselen yatay çıtalı paravan, girişin önünde bir bölme oluşturuyor.",
+    "en": "A horizontal slatted screen rises from the back of the planter, forming a divider in front of the entrance."
+  },
+  "seoFilename": "citali-paravanli-koyu-ciceklik-giris",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "giriş",
+      "dış mekân"
+    ],
+    "finish": [
+      "koyu ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/7830.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Su kenarında pergolalı ahşap deck",
+    "en": "Waterside timber deck with pergola"
+  },
+  "alt": {
+    "tr": "Suya bakan, çapraz korkuluklu ve pergola dikmeli ahşap deck; karşı kıyıda yapılar görünüyor",
+    "en": "Timber deck with cross-braced railing and pergola posts looking out over the water to the far shore"
+  },
+  "caption": {
+    "tr": "Su kenarında, çapraz desenli korkulukla çevrili ahşap deck. Pergola dikmeleri deck'in köşelerinden yükseliyor.",
+    "en": "A waterside timber deck enclosed by a cross-braced railing, with pergola posts rising from its corners."
+  },
+  "seoFilename": "su-kenarinda-pergolali-capraz-korkuluklu-ahsap-deck",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "su kenarı",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,35 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/5749.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Bahçe duvarında ahşap kaplı yükseltilmiş yatak",
+    "en": "Timber-clad raised bed on a garden wall"
+  },
+  "alt": {
+    "tr": "Açık renk taş döşeli yürüyüş yolunun yanında, yükseltilmiş toprak yatağın kenarını saran koyu tonlu ahşap kaplama",
+    "en": "Dark-toned timber facing the edge of a raised garden bed beside a pale paved walkway"
+  },
+  "caption": {
+    "tr": "Yükseltilmiş bahçe yatağının kenarı yatay ahşap tahtalarla kaplanmış. Kaplama beyaz duvarın üzerinde yol boyunca devam ediyor.",
+    "en": "The edge of a raised garden bed is faced with horizontal timber boards that continue along the white wall beside the path."
+  },
+  "seoFilename": "yukseltilmis-bahce-yatagi-ahsap-kaplama",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "koyu ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

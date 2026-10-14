@@ -1,0 +1,34 @@
+{
+  "source": "Kopru ve Iskele/8076.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Yuvarlak havuz ve ahşap köprü",
+    "en": "Round basin and timber footbridge"
+  },
+  "alt": {
+    "tr": "Kırmızı çatılı yapıların önünde, ahşap deck ile çevrili havuz ve uzak uçtaki kemerli köprü",
+    "en": "Pool edged with wooden decking and an arched footbridge at the far end, in front of red-roofed buildings"
+  },
+  "caption": {
+    "tr": "Havuzun ve yanındaki yuvarlak havuzcuğun kenarını tek bir ahşap deck dolanıyor. Köprü havuzun dar ucundan geçiyor.",
+    "en": "A single wooden deck wraps around the pool and the small round basin beside it. The footbridge crosses at the narrow end."
+  },
+  "seoFilename": "yuvarlak-havuz-ahsap-kopru-kirmizi-catili",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "havuz",
+      "avlu",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

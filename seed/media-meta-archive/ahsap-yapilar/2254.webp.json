@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/2254.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Kıyıda kademeli ahşap teraslar",
+    "en": "Stepped timber terraces on the shore"
+  },
+  "alt": {
+    "tr": "Deniz kıyısında merdivenlerle birbirine bağlanan çatılı ahşap teraslar, çiçeklikler ve korkuluklar",
+    "en": "Covered timber terraces linked by steps on the shore, with planters and railings"
+  },
+  "caption": {
+    "tr": "Yamaç boyunca inen teraslar ahşap merdivenlerle birbirine bağlanıyor. Üstteki çatılı terasta masalar, alttakinde şezlonglar var.",
+    "en": "Timber stairs connect terraces stepping down the slope, with tables under the upper roof and sun loungers on the lower deck."
+  },
+  "seoFilename": "kiyida-kademeli-ahsap-teraslar-merdiven",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "deniz kenarı",
+      "yamaç",
+      "teras",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

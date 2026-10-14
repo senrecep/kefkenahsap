@@ -1,0 +1,35 @@
+{
+  "source": "Ireko-Teak/13254.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Ahşap çıtalı duvarlı dış mutfak",
+    "en": "Outdoor kitchen with a timber slat wall"
+  },
+  "alt": {
+    "tr": "Ahşap çıtalı duvar ve tavan altında, pirinç sarkıt lambalar ve sarkan bitkilerle dış mutfak",
+    "en": "Outdoor kitchen under a timber slat ceiling and wall, with brass pendant lamps and trailing plants"
+  },
+  "caption": {
+    "tr": "Dikey ahşap çıtalarla kaplanan duvar, dış mutfağın arka planını oluşturuyor. Tavandaki çıtalar da aynı tonda.",
+    "en": "Vertical timber slats line the wall behind the outdoor kitchen, matched by the slatted ceiling above."
+  },
+  "seoFilename": "ahsap-citali-duvar-dis-mutfak-pirinc-lambalar",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "dış mutfak",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

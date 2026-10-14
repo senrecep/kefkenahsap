@@ -1,0 +1,34 @@
+{
+  "source": "Merdivenler/8444.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Ahşap merdivende çapraz korkuluk detayı",
+    "en": "Cross-braced railing detail on a timber staircase"
+  },
+  "alt": {
+    "tr": "Taş duvar önündeki ahşap merdivenin basamakları ve çapraz korkuluk dikmeleri yakından",
+    "en": "Close view of the treads and cross-braced railing posts of a timber staircase by a stone wall"
+  },
+  "caption": {
+    "tr": "Basamakların taşıyıcıya oturduğu ve korkuluk çaprazlarının birleştiği noktalar yakından görülüyor.",
+    "en": "A closer look at where the treads sit on the stringer and where the railing braces meet."
+  },
+  "seoFilename": "ahsap-merdiven-capraz-korkuluk-detay",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "detail",
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

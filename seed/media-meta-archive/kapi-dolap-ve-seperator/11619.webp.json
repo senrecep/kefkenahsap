@@ -1,0 +1,35 @@
+{
+  "source": "Kapi Dolap ve Seperator/11619.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Tel örgülü çapraz desenli ahşap bahçe kapısı",
+    "en": "Cross-braced timber garden gate with wire mesh"
+  },
+  "alt": {
+    "tr": "Ağaçların arasında, toprak yol üzerinde tel örgülü ve çapraz destekli iki kanatlı ahşap kapı",
+    "en": "Double timber gate with wire mesh and cross braces on a dirt path between trees"
+  },
+  "caption": {
+    "tr": "Bahçe yolunu kapatan iki kanatlı kapı, tel örgü gerilmiş ahşap çerçevelerden yapıldı.",
+    "en": "The double gate across the garden path is built from timber frames with wire mesh."
+  },
+  "seoFilename": "agaclik-yol-tel-orgulu-ahsap-bahce-kapisi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "parlak yüzey"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

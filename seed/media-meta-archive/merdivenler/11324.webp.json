@@ -1,0 +1,33 @@
+{
+  "source": "Merdivenler/11324.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Bahçede altı depolu ahşap merdiven",
+    "en": "Garden timber staircase with storage underneath"
+  },
+  "alt": {
+    "tr": "Çimen ve taş döşeme üzerinde, altı ahşap kaplı ve kapaklı, çapraz korkuluklu bahçe merdiveni",
+    "en": "Cross-braced garden staircase with a boarded, door-fitted base, standing on lawn and stepping stones"
+  },
+  "caption": {
+    "tr": "Kapalı rıhtlı basamaklar ve altında ahşap kaplı bir depo. Önünde taş döşeli bir yol uzanıyor.",
+    "en": "Closed-riser steps with a timber-clad storage space beneath, and a stone-paved path in front."
+  },
+  "seoFilename": "bahcede-alti-depolu-ahsap-merdiven-tas-yol",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.92
+}

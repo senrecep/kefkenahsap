@@ -1,0 +1,33 @@
+{
+  "source": "Pergola ve Kamelyalar/485.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Kamelya çatısında ışınsal kirişler",
+    "en": "Radiating rafters in a gazebo roof"
+  },
+  "alt": {
+    "tr": "Ortadaki dikmeden çevreye açılan kirişler ve lambri kaplı tavanıyla bir kamelyanın içi",
+    "en": "Inside a gazebo: rafters fanning out from a central post under a timber-lined ceiling"
+  },
+  "caption": {
+    "tr": "Kamelyanın içinden yukarı bakış. Kirişler ortadaki dikmede toplanıyor, araları lambriyle kaplanmış.",
+    "en": "Looking up inside the gazebo. The rafters gather at a central post, with timber lining between them."
+  },
+  "seoFilename": "kamelya-cati-isinsal-kirisler",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "iç detay"
+    ],
+    "finish": [],
+    "stage": [
+      "detail",
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

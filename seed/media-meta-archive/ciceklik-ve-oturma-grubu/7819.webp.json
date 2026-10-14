@@ -1,0 +1,32 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/7819.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Ahşap kabin içinde sabit bank",
+    "en": "Built-in bench inside a timber cabin"
+  },
+  "alt": {
+    "tr": "Yatay ahşap kaplamalı küçük bir kabinin içinde, arka duvara sabitlenmiş bank ve ızgara zemin",
+    "en": "Bench fixed to the back wall of a small timber-clad cabin, with a slatted floor"
+  },
+  "caption": {
+    "tr": "Kabinin arka duvarı boyunca uzanan ahşap bank. Duvarlar ve zemin aynı açık renk ahşapla kaplanmış.",
+    "en": "A timber bench runs along the back wall of the cabin. The walls and floor are clad in the same light timber."
+  },
+  "seoFilename": "ahsap-kabin-sabit-bank-izgara-zemin",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "kabin"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}
