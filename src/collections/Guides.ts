@@ -4,7 +4,7 @@ import type { CollectionConfig } from 'payload'
 import { isStaff, publishedOrStaff } from '@/access'
 import { slugFrom } from '@/hooks/slug'
 import { revalidateAfterChange, revalidateAfterDelete } from '@/hooks/revalidate'
-import { aiTranslateField } from './aiFields'
+import { aiDraftField, aiTranslateField } from './aiFields'
 
 // Guides compare wood species in tables (PLAN §7), so their body adds the table feature; headings are H2/H3 only
 // (H1 is the title, the TOC lists H2s). The seed loader and e2e reuse this list.
@@ -35,6 +35,7 @@ export const Guides: CollectionConfig = {
   fields: [
     { name: 'title', type: 'text', localized: true, required: true, label: 'Başlık' },
     aiTranslateField,
+    aiDraftField,
     {
       name: 'slug',
       type: 'text',

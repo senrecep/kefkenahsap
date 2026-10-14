@@ -3,7 +3,7 @@ import type { CollectionConfig, FieldAccess } from 'payload'
 import { isStaff, publishedOrStaff } from '@/access'
 import { slugFrom } from '@/hooks/slug'
 import { revalidateAfterChange, revalidateAfterDelete } from '@/hooks/revalidate'
-import { aiTranslateField } from './aiFields'
+import { aiDraftField, aiTranslateField } from './aiFields'
 
 // Testimonial text is readable by the public only with recorded consent (API and frontend alike).
 const consentedOrStaff: FieldAccess = ({ req, siblingData }) => Boolean(req.user) || Boolean(siblingData?.consentGiven)
@@ -29,6 +29,7 @@ export const Projects: CollectionConfig = {
   fields: [
     { name: 'title', type: 'text', localized: true, required: true, label: 'Başlık' },
     aiTranslateField,
+    aiDraftField,
     {
       name: 'slug',
       type: 'text',
