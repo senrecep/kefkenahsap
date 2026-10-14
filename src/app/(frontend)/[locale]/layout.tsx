@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { hasLocale, NextIntlClientProvider } from 'next-intl'
+import { hasLocale } from 'next-intl'
 import { setRequestLocale } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 import type { ReactNode } from 'react'
@@ -56,20 +56,20 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} dir={localeDir(locale)} className={`${montserrat.variable} ${sourceSans.variable}`}>
       <body className="min-h-dvh antialiased">
-        <NextIntlClientProvider>
-          <Header locale={locale as Locale} />
-          <main id="main">{children}</main>
-          {/* Right after the content so keyboard users reach the cookie choice before the footer. */}
-          <Analytics locale={locale} />
-          <Footer locale={locale as Locale} />
-          <MobileActionBar locale={locale as Locale} />
-          <JsonLd
-            data={[
-              businessJsonLd(settings, { site, url: home, logo: `${site}/brand/logo.png`, image: `${site}${DEFAULT_OG_IMAGE.url}` }),
-              websiteJsonLd({ name: settings.companyName, site, url: home, locale }),
-            ]}
-          />
-        </NextIntlClientProvider>
+        {/* No site-wide NextIntlClientProvider: client components get server-translated props, which keeps
+            next-intl's message formatter out of every page's JS (budget, #52). */}
+        <Header locale={locale as Locale} />
+        <main id="main">{children}</main>
+        {/* Right after the content so keyboard users reach the cookie choice before the footer. */}
+        <Analytics locale={locale} />
+        <Footer locale={locale as Locale} />
+        <MobileActionBar locale={locale as Locale} />
+        <JsonLd
+          data={[
+            businessJsonLd(settings, { site, url: home, logo: `${site}/brand/logo.png`, image: `${site}${DEFAULT_OG_IMAGE.url}` }),
+            websiteJsonLd({ name: settings.companyName, site, url: home, locale }),
+          ]}
+        />
       </body>
     </html>
   )

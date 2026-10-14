@@ -1,10 +1,8 @@
 'use client'
 
 import { CheckCircle2, ImagePlus, MessageCircle } from 'lucide-react'
-import { useTranslations } from 'next-intl'
-import { startTransition, useActionState, useEffect, useRef, useState, type FormEvent } from 'react'
+import { startTransition, useActionState, useEffect, useRef, useState, type FormEvent, type ReactNode } from 'react'
 
-import { Link } from '@/i18n/navigation'
 import { buttonClass } from '@/components/ui/button'
 import { LEAD_PHOTO_TYPES, MAX_PHOTOS } from '@/lib/leads/validate'
 import { fitWithin } from '@/lib/media/galeri'
@@ -50,7 +48,17 @@ const field =
   'block w-full rounded-[var(--radius-control)] border border-ink/25 bg-white px-3.5 py-3 text-base text-ink placeholder:text-ink-soft/80 focus:border-action aria-[invalid=true]:border-error'
 const labelCls = 'mb-1.5 block font-[family-name:var(--font-display)] text-sm font-semibold text-ink'
 
+/** Form copy translated on the server, so the page ships no i18n runtime (JS budget, #52). */
+export type ContactCopy = {
+  /** Plain `Contact.*` messages by key, including `errors.<Code>`. */
+  text: Record<string, string>
+  /** `Contact.photosSelected` for 1…MAX_PHOTOS photos (index = count − 1). */
+  photosSelected: string[]
+  consent: ReactNode
+}
+
 export function ContactForm({
+  copy,
   locale,
   siteKey,
   services,
@@ -58,6 +66,7 @@ export function ContactForm({
   sourcePage,
   utm,
 }: {
+  copy: ContactCopy
   locale: string
   siteKey?: string
   services: string[]
@@ -65,7 +74,7 @@ export function ContactForm({
   sourcePage: string
   utm?: Record<string, string>
 }) {
-  const t = useTranslations('Contact')
+  const t = (key: string) => copy.text[key] ?? key
   const [state, dispatch, pending] = useActionState<LeadFormState, FormData>(submitLead, { status: 'idle' })
   const [photoState, setPhotoState] = useState<{ count: number; preparing: boolean; error?: string }>({ count: 0, preparing: false })
   const formRef = useRef<HTMLFormElement>(null)
@@ -241,7 +250,7 @@ export function ContactForm({
           {t('photosChoose')}
         </label>
         <p id="photos-hint" className="mt-1.5 text-[0.95rem] text-ink-soft" aria-live="polite">
-          {photoState.preparing ? t('photosPreparing') : photoState.count ? t('photosSelected', { count: photoState.count }) : t('photosHint')}
+          {photoState.preparing ? t('photosPreparing') : photoState.count ? copy.photosSelected[photoState.count - 1] : t('photosHint')}
         </p>
         {errorText('photos', photoErr)}
       </div>
@@ -257,13 +266,7 @@ export function ContactForm({
             className="mt-1 size-5 shrink-0 accent-[var(--color-action)]"
           />
           <label htmlFor="consent" className="text-[0.98rem] leading-relaxed text-ink">
-            {t.rich('consent', {
-              link: (chunks) => (
-                <Link href="/kvkk" target="_blank" className="font-semibold text-action underline underline-offset-2 hover:text-action-deep">
-                  {chunks}
-                </Link>
-              ),
-            })}
+            {copy.consent}
           </label>
         </div>
         {errorText('consent', err('consent'))}

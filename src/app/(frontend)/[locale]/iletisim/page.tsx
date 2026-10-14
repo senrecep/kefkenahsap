@@ -1,18 +1,19 @@
 import { Mail, MapPin, Phone } from 'lucide-react'
 import type { Metadata } from 'next'
-import { getTranslations, setRequestLocale } from 'next-intl/server'
+import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server'
 
 import { Container } from '@/components/ui/Container'
 import { buttonClass } from '@/components/ui/button'
 import { WhatsAppButton } from '@/components/ui/WhatsAppButton'
-import { getPathname } from '@/i18n/navigation'
+import { getPathname, Link } from '@/i18n/navigation'
 import type { Locale } from '@/i18n/routing'
 import { directionsUrl, telLink, waLink } from '@/lib/contact'
 import { getNavCategories, getSiteSettings } from '@/lib/data/site'
 import { pickUtm } from '@/lib/leads/guard'
+import { MAX_PHOTOS } from '@/lib/leads/validate'
 import { pageMetadata, staticPaths } from '@/lib/seo/page-metadata'
 
-import { ContactForm } from './ContactForm'
+import { ContactForm, type ContactCopy } from './ContactForm'
 
 type Props = { params: Promise<{ locale: string }>; searchParams: Promise<Record<string, string | string[] | undefined>> }
 
@@ -39,6 +40,19 @@ export default async function ContactPage({ params, searchParams }: Props) {
   const h2 = 'font-[family-name:var(--font-display)] text-sm font-semibold uppercase tracking-wide text-ink-soft'
   const link = 'text-lg text-ink underline decoration-ink/25 underline-offset-4 hover:decoration-action'
   const utm = pickUtm(query)
+  const messages = (await getMessages({ locale })).Contact as Record<string, unknown> & { errors: Record<string, string> }
+  const plainKeys = Object.keys(messages).filter((k) => typeof messages[k] === 'string' && k !== 'photosSelected' && k !== 'consent')
+  const copy: ContactCopy = {
+    text: Object.fromEntries([...plainKeys, ...Object.keys(messages.errors).map((k) => `errors.${k}`)].map((k) => [k, t(k)])),
+    photosSelected: Array.from({ length: MAX_PHOTOS }, (_, i) => t('photosSelected', { count: i + 1 })),
+    consent: t.rich('consent', {
+      link: (chunks) => (
+        <Link href="/kvkk" target="_blank" className="font-semibold text-action underline underline-offset-2 hover:text-action-deep">
+          {chunks}
+        </Link>
+      ),
+    }),
+  }
 
   return (
     <Container className="pt-10 pb-6 md:pt-14">
@@ -120,6 +134,7 @@ export default async function ContactPage({ params, searchParams }: Props) {
         <section aria-labelledby="quote-form" className="lg:border-s lg:border-line lg:ps-16">
           <h2 id="quote-form" className="mb-6 font-[family-name:var(--font-display)] text-2xl font-semibold">{t('formTitle')}</h2>
           <ContactForm
+            copy={copy}
             locale={locale}
             siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY}
             services={categories.map((c) => c.name).filter(Boolean)}

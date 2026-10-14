@@ -1,9 +1,7 @@
 'use client'
 
-import { useTranslations } from 'next-intl'
-import { useEffect, useState, useSyncExternalStore } from 'react'
+import { useEffect, useState, useSyncExternalStore, type ReactNode } from 'react'
 
-import { Link } from '@/i18n/navigation'
 import { buttonClass } from '@/components/ui/button'
 import { consentCookie, gaCookieDeletions, readConsent, type Consent } from '@/lib/consent/consent'
 
@@ -40,8 +38,10 @@ const subscribe = (cb: () => void) => {
   return () => window.removeEventListener(CHANGE_EVENT, cb)
 }
 
-export function CookieConsent({ gaId, locale }: { gaId: string; locale: string }) {
-  const t = useTranslations('Consent')
+type Props = { gaId: string; locale: string; text: ReactNode; labels: { label: string; reject: string; accept: string } }
+
+// Copy is translated on the server (<Analytics>), so no i18n runtime ships to the client.
+export function CookieConsent({ gaId, locale, text, labels }: Props) {
   // 'ssr' on the server and during hydration, so the banner never flashes for visitors who already chose.
   const stored = useSyncExternalStore(subscribe, () => readConsent(document.cookie), () => 'ssr' as const)
   const [reopened, setReopened] = useState(false)
@@ -83,25 +83,19 @@ export function CookieConsent({ gaId, locale }: { gaId: string; locale: string }
   if (!open) return null
   return (
     <section
-      aria-label={t('label')}
+      aria-label={labels.label}
       className="fixed inset-x-3 bottom-[calc(4.5rem+env(safe-area-inset-bottom))] z-50 mx-auto max-w-xl rounded-[var(--radius-control)] border border-line bg-paper p-4 shadow-[var(--shadow-float)] lg:inset-x-auto lg:end-6 lg:bottom-6 lg:w-[28rem]"
     >
       <p className="text-[0.98rem] leading-relaxed text-ink">
-        {t.rich('text', {
-          link: (chunks) => (
-            <Link href="/cerez-politikasi" className="font-semibold text-action underline underline-offset-2 hover:text-action-deep">
-              {chunks}
-            </Link>
-          ),
-        })}
+        {text}
       </p>
       {/* Equal prominence: same size and style for both choices. */}
       <div className="mt-3 grid grid-cols-2 gap-3">
         <button type="button" onClick={() => choose('denied')} className={buttonClass.outline}>
-          {t('reject')}
+          {labels.reject}
         </button>
         <button type="button" onClick={() => choose('granted')} className={buttonClass.outline}>
-          {t('accept')}
+          {labels.accept}
         </button>
       </div>
     </section>
