@@ -41,17 +41,22 @@ test.describe('homepage', () => {
     expect(await anim('reduce')).toBe('none')
   })
 
-  test('phones load the hero\'s portrait source, not the landscape', async ({ browser }) => {
+  test('phones load the hero\'s portrait crop and none of its landscape sizes', async ({ browser }) => {
+    // Every hero candidate is a large landscape (≥1280 wide; CI's fixtures are 1600x900), so it always has a portrait
+    // crop, generated at upload or by scripts/media/add-sizes.ts.
     const page = await (await browser.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2 })).newPage()
+    const requested: string[] = []
+    page.on('request', (r) => requested.push(r.url()))
     await page.goto('/tr')
-    const hero = page.locator('main section').first().locator('img')
+    const section = page.locator('main section').first()
+    const hero = section.locator('img')
     await expect(hero).toHaveJSProperty('complete', true)
-    const source = page.locator('main section').first().locator('source[media="(max-width: 767px)"]')
-    // Seed-agnostic: a photo too small for the crop (or not yet backfilled) has no phone source.
-    if (await source.count()) {
-      const portrait = (await source.getAttribute('srcset'))!.split(', ').map((c) => c.split(' ')[0])
-      expect(portrait).toContain(await hero.evaluate((img: HTMLImageElement) => img.currentSrc))
-    }
+    const source = section.locator('source[media="(max-width: 767px)"]')
+    await expect(source).toHaveCount(1)
+    const portrait = (await source.getAttribute('srcset'))!.split(', ').map((c) => c.split(' ')[0]!)
+    expect(portrait).toContain(await hero.evaluate((img: HTMLImageElement) => img.currentSrc))
+    const landscape = (await hero.getAttribute('srcset'))!.split(', ').map((c) => c.split(' ')[0]!)
+    expect(landscape.filter((u) => requested.includes(u))).toEqual([])
   })
 
   test('english homepage', async ({ page }) => {

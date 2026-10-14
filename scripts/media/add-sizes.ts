@@ -13,7 +13,7 @@ import sharp, { type OutputInfo } from 'sharp'
 
 import config from '@/payload.config'
 import { MEDIA_WIDTHS, PORTRAIT } from '@/collections/Media'
-import { derivativeFilename, focalCrop, needsDerivative } from '@/lib/media/derivative'
+import { cropAroundFocalPoint, derivativeFilename, needsDerivative } from '@/lib/media/derivative'
 import { databaseHost, isLocalHost } from '@/lib/quality/target'
 
 // Every configured size: one added to Media later (w480 #116, w800 #129) is filled in on the next run.
@@ -72,9 +72,7 @@ for (let page = 1, more = true; more; page++) {
         await save(name, await sharp(original).rotate().resize({ width, withoutEnlargement: true }).webp({ quality: QUALITY }).toBuffer({ resolveWithObject: true }))
       }
       if (portrait) {
-        const rotated = await sharp(original).rotate().toBuffer({ resolveWithObject: true })
-        const crop = focalCrop(rotated.info, PORTRAIT, { x: doc.focalX ?? 50, y: doc.focalY ?? 50 })
-        await save('portrait', await sharp(rotated.data).resize(crop.resize).extract(crop.extract).webp({ quality: PORTRAIT.quality }).toBuffer({ resolveWithObject: true }))
+        await save('portrait', await cropAroundFocalPoint(original, PORTRAIT, { x: doc.focalX ?? 50, y: doc.focalY ?? 50 }))
       }
       // Only the new entries: Payload keeps the other size columns as they are.
       if (!dryRun) await payload.update({ collection: 'media', id: doc.id, data: { sizes }, context: { skipAi: true }, overrideAccess: true, depth: 0 })

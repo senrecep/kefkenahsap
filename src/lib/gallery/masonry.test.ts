@@ -47,6 +47,14 @@ describe('largestFirstScreenItem (the phone grid\'s LCP card)', () => {
     const items = [landscape, portrait, portrait, landscape]
     expect(largestFirstScreenItem(items, [[0, 1], [2, 3]], 2)).toBe(1)
   })
+  it('breaks a tie within one column by row', () => {
+    expect(largestFirstScreenItem([portrait, portrait, landscape], [[0, 1], [2]], 2)).toBe(0)
+  })
+  it('treats a card without known size as square', () => {
+    // square-equivalent unknown (ratio 1) beats landscape (0.5), loses to portrait (2)
+    expect(largestFirstScreenItem([landscape, { width: null, height: null }], [[0], [1]], 1)).toBe(1)
+    expect(largestFirstScreenItem([{ width: 0, height: 0 }, portrait], [[0], [1]], 1)).toBe(1)
+  })
   it('ignores cards below the first rows', () => {
     expect(largestFirstScreenItem([square, landscape, portrait], [[0, 2], [1]], 1)).toBe(0)
   })

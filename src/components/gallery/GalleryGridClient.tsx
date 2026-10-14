@@ -53,7 +53,8 @@ export function GalleryGridClient({
   const sentinel = useRef<HTMLDivElement>(null)
 
   const layouts = useMemo(() => LAYOUTS.map((l) => ({ ...l, columns: distribute(items, l.cols) })), [items])
-  const lcpItem = priority ? largestFirstScreenItem(items, layouts[0]!.columns, FIRST_SCREEN_ROWS) : undefined
+  const phone = layouts.find((l) => l.cols === 2)!
+  const lcpItem = priority ? largestFirstScreenItem(items, phone.columns, FIRST_SCREEN_ROWS) : undefined
 
   const loadMore = useCallback(async () => {
     if (!cursor || !feedUrl || inFlight.current) return
@@ -134,7 +135,8 @@ export function GalleryGridClient({
                         altLang={item.altLang}
                         sizes={SIZES}
                         maxWidth={960}
-                        priority={layout.cols === 2 && i === lcpItem}
+                        // Hidden on desktop yet still fetched: it resolves to the w320 the visible grid shows, so no extra bytes.
+                        priority={layout === phone && i === lcpItem}
                         imgClassName="transition-transform duration-500 ease-[var(--ease-out-expo)] group-hover:scale-[1.03]"
                       />
                     </a>
