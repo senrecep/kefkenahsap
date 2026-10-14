@@ -1,0 +1,56 @@
+@import 'tailwindcss';
+
+/* Design tokens — direction contract in .impeccable/surfaces/src-app-frontend-locale-page-tsx.md */
+@theme {
+  --color-paper: #fbfaf7;       /* warm white ground */
+  --color-ink: #1d1f1c;         /* text */
+  --color-ink-soft: #5c5f58;    /* secondary text (6.2:1 on paper) */
+  --color-line: #e4e1da;        /* hairlines */
+  --color-mist: #f2f0eb;        /* quiet surfaces */
+  --color-action: #0b7a3e;      /* buttons/links (5.2:1 on paper, white text 5.4:1) */
+  --color-action-deep: #075c2e; /* hover/pressed */
+  --color-leaf: #39b54a;        /* logo accent, decorative lines only (not text) */
+  --color-brand: #009444;       /* logo green, logo only */
+  --color-whatsapp: #128c4a;
+
+  --font-display: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+  --font-body: var(--font-source-sans), ui-sans-serif, system-ui, sans-serif;
+
+  --radius-photo: 10px;
+  --radius-control: 10px;
+  --shadow-float: 0 8px 24px -8px rgb(29 31 28 / 0.28), 0 2px 6px -2px rgb(29 31 28 / 0.16);
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@layer base {
+  html {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    scrollbar-color: var(--color-ink-soft) var(--color-mist);
+  }
+  body {
+    font-size: 1.0625rem; /* 17px */
+    line-height: 1.6;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    line-height: 1.15;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+  p { text-wrap: pretty; }
+  ::selection { background: var(--color-action); color: #fff; }
+  :focus-visible { outline: 3px solid var(--color-action); outline-offset: 3px; border-radius: 4px; }
+  a { text-underline-offset: 0.2em; text-decoration-thickness: 1px; }
+  input, textarea { caret-color: var(--color-action); }
+  img { max-width: 100%; height: auto; }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+  }
+}
