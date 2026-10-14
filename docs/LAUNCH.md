@@ -66,7 +66,7 @@ The fresh DB has no users. Until the first one exists, **anyone who reaches `/ad
    ssh -N -L 15432:$PGIP:5432 -L 13000:$APPIP:3000 senrecep    # leave running
    ```
 2. [ ] Open http://localhost:13000/admin → create the first admin (the owner's email and a strong password), then the editor user.
-3. [ ] Run the seed from a clean checkout of `main`, in a fresh shell, with **no `.env` file** in it. A dev `.env` would point Payload at the wrong DB or prefix.
+3. [ ] Run the seed from a clean checkout of `main` (`bun install --frozen-lockfile` first), in a fresh shell, with **no `.env` file** in it. A dev `.env` would point Payload at the wrong DB or prefix.
    ```sh
    set -a; . ../../.dokploy-prod.env; set +a          # adjust the path to the workspace root
    export DATABASE_URL="postgres://kefken:$POSTGRES_PASSWORD@127.0.0.1:15432/kefken" S3_PREFIX=
@@ -79,11 +79,14 @@ The fresh DB has no users. Until the first one exists, **anyone who reaches `/ad
    - The seed rewrites `src/lib/legacy/media-map.json` and `attachment-map.json`. The redirect map is baked into the image, so a diff means production's file names differ from the committed map. If so, stop and open an issue.
    - The seed uploads to the bucket **root**. Afterwards, `cdn.kefkenahsap.com/<file>.webp` answers 200.
 4. [ ] In the admin, review and publish the drafts (content, guides, projects) the owner wants live on day one.
-5. [ ] Take the first production dump now and check it:
+5. [ ] Cloudflare → Caching → Custom Purge → URL `https://cdn.kefkenahsap.com/bahce-ahsap-deck-platformu.webp`.
+   - That root URL was fetched while the root was still empty (smoke negative tests, 2026-10-14). The CDN rule caches at the edge for a year, overriding the origin, so its 404 may be cached.
+   - Without the purge, step 7 fails even after a good seed.
+6. [ ] Take the first production dump now and check it:
    ```sh
    ssh senrecep "docker exec $P-kefken-backup-1 touch /backups/.run-now; sleep 40; docker logs --tail 5 $P-kefken-backup-1"   # "wrote /backups/kefken-…dump"
    ```
-6. [ ] Smoke-test production through the tunnel. Canonicals must already be on www, robots must allow crawling, and the CDN files must exist:
+7. [ ] Smoke-test production through the tunnel. Canonicals must already be on www, robots must allow crawling, and the CDN files must exist:
    ```sh
    bun scripts/launch/smoke.ts http://localhost:13000 --site https://www.kefkenahsap.com --production
    ```
@@ -108,7 +111,7 @@ With option A:
 1. [ ] Add the Dokploy domain on the production `app` compose: host `www.kefkenahsap.com`, path `/`, service `app`, port `3000`, HTTPS on, certificate **Let's Encrypt**.
    - A compose domain is applied through Traefik labels, so **redeploy the compose** after saving it (the data is kept; this only recreates the containers). The route then exists before the DNS change.
    - Let's Encrypt fails at this point because DNS still points at the old host. That's expected.
-2. [ ] No Dokploy domain for the apex. `kefkenahsap.com → www` is a single Cloudflare redirect rule at the edge (PLAN §5.1, step 5.3), so the apex never reaches the origin.
+2. [ ] No Dokploy domain for the apex. `kefkenahsap.com → www` is a single Cloudflare redirect rule at the edge (PLAN §5.1, step 5.1), so the apex never reaches the origin.
 3. [ ] Check the route before DNS changes. The origin answers for the host, using Traefik's default cert, hence `-k`:
    ```sh
    curl -sk -o /dev/null -w '%{http_code}\n' --resolve www.kefkenahsap.com:443:45.196.28.107 https://www.kefkenahsap.com/tr   # 200
@@ -135,21 +138,23 @@ There is no MX record. Zone SSL is `full`, Always Use HTTPS is off, and there ar
 - The web records are **proxied**. Resolvers see only Cloudflare's anycast IPs, so changing the origin IP takes effect at Cloudflare's edge within seconds, whatever the TTL. Rollback is just as fast.
 - The only DNS-only record that would have followed the apex is `mail`, and step 1.4 moved it off a day before. Nothing needs a TTL lowered.
 
-1. [ ] **OWNER APPROVAL REQUIRED.** Change **one** record: `A kefkenahsap.com` `104.247.167.3` → **`45.196.28.107`**, keep it **Proxied**, TTL Auto.
+1. [ ] **OWNER APPROVAL REQUIRED.** Add the apex → www rule **before** the flip.
+   - The old WordPress already answers the apex with `301 → https://www.kefkenahsap.com/` (checked 2026-10-14), so the rule changes nothing for the old site.
+   - After the flip, it keeps the apex from ever hitting the new origin, which has no route for it.
+   - Go to Cloudflare → Rules → Redirect Rules → Create.
+   - Name: `kefken: apex to www`.
+   - When: custom filter `(http.host eq "kefkenahsap.com")`.
+   - Then: Dynamic, `concat("https://www.kefkenahsap.com", http.request.uri.path)`, status **301**, **Preserve query string** on.
+   - Check it: `curl -sI 'https://kefkenahsap.com/deck-ve-zeminler/?a=1'` → `301`, `location: https://www.kefkenahsap.com/deck-ve-zeminler/?a=1`. After the flip, the next hop is the app's own single 301 to `/tr/deck-ve-zeminler`.
+2. [ ] **OWNER APPROVAL REQUIRED.** Change **one** record: `A kefkenahsap.com` `104.247.167.3` → **`45.196.28.107`**, keep it **Proxied**, TTL Auto.
    - `www` is a CNAME to the apex and follows it. Leave it as it is.
    - Leave the cPanel records (`cpanel`, `cpcontacts`, `webmail`, `whm`, SRV/TXT) alone. WordPress stays reachable on the old host as a backup.
-2. [ ] Get the Let's Encrypt cert for www.
+3. [ ] Get the Let's Encrypt cert for www.
    - Within ~1–2 min, check:
      ```sh
      echo | openssl s_client -connect 45.196.28.107:443 -servername www.kefkenahsap.com 2>/dev/null | openssl x509 -noout -issuer -enddate   # issuer: Let's Encrypt
      ```
    - If it's still the default cert, re-save the domain in Dokploy and redeploy the compose. Traefik retries a failed ACME order only when its config changes.
-3. [ ] **OWNER APPROVAL REQUIRED.** Add the apex → www rule **after** the flip. If WordPress canonicalises to the apex, a www rule before the flip could loop with it.
-   - Go to Cloudflare → Rules → Redirect Rules → Create.
-   - Name: `kefken: apex to www`.
-   - When: custom filter `(http.host eq "kefkenahsap.com")`.
-   - Then: Dynamic, `concat("https://www.kefkenahsap.com", http.request.uri.path)`, status **301**, **Preserve query string** on.
-   - Check it: `curl -sI 'https://kefkenahsap.com/deck-ve-zeminler/?a=1'` → `301`, `location: https://www.kefkenahsap.com/deck-ve-zeminler/?a=1`. The next hop is the app's own single 301 to `/tr/deck-ve-zeminler`.
 
 ## 6. Cloudflare cache purge
 
@@ -169,7 +174,7 @@ There is no MX record. Zone SSL is `full`, Always Use HTTPS is off, and there ar
      echo "$(curl -s -o /dev/null -w '%{http_code}' "https://www.kefkenahsap.com$p") $p"; done | sort | awk '{print $1}' | uniq -c
    ```
 4. [ ] Form, by hand:
-   - Submit the contact form on `/tr/iletisim` from a phone, with a test name, the owner's phone and one photo. Turnstile must pass on `www` (the widget lists `kefkenahsap.com`).
+   - Submit the contact form on `/tr/iletisim` from a phone, with a test name, the owner's phone and one photo. Turnstile must pass on `www`. The widget `kefkenahsap` lists `kefkenahsap.com`, which covers its subdomains. If the widget shows error 110200, add `www.kefkenahsap.com` to the widget's hostnames.
    - Check three things: the lead is in the admin, the photo is in the private store, and the notification mail reaches `LEADS_NOTIFY_EMAIL`.
    - Then delete the test lead.
 5. [ ] GA consent, in a private window with DevTools → Network:
@@ -202,7 +207,7 @@ There is no MX record. Zone SSL is `full`, Always Use HTTPS is off, and there ar
 The old WordPress is still live on 104.247.167.3, and its records were never deleted.
 
 1. [ ] Cloudflare DNS: `A kefkenahsap.com` → **`104.247.167.3`**, Proxied, TTL Auto. `www` follows through its CNAME. This restores the table in step 5.
-2. [ ] Disable the `kefken: apex to www` redirect rule. Otherwise www → WordPress may loop with WordPress's own host redirect.
+2. [ ] Keep the `kefken: apex to www` rule. WordPress is www-canonical too, so it doesn't loop.
 3. [ ] Purge Everything (Cloudflare cache).
 4. [ ] Leave `mail` as an A record to 104.247.167.3. It's correct for both states.
 5. [ ] Leave the production stack running (no domain traffic reaches it). Set `PRODUCTION_DEPLOY_APPROVED` to anything but `true` to stop deploys.
