@@ -1,0 +1,35 @@
+{
+  "file": "26-1.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Beyaz Boyalı Dış Merdiven ve Altında Depo",
+    "en": "White Painted Outdoor Staircase with Storage Under the Stairs"
+  },
+  "alt": {
+    "tr": "Beyaz boyalı ahşap dış merdiven korkuluğu ve merdiven altındaki yatay kaplamalı, beyaz depo kapısı",
+    "en": "White painted wooden outdoor staircase railing and a white storage door with horizontal cladding beneath the stairs"
+  },
+  "caption": {
+    "tr": "Çapraz çıtalı beyaz korkuluğu olan açık havada ahşap merdiven. Altındaki boşluk, yatay kaplamalı kapılı bir depoya çevrilmiş.",
+    "en": "An outdoor wooden staircase with a white cross-braced railing. The space underneath has been turned into a storage room with a horizontally clad door."
+  },
+  "seoFilename": "beyaz-ahsap-dis-merdiven-ve-merdiven-alti-depo",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "dış mekan",
+      "bahçe",
+      "merdiven altı depo"
+    ],
+    "finish": [
+      "beyaz boya"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

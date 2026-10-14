@@ -1,0 +1,39 @@
+{
+  "file": "2bfacdfa-6a21-4c3d-93ba-87cd8f53ad92.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Tekne Köprüüstü Ahşap Kaplama ve Konsol",
+    "en": "Wheelhouse Wood Paneling and Console"
+  },
+  "alt": {
+    "tr": "Teknenin kumanda odasında balli meşe tonunda ahşap kaplı direkler, pencere çerçeveleri ve naylonla sarılı kaptan koltuğu",
+    "en": "Boat wheelhouse with honey-toned wood-clad pillars, window frames and a captain's chair wrapped in plastic"
+  },
+  "caption": {
+    "tr": "Teknenin kumanda odasında pencere çevreleri, direkler ve konsol ahşap kaplandı. Koltuklar ve cihazlar teslim öncesi naylonla korunuyor.",
+    "en": "Window surrounds, pillars and the console in this wheelhouse are finished in wood. Seats and instruments are still wrapped in plastic ahead of delivery."
+  },
+  "seoFilename": "tekne-kumanda-odasi-ahsap-kaplama",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "tekne",
+      "köprüüstü",
+      "yat içi",
+      "marin"
+    ],
+    "finish": [
+      "vernikli",
+      "ahşap kaplama",
+      "açık balli ton"
+    ],
+    "stage": [
+      "finished",
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

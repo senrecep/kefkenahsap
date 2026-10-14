@@ -1,0 +1,36 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 18.00.09 (2).webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede Doğal Kenarlı Masif Masa",
+    "en": "Live-Edge Solid Wood Table in the Garden"
+  },
+  "alt": {
+    "tr": "Bahçede taş zemin üzerinde duran, doğal kenarlı ve parlak vernikli kahverengi masif ahşap masa tablası",
+    "en": "Glossy varnished live-edge solid wood tabletop on a stone patio in a garden, next to a curved wooden bench"
+  },
+  "caption": {
+    "tr": "Doğal kenar hattı korunmuş, parlak vernikli masif masa tablası. Arkada bahçedeki kavisli ahşap oturma bankı görünüyor.",
+    "en": "A solid wood tabletop with its natural edge kept and a glossy varnish finish. A curved wooden garden bench is visible behind it."
+  },
+  "seoFilename": "dogal-kenarli-masif-ahsap-masa-bahce",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "taş zemin"
+    ],
+    "finish": [
+      "parlak vernik",
+      "doğal kenar"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.8
+}

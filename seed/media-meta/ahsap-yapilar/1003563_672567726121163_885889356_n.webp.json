@@ -1,0 +1,37 @@
+{
+  "file": "1003563_672567726121163_885889356_n.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ormanlık Arazide Taş Duvarlı Ahşap Ev",
+    "en": "Wooden House with Stone Wall in a Wooded Lot"
+  },
+  "alt": {
+    "tr": "Ağaçların arasında, taş istinat duvarının üstünde duran iki katlı ahşap ev; üst katta korkuluklu geniş teras var.",
+    "en": "Two-storey wooden house among trees above a stone retaining wall, with a railed terrace on the upper floor."
+  },
+  "caption": {
+    "tr": "Ağaçlık bir arazide taş duvarın üzerine kurulmuş, üst katında korkuluklu terası olan ahşap ev.",
+    "en": "A wooden house built above a stone wall on a wooded plot, with a railed terrace on the upper floor."
+  },
+  "seoFilename": "tas-duvarli-ahsap-ev-orman-arazi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "orman",
+      "bahçe",
+      "dış mekan",
+      "teras"
+    ],
+    "finish": [
+      "vernikli",
+      "taş duvar"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

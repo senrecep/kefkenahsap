@@ -1,0 +1,35 @@
+{
+  "file": "22.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Teras Köşesine L Şeklinde Ahşap Oturma Bankı",
+    "en": "L-Shaped Wooden Corner Bench for a Terrace"
+  },
+  "alt": {
+    "tr": "Terasta duvara yaslı, çıtalı oturaklı ve kolçaklı L biçimli ahşap bank; yanında ahşap yemek masası var.",
+    "en": "L-shaped slatted wooden bench with an armrest against a terrace wall, next to a wooden dining table."
+  },
+  "caption": {
+    "tr": "Terasın köşesine ölçüye göre yapılmış L bank. Oturak çıtalı, sırtlık duvara monte, bir tarafta kolçak var.",
+    "en": "A custom-built L-shaped bench fitted into the terrace corner, with a slatted seat, a wall-mounted backrest and an armrest on one side."
+  },
+  "seoFilename": "teras-kose-ahsap-oturma-banki",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "teras",
+      "balkon",
+      "dış mekan"
+    ],
+    "finish": [
+      "doğal"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

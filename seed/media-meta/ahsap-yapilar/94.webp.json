@@ -1,0 +1,37 @@
+{
+  "file": "94.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Yatay Ahşap Kaplamalı İki Katlı Ev Cephesi",
+    "en": "Two-Storey House Facade with Horizontal Wood Cladding"
+  },
+  "alt": {
+    "tr": "Yatay çıtalı ahşap kaplanmış iki katlı evin köşesi, katlar arasında koyu gri metal bant ve pencereler",
+    "en": "Corner of a two-storey house clad in horizontal wood boards with a dark grey metal band between floors and windows"
+  },
+  "caption": {
+    "tr": "İki katlı bir evin dış cephesi yatay ahşap kaplamayla kaplandı. Katlar arasındaki koyu gri bant cepheye çizgi kazandırıyor. Şantiye hâlâ devam ediyor.",
+    "en": "The exterior of a two-storey house clad in horizontal wood boards. A dark grey band between the floors breaks up the facade. The site is still under construction."
+  },
+  "seoFilename": "yatay-ahsap-cephe-kaplama-iki-katli-ev",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "dış cephe",
+      "konut",
+      "şantiye",
+      "İstanbul"
+    ],
+    "finish": [
+      "bal rengi vernik",
+      "koyu gri metal bant"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.82
+}

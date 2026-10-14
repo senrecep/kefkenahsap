@@ -1,0 +1,36 @@
+{
+  "file": "15.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe Köşesinde Koyu Ceviz Tonlu Ahşap Bank",
+    "en": "Dark Walnut-Stained Wooden Bench in a Garden Corner"
+  },
+  "alt": {
+    "tr": "Bitkilerin önünde, karo zemin üzerinde duran, üç tahta oturaklı ve alt çıtalı koyu kahverengi boyalı ahşap bank",
+    "en": "Dark brown stained wooden bench with three seat slats and lower rails, standing on tiled ground in front of plants"
+  },
+  "caption": {
+    "tr": "Üç tahtadan oluşan oturağı ve alt bağlantı çıtalarıyla sade çizgili ahşap bank. Koyu ceviz tonunda vernikle boyandı, bitkilerin yanındaki açık alan köşesine yerleştirildi.",
+    "en": "A simple wooden bench with a three-slat seat and lower connecting rails. Finished in a dark walnut tone and placed in an outdoor corner beside the plants."
+  },
+  "seoFilename": "bahce-ahsap-bank-koyu-ceviz",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras",
+      "açık alan"
+    ],
+    "finish": [
+      "koyu ceviz tonu",
+      "vernik"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

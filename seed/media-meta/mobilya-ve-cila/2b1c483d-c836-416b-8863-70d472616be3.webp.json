@@ -1,0 +1,33 @@
+{
+  "file": "2b1c483d-c836-416b-8863-70d472616be3.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Geometrik Desenli Tavan ve Modern Mutfak",
+    "en": "Modern Kitchen with Geometric Pattern Ceiling"
+  },
+  "alt": {
+    "tr": "Geometrik desenli tavan kaplaması, bar tezgâhı ve taş yüzeyli yemek masası olan modern bir mutfak",
+    "en": "Modern kitchen with a geometric patterned ceiling, a counter island and a stone-top dining table"
+  },
+  "caption": {
+    "tr": "Mutfakta geometrik desenli tavan kaplaması ve LED aydınlatma. Altında ada tezgâh ve yemek masası yer alıyor.",
+    "en": "A kitchen with a geometric patterned ceiling and LED lighting, with a counter island and dining table below."
+  },
+  "seoFilename": "mutfak-tavan-geometrik-desen-yemek-masasi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "mutfak",
+      "tavan",
+      "iç mekan"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.55
+}

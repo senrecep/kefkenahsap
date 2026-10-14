@@ -1,0 +1,35 @@
+{
+  "file": "25-1.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Beyaz Boyalı Ahşap Depo Kapısı",
+    "en": "White Painted Wooden Storage Door"
+  },
+  "alt": {
+    "tr": "Yeşil kiremit çatılı, yatay çıtalı beyaz ahşap kaplamanın içine yerleştirilmiş menteşeli ve kollu küçük depo kapısı",
+    "en": "Small hinged storage door with a handle set into white horizontal wood paneling under a green shingled roof"
+  },
+  "caption": {
+    "tr": "Dış cephe duvarına yaslanan depo bölmesi, yatay çıta görünümlü beyaz boyalı ahşapla kaplandı. Kapı kaplamayla aynı hatta, metal menteşe ve kolla yapıldı.",
+    "en": "A storage enclosure built against an exterior wall, clad in white painted horizontal wood paneling. The door sits flush with the cladding, fitted with metal hinges and a handle."
+  },
+  "seoFilename": "beyaz-ahsap-depo-kapisi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "dış mekan",
+      "teras",
+      "depo"
+    ],
+    "finish": [
+      "beyaz boya"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

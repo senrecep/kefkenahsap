@@ -1,0 +1,37 @@
+{
+  "file": "6-2.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe Girişi İçin Çapraz Korkuluklu Ahşap Merdiven",
+    "en": "Wooden Garden Staircase with Cross-Braced Railings"
+  },
+  "alt": {
+    "tr": "Bahçeye inen, çapraz çıtalı korkuluklara sahip dönemeçli ahşap merdiven; yanında çim alan ve villa cephesi var",
+    "en": "Wooden staircase with a turn and cross-braced railings leading down to a lawn beside a house facade"
+  },
+  "caption": {
+    "tr": "Bahçe katına inen, dönüşlü ahşap merdiven. Korkuluklar çapraz çıtalarla yapıldı, basamaklar kalın tahtadan.",
+    "en": "A wooden staircase with a turn, leading down to the garden level. The railings use diagonal cross bracing and the treads are made of thick boards."
+  },
+  "seoFilename": "bahce-ahsap-merdiven-capraz-korkuluk",
+  "tags": {
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "villa"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

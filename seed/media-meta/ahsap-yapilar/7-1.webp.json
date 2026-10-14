@@ -1,0 +1,36 @@
+{
+  "file": "7-1.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe Cephesinde Ahşap Çıta Kafes ve Begonvil",
+    "en": "Wooden Lattice Trellis on a Façade with Bougainvillea"
+  },
+  "alt": {
+    "tr": "Kahverengi boyalı villa cephesinde ahşap çıta kafes, pencerenin yanında tırmanan pembe begonvil çiçekleri",
+    "en": "Wooden lattice trellis on a brown villa façade beside a window, with pink bougainvillea climbing upward"
+  },
+  "caption": {
+    "tr": "Bina cephesine yatay ve dikey çıtalarla yapılmış ahşap kafes. Begonvilin tırmanması için duvara sabitlenmiş, koyu tonda boyalı.",
+    "en": "A wooden lattice of horizontal and vertical slats fixed to the façade for the bougainvillea to climb, finished in a dark tone."
+  },
+  "seoFilename": "cephe-ahsap-kafes-begonvil",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "cephe",
+      "bahçe",
+      "villa",
+      "tırmanıcı bitki"
+    ],
+    "finish": [
+      "koyu kahverengi boya"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

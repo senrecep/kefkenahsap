@@ -1,0 +1,36 @@
+{
+  "file": "18.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Site Bahçesinde Ahşap Pergola ve Köşe Oturma Bankı",
+    "en": "Wooden Pergola with Corner Bench in a Residential Garden"
+  },
+  "alt": {
+    "tr": "Konut sitesi bahçesinde, açık renkli ahşap pergolanın altında L şeklinde oturma bankı; arkada çimen, taş yol ve apartmanlar",
+    "en": "L-shaped bench under a light wooden pergola in a housing complex garden, with lawn, stone path and buildings behind"
+  },
+  "caption": {
+    "tr": "Site bahçesine yapılan ahşap pergola ve köşeye oturan bank. Çimlerin ve taş döşeli yürüyüş yolunun karşısında, gölgede oturmaya uygun bir köşe oluşturuyor.",
+    "en": "A wooden pergola with a built-in corner bench in a residential garden, giving a shaded place to sit facing the lawn and the stone walking path."
+  },
+  "seoFilename": "site-bahcesi-ahsap-pergola-kose-oturma-banki",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "konut sitesi",
+      "dış mekan",
+      "pergola"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.82
+}

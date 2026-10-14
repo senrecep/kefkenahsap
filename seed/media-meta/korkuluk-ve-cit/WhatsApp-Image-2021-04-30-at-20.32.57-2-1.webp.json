@@ -1,0 +1,36 @@
+{
+  "file": "WhatsApp-Image-2021-04-30-at-20.32.57-2-1.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe İçin Ahşap Çit ve Kapı",
+    "en": "Wooden Picket Fence and Gate for a Garden"
+  },
+  "alt": {
+    "tr": "Çimenlik bahçede, uçları sivriltilmiş dik tahtalardan yapılmış açık renkli ahşap çit ve menteşeli küçük bahçe kapısı",
+    "en": "Light wooden picket fence with pointed slats and a small hinged garden gate on a grassy lawn"
+  },
+  "caption": {
+    "tr": "Sivri uçlu çıtalardan yapılmış alçak bahçe çiti. Kapıda metal menteşe ve sürgü var, çit çimenlik alanı çeviriyor.",
+    "en": "Low garden fence made of pointed-top slats. The gate has metal hinges and a latch, and the fence encloses the lawn."
+  },
+  "seoFilename": "bahce-citi-ahsap-kapi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "çimenlik",
+      "dış mekan"
+    ],
+    "finish": [
+      "doğal ahşap",
+      "naturel"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

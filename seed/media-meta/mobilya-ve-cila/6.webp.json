@@ -1,0 +1,36 @@
+{
+  "file": "6.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Beyaz Boyalı Çift Kanatlı Dolap Kapağı",
+    "en": "White Painted Double-Door Cabinet"
+  },
+  "alt": {
+    "tr": "Beyaz boyalı, çıtalı çift kanatlı dolap kapaklarında metal kulpu tutan bir el",
+    "en": "Hand holding a brushed metal handle on white painted paneled double cabinet doors"
+  },
+  "caption": {
+    "tr": "Çıtalı panel kapak modeli, mat beyaz boyalı yüzey ve paslanmaz görünümlü uzun kulp. Kapaklar ve kulp birbirine düzgün oturuyor.",
+    "en": "Paneled door design with a matte white painted surface and a long brushed-metal handle. The two doors line up cleanly."
+  },
+  "seoFilename": "beyaz-boyali-cift-kanatli-dolap-kapagi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "iç mekan",
+      "dolap"
+    ],
+    "finish": [
+      "beyaz boya",
+      "mat"
+    ],
+    "stage": [
+      "finished",
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

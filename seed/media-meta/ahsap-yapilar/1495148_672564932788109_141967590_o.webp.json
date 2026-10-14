@@ -1,0 +1,37 @@
+{
+  "file": "1495148_672564932788109_141967590_o.webp",
+  "category": "ahsap-yapilar",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Veranda Kolon ve Duvar Ahşap Kaplama",
+    "en": "Wooden Column and Wall Cladding for Veranda"
+  },
+  "alt": {
+    "tr": "Bahçe verandasında yatay ahşap çıtalarla kaplanmış kolonlar ve duvar yüzeyi.",
+    "en": "Concrete columns and wall section clad with horizontal wooden slats on a garden patio."
+  },
+  "caption": {
+    "tr": "Veranda alanındaki beton kolon ve kirişlerin yatay ahşap kaplamayla giydirilerek bahçe ile uyumlu hale getirilmesi.",
+    "en": "Horizontal timber cladding applied to exterior columns and beams on an outdoor veranda overlooking the garden."
+  },
+  "seoFilename": "veranda-kolon-ahsap-kaplama",
+  "tags": {
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "veranda",
+      "bahçe",
+      "dış mekan"
+    ],
+    "finish": [
+      "doğal"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

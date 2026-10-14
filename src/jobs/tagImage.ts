@@ -49,7 +49,7 @@ export const tagImageTask: TaskConfig<'tagImage'> = {
           role: 'user',
           content: [
             { type: 'text', text: `Kategori: ${category}` },
-            { type: 'image', image, mediaType },
+            { type: 'file', data: image, mediaType },
           ],
         },
       ],

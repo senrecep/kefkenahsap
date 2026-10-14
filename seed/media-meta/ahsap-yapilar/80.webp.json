@@ -1,0 +1,36 @@
+{
+  "file": "80.webp",
+  "category": "ahsap-yapilar",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ahşap Cephe Kaplamalı Kulübe ve Korkuluk",
+    "en": "Wooden Cladded Outbuilding and Stair Railing"
+  },
+  "alt": {
+    "tr": "Ahşap kaplamalı kulübeye çıkan basamaklar ve çapraz korkuluk.",
+    "en": "Wooden cladded structure with steps and cross-pattern railing."
+  },
+  "caption": {
+    "tr": "Dış mekan için üretilen ahşap cephe kaplaması, giriş kapısı ve basamak korkuluğu uygulaması.",
+    "en": "Exterior timber cladding, entrance door, and staircase railing crafted for an outdoor sports club facility."
+  },
+  "seoFilename": "ahsap-cephe-kaplama-kulube-korkuluk",
+  "tags": {
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "dış mekan",
+      "bahçe"
+    ],
+    "finish": [
+      "doğal"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

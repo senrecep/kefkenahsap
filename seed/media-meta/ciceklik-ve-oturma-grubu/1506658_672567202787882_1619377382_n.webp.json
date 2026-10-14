@@ -1,0 +1,37 @@
+{
+  "file": "1506658_672567202787882_1619377382_n.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe İçin Ahşap Köşe Oturma Grubu ve Masa",
+    "en": "Wooden Garden Corner Seating and Table Set"
+  },
+  "alt": {
+    "tr": "Bahçe taş zemininde emprenyeli ahşaptan L şeklinde sırtlı bank ve ahşap yemek masası.",
+    "en": "L-shaped wooden corner bench with backrest and matching outdoor table on a stone patio."
+  },
+  "caption": {
+    "tr": "Bahçe köşesine özel ölçüyle imal edilen emprenyeli ahşap köşe bankı ve masa takımı. Dış mekan koşullarına dayanıklı sade tasarım.",
+    "en": "Custom-built pressure-treated wooden corner bench and dining table set on a stone patio, designed for outdoor garden use."
+  },
+  "seoFilename": "ahsap-bahce-kose-oturma-grubu-masa",
+  "tags": {
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe",
+      "teras",
+      "veranda"
+    ],
+    "finish": [
+      "emprenye"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

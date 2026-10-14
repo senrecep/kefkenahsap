@@ -1,0 +1,38 @@
+{
+  "file": "f82c2afc-9031-4b8b-9f0a-ce7deed5e16a.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Beyaz ve Antrasit Kapaklı Gardırop",
+    "en": "White and Anthracite Wardrobe"
+  },
+  "alt": {
+    "tr": "Beyaz ve koyu antrasit kapaklı, siyah uzun kulplu dört kapaklı gardırop; yanında klasik gitar ve avize var",
+    "en": "Four-door wardrobe in white and dark anthracite with long black handles, a classical guitar beside it"
+  },
+  "caption": {
+    "tr": "Beyaz ve koyu gri kapakları iki renkli bölen, siyah çubuk kulplu gardırop. Odanın köşesine ölçüye göre yerleştirilmiş.",
+    "en": "A wardrobe with two-tone white and dark grey doors and slim black bar handles, fitted into the corner of a room."
+  },
+  "seoFilename": "beyaz-antrasit-kapakli-gardirop",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "yatak odası",
+      "iç mekan",
+      "gardırop"
+    ],
+    "finish": [
+      "mat boya",
+      "beyaz",
+      "antrasit"
+    ],
+    "stage": [
+      "finished",
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

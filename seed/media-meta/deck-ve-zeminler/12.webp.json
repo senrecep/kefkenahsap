@@ -1,0 +1,33 @@
+{
+  "file": "12.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Çapraz Korkuluklu Ahşap Deck",
+    "en": "Wooden Deck with Cross-Pattern Railing"
+  },
+  "alt": {
+    "tr": "Yamaca bakan geniş ahşap deck zemini, çapraz çıtalı korkuluk, kalın direkler ve iki basamaklı küçük merdiven",
+    "en": "Wide wooden deck facing a hillside with a cross-pattern railing, thick posts and a short two-step staircase"
+  },
+  "caption": {
+    "tr": "Yamaç kenarında yapılmış geniş bir ahşap deck. Korkulukta çapraz çıtalar, kenarda ise basamaklar var.",
+    "en": "A wide wooden deck built beside a hillside, with cross-braced railing panels and steps at the edge."
+  },
+  "seoFilename": "capraz-korkuluklu-ahsap-deck",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "yamaç",
+      "açık alan"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

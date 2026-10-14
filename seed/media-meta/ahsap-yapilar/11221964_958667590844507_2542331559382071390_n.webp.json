@@ -1,0 +1,37 @@
+{
+  "file": "11221964_958667590844507_2542331559382071390_n.webp",
+  "category": "ahsap-yapilar",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Deniz Kenarı Ahşap Kulübe Yapımı",
+    "en": "Coastal Wooden Shed Structure"
+  },
+  "alt": {
+    "tr": "Sahil kıyısında yeşil şıngıl çatılı ve yatay ahşap latalı kulübe yapısı.",
+    "en": "Wooden shed with horizontal slats and green shingle roof built by the coast."
+  },
+  "caption": {
+    "tr": "Sahil kıyısındaki bahçe için imal edilen, dış cephesi yatay ahşap latalarla kaplı ve yeşil şıngıl çatılı ahşap müştemilat yapısı.",
+    "en": "Custom wooden shed featuring horizontal timber cladding and a green shingle roof, built for a seaside garden."
+  },
+  "seoFilename": "deniz-kenari-ahsap-kulube-yapimi",
+  "tags": {
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "bahçe",
+      "sahil",
+      "dış mekan"
+    ],
+    "finish": [
+      "emprenye"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

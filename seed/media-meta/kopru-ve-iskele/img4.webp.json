@@ -1,0 +1,35 @@
+{
+  "file": "img4.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Havuz Üzerinde Kemerli Ahşap Köprü",
+    "en": "Arched Wooden Bridge over a Pool"
+  },
+  "alt": {
+    "tr": "Havuzun üzerinde, dikmeli ve çıtalı korkuluklara sahip kemerli ahşap yaya köprüsü; arkada bahçe ve beyaz bir bina var",
+    "en": "Arched wooden footbridge over a pool with post-and-slat railings, with a garden and white building behind"
+  },
+  "caption": {
+    "tr": "Bahçedeki havuzun iki yakasını birleştiren kemerli ahşap köprü. Kalın dikmeli, düşey çıtalı korkulukları ve enine döşenmiş tabliyesiyle yürüyüşe uygun yapıldı.",
+    "en": "An arched wooden bridge linking the two sides of a garden pool, built with thick posts, vertical slat railings and a plank deck laid across the walkway."
+  },
+  "seoFilename": "havuz-uzerinde-kemerli-ahsap-kopru",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "havuz",
+      "villa"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

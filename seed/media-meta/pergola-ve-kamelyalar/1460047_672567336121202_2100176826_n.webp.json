@@ -1,0 +1,37 @@
+{
+  "file": "1460047_672567336121202_2100176826_n.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Site Bahçesi İçin Ahşap Kamelya",
+    "en": "Wooden Gazebo for Residential Garden"
+  },
+  "alt": {
+    "tr": "Site bahçesinde kırmızı şıngıl çatılı, ahşap korkuluklu ve oturma banklı sekizgen kamelya.",
+    "en": "Octagonal wooden gazebo with red shingle roof and built-in benches in a residential garden."
+  },
+  "caption": {
+    "tr": "Site ortak alanına kurulan, emprenyeli çam keresteden imal edilmiş, oturma banklı ve kırmızı şıngıl çatılı ahşap kamelya uygulaması.",
+    "en": "Impregnated pine octagonal gazebo featuring built-in benches and a red shingle roof installed in a residential garden."
+  },
+  "seoFilename": "bahce-icin-ahsap-kamelya-cardak",
+  "tags": {
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "site bahçesi"
+    ],
+    "finish": [
+      "emprenye"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.98
+}

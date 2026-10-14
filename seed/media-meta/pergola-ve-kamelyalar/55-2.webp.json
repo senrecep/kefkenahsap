@@ -1,0 +1,35 @@
+{
+  "file": "55-2.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Pergola Köşe Birleşimi: Cıvatalı Kiriş Detayı",
+    "en": "Pergola Corner Joint with Bolted Beams"
+  },
+  "alt": {
+    "tr": "Ahşap pergolanın köşesinde dikme üzerine oturan kirişler, dört paslanmaz cıvata ile birbirine sabitlenmiş",
+    "en": "Corner of a wooden pergola where beams rest on a post, fastened together with four stainless bolts"
+  },
+  "caption": {
+    "tr": "Pergola köşesinde kirişler dikmeye oturuyor ve dört cıvatayla sabitleniyor. Sağlam bir iskeletin başladığı yer burası.",
+    "en": "At this pergola corner the beams sit on the post and are fixed with four bolts, the point where a solid frame starts."
+  },
+  "seoFilename": "pergola-kose-birlesimi-civatali-kiris-detayi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "pergola",
+      "dış mekan",
+      "bahçe"
+    ],
+    "finish": [
+      "yeşilimsi gri tonlu emprenye"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

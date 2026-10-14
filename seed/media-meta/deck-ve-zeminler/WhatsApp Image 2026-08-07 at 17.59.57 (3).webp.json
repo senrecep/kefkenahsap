@@ -1,0 +1,37 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 17.59.57 (3).webp",
+  "category": "deck-ve-zeminler",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede Kademeli Ahşap Deck Uygulaması",
+    "en": "Multi-Level Wooden Garden Decking"
+  },
+  "alt": {
+    "tr": "Bahçede ağaç etrafına kademeli olarak döşenmiş ahşap deck kaplama ve çim alan.",
+    "en": "Multi-level wooden deck installed around a tree in a lush green garden."
+  },
+  "caption": {
+    "tr": "Bahçe peyzajına uygun olarak mevcut ağaç gövdesini çevreleyen, kademeli ahşap deck zemin kaplama uygulamamız.",
+    "en": "Our multi-level wooden decking installation built cleanly around an existing tree in the garden landscape."
+  },
+  "seoFilename": "bahce-kademeli-ahsap-deck-kaplama",
+  "tags": {
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "bahçe",
+      "dış mekân",
+      "peyzaj"
+    ],
+    "finish": [
+      "ahşap yağı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

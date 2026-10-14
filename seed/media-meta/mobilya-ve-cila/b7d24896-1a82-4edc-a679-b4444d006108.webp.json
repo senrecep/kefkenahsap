@@ -1,0 +1,36 @@
+{
+  "file": "b7d24896-1a82-4edc-a679-b4444d006108.webp",
+  "category": "mobilya-ve-cila",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Restoran Masif Ahşap Masa ve Kolon Kaplaması",
+    "en": "Restaurant Solid Wood Table and Pillar Cladding"
+  },
+  "alt": {
+    "tr": "Restoran içinde doğal kenarlı masif ahşap masa, ahşap sandalyeler ve dikey çıtalarla kaplı kolon.",
+    "en": "Solid wood live edge table, wooden chairs, and slatted column cladding inside a restaurant."
+  },
+  "caption": {
+    "tr": "Restoran projesi için üretilen doğal kenarlı masif ahşap masa, torna ayaklı sandalyeler ve dikey ahşap çıtalı kolon kaplaması.",
+    "en": "Natural live-edge solid wood dining table, matching wooden chairs, and vertical slat column cladding crafted for a restaurant."
+  },
+  "seoFilename": "restoran-masif-ahsap-kutuk-masa",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "restoran",
+      "iç mekan",
+      "ticari"
+    ],
+    "finish": [
+      "vernik",
+      "cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

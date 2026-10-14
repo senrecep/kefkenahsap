@@ -1,0 +1,33 @@
+{
+  "file": "435e02ca-f074-4bfc-aa47-bb26d41d8406.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Yuvarlak Aynalı, Mermer Tezgâhlı Banyo",
+    "en": "Bathroom with Round Mirror and Marble Vanity Top"
+  },
+  "alt": {
+    "tr": "Beyaz metro fayanslı banyoda ışıklı yuvarlak pirinç çerçeveli ayna, mermer tezgâhlı metal lavabo ünitesi ve cam duşakabin",
+    "en": "White subway-tiled bathroom with a backlit round brass-framed mirror, a marble-top metal vanity and a glass shower enclosure"
+  },
+  "caption": {
+    "tr": "Beyaz metro fayanslı banyoda arkadan aydınlatmalı yuvarlak ayna ve mermer tezgâhlı, metal iskeletli lavabo ünitesi.",
+    "en": "A white subway-tiled bathroom with a backlit round mirror and a vanity unit with a marble top and metal frame."
+  },
+  "seoFilename": "yuvarlak-aynali-mermer-tezgahli-banyo",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "banyo",
+      "otel",
+      "iç mekan"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.7
+}

@@ -1,0 +1,35 @@
+{
+  "file": "996706_672565512788051_1505188489_n.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Teras Çevresinde Dikey Çıtalı Ahşap Çit",
+    "en": "Vertical Slat Wooden Fence Around a Terrace"
+  },
+  "alt": {
+    "tr": "Apartman arkasındaki taş kaplı teras alanının iki yanında uzanan dikey çıtalı, açık tonlu ahşap çit",
+    "en": "Light-toned vertical slat wooden fence running along both sides of a paved terrace behind an apartment building"
+  },
+  "caption": {
+    "tr": "Bina arkasındaki teras alanının kenarlarına dikey çıtalarla yapılmış ahşap çit. Çıtalar sık aralıkla dizilmiş, zemin ise taş kaplı.",
+    "en": "A wooden fence built with closely spaced vertical slats along the edges of a terrace behind a building, with a paved stone floor."
+  },
+  "seoFilename": "teras-dikey-citali-ahsap-cit",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "teras",
+      "apartman arkası",
+      "dış mekan"
+    ],
+    "finish": [
+      "vernikli"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.86
+}

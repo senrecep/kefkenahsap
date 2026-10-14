@@ -1,0 +1,38 @@
+{
+  "file": "d01889b4-e0cc-4ccd-a650-017258352ae2.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ahşap Çıtalı Duvar Kaplamalı Yönetici Ofisi",
+    "en": "Executive Office with Wooden Slat Wall Paneling"
+  },
+  "alt": {
+    "tr": "Dikey ahşap çıtalı duvar önünde L şekilli çalışma masası, gri koltuklar, sehpa ve gizli ışıklı tavan bulunan ofis",
+    "en": "Office with vertical wood slat wall, L-shaped desk, grey armchairs, coffee table and a ceiling with concealed lighting"
+  },
+  "caption": {
+    "tr": "Duvar ve tavanda dikey ahşap çıtalar kullanılan yönetici ofisi. Çıtaların arası koyu gri bırakılmış, masa ve dolaplar aynı ahşap tonunda yapılmış.",
+    "en": "A manager's office with vertical wood slats on the wall and ceiling. The gaps between slats are dark grey, and the desk and cabinets match the wood tone."
+  },
+  "seoFilename": "ahsap-citali-duvar-kaplama-yonetici-ofisi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "ofis",
+      "iç mekan",
+      "duvar kaplaması",
+      "tavan"
+    ],
+    "finish": [
+      "ahşap çıta",
+      "mat yüzey",
+      "koyu gri zemin"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

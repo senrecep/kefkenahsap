@@ -1,0 +1,37 @@
+{
+  "file": "11913881_1009808365730429_2625935718916620410_o.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede Çam Deck Zemin ve Korkuluk",
+    "en": "Pine Garden Deck with Railing"
+  },
+  "alt": {
+    "tr": "Villa bahçesinde çimenin üzerine kurulmuş açık renkli ahşap deck, arkasında dikey çıtalı korkuluk ve önünde küçük bir basamak",
+    "en": "Light wood deck built on a garden lawn beside a house, with a slatted railing behind and a small step in front"
+  },
+  "caption": {
+    "tr": "Evin yanındaki çimlik alana kurulan yükseltilmiş ahşap deck. Arka tarafta çıtalı korkuluk, giriş kısmında ise tek basamak var.",
+    "en": "A raised wooden deck built on the lawn next to a house, with a slatted railing at the back and a single step at the front."
+  },
+  "seoFilename": "bahce-ahsap-deck-zemin-korkuluk",
+  "tags": {
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "bahçe",
+      "villa",
+      "dış mekan"
+    ],
+    "finish": [
+      "doğal"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

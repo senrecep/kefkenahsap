@@ -1,0 +1,37 @@
+{
+  "file": "55-1.webp",
+  "category": "ahsap-yapilar",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Taş Temelli Ahşap Bahçe Evi ve Kulübe Yapımı",
+    "en": "Wooden Garden Cabin Built on Stone Foundation"
+  },
+  "alt": {
+    "tr": "Taş kaide üzerine inşa edilmiş, kiremit çatılı ve ahşap kaplamalı tek katlı bahçe evi.",
+    "en": "Wooden garden cabin with a tiled roof built on a natural stone base in a grassy yard."
+  },
+  "caption": {
+    "tr": "Taş kaide üzerine kiremit çatılı olarak inşa ettiğimiz ahşap bağ evi uygulamamız. Geniş bahçe alanına uygun olarak tamamlanmıştır.",
+    "en": "A single-story wooden cabin built on a stone base with a tiled gable roof, completed in a landscaped garden setting."
+  },
+  "seoFilename": "bahcede-tas-temelli-ahsap-kulube",
+  "tags": {
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "kırsal"
+    ],
+    "finish": [
+      "ahşap koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

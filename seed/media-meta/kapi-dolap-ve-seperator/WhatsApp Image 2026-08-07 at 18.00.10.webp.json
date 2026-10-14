@@ -1,0 +1,38 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 18.00.10.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Dış Cephe Duvarında Yeşil Boyalı Ahşap Pano Kapağı",
+    "en": "Green Painted Wooden Panel Cover on an Exterior Wall"
+  },
+  "alt": {
+    "tr": "Beyaz sıvalı duvarda, demir kapının yanında siyah menteşeli, yatay çıtalı soluk yeşil boyalı dar ahşap kapak",
+    "en": "Narrow pale green wooden cover with horizontal slats and black hinges on a white wall beside an ornate iron door"
+  },
+  "caption": {
+    "tr": "Beyaz sıvalı dış duvara yerleştirilmiş, yatay çıtalı ve yeşil boyalı tek kanatlı ahşap kapak. Siyah dekoratif menteşeleri yanındaki demir kapıyla uyum sağlıyor.",
+    "en": "A single-leaf wooden cover with horizontal slats, painted green and set into a white rendered exterior wall. Its black decorative hinges match the iron door beside it."
+  },
+  "seoFilename": "dis-cephe-yesil-boyali-ahsap-pano-kapagi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "dış cephe",
+      "bahçe girişi",
+      "duvar"
+    ],
+    "finish": [
+      "boyalı",
+      "yeşil",
+      "siyah demir menteşe"
+    ],
+    "stage": [
+      "finished",
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,36 @@
+{
+  "file": "1521402_672567352787867_1833842195_n.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Sekizgen Kamelya Tavanı ve Kiriş Detayı",
+    "en": "Octagonal Gazebo Ceiling and Rafter Detail"
+  },
+  "alt": {
+    "tr": "Sekizgen kamelyanın içinden görünen, ortadaki direkten yıldız gibi açılan kirişler ve tahta kaplı ahşap tavan",
+    "en": "Underside of an octagonal wooden gazebo roof with rafters radiating from a central post and plank ceiling"
+  },
+  "caption": {
+    "tr": "Kamelyanın altından bakınca kirişlerin ortadaki direkte toplandığı görülüyor. Aralarda dar tahta kaplama var.",
+    "en": "Looking up inside the gazebo, the rafters meet at a central post, with narrow plank cladding between them."
+  },
+  "seoFilename": "sekizgen-kamelya-tavan-kiris-detayi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "kamelya",
+      "dış mekan"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail",
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

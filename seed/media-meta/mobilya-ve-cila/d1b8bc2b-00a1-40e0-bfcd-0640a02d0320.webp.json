@@ -1,0 +1,35 @@
+{
+  "file": "d1b8bc2b-00a1-40e0-bfcd-0640a02d0320.webp",
+  "category": "mobilya-ve-cila",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Yatak Odası Beyaz Radyatör Kapağı ve Mobilya Uygulaması",
+    "en": "Bedroom Custom White Radiator Cover and Dresser"
+  },
+  "alt": {
+    "tr": "Yatak odası pencere altında beyaz petek kapağı ve sağda beyaz çekmeceli komodin.",
+    "en": "White radiator cover under a bedroom window and a white vanity dresser in the foreground."
+  },
+  "caption": {
+    "tr": "Yatak odası için pencere altına özel ölçü desenli petek gizleme kapağı ve beyaz lake mobilya uygulaması.",
+    "en": "Custom decorative radiator cover installed beneath the window alongside white lacquered furniture in a bedroom."
+  },
+  "seoFilename": "yatak-odasi-petek-kapagi-beyaz-mobilya",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "yatak odası",
+      "iç mekân"
+    ],
+    "finish": [
+      "lake",
+      "beyaz lake"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

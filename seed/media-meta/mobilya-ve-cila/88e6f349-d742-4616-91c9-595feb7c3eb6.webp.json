@@ -1,0 +1,35 @@
+{
+  "file": "88e6f349-d742-4616-91c9-595feb7c3eb6.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ofis Çalışma Masası ve Kapitone Duvar Paneli",
+    "en": "Office Work Desk with Padded Wall Panel"
+  },
+  "alt": {
+    "tr": "Siyah çerçeveli cam bölmeli ofiste beyaz uzun çalışma masası, gri dikey kapitone duvar paneli ve iki ofis koltuğu",
+    "en": "Office with black-framed glass partition, long white desk, grey vertical padded wall panel and two office chairs"
+  },
+  "caption": {
+    "tr": "Cam bölmeli ofis odasında beyaz çalışma masası, duvara uygulanmış gri döşemeli panel ve beyaz dolaplar.",
+    "en": "An office room with a glass partition, a white work desk, a grey upholstered wall panel and white cabinets."
+  },
+  "seoFilename": "ofis-calisma-masasi-kapitone-duvar-paneli",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "ofis",
+      "iç mekan"
+    ],
+    "finish": [
+      "beyaz lake",
+      "döşemeli panel"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.6
+}

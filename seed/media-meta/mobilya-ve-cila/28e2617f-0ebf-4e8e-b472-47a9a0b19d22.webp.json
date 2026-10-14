@@ -1,0 +1,36 @@
+{
+  "file": "28e2617f-0ebf-4e8e-b472-47a9a0b19d22.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Geometrik Oyma Şeritli Koyu Kahve Kapı",
+    "en": "Dark Brown Door with Geometric Carved Strip"
+  },
+  "alt": {
+    "tr": "Koyu kahverengi boyalı ahşap kapı, yatay dikişli panel ve yanında geometrik desenli oyma şerit, metal kol",
+    "en": "Dark brown wooden door with horizontal panel grooves, a geometric carved strip along one side and a metal handle"
+  },
+  "caption": {
+    "tr": "Koyu kahve cilalı kapı. Yatay panel çizgileri var, kol tarafındaki dikey şeritte geometrik desen oyulmuş.",
+    "en": "Dark brown finished door with horizontal panel lines and a geometric pattern carved into the vertical strip by the handle."
+  },
+  "seoFilename": "geometrik-oymali-koyu-kahve-kapi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "iç mekan",
+      "kapı"
+    ],
+    "finish": [
+      "koyu kahve cila",
+      "mat"
+    ],
+    "stage": [
+      "finished",
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.72
+}

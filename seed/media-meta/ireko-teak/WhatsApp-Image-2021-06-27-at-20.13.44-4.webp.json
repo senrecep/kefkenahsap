@@ -1,0 +1,37 @@
+{
+  "file": "WhatsApp-Image-2021-06-27-at-20.13.44-4.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Klima Ünitesi Çevresinde Yatay Çıtalı Ahşap Kaplama",
+    "en": "Horizontal Slatted Wood Cladding Around an AC Unit"
+  },
+  "alt": {
+    "tr": "Dış klima ünitesinin altında yatay ahşap çıtalarla kaplanmış duvar, üstte ahşap bir raf, sağda kırmızı merdiven",
+    "en": "Wall clad in horizontal wood slats below an outdoor AC unit, with a wooden shelf above and a red ladder on the right"
+  },
+  "caption": {
+    "tr": "Klima ünitesinin bulunduğu duvar yatay ahşap çıtalarla kaplandı; ünite altındaki ahşap bir tabla üzerinde duruyor. Köşe dönüşünde çıtalar kesintisiz devam ediyor.",
+    "en": "The wall holding the AC unit is clad in horizontal wood slats, and the unit sits on a wooden shelf. The slats continue around the corner without a break."
+  },
+  "seoFilename": "klima-ustu-yatay-citali-ahsap-kaplama",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "iç mekan",
+      "duvar kaplama",
+      "klima çevresi",
+      "balkon"
+    ],
+    "finish": [
+      "vernikli",
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.55
+}

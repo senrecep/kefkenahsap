@@ -1,0 +1,37 @@
+{
+  "file": "1f0c9b63-6554-448b-8d6d-80ba4e615458.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Gümüş Yaldızlı Oymalı Konsol",
+    "en": "Silver-Leaf Carved Console Table"
+  },
+  "alt": {
+    "tr": "Atölyede, bloklar üzerinde duran gümüş kaplamalı, akantus yaprağı ve kıvrım oymalı barok tarzı konsol iskeleti",
+    "en": "Baroque-style console frame with carved acanthus scrolls in a silver finish, resting on blocks in a workshop"
+  },
+  "caption": {
+    "tr": "Barok çizgide el oymalı konsol, gümüş kaplaması tamamlanmış hâliyle atölyede. Üst tabla yeri henüz boş duruyor.",
+    "en": "A hand-carved console in the Baroque style, silver finish complete, photographed in the workshop. The top panel is not yet fitted."
+  },
+  "seoFilename": "gumus-kaplama-oymali-barok-konsol",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "atölye",
+      "iç mekan"
+    ],
+    "finish": [
+      "gümüş yaldız",
+      "gümüş kaplama",
+      "cila"
+    ],
+    "stage": [
+      "process",
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.82
+}

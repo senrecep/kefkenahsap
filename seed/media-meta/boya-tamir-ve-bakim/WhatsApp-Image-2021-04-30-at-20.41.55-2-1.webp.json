@@ -1,0 +1,19 @@
+{
+  "file": "WhatsApp-Image-2021-04-30-at-20.41.55-2-1.webp",
+  "category": "boya-tamir-ve-bakim",
+  "model": "claude-opus-5.5 (manual, session)",
+  "promptVersion": "tagImage@1",
+  "title": { "tr": "Jakuzi çevresine ahşap kaplama ve basamak", "en": "Wooden jacuzzi surround with step" },
+  "alt": {
+    "tr": "Jakuzinin yan yüzü dikey ahşap çıtalarla kaplanmış, önünde ahşap basamak, zeminde ahşap karo döşeme",
+    "en": "Jacuzzi side clad in vertical timber boards with a wooden step in front and wooden tiles on the floor"
+  },
+  "caption": {
+    "tr": "Teras jakuzisinin etrafı ahşapla kaplandı ve giriş için basamak eklendi; zeminde ahşap karolar.",
+    "en": "The terrace jacuzzi was clad in timber with a step added for access; wooden tiles cover the floor."
+  },
+  "seoFilename": "jakuzi-ahsap-kaplama-ve-basamak",
+  "tags": { "wood": [], "setting": ["teras", "jakuzi"], "finish": ["yağlı", "doğal ton"], "stage": ["finished"] },
+  "categoryAgrees": false,
+  "confidence": 0.8
+}

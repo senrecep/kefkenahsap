@@ -1,0 +1,36 @@
+{
+  "file": "1-2.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Dış Mekân İçin Masif Ahşap Yemek Masası",
+    "en": "Solid Wood Outdoor Dining Table"
+  },
+  "alt": {
+    "tr": "Traverten zeminli terasta, kalın masif tahtalardan yapılmış uzun ahşap yemek masası ve çapraz ayaklı kalın gövdesi",
+    "en": "Long solid wood dining table with thick planks and sturdy braced legs on a travertine-paved terrace"
+  },
+  "caption": {
+    "tr": "Teras için yaptığımız, kalın tahtalardan birleştirilmiş uzun masa. Ayakları sağlam kalas ve alt traversle desteklenmiş, damarlı yüzey cilayla öne çıkarılmış.",
+    "en": "A long table built for a terrace from thick joined planks. The legs are braced with a lower stretcher, and the finish brings out the grain of the wood."
+  },
+  "seoFilename": "masif-ahsap-dis-mekan-yemek-masasi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "teras",
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "vernikli",
+      "doğal damar"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.8
+}

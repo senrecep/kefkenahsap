@@ -1,0 +1,38 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 18.00.36 (1).webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Beyaz Jaluzili Çift Kanatlı Kapı, Siyah Demir Kol ve Sürgü",
+    "en": "White Louvered Double Door with Black Iron Handles and Bolt"
+  },
+  "alt": {
+    "tr": "Beyaz boyalı jaluzili çift kanatlı ahşap kapı, ortada iki siyah demir kulp ve çekiçlenmiş desenli siyah sürgü",
+    "en": "White painted louvered double wooden door with two black iron handles and a hammered-pattern black bolt in the center"
+  },
+  "caption": {
+    "tr": "Jaluzi dolgulu çift kanatlı kapı beyaza boyandı. Siyah el işi görünümlü demir kulplar ve sürgü, beyaz yüzeyle net bir karşıtlık oluşturuyor.",
+    "en": "A double-leaf door with louvered panels, painted white. The black wrought-style iron handles and bolt stand out clearly against the white surface."
+  },
+  "seoFilename": "beyaz-jaluzili-cift-kanatli-kapi-demir-kulp-surgu",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "dış mekan",
+      "kapı",
+      "jaluzili kapı"
+    ],
+    "finish": [
+      "beyaz boya",
+      "siyah demir kulp",
+      "sürgü"
+    ],
+    "stage": [
+      "detail",
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

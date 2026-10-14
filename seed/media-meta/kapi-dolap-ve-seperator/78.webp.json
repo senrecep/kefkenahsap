@@ -1,0 +1,36 @@
+{
+  "file": "78.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Raflı Ahşap Dış Mekan Dolabı",
+    "en": "Outdoor Wooden Cabinet with Shelves"
+  },
+  "alt": {
+    "tr": "Kapakları açık ahşap dış mekan dolabının içinde dört raf var, üstte beyaz bir plastik boru görünüyor",
+    "en": "Open wooden outdoor cabinet with four shelves inside and a white plastic pipe visible at the top"
+  },
+  "caption": {
+    "tr": "Kapakları açılan, içinde dört rafı bulunan ahşap dolap. Dış cephesi yatay kaplamalı, kapıda metal kulp ve sürgü var.",
+    "en": "A wooden cabinet with opening doors and four shelves inside. The exterior has horizontal cladding, and the door has a metal handle and latch."
+  },
+  "seoFilename": "raflali-ahsap-dis-mekan-dolabi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "dış mekan",
+      "bahçe"
+    ],
+    "finish": [
+      "koyu vernik",
+      "doğal ton"
+    ],
+    "stage": [
+      "finished",
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

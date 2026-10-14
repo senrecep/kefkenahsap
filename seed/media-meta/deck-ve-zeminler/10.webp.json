@@ -1,0 +1,36 @@
+{
+  "file": "10.webp",
+  "category": "deck-ve-zeminler",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe Yanı Ahşap Deck Yürüyüş Yolu",
+    "en": "Wooden Garden Deck Walkway"
+  },
+  "alt": {
+    "tr": "Bina kenarındaki bahçe boyunca uzanan ahşap deck yürüyüş yolu ve yanındaki beyaz çakıl taşları.",
+    "en": "Wooden deck pathway running along the building exterior beside white gravel and trimmed bushes."
+  },
+  "caption": {
+    "tr": "Bina çevresindeki dar bahçe geçişi için uygulanan ahşap zemin kaplaması, dolgu çakıl taşları ve peyzaj düzenlemesiyle tamamlandı.",
+    "en": "A timber decking walkway installed along a narrow garden passage, edged with decorative white gravel and low shrubbery."
+  },
+  "seoFilename": "bahce-ahsap-deck-yuruyus-yolu",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "villa bahçesi",
+      "yürüme yolu"
+    ],
+    "finish": [
+      "doğal yağlı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.98
+}

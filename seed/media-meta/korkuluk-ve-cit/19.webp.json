@@ -1,0 +1,34 @@
+{
+  "file": "19.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Deniz Manzaralı Teras Çatıda Yalıtım Levhaları",
+    "en": "Insulation Boards on a Seaside Terrace Roof"
+  },
+  "alt": {
+    "tr": "Deniz manzaralı bir çatı yüzeyinde ahşap çıtalar arasına döşenmiş mavi yalıtım levhaları, sağda ahşap bir yapı",
+    "en": "Blue insulation boards laid between wooden battens on a roof overlooking the sea, with a wooden structure on the right"
+  },
+  "caption": {
+    "tr": "Ahşap çıtaların arasına mavi yalıtım levhaları yerleştirilmiş, kaplama öncesi çatı aşaması. Arkada deniz ve sahil görünüyor.",
+    "en": "A roof stage before cladding, with blue insulation boards fitted between wooden battens. The sea and shoreline lie beyond."
+  },
+  "seoFilename": "deniz-manzarali-teras-cati-yalitim-levhalari",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "çatı",
+      "teras",
+      "deniz kenarı",
+      "açık hava"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.8
+}

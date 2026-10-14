@@ -1,0 +1,36 @@
+{
+  "file": "79.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Çim Bahçede Ahşap Basamak Taşları",
+    "en": "Wooden Stepping Pads Across a Lawn"
+  },
+  "alt": {
+    "tr": "Yeşil çimin üzerinde sıra halinde dizilmiş, kızıl kahverengi çıtalı dikdörtgen ahşap basamak plakaları",
+    "en": "Rows of reddish-brown slatted rectangular wooden stepping pads laid in a line across a green lawn"
+  },
+  "caption": {
+    "tr": "Bahçedeki çimin üzerine aralıklı döşenmiş çıtalı ahşap yürüyüş plakaları. Çime basmadan evin yanından geçen sade bir patika oluşturuyor.",
+    "en": "Slatted wooden walkway pads spaced out across a garden lawn, forming a simple path along the side of the house."
+  },
+  "seoFilename": "cim-bahce-ahsap-basamak-plakalari",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "çim alan",
+      "yürüyüş yolu",
+      "dış mekan"
+    ],
+    "finish": [
+      "kızıl kahverengi koruyucu boya"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

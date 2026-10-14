@@ -1,0 +1,36 @@
+{
+  "file": "26169156_1762667783777813_3693112692049778473_n.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bitki Yatağını Çerçeveleyen Ahşap Deck",
+    "en": "Wooden Deck Framing a Planted Bed"
+  },
+  "alt": {
+    "tr": "Kırmızımsı ahşap deck ile çevrili, kırmızı çakıl üzerinde mor yapraklı bitkiler ve sikas bulunan bahçe yatağı",
+    "en": "Garden bed with purple-leaved plants and a cycad on red gravel, surrounded by a reddish wood deck"
+  },
+  "caption": {
+    "tr": "Deck tahtaları bitki yatağının kenarını çerçeve gibi dolaşıyor. Arkada yatay çıtalı ahşap panjur ve kapı panelleri görünüyor.",
+    "en": "The deck boards run around the edge of the planting bed like a frame. Horizontal slatted wood panels and shutters can be seen behind."
+  },
+  "seoFilename": "ahsap-deck-bitki-yatagi-cevresi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras",
+      "dış mekan"
+    ],
+    "finish": [
+      "doğal ahşap tonu",
+      "vernikli"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

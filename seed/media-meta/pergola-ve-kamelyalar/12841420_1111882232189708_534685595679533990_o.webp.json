@@ -1,0 +1,35 @@
+{
+  "file": "12841420_1111882232189708_534685595679533990_o.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Teras Üstü Ahşap Sundurma ve Pergola",
+    "en": "Wooden Terrace Canopy and Pergola"
+  },
+  "alt": {
+    "tr": "Beyaz cepheli binanın terasında koyu renkli ahşap pergola sundurması ve korkuluğu.",
+    "en": "Dark wooden terrace pergola canopy and railing on a white facade building."
+  },
+  "caption": {
+    "tr": "Teras kullanımını korunaklı hale getirmek için uygulanan tek eğimli ahşap sundurma tavanı ve korkuluk montajı.",
+    "en": "Single-pitch wooden canopy pergola and railing installation on a terrace to provide shade and shelter."
+  },
+  "seoFilename": "teras-ahsap-pergola-sundurma",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "teras",
+      "balkon",
+      "dış mekan"
+    ],
+    "finish": [
+      "koyu ahşap boyası"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

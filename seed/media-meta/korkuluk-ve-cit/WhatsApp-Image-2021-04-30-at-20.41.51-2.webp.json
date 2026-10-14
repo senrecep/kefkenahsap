@@ -1,0 +1,38 @@
+{
+  "file": "WhatsApp-Image-2021-04-30-at-20.41.51-2.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe Merdiveninde Halat Dolgulu Korkuluk ve Ahşap Küpeşte",
+    "en": "Garden Staircase Railing with Cable Infill and Wooden Handrail"
+  },
+  "alt": {
+    "tr": "Bahçeden üst kata çıkan çelik merdivenin iki yanında ince halat dolgulu korkuluk ve turuncu-kahve tonlu ahşap küpeşte",
+    "en": "Steel garden staircase with cable-infill railings on both sides and warm brown wooden handrails leading up to a terrace"
+  },
+  "caption": {
+    "tr": "Bahçeden üst kata çıkan çelik merdivenin korkuluğu: metal ayaklar, yatay çelik halatlar ve üstte ahşap küpeşte. Çevre düzenlemesi henüz tamamlanmamış.",
+    "en": "Railing on a steel staircase rising from the garden to the upper floor: metal posts, horizontal steel cables and a wooden handrail on top. The landscaping around it is still unfinished."
+  },
+  "seoFilename": "bahce-merdiveni-halat-dolgulu-korkuluk-ahsap-kupeste",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "merdiven",
+      "teras"
+    ],
+    "finish": [
+      "halat dolgu",
+      "metal ayak",
+      "ahşap küpeşte"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.86
+}

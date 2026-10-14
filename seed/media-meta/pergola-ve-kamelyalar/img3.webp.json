@@ -1,0 +1,36 @@
+{
+  "file": "img3.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Süs Havuzu Üzerinde Ahşap Köprü ve Kıvrımlı Deck",
+    "en": "Wooden Bridge and Curved Deck Around a Pool"
+  },
+  "alt": {
+    "tr": "Granit zeminli bir avluda, kıvrımlı ahşap deck ile çevrili havuzun üzerinde korkuluklu kemerli ahşap köprü",
+    "en": "Arched wooden bridge with railings over a pool edged by a curved wooden deck in a granite-paved courtyard"
+  },
+  "caption": {
+    "tr": "Havuzun kıvrımlı hattını izleyen ahşap deck ve üzerindeki korkuluklu küçük köprü. Çıtalar kenar boyunca eğilerek döşendi.",
+    "en": "A wooden deck follows the curved outline of the pool, with a small railed bridge across it. The boards are bent along the edge."
+  },
+  "seoFilename": "havuz-uzeri-ahsap-kopru-kivrimli-deck",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "havuz",
+      "avlu",
+      "bahçe",
+      "dış mekan"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.82
+}

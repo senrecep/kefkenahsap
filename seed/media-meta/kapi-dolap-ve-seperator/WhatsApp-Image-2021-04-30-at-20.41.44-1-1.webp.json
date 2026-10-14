@@ -1,0 +1,36 @@
+{
+  "file": "WhatsApp-Image-2021-04-30-at-20.41.44-1-1.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Duvara Monte Ahşap Sarmaşık Teli",
+    "en": "Wall-Mounted Wooden Climbing Trellis"
+  },
+  "alt": {
+    "tr": "Bahçe duvarına monte edilmiş kare gözlü ahşap kafes, üzerinde tırmanan sarmaşık ve altında yeşil bitkiler",
+    "en": "Square-grid wooden trellis mounted on a garden wall with a climbing vine and green plants below"
+  },
+  "caption": {
+    "tr": "Bahçe duvarına sabitlenen, bal rengi koruyucuyla boyanmış ahşap kafes. Sarmaşık yukarı doğru sarılmaya başlamış.",
+    "en": "A wooden trellis fixed to a garden wall, finished in a honey-brown stain. The vine has started climbing upward."
+  },
+  "seoFilename": "duvar-ahsap-sarmasik-kafesi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "duvar"
+    ],
+    "finish": [
+      "vernik",
+      "bal rengi"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.8
+}

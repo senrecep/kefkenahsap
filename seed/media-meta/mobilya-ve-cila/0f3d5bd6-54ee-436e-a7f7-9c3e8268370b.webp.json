@@ -1,0 +1,35 @@
+{
+  "file": "0f3d5bd6-54ee-436e-a7f7-9c3e8268370b.webp",
+  "category": "mobilya-ve-cila",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Cilalı Ahşap Camlı Vitrin Dolap",
+    "en": "Glossy Wooden Display Cabinet with Glass Doors"
+  },
+  "alt": {
+    "tr": "Parlak cilalı ahşap kaplamalı, siyah çerçeveli, üst kısmı cam kapaklı vitrin dolap.",
+    "en": "Wooden display cabinet with high-gloss finish, black framing, and glass doors with glassware inside."
+  },
+  "caption": {
+    "tr": "Salon için tasarlanmış parlak cilalı ahşap vitrin dolap. Üst bölmesi cam kapaklı sergileme alanı, alt kısmı kapalı saklama dolabı olarak üretilmiştir.",
+    "en": "High-gloss wooden display cabinet for living spaces, featuring upper glass-front display shelves and closed lower storage compartments."
+  },
+  "seoFilename": "cilali-ahsap-camli-vitrin-dolap",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "salon",
+      "ic-mekan"
+    ],
+    "finish": [
+      "parlak cila",
+      "lake"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

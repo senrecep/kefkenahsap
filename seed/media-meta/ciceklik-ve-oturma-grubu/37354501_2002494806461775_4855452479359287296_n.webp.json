@@ -1,0 +1,36 @@
+{
+  "file": "37354501_2002494806461775_4855452479359287296_n.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Siyah Çerçeveli Ahşap Çıtalı Bahçe Kapısı",
+    "en": "Wooden Slat Garden Gate with Black Frame"
+  },
+  "alt": {
+    "tr": "Siyah metal çerçeveli, dikey ahşap çıtalardan yapılmış çift kanatlı bahçe kapısı; önünde taş döşeli yol var",
+    "en": "Double-leaf garden gate with a black metal frame and vertical wooden slats, in front of a cobblestone driveway"
+  },
+  "caption": {
+    "tr": "Siyah metal çerçeveye dikey ahşap çıtalar monte edilmiş çift kanatlı bahçe kapısı. Kapı, taş döşeli bir girişte duruyor.",
+    "en": "A double-leaf garden gate with vertical wooden slats fixed to a black metal frame, set at a cobblestone entrance."
+  },
+  "seoFilename": "siyah-cerceveli-ahsap-citali-bahce-kapisi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe girişi",
+      "taş döşeli yol",
+      "villa"
+    ],
+    "finish": [
+      "vernikli",
+      "siyah metal çerçeve"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.9
+}

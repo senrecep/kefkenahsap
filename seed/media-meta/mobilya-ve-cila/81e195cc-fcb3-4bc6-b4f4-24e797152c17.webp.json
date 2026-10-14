@@ -1,0 +1,36 @@
+{
+  "file": "81e195cc-fcb3-4bc6-b4f4-24e797152c17.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Beyaz Boyalı Çerçeveli Kapı Açıklığı ve U Tipi Mutfak",
+    "en": "White Painted Door Frame and U-Shaped Kitchen"
+  },
+  "alt": {
+    "tr": "Beyaz boyalı geniş kasalı kapı açıklığından görünen, çerçeveli beyaz dolapları ve ankastre ocak ile fırını olan U tipi mutfak",
+    "en": "U-shaped kitchen seen through a wide white painted door frame, with white framed cabinets and a built-in hob and oven"
+  },
+  "caption": {
+    "tr": "Geniş, kalıplı beyaz kasa ile çerçevelenen mutfakta, kapakları çerçeveli beyaz boyalı dolaplar U düzeninde yerleştirildi.",
+    "en": "In this kitchen framed by a wide molded white casing, white painted cabinets with framed doors are laid out in a U shape."
+  },
+  "seoFilename": "beyaz-boyali-kasa-u-tipi-mutfak-dolabi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "mutfak",
+      "iç mekan",
+      "daire"
+    ],
+    "finish": [
+      "beyaz boya",
+      "mat boya"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

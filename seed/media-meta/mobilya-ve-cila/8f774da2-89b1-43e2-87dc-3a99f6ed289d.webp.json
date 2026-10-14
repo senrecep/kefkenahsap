@@ -1,0 +1,37 @@
+{
+  "file": "8f774da2-89b1-43e2-87dc-3a99f6ed289d.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ofiste Açık Renk Ahşap Bar Tezgâhı",
+    "en": "Light Wood Bar Counter in an Office"
+  },
+  "alt": {
+    "tr": "Ofis girişinde açık renk ahşap uzun bar tezgâhı, yanında raflar ve gri bar sandalyeleri; solda siyah çıtalı panel",
+    "en": "Long light wood bar counter with shelves and grey stools in an office, black slatted wall panel on the left"
+  },
+  "caption": {
+    "tr": "Ofis girişine yapılan, alt kısmında açık raflar bulunan uzun ahşap bar tezgâhı. Yanındaki siyah çıtalı panel ve camlı bölme ile iyi uyum sağlıyor.",
+    "en": "A long wooden bar counter with open shelves underneath, made for an office entrance. It sits next to a black slatted panel and a glass partition."
+  },
+  "seoFilename": "ofis-ahsap-bar-tezgahi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "ofis",
+      "iç mekan",
+      "bar tezgahı",
+      "raflı mobilya"
+    ],
+    "finish": [
+      "doğal renk",
+      "vernikli"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

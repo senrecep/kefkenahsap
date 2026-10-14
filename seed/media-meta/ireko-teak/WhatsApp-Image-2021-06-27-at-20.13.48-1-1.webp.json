@@ -1,0 +1,36 @@
+{
+  "file": "WhatsApp-Image-2021-06-27-at-20.13.48-1-1.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede L Formlu Ahşap Deck Yürüyüş Yolu",
+    "en": "L-Shaped Wooden Deck Walkway in a Garden"
+  },
+  "alt": {
+    "tr": "Çimenlik bahçede açık kahverengi ahşap deck yolu, yanında çiçek açmış pembe bir ağaç dalı ve gri korkuluklar",
+    "en": "Light brown wooden deck path beside a lawn, with blooming pink tree branches and gray railings"
+  },
+  "caption": {
+    "tr": "Bahçenin kenarında çimenle apartman girişi arasına döşenen ahşap deck yol. Tahtalar ince şeritler halinde, köşeden dönerek uzanıyor.",
+    "en": "A wooden deck path laid between the lawn and the building entrance, turning at the corner in narrow boards."
+  },
+  "seoFilename": "bahce-ahsap-deck-yuruyus-yolu",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras",
+      "dış mekan"
+    ],
+    "finish": [
+      "doğal ton",
+      "vernik"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.55
+}

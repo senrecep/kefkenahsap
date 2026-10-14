@@ -1,0 +1,36 @@
+{
+  "file": "deck5.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Eğimli Arazide Yükseltilmiş Ahşap Deck",
+    "en": "Raised Wooden Deck on a Sloped Site"
+  },
+  "alt": {
+    "tr": "Gün batımında, ağaçlıklı bir yamaca kurulmuş metal ayaklı yükseltilmiş ahşap deck zemini ve arkada evler",
+    "en": "Raised wooden deck on metal legs over a wooded slope at sunset, with houses in the background"
+  },
+  "caption": {
+    "tr": "Yamaca metal taşıyıcı ayaklar üzerine kurulan deck zemini. Tahtalar yan yana, düzgün aralıklarla döşendi; kenar profili de aynı ahşapla kapatıldı.",
+    "en": "A deck floor built on metal support legs over a slope. The boards are laid side by side with even gaps, and the edge is finished in the same wood."
+  },
+  "seoFilename": "egimli-arazide-yukseltilmis-ahsap-deck",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "yamaç",
+      "teras",
+      "dış mekan"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.86
+}

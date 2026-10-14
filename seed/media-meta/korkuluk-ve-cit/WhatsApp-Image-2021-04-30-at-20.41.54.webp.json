@@ -1,0 +1,35 @@
+{
+  "file": "WhatsApp-Image-2021-04-30-at-20.41.54.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe Önü Ahşap Çit",
+    "en": "Wooden Picket Fence at the Garden Front"
+  },
+  "alt": {
+    "tr": "Kamelya çiçekleri ve ağaçların arkasında, taş duvarın üzerine yapılmış açık renkli ahşap çıta çit",
+    "en": "Light wooden picket fence on a low stone wall behind camellia blooms and trees in a small garden"
+  },
+  "caption": {
+    "tr": "Küçük bir bahçenin önünde, taş duvarın üzerine yapılan çıtalı ahşap çit. Sokak tarafını ayırıyor, bahçenin görünümünü bozmuyor.",
+    "en": "A picket-style wooden fence built on top of a low stone wall at the front of a small garden, marking off the street side without closing the garden in."
+  },
+  "seoFilename": "bahce-onu-ahsap-citali-cit",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "konut",
+      "dış mekan"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.86
+}

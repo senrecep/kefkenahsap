@@ -1,0 +1,36 @@
+{
+  "file": "14-1.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "At Çiftliği İçin Ahşap Giriş Kapısı ve Çit",
+    "en": "Wooden Entrance Gate and Fence for a Paddock"
+  },
+  "alt": {
+    "tr": "Yuvarlak ahşap direkli, üstte yatay kirişli ve çapraz çıtalı çift kanatlı kapı; yanlarda ahşap çit, arkada orman",
+    "en": "Double wooden gate with X-braced panels under a round-log crossbeam, fenced field and forest behind"
+  },
+  "caption": {
+    "tr": "Yuvarlak ahşap direkler ve üst kirişle kurulan giriş kapısı, çapraz çıtalı iki kanat ve iki yana uzanan yatay çıtalı çit.",
+    "en": "An entrance gate built from round timber posts and a top beam, with two X-braced leaves and horizontal-rail fencing running along both sides."
+  },
+  "seoFilename": "ahsap-giris-kapisi-capraz-citali-cit",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "çiftlik",
+      "açık alan",
+      "orman kenarı",
+      "giriş kapısı"
+    ],
+    "finish": [
+      "doğal ahşap"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.86
+}

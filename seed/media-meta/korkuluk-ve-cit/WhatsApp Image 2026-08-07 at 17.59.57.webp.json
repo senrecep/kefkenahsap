@@ -1,0 +1,36 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 17.59.57.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede Tel Örgülü Ahşap Kümes Çiti",
+    "en": "Wooden Frame Chicken Run with Wire Mesh in a Garden"
+  },
+  "alt": {
+    "tr": "Açık arazide tel örgü kaplı ahşap çerçeveli kafes; içinde kırmızı küçük bir ahşap kulübe, yanında çift kanatlı kapı var",
+    "en": "Wire-mesh wooden frame enclosure on open land with a small red wooden hut inside and a double-leaf gate"
+  },
+  "caption": {
+    "tr": "Tel örgü kaplı ahşap çerçeveli, çift kanatlı kapılı bahçe çiti. İçinde küçük bir ahşap kulübe duruyor; zemin henüz düzenlenmemiş.",
+    "en": "A garden enclosure built from a timber frame covered with wire mesh, with a double-leaf gate. A small wooden hut stands inside and the ground is still unfinished."
+  },
+  "seoFilename": "tel-orgulu-ahsap-kumes-cit-kapili",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "açık alan",
+      "kümes"
+    ],
+    "finish": [
+      "tel örgü",
+      "doğal ahşap"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

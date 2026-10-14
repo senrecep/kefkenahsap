@@ -1,0 +1,36 @@
+{
+  "file": "28.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Beyaz Boyalı Çapraz Çıtalı Bahçe Merdiveni Korkuluğu",
+    "en": "White Painted Garden Stair Railing with Cross Bracing"
+  },
+  "alt": {
+    "tr": "Bahçeye inen beyaz boyalı ahşap merdiven ve çapraz çıtalı korkuluk, sağda doğal renkli ahşap başka bir merdiven",
+    "en": "White painted wooden garden stairs with a cross-braced railing, and a natural-tone wooden staircase on the right"
+  },
+  "caption": {
+    "tr": "Bahçeye inen ahşap merdivenin basamakları ve çapraz çıtalı korkuluğu beyaz boyayla bitirildi. Karşıda vernikli, doğal tonlu ikinci bir merdiven görünüyor.",
+    "en": "The steps and cross-braced railing of this wooden garden stair were finished in white paint. A second stair in a natural wood tone is visible across the way."
+  },
+  "seoFilename": "beyaz-boyali-capraz-citali-bahce-merdiveni-korkuluk",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "merdiven",
+      "korkuluk"
+    ],
+    "finish": [
+      "beyaz boya"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

@@ -1,0 +1,37 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 17.59.59.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe Havuzu İçin Ahşap Duş Panosu ve Zemin",
+    "en": "Wooden Outdoor Shower Screen and Floor"
+  },
+  "alt": {
+    "tr": "Bahçede yatay çıtalı ahşap duş paneli, üstünde yağmurlama duş başlığı, altında ahşap ızgara zemin ve yanında ahşap deck",
+    "en": "Outdoor shower with a horizontal-slat wooden screen, rain showerhead above, wooden floor below and a deck alongside"
+  },
+  "caption": {
+    "tr": "Yatay çıtalı ahşap panonun önüne duş başlığı takıldı, zemin de ahşap kaplandı. Yanındaki deck ile aynı tonda bir bütün oluşturuyor. Çevrede montaj aletleri hâlâ görünüyor.",
+    "en": "A horizontal-slat wooden screen carries the shower head, with a wooden floor panel set in front of it and a deck next to it. Some installation tools are still visible around the site."
+  },
+  "seoFilename": "ahsap-dus-panosu-bahce-zemin",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "havuz başı",
+      "dış mekan",
+      "villa"
+    ],
+    "finish": [
+      "vernik",
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.72
+}

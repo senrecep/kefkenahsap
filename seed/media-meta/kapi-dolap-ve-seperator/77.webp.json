@@ -1,0 +1,35 @@
+{
+  "file": "77.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Çift Kapılı Ahşap Kabin",
+    "en": "Wooden Cabin with Double Doors"
+  },
+  "alt": {
+    "tr": "Taş duvarın önünde, kırmızı kaplama zemin üzerinde duran, çift kapılı ve OSB çatılı açık renkli ahşap kabin",
+    "en": "Light wooden cabin with double doors and an OSB roof, standing on a red paved base in front of a stone wall"
+  },
+  "caption": {
+    "tr": "Taş duvarın önüne kurulan çift kapılı ahşap kabin. Kapılar çapraz takviyeli, yan yüzey yatay kaplamalı, üstü dört yöne eğimli çatıyla kapatıldı.",
+    "en": "A wooden cabin with two cross-braced doors, horizontal cladding on the side and a hipped roof, set up in front of a stone wall."
+  },
+  "seoFilename": "cift-kapili-ahsap-kabin-tas-duvar-onunde",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "dış mekan",
+      "taş duvar",
+      "bahçe"
+    ],
+    "finish": [
+      "doğal renk"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

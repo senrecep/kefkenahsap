@@ -1,0 +1,36 @@
+{
+  "file": "6ade8956-4a03-4a34-abb4-f6c66999c4fd.webp",
+  "category": "mobilya-ve-cila",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Genç Odası Ahşap Karyola ve Duvar Paneli Uygulaması",
+    "en": "Custom Teen Bedroom Bed and Wall Panel Unit"
+  },
+  "alt": {
+    "tr": "Köşeye monte edilmiş döşemeli ahşap duvar paneli, tek kişilik yatak ve uyumlu komodin.",
+    "en": "Built-in corner bed with matching upholstered wall paneling and a small nightstand."
+  },
+  "caption": {
+    "tr": "Genç odası için köşeye uyarlanan tek kişilik karyola, döşemeli ahşap duvar panelleri ve çekmeceli komodin montajı.",
+    "en": "Custom-fitted corner single bed, upholstered wall panels, and matching bedside drawer unit for a teen bedroom."
+  },
+  "seoFilename": "genc-odasi-karyola-komodin-panel",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "genç odası",
+      "yatak odası",
+      "iç mekan"
+    ],
+    "finish": [
+      "lake",
+      "mat"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

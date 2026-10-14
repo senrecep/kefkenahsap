@@ -1,0 +1,37 @@
+{
+  "file": "1470343_672567806121155_1344852384_n.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ormanlık Arazide Çift Katlı Ahşap Ev",
+    "en": "Two-Storey Wooden House in a Wooded Setting"
+  },
+  "alt": {
+    "tr": "Ağaçlarla çevrili çimenlik arazide, balkonlu ve kırma çatılı çift katlı ahşap ev; önde tel örgü ve çalılar var",
+    "en": "Two-storey wooden house with a balcony and gabled roof on a lawn among trees, seen through a wire fence"
+  },
+  "caption": {
+    "tr": "Ağaçlıklı bir arazide yükselen, geniş balkonlu ve açık ahşap çatı kirişli ev. Yapı doğal ahşap tonunu koruyor, çevresi çimenle kaplı.",
+    "en": "A house on a wooded plot with a wide balcony and exposed timber roof beams. The structure keeps its natural wood tone and is surrounded by lawn."
+  },
+  "seoFilename": "ormanlik-arazide-cift-katli-ahsap-ev",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "orman",
+      "dış mekan",
+      "müstakil ev"
+    ],
+    "finish": [
+      "doğal ahşap tonu",
+      "vernikli"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

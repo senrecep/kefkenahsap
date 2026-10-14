@@ -1,0 +1,33 @@
+{
+  "file": "10426910_890180967693170_7525110688328373046_n-1.webp",
+  "category": "boya-tamir-ve-bakim",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ahşap Deck Zemin Basınçlı Su ile Yıkanıyor",
+    "en": "Wooden Deck Being Pressure Washed"
+  },
+  "alt": {
+    "tr": "Bahçedeki ahşap deck zemini basınçlı yıkama makinesiyle temizleyen kişi; ıslak kısım koyu, kuru kısım daha açık renkte",
+    "en": "Person pressure washing a wooden garden deck; the wet boards look darker than the dry ones"
+  },
+  "caption": {
+    "tr": "Bahçedeki deck zemin basınçlı su ile yıkanıyor. Yıkanan tahtaların rengi belirgin şekilde canlanıyor, bakım öncesi temizlik bu şekilde yapılıyor.",
+    "en": "A garden deck is cleaned with a pressure washer. The washed boards regain their color, which is the usual first step before maintenance."
+  },
+  "seoFilename": "ahsap-deck-basincli-yikama-bakim",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "deck"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

@@ -1,0 +1,34 @@
+{
+  "file": "img13.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Dere Kenarında İskele Altyapısı Yapımı",
+    "en": "Building the Pier Substructure on the Riverbank"
+  },
+  "alt": {
+    "tr": "Nehir kıyısında taş duvar yanında, yuvarlak ahşap direkler ve yatay kirişlerden oluşan iskele iskeleti; işçiler çalışıyor.",
+    "en": "Pier framework of round timber posts and horizontal beams on a riverbank beside a stone wall, with workers in the background."
+  },
+  "caption": {
+    "tr": "Kıyıdaki taş duvarın yanında iskelenin direkleri ve taşıyıcı kirişleri yerleştirilmiş, döşeme tahtaları henüz çakılmamış. Ekip akşam ışığında çalışmaya devam ediyor.",
+    "en": "Posts and support beams of the pier are set beside the stone retaining wall, with the decking not yet laid. The crew keeps working in the evening light."
+  },
+  "seoFilename": "dere-kenari-iskele-altyapisi-yapimi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "nehir kenarı",
+      "iskele",
+      "açık hava",
+      "kıyı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

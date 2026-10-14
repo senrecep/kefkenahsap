@@ -1,0 +1,38 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 18.00.09 (3).webp",
+  "category": "korkuluk-ve-cit",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ahşap Küpeşteli Metal Bahçe Korkuluğu",
+    "en": "Metal Garden Railing with Wooden Handrail"
+  },
+  "alt": {
+    "tr": "Siyah metal dikmeler üzerine monte edilmiş cilalı ahşap küpeşte detayı.",
+    "en": "Polished wooden handrail mounted on black metal balusters along a terrace railing."
+  },
+  "caption": {
+    "tr": "Villa bahçe terasında siyah metal gövde üzerine uygulanan ahşap küpeşte detayı.",
+    "en": "Detail of a smooth wooden handrail installed on a black metal railing for a villa garden terrace."
+  },
+  "seoFilename": "ahsap-kupesteli-metal-bahce-korkulugu",
+  "tags": {
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "bahçe",
+      "teras",
+      "villa"
+    ],
+    "finish": [
+      "yağlı"
+    ],
+    "stage": [
+      "finished",
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

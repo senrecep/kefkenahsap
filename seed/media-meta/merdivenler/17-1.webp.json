@@ -1,0 +1,37 @@
+{
+  "file": "17-1.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe Taş Merdiveni İçin Ahşap Korkuluk",
+    "en": "Wooden Handrail for a Garden Stone Staircase"
+  },
+  "alt": {
+    "tr": "Eğimli bahçede taş basamaklı merdivenin yanında çelik halat dolgulu, açık renk ahşap korkuluk ve arkada ahşap pergola",
+    "en": "Light wooden handrail with steel cable infill beside a stone garden staircase on a slope, with a wooden pergola behind"
+  },
+  "caption": {
+    "tr": "Eğimli bahçedeki taş merdivene, çelik halat dolgulu ahşap korkuluk yaptık. Korkuluk basamakların eğimini takip ediyor; üst tarafta ahşap pergola görünüyor.",
+    "en": "A wooden handrail with steel cable infill built for a stone staircase in a sloped garden. The rail follows the steps, and a wooden pergola is visible at the top."
+  },
+  "seoFilename": "bahce-tas-merdiven-ahsap-korkuluk-halat-dolgu",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "taş merdiven",
+      "eğimli arazi"
+    ],
+    "finish": [
+      "çelik halat dolgu",
+      "doğal ahşap tonu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.86
+}

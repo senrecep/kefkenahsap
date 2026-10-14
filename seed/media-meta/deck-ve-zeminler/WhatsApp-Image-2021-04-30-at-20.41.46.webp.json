@@ -1,0 +1,36 @@
+{
+  "file": "WhatsApp-Image-2021-04-30-at-20.41.46.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede Çim Üzerine Kurulmuş Ahşap Deck",
+    "en": "Wooden Deck Built on a Garden Lawn"
+  },
+  "alt": {
+    "tr": "Çim bahçenin ortasında, kızıl kahve tonlu tahtalardan yapılmış alçak ve dikdörtgen bir ahşap deck zemini",
+    "en": "Low rectangular wooden deck of reddish-brown boards laid on a green garden lawn beside a tree"
+  },
+  "caption": {
+    "tr": "Bahçedeki çimlik alana, yere yakın yükseklikte kurulmuş deck zemin. Tahtaların damar yapısı ve sıcak rengi güneşte net görünüyor.",
+    "en": "A deck laid low to the ground on a garden lawn. The grain and warm color of the boards stand out in the sunlight."
+  },
+  "seoFilename": "bahce-cim-uzeri-ahsap-deck-zemin",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "çim alan",
+      "dış mekan"
+    ],
+    "finish": [
+      "vernikli",
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

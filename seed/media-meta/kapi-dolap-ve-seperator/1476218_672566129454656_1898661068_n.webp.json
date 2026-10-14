@@ -1,0 +1,36 @@
+{
+  "file": "1476218_672566129454656_1898661068_n.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Şömine Üstü Koyu Renk Ahşap Kiriş ve Konsollar",
+    "en": "Dark Wooden Fireplace Mantel Beam with Brackets"
+  },
+  "alt": {
+    "tr": "Tuğla bacalı bir şöminenin üzerinde koyu renk boyalı kalın ahşap kiriş ve iki yanda kavisli ahşap konsollar",
+    "en": "Thick dark-stained wooden mantel beam with two curved brackets under a red brick chimney breast"
+  },
+  "caption": {
+    "tr": "Tuğla bacalı şömine için koyu renge boyanan ahşap kiriş ve kavisli konsollar. Fotoğraf, şömine çevresi henüz tamamlanmadan, boş bir odada çekildi.",
+    "en": "A dark-stained wooden beam and curved brackets made for a brick-chimney fireplace, photographed in an unfinished empty room."
+  },
+  "seoFilename": "somine-ustu-ahsap-kiris-konsol",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "şömine",
+      "iç mekan",
+      "tuğla baca"
+    ],
+    "finish": [
+      "koyu boya",
+      "mat"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.8
+}

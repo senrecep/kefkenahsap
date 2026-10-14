@@ -1,0 +1,37 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 18.00.01 (3).webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ağacın Çevresinde Koyu Renk Bahçe Deck'i ve Korkuluk",
+    "en": "Dark Garden Deck and Railing Around a Tree"
+  },
+  "alt": {
+    "tr": "Bahçede gövdesi etrafında koyu kahverengi ahşap deck döşenmiş bir ağaç, deck kenarında dikey çıtalı ahşap korkuluk",
+    "en": "Dark brown wooden garden deck built around a tree trunk, with a vertical-slat wooden railing along its edge"
+  },
+  "caption": {
+    "tr": "Bahçedeki ağacı kesmeden etrafına döşenen koyu tonlu ahşap deck ve aynı renkte dikey çıtalı korkuluk. Zemin, taş duvar ile çim alan arasında yer alıyor.",
+    "en": "A dark-stained wooden deck laid around an existing garden tree, with a matching vertical-slat railing. The deck sits between a stone wall and the lawn."
+  },
+  "seoFilename": "agac-cevresi-bahce-deck-korkuluk",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras",
+      "korkuluk",
+      "ağaç çevresi"
+    ],
+    "finish": [
+      "koyu kahve vernik",
+      "koruyucu cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

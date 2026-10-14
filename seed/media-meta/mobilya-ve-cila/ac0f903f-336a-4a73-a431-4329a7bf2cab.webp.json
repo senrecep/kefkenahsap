@@ -1,0 +1,36 @@
+{
+  "file": "ac0f903f-336a-4a73-a431-4329a7bf2cab.webp",
+  "category": "mobilya-ve-cila",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Tekne İçi Özel Yapım Ahşap Konsol Dolap",
+    "en": "Custom Marine Interior Wooden Console Cabinet"
+  },
+  "alt": {
+    "tr": "Tekne kaptan köşkünde yer alan yuvarlatılmış köşeli, iki kapaklı ahşap dolap ve konsol tezgahı.",
+    "en": "Two-door wooden console cabinet with rounded edges inside a boat wheelhouse."
+  },
+  "caption": {
+    "tr": "Tekne iç mekânı için alana özel ölçülerde üretilen, cilalı kaplama ahşap dolap ve konsol uygulaması.",
+    "en": "Custom-built varnished wood console cabinet tailored for a marine interior wheelhouse space."
+  },
+  "seoFilename": "tekne-ici-ozel-ahsap-konsol-dolap",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "tekne",
+      "yat",
+      "iç mekan"
+    ],
+    "finish": [
+      "cila",
+      "mat vernik"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

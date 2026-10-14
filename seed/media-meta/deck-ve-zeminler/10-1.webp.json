@@ -1,0 +1,37 @@
+{
+  "file": "10-1.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Havuz Kenarı Ahşap Deck ve Oturma Alanı",
+    "en": "Poolside Wooden Deck and Seating Area"
+  },
+  "alt": {
+    "tr": "Havuz kenarında kavisli ahşap deck, korkuluklu köşe oturma grupları, beyaz şezlonglar ve büyük beyaz şemsiye",
+    "en": "Curved wooden poolside deck with railed corner seating, white sun loungers and a large white umbrella"
+  },
+  "caption": {
+    "tr": "Bahçedeki havuzun kenarına yapılan kavisli ahşap deck. Üzerinde korkuluklu oturma bankları, sehpalar ve şemsiye yer alıyor; havuza inen kısım da ahşap kaplı.",
+    "en": "A curved wooden deck built beside a garden pool, with railed built-in benches, low tables and an umbrella. The walkway along the pool is also timber-clad."
+  },
+  "seoFilename": "havuz-kenari-ahsap-deck-oturma-alani",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "havuz kenarı",
+      "bahçe",
+      "villa bahçesi",
+      "dış mekan"
+    ],
+    "finish": [
+      "doğal ton",
+      "vernikli"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

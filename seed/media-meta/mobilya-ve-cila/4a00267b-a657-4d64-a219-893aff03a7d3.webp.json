@@ -1,0 +1,35 @@
+{
+  "file": "4a00267b-a657-4d64-a219-893aff03a7d3.webp",
+  "category": "mobilya-ve-cila",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Özel Üretim Ahşap Karşılama Bankosu",
+    "en": "Custom Wooden Reception Counter"
+  },
+  "alt": {
+    "tr": "Işıklı duvar paneli önünde basamaklı ahşap çıtaları olan siyah danışma bankosu.",
+    "en": "Black reception counter with layered wooden trims set against an illuminated feature wall."
+  },
+  "caption": {
+    "tr": "Giriş holü için hazırladığımız katmanlı ahşap ve siyah gövdeli danışma bankosu montajı tamamlandı.",
+    "en": "Completed installation of the custom reception desk featuring layered wood accents and a matte black body."
+  },
+  "seoFilename": "ahsap-karsilama-bankosu-uretimi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "ofis",
+      "iç mekan",
+      "lobi"
+    ],
+    "finish": [
+      "lake"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

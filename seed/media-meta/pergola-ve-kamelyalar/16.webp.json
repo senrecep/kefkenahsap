@@ -1,0 +1,37 @@
+{
+  "file": "16.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe Kamelyası Taş Kaide Üzeri Kavisli Ahşap Kaplama",
+    "en": "Curved Wooden Decking on Stone Base for Garden Gazebo"
+  },
+  "alt": {
+    "tr": "Taş duvar üstüne kavisli ahşap döşeme ve bahçe kamelyasının taşıyıcı ahşap direkleri.",
+    "en": "Curved wooden decking on a stone base and support posts of a garden gazebo."
+  },
+  "caption": {
+    "tr": "Bahçe kamelyasının taş kaidesi üzerine uygulanan kavisli ahşap döşeme ve taşıyıcı direk birleşim detayı.",
+    "en": "Detail of curved wooden decking over a stone foundation and support posts of a custom garden gazebo."
+  },
+  "seoFilename": "bahce-kamelyasi-ahsap-doseme-detayi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "villa",
+      "açık alan"
+    ],
+    "finish": [
+      "ahşap koruyucu",
+      "koyu kahve"
+    ],
+    "stage": [
+      "detail",
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

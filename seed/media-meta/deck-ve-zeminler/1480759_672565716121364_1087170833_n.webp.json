@@ -1,0 +1,34 @@
+{
+  "file": "1480759_672565716121364_1087170833_n.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Deniz Kenarında Deck Alt Yapısı",
+    "en": "Deck Substructure by the Water"
+  },
+  "alt": {
+    "tr": "Eğimli arazide, su kenarında kurulmuş ahşap deck alt konstrüksiyonu; beton ayaklar üzerinde kirişler ve dikey direkler",
+    "en": "Timber deck substructure on a sloped waterside site, with joists on concrete footings and upright posts"
+  },
+  "caption": {
+    "tr": "Su kenarındaki eğimli arazide deck alt yapısı hazır; kirişler beton ayaklara oturtulmuş, korkuluk direkleri dikilmiş. Döşeme tahtaları henüz çakılmadı.",
+    "en": "The deck substructure is in place on a sloped waterside site, with joists resting on concrete footings and railing posts set. The deck boards are not yet installed."
+  },
+  "seoFilename": "deniz-kenari-deck-alt-yapisi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "deniz kenarı",
+      "eğimli arazi",
+      "dış mekan",
+      "deck"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

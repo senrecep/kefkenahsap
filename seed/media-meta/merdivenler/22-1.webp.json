@@ -1,0 +1,34 @@
+{
+  "file": "22-1.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Deniz Kenarında Sahanlıklı Ahşap Merdiven",
+    "en": "Wooden Staircase with Landing on a Seaside Slope"
+  },
+  "alt": {
+    "tr": "Deniz kıyısındaki eğimli arazide, ahşap güverteden aşağı inen korkuluklu ve ara sahanlıklı açık renk ahşap merdiven",
+    "en": "Light wooden staircase with railings and a mid landing descending from a deck on a sloped seaside site"
+  },
+  "caption": {
+    "tr": "Kıyıdaki eğimli arazide güverteyi alt kotlara bağlayan korkuluklu ahşap merdiven. Çevrede toprak zemin ve işin devam eden hazırlıkları görülüyor.",
+    "en": "A railed wooden staircase linking the deck to the lower levels on a sloped coastal site. Bare ground and ongoing site work are visible around it."
+  },
+  "seoFilename": "deniz-kenari-sahanlikli-ahsap-merdiven",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "deniz kenarı",
+      "dış mekan",
+      "güverte",
+      "eğimli arazi"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

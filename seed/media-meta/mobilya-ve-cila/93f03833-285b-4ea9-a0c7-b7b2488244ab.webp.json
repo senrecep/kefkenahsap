@@ -1,0 +1,36 @@
+{
+  "file": "93f03833-285b-4ea9-a0c7-b7b2488244ab.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Koyu Cilalı Yemek Masası, Bank ve Sandalye",
+    "en": "Dark Stained Dining Table, Bench and Chair"
+  },
+  "alt": {
+    "tr": "Boş bir odada koyu renk ahşap ayaklı, gri damarlı taş tezgâhlı masa, kavisli sırtlı bank ve döşemeli sandalye",
+    "en": "Dark wood dining table with a veined stone top, a curved-back bench and an upholstered chair in an empty room"
+  },
+  "caption": {
+    "tr": "Koyu tonda cilalanmış masa, bank ve sandalye takımı yerine konmuş. Masanın üstü damarlı taş, sandalyenin oturum ve sırtı kumaş döşemeli.",
+    "en": "A table, bench and chair set finished in a dark stain, placed in the room. The table has a veined stone top and the chair has a fabric seat and back."
+  },
+  "seoFilename": "koyu-cilali-yemek-masasi-bank-sandalye",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "iç mekan",
+      "yemek odası",
+      "ev"
+    ],
+    "finish": [
+      "koyu cila",
+      "mat vernik"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

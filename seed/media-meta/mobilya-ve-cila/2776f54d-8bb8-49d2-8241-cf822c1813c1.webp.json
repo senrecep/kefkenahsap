@@ -1,0 +1,37 @@
+{
+  "file": "2776f54d-8bb8-49d2-8241-cf822c1813c1.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Mutfakta Masif Ahşap Bar Tezgâhı ve Asma Raf",
+    "en": "Solid Wood Kitchen Bar Counter with Hanging Shelf"
+  },
+  "alt": {
+    "tr": "Parlak gri gövdeli mutfak adasının üstünde bal rengi masif ahşap tezgâh, üstte zincirle asılı ahşap raf ve beyaz dolaplar",
+    "en": "Honey-toned solid wood bar counter on glossy grey base units, with a chain-hung wooden shelf above and white cabinets"
+  },
+  "caption": {
+    "tr": "Parlak gri gövdenin üzerine birleştirilmiş masif ahşap bar tezgâhı yapıldı; üstüne aynı dokuda, zincirle tavana asılan bir raf eklendi. Ahşap yüzeye cila uygulandı.",
+    "en": "A solid wood bar counter made from joined strips sits on a glossy grey base, with a matching shelf hung from the ceiling by chains. The wood surface is varnished."
+  },
+  "seoFilename": "mutfak-masif-ahsap-bar-tezgahi-asma-raf",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "mutfak",
+      "ev",
+      "bar tezgâhı",
+      "asma raf"
+    ],
+    "finish": [
+      "cila",
+      "doğal ahşap rengi"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

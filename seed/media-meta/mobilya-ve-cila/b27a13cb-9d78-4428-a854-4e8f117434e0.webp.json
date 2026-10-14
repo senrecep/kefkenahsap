@@ -1,0 +1,34 @@
+{
+  "file": "b27a13cb-9d78-4428-a854-4e8f117434e0.webp",
+  "category": "mobilya-ve-cila",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Siyah Ahşap Dekoratif Şömine Konsolu Cilası",
+    "en": "Black Wooden Decorative Fireplace Console Finish"
+  },
+  "alt": {
+    "tr": "Atölye ortamında boyası ve cilası yeni tamamlanmış siyah ahşap dekoratif şömine konsolu.",
+    "en": "Black painted wooden decorative fireplace mantel console freshly finished in the workshop."
+  },
+  "caption": {
+    "tr": "Atölyemizde siyah lake cila uygulaması yapılan dekoratif ahşap şömine konsolu. İsteğe özel ölçü ve el işçiliğiyle hazırlandı.",
+    "en": "Decorative wooden fireplace mantel console finished with black lacquer in our workshop, custom-made to requested dimensions."
+  },
+  "seoFilename": "siyah-ahsap-somine-konsol-cila",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "atölye"
+    ],
+    "finish": [
+      "lake",
+      "siyah boya"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

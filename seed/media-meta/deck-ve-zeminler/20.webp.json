@@ -1,0 +1,37 @@
+{
+  "file": "20.webp",
+  "category": "deck-ve-zeminler",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Çerçeveli Ahşap Deck Izgara Paneli",
+    "en": "Framed Wooden Slatted Deck Panel"
+  },
+  "alt": {
+    "tr": "Seramik zemin üzerinde duran, gönye köşe çerçeveli ve paralel latalı ahşap deck paneli.",
+    "en": "Framed wooden deck panel with parallel slats resting on a tiled floor."
+  },
+  "caption": {
+    "tr": "Islak zemin veya dış mekan kullanımı için hazırlanan, kenarları gönye birleşim çerçeveli ahşap ızgara paneli.",
+    "en": "Wooden slatted deck grating panel with mitered frame, designed for wet areas or outdoor spaces."
+  },
+  "seoFilename": "cerceveli-ahsap-deck-paneli",
+  "tags": {
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "atölye"
+    ],
+    "finish": [
+      "doğal",
+      "zımparalı"
+    ],
+    "stage": [
+      "finished",
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

@@ -1,0 +1,37 @@
+{
+  "file": "87c03656-1511-4304-a8e4-fedf584fab28.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Çapraz Çıtalı Aynalı Köşe Gardırop",
+    "en": "Corner Wardrobe with Cross-Lattice Mirrored Doors"
+  },
+  "alt": {
+    "tr": "Yatak odasında beyaz boyalı köşe gardırop; kapılarda çapraz çıtalı aynalar, yanında panelli beyaz oda kapısı",
+    "en": "White painted corner wardrobe in a bedroom with cross-lattice mirrored doors, next to a paneled white room door"
+  },
+  "caption": {
+    "tr": "Yatak odası köşesine yapılmış beyaz boyalı gardırop. Kapılarda çapraz çıtalı ayna detayı var, tavandaki kartonpiyerle uyumlu duruyor.",
+    "en": "A white painted wardrobe built into a bedroom corner. The doors have a cross-lattice mirror detail that matches the crown moulding on the ceiling."
+  },
+  "seoFilename": "capraz-citali-aynali-kose-gardirop",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "yatak odası",
+      "iç mekan",
+      "köşe gardırop"
+    ],
+    "finish": [
+      "beyaz boya",
+      "mat boya",
+      "aynalı kapak"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.82
+}

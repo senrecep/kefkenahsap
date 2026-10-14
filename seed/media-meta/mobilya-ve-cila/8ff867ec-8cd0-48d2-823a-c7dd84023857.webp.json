@@ -1,0 +1,37 @@
+{
+  "file": "8ff867ec-8cd0-48d2-823a-c7dd84023857.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Beyaz Raflı Ayakkabılık Dolabı",
+    "en": "White Shoe Cabinet with Open Shelves"
+  },
+  "alt": {
+    "tr": "Kapağı açık, içinde beş sıra beyaz rafı olan uzun ve dar beyaz dolap, kapak içinde menteşeler görünüyor",
+    "en": "Tall narrow white cabinet with its door open, showing five white shelves and hinges on the door"
+  },
+  "caption": {
+    "tr": "Beyaz boyalı, uzun ve dar bir dolap. İçinde eşit aralıklı raflar var, kapağı gizli menteşelerle takılı. Ayakkabılık ya da giriş dolabı olarak kullanılabilir.",
+    "en": "A tall, narrow cabinet in white finish with evenly spaced shelves and a door fitted with concealed hinges. It can serve as a shoe cabinet or hallway storage."
+  },
+  "seoFilename": "beyaz-raflu-ayakkabilik-dolabi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "giriş",
+      "iç mekan",
+      "ev"
+    ],
+    "finish": [
+      "beyaz boya",
+      "mat beyaz"
+    ],
+    "stage": [
+      "finished",
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

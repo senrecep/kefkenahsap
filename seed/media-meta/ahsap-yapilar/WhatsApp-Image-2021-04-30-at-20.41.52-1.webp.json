@@ -1,0 +1,37 @@
+{
+  "file": "WhatsApp-Image-2021-04-30-at-20.41.52-1.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Yeşil Çatılı Ahşap Köpek Kulübesi",
+    "en": "Wooden Dog House with Green Roof"
+  },
+  "alt": {
+    "tr": "Yeşil kaplamalı çift eğimli çatısı ve bal rengi yatay ahşap kaplaması olan köpek kulübesi, kapalı bir bahçe alanında duruyor",
+    "en": "Honey-colored wooden dog house with horizontal planks and a green gabled roof, standing on a concrete patio in a garden"
+  },
+  "caption": {
+    "tr": "Yatay lambri kaplamalı, çift eğimli çatısı yeşil kaplama ile örtülmüş köpek kulübesi. Bahçedeki örtülü alanda teslime hazır halde.",
+    "en": "Dog house with horizontal plank cladding and a gabled roof covered in green roofing. Shown ready for delivery in a covered garden area."
+  },
+  "seoFilename": "yesil-catili-ahsap-kopek-kulubesi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "açık alan",
+      "köpek kulübesi"
+    ],
+    "finish": [
+      "vernik",
+      "bal rengi",
+      "yeşil çatı kaplaması"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

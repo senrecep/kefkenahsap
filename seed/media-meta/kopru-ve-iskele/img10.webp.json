@@ -1,0 +1,35 @@
+{
+  "file": "img10.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Süs Havuzu Üzerinde Kemerli Ahşap Köprü",
+    "en": "Arched Wooden Bridge over a Garden Pond"
+  },
+  "alt": {
+    "tr": "Taş kenarlı süs havuzunun üzerinde çapraz çıtalı korkuluğu ve kemerli tutamağı olan açık renk ahşap bahçe köprüsü",
+    "en": "Light wooden garden bridge with crossed-slat railings and arched handrails over a stone-edged ornamental pond"
+  },
+  "caption": {
+    "tr": "Bahçedeki süs havuzu için yapılmış, çapraz çıtalı korkuluklara ve kemerli tutamaklara sahip küçük ahşap köprü. Zemin tahtaları hafif eğimli, kenarlarda doğal taşlar var.",
+    "en": "A small wooden bridge built for a garden pond, with crossed-slat railings and arched handrails. The deck boards rise in a gentle curve, and natural stones line the banks."
+  },
+  "seoFilename": "kemerli-ahsap-bahce-koprusu",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "süs havuzu",
+      "peyzaj"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

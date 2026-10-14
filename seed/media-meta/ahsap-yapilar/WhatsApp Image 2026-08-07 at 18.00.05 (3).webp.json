@@ -1,0 +1,36 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 18.00.05 (3).webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede Tek Eğimli Çatılı Ahşap Depo",
+    "en": "Wooden Garden Shed with a Single-Slope Roof"
+  },
+  "alt": {
+    "tr": "Çakıl zeminli bahçede, ağaçların arasında koyu renk kaplamalı, tek eğimli çatılı ahşap depo ve çift kanatlı kapısı",
+    "en": "Dark-stained wooden shed with a single-slope roof and double doors on a gravel base among garden trees"
+  },
+  "caption": {
+    "tr": "Çakıl zemin üzerine kurulmuş, koyu tonda boyanmış, çift kanatlı kapılı ahşap bahçe deposu. Yanında küçük bir ahşap platform görünüyor.",
+    "en": "A wooden garden shed finished in a dark stain, set on a gravel base, with double doors. A small wooden platform is visible beside it."
+  },
+  "seoFilename": "bahce-ahsap-depo-tek-egimli-cati",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "açık hava",
+      "çakıl zemin"
+    ],
+    "finish": [
+      "koyu vernik",
+      "ahşap koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

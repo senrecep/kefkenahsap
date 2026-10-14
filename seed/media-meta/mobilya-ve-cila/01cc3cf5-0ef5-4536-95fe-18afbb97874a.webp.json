@@ -1,0 +1,36 @@
+{
+  "file": "01cc3cf5-0ef5-4536-95fe-18afbb97874a.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Koyu Renk Boyalı Kapılar ve Kasalar, Koridor",
+    "en": "Dark Finished Doors and Frames in a Corridor"
+  },
+  "alt": {
+    "tr": "Beyaz zeminli dar bir koridorda siyaha boyalı ahşap kapılar, kasalar ve ortada ızgara paspas",
+    "en": "Narrow corridor with white floor, black-finished wooden doors and frames, and a grate mat in the middle"
+  },
+  "caption": {
+    "tr": "Koridorda siyaha boyanmış kapı ve kasalar, beyaz zemin ve mermer desenli duvarlarla güçlü bir kontrast oluşturuyor.",
+    "en": "Black-finished doors and frames in a corridor, set against the white floor and marble-look walls."
+  },
+  "seoFilename": "koyu-renk-boyali-kapi-ve-kasalar-koridor",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "koridor",
+      "iç mekan",
+      "kapı"
+    ],
+    "finish": [
+      "siyah boya",
+      "mat cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.55
+}

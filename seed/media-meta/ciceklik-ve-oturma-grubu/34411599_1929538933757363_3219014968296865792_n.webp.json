@@ -1,0 +1,36 @@
+{
+  "file": "34411599_1929538933757363_3219014968296865792_n.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Taş Duvar Önünde Sıralı Ahşap Çiçeklikler",
+    "en": "Row of Wooden Planter Boxes Along a Stone Wall"
+  },
+  "alt": {
+    "tr": "Taş duvar boyunca sıralanmış, dikey çıtalı ve köşe direkli dört dikdörtgen ahşap çiçeklik, içleri toprakla dolu",
+    "en": "Four rectangular wooden planters with vertical slats and corner posts lined up along a stone wall, filled with soil"
+  },
+  "caption": {
+    "tr": "Yürüyüş yolunda taş duvarın önüne dizilmiş dikdörtgen ahşap çiçeklikler. Dikey çıtalı gövde ve kalın köşe direkleriyle yapıldı, içleri toprakla dolu.",
+    "en": "Rectangular wooden planters lined up in front of a stone wall along a walkway, built with vertical slats and thick corner posts, filled with soil."
+  },
+  "seoFilename": "tas-duvar-onunde-sirali-ahsap-ciceklikler",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "dış mekan",
+      "yürüyüş yolu",
+      "taş duvar",
+      "park"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

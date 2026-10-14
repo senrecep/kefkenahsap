@@ -1,0 +1,37 @@
+{
+  "file": "559881_672567529454516_892198240_n.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Site Bahçesinde Ahşap Pergola ve Banklar",
+    "en": "Wooden Pergola with Benches in a Residential Garden"
+  },
+  "alt": {
+    "tr": "Apartmanların önündeki taş döşeli alanda, altında ahşap bankların sıralandığı açık renkli ahşap pergola",
+    "en": "Light wooden pergola over a row of benches on a paved area in front of apartment blocks"
+  },
+  "caption": {
+    "tr": "Apartman bahçesindeki taş zeminli alana kurulan ahşap pergola. Kolonlar ve üst kirişler açık tonda; altındaki ahşap bankların ayakları siyah dökümden.",
+    "en": "A wooden pergola built on the paved area of an apartment garden. Posts and top beams are light in tone, and the benches below have black cast-iron legs."
+  },
+  "seoFilename": "site-bahcesi-ahsap-pergola-banklar",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "site",
+      "park",
+      "dış mekan"
+    ],
+    "finish": [
+      "vernikli",
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

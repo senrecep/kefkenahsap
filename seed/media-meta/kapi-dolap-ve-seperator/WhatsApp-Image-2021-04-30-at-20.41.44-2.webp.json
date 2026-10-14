@@ -1,0 +1,36 @@
+{
+  "file": "WhatsApp-Image-2021-04-30-at-20.41.44-2.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Duvara Monte Ahşap Sarmaşık Teli",
+    "en": "Wall-Mounted Wooden Climbing Trellis"
+  },
+  "alt": {
+    "tr": "Açık renkli bir bahçe duvarına monte edilmiş ahşap ızgara; üzerinde sarmaşık tırmanıyor, altında mor ve yeşil çalılar var",
+    "en": "Wooden lattice trellis mounted on a light garden wall, with a vine climbing it and purple and green shrubs below"
+  },
+  "caption": {
+    "tr": "Bahçe duvarına sabitlenen, dikey ve yatay çıtalardan oluşan ahşap sarmaşık teli. Bitki çıtaların arasından yukarı doğru sarılıyor.",
+    "en": "A wooden trellis of vertical and horizontal slats fixed to a garden wall, with the plant winding upward between the slats."
+  },
+  "seoFilename": "duvar-ahsap-sarmasik-teli",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "duvar"
+    ],
+    "finish": [
+      "vernikli",
+      "bal rengi"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.72
+}

@@ -1,0 +1,36 @@
+{
+  "file": "img8-1.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Sitede Ahşap Çıtalı Bahçe Kapısı",
+    "en": "Wooden Picket Garden Gate Between Two Pillars"
+  },
+  "alt": {
+    "tr": "İki beton sütun arasında çıtalı ahşap bahçe kapısı, önünde ahşap basamak, yanda posta kutusu ve sardunya saksıları",
+    "en": "Wooden picket garden gate between two stucco pillars, with a wooden step, mailbox and geranium pots"
+  },
+  "caption": {
+    "tr": "İki sütun arasına yapılan, üstü yuvarlatılmış çıtalı bahçe kapısı. Yan kanat yatay lambriyle kaplandı, girişe ahşap bir basamak döşendi.",
+    "en": "A picket garden gate with rounded tops set between two pillars. The side leaf is clad in horizontal boards and a wooden step was laid at the entrance."
+  },
+  "seoFilename": "citali-ahsap-bahce-kapisi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "site girişi",
+      "dış mekan"
+    ],
+    "finish": [
+      "açık ton",
+      "doğal görünüm"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

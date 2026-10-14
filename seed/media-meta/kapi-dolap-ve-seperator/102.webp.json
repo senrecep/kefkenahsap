@@ -1,0 +1,36 @@
+{
+  "file": "102.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe İçin Kapaklı Ahşap Dolap",
+    "en": "Wooden Outdoor Storage Cabinet with Doors"
+  },
+  "alt": {
+    "tr": "Taş döşeli bahçe köşesinde, yatay çıtalı üç kapaklı, kızıl kahverengi vernikli ahşap dış mekan dolabı",
+    "en": "Reddish-brown stained wooden outdoor cabinet with horizontal slats and three doors on a paved garden corner"
+  },
+  "caption": {
+    "tr": "Bahçe köşesine yaptığımız yatay çıtalı, üç bölmeli ahşap dolap. Kapaklar metal menteşeli, yüzey kızıl kahve tonunda koruyucuyla boyandı.",
+    "en": "A three-section wooden cabinet with horizontal slats, built for a garden corner. The doors have metal hinges and the surface is finished in a reddish-brown protective stain."
+  },
+  "seoFilename": "bahce-ahsap-dolap-yatay-citali",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "taş döşeme"
+    ],
+    "finish": [
+      "koruyucu",
+      "kızıl kahve ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

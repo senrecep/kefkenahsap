@@ -1,0 +1,33 @@
+{
+  "file": "52.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ahşap Çatı Makasları Montajda",
+    "en": "Timber Roof Trusses Being Assembled"
+  },
+  "alt": {
+    "tr": "Yeşilimsi emprenyeli görünümlü ahşap çatı makası iskelelerin üstünde kuruluyor, işçiler kirişlerin üzerinde çalışıyor",
+    "en": "Workers assemble a green-tinted timber roof truss on wooden scaffolds, with a second truss lying in the foreground"
+  },
+  "caption": {
+    "tr": "Açık alanda kurulan ahşap çatı iskeleti. Ustalar makası ahşap iskeleler üzerinde yerine oturtup birleştiriyor, ön planda ikinci bir makas hazır bekliyor.",
+    "en": "A timber roof frame going up on an open site. The crew fits the truss together from wooden scaffolds while a second truss waits in the foreground."
+  },
+  "seoFilename": "ahsap-cati-makasi-montaj",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "dış mekan",
+      "şantiye",
+      "çatı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.86
+}

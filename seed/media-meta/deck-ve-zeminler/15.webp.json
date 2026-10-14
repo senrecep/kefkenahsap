@@ -1,0 +1,36 @@
+{
+  "file": "15.webp",
+  "category": "deck-ve-zeminler",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Teras Ahşap Deck Döşemesi ve Korkuluk Uygulaması",
+    "en": "Terrace Wooden Decking and Railing Application"
+  },
+  "alt": {
+    "tr": "Açık hava terasında ahşap deck zemin kaplaması, şezlonglar ve arka planda ahşap kamelya.",
+    "en": "Wooden deck flooring on an open-air terrace with lounge chairs and a gazebo in the background."
+  },
+  "caption": {
+    "tr": "Geniş teras alanı için uyguladığımız ahşap deck zemin kaplaması, ahşap korkuluk ve oturma alanı kamelyası.",
+    "en": "Timber decking, matching wooden railings, and a sheltered gazebo dining area built for an open outdoor terrace."
+  },
+  "seoFilename": "teras-ahsap-deck-kaplama",
+  "tags": {
+    "wood": [
+      "çam",
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras",
+      "bahçe",
+      "villa"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

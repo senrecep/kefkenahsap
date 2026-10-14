@@ -1,0 +1,35 @@
+{
+  "file": "64.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe Merdiveni Halatlı Ahşap Korkuluk",
+    "en": "Garden Staircase Wooden Railing with Cable"
+  },
+  "alt": {
+    "tr": "Taş basamaklı bahçe merdiveninde yatay çelik halat gergili ahşap korkuluk ve küpeşte.",
+    "en": "Wooden railing with horizontal wire rope along outdoor stone garden steps."
+  },
+  "caption": {
+    "tr": "Taş kaplama bahçe merdiveni kenarına uygulanan yatay çelik halat gergili ahşap korkuluk sistemi ve arka planda pergola iskeleti.",
+    "en": "Custom wooden stair railing with horizontal cable infill along natural stone garden steps, with a timber pergola in the background."
+  },
+  "seoFilename": "bahce-merdiveni-ahsap-korkuluk",
+  "tags": {
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "merdiven"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

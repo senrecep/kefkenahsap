@@ -1,0 +1,36 @@
+{
+  "file": "598608_406038439440761_1961507705_n.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Çapraz Korkuluklu Ahşap Deck ve Düz Çatılı Gölgelikler",
+    "en": "Wooden Deck with Cross-Rail Railings and Flat-Roofed Shelters"
+  },
+  "alt": {
+    "tr": "Eğimli bir arazide çapraz korkuluklu ahşap deck, basamaklar ve düz ahşap çatılı iki açık gölgelik",
+    "en": "Wooden deck on sloped land with cross-pattern railings, steps and two open shelters with flat wooden roofs"
+  },
+  "caption": {
+    "tr": "Eğimli arazide kurulan deck zemin, çapraz çıtalı korkuluklar ve düz çatılı açık gölgelikler. Zemin tahtaları açık tonda, direkler ve korkuluklar biraz daha koyu.",
+    "en": "A deck built on sloped land, with cross-slatted railings and open shelters under flat roofs. The floorboards are light in tone, the posts and railings slightly darker."
+  },
+  "seoFilename": "capraz-korkuluklu-ahsap-deck-ve-golgelik",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "açık alan",
+      "eğimli arazi",
+      "dış mekan",
+      "deck"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.72
+}

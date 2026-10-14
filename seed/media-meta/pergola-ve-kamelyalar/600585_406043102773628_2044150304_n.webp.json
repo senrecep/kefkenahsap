@@ -1,0 +1,38 @@
+{
+  "file": "600585_406043102773628_2044150304_n.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Deniz Kenarında Kırma Çatılı Ahşap Kamelya",
+    "en": "Hip-Roof Wooden Gazebo by the Sea"
+  },
+  "alt": {
+    "tr": "Deniz kenarındaki ahşap kamelyanın altından çatı kirişleri, aralıklı tahta kaplama, çapraz korkuluk ve uzaktaki beyaz binalar",
+    "en": "Underside of a seaside wooden gazebo roof with beams, spaced slats, an X-pattern railing and white buildings beyond"
+  },
+  "caption": {
+    "tr": "Kirişleri ve aralıklı tahta kaplaması görünen kırma çatılı kamelya. Zemin ahşap deck, kenarlarda çapraz desenli korkuluk var; arkada deniz ve beyaz yapılar görünüyor.",
+    "en": "A hip-roof gazebo with exposed beams and spaced slat cladding. It has a timber deck floor and an X-pattern railing, with the sea and white buildings behind."
+  },
+  "seoFilename": "deniz-kenari-kirma-catili-ahsap-kamelya",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "deniz kenarı",
+      "açık alan",
+      "otel bahçesi",
+      "teras"
+    ],
+    "finish": [
+      "doğal ahşap",
+      "aralıklı tahta çatı",
+      "çapraz korkuluk"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

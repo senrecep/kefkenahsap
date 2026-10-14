@@ -1,0 +1,37 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 18.00.05 (1).webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ahşap Bahçe Duş Paneli ve Seperatör",
+    "en": "Wooden Outdoor Shower Panel and Screen"
+  },
+  "alt": {
+    "tr": "Bahçede ahşap yatay çıtalardan üretilmiş, bataryalı ve yağmurlama başlıklı dış mekan duş paneli.",
+    "en": "Outdoor shower panel crafted with horizontal wooden slats, equipped with a mixer and rain shower head."
+  },
+  "caption": {
+    "tr": "Bahçe ve havuz kenarı için tasarlanan ahşap çıtalı duş seperatörü. Dış mekan koşullarına uygun koruyucu uygulamasıyla monte edildi.",
+    "en": "Wooden slatted outdoor shower partition designed for garden and poolside use, treated with weather-resistant wood finish."
+  },
+  "seoFilename": "ahsap-bahce-dus-paneli",
+  "tags": {
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "bahçe",
+      "havuz kenarı",
+      "dış mekan"
+    ],
+    "finish": [
+      "ahşap koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.88
+}

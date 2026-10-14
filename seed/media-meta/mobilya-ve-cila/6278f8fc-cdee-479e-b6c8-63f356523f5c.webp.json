@@ -1,0 +1,38 @@
+{
+  "file": "6278f8fc-cdee-479e-b6c8-63f356523f5c.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Çocuk Odasında Duvar Rafları ve TV Ünitesi",
+    "en": "Wall Shelves and TV Unit in a Kid's Room"
+  },
+  "alt": {
+    "tr": "Beyaz kare duvar rafları, ahşap çekmeceli TV ünitesi, üzerinde televizyon ve çalışma tezgâhında kitaplar",
+    "en": "White square wall shelves, a wood-veneer TV unit with drawers, a TV, and books on the desk surface"
+  },
+  "caption": {
+    "tr": "Beyaz lake kare raflar ve ceviz tonunda kaplamalı çekmeceli ünite birlikte tasarlandı. Ünitenin yanındaki dikey panel ve kapı da aynı ahşap tonunda.",
+    "en": "White square shelves paired with a drawer unit in a warm walnut-toned veneer. The vertical panel and door beside it match the same wood tone."
+  },
+  "seoFilename": "cocuk-odasi-duvar-rafi-tv-unitesi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "çocuk odası",
+      "iç mekan",
+      "TV ünitesi",
+      "duvar rafı"
+    ],
+    "finish": [
+      "beyaz boya",
+      "ahşap kaplama",
+      "mat cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

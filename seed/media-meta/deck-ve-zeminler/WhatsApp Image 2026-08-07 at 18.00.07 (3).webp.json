@@ -1,0 +1,35 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 18.00.07 (3).webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede Bitkilerle Çevrili Ahşap Deck Zemin",
+    "en": "Wooden Deck Floor in a Garden Among Hedges"
+  },
+  "alt": {
+    "tr": "Bahçe duvarı ve çalı bordürlerin arasında, güneş ve ağaç gölgesi vuran dar tahtalı ahşap deck zemin",
+    "en": "Narrow-board wooden deck in a garden between a wall and hedges, lit by sun and tree shadows"
+  },
+  "caption": {
+    "tr": "Bahçe duvarı ile çalı bordürlerin arasına döşenmiş deck zemin. Tahtalar gri taş kaplı alana kadar uzanıyor, kenarda eski traversli bitki yatakları var.",
+    "en": "A deck laid between a garden wall and trimmed hedges. The boards run up to the grey stone paving, with old timber-edged planting beds alongside."
+  },
+  "seoFilename": "bahce-ahsap-deck-zemin",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

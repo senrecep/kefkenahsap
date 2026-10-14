@@ -1,0 +1,39 @@
+{
+  "file": "1471960_672565899454679_992383963_n.webp",
+  "category": "deck-ve-zeminler",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Sahil Kenarı Emprenyeli Çam Deck Uygulaması",
+    "en": "Coastal Pressure-Treated Pine Wood Decking"
+  },
+  "alt": {
+    "tr": "Deniz kenarında palmiye ağacı etrafına döşenmiş emprenyeli ahşap deck kaplama ve pergola dikmeleri.",
+    "en": "Pressure-treated wooden deck installed around a palm tree along the seaside with pergola posts."
+  },
+  "caption": {
+    "tr": "Deniz kıyısındaki teras alanı için uyguladığımız emprenyeli çam deck çalışması. Zemin tahtaları mevcut palmiye ağacının gövdesine göre özel olarak kesilip yerleştirildi.",
+    "en": "Pressure-treated pine decking built for an outdoor seaside terrace. The wooden planks were neatly custom-cut around the existing palm tree."
+  },
+  "seoFilename": "sahil-kenari-emprenyeli-cam-deck",
+  "tags": {
+    "wood": [
+      "emprenyeli çam",
+      "çam"
+    ],
+    "setting": [
+      "sahil",
+      "deniz kenarı",
+      "bahçe",
+      "dış mekan"
+    ],
+    "finish": [
+      "emprenye"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

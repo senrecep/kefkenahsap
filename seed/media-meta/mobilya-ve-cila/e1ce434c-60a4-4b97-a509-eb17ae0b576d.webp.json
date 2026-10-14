@@ -1,0 +1,36 @@
+{
+  "file": "e1ce434c-60a4-4b97-a509-eb17ae0b576d.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Metal Tepsi Tablalı Yuvarlak Yan Sehpa",
+    "en": "Round Side Table with Metal Tray Top"
+  },
+  "alt": {
+    "tr": "Koyu ahşap gövdeli, üstü pirinç renkli metal tepsi tablalı yuvarlak yan sehpa, balık sırtı parke zemin üzerinde duruyor",
+    "en": "Round side table with a dark wooden base and brass-colored metal tray top on a herringbone parquet floor"
+  },
+  "caption": {
+    "tr": "Koyu cilalı ahşap ayaklı yuvarlak yan sehpa. Üstündeki metal tepsi tabla, balık sırtı döşenmiş parke zeminle ve perdelerle uyum sağlıyor.",
+    "en": "A round side table with dark polished wooden legs and a metal tray top, set on a herringbone parquet floor beside the curtains."
+  },
+  "seoFilename": "metal-tepsi-tablali-yuvarlak-yan-sehpa",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "iç mekan",
+      "otel odası",
+      "oturma alanı"
+    ],
+    "finish": [
+      "koyu cila",
+      "mat vernik"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

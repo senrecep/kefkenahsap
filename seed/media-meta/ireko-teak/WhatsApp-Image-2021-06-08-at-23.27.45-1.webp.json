@@ -1,0 +1,38 @@
+{
+  "file": "WhatsApp-Image-2021-06-08-at-23.27.45-1.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede Yuvarlak Ahşap Deck ve Dikey Kaplama",
+    "en": "Round Wooden Deck with Vertical Cladding in a Garden"
+  },
+  "alt": {
+    "tr": "Bahçede yuvarlak bir ahşap platformun dikey çıtalarla kaplı kenarı, üstünde ahşap döşeme, yanında çimen ve ağaç",
+    "en": "Curved edge of a round wooden platform clad in vertical slats, with decking on top, beside grass and a tree"
+  },
+  "caption": {
+    "tr": "Bahçeye yapılan yuvarlak ahşap platformun kavisli kenarı dikey çıtalarla kaplandı. Üst yüzeyde deck döşeme var, kızıl kahve tonlar vernikle öne çıkıyor.",
+    "en": "The curved edge of a round garden platform is clad in vertical slats, with decking on top. The reddish-brown tones are brought out by the finish."
+  },
+  "seoFilename": "bahcede-yuvarlak-ahsap-deck-dikey-kaplama",
+  "tags": {
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "deck"
+    ],
+    "finish": [
+      "vernik"
+    ],
+    "stage": [
+      "finished",
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

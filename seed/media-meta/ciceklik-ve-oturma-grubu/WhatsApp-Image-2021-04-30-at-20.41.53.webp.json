@@ -1,0 +1,36 @@
+{
+  "file": "WhatsApp-Image-2021-04-30-at-20.41.53.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Tekerlekli Karo Kaplamalı Ahşap Sehpa ve Köşe Oturma Bankı",
+    "en": "Wooden Coffee Table with Tile Top on Wheels and Corner Bench"
+  },
+  "alt": {
+    "tr": "Mavi beyaz desenli karo kaplı, tekerlekli alçak ahşap sehpa; arkasında duvara monte koyu renkli ahşap köşe oturma bankı",
+    "en": "Low wooden table on wheels with a blue and white patterned tile top, in front of a dark wood built-in corner bench"
+  },
+  "caption": {
+    "tr": "Mavi beyaz desenli karo kaplı, altı tekerlekli alçak ahşap sehpa ve arkasındaki koyu vernikli köşe oturma bankı. Taş görünümlü zeminde, açık alanda kullanıma uygun bir oturma köşesi.",
+    "en": "A low wooden table on casters with a blue and white patterned tile top, next to a dark-stained built-in corner bench on a stone-look tiled floor."
+  },
+  "seoFilename": "tekerlekli-karo-kaplamali-ahsap-sehpa-kose-oturma-banki",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "teras",
+      "köşe oturma alanı",
+      "dış mekan"
+    ],
+    "finish": [
+      "koyu vernik",
+      "karo kaplama"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

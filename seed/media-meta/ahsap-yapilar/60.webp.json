@@ -1,0 +1,38 @@
+{
+  "file": "60.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Beyaz Cepheli Evde Ahşap Çatı Kirişleri ve Saçak",
+    "en": "Exposed Timber Roof Beams and Eaves on a White-Walled House"
+  },
+  "alt": {
+    "tr": "Beyaz sıvalı evin koyu kahverengi ahşap çatı kirişleri, geniş saçağı ve arkada kiremitli bacası, mavi gökyüzü altında",
+    "en": "Dark brown timber roof beams and wide eaves on a white-plastered house with a tiled chimney under a blue sky"
+  },
+  "caption": {
+    "tr": "Beyaz sıvalı bir evin çatı saçağında açıkta bırakılan koyu renk ahşap kirişler ve aşıklar. Yağmur zinciri ve kiremitli baca da görünüyor.",
+    "en": "Dark-stained timber beams and purlins left exposed under the roof eaves of a white-plastered house, with a rain chain and a tiled chimney visible."
+  },
+  "seoFilename": "ahsap-cati-kirisleri-sacak",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "dış mekan",
+      "çatı",
+      "saçak",
+      "müstakil ev"
+    ],
+    "finish": [
+      "koyu vernik",
+      "koyu ahşap boya"
+    ],
+    "stage": [
+      "finished",
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.86
+}

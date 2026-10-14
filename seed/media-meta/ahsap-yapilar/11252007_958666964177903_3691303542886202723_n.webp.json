@@ -1,0 +1,39 @@
+{
+  "file": "11252007_958666964177903_3691303542886202723_n.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Deniz Kenarında Yeşil Shingle Çatılı Ahşap Yapı",
+    "en": "Wooden Structure with Green Shingle Roof by the Sea"
+  },
+  "alt": {
+    "tr": "Yeşil shingle çatılı, yatay kaplamalı ahşap yapının köşesi; arkada koy, yat iskelesi ve tepedeki yerleşim görünüyor",
+    "en": "Corner of a wooden building with green shingle roof and horizontal cladding, with a bay, jetty and hillside town behind"
+  },
+  "caption": {
+    "tr": "Deniz kenarındaki arazide yapılmış, yatay ahşap kaplamalı ve yeşil shingle çatılı yapı. Çatı altındaki kalın kirişler ve şeffaf panelli pencere bölümü yakından görünüyor.",
+    "en": "A structure on a seaside plot with horizontal wood cladding and a green shingle roof. The thick roof beams and the clear-paneled window section are visible up close."
+  },
+  "seoFilename": "deniz-kenari-shingle-catili-ahsap-yapi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "deniz kenarı",
+      "koy",
+      "dış mekan",
+      "bahçe"
+    ],
+    "finish": [
+      "shingle çatı",
+      "yatay ahşap kaplama",
+      "vernikli"
+    ],
+    "stage": [
+      "finished",
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.86
+}

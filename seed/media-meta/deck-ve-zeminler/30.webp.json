@@ -1,0 +1,36 @@
+{
+  "file": "30.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe Duvarına Yaslı Ahşap Depo",
+    "en": "Wooden Garden Storage Shed Against a Wall"
+  },
+  "alt": {
+    "tr": "Bahçede duvara yaslanmış, kırmızı çatılı, yatay ahşap kaplamalı ve havalandırma ızgaralı depo kulübesi",
+    "en": "Garden storage shed with red roof, horizontal wood cladding and vent grilles, built against a garden wall"
+  },
+  "caption": {
+    "tr": "Villa bahçesinde duvarın önüne yapılan, yatay kaplamalı ve kırmızı shingle çatılı ahşap depo. İki yanında havalandırma ızgarası var.",
+    "en": "A wooden storage shed built against a garden wall at a villa, with horizontal cladding, a red shingle roof and vent grilles on both sides."
+  },
+  "seoFilename": "bahce-ahsap-depo-kirmizi-catili",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "villa",
+      "dış mekan"
+    ],
+    "finish": [
+      "yatay kaplama",
+      "shingle çatı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.85
+}

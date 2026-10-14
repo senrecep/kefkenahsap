@@ -1,0 +1,37 @@
+{
+  "file": "251820_406039149440690_716310992_n.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ahşap Teras Güverte ve Çapraz Korkuluklu Pergola",
+    "en": "Wooden Terrace Deck with Cross-Railing Pergola"
+  },
+  "alt": {
+    "tr": "Taş duvar üstüne kurulu ahşap teras güvertesi, çapraz korkuluklar, merdiven ve çıtalı pergola çatısı.",
+    "en": "Wooden deck terrace built on a stone wall, featuring cross-pattern railings, steps, and a slatted pergola roof."
+  },
+  "caption": {
+    "tr": "Eğimli arazide taş istinat duvarı üzerine inşa edilen ahşap deck zemin, çapraz korkuluklar ve gölgelik sağlayan çıtalı pergola uygulaması.",
+    "en": "Wooden deck floor, cross-pattern railings, and slatted pergola built over a stone retaining wall for outdoor shade on a sloped site."
+  },
+  "seoFilename": "ahsap-deck-teras-pergola-korkuluk",
+  "tags": {
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras",
+      "bahçe",
+      "açık hava"
+    ],
+    "finish": [
+      "emprenye"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

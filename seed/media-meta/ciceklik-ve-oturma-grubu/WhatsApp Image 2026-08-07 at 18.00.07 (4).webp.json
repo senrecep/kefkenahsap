@@ -1,0 +1,37 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 18.00.07 (4).webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe İçin Ahşap Sebzelik ve Çiçeklik Kasaları",
+    "en": "Wooden Raised Garden Beds and Planters"
+  },
+  "alt": {
+    "tr": "Çakıl taşlı bahçede sıra sıra dizilmiş, toprakla doldurulmuş ahşap yükseltilmiş ekim yatakları.",
+    "en": "Wooden raised garden beds filled with soil, laid out across a gravel-covered backyard garden."
+  },
+  "caption": {
+    "tr": "Müstakil ev bahçesinde çakıl zemin üzerine kurulan, sebze ve çiçek yetiştirmeye uygun ahşap ekim kasaları.",
+    "en": "Wooden raised garden beds and planter boxes installed over gravel ground for practical backyard gardening."
+  },
+  "seoFilename": "ahsap-yukseltilmis-sebzelik-ciceklik-kasasi",
+  "tags": {
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "müstakil ev"
+    ],
+    "finish": [
+      "emprenye"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

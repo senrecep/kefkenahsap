@@ -1,0 +1,39 @@
+{
+  "file": "WhatsApp-Image-2021-06-08-at-23.27.36.webp",
+  "category": "ireko-teak",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ahşap Çıtalı Dış Mekân Mutfak ve Barbekü Alanı",
+    "en": "Outdoor Kitchen with Wooden Slat Cladding"
+  },
+  "alt": {
+    "tr": "Açık hava mutfağında ahşap çıtalı duvar ve tavan kaplaması ile tezgâh altı dolaplar.",
+    "en": "Outdoor kitchen with vertical wood slat wall cladding, slatted ceiling, and under-counter wooden cabinets."
+  },
+  "caption": {
+    "tr": "Teras alanında ahşap çıtalı tavan ve duvar kaplaması, tezgâh altı dolap kapakları ve barbekü ünitesi yerleşimi.",
+    "en": "Custom slatted wood ceiling and wall cladding paired with under-counter storage for an outdoor terrace kitchen."
+  },
+  "seoFilename": "ahsap-citali-acik-hava-mutfak",
+  "tags": {
+    "wood": [
+      "iroko",
+      "teak"
+    ],
+    "setting": [
+      "teras",
+      "bahçe",
+      "dış mekân",
+      "mutfak"
+    ],
+    "finish": [
+      "yağlı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

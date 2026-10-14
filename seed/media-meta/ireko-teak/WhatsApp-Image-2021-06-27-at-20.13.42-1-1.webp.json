@@ -1,0 +1,37 @@
+{
+  "file": "WhatsApp-Image-2021-06-27-at-20.13.42-1-1.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Vernikli Ahşap Deck Panel Atölye Çalışması",
+    "en": "Varnished Wooden Deck Panel in the Workshop"
+  },
+  "alt": {
+    "tr": "Atölyede metal çerçeve üzerinde duran, parlak vernik uygulanmış bal rengi ve kahverengi damarlı dar ahşap tahta panel",
+    "en": "Narrow wooden boards with glossy varnish in honey and brown tones, laid on a metal frame in a workshop"
+  },
+  "caption": {
+    "tr": "Atölyede metal çerçeve üzerine dizilmiş, vernik sürülmüş ahşap panel. Sıcak bal rengi tonlar ve belirgin damar deseni parlak yüzeyde öne çıkıyor.",
+    "en": "A varnished wooden panel laid out on a metal frame in the workshop. The warm honey tones and clear grain stand out on the glossy surface."
+  },
+  "seoFilename": "vernikli-ahsap-panel-atolye",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "atölye",
+      "panel",
+      "deck"
+    ],
+    "finish": [
+      "vernik",
+      "parlak"
+    ],
+    "stage": [
+      "process",
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

@@ -1,0 +1,36 @@
+{
+  "file": "3.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Yatay Çıtalı Ahşap Duvar Kaplaması",
+    "en": "Horizontal Slatted Wood Wall Cladding"
+  },
+  "alt": {
+    "tr": "Beyaz dolabın yanında ve üstünde yatay ahşap çıtalarla kaplanmış duvar, çıtalar arasında ince boşluklar var",
+    "en": "Wall clad in horizontal wooden slats beside and above a white cabinet, with thin gaps between the slats"
+  },
+  "caption": {
+    "tr": "Beyaz dolap bloğunun çevresinde yatay çıtalarla yapılmış ahşap duvar kaplaması. Çıtalar arasında bırakılan ince aralıklar yüzeye derinlik veriyor.",
+    "en": "Wooden wall cladding made of horizontal slats around a white cabinet unit. The thin gaps left between the slats add depth to the surface."
+  },
+  "seoFilename": "yatay-citali-ahsap-duvar-kaplamasi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "iç mekan",
+      "duvar kaplaması",
+      "dolap çevresi"
+    ],
+    "finish": [
+      "vernikli",
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

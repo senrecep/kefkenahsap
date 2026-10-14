@@ -1,0 +1,37 @@
+{
+  "file": "20264838_1593382434039683_318923615082542297_n.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Işıklı Camlı Ahşap Duvar Panosu",
+    "en": "Wooden Wall Panel with Lit Glass Discs"
+  },
+  "alt": {
+    "tr": "Koyu renk ahşap tahtalardan duvar panosu üzerinde, ahşap çerçeveli ve arkadan aydınlatılan renkli desenli yuvarlak camlar",
+    "en": "Dark wood plank wall panel with round wood-framed glass discs in colorful patterns, lit from behind, above a sofa"
+  },
+  "caption": {
+    "tr": "Koyu tonlu ahşap tahtaların üzerine, farklı boylarda yuvarlak ahşap çerçeveler içinde arkadan aydınlatmalı renkli camlar yerleştirildi. Pano, oturma odasında kanepenin üstündeki duvara asıldı.",
+    "en": "Round wood-framed glass discs in various sizes, lit from behind, are mounted on staggered dark wood planks. The panel hangs on the living room wall above the sofa."
+  },
+  "seoFilename": "isikli-camli-ahsap-duvar-panosu",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "oturma odası",
+      "duvar",
+      "iç mekan"
+    ],
+    "finish": [
+      "koyu ton",
+      "vernik",
+      "arkadan aydınlatma"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.8
+}

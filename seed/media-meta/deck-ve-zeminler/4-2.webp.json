@@ -1,0 +1,37 @@
+{
+  "file": "4-2.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede Emprenyeli Çam Deck Zemin",
+    "en": "Pressure-Treated Pine Garden Deck"
+  },
+  "alt": {
+    "tr": "Sürgülü cam kapının önünde çimenle çevrili açık renk ahşap deck zemin, üzerinde masa ve katlanır sandalyeler",
+    "en": "Light wood deck in front of a sliding glass door, edged by lawn, with a table and folding chairs on top"
+  },
+  "caption": {
+    "tr": "Zemin seviyesinde döşenmiş, kenarı çıtayla kapatılmış bahçe decki. Teras kapısından çimene yumuşak bir geçiş sağlıyor.",
+    "en": "A ground-level garden deck with a boxed edge, giving a smooth transition from the patio door to the lawn."
+  },
+  "seoFilename": "bahce-emprenyeli-cam-deck-zemin",
+  "tags": {
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe",
+      "teras",
+      "dış mekan"
+    ],
+    "finish": [
+      "doğal"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

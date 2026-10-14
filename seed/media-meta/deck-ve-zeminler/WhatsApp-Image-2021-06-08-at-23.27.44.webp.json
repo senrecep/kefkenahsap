@@ -1,0 +1,36 @@
+{
+  "file": "WhatsApp-Image-2021-06-08-at-23.27.44.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Sürgülü Kapı Önüne Bal Rengi Ahşap Deck",
+    "en": "Honey-Toned Wood Deck at a Sliding Door Entrance"
+  },
+  "alt": {
+    "tr": "Büyük cam sürgülü kapının önünde, toprak zemin üzerine döşenmiş bal rengi dikdörtgen ahşap deck platformu",
+    "en": "Honey-colored rectangular wooden deck platform laid on bare soil in front of large sliding glass doors"
+  },
+  "caption": {
+    "tr": "Henüz peyzajı yapılmamış bahçede, cam kapının önüne döşenen alçak ahşap deck. Çıtalar boyuna sıralanmış, kenarlar çerçeveyle kapatılmış.",
+    "en": "A low wooden deck laid in front of the glass door in a garden not yet landscaped. The slats run lengthwise and the edges are closed with a frame."
+  },
+  "seoFilename": "surgulu-kapi-onu-ahsap-deck",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras girişi",
+      "konut"
+    ],
+    "finish": [
+      "vernikli",
+      "bal rengi"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

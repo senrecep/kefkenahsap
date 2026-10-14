@@ -1,0 +1,36 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 18.00.05.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Taş Duvarlı Yapıya Ahşap Bahçe Kapısı",
+    "en": "Wooden Garden Door on a Stone Enclosure"
+  },
+  "alt": {
+    "tr": "Çimenlik bahçede taş duvarlı küçük bir yapının önünde çapraz dikmeli, koyu kahverengi ahşap kapı",
+    "en": "Dark brown wooden door with diagonal braces set into a small stone-walled structure on a lawn"
+  },
+  "caption": {
+    "tr": "Bahçedeki taş duvarlı yapıya yaptığımız, çapraz çıtalı ve siyah menteşeli koyu tonlu ahşap kapı.",
+    "en": "A dark-stained wooden door with diagonal braces and black hinges, made for a stone-walled structure in a garden."
+  },
+  "seoFilename": "tas-duvarli-yapi-ahsap-bahce-kapisi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "taş duvar"
+    ],
+    "finish": [
+      "koyu ahşap koruyucu",
+      "siyah menteşe"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

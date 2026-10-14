@@ -1,0 +1,38 @@
+{
+  "file": "846f05bc-35fe-4fa4-a2a7-b5fc457cf3f6.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Eski Konsol Beyaza Boyandı: Öncesi ve Sonrası",
+    "en": "Old Sideboard Repainted White: Before and After"
+  },
+  "alt": {
+    "tr": "Koyu cilalı oymalı eski konsol ile aynı konsolun gümüş yaldızlı süslemeleriyle beyaza boyanmış hali",
+    "en": "Dark varnished carved sideboard beside the same piece repainted white with silver-leafed ornaments"
+  },
+  "caption": {
+    "tr": "Koyu cilası eskimiş, dört kapaklı ve çekmeceli konsolu beyaza boyadık. Kapaklardaki oyma süslemeler gümüş rengiyle öne çıkarıldı.",
+    "en": "We repainted this worn dark-varnished sideboard with four doors and drawers in white. The carved ornaments on the doors are picked out in silver."
+  },
+  "seoFilename": "eski-konsol-beyaz-boya-oncesi-sonrasi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "iç mekan",
+      "konsol",
+      "oturma odası"
+    ],
+    "finish": [
+      "beyaz boya",
+      "gümüş yaldız",
+      "cila yenileme"
+    ],
+    "stage": [
+      "before",
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

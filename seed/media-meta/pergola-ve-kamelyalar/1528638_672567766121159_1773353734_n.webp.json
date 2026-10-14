@@ -1,0 +1,36 @@
+{
+  "file": "1528638_672567766121159_1773353734_n.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Kapı Girişinde Ahşap Pergola ve Korkuluklu Deck",
+    "en": "Wooden Pergola and Railed Deck at the Door Entrance"
+  },
+  "alt": {
+    "tr": "Tuğla cepheli evin kapı girişinde ahşap pergola, önünde basamaklı ve korkuluklu ahşap deck",
+    "en": "Wooden pergola over the door of a brick house, with a stepped wooden deck and railings in front"
+  },
+  "caption": {
+    "tr": "Tuğla cepheli bir evin kapı girişine yapılmış küçük ahşap pergola. Önündeki deck basamaklı, iki yanı ahşap korkuluklu.",
+    "en": "A small wooden pergola over the entrance door of a brick house. The deck in front has steps and wooden railings on both sides."
+  },
+  "seoFilename": "kapi-girisi-ahsap-pergola-korkuluklu-deck",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "ev girişi",
+      "tuğla cephe",
+      "deck"
+    ],
+    "finish": [
+      "doğal ahşap rengi"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

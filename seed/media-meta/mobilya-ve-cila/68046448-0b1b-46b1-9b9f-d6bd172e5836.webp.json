@@ -1,0 +1,33 @@
+{
+  "file": "68046448-0b1b-46b1-9b9f-d6bd172e5836.webp",
+  "category": "mobilya-ve-cila",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ofis Girişi ve Cam Bölme Kapı Uygulaması",
+    "en": "Office Entrance and Glass Partition Door"
+  },
+  "alt": {
+    "tr": "Siyah profilli cam kapı ve aydınlatmalı tabela bulunan modern ofis giriş koridoru.",
+    "en": "Modern office entrance hallway with a black-framed glass door and illuminated sign."
+  },
+  "caption": {
+    "tr": "Ofis içi cam kapı bölmesi ve karşılama koridoru düzenlemesi. Kurumsal ve ferah bir çalışma alanı için tamamlanan iç mekân uygulaması.",
+    "en": "Office glass partition door and reception corridor layout. Interior fit-out completed for a clean, corporate entrance area."
+  },
+  "seoFilename": "ofis-girisi-cam-kapi-bolme",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "ofis",
+      "iç mekan",
+      "koridor"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.85
+}

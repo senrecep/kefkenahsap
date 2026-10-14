@@ -1,0 +1,36 @@
+{
+  "file": "1510396_672567929454476_1912714185_n.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ahşap Pergola Direk Tabanı ve Kafes Detayı",
+    "en": "Wooden Pergola Post Base and Trellis Detail"
+  },
+  "alt": {
+    "tr": "Zemine metal pabuçla sabitlenmiş ahşap dikme ayağı ve ahşap kafes panel detayı.",
+    "en": "Wooden post base mounted to concrete with a metal anchor beside a wooden trellis panel."
+  },
+  "caption": {
+    "tr": "Pergola ve kamelyalarda ahşabın zemin neminden korunması için uygulanan metal pabuçlu montaj ve kafes korkuluk detayı.",
+    "en": "Detail of a metal base anchor protecting the pergola post from ground moisture, connected to a wooden trellis panel."
+  },
+  "seoFilename": "ahsap-pergola-dikme-taban-detayi",
+  "tags": {
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "emprenye"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

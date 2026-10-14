@@ -1,0 +1,36 @@
+{
+  "file": "img1.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Süs Havuzu Üzerinde Ahşap Köprü",
+    "en": "Wooden Footbridge Over a Decorative Pool"
+  },
+  "alt": {
+    "tr": "Sığ bir süs havuzunun üzerinde, korkuluklu ve çapraz payandalı açık renk ahşap yaya köprüsü; yanında ahşap deck zemin var.",
+    "en": "Light wooden footbridge with railings and diagonal braces over a shallow decorative pool, next to a timber deck."
+  },
+  "caption": {
+    "tr": "Havuzun iki yakasını birleştiren, dikmeli ve çıtalı korkuluğa sahip ahşap yaya köprüsü. Çevresinde ahşap deck zemin döşendi.",
+    "en": "A wooden pedestrian bridge linking both sides of the pool, with post-and-slat railings. A timber deck surrounds it."
+  },
+  "seoFilename": "havuz-ustu-ahsap-kopru-korkuluk",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "havuz",
+      "bahçe",
+      "peyzaj",
+      "açık alan"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.8
+}

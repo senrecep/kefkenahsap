@@ -1,0 +1,37 @@
+{
+  "file": "52-1.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Taş Duvar Üstü Ahşap Kütük Korkuluk",
+    "en": "Log Railing Mounted on Stone Wall"
+  },
+  "alt": {
+    "tr": "Taş istinat duvarı üzerine yerleştirilmiş yuvarlak ahşap direk ve kirişlerden oluşan korkuluk.",
+    "en": "Round timber post and rail fence installed along a stone retaining wall overlooking a road."
+  },
+  "caption": {
+    "tr": "Yol kenarındaki taş istinat duvarı üzerine uyguladığımız emprenyeli yuvarlak kütük korkuluk çalışması.",
+    "en": "Round timber post and rail fence installed along a stone retaining wall bordering the roadway."
+  },
+  "seoFilename": "tas-duvar-ustu-ahsap-kutuk-korkuluk",
+  "tags": {
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "outdoor",
+      "park",
+      "bahçe"
+    ],
+    "finish": [
+      "emprenye"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

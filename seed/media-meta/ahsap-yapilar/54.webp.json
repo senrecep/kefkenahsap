@@ -1,0 +1,36 @@
+{
+  "file": "54.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Taş Temel Üzerinde Ahşap Karkas Yapı İskeleti",
+    "en": "Timber Frame Structure on a Stone Foundation"
+  },
+  "alt": {
+    "tr": "Taş duvarlı beton zemin üzerinde kurulmuş, çatı kirişleri yerleştirilmiş ahşap karkas yapı; içeride merdivende çalışan usta",
+    "en": "Timber frame building with roof rafters on a stone-walled concrete base, with a worker on a ladder inside"
+  },
+  "caption": {
+    "tr": "Taş temelin üzerine dikilen ahşap karkas ve çatı kirişleri. Montaj sürerken iskeletin içinde çalışan usta ile el aletleri görülüyor.",
+    "en": "Wall studs and roof rafters raised on a stone foundation. A worker and hand tools can be seen inside the frame during assembly."
+  },
+  "seoFilename": "tas-temel-ustunde-ahsap-karkas-yapi-iskeleti",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "taş temel",
+      "arazi",
+      "şantiye"
+    ],
+    "finish": [
+      "emprenyeli"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}
