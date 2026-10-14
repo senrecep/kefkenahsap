@@ -2,8 +2,9 @@ import { unstable_cache } from 'next/cache'
 
 import { getPathname } from '@/i18n/navigation'
 import type { Locale } from '@/i18n/routing'
+import { categoryRank, diversify } from '@/lib/gallery/curate'
 import type { GalleryItem } from '@/lib/gallery/item'
-import { encodeCursor, galleryWhere, type GalleryQuery } from '@/lib/gallery/query'
+import { encodeCursor, galleryWhere, PAGE_SIZE, START_CURSOR_ID, type GalleryQuery } from '@/lib/gallery/query'
 import type { Category, Media, Project } from '@/payload-types'
 
 import { getPayload, TAGS } from './payload'
@@ -25,6 +26,11 @@ const select = {
   sizes: true,
   lqip: true,
   dominantColor: true,
+  featured: true,
+  // The storage plugin builds file URLs from these; without them a prefixed bucket (dev/) yields broken URLs.
+  filename: true,
+  prefix: true,
+  _objectKey: true,
 } as const
 const populate = { categories: { name: true, slug: true }, projects: { title: true, slug: true } } as const
 
@@ -58,10 +64,45 @@ export function toGalleryItem(doc: Media, locale: Locale): GalleryItem {
   }
 }
 
+/** Featured first, then a round-robin across categories (outdoor first), max 2 per category in the first 12. */
+export async function curate(docs: Media[]): Promise<Media[]> {
+  // Ranked by the Turkish slugs, the same in every locale.
+  const cats = await getNavCategories('tr')
+  const slugById = new Map(cats.map((c) => [String(c.id), c.slug ?? '']))
+  const rank = categoryRank(cats.map((c) => c.slug ?? ''))
+  const catId = (d: Media) => String(typeof d.category === 'object' && d.category ? d.category.id : (d.category ?? ''))
+  return diversify(docs, { group: catId, rank: (id) => rank(slugById.get(id) ?? ''), featured: (d) => Boolean(d.featured) })
+}
+
 export type GalleryPage = { items: GalleryItem[]; total: number; nextCursor: string | null }
 
-/** Newest first, keyset-paginated by id (stable when new photos are added). */
-export function getGalleryPage(locale: Locale, f: { categoryId?: number; tagId?: number; cursor?: number; limit: number }) {
+// Old watermarked photos vary a lot; the curated pool uses featured or large ones only.
+const LARGE = 1280
+
+/**
+ * One curated selection (ids, one page) shared by the homepage gallery and the first page of the unfiltered /galeri:
+ * featured first, then large photos mixed across categories, outdoor first.
+ */
+export const getCuratedSelection = (locale: Locale) =>
+  unstable_cache(
+    async () => {
+      const res = await (await getPayload()).find({
+        collection: 'media',
+        locale,
+        ...mediaQuery,
+        where: { and: [...galleryWhere({}).and, { or: [{ featured: { equals: true } }, { width: { greater_than_equal: LARGE } }] }] },
+        sort: ['-featured', '-id'],
+        // shortcut: the mix draws from the newest 200 candidates; raise if large photos outgrow it.
+        limit: 200,
+      })
+      return (await curate(res.docs as Media[])).slice(0, PAGE_SIZE).map((d) => toGalleryItem(d, locale))
+    },
+    ['curatedSelection', locale],
+    { tags, revalidate: HOUR },
+  )()
+
+/** Newest first, keyset-paginated by id (stable when new photos are added); `exclude` skips the curated first page. */
+export function getGalleryPage(locale: Locale, f: { categoryId?: number; tagId?: number; cursor?: number; exclude?: number[]; limit: number }) {
   const load = async (): Promise<GalleryPage> => {
     const res = await (await getPayload()).find({
       collection: 'media',
@@ -81,6 +122,22 @@ export function getGalleryPage(locale: Locale, f: { categoryId?: number; tagId?:
   // Cursor pages are visitor-chosen keys: never cache them in-process (the feed's Cache-Control covers the edge).
   if (f.cursor) return load()
   return unstable_cache(load, ['galleryPage', locale, JSON.stringify(f)], { tags, revalidate: HOUR })()
+}
+
+/**
+ * Unfiltered gallery, `pages` pages deep: page 1 is the curated selection, then the rest newest-first.
+ * The feed continues from START_CURSOR_ID with the same exclusion, so nothing repeats or goes missing.
+ */
+export async function getUnfilteredGallery(locale: Locale, pages: number): Promise<GalleryPage> {
+  const curated = await getCuratedSelection(locale)
+  const exclude = curated.map((i) => i.id)
+  // Payload treats limit 0 as "no limit": on page 1 fetch one row only for the count.
+  const rest = await getGalleryPage(locale, { exclude, limit: Math.max(1, PAGE_SIZE * (pages - 1)) })
+  return {
+    items: [...curated, ...(pages > 1 ? rest.items : [])],
+    total: curated.length + rest.total,
+    nextCursor: pages > 1 ? rest.nextCursor : rest.total > 0 ? encodeCursor(START_CURSOR_ID) : null,
+  }
 }
 
 export const getGalleryTags = (locale: Locale) =>

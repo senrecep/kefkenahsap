@@ -1,6 +1,7 @@
 import { unstable_cache } from 'next/cache'
 
 import type { Locale } from '@/i18n/routing'
+import { pickCover } from '@/lib/gallery/curate'
 import type { Media } from '@/payload-types'
 
 import { getPayload, TAGS } from './payload'
@@ -41,7 +42,7 @@ export const getCategory = (locale: Locale, slug: string, limit: number) =>
     { tags: [TAGS.categories, TAGS.media], revalidate: HOUR },
   )()
 
-/** Service tiles: every published category with its cover, else its first approved photo. */
+/** Service tiles (home + /hizmetlerimiz): every published category with its cover, else its first large landscape photo in the saved order. */
 export const getServiceTiles = (locale: Locale) =>
   unstable_cache(
     async () => {
@@ -52,15 +53,15 @@ export const getServiceTiles = (locale: Locale) =>
         limit: 50,
         depth: 1,
         where: published,
-        joins: { media: { limit: 1, where: approved } },
+        // Large photos only (landscape is not expressible as a filter; pickCover checks it).
+        joins: { media: { limit: 100, where: { and: [approved, { width: { greater_than_equal: 1280 } }] } } },
         select: { name: true, slug: true, shortDesc: true, cover: true, media: true },
       })
       return res.docs
         .filter((c) => c.slug)
         .map((c) => {
-          const cover = typeof c.cover === 'object' && c.cover?.status === 'approved' ? c.cover : undefined
-          const first = c.media?.docs?.[0]
-          return { id: c.id, name: c.name, slug: c.slug!, shortDesc: c.shortDesc, image: cover ?? (typeof first === 'object' ? first : undefined) }
+          const photos = (c.media?.docs ?? []).filter((m): m is Media => typeof m === 'object')
+          return { id: c.id, name: c.name, slug: c.slug!, shortDesc: c.shortDesc, image: pickCover(c.cover, photos) }
         })
     },
     ['serviceTiles', locale],

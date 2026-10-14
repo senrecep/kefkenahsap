@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test'
 
-import { PAGE_SIZE } from '../../src/lib/gallery/query'
+import { encodeCursor, PAGE_SIZE, START_CURSOR_ID } from '../../src/lib/gallery/query'
 
 // Seed-agnostic: asserts structure and ">=" counts, not exact numbers.
 test.describe('gallery', () => {
@@ -60,5 +60,27 @@ test.describe('gallery', () => {
     await expect(page.getByRole('heading', { level: 1, name: 'Gallery' })).toBeVisible()
     await expect(page.locator('[data-gallery-item]:visible')).toHaveCount(PAGE_SIZE * 2)
     await expect(page.getByRole('link', { name: 'Show more' })).toHaveAttribute('href', /sayfa=3/)
+  })
+
+  test('unfiltered: curated first page, then the feed covers the rest with no repeats', async ({ page, request }) => {
+    await page.goto('/tr/galeri')
+    const first = await page.locator('[data-gallery-item]:visible').evaluateAll((a) => a.map((x) => x.getAttribute('href')!))
+    expect(first).toHaveLength(PAGE_SIZE)
+    const seen = new Set(first)
+    let cursor: string | null = encodeCursor(START_CURSOR_ID)
+    for (let guard = 0; cursor && guard < 60; guard++) {
+      const body = (await (await request.get(`/tr/galeri/feed?cursor=${cursor}`)).json()) as { items: { href: string }[]; nextCursor: string | null }
+      for (const i of body.items) {
+        expect(seen.has(i.href), i.href).toBe(false)
+        seen.add(i.href)
+      }
+      cursor = body.nextCursor
+    }
+    expect(cursor).toBeNull()
+    // The no-JS pages agree: they include the curated page, with no duplicates.
+    await page.goto('/tr/galeri?sayfa=3')
+    const paged = await page.locator('[data-gallery-item]:visible').evaluateAll((a) => a.map((x) => x.getAttribute('href')!))
+    for (const h of first) expect(paged).toContain(h)
+    expect(new Set(paged).size).toBe(paged.length)
   })
 })

@@ -59,6 +59,14 @@ test.describe('Category page', () => {
     await expect(page.locator('a[data-umami-event="whatsapp_click"][data-umami-event-place="category_cta"]')).toHaveAttribute('href', /^https:\/\/wa\.me\//)
   })
 
+  test('mobile action bar WhatsApp carries the category, like the page button', async ({ browser }) => {
+    const page = await (await browser.newContext({ viewport: { width: 390, height: 844 } })).newPage()
+    await page.goto(`/tr/${full.tr}`)
+    const bar = page.locator('a[data-umami-event="whatsapp_click"][data-umami-event-place="mobile-bar"]')
+    await expect.poll(async () => decodeURIComponent((await bar.getAttribute('href')) ?? '')).toContain(full.name)
+    await expect(bar).toHaveAttribute('href', (await page.locator('a[data-umami-event-place="category_intro"]').getAttribute('href'))!)
+  })
+
   test('shows intro, body, price guide with date, FAQ and related projects', async ({ page }) => {
     await page.goto(`/tr/${full.tr}`)
     await expect(page.getByText('Kısa giriş metni.')).toBeVisible()

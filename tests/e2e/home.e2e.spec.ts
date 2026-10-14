@@ -45,4 +45,70 @@ test.describe('homepage', () => {
     await expect(page.getByRole('heading', { level: 2, name: en.Home.servicesTitle })).toBeVisible()
     await expect(page.locator('link[rel="alternate"][hreflang="tr"]')).toHaveCount(1)
   })
+
+  test('gallery category chips link into the filtered gallery', async ({ page }) => {
+    await page.goto('/tr')
+    const chips = page.getByRole('group', { name: 'Kategoriler' }).getByRole('link')
+    // Seed-agnostic: one chip per published category (CI has a single fixture category).
+    expect(await chips.count()).toBeGreaterThanOrEqual(1)
+    for (const href of await chips.evaluateAll((a) => a.map((x) => x.getAttribute('href')))) expect(href).toMatch(/^\/tr\/galeri\?kategori=[a-z0-9-]+$/)
+    await expect(page.getByRole('group', { name: 'Kategoriler' }).locator('[aria-current]')).toHaveCount(0)
+  })
+})
+
+test.describe('site navigation', () => {
+  test('"Projeler" appears in the nav exactly when a project is published', async ({ page }) => {
+    await page.goto('/tr/projeler')
+    const published = (await page.locator('main ul[aria-labelledby="list-h"] > li').count()) > 0
+    await expect(page.getByRole('navigation', { name: trCommon.Nav.menu }).getByRole('link', { name: trCommon.Nav.projects, exact: true })).toHaveCount(published ? 1 : 0)
+  })
+
+  test('closing CTA band sits directly on the footer', async ({ page }) => {
+    await page.goto('/tr/referanslar')
+    await expect(page.locator('main > [data-end-band]')).toBeVisible()
+    expect(await page.locator('footer').evaluate((el) => getComputedStyle(el).marginTop)).toBe('0px')
+    for (const path of ['/tr/galeri', '/tr/hizmetlerimiz']) {
+      await page.goto(path)
+      await expect(page.locator('main > [data-end-band]')).toBeVisible()
+    }
+    await page.goto('/tr/hakkimizda')
+    expect(await page.locator('footer').evaluate((el) => getComputedStyle(el).marginTop)).not.toBe('0px')
+  })
+
+  test('mobile menu: services collapsed, actions pinned, focus trapped, Esc returns focus', async ({ browser }) => {
+    const page = await (await browser.newContext({ viewport: { width: 390, height: 844 } })).newPage()
+    await page.goto('/tr')
+    const panel = page.locator('#mobile-menu')
+    expect(await panel.evaluate((el) => getComputedStyle(el).display)).toBe('none')
+    const toggle = page.locator('button[aria-controls="mobile-menu"]')
+    await toggle.click()
+    await expect(panel).toBeVisible()
+
+    const services = panel.locator('summary', { hasText: trCommon.Nav.services })
+    await expect(services).toBeFocused()
+    // Seed-agnostic: the disclosure always holds "Tüm hizmetler" plus one link per category.
+    const allServices = panel.getByRole('link', { name: trCommon.Nav.allServices })
+    await expect(allServices).toBeHidden()
+    await expect(panel.getByRole('link', { name: trCommon.Nav.contact, exact: true })).toBeInViewport()
+    const quote = panel.getByRole('link', { name: trCommon.Cta.quote })
+    await expect(quote).toBeInViewport()
+    // WhatsApp renders only when a mobile number is configured (an empty CI DB has none).
+    const wa = panel.locator('a[data-umami-event-place="mobile-menu"]')
+    if (await wa.count()) await expect(wa).toBeInViewport()
+
+    await services.click()
+    await expect(allServices).toBeVisible()
+    await expect(quote).toBeInViewport() // still pinned with the list expanded
+
+    // Shift+Tab from the toggle wraps to the panel's last control; Tab from there wraps back to the toggle.
+    await toggle.focus()
+    await page.keyboard.press('Shift+Tab')
+    await expect(quote).toBeFocused()
+    await page.keyboard.press('Tab')
+    await expect(toggle).toBeFocused()
+
+    await page.keyboard.press('Escape')
+    await expect(panel).toBeHidden()
+    await expect(toggle).toBeFocused()
+  })
 })

@@ -2,7 +2,9 @@ import { ArrowRight, MapPin, MessageCircle, Phone, Plus } from 'lucide-react'
 import { getTranslations } from 'next-intl/server'
 import type { ReactNode } from 'react'
 
+import { GalleryFilters } from '@/components/gallery/GalleryFilters'
 import { GalleryGrid } from '@/components/gallery/GalleryGrid'
+import { buttonClass } from '@/components/ui/button'
 import { JsonLd } from '@/components/seo/JsonLd'
 import { Container } from '@/components/ui/Container'
 import { Picture } from '@/components/ui/Picture'
@@ -10,7 +12,8 @@ import { WhatsAppButton } from '@/components/ui/WhatsAppButton'
 import { Link } from '@/i18n/navigation'
 import type { Locale } from '@/i18n/routing'
 import { telLink } from '@/lib/contact'
-import { getCategoryPhotos, getFeaturedImages, getFeaturedProjects, getReferences } from '@/lib/data/home'
+import { getServiceTiles } from '@/lib/data/categories'
+import { getFeaturedImages, getFeaturedProjects, getReferences } from '@/lib/data/home'
 import { getNavCategories, getSiteSettings } from '@/lib/data/site'
 import { faqJsonLd } from '@/lib/seo/jsonld'
 import type { Media } from '@/payload-types'
@@ -32,7 +35,11 @@ function Section({ title, children, aside, className = '' }: { title: string; ch
 const more = 'inline-flex min-h-11 items-center gap-2 font-[family-name:var(--font-display)] font-semibold text-action hover:text-action-deep'
 
 export async function FeaturedGallery({ locale, heading, limit }: Heading & { locale: Locale; limit?: number | null }) {
-  const [t, items] = await Promise.all([getTranslations('Home'), getFeaturedImages(locale, Math.min(Math.max(limit || 12, 1), 24))])
+  const [t, items, categories] = await Promise.all([
+    getTranslations('Home'),
+    getFeaturedImages(locale, Math.min(Math.max(limit || 12, 1), 24)),
+    getNavCategories(locale),
+  ])
   if (!items.length) return null
   return (
     <Section
@@ -44,42 +51,38 @@ export async function FeaturedGallery({ locale, heading, limit }: Heading & { lo
         </Link>
       }
     >
+      <GalleryFilters locale={locale} categories={categories} tags={[]} className="mb-8" />
       <GalleryGrid initial={items} total={items.length} />
     </Section>
   )
 }
 
 export async function Services({ locale, heading }: Heading & { locale: Locale }) {
-  const [t, categories] = await Promise.all([getTranslations('Home'), getNavCategories(locale)])
-  const listed = categories.filter((c) => c.slug)
+  const [t, listed] = await Promise.all([getTranslations('Home'), getServiceTiles(locale)])
   if (!listed.length) return null
-  const photos = await getCategoryPhotos(locale, listed.filter((c) => !c.cover || typeof c.cover !== 'object').map((c) => c.id))
   return (
     <Section title={heading || t('servicesTitle')}>
-      <ul className="grid gap-x-5 gap-y-9 sm:grid-cols-2 lg:grid-cols-3">
-        {listed.map((c) => {
-          const media = c.cover && typeof c.cover === 'object' ? (c.cover as Media) : photos[c.id]?.media
-          return (
-            <li key={c.id}>
-              <Link href={{ pathname: '/[category]', params: { category: c.slug! } }} className="group block">
-                {media ? (
-                  <Picture
-                    media={media}
-                    alt=""
-                    sizes="(min-width: 1280px) 400px, (min-width: 1024px) 31vw, (min-width: 640px) 48vw, 100vw"
-                    maxWidth={1280}
-                    className="!aspect-[4/3] rounded-[var(--radius-photo)]"
-                    imgClassName="transition-transform duration-500 ease-[var(--ease-out-expo)] group-hover:scale-[1.03]"
-                  />
-                ) : (
-                  <span className="block aspect-[4/3] rounded-[var(--radius-photo)] bg-mist" />
-                )}
-                <h3 className="mt-4 text-xl group-hover:text-action">{c.name}</h3>
-                {c.shortDesc && <p className="mt-1.5 line-clamp-2 text-ink-soft">{c.shortDesc}</p>}
-              </Link>
-            </li>
-          )
-        })}
+      <ul className="grid grid-cols-2 gap-x-4 gap-y-7 sm:gap-x-5 sm:gap-y-9 lg:grid-cols-3">
+        {listed.map((c) => (
+          <li key={c.id}>
+            <Link href={{ pathname: '/[category]', params: { category: c.slug } }} className="group block">
+              {c.image ? (
+                <Picture
+                  media={c.image}
+                  alt=""
+                  sizes="(min-width: 1280px) 400px, (min-width: 1024px) 31vw, 48vw"
+                  maxWidth={1280}
+                  className="!aspect-[4/3] rounded-[var(--radius-photo)]"
+                  imgClassName="transition-transform duration-500 ease-[var(--ease-out-expo)] group-hover:scale-[1.03]"
+                />
+              ) : (
+                <span className="block aspect-[4/3] rounded-[var(--radius-photo)] bg-mist" />
+              )}
+              <h3 className="mt-3 text-[1.05rem] group-hover:text-action sm:mt-4 sm:text-xl">{c.name}</h3>
+              {c.shortDesc && <p className="mt-1 line-clamp-2 text-[0.92rem] text-ink-soft sm:mt-1.5 sm:text-base">{c.shortDesc}</p>}
+            </Link>
+          </li>
+        ))}
       </ul>
     </Section>
   )
@@ -117,7 +120,7 @@ export async function Process({ heading, steps }: Heading & { steps?: { title: s
       <ol className="grid border-t border-line md:grid-cols-5 md:border-t-0">
         {list.map((s, i) => (
           <li key={s.title} className="grid grid-cols-[2.5rem_1fr] gap-x-3 border-b border-line py-5 md:block md:border-b-0 md:border-t md:py-0 md:pt-5 md:pe-6">
-            <span aria-hidden className="font-[family-name:var(--font-display)] text-sm font-semibold text-action tabular-nums">{String(i + 1).padStart(2, '0')}</span>
+            <span aria-hidden className="font-[family-name:var(--font-display)] text-sm font-semibold text-ink-soft tabular-nums">{String(i + 1).padStart(2, '0')}</span>
             <div>
               <h3 className="text-lg md:mt-3">{s.title}</h3>
               {s.text && <p className="mt-1.5 text-[0.98rem] text-ink-soft">{s.text}</p>}
@@ -154,7 +157,23 @@ export async function WoodTypes({ heading }: Heading) {
   return (
     <Section title={heading || t('woodTitle')}>
       <p className="-mt-4 mb-8 max-w-[65ch] text-ink-soft">{t('woodIntro')}</p>
-      <div className="-mx-4 overflow-x-auto px-4 md:mx-0 md:px-0">
+      {/* Below 640px each wood stacks as its own definition list; the table needs the width. */}
+      <ul className="border-t border-ink/25 sm:hidden">
+        {WOODS.map((w) => (
+          <li key={w} className="border-b border-line py-5">
+            <h3 className="text-lg">{t(`woods.${w}.name`)}</h3>
+            <dl className="mt-3 grid gap-2.5 text-[0.98rem]">
+              {COLS.map((c) => (
+                <div key={c}>
+                  <dt className="font-[family-name:var(--font-display)] text-sm font-semibold">{t(`woodCols.${c}`)}</dt>
+                  <dd className="text-ink-soft">{t(`woods.${w}.${c}`)}</dd>
+                </div>
+              ))}
+            </dl>
+          </li>
+        ))}
+      </ul>
+      <div className="-mx-4 hidden overflow-x-auto px-4 sm:block md:mx-0 md:px-0">
         <table className="w-full min-w-[44rem] border-collapse text-start text-[0.98rem]">
           <thead>
             <tr className="border-b border-ink/25">
@@ -202,7 +221,7 @@ export async function Faq({ heading, items }: Heading & { items?: { q: string; a
 }
 
 export async function Contact({ locale, heading }: Heading & { locale: Locale }) {
-  const [t, settings] = await Promise.all([getTranslations('Home'), getSiteSettings(locale)])
+  const [t, tCta, settings] = await Promise.all([getTranslations('Home'), getTranslations('Cta'), getSiteSettings(locale)])
   const tel = telLink(settings)
   const a = settings.address
   const address = [a?.street, [a?.postalCode, a?.district, a?.city].filter(Boolean).join(' ')].filter(Boolean)
@@ -212,7 +231,13 @@ export async function Contact({ locale, heading }: Heading & { locale: Locale })
       <div className="grid gap-10 lg:grid-cols-2">
         <div>
           <p className="max-w-[48ch] text-lg">{t('contactText')}</p>
-          <WhatsAppButton locale={locale} place="home-contact" context={{ kind: 'contact' }} className="mt-6" />
+          {/* The homepage's closing pair (same as CtaBand elsewhere), so the page does not end twice. */}
+          <div className="mt-6 flex flex-wrap gap-3">
+            <WhatsAppButton locale={locale} place="home-contact" context={{ kind: 'contact' }} />
+            <Link href="/iletisim" className={buttonClass.outline}>
+              {tCta('quote')}
+            </Link>
+          </div>
         </div>
         <dl className="border-t border-line">
           {tel && (
@@ -224,7 +249,7 @@ export async function Contact({ locale, heading }: Heading & { locale: Locale })
                   {settings.phones?.map((p) => (
                     <a key={p.number} href={telLink({ phones: [p] })?.href} data-umami-event="phone_click" data-umami-event-place="home-contact" className="block font-[family-name:var(--font-display)] font-semibold hover:text-action">
                       {p.number}
-                      {p.whatsapp && <MessageCircle aria-label="WhatsApp" size={16} strokeWidth={1.75} className="ms-2 inline align-[-2px] text-whatsapp" />}
+                      {p.whatsapp && <MessageCircle aria-label="WhatsApp" size={16} strokeWidth={1.75} className="ms-2 inline align-[-2px] text-action" />}
                     </a>
                   ))}
                 </dd>

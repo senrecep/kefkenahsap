@@ -7,7 +7,7 @@ import type { Where } from 'payload'
 
 import type { Media } from '@/payload-types'
 
-import { mediaQuery, toGalleryItem } from './gallery'
+import { getCuratedSelection, mediaQuery, toGalleryItem } from './gallery'
 import { getPayload, TAGS } from './payload'
 
 const HOUR = 3600
@@ -46,48 +46,8 @@ export const getHeroFallback = (locale: Locale) =>
     { tags: [TAGS.media, TAGS.categories], revalidate: HOUR },
   )()
 
-/** Homepage gallery: featured photos first, topped up with the newest large photos. */
-export const getFeaturedImages = (locale: Locale, limit: number) =>
-  unstable_cache(
-    async () => {
-      const res = await (await getPayload()).find({
-        collection: 'media',
-        locale,
-        ...mediaQuery,
-        where: { and: [...galleryWhere({}).and, { or: [{ featured: { equals: true } }, { width: { greater_than_equal: LARGE_LANDSCAPE } }] }] },
-        sort: ['-featured', '-id'],
-        limit,
-      })
-      return (res.docs as Media[]).map((d) => toGalleryItem(d, locale))
-    },
-    ['featuredImages', locale, String(limit)],
-    { tags: [TAGS.media, TAGS.categories], revalidate: HOUR },
-  )()
-
-/** Service tile photo per category: its cover, else its largest approved photo. */
-export const getCategoryPhotos = (locale: Locale, categoryIds: number[]) =>
-  unstable_cache(
-    async () => {
-      const payload = await getPayload()
-      const entries = await Promise.all(
-        categoryIds.map(async (id) => {
-          const res = await payload.find({
-            collection: 'media',
-            locale,
-            ...mediaQuery,
-            where: { and: [...galleryWhere({ categoryId: id }).and] },
-            sort: ['-width', 'id'],
-            limit: 1,
-          })
-          const doc = res.docs[0] as Media | undefined
-          return [id, doc ? toGalleryItem(doc, locale) : null] as const
-        }),
-      )
-      return Object.fromEntries(entries)
-    },
-    ['categoryPhotos', locale, categoryIds.join(',')],
-    { tags: [TAGS.media, TAGS.categories], revalidate: HOUR },
-  )()
+/** Homepage gallery: the head of the curated selection the unfiltered /galeri also opens with. */
+export const getFeaturedImages = async (locale: Locale, limit: number) => (await getCuratedSelection(locale)).slice(0, limit)
 
 export const getFeaturedProjects = (locale: Locale) =>
   unstable_cache(

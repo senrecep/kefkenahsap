@@ -1,6 +1,6 @@
 'use client'
 
-import { CheckCircle2, MessageCircle } from 'lucide-react'
+import { CheckCircle2, ImagePlus, MessageCircle } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { startTransition, useActionState, useEffect, useRef, useState, type FormEvent } from 'react'
 
@@ -47,7 +47,7 @@ async function prepare(file: File): Promise<File> {
 }
 
 const field =
-  'block w-full rounded-[var(--radius-control)] border border-ink/25 bg-white px-3.5 py-3 text-base text-ink placeholder:text-ink-soft/80 focus:border-action focus:outline-2 focus:outline-offset-1 focus:outline-action aria-[invalid=true]:border-error'
+  'block w-full rounded-[var(--radius-control)] border border-ink/25 bg-white px-3.5 py-3 text-base text-ink placeholder:text-ink-soft/80 focus:border-action aria-[invalid=true]:border-error'
 const labelCls = 'mb-1.5 block font-[family-name:var(--font-display)] text-sm font-semibold text-ink'
 
 export function ContactForm({
@@ -233,8 +233,13 @@ export function ContactForm({
           onChange={(e) => onPhotos(e.currentTarget)}
           aria-invalid={!!photoErr}
           aria-describedby={describe('photos', true)}
-          className="block w-full text-base text-ink-soft file:me-3 file:min-h-12 file:cursor-pointer file:rounded-[var(--radius-control)] file:border file:border-ink/20 file:bg-paper file:px-4 file:font-[family-name:var(--font-display)] file:text-sm file:font-semibold file:text-ink hover:file:bg-mist"
+          className="peer sr-only"
         />
+        {/* The native input stays focusable (visually hidden); this label is its visible button. */}
+        <label htmlFor="photos" className={`${buttonClass.outline} cursor-pointer peer-focus-visible:focus-ring`}>
+          <ImagePlus aria-hidden size={20} strokeWidth={1.75} />
+          {t('photosChoose')}
+        </label>
         <p id="photos-hint" className="mt-1.5 text-[0.95rem] text-ink-soft" aria-live="polite">
           {photoState.preparing ? t('photosPreparing') : photoState.count ? t('photosSelected', { count: photoState.count }) : t('photosHint')}
         </p>

@@ -25,6 +25,7 @@
     "message": "Your message",
     "messageHint": "Size, wood type, location — whatever you know.",
     "photos": "Photos",
+    "photosChoose": "Choose photos",
     "photosHint": "Up to 5 photos. They are resized on your device before upload.",
     "photosSelected": "{count, plural, one {# photo selected} other {# photos selected}}",
     "photosPreparing": "Preparing photos…",

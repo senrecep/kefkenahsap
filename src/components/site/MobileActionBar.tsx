@@ -6,7 +6,9 @@ import type { Locale } from '@/i18n/routing'
 import { telLink, waLink, type WaContext } from '@/lib/contact'
 import { getSiteSettings } from '@/lib/data/site'
 
-/** Small screens: WhatsApp · Ara · Teklif always one tap away (PLAN §6). */
+import { PageWhatsAppLink } from './PageWhatsAppLink'
+
+/** Small screens: WhatsApp · Ara · Teklif always one tap away (PLAN §6); WhatsApp follows the page's own message. */
 export async function MobileActionBar({ locale, wa }: { locale: Locale; wa?: WaContext }) {
   const [t, settings] = await Promise.all([getTranslations('Cta'), getSiteSettings(locale)])
   const whatsapp = waLink(settings, wa)
@@ -16,10 +18,10 @@ export async function MobileActionBar({ locale, wa }: { locale: Locale; wa?: WaC
     <div className="fixed inset-x-0 bottom-0 z-40 border-t border-line bg-paper pb-[env(safe-area-inset-bottom)] shadow-[0_-6px_20px_-12px_rgb(29_31_28/0.35)] lg:hidden">
       <div className="mx-auto flex max-w-xl">
         {whatsapp && (
-          <a href={whatsapp} target="_blank" rel="noopener" data-umami-event="whatsapp_click" data-umami-event-place="mobile-bar" className={`${cell} bg-whatsapp text-white`}>
+          <PageWhatsAppLink href={whatsapp} className={`${cell} bg-action text-white hover:bg-action-deep`}>
             <MessageCircle aria-hidden size={22} strokeWidth={1.75} />
             {t('whatsappShort')}
-          </a>
+          </PageWhatsAppLink>
         )}
         {tel && (
           <a href={tel.href} data-umami-event="phone_click" data-umami-event-place="mobile-bar" className={`${cell} text-ink`}>

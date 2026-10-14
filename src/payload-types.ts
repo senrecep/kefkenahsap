@@ -1356,6 +1356,10 @@ export interface Homepage {
         | {
             enabled?: boolean | null;
             image: number | Media;
+            /**
+             * Telefonda bu görsel gösterilir. Filigranın başlığın arkasında kalmadığı dikey bir fotoğraf seçin; boşsa ana görsel kullanılır.
+             */
+            mobileImage?: (number | null) | Media;
             heading?: string | null;
             subheading?: string | null;
             id?: string | null;
@@ -1607,6 +1611,7 @@ export interface HomepageSelect<T extends boolean = true> {
           | {
               enabled?: T;
               image?: T;
+              mobileImage?: T;
               heading?: T;
               subheading?: T;
               id?: T;

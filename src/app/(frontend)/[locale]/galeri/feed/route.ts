@@ -2,7 +2,7 @@ import { hasLocale } from 'next-intl'
 import { NextResponse, type NextRequest } from 'next/server'
 
 import { routing } from '@/i18n/routing'
-import { getGalleryPage, resolveGalleryFilter } from '@/lib/data/gallery'
+import { getCuratedSelection, getGalleryPage, resolveGalleryFilter } from '@/lib/data/gallery'
 import { PAGE_SIZE, parseGalleryQuery } from '@/lib/gallery/query'
 
 /** Infinite-scroll feed: `?cursor=&kategori=&etiket=` → next 24 gallery items (outside /api so the edge can cache it). */
@@ -16,7 +16,14 @@ export async function GET(req: NextRequest, { params }: { params: Promise<{ loca
   const f = await resolveGalleryFilter(locale, q)
   const page = f.unknown
     ? { items: [], nextCursor: null }
-    : await getGalleryPage(locale, { categoryId: f.category?.id, tagId: f.tag?.id, cursor: q.cursor, limit: PAGE_SIZE })
+    : await getGalleryPage(locale, {
+        categoryId: f.category?.id,
+        tagId: f.tag?.id,
+        cursor: q.cursor,
+        // Unfiltered: page 1 was the curated selection; skip it here.
+        exclude: f.category || f.tag ? undefined : (await getCuratedSelection(locale)).map((i) => i.id),
+        limit: PAGE_SIZE,
+      })
 
   return NextResponse.json(
     { items: page.items, nextCursor: page.nextCursor },

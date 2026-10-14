@@ -7,6 +7,8 @@ export const PAGE_SIZE = 24
 export const MAX_PAGES = 20
 /** Postgres `integer` primary keys. */
 const MAX_ID = 2_147_483_647
+/** Cursor for the feed's first page after the curated selection: every id is below it. */
+export const START_CURSOR_ID = MAX_ID
 
 export type GalleryQuery = { category?: string; tag?: string; page: number; cursor?: number }
 type Params = Record<string, string | string[] | undefined>
@@ -42,8 +44,11 @@ export function parseGalleryQuery(params: Params): Result<GalleryQuery> {
   })
 }
 
-/** Payload `where` for the public gallery, newest first (sort `-id`). Approval is also enforced here, independent of access control. */
-export function galleryWhere(f: { categoryId?: number; tagId?: number; cursor?: number }): Where & { and: Where[] } {
+/**
+ * Payload `where` for the public gallery, newest first (sort `-id`). Approval is also enforced here, independent of access control.
+ * `exclude`: ids already shown on the curated first page, so the feed never repeats them.
+ */
+export function galleryWhere(f: { categoryId?: number; tagId?: number; cursor?: number; exclude?: number[] }): Where & { and: Where[] } {
   return {
     and: [
       { status: { equals: 'approved' } },
@@ -52,6 +57,7 @@ export function galleryWhere(f: { categoryId?: number; tagId?: number; cursor?: 
       ...(f.categoryId ? [{ category: { equals: f.categoryId } }] : []),
       ...(f.tagId ? [{ tags: { in: [f.tagId] } }] : []),
       ...(f.cursor ? [{ id: { less_than: f.cursor } }] : []),
+      ...(f.exclude?.length ? [{ id: { not_in: f.exclude } }] : []),
     ],
   }
 }

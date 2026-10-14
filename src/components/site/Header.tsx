@@ -1,9 +1,11 @@
-import { Phone } from 'lucide-react'
+import { ChevronDown, MessageCircle, Phone } from 'lucide-react'
 import { getTranslations } from 'next-intl/server'
 
 import { Link } from '@/i18n/navigation'
 import type { Locale } from '@/i18n/routing'
-import { telLink } from '@/lib/contact'
+import { buttonClass } from '@/components/ui/button'
+import { telLink, waLink } from '@/lib/contact'
+import { getProjectCards } from '@/lib/data/projects'
 import { getNavCategories, getSiteSettings } from '@/lib/data/site'
 
 import { LanguageSwitcher } from './LanguageSwitcher'
@@ -14,21 +16,24 @@ const linkCls =
   'inline-flex min-h-11 items-center rounded-[var(--radius-control)] px-3 font-[family-name:var(--font-display)] text-[0.95rem] font-semibold text-ink hover:text-action'
 
 export async function Header({ locale }: { locale: Locale }) {
-  const [t, tCta, settings, allCategories] = await Promise.all([
+  const [t, tCta, settings, allCategories, projects] = await Promise.all([
     getTranslations('Nav'),
     getTranslations('Cta'),
     getSiteSettings(locale),
     getNavCategories(locale),
+    getProjectCards(locale),
   ])
   const categories = allCategories.filter((c) => c.slug)
   const tel = telLink(settings)
+  const wa = waLink(settings)
+  // "Projeler" stays hidden until a project is published (the route itself keeps working).
   const links = [
-    { href: '/projeler', label: t('projects') },
-    { href: '/galeri', label: t('gallery') },
-    { href: '/rehber', label: t('guides') },
-    { href: '/referanslar', label: t('references') },
-    { href: '/iletisim', label: t('contact') },
-  ] as const
+    ...(projects.length ? [{ href: '/projeler', label: t('projects') } as const] : []),
+    { href: '/galeri', label: t('gallery') } as const,
+    { href: '/rehber', label: t('guides') } as const,
+    { href: '/referanslar', label: t('references') } as const,
+    { href: '/iletisim', label: t('contact') } as const,
+  ]
 
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-paper [--header-h:4.5rem]">
@@ -71,17 +76,29 @@ export async function Header({ locale }: { locale: Locale }) {
           )}
           <LanguageSwitcher locale={locale} label={t('language')} className="hidden sm:flex" />
           <MobileMenu label={t('menu')} closeLabel={t('close')}>
-            <p className="mb-2 font-[family-name:var(--font-display)] text-sm font-semibold text-ink-soft">{t('services')}</p>
-            <ul className="mb-6 grid gap-1">
-              {categories.map((c) => (
-                <li key={c.id}>
-                  <Link href={{ pathname: '/[category]', params: { category: c.slug! } }} className="flex min-h-12 items-center rounded-md px-3 text-lg text-ink hover:bg-mist">
-                    {c.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-            <ul className="grid gap-1 border-t border-line pt-4">
+            <ul className="grid gap-1">
+              <li>
+                <details className="group">
+                  <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between rounded-md px-3 font-[family-name:var(--font-display)] text-lg font-semibold text-ink hover:bg-mist [&::-webkit-details-marker]:hidden">
+                    {t('services')}
+                    <ChevronDown aria-hidden size={22} strokeWidth={1.75} className="text-ink-soft transition-transform group-open:rotate-180" />
+                  </summary>
+                  <ul className="mb-2 grid gap-0.5 ps-3">
+                    <li>
+                      <Link href="/hizmetlerimiz" className="flex min-h-11 items-center rounded-md px-3 text-[1.05rem] font-semibold text-ink hover:bg-mist">
+                        {t('allServices')}
+                      </Link>
+                    </li>
+                    {categories.map((c) => (
+                      <li key={c.id}>
+                        <Link href={{ pathname: '/[category]', params: { category: c.slug! } }} className="flex min-h-11 items-center rounded-md px-3 text-[1.05rem] text-ink hover:bg-mist">
+                          {c.name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </details>
+              </li>
               {links.map((l) => (
                 <li key={l.href}>
                   <Link href={l.href} className="flex min-h-12 items-center rounded-md px-3 font-[family-name:var(--font-display)] text-lg font-semibold text-ink hover:bg-mist">
@@ -91,6 +108,18 @@ export async function Header({ locale }: { locale: Locale }) {
               ))}
             </ul>
             <LanguageSwitcher locale={locale} label={t('language')} className="mt-6" />
+            {/* Pinned to the panel's bottom edge: the two actions stay one tap away however long the list gets. */}
+            <div className="sticky bottom-0 -mx-4 mt-auto flex gap-3 border-t border-line bg-paper px-4 pt-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))]">
+              {wa && (
+                <a href={wa} target="_blank" rel="noopener" data-umami-event="whatsapp_click" data-umami-event-place="mobile-menu" className={`${buttonClass.whatsapp} flex-1`}>
+                  <MessageCircle aria-hidden size={20} strokeWidth={1.75} />
+                  {tCta('whatsappShort')}
+                </a>
+              )}
+              <Link href="/iletisim" className={`${buttonClass.outline} flex-1`}>
+                {tCta('quote')}
+              </Link>
+            </div>
           </MobileMenu>
         </div>
       </div>

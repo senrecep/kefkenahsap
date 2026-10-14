@@ -13,6 +13,13 @@ const blocks: Block[] = [
     fields: [
       enabled,
       { name: 'image', type: 'upload', relationTo: 'media', required: true, label: 'Görsel (gerçek proje)' },
+      {
+        name: 'mobileImage',
+        type: 'upload',
+        relationTo: 'media',
+        label: 'Telefon görseli (isteğe bağlı)',
+        admin: { description: 'Telefonda bu görsel gösterilir. Filigranın başlığın arkasında kalmadığı dikey bir fotoğraf seçin; boşsa ana görsel kullanılır.' },
+      },
       heading,
       { name: 'subheading', type: 'textarea', localized: true },
     ],

@@ -20,7 +20,7 @@ export async function SearchBox({ locale, q = '', autoFocus = false }: { locale:
         autoFocus={autoFocus}
         minLength={2}
         maxLength={100}
-        className="min-h-12 min-w-0 flex-1 rounded-[var(--radius-control)] border border-ink/25 bg-white px-3.5 text-base text-ink placeholder:text-ink-soft/80 focus:border-action focus:outline-2 focus:outline-offset-1 focus:outline-action"
+        className="min-h-12 min-w-0 flex-1 rounded-[var(--radius-control)] border border-ink/25 bg-white px-3.5 text-base text-ink placeholder:text-ink-soft/80 focus:border-action"
       />
       <button type="submit" className={buttonClass.primary}>
         <Search aria-hidden size={18} strokeWidth={1.75} />
