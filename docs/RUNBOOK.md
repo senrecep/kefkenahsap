@@ -52,12 +52,19 @@ ssh senrecep "docker rm -f kefken-gh-runner-$N; mkdir -p /var/lib/kefken-runner-
 
 ### GlitchTip (errors)
 
-- Dev: https://glitchtip-dev.kefkenahsap.com. Compose services `glitchtip-web`/`-worker`/`-migrate` + `kefken-valkey`, enabled by `COMPOSE_PROFILES=observability`; DB `glitchtip` on `kefken-postgres`. Dokploy domain → `glitchtip-web:8000`, Let's Encrypt; Cloudflare A `glitchtip-dev` proxied. One subdomain level on purpose: Universal SSL does not cover `*.development.kefkenahsap.com`.
+- Dev: https://glitchtip-dev.kefkenahsap.com. Compose services `glitchtip-web`/`-worker`/`-migrate` + `kefken-valkey`, enabled by `COMPOSE_PROFILES=observability`; DB `glitchtip` on `kefken-postgres`, owned by its own non-superuser role `glitchtip` (created by `db-init`), not `kefken`. Dokploy domain → `glitchtip-web:8000`, Let's Encrypt; Cloudflare A `glitchtip-dev` proxied. One subdomain level on purpose: Universal SSL does not cover `*.development.kefkenahsap.com`.
 - Login: superuser `recepsen@taptoweb.com`, password in the owner's local `glitchtip-dev-access.txt`. Registration is off; add users from the UI (org `kefkenahsap`) or `docker exec <project>-glitchtip-web-1 ./manage.py createsuperuser`.
-- Project `kefkenahsap-development`. Its DSN is `SENTRY_DSN` in the Dokploy env; `GLITCHTIP_SECRET_KEY` / `GLITCHTIP_DOMAIN` / `GLITCHTIP_FROM_EMAIL` live there too.
-- App side: `src/instrumentation.ts` (`onRequestError`) → `src/lib/observability/report.ts`, a small Sentry store-protocol client. Server only: no client SDK, no tracing, no replay. It sends the error type/message/stack, the path without its query, the method and the route; never headers, cookies, bodies or query strings. Errors that Payload catches itself (REST/GraphQL, hooks) are not reported.
-- End-to-end check (non-production only; `DEBUG_ERROR_TOKEN` is in the Dokploy env; dev also needs basic auth):
-  `curl -u "$SITE_BASIC_AUTH" -H "x-debug-token: $DEBUG_ERROR_TOKEN" https://development.kefkenahsap.com/api/debug-error` → 500, and a "Debug error (reporter check)" issue appears in GlitchTip. Without the header, or in production, the route is a 404.
+- Project `kefkenahsap-development`. Its DSN is `SENTRY_DSN` in the Dokploy env; `GLITCHTIP_SECRET_KEY` / `GLITCHTIP_DB_PASSWORD` / `GLITCHTIP_DOMAIN` / `GLITCHTIP_FROM_EMAIL` live there too.
+- Before enabling the `observability` profile in an environment:
+  - [ ] `GLITCHTIP_SECRET_KEY` set, ≥32 random chars (`openssl rand -base64 48`). GlitchTip itself starts with an empty key, so `glitchtip-migrate` refuses (exit 1) and web/worker never start without one.
+  - [ ] `GLITCHTIP_DB_PASSWORD` set, URL-safe (`openssl rand -hex 24`); `glitchtip-migrate` refuses an empty one.
+  - [ ] `GLITCHTIP_DOMAIN` = the public `https://` URL (the DSN host comes from it).
+  - Recommended: put the GlitchTip host behind Cloudflare Access (Zero Trust, email OTP for the owner) with a bypass for `/api/*/store/` and `/api/*/envelope/`, so only ingestion is public.
+- An existing `glitchtip` DB owned by `kefken` (dev before 2026-10-14) is not migrated by `db-init`: stop glitchtip web/worker, `DROP DATABASE glitchtip WITH (FORCE)`, redeploy, then recreate the superuser, org and project and update `SENTRY_DSN`.
+- App side: `src/instrumentation.ts` (`onRequestError`) → `src/lib/observability/report.ts`, a small Sentry store-protocol client. Server only: no client SDK, no tracing, no replay. It sends the error type/message/stack, the path without its query, the method and the route; never headers, cookies, bodies or query strings. Message and stack are scrubbed (emails → `[email]`, runs of 9+ digits such as phones, TC kimlik, IBAN → `[num]`) and capped (500 chars / 8 KB). Fire-and-forget with a 2 s timeout and at most 5 reports per minute per error; reporting never fails or delays the request. Errors that Payload catches itself (REST/GraphQL, hooks) are not reported.
+- Residual PII risk: scrubbing is pattern-based, so names, addresses or free text that code puts into an error message still reach GlitchTip. Don't build error messages from form input; GlitchTip data stays on our server.
+- End-to-end check (only when `SITE_ENV=development`; `DEBUG_ERROR_TOKEN` is in the Dokploy env; dev also needs basic auth). **Leave `DEBUG_ERROR_TOKEN` unset in production**; the route is a 404 there anyway.
+  `curl -u "$SITE_BASIC_AUTH" -H "x-debug-token: $DEBUG_ERROR_TOKEN" https://development.kefkenahsap.com/api/debug-error` → 500, and a "Debug error (reporter check)" issue appears in GlitchTip. Without the header, or with any `SITE_ENV` other than `development`, the route is a 404.
 - Production (at launch): same profile, its own domain (e.g. `glitchtip.kefkenahsap.com`), project and DSN.
 
 ### Uptime Kuma
@@ -72,10 +79,10 @@ ssh senrecep "docker rm -f kefken-gh-runner-$N; mkdir -p /var/lib/kefken-runner-
 
 - Service `kefken-backup` (compose profile `backup`; dev runs `COMPOSE_PROFILES=observability,backup`) runs `pg_dump -Fc` of DB `kefken` daily at `BACKUP_AT` (HHMM, **UTC**; default `0100` = 04:00 Istanbul).
 - Location: host `/var/lib/kefken-backups/<SITE_ENV>/kefken-YYYYmmdd-HHMMSS.dump` (dir 700, files 600, root). Dumps hold personal data (leads): never put them in a public bucket.
-- Rotation: the newest **14** dumps are kept. A dump is written as `*.part` first, so a failed one never rotates out a good one.
+- Rotation: the newest **14** dumps are kept. A dump is written as `*.part` and must pass `pg_restore -l` before it is renamed, so a failed or corrupt dump never rotates out a good one (stale `*.part` files are removed at start).
 - Run one now: `docker exec <project>-kefken-backup-1 touch /backups/.run-now` (picked up within ~20 s). `docker logs <project>-kefken-backup-1` shows `wrote …` and the R2 result.
-- Off-site copy: after each dump, rclone copies it to `r2:$BACKUP_S3_BUCKET/<SITE_ENV>/` with the `S3_*` key. The bucket name must end in `-backups`; anything else is refused.
-- **Pending (owner):** the current R2 token can only write `kefkenahsap`, so the log says `R2 upload skipped: access denied to kefkenahsap-backups (token not widened yet); local copy kept`. Widen the token to `kefkenahsap-backups` (Object Read & Write) and the next run uploads, no redeploy needed. Add a 30-day lifecycle rule on that bucket (PLAN §3.2).
+- Off-site copy: after each dump, rclone (pinned `rclone/rclone:1.75.1` binary, baked into the service image at deploy) copies it to `r2:$BACKUP_S3_BUCKET/<SITE_ENV>/` with its **own** key `BACKUP_S3_ACCESS_KEY_ID` / `BACKUP_S3_SECRET_ACCESS_KEY`, never the app's `S3_*` media key. Only the exact bucket name `kefkenahsap-backups` is accepted; anything else is refused. Access denied is logged as `R2 upload skipped: access denied …; local copy kept`.
+- **Pending (owner):** create a dedicated R2 API token, **Object Read & Write scoped to `kefkenahsap-backups` only** (R2 has no write-only permission; no admin scope, no other buckets). Do **not** widen the app's media token. Put it in the Dokploy env as `BACKUP_S3_ACCESS_KEY_ID` / `BACKUP_S3_SECRET_ACCESS_KEY` and redeploy. Add a 30-day lifecycle rule (delete objects after 30 days) on that bucket (PLAN §3.2). Until then the log says `R2 upload skipped: BACKUP_S3_ACCESS_KEY_ID not set (dedicated backup token pending); local copy kept`.
 - Not covered: the `lead-photos` volume and the `umami` / `glitchtip` DBs.
 
 ### Restore

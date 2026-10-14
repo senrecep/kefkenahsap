@@ -26,7 +26,7 @@ services:
       RESEND_API_KEY: ${RESEND_API_KEY:-}
       LEADS_NOTIFY_EMAIL: ${LEADS_NOTIFY_EMAIL:-}
       SENTRY_DSN: ${SENTRY_DSN:-}
-      DEBUG_ERROR_TOKEN: ${DEBUG_ERROR_TOKEN:-}
+      DEBUG_ERROR_TOKEN: ${DEBUG_ERROR_TOKEN:-} # leave unset in production (the route also requires SITE_ENV=development)
       NEXT_PUBLIC_GA_ID: ${NEXT_PUBLIC_GA_ID:-}
       NEXT_PUBLIC_UMAMI_WEBSITE_ID: ${NEXT_PUBLIC_UMAMI_WEBSITE_ID:-}
       NEXT_PUBLIC_UMAMI_SRC: ${NEXT_PUBLIC_UMAMI_SRC:-}
@@ -58,19 +58,26 @@ services:
       interval: 5s
       retries: 20
 
-  # Creates the umami/glitchtip databases if missing (idempotent, runs on every deploy; no bind-mounted files).
+  # Creates the umami DB, and (when GLITCHTIP_DB_PASSWORD is set) a non-superuser role "glitchtip" owning only the
+  # glitchtip DB. Idempotent, runs on every deploy; no bind-mounted files.
   db-init:
     image: postgres:17-alpine
     restart: 'no'
     environment:
       PGPASSWORD: ${POSTGRES_PASSWORD:?}
+      GLITCHTIP_DB_PASSWORD: ${GLITCHTIP_DB_PASSWORD:-}
     entrypoint: ['/bin/sh', '-c']
     command:
       - |
-        for db in umami glitchtip; do
-          psql -h kefken-postgres -U kefken -d kefken -tc "SELECT 1 FROM pg_database WHERE datname='$$db'" | grep -q 1 \
-            || psql -h kefken-postgres -U kefken -d kefken -c "CREATE DATABASE $$db"
-        done
+        set -e
+        q() { psql -h kefken-postgres -U kefken -d kefken -v ON_ERROR_STOP=1 "$$@"; }
+        q -tc "SELECT 1 FROM pg_database WHERE datname='umami'" | grep -q 1 || q -c "CREATE DATABASE umami"
+        if [ -n "$$GLITCHTIP_DB_PASSWORD" ]; then
+          q -tc "SELECT 1 FROM pg_roles WHERE rolname='glitchtip'" | grep -q 1 || q -c "CREATE ROLE glitchtip LOGIN NOSUPERUSER NOCREATEDB NOCREATEROLE"
+          echo "ALTER ROLE glitchtip PASSWORD :'pw'" | q -v pw="$$GLITCHTIP_DB_PASSWORD"
+          q -tc "SELECT 1 FROM pg_database WHERE datname='glitchtip'" | grep -q 1 || q -c "CREATE DATABASE glitchtip OWNER glitchtip"
+          q -c "REVOKE CONNECT ON DATABASE kefken, umami FROM PUBLIC"
+        fi
     depends_on:
       kefken-postgres:
         condition: service_healthy
@@ -91,7 +98,8 @@ services:
     profiles: [observability]
     restart: unless-stopped
     environment: &glitchtip-env
-      DATABASE_URL: postgres://kefken:${POSTGRES_PASSWORD:?}@kefken-postgres:5432/glitchtip
+      # Own role, not the kefken superuser (db-init). GLITCHTIP_DB_PASSWORD: URL-safe characters only.
+      DATABASE_URL: postgres://glitchtip:${GLITCHTIP_DB_PASSWORD:-}@kefken-postgres:5432/glitchtip
       VALKEY_URL: redis://kefken-valkey:6379/0
       REDIS_URL: redis://kefken-valkey:6379/0 # older GlitchTip releases
       SECRET_KEY: ${GLITCHTIP_SECRET_KEY:-}
@@ -115,10 +123,17 @@ services:
       glitchtip-migrate:
         condition: service_completed_successfully
 
+  # GlitchTip starts even with an empty SECRET_KEY, so the migrate step refuses one shorter than 32 chars (web and worker
+  # wait for it to succeed).
   glitchtip-migrate:
     image: glitchtip/glitchtip:6
     profiles: [observability]
-    command: ./bin/run-migrate.sh
+    entrypoint: ['/bin/sh', '-c']
+    command:
+      - |
+        [ $${#SECRET_KEY} -ge 32 ] || { echo 'GLITCHTIP_SECRET_KEY must be set (>= 32 random chars)'; exit 1; }
+        case "$$DATABASE_URL" in *//glitchtip:@*) echo 'GLITCHTIP_DB_PASSWORD must be set'; exit 1 ;; esac
+        exec ./bin/run-migrate.sh
     environment: *glitchtip-env
     depends_on:
       db-init:
@@ -132,46 +147,54 @@ services:
   # Nightly pg_dump of the kefken DB to a host directory (keeps 14), then optionally a copy to a PRIVATE R2 bucket.
   # Runs at BACKUP_AT (HHMM, UTC). Run now: docker exec <container> touch /backups/.run-now (picked up within a minute).
   kefken-backup:
-    image: postgres:17-alpine
+    image: kefken-backup:17-rclone1.75.1
+    build:
+      # pg_dump + a pinned, static rclone binary (built on the server at deploy; no runtime package install).
+      dockerfile_inline: |
+        FROM rclone/rclone:1.75.1 AS rclone
+        FROM postgres:17-alpine
+        COPY --from=rclone /usr/local/bin/rclone /usr/local/bin/rclone
     profiles: [backup]
     restart: unless-stopped
     environment:
       PGPASSWORD: ${POSTGRES_PASSWORD:?}
       BACKUP_AT: ${BACKUP_AT:-0100}
       SITE_ENV: ${SITE_ENV:?}
-      # Must be a private "*-backups" bucket: dumps hold personal data (leads); the media buckets are public via the CDN.
+      # Only the private kefkenahsap-backups bucket is accepted: dumps hold personal data (leads); media buckets are public.
       BACKUP_S3_BUCKET: ${BACKUP_S3_BUCKET:-}
+      # A dedicated R2 token scoped to that bucket only, never the app's media key.
+      BACKUP_S3_ACCESS_KEY_ID: ${BACKUP_S3_ACCESS_KEY_ID:-}
       RCLONE_CONFIG_R2_TYPE: s3
       RCLONE_CONFIG_R2_PROVIDER: Cloudflare
       RCLONE_CONFIG_R2_ENDPOINT: ${S3_ENDPOINT:?}
-      RCLONE_CONFIG_R2_ACCESS_KEY_ID: ${S3_ACCESS_KEY_ID:?}
-      RCLONE_CONFIG_R2_SECRET_ACCESS_KEY: ${S3_SECRET_ACCESS_KEY:?}
+      RCLONE_CONFIG_R2_ACCESS_KEY_ID: ${BACKUP_S3_ACCESS_KEY_ID:-}
+      RCLONE_CONFIG_R2_SECRET_ACCESS_KEY: ${BACKUP_S3_SECRET_ACCESS_KEY:-}
     volumes:
       - /var/lib/kefken-backups/${SITE_ENV:?}:/backups
     entrypoint: ['/bin/sh', '-c']
     command:
       - |
-        umask 077; chmod 700 /backups
+        umask 077; chmod 700 /backups; rm -f /backups/*.part
         log() { echo "$$(date -u +%FT%TZ) backup: $$*"; }
         upload() {
           case "$$BACKUP_S3_BUCKET" in
             '') log "R2 upload skipped: BACKUP_S3_BUCKET not set"; return ;;
-            *-backups) ;;
-            *) log "R2 upload refused: '$$BACKUP_S3_BUCKET' is not a private *-backups bucket"; return ;;
+            kefkenahsap-backups) ;;
+            *) log "R2 upload refused: '$$BACKUP_S3_BUCKET' is not the private kefkenahsap-backups bucket"; return ;;
           esac
-          command -v rclone >/dev/null || apk add --no-cache -q rclone >/dev/null 2>&1 || { log "R2 upload skipped: rclone install failed"; return; }
+          [ -n "$$BACKUP_S3_ACCESS_KEY_ID" ] || { log "R2 upload skipped: BACKUP_S3_ACCESS_KEY_ID not set (dedicated backup token pending); local copy kept"; return; }
           if out=$$(rclone copyto "$$1" "r2:$$BACKUP_S3_BUCKET/$$SITE_ENV/$${1##*/}" --s3-no-check-bucket 2>&1); then
             log "uploaded to r2:$$BACKUP_S3_BUCKET/$$SITE_ENV/$${1##*/}"
           elif echo "$$out" | grep -qE 'AccessDenied|403'; then
-            log "R2 upload skipped: access denied to $$BACKUP_S3_BUCKET (token not widened yet); local copy kept"
+            log "R2 upload skipped: access denied to $$BACKUP_S3_BUCKET (check the backup token's bucket scope); local copy kept"
           else
             log "R2 upload FAILED: $$(echo "$$out" | tail -n 1)"
           fi
         }
         run() {
           f=/backups/kefken-$$(date -u +%Y%m%d-%H%M%S).dump
-          # Temp name first: a failed dump never replaces or rotates out a good one.
-          if pg_dump -h kefken-postgres -U kefken -d kefken -Fc -f "$$f.part" && mv "$$f.part" "$$f"; then
+          # Temp name + readable-archive check first: a failed or corrupt dump never replaces or rotates out a good one.
+          if pg_dump -h kefken-postgres -U kefken -d kefken -Fc -f "$$f.part" && pg_restore -l "$$f.part" >/dev/null && mv "$$f.part" "$$f"; then
             log "wrote $$f ($$(du -h "$$f" | cut -f1))"
             ls -1t /backups/kefken-*.dump | tail -n +15 | xargs -r rm -f
             upload "$$f"

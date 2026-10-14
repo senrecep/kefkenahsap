@@ -1,7 +1,7 @@
 import { afterEach, describe, expect, it, vi } from 'vitest'
 import { createFakeDateTimeProvider } from 'tsentials/time'
 
-import { buildEvent, debugErrorAllowed, parseDsn, reportError } from './report'
+import { buildEvent, createReporter, debugErrorAllowed, parseDsn, reportError, scrub } from './report'
 
 describe('parseDsn', () => {
   it('turns a DSN into the store endpoint and public key', () => {
@@ -9,7 +9,7 @@ describe('parseDsn', () => {
     expect(r.ok && r.value).toEqual({ storeUrl: 'https://glitchtip-dev.kefkenahsap.com/api/7/store/', publicKey: 'k3y' })
   })
 
-  it.each(['', 'not a url', 'https://glitchtip-dev.kefkenahsap.com/7', 'https://k3y@glitchtip-dev.kefkenahsap.com/'])('rejects %j', (dsn) => {
+  it.each(['', 'not a url', 'https://glitchtip-dev.kefkenahsap.com/7', 'https://k3y@glitchtip-dev.kefkenahsap.com/', 'ftp://k3y@gt.example/1', 'javascript://k3y@x/1'])('rejects %j', (dsn) => {
     const r = parseDsn(dsn)
     expect(r.ok).toBe(false)
     expect(!r.ok && r.errors[0].code).toBe('Observability.InvalidDsn')
@@ -35,6 +35,22 @@ describe('buildEvent', () => {
       exception: { values: [{ type: 'TypeError', value: 'boom' }] },
       extra: { stack: err.stack },
     })
+  })
+
+  it('scrubs personal data from the message and stack', () => {
+    const err = new Error('lead failed for ayse.yilmaz@example.com.tr, phone +90 532 123 45 67')
+    err.stack = `Error: mail ali@x.io\n    at f (/app/a.js:12:34)\n    tc 12345678901`
+    const e = buildEvent(err, { path: '/', method: 'GET' }, '/', { environment: 'x', eventId: 'c'.repeat(32), timestampMs: 0 })
+    expect(e.exception.values[0].value).toBe('lead failed for [email], phone [num]')
+    expect(e.extra).toEqual({ stack: 'Error: mail [email]\n    at f (/app/a.js:12:34)\n    tc [num]' })
+  })
+
+  it('caps the message at 500 chars and the stack at 8 KB', () => {
+    const err = new Error('x'.repeat(600))
+    err.stack = 'y'.repeat(9000)
+    const e = buildEvent(err, { path: '/', method: 'GET' }, '/', { environment: 'x', eventId: 'd'.repeat(32), timestampMs: 0 })
+    expect(e.exception.values[0].value).toHaveLength(500)
+    expect(e.extra.stack).toHaveLength(8192)
   })
 
   it('handles non-Error throws', () => {
@@ -73,11 +89,44 @@ describe('reportError', () => {
   })
 })
 
+describe('scrub', () => {
+  it.each([
+    ['call 0532 123 45 67 now', 'call [num] now'],
+    ['iban TR33 0006 1005 1978 6457 8413 26', 'iban TR[num]'],
+    ['date 2026-10-14 and port 3000 stay', 'date 2026-10-14 and port 3000 stay'],
+    ['a.b+c@d.co', '[email]'],
+  ])('%j → %j', (input, out) => expect(scrub(input)).toBe(out))
+})
+
+describe('createReporter', () => {
+  afterEach(() => vi.unstubAllGlobals())
+
+  it('sends at most 5 reports per minute for the same error, without blocking the caller', async () => {
+    const fetch = vi.fn(async () => Response.json({}))
+    vi.stubGlobal('fetch', fetch)
+    const clock = createFakeDateTimeProvider(new Date(Date.UTC(2026, 0, 1)))
+    const report = createReporter({ dsn: 'https://k@gt.example/1', environment: 'x', clock })
+    const results = Array.from({ length: 7 }, () => report(new Error('same'), { path: '/', method: 'GET' }, '/'))
+    report(new Error('other'), { path: '/', method: 'GET' }, '/')
+    expect(results).toEqual([true, true, true, true, true, false, false])
+    await vi.waitFor(() => expect(fetch).toHaveBeenCalledTimes(6))
+  })
+
+  it('never throws when sending fails', async () => {
+    vi.stubGlobal('fetch', vi.fn(async () => { throw new Error('network down') }))
+    const report = createReporter({ dsn: 'https://k@gt.example/1', environment: 'x', clock: createFakeDateTimeProvider(new Date(0)) })
+    expect(() => report(new Error('e'), { path: '/', method: 'GET' }, '/')).not.toThrow()
+  })
+})
+
 describe('debugErrorAllowed', () => {
   it.each([
     ['s3cret', 's3cret', 'development', true],
-    ['s3cret', 's3cret', undefined, true],
+    ['s3cret', 's3cret', undefined, false],
     ['s3cret', 's3cret', 'production', false],
+    ['s3cret', 's3cret', 'Production', false],
+    ['s3cret', 's3cret', 'prod', false],
+    ['s3cret', 's3cret', '', false],
     ['s3cret', '', 'development', false],
     ['', '', 'development', false],
     [null, 's3cret', 'development', false],
