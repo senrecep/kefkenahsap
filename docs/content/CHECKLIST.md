@@ -62,7 +62,7 @@ Genel bilgi ya da fotoğraf etiketlerinden çıkarım. Yanlışsa düzeltilmeli 
 **Malzeme ve yöntem**
 
 6. Iroko/Teak: "Iroko … maliyeti genellikle daha düşüktür", "Teak, tekne güvertelerinde … geleneksel olarak kullanılan ağaçtır", "emprenye gibi bir ön işleme gerek duymadan". Bunlar genel bilgi.
-7. Köprü ve İskele: kavisli kirişlerin "ince ahşap katmanları tutkallayıp kalıp üzerinde presleyerek" yapıldığı yazıyor. Kaynak, "Kavisli Ahşap Kiriş İmalatında Tutkallama" başlıklı fotoğraf. Yöntem doğru mu?
+7. Köprü ve İskele: kavisli kirişlerin "ince ahşap katmanları tutkallayıp kalıp üzerinde presleyerek" yapıldığı yazıyor. Kaynak, kavisli kirişin tutkallandığını gösteren bir fotoğraf başlığı. Yöntem doğru mu?
 8. Köprü ve İskele: "Suyun içine inen ayaklarda … beton ya da metal taşıyıcılar da kullanılabilir."
 9. Çiçeklik: iç yüzeyin "bir astar ya da örtüyle" kaplandığı, tabanda tahliye deliği bırakıldığı ve kasanın yükseltildiği yazıyor. Uygulamanız böyle mi?
 10. Kapı/Dolap: "Geniş kapı kanatlarında ahşabı metal bir kasayla taşımak…" Kaynak: metal kasalı ve sürgülü kapı fotoğrafları.
@@ -73,11 +73,17 @@ Genel bilgi ya da fotoğraf etiketlerinden çıkarım. Yanlışsa düzeltilmeli 
 
 **Hizmet kapsamı**
 
-15. Ahşap Yapılar: "WC ve duş kabini", "köpek kulübeleri" ve "Türkiye'nin farklı yerlerinde ve yurt dışında da çalıştık" (SSS). Yurt dışı bilgisi PRODUCT.md'deki Libya'ya dayanıyor.
+15. Ahşap Yapılar: "WC ve duş kabini", "köpek kulübeleri" (fotoğraf başlıkları) ve "Türkiye'nin farklı yerlerinde de çalışıyoruz". Hakkımızda: "yurt dışında, Libya'da da çalıştık" (PRODUCT.md).
 16. Köprü ve İskele / Hakkımızda: "site, kurum ve otel gibi geniş alanlarda" ve "oteller, marinalar ve tekne sahipleri". Kaynak PRODUCT.md'deki kullanıcı grupları; otel ve marina için somut bir referans listede yok.
 17. Mobilya: "Toplantı masaları ve yönetici ofisi mobilyaları", "Tekne kamaraları için çalışma masası, konsol ve dolaplar". Kaynak fotoğraf başlıkları.
 18. Hakkımızda: "Murat Şen, marangoz babasının yanında ahşapla büyüdü ve gençliğinde mesleği tam zamanlı sürdürmeye başladı" ve "Zanaatımız iki kuşaktır aynı ailenin elinde." Kaynak decisions #63; kesin yıl bilerek yazılmadı.
 19. İletişim: "Mesajınızı aldıktan sonra işi sizinle konuşuyor, uygun bir günde yeri görmeye geliyoruz." Keşif ücretli mi ücretsiz mi bilinmediği için bundan hiç bahsedilmedi.
+
+**Firmanın çalışma alışkanlığı hakkında cümleler** (fotoğraflardan çıkarım; PRODUCT.md'de yok)
+
+20. "Hazır ürün satmıyoruz" (Mobilya), "hazır kalıp bir ürün satmıyoruz" (Ahşap Yapılar), "Hazır ölçü satmıyoruz" (Çiçeklik SSS).
+21. "en sık yaptığımız yerler", "Çoğu işte deck'i korkuluk, merdiven ya da çiçeklikle birlikte tamamlıyoruz" (Deck); "Merdiven çoğu zaman bir deck, teras ya da çit işinin parçası olarak geliyor" ve "çoğu işte merdiveni deck, teras ya da çit ile birlikte yapıyoruz" (Merdivenler); "çoğu zaman bir deck ya da teras işiyle birlikte" (Çiçeklik).
+22. "çoğunlukla emprenyeli çam kullanıyoruz" / "En çok emprenyeli çam kullanıyoruz" ve Deck'te "En sık kullandığımız iki seçenek emprenyeli çam ve irokodur". Kaynak: fotoğraf etiketlerindeki ahşap türü dağılımı.
 
 ## Açık sorular
 
