@@ -5,8 +5,8 @@ import { Result } from 'tsentials/result'
 import type { AiSetting } from '@/payload-types'
 import { aiModel, resolveChain } from '../models'
 import { DRAFT_PROMPT_VERSION, draftInput, draftSystem, GuideDraftSchema, StoryDraftSchema } from '../prompts/draft'
-import { runStructured } from '../run'
-import { DRAFT_BODY, DRAFT_TASKS, draftData, draftUpdateArgs, siteFacts, type DraftCollection } from './draft'
+import { failureUsage, runStructured } from '../run'
+import { allowedPhotoIds, DRAFT_BODY, DRAFT_TASKS, draftData, draftUpdateArgs, siteFacts, type DraftCollection } from './draft'
 
 const MAX_PHOTOS = 12
 const hasText = (v: unknown): boolean =>
@@ -22,7 +22,7 @@ export async function draftDocument(a: {
   collection: DraftCollection
   id: number | string
   notes: string[]
-  mediaIds: (number | string)[]
+  mediaIds: number[]
   settings: AiSetting
 }): Promise<Result<{ model: string; promptVersion: string }>> {
   const { payload, req, collection, id } = a
@@ -35,8 +35,10 @@ export async function draftDocument(a: {
     return Result.failure(Err.validation('Draft.NotEmpty', `${collection === 'guides' ? 'Yazı' : 'Hikaye'} alanı dolu; taslak yalnızca boş alana yazılır.`))
   if (!doc.title?.trim()) return Result.failure(Err.validation('Draft.TitleRequired', 'Önce Türkçe başlığı yazıp kaydedin.'))
 
-  const photos = a.mediaIds.length
-    ? (await payload.find({ collection: 'media', where: { id: { in: a.mediaIds.slice(0, MAX_PHOTOS) } }, locale: 'tr', depth: 0, limit: MAX_PHOTOS, req, overrideAccess: false })).docs
+  // Captions only from this document's own photos, and only approved ones (a caption is published text, not a guess).
+  const ids = allowedPhotoIds(a.mediaIds, doc as { gallery?: unknown; cover?: unknown }).slice(0, MAX_PHOTOS)
+  const photos = ids.length
+    ? (await payload.find({ collection: 'media', where: { and: [{ id: { in: ids } }, { status: { equals: 'approved' } }] }, locale: 'tr', depth: 0, limit: MAX_PHOTOS, req, overrideAccess: false })).docs
         .map((m) => m.caption?.trim() || m.title?.trim())
         .filter((c): c is string => Boolean(c))
     : []
@@ -53,7 +55,7 @@ export async function draftDocument(a: {
   })
   const docRef = `${collection}:${id}`
   if (!run.ok) {
-    await payload.create({ collection: 'ai-usage', data: { task, ok: false, docRef, error: run.errors[0]!.description } })
+    await payload.create({ collection: 'ai-usage', data: { task, ok: false, docRef, costUsd: failureUsage(run.errors).costUsd, error: run.errors[0]!.description } })
     return run
   }
   const { output, model, costUsd, inputTokens, outputTokens } = run.value

@@ -54,6 +54,18 @@ test.describe('AI ile taslak', () => {
     }
   })
 
+  test('rejects a malformed id, a foreign collection and a form body with fixed Turkish messages', async ({ request }) => {
+    const auth = await request.post('/api/users/login', { data: { email: testUser.email, password: testUser.password } })
+    expect(auth.ok()).toBe(true)
+    const bad = await request.post('/api/ai/draft', { data: { collection: 'guides', id: '1 OR 1=1', notes: '- x' } })
+    expect(bad.status()).toBe(400)
+    expect((await bad.json()).error).toBe('Bu kayıt için taslak yazılamaz.')
+    const proto = await request.post('/api/ai/draft', { data: { collection: '__proto__', id: 1, notes: '- x' } })
+    expect(proto.status()).toBe(400)
+    const form = await request.post('/api/ai/draft', { form: { collection: 'guides', id: '1', notes: '- x' } })
+    expect(form.status()).toBe(415)
+  })
+
   test('refuses a request without a signed-in user', async ({ playwright }) => {
     const anon = await playwright.request.newContext({ baseURL: `http://localhost:${process.env.E2E_PORT ?? 3000}` })
     const res = await anon.post('/api/ai/draft', { data: { collection: 'guides', id: 1, notes: '- x' } })

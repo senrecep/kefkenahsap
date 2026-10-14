@@ -61,20 +61,29 @@ describe('draftDocument (#56)', () => {
     expect(last?.system).toContain('Bunların dışında hiçbir olgu ekleme')
   })
 
-  it('project story: uses the chosen photos’ captions and the draftProjectStory chain', async () => {
+  it('project story: captions only from this project’s own approved photos; draftProjectStory chain', async () => {
     const img = path.join(os.tmpdir(), 'kefken-ai', `draft-${stamp}.webp`)
     mkdirSync(path.dirname(img), { recursive: true })
     await sharp({ create: { width: 400, height: 300, channels: 3, background: { r: 150, g: 110, b: 70 } } }).webp().toFile(img)
-    const m = await payload.create({ collection: 'media', locale: 'tr', data: { caption: 'Havuz kenarında iroko deck' }, filePath: img, context: { skipAi: true } })
-    cleanup.push({ collection: 'media', id: m.id })
-    const p = await payload.create({ collection: 'projects', locale: 'tr', data: { title: `Taslak proje ${stamp}`, gallery: [m.id] } })
+    const photo = async (caption: string, status: 'approved' | 'pending') => {
+      const m = await payload.create({ collection: 'media', locale: 'tr', data: { caption, alt: `Alt ${caption}`, status }, filePath: img, context: { skipAi: true } })
+      cleanup.push({ collection: 'media', id: m.id })
+      return m.id
+    }
+    const own = await photo('Havuz kenarında iroko deck', 'approved')
+    const pending = await photo('Onaylanmamış açıklama', 'pending')
+    const foreign = await photo('Başka projenin fotoğrafı', 'approved')
+    const p = await payload.create({ collection: 'projects', locale: 'tr', data: { title: `Taslak proje ${stamp}`, gallery: [own, pending] } })
     cleanup.push({ collection: 'projects', id: p.id })
 
-    const r = await draftDocument({ payload, req, collection: 'projects', id: p.id, notes: ['Riva', '40 m² deck'], mediaIds: [m.id], settings: await settings() })
+    const r = await draftDocument({ payload, req, collection: 'projects', id: p.id, notes: ['Riva', '40 m² deck'], mediaIds: [own, pending, foreign], settings: await settings() })
     expect(Result.isSuccess(r) && r.value.model).toBe('anthropic/claude-sonnet-5.5')
     const draft = await payload.findByID({ collection: 'projects', id: p.id, locale: 'tr', draft: true })
     expect(draft._status).toBe('draft')
-    expect(JSON.stringify(draft.story)).toContain('Fotoğraflar: Havuz kenarında iroko deck')
+    const story = JSON.stringify(draft.story)
+    expect(story).toContain('Fotoğraflar: Havuz kenarında iroko deck')
+    expect(story).not.toContain('Onaylanmamış açıklama')
+    expect(story).not.toContain('Başka projenin fotoğrafı')
     const usage = await payload.find({ collection: 'ai-usage', where: { docRef: { equals: `projects:${p.id}` } } })
     expect(usage.docs.map((d) => d.task)).toEqual(['draftProjectStory'])
   })

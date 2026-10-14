@@ -7,12 +7,13 @@ import type { GuideDraft, StoryDraft } from '../prompts/draft'
 /** "AI ile taslak" targets: guides (excerpt + body) and project stories. */
 export const DRAFT_TASKS = { guides: 'draftGuide', projects: 'draftProjectStory' } as const satisfies Record<string, AiTask>
 export type DraftCollection = keyof typeof DRAFT_TASKS
-export const isDraftable = (c: string): c is DraftCollection => c in DRAFT_TASKS
+export const isDraftable = (c: string): c is DraftCollection => Object.hasOwn(DRAFT_TASKS, c)
 /** The rich text field the draft writes; it must be empty (a person's text is never overwritten). */
 export const DRAFT_BODY: Record<DraftCollection, 'body' | 'story'> = { guides: 'body', projects: 'story' }
 
 const MAX_NOTES = 40
-const MAX_CHARS = 4000
+export const MAX_NOTES_CHARS = 4000
+const MAX_CHARS = MAX_NOTES_CHARS
 
 export function parseNotes(raw: string): Result<string[]> {
   if (raw.length > MAX_CHARS) return Result.failure(Err.validation('Draft.NotesTooLong', `Notlar en çok ${MAX_CHARS} karakter olabilir.`))
@@ -88,4 +89,10 @@ export function draftData(collection: DraftCollection, output: GuideDraft | Stor
 export function draftUpdateArgs(a: { collection: DraftCollection; id: number | string; data: Record<string, unknown> }) {
   const { _status: _drop, ...data } = a.data
   return { collection: a.collection, id: a.id, locale: 'tr' as const, data, draft: true as const, overrideAccess: false as const }
+}
+
+/** Photos whose captions may go to the model: only ones attached to this document (gallery/cover) that are approved. */
+export function allowedPhotoIds(requested: number[], doc: { gallery?: unknown; cover?: unknown }): number[] {
+  const own = new Set([...(Array.isArray(doc.gallery) ? doc.gallery : []), doc.cover].map((v) => (v && typeof v === 'object' ? (v as { id?: unknown }).id : v)))
+  return requested.filter((id) => own.has(id))
 }

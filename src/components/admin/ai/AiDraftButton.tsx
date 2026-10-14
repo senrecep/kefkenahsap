@@ -3,6 +3,7 @@
 import { useDocumentInfo, useFormFields, useFormModified } from '@payloadcms/ui'
 import { useEffect, useId, useState } from 'react'
 
+import { MAX_NOTES_CHARS } from '@/ai/draft/draft'
 import './ai.css'
 
 type State = { kind: 'idle' } | { kind: 'busy' } | { kind: 'done' } | { kind: 'error'; message: string }
@@ -69,7 +70,12 @@ export function AiDraftButton() {
         value={notes}
         onChange={(e) => setNotes(e.target.value)}
         placeholder={'Her satıra bir madde:\n- Riva, bahçe\n- iroko deck, 40 m²\n- 3 haftada bitti'}
+        maxLength={MAX_NOTES_CHARS}
+        aria-describedby={`${notesId}-count ${notesId}-hint`}
       />
+      <p className="ai-action__hint" id={`${notesId}-count`}>
+        {notes.length} / {MAX_NOTES_CHARS} karakter
+      </p>
       {photos.length > 0 && (
         <fieldset className="ai-action__photos">
           <legend>Fotoğraf açıklamalarını da kullan</legend>
@@ -85,10 +91,10 @@ export function AiDraftButton() {
           ))}
         </fieldset>
       )}
-      <button type="button" className="ai-btn" onClick={draft} disabled={Boolean(blocked) || !notes.trim() || state.kind === 'busy' || state.kind === 'done'}>
+      <button type="button" className="ai-btn" onClick={draft} aria-describedby={`${notesId}-hint`} disabled={Boolean(blocked) || !notes.trim() || state.kind === 'busy' || state.kind === 'done'}>
         {state.kind === 'busy' ? 'Yazılıyor…' : 'AI ile taslak'}
       </button>
-      <p className="ai-action__hint">
+      <p className="ai-action__hint" id={`${notesId}-hint`}>
         {blocked ?? `Yalnızca notlarınızdaki ve Site Bilgileri'ndeki bilgilerle boş ${what} taslak olarak yazar. Yayınlamaz.`}
       </p>
       <p className="ai-action__status" aria-live="polite">

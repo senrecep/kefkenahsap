@@ -46,4 +46,5 @@ Admin'de kategori, proje, sayfa ve yazı düzenleme ekranının yan panelindeki 
 Yazı ve proje düzenleme ekranlarındaki **AI ile taslak** (`POST /api/ai/draft`): başlık + editörün madde notları + isteğe bağlı seçilen fotoğrafların açıklamaları → boş yazı gövdesi ve kısa cevap (yazılar, `draftGuide`) ya da boş proje hikayesi (`draftProjectStory`).
 - Model yalnızca notları, fotoğraf açıklamalarını ve Site Bilgileri'nin **dolu** alanlarını olgu olarak kullanabilir; başka yıl, sayı, fiyat, garanti, iddia yazamaz.
 - Sonuç **her zaman taslak sürümdür**: güncellemeyi yalnızca `draftUpdateArgs` kurar (`draft: true`, `_status` silinir); uç nokta istekten yalnızca `collection, id, notes, mediaIds` okur. Dolu gövde/hikaye üzerine yazılmaz.
-- Aynı güvenlik kapısı: giriş yapmış yönetim kullanıcısı, kullanıcı başına sınır, aylık bütçe.
+- Fotoğraf açıklamaları yalnızca bu kaydın kendi galerisinden/kapağından ve **onaylı** (yayında) görsellerden alınır.
+- Aynı güvenlik kapısı: giriş yapmış yönetim kullanıcısı, yalnızca JSON istek, sıkı id kontrolü, kullanıcı başına sınır, aylık bütçe; hata mesajları kod başına sabit Türkçe metin.

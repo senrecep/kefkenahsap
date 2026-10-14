@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { Result } from 'tsentials/result'
 
-import { draftData, draftUpdateArgs, guideLexical, parseNotes, siteFacts, storyLexical } from './draft'
+import { allowedPhotoIds, draftData, draftUpdateArgs, guideLexical, isDraftable, parseNotes, siteFacts, storyLexical } from './draft'
 
 describe('parseNotes: the editor’s bullet notes', () => {
   it('one note per line, list markers and blanks dropped', () => {
@@ -67,5 +67,20 @@ describe('no code path can publish an AI draft', () => {
   })
   it('keeps a guide excerpt a person already wrote', () => {
     expect(draftData('guides', { excerpt: 'AI', sections: [] }, { excerpt: 'Elle yazıldı' })).not.toHaveProperty('excerpt')
+  })
+})
+
+describe('draft scope guards', () => {
+  it('isDraftable: guides and projects only, no prototype keys', () => {
+    expect(isDraftable('guides')).toBe(true)
+    expect(isDraftable('projects')).toBe(true)
+    for (const c of ['pages', 'categories', 'users', 'media', 'constructor', '__proto__', 'toString', ''])
+      expect(isDraftable(c), c).toBe(false)
+  })
+
+  it('allowedPhotoIds: only photos attached to this document (gallery ids or populated, cover)', () => {
+    expect(allowedPhotoIds([1, 2, 3, 9], { gallery: [1, { id: 2 }], cover: 3 })).toEqual([1, 2, 3])
+    expect(allowedPhotoIds([1], {})).toEqual([])
+    expect(allowedPhotoIds([5], { gallery: null, cover: { id: 5 } })).toEqual([5])
   })
 })
