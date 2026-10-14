@@ -1,7 +1,7 @@
 import { expect, test } from '@playwright/test'
 
-import en from '../../messages/en/home.json'
-import tr from '../../messages/tr/home.json'
+import en from '../../messages/en/home.json' with { type: 'json' }
+import tr from '../../messages/tr/home.json' with { type: 'json' }
 
 test.describe('Frontend smoke', () => {
   test('root redirects by Accept-Language: Turkish browser → /tr', async ({ browser }) => {

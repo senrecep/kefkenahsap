@@ -1,10 +1,10 @@
 'use client'
 
 import { ChevronLeft, ChevronRight, X } from 'lucide-react'
-import { useTranslations } from 'next-intl'
 import { useEffect, useRef, type KeyboardEvent, type PointerEvent } from 'react'
 
 import type { GalleryItem } from '@/lib/gallery/item'
+import type { GalleryLabels } from '@/lib/gallery/labels'
 import { responsiveImage } from '@/lib/media/image'
 
 export type LightboxProps = {
@@ -13,14 +13,14 @@ export type LightboxProps = {
   total: number
   onIndex: (index: number) => void
   onClose: () => void
+  labels: GalleryLabels
 }
 
 const control =
   'inline-flex size-12 items-center justify-center rounded-full bg-black/45 text-white shadow-[var(--shadow-float)] transition-colors hover:bg-black/70 disabled:opacity-30'
 
 /** Native modal <dialog> (focus stays inside, Esc closes, focus returns to the card). The URL follows the open image. */
-export function Lightbox({ items, index, total, onIndex, onClose }: LightboxProps) {
-  const t = useTranslations('Gallery')
+export function Lightbox({ items, index, total, onIndex, onClose, labels }: LightboxProps) {
   const dialog = useRef<HTMLDialogElement>(null)
   const swipeX = useRef<number | null>(null)
   const item = items[index]!
@@ -58,7 +58,7 @@ export function Lightbox({ items, index, total, onIndex, onClose }: LightboxProp
   return (
     <dialog
       ref={dialog}
-      aria-label={t('lightbox')}
+      aria-label={labels.lightbox}
       onClose={onClose}
       onKeyDown={onKeyDown}
       className="fixed inset-0 m-0 size-full max-h-none max-w-none bg-[#141513] p-0 text-white backdrop:bg-black/80"
@@ -66,9 +66,9 @@ export function Lightbox({ items, index, total, onIndex, onClose }: LightboxProp
       <div className="flex h-full flex-col">
         <div className="flex items-center justify-between gap-4 px-4 py-3">
           <p className="font-[family-name:var(--font-display)] text-sm font-semibold tabular-nums" aria-live="polite">
-            {t('counter', { current: index + 1, total })}
+            {labels.counter.replace('{current}', String(index + 1)).replace('{total}', String(total))}
           </p>
-          <button type="button" autoFocus onClick={() => dialog.current?.close()} className={control} aria-label={t('close')}>
+          <button type="button" autoFocus onClick={() => dialog.current?.close()} className={control} aria-label={labels.close}>
             <X aria-hidden size={22} strokeWidth={1.75} />
           </button>
         </div>
@@ -89,10 +89,10 @@ export function Lightbox({ items, index, total, onIndex, onClose }: LightboxProp
             className="max-h-full w-auto max-w-full rounded-[var(--radius-photo)] object-contain"
             style={{ backgroundColor: img.color }}
           />
-          <button type="button" onClick={() => prev !== null && onIndex(prev)} disabled={prev === null} aria-label={t('prev')} className={`${control} absolute start-3 top-1/2 -translate-y-1/2 max-md:hidden`}>
+          <button type="button" onClick={() => prev !== null && onIndex(prev)} disabled={prev === null} aria-label={labels.prev} className={`${control} absolute start-3 top-1/2 -translate-y-1/2 max-md:hidden`}>
             <ChevronLeft aria-hidden size={26} strokeWidth={1.75} className="rtl:rotate-180" />
           </button>
-          <button type="button" onClick={() => next !== null && onIndex(next)} disabled={next === null} aria-label={t('next')} className={`${control} absolute end-3 top-1/2 -translate-y-1/2 max-md:hidden`}>
+          <button type="button" onClick={() => next !== null && onIndex(next)} disabled={next === null} aria-label={labels.next} className={`${control} absolute end-3 top-1/2 -translate-y-1/2 max-md:hidden`}>
             <ChevronRight aria-hidden size={26} strokeWidth={1.75} className="rtl:rotate-180" />
           </button>
         </div>
@@ -107,14 +107,14 @@ export function Lightbox({ items, index, total, onIndex, onClose }: LightboxProp
               </a>
             )}
             <a href={item.href} className="text-white underline decoration-white/40 hover:decoration-white">
-              {t('openPage')}
+              {labels.openPage}
             </a>
           </p>
           <div className="mt-3 flex justify-between gap-3 md:hidden">
-            <button type="button" onClick={() => prev !== null && onIndex(prev)} disabled={prev === null} aria-label={t('prev')} className={control}>
+            <button type="button" onClick={() => prev !== null && onIndex(prev)} disabled={prev === null} aria-label={labels.prev} className={control}>
               <ChevronLeft aria-hidden size={26} strokeWidth={1.75} className="rtl:rotate-180" />
             </button>
-            <button type="button" onClick={() => next !== null && onIndex(next)} disabled={next === null} aria-label={t('next')} className={control}>
+            <button type="button" onClick={() => next !== null && onIndex(next)} disabled={next === null} aria-label={labels.next} className={control}>
               <ChevronRight aria-hidden size={26} strokeWidth={1.75} className="rtl:rotate-180" />
             </button>
           </div>

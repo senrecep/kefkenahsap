@@ -69,7 +69,7 @@ export async function Header({ locale }: { locale: Locale }) {
               <span className="sr-only xl:hidden">{`${tCta('callUs')}: ${tel.label}`}</span>
             </a>
           )}
-          <LanguageSwitcher className="hidden sm:flex" />
+          <LanguageSwitcher locale={locale} label={t('language')} className="hidden sm:flex" />
           <MobileMenu label={t('menu')} closeLabel={t('close')}>
             <p className="mb-2 font-[family-name:var(--font-display)] text-sm font-semibold text-ink-soft">{t('services')}</p>
             <ul className="mb-6 grid gap-1">
@@ -90,7 +90,7 @@ export async function Header({ locale }: { locale: Locale }) {
                 </li>
               ))}
             </ul>
-            <LanguageSwitcher className="mt-6" />
+            <LanguageSwitcher locale={locale} label={t('language')} className="mt-6" />
           </MobileMenu>
         </div>
       </div>

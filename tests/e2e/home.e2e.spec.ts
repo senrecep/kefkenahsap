@@ -1,8 +1,8 @@
 import { expect, test } from '@playwright/test'
 
-import en from '../../messages/en/home.json'
-import trCommon from '../../messages/tr/common.json'
-import tr from '../../messages/tr/home.json'
+import en from '../../messages/en/home.json' with { type: 'json' }
+import trCommon from '../../messages/tr/common.json' with { type: 'json' }
+import tr from '../../messages/tr/home.json' with { type: 'json' }
 
 test.describe('homepage', () => {
   test('hero, gallery, services and contact in the default order', async ({ page }) => {
