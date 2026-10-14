@@ -9,7 +9,7 @@ import { Container } from '@/components/ui/Container'
 import { WhatsAppButton } from '@/components/ui/WhatsAppButton'
 import { getPathname } from '@/i18n/navigation'
 import type { Locale } from '@/i18n/routing'
-import { getGuide } from '@/lib/data/guides'
+import { getGuide, getGuides } from '@/lib/data/guides'
 import { getSiteSettings } from '@/lib/data/site'
 import { metaDescription } from '@/lib/guides/meta'
 import { tableOfContents } from '@/lib/guides/toc'
@@ -36,10 +36,11 @@ export default async function GuidePage({ params }: Props) {
   const found = await getGuide(locale, slug)
   if (!found) notFound()
   const { guide, categories } = found
-  const [t, tCta, format, settings] = await Promise.all([getTranslations('Guides'), getTranslations('Cta'), getFormatter(), getSiteSettings(locale)])
+  const [t, tCta, format, settings, published] = await Promise.all([getTranslations('Guides'), getTranslations('Cta'), getFormatter(), getSiteSettings(locale), getGuides(locale)])
   const body = guide.body as SerializedEditorState | null | undefined
   const toc = tableOfContents(body)
-  const founder = settings.founder?.name ? settings.founder : null
+  // Byline only when the owner opted in for this guide (and a founder name is set).
+  const founder = guide.showAuthor && settings.founder?.name ? settings.founder : null
   const faq = guide.faq ?? []
   const url = `${siteUrl().replace(/\/$/, '')}${getPathname({ locale, href: { pathname: '/rehber/[slug]', params: { slug } } })}`
   const updated = (
@@ -83,7 +84,7 @@ export default async function GuidePage({ params }: Props) {
           )}
 
           <div className="min-w-0 lg:col-start-2">
-            {body && <GuideBody data={body} idOf={toc.idOf} tableLabel={t('table')} />}
+            {body && <GuideBody data={body} idOf={toc.idOf} tableLabel={t('table')} publishedHrefs={new Set(published.map((g) => g.href))} />}
 
             {faq.length > 0 && (
               <section aria-labelledby="faq" className="mt-16 max-w-[68ch]">

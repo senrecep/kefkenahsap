@@ -10,8 +10,8 @@ import { parseCategory, parseGuide, parsePage, parseReferences, wordCount } from
 const DIR = path.resolve(process.cwd(), 'seed/content')
 const read = (p: string) => readFileSync(path.join(DIR, p), 'utf8')
 
-// docs/AI-PROMPTS.md clichés + claims PRODUCT.md says must come only from the admin.
-const BANNED = [/eşsiz/i, /hayallerinizdeki/i, /kaliteden ödün/i, /en iyi hizmet/i, /mükemmel/i, /benzersiz/i, /\d+\s*(yıl|sene)/i, /\d+\s*years?/i, /garanti/i, /guarantee/i, /\bTL\b|₺|€|\$/, /sertifika/i, /certif/i, /ücretsiz/i, /\bfree\b/i, /yıllardır|onlarca yıl|otuz yıl|decades/i]
+// docs/CONTENT-STYLE-TR.md §5 banned list (clichés) + claims PRODUCT.md says must come only from the admin.
+const BANNED = [/eşsiz/i, /hayallerinizdeki/i, /kaliteden ödün/i, /en iyi hizmet/i, /mükemmel/i, /benzersiz/i, /\d+\s*(yıl|sene)/i, /\d+\s*years?/i, /garanti/i, /guarantee/i, /\bTL\b|₺|€|\$/, /sertifika/i, /certif/i, /ücretsiz/i, /\bfree\b/i, /yıllardır|onlarca yıl|otuz yıl|decades/i, /kusursuz|uzman ekibimiz|son teknoloji|A'dan Z'ye|fark yaratan|ayrıcalıklı|alanında lider|firmamız|şirketimiz/i]
 const textOf = (o: unknown) => JSON.stringify(o)
 
 describe('wordCount', () => {

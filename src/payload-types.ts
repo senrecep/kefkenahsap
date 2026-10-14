@@ -496,6 +496,10 @@ export interface Guide {
         id?: string | null;
       }[]
     | null;
+  /**
+   * Açıksa yazının altında kurucunun adı (Site Bilgileri › Kurucu) yazar olarak görünür.
+   */
+  showAuthor?: boolean | null;
   relatedCategories?: (number | Category)[] | null;
   seo?: {
     title?: string | null;
@@ -1093,6 +1097,7 @@ export interface GuidesSelect<T extends boolean = true> {
         a?: T;
         id?: T;
       };
+  showAuthor?: T;
   relatedCategories?: T;
   seo?:
     | T

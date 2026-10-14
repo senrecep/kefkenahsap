@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { tableOfContents } from './toc'
+import { RESERVED_IDS, tableOfContents } from './toc'
 
 const text = (t: string) => ({ type: 'text', text: t })
 const h = (tag: string, ...children: unknown[]) => ({ type: 'heading', tag, children })
@@ -47,5 +47,17 @@ describe('tableOfContents', () => {
     expect(tableOfContents(null).items).toEqual([])
     expect(tableOfContents(undefined).items).toEqual([])
     expect(tableOfContents(doc()).items).toEqual([])
+  })
+
+  it('never reuses an id the page itself owns', () => {
+    const body = doc(h('h2', text('FAQ')), h('h2', text('Main')))
+    const ids = tableOfContents(body).items.map((i) => i.id)
+    expect(ids).toEqual(['faq-2', 'main-2'])
+    for (const id of ids) expect(RESERVED_IDS.has(id)).toBe(false)
+  })
+
+  it('stays unique when a heading text already looks like a suffixed id', () => {
+    const body = doc(h('h2', text('Fiyat 2?')), h('h2', text('Fiyat?')), h('h2', text('Fiyat?')))
+    expect(tableOfContents(body).items.map((i) => i.id)).toEqual(['fiyat-2', 'fiyat', 'fiyat-3'])
   })
 })

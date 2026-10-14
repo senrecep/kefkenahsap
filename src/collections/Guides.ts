@@ -1,14 +1,19 @@
-import { EXPERIMENTAL_TableFeature, lexicalEditor, type FeatureProviderServer } from '@payloadcms/richtext-lexical'
+import { EXPERIMENTAL_TableFeature, HeadingFeature, lexicalEditor, type FeatureProviderServer } from '@payloadcms/richtext-lexical'
 import type { CollectionConfig } from 'payload'
 
 import { isStaff, publishedOrStaff } from '@/access'
 import { slugFrom } from '@/hooks/slug'
 import { revalidateAfterChange, revalidateAfterDelete } from '@/hooks/revalidate'
 
-// Guides compare wood species in tables (PLAN §7), so their body adds the table feature; the seed loader reuses it.
-export const guideBodyFeatures = ({ defaultFeatures }: { defaultFeatures: FeatureProviderServer[] }) => [...defaultFeatures, EXPERIMENTAL_TableFeature()]
+// Guides compare wood species in tables (PLAN §7), so their body adds the table feature; headings are H2/H3 only
+// (H1 is the title, the TOC lists H2s). The seed loader and e2e reuse this list.
+export const guideBodyFeatures = ({ defaultFeatures }: { defaultFeatures: FeatureProviderServer[] }) => [
+  ...defaultFeatures.filter((f) => f.key !== 'heading'),
+  HeadingFeature({ enabledHeadingSizes: ['h2', 'h3'] }),
+  EXPERIMENTAL_TableFeature(),
+]
 
-/** Rehber yazıları (/tr/rehber/<slug>, /en/guides/<slug>). Author box and JSON-LD author come from siteSettings.founder. */
+/** Rehber yazıları (/tr/rehber/<slug>, /en/guides/<slug>). With `showAuthor`, the author box (and later JSON-LD author) come from siteSettings.founder. */
 export const Guides: CollectionConfig = {
   slug: 'guides',
   labels: { singular: 'Yazı', plural: 'Yazılar' },
@@ -48,6 +53,13 @@ export const Guides: CollectionConfig = {
         { name: 'q', type: 'text', required: true, label: 'Soru' },
         { name: 'a', type: 'textarea', required: true, label: 'Cevap' },
       ],
+    },
+    {
+      name: 'showAuthor',
+      type: 'checkbox',
+      defaultValue: false,
+      label: 'Yazar kutusunu göster',
+      admin: { position: 'sidebar', description: 'Açıksa yazının altında kurucunun adı (Site Bilgileri › Kurucu) yazar olarak görünür.' },
     },
     { name: 'relatedCategories', type: 'relationship', relationTo: 'categories', hasMany: true, label: 'İlgili hizmetler', admin: { position: 'sidebar' } },
     {

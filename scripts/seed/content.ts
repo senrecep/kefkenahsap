@@ -75,8 +75,10 @@ const guideEditor = await editorConfigFactory.fromFeatures({ config: payload.con
 const guideLexical = (markdown: string) => convertMarkdownToLexical({ editorConfig: guideEditor, markdown })
 for (const file of readdirSync(path.join(DIR, 'guides')).filter((f) => f.endsWith('.json')).sort()) {
   const content = load(`guides/${file}`, parseGuide)
-  const found = await payload.find({ collection: 'guides', locale: 'tr', draft: true, where: { slug: { equals: content.tr.slug } }, limit: 1, depth: 0 })
-  let id = found.docs[0]?.id
+  // Match on the TR slug, else the EN slug, so renaming one slug in the admin doesn't create a duplicate draft.
+  const bySlug = async (locale: 'tr' | 'en') =>
+    (await payload.find({ collection: 'guides', locale, draft: true, where: { slug: { equals: content[locale].slug } }, limit: 1, depth: 0 })).docs[0]?.id
+  let id = (await bySlug('tr')) ?? (await bySlug('en'))
   if (!id) {
     const cats = await payload.find({ collection: 'categories', locale: 'tr', draft: true, where: { slug: { in: content.relatedCategories } }, limit: 20, depth: 0, select: { slug: true } })
     const relatedCategories = content.relatedCategories.flatMap((s) => cats.docs.filter((c) => c.slug === s).map((c) => c.id))

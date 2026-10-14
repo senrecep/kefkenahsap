@@ -10,32 +10,65 @@ const prose =
   '[&_a]:text-action [&_a]:underline [&_a:hover]:text-action-deep [&_strong]:font-semibold ' +
   '[&>*:first-child]:mt-0'
 
-/** Lexical body with H2 anchor ids from the same `idOf` that built the TOC, and tables in the site's hairline style. */
-export function GuideBody({ data, idOf, tableLabel }: { data: SerializedEditorState; idOf: (node: unknown) => string | undefined; tableLabel: string }) {
+type Cell = { headerState?: number; children?: unknown[] }
+type Row = { children?: Cell[] }
+const GUIDE_LINK = /^\/[a-z]{2}\/(rehber|guides)\/[^/?#]+$/
+
+/**
+ * Lexical body: H2 anchor ids from the same `idOf` that built the TOC; tables with a header row in <thead> and the
+ * first column as row headers; links to guides that are not published here render as plain text (no 404 links).
+ */
+export function GuideBody({
+  data,
+  idOf,
+  tableLabel,
+  publishedHrefs,
+}: {
+  data: SerializedEditorState
+  idOf: (node: unknown) => string | undefined
+  tableLabel: string
+  publishedHrefs: ReadonlySet<string>
+}) {
   const converters: JSXConvertersFunction = ({ defaultConverters }) => ({
     ...defaultConverters,
     heading: ({ node, nodesToJSX }) => {
-      const Tag = (['h2', 'h3', 'h4'].includes(node.tag) ? node.tag : 'h3') as 'h2' | 'h3' | 'h4'
+      const Tag = (node.tag === 'h2' ? 'h2' : 'h3') as 'h2' | 'h3'
       return <Tag id={idOf(node)}>{nodesToJSX({ nodes: node.children })}</Tag>
     },
-    table: ({ node, nodesToJSX }) => (
-      <div className="mt-6 overflow-x-auto rounded-[var(--radius-control)] border border-line" tabIndex={0} role="region" aria-label={tableLabel}>
-        <table className="w-full border-collapse text-[0.95rem] leading-snug [font-variant-numeric:tabular-nums]">
-          <tbody>{nodesToJSX({ nodes: node.children })}</tbody>
-        </table>
-      </div>
-    ),
-    tablerow: ({ node, nodesToJSX }) => <tr className="border-b border-line last:border-b-0">{nodesToJSX({ nodes: node.children })}</tr>,
-    tablecell: ({ node, nodesToJSX }) => {
-      const header = (node.headerState ?? 0) > 0
-      const Cell = header ? 'th' : 'td'
+    link: (args) => {
+      const url = (args.node.fields as { url?: string } | undefined)?.url ?? ''
+      if (GUIDE_LINK.test(url) && !publishedHrefs.has(url)) return <span>{args.nodesToJSX({ nodes: args.node.children })}</span>
+      const fallback = defaultConverters.link
+      return typeof fallback === 'function' ? fallback(args) : null
+    },
+    table: ({ node, nodesToJSX }) => {
+      const rows = (node.children ?? []) as Row[]
+      const hasHead = (rows[0]?.children ?? []).some((c) => (c.headerState ?? 0) > 0)
+      const cells = (row: Row, head: boolean) =>
+        (row.children ?? []).map((cell, i) => {
+          const content = nodesToJSX({ nodes: (cell.children ?? []) as never[] })
+          if (head) return <th key={i} scope="col" className="bg-mist px-3 py-2.5 text-start align-top font-[family-name:var(--font-display)] text-[0.85rem] font-semibold [&_p]:m-0">{content}</th>
+          if (i === 0) return <th key={i} scope="row" className="px-3 py-2.5 text-start align-top font-semibold [&_p]:m-0">{content}</th>
+          return <td key={i} className="px-3 py-2.5 text-start align-top [&_p]:m-0">{content}</td>
+        })
+      const body = hasHead ? rows.slice(1) : rows
       return (
-        <Cell
-          scope={header ? 'col' : undefined}
-          className={`px-3 py-2.5 text-start align-top [&_p]:m-0 ${header ? 'bg-mist font-[family-name:var(--font-display)] text-[0.85rem] font-semibold' : ''}`}
-        >
-          {nodesToJSX({ nodes: node.children })}
-        </Cell>
+        <div className="mt-6 overflow-x-auto rounded-[var(--radius-control)] border border-line" tabIndex={0} role="region" aria-label={tableLabel}>
+          <table className="w-full border-collapse text-[0.95rem] leading-snug [font-variant-numeric:tabular-nums]">
+            {hasHead && (
+              <thead>
+                <tr className="border-b border-line">{cells(rows[0]!, true)}</tr>
+              </thead>
+            )}
+            <tbody>
+              {body.map((row, i) => (
+                <tr key={i} className="border-b border-line last:border-b-0">
+                  {cells(row, false)}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       )
     },
   })

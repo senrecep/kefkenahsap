@@ -25,7 +25,7 @@ test.beforeAll(async () => {
   founderBefore = settings.founder?.name
   if (!founderBefore) await payload.updateGlobal({ slug: 'siteSettings', data: { founder: { ...settings.founder, name: 'Murat Şen' } } })
   const tr = seed.tr
-  const doc = await payload.create({ collection: 'guides', locale: 'tr', data: { ...tr, slug: slugs.tr, body: body(tr.body), _status: 'published' } })
+  const doc = await payload.create({ collection: 'guides', locale: 'tr', data: { ...tr, slug: slugs.tr, body: body(tr.body), showAuthor: true, _status: 'published' } })
   id = doc.id
   const en = seed.en
   await payload.update({ collection: 'guides', id, locale: 'en', data: { ...en, slug: slugs.en, body: body(en.body), _status: 'published' } })
@@ -40,7 +40,7 @@ test.afterAll(async () => {
 })
 
 test.describe('guides', () => {
-  test('guide page: TOC anchors, body table, FAQ, author box, updated date, hreflang', async ({ page }) => {
+  test('guide page: TOC anchors, table headers, FAQ, author box, updated date, hreflang, no overflow', async ({ page }) => {
     await page.setViewportSize({ width: 1440, height: 900 })
     await page.goto(`/tr/rehber/${slugs.tr}`)
     await expect(page.getByRole('heading', { level: 1, name: seed.tr.title })).toBeVisible()
@@ -48,6 +48,8 @@ test.describe('guides', () => {
     await page.screenshot({ path: 'docs/screens/guide-desktop.png', fullPage: true })
     await page.setViewportSize({ width: 390, height: 844 })
     await page.screenshot({ path: 'docs/screens/guide-mobile.png', fullPage: true })
+    // No horizontal page overflow on a phone (wide tables scroll inside their own region).
+    expect(await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth)).toBeLessThanOrEqual(0)
     await page.setViewportSize({ width: 1440, height: 900 })
 
     // Every TOC link points at an H2 that exists on the page.
@@ -58,7 +60,12 @@ test.describe('guides', () => {
     await toc.getByRole('link').nth(1).click()
     await expect(page).toHaveURL(new RegExp(`${hrefs[1]}$`))
 
-    await expect(page.locator('article table')).toBeVisible()
+    const table = page.locator('article table').first()
+    await expect(table).toBeVisible()
+    await expect(table.locator('thead th[scope="col"]').first()).toHaveText('Özellik')
+    expect(await table.locator('tbody th[scope="row"]').count()).toBeGreaterThan(0)
+    // The seed links to the wood-types guide; unpublished here, so it must not be a (404) link.
+    if (!(await page.request.get('/tr/rehber/ahsap-turleri')).ok()) await expect(page.locator('article a[href="/tr/rehber/ahsap-turleri"]')).toHaveCount(0)
     await expect(page.getByRole('heading', { level: 2, name: 'Sık sorulan sorular' })).toBeVisible()
     await expect(page.locator('dt').first()).toHaveText(seed.tr.faq[0].q)
     await expect(page.getByRole('complementary', { name: 'Yazar' })).toContainText('Murat Şen')
