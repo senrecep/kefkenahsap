@@ -31,3 +31,6 @@ next-env.d.ts
 /blob-report/
 /playwright/.cache/
 *.pem
+
+# private volume data (lead photos)
+/data/

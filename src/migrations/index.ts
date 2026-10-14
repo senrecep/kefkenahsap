@@ -4,6 +4,7 @@ import * as migration_20261014_012616_review_fixes from './20261014_012616_revie
 import * as migration_20261014_015435_core_collections from './20261014_015435_core_collections';
 import * as migration_20261014_021522_globals from './20261014_021522_globals';
 import * as migration_20261014_022343_projects_references_pages from './20261014_022343_projects_references_pages';
+import * as migration_20261014_023200_leads from './20261014_023200_leads';
 
 export const migrations = [
   {
@@ -34,6 +35,11 @@ export const migrations = [
   {
     up: migration_20261014_022343_projects_references_pages.up,
     down: migration_20261014_022343_projects_references_pages.down,
-    name: '20261014_022343_projects_references_pages'
+    name: '20261014_022343_projects_references_pages',
+  },
+  {
+    up: migration_20261014_023200_leads.up,
+    down: migration_20261014_023200_leads.down,
+    name: '20261014_023200_leads'
   },
 ];
