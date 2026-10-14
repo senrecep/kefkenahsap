@@ -221,6 +221,7 @@ export interface Media {
     | boolean
     | null;
   lqip?: string | null;
+  seedKey?: string | null;
   dominantColor?: string | null;
   legacy?: {
     urls?:
@@ -819,6 +820,7 @@ export interface MediaSelect<T extends boolean = true> {
   capturedAt?: T;
   aiSuggestion?: T;
   lqip?: T;
+  seedKey?: T;
   dominantColor?: T;
   legacy?:
     | T

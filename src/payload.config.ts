@@ -43,6 +43,12 @@ export default buildConfig({
     importMap: {
       baseDir: path.resolve(dirname),
     },
+    components: {
+      beforeNavLinks: ['/components/admin/GaleriNavLink#GaleriNavLink'],
+      views: {
+        galeri: { Component: '/components/admin/GaleriView#GaleriView', path: '/galeri' },
+      },
+    },
   },
   collections: [Users, Media, Categories, Tags, Projects, References, Pages, Leads, LeadPhotos, AiUsage],
   // Real e-mail only outside tests; without a key Payload logs e-mails to the console.

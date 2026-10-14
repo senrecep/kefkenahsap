@@ -1,5 +1,7 @@
 import sharp from 'sharp'
-import { APIError, type CollectionAfterChangeHook, type CollectionBeforeChangeHook, type CollectionConfig } from 'payload'
+import { type CollectionAfterChangeHook, type CollectionBeforeChangeHook, type CollectionConfig } from 'payload'
+
+import { publicError } from '@/lib/http/public-error'
 import { Result } from 'tsentials/result'
 
 import { approvedOrStaff, isStaff } from '@/access'
@@ -42,7 +44,7 @@ const publishGate: CollectionBeforeChangeHook = async ({ data, req, originalDoc,
     trAlt = tr.alt
   }
   const r = checkPublishable({ status, alt: { tr: trAlt ?? '' } })
-  if (Result.isFailure(r)) throw new APIError(r.errors[0]!.description, 400, undefined, true)
+  if (Result.isFailure(r)) throw publicError(r.errors[0]!.description, 'alt')
   return data
 }
 
@@ -97,6 +99,8 @@ export const Media: CollectionConfig = {
       admin: { readOnly: true, description: 'Model, prompt sürümü ve önerilen metinler (yalnızca öneri).' },
     },
     { name: 'lqip', type: 'text', admin: { readOnly: true, hidden: true } },
+    // Stable identity of seeded images (<category>/<source file>) so the seed is idempotent.
+    { name: 'seedKey', type: 'text', unique: true, index: true, admin: { readOnly: true, hidden: true } },
     { name: 'dominantColor', type: 'text', admin: { readOnly: true, hidden: true } },
     {
       name: 'legacy',

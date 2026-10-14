@@ -380,6 +380,12 @@
           "primaryKey": false,
           "notNull": false
         },
+        "seed_key": {
+          "name": "seed_key",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
         "dominant_color": {
           "name": "dominant_color",
           "type": "varchar",
@@ -719,6 +725,21 @@
             }
           ],
           "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "media_seed_key_idx": {
+          "name": "media_seed_key_idx",
+          "columns": [
+            {
+              "expression": "seed_key",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": true,
           "concurrently": false,
           "method": "btree",
           "with": {}
