@@ -1,0 +1,436 @@
+{
+  "flagged": [
+    {
+      "seedKey": "ahsap-yapilar/12.webp",
+      "action": "hide",
+      "reason": "Dükkân önündeki yazı tahtası ve tabela; bir hizmet örneği değil, arkada Kefken Ahşap afişi görünüyor."
+    },
+    {
+      "seedKey": "ahsap-yapilar/18301686_1512595868785007_8271455338534986310_n.webp",
+      "action": "hide",
+      "reason": "Direkler ve çatı metal; fotoğrafta ahşap iş görünmüyor. Bu işi siz yaptıysanız Pergola ve Kamelyalar'a taşıyın."
+    },
+    {
+      "seedKey": "ahsap-yapilar/2-3.webp",
+      "action": "keep",
+      "reason": "Çatı kaplaması ve kiremit dizimi; ahşap yapı işinin çatı aşaması. Kapak için uygun değil."
+    },
+    {
+      "seedKey": "ahsap-yapilar/4.webp",
+      "action": "keep",
+      "reason": "Yatay çıtalı ahşap duvar kaplaması; Ahşap Yapılar kapsamında."
+    },
+    {
+      "seedKey": "deck-ve-zeminler/21.webp",
+      "action": "hide",
+      "reason": "Aynı fotoğraf zaten merdivenler/21.webp ve ahsap-yapilar/82.webp olarak var; kopya."
+    },
+    {
+      "seedKey": "deck-ve-zeminler/30.webp",
+      "action": "hide",
+      "reason": "Aynı fotoğraf zaten ahsap-yapilar/30.webp olarak var; kopya."
+    },
+    {
+      "seedKey": "deck-ve-zeminler/32.webp",
+      "action": "hide",
+      "reason": "Aynı fotoğraf zaten merdivenler/32.webp (ve ahsap-yapilar/80.webp) olarak var; kopya."
+    },
+    {
+      "seedKey": "deck-ve-zeminler/8.webp",
+      "action": "move",
+      "toCategory": "kapi-dolap-ve-seperator",
+      "reason": "Gömme dolap; deck ile ilgisi yok. Aynı fotoğraf mobilya-ve-cila/8.webp olarak da var; orada kalabilir ya da gizlenebilir. \"Ölçüye göre yapılmış / custom-fitted\" fotoğraftan görülmüyor, çıkarıldı.",
+      "fixes": {
+        "caption": {
+          "tr": "Hol duvarına gömülü, kapakları çerçeveli panel işlemeli beyaz boyalı dolap. Kapaklar duvarla aynı hizada.",
+          "en": "A white painted cabinet built into the hall wall, with framed raised-panel doors sitting flush with the wall."
+        }
+      }
+    },
+    {
+      "seedKey": "deck-ve-zeminler/WhatsApp Image 2026-08-07 at 17.59.56 (1).webp",
+      "action": "move",
+      "toCategory": "korkuluk-ve-cit",
+      "reason": "Ön planda ahşap çit ve çıtalı paravan var; zemin işi görünmüyor."
+    },
+    {
+      "seedKey": "deck-ve-zeminler/WhatsApp Image 2026-08-07 at 17.59.58 (1).webp",
+      "action": "move",
+      "toCategory": "ciceklik-ve-oturma-grubu",
+      "reason": "Yükseltilmiş ahşap bahçe yatakları (çiçeklik)."
+    },
+    {
+      "seedKey": "deck-ve-zeminler/WhatsApp Image 2026-08-07 at 18.00.35.webp",
+      "action": "move",
+      "toCategory": "ciceklik-ve-oturma-grubu",
+      "reason": "Ateş çukuru çevresinde L biçimli ahşap oturma bankı."
+    },
+    {
+      "seedKey": "pergola-ve-kamelyalar/10926343_890180887693178_996297002468608749_o.webp",
+      "action": "hide",
+      "reason": "Aynı fotoğraf zaten korkuluk-ve-cit/14-1.webp olarak var; kopya."
+    },
+    {
+      "seedKey": "pergola-ve-kamelyalar/17190381_1441116925932902_657908285864852438_n.webp",
+      "action": "keep",
+      "reason": "Kemerli ahşap kafes; bahçe kemeri olarak pergola grubuna en yakın iş."
+    },
+    {
+      "seedKey": "pergola-ve-kamelyalar/960082_672566669454602_219012458_n.webp",
+      "action": "keep",
+      "reason": "Üst kirişli, kare kafesli ahşap paravan; pergola yan yüzü gibi duruyor."
+    },
+    {
+      "seedKey": "pergola-ve-kamelyalar/WhatsApp Image 2026-08-07 at 17.59.56 (3).webp",
+      "action": "move",
+      "toCategory": "korkuluk-ve-cit",
+      "reason": "Teras duvarı üstünde çapraz çıtalı paravan; korkuluk/paravan işi, pergola görünmüyor."
+    },
+    {
+      "seedKey": "pergola-ve-kamelyalar/WhatsApp Image 2026-08-07 at 18.00.40.webp",
+      "action": "keep",
+      "reason": "T biçimli ahşap direk sıraları; çardak ya da asma desteği olarak pergola grubunda kalabilir. Başlık \"çardak\" diyor ama fotoğrafta çardak yok; metin düzeltildi. Asma desteği olduğunu teyit ederseniz metne eklenebilir.",
+      "fixes": {
+        "title": {
+          "tr": "Bahçede T biçimli ahşap direk sıraları",
+          "en": "Rows of T-shaped timber posts in a garden"
+        },
+        "alt": {
+          "tr": "Bahçede sıra hâlinde dikilmiş yuvarlak ahşap direkler; üstlerinde yatay ahşap kollar var",
+          "en": "Rows of round timber posts set out in a garden, each topped with a horizontal timber cross-arm"
+        },
+        "caption": {
+          "tr": "Bahçede sıra hâlinde dikilen T biçimli ahşap direkler. Yatay kollar yuvarlak direklerin üstüne bağlandı.",
+          "en": "T-shaped timber posts set out in rows in a garden, with horizontal arms fixed to the tops of round posts."
+        }
+      }
+    },
+    {
+      "seedKey": "pergola-ve-kamelyalar/img3.webp",
+      "action": "hide",
+      "reason": "Aynı fotoğraf zaten kopru-ve-iskele/img3-1.webp olarak var; kopya."
+    },
+    {
+      "seedKey": "korkuluk-ve-cit/19.webp",
+      "action": "hide",
+      "reason": "Aynı fotoğraf zaten ahsap-yapilar/19.webp olarak var; kopya."
+    },
+    {
+      "seedKey": "korkuluk-ve-cit/27.webp",
+      "action": "hide",
+      "reason": "Aynı fotoğraf zaten kapi-dolap-ve-seperator/27.webp olarak var; kopya."
+    },
+    {
+      "seedKey": "korkuluk-ve-cit/34.webp",
+      "action": "hide",
+      "reason": "Aynı fotoğraf zaten kapi-dolap-ve-seperator/34.webp olarak var; kopya."
+    },
+    {
+      "seedKey": "korkuluk-ve-cit/38.webp",
+      "action": "hide",
+      "reason": "Aynı fotoğraf zaten ciceklik-ve-oturma-grubu/38.webp olarak var; kopya."
+    },
+    {
+      "seedKey": "korkuluk-ve-cit/62.webp",
+      "action": "hide",
+      "reason": "Aynı fotoğraf zaten ahsap-yapilar/62.webp olarak var; kopya."
+    },
+    {
+      "seedKey": "kopru-ve-iskele/IMG_20150623_141949.jpg1_.webp",
+      "action": "keep",
+      "reason": "Kavisli kirişin tutkallama aşaması; kavisli köprü imalatı olabilir, köprüye ait olduğunu teyit edin. Teyit yoksa gizleyin."
+    },
+    {
+      "seedKey": "kopru-ve-iskele/img6.webp",
+      "action": "keep",
+      "reason": "Köprü serisindeki (img1–img15) korkuluk direği montajı; imalat aşamasını gösteriyor."
+    },
+    {
+      "seedKey": "merdivenler/4-3.webp",
+      "action": "hide",
+      "reason": "Aynı fotoğraf zaten deck-ve-zeminler/9-2.webp olarak var; kopya."
+    },
+    {
+      "seedKey": "merdivenler/IMG_20180523_164159.webp",
+      "action": "hide",
+      "reason": "Kulübe içindeki şap zemin; merdiven yok, bitmemiş iş ve konu dışı. Şu an Merdivenler'in otomatik kapağı bu fotoğraf (en geniş görsel); gizlenince kapak değişir."
+    },
+    {
+      "seedKey": "merdivenler/WhatsApp Image 2026-08-07 at 18.00.05 (2).webp",
+      "action": "move",
+      "toCategory": "korkuluk-ve-cit",
+      "reason": "Beyaz bahçe kapısı; merdiven yok. Bahçe kapıları bu kategoride toplanıyor (örnek: korkuluk-ve-cit/14-1)."
+    },
+    {
+      "seedKey": "ciceklik-ve-oturma-grubu/37354501_2002494806461775_4855452479359287296_n.webp",
+      "action": "move",
+      "toCategory": "korkuluk-ve-cit",
+      "reason": "Siyah çerçeveli, ahşap çıtalı bahçe kapısı; çiçeklik ya da oturma grubu değil."
+    },
+    {
+      "seedKey": "ciceklik-ve-oturma-grubu/37416566_2002495076461748_1297389996692471808_n.webp",
+      "action": "move",
+      "toCategory": "korkuluk-ve-cit",
+      "reason": "Aynı tip bahçe kapısının farklı bir fotoğrafı; bahçe kapısı."
+    },
+    {
+      "seedKey": "ciceklik-ve-oturma-grubu/39243115_2051741308203791_98833588392296448_n.webp",
+      "action": "move",
+      "toCategory": "kapi-dolap-ve-seperator",
+      "reason": "Klima dış ünitesi için ahşap kasa ve çıtalı panel; dolap/kasa işi."
+    },
+    {
+      "seedKey": "ciceklik-ve-oturma-grubu/WhatsApp Image 2026-08-07 at 18.00.06 (2).webp",
+      "action": "move",
+      "toCategory": "kapi-dolap-ve-seperator",
+      "reason": "Kapaklı uzun ahşap dolap; oturma işlevi fotoğraftan anlaşılmıyor."
+    },
+    {
+      "seedKey": "ciceklik-ve-oturma-grubu/WhatsApp-Image-2021-04-30-at-20.41.53-1.webp",
+      "action": "move",
+      "toCategory": "mobilya-ve-cila",
+      "reason": "Karo kaplı tekerlekli sehpa; mobilya."
+    },
+    {
+      "seedKey": "ciceklik-ve-oturma-grubu/img1.webp",
+      "action": "hide",
+      "reason": "Aynı fotoğraf zaten kopru-ve-iskele/img1.webp olarak var; kopya."
+    },
+    {
+      "seedKey": "kapi-dolap-ve-seperator/1-2.webp",
+      "action": "move",
+      "toCategory": "mobilya-ve-cila",
+      "reason": "Dış mekân yemek masası; mobilya."
+    },
+    {
+      "seedKey": "kapi-dolap-ve-seperator/14088607_1234325203278743_4558274487196146018_n.webp",
+      "action": "move",
+      "toCategory": "ahsap-yapilar",
+      "reason": "Bahçe deposu; Ahşap Yapılar'a ait. ahsap-yapilar/30.webp aynı deponun düşük çözünürlüklü kopyası; bu 2560 px'lik sürüm taşınınca o gizlenebilir."
+    },
+    {
+      "seedKey": "kapi-dolap-ve-seperator/1476218_672566129454656_1898661068_n.webp",
+      "action": "move",
+      "toCategory": "mobilya-ve-cila",
+      "reason": "Şömine üstü ahşap kiriş ve konsollar; iç mekân ahşap işi, kapı/dolap değil."
+    },
+    {
+      "seedKey": "kapi-dolap-ve-seperator/20264838_1593382434039683_318923615082542297_n.webp",
+      "action": "move",
+      "toCategory": "mobilya-ve-cila",
+      "reason": "Dekoratif ahşap duvar panosu; iç mekân ahşap işi."
+    },
+    {
+      "seedKey": "kapi-dolap-ve-seperator/21-1.webp",
+      "action": "move",
+      "toCategory": "ahsap-yapilar",
+      "reason": "Köpek kulübesi; küçük ahşap yapı."
+    },
+    {
+      "seedKey": "kapi-dolap-ve-seperator/26169459_1762669607110964_7510602167361803329_n.webp",
+      "action": "move",
+      "toCategory": "ciceklik-ve-oturma-grubu",
+      "reason": "Sarmaşık için duvara monte çıtalı panel; bitki işi. (Diğer sarmaşık kafesleriyle birlikte.)"
+    },
+    {
+      "seedKey": "kapi-dolap-ve-seperator/34.webp",
+      "action": "move",
+      "toCategory": "mobilya-ve-cila",
+      "reason": "Banyo küveti ön yüzüne ahşap çıta kaplama; iç mekân özel imalat."
+    },
+    {
+      "seedKey": "kapi-dolap-ve-seperator/60823172_2490831890961395_4779172571692138496_n.webp",
+      "action": "hide",
+      "reason": "Başka bir markanın logolu ışıklı tabelası; atölyede çekilmiş, hizmet kategorilerine uymuyor."
+    },
+    {
+      "seedKey": "kapi-dolap-ve-seperator/67154201_2591747794203137_4497047160839208960_n.webp",
+      "action": "move",
+      "toCategory": "ahsap-yapilar",
+      "reason": "Köpek kulübesi; küçük ahşap yapı."
+    },
+    {
+      "seedKey": "kapi-dolap-ve-seperator/96.webp",
+      "action": "move",
+      "toCategory": "ahsap-yapilar",
+      "reason": "Ahşap bahçe deposu ve önündeki zemin; depo öne çıkıyor."
+    },
+    {
+      "seedKey": "kapi-dolap-ve-seperator/WhatsApp Image 2026-08-07 at 18.00.06 (3).webp",
+      "action": "keep",
+      "reason": "Ahşap pencere kepengi; kapı/kapak işi. Açıklamadaki \"özel ölçüde üretilen\" fotoğraftan görülmüyor, çıkarıldı.",
+      "fixes": {
+        "caption": {
+          "tr": "Açık renk dış duvardaki pencereye takılan, siyah ferforje menteşeli çift kanatlı ahşap kepenk.",
+          "en": "Double-leaf wooden window shutters with black wrought-iron hinges, fitted to a window on a light exterior wall."
+        }
+      }
+    },
+    {
+      "seedKey": "kapi-dolap-ve-seperator/WhatsApp Image 2026-08-07 at 18.00.08.webp",
+      "action": "keep",
+      "reason": "Bahçe duşunun ahşap kapı kanatları ve çıtalı zemini; kapı işi görünüyor."
+    },
+    {
+      "seedKey": "kapi-dolap-ve-seperator/WhatsApp Image 2026-08-07 at 18.00.09 (2).webp",
+      "action": "move",
+      "toCategory": "mobilya-ve-cila",
+      "reason": "Doğal kenarlı masif masa tablası; mobilya."
+    },
+    {
+      "seedKey": "kapi-dolap-ve-seperator/WhatsApp-Image-2021-04-30-at-20.41.44-1-1.webp",
+      "action": "move",
+      "toCategory": "ciceklik-ve-oturma-grubu",
+      "reason": "Duvara monte sarmaşık kafesi; bitki işi. Başlıktaki \"sarmaşık teli\" yanlış (tel değil ahşap kafes), boya iddiası fotoğraftan görülmüyor.",
+      "fixes": {
+        "title": {
+          "tr": "Duvara monte ahşap sarmaşık kafesi",
+          "en": "Wall-mounted wooden climbing trellis"
+        },
+        "caption": {
+          "tr": "Bahçe duvarına sabitlenen kare gözlü ahşap kafes. Sarmaşık kafese sarılarak yukarı çıkıyor.",
+          "en": "A square-grid wooden trellis fixed to a garden wall, with a climbing plant growing up it."
+        }
+      }
+    },
+    {
+      "seedKey": "kapi-dolap-ve-seperator/WhatsApp-Image-2021-04-30-at-20.41.44-2.webp",
+      "action": "move",
+      "toCategory": "ciceklik-ve-oturma-grubu",
+      "reason": "Duvara monte sarmaşık kafesi; bitki işi. Başlıktaki \"sarmaşık teli\" yanlış: tel değil, ahşap kafes.",
+      "fixes": {
+        "title": {
+          "tr": "Duvara monte ahşap sarmaşık kafesi",
+          "en": "Wall-mounted wooden climbing trellis"
+        },
+        "caption": {
+          "tr": "Bahçe duvarına sabitlenen, dikey ve yatay çıtalardan oluşan ahşap sarmaşık kafesi. Bitki çıtaların arasından yukarı sarılıyor.",
+          "en": "A wooden trellis of vertical and horizontal battens fixed to a garden wall, with a plant climbing through it."
+        }
+      }
+    },
+    {
+      "seedKey": "mobilya-ve-cila/01cc3cf5-0ef5-4536-95fe-18afbb97874a.webp",
+      "action": "move",
+      "toCategory": "kapi-dolap-ve-seperator",
+      "reason": "Koridorda siyah kapılar ve kasalar; kapı işi. Kapıların ahşap olduğu fotoğraftan anlaşılmıyor, metinden \"ahşap\" ve \"güçlü kontrast\" çıkarıldı. Ahşap değilse gizleyin.",
+      "fixes": {
+        "title": {
+          "tr": "Koridorda siyah kapılar ve kasalar",
+          "en": "Black doors and frames in a corridor"
+        },
+        "alt": {
+          "tr": "Beyaz zeminli dar koridorda siyah kapılar ve kasalar, ortada ızgara paspas",
+          "en": "Narrow corridor with a white floor, black doors and frames, and a grate mat in the middle"
+        },
+        "caption": {
+          "tr": "Koridordaki kapılar ve kasalar siyah. Zemin beyaz, duvarlarda mermer desenli kaplama var.",
+          "en": "The corridor doors and frames are black, with a white floor and marble-pattern wall cladding."
+        }
+      }
+    },
+    {
+      "seedKey": "mobilya-ve-cila/2b1c483d-c836-416b-8863-70d472616be3.webp",
+      "action": "hide",
+      "reason": "Mutfak ve tavan genel görünümü; ahşap iş seçilemiyor, düşük ışık."
+    },
+    {
+      "seedKey": "mobilya-ve-cila/435e02ca-f074-4bfc-aa47-bb26d41d8406.webp",
+      "action": "hide",
+      "reason": "Banyo (ayna, mermer tezgâh, cam duşakabin); fotoğrafta ahşap iş yok."
+    },
+    {
+      "seedKey": "mobilya-ve-cila/4747c67c-fd27-420e-832f-e000a0c21295.webp",
+      "action": "hide",
+      "reason": "Açık ofis masaları ve kumaş paravanlar; ahşap iş görünmüyor."
+    },
+    {
+      "seedKey": "mobilya-ve-cila/68046448-0b1b-46b1-9b9f-d6bd172e5836.webp",
+      "action": "hide",
+      "reason": "Ofis girişi, cam kapı ve başka bir markanın ışıklı tabelası; ahşap iş görünmüyor."
+    },
+    {
+      "seedKey": "mobilya-ve-cila/714d8202-2479-4eac-a30b-4a450a35ab9d.webp",
+      "action": "hide",
+      "reason": "Bronz ayna kaplı koridor; ahşap iş yok (mevcut açıklama da bunu söylüyor)."
+    },
+    {
+      "seedKey": "mobilya-ve-cila/88e6f349-d742-4616-91c9-595feb7c3eb6.webp",
+      "action": "hide",
+      "reason": "Ofis masası ve kumaş duvar paneli; ahşap iş görünmüyor."
+    },
+    {
+      "seedKey": "mobilya-ve-cila/9b2a2584-7efd-461c-a74c-2d2311204f19.webp",
+      "action": "move",
+      "toCategory": "kapi-dolap-ve-seperator",
+      "reason": "Yıldız motifli oymalı çift kanatlı ahşap kapı; kapı işi."
+    },
+    {
+      "seedKey": "mobilya-ve-cila/bf36a488-dd2a-4fdb-97e3-291f7da4880f.webp",
+      "action": "hide",
+      "reason": "Siyah çerçeveli füme cam kapı; ahşap iş görünmüyor."
+    },
+    {
+      "seedKey": "mobilya-ve-cila/c3193239-90d7-4b67-9ed8-12b0e54ef0a3.webp",
+      "action": "move",
+      "toCategory": "kapi-dolap-ve-seperator",
+      "reason": "Cam bölme ve yanındaki dikey çıtalı panel; seperatör/bölme işi."
+    },
+    {
+      "seedKey": "boya-tamir-ve-bakim/WhatsApp-Image-2021-04-30-at-20.41.55-2-1.webp",
+      "action": "hide",
+      "reason": "Aynı fotoğraf zaten ireko-teak/WhatsApp-Image-2021-06-27-at-20.13.42-3.webp olarak var; kopya."
+    }
+  ],
+  "covers": {
+    "ahsap-yapilar": [
+      "ahsap-yapilar/965846_672567792787823_2038390235_o.webp",
+      "ahsap-yapilar/55-1.webp"
+    ],
+    "deck-ve-zeminler": [
+      "deck-ve-zeminler/IMG_20180503_114721.jpg1_.webp",
+      "deck-ve-zeminler/IMG_20180604_164216.jpg1_.webp"
+    ],
+    "pergola-ve-kamelyalar": [
+      "pergola-ve-kamelyalar/251820_406039149440690_716310992_n.webp",
+      "pergola-ve-kamelyalar/598608_406038439440761_1961507705_n.webp"
+    ],
+    "korkuluk-ve-cit": [
+      "korkuluk-ve-cit/WhatsApp Image 2026-08-07 at 17.59.57 (2).webp",
+      "korkuluk-ve-cit/11-1.jpg1_-1.webp"
+    ],
+    "kopru-ve-iskele": [
+      "kopru-ve-iskele/img10.webp",
+      "kopru-ve-iskele/img11.webp"
+    ],
+    "merdivenler": [
+      "merdivenler/31.webp",
+      "merdivenler/17-1.webp"
+    ],
+    "ciceklik-ve-oturma-grubu": [
+      "ciceklik-ve-oturma-grubu/36040198_1957699650941291_1402449926159335424_n.webp",
+      "ciceklik-ve-oturma-grubu/34411599_1929538933757363_3219014968296865792_n.webp"
+    ],
+    "kapi-dolap-ve-seperator": [
+      "kapi-dolap-ve-seperator/102.webp",
+      "kapi-dolap-ve-seperator/26165828_1750114745033117_4637695302055954385_n.webp"
+    ],
+    "ireko-teak": [
+      "ireko-teak/WhatsApp-Image-2021-06-27-at-20.13.46-2-1.webp",
+      "ireko-teak/WhatsApp-Image-2021-06-08-at-23.27.44-3-1.webp"
+    ],
+    "mobilya-ve-cila": [
+      "mobilya-ve-cila/a188e2ac-749e-4bcf-b867-3562130102b5.webp",
+      "mobilya-ve-cila/86fb075e-3647-40dc-b134-6ddc810b04ae.webp"
+    ],
+    "boya-tamir-ve-bakim": [
+      "boya-tamir-ve-bakim/10426910_890180967693170_7525110688328373046_n-1.webp",
+      "boya-tamir-ve-bakim/DSC_0296.webp"
+    ]
+  },
+  "heroes": [
+    "deck-ve-zeminler/IMG_20180604_164216.jpg1_.webp",
+    "deck-ve-zeminler/IMG_20180503_114721.jpg1_.webp",
+    "ciceklik-ve-oturma-grubu/IMG_20180601_103750.webp"
+  ]
+}
