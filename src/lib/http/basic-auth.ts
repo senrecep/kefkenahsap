@@ -1,8 +1,8 @@
 const enc = new TextEncoder()
 
-/** Edge-safe HTTP Basic check. `expected` is "user:password"; empty/undefined disables the gate. */
+/** Edge-safe HTTP Basic check. `expected` is "user:password"; empty/undefined or "off" disables the gate. */
 export function isAuthorized(header: string | null, expected: string | undefined): boolean {
-  if (!expected) return true
+  if (!expected || expected === 'off') return true
   if (!header?.startsWith('Basic ')) return false
   let given: Uint8Array
   try {

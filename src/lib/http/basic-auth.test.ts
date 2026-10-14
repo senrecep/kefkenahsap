@@ -9,6 +9,11 @@ describe('basic auth gate', () => {
     expect(isAuthorized(null, '')).toBe(true)
   })
 
+  it('lets everything through when the gate is switched off on purpose ("off")', () => {
+    expect(isAuthorized(null, 'off')).toBe(true)
+    expect(isAuthorized(null, 'OFF')).toBe(false) // exact value only; anything else is a credential
+  })
+
   it('accepts the configured user:password', () => {
     expect(isAuthorized('Basic a2Vma2VuOmRldi1wYXNz', 'kefken:dev-pass')).toBe(true)
   })
