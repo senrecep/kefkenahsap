@@ -124,3 +124,38 @@
   color: var(--theme-error-500);
   font-weight: 600;
 }
+
+.ai-action__label {
+  font-weight: 600;
+}
+
+.ai-action__notes {
+  inline-size: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--theme-elevation-250);
+  border-radius: var(--style-radius-s);
+  background: var(--theme-input-bg, var(--theme-elevation-0));
+  color: var(--theme-text);
+  font: inherit;
+  resize: vertical;
+}
+
+.ai-action__photos {
+  display: grid;
+  gap: 0.25rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.ai-action__photo {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  min-block-size: 3rem;
+}
+
+.ai-action__photo input {
+  inline-size: 1.25rem;
+  block-size: 1.25rem;
+}

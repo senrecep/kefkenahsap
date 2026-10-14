@@ -54,6 +54,13 @@ export const AI_MESSAGES: Record<string, { status: number; message: string }> = 
   'Translate.NothingMissing': { status: 400, message: 'Tüm diller zaten dolu; çevrilecek eksik dil yok.' },
   'Translate.TooLong': { status: 400, message: 'Metin bir seferde çevrilemeyecek kadar uzun (en çok 20.000 karakter). Bir kısmını elle çevirin.' },
   'Translate.SchemaMismatch': { status: 502, message: 'AI çevirisi eksik geldi; hiçbir şey kaydedilmedi. Tekrar deneyin.' },
+  'Draft.BadRequest': { status: 400, message: 'Bu kayıt için taslak yazılamaz.' },
+  'Draft.NotFound': { status: 404, message: 'Kayıt bulunamadı. Önce kaydedin.' },
+  'Draft.NotesRequired': { status: 400, message: 'En az bir not yazın (her satıra bir madde).' },
+  'Draft.NotesTooLong': { status: 400, message: 'Notlar çok uzun: en çok 40 madde ve 4.000 karakter.' },
+  'Draft.NotEmpty': { status: 400, message: 'Bu alan dolu; taslak yalnızca boş alana yazılır.' },
+  'Draft.TitleRequired': { status: 400, message: 'Önce Türkçe başlığı yazıp kaydedin.' },
+  'Draft.SaveFailed': { status: 500, message: 'Taslak kaydedilemedi. Tekrar deneyin.' },
   'Translate.SaveFailed': { status: 500, message: 'Çeviri taslağı kaydedilemedi. Adres (slug) başka bir kayıtta kullanılıyor olabilir.' },
 }
 

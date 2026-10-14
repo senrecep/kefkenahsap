@@ -36,6 +36,15 @@ const RESPONDERS: Partial<Record<AiTask, Responder>> = {
       items: input.segments.map((s) => ({ id: s.id, ...Object.fromEntries(input.targets.map((t) => [t, `[${t.toUpperCase()}] ${s.text.trim()}`])) })),
     }
   },
+  // Drafts restate the notes; the extra `_status` proves the caller drops anything outside the schema.
+  draftGuide: (call) => {
+    const input = JSON.parse(userText(call)) as { title: string; notes: string[] }
+    return { excerpt: `Taslak: ${input.title}`, sections: [{ heading: input.notes[0], paragraphs: input.notes, bullets: [] }], _status: 'published' }
+  },
+  draftProjectStory: (call) => {
+    const input = JSON.parse(userText(call)) as { notes: string[]; photos: string[] }
+    return { paragraphs: [input.notes.join(' '), ...(input.photos.length ? [`Fotoğraflar: ${input.photos.join('; ')}`] : [])], _status: 'published' }
+  },
 }
 
 /** The last fake calls (system prompt + model id), newest last; tests read what the model was told. */

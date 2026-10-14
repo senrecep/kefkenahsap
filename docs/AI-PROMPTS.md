@@ -41,3 +41,10 @@ Admin'de kategori, proje, sayfa ve yazı düzenleme ekranının yan panelindeki 
 - Sonuç her dil için **taslak sürüm** olarak kaydedilir; yayındaki sürüm değişmez, yayın bir insanın "Yayınla"sıyla olur.
 - **Dikkat:** Payload'da yayın durumu dil başına değil, kayıt başınadır. Bir sonraki **Yayınla** bu dilleri de yayınlar; önce kontrol edin. Düğme bunu başarı mesajında da söyler. (Payload 3.90'daki deneysel `localizeStatus` dil başına yayını sağlar ama şema göçü ve herkese açık okuma kurallarında (`_status`) değişiklik ister; deneysel olduğu için şimdilik açılmadı.)
 - Uç nokta yalnızca giriş yapmış yönetim kullanıcısına ve `application/json` isteğe açıktır, kullanıcı başına 10 dakikada 10 istekle sınırlıdır ve aylık bütçe kontrolünden geçer (`src/ai/guard.ts`). Bir basışta en çok ~20.000 karakter kaynak metin gönderilir (`Translate.TooLong`); tahmini maliyet kalan bütçeyi aşarsa model çağrılmaz (`AI.BudgetInsufficient`). Hata mesajları her kod için sabit Türkçe metindir; ayrıntılar yalnızca sunucu günlüğüne yazılır.
+
+## Taslak (`prompts/draft.ts`, `draft@1`)
+Yazı ve proje düzenleme ekranlarındaki **AI ile taslak** (`POST /api/ai/draft`): başlık + editörün madde notları + isteğe bağlı seçilen fotoğrafların açıklamaları → boş yazı gövdesi ve kısa cevap (yazılar, `draftGuide`) ya da boş proje hikayesi (`draftProjectStory`).
+- Model yalnızca notları, fotoğraf açıklamalarını ve Site Bilgileri'nin **dolu** alanlarını olgu olarak kullanabilir; başka yıl, sayı, fiyat, garanti, iddia yazamaz.
+- Sonuç **her zaman taslak sürümdür**: güncellemeyi yalnızca `draftUpdateArgs` kurar (`draft: true`, `_status` silinir); uç nokta istekten yalnızca `collection, id, notes, mediaIds` okur. Dolu gövde/hikaye üzerine yazılmaz.
+- Fotoğraf açıklamaları yalnızca bu kaydın kendi galerisinden/kapağından ve **onaylı** (yayında) görsellerden alınır.
+- Aynı güvenlik kapısı: giriş yapmış yönetim kullanıcısı, yalnızca JSON istek, sıkı id kontrolü, kullanıcı başına sınır, aylık bütçe; hata mesajları kod başına sabit Türkçe metin.
