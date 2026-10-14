@@ -56,7 +56,7 @@ compose
 └─ s3 (RustFS) [profile: local]  — prod'da R2 kullanılır
 ```
 - `docker-compose.dokploy.yml`: `dokploy-network` external, Traefik yönlendirmesi Dokploy UI'dan (kullanıcının diğer projeleriyle aynı pattern).
-- Yedek: Dokploy'un Postgres backup'ı → R2 (ayrı bucket, 30 gün). Medya R2'de (bucket versioning açık). Geri yükleme prosedürü `docs/RUNBOOK.md`.
+- Yedek: compose `kefken-backup` servisi (profile `backup`) her gece `pg_dump` → sunucuda son 14 kopya + özel R2 bucket `kefkenahsap-backups` (30 gün lifecycle). Dokploy'un Postgres backup'ı compose içindeki Postgres'e uymadığı için kullanılmadı. Medya R2'de (bucket versioning açık). Geri yükleme prosedürü `docs/RUNBOOK.md`.
 - Sunucudaki hiçbir paylaşımlı servise bağımlılık yok.
 
 ### 3.3 Render stratejisi

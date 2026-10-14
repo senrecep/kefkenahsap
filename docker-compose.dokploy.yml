@@ -26,6 +26,7 @@ services:
       RESEND_API_KEY: ${RESEND_API_KEY:-}
       LEADS_NOTIFY_EMAIL: ${LEADS_NOTIFY_EMAIL:-}
       SENTRY_DSN: ${SENTRY_DSN:-}
+      DEBUG_ERROR_TOKEN: ${DEBUG_ERROR_TOKEN:-}
       NEXT_PUBLIC_GA_ID: ${NEXT_PUBLIC_GA_ID:-}
       NEXT_PUBLIC_UMAMI_WEBSITE_ID: ${NEXT_PUBLIC_UMAMI_WEBSITE_ID:-}
       NEXT_PUBLIC_UMAMI_SRC: ${NEXT_PUBLIC_UMAMI_SRC:-}
@@ -127,6 +128,67 @@ services:
     image: valkey/valkey:8-alpine
     profiles: [observability]
     restart: unless-stopped
+
+  # Nightly pg_dump of the kefken DB to a host directory (keeps 14), then optionally a copy to a PRIVATE R2 bucket.
+  # Runs at BACKUP_AT (HHMM, UTC). Run now: docker exec <container> touch /backups/.run-now (picked up within a minute).
+  kefken-backup:
+    image: postgres:17-alpine
+    profiles: [backup]
+    restart: unless-stopped
+    environment:
+      PGPASSWORD: ${POSTGRES_PASSWORD:?}
+      BACKUP_AT: ${BACKUP_AT:-0100}
+      SITE_ENV: ${SITE_ENV:?}
+      # Must be a private "*-backups" bucket: dumps hold personal data (leads); the media buckets are public via the CDN.
+      BACKUP_S3_BUCKET: ${BACKUP_S3_BUCKET:-}
+      RCLONE_CONFIG_R2_TYPE: s3
+      RCLONE_CONFIG_R2_PROVIDER: Cloudflare
+      RCLONE_CONFIG_R2_ENDPOINT: ${S3_ENDPOINT:?}
+      RCLONE_CONFIG_R2_ACCESS_KEY_ID: ${S3_ACCESS_KEY_ID:?}
+      RCLONE_CONFIG_R2_SECRET_ACCESS_KEY: ${S3_SECRET_ACCESS_KEY:?}
+    volumes:
+      - /var/lib/kefken-backups/${SITE_ENV:?}:/backups
+    entrypoint: ['/bin/sh', '-c']
+    command:
+      - |
+        umask 077; chmod 700 /backups
+        log() { echo "$$(date -u +%FT%TZ) backup: $$*"; }
+        upload() {
+          case "$$BACKUP_S3_BUCKET" in
+            '') log "R2 upload skipped: BACKUP_S3_BUCKET not set"; return ;;
+            *-backups) ;;
+            *) log "R2 upload refused: '$$BACKUP_S3_BUCKET' is not a private *-backups bucket"; return ;;
+          esac
+          command -v rclone >/dev/null || apk add --no-cache -q rclone >/dev/null 2>&1 || { log "R2 upload skipped: rclone install failed"; return; }
+          if out=$$(rclone copyto "$$1" "r2:$$BACKUP_S3_BUCKET/$$SITE_ENV/$${1##*/}" --s3-no-check-bucket 2>&1); then
+            log "uploaded to r2:$$BACKUP_S3_BUCKET/$$SITE_ENV/$${1##*/}"
+          elif echo "$$out" | grep -qE 'AccessDenied|403'; then
+            log "R2 upload skipped: access denied to $$BACKUP_S3_BUCKET (token not widened yet); local copy kept"
+          else
+            log "R2 upload FAILED: $$(echo "$$out" | tail -n 1)"
+          fi
+        }
+        run() {
+          f=/backups/kefken-$$(date -u +%Y%m%d-%H%M%S).dump
+          # Temp name first: a failed dump never replaces or rotates out a good one.
+          if pg_dump -h kefken-postgres -U kefken -d kefken -Fc -f "$$f.part" && mv "$$f.part" "$$f"; then
+            log "wrote $$f ($$(du -h "$$f" | cut -f1))"
+            ls -1t /backups/kefken-*.dump | tail -n +15 | xargs -r rm -f
+            upload "$$f"
+          else
+            rm -f "$$f.part"; log "pg_dump FAILED"
+          fi
+        }
+        log "scheduled daily at $$BACKUP_AT UTC"
+        while :; do
+          if [ "$$(date -u +%H%M)" = "$$BACKUP_AT" ] || [ -e /backups/.run-now ]; then
+            rm -f /backups/.run-now; run; sleep 60
+          fi
+          sleep 20
+        done
+    depends_on:
+      kefken-postgres:
+        condition: service_healthy
 
 volumes:
   pgdata:
