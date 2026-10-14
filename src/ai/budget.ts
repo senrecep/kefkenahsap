@@ -7,7 +7,10 @@ export function monthStart(clock: DateTimeProvider): Date {
   return new Date(Date.UTC(n.getUTCFullYear(), n.getUTCMonth(), 1))
 }
 
-/** Monthly AI spend cap (aiSettings.monthlyBudgetUsd); empty = no cap. */
+/**
+ * Monthly AI spend cap (aiSettings.monthlyBudgetUsd); empty = no cap.
+ * shortcut: check-then-spend is not atomic — parallel jobs can overshoot by ~one call each; fine at this volume, add a DB lock if usage grows.
+ */
 export function checkBudget(spentUsd: number, budgetUsd: number | null | undefined): VoidResult {
   if (budgetUsd == null) return Result.ok()
   return spentUsd < budgetUsd

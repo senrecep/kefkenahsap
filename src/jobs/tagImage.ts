@@ -27,9 +27,16 @@ export const tagImageTask: TaskConfig<'tagImage'> = {
     if (Result.isFailure(budget)) return { output: { result: budget.errors[0]!.code } }
 
     const media = await payload.findByID({ collection: 'media', id: input.mediaId, depth: 1, locale: 'tr', req })
-    const src = media.sizes?.w960?.url || media.url
-    if (!src) return { output: { result: 'Media.NoFile' } }
-    const image = new Uint8Array(await (await fetch(src)).arrayBuffer())
+    // Idempotent: a retried job never pays twice for the same image.
+    if ((media.aiSuggestion as { at?: string } | null)?.at) return { output: { result: 'skipped:already-suggested' } }
+    const sized = media.sizes?.w960
+    const rel = sized?.url || media.url
+    if (!rel) return { output: { result: 'Media.NoFile' } }
+    const src = new URL(rel, process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000').toString()
+    const res = await fetch(src)
+    if (!res.ok) return { output: { result: `Media.FetchFailed:${res.status}` } }
+    const image = new Uint8Array(await res.arrayBuffer())
+    const mediaType = (sized?.url ? sized.mimeType : media.mimeType) || 'image/webp'
     const category = typeof media.category === 'object' && media.category ? media.category.name : 'belirtilmemiş'
 
     const run = await runStructured({
@@ -42,7 +49,7 @@ export const tagImageTask: TaskConfig<'tagImage'> = {
           role: 'user',
           content: [
             { type: 'text', text: `Kategori: ${category}` },
-            { type: 'image', image, mediaType: 'image/webp' },
+            { type: 'image', image, mediaType },
           ],
         },
       ],
@@ -73,7 +80,8 @@ export const tagImageTask: TaskConfig<'tagImage'> = {
         aiSuggestion: { ...output, model, promptVersion: TAG_IMAGE_PROMPT_VERSION, at: SystemDateTimeProvider.utcNow().toISOString() },
       },
     })
-    const en = await payload.findByID({ collection: 'media', id: media.id, locale: 'en', depth: 0, req })
+    // fallbackLocale false: an empty EN field must read as empty, not as the TR value.
+    const en = await payload.findByID({ collection: 'media', id: media.id, locale: 'en', fallbackLocale: false, depth: 0, req })
     await payload.update({
       collection: 'media',
       id: media.id,

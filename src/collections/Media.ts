@@ -49,9 +49,14 @@ const publishGate: CollectionBeforeChangeHook = async ({ data, req, originalDoc,
 const queueAiSuggestion: CollectionAfterChangeHook = async ({ doc, operation, req, context }) => {
   if (operation !== 'create' || context?.skipAi || doc.status === 'approved') return doc
   if (!process.env.OPENROUTER_API_KEY || process.env.NODE_ENV === 'test') return doc
-  const settings = await req.payload.findGlobal({ slug: 'aiSettings', req })
-  if (settings.enabled === false) return doc
-  await req.payload.jobs.queue({ task: 'tagImage', input: { mediaId: String(doc.id) }, req })
+  try {
+    const settings = await req.payload.findGlobal({ slug: 'aiSettings', req })
+    if (settings.enabled === false) return doc
+    await req.payload.jobs.queue({ task: 'tagImage', input: { mediaId: String(doc.id) }, req })
+  } catch (err) {
+    // A suggestion is optional; never fail an upload because queueing it failed.
+    req.payload.logger.warn({ err, media: doc.id }, 'media: could not queue AI suggestion')
+  }
   return doc
 }
 

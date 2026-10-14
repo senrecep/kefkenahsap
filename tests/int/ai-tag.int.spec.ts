@@ -81,6 +81,18 @@ describe('tagImage job', () => {
     expect(tr.title).toBe(SUGGESTION.title.tr)
   })
 
+  it('a retried job does not call the model again', async () => {
+    const m = await payload.create({ collection: 'media', data: {}, filePath: IMG })
+    created.push({ collection: 'media', id: m.id })
+    await payload.jobs.queue({ task: 'tagImage', input: { mediaId: String(m.id) } })
+    await payload.jobs.run()
+    await payload.jobs.queue({ task: 'tagImage', input: { mediaId: String(m.id) } })
+    await payload.jobs.run()
+    const usage = await payload.find({ collection: 'ai-usage', where: { docRef: { equals: `media:${m.id}` } } })
+    usage.docs.forEach((d) => created.push({ collection: 'ai-usage', id: d.id }))
+    expect(usage.totalDocs).toBe(1)
+  })
+
   it('stops when the monthly budget is used up', async () => {
     await payload.updateGlobal({ slug: 'aiSettings', data: { monthlyBudgetUsd: 0 } })
     const m = await payload.create({ collection: 'media', data: {}, filePath: IMG })
