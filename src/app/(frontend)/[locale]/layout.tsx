@@ -26,7 +26,7 @@ const sourceSans = localFont({ src: '../../fonts/SourceSans3.woff2', weight: '40
 const montserratCyr = localFont({ src: '../../fonts/Montserrat-cyrillic.woff2', weight: '600', variable: '--font-montserrat-cyr', display: 'swap', preload: false, adjustFontFallback: false, declarations: [{ prop: 'unicode-range', value: 'U+0400-045F, U+0490-0491, U+2116' }] })
 const sourceSansCyr = localFont({ src: '../../fonts/SourceSans3-cyrillic.woff2', weight: '400 600', variable: '--font-source-sans-cyr', display: 'swap', preload: false, adjustFontFallback: false, declarations: [{ prop: 'unicode-range', value: 'U+0400-045F, U+0490-0491, U+2116' }] })
 // Arabic (ar): Montserrat / Source Sans 3 have no Arabic glyphs, so Noto Sans Arabic serves both roles, same loading rules.
-const notoArabic = localFont({ src: '../../fonts/NotoSansArabic.woff2', weight: '400 700', variable: '--font-arabic', display: 'swap', preload: false, adjustFontFallback: false, declarations: [{ prop: 'unicode-range', value: 'U+0600-06FF' }] })
+const notoArabic = localFont({ src: '../../fonts/NotoSansArabic.woff2', weight: '400 700', variable: '--font-arabic', display: 'swap', preload: false, adjustFontFallback: false, declarations: [{ prop: 'unicode-range', value: 'U+0600-06FF, U+0750-077F, U+FB50-FDFF, U+FE70-FEFF, U+200C-200F, U+2066-2069' }] })
 
 // Pages read CMS data per request (cached via unstable_cache tags + Cloudflare edge); no DB needed at build time.
 export const dynamic = 'force-dynamic'

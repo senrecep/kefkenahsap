@@ -2,7 +2,7 @@ import { BlocksFeature, EXPERIMENTAL_TableFeature, HeadingFeature, lexicalEditor
 import type { Block, CollectionConfig } from 'payload'
 
 import { isStaff, publishedOrStaff } from '@/access'
-import { slugFrom } from '@/hooks/slug'
+import { slugFrom, validSlug } from '@/hooks/slug'
 import { revalidateAfterChange, revalidateAfterDelete } from '@/hooks/revalidate'
 import { aiDraftField, aiTranslateField } from './aiFields'
 
@@ -52,6 +52,7 @@ export const Guides: CollectionConfig = {
       unique: true,
       index: true,
       hooks: { beforeValidate: [slugFrom('title')] },
+      validate: validSlug,
       admin: { position: 'sidebar', description: 'Boş bırakılırsa başlıktan üretilir.' },
     },
     { name: 'excerpt', type: 'textarea', localized: true, label: 'Kısa cevap (ilk paragraf, en çok 150 kelime)' },

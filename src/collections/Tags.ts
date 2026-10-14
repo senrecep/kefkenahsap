@@ -1,7 +1,7 @@
 import type { CollectionConfig } from 'payload'
 
 import { hiddenFromEditor, isStaff } from '@/access'
-import { slugFrom } from '@/hooks/slug'
+import { slugFrom, validSlug } from '@/hooks/slug'
 import { revalidateAfterChange, revalidateAfterDelete } from '@/hooks/revalidate'
 
 export const Tags: CollectionConfig = {
@@ -12,7 +12,7 @@ export const Tags: CollectionConfig = {
   access: { read: () => true, create: isStaff, update: isStaff, delete: isStaff },
   fields: [
     { name: 'name', type: 'text', localized: true, required: true, label: 'Ad' },
-    { name: 'slug', type: 'text', localized: true, unique: true, index: true, hooks: { beforeValidate: [slugFrom('name')] } },
+    { name: 'slug', type: 'text', localized: true, unique: true, index: true, hooks: { beforeValidate: [slugFrom('name')] }, validate: validSlug },
     {
       name: 'axis',
       type: 'select',

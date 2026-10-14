@@ -1,7 +1,7 @@
 import type { CollectionConfig } from 'payload'
 
 import { hiddenFromEditor, isStaff, publishedOrStaff } from '@/access'
-import { slugFrom } from '@/hooks/slug'
+import { slugFrom, validSlug } from '@/hooks/slug'
 import { revalidateAfterChange, revalidateAfterDelete } from '@/hooks/revalidate'
 import { aiTranslateField } from './aiFields'
 
@@ -24,7 +24,7 @@ export const Pages: CollectionConfig = {
   fields: [
     { name: 'title', type: 'text', localized: true, required: true, label: 'Başlık' },
     aiTranslateField,
-    { name: 'slug', type: 'text', localized: true, unique: true, index: true, hooks: { beforeValidate: [slugFrom('title')] }, admin: { position: 'sidebar' } },
+    { name: 'slug', type: 'text', localized: true, unique: true, index: true, hooks: { beforeValidate: [slugFrom('title')] }, validate: validSlug, admin: { position: 'sidebar' } },
     { name: 'body', type: 'richText', localized: true, label: 'İçerik' },
     {
       name: 'seo',

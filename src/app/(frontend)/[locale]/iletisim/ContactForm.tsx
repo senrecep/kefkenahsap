@@ -195,13 +195,14 @@ export function ContactForm({
       <div className="grid gap-5 sm:grid-cols-2">
         <div>
           {label('phone', t('phoneLabel'), true)}
-          <input id="phone" name="phone" type="tel" inputMode="tel" autoComplete="tel" required aria-invalid={!!err('phone')} aria-describedby={describe('phone', true)} className={field} />
+          {/* Numbers and addresses are typed left-to-right even on an RTL page; aligned with the RTL labels. */}
+          <input id="phone" name="phone" type="tel" inputMode="tel" autoComplete="tel" required aria-invalid={!!err('phone')} aria-describedby={describe('phone', true)} dir="ltr" className={`${field} rtl:text-end`} />
           <p id="phone-hint" className="mt-1.5 text-[0.95rem] text-ink-soft">{t('phoneHint')}</p>
           {errorText('phone', err('phone'))}
         </div>
         <div>
           {label('email', t('emailLabel'))}
-          <input id="email" name="email" type="email" autoComplete="email" aria-invalid={!!err('email')} aria-describedby={describe('email')} className={field} />
+          <input id="email" name="email" type="email" autoComplete="email" aria-invalid={!!err('email')} aria-describedby={describe('email')} dir="ltr" className={`${field} rtl:text-end`} />
           {errorText('email', err('email'))}
         </div>
       </div>
