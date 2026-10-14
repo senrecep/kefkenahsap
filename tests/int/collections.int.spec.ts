@@ -21,6 +21,12 @@ beforeAll(async () => {
     .webp()
     .toFile(IMG)
   payload = await getPayload({ config: await config })
+  // An owner must exist first: in an empty database the first account is promoted to admin by design.
+  const owner = await payload.create({
+    collection: 'users',
+    data: { email: `owner-${stamp}@test.local`, password: 'x-strong-pass', role: 'admin' },
+  })
+  cleanup.push({ collection: 'users', id: owner.id })
   editor = await payload.create({
     collection: 'users',
     data: { email: `editor-${stamp}@test.local`, password: 'x-strong-pass', name: 'Editör', role: 'editor' },
@@ -121,5 +127,46 @@ describe('categories and tags', () => {
     const t = await payload.create({ collection: 'tags', locale: 'tr', data: { name: `Iroko ${stamp}`, axis: 'wood' } })
     cleanup.push({ collection: 'tags', id: t.id })
     expect(t.slug).toBe(`iroko-${stamp}`)
+  })
+})
+
+describe('review follow-ups', () => {
+  it('approving an image that already has Turkish alt text works with a status-only update', async () => {
+    const m = await payload.create({ collection: 'media', locale: 'tr', data: { alt: 'Mevcut alt metin' }, filePath: IMG })
+    cleanup.push({ collection: 'media', id: m.id })
+    const ok = await payload.update({ collection: 'media', id: m.id, locale: 'tr', data: { status: 'approved' } })
+    expect(ok.status).toBe('approved')
+  })
+
+  it('locale "all" cannot approve while blanking the Turkish alt', async () => {
+    const m = await payload.create({ collection: 'media', locale: 'tr', data: { alt: 'Var' }, filePath: IMG })
+    cleanup.push({ collection: 'media', id: m.id })
+    await expect(
+      payload.update({ collection: 'media', id: m.id, locale: 'all' as never, data: { status: 'approved', alt: { tr: '', en: 'x' } } as never }),
+    ).rejects.toThrow(/Türkçe alt metni/)
+  })
+
+  it('renaming a category keeps its existing slug', async () => {
+    const c = await payload.create({ collection: 'categories', locale: 'tr', data: { name: `Sabit ${stamp}` } })
+    cleanup.push({ collection: 'categories', id: c.id })
+    const r = await payload.update({ collection: 'categories', id: c.id, locale: 'tr', data: { name: `Yeni ad ${stamp}` } })
+    expect(r.slug).toBe(`sabit-${stamp}`)
+  })
+
+  it('an admin can be demoted while another admin remains', async () => {
+    const a = await payload.create({ collection: 'users', data: { email: `a1-${stamp}@test.local`, password: 'x-strong-pass', role: 'admin' } })
+    cleanup.push({ collection: 'users', id: a.id })
+    const r = await payload.update({ collection: 'users', id: a.id, data: { role: 'editor' } })
+    expect(r.role).toBe('editor')
+  })
+})
+
+describe('accounts after the owner', () => {
+  it('an editor created once an owner exists stays an editor', async () => {
+    const { totalDocs } = await payload.count({ collection: 'users' })
+    expect(totalDocs).toBeGreaterThan(0) // non-empty here, so an explicit editor stays an editor
+    const u = await payload.create({ collection: 'users', data: { email: `late-${stamp}@test.local`, password: 'x-strong-pass', role: 'editor' } })
+    cleanup.push({ collection: 'users', id: u.id })
+    expect(u.role).toBe('editor')
   })
 })

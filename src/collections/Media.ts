@@ -12,13 +12,19 @@ const widths = [320, 640, 960, 1280, 1920] as const
 const placeholder: CollectionBeforeChangeHook = async ({ data, req }) => {
   const file = req.file?.data
   if (!file) return data
-  const img = sharp(file)
-  const [lqip, stats] = await Promise.all([img.clone().resize(16).webp({ quality: 40 }).toBuffer(), img.clone().stats()])
-  const { r, g, b } = stats.dominant
-  return {
-    ...data,
-    lqip: `data:image/webp;base64,${lqip.toString('base64')}`,
-    dominantColor: `#${[r, g, b].map((v) => v.toString(16).padStart(2, '0')).join('')}`,
+  try {
+    const img = sharp(file)
+    const [lqip, stats] = await Promise.all([img.clone().resize(16).webp({ quality: 40 }).toBuffer(), img.clone().stats()])
+    const { r, g, b } = stats.dominant
+    return {
+      ...data,
+      lqip: `data:image/webp;base64,${lqip.toString('base64')}`,
+      dominantColor: `#${[r, g, b].map((v) => v.toString(16).padStart(2, '0')).join('')}`,
+    }
+  } catch (err) {
+    // A placeholder is cosmetic; never fail the upload because of it.
+    req.payload.logger.warn({ err }, 'media: placeholder generation failed')
+    return data
   }
 }
 
@@ -26,8 +32,11 @@ const placeholder: CollectionBeforeChangeHook = async ({ data, req }) => {
 const publishGate: CollectionBeforeChangeHook = async ({ data, req, originalDoc, operation }) => {
   const status = (data.status ?? originalDoc?.status ?? 'pending') as MediaStatus
   if (status !== 'approved') return data
-  let trAlt: string | null | undefined = req.locale === 'tr' ? data.alt : undefined
-  if (req.locale !== 'tr' && operation === 'update' && originalDoc?.id) {
+  // The Turkish alt that will be stored after this write: sent value first, else what is already saved.
+  let trAlt: string | null | undefined
+  if (req.locale === 'all') trAlt = (data.alt as Record<string, string> | undefined)?.tr
+  else if (req.locale === 'tr') trAlt = data.alt ?? originalDoc?.alt
+  if (trAlt === undefined && operation === 'update' && originalDoc?.id) {
     const tr = await req.payload.findByID({ collection: 'media', id: originalDoc.id, locale: 'tr', depth: 0, req })
     trAlt = tr.alt
   }

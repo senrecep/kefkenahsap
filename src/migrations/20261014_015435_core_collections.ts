@@ -61,8 +61,8 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   
   ALTER TABLE "users" ADD COLUMN "name" varchar;
   ALTER TABLE "users" ADD COLUMN "role" "enum_users_role" DEFAULT 'editor';
-  -- Accounts that existed before roles (the owner's first account) become admins.
-  UPDATE "users" SET "role" = 'admin' WHERE "role" IS NULL OR "role" = 'editor';
+  -- The owner's first account (created before roles existed) becomes admin.
+  UPDATE "users" SET "role" = 'admin' WHERE "id" = (SELECT MIN("id") FROM "users");
   ALTER TABLE "media" ADD COLUMN "status" "enum_media_status" DEFAULT 'pending';
   ALTER TABLE "media" ADD COLUMN "seo_filename" varchar;
   ALTER TABLE "media" ADD COLUMN "featured" boolean;

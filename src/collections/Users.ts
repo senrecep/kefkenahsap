@@ -1,11 +1,31 @@
-import type { CollectionConfig } from 'payload'
+import { APIError, type CollectionBeforeChangeHook, type CollectionConfig } from 'payload'
 
 import { adminOrSelf, isAdmin, isAdminField } from '@/access'
+
+/** First account (created without a logged-in user, i.e. first-register) is the owner → admin. */
+const firstUserIsAdmin: CollectionBeforeChangeHook = async ({ data, operation, req }) => {
+  if (operation === 'create' && !req.user) {
+    const { totalDocs } = await req.payload.count({ collection: 'users', req })
+    if (totalDocs === 0) return { ...data, role: 'admin' }
+  }
+  return data
+}
+
+/** Never leave the site without an admin. */
+export const canDemoteAdmin = (adminCount: number) => adminCount > 1
+
+const keepOneAdmin: CollectionBeforeChangeHook = async ({ data, operation, originalDoc, req }) => {
+  if (operation !== 'update' || originalDoc?.role !== 'admin' || data.role === undefined || data.role === 'admin') return data
+  const { totalDocs } = await req.payload.count({ collection: 'users', where: { role: { equals: 'admin' } }, req })
+  if (!canDemoteAdmin(totalDocs)) throw new APIError('Son yönetici hesabının rolü değiştirilemez.', 400, undefined, true)
+  return data
+}
 
 export const Users: CollectionConfig = {
   slug: 'users',
   admin: { useAsTitle: 'name', defaultColumns: ['name', 'email', 'role'], group: 'Yönetim' },
   auth: { maxLoginAttempts: 8, lockTime: 15 * 60 * 1000 },
+  hooks: { beforeChange: [firstUserIsAdmin, keepOneAdmin] },
   access: {
     admin: ({ req }) => Boolean(req.user),
     read: adminOrSelf,
