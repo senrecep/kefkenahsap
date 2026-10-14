@@ -1,22 +1,64 @@
 import type { CollectionConfig } from 'payload'
 
+import { isStaff, publishedOrStaff } from '@/access'
+import { slugFrom } from '@/hooks/slug'
+
 export const Categories: CollectionConfig = {
   slug: 'categories',
+  labels: { singular: 'Kategori', plural: 'Kategoriler' },
   admin: {
     useAsTitle: 'name',
+    defaultColumns: ['name', 'slug', '_status'],
+    group: 'İçerik',
     livePreview: {
       url: ({ data, locale }) =>
         `${process.env.NEXT_PUBLIC_SITE_URL}/${locale?.code ?? 'tr'}/${data?.slug ?? ''}?preview=1`,
     },
   },
-  // Drafts stay private: anonymous readers only see published documents.
-  access: { read: ({ req }) => (req.user ? true : { _status: { equals: 'published' } }) },
+  access: { read: publishedOrStaff, create: isStaff, update: isStaff, delete: isStaff },
   orderable: true,
   versions: { drafts: true },
   fields: [
-    { name: 'name', type: 'text', localized: true, required: true },
-    { name: 'body', type: 'richText', localized: true },
-    { name: 'slug', type: 'text', localized: true, unique: true, index: true },
+    { name: 'name', type: 'text', localized: true, required: true, label: 'Ad' },
+    {
+      name: 'slug',
+      type: 'text',
+      localized: true,
+      unique: true,
+      index: true,
+      hooks: { beforeValidate: [slugFrom('name')] },
+      admin: { position: 'sidebar', description: 'Boş bırakılırsa addan üretilir.' },
+    },
+    { name: 'shortDesc', type: 'textarea', localized: true, label: 'Kısa açıklama (cevap-önce giriş)' },
+    { name: 'body', type: 'richText', localized: true, label: 'Açıklama (300–600 kelime)' },
+    {
+      name: 'faq',
+      type: 'array',
+      label: 'Sık sorulan sorular',
+      localized: true,
+      fields: [
+        { name: 'q', type: 'text', required: true, label: 'Soru' },
+        { name: 'a', type: 'textarea', required: true, label: 'Cevap' },
+      ],
+    },
+    {
+      name: 'priceGuide',
+      type: 'group',
+      label: 'Fiyat rehberi (boşsa gösterilmez)',
+      fields: [
+        { type: 'row', fields: [
+          { name: 'min', type: 'number', label: 'En az' },
+          { name: 'max', type: 'number', label: 'En çok' },
+          { name: 'unit', type: 'select', label: 'Birim', options: [
+            { label: 'm²', value: 'm2' }, { label: 'metre', value: 'm' }, { label: 'adet', value: 'piece' },
+          ] },
+          { name: 'currency', type: 'select', defaultValue: 'TRY', options: ['TRY', 'EUR', 'USD'] },
+        ] },
+        { name: 'note', type: 'textarea', localized: true, label: 'Not (fiyatı ne belirler?)' },
+        { name: 'updatedAt', type: 'date', label: 'Fiyat güncelleme tarihi' },
+      ],
+    },
+    { name: 'cover', type: 'upload', relationTo: 'media', label: 'Kapak görseli' },
     {
       name: 'media',
       type: 'join',
@@ -24,6 +66,17 @@ export const Categories: CollectionConfig = {
       on: 'category',
       orderable: true,
       defaultLimit: 200,
+      label: 'Görseller (sürükleyerek sıralayın)',
+    },
+    {
+      name: 'seo',
+      type: 'group',
+      label: 'SEO',
+      fields: [
+        { name: 'title', type: 'text', localized: true },
+        { name: 'description', type: 'textarea', localized: true },
+        { name: 'ogImage', type: 'upload', relationTo: 'media' },
+      ],
     },
   ],
 }

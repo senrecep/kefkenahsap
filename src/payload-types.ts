@@ -70,6 +70,7 @@ export interface Config {
     users: User;
     media: Media;
     categories: Category;
+    tags: Tag;
     'payload-kv': PayloadKv;
     'payload-locked-documents': PayloadLockedDocument;
     'payload-preferences': PayloadPreference;
@@ -84,6 +85,7 @@ export interface Config {
     users: UsersSelect<false> | UsersSelect<true>;
     media: MediaSelect<false> | MediaSelect<true>;
     categories: CategoriesSelect<false> | CategoriesSelect<true>;
+    tags: TagsSelect<false> | TagsSelect<true>;
     'payload-kv': PayloadKvSelect<false> | PayloadKvSelect<true>;
     'payload-locked-documents': PayloadLockedDocumentsSelect<false> | PayloadLockedDocumentsSelect<true>;
     'payload-preferences': PayloadPreferencesSelect<false> | PayloadPreferencesSelect<true>;
@@ -129,6 +131,8 @@ export interface UserAuthOperations {
  */
 export interface User {
   id: number;
+  name?: string | null;
+  role?: ('admin' | 'editor') | null;
   updatedAt: string;
   createdAt: string;
   email: string;
@@ -156,8 +160,38 @@ export interface User {
 export interface Media {
   id: number;
   _media_media_order?: string | null;
+  status?: ('pending' | 'approved' | 'hidden') | null;
+  title?: string | null;
   alt?: string | null;
+  caption?: string | null;
+  seoFilename?: string | null;
   category?: (number | null) | Category;
+  tags?: (number | Tag)[] | null;
+  featured?: boolean | null;
+  capturedAt?: string | null;
+  /**
+   * Model, prompt sürümü ve önerilen metinler (yalnızca öneri).
+   */
+  aiSuggestion?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  lqip?: string | null;
+  dominantColor?: string | null;
+  legacy?: {
+    urls?:
+      | {
+          url: string;
+          id?: string | null;
+        }[]
+      | null;
+    attachmentUrl?: string | null;
+  };
   _objectKey?: string | null;
   updatedAt: string;
   createdAt: string;
@@ -221,6 +255,11 @@ export interface Category {
   id: number;
   _order?: string | null;
   name: string;
+  /**
+   * Boş bırakılırsa addan üretilir.
+   */
+  slug?: string | null;
+  shortDesc?: string | null;
   body?: {
     root: {
       type: string;
@@ -236,15 +275,48 @@ export interface Category {
     };
     [k: string]: unknown;
   } | null;
-  slug?: string | null;
+  faq?:
+    | {
+        q: string;
+        a: string;
+        id?: string | null;
+      }[]
+    | null;
+  priceGuide?: {
+    min?: number | null;
+    max?: number | null;
+    unit?: ('m2' | 'm' | 'piece') | null;
+    currency?: ('TRY' | 'EUR' | 'USD') | null;
+    note?: string | null;
+    updatedAt?: string | null;
+  };
+  cover?: (number | null) | Media;
   media?: {
     docs?: (number | Media)[];
     hasNextPage?: boolean;
     totalDocs?: number;
   };
+  seo?: {
+    title?: string | null;
+    description?: string | null;
+    ogImage?: (number | null) | Media;
+  };
   updatedAt: string;
   createdAt: string;
   _status?: ('draft' | 'published') | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "tags".
+ */
+export interface Tag {
+  id: number;
+  name: string;
+  slug?: string | null;
+  axis: 'wood' | 'setting' | 'finish' | 'stage';
+  description?: string | null;
+  updatedAt: string;
+  createdAt: string;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -281,6 +353,10 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'categories';
         value: number | Category;
+      } | null)
+    | ({
+        relationTo: 'tags';
+        value: number | Tag;
       } | null);
   globalSlug?: string | null;
   user: {
@@ -329,6 +405,8 @@ export interface PayloadMigration {
  * via the `definition` "users_select".
  */
 export interface UsersSelect<T extends boolean = true> {
+  name?: T;
+  role?: T;
   updatedAt?: T;
   createdAt?: T;
   email?: T;
@@ -353,8 +431,29 @@ export interface UsersSelect<T extends boolean = true> {
  */
 export interface MediaSelect<T extends boolean = true> {
   _media_media_order?: T;
+  status?: T;
+  title?: T;
   alt?: T;
+  caption?: T;
+  seoFilename?: T;
   category?: T;
+  tags?: T;
+  featured?: T;
+  capturedAt?: T;
+  aiSuggestion?: T;
+  lqip?: T;
+  dominantColor?: T;
+  legacy?:
+    | T
+    | {
+        urls?:
+          | T
+          | {
+              url?: T;
+              id?: T;
+            };
+        attachmentUrl?: T;
+      };
   _objectKey?: T;
   updatedAt?: T;
   createdAt?: T;
@@ -429,12 +528,50 @@ export interface MediaSelect<T extends boolean = true> {
 export interface CategoriesSelect<T extends boolean = true> {
   _order?: T;
   name?: T;
-  body?: T;
   slug?: T;
+  shortDesc?: T;
+  body?: T;
+  faq?:
+    | T
+    | {
+        q?: T;
+        a?: T;
+        id?: T;
+      };
+  priceGuide?:
+    | T
+    | {
+        min?: T;
+        max?: T;
+        unit?: T;
+        currency?: T;
+        note?: T;
+        updatedAt?: T;
+      };
+  cover?: T;
   media?: T;
+  seo?:
+    | T
+    | {
+        title?: T;
+        description?: T;
+        ogImage?: T;
+      };
   updatedAt?: T;
   createdAt?: T;
   _status?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "tags_select".
+ */
+export interface TagsSelect<T extends boolean = true> {
+  name?: T;
+  slug?: T;
+  axis?: T;
+  description?: T;
+  updatedAt?: T;
+  createdAt?: T;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
