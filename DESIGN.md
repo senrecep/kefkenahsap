@@ -162,7 +162,7 @@ The palette is a warm neutral paper with near-black ink and a single deep green 
 
 ## Typography
 
-**Display Font:** Montserrat (self-hosted variable woff2, weights 600–700), with ui-sans-serif / system-ui as fallbacks
+**Display Font:** Montserrat (self-hosted woff2, static 600, the only weight the type system uses), with ui-sans-serif / system-ui as fallbacks
 **Body Font:** Source Sans 3 (self-hosted variable woff2, weights 400–600), with ui-sans-serif / system-ui as fallbacks
 
 **Character:** Montserrat is the brand's own face. At 600 weight it gives headings, nav and buttons a firm, tradesman-like voice. Source Sans 3 keeps long Turkish text quiet and readable at a 17px base.
