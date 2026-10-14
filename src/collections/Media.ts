@@ -9,7 +9,9 @@ import { checkPublishable, type MediaStatus } from '@/lib/media/publish'
 import { revalidateAfterChange, revalidateAfterDelete } from '@/hooks/revalidate'
 
 // WebP only: sources are already WebP; AVIF would double storage and encode time (PLAN §3.3).
-const widths = [320, 640, 960, 1280, 1920] as const
+// 480: 2-column phone grids render ~184 CSS px, which at DPR 1.75–2.6 needs 322–480 px; without it they fetched 640 (#116).
+// Existing media gets it from scripts/media/add-sizes.ts.
+const widths = [320, 480, 640, 960, 1280, 1920] as const
 
 /** Tiny blurred placeholder + dominant colour, computed once at upload (skeleton/LQIP, CLS-free gallery). */
 const placeholder: CollectionBeforeChangeHook = async ({ data, req }) => {

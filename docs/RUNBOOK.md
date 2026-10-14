@@ -54,6 +54,25 @@ ssh senrecep "docker rm -f kefken-gh-runner-$N; mkdir -p /var/lib/kefken-runner-
 - Env in Dokploy and in the owner's local `.dokploy-prod.env`; `COMPOSE_PROFILES=backup`, no basic auth.
 - Cutover steps (deploy gate, seed, domain/TLS, DNS, rollback): `docs/LAUNCH.md`.
 
+### New image sizes for existing media
+
+When `Media.upload.imageSizes` gains a width (e.g. `w480`, #116), the deploy runs the migration, but existing approved media only gets the new size from a one-off script.
+- It is idempotent: it skips media that already has the size or whose original isn't wider, so a re-run only does what is left.
+- It reads each original from S3, writes only the new derivative and its size entry, and never rewrites the original or the other sizes.
+- It prints the database host, bucket and endpoint first. Unless both the database and the S3 endpoint are local, it needs `--yes`.
+- `--dry-run` still downloads and encodes every photo (so it takes about as long as a real run) but writes nothing.
+
+```bash
+# With the environment's DB tunnelled to localhost (e.g. ssh -L 15432:<pg-container-ip>:5432 <server>) and the
+# environment's S3 + MEDIA_PUBLIC_URL values in a local env file (never committed):
+set -a; . ./.dokploy-dev.env; set +a
+export DATABASE_URL=postgres://<user>:<pass>@localhost:15432/<db>
+bun run payload run scripts/media/add-sizes.ts -- --dry-run   # counts only, writes nothing
+bun run payload run scripts/media/add-sizes.ts -- --yes       # ~2.5 min for 568 photos locally
+```
+
+Check the printed host, bucket and endpoint before adding `--yes`. Run it after the deploy that carries the migration; until then, pages simply use the existing sizes.
+
 ## Observability
 
 ### GlitchTip (errors)
