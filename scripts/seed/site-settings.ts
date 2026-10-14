@@ -1,7 +1,10 @@
 // Confirmed business facts only (docs/legacy/decisions.md #12, #63, #64). Unconfirmed fields stay empty → render nothing.
 import type { Payload } from 'payload'
 
-export async function seedSiteSettings(payload: Payload) {
+/** Seeds only an empty global, so a re-run never overwrites what the owner edited in the admin. */
+export async function seedSiteSettings(payload: Payload): Promise<string> {
+  const current = await payload.findGlobal({ slug: 'siteSettings', locale: 'tr', depth: 0 })
+  if (current.companyName) return 'site settings already set, left as is'
   await payload.updateGlobal({
     slug: 'siteSettings',
     locale: 'tr',
@@ -53,4 +56,5 @@ export async function seedSiteSettings(payload: Payload) {
         'Kefken Wood Decoration builds and installs timber decking, pergolas, gazebos, railings, stairs and outdoor woodwork from its workshop in Arnavutköy, Istanbul — and maintains and repairs them too.',
     },
   })
+  return 'site settings seeded'
 }
