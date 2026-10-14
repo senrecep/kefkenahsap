@@ -1,0 +1,32 @@
+{
+  "Projects": {
+    "title": "Projeler",
+    "description": "Tamamladığımız ahşap işlerinden seçilmiş projeler: yeri, yılı, kullanılan ahşap ve fotoğraflarıyla.",
+    "filter": "Kategoriye göre",
+    "all": "Tümü",
+    "empty": "Bu bölüme henüz proje eklenmedi. Yaptığımız işleri şimdilik galeride görebilirsiniz.",
+    "emptyFiltered": "Bu kategoride henüz proje yok.",
+    "toGallery": "Galeriye git",
+    "list": "Proje listesi"
+  },
+  "Project": {
+    "facts": "Proje künyesi",
+    "location": "Yer",
+    "year": "Yıl",
+    "area": "Alan",
+    "duration": "Süre",
+    "wood": "Ahşap türü",
+    "finish": "Yüzey / renk",
+    "categories": "Kategori",
+    "units": { "m2": "m²", "m": "metre", "piece": "adet" },
+    "gallery": "Fotoğraflar",
+    "similar": "Benzer projeler",
+    "ctaTitle": "Benzer bir iş mi düşünüyorsunuz?",
+    "ctaText": "Alanın fotoğrafını ve ölçüsünü WhatsApp'tan gönderin, size dönüş yapalım."
+  },
+  "References": {
+    "title": "Referanslar",
+    "description": "Birlikte çalıştığımız siteler, kurumlar ve firmalar.",
+    "empty": "Referans listesi hazırlanıyor."
+  }
+}

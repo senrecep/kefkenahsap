@@ -5,6 +5,7 @@ import contact from './contact.json'
 import gallery from './gallery.json'
 import home from './home.json'
 import pages from './pages.json'
+import projects from './projects.json'
 
-const messages = { ...common, ...consent, ...contact, ...gallery, ...home, ...pages }
+const messages = { ...common, ...consent, ...contact, ...gallery, ...home, ...pages, ...projects }
 export default messages
