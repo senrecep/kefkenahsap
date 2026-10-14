@@ -37,7 +37,7 @@ export function validateLead(input: LeadInput): Result<ValidLead> {
   if (photos.length > MAX_PHOTOS) errors.push(Err.validation('Lead.TooManyPhotos', `En fazla ${MAX_PHOTOS} fotoğraf.`))
   if (photos.some((p) => !p.type.startsWith('image/'))) errors.push(Err.validation('Lead.PhotoType', 'Yalnızca fotoğraf yüklenebilir.'))
   if (photos.some((p) => p.size > MAX_PHOTO_BYTES)) errors.push(Err.validation('Lead.PhotoTooLarge', 'Fotoğraf en fazla 10 MB olabilir.'))
-  if (errors.length || Result.isFailure(phone)) return Result.failure(...errors)
+  if (errors.length || !Result.isSuccess(phone)) return Result.failure(...errors)
   return Result.success({
     name,
     phone: phone.value,
