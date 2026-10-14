@@ -7,6 +7,8 @@ import { safeJsonParse } from 'tsentials/json'
 import { Maybe } from 'tsentials/maybe'
 import { Result } from 'tsentials/result'
 
+import type { TextFixes } from './schema'
+
 /** TR and EN come from the committed seed itself; every other configured locale comes from an overlay. */
 export const overlayLocales = <L extends string>(codes: readonly L[]): L[] => codes.filter((c) => c !== 'tr' && c !== 'en')
 
@@ -34,6 +36,21 @@ export function mediaSeedKey(seedDir: string, rel: string): Result<string> {
   return typeof source === 'string' && source ? Result.success(`archive/${source}`) : Result.failure(Err.validation('Content.UnknownMediaMeta', `${rel}: no source`))
 }
 
-/** The sentence-case title to write: only while the stored title is still exactly the seeded one (owner edits win). */
-export const sentenceCaseUpdate = (current: string | null | undefined, change: { old: string; new: string }): Maybe<string> =>
+/** Overlay slugs must be unique per locale within a collection; the failure names every clashing file. */
+export function uniqueSlugs(entries: { locale: string; slug: string; file: string }[]): Result<void> {
+  const byKey = new Map<string, typeof entries>()
+  for (const e of entries) byKey.set(`${e.locale}/${e.slug}`, [...(byKey.get(`${e.locale}/${e.slug}`) ?? []), e])
+  const clashes = [...byKey.entries()].filter(([, es]) => es.length > 1).map(([key, es]) => `${key}: ${es.map((e) => e.file).join(', ')}`)
+  return clashes.length ? Result.failure(Err.conflict('Content.DuplicateSlug', `duplicate overlay slugs: ${clashes.join('; ')}`)) : Result.success(undefined)
+}
+
+/** The fixed text to write: only while the stored text is still exactly the seeded one (owner edits win). */
+export const textFixUpdate = (current: string | null | undefined, change: { old: string; new: string }): Maybe<string> =>
   current === change.old && change.old !== change.new ? Maybe.some(change.new) : Maybe.none()
+
+/** sentence-case.json (titles) and text-fixes.json (any field) as one field-level map; text-fixes wins on overlap. */
+export const mergeTextFixes = (sentenceCase: Record<string, NonNullable<TextFixes[string]['title']>>, fixes: TextFixes): TextFixes => {
+  const merged: TextFixes = Object.fromEntries(Object.entries(sentenceCase).map(([rel, title]) => [rel, { title }]))
+  for (const [rel, fields] of Object.entries(fixes)) merged[rel] = { ...merged[rel], ...fields }
+  return merged
+}

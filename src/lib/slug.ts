@@ -1,6 +1,18 @@
 import { Result } from 'tsentials/result'
 import { Err } from 'tsentials/errors'
 
+import { routing } from '@/i18n/routing'
+
+// Fixed route segments (TR internal + translated public paths): a category slug may not shadow them.
+export const RESERVED_CATEGORY_SLUGS: ReadonlySet<string> = new Set([
+  ...Object.entries(routing.pathnames)
+    .flatMap(([internal, p]) => [internal, ...(typeof p === 'string' ? [] : Object.values(p))].map((x) => x.split('/')[1]!))
+    .filter((seg) => seg && !seg.startsWith('[')), // '/' and dynamic segments are not reserved words
+  'admin',
+  'api',
+  'wp-content',
+])
+
 const TR_MAP: Record<string, string> = { ç: 'c', ğ: 'g', ı: 'i', ö: 'o', ş: 's', ü: 'u', ß: 'ss' }
 // Russian → Latin (BGN/PCGN-style, no diacritics): ru titles get readable ASCII slugs too.
 const RU_MAP: Record<string, string> = {

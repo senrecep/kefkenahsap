@@ -7,7 +7,7 @@ import { getPayload, type Payload } from 'payload'
 import sharp from 'sharp'
 import { afterAll, beforeAll, expect, it } from 'vitest'
 
-import { parsePageOverlay } from '@/lib/content/schema'
+import { parseCategoryOverlay, parsePageOverlay } from '@/lib/content/schema'
 import config from '@/payload.config'
 
 import { fillLocales, loadOverlay, seedMediaLocales } from '../../scripts/seed/i18n'
@@ -25,6 +25,7 @@ const mediaIds: number[] = []
 const cleanup = async () => {
   await payload.delete({ collection: 'media', where: { seedKey: { in: MEDIA.map((m) => m.seedKey) } } })
   await payload.delete({ collection: 'pages', where: { slug: { equals: 'i18n-overlay-138' } } })
+  await payload.delete({ collection: 'categories', where: { slug: { equals: 'i18n-overlay-cat-138' } } })
 }
 
 beforeAll(async () => {
@@ -60,6 +61,22 @@ it('a ru overlay fills the empty ru fields of a published page as a new draft an
   expect(await fillLocales(payload, 'pages', page.id, { ru: incoming }, { label: 'page', draft: true })).toBe(0)
 })
 
+it('a ru category overlay fills name, slug, texts and FAQ as a draft; the TR FAQ and the published version stay', async () => {
+  const cat = await payload.create({ collection: 'categories', locale: 'tr', data: { name: 'Overlay kategorisi', slug: 'i18n-overlay-cat-138', faq: [{ q: 'Soru?', a: 'Cevap.' }], _status: 'published' } })
+  const ru = loadOverlay(SEED, 'ru', 'content/categories/fixture-cat.json', parseCategoryOverlay)!
+  const editorConfig = await editorConfigFactory.default({ config: payload.config })
+  const incoming = { name: ru.name, slug: ru.slug, shortDesc: ru.shortDesc, body: convertMarkdownToLexical({ editorConfig, markdown: ru.body }), faq: ru.faq }
+  expect(await fillLocales(payload, 'categories', cat.id, { ru: incoming }, { label: 'category', draft: true })).toBe(1)
+
+  const draft = await payload.findByID({ collection: 'categories', id: cat.id, locale: 'ru', fallbackLocale: false, draft: true, depth: 0 })
+  expect([draft.name, draft.slug, draft.shortDesc, draft._status]).toEqual(['Тестовая категория', 'testovaya-kategoriya-138', 'Короткое описание.', 'draft'])
+  expect(draft.faq?.map((f) => [f.q, f.a])).toEqual([['Вопрос?', 'Ответ.']])
+  const tr = await payload.findByID({ collection: 'categories', id: cat.id, locale: 'tr', fallbackLocale: false, draft: true, depth: 0 })
+  expect([tr.name, tr.slug, tr.faq?.map((f) => [f.q, f.a])]).toEqual(['Overlay kategorisi', 'i18n-overlay-cat-138', [['Soru?', 'Cevap.']]])
+  const published = await payload.findByID({ collection: 'categories', id: cat.id, locale: 'ru', fallbackLocale: false, depth: 0 })
+  expect([published.name ?? null, published.slug ?? null]).toEqual([null, null])
+})
+
 it('media-locales fills empty ru meta, keeps a filled ru alt and leaves approved and pending photos as they were', async () => {
   const create = async (seedKey: string, status: 'approved' | 'pending') =>
     (await payload.create({ collection: 'media', locale: 'tr', data: { seedKey, status, title: 'Ahşap', alt: 'Ahşap deck' }, filePath: IMG, context: { skipAi: true } })).id
@@ -69,13 +86,18 @@ it('media-locales fills empty ru meta, keeps a filled ru alt and leaves approved
   await payload.update({ collection: 'media', id: pending, locale: 'ru', data: { alt: 'Свой alt' }, context: { skipAi: true } })
 
   const rels = [...MEDIA.map((m) => m.rel), 'media-meta/fixture-cat/no-overlay.webp.json']
-  expect(await seedMediaLocales(payload, { seedDir: SEED, rels })).toEqual({ writes: 2, media: 2, noOverlay: 1, noMedia: 0 })
-
   const ru = async (id: number) => payload.findByID({ collection: 'media', id, locale: 'ru', fallbackLocale: false, depth: 0 })
+
+  // A dry run counts the same writes but leaves the database as it was.
+  expect(await seedMediaLocales(payload, { seedDir: SEED, rels, dryRun: true })).toEqual({ writes: 2, media: 2, noOverlay: 1, noMedia: 0, failed: [] })
+  expect([(await ru(approved)).title ?? null, (await ru(pending)).caption ?? null]).toEqual([null, null])
+
+  expect(await seedMediaLocales(payload, { seedDir: SEED, rels })).toEqual({ writes: 2, media: 2, noOverlay: 1, noMedia: 0, failed: [] })
+
   const [a, b] = [await ru(approved), await ru(pending)]
   expect([a.status, a.title, a.alt, a.caption]).toEqual(['approved', 'Деревянная терраса', 'Деревянная терраса из ироко у дома.', 'Терраса из ироко.'])
   expect([b.status, b.title, b.alt, b.caption]).toEqual(['pending', 'Беседка в саду', 'Свой alt', 'Беседка из сосны.'])
   expect((await payload.findByID({ collection: 'media', id: approved, locale: 'tr', depth: 0 })).alt).toBe('Ahşap deck')
 
-  expect(await seedMediaLocales(payload, { seedDir: SEED, rels })).toEqual({ writes: 0, media: 0, noOverlay: 1, noMedia: 0 })
+  expect(await seedMediaLocales(payload, { seedDir: SEED, rels })).toEqual({ writes: 0, media: 0, noOverlay: 1, noMedia: 0, failed: [] })
 })

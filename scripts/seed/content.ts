@@ -6,7 +6,8 @@
 // --force: overwrites shortDesc/body/faq of every category, title/slug/body of the two pages and the guide fields in every locale
 //   with the committed text (as a new draft; the published version is untouched). References are never forced:
 //   they are create-only (see ./references.ts). Pass it after `--`, or `payload run` drops it.
-// Run: bun run payload run scripts/seed/content.ts [-- --force]   (needs the categories from scripts/seed/seed.ts)
+// Prints the target database first; a non-local one needs --yes, and SITE_ENV=production is refused.
+// Run: bun run payload run scripts/seed/content.ts [-- [--force] [--yes]]   (needs the categories from scripts/seed/seed.ts)
 import { readdirSync, readFileSync } from 'node:fs'
 import path from 'node:path'
 import { convertMarkdownToLexical, editorConfigFactory } from '@payloadcms/richtext-lexical'
@@ -18,7 +19,9 @@ import { guideBodyFeatures } from '@/collections/Guides'
 import { type GuideContent, parseCategory, parseCategoryOverlay, parseGuide, parseGuideOverlay, parsePage, parsePageOverlay } from '@/lib/content/schema'
 import { SEED_CATEGORIES } from '@/seed/categories'
 
-import { fillLocales, loadOverlay, payloadOverlayLocales } from './i18n'
+import { uniqueSlugs } from '@/lib/content/overlay'
+
+import { fillLocales, guardTarget, loadOverlay, payloadOverlayLocales, unwrap } from './i18n'
 import { seedReferences } from './references'
 
 const force = process.argv.includes('--force')
@@ -30,18 +33,44 @@ const load = <T>(file: string, parse: (json: string) => Result<T>): T => {
   return r.value
 }
 
+guardTarget(false)
 const payload = await getPayload({ config: await config })
 const editorConfig = await editorConfigFactory.default({ config: payload.config })
 const lexical = (markdown: string) => convertMarkdownToLexical({ editorConfig, markdown })
 const locales = (payload.config.localization ? payload.config.localization.localeCodes : []) as ('tr' | 'en')[]
 const extra = payloadOverlayLocales(payload)
-/** Overlay locale → mapped overlay content, for the locales that have the file. */
+/** Overlay locale → mapped overlay content (rel under content/), for the locales that have the file. */
 const overlays = <T, U>(rel: string, parse: (json: string) => Result<T>, map: (o: T) => U) =>
   Object.fromEntries(extra.flatMap((l) => {
-    const o = loadOverlay(SEED, l, rel, parse)
+    const o = loadOverlay(SEED, l, `content/${rel}`, parse)
     return o ? [[l, map(o)]] : []
   }))
 let writes = 0
+const guideFiles = readdirSync(path.join(DIR, 'guides')).filter((f) => f.endsWith('.json')).sort()
+
+// #138 pre-flight, before any write: each overlay slug is unique per locale and collection, and no other document
+// (told apart by its TR slug) already uses it in that locale. Fails with the offending file.
+const slugOwners = {
+  categories: { parse: parseCategoryOverlay, owners: SEED_CATEGORIES.map((c) => ({ rel: `categories/${c.slug.tr}.json`, trSlug: c.slug.tr })) },
+  pages: { parse: parsePageOverlay, owners: ['hakkimizda', 'iletisim'].map((f) => ({ rel: `pages/${f}.json`, trSlug: load(`pages/${f}.json`, parsePage).tr.slug })) },
+  guides: { parse: parseGuideOverlay, owners: guideFiles.map((f) => ({ rel: `guides/${f}`, trSlug: load(`guides/${f}`, parseGuide).tr.slug })) },
+}
+for (const [collection, { parse, owners }] of Object.entries(slugOwners) as [keyof typeof slugOwners, (typeof slugOwners)['pages']][]) {
+  const entries = owners.flatMap((o) =>
+    extra.flatMap((locale) => {
+      const overlay = loadOverlay(SEED, locale, `content/${o.rel}`, parse)
+      return overlay ? [{ locale, slug: overlay.slug, file: `${locale}/content/${o.rel}`, trSlug: o.trSlug }] : []
+    }),
+  )
+  unwrap(uniqueSlugs(entries))
+  for (const e of entries) {
+    const taken = await payload.find({ collection, locale: e.locale, draft: true, where: { slug: { equals: e.slug } }, limit: 10, depth: 0 })
+    for (const doc of taken.docs) {
+      const tr = await payload.findByID({ collection, id: doc.id, locale: 'tr', fallbackLocale: false, draft: true, depth: 0 })
+      if (tr.slug !== e.trSlug) throw new Error(`${e.file}: slug "${e.slug}" is already used by ${collection} ${doc.id} (${tr.slug})`)
+    }
+  }
+}
 
 for (const cat of SEED_CATEGORIES) {
   const content = load(`categories/${cat.slug.tr}.json`, parseCategory)
@@ -73,7 +102,7 @@ for (const file of ['hakkimizda', 'iletisim']) {
 // #49 guides: created as drafts only; the owner publishes after review. Bodies use the guides editor (tables).
 const guideEditor = await editorConfigFactory.fromFeatures({ config: payload.config, features: guideBodyFeatures })
 const guideLexical = (markdown: string) => convertMarkdownToLexical({ editorConfig: guideEditor, markdown })
-for (const file of readdirSync(path.join(DIR, 'guides')).filter((f) => f.endsWith('.json')).sort()) {
+for (const file of guideFiles) {
   const content = load(`guides/${file}`, parseGuide)
   // Match on the TR slug, else the EN slug, so renaming one slug in the admin doesn't create a duplicate draft.
   const bySlug = async (locale: 'tr' | 'en') =>

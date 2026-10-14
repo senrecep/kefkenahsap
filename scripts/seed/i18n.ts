@@ -30,6 +30,8 @@ export const payloadOverlayLocales = (payload: Payload) => overlayLocales((paylo
 /**
  * Writes, per locale, the incoming fields that are empty in the stored document (all of them with `force`).
  * With `draft` the read is the latest draft and the write a new draft version; the published version is untouched.
+ * Caution: `_status` is document-wide (no localizeStatus), so publishing the document in ANY locale also publishes these
+ * seeded drafts in every locale. Review all locales (or roll the draft back) before publishing.
  * Returns the number of locale writes (or would-be writes with `dryRun`).
  */
 export async function fillLocales(
@@ -52,10 +54,19 @@ export async function fillLocales(
   return writes
 }
 
-/** Prints the database host; exits unless it is local, or the run is a --dry-run, or --yes confirms a remote one. */
+/**
+ * Prints the target database (host:port/name). Exits with SITE_ENV=production, and for a non-local host unless the run
+ * is a --dry-run or --yes confirms it. A tunnelled database reads as localhost: check the printed name.
+ */
 export function guardTarget(dryRun: boolean) {
   const host = databaseHost(process.env.DATABASE_URL)
-  console.log(`database host: ${host || '?'}${dryRun ? ' · dry run' : ''}`)
+  // host:port/name; databaseHost already returned '' for a missing or unparsable URL.
+  const target = host ? `${new URL(process.env.DATABASE_URL!).host}${new URL(process.env.DATABASE_URL!).pathname}` : '?'
+  console.log(`database: ${target}${dryRun ? ' · dry run' : ''}`)
+  if (process.env.SITE_ENV === 'production') {
+    console.error('Refusing to run with SITE_ENV=production.')
+    process.exit(1)
+  }
   if (!isLocalHost(host) && !dryRun && !process.argv.includes('--yes')) {
     console.error('Not a local database: check the host above, then re-run with --yes (or --dry-run first).')
     process.exit(1)
@@ -68,7 +79,7 @@ export function guardTarget(dryRun: boolean) {
  */
 export async function seedMediaLocales(payload: Payload, { seedDir, rels, dryRun }: { seedDir: string; rels: string[]; dryRun?: boolean }) {
   const locales = payloadOverlayLocales(payload)
-  const counts = { writes: 0, media: 0, noOverlay: 0, noMedia: 0 }
+  const counts = { writes: 0, media: 0, noOverlay: 0, noMedia: 0, failed: [] as string[] }
   for (const rel of rels) {
     const byLocale: Partial<Record<Locale, Record<string, unknown>>> = {}
     for (const locale of locales) {
@@ -85,9 +96,15 @@ export async function seedMediaLocales(payload: Payload, { seedDir, rels, dryRun
       counts.noMedia++
       continue
     }
-    const writes = await fillLocales(payload, 'media', doc.id, byLocale, { label: seedKey, dryRun })
-    counts.writes += writes
-    if (writes) counts.media++
+    try {
+      const writes = await fillLocales(payload, 'media', doc.id, byLocale, { label: seedKey, dryRun })
+      counts.writes += writes
+      if (writes) counts.media++
+    } catch (err) {
+      // One bad photo must not stop the rest; the runner exits 1 and lists it.
+      counts.failed.push(seedKey)
+      console.error(`media ${seedKey}: ${err instanceof Error ? err.message : err}`)
+    }
   }
   return counts
 }

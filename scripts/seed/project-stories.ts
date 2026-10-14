@@ -4,7 +4,8 @@
 // only empty fields are written (fillEmpty), and every write is a new draft version — nothing is published.
 // A re-run makes no writes. --force overwrites story and EN title on those drafts with the committed text.
 // #138: also the title and story of the other locales from seed/i18n/<locale>/content/project-stories.json, when present.
-// Run: bun run payload run scripts/seed/project-stories.ts [-- --force]
+// Prints the target database first; a non-local one needs --yes, and SITE_ENV=production is refused.
+// Run: bun run payload run scripts/seed/project-stories.ts [-- [--force] [--yes]]
 import { readFileSync } from 'node:fs'
 import path from 'node:path'
 import { convertMarkdownToLexical, editorConfigFactory } from '@payloadcms/richtext-lexical'
@@ -13,7 +14,7 @@ import { getPayload } from 'payload'
 import config from '@/payload.config'
 import { parseProjectStories, parseProjectStoriesOverlay } from '@/lib/content/schema'
 
-import { fillLocales, loadOverlay, payloadOverlayLocales } from './i18n'
+import { fillLocales, guardTarget, loadOverlay, payloadOverlayLocales } from './i18n'
 
 const force = process.argv.includes('--force')
 const read = (p: string) => readFileSync(path.resolve(process.cwd(), p), 'utf8')
@@ -22,6 +23,7 @@ const parsed = parseProjectStories(read('seed/content/project-stories.json'))
 if (!parsed.ok) throw new Error(`project-stories.json: ${parsed.errors.map((e) => e.description).join('; ')}`)
 const stories = parsed.value
 
+guardTarget(false)
 const payload = await getPayload({ config: await config })
 const editorConfig = await editorConfigFactory.default({ config: payload.config })
 const lexical = (markdown: string) => convertMarkdownToLexical({ editorConfig, markdown })

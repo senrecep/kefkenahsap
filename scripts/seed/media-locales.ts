@@ -23,5 +23,6 @@ const rels = ['media-meta', 'media-meta-archive'].flatMap((tree) =>
 )
 const payload = await getPayload({ config: await config })
 const c = await seedMediaLocales(payload, { seedDir: SEED, rels, dryRun })
-console.log(`${dryRun ? '[dry run] ' : ''}media locales: ${c.writes} locale write(s) on ${c.media} photo(s); ${c.noOverlay} of ${rels.length} meta files without any overlay; ${c.noMedia} with no matching photo`)
-process.exit(0)
+console.log(`${dryRun ? '[dry run] ' : ''}media locales: ${c.writes} locale write(s) on ${c.media} photo(s); ${c.noOverlay} of ${rels.length} meta files without any overlay; ${c.noMedia} with no matching photo; ${c.failed.length} failed`)
+if (c.failed.length) console.error(`failed: ${c.failed.join(', ')}`)
+process.exit(c.failed.length ? 1 : 0)
