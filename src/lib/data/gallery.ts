@@ -27,6 +27,10 @@ const select = {
   lqip: true,
   dominantColor: true,
   featured: true,
+  // The storage plugin builds file URLs from these; without them a prefixed bucket (dev/) yields broken URLs.
+  filename: true,
+  prefix: true,
+  _objectKey: true,
 } as const
 const populate = { categories: { name: true, slug: true }, projects: { title: true, slug: true } } as const
 

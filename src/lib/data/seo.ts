@@ -68,7 +68,7 @@ export const getSitemapDocs = () =>
           overrideAccess: false,
           where: galleryWhere({}),
           sort: '-id',
-          select: { title: true, seoFilename: true, updatedAt: true, url: true, width: true, height: true, sizes: true },
+          select: { title: true, seoFilename: true, updatedAt: true, url: true, width: true, height: true, sizes: true, filename: true, prefix: true, _objectKey: true },
         }),
       ])
       return [
