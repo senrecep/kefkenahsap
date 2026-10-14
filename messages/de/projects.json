@@ -18,7 +18,11 @@
     "wood": "Holzart",
     "finish": "Oberfläche / Farbe",
     "categories": "Kategorie",
-    "units": { "m2": "m²", "m": "Meter", "piece": "Stück" },
+    "units": {
+      "m2": "m²",
+      "m": "Meter",
+      "piece": "Stück"
+    },
     "gallery": "Fotos",
     "similar": "Ähnliche Projekte",
     "ctaTitle": "Planen Sie eine ähnliche Arbeit?",

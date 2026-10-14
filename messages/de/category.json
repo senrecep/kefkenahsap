@@ -3,7 +3,11 @@
     "gallery": "Unsere Arbeiten",
     "more": "Mehr anzeigen",
     "price": "Preisorientierung",
-    "perUnit": { "m2": "pro m²", "m": "pro Meter", "piece": "pro Stück" },
+    "perUnit": {
+      "m2": "pro m²",
+      "m": "pro Meter",
+      "piece": "pro Stück"
+    },
     "updated": "Aktualisiert:",
     "faq": "Häufige Fragen",
     "projects": "Projekte in diesem Bereich",

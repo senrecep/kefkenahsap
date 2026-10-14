@@ -10,5 +10,16 @@ import pages from './pages.json'
 import projects from './projects.json'
 import regions from './regions.json'
 
-const messages = { ...common, ...consent, ...contact, ...gallery, ...guides, ...home, ...pages, ...projects, ...regions, ...category }
+const messages = {
+  ...common,
+  ...consent,
+  ...contact,
+  ...gallery,
+  ...guides,
+  ...home,
+  ...pages,
+  ...projects,
+  ...regions,
+  ...category,
+}
 export default messages

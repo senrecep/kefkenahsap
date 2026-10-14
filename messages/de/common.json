@@ -1,5 +1,8 @@
 {
-  "Site": { "name": "Kefken Ahşap Dekorasyon", "tagline": "Holzterrassen, Pergolen und Holzarbeiten im Außenbereich — Istanbul und die ganze Türkei" },
+  "Site": {
+    "name": "Kefken Ahşap Dekorasyon",
+    "tagline": "Holzterrassen, Pergolen und Holzarbeiten im Außenbereich — Istanbul und die ganze Türkei"
+  },
   "Nav": {
     "skip": "Zum Inhalt springen",
     "services": "Leistungen",
@@ -13,7 +16,8 @@
     "menu": "Menü",
     "close": "Schließen",
     "language": "Sprache",
-    "home": "Startseite"
+    "home": "Startseite",
+    "breadcrumb": "Ort"
   },
   "Cta": {
     "whatsapp": "Per WhatsApp schreiben",
@@ -33,6 +37,16 @@
     "rights": "Alle Rechte vorbehalten.",
     "since": "seit {year}"
   },
-  "Days": { "Mo": "Mo", "Tu": "Di", "We": "Mi", "Th": "Do", "Fr": "Fr", "Sa": "Sa", "Su": "So" },
-  "Home": { "title": "Kefken Ahşap Dekorasyon" }
+  "Days": {
+    "Mo": "Mo",
+    "Tu": "Di",
+    "We": "Mi",
+    "Th": "Do",
+    "Fr": "Fr",
+    "Sa": "Sa",
+    "Su": "So"
+  },
+  "Home": {
+    "title": "Kefken Ahşap Dekorasyon"
+  }
 }

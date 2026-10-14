@@ -1,5 +1,8 @@
 {
-  "Site": { "name": "Kefken Ahşap Dekorasyon", "tagline": "Деревянные террасы, перголы и уличные работы по дереву — Стамбул и вся Турция" },
+  "Site": {
+    "name": "Kefken Ahşap Dekorasyon",
+    "tagline": "Деревянные террасы, перголы и уличные работы по дереву — Стамбул и вся Турция"
+  },
   "Nav": {
     "skip": "Перейти к содержанию",
     "services": "Услуги",
@@ -13,7 +16,8 @@
     "menu": "Меню",
     "close": "Закрыть",
     "language": "Язык",
-    "home": "Главная"
+    "home": "Главная",
+    "breadcrumb": "Местоположение"
   },
   "Cta": {
     "whatsapp": "Написать в WhatsApp",
@@ -33,6 +37,16 @@
     "rights": "Все права защищены.",
     "since": "с {year} года"
   },
-  "Days": { "Mo": "Пн", "Tu": "Вт", "We": "Ср", "Th": "Чт", "Fr": "Пт", "Sa": "Сб", "Su": "Вс" },
-  "Home": { "title": "Kefken Ahşap Dekorasyon" }
+  "Days": {
+    "Mo": "Пн",
+    "Tu": "Вт",
+    "We": "Ср",
+    "Th": "Чт",
+    "Fr": "Пт",
+    "Sa": "Сб",
+    "Su": "Вс"
+  },
+  "Home": {
+    "title": "Kefken Ahşap Dekorasyon"
+  }
 }
