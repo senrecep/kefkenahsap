@@ -38,7 +38,8 @@ export default defineConfig({
     // CI runs against the production build (E2E_START_COMMAND=bun run start).
     command: process.env.E2E_START_COMMAND ?? 'bun run dev',
     timeout: 180_000,
-    reuseExistingServer: true,
+    // Locally reuse a running `bun dev`; in CI always start our own server on the probed free port.
+    reuseExistingServer: !process.env.CI,
     url: `http://localhost:${process.env.E2E_PORT ?? 3000}`,
   },
 })

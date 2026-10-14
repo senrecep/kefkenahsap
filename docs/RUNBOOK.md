@@ -30,6 +30,7 @@ ssh senrecep "docker rm -f kefken-gh-runner; docker run -d --name kefken-gh-runn
   -v /var/run/docker.sock:/var/run/docker.sock -v /tmp/kefken-runner:/tmp/kefken-runner myoung34/github-runner:ubuntu-noble"
 ```
 
+- Security: the runner has the host Docker socket, so CI only runs PRs from branches of this (private) repository; forks never reach it. Workflow token is `contents: read`. Keep fork-PR workflows disabled in repo settings.
 - Delete stale registrations: `gh api repos/senrecep/kefkenahsap/actions/runners` → `DELETE .../runners/<id>`.
 
 ## Deploys

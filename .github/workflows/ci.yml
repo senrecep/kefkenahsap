@@ -5,9 +5,13 @@ on:
   push:
     branches: [development, main]
 
+permissions:
+  contents: read
+
 concurrency:
   group: ci-${{ github.ref }}
-  cancel-in-progress: true
+  # Superseded PR runs are cancelled; pushes to deploy branches always finish.
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 env:
   DATABASE_URL: postgres://kefken:kefken@localhost:5432/kefken
@@ -27,6 +31,8 @@ jobs:
   check:
     # Self-hosted runner on the Dokploy server (docs/RUNBOOK.md): GitHub-hosted minutes are unavailable for this account.
     runs-on: [self-hosted, kefken]
+    # The self-hosted runner has the host Docker socket: never run code from forks on it.
+    if: github.event_name == 'push' || github.event.pull_request.head.repo.full_name == github.repository
     timeout-minutes: 30
     services:
       postgres:
@@ -59,7 +65,7 @@ jobs:
           echo "DATABASE_URL=postgres://kefken:kefken@localhost:$PG/kefken" >> "$GITHUB_ENV"
           echo "S3_ENDPOINT=http://localhost:$S3" >> "$GITHUB_ENV"
           echo "MEDIA_PUBLIC_URL=http://localhost:$S3/kefken-media" >> "$GITHUB_ENV"
-          echo "E2E_PORT=$((30000 + RANDOM % 20000))" >> "$GITHUB_ENV"
+          echo "E2E_PORT=$(node -e "const s=require('net').createServer().listen(0,()=>{console.log(s.address().port);s.close()})")" >> "$GITHUB_ENV"
 
       - name: Create S3 buckets
         run: |
@@ -96,6 +102,7 @@ jobs:
     needs: check
     if: github.event_name == 'push' && (github.ref == 'refs/heads/development' || github.ref == 'refs/heads/main')
     runs-on: [self-hosted, kefken]
+    concurrency: deploy-${{ github.ref }}
     environment: ${{ github.ref == 'refs/heads/main' && 'production' || 'development' }}
     steps:
       - name: Trigger Dokploy deploy
@@ -104,7 +111,10 @@ jobs:
           DOKPLOY_API_KEY: ${{ secrets.DOKPLOY_API_KEY }}
           COMPOSE_ID: ${{ vars.DOKPLOY_COMPOSE_ID }}
         run: |
-          if [ -z "$DOKPLOY_API_KEY" ] || [ -z "$COMPOSE_ID" ]; then echo "Dokploy not configured for this environment; skipping"; exit 0; fi
-          curl -fsS -X POST "$DOKPLOY_URL/api/compose.deploy" \
+          if [ -z "$DOKPLOY_API_KEY" ] || [ -z "$COMPOSE_ID" ]; then
+            echo "::warning::Dokploy deploy is not configured for this environment"
+            [ "$GITHUB_REF" = refs/heads/main ] && exit 1 || exit 0
+          fi
+          curl -fsS -o /dev/null -X POST "$DOKPLOY_URL/api/compose.deploy" \
             -H "x-api-key: $DOKPLOY_API_KEY" -H 'Content-Type: application/json' \
             -d "{\"composeId\":\"$COMPOSE_ID\"}"
