@@ -5,7 +5,7 @@ import { slugFrom } from '@/hooks/slug'
 import { revalidateAfterChange, revalidateAfterDelete } from '@/hooks/revalidate'
 
 /**
- * Bölge sayfaları (/tr/bolgeler/<slug>, /en/regions/<slug>; decision #25). The body is written by hand, never templated.
+ * Bölge sayfaları (/tr/bolgeler/<slug>, /en/areas/<slug>; decision #25). The body is written by hand, never templated.
  * Projects join here through their own "Bölge" field. A region is indexed only once it passes the publish gate
  * (src/lib/regions/gate.ts: ≥3 published projects + ≥250 words); otherwise the page is noindex and unlisted.
  */
@@ -21,7 +21,7 @@ export const Regions: CollectionConfig = {
     livePreview: {
       url: ({ data, locale }) => {
         const code = locale?.code ?? 'tr'
-        return `${process.env.NEXT_PUBLIC_SITE_URL}/${code}/${code === 'tr' ? 'bolgeler' : 'regions'}/${data?.slug ?? ''}?preview=1`
+        return `${process.env.NEXT_PUBLIC_SITE_URL}/${code}/${code === 'tr' ? 'bolgeler' : 'areas'}/${data?.slug ?? ''}?preview=1`
       },
     },
   },
