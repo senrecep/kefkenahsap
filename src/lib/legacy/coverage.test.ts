@@ -33,7 +33,7 @@ describe('legacy coverage (real WordPress inventory)', () => {
     // 560 of 1169 originals are provably a seeded photo (same name + shape); the rest are 410 by decision #56.
     expect(redirected.size).toBeGreaterThanOrEqual(550)
     console.info(`[legacy] media URLs: ${mediaUrls.length}, originals redirected: ${redirected.size}/${wpMedia.length}`)
-  })
+  }, 30_000) // ~17k URLs; shared CI runners are slow
 
   it('sends every old page to its /tr page', () => {
     for (const p of wpPages) {
