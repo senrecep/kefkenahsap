@@ -11,7 +11,7 @@ const DIR = path.resolve(process.cwd(), 'seed/content')
 const read = (p: string) => readFileSync(path.join(DIR, p), 'utf8')
 
 // docs/AI-PROMPTS.md clichés + claims PRODUCT.md says must come only from the admin.
-const BANNED = [/eşsiz/i, /hayallerinizdeki/i, /kaliteden ödün/i, /en iyi hizmet/i, /mükemmel/i, /benzersiz/i, /\d+\s*(yıl|sene)/i, /\d+\s*years?/i, /garanti/i, /guarantee/i, /\bTL\b|₺|€|\$/, /sertifika/i, /certif/i, /ücretsiz/i, /\bfree\b/i]
+const BANNED = [/eşsiz/i, /hayallerinizdeki/i, /kaliteden ödün/i, /en iyi hizmet/i, /mükemmel/i, /benzersiz/i, /\d+\s*(yıl|sene)/i, /\d+\s*years?/i, /garanti/i, /guarantee/i, /\bTL\b|₺|€|\$/, /sertifika/i, /certif/i, /ücretsiz/i, /\bfree\b/i, /yıllardır|onlarca yıl|otuz yıl|decades/i]
 const textOf = (o: unknown) => JSON.stringify(o)
 
 describe('wordCount', () => {
@@ -65,19 +65,19 @@ describe('pages', () => {
 })
 
 describe('references', () => {
-  // Verbatim from docs/legacy/crawl-md/*referanslar* (typos included; the owner confirms spelling in the admin).
+  // The 9 legacy references (docs/legacy/crawl-md/*referanslar*), spelled as in PRODUCT.md / decisions.md.
   it('lists the 9 legacy references in order', () => {
     const refs = parseReferences(read('references.json'))
     expect(refs.ok && refs.value.map((r) => r.name)).toEqual([
       'Cennetköy Sitesi',
       'Riva Konakları Sitesi',
-      'Kemer Golf & Contry Clup',
+      'Kemer Golf & Country Club',
       'Neo Gölpark Evleri',
-      'İ.B.B Sosyal Tesisler',
+      'İBB Sosyal Tesisler',
       'Mesa Mesken',
-      'Nurol A.S',
+      'Nurol A.Ş.',
       'Yaşar Holding',
-      'İ.G.K',
+      'İGK',
     ])
   })
 })

@@ -1,6 +1,9 @@
 // #34: idempotent content loader — category texts + FAQ, Hakkımızda / İletişim pages, the 9 references.
 // Source: seed/content/** (markdown bodies → Lexical). Writes land as drafts; the owner publishes after review.
-// Fills only empty fields per locale, so a re-run never overwrites what the owner edited. `-- --force` overwrites.
+// Fills only empty fields per locale, so a re-run never overwrites what the owner edited.
+// --force: overwrites shortDesc/body/faq of every category and title/slug/body of the two pages in every locale
+//   with the committed text (as a new draft; the published version is untouched). References are never forced:
+//   they are create-only (see ./references.ts). Pass it after `--`, or `payload run` drops it.
 // Run: bun run payload run scripts/seed/content.ts [-- --force]   (needs the categories from scripts/seed/seed.ts)
 import { readFileSync } from 'node:fs'
 import path from 'node:path'
@@ -10,8 +13,10 @@ import type { Result } from 'tsentials/result'
 
 import config from '@/payload.config'
 import { fillEmpty } from '@/lib/content/merge'
-import { parseCategory, parsePage, parseReferences } from '@/lib/content/schema'
+import { parseCategory, parsePage } from '@/lib/content/schema'
 import { SEED_CATEGORIES } from '@/seed/categories'
+
+import { seedReferences } from './references'
 
 const force = process.argv.includes('--force')
 const DIR = path.resolve(process.cwd(), 'seed/content')
@@ -64,24 +69,7 @@ for (const file of ['hakkimizda', 'iletisim']) {
   }
 }
 
-// Single source for the reference list (also wanted by #40).
-for (const ref of load('references.json', parseReferences)) {
-  const found = await payload.find({ collection: 'references', where: { name: { equals: ref.name } }, limit: 1, depth: 0 })
-  let id = found.docs[0]?.id
-  if (!id) {
-    id = (await payload.create({ collection: 'references', locale: 'tr', data: { name: ref.name, location: ref.location.tr } })).id
-    writes++
-    console.log(`reference ${ref.name} created`)
-  }
-  for (const locale of locales.filter((l) => l in ref.location)) {
-    const current = await payload.findByID({ collection: 'references', id, locale, fallbackLocale: false, depth: 0 })
-    const patch = fillEmpty(current, { location: ref.location[locale] }, { force })
-    if (!Object.keys(patch).length) continue
-    await payload.update({ collection: 'references', id, locale, data: patch })
-    writes++
-    console.log(`reference ${ref.name} [${locale}]: location`)
-  }
-}
+console.log(await seedReferences(payload))
 
 console.log(`content seed done: ${writes} write(s)${force ? ' (--force)' : ''}`)
 process.exit(0)
