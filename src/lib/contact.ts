@@ -25,3 +25,12 @@ export function telLink(s: Settings): { href: string; label: string } | null {
   const r = normalizeTrPhone(p.number)
   return Result.isSuccess(r) ? { href: `tel:+${r.value}`, label: p.number } : null
 }
+
+type Address = { street?: string | null; district?: string | null; city?: string | null; postalCode?: string | null; mapUrl?: string | null }
+
+/** "Yol tarifi" link: the admin's Google Maps link, else a Maps search of the address (no embedded map — PLAN §6). */
+export function directionsUrl(a: Address | null | undefined): string | null {
+  if (a?.mapUrl) return a.mapUrl
+  const q = [a?.street, a?.district, a?.city].filter(Boolean).join(', ')
+  return q ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}` : null
+}
