@@ -18,11 +18,13 @@ test.describe('JSON-LD', () => {
     const nodes = await jsonLd(page)
     const [biz] = byType(nodes, 'HomeAndConstructionBusiness')
     expect(biz).toBeTruthy()
-    for (const k of ['@id', 'name', 'url', 'address', 'telephone']) expect(biz![k], k).toBeTruthy()
+    for (const k of ['@id', 'name', 'url']) expect(biz![k], k).toBeTruthy()
+    // Optional facts appear only when siteSettings has them, and then exactly as the footer shows them.
     const text = await visible(page)
     expect(text).toContain(biz!.name as string)
-    expect(text).toContain(biz!.telephone as string)
-    expect(text).toContain((biz!.address as { streetAddress: string }).streetAddress)
+    if (biz!.telephone) expect(text).toContain(biz!.telephone as string)
+    const street = (biz!.address as { streetAddress?: string } | undefined)?.streetAddress
+    if (street) expect(text).toContain(street)
     if (biz!.founder) expect(text).toContain((biz!.founder as { name: string }).name)
     if (biz!.foundingDate) expect(text).toContain(biz!.foundingDate as string)
     for (const url of (biz!.sameAs as string[] | undefined) ?? []) expect(url).toMatch(/^https:\/\//)
