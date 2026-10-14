@@ -24,3 +24,9 @@ next-env.d.ts
 # misc
 .DS_Store
 *.log
+
+# next / payload
+/media
+/blob-report/
+/playwright/.cache/
+*.pem

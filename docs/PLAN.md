@@ -36,7 +36,7 @@ Başarı (lansmandan 3 ay sonra ölçülür):
 | UI | Tailwind 4, shadcn/ui (yalnızca admin özel view ve form primitive'leri), lucide | |
 | i18n | next-intl 4 (UI metinleri, localized pathnames) + Payload localization (içerik) | `tr` varsayılan; `en`; F3: `ar` (RTL), `ru`, `de` |
 | DB | Postgres 17 (`@payloadcms/db-postgres`, Drizzle tabanlı) + `pg_trgm` | |
-| Medya | `@payloadcms/storage-s3` → prod **Cloudflare R2** (`media.kefkenahsap.com`), lokal **MinIO** | sharp ile upload anında boyutlar |
+| Medya | `@payloadcms/storage-s3` → prod **Cloudflare R2** (`cdn.kefkenahsap.com`), lokal **MinIO** | sharp ile upload anında boyutlar |
 | Arka plan işleri | **Payload Jobs Queue** (Postgres tabanlı, Redis yok) | AI etiketleme, çeviri, kümeleme |
 | AI | Vercel AI SDK + `@openrouter/ai-sdk-provider`, `generateObject` + Zod | geolyt pattern'i |
 | E-posta | Resend (SPF/DKIM) | |
@@ -60,10 +60,10 @@ compose
 - Sunucudaki hiçbir paylaşımlı servise bağımlılık yok.
 
 ### 3.3 Render stratejisi
-- Herkese açık sayfalar: **SSG + ISR**, Payload `afterChange`/`afterDelete` hook'ları → `revalidateTag(tag, 'max')` (Next 16 imzası) + Cloudflare `purge_everything` (site küçük) — **debounce**: purge bir Jobs Queue görevi, en fazla 5 dk'da bir çalışır (editör art arda 20 foto onaylayınca 20 purge olmaz). `media.kefkenahsap.com` immutable dosya adları kullandığından purge'den etkilenmez (ayrı cache kuralı).
+- Herkese açık sayfalar: **SSG + ISR**, Payload `afterChange`/`afterDelete` hook'ları → `revalidateTag(tag, 'max')` (Next 16 imzası) + Cloudflare `purge_everything` (site küçük) — **debounce**: purge bir Jobs Queue görevi, en fazla 5 dk'da bir çalışır (editör art arda 20 foto onaylayınca 20 purge olmaz). `cdn.kefkenahsap.com` immutable dosya adları kullandığından purge'den etkilenmez (ayrı cache kuralı).
 - Galeri infinite scroll: ilk sayfa SSR (24 görsel), sonrası route handler `GET /[locale]/galeri/feed?cat=&tag=&cursor=` (`/api` dışında; Cloudflare'de 5 dk cache).
 - Görsel servis: Payload'ın ürettiği boyutlar (yalnızca WebP: 320/640/960/1280/1920; kaynaklar zaten WebP, AVIF depolama/encode maliyetini ikiye katlar) → `next/image` **custom loader** var olan en büyük uygun boyutu seçer (WP orijinallerinin 660/1169'u <1000px; Payload orijinalden büyük boyut üretmez, `sizes` buna göre sınırlanır); Next runtime görsel optimizasyonu kapalı (sunucu yükü yok). LQIP: upload'da 16px blur dataURL + dominant renk.
-- Medya URL'leri doğrudan R2/CDN'den: `storage-s3` için `disablePayloadAccessControl: true` + `generateFileURL` → `https://media.kefkenahsap.com/...` (aksi halde dosyalar `/api/media/file/...` üzerinden app'e yüklenir ve robots'ta engelli kalır). Talep fotoğrafları **ayrı upload koleksiyonu + ayrı private bucket**, `signedDownloads`.
+- Medya URL'leri doğrudan R2/CDN'den: `storage-s3` için `disablePayloadAccessControl: true` + `generateFileURL` → `https://cdn.kefkenahsap.com/...` (aksi halde dosyalar `/api/media/file/...` üzerinden app'e yüklenir ve robots'ta engelli kalır). Talep fotoğrafları **ayrı upload koleksiyonu + ayrı private bucket**, `signedDownloads`.
 - Job runner: Payload `jobs.autoRun` (cron) + `schedule` (2 yıllık talep silme, bütçe kontrolü); tek app replikası.
 - Admin: `/admin` (Payload), Cloudflare cache bypass.
 
@@ -261,7 +261,7 @@ F2: Rehber dizini + yazı şablonu (TOC, FAQ, "AI'ya kopyala" butonu, yazar kutu
 ## 10. Altyapı, CI/CD, güvenlik
 
 - **GitHub** repo; Actions: `lint` (Biome veya ESLint — AÇIK: kullanıcının diğer projeleriyle hizalanacak), `typecheck`, `vitest`, `playwright` (smoke + redirect haritası + i18n/hreflang + sitemap + JSON-LD + form + admin upload/sıralama), Lighthouse CI → Docker image → **GHCR** → Dokploy deploy webhook. `main` → prod, `development` → **`development.kefkenahsap.com`** (noindex + basic auth; staging'in yerine).
-- **Cloudflare**: zone zaten Cloudflare'de (Free plan, SSL Full); lansmanda yalnızca apex/www A kayıtları güzelhosting'den (104.247.167.3) sunucuya çevrilir, cPanel kayıtları WP yedeği için kalır. **MX kaydı yok** → @kefkenahsap.com e-postası şu an çalışmıyor (info@ ayrı iş; sunucudaki Mailu ile açılabilir). proxy açık, SSL Full (strict), HTTP/3, Early Hints, Brotli; Cache Rules: `/_next/static/*` ve medya 1 yıl immutable, HTML edge 5 dk + Payload purge, `/admin` `/api` bypass; Turnstile (form); R2 custom domain `media.kefkenahsap.com`.
+- **Cloudflare**: zone zaten Cloudflare'de (Free plan, SSL Full); lansmanda yalnızca apex/www A kayıtları güzelhosting'den (104.247.167.3) sunucuya çevrilir, cPanel kayıtları WP yedeği için kalır. **MX kaydı yok** → @kefkenahsap.com e-postası şu an çalışmıyor (info@ ayrı iş; sunucudaki Mailu ile açılabilir). proxy açık, SSL Full (strict), HTTP/3, Early Hints, Brotli; Cache Rules: `/_next/static/*` ve medya 1 yıl immutable, HTML edge 5 dk + Payload purge, `/admin` `/api` bypass; Turnstile (form); R2 custom domain `cdn.kefkenahsap.com`.
 - **Güvenlik**: Payload auth (admin/editor, güçlü şifre, login rate limit, opsiyonel 2FA — AÇIK), form: Turnstile + honeypot + rate limit + dosya türü/boyut doğrulama (≤10MB, image/*), lead fotoğrafları private bucket + imzalı URL, CSP + güvenlik başlıkları, secrets yalnızca Dokploy env.
 - **KVKK**: talep verisi yurt dışı servislerden geçer (Cloudflare, Resend, Gmail; foto/metin AI'ya **gönderilmez**) → aydınlatma metni ve rıza metninde yurt dışına aktarım açıkça belirtilir. Aydınlatma metni + çerez politikası (şablon; avukat kontrolü önerilir), form açık rıza kutusu, talepler 2 yıl sonra otomatik silinir (job), log'larda kişisel veri yok.
 

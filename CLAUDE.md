@@ -17,7 +17,7 @@ User-visible copy is in Turkish. Code, identifiers, commits and tests are in Eng
 - Stack is fixed: bun, Next 16 App Router, Payload 3.x (the version pinned in the spike), Postgres 17, Tailwind 4, next-intl 4, Vercel AI SDK + OpenRouter, Motion / GSAP / OGL (lazy loaded only). Ask before adding a new dependency. Don't add a package for something a few lines can do.
 - Next 16: `proxy.ts` (not `middleware`), `revalidateTag(tag, 'max')`.
 - No hardcoded locales: always use `routing.locales` and Payload `localization`. Write CSS with logical properties (`ms-`/`me-`, `start`/`end`) — Arabic RTL comes later.
-- Media is served directly from the CDN (`media.kefkenahsap.com`), never through `/api/media/file`. Lead photos go only to the private bucket.
+- Media is served directly from the CDN (`cdn.kefkenahsap.com`), never through `/api/media/file`. Lead photos go only to the private bucket.
 - Performance budget: initial JS ≤150KB gz, Lighthouse mobile ≥95, CLS <0.05. Any heavy library goes behind a dynamic import.
 - Accessibility: WCAG 2.2 AA. Published images must have approved alt text. Admin tap targets are ≥48px.
 - Secrets come only from env. `.env*` is never committed.
@@ -73,16 +73,19 @@ Use [`tsentials`](https://github.com/senrecep/tsentials) (latest at plan time: v
 - Nothing is published automatically. AI output always lands in a `pending`/draft state.
 - Seed metadata (568 images) is prepared locally with Claude and reviewed, then loaded as `approved`. Runtime `tagImage` is for new uploads only.
 
-## Commands (fill in during F0)
+## Commands
 
 ```bash
 bun install
-bun dev                      # Next + Payload (localhost:3000, /admin)
-bun test                     # vitest
-bun run test:e2e             # playwright
+cp .env.example .env                    # set PAYLOAD_SECRET
+docker compose --profile local up -d    # postgres:5433 + S3 (RustFS :9000, console :9001), host networking
+bun dev                                 # Next + Payload (localhost:3000 → /tr, /admin)
+bun run test                            # vitest: unit (src/**/*.test.ts) + int (tests/int, needs postgres)
+bun run test:e2e                        # playwright (starts bun dev if not running)
 bun run typecheck && bun run lint
-docker compose --profile local up -d   # postgres + minio (+ umami)
 ```
+
+Agent skills are installed: `.claude/skills/payload` (Payload reference) and `.claude/skills/tsentials*`.
 
 ## Work order and GitHub flow
 
