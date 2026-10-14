@@ -15,7 +15,15 @@ export default defineConfig({
       {
         extends: true,
         // Payload integration tests against the compose Postgres.
-        test: { name: 'int', environment: 'node', include: ['tests/int/**/*.int.spec.ts'], testTimeout: 60_000 },
+        test: {
+          name: 'int',
+          environment: 'node',
+          include: ['tests/int/**/*.int.spec.ts'],
+          globalSetup: ['./tests/int/global-setup.ts'],
+          testTimeout: 60_000,
+          hookTimeout: 60_000,
+          fileParallelism: false,
+        },
       },
     ],
   },

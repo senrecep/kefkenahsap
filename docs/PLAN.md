@@ -36,9 +36,9 @@ Başarı (lansmandan 3 ay sonra ölçülür):
 | UI | Tailwind 4, shadcn/ui (yalnızca admin özel view ve form primitive'leri), lucide | |
 | i18n | next-intl 4 (UI metinleri, localized pathnames) + Payload localization (içerik) | `tr` varsayılan; `en`; F3: `ar` (RTL), `ru`, `de` |
 | DB | Postgres 17 (`@payloadcms/db-postgres`, Drizzle tabanlı) + `pg_trgm` | |
-| Medya | `@payloadcms/storage-s3` → prod **Cloudflare R2** (`cdn.kefkenahsap.com`), lokal **MinIO** | sharp ile upload anında boyutlar |
+| Medya | `@payloadcms/storage-s3` → prod **Cloudflare R2** (`cdn.kefkenahsap.com`), lokal **RustFS** (MinIO imajları artık yayınlanmıyor; SPIKE.md) | sharp ile upload anında boyutlar |
 | Arka plan işleri | **Payload Jobs Queue** (Postgres tabanlı, Redis yok) | AI etiketleme, çeviri, kümeleme |
-| AI | Vercel AI SDK + `@openrouter/ai-sdk-provider`, `generateObject` + Zod | geolyt pattern'i |
+| AI | Vercel AI SDK + `@openrouter/ai-sdk-provider`, AI SDK v7 `generateText` + `Output.object` + Zod | geolyt pattern'i |
 | E-posta | Resend (SPF/DKIM) | |
 | Animasyon | Motion (UI), GSAP ScrollTrigger (scroll), OGL (hero shader, 3D numune) | hepsi lazy |
 | Galeri | Kendi masonry (sunucuda bilinen en-boy oranıyla, CLS=0) + PhotoSwipe 5 lightbox | |
@@ -53,7 +53,7 @@ compose
 ├─ postgres    postgres:17-alpine  (DB'ler: kefken, umami, glitchtip)
 ├─ umami       ghcr.io/umami-software/umami (postgres)
 ├─ glitchtip   glitchtip web + worker (+ valkey)   [profile: observability]
-└─ minio       [profile: local]  — prod'da R2 kullanılır
+└─ s3 (RustFS) [profile: local]  — prod'da R2 kullanılır
 ```
 - `docker-compose.dokploy.yml`: `dokploy-network` external, Traefik yönlendirmesi Dokploy UI'dan (kullanıcının diğer projeleriyle aynı pattern).
 - Yedek: Dokploy'un Postgres backup'ı → R2 (ayrı bucket, 30 gün). Medya R2'de (bucket versioning açık). Geri yükleme prosedürü `docs/RUNBOOK.md`.
@@ -143,7 +143,7 @@ Tüm metin alanları `localized: true`. Taslak/versiyon (`versions.drafts`) + Li
 - `/` → `Accept-Language` + çerez ile `/tr` veya `/en` (**302**, `/` Cloudflare cache bypass; `x-default` = `/tr`).
 - **Dil "yayında" sinyali**: bir dokümanın o dildeki `slug` ve `title` alanları doluysa o dil yayında sayılır (Payload draft'ları tüm dilleri birlikte yayınlar; per-locale status deneysel). Bu tek kural hreflang, sitemap ve noindex'i yönetir.
 - Dil seçici: aynı dokümanın diğer dildeki slug'ını çözer; yoksa o dilin ana sayfasına gider.
-- Lokalize slug benzersizliği dil başına: `beforeValidate` hook ile (Postgres unique index tüm diller için çakışabilir — F0'da doğrulanır).
+- Lokalize slug benzersizliği dil başına: lokalize alanda `unique: true` yeterli (`(slug, _locale)` index'i; F0 spike #12 doğruladı, hook yok).
 - Her sayfada `hreflang` (tr, en, x-default) — yalnızca **çevirisi yayınlanmış** diller listelenir; çevirisi olmayan dil sayfası **yalnızca noindex** (çapraz-dil canonical yok, hreflang'de yer almaz).
 - F3'te `ar` için `dir="rtl"`, Tailwind logical properties (ms-/me-) baştan kullanılır.
 
@@ -231,13 +231,13 @@ F2: Rehber dizini + yazı şablonu (TOC, FAQ, "AI'ya kopyala" butonu, yazar kutu
 
 ## 8. AI akışları
 
-**Altyapı** (geolyt'ten): Vercel AI SDK + `@openrouter/ai-sdk-provider`, görev bazlı model zinciri (`aiSettings` global > env > varsayılan), OpenRouter `models` fallback dizisi, `generateObject` + Zod, JSON repair pass (easyapp-bot'tan), düşük temperature, bugünün tarihi prompt'a enjekte, `aiUsage` kaydı (OpenRouter usage accounting yanıtındaki maliyet), aylık bütçe aşılınca işler durur ve admin'e uyarı.
+**Altyapı** (geolyt'ten): Vercel AI SDK + `@openrouter/ai-sdk-provider`, görev bazlı model zinciri (`aiSettings` global > env > varsayılan), OpenRouter `models` fallback dizisi, AI SDK v7 `generateText` + `Output.object` + Zod, JSON repair pass (easyapp-bot'tan), düşük temperature, bugünün tarihi prompt'a enjekte, `aiUsage` kaydı (OpenRouter usage accounting yanıtındaki maliyet), aylık bütçe aşılınca işler durur ve admin'e uyarı.
 
 | Görev | Varsayılan zincir (admin'den değişir) | Tetik |
 |---|---|---|
-| `tagImage` (vision) | Gemini Flash sınıfı → GPT mini sınıfı | upload sonrası job; toplu backfill script |
-| `translate` | Claude Sonnet sınıfı → Gemini Pro sınıfı | admin'de "AI ile çevir" butonu (eksik diller) |
-| `draftGuide` | Claude Sonnet sınıfı | admin'de "AI ile taslak" (asla otomatik yayın) |
+| `tagImage` (vision) | `google/gemini-3.8-flash` → `anthropic/claude-haiku-5.5` | upload sonrası job; toplu backfill script |
+| `translate` | `anthropic/claude-sonnet-5.5` → `google/gemini-3.8-flash` | admin'de "AI ile çevir" butonu (eksik diller) |
+| `draftGuide` | `anthropic/claude-sonnet-5.5` | admin'de "AI ile taslak" (asla otomatik yayın) |
 | `clusterProjects` | CLIP embedding (pipeline'daki) + EXIF tarih + LLM isimlendirme | tek seferlik seed |
 
 - `tagImage` çıktısı (Zod): `{ title{tr,en}, alt{tr,en} (≤125 karakter), caption{tr,en}, seoFilename (tr, ascii, ≤60), tags{wood[], setting[], finish[], stage[]}, categoryCheck{agrees, suggested}, confidence }` — kategori bağlamı + WP sayfa bağlamı prompt'a verilir; görsel üzerindeki filigran metni alt metne yazılmaz.
@@ -285,11 +285,11 @@ F2: Rehber dizini + yazı şablonu (TOC, FAQ, "AI'ya kopyala" butonu, yazar kutu
 ## 12. Fazlar ve teslim kriterleri
 
 ### F0 — Spike (1–2 gün)
-- Payload 3 + Next 16 + Postgres + MinIO iskeleti; doğrula: (a) `orderable` join ile kategori→media sürükle-bırak, (b) S3 adapter + `disablePayloadAccessControl` + `generateFileURL` + sharp boyutları + custom loader, (c) Lexical live preview, (d) bun ile standalone Docker build Dokploy'da, (e) Arapça admin RTL (F3 için not), (f) lokalize slug'da dil başına benzersizlik, (g) `jobs.autoRun` standalone'da çalışıyor mu, (h) Next 16 `proxy.ts` + `skipTrailingSlashRedirect` + next-intl sırası ile tek hop legacy redirect, (i) AI SDK güncel sürümde `generateObject` (veya halefi) + OpenRouter provider.
+- ✅ Tamamlandı → `docs/SPIKE.md`. Payload 3 + Next 16 + Postgres + S3 iskeleti; doğrula: (a) `orderable` join ile kategori→media sürükle-bırak, (b) S3 adapter + `disablePayloadAccessControl` + `generateFileURL` + sharp boyutları + custom loader, (c) Lexical live preview, (d) bun ile standalone Docker build Dokploy'da, (e) Arapça admin RTL (F3 için not), (f) lokalize slug'da dil başına benzersizlik, (g) `jobs.autoRun` standalone'da çalışıyor mu, (h) Next 16 `proxy.ts` + `skipTrailingSlashRedirect` + next-intl sırası ile tek hop legacy redirect, (i) AI SDK güncel sürümde `generateObject` (veya halefi) + OpenRouter provider.
 - **Çıkış**: 5 doğrulamanın sonucu `docs/SPIKE.md`; olumsuz çıkan varsa plan güncellenir.
 
 ### F1 — Lansman
-1. Altyapı: repo, compose (app/postgres/umami/glitchtip/minio), Dockerfile, CI, staging.
+1. Altyapı: repo, compose (app/postgres/umami/glitchtip/s3-local), Dockerfile, CI, staging.
 2. Koleksiyonlar + global'ler + roller + admin özel Galeri view + PWA.
 3. Seed (**lokalde, Claude ile hazırlanır**; kullanıcı kararı): 568 görsel için başlık/alt/caption/SEO dosya adı/etiketler lokalde üretilir, kategori bazında pipeline'daki `27_contact_sheet.py` / `09_serve_review.py` (yerel inceleme sunucusu, işaretleri JSON'a yazar) uyarlanarak gözden geçirilir, düzeltilir → `seed/media.json` **approved** durumda içeri alınır. 11 kategori, sıra = `legacy/live-site-images-ordered.json` (canlı sayfadaki sıra; Webiste'deki 69 "Yeni" foto kategorinin sonuna), legacyUrls, medya redirect JSON haritası, CLIP kümeleme → "olası proje" önerileri (admin'de onay). Runtime `tagImage` yalnızca yeni yüklemeler için.
    - Önkoşul (DNS geçişinden önce): WP `full` orijinallerinin hash eşlemesi ve `wp-media.json` doğrulaması; WP güzelhosting'de yedek olarak kalır.
