@@ -54,6 +54,13 @@ export default function proxy(req: NextRequest) {
   // Other files (robots.txt, sitemap.xml, icons): no locale handling.
   if (/\.[a-z0-9]+$/i.test(pathname)) return NextResponse.next()
 
+  // A malformed percent-escape (e.g. /tr/projeler/%E0%A4%A) makes the locale middleware throw (500); it is a bad request.
+  try {
+    decodeURIComponent(pathname)
+  } catch {
+    return new NextResponse('Bad request', { status: 400 })
+  }
+
   const isLocalized = routing.locales.some((l) => pathname === `/${l}` || pathname.startsWith(`/${l}/`))
   if (isLocalized && pathname.length > 1 && pathname.endsWith('/')) {
     return NextResponse.redirect(new URL(pathname.replace(/\/+$/, '') + req.nextUrl.search, req.url), 308)
