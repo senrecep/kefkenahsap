@@ -2,28 +2,30 @@ import { readFileSync } from 'node:fs'
 import path from 'node:path'
 import { describe, expect, it } from 'vitest'
 
-import { TR_WHATSAPP_TEMPLATES } from '../../../scripts/seed/site-settings'
 import { parseSiteSettingsOverlay } from './schema'
-import { siteSettingsFill } from './site-settings'
+import { EN_WHATSAPP_TEMPLATES, fillEmptyGroups, siteSettingsFill, TR_WHATSAPP_TEMPLATES } from './site-settings'
 
 const overlay = {
   phones: [
     { number: '0532 295 84 16', label: 'Мобильный / WhatsApp' },
     { number: '0212 322 43 59', label: 'Городской' },
   ],
-  areaServed: [{ name: 'Стамбул' }, { name: 'Турция' }],
+  areaServed: [
+    { kind: 'city' as const, name: 'Стамбул' },
+    { kind: 'country' as const, name: 'Турция' },
+  ],
   whatsappTemplates: { default: 'Здравствуйте.', contact: 'Хочу запросить предложение.' },
   defaultDescription: 'Описание.',
 }
 
 describe('siteSettingsFill', () => {
-  it('fills empty localized fields and matches phones by number, areas by index', () => {
+  it('fills empty localized fields and matches phones by number, areas by kind', () => {
     const current = {
       phones: [
         { id: 'b', number: '0212 322 43 59', label: null, whatsapp: false },
         { id: 'a', number: '0532 295 84 16', label: null, whatsapp: true },
       ],
-      areaServed: [{ id: 'x', name: null, kind: 'city' as const }],
+      areaServed: [{ id: 'x', name: null, kind: 'country' as const }],
       whatsappTemplates: { default: null, contact: null },
       defaultDescription: null,
     }
@@ -32,7 +34,7 @@ describe('siteSettingsFill', () => {
         { id: 'b', number: '0212 322 43 59', label: 'Городской', whatsapp: false },
         { id: 'a', number: '0532 295 84 16', label: 'Мобильный / WhatsApp', whatsapp: true },
       ],
-      areaServed: [{ id: 'x', name: 'Стамбул', kind: 'city' }],
+      areaServed: [{ id: 'x', name: 'Турция', kind: 'country' }],
       whatsappTemplates: { default: 'Здравствуйте.', contact: 'Хочу запросить предложение.' },
       defaultDescription: 'Описание.',
     })
@@ -64,7 +66,36 @@ describe('siteSettingsFill', () => {
   })
 })
 
+describe('fillEmptyGroups', () => {
+  it('fills empty scalars and group sub-fields, keeps typed ones, and sends rows only when there are none', () => {
+    const current = {
+      companyName: 'Kefken Ahşap Dekorasyon',
+      email: 'usta@example.com',
+      address: { street: 'Usta Sk. 1', district: null, country: 'TR' },
+      phones: [{ id: 'a', number: '0555 000 00 00', label: 'Usta' }],
+      areaServed: [],
+    }
+    const incoming = {
+      companyName: 'Kefken Ahşap Dekorasyon',
+      email: 'seed@example.com',
+      foundingYear: 2009,
+      address: { street: 'Seed Sk.', district: 'Arnavutköy', country: 'TR' },
+      phones: [{ number: '0532 295 84 16', label: 'Cep' }],
+      areaServed: [{ name: 'İstanbul', kind: 'city' }],
+    }
+    expect(fillEmptyGroups(current, incoming)).toEqual({
+      foundingYear: 2009,
+      address: { street: 'Usta Sk. 1', district: 'Arnavutköy', country: 'TR' },
+      areaServed: [{ name: 'İstanbul', kind: 'city' }],
+    })
+  })
+})
+
 const placeholders = (s: string) => [...s.matchAll(/\{(\w+)\}/g)].map((m) => m[1]).sort()
+
+it.each(Object.entries(TR_WHATSAPP_TEMPLATES))('EN template %s keeps the TR placeholders', (key, tr) => {
+  expect(placeholders(EN_WHATSAPP_TEMPLATES[key as keyof typeof TR_WHATSAPP_TEMPLATES])).toEqual(placeholders(tr))
+})
 
 describe.each(['ru', 'de', 'ar'])('seed/i18n/%s/site-settings.json', (locale) => {
   const r = parseSiteSettingsOverlay(readFileSync(path.resolve(process.cwd(), 'seed/i18n', locale, 'site-settings.json'), 'utf8'))

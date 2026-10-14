@@ -3,7 +3,10 @@
     { "number": "0532 295 84 16", "label": "Mobil / WhatsApp" },
     { "number": "0212 322 43 59", "label": "Festnetz" }
   ],
-  "areaServed": [{ "name": "Istanbul" }, { "name": "Türkei" }],
+  "areaServed": [
+    { "kind": "city", "name": "Istanbul" },
+    { "kind": "country", "name": "Türkei" }
+  ],
   "whatsappTemplates": {
     "default": "Guten Tag, ich möchte mich über Ihre Holzarbeiten informieren.",
     "category": "Guten Tag, ich möchte mich über „{category}“ informieren. ({url})",

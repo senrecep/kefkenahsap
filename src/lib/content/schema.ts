@@ -64,11 +64,11 @@ export const parseProjectStoriesOverlay = parseWith(z.record(z.string(), z.objec
 export const parseReferencesOverlay = parseWith(z.record(z.string(), text))
 // alt ≤ 125 = Media.alt maxLength, so a long one fails here and not halfway through a run.
 export const parseMediaMetaOverlay = parseWith(z.object({ title: text, alt: text.max(125), caption: text }))
-/** seed/i18n/<locale>/site-settings.json: phone labels keyed by number, area names by position (#140). */
+/** seed/i18n/<locale>/site-settings.json: phone labels keyed by number, area names by kind (#140). */
 const siteSettingsOverlay = z
   .object({
     phones: z.array(z.object({ number: text, label: text })).optional(),
-    areaServed: z.array(z.object({ name: text })).optional(),
+    areaServed: z.array(z.object({ kind: z.enum(['district', 'city', 'country']), name: text })).optional(),
     whatsappTemplates: z.object({ default: text, category: text, project: text, image: text, contact: text }).partial().optional(),
     defaultDescription: text.optional(),
   })
