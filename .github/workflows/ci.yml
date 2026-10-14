@@ -72,7 +72,10 @@ jobs:
           echo "DATABASE_URL=postgres://kefken:kefken@localhost:$PG/kefken" >> "$GITHUB_ENV"
           echo "S3_ENDPOINT=http://localhost:$S3" >> "$GITHUB_ENV"
           echo "MEDIA_PUBLIC_URL=http://localhost:$S3/kefken-media" >> "$GITHUB_ENV"
-          echo "E2E_PORT=$(node -e "const s=require('net').createServer().listen(0,()=>{console.log(s.address().port);s.close()})")" >> "$GITHUB_ENV"
+          PORT=$(node -e "const s=require('net').createServer().listen(0,()=>{console.log(s.address().port);s.close()})")
+          echo "E2E_PORT=$PORT" >> "$GITHUB_ENV"
+          # Inlined at build time: canonical/hreflang must point at the server Lighthouse audits (#52).
+          echo "NEXT_PUBLIC_SITE_URL=http://localhost:$PORT" >> "$GITHUB_ENV"
 
       - name: Create S3 buckets
         run: |
@@ -103,6 +106,29 @@ jobs:
           name: playwright-report
           path: test-results/
           retention-days: 7
+
+      # Lighthouse CI (#52): budgets from lighthouserc.cjs on the same production build. Reported, not blocking:
+      # lab scores on a shared runner are noisy, and CI photos are synthetic (real-photo scores: docs/quality/).
+      - name: Lighthouse CI
+        id: lhci
+        continue-on-error: true
+        run: |
+          bun run payload run scripts/quality/fixtures.ts
+          node_modules/.bin/next start -p "$E2E_PORT" > lhci-server.log 2>&1 &
+          trap "kill $! || true" EXIT
+          for i in $(seq 60); do curl -sf -o /dev/null "http://localhost:$E2E_PORT/brand/logo.png" && break; sleep 1; done
+          export CHROME_PATH="$(node -e "console.log(require('playwright-core').chromium.executablePath())")" LHCI_BASE_URL="http://localhost:$E2E_PORT"
+          # Warm-up: a cold first render streams metadata into <body>, which Lighthouse reads as a missing description.
+          for u in $(node -p "require('./lighthouserc.cjs').ci.collect.url.join(' ')"); do curl -s -o /dev/null "$u"; done
+          bunx lhci collect --config=lighthouserc.cjs
+          bunx lhci upload --config=lighthouserc.cjs
+          bunx lhci assert --config=lighthouserc.cjs
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.lhci.outcome != 'skipped'
+        with:
+          name: lighthouse
+          path: .lighthouseci/
+          retention-days: 14
 
   deploy:
     # Builds the image on the server, then Dokploy redeploys the compose; only after checks pass on a deploy branch.

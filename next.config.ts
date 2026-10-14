@@ -36,4 +36,11 @@ const nextConfig: NextConfig = {
   },
 }
 
-export default withPayload(withNextIntl(nextConfig), { devBundleServerPackages: false })
+const config = withPayload(withNextIntl(nextConfig), { devBundleServerPackages: false })
+const payloadHeaders = config.headers!
+// Payload sends `Critical-CH: Sec-CH-Prefers-Color-Scheme` (its admin theme) on every path, which makes Chrome retry
+// each first navigation to the public site with the hint: one extra round trip (~600 ms on mobile, #52). Admin only.
+config.headers = async () =>
+  (await payloadHeaders()).map((rule) => (rule.headers.some((h) => h.key === 'Critical-CH') ? { ...rule, source: '/admin/:path*' } : rule))
+
+export default config

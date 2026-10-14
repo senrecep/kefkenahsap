@@ -28,7 +28,11 @@ test.beforeAll(async ({ request }) => {
   image = media.docs[0].seoFilename
 })
 
-test.afterAll(() => fixtures(' -- --remove'))
+// CI keeps them for the Lighthouse step (an ephemeral DB, and a re-created doc would meet stale cached pages);
+// locally they would otherwise show up in the shared dev DB's lists, search and sitemap.
+test.afterAll(() => {
+  if (!process.env.CI) fixtures(' -- --remove')
+})
 
 const pages = () => [
   ['home tr', '/tr'],
