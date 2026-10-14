@@ -398,6 +398,13 @@
           "primaryKey": false,
           "notNull": false
         },
+        "prefix": {
+          "name": "prefix",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false,
+          "default": "''"
+        },
         "_objectkey": {
           "name": "_objectkey",
           "type": "varchar",
@@ -13435,6 +13442,6 @@
     "tables": {},
     "columns": {}
   },
-  "id": "ffb74f43-7b8e-4aef-ac85-d60d907fae48",
+  "id": "1e8f704d-71e1-4a29-9d91-f168d9522bae",
   "prevId": "00000000-0000-0000-0000-000000000000"
 }
