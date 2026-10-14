@@ -3,8 +3,10 @@
 import { Check, ChevronDown, Globe } from 'lucide-react'
 import { useEffect, useId, useRef } from 'react'
 
+import type { Locale } from '@/i18n/routing'
+
 // Endonyms: each language is named in itself, never translated.
-const NATIVE: Record<string, string> = { tr: 'Türkçe', en: 'English', ru: 'Русский', de: 'Deutsch', ar: 'العربية' }
+const NATIVE = { tr: 'Türkçe', en: 'English', ru: 'Русский', de: 'Deutsch', ar: 'العربية' } as const satisfies Record<Locale, string>
 
 /** Follows the page's own <link rel="alternate" hreflang> (set by each page's metadata), so CMS slugs switch correctly. */
 // locale, locales (the ones with content) and label come from the server Header, keeping the i18n runtime out of the client bundle.
@@ -25,25 +27,30 @@ export function LanguageSwitcher({
   const details = useRef<HTMLDetailsElement>(null)
   const labelId = useId()
 
-  // <details> opens and closes on its own; this only adds close on outside click and on Escape.
+  // <details> opens and closes on its own; this adds close on outside click, Escape and tab-out.
   useEffect(() => {
-    if (variant !== 'menu') return
+    const d = details.current
+    if (!d) return
     const close = (focus: boolean) => {
-      const d = details.current
-      if (!d?.open) return
+      if (!d.open) return
       d.open = false
       if (focus) d.querySelector('summary')?.focus()
     }
-    const onPointer = (e: PointerEvent) => !details.current?.contains(e.target as Node) && close(false)
+    const onPointer = (e: PointerEvent) => !d.contains(e.target as Node) && close(false)
     // Return focus to the summary only if it was inside (a mouse open in Safari never focuses the summary).
-    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && close(!!details.current?.contains(document.activeElement))
+    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && close(d.contains(document.activeElement))
+    // A null relatedTarget (click on a non-focusable spot, window blur) is left to the pointer handler,
+    // so a click on a link that does not take focus (Safari) still lands before the panel closes.
+    const onFocusOut = (e: FocusEvent) => e.relatedTarget instanceof Node && !d.contains(e.relatedTarget) && close(false)
     document.addEventListener('pointerdown', onPointer)
     document.addEventListener('keydown', onKey)
+    d.addEventListener('focusout', onFocusOut)
     return () => {
       document.removeEventListener('pointerdown', onPointer)
       document.removeEventListener('keydown', onKey)
+      d.removeEventListener('focusout', onFocusOut)
     }
-  }, [variant])
+  }, [])
 
   // Real links (crawlable, work without JS); on click, prefer the page's own alternate URL.
   const onClick = (e: React.MouseEvent<HTMLAnchorElement>, target: string) => {
@@ -55,6 +62,7 @@ export function LanguageSwitcher({
     const alt = document.querySelector<HTMLLinkElement>(`link[rel="alternate"][hreflang="${target}"]`)
     if (alt?.href) {
       e.preventDefault()
+      if (details.current) details.current.open = false // not restored open from the bfcache on Back
       window.location.assign(alt.href)
     }
   }
@@ -63,7 +71,7 @@ export function LanguageSwitcher({
     locales.map((l) => (
       <li key={l}>
         <a href={`/${l}`} hrefLang={l} lang={l} onClick={(e) => onClick(e, l)} aria-current={l === locale ? 'true' : undefined} className={row}>
-          {NATIVE[l] ?? l.toUpperCase()}
+          {NATIVE[l as Locale] ?? l.toUpperCase()}
           {l === locale && <Check aria-hidden size={18} strokeWidth={2} className="shrink-0 text-action" />}
         </a>
       </li>
