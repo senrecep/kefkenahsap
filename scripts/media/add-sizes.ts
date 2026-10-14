@@ -1,4 +1,5 @@
-// #116: adds image sizes that were introduced after upload (any of Media's widths) to existing approved media.
+// #116: adds image sizes that were introduced after upload (any of Media's widths, and the phone-hero `portrait` crop
+// cut around the focal point the way Payload cuts it, #129) to existing approved media.
 // Idempotent: media that already has the size, or whose original is not wider, is skipped, so a re-run (or a run cut
 // short) only does what is left. Reads the stored original from S3 (GetObject), resizes it the way Payload does at
 // upload (EXIF-rotated, same width, WebP q80, no enlargement), writes `<name>-<w>x<h>.webp` next to the other sizes,
@@ -8,11 +9,11 @@
 // Run: bun run payload run scripts/media/add-sizes.ts [-- --dry-run | --yes]
 import { GetObjectCommand, PutObjectCommand, S3Client } from '@aws-sdk/client-s3'
 import { getPayload } from 'payload'
-import sharp from 'sharp'
+import sharp, { type OutputInfo } from 'sharp'
 
 import config from '@/payload.config'
-import { MEDIA_WIDTHS } from '@/collections/Media'
-import { derivativeFilename, needsDerivative } from '@/lib/media/derivative'
+import { MEDIA_WIDTHS, PORTRAIT } from '@/collections/Media'
+import { cropAroundFocalPoint, derivativeFilename, needsDerivative } from '@/lib/media/derivative'
 import { databaseHost, isLocalHost } from '@/lib/quality/target'
 
 // Every configured size: one added to Media later (w480 #116, w800 #129) is filled in on the next run.
@@ -51,7 +52,9 @@ for (let page = 1, more = true; more; page++) {
   more = res.hasNextPage
   for (const doc of res.docs) {
     const todo = Object.entries(SIZES).filter(([name, width]) => needsDerivative(doc, name, width))
-    if (!todo.length || !doc.filename) {
+    // Only where the crop needs no enlargement (Payload would otherwise make a smaller, differently shaped one).
+    const portrait = needsDerivative(doc, 'portrait', PORTRAIT.width) && (doc.height ?? 0) >= PORTRAIT.height
+    if ((!todo.length && !portrait) || !doc.filename) {
       skipped++
       continue
     }
@@ -60,11 +63,16 @@ for (let page = 1, more = true; more; page++) {
       const object = await s3.send(new GetObjectCommand({ Bucket: bucket, Key: key(doc.filename) }))
       const original = Buffer.from(await object.Body!.transformToByteArray())
       const sizes: Record<string, unknown> = {}
-      for (const [name, width] of todo) {
-        const { data, info } = await sharp(original).rotate().resize({ width, withoutEnlargement: true }).webp({ quality: QUALITY }).toBuffer({ resolveWithObject: true })
-        const filename = derivativeFilename(doc.filename, info.width, info.height)
+      const save = async (name: string, { data, info }: { data: Buffer; info: OutputInfo }) => {
+        const filename = derivativeFilename(doc.filename!, info.width, info.height)
         if (!dryRun) await s3.send(new PutObjectCommand({ Bucket: bucket, Key: key(filename), Body: data, ContentType: 'image/webp' }))
         sizes[name] = { filename, width: info.width, height: info.height, mimeType: 'image/webp', filesize: data.length }
+      }
+      for (const [name, width] of todo) {
+        await save(name, await sharp(original).rotate().resize({ width, withoutEnlargement: true }).webp({ quality: QUALITY }).toBuffer({ resolveWithObject: true }))
+      }
+      if (portrait) {
+        await save('portrait', await cropAroundFocalPoint(original, PORTRAIT, { x: doc.focalX ?? 50, y: doc.focalY ?? 50 }))
       }
       // Only the new entries: Payload keeps the other size columns as they are.
       if (!dryRun) await payload.update({ collection: 'media', id: doc.id, data: { sizes }, context: { skipAi: true }, overrideAccess: true, depth: 0 })

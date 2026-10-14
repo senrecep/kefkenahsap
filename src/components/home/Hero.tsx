@@ -6,7 +6,7 @@ import { Picture } from '@/components/ui/Picture'
 import { WhatsAppButton } from '@/components/ui/WhatsAppButton'
 import { Link } from '@/i18n/navigation'
 import type { Locale } from '@/i18n/routing'
-import type { MediaLike } from '@/lib/media/image'
+import { portraitOf, type MediaLike } from '@/lib/media/image'
 
 /** First viewport: full-bleed real job photo, bottom-left H1 + one sentence + WhatsApp / Teklif al on a bottom scrim. */
 export async function Hero({ locale, image, mobileImage, heading, subheading, priority = true }: { locale: Locale; image: MediaLike | null; mobileImage?: MediaLike | null; heading?: string | null; subheading?: string | null; priority?: boolean }) {
@@ -17,8 +17,9 @@ export async function Hero({ locale, image, mobileImage, heading, subheading, pr
       {image && (
         <div className="absolute inset-0 -z-10">
           {/* A landscape photo covers the tall phone hero at ~1000 CSS px wide, more than sizes="100vw" says: never below
-              w960 (w800 was visibly softer, #129). A portrait `mobileImage` fits the box and is sized honestly. */}
-          <Picture media={image} mobile={mobileImage ?? undefined} sizes="100vw" minWidth={960} priority={priority} className="h-full !aspect-auto motion-safe:animate-settle" imgClassName="object-[50%_85%]" />
+              w960 (w800 was visibly softer, #129). On phones a portrait (`mobileImage`, else the photo's own 9:16 crop)
+              fits the box instead: same framing, a third of the bytes. */}
+          <Picture media={image} mobile={mobileImage ?? portraitOf(image)} sizes="100vw" minWidth={960} priority={priority} className="h-full !aspect-auto motion-safe:animate-settle" imgClassName="object-[50%_85%]" />
         </div>
       )}
       <div className="relative w-full">

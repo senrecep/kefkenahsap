@@ -15,3 +15,14 @@ export function distribute(items: readonly Box[], count: number): number[][] {
   })
   return columns
 }
+
+/**
+ * The card most likely to be the first screen's LCP: the tallest (columns share a width) among the first `rows` of
+ * each column; a tie goes to the earlier one in document order (column by column), which is what Chrome reports.
+ */
+export function largestFirstScreenItem(items: readonly Box[], columns: readonly number[][], rows: number): number | undefined {
+  const ratio = (b: Box) => (b.width && b.height ? b.height / b.width : 1)
+  let best: number | undefined
+  for (const col of columns) for (const i of col.slice(0, rows)) if (best === undefined || ratio(items[i]!) > ratio(items[best]!)) best = i
+  return best
+}

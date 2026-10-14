@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { distribute } from './masonry'
+import { distribute, largestFirstScreenItem } from './masonry'
 
 // Ratios chosen so the hand-computed column heights are exact.
 const landscape = { width: 400, height: 200 } // 0.5
@@ -35,3 +35,31 @@ describe('distribute (shortest column first)', () => {
     expect(distribute(items, 3)).toEqual(distribute([...items], 3))
   })
 })
+
+describe('largestFirstScreenItem (the phone grid\'s LCP card)', () => {
+  it('picks the tallest card among the first rows of every column', () => {
+    // columns: [0 landscape, 2 square], [1 portrait, 3 landscape] → item 1 (ratio 2)
+    const items = [landscape, portrait, square, landscape]
+    expect(largestFirstScreenItem(items, [[0, 2], [1, 3]], 2)).toBe(1)
+  })
+  it('breaks a tie by document order: earlier column first, then row', () => {
+    // the gallery as measured: [landscape, portrait] | [portrait, landscape] → Chrome reports column 1's portrait
+    const items = [landscape, portrait, portrait, landscape]
+    expect(largestFirstScreenItem(items, [[0, 1], [2, 3]], 2)).toBe(1)
+  })
+  it('breaks a tie within one column by row', () => {
+    expect(largestFirstScreenItem([portrait, portrait, landscape], [[0, 1], [2]], 2)).toBe(0)
+  })
+  it('treats a card without known size as square', () => {
+    // square-equivalent unknown (ratio 1) beats landscape (0.5), loses to portrait (2)
+    expect(largestFirstScreenItem([landscape, { width: null, height: null }], [[0], [1]], 1)).toBe(1)
+    expect(largestFirstScreenItem([{ width: 0, height: 0 }, portrait], [[0], [1]], 1)).toBe(1)
+  })
+  it('ignores cards below the first rows', () => {
+    expect(largestFirstScreenItem([square, landscape, portrait], [[0, 2], [1]], 1)).toBe(0)
+  })
+  it('is undefined for an empty grid', () => {
+    expect(largestFirstScreenItem([], [[], []], 2)).toBeUndefined()
+  })
+})
+
