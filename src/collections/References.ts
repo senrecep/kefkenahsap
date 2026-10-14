@@ -18,6 +18,8 @@ export const References: CollectionConfig = {
       relationTo: 'media',
       label: 'Logo (yalnızca izin varsa)',
       admin: { condition: (d) => Boolean(d?.logoPermission) },
+      // No permission → never served, even if a logo is still attached.
+      access: { read: ({ req, siblingData }) => Boolean(req.user) || Boolean(siblingData?.logoPermission) },
     },
     { name: 'logoPermission', type: 'checkbox', label: 'Logo kullanım izni alındı' },
   ],

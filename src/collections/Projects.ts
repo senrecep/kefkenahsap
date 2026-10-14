@@ -1,7 +1,10 @@
-import type { CollectionConfig } from 'payload'
+import type { CollectionConfig, FieldAccess } from 'payload'
 
 import { isStaff, publishedOrStaff } from '@/access'
 import { slugFrom } from '@/hooks/slug'
+
+// Testimonial text is readable by the public only with recorded consent (API and frontend alike).
+const consentedOrStaff: FieldAccess = ({ req, siblingData }) => Boolean(req.user) || Boolean(siblingData?.consentGiven)
 
 export const Projects: CollectionConfig = {
   slug: 'projects',
@@ -69,8 +72,11 @@ export const Projects: CollectionConfig = {
       type: 'group',
       label: 'Müşteri yorumu (yalnızca izinle yayınlanır)',
       fields: [
-        { name: 'quote', type: 'textarea', localized: true },
-        { type: 'row', fields: [{ name: 'author', type: 'text' }, { name: 'role', type: 'text', localized: true }] },
+        { name: 'quote', type: 'textarea', localized: true, access: { read: consentedOrStaff } },
+        { type: 'row', fields: [
+          { name: 'author', type: 'text', access: { read: consentedOrStaff } },
+          { name: 'role', type: 'text', localized: true, access: { read: consentedOrStaff } },
+        ] },
         { name: 'consentGiven', type: 'checkbox', label: 'Müşteri yayın izni verdi' },
       ],
     },

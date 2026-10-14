@@ -60,6 +60,40 @@ describe('references', () => {
   })
 })
 
+describe('privacy (review follow-ups)', () => {
+  it('hides the testimonial from the public until consent is recorded', async () => {
+    const p = await payload.create({
+      collection: 'projects',
+      data: { title: `Yorum ${stamp}`, _status: 'published', testimonial: { quote: 'Harika iş', author: 'B. Kaya', consentGiven: false } },
+    })
+    cleanup.push({ collection: 'projects', id: p.id })
+    const anon = await payload.findByID({ collection: 'projects', id: p.id, overrideAccess: false })
+    expect(anon.testimonial?.quote).toBeUndefined()
+    expect(anon.testimonial?.author).toBeUndefined()
+    await payload.update({ collection: 'projects', id: p.id, data: { testimonial: { consentGiven: true } } })
+    const after = await payload.findByID({ collection: 'projects', id: p.id, overrideAccess: false })
+    expect(after.testimonial?.quote).toBe('Harika iş')
+  })
+
+  it('does not list draft projects of a reference to the public', async () => {
+    const ref = await payload.create({ collection: 'references', data: { name: `Gizli ref ${stamp}` } })
+    cleanup.push({ collection: 'references', id: ref.id })
+    const p = await payload.create({ collection: 'projects', draft: true, data: { title: `Taslak ref proje ${stamp}`, reference: ref.id } })
+    cleanup.push({ collection: 'projects', id: p.id })
+    const anon = await payload.findByID({ collection: 'references', id: ref.id, overrideAccess: false })
+    expect(anon.projects?.docs ?? []).toHaveLength(0)
+  })
+
+  it('never serves a logo without permission', async () => {
+    const m = await payload.create({ collection: 'media', data: {}, filePath: IMG })
+    cleanup.push({ collection: 'media', id: m.id })
+    const ref = await payload.create({ collection: 'references', data: { name: `Logo ${stamp}`, logo: m.id, logoPermission: false } })
+    cleanup.push({ collection: 'references', id: ref.id })
+    const anon = await payload.findByID({ collection: 'references', id: ref.id, overrideAccess: false })
+    expect(anon.logo).toBeUndefined()
+  })
+})
+
 describe('redirects', () => {
   it('stores manual 301 redirects', async () => {
     const r = await payload.create({ collection: 'redirects', data: { from: `/eski-${stamp}/`, to: { type: 'custom', url: '/tr' }, type: '301' } })
