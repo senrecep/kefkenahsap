@@ -9,11 +9,11 @@ import { WhatsAppButton } from '@/components/ui/WhatsAppButton'
 import { Link } from '@/i18n/navigation'
 import type { Locale } from '@/i18n/routing'
 import { sinceYear } from '@/lib/company'
-import { getPage, getPageTitles } from '@/lib/data/pages'
+import { CMS_PAGES, getPage, getPageTitles } from '@/lib/data/pages'
 import { getSiteSettings } from '@/lib/data/site'
 import { cmsPagePaths, pageMetadata } from '@/lib/seo/page-metadata'
 
-const SLUGS = ['hakkimizda', 'about']
+const SLUGS = CMS_PAGES['/hakkimizda']
 type Props = { params: Promise<{ locale: string }> }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

@@ -5,11 +5,11 @@ import { getTranslations, setRequestLocale } from 'next-intl/server'
 import { ContentPage } from '@/components/content/ContentPage'
 import { CookiesDraft } from '@/content/legal/cookies'
 import type { Locale } from '@/i18n/routing'
-import { getPage, getPageTitles } from '@/lib/data/pages'
+import { CMS_PAGES, getPage, getPageTitles } from '@/lib/data/pages'
 import { getSiteSettings } from '@/lib/data/site'
 import { cmsPagePaths, pageMetadata } from '@/lib/seo/page-metadata'
 
-const SLUGS = ['cerez-politikasi', 'cookies']
+const SLUGS = CMS_PAGES['/cerez-politikasi']
 type Props = { params: Promise<{ locale: string }> }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

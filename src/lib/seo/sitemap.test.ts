@@ -1,5 +1,7 @@
 import { describe, expect, it } from 'vitest'
 
+import { cmsRoutePaths } from '@/lib/i18n/published'
+
 import { sitemapEntries } from './sitemap'
 
 const SITE = 'https://www.kefkenahsap.com'
@@ -27,5 +29,12 @@ describe('sitemapEntries (PLAN §7 Teknik 8)', () => {
   it('image URLs ride on their page entry (image sitemap extension)', () => {
     const [e] = sitemapEntries([{ paths: { tr: '/tr/galeri/a' }, images: ['https://cdn.kefkenahsap.com/a.webp'] }], SITE)
     expect(e?.images).toEqual(['https://cdn.kefkenahsap.com/a.webp'])
+  })
+
+  it('a CMS-backed fixed route (about) with a Turkish title only lists Turkish — the English page is noindex', () => {
+    const paths = cmsRoutePaths({ tr: '/tr/hakkimizda', en: '/en/about' }, { tr: 'Hakkımızda', en: null })
+    expect(sitemapEntries([{ paths }], SITE)).toEqual([
+      { url: `${SITE}/tr/hakkimizda`, alternates: { languages: { tr: `${SITE}/tr/hakkimizda`, 'x-default': `${SITE}/tr/hakkimizda` } } },
+    ])
   })
 })

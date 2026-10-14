@@ -13,6 +13,8 @@ export type FactsInput = {
   social?: { instagram?: Text; facebook?: Text; googleBusiness?: Text } | null
 }
 
+const DAYS: Record<string, string> = { Mo: 'Monday', Tu: 'Tuesday', We: 'Wednesday', Th: 'Thursday', Fr: 'Friday', Sa: 'Saturday', Su: 'Sunday' }
+
 const join = (parts: Text[]) => parts.filter((p) => p?.trim()).join(', ')
 
 /** PLAN §7 Teknik 9 "Key Facts": siteSettings fields only, and only the filled ones (never an invented value). */
@@ -25,7 +27,7 @@ export function keyFacts(f: FactsInput, site: string): string[] {
     ['Address', f.address && join([f.address.street, f.address.district, f.address.city, f.address.postalCode, f.address.country])],
     ...(f.phones ?? []).map((p): [string, Text] => ['Phone', p.label?.trim() ? `${p.number} (${p.label})` : p.number]),
     ['Email', f.email],
-    ...(f.hours ?? []).map((h): [string, Text] => ['Opening hours', `${join(h.days ?? [])} ${h.opens}–${h.closes}`]),
+    ...(f.hours ?? []).map((h): [string, Text] => ['Opening hours', `${join((h.days ?? []).map((d) => (d ? (DAYS[d] ?? d) : d)))} ${h.opens}–${h.closes}`]),
     ['Areas served', join((f.areaServed ?? []).map((a) => a.name))],
     ['Services', join(f.services ?? [])],
     ['Instagram', f.social?.instagram],
@@ -46,8 +48,10 @@ export function llmsTxt(args: { title: string; summary?: Text; facts: string[]; 
     out.push(`## ${s.title}`, '')
     for (const i of s.items) {
       const text = i.text?.trim()
-      if (args.full) out.push(`### [${i.name}](${i.url})`, '', ...(text ? [text, ''] : []))
-      else out.push(`- [${i.name}](${i.url})${text ? `: ${text}` : ''}`)
+      const link = `[${i.name.replace(/\]/g, '\\]').replace(/\s+/g, ' ')}](${i.url})`
+      if (args.full) out.push(`### ${link}`, '', ...(text ? [text, ''] : []))
+      // A list item must stay on one line.
+      else out.push(`- ${link}${text ? `: ${text.replace(/\s*\n\s*/g, ' ')}` : ''}`)
     }
     if (!args.full) out.push('')
   }

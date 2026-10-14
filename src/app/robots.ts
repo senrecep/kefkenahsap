@@ -9,7 +9,7 @@ export const dynamic = 'force-dynamic'
 
 export default function robots(): MetadataRoute.Robots {
   return robotsFor({
-    production: process.env.SITE_ENV === 'production',
+    siteEnv: process.env.SITE_ENV,
     site: siteUrl(),
     searchPaths: routing.locales.map((locale) => getPathname({ locale, href: '/ara' })),
   })

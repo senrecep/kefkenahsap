@@ -21,7 +21,8 @@ export async function renderLlms(full: boolean) {
       email: s.email,
       hours: s.hours,
       areaServed: s.areaServed,
-      services: services.map((c) => c.name?.[locale]).filter((n): n is string => Boolean(n)),
+      // Only services live in this locale (same rule as their pages).
+      services: services.filter((c) => c.paths[locale] && c.name?.[locale]).map((c) => c.name![locale]!),
       social: s.social,
     },
     site,
@@ -31,7 +32,8 @@ export async function renderLlms(full: boolean) {
     items: services
       .filter((c) => c.paths[l])
       .map((c) => {
-        const faq = (c.faq?.[l] ?? []).map((f) => `**${f.q}**\n${f.a}`)
+        // Same filter as the visible FAQ list.
+        const faq = (c.faq?.[l] ?? []).filter((f) => f.q?.trim() && f.a?.trim()).map((f) => `**${f.q}**\n${f.a}`)
         return { name: c.name![l]!, url: `${site}${c.paths[l]}`, text: full ? [c.shortDesc?.[l], ...faq].filter(Boolean).join('\n\n') : c.shortDesc?.[l] }
       }),
   }))

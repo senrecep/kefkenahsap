@@ -38,7 +38,7 @@ describe('keyFacts (llms.txt, from siteSettings)', () => {
       '- Phone: 0532 295 84 16 (Cep / WhatsApp)',
       '- Phone: 0212 322 43 59',
       '- Email: info@example.com',
-      '- Opening hours: Mo, Tu 08:00–18:00',
+      '- Opening hours: Monday, Tuesday 08:00–18:00',
       '- Areas served: İstanbul, Türkiye',
       '- Services: Deck ve Zeminler, Merdivenler',
       '- Instagram: https://instagram.com/k',
@@ -87,5 +87,10 @@ describe('llmsTxt', () => {
         '',
       ].join('\n'),
     )
+  })
+
+  it('link lines stay one line: `]` escaped, newlines collapsed', () => {
+    const out = llmsTxt({ title: 'K', facts: [], sections: [{ title: 'S', items: [{ name: 'Kapı [iç] dolap', url: `${SITE}/tr/k`, text: 'Birinci satır.\n\nİkinci satır.' }] }] })
+    expect(out).toContain(`- [Kapı [iç\\] dolap](${SITE}/tr/k): Birinci satır. İkinci satır.\n`)
   })
 })
