@@ -2,9 +2,15 @@ import type { CollectionConfig } from 'payload'
 
 import { isStaff, publishedOrStaff } from '@/access'
 import { slugFrom } from '@/hooks/slug'
+import { routing } from '@/i18n/routing'
 
 // Fixed route segments (TR internal + translated public paths): a category slug may not shadow them.
-const RESERVED = new Set(['hizmetlerimiz', 'galeri', 'projeler', 'rehber', 'referanslar', 'hakkimizda', 'iletisim', 'ara', 'kvkk', 'cerez-politikasi', 'services', 'gallery', 'projects', 'guides', 'references', 'about', 'contact', 'search', 'privacy', 'cookies', 'admin', 'api', 'wp-content'])
+const RESERVED = new Set([
+  ...Object.entries(routing.pathnames).flatMap(([internal, p]) => [internal, ...(typeof p === 'string' ? [] : Object.values(p))].map((x) => x.split('/')[1]!)),
+  'admin',
+  'api',
+  'wp-content',
+])
 import { revalidateAfterChange, revalidateAfterDelete } from '@/hooks/revalidate'
 import { aiTranslateField } from './aiFields'
 

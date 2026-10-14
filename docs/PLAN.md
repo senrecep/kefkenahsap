@@ -124,20 +124,20 @@ Tüm metin alanları `localized: true`. Taslak/versiyon (`versions.drafts`) + Li
 
 ## 5. URL yapısı, i18n ve yönlendirmeler
 
-### 5.1 Rotalar (TR / EN)
-| Sayfa | TR | EN |
-|---|---|---|
-| Ana sayfa | `/tr` | `/en` |
-| Kategori (11) | `/tr/deck-ve-zeminler` (eski slug korunur) | `/en/decking-and-flooring` |
-| Hizmetler dizini | `/tr/hizmetlerimiz` | `/en/services` |
-| Proje | `/tr/projeler/<slug>` | `/en/projects/<slug>` |
-| Görsel sayfası | `/tr/galeri/<slug>` | `/en/gallery/<slug>` |
-| Etiket | `/tr/etiket/<slug>` | `/en/tag/<slug>` |
-| Rehber | `/tr/rehber/<slug>` | `/en/guides/<slug>` |
-| Bölge | `/tr/bolgeler/<slug>` | `/en/areas/<slug>` |
-| Referanslar / Hakkımızda / İletişim | `/tr/referanslar`, `/tr/hakkimizda`, `/tr/iletisim` | `/en/references`, `/en/about`, `/en/contact` |
-| Arama | `/tr/ara?q=` (noindex) | `/en/search?q=` |
-| Yasal | `/tr/kvkk`, `/tr/cerez-politikasi` | `/en/privacy`, `/en/cookies` |
+### 5.1 Rotalar (TR / EN / RU / DE)
+| Sayfa | TR | EN | RU | DE |
+|---|---|---|---|---|
+| Ana sayfa | `/tr` | `/en` | `/ru` | `/de` |
+| Kategori (11) | `/tr/deck-ve-zeminler` (eski slug korunur) | `/en/decking-and-flooring` | `/ru/<slug>` | `/de/<slug>` |
+| Hizmetler dizini | `/tr/hizmetlerimiz` | `/en/services` | `/ru/uslugi` | `/de/leistungen` |
+| Proje | `/tr/projeler/<slug>` | `/en/projects/<slug>` | `/ru/proekty/<slug>` | `/de/projekte/<slug>` |
+| Görsel sayfası | `/tr/galeri/<slug>` | `/en/gallery/<slug>` | `/ru/galereya/<slug>` | `/de/galerie/<slug>` |
+| Etiket | `/tr/etiket/<slug>` | `/en/tag/<slug>` | — | — |
+| Rehber | `/tr/rehber/<slug>` | `/en/guides/<slug>` | `/ru/stati/<slug>` | `/de/ratgeber/<slug>` |
+| Bölge | `/tr/bolgeler/<slug>` | `/en/areas/<slug>` | `/ru/regiony/<slug>` | `/de/regionen/<slug>` |
+| Referanslar / Hakkımızda / İletişim | `/tr/referanslar`, `/tr/hakkimizda`, `/tr/iletisim` | `/en/references`, `/en/about`, `/en/contact` | `/ru/klienty`, `/ru/o-nas`, `/ru/kontakty` | `/de/referenzen`, `/de/ueber-uns`, `/de/kontakt` |
+| Arama | `/tr/ara?q=` (noindex) | `/en/search?q=` | `/ru/poisk?q=` | `/de/suche?q=` |
+| Yasal | `/tr/kvkk`, `/tr/cerez-politikasi` | `/en/privacy`, `/en/cookies` | `/ru/konfidentsialnost`, `/ru/cookies` | `/de/datenschutz`, `/de/cookies` |
 
 - Kanonik host **www.kefkenahsap.com**; `kefkenahsap.com` → www (Cloudflare tek kural, host+path birlikte, 301).
 - `/` → `Accept-Language` + çerez ile `/tr` veya `/en` (**302**, `/` Cloudflare cache bypass; `x-default` = `/tr`).
@@ -145,6 +145,8 @@ Tüm metin alanları `localized: true`. Taslak/versiyon (`versions.drafts`) + Li
 - Dil seçici: aynı dokümanın diğer dildeki slug'ını çözer; yoksa o dilin ana sayfasına gider.
 - Lokalize slug benzersizliği dil başına: lokalize alanda `unique: true` yeterli (`(slug, _locale)` index'i; F0 spike #12 doğruladı, hook yok).
 - Her sayfada `hreflang` (tr, en, x-default) — yalnızca **çevirisi yayınlanmış** diller listelenir; çevirisi olmayan dil sayfası **yalnızca noindex** (çapraz-dil canonical yok, hreflang'de yer almaz).
+- RU/DE sabit rota adları (#64): DE Almanca ASCII, RU Latin harfle transliterasyon (Kiril URL'de yüzde-kodlanır). Doküman slug'ları RU başlıktan otomatik Latin harfe çevrilir (`src/lib/slug.ts`).
+- **Sabit rotalar için dil yayında kuralı** (#64): ana sayfa, hizmetler, galeri, projeler, referanslar, iletişim, rehber dizini ve yasal sayfalar bir dilde ancak o dilde en az bir kategori yayındaysa (slug + ad dolu) yayında sayılır; aksi hâlde noindex, hreflang ve sitemap dışı (`fixedRoutePaths`). Varsayılan dil (`tr`) her zaman yayındadır. Yani yeni bir dili açmak veriyle olur: kategorilerin o dildeki ad + slug'ı girilir.
 - F3'te `ar` için `dir="rtl"`, Tailwind logical properties (ms-/me-) baştan kullanılır.
 
 ### 5.2 Eski URL göçü (veri: `legacy/wp-media.json`, `legacy/wp-pages.json`, `legacy/live-site-images-ordered.json`)

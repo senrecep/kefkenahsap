@@ -2,8 +2,6 @@
 
 import { routing } from '@/i18n/routing'
 
-const LABEL: Record<string, string> = { tr: 'TR', en: 'EN', ar: 'AR', ru: 'RU', de: 'DE' }
-
 /** Follows the page's own <link rel="alternate" hreflang> (set by each page's metadata), so CMS slugs switch correctly. */
 // locale + label come from the server Header, keeping the i18n runtime out of the client bundle.
 export function LanguageSwitcher({ locale, label, className = '' }: { locale: string; label: string; className?: string }) {
@@ -27,7 +25,7 @@ export function LanguageSwitcher({ locale, label, className = '' }: { locale: st
           aria-current={l === locale ? 'true' : undefined}
           className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-[var(--radius-control)] px-2 font-[family-name:var(--font-display)] text-sm font-semibold text-ink-soft hover:text-ink aria-[current=true]:text-ink aria-[current=true]:underline aria-[current=true]:underline-offset-8"
         >
-          {LABEL[l] ?? l.toUpperCase()}
+          {l.toUpperCase()}
         </a>
       ))}
     </nav>

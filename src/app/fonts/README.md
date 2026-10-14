@@ -14,3 +14,9 @@ set to 600 in styles.css and weight synthesis is off, so there is no faux bold. 
 
 Other scripts (Cyrillic, Arabic) live in their own files with a matching `unicode-range`, so Latin pages never
 download them. Characters outside every subset fall back to the system font.
+
+Cyrillic files (`*-cyrillic.woff2`, for ru) come from the same instances (Montserrat static 600, Source Sans 3
+400–600), subset to Russian Cyrillic and №, declared with this unicode-range:
+
+    pyftsubset M.ttf --unicodes="U+0400-045F,U+0490-0491,U+2116" --flavor=woff2 \
+      --layout-features+=kern,liga,calt,lnum,tnum --output-file=Montserrat-cyrillic.woff2

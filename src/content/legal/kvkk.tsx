@@ -58,7 +58,8 @@ export function KvkkDraft({ locale, c }: { locale: string; c: Controller }) {
       </>
     )
   return (
-    <>
+    // English is the fallback for every other locale until a translated legal page exists in the CMS.
+    <div lang="en" className="contents">
       <p>
         This notice explains, under Article 10 of the Turkish Personal Data Protection Law No. 6698 (KVKK), how we process the personal data you send us
         through this website.
@@ -100,6 +101,6 @@ export function KvkkDraft({ locale, c }: { locale: string; c: Controller }) {
         unlawful processing. Send your request to {c.email ? <a href={`mailto:${c.email}`}>{c.email}</a> : 'our e-mail address'} or to the postal address
         above.
       </p>
-    </>
+    </div>
   )
 }

@@ -21,7 +21,7 @@ type Search = Promise<{ kategori?: string | string[] }>
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'Projects' })
-  return pageMetadata({ locale, title: t('title'), description: t('description'), paths: staticPaths('/projeler') })
+  return pageMetadata({ locale, title: t('title'), description: t('description'), paths: await staticPaths('/projeler') })
 }
 
 export default async function ProjectsPage({ params, searchParams }: { params: Params; searchParams: Search }) {

@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'Contact' })
   // metaTitle already names the company, so it bypasses the layout's "| company" template.
-  return pageMetadata({ locale: locale as Locale, title: { absolute: t('metaTitle') }, description: t('metaDescription'), paths: staticPaths('/iletisim') })
+  return pageMetadata({ locale: locale as Locale, title: { absolute: t('metaTitle') }, description: t('metaDescription'), paths: await staticPaths('/iletisim') })
 }
 
 export default async function ContactPage({ params, searchParams }: Props) {

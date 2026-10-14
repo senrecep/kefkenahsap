@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'Search' })
   // Search result pages are never indexed (PLAN §5.1); robots.ts also disallows /*/ara.
-  return pageMetadata({ locale: locale as Locale, title: t('title'), paths: staticPaths('/ara'), noindex: true })
+  return pageMetadata({ locale: locale as Locale, title: t('title'), paths: await staticPaths('/ara'), noindex: true })
 }
 
 const h2 = 'font-[family-name:var(--font-display)] text-xl font-semibold'

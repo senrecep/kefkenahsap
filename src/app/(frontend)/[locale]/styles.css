@@ -14,8 +14,8 @@
   --color-error: #b42318;       /* form errors (6.5:1 on paper) */
   --color-error-soft: #fef3f2;
 
-  --font-display: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
-  --font-body: var(--font-source-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-montserrat-cyr), var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+  --font-body: var(--font-source-sans-cyr), var(--font-source-sans), ui-sans-serif, system-ui, sans-serif;
 
   --radius-photo: 10px;
   --radius-control: 10px;

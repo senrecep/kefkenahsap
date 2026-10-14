@@ -18,6 +18,13 @@ describe('slugify', () => {
     expect(value('Boya, Tamir ve Bakım')).toBe('boya-tamir-ve-bakim')
   })
 
+  it('transliterates Russian (Cyrillic) and German ß, so ru/de titles give Latin slugs', () => {
+    // Hand-written from the BGN/PCGN-style table (ж zh, х kh, ц ts, щ shch, я ya; ъ/ь dropped).
+    expect(value('Деревянные конструкции')).toBe('derevyannye-konstruktsii')
+    expect(value('Щётка и Объём')).toBe('shchetka-i-obem')
+    expect(value('Große Terrasse')).toBe('grosse-terrasse')
+  })
+
   it('keeps the existing WordPress category slugs stable', () => {
     expect(value('Deck ve Zeminler')).toBe('deck-ve-zeminler')
     expect(value('Kapı, Dolap ve Seperatör')).toBe('kapi-dolap-ve-seperator')

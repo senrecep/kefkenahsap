@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     locale,
     title: { absolute: t('metaTitle') },
     description: settings.defaultDescription || t('heroText'),
-    paths: staticPaths('/'),
+    paths: await staticPaths('/'),
   })
 }
 

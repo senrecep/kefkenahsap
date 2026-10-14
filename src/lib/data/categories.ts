@@ -1,6 +1,6 @@
 import { unstable_cache } from 'next/cache'
 
-import type { Locale } from '@/i18n/routing'
+import { routing, type Locale } from '@/i18n/routing'
 import { pickCover } from '@/lib/gallery/curate'
 import type { Media } from '@/payload-types'
 
@@ -67,3 +67,11 @@ export const getServiceTiles = (locale: Locale) =>
     ['serviceTiles', locale],
     { tags: [TAGS.categories, TAGS.media], revalidate: HOUR },
   )()
+
+/** Locales with at least one live service (dil-yayında: slug + name), plus the default: the input for fixedRoutePaths. */
+export const getContentLocales = async () => {
+  const live = await Promise.all(
+    routing.locales.map(async (l) => l === routing.defaultLocale || (await getServiceTiles(l)).some((c) => c.name?.trim())),
+  )
+  return routing.locales.filter((_, i) => live[i])
+}

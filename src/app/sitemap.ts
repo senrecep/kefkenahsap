@@ -17,8 +17,8 @@ const STATIC = ['/', '/hizmetlerimiz', '/galeri', '/projeler', '/referanslar', '
 
 // The guide index is noindex in a locale with no published guide yet (thin page), so it is listed only where it has some.
 const guideIndexPaths = async () => {
-  const all = staticPaths('/rehber')
-  return Object.fromEntries(await Promise.all(routing.locales.map(async (l) => [l, (await getGuides(l)).length ? all[l] : null] as const)))
+  const all = await staticPaths('/rehber')
+  return Object.fromEntries(await Promise.all(routing.locales.map(async (l) => [l, all[l] && (await getGuides(l)).length ? all[l] : null] as const)))
 }
 
 const isCms = (href: string): href is keyof typeof CMS_PAGES => href in CMS_PAGES
@@ -36,7 +36,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const fixed = await Promise.all(
     STATIC.map(async (href) => ({
       // About/legal: the same per-locale decision as the page's own hreflang/noindex.
-      paths: isCms(href) ? cmsPagePaths(href, await getPageTitles(CMS_PAGES[href])) : href === '/rehber' ? await guideIndexPaths() : staticPaths(href),
+      paths: isCms(href) ? await cmsPagePaths(href, await getPageTitles(CMS_PAGES[href])) : href === '/rehber' ? await guideIndexPaths() : await staticPaths(href),
       lastModified: href === '/' ? home?.updatedAt : undefined,
     })),
   )

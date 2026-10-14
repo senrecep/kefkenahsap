@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: 'Guides' })
   const empty = (await getGuides(locale)).length === 0
   // An empty index is a thin page: keep it out of the index until the first guide is published.
-  return pageMetadata({ locale, title: t('title'), description: t('metaDescription'), paths: staticPaths('/rehber'), noindex: empty })
+  return pageMetadata({ locale, title: t('title'), description: t('metaDescription'), paths: await staticPaths('/rehber'), noindex: empty })
 }
 
 export default async function GuidesIndex({ params }: Props) {

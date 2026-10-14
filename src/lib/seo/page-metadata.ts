@@ -3,7 +3,8 @@ import type { Metadata } from 'next'
 import { getPathname } from '@/i18n/navigation'
 import { routing, type Locale } from '@/i18n/routing'
 import { getSiteSettings } from '@/lib/data/site'
-import { cmsRoutePaths } from '@/lib/i18n/published'
+import { getContentLocales } from '@/lib/data/categories'
+import { cmsRoutePaths, fixedRoutePaths } from '@/lib/i18n/published'
 
 import { siteUrl } from './alternates'
 import { buildMetadata } from './metadata'
@@ -18,8 +19,10 @@ export async function pageMetadata(args: Args): Promise<Metadata> {
 
 type StaticHref = Parameters<typeof getPathname>[0]['href'] & string
 
-/** Paths of a fixed route that exists in every locale (gallery, about, legal…). */
-export const staticPaths = (href: StaticHref) => Object.fromEntries(routing.locales.map((l) => [l, getPathname({ locale: l, href })]))
+/** Paths of a fixed route (gallery, about, legal…): null in a locale without its own content (see fixedRoutePaths). */
+export const staticPaths = async (href: StaticHref) =>
+  fixedRoutePaths(Object.fromEntries(routing.locales.map((l) => [l, getPathname({ locale: l, href })])), await getContentLocales())
 
 /** Fixed route whose text may come from a CMS page (about, legal): see cmsRoutePaths. */
-export const cmsPagePaths = (href: StaticHref, titles: Record<string, string | null | undefined> | null) => cmsRoutePaths(staticPaths(href), titles)
+export const cmsPagePaths = async (href: StaticHref, titles: Record<string, string | null | undefined> | null) =>
+  cmsRoutePaths(await staticPaths(href), titles)

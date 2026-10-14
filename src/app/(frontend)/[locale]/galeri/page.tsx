@@ -22,7 +22,7 @@ export async function generateMetadata({ params, searchParams }: Props): Promise
     locale,
     title: t('title'),
     description: t('metaDescription'),
-    paths: staticPaths('/galeri'),
+    paths: await staticPaths('/galeri'),
     // No-JS "?sayfa=N" pages repeat page 1's photos; index only the first.
     noindex: parsed.ok && parsed.value.page > 1,
   })
