@@ -1,5 +1,6 @@
 import type { SerializedEditorState } from '@payloadcms/richtext-lexical/lexical'
 import { RichText, type JSXConvertersFunction } from '@payloadcms/richtext-lexical/react'
+import type { ReactNode } from 'react'
 
 // Reading typography for guide bodies (Read mode): 65–75ch measure, more space above headings than below.
 const prose =
@@ -23,14 +24,18 @@ export function GuideBody({
   idOf,
   tableLabel,
   publishedHrefs,
+  woodSamples,
 }: {
   data: SerializedEditorState
   idOf: (node: unknown) => string | undefined
   tableLabel: string
   publishedHrefs: ReadonlySet<string>
+  /** Rendered where the editor placed a `woodSamples` block. */
+  woodSamples?: ReactNode
 }) {
   const converters: JSXConvertersFunction = ({ defaultConverters }) => ({
     ...defaultConverters,
+    blocks: { woodSamples: () => woodSamples ?? null },
     heading: ({ node, nodesToJSX }) => {
       const Tag = (node.tag === 'h2' ? 'h2' : 'h3') as 'h2' | 'h3'
       return <Tag id={idOf(node)}>{nodesToJSX({ nodes: node.children })}</Tag>

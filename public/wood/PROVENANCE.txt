@@ -1,0 +1,3 @@
+iroko.webp: crop of media 1676 "Bahçe Girişinde Iroko Deck Zemin" (iroko-deck-zemin-bahce-girisi.webp)
+cam.webp: crop of media 1307 "Bahçede Emprenyeli Çam Deck Zemin" (bahce-emprenyeli-cam-deck-zemin.webp)
+Both: Kefken Ahşap job photos from the media library, cropped and rotated by scripts/wood-textures.ts. No drawn textures (DESIGN.md).

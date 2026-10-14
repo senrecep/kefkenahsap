@@ -4,6 +4,7 @@ import { getFormatter, getTranslations, setRequestLocale } from 'next-intl/serve
 import { notFound } from 'next/navigation'
 
 import { GuideBody } from '@/components/guides/GuideBody'
+import WoodSamples from '@/components/guides/WoodSamples'
 import { JsonLd } from '@/components/seo/JsonLd'
 import { buttonClass } from '@/components/ui/button'
 import { Container } from '@/components/ui/Container'
@@ -15,6 +16,7 @@ import { getSiteSettings } from '@/lib/data/site'
 import { metaDescription } from '@/lib/guides/meta'
 import { tableOfContents } from '@/lib/guides/toc'
 import { siteUrl } from '@/lib/seo/alternates'
+import { hasWoodSamples } from '@/lib/wood/samples'
 import { articleJsonLd, breadcrumbJsonLd, faqJsonLd } from '@/lib/seo/jsonld'
 import { pageMetadata } from '@/lib/seo/page-metadata'
 
@@ -95,7 +97,7 @@ export default async function GuidePage({ params }: Props) {
           )}
 
           <div className="min-w-0 lg:col-start-2">
-            {body && <GuideBody data={body} idOf={toc.idOf} tableLabel={t('table')} publishedHrefs={new Set(published.map((g) => g.href))} />}
+            {body && <GuideBody data={body} idOf={toc.idOf} tableLabel={t('table')} publishedHrefs={new Set(published.map((g) => g.href))} woodSamples={hasWoodSamples(body) && <WoodSamples />} />}
 
             {faq.length > 0 && (
               <section aria-labelledby="faq" className="mt-16 max-w-[68ch]">

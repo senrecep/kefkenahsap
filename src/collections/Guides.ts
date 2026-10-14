@@ -1,10 +1,18 @@
-import { EXPERIMENTAL_TableFeature, HeadingFeature, lexicalEditor, type FeatureProviderServer } from '@payloadcms/richtext-lexical'
-import type { CollectionConfig } from 'payload'
+import { BlocksFeature, EXPERIMENTAL_TableFeature, HeadingFeature, lexicalEditor, type FeatureProviderServer } from '@payloadcms/richtext-lexical'
+import type { Block, CollectionConfig } from 'payload'
 
 import { isStaff, publishedOrStaff } from '@/access'
 import { slugFrom } from '@/hooks/slug'
 import { revalidateAfterChange, revalidateAfterDelete } from '@/hooks/revalidate'
 import { aiDraftField, aiTranslateField } from './aiFields'
+
+// #60: the 3D wood samples, placed by the editor anywhere in a guide body. Fixed content, so no fields; the page
+// renders it from src/lib/wood/samples.ts.
+export const WoodSamplesBlock: Block = {
+  slug: 'woodSamples',
+  labels: { singular: 'Ahşap numuneleri (3D)', plural: 'Ahşap numuneleri (3D)' },
+  fields: [],
+}
 
 // Guides compare wood species in tables (PLAN §7), so their body adds the table feature; headings are H2/H3 only
 // (H1 is the title, the TOC lists H2s). The seed loader and e2e reuse this list.
@@ -12,6 +20,7 @@ export const guideBodyFeatures = ({ defaultFeatures }: { defaultFeatures: Featur
   ...defaultFeatures.filter((f) => f.key !== 'heading'),
   HeadingFeature({ enabledHeadingSizes: ['h2', 'h3'] }),
   EXPERIMENTAL_TableFeature(),
+  BlocksFeature({ blocks: [WoodSamplesBlock] }),
 ]
 
 /** Rehber yazıları (/tr/rehber/<slug>, /en/guides/<slug>). With `showAuthor`, the author box (and later JSON-LD author) come from siteSettings.founder. */
