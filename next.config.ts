@@ -13,6 +13,9 @@ const nextConfig: NextConfig = {
   output: 'standalone',
   // Trailing slashes are normalized in proxy.ts together with legacy redirects, so each old URL takes one hop.
   skipTrailingSlashRedirect: true,
+  // Quote form: photos are downscaled in the browser (≤2560px WebP, re-encoded if >3 MB), so 5 fit well under 16 MB.
+  // proxy.ts buffers request bodies (default 10 MB) and that limit is global, so keep both at the same modest ceiling.
+  experimental: { serverActions: { bodySizeLimit: '16mb' }, proxyClientMaxBodySize: '16mb' },
   webpack: (webpackConfig) => {
     webpackConfig.resolve.extensionAlias = {
       '.cjs': ['.cts', '.cjs'],

@@ -242,7 +242,7 @@ F2: Rehber dizini + yazı şablonu (TOC, FAQ, "AI'ya kopyala" butonu, yazar kutu
 
 - `tagImage` çıktısı (Zod): `{ title{tr,en}, alt{tr,en} (≤125 karakter), caption{tr,en}, seoFilename (tr, ascii, ≤60), tags{wood[], setting[], finish[], stage[]}, categoryCheck{agrees, suggested}, confidence }` — kategori bağlamı + WP sayfa bağlamı prompt'a verilir; görsel üzerindeki filigran metni alt metne yazılmaz.
 - Çeviri: tek prompt'ta tüm hedef diller (aciktirio pattern'i) + **terim sözlüğü** (ör. deck → deck, kamelya → gazebo, emprenye → pressure-treated, korkuluk → railing) + Lexical JSON yapısı korunarak sadece metin düğümleri çevrilir.
-- **Türkçe yazım kuralları** (kendi rehberimiz, `docs/AI-PROMPTS.md`): Türkçe karakterler zorunlu; özel isim + ek kesme işareti (İstanbul'da, Riva'daki); çeviri kokan yapılar yasak ("…'e sahip olmak", "…sağlamaktadır" yığını); yasaklı klişeler listesi ("eşsiz", "hayallerinizdeki", "kaliteden ödün vermeden", "en iyi hizmet"); esnaf sıcaklığında ama abartısız ton; uydurma rakam/iddia yasak — bilinmeyen alan boş bırakılır.
+- **Türkçe yazım kuralları** (kendi rehberimiz, `docs/CONTENT-STYLE-TR.md`; prompt özeti `src/ai/prompts/turkish.ts`): Türkçe karakterler zorunlu; özel isim + ek kesme işareti (İstanbul'da, Riva'daki); çeviri kokan yapılar yasak ("…'e sahip olmak", "…sağlamaktadır" yığını); yasaklı klişeler listesi ("eşsiz", "hayallerinizdeki", "kaliteden ödün vermeden", "en iyi hizmet"); esnaf sıcaklığında ama abartısız ton; uydurma rakam/iddia yasak — bilinmeyen alan boş bırakılır.
 - Prompt'lar TS modülleri olarak `src/ai/prompts/` altında, sürüm sabiti ile; `aiSuggestion` içinde model + prompt sürümü saklanır.
 
 ---

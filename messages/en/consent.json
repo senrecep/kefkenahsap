@@ -1,0 +1,9 @@
+{
+  "Consent": {
+    "label": "Cookie choice",
+    "text": "We use Google Analytics cookies to measure visits only if you agree. Details in the <link>cookie policy</link>.",
+    "accept": "Accept",
+    "reject": "Reject",
+    "preferences": "Cookie preferences"
+  }
+}
