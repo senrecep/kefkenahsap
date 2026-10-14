@@ -1,6 +1,6 @@
 // #31: idempotent launch seed — 11 categories + 568 approved images in live-page order, with legacy WP URLs.
 // Writes the legacy media map consumed by the redirect resolver (#32): src/lib/legacy/media-map.json
-// Run: bun scripts/seed/seed.ts   (needs seed/media-meta from #30; uses the env's DB + S3)
+// Run: bun run payload run scripts/seed/seed.ts   (needs seed/media-meta from #30; uses the env's DB + S3)
 import { copyFileSync, existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs'
 import os from 'node:os'
 import path from 'node:path'
