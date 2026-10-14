@@ -77,13 +77,13 @@ Use [`tsentials`](https://github.com/senrecep/tsentials) (latest at plan time: v
 
 ```bash
 bun install
-cp ../../kefkenahsap.dev.env .env       # local secrets live outside the repo (worktrees: copy from workspace root); else cp .env.example .env
+cp ../../kefkenahsap.dev.env .env       # worktree; from the main checkout: cp ../kefkenahsap.dev.env .env (else cp .env.example .env)
 docker compose --profile local up -d    # postgres:5433 + S3 (RustFS :9000, console :9001), host networking
 bun dev                                 # Next + Payload (localhost:3000 → /tr, /admin)
 bun run test                            # vitest: unit (src/**/*.test.ts) + int (tests/int, needs postgres)
 bun run test:e2e                        # playwright (starts bun dev if not running)
 bun run typecheck && bun run lint
-bun run check:generated                 # payload types + admin import map are up to date (CI fails otherwise)
+bun run check:generated                 # payload types + admin import map are committed and current (CI runs it once #19 lands)
 bun run migrate:create <name>           # schema changes only via migrations (push is off)
 ```
 
@@ -115,7 +115,7 @@ Phases come from the ultragoal ledger: F0 spike → F1 launch → F2 content and
   6. Merge only when CI is green and the `code-reviewer` / `verifier` review is clean (squash). Then remove the worktree.
 - PRs target `development`, so `Closes #n` does **not** auto-close issues (GitHub only does that on the default branch). After merge, close the issue manually with a link to the PR and run `scripts/github/status.sh <n> Done`.
 - Payload config changes need `bun run generate:types` + `bun run generate:importmap` (otherwise rich-text/admin components silently fail to render) and a migration.
-- Design detector: the impeccable hook is enabled in `.impeccable/config.json`; if no per-edit reminders appear, run `/home/senrecep/.claude/skills/impeccable/scripts/impeccable detect --json <changed UI files>` once before opening a UI PR.
+- Design detector: the impeccable hook is enabled in `.impeccable/config.json`; if no per-edit reminders appear, run `$HOME/.claude/skills/impeccable/scripts/impeccable detect --json <changed UI files>` once before opening a UI PR.
 - When the epic's last sub-issue closes, check the epic's acceptance criteria with evidence, close the epic, and run the ultragoal `checkpoint`.
 - `development` → `main` (production) happens at the end of the phase through a release PR. The F1 release is the launch issue.
 - New work that comes up is never done silently: open a new issue (link it to the right epic as a sub-issue) and write it into the plan.

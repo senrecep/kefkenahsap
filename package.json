@@ -17,7 +17,7 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:e2e": "playwright test",
-    "check:generated": "bun run generate:types && bun run generate:importmap && git diff --exit-code -- src/payload-types.ts 'src/app/(payload)/admin/importMap.js'",
+    "check:generated": "bun run generate:types && bun run generate:importmap && git diff --exit-code -- src/payload-types.ts 'src/app/(payload)/admin/importMap.js' && test -z \"$(git status --porcelain -- src/payload-types.ts 'src/app/(payload)/admin/')\"",
     "check": "bun run typecheck && bun run lint && bun run test"
   },
   "dependencies": {
