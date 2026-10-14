@@ -1,13 +1,13 @@
 import type { CollectionConfig } from 'payload'
 
-import { isStaff } from '@/access'
+import { hiddenFromEditor, isStaff } from '@/access'
 import { slugFrom } from '@/hooks/slug'
 import { revalidateAfterChange, revalidateAfterDelete } from '@/hooks/revalidate'
 
 export const Tags: CollectionConfig = {
   slug: 'tags',
   labels: { singular: 'Etiket', plural: 'Etiketler' },
-  admin: { useAsTitle: 'name', defaultColumns: ['name', 'axis'], group: 'İçerik' },
+  admin: { hidden: hiddenFromEditor, useAsTitle: 'name', defaultColumns: ['name', 'axis'], group: 'İçerik' },
   hooks: { afterChange: [revalidateAfterChange('tags', 'media')], afterDelete: [revalidateAfterDelete('tags', 'media')] },
   access: { read: () => true, create: isStaff, update: isStaff, delete: isStaff },
   fields: [

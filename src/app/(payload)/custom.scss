@@ -1,0 +1,23 @@
+/* #27: Admin for non-technical editors: 16px base text (Payload default 13px) and tap targets >= 48px. */
+/* Payload sizes everything in rem from a 13px (12px on phones) html, so this scales text and spacing together. */
+html {
+  font-size: 16px;
+}
+
+.btn,
+.nav__link,
+.nav a,
+.list-controls__toggle-columns,
+.pill,
+.table a,
+input:not([type='checkbox']):not([type='radio']):not([type='file']),
+select,
+.react-select .rs__control {
+  min-block-size: 48px;
+}
+
+.nav__link,
+.nav a {
+  display: flex;
+  align-items: center;
+}
