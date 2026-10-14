@@ -3,13 +3,15 @@ import { NextResponse, type NextRequest } from 'next/server'
 
 import { routing } from './i18n/routing'
 import { isAuthorized } from './lib/http/basic-auth'
-import { mediaKey, pageKey } from './lib/legacy/normalize'
+import attachments from './lib/legacy/attachment-map.json'
+import media from './lib/legacy/media-map.json'
+import attachmentPathList from './lib/legacy/wp-attachment-paths.json'
+import { resolveLegacy, type LegacyMaps } from './lib/legacy/resolve'
 
 const intl = createMiddleware(routing)
 
-// shortcut: spike-sized legacy tables; the full map (16 pages + attachments + ~1169 media) arrives with #32.
-const LEGACY_PAGES = new Set(['deck-ve-zeminler', 'hakkimizda', 'iletisim', 'referanslar', 'hizmetlerimiz'])
-const LEGACY_MEDIA: Record<string, string> = { '1-1': 'deck-ve-zeminler/1-1.webp' }
+const legacyMaps: LegacyMaps = { media, attachments, attachmentPaths: new Set(attachmentPathList) }
+const mediaBase = [process.env.MEDIA_PUBLIC_URL, process.env.S3_PREFIX].filter(Boolean).join('/')
 
 export default function proxy(req: NextRequest) {
   const { pathname } = req.nextUrl
@@ -28,26 +30,24 @@ export default function proxy(req: NextRequest) {
     })
   }
 
-  // Payload admin/API and static files: auth only, no locale handling.
-  if (/^\/(admin|api)(\/|$)/.test(pathname) || /\.[a-z0-9]+$/i.test(pathname) && !pathname.startsWith('/wp-content/')) {
-    return NextResponse.next()
-  }
+  // Payload admin/API: auth only, no locale handling.
+  if (/^\/(admin|api)(\/|$)/.test(pathname)) return NextResponse.next()
 
-  const mk = mediaKey(pathname)
-  if (mk !== null) {
-    const target = LEGACY_MEDIA[mk]
-    return target
-      ? NextResponse.redirect(`${process.env.MEDIA_PUBLIC_URL}/${target}`, 301)
-      : new NextResponse(null, { status: 410 })
+  // Old WordPress URLs (incl. dotted ones like /wp-login.php): one hop to the new page/CDN file, or 410 (PLAN §5.2).
+  const legacy = resolveLegacy(pathname, req.nextUrl.search, legacyMaps, mediaBase)
+  if (legacy.kind === 'redirect') {
+    const res = NextResponse.redirect(new URL(legacy.location, req.url), legacy.status)
+    // Browsers keep a bare 301 forever; a day lets a corrected map take effect.
+    res.headers.set('Cache-Control', 'public, max-age=86400')
+    return res
   }
+  if (legacy.kind === 'gone') return new NextResponse(null, { status: 410 })
+
+  // Other files (robots.txt, sitemap.xml, icons): no locale handling.
+  if (/\.[a-z0-9]+$/i.test(pathname)) return NextResponse.next()
 
   const isLocalized = routing.locales.some((l) => pathname === `/${l}` || pathname.startsWith(`/${l}/`))
-  if (!isLocalized) {
-    const key = pageKey(pathname)
-    // Old WP pages land on their TR page in a single hop (trailing slash handled here, not by Next).
-    if (key && LEGACY_PAGES.has(key))
-      return NextResponse.redirect(new URL(`/tr/${key}${req.nextUrl.search}`, req.url), 301)
-  } else if (pathname.length > 1 && pathname.endsWith('/')) {
+  if (isLocalized && pathname.length > 1 && pathname.endsWith('/')) {
     return NextResponse.redirect(new URL(pathname.replace(/\/+$/, '') + req.nextUrl.search, req.url), 308)
   }
 
