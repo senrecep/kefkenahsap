@@ -3,25 +3,18 @@ import { getFormatter, getTranslations, setRequestLocale } from 'next-intl/serve
 
 import { Container } from '@/components/ui/Container'
 import { WhatsAppButton } from '@/components/ui/WhatsAppButton'
-import { getPathname } from '@/i18n/navigation'
-import { routing, type Locale } from '@/i18n/routing'
+import type { Locale } from '@/i18n/routing'
 import { getGuides } from '@/lib/data/guides'
-import { buildAlternates, siteUrl } from '@/lib/seo/alternates'
+import { pageMetadata, staticPaths } from '@/lib/seo/page-metadata'
 
 type Props = { params: Promise<{ locale: Locale }> }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'Guides' })
-  const paths = Object.fromEntries(routing.locales.map((l) => [l, getPathname({ locale: l, href: '/rehber' })]))
   const empty = (await getGuides(locale)).length === 0
-  return {
-    title: t('title'),
-    description: t('metaDescription'),
-    alternates: buildAlternates({ current: locale, paths, site: siteUrl() }),
-    // An empty index is a thin page: keep it out of the index until the first guide is published.
-    ...(empty ? { robots: { index: false, follow: true } } : {}),
-  }
+  // An empty index is a thin page: keep it out of the index until the first guide is published.
+  return pageMetadata({ locale, title: t('title'), description: t('metaDescription'), paths: staticPaths('/rehber'), noindex: empty })
 }
 
 export default async function GuidesIndex({ params }: Props) {

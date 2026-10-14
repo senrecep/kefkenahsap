@@ -13,7 +13,8 @@ import { getGuide, getGuides } from '@/lib/data/guides'
 import { getSiteSettings } from '@/lib/data/site'
 import { metaDescription } from '@/lib/guides/meta'
 import { tableOfContents } from '@/lib/guides/toc'
-import { buildAlternates, siteUrl } from '@/lib/seo/alternates'
+import { siteUrl } from '@/lib/seo/alternates'
+import { pageMetadata } from '@/lib/seo/page-metadata'
 
 type Props = { params: Promise<{ locale: Locale; slug: string }> }
 
@@ -22,12 +23,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const found = await getGuide(locale, slug)
   if (!found) return {}
   const { guide, paths } = found
-  return {
-    title: guide.seo?.title || guide.title,
-    description: guide.seo?.description || metaDescription(guide.excerpt),
-    alternates: buildAlternates({ current: locale, paths, site: siteUrl() }),
-    openGraph: { type: 'article', modifiedTime: guide.updatedAt },
-  }
+  const m = await pageMetadata({ locale, title: guide.seo?.title || guide.title, description: guide.seo?.description || metaDescription(guide.excerpt), paths })
+  return { ...m, openGraph: { ...m.openGraph, type: 'article', modifiedTime: guide.updatedAt } }
 }
 
 export default async function GuidePage({ params }: Props) {
