@@ -1,6 +1,7 @@
 # Deploy stack for Dokploy (development and production environments).
 # Domains/TLS are configured in the Dokploy UI (Traefik on dokploy-network).
 # Optional services: set COMPOSE_PROFILES=observability in the Dokploy environment to run GlitchTip.
+# Deploy each environment with Dokploy "isolated deployment" so service names never collide on dokploy-network.
 name: kefkenahsap
 
 services:
@@ -72,14 +73,15 @@ services:
     restart: unless-stopped
     environment: &glitchtip-env
       DATABASE_URL: postgres://kefken:${POSTGRES_PASSWORD:?}@postgres:5432/glitchtip
-      REDIS_URL: redis://valkey:6379/0
+      VALKEY_URL: redis://valkey:6379/0
+      REDIS_URL: redis://valkey:6379/0 # older GlitchTip releases
       SECRET_KEY: ${GLITCHTIP_SECRET_KEY:-}
       GLITCHTIP_DOMAIN: ${GLITCHTIP_DOMAIN:-}
       DEFAULT_FROM_EMAIL: ${GLITCHTIP_FROM_EMAIL:-}
       ENABLE_USER_REGISTRATION: 'false'
     depends_on:
-      postgres:
-        condition: service_healthy
+      glitchtip-migrate:
+        condition: service_completed_successfully
       valkey:
         condition: service_started
     networks: [default, dokploy-network]
@@ -90,7 +92,9 @@ services:
     restart: unless-stopped
     command: ./bin/run-celery-with-beat.sh
     environment: *glitchtip-env
-    depends_on: [glitchtip-web]
+    depends_on:
+      glitchtip-migrate:
+        condition: service_completed_successfully
 
   glitchtip-migrate:
     image: glitchtip/glitchtip:6
