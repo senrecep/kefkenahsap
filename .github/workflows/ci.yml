@@ -31,6 +31,8 @@ env:
   NEXT_PUBLIC_TURNSTILE_SITE_KEY: 1x00000000000000000000AA
   TURNSTILE_SECRET_KEY: 1x0000000000000000000000000000000AA
   NEXT_PUBLIC_GA_ID: G-TEST000000
+  # Tests and e2e never call OpenRouter: every AI task answers from src/ai/fake.ts.
+  AI_FAKE_PROVIDER: '1'
 
 jobs:
   check:

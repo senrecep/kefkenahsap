@@ -8,6 +8,11 @@ Kod: `src/ai/` (zincir: `models.ts`, çalıştırıcı: `run.ts`, prompt'lar: `p
 | tagImage (vision) | `google/gemini-3.8-flash` → `anthropic/claude-haiku-5.5` | `AI_TAGIMAGE_MODELS` env > Admin › AI Ayarları |
 | translate | `anthropic/claude-sonnet-5.5` → `google/gemini-3.8-flash` | `AI_TRANSLATE_MODELS` |
 | draftGuide | `anthropic/claude-sonnet-5.5` → `google/gemini-3.8-flash` | `AI_DRAFTGUIDE_MODELS` |
+| draftProjectStory | `anthropic/claude-sonnet-5.5` → `google/gemini-3.8-flash` | `AI_DRAFTPROJECTSTORY_MODELS` |
+
+Admin › AI Ayarları: her görevin zinciri sıralı model listesidir; öneriler OpenRouter `/models` listesinden gelir (1 saat önbellek), liste alınamazsa model kimliği elle yazılır. Aynı ekrandaki maliyet paneli bu ayın `ai-usage` kayıtlarını görev başına toplar ve aylık limitin ne kadarının kullanıldığını gösterir.
+
+**Yerel geliştirme, testler ve CI** `AI_FAKE_PROVIDER=1` ile çalışır: her görev `src/ai/fake.ts`'teki deterministik sahte modelden cevap alır, OpenRouter'a (model listesi dahil) hiç istek gitmez. Canlı ortamda bu değişken tanımlanmaz.
 
 Şemaya uymayan veya hata veren model atlanır; 402 (kredi bitti) zinciri durdurur. Her çağrı `ai-usage` koleksiyonuna maliyetiyle yazılır; aylık bütçe (`aiSettings.monthlyBudgetUsd`) dolunca işler durur.
 

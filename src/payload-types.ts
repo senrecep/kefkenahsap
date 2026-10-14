@@ -1480,18 +1480,10 @@ export interface AiSetting {
   id: number;
   enabled?: boolean | null;
   monthlyBudgetUsd?: number | null;
-  /**
-   * OpenRouter model kimlikleri, sırayla denenir. Boşsa varsayılanlar kullanılır.
-   */
   tagImage?: string[] | null;
-  /**
-   * OpenRouter model kimlikleri, sırayla denenir. Boşsa varsayılanlar kullanılır.
-   */
   translate?: string[] | null;
-  /**
-   * OpenRouter model kimlikleri, sırayla denenir. Boşsa varsayılanlar kullanılır.
-   */
   draftGuide?: string[] | null;
+  draftProjectStory?: string[] | null;
   glossary?:
     | {
         tr: string;
@@ -1735,6 +1727,7 @@ export interface AiSettingsSelect<T extends boolean = true> {
   tagImage?: T;
   translate?: T;
   draftGuide?: T;
+  draftProjectStory?: T;
   glossary?:
     | T
     | {

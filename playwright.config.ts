@@ -56,6 +56,8 @@ export default defineConfig({
     timeout: 180_000,
     // Locally reuse a running `bun dev`; in CI always start our own server on the probed free port.
     reuseExistingServer: !process.env.CI,
+    // AI buttons and upload tagging answer from the fake model; e2e never reaches OpenRouter.
+    env: { AI_FAKE_PROVIDER: '1' },
     // A static file: the readiness probe must not render (and cache) a data page before globalSetup seeds.
     url: `http://localhost:${process.env.E2E_PORT ?? 3000}/brand/logo.png`,
   },
