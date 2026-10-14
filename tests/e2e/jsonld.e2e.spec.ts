@@ -1,6 +1,7 @@
 import { type APIRequestContext, expect, test, type Page } from '@playwright/test'
 
 import { adminApi, createDoc, deleteDocs, uploadPhoto } from '../helpers/content'
+import { expectTrailMatches } from '../helpers/breadcrumb'
 
 // PLAN §7 Structured data: the site-wide business node states exactly the siteSettings facts that are filled
 // (read from the API, so it holds on any DB), each of them visible on the page; empty ones are absent.
@@ -95,7 +96,6 @@ test.describe('JSON-LD', () => {
     expect(new URL(items[1]!.item).pathname).toBe('/tr/galeri')
     expect(items[2]).toMatchObject({ name: photo.title, item: img!.url })
     // PLAN §7: the JSON-LD names are exactly the visible trail.
-    const trail = (await page.getByRole('navigation', { name: 'Konum' }).locator('li').allInnerTexts()).map((t) => t.replace(/\s*\/$/, ''))
-    expect(trail).toEqual(items.map((i) => i.name))
+    await expectTrailMatches(page, items)
   })
 })

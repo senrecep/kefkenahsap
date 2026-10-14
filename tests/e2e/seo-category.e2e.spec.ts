@@ -2,6 +2,7 @@ import { type APIRequestContext, expect, test } from '@playwright/test'
 import sharp from 'sharp'
 
 import { adminApi, createDoc, deleteDocs, uploadPhoto } from '../helpers/content'
+import { expectTrailMatches } from '../helpers/breadcrumb'
 
 // Category template SEO (PLAN §7): own OG image, Service + FAQPage + BreadcrumbList that repeat the visible text.
 // Self-contained: the seed categories have no FAQ yet, so a category with one is created and removed.
@@ -67,8 +68,7 @@ test.describe('category SEO', () => {
     expect(items[2]).toMatchObject({ name, item: service!.url })
     // PLAN §7: the JSON-LD names are exactly the visible trail.
     await page.goto(path)
-    const trail = (await page.getByRole('navigation', { name: 'Konum' }).locator('li').allInnerTexts()).map((t) => t.replace(/\s*\/$/, ''))
-    expect(trail).toEqual(items.map((i) => i.name))
+    await expectTrailMatches(page, items)
   })
 
   test('unknown category: no OG image route', async ({ request }) => {
