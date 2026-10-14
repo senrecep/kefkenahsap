@@ -21,7 +21,7 @@ const legacyMaps: LegacyMaps = { media, attachments, attachmentPaths: new Set(at
 const mediaBase = [process.env.MEDIA_PUBLIC_URL, process.env.S3_PREFIX].filter(Boolean).join('/')
 
 // Browsers keep a bare 301 forever; a day lets a corrected map take effect.
-const legacyRedirect = (location: URL, status: 301) => {
+const legacyRedirect = (location: URL, status: 301 | 308) => {
   const res = NextResponse.redirect(location, status)
   res.headers.set('Cache-Control', 'public, max-age=86400')
   return res
@@ -35,9 +35,16 @@ export default function proxy(req: NextRequest) {
   // Apex host: one hop to the final target on the canonical host (legacy target, 410, or the same path) (PLAN §5.1).
   const canonical = apexRedirectOrigin(req.headers.get('host'), process.env.NEXT_PUBLIC_SITE_URL)
   if (canonical) {
+    // 308 keeps the method and body of a POST; GET/HEAD get the cacheable 301.
+    const status = req.method === 'GET' || req.method === 'HEAD' ? 301 : 308
     const legacy = resolveLegacy(pathname, req.nextUrl.search, legacyMaps, mediaBase)
     if (legacy.kind === 'gone') return new NextResponse(null, { status: 410 })
-    return legacyRedirect(new URL(legacy.kind === 'redirect' ? legacy.location : pathname + req.nextUrl.search, canonical), 301)
+    if (legacy.kind === 'redirect') return legacyRedirect(new URL(legacy.location, canonical), status)
+    // Set pathname/search on the canonical URL rather than resolving request input against it: "//evil.com/x" would become another host.
+    const to = new URL(canonical)
+    to.pathname = pathname.replace(/^\/{2,}/, '/')
+    to.search = req.nextUrl.search
+    return legacyRedirect(to, status)
   }
 
   // Admin PWA assets hold no secrets; browsers fetch the manifest without credentials, so exempt them (installability on dev).

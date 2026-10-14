@@ -11,6 +11,10 @@ describe('apexRedirectOrigin', () => {
   it('ignores port and case, and a trailing path on the site URL', () => {
     expect(apexRedirectOrigin('KefkenAhsap.com:443', `${www}/`)).toBe(www)
   })
+  it('ignores a trailing dot (absolute FQDN)', () => {
+    expect(apexRedirectOrigin('kefkenahsap.com.', www)).toBe(www)
+    expect(apexRedirectOrigin('kefkenahsap.com.:443', www)).toBe(www)
+  })
   it('does nothing on the canonical host itself', () => {
     expect(apexRedirectOrigin('www.kefkenahsap.com', www)).toBeNull()
   })

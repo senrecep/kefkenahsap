@@ -6,6 +6,6 @@ export function apexRedirectOrigin(host: string | null, siteUrl: string | undefi
   if (!host || !siteUrl) return null
   const canonical = new URL(siteUrl)
   if (!canonical.hostname.startsWith('www.')) return null
-  const hostname = host.toLowerCase().replace(/:\d+$/, '')
+  const hostname = host.toLowerCase().replace(/:\d+$/, '').replace(/\.$/, '')
   return hostname === canonical.hostname.slice(4) ? canonical.origin : null
 }
