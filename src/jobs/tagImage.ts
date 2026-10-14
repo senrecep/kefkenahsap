@@ -5,7 +5,7 @@ import { SystemDateTimeProvider } from 'tsentials/time'
 import { checkBudget } from '@/ai/budget'
 import { aiModel, resolveChain } from '@/ai/models'
 import { TAG_IMAGE_PROMPT_VERSION, TagImageSchema, tagImageSystem } from '@/ai/prompts/tagImage'
-import { runStructured } from '@/ai/run'
+import { failureUsage, runStructured } from '@/ai/run'
 import { monthUsage } from '@/ai/usage'
 
 /** AI suggestion for a newly uploaded image. Fills only empty fields; the image stays "pending" until a person approves it. */
@@ -52,7 +52,7 @@ export const tagImageTask: TaskConfig<'tagImage'> = {
 
     const docRef = `media:${media.id}`
     if (!run.ok) {
-      await payload.create({ collection: 'ai-usage', data: { task: 'tagImage', ok: false, docRef, error: run.errors[0]!.description }, req })
+      await payload.create({ collection: 'ai-usage', data: { task: 'tagImage', ok: false, docRef, costUsd: failureUsage(run.errors).costUsd, error: run.errors[0]!.description }, req })
       return { output: { result: run.errors[0]!.code } }
     }
     const { output, model, costUsd, inputTokens, outputTokens } = run.value

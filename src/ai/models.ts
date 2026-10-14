@@ -1,7 +1,6 @@
 import { createOpenRouter } from '@openrouter/ai-sdk-provider'
 import type { LanguageModel } from 'ai'
 
-import { fakeModel } from './fake'
 
 export type AiTask = 'tagImage' | 'translate' | 'draftGuide' | 'draftProjectStory'
 export const AI_TASKS: AiTask[] = ['tagImage', 'translate', 'draftGuide', 'draftProjectStory']
@@ -38,10 +37,13 @@ export function openRouterModel(id: string): LanguageModel {
   return provider(id, { usage: { include: true } })
 }
 
-/** Local dev, tests and CI set AI_FAKE_PROVIDER=1: no call ever reaches OpenRouter. The deployed app never sets it. */
-export const isFakeAi = () => process.env.AI_FAKE_PROVIDER === '1'
+/**
+ * Local dev, tests and CI set AI_FAKE_PROVIDER=1: no call reaches OpenRouter. SITE_ENV is set only in deployed images
+ * (Dockerfile + docker-compose.dokploy.yml), and there the fake never runs, whatever AI_FAKE_PROVIDER says.
+ */
+export const isFakeAi = (env: Record<string, string | undefined> = process.env) => env.AI_FAKE_PROVIDER === '1' && !env.SITE_ENV
 
-/** The one model getter every AI task uses: OpenRouter, or the deterministic fake under AI_FAKE_PROVIDER. */
-export function aiModel(task: AiTask): (id: string) => LanguageModel {
-  return (id) => (isFakeAi() ? fakeModel(task, id) : openRouterModel(id))
+/** The one model getter every AI task uses: OpenRouter, or the deterministic fake (loaded only in fake mode). */
+export function aiModel(task: AiTask): (id: string) => Promise<LanguageModel> {
+  return async (id) => (isFakeAi() ? (await import('./fake')).fakeModel(task, id) : openRouterModel(id))
 }

@@ -19,6 +19,7 @@ import { purgeExpiredLeads } from './jobs/purgeExpiredLeads'
 import { tagImageTask } from './jobs/tagImage'
 import { AiUsage } from './collections/AiUsage'
 import { AiSettings } from './globals/AiSettings'
+import { isFakeAi } from './ai/models'
 import { resendAdapter } from '@payloadcms/email-resend'
 import { redirectsPlugin } from '@payloadcms/plugin-redirects'
 import { hiddenFromEditor, isStaff } from './access'
@@ -80,7 +81,8 @@ export default buildConfig({
       handler: async ({ payload }) => {
         try {
           await payload.count({ collection: 'users' })
-          return Response.json({ ok: true })
+          // `ai` lets the e2e setup refuse to run against a server that would call OpenRouter.
+          return Response.json({ ok: true, ai: isFakeAi() ? 'fake' : 'live' })
         } catch {
           return Response.json({ ok: false }, { status: 503 })
         }

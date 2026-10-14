@@ -18,7 +18,7 @@ export function ModelChainInput({ path, label, models, listFailed }: Props) {
   return (
     <fieldset className="ai-chain">
       <legend className="ai-chain__label">{label}</legend>
-      <p className="ai-chain__hint">
+      <p className="ai-chain__hint" id={`${listId}-hint`}>
         Sırayla denenir; ilk model hata verirse sonraki kullanılır. Boşsa varsayılan zincir geçerlidir.
         {listFailed && ' Model listesi şu an alınamadı; model kimliğini elle yazın (ör. anthropic/claude-sonnet-5.5).'}
       </p>
@@ -37,6 +37,7 @@ export function ModelChainInput({ path, label, models, listFailed }: Props) {
               list={models.length ? listId : undefined}
               value={model}
               aria-label={`${label}: ${i + 1}. model`}
+              aria-describedby={`${listId}-hint`}
               placeholder="saglayici/model-adi"
               onChange={(e) => set(chain.map((m, j) => (j === i ? e.target.value : m)))}
             />

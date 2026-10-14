@@ -12,7 +12,9 @@ Kod: `src/ai/` (zincir: `models.ts`, çalıştırıcı: `run.ts`, prompt'lar: `p
 
 Admin › AI Ayarları: her görevin zinciri sıralı model listesidir; öneriler OpenRouter `/models` listesinden gelir (1 saat önbellek), liste alınamazsa model kimliği elle yazılır. Aynı ekrandaki maliyet paneli bu ayın `ai-usage` kayıtlarını görev başına toplar ve aylık limitin ne kadarının kullanıldığını gösterir.
 
-**Yerel geliştirme, testler ve CI** `AI_FAKE_PROVIDER=1` ile çalışır: her görev `src/ai/fake.ts`'teki deterministik sahte modelden cevap alır, OpenRouter'a (model listesi dahil) hiç istek gitmez. Canlı ortamda bu değişken tanımlanmaz.
+**Yerel geliştirme, testler ve CI** `AI_FAKE_PROVIDER=1` ile çalışır: her görev `src/ai/fake.ts`'teki deterministik sahte modelden cevap alır, OpenRouter'a (model listesi dahil) hiç istek gitmez. Canlı ortamda bu değişken tanımlanmaz; yanlışlıkla tanımlansa bile `SITE_ENV` olan (deploy edilmiş) imajda sahte model hiç çalışmaz ve açılışta uyarı yazılır. Playwright kurulumu, sunucu sahte modda değilse (`/api/health` → `ai: "fake"`) testi başlatmaz.
+
+**Maliyet:** her deneme (şemaya uymayan cevaplar ve hata veren çağrılar dahil) bütçeye yazılır. Sağlayıcı maliyet bildirmezse token sayısından tahmin edilir (girdi 3 $/M, çıktı 15 $/M; token yoksa ~4 karakter = 1 token). Başarısız çağrının maliyeti de `ai-usage` satırına (`ok: false`) yazılır.
 
 Şemaya uymayan veya hata veren model atlanır; 402 (kredi bitti) zinciri durdurur. Her çağrı `ai-usage` koleksiyonuna maliyetiyle yazılır; aylık bütçe (`aiSettings.monthlyBudgetUsd`) dolunca işler durur.
 

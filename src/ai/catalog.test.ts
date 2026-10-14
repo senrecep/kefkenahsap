@@ -39,13 +39,23 @@ describe('OpenRouter model catalog', () => {
     expect(calls()).toBe(2)
   })
 
-  it('does not cache a failure: the next call tries again', async () => {
-    const { catalog, calls } = setup([Result.failure(Err.unexpected('Http.500', 'boom')), Result.success(body)])
+  it('keeps a failure for 60 s (no retry storm), then tries again', async () => {
+    const { catalog, clock, calls } = setup([Result.failure(Err.unexpected('Http.500', 'boom')), Result.success(body)])
     const first = await catalog.list()
     expect(Result.isFailure(first) && first.errors[0]?.code).toBe('Http.500')
-    const second = await catalog.list()
-    expect(Result.isSuccess(second)).toBe(true)
+    clock.advance(59_999)
+    expect(Result.isFailure(await catalog.list())).toBe(true)
+    expect(calls()).toBe(1)
+    clock.advance(2)
+    expect(Result.isSuccess(await catalog.list())).toBe(true)
     expect(calls()).toBe(2)
+  })
+
+  it('concurrent callers share one in-flight fetch', async () => {
+    const { catalog, calls } = setup([Result.success(body)])
+    const [a, b, c] = await Promise.all([catalog.list(), catalog.list(), catalog.list()])
+    expect(calls()).toBe(1)
+    expect(Result.isSuccess(a) && Result.isSuccess(b) && Result.isSuccess(c)).toBe(true)
   })
 
   it('rejects a response that is not a model list (fallback to free text)', async () => {
