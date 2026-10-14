@@ -1,0 +1,36 @@
+{
+  "source": "Ireko-Teak/14427.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Beyaz duvarlar arasında ahşap deck ve bank",
+    "en": "Timber deck and bench between white walls"
+  },
+  "alt": {
+    "tr": "Beyaz sıvalı duvarlar arasında koyu tonlu ahşap deck ve alçak duvar üstüne oturan ahşap bank",
+    "en": "Dark-toned timber deck between white rendered walls, with a timber bench seat on top of a low wall"
+  },
+  "caption": {
+    "tr": "Alçak beyaz duvarların üstü ahşapla kaplanarak oturma yerine dönüşmüş. Zemindeki deck aynı tonda.",
+    "en": "The tops of the low white walls are capped in timber to make seating, matching the deck below."
+  },
+  "seoFilename": "beyaz-duvarlar-arasinda-ahsap-deck-ve-bank",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras",
+      "dış mekân"
+    ],
+    "finish": [
+      "koyu ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

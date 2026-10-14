@@ -1,0 +1,34 @@
+{
+  "source": "Kopru ve Iskele/5036.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Su kenarında ahşap iskele",
+    "en": "Waterside timber pier"
+  },
+  "alt": {
+    "tr": "Çimenlik ile su arasında uzanan, yatay korkuluklu ve T biçimli ahşap direkli geniş ahşap iskele",
+    "en": "Wide timber pier with horizontal rails and T-shaped timber posts running between a lawn and the water"
+  },
+  "caption": {
+    "tr": "Çimenlikten rampayla çıkılan geniş ahşap iskele. Su tarafı yatay korkulukla kapatılmış, aralara T biçimli direkler ve fidanlar yerleştirilmiş.",
+    "en": "A wide timber pier reached by a ramp from the lawn. The water side is closed with horizontal rails, with T-shaped posts and young trees set along it."
+  },
+  "seoFilename": "su-kenari-ahsap-iskele-cimenlik-rampa",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "su kenarı",
+      "çimenlik",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

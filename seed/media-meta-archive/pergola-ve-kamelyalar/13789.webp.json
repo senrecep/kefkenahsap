@@ -1,0 +1,36 @@
+{
+  "source": "Ahsap Yapilar/13789.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Kamelya tavanında koyu ahşap makaslar",
+    "en": "Dark timber trusses under a gazebo roof"
+  },
+  "alt": {
+    "tr": "Lambri kaplı geniş kamelya çatısının altında koyu tonlu ahşap makaslar ve taş kaplı alçak duvar",
+    "en": "Dark timber trusses under a wide boarded gazebo roof, above a low stone-faced wall"
+  },
+  "caption": {
+    "tr": "Geniş kamelyanın çatısı koyu tonlu ahşap makaslarla taşınıyor. Kenarlardaki alçak duvarın üstünden bahçe görünüyor.",
+    "en": "Dark timber trusses carry the wide gazebo roof, with the garden visible over the low wall at its edge."
+  },
+  "seoFilename": "kamelya-tavani-koyu-ahsap-makaslar-tas-duvar",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "koyu ton"
+    ],
+    "stage": [
+      "detail",
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

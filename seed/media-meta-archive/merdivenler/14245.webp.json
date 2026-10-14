@@ -1,0 +1,35 @@
+{
+  "source": "Merdivenler/14245.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Yeşil çitler arasında kahverengi ahşap merdiven",
+    "en": "Brown timber staircase between green hedges"
+  },
+  "alt": {
+    "tr": "İki yanı yüksek yeşil çitlerle çevrili, çapraz korkuluklu kahverengi ahşap bahçe merdiveni",
+    "en": "Brown timber garden staircase with cross-braced railings, flanked by tall green hedges"
+  },
+  "caption": {
+    "tr": "Çimenlikten başlayıp yüksek çitler arasından yukarı çıkan merdiven. Ahşap koyu kahve tonda.",
+    "en": "The staircase starts on the lawn and climbs between tall hedges. The timber has a dark brown tone."
+  },
+  "seoFilename": "yesil-citler-arasinda-kahverengi-ahsap-merdiven",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "koyu kahve ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

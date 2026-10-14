@@ -1,0 +1,34 @@
+{
+  "source": "Ahsap Yapilar/1188.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Önü açık ahşap gölgelik",
+    "en": "Open-fronted timber shelter"
+  },
+  "alt": {
+    "tr": "Yatay tahtalarla kaplı iki duvarı ve lambri kaplı saçağı olan, önü açık ahşap gölgelik",
+    "en": "Open-fronted timber shelter with two horizontal board walls and a boarded roof overhang"
+  },
+  "caption": {
+    "tr": "Gölgeliğin iki duvarı yatay tahtalarla kaplandı, önü açık bırakıldı. Kalın dikmeler saçağı taşıyor.",
+    "en": "Two walls of the shelter are clad in horizontal boards and the front is left open, with heavy posts carrying the eave."
+  },
+  "seoFilename": "onu-acik-ahsap-golgelik-yatay-tahta",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

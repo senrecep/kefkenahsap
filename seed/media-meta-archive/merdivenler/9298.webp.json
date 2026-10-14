@@ -1,0 +1,33 @@
+{
+  "source": "Merdivenler/9298.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Sahanlıkta dönen ahşap bahçe merdiveni",
+    "en": "Timber garden staircase turning at a landing"
+  },
+  "alt": {
+    "tr": "Pembe sıvalı duvar boyunca çıkıp sahanlıkta yön değiştiren çapraz korkuluklu ahşap merdiven",
+    "en": "Cross-braced timber staircase climbing along a pink rendered wall and turning at a landing"
+  },
+  "caption": {
+    "tr": "Çimenlikten başlayan merdiven, ara sahanlıkta dönerek üst bahçeye ulaşıyor.",
+    "en": "Starting on the lawn, the staircase turns at a mid landing and reaches the upper garden."
+  },
+  "seoFilename": "sahanlikta-donen-ahsap-bahce-merdiveni",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

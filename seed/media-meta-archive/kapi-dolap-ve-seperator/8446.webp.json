@@ -1,0 +1,35 @@
+{
+  "source": "Kapi Dolap ve Seperator/8446.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Fenerli taş kolonlar arasında ahşap bahçe kapısı",
+    "en": "Timber garden gate between stone pillars with lanterns"
+  },
+  "alt": {
+    "tr": "Fenerli taş kolonlar arasında iki kanatlı açık renk ahşap kapı ve iki yanında ahşap çit",
+    "en": "Double-leaf light timber gate between lantern-topped stone pillars, with timber fencing on both sides"
+  },
+  "caption": {
+    "tr": "İki kanatlı açık renk ahşap kapı taş kolonların arasına takıldı. Yanlardaki çit de ahşaptan.",
+    "en": "The light timber double gate is fitted between the stone pillars, with timber fencing on either side."
+  },
+  "seoFilename": "fenerli-tas-kolon-ahsap-bahce-kapisi-cit",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe girişi",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

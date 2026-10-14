@@ -1,0 +1,33 @@
+{
+  "source": "Pergola ve Kamelyalar/2764.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Pergola altında ahşap deck yolu",
+    "en": "Timber deck walkway under a pergola"
+  },
+  "alt": {
+    "tr": "Çıtalı pergolanın gölgesinde uzanan, çapraz korkuluklu ahşap deck yolu ve ilerideki kamelya",
+    "en": "Timber deck walkway with cross-braced railings in the shade of a slatted pergola, leading to a gazebo"
+  },
+  "caption": {
+    "tr": "Palmiyelerin arasından geçen deck yolu çıtalı bir pergolayla örtülmüş. İleride denize bakan iki katlı bir kamelya var.",
+    "en": "A deck walkway between palm trees, covered by a slatted pergola. Further on stands a two-level gazebo facing the sea."
+  },
+  "seoFilename": "pergola-altinda-deck-yolu-palmiye",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "deniz kenarı",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

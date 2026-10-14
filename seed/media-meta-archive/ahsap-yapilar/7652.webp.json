@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/7652.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Deniz kenarında ahşap duş kabini",
+    "en": "Timber shower cabin by the sea"
+  },
+  "alt": {
+    "tr": "Ortada açık duş, iki yanında çapraz destekli kapılı kabinler ve çıtalı çatısıyla ahşap duş yapısı",
+    "en": "Timber shower block with an open shower in the middle, braced-door cubicles and a slatted roof"
+  },
+  "caption": {
+    "tr": "Ortada açık bir duş, iki yanında kapılı birer kabin var. Çatı aralıklı çıtalarla kapatıldı.",
+    "en": "An open shower sits between two cubicles with doors, under a roof of spaced slats."
+  },
+  "seoFilename": "deniz-kenari-ahsap-dus-kabini-citali-cati",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "deniz kenarı",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

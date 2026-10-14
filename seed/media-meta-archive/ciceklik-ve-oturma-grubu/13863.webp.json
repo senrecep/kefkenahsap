@@ -1,0 +1,34 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/13863.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Bahçede ahşap oturma grubu",
+    "en": "Timber seating set in a garden"
+  },
+  "alt": {
+    "tr": "Karo döşeli bahçe terasında dikey çıtalı kavisli kanepe, iki koltuk ve alçak sehpa",
+    "en": "Curved sofa and two armchairs with vertical slats and a low table on a tiled garden terrace"
+  },
+  "caption": {
+    "tr": "Kanepe ve koltukların sırtları kavisli dikey çıtalarla yapılmış. Sehpanın alt rafı da aynı çıta düzeninde.",
+    "en": "The backs of the sofa and armchairs are made of curved vertical slats. The lower shelf of the table follows the same pattern."
+  },
+  "seoFilename": "bahce-terasi-citali-kavisli-oturma-grubu",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

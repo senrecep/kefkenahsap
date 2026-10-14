@@ -1,0 +1,36 @@
+{
+  "source": "Korkuluk ve Cit/13136.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Ahşap evlerin önünde sivri uçlu çit",
+    "en": "Picket fence in front of timber houses"
+  },
+  "alt": {
+    "tr": "Taş yol kenarında, ahşap evlerin bahçelerini çeviren uzun, sivri uçlu ahşap çit",
+    "en": "Long timber picket fence along a paved lane, enclosing the gardens of timber houses"
+  },
+  "caption": {
+    "tr": "Sivri uçlu ahşap çit, yol boyunca bahçelerin önünden kesintisiz uzanıyor. Çitin rengi zamanla grileşmiş.",
+    "en": "The timber picket fence runs unbroken along the lane in front of the gardens, its colour weathered to grey over time."
+  },
+  "seoFilename": "ahsap-evler-onunde-sivri-uclu-ahsap-cit-yol",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "site içi yol",
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ahşap"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

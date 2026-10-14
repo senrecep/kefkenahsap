@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/6336.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Salon tavanında açıkta ahşap kirişler",
+    "en": "Exposed timber beams in a living room ceiling"
+  },
+  "alt": {
+    "tr": "Beyaz lambri kaplı eğimli tavanın altında koyu tonlu ahşap kirişler ve tuğla kaplı duvar",
+    "en": "Dark timber beams under a sloping white boarded ceiling, above a brick-clad wall"
+  },
+  "caption": {
+    "tr": "Salonun eğimli tavanı beyaz lambriyle kaplandı, koyu tonlu kirişler açıkta bırakıldı.",
+    "en": "The sloping living room ceiling is lined with white boards, with dark timber beams left exposed."
+  },
+  "seoFilename": "salon-tavani-acikta-koyu-ahsap-kirisler",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "iç mekân",
+      "salon"
+    ],
+    "finish": [
+      "koyu ton",
+      "beyaz boya"
+    ],
+    "stage": [
+      "detail",
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

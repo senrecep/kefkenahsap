@@ -1,0 +1,35 @@
+{
+  "source": "Ireko-Teak/13836.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Tel kafesli çift kanatlı ahşap bahçe kapısı",
+    "en": "Double timber garden gate with wire mesh"
+  },
+  "alt": {
+    "tr": "Taş duvar ile dikme arasında, arkası tel kafesli çift kanatlı ahşap bahçe kapısı",
+    "en": "Double-leaf timber garden gate backed with wire mesh, set between a stone wall and a post"
+  },
+  "caption": {
+    "tr": "Parke taşı yolun girişindeki çift kanatlı ahşap bahçe kapısı. Kare bölmelerin arkasına tel kafes geçirilmiş.",
+    "en": "A double-leaf timber garden gate at the start of a paved path, with wire mesh fixed behind its square frames."
+  },
+  "seoFilename": "cift-kanatli-ahsap-bahce-kapisi-tel-kafes",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe girişi",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,35 @@
+{
+  "source": "Kapi Dolap ve Seperator/8428.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Tel örgülü ahşap bahçe kapısı",
+    "en": "Timber garden gate with wire mesh"
+  },
+  "alt": {
+    "tr": "Taş kolonlar arasında ahşap çerçeveli ve tel örgülü iki kanatlı bahçe kapısı",
+    "en": "Double-leaf garden gate with timber frames and wire mesh between stone pillars"
+  },
+  "caption": {
+    "tr": "Kapının ahşap çerçeveleri arasına tel örgü gerildi, bahçe dışarıdan görünüyor.",
+    "en": "Wire mesh fills the timber frames of the gate, leaving the garden visible from outside."
+  },
+  "seoFilename": "tas-kolon-tel-orgulu-ahsap-bahce-kapisi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe girişi",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

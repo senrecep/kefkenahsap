@@ -1,0 +1,35 @@
+{
+  "source": "Kapi Dolap ve Seperator/14342.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Çiçeklikli yatay çıtalı ahşap paravan",
+    "en": "Horizontal slat timber screen with a planter"
+  },
+  "alt": {
+    "tr": "Parke taş zemin üzerinde, uzun ahşap çiçekliğin içinden yükselen yatay çıtalı paravan",
+    "en": "Horizontal slat screen rising from a long timber planter on paved ground"
+  },
+  "caption": {
+    "tr": "Uzun çiçekliğin arka kenarına yatay çıtalı bir paravan eklendi. İkisi de aynı koyu tonda.",
+    "en": "A horizontal slat screen rises from the back edge of a long planter, both in the same dark tone."
+  },
+  "seoFilename": "cicekli-yatay-citali-ahsap-paravan-parke",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "avlu",
+      "dış mekân"
+    ],
+    "finish": [
+      "koyu ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

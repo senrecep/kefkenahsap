@@ -1,0 +1,33 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/13394.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Bahçede yükseltilmiş ahşap yataklar",
+    "en": "Raised timber beds in a garden"
+  },
+  "alt": {
+    "tr": "Çimenliğin ucunda toprak alana sıralanmış açık renk ahşap yükseltilmiş bahçe yatakları",
+    "en": "Light timber raised garden beds set out on a soil patch at the end of a lawn"
+  },
+  "caption": {
+    "tr": "Bahçenin bir köşesine iki sıra halinde yerleştirilen yükseltilmiş yataklar. İçleri siyah astarla kaplı.",
+    "en": "Raised beds placed in two rows in a corner of the garden. The insides are lined in black."
+  },
+  "seoFilename": "bahce-yukseltilmis-ahsap-yatak-sira",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

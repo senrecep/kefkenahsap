@@ -1,0 +1,35 @@
+{
+  "source": "Kapi Dolap ve Seperator/10946.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Ahşap dolgulu çift bahçe kapısı",
+    "en": "Timber-infilled double driveway gates"
+  },
+  "alt": {
+    "tr": "Parke taşlı giriş yolunun sonunda, metal çerçeveli ve dikey ahşap dolgulu iki bahçe kapısı",
+    "en": "Two metal-framed gates with vertical timber infill at the end of a cobbled driveway"
+  },
+  "caption": {
+    "tr": "Giriş yolunu kapatan iki kapı metal çerçeveye yerleştirilmiş dikey ahşap tahtalarla dolduruldu.",
+    "en": "The two gates across the driveway are filled with vertical timber boards set in metal frames."
+  },
+  "seoFilename": "parke-tas-yol-ahsap-dolgulu-bahce-kapilari",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe girişi",
+      "dış mekân"
+    ],
+    "finish": [
+      "koyu ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,36 @@
+{
+  "source": "Korkuluk ve Cit/8416.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Sarmaşıklı çitte çapraz destekli bahçe kapısı",
+    "en": "Cross-braced garden gate in a climber-covered fence"
+  },
+  "alt": {
+    "tr": "Sarmaşık sarılmış kahverengi tonlu ahşap çitin arasında açık renkli, çapraz destekli ahşap bahçe kapısı",
+    "en": "Light timber garden gate with cross bracing set in a brown toned picket fence covered with a climber"
+  },
+  "caption": {
+    "tr": "Çapraz destekli yeni kapı, sarmaşık sarmış koyu tonlu çitin arasına menteşelerle takılmış. Kapıdan aşağıdaki bahçeye inen basamaklar görünüyor.",
+    "en": "The new cross-braced gate hangs on hinges in the darker, climber-covered fence, with steps visible leading down to the garden beyond."
+  },
+  "seoFilename": "sarmasikli-citte-capraz-destekli-bahce-kapisi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ahşap",
+      "kahverengi ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

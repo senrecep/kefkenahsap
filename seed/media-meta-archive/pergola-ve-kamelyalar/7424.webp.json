@@ -1,0 +1,35 @@
+{
+  "source": "Pergola ve Kamelyalar/7424.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Beyaz cepheye bağlı ahşap pergola",
+    "en": "Timber pergola attached to a white wall"
+  },
+  "alt": {
+    "tr": "Beyaz sıvalı binanın girişinde, koyu tonlu kirişleri ve çıtalı üst örtüsüyle duvara bağlanan pergola",
+    "en": "Dark-toned timber pergola with a slatted cover, attached to a white rendered building at its entrance"
+  },
+  "caption": {
+    "tr": "Beyaz sıvalı duvara bağlanan pergola girişin önüne gölge düşürüyor. Kiriş uçları pahlı kesilmiş.",
+    "en": "The pergola is fixed to the white rendered wall and shades the entrance. The beam ends are cut at an angle."
+  },
+  "seoFilename": "beyaz-cepheli-giris-pergolasi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "giriş",
+      "dış mekân"
+    ],
+    "finish": [
+      "koyu ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

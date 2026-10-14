@@ -1,0 +1,35 @@
+{
+  "source": "Korkuluk ve Cit/13574.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Bahçeye inen çapraz desenli ahşap korkuluk",
+    "en": "Cross-pattern timber railing down to a garden"
+  },
+  "alt": {
+    "tr": "Canlı çitle çevrili bahçeye inen ahşap basamakların yanında çapraz desenli ahşap korkuluk",
+    "en": "Cross-pattern timber railing beside wooden steps leading down to a hedged garden"
+  },
+  "caption": {
+    "tr": "Bahçeye inen ahşap basamakların iki yanında çapraz desenli korkuluk var. Bir yanı yüksek canlı çit boyunca ilerliyor.",
+    "en": "Cross-pattern railings run along both sides of the wooden steps down to the garden, one beside a tall hedge."
+  },
+  "seoFilename": "capraz-desenli-ahsap-korkuluk-bahce-basamak",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ahşap"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

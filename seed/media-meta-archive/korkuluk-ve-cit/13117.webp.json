@@ -1,0 +1,35 @@
+{
+  "source": "Korkuluk ve Cit/13117.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Yatay çıtalı ahşap paravan",
+    "en": "Horizontal slatted timber screen"
+  },
+  "alt": {
+    "tr": "Beyaz duvarlı bahçe köşesinde yatay çıtalı ahşap paravan ve önünde eski bir ahşap sandalye",
+    "en": "Horizontal slatted timber screen in the corner of a walled garden, with an old wooden chair in front"
+  },
+  "caption": {
+    "tr": "Yatay çıtalar dikmelere aralıklı çakılmış. Paravan arkasındaki duvarı gizlerken ışık geçiriyor.",
+    "en": "Horizontal slats are fixed with gaps to the posts, screening the wall behind while letting light through."
+  },
+  "seoFilename": "yatay-citali-ahsap-paravan-bahce-kosesi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ahşap"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

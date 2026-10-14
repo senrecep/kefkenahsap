@@ -1,0 +1,35 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/11387.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Kollu ahşap bahçe bankı",
+    "en": "Timber garden bench with armrests"
+  },
+  "alt": {
+    "tr": "Karo döşeli avluda tuğla duvarın önünde duran kollu, çıtalı oturaklı bal rengi ahşap bank",
+    "en": "Honey-toned timber bench with armrests and a slatted seat, in front of a brick wall in a tiled courtyard"
+  },
+  "caption": {
+    "tr": "Yalın çizgili bank, geniş sırt tahtaları ve düz kollarıyla avlunun bir köşesine yerleştirilmiş.",
+    "en": "A simple bench with wide back boards and straight armrests, placed in a corner of the courtyard."
+  },
+  "seoFilename": "avlu-kollu-bal-rengi-ahsap-bank",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "avlu",
+      "dış mekân"
+    ],
+    "finish": [
+      "bal rengi"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

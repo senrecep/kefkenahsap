@@ -1,0 +1,35 @@
+{
+  "source": "Korkuluk ve Cit/13925.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Verandada dikey çıtalı ahşap paravan",
+    "en": "Vertical slatted timber screen on a porch"
+  },
+  "alt": {
+    "tr": "Karo zeminli verandada klima dış ünitesinin önünü kapatan dikey çıtalı ahşap paravan",
+    "en": "Vertical slatted timber screen hiding an outdoor air conditioning unit on a tiled porch"
+  },
+  "caption": {
+    "tr": "Dikey çıtalı paravan verandadaki klima dış ünitesini gizliyor, aralıklardan hava geçmeye devam ediyor.",
+    "en": "The vertical slatted screen hides the air conditioning unit on the porch while air still passes through the gaps."
+  },
+  "seoFilename": "veranda-dikey-citali-ahsap-paravan-klima",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "veranda",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ahşap"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

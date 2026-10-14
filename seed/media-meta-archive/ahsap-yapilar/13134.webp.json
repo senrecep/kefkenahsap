@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/13134.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Çit ile çevrili kızıl kahve ahşap ev",
+    "en": "Reddish brown timber house behind a picket fence"
+  },
+  "alt": {
+    "tr": "Kiremit çatılı, bacalı, kızıl kahve tonlu ahşap ev ve önündeki ahşap bahçe çiti",
+    "en": "Reddish brown timber house with a tiled roof and chimney, behind a timber picket fence"
+  },
+  "caption": {
+    "tr": "İki katlı ahşap ev kızıl kahve tonda, çatısı kiremitle örtülü. Bahçeyi aynı tonda ahşap bir çit çeviriyor.",
+    "en": "The two-storey timber house is finished in reddish brown under a tiled roof, and a matching timber fence surrounds the garden."
+  },
+  "seoFilename": "citle-cevrili-kizil-kahve-ahsap-ev",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "koyu ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

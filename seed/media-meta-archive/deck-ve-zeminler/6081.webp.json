@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/6081.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Köşe bankıyla koyu renk ahşap deck",
+    "en": "Dark timber deck with a corner bench"
+  },
+  "alt": {
+    "tr": "Bahçede bitkilerin yanında, sırtlıklı köşe bankıyla tamamlanan koyu kırmızımsı ahşap deck",
+    "en": "Dark reddish timber deck finished with a built-in corner bench beside garden plants"
+  },
+  "caption": {
+    "tr": "Deck ile aynı tonda yapılmış sırtlıklı bir köşe bankı, terasın bir köşesini oturma alanına çeviriyor.",
+    "en": "A backed corner bench in the same tone as the deck turns one corner of the terrace into a seating area."
+  },
+  "seoFilename": "kose-bankli-koyu-renk-ahsap-deck-teras",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras",
+      "dış mekân"
+    ],
+    "finish": [
+      "koyu ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

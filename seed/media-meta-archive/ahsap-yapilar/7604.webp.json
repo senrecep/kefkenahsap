@@ -1,0 +1,34 @@
+{
+  "source": "Ahsap Yapilar/7604.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Taş duvar önünde ahşap duş bölmeleri",
+    "en": "Timber shower bays against a stone wall"
+  },
+  "alt": {
+    "tr": "Taş duvar önünde yatay çıtalı ahşap duvarlarla ayrılmış duş bölmeleri ve yanlarda oturma bankları",
+    "en": "Shower bays divided by horizontal timber slat walls in front of a stone wall, with benches at the sides"
+  },
+  "caption": {
+    "tr": "Ortadaki iki duş, yatay çıtalı ahşap duvarlarla yan bölmelerden ayrılıyor. Yan bölmelerde oturmak için ahşap banklar var.",
+    "en": "Two showers in the middle are separated from the side bays by horizontal slat walls, and the side bays have timber benches."
+  },
+  "seoFilename": "tas-duvar-onunde-ahsap-dus-bolmeleri",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

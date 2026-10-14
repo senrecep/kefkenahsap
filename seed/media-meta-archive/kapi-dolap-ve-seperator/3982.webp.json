@@ -1,0 +1,35 @@
+{
+  "source": "Kapi Dolap ve Seperator/3982.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Katlanır masalı yatay çıtalı ahşap kapama",
+    "en": "Slatted timber enclosure with a fold-down table"
+  },
+  "alt": {
+    "tr": "Taş kaplı duvara monte, yatay çıtalı koyu ahşap kapama ve yanına bağlı katlanır ahşap masa",
+    "en": "Dark horizontal slat enclosure on a stone-clad wall with a fold-down timber table attached"
+  },
+  "caption": {
+    "tr": "Duvardaki kapama aralıklı yatay çıtalarla yapıldı, yanına katlanabilen küçük bir ahşap masa eklendi.",
+    "en": "The wall enclosure is made of spaced horizontal slats, with a small fold-down timber table fixed to its side."
+  },
+  "seoFilename": "katlanir-masali-yatay-citali-ahsap-kapama",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "dış cephe",
+      "dış mekân"
+    ],
+    "finish": [
+      "koyu ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

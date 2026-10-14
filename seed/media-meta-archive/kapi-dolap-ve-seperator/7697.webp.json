@@ -1,0 +1,35 @@
+{
+  "source": "Kapi Dolap ve Seperator/7697.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Merdiven boyunca kızıl kahve ahşap bölme",
+    "en": "Reddish brown timber screen along a staircase"
+  },
+  "alt": {
+    "tr": "Dış merdivenin yanında yükselen yatay tahtalı kızıl kahve tonlu ahşap bölme ve cam kapı",
+    "en": "Reddish brown horizontal board screen rising beside an outdoor staircase, next to a glass door"
+  },
+  "caption": {
+    "tr": "Bölme merdivenin eğimini izleyerek yükseliyor, tahtalar arasında aralık bırakıldı. Kapı kasası da aynı tonda.",
+    "en": "The screen follows the slope of the stairs with gaps between its boards, and the door frame is the same tone."
+  },
+  "seoFilename": "merdiven-boyu-kizil-kahve-ahsap-bolme",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "merdiven",
+      "dış mekân"
+    ],
+    "finish": [
+      "koyu ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,33 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/1438.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Çamlar arasında çapraz korkuluklu deck",
+    "en": "Deck with cross-braced railings among pines"
+  },
+  "alt": {
+    "tr": "Çam ağaçlarının arasında, yerden yükseltilmiş geniş ahşap deck ve çevresindeki çapraz korkuluklar",
+    "en": "Wide raised timber deck with cross-braced railings, set among pine trees"
+  },
+  "caption": {
+    "tr": "Çamların arasındaki eğimli araziye kurulan geniş deck. Kenarları çapraz korkuluklarla çevrilmiş.",
+    "en": "A wide deck built on sloping ground among pine trees, edged with cross-braced railings."
+  },
+  "seoFilename": "camlar-arasinda-yukseltilmis-deck",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "orman",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

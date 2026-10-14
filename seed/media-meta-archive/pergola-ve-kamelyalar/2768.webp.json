@@ -1,0 +1,34 @@
+{
+  "source": "Pergola ve Kamelyalar/2768.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Palmiyeler arasında kıyı kamelyası",
+    "en": "Shoreline gazebo among palms"
+  },
+  "alt": {
+    "tr": "Kıyıdaki taş duvarın üstünde ahşap payandalarla taşınan, çapraz korkuluklu kamelya; arkada beyaz evler",
+    "en": "Gazebo with cross-braced railings on timber braces above a shoreline stone wall, with white houses behind"
+  },
+  "caption": {
+    "tr": "Kıyıdaki taş duvarın üzerine kurulan kamelya palmiyelerin arasında duruyor. Arkadaki yamaçta beyaz evler sıralanıyor.",
+    "en": "The gazebo stands on a shoreline stone wall among palm trees. White houses line the hillside behind."
+  },
+  "seoFilename": "palmiyeli-kiyi-kamelyasi-beyaz-evler",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "deniz kenarı",
+      "taş duvar",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

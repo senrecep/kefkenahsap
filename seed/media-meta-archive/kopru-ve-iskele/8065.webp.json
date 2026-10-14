@@ -1,0 +1,33 @@
+{
+  "source": "Kopru ve Iskele/8065.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Ahşap köprünün girişi",
+    "en": "Entrance to a timber footbridge"
+  },
+  "alt": {
+    "tr": "Ahşap deck'ten havuzun üzerine uzanan, iki yanı korkuluklu kemerli köprü",
+    "en": "Arched footbridge with railings on both sides rising from a wooden deck over a pool"
+  },
+  "caption": {
+    "tr": "Köprü, havuz kenarındaki deck'ten başlıyor. Korkuluklar kemer boyunca yükseliyor, altta çapraz destekler görünüyor.",
+    "en": "The bridge starts from the deck at the pool edge. Its railings follow the arch, with diagonal braces visible underneath."
+  },
+  "seoFilename": "ahsap-kopru-girisi-havuz-deck-agaclar",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "havuz",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

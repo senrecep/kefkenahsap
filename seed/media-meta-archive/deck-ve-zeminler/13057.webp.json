@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/13057.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Çimenlik üzerinde kırmızımsı ahşap deck",
+    "en": "Reddish timber deck on a lawn"
+  },
+  "alt": {
+    "tr": "Çit ve çalıların önünde, çimenliğin üzerine kurulmuş kırmızımsı tonlu ahşap deck",
+    "en": "Reddish timber deck set on a lawn in front of a hedge and shrubs"
+  },
+  "caption": {
+    "tr": "Bahçenin bir köşesinde, çimenlikten hafifçe yükselen ahşap deck. Tahtalardaki renk farkları güneşte belirginleşiyor.",
+    "en": "A timber deck raised slightly above the lawn in a corner of the garden, its varied board tones showing in the sun."
+  },
+  "seoFilename": "cimenlik-uzerinde-kirmizimsi-ahsap-deck-cit-onu",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "çimenlik",
+      "dış mekân"
+    ],
+    "finish": [
+      "koyu ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

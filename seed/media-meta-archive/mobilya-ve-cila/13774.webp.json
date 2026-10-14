@@ -1,0 +1,34 @@
+{
+  "source": "Ireko-Teak/13774.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Havuz başında ahşap yemek takımı",
+    "en": "Timber dining set by a pool"
+  },
+  "alt": {
+    "tr": "Havuz kenarında taş zeminde, katlanır sandalyelerle çevrili uzun çıtalı ahşap yemek masası",
+    "en": "Long slatted timber dining table surrounded by folding chairs on stone paving beside a pool"
+  },
+  "caption": {
+    "tr": "Havuz başına kurulan uzun ahşap masa ve sandalyeler. Yağmurla ıslanan yüzeyler ahşabın tonunu koyulaştırmış.",
+    "en": "A long timber table and chairs set up by the pool, the wood's tone deepened by rain on its surfaces."
+  },
+  "seoFilename": "havuz-basinda-uzun-ahsap-yemek-takimi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "havuz kenarı",
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,36 @@
+{
+  "source": "Korkuluk ve Cit/12239.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Taş duvar boyunca ahşap korkuluk",
+    "en": "Timber railing along a stone wall"
+  },
+  "alt": {
+    "tr": "Ağaç gövdesinin yanından başlayıp taş duvar boyunca uzanan küpeşteli ahşap korkuluk",
+    "en": "Timber railing with a handrail running from beside a tree trunk along a stone wall"
+  },
+  "caption": {
+    "tr": "Kalın küpeşteli, dikey dikmeli ahşap korkuluk. Taş duvarın önündeki yükseltilmiş platformu çevreliyor.",
+    "en": "A timber railing with a thick handrail and vertical balusters, edging a raised platform in front of a stone wall."
+  },
+  "seoFilename": "tas-duvar-boyunca-ahsap-korkuluk-kupeste",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ahşap"
+    ],
+    "stage": [
+      "detail",
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

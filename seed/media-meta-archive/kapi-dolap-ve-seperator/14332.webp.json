@@ -1,0 +1,36 @@
+{
+  "source": "Kapi Dolap ve Seperator/14332.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Pencere altında panjur desenli ahşap dolap",
+    "en": "Timber cabinet with louvres below a window"
+  },
+  "alt": {
+    "tr": "Çimenlik üzerinde, pencerenin altında çift kapaklı ve alt kısmı panjur desenli koyu ahşap dolap",
+    "en": "Dark timber cabinet with double doors and a louvred lower panel under a window, on a lawn"
+  },
+  "caption": {
+    "tr": "Dolabın üst kısmında iki kapak var, alt kısmı yatay panjur çıtalarıyla kapatıldı.",
+    "en": "The cabinet has two doors above and a lower panel closed with horizontal louvres."
+  },
+  "seoFilename": "pencere-alti-panjurlu-ahsap-dolap",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "çimenlik",
+      "dış mekân"
+    ],
+    "finish": [
+      "koyu ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

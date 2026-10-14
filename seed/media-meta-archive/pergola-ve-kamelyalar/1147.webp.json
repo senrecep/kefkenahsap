@@ -1,0 +1,33 @@
+{
+  "source": "Pergola ve Kamelyalar/1147.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Deniz kenarında deck üzerinde pergola",
+    "en": "Pergola on a seaside deck"
+  },
+  "alt": {
+    "tr": "Kayalık kıyıya bakan ahşap deck, çapraz korkuluklar ve deck boyunca uzanan ahşap pergola",
+    "en": "Timber deck facing a rocky shore, with cross-braced railings and a pergola running along it"
+  },
+  "caption": {
+    "tr": "Taş duvarla deniz arasında uzanan deck'in üstüne kurulan pergola. Çapraz korkuluklar kıyı tarafını kapatıyor.",
+    "en": "A pergola built over a deck that runs between a stone wall and the sea. Cross-braced railings close off the shore side."
+  },
+  "seoFilename": "deniz-kenari-deck-pergola-kayalik-kiyi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "deniz kenarı",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

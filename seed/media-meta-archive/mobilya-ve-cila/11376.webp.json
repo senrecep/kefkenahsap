@@ -1,0 +1,35 @@
+{
+  "source": "Ireko-Teak/11376.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Açılır ahşap yemek masası ve sandalyeler",
+    "en": "Extending timber dining table with chairs"
+  },
+  "alt": {
+    "tr": "Taş duvarlı avluda, uzatma kanatları açılmış çıtalı ahşap yemek masası ve katlanır sandalyeler",
+    "en": "Slatted timber dining table with its extension leaves open and folding chairs in a stone-walled courtyard"
+  },
+  "caption": {
+    "tr": "Uzatma kanatlarıyla büyüyen çıtalı ahşap masa, sandalyeleriyle birlikte. Yüzeyler parlak bitirilmiş.",
+    "en": "A slatted timber table that grows with its extension leaves, shown with its chairs. The surfaces have a glossy finish."
+  },
+  "seoFilename": "acilir-ahsap-yemek-masasi-tas-duvarli-avlu",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "avlu",
+      "dış mekân"
+    ],
+    "finish": [
+      "parlak yüzey"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,35 @@
+{
+  "source": "Kapi Dolap ve Seperator/8376.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Kare kafesli ahşap bölme",
+    "en": "Square lattice timber partition"
+  },
+  "alt": {
+    "tr": "Verandada metal ayaklar üzerinde duran, kare kafes desenli ahşap bölme panelleri",
+    "en": "Square lattice timber partition panels standing on metal feet on a veranda"
+  },
+  "caption": {
+    "tr": "Bölme panelleri kare kafes desenli ahşap çerçevelerden yapıldı ve metal ayaklar üzerinde duruyor.",
+    "en": "The partition panels are timber frames with a square lattice, standing on metal feet."
+  },
+  "seoFilename": "veranda-kare-kafesli-ahsap-bolme",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "veranda",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

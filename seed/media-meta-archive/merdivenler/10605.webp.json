@@ -1,0 +1,34 @@
+{
+  "source": "Merdivenler/10605.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Yukarıdan bakışla düz ahşap merdiven",
+    "en": "Straight timber staircase seen from the top"
+  },
+  "alt": {
+    "tr": "Üst sahanlıktan aşağıya, villa bahçesine inen çapraz korkuluklu düz ahşap merdiven",
+    "en": "Straight timber staircase with cross-braced railings, looking down from the top towards a villa garden"
+  },
+  "caption": {
+    "tr": "Merdivenin başından bakıldığında basamaklar ve iki yandaki korkuluklar düz bir hat halinde aşağı iniyor.",
+    "en": "Seen from the top, the treads and the railings on both sides run down in a straight line."
+  },
+  "seoFilename": "yukaridan-duz-ahsap-merdiven-villa-bahcesi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "villa",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

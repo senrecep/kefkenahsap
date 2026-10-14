@@ -1,0 +1,35 @@
+{
+  "source": "Kapi Dolap ve Seperator/3522.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Servilerin arasında uzun ahşap dolap",
+    "en": "Tall timber cabinet among cypress trees"
+  },
+  "alt": {
+    "tr": "Serviler ve tel çit arasında duran yatay tahtalı kızıl kahve tonlu uzun ahşap dolap",
+    "en": "Tall reddish brown timber cabinet with horizontal boards between cypress trees and a wire fence"
+  },
+  "caption": {
+    "tr": "Uzun dolabın kapakları yatay tahtalardan yapıldı. Önündeki toprak alan ahşap bir kenarlıkla ayrılıyor.",
+    "en": "The tall cabinet has doors of horizontal boards, with a timber-edged bed in front."
+  },
+  "seoFilename": "serviler-arasi-uzun-ahsap-dolap",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "koyu ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

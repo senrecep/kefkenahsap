@@ -1,0 +1,35 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/15140.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Şehre bakan bahçede ahşap çiçeklikler",
+    "en": "Timber planters in a garden overlooking the city"
+  },
+  "alt": {
+    "tr": "Basamak taşlı çimenlik yolun yanında sıralanan koyu tonlu kare ahşap çiçeklikler",
+    "en": "Dark-toned square timber planters lined up beside a stepping-stone path on a lawn"
+  },
+  "caption": {
+    "tr": "Kare çiçeklikler bitki sınırı boyunca dizilmiş. İçleri siyah astarlı, kenarlarında geniş başlık tahtası var.",
+    "en": "Square planters set along the planting border. They are lined in black and finished with wide capping boards."
+  },
+  "seoFilename": "sehre-bakan-bahce-kare-ahsap-ciceklik",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "koyu ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

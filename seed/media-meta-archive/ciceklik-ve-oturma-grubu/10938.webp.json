@@ -1,0 +1,35 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/10938.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Tekerlekli büyük ahşap çiçeklikler",
+    "en": "Large timber planters on castors"
+  },
+  "alt": {
+    "tr": "Terasta, içlerinde iğne yapraklı ağaçlar bulunan, yatay tahtalı ve tekerlekli büyük ahşap çiçeklikler",
+    "en": "Large horizontal-board timber planters on castors, holding conifers on a terrace"
+  },
+  "caption": {
+    "tr": "Ağaç dikilen büyük çiçeklikler tekerlekler üzerinde duruyor. Yatay tahtalar köşe dikmelerinde birleşiyor.",
+    "en": "The large planters holding trees stand on castors. Horizontal boards meet at the corner posts."
+  },
+  "seoFilename": "tekerlekli-buyuk-ahsap-ciceklik-teras",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "teras",
+      "dış mekân"
+    ],
+    "finish": [
+      "bal rengi"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

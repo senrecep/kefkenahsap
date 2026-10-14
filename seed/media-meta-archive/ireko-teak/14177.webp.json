@@ -1,0 +1,36 @@
+{
+  "source": "Ireko-Teak/14177.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Pencere altında ahşap raf ve deck",
+    "en": "Timber window shelf above a deck"
+  },
+  "alt": {
+    "tr": "Pencerenin altında metal konsollara oturan ahşap raf ve önünde parlak ahşap deck",
+    "en": "Timber shelf on metal brackets below a window, with glossy timber decking in front"
+  },
+  "caption": {
+    "tr": "Deck ile aynı ahşap tonunda yapılmış pencere altı raf. Raf, metal konsollarla duvara sabitlenmiş.",
+    "en": "A shelf under the window in the same timber tone as the deck, fixed to the wall on metal brackets."
+  },
+  "seoFilename": "pencere-alti-ahsap-raf-ve-deck-dis-cephe",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "dış cephe",
+      "dış mekân"
+    ],
+    "finish": [
+      "parlak yüzey"
+    ],
+    "stage": [
+      "finished",
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,35 @@
+{
+  "source": "Kapi Dolap ve Seperator/4650.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Ev duvarına yaslanan ahşap depo",
+    "en": "Timber storage shed against a house wall"
+  },
+  "alt": {
+    "tr": "Ev duvarının köşesine yerleştirilmiş yatay tahtalı açık renk ahşap depo ve yanında bahçe yatağı",
+    "en": "Light timber storage shed with horizontal boards set against a house corner, beside a garden bed"
+  },
+  "caption": {
+    "tr": "Açık renk ahşap depo evin yan duvarına yaslandı, ön yüzünde iki kapak var. Çatısı tek yöne eğimli.",
+    "en": "The light timber shed sits against the side of the house, with two doors at the front and a single-pitch roof."
+  },
+  "seoFilename": "ev-duvari-acik-renk-ahsap-depo",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

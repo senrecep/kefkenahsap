@@ -1,0 +1,33 @@
+{
+  "source": "Pergola ve Kamelyalar/298.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Çokgen kamelyanın lambri tavanı",
+    "en": "Timber-lined ceiling of a polygonal gazebo"
+  },
+  "alt": {
+    "tr": "Çokgen bir kamelyanın içinden ortada birleşen kirişler, lambri tavan ve saçak hizasındaki kafes paneller",
+    "en": "Inside a polygonal gazebo: rafters meeting at the centre, a timber-lined ceiling and lattice panels at the eaves"
+  },
+  "caption": {
+    "tr": "Kamelyanın içinden yukarı bakış. Lambri kaplı tavan dilimleri kirişlerle ayrılıyor, saçak hizasında kafes paneller dolaşıyor.",
+    "en": "Looking up inside the gazebo. Rafters divide the timber-lined ceiling, and lattice panels run around the eaves."
+  },
+  "seoFilename": "cokgen-kamelya-lambri-tavan",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "iç detay"
+    ],
+    "finish": [],
+    "stage": [
+      "detail",
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

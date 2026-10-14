@@ -1,0 +1,33 @@
+{
+  "source": "Merdivenler/8253.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Sahanlıklı L biçimli ahşap bahçe merdiveni",
+    "en": "L-shaped timber garden staircase with a landing"
+  },
+  "alt": {
+    "tr": "Çimenlikten başlayıp köşedeki sahanlıkta dönerek duvar üstüne çıkan ahşap merdiven",
+    "en": "Timber staircase starting on the lawn and turning at a corner landing to reach the top of the wall"
+  },
+  "caption": {
+    "tr": "İki kollu merdiven, bahçe köşesindeki sahanlıkta yön değiştiriyor. Sahanlık uzun bir dikmeyle taşınıyor.",
+    "en": "The two-flight staircase changes direction at a landing in the corner of the garden, carried on a tall post."
+  },
+  "seoFilename": "l-bicimli-sahanlikli-ahsap-bahce-merdiveni",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

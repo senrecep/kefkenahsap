@@ -1,0 +1,34 @@
+{
+  "source": "Kopru ve Iskele/5043.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Su kenarında ahşap yürüyüş yolu",
+    "en": "Waterside timber walkway"
+  },
+  "alt": {
+    "tr": "Bir yanı yatay ahşap korkuluklu, aralarında fidanlar ve T biçimli direkler olan geniş ahşap yürüyüş yolu",
+    "en": "Wide timber walkway with horizontal wooden rails on one side and young trees and T-shaped posts along it"
+  },
+  "caption": {
+    "tr": "İskelenin üzerinden bakış: geniş tahtalar, su tarafında yatay korkuluk ve aralıklarla dikilmiş fidanlar.",
+    "en": "A view along the pier: wide boards, horizontal rails on the water side and young trees planted at intervals."
+  },
+  "seoFilename": "ahsap-yuruyus-yolu-fidanli-iskele",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "su kenarı",
+      "çimenlik",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

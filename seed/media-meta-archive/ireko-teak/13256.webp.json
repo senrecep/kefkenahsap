@@ -1,0 +1,35 @@
+{
+  "source": "Ireko-Teak/13256.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Manzaralı pergola altında ahşap deck",
+    "en": "Timber deck under a pergola with a view"
+  },
+  "alt": {
+    "tr": "Cam korkuluklu pergola altında, oturma grubu ve büyük saksılarla döşenmiş ahşap deck",
+    "en": "Timber deck under a glass-railed pergola, furnished with a lounge set and large planters"
+  },
+  "caption": {
+    "tr": "Ahşap tavanlı pergolanın altındaki deck, tepeye bakan bir oturma alanına dönüşmüş.",
+    "en": "The deck under the timber-ceilinged pergola makes a seating area looking out over the hillside."
+  },
+  "seoFilename": "manzarali-pergola-altinda-ahsap-deck-oturma-alani",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "teras",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

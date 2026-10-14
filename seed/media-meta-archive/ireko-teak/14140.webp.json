@@ -1,0 +1,33 @@
+{
+  "source": "Ireko-Teak/14140.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Arnavut kaldırımında uzun ahşap bank",
+    "en": "Long timber bench on a cobbled floor"
+  },
+  "alt": {
+    "tr": "Arnavut kaldırımlı zeminde, tel çitin önünde kısa ayaklar üzerinde uzanan uzun ahşap bank",
+    "en": "Long timber bench on short feet running in front of a wire fence on a cobbled floor"
+  },
+  "caption": {
+    "tr": "Sütunlar arasında boydan boya uzanan ahşap bank. Ön yüzde tahtalar farklı tonlarıyla yatay dizilmiş.",
+    "en": "A timber bench running the full width between two columns, its front laid with horizontal boards in varied tones."
+  },
+  "seoFilename": "arnavut-kaldirimli-zeminde-uzun-ahsap-bank",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "avlu",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

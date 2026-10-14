@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/4839.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Koyu tonlu ahşap çatı makasları",
+    "en": "Dark timber roof trusses"
+  },
+  "alt": {
+    "tr": "Açık renk lambri kaplı çatının altında koyu tonlu ahşap makaslar ve aralarından geçen havalandırma kanalı",
+    "en": "Dark timber trusses under a light boarded roof, with a ventilation duct running between them"
+  },
+  "caption": {
+    "tr": "Çatının iç yüzü açık renk lambriyle kaplandı, koyu tonlu makaslar bu zeminde öne çıkıyor.",
+    "en": "Dark trusses stand out against the light boarded underside of the roof."
+  },
+  "seoFilename": "koyu-tonlu-ahsap-cati-makaslari-lambri",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "koyu ton"
+    ],
+    "stage": [
+      "detail",
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

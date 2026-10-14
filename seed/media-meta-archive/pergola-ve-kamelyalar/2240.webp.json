@@ -1,0 +1,33 @@
+{
+  "source": "Pergola ve Kamelyalar/2240.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Yükseltilmiş teras ve pergolanın taşıyıcıları",
+    "en": "Supporting frame of a raised terrace and pergola"
+  },
+  "alt": {
+    "tr": "Aşağıdan görülen ahşap dikmeler, payandalar ve kirişler; üstte çapraz korkuluk ve çıtalı pergola",
+    "en": "Timber posts, braces and beams seen from below, with cross-braced railings and a slatted pergola above"
+  },
+  "caption": {
+    "tr": "Yükseltilmiş terasın altından bakış. Dikmeler, çapraz payandalar ve kirişler hem terası hem de üstteki pergolayı taşıyor.",
+    "en": "Looking up from beneath the raised terrace. Posts, diagonal braces and beams carry both the terrace and the pergola above."
+  },
+  "seoFilename": "yukseltilmis-teras-tasiyici-ahsap-iskelet",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "detail",
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

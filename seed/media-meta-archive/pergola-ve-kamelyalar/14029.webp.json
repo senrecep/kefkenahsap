@@ -1,0 +1,36 @@
+{
+  "source": "Ireko-Teak/14029.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Yemek masası üzerinde ahşap pergola",
+    "en": "Timber pergola over a dining set"
+  },
+  "alt": {
+    "tr": "Taş zeminli bahçe terasında, altında ahşap yemek takımı ve hasır avizeler olan ahşap pergola",
+    "en": "Timber pergola over a stone-paved garden terrace with a wooden dining set and woven pendant lamps"
+  },
+  "caption": {
+    "tr": "Taş zeminli terası gölgeleyen ahşap pergola. Arkadaki yatay çıtalı paravan ve korkuluk aynı tonda.",
+    "en": "A timber pergola shading a stone-paved terrace, with a horizontal slatted screen and railing in the same tone behind it."
+  },
+  "seoFilename": "yemek-masali-ahsap-pergola-tas-zemin-teras",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

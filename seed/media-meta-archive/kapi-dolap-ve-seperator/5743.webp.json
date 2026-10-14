@@ -1,0 +1,35 @@
+{
+  "source": "Kapi Dolap ve Seperator/5743.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Merdiven dibinde yatay tahtalı ahşap kapama",
+    "en": "Horizontal board timber enclosure by a staircase"
+  },
+  "alt": {
+    "tr": "Mermer merdivenin yanında köşeyi dönen yatay tahtalı koyu ahşap kapama",
+    "en": "Dark timber enclosure of horizontal boards wrapping a corner beside marble steps"
+  },
+  "caption": {
+    "tr": "Kapama, merdivenin yanındaki köşeyi yatay tahtalarla dönüyor. Tahtaların arasında ince boşluklar bırakıldı.",
+    "en": "The enclosure wraps the corner beside the steps in horizontal boards with narrow gaps between them."
+  },
+  "seoFilename": "merdiven-dibi-yatay-tahtali-ahsap-kapama",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "avlu",
+      "dış mekân"
+    ],
+    "finish": [
+      "koyu ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

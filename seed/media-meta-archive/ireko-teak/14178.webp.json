@@ -1,0 +1,35 @@
+{
+  "source": "Ireko-Teak/14178.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Çakıl bahçe yanında ahşap deck şeridi",
+    "en": "Timber deck strip beside a pebble garden"
+  },
+  "alt": {
+    "tr": "Beton çerçeve içine döşenmiş, çakıl ve kayalı bahçe düzenlemesinin yanında parlak ahşap deck",
+    "en": "Glossy timber deck set in a concrete frame beside a pebble and rock garden"
+  },
+  "caption": {
+    "tr": "Ev boyunca uzanan, beton bordürle çevrili ahşap deck şeridi. Önünde çakıl ve kayalarla bir bahçe düzenlemesi var.",
+    "en": "A strip of timber decking along the house, edged with concrete, with a pebble and rock garden in front."
+  },
+  "seoFilename": "beton-bordurlu-ahsap-deck-serit-cakil-bahce",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "parlak yüzey"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

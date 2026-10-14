@@ -1,0 +1,35 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14102.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Bahçe köşesinde koyu tonlu bank",
+    "en": "Dark-toned corner bench in a garden"
+  },
+  "alt": {
+    "tr": "Taş döşeli zeminde dikey tahtalı sırtlığı olan koyu tonlu L biçimli ahşap bank",
+    "en": "Dark-toned L-shaped timber bench with a vertical-board back on a paved floor"
+  },
+  "caption": {
+    "tr": "Bahçe çitinin dibine yerleştirilen köşe bank metal ayaklar üzerinde duruyor.",
+    "en": "A corner bench set against the garden fence, standing on metal legs."
+  },
+  "seoFilename": "bahce-kosesi-koyu-tonlu-l-bank",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "koyu ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

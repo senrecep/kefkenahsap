@@ -1,0 +1,35 @@
+{
+  "source": "Korkuluk ve Cit/14465.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Su kanalı üzerinde ahşap bahçe kapısı",
+    "en": "Timber garden gate over a small channel"
+  },
+  "alt": {
+    "tr": "Beton su kanalının üstündeki küçük ahşap geçitte sivri uçlu çıtalı, kahverengi tonlu bahçe kapısı",
+    "en": "Brown toned picket garden gate on a small timber crossing over a concrete channel"
+  },
+  "caption": {
+    "tr": "Kanalın üstüne atılan ahşap geçidin ucunda çapraz destekli küçük bir bahçe kapısı var.",
+    "en": "A small diagonally braced garden gate stands at the end of a timber crossing laid over the channel."
+  },
+  "seoFilename": "su-kanali-uzerinde-ahsap-bahce-kapisi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "kahverengi ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

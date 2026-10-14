@@ -1,0 +1,36 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/13353.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Taş duvar boyunca dikey tahtalı çiçeklikler",
+    "en": "Vertical-board planters along a stone wall"
+  },
+  "alt": {
+    "tr": "Taş döşeli yolun kenarında, sarmaşık bitkilerle dolu, dikey tahtalı bal rengi ahşap çiçeklikler",
+    "en": "Honey-toned timber planters with vertical boards along a stone path, filled with climbing plants"
+  },
+  "caption": {
+    "tr": "Taş duvarın dibine dizilen çiçeklikler dikey tahtalarla kaplanmış. İçlerindeki sarmaşıklar duvarı yeşille örtüyor.",
+    "en": "Planters lined up at the foot of a stone wall, clad in vertical boards. The climbers in them cover the wall in green."
+  },
+  "seoFilename": "tas-duvar-dikey-tahtali-ciceklik",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "taş duvar",
+      "dış mekân"
+    ],
+    "finish": [
+      "bal rengi"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

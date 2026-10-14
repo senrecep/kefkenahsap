@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/3924.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Bambu önünde havuz kenarı ahşap deck",
+    "en": "Poolside timber deck along a bamboo screen"
+  },
+  "alt": {
+    "tr": "Bambu dizisinin önünde, havuz kenarına uzanan düz yüzeyli koyu tonlu ahşap deck",
+    "en": "Flat dark-toned timber deck running along a pool edge in front of a row of bamboo"
+  },
+  "caption": {
+    "tr": "Havuzun bir kenarı boyunca uzanan, kalın kenar tahtasıyla bitirilmiş ahşap deck. Bambular deck'in arkasında doğal bir perde oluşturuyor.",
+    "en": "A timber deck running the length of the pool, finished with a deep edge board, with bamboo forming a screen behind it."
+  },
+  "seoFilename": "bambu-onunde-havuz-kenari-koyu-ahsap-deck",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "havuz kenarı",
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "koyu ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

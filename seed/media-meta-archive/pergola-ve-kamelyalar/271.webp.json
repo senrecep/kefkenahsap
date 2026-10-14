@@ -1,0 +1,33 @@
+{
+  "source": "Pergola ve Kamelyalar/271.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Kafes panelli ahşap pergola",
+    "en": "Timber pergola with lattice panels"
+  },
+  "alt": {
+    "tr": "Yukarıdan görülen, köşelerinde kafes paneller bulunan ızgara kirişli ahşap pergola ve çevresindeki teras",
+    "en": "Timber pergola with a grid of beams and lattice panels at the corners, seen from above on a terrace"
+  },
+  "caption": {
+    "tr": "Taş döşeli terasa kurulan pergola yukarıdan görülüyor. Köşelerdeki ahşap kafes paneller dikmeleri çevreliyor.",
+    "en": "A pergola on a paved terrace, seen from above. Timber lattice panels wrap the posts at the corners."
+  },
+  "seoFilename": "kafes-panelli-pergola-teras-ustten",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "teras",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

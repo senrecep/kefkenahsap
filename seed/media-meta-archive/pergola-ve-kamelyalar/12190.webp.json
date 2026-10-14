@@ -1,0 +1,36 @@
+{
+  "source": "Pergola ve Kamelyalar/12190.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Kavisli taş bank ve ahşap pergola",
+    "en": "Curved stone bench with a timber pergola"
+  },
+  "alt": {
+    "tr": "Çimenlik bahçede taş örgü kaide üzerinde kavisli ahşap oturak ve üstünde koyu tonlu pergola",
+    "en": "Curved timber seat on a stacked-stone base under a dark-toned pergola, in a lawn garden"
+  },
+  "caption": {
+    "tr": "Kavisli taş duvarın üstü ahşap oturakla kaplanmış, üzerine koyu tonlu bir pergola kurulmuş. Ortada ahşap bir masa duruyor.",
+    "en": "The curved stone wall is topped with a timber seat, with a dark-toned pergola above. A timber table stands in the middle."
+  },
+  "seoFilename": "kavisli-tas-bank-koyu-pergola-bahce",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "çimenlik",
+      "dış mekân"
+    ],
+    "finish": [
+      "koyu ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

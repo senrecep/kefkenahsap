@@ -1,0 +1,35 @@
+{
+  "source": "Kapi Dolap ve Seperator/12650.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Bahçe duvarı boyunca alçak ahşap dolap",
+    "en": "Low timber cabinet along a garden wall"
+  },
+  "alt": {
+    "tr": "Parke taşlı yolun kenarında, bahçe duvarına oturan dikey tahtalı koyu ahşap dolap",
+    "en": "Dark timber cabinet with vertical boards set on a garden wall beside a cobbled path"
+  },
+  "caption": {
+    "tr": "Alçak dolap bahçe duvarının üstü boyunca uzanıyor, kapakları dikey tahtalardan yapıldı.",
+    "en": "The low cabinet runs along the top of the garden wall, with doors made of vertical boards."
+  },
+  "seoFilename": "bahce-duvari-alcak-koyu-ahsap-dolap",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "koyu ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

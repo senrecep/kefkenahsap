@@ -1,0 +1,35 @@
+{
+  "source": "Korkuluk ve Cit/6261.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Açık arazide çift kanatlı ahşap kapı",
+    "en": "Double timber gate on open land"
+  },
+  "alt": {
+    "tr": "Toprak arazide iki ahşap direğe menteşeli, çapraz destekli çift kanatlı ahşap kapı",
+    "en": "Double timber gate with diagonal braces, hinged on two timber posts on open ground"
+  },
+  "caption": {
+    "tr": "Çapraz destekli iki kanat, beton tabanlı kalın direklere metal menteşelerle bağlanmış. Arkada ağaçlarla çevrili geniş arazi görünüyor.",
+    "en": "Two diagonally braced leaves hang on metal hinges from thick posts set in concrete, with open, tree-lined land behind."
+  },
+  "seoFilename": "cift-kanatli-ahsap-kapi-acik-arazi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "arazi",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ahşap"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

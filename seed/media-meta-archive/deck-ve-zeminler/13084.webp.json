@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/13084.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Çit köşesinde geniş koyu tonlu ahşap deck",
+    "en": "Wide dark timber deck in a hedge corner"
+  },
+  "alt": {
+    "tr": "Yüksek çitlerle çevrili bahçe köşesinde, çimenliğin üzerine kurulmuş geniş koyu tonlu ahşap deck",
+    "en": "Wide dark-toned timber deck set on the lawn in a garden corner enclosed by tall hedges"
+  },
+  "caption": {
+    "tr": "İki çitin birleştiği köşeye oturan geniş deck. Eğimli tarafta deck'in altı yatay ahşap çıtalarla kapatılmış.",
+    "en": "A wide deck set into the corner where two hedges meet, its underside closed with horizontal timber slats on the sloping side."
+  },
+  "seoFilename": "cit-kosesinde-genis-koyu-tonlu-ahsap-deck",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "çimenlik",
+      "dış mekân"
+    ],
+    "finish": [
+      "koyu ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,33 @@
+{
+  "source": "Merdivenler/8445.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Taş duvar boyunca inen ahşap merdiven",
+    "en": "Timber steps running down beside a stone wall"
+  },
+  "alt": {
+    "tr": "Çimenliğe inen çapraz korkuluklu ahşap merdiven, solda taş duvar ve tel çit",
+    "en": "Cross-braced timber steps leading down to the lawn, with a stone wall and mesh fence on the left"
+  },
+  "caption": {
+    "tr": "Evin önündeki seviyeden bahçeye inen ahşap merdiven. Basamaklar taş duvara paralel uzanıyor.",
+    "en": "A timber staircase leading down from the level by the house to the garden, running parallel to the stone wall."
+  },
+  "seoFilename": "tas-duvar-boyunca-inen-ahsap-merdiven",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

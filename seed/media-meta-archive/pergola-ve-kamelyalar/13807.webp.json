@@ -1,0 +1,35 @@
+{
+  "source": "Pergola ve Kamelyalar/13807.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Avluya bakan ahşap pergola",
+    "en": "Timber pergola over a courtyard"
+  },
+  "alt": {
+    "tr": "Yeşil panjurlu pembe binanın avlusunda, ahşap balkon korkulukları üzerinde uzanan kahverengi pergola",
+    "en": "Brown timber pergola above a courtyard with timber balcony railings and a pink building with green shutters"
+  },
+  "caption": {
+    "tr": "Pembe cepheli binanın iç avlusunu örten pergola, aynı tonda ahşap balkon korkuluklarıyla birlikte görülüyor.",
+    "en": "A pergola covering the inner courtyard of a pink building, seen together with timber balcony railings in the same tone."
+  },
+  "seoFilename": "avlu-pergolasi-pembe-bina-balkon",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "avlu",
+      "dış mekân"
+    ],
+    "finish": [
+      "kahverengi ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

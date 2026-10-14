@@ -1,0 +1,35 @@
+{
+  "source": "Ireko-Teak/14762.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Ahşap deck üzerinde yemek masası",
+    "en": "Timber dining table on a deck"
+  },
+  "alt": {
+    "tr": "Kemerli pencereli duvarın önünde, koyu tonlu ahşap deck üzerinde ahşap yemek masası ve hasır sandalyeler",
+    "en": "Timber dining table with woven chairs on a dark timber deck in front of a wall with arched windows"
+  },
+  "caption": {
+    "tr": "Avluyu kaplayan koyu tonlu deck ve üzerinde açık tonlu ahşap yemek masası. Duvar dibinde ahşap bir raf da var.",
+    "en": "A dark-toned deck covering the courtyard with a lighter timber dining table on it, and a timber shelf along the wall."
+  },
+  "seoFilename": "kemerli-pencere-onunde-ahsap-deck-yemek-masasi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "avlu",
+      "dış mekân"
+    ],
+    "finish": [
+      "koyu ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

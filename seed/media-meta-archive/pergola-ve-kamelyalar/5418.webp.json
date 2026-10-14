@@ -1,0 +1,33 @@
+{
+  "source": "Pergola ve Kamelyalar/5418.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Beşik çatılı çıtalı ahşap pergola",
+    "en": "Gabled timber pergola with a slatted roof"
+  },
+  "alt": {
+    "tr": "Beyaz evlerin önünde, kalın dikmeler üzerinde yükselen beşik çatılı, çıtalı ahşap pergola",
+    "en": "Gabled timber pergola with a slatted roof on heavy posts, in front of white houses"
+  },
+  "caption": {
+    "tr": "Kalın ahşap dikmeler ve makaslarla taşınan beşik çatılı pergola. Çatıdaki çıtalar güneşi süzerek altına gölge düşürüyor.",
+    "en": "A gabled pergola carried on heavy timber posts and trusses. The roof slats filter the sun and cast shade below."
+  },
+  "seoFilename": "besik-catili-citali-pergola-beyaz-evler",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "dış mekân",
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

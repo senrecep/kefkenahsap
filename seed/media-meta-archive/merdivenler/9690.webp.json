@@ -1,0 +1,33 @@
+{
+  "source": "Merdivenler/9690.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Altı kaplamalı ahşap bahçe merdiveni",
+    "en": "Timber garden staircase with a boarded underside"
+  },
+  "alt": {
+    "tr": "Kafes paneller önünde, altı ahşap kaplamalı ve kapaklı, çapraz korkuluklu merdiven",
+    "en": "Cross-braced timber staircase with a boarded, door-fitted underside, in front of lattice panels"
+  },
+  "caption": {
+    "tr": "Merdivenin yan yüzü ahşapla kaplanmış, altındaki boşluğa bir kapak açılmış.",
+    "en": "The side of the staircase is clad in timber, with a door opening into the space beneath."
+  },
+  "seoFilename": "alti-kaplamali-ahsap-bahce-merdiveni-kafes",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

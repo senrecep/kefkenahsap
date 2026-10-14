@@ -1,0 +1,34 @@
+{
+  "source": "Ahsap Yapilar/822.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Taş temel üzerinde kiremit çatılı ahşap kulübe",
+    "en": "Tiled-roof timber cabin on a stone base"
+  },
+  "alt": {
+    "tr": "Taş temel üzerinde, kiremit çatılı ve yan tarafında küçük ahşap terası olan yatay tahtalı kulübe",
+    "en": "Horizontal board timber cabin with a tiled roof on a stone base, with a small timber deck at the side"
+  },
+  "caption": {
+    "tr": "Kulübe taş bir temele oturuyor, duvarları yatay tahtalarla kaplı. Yan kapının önünde küçük bir ahşap teras var.",
+    "en": "The cabin sits on a stone base with walls of horizontal boards, and a small timber deck runs in front of the side door."
+  },
+  "seoFilename": "tas-temelli-kiremit-catili-ahsap-kulube",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

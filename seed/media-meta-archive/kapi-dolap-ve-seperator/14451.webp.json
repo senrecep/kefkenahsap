@@ -1,0 +1,35 @@
+{
+  "source": "Kapi Dolap ve Seperator/14451.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Sarmaşıklar arasında dar ahşap kapı",
+    "en": "Narrow timber door between climbing plants"
+  },
+  "alt": {
+    "tr": "Sarmaşık kaplı duvarlar arasında, yatay tahtalı koyu ahşap kapı ve önündeki çakıl yol",
+    "en": "Dark timber door of horizontal boards between ivy-covered walls, with a gravel path in front"
+  },
+  "caption": {
+    "tr": "Yatay tahtalı koyu ahşap kapı, iki yanındaki yeşilliğin arasına yerleştirildi. Önüne çakıl serildi.",
+    "en": "The dark timber door of horizontal boards is set between the greenery on either side, with gravel laid in front."
+  },
+  "seoFilename": "sarmasiklar-arasi-dar-koyu-ahsap-kapi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "koyu ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,36 @@
+{
+  "source": "Kapi Dolap ve Seperator/3520.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Bahçe köşesinde kızıl kahve ahşap dolap",
+    "en": "Reddish brown timber cabinet in a garden corner"
+  },
+  "alt": {
+    "tr": "Çimenlik üzerinde, servilerin önünde duran yatay tahtalı kızıl kahve tonlu ahşap dolap",
+    "en": "Reddish brown timber cabinet with horizontal boards on a lawn in front of cypress trees"
+  },
+  "caption": {
+    "tr": "Bahçenin köşesindeki dolabın çift kapağı yatay tahtalardan yapıldı. Önündeki çimenlik ahşap bir kenarlıkla ayrılıyor.",
+    "en": "The cabinet in the garden corner has double doors of horizontal boards, and the lawn in front is edged with timber."
+  },
+  "seoFilename": "bahce-kosesi-kizil-kahve-ahsap-dolap",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "çimenlik",
+      "dış mekân"
+    ],
+    "finish": [
+      "koyu ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,34 @@
+{
+  "source": "Merdivenler/8498.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Villa yan bahçesinde ahşap merdiven",
+    "en": "Timber staircase in a villa side yard"
+  },
+  "alt": {
+    "tr": "Ev cephesinin önünde, servi fidanlarının yanında yükselen çapraz korkuluklu ahşap merdiven",
+    "en": "Cross-braced timber staircase rising beside young cypress trees in front of a house facade"
+  },
+  "caption": {
+    "tr": "Evin yan bahçesinden üst seviyeye çıkan ahşap merdiven. İki yandaki korkuluklar çapraz dikmeli.",
+    "en": "A timber staircase leading from the side yard of a house to the upper level, with cross-braced railings on both sides."
+  },
+  "seoFilename": "villa-yan-bahcesinde-ahsap-merdiven-servi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "villa",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

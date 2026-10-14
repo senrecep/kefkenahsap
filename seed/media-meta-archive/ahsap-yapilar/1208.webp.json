@@ -1,0 +1,36 @@
+{
+  "source": "Ahsap Yapilar/1208.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Deniz kenarında iki katlı ahşap platform",
+    "en": "Two-level timber platform by the sea"
+  },
+  "alt": {
+    "tr": "Kırmızı beton rıhtımda direkler üzerinde yükselen, çapraz korkuluklu ve pergolalı ahşap platform",
+    "en": "Timber platform on posts above a red concrete quay, with cross-braced railings and pergola tops"
+  },
+  "caption": {
+    "tr": "Rıhtımın üstünde direklere oturan ahşap platform, altında gölgeli bir alan bırakıyor. Üst katta çapraz korkuluklar ve pergolalar var.",
+    "en": "The timber platform stands on posts above the quay, leaving a shaded area below. Its upper level has cross-braced railings and pergolas."
+  },
+  "seoFilename": "deniz-kenari-iki-katli-ahsap-platform-rihtim",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "deniz kenarı",
+      "rıhtım",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

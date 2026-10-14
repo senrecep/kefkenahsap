@@ -1,0 +1,33 @@
+{
+  "source": "Merdivenler/8661.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Altı depolu ahşap dış merdiven",
+    "en": "Outdoor timber staircase with storage beneath"
+  },
+  "alt": {
+    "tr": "Fayans zeminli avluda, altı kapaklı ahşap kaplamayla kapatılmış çapraz korkuluklu merdiven",
+    "en": "Cross-braced timber staircase in a tiled courtyard, its underside closed in timber boarding with a door"
+  },
+  "caption": {
+    "tr": "Merdivenin altı ahşap kaplamayla kapatılıp kapaklı bir depoya dönüştürülmüş.",
+    "en": "The space under the staircase is closed in with timber boarding and fitted with a door for storage."
+  },
+  "seoFilename": "alti-depolu-ahsap-dis-merdiven-avlu",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "avlu",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

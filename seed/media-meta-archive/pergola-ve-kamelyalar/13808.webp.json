@@ -1,0 +1,35 @@
+{
+  "source": "Pergola ve Kamelyalar/13808.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Havuz kenarında pergolalı ahşap veranda",
+    "en": "Timber veranda with a pergola beside a pool"
+  },
+  "alt": {
+    "tr": "Havuz boyunca uzanan ahşap korkuluklu deck ve üstünü örten koyu tonlu pergola; arkada yeşil panjurlu ev",
+    "en": "Deck with timber railings along a pool under a dark-toned pergola, with a house with green shutters behind"
+  },
+  "caption": {
+    "tr": "Evin önündeki ahşap veranda havuz kenarı boyunca uzanıyor. Kirişleri dışa taşan pergola verandanın üstünü gölgeliyor.",
+    "en": "The timber veranda in front of the house runs along the pool. A pergola with projecting beams shades it."
+  },
+  "seoFilename": "havuz-kenari-pergolali-ahsap-veranda",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "havuz başı",
+      "dış mekân"
+    ],
+    "finish": [
+      "koyu ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,34 @@
+{
+  "source": "Kopru ve Iskele/7839.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Ağaç altında ahşap banklar",
+    "en": "Timber benches under trees"
+  },
+  "alt": {
+    "tr": "Ağaçların gölgesinde, çapraz desenli ahşap korkuluğun önüne dizilmiş uzun ahşap banklar",
+    "en": "Long timber benches set against a cross-pattern wooden railing in the shade of trees"
+  },
+  "caption": {
+    "tr": "Ağaçların altına kurulmuş uzun ahşap banklar. Arkalarındaki korkuluk çapraz desenli, banklar kalın ahşap ayaklar üzerinde.",
+    "en": "Long timber benches set up under the trees, backed by a cross-pattern railing and standing on sturdy timber legs."
+  },
+  "seoFilename": "agac-alti-ahsap-bank-capraz-korkuluk",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "ağaç altı",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

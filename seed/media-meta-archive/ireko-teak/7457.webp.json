@@ -1,0 +1,36 @@
+{
+  "source": "Ireko-Teak/7457.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Cephede yatay ahşap çıta kaplama",
+    "en": "Horizontal timber slat cladding on a facade"
+  },
+  "alt": {
+    "tr": "Beyaz cephede, pencerenin çevresini saran yatay ahşap çıta kaplama",
+    "en": "Horizontal timber slat cladding wrapping around a window on a white facade"
+  },
+  "caption": {
+    "tr": "Cephede pencere boşluğunun etrafından dolaşan yatay ahşap çıtalar. Çıtalar arasında eşit aralık bırakılmış.",
+    "en": "Horizontal timber slats wrapping around the window opening on the facade, with even gaps between them."
+  },
+  "seoFilename": "beyaz-cephede-yatay-ahsap-cita-kaplama",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "cephe",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished",
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

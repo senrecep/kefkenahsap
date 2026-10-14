@@ -1,0 +1,36 @@
+{
+  "source": "Ireko-Teak/13419.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Taş duvar önünde parlak ahşap bank",
+    "en": "Glossy timber bench against a stone wall"
+  },
+  "alt": {
+    "tr": "Taş duvarın önünde, sırtlıklı ve parlak yüzeyli ahşap oturma bankının köşesi",
+    "en": "Corner of a glossy timber bench with a backrest, set against a stone wall"
+  },
+  "caption": {
+    "tr": "Bankın pahlı köşesine yakından bakış. Tahtaların farklı tonları parlak yüzeyde belirgin.",
+    "en": "A close look at the bench's chamfered corner, where the varied tones of the boards show through the glossy finish."
+  },
+  "seoFilename": "tas-duvar-onunde-parlak-ahsap-bank-kose-detay",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "avlu",
+      "dış mekân"
+    ],
+    "finish": [
+      "parlak yüzey"
+    ],
+    "stage": [
+      "detail",
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}
