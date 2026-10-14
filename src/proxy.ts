@@ -25,9 +25,10 @@ export default function proxy(req: NextRequest) {
   if (!isLocalized) {
     const key = pageKey(pathname)
     // Old WP pages land on their TR page in a single hop (trailing slash handled here, not by Next).
-    if (key && LEGACY_PAGES.has(key)) return NextResponse.redirect(new URL(`/tr/${key}`, req.url), 301)
+    if (key && LEGACY_PAGES.has(key))
+      return NextResponse.redirect(new URL(`/tr/${key}${req.nextUrl.search}`, req.url), 301)
   } else if (pathname.length > 1 && pathname.endsWith('/')) {
-    return NextResponse.redirect(new URL(pathname.replace(/\/+$/, ''), req.url), 308)
+    return NextResponse.redirect(new URL(pathname.replace(/\/+$/, '') + req.nextUrl.search, req.url), 308)
   }
 
   return intl(req)

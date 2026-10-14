@@ -15,7 +15,8 @@ import { ar } from '@payloadcms/translations/languages/ar'
 import { routing } from './i18n/routing'
 import { migrations } from './migrations'
 
-if (!process.env.PAYLOAD_SECRET) throw new Error('PAYLOAD_SECRET is not set')
+for (const key of ['PAYLOAD_SECRET', 'DATABASE_URL', 'MEDIA_PUBLIC_URL'])
+  if (!process.env[key]) throw new Error(`${key} is not set`)
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -28,7 +29,21 @@ export default buildConfig({
     },
   },
   collections: [Users, Media, Categories],
-  endpoints: [{ path: '/health', method: 'get', handler: () => Response.json({ ok: true }) }],
+  endpoints: [
+    {
+      // Liveness + DB reachability for the container healthcheck.
+      path: '/health',
+      method: 'get',
+      handler: async ({ payload }) => {
+        try {
+          await payload.count({ collection: 'users' })
+          return Response.json({ ok: true })
+        } catch {
+          return Response.json({ ok: false }, { status: 503 })
+        }
+      },
+    },
+  ],
   i18n: { supportedLanguages: { tr, en, ar }, fallbackLanguage: 'tr' },
   localization: {
     locales: [...routing.locales],
@@ -36,20 +51,12 @@ export default buildConfig({
     fallback: false,
   },
   jobs: {
-    tasks: [
-      {
-        slug: 'heartbeat',
-        schedule: [{ cron: '* * * * *', queue: 'default' }],
-        handler: async ({ req }) => {
-          req.payload.logger.info('jobs heartbeat')
-          return { output: {} }
-        },
-      },
-    ],
+    tasks: [],
+    // Runs queued jobs (AI tagging, retention, purge) every minute; tasks are added per feature.
     autoRun: [{ cron: '* * * * *', queue: 'default' }],
   },
   editor: lexicalEditor(),
-  secret: process.env.PAYLOAD_SECRET,
+  secret: process.env.PAYLOAD_SECRET as string, // checked at module load above
   typescript: {
     outputFile: path.resolve(dirname, 'payload-types.ts'),
   },

@@ -1,17 +1,26 @@
 // F0 spike verifications (#10 orderable join, #11 S3 + sizes, #12 per-locale slug uniqueness).
+import { mkdirSync } from 'fs'
+import os from 'os'
 import path from 'path'
 import { getPayload, type Payload } from 'payload'
+import sharp from 'sharp'
 import { afterAll, beforeAll, describe, expect, it } from 'vitest'
 
 import config from '@/payload.config'
 
-const DATA = path.resolve(__dirname, '../../../../kefken-data/Webiste/Deck ve Zeminler')
-const files = ['1-1.webp', '10.webp', '11.webp'].map((f) => path.join(DATA, f))
+const TMP = path.join(os.tmpdir(), 'kefken-spike')
+const files = ['a.webp', 'b.webp', 'c.webp'].map((f) => path.join(TMP, f))
 
 let payload: Payload
 const created: { media: (number | string)[]; categories: (number | string)[] } = { media: [], categories: [] }
 
 beforeAll(async () => {
+  mkdirSync(TMP, { recursive: true })
+  // 800×600 sources: smaller than the 960+ sizes, so withoutEnlargement is exercised.
+  for (const [i, f] of files.entries())
+    await sharp({ create: { width: 800, height: 600, channels: 3, background: { r: 120 + i * 40, g: 90, b: 60 } } })
+      .webp()
+      .toFile(f)
   payload = await getPayload({ config: await config })
 })
 
@@ -46,10 +55,17 @@ describe('spike #10: category → media join is orderable', () => {
       created.media.push(m.id)
       ids.push(m.id)
     }
-    const read = await payload.findByID({ collection: 'categories', id: cat.id, depth: 0 })
-    const joined = (read.media?.docs ?? []).map((d) => (typeof d === 'object' ? d.id : d))
+    const joinedIds = async () => {
+      const read = await payload.findByID({ collection: 'categories', id: cat.id, depth: 0 })
+      return (read.media?.docs ?? []).map((d) => (typeof d === 'object' ? d.id : d))
+    }
     // New documents are appended at the end, in insertion order.
-    expect(joined).toEqual(ids)
+    expect(await joinedIds()).toEqual(ids)
+    // Moving the last item before the first via its fractional key (what drag-and-drop writes) reorders the join.
+    const first = await payload.findByID({ collection: 'media', id: ids[0] })
+    expect(first._media_media_order).toBeTruthy()
+    await payload.update({ collection: 'media', id: ids[2], data: { _media_media_order: '0' } as never })
+    expect(await joinedIds()).toEqual([ids[2], ids[0], ids[1]])
   })
 })
 
@@ -71,7 +87,7 @@ describe('spike #12: localized slug uniqueness', () => {
     ).rejects.toThrow()
   })
 
-  it('reports whether a different document may reuse a slug in another locale', async () => {
+  it('allows a different document to reuse a slug in another locale', async () => {
     const slug = `capraz-${Date.now()}`
     const a = await payload.create({ collection: 'categories', locale: 'tr', data: { name: 'TR', slug } })
     created.categories.push(a.id)
@@ -79,8 +95,7 @@ describe('spike #12: localized slug uniqueness', () => {
       (d) => (created.categories.push(d.id), 'allowed'),
       () => 'rejected',
     )
-    // Recorded in docs/SPIKE.md; either way URLs stay unambiguous because the locale prefixes the path.
-    expect(['allowed', 'rejected']).toContain(b)
-    console.info(`[spike #12] cross-document, cross-locale slug reuse: ${b}`)
+    // The unique index is (slug, _locale); URLs stay unambiguous because the locale prefixes the path.
+    expect(b).toBe('allowed')
   })
 })

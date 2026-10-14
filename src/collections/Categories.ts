@@ -9,7 +9,8 @@ export const Categories: CollectionConfig = {
         `${process.env.NEXT_PUBLIC_SITE_URL}/${locale?.code ?? 'tr'}/${data?.slug ?? ''}?preview=1`,
     },
   },
-  access: { read: () => true },
+  // Drafts stay private: anonymous readers only see published documents.
+  access: { read: ({ req }) => (req.user ? true : { _status: { equals: 'published' } }) },
   orderable: true,
   versions: { drafts: true },
   fields: [

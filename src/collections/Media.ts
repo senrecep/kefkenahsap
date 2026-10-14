@@ -7,6 +7,7 @@ export const Media: CollectionConfig = {
   slug: 'media',
   access: { read: () => true },
   fields: [
+    // Optional at upload (AI fills it as a pending suggestion); publishing requires an approved alt (#22).
     { name: 'alt', type: 'text', localized: true },
     { name: 'category', type: 'relationship', relationTo: 'categories', index: true },
   ],
