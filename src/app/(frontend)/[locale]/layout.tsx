@@ -8,11 +8,13 @@ import localFont from 'next/font/local'
 import { Analytics } from '@/components/site/Analytics'
 import { Footer } from '@/components/site/Footer'
 import { Header } from '@/components/site/Header'
+import { JsonLd } from '@/components/seo/JsonLd'
 import { MobileActionBar } from '@/components/site/MobileActionBar'
 import { localeDir, routing, type Locale } from '@/i18n/routing'
 import { getSiteSettings } from '@/lib/data/site'
 import { ogLocale } from '@/lib/i18n/published'
 import { siteUrl } from '@/lib/seo/alternates'
+import { businessJsonLd, websiteJsonLd } from '@/lib/seo/jsonld'
 import { DEFAULT_OG_IMAGE } from '@/lib/seo/metadata'
 import './styles.css'
 
@@ -47,6 +49,10 @@ export default async function LocaleLayout({
   const { locale } = await params
   if (!hasLocale(routing.locales, locale)) notFound()
   setRequestLocale(locale)
+  // The business facts are the ones the footer shows on every page.
+  const settings = await getSiteSettings(locale)
+  const site = siteUrl().replace(/\/$/, '')
+  const home = `${site}/${locale}`
   return (
     <html lang={locale} dir={localeDir(locale)} className={`${montserrat.variable} ${sourceSans.variable}`}>
       <body className="min-h-dvh antialiased">
@@ -57,6 +63,12 @@ export default async function LocaleLayout({
           <Analytics locale={locale} />
           <Footer locale={locale as Locale} />
           <MobileActionBar locale={locale as Locale} />
+          <JsonLd
+            data={[
+              businessJsonLd(settings, { site, url: home, logo: `${site}/brand/logo.png`, image: `${site}${DEFAULT_OG_IMAGE.url}` }),
+              websiteJsonLd({ name: settings.companyName, site, url: home, locale }),
+            ]}
+          />
         </NextIntlClientProvider>
       </body>
     </html>

@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation'
 import { Maybe } from 'tsentials/maybe'
 
 import { ProjectCard } from '@/components/projects/ProjectCard'
+import { JsonLd } from '@/components/seo/JsonLd'
 import { Container } from '@/components/ui/Container'
 import { Picture } from '@/components/ui/Picture'
 import { WhatsAppButton } from '@/components/ui/WhatsAppButton'
@@ -12,10 +13,13 @@ import { buttonClass } from '@/components/ui/button'
 import { getPathname, Link } from '@/i18n/navigation'
 import { routing, type Locale } from '@/i18n/routing'
 import { getProject, getProjectCards } from '@/lib/data/projects'
+import { responsiveImage } from '@/lib/media/image'
 import { projectFacts } from '@/lib/projects/facts'
 import { safeDecode } from '@/lib/http/safe-decode'
 import { publicTestimonial } from '@/lib/projects/testimonial'
-import { buildAlternates, siteUrl } from '@/lib/seo/alternates'
+import { siteUrl } from '@/lib/seo/alternates'
+import { creativeWorkJsonLd } from '@/lib/seo/jsonld'
+import { pageMetadata } from '@/lib/seo/page-metadata'
 
 type Params = Promise<{ locale: Locale; slug: string }>
 
@@ -28,13 +32,10 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const data = await getProject(locale, safeDecode(slug))
   // notFound() here sets a real 404 status before the page body streams.
   if (!data) notFound()
+  // `slugs` holds only locales whose slug and title are both filled (dil-yayında).
   const paths = Object.fromEntries(routing.locales.map((l) => [l, data.slugs[l] ? projectPath(l, data.slugs[l]) : null]))
   const place = [data.project.district, data.project.city].filter(Boolean).join(', ')
-  return {
-    title: data.project.title,
-    description: place ? `${data.project.title} — ${place}` : undefined,
-    alternates: buildAlternates({ current: locale, paths, site: siteUrl() }),
-  }
+  return pageMetadata({ locale, title: data.project.title, description: place ? `${data.project.title} — ${place}` : undefined, paths, ownOgImage: true })
 }
 
 export default async function ProjectPage({ params }: { params: Params }) {
@@ -52,11 +53,23 @@ export default async function ProjectPage({ params }: { params: Params }) {
   const similar = cards.filter((c) => c.id !== project.id && c.categories.some((x) => catIds.has(x.id))).slice(0, 3)
   const hero = cover ?? gallery[0]
   const photos = gallery.filter((m) => m.id !== hero?.id)
-  const wa = { kind: 'project' as const, vars: { project: project.title, url: siteUrl() + projectPath(locale, slug) } }
+  const wa = { kind: 'project' as const, vars: { project: project.title, url: siteUrl().replace(/\/$/, '') + projectPath(locale, slug) } }
   const h2 = 'text-[1.6rem] leading-tight md:text-[2rem]'
+  const wood = facts.find((f) => f.key === 'wood')?.value
+  // Only what the page shows: title, the künye facts and the photos on the page.
+  const work = creativeWorkJsonLd({
+    site: siteUrl().replace(/\/$/, ''),
+    name: project.title,
+    url: wa.vars.url,
+    year: project.year,
+    place: [project.district, project.city],
+    materials: Array.isArray(wood) ? wood : [],
+    images: [hero, ...photos].filter((m) => m !== undefined).map((m) => ({ url: responsiveImage(m).src })),
+  })
 
   return (
     <>
+      <JsonLd data={work} />
       <Container as="header" className="pt-10 pb-8 md:pt-16 md:pb-10">
         <h1 className="max-w-[24ch] text-[2.1rem] leading-[1.08] md:text-[3.2rem]">{project.title}</h1>
       </Container>
