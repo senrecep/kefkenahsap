@@ -53,7 +53,7 @@ export async function seedSiteSettings(payload: Payload): Promise<string> {
         contact: 'Hello, I would like a quote.',
       },
       defaultDescription:
-        'Kefken Wood Decoration builds and installs timber decking, pergolas, gazebos, railings, stairs and outdoor woodwork from its workshop in Arnavutköy, Istanbul — and maintains and repairs them too.',
+        'Kefken Ahşap Dekorasyon builds and installs timber decking, pergolas, gazebos, railings, stairs and outdoor woodwork from its workshop in Arnavutköy, Istanbul — and maintains and repairs them too.',
     },
   })
   return 'site settings seeded'

@@ -40,7 +40,8 @@ const publishGate: CollectionBeforeChangeHook = async ({ data, req, originalDoc,
   if (req.locale === 'all') trAlt = (data.alt as Record<string, string> | undefined)?.tr
   else if (req.locale === 'tr') trAlt = data.alt ?? originalDoc?.alt
   if (trAlt === undefined && operation === 'update' && originalDoc?.id) {
-    const tr = await req.payload.findByID({ collection: 'media', id: originalDoc.id, locale: 'tr', depth: 0, req })
+    // No `req` here: Payload would switch req.locale to 'tr' and the rest of this write would land in the Turkish row.
+    const tr = await req.payload.findByID({ collection: 'media', id: originalDoc.id, locale: 'tr', depth: 0 })
     trAlt = tr.alt
   }
   const r = checkPublishable({ status, alt: { tr: trAlt ?? '' } })
