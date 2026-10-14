@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Bahçede Ahşap Deck Zemin",
-    "en": "Wooden Deck Floor in a Garden"
+    "tr": "Bahçede ahşap deck zemin",
+    "en": "Wooden deck floor in a garden"
   },
   "alt": {
     "tr": "Evin cam kapılı cephesinin önünde, çimenlik bahçeye döşenmiş kızıl kahverengi ahşap deck zemin",

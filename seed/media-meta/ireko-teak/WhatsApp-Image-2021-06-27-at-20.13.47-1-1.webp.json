@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Bahçede Deck Alt Konstrüksiyonu ve Tahta Döşeme",
-    "en": "Garden Deck Substructure and Board Installation"
+    "tr": "Bahçede deck alt konstrüksiyonu ve tahta döşeme",
+    "en": "Garden deck substructure and board installation"
   },
   "alt": {
     "tr": "Bahçede çakıl zemin üzerine kurulmuş ahşap alt konstrüksiyon, yanında döşenmiş deck tahtaları, arkada budanmış bir ağaç",

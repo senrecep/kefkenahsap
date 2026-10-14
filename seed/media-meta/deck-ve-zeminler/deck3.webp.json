@@ -4,8 +4,8 @@
   "model": "google/gemini-3.8-flash",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Bahçe Ahşap Deck ve Çiçeklik Uygulaması",
-    "en": "Garden Wooden Decking and Planter Installation"
+    "tr": "Bahçe ahşap deck ve çiçeklik uygulaması",
+    "en": "Garden wooden decking and planter installation"
   },
   "alt": {
     "tr": "Bahçede ahşap zemin kaplaması, masa sandalye takımı, ahşap saksılıklar ve taş adım taşları.",

@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Havuz Kenarı Deck Altyapısı",
-    "en": "Pool-Side Deck Substructure"
+    "tr": "Havuz kenarı deck altyapısı",
+    "en": "Pool-side deck substructure"
   },
   "alt": {
     "tr": "Bahçedeki havuzun yanında, çim alana komşu zeminde ahşap taşıyıcı çıtalar yan yana dizilmiş, deck döşemesi henüz yapılmamış",

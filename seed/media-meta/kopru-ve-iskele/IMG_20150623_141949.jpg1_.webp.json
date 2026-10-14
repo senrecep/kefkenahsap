@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Kavisli Ahşap Kiriş İmalatında Tutkallama",
-    "en": "Gluing Layers of a Curved Wooden Beam"
+    "tr": "Kavisli ahşap kiriş imalatında tutkallama",
+    "en": "Gluing layers of a curved wooden beam"
   },
   "alt": {
     "tr": "Kavisli bir ahşap yapının çıtalarının üzerine sürülmüş beyaz tutkal şeritleri, yanında OSB levha ve kapalı bir teras",

@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Bahçe Girişi İçin Ahşap Çit Kapısı",
-    "en": "Wooden Picket Garden Gate"
+    "tr": "Bahçe girişi için ahşap çit kapısı",
+    "en": "Wooden picket garden gate"
   },
   "alt": {
     "tr": "Yuvarlak başlı çıtalardan yapılmış açık renkli ahşap bahçe kapısı, iki yanında kalın direkler ve sarı menteşeler var",

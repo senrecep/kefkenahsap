@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Kemerli Ahşap Köprünün Yapım Aşaması",
-    "en": "Building an Arched Wooden Bridge"
+    "tr": "Kemerli ahşap köprünün yapım aşaması",
+    "en": "Building an arched wooden bridge"
   },
   "alt": {
     "tr": "Kapalı teras zemininde, OSB kalıp üzerine yapıştırılıp mengeneyle sıkıştırılan kavisli ahşap köprü kemeri",

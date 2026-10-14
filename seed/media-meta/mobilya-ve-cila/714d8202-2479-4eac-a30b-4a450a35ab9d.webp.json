@@ -4,16 +4,16 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Bronz Ayna Kaplı Koridor Duvarı",
-    "en": "Corridor Wall Clad in Bronze Mirror Panels"
+    "tr": "Bronz ayna kaplı koridor duvarı",
+    "en": "Corridor wall clad in bronze mirror panels"
   },
   "alt": {
     "tr": "Mermer zeminli koridorda bronz ayna panellerle kaplı duvar, yanında siyah çerçeveli kapılar ve parmak izi okuyucu",
     "en": "Corridor with marble floor and a wall of bronze mirror panels beside black-framed doors and a fingerprint reader"
   },
   "caption": {
-    "tr": "Koridor duvarında bronz ayna paneller ve koyu renk çerçeveli kapılar. Ahşap bu işte görünmüyor, kategori ile uyumu zayıf.",
-    "en": "Bronze mirror panels and dark-framed doors along a corridor wall. No wood is clearly visible, so the fit with the category is weak."
+    "tr": "Koridor duvarında bronz ayna paneller ve koyu renk çerçeveli kapılar.",
+    "en": "Bronze mirror panels and dark-framed doors along a corridor wall."
   },
   "seoFilename": "bronz-ayna-kapli-koridor-duvari",
   "tags": {

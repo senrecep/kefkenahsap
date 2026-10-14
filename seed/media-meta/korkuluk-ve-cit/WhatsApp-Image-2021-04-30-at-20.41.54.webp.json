@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Bahçe Önü Ahşap Çit",
-    "en": "Wooden Picket Fence at the Garden Front"
+    "tr": "Bahçe önü ahşap çit",
+    "en": "Wooden picket fence at the garden front"
   },
   "alt": {
     "tr": "Kamelya çiçekleri ve ağaçların arkasında, taş duvarın üzerine yapılmış açık renkli ahşap çıta çit",

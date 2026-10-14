@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Beyaz Raflı Ayakkabılık Dolabı",
-    "en": "White Shoe Cabinet with Open Shelves"
+    "tr": "Beyaz raflı ayakkabılık dolabı",
+    "en": "White shoe cabinet with open shelves"
   },
   "alt": {
     "tr": "Kapağı açık, içinde beş sıra beyaz rafı olan uzun ve dar beyaz dolap, kapak içinde menteşeler görünüyor",

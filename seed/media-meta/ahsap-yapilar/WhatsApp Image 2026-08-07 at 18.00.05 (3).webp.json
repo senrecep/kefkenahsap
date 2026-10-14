@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Bahçede Tek Eğimli Çatılı Ahşap Depo",
-    "en": "Wooden Garden Shed with a Single-Slope Roof"
+    "tr": "Bahçede tek eğimli çatılı ahşap depo",
+    "en": "Wooden garden shed with a single-slope roof"
   },
   "alt": {
     "tr": "Çakıl zeminli bahçede, ağaçların arasında koyu renk kaplamalı, tek eğimli çatılı ahşap depo ve çift kanatlı kapısı",

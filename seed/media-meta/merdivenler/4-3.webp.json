@@ -4,16 +4,16 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Bahçede Çapraz Korkuluklu Ahşap Platform",
-    "en": "Garden Wooden Platform with Cross-Pattern Railing"
+    "tr": "Bahçede çapraz korkuluklu ahşap platform",
+    "en": "Garden wooden platform with cross-pattern railing"
   },
   "alt": {
     "tr": "Çam ağaçları arasında çimenlik bahçede, çapraz çıtalı korkuluğu olan yerden yüksek ahşap platform; arkada bir villa görünüyor",
     "en": "Raised wooden platform with cross-pattern railing on a lawn among pine trees, with a villa in the background"
   },
   "caption": {
-    "tr": "Villa bahçesinde çam ağaçlarının arasına kurulmuş, X desenli korkuluğu olan ahşap platform. Fotoğrafta merdiven görünmüyor, platform ve korkuluk öne çıkıyor.",
-    "en": "A wooden platform with an X-pattern railing built among the pine trees of a villa garden. No staircase is visible; the platform and railing are the focus."
+    "tr": "Villa bahçesinde çam ağaçlarının arasına kurulmuş, X desenli korkuluğu olan ahşap platform.",
+    "en": "A wooden platform with an X-pattern railing built among the pine trees of a villa garden."
   },
   "seoFilename": "bahce-capraz-korkuluklu-ahsap-platform",
   "tags": {

@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Çürümüş Teras Kirişi ve Deck Söküm Aşaması",
-    "en": "Rotted Terrace Beam During Deck Repair"
+    "tr": "Çürümüş teras kirişi ve deck söküm aşaması",
+    "en": "Rotted terrace beam during deck repair"
   },
   "alt": {
     "tr": "Ahşap teras kenarında çürümüş, parçalanmış kiriş ucu; yanında talaşlı deck tahtaları, yuvarlak direk ve arkada ağaçlar",

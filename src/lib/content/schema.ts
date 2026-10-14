@@ -4,6 +4,8 @@ import { safeJsonParse } from 'tsentials/json'
 import { Result } from 'tsentials/result'
 import { z } from 'zod'
 
+import { RESERVED_CATEGORY_SLUGS } from '@/lib/slug'
+
 const text = z.string().trim().min(1)
 
 const categoryLocale = z.object({
@@ -48,6 +50,27 @@ export const parsePage = parseWith(pageSchema)
 export const parseGuide = parseWith(guideSchema)
 export const parseReferences = parseWith(referencesSchema)
 export const parseProjectStories = parseWith(projectStoriesSchema)
+
+// #138: one-locale overlays for the locales beyond TR/EN (seed/i18n/<locale>/…, same tree as seed/). A category also
+// carries its name and slug there (TR/EN come from src/seed/categories.ts).
+const slug = text.regex(/^[a-z0-9]+(-[a-z0-9]+)*$/, 'lowercase ASCII words joined by single dashes')
+export const parseCategoryOverlay = parseWith(
+  categoryLocale.extend({ name: text, slug: slug.refine((s) => !RESERVED_CATEGORY_SLUGS.has(s), 'a fixed route segment of the site') }),
+)
+export const parseGuideOverlay = parseWith(guideLocale.extend({ slug }))
+export const parsePageOverlay = parseWith(pageLocale.extend({ slug }))
+export const parseProjectStoriesOverlay = parseWith(z.record(z.string(), z.object({ title: text, story: text })))
+/** reference name (never translated) → location */
+export const parseReferencesOverlay = parseWith(z.record(z.string(), text))
+// alt ≤ 125 = Media.alt maxLength, so a long one fails here and not halfway through a run.
+export const parseMediaMetaOverlay = parseWith(z.object({ title: text, alt: text.max(125), caption: text }))
+const change = z.object({ old: text, new: text })
+const localeChange = z.object({ tr: change.optional(), en: change.optional() })
+/** seed/i18n/sentence-case.json: path under seed/ → the seeded title and its sentence-case form, per locale. */
+export const parseSentenceCase = parseWith(z.record(z.string(), localeChange))
+/** seed/i18n/text-fixes.json: path under seed/ → field → per-locale { old, new } (e.g. a caption with model commentary). */
+export const parseTextFixes = parseWith(z.record(z.string(), z.object({ title: localeChange.optional(), caption: localeChange.optional() })))
+export type TextFixes = Record<string, { title?: z.infer<typeof localeChange>; caption?: z.infer<typeof localeChange> }>
 
 /** Words in a markdown text, ignoring heading/list/emphasis markers. */
 export const wordCount = (md: string): number => md.replace(/^\s*[-*]\s+/gm, ' ').replace(/[#*_>`]+/g, ' ').split(/\s+/).filter((w) => /\p{L}|\p{N}/u.test(w)).length

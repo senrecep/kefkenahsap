@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Bahçe Yolunda Ahşap Pergola",
-    "en": "Wooden Pergola over a Garden Path"
+    "tr": "Bahçe yolunda ahşap pergola",
+    "en": "Wooden pergola over a garden path"
   },
   "alt": {
     "tr": "Taş döşeli bahçe yolunun üzerinde, yeşilimsi emprenyeli ahşaptan yapılmış, yan korkuluklu ve kirişli pergola",

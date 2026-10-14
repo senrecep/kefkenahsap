@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Bahçede Ahşap Aletlik",
-    "en": "Wooden Garden Tool Shed"
+    "tr": "Bahçede ahşap aletlik",
+    "en": "Wooden garden tool shed"
   },
   "alt": {
     "tr": "Çim bir bahçede, ağaçların arasında duran, kahverengi vernikli yatay ahşap kaplamalı küçük aletlik ve çift kanatlı kapısı",

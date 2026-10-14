@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Çelik Konstrüksiyon Üzerine Ahşap Deck Montajı",
-    "en": "Wood Deck Installation on a Steel Frame"
+    "tr": "Çelik konstrüksiyon üzerine ahşap deck montajı",
+    "en": "Wood deck installation on a steel frame"
   },
   "alt": {
     "tr": "Bahçede kırmızı çelik iskelet üzerine döşenen ahşap deck; bir kısmı tahtalı, bir kısmı alt konstrüksiyon açıkta",

@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Bahçe Deck Alt Konstrüksiyonu",
-    "en": "Garden Deck Substructure"
+    "tr": "Bahçe deck alt konstrüksiyonu",
+    "en": "Garden deck substructure"
   },
   "alt": {
     "tr": "Bahçede toprak zemin üzerine ahşap ayaklar ve kirişlerle kurulmuş deck iskeleti, kirişlerin yanında ip ve kablo duruyor",

@@ -4,8 +4,8 @@
   "model": "google/gemini-3.8-flash",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Bahçe İçi Ahşap Otopark Sundurması",
-    "en": "Timber Gable Roof Carport"
+    "tr": "Bahçe içi ahşap otopark sundurması",
+    "en": "Timber gable roof carport"
   },
   "alt": {
     "tr": "Bahçede park halindeki aracın üzerini örten beşik çatılı masif ahşap otopark sundurması.",

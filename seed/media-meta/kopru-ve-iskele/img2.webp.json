@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Kavisli Ahşap Köprü İskeleti Montajı",
-    "en": "Curved Timber Bridge Frame Under Assembly"
+    "tr": "Kavisli ahşap köprü iskeleti montajı",
+    "en": "Curved timber bridge frame under assembly"
   },
   "alt": {
     "tr": "Kavisli lamine ahşap kirişler, diagonal destekler ve dikey direkler; arkada ağaçlar ve yürüyüş yolu görünüyor.",

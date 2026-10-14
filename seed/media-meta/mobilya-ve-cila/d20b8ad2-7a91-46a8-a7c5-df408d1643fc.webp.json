@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Toplantı Odası İçin Ahşap Masa",
-    "en": "Wooden Table for a Meeting Room"
+    "tr": "Toplantı odası için ahşap masa",
+    "en": "Wooden table for a meeting room"
   },
   "alt": {
     "tr": "Toplantı odasında bal rengi uzun ahşap masa, etrafında gri sandalyeler, arkada pencere ve tavanda projeksiyon cihazı",

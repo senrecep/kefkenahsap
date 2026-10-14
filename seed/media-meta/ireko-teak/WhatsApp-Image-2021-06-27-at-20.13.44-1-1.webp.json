@@ -4,8 +4,8 @@
   "model": "google/gemini-3.8-flash",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Bahçe İçin Ahşap Deck Platformu",
-    "en": "Wooden Garden Deck Platform"
+    "tr": "Bahçe için ahşap deck platformu",
+    "en": "Wooden garden deck platform"
   },
   "alt": {
     "tr": "Bahçede çim üzerine yerleştirilmiş kare ahşap deck zemin ve yanında beyaz silindir yastık.",

@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Ormanlık Arazide Kazıklı Ahşap Ev",
-    "en": "Wooden House on Posts in a Wooded Lot"
+    "tr": "Ormanlık arazide kazıklı ahşap ev",
+    "en": "Wooden house on posts in a wooded lot"
   },
   "alt": {
     "tr": "Çam ağaçları arasında ahşap kolonlar üzerinde duran, yatay kaplamalı ve panjurlu pencereleri olan tek katlı ahşap ev",

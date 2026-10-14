@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Ahşap Kulübenin Çimento Şaplı Zemini",
-    "en": "Cement Screed Floor Inside a Wooden Shed"
+    "tr": "Ahşap kulübenin çimento şaplı zemini",
+    "en": "Cement screed floor inside a wooden shed"
   },
   "alt": {
     "tr": "Çimento şapı dökülmüş ahşap kulübe zemini, arkada lambri kaplı duvar ve önünde çim zemin",

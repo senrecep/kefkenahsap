@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Eğimli Arazide Beton Ayaklı Ahşap Platform Altyapısı",
-    "en": "Timber Platform Substructure on Concrete Footings, Sloped Site"
+    "tr": "Eğimli arazide beton ayaklı ahşap platform altyapısı",
+    "en": "Timber platform substructure on concrete footings, sloped site"
   },
   "alt": {
     "tr": "Eğimli arazide beton temel ayakları üzerine kurulmuş ahşap kiriş iskeleti, arkada dikme sırası ve deniz kenarında yerleşim",

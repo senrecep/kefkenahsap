@@ -2,17 +2,7 @@ import type { CollectionConfig } from 'payload'
 
 import { isStaff, publishedOrStaff } from '@/access'
 import { slugFrom, validSlug } from '@/hooks/slug'
-import { routing } from '@/i18n/routing'
-
-// Fixed route segments (TR internal + translated public paths): a category slug may not shadow them.
-const RESERVED = new Set([
-  ...Object.entries(routing.pathnames)
-    .flatMap(([internal, p]) => [internal, ...(typeof p === 'string' ? [] : Object.values(p))].map((x) => x.split('/')[1]!))
-    .filter((seg) => seg && !seg.startsWith('[')), // '/' and dynamic segments are not reserved words
-  'admin',
-  'api',
-  'wp-content',
-])
+import { RESERVED_CATEGORY_SLUGS } from '@/lib/slug'
 import { revalidateAfterChange, revalidateAfterDelete } from '@/hooks/revalidate'
 import { aiTranslateField } from './aiFields'
 
@@ -42,7 +32,7 @@ export const Categories: CollectionConfig = {
       unique: true,
       index: true,
       hooks: { beforeValidate: [slugFrom('name')] },
-      validate: (v: unknown) => (typeof v === 'string' && RESERVED.has(v) ? 'Bu adres sitede başka bir sayfaya ait; farklı bir slug seçin.' : validSlug(v)),
+      validate: (v: unknown) => (typeof v === 'string' && RESERVED_CATEGORY_SLUGS.has(v) ? 'Bu adres sitede başka bir sayfaya ait; farklı bir slug seçin.' : validSlug(v)),
       admin: { position: 'sidebar', description: 'Boş bırakılırsa addan üretilir.' },
     },
     { name: 'shortDesc', type: 'textarea', localized: true, label: 'Kısa açıklama (cevap-önce giriş)' },

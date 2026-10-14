@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Sekizgen Kamelya Tavanı ve Kiriş Detayı",
-    "en": "Octagonal Gazebo Ceiling and Rafter Detail"
+    "tr": "Sekizgen kamelya tavanı ve kiriş detayı",
+    "en": "Octagonal gazebo ceiling and rafter detail"
   },
   "alt": {
     "tr": "Sekizgen kamelyanın içinden görünen, ortadaki direkten yıldız gibi açılan kirişler ve tahta kaplı ahşap tavan",

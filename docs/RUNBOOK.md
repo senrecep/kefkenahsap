@@ -73,6 +73,26 @@ bun run payload run scripts/media/add-sizes.ts -- --yes       # ~2.5 min for 568
 
 Check the printed host, bucket and endpoint before adding `--yes`. Run it after the deploy that carries the migration; until then, pages simply use the existing sizes.
 
+### Loading translations
+
+Translations for the locales other than TR/EN live in `seed/i18n/<locale>/`, which mirrors `seed/` (`content/**`, `media-meta/**`, `media-meta-archive/**`). TR/EN text fixes for the seeded photos live in `seed/i18n/sentence-case.json` (titles) and `seed/i18n/text-fixes.json` (any field, e.g. captions). The loaders fill only empty fields and skip missing files. A re-run writes nothing.
+- Categories, guides, pages and project stories (drafts only) land as **new drafts**.
+- **Publishing a document in any locale also publishes its seeded drafts in every locale.** Payload's `_status` covers the whole document (`localizeStatus` is off). Review ru/de/ar too, or roll the draft back, before publishing.
+- Reference locations and photo texts have no drafts, so they are live as soon as they are written. `media-locales` never changes a photo's `status`, so pending archive photos stay pending.
+- `media-text-fixes` changes a TR/EN field only while it is still exactly the seeded text. Owner edits are kept.
+- `content.ts` checks the overlay slugs before writing. A slug used twice in a locale, or already used by another document, stops the run and names the file.
+- Every script prints `host:port/database` first and refuses `SITE_ENV=production`. A non-local host needs `--yes`. A tunnelled DB reads as `localhost`, so check the database name and run `--dry-run` first where there is one.
+- `media-locales` and `media-text-fixes` carry on past a failing photo, list its seedKey, and exit 1.
+
+```bash
+bun run payload run scripts/seed/content.ts            # categories, pages, guides, reference locations
+bun run payload run scripts/seed/project-stories.ts    # draft projects: title + story
+bun run payload run scripts/seed/media-locales.ts -- --dry-run && bun run payload run scripts/seed/media-locales.ts
+bun run payload run scripts/seed/media-text-fixes.ts -- --dry-run && bun run payload run scripts/seed/media-text-fixes.ts
+```
+
+Run these after `seed.ts` and `archive.ts`, and pass flags after `--` (e.g. `-- --yes`). `--force` on the first two overwrites with the committed text, as new drafts. `media-text-fixes.ts -- --seed-files` rewrites the committed `seed/media-meta*` JSONs instead of the DB.
+
 ## Observability
 
 ### GlitchTip (errors)

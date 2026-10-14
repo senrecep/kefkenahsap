@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Bahçeye Açılan Ahşap Çerçeveli Cam Kapalı Alan",
-    "en": "Glass Enclosed Garden Room with Wooden Frame"
+    "tr": "Bahçeye açılan ahşap çerçeveli cam kapalı alan",
+    "en": "Glass enclosed garden room with wooden frame"
   },
   "alt": {
     "tr": "Bahçede ahşap kirişli, geniş cam yüzeyli ve koyu renk kapılı cam kapalı alan; önünde taş döşeli zemin var",

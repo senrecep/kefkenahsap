@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Atölyede Yuvarlak Masa Tablası",
-    "en": "Round Table Top in the Workshop"
+    "tr": "Atölyede yuvarlak masa tablası",
+    "en": "Round table top in the workshop"
   },
   "alt": {
     "tr": "Atölyede, beyaz örtüyle kısmen sarılı, açık renkli yuvarlak masa tablası; arkada duvarda asılı el aletleri ve sandalyeler",

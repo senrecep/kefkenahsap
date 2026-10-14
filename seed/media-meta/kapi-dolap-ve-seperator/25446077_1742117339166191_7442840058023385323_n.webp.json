@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Ahşap Jaluzi Panel",
-    "en": "Wooden Louvered Panel"
+    "tr": "Ahşap jaluzi panel",
+    "en": "Wooden louvered panel"
   },
   "alt": {
     "tr": "Atölyede yere dayalı, geniş çerçeveli ve yatay jaluzi çıtalı işlenmemiş açık renkli ahşap panel",

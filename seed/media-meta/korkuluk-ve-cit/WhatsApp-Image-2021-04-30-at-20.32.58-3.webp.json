@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Bahçe Sınırında Ahşap Çit",
-    "en": "Wooden Picket Fence Along a Garden Edge"
+    "tr": "Bahçe sınırında ahşap çit",
+    "en": "Wooden picket fence along a garden edge"
   },
   "alt": {
     "tr": "Çim bahçenin kenarında uzanan, uçları yuvarlatılmış dikey tahtalardan yapılmış açık renkli ahşap çit",

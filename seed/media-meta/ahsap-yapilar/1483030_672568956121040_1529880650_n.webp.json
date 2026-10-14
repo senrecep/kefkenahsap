@@ -4,8 +4,8 @@
   "model": "google/gemini-3.8-flash",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Bahçe İçi Müstakil Ahşap Ev",
-    "en": "Freestanding Wooden Garden Cabin"
+    "tr": "Bahçe içi müstakil ahşap ev",
+    "en": "Freestanding wooden garden cabin"
   },
   "alt": {
     "tr": "Taş subasman üzerine inşa edilmiş kiremit çatılı ahşap bahçe evi.",

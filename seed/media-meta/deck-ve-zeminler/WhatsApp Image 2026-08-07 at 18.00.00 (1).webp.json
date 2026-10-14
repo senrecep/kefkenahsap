@@ -4,8 +4,8 @@
   "model": "google/gemini-3.8-flash",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Bahçe Ahşap Deck ve Oturma Alanı Uygulaması",
-    "en": "Garden Wooden Deck and Integrated Bench Seating"
+    "tr": "Bahçe ahşap deck ve oturma alanı uygulaması",
+    "en": "Garden wooden deck and integrated bench seating"
   },
   "alt": {
     "tr": "Bahçe içinde çim ve çalıların kenarına döşenmiş ahşap deck, korkuluk ve ahşap basamak oturma alanı.",

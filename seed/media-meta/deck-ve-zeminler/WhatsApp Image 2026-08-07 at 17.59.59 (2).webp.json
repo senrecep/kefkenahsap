@@ -4,8 +4,8 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Havuz Kenarı Ahşap Deck ve Basamaklar",
-    "en": "Wooden Pool Deck with Steps"
+    "tr": "Havuz kenarı ahşap deck ve basamaklar",
+    "en": "Wooden pool deck with steps"
   },
   "alt": {
     "tr": "Havuzun çevresini saran bal rengi ahşap deck, basamaklar, korkuluk ve ortasında bodur çalılarla küçük bir ağaç bulunan bahçe",

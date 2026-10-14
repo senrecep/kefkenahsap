@@ -4,6 +4,7 @@ import type { Block, CollectionConfig } from 'payload'
 import { isStaff, publishedOrStaff } from '@/access'
 import { slugFrom, validSlug } from '@/hooks/slug'
 import { revalidateAfterChange, revalidateAfterDelete } from '@/hooks/revalidate'
+import { type Locale, routing } from '@/i18n/routing'
 import { aiDraftField, aiTranslateField } from './aiFields'
 
 // #60: the 3D wood samples, placed by the editor anywhere in a guide body. Fixed content, so no fields; the page
@@ -34,7 +35,8 @@ export const Guides: CollectionConfig = {
     livePreview: {
       url: ({ data, locale }) => {
         const code = locale?.code ?? 'tr'
-        return `${process.env.NEXT_PUBLIC_SITE_URL}/${code}/${code === 'tr' ? 'rehber' : 'guides'}/${data?.slug ?? ''}?preview=1`
+        const segment = routing.pathnames['/rehber'][code as Locale] ?? '/rehber'
+        return `${process.env.NEXT_PUBLIC_SITE_URL}/${code}${segment}/${data?.slug ?? ''}?preview=1`
       },
     },
   },
