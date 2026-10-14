@@ -1,5 +1,11 @@
 import type { Instrumentation } from 'next'
 
+/** Boot check: a deployed image (SITE_ENV) never uses the AI fake, even if AI_FAKE_PROVIDER leaked into its env. */
+export function register() {
+  if (process.env.AI_FAKE_PROVIDER === '1' && process.env.SITE_ENV)
+    console.warn(`[ai] AI_FAKE_PROVIDER=1 is ignored because SITE_ENV=${process.env.SITE_ENV}: AI tasks use OpenRouter. Remove AI_FAKE_PROVIDER from this environment.`)
+}
+
 let report: ((err: unknown, req: { path: string; method: string }, route: string) => boolean) | undefined
 
 /**

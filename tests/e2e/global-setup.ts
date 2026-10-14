@@ -12,6 +12,12 @@ import config from '../../src/payload.config.js'
 const COUNT = PAGE_SIZE * 2 + 1 // enough for "page 2" plus a next cursor
 
 export default async function globalSetup() {
+  // AI buttons cost money: never run the suite against a server that would call OpenRouter (e.g. a reused dev server
+  // started without AI_FAKE_PROVIDER=1, or one with SITE_ENV set).
+  const base = `http://localhost:${process.env.E2E_PORT ?? 3000}`
+  const health = (await fetch(`${base}/api/health`).then((r) => r.json()).catch(() => null)) as { ai?: string } | null
+  if (health?.ai !== 'fake') throw new Error(`E2E aborted: ${base} is not in AI fake mode (got ${JSON.stringify(health)}). Start it with AI_FAKE_PROVIDER=1 and no SITE_ENV.`)
+
   const payload = await getPayload({ config })
   const approved = await payload.count({ collection: 'media', where: { status: { equals: 'approved' } } })
   if (approved.totalDocs >= COUNT) return
