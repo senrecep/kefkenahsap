@@ -138,6 +138,17 @@ describe('review follow-ups', () => {
     expect(ok.status).toBe('approved')
   })
 
+  it('an English edit of an approved image never overwrites the Turkish text', async () => {
+    const m = await payload.create({ collection: 'media', locale: 'tr', data: { alt: 'Türkçe alt', title: 'Türkçe başlık', caption: 'Türkçe açıklama', status: 'approved' }, filePath: IMG })
+    cleanup.push({ collection: 'media', id: m.id })
+    await payload.update({ collection: 'media', id: m.id, locale: 'en', data: { title: 'English title', alt: 'English alt', caption: 'English caption' } })
+    type Localized = Record<'title' | 'alt' | 'caption', Record<string, string>>
+    const all = (await payload.findByID({ collection: 'media', id: m.id, locale: 'all' as never, depth: 0 })) as unknown as Localized
+    expect(all.title).toEqual({ tr: 'Türkçe başlık', en: 'English title' })
+    expect(all.alt).toEqual({ tr: 'Türkçe alt', en: 'English alt' })
+    expect(all.caption).toEqual({ tr: 'Türkçe açıklama', en: 'English caption' })
+  })
+
   it('locale "all" cannot approve while blanking the Turkish alt', async () => {
     const m = await payload.create({ collection: 'media', locale: 'tr', data: { alt: 'Var' }, filePath: IMG })
     cleanup.push({ collection: 'media', id: m.id })

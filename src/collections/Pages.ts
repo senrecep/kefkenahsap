@@ -1,6 +1,6 @@
 import type { CollectionConfig } from 'payload'
 
-import { isStaff, publishedOrStaff } from '@/access'
+import { hiddenFromEditor, isStaff, publishedOrStaff } from '@/access'
 import { slugFrom } from '@/hooks/slug'
 import { revalidateAfterChange, revalidateAfterDelete } from '@/hooks/revalidate'
 
@@ -9,6 +9,7 @@ export const Pages: CollectionConfig = {
   slug: 'pages',
   labels: { singular: 'Sayfa', plural: 'Sayfalar' },
   admin: {
+    hidden: hiddenFromEditor,
     useAsTitle: 'title',
     group: 'İçerik',
     livePreview: {

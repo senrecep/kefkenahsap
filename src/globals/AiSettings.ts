@@ -1,6 +1,6 @@
 import type { GlobalConfig } from 'payload'
 
-import { isAdmin } from '@/access'
+import { hiddenFromEditor, isAdmin } from '@/access'
 
 const chain = (name: string, label: string) => ({
   name,
@@ -13,7 +13,7 @@ const chain = (name: string, label: string) => ({
 export const AiSettings: GlobalConfig = {
   slug: 'aiSettings',
   label: 'AI Ayarları',
-  admin: { group: 'Yönetim' },
+  admin: { hidden: hiddenFromEditor, group: 'Yönetim' },
   access: { read: isAdmin, update: isAdmin },
   fields: [
     { name: 'enabled', type: 'checkbox', defaultValue: true, label: 'Yeni yüklemelerde otomatik öneri üret' },

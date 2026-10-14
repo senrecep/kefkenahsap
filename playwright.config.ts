@@ -11,6 +11,8 @@ import 'dotenv/config'
  */
 export default defineConfig({
   testDir: './tests/e2e',
+  // Seeds photos into an empty DB (CI) before any page is rendered and cached.
+  globalSetup: './tests/e2e/global-setup.ts',
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
   /* Retry on CI only */
@@ -40,6 +42,7 @@ export default defineConfig({
     timeout: 180_000,
     // Locally reuse a running `bun dev`; in CI always start our own server on the probed free port.
     reuseExistingServer: !process.env.CI,
-    url: `http://localhost:${process.env.E2E_PORT ?? 3000}`,
+    // A static file: the readiness probe must not render (and cache) a data page before globalSetup seeds.
+    url: `http://localhost:${process.env.E2E_PORT ?? 3000}/brand/logo.png`,
   },
 })

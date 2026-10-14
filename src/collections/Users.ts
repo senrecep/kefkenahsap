@@ -2,7 +2,7 @@ import { type CollectionBeforeChangeHook, type CollectionConfig } from 'payload'
 
 import { publicError } from '@/lib/http/public-error'
 
-import { adminOrSelf, isAdmin, isAdminField } from '@/access'
+import { adminOrSelf, hiddenFromEditor, isAdmin, isAdminField } from '@/access'
 
 /** First account (created without a logged-in user, i.e. first-register) is the owner → admin. */
 const firstUserIsAdmin: CollectionBeforeChangeHook = async ({ data, operation, req }) => {
@@ -25,7 +25,7 @@ const keepOneAdmin: CollectionBeforeChangeHook = async ({ data, operation, origi
 
 export const Users: CollectionConfig = {
   slug: 'users',
-  admin: { useAsTitle: 'name', defaultColumns: ['name', 'email', 'role'], group: 'Yönetim' },
+  admin: { hidden: hiddenFromEditor, useAsTitle: 'name', defaultColumns: ['name', 'email', 'role'], group: 'Yönetim' },
   auth: { maxLoginAttempts: 8, lockTime: 15 * 60 * 1000 },
   hooks: { beforeChange: [firstUserIsAdmin, keepOneAdmin] },
   access: {

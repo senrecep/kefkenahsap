@@ -4,6 +4,7 @@
 import { copyFileSync, existsSync, mkdtempSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import os from 'node:os'
 import path from 'node:path'
+import { createHash } from 'node:crypto'
 import { getPayload } from 'payload'
 import sharp from 'sharp'
 
@@ -52,7 +53,8 @@ const seededSlugs = new Set(SEED_CATEGORIES.map((c) => c.slug.tr))
 const payload = await getPayload({ config: await config })
 console.log(await seedSiteSettings(payload))
 console.log(await seedReferences(payload))
-const ctx = { skipAi: true }
+// A fresh context per call: Payload keeps per-operation state in it, and a shared object made every upload reuse the first file.
+const ctx = () => ({ skipAi: true })
 const tmp = mkdtempSync(path.join(os.tmpdir(), 'kefken-seed-'))
 
 const mediaMap: Record<string, { file: string; category: string }> = {}
@@ -60,6 +62,7 @@ const attachmentMap: Record<string, { file: string; category: string }> = {}
 // Names already taken in the DB (earlier or partial runs), so a new upload never collides.
 const existingMedia = await payload.find({ collection: 'media', limit: 0, pagination: false, depth: 0, select: { seoFilename: true } })
 const usedNames = new Set(existingMedia.docs.map((d) => d.seoFilename).filter(Boolean) as string[])
+const servedDigests = new Map<string, string>()
 let created = 0
 let skipped = 0
 
@@ -108,7 +111,7 @@ for (const [index, cat] of SEED_CATEGORIES.entries()) {
       const doc = await payload.create({
         collection: 'media',
         locale: 'tr',
-        context: ctx,
+        context: ctx(),
         filePath: upload,
         data: {
           seedKey,
@@ -128,17 +131,30 @@ for (const [index, cat] of SEED_CATEGORIES.entries()) {
         collection: 'media',
         id: doc.id,
         locale: 'en',
-        context: ctx,
+        context: ctx(),
         data: { title: meta.title.en, alt: meta.alt.en, caption: meta.caption.en },
       })
       stored = doc.filename ?? undefined
       // The redirect map derives the gallery slug from the file name.
       if (stored !== `${name}.webp`) throw new Error(`stored as ${stored}, expected ${name}.webp`)
+      // Guard against a silent storage mix-up (seen once: every original held the first photo's bytes).
+      // Originals are re-encoded on upload, so compare shape and uniqueness, not bytes.
+      const res = await fetch([process.env.MEDIA_PUBLIC_URL, process.env.S3_PREFIX, stored].filter(Boolean).join('/'))
+      if (!res.ok) throw new Error(`fetching stored ${stored} failed: ${res.status}`)
+      const served = Buffer.from(await res.arrayBuffer())
+      const got = await sharp(served).metadata()
+      const digest = createHash('md5').update(served).digest('hex')
+      const source = createHash('md5').update(readFileSync(upload)).digest('hex')
+      // The same photo can sit in two categories, so a repeated digest is only wrong when the sources differ.
+      if (got.width !== width || got.height !== height || (servedDigests.get(digest) ?? source) !== source) {
+        throw new Error(`storage returned wrong bytes for ${stored}`)
+      }
+      servedDigests.set(digest, source)
       created++
     } else {
       skipped++
       if (!found.docs[0]!.title) {
-        await payload.update({ collection: 'media', id: found.docs[0]!.id, locale: 'en', context: ctx, data: { title: meta.title.en, alt: meta.alt.en, caption: meta.caption.en } })
+        await payload.update({ collection: 'media', id: found.docs[0]!.id, locale: 'en', context: ctx(), data: { title: meta.title.en, alt: meta.alt.en, caption: meta.caption.en } })
       }
     }
 

@@ -1,6 +1,6 @@
 import type { Block, GlobalConfig } from 'payload'
 
-import { isStaff } from '@/access'
+import { hiddenFromEditor, isStaff } from '@/access'
 import { revalidateGlobal } from '@/hooks/revalidate'
 
 const enabled = { name: 'enabled', type: 'checkbox' as const, defaultValue: true, label: 'Göster' }
@@ -46,7 +46,7 @@ const blocks: Block[] = [
 export const Homepage: GlobalConfig = {
   slug: 'homepage',
   label: 'Ana Sayfa',
-  admin: { group: 'İçerik' },
+  admin: { hidden: hiddenFromEditor, group: 'İçerik' },
   hooks: { afterChange: [revalidateGlobal('homepage')] },
   access: { read: () => true, update: isStaff },
   versions: { drafts: true },

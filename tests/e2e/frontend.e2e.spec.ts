@@ -1,5 +1,8 @@
 import { expect, test } from '@playwright/test'
 
+import en from '../../messages/en/home.json' with { type: 'json' }
+import tr from '../../messages/tr/home.json' with { type: 'json' }
+
 test.describe('Frontend smoke', () => {
   test('root redirects by Accept-Language: Turkish browser → /tr', async ({ browser }) => {
     const page = await (await browser.newContext({ locale: 'tr-TR' })).newPage()
@@ -16,9 +19,9 @@ test.describe('Frontend smoke', () => {
 
   test('each locale renders its own heading', async ({ page }) => {
     await page.goto('/tr')
-    await expect(page.locator('h1')).toHaveText('Kefken Ahşap Dekorasyon')
+    await expect(page.locator('h1')).toHaveText(tr.Home.heroTitle)
     await page.goto('/en')
     await expect(page.locator('html')).toHaveAttribute('lang', 'en')
-    await expect(page.locator('h1')).toHaveText('Kefken Wood Decoration')
+    await expect(page.locator('h1')).toHaveText(en.Home.heroTitle)
   })
 })

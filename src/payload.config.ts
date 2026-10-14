@@ -20,7 +20,7 @@ import { AiUsage } from './collections/AiUsage'
 import { AiSettings } from './globals/AiSettings'
 import { resendAdapter } from '@payloadcms/email-resend'
 import { redirectsPlugin } from '@payloadcms/plugin-redirects'
-import { isStaff } from './access'
+import { hiddenFromEditor, isStaff } from './access'
 import { SiteSettings } from './globals/SiteSettings'
 import { Homepage } from './globals/Homepage'
 import { Navigation } from './globals/Navigation'
@@ -40,6 +40,16 @@ const dirname = path.dirname(filename)
 export default buildConfig({
   admin: {
     user: Users.slug,
+    // #27: installable admin. Manifest is static (public/admin.webmanifest, scope /admin); no service worker (see PR).
+    meta: {
+      titleSuffix: '- Kefken Ahşap',
+      icons: [
+        { rel: 'icon', type: 'image/png', url: '/icon.png' },
+        { rel: 'apple-touch-icon', url: '/brand/apple-touch-icon.png' },
+      ],
+      manifest: '/admin.webmanifest',
+      other: { 'apple-mobile-web-app-capable': 'yes', 'mobile-web-app-capable': 'yes', 'theme-color': '#0b7a3e' },
+    },
     importMap: {
       baseDir: path.resolve(dirname),
     },
@@ -110,7 +120,7 @@ export default buildConfig({
       collections: ['pages', 'categories', 'projects'],
       redirectTypes: ['301', '302'],
       overrides: {
-        admin: { group: 'Yönetim' },
+        admin: { group: 'Yönetim', hidden: hiddenFromEditor },
         access: { read: () => true, create: isStaff, update: isStaff, delete: isStaff },
       },
     }),
