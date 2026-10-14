@@ -127,9 +127,15 @@ for (const [index, cat] of SEED_CATEGORIES.entries()) {
       usedNames.add(found.docs[0]!.seoFilename ?? '')
     }
 
-    if (wp && stored) {
-      mediaMap[`${uploadDir(wp.source_url)}/${fileKey(base(wp.source_url))}`] = { file: stored, category: cat.slug.tr }
-      attachmentMap[new URL(wp.link).pathname] = { file: stored, category: cat.slug.tr }
+    // Every WP upload of this photo (re-uploads live in other month folders) redirects to it,
+    // except copies attached to another category's page.
+    // shortcut: an unattached upload whose name exists in two categories goes to the first; fine for 11 categories.
+    for (const m of stored ? candidates : []) {
+      const owner = m.post ? pageSlugById.get(m.post) : undefined
+      if (owner && owner !== cat.slug.tr && SEED_CATEGORIES.some((c) => c.slug.tr === owner)) continue
+      const key = `${uploadDir(m.source_url)}/${fileKey(base(m.source_url))}`
+      mediaMap[key] ??= { file: stored!, category: cat.slug.tr }
+      attachmentMap[new URL(m.link).pathname] ??= { file: stored!, category: cat.slug.tr }
     }
   }
   console.log(`  ${cat.slug.tr}: ${ordered.length} images`)
