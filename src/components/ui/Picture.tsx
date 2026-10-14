@@ -8,14 +8,16 @@ type Props = {
   imgClassName?: string
   priority?: boolean
   maxWidth?: number
+  /** Smallest candidate for `media` (not `mobile`): for slots that crop with object-cover and so render wider than `sizes`. */
+  minWidth?: number
   alt?: string
   /** Art direction: shown below 768px instead of `media` (e.g. a portrait crop for the phone hero). */
   mobile?: MediaLike
 }
 
 /** CDN image with srcset, intrinsic size (no CLS) and a blurred LQIP/dominant-colour backdrop while loading. */
-export function Picture({ media, sizes, className = '', imgClassName = '', priority = false, maxWidth, alt, mobile }: Props) {
-  const img = responsiveImage(media, { maxWidth })
+export function Picture({ media, sizes, className = '', imgClassName = '', priority = false, maxWidth, minWidth, alt, mobile }: Props) {
+  const img = responsiveImage(media, { maxWidth, minWidth })
   const small = mobile ? responsiveImage(mobile, { maxWidth }) : undefined
   if (!img.src) return null
   const image = (
@@ -27,7 +29,7 @@ export function Picture({ media, sizes, className = '', imgClassName = '', prior
       height={img.height || undefined}
       alt={alt ?? img.alt}
       loading={priority ? 'eager' : 'lazy'}
-      decoding={priority ? 'sync' : 'async'}
+      decoding="async"
       fetchPriority={priority ? 'high' : undefined}
       className={`block h-full w-full object-cover ${imgClassName}`}
     />

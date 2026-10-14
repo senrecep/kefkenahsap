@@ -39,6 +39,8 @@
     -webkit-text-size-adjust: 100%;
     text-rendering: optimizeLegibility;
     scrollbar-color: var(--color-ink-soft) var(--color-mist);
+    /* The fonts stop at 600 (src/app/fonts/README.md): never fake a heavier weight. */
+    font-synthesis-weight: none;
   }
   body {
     font-size: 1.0625rem; /* 17px */
@@ -51,6 +53,8 @@
     letter-spacing: -0.015em;
     text-wrap: balance;
   }
+  /* Browser default is bold (700); the type system's emphasis weight is 600. */
+  strong, b, th { font-weight: 600; }
   p { text-wrap: pretty; }
   ::selection { background: var(--color-action); color: #fff; }
   /* Two-tone ring: white inner + ink outer. One of the two always holds ≥3:1 against any ground (paper, footer, photo, lightbox). */

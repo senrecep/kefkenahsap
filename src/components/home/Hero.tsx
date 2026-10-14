@@ -16,7 +16,9 @@ export async function Hero({ locale, image, mobileImage, heading, subheading, pr
     <section className="relative isolate flex h-[calc(100svh-4.5rem)] min-h-[30rem] items-end overflow-hidden bg-ink text-white md:h-[78vh] md:max-h-[56rem]">
       {image && (
         <div className="absolute inset-0 -z-10">
-          <Picture media={image} mobile={mobileImage ?? undefined} sizes="100vw" priority={priority} className="h-full !aspect-auto motion-safe:animate-settle" imgClassName="object-[50%_85%]" />
+          {/* A landscape photo covers the tall phone hero at ~1000 CSS px wide, more than sizes="100vw" says: never below
+              w960 (w800 was visibly softer, #129). A portrait `mobileImage` fits the box and is sized honestly. */}
+          <Picture media={image} mobile={mobileImage ?? undefined} sizes="100vw" minWidth={960} priority={priority} className="h-full !aspect-auto motion-safe:animate-settle" imgClassName="object-[50%_85%]" />
         </div>
       )}
       <div className="relative w-full">

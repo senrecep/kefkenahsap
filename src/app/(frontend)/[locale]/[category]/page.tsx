@@ -7,7 +7,7 @@ import { Maybe } from 'tsentials/maybe'
 import { ProjectCard } from '@/components/projects/ProjectCard'
 import { CtaBand } from '@/components/site/CtaBand'
 import { JsonLd } from '@/components/seo/JsonLd'
-import { Container } from '@/components/ui/Container'
+import { CONTAINER_SIZES, Container } from '@/components/ui/Container'
 import { Picture } from '@/components/ui/Picture'
 import { WhatsAppButton } from '@/components/ui/WhatsAppButton'
 import { buttonClass } from '@/components/ui/button'
@@ -104,7 +104,7 @@ export default async function CategoryPage({ params, searchParams }: { params: P
 
       {hero && (
         <Container className="mb-3 md:mb-4">
-          <Picture media={hero} sizes="(min-width: 1280px) 1232px, 100vw" priority className="aspect-[4/3]! rounded-[var(--radius-photo)] md:aspect-[21/9]!" />
+          <Picture media={hero} sizes={CONTAINER_SIZES} priority className="aspect-[4/3]! rounded-[var(--radius-photo)] md:aspect-[21/9]!" />
         </Container>
       )}
 
