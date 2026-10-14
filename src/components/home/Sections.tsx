@@ -5,6 +5,7 @@ import type { ReactNode } from 'react'
 import { GalleryFilters } from '@/components/gallery/GalleryFilters'
 import { GalleryGrid } from '@/components/gallery/GalleryGrid'
 import { buttonClass } from '@/components/ui/button'
+import { JsonLd } from '@/components/seo/JsonLd'
 import { Container } from '@/components/ui/Container'
 import { Picture } from '@/components/ui/Picture'
 import { WhatsAppButton } from '@/components/ui/WhatsAppButton'
@@ -14,6 +15,8 @@ import { telLink } from '@/lib/contact'
 import { getServiceTiles } from '@/lib/data/categories'
 import { getFeaturedImages, getFeaturedProjects, getReferences } from '@/lib/data/home'
 import { getNavCategories, getSiteSettings } from '@/lib/data/site'
+import { faqJsonLd } from '@/lib/seo/jsonld'
+import type { Media } from '@/payload-types'
 
 type Heading = { heading?: string | null }
 
@@ -212,6 +215,7 @@ export async function Faq({ heading, items }: Heading & { items?: { q: string; a
           </details>
         ))}
       </div>
+      <JsonLd data={faqJsonLd(items)} />
     </Section>
   )
 }

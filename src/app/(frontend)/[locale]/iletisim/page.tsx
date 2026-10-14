@@ -6,11 +6,11 @@ import { Container } from '@/components/ui/Container'
 import { buttonClass } from '@/components/ui/button'
 import { WhatsAppButton } from '@/components/ui/WhatsAppButton'
 import { getPathname } from '@/i18n/navigation'
-import { routing, type Locale } from '@/i18n/routing'
+import type { Locale } from '@/i18n/routing'
 import { directionsUrl, telLink, waLink } from '@/lib/contact'
 import { getNavCategories, getSiteSettings } from '@/lib/data/site'
 import { pickUtm } from '@/lib/leads/guard'
-import { buildAlternates, siteUrl } from '@/lib/seo/alternates'
+import { pageMetadata, staticPaths } from '@/lib/seo/page-metadata'
 
 import { ContactForm } from './ContactForm'
 
@@ -19,8 +19,8 @@ type Props = { params: Promise<{ locale: string }>; searchParams: Promise<Record
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'Contact' })
-  const paths = Object.fromEntries(routing.locales.map((l) => [l, getPathname({ locale: l, href: '/iletisim' })]))
-  return { title: t('metaTitle'), description: t('metaDescription'), alternates: buildAlternates({ current: locale, paths, site: siteUrl() }) }
+  // metaTitle already names the company, so it bypasses the layout's "| company" template.
+  return pageMetadata({ locale: locale as Locale, title: { absolute: t('metaTitle') }, description: t('metaDescription'), paths: staticPaths('/iletisim') })
 }
 
 export default async function ContactPage({ params, searchParams }: Props) {

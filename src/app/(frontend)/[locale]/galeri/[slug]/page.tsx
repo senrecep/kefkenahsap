@@ -3,13 +3,17 @@ import { getTranslations, setRequestLocale } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 
 import { GalleryGrid } from '@/components/gallery/GalleryGrid'
+import { JsonLd } from '@/components/seo/JsonLd'
 import { Container } from '@/components/ui/Container'
 import { Picture } from '@/components/ui/Picture'
 import { WhatsAppButton } from '@/components/ui/WhatsAppButton'
 import { getPathname } from '@/i18n/navigation'
 import { routing, type Locale } from '@/i18n/routing'
 import { getGalleryPage, getImage } from '@/lib/data/gallery'
+import { getSiteSettings } from '@/lib/data/site'
+import { responsiveImage } from '@/lib/media/image'
 import { siteUrl } from '@/lib/seo/alternates'
+import { breadcrumbJsonLd, imageObjectJsonLd } from '@/lib/seo/jsonld'
 import { pageMetadata } from '@/lib/seo/page-metadata'
 
 type Props = { params: Promise<{ locale: Locale; slug: string }> }
@@ -31,15 +35,28 @@ export default async function ImagePage({ params }: Props) {
   const image = await getImage(locale, slug)
   if (!image) notFound()
   const { item, project, categoryId } = image
-  const [t, related] = await Promise.all([
+  const [t, related, settings] = await Promise.all([
     getTranslations('Gallery'),
     categoryId ? getGalleryPage(locale, { categoryId, limit: 9 }) : null,
+    getSiteSettings(locale),
   ])
   const others = (related?.items ?? []).filter((r) => r.id !== item.id).slice(0, 8)
-  const url = `${siteUrl().replace(/\/$/, '')}${item.href}`
+  const site = siteUrl().replace(/\/$/, '')
+  const url = `${site}${item.href}`
+  const photo = responsiveImage(item.media)
 
   return (
     <>
+      <JsonLd
+        data={[
+          imageObjectJsonLd({ site, contentUrl: photo.src, url, name: item.title, caption: item.caption }),
+          breadcrumbJsonLd([
+            { name: settings.companyName, url: `${site}${getPathname({ locale, href: '/' })}` },
+            { name: t('title'), url: `${site}${getPathname({ locale, href: '/galeri' })}` },
+            { name: item.title, url },
+          ]),
+        ]}
+      />
       <Container className="pt-6 pb-12 md:pt-10">
         <a href={getPathname({ locale, href: '/galeri' })} className="text-[0.95rem] text-action underline">
           {t('back')}

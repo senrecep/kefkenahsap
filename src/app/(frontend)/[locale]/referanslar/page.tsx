@@ -2,19 +2,20 @@ import type { Metadata } from 'next'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
 
 import { CtaBand } from '@/components/site/CtaBand'
+import { JsonLd } from '@/components/seo/JsonLd'
 import { Container } from '@/components/ui/Container'
-import { getPathname, Link } from '@/i18n/navigation'
-import { routing, type Locale } from '@/i18n/routing'
+import { Link } from '@/i18n/navigation'
+import type { Locale } from '@/i18n/routing'
 import { getReferences } from '@/lib/data/projects'
-import { buildAlternates, siteUrl } from '@/lib/seo/alternates'
+import { itemListJsonLd } from '@/lib/seo/jsonld'
+import { pageMetadata, staticPaths } from '@/lib/seo/page-metadata'
 
 type Params = Promise<{ locale: Locale }>
 
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'References' })
-  const paths = Object.fromEntries(routing.locales.map((l) => [l, getPathname({ locale: l, href: '/referanslar' })]))
-  return { title: t('title'), description: t('description'), alternates: buildAlternates({ current: locale, paths, site: siteUrl() }) }
+  return pageMetadata({ locale, title: t('title'), description: t('description'), paths: staticPaths('/referanslar') })
 }
 
 export default async function ReferencesPage({ params }: { params: Params }) {
@@ -24,6 +25,7 @@ export default async function ReferencesPage({ params }: { params: Params }) {
   return (
     <>
       <Container className="pt-10 md:pt-16">
+        <JsonLd data={itemListJsonLd(refs.map((r) => ({ name: r.name })))} />
         <h1 className="text-[2.1rem] leading-[1.08] md:text-[3.2rem]">{t('title')}</h1>
         <p className="mt-5 max-w-[62ch] text-[1.15rem] text-ink-soft md:text-[1.25rem]">{t('description')}</p>
         {refs.length > 0 ? (

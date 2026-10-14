@@ -4,13 +4,16 @@ import { Maybe } from 'tsentials/maybe'
 
 import { ProjectCard } from '@/components/projects/ProjectCard'
 import { CtaBand } from '@/components/site/CtaBand'
+import { JsonLd } from '@/components/seo/JsonLd'
 import { Container } from '@/components/ui/Container'
 import { buttonClass } from '@/components/ui/button'
 import { getPathname, Link } from '@/i18n/navigation'
-import { routing, type Locale } from '@/i18n/routing'
+import type { Locale } from '@/i18n/routing'
 import { getProjectCards } from '@/lib/data/projects'
 import { categoryFilter } from '@/lib/projects/facts'
-import { buildAlternates, siteUrl } from '@/lib/seo/alternates'
+import { siteUrl } from '@/lib/seo/alternates'
+import { itemListJsonLd } from '@/lib/seo/jsonld'
+import { pageMetadata, staticPaths } from '@/lib/seo/page-metadata'
 
 type Params = Promise<{ locale: Locale }>
 type Search = Promise<{ kategori?: string | string[] }>
@@ -18,8 +21,7 @@ type Search = Promise<{ kategori?: string | string[] }>
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'Projects' })
-  const paths = Object.fromEntries(routing.locales.map((l) => [l, getPathname({ locale: l, href: '/projeler' })]))
-  return { title: t('title'), description: t('description'), alternates: buildAlternates({ current: locale, paths, site: siteUrl() }) }
+  return pageMetadata({ locale, title: t('title'), description: t('description'), paths: staticPaths('/projeler') })
 }
 
 export default async function ProjectsPage({ params, searchParams }: { params: Params; searchParams: Search }) {
@@ -32,9 +34,13 @@ export default async function ProjectsPage({ params, searchParams }: { params: P
   const shown = Maybe.isSome(active) ? cards.filter((c) => c.categories.some((x) => x.id === active.value.id)) : cards
   const chip = 'inline-flex min-h-11 items-center rounded-full border px-4 text-[0.95rem] font-semibold font-[family-name:var(--font-display)]'
 
+  const site = siteUrl().replace(/\/$/, '')
+  const list = itemListJsonLd(shown.map((p) => ({ name: p.title, url: site + getPathname({ locale, href: { pathname: '/projeler/[slug]', params: { slug: p.slug } } }) })))
+
   return (
     <>
       <Container className="pt-10 md:pt-16">
+        <JsonLd data={list} />
         <h1 className="text-[2.1rem] leading-[1.08] md:text-[3.2rem]">{t('title')}</h1>
         <p className="mt-5 max-w-[62ch] text-[1.15rem] text-ink-soft md:text-[1.25rem]">{t('description')}</p>
 
