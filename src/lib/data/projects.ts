@@ -1,6 +1,7 @@
 import { unstable_cache } from 'next/cache'
 
 import type { Locale } from '@/i18n/routing'
+import { publishedLocales } from '@/lib/i18n/published'
 import type { Category, Media, Project } from '@/payload-types'
 
 import { getPayload, TAGS } from './payload'
@@ -57,7 +58,8 @@ export const getProject = (locale: Locale, slug: string) =>
         select: { slug: true, title: true },
       })) as unknown as { slug?: Record<string, string | null>; title?: Record<string, string | null> }
       const slugs: Record<string, string> = {}
-      for (const [l, s] of Object.entries(all.slug ?? {})) if (s && all.title?.[l]) slugs[l] = s
+      const byLocale = Object.fromEntries(Object.keys(all.slug ?? {}).map((l) => [l, { slug: all.slug?.[l], title: all.title?.[l] }]))
+      for (const l of publishedLocales(byLocale)) slugs[l] = all.slug![l]!
       // Draft categories stay off the public page (the local API returns them).
       project.categories = (project.categories ?? []).filter((c) => typeof c === 'object' && c?._status === 'published')
       return { project, gallery: (project.gallery ?? []).filter(isApproved), cover: isApproved(project.cover) ? project.cover : undefined, slugs }
