@@ -328,6 +328,7 @@ F2: Rehber dizini + yazı şablonu (TOC, FAQ, "AI'ya kopyala" butonu, yazar kutu
 5. Linter seçimi (Biome/ESLint) ve 2FA — kullanıcının diğer projelerine göre.
 6. info@kefkenahsap.com aktifleşince NAP güncellemesi (tek global alan).
 7. Müşteri yorumları ve referans logo izinleri.
+8. Fotoğraf ağırlığı (#116): gerçek fotoğraflarla Lighthouse mobil performansı ana sayfa/kategori/galeride ~80. Ara türev genişlik (`w480`) eklenip mevcut türevler yeniden üretilsin mi? Media yükleme ayarını değiştirir; karar bekliyor.
 
 ## 13.1 Lansman sonrası kullanıcı işleri (not alındı, en sonda yapılacak)
 - [ ] GSC: Domain mülkü doğrulaması (TXT → Cloudflare'e eklenir), GA4 ↔ GSC bağlantısı, Performans (16 ay, sorgu+sayfa) ve Sayfalar raporu CSV dışa aktarımı → `docs/legacy/gsc/`.

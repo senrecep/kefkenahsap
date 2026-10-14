@@ -77,11 +77,13 @@ test.afterAll(async () => {
 
 test.describe('Content pages', () => {
   test('about shows only the site settings facts and a contact path', async ({ page }) => {
-    await page.goto('/tr/hakkimizda')
-    await expect(page.locator('h1')).toBeVisible()
     const main = page.locator('main')
+    // A page cached before the settings change (e.g. by the axe spec) serves one stale render while it revalidates.
+    await expect
+      .poll(async () => (await page.goto('/tr/hakkimizda'), main.getByText(fx.founder).count()), { timeout: 20_000 })
+      .toBeGreaterThan(0)
+    await expect(page.locator('h1')).toBeVisible()
     await expect(main.getByText(String(fx.year), { exact: true })).toBeVisible()
-    await expect(main.getByText(fx.founder)).toBeVisible()
     await expect(main.getByText(`${fx.district}, İstanbul`)).toBeVisible()
     await expect(main.getByText(/\d+ yıl/)).toHaveCount(0)
     await expect(main.getByRole('link', { name: 'İletişim ve teklif' })).toHaveAttribute('href', '/tr/iletisim')
