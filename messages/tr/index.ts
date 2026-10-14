@@ -2,6 +2,7 @@
 import common from './common.json'
 import gallery from './gallery.json'
 import home from './home.json'
+import pages from './pages.json'
 
-const messages = { ...common, ...gallery, ...home }
+const messages = { ...common, ...gallery, ...home, ...pages }
 export default messages

@@ -1,0 +1,39 @@
+{
+  "About": {
+    "title": "Hakkımızda",
+    "metaDescription": "{company}: {district, select, none {kendi} other {{district}}} atölyesinde ahşap deck, pergola, merdiven, kapı ve mobilya imalatı ve montajı.",
+    "lead": "{company}, ahşap işlerini kendi atölyesinde imal edip yerinde monte eder.",
+    "since": "Kuruluş",
+    "founder": "Kurucu",
+    "workshop": "Atölye",
+    "seeWork": "Yaptığımız işleri görün",
+    "contact": "İletişim ve teklif"
+  },
+  "Legal": {
+    "kvkkTitle": "KVKK aydınlatma metni",
+    "kvkkDescription": "{company} web sitesi ve teklif formu üzerinden işlenen kişisel veriler, amaçları, saklama süresi ve KVKK md. 11 haklarınız.",
+    "cookiesTitle": "Çerez politikası",
+    "cookiesDescription": "{company} web sitesinde kullanılan çerezler ve tercihinizi nasıl değiştireceğiniz.",
+    "draft": "Taslak — hukukçu kontrolü önerilir."
+  },
+  "Search": {
+    "title": "Arama",
+    "titleFor": "“{q}” için sonuçlar",
+    "label": "Sitede ara",
+    "placeholder": "Örn. pergola, iroko deck, merdiven",
+    "submit": "Ara",
+    "tooShort": "En az 2 harf yazın.",
+    "failed": "Arama şu an yapılamadı. Biraz sonra tekrar deneyin.",
+    "categories": "Hizmetler",
+    "images": "Fotoğraflar",
+    "projects": "Projeler",
+    "empty": "“{q}” için bir şey bulamadık. Farklı bir kelime deneyin ya da işinizi WhatsApp'tan anlatın.",
+    "browse": "Hizmetlere göz atın"
+  },
+  "NotFound": {
+    "title": "Bu sayfa bulunamadı",
+    "body": "Aradığınız sayfa taşınmış ya da kaldırılmış olabilir. Aşağıdan arayabilir veya hizmetlerimize göz atabilirsiniz.",
+    "popular": "Hizmetler",
+    "home": "Ana sayfaya dön"
+  }
+}
