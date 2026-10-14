@@ -78,7 +78,7 @@ export async function Header({ locale }: { locale: Locale }) {
               <span className="sr-only xl:hidden">{`${tCta('callUs')}: ${tel.label}`}</span>
             </a>
           )}
-          <LanguageSwitcher locale={locale} locales={locales} label={t('language')} className="hidden sm:flex" />
+          <LanguageSwitcher locale={locale} locales={locales} label={t('language')} className="hidden sm:block" />
           <MobileMenu label={t('menu')} closeLabel={t('close')}>
             <ul className="grid gap-1">
               <li>
@@ -111,7 +111,7 @@ export async function Header({ locale }: { locale: Locale }) {
                 </li>
               ))}
             </ul>
-            <LanguageSwitcher locale={locale} locales={locales} label={t('language')} className="mt-6" />
+            <LanguageSwitcher locale={locale} locales={locales} label={t('language')} variant="list" className="mt-6" />
             {/* Pinned to the panel's bottom edge: the two actions stay one tap away however long the list gets. */}
             <div className="sticky bottom-0 -mx-4 mt-auto flex gap-3 border-t border-line bg-paper px-4 pt-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))]">
               {wa && (
