@@ -25,6 +25,8 @@ const sourceSans = localFont({ src: '../../fonts/SourceSans3.woff2', weight: '40
 // no fallback font, else the stack would draw Latin text in it before reaching the Latin face.
 const montserratCyr = localFont({ src: '../../fonts/Montserrat-cyrillic.woff2', weight: '600', variable: '--font-montserrat-cyr', display: 'swap', preload: false, adjustFontFallback: false, declarations: [{ prop: 'unicode-range', value: 'U+0400-045F, U+0490-0491, U+2116' }] })
 const sourceSansCyr = localFont({ src: '../../fonts/SourceSans3-cyrillic.woff2', weight: '400 600', variable: '--font-source-sans-cyr', display: 'swap', preload: false, adjustFontFallback: false, declarations: [{ prop: 'unicode-range', value: 'U+0400-045F, U+0490-0491, U+2116' }] })
+// Arabic (ar): Montserrat / Source Sans 3 have no Arabic glyphs, so Noto Sans Arabic serves both roles, same loading rules.
+const notoArabic = localFont({ src: '../../fonts/NotoSansArabic.woff2', weight: '400 700', variable: '--font-arabic', display: 'swap', preload: false, adjustFontFallback: false, declarations: [{ prop: 'unicode-range', value: 'U+0600-06FF' }] })
 
 // Pages read CMS data per request (cached via unstable_cache tags + Cloudflare edge); no DB needed at build time.
 export const dynamic = 'force-dynamic'
@@ -58,7 +60,7 @@ export default async function LocaleLayout({
   const site = siteUrl().replace(/\/$/, '')
   const home = `${site}/${locale}`
   return (
-    <html lang={locale} dir={localeDir(locale)} className={`${montserrat.variable} ${sourceSans.variable} ${montserratCyr.variable} ${sourceSansCyr.variable}`}>
+    <html lang={locale} dir={localeDir(locale)} className={`${montserrat.variable} ${sourceSans.variable} ${montserratCyr.variable} ${sourceSansCyr.variable} ${notoArabic.variable}`}>
       <body className="min-h-dvh antialiased">
         {/* No site-wide NextIntlClientProvider: client components get server-translated props, which keeps
             next-intl's message formatter out of every page's JS (budget, #52). */}

@@ -43,16 +43,23 @@ export function Lightbox({ items, index, total, onIndex, onClose, labels }: Ligh
     window.history.replaceState(window.history.state, '', item.href)
   }, [item.href])
 
+  // Go to the photo shown on the right/left side. In RTL the order is mirrored: "next" sits on the left.
+  const toward = (right: boolean) => {
+    const ltr = !dialog.current || getComputedStyle(dialog.current).direction !== 'rtl'
+    const target = right === ltr ? next : prev
+    if (target !== null) onIndex(target)
+  }
   const onKeyDown = (e: KeyboardEvent) => {
-    if (e.key === 'ArrowLeft' && prev !== null) onIndex(prev)
-    if (e.key === 'ArrowRight' && next !== null) onIndex(next)
+    if (e.key === 'ArrowLeft') toward(false)
+    if (e.key === 'ArrowRight') toward(true)
   }
   const onPointerUp = (e: PointerEvent) => {
     if (swipeX.current === null) return
     const dx = e.clientX - swipeX.current
     swipeX.current = null
-    if (dx > 50 && prev !== null) onIndex(prev)
-    if (dx < -50 && next !== null) onIndex(next)
+    // Dragging right brings in the photo on the left.
+    if (dx > 50) toward(false)
+    if (dx < -50) toward(true)
   }
 
   return (

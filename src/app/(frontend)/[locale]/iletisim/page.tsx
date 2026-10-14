@@ -75,10 +75,10 @@ export default async function ContactPage({ params, searchParams }: Props) {
                       <Phone aria-hidden size={18} strokeWidth={1.75} className="text-ink-soft" />
                       {tel ? (
                         <a href={tel.href} data-umami-event="phone_click" data-umami-event-place="contact" className={link}>
-                          {p.number}
+                          <bdi dir="ltr">{p.number}</bdi>
                         </a>
                       ) : (
-                        <span className="text-lg">{p.number}</span>
+                        <span className="text-lg"><bdi dir="ltr">{p.number}</bdi></span>
                       )}
                       {p.label && <span className="text-ink-soft">{p.label}</span>}
                     </li>
@@ -123,7 +123,7 @@ export default async function ContactPage({ params, searchParams }: Props) {
               <ul className="mt-2 grid gap-1 text-lg">
                 {settings.hours.map((r) => (
                   <li key={r.id ?? `${r.days?.join()}${r.opens}`}>
-                    {(r.days ?? []).map((d) => tDays(d)).join(', ')}: <span className="tabular-nums">{r.opens}–{r.closes}</span>
+                    {(r.days ?? []).map((d) => tDays(d)).join(', ')}: <bdi dir="ltr" className="tabular-nums">{r.opens}–{r.closes}</bdi>
                   </li>
                 ))}
               </ul>

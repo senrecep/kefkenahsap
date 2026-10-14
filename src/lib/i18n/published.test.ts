@@ -71,6 +71,7 @@ describe('ogLocale', () => {
     expect(ogLocale('en')).toBe('en_US')
     expect(ogLocale('ru')).toBe('ru_RU')
     expect(ogLocale('de')).toBe('de_DE')
+    expect(ogLocale('ar')).toBe('ar_AR') // Facebook's supported-locale code for Arabic
   })
 })
 

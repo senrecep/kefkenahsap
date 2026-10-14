@@ -35,6 +35,10 @@ describe('slugify', () => {
     expect(slug('Über uns', 'en')).toBe('uber-uns')
   })
 
+  it('Arabic is not transliterated: an Arabic-only title gives no slug, so the editor enters a Latin one', () => {
+    expect(Result.isFailure(slugify('أرضيات خشبية'))).toBe(true)
+  })
+
   it('keeps the existing WordPress category slugs stable', () => {
     expect(value('Deck ve Zeminler')).toBe('deck-ve-zeminler')
     expect(value('Kapı, Dolap ve Seperatör')).toBe('kapi-dolap-ve-seperator')

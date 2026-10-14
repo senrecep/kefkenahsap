@@ -227,3 +227,14 @@ Kontrol edilecekler:
 2. Form uluslararası numarayı kabul eder: + (ya da 00) ve ülke koduyla 8–15 hane (E.164). Türkiye numaraları eskisi gibi (0532…, 532…, +90…).
 3. KVKK ve çerez politikası taslak metinleri RU/DE'de İngilizce gösterilir (`lang="en"`). Hukukçu onaylı çeviri admin'de Sayfalar'a girilince o dil kendi metnini gösterir.
 4. Kategori, proje, rehber, görsel başlık/alt metinleri RU/DE'de boş. Bir dil, o dilde en az bir kategori ad + slug ile yayınlanana kadar noindex kalır (PLAN §5.1). Admin'deki "AI ile çevir" RU/DE'yi de taslak olarak doldurur; yayından önce anadili kontrolü gerekir.
+
+## AR arayüz metinleri (#63)
+
+**Durum: İLK GEÇİŞ. Anadili Arapça olan birinin kontrolü gerekiyor.** `messages/ar/*.json` TR kaynaktan Claude ile lokalde çevrildi (Modern Standart Arapça, OpenRouter kullanılmadı).
+- Okura çoğul ve cinsiyetten bağımsız hitap edildi ("أرسلوا", "راسلونا"). Rakamlar Batı rakamı (0–9) bırakıldı; telefon ve saat aralıkları RTL metin içinde soldan sağa gösterilir.
+- Terimler: deck → أرضيات خشبية, pergola → برجولا, kamelya → كشك حديقة, korkuluk → درابزين, emprenyeli çam → صنوبر معالج بالضغط, teak → الساج (تيك), thermowood → خشب معالج حرارياً, keşif → معاينة, teklif → عرض سعر, usta → حِرَفي. Marka adı çevrilmedi.
+- Bölgesel tercih (Körfez / Levant / Mısır) sahibinin hedef kitlesine göre gözden geçirilmeli.
+
+Sahibin işleri:
+1. Kategori, proje, rehber ve görsel metinlerinin Arapçası (admin'deki "AI ile çevir" AR taslağı da üretir, anadili kontrolü şart). **Arapça başlıktan slug üretilmez**: her dokümana Latin harfli bir AR slug elle girilmeli (ör. EN slug'ı). AR'da en az bir kategori ad + slug ile yayınlanana kadar AR sayfaları noindex kalır.
+2. KVKK ve çerez metinleri AR'da İngilizce gösterilir; hukukçu onaylı çeviri admin'den girilebilir.

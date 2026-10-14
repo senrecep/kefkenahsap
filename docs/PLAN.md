@@ -124,7 +124,7 @@ Tüm metin alanları `localized: true`. Taslak/versiyon (`versions.drafts`) + Li
 
 ## 5. URL yapısı, i18n ve yönlendirmeler
 
-### 5.1 Rotalar (TR / EN / RU / DE)
+### 5.1 Rotalar (TR / EN / RU / DE; AR = EN yolları)
 | Sayfa | TR | EN | RU | DE |
 |---|---|---|---|---|
 | Ana sayfa | `/tr` | `/en` | `/ru` | `/de` |
@@ -148,6 +148,7 @@ Tüm metin alanları `localized: true`. Taslak/versiyon (`versions.drafts`) + Li
 - RU/DE sabit rota adları (#64): DE Almanca ASCII, RU Latin harfle transliterasyon (Kiril URL'de yüzde-kodlanır). Doküman slug'ları RU başlıktan otomatik Latin harfe çevrilir (`src/lib/slug.ts`).
 - **Sabit rotalar için dil yayında kuralı** (#64): ana sayfa, hizmetler, galeri, projeler, referanslar, iletişim, rehber dizini ve yasal sayfalar bir dilde ancak o dilde en az bir kategori yayındaysa (slug + ad dolu) yayında sayılır; aksi hâlde noindex, hreflang ve sitemap dışı (`fixedRoutePaths`). Varsayılan dil (`tr`) her zaman yayındadır. Yani yeni bir dili açmak veriyle olur: kategorilerin o dildeki ad + slug'ı girilir.
 - F3'te `ar` için `dir="rtl"`, Tailwind logical properties (ms-/me-) baştan kullanılır.
+- **AR (#63):** sabit rotalar EN yollarını kullanır (`/ar/gallery`, `/ar/contact`…): Arapça harfli URL yüzde-kodlanır, adres çubuğunda yön karışır. Doküman slug'ları Latin harfle elle girilir (`slugify` Arapçayı çevirmez). `<html dir="rtl">` `localeDir`'den; admin'de Arapça alanlar RTL (Payload `localization.locales[].rtl`). Yazı tipi: Noto Sans Arabic (OFL, alt küme, yalnızca Arapça metin olan sayfada iner). Telefon ve saat aralıkları RTL metin içinde `<bdi dir="ltr">`. Galeri görüntüleyicide ok tuşları ve kaydırma aynalanır. `og:locale` `ar_AR`.
 
 ### 5.2 Eski URL göçü (veri: `legacy/wp-media.json`, `legacy/wp-pages.json`, `legacy/live-site-images-ordered.json`)
 | Eski | Yeni | Tür |
