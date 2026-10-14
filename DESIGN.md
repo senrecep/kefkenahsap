@@ -257,7 +257,7 @@ An empty result always offers a way forward. No search results and the 404 page 
 ## Do's and Don'ts
 
 ### Do:
-- **Do** let a real job photo lead every section. Use a 4:3 crop in grids, `object-contain` in the lightbox, and a 10px radius everywhere.
+- **Do** let a real job photo lead every work section. Use a 4:3 crop in grids, `object-contain` in the lightbox, and a 10px radius everywhere.
 - **Do** reserve Action Green for things that act: buttons, links, the WhatsApp cell, focus and selection.
 - **Do** pair WhatsApp (solid green) with "Teklif al" (outline) wherever a page asks for contact, and end category, references and project pages with that pair.
 - **Do** keep the hero H1 at two lines or fewer on desktop, followed by one sentence of subline, with the scrim anchored behind the text block.
@@ -271,7 +271,7 @@ An empty result always offers a way forward. No search results and the 404 page 
 - **Don't** add eyebrow or kicker labels above headings. Uppercase labels are allowed only when they are the heading or the term itself.
 - **Don't** use decorative gradients. The hero scrim is the one gradient, and it exists for legibility.
 - **Don't** use glass: no `backdrop-filter`, no frosted panels.
-- **Don't** use hard or offset shadows, or shadows on anything that sits in the page flow. Use Float only for floating elements.
+- **Don't** use hard (zero-blur) offset shadows. Don't put a shadow on anything in the page flow; Float is for floating elements only.
 - **Don't** build icon-card grids or boxed cards. Use photos for work and hairline lists for text.
 - **Don't** mix icon sets or use glyph or emoji icons. Use lucide only, with a 1.75 stroke.
 - **Don't** use the logo greens (#009444, #39b54a) in UI, and don't add a second accent colour.

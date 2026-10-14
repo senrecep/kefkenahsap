@@ -4,43 +4,231 @@
   "title": "Design System: Kefken Ahşap Dekorasyon",
   "extensions": {
     "colorMeta": {
-      "action": { "role": "primary", "displayName": "Action Green", "canonical": "#0b7a3e", "tonalRamp": ["#001300", "#003103", "#005117", "#007136", "#359658", "#6bb981", "#a5dab2", "#dcf7e2"] },
-      "action-deep": { "role": "primary", "displayName": "Deep Action Green", "canonical": "#075c2e", "tonalRamp": ["#001300", "#003104", "#004f21", "#236e3f", "#4a9261", "#6fb884", "#a5dab2", "#dcf7e2"] },
-      "paper": { "role": "neutral", "displayName": "Warm Paper", "canonical": "#fbfaf7", "tonalRamp": ["#0c0b09", "#252422", "#40403d", "#5e5d5b", "#81807d", "#a5a4a2", "#cbcac7", "#efeeeb"] },
-      "mist": { "role": "neutral", "displayName": "Mist", "canonical": "#f2f0eb", "tonalRamp": ["#0c0b08", "#252420", "#41403c", "#5f5d59", "#82807c", "#a6a4a0", "#cccac5", "#f0eee9"] },
-      "line": { "role": "neutral", "displayName": "Hairline", "canonical": "#e4e1da", "tonalRamp": ["#0d0b07", "#26241f", "#423f3a", "#605d57", "#83807a", "#a7a49e", "#cdcac3", "#f1eee7"] },
-      "ink": { "role": "neutral", "displayName": "Ink", "canonical": "#1d1f1c", "tonalRamp": ["#0a0c09", "#232522", "#3e403d", "#5c5e5b", "#7e817d", "#a3a5a1", "#c9cbc7", "#edefeb"] },
-      "ink-soft": { "role": "neutral", "displayName": "Soft Ink", "canonical": "#5c5f58", "tonalRamp": ["#0a0c07", "#23251f", "#3e413a", "#5c5f58", "#7e827a", "#a3a69e", "#c8ccc4", "#ecf0e8"] },
-      "error": { "role": "feedback", "displayName": "Error Red", "canonical": "#b42318", "tonalRamp": ["#220000", "#4c0000", "#75170f", "#9d362a", "#c35d4f", "#e2897b", "#f9b8ad", "#ffe5e0"] },
-      "error-soft": { "role": "feedback", "displayName": "Error Wash", "canonical": "#fef3f2", "tonalRamp": ["#100909", "#2a2221", "#463d3d", "#645b5a", "#877e7d", "#aca2a1", "#d2c8c7", "#f6eceb"] }
+      "action": {
+        "role": "primary",
+        "displayName": "Action Green",
+        "canonical": "#0b7a3e",
+        "tonalRamp": [
+          "#001300",
+          "#003103",
+          "#005117",
+          "#007136",
+          "#359658",
+          "#6bb981",
+          "#a5dab2",
+          "#dcf7e2"
+        ]
+      },
+      "action-deep": {
+        "role": "primary",
+        "displayName": "Deep Action Green",
+        "canonical": "#075c2e",
+        "tonalRamp": [
+          "#001300",
+          "#003104",
+          "#004f21",
+          "#236e3f",
+          "#4a9261",
+          "#6fb884",
+          "#a5dab2",
+          "#dcf7e2"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Warm Paper",
+        "canonical": "#fbfaf7",
+        "tonalRamp": [
+          "#0c0b09",
+          "#252422",
+          "#40403d",
+          "#5e5d5b",
+          "#81807d",
+          "#a5a4a2",
+          "#cbcac7",
+          "#efeeeb"
+        ]
+      },
+      "mist": {
+        "role": "neutral",
+        "displayName": "Mist",
+        "canonical": "#f2f0eb",
+        "tonalRamp": [
+          "#0c0b08",
+          "#252420",
+          "#41403c",
+          "#5f5d59",
+          "#82807c",
+          "#a6a4a0",
+          "#cccac5",
+          "#f0eee9"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "#e4e1da",
+        "tonalRamp": [
+          "#0d0b07",
+          "#26241f",
+          "#423f3a",
+          "#605d57",
+          "#83807a",
+          "#a7a49e",
+          "#cdcac3",
+          "#f1eee7"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#1d1f1c",
+        "tonalRamp": [
+          "#0a0c09",
+          "#232522",
+          "#3e403d",
+          "#5c5e5b",
+          "#7e817d",
+          "#a3a5a1",
+          "#c9cbc7",
+          "#edefeb"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Soft Ink",
+        "canonical": "#5c5f58",
+        "tonalRamp": [
+          "#0a0c07",
+          "#23251f",
+          "#3e413a",
+          "#5c5f58",
+          "#7e827a",
+          "#a3a69e",
+          "#c8ccc4",
+          "#ecf0e8"
+        ]
+      },
+      "error": {
+        "role": "feedback",
+        "displayName": "Error Red",
+        "canonical": "#b42318",
+        "tonalRamp": [
+          "#220000",
+          "#4c0000",
+          "#75170f",
+          "#9d362a",
+          "#c35d4f",
+          "#e2897b",
+          "#f9b8ad",
+          "#ffe5e0"
+        ]
+      },
+      "error-soft": {
+        "role": "feedback",
+        "displayName": "Error Wash",
+        "canonical": "#fef3f2",
+        "tonalRamp": [
+          "#100909",
+          "#2a2221",
+          "#463d3d",
+          "#645b5a",
+          "#877e7d",
+          "#aca2a1",
+          "#d2c8c7",
+          "#f6eceb"
+        ]
+      }
     },
     "typographyMeta": {
-      "display": { "displayName": "Display", "purpose": "Hero H1 only, white over the scrim, max 22ch (≤2 lines on desktop)." },
-      "headline": { "displayName": "Headline", "purpose": "Inner-page H1 (contact, search, 404, content pages)." },
-      "title": { "displayName": "Title", "purpose": "Homepage section H2s; closing bands step down to 1.5→1.85rem." },
-      "body": { "displayName": "Body", "purpose": "All running text, 17px / 1.6, prose capped at 52–65ch." },
-      "button": { "displayName": "Button", "purpose": "Every button; nav links at 0.95rem in the same face and weight." },
-      "label": { "displayName": "Label", "purpose": "Uppercase Soft Ink labels that are themselves the heading or term (footer column heads, contact section heads, fact terms). Never a kicker above a heading." }
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero H1 only, white over the scrim, max 22ch (≤2 lines on desktop)."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Inner-page H1 (contact, search, 404, content pages)."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Homepage section H2s; closing bands step down to 1.5→1.85rem."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "All running text, 17px / 1.6, prose capped at 52–65ch."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Every button; nav links at 0.95rem in the same face and weight."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Uppercase Soft Ink labels that are themselves the heading or term (footer column heads, contact section heads, fact terms). Never a kicker above a heading."
+      }
     },
     "shadows": [
-      { "name": "float", "value": "0 8px 24px -8px rgb(29 31 28 / 0.28), 0 2px 6px -2px rgb(29 31 28 / 0.16)", "purpose": "Floating elements only: services dropdown, consent banner, lightbox controls." },
-      { "name": "bar-lift", "value": "0 -6px 20px -12px rgb(29 31 28 / 0.35)", "purpose": "Fixed mobile action bar only." }
+      {
+        "name": "float",
+        "value": "0 8px 24px -8px rgb(29 31 28 / 0.28), 0 2px 6px -2px rgb(29 31 28 / 0.16)",
+        "purpose": "Floating elements only: services dropdown, consent banner, lightbox controls."
+      },
+      {
+        "name": "bar-lift",
+        "value": "0 -6px 20px -12px rgb(29 31 28 / 0.35)",
+        "purpose": "Fixed mobile action bar only."
+      }
     ],
     "motion": [
-      { "name": "ease-out-expo", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Easing for the hero settle and scrim fade." },
-      { "name": "settle", "value": "settle 1.8s var(--ease-out-expo) both; from { transform: scale(1.04) }", "purpose": "The one authored moment: hero photo settles in; visible from frame one." },
-      { "name": "scrim", "value": "scrim 1.2s var(--ease-out-expo) both; from { opacity: 0.8 }", "purpose": "Hero scrim fades up alongside the settle." },
-      { "name": "state-change", "value": "colors 150ms", "purpose": "Every hover/press colour change. Reduced motion collapses all animation and transition to 0.01ms." }
+      {
+        "name": "ease-out-expo",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Easing for the hero settle and scrim fade."
+      },
+      {
+        "name": "settle",
+        "value": "settle 1.8s var(--ease-out-expo) both; from { transform: scale(1.04) }",
+        "purpose": "The one authored moment: hero photo settles in; visible from frame one."
+      },
+      {
+        "name": "scrim",
+        "value": "scrim 1.2s var(--ease-out-expo) both; from { opacity: 0.8 }",
+        "purpose": "Hero scrim fades up alongside the settle."
+      },
+      {
+        "name": "state-change",
+        "value": "colors 150ms",
+        "purpose": "Every hover/press colour change. Reduced motion collapses all animation and transition to 0.01ms."
+      }
     ],
     "focus": [
-      { "name": "focus-global", "value": "outline: 3px solid var(--color-action); outline-offset: 3px; border-radius: 4px", "purpose": "Every focusable element via :focus-visible." },
-      { "name": "focus-field", "value": "border-color: var(--color-action); outline: 2px solid var(--color-action); outline-offset: 1px", "purpose": "Text inputs and textareas." }
+      {
+        "name": "focus-global",
+        "value": "outline: 3px solid var(--color-action); outline-offset: 3px; border-radius: 4px",
+        "purpose": "Every focusable element via :focus-visible."
+      },
+      {
+        "name": "focus-field",
+        "value": "border-color: var(--color-action); outline: 2px solid var(--color-action); outline-offset: 1px",
+        "purpose": "Text inputs and textareas."
+      }
     ],
     "breakpoints": [
-      { "name": "sm", "value": "640px" },
-      { "name": "md", "value": "768px" },
-      { "name": "lg", "value": "1024px" },
-      { "name": "xl", "value": "1280px" }
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      },
+      {
+        "name": "xl",
+        "value": "1280px"
+      }
     ]
   },
   "components": [
@@ -117,7 +305,7 @@
   ],
   "narrative": {
     "northStar": "The Finished Job, One Tap From a Human",
-    "overview": "The category standard for a contractor site, executed at full craft. Real job photographs carry every section, copy is short and plain, and a way to reach a person (WhatsApp, a call, a quote form) stays within reach on every page. The system adds no decoration of its own: wood comes only from the photos, the ground is a warm white, text is a near-black ink, and one green marks every action. The craft is in the execution: AA contrast over photos, 48px tap targets, hairline structure, a single motion moment, and empty states that always offer a next step.\n\nDensity is calm and documentary: photo grids and hairline lists separated by generous vertical rhythm, with no cards and no icon tiles. It reads as a tradesman's honest portfolio, neither a luxury brand nor a template theme. It deliberately refuses the template version of the genre: slider heroes, icon-card grids, stock photos, and green everywhere.",
+    "overview": "This is the contractor-site standard built with care. Real job photographs carry every section. Copy is short and plain. The way to reach a person (WhatsApp, a phone call or a quote form) stays within reach on every page. The system adds no decoration of its own: wood appears only in the photos, the ground is a warm white, the text is a near-black ink, and one green marks every action. The craft is in execution: AA contrast over photos, 48px tap targets, hairline structure, a single motion moment, and empty states that always offer a next step.\n\nThe density is calm and documentary. Pages are photo grids and hairline lists separated by generous vertical rhythm, with no cards and no icon tiles. The site is built to feel like a tradesman's honest portfolio, not a luxury brand and not a template theme. It deliberately rejects the template version of this genre: slider heroes, icon-card grids, stock photos, and green used everywhere.",
     "keyCharacteristics": [
       "Full-bleed real photography. Nothing is illustrated, and wood is never drawn.",
       "One action green, reserved for buttons, links and the WhatsApp cell.",
@@ -128,16 +316,44 @@
       "One authored motion moment (the hero settle). Everything else is instant or a 150ms colour change."
     ],
     "rules": [
-      { "name": "The One Green Rule", "body": "Action Green is the only green on the page outside the logo. The logo's own greens live inside the logo image and are never used as UI colour. Two such tokens are declared in the stylesheet and unused: `--color-brand` (#009444) and `--color-leaf` (#39b54a). No UI fill, border, icon or text uses them.", "section": "colors" },
-      { "name": "The Photo Brings the Warmth Rule", "body": "No wood textures, beige gradients or tinted section washes. Warmth comes from the photographs on a paper ground.", "section": "colors" },
-      { "name": "The Two Faces Rule", "body": "Montserrat is for anything you navigate or press, and for headings. Source Sans 3 is for anything you read. Headings are always weight 600, balanced (`text-wrap: balance`), and slightly tightened.", "section": "typography" },
-      { "name": "The No Kicker Rule", "body": "No small uppercase line sits above a headline. A heading speaks for itself.", "section": "typography" },
-      { "name": "The Closing Band Rule", "body": "Every category page, the references page and the projects index ends with a full-width Mist band containing a heading, one line of text, an optional service-area line, WhatsApp and \"Teklif al\". When the band is the last thing in `<main>`, the footer drops its top margin so the band sits directly on the footer. Project pages close with the same WhatsApp + \"Teklif al\" pair inline.", "section": "layout" },
-      { "name": "The Float Only Rule", "body": "A shadow means \"this is above the page and will go away\". Section content, photos, list rows and in-flow buttons never carry one. Shadows are always soft and diffuse, never hard-offset.", "section": "elevation" },
-      { "name": "The Functional Scrim Rule", "body": "The hero's bottom scrim is the only gradient in the system. It runs from Ink at 0.64 to transparent and is anchored behind the text block, not the whole section. It keeps white text at AA or better over any photo, including bright patches and the watermark, and fades out over 6rem above the H1. It exists for legibility, not decoration.", "section": "elevation" }
+      {
+        "name": "The One Green Rule",
+        "body": "Action Green is the only green on the page outside the logo. The logo's own greens live inside the logo image and are never used as UI colour. Two such tokens are declared in the stylesheet and unused: `--color-brand` (#009444) and `--color-leaf` (#39b54a). No UI fill, border, icon or text uses them.",
+        "section": "colors"
+      },
+      {
+        "name": "The Photo Brings the Warmth Rule",
+        "body": "No wood textures, beige gradients or tinted section washes. Warmth comes from the photographs on a paper ground.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Faces Rule",
+        "body": "Montserrat is for anything you navigate or press, and for headings. Source Sans 3 is for anything you read. Headings are always weight 600, balanced (`text-wrap: balance`), and slightly tightened.",
+        "section": "typography"
+      },
+      {
+        "name": "The No Kicker Rule",
+        "body": "No small uppercase line sits above a headline. A heading speaks for itself.",
+        "section": "typography"
+      },
+      {
+        "name": "The Closing Band Rule",
+        "body": "Every category page, the references page and the projects index ends with a full-width Mist band containing a heading, one line of text, an optional service-area line, WhatsApp and \"Teklif al\". When the band is the last thing in `<main>`, the footer drops its top margin so the band sits directly on the footer. Project pages close with the same WhatsApp + \"Teklif al\" pair inline.",
+        "section": "layout"
+      },
+      {
+        "name": "The Float Only Rule",
+        "body": "A shadow means \"this is above the page and will go away\". Section content, photos, list rows and in-flow buttons never carry one. Shadows are always soft and diffuse, never hard-offset.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Functional Scrim Rule",
+        "body": "The hero's bottom scrim is the only gradient in the system. It runs from Ink at 0.64 to transparent and is anchored behind the text block, not the whole section. It keeps white text at AA or better over any photo, including bright patches and the watermark, and fades out over 6rem above the H1. It exists for legibility, not decoration.",
+        "section": "elevation"
+      }
     ],
     "dos": [
-      "**Do** let a real job photo lead every section. Use a 4:3 crop in grids, `object-contain` in the lightbox, and a 10px radius everywhere.",
+      "**Do** let a real job photo lead every work section. Use a 4:3 crop in grids, `object-contain` in the lightbox, and a 10px radius everywhere.",
       "**Do** reserve Action Green for things that act: buttons, links, the WhatsApp cell, focus and selection.",
       "**Do** pair WhatsApp (solid green) with \"Teklif al\" (outline) wherever a page asks for contact, and end category, references and project pages with that pair.",
       "**Do** keep the hero H1 at two lines or fewer on desktop, followed by one sentence of subline, with the scrim anchored behind the text block.",
@@ -151,7 +367,7 @@
       "**Don't** add eyebrow or kicker labels above headings. Uppercase labels are allowed only when they are the heading or the term itself.",
       "**Don't** use decorative gradients. The hero scrim is the one gradient, and it exists for legibility.",
       "**Don't** use glass: no `backdrop-filter`, no frosted panels.",
-      "**Don't** use hard or offset shadows, or shadows on anything that sits in the page flow. Use Float only for floating elements.",
+      "**Don't** use hard (zero-blur) offset shadows. Don't put a shadow on anything in the page flow; Float is for floating elements only.",
       "**Don't** build icon-card grids or boxed cards. Use photos for work and hairline lists for text.",
       "**Don't** mix icon sets or use glyph or emoji icons. Use lucide only, with a 1.75 stroke.",
       "**Don't** use the logo greens (#009444, #39b54a) in UI, and don't add a second accent colour.",
