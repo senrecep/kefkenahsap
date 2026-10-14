@@ -5,6 +5,8 @@ import type { Where } from 'payload'
 export const PAGE_SIZE = 24
 /** No-JS "?sayfa=N" renders N pages at once; capped so one request stays cheap. */
 export const MAX_PAGES = 20
+/** Postgres `integer` primary keys. */
+const MAX_ID = 2_147_483_647
 
 export type GalleryQuery = { category?: string; tag?: string; page: number; cursor?: number }
 type Params = Record<string, string | string[] | undefined>
@@ -26,8 +28,8 @@ export function parseGalleryQuery(params: Params): Result<GalleryQuery> {
   let cursor: number | undefined
   const rawCursor = first(params.cursor)
   if (rawCursor !== undefined) {
-    const m = /^c([1-9]\d{0,14})$/.exec(Buffer.from(rawCursor, 'base64url').toString())
-    if (!m) return Result.failure(Err.validation('Gallery.BadCursor', 'Geçersiz sayfa imleci.'))
+    const m = /^c([1-9]\d{0,9})$/.exec(Buffer.from(rawCursor, 'base64url').toString())
+    if (!m || Number(m[1]) > MAX_ID) return Result.failure(Err.validation('Gallery.BadCursor', 'Geçersiz sayfa imleci.'))
     cursor = Number(m[1])
   }
 
@@ -40,11 +42,13 @@ export function parseGalleryQuery(params: Params): Result<GalleryQuery> {
   })
 }
 
-/** Payload `where` for the public gallery, newest first (sort `-id`). The Local API skips access rules, so approval is enforced here. */
+/** Payload `where` for the public gallery, newest first (sort `-id`). Approval is also enforced here, independent of access control. */
 export function galleryWhere(f: { categoryId?: number; tagId?: number; cursor?: number }): Where & { and: Where[] } {
   return {
     and: [
       { status: { equals: 'approved' } },
+      // The image page is addressed by seoFilename; without one the card would link to a 404.
+      { seoFilename: { exists: true } },
       ...(f.categoryId ? [{ category: { equals: f.categoryId } }] : []),
       ...(f.tagId ? [{ tags: { in: [f.tagId] } }] : []),
       ...(f.cursor ? [{ id: { less_than: f.cursor } }] : []),

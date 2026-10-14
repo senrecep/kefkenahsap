@@ -40,6 +40,10 @@ describe('parseGalleryQuery', () => {
     expect(failCode({ cursor: 'abc' })).toBe('Gallery.BadCursor')
     expect(failCode({ cursor: encodeCursor(0) })).toBe('Gallery.BadCursor')
     expect(failCode({ kategori: '../admin' })).toBe('Gallery.BadFilter')
+    // Postgres int ids: anything above 2^31-1 (or 11+ digits) is rejected instead of reaching the DB.
+    expect(failCode({ cursor: encodeCursor(2147483648) })).toBe('Gallery.BadCursor')
+    expect(failCode({ cursor: encodeCursor(123456789012345) })).toBe('Gallery.BadCursor')
+    expect(ok({ cursor: encodeCursor(2147483647) }).cursor).toBe(2147483647)
   })
 
   it('cursor round-trips and is opaque', () => {
@@ -50,14 +54,15 @@ describe('parseGalleryQuery', () => {
 })
 
 describe('galleryWhere', () => {
-  it('always limits the public gallery to approved images', () => {
-    expect(galleryWhere({})).toEqual({ and: [{ status: { equals: 'approved' } }] })
+  it('always limits the public gallery to approved images that have their own page (seoFilename)', () => {
+    expect(galleryWhere({})).toEqual({ and: [{ status: { equals: 'approved' } }, { seoFilename: { exists: true } }] })
   })
 
   it('adds category, tag and keyset (id below the cursor) conditions', () => {
     expect(galleryWhere({ categoryId: 174, tagId: 5, cursor: 300 })).toEqual({
       and: [
         { status: { equals: 'approved' } },
+        { seoFilename: { exists: true } },
         { category: { equals: 174 } },
         { tags: { in: [5] } },
         { id: { less_than: 300 } },

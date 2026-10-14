@@ -20,6 +20,6 @@ export async function GET(req: NextRequest, { params }: { params: Promise<{ loca
 
   return NextResponse.json(
     { items: page.items, nextCursor: page.nextCursor },
-    { headers: { 'Cache-Control': 'public, max-age=60, s-maxage=300, stale-while-revalidate=600' } },
+    { headers: { 'Cache-Control': 'public, max-age=60, s-maxage=300, stale-while-revalidate=60' } },
   )
 }

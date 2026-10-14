@@ -28,17 +28,20 @@ const select = {
 } as const
 const populate = { categories: { name: true, slug: true }, projects: { title: true, slug: true } } as const
 
+// Public reads run with access control (overrideAccess: false): unapproved media and draft categories/projects
+// stay out, and a relation the visitor may not read comes back as a bare id, which `rel` drops.
 // Metadata may still be missing in a non-default locale; show the Turkish text rather than an empty alt.
-const query = { depth: 1, select, populate, fallbackLocale: 'tr' } as const
+export const mediaQuery = { depth: 1, select, populate, fallbackLocale: 'tr', overrideAccess: false } as const
 
 const rel = <T extends object>(v: number | T | null | undefined) => (v && typeof v === 'object' ? v : undefined)
 
 export function toGalleryItem(doc: Media, locale: Locale): GalleryItem {
-  const slug = doc.seoFilename ?? String(doc.id)
+  const slug = doc.seoFilename ?? '' // galleryWhere only returns media with a seoFilename
   const cat = rel<Category>(doc.category)
   const sizes = Object.fromEntries(
     Object.entries(doc.sizes ?? {}).map(([k, s]) => [k, s ? { url: s.url, width: s.width, height: s.height } : s]),
   )
+  // Grid + lightbox use every generated width; only url/width/height per size go to the client.
   return {
     id: doc.id,
     slug,
@@ -48,7 +51,7 @@ export function toGalleryItem(doc: Media, locale: Locale): GalleryItem {
     ...(doc.caption ? { caption: doc.caption } : {}),
     width: doc.width ?? 0,
     height: doc.height ?? 0,
-    media: { url: doc.url, width: doc.width, height: doc.height, alt: doc.alt, lqip: doc.lqip, dominantColor: doc.dominantColor, sizes },
+    media: { url: doc.url, width: doc.width, height: doc.height, lqip: doc.lqip, dominantColor: doc.dominantColor, sizes },
     ...(cat?.slug
       ? { category: { name: cat.name, href: getPathname({ locale, href: { pathname: '/[category]', params: { category: cat.slug } } }) } }
       : {}),
@@ -58,32 +61,32 @@ export function toGalleryItem(doc: Media, locale: Locale): GalleryItem {
 export type GalleryPage = { items: GalleryItem[]; total: number; nextCursor: string | null }
 
 /** Newest first, keyset-paginated by id (stable when new photos are added). */
-export const getGalleryPage = (locale: Locale, f: { categoryId?: number; tagId?: number; cursor?: number; limit: number }) =>
-  unstable_cache(
-    async (): Promise<GalleryPage> => {
-      const res = await (await getPayload()).find({
-        collection: 'media',
-        locale,
-        ...query,
-        where: galleryWhere(f),
-        sort: '-id',
-        limit: f.limit,
-      })
-      const docs = res.docs as Media[]
-      return {
-        items: docs.map((d) => toGalleryItem(d, locale)),
-        total: res.totalDocs,
-        nextCursor: res.hasNextPage && docs.length ? encodeCursor(docs.at(-1)!.id) : null,
-      }
-    },
-    ['galleryPage', locale, JSON.stringify(f)],
-    { tags, revalidate: HOUR },
-  )()
+export function getGalleryPage(locale: Locale, f: { categoryId?: number; tagId?: number; cursor?: number; limit: number }) {
+  const load = async (): Promise<GalleryPage> => {
+    const res = await (await getPayload()).find({
+      collection: 'media',
+      locale,
+      ...mediaQuery,
+      where: galleryWhere(f),
+      sort: '-id',
+      limit: f.limit,
+    })
+    const docs = res.docs as Media[]
+    return {
+      items: docs.map((d) => toGalleryItem(d, locale)),
+      total: res.totalDocs,
+      nextCursor: res.hasNextPage && docs.length ? encodeCursor(docs.at(-1)!.id) : null,
+    }
+  }
+  // Cursor pages are visitor-chosen keys: never cache them in-process (the feed's Cache-Control covers the edge).
+  if (f.cursor) return load()
+  return unstable_cache(load, ['galleryPage', locale, JSON.stringify(f)], { tags, revalidate: HOUR })()
+}
 
 export const getGalleryTags = (locale: Locale) =>
   unstable_cache(
     async () => {
-      const res = await (await getPayload()).find({ collection: 'tags', locale, limit: 100, sort: 'name', depth: 0, select: { name: true, slug: true } })
+      const res = await (await getPayload()).find({ collection: 'tags', locale, limit: 100, sort: 'name', depth: 0, overrideAccess: false, select: { name: true, slug: true } })
       return res.docs.filter((d) => d.slug && d.name)
     },
     ['galleryTags', locale],
@@ -96,10 +99,10 @@ export const getImage = (locale: Locale, slug: string) =>
     async () => {
       const payload = await getPayload()
       const where = { and: [...galleryWhere({}).and, { seoFilename: { equals: slug } }] }
-      const res = await payload.find({ collection: 'media', locale, ...query, where, limit: 1 })
+      const res = await payload.find({ collection: 'media', locale, ...mediaQuery, where, limit: 1 })
       const doc = res.docs[0] as Media | undefined
       if (!doc) return null
-      const all = await payload.find({ collection: 'media', locale: 'all', where, limit: 1, depth: 0, select: { title: true } })
+      const all = await payload.find({ collection: 'media', locale: 'all', where, limit: 1, depth: 0, overrideAccess: false, select: { title: true } })
       const titles = (all.docs[0]?.title ?? {}) as unknown as Record<string, string | null | undefined>
       const project = rel<Project>(doc.project)
       return {

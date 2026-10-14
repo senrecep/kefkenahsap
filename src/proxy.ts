@@ -9,6 +9,12 @@ import attachmentPathList from './lib/legacy/wp-attachment-paths.json'
 import { resolveLegacy, type LegacyMaps } from './lib/legacy/resolve'
 
 const intl = createMiddleware(routing)
+const FEED_PATHS = new Set(
+  routing.locales.map((l) => {
+    const p = routing.pathnames['/galeri']
+    return `/${l}${typeof p === 'string' ? p : p[l]}/feed`
+  }),
+)
 
 const legacyMaps: LegacyMaps = { media, attachments, attachmentPaths: new Set(attachmentPathList) }
 const mediaBase = [process.env.MEDIA_PUBLIC_URL, process.env.S3_PREFIX].filter(Boolean).join('/')
@@ -51,7 +57,10 @@ export default function proxy(req: NextRequest) {
     return NextResponse.redirect(new URL(pathname.replace(/\/+$/, '') + req.nextUrl.search, req.url), 308)
   }
 
-  return intl(req)
+  const res = intl(req)
+  // The gallery feed is cacheable JSON: a locale Set-Cookie would make the edge skip it.
+  if (FEED_PATHS.has(pathname)) res.headers.delete('set-cookie')
+  return res
 }
 
 export const config = {

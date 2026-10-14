@@ -31,8 +31,12 @@ export function Lightbox({ items, index, total, onIndex, onClose }: LightboxProp
   useEffect(() => {
     const d = dialog.current!
     const back = window.location.href
+    const opener = document.activeElement as HTMLElement | null
     if (!d.open) d.showModal()
-    return () => window.history.replaceState(window.history.state, '', back)
+    return () => {
+      window.history.replaceState(window.history.state, '', back)
+      opener?.focus()
+    }
   }, [])
 
   useEffect(() => {

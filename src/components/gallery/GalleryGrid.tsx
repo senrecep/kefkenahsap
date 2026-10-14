@@ -16,6 +16,8 @@ const LAYOUTS = [
   { cols: 3, className: 'hidden grid-cols-3 gap-4 md:grid lg:hidden' },
   { cols: 4, className: 'hidden grid-cols-4 gap-4 lg:grid' },
 ] as const
+// Scrolling loads at most this many pages by itself; then the button takes over so the footer stays reachable.
+const AUTO_PAGES = 2
 const SIZES = '(min-width: 1280px) 296px, (min-width: 1024px) 23vw, (min-width: 768px) 31vw, 48vw'
 
 /** Masonry gallery: SSR first page, infinite feed appended to column ends, lightbox loaded on first open. */
@@ -40,6 +42,7 @@ export function GalleryGrid({
   const [open, setOpen] = useState<number | null>(null)
   const [Lightbox, setLightbox] = useState<ComponentType<LightboxProps> | null>(null)
   const inFlight = useRef(false)
+  const [autoLoads, setAutoLoads] = useState(0)
   const sentinel = useRef<HTMLDivElement>(null)
 
   const layouts = useMemo(() => LAYOUTS.map((l) => ({ ...l, columns: distribute(items, l.cols) })), [items])
@@ -65,19 +68,32 @@ export function GalleryGrid({
     }
   }, [cursor, feedUrl])
 
-  // Auto-load near the end; after a failure only the button retries.
+  // Auto-load near the end (a limited number of times); after a failure only the button retries.
   useEffect(() => {
     const el = sentinel.current
-    if (!el || !cursor || failed) return
-    const io = new IntersectionObserver((entries) => entries[0]?.isIntersecting && void loadMore(), { rootMargin: '900px 0px' })
+    if (!el || !cursor || failed || autoLoads >= AUTO_PAGES) return
+    const io = new IntersectionObserver(
+      (entries) => {
+        if (!entries[0]?.isIntersecting || inFlight.current) return
+        setAutoLoads((n) => n + 1)
+        void loadMore()
+      },
+      { rootMargin: '900px 0px' },
+    )
     io.observe(el)
     return () => io.disconnect()
-  }, [cursor, failed, loadMore])
+  }, [cursor, failed, autoLoads, loadMore])
 
   const openAt = async (index: number) => {
     if (!Lightbox) {
-      const mod = await import('./Lightbox')
-      setLightbox(() => mod.Lightbox)
+      try {
+        const mod = await import('./Lightbox')
+        setLightbox(() => mod.Lightbox)
+      } catch {
+        // Chunk failed (offline, new deploy): the card's own page still works.
+        window.location.assign(items[index]!.href)
+        return
+      }
     }
     setOpen(index)
   }

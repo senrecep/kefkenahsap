@@ -13,11 +13,18 @@ import { buildAlternates, siteUrl } from '@/lib/seo/alternates'
 
 type Props = { params: Promise<{ locale: Locale }>; searchParams: Promise<Record<string, string | string[] | undefined>> }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { locale } = await params
+export async function generateMetadata({ params, searchParams }: Props): Promise<Metadata> {
+  const [{ locale }, query] = await Promise.all([params, searchParams])
+  const parsed = parseGalleryQuery(query)
   const t = await getTranslations({ locale, namespace: 'Gallery' })
   const paths = Object.fromEntries(routing.locales.map((l) => [l, getPathname({ locale: l, href: '/galeri' })]))
-  return { title: t('title'), description: t('metaDescription'), alternates: buildAlternates({ current: locale, paths, site: siteUrl() }) }
+  return {
+    title: t('title'),
+    description: t('metaDescription'),
+    alternates: buildAlternates({ current: locale, paths, site: siteUrl() }),
+    // No-JS "?sayfa=N" pages repeat page 1's photos; index only the first.
+    ...(parsed.ok && parsed.value.page > 1 ? { robots: { index: false, follow: true } } : {}),
+  }
 }
 
 export default async function GalleryPage({ params, searchParams }: Props) {
