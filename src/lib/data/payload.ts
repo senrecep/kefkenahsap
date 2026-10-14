@@ -12,6 +12,7 @@ export const TAGS = {
   projects: 'projects',
   pages: 'pages',
   guides: 'guides',
+  regions: 'regions',
   references: 'references',
   tags: 'tags',
   homepage: 'homepage',

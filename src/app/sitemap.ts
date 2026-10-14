@@ -4,6 +4,7 @@ import { routing } from '@/i18n/routing'
 import { getGuides } from '@/lib/data/guides'
 import { getHomepage } from '@/lib/data/home'
 import { CMS_PAGES, getPageTitles } from '@/lib/data/pages'
+import { getRegionSitemapDocs } from '@/lib/data/regions'
 import { getSitemapDocs } from '@/lib/data/seo'
 import { siteUrl } from '@/lib/seo/alternates'
 import { cmsPagePaths, staticPaths } from '@/lib/seo/page-metadata'
@@ -23,8 +24,10 @@ const guideIndexPaths = async () => {
 const isCms = (href: string): href is keyof typeof CMS_PAGES => href in CMS_PAGES
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const [docs, home] = await Promise.all([
+  const [docs, regions, home] = await Promise.all([
     getSitemapDocs(),
+    // Regions: only locales that pass the publish gate (≥3 projects + ≥250 words).
+    getRegionSitemapDocs(),
     getHomepage(routing.defaultLocale).catch((err) => {
       console.error('sitemap: homepage lastmod unavailable', err)
       return null
@@ -37,5 +40,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: href === '/' ? home?.updatedAt : undefined,
     })),
   )
-  return sitemapEntries([...fixed, ...docs], siteUrl())
+  return sitemapEntries([...fixed, ...docs, ...regions], siteUrl())
 }

@@ -75,6 +75,7 @@ export interface Config {
     references: Reference;
     pages: Page;
     guides: Guide;
+    regions: Region;
     leads: Lead;
     'lead-photos': LeadPhoto;
     'ai-usage': AiUsage;
@@ -92,6 +93,9 @@ export interface Config {
     references: {
       projects: 'projects';
     };
+    regions: {
+      projects: 'projects';
+    };
   };
   collectionsSelect: {
     users: UsersSelect<false> | UsersSelect<true>;
@@ -102,6 +106,7 @@ export interface Config {
     references: ReferencesSelect<false> | ReferencesSelect<true>;
     pages: PagesSelect<false> | PagesSelect<true>;
     guides: GuidesSelect<false> | GuidesSelect<true>;
+    regions: RegionsSelect<false> | RegionsSelect<true>;
     leads: LeadsSelect<false> | LeadsSelect<true>;
     'lead-photos': LeadPhotosSelect<false> | LeadPhotosSelect<true>;
     'ai-usage': AiUsageSelect<false> | AiUsageSelect<true>;
@@ -391,6 +396,7 @@ export interface Project {
   } | null;
   city?: string | null;
   district?: string | null;
+  region?: (number | null) | Region;
   year?: number | null;
   areaValue?: number | null;
   areaUnit?: ('m2' | 'm' | 'piece') | null;
@@ -408,6 +414,43 @@ export interface Project {
     consentGiven?: boolean | null;
   };
   reference?: (number | null) | Reference;
+  updatedAt: string;
+  createdAt: string;
+  _status?: ('draft' | 'published') | null;
+}
+/**
+ * En az 3 yayında proje ve 250 kelimelik kendi metni olan bölge arama motorlarına açılır; diğerleri gizli (noindex) kalır.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "regions".
+ */
+export interface Region {
+  id: number;
+  name: string;
+  /**
+   * Boş bırakılırsa addan üretilir.
+   */
+  slug?: string | null;
+  body?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  projects?: {
+    docs?: (number | Project)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
   _status?: ('draft' | 'published') | null;
@@ -776,6 +819,10 @@ export interface PayloadLockedDocument {
         value: number | Guide;
       } | null)
     | ({
+        relationTo: 'regions';
+        value: number | Region;
+      } | null)
+    | ({
         relationTo: 'leads';
         value: number | Lead;
       } | null)
@@ -1024,6 +1071,7 @@ export interface ProjectsSelect<T extends boolean = true> {
   story?: T;
   city?: T;
   district?: T;
+  region?: T;
   year?: T;
   areaValue?: T;
   areaUnit?: T;
@@ -1105,6 +1153,19 @@ export interface GuidesSelect<T extends boolean = true> {
         title?: T;
         description?: T;
       };
+  updatedAt?: T;
+  createdAt?: T;
+  _status?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "regions_select".
+ */
+export interface RegionsSelect<T extends boolean = true> {
+  name?: T;
+  slug?: T;
+  body?: T;
+  projects?: T;
   updatedAt?: T;
   createdAt?: T;
   _status?: T;

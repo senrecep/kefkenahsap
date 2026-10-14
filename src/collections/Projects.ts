@@ -52,6 +52,7 @@ export const Projects: CollectionConfig = {
         { type: 'row', fields: [
           { name: 'city', type: 'text', label: 'İl' },
           { name: 'district', type: 'text', label: 'İlçe' },
+          { name: 'region', type: 'relationship', relationTo: 'regions', label: 'Bölge' },
           { name: 'year', type: 'number', label: 'Yıl', min: 1980, max: 2100 },
         ] },
         { type: 'row', fields: [

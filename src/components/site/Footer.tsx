@@ -5,18 +5,22 @@ import { Link } from '@/i18n/navigation'
 import type { Locale } from '@/i18n/routing'
 import { sinceYear } from '@/lib/company'
 import { telLink, waLink } from '@/lib/contact'
+import { getRegions } from '@/lib/data/regions'
 import { getNavCategories, getSiteSettings } from '@/lib/data/site'
 
 import { CookiePreferencesButton } from './CookiePreferencesButton'
 
 export async function Footer({ locale }: { locale: Locale }) {
-  const [t, tNav, tDays, tConsent, settings, categories] = await Promise.all([
+  const [t, tNav, tDays, tConsent, tRegions, settings, categories, regions] = await Promise.all([
     getTranslations('Footer'),
     getTranslations('Nav'),
     getTranslations('Days'),
     getTranslations('Consent'),
+    getTranslations('Regions'),
     getSiteSettings(locale),
     getNavCategories(locale).then((cs) => cs.filter((c) => c.slug)),
+    // Only regions that pass the publish gate are linked; the rest stay unlisted (noindex).
+    getRegions(locale).then((rs) => rs.filter((r) => r.indexable)),
   ])
   const tel = telLink(settings)
   const wa = waLink(settings)
@@ -82,6 +86,20 @@ export async function Footer({ locale }: { locale: Locale }) {
               </li>
             ))}
           </ul>
+          {regions.length > 0 && (
+            <>
+              <p className={`${h} mt-6`}>{tRegions('title')}</p>
+              <ul className="grid gap-1.5">
+                {regions.map((r) => (
+                  <li key={r.id}>
+                    <a href={r.href} className="text-paper/90 hover:underline">
+                      {r.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
         </div>
         <div>
           <p className={h}>{t('legal')}</p>
