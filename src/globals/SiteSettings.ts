@@ -1,6 +1,7 @@
 import type { GlobalConfig } from 'payload'
 
 import { isAdminField, isStaff } from '@/access'
+import { validateHref } from '@/lib/http/safe-href'
 
 // Single source for NAP, founder facts, socials and WhatsApp templates (schema.org, footer, llms.txt read from here).
 // Empty optional fields render nothing anywhere (PRODUCT.md: no invented claims).
@@ -60,7 +61,7 @@ export const SiteSettings: GlobalConfig = {
                 ] },
                 { name: 'country', type: 'text', defaultValue: 'TR' },
                 { type: 'row', fields: [{ name: 'lat', type: 'number' }, { name: 'lng', type: 'number' }] },
-                { name: 'mapUrl', type: 'text', label: 'Yol tarifi linki (Google Maps)' },
+                { name: 'mapUrl', type: 'text', validate: validateHref, label: 'Yol tarifi linki (Google Maps)' },
               ],
             },
             {
@@ -107,9 +108,9 @@ export const SiteSettings: GlobalConfig = {
               name: 'social',
               type: 'group',
               fields: [
-                { name: 'instagram', type: 'text' },
-                { name: 'facebook', type: 'text' },
-                { name: 'googleBusiness', type: 'text', label: 'Google İşletme Profili linki' },
+                { name: 'instagram', type: 'text', validate: validateHref },
+                { name: 'facebook', type: 'text', validate: validateHref },
+                { name: 'googleBusiness', type: 'text', validate: validateHref, label: 'Google İşletme Profili linki' },
               ],
             },
             { name: 'defaultDescription', type: 'textarea', localized: true, label: 'Varsayılan meta açıklama' },

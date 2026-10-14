@@ -9,5 +9,8 @@ const plausible = (y: number | null | undefined): y is number => typeof y === 'n
 export const sinceYear = (f: Facts): Maybe<number> => (plausible(f.foundingYear) ? Maybe.some(f.foundingYear) : Maybe.none())
 
 /** "X yıllık usta" — only from the confirmed craft start year (PRODUCT.md: never derive "30 yıl" from anything else). */
-export const craftYears = (f: Facts, clock: DateTimeProvider): Maybe<number> =>
-  plausible(f.craftStartYear) ? Maybe.some(clock.utcNow().getUTCFullYear() - f.craftStartYear) : Maybe.none()
+export const craftYears = (f: Facts, clock: DateTimeProvider): Maybe<number> => {
+  if (!plausible(f.craftStartYear)) return Maybe.none()
+  const years = clock.utcNow().getUTCFullYear() - f.craftStartYear
+  return years >= 1 ? Maybe.some(years) : Maybe.none()
+}

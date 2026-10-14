@@ -1,10 +1,11 @@
 import type { Field, GlobalConfig } from 'payload'
 
 import { isStaff } from '@/access'
+import { validateHref } from '@/lib/http/safe-href'
 
 const link: Field[] = [
   { name: 'label', type: 'text', localized: true, required: true },
-  { name: 'href', type: 'text', required: true, admin: { description: 'Dil öneki olmadan, ör. /referanslar' } },
+  { name: 'href', type: 'text', required: true, validate: validateHref, admin: { description: 'Dil öneki olmadan, ör. /referanslar' } },
 ]
 
 export const Navigation: GlobalConfig = {

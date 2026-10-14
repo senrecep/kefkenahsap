@@ -23,3 +23,10 @@ describe('company claims render only from confirmed facts', () => {
     expect(Maybe.isNone(craftYears({ craftStartYear: 1800 }, clock))).toBe(true)
   })
 })
+
+describe('craft years bounds', () => {
+  it('a future or current start year produces no claim', () => {
+    expect(Maybe.isNone(craftYears({ craftStartYear: 2030 }, clock))).toBe(true)
+    expect(Maybe.isNone(craftYears({ craftStartYear: 2026 }, clock))).toBe(true)
+  })
+})

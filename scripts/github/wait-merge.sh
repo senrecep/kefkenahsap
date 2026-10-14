@@ -3,9 +3,10 @@
 set -uo pipefail
 pr="$1"; comment="${2:-}"; R=senrecep/kefkenahsap
 s=""
-until [ "$s" = pass ] || [ "$s" = fail ]; do
+for _ in $(seq 1 120); do # ≤30 min
   sleep 15
   s=$(gh pr checks "$pr" -R $R 2>/dev/null | awk '$1=="check"{print $2}')
+  case "$s" in ""|pending) ;; *) break ;; esac
 done
 echo "check=$s"
 [ "$s" = pass ] || exit 1

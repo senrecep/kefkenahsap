@@ -38,3 +38,17 @@ describe('whatsappUrl', () => {
     expect(whatsappUrl({ phone: '05322958416' })).toEqual(Result.success('https://wa.me/905322958416'))
   })
 })
+
+describe('review follow-ups', () => {
+  it('accepts the 00 international prefix', () => {
+    expect(normalizeTrPhone('0090 532 295 84 16')).toEqual(Result.success('905322958416'))
+  })
+  it('rejects landlines for WhatsApp (no WhatsApp on 0212 numbers)', () => {
+    const r = whatsappUrl({ phone: '0212 322 43 59' })
+    expect(Result.isFailure(r) && r.errors[0]?.code).toBe('Phone.NotMobile')
+  })
+  it('keeps line breaks in multi-line templates', () => {
+    const r = whatsappUrl({ phone: '05322958416', template: 'Merhaba,\n{category} için teklif istiyorum.', vars: { category: 'Pergola' } })
+    expect(r).toEqual(Result.success('https://wa.me/905322958416?text=' + encodeURIComponent('Merhaba,\nPergola için teklif istiyorum.')))
+  })
+})
