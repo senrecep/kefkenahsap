@@ -1,6 +1,6 @@
 import type { GlobalConfig } from 'payload'
 
-import { isAdmin, isStaff } from '@/access'
+import { isAdminField, isStaff } from '@/access'
 
 // Single source for NAP, founder facts, socials and WhatsApp templates (schema.org, footer, llms.txt read from here).
 // Empty optional fields render nothing anywhere (PRODUCT.md: no invented claims).
@@ -114,7 +114,7 @@ export const SiteSettings: GlobalConfig = {
             },
             { name: 'defaultDescription', type: 'textarea', localized: true, label: 'Varsayılan meta açıklama' },
             { name: 'defaultOgImage', type: 'upload', relationTo: 'media' },
-            { name: 'gaId', type: 'text', label: 'GA4 ölçüm kimliği', access: { update: ({ req }) => Boolean(isAdmin({ req } as never)) } },
+            { name: 'gaId', type: 'text', label: 'GA4 ölçüm kimliği', access: { update: isAdminField } },
           ],
         },
       ],
