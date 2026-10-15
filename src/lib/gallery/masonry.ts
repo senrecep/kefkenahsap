@@ -97,7 +97,7 @@ const HIDDEN_COST = 0.3
 /**
  * For a fixed set (no feed appends), #156: balances, then rearranges for the most even bottom edge after trimColumns
  * (ragged edge plus HIDDEN_COST per hidden photo), and trims. So the grid ends on a near-even line while hiding as few
- * chosen photos as it can.
+ * chosen photos as it can, and never more than trimColumns alone.
  */
 export function evenColumns(items: readonly Box[], columns: readonly number[][], gap = 0.05): number[][] {
   const ragged: Score = (cols) => {
@@ -105,5 +105,8 @@ export function evenColumns(items: readonly Box[], columns: readonly number[][],
     const h = heightsOf(items, kept, gap)
     return Math.max(...h) - Math.min(...h) + HIDDEN_COST * (items.length - kept.flat().length)
   }
-  return trimColumns(items, improve(balanceColumns(items, columns, gap), ragged))
+  const even = trimColumns(items, improve(balanceColumns(items, columns, gap), ragged))
+  // The trade-off above may hide a photo for a straighter edge; never more than trimming alone would (#161 review).
+  const plain = trimColumns(items, columns)
+  return even.flat().length >= plain.flat().length ? even : plain
 }

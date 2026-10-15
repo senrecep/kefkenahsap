@@ -4,10 +4,15 @@
 // Loaded through a dynamic import once the samples scroll into view, so OGL never ships in the page's first-load JS.
 import { Box, Camera, Mesh, Program, Renderer, Texture, Transform } from 'ogl'
 
-import { fitDistance, FOV } from '@/lib/wood/samples'
+import { fitDistance, FOV, REACHABLE, WOOD_BOARD } from '@/lib/wood/samples'
 
-// A board lying face-up: 8:1 top face like the texture, about half as thick as it is wide (a sample offcut).
-const BOARD = { width: 4, height: 0.22, depth: 0.5 }
+// Framing for every reachable pose costs a few tens of ms; the tile keeps its aspect, so it is worked out once per aspect.
+const distances = new Map<string, number>()
+const distanceFor = (aspect: number) => {
+  const key = aspect.toFixed(2)
+  if (!distances.has(key)) distances.set(key, fitDistance(WOOD_BOARD, REACHABLE, aspect))
+  return distances.get(key)!
+}
 
 const vertex = /* glsl */ `
 attribute vec3 position;
@@ -43,7 +48,9 @@ void main() {
   // across. The top shows the photo; a long edge shows a thin strip of it (the same grain, seen edge-on); an end shows end
   // grain: one column of the photo, darker, as sawn end grain is.
   vec3 f = abs(vFace);
-  vec2 uv = f.y > 0.5 ? vUv : f.z > 0.5 ? vec2(vUv.x, 0.45 + vUv.y * 0.1) : vec2(0.02 + vUv.y * 0.02, vUv.x);
+  // The board is 6.4:1, shorter than the 8:1 photo: it shows the middle 80% of the photo's length, uncropped across.
+  float u = 0.1 + vUv.x * 0.8;
+  vec2 uv = f.y > 0.5 ? vec2(u, vUv.y) : f.z > 0.5 ? vec2(u, 0.45 + vUv.y * 0.1) : vec2(0.12 + vUv.y * 0.02, vUv.x);
   vec3 base = texture2D(tMap, uv).rgb * (f.x > 0.5 ? 0.62 : f.z > 0.5 ? 0.86 : 1.0);
   // Grain relief: darker latewood reads as slightly lower, so the light catches the grain lines.
   vec2 g = f.y > 0.5 ? vec2(lum(uv + vec2(uTexel.x, 0.0)) - lum(uv - vec2(uTexel.x, 0.0)), lum(uv + vec2(0.0, uTexel.y)) - lum(uv - vec2(0.0, uTexel.y))) : vec2(0.0);
@@ -104,26 +111,21 @@ export async function mountWoodScene(
       uniforms: { tMap: { value: texture }, uTexel: { value: [1 / img.naturalWidth, 1 / img.naturalHeight] } },
     })
     const plank = new Mesh(gl, {
-      geometry: new Box(gl, BOARD),
+      geometry: new Box(gl, WOOD_BOARD),
       program,
     })
-    // A turntable: the board turns about its own vertical axis (y) on a stand that tilts toward the camera (x), so the
-    // top face stays a surface seen from above whichever way it is turned.
-    const stand = new Transform()
-    stand.setParent(scene)
-    plank.setParent(stand)
-    const turn = (r: { x: number; y: number }) => {
-      stand.rotation.x = r.x
-      plank.rotation.y = r.y
-    }
+    // Tilted about its long axis, then turned about the world vertical (OGL's YXZ order): the long axis stays level, so
+    // no turn swings an end up out of the tile.
+    plank.setParent(scene)
+    const turn = (r: { x: number; y: number }) => plank.rotation.set(r.x, r.y, 0)
     turn(rotation)
     const draw = () => renderer.render({ scene, camera })
     resize = () => {
       const aspect = frame.clientWidth / Math.max(1, frame.clientHeight)
       renderer.setSize(frame.clientWidth, frame.clientHeight)
       camera.perspective({ aspect })
-      // Framed for the rest pose, so the board fills the tile at any size; turning it later never re-zooms.
-      camera.position.set(0, 0, fitDistance(BOARD, rotation, aspect))
+      // Framed for every pose a drag can reach, so the board fills the tile at rest and never leaves it when turned.
+      camera.position.set(0, 0, distanceFor(aspect))
       draw()
     }
     canvas.addEventListener('webglcontextlost', lost)

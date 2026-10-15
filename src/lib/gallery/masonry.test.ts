@@ -144,4 +144,14 @@ describe('evenColumns (#156: the homepage grid, a fixed set)', () => {
       expect(even.flat().length).toBeGreaterThanOrEqual(plain.flat().length)
     }
   })
+
+  it('never hides more photos than trimming alone (review of #161), over many mixed sets', () => {
+    let seed = 7
+    const rnd = () => (seed = (seed * 1103515245 + 12345) % 2 ** 31) / 2 ** 31
+    const ratios = [0.5625, 0.75, 1, 1.33]
+    for (let t = 0; t < 200; t++) {
+      const items = Array.from({ length: 16 }, () => r(ratios[Math.floor(rnd() * ratios.length)]!))
+      for (const n of [2, 3, 4]) expect(evenColumns(items, distribute(items, n)).flat().length).toBeGreaterThanOrEqual(trimColumns(items, distribute(items, n)).flat().length)
+    }
+  })
 })

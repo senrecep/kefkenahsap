@@ -2,7 +2,8 @@
 // so the seeded ar titles left the slug empty (or a bare year, the only Latin in the title): those projects were not
 // "published" in ar (no home tile, no related work on the ar guides). ar takes the hand-written slug from
 // seed/i18n/ar/content/project-stories.json (the project found by its cluster's TR title); any other gap takes the
-// transliterated title. A slug is written only while it is empty or exactly the old hook's output (slugFix), so an
+// transliterated title. A slug is written only while it is empty, exactly the old hook's output, or a bare number on an
+// Arabic title (the old output once #148 took the year out of the title; on dev: 2014 / 2016) — see slugFix. So an
 // editor's slug is kept and a re-run writes nothing.
 // Where the write goes (as project-story-fixes.ts): a never-published project gets a new draft version; a published one
 // whose latest version is the published one gets a new published version changing only the slug; a published one with

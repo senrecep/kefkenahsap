@@ -40,6 +40,8 @@ describe('slugify', () => {
     expect(value('أرضيات خشبية')).toBe('ardyat-khshbya')
     // ح h, د d, ق q, ل l, ع dropped, ذ dh, ظ z, غ gh; harakat and tatweel vanish; Arabic-Indic digits become ASCII.
     expect(value('حديقة عامّة ذات ظلّ غـابة ٢٠١٤')).toBe('hdyqa-ama-dhat-zl-ghaba-2014')
+    // Persian-style kaf and yeh (ک U+06A9, ی U+06CC), common in typed Arabic text: k and y, not dropped.
+    expect(value('کرسی')).toBe('krsy')
   })
 
   it('every real ar project title gives a distinct, non-numeric Latin slug (#156: they were empty or a bare year)', () => {

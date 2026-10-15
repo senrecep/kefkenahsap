@@ -2,14 +2,13 @@
 
 import { useCallback, useEffect, useId, useRef, useState } from 'react'
 
-import { can3d, keyRotation, rotate, type WoodKey } from '@/lib/wood/samples'
+import { can3d, keyRotation, rotate, WOOD_REST, type WoodKey } from '@/lib/wood/samples'
 
 import type { WoodScene } from './wood-scene'
 
 type Labels = { hint: string; note: string; title: string; roledescription: string }
 type Sample = { key: WoodKey; texture: string; name: string; fact: string; source?: { label: string; href: string } }
-// A board lying face-up, seen from about 40° above and turned a little: top face, front edge, end grain all read at rest.
-const START = { x: 0.6, y: -0.26 }
+const START = WOOD_REST
 
 function env() {
   const nav = navigator as Navigator & {

@@ -1,4 +1,4 @@
-import { categoryRank } from '@/lib/gallery/curate'
+import { OUTDOOR_FIRST } from '@/lib/gallery/curate'
 
 /**
  * "İlgili yazılar" (#146): other guides, those sharing more related categories first, then the newest. `guides` comes
@@ -22,10 +22,10 @@ type Cat = { id: number; slug?: string | null }
  */
 export function guideProjects<T extends { categories: Cat[] }>(projects: T[], categories: Cat[], limit = 3): T[] {
   const order = categories.map((c) => c.id)
-  const outdoor = categoryRank([])
   const key = (p: T) => [
     Math.min(...p.categories.map((c) => order.indexOf(c.id)).filter((i) => i >= 0)),
-    Math.min(1000, ...p.categories.map((c) => outdoor(c.slug ?? ''))),
+    // Outdoor or not, a binary: the order within OUTDOOR_FIRST is for gallery mixing, not for this.
+    p.categories.some((c) => (OUTDOOR_FIRST as readonly string[]).includes(c.slug ?? '')) ? 0 : 1,
   ]
   return projects
     .map((p) => ({ p, k: key(p) }))
