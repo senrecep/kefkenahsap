@@ -235,6 +235,24 @@ body {
   font-size: 14px;
 }
 
+/* Dashboard cards: compact rows (no empty body), title readable, the whole card is the link (.card__click overlay). */
+.collections__card-list .card {
+  align-items: center;
+  block-size: auto;
+  min-block-size: 64px;
+  padding-block: 8px;
+}
+
+.collections__card-list .card__title {
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+.card__actions .btn__icon {
+  inline-size: 40px;
+  block-size: 40px;
+}
+
 /* Brand (admin.components.graphics). The lockup's grey "AHŞAP DEKORASYON" needs a light ground in dark mode. */
 .brand-logo {
   display: block;

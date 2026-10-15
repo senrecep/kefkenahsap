@@ -34,8 +34,7 @@ async function smallTargets(page: Page): Promise<string[]> {
 async function expectNoSmallTargets(page: Page, screen: string, { checkScroll = true } = {}) {
   // Let client components (react-select, Galeri cards) settle before measuring.
   await page.waitForLoadState('load')
-  await page.waitForTimeout(500)
-  expect(await smallTargets(page), `${screen}: targets under ${MIN}px`).toEqual([])
+  await expect.poll(() => smallTargets(page), { message: `${screen}: targets under ${MIN}px` }).toEqual([])
   if (checkScroll)
     expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth), `${screen}: horizontal scroll`).toBeLessThanOrEqual(0)
 }
@@ -73,8 +72,11 @@ test.describe('admin tap targets', () => {
 
   test.afterAll(async () => {
     const payload = await getPayload({ config })
-    await payload.delete({ collection: 'media', where: { category: { equals: categoryId } } })
-    await payload.delete({ collection: 'categories', id: categoryId })
+    // Never delete with an undefined filter: if beforeAll failed early there is no category to clean up.
+    if (categoryId) {
+      await payload.delete({ collection: 'media', where: { category: { equals: categoryId } } })
+      await payload.delete({ collection: 'categories', id: categoryId })
+    }
     await payload.delete({ collection: 'users', where: { email: { in: users.map((u) => u.email) } } })
   })
 
@@ -92,6 +94,9 @@ test.describe('admin tap targets', () => {
         await login({ page: p, user })
 
         await expect(p.locator('.editor-home')).toBeVisible()
+        // Editors reach media and categories through Galeri only.
+        for (const slug of ['media', 'categories'])
+          await expect(p.locator(`#card-${slug}`)).toBeVisible({ visible: user.role === 'admin' })
         await expectNoSmallTargets(p, at('dashboard'))
         if (width < 769) {
           await p.locator('.app-header__mobile-nav-toggler').click()

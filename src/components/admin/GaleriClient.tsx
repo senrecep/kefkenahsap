@@ -87,6 +87,8 @@ export function GaleriClient({ categories, projects }: { categories: Option[]; p
   const [cardError, setCardError] = useState<Record<number, string>>({})
   const [busy, setBusy] = useState<number | null>(null)
   const [moving, setMoving] = useState(false)
+  // Read synchronously: a second tap can land before React re-renders with `moving` set.
+  const movingRef = useRef(false)
   const [filter, setFilter] = useState<StatusFilter>('all')
   // Photos changed under the current filter stay in view until the filter changes (no card vanishes on "Onayla").
   const [kept, setKept] = useState<ReadonlySet<number>>(new Set())
@@ -213,9 +215,10 @@ export function GaleriClient({ categories, projects }: { categories: Option[]; p
 
   async function move(from: number, to: number) {
     const r = reorder(items, from, to)
-    if (!r || moving || !category) return
+    if (!r || movingRef.current || !category) return
     const before = items
     setItems(r.next)
+    movingRef.current = true
     setMoving(true)
     const fail = (message: string) => {
       setItems(before)
@@ -244,12 +247,22 @@ export function GaleriClient({ categories, projects }: { categories: Option[]; p
       }
     } catch (e) {
       fail((e as Error).message)
+      movingRef.current = false
+      setMoving(false)
       return
+    }
+    // Saved. Fresh order keys arrive before the next move is allowed; the next move builds on them.
+    // A failed refresh keeps the optimistic list (the move itself is saved), and a refresh for a category
+    // the user has left since must not replace the one on screen.
+    try {
+      const fresh = await load(category)
+      if (categoryRef.current === category) setItems(fresh)
+    } catch {
+      // Stale keys only; the shown order is the saved one.
     } finally {
+      movingRef.current = false
       setMoving(false)
     }
-    // The move is saved; a failed refresh only leaves stale keys, so it must not revert the order.
-    load(category).then(setItems, () => undefined)
   }
 
   if (!categories.length)
@@ -266,6 +279,7 @@ export function GaleriClient({ categories, projects }: { categories: Option[]; p
   const activeQueue = queue.filter((e) => e.state !== 'done')
   const doneCount = queue.filter((e) => e.state === 'done').length
   const counts = statusCounts(items)
+  const truncated = isTruncated(items.length)
   const visible = items
     .map((m, i) => ({ m, i }))
     .filter(({ m }) => filter === 'all' || (m.status ?? 'pending') === filter || kept.has(m.id))
@@ -408,7 +422,10 @@ export function GaleriClient({ categories, projects }: { categories: Option[]; p
               Bitti
             </button>
           </div>
-          <p className="galeri__note">Fotoğraflar sitede bu sırayla görünür. Her değişiklik hemen kaydedilir.</p>
+          <p className="galeri__note">
+            Fotoğraflar sitede bu sırayla görünür. Her değişiklik hemen kaydedilir.
+            {truncated && ` Liste ilk ${MEDIA_LIMIT} fotoğrafı gösterdiği için “En sona” kapalı.`}
+          </p>
           <ol className="galeri__sortlist">
             {items.map((m, i) => {
               const label = nameOf(m)
@@ -436,7 +453,14 @@ export function GaleriClient({ categories, projects }: { categories: Option[]; p
                     <button type="button" className="galeri__btn galeri__btn--icon" aria-disabled={i === last || moving} onClick={() => void move(i, i + 1)} aria-label={`${label}: aşağı taşı`}>
                       ↓
                     </button>
-                    <button type="button" className="galeri__btn" aria-disabled={i === last || moving} onClick={() => void move(i, last)} aria-label={`En sona al: ${label}`}>
+                    <button
+                      type="button"
+                      className="galeri__btn"
+                      // Truncated list: its last row is not the category's last photo.
+                      aria-disabled={i === last || moving || truncated}
+                      onClick={() => !truncated && void move(i, last)}
+                      aria-label={`En sona al: ${label}`}
+                    >
                       En sona
                     </button>
                   </div>
