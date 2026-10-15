@@ -9,6 +9,7 @@ import { Container } from '@/components/ui/Container'
 import { buttonClass } from '@/components/ui/button'
 import { getPathname, Link } from '@/i18n/navigation'
 import type { Locale } from '@/i18n/routing'
+import { byCategoryOrder } from '@/lib/category/category'
 import { getProjectCards } from '@/lib/data/projects'
 import { categoryFilter } from '@/lib/projects/facts'
 import { siteUrl } from '@/lib/seo/alternates'
@@ -27,7 +28,8 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
 export default async function ProjectsPage({ params, searchParams }: { params: Params; searchParams: Search }) {
   const { locale } = await params
   setRequestLocale(locale)
-  const [t, cards, { kategori }] = await Promise.all([getTranslations('Projects'), getProjectCards(locale), searchParams])
+  // #148: outdoor work first (first category's admin order), newest first within a category.
+  const [t, cards, { kategori }] = await Promise.all([getTranslations('Projects'), getProjectCards(locale).then((c) => [...c].sort(byCategoryOrder)), searchParams])
   // Filter chips list only categories that have at least one project, so a chip never leads to an empty page.
   const used = [...new Map(cards.flatMap((c) => c.categories).filter((c) => c.slug).map((c) => [c.id, c])).values()]
   const active = categoryFilter(kategori, used)

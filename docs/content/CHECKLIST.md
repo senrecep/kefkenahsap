@@ -181,7 +181,7 @@ Bir kategoride tek bir aralık anlamlı değilse (ör. Mobilya ve Cila, Köprü 
 
 #33'teki 17 taslak projeye kısa bir hikâye (TR + EN) ve EN başlık eklendi. Kaynak `seed/content/project-stories.json`, yükleyici `scripts/seed/project-stories.ts`. Yükleyici yalnızca hiç yayınlanmamış taslaklarda ve yalnızca boş alanları doldurur. Yazdığı her şey taslaktır; tekrar çalıştırıldığında hiçbir şey yazmaz.
 
-Hikâyeler yalnızca fotoğrafta görüneni anlatıyor: yapı, görünen malzeme ve renk, çevre. Konum, müşteri, ölçü, süre ve yıl yazılmadı; başlıklardaki yıllar (2014, 2016) fotoğrafın EXIF tarihinden geliyor. Ahşap türü hikâyelere yazılmadı. Aşağıdaki tahminler yalnızca bu listede duruyor; doğruysa admin'de "Ahşap türü" alanına girilebilir.
+Hikâyeler #148'de yeniden yazıldı (5 dil): ne yaptığımızı ve ne için yaptığımızı 2–4 kısa cümleyle anlatıyor; dayanak yalnızca fotoğraflar ve onaylı görsel metinleri. Tablodaki kelime sayıları ilk sürüme aittir. Konum, müşteri, ölçü, süre ve yıl yazılmadı. İki projenin "Yıl" alanındaki 2014 ve 2016 fotoğrafın EXIF tarihinden geliyor (#148'de başlıktan bu alana taşındı); işin yılı değilse admin'de düzeltin. Ahşap türü hikâyelere yazılmadı. Aşağıdaki tahminler yalnızca bu listede duruyor; doğruysa admin'de "Ahşap türü" alanına girilebilir.
 
 Her proje için sahibinden beklenenler: il/ilçe, yıl, ölçü ve süre, ahşap türü, son kat. Bunlar bilinmeden proje yayınlanabilir, ama alanlar boş kalır.
 
@@ -207,7 +207,14 @@ Her proje için sahibinden beklenenler: il/ilçe, yıl, ölçü ve süre, ahşap
 
 EN başlık ve hikâyeler ilk geçiştir. **Dikkat:** EN başlık doluyken proje yayınlanırsa EN sayfa da açılır (EN slug başlıktan üretilir; slug + başlık dolu olan dil yayında sayılır). Yayınlamadan önce EN metni gözden geçirin ya da EN başlığı ve hikâyeyi boşaltın.
 
-Hikâyeler yalnızca görüneni anlatır: "yağlanmış" gibi son kat bilgisi yerine "parlak görünüyor" yazıldı. Gerçek son kat admin'deki "Finish / renk" alanına girilir.
+Son kat bilgisi ("yağlı", "vernikli") hikâyelere tahminle yazılmaz; gerçek son kat admin'deki "Finish / renk" alanına girilir. #148'deki hikâyelerde dört bilgi, fotoğrafın onaylı görsel metninden (başlık, alt metin, açıklama) alındı. Yanlışsa admin'de hikâyeden çıkarın:
+
+| # | Proje | Hikâyedeki bilgi | Kaynak (görsel metni) |
+|---|---|---|---|
+| 11 | Ahşap yemek masası ve bank | "İkisini de atölyemizde vernikledik." | "atölyede vernik işlemi tamamlanmış ahşap masa" |
+| 13 | Ahşap tezgâhlı mutfak bar masası | "…üstüne cila attık." | "Ahşap yüzeye cila uygulandı." |
+| 15 | Ofis resepsiyon bankosu ve çalışma alanı | "L biçiminde resepsiyon bankosu" | "L şeklinde resepsiyon bankosu" |
+| 16 | Beyaz oymalı vitrin ve konsol | "…cila ve boyasını atölyemizde yeniledik." (imalat değil, yenileme) | "Atölyemizde cila ve boya yenilemesi tamamlanan klasik oymalı vitrin" |
 
 ## Kategori metinleri ve SSS (#61)
 

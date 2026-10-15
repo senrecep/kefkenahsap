@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { Maybe } from 'tsentials/maybe'
 
-import { galleryLimit, hasRichText, pageFromQuery, priceGuide } from './category'
+import { byCategoryOrder, galleryLimit, hasRichText, pageFromQuery, priceGuide } from './category'
 
 describe('pageFromQuery (?sayfa=)', () => {
   it('accepts positive integers', () => {
@@ -59,5 +59,23 @@ describe('hasRichText', () => {
   })
   it('is true for non-text content such as an upload', () => {
     expect(hasRichText({ root: { children: [{ type: 'upload', value: 1 }] } })).toBe(true)
+  })
+})
+
+describe('byCategoryOrder (#148: outdoor work first on the projects index)', () => {
+  const p = (name: string, ...orders: (string | null)[]) => ({ name, categories: orders.map((_order) => ({ _order })) })
+
+  it("sorts by the first category's admin order; ties and uncategorised keep their incoming (newest-first) order", () => {
+    const deck = p('deck', 'a4')
+    const furniture = p('furniture', 'ac')
+    const deck2 = p('deck2', 'a4', 'ac')
+    const fence = p('fence', 'a6')
+    const none = p('none')
+    const unordered = p('unordered', null)
+    expect([furniture, none, deck, unordered, fence, deck2].sort(byCategoryOrder).map((x) => x.name)).toEqual(['deck', 'deck2', 'fence', 'furniture', 'none', 'unordered'])
+  })
+
+  it('compares fractional keys by code point, not locale ("a9" < "aa" < "b0")', () => {
+    expect([p('b', 'b0'), p('aa', 'aa'), p('a9', 'a9')].sort(byCategoryOrder).map((x) => x.name)).toEqual(['a9', 'aa', 'b'])
   })
 })
