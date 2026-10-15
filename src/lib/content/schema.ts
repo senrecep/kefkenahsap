@@ -89,6 +89,7 @@ export const parseEditorialTags = parseWith(
   z.object({ tags: z.array(z.object({ key: text, axis: z.enum(['wood', 'setting', 'stage']), name: localized, slug: localized.extend({ tr: slug, en: slug, ru: slug, de: slug, ar: slug }), raw: z.array(text).min(1) })) }),
 )
 const pick = z.object({ seedKey: text, reason: text })
+const swap = z.object({ from: text.nullable(), to: text, reason: text })
 export const parseEditorialPicks = parseWith(
   z.object({
     hero: pick.extend({ focal: z.object({ x: z.number().min(0).max(100), y: z.number().min(0).max(100) }) }),
@@ -96,6 +97,13 @@ export const parseEditorialPicks = parseWith(
     featuredProjects: z.array(z.object({ cluster: text, cover: text, reason: text })).max(6),
     categoryCovers: z.record(z.string(), pick),
     faq: z.array(z.object({ category: text, index: z.number().int().min(0), reason: text })).min(1),
+    // #156: re-picks (seedKeys), applied by scripts/seed/editorial-swaps.ts only where the previous pick is still in place.
+    swaps: z.object({
+      guideCovers: z.record(z.string(), swap),
+      categoryCovers: z.record(z.string(), swap),
+      projectCovers: z.record(z.string(), swap.extend({ from: z.null(), firstPhoto: text })),
+    }),
+    projectCategories: z.record(z.string(), z.object({ from: z.array(slug).min(1), add: z.array(slug).min(1), reason: text })),
   }),
 )
 

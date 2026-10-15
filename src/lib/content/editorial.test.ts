@@ -6,7 +6,7 @@ import { describe, expect, it } from 'vitest'
 import { DEFAULT_SECTIONS } from '@/lib/home/sections'
 import { SEED_CATEGORIES } from '@/seed/categories'
 
-import { type Faq, fillHomepageLayout, resolveFaq, tagKeysFor, type TagDef } from './editorial'
+import { appendCategories, coverSwap, type Faq, fillHomepageLayout, resolveFaq, tagKeysFor, type TagDef } from './editorial'
 import { parseCategory, parseCategoryOverlay, parseEditorialPicks, parseEditorialTags } from './schema'
 
 const names = (n: string) => ({ tr: n, en: n, ru: n, de: n, ar: n })
@@ -138,6 +138,39 @@ describe('fillHomepageLayout', () => {
   })
 })
 
+// #156: a re-pick replaces only the previous pick; anything else on the page is an owner's choice.
+describe('coverSwap', () => {
+  it('writes while the cover is still the previous pick', () => {
+    expect(coverSwap({ cover: 421 }, { cover: 421 }, 102)).toBe('write')
+  })
+  it('keeps a cover the owner changed, or cleared', () => {
+    expect(coverSwap({ cover: 500 }, { cover: 421 }, 102)).toBe('kept')
+    expect(coverSwap({ cover: null }, { cover: 421 }, 102)).toBe('kept')
+  })
+  it('is done once the new pick is in', () => {
+    expect(coverSwap({ cover: 102 }, { cover: 421 }, 102)).toBe('done')
+  })
+  it('previous pick "no cover": writes only while the computed hero (first gallery photo) is still the seeded first photo', () => {
+    expect(coverSwap({ cover: null, first: 257 }, { cover: null, first: 257 }, 275)).toBe('write')
+    expect(coverSwap({ cover: null, first: 268 }, { cover: null, first: 257 }, 275)).toBe('kept')
+    expect(coverSwap({ cover: null }, { cover: null, first: 257 }, 275)).toBe('kept')
+    expect(coverSwap({ cover: 268, first: 257 }, { cover: null, first: 257 }, 275)).toBe('kept')
+    expect(coverSwap({ cover: 275, first: 257 }, { cover: null, first: 257 }, 275)).toBe('done')
+  })
+})
+
+describe('appendCategories', () => {
+  it('appends while the list is exactly the seeded one', () => {
+    expect(appendCategories([3], [3], [4, 6])).toEqual([3, 4, 6])
+  })
+  it('is done once appended, and keeps any other list', () => {
+    expect(appendCategories([3, 4, 6], [3], [4, 6])).toBe('done')
+    expect(appendCategories([3, 4], [3], [4, 6])).toBe('kept')
+    expect(appendCategories([4, 3], [3, 4], [6])).toBe('kept')
+    expect(appendCategories([], [3], [4])).toBe('kept')
+  })
+})
+
 // The committed picks and tag table (seed/editorial/*.json) against the committed seed.
 describe('seed/editorial', () => {
   const read = (p: string) => readFileSync(path.resolve(process.cwd(), p), 'utf8')
@@ -148,7 +181,7 @@ describe('seed/editorial', () => {
     .filter((f) => f.endsWith('.json'))
     .map((f) => ({ seedKey: f.split(path.sep).join('/').slice(0, -'.json'.length), tags: JSON.parse(readFileSync(path.join(metaDir, f), 'utf8')).tags ?? {} }))
   const seedKeys = new Set(metas.map((m) => m.seedKey))
-  const { clusters } = JSON.parse(read('seed/clusters/clusters.json')) as { clusters: { key: string; seedKeys: string[] }[] }
+  const { clusters } = JSON.parse(read('seed/clusters/clusters.json')) as { clusters: { key: string; category: string; seedKeys: string[] }[] }
 
   it('parse', () => {
     expect(picks.ok).toBe(true)
@@ -167,6 +200,26 @@ describe('seed/editorial', () => {
     for (const [slug, c] of Object.entries(p.categoryCovers)) expect(c.seedKey.startsWith(`${slug}/`) && seedKeys.has(c.seedKey)).toBe(true)
     expect(Object.keys(p.categoryCovers).sort()).toEqual(SEED_CATEGORIES.map((c) => c.slug.tr).sort())
     for (const f of p.featuredProjects) expect(clusters.find((c) => c.key === f.cluster)?.seedKeys).toContain(f.cover)
+  })
+
+  it('#156 swaps and category links agree with the seed they replace', () => {
+    if (!picks.ok) throw new Error('picks.json')
+    const { swaps, projectCategories } = picks.value
+    const seo = (k: string) => (JSON.parse(read(`seed/media-meta/${k}.json`)) as { seoFilename: string }).seoFilename
+    for (const s of [...Object.values(swaps.guideCovers), ...Object.values(swaps.categoryCovers), ...Object.values(swaps.projectCovers)])
+      expect([s.to, seedKeys.has(s.to), s.from === null || seedKeys.has(s.from)]).toEqual([s.to, true, true])
+    // Fresh databases get the new guide covers from the guide JSON (guides-finish.ts / content.ts) and the category cover from categoryCovers.
+    for (const [file, s] of Object.entries(swaps.guideCovers)) expect((JSON.parse(read(`seed/content/guides/${file}.json`)) as { cover: string }).cover).toBe(seo(s.to))
+    for (const [slug, s] of Object.entries(swaps.categoryCovers)) expect(picks.value.categoryCovers[slug]?.seedKey).toBe(s.to)
+    for (const [key, s] of Object.entries(swaps.projectCovers)) {
+      const c = clusters.find((x) => x.key === key)!
+      expect([c.seedKeys[0], c.seedKeys.includes(s.to)]).toEqual([s.firstPhoto, true])
+    }
+    const slugs = SEED_CATEGORIES.map((c) => c.slug.tr)
+    for (const [key, l] of Object.entries(projectCategories)) {
+      expect(l.from).toEqual([clusters.find((x) => x.key === key)!.category])
+      expect(l.add.every((s) => slugs.includes(s) && !l.from.includes(s))).toBe(true)
+    }
   })
 
   it('uses every photo at most once', () => {

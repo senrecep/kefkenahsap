@@ -68,3 +68,23 @@ export function fillHomepageLayout(layout: readonly Block[], picks: { image?: nu
   })
   return { layout: filled.length ? next : [...layout], filled }
 }
+
+/** #156: a cover as the page sees it: the chosen photo, and the first gallery photo shown when none is chosen. */
+export type CoverState = { cover: number | null; first?: number | null }
+
+/**
+ * Whether to replace a re-picked cover: only while the document still shows the previous pick (same cover id; for a
+ * previous pick of "no cover", also the same first gallery photo). Any other value is the owner's choice and is kept.
+ */
+export function coverSwap(now: CoverState, from: CoverState, to: number): 'write' | 'done' | 'kept' {
+  if (now.cover === to) return 'done'
+  if (now.cover !== from.cover) return 'kept'
+  return from.cover !== null || (now.first != null && now.first === from.first) ? 'write' : 'kept'
+}
+
+/** #156: `from` + `add` while a project's category ids are exactly the seeded `from`; 'done' once appended; else 'kept'. */
+export function appendCategories(now: readonly number[], from: readonly number[], add: readonly number[]): number[] | 'done' | 'kept' {
+  const same = (a: readonly number[], b: readonly number[]) => a.length === b.length && a.every((x, i) => x === b[i])
+  if (same(now, [...from, ...add])) return 'done'
+  return same(now, from) ? [...from, ...add] : 'kept'
+}
