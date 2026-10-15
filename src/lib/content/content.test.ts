@@ -149,6 +149,23 @@ describe('project stories (#61)', () => {
   // Species are guessed from photos only, so they never go into public text (CHECKLIST, "görselden tahmin").
   const WOOD_SPECIES = /(?<!\p{L})(iroko|teak|çam|pine|meşe|oak|ceviz|walnut|kayın|beech|ladin|spruce|sedir|cedar|thermowood|emprenye|pressure-treated|meranti|sapelli)/iu
 
+  const YEAR = /(?<!\d)(19|20)\d{2}(?!\d)/
+  const OVERLAY_LOCALES = ['ru', 'de', 'ar']
+  const overlays = Object.fromEntries(
+    OVERLAY_LOCALES.map((l) => [l, JSON.parse(readFileSync(path.resolve(process.cwd(), `seed/i18n/${l}/content/project-stories.json`), 'utf8')) as Record<string, { title: string; story: string }>]),
+  )
+  const OVERLAY_SPECIES: Record<string, RegExp> = {
+    ru: /(?<!\p{L})(ироко|тик|сосн|дуб|орех|бук|ель|кедр|термо)/iu,
+    de: /(?<!\p{L})(iroko|teak|kiefer|eiche|nussbaum|buche|fichte|zeder|thermoholz|kesseldruck)/iu,
+    ar: /(?<!\p{L})(إيروكو|ساج|صنوبر|بلوط|جوز|زان|أرز)/u,
+  }
+  const localized = (key: string, locale: string): { title: string; story: string } => {
+    const s = stories.ok ? stories.value[key]! : undefined
+    if (locale === 'tr') return { title: (clusters as { key: string; title: string }[]).find((c) => c.key === key)!.title, story: s!.tr.story }
+    if (locale === 'en') return s!.en
+    return overlays[locale]![key]!
+  }
+
   it('parses and covers every cluster exactly once', () => {
     expect(stories.ok).toBe(true)
     expect(Object.keys(stories.ok ? stories.value : {}).sort()).toEqual(clusters.map((c) => c.key).sort())
@@ -157,20 +174,30 @@ describe('project stories (#61)', () => {
   describe.each(clusters.map((c) => c.key))('%s', (key) => {
     const s = stories.ok ? stories.value[key] : undefined
     // #148: what we built and what for, in 2–4 short sentences (not a description of the photo).
-    it.each(['tr', 'en'] as const)('%s story is 2–4 sentences, at most 70 words, with no year, banned claim or cliché', (locale) => {
+    it.each(['tr', 'en'] as const)('%s story is 2–4 sentences, 20–70 words, with no banned claim or cliché', (locale) => {
       const story = s![locale].story
       const sentences = story.split(/[.!?](\s|$)/).filter((x) => x.trim()).length
       expect(sentences).toBeGreaterThanOrEqual(2)
       expect(sentences).toBeLessThanOrEqual(4)
+      expect(wordCount(story)).toBeGreaterThanOrEqual(20)
       expect(wordCount(story)).toBeLessThanOrEqual(70)
-      // Years go to the project's year field (EXIF, clusters.json); never into the story.
-      expect(story).not.toMatch(/\b(19|20)\d{2}\b/)
       for (const re of BANNED) expect(textOf(s![locale]), String(re)).not.toMatch(re)
     })
     it.each(['tr', 'en'] as const)('%s text names no wood species (guesses stay in the owner checklist)', (locale) => {
       expect(textOf(s![locale])).not.toMatch(WOOD_SPECIES)
     })
-    it('title carries no year (it is in the year field)', () => expect(s!.en.title).not.toMatch(/\b(19|20)\d{2}\b/))
+    // Years go to the project's year field (EXIF, clusters.json); never into a title or story, in any locale.
+    it.each(['tr', 'en', ...OVERLAY_LOCALES])('%s title and story carry no year', (locale) => {
+      const { title, story } = localized(key, locale)
+      expect(title).not.toMatch(YEAR)
+      expect(story).not.toMatch(YEAR)
+    })
+    it.each(OVERLAY_LOCALES)('%s text names no wood species and is 20–90 words', (locale) => {
+      const { title, story } = localized(key, locale)
+      expect(`${title} ${story}`).not.toMatch(OVERLAY_SPECIES[locale]!)
+      expect(wordCount(story)).toBeGreaterThanOrEqual(20)
+      expect(wordCount(story)).toBeLessThanOrEqual(90)
+    })
   })
 
   it('#148 fixes file: every `new` text is the committed seed text, so the dev update and a fresh seed agree', () => {

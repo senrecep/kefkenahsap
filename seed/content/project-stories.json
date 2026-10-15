@@ -1,7 +1,7 @@
 {
   "895d59681133": {
     "tr": {
-      "story": "Bir evin balkonunu ve bahçe katındaki terasını ahşap deck ile kapladık. Tahtaları aralarında ince aralık bırakarak cam kapıların önündeki eşiğe kadar döşedik; yağmur suyu bu aralıklardan akıp gider. Güneş ve yağmur alan bir deck'te yüzeyin düzenli bakımı, ahşabın rengini daha uzun korur."
+      "story": "Bir evin balkonunu ve bahçe katındaki terasını ahşap deck ile kapladık. Tahtaları aralarında ince aralık bırakarak cam kapıların önündeki eşiğe kadar döşedik; yağmur suyu bu aralıklardan akıp gider. Güneş ve yağmur alan bir deck'te yüzeye düzenli bakım yaparsanız ahşap rengini daha uzun korur."
     },
     "en": {
       "title": "Balcony and garden-level deck",
@@ -76,13 +76,13 @@
       "story": "Bir terastaki dış mutfağın ahşap işlerini yaptık. Metal taşıyıcılı pergolanın üstünü sık aralıklı ahşap çıtalarla kapladık, arkaya boydan boya dikey çıtalı bir duvar yaptık ve tezgâh altı dolapların önlerini aynı çıtalarla kapladık. Zemine de ahşap deck döşedik. Aralıklı çıtalar gölge yapar ama havayı geçirir; mangalın başı gölgede kalır."
     },
     "en": {
-      "title": "Terrace shade structure, slatted wall and deck",
+      "title": "Terrace pergola, slatted wall and outdoor kitchen",
       "story": "We did the timberwork for an outdoor kitchen on a terrace. We covered the top of a metal-framed pergola with closely spaced timber slats, built a full-height wall of vertical slats behind it and faced the cabinets under the worktop with the same slats. We also laid a timber deck on the floor. Spaced slats cast shade but let the air through, which keeps the grill out of the sun."
     }
   },
   "5468593ff723": {
     "tr": {
-      "story": "Bir bahçede, yuvarlak beton zemini yarım daire biçiminde saran sabit bir ahşap bank yaptık. Sırtlığı dikey tahtalarla kapladık; oturma tahtalarını da kavise uyacak şekilde tek tek kesip yerleştirdik. Büyük ağaçların gölgesindeki bank, birkaç kişinin karşılıklı oturabileceği bir köşe oluşturuyor."
+      "story": "Bir bahçede, yuvarlak beton zemini yarım daire biçiminde saran sabit bir ahşap bank yaptık. Sırtlığı dikey tahtalarla kapladık; oturma tahtalarını da kavise uyacak şekilde tek tek kesip yerleştirdik. Büyük ağaçların gölgesinde, birkaç kişinin karşılıklı oturabileceği bir köşe oldu."
     },
     "en": {
       "title": "Semicircular timber bench",
@@ -91,7 +91,7 @@
   },
   "5b9bef6d04c7": {
     "tr": {
-      "story": "Aynı ahşaptan bir yemek masası ve ona eşlik eden bir bank. Masanın tablası bir çerçevenin içine dar çıtalarla döşendi; bankın oturma yüzeyi de aralıklı çıtalardan. İkisini de atölyemizde vernikledik."
+      "story": "Aynı ahşaptan bir yemek masası ve ona eşlik eden bir bank. Masanın tablasını bir çerçevenin içine dar çıtalarla döşedik; bankın oturma yüzeyi de aralıklı çıtalardan. İkisini de atölyemizde vernikledik."
     },
     "en": {
       "title": "Timber dining table and bench",
@@ -127,11 +127,11 @@
   },
   "3e5f8b4e23af": {
     "tr": {
-      "story": "Bir ofis için L biçiminde resepsiyon bankosu ve çalışma alanı bölmeleri yaptık. Bankonun tablası ve yanları açık renk ahşap, ön yüzü siyah. Çalışma masalarının arasındaki alçak bölmeleri de aynı ahşapla yaptık; resepsiyon ve çalışma alanı böylece aynı malzemeyle birbirine bağlanıyor."
+      "story": "Bir ofis için L biçiminde resepsiyon bankosu ve çalışma alanı bölmeleri yaptık. Bankonun tablası ve yanları açık renk ahşap, ön yüzü siyah. Çalışma masalarının arasındaki alçak bölmeleri de aynı ahşaptan yaptık."
     },
     "en": {
       "title": "Office reception desk and work area",
-      "story": "For an office we made an L-shaped reception desk and partitions for the work area. The desk top and sides are light-coloured timber, with a black front. The low partitions between the desks are in the same timber, so one material ties the reception and the work area together."
+      "story": "For an office we made an L-shaped reception desk and partitions for the work area. The desk top and sides are light-coloured timber, with a black front. The low partitions between the desks are in the same timber."
     }
   },
   "d9162a0eb096": {
@@ -145,7 +145,7 @@
   },
   "c373d7f2da4f": {
     "tr": {
-      "story": "Bir yönetici odasının duvarlarını ve tavan kenarlarını dikey ahşap çıtalarla kapladık; çıtaların arası koyu bırakıldı. Kolonları aynı ahşapla kapladık, gömme dolaplar ve duvara asılı çekmeceli bir tezgâh yaptık. Pencere altındaki kaloriferi de yatay çıtalı bir kapakla kapattık."
+      "story": "Bir yönetici odasının duvarlarını ve tavan kenarlarını dikey ahşap çıtalarla kapladık; çıtaların arasını koyu bıraktık. Kolonları aynı ahşapla kapladık, gömme dolaplar ve duvara asılı çekmeceli bir tezgâh yaptık. Pencere altındaki kaloriferi de yatay çıtalı bir kapakla kapattık."
     },
     "en": {
       "title": "Office with timber slat wall cladding",

@@ -207,7 +207,14 @@ Her proje için sahibinden beklenenler: il/ilçe, yıl, ölçü ve süre, ahşap
 
 EN başlık ve hikâyeler ilk geçiştir. **Dikkat:** EN başlık doluyken proje yayınlanırsa EN sayfa da açılır (EN slug başlıktan üretilir; slug + başlık dolu olan dil yayında sayılır). Yayınlamadan önce EN metni gözden geçirin ya da EN başlığı ve hikâyeyi boşaltın.
 
-Hikâyeler yalnızca görüneni anlatır: "yağlanmış" gibi son kat bilgisi yerine "parlak görünüyor" yazıldı. Gerçek son kat admin'deki "Finish / renk" alanına girilir.
+Son kat bilgisi ("yağlı", "vernikli") hikâyelere tahminle yazılmaz; gerçek son kat admin'deki "Finish / renk" alanına girilir. #148'deki hikâyelerde dört bilgi, fotoğrafın onaylı görsel metninden (başlık, alt metin, açıklama) alındı. Yanlışsa admin'de hikâyeden çıkarın:
+
+| # | Proje | Hikâyedeki bilgi | Kaynak (görsel metni) |
+|---|---|---|---|
+| 11 | Ahşap yemek masası ve bank | "İkisini de atölyemizde vernikledik." | "atölyede vernik işlemi tamamlanmış ahşap masa" |
+| 13 | Ahşap tezgâhlı mutfak bar masası | "…üstüne cila attık." | "Ahşap yüzeye cila uygulandı." |
+| 15 | Ofis resepsiyon bankosu ve çalışma alanı | "L biçiminde resepsiyon bankosu" | "L şeklinde resepsiyon bankosu" |
+| 16 | Beyaz oymalı vitrin ve konsol | "…cila ve boyasını atölyemizde yeniledik." (imalat değil, yenileme) | "Atölyemizde cila ve boya yenilemesi tamamlanan klasik oymalı vitrin" |
 
 ## Kategori metinleri ve SSS (#61)
 

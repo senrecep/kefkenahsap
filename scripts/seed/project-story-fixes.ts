@@ -6,7 +6,9 @@
 // - never published (_status draft): a new draft version, like project-stories.ts;
 // - published, latest version is the published one: a new published version that changes only the fields above;
 // - published with unpublished draft edits: skipped and listed, so a published write never buries the owner's draft.
-// The project is found by its TR title, old or new; one the owner renamed is listed as not found and left alone.
+// The project is found by the TR title (old or new) of its main document: the published version, or for a never-published
+// project the title it was created with (draft saves don't reach the main document). So a published project whose TR title
+// the owner changed is listed as not found and left alone; a rename in a draft is still found, and the per-field rule keeps it.
 // --dry-run writes nothing; a non-local database needs --yes; SITE_ENV=production is refused.
 // Run: bun run payload run scripts/seed/project-story-fixes.ts [-- --dry-run | --yes]
 import { readFileSync } from 'node:fs'
@@ -87,6 +89,6 @@ for (const c of [...clusters].reverse()) {
     console.error(`project "${c.title}": ${err instanceof Error ? err.message : err}`)
   }
 }
-console.log(`${tag}project stories: ${writes} locale write(s), ${pending.length} skipped (unpublished draft edits), ${missing.length} not found (renamed?), ${failed.length} failed`)
+console.log(`${tag}project stories: ${writes} locale write(s), ${pending.length} skipped (unpublished draft edits), ${missing.length} not found (TR title changed?), ${failed.length} failed`)
 for (const [label, list] of [['draft edits, left as is', pending], ['not found', missing], ['failed', failed]] as const) if (list.length) console.log(`${label}: ${list.join(' · ')}`)
 process.exit(failed.length ? 1 : 0)

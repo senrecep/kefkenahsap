@@ -3,7 +3,7 @@
     "story": {
       "tr": {
         "old": "Bir evin cam kapılarının önündeki balkon ve bahçe katı terası ahşap deck yapıldı. Fotoğraflarda kırmızımsı kahve tonlu, belirgin damarlı tahtalar görülüyor. Tahtalar birbirine paralel ve aralarında ince aralıklarla döşenmiş. Yüzey parlak görünüyor. Deck'in kenarında siyah metal dikmeli, kahverengi küpeşteli bir korkuluk var; korkuluğun ardında yeşil bir bahçe uzanıyor. Deck, cam kapıların önündeki taş eşiğe kadar uzanıyor. Bahçe katındaki deck'in bir kenarı toprağa ve taş döşemeye bakıyor.",
-        "new": "Bir evin balkonunu ve bahçe katındaki terasını ahşap deck ile kapladık. Tahtaları aralarında ince aralık bırakarak cam kapıların önündeki eşiğe kadar döşedik; yağmur suyu bu aralıklardan akıp gider. Güneş ve yağmur alan bir deck'te yüzeyin düzenli bakımı, ahşabın rengini daha uzun korur."
+        "new": "Bir evin balkonunu ve bahçe katındaki terasını ahşap deck ile kapladık. Tahtaları aralarında ince aralık bırakarak cam kapıların önündeki eşiğe kadar döşedik; yağmur suyu bu aralıklardan akıp gider. Güneş ve yağmur alan bir deck'te yüzeye düzenli bakım yaparsanız ahşap rengini daha uzun korur."
       },
       "en": {
         "old": "The balcony and garden-level terrace in front of a house's glazed doors were given a timber deck. The photos show reddish-brown boards with a strong grain. The boards run parallel, with narrow gaps between them. The surface looks glossy. Along the edge of the deck is a railing with black metal balusters and a brown handrail; behind it lies a green garden. The deck runs up to the stone sill in front of the glazed doors. One side of the garden-level deck faces bare soil and stone paving.",
@@ -238,6 +238,24 @@
     }
   },
   "3dcd0f485042": {
+    "title": {
+      "en": {
+        "old": "Terrace shade structure, slatted wall and deck",
+        "new": "Terrace pergola, slatted wall and outdoor kitchen"
+      },
+      "ru": {
+        "old": "Навес на террасе, реечная стена и дек",
+        "new": "Пергола на террасе, реечная стена и летняя кухня"
+      },
+      "de": {
+        "old": "Schattendach, Lattenwand und Holzterrasse auf einer Terrasse",
+        "new": "Pergola, Lattenwand und Außenküche auf einer Terrasse"
+      },
+      "ar": {
+        "old": "مظلة تراس وجدار بشرائح وديكينغ",
+        "new": "برغولا تراس وجدار بشرائح ومطبخ خارجي"
+      }
+    },
     "story": {
       "tr": {
         "old": "Bir terasta, koyu gri metal bir çerçeveye oturan ve üstü sık aralıklı ahşap çıtalarla kaplanan bir gölgelik. Gölgeliğin altında bir dış mutfak var: gri taş tezgâh, eviye ve mangal, önleri dikey ahşap çıtalarla kaplanmış dolaplar ve arkada boydan boya dikey çıtalı bir duvar. Zemin kırmızımsı kahve tonlu tahtalardan bir deck. Terasın kenarında cam korkuluk, ardında yeşillikli bir yamaç görülüyor. Çıtalardan sarkan bitkiler ve sarkıt lambalar alanı tamamlıyor.",
@@ -265,7 +283,7 @@
     "story": {
       "tr": {
         "old": "Bir bahçede, yuvarlak bir beton zemini yarım daire biçiminde saran sabit ahşap bank. Bankın sırtlığı dikey tahtalarla kaplanmış ve kavis boyunca kesintisiz dönüyor. Oturma yüzeyinin tahtaları da kavise göre kesilmiş. Ahşap kırmızımsı kahve tonunda, yüzeyi parlak görünüyor. Bank büyük ağaçların gölgesinde, çimenliğin kenarında duruyor. Beton zeminin ortası boş bırakılmış; bank yalnızca kenarı izliyor. Yakın çekimde tahtaların damarı ve aralarındaki ince birleşim çizgileri seçiliyor. Fotoğraflarda bankın çevresindeki toprak ve zemin işlerinin henüz sürdüğü görülüyor.",
-        "new": "Bir bahçede, yuvarlak beton zemini yarım daire biçiminde saran sabit bir ahşap bank yaptık. Sırtlığı dikey tahtalarla kapladık; oturma tahtalarını da kavise uyacak şekilde tek tek kesip yerleştirdik. Büyük ağaçların gölgesindeki bank, birkaç kişinin karşılıklı oturabileceği bir köşe oluşturuyor."
+        "new": "Bir bahçede, yuvarlak beton zemini yarım daire biçiminde saran sabit bir ahşap bank yaptık. Sırtlığı dikey tahtalarla kapladık; oturma tahtalarını da kavise uyacak şekilde tek tek kesip yerleştirdik. Büyük ağaçların gölgesinde, birkaç kişinin karşılıklı oturabileceği bir köşe oldu."
       },
       "en": {
         "old": "A fixed timber bench in a garden, wrapping a round concrete floor in a semicircle. The backrest is clad in vertical boards and follows the curve without a break. The seat boards are also cut to the curve. The timber is reddish brown and looks glossy. The bench stands in the shade of large trees, at the edge of the lawn. The middle of the concrete floor is left open; the bench follows only the edge. Close up, the grain of the boards and the fine joint lines between them can be seen. The photos show that groundwork around the bench was still under way.",
@@ -289,7 +307,7 @@
     "story": {
       "tr": {
         "old": "Bir yemek masası ve ona eşlik eden bank. Masanın tablası bir çerçevenin içine paralel döşenmiş tahtalardan oluşuyor ve enine kuşaklarla bölümlere ayrılıyor. Masanın ayakları dikdörtgen çerçeve biçiminde. Bankın oturma yüzeyi aralıklı tahtalardan yapılmış; ayakları altta bir bağlantı kuşağıyla birleşiyor. Ahşap kırmızımsı kahve tonunda, yüzeyi parlak görünüyor. Masa ve bank aynı ahşaptan ve aynı renkte yapılmış. Arka planda el merdivenleri ve başka işler görülüyor.",
-        "new": "Aynı ahşaptan bir yemek masası ve ona eşlik eden bir bank. Masanın tablası bir çerçevenin içine dar çıtalarla döşendi; bankın oturma yüzeyi de aralıklı çıtalardan. İkisini de atölyemizde vernikledik."
+        "new": "Aynı ahşaptan bir yemek masası ve ona eşlik eden bir bank. Masanın tablasını bir çerçevenin içine dar çıtalarla döşedik; bankın oturma yüzeyi de aralıklı çıtalardan. İkisini de atölyemizde vernikledik."
       },
       "en": {
         "old": "A dining table with a matching bench. The table top is made of boards laid parallel inside a frame and divided into sections by crosswise rails. The table legs are rectangular frames. The bench seat is made of spaced slats, and its legs are joined by a stretcher near the floor. The timber is reddish brown and looks glossy. The table and bench are made of the same wood in the same colour. Ladders and other work stand in the background.",
@@ -385,23 +403,23 @@
     "story": {
       "tr": {
         "old": "Bir ofiste resepsiyon bankosu ve çalışma alanları. Bankonun üst tablası ve yan yüzleri, birleştirilmiş şeritlerden oluşan açık renkli ahşap panelden; ön yüzü siyah. Çalışma masalarının çevresinde aynı ahşap panelden alçak bölmeler var. Bankonun arkasında siyah dikey çıtalı bir duvar ve ışıklı, siyah metal çerçeveli raflar görülüyor. Ofisin mutfağında da ahşap tezgâh ve arkalık bulunuyor. Masalar beyaz, sandalyeler gri, bölmelerin bir kısmı kumaş kaplı.",
-        "new": "Bir ofis için L biçiminde resepsiyon bankosu ve çalışma alanı bölmeleri yaptık. Bankonun tablası ve yanları açık renk ahşap, ön yüzü siyah. Çalışma masalarının arasındaki alçak bölmeleri de aynı ahşapla yaptık; resepsiyon ve çalışma alanı böylece aynı malzemeyle birbirine bağlanıyor."
+        "new": "Bir ofis için L biçiminde resepsiyon bankosu ve çalışma alanı bölmeleri yaptık. Bankonun tablası ve yanları açık renk ahşap, ön yüzü siyah. Çalışma masalarının arasındaki alçak bölmeleri de aynı ahşaptan yaptık."
       },
       "en": {
         "old": "A reception desk and work areas in an office. The top and side panels of the desk are light-coloured timber panel made of joined strips; the front is black. Low partitions of the same timber panel surround the desks. Behind the reception desk are a wall of black vertical slats and lit shelving in a black metal frame. The office kitchen also has a timber worktop and splashback. The desks are white, the chairs grey, and some of the partitions are fabric-covered.",
-        "new": "For an office we made an L-shaped reception desk and partitions for the work area. The desk top and sides are light-coloured timber, with a black front. The low partitions between the desks are in the same timber, so one material ties the reception and the work area together."
+        "new": "For an office we made an L-shaped reception desk and partitions for the work area. The desk top and sides are light-coloured timber, with a black front. The low partitions between the desks are in the same timber."
       },
       "ru": {
         "old": "Стойка ресепшн и рабочие места в офисе. Верхняя столешница и боковины стойки — из светлой деревянной панели, склеенной из ламелей; передняя сторона чёрная. Вокруг рабочих столов — низкие перегородки из той же деревянной панели. За стойкой видны стена из чёрной вертикальной рейки и полки с подсветкой в чёрной металлической раме. На офисной кухне тоже есть деревянная столешница и фартук. Столы белые, стулья серые, часть перегородок обтянута тканью.",
-        "new": "Для офиса мы сделали Г-образную стойку ресепшн и перегородки для рабочей зоны. Столешница и боковины стойки выполнены из светлой древесины, передняя панель чёрная. Низкие перегородки между рабочими столами сделаны из той же древесины, поэтому ресепшн и рабочую зону объединяет один материал."
+        "new": "Для офиса мы сделали Г-образную стойку ресепшн и перегородки для рабочей зоны. Столешница и боковины стойки выполнены из светлой древесины, передняя панель чёрная. Низкие перегородки между рабочими столами сделаны из той же древесины."
       },
       "de": {
         "old": "Eine Empfangstheke und Arbeitsbereiche in einem Büro. Deckplatte und Seiten der Theke bestehen aus hellen Holzplatten aus verleimten Lamellen; die Front ist schwarz. Um die Schreibtische stehen niedrige Trennwände aus denselben Holzplatten. Hinter der Theke sind eine Wand mit senkrechten schwarzen Latten und beleuchtete Regale mit schwarzem Metallrahmen zu sehen. Auch in der Büroküche gibt es eine Arbeitsplatte und eine Rückwand aus Holz. Die Tische sind weiß, die Stühle grau, ein Teil der Trennwände ist mit Stoff bezogen.",
-        "new": "Für ein Büro haben wir eine L-förmige Empfangstheke und Trennwände für den Arbeitsbereich gebaut. Platte und Seiten der Theke sind aus hellem Holz, die Front ist schwarz. Die niedrigen Trennwände zwischen den Schreibtischen sind aus demselben Holz; so verbindet ein Material Empfang und Arbeitsbereich."
+        "new": "Für ein Büro haben wir eine L-förmige Empfangstheke und Trennwände für den Arbeitsbereich gebaut. Platte und Seiten der Theke sind aus hellem Holz, die Front ist schwarz. Die niedrigen Trennwände zwischen den Schreibtischen sind aus demselben Holz."
       },
       "ar": {
         "old": "مكتب استقبال ومناطق عمل في أحد المكاتب. السطح العلوي لمكتب الاستقبال وجانباه من لوح خشبي فاتح اللون مكوّن من شرائح موصولة؛ وواجهته سوداء. وحول طاولات العمل حواجز منخفضة من اللوح الخشبي نفسه. وخلف مكتب الاستقبال يظهر جدار بشرائح عمودية سوداء ورفوف مضاءة بإطارات معدنية سوداء. وفي مطبخ المكتب أيضًا سطح عمل وواجهة خلفية من الخشب. والطاولات بيضاء، والكراسي رمادية، وجزء من الحواجز مكسو بالقماش.",
-        "new": "صنعنا لمكتب منضدة استقبال على شكل حرف L وفواصل لمنطقة العمل. سطح المنضدة وجانباها من خشب فاتح اللون، وواجهتها سوداء. والفواصل المنخفضة بين مكاتب العمل من الخشب نفسه، فتجمع المادة الواحدة بين الاستقبال ومنطقة العمل."
+        "new": "صنعنا لمكتب منضدة استقبال على شكل حرف L وفواصل لمنطقة العمل. سطح المنضدة وجانباها من خشب فاتح اللون، وواجهتها سوداء. والفواصل المنخفضة بين مكاتب العمل من الخشب نفسه."
       }
     }
   },
@@ -433,7 +451,7 @@
     "story": {
       "tr": {
         "old": "Bir yönetici odasında duvar ve tavan kaplaması. Duvarlar, aralarında koyu boşluk bırakılmış dikey ahşap çıtalarla kaplanmış; aynı çıtalar tavanın kenarlarında da devam ediyor. Odada ahşap kaplamalı kolonlar, gömme dolaplar ve duvara asılı, çekmeceli bir çalışma tezgâhı var. Pencerenin altındaki kalorifer yatay çıtalı bir kapakla kapatılmış. Ahşap açık kahve tonunda ve belirgin damarlı. Masanın arkasındaki gömme dolapların kapakları da aynı ahşapla kaplanmış. Kapılar ve zemin gri tonlarda.",
-        "new": "Bir yönetici odasının duvarlarını ve tavan kenarlarını dikey ahşap çıtalarla kapladık; çıtaların arası koyu bırakıldı. Kolonları aynı ahşapla kapladık, gömme dolaplar ve duvara asılı çekmeceli bir tezgâh yaptık. Pencere altındaki kaloriferi de yatay çıtalı bir kapakla kapattık."
+        "new": "Bir yönetici odasının duvarlarını ve tavan kenarlarını dikey ahşap çıtalarla kapladık; çıtaların arasını koyu bıraktık. Kolonları aynı ahşapla kapladık, gömme dolaplar ve duvara asılı çekmeceli bir tezgâh yaptık. Pencere altındaki kaloriferi de yatay çıtalı bir kapakla kapattık."
       },
       "en": {
         "old": "Wall and ceiling cladding in an executive office. The walls are clad in vertical timber slats with dark gaps between them; the same slats continue around the edges of the ceiling. The room has timber-clad columns, built-in cupboards and a wall-hung work counter with drawers. The radiator under the window is enclosed with a cover of horizontal slats. The wood is light brown with a pronounced grain. The doors of the built-in cupboards behind the desk are faced in the same wood. The doors and floor are in shades of grey.",
