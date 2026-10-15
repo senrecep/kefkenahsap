@@ -1,15 +1,22 @@
 import type { Field } from 'payload'
 
-/** Sidebar "AI ile çevir" button (#55): categories, projects, pages, guides. No data; the button calls /api/ai/translate. */
+/** "Diller" panel (#158): per-language live / draft / empty, under the title of every localized, draftable collection. */
+export const localeStatusField: Field = {
+  name: 'localeStatus',
+  type: 'ui',
+  admin: { components: { Field: '/components/admin/ai/LocaleStatus#LocaleStatus' } },
+}
+
+/** "AI ile çevir" button (#55), right after the title: categories, projects, pages, guides. No data; it calls /api/ai/translate. */
 export const aiTranslateField: Field = {
   name: 'aiTranslate',
   type: 'ui',
-  admin: { position: 'sidebar', components: { Field: '/components/admin/ai/AiTranslateButton#AiTranslateButton' } },
+  admin: { components: { Field: '/components/admin/ai/AiTranslateButton#AiTranslateButton' } },
 }
 
-/** Sidebar "AI ile taslak" (#56): guides and projects. Notes in, a draft of the empty body/story out; never publishes. */
+/** "AI ile taslak" (#56), right after the body/story it fills: guides and projects. Notes in, a draft out; never publishes. */
 export const aiDraftField: Field = {
   name: 'aiDraft',
   type: 'ui',
-  admin: { position: 'sidebar', components: { Field: '/components/admin/ai/AiDraftButton#AiDraftButton' } },
+  admin: { components: { Field: '/components/admin/ai/AiDraftButton#AiDraftButton' } },
 }

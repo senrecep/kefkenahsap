@@ -14,7 +14,7 @@ test('category edit view offers live preview and a Lexical editor', async ({ bro
   await login({ page, user: testUser })
   await page.goto(`/admin/collections/categories/${cat.id}`)
   await expect(page.locator('[contenteditable="true"]').first()).toBeVisible({ timeout: 30_000 })
-  await page.getByRole('button', { name: /live preview/i }).first().click()
+  await page.getByRole('button', { name: /önizleme/i }).first().click()
   await expect(page.locator('iframe').first()).toBeVisible({ timeout: 30_000 })
   await page.screenshot({ path: 'docs/spike/admin-live-preview.png' })
   await payload.delete({ collection: 'categories', id: cat.id })

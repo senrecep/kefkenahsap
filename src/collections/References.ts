@@ -6,7 +6,7 @@ import { revalidateAfterChange, revalidateAfterDelete } from '@/hooks/revalidate
 export const References: CollectionConfig = {
   slug: 'references',
   labels: { singular: 'Referans', plural: 'Referanslar' },
-  admin: { hidden: hiddenFromEditor, useAsTitle: 'name', defaultColumns: ['name', 'location'], group: 'İçerik' },
+  admin: { hidden: hiddenFromEditor, useAsTitle: 'name', defaultColumns: ['name', 'location'], group: 'İçerik', hideAPIURL: true },
   hooks: { afterChange: [revalidateAfterChange('references')], afterDelete: [revalidateAfterDelete('references')] },
   access: { read: () => true, create: isStaff, update: isStaff, delete: isStaff },
   orderable: true,

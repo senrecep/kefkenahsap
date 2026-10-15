@@ -25,7 +25,9 @@ const keepOneAdmin: CollectionBeforeChangeHook = async ({ data, operation, origi
 
 export const Users: CollectionConfig = {
   slug: 'users',
-  admin: { hidden: hiddenFromEditor, useAsTitle: 'name', defaultColumns: ['name', 'email', 'role'], group: 'Yönetim' },
+  labels: { singular: 'Kullanıcı', plural: 'Kullanıcılar' },
+  // email: always filled (name is optional), so a user never shows as a bare id.
+  admin: { hidden: hiddenFromEditor, useAsTitle: 'email', defaultColumns: ['email', 'name', 'role'], group: 'Yönetim', hideAPIURL: true },
   auth: { maxLoginAttempts: 8, lockTime: 15 * 60 * 1000 },
   hooks: { beforeChange: [firstUserIsAdmin, keepOneAdmin] },
   access: {
@@ -40,6 +42,7 @@ export const Users: CollectionConfig = {
     {
       name: 'role',
       type: 'select',
+      label: 'Rol',
       defaultValue: 'editor',
       saveToJWT: true,
       // Editors cannot promote themselves.

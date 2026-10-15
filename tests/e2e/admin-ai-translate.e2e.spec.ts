@@ -1,7 +1,6 @@
 import { expect, test } from '@playwright/test'
 import { getPayload } from 'payload'
 
-import { routing } from '../../src/i18n/routing'
 import config from '../../src/payload.config.js'
 import { login } from '../helpers/login'
 import { seedTestUser, testUser } from '../helpers/seedUser'
@@ -23,7 +22,7 @@ test('AI ile çevir: fills the empty locales (EN, …) of a guide as a draft', a
     const button = page.getByRole('button', { name: 'AI ile çevir' })
     await expect(button).toBeEnabled()
     await button.click()
-    await expect(page.getByText(`${routing.locales.filter((l) => l !== 'tr').map((l) => l.toUpperCase()).join(', ')} çevirisi taslak olarak kaydedildi.`, { exact: false })).toBeVisible({ timeout: 30_000 })
+    await expect(page.getByText('İngilizce, Rusça, Almanca, Arapça çevirisi taslak olarak kaydedildi, yayınlanmadı.', { exact: false })).toBeVisible({ timeout: 30_000 })
     await page.waitForLoadState('load')
 
     const en = await payload.findByID({ collection: 'guides', id: guide.id, locale: 'en', fallbackLocale: false, draft: true })
