@@ -4,15 +4,7 @@
 // Loaded through a dynamic import once the samples scroll into view, so OGL never ships in the page's first-load JS.
 import { Box, Camera, Mesh, Program, Renderer, Texture, Transform } from 'ogl'
 
-import { fitDistance, FOV, REACHABLE, WOOD_BOARD } from '@/lib/wood/samples'
-
-// Framing for every reachable pose costs a few tens of ms; the tile keeps its aspect, so it is worked out once per aspect.
-const distances = new Map<string, number>()
-const distanceFor = (aspect: number) => {
-  const key = aspect.toFixed(2)
-  if (!distances.has(key)) distances.set(key, fitDistance(WOOD_BOARD, REACHABLE, aspect))
-  return distances.get(key)!
-}
+import { FOV, WOOD_BOARD, woodDistance } from '@/lib/wood/samples'
 
 const vertex = /* glsl */ `
 attribute vec3 position;
@@ -125,7 +117,7 @@ export async function mountWoodScene(
       renderer.setSize(frame.clientWidth, frame.clientHeight)
       camera.perspective({ aspect })
       // Framed for every pose a drag can reach, so the board fills the tile at rest and never leaves it when turned.
-      camera.position.set(0, 0, distanceFor(aspect))
+      camera.position.set(0, 0, woodDistance(aspect))
       draw()
     }
     canvas.addEventListener('webglcontextlost', lost)
