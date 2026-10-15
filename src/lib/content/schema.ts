@@ -19,8 +19,8 @@ const pageLocale = z.object({ title: text, slug: text, body: text })
 const pageSchema = z.object({ tr: pageLocale, en: pageLocale })
 
 const guideLocale = z.object({ title: text, slug: text, excerpt: text, body: text, faq: z.array(z.object({ q: text, a: text })) })
-// relatedCategories: TR slugs of seed categories (#49).
-const guideSchema = z.object({ relatedCategories: z.array(text), tr: guideLocale, en: guideLocale })
+// relatedCategories: TR slugs of seed categories (#49). cover: SEO filename of an approved library photo (#146).
+const guideSchema = z.object({ relatedCategories: z.array(text), cover: text.optional(), tr: guideLocale, en: guideLocale })
 
 const referencesSchema = z.array(z.object({ name: text, location: z.object({ tr: text, en: text }) }))
 

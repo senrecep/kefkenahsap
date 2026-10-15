@@ -1,21 +1,23 @@
 /**
  * The four species of the 3D samples (PLAN §6 F2). DESIGN.md: wood is never drawn, so a species shows only once it has a
- * crop from a real job photo (scripts/wood-textures.ts). Teak and thermowood wait for owner photos (docs/content/CHECKLIST.md).
+ * crop from a real job photo (scripts/wood-textures.ts); `photo` is that photo's gallery slug (SEO filename), linked under
+ * the sample. Teak and thermowood wait for owner photos (docs/content/CHECKLIST.md).
  */
 export const WOOD_SAMPLES: readonly {
   key: 'iroko' | 'teak' | 'cam' | 'thermowood'
   texture: string | null
+  photo: string | null
 }[] = [
-  { key: 'iroko', texture: '/wood/iroko.webp' },
-  { key: 'teak', texture: null },
-  { key: 'cam', texture: '/wood/cam.webp' },
-  { key: 'thermowood', texture: null },
+  { key: 'iroko', texture: '/wood/iroko.webp', photo: 'bahce-kapisi-onu-iroko-deck-zemin' },
+  { key: 'teak', texture: null, photo: null },
+  { key: 'cam', texture: '/wood/cam.webp', photo: 'bahce-emprenyeli-cam-deck-zemin' },
+  { key: 'thermowood', texture: null, photo: null },
 ]
 export type WoodKey = (typeof WOOD_SAMPLES)[number]['key']
 
 /** Species that have a real-photo texture, in display order. */
 export const shownSamples = () =>
-  WOOD_SAMPLES.filter((s): s is { key: WoodKey; texture: string } => s.texture !== null)
+  WOOD_SAMPLES.filter((s): s is { key: WoodKey; texture: string; photo: string } => s.texture !== null && s.photo !== null)
 
 type LexNode = { type?: string; fields?: { blockType?: string }; children?: LexNode[] }
 const hasBlock = (n: LexNode): boolean =>

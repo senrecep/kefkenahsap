@@ -97,6 +97,14 @@ Editorial picks (#150): `seed/editorial/picks.json` (hero, phone hero, featured 
 
 Run these after `seed.ts` and `archive.ts`, and pass flags after `--` (e.g. `-- --yes`). `--force` on the first two overwrites with the committed text, as new drafts. `media-text-fixes.ts -- --seed-files` rewrites the committed `seed/media-meta*` JSONs instead of the DB.
 
+### Guide covers, byline and wood samples (#146)
+
+`scripts/seed/guides-finish.ts` brings guides seeded before #146 up to the committed seed. Per guide (matched by its TR slug) it sets the cover named in `seed/content/guides/<file>.json` (`cover`: the SEO filename of an approved library photo, picked by the guide's related categories) only while the cover is empty, and turns the founder byline (`showAuthor`) on. A checkbox can't tell an owner's deliberate "off" from the old default: pass `--skip-author` if the owner has switched a byline off. In `ahsap-turleri` it replaces the old build notes with the reader-facing table note (in every locale, only while the stored text is still exactly the old one) and inserts the `woodSamples` block after that note, only if absent. Writes go to each guide's latest version: a published guide stays published, a draft stays a draft. A re-run writes nothing. New databases get all of this from `content.ts` (a markdown line `<!-- block:woodSamples -->` becomes the block).
+
+```bash
+bun run payload run scripts/seed/guides-finish.ts -- --dry-run && bun run payload run scripts/seed/guides-finish.ts
+```
+
 ## Observability
 
 ### GlitchTip (errors)

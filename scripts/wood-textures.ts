@@ -1,6 +1,8 @@
-// #60: textures for the 3D wood samples → public/wood/*.webp (committed; rerun only to change them).
-// Iroko and pine are crops of real library photos (clear of the watermark, rotated so the boards run along the plank).
-// No drawn wood (DESIGN.md): teak and thermowood get a texture only once a real close-up photo exists; add a crop here.
+// #60/#146: textures for the 3D wood samples → public/wood/*.webp (committed; rerun only to change them).
+// Each is ONE real board from a library photo (no deck gaps, clear of the watermark), levelled so the grain runs along
+// the plank, at the sharpest crop the photo holds: the plank is board-shaped (8:1), so the 1024×128 texture maps 1:1.
+// No drawn wood (DESIGN.md): teak and thermowood get a texture only once a real close-up photo exists; add a crop here,
+// and its media id / gallery slug in src/lib/wood/samples.ts.
 // Run: bun scripts/wood-textures.ts   (MEDIA_BASE defaults to the local S3 bucket)
 import { mkdir } from 'node:fs/promises'
 
@@ -8,53 +10,25 @@ import sharp from 'sharp'
 
 const base = process.env.MEDIA_BASE ?? 'http://localhost:9000/kefken-media'
 const out = 'public/wood'
-const W = 384
-const H = 192
+const W = 1024
+const H = 128
 
-type Crop = {
-  file: string
-  region: { left: number; top: number; width: number; height: number }
-  angle: number
-  w: number
-  h: number
-}
+type Crop = { file: string; angle: number; region: { left: number; top: number; width: number; height: number } }
 const crops: Record<string, Crop> = {
-  // "Bahçe Girişinde Iroko Deck Zemin" (media 1676), oiled boards above the watermark.
-  iroko: {
-    file: 'iroko-deck-zemin-bahce-girisi.webp',
-    region: { left: 500, top: 560, width: 480, height: 240 },
-    angle: 52,
-    w: 170,
-    h: 85,
-  },
-  // "Bahçede Emprenyeli Çam Deck Zemin" (media 1307), boards below the watermark.
-  cam: {
-    file: 'bahce-emprenyeli-cam-deck-zemin.webp',
-    region: { left: 360, top: 520, width: 400, height: 200 },
-    angle: 6,
-    w: 280,
-    h: 140,
-  },
+  // Media 1655 "Bahçe kapısı önüne iroko deck zemin" (1600×739): the oiled side board of the deck, levelled (-44°);
+  // warm, unweathered iroko. Narrow in the photo (≈20 px), so it is stretched across the board's width, never recoloured.
+  iroko: { file: 'bahce-kapisi-onu-iroko-deck-zemin.webp', angle: -44, region: { left: 440, top: 1092, width: 465, height: 19 } },
+  // Media 1307 "Bahçede emprenyeli çam deck zemin" (960×960): the front fascia board, levelled (-24.5°).
+  cam: { file: 'bahce-emprenyeli-cam-deck-zemin.webp', angle: -24.5, region: { left: 250, top: 863, width: 800, height: 34 } },
 }
 
 async function crop(c: Crop) {
   const res = await fetch(`${base}/${c.file}`)
   if (!res.ok) throw new Error(`${c.file}: HTTP ${res.status}`)
-  const r = await sharp(Buffer.from(await res.arrayBuffer()))
-    .extract(c.region)
-    .rotate(c.angle)
-    .toBuffer({ resolveWithObject: true })
-  return sharp(r.data)
-    .extract({
-      left: Math.round((r.info.width - c.w) / 2),
-      top: Math.round((r.info.height - c.h) / 2),
-      width: c.w,
-      height: c.h,
-    })
-    .resize(W, H)
+  const levelled = await sharp(Buffer.from(await res.arrayBuffer())).rotate(c.angle).toBuffer()
+  return sharp(levelled).extract(c.region).resize(W, H, { fit: 'fill', kernel: 'lanczos3' })
 }
 
 await mkdir(out, { recursive: true })
-await (await crop(crops.iroko!)).webp({ quality: 80 }).toFile(`${out}/iroko.webp`)
-await (await crop(crops.cam!)).webp({ quality: 80 }).toFile(`${out}/cam.webp`)
+for (const [key, c] of Object.entries(crops)) await (await crop(c)).webp({ quality: 86 }).toFile(`${out}/${key}.webp`)
 console.log('wrote', out)

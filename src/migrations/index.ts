@@ -20,6 +20,7 @@ import * as migration_20261014_145205_ar_locale from './20261014_145205_ar_local
 import * as migration_20261014_161144_media_portrait from './20261014_161144_media_portrait';
 import * as migration_20261014_220922_contact_map from './20261014_220922_contact_map';
 import * as migration_20261015_085755_search_guides from './20261015_085755_search_guides';
+import * as migration_20261015_085928_guide_cover from './20261015_085928_guide_cover';
 
 export const migrations = [
   {
@@ -131,5 +132,10 @@ export const migrations = [
     up: migration_20261015_085755_search_guides.up,
     down: migration_20261015_085755_search_guides.down,
     name: '20261015_085755_search_guides'
+  },
+  {
+    up: migration_20261015_085928_guide_cover.up,
+    down: migration_20261015_085928_guide_cover.down,
+    name: '20261015_085928_guide_cover'
   },
 ];

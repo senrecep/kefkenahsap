@@ -2,18 +2,14 @@
 
 import { useCallback, useEffect, useId, useRef, useState } from 'react'
 
-import { can3d, keyRotation, rotate, shownSamples, type WoodKey } from '@/lib/wood/samples'
+import { can3d, keyRotation, rotate, type WoodKey } from '@/lib/wood/samples'
 
 import type { WoodScene } from './wood-scene'
 
-type Labels = {
-  names: Partial<Record<WoodKey, string>>
-  hint: string
-  note: string
-  title: string
-  roledescription: string
-}
-const START = { x: 0.35, y: -0.5 }
+type Labels = { hint: string; note: string; title: string; roledescription: string }
+type Sample = { key: WoodKey; texture: string; name: string; fact: string; source?: { label: string; href: string } }
+// A board seen from above and in front, turned a little: top face, front edge and grain all read at rest.
+const START = { x: 0.38, y: -0.16 }
 
 function env() {
   const nav = navigator as Navigator & {
@@ -36,11 +32,11 @@ function env() {
 }
 
 /**
- * Wood samples with a real-photo texture. Server-rendered as flat photos (also the fallback: no WebGL, reduced motion,
- * Save-Data, low memory, lost context). Once the figure nears the viewport and 3D is allowed, OGL is imported and each
- * photo becomes a plank turned by drag or arrow keys.
+ * Wood samples with a real-photo texture (one board each). Server-rendered as flat photos (also the fallback: no WebGL,
+ * reduced motion, Save-Data, low memory, lost context). Once the figure nears the viewport and 3D is allowed, OGL is
+ * imported and each photo becomes a plank turned by drag or arrow keys.
  */
-export function WoodSamplesView({ labels }: { labels: Labels }) {
+export function WoodSamplesView({ labels, samples }: { labels: Labels; samples: Sample[] }) {
   const root = useRef<HTMLElement>(null)
   const [on, setOn] = useState(false)
   const [live, setLive] = useState(0)
@@ -64,24 +60,16 @@ export function WoodSamplesView({ labels }: { labels: Labels }) {
   }, [])
 
   return (
-    <figure ref={root} className="mt-8" aria-labelledby={titleId}>
-      <figcaption id={titleId} className="font-[family-name:var(--font-display)] font-semibold">
+    <figure ref={root} data-wide className="mt-10! border-y border-line py-6" aria-labelledby={titleId}>
+      <figcaption id={titleId} className="font-[family-name:var(--font-display)] text-[1.05rem] font-semibold">
         {labels.title}
       </figcaption>
-      <ul role="list" className="mt-4! grid list-none! grid-cols-2 gap-x-4 gap-y-6 ps-0!">
-        {shownSamples().map((s) => (
-          <Sample
-            key={s.key}
-            src={s.texture}
-            name={labels.names[s.key] ?? s.key}
-            roledescription={labels.roledescription}
-            hintId={hintId}
-            on={on}
-            onReady={onReady}
-          />
+      <ul role="list" className="mt-4! grid list-none! grid-cols-1 gap-x-6 gap-y-8 ps-0! sm:grid-cols-2">
+        {samples.map((s) => (
+          <Plank key={s.key} sample={s} roledescription={labels.roledescription} hintId={hintId} on={on} onReady={onReady} />
         ))}
       </ul>
-      <p className="mt-4 text-[0.95rem] text-ink-soft">
+      <p className="mt-5! text-[0.95rem] text-ink-soft">
         {labels.note}
         {/* The hint appears once, and only while at least one plank can actually be turned. */}
         {live > 0 && <span id={hintId}> {labels.hint}.</span>}
@@ -90,15 +78,9 @@ export function WoodSamplesView({ labels }: { labels: Labels }) {
   )
 }
 
-function Sample(props: {
-  src: string
-  name: string
-  roledescription: string
-  hintId: string
-  on: boolean
-  onReady: (ready: boolean) => void
-}) {
-  const { src, name, roledescription, hintId, on, onReady } = props
+function Plank(props: { sample: Sample; roledescription: string; hintId: string; on: boolean; onReady: (ready: boolean) => void }) {
+  const { sample, roledescription, hintId, on, onReady } = props
+  const src = sample.texture
   const frame = useRef<HTMLDivElement>(null)
   const scene = useRef<WoodScene | null>(null)
   const rot = useRef(START)
@@ -155,13 +137,13 @@ function Sample(props: {
     <li className="mt-0! ps-0!">
       <div
         ref={frame}
-        className="relative aspect-[2/1] overflow-hidden rounded-[var(--radius-photo)] bg-mist focus-visible:outline-2 focus-visible:outline-offset-2"
+        className="relative grid aspect-[4/1] place-items-center rounded-[var(--radius-photo)] focus-visible:outline-2 focus-visible:outline-offset-2"
         {...(ready
           ? {
               tabIndex: 0,
               role: 'group',
               'aria-roledescription': roledescription,
-              'aria-label': name,
+              'aria-label': sample.name,
               'aria-describedby': hintId,
               onKeyDown: (e: React.KeyboardEvent) => {
                 const d = keyRotation(e.key)
@@ -188,16 +170,25 @@ function Sample(props: {
             }
           : {})}
       >
+        {/* Flat fallback: the board itself, at the plank's 8:1 face. */}
         <img
           src={src}
           alt=""
-          width={384}
-          height={192}
+          width={1024}
+          height={128}
           loading="lazy"
-          className={`size-full object-cover transition-opacity duration-150 ${ready ? 'opacity-0' : ''}`}
+          className={`w-[85%] rounded-[3px] transition-opacity duration-150 ${ready ? 'opacity-0' : ''}`}
         />
       </div>
-      <p className="mt-2! font-[family-name:var(--font-display)] font-semibold">{name}</p>
+      <p className="mt-3! font-[family-name:var(--font-display)] font-semibold">{sample.name}</p>
+      <p className="mt-1! text-[0.95rem] leading-snug text-ink-soft">{sample.fact}</p>
+      {sample.source && (
+        <a href={sample.source.href} className="mt-1 inline-flex min-h-11 items-center text-[0.95rem]">
+          {sample.source.label}
+          {/* Two identical link texts: the sample name tells them apart for screen readers. */}
+          <span className="sr-only">: {sample.name}</span>
+        </a>
+      )}
     </li>
   )
 }

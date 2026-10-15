@@ -16,6 +16,7 @@ import type { Result } from 'tsentials/result'
 
 import config from '@/payload.config'
 import { guideBodyFeatures } from '@/collections/Guides'
+import { markdownWithBlocks } from '@/lib/content/blocks'
 import { type GuideContent, parseCategory, parseCategoryOverlay, parseGuide, parseGuideOverlay, parsePage, parsePageOverlay } from '@/lib/content/schema'
 import { SEED_CATEGORIES } from '@/seed/categories'
 
@@ -101,7 +102,8 @@ for (const file of ['hakkimizda', 'iletisim']) {
 
 // #49 guides: created as drafts only; the owner publishes after review. Bodies use the guides editor (tables).
 const guideEditor = await editorConfigFactory.fromFeatures({ config: payload.config, features: guideBodyFeatures })
-const guideLexical = (markdown: string) => convertMarkdownToLexical({ editorConfig: guideEditor, markdown })
+// `<!-- block:woodSamples -->` lines become the block (#146).
+const guideLexical = (markdown: string) => markdownWithBlocks(markdown, (md) => convertMarkdownToLexical({ editorConfig: guideEditor, markdown: md }))
 for (const file of guideFiles) {
   const content = load(`guides/${file}`, parseGuide)
   // Match on the TR slug, else the EN slug, so renaming one slug in the admin doesn't create a duplicate draft.
@@ -112,7 +114,9 @@ for (const file of guideFiles) {
     const cats = await payload.find({ collection: 'categories', locale: 'tr', draft: true, where: { slug: { in: content.relatedCategories } }, limit: 20, depth: 0, select: { slug: true } })
     const relatedCategories = content.relatedCategories.flatMap((s) => cats.docs.filter((c) => c.slug === s).map((c) => c.id))
     const t = content.tr
-    const created = await payload.create({ collection: 'guides', locale: 'tr', draft: true, data: { title: t.title, slug: t.slug, excerpt: t.excerpt, body: guideLexical(t.body), faq: t.faq, relatedCategories, _status: 'draft' } })
+    // #146: the founder byline is on for seeded guides; the cover is the named approved library photo, if present.
+    const cover = content.cover ? (await payload.find({ collection: 'media', where: { and: [{ seoFilename: { equals: content.cover } }, { status: { equals: 'approved' } }] }, limit: 1, depth: 0, select: { seoFilename: true } })).docs[0]?.id : undefined
+    const created = await payload.create({ collection: 'guides', locale: 'tr', draft: true, data: { title: t.title, slug: t.slug, excerpt: t.excerpt, body: guideLexical(t.body), faq: t.faq, relatedCategories, cover, showAuthor: true, _status: 'draft' } })
     id = created.id
     writes++
     console.log(`guide ${file} created (draft)`)

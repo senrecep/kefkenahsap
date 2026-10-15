@@ -546,6 +546,10 @@ export interface Guide {
    */
   slug?: string | null;
   excerpt?: string | null;
+  /**
+   * Yazının başında ve rehber listesinde görünür. Boşsa listede ilk ilgili hizmetin fotoğrafı kullanılır.
+   */
+  cover?: (number | null) | Media;
   body?: {
     root: {
       type: string;
@@ -1196,6 +1200,7 @@ export interface GuidesSelect<T extends boolean = true> {
   title?: T;
   slug?: T;
   excerpt?: T;
+  cover?: T;
   body?: T;
   faq?:
     | T

@@ -1,4 +1,5 @@
-// OGL scene for one wood sample: a textured plank, lit from above-front, drawn only when its rotation changes.
+// OGL scene for one wood sample: a board-shaped plank (8:1 face) with its real-photo texture, lit from above-front with a
+// soft sheen and a slight grain relief taken from the photo's own light and dark, drawn only when its rotation changes.
 // Loaded through a dynamic import once the samples scroll into view, so OGL never ships in the page's first-load JS.
 import { Box, Camera, Mesh, Program, Renderer, Texture, Transform } from 'ogl'
 
@@ -11,21 +12,33 @@ uniform mat4 projectionMatrix;
 uniform mat3 normalMatrix;
 varying vec2 vUv;
 varying vec3 vNormal;
+varying vec3 vView;
 void main() {
   vUv = uv;
   vNormal = normalize(normalMatrix * normal);
-  gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+  vec4 mv = modelViewMatrix * vec4(position, 1.0);
+  vView = -mv.xyz;
+  gl_Position = projectionMatrix * mv;
 }`
 
 const fragment = /* glsl */ `
 precision highp float;
 uniform sampler2D tMap;
+uniform vec2 uTexel;
 varying vec2 vUv;
 varying vec3 vNormal;
+varying vec3 vView;
+float lum(vec2 uv) { return dot(texture2D(tMap, uv).rgb, vec3(0.299, 0.587, 0.114)); }
 void main() {
+  vec3 base = texture2D(tMap, vUv).rgb;
+  // Grain relief: darker latewood reads as slightly lower, so the light catches the grain lines.
+  vec2 g = vec2(lum(vUv + vec2(uTexel.x, 0.0)) - lum(vUv - vec2(uTexel.x, 0.0)), lum(vUv + vec2(0.0, uTexel.y)) - lum(vUv - vec2(0.0, uTexel.y)));
+  vec3 n = normalize(vNormal - vec3(g, 0.0) * 1.2);
   vec3 light = normalize(vec3(0.3, 0.8, 0.6));
-  float shade = 0.55 + 0.45 * max(dot(vNormal, light), 0.0);
-  gl_FragColor = vec4(texture2D(tMap, vUv).rgb * shade, 1.0);
+  float diffuse = max(dot(n, light), 0.0);
+  // Oiled wood: a broad, weak highlight rather than a glossy one.
+  float sheen = pow(max(dot(n, normalize(light + normalize(vView))), 0.0), 24.0) * 0.14;
+  gl_FragColor = vec4(base * (0.68 + 0.42 * diffuse) + sheen, 1.0);
 }`
 
 export type WoodScene = { setRotation: (x: number, y: number) => void; destroy: () => void }
@@ -67,21 +80,30 @@ export async function mountWoodScene(
     gl.getExtension('WEBGL_lose_context')?.loseContext()
   }
   try {
-    const camera = new Camera(gl, { fov: 30 })
-    camera.position.set(0, 0, 6)
+    const camera = new Camera(gl, { fov: 20 })
     const scene = new Transform()
-    const texture = new Texture(gl, { image: img, generateMipmaps: false, minFilter: gl.LINEAR })
-    const program = new Program(gl, { vertex, fragment, uniforms: { tMap: { value: texture } } })
+    // 1024×128 is power-of-two, so mipmaps keep the grain crisp on a small phone tile.
+    const texture = new Texture(gl, { image: img, generateMipmaps: true, minFilter: gl.LINEAR_MIPMAP_LINEAR, anisotropy: 4 })
+    const program = new Program(gl, {
+      vertex,
+      fragment,
+      uniforms: { tMap: { value: texture }, uTexel: { value: [1 / img.naturalWidth, 1 / img.naturalHeight] } },
+    })
+    // A deck board: 8:1 face like the texture, about a seventh as thick as it is wide.
     const plank = new Mesh(gl, {
-      geometry: new Box(gl, { width: 4, height: 1.7, depth: 0.22 }),
+      geometry: new Box(gl, { width: 4, height: 0.5, depth: 0.12 }),
       program,
     })
     plank.setParent(scene)
     plank.rotation.set(rotation.x, rotation.y, 0)
     const draw = () => renderer.render({ scene, camera })
     resize = () => {
+      const aspect = frame.clientWidth / Math.max(1, frame.clientHeight)
       renderer.setSize(frame.clientWidth, frame.clientHeight)
-      camera.perspective({ aspect: frame.clientWidth / Math.max(1, frame.clientHeight) })
+      camera.perspective({ aspect })
+      // Distance at which the 4-unit board spans ~85% of the frame width (fov 20°, a long lens: little perspective
+      // stretch on the near end), so it fills the tile at any size.
+      camera.position.set(0, 0, 4 / 0.85 / (2 * Math.tan((10 * Math.PI) / 180) * aspect))
       draw()
     }
     canvas.addEventListener('webglcontextlost', lost)
