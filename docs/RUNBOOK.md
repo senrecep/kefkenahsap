@@ -105,6 +105,14 @@ Run these after `seed.ts` and `archive.ts`, and pass flags after `--` (e.g. `-- 
 bun run payload run scripts/seed/guides-finish.ts -- --dry-run && bun run payload run scripts/seed/guides-finish.ts
 ```
 
+### Re-picked covers and extra category links (#156)
+
+`scripts/seed/editorial-swaps.ts` applies `swaps` and `projectCategories` from `seed/editorial/picks.json`: guide covers, the Korkuluk ve Çit cover and the "Su kenarında…" project hero are re-picked for lighter watermarks, and four projects get a category their photos clearly show. A cover is replaced only while it is still exactly the previous pick (same media id; for the project, no cover and the same first gallery photo). Categories are appended only while a project still has exactly its seeded category. Anything else is the owner's choice and is left alone. Checks run on each document's latest version: published stays published, a pending draft gets a new draft. A re-run writes nothing. Run it after `editorial.ts` and `guides-finish.ts`. New databases still need it for the project hero and the category links.
+
+```bash
+bun run payload run scripts/seed/editorial-swaps.ts -- --dry-run && bun run payload run scripts/seed/editorial-swaps.ts
+```
+
 ## Observability
 
 ### GlitchTip (errors)
