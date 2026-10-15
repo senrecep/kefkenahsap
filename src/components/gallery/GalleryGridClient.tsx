@@ -6,7 +6,7 @@ import { buttonClass } from '@/components/ui/button'
 import { Picture } from '@/components/ui/Picture'
 import type { GalleryItem } from '@/lib/gallery/item'
 import type { GalleryLabels } from '@/lib/gallery/labels'
-import { distribute, largestFirstScreenItem } from '@/lib/gallery/masonry'
+import { distribute, largestFirstScreenItem, trimColumns } from '@/lib/gallery/masonry'
 
 import type { LightboxProps } from './Lightbox'
 
@@ -33,6 +33,7 @@ export function GalleryGridClient({
   moreHref,
   labels,
   priority = false,
+  trim = false,
 }: {
   initial: GalleryItem[]
   total: number
@@ -41,6 +42,8 @@ export function GalleryGridClient({
   moreHref?: string
   labels: GalleryLabels
   priority?: boolean
+  /** A fixed set (no feed): drop overhanging tail tiles so every layout ends on an even line. The lightbox keeps them all. */
+  trim?: boolean
 }) {
   const [items, setItems] = useState(initial)
   const [cursor, setCursor] = useState(nextCursor)
@@ -52,7 +55,14 @@ export function GalleryGridClient({
   const [autoLoads, setAutoLoads] = useState(0)
   const sentinel = useRef<HTMLDivElement>(null)
 
-  const layouts = useMemo(() => LAYOUTS.map((l) => ({ ...l, columns: distribute(items, l.cols) })), [items])
+  const layouts = useMemo(
+    () =>
+      LAYOUTS.map((l) => {
+        const columns = distribute(items, l.cols)
+        return { ...l, columns: trim ? trimColumns(items, columns) : columns }
+      }),
+    [items, trim],
+  )
   const phone = layouts.find((l) => l.cols === 2)!
   const lcpItem = priority ? largestFirstScreenItem(items, phone.columns, FIRST_SCREEN_ROWS) : undefined
 

@@ -11,10 +11,12 @@
     "ctaTitle": "Get a price and timeline for {category}",
     "ctaText": "Send a photo and the measurements of the space on WhatsApp and we will get back to you.",
     "ctaTitleGeneric": "Get a price and timeline for your space",
-    "nationwide": "across {country}"
+    "nationwide": "across {country}",
+    "guides": "Guides"
   },
   "Services": {
     "title": "Our services",
-    "description": "Decking, pergolas, railings, stairs and our other woodwork, each shown with photos of real jobs."
+    "description": "Decking, pergolas, railings, stairs and our other woodwork, each shown with photos of real jobs.",
+    "galleryText": "Real photos from all our jobs; filter them by category."
   }
 }

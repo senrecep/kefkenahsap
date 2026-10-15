@@ -14,6 +14,7 @@ import { Link } from '@/i18n/navigation'
 import type { Locale } from '@/i18n/routing'
 import { telLink } from '@/lib/contact'
 import { getServiceTiles } from '@/lib/data/categories'
+import { galleryTileCover, galleryTileFills } from '@/lib/gallery/curate'
 import { getFeaturedImages, getFeaturedProjects, getReferences } from '@/lib/data/home'
 import { getNavCategories, getSiteSettings } from '@/lib/data/site'
 import { faqJsonLd } from '@/lib/seo/jsonld'
@@ -53,37 +54,52 @@ export async function FeaturedGallery({ locale, heading, limit }: Heading & { lo
       }
     >
       <GalleryFilters locale={locale} categories={categories} tags={[]} className="mb-8" />
-      <GalleryGrid initial={items} total={items.length} />
+      <GalleryGrid initial={items} total={items.length} trim />
     </Section>
   )
 }
 
 export async function Services({ locale, heading }: Heading & { locale: Locale }) {
-  const [t, listed] = await Promise.all([getTranslations('Home'), getServiceTiles(locale)])
+  const [t, tGallery, tServices, listed, curated] = await Promise.all([
+    getTranslations('Home'),
+    getTranslations('Gallery'),
+    getTranslations('Services'),
+    getServiceTiles(locale),
+    getFeaturedImages(locale, 24),
+  ])
   if (!listed.length) return null
+  const cover = galleryTileCover(curated, listed)
+  const sizes = '(min-width: 1280px) 400px, (min-width: 1024px) 31vw, 48vw'
+  const pic = '!aspect-[4/3] rounded-[var(--radius-photo)]'
+  const zoom = 'transition-transform duration-500 ease-[var(--ease-out-expo)] group-hover:scale-[1.03]'
+  const name = 'mt-3 text-[1.05rem] group-hover:text-action sm:mt-4 sm:text-xl'
+  const text = 'mt-1 line-clamp-2 text-[0.92rem] text-ink-soft sm:mt-1.5 sm:text-base'
+  const empty = <span className="block aspect-[4/3] rounded-[var(--radius-photo)] bg-mist" />
   return (
     <Section title={heading || t('servicesTitle')}>
       <ul className="grid grid-cols-2 gap-x-4 gap-y-7 sm:gap-x-5 sm:gap-y-9 lg:grid-cols-3">
         {listed.map((c) => (
           <li key={c.id}>
             <Link href={{ pathname: '/[category]', params: { category: c.slug } }} className="group block">
-              {c.image ? (
-                <Picture
-                  media={c.image}
-                  alt=""
-                  sizes="(min-width: 1280px) 400px, (min-width: 1024px) 31vw, 48vw"
-                  maxWidth={1280}
-                  className="!aspect-[4/3] rounded-[var(--radius-photo)]"
-                  imgClassName="transition-transform duration-500 ease-[var(--ease-out-expo)] group-hover:scale-[1.03]"
-                />
-              ) : (
-                <span className="block aspect-[4/3] rounded-[var(--radius-photo)] bg-mist" />
-              )}
-              <h3 className="mt-3 text-[1.05rem] group-hover:text-action sm:mt-4 sm:text-xl">{c.name}</h3>
-              {c.shortDesc && <p className="mt-1 line-clamp-2 text-[0.92rem] text-ink-soft sm:mt-1.5 sm:text-base">{c.shortDesc}</p>}
+              {c.image ? <Picture media={c.image} alt="" sizes={sizes} maxWidth={1280} className={pic} imgClassName={zoom} /> : empty}
+              <h3 className={name}>{c.name}</h3>
+              {c.shortDesc && <p className={text}>{c.shortDesc}</p>}
             </Link>
           </li>
         ))}
+        {/* The last cell: the whole gallery, when it closes a hole (11 services) in the 2- and 3-column grids. */}
+        {galleryTileFills(listed.length) && (
+          <li>
+            <Link href="/galeri" className="group block">
+              {cover ? <Picture media={cover.media} alt="" sizes={sizes} maxWidth={1280} className={pic} imgClassName={zoom} /> : empty}
+              <h3 className={`${name} flex items-center gap-2`}>
+                {tGallery('title')}
+                <ArrowRight aria-hidden size={18} strokeWidth={1.75} className="shrink-0 text-action rtl:rotate-180" />
+              </h3>
+              <p className={text}>{tServices('galleryText')}</p>
+            </Link>
+          </li>
+        )}
       </ul>
     </Section>
   )

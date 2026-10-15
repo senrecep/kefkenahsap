@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { categoryRank, diversify, pickCover } from './curate'
+import { categoryRank, diversify, galleryTileCover, galleryTileFills, pickCover } from './curate'
 
 type P = { id: string; cat: string; featured?: boolean }
 const p = (id: string, cat: string, featured = false): P => ({ id, cat, featured })
@@ -63,5 +63,23 @@ describe('pickCover', () => {
   it('takes the first photo when none is large and landscape, nothing when there are none', () => {
     expect(pickCover(undefined, [photo(2, 900, 1600), photo(3, 640, 480)])?.id).toBe(2)
     expect(pickCover(undefined, [])).toBeUndefined()
+  })
+})
+
+describe('galleryTileCover', () => {
+  it('takes the last curated photo that is not already a service cover', () => {
+    const curated = [{ id: 1 }, { id: 2 }, { id: 3 }]
+    expect(galleryTileCover(curated, [{ image: { id: 3 } }, { image: null }])).toEqual({ id: 2 })
+    expect(galleryTileCover(curated, [{ image: { id: 1 } }, { image: { id: 2 } }, { image: { id: 3 } }])).toBeUndefined()
+  })
+})
+
+describe('galleryTileFills (does one more tile close a hole in the 2- and 3-column service grids?)', () => {
+  it('adds the tile only when it leaves fewer empty cells', () => {
+    expect(galleryTileFills(11)).toBe(true) // 11 → 12 fills both grids
+    expect(galleryTileFills(5)).toBe(true) // 5 → 6
+    expect(galleryTileFills(12)).toBe(false) // already even in both
+    expect(galleryTileFills(10)).toBe(false) // 10 → 11 opens a hole at 2 columns
+    expect(galleryTileFills(0)).toBe(false)
   })
 })

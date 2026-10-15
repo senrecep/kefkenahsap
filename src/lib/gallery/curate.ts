@@ -58,3 +58,16 @@ export function pickCover<T extends Photo>(cover: number | T | null | undefined,
   if (cover && typeof cover === 'object' && cover.status === 'approved') return cover
   return photos.find((m) => (m.width ?? 0) >= 1280 && (m.width ?? 0) > (m.height ?? 0)) ?? photos[0]
 }
+
+/**
+ * Photo for the "Galeri" tile that closes the services grid: from the curated selection, not already a service cover,
+ * taken from its end so it is unlikely to repeat the homepage gallery's first tiles.
+ */
+export function galleryTileCover<T extends { id: number }>(curated: readonly T[], tiles: readonly { image?: { id?: number } | null }[]): T | undefined {
+  const used = new Set(tiles.map((c) => c.image?.id))
+  return [...curated].reverse().find((i) => !used.has(i.id))
+}
+
+const holes = (n: number) => ((2 - (n % 2)) % 2) + ((3 - (n % 3)) % 3)
+/** Whether a closing "Galeri" tile after `n` services leaves fewer empty cells in the 2- and 3-column grids. */
+export const galleryTileFills = (n: number) => n > 0 && holes(n + 1) < holes(n)
