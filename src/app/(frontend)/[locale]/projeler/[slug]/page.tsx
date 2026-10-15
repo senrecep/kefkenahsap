@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation'
 import { Maybe } from 'tsentials/maybe'
 
 import { ProjectCard } from '@/components/projects/ProjectCard'
+import { CtaBand } from '@/components/site/CtaBand'
 import { JsonLd } from '@/components/seo/JsonLd'
 import { CONTAINER_SIZES, Container } from '@/components/ui/Container'
 import { Picture } from '@/components/ui/Picture'
@@ -14,7 +15,7 @@ import { getPathname, Link } from '@/i18n/navigation'
 import { routing, type Locale } from '@/i18n/routing'
 import { getProject, getProjectCards } from '@/lib/data/projects'
 import { responsiveImage } from '@/lib/media/image'
-import { projectFacts } from '@/lib/projects/facts'
+import { categoryChips, projectFacts } from '@/lib/projects/facts'
 import { safeDecode } from '@/lib/http/safe-decode'
 import { publicTestimonial } from '@/lib/projects/testimonial'
 import { siteUrl } from '@/lib/seo/alternates'
@@ -48,6 +49,7 @@ export default async function ProjectPage({ params }: { params: Params }) {
   const [t, tCta, cards] = await Promise.all([getTranslations('Project'), getTranslations('Cta'), getProjectCards(locale)])
 
   const facts = projectFacts(project as Parameters<typeof projectFacts>[0], locale, { m2: t('units.m2'), m: t('units.m'), piece: t('units.piece') })
+  const chips = categoryChips(project.categories)
   const testimonial = publicTestimonial(project.testimonial)
   const catIds = new Set(cards.find((c) => c.id === project.id)?.categories.map((c) => c.id))
   const similar = cards.filter((c) => c.id !== project.id && c.categories.some((x) => catIds.has(x.id))).slice(0, 3)
@@ -72,6 +74,20 @@ export default async function ProjectPage({ params }: { params: Params }) {
       <JsonLd data={work} />
       <Container as="header" className="pt-10 pb-8 md:pt-16 md:pb-10">
         <h1 className="max-w-[24ch] text-[2.1rem] leading-[1.08] md:text-[3.2rem]">{project.title}</h1>
+        {chips.length > 0 && (
+          <ul aria-label={t('categories')} className="mt-5 flex flex-wrap gap-2">
+            {chips.map((c) => (
+              <li key={c.slug}>
+                <Link
+                  href={{ pathname: '/[category]', params: { category: c.slug } }}
+                  className="inline-flex min-h-11 items-center rounded-full border border-line bg-paper px-4 font-[family-name:var(--font-display)] text-[0.95rem] font-semibold text-ink transition-colors duration-150 hover:border-ink/40"
+                >
+                  {c.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        )}
       </Container>
       {hero && (
         <Container>
@@ -79,36 +95,35 @@ export default async function ProjectPage({ params }: { params: Params }) {
         </Container>
       )}
 
-      <Container className="mt-10 grid gap-10 md:mt-14 lg:grid-cols-[minmax(0,1fr)_22rem] lg:gap-16">
-        <div className="lg:order-last">
-          {facts.length > 0 && (
-            <section aria-labelledby="facts-h" className="rounded-[var(--radius-photo)] border border-line p-6">
-              <h2 id="facts-h" className="text-[1.2rem]">
-                {t('facts')}
-              </h2>
-              <dl className="mt-4 grid gap-4">
-                {facts.map((f) => (
-                  <div key={f.key} className="grid gap-1 border-t border-line pt-4 first:border-t-0 first:pt-0">
-                    <dt className="text-[0.95rem] text-ink-soft">{t(f.key)}</dt>
-                    <dd className="font-[family-name:var(--font-display)] font-semibold">
-                      {Array.isArray(f.value) ? (
-                        <ul className="flex flex-wrap gap-2">
-                          {f.value.map((v) => (
-                            <li key={v} className="rounded-full border border-line bg-mist px-3 py-1 text-[0.92rem]">
-                              {v}
-                            </li>
-                          ))}
-                        </ul>
-                      ) : (
-                        f.value
-                      )}
-                    </dd>
-                  </div>
-                ))}
-              </dl>
-            </section>
-          )}
-        </div>
+      {/* The künye column exists only when there is a künye; otherwise the story keeps the full measure. */}
+      <Container className={`mt-10 grid gap-10 md:mt-14 lg:gap-16 ${facts.length > 0 ? 'lg:grid-cols-[minmax(0,1fr)_22rem]' : ''}`}>
+        {facts.length > 0 && (
+          <section aria-labelledby="facts-h" className="rounded-[var(--radius-photo)] border border-line p-6 lg:order-last lg:self-start">
+            <h2 id="facts-h" className="text-[1.2rem]">
+              {t('facts')}
+            </h2>
+            <dl className="mt-4 grid gap-4">
+              {facts.map((f) => (
+                <div key={f.key} className="grid gap-1 border-t border-line pt-4 first:border-t-0 first:pt-0">
+                  <dt className="text-[0.95rem] text-ink-soft">{t(f.key)}</dt>
+                  <dd className="font-[family-name:var(--font-display)] font-semibold">
+                    {Array.isArray(f.value) ? (
+                      <ul className="flex flex-wrap gap-2">
+                        {f.value.map((v) => (
+                          <li key={v} className="rounded-full border border-line bg-mist px-3 py-1 text-[0.92rem]">
+                            {v}
+                          </li>
+                        ))}
+                      </ul>
+                    ) : (
+                      f.value
+                    )}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          </section>
+        )}
         <div>
           {hasText(project.story?.root as LexicalNode | undefined) && (
             <div className="max-w-[68ch] text-[1.0625rem] md:text-[1.125rem] [&_a]:text-action [&_a]:underline [&_h2]:mt-10 [&_h2]:mb-3 [&_h2]:text-[1.4rem] [&_h3]:mt-8 [&_h3]:mb-2 [&_h3]:text-[1.2rem] [&_ol]:list-decimal [&_ol]:ps-6 [&_p]:mt-4 [&_ul]:list-disc [&_ul]:ps-6 [&>*:first-child]:mt-0">
@@ -174,22 +189,7 @@ export default async function ProjectPage({ params }: { params: Params }) {
         </Container>
       )}
 
-      <section aria-labelledby="cta-h" className="mt-16 border-y border-line bg-mist md:mt-20">
-        <Container className="flex flex-col gap-6 py-12 md:flex-row md:items-center md:justify-between md:py-14">
-          <div>
-            <h2 id="cta-h" className="text-[1.5rem] md:text-[1.85rem]">
-              {t('ctaTitle')}
-            </h2>
-            <p className="mt-2 max-w-[56ch] text-ink-soft">{t('ctaText')}</p>
-          </div>
-          <div className="flex shrink-0 flex-wrap gap-3">
-            <WhatsAppButton locale={locale} context={wa} place="project_cta" />
-            <Link href="/iletisim" className={buttonClass.outline}>
-              {tCta('quote')}
-            </Link>
-          </div>
-        </Container>
-      </section>
+      <CtaBand locale={locale} title={t('ctaTitle')} text={t('ctaText')} wa={wa} place="project_cta" />
     </>
   )
 }

@@ -6,15 +6,14 @@
     "since": "Kuruluş",
     "founder": "Kurucu",
     "workshop": "Atölye",
-    "seeWork": "Yaptığımız işleri görün",
-    "contact": "İletişim ve teklif"
+    "seeWork": "Yaptığımız işleri görün"
   },
   "Legal": {
     "kvkkTitle": "KVKK aydınlatma metni",
     "kvkkDescription": "{company} web sitesi ve teklif formu üzerinden işlenen kişisel veriler, amaçları, saklama süresi ve KVKK md. 11 haklarınız.",
     "cookiesTitle": "Çerez politikası",
     "cookiesDescription": "{company} web sitesinde kullanılan çerezler ve tercihinizi nasıl değiştireceğiniz.",
-    "draft": "Taslak — hukukçu kontrolü önerilir."
+    "updated": "Son güncelleme: {date}"
   },
   "Search": {
     "title": "Arama",
@@ -27,8 +26,10 @@
     "categories": "Hizmetler",
     "images": "Fotoğraflar",
     "projects": "Projeler",
+    "guides": "Rehber",
     "empty": "“{q}” için bir şey bulamadık. Farklı bir kelime deneyin ya da işinizi WhatsApp'tan anlatın.",
-    "browse": "Hizmetlere göz atın"
+    "browse": "Hizmetlere göz atın",
+    "count": "{count, plural, one {# sonuç} other {# sonuç}}"
   },
   "NotFound": {
     "title": "Bu sayfa bulunamadı",

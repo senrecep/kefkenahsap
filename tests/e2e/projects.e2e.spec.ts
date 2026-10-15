@@ -66,7 +66,9 @@ test.describe('Projects, project page and references', () => {
     await page.goto(`/tr/projeler/${full.slug}`)
     await expect(page.locator('h1')).toHaveText(full.title)
     const facts = page.getByRole('region', { name: 'Proje künyesi' })
-    await expect(facts.locator('dt')).toHaveText(['Yer', 'Yıl', 'Alan', 'Ahşap türü', 'Kategori'])
+    await expect(facts.locator('dt')).toHaveText(['Yer', 'Yıl', 'Alan', 'Ahşap türü'])
+    // Categories are linked chips under the title, not a künye row.
+    await expect(page.locator('header').getByRole('list', { name: 'Kategori' }).getByRole('link')).toHaveAttribute('href', `/tr/${categorySlug}`)
     await expect(facts).toContainText('Beykoz, İstanbul')
     await expect(facts).toContainText('120 m²')
     // No cover: the first gallery photo is the hero, the rest follow in saved order.
@@ -81,8 +83,12 @@ test.describe('Projects, project page and references', () => {
     )
 
     await page.goto(`/tr/projeler/${bare.slug}`)
-    // Only the category is filled: every other künye row stays out.
-    await expect(page.getByRole('region', { name: 'Proje künyesi' }).locator('dt')).toHaveText(['Kategori'])
+    // Only the category is filled: no künye box at all, just the chip under the title.
+    await expect(page.getByRole('region', { name: 'Proje künyesi' })).toHaveCount(0)
+    await expect(page.locator('header').getByRole('list', { name: 'Kategori' }).getByRole('link')).toHaveCount(1)
+    // The closing band sits directly on the footer (no dead strip).
+    await expect(page.locator('main > [data-end-band]')).toBeVisible()
+    expect(await page.locator('footer').evaluate((el) => getComputedStyle(el).marginTop)).toBe('0px')
     await expect(page.getByText('Çok memnun kaldık.')).toBeVisible()
     await expect(page.locator('link[rel="alternate"][hreflang="en"]')).toHaveCount(0)
   })
@@ -110,6 +116,9 @@ test.describe('Projects, project page and references', () => {
       )
       .toBeGreaterThan(0)
     await expect(row).toContainText('Riva / İstanbul')
+    // #147: a reference with a project leads with that project's photo, in the full-width grid.
+    await expect(row.locator('img')).toBeVisible()
+    expect(await row.locator('xpath=..').evaluate((ul) => getComputedStyle(ul).display)).toBe('grid')
     await expect(row.getByRole('link', { name: full.title })).toHaveAttribute(
       'href',
       `/tr/projeler/${full.slug}`,

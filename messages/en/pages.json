@@ -6,15 +6,14 @@
     "since": "Founded",
     "founder": "Founder",
     "workshop": "Workshop",
-    "seeWork": "See our work",
-    "contact": "Contact and quote"
+    "seeWork": "See our work"
   },
   "Legal": {
     "kvkkTitle": "Privacy notice",
     "kvkkDescription": "Personal data processed through the {company} website and quote form, purposes, retention and your rights under KVKK Art. 11.",
     "cookiesTitle": "Cookie policy",
     "cookiesDescription": "The cookies used on the {company} website and how to change your choice.",
-    "draft": "Draft — legal review recommended."
+    "updated": "Last updated: {date}"
   },
   "Search": {
     "title": "Search",
@@ -27,8 +26,10 @@
     "categories": "Services",
     "images": "Photos",
     "projects": "Projects",
+    "guides": "Guides",
     "empty": "Nothing found for “{q}”. Try another word or tell us about your job on WhatsApp.",
-    "browse": "Browse services"
+    "browse": "Browse services",
+    "count": "{count, plural, one {# result} other {# results}}"
   },
   "NotFound": {
     "title": "Page not found",

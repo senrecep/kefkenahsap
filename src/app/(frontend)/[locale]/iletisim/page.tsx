@@ -104,9 +104,10 @@ export default async function ContactPage({ params, searchParams }: Props) {
               <p className={h2}>{t('address')}</p>
               <address className="mt-2 flex gap-2.5 text-lg not-italic">
                 <MapPin aria-hidden size={18} strokeWidth={1.75} className="mt-1.5 shrink-0 text-ink-soft" />
+                {/* Each line in its own bdi, like the phone numbers: the postcode stays first inside RTL pages. */}
                 <span>
-                  {a.street}
-                  {(a.district || a.city) && <><br />{[a.postalCode, a.district, a.city].filter(Boolean).join(' ')}</>}
+                  {a.street && <bdi dir="ltr">{a.street}</bdi>}
+                  {(a.district || a.city) && <><br /><bdi dir="ltr">{[a.postalCode, a.district, a.city].filter(Boolean).join(' ')}</bdi></>}
                 </span>
               </address>
               {/* With a Google Maps link set, LocationMap's "Google Haritalar'da aç" replaces the address search. */}

@@ -1,7 +1,7 @@
 {
   "Projects": {
     "title": "Projects",
-    "description": "Selected woodwork projects we have completed, with location, year, wood used and photos.",
+    "description": "A selection of the woodwork we have completed. Each project shows photos of the job, with the place and year where we know them.",
     "filter": "By category",
     "all": "All",
     "empty": "No projects have been added here yet. In the meantime you can see our work in the gallery.",
