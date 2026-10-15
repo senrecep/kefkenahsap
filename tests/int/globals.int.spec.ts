@@ -1,8 +1,9 @@
 // #24 globals: public read, staff-only update, homepage blocks keep order.
 import { getPayload, type Payload } from 'payload'
-import { beforeAll, describe, expect, it } from 'vitest'
+import { afterAll, beforeAll, describe, expect, it } from 'vitest'
 
 import config from '@/payload.config'
+import type { Homepage } from '@/payload-types'
 
 let payload: Payload
 beforeAll(async () => {
@@ -37,9 +38,19 @@ describe('siteSettings', () => {
 })
 
 describe('homepage', () => {
+  // Shared dev DB: write a draft only (the published homepage is untouched) and put the latest draft back afterwards.
+  let before: Homepage
+  beforeAll(async () => {
+    before = await payload.findGlobal({ slug: 'homepage', draft: true, depth: 0 })
+  })
+  afterAll(async () => {
+    await payload.updateGlobal({ slug: 'homepage', draft: true, depth: 0, data: { layout: before.layout ?? [] } })
+  })
+
   it('keeps block order as saved', async () => {
     await payload.updateGlobal({
       slug: 'homepage',
+      draft: true,
       data: { layout: [{ blockType: 'services', enabled: true }, { blockType: 'faq', enabled: false }, { blockType: 'contact' }] },
     })
     const h = await payload.findGlobal({ slug: 'homepage', draft: true })

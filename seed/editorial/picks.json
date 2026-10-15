@@ -1,0 +1,125 @@
+{
+  "_note": "#150 editorial picks, chosen by looking at the approved photos. Media by seedKey, projects by photo-cluster key, categories by TR slug, FAQ by TR category slug + index into its seed FAQ. Loader: scripts/seed/editorial.ts (fills only empty fields). The owner can change any of this in the admin.",
+  "hero": {
+    "seedKey": "deck-ve-zeminler/WhatsApp Image 2026-08-07 at 18.00.01 (3).webp",
+    "focal": {
+      "x": 50,
+      "y": 58
+    },
+    "reason": "Finished garden terrace deck with railing built around a mature tree: a complete outdoor job, sharp, landscape; the small watermark sits on the boards left of the tree, not on the subject."
+  },
+  "mobileHero": {
+    "seedKey": "deck-ve-zeminler/WhatsApp Image 2026-08-07 at 17.59.57 (3).webp",
+    "reason": "Portrait stepped iroko deck under a tree with a pergola behind: the deck, tree and pergola fill the upper half the phone shows clear of the text; only lawn and stepping stones sit under the H1. The watermark (mid-frame on every portrait) falls on the deck edge, not on the text."
+  },
+  "featuredProjects": [
+    {
+      "cluster": "3dcd0f485042",
+      "cover": "ireko-teak/WhatsApp-Image-2021-06-08-at-23.27.42-1.webp",
+      "reason": "Slatted pergola, wall cladding and outdoor kitchen on a terrace: the most finished, design-led outdoor job; wide cover shows the whole space."
+    },
+    {
+      "cluster": "2e2333d9f45d",
+      "cover": "pergola-ve-kamelyalar/251820_406039149440690_716310992_n.webp",
+      "reason": "Large terrace deck, cross railings, stair and roofed kamelya on a seaside slope: shows scale and several services in one job."
+    },
+    {
+      "cluster": "5468593ff723",
+      "cover": "ireko-teak/WhatsApp-Image-2021-06-08-at-23.27.45.webp",
+      "reason": "Curved iroko seating bench in a garden: bespoke workshop craft, clean recent photo."
+    },
+    {
+      "cluster": "5d3f916c5c27",
+      "cover": "merdivenler/33-1.webp",
+      "reason": "Cross-railed outdoor stair from garden to upper level of a house: a common villa need, whole stair in frame."
+    },
+    {
+      "cluster": "251cab6282a8",
+      "cover": "deck-ve-zeminler/WhatsApp-Image-2021-06-27-at-20.13.45-3.webp",
+      "reason": "Garden deck at a villa's glass doors: the typical homeowner job, warm finished boards on lawn."
+    },
+    {
+      "cluster": "895d59681133",
+      "cover": "deck-ve-zeminler/WhatsApp Image 2026-08-07 at 17.59.55.webp",
+      "reason": "Oiled deck with metal railing at a garden edge: recent photo, completes a row of three on desktop."
+    }
+  ],
+  "categoryCovers": {
+    "ahsap-yapilar": {
+      "seedKey": "ahsap-yapilar/55-1.webp",
+      "reason": "Timber cabin on a stone base with lawn: the whole building reads in a 21:9 crop."
+    },
+    "deck-ve-zeminler": {
+      "seedKey": "deck-ve-zeminler/IMG_20180503_114721.jpg1_.webp",
+      "reason": "Ground-floor garden deck with flower boxes and seating, 2560 px wide, small watermark; replaces the stacked-watermark header."
+    },
+    "pergola-ve-kamelyalar": {
+      "seedKey": "pergola-ve-kamelyalar/47-1.webp",
+      "reason": "Pergola over a deck with cross railings above a planted stone wall, single watermark; the other wide pergola shots carry stacked watermarks."
+    },
+    "korkuluk-ve-cit": {
+      "seedKey": "korkuluk-ve-cit/img7-1.webp",
+      "reason": "Picket fence on a stone wall in front of a house: fence fills the frame."
+    },
+    "kopru-ve-iskele": {
+      "seedKey": "kopru-ve-iskele/img10.webp",
+      "reason": "Arched garden bridge with cross railings, faint watermark; replaces the stacked-watermark header."
+    },
+    "merdivenler": {
+      "seedKey": "merdivenler/33-1.webp",
+      "reason": "Complete cross-railed garden stair against a house wall; replaces the empty under-stair cavity."
+    },
+    "ciceklik-ve-oturma-grubu": {
+      "seedKey": "ciceklik-ve-oturma-grubu/IMG_20180601_103750.webp",
+      "reason": "Terrace planters around a deck with a Bosphorus view, 3264 px wide."
+    },
+    "kapi-dolap-ve-seperator": {
+      "seedKey": "kapi-dolap-ve-seperator/102.webp",
+      "reason": "Slatted outdoor storage cabinet, finished and front-on, 2560 px wide."
+    },
+    "ireko-teak": {
+      "seedKey": "ireko-teak/WhatsApp-Image-2021-06-27-at-20.13.45-2.webp",
+      "reason": "Iroko deck at a villa's doors, tagged iroko in the photo metadata: the category's own wood."
+    },
+    "mobilya-ve-cila": {
+      "seedKey": "mobilya-ve-cila/86fb075e-3647-40dc-b134-6ddc810b04ae.webp",
+      "reason": "Finished office with a wooden desk and wall unit: tidy, lit, the furniture is the subject."
+    },
+    "boya-tamir-ve-bakim": {
+      "seedKey": "boya-tamir-ve-bakim/10426910_890180967693170_7525110688328373046_n-1.webp",
+      "reason": "Pressure-washing a deck in a garden: says maintenance at a glance, bright; replaces the dim close-up."
+    }
+  },
+  "faq": [
+    {
+      "category": "deck-ve-zeminler",
+      "index": 0,
+      "reason": "Pine or iroko: the first question most deck enquiries ask."
+    },
+    {
+      "category": "deck-ve-zeminler",
+      "index": 2,
+      "reason": "Deck over an existing concrete or tiled terrace: common for villas and flats."
+    },
+    {
+      "category": "pergola-ve-kamelyalar",
+      "index": 0,
+      "reason": "Pergola or kamelya: the second-biggest service, a real decision question."
+    },
+    {
+      "category": "deck-ve-zeminler",
+      "index": 3,
+      "reason": "How often to oil a deck: aftercare."
+    },
+    {
+      "category": "boya-tamir-ve-bakim",
+      "index": 0,
+      "reason": "Maintenance of decks built by another company: widens who can call."
+    },
+    {
+      "category": "ahsap-yapilar",
+      "index": 3,
+      "reason": "Who does the work: own workshop and own crew, true for every service."
+    }
+  ]
+}

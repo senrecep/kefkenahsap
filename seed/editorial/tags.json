@@ -1,0 +1,89 @@
+{
+  "_note": "#150 gallery filter tags. `raw` lists the free-form values of seed/media-meta/**.tags[axis] that map to the tag (compared trimmed, case-insensitive, on that axis only); anything not listed is dropped. Only tags on 5+ approved photos. Finish values are too varied to filter by; stage 'finished' is on almost every photo, so it gets no tag. Slugs are explicit Latin (Tags.slug accepts only [a-z0-9-]).",
+  "tags": [
+    {
+      "key": "iroko", "axis": "wood",
+      "name": { "tr": "İroko", "en": "Iroko", "ru": "Ироко", "de": "Iroko", "ar": "الإيروكو" },
+      "slug": { "tr": "iroko", "en": "iroko", "ru": "iroko", "de": "iroko", "ar": "iroko" },
+      "raw": ["iroko"]
+    },
+    {
+      "key": "teak", "axis": "wood",
+      "name": { "tr": "Teak", "en": "Teak", "ru": "Тик", "de": "Teak", "ar": "الساج" },
+      "slug": { "tr": "teak", "en": "teak", "ru": "tik", "de": "teak", "ar": "saj" },
+      "raw": ["teak"]
+    },
+    {
+      "key": "emprenyeli-cam", "axis": "wood",
+      "name": { "tr": "Emprenyeli çam", "en": "Pressure-treated pine", "ru": "Пропитанная сосна", "de": "Kesseldruckimprägnierte Kiefer", "ar": "صنوبر معالج بالضغط" },
+      "slug": { "tr": "emprenyeli-cam", "en": "pressure-treated-pine", "ru": "propitannaya-sosna", "de": "kdi-kiefer", "ar": "sanawbar-muaalaj" },
+      "raw": ["emprenyeli çam"]
+    },
+    {
+      "key": "cam", "axis": "wood",
+      "name": { "tr": "Çam", "en": "Pine", "ru": "Сосна", "de": "Kiefer", "ar": "الصنوبر" },
+      "slug": { "tr": "cam", "en": "pine", "ru": "sosna", "de": "kiefer", "ar": "sanawbar" },
+      "raw": ["çam"]
+    },
+    {
+      "key": "bahce", "axis": "setting",
+      "name": { "tr": "Bahçe", "en": "Garden", "ru": "Сад", "de": "Garten", "ar": "الحديقة" },
+      "slug": { "tr": "bahce", "en": "garden", "ru": "sad", "de": "garten", "ar": "hadiqa" },
+      "raw": ["bahçe", "bahce", "garden", "villa bahçesi", "site bahçesi", "konut bahçesi", "otel bahçesi", "restoran bahçesi"]
+    },
+    {
+      "key": "teras", "axis": "setting",
+      "name": { "tr": "Teras", "en": "Terrace", "ru": "Терраса", "de": "Terrasse", "ar": "التراس" },
+      "slug": { "tr": "teras", "en": "terrace", "ru": "terrasa", "de": "terrasse", "ar": "taras" },
+      "raw": ["teras", "terrace", "çatı terası", "villa terası"]
+    },
+    {
+      "key": "balkon", "axis": "setting",
+      "name": { "tr": "Balkon", "en": "Balcony", "ru": "Балкон", "de": "Balkon", "ar": "الشرفة" },
+      "slug": { "tr": "balkon", "en": "balcony", "ru": "balkon", "de": "balkon", "ar": "shurfa" },
+      "raw": ["balkon"]
+    },
+    {
+      "key": "havuz-kenari", "axis": "setting",
+      "name": { "tr": "Havuz kenarı", "en": "Poolside", "ru": "У бассейна", "de": "Am Pool", "ar": "بجانب المسبح" },
+      "slug": { "tr": "havuz-kenari", "en": "poolside", "ru": "u-basseyna", "de": "am-pool", "ar": "bijanib-al-masbah" },
+      "raw": ["havuz kenarı", "havuz başı", "havuz"]
+    },
+    {
+      "key": "su-kenari", "axis": "setting",
+      "name": { "tr": "Su kenarı", "en": "Waterside", "ru": "У воды", "de": "Am Wasser", "ar": "على الماء" },
+      "slug": { "tr": "su-kenari", "en": "waterside", "ru": "u-vody", "de": "am-wasser", "ar": "ala-al-maa" },
+      "raw": ["deniz kenarı", "deniz", "sahil", "kıyı", "seaside", "göl kenarı", "göl kıyısı", "nehir kenarı", "dere kıyısı", "su kenarı", "plaj", "koy"]
+    },
+    {
+      "key": "ic-mekan", "axis": "setting",
+      "name": { "tr": "İç mekân", "en": "Indoors", "ru": "Интерьер", "de": "Innenraum", "ar": "داخلي" },
+      "slug": { "tr": "ic-mekan", "en": "indoors", "ru": "interer", "de": "innenraum", "ar": "dakhili" },
+      "raw": ["iç mekan", "iç mekân", "ic-mekan", "indoor", "interior", "ev içi"]
+    },
+    {
+      "key": "oncesi", "axis": "stage",
+      "name": { "tr": "Öncesi", "en": "Before", "ru": "До", "de": "Vorher", "ar": "قبل" },
+      "slug": { "tr": "oncesi", "en": "before", "ru": "do", "de": "vorher", "ar": "qabl" },
+      "raw": ["before"]
+    },
+    {
+      "key": "sonrasi", "axis": "stage",
+      "name": { "tr": "Sonrası", "en": "After", "ru": "После", "de": "Nachher", "ar": "بعد" },
+      "slug": { "tr": "sonrasi", "en": "after", "ru": "posle", "de": "nachher", "ar": "baad" },
+      "raw": ["after"]
+    },
+    {
+      "key": "uygulama", "axis": "stage",
+      "name": { "tr": "Uygulama aşaması", "en": "Work in progress", "ru": "В процессе работы", "de": "Während der Arbeit", "ar": "أثناء العمل" },
+      "slug": { "tr": "uygulama-asamasi", "en": "work-in-progress", "ru": "v-processe-raboty", "de": "waehrend-der-arbeit", "ar": "athnaa-al-amal" },
+      "raw": ["process"]
+    },
+    {
+      "key": "detay", "axis": "stage",
+      "name": { "tr": "Detay", "en": "Detail", "ru": "Детали", "de": "Detail", "ar": "تفاصيل" },
+      "slug": { "tr": "detay", "en": "detail", "ru": "detali", "de": "detail", "ar": "tafasil" },
+      "raw": ["detail"]
+    }
+  ]
+}

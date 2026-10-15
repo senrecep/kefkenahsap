@@ -91,6 +91,8 @@ bun run payload run scripts/seed/media-locales.ts -- --dry-run && bun run payloa
 bun run payload run scripts/seed/media-text-fixes.ts -- --dry-run && bun run payload run scripts/seed/media-text-fixes.ts
 ```
 
+Editorial picks (#150): `seed/editorial/picks.json` (hero, phone hero, featured projects, category covers, homepage FAQ refs, each with its reason) and `seed/editorial/tags.json` (gallery tags in 5 locales + the raw per-photo values they map from). `scripts/seed/editorial.ts` fills only what is empty: tags are added to photos (never removed), the homepage gets all default sections on an empty layout (else only an empty hero photo / FAQ), projects are featured only while none is, covers only where unset. A document with a pending draft gets a new draft; one whose latest version is published (and the never-configured homepage) is written published. Run `bun run payload run scripts/seed/editorial.ts -- --dry-run`, then without it (after `seed.ts`, `content.ts` and `project-drafts.ts`). The running site caches pages for an hour: restart `bun dev` after clearing `.next/dev/cache/fetch-cache` to see the result locally.
+
 Run these after `seed.ts` and `archive.ts`, and pass flags after `--` (e.g. `-- --yes`). `--force` on the first two overwrites with the committed text, as new drafts. `media-text-fixes.ts -- --seed-files` rewrites the committed `seed/media-meta*` JSONs instead of the DB.
 
 ## Observability
