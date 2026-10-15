@@ -38,7 +38,8 @@ const pending: string[] = []
 const missing: string[] = []
 const failed: string[] = []
 
-for (const c of clusters) {
+// Reversed: the home page lists featured projects by -updatedAt, so the outdoor clusters (listed first) are written last.
+for (const c of [...clusters].reverse()) {
   const fix = fixes[c.key]
   if (!fix) continue
   try {
@@ -54,9 +55,12 @@ for (const c of clusters) {
       pending.push(c.title)
       continue
     }
-    let year = projectYearFix(doc.year, fix)
+    // undefined until the first locale's read: the year (not localized) must come from the draft-aware read, not `doc`,
+    // whose main-table copy never sees draft writes of an unpublished project.
+    let year: Maybe<number> | undefined
     for (const locale of locales) {
       const current = await payload.findByID({ collection: 'projects', id: doc.id, locale, fallbackLocale: false, draft: !published, depth: 0 })
+      year ??= projectYearFix(current.year, fix)
       const patch = projectFixPatch({ title: current.title, story: bodyText(current.story as Parameters<typeof bodyText>[0]) }, fix, locale)
       const data: Record<string, unknown> = { ...patch }
       if (patch.story) data.story = convertMarkdownToLexical({ editorConfig, markdown: patch.story })
