@@ -227,7 +227,7 @@ export default async function CategoryPage({ params, searchParams }: { params: P
                       <a href={g.href} className="group flex items-start justify-between gap-4 py-5">
                         <span>
                           <span className="block font-[family-name:var(--font-display)] text-[1.05rem] font-semibold group-hover:text-action">{g.title}</span>
-                          {g.excerpt && <span className="mt-1.5 line-clamp-2 block max-w-[60ch] text-ink-soft">{g.excerpt}</span>}
+                          {g.excerpt && <span className="mt-1.5 line-clamp-2 max-w-[60ch] text-ink-soft">{g.excerpt}</span>}
                         </span>
                         <ArrowRight aria-hidden size={20} strokeWidth={1.75} className="mt-1 shrink-0 text-action rtl:rotate-180" />
                       </a>

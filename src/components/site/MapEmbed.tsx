@@ -25,13 +25,13 @@ export function MapEmbed({ src, title, show, note, place }: { src: string; title
           <svg aria-hidden className="absolute inset-0 size-full" preserveAspectRatio="xMidYMid slice" viewBox="0 0 320 200">
             <defs>
               <pattern id="map-blocks" width="64" height="48" patternUnits="userSpaceOnUse" patternTransform="rotate(-8)">
-                <path d="M0 18H64M40 0V48" stroke="var(--color-paper)" strokeWidth="5" />
-                <path d="M0 40H64M14 0V48" stroke="var(--color-line)" strokeWidth="1" />
+                <path d="M0 18H64M40 0V48" className="stroke-paper" strokeWidth="5" />
+                <path d="M0 40H64M14 0V48" className="stroke-line" strokeWidth="1" />
               </pattern>
             </defs>
             <rect width="320" height="200" fill="url(#map-blocks)" />
-            <path d="M-10 150C60 130 110 160 170 112S270 40 330 52" fill="none" stroke="var(--color-paper)" strokeWidth="11" />
-            <path d="M-10 150C60 130 110 160 170 112S270 40 330 52" fill="none" stroke="var(--color-line)" strokeWidth="1" />
+            <path d="M-10 150C60 130 110 160 170 112S270 40 330 52" fill="none" className="stroke-paper" strokeWidth="11" />
+            <path d="M-10 150C60 130 110 160 170 112S270 40 330 52" fill="none" className="stroke-line" strokeWidth="1" />
           </svg>
           <button type="button" onClick={() => setShown(true)} className="group relative flex size-full flex-col items-center justify-center gap-3 p-6 text-center">
             <span className="flex size-12 items-center justify-center rounded-full border border-line bg-paper">
