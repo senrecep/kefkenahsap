@@ -25,14 +25,20 @@
   align-items: center;
 }
 
+/* #157: on phones the open nav drawer pushes the header sideways; never let that become a sideways page scroll.
+   `clip`, not `hidden`: no scroll container, so sticky headers keep working. */
+body {
+  overflow-x: clip;
+}
+
 /* #157: a header tall enough for 48px controls (Payload: 44–54px depending on width). */
 :root {
   --app-header-height: 60px;
 }
 
 /* #157: every control a finger can hit is at least 48×48 (CLAUDE.md, WCAG 2.5.8 with margin for a 60-year-old's thumb). */
-/* No `display` here: Payload hides several of these (e.g. the second nav toggler) with display: none. */
-.nav-toggler,
+/* No `display` here: Payload hides several of these with display: none. */
+.app-header__mobile-nav-toggler,
 .nav__mobile-close,
 .nav__log-out,
 .app-header__account,
@@ -60,7 +66,13 @@
   margin: auto;
 }
 
+/* On phones the template toggler stays an empty 0-size button: sized up, it would sit invisibly over the header. */
 @media (min-width: 769px) {
+  .template-default__nav-toggler {
+    min-inline-size: 48px;
+    min-block-size: 48px;
+  }
+
   .template-default__nav-toggler .hamburger {
     display: grid;
     place-items: center;
@@ -171,6 +183,11 @@
   display: inline-flex;
   align-items: center;
   min-block-size: 48px;
+}
+
+/* Nav group headings ("İçerik", "Yönetim") were 12px grey: readable, still quieter than the links. */
+.nav-group__toggle {
+  font-size: 14px;
 }
 
 /* Asc/desc arrows sit side by side so each can be 48px without doubling the header height. */
