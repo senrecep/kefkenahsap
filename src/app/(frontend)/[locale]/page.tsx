@@ -75,7 +75,7 @@ export default async function HomePage({ params }: Props) {
       case 'references':
         return () => References({ locale, heading: (s as Fields<'references'>).heading })
       case 'woodTypes':
-        return () => WoodTypes({ heading: (s as Fields<'woodTypes'>).heading })
+        return () => WoodTypes({ locale, heading: (s as Fields<'woodTypes'>).heading })
       case 'faq': {
         const b = s as Fields<'faq'>
         return () => Faq({ heading: b.heading, items: b.items })

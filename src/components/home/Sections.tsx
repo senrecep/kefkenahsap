@@ -15,7 +15,7 @@ import type { Locale } from '@/i18n/routing'
 import { telLink } from '@/lib/contact'
 import { getServiceTiles } from '@/lib/data/categories'
 import { galleryTileCover, galleryTileFills } from '@/lib/gallery/curate'
-import { getFeaturedImages, getFeaturedProjects, getReferences } from '@/lib/data/home'
+import { getFeaturedImages, getFeaturedProjects, getReferences, getWoodGuide } from '@/lib/data/home'
 import { getNavCategories, getSiteSettings } from '@/lib/data/site'
 import { faqJsonLd } from '@/lib/seo/jsonld'
 import type { Media } from '@/payload-types'
@@ -169,24 +169,41 @@ export async function References({ locale, heading }: Heading & { locale: Locale
 const WOODS = ['iroko', 'teak', 'pine', 'thermo'] as const
 const COLS = ['origin', 'durability', 'care', 'use'] as const
 
-export async function WoodTypes({ heading }: Heading) {
-  const t = await getTranslations('Home')
+export async function WoodTypes({ locale, heading }: Heading & { locale: Locale }) {
+  const [t, guide] = await Promise.all([getTranslations('Home'), getWoodGuide(locale).catch(() => null)])
+  // Each species name opens the "Ahşap türleri" guide once it is published in this locale.
+  const name = (w: (typeof WOODS)[number]) =>
+    guide ? (
+      <a href={guide.href} className="underline decoration-ink/25 underline-offset-4 hover:text-action hover:decoration-current">
+        {t(`woods.${w}.name`)}
+      </a>
+    ) : (
+      t(`woods.${w}.name`)
+    )
   return (
     <Section title={heading || t('woodTitle')}>
       <p className="-mt-4 mb-8 max-w-[65ch] text-ink-soft">{t('woodIntro')}</p>
-      {/* Below 640px each wood stacks as its own definition list; the table needs the width. */}
+      {/* Below 640px each wood is a disclosure: name and use at a glance, the rest on tap (the table needs the width). */}
       <ul className="border-t border-ink/25 sm:hidden">
         {WOODS.map((w) => (
-          <li key={w} className="border-b border-line py-5">
-            <h3 className="text-lg">{t(`woods.${w}.name`)}</h3>
-            <dl className="mt-3 grid gap-2.5 text-[0.98rem]">
-              {COLS.map((c) => (
-                <div key={c}>
-                  <dt className="font-[family-name:var(--font-display)] text-sm font-semibold">{t(`woodCols.${c}`)}</dt>
-                  <dd className="text-ink-soft">{t(`woods.${w}.${c}`)}</dd>
-                </div>
-              ))}
-            </dl>
+          <li key={w} className="border-b border-line">
+            <details className="group">
+              <summary className="flex min-h-14 cursor-pointer list-none items-start justify-between gap-4 py-4 [&::-webkit-details-marker]:hidden">
+                <span>
+                  <span className="block font-[family-name:var(--font-display)] text-lg font-semibold">{t(`woods.${w}.name`)}</span>
+                  <span className="mt-0.5 block text-[0.98rem] text-ink-soft">{t(`woods.${w}.use`)}</span>
+                </span>
+                <Plus aria-hidden size={20} strokeWidth={1.75} className="mt-1 shrink-0 text-action transition-transform group-open:rotate-45" />
+              </summary>
+              <dl className="grid gap-2.5 pb-5 text-[0.98rem]">
+                {COLS.filter((c) => c !== 'use').map((c) => (
+                  <div key={c}>
+                    <dt className="font-[family-name:var(--font-display)] text-sm font-semibold">{t(`woodCols.${c}`)}</dt>
+                    <dd className="text-ink-soft">{t(`woods.${w}.${c}`)}</dd>
+                  </div>
+                ))}
+              </dl>
+            </details>
           </li>
         ))}
       </ul>
@@ -203,7 +220,7 @@ export async function WoodTypes({ heading }: Heading) {
           <tbody>
             {WOODS.map((w) => (
               <tr key={w} className="border-b border-line align-top">
-                <th scope="row" className="py-4 pe-4 text-start font-[family-name:var(--font-display)] font-semibold">{t(`woods.${w}.name`)}</th>
+                <th scope="row" className="py-4 pe-4 text-start font-[family-name:var(--font-display)] font-semibold">{name(w)}</th>
                 {COLS.map((c) => (
                   <td key={c} className="py-4 pe-4 text-ink-soft">{t(`woods.${w}.${c}`)}</td>
                 ))}
@@ -212,6 +229,12 @@ export async function WoodTypes({ heading }: Heading) {
           </tbody>
         </table>
       </div>
+      {guide && (
+        <a href={guide.href} className={`${more} mt-6`}>
+          {guide.title}
+          <ArrowRight aria-hidden size={18} strokeWidth={1.75} className="rtl:rotate-180" />
+        </a>
+      )}
     </Section>
   )
 }

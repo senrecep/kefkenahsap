@@ -1,5 +1,6 @@
 import { unstable_cache } from 'next/cache'
 
+import { getPathname } from '@/i18n/navigation'
 import type { Locale } from '@/i18n/routing'
 import { galleryWhere } from '@/lib/gallery/query'
 import { homepageQuery } from '@/lib/home/sections'
@@ -78,4 +79,31 @@ export const getReferences = (locale: Locale) =>
     },
     ['references', locale],
     { tags: [TAGS.references], revalidate: HOUR },
+  )()
+
+// The wood-comparison guide, found by its Turkish slug (slugs are localized; the editor may retitle it).
+const WOOD_GUIDE_TR_SLUG = 'ahsap-turleri'
+
+/** "Ahşap türleri" guide in this locale for the homepage wood table; null unless published with its own slug + title. */
+export const getWoodGuide = (locale: Locale) =>
+  unstable_cache(
+    async () => {
+      const payload = await getPayload()
+      const tr = await payload.find({
+        collection: 'guides',
+        locale: 'tr',
+        where: { and: [{ _status: { equals: 'published' } }, { slug: { equals: WOOD_GUIDE_TR_SLUG } }] },
+        limit: 1,
+        depth: 0,
+        overrideAccess: false,
+        select: { slug: true },
+      })
+      const id = tr.docs[0]?.id
+      if (!id) return null
+      const doc = await payload.findByID({ collection: 'guides', id, locale, fallbackLocale: false, depth: 0, overrideAccess: false, select: { slug: true, title: true } })
+      if (!doc?.slug || !doc.title) return null
+      return { title: doc.title, href: getPathname({ locale, href: { pathname: '/rehber/[slug]', params: { slug: doc.slug } } }) }
+    },
+    ['woodGuide', locale],
+    { tags: [TAGS.guides], revalidate: HOUR },
   )()
