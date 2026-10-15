@@ -27,6 +27,8 @@ const select = {
   sizes: true,
   lqip: true,
   dominantColor: true,
+  focalX: true,
+  focalY: true,
   featured: true,
   // The storage plugin builds file URLs from these; without them a prefixed bucket (dev/) yields broken URLs.
   filename: true,
@@ -59,7 +61,7 @@ export function toGalleryItem(doc: WithAltLang<Media>, locale: Locale): GalleryI
     ...(doc.caption ? { caption: doc.caption } : {}),
     width: doc.width ?? 0,
     height: doc.height ?? 0,
-    media: { url: doc.url, width: doc.width, height: doc.height, lqip: doc.lqip, dominantColor: doc.dominantColor, sizes },
+    media: { url: doc.url, width: doc.width, height: doc.height, lqip: doc.lqip, dominantColor: doc.dominantColor, focalX: doc.focalX, focalY: doc.focalY, sizes },
     ...(cat?.slug
       ? { category: { name: cat.name, href: getPathname({ locale, href: { pathname: '/[category]', params: { category: cat.slug } } }) } }
       : {}),
