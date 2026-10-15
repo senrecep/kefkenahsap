@@ -6,13 +6,16 @@ type State = { root: { type: string; children: unknown[] } & Record<string, unkn
 
 const MARKER = /^[ \t]*<!--\s*block:([A-Za-z][\w-]*)\s*-->[ \t]*$/m
 
-/** The node the admin writes for a block without fields. The id is stable per block type, so re-seeding is a no-op. */
-export const blockNode = (blockType: string) => ({
+/**
+ * The node the admin writes for a block without fields. The id comes from the block type and its position in the root
+ * (24 hex chars: type, then position), so two blocks never share one and a re-seed writes the same id.
+ */
+export const blockNode = (blockType: string, position: number) => ({
   type: 'block',
   version: 2,
   format: '',
   fields: {
-    id: Array.from(blockType, (c) => c.charCodeAt(0).toString(16).padStart(2, '0')).join('').padEnd(24, '0').slice(0, 24),
+    id: Array.from(blockType, (c) => c.charCodeAt(0).toString(16).padStart(2, '0')).join('').padEnd(20, '0').slice(0, 20) + (position % 0x10000).toString(16).padStart(4, '0'),
     blockName: '',
     blockType,
   },
@@ -25,7 +28,7 @@ export function markdownWithBlocks<T extends State>(markdown: string, toLexical:
   const first = toLexical(parts[0]!)
   const children: unknown[] = [...first.root.children]
   for (let i = 1; i < parts.length; i += 2) {
-    children.push(blockNode(parts[i]!))
+    children.push(blockNode(parts[i]!, children.length))
     if (parts[i + 1]?.trim()) children.push(...toLexical(parts[i + 1]!).root.children)
   }
   return { ...first, root: { ...first.root, children } }
@@ -41,7 +44,7 @@ export function insertBlockAfter<T extends State>(body: T, blockType: string, af
   const at = body.root.children.findIndex(after)
   if (at < 0) return undefined
   const children = [...body.root.children]
-  children.splice(at + 1, 0, blockNode(blockType))
+  children.splice(at + 1, 0, blockNode(blockType, at + 1))
   return { ...body, root: { ...body.root, children } }
 }
 

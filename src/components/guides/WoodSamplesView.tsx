@@ -7,9 +7,9 @@ import { can3d, keyRotation, rotate, type WoodKey } from '@/lib/wood/samples'
 import type { WoodScene } from './wood-scene'
 
 type Labels = { hint: string; note: string; title: string; roledescription: string }
-type Sample = { key: WoodKey; texture: string; name: string; fact: string; source: { label: string; href: string } }
+type Sample = { key: WoodKey; texture: string; name: string; fact: string; source?: { label: string; href: string } }
 // A board seen from above and in front, turned a little: top face, front edge and grain all read at rest.
-const START = { x: 0.5, y: -0.22 }
+const START = { x: 0.38, y: -0.16 }
 
 function env() {
   const nav = navigator as Navigator & {
@@ -137,7 +137,7 @@ function Plank(props: { sample: Sample; roledescription: string; hintId: string;
     <li className="mt-0! ps-0!">
       <div
         ref={frame}
-        className="relative grid aspect-[5/2] place-items-center overflow-hidden rounded-[var(--radius-photo)] bg-mist focus-visible:outline-2 focus-visible:outline-offset-2"
+        className="relative grid aspect-[4/1] place-items-center rounded-[var(--radius-photo)] focus-visible:outline-2 focus-visible:outline-offset-2"
         {...(ready
           ? {
               tabIndex: 0,
@@ -182,9 +182,13 @@ function Plank(props: { sample: Sample; roledescription: string; hintId: string;
       </div>
       <p className="mt-3! font-[family-name:var(--font-display)] font-semibold">{sample.name}</p>
       <p className="mt-1! text-[0.95rem] leading-snug text-ink-soft">{sample.fact}</p>
-      <a href={sample.source.href} className="mt-1 inline-flex min-h-11 items-center text-[0.95rem]">
-        {sample.source.label}
-      </a>
+      {sample.source && (
+        <a href={sample.source.href} className="mt-1 inline-flex min-h-11 items-center text-[0.95rem]">
+          {sample.source.label}
+          {/* Two identical link texts: the sample name tells them apart for screen readers. */}
+          <span className="sr-only">: {sample.name}</span>
+        </a>
+      )}
     </li>
   )
 }

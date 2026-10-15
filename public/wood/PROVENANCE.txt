@@ -1,4 +1,4 @@
-iroko.webp: the frame board of media 1680 "Beyaz karo arasında iroko deck zemin" (iroko-deck-zemin-karo-arasi.webp)
+iroko.webp: the oiled side board of the deck in media 1655 "Bahçe kapısı önüne iroko deck zemin" (bahce-kapisi-onu-iroko-deck-zemin.webp)
 cam.webp: the front fascia board of media 1307 "Bahçede emprenyeli çam deck zemin" (bahce-emprenyeli-cam-deck-zemin.webp)
 Both: one board each from Kefken Ahşap job photos in the media library, levelled and cropped by scripts/wood-textures.ts
-(1024×128, the plank's 8:1 face). No drawn textures (DESIGN.md).
+to 1024×128 (the plank's 8:1 face). Colours are the photos' own: no tint or grading. No drawn textures (DESIGN.md).

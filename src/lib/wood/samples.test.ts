@@ -15,7 +15,7 @@ describe('WOOD_SAMPLES', () => {
     expect(WOOD_SAMPLES.map((s) => s.key)).toEqual(['iroko', 'teak', 'cam', 'thermowood'])
     expect(shownSamples().map((s) => [s.key, s.texture, s.photo])).toEqual([
       // #146: each texture names its source job photo (gallery page by SEO filename, public/wood/PROVENANCE.txt).
-      ['iroko', '/wood/iroko.webp', 'iroko-deck-zemin-karo-arasi'],
+      ['iroko', '/wood/iroko.webp', 'bahce-kapisi-onu-iroko-deck-zemin'],
       ['cam', '/wood/cam.webp', 'bahce-emprenyeli-cam-deck-zemin'],
     ])
   })

@@ -21,7 +21,7 @@ import { getProjectCards } from '@/lib/data/projects'
 import { getSiteSettings } from '@/lib/data/site'
 import { metaDescription } from '@/lib/guides/meta'
 import { relatedGuides } from '@/lib/guides/related'
-import { tableOfContents } from '@/lib/guides/toc'
+import { tableOfContents, type TocItem } from '@/lib/guides/toc'
 import { siteUrl } from '@/lib/seo/alternates'
 import { hasWoodSamples } from '@/lib/wood/samples'
 import { articleJsonLd, faqJsonLd } from '@/lib/seo/jsonld'
@@ -111,30 +111,18 @@ export default async function GuidePage({ params }: Props) {
                   <ChevronDown aria-hidden size={20} strokeWidth={1.75} className="shrink-0 text-ink-soft transition-transform duration-150 group-open/toc:rotate-180" />
                 </summary>
                 <nav aria-label={t('toc')} className="border-t border-line px-4 pt-2 pb-3">
-                  <ol className="text-[0.95rem]">
-                    {toc.items.map((item) => (
-                      <li key={item.id}>
-                        <a href={`#${item.id}`} className="block py-2.5 text-ink-soft hover:text-ink">
-                          {item.text}
-                        </a>
-                      </li>
-                    ))}
-                  </ol>
+                  <TocList items={toc.items} className="text-[0.95rem]" linkClassName="block py-2.5 text-ink-soft hover:text-ink" />
                 </nav>
               </details>
               <nav aria-labelledby="toc-title" className="hidden lg:sticky lg:top-24 lg:block lg:self-start">
                 <h2 id="toc-title" className="font-[family-name:var(--font-display)] text-[0.95rem] font-semibold">
                   {t('toc')}
                 </h2>
-                <ol className="mt-3 space-y-1 border-s border-line text-[0.95rem]">
-                  {toc.items.map((item) => (
-                    <li key={item.id}>
-                      <a href={`#${item.id}`} className="-ms-px block border-s-2 border-transparent py-1.5 ps-4 text-ink-soft hover:border-action hover:text-ink">
-                        {item.text}
-                      </a>
-                    </li>
-                  ))}
-                </ol>
+                <TocList
+                  items={toc.items}
+                  className="mt-3 space-y-1 border-s border-line text-[0.95rem]"
+                  linkClassName="-ms-px block border-s-2 border-transparent py-1.5 ps-4 text-ink-soft hover:border-action hover:text-ink"
+                />
               </nav>
             </>
           )}
@@ -234,5 +222,20 @@ export default async function GuidePage({ params }: Props) {
         </Container>
       </section>
     </>
+  )
+}
+
+/** The TOC links: the same list in the phone disclosure and the desktop sidebar, styled per place. */
+function TocList({ items, className, linkClassName }: { items: TocItem[]; className: string; linkClassName: string }) {
+  return (
+    <ol className={className}>
+      {items.map((item) => (
+        <li key={item.id}>
+          <a href={`#${item.id}`} className={linkClassName}>
+            {item.text}
+          </a>
+        </li>
+      ))}
+    </ol>
   )
 }

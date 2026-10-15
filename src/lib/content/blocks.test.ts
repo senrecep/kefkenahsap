@@ -17,7 +17,7 @@ const p = (text: string) => ({ type: 'paragraph', children: [{ type: 'text', tex
 describe('markdownWithBlocks', () => {
   it('replaces a `<!-- block:x -->` line with a Payload block node, in place', () => {
     const out = markdownWithBlocks('a\n\n<!-- block:woodSamples -->\n\nb', toLexical)
-    expect(out.root.children).toEqual([p('a'), blockNode('woodSamples'), p('b')])
+    expect(out.root.children).toEqual([p('a'), blockNode('woodSamples', 1), p('b')])
   })
 
   it('leaves markdown without a marker to the converter alone', () => {
@@ -25,12 +25,19 @@ describe('markdownWithBlocks', () => {
   })
 
   it('builds the node shape the admin writes: block v2 with id, empty blockName and blockType', () => {
-    expect(blockNode('woodSamples')).toEqual({
+    expect(blockNode('woodSamples', 3)).toEqual({
       type: 'block',
       version: 2,
       format: '',
-      fields: { id: expect.stringMatching(/^[0-9a-f]{24}$/), blockName: '', blockType: 'woodSamples' },
+      fields: { id: expect.stringMatching(/^[0-9a-f]{20}0003$/), blockName: '', blockType: 'woodSamples' },
     })
+  })
+
+  it('gives two blocks of one type in one body different ids', () => {
+    const out = markdownWithBlocks('a\n<!-- block:woodSamples -->\nb\n<!-- block:woodSamples -->', toLexical)
+    const ids = out.root.children.filter((n) => (n as { type: string }).type === 'block').map((n) => (n as unknown as { fields: { id: string } }).fields.id)
+    expect(ids).toHaveLength(2)
+    expect(new Set(ids).size).toBe(2)
   })
 })
 
@@ -39,12 +46,12 @@ describe('insertBlockAfter', () => {
 
   it('inserts the block after the first top-level node matching the predicate', () => {
     const out = insertBlockAfter(body, 'woodSamples', (n) => JSON.stringify(n).includes('two'))
-    expect(out?.root.children).toEqual([p('one'), p('two'), blockNode('woodSamples'), p('three')])
+    expect(out?.root.children).toEqual([p('one'), p('two'), blockNode('woodSamples', 2), p('three')])
   })
 
   it('returns undefined when no node matches or the block is already there (idempotent)', () => {
     expect(insertBlockAfter(body, 'woodSamples', () => false)).toBeUndefined()
-    const withBlock = { root: { type: 'root', children: [p('one'), blockNode('woodSamples')] } }
+    const withBlock = { root: { type: 'root', children: [p('one'), blockNode('woodSamples', 1)] } }
     expect(insertBlockAfter(withBlock, 'woodSamples', () => true)).toBeUndefined()
     expect(hasBlock(withBlock, 'woodSamples')).toBe(true)
     expect(hasBlock(body, 'woodSamples')).toBe(false)

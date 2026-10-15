@@ -8,7 +8,7 @@ export const WOOD_SAMPLES: readonly {
   texture: string | null
   photo: string | null
 }[] = [
-  { key: 'iroko', texture: '/wood/iroko.webp', photo: 'iroko-deck-zemin-karo-arasi' },
+  { key: 'iroko', texture: '/wood/iroko.webp', photo: 'bahce-kapisi-onu-iroko-deck-zemin' },
   { key: 'teak', texture: null, photo: null },
   { key: 'cam', texture: '/wood/cam.webp', photo: 'bahce-emprenyeli-cam-deck-zemin' },
   { key: 'thermowood', texture: null, photo: null },

@@ -16,7 +16,7 @@ const idOf = (c: number | Category) => (typeof c === 'object' ? c.id : c)
 
 /**
  * Published guides with a title and slug in this locale, newest update first (index page, related guides). `image` is the
- * guide's approved cover, else the photo of its first related service (the service tile's), else none.
+ * guide's approved cover, else the photo of its first related service (the service tile's), else the first service photo.
  */
 export const getGuides = (locale: Locale) =>
   unstable_cache(
@@ -35,17 +35,20 @@ export const getGuides = (locale: Locale) =>
         populate: { categories: { slug: true } },
       })
       const payload = await getPayload()
-      const tiles = new Map((await getServiceTiles(locale)).map((t) => [t.id, t.image]))
-      const docs = res.docs.filter((d) => d.slug && d.title)
+      const serviceTiles = await getServiceTiles(locale)
+      const tiles = new Map(serviceTiles.map((t) => [t.id, t.image]))
+      // Last resort, so a tile is never blank: the first service photo (a guide with no cover and no related service).
+      const anyPhoto = serviceTiles.map((t) => t.image).find(Boolean)
+      const docs = res.docs.filter((d) => d.slug?.trim() && d.title?.trim())
       const images = await withDefaultAlt(
         payload,
         locale,
-        docs.map((d) => (isApproved(d.cover) ? d.cover : (d.relatedCategories ?? []).map((c) => tiles.get(idOf(c))).find(Boolean))).filter(isApproved),
+        docs.map((d) => (isApproved(d.cover) ? d.cover : ((d.relatedCategories ?? []).map((c) => tiles.get(idOf(c))).find(Boolean) ?? anyPhoto))).filter(isApproved),
       )
       const imageById = new Map(images.map((m) => [m.id, m]))
       return docs.map((d) => {
         const categories = (d.relatedCategories ?? []).map(idOf)
-        const own = isApproved(d.cover) ? d.cover : categories.map((c) => tiles.get(c)).find(Boolean)
+        const own = isApproved(d.cover) ? d.cover : (categories.map((c) => tiles.get(c)).find(Boolean) ?? anyPhoto)
         return {
           id: d.id,
           title: d.title,
@@ -84,4 +87,22 @@ export const getGuide = (locale: Locale, slug: string) =>
     },
     ['guide', locale, slug],
     { tags: [TAGS.guides, TAGS.categories, TAGS.media], revalidate: HOUR },
+  )()
+
+/** Of these gallery slugs (SEO filenames), the ones that are approved photos: a link to /galeri/<slug> must not 404. */
+export const getApprovedPhotoSlugs = (slugs: string[]) =>
+  unstable_cache(
+    async () => {
+      const res = await (await getPayload()).find({
+        collection: 'media',
+        where: { and: [{ seoFilename: { in: slugs } }, { status: { equals: 'approved' } }] },
+        limit: slugs.length,
+        depth: 0,
+        overrideAccess: false,
+        select: { seoFilename: true },
+      })
+      return res.docs.map((d) => d.seoFilename).filter((s): s is string => Boolean(s))
+    },
+    ['approvedPhotoSlugs', ...slugs],
+    { tags: [TAGS.media], revalidate: HOUR },
   )()

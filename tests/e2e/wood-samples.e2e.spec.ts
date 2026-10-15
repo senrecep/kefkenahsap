@@ -101,7 +101,7 @@ test.describe('wood samples block', () => {
     // #146: each sample names one fact from the table and links to the job photo its texture was cut from.
     await expect(figure.getByText(/yaklaşık 660 kg\/m³/)).toBeVisible()
     await expect(figure.getByRole('link', { name: 'Fotoğrafın tamamı' })).toHaveCount(2)
-    await expect(figure.getByRole('link', { name: 'Fotoğrafın tamamı' }).first()).toHaveAttribute('href', '/tr/galeri/iroko-deck-zemin-karo-arasi')
+    await expect(figure.getByRole('link', { name: 'Fotoğrafın tamamı' }).first()).toHaveAttribute('href', '/tr/galeri/bahce-kapisi-onu-iroko-deck-zemin')
     return { figure, scripts }
   }
 

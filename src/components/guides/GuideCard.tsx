@@ -15,6 +15,7 @@ export function GuideCard({ guide: g, heading: H = 'h2', sizes, excerpt = true, 
         <Picture
           media={g.image}
           sizes={sizes}
+          alt="" // the title below names the link; the photo is decoration here
           maxWidth={1280}
           priority={priority}
           className={`aspect-[3/2]! rounded-[var(--radius-photo)] bg-mist ${compact ? 'w-32 shrink-0 sm:w-auto' : ''}`}

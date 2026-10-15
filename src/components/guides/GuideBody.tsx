@@ -58,7 +58,7 @@ export function GuideBody({
       const render = (node: typeof args.node) => (typeof fallback === 'function' ? fallback({ ...args, node }) : node.text)
       if (run.isolate)
         return (
-          <bdi dir="ltr" lang="la">
+          <bdi dir="ltr">
             {render(args.node)}
             {run.tail}
           </bdi>
