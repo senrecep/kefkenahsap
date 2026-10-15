@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { portraitOf, responsiveImage } from './image'
+import { focalPosition, portraitOf, responsiveImage } from './image'
 
 const media = {
   url: 'https://cdn.kefkenahsap.com/deck.webp',
@@ -80,5 +80,20 @@ describe('portraitOf', () => {
   })
   it('is undefined when the source was too small to crop (withoutEnlargement keeps it landscape)', () => {
     expect(portraitOf({ ...media, sizes: { portrait: { url: 'https://cdn.kefkenahsap.com/small-300x200.webp', width: 300, height: 200 } } })).toBeUndefined()
+  })
+})
+
+describe('focalPosition (object-position from the Payload focal point)', () => {
+  it('uses the focal point the editor set', () => {
+    expect(focalPosition({ focalX: 30, focalY: 72 })).toBe('30% 72%')
+  })
+  it('falls back when the focal point is unset or still the upload default (50/50)', () => {
+    expect(focalPosition({})).toBe('50% 85%')
+    expect(focalPosition({ focalX: null, focalY: 40 })).toBe('50% 85%')
+    expect(focalPosition({ focalX: 50, focalY: 50 })).toBe('50% 85%')
+    expect(focalPosition({ focalX: 50, focalY: 50 }, '50% 50%')).toBe('50% 50%')
+  })
+  it('clamps out-of-range values to the image', () => {
+    expect(focalPosition({ focalX: -4, focalY: 120 })).toBe('0% 100%')
   })
 })

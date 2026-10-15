@@ -5,7 +5,7 @@ import type { Locale } from '@/i18n/routing'
 import { categoryRank, diversify } from '@/lib/gallery/curate'
 import type { GalleryItem } from '@/lib/gallery/item'
 import { encodeCursor, galleryWhere, PAGE_SIZE, START_CURSOR_ID, type GalleryQuery } from '@/lib/gallery/query'
-import type { Category, Media, Project } from '@/payload-types'
+import type { Category, Media, Project, Tag } from '@/payload-types'
 
 import { markFallbackAlt, type WithAltLang } from './media-alt'
 import { getPayload, TAGS } from './payload'
@@ -27,6 +27,8 @@ const select = {
   sizes: true,
   lqip: true,
   dominantColor: true,
+  focalX: true,
+  focalY: true,
   featured: true,
   // The storage plugin builds file URLs from these; without them a prefixed bucket (dev/) yields broken URLs.
   filename: true,
@@ -59,7 +61,7 @@ export function toGalleryItem(doc: WithAltLang<Media>, locale: Locale): GalleryI
     ...(doc.caption ? { caption: doc.caption } : {}),
     width: doc.width ?? 0,
     height: doc.height ?? 0,
-    media: { url: doc.url, width: doc.width, height: doc.height, lqip: doc.lqip, dominantColor: doc.dominantColor, sizes },
+    media: { url: doc.url, width: doc.width, height: doc.height, lqip: doc.lqip, dominantColor: doc.dominantColor, focalX: doc.focalX, focalY: doc.focalY, sizes },
     ...(cat?.slug
       ? { category: { name: cat.name, href: getPathname({ locale, href: { pathname: '/[category]', params: { category: cat.slug } } }) } }
       : {}),
@@ -161,7 +163,16 @@ export const getImage = (locale: Locale, slug: string) =>
     async () => {
       const payload = await getPayload()
       const where = { and: [...galleryWhere({}).and, { seoFilename: { equals: slug } }] }
-      const res = await payload.find({ collection: 'media', locale, ...mediaQuery, where, limit: 1 })
+      // Tags only here (not in mediaQuery, which feeds every grid).
+      const res = await payload.find({
+        collection: 'media',
+        locale,
+        ...mediaQuery,
+        select: { ...mediaQuery.select, tags: true },
+        populate: { ...mediaQuery.populate, tags: { name: true, slug: true } },
+        where,
+        limit: 1,
+      })
       const doc = res.docs[0] as Media | undefined
       if (!doc) return null
       const all = await payload.find({ collection: 'media', locale: 'all', where, limit: 1, depth: 0, overrideAccess: false, select: { title: true } })
@@ -174,6 +185,10 @@ export const getImage = (locale: Locale, slug: string) =>
           ? { title: project.title, href: getPathname({ locale, href: { pathname: '/projeler/[slug]', params: { slug: project.slug } } }) }
           : undefined,
         titledLocales: Object.keys(titles).filter((l) => titles[l]),
+        tags: (doc.tags ?? [])
+          .map((x) => rel<Tag>(x))
+          .filter((x): x is Tag => Boolean(x?.slug && x.name))
+          .map((x) => ({ name: x.name, href: `${getPathname({ locale, href: '/galeri' })}?etiket=${encodeURIComponent(x.slug!)}` })),
       }
     },
     ['galleryImage', locale, slug],
@@ -215,3 +230,30 @@ export async function getWorkPhotos(locale: Locale, trSlugs: readonly string[], 
   for (let i = 0; i < limit; i++) for (const p of pages) if (p.items[i]) out.push(p.items[i]!)
   return out.slice(0, limit)
 }
+
+/** A category's public photos in its saved order (the order its page shows): the image page's prev/next. */
+export const getCategorySequence = (locale: Locale, categoryId: number) =>
+  unstable_cache(
+    async () => {
+      const res = await (await getPayload()).find({
+        collection: 'categories',
+        locale,
+        where: { id: { equals: categoryId } },
+        limit: 1,
+        depth: 1,
+        overrideAccess: false,
+        select: { media: true },
+        populate: { media: { seoFilename: true, title: true } },
+        joins: { media: { limit: 1000, where: { and: galleryWhere({}).and } } },
+      })
+      return (res.docs[0]?.media?.docs ?? [])
+        .filter((m): m is Media => typeof m === 'object' && Boolean(m.seoFilename))
+        .map((m) => ({
+          slug: m.seoFilename!,
+          title: m.title ?? '',
+          href: getPathname({ locale, href: { pathname: '/galeri/[slug]', params: { slug: m.seoFilename! } } }),
+        }))
+    },
+    ['categorySequence', locale, String(categoryId)],
+    { tags, revalidate: HOUR },
+  )()

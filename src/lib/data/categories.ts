@@ -1,5 +1,6 @@
 import { unstable_cache } from 'next/cache'
 
+import { getPathname } from '@/i18n/navigation'
 import { routing, type Locale } from '@/i18n/routing'
 import { pickCover } from '@/lib/gallery/curate'
 import type { Media } from '@/payload-types'
@@ -76,3 +77,26 @@ export const getContentLocales = async () => {
   )
   return routing.locales.filter((_, i) => live[i])
 }
+
+/** Published guides that list this category under "İlgili hizmetler", with their own slug + title in this locale. */
+export const getCategoryGuides = (locale: Locale, categoryId: number) =>
+  unstable_cache(
+    async () => {
+      const res = await (await getPayload()).find({
+        collection: 'guides',
+        locale,
+        fallbackLocale: false,
+        where: { and: [published, { relatedCategories: { in: [categoryId] } }] },
+        sort: '-updatedAt',
+        limit: 6,
+        depth: 0,
+        overrideAccess: false,
+        select: { title: true, slug: true, excerpt: true },
+      })
+      return res.docs
+        .filter((d) => d.slug && d.title)
+        .map((d) => ({ id: d.id, title: d.title, excerpt: d.excerpt, href: getPathname({ locale, href: { pathname: '/rehber/[slug]', params: { slug: d.slug! } } }) }))
+    },
+    ['categoryGuides', locale, String(categoryId)],
+    { tags: [TAGS.guides, TAGS.categories], revalidate: HOUR },
+  )()

@@ -14,10 +14,10 @@ import { Link } from '@/i18n/navigation'
 import type { Locale } from '@/i18n/routing'
 import { telLink } from '@/lib/contact'
 import { getServiceTiles } from '@/lib/data/categories'
-import { getFeaturedImages, getFeaturedProjects, getReferences } from '@/lib/data/home'
+import { galleryTileCover, galleryTileFills } from '@/lib/gallery/curate'
+import { getFeaturedImages, getFeaturedProjects, getReferences, getWoodGuide } from '@/lib/data/home'
 import { getNavCategories, getSiteSettings } from '@/lib/data/site'
 import { faqJsonLd } from '@/lib/seo/jsonld'
-import type { Media } from '@/payload-types'
 
 type Heading = { heading?: string | null }
 
@@ -35,10 +35,16 @@ function Section({ title, children, aside, className = '' }: { title: string; ch
 
 const more = 'inline-flex min-h-11 items-center gap-2 font-[family-name:var(--font-display)] font-semibold text-action hover:text-action-deep'
 
+/**
+ * Photos the homepage gallery fetches: the admin's limit (default 12, max 24) plus one per desktop column, so trimming
+ * the overhanging tail tiles still leaves about `limit` on screen instead of hiding chosen photos.
+ */
+export const homeGalleryCount = (limit?: number | null) => Math.min(Math.max(limit || 12, 1), 24) + 4
+
 export async function FeaturedGallery({ locale, heading, limit }: Heading & { locale: Locale; limit?: number | null }) {
   const [t, items, categories] = await Promise.all([
     getTranslations('Home'),
-    getFeaturedImages(locale, Math.min(Math.max(limit || 12, 1), 24)),
+    getFeaturedImages(locale, homeGalleryCount(limit)),
     getNavCategories(locale),
   ])
   if (!items.length) return null
@@ -53,37 +59,54 @@ export async function FeaturedGallery({ locale, heading, limit }: Heading & { lo
       }
     >
       <GalleryFilters locale={locale} categories={categories} tags={[]} className="mb-8" />
-      <GalleryGrid initial={items} total={items.length} />
+      <GalleryGrid initial={items} total={items.length} trim />
     </Section>
   )
 }
 
-export async function Services({ locale, heading }: Heading & { locale: Locale }) {
-  const [t, listed] = await Promise.all([getTranslations('Home'), getServiceTiles(locale)])
+/** `galleryCount`: how many curated photos the homepage gallery shows (0 without one); the Galeri tile avoids them. */
+export async function Services({ locale, heading, galleryCount = 0 }: Heading & { locale: Locale; galleryCount?: number }) {
+  const [t, tGallery, tServices, listed, curated] = await Promise.all([
+    getTranslations('Home'),
+    getTranslations('Gallery'),
+    getTranslations('Services'),
+    getServiceTiles(locale),
+    // Decorative: a failing curated read only costs the Galeri tile its photo.
+    getFeaturedImages(locale, 24).catch(() => []),
+  ])
   if (!listed.length) return null
+  const cover = galleryTileCover(curated, listed, curated.slice(0, galleryCount).map((i) => i.id))
+  const sizes = '(min-width: 1280px) 400px, (min-width: 1024px) 31vw, 48vw'
+  const pic = '!aspect-[4/3] rounded-[var(--radius-photo)]'
+  const zoom = 'transition-transform duration-500 ease-[var(--ease-out-expo)] group-hover:scale-[1.03]'
+  const name = 'mt-3 text-[1.05rem] group-hover:text-action sm:mt-4 sm:text-xl'
+  const text = 'mt-1 line-clamp-2 text-[0.92rem] text-ink-soft sm:mt-1.5 sm:text-base'
+  const empty = <span className="block aspect-[4/3] rounded-[var(--radius-photo)] bg-mist" />
   return (
     <Section title={heading || t('servicesTitle')}>
       <ul className="grid grid-cols-2 gap-x-4 gap-y-7 sm:gap-x-5 sm:gap-y-9 lg:grid-cols-3">
         {listed.map((c) => (
           <li key={c.id}>
             <Link href={{ pathname: '/[category]', params: { category: c.slug } }} className="group block">
-              {c.image ? (
-                <Picture
-                  media={c.image}
-                  alt=""
-                  sizes="(min-width: 1280px) 400px, (min-width: 1024px) 31vw, 48vw"
-                  maxWidth={1280}
-                  className="!aspect-[4/3] rounded-[var(--radius-photo)]"
-                  imgClassName="transition-transform duration-500 ease-[var(--ease-out-expo)] group-hover:scale-[1.03]"
-                />
-              ) : (
-                <span className="block aspect-[4/3] rounded-[var(--radius-photo)] bg-mist" />
-              )}
-              <h3 className="mt-3 text-[1.05rem] group-hover:text-action sm:mt-4 sm:text-xl">{c.name}</h3>
-              {c.shortDesc && <p className="mt-1 line-clamp-2 text-[0.92rem] text-ink-soft sm:mt-1.5 sm:text-base">{c.shortDesc}</p>}
+              {c.image ? <Picture media={c.image} alt="" sizes={sizes} maxWidth={1280} className={pic} imgClassName={zoom} /> : empty}
+              <h3 className={name}>{c.name}</h3>
+              {c.shortDesc && <p className={text}>{c.shortDesc}</p>}
             </Link>
           </li>
         ))}
+        {/* The last cell: the whole gallery, when it closes a hole (11 services) in the 2- and 3-column grids. */}
+        {galleryTileFills(listed.length) && (
+          <li>
+            <Link href="/galeri" className="group block">
+              {cover ? <Picture media={cover.media} alt="" sizes={sizes} maxWidth={1280} className={pic} imgClassName={zoom} /> : empty}
+              <h3 className={`${name} flex items-center gap-2`}>
+                {tGallery('title')}
+                <ArrowRight aria-hidden size={18} strokeWidth={1.75} className="shrink-0 text-action rtl:rotate-180" />
+              </h3>
+              <p className={text}>{tServices('galleryText')}</p>
+            </Link>
+          </li>
+        )}
       </ul>
     </Section>
   )
@@ -153,24 +176,41 @@ export async function References({ locale, heading }: Heading & { locale: Locale
 const WOODS = ['iroko', 'teak', 'pine', 'thermo'] as const
 const COLS = ['origin', 'durability', 'care', 'use'] as const
 
-export async function WoodTypes({ heading }: Heading) {
-  const t = await getTranslations('Home')
+export async function WoodTypes({ locale, heading }: Heading & { locale: Locale }) {
+  const [t, guide] = await Promise.all([getTranslations('Home'), getWoodGuide(locale).catch(() => null)])
+  // Each species name opens the "Ahşap türleri" guide once it is published in this locale.
+  const name = (w: (typeof WOODS)[number]) =>
+    guide ? (
+      <a href={guide.href} className="underline decoration-ink/25 underline-offset-4 hover:text-action hover:decoration-current">
+        {t(`woods.${w}.name`)}
+      </a>
+    ) : (
+      t(`woods.${w}.name`)
+    )
   return (
     <Section title={heading || t('woodTitle')}>
       <p className="-mt-4 mb-8 max-w-[65ch] text-ink-soft">{t('woodIntro')}</p>
-      {/* Below 640px each wood stacks as its own definition list; the table needs the width. */}
+      {/* Below 640px each wood is a disclosure: name and use at a glance, the rest on tap (the table needs the width). */}
       <ul className="border-t border-ink/25 sm:hidden">
         {WOODS.map((w) => (
-          <li key={w} className="border-b border-line py-5">
-            <h3 className="text-lg">{t(`woods.${w}.name`)}</h3>
-            <dl className="mt-3 grid gap-2.5 text-[0.98rem]">
-              {COLS.map((c) => (
-                <div key={c}>
-                  <dt className="font-[family-name:var(--font-display)] text-sm font-semibold">{t(`woodCols.${c}`)}</dt>
-                  <dd className="text-ink-soft">{t(`woods.${w}.${c}`)}</dd>
-                </div>
-              ))}
-            </dl>
+          <li key={w} className="border-b border-line">
+            <details className="group">
+              <summary className="flex min-h-14 cursor-pointer list-none items-start justify-between gap-4 py-4 [&::-webkit-details-marker]:hidden">
+                <span>
+                  <span className="block font-[family-name:var(--font-display)] text-lg font-semibold">{t(`woods.${w}.name`)}</span>
+                  <span className="mt-0.5 block text-[0.98rem] text-ink-soft">{t(`woods.${w}.use`)}</span>
+                </span>
+                <Plus aria-hidden size={20} strokeWidth={1.75} className="mt-1 shrink-0 text-action transition-transform group-open:rotate-45" />
+              </summary>
+              <dl className="grid gap-2.5 pb-5 text-[0.98rem]">
+                {COLS.filter((c) => c !== 'use').map((c) => (
+                  <div key={c}>
+                    <dt className="font-[family-name:var(--font-display)] text-sm font-semibold">{t(`woodCols.${c}`)}</dt>
+                    <dd className="text-ink-soft">{t(`woods.${w}.${c}`)}</dd>
+                  </div>
+                ))}
+              </dl>
+            </details>
           </li>
         ))}
       </ul>
@@ -187,7 +227,7 @@ export async function WoodTypes({ heading }: Heading) {
           <tbody>
             {WOODS.map((w) => (
               <tr key={w} className="border-b border-line align-top">
-                <th scope="row" className="py-4 pe-4 text-start font-[family-name:var(--font-display)] font-semibold">{t(`woods.${w}.name`)}</th>
+                <th scope="row" className="py-4 pe-4 text-start font-[family-name:var(--font-display)] font-semibold">{name(w)}</th>
                 {COLS.map((c) => (
                   <td key={c} className="py-4 pe-4 text-ink-soft">{t(`woods.${w}.${c}`)}</td>
                 ))}
@@ -196,6 +236,12 @@ export async function WoodTypes({ heading }: Heading) {
           </tbody>
         </table>
       </div>
+      {guide && (
+        <a href={guide.href} className={`${more} mt-6`}>
+          {guide.title}
+          <ArrowRight aria-hidden size={18} strokeWidth={1.75} className="rtl:rotate-180" />
+        </a>
+      )}
     </Section>
   )
 }

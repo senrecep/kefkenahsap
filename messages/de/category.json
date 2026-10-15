@@ -15,10 +15,12 @@
     "ctaTitle": "Preis und Dauer erfahren: {category}",
     "ctaText": "Schicken Sie uns ein Foto und die Maße der Fläche per WhatsApp, wir melden uns bei Ihnen.",
     "ctaTitleGeneric": "Preis und Dauer für Ihre Fläche erfahren",
-    "nationwide": "{country} (landesweit)"
+    "nationwide": "{country} (landesweit)",
+    "guides": "Ratgeber"
   },
   "Services": {
     "title": "Unsere Leistungen",
-    "description": "Terrassen, Pergolen, Geländer, Treppen und weitere Holzarbeiten, jeweils mit Fotos echter Aufträge."
+    "description": "Terrassen, Pergolen, Geländer, Treppen und weitere Holzarbeiten, jeweils mit Fotos echter Aufträge.",
+    "galleryText": "Echte Fotos aus all unseren Aufträgen, nach Kategorie filterbar."
   }
 }

@@ -26,3 +26,24 @@ export function largestFirstScreenItem(items: readonly Box[], columns: readonly 
   for (const col of columns) for (const i of col.slice(0, rows)) if (best === undefined || ratio(items[i]!) > ratio(items[best]!)) best = i
   return best
 }
+
+/**
+ * For a fixed set (no feed appends): drop trailing tiles from each column while that brings its bottom closer to the
+ * shortest column's, so the grid ends on a near-even line. A column always keeps its first tile.
+ */
+export function trimColumns(items: readonly Box[], columns: readonly number[][]): number[][] {
+  const ratio = (b: Box) => (b.width && b.height ? b.height / b.width : 1)
+  const heights = columns.map((col) => col.reduce((h, i) => h + ratio(items[i]!), 0))
+  const target = Math.min(...heights)
+  return columns.map((col, c) => {
+    const kept = [...col]
+    let h = heights[c]!
+    while (kept.length > 1) {
+      const last = ratio(items[kept.at(-1)!]!)
+      if (Math.abs(h - last - target) >= Math.abs(h - target)) break
+      kept.pop()
+      h -= last
+    }
+    return kept
+  })
+}

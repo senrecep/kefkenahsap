@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { distribute, largestFirstScreenItem } from './masonry'
+import { distribute, largestFirstScreenItem, trimColumns } from './masonry'
 
 // Ratios chosen so the hand-computed column heights are exact.
 const landscape = { width: 400, height: 200 } // 0.5
@@ -63,3 +63,25 @@ describe('largestFirstScreenItem (the phone grid\'s LCP card)', () => {
   })
 })
 
+
+describe('trimColumns (a fixed grid ends on an even line)', () => {
+  // Heights in width units: square 1, landscape 0.5, portrait 2.
+  it('drops a trailing tile that overhangs the shortest column', () => {
+    // [square, portrait] = 3 vs [square] = 1 → dropping the portrait leaves 1 = 1
+    expect(trimColumns([square, square, portrait], [[0, 2], [1]])).toEqual([[0], [1]])
+  })
+  it('keeps a tile when dropping it would not bring the column closer to the shortest', () => {
+    // 1.5 vs 2: dropping item 3 gives 1, which is as far from 1.5 as 2 is → keep
+    expect(trimColumns([square, square, landscape, square], [[0, 2], [1, 3]])).toEqual([[0, 2], [1, 3]])
+  })
+  it('drops several tiles from one column while each drop gets closer', () => {
+    // [portrait, landscape, landscape] = 3 vs [portrait] = 2 → drop both landscapes (2.5 → 2)
+    expect(trimColumns([portrait, portrait, landscape, landscape], [[0, 2, 3], [1]])).toEqual([[0], [1]])
+  })
+  it('never empties a column', () => {
+    expect(trimColumns([portrait, landscape], [[0], [1]])).toEqual([[0], [1]])
+  })
+  it('leaves even columns alone', () => {
+    expect(trimColumns([square, square, square], [[0], [1], [2]])).toEqual([[0], [1], [2]])
+  })
+})

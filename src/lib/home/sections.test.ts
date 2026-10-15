@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { homeSections } from './sections'
+import { firstHero, homeSections } from './sections'
 
 describe('homeSections', () => {
   it('falls back to the default order when the admin has not set up the homepage', () => {
@@ -21,5 +21,18 @@ describe('homeSections', () => {
 
   it('shows nothing when every saved block is turned off', () => {
     expect(homeSections([{ blockType: 'hero', enabled: false }])).toEqual([])
+  })
+})
+
+describe('firstHero (the one hero that carries the page h1)', () => {
+  it('is the first enabled hero, in the saved order', () => {
+    expect(firstHero(homeSections([{ blockType: 'hero', enabled: false }, { blockType: 'services' }, { blockType: 'hero' }, { blockType: 'hero' }]))).toBe(1)
+  })
+  it('is -1 when no hero renders, so the page supplies its own h1', () => {
+    expect(firstHero(homeSections([{ blockType: 'services' }, { blockType: 'hero', enabled: false }]))).toBe(-1)
+    expect(firstHero(homeSections([{ blockType: 'hero', enabled: false }]))).toBe(-1)
+  })
+  it('is the default hero for an unconfigured homepage', () => {
+    expect(firstHero(homeSections(undefined))).toBe(0)
   })
 })

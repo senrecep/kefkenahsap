@@ -6,7 +6,7 @@ import { isMapEmbedUrl } from '@/lib/http/safe-href'
 
 import { MapEmbed } from './MapEmbed'
 
-type Address = { mapUrl?: string | null; mapEmbedUrl?: string | null; appleMapsUrl?: string | null }
+type Address = { mapUrl?: string | null; mapEmbedUrl?: string | null; appleMapsUrl?: string | null; district?: string | null; city?: string | null }
 
 /** Contact map (#143): click-to-load Google embed plus Google / Apple Maps links. Empty fields render nothing. */
 export async function LocationMap({ address: a, className = '' }: { address?: Address | null; className?: string }) {
@@ -20,7 +20,7 @@ export async function LocationMap({ address: a, className = '' }: { address?: Ad
   ].filter((l): l is { href: string; label: string } => !!l.href)
   return (
     <div className={`grid gap-4 ${className}`}>
-      {embed && <MapEmbed src={embed} title={t('title')} show={t('show')} note={t('note')} />}
+      {embed && <MapEmbed src={embed} title={t('title')} show={t('show')} note={t('note')} place={[a?.district, a?.city].filter(Boolean).join(', ') || undefined} />}
       {links.length > 0 && (
         <div className="flex flex-wrap gap-3">
           {links.map((l) => (

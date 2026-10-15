@@ -8,6 +8,9 @@ export type MediaLike = {
   altLang?: string
   lqip?: string | null
   dominantColor?: string | null
+  /** Payload focal point (percent); 50/50 is the upload default, i.e. never set by an editor. */
+  focalX?: number | null
+  focalY?: number | null
   sizes?: Record<string, Size> | null
 }
 export type ResponsiveImage = {
@@ -56,4 +59,15 @@ export function portraitOf(m: MediaLike): MediaLike | undefined {
   const p = m.sizes?.portrait
   // A source smaller than the box is only shrunk (withoutEnlargement), so its "portrait" can still be landscape.
   return p?.url && p.width && p.height && p.height > p.width ? { url: p.url, width: p.width, height: p.height } : undefined
+}
+
+/**
+ * CSS object-position from the editor's focal point. Unset (or still the 50/50 upload default) → `fallback`: our job
+ * photos keep the worked surface low in the frame.
+ */
+export function focalPosition(m: Pick<MediaLike, 'focalX' | 'focalY'>, fallback = '50% 85%'): string {
+  const { focalX: x, focalY: y } = m
+  if (typeof x !== 'number' || typeof y !== 'number' || (x === 50 && y === 50)) return fallback
+  const pct = (v: number) => `${Math.min(100, Math.max(0, v))}%`
+  return `${pct(x)} ${pct(y)}`
 }
