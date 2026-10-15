@@ -42,7 +42,7 @@ export async function GalleryFilters({
   }
   const scroller = '-mx-4 flex gap-2 overflow-x-auto px-4 pb-1 [scrollbar-width:none] md:mx-0 md:flex-wrap md:overflow-visible md:px-0'
   const services = (
-    <div role="group" {...(activeProp ? { 'aria-labelledby': 'filter-services' } : { 'aria-label': t('categories') })} className={scroller}>
+    <div role="group" {...(activeProp ? { 'aria-labelledby': 'filter-services' } : { 'aria-label': t('serviceFilter') })} className={scroller}>
       {activeProp && (
         <a href={href({ etiket: active.tag })} aria-current={!active.category ? 'page' : undefined} className={!active.category ? on : off}>
           {t('all')}
@@ -75,14 +75,14 @@ export async function GalleryFilters({
     <nav aria-label={t('filters')} className={`flex flex-col gap-3 ${className}`}>
       <div className="md:flex md:items-start md:gap-3">
         <p id="filter-services" className={label}>
-          {t('categories')}
+          {t('serviceFilter')}
         </p>
         {services}
       </div>
       {tags.length > 0 && (
         <div className="md:flex md:items-start md:gap-3">
           <p id="filter-tags" className={label}>
-            {t('tags')}
+            {t('tagFilter')}
           </p>
           <div role="group" aria-labelledby="filter-tags" className={scroller}>
             {tags.map((o) => {

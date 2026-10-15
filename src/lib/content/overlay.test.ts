@@ -170,8 +170,14 @@ describe('slugFix (#156: projects whose ar slug the pre-transliteration hook lef
   it("replaces exactly the old hook's output (the Latin left of an Arabic title: here the year)", () => {
     expect(slugFix({ slug: '2014', title }, 'ar', 'tirasat-khashabiya')).toEqual(Maybe.some('tirasat-khashabiya'))
   })
+  it('replaces a bare year left on an Arabic title that has since lost it (#148 moved the year to its own field; dev)', () => {
+    expect(slugFix({ slug: '2014', title: 'تراسات خشبية ودرابزين ومظلات' }, 'ar', 'tirasat-khashabiya')).toEqual(Maybe.some('tirasat-khashabiya'))
+    // A Latin-script title never got a bare-number slug from the hook, so there it is an editor's choice.
+    expect(slugFix({ slug: '2014', title: 'Holzterrassen' }, 'de')).toEqual(Maybe.none())
+  })
+
   it("keeps any other slug: an editor's choice, or one already fixed", () => {
-    for (const slug of ['2016', 'my-terrace', 'tirasat-khashabiya']) expect(slugFix({ slug, title }, 'ar', 'tirasat-khashabiya')).toEqual(Maybe.none())
+    for (const slug of ['my-terrace', 'terrace-2014', 'tirasat-khashabiya']) expect(slugFix({ slug, title }, 'ar', 'tirasat-khashabiya')).toEqual(Maybe.none())
   })
   it('does nothing without a title, and leaves a Latin-script locale whose slug already follows its title', () => {
     expect(slugFix({ slug: null, title: '  ' }, 'ar', 'x')).toEqual(Maybe.none())

@@ -85,7 +85,11 @@ export function slugFix(current: { slug?: string | null; title?: string | null }
     return Result.isSuccess(r) ? r.value : ''
   }
   const stored = current.slug?.trim() ?? ''
-  if (stored && stored !== slug(title.replace(/[؀-ۿ]/g, ' '))) return Maybe.none()
+  const arabic = /[؀-ۿ]/
+  // The old hook kept only the Latin of an Arabic title: its exact output, or (the title has since lost its year, #148)
+  // any bare number, which nobody would choose as the slug of an Arabic title.
+  const stale = stored === slug(title.replace(new RegExp(arabic, 'g'), ' ')) || (arabic.test(title) && /^[0-9-]+$/.test(stored))
+  if (stored && !stale) return Maybe.none()
   const next = preferred ?? slug(title)
   return next && next !== stored ? Maybe.some(next) : Maybe.none()
 }
