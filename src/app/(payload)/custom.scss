@@ -347,3 +347,79 @@ html[data-theme='dark'] .brand-logo {
   min-inline-size: 48px;
   min-block-size: 48px;
 }
+
+/* #165: react-select chips (tags on a photo) and their edit/remove buttons, and the clear "×": 48px targets. */
+.rs__multi-value.multi-value {
+  min-block-size: 48px;
+  align-items: stretch;
+}
+
+.multi-value-remove,
+.relationship--multi-value-label__drawer-toggler,
+.clear-indicator,
+.dropdown-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-inline-size: 48px;
+  min-block-size: 48px;
+}
+
+/* The 48px indicators already fill the control's height; its own block padding would make selects 68px tall. */
+.react-select .rs__control {
+  padding-block: 0;
+}
+
+/* Radio options (account theme): the whole 48px-tall label row is the tap area, so the invisible input covers it. */
+.radio-input {
+  min-block-size: 48px;
+}
+
+.radio-input input[type='radio'] {
+  inset: 0;
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+/* #165: the account page's divider lines were 100% + 5 × base wide (450px on a 390 phone); span exactly gutter to gutter. */
+.payload-settings::before,
+.payload-settings::after {
+  inset-inline: calc(var(--gutter-h) * -1);
+  inline-size: auto;
+}
+
+/* #165: short list titles ("Teras", "Detay"), the join table's "Yeni" and its row edit icon: 48px wide too. */
+.table td a,
+.relationship-table__add-new {
+  min-inline-size: 48px;
+}
+
+.drawer-link__doc-drawer-toggler {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-inline-size: 48px;
+  min-block-size: 48px;
+}
+
+/* #165: rich-text block handles (drag / add a block; Lexical shows them on hover, wide screens only) are 48×48.
+   Lexical places them with an inline translate at fixed offsets 20px apart, so the add handle is pushed right by a
+   physical margin (the translate is physical too) and the text moves right to clear both. */
+@media (min-width: 769px) {
+  .draggable-block-menu,
+  .add-block-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-inline-size: 48px;
+    min-block-size: 48px;
+  }
+
+  .add-block-menu {
+    margin-left: 40px;
+  }
+
+  .rich-text-lexical--show-gutter .ContentEditable__root {
+    padding-left: 108px;
+  }
+}

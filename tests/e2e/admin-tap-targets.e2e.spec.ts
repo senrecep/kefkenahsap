@@ -13,7 +13,8 @@ const MIN = 48
 async function smallTargets(page: Page): Promise<string[]> {
   return page.evaluate((min) => {
     const out: string[] = []
-    const sel = 'a[href],button,input,select,textarea,summary,[role=button],[role=tab],[role=checkbox],label:has(> input[type=file])'
+    // #165: react-select's clear "×" and multi-value chips are bare divs that still take taps.
+    const sel = 'a[href],button,input,select,textarea,summary,[role=button],[role=tab],[role=checkbox],label:has(> input[type=file]),.clear-indicator,.multi-value'
     for (const el of document.querySelectorAll<HTMLElement>(sel)) {
       // The file input is visually hidden behind its label; react-select's text input sits inside its 48px control.
       if (el.matches('input[type=file],input[type=hidden],.rs__input') || el.closest('[aria-hidden=true],[inert]')) continue
@@ -50,6 +51,9 @@ const category = `E2E Tap ${run}`
 let categoryId: number
 let mediaId: number
 let projectId: number
+let tagId: number
+let referenceId: number
+let pageId: number
 
 test.describe('admin tap targets', () => {
   test.describe.configure({ mode: 'serial', timeout: 300_000 })
@@ -59,13 +63,20 @@ test.describe('admin tap targets', () => {
     for (const u of users) await payload.create({ collection: 'users', data: u })
     categoryId = (await payload.create({ collection: 'categories', locale: 'tr', data: { name: category } })).id
     // #158: an existing record shows the "Diller" panel and the AI tools in the main column.
-    projectId = (await payload.create({ collection: 'projects', locale: 'tr', data: { title: `E2E Tap proje ${run}`, _status: 'published' } })).id
+    // #165: a tag chip on the media/project form, a reference with a joined project, a page with rich text (block handles).
+    tagId = (await payload.create({ collection: 'tags', locale: 'tr', data: { name: `E2E Tap etiket ${run}`, axis: 'wood' } })).id
+    referenceId = (await payload.create({ collection: 'references', data: { name: `E2E Tap referans ${run}` } })).id
+    projectId = (await payload.create({ collection: 'projects', locale: 'tr', data: { title: `E2E Tap proje ${run}`, reference: referenceId, _status: 'published' } })).id
+    const text = { type: 'text', text: 'Elle yazıldı', format: 0, mode: 'normal', style: '', detail: 0, version: 1 }
+    const paragraph = { type: 'paragraph', format: '', indent: 0, version: 1, direction: null, textFormat: 0, children: [text] }
+    const body = { root: { type: 'root', format: '', indent: 0, version: 1, direction: null, children: [paragraph] } }
+    pageId = (await payload.create({ collection: 'pages', locale: 'tr', data: { title: `E2E Tap sayfa ${run}`, body: body as never } })).id
     const photo = await sharp({ create: { width: 800, height: 600, channels: 3, background: { r: 140, g: 100, b: 60 } } }).jpeg().toBuffer()
     for (const i of [1, 2]) {
       const doc = await payload.create({
         collection: 'media',
         locale: 'tr',
-        data: { category: categoryId, title: `Tap foto ${i}` },
+        data: { category: categoryId, title: `Tap foto ${i}`, tags: [tagId] },
         file: { data: photo, mimetype: 'image/jpeg', name: `tap-${run}-${i}.jpg`, size: photo.length },
         context: { skipAi: true },
       })
@@ -81,6 +92,9 @@ test.describe('admin tap targets', () => {
       await payload.delete({ collection: 'categories', id: categoryId })
     }
     if (projectId) await payload.delete({ collection: 'projects', id: projectId })
+    if (pageId) await payload.delete({ collection: 'pages', id: pageId })
+    if (referenceId) await payload.delete({ collection: 'references', id: referenceId })
+    if (tagId) await payload.delete({ collection: 'tags', id: tagId })
     await payload.delete({ collection: 'users', where: { email: { in: users.map((u) => u.email) } } })
   })
 
@@ -122,7 +136,21 @@ test.describe('admin tap targets', () => {
         await expectNoSmallTargets(p, at('media list'))
         await p.goto(`/admin/collections/media/${mediaId}`)
         await expect(p.locator('#field-alt')).toBeVisible()
+        await expect(p.locator('.multi-value').first()).toBeVisible()
         await expectNoSmallTargets(p, at('media edit'))
+        // #165: admin previews come from the CDN; nothing on the media screens 5xx's.
+        const thumbs = p.locator('.cell-filename img, .file-details img, .thumbnail img')
+        await p.goto('/admin/collections/media')
+        await expect(thumbs.first()).toBeVisible()
+        for (const src of await thumbs.evaluateAll((imgs) => imgs.slice(0, 5).map((i) => (i as HTMLImageElement).currentSrc))) {
+          expect(src).not.toContain('/api/media/file')
+          expect((await p.request.get(src)).status(), src).toBe(200)
+        }
+        expect(await thumbs.first().evaluate((i) => (i as HTMLImageElement).naturalWidth)).toBeGreaterThan(0)
+        // #165: the account page fit 450px wide on a 390 phone.
+        await p.goto('/admin/account')
+        await expect(p.locator('#field-email')).toBeVisible()
+        await expectNoSmallTargets(p, at('account'))
         await p.goto('/admin/collections/projects')
         await expect(p.locator('.list-header')).toBeVisible()
         await expectNoSmallTargets(p, at('projects list'))
@@ -134,6 +162,20 @@ test.describe('admin tap targets', () => {
           await p.goto('/admin/globals/homepage')
           await expect(p.locator('.collapsible__toggle').first()).toBeVisible()
           await expectNoSmallTargets(p, at('homepage global'))
+          // #165: list cell links, the join table's "add new", and the rich-text block handles.
+          for (const slug of ['tags', 'references']) {
+            await p.goto(`/admin/collections/${slug}`)
+            await expect(p.locator('.table td a').first()).toBeVisible()
+            await expectNoSmallTargets(p, at(`${slug} list`))
+          }
+          await p.goto(`/admin/collections/references/${referenceId}`)
+          await expect(p.locator('.relationship-table__add-new')).toBeVisible()
+          await expectNoSmallTargets(p, at('reference edit'))
+          await p.goto(`/admin/collections/pages/${pageId}`)
+          await p.getByText('Elle yazıldı').hover()
+          // Lexical shows its block handles (drag / add) on hover, wide screens only.
+          if (width >= 769) await expect(p.locator('.draggable-block-menu')).toBeVisible()
+          await expectNoSmallTargets(p, at('page edit'))
         }
       })
   }

@@ -5,6 +5,7 @@ import { publicError } from '@/lib/http/public-error'
 import { Result } from 'tsentials/result'
 
 import { approvedOrStaff, isStaff, roleOf } from '@/access'
+import { mediaFileURL } from '@/lib/media/url'
 import { checkPublishable, type MediaStatus } from '@/lib/media/publish'
 import { revalidateAfterChange, revalidateAfterDelete } from '@/hooks/revalidate'
 
@@ -138,7 +139,12 @@ export const Media: CollectionConfig = {
   ],
   upload: {
     mimeTypes: ['image/*'],
-    adminThumbnail: 'w320',
+    // A size name would make Payload build thumbnailURL from the stored /api/media/file path, which 500s (files are on the CDN, #165).
+    adminThumbnail: ({ doc }) => {
+      const sizes = doc.sizes as Record<string, { filename?: string | null } | undefined> | undefined
+      const filename = sizes?.w320?.filename ?? (doc.filename as string | undefined)
+      return filename ? mediaFileURL(filename, doc.prefix as string | undefined) : null
+    },
     focalPoint: true,
     formatOptions: { format: 'webp', options: { quality: 82 } },
     imageSizes: [
