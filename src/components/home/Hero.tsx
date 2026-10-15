@@ -9,9 +9,11 @@ import type { Locale } from '@/i18n/routing'
 import { focalPosition, portraitOf, type MediaLike } from '@/lib/media/image'
 
 /** First viewport: full-bleed real job photo, bottom-left H1 + one sentence + WhatsApp / Teklif al on a bottom scrim. */
-export async function Hero({ locale, image, mobileImage, heading, subheading, priority = true }: { locale: Locale; image: MediaLike | null; mobileImage?: MediaLike | null; heading?: string | null; subheading?: string | null; priority?: boolean }) {
+export async function Hero({ locale, image, mobileImage, heading, subheading, priority = true, first = true }: { locale: Locale; image: MediaLike | null; mobileImage?: MediaLike | null; heading?: string | null; subheading?: string | null; priority?: boolean; first?: boolean }) {
   const t = await getTranslations('Home')
   const tCta = await getTranslations('Cta')
+  // One h1 per page: only the first hero's title; a second hero block is a section (h2) styled the same.
+  const Title = first ? 'h1' : 'h2'
   return (
     // Phones stack the photo over the text on Ink: the H1 never covers the work (or the watermark) at the photo's foot.
     // From md the text sits on the photo, over the scrim.
@@ -41,7 +43,7 @@ export async function Hero({ locale, image, mobileImage, heading, subheading, pr
         {/* md+: scrim anchored to the text block, not the section: 0.64 ink under the H1 and subline keeps white text ≥4.5:1 even over a white patch or the watermark, at any viewport height; it fades out over 6rem above the H1. */}
         <div aria-hidden className="absolute inset-x-0 -top-24 bottom-0 -z-10 hidden motion-safe:animate-scrim bg-[linear-gradient(to_top,rgb(29_31_28/0.64)_calc(100%-6rem),transparent)] md:block" />
         <Container className="pt-7 pb-24 md:pt-0 lg:pb-16">
-          <h1 className="max-w-[22ch] text-[clamp(2.1rem,5vw,3.6rem)] leading-[1.08] text-white">{heading || t('heroTitle')}</h1>
+          <Title className="max-w-[22ch] text-[clamp(2.1rem,5vw,3.6rem)] leading-[1.08] text-white">{heading || t('heroTitle')}</Title>
           <p className="mt-4 max-w-[52ch] text-[1.0625rem] text-white/85 md:text-lg md:text-white">{subheading || t('heroText')}</p>
           <div className="mt-7 flex flex-wrap gap-3">
             <WhatsAppButton locale={locale} place="hero" />
@@ -52,5 +54,16 @@ export async function Hero({ locale, image, mobileImage, heading, subheading, pr
         </Container>
       </div>
     </section>
+  )
+}
+
+/** The page title when no hero renders (none enabled, or it failed): the homepage still has its h1 and one-line pitch. */
+export async function HomeTitle() {
+  const t = await getTranslations('Home')
+  return (
+    <Container as="header" className="pt-10 md:pt-16">
+      <h1 className="max-w-[22ch] text-[clamp(2rem,4vw,3rem)] leading-[1.15] tracking-[-0.025em]">{t('heroTitle')}</h1>
+      <p className="mt-4 max-w-[52ch] text-[1.0625rem] text-ink-soft md:text-lg">{t('heroText')}</p>
+    </Container>
   )
 }

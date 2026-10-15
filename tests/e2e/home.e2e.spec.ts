@@ -1,5 +1,7 @@
 import { expect, test } from '@playwright/test'
 
+import { adminApi } from '../helpers/content'
+
 import en from '../../messages/en/home.json' with { type: 'json' }
 import trCommon from '../../messages/tr/common.json' with { type: 'json' }
 import tr from '../../messages/tr/home.json' with { type: 'json' }
@@ -129,5 +131,30 @@ test.describe('site navigation', () => {
     await page.keyboard.press('Escape')
     await expect(panel).toBeHidden()
     await expect(toggle).toBeFocused()
+  })
+})
+
+test.describe('homepage without a hero', () => {
+  test('still has exactly one h1 (the page title)', async ({ page }) => {
+    test.setTimeout(90_000)
+    const api = await adminApi()
+    const before = await (await api.get('/api/globals/homepage?depth=0&draft=false')).json()
+    const save = async (data: Record<string, unknown>) => {
+      const res = await api.post('/api/globals/homepage', { data })
+      expect(res.ok(), await res.text()).toBe(true)
+    }
+    try {
+      await save({ layout: [{ blockType: 'services' }], _status: 'published' })
+      // revalidateTag is stale-while-revalidate: the first hit after the write may still serve the old layout.
+      await expect(async () => {
+        await page.goto('/tr')
+        await expect(page.locator('main section img[fetchpriority="high"][sizes="100vw"]')).toHaveCount(0, { timeout: 1000 })
+      }).toPass({ timeout: 30_000 })
+      const h1 = page.getByRole('heading', { level: 1 })
+      await expect(h1).toHaveCount(1)
+      await expect(h1).toHaveText(tr.Home.heroTitle)
+    } finally {
+      await save({ layout: before.layout ?? [], _status: before._status ?? 'draft' })
+    }
   })
 })

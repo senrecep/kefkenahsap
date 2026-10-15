@@ -18,7 +18,6 @@ import { galleryTileCover, galleryTileFills } from '@/lib/gallery/curate'
 import { getFeaturedImages, getFeaturedProjects, getReferences, getWoodGuide } from '@/lib/data/home'
 import { getNavCategories, getSiteSettings } from '@/lib/data/site'
 import { faqJsonLd } from '@/lib/seo/jsonld'
-import type { Media } from '@/payload-types'
 
 type Heading = { heading?: string | null }
 

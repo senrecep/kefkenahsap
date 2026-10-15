@@ -9,7 +9,7 @@ test.describe('Category page', () => {
   let api: APIRequestContext
   let restoreWhatsApp = async () => {}
   const stamp = Date.now()
-  const ids = { projects: [] as number[], media: [] as number[], categories: [] as number[] }
+  const ids = { projects: [] as number[], guides: [] as number[], media: [] as number[], categories: [] as number[] }
   const full = { tr: `e2e-kategori-${stamp}`, en: `e2e-category-${stamp}`, name: `E2E Kategori ${stamp}` }
   const bare = { tr: `e2e-bos-kategori-${stamp}`, name: `E2E Boş Kategori ${stamp}` }
   const text = (t: string) => ({ type: 'text', text: t, version: 1, format: 0, detail: 0, mode: 'normal', style: '' })
@@ -36,6 +36,7 @@ test.describe('Category page', () => {
     ids.categories.push((await createDoc(api, 'categories', { _status: 'published', name: bare.name, slug: bare.tr })).id)
     const project = await createDoc(api, 'projects', { _status: 'published', title: `E2E Proje ${stamp}`, categories: [category.id], gallery: [ids.media[0]], city: 'İstanbul', year: 2024 })
     ids.projects.push(project.id)
+    ids.guides.push((await createDoc(api, 'guides', { _status: 'published', title: `E2E Rehber ${stamp}`, slug: `e2e-rehber-${stamp}`, excerpt: 'Kısa rehber özeti.', relatedCategories: [category.id] })).id)
   })
 
   test.afterAll(async () => {
@@ -80,10 +81,34 @@ test.describe('Category page', () => {
     await expect(page.getByRole('link', { name: new RegExp(`E2E Proje ${stamp}`) })).toHaveAttribute('href', /^\/tr\/projeler\/e2e-proje-/)
   })
 
+  test('related guides: a sticky aside on desktop, a row below lg', async ({ browser }) => {
+    const guide = new RegExp(`E2E Rehber ${stamp}`)
+    const desktop = await (await browser.newContext({ viewport: { width: 1440, height: 900 } })).newPage()
+    await desktop.goto(`/tr/${full.tr}`)
+    const aside = desktop.locator('aside[aria-labelledby="aside-h"]')
+    await expect(aside.getByRole('link', { name: guide })).toHaveAttribute('href', `/tr/rehber/e2e-rehber-${stamp}`)
+    await expect(aside.locator('a[data-umami-event-place="category_aside"][data-umami-event="whatsapp_click"]')).toBeVisible()
+    await expect(desktop.locator('#guides-h')).toBeHidden()
+    const phone = await (await browser.newContext({ viewport: { width: 390, height: 844 } })).newPage()
+    await phone.goto(`/tr/${full.tr}`)
+    await expect(phone.locator('#guides-h')).toBeVisible()
+    await expect(phone.locator('section[aria-labelledby="guides-h"]').getByText('Kısa rehber özeti.')).toBeVisible()
+    await expect(phone.locator('aside[aria-labelledby="aside-h"]')).toBeHidden()
+  })
+
+  test('image page steps to its neighbours in the category order', async ({ page }) => {
+    await page.goto(`/tr/${full.tr}`)
+    const hrefs = await page.locator('#gallery-h + ul > li a').evaluateAll((as) => as.map((a) => a.getAttribute('href')))
+    await page.goto(hrefs[1]!)
+    await expect(page.locator('a[rel="next"]')).toHaveAttribute('href', hrefs[2]!)
+    await page.locator('a[rel="prev"]').click()
+    await expect(page).toHaveURL(new RegExp(`${hrefs[0]}$`))
+  })
+
   test('empty CMS sections render nothing', async ({ page }) => {
     await page.goto(`/tr/${bare.tr}`)
     await expect(page.locator('h1')).toHaveText(bare.name)
-    for (const name of ['Fiyat rehberi', 'Sık sorulan sorular', 'Bu alandaki projeler']) await expect(page.getByRole('heading', { name })).toHaveCount(0)
+    for (const name of ['Fiyat rehberi', 'Sık sorulan sorular', 'Bu alandaki projeler', 'Rehberler']) await expect(page.getByRole('heading', { name })).toHaveCount(0)
     await expect(page.locator('#gallery-h')).toHaveCount(0)
     await expect(page.locator('link[rel="alternate"][hreflang="en"]')).toHaveCount(0)
   })
