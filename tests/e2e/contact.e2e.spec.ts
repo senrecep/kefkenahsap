@@ -132,9 +132,12 @@ test.describe('Contact map', () => {
     page.on('request', (r) => /(^|\.)(google\.com|gstatic\.com)$/.test(new URL(r.url()).hostname) && google.push(r.url()))
     // CI may have no outbound network: answer the iframe locally instead of waiting on Google.
     await page.route('https://www.google.com/maps/embed**', (r) => r.fulfill({ contentType: 'text/html', body: '<p>map</p>' }))
-    await page.goto('/tr/iletisim')
     const main = page.locator('main')
-    await expect(main.getByRole('link', { name: "Google Haritalar'da aç" })).toHaveAttribute('href', 'https://maps.app.goo.gl/GJ64LpWJjXS3Zvqc8')
+    // The settings write revalidates with 'max' (stale once, then fresh): reload until the map links are rendered.
+    await expect(async () => {
+      await page.goto('/tr/iletisim')
+      await expect(main.getByRole('link', { name: "Google Haritalar'da aç" })).toHaveAttribute('href', 'https://maps.app.goo.gl/GJ64LpWJjXS3Zvqc8', { timeout: 1000 })
+    }).toPass({ timeout: 30_000 })
     await expect(main.getByRole('link', { name: "Apple Haritalar'da aç" })).toHaveAttribute('href', /maps\.apple\.com\/place\?place-id=IC3F39D941423A558/)
     await expect(main.getByRole('link', { name: 'Yol tarifi' })).toHaveCount(0)
     await expect(main.locator('iframe')).toHaveCount(0)

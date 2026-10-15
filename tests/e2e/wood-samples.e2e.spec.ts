@@ -1,6 +1,6 @@
 import { type APIRequestContext, expect, type Page, test } from '@playwright/test'
 
-import { adminApi, createDoc, deleteDocs } from '../helpers/content'
+import { adminApi, createDoc, deleteDocs, uploadPhoto } from '../helpers/content'
 
 // #60: the woodSamples block in a guide body. OGL is fetched only once the samples near the viewport, keyboard turns a
 // plank, and reduced motion keeps the static photos without ever loading OGL. Self-contained published guide.
@@ -98,12 +98,34 @@ test.describe('wood samples block', () => {
     await expect(figure.getByText('Teak', { exact: true })).toHaveCount(0)
     for (const name of ['İroko', 'Emprenyeli çam (sarıçam)'])
       await expect(figure.getByText(name, { exact: true })).toBeVisible()
-    // #146: each sample names one fact from the table and links to the job photo its texture was cut from.
+    // #146: each sample names one fact from the table (the textures are static files: no database photo needed).
     await expect(figure.getByText(/yaklaşık 660 kg\/m³/)).toBeVisible()
-    await expect(figure.getByRole('link', { name: 'Fotoğrafın tamamı' })).toHaveCount(2)
-    await expect(figure.getByRole('link', { name: 'Fotoğrafın tamamı' }).first()).toHaveAttribute('href', '/tr/galeri/bahce-kapisi-onu-iroko-deck-zemin')
     return { figure, scripts }
   }
+
+  // #146: "Fotoğrafın tamamı" links to the job photo a texture was cut from, only while that photo is approved (no 404).
+  // Self-contained: an empty database gets stand-in approved photos under the samples' gallery slugs, removed afterwards.
+  test('source photo links appear only for approved photos', async ({ page }) => {
+    const sources = ['bahce-kapisi-onu-iroko-deck-zemin', 'bahce-emprenyeli-cam-deck-zemin']
+    const made: number[] = []
+    try {
+      for (const [i, seoFilename] of sources.entries()) {
+        const found = await (await api.get(`/api/media?where[seoFilename][equals]=${seoFilename}&where[status][equals]=approved&depth=0&limit=1`)).json()
+        if (!found.totalDocs) made.push((await uploadPhoto(api, { seoFilename }, i)).id)
+      }
+      const links = page.locator('figure', { hasText: 'Ahşap numuneleri' }).getByRole('link', { name: /Fotoğrafın tamamı/ })
+      // The approved-photo lookup is cached and revalidated with 'max' (stale once): reload until it is fresh.
+      await expect(async () => {
+        await page.goto(`/tr/rehber/${slug}`)
+        await expect(links).toHaveCount(2, { timeout: 1000 })
+      }).toPass({ timeout: 30_000 })
+      await expect(links.first()).toHaveAttribute('href', `/tr/galeri/${sources[0]}`)
+      // Two identical visible texts, two distinct accessible names.
+      await expect(links.first()).toHaveAccessibleName(/^Fotoğrafın tamamı\s*: İroko$/)
+    } finally {
+      await deleteDocs(api, 'media', made)
+    }
+  })
 
   test('OGL loads only on scroll; arrow keys turn a plank', async ({ page }) => {
     const { figure, scripts } = await open(page)

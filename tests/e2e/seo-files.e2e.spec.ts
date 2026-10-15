@@ -21,10 +21,17 @@ async function sitemap(request: APIRequestContext): Promise<Entry[]> {
 
 /** The page is live and indexable, self-canonical, and its hreflang equals the sitemap alternates. */
 async function expectIndexable(request: APIRequestContext, u: Entry) {
-  const res = await request.get(path(u.loc))
-  expect(res.status(), u.loc).toBe(200)
-  const html = await res.text()
-  expect(html.match(/<meta name="robots" content="([^"]*)"/)?.[1] ?? '', u.loc).not.toMatch(/noindex/)
+  let html = ''
+  // revalidateTag(…, 'max') serves a stale page once after a fixture write (e.g. the guide index rendered before the
+  // first guide was published, still noindex): re-request until the fresh render is there.
+  await expect
+    .poll(async () => {
+      const res = await request.get(path(u.loc))
+      expect(res.status(), u.loc).toBe(200)
+      html = await res.text()
+      return html.match(/<meta name="robots" content="([^"]*)"/)?.[1] ?? ''
+    }, { message: u.loc, timeout: 20_000 })
+    .not.toMatch(/noindex/)
   expect(path(html.match(/<link rel="canonical" href="([^"]*)"/)![1]!), u.loc).toBe(path(u.loc))
   const hreflang = Object.fromEntries([...html.matchAll(/<link rel="alternate" hrefLang="([^"]+)" href="([^"]+)"/g)].map((m) => [m[1]!, path(m[2]!)]))
   expect(hreflang, u.loc).toEqual(u.alternates)
@@ -73,7 +80,10 @@ test.describe('robots, sitemap, llms.txt', () => {
     test.setTimeout(120_000)
     let urls: Entry[] = []
     // Payload's revalidation hook runs after each write; wait for the fixtures to appear.
-    await expect.poll(async () => (urls = await sitemap(request)).some((u) => path(u.loc) === `/en/gallery/${photo}`), { timeout: 20_000 }).toBe(true)
+    // The guide index joins the sitemap once its (cached) guide list has the fixture guide: wait for both.
+    await expect
+      .poll(async () => (urls = await sitemap(request)).some((u) => path(u.loc) === `/en/gallery/${photo}`) && urls.some((u) => path(u.loc) === '/tr/rehber'), { timeout: 30_000 })
+      .toBe(true)
     expect(new Set(urls.map((u) => u.loc)).size).toBe(urls.length)
     const at = (p: string) => urls.find((u) => path(u.loc) === p)
 
