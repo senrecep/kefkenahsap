@@ -147,7 +147,9 @@ export const getGalleryTags = (locale: Locale) =>
   unstable_cache(
     async () => {
       const res = await (await getPayload()).find({ collection: 'tags', locale, limit: 100, sort: 'name', depth: 0, overrideAccess: false, select: { name: true, slug: true } })
-      return res.docs.filter((d) => d.slug && d.name)
+      // The database sorts bytewise (Ç, İ, Ö after Z); chips follow the locale's alphabet.
+      const collator = new Intl.Collator(locale)
+      return res.docs.filter((d) => d.slug && d.name).sort((x, y) => collator.compare(x.name, y.name))
     },
     ['galleryTags', locale],
     { tags: [TAGS.tags], revalidate: HOUR },

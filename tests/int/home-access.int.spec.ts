@@ -2,7 +2,7 @@
 import { mkdirSync } from 'fs'
 import os from 'os'
 import path from 'path'
-import { getPayload, type Payload } from 'payload'
+import { getPayload, type Payload, type TypeWithVersion } from 'payload'
 import sharp from 'sharp'
 import { afterAll, beforeAll, describe, expect, it } from 'vitest'
 
@@ -13,7 +13,9 @@ import type { Homepage } from '@/payload-types'
 let payload: Payload
 let pendingId: number
 let categoryId: number | undefined
-let before: Homepage
+// Shared dev DB: the published homepage and its latest version as they were, every locale (read with locale 'all').
+let beforeMain: Homepage
+let beforeLatest: TypeWithVersion<Homepage> | undefined
 
 beforeAll(async () => {
   payload = await getPayload({ config: await config })
@@ -23,12 +25,15 @@ beforeAll(async () => {
   await sharp({ create: { width: 1600, height: 900, channels: 3, background: { r: 140, g: 100, b: 60 } } }).webp().toFile(file)
   const media = await payload.create({ collection: 'media', data: { alt: 'bekleyen', status: 'pending' }, filePath: file, context: { skipAi: true } })
   pendingId = media.id
-  before = await payload.findGlobal({ slug: 'homepage', draft: true })
+  beforeMain = await payload.findGlobal({ slug: 'homepage', draft: false, depth: 0, locale: 'all' })
+  beforeLatest = (await payload.findGlobalVersions({ slug: 'homepage', where: { latest: { equals: true } }, limit: 1, depth: 0, locale: 'all' })).docs[0]
 })
 
 afterAll(async () => {
-  // Shared dev DB: put the homepage back exactly as it was.
-  await payload.updateGlobal({ slug: 'homepage', data: { layout: before.layout ?? [], _status: before._status ?? 'draft' } })
+  // Put the homepage back exactly as it was: the published document and the latest version, every locale (db-level writes;
+  // an updateGlobal in one locale would drop the other locales' block text).
+  await payload.db.updateGlobal({ slug: 'homepage', data: beforeMain as unknown as Record<string, unknown> })
+  if (beforeLatest) await payload.db.createGlobalVersion({ globalSlug: 'homepage', versionData: beforeLatest.version, autosave: false, createdAt: beforeLatest.createdAt, updatedAt: new Date().toISOString() })
   if (categoryId) await payload.delete({ collection: 'categories', id: categoryId }).catch(() => {})
   await payload.delete({ collection: 'media', id: pendingId }).catch(() => {})
 })

@@ -10,7 +10,7 @@ import { databaseHost, isLocalHost } from '@/lib/quality/target'
 import type { Config } from '@/payload-types'
 
 type Locale = Config['locale']
-type Collection = 'categories' | 'pages' | 'guides' | 'projects' | 'references' | 'media'
+type Collection = 'categories' | 'pages' | 'guides' | 'projects' | 'references' | 'media' | 'tags'
 
 /** Edge unwrap for the seed scripts: a bad seed file stops the run. */
 export function unwrap<T>(r: Result<T>): T {

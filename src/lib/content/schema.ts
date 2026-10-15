@@ -83,6 +83,22 @@ export const parseSentenceCase = parseWith(z.record(z.string(), localeChange))
 export const parseTextFixes = parseWith(z.record(z.string(), z.object({ title: localeChange.optional(), caption: localeChange.optional() })))
 export type TextFixes = Record<string, { title?: z.infer<typeof localeChange>; caption?: z.infer<typeof localeChange> }>
 
+// #150: seed/editorial/tags.json and picks.json (see scripts/seed/editorial.ts).
+const localized = z.object({ tr: text, en: text, ru: text, de: text, ar: text })
+export const parseEditorialTags = parseWith(
+  z.object({ tags: z.array(z.object({ key: text, axis: z.enum(['wood', 'setting', 'stage']), name: localized, slug: localized.extend({ tr: slug, en: slug, ru: slug, de: slug, ar: slug }), raw: z.array(text).min(1) })) }),
+)
+const pick = z.object({ seedKey: text, reason: text })
+export const parseEditorialPicks = parseWith(
+  z.object({
+    hero: pick.extend({ focal: z.object({ x: z.number().min(0).max(100), y: z.number().min(0).max(100) }) }),
+    mobileHero: pick,
+    featuredProjects: z.array(z.object({ cluster: text, cover: text, reason: text })).max(6),
+    categoryCovers: z.record(z.string(), pick),
+    faq: z.array(z.object({ category: text, index: z.number().int().min(0), reason: text })).min(1),
+  }),
+)
+
 /** Words in a markdown text, ignoring heading/list/emphasis markers. */
 export const wordCount = (md: string): number => md.replace(/^\s*[-*]\s+/gm, ' ').replace(/[#*_>`]+/g, ' ').split(/\s+/).filter((w) => /\p{L}|\p{N}/u.test(w)).length
 /** #148: seed/i18n/project-story-fixes.json: cluster key → year (fills an empty one) and per-locale { old, new } title/story. */
