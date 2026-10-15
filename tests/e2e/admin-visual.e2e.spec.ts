@@ -66,76 +66,79 @@ test.describe('admin visual: tap areas grow invisibly', () => {
       test(`${width} ${theme}`, async ({ browser }) => {
         // No theme cookie: Payload follows prefers-color-scheme ("Otomatik" in the account settings).
         const context = await browser.newContext({ viewport: { width, height: 900 }, colorScheme: theme })
-        const p = await context.newPage()
-        const at = (screen: string) => `[${width} ${theme}] ${screen}`
-        await login({ page: p, user })
-        await expect.poll(() => p.evaluate(() => document.documentElement.dataset.theme)).toBe(theme)
-        await expectClean(p, at('dashboard'))
-        if (width < 769) {
-          await p.locator('.app-header__mobile-nav-toggler').click()
-          await expect(p.locator('.nav__mobile-close')).toBeVisible()
-          await expectClean(p, at('navigation drawer'))
+        try {
+          const p = await context.newPage()
+          const at = (screen: string) => `[${width} ${theme}] ${screen}`
+          await login({ page: p, user })
+          await expect.poll(() => p.evaluate(() => document.documentElement.dataset.theme)).toBe(theme)
+          await expectClean(p, at('dashboard'))
+          if (width < 769) {
+            await p.locator('.app-header__mobile-nav-toggler').click()
+            await expect(p.locator('.nav__mobile-close')).toBeVisible()
+            await expectClean(p, at('navigation drawer'))
+          }
+
+          await p.goto('/admin/galeri')
+          await p.getByLabel('Kategori').selectOption({ label: category })
+          await expect(p.locator('.galeri__card')).toHaveCount(2)
+          await expectClean(p, at('Galeri'))
+          await p.getByRole('button', { name: 'Sırala', exact: true }).click()
+          await expect(p.locator('.galeri__row')).toHaveCount(2)
+          await expectClean(p, at('Galeri sorting'))
+
+          await p.goto('/admin/collections/projects')
+          await p.locator('.list-controls__toggle-columns').click()
+          await expect(p.locator('.pill-selector')).toBeVisible()
+          await expectClean(p, at('projects list, columns open'))
+
+          await p.goto(`/admin/collections/projects/${ids.project}`)
+          await expect(p.locator('#field-title')).toBeVisible()
+          await expectClean(p, at('project edit'))
+          // The per-language publish menu opens once there is something to publish.
+          await p.locator('#field-title').fill(`E2E Visual proje ${run} *`)
+          const publishMenu = p.locator('.doc-controls__controls .popup-button--default').first()
+          await expect(publishMenu).toBeEnabled()
+          await publishMenu.click()
+          await expect(p.locator('.popup__content').first()).toBeVisible()
+          await expectClean(p, at('publish menu'))
+          await p.keyboard.press('Escape')
+          // Tag chips, relation edit/add buttons and the react-select menu (Künye tab).
+          await p.locator('.tabs-field__tab-button').nth(2).click()
+          await expect(p.locator('#field-tags .multi-value').first()).toBeVisible()
+          await expectClean(p, at('project chips'))
+          await p.locator('#field-tags .dropdown-indicator').click()
+          await expect(p.locator('.rs__menu')).toBeVisible()
+          await expectClean(p, at('react-select menu'))
+          await p.keyboard.press('Escape')
+          await p.locator('.relationship--single-value__drawer-toggler').first().click()
+          await expect(p.locator('.drawer--is-open').first()).toBeVisible()
+          await expectClean(p, at('relationship drawer'))
+
+          await p.goto(`/admin/collections/media/${ids.media}`)
+          await expect(p.locator('#field-alt')).toBeVisible()
+          await expectClean(p, at('media edit'))
+
+          // The owner's report: the array/blocks row "…" became a 48px black disc over the row header in dark mode.
+          await p.goto('/admin/globals/homepage')
+          const rowActions = p.locator('.array-actions__button').first()
+          await rowActions.scrollIntoViewIfNeeded()
+          await rowActions.hover()
+          await expectClean(p, at('row "…" hovered'))
+          await rowActions.click()
+          await expect(p.getByRole('button', { name: 'Altına ekle' }).first()).toBeVisible()
+          await expectClean(p, at('row "…" menu'))
+          await p.keyboard.press('Escape')
+          await p.locator('.blocks-field__drawer-toggler').last().click()
+          await expect(p.locator('.drawer--is-open').first()).toBeVisible()
+          await expectClean(p, at('add-block drawer'))
+
+          await p.goto(`/admin/collections/pages/${ids.page}`)
+          await p.getByText('Görsel deneme').hover()
+          // Lexical shows its block handles (drag / add) on hover, wide screens only.
+          if (width >= 769) await expect(p.locator('.draggable-block-menu')).toBeVisible()
+          await expectClean(p, at('page edit'))
+        } finally {
+          await context.close()
         }
-
-        await p.goto('/admin/galeri')
-        await p.getByLabel('Kategori').selectOption({ label: category })
-        await expect(p.locator('.galeri__card')).toHaveCount(2)
-        await expectClean(p, at('Galeri'))
-        await p.getByRole('button', { name: 'Sırala', exact: true }).click()
-        await expect(p.locator('.galeri__row')).toHaveCount(2)
-        await expectClean(p, at('Galeri sorting'))
-
-        await p.goto('/admin/collections/projects')
-        await p.locator('.list-controls__toggle-columns').click()
-        await expect(p.locator('.pill-selector')).toBeVisible()
-        await expectClean(p, at('projects list, columns open'))
-
-        await p.goto(`/admin/collections/projects/${ids.project}`)
-        await expect(p.locator('#field-title')).toBeVisible()
-        await expectClean(p, at('project edit'))
-        // The per-language publish menu opens once there is something to publish.
-        await p.locator('#field-title').fill(`E2E Visual proje ${run} *`)
-        const publishMenu = p.locator('.doc-controls__controls .popup-button--default').first()
-        await expect(publishMenu).toBeEnabled()
-        await publishMenu.click()
-        await expect(p.locator('.popup__content').first()).toBeVisible()
-        await expectClean(p, at('publish menu'))
-        await p.keyboard.press('Escape')
-        // Tag chips, relation edit/add buttons and the react-select menu (Künye tab).
-        await p.locator('.tabs-field__tab-button').nth(2).click()
-        await expect(p.locator('#field-tags .multi-value').first()).toBeVisible()
-        await expectClean(p, at('project chips'))
-        await p.locator('#field-tags .dropdown-indicator').click()
-        await expect(p.locator('.rs__menu')).toBeVisible()
-        await expectClean(p, at('react-select menu'))
-        await p.keyboard.press('Escape')
-        await p.locator('.relationship--single-value__drawer-toggler').first().click()
-        await expect(p.locator('.drawer--is-open').first()).toBeVisible()
-        await expectClean(p, at('relationship drawer'))
-
-        await p.goto(`/admin/collections/media/${ids.media}`)
-        await expect(p.locator('#field-alt')).toBeVisible()
-        await expectClean(p, at('media edit'))
-
-        // The owner's report: the array/blocks row "…" became a 48px black disc over the row header in dark mode.
-        await p.goto('/admin/globals/homepage')
-        const rowActions = p.locator('.array-actions__button').first()
-        await rowActions.scrollIntoViewIfNeeded()
-        await rowActions.hover()
-        await expectClean(p, at('row "…" hovered'))
-        await rowActions.click()
-        await expect(p.getByRole('button', { name: 'Altına ekle' }).first()).toBeVisible()
-        await expectClean(p, at('row "…" menu'))
-        await p.keyboard.press('Escape')
-        await p.locator('.blocks-field__drawer-toggler').last().click()
-        await expect(p.locator('.drawer--is-open').first()).toBeVisible()
-        await expectClean(p, at('add-block drawer'))
-
-        await p.goto(`/admin/collections/pages/${ids.page}`)
-        await p.getByText('Görsel deneme').hover()
-        // Lexical shows its block handles (drag / add) on hover, wide screens only.
-        if (width >= 769) await expect(p.locator('.draggable-block-menu')).toBeVisible()
-        await expectClean(p, at('page edit'))
-        await context.close()
       })
 })

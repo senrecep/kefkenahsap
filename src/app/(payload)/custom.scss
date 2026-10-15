@@ -96,7 +96,7 @@ body {
   align-self: center;
 }
 
-/* Payload's drawer header is 100% wide from its 16px start, so it hung 16px past the drawer's edge. */
+/* Payload's drawer header is 100vw wide from its 16px start, so it hung 16px past the drawer's edge. */
 .nav__header {
   inline-size: calc(100% - 32px);
 }
@@ -302,17 +302,31 @@ a.pill {
   min-inline-size: 0;
 }
 
-/* #167: on wide screens the bar grows with the wrapped meta. At a fixed height its clipped box cut "Durum" in half and
-   hid the creation date once a long status ("Değişiklik yapıldı — Yayınlanana geri döndür") wrapped. Below 1025px
-   Payload already stacks the bar and scrolls its rows sideways. */
+/* #167: on wide screens the bar stays one line, so it keeps Payload's height (the sticky sidebar and live preview
+   stick below it at --doc-controls-height). Wrapped, its clipped box cut "Durum" in half and hid the creation date
+   once a long status ("Değişiklik yapıldı — Yayınlanana geri döndür") appeared; now the status stays whole and the
+   dates give way with an ellipsis. Below 1025px Payload stacks the bar and the meta wraps (above). */
 @media (min-width: 1025px) {
-  .doc-controls__wrapper {
-    block-size: auto;
-    min-block-size: var(--doc-controls-height);
+  .doc-controls__meta {
+    flex-wrap: nowrap;
   }
 
-  .doc-controls__content {
-    overflow: visible;
+  .doc-controls__meta > .doc-controls__list-item:not(.doc-controls__status) {
+    display: block;
+    align-self: center;
+    min-inline-size: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  // Label and value run inline so the item's one line ends in an ellipsis.
+  .doc-controls__meta > .doc-controls__list-item:not(.doc-controls__status) > * {
+    display: inline;
+  }
+
+  .doc-controls__status {
+    flex-shrink: 0;
   }
 }
 
@@ -454,16 +468,17 @@ html[data-theme='dark'] .brand-logo {
 .rs__multi-value.multi-value {
   min-block-size: 48px;
   align-items: stretch;
+  max-inline-size: calc(100% - 16px); // Room for the typing caret beside a long chip, so the field stays one row.
 }
 
-/* #167: the chip's 16–20px edit/remove buttons keep their size and hover square; 16px each side puts them 48px apart. */
+/* #167: the chip's 20px edit/remove buttons keep their size and hover square; 14px each side puts them 48px apart. */
 .multi-value-remove,
 .relationship--multi-value-label__drawer-toggler {
   @include hit-area;
 
   flex-shrink: 0;
   align-self: center;
-  margin-inline: 16px;
+  margin-inline: 14px;
 }
 
 /* The chip's label truncates, so the chip fits its field instead of sliding its "×" under the clear indicator. */
@@ -494,6 +509,11 @@ html[data-theme='dark'] .brand-logo {
 .react-select,
 .react-select .rs__value-container {
   min-inline-size: 0;
+}
+
+/* The values take every pixel the indicators leave, so a chip and the typing caret share one row. */
+.react-select .rs__value-container {
+  flex: 1;
 }
 
 /* The 48px indicators already fill the control's height; its own block padding would make selects 68px tall. */
@@ -588,15 +608,12 @@ html[data-theme='dark'] .brand-logo {
   color: var(--theme-elevation-650);
 }
 
-.tabs-field__tab-button--active {
+.tabs-field__tab-button--active,
+.tabs-field__tab-button:hover {
   color: var(--theme-text);
 }
 
-/* The required "*" (error-500: 4.1:1 on white, 3.9:1 on the dark field ground). */
-html[data-theme='light'] .required {
+/* The required "*" (error-500: 4.1:1 on white, 3.9:1 on the dark field ground); the 750 step passes in both themes. */
+.required {
   color: var(--theme-error-750);
-}
-
-html[data-theme='dark'] .required {
-  color: #f87171; /* 6.6:1 on the dark field ground */
 }
