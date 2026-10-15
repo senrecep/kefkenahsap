@@ -220,6 +220,9 @@ export interface Media {
   project?: (number | null) | Project;
   featured?: boolean | null;
   capturedAt?: string | null;
+  lqip?: string | null;
+  seedKey?: string | null;
+  dominantColor?: string | null;
   /**
    * Model, prompt sürümü ve önerilen metinler (yalnızca öneri).
    */
@@ -232,9 +235,6 @@ export interface Media {
     | number
     | boolean
     | null;
-  lqip?: string | null;
-  seedKey?: string | null;
-  dominantColor?: string | null;
   legacy?: {
     urls?:
       | {
@@ -954,10 +954,10 @@ export interface MediaSelect<T extends boolean = true> {
   project?: T;
   featured?: T;
   capturedAt?: T;
-  aiSuggestion?: T;
   lqip?: T;
   seedKey?: T;
   dominantColor?: T;
+  aiSuggestion?: T;
   legacy?:
     | T
     | {

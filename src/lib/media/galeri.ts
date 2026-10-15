@@ -47,3 +47,16 @@ export function reorder<T extends Orderable>(
 /** Page size of the Galeri media query; a full page means more photos may exist than are listed. */
 export const MEDIA_LIMIT = 200
 export const isTruncated = (count: number) => count >= MEDIA_LIMIT
+
+export type StatusFilter = MediaStatus | 'all'
+export type StatusCounts = Record<StatusFilter, number>
+
+/** Per-status totals for the Galeri filter chips; a missing status is the collection default, pending. */
+export function statusCounts(list: readonly { status?: MediaStatus | null }[]): StatusCounts {
+  const counts: StatusCounts = { pending: 0, approved: 0, hidden: 0, all: list.length }
+  for (const d of list) counts[d.status ?? 'pending']++
+  return counts
+}
+
+/** Galeri opens on the photos that wait for approval, if any. */
+export const initialFilter = (counts: StatusCounts): StatusFilter => (counts.pending > 0 ? 'pending' : 'all')

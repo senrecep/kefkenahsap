@@ -4,14 +4,16 @@ import sharp from 'sharp'
 
 import config from '../../src/payload.config.js'
 import { login } from '../helpers/login'
-import { cleanupTestUser, seedTestUser, testUser } from '../helpers/seedUser'
 
 // #26: upload through the Galeri view, reorder with ↑, approve after adding Turkish alt text.
-test('Galeri: upload two photos, move the second up, approve with alt text', async ({ browser }) => {
+// #157: "En sona al" in the Sırala list; Galeri opens on "Onay bekliyor" and an approved card stays in view.
+test('Galeri: upload three photos, reorder (↑, En başa, En sona, fast ↓↓), approve with alt text', async ({ browser }) => {
   test.setTimeout(180_000)
-  await seedTestUser()
   const payload = await getPayload({ config })
   const run = Date.now()
+  // Own user: other admin specs delete and recreate the shared seed user, which logs this one out mid-run.
+  const testUser = { email: `galeri-${run}@local.test`, password: `galeri-${run}`, name: 'E2E Galeri', role: 'admin' as const }
+  await payload.create({ collection: 'users', data: testUser })
   const cat = await payload.create({ collection: 'categories', locale: 'tr', data: { name: `E2E Galeri ${run}` } })
   const photo = async (r: number, g: number, b: number) =>
     sharp({ create: { width: 1600, height: 1200, channels: 3, background: { r, g, b } } }).jpeg().toBuffer()
@@ -23,24 +25,55 @@ test('Galeri: upload two photos, move the second up, approve with alt text', asy
     await page.getByLabel('Kategori').selectOption({ label: `E2E Galeri ${run}` })
     await expect(page.getByText('Bu kategoride henüz fotoğraf yok.')).toBeVisible()
 
+    const [a, b, c] = ['birinci', 'ikinci', 'ucuncu'].map((n) => `${n}-${run}.webp`) as [string, string, string]
     await page.locator('input[type="file"]').setInputFiles([
       { name: `birinci-${run}.jpg`, mimeType: 'image/jpeg', buffer: await photo(160, 110, 60) },
       { name: `ikinci-${run}.jpg`, mimeType: 'image/jpeg', buffer: await photo(60, 110, 160) },
+      { name: `ucuncu-${run}.jpg`, mimeType: 'image/jpeg', buffer: await photo(60, 160, 110) },
     ])
-    await expect(page.getByText('2 fotoğraf yüklendi.')).toBeVisible({ timeout: 60_000 })
+    await expect(page.getByText('3 fotoğraf yüklendi.')).toBeVisible({ timeout: 90_000 })
+    await expect(page.getByRole('button', { name: 'Onay bekleyenleri göster' })).toBeVisible()
 
     const names = page.locator('.galeri__card .galeri__name')
-    await expect(names).toHaveText([`birinci-${run}.webp`, `ikinci-${run}.webp`])
+    await expect(names).toHaveText([a, b, c])
     await expect(page.locator('.galeri__badge').first()).toHaveText('AI hazırlıyor…')
 
     const reordered = page.waitForResponse((r) => r.url().endsWith('/api/reorder') && r.ok())
-    await page.getByRole('button', { name: `ikinci-${run}.webp: yukarı taşı` }).click()
+    await page.getByRole('button', { name: `${b}: yukarı taşı` }).click()
     await reordered
-    await expect(names).toHaveText([`ikinci-${run}.webp`, `birinci-${run}.webp`])
+    await expect(names).toHaveText([b, a, c])
 
     // The order is persisted, and the category choice is remembered across reloads.
     await page.reload()
-    await expect(names).toHaveText([`ikinci-${run}.webp`, `birinci-${run}.webp`], { timeout: 30_000 })
+    await expect(names).toHaveText([b, a, c], { timeout: 30_000 })
+    await expect(page.getByRole('button', { name: 'Onay bekliyor 3' })).toHaveAttribute('aria-pressed', 'true')
+
+    // Sırala: jump to the start and to the end. A move counts as done once its refresh is in (buttons enabled again).
+    const rows = page.locator('.galeri__row .galeri__name')
+    const settled = () => expect(page.locator('.galeri__row button[aria-disabled="true"]')).toHaveCount(4)
+    await page.getByRole('button', { name: 'Tümü 3' }).click()
+    await page.getByRole('button', { name: 'Sırala', exact: true }).click()
+    await page.getByRole('button', { name: `En başa al: ${c}` }).click()
+    await expect(rows).toHaveText([`1. ${c}`, `2. ${b}`, `3. ${a}`])
+    await settled()
+    await page.getByRole('button', { name: `En sona al: ${c}` }).click()
+    await expect(rows).toHaveText([`1. ${b}`, `2. ${a}`, `3. ${c}`])
+    await settled()
+
+    // Two fast "↓" taps: the second lands while the first is saving (force skips Playwright's wait for enabled).
+    // Whatever the screen settles on must be what was saved.
+    const down = page.getByRole('button', { name: `${b}: aşağı taşı` })
+    await down.click()
+    await down.click({ force: true })
+    await settled()
+    const shown = await rows.allInnerTexts()
+    expect(shown).not.toEqual([`1. ${b}`, `2. ${a}`, `3. ${c}`])
+    await page.reload()
+    await page.getByRole('button', { name: 'Tümü 3' }).click()
+    await page.getByRole('button', { name: 'Sırala', exact: true }).click()
+    await expect(rows).toHaveText(shown)
+    await page.getByRole('button', { name: 'Bitti' }).click()
+    await page.getByRole('button', { name: 'Onay bekliyor 3' }).click()
 
     const first = page.locator('.galeri__card').first()
     await first.getByRole('button', { name: 'Onayla' }).click()
@@ -49,11 +82,12 @@ test('Galeri: upload two photos, move the second up, approve with alt text', asy
     await first.getByRole('button', { name: 'Kaydet ve onayla' }).click()
     await expect(first.locator('.galeri__badge')).toHaveText('Yayında')
     await expect(first.locator('.galeri__alt')).toHaveText('Mavi tonlarda ahşap deck örneği')
+    await expect(page.getByRole('button', { name: 'Onay bekliyor 2' })).toBeVisible()
     // Docs screenshot only on demand (UPDATE_SCREENSHOTS=1) to avoid churn in normal runs.
     if (process.env.UPDATE_SCREENSHOTS) await page.screenshot({ path: 'docs/screens/admin-galeri-mobile.png', fullPage: true })
   } finally {
     await payload.delete({ collection: 'media', where: { category: { equals: cat.id } } })
     await payload.delete({ collection: 'categories', id: cat.id })
-    await cleanupTestUser()
+    await payload.delete({ collection: 'users', where: { email: { equals: testUser.email } } })
   }
 })

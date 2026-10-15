@@ -1,16 +1,18 @@
 /* #27: Admin for non-technical editors: 16px content text (Payload: 13px, 12px on phones) and 48px tap targets.
-   The root font-size is left alone on purpose: Payload's layout (nav width, gutters) is rem-based and breaks at 390px if it grows. */
+   The root font-size is left alone on purpose: Payload's layout (nav width, gutters) is rem-based and breaks at 390px if it grows.
+   Payload's own CSS sits in `@layer payload-default`, so these unlayered rules win without specificity games. */
 .template-default__wrap,
 .template-default__wrap input,
 .template-default__wrap textarea,
 .template-default__wrap select,
+.template-default__wrap .react-select,
 .nav__link {
   font-size: 16px;
 }
 
 .nav__link,
 .nav a,
-.template-default__wrap .btn:not(.btn--icon-only),
+.template-default__wrap .btn,
 .template-default__wrap input:not([type='checkbox']):not([type='radio']):not([type='file']),
 .template-default__wrap select,
 .template-default__wrap .react-select .rs__control {
@@ -21,4 +23,298 @@
 .nav a {
   display: flex;
   align-items: center;
+}
+
+/* #157: on phones the open nav drawer pushes the header sideways; never let that become a sideways page scroll.
+   `clip`, not `hidden`: no scroll container, so sticky headers keep working. */
+body {
+  overflow-x: clip;
+}
+
+/* #157: a header tall enough for 48px controls (Payload: 44–54px depending on width). */
+:root {
+  --app-header-height: 60px;
+}
+
+/* #157: every control a finger can hit is at least 48×48 (CLAUDE.md, WCAG 2.5.8 with margin for a 60-year-old's thumb). */
+/* No `display` here: Payload hides several of these with display: none. */
+.app-header__mobile-nav-toggler,
+.nav__mobile-close,
+.nav__log-out,
+.app-header__account,
+.step-nav__home,
+.popup-button,
+.paginator__page,
+.clickable-arrow,
+.array-actions__button,
+.sort-column__button,
+.sort-header__button,
+.template-default__wrap .btn--icon-only,
+.card__actions .btn {
+  min-inline-size: 48px;
+  min-block-size: 48px;
+}
+
+/* The hamburger's bordered box fills its (now 48px) button: keep it a centred 40px square.
+   Only where Payload shows it: on phones the template toggler's hamburger is display: none. */
+.app-header__mobile-nav-toggler .hamburger,
+.nav__mobile-close .hamburger {
+  display: grid;
+  place-items: center;
+  inline-size: 40px;
+  block-size: 40px;
+  margin: auto;
+}
+
+/* On phones the template toggler stays an empty 0-size button: sized up, it would sit invisibly over the header. */
+@media (min-width: 769px) {
+  .template-default__nav-toggler {
+    min-inline-size: 48px;
+    min-block-size: 48px;
+  }
+
+  .template-default__nav-toggler .hamburger {
+    display: grid;
+    place-items: center;
+    inline-size: 40px;
+    block-size: 40px;
+    margin: auto;
+  }
+}
+
+/* The header locale switcher is absolutely placed to clear a 25px avatar; clear the 48px one instead. */
+.app-header__localizer.localizer {
+  right: calc(var(--gutter-h) + 56px);
+}
+
+[dir='rtl'] .app-header__localizer.localizer {
+  right: unset;
+  left: calc(var(--gutter-h) + 56px);
+}
+
+/* Inline links need a box to take a size; Payload never hides these. */
+.step-nav__home,
+.app-header__account,
+.nav__log-out {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-group__toggle,
+.collapsible__toggle,
+.blocks-field__header-action,
+.tabs-field__tab-button,
+.pill,
+.popup-button-list__button,
+.rs__option,
+.relationship-table td a {
+  min-block-size: 48px;
+}
+
+.blocks-field__header-action,
+.pill,
+.relationship-table td a {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Breadcrumb links, the file URL and its copy button, relation edit/add buttons, table links and drag handles. */
+.step-nav a,
+.file-meta__url a,
+.table td a {
+  display: inline-flex;
+  align-items: center;
+  min-block-size: 48px;
+}
+
+.copy-to-clipboard,
+.relationship--single-value__drawer-toggler,
+.relationship-add-new__add-button,
+.collapsible__drag,
+.sort-row {
+  min-inline-size: 48px;
+  min-block-size: 48px;
+}
+
+.collapsible__drag,
+.sort-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* The breadcrumb gives way (it already truncates) so the bigger account button stays on screen at 390px. */
+.app-header__step-nav-wrapper,
+.app-header__step-nav {
+  min-inline-size: 0;
+}
+
+.app-header__step-nav {
+  overflow-x: clip;
+}
+
+.app-header__step-nav > * {
+  flex-shrink: 0;
+}
+
+.app-header__step-nav > .step-nav__last {
+  flex-shrink: 1;
+  min-inline-size: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Small buttons ("Yeni oluştur", "Satır ekle") grow to 48px through padding: .btn has no display to centre with. */
+.template-default__wrap .btn--size-small {
+  --btn-padding-block-start: 14px;
+  --btn-padding-block-end: 14px;
+}
+
+/* Login and other minimal-template screens (forgot/reset password) live outside .template-default__wrap. */
+.template-minimal input:not([type='checkbox']):not([type='radio']),
+.template-minimal .btn {
+  min-block-size: 48px;
+  font-size: 16px;
+}
+
+.template-minimal form a {
+  display: inline-flex;
+  align-items: center;
+  min-block-size: 48px;
+}
+
+/* Nav group headings ("İçerik", "Yönetim") were 12px grey: readable, still quieter than the links. */
+.nav-group__toggle {
+  font-size: 14px;
+}
+
+/* Asc/desc arrows sit side by side so each can be 48px without doubling the header height. */
+.sort-column__buttons {
+  flex-direction: row;
+}
+
+/* Checkboxes: a 24px box, but the invisible native input that takes the tap is 48px around it. */
+.checkbox-input__input {
+  inline-size: 24px;
+  block-size: 24px;
+}
+
+.checkbox-input__input input[type='checkbox'] {
+  inset-block-start: 50%;
+  inset-inline-start: 50%;
+  inline-size: 48px;
+  block-size: 48px;
+  margin: 0;
+  translate: -50% -50%;
+}
+
+[dir='rtl'] .checkbox-input__input input[type='checkbox'] {
+  translate: 50% -50%;
+}
+
+/* Document header meta (created / updated) wraps instead of pushing the 390px page sideways. */
+.doc-controls__meta {
+  flex-wrap: wrap;
+  min-inline-size: 0;
+}
+
+.doc-controls__value {
+  overflow-wrap: anywhere;
+}
+
+/* Media list: a thumbnail big enough to recognise the photo; the file name is secondary. */
+.cell-filename .file__thumbnail {
+  max-inline-size: 64px;
+  block-size: 64px;
+}
+
+.cell-filename .file__filename {
+  color: var(--theme-elevation-650);
+  font-size: 14px;
+}
+
+/* Dashboard cards: compact rows (no empty body), title readable, the whole card is the link (.card__click overlay). */
+.collections__card-list .card {
+  align-items: center;
+  block-size: auto;
+  min-block-size: 64px;
+  padding-block: 8px;
+}
+
+.collections__card-list .card__title {
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+.card__actions .btn__icon {
+  inline-size: 40px;
+  block-size: 40px;
+}
+
+/* Brand (admin.components.graphics). The lockup's grey "AHŞAP DEKORASYON" needs a light ground in dark mode. */
+.brand-logo {
+  display: block;
+  inline-size: 247px;
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+html[data-theme='dark'] .brand-logo {
+  padding-block: 8px;
+  padding-inline: 12px;
+  border-radius: 8px;
+  background: #fbfaf7;
+}
+
+.brand-icon {
+  display: block;
+  inline-size: 24px;
+  block-size: 24px;
+}
+
+/* Dashboard: the everyday job first (EditorHome, admin.components.beforeDashboard). */
+.editor-home {
+  display: grid;
+  gap: 4px;
+  margin-block: 24px 32px;
+  padding-block: 20px;
+  padding-inline: 24px;
+  border-radius: 8px;
+  background: #0b7a3e; /* site action green: white text 5.4:1 */
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 150ms ease-out;
+}
+
+.editor-home:hover {
+  background: #075c2e;
+}
+
+.editor-home:focus-visible {
+  outline: 3px solid #0b7a3e;
+  outline-offset: 3px;
+}
+
+.editor-home__title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.editor-home__text {
+  font-size: 18px;
+}
+
+.editor-home__count {
+  justify-self: start;
+  margin-block-start: 8px;
+  padding-block: 4px;
+  padding-inline: 12px;
+  border-radius: 999px;
+  background: #fff;
+  color: #075c2e;
+  font-size: 16px;
+  font-weight: 700;
 }

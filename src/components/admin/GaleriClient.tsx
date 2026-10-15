@@ -4,7 +4,16 @@ import Link from 'next/link'
 import { useCallback, useEffect, useRef, useState } from 'react'
 
 import type { Media } from '@/payload-types'
-import { fitWithin, isTruncated, MEDIA_LIMIT, mediaBadge, reorder } from '@/lib/media/galeri'
+import {
+  fitWithin,
+  initialFilter,
+  isTruncated,
+  MEDIA_LIMIT,
+  mediaBadge,
+  reorder,
+  type StatusFilter,
+  statusCounts,
+} from '@/lib/media/galeri'
 import './galeri.css'
 
 type Option = { id: number; name: string }
@@ -14,6 +23,12 @@ type QueueEntry = { key: string; name: string; state: 'waiting' | 'working' | 'd
 const MAX_EDGE = 2560
 const STORE_KEY = 'galeri.secim'
 const NETWORK_ERROR = 'Bağlantı kurulamadı. İnternetinizi kontrol edip tekrar deneyin.'
+const FILTERS: [StatusFilter, string, string][] = [
+  ['pending', 'Onay bekliyor', 'Onay bekleyen fotoğraf yok.'],
+  ['approved', 'Yayında', 'Yayında fotoğraf yok.'],
+  ['hidden', 'Gizli', 'Gizli fotoğraf yok.'],
+  ['all', 'Tümü', ''],
+]
 
 /** fetch + Payload error unwrapping; throws an Error with a Turkish, user-facing message. */
 async function api<T>(path: string, init?: RequestInit): Promise<T> {
@@ -72,6 +87,12 @@ export function GaleriClient({ categories, projects }: { categories: Option[]; p
   const [cardError, setCardError] = useState<Record<number, string>>({})
   const [busy, setBusy] = useState<number | null>(null)
   const [moving, setMoving] = useState(false)
+  // Read synchronously: a second tap can land before React re-renders with `moving` set.
+  const movingRef = useRef(false)
+  const [filter, setFilter] = useState<StatusFilter>('all')
+  // Photos changed under the current filter stay in view until the filter changes (no card vanishes on "Onayla").
+  const [kept, setKept] = useState<ReadonlySet<number>>(new Set())
+  const [sorting, setSorting] = useState(false)
   const dragFrom = useRef<number | null>(null)
   const thumbs = useRef(new Map<number, HTMLButtonElement>())
   // Files picked while a run is in progress join the same strictly sequential run.
@@ -113,13 +134,25 @@ export function GaleriClient({ categories, projects }: { categories: Option[]; p
     setLoading(true)
     setLoadError('')
     load(category)
-      .then((docs) => live && setItems(docs))
+      .then((docs) => {
+        if (!live) return
+        setItems(docs)
+        // Chosen once per category load; later edits must not switch the view under the user.
+        setFilter(initialFilter(statusCounts(docs)))
+        setKept(new Set())
+        setSorting(false)
+      })
       .catch((e: Error) => live && setLoadError(e.message))
       .finally(() => live && setLoading(false))
     return () => {
       live = false
     }
   }, [category, load])
+
+  function showFilter(next: StatusFilter) {
+    setFilter(next)
+    setKept(new Set())
+  }
 
   const setEntry = (key: string, patch: Partial<QueueEntry>) =>
     setQueue((q) => q.map((e) => (e.key === key ? { ...e, ...patch } : e)))
@@ -168,6 +201,7 @@ export function GaleriClient({ categories, projects }: { categories: Option[]; p
         body: JSON.stringify(data),
       })
       setItems((list) => list.map((m) => (m.id === id ? doc : m)))
+      setKept((ids) => new Set(ids).add(id))
       return true
     } catch (e) {
       setCardError((errs) => ({ ...errs, [id]: (e as Error).message }))
@@ -181,9 +215,10 @@ export function GaleriClient({ categories, projects }: { categories: Option[]; p
 
   async function move(from: number, to: number) {
     const r = reorder(items, from, to)
-    if (!r || moving || !category) return
+    if (!r || movingRef.current || !category) return
     const before = items
     setItems(r.next)
+    movingRef.current = true
     setMoving(true)
     const fail = (message: string) => {
       setItems(before)
@@ -212,12 +247,22 @@ export function GaleriClient({ categories, projects }: { categories: Option[]; p
       }
     } catch (e) {
       fail((e as Error).message)
+      movingRef.current = false
+      setMoving(false)
       return
+    }
+    // Saved. Fresh order keys arrive before the next move is allowed; the next move builds on them.
+    // A failed refresh keeps the optimistic list (the move itself is saved), and a refresh for a category
+    // the user has left since must not replace the one on screen.
+    try {
+      const fresh = await load(category)
+      if (categoryRef.current === category) setItems(fresh)
+    } catch {
+      // Stale keys only; the shown order is the saved one.
     } finally {
+      movingRef.current = false
       setMoving(false)
     }
-    // The move is saved; a failed refresh only leaves stale keys, so it must not revert the order.
-    load(category).then(setItems, () => undefined)
   }
 
   if (!categories.length)
@@ -233,9 +278,34 @@ export function GaleriClient({ categories, projects }: { categories: Option[]; p
 
   const activeQueue = queue.filter((e) => e.state !== 'done')
   const doneCount = queue.filter((e) => e.state === 'done').length
+  const counts = statusCounts(items)
+  const truncated = isTruncated(items.length)
+  const visible = items
+    .map((m, i) => ({ m, i }))
+    .filter(({ m }) => filter === 'all' || (m.status ?? 'pending') === filter || kept.has(m.id))
+  // Order is about the whole category: moving within a filtered subset would jump over hidden neighbours.
+  const canMove = filter === 'all'
+  const dragProps = (m: Item, i: number) => ({
+    draggable: canMove && !moving && editing !== m.id,
+    onDragStart: (e: React.DragEvent) => {
+      // Firefox only starts a drag when data is set.
+      e.dataTransfer.setData('text/plain', String(m.id))
+      e.dataTransfer.effectAllowed = 'move'
+      dragFrom.current = i
+    },
+    onDragOver: (e: React.DragEvent) => e.preventDefault(),
+    onDrop: (e: React.DragEvent) => {
+      e.preventDefault()
+      if (dragFrom.current !== null) void move(dragFrom.current, i)
+      dragFrom.current = null
+    },
+  })
+  const nameOf = (m: Item) => m.title || m.filename || `Görsel ${m.id}`
 
   return (
     <div className="galeri">
+      {/* Galeri edits Turkish texts only; the content-language switcher would suggest otherwise. */}
+      <style>{'.localizer{display:none}'}</style>
       <h1 className="galeri__title">Galeri</h1>
 
       <div className="galeri__pickers">
@@ -279,7 +349,11 @@ export function GaleriClient({ categories, projects }: { categories: Option[]; p
       <section className="galeri__queue" aria-live="polite" aria-label="Yükleme durumu">
         {queue.length > 0 && (
           <>
-            {doneCount > 0 && <p className="galeri__queue-ok">{doneCount} fotoğraf yüklendi.</p>}
+            {doneCount > 0 && (
+              <p className="galeri__queue-ok">
+                {doneCount} fotoğraf yüklendi. <span>Yayına almak için “Onay bekliyor” listesinden onaylayın.</span>
+              </p>
+            )}
             <ul>
               {activeQueue.map((e) => (
                 <li key={e.key} data-state={e.state}>
@@ -293,9 +367,24 @@ export function GaleriClient({ categories, projects }: { categories: Option[]; p
               ))}
             </ul>
             {activeQueue.length === 0 && (
-              <button type="button" className="galeri__btn" onClick={() => setQueue([])}>
-                Tamam
-              </button>
+              <div className="galeri__actions">
+                {doneCount > 0 && (
+                  <button
+                    type="button"
+                    className="galeri__btn galeri__btn--primary"
+                    onClick={() => {
+                      showFilter('pending')
+                      setSorting(false)
+                      setQueue([])
+                    }}
+                  >
+                    Onay bekleyenleri göster
+                  </button>
+                )}
+                <button type="button" className="galeri__btn" onClick={() => setQueue([])}>
+                  Tamam
+                </button>
+              </div>
             )}
           </>
         )}
@@ -306,113 +395,190 @@ export function GaleriClient({ categories, projects }: { categories: Option[]; p
       {isTruncated(items.length) && <p className="galeri__note">Yalnızca ilk {MEDIA_LIMIT} fotoğraf listeleniyor.</p>}
       {!loading && !loadError && items.length === 0 && <p className="galeri__note">Bu kategoride henüz fotoğraf yok.</p>}
 
-      <ol className="galeri__grid">
-        {items.map((m, i) => {
-          const badge = mediaBadge(m)
-          const src = m.sizes?.w640?.url || m.url || ''
-          const label = m.title || m.filename || `Görsel ${m.id}`
-          return (
-            <li
-              key={m.id}
-              className="galeri__card"
-              data-id={m.id}
-              draggable={!moving && editing !== m.id}
-              onDragStart={(e) => {
-                // Firefox only starts a drag when data is set.
-                e.dataTransfer.setData('text/plain', String(m.id))
-                e.dataTransfer.effectAllowed = 'move'
-                dragFrom.current = i
-              }}
-              onDragOver={(e) => e.preventDefault()}
-              onDrop={(e) => {
-                e.preventDefault()
-                if (dragFrom.current !== null) void move(dragFrom.current, i)
-                dragFrom.current = null
-              }}
-            >
-              <button
-                type="button"
-                className="galeri__thumb"
-                ref={(el) => {
-                  if (el) thumbs.current.set(m.id, el)
-                  else thumbs.current.delete(m.id)
-                }}
-                onClick={() => setEditing(editing === m.id ? null : m.id)}
-                aria-expanded={editing === m.id}
-                aria-label={`${label}, ${badge.label}: metni düzenle`}
-              >
-                {/* Already-resized w640 CDN rendition; next/image would re-proxy it. */}
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                {src && <img src={src} alt="" loading="lazy" decoding="async" />}
-                <span className="galeri__badge" data-tone={badge.tone}>
-                  {badge.label}
-                </span>
+      {items.length > 0 && !sorting && (
+        <div className="galeri__toolbar">
+          <div className="galeri__chips" role="group" aria-label="Duruma göre göster">
+            {FILTERS.map(([key, label]) => (
+              <button key={key} type="button" className="galeri__chip" aria-pressed={filter === key} onClick={() => showFilter(key)}>
+                {label} <span className="galeri__count">{counts[key]}</span>
               </button>
+            ))}
+          </div>
+          {items.length > 1 && (
+            <button type="button" className="galeri__btn galeri__sort-toggle" onClick={() => setSorting(true)}>
+              Sırala
+            </button>
+          )}
+        </div>
+      )}
 
-              <div className="galeri__text">
-                <p className="galeri__name">{label}</p>
-                <p className={m.alt ? 'galeri__alt' : 'galeri__alt galeri__alt--empty'}>{m.alt || 'Alt metin yok'}</p>
-              </div>
-
-              {cardError[m.id] && (
-                <p className="galeri__error" role="alert">
-                  {cardError[m.id]}
-                </p>
-              )}
-
-              {editing === m.id && (
-                <Editor
-                  item={m}
-                  busy={busy === m.id}
-                  onCancel={() => closeEditor(m.id)}
-                  onSave={async (data) => {
-                    if (await patch(m.id, data)) closeEditor(m.id)
-                  }}
-                />
-              )}
-
-              <div className="galeri__actions">
-                {m.status !== 'approved' && (
+      {sorting ? (
+        <section className="galeri__sorting" aria-labelledby="galeri-sort-title">
+          <div className="galeri__toolbar">
+            <h2 id="galeri-sort-title" className="galeri__subtitle">
+              Sıralama
+            </h2>
+            <button type="button" className="galeri__btn galeri__btn--primary galeri__sort-toggle" onClick={() => setSorting(false)}>
+              Bitti
+            </button>
+          </div>
+          <p className="galeri__note">
+            Fotoğraflar sitede bu sırayla görünür. Her değişiklik hemen kaydedilir.
+            {truncated && ` Liste ilk ${MEDIA_LIMIT} fotoğrafı gösterdiği için “En sona” kapalı.`}
+          </p>
+          <ol className="galeri__sortlist">
+            {items.map((m, i) => {
+              const label = nameOf(m)
+              const badge = mediaBadge(m)
+              const src = m.sizes?.w320?.url || m.url || ''
+              const last = items.length - 1
+              return (
+                <li key={m.id} className="galeri__row" data-id={m.id} {...dragProps(m, i)}>
+                  {src ? <img src={src} alt="" loading="lazy" decoding="async" /> : <span className="galeri__row-blank" />}
+                  <div className="galeri__row-text">
+                    <p className="galeri__name">
+                      <span className="galeri__pos">{i + 1}.</span> {label}
+                    </p>
+                    <span className="galeri__badge galeri__badge--inline" data-tone={badge.tone}>
+                      {badge.label}
+                    </span>
+                  </div>
+                  <div className="galeri__row-actions">
+                    <button type="button" className="galeri__btn" aria-disabled={i === 0 || moving} onClick={() => void move(i, 0)} aria-label={`En başa al: ${label}`}>
+                      En başa
+                    </button>
+                    <button type="button" className="galeri__btn galeri__btn--icon" aria-disabled={i === 0 || moving} onClick={() => void move(i, i - 1)} aria-label={`${label}: yukarı taşı`}>
+                      ↑
+                    </button>
+                    <button type="button" className="galeri__btn galeri__btn--icon" aria-disabled={i === last || moving} onClick={() => void move(i, i + 1)} aria-label={`${label}: aşağı taşı`}>
+                      ↓
+                    </button>
+                    <button
+                      type="button"
+                      className="galeri__btn"
+                      // Truncated list: its last row is not the category's last photo.
+                      aria-disabled={i === last || moving || truncated}
+                      onClick={() => !truncated && void move(i, last)}
+                      aria-label={`En sona al: ${label}`}
+                    >
+                      En sona
+                    </button>
+                  </div>
+                  {cardError[m.id] && (
+                    <p className="galeri__error" role="alert">
+                      {cardError[m.id]}
+                    </p>
+                  )}
+                </li>
+              )
+            })}
+          </ol>
+        </section>
+      ) : (
+        <>
+          {items.length > 0 && visible.length === 0 && (
+            <div className="galeri__empty">
+              <p className="galeri__note">{FILTERS.find(([key]) => key === filter)?.[2]}</p>
+              <button type="button" className="galeri__btn" onClick={() => showFilter('all')}>
+                Tüm fotoğrafları göster
+              </button>
+            </div>
+          )}
+          <ol className="galeri__grid">
+            {visible.map(({ m, i }) => {
+              const badge = mediaBadge(m)
+              const src = m.sizes?.w640?.url || m.url || ''
+              const label = nameOf(m)
+              return (
+                <li key={m.id} className="galeri__card" data-id={m.id} {...dragProps(m, i)}>
                   <button
                     type="button"
-                    className="galeri__btn galeri__btn--primary"
-                    disabled={busy === m.id}
-                    onClick={() => void patch(m.id, { status: 'approved' })}
+                    className="galeri__thumb"
+                    ref={(el) => {
+                      if (el) thumbs.current.set(m.id, el)
+                      else thumbs.current.delete(m.id)
+                    }}
+                    onClick={() => setEditing(editing === m.id ? null : m.id)}
+                    aria-expanded={editing === m.id}
+                    aria-label={`${label}, ${badge.label}: metni düzenle`}
                   >
-                    Onayla
+                    {/* Already-resized CDN renditions; next/image would re-proxy them. */}
+                    {src && <img src={src} alt="" loading="lazy" decoding="async" />}
+                    <span className="galeri__badge" data-tone={badge.tone}>
+                      {badge.label}
+                    </span>
                   </button>
-                )}
-                {m.status !== 'hidden' && (
-                  <button type="button" className="galeri__btn" disabled={busy === m.id} onClick={() => void patch(m.id, { status: 'hidden' })}>
-                    Gizle
-                  </button>
-                )}
-                <Link className="galeri__btn" href={`/admin/collections/media/${m.id}`}>
-                  Düzenle
-                </Link>
-                <button
-                  type="button"
-                  className="galeri__btn galeri__btn--icon"
-                  aria-disabled={i === 0 || moving}
-                  onClick={() => void move(i, i - 1)}
-                  aria-label={`${label}: yukarı taşı`}
-                >
-                  ↑
-                </button>
-                <button
-                  type="button"
-                  className="galeri__btn galeri__btn--icon"
-                  aria-disabled={i === items.length - 1 || moving}
-                  onClick={() => void move(i, i + 1)}
-                  aria-label={`${label}: aşağı taşı`}
-                >
-                  ↓
-                </button>
-              </div>
-            </li>
-          )
-        })}
-      </ol>
+
+                  <div className="galeri__text">
+                    <p className="galeri__name">{label}</p>
+                    <p className={m.alt ? 'galeri__alt' : 'galeri__alt galeri__alt--empty'}>{m.alt || 'Alt metin yok'}</p>
+                  </div>
+
+                  {cardError[m.id] && (
+                    <p className="galeri__error" role="alert">
+                      {cardError[m.id]}
+                    </p>
+                  )}
+
+                  {editing === m.id && (
+                    <Editor
+                      item={m}
+                      busy={busy === m.id}
+                      onCancel={() => closeEditor(m.id)}
+                      onSave={async (data) => {
+                        if (await patch(m.id, data)) closeEditor(m.id)
+                      }}
+                    />
+                  )}
+
+                  <div className="galeri__actions">
+                    {m.status !== 'approved' && (
+                      <button
+                        type="button"
+                        className="galeri__btn galeri__btn--primary"
+                        disabled={busy === m.id}
+                        onClick={() => void patch(m.id, { status: 'approved' })}
+                      >
+                        Onayla
+                      </button>
+                    )}
+                    {m.status !== 'hidden' && (
+                      <button type="button" className="galeri__btn" disabled={busy === m.id} onClick={() => void patch(m.id, { status: 'hidden' })}>
+                        Gizle
+                      </button>
+                    )}
+                    <Link className="galeri__btn" href={`/admin/collections/media/${m.id}`}>
+                      Düzenle
+                    </Link>
+                    {canMove && (
+                      <>
+                        <button
+                          type="button"
+                          className="galeri__btn galeri__btn--icon"
+                          aria-disabled={i === 0 || moving}
+                          onClick={() => void move(i, i - 1)}
+                          aria-label={`${label}: yukarı taşı`}
+                        >
+                          ↑
+                        </button>
+                        <button
+                          type="button"
+                          className="galeri__btn galeri__btn--icon"
+                          aria-disabled={i === items.length - 1 || moving}
+                          onClick={() => void move(i, i + 1)}
+                          aria-label={`${label}: aşağı taşı`}
+                        >
+                          ↓
+                        </button>
+                      </>
+                    )}
+                  </div>
+                </li>
+              )
+            })}
+          </ol>
+        </>
+      )}
     </div>
   )
 }
