@@ -183,6 +183,20 @@ test.describe('other forms', () => {
           })
         ).title,
       ).toBe('[EN] E2E publish')
+
+      // A later Turkish edit saved as a draft: Turkish is still live, with unpublished changes.
+      await page.locator('#field-title').fill(`${p.title} ikinci düzeltme`)
+      await page.getByRole('button', { name: 'Taslağı kaydet' }).click()
+      await expect(
+        page
+          .locator('.locale-status__item', { hasText: 'Türkçe' })
+          .locator('.locale-status__state'),
+      ).toHaveText('Yayında, yayınlanmamış değişiklik var')
+      await expect(
+        page
+          .locator('.locale-status__item', { hasText: 'İngilizce' })
+          .locator('.locale-status__state'),
+      ).toHaveText('Taslak, yayında değil')
     } finally {
       await payload.delete({ collection: 'projects', id: p.id })
     }
@@ -241,4 +255,13 @@ test.describe('other forms', () => {
       fullPage: true,
     })
   })
+})
+
+test('homepage: one button that publishes every language', async ({ page }) => {
+  await seedTestUser()
+  await login({ page, user: testUser })
+  await page.goto('/admin/globals/homepage')
+  await expect(page.locator('#action-save')).toHaveText('Tüm dilleri yayınla')
+  await expect(page.getByRole('button', { name: /^Yayınla: / })).toHaveCount(0)
+  await cleanupTestUser()
 })

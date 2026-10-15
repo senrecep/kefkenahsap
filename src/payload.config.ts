@@ -125,6 +125,8 @@ export default buildConfig({
     fallback: false,
     // #158: "Yayınla" publishes only the language on screen; "Tüm dilleri yayınla" is in its menu. An AI translation
     // saved as a draft therefore never goes live with a Turkish edit (tests/int/publish-locale.int.spec.ts).
+    // Shared (non-localized) fields — photos, categories, künye numbers — go live with any one-language publish.
+    // The Homepage global always publishes every language (see its beforeOperation hook).
     defaultLocalePublishOption: 'active',
   },
   jobs: {
@@ -155,6 +157,8 @@ export default buildConfig({
     redirectsPlugin({
       collections: ['pages', 'categories', 'projects'],
       redirectTypes: ['301', '302'],
+      // Same values (same enum), Turkish labels.
+      redirectTypeFieldOverride: { options: [{ label: '301 - Kalıcı', value: '301' }, { label: '302 - Geçici', value: '302' }] },
       overrides: {
         labels: { singular: 'Yönlendirme', plural: 'Yönlendirmeler' },
         admin: { group: 'Yönetim', hidden: hiddenFromEditor, useAsTitle: 'from', listSearchableFields: ['from'], hideAPIURL: true },

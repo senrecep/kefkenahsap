@@ -246,6 +246,11 @@
   background: #0b7a3e;
 }
 
+.locale-status__item[data-state='changed'] .locale-status__state::before {
+  border-color: #0b7a3e;
+  background: var(--theme-warning-500);
+}
+
 .locale-status__item[data-state='draft'] .locale-status__state::before {
   border-color: var(--theme-warning-500);
   background: var(--theme-warning-500);

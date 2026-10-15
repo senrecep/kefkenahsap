@@ -67,8 +67,19 @@ const blocks: Block[] = [
 export const Homepage: GlobalConfig = {
   slug: 'homepage',
   label: 'Ana Sayfa',
-  admin: { hidden: hiddenFromEditor, group: 'İçerik', hideAPIURL: true },
-  hooks: { afterChange: [revalidateGlobal('homepage')] },
+  admin: {
+    hidden: hiddenFromEditor,
+    group: 'İçerik',
+    hideAPIURL: true,
+    // The button says what the hook above does: every language is published together.
+    components: { elements: { PublishButton: '/components/admin/PublishAllButton#PublishAllButton' } },
+  },
+  hooks: {
+    // Sections are shared rows with per-language text. Payload merges a one-language publish row by row by POSITION,
+    // so after a reorder the other languages' headings would land on the wrong sections: always publish every language.
+    beforeOperation: [({ args, operation }) => (operation === 'update' ? { ...args, publishSpecificLocale: undefined } : args)],
+    afterChange: [revalidateGlobal('homepage')],
+  },
   access: { read: () => true, update: isStaff },
   versions: { drafts: true },
   // disableBlockName: the free-text block name only adds an unexplained field to every section.

@@ -7,7 +7,12 @@ import { localeName } from '@/i18n/localeNames'
 import { type LocaleState, localeStates } from '@/lib/i18n/localeStatus'
 import './ai.css'
 
-const STATE_TEXT: Record<LocaleState, string> = { live: 'Yayında', draft: 'Taslak, yayında değil', empty: 'Boş' }
+const STATE_TEXT: Record<LocaleState, string> = {
+  live: 'Yayında',
+  changed: 'Yayında, yayınlanmamış değişiklik var',
+  draft: 'Taslak, yayında değil',
+  empty: 'Boş',
+}
 
 /** "Diller" panel (#158): which languages of this record are live, drafted (e.g. by "AI ile çevir") or empty. */
 export function LocaleStatus() {
@@ -22,7 +27,8 @@ export function LocaleStatus() {
 
   useEffect(() => {
     if (!id || !collectionSlug) return
-    const q = new URLSearchParams({ locale: 'all', depth: '0', [`select[${titleKey}]`]: 'true', 'select[slug]': 'true', 'select[_status]': 'true' })
+    // Whole documents (depth 0): "changed" compares every per-language value of the draft with the published one.
+    const q = new URLSearchParams({ locale: 'all', depth: '0' })
     const get = (draft: boolean) =>
       fetch(`/api/${collectionSlug}/${id}?${q}${draft ? '&draft=true' : ''}`, { credentials: 'include' }).then((r) => (r.ok ? r.json() : Promise.reject()))
     Promise.all([get(true), get(false)])
@@ -58,7 +64,7 @@ export function LocaleStatus() {
       )}
       <p className="locale-status__note">
         <strong>Yayınla yalnızca ekrandaki dili yayınlar: {localeName(active.code)} ({active.code.toUpperCase()}).</strong> Taslak bir dili önce okuyun; sonra üstteki dil
-        seçiciden o dile geçip Yayınla’ya basın.
+        seçiciden o dile geçip Yayınla’ya basın. Fotoğraflar, kategoriler ve diğer dil dışı alanlar tüm dillerde birlikte yayınlanır.
       </p>
     </section>
   )
