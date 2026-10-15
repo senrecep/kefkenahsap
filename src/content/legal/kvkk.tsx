@@ -3,9 +3,27 @@
 import { Link } from '@/i18n/navigation'
 
 type Controller = { name: string; address?: string; email?: string | null }
+/** What this deployment really loads: GA4 (env), Umami (env), the click-to-load Google map (siteSettings). */
+export type Uses = { ga: boolean; umami: boolean; map: boolean }
 
-export function KvkkDraft({ locale, c }: { locale: string; c: Controller }) {
-  const contact = [c.address, c.email].filter(Boolean).join(' · ')
+// The e-mail is its own anchor: Cloudflare Email Obfuscation rewrites a bare address inside a text node, and its
+// decoder leaves split text nodes that break hydration (#147). A mailto link survives untouched.
+function ControllerLine({ c }: { c: Controller }) {
+  return (
+    <p>
+      {c.name}
+      {c.address && <> — {c.address}</>}
+      {c.email && (
+        <>
+          {c.address ? ' · ' : ' — '}
+          <a href={`mailto:${c.email}`}>{c.email}</a>
+        </>
+      )}
+    </p>
+  )
+}
+
+export function KvkkDraft({ locale, c, uses }: { locale: string; c: Controller; uses: Uses }) {
   if (locale === 'tr')
     return (
       <>
@@ -14,10 +32,7 @@ export function KvkkDraft({ locale, c }: { locale: string; c: Controller }) {
           nasıl işlendiğini açıklar.
         </p>
         <h2>Veri sorumlusu</h2>
-        <p>
-          {c.name}
-          {contact && <> — {contact}</>}
-        </p>
+        <ControllerLine c={c} />
         <h2>Hangi verileri işliyoruz?</h2>
         <ul>
           <li>Teklif formunda yazdıklarınız: ad soyad, telefon, e-posta (isteğe bağlı), hizmet, il/ilçe, mesaj ve eklediğiniz fotoğraflar.</li>
@@ -37,7 +52,9 @@ export function KvkkDraft({ locale, c }: { locale: string; c: Controller }) {
           <li>Cloudflare, Inc. — site trafiği, güvenlik ve Turnstile doğrulaması.</li>
           <li>Resend — yeni talep bildirim e-postasının gönderimi.</li>
           <li>Google (Gmail) — bildirim e-postalarının alındığı e-posta kutusu.</li>
-          <li>Google (Analytics) — ziyaret ölçümü, yalnızca çerez onayıyla.</li>
+          {uses.ga && <li>Google (Analytics) — ziyaret ölçümü, yalnızca çerez onayıyla.</li>}
+          {uses.umami && <li>Umami — çerezsiz ve kişiyi tanımlamayan sayfa görüntüleme sayımı.</li>}
+          {uses.map && <li>Google (Haritalar) — iletişim sayfasındaki harita, yalnızca &quot;Haritayı göster&quot;e tıklarsanız yüklenir.</li>}
         </ul>
         <p>Fotoğraflarınız ve mesajınız yapay zekâ servislerine gönderilmez.</p>
         <h2>Ne kadar süre saklıyoruz?</h2>
@@ -59,16 +76,13 @@ export function KvkkDraft({ locale, c }: { locale: string; c: Controller }) {
     )
   return (
     // English is the fallback for every other locale until a translated legal page exists in the CMS.
-    <div lang="en" className="contents">
+    <div lang="en" dir="ltr" className="contents">
       <p>
         This notice explains, under Article 10 of the Turkish Personal Data Protection Law No. 6698 (KVKK), how we process the personal data you send us
         through this website.
       </p>
       <h2>Data controller</h2>
-      <p>
-        {c.name}
-        {contact && <> — {contact}</>}
-      </p>
+      <ControllerLine c={c} />
       <h2>What we process</h2>
       <ul>
         <li>What you enter in the quote form: name, phone, e-mail (optional), service, city/district, message and any photos you attach.</li>
@@ -88,7 +102,9 @@ export function KvkkDraft({ locale, c }: { locale: string; c: Controller }) {
         <li>Cloudflare, Inc. — site traffic, security and the Turnstile check.</li>
         <li>Resend — sending the new-request notification e-mail.</li>
         <li>Google (Gmail) — the mailbox that receives those notifications.</li>
-        <li>Google (Analytics) — visit measurement, only with cookie consent.</li>
+        {uses.ga && <li>Google (Analytics) — visit measurement, only with cookie consent.</li>}
+        {uses.umami && <li>Umami — cookieless page-view counts that do not identify you.</li>}
+        {uses.map && <li>Google (Maps) — the map on the contact page, loaded only if you click to show it.</li>}
       </ul>
       <p>Your photos and message are not sent to AI services.</p>
       <h2>How long we keep it</h2>

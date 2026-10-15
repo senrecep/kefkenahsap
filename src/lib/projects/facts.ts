@@ -11,14 +11,13 @@ type Input = {
   duration?: string | null
   woodSpecies?: Named[] | null
   finish?: string | null
-  categories?: Named[] | null
 }
-export type Fact = { key: 'location' | 'year' | 'area' | 'duration' | 'wood' | 'finish' | 'categories'; value: string | string[] }
+export type Fact = { key: 'location' | 'year' | 'area' | 'duration' | 'wood' | 'finish'; value: string | string[] }
 
 const names = (xs: Named[] | null | undefined) =>
   (xs ?? []).map((x) => (typeof x === 'object' ? x?.name?.trim() : undefined)).filter((n): n is string => Boolean(n))
 
-/** "Proje künyesi": only the fields the owner filled, in display order (empty fields render nothing). */
+/** "Proje künyesi": only the fields the owner filled, in display order (empty fields render nothing). Categories are chips under the title, not künye rows. */
 export function projectFacts(p: Input, locale: string, units: Record<Unit, string>): Fact[] {
   const facts: Fact[] = []
   const push = (key: Fact['key'], value: string | string[] | undefined) => {
@@ -30,8 +29,14 @@ export function projectFacts(p: Input, locale: string, units: Record<Unit, strin
   push('duration', p.duration ?? undefined)
   push('wood', names(p.woodSpecies))
   push('finish', p.finish ?? undefined)
-  push('categories', names(p.categories))
   return facts
+}
+
+type Linkable = { name?: string | null; slug?: string | null } | number | null | undefined
+
+/** Category chips under a project title: populated categories with both a name and a slug (each links to its page). */
+export function categoryChips(xs: Linkable[] | null | undefined): { name: string; slug: string }[] {
+  return (xs ?? []).flatMap((x) => (typeof x === 'object' && x?.name?.trim() && x.slug ? [{ name: x.name.trim(), slug: x.slug }] : []))
 }
 
 /** `?kategori=<slug>` → the matching category; anything else means "all projects". */

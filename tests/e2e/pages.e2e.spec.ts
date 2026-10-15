@@ -86,7 +86,7 @@ test.describe('Content pages', () => {
     await expect(main.getByText(String(fx.year), { exact: true })).toBeVisible()
     await expect(main.getByText(`${fx.district}, İstanbul`)).toBeVisible()
     await expect(main.getByText(/\d+ yıl/)).toHaveCount(0)
-    await expect(main.getByRole('link', { name: 'İletişim ve teklif' })).toHaveAttribute('href', '/tr/iletisim')
+    await expect(main.getByRole('link', { name: 'Yaptığımız işleri görün' })).toHaveAttribute('href', '/tr/galeri')
     await expect(page).toHaveTitle(new RegExp(fx.company))
     await page.goto('/en/about')
     await expect(page.locator('html')).toHaveAttribute('lang', 'en')

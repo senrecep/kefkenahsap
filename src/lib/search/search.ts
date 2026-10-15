@@ -5,14 +5,14 @@ import { fromAsync, ResultAsync } from 'tsentials/result'
 
 import { markFallbackAlt } from '@/lib/data/media-alt'
 import { routing, type Locale } from '@/i18n/routing'
-import type { Category, Media, Project, Tag } from '@/payload-types'
+import type { Category, Guide, Media, Project, Tag } from '@/payload-types'
 
 import { normalizeQuery, prefixTsQuery, type NormalizedQuery } from './normalize'
 
-export type SearchResults = { categories: Category[]; media: Media[]; projects: Project[]; tags: Tag[] }
+export type SearchResults = { categories: Category[]; guides: Guide[]; media: Media[]; projects: Project[]; tags: Tag[] }
 
 type Group = {
-  collection: 'categories' | 'media' | 'projects' | 'tags'
+  collection: 'categories' | 'guides' | 'media' | 'projects' | 'tags'
   table: string
   parent: string
   /** Must match the index expression in the `search` migration exactly. */
@@ -41,6 +41,13 @@ export const GROUPS: Group[] = [
     table: 'projects_locales',
     parent: 'projects',
     doc: `search_norm(coalesce(l."title", ''))`,
+    visible: `p."_status" = 'published'`,
+  },
+  {
+    collection: 'guides',
+    table: 'guides_locales',
+    parent: 'guides',
+    doc: `search_norm(coalesce(l."title", '') || ' ' || coalesce(l."excerpt", ''))`,
     visible: `p."_status" = 'published'`,
   },
   { collection: 'tags', table: 'tags_locales', parent: 'tags', doc: `search_norm(coalesce(l."name", ''))`, visible: 'true' },
@@ -96,16 +103,16 @@ async function hydrate<T extends { id: number }>(payload: Payload, g: Group, ids
   return ids.flatMap((id) => byId.get(id) ?? [])
 }
 
-/** Site search over categories, approved media, published projects and tags; docs come back in `locale`, best first. */
+/** Site search over categories, approved media, published projects and guides, and tags; docs come back in `locale`, best first. */
 export function searchSite(payload: Payload, raw: string, locale: Locale, opts: { limit?: number } = {}): ResultAsync<SearchResults> {
   const limit = Math.min(100, Math.max(1, Math.trunc(opts.limit ?? 24)))
   return fromAsync(Promise.resolve(normalizeQuery(raw))).andThen((q) =>
     ResultAsync.try(
       async () => {
-        const [categories, media, projects, tags] = await Promise.all(
+        const [categories, media, projects, guides, tags] = await Promise.all(
           GROUPS.map(async (g) => hydrate(payload, g, await rankedIds(payload, g, q, limit), locale)),
         )
-        return { categories, media, projects, tags } as SearchResults
+        return { categories, guides, media, projects, tags } as SearchResults
       },
       (err) => {
         payload.logger.error({ err }, 'search failed')

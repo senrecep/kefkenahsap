@@ -40,9 +40,10 @@ export async function Footer({ locale }: { locale: Locale }) {
           <p className={h}>{t('contact')}</p>
           <address className="grid gap-2 not-italic text-paper/90">
             {a?.street && (
+              // Each line is a Turkish address; bdi keeps "34287 Arnavutköy İstanbul" in order inside RTL pages.
               <span>
-                {a.street}
-                {a.district || a.city ? <><br />{[a.postalCode, a.district, a.city].filter(Boolean).join(' ')}</> : null}
+                <bdi dir="ltr">{a.street}</bdi>
+                {a.district || a.city ? <><br /><bdi dir="ltr">{[a.postalCode, a.district, a.city].filter(Boolean).join(' ')}</bdi></> : null}
               </span>
             )}
             {settings.phones?.map((p) => (

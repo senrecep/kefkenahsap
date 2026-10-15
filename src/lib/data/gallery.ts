@@ -185,3 +185,31 @@ export async function resolveGalleryFilter(locale: Locale, q: GalleryQuery) {
   const tag = q.tag ? tags.find((x) => x.slug === q.tag) : undefined
   return { categories, tags, category, tag, unknown: Boolean((q.category && !category) || (q.tag && !tag)) }
 }
+
+/**
+ * Approved photos from the given categories (Turkish slugs), newest first and alternating between categories.
+ * The about page uses it to show the big jobs (bridges, piers, structures); an unknown slug or no photo → fewer/none.
+ */
+export async function getWorkPhotos(locale: Locale, trSlugs: readonly string[], limit: number): Promise<GalleryItem[]> {
+  const ids = await unstable_cache(
+    async () => {
+      const res = await (await getPayload()).find({
+        collection: 'categories',
+        locale: 'tr',
+        where: { slug: { in: [...trSlugs] } },
+        select: { slug: true },
+        depth: 0,
+        limit: trSlugs.length,
+        overrideAccess: false,
+      })
+      // Keep the caller's order (find() does not).
+      return trSlugs.flatMap((s) => res.docs.find((d) => d.slug === s)?.id ?? [])
+    },
+    ['workPhotoCategories', ...trSlugs],
+    { tags: [TAGS.categories], revalidate: HOUR },
+  )()
+  const pages = await Promise.all(ids.map((categoryId) => getGalleryPage(locale, { categoryId, limit })))
+  const out: GalleryItem[] = []
+  for (let i = 0; i < limit; i++) for (const p of pages) if (p.items[i]) out.push(p.items[i]!)
+  return out.slice(0, limit)
+}

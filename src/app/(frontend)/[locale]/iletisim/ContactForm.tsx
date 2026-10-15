@@ -80,6 +80,8 @@ export function ContactForm({
   const formRef = useRef<HTMLFormElement>(null)
   const widgetRef = useRef<HTMLDivElement>(null)
   const widgetId = useRef<string | null>(null)
+  // interaction-only: the check usually passes unseen; space is reserved only when Turnstile asks the visitor to act.
+  const [challenge, setChallenge] = useState(false)
 
   // Turnstile loads only on this page, when the visitor starts the form or nears the check (PLAN §9).
   useEffect(() => {
@@ -87,7 +89,14 @@ export function ContactForm({
     const form = formRef.current
     if (!siteKey || !el || !form) return
     const render = () => {
-      if (window.turnstile && !widgetId.current) widgetId.current = window.turnstile.render(el, { sitekey: siteKey, language: locale, theme: 'light' })
+      if (window.turnstile && !widgetId.current) widgetId.current = window.turnstile.render(el, {
+          sitekey: siteKey,
+          language: locale,
+          theme: 'light',
+          appearance: 'interaction-only',
+          'before-interactive-callback': () => setChallenge(true),
+          'after-interactive-callback': () => setChallenge(false),
+        })
     }
     const load = () => {
       io.disconnect()
@@ -100,7 +109,8 @@ export function ContactForm({
       document.head.appendChild(s)
     }
     const io = new IntersectionObserver(([entry]) => entry?.isIntersecting && load(), { rootMargin: '200px' })
-    io.observe(el)
+    // The widget box is hidden until a challenge, so watch the submit button for "nears the check".
+    io.observe(form.querySelector('button[type="submit"]') ?? form)
     form.addEventListener('focusin', load)
     return () => {
       io.disconnect()
@@ -271,8 +281,9 @@ export function ContactForm({
           </label>
         </div>
         {errorText('consent', err('consent'))}
+        {/* Inside the consent block so the empty, zero-height widget adds no grid gap; never display:none, or Turnstile stalls. */}
+        {siteKey && <div ref={widgetRef} className={challenge ? 'mt-5 min-h-[65px]' : ''} />}
       </div>
-      {siteKey && <div ref={widgetRef} className="min-h-[65px]" />}
 
       <div role="status" aria-live="polite" className="empty:hidden">
         {state.status === 'error' && (

@@ -17,7 +17,7 @@ import { GROUPS, matchSql, searchSite, type SearchResults } from '@/lib/search/s
 let payload: Payload
 const stamp = Date.now()
 const IMG = path.join(os.tmpdir(), 'kefken-search', 'wood.webp')
-const cleanup: { collection: 'media' | 'categories' | 'projects' | 'tags'; id: number }[] = []
+const cleanup: { collection: 'media' | 'categories' | 'projects' | 'tags' | 'guides'; id: number }[] = []
 const ids: Record<string, number> = {}
 let pendingStatus: string | null | undefined
 
@@ -60,6 +60,15 @@ beforeAll(async () => {
   await payload.update({ collection: 'categories', id: edited.id, locale: 'tr', data: { name: `Gizli Taslak Ad ${stamp}` }, draft: true })
   ids.edited = edited.id
   ids.project = project.id
+  const guide = await payload.create({
+    collection: 'guides',
+    locale: 'tr',
+    data: { title: `Teak bakımı rehberi ${stamp}`, excerpt: 'Tik ahşabın yağlanması ve temizliği', _status: 'published' },
+  })
+  ids.guide = guide.id
+  const draftGuide = await payload.create({ collection: 'guides', locale: 'tr', data: { title: `Teak taslak yazı ${stamp}`, _status: 'draft' }, draft: true })
+  ids.draftGuide = draftGuide.id
+  cleanup.push({ collection: 'guides', id: guide.id }, { collection: 'guides', id: draftGuide.id })
   const tag = await payload.create({ collection: 'tags', locale: 'tr', data: { name: `Thermowood ${stamp}`, axis: 'wood' } })
   ids.tag = tag.id
   const approved = await payload.create({ collection: 'media', data: {}, filePath: IMG })
@@ -125,6 +134,12 @@ describe('searchSite', () => {
     // Unreadable relations stay unpopulated (bare id): no URL, alt or sizes of the pending image reach the page.
     expect(typeof hit!.cover).not.toBe('object')
     expect((hit!.gallery ?? []).every((m) => typeof m === 'number')).toBe(true)
+  })
+
+  it('finds published guides by title and excerpt, never drafts (#147)', async () => {
+    expect(idsOf((await run('teak bakimi rehberi')).guides)).toContain(ids.guide)
+    expect(idsOf((await run('tik ahsabin yaglanmasi')).guides)).toContain(ids.guide)
+    expect(idsOf((await run('teak taslak yazi')).guides)).not.toContain(ids.draftGuide)
   })
 
   it('searches the published version, not a newer draft', async () => {
