@@ -18,12 +18,21 @@ async function smallTargets(page: Page): Promise<string[]> {
     for (const el of document.querySelectorAll<HTMLElement>(sel)) {
       // The file input is visually hidden behind its label; react-select's text input sits inside its 48px control.
       if (el.matches('input[type=file],input[type=hidden],.rs__input') || el.closest('[aria-hidden=true],[inert]')) continue
-      const r = el.getBoundingClientRect()
+      // #167: icon controls keep Payload's size and take taps through an invisible 48px ::after (custom.scss `hit-area`).
+      let r = el.getBoundingClientRect()
+      const after = getComputedStyle(el, '::after')
       const cs = getComputedStyle(el)
+      if (after.content !== 'none' && after.position === 'absolute') {
+        const left = r.left + parseFloat(cs.borderLeftWidth) + parseFloat(after.left)
+        const top = r.top + parseFloat(cs.borderTopWidth) + parseFloat(after.top)
+        const l = Math.min(r.left, left), t = Math.min(r.top, top)
+        r = new DOMRect(l, t, Math.max(r.right, left + parseFloat(after.width)) - l, Math.max(r.bottom, top + parseFloat(after.height)) - t)
+      }
       // Checkboxes are opacity 0 on purpose: the transparent native input is what takes the tap.
       const invisible = cs.visibility === 'hidden' || (Number(cs.opacity) === 0 && !el.matches('input[type=checkbox],input[type=radio]'))
       if (!r.width || !r.height || invisible) continue
-      if (r.width < min || r.height < min) {
+      // Half a pixel of slack: a tap area centred on a fractional-pixel icon measures 47.99px.
+      if (r.width < min - 0.5 || r.height < min - 0.5) {
         const name = (el.getAttribute('aria-label') || el.textContent || '').trim().slice(0, 30)
         out.push(`${el.tagName.toLowerCase()}.${[...el.classList].slice(0, 2).join('.')} "${name}" ${Math.round(r.width)}×${Math.round(r.height)}`)
       }
