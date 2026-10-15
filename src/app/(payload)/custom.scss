@@ -1,6 +1,23 @@
 /* #27: Admin for non-technical editors: 16px content text (Payload: 13px, 12px on phones) and 48px tap targets.
    The root font-size is left alone on purpose: Payload's layout (nav width, gutters) is rem-based and breaks at 390px if it grows.
    Payload's own CSS sits in `@layer payload-default`, so these unlayered rules win without specificity games. */
+
+/* #167: an icon control keeps Payload's own size, background and radius; only its tap area grows, invisibly, to 48×48
+   round its centre (a 48px painted box became a black disc over the row header in dark mode). `$position: null` for
+   controls Payload already positions absolutely: they are a containing block as they are. */
+@mixin hit-area($position: relative) {
+  position: $position;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset-block: min(0px, calc((100% - 48px) / 2));
+    inset-inline: min(0px, calc((100% - 48px) / 2));
+    // Above later positioned siblings (table cells, sticky bars) that would otherwise take the edge of the area.
+    z-index: 1;
+  }
+}
+
 .template-default__wrap,
 .template-default__wrap input,
 .template-default__wrap textarea,
@@ -12,7 +29,7 @@
 
 .nav__link,
 .nav a,
-.template-default__wrap .btn,
+.template-default__wrap .btn:not(.btn--icon-only),
 .template-default__wrap input:not([type='checkbox']):not([type='radio']):not([type='file']),
 .template-default__wrap select,
 .template-default__wrap .react-select .rs__control {
@@ -37,22 +54,28 @@ body {
 }
 
 /* #157: every control a finger can hit is at least 48×48 (CLAUDE.md, WCAG 2.5.8 with margin for a 60-year-old's thumb). */
-/* No `display` here: Payload hides several of these with display: none. */
+/* No `display` here: Payload hides several of these with display: none. These paint nothing round their icon. */
 .app-header__mobile-nav-toggler,
 .nav__mobile-close,
 .nav__log-out,
 .app-header__account,
 .step-nav__home,
+.sort-column__button,
+.sort-header__button {
+  min-inline-size: 48px;
+  min-block-size: 48px;
+}
+
+/* #167: these paint a box or a hover disc round their icon (array "…", publish ⌄, paginator, dashboard "+"). */
 .popup-button,
 .paginator__page,
 .clickable-arrow,
-.array-actions__button,
-.sort-column__button,
-.sort-header__button,
-.template-default__wrap .btn--icon-only,
-.card__actions .btn {
-  min-inline-size: 48px;
-  min-block-size: 48px;
+.template-default__wrap .btn--icon-only:not(.file-details__remove, .api-key__visibility-button) {
+  @include hit-area;
+}
+
+.file-details__remove {
+  @include hit-area(null);
 }
 
 /* The hamburger's bordered box fills its (now 48px) button: keep it a centred 40px square.
@@ -64,6 +87,18 @@ body {
   inline-size: 40px;
   block-size: 40px;
   margin: auto;
+}
+
+/* #167: Payload's 16px block padding on top of 48px made the drawer's close button 80px tall, hanging out of the 60px
+   header over the first link ("Galeri"). */
+.nav__mobile-close {
+  padding-block: 0;
+  align-self: center;
+}
+
+/* Payload's drawer header is 100vw wide from its 16px start, so it hung 16px past the drawer's edge. */
+.nav__header {
+  inline-size: calc(100% - 32px);
 }
 
 /* On phones the template toggler stays an empty 0-size button: sized up, it would sit invisibly over the header. */
@@ -105,7 +140,6 @@ body {
 .collapsible__toggle,
 .blocks-field__header-action,
 .tabs-field__tab-button,
-.pill,
 .popup-button-list__button,
 .rs__option,
 .relationship-table td a {
@@ -113,10 +147,24 @@ body {
 }
 
 .blocks-field__header-action,
-.pill,
 .relationship-table td a {
   display: inline-flex;
   align-items: center;
+}
+
+/* #167: pills keep Payload's 24px chip; the clickable ones (list columns, filters) get the invisible 48px area.
+   The column picker's rows sit 48px apart so the tap areas of two rows never meet. */
+button.pill,
+a.pill {
+  @include hit-area;
+
+  overflow: visible; // Payload clips the pill, which would clip the tap area too; its label still truncates.
+  max-inline-size: 100%;
+}
+
+.pill-selector {
+  row-gap: 24px;
+  padding-block-start: 12px;
 }
 
 /* Breadcrumb links, the file URL and its copy button, relation edit/add buttons, table links and drag handles. */
@@ -128,13 +176,47 @@ body {
   min-block-size: 48px;
 }
 
-.copy-to-clipboard,
-.relationship--single-value__drawer-toggler,
-.relationship-add-new__add-button,
 .collapsible__drag,
 .sort-row {
   min-inline-size: 48px;
   min-block-size: 48px;
+}
+
+.copy-to-clipboard,
+.relationship--single-value__drawer-toggler {
+  @include hit-area;
+}
+
+// Clear of the file URL link before it.
+.copy-to-clipboard {
+  margin-inline-start: 12px;
+}
+
+/* The relation "+" is a segment of its 48px field, like the publish button's ⌄: 48px square with it. */
+.relationship-add-new__add-button,
+.btn--withPopup .popup-button {
+  min-inline-size: 48px;
+}
+
+/* The doc "⋮" (30px) and the blocks/array header clipboard "…" (18px) sit far enough from their neighbours that the
+   48px tap areas never meet. */
+.doc-controls__popup {
+  margin-inline-start: 10px;
+}
+
+.clipboard-action__popup {
+  margin-inline-start: 16px;
+}
+
+/* Over react-select's input layer, which shares the value's grid cell and would take the top of the tap area. */
+.relationship--single-value__drawer-toggler {
+  z-index: 1;
+}
+
+/* Popup menus (array row "…": six actions at 48px) show every action instead of hiding the last behind a
+   scrollbar-less 200px scroll box. */
+.popup__scroll-container {
+  max-block-size: min(70vh, 336px);
 }
 
 .collapsible__drag,
@@ -220,6 +302,34 @@ body {
   min-inline-size: 0;
 }
 
+/* #167: on wide screens the bar stays one line, so it keeps Payload's height (the sticky sidebar and live preview
+   stick below it at --doc-controls-height). Wrapped, its clipped box cut "Durum" in half and hid the creation date
+   once a long status ("Değişiklik yapıldı — Yayınlanana geri döndür") appeared; now the status stays whole and the
+   dates give way with an ellipsis. Below 1025px Payload stacks the bar and the meta wraps (above). */
+@media (min-width: 1025px) {
+  .doc-controls__meta {
+    flex-wrap: nowrap;
+  }
+
+  .doc-controls__meta > .doc-controls__list-item:not(.doc-controls__status) {
+    display: block;
+    align-self: center;
+    min-inline-size: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  // Label and value run inline so the item's one line ends in an ellipsis.
+  .doc-controls__meta > .doc-controls__list-item:not(.doc-controls__status) > * {
+    display: inline;
+  }
+
+  .doc-controls__status {
+    flex-shrink: 0;
+  }
+}
+
 .doc-controls__value {
   overflow-wrap: anywhere;
 }
@@ -246,11 +356,6 @@ body {
 .collections__card-list .card__title {
   font-size: 16px;
   line-height: 1.3;
-}
-
-.card__actions .btn__icon {
-  inline-size: 40px;
-  block-size: 40px;
 }
 
 /* Brand (admin.components.graphics). The lockup's grey "AHŞAP DEKORASYON" needs a light ground in dark mode. */
@@ -319,22 +424,21 @@ html[data-theme='dark'] .brand-logo {
   font-weight: 700;
 }
 
-/* #158: edit forms. Short tab labels ("SEO", "Metin") and the live preview eye get a 48px box too. */
+/* #158: edit forms. Short tab labels ("SEO", "Metin") get a 48px box; the live preview eye a 48px tap area. */
 .tabs-field__tab-button {
   min-inline-size: 48px;
   justify-content: center;
 }
 
 .live-preview-toggler {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-inline-size: 48px;
-  min-block-size: 48px;
+  @include hit-area;
+
+  margin-inline-end: 8px; // Payload's 32px eye: its 48px area stays clear of "Taslağı kaydet".
 }
 
-/* The fixed rich-text toolbar (FixedToolbarFeature, for phones) and the floating link editor: 48px buttons. The fixed
-   toolbar wraps onto a second row on a phone instead of shrinking them. */
+/* The fixed rich-text toolbar (FixedToolbarFeature, for phones) and the floating link editor: 48px tap areas round
+   Payload's 30px buttons, spaced 48px apart (10px round each) so neighbouring areas never meet. The fixed toolbar
+   wraps onto a second row on a phone instead of shrinking them. */
 .fixed-toolbar {
   flex-wrap: wrap;
   block-size: auto;
@@ -342,20 +446,51 @@ html[data-theme='dark'] .brand-logo {
 
 .fixed-toolbar .toolbar-popup__button,
 .fixed-toolbar .toolbar-popup__dropdown,
-.link-editor button,
+.link-editor button {
+  @include hit-area;
+
+  margin: 10px;
+}
+
+/* The rich text's "+ paragraph" bar: a 48px tall strip, its hover shade stays Payload's 18px line in the middle. */
 .insert-paragraph-at-end {
-  min-inline-size: 48px;
+  display: flex;
+  align-items: center;
   min-block-size: 48px;
+  margin-block-start: 0; // Payload pulls it 16px up, under the last paragraph's block handles.
+}
+
+.insert-paragraph-at-end-inside {
+  block-size: 18px;
 }
 
 /* #165: react-select chips (tags on a photo) and their edit/remove buttons, and the clear "×": 48px targets. */
 .rs__multi-value.multi-value {
   min-block-size: 48px;
   align-items: stretch;
+  max-inline-size: calc(100% - 16px); // Room for the typing caret beside a long chip, so the field stays one row.
 }
 
+/* #167: the chip's 20px edit/remove buttons keep their size and hover square; 14px each side puts them 48px apart. */
 .multi-value-remove,
-.relationship--multi-value-label__drawer-toggler,
+.relationship--multi-value-label__drawer-toggler {
+  @include hit-area;
+
+  flex-shrink: 0;
+  align-self: center;
+  margin-inline: 14px;
+}
+
+/* The chip's label truncates, so the chip fits its field instead of sliding its "×" under the clear indicator. */
+.relationship--multi-value-label,
+.relationship--multi-value-label__content {
+  min-inline-size: 0;
+}
+
+.relationship--multi-value-label__content {
+  overflow: hidden;
+}
+
 .clear-indicator,
 .dropdown-indicator {
   display: flex;
@@ -363,6 +498,22 @@ html[data-theme='dark'] .brand-logo {
   justify-content: center;
   min-inline-size: 48px;
   min-block-size: 48px;
+}
+
+/* A long chip shrinks (its label truncates) instead of pushing the clear/open indicators onto a second row. */
+.react-select .rs__control {
+  flex-wrap: nowrap;
+}
+
+.react-select-container,
+.react-select,
+.react-select .rs__value-container {
+  min-inline-size: 0;
+}
+
+/* The values take every pixel the indicators leave, so a chip and the typing caret share one row. */
+.react-select .rs__value-container {
+  flex: 1;
 }
 
 /* The 48px indicators already fill the control's height; its own block padding would make selects 68px tall. */
@@ -394,25 +545,27 @@ html[data-theme='dark'] .brand-logo {
   min-inline-size: 48px;
 }
 
-.drawer-link__doc-drawer-toggler {
-  display: inline-flex;
+/* Join-table rows (a reference's projects) are 48px tall, so each row's edit icon has its own 48px band. */
+.drawer-link {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  min-inline-size: 48px;
   min-block-size: 48px;
 }
 
-/* #165: rich-text block handles (drag / add a block; Lexical shows them on hover, wide screens only) are 48×48.
-   Lexical places them with an inline translate at fixed offsets 20px apart, so the add handle is pushed right by a
-   physical margin (the translate is physical too) and the text moves right to clear both. */
+.drawer-link__doc-drawer-toggler {
+  @include hit-area;
+
+  margin-inline: 14px; // Its 20px icon's 48px area stays inside its table cell.
+  vertical-align: middle;
+}
+
+/* #165: rich-text block handles (drag / add a block; Lexical shows them on hover, wide screens only) take a 48×48 tap
+   area. Lexical places them with an inline translate at fixed offsets 20px apart, so the add handle is pushed right by
+   a physical margin (the translate is physical too) and the text moves right to clear both. */
 @media (min-width: 769px) {
   .draggable-block-menu,
   .add-block-menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-inline-size: 48px;
-    min-block-size: 48px;
+    @include hit-area(null);
   }
 
   .add-block-menu {
@@ -422,4 +575,45 @@ html[data-theme='dark'] .brand-logo {
   .rich-text-lexical--show-gutter .ContentEditable__root {
     padding-left: 108px;
   }
+}
+
+/* #167: Payload's secondary greys (elevation-400/500: 2.8–3.9:1 on white) under AA 4.5:1 for 16px text. One step that
+   passes in both themes, so labels stay quieter than the values they name. */
+.field-description,
+.nav-group__label,
+.localizer-button__label,
+.doc-controls__label,
+.status__label,
+.rich-text-lexical .LexicalEditorTheme__placeholder,
+.table th {
+  color: var(--theme-elevation-650);
+}
+
+.nav-group__indicator svg .stroke {
+  stroke: var(--theme-elevation-650);
+}
+
+/* "Soru ekle" / "Bölüm ekle": an action, not a hint. */
+.array-field__add-row.btn {
+  --btn-color: var(--theme-elevation-800);
+}
+
+.blocks-field__drawer-toggler .btn {
+  color: var(--theme-elevation-800);
+}
+
+/* Inactive form tabs were half-opacity text (2.9:1); the active one keeps its underline and full text colour. */
+.tabs-field__tab-button {
+  opacity: 1;
+  color: var(--theme-elevation-650);
+}
+
+.tabs-field__tab-button--active,
+.tabs-field__tab-button:hover {
+  color: var(--theme-text);
+}
+
+/* The required "*" (error-500: 4.1:1 on white, 3.9:1 on the dark field ground); the 750 step passes in both themes. */
+.required {
+  color: var(--theme-error-750);
 }
