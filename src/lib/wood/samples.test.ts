@@ -10,8 +10,10 @@ import {
   WOOD_SAMPLES,
   fitDistance,
   projectedExtent,
-  REACHABLE,
+  WOOD_ASPECT,
   WOOD_BOARD,
+  WOOD_DISTANCE,
+  woodDistance,
   WOOD_REST,
 } from './samples'
 
@@ -98,10 +100,19 @@ describe('fitDistance (#156: the plank fills its tile and never leaves it)', () 
     // (x_ndc of the 0.25 half-depth at aspect 3 is smaller).
     expect(fitDistance(board, [{ x: 0, y: Math.PI / 2 }], 3)).toBeCloseTo(2.7339, 3)
   })
-  it('framed for every reachable turn, the board stays inside its tile however it is dragged (review of #161)', () => {
-    for (const aspect of [3, 3.5]) {
-      const d = fitDistance(WOOD_BOARD, REACHABLE, aspect)
-      // A finer sweep than REACHABLE: every tilt the clamp allows, every turn of a full circle.
+  // Every pose a drag or the arrow keys can reach (tilt clamped by MAX_TILT, turn unlimited), sampled.
+  const reachable = Array.from({ length: 17 }, (_, i) => -MAX_TILT + (i * MAX_TILT) / 8).flatMap((x) =>
+    Array.from({ length: 48 }, (_, j) => ({ x, y: (j * Math.PI) / 24 })),
+  )
+  it('the precomputed 3:1 distance is the fit over every reachable pose, rounded up (#163)', () => {
+    const fitted = fitDistance(WOOD_BOARD, reachable, WOOD_ASPECT)
+    expect(WOOD_DISTANCE).toBeGreaterThanOrEqual(fitted)
+    expect(WOOD_DISTANCE - fitted).toBeLessThan(1e-3)
+  })
+  it('at that distance the board stays inside its tile however it is dragged (review of #161)', () => {
+    for (const aspect of [2.95, 3, 3.5]) {
+      const d = woodDistance(aspect)
+      // A finer sweep than the fit: every tilt the clamp allows, every turn of a full circle.
       let worst = 0
       for (let x = -MAX_TILT; x <= MAX_TILT + 1e-9; x += MAX_TILT / 40)
         for (let y = -Math.PI; y <= Math.PI; y += Math.PI / 90) worst = Math.max(worst, projectedExtent(WOOD_BOARD, { x, y }, aspect, d))

@@ -69,12 +69,15 @@ export const WOOD_BOARD: Size = { width: 3.2, height: 0.22, depth: 0.5 }
 /** Rest pose: top face seen from about 34° above, turned a little so the front edge and one end read. */
 export const WOOD_REST: Rotation = { x: 0.6, y: -0.3 }
 /**
- * Every pose a drag or the arrow keys can reach (tilt clamped by MAX_TILT, turn unlimited), sampled: the camera is framed
- * for all of them, so the board never leaves its tile (review of #161).
+ * Camera distance for the samples' 3:1 tile (WoodSamplesView's aspect-[3/1]), framed so the board stays inside the tile in
+ * every pose a drag or the arrow keys can reach: fitDistance(WOOD_BOARD, every reachable pose, 3), rounded up. Precomputed
+ * (#163): the fit over ~800 poses took 40–84 ms on desktop, a long task on a low-end phone. samples.test.ts recomputes it.
  */
-export const REACHABLE: readonly Rotation[] = Array.from({ length: 17 }, (_, i) => -MAX_TILT + (i * MAX_TILT) / 8).flatMap((x) =>
-  Array.from({ length: 48 }, (_, j) => ({ x, y: (j * Math.PI) / 24 })),
-)
+export const WOOD_DISTANCE = 3.958
+export const WOOD_ASPECT = 3
+
+/** The distance for a tile of this aspect: a sub-pixel narrower tile (2.99:1) backs off a little, a wider one never zooms in. */
+export const woodDistance = (aspect: number) => WOOD_DISTANCE * Math.max(1, WOOD_ASPECT / aspect)
 
 const TAN = Math.tan((FOV / 2) * (Math.PI / 180))
 const corners = (size: Size) =>
