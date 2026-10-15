@@ -3,14 +3,21 @@ import { unstable_cache } from 'next/cache'
 import { getPathname } from '@/i18n/navigation'
 import { routing, type Locale } from '@/i18n/routing'
 import { livePaths } from '@/lib/i18n/published'
-import type { Category } from '@/payload-types'
+import type { Category, Media } from '@/payload-types'
 
+import { getServiceTiles } from './categories'
+import { withDefaultAlt } from './media-alt'
 import { getPayload, TAGS } from './payload'
 
 const HOUR = 3600
 const published = { _status: { equals: 'published' } } as const
+const isApproved = (m: unknown): m is Media => typeof m === 'object' && m !== null && (m as Media).status === 'approved'
+const idOf = (c: number | Category) => (typeof c === 'object' ? c.id : c)
 
-/** Published guides with a title and slug in this locale, newest update first (index page). */
+/**
+ * Published guides with a title and slug in this locale, newest update first (index page, related guides). `image` is the
+ * guide's approved cover, else the photo of its first related service (the service tile's), else none.
+ */
 export const getGuides = (locale: Locale) =>
   unstable_cache(
     async () => {
@@ -20,16 +27,38 @@ export const getGuides = (locale: Locale) =>
         where: published,
         sort: '-updatedAt',
         limit: 100,
-        depth: 0,
+        depth: 1,
+        // dil-yayında: a guide is listed only with its own title and slug here, never the default locale's.
+        fallbackLocale: false,
         overrideAccess: false,
-        select: { title: true, slug: true, excerpt: true, updatedAt: true },
+        select: { title: true, slug: true, excerpt: true, updatedAt: true, cover: true, relatedCategories: true },
+        populate: { categories: { slug: true } },
       })
-      return res.docs
-        .filter((d) => d.slug && d.title)
-        .map((d) => ({ ...d, href: getPathname({ locale, href: { pathname: '/rehber/[slug]', params: { slug: d.slug! } } }) }))
+      const payload = await getPayload()
+      const tiles = new Map((await getServiceTiles(locale)).map((t) => [t.id, t.image]))
+      const docs = res.docs.filter((d) => d.slug && d.title)
+      const images = await withDefaultAlt(
+        payload,
+        locale,
+        docs.map((d) => (isApproved(d.cover) ? d.cover : (d.relatedCategories ?? []).map((c) => tiles.get(idOf(c))).find(Boolean))).filter(isApproved),
+      )
+      const imageById = new Map(images.map((m) => [m.id, m]))
+      return docs.map((d) => {
+        const categories = (d.relatedCategories ?? []).map(idOf)
+        const own = isApproved(d.cover) ? d.cover : categories.map((c) => tiles.get(c)).find(Boolean)
+        return {
+          id: d.id,
+          title: d.title,
+          excerpt: d.excerpt,
+          updatedAt: d.updatedAt,
+          categories,
+          image: own ? imageById.get(own.id) : undefined,
+          href: getPathname({ locale, href: { pathname: '/rehber/[slug]', params: { slug: d.slug! } } }),
+        }
+      })
     },
     ['guides', locale],
-    { tags: [TAGS.guides], revalidate: HOUR },
+    { tags: [TAGS.guides, TAGS.categories, TAGS.media], revalidate: HOUR },
   )()
 
 /** One published guide + its path per locale (null where that locale has no slug/title → no hreflang). */
@@ -49,9 +78,10 @@ export const getGuide = (locale: Locale, slug: string) =>
       )
       const categories = (doc.relatedCategories ?? [])
         .filter((c): c is Category => typeof c === 'object' && c._status === 'published' && Boolean(c.slug && c.name))
-        .map((c) => ({ name: c.name, href: getPathname({ locale, href: { pathname: '/[category]', params: { category: c.slug! } } }) }))
-      return { guide: doc, paths, categories }
+        .map((c) => ({ id: c.id, name: c.name, href: getPathname({ locale, href: { pathname: '/[category]', params: { category: c.slug! } } }) }))
+      const [cover] = await withDefaultAlt(payload, locale, isApproved(doc.cover) ? [doc.cover] : [])
+      return { guide: doc, paths, categories, cover }
     },
     ['guide', locale, slug],
-    { tags: [TAGS.guides, TAGS.categories], revalidate: HOUR },
+    { tags: [TAGS.guides, TAGS.categories, TAGS.media], revalidate: HOUR },
   )()

@@ -50,6 +50,11 @@ test.describe('guides', () => {
     await page.screenshot({ path: 'docs/screens/guide-mobile.png', fullPage: true })
     // No horizontal page overflow on a phone (wide tables scroll inside their own region).
     expect(await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth)).toBeLessThanOrEqual(0)
+    // #146: on a phone the TOC is a closed disclosure ("Bu yazıda · N başlık"), so the first section is near the top.
+    const tocToggle = page.locator('details').filter({ has: page.locator('summary', { hasText: 'Bu yazıda' }) })
+    await expect(tocToggle).toBeVisible()
+    await expect(tocToggle).not.toHaveAttribute('open')
+    await expect(tocToggle.locator('summary')).toContainText('başlık')
     await page.setViewportSize({ width: 1440, height: 900 })
 
     // Every TOC link points at an H2 that exists on the page.

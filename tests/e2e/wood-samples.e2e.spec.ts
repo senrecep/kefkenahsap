@@ -96,8 +96,12 @@ test.describe('wood samples block', () => {
     await expect(figure.locator('img[src^="/wood/"]')).toHaveCount(2)
     // Only species with a real-photo texture (no drawn wood, DESIGN.md).
     await expect(figure.getByText('Teak', { exact: true })).toHaveCount(0)
-    for (const name of ['İroko', 'Emprenyeli çam'])
+    for (const name of ['İroko', 'Emprenyeli çam (sarıçam)'])
       await expect(figure.getByText(name, { exact: true })).toBeVisible()
+    // #146: each sample names one fact from the table and links to the job photo its texture was cut from.
+    await expect(figure.getByText(/yaklaşık 660 kg\/m³/)).toBeVisible()
+    await expect(figure.getByRole('link', { name: 'Fotoğrafın tamamı' })).toHaveCount(2)
+    await expect(figure.getByRole('link', { name: 'Fotoğrafın tamamı' }).first()).toHaveAttribute('href', '/tr/galeri/iroko-deck-zemin-karo-arasi')
     return { figure, scripts }
   }
 

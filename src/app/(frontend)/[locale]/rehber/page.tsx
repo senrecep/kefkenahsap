@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
-import { getFormatter, getTranslations, setRequestLocale } from 'next-intl/server'
+import { getTranslations, setRequestLocale } from 'next-intl/server'
 
+import { GuideCard } from '@/components/guides/GuideCard'
 import { Container } from '@/components/ui/Container'
 import { WhatsAppButton } from '@/components/ui/WhatsAppButton'
 import type { Locale } from '@/i18n/routing'
@@ -20,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function GuidesIndex({ params }: Props) {
   const { locale } = await params
   setRequestLocale(locale)
-  const [t, format, guides] = await Promise.all([getTranslations('Guides'), getFormatter(), getGuides(locale)])
+  const [t, guides] = await Promise.all([getTranslations('Guides'), getGuides(locale)])
 
   return (
     <Container className="pt-8 pb-20 md:pt-12">
@@ -35,20 +36,11 @@ export default async function GuidesIndex({ params }: Props) {
           <WhatsAppButton locale={locale} place="guides-empty" className="mt-6" />
         </div>
       ) : (
-        <ol className="mt-10 max-w-[52rem] divide-y divide-line border-y border-line">
-          {guides.map((g) => (
+        // Every guide has the same "updated" day after a seed, so the index shows no dates (the guide page does).
+        <ol className="mt-10 grid gap-x-8 gap-y-12 border-t border-line pt-10 md:grid-cols-2 md:gap-y-14">
+          {guides.map((g, i) => (
             <li key={g.id}>
-              <article className="py-8">
-                <h2 className="text-[clamp(1.35rem,2.4vw,1.75rem)]">
-                  <a href={g.href} className="hover:text-action hover:underline">
-                    {g.title}
-                  </a>
-                </h2>
-                {g.excerpt && <p className="mt-3 line-clamp-3 max-w-[68ch] text-ink-soft">{g.excerpt}</p>}
-                <p className="mt-3 text-[0.9rem] text-ink-soft">
-                  {t('updated')}: <time dateTime={g.updatedAt}>{format.dateTime(new Date(g.updatedAt), { dateStyle: 'long' })}</time>
-                </p>
-              </article>
+              <GuideCard guide={g} sizes="(min-width: 1280px) 600px, (min-width: 768px) calc(50vw - 2.75rem), calc(100vw - 2rem)" priority={i < 2} />
             </li>
           ))}
         </ol>

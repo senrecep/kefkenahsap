@@ -4,7 +4,7 @@ type Node = { type?: string; tag?: string; text?: string; children?: unknown[] }
 export type TocItem = { id: string; text: string }
 
 /** Ids the guide page and layout already use (layout `main`, page sections); headings never take them. */
-export const RESERVED_IDS = new Set(['main', 'mobile-menu', 'toc-title', 'faq', 'related', 'guide-cta'])
+export const RESERVED_IDS = new Set(['main', 'mobile-menu', 'toc-title', 'faq', 'related', 'guide-projects', 'related-guides', 'guide-cta'])
 
 const textOf = (node: Node): string => (node.text ?? '') + (node.children ?? []).map((c) => textOf(c as Node)).join('')
 

@@ -142,6 +142,35 @@ describe('guides (#49)', () => {
   })
 })
 
+describe('guide finish (#146)', () => {
+  const files = readdirSync(path.join(DIR, 'guides')).sort()
+  // Every locale's body of every guide: TR/EN from the seed, ru/de/ar from the overlays.
+  const bodies = files.flatMap((f) => {
+    const g = JSON.parse(read(`guides/${f}`)) as Record<string, { body?: string }>
+    const overlay = (l: string) => (JSON.parse(readFileSync(path.resolve(process.cwd(), `seed/i18n/${l}/content/guides/${f}`), 'utf8')) as { body: string }).body
+    const byLocale: [string, string][] = [['tr', g.tr!.body ?? ''], ['en', g.en!.body ?? ''], ...['ru', 'de', 'ar'].map((l): [string, string] => [l, overlay(l)])]
+    return byLocale.map(([locale, body]) => ({ file: f, locale, body }))
+  })
+
+  it.each(bodies.map((b) => [b.file, b.locale, b.body]))('%s [%s] has no build notes about the old site', (_f, _l, body) => {
+    expect(body).not.toMatch(/eski (sitemiz|tablo)|old (site|table)|прежн(ем|ей|его) (сайт|таблиц)|früheren Website|alten Tabelle|(موقعنا|الجدول) القديم/i)
+  })
+
+  it.each(['tr', 'en', 'ru', 'de', 'ar'])('ahsap-turleri [%s] places the wood samples once, after the table note and before the next H2', (locale) => {
+    const body = bodies.find((b) => b.file === 'ahsap-turleri.json' && b.locale === locale)!.body
+    const lines = body.split('\n').filter((l) => l.trim())
+    const at = lines.indexOf('<!-- block:woodSamples -->')
+    expect(lines.filter((l) => l.includes('block:woodSamples'))).toHaveLength(1)
+    expect(lines[at - 2]).toMatch(/^\|/) // the table's last row, then its note
+    expect(lines[at + 1]).toMatch(/^## /)
+  })
+
+  it.each(files)('%s names a cover photo (an approved library photo by SEO filename)', (f) => {
+    const g = parseGuide(read(`guides/${f}`))
+    expect(g.ok && g.value.cover).toMatch(/^[a-z0-9-]+$/)
+  })
+})
+
 describe('project stories (#61)', () => {
   // One story per reviewed photo cluster (seed/clusters/clusters.json, the 17 draft projects from #33).
   const { clusters } = JSON.parse(readFileSync(path.resolve(process.cwd(), 'seed/clusters/clusters.json'), 'utf8')) as { clusters: { key: string }[] }

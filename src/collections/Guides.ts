@@ -58,6 +58,13 @@ export const Guides: CollectionConfig = {
       admin: { position: 'sidebar', description: 'Boş bırakılırsa başlıktan üretilir.' },
     },
     { name: 'excerpt', type: 'textarea', localized: true, label: 'Kısa cevap (ilk paragraf, en çok 150 kelime)' },
+    {
+      name: 'cover',
+      type: 'upload',
+      relationTo: 'media',
+      label: 'Kapak fotoğrafı',
+      admin: { description: 'Yazının başında ve rehber listesinde görünür. Boşsa listede ilk ilgili hizmetin fotoğrafı kullanılır.' },
+    },
     { name: 'body', type: 'richText', localized: true, label: 'Yazı', editor: lexicalEditor({ features: guideBodyFeatures }) },
     {
       name: 'faq',

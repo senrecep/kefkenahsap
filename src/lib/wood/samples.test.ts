@@ -13,9 +13,10 @@ import {
 describe('WOOD_SAMPLES', () => {
   it('lists the four species of PLAN §6 F2; only real-photo textures are shown (no drawn wood, DESIGN.md)', () => {
     expect(WOOD_SAMPLES.map((s) => s.key)).toEqual(['iroko', 'teak', 'cam', 'thermowood'])
-    expect(shownSamples().map((s) => [s.key, s.texture])).toEqual([
-      ['iroko', '/wood/iroko.webp'],
-      ['cam', '/wood/cam.webp'],
+    expect(shownSamples().map((s) => [s.key, s.texture, s.photo])).toEqual([
+      // #146: each texture names its source job photo (gallery page by SEO filename, public/wood/PROVENANCE.txt).
+      ['iroko', '/wood/iroko.webp', 'iroko-deck-zemin-karo-arasi'],
+      ['cam', '/wood/cam.webp', 'bahce-emprenyeli-cam-deck-zemin'],
     ])
   })
 })

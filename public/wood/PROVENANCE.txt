@@ -1,3 +1,4 @@
-iroko.webp: crop of media 1676 "Bahçe Girişinde Iroko Deck Zemin" (iroko-deck-zemin-bahce-girisi.webp)
-cam.webp: crop of media 1307 "Bahçede Emprenyeli Çam Deck Zemin" (bahce-emprenyeli-cam-deck-zemin.webp)
-Both: Kefken Ahşap job photos from the media library, cropped and rotated by scripts/wood-textures.ts. No drawn textures (DESIGN.md).
+iroko.webp: the frame board of media 1680 "Beyaz karo arasında iroko deck zemin" (iroko-deck-zemin-karo-arasi.webp)
+cam.webp: the front fascia board of media 1307 "Bahçede emprenyeli çam deck zemin" (bahce-emprenyeli-cam-deck-zemin.webp)
+Both: one board each from Kefken Ahşap job photos in the media library, levelled and cropped by scripts/wood-textures.ts
+(1024×128, the plank's 8:1 face). No drawn textures (DESIGN.md).
