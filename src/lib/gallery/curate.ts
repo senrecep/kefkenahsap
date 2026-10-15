@@ -61,11 +61,12 @@ export function pickCover<T extends Photo>(cover: number | T | null | undefined,
 
 /**
  * Photo for the "Galeri" tile that closes the services grid: from the curated selection, not already a service cover,
- * taken from its end so it is unlikely to repeat the homepage gallery's first tiles.
+ * taken from its end; photos in `exclude` (the homepage gallery's tiles) only when nothing else is left.
  */
-export function galleryTileCover<T extends { id: number }>(curated: readonly T[], tiles: readonly { image?: { id?: number } | null }[]): T | undefined {
+export function galleryTileCover<T extends { id: number }>(curated: readonly T[], tiles: readonly { image?: { id?: number } | null }[], exclude: readonly number[] = []): T | undefined {
   const used = new Set(tiles.map((c) => c.image?.id))
-  return [...curated].reverse().find((i) => !used.has(i.id))
+  const free = [...curated].reverse().filter((i) => !used.has(i.id))
+  return free.find((i) => !exclude.includes(i.id)) ?? free[0]
 }
 
 const holes = (n: number) => ((2 - (n % 2)) % 2) + ((3 - (n % 3)) % 3)

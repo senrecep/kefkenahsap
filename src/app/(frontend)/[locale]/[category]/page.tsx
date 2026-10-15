@@ -241,9 +241,10 @@ export default async function CategoryPage({ params, searchParams }: { params: P
           {readable && (
             <aside aria-labelledby="aside-h" className="hidden lg:block">
               <div className="sticky top-[6.5rem] border-t border-ink/25 pt-6">
-                <h2 id="aside-h" className="text-[1.25rem] leading-snug">
+                {/* A <p>, not a heading: the closing band carries the same line as its h2. */}
+                <p id="aside-h" className="font-[family-name:var(--font-display)] text-[1.25rem] leading-snug font-semibold text-balance">
                   {t('ctaTitle', { category: category.name })}
-                </h2>
+                </p>
                 <p className="mt-2 text-[0.98rem] text-ink-soft">{t('ctaText')}</p>
                 <div className="mt-5 grid gap-3">
                   <WhatsAppButton locale={locale} context={wa} place="category_aside" className="w-full" />
@@ -257,9 +258,9 @@ export default async function CategoryPage({ params, searchParams }: { params: P
                 {areaText && <p className="mt-4 text-[0.95rem] text-ink-soft">{t('areas', { areas: areaText })}</p>}
                 {guides.length > 0 && (
                   <nav aria-labelledby="aside-guides-h" className="mt-8">
-                    <h2 id="aside-guides-h" className="font-[family-name:var(--font-display)] text-sm font-semibold tracking-[0.025em] text-ink-soft uppercase">
+                    <h3 id="aside-guides-h" className="font-[family-name:var(--font-display)] text-sm font-semibold tracking-[0.025em] text-ink-soft uppercase">
                       {t('guides')}
-                    </h2>
+                    </h3>
                     <ul className="mt-2 border-t border-line">
                       {guides.map((g) => (
                         <li key={g.id} className="border-b border-line">

@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
 export default async function ServicesPage({ params }: { params: Params }) {
   const { locale } = await params
   setRequestLocale(locale)
-  const [t, tGallery, tiles, curated] = await Promise.all([getTranslations('Services'), getTranslations('Gallery'), getServiceTiles(locale), getFeaturedImages(locale, 24)])
+  const [t, tGallery, tiles, curated] = await Promise.all([getTranslations('Services'), getTranslations('Gallery'), getServiceTiles(locale), getFeaturedImages(locale, 24).catch(() => [])])
   const cover = galleryTileCover(curated, tiles)
   const sizes = '(min-width: 1280px) 400px, (min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw'
   const zoom = 'transition-transform duration-500 ease-[var(--ease-out-expo)] motion-safe:group-hover:scale-[1.03]'

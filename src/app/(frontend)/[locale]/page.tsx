@@ -3,7 +3,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server'
 import type { ReactNode } from 'react'
 
 import { Hero, HomeTitle } from '@/components/home/Hero'
-import { Contact, Faq, FeaturedGallery, FeaturedProjects, Process, References, Services, WoodTypes } from '@/components/home/Sections'
+import { Contact, Faq, FeaturedGallery, FeaturedProjects, homeGalleryCount, Process, References, Services, WoodTypes } from '@/components/home/Sections'
 import type { Locale } from '@/i18n/routing'
 import { getHeroFallback, getHomepage } from '@/lib/data/home'
 import { getSiteSettings } from '@/lib/data/site'
@@ -50,6 +50,8 @@ export default async function HomePage({ params }: Props) {
   // Without any photo the hero still renders its text and buttons.
   const fallback = needsFallback ? await getHeroFallback(locale).catch(() => null) : null
   const firstHero = findFirstHero(sections)
+  const gallery = sections.find((s) => s.blockType === 'featuredGallery') as Fields<'featuredGallery'> | undefined
+  const galleryCount = gallery ? homeGalleryCount(gallery.limit) : 0
 
   const render = (s: (typeof sections)[number], i: number): (() => Promise<ReactNode>) | null => {
     switch (s.blockType) {
@@ -65,7 +67,7 @@ export default async function HomePage({ params }: Props) {
         return () => FeaturedGallery({ locale, heading: b.heading, limit: b.limit })
       }
       case 'services':
-        return () => Services({ locale, heading: (s as Fields<'services'>).heading })
+        return () => Services({ locale, heading: (s as Fields<'services'>).heading, galleryCount })
       case 'featuredProjects':
         return () => FeaturedProjects({ locale, heading: (s as Fields<'featuredProjects'>).heading })
       case 'process': {

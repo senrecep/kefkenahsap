@@ -72,6 +72,11 @@ describe('galleryTileCover', () => {
     expect(galleryTileCover(curated, [{ image: { id: 3 } }, { image: null }])).toEqual({ id: 2 })
     expect(galleryTileCover(curated, [{ image: { id: 1 } }, { image: { id: 2 } }, { image: { id: 3 } }])).toBeUndefined()
   })
+  it('skips photos the homepage gallery already shows, unless nothing else is left', () => {
+    const curated = [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }]
+    expect(galleryTileCover(curated, [{ image: { id: 4 } }], [3])).toEqual({ id: 2 })
+    expect(galleryTileCover(curated, [{ image: { id: 4 } }], [1, 2, 3])).toEqual({ id: 3 })
+  })
 })
 
 describe('galleryTileFills (does one more tile close a hole in the 2- and 3-column service grids?)', () => {

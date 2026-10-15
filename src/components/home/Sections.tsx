@@ -35,10 +35,16 @@ function Section({ title, children, aside, className = '' }: { title: string; ch
 
 const more = 'inline-flex min-h-11 items-center gap-2 font-[family-name:var(--font-display)] font-semibold text-action hover:text-action-deep'
 
+/**
+ * Photos the homepage gallery fetches: the admin's limit (default 12, max 24) plus one per desktop column, so trimming
+ * the overhanging tail tiles still leaves about `limit` on screen instead of hiding chosen photos.
+ */
+export const homeGalleryCount = (limit?: number | null) => Math.min(Math.max(limit || 12, 1), 24) + 4
+
 export async function FeaturedGallery({ locale, heading, limit }: Heading & { locale: Locale; limit?: number | null }) {
   const [t, items, categories] = await Promise.all([
     getTranslations('Home'),
-    getFeaturedImages(locale, Math.min(Math.max(limit || 12, 1), 24)),
+    getFeaturedImages(locale, homeGalleryCount(limit)),
     getNavCategories(locale),
   ])
   if (!items.length) return null
@@ -58,16 +64,18 @@ export async function FeaturedGallery({ locale, heading, limit }: Heading & { lo
   )
 }
 
-export async function Services({ locale, heading }: Heading & { locale: Locale }) {
+/** `galleryCount`: how many curated photos the homepage gallery shows (0 without one); the Galeri tile avoids them. */
+export async function Services({ locale, heading, galleryCount = 0 }: Heading & { locale: Locale; galleryCount?: number }) {
   const [t, tGallery, tServices, listed, curated] = await Promise.all([
     getTranslations('Home'),
     getTranslations('Gallery'),
     getTranslations('Services'),
     getServiceTiles(locale),
-    getFeaturedImages(locale, 24),
+    // Decorative: a failing curated read only costs the Galeri tile its photo.
+    getFeaturedImages(locale, 24).catch(() => []),
   ])
   if (!listed.length) return null
-  const cover = galleryTileCover(curated, listed)
+  const cover = galleryTileCover(curated, listed, curated.slice(0, galleryCount).map((i) => i.id))
   const sizes = '(min-width: 1280px) 400px, (min-width: 1024px) 31vw, 48vw'
   const pic = '!aspect-[4/3] rounded-[var(--radius-photo)]'
   const zoom = 'transition-transform duration-500 ease-[var(--ease-out-expo)] group-hover:scale-[1.03]'

@@ -42,7 +42,7 @@ export function GalleryGridClient({
   moreHref?: string
   labels: GalleryLabels
   priority?: boolean
-  /** A fixed set (no feed): drop overhanging tail tiles so every layout ends on an even line. The lightbox keeps them all. */
+  /** A fixed set (no feed): drop overhanging tail tiles so every layout ends on an even line; the lightbox shows the same photos. */
   trim?: boolean
 }) {
   const [items, setItems] = useState(initial)
@@ -50,6 +50,8 @@ export function GalleryGridClient({
   const [loading, setLoading] = useState(false)
   const [failed, setFailed] = useState(false)
   const [open, setOpen] = useState<number | null>(null)
+  // A trimmed layout opens the lightbox on just its own photos (indexes into `items`), so grid and lightbox match.
+  const [seq, setSeq] = useState<number[] | null>(null)
   const [Lightbox, setLightbox] = useState<ComponentType<LightboxProps> | null>(null)
   const inFlight = useRef(false)
   const [autoLoads, setAutoLoads] = useState(0)
@@ -58,8 +60,11 @@ export function GalleryGridClient({
   const layouts = useMemo(
     () =>
       LAYOUTS.map((l) => {
-        const columns = distribute(items, l.cols)
-        return { ...l, columns: trim ? trimColumns(items, columns) : columns }
+        const all = distribute(items, l.cols)
+        const columns = trim ? trimColumns(items, all) : all
+        // The photos this layout shows, in feed order: what its lightbox steps through.
+        const shown = trim ? columns.flat().sort((a, b) => a - b) : null
+        return { ...l, columns, shown }
       }),
     [items, trim],
   )
@@ -103,7 +108,7 @@ export function GalleryGridClient({
     return () => io.disconnect()
   }, [cursor, failed, autoLoads, loadMore])
 
-  const openAt = async (index: number) => {
+  const openAt = async (index: number, shown: number[] | null) => {
     if (!Lightbox) {
       try {
         const mod = await import('./Lightbox')
@@ -114,13 +119,15 @@ export function GalleryGridClient({
         return
       }
     }
-    setOpen(index)
+    setSeq(shown)
+    setOpen(shown ? shown.indexOf(index) : index)
   }
-  const onCardClick = (e: MouseEvent<HTMLAnchorElement>, index: number) => {
+  const onCardClick = (e: MouseEvent<HTMLAnchorElement>, index: number, shown: number[] | null) => {
     if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return
     e.preventDefault()
-    void openAt(index)
+    void openAt(index, shown)
   }
+  const lightboxItems = seq ? seq.map((i) => items[i]!) : items
 
   return (
     <div>
@@ -134,7 +141,7 @@ export function GalleryGridClient({
                   <li key={item.id}>
                     <a
                       href={item.href}
-                      onClick={(e) => onCardClick(e, i)}
+                      onClick={(e) => onCardClick(e, i, layout.shown)}
                       data-gallery-item
                       data-umami-event="gallery_open"
                       className="group block overflow-hidden rounded-[var(--radius-photo)]"
@@ -184,12 +191,12 @@ export function GalleryGridClient({
 
       {Lightbox && open !== null && (
         <Lightbox
-          items={items}
+          items={lightboxItems}
           index={open}
-          total={Math.max(total, items.length)}
+          total={seq ? seq.length : Math.max(total, items.length)}
           onIndex={(i) => {
             setOpen(i)
-            if (i >= items.length - 3) void loadMore()
+            if (!seq && i >= items.length - 3) void loadMore()
           }}
           onClose={() => setOpen(null)}
           labels={labels}
