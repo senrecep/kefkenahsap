@@ -29,6 +29,7 @@ import { SiteSettings } from './globals/SiteSettings'
 import { Homepage } from './globals/Homepage'
 import { Navigation } from './globals/Navigation'
 import { s3Storage } from '@payloadcms/storage-s3'
+import { mediaFileURL } from './lib/media/url'
 import { tr } from '@payloadcms/translations/languages/tr'
 import { localeDir, routing } from './i18n/routing'
 import { migrations } from './migrations'
@@ -172,8 +173,7 @@ export default buildConfig({
           // Always defined ("" when unset) so the media.prefix column exists in every environment and one schema fits all.
           prefix: process.env.S3_PREFIX ?? '',
           disablePayloadAccessControl: true,
-          generateFileURL: ({ filename, prefix }) =>
-            [process.env.MEDIA_PUBLIC_URL, prefix, filename].filter(Boolean).join('/'),
+          generateFileURL: ({ filename, prefix }) => mediaFileURL(filename, prefix),
         },
       },
       bucket: process.env.S3_BUCKET || '',
