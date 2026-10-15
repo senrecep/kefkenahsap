@@ -1,5 +1,5 @@
 import { postgresAdapter } from '@payloadcms/db-postgres'
-import { lexicalEditor } from '@payloadcms/richtext-lexical'
+import { FixedToolbarFeature, lexicalEditor } from '@payloadcms/richtext-lexical'
 import path from 'path'
 import { buildConfig } from 'payload'
 import { fileURLToPath } from 'url'
@@ -30,10 +30,6 @@ import { Homepage } from './globals/Homepage'
 import { Navigation } from './globals/Navigation'
 import { s3Storage } from '@payloadcms/storage-s3'
 import { tr } from '@payloadcms/translations/languages/tr'
-import { en } from '@payloadcms/translations/languages/en'
-import { ar } from '@payloadcms/translations/languages/ar'
-import { de } from '@payloadcms/translations/languages/de'
-import { ru } from '@payloadcms/translations/languages/ru'
 import { localeDir, routing } from './i18n/routing'
 import { migrations } from './migrations'
 
@@ -46,6 +42,7 @@ const dirname = path.dirname(filename)
 export default buildConfig({
   admin: {
     user: Users.slug,
+    dateFormat: 'd MMMM yyyy HH:mm',
     // #27: installable admin. Manifest is static (public/admin.webmanifest, scope /admin); no service worker (see PR).
     meta: {
       titleSuffix: '- Kefken Ahşap',
@@ -100,19 +97,45 @@ export default buildConfig({
     aiTranslateEndpoint,
     aiDraftEndpoint,
   ],
-  i18n: { supportedLanguages: { tr, en, ar, ru, de }, fallbackLanguage: 'tr' },
+  // The admin is Turkish only (one editor, one language); content localization below is separate.
+  i18n: {
+    supportedLanguages: { tr },
+    fallbackLanguage: 'tr',
+    // Payload's own Turkish for the per-language publish button reads as machine translation.
+    translations: {
+      tr: {
+        version: { publishIn: 'Yayınla: {{locale}}', publishAllLocales: 'Tüm dilleri yayınla' },
+        // The redirects plugin ships no Turkish.
+        'plugin-redirects': {
+          customUrl: 'Adres (URL)',
+          documentToRedirect: 'Yönlendirilecek sayfa',
+          fromUrl: 'Eski adres',
+          internalLink: 'Sitedeki bir sayfa',
+          redirectType: 'Yönlendirme türü',
+          toUrlType: 'Hedef türü',
+        },
+      },
+    },
+  },
   localization: {
     // rtl: Arabic fields are edited right-to-left in the admin.
+    // Short codes keep the header's language switcher narrow on a phone; panels spell the names out (src/i18n/localeNames).
     locales: routing.locales.map((code) => ({ code, label: code.toUpperCase(), rtl: localeDir(code) === 'rtl' })),
     defaultLocale: routing.defaultLocale,
     fallback: false,
+    // #158: "Yayınla" publishes only the language on screen; "Tüm dilleri yayınla" is in its menu. An AI translation
+    // saved as a draft therefore never goes live with a Turkish edit (tests/int/publish-locale.int.spec.ts).
+    // Shared (non-localized) fields — photos, categories, künye numbers — go live with any one-language publish.
+    // The Homepage global always publishes every language (see its beforeOperation hook).
+    defaultLocalePublishOption: 'active',
   },
   jobs: {
     tasks: [purgeExpiredLeads, tagImageTask],
     // Runs queued jobs (AI tagging, retention, purge) every minute; tasks are added per feature.
     autoRun: [{ cron: '* * * * *', queue: 'default' }],
   },
-  editor: lexicalEditor(),
+  // Fixed toolbar: the floating one only appears on text selection, which is hard on a phone.
+  editor: lexicalEditor({ features: ({ defaultFeatures }) => [...defaultFeatures, FixedToolbarFeature()] }),
   secret: process.env.PAYLOAD_SECRET as string, // checked at module load above
   typescript: {
     outputFile: path.resolve(dirname, 'payload-types.ts'),
@@ -134,8 +157,11 @@ export default buildConfig({
     redirectsPlugin({
       collections: ['pages', 'categories', 'projects'],
       redirectTypes: ['301', '302'],
+      // Same values (same enum), Turkish labels.
+      redirectTypeFieldOverride: { options: [{ label: '301 - Kalıcı', value: '301' }, { label: '302 - Geçici', value: '302' }] },
       overrides: {
-        admin: { group: 'Yönetim', hidden: hiddenFromEditor },
+        labels: { singular: 'Yönlendirme', plural: 'Yönlendirmeler' },
+        admin: { group: 'Yönetim', hidden: hiddenFromEditor, useAsTitle: 'from', listSearchableFields: ['from'], hideAPIURL: true },
         access: { read: () => true, create: isStaff, update: isStaff, delete: isStaff },
       },
     }),

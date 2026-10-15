@@ -318,3 +318,32 @@ html[data-theme='dark'] .brand-logo {
   font-size: 16px;
   font-weight: 700;
 }
+
+/* #158: edit forms. Short tab labels ("SEO", "Metin") and the live preview eye get a 48px box too. */
+.tabs-field__tab-button {
+  min-inline-size: 48px;
+  justify-content: center;
+}
+
+.live-preview-toggler {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-inline-size: 48px;
+  min-block-size: 48px;
+}
+
+/* The fixed rich-text toolbar (FixedToolbarFeature, for phones) and the floating link editor: 48px buttons. The fixed
+   toolbar wraps onto a second row on a phone instead of shrinking them. */
+.fixed-toolbar {
+  flex-wrap: wrap;
+  block-size: auto;
+}
+
+.fixed-toolbar .toolbar-popup__button,
+.fixed-toolbar .toolbar-popup__dropdown,
+.link-editor button,
+.insert-paragraph-at-end {
+  min-inline-size: 48px;
+  min-block-size: 48px;
+}

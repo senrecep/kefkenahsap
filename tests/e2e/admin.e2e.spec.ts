@@ -21,14 +21,14 @@ test.describe('Admin Panel', () => {
   test('can navigate to dashboard', async () => {
     await page.goto('/admin')
     await expect(page).toHaveURL('/admin')
-    const dashboardArtifact = page.locator('span[title="Dashboard"]').first()
+    const dashboardArtifact = page.locator('span[title="Anasayfa"]').first()
     await expect(dashboardArtifact).toBeVisible()
   })
 
   test('can navigate to list view', async () => {
     await page.goto('/admin/collections/users')
     await expect(page).toHaveURL('/admin/collections/users')
-    const listViewArtifact = page.locator('h1', { hasText: 'Users' }).first()
+    const listViewArtifact = page.locator('h1', { hasText: 'Kullanıcılar' }).first()
     await expect(listViewArtifact).toBeVisible()
   })
 

@@ -13,7 +13,7 @@ const chain = (name: string, label: string) => ({
 export const AiSettings: GlobalConfig = {
   slug: 'aiSettings',
   label: 'AI Ayarları',
-  admin: { hidden: hiddenFromEditor, group: 'Yönetim' },
+  admin: { hidden: hiddenFromEditor, group: 'Yönetim', hideAPIURL: true },
   access: { read: isAdmin, update: isAdmin },
   fields: [
     { name: 'enabled', type: 'checkbox', defaultValue: true, label: 'Yeni yüklemelerde otomatik öneri üret' },
@@ -27,7 +27,8 @@ export const AiSettings: GlobalConfig = {
       name: 'glossary',
       type: 'array',
       label: 'Terim sözlüğü (TR → EN)',
-      fields: [{ type: 'row', fields: [{ name: 'tr', type: 'text', required: true }, { name: 'en', type: 'text', required: true }] }],
+      labels: { singular: 'Terim', plural: 'Terimler' },
+      fields: [{ type: 'row', fields: [{ name: 'tr', type: 'text', required: true, label: 'Türkçe' }, { name: 'en', type: 'text', required: true, label: 'İngilizce' }] }],
     },
   ],
 }

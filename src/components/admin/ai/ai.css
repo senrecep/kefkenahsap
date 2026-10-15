@@ -1,7 +1,9 @@
-/* Admin AI tools — Operate mode: ≥48px targets, Payload theme vars keep light/dark. */
+/* Admin AI tools — Operate mode: ≥48px targets, Payload theme vars keep light/dark.
+   Sizes in px: Payload's root font is 12–13px, so 3rem would be a 36px target. */
 .ai-btn {
-  min-block-size: 3rem;
-  min-inline-size: 3rem;
+  min-block-size: 48px;
+  min-inline-size: 48px;
+  font-size: 16px;
   padding-block: 0.5rem;
   padding-inline: 1rem;
   border: 1px solid var(--theme-elevation-250);
@@ -59,7 +61,7 @@
 
 .ai-chain__input {
   flex: 1 1 16rem;
-  min-block-size: 3rem;
+  min-block-size: 48px;
   padding-inline: 0.75rem;
   border: 1px solid var(--theme-elevation-250);
   border-radius: var(--style-radius-s);
@@ -105,8 +107,23 @@
 
 .ai-action {
   display: grid;
-  gap: 0.5rem;
-  margin-block-end: 1.5rem;
+  gap: 8px;
+  margin-block-end: 24px;
+  padding: 16px;
+  border: 1px solid var(--theme-elevation-150);
+  border-radius: var(--style-radius-m);
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.ai-action > .ai-btn {
+  justify-self: start;
+}
+
+@media (max-width: 768px) {
+  .ai-action > .ai-btn {
+    justify-self: stretch;
+  }
 }
 
 .ai-action__hint,
@@ -150,12 +167,100 @@
 
 .ai-action__photo {
   display: flex;
-  gap: 0.75rem;
+  gap: 12px;
   align-items: center;
-  min-block-size: 3rem;
+  min-block-size: 48px;
 }
 
 .ai-action__photo input {
-  inline-size: 1.25rem;
-  block-size: 1.25rem;
+  inline-size: 24px;
+  block-size: 24px;
+}
+
+/* "Diller" panel: per-language state under the title. State is in text, the dot only repeats it. */
+.locale-status {
+  margin-block: 0 16px;
+  padding: 16px;
+  border: 1px solid var(--theme-elevation-150);
+  border-radius: var(--style-radius-m);
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.locale-status__title {
+  margin-block: 0 8px;
+  font-size: 17px;
+}
+
+.locale-status__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.locale-status__item {
+  display: grid;
+  gap: 2px;
+  padding-block: 8px;
+  padding-inline: 12px;
+  border-radius: var(--style-radius-s);
+  background: var(--theme-elevation-50);
+}
+
+.locale-status__item[aria-current='true'] {
+  outline: 2px solid var(--theme-elevation-400);
+  outline-offset: -2px;
+}
+
+.locale-status__name {
+  font-weight: 600;
+}
+
+.locale-status__here {
+  font-weight: 400;
+  color: var(--theme-elevation-650);
+}
+
+.locale-status__state {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  color: var(--theme-elevation-800);
+}
+
+.locale-status__state::before {
+  flex: none;
+  inline-size: 10px;
+  block-size: 10px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  content: '';
+}
+
+.locale-status__item[data-state='live'] .locale-status__state::before {
+  /* Brand green (theme-color): Payload's "success" is blue, and green reads as "live" at a glance. */
+  border-color: #0b7a3e;
+  background: #0b7a3e;
+}
+
+.locale-status__item[data-state='changed'] .locale-status__state::before {
+  border-color: #0b7a3e;
+  background: var(--theme-warning-500);
+}
+
+.locale-status__item[data-state='draft'] .locale-status__state::before {
+  border-color: var(--theme-warning-500);
+  background: var(--theme-warning-500);
+}
+
+.locale-status__item[data-state='empty'] .locale-status__state::before {
+  border-color: var(--theme-elevation-400);
+}
+
+.locale-status__note {
+  margin-block: 12px 0;
+  color: var(--theme-elevation-800);
 }

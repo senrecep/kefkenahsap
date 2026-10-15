@@ -1,11 +1,12 @@
-import { BlocksFeature, EXPERIMENTAL_TableFeature, HeadingFeature, lexicalEditor, type FeatureProviderServer } from '@payloadcms/richtext-lexical'
+import { BlocksFeature, EXPERIMENTAL_TableFeature, FixedToolbarFeature, HeadingFeature, lexicalEditor, type FeatureProviderServer } from '@payloadcms/richtext-lexical'
 import type { Block, CollectionConfig } from 'payload'
 
 import { isStaff, publishedOrStaff } from '@/access'
 import { slugFrom, validSlug } from '@/hooks/slug'
 import { revalidateAfterChange, revalidateAfterDelete } from '@/hooks/revalidate'
 import { type Locale, routing } from '@/i18n/routing'
-import { aiDraftField, aiTranslateField } from './aiFields'
+import { aiDraftField, aiTranslateField, localeStatusField } from './aiFields'
+import { seoField } from './seoField'
 
 // #60: the 3D wood samples, placed by the editor anywhere in a guide body. Fixed content, so no fields; the page
 // renders it from src/lib/wood/samples.ts.
@@ -22,6 +23,7 @@ export const guideBodyFeatures = ({ defaultFeatures }: { defaultFeatures: Featur
   HeadingFeature({ enabledHeadingSizes: ['h2', 'h3'] }),
   EXPERIMENTAL_TableFeature(),
   BlocksFeature({ blocks: [WoodSamplesBlock] }),
+  FixedToolbarFeature(),
 ]
 
 /** Rehber yazıları (/tr/rehber/<slug>, /en/guides/<slug>). With `showAuthor`, the author box (and later JSON-LD author) come from siteSettings.founder. */
@@ -30,7 +32,9 @@ export const Guides: CollectionConfig = {
   labels: { singular: 'Yazı', plural: 'Yazılar' },
   admin: {
     useAsTitle: 'title',
-    defaultColumns: ['title', 'updatedAt', '_status'],
+    defaultColumns: ['title', '_status', 'updatedAt'],
+    listSearchableFields: ['title', 'slug'],
+    hideAPIURL: true,
     group: 'İçerik',
     livePreview: {
       url: ({ data, locale }) => {
@@ -45,8 +49,8 @@ export const Guides: CollectionConfig = {
   versions: { drafts: true },
   fields: [
     { name: 'title', type: 'text', localized: true, required: true, label: 'Başlık' },
+    localeStatusField,
     aiTranslateField,
-    aiDraftField,
     {
       name: 'slug',
       type: 'text',
@@ -57,25 +61,6 @@ export const Guides: CollectionConfig = {
       validate: validSlug,
       admin: { position: 'sidebar', description: 'Boş bırakılırsa başlıktan üretilir.' },
     },
-    { name: 'excerpt', type: 'textarea', localized: true, label: 'Kısa cevap (ilk paragraf, en çok 150 kelime)' },
-    {
-      name: 'cover',
-      type: 'upload',
-      relationTo: 'media',
-      label: 'Kapak fotoğrafı',
-      admin: { description: 'Yazının başında ve rehber listesinde görünür. Boşsa listede ilk ilgili hizmetin fotoğrafı kullanılır.' },
-    },
-    { name: 'body', type: 'richText', localized: true, label: 'Yazı', editor: lexicalEditor({ features: guideBodyFeatures }) },
-    {
-      name: 'faq',
-      type: 'array',
-      label: 'Sık sorulan sorular',
-      localized: true,
-      fields: [
-        { name: 'q', type: 'text', required: true, label: 'Soru' },
-        { name: 'a', type: 'textarea', required: true, label: 'Cevap' },
-      ],
-    },
     {
       name: 'showAuthor',
       type: 'checkbox',
@@ -85,12 +70,41 @@ export const Guides: CollectionConfig = {
     },
     { name: 'relatedCategories', type: 'relationship', relationTo: 'categories', hasMany: true, label: 'İlgili hizmetler', admin: { position: 'sidebar' } },
     {
-      name: 'seo',
-      type: 'group',
-      label: 'SEO',
-      fields: [
-        { name: 'title', type: 'text', localized: true },
-        { name: 'description', type: 'textarea', localized: true },
+      // Unnamed tabs are layout only: the columns stay where they were (no migration).
+      type: 'tabs',
+      tabs: [
+        {
+          label: 'Metin',
+          fields: [
+            { name: 'excerpt', type: 'textarea', localized: true, label: 'Kısa cevap (ilk paragraf, en çok 150 kelime)' },
+            { name: 'body', type: 'richText', localized: true, label: 'Yazı', editor: lexicalEditor({ features: guideBodyFeatures }) },
+            aiDraftField,
+            {
+              name: 'faq',
+              type: 'array',
+              label: 'Sık sorulan sorular',
+              labels: { singular: 'Soru', plural: 'Sorular' },
+              localized: true,
+              fields: [
+                { name: 'q', type: 'text', required: true, label: 'Soru' },
+                { name: 'a', type: 'textarea', required: true, label: 'Cevap' },
+              ],
+            },
+          ],
+        },
+        {
+          label: 'Görseller',
+          fields: [
+            {
+              name: 'cover',
+              type: 'upload',
+              relationTo: 'media',
+              label: 'Kapak fotoğrafı',
+              admin: { description: 'Yazının başında ve rehber listesinde görünür. Boşsa listede ilk ilgili hizmetin fotoğrafı kullanılır.' },
+            },
+          ],
+        },
+        { label: 'SEO', fields: [seoField()] },
       ],
     },
   ],

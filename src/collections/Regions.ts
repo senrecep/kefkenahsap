@@ -17,6 +17,7 @@ export const Regions: CollectionConfig = {
     useAsTitle: 'name',
     defaultColumns: ['name', 'updatedAt', '_status'],
     group: 'İçerik',
+    hideAPIURL: true,
     description: 'En az 3 yayında proje ve 250 kelimelik kendi metni olan bölge arama motorlarına açılır; diğerleri gizli (noindex) kalır.',
     livePreview: {
       url: ({ data, locale }) => {

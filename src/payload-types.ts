@@ -359,6 +359,12 @@ export interface Category {
         id?: string | null;
       }[]
     | null;
+  cover?: (number | null) | Media;
+  media?: {
+    docs?: (number | Media)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   priceGuide?: {
     min?: number | null;
     max?: number | null;
@@ -367,14 +373,14 @@ export interface Category {
     note?: string | null;
     updatedAt?: string | null;
   };
-  cover?: (number | null) | Media;
-  media?: {
-    docs?: (number | Media)[];
-    hasNextPage?: boolean;
-    totalDocs?: number;
-  };
   seo?: {
+    /**
+     * Boşsa sayfanın başlığı kullanılır.
+     */
     title?: string | null;
+    /**
+     * Arama sonucunda başlığın altındaki kısa metin (en çok 160 karakter).
+     */
     description?: string | null;
     ogImage?: (number | null) | Media;
   };
@@ -404,10 +410,6 @@ export interface Project {
   title: string;
   slug?: string | null;
   featured?: boolean | null;
-  categories?: (number | Category)[] | null;
-  tags?: (number | Tag)[] | null;
-  cover?: (number | null) | Media;
-  gallery?: (number | Media)[] | null;
   story?: {
     root: {
       type: string;
@@ -423,6 +425,16 @@ export interface Project {
     };
     [k: string]: unknown;
   } | null;
+  testimonial?: {
+    quote?: string | null;
+    author?: string | null;
+    role?: string | null;
+    consentGiven?: boolean | null;
+  };
+  cover?: (number | null) | Media;
+  gallery?: (number | Media)[] | null;
+  categories?: (number | Category)[] | null;
+  tags?: (number | Tag)[] | null;
   city?: string | null;
   district?: string | null;
   region?: (number | null) | Region;
@@ -432,17 +444,11 @@ export interface Project {
   duration?: string | null;
   woodSpecies?: (number | Tag)[] | null;
   finish?: string | null;
+  reference?: (number | null) | Reference;
   mapPin?: {
     lat?: number | null;
     lng?: number | null;
   };
-  testimonial?: {
-    quote?: string | null;
-    author?: string | null;
-    role?: string | null;
-    consentGiven?: boolean | null;
-  };
-  reference?: (number | null) | Reference;
   updatedAt: string;
   createdAt: string;
   _status?: ('draft' | 'published') | null;
@@ -527,7 +533,13 @@ export interface Page {
     [k: string]: unknown;
   } | null;
   seo?: {
+    /**
+     * Boşsa sayfanın başlığı kullanılır.
+     */
     title?: string | null;
+    /**
+     * Arama sonucunda başlığın altındaki kısa metin (en çok 160 karakter).
+     */
     description?: string | null;
   };
   updatedAt: string;
@@ -545,11 +557,12 @@ export interface Guide {
    * Boş bırakılırsa başlıktan üretilir.
    */
   slug?: string | null;
-  excerpt?: string | null;
   /**
-   * Yazının başında ve rehber listesinde görünür. Boşsa listede ilk ilgili hizmetin fotoğrafı kullanılır.
+   * Açıksa yazının altında kurucunun adı (Site Bilgileri › Kurucu) yazar olarak görünür.
    */
-  cover?: (number | null) | Media;
+  showAuthor?: boolean | null;
+  relatedCategories?: (number | Category)[] | null;
+  excerpt?: string | null;
   body?: {
     root: {
       type: string;
@@ -573,12 +586,17 @@ export interface Guide {
       }[]
     | null;
   /**
-   * Açıksa yazının altında kurucunun adı (Site Bilgileri › Kurucu) yazar olarak görünür.
+   * Yazının başında ve rehber listesinde görünür. Boşsa listede ilk ilgili hizmetin fotoğrafı kullanılır.
    */
-  showAuthor?: boolean | null;
-  relatedCategories?: (number | Category)[] | null;
+  cover?: (number | null) | Media;
   seo?: {
+    /**
+     * Boşsa sayfanın başlığı kullanılır.
+     */
     title?: string | null;
+    /**
+     * Arama sonucunda başlığın altındaki kısa metin (en çok 160 karakter).
+     */
     description?: string | null;
   };
   updatedAt: string;
@@ -659,7 +677,7 @@ export interface AiUsage {
   inputTokens?: number | null;
   outputTokens?: number | null;
   /**
-   * collection:id
+   * koleksiyon:id
    */
   docRef?: string | null;
   error?: string | null;
@@ -1084,6 +1102,8 @@ export interface CategoriesSelect<T extends boolean = true> {
         a?: T;
         id?: T;
       };
+  cover?: T;
+  media?: T;
   priceGuide?:
     | T
     | {
@@ -1094,8 +1114,6 @@ export interface CategoriesSelect<T extends boolean = true> {
         note?: T;
         updatedAt?: T;
       };
-  cover?: T;
-  media?: T;
   seo?:
     | T
     | {
@@ -1127,11 +1145,19 @@ export interface ProjectsSelect<T extends boolean = true> {
   title?: T;
   slug?: T;
   featured?: T;
-  categories?: T;
-  tags?: T;
+  story?: T;
+  testimonial?:
+    | T
+    | {
+        quote?: T;
+        author?: T;
+        role?: T;
+        consentGiven?: T;
+      };
   cover?: T;
   gallery?: T;
-  story?: T;
+  categories?: T;
+  tags?: T;
   city?: T;
   district?: T;
   region?: T;
@@ -1141,21 +1167,13 @@ export interface ProjectsSelect<T extends boolean = true> {
   duration?: T;
   woodSpecies?: T;
   finish?: T;
+  reference?: T;
   mapPin?:
     | T
     | {
         lat?: T;
         lng?: T;
       };
-  testimonial?:
-    | T
-    | {
-        quote?: T;
-        author?: T;
-        role?: T;
-        consentGiven?: T;
-      };
-  reference?: T;
   updatedAt?: T;
   createdAt?: T;
   _status?: T;
@@ -1199,8 +1217,9 @@ export interface PagesSelect<T extends boolean = true> {
 export interface GuidesSelect<T extends boolean = true> {
   title?: T;
   slug?: T;
+  showAuthor?: T;
+  relatedCategories?: T;
   excerpt?: T;
-  cover?: T;
   body?: T;
   faq?:
     | T
@@ -1209,8 +1228,7 @@ export interface GuidesSelect<T extends boolean = true> {
         a?: T;
         id?: T;
       };
-  showAuthor?: T;
-  relatedCategories?: T;
+  cover?: T;
   seo?:
     | T
     | {
@@ -1429,11 +1447,11 @@ export interface SiteSetting {
     street?: string | null;
     district?: string | null;
     city?: string | null;
+    mapUrl?: string | null;
     postalCode?: string | null;
     country?: string | null;
     lat?: number | null;
     lng?: number | null;
-    mapUrl?: string | null;
     /**
      * Google Haritalar → Paylaş → Harita yerleştirin: iframe kodundaki src="…" değeri. Ziyaretçi tıklayınca yüklenir.
      */
@@ -1674,11 +1692,11 @@ export interface SiteSettingsSelect<T extends boolean = true> {
         street?: T;
         district?: T;
         city?: T;
+        mapUrl?: T;
         postalCode?: T;
         country?: T;
         lat?: T;
         lng?: T;
-        mapUrl?: T;
         mapEmbedUrl?: T;
         appleMapsUrl?: T;
       };

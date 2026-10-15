@@ -3,7 +3,8 @@ import type { CollectionConfig } from 'payload'
 import { hiddenFromEditor, isStaff, publishedOrStaff } from '@/access'
 import { slugFrom, validSlug } from '@/hooks/slug'
 import { revalidateAfterChange, revalidateAfterDelete } from '@/hooks/revalidate'
-import { aiTranslateField } from './aiFields'
+import { aiTranslateField, localeStatusField } from './aiFields'
+import { seoField } from './seoField'
 
 /** Simple content pages: Hakkımızda, KVKK, Çerez Politikası, Süreç. */
 export const Pages: CollectionConfig = {
@@ -12,6 +13,8 @@ export const Pages: CollectionConfig = {
   admin: {
     hidden: hiddenFromEditor,
     useAsTitle: 'title',
+    defaultColumns: ['title', '_status', 'updatedAt'],
+    hideAPIURL: true,
     group: 'İçerik',
     livePreview: {
       url: ({ data, locale }) =>
@@ -23,16 +26,10 @@ export const Pages: CollectionConfig = {
   versions: { drafts: true },
   fields: [
     { name: 'title', type: 'text', localized: true, required: true, label: 'Başlık' },
+    localeStatusField,
     aiTranslateField,
     { name: 'slug', type: 'text', localized: true, unique: true, index: true, hooks: { beforeValidate: [slugFrom('title')] }, validate: validSlug, admin: { position: 'sidebar' } },
     { name: 'body', type: 'richText', localized: true, label: 'İçerik' },
-    {
-      name: 'seo',
-      type: 'group',
-      fields: [
-        { name: 'title', type: 'text', localized: true },
-        { name: 'description', type: 'textarea', localized: true },
-      ],
-    },
+    seoField(),
   ],
 }

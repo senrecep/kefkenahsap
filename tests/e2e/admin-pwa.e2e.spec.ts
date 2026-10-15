@@ -35,7 +35,7 @@ test('editor nav shows only the simplified menu (mobile)', async ({ browser }) =
   try {
     const page = await (await browser.newContext({ viewport: { width: 390, height: 844 } })).newPage()
     await login({ page, user: editor })
-    await page.locator('button[aria-label="Open Menu"]:visible').click()
+    await page.locator('button[aria-label="Aç Menü"]:visible').click()
     const nav = page.locator('aside')
     // Wait for the slide-in to finish: the open nav must cover (nearly) the full 390px width, not a squeezed strip.
     await expect.poll(async () => (await nav.boundingBox())?.width ?? 0).toBeGreaterThan(300)
@@ -56,10 +56,11 @@ test('editor nav shows only the simplified menu (mobile)', async ({ browser }) =
 
     // Media stays routable: the Galeri view links editors to its edit screen.
     await page.goto('/admin/collections/media')
-    await expect(page.getByText('Nothing found')).toHaveCount(0)
+    await expect(page.getByText('Hiçbir şey bulunamadı')).toHaveCount(0)
 
     // Hidden Tags/References must still work in relationship fields: list, pick, and create in a drawer.
     await page.goto('/admin/collections/projects/create')
+    await page.getByRole('button', { name: 'Künye' }).click() // tags/reference live in the "Künye" tab (#158)
     const tags = page.locator('#field-tags')
     await tags.click()
     await tags.locator('input').fill(tagName) // the option list is paginated; search for ours
@@ -68,8 +69,8 @@ test('editor nav shows only the simplified menu (mobile)', async ({ browser }) =
     await expect(tags.locator('.relationship--multi-value-label__text')).toHaveText(tagName)
     for (const id of ['tags', 'reference']) {
       await page.locator(`#${id}-add-new button`).click()
-      await expect(page.getByRole('dialog').getByRole('button', { name: 'Save' })).toBeVisible()
-      await page.getByRole('dialog').getByRole('button', { name: 'Close' }).last().click()
+      await expect(page.getByRole('dialog').getByRole('button', { name: 'Kaydet' })).toBeVisible()
+      await page.getByRole('dialog').getByRole('button', { name: 'Kapat' }).last().click()
       await expect(page.getByRole('dialog')).toHaveCount(0)
     }
   } finally {

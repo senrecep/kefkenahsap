@@ -52,7 +52,7 @@ const notify: CollectionAfterChangeHook = async ({ doc, operation, req }) => {
 export const Leads: CollectionConfig = {
   slug: 'leads',
   labels: { singular: 'Talep', plural: 'Talepler' },
-  admin: { useAsTitle: 'name', defaultColumns: ['name', 'phone', 'service', 'status', 'createdAt'], group: 'Talepler' },
+  admin: { useAsTitle: 'name', defaultColumns: ['name', 'phone', 'service', 'status', 'createdAt'], group: 'Talepler', hideAPIURL: true },
   // Public submissions go through the validated, Turnstile-protected form action (#41), never the REST API.
   access: { read: isStaff, create: isStaff, update: isStaff, delete: isStaff },
   hooks: { beforeChange: [setRetention], afterChange: [notify] },
