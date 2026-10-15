@@ -38,7 +38,8 @@ type Block = { blockType: string } & Record<string, unknown>
 
 /**
  * Homepage layout with the editorial picks: on an empty layout every default section in order (hero + FAQ filled, the rest
- * left to their defaults); otherwise only the empty image/mobileImage of the first hero and the empty items of the first
+ * left to their defaults); otherwise only the empty image of the first hero (its empty mobileImage only next to the picked
+ * image) and the empty items of the first
  * FAQ block. Blocks the admin removed stay removed. `filled` lists what changed (empty: nothing to write).
  */
 export function fillHomepageLayout(layout: readonly Block[], picks: { image?: number; mobileImage?: number; faq: Faq[] }): { layout: Block[]; filled: string[] } {
@@ -56,7 +57,12 @@ export function fillHomepageLayout(layout: readonly Block[], picks: { image?: nu
   const next = layout.map((b, i) => {
     const patch: Record<string, unknown> = {}
     if (i === faq && isEmpty(b.items) && picks.faq.length) patch.items = picks.faq
-    if (i === hero) for (const k of ['image', 'mobileImage'] as const) if (isEmpty(b[k]) && picks[k] !== undefined) patch[k] = picks[k]
+    if (i === hero) {
+      if (isEmpty(b.image) && picks.image !== undefined) patch.image = picks.image
+      // The phone photo is the picked hero's companion: only next to that hero, not next to one the admin chose.
+      const heroId = patch.image ?? (typeof b.image === 'object' && b.image ? (b.image as { id?: unknown }).id : b.image)
+      if (isEmpty(b.mobileImage) && picks.mobileImage !== undefined && heroId === picks.image) patch.mobileImage = picks.mobileImage
+    }
     filled.push(...Object.keys(patch).map((k) => `${b.blockType}.${k}`))
     return Object.keys(patch).length ? { ...b, ...patch } : b
   })

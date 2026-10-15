@@ -16,7 +16,7 @@
     {
       "key": "emprenyeli-cam", "axis": "wood",
       "name": { "tr": "Emprenyeli çam", "en": "Pressure-treated pine", "ru": "Пропитанная сосна", "de": "Kesseldruckimprägnierte Kiefer", "ar": "صنوبر معالج بالضغط" },
-      "slug": { "tr": "emprenyeli-cam", "en": "pressure-treated-pine", "ru": "propitannaya-sosna", "de": "kdi-kiefer", "ar": "sanawbar-muaalaj" },
+      "slug": { "tr": "emprenyeli-cam", "en": "pressure-treated-pine", "ru": "propitannaya-sosna", "de": "impraegnierte-kiefer", "ar": "sanawbar-muaalaj" },
       "raw": ["emprenyeli çam"]
     },
     {

@@ -1,5 +1,5 @@
 // #24 globals: public read, staff-only update, homepage blocks keep order.
-import { getPayload, type Payload } from 'payload'
+import { getPayload, type Payload, type TypeWithVersion } from 'payload'
 import { afterAll, beforeAll, describe, expect, it } from 'vitest'
 
 import config from '@/payload.config'
@@ -38,13 +38,15 @@ describe('siteSettings', () => {
 })
 
 describe('homepage', () => {
-  // Shared dev DB: write a draft only (the published homepage is untouched) and put the latest draft back afterwards.
-  let before: Homepage
+  // Shared dev DB: the test writes a draft only, so the published homepage (main document) is never touched. Afterwards the
+  // latest version from before is stored again, every locale exactly (db-level write, read with locale 'all'), so the
+  // admin's latest draft is what it was.
+  let before: TypeWithVersion<Homepage> | undefined
   beforeAll(async () => {
-    before = await payload.findGlobal({ slug: 'homepage', draft: true, depth: 0 })
+    before = (await payload.findGlobalVersions({ slug: 'homepage', where: { latest: { equals: true } }, limit: 1, depth: 0, locale: 'all' })).docs[0]
   })
   afterAll(async () => {
-    await payload.updateGlobal({ slug: 'homepage', draft: true, depth: 0, data: { layout: before.layout ?? [] } })
+    if (before) await payload.db.createGlobalVersion({ globalSlug: 'homepage', versionData: before.version, autosave: false, createdAt: before.createdAt, updatedAt: new Date().toISOString() })
   })
 
   it('keeps block order as saved', async () => {

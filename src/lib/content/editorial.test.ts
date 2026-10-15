@@ -98,16 +98,29 @@ describe('fillHomepageLayout', () => {
   it('fills only the empty fields of the existing hero and FAQ blocks, keeping the admin’s blocks and order', () => {
     const current = [
       { id: 'a', blockType: 'faq', enabled: true, items: [] },
-      { id: 'b', blockType: 'hero', image: 7, mobileImage: null, heading: 'Kendi başlığım' },
+      { id: 'b', blockType: 'hero', image: null, mobileImage: null, heading: 'Kendi başlığım' },
       { id: 'c', blockType: 'contact' },
     ]
     const r = fillHomepageLayout(current, { image: 1401, mobileImage: 1403, faq: items })
     expect(r.layout).toEqual([
       { id: 'a', blockType: 'faq', enabled: true, items },
-      { id: 'b', blockType: 'hero', image: 7, mobileImage: 1403, heading: 'Kendi başlığım' },
+      { id: 'b', blockType: 'hero', image: 1401, mobileImage: 1403, heading: 'Kendi başlığım' },
       { id: 'c', blockType: 'contact' },
     ])
-    expect(r.filled).toEqual(['faq.items', 'hero.mobileImage'])
+    expect(r.filled).toEqual(['faq.items', 'hero.image', 'hero.mobileImage'])
+  })
+
+  it('leaves the phone photo empty when the admin chose another hero photo (it would not match)', () => {
+    const current = [{ id: 'b', blockType: 'hero', image: 7, mobileImage: null }]
+    expect(fillHomepageLayout(current, { image: 1401, mobileImage: 1403, faq: items }).filled).toEqual([])
+  })
+
+  it('fills the phone photo next to the picked hero photo, also when that arrives populated', () => {
+    const current = [{ id: 'b', blockType: 'hero', image: { id: 1401 }, mobileImage: null }]
+    expect(fillHomepageLayout(current, { image: 1401, mobileImage: 1403, faq: items })).toEqual({
+      layout: [{ id: 'b', blockType: 'hero', image: { id: 1401 }, mobileImage: 1403 }],
+      filled: ['hero.mobileImage'],
+    })
   })
 
   it('changes nothing when the hero and FAQ are already filled, or when the admin removed those blocks', () => {
@@ -154,6 +167,13 @@ describe('seed/editorial', () => {
     for (const [slug, c] of Object.entries(p.categoryCovers)) expect(c.seedKey.startsWith(`${slug}/`) && seedKeys.has(c.seedKey)).toBe(true)
     expect(Object.keys(p.categoryCovers).sort()).toEqual(SEED_CATEGORIES.map((c) => c.slug.tr).sort())
     for (const f of p.featuredProjects) expect(clusters.find((c) => c.key === f.cluster)?.seedKeys).toContain(f.cover)
+  })
+
+  it('uses every photo at most once', () => {
+    if (!picks.ok) throw new Error('picks.json')
+    const p = picks.value
+    const all = [p.hero.seedKey, p.mobileHero.seedKey, ...p.featuredProjects.map((f) => f.cover), ...Object.values(p.categoryCovers).map((c) => c.seedKey)]
+    expect(all.length).toBe(new Set(all).size)
   })
 
   it('the homepage FAQ resolves in every locale with an overlay', () => {
