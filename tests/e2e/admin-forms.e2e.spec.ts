@@ -124,6 +124,70 @@ test.describe('other forms', () => {
     await cleanupTestUser()
   })
 
+  test('editor presses "Yayınla: TR": Turkish goes live, the EN draft stays unpublished', async ({
+    page,
+  }) => {
+    const payload = await getPayload({ config })
+    const p = await payload.create({
+      collection: 'projects',
+      locale: 'tr',
+      data: { title: `E2E Yayın ${Date.now()}`, _status: 'published' },
+    })
+    try {
+      await payload.update({
+        collection: 'projects',
+        id: p.id,
+        locale: 'en',
+        draft: true,
+        data: { title: '[EN] E2E publish' },
+      })
+      await login({ page, user: editor })
+      await page.goto(`/admin/collections/projects/${p.id}`)
+      await page.locator('#field-title').fill(`${p.title} düzeltildi`)
+      await page.getByRole('button', { name: 'Yayınla: TR' }).click()
+      await expect(page.locator('.locale-status__item', { hasText: 'Türkçe' })).toContainText(
+        'Yayında',
+      )
+      await expect
+        .poll(
+          async () =>
+            (
+              await payload.findByID({
+                collection: 'projects',
+                id: p.id,
+                locale: 'tr',
+                draft: false,
+              })
+            ).title,
+        )
+        .toBe(`${p.title} düzeltildi`)
+      expect(
+        (
+          await payload.findByID({
+            collection: 'projects',
+            id: p.id,
+            locale: 'en',
+            fallbackLocale: false,
+            draft: false,
+          })
+        ).title ?? null,
+      ).toBeNull()
+      expect(
+        (
+          await payload.findByID({
+            collection: 'projects',
+            id: p.id,
+            locale: 'en',
+            fallbackLocale: false,
+            draft: true,
+          })
+        ).title,
+      ).toBe('[EN] E2E publish')
+    } finally {
+      await payload.delete({ collection: 'projects', id: p.id })
+    }
+  })
+
   test('category: Metin / Görseller / Fiyat / SEO tabs with Turkish SEO labels', async ({
     page,
   }) => {
@@ -145,6 +209,7 @@ test.describe('other forms', () => {
           'SEO',
         ])
         await expect(page.locator('.locale-status [data-state="draft"]')).toHaveCount(1)
+        await expect(page.locator('#action-save')).toHaveText('Yayınla: TR')
         await page.screenshot({ path: `docs/screens/admin-158-category-${width}.png` })
         await page.getByRole('button', { name: 'SEO' }).click()
         await expect(page.getByText('Google başlığı')).toBeVisible()
