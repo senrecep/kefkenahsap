@@ -67,6 +67,15 @@ test.describe('homepage', () => {
     await expect(page.locator('link[rel="alternate"][hreflang="tr"]')).toHaveCount(1)
   })
 
+  test('home gallery lightbox steps through exactly the tiles the grid shows', async ({ page }) => {
+    await page.goto('/tr')
+    const tiles = page.locator('[data-gallery-item]:visible')
+    const shown = await tiles.count()
+    expect(shown).toBeGreaterThan(0)
+    await tiles.first().click()
+    await expect(page.getByRole('dialog').getByText(new RegExp(`^1 / ${shown}$`))).toBeVisible()
+  })
+
   test('gallery category chips link into the filtered gallery', async ({ page }) => {
     await page.goto('/tr')
     const chips = page.getByRole('group', { name: 'Kategoriler' }).getByRole('link')
