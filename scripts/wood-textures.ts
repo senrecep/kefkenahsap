@@ -15,9 +15,10 @@ const H = 128
 
 type Crop = { file: string; angle: number; region: { left: number; top: number; width: number; height: number } }
 const crops: Record<string, Crop> = {
-  // Media 1655 "Bahçe kapısı önüne iroko deck zemin" (1600×739): the oiled side board of the deck, levelled (-44°);
-  // warm, unweathered iroko. Narrow in the photo (≈20 px), so it is stretched across the board's width, never recoloured.
-  iroko: { file: 'bahce-kapisi-onu-iroko-deck-zemin.webp', angle: -44, region: { left: 440, top: 1092, width: 465, height: 19 } },
+  // #156: media "İroko deck zemin, ahşap dolap kapağı" (1204×1600): the top rail of the oiled iroko cabinet frame, shot
+  // face-on and level, between its two mitres and clear of the watermark: 570×60 px of sharp interlocked grain (the
+  // earlier deck side board was ≈20 px tall, stretched into a flat orange slab). Never recoloured.
+  iroko: { file: 'iroko-deck-zemin-ahsap-dolap-kapagi.webp', angle: 0, region: { left: 290, top: 258, width: 570, height: 60 } },
   // Media 1307 "Bahçede emprenyeli çam deck zemin" (960×960): the front fascia board, levelled (-24.5°).
   cam: { file: 'bahce-emprenyeli-cam-deck-zemin.webp', angle: -24.5, region: { left: 250, top: 863, width: 800, height: 34 } },
 }

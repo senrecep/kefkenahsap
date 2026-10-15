@@ -80,8 +80,9 @@ export function ContactForm({
   const formRef = useRef<HTMLFormElement>(null)
   const widgetRef = useRef<HTMLDivElement>(null)
   const widgetId = useRef<string | null>(null)
-  // interaction-only: the check usually passes unseen; space is reserved only when Turnstile asks the visitor to act.
-  const [challenge, setChallenge] = useState(false)
+  // interaction-only: the check usually passes unseen. The widget box only gets its margin while Turnstile actually shows
+  // something (a challenge, then its success or error state), measured rather than inferred from callbacks (#156).
+  const [shown, setShown] = useState(false)
 
   // Turnstile loads only on this page, when the visitor starts the form or nears the check (PLAN §9).
   useEffect(() => {
@@ -94,9 +95,6 @@ export function ContactForm({
           language: locale,
           theme: 'light',
           appearance: 'interaction-only',
-          'before-interactive-callback': () => setChallenge(true),
-          'after-interactive-callback': () => setChallenge(false),
-          'error-callback': () => setChallenge(false),
         })
     }
     const load = () => {
@@ -109,11 +107,15 @@ export function ContactForm({
       s.onload = render
       document.head.appendChild(s)
     }
+    // The box has height only while Turnstile shows something; the margin follows it.
+    const ro = new ResizeObserver(() => setShown(el.offsetHeight > 0))
+    ro.observe(el)
     const io = new IntersectionObserver(([entry]) => entry?.isIntersecting && load(), { rootMargin: '200px' })
     // The widget box is hidden until a challenge, so watch the submit button for "nears the check".
     io.observe(form.querySelector('button[type="submit"]') ?? form)
     form.addEventListener('focusin', load)
     return () => {
+      ro.disconnect()
       io.disconnect()
       form.removeEventListener('focusin', load)
     }
@@ -128,7 +130,6 @@ export function ContactForm({
     if (state.status !== 'error') return
     if (state.form && widgetId.current) {
       window.turnstile?.reset(widgetId.current)
-      setChallenge(false) // a reset widget starts invisible again; it re-reserves space if it asks again
     }
     const first = (['name', 'phone', 'email', 'consent', 'message', 'photos'] as LeadField[]).find((f) => state.fields?.[f])
     if (first) formRef.current?.querySelector<HTMLElement>(`[name="${first}"]`)?.focus()
@@ -285,8 +286,9 @@ export function ContactForm({
           </label>
         </div>
         {errorText('consent', err('consent'))}
-        {/* Inside the consent block so the empty, zero-height widget adds no grid gap; never display:none, or Turnstile stalls. */}
-        {siteKey && <div ref={widgetRef} className={challenge ? 'mt-5 min-h-[65px]' : ''} />}
+        {/* Inside the consent block so the empty, zero-height widget adds no grid gap; never display:none, or Turnstile stalls.
+            No reserved height: the widget's own iframe sizes the box; leading-0 drops the line box under the inline widget. */}
+        {siteKey && <div ref={widgetRef} className={`leading-[0] ${shown ? 'mt-5' : ''}`} />}
       </div>
 
       <div role="status" aria-live="polite" className="empty:hidden">

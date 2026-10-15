@@ -1,10 +1,17 @@
 // Draft privacy notice (KVKK aydınlatma metni) used until a published `pages` doc (slug kvkk/privacy) exists.
 // Facts only from siteSettings and the actual form/infra (PLAN §10). A lawyer should review it before launch.
 import { Link } from '@/i18n/navigation'
+import { isMapEmbedUrl } from '@/lib/http/safe-href'
 
 type Controller = { name: string; address?: string; email?: string | null }
 /** What this deployment really loads: GA4 (env), Umami (env), the click-to-load Google map (siteSettings). */
 export type Uses = { ga: boolean; umami: boolean; map: boolean }
+/** One answer for the KVKK notice and the cookie policy (#156): measurement is named in both, or in neither. */
+export const legalUses = (settings: { address?: { mapEmbedUrl?: string | null } | null }): Uses => ({
+  ga: Boolean(process.env.NEXT_PUBLIC_GA_ID),
+  umami: Boolean(process.env.NEXT_PUBLIC_UMAMI_SRC && process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID),
+  map: isMapEmbedUrl(settings.address?.mapEmbedUrl),
+})
 
 // The e-mail is its own anchor: Cloudflare Email Obfuscation rewrites a bare address inside a text node, and its
 // decoder leaves split text nodes that break hydration (#147). A mailto link survives untouched.
@@ -38,7 +45,8 @@ export function KvkkDraft({ locale, c, uses }: { locale: string; c: Controller; 
           <li>Teklif formunda yazdıklarınız: ad soyad, telefon, e-posta (isteğe bağlı), hizmet, il/ilçe, mesaj ve eklediğiniz fotoğraflar.</li>
           <li>Formu gönderdiğiniz sayfa, dil ve varsa kampanya (utm) bilgisi; KVKK onayınızın kaydı.</li>
           <li>Kötüye kullanımı önlemek için IP adresiniz ve Cloudflare Turnstile güvenlik doğrulamasının sonucu.</li>
-          <li>Çerezler ve ziyaret ölçümü için <Link href="/cerez-politikasi">çerez politikasına</Link> bakın.</li>
+          {/* Measurement is named only where the cookie policy describes one (GA4 or Umami configured). */}
+          <li>{uses.ga || uses.umami ? 'Çerezler ve ziyaret ölçümü' : 'Çerezler'} için <Link href="/cerez-politikasi">çerez politikasına</Link> bakın.</li>
         </ul>
         <h2>Ne amaçla ve hangi hukuki sebeple?</h2>
         <ul>
@@ -88,7 +96,7 @@ export function KvkkDraft({ locale, c, uses }: { locale: string; c: Controller; 
         <li>What you enter in the quote form: name, phone, e-mail (optional), service, city/district, message and any photos you attach.</li>
         <li>The page and language you sent the form from, campaign (utm) data if present, and a record of your consent.</li>
         <li>Your IP address and the result of the Cloudflare Turnstile check, to prevent abuse.</li>
-        <li>For cookies and visit measurement, see the <Link href="/cerez-politikasi">cookie policy</Link>.</li>
+        <li>For cookies{uses.ga || uses.umami ? ' and visit measurement' : ''}, see the <Link href="/cerez-politikasi">cookie policy</Link>.</li>
       </ul>
       <h2>Purposes and legal grounds</h2>
       <ul>

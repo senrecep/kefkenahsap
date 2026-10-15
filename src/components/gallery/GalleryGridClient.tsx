@@ -6,7 +6,7 @@ import { buttonClass } from '@/components/ui/button'
 import { Picture } from '@/components/ui/Picture'
 import type { GalleryItem } from '@/lib/gallery/item'
 import type { GalleryLabels } from '@/lib/gallery/labels'
-import { distribute, largestFirstScreenItem, trimColumns } from '@/lib/gallery/masonry'
+import { distribute, evenColumns, largestFirstScreenItem } from '@/lib/gallery/masonry'
 
 import type { LightboxProps } from './Lightbox'
 
@@ -61,7 +61,8 @@ export function GalleryGridClient({
     () =>
       LAYOUTS.map((l) => {
         const all = distribute(items, l.cols)
-        const columns = trim ? trimColumns(items, all) : all
+        // A fixed set is evened by moving tiles first (#156), so trimming hides as few as it can.
+        const columns = trim ? evenColumns(items, all) : all
         // The photos this layout shows, in feed order: what its lightbox steps through.
         const shown = trim ? columns.flat().sort((a, b) => a - b) : null
         return { ...l, columns, shown }

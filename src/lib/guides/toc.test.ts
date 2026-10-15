@@ -25,6 +25,11 @@ describe('tableOfContents', () => {
     expect(tableOfContents(doc(h('h2', text('İroko mu Teak mi? Işık ve Şekil')))).items[0]!.id).toBe('iroko-mu-teak-mi-isik-ve-sekil')
   })
 
+  it('gives Arabic headings transliterated Latin ids (#156; they were bolum-N before slugify read Arabic)', () => {
+    // Hand: م m, ا a | ا a, ل l, ف f, ر r, ق q; the Arabic question mark is a separator.
+    expect(tableOfContents(doc(h('h2', text('ما الفرق؟')))).items[0]!.id).toBe('ma-alfrq')
+  })
+
   it('suffixes duplicate headings so every anchor is unique', () => {
     const body = doc(h('h2', text('Fiyat?')), h('h2', text('Fiyat?')), h('h2', text('Fiyat?')))
     expect(tableOfContents(body).items.map((i) => i.id)).toEqual(['fiyat', 'fiyat-2', 'fiyat-3'])

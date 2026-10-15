@@ -3,7 +3,7 @@ import path from 'node:path'
 import { describe, expect, it } from 'vitest'
 import { Maybe } from 'tsentials/maybe'
 
-import { mediaSeedKey, mergeTextFixes, overlayLocales, projectFixPatch, projectYearFix, readOverlay, textFixUpdate, uniqueSlugs } from './overlay'
+import { mediaSeedKey, mergeTextFixes, overlayLocales, projectFixPatch, projectYearFix, readOverlay, slugFix, textFixUpdate, uniqueSlugs } from './overlay'
 import { parseCategoryOverlay, parseMediaMetaOverlay, parsePageOverlay, parseProjectFixes } from './schema'
 
 const SEED = path.resolve(process.cwd(), 'tests/fixtures/seed')
@@ -158,5 +158,30 @@ describe('projectFixPatch (#148)', () => {
   it('parses the committed fixes file shape and rejects unknown fields', () => {
     expect(parseProjectFixes(JSON.stringify({ k: fix })).ok).toBe(true)
     expect(parseProjectFixes(JSON.stringify({ k: { ...fix, slug: { tr: { old: 'a', new: 'b' } } } })).ok).toBe(false)
+  })
+})
+
+describe('slugFix (#156: projects whose ar slug the pre-transliteration hook left empty or a bare year)', () => {
+  const title = 'تراسات خشبية ودرابزين ومظلات 2014'
+  it('fills an empty slug with the hand-written one, else with the transliterated title', () => {
+    expect(slugFix({ slug: null, title }, 'ar', 'tirasat-khashabiya')).toEqual(Maybe.some('tirasat-khashabiya'))
+    expect(slugFix({ slug: '', title: 'خزائن مطبخ' }, 'ar')).toEqual(Maybe.some('khzan-mtbkh'))
+  })
+  it("replaces exactly the old hook's output (the Latin left of an Arabic title: here the year)", () => {
+    expect(slugFix({ slug: '2014', title }, 'ar', 'tirasat-khashabiya')).toEqual(Maybe.some('tirasat-khashabiya'))
+  })
+  it('replaces a bare year left on an Arabic title that has since lost it (#148 moved the year to its own field; dev)', () => {
+    expect(slugFix({ slug: '2014', title: 'تراسات خشبية ودرابزين ومظلات' }, 'ar', 'tirasat-khashabiya')).toEqual(Maybe.some('tirasat-khashabiya'))
+    // A Latin-script title never got a bare-number slug from the hook, so there it is an editor's choice.
+    expect(slugFix({ slug: '2014', title: 'Holzterrassen' }, 'de')).toEqual(Maybe.none())
+  })
+
+  it("keeps any other slug: an editor's choice, or one already fixed", () => {
+    for (const slug of ['my-terrace', 'terrace-2014', 'tirasat-khashabiya']) expect(slugFix({ slug, title }, 'ar', 'tirasat-khashabiya')).toEqual(Maybe.none())
+  })
+  it('does nothing without a title, and leaves a Latin-script locale whose slug already follows its title', () => {
+    expect(slugFix({ slug: null, title: '  ' }, 'ar', 'x')).toEqual(Maybe.none())
+    expect(slugFix({ slug: 'kleine-holzterrasse', title: 'Kleine Holzterrasse' }, 'de')).toEqual(Maybe.none())
+    expect(slugFix({ slug: null, title: 'Kleine Holzterrasse' }, 'de')).toEqual(Maybe.some('kleine-holzterrasse'))
   })
 })

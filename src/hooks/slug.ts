@@ -19,6 +19,7 @@ export const slugFrom =
     return Result.isSuccess(r) ? r.value : value
   }
 
-/** Slug field validation: an Arabic (or any non-Latin) slug the auto-fill could not convert is refused, not saved. */
+/** Slug field validation: anything but lowercase Latin, digits and dashes is refused. The hook transliterates Turkish,
+ * Russian, German and Arabic first (#156), so this catches only what it could not convert. */
 export const validSlug = (v: unknown): true | string =>
   !v || (typeof v === 'string' && /^[a-z0-9-]+$/.test(v)) ? true : 'Adres (slug) yalnızca küçük Latin harf, rakam ve tire içerebilir; ör. ahsap-deck.'

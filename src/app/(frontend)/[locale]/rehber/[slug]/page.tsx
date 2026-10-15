@@ -20,7 +20,7 @@ import { getGuide, getGuides } from '@/lib/data/guides'
 import { getProjectCards } from '@/lib/data/projects'
 import { getSiteSettings } from '@/lib/data/site'
 import { metaDescription } from '@/lib/guides/meta'
-import { relatedGuides } from '@/lib/guides/related'
+import { guideProjects, relatedGuides } from '@/lib/guides/related'
 import { tableOfContents, type TocItem } from '@/lib/guides/toc'
 import { siteUrl } from '@/lib/seo/alternates'
 import { hasWoodSamples } from '@/lib/wood/samples'
@@ -55,8 +55,8 @@ export default async function GuidePage({ params }: Props) {
   const body = guide.body as SerializedEditorState | null | undefined
   const toc = tableOfContents(body)
   const categoryIds = categories.map((c) => c.id)
-  // "Bu konudaki işlerimiz": published projects in this guide's services, newest first (getProjectCards' order).
-  const projects = projectCards.filter((p) => p.categories.some((c) => categoryIds.includes(c.id))).slice(0, 3)
+  // "Bu konudaki işlerimiz": published projects in this guide's services, in the guide's category order (#156).
+  const projects = guideProjects(projectCards, categories)
   const moreGuides = relatedGuides(published, guide.id, categoryIds)
   // Byline only when the owner opted in for this guide (and a founder name is set).
   const founder = guide.showAuthor && settings.founder?.name ? settings.founder : null
@@ -160,10 +160,10 @@ export default async function GuidePage({ params }: Props) {
                 <h2 id="guide-projects" className="text-[clamp(1.4rem,2.4vw,1.75rem)]">
                   {t('projects')}
                 </h2>
-                <ul className="mt-6 grid gap-x-6 gap-y-10 sm:grid-cols-2 xl:grid-cols-3">
+                <ul className={projects.length === 1 ? 'mt-6' : 'mt-6 grid gap-x-6 gap-y-10 sm:grid-cols-2 xl:grid-cols-3'}>
                   {projects.map((p) => (
                     <li key={p.id}>
-                      <ProjectCard project={p} />
+                      <ProjectCard project={p} wide={projects.length === 1} />
                     </li>
                   ))}
                 </ul>

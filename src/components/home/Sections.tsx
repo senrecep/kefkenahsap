@@ -297,7 +297,7 @@ export async function Contact({ locale, heading }: Heading & { locale: Locale })
               <dd>
                 {settings.phones?.map((p) => (
                   <a key={p.number} href={telLink({ phones: [p] })?.href} data-umami-event="phone_click" data-umami-event-place="home-contact" className="block font-[family-name:var(--font-display)] font-semibold hover:text-action">
-                    <bdi dir="ltr">{p.number}</bdi>
+                    <bdi dir="ltr" className="whitespace-nowrap">{p.number}</bdi>
                     {p.whatsapp && <MessageCircle aria-label="WhatsApp" size={16} strokeWidth={1.75} className="ms-2 inline align-[-2px] text-action" />}
                   </a>
                 ))}

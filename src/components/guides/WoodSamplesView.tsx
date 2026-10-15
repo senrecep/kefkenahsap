@@ -2,14 +2,13 @@
 
 import { useCallback, useEffect, useId, useRef, useState } from 'react'
 
-import { can3d, keyRotation, rotate, type WoodKey } from '@/lib/wood/samples'
+import { can3d, keyRotation, rotate, WOOD_REST, type WoodKey } from '@/lib/wood/samples'
 
 import type { WoodScene } from './wood-scene'
 
 type Labels = { hint: string; note: string; title: string; roledescription: string }
 type Sample = { key: WoodKey; texture: string; name: string; fact: string; source?: { label: string; href: string } }
-// A board seen from above and in front, turned a little: top face, front edge and grain all read at rest.
-const START = { x: 0.38, y: -0.16 }
+const START = WOOD_REST
 
 function env() {
   const nav = navigator as Navigator & {
@@ -137,7 +136,7 @@ function Plank(props: { sample: Sample; roledescription: string; hintId: string;
     <li className="mt-0! ps-0!">
       <div
         ref={frame}
-        className="relative grid aspect-[4/1] place-items-center rounded-[var(--radius-photo)] focus-visible:outline-2 focus-visible:outline-offset-2"
+        className="relative grid aspect-[3/1] place-items-center rounded-[var(--radius-photo)] focus-visible:outline-2 focus-visible:outline-offset-2"
         {...(ready
           ? {
               tabIndex: 0,

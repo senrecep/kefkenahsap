@@ -4,10 +4,10 @@ import { getFormatter, getTranslations, setRequestLocale } from 'next-intl/serve
 
 import { ContentPage } from '@/components/content/ContentPage'
 import { CookiesDraft } from '@/content/legal/cookies'
+import { legalUses } from '@/content/legal/kvkk'
 import type { Locale } from '@/i18n/routing'
 import { CMS_PAGES, getPage, getPageTitles } from '@/lib/data/pages'
 import { getSiteSettings } from '@/lib/data/site'
-import { isMapEmbedUrl } from '@/lib/http/safe-href'
 import { cmsPagePaths, pageMetadata } from '@/lib/seo/page-metadata'
 
 const SLUGS = CMS_PAGES['/cerez-politikasi']
@@ -42,7 +42,7 @@ export default async function Page({ params }: Props) {
       <CookiesDraft
         locale={locale}
         name={settings.companyName}
-        uses={{ ga: Boolean(process.env.NEXT_PUBLIC_GA_ID), umami: Boolean(process.env.NEXT_PUBLIC_UMAMI_SRC && process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID), map: isMapEmbedUrl(settings.address?.mapEmbedUrl) }}
+        uses={legalUses(settings)}
       />
     </ContentPage>
   )

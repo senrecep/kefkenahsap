@@ -20,13 +20,28 @@ const RU_MAP: Record<string, string> = {
   р: 'r', с: 's', т: 't', у: 'u', ф: 'f', х: 'kh', ц: 'ts', ч: 'ch', ш: 'sh', щ: 'shch', ъ: '', ы: 'y', ь: '', э: 'e', ю: 'yu', я: 'ya',
 }
 
+// Arabic → Latin consonants (#156): short vowels are unwritten, so `ardyat-khshbya` rather than a scholarly romanization.
+// Crude but Latin: an ar title alone now gives a live slug (the AI translation fills only the title); an editor may enter a
+// nicer one by hand. ع and hamza carriers drop; harakat, shadda and tatweel vanish; Arabic-Indic digits become ASCII.
+const AR_MAP: Record<string, string> = {
+  ا: 'a', أ: 'a', إ: 'i', آ: 'a', ٱ: 'a', ب: 'b', ت: 't', ث: 'th', ج: 'j', ح: 'h', خ: 'kh', د: 'd', ذ: 'dh', ر: 'r', ز: 'z',
+  س: 's', ش: 'sh', ص: 's', ض: 'd', ط: 't', ظ: 'z', ع: '', غ: 'gh', ف: 'f', ق: 'q', ك: 'k', ل: 'l', م: 'm', ن: 'n', ه: 'h',
+  ة: 'a', و: 'w', ؤ: '', ي: 'y', ى: 'a', ئ: '', ء: '', پ: 'p', چ: 'ch', ڤ: 'v', گ: 'g', ک: 'k', ی: 'y',
+}
+const arabic = (s: string) =>
+  s
+    .normalize('NFKC') // presentation forms (ﻻ) → base letters
+    .replace(/[\u064B-\u065F\u0670\u0640]/g, '') // harakat, superscript alef, tatweel
+    .replace(/[\u0660-\u0669]/g, (d) => String(d.charCodeAt(0) - 0x0660))
+    .replace(/[\u0600-\u06FF]/g, (c) => AR_MAP[c] ?? ' ')
+
 // German spelling for umlauts in a de text (Über → ueber); elsewhere ö/ü are Turkish letters (o/u).
 const DE_MAP: Record<string, string> = { ä: 'ae', ö: 'oe', ü: 'ue' }
 
-/** URL/file slug from Turkish, English, German (pass locale 'de' for ae/oe/ue) or Russian text: ASCII, lowercase, dash-separated, cut at a word boundary. */
+/** URL/file slug from Turkish, English, German (pass locale 'de' for ae/oe/ue), Russian or Arabic text: ASCII, lowercase, dash-separated, cut at a word boundary. */
 export function slugify(input: string, maxLength = 80, locale?: string): Result<string> {
   const lower = input.toLocaleLowerCase(locale === 'de' ? 'de-DE' : 'tr-TR')
-  const ascii = (locale === 'de' ? lower.replace(/[äöü]/g, (c) => DE_MAP[c]!) : lower)
+  const ascii = arabic(locale === 'de' ? lower.replace(/[äöü]/g, (c) => DE_MAP[c]!) : lower)
     .replace(/[çğıöşüß]/g, (c) => TR_MAP[c] ?? c)
     .replace(/[а-яё]/g, (c) => RU_MAP[c] ?? c)
     .normalize('NFKD')

@@ -76,10 +76,10 @@ export default async function ContactPage({ params, searchParams }: Props) {
                       <Phone aria-hidden size={18} strokeWidth={1.75} className="text-ink-soft" />
                       {tel ? (
                         <a href={tel.href} data-umami-event="phone_click" data-umami-event-place="contact" className={link}>
-                          <bdi dir="ltr">{p.number}</bdi>
+                          <bdi dir="ltr" className="whitespace-nowrap">{p.number}</bdi>
                         </a>
                       ) : (
-                        <span className="text-lg"><bdi dir="ltr">{p.number}</bdi></span>
+                        <span className="text-lg"><bdi dir="ltr" className="whitespace-nowrap">{p.number}</bdi></span>
                       )}
                       {p.label && <span className="text-ink-soft">{p.label}</span>}
                     </li>

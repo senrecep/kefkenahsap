@@ -74,7 +74,7 @@ export async function Header({ locale }: { locale: Locale }) {
           {tel && (
             <a href={tel.href} data-umami-event="phone_click" data-umami-event-place="header" className="inline-flex min-h-11 items-center gap-2 rounded-[var(--radius-control)] px-2 font-[family-name:var(--font-display)] text-sm font-semibold text-ink hover:text-action">
               <Phone aria-hidden size={18} strokeWidth={1.75} />
-              <bdi dir="ltr" className="hidden xl:inline">{tel.label}</bdi>
+              <bdi dir="ltr" className="hidden whitespace-nowrap xl:inline">{tel.label}</bdi>
               <span className="sr-only xl:hidden">{`${tCta('callUs')}: ${tel.label}`}</span>
             </a>
           )}
