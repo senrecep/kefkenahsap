@@ -1,3 +1,4 @@
+import { ArrowLeft, ArrowRight } from 'lucide-react'
 import type { Metadata } from 'next'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
 import { notFound } from 'next/navigation'
@@ -10,7 +11,8 @@ import { Picture } from '@/components/ui/Picture'
 import { WhatsAppButton } from '@/components/ui/WhatsAppButton'
 import { getPathname } from '@/i18n/navigation'
 import { routing, type Locale } from '@/i18n/routing'
-import { getGalleryPage, getImage } from '@/lib/data/gallery'
+import { getCategorySequence, getGalleryPage, getImage } from '@/lib/data/gallery'
+import { neighbours } from '@/lib/gallery/neighbours'
 import { responsiveImage } from '@/lib/media/image'
 import { siteUrl } from '@/lib/seo/alternates'
 import { imageObjectJsonLd } from '@/lib/seo/jsonld'
@@ -34,11 +36,14 @@ export default async function ImagePage({ params }: Props) {
   setRequestLocale(locale)
   const image = await getImage(locale, slug)
   if (!image) notFound()
-  const { item, project, categoryId } = image
-  const [t, related] = await Promise.all([
+  const { item, project, categoryId, tags } = image
+  const [t, related, sequence] = await Promise.all([
     getTranslations('Gallery'),
     categoryId ? getGalleryPage(locale, { categoryId, limit: 9 }) : null,
+    categoryId ? getCategorySequence(locale, categoryId) : [],
   ])
+  const { prev, next } = neighbours(sequence, slug)
+  const step = 'group flex min-h-12 min-w-0 flex-col justify-center gap-0.5 py-3'
   const others = (related?.items ?? []).filter((r) => r.id !== item.id).slice(0, 8)
   const site = siteUrl().replace(/\/$/, '')
   const url = `${site}${item.href}`
@@ -79,8 +84,49 @@ export default async function ImagePage({ params }: Props) {
                   <dd><a href={project.href} className="text-action underline">{project.title}</a></dd>
                 </div>
               )}
+              {tags.length > 0 && (
+                <div className="grid gap-2.5 py-3">
+                  <dt className="text-ink-soft">{t('tags')}</dt>
+                  <dd>
+                    <ul className="flex flex-wrap gap-2">
+                      {tags.map((x) => (
+                        <li key={x.href}>
+                          <a href={x.href} className="inline-flex min-h-11 items-center rounded-full border border-line bg-paper px-4 font-[family-name:var(--font-display)] text-[0.875rem] font-semibold hover:border-ink/40">
+                            {x.name}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </dd>
+                </div>
+              )}
             </dl>
             <WhatsAppButton locale={locale} place="image-page" context={{ kind: 'image', vars: { url } }} label={t('askAbout')} className="mt-6 w-full" />
+            {(prev || next) && (
+              // Within the category, in the order its page shows; titles are the photos' own.
+              <nav aria-label={item.category?.name ?? t('category')} className="mt-6 grid grid-cols-2 gap-4 border-t border-line text-[0.95rem]">
+                {prev ? (
+                  <a href={prev.href} rel="prev" className={step}>
+                    <span className="inline-flex items-center gap-1.5 font-[family-name:var(--font-display)] font-semibold text-action group-hover:text-action-deep">
+                      <ArrowLeft aria-hidden size={18} strokeWidth={1.75} className="rtl:rotate-180" />
+                      {t('prev')}
+                    </span>
+                    <span className="line-clamp-1 w-full text-ink-soft">{prev.title}</span>
+                  </a>
+                ) : (
+                  <span />
+                )}
+                {next && (
+                  <a href={next.href} rel="next" className={`${step} items-end text-end`}>
+                    <span className="inline-flex items-center gap-1.5 font-[family-name:var(--font-display)] font-semibold text-action group-hover:text-action-deep">
+                      {t('next')}
+                      <ArrowRight aria-hidden size={18} strokeWidth={1.75} className="rtl:rotate-180" />
+                    </span>
+                    <span className="line-clamp-1 w-full text-ink-soft">{next.title}</span>
+                  </a>
+                )}
+              </nav>
+            )}
           </div>
         </div>
       </Container>
