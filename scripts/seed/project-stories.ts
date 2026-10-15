@@ -4,7 +4,8 @@
 // (_status 'draft') are touched, only empty fields are written (fillEmpty), and every write is a new draft version —
 // nothing is published.
 // A re-run makes no writes. --force overwrites story and EN title on those drafts with the committed text.
-// #138: also the title and story of the other locales from seed/i18n/<locale>/content/project-stories.json, when present.
+// #138: also the title and story of the other locales from seed/i18n/<locale>/content/project-stories.json, when present
+// (#156: and its hand-written Latin slug, where the overlay has one — ar).
 // Prints the target database first; a non-local one needs --yes, and SITE_ENV=production is refused.
 // Run: bun run payload run scripts/seed/project-stories.ts [-- [--force] [--yes]]
 import { readFileSync } from 'node:fs'
@@ -51,7 +52,7 @@ for (const c of clusters) {
   const incoming = {
     tr: { story: lexical(s.tr.story) },
     en: { title: s.en.title, story: lexical(s.en.story) },
-    ...Object.fromEntries(overlays.flatMap(([l, o]) => (o[c.key] ? [[l, { title: o[c.key]!.title, story: lexical(o[c.key]!.story) }]] : []))),
+    ...Object.fromEntries(overlays.flatMap(([l, o]) => (o[c.key] ? [[l, { title: o[c.key]!.title, ...(o[c.key]!.slug ? { slug: o[c.key]!.slug } : {}), story: lexical(o[c.key]!.story) }]] : []))),
   }
   writes += await fillLocales(payload, 'projects', doc.id, incoming, { label: `project "${c.title}"`, draft: true, force })
 }

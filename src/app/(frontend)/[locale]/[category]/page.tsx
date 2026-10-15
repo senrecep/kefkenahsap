@@ -251,7 +251,7 @@ export default async function CategoryPage({ params, searchParams }: { params: P
                   {tel && (
                     <a href={tel.href} data-umami-event="phone_click" data-umami-event-place="category_aside" className={`${buttonClass.outline} w-full`}>
                       <Phone aria-hidden size={18} strokeWidth={1.75} />
-                      <bdi dir="ltr">{tel.label}</bdi>
+                      <bdi dir="ltr" className="whitespace-nowrap">{tel.label}</bdi>
                     </a>
                   )}
                 </div>
@@ -283,10 +283,10 @@ export default async function CategoryPage({ params, searchParams }: { params: P
           <h2 id="projects-h" className={h2}>
             {t('projects')}
           </h2>
-          <ul className="mt-6 grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
+          <ul className={projects.length === 1 ? 'mt-6' : 'mt-6 grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3'}>
             {projects.map((p) => (
               <li key={p.id}>
-                <ProjectCard project={p} />
+                <ProjectCard project={p} wide={projects.length === 1} />
               </li>
             ))}
           </ul>

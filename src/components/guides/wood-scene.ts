@@ -1,7 +1,13 @@
-// OGL scene for one wood sample: a board-shaped plank (8:1 face) with its real-photo texture, lit from above-front with a
-// soft sheen and a slight grain relief taken from the photo's own light and dark, drawn only when its rotation changes.
+// OGL scene for one wood sample: a board lying face-up (8:1 top face, about half as thick as it is wide) with its
+// real-photo texture on top, the same grain run along its long edges and a darker end grain, lit from above-front with a
+// soft oiled sheen and a slight grain relief taken from the photo's own light and dark, drawn only when its rotation changes.
 // Loaded through a dynamic import once the samples scroll into view, so OGL never ships in the page's first-load JS.
 import { Box, Camera, Mesh, Program, Renderer, Texture, Transform } from 'ogl'
+
+import { fitDistance, FOV } from '@/lib/wood/samples'
+
+// A board lying face-up: 8:1 top face like the texture, about half as thick as it is wide (a sample offcut).
+const BOARD = { width: 4, height: 0.22, depth: 0.5 }
 
 const vertex = /* glsl */ `
 attribute vec3 position;
@@ -12,9 +18,11 @@ uniform mat4 projectionMatrix;
 uniform mat3 normalMatrix;
 varying vec2 vUv;
 varying vec3 vNormal;
+varying vec3 vFace;
 varying vec3 vView;
 void main() {
   vUv = uv;
+  vFace = normal;
   vNormal = normalize(normalMatrix * normal);
   vec4 mv = modelViewMatrix * vec4(position, 1.0);
   vView = -mv.xyz;
@@ -27,17 +35,23 @@ uniform sampler2D tMap;
 uniform vec2 uTexel;
 varying vec2 vUv;
 varying vec3 vNormal;
+varying vec3 vFace;
 varying vec3 vView;
 float lum(vec2 uv) { return dot(texture2D(tMap, uv).rgb, vec3(0.299, 0.587, 0.114)); }
 void main() {
-  vec3 base = texture2D(tMap, vUv).rgb;
+  // OGL's Box: the top face's u runs along the board, v across it; the long edges' u also runs along it; the ends' u runs
+  // across. The top shows the photo; a long edge shows a thin strip of it (the same grain, seen edge-on); an end shows end
+  // grain: one column of the photo, darker, as sawn end grain is.
+  vec3 f = abs(vFace);
+  vec2 uv = f.y > 0.5 ? vUv : f.z > 0.5 ? vec2(vUv.x, 0.45 + vUv.y * 0.1) : vec2(0.02 + vUv.y * 0.02, vUv.x);
+  vec3 base = texture2D(tMap, uv).rgb * (f.x > 0.5 ? 0.62 : f.z > 0.5 ? 0.86 : 1.0);
   // Grain relief: darker latewood reads as slightly lower, so the light catches the grain lines.
-  vec2 g = vec2(lum(vUv + vec2(uTexel.x, 0.0)) - lum(vUv - vec2(uTexel.x, 0.0)), lum(vUv + vec2(0.0, uTexel.y)) - lum(vUv - vec2(0.0, uTexel.y)));
+  vec2 g = f.y > 0.5 ? vec2(lum(uv + vec2(uTexel.x, 0.0)) - lum(uv - vec2(uTexel.x, 0.0)), lum(uv + vec2(0.0, uTexel.y)) - lum(uv - vec2(0.0, uTexel.y))) : vec2(0.0);
   vec3 n = normalize(vNormal - vec3(g, 0.0) * 1.2);
   vec3 light = normalize(vec3(0.3, 0.8, 0.6));
   float diffuse = max(dot(n, light), 0.0);
   // Oiled wood: a broad, weak highlight rather than a glossy one.
-  float sheen = pow(max(dot(n, normalize(light + normalize(vView))), 0.0), 24.0) * 0.14;
+  float sheen = pow(max(dot(n, normalize(light + normalize(vView))), 0.0), 18.0) * 0.2;
   gl_FragColor = vec4(base * (0.68 + 0.42 * diffuse) + sheen, 1.0);
 }`
 
@@ -80,7 +94,7 @@ export async function mountWoodScene(
     gl.getExtension('WEBGL_lose_context')?.loseContext()
   }
   try {
-    const camera = new Camera(gl, { fov: 20 })
+    const camera = new Camera(gl, { fov: FOV })
     const scene = new Transform()
     // 1024×128 is power-of-two, so mipmaps keep the grain crisp on a small phone tile.
     const texture = new Texture(gl, { image: img, generateMipmaps: true, minFilter: gl.LINEAR_MIPMAP_LINEAR, anisotropy: 4 })
@@ -89,21 +103,27 @@ export async function mountWoodScene(
       fragment,
       uniforms: { tMap: { value: texture }, uTexel: { value: [1 / img.naturalWidth, 1 / img.naturalHeight] } },
     })
-    // A deck board: 8:1 face like the texture, about a seventh as thick as it is wide.
     const plank = new Mesh(gl, {
-      geometry: new Box(gl, { width: 4, height: 0.5, depth: 0.12 }),
+      geometry: new Box(gl, BOARD),
       program,
     })
-    plank.setParent(scene)
-    plank.rotation.set(rotation.x, rotation.y, 0)
+    // A turntable: the board turns about its own vertical axis (y) on a stand that tilts toward the camera (x), so the
+    // top face stays a surface seen from above whichever way it is turned.
+    const stand = new Transform()
+    stand.setParent(scene)
+    plank.setParent(stand)
+    const turn = (r: { x: number; y: number }) => {
+      stand.rotation.x = r.x
+      plank.rotation.y = r.y
+    }
+    turn(rotation)
     const draw = () => renderer.render({ scene, camera })
     resize = () => {
       const aspect = frame.clientWidth / Math.max(1, frame.clientHeight)
       renderer.setSize(frame.clientWidth, frame.clientHeight)
       camera.perspective({ aspect })
-      // Distance at which the 4-unit board spans ~85% of the frame width (fov 20°, a long lens: little perspective
-      // stretch on the near end), so it fills the tile at any size.
-      camera.position.set(0, 0, 4 / 0.85 / (2 * Math.tan((10 * Math.PI) / 180) * aspect))
+      // Framed for the rest pose, so the board fills the tile at any size; turning it later never re-zooms.
+      camera.position.set(0, 0, fitDistance(BOARD, rotation, aspect))
       draw()
     }
     canvas.addEventListener('webglcontextlost', lost)
@@ -111,7 +131,7 @@ export async function mountWoodScene(
     resize()
     return {
       setRotation: (x, y) => {
-        plank.rotation.set(x, y, 0)
+        turn({ x, y })
         draw()
       },
       destroy,

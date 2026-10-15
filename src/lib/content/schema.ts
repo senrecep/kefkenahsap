@@ -59,7 +59,8 @@ export const parseCategoryOverlay = parseWith(
 )
 export const parseGuideOverlay = parseWith(guideLocale.extend({ slug }))
 export const parsePageOverlay = parseWith(pageLocale.extend({ slug }))
-export const parseProjectStoriesOverlay = parseWith(z.record(z.string(), z.object({ title: text, story: text })))
+// slug (#156): a hand-written Latin slug where the title's script needs one (ar); else the slug hook fills it from the title.
+export const parseProjectStoriesOverlay = parseWith(z.record(z.string(), z.object({ title: text, slug: z.string().regex(/^[a-z0-9-]+$/).optional(), story: text })))
 /** reference name (never translated) → location */
 export const parseReferencesOverlay = parseWith(z.record(z.string(), text))
 // alt ≤ 125 = Media.alt maxLength, so a long one fails here and not halfway through a run.

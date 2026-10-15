@@ -7,6 +7,8 @@ import { safeJsonParse } from 'tsentials/json'
 import { Maybe } from 'tsentials/maybe'
 import { Result } from 'tsentials/result'
 
+import { slugify } from '@/lib/slug'
+
 import type { ProjectFix, TextFixes } from './schema'
 
 /** TR and EN come from the committed seed itself; every other configured locale comes from an overlay. */
@@ -69,3 +71,21 @@ export function projectFixPatch(current: { title?: string | null; story?: string
 /** #148: the year moved out of a title; written only while the project has none (an owner-entered year wins). */
 export const projectYearFix = (current: number | null | undefined, fix: ProjectFix): Maybe<number> =>
   current == null && fix.year !== undefined ? Maybe.some(fix.year) : Maybe.none()
+
+/**
+ * #156: the slug a project locale should get, or none. Writes only where the stored slug is empty or exactly what the
+ * pre-transliteration hook made of this title (the Latin bits of an Arabic title, e.g. a bare year), so an editor's
+ * slug is never touched. `preferred` is a hand-written slug (the ar overlay); else the title's own slug.
+ */
+export function slugFix(current: { slug?: string | null; title?: string | null }, locale: string, preferred?: string): Maybe<string> {
+  const title = current.title?.trim()
+  if (!title) return Maybe.none()
+  const slug = (s: string) => {
+    const r = slugify(s, undefined, locale)
+    return Result.isSuccess(r) ? r.value : ''
+  }
+  const stored = current.slug?.trim() ?? ''
+  if (stored && stored !== slug(title.replace(/[؀-ۿ]/g, ' '))) return Maybe.none()
+  const next = preferred ?? slug(title)
+  return next && next !== stored ? Maybe.some(next) : Maybe.none()
+}

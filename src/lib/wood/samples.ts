@@ -8,7 +8,7 @@ export const WOOD_SAMPLES: readonly {
   texture: string | null
   photo: string | null
 }[] = [
-  { key: 'iroko', texture: '/wood/iroko.webp', photo: 'bahce-kapisi-onu-iroko-deck-zemin' },
+  { key: 'iroko', texture: '/wood/iroko.webp', photo: 'iroko-deck-zemin-ahsap-dolap-kapagi' },
   { key: 'teak', texture: null, photo: null },
   { key: 'cam', texture: '/wood/cam.webp', photo: 'bahce-emprenyeli-cam-deck-zemin' },
   { key: 'thermowood', texture: null, photo: null },
@@ -55,3 +55,29 @@ export const rotate = (r: Rotation, d: Rotation): Rotation => ({
   x: Math.max(-MAX_TILT, Math.min(MAX_TILT, r.x + d.x)),
   y: r.y + d.y,
 })
+
+/** Vertical field of view of the samples' camera (a long lens: little perspective stretch on the near end). */
+export const FOV = 20
+
+/**
+ * Camera distance at which a box of this size, turned by `r` (a turntable: first turned about its own vertical axis by `y`, then tilted toward the camera by `x`), spans
+ * `fill` of the tile's width or height, whichever it reaches first, so the board fills its tile at any tile size.
+ */
+export function fitDistance(size: { width: number; height: number; depth: number }, r: Rotation, aspect: number, fill = 0.85): number {
+  const t = Math.tan((FOV / 2) * (Math.PI / 180))
+  const corners = [-1, 1].flatMap((sx) => [-1, 1].flatMap((sy) => [-1, 1].map((sz) => [(sx * size.width) / 2, (sy * size.height) / 2, (sz * size.depth) / 2] as const)))
+  const turned = corners.map(([x, y, z]) => {
+    const [x1, z1] = [x * Math.cos(r.y) + z * Math.sin(r.y), -x * Math.sin(r.y) + z * Math.cos(r.y)]
+    return [x1, y * Math.cos(r.x) - z1 * Math.sin(r.x), y * Math.sin(r.x) + z1 * Math.cos(r.x)] as const
+  })
+  const fits = (d: number) => turned.every(([x, y, z]) => Math.abs(x) / ((d - z) * t * aspect) <= fill && Math.abs(y) / ((d - z) * t) <= fill)
+  // The projected size only shrinks as the camera backs off, so bisect between the nearest corner and far away.
+  let lo = Math.max(...turned.map((p) => p[2])) + 1e-6
+  let hi = 1000
+  for (let i = 0; i < 60; i++) {
+    const mid = (lo + hi) / 2
+    if (fits(mid)) hi = mid
+    else lo = mid
+  }
+  return hi
+}

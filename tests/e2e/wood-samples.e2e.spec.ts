@@ -106,7 +106,7 @@ test.describe('wood samples block', () => {
   // #146: "Fotoğrafın tamamı" links to the job photo a texture was cut from, only while that photo is approved (no 404).
   // Self-contained: an empty database gets stand-in approved photos under the samples' gallery slugs, removed afterwards.
   test('source photo links appear only for approved photos', async ({ page }) => {
-    const sources = ['bahce-kapisi-onu-iroko-deck-zemin', 'bahce-emprenyeli-cam-deck-zemin']
+    const sources = ['iroko-deck-zemin-ahsap-dolap-kapagi', 'bahce-emprenyeli-cam-deck-zemin']
     const made: number[] = []
     try {
       for (const [i, seoFilename] of sources.entries()) {

@@ -35,8 +35,40 @@ describe('slugify', () => {
     expect(slug('Über uns', 'en')).toBe('uber-uns')
   })
 
-  it('Arabic is not transliterated: an Arabic-only title gives no slug, so the editor enters a Latin one', () => {
-    expect(Result.isFailure(slugify('أرضيات خشبية'))).toBe(true)
+  it('transliterates Arabic letters to Latin consonants (#156), so an ar title alone still gives a live slug', () => {
+    // Hand-written letter by letter (ا a, ر r, ض d, ي y, ت t, خ kh, ش sh, ب b, ة a; أ → a; short vowels are unwritten).
+    expect(value('أرضيات خشبية')).toBe('ardyat-khshbya')
+    // ح h, د d, ق q, ل l, ع dropped, ذ dh, ظ z, غ gh; harakat and tatweel vanish; Arabic-Indic digits become ASCII.
+    expect(value('حديقة عامّة ذات ظلّ غـابة ٢٠١٤')).toBe('hdyqa-ama-dhat-zl-ghaba-2014')
+  })
+
+  it('every real ar project title gives a distinct, non-numeric Latin slug (#156: they were empty or a bare year)', () => {
+    const titles = [
+      'ديكينغ لشرفة وطابق الحديقة',
+      'منصات ديكينغ صغيرة مرتفعة في حديقة',
+      'ديكينغ حديقة صغير عند باب',
+      'تراسات خشبية ودرابزين ومظلات 2014',
+      'سور خشبي على طول حدود حديقة',
+      'ممر مشي خشبي على حافة الماء',
+      'سلم خشبي خارجي بدرابزين ذي حشوة متقاطعة 2016',
+      'خزائن خشبية خارجية',
+      'برغولا تراس وجدار بشرائح ومطبخ خارجي',
+      'مقعد خشبي نصف دائري',
+      'طاولة طعام ومقعد خشبيان',
+      'خزائن مطبخ بيضاء',
+      'بار مطبخ بسطح خشبي',
+      'خزانة خشبية بأبواب ذات حشوات',
+      'مكتب استقبال ومنطقة عمل في مكتب',
+      'خزانة عرض وبوفيه بلون كريمي منقوشان',
+      'مكتب بتكسية جدران من الشرائح الخشبية',
+    ]
+    const slugs = titles.map((t) => value(t))
+    for (const s of slugs) {
+      expect(s).toMatch(/^[a-z0-9-]+$/)
+      expect(s.length).toBeLessThanOrEqual(80)
+      expect(s).not.toMatch(/^[0-9-]+$/)
+    }
+    expect(new Set(slugs).size).toBe(titles.length)
   })
 
   it('keeps the existing WordPress category slugs stable', () => {

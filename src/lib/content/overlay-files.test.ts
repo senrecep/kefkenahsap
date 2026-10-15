@@ -54,3 +54,13 @@ describe.each(locales)('%s overlays', (locale) => {
     for (const f of files(dir)) read(locale, `${dir}/${f}`, parseMediaMetaOverlay)
   })
 })
+
+// #156: an ar title alone transliterates crudely (ardyat-khshbya), so every ar project carries a hand-written Latin slug.
+describe('ar project slugs', () => {
+  it('every ar project story carries a Latin slug, unique', () => {
+    const o = read('ar', 'content/project-stories.json', parseProjectStoriesOverlay)
+    const slugs = Object.entries(o).map(([file, v]) => ({ locale: 'ar', slug: v.slug ?? '', file }))
+    for (const s of slugs) expect(s.slug, s.file).toMatch(/^[a-z][a-z0-9-]*[a-z0-9]$/)
+    expect(uniqueSlugs(slugs)).toEqual({ ok: true, value: undefined })
+  })
+})

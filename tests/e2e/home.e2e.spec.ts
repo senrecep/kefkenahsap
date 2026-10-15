@@ -78,11 +78,11 @@ test.describe('homepage', () => {
 
   test('gallery category chips link into the filtered gallery', async ({ page }) => {
     await page.goto('/tr')
-    const chips = page.getByRole('group', { name: 'Kategoriler' }).getByRole('link')
+    const chips = page.getByRole('group', { name: 'Hizmet' }).getByRole('link')
     // Seed-agnostic: one chip per published category (CI has a single fixture category).
     expect(await chips.count()).toBeGreaterThanOrEqual(1)
     for (const href of await chips.evaluateAll((a) => a.map((x) => x.getAttribute('href')))) expect(href).toMatch(/^\/tr\/galeri\?kategori=[a-z0-9-]+$/)
-    await expect(page.getByRole('group', { name: 'Kategoriler' }).locator('[aria-current]')).toHaveCount(0)
+    await expect(page.getByRole('group', { name: 'Hizmet' }).locator('[aria-current]')).toHaveCount(0)
   })
 })
 

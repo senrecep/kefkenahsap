@@ -8,6 +8,7 @@ import {
   rotate,
   shownSamples,
   WOOD_SAMPLES,
+  fitDistance,
 } from './samples'
 
 describe('WOOD_SAMPLES', () => {
@@ -15,7 +16,7 @@ describe('WOOD_SAMPLES', () => {
     expect(WOOD_SAMPLES.map((s) => s.key)).toEqual(['iroko', 'teak', 'cam', 'thermowood'])
     expect(shownSamples().map((s) => [s.key, s.texture, s.photo])).toEqual([
       // #146: each texture names its source job photo (gallery page by SEO filename, public/wood/PROVENANCE.txt).
-      ['iroko', '/wood/iroko.webp', 'bahce-kapisi-onu-iroko-deck-zemin'],
+      ['iroko', '/wood/iroko.webp', 'iroko-deck-zemin-ahsap-dolap-kapagi'],
       ['cam', '/wood/cam.webp', 'bahce-emprenyeli-cam-deck-zemin'],
     ])
   })
@@ -75,5 +76,17 @@ describe('rotate', () => {
     expect(rotate({ x: 0, y: 0 }, { x: 0.1, y: 7 })).toEqual({ x: 0.1, y: 7 })
     expect(rotate({ x: 1, y: 0 }, { x: 1, y: 0 })).toEqual({ x: MAX_TILT, y: 0 })
     expect(rotate({ x: -1, y: 0 }, { x: -1, y: 0 })).toEqual({ x: -MAX_TILT, y: 0 })
+  })
+})
+
+describe('fitDistance (#156: the plank fills its tile at rest)', () => {
+  const board = { width: 4, height: 0.22, depth: 0.5 }
+  it('face-on in a 3:1 tile, width-limited: the near corners span 85% of the width', () => {
+    // Hand: x_ndc = 2 / ((d − 0.25) · tan 10° · 3) = 0.85 → d = 0.25 + 2 / (0.85 · 0.176327 · 3) = 4.6981.
+    expect(fitDistance(board, { x: 0, y: 0 }, 3)).toBeCloseTo(4.6981, 3)
+  })
+  it('in a very wide tile, height-limited: the thickness spans 85% of the height', () => {
+    // Hand: y_ndc = 0.11 / ((d − 0.25) · tan 10°) = 0.85 → d = 0.25 + 0.11 / (0.85 · 0.176327) = 0.9839 (x_ndc 0.77 then).
+    expect(fitDistance(board, { x: 0, y: 0 }, 20)).toBeCloseTo(0.9839, 3)
   })
 })

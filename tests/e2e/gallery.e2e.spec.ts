@@ -31,7 +31,7 @@ test.describe('gallery', () => {
     await expect(page).toHaveURL(/\/tr\/galeri$/)
 
     // A category chip filters through a shareable URL.
-    const chip = page.getByRole('group', { name: 'Kategoriler' }).getByRole('link').nth(1)
+    const chip = page.getByRole('group', { name: 'Hizmet' }).getByRole('link').nth(1)
     await chip.click()
     await expect(page).toHaveURL(/\?kategori=[a-z0-9-]+/)
     await expect(chip).toHaveAttribute('aria-current', 'page')
