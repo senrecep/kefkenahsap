@@ -49,6 +49,7 @@ const users = (['admin', 'editor'] as const).map((role) => ({
 const category = `E2E Tap ${run}`
 let categoryId: number
 let mediaId: number
+let projectId: number
 
 test.describe('admin tap targets', () => {
   test.describe.configure({ mode: 'serial', timeout: 300_000 })
@@ -57,6 +58,8 @@ test.describe('admin tap targets', () => {
     const payload = await getPayload({ config })
     for (const u of users) await payload.create({ collection: 'users', data: u })
     categoryId = (await payload.create({ collection: 'categories', locale: 'tr', data: { name: category } })).id
+    // #158: an existing record shows the "Diller" panel and the AI tools in the main column.
+    projectId = (await payload.create({ collection: 'projects', locale: 'tr', data: { title: `E2E Tap proje ${run}`, _status: 'published' } })).id
     const photo = await sharp({ create: { width: 800, height: 600, channels: 3, background: { r: 140, g: 100, b: 60 } } }).jpeg().toBuffer()
     for (const i of [1, 2]) {
       const doc = await payload.create({
@@ -77,6 +80,7 @@ test.describe('admin tap targets', () => {
       await payload.delete({ collection: 'media', where: { category: { equals: categoryId } } })
       await payload.delete({ collection: 'categories', id: categoryId })
     }
+    if (projectId) await payload.delete({ collection: 'projects', id: projectId })
     await payload.delete({ collection: 'users', where: { email: { in: users.map((u) => u.email) } } })
   })
 
@@ -122,6 +126,9 @@ test.describe('admin tap targets', () => {
         await p.goto('/admin/collections/projects')
         await expect(p.locator('.list-header')).toBeVisible()
         await expectNoSmallTargets(p, at('projects list'))
+        await p.goto(`/admin/collections/projects/${projectId}`)
+        await expect(p.locator('.locale-status [data-state="live"]')).toHaveCount(1)
+        await expectNoSmallTargets(p, at('project edit'))
         if (user.role === 'admin') {
           // Arrays, blocks, collapsibles and their row actions.
           await p.goto('/admin/globals/homepage')
