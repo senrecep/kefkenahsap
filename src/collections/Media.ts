@@ -4,7 +4,7 @@ import { type CollectionAfterChangeHook, type CollectionBeforeChangeHook, type C
 import { publicError } from '@/lib/http/public-error'
 import { Result } from 'tsentials/result'
 
-import { approvedOrStaff, isStaff } from '@/access'
+import { approvedOrStaff, isStaff, roleOf } from '@/access'
 import { checkPublishable, type MediaStatus } from '@/lib/media/publish'
 import { revalidateAfterChange, revalidateAfterDelete } from '@/hooks/revalidate'
 
@@ -74,7 +74,14 @@ const queueAiSuggestion: CollectionAfterChangeHook = async ({ doc, operation, re
 export const Media: CollectionConfig = {
   slug: 'media',
   labels: { singular: 'Görsel', plural: 'Görseller' },
-  admin: { useAsTitle: 'title', defaultColumns: ['filename', 'title', 'category', 'status'], group: 'İçerik' },
+  admin: {
+    useAsTitle: 'title',
+    // `filename` is the only list cell Payload renders with a thumbnail (and keeps drawer selection working).
+    defaultColumns: ['filename', 'title', 'status', 'category'],
+    group: 'İçerik',
+    pagination: { defaultLimit: 50 },
+  },
+  defaultSort: '-createdAt',
   access: { read: approvedOrStaff, create: isStaff, update: isStaff, delete: isStaff },
   hooks: { beforeChange: [placeholder, publishGate], afterChange: [revalidateAfterChange('media', 'categories', 'projects'), queueAiSuggestion], afterDelete: [revalidateAfterDelete('media', 'categories', 'projects')] },
   fields: [
@@ -94,35 +101,44 @@ export const Media: CollectionConfig = {
     { name: 'title', type: 'text', localized: true, label: 'Başlık' },
     { name: 'alt', type: 'text', localized: true, label: 'Alt metin', maxLength: 125 },
     { name: 'caption', type: 'textarea', localized: true, label: 'Açıklama' },
-    { name: 'seoFilename', type: 'text', label: 'SEO dosya adı', index: true },
+    { name: 'seoFilename', type: 'text', label: 'SEO dosya adı', index: true, admin: { position: 'sidebar' } },
     { name: 'category', type: 'relationship', relationTo: 'categories', index: true, label: 'Kategori' },
     { name: 'tags', type: 'relationship', relationTo: 'tags', hasMany: true, label: 'Etiketler' },
     { name: 'project', type: 'relationship', relationTo: 'projects', index: true, label: 'Proje' },
     { name: 'featured', type: 'checkbox', label: 'Öne çıkan', admin: { position: 'sidebar' } },
     { name: 'capturedAt', type: 'date', label: 'Çekim tarihi', admin: { position: 'sidebar' } },
-    {
-      name: 'aiSuggestion',
-      type: 'json',
-      label: 'AI önerisi',
-      admin: { readOnly: true, description: 'Model, prompt sürümü ve önerilen metinler (yalnızca öneri).' },
-    },
     { name: 'lqip', type: 'text', admin: { readOnly: true, hidden: true } },
     // Stable identity of seeded images (<category>/<source file>) so the seed is idempotent.
     { name: 'seedKey', type: 'text', unique: true, index: true, admin: { readOnly: true, hidden: true } },
     { name: 'dominantColor', type: 'text', admin: { readOnly: true, hidden: true } },
     {
-      name: 'legacy',
-      type: 'group',
-      label: 'Eski site',
-      admin: { condition: (d) => Boolean(d?.legacy?.urls?.length) },
+      // Unnamed: no schema change. Editors never need these; Galeri still reads aiSuggestion through the API.
+      type: 'collapsible',
+      label: 'Teknik bilgiler',
+      admin: { initCollapsed: true, condition: (_data, _siblings, { user }) => roleOf(user) === 'admin' },
       fields: [
-        { name: 'urls', type: 'array', fields: [{ name: 'url', type: 'text', required: true }] },
-        { name: 'attachmentUrl', type: 'text' },
+        {
+          name: 'aiSuggestion',
+          type: 'json',
+          label: 'AI önerisi',
+          admin: { readOnly: true, description: 'Model, prompt sürümü ve önerilen metinler (yalnızca öneri).' },
+        },
+        {
+          name: 'legacy',
+          type: 'group',
+          label: 'Eski site',
+          admin: { condition: (d) => Boolean(d?.legacy?.urls?.length) },
+          fields: [
+            { name: 'urls', type: 'array', fields: [{ name: 'url', type: 'text', required: true }] },
+            { name: 'attachmentUrl', type: 'text' },
+          ],
+        },
       ],
     },
   ],
   upload: {
     mimeTypes: ['image/*'],
+    adminThumbnail: 'w320',
     focalPoint: true,
     formatOptions: { format: 'webp', options: { quality: 82 } },
     imageSizes: [

@@ -60,6 +60,8 @@ export default buildConfig({
       baseDir: path.resolve(dirname),
     },
     components: {
+      graphics: { Logo: '/components/admin/Brand#Logo', Icon: '/components/admin/Brand#Icon' },
+      beforeDashboard: ['/components/admin/EditorHome#EditorHome'],
       beforeNavLinks: ['/components/admin/GaleriNavLink#GaleriNavLink'],
       views: {
         galeri: { Component: '/components/admin/GaleriView#GaleriView', path: '/galeri' },

@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { fitWithin, isTruncated, MEDIA_LIMIT, mediaBadge, reorder } from './galeri'
+import { fitWithin, initialFilter, isTruncated, MEDIA_LIMIT, mediaBadge, reorder, statusCounts } from './galeri'
 
 describe('fitWithin (client downscale to a 2560px long edge, PLAN §4)', () => {
   it('scales a landscape photo so the long edge is 2560', () => {
@@ -93,5 +93,40 @@ describe('isTruncated (Galeri lists at most MEDIA_LIMIT photos)', () => {
     expect(isTruncated(200)).toBe(true)
     expect(isTruncated(199)).toBe(false)
     expect(isTruncated(0)).toBe(false)
+  })
+})
+
+describe('reorder to the ends (Galeri "En başa" / "En sona")', () => {
+  const list = [
+    { id: 1, _media_media_order: 'a0' },
+    { id: 2, _media_media_order: 'a1' },
+    { id: 3, _media_media_order: 'a2' },
+  ]
+  it('moves the last item before the first, and the first item after the last', () => {
+    expect(reorder(list, 2, 0)!.next.map((d) => d.id)).toEqual([3, 1, 2])
+    expect(reorder(list, 0, 2)!.next.map((d) => d.id)).toEqual([2, 3, 1])
+  })
+  it('is a no-op for "En başa" on the first item', () => {
+    expect(reorder(list, 0, 0)).toBeNull()
+  })
+})
+
+describe('statusCounts + initialFilter (Galeri filter chips)', () => {
+  // Two pending (one still waiting for AI, one with alt text), one approved, one hidden.
+  const list = [
+    { status: 'pending' as const },
+    { status: 'pending' as const, alt: 'Ahşap pergola' },
+    { status: 'approved' as const },
+    { status: 'hidden' as const },
+  ]
+  it('counts every pending photo, including those the AI is still preparing', () => {
+    expect(statusCounts(list)).toEqual({ pending: 2, approved: 1, hidden: 1, all: 4 })
+  })
+  it('treats a missing status as pending (the collection default)', () => {
+    expect(statusCounts([{}])).toEqual({ pending: 1, approved: 0, hidden: 0, all: 1 })
+  })
+  it('opens on "Onay bekliyor" when something waits, else on "Tümü"', () => {
+    expect(initialFilter({ pending: 2, approved: 1, hidden: 1, all: 4 })).toBe('pending')
+    expect(initialFilter({ pending: 0, approved: 3, hidden: 0, all: 3 })).toBe('all')
   })
 })
