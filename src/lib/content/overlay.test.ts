@@ -3,8 +3,8 @@ import path from 'node:path'
 import { describe, expect, it } from 'vitest'
 import { Maybe } from 'tsentials/maybe'
 
-import { mediaSeedKey, mergeTextFixes, overlayLocales, readOverlay, textFixUpdate, uniqueSlugs } from './overlay'
-import { parseCategoryOverlay, parseMediaMetaOverlay, parsePageOverlay } from './schema'
+import { mediaSeedKey, mergeTextFixes, overlayLocales, projectFixPatch, projectYearFix, readOverlay, textFixUpdate, uniqueSlugs } from './overlay'
+import { parseCategoryOverlay, parseMediaMetaOverlay, parsePageOverlay, parseProjectFixes } from './schema'
 
 const SEED = path.resolve(process.cwd(), 'tests/fixtures/seed')
 
@@ -122,5 +122,41 @@ describe('mergeTextFixes', () => {
       'media-meta/a/2.json': { title: t('C D', 'C d'), caption: t('X. Y.', 'X.') },
       'media-meta/a/3.json': { title: t('E F', 'E f') },
     })
+  })
+})
+
+describe('projectFixPatch (#148)', () => {
+  const fix = {
+    year: 2014,
+    title: { tr: { old: 'Ahşap teras (2014)', new: 'Ahşap teras' }, ru: { old: 'Террасы (2014)', new: 'Террасы' } },
+    story: { tr: { old: 'Ahşap açık renkli görünüyor.', new: 'Teras kurduk.' }, en: { old: 'The timber looks light.', new: 'We built terraces.' } },
+  }
+
+  it('replaces title and story while both are still the seeded text', () => {
+    expect(projectFixPatch({ title: 'Ahşap teras (2014)', story: 'Ahşap açık renkli görünüyor.' }, fix, 'tr')).toEqual({ title: 'Ahşap teras', story: 'Teras kurduk.' })
+  })
+
+  it('keeps a field the owner edited and still fixes the untouched one', () => {
+    expect(projectFixPatch({ title: 'Sahil terası', story: 'Ahşap açık renkli görünüyor.' }, fix, 'tr')).toEqual({ story: 'Teras kurduk.' })
+    expect(projectFixPatch({ title: 'Ahşap teras (2014)', story: 'Sahibin yazdığı hikâye.' }, fix, 'tr')).toEqual({ title: 'Ahşap teras' })
+  })
+
+  it('writes nothing for an empty, already fixed or unmapped field', () => {
+    expect(projectFixPatch({ title: null, story: '' }, fix, 'tr')).toEqual({})
+    expect(projectFixPatch({ title: 'Ahşap teras', story: 'Teras kurduk.' }, fix, 'tr')).toEqual({})
+    expect(projectFixPatch({ title: 'Террасы (2014)', story: 'The timber looks light.' }, fix, 'ru')).toEqual({ title: 'Террасы' })
+    expect(projectFixPatch({ title: 'X', story: 'Y' }, fix, 'de')).toEqual({})
+  })
+
+  it('fills the year only while it is empty', () => {
+    expect(projectYearFix(null, fix)).toEqual(Maybe.some(2014))
+    expect(projectYearFix(undefined, fix)).toEqual(Maybe.some(2014))
+    expect(Maybe.isNone(projectYearFix(2013, fix))).toBe(true)
+    expect(Maybe.isNone(projectYearFix(null, { story: fix.story }))).toBe(true)
+  })
+
+  it('parses the committed fixes file shape and rejects unknown fields', () => {
+    expect(parseProjectFixes(JSON.stringify({ k: fix })).ok).toBe(true)
+    expect(parseProjectFixes(JSON.stringify({ k: { ...fix, slug: { tr: { old: 'a', new: 'b' } } } })).ok).toBe(false)
   })
 })

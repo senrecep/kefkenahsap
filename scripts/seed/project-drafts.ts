@@ -1,5 +1,6 @@
 // #33: one DRAFT project per reviewed photo cluster (seed/clusters/clusters.json). Nothing is published; the owner
-// reviews each draft in the admin. Fills only the working title, the category and the gallery (cluster order).
+// reviews each draft in the admin. Fills only the working title, the category, the gallery (cluster order) and, where the
+// cluster has one, the year (#148: from the photos' EXIF date, moved out of the title).
 // Run: bun run payload run scripts/seed/project-drafts.ts   (uses the env's DB; media must be seeded first)
 import { readFileSync } from 'node:fs'
 import path from 'node:path'
@@ -7,7 +8,7 @@ import { getPayload } from 'payload'
 
 import config from '@/payload.config'
 
-type Cluster = { n: number; key: string; title: string; category: string; seedKeys: string[] }
+type Cluster = { n: number; key: string; title: string; year?: number; category: string; seedKeys: string[] }
 
 const { clusters } = JSON.parse(readFileSync(path.resolve(process.cwd(), 'seed/clusters/clusters.json'), 'utf8')) as { clusters: Cluster[] }
 const payload = await getPayload({ config: await config })
@@ -32,7 +33,7 @@ for (const c of clusters) {
     collection: 'projects',
     locale: 'tr',
     draft: true,
-    data: { _status: 'draft', title: c.title, categories: [category.docs[0].id], gallery: gallery as number[] },
+    data: { _status: 'draft', title: c.title, year: c.year, categories: [category.docs[0].id], gallery: gallery as number[] },
   })
   created++
 }

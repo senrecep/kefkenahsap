@@ -7,7 +7,7 @@ import { safeJsonParse } from 'tsentials/json'
 import { Maybe } from 'tsentials/maybe'
 import { Result } from 'tsentials/result'
 
-import type { TextFixes } from './schema'
+import type { ProjectFix, TextFixes } from './schema'
 
 /** TR and EN come from the committed seed itself; every other configured locale comes from an overlay. */
 export const overlayLocales = <L extends string>(codes: readonly L[]): L[] => codes.filter((c) => c !== 'tr' && c !== 'en')
@@ -54,3 +54,18 @@ export const mergeTextFixes = (sentenceCase: Record<string, NonNullable<TextFixe
   for (const [rel, fields] of Object.entries(fixes)) merged[rel] = { ...merged[rel], ...fields }
   return merged
 }
+
+/** #148: one locale's title/story of a project (story as plain text); each field only while still exactly the seeded `old`. */
+export function projectFixPatch(current: { title?: string | null; story?: string | null }, fix: ProjectFix, locale: string): { title?: string; story?: string } {
+  const patch: { title?: string; story?: string } = {}
+  for (const field of ['title', 'story'] as const) {
+    const change = fix[field]?.[locale]
+    const next = change ? textFixUpdate(current[field], change) : Maybe.none<string>()
+    if (Maybe.isSome(next)) patch[field] = next.value
+  }
+  return patch
+}
+
+/** #148: the year moved out of a title; written only while the project has none (an owner-entered year wins). */
+export const projectYearFix = (current: number | null | undefined, fix: ProjectFix): Maybe<number> =>
+  current == null && fix.year !== undefined ? Maybe.some(fix.year) : Maybe.none()

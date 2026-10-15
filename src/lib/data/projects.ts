@@ -1,6 +1,7 @@
 import { unstable_cache } from 'next/cache'
 
 import type { Locale } from '@/i18n/routing'
+import { byCategoryOrder } from '@/lib/category/category'
 import { publishedLocales } from '@/lib/i18n/published'
 import type { Category, Media, Project } from '@/payload-types'
 
@@ -24,7 +25,10 @@ export const card = (p: Pick<Project, 'id' | 'title' | 'slug' | 'city' | 'distri
 })
 export type ProjectCard = ReturnType<typeof card>
 
-/** All published projects as cards, newest first. shortcut: filtered in memory, move to a DB query past ~200 projects. */
+/**
+ * All published projects as cards: by the first category's admin order (outdoor work first, #148), newest first within it.
+ * shortcut: filtered and sorted in memory, move to a DB query past ~200 projects.
+ */
 export const getProjectCards = (locale: Locale) =>
   unstable_cache(
     async () => {
@@ -37,7 +41,7 @@ export const getProjectCards = (locale: Locale) =>
         where: published,
         select: { title: true, slug: true, city: true, district: true, year: true, cover: true, gallery: true, categories: true },
       })
-      return res.docs.filter((p) => p.slug).map(card)
+      return res.docs.filter((p) => p.slug).map(card).sort(byCategoryOrder)
     },
     ['projectCards', locale],
     { tags: [TAGS.projects, TAGS.media, TAGS.categories], revalidate: HOUR },

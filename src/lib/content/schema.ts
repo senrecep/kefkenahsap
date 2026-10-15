@@ -85,3 +85,9 @@ export type TextFixes = Record<string, { title?: z.infer<typeof localeChange>; c
 
 /** Words in a markdown text, ignoring heading/list/emphasis markers. */
 export const wordCount = (md: string): number => md.replace(/^\s*[-*]\s+/gm, ' ').replace(/[#*_>`]+/g, ' ').split(/\s+/).filter((w) => /\p{L}|\p{N}/u.test(w)).length
+/** #148: seed/i18n/project-story-fixes.json: cluster key → year (fills an empty one) and per-locale { old, new } title/story. */
+const anyLocaleChange = z.record(z.string(), change)
+export const parseProjectFixes = parseWith(
+  z.record(z.string(), z.object({ year: z.number().int().optional(), title: anyLocaleChange.optional(), story: anyLocaleChange.optional() }).strict()),
+)
+export type ProjectFix = { year?: number; title?: Record<string, { old: string; new: string }>; story?: Record<string, { old: string; new: string }> }

@@ -54,3 +54,9 @@ export function hasRichText(value: { root?: LexicalNode } | null | undefined): b
     n.type === 'text' ? Boolean(n.text?.trim()) : n.children ? n.children.some(filled) : !['paragraph', 'linebreak', 'heading', 'root'].includes(n.type ?? '')
   return Boolean(value?.root?.children?.some(filled))
 }
+
+// '~' sorts after every fractional-index key: a project with no (ordered) category goes last.
+const firstOrder = (p: { categories: { _order?: string | null }[] }) => p.categories[0]?._order ?? '~'
+/** #148: projects by their first category's admin order (deck, pergola … before furniture), for a stable Array#sort. */
+export const byCategoryOrder = (a: { categories: { _order?: string | null }[] }, b: { categories: { _order?: string | null }[] }) =>
+  firstOrder(a) < firstOrder(b) ? -1 : firstOrder(a) > firstOrder(b) ? 1 : 0
