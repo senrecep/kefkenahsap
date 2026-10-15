@@ -16,7 +16,7 @@ const H = 128
 type Crop = { file: string; angle: number; region: { left: number; top: number; width: number; height: number } }
 const crops: Record<string, Crop> = {
   // Media 1680 "Beyaz karo arasında iroko deck zemin" (1200×1600): the oiled frame board along the bottom edge.
-  iroko: { file: 'iroko-deck-zemin-karo-arasi.webp', angle: 1, region: { left: 330, top: 1226, width: 860, height: 72 } },
+  iroko: { file: 'iroko-deck-zemin-karo-arasi.webp', angle: 1, region: { left: 352, top: 1234, width: 836, height: 60 } },
   // Media 1307 "Bahçede emprenyeli çam deck zemin" (960×960): the front fascia board, levelled (-24.5°).
   cam: { file: 'bahce-emprenyeli-cam-deck-zemin.webp', angle: -24.5, region: { left: 250, top: 863, width: 800, height: 34 } },
 }
