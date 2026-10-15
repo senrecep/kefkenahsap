@@ -9,7 +9,7 @@ import type { Category, Guide, Media, Project, Tag } from '@/payload-types'
 
 import { normalizeQuery, prefixTsQuery, type NormalizedQuery } from './normalize'
 
-export type SearchResults = { categories: Category[]; guides: Guide[]; media: Media[]; projects: Project[]; tags: Tag[] }
+export type SearchResults = { categories: Category[]; guides: Pick<Guide, 'id' | 'title' | 'excerpt' | 'slug'>[]; media: Media[]; projects: Project[]; tags: Tag[] }
 
 type Group = {
   collection: 'categories' | 'guides' | 'media' | 'projects' | 'tags'
@@ -19,6 +19,8 @@ type Group = {
   doc: string
   /** Public visibility, on the parent row `p`. */
   visible: string
+  /** Fields the results page renders; omitted → the whole doc. */
+  select?: Record<string, true>
 }
 
 export const GROUPS: Group[] = [
@@ -49,6 +51,7 @@ export const GROUPS: Group[] = [
     parent: 'guides',
     doc: `search_norm(coalesce(l."title", '') || ' ' || coalesce(l."excerpt", ''))`,
     visible: `p."_status" = 'published'`,
+    select: { title: true, excerpt: true, slug: true },
   },
   { collection: 'tags', table: 'tags_locales', parent: 'tags', doc: `search_norm(coalesce(l."name", ''))`, visible: 'true' },
 ]
@@ -93,6 +96,7 @@ async function hydrate<T extends { id: number }>(payload: Payload, g: Group, ids
     draft: false,
     // Untranslated photo titles/alt text show in the default locale rather than as nameless links (as in the gallery).
     ...(g.collection === 'media' ? { fallbackLocale: routing.defaultLocale } : {}),
+    ...(g.select ? { select: g.select } : {}),
     limit: ids.length,
     pagination: false,
     where: { id: { in: ids } },

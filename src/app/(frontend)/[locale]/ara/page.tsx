@@ -16,6 +16,9 @@ import { searchSite } from '@/lib/search/search'
 import { resultSections } from '@/lib/search/sections'
 import { pageMetadata, staticPaths } from '@/lib/seo/page-metadata'
 
+// Per group; a full group shows "24+" since more matches may exist.
+const LIMIT = 24
+
 type Props = { params: Promise<{ locale: string }>; searchParams: Promise<{ q?: string | string[] }> }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -34,7 +37,7 @@ export default async function SearchPage({ params, searchParams }: Props) {
   const raw = (await searchParams).q
   const q = (Array.isArray(raw) ? raw[0] : raw)?.trim().slice(0, 100) ?? ''
   const t = await getTranslations('Search')
-  const result = q ? await searchSite(await getPayload(), q, locale, { limit: 24 }) : null
+  const result = q ? await searchSite(await getPayload(), q, locale, { limit: LIMIT }) : null
   const res = result?.ok ? resultSections(result.value) : null
   const code = result && !result.ok ? result.errors[0]?.code : undefined
 
@@ -57,7 +60,9 @@ export default async function SearchPage({ params, searchParams }: Props) {
       {res?.sections.map((s) => (
         <section key={s.key} className="mt-12" aria-labelledby={`r-${s.key}`}>
           <h2 id={`r-${s.key}`} className={h2}>
-            {t(s.key === 'media' ? 'images' : s.key)} <span className="font-normal text-ink-soft tabular-nums">({s.items.length})</span>
+            {t(s.key === 'media' ? 'images' : s.key)} <span className="font-normal text-ink-soft tabular-nums">({s.items.length}
+              {s.items.length >= LIMIT && '+'})
+            </span>
           </h2>
           {s.key === 'projects' && (
             <ul className="mt-5 grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">

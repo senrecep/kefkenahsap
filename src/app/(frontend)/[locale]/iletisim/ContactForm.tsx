@@ -96,6 +96,7 @@ export function ContactForm({
           appearance: 'interaction-only',
           'before-interactive-callback': () => setChallenge(true),
           'after-interactive-callback': () => setChallenge(false),
+          'error-callback': () => setChallenge(false),
         })
     }
     const load = () => {
@@ -125,7 +126,10 @@ export function ContactForm({
   // After a failed send: a used Turnstile token can't be reused, and focus moves to the first problem.
   useEffect(() => {
     if (state.status !== 'error') return
-    if (state.form && widgetId.current) window.turnstile?.reset(widgetId.current)
+    if (state.form && widgetId.current) {
+      window.turnstile?.reset(widgetId.current)
+      setChallenge(false) // a reset widget starts invisible again; it re-reserves space if it asks again
+    }
     const first = (['name', 'phone', 'email', 'consent', 'message', 'photos'] as LeadField[]).find((f) => state.fields?.[f])
     if (first) formRef.current?.querySelector<HTMLElement>(`[name="${first}"]`)?.focus()
   }, [state])

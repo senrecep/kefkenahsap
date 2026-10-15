@@ -116,6 +116,9 @@ test.describe('Projects, project page and references', () => {
       )
       .toBeGreaterThan(0)
     await expect(row).toContainText('Riva / İstanbul')
+    // #147: a reference with a project leads with that project's photo, in the full-width grid.
+    await expect(row.locator('img')).toBeVisible()
+    expect(await row.locator('xpath=..').evaluate((ul) => getComputedStyle(ul).display)).toBe('grid')
     await expect(row.getByRole('link', { name: full.title })).toHaveAttribute(
       'href',
       `/tr/projeler/${full.slug}`,

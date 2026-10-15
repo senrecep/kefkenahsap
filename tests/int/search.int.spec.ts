@@ -68,7 +68,11 @@ beforeAll(async () => {
   ids.guide = guide.id
   const draftGuide = await payload.create({ collection: 'guides', locale: 'tr', data: { title: `Teak taslak yazı ${stamp}`, _status: 'draft' }, draft: true })
   ids.draftGuide = draftGuide.id
-  cleanup.push({ collection: 'guides', id: guide.id }, { collection: 'guides', id: draftGuide.id })
+  // Published guide with a newer, unpublished draft: only the published text is searchable.
+  const editedGuide = await payload.create({ collection: 'guides', locale: 'tr', data: { title: `Yayındaki rehber ${stamp}`, _status: 'published' } })
+  await payload.update({ collection: 'guides', id: editedGuide.id, locale: 'tr', data: { title: `Gizli rehber taslağı ${stamp}` }, draft: true })
+  ids.editedGuide = editedGuide.id
+  cleanup.push({ collection: 'guides', id: guide.id }, { collection: 'guides', id: draftGuide.id }, { collection: 'guides', id: editedGuide.id })
   const tag = await payload.create({ collection: 'tags', locale: 'tr', data: { name: `Thermowood ${stamp}`, axis: 'wood' } })
   ids.tag = tag.id
   const approved = await payload.create({ collection: 'media', data: {}, filePath: IMG })
@@ -140,6 +144,11 @@ describe('searchSite', () => {
     expect(idsOf((await run('teak bakimi rehberi')).guides)).toContain(ids.guide)
     expect(idsOf((await run('tik ahsabin yaglanmasi')).guides)).toContain(ids.guide)
     expect(idsOf((await run('teak taslak yazi')).guides)).not.toContain(ids.draftGuide)
+  })
+
+  it('a newer guide draft stays unsearchable; the published title is what matches', async () => {
+    expect((await run('yayindaki rehber')).guides.find((g) => g.id === ids.editedGuide)?.title).toBe(`Yayındaki rehber ${stamp}`)
+    expect(idsOf((await run('gizli rehber taslagi')).guides)).not.toContain(ids.editedGuide)
   })
 
   it('searches the published version, not a newer draft', async () => {
