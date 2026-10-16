@@ -7,6 +7,7 @@
     "categories": "Категории",
     "serviceFilter": "Услуга",
     "tags": "Метки",
+    "typeFilter": "Тип изделия",
     "tagFilter": "Метка",
     "clearTag": "(снять фильтр)",
     "all": "Все",

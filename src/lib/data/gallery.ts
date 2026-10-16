@@ -5,6 +5,7 @@ import type { Locale } from '@/i18n/routing'
 import { categoryRank, diversify } from '@/lib/gallery/curate'
 import type { GalleryItem } from '@/lib/gallery/item'
 import { encodeCursor, galleryWhere, PAGE_SIZE, START_CURSOR_ID, type GalleryQuery } from '@/lib/gallery/query'
+import { galleryTagRows } from '@/lib/gallery/tag-rows'
 import type { Category, Media, Project, Tag } from '@/payload-types'
 
 import { markFallbackAlt, type WithAltLang } from './media-alt'
@@ -148,7 +149,7 @@ export async function getUnfilteredGallery(locale: Locale, pages: number): Promi
 export const getGalleryTags = (locale: Locale) =>
   unstable_cache(
     async () => {
-      const res = await (await getPayload()).find({ collection: 'tags', locale, limit: 100, sort: 'name', depth: 0, overrideAccess: false, select: { name: true, slug: true } })
+      const res = await (await getPayload()).find({ collection: 'tags', locale, limit: 100, sort: 'name', depth: 0, overrideAccess: false, select: { name: true, slug: true, axis: true } })
       // The database sorts bytewise (Ç, İ, Ö after Z); chips follow the locale's alphabet.
       const collator = new Intl.Collator(locale)
       return res.docs.filter((d) => d.slug && d.name).sort((x, y) => collator.compare(x.name, y.name))
@@ -156,6 +157,29 @@ export const getGalleryTags = (locale: Locale) =>
     ['galleryTags', locale],
     { tags: [TAGS.tags], revalidate: HOUR },
   )()
+
+/** The gallery's chip rows: product types with enough approved photos (see galleryTagRows), then the other tags. */
+export async function getGalleryTagRows(tags: Awaited<ReturnType<typeof getGalleryTags>>, active?: string) {
+  const typeIds = tags.filter((t) => t.axis === 'type').map((t) => t.id)
+  return galleryTagRows(tags, typeIds.length ? await getTypePhotoTags(typeIds) : [], active)
+}
+
+// Each approved photo's tag ids, for the photos carrying one of the given product types.
+const getTypePhotoTags = unstable_cache(
+  async (typeIds: number[]) => {
+    const res = await (await getPayload()).find({
+      collection: 'media',
+      where: { and: [...galleryWhere({}).and, { tags: { in: typeIds } }] },
+      select: { tags: true },
+      depth: 0,
+      pagination: false,
+      overrideAccess: false,
+    })
+    return res.docs.map((d) => (d.tags ?? []).map((t) => (typeof t === 'number' ? t : t.id)))
+  },
+  ['typePhotoTags'],
+  { tags: [TAGS.media, TAGS.tags], revalidate: HOUR },
+)
 
 /** One approved image by its SEO filename, plus which locales have their own title (hreflang). */
 export const getImage = (locale: Locale, slug: string) =>

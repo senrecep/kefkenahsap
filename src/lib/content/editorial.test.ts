@@ -1,13 +1,13 @@
 // #150: editorial picks — gallery tag mapping, homepage FAQ assembled from category FAQs, homepage layout fill.
-import { readdirSync, readFileSync } from 'node:fs'
+import { existsSync, readdirSync, readFileSync } from 'node:fs'
 import path from 'node:path'
 import { describe, expect, it } from 'vitest'
 
 import { DEFAULT_SECTIONS } from '@/lib/home/sections'
 import { SEED_CATEGORIES } from '@/seed/categories'
 
-import { appendCategories, coverSwap, type Faq, fillHomepageLayout, resolveFaq, tagKeysFor, type TagDef } from './editorial'
-import { parseCategory, parseCategoryOverlay, parseEditorialPicks, parseEditorialTags } from './schema'
+import { appendCategories, coverSwap, type Faq, fillHomepageLayout, resolveFaq, tagKeysFor, type TagDef, taxonomyTagDefs, type TaxonomyTag } from './editorial'
+import { parseCategory, parseCategoryOverlay, parseEditorialPicks, parseEditorialTags, parseTagTranslations, parseTaxonomyV0 } from './schema'
 
 const names = (n: string) => ({ tr: n, en: n, ru: n, de: n, ar: n })
 const slugs = (s: string) => ({ tr: s, en: s, ru: s, de: s, ar: s })
@@ -245,5 +245,43 @@ describe('seed/editorial', () => {
     }
     const r = resolveFaq(picks.value.faq, sources)
     expect(r.ok && Object.values(r.value).map((items) => items.length)).toEqual([6, 6, 6, 6, 6])
+  })
+})
+
+// #171: the taxonomy v0 tags to load (scripts/seed/tags-type-axis.ts).
+describe('taxonomyTagDefs', () => {
+  const v0 = (axis: TaxonomyTag['axis'], s: string, status?: string): TaxonomyTag => ({ axis, status, name: { tr: `${s} tr`, en: `${s} en` }, slug: { tr: s, en: `${s}-en` } })
+  const tr = (s: string) => ({ ru: [`${s} ru`, `${s}-ru`] as [string, string], de: [`${s} de`, `${s}-de`] as [string, string], ar: [`${s} ar`, `${s}-ar`] as [string, string] })
+  const tags = [v0('type', 'pergola'), v0('setting', 'ticari', 'new'), v0('setting', 'giris', 'new'), v0('setting', 'orman', 'new'), v0('setting', 'bahce', 'existing'), v0('finish', 'lake', 'new'), v0('stage', 'atolye', 'new'), v0('wood', 'iroko', 'existing')]
+  const all = Object.fromEntries(['pergola', 'ticari', 'giris', 'orman', 'bahce', 'lake', 'atolye', 'iroko'].map((s) => [s, tr(s)]))
+
+  it('takes every product type, the approved new settings (ticari, giris) and the new finishes', () => {
+    const r = taxonomyTagDefs(tags, all)
+    expect(r.ok && r.value.map((d) => `${d.axis}:${d.slug.tr}`)).toEqual(['type:pergola', 'setting:ticari', 'setting:giris', 'finish:lake'])
+  })
+
+  it('names and slugs each tag in all five locales: tr/en from v0, ru/de/ar from the translation table', () => {
+    const r = taxonomyTagDefs([v0('type', 'pergola')], all)
+    expect(r.ok && r.value[0]).toEqual({
+      axis: 'type',
+      name: { tr: 'pergola tr', en: 'pergola en', ru: 'pergola ru', de: 'pergola de', ar: 'pergola ar' },
+      slug: { tr: 'pergola', en: 'pergola-en', ru: 'pergola-ru', de: 'pergola-de', ar: 'pergola-ar' },
+    })
+  })
+
+  it('fails on a loaded tag without translations, naming it', () => {
+    const r = taxonomyTagDefs([v0('type', 'pergola'), v0('type', 'bank')], all)
+    expect(!r.ok && r.errors[0]?.description).toContain('bank')
+  })
+
+  it('the committed translation table covers what v0 loads', () => {
+    const v0File = path.resolve(process.cwd(), '../../image-work/taxonomy/v0.json')
+    const table = parseTagTranslations(readFileSync(path.resolve(process.cwd(), 'seed/editorial/tags-type-axis.json'), 'utf8'))
+    expect(table.ok).toBe(true)
+    // v0 lives outside the repo (image-work/); only checked where it is present.
+    if (!table.ok || !existsSync(v0File)) return
+    const taxonomy = parseTaxonomyV0(readFileSync(v0File, 'utf8'))
+    const r = taxonomy.ok ? taxonomyTagDefs(taxonomy.value.tags, table.value.tags) : taxonomy
+    expect(r.ok && r.value.length).toBe(52)
   })
 })
