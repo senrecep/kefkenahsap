@@ -4,7 +4,7 @@ import { SystemDateTimeProvider } from 'tsentials/time'
 
 import { checkBudget } from '@/ai/budget'
 import { aiModel, resolveChain } from '@/ai/models'
-import { TAG_IMAGE_PROMPT_VERSION, TagImageSchema, tagImageSystem } from '@/ai/prompts/tagImage'
+import { knownTypes, TAG_IMAGE_PROMPT_VERSION, TagImageSchema, tagImageSystem, tagImageTypesLine } from '@/ai/prompts/tagImage'
 import { failureUsage, runStructured } from '@/ai/run'
 import { monthUsage } from '@/ai/usage'
 
@@ -33,6 +33,7 @@ export const tagImageTask: TaskConfig<'tagImage'> = {
     const image = new Uint8Array(await res.arrayBuffer())
     const mediaType = (sized?.url ? sized.mimeType : media.mimeType) || 'image/webp'
     const category = typeof media.category === 'object' && media.category ? media.category.name : 'belirtilmemiş'
+    const types = (await payload.find({ collection: 'tags', locale: 'tr', where: { axis: { equals: 'type' } }, sort: 'name', limit: 200, depth: 0, select: { name: true }, req })).docs.map((d) => d.name)
 
     const run = await runStructured({
       chain: resolveChain('tagImage', { tagImage: settings.tagImage }, process.env),
@@ -43,7 +44,7 @@ export const tagImageTask: TaskConfig<'tagImage'> = {
         {
           role: 'user',
           content: [
-            { type: 'text', text: `Kategori: ${category}` },
+            { type: 'text', text: `Kategori: ${category}\n${tagImageTypesLine(types)}` },
             { type: 'file', data: image, mediaType },
           ],
         },
@@ -55,7 +56,9 @@ export const tagImageTask: TaskConfig<'tagImage'> = {
       await payload.create({ collection: 'ai-usage', data: { task: 'tagImage', ok: false, docRef, costUsd: failureUsage(run.errors).costUsd, error: run.errors[0]!.description }, req })
       return { output: { result: run.errors[0]!.code } }
     }
-    const { output, model, costUsd, inputTokens, outputTokens } = run.value
+    const { model, costUsd, inputTokens, outputTokens } = run.value
+    // Only types from the offered list survive, so a suggestion never names a tag that does not exist.
+    const output = { ...run.value.output, tags: { ...run.value.output.tags, type: knownTypes(run.value.output.tags.type, types) } }
     await payload.create({ collection: 'ai-usage', data: { task: 'tagImage', ok: true, model, costUsd, inputTokens, outputTokens, docRef }, req })
 
     const ctx = { skipAi: true }
