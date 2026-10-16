@@ -18,7 +18,8 @@ import { cmsPagePaths, pageMetadata } from '@/lib/seo/page-metadata'
 
 const SLUGS = CMS_PAGES['/hakkimizda']
 // The jobs that show capacity (PRODUCT.md positioning): bridges and piers, then timber structures.
-const WORK_CATEGORIES = ['kopru-ve-iskele', 'sundurma-ve-ahsap-cati'] as const
+// Both slugs of the renamed category (#172): whichever the database holds is used.
+const WORK_CATEGORIES = ['kopru-ve-iskele', 'sundurma-ve-ahsap-cati', 'ahsap-yapilar'] as const
 type Props = { params: Promise<{ locale: string }> }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

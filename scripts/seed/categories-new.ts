@@ -1,41 +1,69 @@
 // #172: creates the categories added after launch (SEED_CATEGORIES with `folder: null`) on an already-seeded database,
-// exactly as seed.ts creates a category: TR + EN name and slug, published. A category that exists (found by its TR
-// slug) is left as is; only an EN name that a died run left empty is filled. So a re-run writes nothing.
-// Their texts (shortDesc/body/FAQ, ru/de/ar name + slug) come from content.ts afterwards, as drafts. Photos and the
-// cover come from the photo loader; the page renders without them.
-// Order on an existing database: categories-rename.ts → categories-new.ts → content.ts.
+// with their committed texts (name, slug, shortDesc, body, FAQ) in all five locales, published in one go: the owner
+// approves the run beforehand, so there is never a name-only page. Fill-safe: a category that exists (found by its TR
+// slug) only gets its empty fields filled, per locale; what the owner edited stays, and a re-run writes nothing.
+// A published category with a newer unpublished draft is skipped and listed (a publish would publish that draft too),
+// and the run exits 1. Photos and the cover come from the photo loader; the page renders without them.
+// Order and caveats: docs/RUNBOOK.md "Category rename and new categories (#172)".
 // --dry-run writes nothing; a non-local database needs --yes; SITE_ENV=production is refused.
 // Run: bun run payload run scripts/seed/categories-new.ts [-- --dry-run | --yes]
+import path from 'node:path'
+import { convertMarkdownToLexical, editorConfigFactory } from '@payloadcms/richtext-lexical'
 import { getPayload } from 'payload'
 
 import config from '@/payload.config'
+import { fillEmpty } from '@/lib/content/merge'
+import type { Config } from '@/payload-types'
 import { SEED_CATEGORIES } from '@/seed/categories'
 
-import { guardTarget } from './i18n'
+import { categoryTexts, guardTarget } from './i18n'
 
+type Locale = Config['locale']
 const dryRun = process.argv.includes('--dry-run')
+const SEED = path.resolve(process.cwd(), 'seed')
 guardTarget(dryRun)
 const payload = await getPayload({ config: await config })
+const editorConfig = await editorConfigFactory.default({ config: payload.config })
+const lexical = (markdown: string) => convertMarkdownToLexical({ editorConfig, markdown })
 const tag = dryRun ? '[dry run] ' : ''
 let writes = 0
+const pending: string[] = []
+const failed: string[] = []
 
 for (const cat of SEED_CATEGORIES.filter((c) => !c.folder)) {
-  const found = (await payload.find({ collection: 'categories', locale: 'tr', draft: true, where: { slug: { equals: cat.slug.tr } }, limit: 1, depth: 0 })).docs[0]
-  const en = { name: cat.name.en, slug: cat.slug.en, _status: 'published' as const }
-  if (!found) {
-    console.log(`${tag}category ${cat.slug.tr}: create (tr + en, published)`)
-    if (!dryRun) {
-      const c = await payload.create({ collection: 'categories', locale: 'tr', data: { name: cat.name.tr, slug: cat.slug.tr, _status: 'published' } })
-      await payload.update({ collection: 'categories', id: c.id, locale: 'en', data: en })
+  const label = `category ${cat.slug.tr}`
+  const texts = categoryTexts(SEED, cat, lexical)
+  const locales = Object.keys(texts) as Locale[]
+  try {
+    const found = (await payload.find({ collection: 'categories', locale: 'tr', draft: true, where: { slug: { equals: cat.slug.tr } }, limit: 1, depth: 0 })).docs[0]
+    if (!found) {
+      console.log(`${tag}${label}: create, published (${locales.join(', ')})`)
+      writes += locales.length
+      if (dryRun) continue
+      const { id } = await payload.create({ collection: 'categories', locale: 'tr', data: { ...texts.tr, _status: 'published' } as never, context: { skipAi: true } })
+      for (const l of locales.filter((x) => x !== 'tr'))
+        await payload.update({ collection: 'categories', id, locale: l, data: { ...texts[l], _status: 'published' } as never, context: { skipAi: true } })
+      continue
     }
-    writes++
-    continue
+    const main = await payload.findByID({ collection: 'categories', id: found.id, depth: 0 })
+    if (main._status === 'published' && found._status !== 'published') {
+      pending.push(label)
+      continue
+    }
+    for (const l of locales) {
+      // The latest version: the one a write builds on.
+      const current = await payload.findByID({ collection: 'categories', id: found.id, locale: l, fallbackLocale: false, draft: true, depth: 0 })
+      const patch = fillEmpty(current as never, texts[l])
+      if (!Object.keys(patch).length) continue
+      console.log(`${tag}${label} [${l}]: ${Object.keys(patch).join(', ')}`)
+      writes++
+      if (!dryRun) await payload.update({ collection: 'categories', id: found.id, locale: l, data: { ...patch, _status: 'published' } as never, context: { skipAi: true } })
+    }
+  } catch (err) {
+    failed.push(label)
+    console.error(`${label}: ${err instanceof Error ? err.message : err}`)
   }
-  const current = await payload.findByID({ collection: 'categories', id: found.id, locale: 'en', fallbackLocale: false, depth: 0 })
-  if (current.name) continue
-  console.log(`${tag}category ${cat.slug.tr}: fill en name/slug`)
-  if (!dryRun) await payload.update({ collection: 'categories', id: found.id, locale: 'en', data: en })
-  writes++
 }
-console.log(`${tag}categories-new: ${writes} write(s)${writes && !dryRun ? ' — now run scripts/seed/content.ts for the texts' : ''}`)
-process.exit(0)
+console.log(`${tag}categories-new: ${writes} locale write(s), ${pending.length} skipped (unpublished draft), ${failed.length} failed`)
+for (const [what, list] of [['unpublished drafts, left as is', pending], ['failed', failed]] as const) if (list.length) console.log(`${what}: ${list.join(' · ')}`)
+process.exit(failed.length || pending.length ? 1 : 0)

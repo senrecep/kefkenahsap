@@ -173,7 +173,7 @@ Tüm metin alanları `localized: true`. Taslak/versiyon (`versions.drafts`) + Li
 
 **Tasarım yönü: Kategori standardı, tam ustalıkla** (impeccable kararı; ayrıntı §11).
 
-- **Header**: logo, Hizmetler (mega menü: 11 kategori + kapak küçük resimleri), Projeler, Galeri, Rehber, Referanslar, İletişim, dil seçici, sağda telefon. Mobilde alt sabit çubuk: **WhatsApp · Ara · Teklif**.
+- **Header**: logo, Hizmetler (mega menü: 16 kategori, #172 ile 11'den 16'ya çıktı; uygulamada iki sütunlu metin listesi, kapak resmi yok), Projeler, Galeri, Rehber, Referanslar, İletişim, dil seçici, sağda telefon. Mobilde alt sabit çubuk: **WhatsApp · Ara · Teklif**.
 - **Ana sayfa** (blok sırası admin'den): Hero (tam genişlik gerçek fotoğraf, H1 değer önerisi, WhatsApp + Teklif butonları, OGL ahşap damarı efekti opsiyonel) → **Öne çıkan galeri** (filtre çipleri: kategori/ahşap/mekan, infinite masonry — "galeri odaklı") → Hizmetler gridi → Öne çıkan projeler → Süreç (keşif → teklif → imalat → montaj → bakım) → Referanslar → Ahşap türleri karşılaştırma (tablo) → SSS → İletişim/harita.
 - **Kategori sayfası**: H1 + cevap-önce giriş paragrafı → masonry galeri (infinite) → açıklama (300–600 kelime, H2'ler soru) → fiyat rehberi (aralık + güncelleme tarihi) → SSS → ilgili projeler + rehberler → hizmet bölgeleri → CTA.
 - **Proje sayfası**: kapak + künye (yer, yıl, ahşap, m², süre, finish) → hikaye → sıralı galeri → müşteri yorumu → benzer projeler.
@@ -335,7 +335,7 @@ F2: Rehber dizini + yazı şablonu (TOC, FAQ, "AI'ya kopyala" butonu, yazar kutu
 
 ## 13.1 Lansman sonrası kullanıcı işleri (not alındı, en sonda yapılacak)
 - [ ] GSC: Domain mülkü doğrulaması (TXT → Cloudflare'e eklenir), GA4 ↔ GSC bağlantısı, Performans (16 ay, sorgu+sayfa) ve Sayfalar raporu CSV dışa aktarımı → `docs/legacy/gsc/`.
-- [ ] GBP: ana kategori (Millwork shop → asıl işi anlatan kategori) + ek kategoriler, 11 hizmet (site kategorileriyle aynı adlar), fotoğraflar, gönderiler, yorum isteme linkinin eski müşterilere gönderimi, website linki → `https://www.kefkenahsap.com/tr?utm_source=gbp&utm_medium=organic`.
+- [ ] GBP: ana kategori (Millwork shop → asıl işi anlatan kategori) + ek kategoriler, 16 hizmet (site kategorileriyle aynı adlar; #172), fotoğraflar, gönderiler, yorum isteme linkinin eski müşterilere gönderimi, website linki → `https://www.kefkenahsap.com/tr?utm_source=gbp&utm_medium=organic`.
 - [ ] Instagram kullanıcı adının marka ile tutarlı hale getirilmesi → siteSettings'te URL güncelle.
 - [ ] Murat Şen'in mesleğe başlama yılının teyidi → siteSettings (o zamana kadar yalnızca "2009'dan beri").
 - [ ] info@kefkenahsap.com (MX/Mailu) — ayrı iş.

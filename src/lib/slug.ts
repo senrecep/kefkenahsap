@@ -2,8 +2,10 @@ import { Result } from 'tsentials/result'
 import { Err } from 'tsentials/errors'
 
 import { routing } from '@/i18n/routing'
+import { CATEGORY_RENAMES } from '@/seed/categories'
 
-// Fixed route segments (TR internal + translated public paths): a category slug may not shadow them.
+// Fixed route segments (TR internal + translated public paths): a category slug may not shadow them. Nor may a new
+// category take an old slug of a renamed one (#172): those URLs redirect to the renamed category.
 export const RESERVED_CATEGORY_SLUGS: ReadonlySet<string> = new Set([
   ...Object.entries(routing.pathnames)
     .flatMap(([internal, p]) => [internal, ...(typeof p === 'string' ? [] : Object.values(p))].map((x) => x.split('/')[1]!))
@@ -11,6 +13,7 @@ export const RESERVED_CATEGORY_SLUGS: ReadonlySet<string> = new Set([
   'admin',
   'api',
   'wp-content',
+  ...CATEGORY_RENAMES.flatMap((r) => Object.values(r.from)),
 ])
 
 const TR_MAP: Record<string, string> = { ç: 'c', ğ: 'g', ı: 'i', ö: 'o', ş: 's', ü: 'u', ß: 'ss' }

@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { Result } from 'tsentials/result'
 
-import { slugify } from './slug'
+import { RESERVED_CATEGORY_SLUGS, slugify } from './slug'
 
 const value = (input: string, max?: number) => {
   const r = slugify(input, max)
@@ -93,5 +93,12 @@ describe('slugify', () => {
     const r = slugify('  !!! ... ')
     expect(Result.isFailure(r)).toBe(true)
     if (Result.isFailure(r)) expect(r.errors[0]?.code).toBe('Slug.Empty')
+  })
+})
+
+describe('RESERVED_CATEGORY_SLUGS (#172)', () => {
+  it('holds the old slugs of a renamed category in every locale', () => {
+    for (const s of ['ahsap-yapilar', 'wooden-structures', 'derevyannye-konstruktsii', 'holzbauten', 'hayakil-khashabiya']) expect(RESERVED_CATEGORY_SLUGS.has(s), s).toBe(true)
+    expect(RESERVED_CATEGORY_SLUGS.has('sundurma-ve-ahsap-cati')).toBe(false)
   })
 })

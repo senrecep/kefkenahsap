@@ -1,11 +1,14 @@
 // #138: shared by the seed loaders for the per-locale "fill only empty fields" write and the local-database guard.
+import { readFileSync } from 'node:fs'
+import path from 'node:path'
 import type { Payload } from 'payload'
 import { Maybe } from 'tsentials/maybe'
 import type { Result } from 'tsentials/result'
 
 import { fillEmpty } from '@/lib/content/merge'
 import { mediaSeedKey, overlayLocales, readOverlay } from '@/lib/content/overlay'
-import { parseMediaMetaOverlay } from '@/lib/content/schema'
+import { parseCategory, parseCategoryOverlay, parseMediaMetaOverlay } from '@/lib/content/schema'
+import type { SeedCategory } from '@/seed/categories'
 import { databaseHost, isLocalHost } from '@/lib/quality/target'
 import type { Config } from '@/payload-types'
 
@@ -107,4 +110,22 @@ export async function seedMediaLocales(payload: Payload, { seedDir, rels, dryRun
     }
   }
   return counts
+}
+
+export type CategoryTexts = Record<Locale, { name: string; slug: string; shortDesc: string; body: unknown; faq: { q: string; a: string }[] }>
+
+/** #172: a seed category's committed texts in every locale (TR/EN file + ru/de/ar overlays), bodies as Lexical. */
+export function categoryTexts(seedDir: string, cat: SeedCategory, lexical: (markdown: string) => unknown): CategoryTexts {
+  const rel = `content/categories/${cat.slug.tr}.json`
+  const content = unwrap(parseCategory(readFileSync(path.join(seedDir, rel), 'utf8')))
+  const overlays = (['ru', 'de', 'ar'] as const).map((l) => {
+    const o = loadOverlay(seedDir, l, rel, parseCategoryOverlay)
+    if (!o) throw new Error(`${l}/${rel} missing`)
+    return [l, { ...o, body: lexical(o.body) }] as const
+  })
+  return {
+    tr: { name: cat.name.tr, slug: cat.slug.tr, ...content.tr, body: lexical(content.tr.body) },
+    en: { name: cat.name.en, slug: cat.slug.en, ...content.en, body: lexical(content.en.body) },
+    ...Object.fromEntries(overlays),
+  } as CategoryTexts
 }

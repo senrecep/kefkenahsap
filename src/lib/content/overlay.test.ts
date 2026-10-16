@@ -39,7 +39,7 @@ describe('overlay slugs', () => {
   const category = (slug: string) => JSON.stringify({ name: 'N', slug, shortDesc: 'S', body: 'B', faq: [] })
 
   it('must be lowercase ASCII words joined by single dashes', () => {
-    expect(parseCategoryOverlay(category('derevyannye-konstruktsii')).ok).toBe(true)
+    expect(parseCategoryOverlay(category('navesy-i-derevyannye-kryshi')).ok).toBe(true)
     for (const slug of ['Derevo', 'a--b', '-a', 'a-', 'дерево', 'a_b', 'a b']) {
       expect(parsePageOverlay(JSON.stringify({ title: 'T', slug, body: 'B' })).ok, slug).toBe(false)
     }

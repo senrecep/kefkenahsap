@@ -29,8 +29,9 @@ type Locale = 'tr' | 'en' | 'ru' | 'de' | 'ar'
 export type CategoryRename = { key: string; from: Record<Locale, string>; to: Record<Locale, string> }
 
 /**
- * Category slugs changed after they were public: every old localized path answers 301 to the new one
- * (src/lib/legacy/resolve.ts), and scripts/seed/categories-rename.ts moves an already-seeded record.
+ * Category slugs changed after they were public. scripts/seed/categories-rename.ts moves an already-seeded record; the
+ * category page redirects between old and new slugs to whichever the database holds (src/lib/category/rename.ts), the
+ * WP page goes to the new TR path (src/lib/legacy/resolve.ts), and the old slugs are reserved (src/lib/slug.ts).
  * `to` must equal SEED_CATEGORIES and the seed/i18n overlays (checked in categories.test.ts).
  */
 export const CATEGORY_RENAMES: CategoryRename[] = [

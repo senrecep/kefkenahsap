@@ -63,18 +63,9 @@ describe('resolveLegacy — renamed categories (#172)', () => {
   it('sends the old WordPress page straight to the new TR slug (one hop)', () => {
     expect(r('/ahsap-yapilar/')).toEqual({ kind: 'redirect', status: 301, location: '/tr/sundurma-ve-ahsap-cati' })
   })
-  it('sends every old localized category path to the new one', () => {
-    expect(r('/tr/ahsap-yapilar')).toEqual({ kind: 'redirect', status: 301, location: '/tr/sundurma-ve-ahsap-cati' })
-    expect(r('/en/wooden-structures')).toEqual({ kind: 'redirect', status: 301, location: '/en/porches-and-timber-roofs' })
-    expect(r('/ru/derevyannye-konstruktsii')).toEqual({ kind: 'redirect', status: 301, location: '/ru/navesy-i-derevyannye-kryshi' })
-    expect(r('/de/holzbauten')).toEqual({ kind: 'redirect', status: 301, location: '/de/vordaecher-und-holzdaecher' })
-    expect(r('/ar/hayakil-khashabiya')).toEqual({ kind: 'redirect', status: 301, location: '/ar/mazallat-wa-asquf-khashabiya' })
-  })
-  it('keeps the query, ignores a trailing slash and case', () => {
-    expect(r('/en/Wooden-Structures/', '?sayfa=2')).toEqual({ kind: 'redirect', status: 301, location: '/en/porches-and-timber-roofs?sayfa=2' })
-  })
-  it('does not redirect an old slug under the wrong locale, nor the new paths', () => {
-    expect(r('/en/ahsap-yapilar')).toEqual({ kind: 'pass' })
+  it('leaves the localized category paths to the category page (it knows which slug is live)', () => {
+    expect(r('/tr/ahsap-yapilar')).toEqual({ kind: 'pass' })
+    expect(r('/en/wooden-structures')).toEqual({ kind: 'pass' })
     expect(r('/tr/sundurma-ve-ahsap-cati')).toEqual({ kind: 'pass' })
   })
   it('still sends old attachment pages under the category to the image page', () => {

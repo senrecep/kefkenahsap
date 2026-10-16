@@ -2,7 +2,7 @@ import { RichText } from '@payloadcms/richtext-lexical/react'
 import { ArrowRight, Phone } from 'lucide-react'
 import type { Metadata } from 'next'
 import { getFormatter, getTranslations, setRequestLocale } from 'next-intl/server'
-import { notFound } from 'next/navigation'
+import { notFound, permanentRedirect } from 'next/navigation'
 import { Maybe } from 'tsentials/maybe'
 
 import { ProjectCard } from '@/components/projects/ProjectCard'
@@ -16,6 +16,7 @@ import { buttonClass } from '@/components/ui/button'
 import { getPathname, Link } from '@/i18n/navigation'
 import type { Locale } from '@/i18n/routing'
 import { galleryLimit, hasRichText, pageFromQuery, priceGuide } from '@/lib/category/category'
+import { renameRedirect } from '@/lib/category/rename'
 import { areaLine } from '@/lib/company'
 import { telLink } from '@/lib/contact'
 import { getCategory, getCategoryGuides } from '@/lib/data/categories'
@@ -29,16 +30,28 @@ import { faqJsonLd, serviceJsonLd } from '@/lib/seo/jsonld'
 import { pageMetadata } from '@/lib/seo/page-metadata'
 
 type Params = Promise<{ locale: Locale; category: string }>
-type Search = Promise<{ sayfa?: string | string[] }>
+type Query = { sayfa?: string | string[] } & Record<string, string | string[] | undefined>
+type Search = Promise<Query>
 
 const categoryPath = (locale: Locale, slug: string) => getPathname({ locale, href: { pathname: '/[category]', params: { category: slug } } })
 
+/** The category, else a permanent redirect to the live slug of a renamed category (#172), else 404. */
+async function categoryOrRedirect(locale: Locale, slug: string, limit: number, query: Query) {
+  const data = await getCategory(locale, slug, limit)
+  if (data) return data
+  const to = await renameRedirect(locale, slug, async (s) => Boolean(await getCategory(locale, s, 1)))
+  if (to) {
+    const qs = new URLSearchParams(Object.entries(query).flatMap(([k, v]) => [v ?? []].flat().map((x) => [k, x]))).toString()
+    permanentRedirect(categoryPath(locale, to) + (qs ? `?${qs}` : ''))
+  }
+  notFound()
+}
+
 export async function generateMetadata({ params, searchParams }: { params: Params; searchParams: Search }): Promise<Metadata> {
-  const [{ locale, category: slug }, { sayfa }] = await Promise.all([params, searchParams])
-  const data = await getCategory(locale, safeDecode(slug), galleryLimit(1) + 1)
-  // notFound() here sets a real 404 status before the page body streams.
-  if (!data) notFound()
-  const { category, locales } = data
+  const [{ locale, category: slug }, query] = await Promise.all([params, searchParams])
+  const { sayfa } = query
+  // notFound()/permanentRedirect() here set a real status before the page body streams.
+  const { category, locales } = await categoryOrRedirect(locale, safeDecode(slug), galleryLimit(1) + 1, query)
   return pageMetadata({
     locale,
     title: category.seo?.title || category.name,
@@ -54,11 +67,11 @@ export default async function CategoryPage({ params, searchParams }: { params: P
   const { locale, category: rawSlug } = await params
   setRequestLocale(locale)
   const slug = safeDecode(rawSlug)
-  const page = pageFromQuery((await searchParams).sayfa)
+  const query = await searchParams
+  const page = pageFromQuery(query.sayfa)
   const limit = galleryLimit(page)
   // One extra photo, so the grid stays full when the header photo comes from the gallery.
-  const data = await getCategory(locale, slug, limit + 1)
-  if (!data) notFound()
+  const data = await categoryOrRedirect(locale, slug, limit + 1, query)
   const { category } = data
   // Header photo: the approved cover, else the first gallery photo (which then leaves the grid).
   const hero = typeof category.cover === 'object' && category.cover?.status === 'approved' ? category.cover : data.photos[0]
