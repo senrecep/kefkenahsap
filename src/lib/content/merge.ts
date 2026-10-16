@@ -31,3 +31,20 @@ export function fillEmpty<T extends Record<string, unknown>>(current: Partial<Re
   }
   return patch
 }
+
+type RenameText = { name: string; slug: string; shortDesc: string }
+
+/**
+ * #172 one locale of a renamed category: name and slug move while they are still the old seeded value (or empty).
+ * The intro is the sentinel for the text: while it is still the old seeded intro, shortDesc/body/faq are replaced as a
+ * block; once the owner edited it, only empty text fields are filled (fillEmpty). A second run writes nothing.
+ */
+export function renamePatch<T extends RenameText & Record<string, unknown>>(current: Partial<Record<keyof T, unknown>>, from: RenameText, to: T): Partial<T> {
+  const moved = (k: keyof RenameText) => isEmpty(current[k]) || current[k] === from[k]
+  const { name, slug, ...text } = to
+  return {
+    ...(moved('name') ? { name } : {}),
+    ...(moved('slug') ? { slug } : {}),
+    ...fillEmpty(current as Partial<Record<keyof typeof text, unknown>>, text, { force: current.shortDesc === from.shortDesc }),
+  } as Partial<T>
+}

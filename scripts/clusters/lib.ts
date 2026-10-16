@@ -23,12 +23,14 @@ export function loadPhotos(): (ClusterPhoto & { folder: string; file: string })[
   }
   const live = JSON.parse(readFileSync(path.resolve(ROOT, 'docs/legacy/live-site-images-ordered.json'), 'utf8')) as Record<string, string[]>
   const byPath = new Map(emb.photos.map((p) => [`${p.folder}/${p.file}`, p]))
-  const photos = SEED_CATEGORIES.flatMap((cat) => {
-    const local = readdirSync(path.join(DATA, cat.folder)).filter((f) => /\.(webp|jpe?g|png)$/i.test(f))
-    return orderForCategory(live[cat.folder] ?? [], local).map((file) => {
-      const e = byPath.get(`${cat.folder}/${file}`)
-      if (!e) throw new Error(`no embedding for ${cat.folder}/${file} (run scripts/clusters/embed.py)`)
-      return { key: `${cat.slug.tr}/${file}`, category: cat.slug.tr, v: e.v, exif: e.exif, nameDay: dayFromFilename(file), folder: cat.folder, file }
+  const photos = SEED_CATEGORIES.flatMap(({ key, folder }) => {
+    if (!folder) return [] // added after launch: no seed photos
+    const local = readdirSync(path.join(DATA, folder)).filter((f) => /\.(webp|jpe?g|png)$/i.test(f))
+    return orderForCategory(live[folder] ?? [], local).map((file) => {
+      const e = byPath.get(`${folder}/${file}`)
+      if (!e) throw new Error(`no embedding for ${folder}/${file} (run scripts/clusters/embed.py)`)
+      // Seed key, not the (possibly renamed) TR slug: it names the seed photos (#172).
+      return { key: `${key}/${file}`, category: key, v: e.v, exif: e.exif, nameDay: dayFromFilename(file), folder, file }
     })
   })
   // EXIF wins; a file-name day counts only when it isn't a bulk WhatsApp transfer day.

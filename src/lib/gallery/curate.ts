@@ -1,5 +1,5 @@
 /** Outdoor work leads the mixed photo lists (Turkish category slugs, the stable identifiers). */
-export const OUTDOOR_FIRST = ['deck-ve-zeminler', 'pergola-ve-kamelyalar', 'korkuluk-ve-cit', 'kopru-ve-iskele', 'ahsap-yapilar', 'ciceklik-ve-oturma-grubu'] as const
+export const OUTDOOR_FIRST = ['deck-ve-zeminler', 'pergola-ve-kamelyalar', 'korkuluk-ve-cit', 'kopru-ve-iskele', 'sundurma-ve-ahsap-cati', 'ciceklik-ve-oturma-grubu'] as const
 
 /** Rank of a category slug: outdoor ones first, then the rest in the saved category order, unknown last. */
 export function categoryRank(savedOrder: readonly string[]) {

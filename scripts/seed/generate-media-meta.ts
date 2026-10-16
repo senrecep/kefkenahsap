@@ -20,10 +20,11 @@ const limit = process.argv.includes('--limit') ? arg('--limit', Infinity) : Infi
 type Job = { cat: (typeof SEED_CATEGORIES)[number]; file: string; out: string }
 const jobs: Job[] = []
 for (const cat of SEED_CATEGORIES) {
+  if (!cat.folder) continue // added after launch: no seed photos
   const dir = path.join(DATA, cat.folder)
-  mkdirSync(path.join(OUT, cat.slug.tr), { recursive: true })
+  mkdirSync(path.join(OUT, cat.key), { recursive: true })
   for (const file of readdirSync(dir).filter((f) => /\.(webp|jpe?g|png)$/i.test(f)).sort()) {
-    const out = path.join(OUT, cat.slug.tr, `${file}.json`)
+    const out = path.join(OUT, cat.key, `${file}.json`)
     if (!existsSync(out)) jobs.push({ cat, file, out })
   }
 }
@@ -34,7 +35,7 @@ let done = 0
 let cost = 0
 let failed = 0
 async function work(job: Job) {
-  const src = path.join(DATA, job.cat.folder, job.file)
+  const src = path.join(DATA, job.cat.folder!, job.file)
   const image = await sharp(readFileSync(src)).rotate().resize({ width: 1024, height: 1024, fit: 'inside' }).jpeg({ quality: 82 }).toBuffer()
   const r = await runStructured({
     chain: CHAIN,
@@ -54,13 +55,13 @@ async function work(job: Job) {
   done++
   if (!r.ok) {
     failed++
-    console.error(`FAIL ${job.cat.slug.tr}/${job.file}: ${r.errors[0]?.description.slice(0, 200)}`)
+    console.error(`FAIL ${job.cat.key}/${job.file}: ${r.errors[0]?.description.slice(0, 200)}`)
     return
   }
   cost += r.value.costUsd ?? 0
   writeFileSync(
     job.out,
-    JSON.stringify({ file: job.file, category: job.cat.slug.tr, model: r.value.model, promptVersion: TAG_IMAGE_PROMPT_VERSION, ...r.value.output }, null, 2),
+    JSON.stringify({ file: job.file, category: job.cat.key, model: r.value.model, promptVersion: TAG_IMAGE_PROMPT_VERSION, ...r.value.output }, null, 2),
   )
   if (done % 20 === 0) console.log(`${done}/${todo.length} done, $${cost.toFixed(3)}, failed ${failed}`)
 }

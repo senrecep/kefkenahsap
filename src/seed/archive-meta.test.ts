@@ -8,7 +8,7 @@ import { TagImageSchema } from '@/ai/prompts/tagImage'
 import { SEED_CATEGORIES } from './categories'
 
 const DIR = path.resolve(process.cwd(), 'seed/media-meta-archive')
-const slugs = new Set(SEED_CATEGORIES.map((c) => c.slug.tr))
+const slugs = new Set(SEED_CATEGORIES.map((c) => c.key))
 const files = existsSync(DIR)
   ? readdirSync(DIR).flatMap((cat) => readdirSync(path.join(DIR, cat)).map((f) => ({ cat, f, meta: JSON.parse(readFileSync(path.join(DIR, cat, f), 'utf8')) })))
   : []

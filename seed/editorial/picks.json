@@ -45,7 +45,7 @@
     }
   ],
   "categoryCovers": {
-    "ahsap-yapilar": {
+    "sundurma-ve-ahsap-cati": {
       "seedKey": "ahsap-yapilar/55-1.webp",
       "reason": "Timber cabin on a stone base with lawn: the whole building reads in a 21:9 crop."
     },
@@ -117,7 +117,7 @@
       "reason": "Maintenance of decks built by another company: widens who can call."
     },
     {
-      "category": "ahsap-yapilar",
+      "category": "sundurma-ve-ahsap-cati",
       "index": 3,
       "reason": "Who does the work: own workshop and own crew, true for every service."
     }

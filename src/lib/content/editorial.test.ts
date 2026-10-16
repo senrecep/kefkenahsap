@@ -197,8 +197,11 @@ describe('seed/editorial', () => {
     if (!picks.ok) throw new Error('picks.json')
     const p = picks.value
     for (const k of [p.hero.seedKey, p.mobileHero.seedKey]) expect(seedKeys.has(k)).toBe(true)
-    for (const [slug, c] of Object.entries(p.categoryCovers)) expect(c.seedKey.startsWith(`${slug}/`) && seedKeys.has(c.seedKey)).toBe(true)
-    expect(Object.keys(p.categoryCovers).sort()).toEqual(SEED_CATEGORIES.map((c) => c.slug.tr).sort())
+    // Keyed by the TR slug; the photo's seedKey starts with the category's seed key (they differ after a rename, #172).
+    const keyOf = new Map(SEED_CATEGORIES.map((c) => [c.slug.tr, c.key]))
+    for (const [slug, c] of Object.entries(p.categoryCovers)) expect(c.seedKey.startsWith(`${keyOf.get(slug)}/`) && seedKeys.has(c.seedKey)).toBe(true)
+    // Categories added after launch (no seed folder) get their cover from the photo loader, not from here.
+    expect(Object.keys(p.categoryCovers).sort()).toEqual(SEED_CATEGORIES.filter((c) => c.folder).map((c) => c.slug.tr).sort())
     for (const f of p.featuredProjects) expect(clusters.find((c) => c.key === f.cluster)?.seedKeys).toContain(f.cover)
   })
 

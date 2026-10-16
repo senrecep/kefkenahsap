@@ -1,4 +1,4 @@
-// #31: idempotent launch seed — 11 categories + 568 approved images in live-page order, with legacy WP URLs.
+// #31: idempotent launch seed — the seed categories (src/seed/categories.ts) + 568 approved images in live-page order, with legacy WP URLs.
 // Writes the legacy media map consumed by the redirect resolver (#32): src/lib/legacy/media-map.json
 // Run: bun run payload run scripts/seed/seed.ts   (needs seed/media-meta from #30; uses the env's DB + S3)
 import { copyFileSync, existsSync, mkdtempSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
@@ -48,7 +48,8 @@ for (const m of wpMedia) {
   const k = fileKey(base(m.source_url))
   wpByKey.set(k, [...(wpByKey.get(k) ?? []), { ...m, page: m.post ? pageSlugById.get(m.post) : undefined }])
 }
-const seededSlugs = new Set(SEED_CATEGORIES.map((c) => c.slug.tr))
+// Legacy WP page slugs = the seed keys (a renamed category keeps its key).
+const seededSlugs = new Set(SEED_CATEGORIES.map((c) => c.key))
 
 const payload = await getPayload({ config: await config })
 console.log(await seedSiteSettings(payload))
@@ -68,7 +69,9 @@ let skipped = 0
 
 for (const [index, cat] of SEED_CATEGORIES.entries()) {
   // Category (published, TR + EN)
-  const existing = await payload.find({ collection: 'categories', locale: 'tr', where: { slug: { equals: cat.slug.tr } }, limit: 1 })
+  // Also by the key: on a database seeded before a rename (scripts/seed/categories-rename.ts not run yet) the record still
+  // has the old slug, and must not get a twin.
+  const existing = await payload.find({ collection: 'categories', locale: 'tr', where: { slug: { in: [cat.slug.tr, cat.key] } }, limit: 1 })
   let categoryId = existing.docs[0]?.id
   if (!categoryId) {
     const c = await payload.create({
@@ -78,25 +81,27 @@ for (const [index, cat] of SEED_CATEGORIES.entries()) {
     })
     categoryId = c.id
     await payload.update({ collection: 'categories', id: c.id, locale: 'en', data: { name: cat.name.en, slug: cat.slug.en, _status: 'published' } })
-    console.log(`category ${index + 1}/11 ${cat.slug.tr} created`)
+    console.log(`category ${index + 1}/${SEED_CATEGORIES.length} ${cat.slug.tr} created`)
   } else {
     // Repair a run that died between the TR create and the EN update.
     const en = await payload.findByID({ collection: 'categories', id: categoryId, locale: 'en', fallbackLocale: false, depth: 0 })
     if (!en.name) await payload.update({ collection: 'categories', id: categoryId, locale: 'en', data: { name: cat.name.en, slug: cat.slug.en, _status: 'published' } })
   }
 
-  const localFiles = readdirSync(path.join(DATA, cat.folder)).filter((f) => /\.(webp|jpe?g|png)$/i.test(f))
-  const ordered = orderForCategory(live[cat.folder] ?? [], localFiles)
+  const folder = cat.folder
+  if (!folder) continue // added after launch: no seed photos
+  const localFiles = readdirSync(path.join(DATA, folder)).filter((f) => /\.(webp|jpe?g|png)$/i.test(f))
+  const ordered = orderForCategory(live[folder] ?? [], localFiles)
 
   for (const file of ordered) {
-    const seedKey = `${cat.slug.tr}/${file}`
-    const metaPath = path.join(META, cat.slug.tr, `${file}.json`)
+    const seedKey = `${cat.key}/${file}`
+    const metaPath = path.join(META, cat.key, `${file}.json`)
     if (!existsSync(metaPath)) throw new Error(`missing metadata: ${metaPath} (run generate-media-meta first)`)
     const meta = JSON.parse(readFileSync(metaPath, 'utf8')) as Meta
 
     // Legacy WP uploads that really are this photo (same name, same shape; see uploadsForPhoto).
-    const { width = 0, height = 0 } = await sharp(path.join(DATA, cat.folder, file)).metadata()
-    const uploads = uploadsForPhoto(wpByKey.get(fileKey(file)) ?? [], { w: width, h: height, category: cat.slug.tr }, seededSlugs)
+    const { width = 0, height = 0 } = await sharp(path.join(DATA, folder, file)).metadata()
+    const uploads = uploadsForPhoto(wpByKey.get(fileKey(file)) ?? [], { w: width, h: height, category: cat.key }, seededSlugs)
     const wp = uploads[0]
 
     const found = await payload.find({ collection: 'media', locale: 'en', fallbackLocale: false, where: { seedKey: { equals: seedKey } }, limit: 1, depth: 0 })
@@ -107,7 +112,7 @@ for (const [index, cat] of SEED_CATEGORIES.entries()) {
       for (let n = 2; usedNames.has(name); n++) name = `${meta.seoFilename}-${n}`
       usedNames.add(name)
       const upload = path.join(tmp, `${name}.webp`)
-      copyFileSync(path.join(DATA, cat.folder, file), upload)
+      copyFileSync(path.join(DATA, folder, file), upload)
       const doc = await payload.create({
         collection: 'media',
         locale: 'tr',
@@ -149,11 +154,11 @@ for (const [index, cat] of SEED_CATEGORIES.entries()) {
 
     for (const m of stored ? uploads : []) {
       const key = `${uploadDir(m.source_url)}/${fileKey(base(m.source_url))}`
-      mediaMap[key] ??= { file: stored!, category: cat.slug.tr }
-      attachmentMap[new URL(m.link).pathname] ??= { file: stored!, category: cat.slug.tr }
+      mediaMap[key] ??= { file: stored!, category: cat.key }
+      attachmentMap[new URL(m.link).pathname] ??= { file: stored!, category: cat.key }
     }
   }
-  console.log(`  ${cat.slug.tr}: ${ordered.length} images`)
+  console.log(`  ${cat.key}: ${ordered.length} images`)
 }
 
 const outDir = path.resolve(ROOT, 'src/lib/legacy')
