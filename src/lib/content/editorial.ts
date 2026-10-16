@@ -11,6 +11,32 @@ export type TagDef = { key: string; axis: 'wood' | 'setting' | 'stage'; name: Lo
 export type Faq = { q: string; a: string }
 export type FaqRef = { category: string; index: number }
 
+export type TaxonomyTag = { axis: 'type' | 'wood' | 'setting' | 'finish' | 'stage'; status?: string; name: { tr: string; en: string }; slug: { tr: string; en: string } }
+export type TagTranslations = Record<string, Record<'ru' | 'de' | 'ar', [name: string, slug: string]>>
+export type TaxonomyTagDef = { axis: TaxonomyTag['axis']; name: Localized; slug: Localized }
+// New setting values the owner approved with the type axis (#171); v0's optional `orman` is left out.
+const NEW_SETTINGS = new Set(['ticari', 'giris'])
+
+/**
+ * #171: the taxonomy v0 tags to load: every product type, the approved new settings and the new finishes, each with
+ * tr/en from v0 and ru/de/ar from the translation table (keyed by tr slug). A loaded tag missing there is a failure.
+ */
+export function taxonomyTagDefs(tags: TaxonomyTag[], translations: TagTranslations): Result<TaxonomyTagDef[]> {
+  const load = tags.filter((t) => t.axis === 'type' || (t.axis === 'setting' && NEW_SETTINGS.has(t.slug.tr)) || (t.axis === 'finish' && t.status === 'new'))
+  const missing = load.filter((t) => !translations[t.slug.tr]).map((t) => t.slug.tr)
+  if (missing.length) return Result.failure(Err.validation('Content.MissingTranslation', `no ru/de/ar names for: ${missing.join(', ')}`))
+  return Result.success(
+    load.map((t) => {
+      const { ru, de, ar } = translations[t.slug.tr]!
+      return {
+        axis: t.axis,
+        name: { ...t.name, ru: ru[0], de: de[0], ar: ar[0] },
+        slug: { ...t.slug, ru: ru[1], de: de[1], ar: ar[1] },
+      }
+    }),
+  )
+}
+
 const norm = (s: string) => s.trim().toLocaleLowerCase('tr')
 
 /** Canonical tag keys for one image's free-form `tags` (seed/media-meta), on each tag's own axis; unmapped values are dropped. */

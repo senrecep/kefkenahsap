@@ -30,8 +30,9 @@ Kuralların tek kaynağı **[CONTENT-STYLE-TR.md](CONTENT-STYLE-TR.md)**: ton, e
 
 Çeviri görevi (`translate`) terim sözlüğünü `aiSettings.glossary`'den alır; boşsa CONTENT-STYLE-TR §8 tablosu esas alınır.
 
-## Görsel etiketleme (`prompts/tagImage.ts`, `tagImage@2`)
-Çıktı: TR/EN başlık (≤80), alt metin (≤125, "fotoğraf" diye başlamaz), açıklama (≤240), ASCII SEO dosya adı, etiketler (ahşap/mekan/finish/aşama), `categoryAgrees`, `confidence`. Filigran yazısı hiçbir metne girmez.
+## Görsel etiketleme (`prompts/tagImage.ts`, `tagImage@3`)
+Çıktı: TR/EN başlık (≤80), alt metin (≤125, "fotoğraf" diye başlamaz), açıklama (≤240), ASCII SEO dosya adı, etiketler (ürün türü/ahşap/mekan/finish/aşama), `categoryAgrees`, `confidence`. Filigran yazısı hiçbir metne girmez.
+Ürün türü (#171): iş, mevcut `type` etiketlerinin TR adlarını kullanıcı mesajında listeler; model en çok 3 tanesini listedeki yazımıyla seçer, emin değilse boş bırakır. Listede olmayan ad öneriden atılır (`knownTypes`). Öneri yalnızca `aiSuggestion`'da durur; görselin etiketlerine otomatik bağlanmaz.
 
 ## Çeviri (`prompts/translate.ts`, `translate@1`)
 Admin'de kategori, proje, sayfa ve yazı düzenleme ekranının yan panelindeki **AI ile çevir** düğmesi (`POST /api/ai/translate`):

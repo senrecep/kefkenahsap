@@ -11,7 +11,7 @@ export const FAKE_TAG_IMAGE = {
   alt: { tr: 'Havuz kenarında açık renkli ahşap deck zemin', en: 'Light timber decking beside a pool' },
   caption: { tr: 'Bahçe havuzu çevresine döşenen deck.', en: 'Decking laid around a garden pool.' },
   seoFilename: 'havuz-kenari-ahsap-deck',
-  tags: { wood: [], setting: ['havuz kenarı'], finish: ['doğal'], stage: ['finished'] },
+  tags: { type: [] as string[], wood: [], setting: ['havuz kenarı'], finish: ['doğal'], stage: ['finished'] },
   categoryAgrees: true,
   confidence: 0.9,
 }
@@ -28,7 +28,12 @@ const userText = (call: FakeCall) =>
     .join('')
 
 const RESPONDERS: Partial<Record<AiTask, Responder>> = {
-  tagImage: () => FAKE_TAG_IMAGE,
+  // #171: answers with the first offered product type plus an invented one, which the job must drop.
+  tagImage: (call) => {
+    const offered = /Ürün türleri: (\[.*\])/.exec(userText(call))?.[1]
+    const first = offered ? (JSON.parse(offered) as string[])[0] : undefined
+    return { ...FAKE_TAG_IMAGE, tags: { ...FAKE_TAG_IMAGE.tags, type: [...(first ? [first] : []), 'Uydurma tür'] } }
+  },
   // "[EN] <source text, trimmed like a real model would>" per segment and target locale: deterministic and easy to assert.
   translate: (call) => {
     const input = JSON.parse(userText(call)) as { targets: string[]; segments: { id: string; text: string }[] }

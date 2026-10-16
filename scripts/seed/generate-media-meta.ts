@@ -6,8 +6,9 @@ import path from 'node:path'
 import sharp from 'sharp'
 
 import { openRouterModel } from '@/ai/models'
-import { TAG_IMAGE_PROMPT_VERSION, TagImageSchema, tagImageSystem } from '@/ai/prompts/tagImage'
+import { knownTypes, TAG_IMAGE_PROMPT_VERSION, TagImageSchema, tagImageSystem, tagImageTypesLine } from '@/ai/prompts/tagImage'
 import { runStructured } from '@/ai/run'
+import { parseTaxonomyV0 } from '@/lib/content/schema'
 import { SEED_CATEGORIES } from '@/seed/categories'
 
 const DATA = process.env.KEFKEN_DATA ?? path.resolve(process.cwd(), '../../kefken-data/Webiste')
@@ -16,6 +17,10 @@ const CHAIN = (process.env.AI_SEED_MODELS ?? 'anthropic/claude-sonnet-5.5,google
 const arg = (k: string, d: number) => Number(process.argv[process.argv.indexOf(k) + 1] || d) || d
 const concurrency = process.argv.includes('--concurrency') ? arg('--concurrency', 6) : 6
 const limit = process.argv.includes('--limit') ? arg('--limit', Infinity) : Infinity
+// #171: product types are offered from the committed taxonomy (the TR names scripts/seed/tags-type-axis.ts creates).
+const taxonomy = parseTaxonomyV0(readFileSync(path.resolve(process.cwd(), 'seed/editorial/taxonomy-v0.json'), 'utf8'))
+if (!taxonomy.ok) throw new Error(taxonomy.errors[0]?.description)
+const TYPES = taxonomy.value.tags.filter((t) => t.axis === 'type').map((t) => t.name.tr)
 
 type Job = { cat: (typeof SEED_CATEGORIES)[number]; file: string; out: string }
 const jobs: Job[] = []
@@ -46,7 +51,7 @@ async function work(job: Job) {
       {
         role: 'user',
         content: [
-          { type: 'text', text: `Kategori: ${job.cat.name.tr} (${job.cat.name.en})` },
+          { type: 'text', text: `Kategori: ${job.cat.name.tr} (${job.cat.name.en})\n${tagImageTypesLine(TYPES)}` },
           { type: 'file', data: new Uint8Array(image), mediaType: 'image/jpeg' },
         ],
       },
@@ -61,7 +66,7 @@ async function work(job: Job) {
   cost += r.value.costUsd ?? 0
   writeFileSync(
     job.out,
-    JSON.stringify({ file: job.file, category: job.cat.key, model: r.value.model, promptVersion: TAG_IMAGE_PROMPT_VERSION, ...r.value.output }, null, 2),
+    JSON.stringify({ file: job.file, category: job.cat.key, model: r.value.model, promptVersion: TAG_IMAGE_PROMPT_VERSION, ...r.value.output, tags: { ...r.value.output.tags, type: knownTypes(r.value.output.tags.type, TYPES) } }, null, 2),
   )
   if (done % 20 === 0) console.log(`${done}/${todo.length} done, $${cost.toFixed(3)}, failed ${failed}`)
 }

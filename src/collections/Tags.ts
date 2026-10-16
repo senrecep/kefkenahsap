@@ -19,6 +19,7 @@ export const Tags: CollectionConfig = {
       required: true,
       label: 'Eksen',
       options: [
+        { label: 'Ürün türü', value: 'type' },
         { label: 'Ahşap türü', value: 'wood' },
         { label: 'Mekan', value: 'setting' },
         { label: 'Renk / finish', value: 'finish' },
