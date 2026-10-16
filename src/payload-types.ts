@@ -220,6 +220,11 @@ export interface Media {
   project?: (number | null) | Project;
   featured?: boolean | null;
   capturedAt?: string | null;
+  watermark?: ('applied' | 'already' | 'none') | null;
+  /**
+   * İşaretlenirse yeni yüklenen dosyaya "kefkenahsap.com" filigranı basılmaz.
+   */
+  skipWatermark?: boolean | null;
   lqip?: string | null;
   seedKey?: string | null;
   dominantColor?: string | null;
@@ -972,6 +977,8 @@ export interface MediaSelect<T extends boolean = true> {
   project?: T;
   featured?: T;
   capturedAt?: T;
+  watermark?: T;
+  skipWatermark?: T;
   lqip?: T;
   seedKey?: T;
   dominantColor?: T;

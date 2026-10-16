@@ -32,12 +32,15 @@ services:
       NEXT_PUBLIC_UMAMI_SRC: ${NEXT_PUBLIC_UMAMI_SRC:-}
       SITE_ENV: ${SITE_ENV:?}
       LEAD_PHOTOS_DIR: /app/data/lead-photos
+      MEDIA_ORIGINALS_DIR: /app/data/media-originals
       SITE_BASIC_AUTH: ${SITE_BASIC_AUTH:-}
       NEXT_PUBLIC_TURNSTILE_SITE_KEY: ${NEXT_PUBLIC_TURNSTILE_SITE_KEY:-}
       TURNSTILE_SECRET_KEY: ${TURNSTILE_SECRET_KEY:-}
     volumes:
       # Lead photos are personal data: private volume, never the CDN bucket (backed up with Dokploy volume backups).
       - lead-photos:/app/data/lead-photos
+      # Clean originals of watermarked admin uploads (#169): private, never served; kept to re-apply or remove the mark.
+      - media-originals:/app/data/media-originals
     depends_on:
       kefken-postgres:
         condition: service_healthy
@@ -216,6 +219,7 @@ services:
 volumes:
   pgdata:
   lead-photos:
+  media-originals:
 
 networks:
   dokploy-network:

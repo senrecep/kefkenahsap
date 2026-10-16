@@ -32,6 +32,9 @@ test('Galeri: upload three photos, reorder (↑, En başa, En sona, fast ↓↓)
       { name: `ucuncu-${run}.jpg`, mimeType: 'image/jpeg', buffer: await photo(60, 160, 110) },
     ])
     await expect(page.getByText('3 fotoğraf yüklendi.')).toBeVisible({ timeout: 90_000 })
+    // #169: admin uploads are stamped with the site watermark.
+    const uploaded = await payload.find({ collection: 'media', where: { filename: { in: [a, b, c] } }, depth: 0 })
+    expect(uploaded.docs.map((d) => d.watermark)).toEqual(['applied', 'applied', 'applied'])
     await expect(page.getByRole('button', { name: 'Onay bekleyenleri göster' })).toBeVisible()
 
     const names = page.locator('.galeri__card .galeri__name')
