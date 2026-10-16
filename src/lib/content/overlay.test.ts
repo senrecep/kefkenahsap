@@ -4,7 +4,7 @@ import { describe, expect, it } from 'vitest'
 import { Maybe } from 'tsentials/maybe'
 
 import { mediaSeedKey, mergeTextFixes, overlayLocales, projectFixPatch, projectYearFix, readOverlay, replacedFieldsPatch, slugFix, textFixUpdate, uniqueSlugs } from './overlay'
-import { parseCategoryOverlay, parseMediaMetaOverlay, parsePageOverlay, parseProjectFixes } from './schema'
+import { parseCategoryOverlay, parseMediaMetaOverlay, parsePageOverlay, parseProjectFixes, parseReplacedTexts } from './schema'
 
 const SEED = path.resolve(process.cwd(), 'tests/fixtures/seed')
 
@@ -202,5 +202,17 @@ describe('slugFix (#156: projects whose ar slug the pre-transliteration hook lef
     expect(slugFix({ slug: null, title: '  ' }, 'ar', 'x')).toEqual(Maybe.none())
     expect(slugFix({ slug: 'kleine-holzterrasse', title: 'Kleine Holzterrasse' }, 'de')).toEqual(Maybe.none())
     expect(slugFix({ slug: null, title: 'Kleine Holzterrasse' }, 'de')).toEqual(Maybe.some('kleine-holzterrasse'))
+  })
+})
+
+describe('parseReplacedTexts', () => {
+  const file = (locale: string) => JSON.stringify({ categories: {}, media: { 'media-meta-archive/a/1.webp.json': { [locale]: { alt: 'Eski' } } }, siteSettings: {} })
+
+  it('accepts the five site locales', () => {
+    for (const l of ['tr', 'en', 'ru', 'de', 'ar']) expect(parseReplacedTexts(file(l)).ok).toBe(true)
+  })
+
+  it('rejects any other locale key, so a typo cannot silently skip a field', () => {
+    for (const l of ['fr', 'RU', 'ru-RU']) expect(parseReplacedTexts(file(l)).ok).toBe(false)
   })
 })

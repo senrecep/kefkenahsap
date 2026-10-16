@@ -1,6 +1,6 @@
-// #180: applies the language review of the 2026-10-16 texts to an already-seeded database: the six category texts (#174)
-// and the ru/de/ar archive photo texts (#176). seed/i18n/text-fixes-180.json holds the replaced (old) texts; the new ones
-// are the committed seed. A field is written only while its stored value is still exactly the old text (owner edits and
+// #180: applies the language review of the 2026-10-16 texts to an already-seeded database: the six category texts (#172)
+// and the ru/de/ar archive photo texts (#175), plus the AR default meta description (site settings, #140).
+// seed/i18n/text-fixes-180.json holds the replaced (old) texts; the new ones are the committed seed. A field is written only while its stored value is still exactly the old text (owner edits and
 // already fixed fields stay), so a re-run writes nothing.
 // Categories are written like categories-new.ts: the latest version is read, the write is published; a published category
 // with a newer unpublished draft is skipped and listed (publishing would publish that draft too), and the run exits 1.
@@ -14,7 +14,7 @@ import { getPayload } from 'payload'
 
 import config from '@/payload.config'
 import { mediaSeedKey, replacedFieldsPatch } from '@/lib/content/overlay'
-import { parseMediaMetaOverlay, parseReplacedTexts } from '@/lib/content/schema'
+import { parseMediaMetaOverlay, parseReplacedTexts, parseSiteSettingsOverlay } from '@/lib/content/schema'
 import type { Config } from '@/payload-types'
 import { SEED_CATEGORIES } from '@/seed/categories'
 
@@ -95,6 +95,25 @@ for (const [rel, byLocale] of Object.entries(replaced.media)) {
     // One bad photo must not stop the rest; listed below, and the run exits 1.
     failed.push(rel)
     console.error(`media ${rel}: ${err instanceof Error ? err.message : err}`)
+  }
+}
+
+// Site settings: only the overlay locales' defaultDescription (the field the review touched).
+for (const [locale, old] of Object.entries(replaced.siteSettings) as [Locale, Record<string, string>][]) {
+  try {
+    const next = loadOverlay(SEED, locale, 'site-settings.json', parseSiteSettingsOverlay)
+    if (!next) throw new Error(`${locale}/site-settings.json missing`)
+    const current = await payload.findGlobal({ slug: 'siteSettings', locale, fallbackLocale: false, depth: 0 })
+    const patch = replacedFieldsPatch(current as never, old, next)
+    tally(old, patch)
+    if (!Object.keys(patch).length) console.log(`site settings [${locale}]: kept ${Object.keys(old).join(', ')} (edited or already fixed)`)
+    else {
+      console.log(`${tag}site settings [${locale}]: ${Object.keys(patch).join(', ')}`)
+      if (!dryRun) await payload.updateGlobal({ slug: 'siteSettings', locale, data: patch as never })
+    }
+  } catch (err) {
+    failed.push(`site settings ${locale}`)
+    console.error(`site settings [${locale}]: ${err instanceof Error ? err.message : err}`)
   }
 }
 
