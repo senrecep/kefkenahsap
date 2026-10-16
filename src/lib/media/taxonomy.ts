@@ -10,6 +10,8 @@ const SINGLE: ReadonlySet<Axis> = new Set(['wood', 'finish', 'stage'])
 // Facts and tagImage name stages in English; the tags are Turkish. A finished photo has no stage tag; a workshop photo
 // shows the work in progress.
 const STAGE_SLUG: Record<string, string | null> = { before: 'oncesi', after: 'sonrasi', process: 'uygulama-asamasi', workshop: 'uygulama-asamasi', detail: 'detay', finished: null }
+// Owner decision (2026-10-16): the frequent roof-frame facts get their own type tag.
+const TYPE_ALIAS: Record<string, string> = { 'other:cati-kirisi': 'cati-iskeleti', 'other:roof-truss-frame': 'cati-iskeleti' }
 const norm = (s: string) => s.trim().toLocaleLowerCase('tr')
 
 /**
@@ -25,7 +27,7 @@ export function tagIdsToAdd(facts: Values, meta: Values | undefined, tags: TagRe
     const values = facts[axis]?.length ? facts[axis] : (meta?.[axis] ?? [])
     if (SINGLE.has(axis) && current.some((t) => t.axis === axis)) continue
     for (const value of values) {
-      const key = axis === 'stage' && value in STAGE_SLUG ? STAGE_SLUG[value] : value
+      const key = axis === 'stage' && Object.hasOwn(STAGE_SLUG, value) ? STAGE_SLUG[value] : axis === 'type' && Object.hasOwn(TYPE_ALIAS, value) ? TYPE_ALIAS[value] : value
       if (key === null) continue
       const tag = tags.find((t) => t.axis === axis && (t.slug === key || norm(t.name) === norm(key!)))
       if (!tag) unmapped.push(`${axis}:${value}`)
@@ -47,6 +49,13 @@ export const moveAction = (current: number | undefined, from: number, to: number
 export const remedyDue = (current: { filename?: string | null; filesize?: number | null }, planned: { filename: string; filesize: number }) =>
   current.filename === planned.filename && current.filesize === planned.filesize
 
+/**
+ * An unstamped replacement that died between its upload (skipWatermark leaves 'none') and the follow-up write of
+ * 'already': the record already holds a file of the source's size. Stamped ones end 'applied' in the upload itself.
+ */
+export const remedyUnfinished = (current: { watermark?: string | null; width?: number | null; height?: number | null }, source: { width: number; height: number }, stamp: boolean) =>
+  !stamp && current.watermark === 'none' && current.width === source.width && current.height === source.height
+
 /** Category cover: a good, landscape photo at least 1280 px wide; live photos first, then the widest, then the lowest id. */
 export function pickCover(candidates: { id: number; width: number; height: number; live: boolean; quality?: string }[]): number | undefined {
   return candidates
@@ -58,14 +67,18 @@ export function pickCover(candidates: { id: number; width: number; height: numbe
 const UPLOAD_KEYS = new Set(['cover', 'gallery', 'image', 'mobileImage', 'logo', 'ogImage', 'defaultOgImage'])
 const idOf = (v: unknown) => (typeof v === 'number' ? v : typeof v === 'object' && v && typeof (v as { id?: unknown }).id === 'number' ? (v as { id: number }).id : undefined)
 
-/** The media ids a document shows (its upload fields, at any depth and in every locale). */
+/** The media ids a document shows (its upload fields and rich-text upload nodes, at any depth and in every locale). */
 export function mediaRefs(doc: unknown, into = new Set<number>()): Set<number> {
   if (Array.isArray(doc)) for (const v of doc) mediaRefs(v, into)
-  else if (doc && typeof doc === 'object')
+  else if (doc && typeof doc === 'object') {
+    // A Lexical upload node: an image placed in rich text.
+    const node = doc as { type?: unknown; relationTo?: unknown; value?: unknown }
+    if (node.type === 'upload' && node.relationTo === 'media' && idOf(node.value) !== undefined) into.add(idOf(node.value)!)
     for (const [k, v] of Object.entries(doc)) {
       if (UPLOAD_KEYS.has(k)) for (const x of Array.isArray(v) ? v : [v]) if (idOf(x) !== undefined) into.add(idOf(x)!)
       mediaRefs(v, into)
     }
+  }
   return into
 }
 

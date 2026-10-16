@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { duplicateToHide, importStatus, mediaRefs, moveAction, pickCover, remedyDue, tagIdsToAdd, type TagRef } from './taxonomy'
+import { duplicateToHide, importStatus, mediaRefs, moveAction, pickCover, remedyDue, remedyUnfinished, tagIdsToAdd, type TagRef } from './taxonomy'
 
 const TAGS: TagRef[] = [
   { id: 1, axis: 'type', slug: 'deck', name: 'Deck' },
@@ -31,6 +31,13 @@ describe('tagIdsToAdd', () => {
     const r = tagIdsToAdd({ finish: ['dogal'] }, { finish: ['vernik / cila'], setting: ['TERAS', 'dış mekân'], stage: ['detail'] }, TAGS, [])
     expect(r.add).toEqual([4, 6, 10])
     expect(r.unmapped).toEqual(['setting:dış mekân'])
+  })
+
+  it('maps the roof-frame facts (other:cati-kirisi, other:roof-truss-frame) to the çatı iskeleti type tag', () => {
+    const tags: TagRef[] = [...TAGS, { id: 11, axis: 'type', slug: 'cati-iskeleti', name: 'Çatı iskeleti / kiriş' }]
+    const r = tagIdsToAdd({ type: ['other:cati-kirisi', 'other:roof-truss-frame'] }, undefined, tags, [])
+    expect(r.add).toEqual([11])
+    expect(r.unmapped).toEqual([])
   })
 
   it('lists values without a tag, including other:* types', () => {
@@ -65,6 +72,18 @@ describe('moveAction', () => {
   })
 })
 
+describe('remedyUnfinished', () => {
+  const source = { width: 2048, height: 1536 }
+  it('spots an unstamped replacement whose watermark write did not happen (new file in, watermark none)', () => {
+    expect(remedyUnfinished({ watermark: 'none', width: 2048, height: 1536 }, source, false)).toBe(true)
+  })
+  it('leaves a finished one, a stamped one and a file of other size alone', () => {
+    expect(remedyUnfinished({ watermark: 'already', width: 2048, height: 1536 }, source, false)).toBe(false)
+    expect(remedyUnfinished({ watermark: 'none', width: 2048, height: 1536 }, source, true)).toBe(false)
+    expect(remedyUnfinished({ watermark: 'none', width: 960, height: 720 }, source, false)).toBe(false)
+  })
+})
+
 describe('remedyDue', () => {
   const planned = { filename: 'a.webp', filesize: 1000 }
   it('replaces only while the stored file is still the planned one', () => {
@@ -91,6 +110,11 @@ describe('mediaRefs', () => {
   it('collects the media ids of upload fields anywhere in a depth-0 document, in every locale', () => {
     const doc = { id: 9, cover: 4, gallery: [5, 6], hero: { image: 7, mobileImage: null }, seo: { tr: { ogImage: 8 }, en: { ogImage: 8 } }, sort: 3, layout: [{ blockType: 'hero', image: { id: 11 } }] }
     expect([...mediaRefs(doc)].sort((a, b) => a - b)).toEqual([4, 5, 6, 7, 8, 11])
+  })
+
+  it('collects images placed in rich text (Lexical upload nodes), not other uploads', () => {
+    const body = { root: { children: [{ type: 'paragraph', children: [] }, { type: 'upload', relationTo: 'media', value: 12 }, { type: 'upload', relationTo: 'media', value: { id: 13 } }, { type: 'upload', relationTo: 'lead-photos', value: 14 }] } }
+    expect([...mediaRefs({ tr: { body } })].sort((a, b) => a - b)).toEqual([12, 13])
   })
 })
 

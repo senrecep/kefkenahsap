@@ -5,7 +5,10 @@
 // - A fully clean WP original (`stamp`): the upload hook stamps it once ('applied', the clean original kept privately).
 // A file is replaced only while the record still holds the exact file the plan was made from (filename + size), so a
 // re-run, or a file the owner has replaced since, is left alone and listed. After each replacement the stored file and
-// every size are fetched back from the CDN bucket and checked.
+// every size are fetched back from the CDN bucket and checked; one that fails the check is listed as "replaced but
+// unverified" (a re-run does not replace it again). An unstamped replacement whose 'already' write did not happen
+// (watermark 'none', the source's size) is finished on the next run. A stamp keeps the clean original in
+// MEDIA_ORIGINALS_DIR, which a run with a stamp due must set explicitly (docs/RUNBOOK.md).
 // --dry-run writes nothing; a non-local database needs --yes; SITE_ENV=production is refused.
 // KEFKEN_WORKSPACE = the folder holding kefken-data/ and image-work/ (default ../..).
 // Run: bun run payload run scripts/seed/taxonomy-remedy.ts [-- --dry-run | --yes]
@@ -16,18 +19,21 @@ import { getPayload } from 'payload'
 import sharp from 'sharp'
 
 import config from '@/payload.config'
-import { remedyDue } from '@/lib/media/taxonomy'
+import { remedyDue, remedyUnfinished } from '@/lib/media/taxonomy'
 import { mediaFileURL } from '@/lib/media/url'
 
 import { seedCtx } from './archive-media'
 import { guardTarget } from './i18n'
-import { dry, dryRun, finish, loadPlan, mediaBySeedKey, WORKSPACE } from './taxonomy'
+import { dry, dryRun, finish, loadPlan, mediaBySeedKey, requireDir, requireOriginalsDir, WORKSPACE } from './taxonomy'
+
+requireDir('KEFKEN_WORKSPACE', WORKSPACE)
 
 const plan = loadPlan()
 guardTarget(dryRun)
 if (!dryRun && !process.env.MEDIA_PUBLIC_URL) throw new Error('MEDIA_PUBLIC_URL is not set: cannot fetch the replaced files to verify them')
 const payload = await getPayload({ config: await config })
-const media = await mediaBySeedKey(payload, { filename: true, filesize: true })
+const media = await mediaBySeedKey(payload, { filename: true, filesize: true, watermark: true, width: true, height: true })
+requireOriginalsDir(plan.remedies.filter((r) => r.stamp && media.get(r.seedKey) && remedyDue(media.get(r.seedKey)!, r.current)).length)
 const tmp = mkdtempSync(path.join(os.tmpdir(), 'kefken-remedy-'))
 
 /** Every stored file of the record (main + sizes) is served with the recorded dimensions. */
@@ -43,53 +49,89 @@ async function verifyServed(id: number) {
   return { doc, files: files.length }
 }
 
-const counts = { replaced: 0, stamped: 0 }
+/** Source size as stored: EXIF orientation 5–8 is stored rotated (width and height swap). */
+async function storedSize(src: string) {
+  const { width = 0, height = 0, orientation } = await sharp(src).metadata()
+  return (orientation ?? 1) >= 5 ? { width: height, height: width } : { width, height }
+}
+
+/** Every file served, and the record holds the source's size with the expected watermark state. */
+async function verifyReplaced(id: number, size: { width: number; height: number }, stamp: boolean) {
+  const { doc, files } = await verifyServed(id)
+  const expected = stamp ? 'applied' : 'already'
+  if (doc.watermark !== expected) throw new Error(`watermark ${doc.watermark}, expected ${expected}`)
+  if (doc.width !== size.width || doc.height !== size.height) throw new Error(`stored ${doc.width}×${doc.height}, source ${size.width}×${size.height}`)
+  return `${doc.filename} (${doc.width}×${doc.height}, ${files} files, ${doc.watermark})`
+}
+
+const counts = { replaced: 0, stamped: 0, finished: 0 }
 const notPlanned: string[] = []
 const replaced: string[] = []
+const unverified: string[] = []
 const failed: string[] = []
 try {
   for (const r of plan.remedies) {
     const doc = media.get(r.seedKey)
-    if (!doc || !remedyDue({ filename: doc.filename, filesize: doc.filesize }, r.current)) {
-      notPlanned.push(`${r.seedKey} (${doc ? `${doc.filename}, ${doc.filesize} B` : 'not in this database'})`)
+    const src = path.resolve(WORKSPACE, r.source)
+    if (!existsSync(src)) {
+      failed.push(`${r.seedKey}: missing source ${src}`)
       continue
     }
-    try {
-      const src = path.resolve(WORKSPACE, r.source)
-      if (!existsSync(src)) throw new Error(`missing source ${src}`)
-      console.log(`${dry}${r.seedKey}: ${r.source}${r.stamp ? ' (stamped once)' : ' (already marked, no stamp)'}`)
-      if (dryRun) {
-        counts.replaced++
-        if (r.stamp) counts.stamped++
-        continue
+    const size = await storedSize(src)
+    // Recovery: replaced by an earlier run that died before writing 'already' back.
+    if (doc && remedyUnfinished(doc, size, r.stamp)) {
+      try {
+        console.log(`${dry}${r.seedKey}: replaced earlier, watermark none → already`)
+        if (!dryRun) {
+          await payload.update({ collection: 'media', id: doc.id, data: { watermark: 'already' }, context: seedCtx() })
+          replaced.push(`${r.seedKey}: finished, ${await verifyReplaced(doc.id, size, false)}`)
+        }
+        counts.finished++
+      } catch (err) {
+        unverified.push(`${r.seedKey}: ${err instanceof Error ? err.message : err}`)
       }
-      const upload = path.join(tmp, `${path.parse(doc.filename!).name}${path.extname(src).toLowerCase()}`)
-      copyFileSync(src, upload)
-      const { width, height, orientation } = await sharp(upload).metadata()
-      await payload.update({ collection: 'media', id: doc.id, filePath: upload, data: r.stamp ? {} : { skipWatermark: true }, context: seedCtx() })
-      if (!r.stamp) await payload.update({ collection: 'media', id: doc.id, data: { watermark: 'already' }, context: seedCtx() })
-      const { doc: after, files } = await verifyServed(doc.id)
-      const expected = r.stamp ? 'applied' : 'already'
-      if (after.watermark !== expected) throw new Error(`watermark ${after.watermark}, expected ${expected}`)
-      // EXIF orientation 5–8 is stored rotated (width and height swap).
-      const [w, h] = (orientation ?? 1) >= 5 ? [height, width] : [width, height]
-      if (after.width !== w || after.height !== h) throw new Error(`stored ${after.width}×${after.height}, source ${w}×${h}`)
-      replaced.push(`${r.seedKey}: ${doc.filename} → ${after.filename} (${after.width}×${after.height}, ${files} files, ${after.watermark})`)
+      continue
+    }
+    if (!doc || !remedyDue({ filename: doc.filename, filesize: doc.filesize }, r.current)) {
+      notPlanned.push(`${r.seedKey} (${doc ? `${doc.filename}, ${doc.filesize} B, ${doc.watermark}` : 'not in this database'})`)
+      continue
+    }
+    console.log(`${dry}${r.seedKey}: ${r.source}${r.stamp ? ' (stamped once)' : ' (already marked, no stamp)'}`)
+    if (dryRun) {
       counts.replaced++
       if (r.stamp) counts.stamped++
+      continue
+    }
+    const upload = path.join(tmp, `${path.parse(doc.filename!).name}${path.extname(src).toLowerCase()}`)
+    try {
+      copyFileSync(src, upload)
+      await payload.update({ collection: 'media', id: doc.id, filePath: upload, data: r.stamp ? {} : { skipWatermark: true }, context: seedCtx() })
+      if (!r.stamp) await payload.update({ collection: 'media', id: doc.id, data: { watermark: 'already' }, context: seedCtx() })
     } catch (err) {
       failed.push(r.seedKey)
       console.error(`${r.seedKey}: ${err instanceof Error ? err.message : err}`)
+      continue
+    } finally {
+      rmSync(upload, { force: true })
+    }
+    counts.replaced++
+    if (r.stamp) counts.stamped++
+    try {
+      replaced.push(`${r.seedKey}: ${doc.filename} → ${await verifyReplaced(doc.id, size, r.stamp)}`)
+    } catch (err) {
+      // The new file is in; a re-run will not replace it again (it is no longer the planned file), so it is listed apart.
+      unverified.push(`${r.seedKey}: ${err instanceof Error ? err.message : err}`)
     }
   }
 } finally {
   rmSync(tmp, { recursive: true, force: true })
 }
 finish(
-  `taxonomy remedy: ${counts.replaced} replaced (${counts.stamped} stamped once), ${notPlanned.length} not the planned file (of ${plan.remedies.length})`,
+  `taxonomy remedy: ${counts.replaced} replaced (${counts.stamped} stamped once), ${counts.finished} earlier replacement(s) finished, ${unverified.length} replaced but unverified, ${notPlanned.length} not the planned file (of ${plan.remedies.length})`,
   [
     ['replaced', replaced],
+    ['replaced but unverified (check these by hand)', unverified],
     ['not the planned file (replaced already, or by the owner), left as is', notPlanned],
   ],
-  failed,
+  [...failed, ...unverified.map((u) => u.split(':')[0]!)],
 )

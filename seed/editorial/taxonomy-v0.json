@@ -2,6 +2,7 @@
   "note": "#171: subset of image-work/taxonomy/v0.json (tags: axis, status, name, slug) vendored so the loader and tests run anywhere. Refresh: jq from v0.json.",
   "version": "v0",
   "tags": [
+    {"axis": "type", "name": {"tr": "Çatı iskeleti / kiriş", "en": "Roof frame / beams"}, "slug": {"tr": "cati-iskeleti", "en": "roof-frame-beams"}},
     {"axis": "type", "name": {"tr": "Köpek kulübesi", "en": "Dog house"}, "slug": {"tr": "kopek-kulubesi", "en": "dog-house"}},
     {"axis": "type", "name": {"tr": "Bahçe kulübesi / depo", "en": "Garden shed"}, "slug": {"tr": "bahce-kulubesi", "en": "garden-shed"}},
     {"axis": "type", "name": {"tr": "Çocuk oyun evi", "en": "Children's playhouse"}, "slug": {"tr": "oyun-evi", "en": "children-s-playhouse"}},

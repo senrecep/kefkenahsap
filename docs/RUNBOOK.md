@@ -82,7 +82,7 @@ Translations for the locales other than TR/EN live in `seed/i18n/<locale>/`, whi
 - `media-text-fixes` changes a TR/EN field only while it is still exactly the seeded text. Owner edits are kept.
 - `project-story-fixes` (#148) rewrites project titles/stories in every locale only while they are still exactly the old seeded text, and fills `year` only while empty. A published project gets a new published version with just those fields; one with unpublished draft edits is skipped and listed. Run it before re-running `project-drafts.ts` (that script finds projects by the new TR title).
 - `content.ts` checks the overlay slugs before writing. A slug used twice in a locale, or already used by another document, stops the run and names the file.
-- Every script prints `host:port/database` first and refuses `SITE_ENV=production`. A non-local host needs `--yes`. A tunnelled DB reads as `localhost`, so check the database name and run `--dry-run` first where there is one.
+- Every script prints `host:port/database` first and refuses `SITE_ENV=production`. A non-local host needs `--yes`. A tunnelled DB reads as `localhost`, so check the database name and run `--dry-run` first where there is one. `SEED_REMOTE=1` (set by the dev runner) marks the database remote even when it reads as `localhost`, so `--yes` is required.
 - `media-locales` and `media-text-fixes` carry on past a failing photo, list its seedKey, and exit 1.
 
 ```bash
@@ -145,6 +145,46 @@ Every script exits 0 on a clean run. A re-run writes nothing.
 To make the change live at once, redeploy, or save the category once in the admin (that save runs inside Next and invalidates the tags).
 
 After the rename, every old localized path (`/tr/ahsap-yapilar`, `/en/wooden-structures`, `/ru/derevyannye-konstruktsii`, `/de/holzbauten`, `/ar/hayakil-khashabiya`) answers 308 (permanent) to the new path with the query kept. Before it, the new paths answer 307 (temporary) to the old ones. The check for which slug exists is never cached, so the two can never redirect to each other. The category page does this on a miss (`src/lib/category/rename.ts`). The WordPress `/ahsap-yapilar/` answers 301 to `/tr/sundurma-ve-ahsap-cati`. The old slugs are reserved: no other category may take them.
+
+### Photo taxonomy load (#175)
+
+Loads the owner-approved photo taxonomy (`seed/taxonomy/photo-plan.json`): 156 live photos are moved to their new category, 2,686 archive photos are imported (all published except 20 the tagger doubted), product-type and other tags are added, 43 files with stacked watermarks are replaced, covers are set for the new categories, and same-category duplicates are hidden (set to `pending`, never deleted). Every script only adds, or changes state that is still exactly what the plan expects. Anything else is listed and left alone. A re-run writes nothing. Each script exits 1 if anything failed, and supports `--dry-run`. A remote database (or `SEED_REMOTE=1`) needs `--yes`.
+
+Run this after the #172 steps above. The scripts run on the laptop against the dev database and bucket (the dev runner passes `SEED_REMOTE=1`, `MEDIA_ORIGINALS_DIR` and `KEFKEN_*`). They need:
+- `KEFKEN_ARCHIVE`: the `kefken-data/Kaliteli` folder.
+- `KEFKEN_WORKSPACE`: the folder holding `kefken-data/` and `image-work/`.
+- `KEFKEN_CONCURRENCY`: uploads at once, default 4.
+- `MEDIA_ORIGINALS_DIR`: required whenever a stamp is due (4 imports, 8 remedies). The upload hook keeps the clean original of each stamped file there. Run it on the laptop with a **local staging folder**, then copy that folder into the app's `media-originals` volume. Without the copy, the dev app has no clean original for those 12 files.
+
+```bash
+export STAGE=$HOME/kefken-media-originals-175 && mkdir -p "$STAGE"
+export MEDIA_ORIGINALS_DIR=$STAGE KEFKEN_ARCHIVE=<…>/kefken-data/Kaliteli KEFKEN_WORKSPACE=<…>/kefkenahsap-workspace
+STEPS="taxonomy-reassign taxonomy-import taxonomy-tags taxonomy-remedy taxonomy-covers editorial-swaps taxonomy-dedup"
+# 1) every dry run first, and read the lists (a later step's dry run cannot see what an earlier step will write)
+for s in $STEPS; do bun run payload run scripts/seed/$s.ts -- --dry-run || break; done
+# 2) then the real runs, in order
+for s in $STEPS; do bun run payload run scripts/seed/$s.ts -- --yes || break; done
+# clean originals → the dev app's volume (compose: MEDIA_ORIGINALS_DIR=/app/data/media-originals)
+ls "$STAGE" | wc -l                                                    # 12 on a first run
+ssh senrecep 'rm -rf /tmp/media-originals-175 && mkdir -p /tmp/media-originals-175'
+scp "$STAGE"/* senrecep:/tmp/media-originals-175/
+ssh senrecep 'C=compose-hack-multi-byte-system-ysiihc-app-1 D=/app/data/media-originals
+  docker cp /tmp/media-originals-175/. $C:$D/ &&
+  docker exec -u 0 $C sh -c "chown -R \$(stat -c %u:%g $D) $D" &&
+  for f in $(ls /tmp/media-originals-175); do docker exec $C test -s $D/$f || echo "MISSING $f"; done &&
+  rm -r /tmp/media-originals-175'
+# last: restart the app so its page cache (unstable_cache, 1 h) drops the old answers
+ssh senrecep 'docker restart compose-hack-multi-byte-system-ysiihc-app-1'
+```
+
+Order matters:
+- `taxonomy-tags` runs after the import, so the new photos get their tags on the first pass.
+- `taxonomy-dedup` runs last, so it sees the final covers. A copy that a project, cover, homepage or rich-text body uses is never hidden; the other copy is hidden instead, or neither when both are in use.
+
+Import and remedy:
+- Each photo is created `pending`, and its final status is written only after its EN texts are in and its stored file has been checked. A run that dies half-way is resumed by the next run.
+- A replaced file that fails the check is listed as "replaced but unverified". Check those by hand.
+- Finish with the app restart above, as merge-load does (`docker restart` of the app). The scripts cannot invalidate the running app's cache.
 
 ## Observability
 

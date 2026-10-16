@@ -59,7 +59,7 @@ export async function fillLocales(
 
 /**
  * Prints the target database (host:port/name). Exits with SITE_ENV=production, and for a non-local host unless the run
- * is a --dry-run or --yes confirms it. A tunnelled database reads as localhost: check the printed name.
+ * is a --dry-run or --yes confirms it. A tunnelled database reads as localhost: SEED_REMOTE=1 marks it remote.
  */
 export function guardTarget(dryRun: boolean) {
   const host = databaseHost(process.env.DATABASE_URL)
@@ -70,7 +70,8 @@ export function guardTarget(dryRun: boolean) {
     console.error('Refusing to run with SITE_ENV=production.')
     process.exit(1)
   }
-  if (!isLocalHost(host) && !dryRun && !process.argv.includes('--yes')) {
+  // SEED_REMOTE=1 (set by the dev runner): the database is remote even when tunnelled to localhost.
+  if ((!isLocalHost(host) || process.env.SEED_REMOTE === '1') && !dryRun && !process.argv.includes('--yes')) {
     console.error('Not a local database: check the host above, then re-run with --yes (or --dry-run first).')
     process.exit(1)
   }

@@ -1,11 +1,14 @@
 // #175: loads the Kaliteli archive photos of the owner-approved taxonomy (photo-plan.json `imports`, 2,686) with their
 // tagImage metadata from seed/media-meta-archive (+ ru/de/ar overlays from seed/i18n). Owner decision (2026-10-16): all
 // published, except the photos the tagger doubted (category disagrees, confidence ≤ 0.3), which stay `pending`.
-// - A photo not in the database is created (archive-media.ts, keyed on its archive path) in its plan category. Files
-//   carry the pipeline's mark already ('already'); the few the plan marks `stamp` are stamped once by the upload hook.
-// - A photo already there (archive.ts made the first 210 pending in their old folder's category) moves to its plan
-//   category while it is still in that folder's category, and a pending one is approved; a hidden one, or one the owner
-//   filed elsewhere, is left as is and listed.
+// - A photo not in the database is created (archive-media.ts, keyed on its archive path) in its plan category, as
+//   `pending` until its EN texts are in and the stored file is checked; its status is written last. Files carry the
+//   pipeline's mark already ('already'); the few the plan marks `stamp` are stamped once by the upload hook, which keeps
+//   the clean original in MEDIA_ORIGINALS_DIR: a run with a stamp due must set that folder explicitly (see RUNBOOK).
+// - A photo already there (archive.ts made the first 210 pending in their old folder's category, or a run died before
+//   the status write) moves to its plan category while it is still in that folder's category; a pending one is approved
+//   only after its stored file is fetched back and checked. A hidden one, or one the owner filed elsewhere, is left as
+//   is and listed. Its empty EN title/alt/caption are filled from the meta.
 // - ru/de/ar title/alt/caption fill only empty fields (seedMediaLocales).
 // A re-run writes nothing. --dry-run writes nothing; a non-local database needs --yes; SITE_ENV=production is refused.
 // KEFKEN_ARCHIVE = the Kaliteli folder (default ../../kefken-data/Kaliteli); KEFKEN_CONCURRENCY uploads at once (4).
@@ -18,20 +21,21 @@ import { getPayload } from 'payload'
 import config from '@/payload.config'
 import { importStatus } from '@/lib/media/taxonomy'
 
-import { archiveSeedKey, createArchiveMedia, seedCtx } from './archive-media'
-import { guardTarget, seedMediaLocales } from './i18n'
-import { categoryIds, dry, dryRun, finish, loadArchiveMetas, loadPlan, mediaBySeedKey, SEED } from './taxonomy'
+import { archiveSeedKey, createArchiveMedia, seedCtx, verifyArchiveFile } from './archive-media'
+import { fillLocales, guardTarget, seedMediaLocales } from './i18n'
+import { categoryIds, concurrency, dry, dryRun, finish, loadArchiveMetas, loadPlan, mediaBySeedKey, requireDir, requireOriginalsDir, SEED, usedMediaNames } from './taxonomy'
 
-const ARCHIVE = process.env.KEFKEN_ARCHIVE ?? path.resolve(process.cwd(), '../../kefken-data/Kaliteli')
-const CONCURRENCY = Number(process.env.KEFKEN_CONCURRENCY ?? 4)
+const ARCHIVE = requireDir('KEFKEN_ARCHIVE', process.env.KEFKEN_ARCHIVE ?? path.resolve(process.cwd(), '../../kefken-data/Kaliteli'))
+const CONCURRENCY = concurrency()
 const plan = loadPlan()
 const metas = loadArchiveMetas()
 guardTarget(dryRun)
 const payload = await getPayload({ config: await config })
 const cats = await categoryIds(payload)
-const media = await mediaBySeedKey(payload, { category: true, status: true })
+const media = await mediaBySeedKey(payload, { category: true, status: true, filename: true })
+requireOriginalsDir(plan.imports.filter((i) => i.stamp && !media.has(`archive/${i.source}`)).length)
 const idOf = (c: unknown) => (typeof c === 'object' && c ? (c as { id: number }).id : (c as number | null | undefined) ?? undefined)
-const usedNames = new Set((await payload.find({ collection: 'media', pagination: false, limit: 0, depth: 0, select: { seoFilename: true } })).docs.map((d) => d.seoFilename).filter(Boolean) as string[])
+const usedNames = await usedMediaNames(payload)
 const servedDigests = new Map<string, string>()
 const tmp = mkdtempSync(path.join(os.tmpdir(), 'kefken-taxonomy-'))
 
@@ -74,13 +78,18 @@ for (const imp of plan.imports) {
   }
   if (doc.status === 'pending' && status === 'approved') data.status = 'approved'
   else if (doc.status !== status && doc.status !== 'pending') leftAsIs.push(`${label} (${doc.status}, plan ${status})`)
-  if (!Object.keys(data).length) {
-    counts.unchanged++
-    continue
-  }
   try {
+    const en = await fillLocales(payload, 'media', doc.id, { en: { title: entry.meta.title.en, alt: entry.meta.alt.en, caption: entry.meta.caption.en } }, { label, dryRun })
+    if (!Object.keys(data).length) {
+      counts[en ? 'updated' : 'unchanged']++
+      continue
+    }
     console.log(`${dry}${label}: ${Object.entries(data).map(([k, v]) => `${k} → ${k === 'category' ? imp.category : v}`).join(', ')}`)
-    if (!dryRun) await payload.update({ collection: 'media', id: doc.id, data, context: seedCtx() })
+    if (!dryRun) {
+      // Published only once its stored file is known to be the right one (a run may have died before checking it).
+      if (data.status) await verifyArchiveFile(doc.filename ?? '', path.join(ARCHIVE, imp.source), servedDigests)
+      await payload.update({ collection: 'media', id: doc.id, data, context: seedCtx() })
+    }
     counts.updated++
   } catch (err) {
     failed.push(label)
