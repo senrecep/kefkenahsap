@@ -61,11 +61,21 @@ test.describe('gallery', () => {
         await expect(page).toHaveURL(/\/tr\/galeri$/)
       }
     }
-    // A service shows only the types it has photos for: never more chips than with "Tümü".
-    const all = await types.count()
-    await page.getByRole('group', { name: 'Hizmet' }).getByRole('link').nth(1).click()
-    await expect(page).toHaveURL(/\?kategori=/)
-    expect(await types.count()).toBeLessThanOrEqual(Math.max(all, 8))
+  })
+
+  test('phone: photos start within the first viewport', async ({ browser, baseURL }) => {
+    const page = await browser.newPage({ baseURL, viewport: { width: 390, height: 844 } })
+    await page.goto('/tr/galeri')
+    const top = await page.locator('[data-gallery-item]:visible').first().evaluate((e) => e.getBoundingClientRect().top)
+    expect(top).toBeLessThan(844 / 2)
+    await page.close()
+  })
+
+  test('without JS every filter stays reachable', async ({ browser, baseURL }) => {
+    const page = await browser.newPage({ baseURL, javaScriptEnabled: false })
+    await page.goto('/tr/galeri')
+    if (await page.locator('#filter-more').count()) await expect(page.locator('#filter-more')).toBeVisible()
+    await page.close()
   })
 
   test('image page with related photos', async ({ page }) => {

@@ -122,7 +122,7 @@ export async function GalleryFilters({
       <p id="filter-types" className={label}>
         {t('typeFilter')}
       </p>
-      <FilterRail role="group" aria-labelledby="filter-types" className="-ms-1.5 -me-4 min-w-0 flex-1 ps-1.5 md:me-0 md:flex-initial">
+      <FilterRail role="group" aria-labelledby="filter-types" className="-ms-1.5 -me-4 flex-1 md:me-0 md:flex-initial" railClassName="ps-1.5">
         {tagLinks(types, 'tur')}
       </FilterRail>
     </>
@@ -149,7 +149,7 @@ export async function GalleryFilters({
         <p id="filter-services" className={label}>
           {t('serviceFilter')}
         </p>
-        <FilterRail role="group" aria-labelledby="filter-services" className="-mx-4 ps-4 md:-ms-1.5 md:me-0 md:min-w-0 md:flex-1 md:ps-1.5">
+        <FilterRail role="group" aria-labelledby="filter-services" className="-mx-4 md:-ms-1.5 md:me-0 md:flex-1" railClassName="ps-4 md:ps-1.5">
           {serviceChips}
         </FilterRail>
       </div>
