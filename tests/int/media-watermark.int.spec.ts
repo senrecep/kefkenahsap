@@ -97,6 +97,16 @@ it('re-saving the document never stamps again', async () => {
   expect(after.data.equals(before.data)).toBe(true)
 })
 
+it('a duplicate copies the marked file as is and does not claim a clean original', async () => {
+  const { doc } = await upload('dup')
+  const copy = await payload.duplicate({ collection: 'media', id: doc.id, context: { skipAi: true } })
+  created.push(copy.id)
+  expect(copy.watermark).toBe('already')
+  const [source, copied] = await Promise.all([object(doc.filename!), object(copy.filename!)])
+  expect(await diff(source.data, copied.data, CENTRE)).toBeLessThan(2)
+  expect(existsSync(path.join(MEDIA_ORIGINALS_DIR, `${path.parse(copy.filename!).name}.png`))).toBe(false)
+})
+
 it('"Filigran ekleme" and files that already carry the mark are stored as uploaded', async () => {
   for (const [name, data, state] of [
     ['optout', { skipWatermark: true }, 'none'],

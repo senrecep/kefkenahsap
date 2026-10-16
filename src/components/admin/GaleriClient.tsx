@@ -1,5 +1,6 @@
 'use client'
 
+import { CheckboxInput } from '@payloadcms/ui'
 import Link from 'next/link'
 import { useCallback, useEffect, useRef, useState } from 'react'
 
@@ -79,6 +80,8 @@ function readStored(): { category?: number; project?: number } {
 export function GaleriClient({ categories, projects }: { categories: Option[]; projects: Option[] }) {
   const [category, setCategory] = useState<number | undefined>(categories[0]?.id)
   const [project, setProject] = useState<number | undefined>()
+  // #169: uploads get the site watermark unless the editor opts out for this batch.
+  const [skipWatermark, setSkipWatermark] = useState(false)
   const [items, setItems] = useState<Item[]>([])
   const [loading, setLoading] = useState(false)
   const [loadError, setLoadError] = useState('')
@@ -159,7 +162,7 @@ export function GaleriClient({ categories, projects }: { categories: Option[]; p
 
   async function upload(files: FileList | null) {
     if (!files?.length || !category) return
-    const target = { category, project }
+    const target = { category, project, ...(skipWatermark && { skipWatermark }) }
     const entries = Array.from(files).map((file, i) => ({ file, key: `${Date.now()}-${i}`, target }))
     setQueue((q) => [
       ...(uploading.current ? q : q.filter((e) => e.state !== 'done')),
@@ -330,6 +333,12 @@ export function GaleriClient({ categories, projects }: { categories: Option[]; p
             ))}
           </select>
         </label>
+      </div>
+
+      {/* Payload's checkbox: same look as the Görseller form, and custom.scss gives it the 48px tap area. */}
+      <div className="galeri__check">
+        <CheckboxInput id="galeri-skip-watermark" checked={skipWatermark} onToggle={(e) => setSkipWatermark(e.target.checked)} label="Filigran ekleme" />
+        <small>İşaretliyken yüklenen fotoğraflara &quot;kefkenahsap.com&quot; yazısı basılmaz.</small>
       </div>
 
       <label className="galeri__add">

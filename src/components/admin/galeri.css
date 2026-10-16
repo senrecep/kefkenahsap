@@ -64,6 +64,22 @@
   color: var(--theme-elevation-650);
 }
 
+.galeri__check {
+  display: grid;
+  gap: 4px;
+  margin-block-end: 16px;
+}
+
+.galeri__check .checkbox-input label {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.galeri__check small {
+  font-size: 16px;
+  color: var(--theme-elevation-650);
+}
+
 .galeri__add {
   display: flex;
   align-items: center;

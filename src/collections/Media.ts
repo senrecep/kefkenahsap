@@ -57,6 +57,12 @@ const stampUpload: CollectionBeforeOperationHook = async ({ args, operation, req
   return args
 }
 
+/** A new document is 'applied' only if this request stamped it: a duplicate copies the marked file, not its clean original. */
+const truthfulWatermark: CollectionBeforeChangeHook = ({ data, operation, req }) => {
+  if (operation === 'create' && data.watermark === 'applied' && !req.context.mediaOriginal) data.watermark = 'already'
+  return data
+}
+
 async function removeOriginal(filename: string) {
   const stem = stemOf(filename)
   const files = await readdir(MEDIA_ORIGINALS_DIR).catch(() => [] as string[])
@@ -146,7 +152,7 @@ export const Media: CollectionConfig = {
   access: { read: approvedOrStaff, create: isStaff, update: isStaff, delete: isStaff },
   hooks: {
     beforeOperation: [stampUpload],
-    beforeChange: [placeholder, publishGate],
+    beforeChange: [truthfulWatermark, placeholder, publishGate],
     afterChange: [keepOriginal, revalidateAfterChange('media', 'categories', 'projects'), queueAiSuggestion],
     afterDelete: [revalidateAfterDelete('media', 'categories', 'projects'), deleteOriginal],
   },
@@ -190,7 +196,8 @@ export const Media: CollectionConfig = {
       type: 'checkbox',
       virtual: true,
       label: 'Filigran ekleme',
-      admin: { position: 'sidebar', description: 'İşaretlenirse yeni yüklenen dosyaya "kefkenahsap.com" filigranı basılmaz.' },
+      // Payload makes virtual fields read-only unless told otherwise; this one is an instruction for the upload, not stored.
+      admin: { position: 'sidebar', readOnly: false, description: 'İşaretlenirse yeni yüklenen dosyaya "kefkenahsap.com" filigranı basılmaz.' },
     },
     { name: 'lqip', type: 'text', admin: { readOnly: true, hidden: true } },
     // Stable identity of seeded images (<category>/<source file>) so the seed is idempotent.
