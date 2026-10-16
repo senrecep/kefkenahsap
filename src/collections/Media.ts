@@ -16,6 +16,7 @@ import { Result } from 'tsentials/result'
 import { approvedOrStaff, isStaff, roleOf } from '@/access'
 import { mediaFileURL } from '@/lib/media/url'
 import { checkPublishable, type MediaStatus } from '@/lib/media/publish'
+import { approvalTags, type TagRef } from '@/lib/media/taxonomy'
 import { applyWatermark, isStampable } from '@/lib/media/watermark'
 import { revalidateAfterChange, revalidateAfterDelete } from '@/hooks/revalidate'
 
@@ -141,6 +142,22 @@ const publishGate: CollectionBeforeChangeHook = async ({ data, req, originalDoc,
   return data
 }
 
+/** #183: a photo becoming approved gets the existing tags its AI suggestion names, in the same write (add-only). */
+const attachSuggestedTags: CollectionBeforeChangeHook = async ({ data, originalDoc, operation, req }) => {
+  if (operation !== 'update' || data.status !== 'approved' || originalDoc?.status === 'approved') return data
+  const suggestion = data.aiSuggestion ?? originalDoc?.aiSuggestion
+  if (!suggestion) return data
+  // Sent tags (even an explicit null/empty list) win over the stored ones.
+  const sent = data.tags !== undefined ? (data.tags ?? []) : (originalDoc?.tags ?? [])
+  const current = (sent as (number | { id: number })[]).map((t) => (typeof t === 'number' ? t : t.id))
+  // No `req`: Payload would switch req.locale to 'tr' (see publishGate). Tags are only read here, once per request (bulk approve).
+  const tags = (req.context.approvalTagRefs ??= await req.payload
+    .find({ collection: 'tags', locale: 'tr', pagination: false, depth: 0, select: { axis: true, slug: true, name: true } })
+    .then((r) => r.docs.map((t) => ({ id: t.id, axis: t.axis, slug: t.slug ?? '', name: t.name })))) as TagRef[]
+  const next = approvalTags(suggestion, tags, current)
+  return next === current ? data : { ...data, tags: next }
+}
+
 /** New upload → queue an AI suggestion job (skipped in tests, without a key, when disabled, or for seeded media). */
 const queueAiSuggestion: CollectionAfterChangeHook = async ({ doc, operation, req, context }) => {
   if (operation !== 'create' || context?.skipAi || doc.status === 'approved') return doc
@@ -170,7 +187,7 @@ export const Media: CollectionConfig = {
   access: { read: approvedOrStaff, create: isStaff, update: isStaff, delete: isStaff },
   hooks: {
     beforeOperation: [stampUpload],
-    beforeChange: [truthfulWatermark, placeholder, publishGate],
+    beforeChange: [truthfulWatermark, placeholder, publishGate, attachSuggestedTags],
     afterChange: [keepOriginal, revalidateAfterChange('media', 'categories', 'projects'), queueAiSuggestion],
     afterDelete: [revalidateAfterDelete('media', 'categories', 'projects'), deleteOriginal],
   },

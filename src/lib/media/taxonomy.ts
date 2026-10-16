@@ -25,7 +25,7 @@ const norm = (s: string) => s.trim().toLocaleLowerCase('tr')
 /**
  * The tag ids to add to a photo: per axis from the vetted facts (tag slugs), or, where the facts have nothing, from the
  * tagImage meta (tag names). Only adds: a tag the photo has stays, and a single-value axis the photo already has is left
- * alone. `unmapped` lists `<axis>:<value>` without a matching tag.
+ * alone; otherwise it gets only the first of its values that maps to a tag. `unmapped` lists `<axis>:<value>` without a matching tag.
  */
 export function tagIdsToAdd(facts: Values, meta: Values | undefined, tags: TagRef[], current: { id: number; axis: string }[]): { add: number[]; unmapped: string[] } {
   const has = new Set(current.map((t) => t.id))
@@ -34,15 +34,38 @@ export function tagIdsToAdd(facts: Values, meta: Values | undefined, tags: TagRe
   for (const axis of AXES) {
     const values = facts[axis]?.length ? facts[axis] : (meta?.[axis] ?? [])
     if (SINGLE.has(axis) && current.some((t) => t.axis === axis)) continue
+    let taken = false
     for (const value of values) {
       const key = axis === 'stage' && Object.hasOwn(STAGE_SLUG, value) ? STAGE_SLUG[value] : axis === 'type' && Object.hasOwn(TYPE_ALIAS, value) ? TYPE_ALIAS[value] : value
       if (key === null) continue
       const tag = tags.find((t) => t.axis === axis && (t.slug === key || norm(t.name) === norm(key!)))
       if (!tag) unmapped.push(`${axis}:${value}`)
+      else if (SINGLE.has(axis) && taken) continue
       else if (!has.has(tag.id) && !add.includes(tag.id)) add.push(tag.id)
+      if (tag) taken = true
     }
   }
   return { add: add.sort((a, b) => a - b), unmapped }
+}
+
+/**
+ * Owner decision (2026-10-16): approving a photo attaches the tags its tagImage suggestion names, by the rules of
+ * tagIdsToAdd (existing tags only, add-only, single-value axes kept). Returns `current` itself when nothing is added,
+ * also for a missing or malformed suggestion or one older than tagImage@2 (no tag names before it).
+ */
+export function approvalTags(suggestion: unknown, tags: TagRef[], current: number[]): number[] {
+  const s = suggestion as { promptVersion?: unknown; tags?: unknown } | null | undefined
+  const version = typeof s?.promptVersion === 'string' ? /^tagImage@(\d+)$/.exec(s.promptVersion) : null
+  if (!version || Number(version[1]) < 2 || !s?.tags || typeof s.tags !== 'object') return current
+  const meta: Values = {}
+  for (const axis of AXES) {
+    const v = (s.tags as Record<string, unknown>)[axis]
+    if (Array.isArray(v) && v.every((x) => typeof x === 'string')) meta[axis] = v
+  }
+  const axisOf = new Map(tags.map((t) => [t.id, t.axis]))
+  const { add } = tagIdsToAdd({}, meta, tags, current.flatMap((id) => (axisOf.has(id) ? [{ id, axis: axisOf.get(id)! }] : [])))
+  const fresh = add.filter((id) => !current.includes(id))
+  return fresh.length ? [...current, ...fresh] : current
 }
 
 /** Owner decision (2026-10-16): every imported photo is published, except one the tagger doubted. */

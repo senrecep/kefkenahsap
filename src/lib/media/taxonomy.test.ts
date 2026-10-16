@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { duplicateToHide, importStatus, mediaRefs, moveAction, pickCover, remedyDue, remedyUnfinished, tagIdsToAdd, type TagRef } from './taxonomy'
+import { approvalTags, duplicateToHide, importStatus, mediaRefs, moveAction, pickCover, remedyDue, remedyUnfinished, tagIdsToAdd, type TagRef } from './taxonomy'
 
 const TAGS: TagRef[] = [
   { id: 1, axis: 'type', slug: 'deck', name: 'Deck' },
@@ -61,6 +61,13 @@ describe('tagIdsToAdd', () => {
     const current = [{ id: 3, axis: 'setting' }, { id: 7, axis: 'finish' }]
     const r = tagIdsToAdd({ type: ['deck'], setting: ['bahce', 'teras'], finish: ['dogal'] }, undefined, TAGS, current)
     expect(r.add).toEqual([1, 4])
+  })
+
+  it('adds one tag per single-value axis: the first value that maps to a tag; unmapped values are still listed', () => {
+    const tags: TagRef[] = [...TAGS, { id: 11, axis: 'wood', slug: 'iroko', name: 'İroko' }, { id: 12, axis: 'wood', slug: 'teak', name: 'Teak' }]
+    const r = tagIdsToAdd({}, { wood: ['bilinmeyen', 'iroko', 'teak'], stage: ['finished', 'before', 'detail'], setting: ['bahce', 'teras'] }, tags, [])
+    expect(r.add).toEqual([3, 4, 8, 11])
+    expect(r.unmapped).toEqual(['wood:bilinmeyen'])
   })
 
   it('does not match a slug on another axis', () => {
@@ -136,5 +143,33 @@ describe('duplicateToHide', () => {
     expect(duplicateToHide({ id: 1, used: false }, { id: 2, used: false })).toBe(1)
     expect(duplicateToHide({ id: 1, used: true }, { id: 2, used: false })).toBe(2)
     expect(duplicateToHide({ id: 1, used: true }, { id: 2, used: true })).toBeUndefined()
+  })
+})
+
+describe('approvalTags', () => {
+  const s = (tags: object, promptVersion = 'tagImage@3') => ({ promptVersion, tags })
+
+  it('adds the suggested tags that exist (TR name in any case, or slug), stage through its TR tag, unknown names ignored', () => {
+    expect(approvalTags(s({ type: ['DECK', 'Yok böyle'], setting: ['bahçe'], wood: ['emprenyeli-cam'], finish: [], stage: ['before'] }), TAGS, [])).toEqual([1, 3, 5, 8])
+  })
+
+  it('only adds: keeps the editor tags and leaves a filled single-value axis alone', () => {
+    expect(approvalTags(s({ type: ['Deck'], wood: ['Emprenyeli çam'], finish: ['Doğal ton'], stage: ['detail'] }), TAGS, [7, 10, 2])).toEqual([7, 10, 2, 1, 5])
+  })
+
+  it('returns the current tags when there is nothing to add', () => {
+    const current = [3]
+    expect(approvalTags(s({ setting: ['Bahçe'], stage: ['finished'] }), TAGS, current)).toBe(current)
+  })
+
+  it('keeps one tag per single-value axis from a multi-value suggestion', () => {
+    const tags: TagRef[] = [...TAGS, { id: 11, axis: 'wood', slug: 'iroko', name: 'İroko' }, { id: 12, axis: 'wood', slug: 'teak', name: 'Teak' }]
+    expect(approvalTags(s({ wood: ['bilinmeyen', 'iroko', 'teak'], stage: ['finished', 'before', 'detail'] }), tags, [])).toEqual([8, 11])
+  })
+
+  it('skips a missing, malformed or pre-tagImage@2 suggestion', () => {
+    for (const bad of [null, undefined, {}, s({ type: ['Deck'] }, 'tagImage@1'), s({ type: ['Deck'] }, 'other@9'), { tags: { type: ['Deck'] } }, s({ type: 'Deck' })])
+      expect(approvalTags(bad, TAGS, [4])).toEqual([4])
+    expect(approvalTags(s({ type: ['Deck'] }, 'tagImage@2'), TAGS, [])).toEqual([1])
   })
 })
