@@ -3,8 +3,8 @@ import path from 'node:path'
 import { describe, expect, it } from 'vitest'
 import { Maybe } from 'tsentials/maybe'
 
-import { mediaSeedKey, mergeTextFixes, overlayLocales, projectFixPatch, projectYearFix, readOverlay, slugFix, textFixUpdate, uniqueSlugs } from './overlay'
-import { parseCategoryOverlay, parseMediaMetaOverlay, parsePageOverlay, parseProjectFixes } from './schema'
+import { mediaSeedKey, mergeTextFixes, overlayLocales, projectFixPatch, projectYearFix, readOverlay, replacedFieldsPatch, slugFix, textFixUpdate, uniqueSlugs } from './overlay'
+import { parseCategoryOverlay, parseMediaMetaOverlay, parsePageOverlay, parseProjectFixes, parseReplacedTexts } from './schema'
 
 const SEED = path.resolve(process.cwd(), 'tests/fixtures/seed')
 
@@ -110,6 +110,25 @@ describe('textFixUpdate', () => {
   })
 })
 
+describe('replacedFieldsPatch', () => {
+  const old = { shortDesc: 'Eski metin.', faq: [{ q: 'Soru?', a: 'Eski cevap.' }], body: { root: { type: 'root', children: [{ text: 'a' }] } } }
+  const next = { shortDesc: 'Yeni metin.', faq: [{ q: 'Soru?', a: 'Yeni cevap.' }], body: { root: { type: 'root', children: [{ text: 'b' }] } } }
+
+  it('replaces fields still as seeded, ignoring stored key order and FAQ row ids', () => {
+    const stored = { shortDesc: 'Eski metin.', faq: [{ id: '6710a', a: 'Eski cevap.', q: 'Soru?' }], body: { root: { children: [{ text: 'a' }], type: 'root' } } }
+    expect(replacedFieldsPatch(stored, old, next)).toEqual(next)
+  })
+
+  it('keeps owner edits, already fixed and empty fields', () => {
+    const stored = { shortDesc: 'Sahibin metni.', faq: next.faq, body: null }
+    expect(replacedFieldsPatch(stored, old, next)).toEqual({})
+  })
+
+  it('writes nothing for a field the mapping does not change', () => {
+    expect(replacedFieldsPatch({ alt: 'Aynı' }, { alt: 'Aynı' }, { alt: 'Aynı' })).toEqual({})
+  })
+})
+
 describe('mergeTextFixes', () => {
   it('turns sentence-case titles into title fixes and adds field fixes, the field fix winning on the same field', () => {
     const t = (o: string, n: string) => ({ tr: { old: o, new: n } })
@@ -183,5 +202,17 @@ describe('slugFix (#156: projects whose ar slug the pre-transliteration hook lef
     expect(slugFix({ slug: null, title: '  ' }, 'ar', 'x')).toEqual(Maybe.none())
     expect(slugFix({ slug: 'kleine-holzterrasse', title: 'Kleine Holzterrasse' }, 'de')).toEqual(Maybe.none())
     expect(slugFix({ slug: null, title: 'Kleine Holzterrasse' }, 'de')).toEqual(Maybe.some('kleine-holzterrasse'))
+  })
+})
+
+describe('parseReplacedTexts', () => {
+  const file = (locale: string) => JSON.stringify({ categories: {}, media: { 'media-meta-archive/a/1.webp.json': { [locale]: { alt: 'Eski' } } }, siteSettings: {} })
+
+  it('accepts the five site locales', () => {
+    for (const l of ['tr', 'en', 'ru', 'de', 'ar']) expect(parseReplacedTexts(file(l)).ok).toBe(true)
+  })
+
+  it('rejects any other locale key, so a typo cannot silently skip a field', () => {
+    for (const l of ['fr', 'RU', 'ru-RU']) expect(parseReplacedTexts(file(l)).ok).toBe(false)
   })
 })
