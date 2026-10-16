@@ -46,11 +46,10 @@ describe('tagIdsToAdd', () => {
       { id: 11, axis: 'type', slug: 'cati-iskeleti', name: 'Çatı iskeleti / kiriş' },
       { id: 12, axis: 'type', slug: 'oturma-grubu', name: 'Oturma grubu' },
       { id: 13, axis: 'type', slug: 'ciceklik', name: 'Çiçeklik / saksı' },
-      { id: 14, axis: 'type', slug: 'dolap', name: 'Gömme dolap / gardırop' },
     ]
-    const facts = { type: ['other:ahsap-koltuk', 'other:yüzer platform', 'other:el-arabasi-ciceklik', 'other:bathroom vanity', 'other:lamine-cati'] }
+    const facts = { type: ['other:ahsap-koltuk', 'other:yüzer platform', 'other:el-arabasi-ciceklik', 'other:lamine-cati'] }
     const r = tagIdsToAdd(facts, undefined, tags, [])
-    expect(r.add).toEqual([1, 11, 12, 13, 14])
+    expect(r.add).toEqual([1, 11, 12, 13])
     expect(r.unmapped).toEqual([])
   })
 

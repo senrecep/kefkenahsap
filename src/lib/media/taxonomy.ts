@@ -19,7 +19,6 @@ const TYPE_ALIAS: Record<string, string> = {
   'other:ahsap-koltuk': 'oturma-grubu',
   'other:yüzer platform': 'deck',
   'other:el-arabasi-ciceklik': 'ciceklik',
-  'other:bathroom vanity': 'dolap',
 }
 const norm = (s: string) => s.trim().toLocaleLowerCase('tr')
 
