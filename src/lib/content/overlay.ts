@@ -50,6 +50,23 @@ export function uniqueSlugs(entries: { locale: string; slug: string; file: strin
 export const textFixUpdate = (current: string | null | undefined, change: { old: string; new: string }): Maybe<string> =>
   current === change.old && change.old !== change.new ? Maybe.some(change.new) : Maybe.none()
 
+/** Key order and `id`s dropped (Postgres jsonb reorders keys; array rows get ids), so stored and seeded values compare. */
+const canonical = (v: unknown): unknown =>
+  Array.isArray(v)
+    ? v.map(canonical)
+    : v && typeof v === 'object'
+      ? Object.fromEntries(Object.keys(v).filter((k) => k !== 'id').sort().map((k) => [k, canonical((v as Record<string, unknown>)[k])]))
+      : v
+
+/**
+ * #180: the fields to write, from `next`, for those whose stored value is still exactly the replaced seed text in `old`
+ * (an owner edit, an already fixed or an empty field is left alone). Values may be strings, Lexical or FAQ rows.
+ */
+export function replacedFieldsPatch(current: Record<string, unknown>, old: Record<string, unknown>, next: Record<string, unknown>): Record<string, unknown> {
+  const same = (a: unknown, b: unknown) => JSON.stringify(canonical(a)) === JSON.stringify(canonical(b))
+  return Object.fromEntries(Object.keys(old).filter((k) => k in next && same(current[k], old[k]) && !same(old[k], next[k])).map((k) => [k, next[k]]))
+}
+
 /** sentence-case.json (titles) and text-fixes.json (any field) as one field-level map; text-fixes wins on overlap. */
 export const mergeTextFixes = (sentenceCase: Record<string, NonNullable<TextFixes[string]['title']>>, fixes: TextFixes): TextFixes => {
   const merged: TextFixes = Object.fromEntries(Object.entries(sentenceCase).map(([rel, title]) => [rel, { title }]))

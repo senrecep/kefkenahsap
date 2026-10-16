@@ -3,7 +3,7 @@ import path from 'node:path'
 import { describe, expect, it } from 'vitest'
 import { Maybe } from 'tsentials/maybe'
 
-import { mediaSeedKey, mergeTextFixes, overlayLocales, projectFixPatch, projectYearFix, readOverlay, slugFix, textFixUpdate, uniqueSlugs } from './overlay'
+import { mediaSeedKey, mergeTextFixes, overlayLocales, projectFixPatch, projectYearFix, readOverlay, replacedFieldsPatch, slugFix, textFixUpdate, uniqueSlugs } from './overlay'
 import { parseCategoryOverlay, parseMediaMetaOverlay, parsePageOverlay, parseProjectFixes } from './schema'
 
 const SEED = path.resolve(process.cwd(), 'tests/fixtures/seed')
@@ -107,6 +107,25 @@ describe('textFixUpdate', () => {
 
   it('does nothing when the mapping does not change the title', () => {
     expect(Maybe.isNone(textFixUpdate('Kefken Ahşap', { old: 'Kefken Ahşap', new: 'Kefken Ahşap' }))).toBe(true)
+  })
+})
+
+describe('replacedFieldsPatch', () => {
+  const old = { shortDesc: 'Eski metin.', faq: [{ q: 'Soru?', a: 'Eski cevap.' }], body: { root: { type: 'root', children: [{ text: 'a' }] } } }
+  const next = { shortDesc: 'Yeni metin.', faq: [{ q: 'Soru?', a: 'Yeni cevap.' }], body: { root: { type: 'root', children: [{ text: 'b' }] } } }
+
+  it('replaces fields still as seeded, ignoring stored key order and FAQ row ids', () => {
+    const stored = { shortDesc: 'Eski metin.', faq: [{ id: '6710a', a: 'Eski cevap.', q: 'Soru?' }], body: { root: { children: [{ text: 'a' }], type: 'root' } } }
+    expect(replacedFieldsPatch(stored, old, next)).toEqual(next)
+  })
+
+  it('keeps owner edits, already fixed and empty fields', () => {
+    const stored = { shortDesc: 'Sahibin metni.', faq: next.faq, body: null }
+    expect(replacedFieldsPatch(stored, old, next)).toEqual({})
+  })
+
+  it('writes nothing for a field the mapping does not change', () => {
+    expect(replacedFieldsPatch({ alt: 'Aynı' }, { alt: 'Aynı' }, { alt: 'Aynı' })).toEqual({})
   })
 })
 

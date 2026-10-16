@@ -186,6 +186,16 @@ Import and remedy:
 - A replaced file that fails the check is listed as "replaced but unverified". Check those by hand.
 - Finish with the app restart above, as merge-load does (`docker restart` of the app). The scripts cannot invalidate the running app's cache.
 
+### Language review of the 2026-10-16 texts (#180)
+
+`scripts/seed/text-fixes-180.ts` applies the review to a database that already has the #172 categories and the #175 archive photos. `seed/i18n/text-fixes-180.json` holds the replaced texts; the new ones are the committed seed. A field is written only while it still holds exactly the replaced text, so owner edits stay. Categories are written published, and one with an unpublished draft is skipped and the run exits 1. Photo `status` is never touched. A re-run writes nothing.
+
+```bash
+SEED_REMOTE=1 bun run payload run scripts/seed/text-fixes-180.ts -- --dry-run
+SEED_REMOTE=1 bun run payload run scripts/seed/text-fixes-180.ts -- --yes
+# then restart the app (or save a category once in the admin), as above
+```
+
 ## Observability
 
 ### GlitchTip (errors)

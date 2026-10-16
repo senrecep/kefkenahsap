@@ -128,6 +128,17 @@ export const parseProjectFixes = parseWith(
 )
 export type ProjectFix = { year?: number; title?: Record<string, { old: string; new: string }>; story?: Record<string, { old: string; new: string }> }
 
+/**
+ * #180: seed/i18n/text-fixes-180.json, the seeded texts a language review replaced (the new ones are the committed seed).
+ * categories: TR slug → locale → old shortDesc / body (markdown) / faq; media: path under seed/ → locale → old title/alt/caption.
+ */
+export const parseReplacedTexts = parseWith(
+  z.object({
+    categories: z.record(z.string(), z.record(z.string(), z.object({ shortDesc: text.optional(), body: text.optional(), faq: z.array(z.object({ q: text, a: text })).optional() }).strict())),
+    media: z.record(z.string(), z.record(z.string(), z.object({ title: text.optional(), alt: text.optional(), caption: text.optional() }).strict())),
+  }),
+)
+
 // #175: seed/taxonomy/photo-plan.json, the owner-approved photo taxonomy (see scripts/seed/taxonomy-*.ts). Categories by
 // key (src/seed/categories.ts); `facts` by Media seedKey, in tag slugs (stage in English, see src/lib/media/taxonomy.ts).
 const values = z.array(text).min(1).optional()
