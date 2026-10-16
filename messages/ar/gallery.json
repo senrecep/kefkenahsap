@@ -7,6 +7,7 @@
     "categories": "الفئات",
     "serviceFilter": "الخدمة",
     "tags": "الوسوم",
+    "typeFilter": "نوع المنتج",
     "tagFilter": "الوسم",
     "clearTag": "(إزالة عامل التصفية)",
     "all": "الكل",

@@ -17,18 +17,21 @@ const tagOff = `${tagChip} border-transparent bg-mist text-ink-soft hover:text-i
 
 /**
  * Shareable filter chips (`?kategori=&etiket=`). On the gallery (`active` given) each row carries a visible label: services
- * with one "Tümü", then tags as a quieter row (they appear only once tags exist), where the active tag clears itself.
+ * with one "Tümü", then product types and the other tags as quieter rows (each appears only when it has chips), where the
+ * active tag clears itself.
  * Without `active` (homepage) the services are plain links into the gallery.
  */
 export async function GalleryFilters({
   locale,
   categories,
+  types = [],
   tags,
   active: activeProp,
   className = '',
 }: {
   locale: Locale
   categories: Option[]
+  types?: Option[]
   tags: Option[]
   active?: { category?: string; tag?: string }
   className?: string
@@ -71,6 +74,39 @@ export async function GalleryFilters({
       </nav>
     )
   const label = 'pb-2 text-[0.9rem] text-ink-soft md:flex md:min-h-11 md:w-24 md:shrink-0 md:items-center md:pb-0'
+  // One tag at a time (`?etiket=`): picking a chip in either row replaces the other row's choice.
+  const tagRow = (id: string, title: string, options: Option[], event: string) =>
+    options.length > 0 && (
+      <div className="md:flex md:items-start md:gap-3">
+        <p id={id} className={label}>
+          {title}
+        </p>
+        <div role="group" aria-labelledby={id} className={scroller}>
+          {options.map((o) => {
+            if (!o.slug) return null
+            const current = active.tag === o.slug
+            return (
+              <a
+                key={o.slug}
+                href={href({ kategori: active.category, etiket: current ? undefined : o.slug })}
+                aria-current={current ? 'page' : undefined}
+                data-umami-event="filter_use"
+                data-umami-event-filter={event}
+                className={current ? tagOn : tagOff}
+              >
+                {o.name}
+                {current && (
+                  <>
+                    <X aria-hidden size={15} strokeWidth={2} />
+                    <span className="sr-only">{t('clearTag')}</span>
+                  </>
+                )}
+              </a>
+            )
+          })}
+        </div>
+      </div>
+    )
   return (
     <nav aria-label={t('filters')} className={`flex flex-col gap-3 ${className}`}>
       <div className="md:flex md:items-start md:gap-3">
@@ -79,37 +115,8 @@ export async function GalleryFilters({
         </p>
         {services}
       </div>
-      {tags.length > 0 && (
-        <div className="md:flex md:items-start md:gap-3">
-          <p id="filter-tags" className={label}>
-            {t('tagFilter')}
-          </p>
-          <div role="group" aria-labelledby="filter-tags" className={scroller}>
-            {tags.map((o) => {
-              if (!o.slug) return null
-              const current = active.tag === o.slug
-              return (
-                <a
-                  key={o.slug}
-                  href={href({ kategori: active.category, etiket: current ? undefined : o.slug })}
-                  aria-current={current ? 'page' : undefined}
-                  data-umami-event="filter_use"
-                  data-umami-event-filter="etiket"
-                  className={current ? tagOn : tagOff}
-                >
-                  {o.name}
-                  {current && (
-                    <>
-                      <X aria-hidden size={15} strokeWidth={2} />
-                      <span className="sr-only">{t('clearTag')}</span>
-                    </>
-                  )}
-                </a>
-              )
-            })}
-          </div>
-        </div>
-      )}
+      {tagRow('filter-types', t('typeFilter'), types, 'tur')}
+      {tagRow('filter-tags', t('tagFilter'), tags, 'etiket')}
     </nav>
   )
 }

@@ -8,7 +8,7 @@ import { CtaBand } from '@/components/site/CtaBand'
 import { Container } from '@/components/ui/Container'
 import { getPathname } from '@/i18n/navigation'
 import type { Locale } from '@/i18n/routing'
-import { getGalleryPage, getUnfilteredGallery, resolveGalleryFilter } from '@/lib/data/gallery'
+import { getGalleryPage, getGalleryTagRows, getUnfilteredGallery, resolveGalleryFilter } from '@/lib/data/gallery'
 import { PAGE_SIZE, parseGalleryQuery } from '@/lib/gallery/query'
 import { pageMetadata, staticPaths } from '@/lib/seo/page-metadata'
 
@@ -36,11 +36,14 @@ export default async function GalleryPage({ params, searchParams }: Props) {
   const q = parsed.value
 
   const [t, { categories, tags, category, tag, unknown }] = await Promise.all([getTranslations('Gallery'), resolveGalleryFilter(locale, q)])
-  const page = unknown
-    ? { items: [], total: 0, nextCursor: null }
-    : !category && !tag
-      ? await getUnfilteredGallery(locale, q.page)
-      : await getGalleryPage(locale, { categoryId: category?.id, tagId: tag?.id, limit: PAGE_SIZE * q.page })
+  const [rows, page] = await Promise.all([
+    getGalleryTagRows(tags, q.tag),
+    unknown
+      ? { items: [], total: 0, nextCursor: null }
+      : !category && !tag
+        ? getUnfilteredGallery(locale, q.page)
+        : getGalleryPage(locale, { categoryId: category?.id, tagId: tag?.id, limit: PAGE_SIZE * q.page }),
+  ])
 
   const filter = { ...(q.category ? { kategori: q.category } : {}), ...(q.tag ? { etiket: q.tag } : {}) }
   const base = getPathname({ locale, href: '/galeri' })
@@ -52,7 +55,7 @@ export default async function GalleryPage({ params, searchParams }: Props) {
       <Container className="pt-8 md:pt-12">
         <h1 className="text-[clamp(2rem,4vw,3rem)]">{category ? `${t('title')}: ${category.name}` : t('title')}</h1>
         <p className="mt-3 max-w-[60ch] text-ink-soft">{t('intro')}</p>
-        <GalleryFilters locale={locale} categories={categories} tags={tags} active={{ category: q.category, tag: q.tag }} className="mt-6 mb-8" />
+        <GalleryFilters locale={locale} categories={categories} types={rows.types} tags={rows.others} active={{ category: q.category, tag: q.tag }} className="mt-6 mb-8" />
         {page.items.length ? (
           <GalleryGrid key={JSON.stringify(filter)} initial={page.items} total={page.total} nextCursor={page.nextCursor} feedUrl={feedUrl} moreHref={moreHref} priority />
         ) : (

@@ -5,6 +5,7 @@ import type { Locale } from '@/i18n/routing'
 import { categoryRank, diversify } from '@/lib/gallery/curate'
 import type { GalleryItem } from '@/lib/gallery/item'
 import { encodeCursor, galleryWhere, PAGE_SIZE, START_CURSOR_ID, type GalleryQuery } from '@/lib/gallery/query'
+import { galleryTagRows } from '@/lib/gallery/tag-rows'
 import type { Category, Media, Project, Tag } from '@/payload-types'
 
 import { markFallbackAlt, type WithAltLang } from './media-alt'
@@ -145,10 +146,14 @@ export async function getUnfilteredGallery(locale: Locale, pages: number): Promi
   }
 }
 
+/** Every tag, unpaginated: 45 product types alone pass Payload's default page size, so a limit would drop chips and links. */
+export const galleryTagsQuery = (locale: Locale) =>
+  ({ collection: 'tags', locale, pagination: false, sort: 'name', depth: 0, overrideAccess: false, select: { name: true, slug: true, axis: true } }) as const
+
 export const getGalleryTags = (locale: Locale) =>
   unstable_cache(
     async () => {
-      const res = await (await getPayload()).find({ collection: 'tags', locale, limit: 100, sort: 'name', depth: 0, overrideAccess: false, select: { name: true, slug: true } })
+      const res = await (await getPayload()).find(galleryTagsQuery(locale))
       // The database sorts bytewise (Ç, İ, Ö after Z); chips follow the locale's alphabet.
       const collator = new Intl.Collator(locale)
       return res.docs.filter((d) => d.slug && d.name).sort((x, y) => collator.compare(x.name, y.name))
@@ -156,6 +161,28 @@ export const getGalleryTags = (locale: Locale) =>
     ['galleryTags', locale],
     { tags: [TAGS.tags], revalidate: HOUR },
   )()
+
+/** The gallery's chip rows: product types, then the other tags, each with enough approved photos (see galleryTagRows). */
+export async function getGalleryTagRows(tags: Awaited<ReturnType<typeof getGalleryTags>>, active?: string) {
+  return galleryTagRows(tags, tags.length ? await getPhotoTags() : [], active)
+}
+
+// Each approved gallery photo's tag ids (photos without a tag left out), for the chips' photo threshold.
+const getPhotoTags = unstable_cache(
+  async () => {
+    const res = await (await getPayload()).find({
+      collection: 'media',
+      where: { and: [...galleryWhere({}).and, { tags: { exists: true } }] },
+      select: { tags: true },
+      depth: 0,
+      pagination: false,
+      overrideAccess: false,
+    })
+    return res.docs.map((d) => (d.tags ?? []).map((t) => (typeof t === 'number' ? t : t.id)))
+  },
+  ['galleryPhotoTags'],
+  { tags: [TAGS.media, TAGS.tags], revalidate: HOUR },
+)
 
 /** One approved image by its SEO filename, plus which locales have their own title (hreflang). */
 export const getImage = (locale: Locale, slug: string) =>

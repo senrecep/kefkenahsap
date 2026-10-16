@@ -401,7 +401,7 @@ export interface Tag {
   id: number;
   name: string;
   slug?: string | null;
-  axis: 'wood' | 'setting' | 'finish' | 'stage';
+  axis: 'type' | 'wood' | 'setting' | 'finish' | 'stage';
   description?: string | null;
   updatedAt: string;
   createdAt: string;

@@ -80,6 +80,27 @@ describe('tagImage job', () => {
     await payload.updateGlobal({ slug: 'aiSettings', data: { monthlyBudgetUsd: 1000 } })
   })
 
+  it('#171: offers the existing product types and keeps only the ones from that list', async () => {
+    // The fake model answers with the first offered type plus an invented one (src/ai/fake.ts).
+    const name = `E2E Tür ${Date.now()}`
+    const tag = await payload.create({ collection: 'tags', locale: 'tr', data: { name, axis: 'type' } })
+    try {
+      const m = await payload.create({ collection: 'media', data: {}, filePath: IMG })
+      created.push({ collection: 'media', id: m.id })
+      await payload.jobs.queue({ task: 'tagImage', input: { mediaId: String(m.id) } })
+      await payload.jobs.run()
+      const tr = await payload.findByID({ collection: 'media', id: m.id, locale: 'tr' })
+      const s = tr.aiSuggestion as { promptVersion: string; tags: { type: string[] } }
+      expect(s.promptVersion).toBe('tagImage@3')
+      expect(s.tags.type).toHaveLength(1)
+      expect(s.tags.type[0]).not.toBe('Uydurma tür')
+      const usage = await payload.find({ collection: 'ai-usage', where: { docRef: { equals: `media:${m.id}` } } })
+      usage.docs.forEach((d) => created.push({ collection: 'ai-usage', id: d.id }))
+    } finally {
+      await payload.delete({ collection: 'tags', id: tag.id })
+    }
+  })
+
   it('#57: a model changed in AI Ayarları is used by the next job', async () => {
     const envChain = process.env.AI_TAGIMAGE_MODELS
     delete process.env.AI_TAGIMAGE_MODELS // env beats settings; this test is about the admin setting

@@ -89,6 +89,17 @@ const localized = z.object({ tr: text, en: text, ru: text, de: text, ar: text })
 export const parseEditorialTags = parseWith(
   z.object({ tags: z.array(z.object({ key: text, axis: z.enum(['wood', 'setting', 'stage']), name: localized, slug: localized.extend({ tr: slug, en: slug, ru: slug, de: slug, ar: slug }), raw: z.array(text).min(1) })) }),
 )
+// #171: image-work/taxonomy/v0.json (tr/en) and seed/editorial/tags-type-axis.json (ru/de/ar [name, slug]), see
+// scripts/seed/tags-type-axis.ts. v0 carries more fields per tag; only these are read.
+export const parseTaxonomyV0 = parseWith(
+  z.object({
+    tags: z.array(
+      z.object({ axis: z.enum(['type', 'wood', 'setting', 'finish', 'stage']), status: z.string().optional(), name: z.object({ tr: text, en: text }), slug: z.object({ tr: slug, en: slug }) }),
+    ),
+  }),
+)
+const named = z.tuple([text, slug])
+export const parseTagTranslations = parseWith(z.object({ tags: z.record(z.string(), z.object({ ru: named, de: named, ar: named })) }))
 const pick = z.object({ seedKey: text, reason: text })
 const swap = z.object({ from: text.nullable(), to: text, reason: text })
 export const parseEditorialPicks = parseWith(

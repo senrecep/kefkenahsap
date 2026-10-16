@@ -3,7 +3,7 @@ import { existsSync, readdirSync, readFileSync } from 'node:fs'
 import path from 'node:path'
 import { describe, expect, it } from 'vitest'
 
-import { TagImageSchema } from '@/ai/prompts/tagImage'
+import { StoredTagImageSchema } from '@/ai/prompts/tagImage'
 
 import { SEED_CATEGORIES } from './categories'
 
@@ -55,7 +55,7 @@ describe('archive media metadata', () => {
     expect(slugs.has(cat)).toBe(true)
     expect(f).toBe(`${path.basename(meta.source)}.json`)
     expect(meta.source).toMatch(/^[^/]+\/[^/]+\.webp$/)
-    expect(TagImageSchema.safeParse(meta).success).toBe(true)
+    expect(StoredTagImageSchema.safeParse(meta).success).toBe(true)
     expect(meta.generatedAt).toMatch(/^\d{4}-\d{2}-\d{2}/)
     for (const l of ['tr', 'en'] as const) {
       expect(isTitleCase(meta.title[l]), meta.title[l]).toBe(false)
