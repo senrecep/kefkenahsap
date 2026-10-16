@@ -21,6 +21,17 @@ describe('mediaPublicURLs (#185)', () => {
     expect(mediaPublicURLs(doc, BASE)).toEqual(['https://cdn.kefkenahsap.com/a.webp'])
   })
 
+  it('percent-encodes the URLs the way a browser requests them', () => {
+    expect(mediaPublicURLs({ filename: 'ahşap deck.webp', sizes: { w320: { filename: 'ahşap deck-320x240.webp' } } }, BASE)).toEqual([
+      'https://cdn.kefkenahsap.com/ah%C5%9Fap%20deck.webp',
+      'https://cdn.kefkenahsap.com/ah%C5%9Fap%20deck-320x240.webp',
+    ])
+  })
+
+  it('returns nothing without an absolute base', () => {
+    expect(mediaPublicURLs({ filename: 'a.webp' }, '')).toEqual([])
+  })
+
   it('returns nothing for a document without a file', () => {
     expect(mediaPublicURLs({ filename: null, sizes: { w320: { filename: 'x.webp' } } }, BASE)).toEqual([])
   })
@@ -59,13 +70,16 @@ describe('createCdnPurger (#185)', () => {
       token: 't',
       post: async () => {
         n++
-        if (n === 1) return Result.failure(Err.unexpected('Http.Forbidden', '403'))
+        if (n === 1) return Result.failure(Err.forbidden('Http.403', 'HTTP request failed with status 403.'))
         if (n === 2) return Result.success({ success: false, errors: [{ code: 10000, message: 'Authentication error' }] })
         return Result.success({ success: true })
       },
     })
     const r = await purge(urls)
     expect(n).toBe(3)
-    expect(Result.isFailure(r) && r.errors.map((e) => e.code)).toEqual(['Cloudflare.PurgeFailed', 'Cloudflare.PurgeFailed'])
+    expect(Result.isFailure(r) && r.errors.map((e) => [e.code, e.description])).toEqual([
+      ['Cloudflare.PurgeFailed', 'Cloudflare purge failed: Http.403 HTTP request failed with status 403.'],
+      ['Cloudflare.PurgeFailed', 'Cloudflare purge failed: Authentication error'],
+    ])
   })
 })
