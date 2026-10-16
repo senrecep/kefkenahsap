@@ -82,7 +82,7 @@ Translations for the locales other than TR/EN live in `seed/i18n/<locale>/`, whi
 - `media-text-fixes` changes a TR/EN field only while it is still exactly the seeded text. Owner edits are kept.
 - `project-story-fixes` (#148) rewrites project titles/stories in every locale only while they are still exactly the old seeded text, and fills `year` only while empty. A published project gets a new published version with just those fields; one with unpublished draft edits is skipped and listed. Run it before re-running `project-drafts.ts` (that script finds projects by the new TR title).
 - `content.ts` checks the overlay slugs before writing. A slug used twice in a locale, or already used by another document, stops the run and names the file.
-- Every script prints `host:port/database` first and refuses `SITE_ENV=production`. A non-local host needs `--yes`. A tunnelled DB reads as `localhost`, so check the database name and run `--dry-run` first where there is one.
+- Every script prints `host:port/database` first and refuses `SITE_ENV=production`. A non-local host needs `--yes`. A tunnelled DB reads as `localhost`, so check the database name and run `--dry-run` first where there is one. `SEED_REMOTE=1` (set by the dev runner) marks the database remote even when it reads as `localhost`, so `--yes` is required.
 - `media-locales` and `media-text-fixes` carry on past a failing photo, list its seedKey, and exit 1.
 
 ```bash
@@ -159,13 +159,15 @@ Run this after the #172 steps above. The scripts run on the laptop against the d
 ```bash
 export STAGE=$HOME/kefken-media-originals-175 && mkdir -p "$STAGE"
 export MEDIA_ORIGINALS_DIR=$STAGE KEFKEN_ARCHIVE=<…>/kefken-data/Kaliteli KEFKEN_WORKSPACE=<…>/kefkenahsap-workspace
-for s in taxonomy-reassign taxonomy-import taxonomy-tags taxonomy-remedy taxonomy-covers editorial-swaps taxonomy-dedup; do
-  bun run payload run scripts/seed/$s.ts -- --dry-run || break      # read the lists, then:
-  bun run payload run scripts/seed/$s.ts -- --yes || break
-done
+STEPS="taxonomy-reassign taxonomy-import taxonomy-tags taxonomy-remedy taxonomy-covers editorial-swaps taxonomy-dedup"
+# 1) every dry run first, and read the lists (a later step's dry run cannot see what an earlier step will write)
+for s in $STEPS; do bun run payload run scripts/seed/$s.ts -- --dry-run || break; done
+# 2) then the real runs, in order
+for s in $STEPS; do bun run payload run scripts/seed/$s.ts -- --yes || break; done
 # clean originals → the dev app's volume (compose: MEDIA_ORIGINALS_DIR=/app/data/media-originals)
 ls "$STAGE" | wc -l                                                    # 12 on a first run
-scp -r "$STAGE" senrecep:/tmp/media-originals-175
+ssh senrecep 'rm -rf /tmp/media-originals-175 && mkdir -p /tmp/media-originals-175'
+scp "$STAGE"/* senrecep:/tmp/media-originals-175/
 ssh senrecep 'C=compose-hack-multi-byte-system-ysiihc-app-1 D=/app/data/media-originals
   docker cp /tmp/media-originals-175/. $C:$D/ &&
   docker exec -u 0 $C sh -c "chown -R \$(stat -c %u:%g $D) $D" &&
