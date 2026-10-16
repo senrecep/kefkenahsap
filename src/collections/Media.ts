@@ -8,13 +8,17 @@ import {
   type CollectionBeforeChangeHook,
   type CollectionBeforeOperationHook,
   type CollectionConfig,
+  type PayloadRequest,
 } from 'payload'
 
 import { publicError } from '@/lib/http/public-error'
 import { Result } from 'tsentials/result'
+import { SystemDateTimeProvider } from 'tsentials/time'
 
 import { approvedOrStaff, isStaff, roleOf } from '@/access'
 import { mediaFileURL } from '@/lib/media/url'
+import { createCdnPurger, mediaPublicURLs } from '@/lib/media/cdn-purge'
+import { createReporter } from '@/lib/observability/report'
 import { checkPublishable, type MediaStatus } from '@/lib/media/publish'
 import { approvalTags, type TagRef } from '@/lib/media/taxonomy'
 import { applyWatermark, isStampable } from '@/lib/media/watermark'
@@ -104,6 +108,50 @@ const deleteOriginal: CollectionAfterDeleteHook = async ({ doc }) => {
   return doc
 }
 
+let purgeSkipLogged = false
+let reportPurge: ReturnType<typeof createReporter> | undefined
+
+/**
+ * #185: the CDN caches media for a year, so a deleted or replaced file stays public until its URLs are purged.
+ * Fire-and-forget: the save/delete never waits on, or fails because of, Cloudflare. Without the env it is skipped.
+ */
+function purgeFromCdn(doc: Parameters<typeof mediaPublicURLs>[0], req: PayloadRequest, why: 'delete' | 'replace') {
+  const zoneId = process.env.CLOUDFLARE_ZONE_ID
+  const token = process.env.CLOUDFLARE_PURGE_TOKEN
+  if (!zoneId || !token) {
+    if (!purgeSkipLogged) req.payload.logger.warn('media: CLOUDFLARE_ZONE_ID / CLOUDFLARE_PURGE_TOKEN not set; deleted or replaced files stay in the CDN cache')
+    purgeSkipLogged = true
+    return
+  }
+  const urls = mediaPublicURLs(doc, process.env.MEDIA_PUBLIC_URL ?? '')
+  if (!urls.length) return
+  const failed = (detail: unknown) => {
+    req.payload.logger.error({ err: detail, urls }, `media: CDN purge after ${why} failed; the old files stay cached`)
+    const dsn = process.env.SENTRY_DSN
+    if (!dsn) return
+    reportPurge ??= createReporter({ dsn, environment: process.env.SITE_ENV ?? 'local', clock: SystemDateTimeProvider })
+    reportPurge(new Error(`Cloudflare.PurgeFailed after media ${why}`), { path: '/api/media', method: why === 'delete' ? 'DELETE' : 'PATCH' }, 'media.cdnPurge')
+  }
+  createCdnPurger({ zoneId, token })(urls).then((r) => r.ok || failed(r.errors), failed)
+}
+
+/**
+ * A new file (flag set by stampUpload; read before keepOriginal clears it) or regenerated files under new names (admin
+ * crop/focal edits) → the storage plugin deletes the previous objects, so their URLs are purged.
+ */
+const purgeReplacedFile: CollectionAfterChangeHook = ({ doc, operation, previousDoc, req }) => {
+  if (operation !== 'update' || !previousDoc) return doc
+  const base = process.env.MEDIA_PUBLIC_URL ?? ''
+  const renamed = mediaPublicURLs(previousDoc, base).join() !== mediaPublicURLs(doc, base).join()
+  if (req.context.mediaFileReplaced === true || renamed) purgeFromCdn(previousDoc, req, 'replace')
+  return doc
+}
+
+const purgeDeletedFile: CollectionAfterDeleteHook = ({ doc, req }) => {
+  purgeFromCdn(doc, req, 'delete')
+  return doc
+}
+
 /** Tiny blurred placeholder + dominant colour, computed once at upload (skeleton/LQIP, CLS-free gallery). */
 const placeholder: CollectionBeforeChangeHook = async ({ data, req }) => {
   const file = req.file?.data
@@ -188,8 +236,8 @@ export const Media: CollectionConfig = {
   hooks: {
     beforeOperation: [stampUpload],
     beforeChange: [truthfulWatermark, placeholder, publishGate, attachSuggestedTags],
-    afterChange: [keepOriginal, revalidateAfterChange('media', 'categories', 'projects'), queueAiSuggestion],
-    afterDelete: [revalidateAfterDelete('media', 'categories', 'projects'), deleteOriginal],
+    afterChange: [purgeReplacedFile, keepOriginal, revalidateAfterChange('media', 'categories', 'projects'), queueAiSuggestion],
+    afterDelete: [revalidateAfterDelete('media', 'categories', 'projects'), deleteOriginal, purgeDeletedFile],
   },
   fields: [
     {
