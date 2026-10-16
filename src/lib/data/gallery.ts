@@ -158,18 +158,17 @@ export const getGalleryTags = (locale: Locale) =>
     { tags: [TAGS.tags], revalidate: HOUR },
   )()
 
-/** The gallery's chip rows: product types with enough approved photos (see galleryTagRows), then the other tags. */
+/** The gallery's chip rows: product types, then the other tags, each with enough approved photos (see galleryTagRows). */
 export async function getGalleryTagRows(tags: Awaited<ReturnType<typeof getGalleryTags>>, active?: string) {
-  const typeIds = tags.filter((t) => t.axis === 'type').map((t) => t.id)
-  return galleryTagRows(tags, typeIds.length ? await getTypePhotoTags(typeIds) : [], active)
+  return galleryTagRows(tags, tags.length ? await getPhotoTags() : [], active)
 }
 
-// Each approved photo's tag ids, for the photos carrying one of the given product types.
-const getTypePhotoTags = unstable_cache(
-  async (typeIds: number[]) => {
+// Each approved gallery photo's tag ids (photos without a tag left out), for the chips' photo threshold.
+const getPhotoTags = unstable_cache(
+  async () => {
     const res = await (await getPayload()).find({
       collection: 'media',
-      where: { and: [...galleryWhere({}).and, { tags: { in: typeIds } }] },
+      where: { and: [...galleryWhere({}).and, { tags: { exists: true } }] },
       select: { tags: true },
       depth: 0,
       pagination: false,
@@ -177,7 +176,7 @@ const getTypePhotoTags = unstable_cache(
     })
     return res.docs.map((d) => (d.tags ?? []).map((t) => (typeof t === 'number' ? t : t.id)))
   },
-  ['typePhotoTags'],
+  ['galleryPhotoTags'],
   { tags: [TAGS.media, TAGS.tags], revalidate: HOUR },
 )
 

@@ -32,8 +32,13 @@ describe('galleryTagRows', () => {
     expect(slugs(galleryTagRows(tags, photos(2, 1), 'pergola').types)).toEqual(['pergola'])
   })
 
-  it('keeps every other axis in the tag row, without the types and without a threshold', () => {
-    expect(slugs(galleryTagRows(tags, []).others)).toEqual(['iroko', 'bahce'])
+  it('puts every other axis in the tag row, under the same 5-photo rule', () => {
+    const rows = galleryTagRows(tags, [...photos(3, 5), ...photos(4, 4)])
+    expect(slugs(rows.others)).toEqual(['iroko'])
+  })
+
+  it('keeps an active tag of another axis visible below the threshold', () => {
+    expect(slugs(galleryTagRows(tags, [], 'bahce').others)).toEqual(['bahce'])
   })
 
   it('keeps the input order', () => {
