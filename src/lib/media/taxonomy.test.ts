@@ -40,6 +40,20 @@ describe('tagIdsToAdd', () => {
     expect(r.unmapped).toEqual([])
   })
 
+  it('maps the frequent other:* facts to the existing type tags they belong to', () => {
+    const tags: TagRef[] = [
+      ...TAGS,
+      { id: 11, axis: 'type', slug: 'cati-iskeleti', name: 'Çatı iskeleti / kiriş' },
+      { id: 12, axis: 'type', slug: 'oturma-grubu', name: 'Oturma grubu' },
+      { id: 13, axis: 'type', slug: 'ciceklik', name: 'Çiçeklik / saksı' },
+      { id: 14, axis: 'type', slug: 'dolap', name: 'Gömme dolap / gardırop' },
+    ]
+    const facts = { type: ['other:ahsap-koltuk', 'other:yüzer platform', 'other:el-arabasi-ciceklik', 'other:bathroom vanity', 'other:lamine-cati'] }
+    const r = tagIdsToAdd(facts, undefined, tags, [])
+    expect(r.add).toEqual([1, 11, 12, 13, 14])
+    expect(r.unmapped).toEqual([])
+  })
+
   it('lists values without a tag, including other:* types', () => {
     expect(tagIdsToAdd({ type: ['other:tabela', 'deck'], setting: ['orman'] }, undefined, TAGS, []).unmapped).toEqual(['type:other:tabela', 'setting:orman'])
   })

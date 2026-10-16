@@ -11,7 +11,16 @@ const SINGLE: ReadonlySet<Axis> = new Set(['wood', 'finish', 'stage'])
 // shows the work in progress.
 const STAGE_SLUG: Record<string, string | null> = { before: 'oncesi', after: 'sonrasi', process: 'uygulama-asamasi', workshop: 'uygulama-asamasi', detail: 'detay', finished: null }
 // Owner decision (2026-10-16): the frequent roof-frame facts get their own type tag.
-const TYPE_ALIAS: Record<string, string> = { 'other:cati-kirisi': 'cati-iskeleti', 'other:roof-truss-frame': 'cati-iskeleti' }
+// The other frequent other:* facts fold into the existing type tags they belong to (no new tags).
+const TYPE_ALIAS: Record<string, string> = {
+  'other:cati-kirisi': 'cati-iskeleti',
+  'other:roof-truss-frame': 'cati-iskeleti',
+  'other:lamine-cati': 'cati-iskeleti',
+  'other:ahsap-koltuk': 'oturma-grubu',
+  'other:yüzer platform': 'deck',
+  'other:el-arabasi-ciceklik': 'ciceklik',
+  'other:bathroom vanity': 'dolap',
+}
 const norm = (s: string) => s.trim().toLocaleLowerCase('tr')
 
 /**
