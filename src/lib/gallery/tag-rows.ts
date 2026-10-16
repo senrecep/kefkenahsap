@@ -10,7 +10,8 @@ export type PhotoTags = { category: number | null; tags: number[] }
  * Splits the gallery tags into the visible product types, the product types behind "more", and every other axis.
  * Counts run over the selected service's photos only (all photos without one). A tag shows from `min` photos, or while
  * it is the active filter (so it can be cleared), so a chip never leads to an empty gallery. Types go most common
- * first (ties keep input order), the top `top` visible plus the active one; other axes keep input order.
+ * first (ties keep input order), the top `top` visible plus the active one; the rest and the other axes keep input
+ * (alphabetical) order, which scans better in a long list.
  */
 export function galleryTagRows<T extends { id: number; slug?: string | null; axis: string }>(
   tags: T[],
@@ -25,10 +26,11 @@ export function galleryTagRows<T extends { id: number; slug?: string | null; axi
   const n = (t: T) => count.get(t.id) ?? 0
   const isActive = (t: T) => active !== undefined && t.slug === active
   const shown = tags.filter((t) => n(t) >= min || isActive(t))
-  const types = shown.filter((t) => t.axis === 'type').sort((x, y) => n(y) - n(x))
+  const ranked = shown.filter((t) => t.axis === 'type').sort((x, y) => n(y) - n(x))
+  const types = ranked.filter((t, i) => i < top || isActive(t))
   return {
-    types: types.filter((t, i) => i < top || isActive(t)),
-    moreTypes: types.filter((t, i) => i >= top && !isActive(t)),
+    types,
+    moreTypes: shown.filter((t) => t.axis === 'type' && !types.includes(t)),
     others: shown.filter((t) => t.axis !== 'type'),
   }
 }

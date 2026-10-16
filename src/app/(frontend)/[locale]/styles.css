@@ -74,6 +74,25 @@
   box-shadow: 0 0 0 2px #fff;
 }
 
+/* One-line chip rail (gallery filters): sideways scroll with snap, end fade so a cut-off chip reads as "more".
+   Block padding keeps the focus ring inside the scrollport; the end padding clears the fade at full scroll. */
+@utility rail {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  scroll-padding-inline: 1rem 2.5rem;
+  padding-block: 0.5rem;
+  margin-block: -0.5rem;
+  padding-inline-end: 2.5rem;
+  scrollbar-width: none;
+  mask-image: linear-gradient(to right, #000 calc(100% - 2.5rem), transparent);
+  &:dir(rtl) { mask-image: linear-gradient(to left, #000 calc(100% - 2.5rem), transparent); }
+  & > * { scroll-snap-align: start; }
+  @media (pointer: fine) { scrollbar-width: thin; scrollbar-color: var(--color-line) transparent; }
+}
+
 /* Arabic letters join: any tracking (tracking-tight/-wide) breaks the joins, and there is no uppercase.
    Unlayered, so it wins over the tracking utilities. */
 :lang(ar),

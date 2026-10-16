@@ -38,6 +38,36 @@ test.describe('gallery', () => {
     expect(await visible.count()).toBeGreaterThan(0)
   })
 
+  test('filters stay compact: types ranked per service, the rest behind "more filters"', async ({ page }) => {
+    await page.goto('/tr/galeri')
+    const types = page.getByRole('group', { name: 'Ürün türü' }).getByRole('link')
+    expect(await types.count()).toBeLessThanOrEqual(8)
+    const toggle = page.getByRole('button', { name: 'Daha fazla filtre' })
+    // Seed-agnostic: the disclosure exists only when some filter is left over.
+    if (await toggle.count()) {
+      await expect(toggle).toHaveAttribute('aria-expanded', 'false')
+      await expect(page.locator('#filter-more')).toBeHidden()
+      await toggle.click()
+      await expect(toggle).toHaveAttribute('aria-expanded', 'true')
+      await expect(page.locator('#filter-more')).toBeVisible()
+      // An Etiket filter opens the disclosure on load, its chip current, with one "Temizle" back to everything.
+      const tag = page.getByRole('group', { name: 'Etiket' }).getByRole('link').first()
+      if (await tag.count()) {
+        await tag.click()
+        await expect(page).toHaveURL(/\?etiket=[a-z0-9-]+/)
+        await expect(page.getByRole('button', { name: 'Daha fazla filtre' })).toHaveAttribute('aria-expanded', 'true')
+        await expect(page.getByRole('group', { name: 'Etiket' }).locator('[aria-current="page"]')).toHaveCount(1)
+        await page.getByRole('link', { name: 'Temizle' }).click()
+        await expect(page).toHaveURL(/\/tr\/galeri$/)
+      }
+    }
+    // A service shows only the types it has photos for: never more chips than with "Tümü".
+    const all = await types.count()
+    await page.getByRole('group', { name: 'Hizmet' }).getByRole('link').nth(1).click()
+    await expect(page).toHaveURL(/\?kategori=/)
+    expect(await types.count()).toBeLessThanOrEqual(Math.max(all, 8))
+  })
+
   test('image page with related photos', async ({ page }) => {
     await page.goto('/tr/galeri')
     const href = await page.locator('[data-gallery-item]:visible').first().getAttribute('href')

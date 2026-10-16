@@ -45,10 +45,10 @@ describe('galleryTagRows', () => {
     expect(slugs(rows.types)).toEqual(['bank', 'kopek-kulubesi', 'pergola'])
   })
 
-  it('shows the most common `top` types and moves the rest behind "more"', () => {
-    const rows = galleryTagRows(tags, [...photos(1, 5), ...photos(5, 9), ...photos(2, 6)], { top: 2 })
-    expect(slugs(rows.types)).toEqual(['bank', 'pergola'])
-    expect(slugs(rows.moreTypes)).toEqual(['kopek-kulubesi'])
+  it('shows the most common `top` types and moves the rest behind "more", in input (alphabetical) order to scan', () => {
+    const rows = galleryTagRows(tags, [...photos(1, 5), ...photos(5, 9), ...photos(2, 6)], { top: 1 })
+    expect(slugs(rows.types)).toEqual(['bank'])
+    expect(slugs(rows.moreTypes)).toEqual(['kopek-kulubesi', 'pergola'])
   })
 
   it('keeps the active type in the visible row even when it ranks below `top`', () => {
