@@ -38,6 +38,46 @@ test.describe('gallery', () => {
     expect(await visible.count()).toBeGreaterThan(0)
   })
 
+  test('filters stay compact: types ranked per service, the rest behind "more filters"', async ({ page }) => {
+    await page.goto('/tr/galeri')
+    const types = page.getByRole('group', { name: 'Ürün türü' }).getByRole('link')
+    expect(await types.count()).toBeLessThanOrEqual(8)
+    const toggle = page.getByRole('button', { name: 'Daha fazla filtre' })
+    // Seed-agnostic: the disclosure exists only when some filter is left over.
+    if (await toggle.count()) {
+      await expect(toggle).toHaveAttribute('aria-expanded', 'false')
+      await expect(page.locator('#filter-more')).toBeHidden()
+      await toggle.click()
+      await expect(toggle).toHaveAttribute('aria-expanded', 'true')
+      await expect(page.locator('#filter-more')).toBeVisible()
+      // An Etiket filter opens the disclosure on load, its chip current, with one "Temizle" back to everything.
+      const tag = page.getByRole('group', { name: 'Etiket' }).getByRole('link').first()
+      if (await tag.count()) {
+        await tag.click()
+        await expect(page).toHaveURL(/\?etiket=[a-z0-9-]+/)
+        await expect(page.getByRole('button', { name: 'Daha fazla filtre' })).toHaveAttribute('aria-expanded', 'true')
+        await expect(page.getByRole('group', { name: 'Etiket' }).locator('[aria-current="page"]')).toHaveCount(1)
+        await page.getByRole('link', { name: 'Temizle' }).click()
+        await expect(page).toHaveURL(/\/tr\/galeri$/)
+      }
+    }
+  })
+
+  test('phone: photos start within the first viewport', async ({ browser, baseURL }) => {
+    const page = await browser.newPage({ baseURL, viewport: { width: 390, height: 844 } })
+    await page.goto('/tr/galeri')
+    const top = await page.locator('[data-gallery-item]:visible').first().evaluate((e) => e.getBoundingClientRect().top)
+    expect(top).toBeLessThan(844 / 2)
+    await page.close()
+  })
+
+  test('without JS every filter stays reachable', async ({ browser, baseURL }) => {
+    const page = await browser.newPage({ baseURL, javaScriptEnabled: false })
+    await page.goto('/tr/galeri')
+    if (await page.locator('#filter-more').count()) await expect(page.locator('#filter-more')).toBeVisible()
+    await page.close()
+  })
+
   test('image page with related photos', async ({ page }) => {
     await page.goto('/tr/galeri')
     const href = await page.locator('[data-gallery-item]:visible').first().getAttribute('href')
@@ -70,9 +110,14 @@ test.describe('gallery', () => {
     await page.goto('/tr/galeri')
     const first = await page.locator('[data-gallery-item]:visible').evaluateAll((a) => a.map((x) => x.getAttribute('href')!))
     expect(first).toHaveLength(PAGE_SIZE)
+    // The loop guard scales with the data: the lightbox counter gives the total.
+    await page.locator('[data-gallery-item]:visible').first().click()
+    const counter = await page.getByRole('dialog').getByText(/^1 \/ \d+$/).textContent()
+    const total = Number(counter!.split('/')[1])
+    await page.keyboard.press('Escape')
     const seen = new Set(first)
     let cursor: string | null = encodeCursor(START_CURSOR_ID)
-    for (let guard = 0; cursor && guard < 60; guard++) {
+    for (let guard = 0; cursor && guard <= Math.ceil(total / PAGE_SIZE); guard++) {
       const body = (await (await request.get(`/tr/galeri/feed?cursor=${cursor}`)).json()) as { items: { href: string }[]; nextCursor: string | null }
       for (const i of body.items) {
         expect(seen.has(i.href), i.href).toBe(false)

@@ -5,7 +5,7 @@ import type { Locale } from '@/i18n/routing'
 import { categoryRank, diversify } from '@/lib/gallery/curate'
 import type { GalleryItem } from '@/lib/gallery/item'
 import { encodeCursor, galleryWhere, PAGE_SIZE, START_CURSOR_ID, type GalleryQuery } from '@/lib/gallery/query'
-import { galleryTagRows } from '@/lib/gallery/tag-rows'
+import { galleryTagRows, tagCategories } from '@/lib/gallery/tag-rows'
 import type { Category, Media, Project, Tag } from '@/payload-types'
 
 import { markFallbackAlt, type WithAltLang } from './media-alt'
@@ -162,25 +162,29 @@ export const getGalleryTags = (locale: Locale) =>
     { tags: [TAGS.tags], revalidate: HOUR },
   )()
 
-/** The gallery's chip rows: product types, then the other tags, each with enough approved photos (see galleryTagRows). */
-export async function getGalleryTagRows(tags: Awaited<ReturnType<typeof getGalleryTags>>, active?: string) {
-  return galleryTagRows(tags, tags.length ? await getPhotoTags() : [], active)
+/** The gallery's chip rows for the selected service (if any): see galleryTagRows. */
+export async function getGalleryTagRows(tags: Awaited<ReturnType<typeof getGalleryTags>>, active?: string, category?: number) {
+  const photos = tags.length ? await getPhotoTags() : []
+  const tag = active ? tags.find((x) => x.slug === active) : undefined
+  // Services the active tag has photos in: the other service chips drop the tag instead of leading to an empty page.
+  return { ...galleryTagRows(tags, photos, { active, category }), tagCategories: tag ? tagCategories(photos, tag.id) : undefined }
 }
 
-// Each approved gallery photo's tag ids (photos without a tag left out), for the chips' photo threshold.
+// Each approved gallery photo's service and tag ids (photos without a tag left out), for the chips' per-service counts.
 const getPhotoTags = unstable_cache(
   async () => {
     const res = await (await getPayload()).find({
       collection: 'media',
       where: { and: [...galleryWhere({}).and, { tags: { exists: true } }] },
-      select: { tags: true },
+      select: { category: true, tags: true },
       depth: 0,
       pagination: false,
       overrideAccess: false,
     })
-    return res.docs.map((d) => (d.tags ?? []).map((t) => (typeof t === 'number' ? t : t.id)))
+    const id = (r: number | { id: number }) => (typeof r === 'number' ? r : r.id)
+    return res.docs.map((d) => ({ category: d.category == null ? null : id(d.category), tags: (d.tags ?? []).map(id) }))
   },
-  ['galleryPhotoTags'],
+  ['galleryPhotoTags', 'v2'],
   { tags: [TAGS.media, TAGS.tags], revalidate: HOUR },
 )
 

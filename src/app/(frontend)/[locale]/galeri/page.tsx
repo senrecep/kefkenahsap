@@ -37,7 +37,7 @@ export default async function GalleryPage({ params, searchParams }: Props) {
 
   const [t, { categories, tags, category, tag, unknown }] = await Promise.all([getTranslations('Gallery'), resolveGalleryFilter(locale, q)])
   const [rows, page] = await Promise.all([
-    getGalleryTagRows(tags, q.tag),
+    getGalleryTagRows(tags, q.tag, category?.id),
     unknown
       ? { items: [], total: 0, nextCursor: null }
       : !category && !tag
@@ -55,7 +55,7 @@ export default async function GalleryPage({ params, searchParams }: Props) {
       <Container className="pt-8 md:pt-12">
         <h1 className="text-[clamp(2rem,4vw,3rem)]">{category ? `${t('title')}: ${category.name}` : t('title')}</h1>
         <p className="mt-3 max-w-[60ch] text-ink-soft">{t('intro')}</p>
-        <GalleryFilters locale={locale} categories={categories} types={rows.types} tags={rows.others} active={{ category: q.category, tag: q.tag }} className="mt-6 mb-8" />
+        <GalleryFilters locale={locale} categories={categories} types={rows.types} moreTypes={rows.moreTypes} tags={rows.others} tagCategories={rows.tagCategories} active={{ category: q.category, tag: q.tag }} className="mt-6 mb-6 md:mb-8" />
         {page.items.length ? (
           <GalleryGrid key={JSON.stringify(filter)} initial={page.items} total={page.total} nextCursor={page.nextCursor} feedUrl={feedUrl} moreHref={moreHref} priority />
         ) : (
