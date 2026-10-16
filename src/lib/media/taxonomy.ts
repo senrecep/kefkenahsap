@@ -47,6 +47,13 @@ export const moveAction = (current: number | undefined, from: number, to: number
 export const remedyDue = (current: { filename?: string | null; filesize?: number | null }, planned: { filename: string; filesize: number }) =>
   current.filename === planned.filename && current.filesize === planned.filesize
 
+/**
+ * An unstamped replacement that died between its upload (skipWatermark leaves 'none') and the follow-up write of
+ * 'already': the record already holds a file of the source's size. Stamped ones end 'applied' in the upload itself.
+ */
+export const remedyUnfinished = (current: { watermark?: string | null; width?: number | null; height?: number | null }, source: { width: number; height: number }, stamp: boolean) =>
+  !stamp && current.watermark === 'none' && current.width === source.width && current.height === source.height
+
 /** Category cover: a good, landscape photo at least 1280 px wide; live photos first, then the widest, then the lowest id. */
 export function pickCover(candidates: { id: number; width: number; height: number; live: boolean; quality?: string }[]): number | undefined {
   return candidates
@@ -58,14 +65,18 @@ export function pickCover(candidates: { id: number; width: number; height: numbe
 const UPLOAD_KEYS = new Set(['cover', 'gallery', 'image', 'mobileImage', 'logo', 'ogImage', 'defaultOgImage'])
 const idOf = (v: unknown) => (typeof v === 'number' ? v : typeof v === 'object' && v && typeof (v as { id?: unknown }).id === 'number' ? (v as { id: number }).id : undefined)
 
-/** The media ids a document shows (its upload fields, at any depth and in every locale). */
+/** The media ids a document shows (its upload fields and rich-text upload nodes, at any depth and in every locale). */
 export function mediaRefs(doc: unknown, into = new Set<number>()): Set<number> {
   if (Array.isArray(doc)) for (const v of doc) mediaRefs(v, into)
-  else if (doc && typeof doc === 'object')
+  else if (doc && typeof doc === 'object') {
+    // A Lexical upload node: an image placed in rich text.
+    const node = doc as { type?: unknown; relationTo?: unknown; value?: unknown }
+    if (node.type === 'upload' && node.relationTo === 'media' && idOf(node.value) !== undefined) into.add(idOf(node.value)!)
     for (const [k, v] of Object.entries(doc)) {
       if (UPLOAD_KEYS.has(k)) for (const x of Array.isArray(v) ? v : [v]) if (idOf(x) !== undefined) into.add(idOf(x)!)
       mediaRefs(v, into)
     }
+  }
   return into
 }
 
