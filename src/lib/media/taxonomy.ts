@@ -45,6 +45,26 @@ export function tagIdsToAdd(facts: Values, meta: Values | undefined, tags: TagRe
   return { add: add.sort((a, b) => a - b), unmapped }
 }
 
+/**
+ * Owner decision (2026-10-16): approving a photo attaches the tags its tagImage suggestion names, by the rules of
+ * tagIdsToAdd (existing tags only, add-only, single-value axes kept). Returns `current` itself when nothing is added,
+ * also for a missing or malformed suggestion or one older than tagImage@2 (no tag names before it).
+ */
+export function approvalTags(suggestion: unknown, tags: TagRef[], current: number[]): number[] {
+  const s = suggestion as { promptVersion?: unknown; tags?: unknown } | null | undefined
+  const version = typeof s?.promptVersion === 'string' ? /^tagImage@(\d+)$/.exec(s.promptVersion) : null
+  if (!version || Number(version[1]) < 2 || !s?.tags || typeof s.tags !== 'object') return current
+  const meta: Values = {}
+  for (const axis of AXES) {
+    const v = (s.tags as Record<string, unknown>)[axis]
+    if (Array.isArray(v) && v.every((x) => typeof x === 'string')) meta[axis] = v
+  }
+  const axisOf = new Map(tags.map((t) => [t.id, t.axis]))
+  const { add } = tagIdsToAdd({}, meta, tags, current.flatMap((id) => (axisOf.has(id) ? [{ id, axis: axisOf.get(id)! }] : [])))
+  const fresh = add.filter((id) => !current.includes(id))
+  return fresh.length ? [...current, ...fresh] : current
+}
+
 /** Owner decision (2026-10-16): every imported photo is published, except one the tagger doubted. */
 export const importStatus = (meta: { categoryAgrees: boolean; confidence: number }): 'approved' | 'pending' =>
   !meta.categoryAgrees && meta.confidence <= 0.3 ? 'pending' : 'approved'
