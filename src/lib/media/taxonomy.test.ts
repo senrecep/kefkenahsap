@@ -33,6 +33,13 @@ describe('tagIdsToAdd', () => {
     expect(r.unmapped).toEqual(['setting:dış mekân'])
   })
 
+  it('maps the roof-frame facts (other:cati-kirisi, other:roof-truss-frame) to the çatı iskeleti type tag', () => {
+    const tags: TagRef[] = [...TAGS, { id: 11, axis: 'type', slug: 'cati-iskeleti', name: 'Çatı iskeleti / kiriş' }]
+    const r = tagIdsToAdd({ type: ['other:cati-kirisi', 'other:roof-truss-frame'] }, undefined, tags, [])
+    expect(r.add).toEqual([11])
+    expect(r.unmapped).toEqual([])
+  })
+
   it('lists values without a tag, including other:* types', () => {
     expect(tagIdsToAdd({ type: ['other:tabela', 'deck'], setting: ['orman'] }, undefined, TAGS, []).unmapped).toEqual(['type:other:tabela', 'setting:orman'])
   })

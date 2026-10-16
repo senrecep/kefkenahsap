@@ -1,6 +1,7 @@
 {
   "note": "#171: ru/de/ar names and Latin slugs for the taxonomy v0 tags loaded by scripts/seed/tags-type-axis.ts (tr/en come from image-work/taxonomy/v0.json). Keyed by the v0 tr slug.",
   "tags": {
+    "cati-iskeleti": { "ru": ["Каркас крыши / стропила", "karkas-kryshi"], "de": ["Dachstuhl / Dachbalken", "dachstuhl"], "ar": ["هيكل السقف / عوارض خشبية", "haykal-al-saqf"] },
     "kopek-kulubesi": { "ru": ["Будка для собаки", "budka-dlya-sobaki"], "de": ["Hundehütte", "hundehuette"], "ar": ["بيت كلب", "bayt-kalb"] },
     "bahce-kulubesi": { "ru": ["Садовый сарай", "sadovyy-saray"], "de": ["Gartenhaus", "gartenhaus"], "ar": ["مخزن حديقة", "makhzan-hadiqa"] },
     "oyun-evi": { "ru": ["Детский игровой домик", "detskiy-igrovoy-domik"], "de": ["Kinderspielhaus", "kinderspielhaus"], "ar": ["بيت ألعاب للأطفال", "bayt-alaab-lil-atfal"] },

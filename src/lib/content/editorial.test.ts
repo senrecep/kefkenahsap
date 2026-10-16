@@ -283,7 +283,7 @@ describe('taxonomyTagDefs', () => {
     const taxonomy = parseTaxonomyV0(read('seed/editorial/taxonomy-v0.json'))
     if (!table.ok || !taxonomy.ok) throw new Error('seed/editorial taxonomy files do not parse')
     const r = taxonomyTagDefs(taxonomy.value.tags, table.value.tags)
-    // 45 product types + ticari, giris + 5 new finishes.
-    expect(r.ok && r.value.length).toBe(52)
+    // 45 product types + çatı iskeleti (owner, 2026-10-16) + ticari, giris + 5 new finishes.
+    expect(r.ok && r.value.length).toBe(53)
   })
 })

@@ -10,6 +10,8 @@ const SINGLE: ReadonlySet<Axis> = new Set(['wood', 'finish', 'stage'])
 // Facts and tagImage name stages in English; the tags are Turkish. A finished photo has no stage tag; a workshop photo
 // shows the work in progress.
 const STAGE_SLUG: Record<string, string | null> = { before: 'oncesi', after: 'sonrasi', process: 'uygulama-asamasi', workshop: 'uygulama-asamasi', detail: 'detay', finished: null }
+// Owner decision (2026-10-16): the frequent roof-frame facts get their own type tag.
+const TYPE_ALIAS: Record<string, string> = { 'other:cati-kirisi': 'cati-iskeleti', 'other:roof-truss-frame': 'cati-iskeleti' }
 const norm = (s: string) => s.trim().toLocaleLowerCase('tr')
 
 /**
@@ -25,7 +27,7 @@ export function tagIdsToAdd(facts: Values, meta: Values | undefined, tags: TagRe
     const values = facts[axis]?.length ? facts[axis] : (meta?.[axis] ?? [])
     if (SINGLE.has(axis) && current.some((t) => t.axis === axis)) continue
     for (const value of values) {
-      const key = axis === 'stage' && value in STAGE_SLUG ? STAGE_SLUG[value] : value
+      const key = axis === 'stage' && value in STAGE_SLUG ? STAGE_SLUG[value] : axis === 'type' ? (TYPE_ALIAS[value] ?? value) : value
       if (key === null) continue
       const tag = tags.find((t) => t.axis === axis && (t.slug === key || norm(t.name) === norm(key!)))
       if (!tag) unmapped.push(`${axis}:${value}`)
