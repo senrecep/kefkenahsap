@@ -1,3 +1,4 @@
+import { CATEGORY_RENAMES } from '@/seed/categories'
 import { fileKey } from '@/seed/order'
 
 export type LegacyTarget = { file: string; category: string }
@@ -11,10 +12,11 @@ export type LegacyMaps = {
 }
 export type LegacyResult = { kind: 'redirect'; status: 301; location: string } | { kind: 'gone' } | { kind: 'pass' }
 
-// Old WordPress pages → new TR paths (TR slugs were kept on purpose).
+// Old WordPress pages → new TR paths (TR slugs were kept on purpose). A renamed category's WP page goes to its new TR
+// path; until categories-rename.ts has run, the category page sends that on to the old slug still live (#172).
 const PAGES: Record<string, string> = {
+  ...Object.fromEntries(CATEGORY_RENAMES.map(({ key, to }) => [key, `/tr/${to.tr}`])),
   'kefken-ahsap-dekorasyon': '/tr',
-  'ahsap-yapilar': '/tr/ahsap-yapilar',
   'boya-tamir-ve-bakim': '/tr/boya-tamir-ve-bakim',
   'ciceklik-ve-oturma-grubu': '/tr/ciceklik-ve-oturma-grubu',
   'deck-ve-zeminler': '/tr/deck-ve-zeminler',

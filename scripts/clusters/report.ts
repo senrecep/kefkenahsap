@@ -17,7 +17,7 @@ const { model, options, clusters } = JSON.parse(readFileSync(CLUSTERS_JSON, 'utf
 const { candidates } = JSON.parse(readFileSync(path.resolve(ROOT, 'seed/clusters/candidates.json'), 'utf8')) as { candidates: unknown[] }
 const payload = await getPayload({ config: await config })
 const docs = path.resolve(ROOT, 'docs/clusters')
-const folderOf = new Map(SEED_CATEGORIES.map((c) => [c.slug.tr, c]))
+const folderOf = new Map(SEED_CATEGORIES.map((c) => [c.key, c]))
 
 const sections: string[] = []
 for (const c of clusters) {
@@ -25,7 +25,7 @@ for (const c of clusters) {
   const media = await payload.find({ collection: 'media', where: { seedKey: { in: c.seedKeys } }, limit: 0, pagination: false, depth: 0 })
   const name = new Map(media.docs.map((m) => [m.seedKey, m.seoFilename]))
   if (name.size !== c.seedKeys.length) throw new Error(`cluster ${c.n}: ${c.seedKeys.length - name.size} photos not in the DB`)
-  await contactSheet(c.seedKeys.map((k) => path.join(DATA, cat.folder, k.slice(c.category.length + 1))), path.join(docs, `${c.n}.webp`))
+  await contactSheet(c.seedKeys.map((k) => path.join(DATA, cat.folder!, k.slice(c.category.length + 1))), path.join(docs, `${c.n}.webp`))
   const range = c.from ? (c.from === c.to ? c.from : `${c.from} – ${c.to}`) : 'bilinmiyor'
   sections.push(
     [

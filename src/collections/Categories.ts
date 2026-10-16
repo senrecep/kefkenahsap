@@ -36,7 +36,9 @@ export const Categories: CollectionConfig = {
       unique: true,
       index: true,
       hooks: { beforeValidate: [slugFrom('name')] },
-      validate: (v: unknown) => (typeof v === 'string' && RESERVED_CATEGORY_SLUGS.has(v) ? 'Bu adres sitede başka bir sayfaya ait; farklı bir slug seçin.' : validSlug(v)),
+      // An unchanged slug passes: before categories-rename.ts runs, the renamed category still holds its old (now reserved) slug.
+      validate: (v: unknown, { previousValue }: { previousValue?: unknown }) =>
+        typeof v === 'string' && v !== previousValue && RESERVED_CATEGORY_SLUGS.has(v) ? 'Bu adres sitede başka bir sayfaya ait; farklı bir slug seçin.' : validSlug(v),
       admin: { position: 'sidebar', description: 'Boş bırakılırsa addan üretilir.' },
     },
     {

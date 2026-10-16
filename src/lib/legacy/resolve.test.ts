@@ -4,7 +4,10 @@ import { resolveLegacy, type LegacyMaps } from './resolve'
 
 const maps: LegacyMaps = {
   media: { '2018/09/1-1': { file: 'havuz-kenari-iroko-deck.webp', category: 'deck-ve-zeminler' }, '2021/02/kapidolap2': { file: 'surgulu-kapi.webp', category: 'kapi-dolap-ve-seperator' } },
-  attachments: { '/korkuluk-ve-cit/whatsapp-image-2021-06-08/': { file: 'bahce-korkulugu.webp', category: 'korkuluk-ve-cit' } },
+  attachments: {
+    '/korkuluk-ve-cit/whatsapp-image-2021-06-08/': { file: 'bahce-korkulugu.webp', category: 'korkuluk-ve-cit' },
+    '/ahsap-yapilar/4-10/': { file: 'ahsap-sundurma.webp', category: 'ahsap-yapilar' },
+  },
   attachmentPaths: new Set(['/korkuluk-ve-cit/whatsapp-image-2021-06-08/', '/korkuluk-ve-cit/whatsapp-image-1999-01-01/', '/33-2/', '/deck-ve-zeminler/attachment/13/']),
 }
 const CDN = 'https://cdn.kefkenahsap.com'
@@ -53,6 +56,20 @@ describe('resolveLegacy — pages', () => {
   it('sends matched attachment pages to the image page and unmatched ones to 410', () => {
     expect(r('/korkuluk-ve-cit/whatsapp-image-2021-06-08/')).toEqual({ kind: 'redirect', status: 301, location: '/tr/galeri/bahce-korkulugu' })
     expect(r('/korkuluk-ve-cit/whatsapp-image-1999-01-01/')).toEqual({ kind: 'gone' })
+  })
+})
+
+describe('resolveLegacy — renamed categories (#172)', () => {
+  it('sends the old WordPress page straight to the new TR slug (one hop)', () => {
+    expect(r('/ahsap-yapilar/')).toEqual({ kind: 'redirect', status: 301, location: '/tr/sundurma-ve-ahsap-cati' })
+  })
+  it('leaves the localized category paths to the category page (it knows which slug is live)', () => {
+    expect(r('/tr/ahsap-yapilar')).toEqual({ kind: 'pass' })
+    expect(r('/en/wooden-structures')).toEqual({ kind: 'pass' })
+    expect(r('/tr/sundurma-ve-ahsap-cati')).toEqual({ kind: 'pass' })
+  })
+  it('still sends old attachment pages under the category to the image page', () => {
+    expect(r('/ahsap-yapilar/4-10/')).toEqual({ kind: 'redirect', status: 301, location: '/tr/galeri/ahsap-sundurma' })
   })
 })
 

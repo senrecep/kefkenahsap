@@ -113,6 +113,39 @@ bun run payload run scripts/seed/guides-finish.ts -- --dry-run && bun run payloa
 bun run payload run scripts/seed/editorial-swaps.ts -- --dry-run && bun run payload run scripts/seed/editorial-swaps.ts
 ```
 
+### Category rename and new categories (#172)
+
+Run only after the owner has approved it. Until then, the deployed code works with the old data. "Ahşap Yapılar" stays live under its old slugs, and the new slugs (`/tr/sundurma-ve-ahsap-cati`…) redirect to them.
+
+1. **`scripts/seed/categories-rename.ts`** renames the same record to "Sundurma ve Ahşap Çatı" (`CATEGORY_RENAMES` in `src/seed/categories.ts`), so photos, cover, projects and order stay.
+   - Per locale, name and slug move only while they still hold the old seeded value.
+   - shortDesc, body and FAQ are replaced only while the intro is still the old seeded one. Otherwise only empty fields are filled.
+   - Two cases print `WARNING`: the name or slug moves but the owner's edited shortDesc or body stays, or `seo.title`/`seo.description` are set. Check those by hand.
+   - A published category with a newer unpublished draft is skipped and the run exits 1. Payload builds every write on the latest version, so publishing the rename would publish that draft as well. `--publish-drafts` does exactly that, on purpose. Use it only after you have looked at the draft (e.g. a seeded `content.ts` draft) in the admin.
+2. **`scripts/seed/categories-new.ts`** creates the five new categories with their texts, published in all five locales.
+   - An existing one only gets its empty fields filled.
+   - A published one with an unpublished draft is skipped and the run exits 1.
+3. **`scripts/seed/editorial-swaps.ts`** moves the Sundurma cover from the cabin photo to `ahsap-yapilar/60.webp`, only while the cover is still the old pick.
+4. **Make it live:** redeploy the app, or open any category in the admin and save it once (that save runs inside Next and invalidates the category cache). Do this as the last step every time. Without it the running site keeps serving the old answers for up to an hour (see "Cache" below).
+
+```bash
+bun run payload run scripts/seed/categories-rename.ts -- --dry-run      # add --publish-drafts if it lists a draft you checked
+bun run payload run scripts/seed/categories-rename.ts
+bun run payload run scripts/seed/categories-new.ts -- --dry-run && bun run payload run scripts/seed/categories-new.ts
+bun run payload run scripts/seed/editorial-swaps.ts -- --dry-run && bun run payload run scripts/seed/editorial-swaps.ts
+# then step 4: redeploy, or save a category once in the admin
+```
+
+Every script exits 0 on a clean run. A re-run writes nothing.
+
+**Cache:** the scripts run outside Next, so they cannot invalidate the site's `unstable_cache`, which revalidates after 1 hour. Until it does, the running app still serves the old answers:
+- `/tr/sundurma-ve-ahsap-cati` keeps redirecting to `/tr/ahsap-yapilar`, which still renders.
+- The five new categories answer 404 and are missing from the nav and sitemap.
+
+To make the change live at once, redeploy, or save the category once in the admin (that save runs inside Next and invalidates the tags).
+
+After the rename, every old localized path (`/tr/ahsap-yapilar`, `/en/wooden-structures`, `/ru/derevyannye-konstruktsii`, `/de/holzbauten`, `/ar/hayakil-khashabiya`) answers 308 (permanent) to the new path with the query kept. Before it, the new paths answer 307 (temporary) to the old ones. The check for which slug exists is never cached, so the two can never redirect to each other. The category page does this on a miss (`src/lib/category/rename.ts`). The WordPress `/ahsap-yapilar/` answers 301 to `/tr/sundurma-ve-ahsap-cati`. The old slugs are reserved: no other category may take them.
+
 ## Observability
 
 ### GlitchTip (errors)

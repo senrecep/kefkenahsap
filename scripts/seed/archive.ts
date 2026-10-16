@@ -47,9 +47,9 @@ let skipped = 0
 
 try {
   for (const cat of SEED_CATEGORIES) {
-    const dir = path.join(META, cat.slug.tr)
+    const dir = path.join(META, cat.key)
     if (!existsSync(dir)) continue
-    const category = await payload.find({ collection: 'categories', locale: 'tr', where: { slug: { equals: cat.slug.tr } }, limit: 1, depth: 0 })
+    const category = await payload.find({ collection: 'categories', locale: 'tr', where: { slug: { in: [cat.slug.tr, cat.key] } }, limit: 1, depth: 0 })
     const categoryId = category.docs[0]?.id
     if (!categoryId) throw new Error(`category ${cat.slug.tr} missing (run seed.ts first)`)
 
@@ -108,7 +108,7 @@ try {
       }
       created++
     }
-    console.log(`  ${cat.slug.tr}: ${files.length} archive photos`)
+    console.log(`  ${cat.key}: ${files.length} archive photos`)
   }
 } finally {
   rmSync(tmp, { recursive: true, force: true })

@@ -45,9 +45,9 @@
     }
   ],
   "categoryCovers": {
-    "ahsap-yapilar": {
-      "seedKey": "ahsap-yapilar/55-1.webp",
-      "reason": "Timber cabin on a stone base with lawn: the whole building reads in a 21:9 crop."
+    "sundurma-ve-ahsap-cati": {
+      "seedKey": "ahsap-yapilar/60.webp",
+      "reason": "#172: dark timber eaves and rafters on a white house, single watermark; the old cover (a cabin) belongs to Ahşap Ev ve Bungalov now. No live porch photo is rated good; this is the best ok one."
     },
     "deck-ve-zeminler": {
       "seedKey": "deck-ve-zeminler/IMG_20180503_114721.jpg1_.webp",
@@ -117,7 +117,7 @@
       "reason": "Maintenance of decks built by another company: widens who can call."
     },
     {
-      "category": "ahsap-yapilar",
+      "category": "sundurma-ve-ahsap-cati",
       "index": 3,
       "reason": "Who does the work: own workshop and own crew, true for every service."
     }
@@ -151,6 +151,11 @@
         "from": "korkuluk-ve-cit/img7-1.webp",
         "to": "korkuluk-ve-cit/WhatsApp Image 2026-08-07 at 17.59.57 (2).webp",
         "reason": "See categoryCovers.korkuluk-ve-cit."
+      },
+      "sundurma-ve-ahsap-cati": {
+        "from": "ahsap-yapilar/55-1.webp",
+        "to": "ahsap-yapilar/60.webp",
+        "reason": "#172: see categoryCovers.sundurma-ve-ahsap-cati. Run after categories-rename.ts (found by the new TR slug)."
       }
     },
     "projectCovers": {

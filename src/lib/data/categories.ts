@@ -13,6 +13,15 @@ const HOUR = 3600
 const published = { _status: { equals: 'published' } } as const
 const approved = { status: { equals: 'approved' } } as const
 
+/**
+ * #172: is a published category live under this slug right now? Deliberately not cached: the rename redirect asks it
+ * after a (possibly cached) miss, and a stale answer here could point to a slug that no longer exists.
+ */
+export async function categorySlugExists(locale: Locale, slug: string): Promise<boolean> {
+  const res = await (await getPayload()).find({ collection: 'categories', locale, where: { and: [published, { slug: { equals: slug } }] }, limit: 1, depth: 0, pagination: false, select: {} })
+  return res.docs.length > 0
+}
+
 /** Published category by its localized slug, with the first `limit` approved photos in the saved order. */
 export const getCategory = (locale: Locale, slug: string, limit: number) =>
   unstable_cache(
