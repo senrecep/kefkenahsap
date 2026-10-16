@@ -1,10 +1,11 @@
-// #171: loads the taxonomy v0 tags (image-work/taxonomy/v0.json): every product type (axis `type`), the new settings
-// `ticari` and `giris`, and the new finishes. tr/en names and slugs come from v0, ru/de/ar from
-// seed/editorial/tags-type-axis.json (see taxonomyTagDefs). Upsert by tr slug, fill-only: a missing tag is created; an
+// #171: loads the taxonomy v0 tags (seed/editorial/taxonomy-v0.json, the committed subset of
+// image-work/taxonomy/v0.json): every product type (axis `type`), the new settings `ticari` and `giris`, and the new
+// finishes. tr/en names and slugs come from v0, ru/de/ar from
+// seed/editorial/tags-type-axis.json (see taxonomyTagDefs). Upsert by tr slug (else en slug), fill-only: a missing tag is created; an
 // existing one only gets its empty locale names/slugs filled, so an owner's rename is kept and a re-run writes nothing.
 // A tag found on another axis is left as is and listed. No photo is tagged here.
 // --dry-run writes nothing; a non-local database needs --yes; SITE_ENV=production is refused.
-// Run: bun run payload run scripts/seed/tags-type-axis.ts [-- --dry-run | --yes] [--v0=<path to v0.json>]
+// Run: bun run payload run scripts/seed/tags-type-axis.ts [-- --dry-run | --yes] [--v0=<path to a v0.json>]
 import { existsSync, readFileSync } from 'node:fs'
 import path from 'node:path'
 import { getPayload } from 'payload'
@@ -19,15 +20,10 @@ import { fillLocales, guardTarget, unwrap } from './i18n'
 type Locale = Config['locale']
 const dryRun = process.argv.includes('--dry-run')
 const dry = dryRun ? '[dry run] ' : ''
-const v0Arg = process.argv.find((a) => a.startsWith('--v0='))?.slice('--v0='.length)
-// image-work/ sits next to the main checkout (../) and two levels above a worktree (../../).
-const v0Path =
-  v0Arg ??
-  ['../image-work/taxonomy/v0.json', '../../image-work/taxonomy/v0.json']
-    .map((p) => path.resolve(process.cwd(), p))
-    .find((p) => existsSync(p))
-if (!v0Path || !existsSync(v0Path)) {
-  console.error('taxonomy v0.json not found: pass --v0=<path>')
+// Default: the committed subset of image-work/taxonomy/v0.json; --v0=<path> reads another copy (e.g. a newer v0.json).
+const v0Path = path.resolve(process.cwd(), process.argv.find((a) => a.startsWith('--v0='))?.slice('--v0='.length) ?? 'seed/editorial/taxonomy-v0.json')
+if (!existsSync(v0Path)) {
+  console.error(`taxonomy file not found: ${v0Path}`)
   process.exit(1)
 }
 const translations = unwrap(
@@ -52,16 +48,11 @@ const failed: string[] = []
 for (const def of defs) {
   const label = `tag ${def.slug.tr} (${def.axis})`
   try {
-    const found = (
-      await payload.find({
-        collection: 'tags',
-        locale: 'tr',
-        where: { slug: { equals: def.slug.tr } },
-        limit: 1,
-        depth: 0,
-        select: { axis: true },
-      })
-    ).docs[0]
+    // Matched by tr slug, else by en slug (a tag the owner renamed in TR but kept in EN is still the same tag).
+    let found: { id: number; axis: string } | undefined
+    for (const locale of ['tr', 'en'] as const) {
+      found ??= (await payload.find({ collection: 'tags', locale, where: { slug: { equals: def.slug[locale] } }, limit: 1, depth: 0, select: { axis: true } })).docs[0]
+    }
     if (found && found.axis !== def.axis) {
       otherAxis.push(`${def.slug.tr} (${found.axis}, v0: ${def.axis})`)
       continue

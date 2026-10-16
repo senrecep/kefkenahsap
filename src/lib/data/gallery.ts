@@ -146,10 +146,14 @@ export async function getUnfilteredGallery(locale: Locale, pages: number): Promi
   }
 }
 
+/** Every tag, unpaginated: 45 product types alone pass Payload's default page size, so a limit would drop chips and links. */
+export const galleryTagsQuery = (locale: Locale) =>
+  ({ collection: 'tags', locale, pagination: false, sort: 'name', depth: 0, overrideAccess: false, select: { name: true, slug: true, axis: true } }) as const
+
 export const getGalleryTags = (locale: Locale) =>
   unstable_cache(
     async () => {
-      const res = await (await getPayload()).find({ collection: 'tags', locale, limit: 100, sort: 'name', depth: 0, overrideAccess: false, select: { name: true, slug: true, axis: true } })
+      const res = await (await getPayload()).find(galleryTagsQuery(locale))
       // The database sorts bytewise (Ç, İ, Ö after Z); chips follow the locale's alphabet.
       const collator = new Intl.Collator(locale)
       return res.docs.filter((d) => d.slug && d.name).sort((x, y) => collator.compare(x.name, y.name))

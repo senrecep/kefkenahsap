@@ -75,7 +75,7 @@ export async function GalleryFilters({
     )
   const label = 'pb-2 text-[0.9rem] text-ink-soft md:flex md:min-h-11 md:w-24 md:shrink-0 md:items-center md:pb-0'
   // One tag at a time (`?etiket=`): picking a chip in either row replaces the other row's choice.
-  const tagRow = (id: string, title: string, options: Option[]) =>
+  const tagRow = (id: string, title: string, options: Option[], event: string) =>
     options.length > 0 && (
       <div className="md:flex md:items-start md:gap-3">
         <p id={id} className={label}>
@@ -91,7 +91,7 @@ export async function GalleryFilters({
                 href={href({ kategori: active.category, etiket: current ? undefined : o.slug })}
                 aria-current={current ? 'page' : undefined}
                 data-umami-event="filter_use"
-                data-umami-event-filter="etiket"
+                data-umami-event-filter={event}
                 className={current ? tagOn : tagOff}
               >
                 {o.name}
@@ -115,8 +115,8 @@ export async function GalleryFilters({
         </p>
         {services}
       </div>
-      {tagRow('filter-types', t('typeFilter'), types)}
-      {tagRow('filter-tags', t('tagFilter'), tags)}
+      {tagRow('filter-types', t('typeFilter'), types, 'tur')}
+      {tagRow('filter-tags', t('tagFilter'), tags, 'etiket')}
     </nav>
   )
 }

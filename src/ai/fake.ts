@@ -11,7 +11,7 @@ export const FAKE_TAG_IMAGE = {
   alt: { tr: 'Havuz kenarında açık renkli ahşap deck zemin', en: 'Light timber decking beside a pool' },
   caption: { tr: 'Bahçe havuzu çevresine döşenen deck.', en: 'Decking laid around a garden pool.' },
   seoFilename: 'havuz-kenari-ahsap-deck',
-  tags: { wood: [], setting: ['havuz kenarı'], finish: ['doğal'], stage: ['finished'] },
+  tags: { type: [] as string[], wood: [], setting: ['havuz kenarı'], finish: ['doğal'], stage: ['finished'] },
   categoryAgrees: true,
   confidence: 0.9,
 }

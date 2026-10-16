@@ -10,8 +10,8 @@ export const TagImageSchema = z.object({
   caption: z.object({ tr: z.string().max(240), en: z.string().max(240) }),
   seoFilename: z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/).max(60),
   tags: z.object({
-    // #171: product types, names from the list in the user message (tagImageTypesLine); a v2 output has none.
-    type: z.array(z.string()).max(3).default([]),
+    // #171: product types, names from the list in the user message (tagImageTypesLine); [] when unsure.
+    type: z.array(z.string()).max(3),
     wood: z.array(z.string()).max(3),
     setting: z.array(z.string()).max(4),
     finish: z.array(z.string()).max(3),
@@ -21,6 +21,8 @@ export const TagImageSchema = z.object({
   confidence: z.number().min(0).max(1),
 })
 export type TagImageOutput = z.infer<typeof TagImageSchema>
+/** Reads stored suggestions and seed metadata: one written before tagImage@3 has no `type`, which reads as none. */
+export const StoredTagImageSchema = TagImageSchema.extend({ tags: TagImageSchema.shape.tags.extend({ type: TagImageSchema.shape.tags.shape.type.default([]) }) })
 
 export const tagImageSystem = (today: string) => `Sen bir ahşap dekorasyon firmasının (Kefken Ahşap Dekorasyon, İstanbul) gerçek iş fotoğraflarını tanımlayan bir editörsün.
 Bugünün tarihi: ${today}.

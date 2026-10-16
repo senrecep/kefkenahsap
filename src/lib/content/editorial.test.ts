@@ -1,5 +1,5 @@
 // #150: editorial picks — gallery tag mapping, homepage FAQ assembled from category FAQs, homepage layout fill.
-import { existsSync, readdirSync, readFileSync } from 'node:fs'
+import { readdirSync, readFileSync } from 'node:fs'
 import path from 'node:path'
 import { describe, expect, it } from 'vitest'
 
@@ -274,14 +274,13 @@ describe('taxonomyTagDefs', () => {
     expect(!r.ok && r.errors[0]?.description).toContain('bank')
   })
 
-  it('the committed translation table covers what v0 loads', () => {
-    const v0File = path.resolve(process.cwd(), '../../image-work/taxonomy/v0.json')
-    const table = parseTagTranslations(readFileSync(path.resolve(process.cwd(), 'seed/editorial/tags-type-axis.json'), 'utf8'))
-    expect(table.ok).toBe(true)
-    // v0 lives outside the repo (image-work/); only checked where it is present.
-    if (!table.ok || !existsSync(v0File)) return
-    const taxonomy = parseTaxonomyV0(readFileSync(v0File, 'utf8'))
-    const r = taxonomy.ok ? taxonomyTagDefs(taxonomy.value.tags, table.value.tags) : taxonomy
+  it('the committed translation table covers what the vendored v0 subset loads', () => {
+    const read = (p: string) => readFileSync(path.resolve(process.cwd(), p), 'utf8')
+    const table = parseTagTranslations(read('seed/editorial/tags-type-axis.json'))
+    const taxonomy = parseTaxonomyV0(read('seed/editorial/taxonomy-v0.json'))
+    if (!table.ok || !taxonomy.ok) throw new Error('seed/editorial taxonomy files do not parse')
+    const r = taxonomyTagDefs(taxonomy.value.tags, table.value.tags)
+    // 45 product types + ticari, giris + 5 new finishes.
     expect(r.ok && r.value.length).toBe(52)
   })
 })
