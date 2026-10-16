@@ -37,7 +37,7 @@ export default async function GalleryPage({ params, searchParams }: Props) {
 
   const [t, { categories, tags, category, tag, unknown }] = await Promise.all([getTranslations('Gallery'), resolveGalleryFilter(locale, q)])
   const [rows, page] = await Promise.all([
-    getGalleryTagRows(tags, q.tag),
+    getGalleryTagRows(tags, q.tag, category?.id),
     unknown
       ? { items: [], total: 0, nextCursor: null }
       : !category && !tag
