@@ -34,3 +34,8 @@ export function galleryTagRows<T extends { id: number; slug?: string | null; axi
     others: shown.filter((t) => t.axis !== 'type'),
   }
 }
+
+/** The services (category ids) with an approved photo carrying `tagId`: a service chip keeps the tag only into these. */
+export function tagCategories(photos: PhotoTags[], tagId: number): number[] {
+  return [...new Set(photos.flatMap((p) => (p.category !== null && p.tags.includes(tagId) ? [p.category] : [])))]
+}

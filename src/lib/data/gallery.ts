@@ -5,7 +5,7 @@ import type { Locale } from '@/i18n/routing'
 import { categoryRank, diversify } from '@/lib/gallery/curate'
 import type { GalleryItem } from '@/lib/gallery/item'
 import { encodeCursor, galleryWhere, PAGE_SIZE, START_CURSOR_ID, type GalleryQuery } from '@/lib/gallery/query'
-import { galleryTagRows } from '@/lib/gallery/tag-rows'
+import { galleryTagRows, tagCategories } from '@/lib/gallery/tag-rows'
 import type { Category, Media, Project, Tag } from '@/payload-types'
 
 import { markFallbackAlt, type WithAltLang } from './media-alt'
@@ -164,7 +164,10 @@ export const getGalleryTags = (locale: Locale) =>
 
 /** The gallery's chip rows for the selected service (if any): see galleryTagRows. */
 export async function getGalleryTagRows(tags: Awaited<ReturnType<typeof getGalleryTags>>, active?: string, category?: number) {
-  return galleryTagRows(tags, tags.length ? await getPhotoTags() : [], { active, category })
+  const photos = tags.length ? await getPhotoTags() : []
+  const tag = active ? tags.find((x) => x.slug === active) : undefined
+  // Services the active tag has photos in: the other service chips drop the tag instead of leading to an empty page.
+  return { ...galleryTagRows(tags, photos, { active, category }), tagCategories: tag ? tagCategories(photos, tag.id) : undefined }
 }
 
 // Each approved gallery photo's service and tag ids (photos without a tag left out), for the chips' per-service counts.

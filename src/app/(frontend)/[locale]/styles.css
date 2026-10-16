@@ -90,7 +90,8 @@
   mask-image: linear-gradient(to right, #000 calc(100% - 2.5rem), transparent);
   &:dir(rtl) { mask-image: linear-gradient(to left, #000 calc(100% - 2.5rem), transparent); }
   & > * { scroll-snap-align: start; }
-  @media (pointer: fine) { scrollbar-width: thin; scrollbar-color: var(--color-line) transparent; }
+  /* Mouse: the previous/next arrows sit over the ends, so scrolled-to and focused chips keep clear of them. */
+  @media (pointer: fine) { scroll-padding-inline: 3rem; }
 }
 
 /* Arabic letters join: any tracking (tracking-tight/-wide) breaks the joins, and there is no uppercase.

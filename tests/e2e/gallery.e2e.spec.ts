@@ -110,9 +110,14 @@ test.describe('gallery', () => {
     await page.goto('/tr/galeri')
     const first = await page.locator('[data-gallery-item]:visible').evaluateAll((a) => a.map((x) => x.getAttribute('href')!))
     expect(first).toHaveLength(PAGE_SIZE)
+    // The loop guard scales with the data: the lightbox counter gives the total.
+    await page.locator('[data-gallery-item]:visible').first().click()
+    const counter = await page.getByRole('dialog').getByText(/^1 \/ \d+$/).textContent()
+    const total = Number(counter!.split('/')[1])
+    await page.keyboard.press('Escape')
     const seen = new Set(first)
     let cursor: string | null = encodeCursor(START_CURSOR_ID)
-    for (let guard = 0; cursor && guard < 60; guard++) {
+    for (let guard = 0; cursor && guard <= Math.ceil(total / PAGE_SIZE); guard++) {
       const body = (await (await request.get(`/tr/galeri/feed?cursor=${cursor}`)).json()) as { items: { href: string }[]; nextCursor: string | null }
       for (const i of body.items) {
         expect(seen.has(i.href), i.href).toBe(false)

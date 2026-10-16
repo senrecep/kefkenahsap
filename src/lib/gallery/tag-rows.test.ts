@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { galleryTagRows } from './tag-rows'
+import { galleryTagRows, tagCategories } from './tag-rows'
 
 const tag = (id: number, slug: string, axis: string) => ({ id, slug, name: slug, axis })
 const tags = [
@@ -69,5 +69,13 @@ describe('galleryTagRows', () => {
   it('with a service selected, still keeps the active tag so it can be cleared', () => {
     const rows = galleryTagRows(tags, photos(4, 9, 8), { category: 7, active: 'bahce' })
     expect(slugs(rows.others)).toEqual(['bahce'])
+  })
+})
+
+describe('tagCategories', () => {
+  it('lists the services that have at least one approved photo with the tag, each once', () => {
+    const all = [...photos([4, 1], 2, 7), ...photos(1, 3, 8), ...photos(4, 1, 9), ...photos(4, 1, null)]
+    expect(tagCategories(all, 4).sort()).toEqual([7, 9])
+    expect(tagCategories(all, 99)).toEqual([])
   })
 })

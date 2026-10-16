@@ -6,7 +6,7 @@ import type { Locale } from '@/i18n/routing'
 
 import { FilterMore, FilterRail } from './FilterControls'
 
-type Option = { slug?: string | null; name: string }
+type Option = { id?: number; slug?: string | null; name: string }
 
 const chip =
   'inline-flex min-h-11 shrink-0 items-center rounded-full border px-4 font-[family-name:var(--font-display)] text-sm font-semibold whitespace-nowrap transition-colors'
@@ -29,6 +29,7 @@ export async function GalleryFilters({
   types = [],
   moreTypes = [],
   tags,
+  tagCategories,
   active: activeProp,
   className = '',
 }: {
@@ -37,6 +38,8 @@ export async function GalleryFilters({
   types?: Option[]
   moreTypes?: Option[]
   tags: Option[]
+  /** Services the active tag has photos in; the other service chips drop the tag. */
+  tagCategories?: number[]
   active?: { category?: string; tag?: string }
   className?: string
 }) {
@@ -58,7 +61,7 @@ export async function GalleryFilters({
         o.slug ? (
           <a
             key={o.slug}
-            href={href({ kategori: o.slug, etiket: active.tag })}
+            href={href({ kategori: o.slug, etiket: tagCategories && o.id !== undefined && !tagCategories.includes(o.id) ? undefined : active.tag })}
             aria-current={active.category === o.slug ? 'page' : undefined}
             data-umami-event="filter_use"
             data-umami-event-filter="kategori"
@@ -122,21 +125,28 @@ export async function GalleryFilters({
       <p id="filter-types" className={label}>
         {t('typeFilter')}
       </p>
-      <FilterRail role="group" aria-labelledby="filter-types" className="-ms-1.5 -me-4 flex-1 md:me-0 md:flex-initial" railClassName="ps-1.5">
+      <FilterRail backLabel={t('scrollBack')} nextLabel={t('scrollNext')} role="group" aria-labelledby="filter-types" className="-ms-1.5 -me-4 flex-1 max-md:min-w-24 md:me-0 md:flex-initial" railClassName="ps-1.5">
         {tagLinks(types, 'tur')}
       </FilterRail>
     </>
   )
-  const clear = (active.category || active.tag) && (
-    <a href={base} className="inline-flex min-h-11 shrink-0 items-center gap-1 px-1.5 text-[0.9rem] text-ink-soft underline-offset-4 hover:text-ink hover:underline max-md:order-first">
+  const clearLink = (only: string) => (
+    <a
+      href={base}
+      data-umami-event="filter_clear"
+      className={`inline-flex min-h-11 shrink-0 items-center gap-1 px-1.5 text-[0.9rem] text-ink-soft underline-offset-4 hover:text-ink hover:underline ${only}`}
+    >
       <X aria-hidden size={15} strokeWidth={2} />
       {t('clearAll')}
     </a>
   )
+  // Desktop clears any filter here; on phones the service rail's "Tümü" already does that, so only a tag earns it.
+  const clear = (active.category || active.tag) && clearLink('max-md:hidden')
+  const phoneClear = active.tag && clearLink('md:hidden')
   // Phones keep the disclosure closed, so an active tag from it shows in the row as its own clearing chip.
   const hiddenActive = tags.find((o) => o.slug === active.tag)
   const activeChip = hiddenActive && (
-    <a href={href({ kategori: active.category })} aria-current="page" className={`${tagOn} max-md:order-first md:hidden`}>
+    <a href={href({ kategori: active.category })} aria-current="page" className={`${tagOn} md:hidden`}>
       {hiddenActive.name}
       <X aria-hidden size={15} strokeWidth={2} />
       <span className="sr-only">{t('clearTag')}</span>
@@ -149,7 +159,7 @@ export async function GalleryFilters({
         <p id="filter-services" className={label}>
           {t('serviceFilter')}
         </p>
-        <FilterRail role="group" aria-labelledby="filter-services" className="-mx-4 md:-ms-1.5 md:me-0 md:flex-1" railClassName="ps-4 md:ps-1.5">
+        <FilterRail backLabel={t('scrollBack')} nextLabel={t('scrollNext')} role="group" aria-labelledby="filter-services" className="-mx-4 md:-ms-1.5 md:me-0 md:flex-1" railClassName="ps-4 md:ps-1.5">
           {serviceChips}
         </FilterRail>
       </div>
@@ -161,12 +171,9 @@ export async function GalleryFilters({
           defaultOpen={Boolean(hiddenActive)}
           rowClassName={row}
           lead={typeRow}
-          after={
-            <>
-              {clear}
-              {activeChip}
-            </>
-          }
+          phone={phoneClear || undefined}
+          activeChip={activeChip}
+          after={clear}
         >
           {section('filter-more-types', t('moreTypes'), moreTypes, 'tur')}
           {section('filter-tags', t('tagFilter'), tags, 'etiket')}
@@ -174,6 +181,7 @@ export async function GalleryFilters({
       ) : (
         (typeRow || clear) && (
           <div className={row}>
+            {phoneClear}
             {typeRow}
             {clear}
           </div>
