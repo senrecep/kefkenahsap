@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14361.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Asfalttan bakınca bina girişi önünde paravanlı çiçeklikler",
+    "en": "Planters with screens in front of a building entrance, seen from the asphalt"
+  },
+  "alt": {
+    "tr": "Asfalt yolun kenarında bina girişinin önünde duran, yatay çıtalı paravanlı ahşap çiçeklikler; arkada ekose karolu giriş",
+    "en": "Timber planters with horizontal-slat screens in front of a building entrance beside an asphalt road"
+  },
+  "caption": {
+    "tr": "Girişin önünde iki çiçeklik ve paravan sıralı duruyor. Çiçekliklerden birinde küçük bir bitki var.",
+    "en": "Two planters and screens stand in a row in front of the entrance. One of the planters holds a small plant."
+  },
+  "seoFilename": "asfalttan-bakinca-bina-girisi-onunde-paravanli-cicekler",
+  "tags": {
+    "type": [
+      "kafes / paravan",
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

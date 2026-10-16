@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/10436.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çerçeveli, jaluzi yüzlü kare klima kasası",
+    "en": "Square air-conditioner housing with a framed louvre face"
+  },
+  "alt": {
+    "tr": "Atölyede, iş tezgâhının yanında duran, çerçeveli jaluzi çıtalı ön yüzü ve düz tahtalı üstü olan açık tonlu kare ahşap kasa",
+    "en": "Light square timber housing with a framed louvre front and a flat boarded top standing beside a workbench in a workshop"
+  },
+  "caption": {
+    "tr": "Kasanın ön yüzü çerçeve içinde yatay jaluzi çıtalarıyla örülmüş. Üstü kapak gibi düz tahtalı.",
+    "en": "The front is made of horizontal louvre slats within a frame. The top is flat boards like a lid."
+  },
+  "seoFilename": "cerceveli-jaluzi-yuzlu-kare-klima-kasasi",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

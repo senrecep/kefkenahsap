@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/12956.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Vernikli sedir yüzeyi ve yarı açık depolama kapağı",
+    "en": "Varnished day-bed top and a half-open storage hatch"
+  },
+  "alt": {
+    "tr": "Düz tahtalı vernikli sedir yüzeyinin köşesinde, yarı açık duran ince bir depolama kapağı görünüyor",
+    "en": "On the planked varnished top of a day-bed, a thin storage hatch stands half open near the edge"
+  },
+  "caption": {
+    "tr": "Kapak, sedirin üst yüzeyine yatık biçimde oturuyor. Kapak kenarında küçük bir metal parça var.",
+    "en": "The hatch sits flush in the top surface of the day-bed. A small metal fitting sits at its edge."
+  },
+  "seoFilename": "vernikli-sedir-yuzeyi-yari-acik-depolama-kapagi",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

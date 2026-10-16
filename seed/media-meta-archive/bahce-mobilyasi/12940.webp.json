@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/12940.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölye zemininde duran bank ünitesinin alt köşesi",
+    "en": "Lower corner of a bench unit on the workshop floor"
+  },
+  "alt": {
+    "tr": "Bank ünitesinin köşe birleşimi ve yan yüzü yakından görünüyor; arkada kereste istifleri ve beton zemin var",
+    "en": "A close view of the corner joint and side face of a bench unit, with lumber stacks and a concrete floor behind"
+  },
+  "caption": {
+    "tr": "Köşeler düzgün birleştirilmiş, yan yüz tek sıra tahtadan oluşuyor. Bank, alt kenarından zeminle düz temas ediyor.",
+    "en": "The corners are joined neatly and the side face is made of boards in a single row. The bench sits flat on the floor."
+  },
+  "seoFilename": "atolye-zemininde-duran-bank-unitesinin-alt-kosesi",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

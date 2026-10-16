@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/13330.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deck üzerinde dikey çıtalı ahşap korkuluğun yakın çekimi",
+    "en": "Close-up of a vertical-slat timber railing on a deck"
+  },
+  "alt": {
+    "tr": "Deck zemini üzerinde dikey çıtalı koyu vernikli ahşap korkuluk ve küpeşte yakından",
+    "en": "Close view of a dark-varnished vertical-slat timber railing and handrail on a deck floor"
+  },
+  "caption": {
+    "tr": "Çıtalar kalın dikme ile küpeşte arasında eşit aralıkla dizili. Açık renkli eski deck ön tarafta, koyu yeni zemin arkada.",
+    "en": "The slats are set at even intervals between a thick post and the handrail. The older light deck is at the front and the dark new floor behind."
+  },
+  "seoFilename": "deck-uzerinde-dikey-citali-ahsap-korkuluk-yakin",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

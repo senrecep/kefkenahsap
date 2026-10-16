@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/13245.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Metal çatılı kulübe içinde dış mutfak ve deck",
+    "en": "Outdoor kitchen and deck inside a metal-roofed shed"
+  },
+  "alt": {
+    "tr": "Metal çatılı açık kulübenin içinde, çıtalı ahşap dolaplarla kurulmuş dış mutfak ve deck zemin; önünde çim",
+    "en": "Outdoor kitchen built with slatted timber cabinets and a deck floor inside an open metal-roofed shed, lawn in front"
+  },
+  "caption": {
+    "tr": "Kulübenin üç yanı ahşap çıtalı, önü açık. Dolaplar arka duvar boyunca sıralanmış, zemin deckle kaplı.",
+    "en": "The shed has slatted timber on three sides and is open at the front. The cabinets line the back wall and the floor is covered in decking."
+  },
+  "seoFilename": "metal-catili-kulube-icinde-citali-dolapli-dis-mutfak-ve-deck",
+  "tags": {
+    "type": [
+      "dış mutfak / mangal alanı",
+      "iç duvar kaplaması"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.6
+}

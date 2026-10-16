@@ -1,0 +1,35 @@
+{
+  "source": "Pergola ve Kamelyalar/444.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "U biçimli emprenyeli ahşap bank",
+    "en": "U-shaped pressure-treated timber bench"
+  },
+  "alt": {
+    "tr": "Beyaz duvarlı bir alanda köşelere dönen U biçimli ahşap bank ve ahşap döşeme",
+    "en": "U-shaped timber bench turning at the corners and a timber floor in a white-walled space"
+  },
+  "caption": {
+    "tr": "Bank üç duvar boyunca uzanıyor, arkalığı çıtalı. Ahşabın yeşilimsi tonu emprenyeliyi gösteriyor.",
+    "en": "The bench runs along three walls and has a slatted back. The greenish tone of the timber points to pressure treatment."
+  },
+  "seoFilename": "u-bicimli-yesil-emprenyeli-ahsap-bank-ve-ahsap-zemin",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

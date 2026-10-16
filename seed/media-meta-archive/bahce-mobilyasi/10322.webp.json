@@ -1,0 +1,35 @@
+{
+  "source": "Mobilya ve Cila/10322.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yaprak biçimli, balık kılçığı desenli yan sehpa",
+    "en": "Leaf-shaped side table with herringbone pattern"
+  },
+  "alt": {
+    "tr": "Açık renk parke zeminde, yaprak biçimli ve balık kılçığı desenli kahverengi yan sehpa",
+    "en": "Brown leaf-shaped side table with a herringbone pattern on a light laminate floor"
+  },
+  "caption": {
+    "tr": "Sehpanın üstü balık kılçığı deseninde döşenmiş, ayakları yeşilimsi gri. İç mekânda duruyor.",
+    "en": "The top is laid in a herringbone pattern and the legs are greenish grey. It stands indoors."
+  },
+  "seoFilename": "yaprak-bicimli-balik-kilcigi-desenli-yan-sehpa",
+  "tags": {
+    "type": [
+      "sehpa"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.3
+}

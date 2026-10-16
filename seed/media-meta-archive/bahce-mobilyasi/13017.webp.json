@@ -1,0 +1,35 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/13017.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Seramik üstlü ahşap sehpanın köşe detayı",
+    "en": "Corner detail of a timber table with a ceramic top"
+  },
+  "alt": {
+    "tr": "Yakın çekimde sehpanın ahşap köşe birleşimi, kalın tahta damarları ve üst yüzeydeki desenli seramik görünüyor",
+    "en": "A close view of a table's timber corner joint, the grain of the thick boards and the patterned ceramic on top"
+  },
+  "caption": {
+    "tr": "Köşe birleşimi düzgün ve tahtalar kalın. Üstteki seramik, ahşap kasanın içine oturtulmuş.",
+    "en": "The corner joint is neat and the boards are thick. The ceramic on top is set into the timber frame."
+  },
+  "seoFilename": "seramik-ustlu-ahsap-sehpanin-kose-detayi-damar",
+  "tags": {
+    "type": [
+      "sehpa"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

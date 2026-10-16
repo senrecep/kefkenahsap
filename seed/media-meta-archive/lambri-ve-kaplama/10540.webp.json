@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/10540.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Giriş üstü saçak altında kirişler ve tavan",
+    "en": "Beams and ceiling boards under the entrance eave"
+  },
+  "alt": {
+    "tr": "Giriş üstündeki saçağın altında açık ahşap kirişler ve tahta tavan kaplaması; yanda beyaz duvar",
+    "en": "Exposed timber beams and board ceiling cladding under the eave above an entrance, with a white wall beside"
+  },
+  "caption": {
+    "tr": "Saçağın altı tahta tavanla kaplanmış, kirişler görünür bırakılmış. Duvarlar beyaz.",
+    "en": "The underside of the eave is clad in ceiling boards with the beams left visible. The walls are white."
+  },
+  "seoFilename": "giris-ustu-sacak-alti-ahsap-kiris-tavan",
+  "tags": {
+    "type": [
+      "tavan kaplaması / lambri"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

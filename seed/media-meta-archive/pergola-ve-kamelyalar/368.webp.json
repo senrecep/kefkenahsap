@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/368.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çatısız ahşap kamelya iskeleti ve bank bölmeleri, deniz arka planda",
+    "en": "Roofless timber gazebo frame with bench sections and the sea behind"
+  },
+  "alt": {
+    "tr": "Çatısı henüz yapılmamış ahşap kamelya iskeleti, bank bölmeleri ve arkada deniz ile kıyı",
+    "en": "Timber gazebo frame without its roof yet, with bench sections and the sea and shore behind"
+  },
+  "caption": {
+    "tr": "Direkler ve kenar bankları yerinde, üstü açık. Zemin platformu çimden yükseltilmiş.",
+    "en": "The posts and edge benches are in place, with the top open. The floor platform is raised above the lawn."
+  },
+  "seoFilename": "catisiz-ahsap-kamelya-iskeleti-bank-bolmeleri",
+  "tags": {
+    "type": [
+      "kamelya",
+      "bank",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

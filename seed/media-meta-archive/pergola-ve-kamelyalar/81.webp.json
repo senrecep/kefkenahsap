@@ -1,0 +1,41 @@
+{
+  "source": "Pergola ve Kamelyalar/81.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Gül sarılı çapraz korkuluklu ahşap kamelya, çimlik bahçe",
+    "en": "Timber gazebo with X-braced rails and a climbing rose on a lawn"
+  },
+  "alt": {
+    "tr": "Çimlik bahçede çapraz korkuluklu ahşap kamelya, çıtalı çatı, korkuluğa sarılmış gül ve arkada kiremit çatılı evler",
+    "en": "Timber gazebo with X-braced railings on a lawn, a slatted roof, a rose climbing the rail, and tile-roofed houses behind"
+  },
+  "caption": {
+    "tr": "Kamelyanın zemini deck kaplı ve çimden hafif yüksekte. Çatısı çıtalı ve iki bölümlü.",
+    "en": "The gazebo floor is decked and slightly raised above the lawn. The roof is slatted and in two sections."
+  },
+  "seoFilename": "gul-sarili-capraz-korkuluklu-ahsap-kamelya-cimlik",
+  "tags": {
+    "type": [
+      "kamelya",
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

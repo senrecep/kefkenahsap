@@ -1,0 +1,40 @@
+{
+  "source": "Deck ve Zeminler/8159.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz kenarına döşenmiş kahverengi deck",
+    "en": "Brown deck laid along the pool edge"
+  },
+  "alt": {
+    "tr": "Havuzun kenarında çimle sınırlanan kahverengi deck yüzeyi, arkada kiremit çatılı evler",
+    "en": "Brown deck surface along a pool, bordered by lawn, with tile-roofed houses behind"
+  },
+  "caption": {
+    "tr": "Deck havuz kenarını boydan boya kaplıyor. Tahta araları düzgün, kenar çimle temiz ayrılıyor.",
+    "en": "The deck covers the pool edge along its length. Board gaps are even and the edge meets the lawn cleanly."
+  },
+  "seoFilename": "havuz-kenarina-dosenmis-kahverengi-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "havuz kenarı",
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

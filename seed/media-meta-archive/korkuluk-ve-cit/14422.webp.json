@@ -1,0 +1,38 @@
+{
+  "source": "Merdivenler/14422.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çapraz geçmeli kahverengi korkuluk, basamak başı",
+    "en": "Brown cross-jointed railing at the head of steps"
+  },
+  "alt": {
+    "tr": "Yola bakan basamakların başında, X desenli kahverengi cilalı ahşap korkuluk ve önünde taş eşik, arkada sokak",
+    "en": "Brown varnished timber railing with an X pattern at the head of steps facing the road, with a stone threshold in front"
+  },
+  "caption": {
+    "tr": "Korkuluk basamağın ağzını kapatıyor, X çıtaları tam ortada birleşiyor.",
+    "en": "The railing closes off the stair opening, with the X braces meeting in the middle."
+  },
+  "seoFilename": "capraz-gecmeli-kahverengi-korkuluk-yola-bakan-basamak-basi",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "merdiven"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

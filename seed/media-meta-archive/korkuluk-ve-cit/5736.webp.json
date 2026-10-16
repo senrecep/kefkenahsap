@@ -1,0 +1,38 @@
+{
+  "source": "Kapi Dolap ve Seperator/5736.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Siyah çerçeveli dikey çıtalı sürgülü kapı ve çit, yakından",
+    "en": "Black-framed vertical-slat sliding gate and fence, close up"
+  },
+  "alt": {
+    "tr": "Küp taş yol kenarında siyah çerçeveli, bal rengi dikey ahşap çıtalı sürgülü kapı ve devamındaki çit; arkada taş sütunlar",
+    "en": "A black-framed honey-coloured vertical timber slat sliding gate and the fence continuing from it beside a cobbled road"
+  },
+  "caption": {
+    "tr": "Çıtalar dikey ve kapı hattı boyunca eşit aralıklı. Çerçeve siyah metal, yürüyüş yolunun karşısında uzanıyor.",
+    "en": "The slats are vertical and evenly spaced along the gate line. The frame is black metal and runs across from the footpath."
+  },
+  "seoFilename": "siyah-cerceveli-dikey-citali-surgulu-kapi-ve-cit",
+  "tags": {
+    "type": [
+      "bahçe kapısı",
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

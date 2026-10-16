@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/9295.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çit kenarında platform ve çaprazlı korkuluk",
+    "en": "Platform and cross-braced railing beside a fence"
+  },
+  "alt": {
+    "tr": "Beyaz çıtalı çit ve tel çit kenarında küçük ahşap platform; çaprazlı korkuluk, beton basamak ve çimlik",
+    "en": "A small timber platform beside a white picket fence and wire fencing, with a cross-braced railing, a concrete step and a lawn"
+  },
+  "caption": {
+    "tr": "Küçük platform beton basamağın ucuna oturuyor, korkuluk iki kenarı çevreliyor. Yanda beyaz çit uzanıyor.",
+    "en": "The small platform sits at the end of the concrete step with the railing running round two edges. A white fence runs alongside."
+  },
+  "seoFilename": "cit-kenarinda-platform-ve-caprazli-korkuluk-beyaz-cit",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

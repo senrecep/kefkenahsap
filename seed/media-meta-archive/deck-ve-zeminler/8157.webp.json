@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/8157.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz ve konut önünde geniş deck altyapısı",
+    "en": "Wide deck frame in front of the pool and house"
+  },
+  "alt": {
+    "tr": "Çimenlik üzerinde geniş ahşap çerçeve, arkada havuz, oturma takımı ve ev; deck tahtaları köşeden başlıyor",
+    "en": "Wide wooden frame laid on lawn, with the pool, a seating set and the house behind it; deck boards start from the corner"
+  },
+  "caption": {
+    "tr": "Çerçeve havuzun yanındaki çimenlik alanı kaplıyor. Tahtalar evin tarafındaki köşeden başlamış.",
+    "en": "The frame covers the lawn next to the pool. Boards have started at the corner nearest the house."
+  },
+  "seoFilename": "havuz-onunde-genis-deck-altyapisi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı",
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

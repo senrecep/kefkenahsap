@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/13238.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimlik çevresinde çıtalı ahşap çit",
+    "en": "Slatted timber fence around a lawn"
+  },
+  "alt": {
+    "tr": "Çimlik alanı çevreleyen düz üstlü çıtalı ahşap çit, önünde taşlar ve bitkiler",
+    "en": "Flat-topped slatted timber fence around a lawn, with stones and plants in front"
+  },
+  "caption": {
+    "tr": "Çit çimliğin kenarını kavisli bir hatla izliyor, önünde taş ve bitki bordürü var.",
+    "en": "The fence follows the edge of the lawn in a curve, with a border of stones and plants in front."
+  },
+  "seoFilename": "cimlik-cevresinde-citali-ahsap-cit",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

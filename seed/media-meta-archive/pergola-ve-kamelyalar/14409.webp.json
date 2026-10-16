@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/14409.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kafes pergola kemeri ve ahşap çıtalı çit, çevrede toprak yığını",
+    "en": "Lattice pergola arch and a timber picket fence beside a pile of soil"
+  },
+  "alt": {
+    "tr": "Taş zeminde uzakta kafes pergola kemeri, önde ahşap çıtalı çit ve çalı saksıları, yanında toprak yığını",
+    "en": "Lattice pergola arch in the distance on stone paving, with a timber picket fence and potted shrubs in front"
+  },
+  "caption": {
+    "tr": "Çıtalı çit yolun kenarını izliyor. Cam cepheli yapının önünde kemer küçük görünüyor.",
+    "en": "The picket fence follows the side of the path. The arch looks small in front of the glass-fronted building."
+  },
+  "seoFilename": "kafes-pergola-kemeri-ahsap-citali-cit-toprak",
+  "tags": {
+    "type": [
+      "pergola",
+      "kafes / paravan",
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

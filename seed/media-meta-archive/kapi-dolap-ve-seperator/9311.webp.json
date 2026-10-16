@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/9311.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dükkân girişine yerleştirilen yatay tahtalı uzun dolap",
+    "en": "Long horizontal-board cabinet placed at a shop entrance"
+  },
+  "alt": {
+    "tr": "Dükkân girişinin yanında yatay tahta kaplı, düz tahta kapaklı açık renkli uzun ahşap dolap, yanında bitkiler",
+    "en": "Long pale timber cabinet with horizontally clad sides and a flat boarded top by a shop entrance, with plants beside it"
+  },
+  "caption": {
+    "tr": "Dolabın kapağı düz tahtalarla örtülmüş, yan yüzeyler yatay kaplanmış. Giriş hattını kesmeyecek ölçüde alçak.",
+    "en": "The top of the cabinet is covered in flat boards and the sides are clad horizontally. It is low enough not to block the entrance line."
+  },
+  "seoFilename": "dukkan-girisine-yerlestirilen-yatay-tahtali-uzun-dolap",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

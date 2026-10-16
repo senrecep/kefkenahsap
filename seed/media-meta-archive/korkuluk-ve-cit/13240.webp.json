@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/13240.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimlik kenarında uzun çıta çit ve bahçe salıncağı",
+    "en": "Long slatted fence along the lawn with a garden swing"
+  },
+  "alt": {
+    "tr": "Çimliğin kenarında uzanan sivri uçlu çıtalı çit, uzakta bahçe salıncağı, önde bitki ve taşlar",
+    "en": "Pointed-top slatted fence along the lawn edge, a garden swing in the distance, plants and stones in front"
+  },
+  "caption": {
+    "tr": "Çit çimliğin yan kenarı boyunca uzanıyor. Önünde taşlarla çevrili bitkiler var.",
+    "en": "The fence runs along the side of the lawn. Plants ringed with stones grow in front of it."
+  },
+  "seoFilename": "cimlik-kenarinda-uzun-cit-ve-salincak",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

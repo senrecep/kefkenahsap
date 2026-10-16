@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/9659.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Raflarda üst üste duran ahşap fıçılar",
+    "en": "Timber casks stacked on shelves"
+  },
+  "alt": {
+    "tr": "Raflara iki sıra halinde üst üste yerleştirilmiş, metal çemberli düz ahşap fıçılar",
+    "en": "Plain timber casks with metal hoops set in two tiers on shelves"
+  },
+  "caption": {
+    "tr": "Fıçıların tahtaları açık renk, üzerlerinde ince metal çemberler var. Üsttekinin yanında halat bir tutamak görünüyor.",
+    "en": "The staves of the casks are light in colour with thin metal hoops. A rope handle shows beside the upper one."
+  },
+  "seoFilename": "raflarda-ust-uste-duran-metal-cemberli-ahsap-ficilar",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.5
+}

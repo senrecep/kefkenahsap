@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/8957.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar önünde uzun ahşap masa",
+    "en": "Long timber table in front of a stone wall"
+  },
+  "alt": {
+    "tr": "Taş duvarın önündeki teraste çıtalı tablası olan uzun ahşap masa ve sandalyeler",
+    "en": "Long timber table with a slatted top and chairs on a terrace in front of a stone wall"
+  },
+  "caption": {
+    "tr": "Masanın tablası çıtalı, kenarı yuvarlatılmış. Güneş yüzeye ağaç gölgesi düşürüyor.",
+    "en": "The table top is slatted with rounded ends. Tree shade falls across the surface."
+  },
+  "seoFilename": "tas-duvar-onunde-uzun-ahsap-masa-golgeli-teras",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

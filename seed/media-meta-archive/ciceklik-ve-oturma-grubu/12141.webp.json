@@ -1,0 +1,39 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/12141.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dikey tahtalı çiçeklikler, karo zeminde yakın çekim",
+    "en": "Vertical-board planters on tiles, close view"
+  },
+  "alt": {
+    "tr": "Karo zeminde yan yana duran, dikey tahtalı ve köşe direkli açık renk ahşap çiçekliklerin yakın çekimi",
+    "en": "Close view of light timber planters with vertical boards and corner posts standing side by side on a tiled floor"
+  },
+  "caption": {
+    "tr": "Çiçeklikler uzun ve dikdörtgen, içleri siyah astarlı. Arkada kereste istifi görünüyor.",
+    "en": "The planters are long and rectangular with black liners. A stack of timber is visible behind."
+  },
+  "seoFilename": "acik-renkli-dikey-tahtali-cicekliklerin-yakin-cekimi-karo",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

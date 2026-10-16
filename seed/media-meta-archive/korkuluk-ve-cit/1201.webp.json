@@ -1,0 +1,36 @@
+{
+  "source": "Ahsap Yapilar/1201.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş merdiven yanında çapraz çıtalı ahşap korkuluk, palmiyeler arasında",
+    "en": "Cross-braced timber railing beside stone steps among palms"
+  },
+  "alt": {
+    "tr": "Taş basamaklı inişin yanında uzanan çapraz çıtalı ahşap korkuluk; çevrede palmiyeler, solda çatılı ahşap yapı",
+    "en": "Cross-braced timber railing along a flight of stone steps with palm trees around and a roofed timber structure at left"
+  },
+  "caption": {
+    "tr": "Korkuluk merdivenin eğimini izleyip aşağıya dönüyor. Duvarın önünde sarmaşık ve çalılar var.",
+    "en": "The railing follows the slope of the steps and turns at the bottom. Ivy and shrubs grow in front of the wall."
+  },
+  "seoFilename": "tas-merdiven-yaninda-capraz-citali-korkuluk-palmiyeler",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "merdiven"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

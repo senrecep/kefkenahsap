@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/2331.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Tuğla ve beton duvar üstünde koyu kirişler, uzakta kiremit çatılar",
+    "en": "Dark beams over brick and concrete walls with tiled roofs beyond"
+  },
+  "alt": {
+    "tr": "Tuğla ve beton duvarın üstüne dizilmiş koyu renk ahşap kirişler, arkada kiremit çatılı evler ve tepeler",
+    "en": "Dark timber beams laid over brick and concrete walls, with tile-roofed houses and hills behind"
+  },
+  "caption": {
+    "tr": "Kirişlerin üzerine ince çıtalar sıralanmış. Yapı henüz inşaat halinde, duvarın tuğlası açıkta.",
+    "en": "Thin slats are laid across the beams. The building is still under construction, with the wall brick exposed."
+  },
+  "seoFilename": "tugla-beton-duvar-ustunde-koyu-kirisler",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.5
+}

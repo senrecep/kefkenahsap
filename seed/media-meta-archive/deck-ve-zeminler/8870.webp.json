@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/8870.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Duş altına yerleştirilmiş çıtalı iroko zemin",
+    "en": "Slatted iroko floor set into a shower recess"
+  },
+  "alt": {
+    "tr": "Seramik çerçeveli bir girintide sıralı, sarı kahve tonlu ahşap çıtalar",
+    "en": "Rows of yellow-brown timber slats inside a ceramic-framed recess"
+  },
+  "caption": {
+    "tr": "Çıtalar aralıklı dizilmiş, su aralardan akıyor. Seramik kenar çıtaları çevreliyor.",
+    "en": "The slats are spaced so water drains between them, and a ceramic edge surrounds them."
+  },
+  "seoFilename": "dus-altina-yerlestirilmis-citali-iroko-zemin",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.55
+}

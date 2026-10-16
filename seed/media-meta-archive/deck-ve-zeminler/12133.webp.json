@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/12133.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Pencere önünde ızgaralı alanı saran deck kirişleri",
+    "en": "Deck joists framing a grille opening by the window"
+  },
+  "alt": {
+    "tr": "Pencere önünde, ızgara kapaklı alanı çevreleyen koyu ahşap deck alt kirişleri",
+    "en": "Dark timber deck sub-joists framing an area with a grille cover in front of a window"
+  },
+  "caption": {
+    "tr": "Kirişler ızgaranın etrafında çerçeve oluşturuyor, böylece o bölüm deck altında kapanmıyor. Kenarda terakota zemin görünüyor.",
+    "en": "The joists make a frame around the grille so that part is not boxed in under the deck. Terracotta flooring shows at the edge."
+  },
+  "seoFilename": "pencere-onunde-izgarali-alani-saran-deck-kirisleri",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras",
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

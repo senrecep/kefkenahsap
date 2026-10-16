@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/7654.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deniz kenarında üçgen üst bölümlü yatay çıtalı kabin",
+    "en": "Slatted cabin by the sea with a triangular upper part"
+  },
+  "alt": {
+    "tr": "Deniz kenarındaki yatay çıtalı kabin; koyu panelli üçgen alınlık, kapı açık, arkada deniz",
+    "en": "Cabin with horizontal slats by the sea with a dark-panelled triangular gable, the door open and the sea behind"
+  },
+  "caption": {
+    "tr": "Kabinin üst üçgen bölümü koyu panellerle kaplı, gövdesi aralıklı yatay çıtalardan. Açık kapı koyu bir iç mekâna bakıyor.",
+    "en": "The triangular upper part of the cabin is clad in dark panels and the body is made of spaced horizontal slats. The open door looks into a dark interior."
+  },
+  "seoFilename": "deniz-kenarinda-yatay-citali-kabin-koyu-yuzeyli-ucgen-ust",
+  "tags": {
+    "type": [
+      "bahçe kulübesi / depo"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

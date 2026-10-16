@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/8970.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Gazbeton duvara monte edilmiş dikey ahşap çıtalar",
+    "en": "Vertical timber battens mounted on an aerated-concrete wall"
+  },
+  "alt": {
+    "tr": "Açık renkli gazbeton duvarın yüzeyine eşit aralıkla çakılmış dikey ahşap çıtalar, solda iskele ve gergi ipi",
+    "en": "Vertical timber battens fixed at even spacing to the surface of a pale aerated-concrete wall, with scaffolding"
+  },
+  "caption": {
+    "tr": "Çıtalar ip ile hizalanıp çakılmış, kaplama bu iskelet üzerine gelecek.",
+    "en": "The battens are aligned to a string and nailed, and the cladding will go on this frame."
+  },
+  "seoFilename": "gazbeton-duvara-dikey-ahsap-citalar-monte-edilmis",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

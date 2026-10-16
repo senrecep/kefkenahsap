@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14585.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Eski boyası soyulmuş kavisli ahşap bank yüzeyi, taşlama aşamasında",
+    "en": "Curved timber bench surface with peeling old finish, being sanded"
+  },
+  "alt": {
+    "tr": "Güllerin ve ahşap direklerin yanında, eski boyası dökülmüş kavisli ahşap bank yüzeyi; üstünde bir taşlama makinesi duruyor",
+    "en": "Beside roses and timber posts, a curved timber bench surface with its old finish flaking away and a grinder lying on it"
+  },
+  "caption": {
+    "tr": "Bankın eski vernik tabakası döküldüğü için yüzey yenilenmeye hazırlanıyor. Taşlama makinesi işin sürdüğünü gösteriyor.",
+    "en": "The old varnish has flaked away, so the surface is being prepared for renewal. The grinder shows the work is in progress."
+  },
+  "seoFilename": "eski-boyasi-soyulmus-kavisli-ahsap-bank-yuzeyi-taslama",
+  "tags": {
+    "type": [
+      "bank",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "before",
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/8881.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dik açıdan renk geçişli deck tahtası sıraları",
+    "en": "Rows of deck boards with shifting colour, seen from above"
+  },
+  "alt": {
+    "tr": "Yukarıdan bakıldığında sarıdan koyu kahveye değişen tonlarda, yan yana sıralı deck tahtaları",
+    "en": "Deck boards in tones from yellow to dark brown in neat rows, seen from above"
+  },
+  "caption": {
+    "tr": "Her tahtanın tonu biraz farklı, bu da yüzeye doğal bir görünüm veriyor. Tahta araları düz ve eşit.",
+    "en": "Each board has a slightly different tone, which gives the surface a natural look. The gaps are straight and even."
+  },
+  "seoFilename": "dik-acidan-renk-gecisli-deck-tahtasi-siralari",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "iroko"
+    ],
+    "setting": [],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

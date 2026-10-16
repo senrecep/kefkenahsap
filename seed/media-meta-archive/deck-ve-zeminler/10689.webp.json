@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/10689.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapılı evin önünde sarı-kahve deck",
+    "en": "Yellow-brown deck in front of a glass-doored house"
+  },
+  "alt": {
+    "tr": "Cam kapılı evin önünde çimenle çevrili sarı-kahve ahşap deck",
+    "en": "Yellow-brown timber deck bordered by lawn in front of a house with glass doors"
+  },
+  "caption": {
+    "tr": "Deck, geniş cam kapının önünde dikdörtgen bir alan oluşturuyor. Tahtalar kapıya paralel, çimenin içine doğru kesim düz.",
+    "en": "The deck forms a rectangle in front of the wide glass door. The boards run parallel to the door and the cut towards the lawn is straight."
+  },
+  "seoFilename": "cam-kapili-evin-onunde-cimenle-cevrili-sari-kahve-ahsap-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

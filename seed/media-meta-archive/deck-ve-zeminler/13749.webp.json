@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/13749.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimen önünde taş basamaklı yol ve göl kıyısında deck",
+    "en": "Stepping-stone path across lawn to a lakeside deck"
+  },
+  "alt": {
+    "tr": "Çimen önünde taş basamaklı yol; arkada göl kıyısında uzanan deck ve korkuluk, çam ağacı yanda",
+    "en": "Stepping-stone path across the lawn leading to a lakeside deck with a railing, a pine tree beside it"
+  },
+  "caption": {
+    "tr": "Taşlar bahçeden deck'e giden yürüyüş yolunu çiziyor. Deck, korkuluğuyla göl kıyısı boyunca uzanıyor.",
+    "en": "The stones mark the walking line from the garden to the deck. The deck and its railing run along the lakeside."
+  },
+  "seoFilename": "cimen-onunde-tas-basamakli-yol-ve-gol-kiyisinda-deck",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "su kenarı"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/9964.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Gri cephe ve duvardaki kuş figürleri",
+    "en": "Grey facade with bird figures on the wall"
+  },
+  "alt": {
+    "tr": "Gri boyalı yatay ahşap cephe kaplaması; duvarda uçan kuş figürlü metal süs, yanda ahşap tavan",
+    "en": "Grey painted horizontal timber facade cladding with a metal ornament of flying birds on the wall and a timber ceiling at the"
+  },
+  "caption": {
+    "tr": "Duvara uçuş halinde kuş figürleri asılmış. Sağda tahta kaplı tavan görünüyor.",
+    "en": "A set of flying-bird figures hangs on the wall. A timber-clad ceiling shows on the right."
+  },
+  "seoFilename": "gri-ahsap-cephe-kus-figurlu-duvar-susu",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

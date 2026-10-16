@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/8824.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Gün batımı ışığında basamaklar ve çaprazlı korkuluk",
+    "en": "Steps and cross-braced railing in sunset light"
+  },
+  "alt": {
+    "tr": "Gün batımı ışığında üstten görünen basamaklar ve çaprazlı korkuluk; iki yanda çimlik",
+    "en": "Steps and a cross-braced railing seen from above in sunset light, with lawn on both sides"
+  },
+  "caption": {
+    "tr": "Alçak güneş ışığı basamakları ve korkuluğu sıcak bir tonda gösteriyor. İki yanda çimlik uzanıyor.",
+    "en": "The low sun shows the steps and the railing in a warm tone. Lawn stretches out on both sides."
+  },
+  "seoFilename": "gun-batimi-isiginda-basamaklar-ve-caprazli-korkuluk-cimlik",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

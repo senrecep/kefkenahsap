@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/9998.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çalı önünde kırmızı kahve boyalı ahşap bank ve yüksek sırtlık",
+    "en": "Red-brown painted timber bench with a high rail in front of a hedge"
+  },
+  "alt": {
+    "tr": "Çimlik bahçede, çalıların önünde duran, kırmızımsı kahve boyalı, yüksek yatay sırtlık çıtalı ahşap bank",
+    "en": "A red-brown painted timber bench with a high horizontal back rail in a lawn garden in front of hedges"
+  },
+  "caption": {
+    "tr": "Bankın sırtlığı yüksek bir çıta ve ayaklara bağlanıyor. Çalılar bankın arka planını oluşturuyor.",
+    "en": "The back of the bench is a high rail fixed to the legs. The shrubs form the backdrop of the bench."
+  },
+  "seoFilename": "cali-onunde-kirmizi-kahve-boyali-ahsap-bank-ve-yuksek",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

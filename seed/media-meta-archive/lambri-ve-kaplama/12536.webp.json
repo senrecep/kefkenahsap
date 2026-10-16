@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/12536.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yatay ahşap kaplamalı duvarda klima dış ünitesi",
+    "en": "Air-conditioner outdoor unit on a horizontal timber-clad wall"
+  },
+  "alt": {
+    "tr": "Koyu cam kapının yanında, kırmızımsı vernikli yatay ahşap kaplama duvara raflı bir tabla üzerinde monte edilmiş klima dış",
+    "en": "Air-conditioner outdoor unit mounted on a small shelf on a reddish varnished horizontal timber-clad wall beside a dark glass"
+  },
+  "caption": {
+    "tr": "Kaplama tahtaları ünitenin altında kesintisiz sıralanıyor. Ünite için tahtadan bir raf yapılmış.",
+    "en": "The boards run uninterrupted beneath the unit. A timber shelf has been made for it."
+  },
+  "seoFilename": "yatay-ahsap-kaplamali-duvarda-klima-dis-unitesi",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

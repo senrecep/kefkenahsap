@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/1202.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deniz kıyısı deck üzerinde iki çiçeklik",
+    "en": "Two planters on a seaside deck"
+  },
+  "alt": {
+    "tr": "Deniz kıyısındaki ahşap deck üzerinde, pembe ve kırmızı sardunyalı iki sarımsı ahşap çiçeklik",
+    "en": "Two yellowish timber planters with pink and red geraniums on a timber deck by the sea"
+  },
+  "caption": {
+    "tr": "Çiçeklikler deck zemine oturmuş, arkada çapraz korkuluk ve deniz var. Pergola direkleri yeşilimsi ahşap.",
+    "en": "The planters rest on the deck floor, with a cross-braced railing and the sea behind. The pergola posts are greenish timber."
+  },
+  "seoFilename": "deniz-kiyisi-ahsap-deck-uzerinde-cicekli-iki-sarimsi-ahsap",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

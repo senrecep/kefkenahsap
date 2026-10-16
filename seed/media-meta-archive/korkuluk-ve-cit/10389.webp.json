@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/10389.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çit arasında dikey çıtalı ahşap bahçe kapısı, topuz kulplu",
+    "en": "Vertical-slat timber garden gate with a knob handle between hedges"
+  },
+  "alt": {
+    "tr": "Selvi çitin yanında, dikey çıtalı vernikli ahşap bahçe kapısı; üstü kavisli, topuz kulp ve yatay kuşak çıtalar var",
+    "en": "A varnished vertical-slat timber garden gate beside a cypress hedge, with a curved top"
+  },
+  "caption": {
+    "tr": "Kapının çıtaları dikey, ortasında yatay bir kuşak tahta var. Kapı kolu yuvarlak topuz biçiminde.",
+    "en": "The slats of the gate are vertical with a horizontal rail across the middle. The handle is a round knob."
+  },
+  "seoFilename": "cit-arasinda-dikey-citali-bahce-kapisi-topuz-kulp",
+  "tags": {
+    "type": [
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

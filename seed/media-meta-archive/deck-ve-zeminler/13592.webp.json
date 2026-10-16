@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/13592.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Mutfak dolapları önünde cilalı balık sırtı parke",
+    "en": "Polished herringbone-style floor in front of kitchen cabinets"
+  },
+  "alt": {
+    "tr": "Beyaz mutfak dolaplarının önünde, V desenli birleşim hattı olan koyu kahve cilalı ahşap zemin",
+    "en": "Dark brown polished timber floor with a V-shaped joint pattern in front of white kitchen cabinets"
+  },
+  "caption": {
+    "tr": "Zemin çevresine V desenli bir hat çizilmiş. Cilalı yüzey ışığı güçlü yansıtıyor.",
+    "en": "A V-shaped line marks the floor layout. The polished surface reflects the light strongly."
+  },
+  "seoFilename": "mutfak-dolaplari-onunde-cilali-v-desenli-parke",
+  "tags": {
+    "type": [
+      "parke / iç zemin"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.55
+}

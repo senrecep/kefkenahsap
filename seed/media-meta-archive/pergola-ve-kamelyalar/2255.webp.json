@@ -1,0 +1,41 @@
+{
+  "source": "Pergola ve Kamelyalar/2255.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Pergola altında deck, çapraz korkuluk ve naylona sarılı mobilyalar",
+    "en": "Deck under a pergola with an X-braced rail and furniture wrapped in plastic"
+  },
+  "alt": {
+    "tr": "Pergola altında deck, çapraz çıtalı korkuluk ve naylonla sarılı mobilyalar, uzakta ağaçlık yamaç",
+    "en": "Deck under a pergola with an X-braced railing and furniture wrapped in plastic, with a wooded slope in the distance"
+  },
+  "caption": {
+    "tr": "Çatı çıtaları sık sıralanmış ve aralarından gökyüzü seçiliyor. Mobilyalar teslim öncesi korumada.",
+    "en": "The roof slats are closely spaced and the sky shows through them. The furniture is under protection before handover."
+  },
+  "seoFilename": "pergola-altinda-deck-naylona-sarili-mobilyalar",
+  "tags": {
+    "type": [
+      "pergola",
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

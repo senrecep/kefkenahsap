@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/13401.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz çatı paneli ve koyu ahşap kiriş",
+    "en": "White roof panels and a dark timber beam"
+  },
+  "alt": {
+    "tr": "Beyaz çatı panellerini bölen koyu renkli ahşap kiriş; altında asılı hasır avize",
+    "en": "A dark timber beam dividing white roof panels, with a woven pendant lamp hanging beneath"
+  },
+  "caption": {
+    "tr": "Beyaz tavan panellerinin ortasından koyu bir ahşap kiriş geçiyor. Kirişin ucunda hasır bir avize sarkıyor.",
+    "en": "A dark timber beam runs down the middle of the white ceiling panels. A woven pendant lamp hangs at its end."
+  },
+  "seoFilename": "beyaz-cati-paneli-koyu-ahsap-kiris-hasir-avize",
+  "tags": {
+    "type": [
+      "tavan kaplaması / lambri"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.5
+}

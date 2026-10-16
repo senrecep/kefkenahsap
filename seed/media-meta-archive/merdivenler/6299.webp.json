@@ -1,0 +1,37 @@
+{
+  "source": "Merdivenler/6299.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kalın masif basamaklı iç merdiven",
+    "en": "Indoor stairs with thick solid treads"
+  },
+  "alt": {
+    "tr": "İç mekânda kalın, masif ahşap bloklardan yapılmış konsol basamaklar; yenileme çalışması sürüyor",
+    "en": "Indoor cantilevered steps made of thick solid timber blocks, with renovation work in progress"
+  },
+  "caption": {
+    "tr": "Basamaklar duvara oturan kalın masif bloklar. Yüzeyler eski ve ağır görünümlü, duvarlar yenileniyor.",
+    "en": "The treads are thick solid blocks set into the wall. The surfaces look old and heavy while the walls are being renovated."
+  },
+  "seoFilename": "kalin-masif-kutuk-basamakli-ic-merdiven-yenileme",
+  "tags": {
+    "type": [
+      "merdiven"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

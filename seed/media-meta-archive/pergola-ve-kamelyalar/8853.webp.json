@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/8853.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Terasın üzerinde direkli pergola iskeleti, arkada cam cepheli bina",
+    "en": "Posted pergola frame over a terrace with a glass-fronted building behind"
+  },
+  "alt": {
+    "tr": "Terasın üzerinde emprenyeli direkli pergola iskeleti, payandalar ve arkada cam cepheli bina",
+    "en": "Pressure-treated posted pergola frame over a terrace, with braces and a glass-fronted building behind"
+  },
+  "caption": {
+    "tr": "Direkler köşede payandalarla kirişlere bağlanıyor. Kirişler seyrek aralıkla sıralanmış.",
+    "en": "At the corner the posts tie to the beams with braces. The beams are set at wide spacing."
+  },
+  "seoFilename": "terasin-uzerinde-direkli-pergola-iskeleti-cam-cepheli-bina",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

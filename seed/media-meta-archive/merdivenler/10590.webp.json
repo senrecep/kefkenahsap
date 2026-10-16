@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/10590.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kırmızı toprak üstünde çaprazlı korkuluklu merdiven",
+    "en": "Cross-braced stairs on reddish soil"
+  },
+  "alt": {
+    "tr": "Kırmızımsı toprak zemin üzerinde çaprazlı korkuluklu ahşap merdiven; üstte duvar boyunca beyaz çıtalı çit",
+    "en": "Timber staircase with cross-braced railing on reddish soil, with a white picket fence along the wall above"
+  },
+  "caption": {
+    "tr": "Merdiven henüz çimlenmemiş kırmızımsı toprağa basıyor. Eğimli korkuluk çaprazlarla örülmüş.",
+    "en": "The stairs stand on reddish soil that has not been grassed yet. The sloping railing is braced with crosses."
+  },
+  "seoFilename": "kirmizi-toprak-ustunde-caprazli-merdiven-beyaz-cit",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

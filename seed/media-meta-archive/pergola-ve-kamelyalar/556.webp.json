@@ -1,0 +1,41 @@
+{
+  "source": "Pergola ve Kamelyalar/556.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Körfez karşısında çapraz korkuluklu geniş deck ve kamelya",
+    "en": "Wide deck with an X-braced rail and gazebo facing the bay"
+  },
+  "alt": {
+    "tr": "Körfez karşısındaki geniş ahşap deck ve çapraz çıtalı korkuluk, çatılı kamelya iskeleti, arkada tepeye yayılan beyaz evler",
+    "en": "Wide timber deck facing the bay with an X-braced railing and a roofed gazebo frame, with white houses on the hill behind"
+  },
+  "caption": {
+    "tr": "Deck suya yakın duruyor, korkuluk her kenarı çevreliyor. Yapı yeni, tahtalar açık renkli.",
+    "en": "The deck stands close to the water with a railing on every edge. The structure is new and the boards are pale."
+  },
+  "seoFilename": "korfez-karsisinda-capraz-korkuluklu-genis-deck-kamelya",
+  "tags": {
+    "type": [
+      "kamelya",
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

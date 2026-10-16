@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/11228.webp",
+  "category": "mutfak-ve-gomme-dolap",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Fayans duvarda koyu vernikli köşe rafı",
+    "en": "Dark varnished corner shelf on a tiled wall"
+  },
+  "alt": {
+    "tr": "Beyaz fayans duvarda koyu vernikli ahşap köşe rafı; üç katlı, ince çıtalı yan kenarlı",
+    "en": "A dark varnished timber corner shelf on a white tiled wall, with three tiers and slim slatted sides"
+  },
+  "caption": {
+    "tr": "Raf iki duvarın birleştiği köşeye oturuyor. Üç katı ince çıtalarla ayrılmış, koyu vernik kenarları öne çıkarıyor.",
+    "en": "The shelf sits in the corner where two walls meet. Its three tiers are separated by slim slats and the dark varnish picks out the edges."
+  },
+  "seoFilename": "fayans-duvarda-koyu-vernikli-ahsap-kose-rafi",
+  "tags": {
+    "type": [
+      "raf / kitaplık"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.55
+}

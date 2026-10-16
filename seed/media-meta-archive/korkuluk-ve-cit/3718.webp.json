@@ -1,0 +1,41 @@
+{
+  "source": "Deck ve Zeminler/3718.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz kenarı deck platformunun korkuluk köşesi, yakın plan",
+    "en": "Railing corner of a pool-side deck platform, close view"
+  },
+  "alt": {
+    "tr": "Yeni açık yeşilimsi deck platformunun dikey çıtalı korkuluğu ve köşe dikmesi; arkada havuz, çalışan biri ve bahçe duvarı",
+    "en": "Vertical-slat railing and corner post of a new light-greenish deck platform, with the pool"
+  },
+  "caption": {
+    "tr": "Korkuluk dikmeleri kalın, aralarında ince dikey çıtalar sıralı. Deck tahtaları köşede dik açıyla döşenmiş.",
+    "en": "The railing posts are thick with thin vertical slats set between them. The deck boards are laid at a right angle at the corner."
+  },
+  "seoFilename": "havuz-kenari-deck-platformunun-korkuluk-kosesi",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı",
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

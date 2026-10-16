@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/9598.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Eskitme ahşap çerçeveli ayna",
+    "en": "Mirror with a distressed timber frame"
+  },
+  "alt": {
+    "tr": "Yeşil bir duvara asılı, eskitme görünümlü kalın ahşap çerçeveli ayna; yanında bitkiler",
+    "en": "Mirror with a thick distressed timber frame hung on a green wall, with plants beside it"
+  },
+  "caption": {
+    "tr": "Çerçevenin yüzeyinde eskitilmiş tahta dokusu ve çizikler var. Yanında sarmaşık bitkiler ve yuvarlak bir süs duruyor.",
+    "en": "The surface of the frame shows distressed board texture and scratches. Climbing plants and a round ornament hang beside it."
+  },
+  "seoFilename": "eskitme-ahsap-cerceveli-ayna-yesil-duvar",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.5
+}

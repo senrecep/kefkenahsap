@@ -1,0 +1,40 @@
+{
+  "source": "Deck ve Zeminler/8878.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Modern ev cephesini saran yağlı deck",
+    "en": "Oiled deck wrapping a modern house front"
+  },
+  "alt": {
+    "tr": "Ahşap kaplamalı modern evin cam kapıları boyunca uzanan bal rengi deck, yanında klima dış ünitesi ve çimenlik",
+    "en": "Honey-coloured deck running along the glass doors of a modern timber-clad house"
+  },
+  "caption": {
+    "tr": "Deck evin cephesi boyunca ilerleyip köşeyi dönüyor. Tahtaların damarı yağ sayesinde belirgin.",
+    "en": "The deck follows the front of the house and turns the corner. The oil brings out the grain of the boards."
+  },
+  "seoFilename": "modern-ev-cephesini-saran-yagli-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "bahçe",
+      "giriş"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

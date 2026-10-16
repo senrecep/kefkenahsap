@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/13998.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bitki yanında deck köşesi",
+    "en": "Deck corner next to a plant"
+  },
+  "alt": {
+    "tr": "Yeşil yapraklı bir bitkinin altında, çimene ve beyaz duvara komşu kırmızı kahverengi deck köşesi",
+    "en": "Red-brown deck corner under a leafy plant, beside the lawn and a white wall"
+  },
+  "caption": {
+    "tr": "Yakın çekimde deckin köşesi ve tahta aralıkları görülüyor. Vernikli yüzey ışığı yansıtıyor.",
+    "en": "The close shot shows the corner of the deck and the gaps between boards. The varnished surface reflects the light."
+  },
+  "seoFilename": "bitki-yaninda-deck-kosesi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

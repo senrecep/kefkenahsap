@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/13569.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yapım aşamasında merdiven, tek tarafta korkuluk",
+    "en": "Stairs under construction with a railing on one side"
+  },
+  "alt": {
+    "tr": "Yapım aşamasındaki ahşap merdiven; yalnız bir yanında korkuluk takılı, yerde uzatma kablosu",
+    "en": "Timber staircase under construction with a railing fitted on one side only and an extension cable on the ground"
+  },
+  "caption": {
+    "tr": "Basamaklar yerinde, korkuluk yalnız bir yanda takılmış. Yerde uzatma kablosu duruyor.",
+    "en": "The treads are in place and the railing is fitted on one side only. An extension cable lies on the ground."
+  },
+  "seoFilename": "yapim-asamasinda-ahsap-merdiven-tek-taraf-korkuluk-kablo",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

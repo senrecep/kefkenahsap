@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/13260.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam korkuluklu havuz kenarında kıvrımlı deck ve bahçe lambası",
+    "en": "Curved deck with a garden light by a glass-balustrade pool"
+  },
+  "alt": {
+    "tr": "Cam korkuluklu havuz kenarında kıvrımlı koyu kırmızı kahverengi deck ve bahçe lambası, yerde matkap",
+    "en": "Curved dark red-brown deck beside a glass-balustraded pool with a garden light, and a drill on the grass"
+  },
+  "caption": {
+    "tr": "Deck'in kenarı yuvarlak bir hatla çimene dönüyor ve tahtalar bu kıvrıma göre kesilmiş. Bahçe lambası deck'in içine alınmış.",
+    "en": "The deck edge turns in a round line to the lawn and the boards are cut to follow the curve. The garden light is set into the deck."
+  },
+  "seoFilename": "cam-korkuluklu-havuz-kivrimli-deck-ve-bahce-lambasi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı",
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

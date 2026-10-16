@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/10851.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz çitli girişte inen merdiven, arkada evler",
+    "en": "Stairs down through a white-fenced entrance, with houses beyond"
+  },
+  "alt": {
+    "tr": "Beyaz çitin içinden bahçeye inen çaprazlı korkuluklu ahşap merdiven; uzakta kırmızı kiremitli evler",
+    "en": "Timber stairs with a cross-braced railing going down into the garden through a white fence"
+  },
+  "caption": {
+    "tr": "Beyaz çitteki geçitten basamaklar bahçeye iniyor. Karşıda kiremit çatılı evler sıralanıyor.",
+    "en": "Steps go down into the garden through the gap in the white fence. Houses with tiled roofs line up opposite."
+  },
+  "seoFilename": "beyaz-citli-girista-inen-merdiven-arkada-evler",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

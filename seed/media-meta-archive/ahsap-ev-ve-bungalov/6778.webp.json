@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/6778.webp",
+  "category": "ahsap-ev-ve-bungalov",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yuvarlak kütük duvarın köşe birleşimi",
+    "en": "Corner joint of a round log wall"
+  },
+  "alt": {
+    "tr": "Yuvarlak kütüklerin üst üste örüldüğü ahşap ev duvarında köşe birleşim detayı",
+    "en": "Close-up of the corner joint in a wooden house wall built from stacked round logs"
+  },
+  "caption": {
+    "tr": "Kütükler köşede birbirine geçmiş. Yüzeyde ahşabın lifleri ve çatlakları belli oluyor.",
+    "en": "The logs interlock at the corner. The grain and small cracks of the wood show on the surface."
+  },
+  "seoFilename": "yuvarlak-kutuk-duvar-kose-birlesimi",
+  "tags": {
+    "type": [
+      "ahşap ev / bungalov"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [],
+    "finish": [],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

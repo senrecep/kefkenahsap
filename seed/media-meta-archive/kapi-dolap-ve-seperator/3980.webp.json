@@ -1,0 +1,38 @@
+{
+  "source": "Kapi Dolap ve Seperator/3980.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Katlanır tezgâhlı yatay çıtalı klima kasası",
+    "en": "Horizontal-slat air-conditioner housing with a fold-down shelf"
+  },
+  "alt": {
+    "tr": "Taş kaplı duvarın dibinde yatay aralıklı çıtalı kızıl kahve ahşap kasa ve yanında yarım daire katlanır tezgâh",
+    "en": "Red-brown timber housing with spaced horizontal slats at the foot of a stone-clad wall"
+  },
+  "caption": {
+    "tr": "Kasanın yan tarafına açılır küçük bir tezgâh eklenmiş. Çıtalar cihazı örterken havalanmasına izin veriyor.",
+    "en": "A small fold-down shelf is added to the side of the housing. The slats cover the unit while letting it breathe."
+  },
+  "seoFilename": "katlanir-tezgahli-yatay-citali-klima-kasasi",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

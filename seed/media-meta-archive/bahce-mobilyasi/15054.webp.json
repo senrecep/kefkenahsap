@@ -1,0 +1,39 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/15054.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "L biçimli oturma platformunun köşe kısmı, yakından",
+    "en": "Corner of an L-shaped seating platform, up close"
+  },
+  "alt": {
+    "tr": "Yakın çekimde, koyu vernikli L biçimli ahşap oturma platformunun köşesi",
+    "en": "A close view of the corner of a dark-varnished L-shaped timber seating platform"
+  },
+  "caption": {
+    "tr": "Köşede iki sırtlık birleşiyor ve oturak yüzeyi tek parça görünüyor. Vernik çam damarlarını öne çıkarıyor.",
+    "en": "Two backs meet in the corner and the seat reads as one surface. The varnish brings out the pine grain."
+  },
+  "seoFilename": "l-seklinde-koyu-vernikli-oturma-platformunun-kose-kismi",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

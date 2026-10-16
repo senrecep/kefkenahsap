@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/4634.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz çevresinde geniş deck, solda ev duvarı",
+    "en": "Wide deck around a pool, house wall on the left"
+  },
+  "alt": {
+    "tr": "Havuzun çevresini saran geniş açık renkli deck; solda ev duvarı, arkada çalılar ve villalar",
+    "en": "Wide pale deck surrounding a pool, with the house wall on the left and shrubs and villas behind"
+  },
+  "caption": {
+    "tr": "Havuzun merdiven bölümü deck tarafında basamaklı. Ağaçlar ve çalı sırası arka sınırı çiziyor.",
+    "en": "The stepped part of the pool sits on the deck side. Trees and a row of shrubs mark the back boundary."
+  },
+  "seoFilename": "havuz-cevresinde-genis-deck-ev-duvari-ve-villalar",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

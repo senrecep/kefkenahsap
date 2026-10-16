@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/13589.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "İç mekânda zımpara makinesiyle zımparalanan ahşap zemin",
+    "en": "Timber floor being sanded with a floor sander indoors"
+  },
+  "alt": {
+    "tr": "İç mekânda ahşap zemin zımpara makinesiyle zımparalanıyor, makine açık renkli tahtaların üzerinde",
+    "en": "Timber floor being sanded indoors with a floor sander, the machine standing on the pale boards"
+  },
+  "caption": {
+    "tr": "Zımpara eski kaplamayı alıp ahşabın açık rengini ortaya çıkarıyor. Tahtalar uzun yönde döşenmiş ve derzleri belli.",
+    "en": "The sanding takes off the old coating and brings out the pale colour of the wood. The boards run lengthwise and the joints show."
+  },
+  "seoFilename": "ic-mekanda-zimpara-makinesiyle-zimparalanan-ahsap-zemin",
+  "tags": {
+    "type": [
+      "parke / iç zemin"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

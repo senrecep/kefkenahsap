@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/11832.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Pembe-beyaz sinamekili el arabası, yakın çekim",
+    "en": "Pink and white cyclamen wheelbarrow, close-up"
+  },
+  "alt": {
+    "tr": "Pembe ve beyaz sinameklilerle dolu, oyma kenarlı ahşap el arabası çiçeğin yakın çekimi",
+    "en": "Close-up of a scalloped timber wheelbarrow planter with pink and white cyclamen"
+  },
+  "caption": {
+    "tr": "Toprakta iki sinameki var, yan tahtalar vernikli ve eğri kesimli. Tekerlek parmaklıkları görünüyor.",
+    "en": "Two cyclamens sit in the soil, and the varnished sides have a curved cut. The wheel spokes are visible."
+  },
+  "seoFilename": "pembe-beyaz-sinamekili-ahsap-el-arabasi-ciceklik-yakin-cekim",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

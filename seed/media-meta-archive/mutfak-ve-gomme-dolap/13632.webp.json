@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/13632.webp",
+  "category": "mutfak-ve-gomme-dolap",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Raf iskeletinin yakın çekimi, arkada taşlama makineleri",
+    "en": "Close-up of the shelf frame, grinders behind"
+  },
+  "alt": {
+    "tr": "Mavi tezgah üzerindeki bölmeli açık renk ahşap raf iskeletinin yakın çekimi; arkada taşlama makineleri",
+    "en": "Close-up of a light timber compartmented shelf frame on a blue bench, with grinding machines behind"
+  },
+  "caption": {
+    "tr": "Bölmelerin kenarları düz kesilmiş ve birbirine dik bağlanmış. Arkada tezgah üstünde taşlama makineleri duruyor.",
+    "en": "The edges of the compartments are cut square and joined at right angles. Grinding machines stand on the bench behind."
+  },
+  "seoFilename": "raf-iskeletinin-yakin-cekimi-arkada-taslama-makineleri",
+  "tags": {
+    "type": [
+      "raf / kitaplık"
+    ],
+    "wood": [],
+    "setting": [
+      "atölyede üretim"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.7
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/12021.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dükkân kapısı yanındaki köşeye oturan eğimli kapaklı dolap",
+    "en": "Cabinet with a sloped lid fitted into a shopfront corner"
+  },
+  "alt": {
+    "tr": "Cam dükkân kapısının yanında, kaldırım köşesine oturtulmuş, üstü eğimli ve önü dikey tahtalı kızıl kahve küçük ahşap dolap",
+    "en": "Small red-brown timber cabinet fitted into the pavement corner beside a glass shop door"
+  },
+  "caption": {
+    "tr": "Dolap köşeye ölçüyle oturtulmuş, üstü eğimli olduğundan su akıyor. Kapağın ortasında sürgü var.",
+    "en": "The cabinet is fitted to the corner and its sloped top sheds water. A bolt sits at the middle of the door."
+  },
+  "seoFilename": "dukkan-kapisi-yanindaki-koseye-oturan-egimli-kapakli-dolap",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

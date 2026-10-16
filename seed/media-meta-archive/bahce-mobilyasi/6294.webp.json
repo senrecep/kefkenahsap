@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/6294.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimde gri eskimiş ahşap masa ve bank takımı",
+    "en": "Weathered grey timber table and bench set on the lawn"
+  },
+  "alt": {
+    "tr": "Yeşil çimlikte, güneşten grileşmiş ahşap masa ve önünde sırtlığı kafes desenli bank duruyor",
+    "en": "On a green lawn, a sun-greyed timber table with a lattice-backed bench behind it, and another bench and table further back"
+  },
+  "caption": {
+    "tr": "Masa ve bank takımı bahçenin çimlik bölümünde duruyor. Ahşap yıllar içinde grileşmiş, yüzey tazelenmeyi bekliyor.",
+    "en": "The table and bench set stands on the garden lawn. The wood has greyed over time and the surface is waiting to be refreshed."
+  },
+  "seoFilename": "cimde-gri-eskimis-ahsap-masa-ve-bank-takimi-onde-masa-yuzeyi",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

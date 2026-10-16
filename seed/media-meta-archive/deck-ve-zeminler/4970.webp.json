@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/4970.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çim bahçede taş yol kenarında tahta yığını",
+    "en": "Pile of boards beside a stone path in a lawned garden"
+  },
+  "alt": {
+    "tr": "Çimenlik bahçede taş döşeli yolun kenarında duran ahşap tahta yığını; arkada bahçe yapısı ve ayakta duran bir işçi",
+    "en": "A pile of timber boards beside a stone-paved path in a lawned garden, with a garden building behind and a worker standing"
+  },
+  "caption": {
+    "tr": "Kare bir deckten çok bahçe düzenini gösteriyor, deck ya da zemin henüz görünmüyor. Orta planda bir kişi ve ahşap masa var.",
+    "en": "The frame shows the garden layout rather than a deck, and no deck or floor is visible yet. A person and a timber table are in the middle ground."
+  },
+  "seoFilename": "cim-bahcede-tas-yol-kenarinda-ahsap-tahta-yigini",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.3
+}

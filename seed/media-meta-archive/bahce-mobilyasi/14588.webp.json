@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14588.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar üstünde kavisli koyu kahverengi ahşap oturma bankı",
+    "en": "Curved dark brown timber seat on a stone wall"
+  },
+  "alt": {
+    "tr": "Taş duvarın üstüne kavisli biçimde döşenmiş koyu kahverengi ahşap oturma bankı",
+    "en": "A curved dark brown timber bench laid over a stone wall, with timber canopy posts above and roses behind"
+  },
+  "caption": {
+    "tr": "Bank, taş duvarın kıvrımını izleyerek yarım daire çiziyor. Ahşap direkler üstteki sundurmayı taşıyor.",
+    "en": "The bench follows the curve of the stone wall in a half circle. Timber posts carry the canopy above."
+  },
+  "seoFilename": "tas-duvar-ustunde-kavisli-koyu-kahverengi-ahsap-oturma-banki",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

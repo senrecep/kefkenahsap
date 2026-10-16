@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/7513.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sahilde uzun kamelya iskeleti, beton zeminde merdiven",
+    "en": "Long gazebo frame on the shore with a ladder on the concrete floor"
+  },
+  "alt": {
+    "tr": "Sahilde beton zemin üzerinde uzun ahşap kamelya iskeleti, ortada bir merdiven ve çalışma tezgâhı",
+    "en": "Long timber gazebo frame on a concrete floor on the shore, with a ladder and work bench in the middle"
+  },
+  "caption": {
+    "tr": "Çatı kirişleri ortadaki bir mahyada birleşiyor. Direkler zemine metal bağlantılarla sabitlenmiş.",
+    "en": "The roof rafters meet at a ridge in the middle. The posts are fixed to the floor with metal fittings."
+  },
+  "seoFilename": "sahilde-uzun-kamelya-iskeleti-beton-zeminde-merdiven",
+  "tags": {
+    "type": [
+      "kamelya"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

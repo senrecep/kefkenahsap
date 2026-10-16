@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12319.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimen kenarında kahverengi boya uygulanan deck",
+    "en": "Deck being stained brown at the lawn edge"
+  },
+  "alt": {
+    "tr": "Çimen kenarında kahverengi boya uygulanan deck, yanda boya kutusu ve fırça",
+    "en": "Deck being stained brown at the lawn edge, with a paint tin and brush beside it"
+  },
+  "caption": {
+    "tr": "Tahtaların büyük kısmı boyanmış, kenardaki açık renkli bölüm henüz sırasını bekliyor. Deck çimene doğru uzanıyor.",
+    "en": "Most of the boards are stained and the pale strip at the edge is still waiting. The deck runs out towards the lawn."
+  },
+  "seoFilename": "cimen-kenarinda-kahverengi-boya-uygulanan-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

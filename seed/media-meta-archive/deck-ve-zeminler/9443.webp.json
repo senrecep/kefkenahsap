@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/9443.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Teras zemininde kirişlerle bölünmüş deck altlığı",
+    "en": "Deck base divided into bays on a terrace floor"
+  },
+  "alt": {
+    "tr": "Evin girişindeki teras zemininde emprenyeli çam kirişlerle çerçevelenmiş geniş deck altlığı, önünde çimenlik",
+    "en": "Wide deck base framed with pressure-treated pine joists on the terrace floor at a house entrance, lawn in front"
+  },
+  "caption": {
+    "tr": "Kirişler terasın üzerinde gözlere ayırıyor. Tahtalar bu çerçeveye döşenecek.",
+    "en": "The joists divide the terrace into bays. The boards will be laid onto this frame."
+  },
+  "seoFilename": "teras-zemininde-kirislerle-bolunmus-deck-altligi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras",
+      "giriş"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,34 @@
+{
+  "source": "Deck ve Zeminler/6100.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ahşap masa yüzeyi taşlama makinesiyle zımparalanıyor",
+    "en": "A timber table top being sanded with an angle grinder"
+  },
+  "alt": {
+    "tr": "Dış mekân ahşap masanın çıtalı yüzeyi bir taşlama makinesiyle zımparalanıyor",
+    "en": "The slatted top of an outdoor timber table being sanded with an angle grinder"
+  },
+  "caption": {
+    "tr": "Masanın eskiyen yüzeyi zımparayla temizleniyor. Bu işlem ahşabın yeniden vernik veya yağ almasına hazırlık.",
+    "en": "The weathered surface of the table is being cleaned back by sanding. This prepares the wood for fresh varnish or oil."
+  },
+  "seoFilename": "ahsap-masa-yuzeyi-taslama-makinesiyle-zimparalaniyor",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

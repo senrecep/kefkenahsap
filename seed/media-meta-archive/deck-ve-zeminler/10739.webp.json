@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/10739.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Eski gri deckin yanında yeni deck kirişleri",
+    "en": "New deck joists beside an old grey deck"
+  },
+  "alt": {
+    "tr": "Eski gri deck bitişiğinde toprak ve çakıl üzerine kurulan yeni ahşap deck kirişleri",
+    "en": "New timber deck joists set on soil and gravel next to an old grey deck"
+  },
+  "caption": {
+    "tr": "Eski deck genişletiliyor, yeni kirişler çakıl yatağının üstüne diziliyor. Yerde kablo ve bir alet kutusu var.",
+    "en": "The old deck is being extended and new joists are laid over a gravel bed. A cable and a tool box lie on the ground."
+  },
+  "seoFilename": "eski-gri-deck-bitisiginde-toprak-uzerine-kurulan-yeni-ahsap",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

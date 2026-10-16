@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/10630.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Duvar önünde geniş açık renkli deck",
+    "en": "Wide light deck in front of a wall"
+  },
+  "alt": {
+    "tr": "Duvar önünde döşenmiş geniş açık renkli deck; çevresinde toprak ve yeşil bir rögar kapağı",
+    "en": "Wide light-coloured deck laid in front of a wall, with bare soil around it and a green manhole cover"
+  },
+  "caption": {
+    "tr": "Deck duvara paralel uzanıyor, yüzeyde güneş ve gölge kareleri var. Önde yeşil kapaklı bir ızgara duruyor.",
+    "en": "The deck runs parallel to the wall with squares of sun and shade across it. A green cover sits in front."
+  },
+  "seoFilename": "duvar-onunde-genis-acik-renkli-deck-cevresinde-toprak-rogar",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

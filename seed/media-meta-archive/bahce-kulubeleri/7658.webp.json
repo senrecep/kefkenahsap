@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/7658.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yatay kaplamalı kabin arkadan, yanında çukur",
+    "en": "Cabin with horizontal cladding from behind, with a pit beside it"
+  },
+  "alt": {
+    "tr": "Yatay kaplamalı ahşap kabinin arkadan görünümü; üst kısmı koyu panelli, yanında toprak çukur",
+    "en": "Rear view of a timber cabin with horizontal cladding, dark-panelled at the top, with an earth pit beside it"
+  },
+  "caption": {
+    "tr": "Kabinin arka duvarı kapalı, üst üçgen bölümü koyu panelli. Yanda kazılmış bir çukur ve çalılar var.",
+    "en": "The back wall of the cabin is closed and its upper triangular section is dark-panelled. A dug pit and shrubs are at the side."
+  },
+  "seoFilename": "yatay-kaplamali-ahsap-kabin-arkadan-ust-kismi-koyu-panelli",
+  "tags": {
+    "type": [
+      "bahçe kulübesi / depo"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

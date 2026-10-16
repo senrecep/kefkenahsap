@@ -1,0 +1,40 @@
+{
+  "source": "Deck ve Zeminler/1437.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çapraz çıtalı korkuluklu geniş deck",
+    "en": "Wide deck with cross-braced railing"
+  },
+  "alt": {
+    "tr": "Çapraz çıtalı ahşap korkuluğa sahip, geniş ve işlenmemiş açık renkli emprenyeli çam deck; arkada konut bölgesi görünüyor",
+    "en": "Wide, unfinished pale pressure-treated pine deck with a cross-braced timber railing, a residential area visible behind"
+  },
+  "caption": {
+    "tr": "Deck yüksekte duruyor, kenarındaki korkuluk X biçiminde çaprazlanmış. Uzakta yamaçtaki evlerin çatıları seçiliyor.",
+    "en": "The deck stands elevated and its railing is braced in an X pattern. The roofs of houses on the slope are visible in the distance."
+  },
+  "seoFilename": "capraz-citali-korkulukla-genis-acik-deck",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

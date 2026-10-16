@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/14136.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kapakları açık dolapta sulama hortumu ve tesisat bölmesi",
+    "en": "Open cabinet with a hose reel and service bay"
+  },
+  "alt": {
+    "tr": "Tezgâh altı ahşap dolabın açık iki kapağı arasında, beyaz duvarda toplanmış hortum ve tesisat, önünde parke taş zemin",
+    "en": "Between the two open doors of an under-counter timber cabinet, a coiled hose and pipework on a white wall"
+  },
+  "caption": {
+    "tr": "Dolabın bu bölmesi tesisat için ayrılmış, hortum duvarda sarılı duruyor. Kapaklar sonuna kadar açılıyor.",
+    "en": "This bay is set aside for pipework with the hose coiled on the wall. The doors open fully."
+  },
+  "seoFilename": "kapaklari-acik-dolapta-sulama-hortumu-ve-tesisat-bolmesi",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

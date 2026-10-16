@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14926.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimenlik bahçede uzun koyu ahşap masa ve iki bank",
+    "en": "Long dark timber table and two benches in a grassy garden"
+  },
+  "alt": {
+    "tr": "Çimenli ve ağaçlı bir bahçenin kumlu alanında, uzun koyu vernikli ahşap masa ve iki yanında birer bank duruyor",
+    "en": "On a sandy patch of a garden with grass and trees, a long dark-varnished timber table with a bench on each side"
+  },
+  "caption": {
+    "tr": "Masanın iki yanında birer bank var, uzun bir sofra için uygun. Zemin kumlu, arkada çimen uzanıyor.",
+    "en": "There is a bench on each side of the table, suited to a long shared meal. The ground is sandy with lawn beyond."
+  },
+  "seoFilename": "cimenlik-bahcede-uzun-koyu-ahsap-masa-ve-iki-bank",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Merdivenler/11013.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar yanında beyaz boyalı piket kapı",
+    "en": "White-painted picket gate beside a stone wall"
+  },
+  "alt": {
+    "tr": "Koyu taş duvarın yanında, kalın beyaz direğe bağlı ucu kavisli çıtalı beyaz bahçe kapısı, arkada ev girişi",
+    "en": "White picket garden gate with curved tops hung from a thick white post beside a dark stone wall, with a house entrance behind"
+  },
+  "caption": {
+    "tr": "Kapı dar bir taş duvar aralığına oturuyor. Çıtaları iki yatay kuşakla bağlı.",
+    "en": "The gate fits a narrow gap in the stone wall. Its pickets are tied by two horizontal rails."
+  },
+  "seoFilename": "tas-duvar-yaninda-beyaz-boyali-piket-bahce-kapisi",
+  "tags": {
+    "type": [
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

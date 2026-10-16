@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/1189.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Pencereli yatay kaplamalı kulübe, yanında çiçekler",
+    "en": "Shed with a window and horizontal cladding beside flowering plants"
+  },
+  "alt": {
+    "tr": "Pencere açıklığı olan yatay kaplamalı ahşap kulübe; yanında çiçek açmış defne ve palmiye",
+    "en": "Timber shed with horizontal cladding and a window opening, with a flowering oleander and a palm beside it"
+  },
+  "caption": {
+    "tr": "Kulübenin köşesi ve penceresi görünüyor, saçak öne uzanıyor. Önünde taş döşeli zemin, arkada çiçekli bitkiler var.",
+    "en": "The corner and window of the shed show and the eave projects forward. There is stone paving in front and flowering plants behind."
+  },
+  "seoFilename": "pencereli-yatay-kaplamali-kulube-yaninda-cicekli-bitkiler",
+  "tags": {
+    "type": [
+      "bahçe kulübesi / depo"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

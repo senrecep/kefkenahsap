@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/10536.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "İki katlı evin teras girişinde ahşap sundurma",
+    "en": "Timber porch at the terrace entrance of a two-storey house"
+  },
+  "alt": {
+    "tr": "İki katlı evin teras girişine eklenmiş ahşap sundurma; önünde çim bahçe",
+    "en": "Timber porch added to the terrace entrance of a two-storey house, with a lawn garden in front"
+  },
+  "caption": {
+    "tr": "Sundurma terası gölgeliyor, iki ince direk ile ayakta. Bahçede çalışan bir işçi sarı yelekle görünüyor.",
+    "en": "The porch shades the terrace and stands on two slim posts. A worker in a yellow vest is visible in the garden."
+  },
+  "seoFilename": "iki-katli-evin-teras-girisinde-ahsap-sundurma-cim-bahce",
+  "tags": {
+    "type": [
+      "sundurma / saçak / carport"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

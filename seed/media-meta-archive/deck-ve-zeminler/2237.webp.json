@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/2237.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Geniş deck zemini ve tamamlanmamış yapı",
+    "en": "Wide deck floor and an unfinished structure"
+  },
+  "alt": {
+    "tr": "Dağlık manzaraya bakan geniş, açık renkli emprenyeli çam deck zemini; arkada düz ahşap kaplı, tamamlanmamış yapı",
+    "en": "Wide pale pressure-treated pine deck floor facing a mountain view, with an unfinished timber-clad structure behind"
+  },
+  "caption": {
+    "tr": "Tahtaların bir kısmı döşenmiş, bir kısmı aralıklı bırakılmış. Arkadaki yapı çıtalarla kapalı ve henüz bitmemiş.",
+    "en": "Some of the boards have been laid and some are left spaced. The structure behind is closed with slats and not yet finished."
+  },
+  "seoFilename": "genis-acik-renkli-deck-zemini-ve-tamamlanmamis-ahsap-yapi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

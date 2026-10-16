@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14978.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölyede ön tarafı açık koyu ahşap kasa iskeleti",
+    "en": "Dark timber box open at the front in the workshop"
+  },
+  "alt": {
+    "tr": "Ön yüzü açık bırakılmış, üstü tahta kapaklı koyu kahve ahşap kasa ve arkasında ikinci bir kasa, yerde boya kovası ve kereste",
+    "en": "Dark brown timber box with a boarded lid and its front left open"
+  },
+  "caption": {
+    "tr": "Kasanın içi boş, yan duvarları çıtalı. Bu hâliyle içine yerleştirilecek cihazın üstüne geçirilecek.",
+    "en": "The inside is empty and its side walls are slatted. It will be slipped over the unit it is meant to cover."
+  },
+  "seoFilename": "atolyede-on-tarafi-acik-koyu-ahsap-kasa-iskeleti",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

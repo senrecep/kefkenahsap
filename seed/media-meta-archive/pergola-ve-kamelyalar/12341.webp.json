@@ -1,0 +1,37 @@
+{
+  "source": "Pergola ve Kamelyalar/12341.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çakıllı bahçe yolunun ucunda küçük ahşap pergola",
+    "en": "Small timber pergola at the end of a gravel garden path"
+  },
+  "alt": {
+    "tr": "Gri ve beyaz çakıl döşeli bir bahçe yolunun ucunda uzakta duran küçük ahşap pergola ve zeytin ağacı",
+    "en": "Small timber pergola in the distance at the end of a garden path laid with grey and white gravel, with an olive tree beside"
+  },
+  "caption": {
+    "tr": "Çakıl yol çimenlik boyunca kıvrılıyor. Pergola uzaktan küçük görünüyor, altında bir oturma alanı var.",
+    "en": "The gravel path curves along the lawn. The pergola looks small from afar, with a seating area beneath."
+  },
+  "seoFilename": "cakilli-bahce-yolunun-ucunda-kucuk-pergola",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.5
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/11439.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Teras köşesinde vernikli ahşap bank ve şeffaf çatılı kiriş",
+    "en": "Varnished timber bench and beam with a clear roof at a terrace corner"
+  },
+  "alt": {
+    "tr": "Teras köşesinde vernikli ahşap bank, kiriş ve direk üzerinde şeffaf çatı örtüsü, arkada apartmanlar",
+    "en": "Varnished timber bench at a terrace corner with a clear roof sheet over beams and a post, apartment blocks behind"
+  },
+  "caption": {
+    "tr": "Bank balkon korkuluğunun yanına yerleşik, çatı kirişi direğe payanda ile bağlı. Saksıda bir bitki duruyor.",
+    "en": "The bench is built in beside the balcony rail and the roof beam is tied to the post with a brace. A plant stands in a pot."
+  },
+  "seoFilename": "teras-kosesinde-vernikli-ahsap-bank-seffaf-cati",
+  "tags": {
+    "type": [
+      "pergola",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

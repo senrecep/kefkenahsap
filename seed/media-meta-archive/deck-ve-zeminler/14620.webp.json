@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14620.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Açık kahverengi deck tahtalarının uzun şeridi",
+    "en": "Long strip of light brown deck boards"
+  },
+  "alt": {
+    "tr": "Gri zeminde ilerleyen, açık kahverengi tahtalardan oluşan uzun bir deck şeridi; uzakta sandalyeler",
+    "en": "Long strip of deck made of light brown boards running over a grey surface, with chairs in the distance"
+  },
+  "caption": {
+    "tr": "Tahtalar iki yanında koyu gri zemine oturuyor. Şerit uzaktaki çimenlik alana ve sandalyelere doğru gidiyor.",
+    "en": "The boards sit on dark grey ground on both sides. The strip leads towards the lawn area and the chairs in the distance."
+  },
+  "seoFilename": "acik-kahverengi-deck-tahtalarinin-uzun-seridi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

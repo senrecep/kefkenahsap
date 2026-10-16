@@ -1,0 +1,41 @@
+{
+  "source": "Pergola ve Kamelyalar/1052.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvarlı yamaçta deck zemin ve pergola direkleri",
+    "en": "Deck floor and pergola posts on a slope with a stone wall"
+  },
+  "alt": {
+    "tr": "Taş duvarlı yamaçta geniş deck zemin, ortada yükselen direkler ve üstte kiriş çatısı, arkada çiçekli bitkiler",
+    "en": "Broad deck floor on a slope with a stone wall, posts rising in the middle with a beam roof above, and flowering plants behind"
+  },
+  "caption": {
+    "tr": "Güneş ışığı direklerin gölgesini deck tahtalarına düşürüyor. Zemin henüz tamamen boş.",
+    "en": "Sunlight casts the posts' shadows over the deck boards. The floor is still completely bare."
+  },
+  "seoFilename": "tas-duvarli-yamacta-deck-zemin-pergola-direkleri",
+  "tags": {
+    "type": [
+      "pergola",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı",
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

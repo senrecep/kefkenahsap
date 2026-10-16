@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/15023.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimde lavabolu tezgâh ve üç ahşap kapaklı dolap",
+    "en": "Counter with a sink and three timber-doored cabinets on the lawn"
+  },
+  "alt": {
+    "tr": "Çim alanda beyaz bloktan örülmüş, taş lavabolu tezgâh ve altında üç ahşap kapaklı dolap",
+    "en": "Counter built of white block with a stone sink and three timber-doored cabinets beneath, on a lawn"
+  },
+  "caption": {
+    "tr": "Tezgâhın altındaki kapaklar koyu vernikli ahşap ve demir menteşeli. Yapı beyaza boyanmış, önünde çim alan var.",
+    "en": "The doors under the counter are dark varnished timber with iron hinges. The structure is painted white with a lawn in front."
+  },
+  "seoFilename": "cimde-beyaz-bloktan-lavabolu-tezgah-ve-uc-ahsap-kapakli",
+  "tags": {
+    "type": [
+      "dış mutfak / mangal alanı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.5
+}

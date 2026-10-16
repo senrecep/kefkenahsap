@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14800.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Şap zemin üzerinde ayaklı çıtalar, yakın plan",
+    "en": "Battens on pedestals over screed, close-up"
+  },
+  "alt": {
+    "tr": "Gri şap zemin üzerine ayaklarla oturtulmuş emprenyeli çıtalar ve üstte ahşap korkuluk, yakından",
+    "en": "Pressure-treated battens set on pedestals over grey screed with a timber railing above, seen up close"
+  },
+  "caption": {
+    "tr": "Yakın çekimde çıtaların plastik ayaklara nasıl oturduğu ve şap üstündeki nem izleri görülüyor. Korkuluk üst kenarda köşeli bir çerçeve oluşturuyor.",
+    "en": "The close shot shows how the battens rest on plastic pedestals and the damp marks on the screed. The railing forms an angular frame at the top edge."
+  },
+  "seoFilename": "sap-zemin-uzerinde-ayakli-citalar-yakin-plan",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

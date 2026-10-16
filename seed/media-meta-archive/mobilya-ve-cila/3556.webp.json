@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/3556.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar önünde dikey kaplamalı bar tezgahı",
+    "en": "Bar counter with vertical cladding in front of a stone wall"
+  },
+  "alt": {
+    "tr": "Taş duvar önünde L biçimli, ön yüzü dikey tahtayla kaplı, henüz bitmemiş ahşap bar tezgahı",
+    "en": "An L-shaped, not yet finished timber bar counter with a front clad in vertical boards, in front of a stone wall"
+  },
+  "caption": {
+    "tr": "Tezgahın ön yüzü dikey tahtalarla kaplanmış, üstü açık ve işlenmemiş. Arkada taş duvar ve kalın direkler var.",
+    "en": "The front of the counter is clad in vertical boards while the top is still bare and unfinished. A stone wall and thick posts are behind."
+  },
+  "seoFilename": "tas-duvar-onunde-dikey-kaplamali-bitmemis-ahsap-bar-tezgahi",
+  "tags": {
+    "type": [
+      "bar / tezgâh"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

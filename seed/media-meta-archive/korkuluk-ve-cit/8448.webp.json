@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/8448.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Aynı ahşap kapının bir kanadı açık, taş sütunlar arasında",
+    "en": "The same timber gate with one leaf open, between stone piers"
+  },
+  "alt": {
+    "tr": "Taş sütunlar arasında, bir kanadı açılmış bölmeli açık renk ahşap çift kanatlı kapı; arkada taş duvar, ev ve çöp konteyneri",
+    "en": "A light-coloured panelled timber double gate with one leaf swung open between stone piers, with a stone wall"
+  },
+  "caption": {
+    "tr": "Açık kanat iç tarafa kıvrılmış, kapının kalınlığı ve menteşesi görünüyor. Giriş yolu taş döşeli.",
+    "en": "The open leaf has swung inwards and the thickness of the gate and its hinge are visible. The approach path is stone-paved."
+  },
+  "seoFilename": "ayni-ahsap-kapinin-bir-kanadi-acik-tas-sutunlar",
+  "tags": {
+    "type": [
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

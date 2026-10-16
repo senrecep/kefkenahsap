@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/13540.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Duvar kenarında parlak cilalı deck, arkada toprak ve bitkiler",
+    "en": "Glossy varnished deck along a wall with soil and plants behind"
+  },
+  "alt": {
+    "tr": "Duvar kenarında parlak cilalı turuncu kahverengi deck, arkada toprak ve bitkiler",
+    "en": "Glossy varnished orange-brown deck along a wall, with soil and plants behind"
+  },
+  "caption": {
+    "tr": "Tahtalar duvara doğru köşeyi dönüyor ve cila yüzeyi pürüzsüz bırakmış. Deck'in arkasında toprak alan henüz bitkilendirilmemiş.",
+    "en": "The boards turn the corner towards the wall and the varnish leaves a smooth surface. The soil area behind the deck has not yet been planted."
+  },
+  "seoFilename": "duvar-kenarinda-parlak-cilali-deck-arkada-toprak-ve-bitkiler",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

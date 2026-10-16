@@ -1,0 +1,35 @@
+{
+  "source": "Ireko-Teak/9129.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Turuncu tonlu yatay tahta yüzeyi",
+    "en": "Orange-toned horizontal board surface"
+  },
+  "alt": {
+    "tr": "Yatay dizilmiş turuncu tonlu ahşap tahta kaplama yüzeyinin yakın çekimi",
+    "en": "Close-up of a surface of horizontally laid orange-toned timber cladding boards"
+  },
+  "caption": {
+    "tr": "Tahtalar yan yana yatay döşenmiş, damarları parlak turuncu tonda öne çıkıyor.",
+    "en": "The boards are laid side by side horizontally, and the grain stands out in a bright orange tone."
+  },
+  "seoFilename": "turuncu-tonlu-yatay-tahta-kaplama-yuzeyi",
+  "tags": {
+    "type": [
+      "iç duvar kaplaması"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

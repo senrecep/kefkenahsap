@@ -1,0 +1,37 @@
+{
+  "source": "Pergola ve Kamelyalar/5517.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Restoran bahçesinde kırmızımsı vernikli pergola ve saksı çiçekleri",
+    "en": "Reddish varnished pergola in a restaurant garden with potted flowers"
+  },
+  "alt": {
+    "tr": "Restoran bahçesinde kırmızımsı vernikli ahşap pergola, üstünde krem kumaş örtü, altında saksı çiçekleri ve palmiyeler",
+    "en": "Reddish varnished timber pergola in a restaurant garden with a cream fabric cover, potted flowers and palm trees"
+  },
+  "caption": {
+    "tr": "Kirişler kumaş örtüyü taşıyor, altındaki masalar çiçek saksılarıyla çevrili. Palmiye yaprakları çatıya uzanıyor.",
+    "en": "The beams carry the fabric cover and the tables below are ringed by flowerpots. Palm fronds reach the roof."
+  },
+  "seoFilename": "restoran-bahcesinde-kirmizimsi-vernikli-pergola-cicek",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

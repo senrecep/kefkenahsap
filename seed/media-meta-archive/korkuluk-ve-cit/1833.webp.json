@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/1833.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş istinat duvarı üstünde ahşap piket çit",
+    "en": "Timber picket fence on top of a stone retaining wall"
+  },
+  "alt": {
+    "tr": "Yığma taş istinat duvarının üstünde uzanan açık tonlu ahşap çıtalı çit, sağda ahşap merdiven ve çardak",
+    "en": "Light timber picket fence running along the top of a dry-stone retaining wall, with a timber staircase"
+  },
+  "caption": {
+    "tr": "Çit duvarın tepesini boydan boya izliyor, sağda basamaklar çatılı bir yapıya çıkıyor.",
+    "en": "The fence follows the full length of the wall top, and steps on the right climb to a roofed structure."
+  },
+  "seoFilename": "tas-istinat-duvari-ustunde-ahsap-piket-cit-ve-merdiven",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

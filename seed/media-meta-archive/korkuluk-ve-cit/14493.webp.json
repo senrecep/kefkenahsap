@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/14493.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Açık arazide çit direkleri ve yatay çıtalar",
+    "en": "Fence posts and horizontal rails on open ground"
+  },
+  "alt": {
+    "tr": "Dikilmiş kalın ahşap direklere üç yatay çıta çakılmış, çevrede kazılmış toprak ve arkada beyaz duvar",
+    "en": "Three horizontal rails fixed to thick timber posts, with dug-up soil around and a white wall behind"
+  },
+  "caption": {
+    "tr": "Çıtalar direklere sırayla çakılmış, hat ilerledikçe toprak yeni kazılmış durumda.",
+    "en": "The rails are nailed to the posts in turn, and the soil along the line has been freshly dug."
+  },
+  "seoFilename": "acik-arazide-cit-direkleri-ve-yatay-citalar",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

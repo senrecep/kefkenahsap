@@ -1,0 +1,38 @@
+{
+  "source": "Kapi Dolap ve Seperator/10935.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Lavabo yanında dikey tahtalı bahçe paravanı",
+    "en": "Vertical-board garden screen beside a sink"
+  },
+  "alt": {
+    "tr": "Bahçeye bakan lavabonun yanında dikey bal rengi tahtalardan örülmüş yüksek paravan, arkasında ahşap jardiniyer",
+    "en": "Tall screen of vertical honey-coloured boards beside a sink facing a garden, with a timber planter behind it"
+  },
+  "caption": {
+    "tr": "Tahtalar dikey ve aralıklı, paravan bakış hattını kısmen kapatıyor. Yanındaki jardiniyer aynı ahşaptan.",
+    "en": "The boards are vertical with gaps and the screen partly blocks the line of sight. The planter beside it is of the same timber."
+  },
+  "seoFilename": "lavabo-yaninda-dikey-tahtali-bahce-paravani",
+  "tags": {
+    "type": [
+      "kafes / paravan",
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

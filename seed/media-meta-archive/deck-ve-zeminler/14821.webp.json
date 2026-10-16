@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/14821.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Gövde arkasında kalan geniş deck",
+    "en": "Wide deck behind a tree trunk"
+  },
+  "alt": {
+    "tr": "Zeytin ağacının kalın gövdesinin arkasına uzanan geniş deck ve korkuluk; önde mavi bir soğutucu kutu ve gri bir saksı",
+    "en": "Wide deck and railing stretching behind the thick trunk of an olive tree, with a blue cooler box and a grey planter in front"
+  },
+  "caption": {
+    "tr": "Deck ağaç gövdesinin çevresinde kare bir boşlukla kesilmiş. Çimende beyaz taşlar ve gölgeler var.",
+    "en": "The deck is cut with a square opening around the tree trunk. White stones and shadows lie on the lawn."
+  },
+  "seoFilename": "govde-arkasinda-kalan-deck-mavi-kutu-ve-gri-saksi",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

@@ -1,0 +1,40 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/8057.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sarmaşık önünde, gri karo zeminde sırtlıklı uzun ahşap bank",
+    "en": "Long timber bench with a back on grey tiles in front of ivy"
+  },
+  "alt": {
+    "tr": "Yeşil sarmaşıkla kaplı duvarın önünde, gri karo zeminde duran, geniş tahtalı sırtlığı olan uzun açık renkli ahşap bank",
+    "en": "A long light timber bench with a broad-board back on grey tiles in front of a wall covered in green ivy"
+  },
+  "caption": {
+    "tr": "Bank açık havada, sarmaşıklı duvarın önünde duruyor. Geniş sırtlık ve kalın ayaklar uzun bir oturma yeri sağlıyor.",
+    "en": "The bench stands outdoors in front of the ivy wall. The broad back and thick supports give a long place to sit."
+  },
+  "seoFilename": "gri-karo-zeminde-sirtlikli-uzun-ahsap-bank-sarmasik-onunde",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

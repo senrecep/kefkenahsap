@@ -1,0 +1,37 @@
+{
+  "source": "Pergola ve Kamelyalar/12061.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ahşap tavan altında süslemeli kafes panel",
+    "en": "Ornamental lattice panel under a timber ceiling"
+  },
+  "alt": {
+    "tr": "Kahverengi ahşap tavan kirişlerinin altında, geometrik motifli oyma kafes panel ve köşede eğik destek",
+    "en": "Carved lattice panel with a geometric motif under brown timber ceiling beams, with an angled brace in the corner"
+  },
+  "caption": {
+    "tr": "Kafes panel çatı kirişlerinin arasına yerleşmiş, arkasından ışık geçiyor.",
+    "en": "The lattice panel sits between the roof beams, and light passes through it."
+  },
+  "seoFilename": "ahsap-tavan-altinda-susleme-kafes-panel-detayi",
+  "tags": {
+    "type": [
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.55
+}

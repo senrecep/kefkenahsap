@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/1539.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yeşil çatılı kamelya, kafes panelli alçak duvar, toprak zemin",
+    "en": "Green-roofed gazebo with a lattice-panel half wall on bare soil"
+  },
+  "alt": {
+    "tr": "Yeşil çatılı sekizgen kamelya, kafes panelli alçak duvar ve çevresinde toprak zemin, yanda servi ağacı",
+    "en": "Green-roofed octagonal gazebo with a lattice-panel half wall, bare soil around it and a cypress tree at the side"
+  },
+  "caption": {
+    "tr": "Alçak duvarın üst kısmı açık, alt kısmı kafes panellerle örülü. Zemin henüz toprak halinde.",
+    "en": "The upper part of the half wall is open and the lower part is filled with lattice panels. The ground is still bare soil."
+  },
+  "seoFilename": "yesil-catili-kamelya-kafes-panelli-alcak-duvar",
+  "tags": {
+    "type": [
+      "kamelya",
+      "kafes / paravan"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

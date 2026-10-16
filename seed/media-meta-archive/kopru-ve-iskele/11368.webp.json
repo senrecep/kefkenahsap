@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/11368.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz kolonlu sundurma boyunca turuncu ahşap yürüyüş yolu",
+    "en": "Orange timber walkway along a porch with white columns"
+  },
+  "alt": {
+    "tr": "Beyaz kolonlu sundurmanın kenarında, bitkilerin arasından geçen dar turuncu ahşap yürüyüş yolu",
+    "en": "Narrow orange timber walkway running between plants alongside a porch with white columns"
+  },
+  "caption": {
+    "tr": "Yol tahtaları boyuna döşenmiş ve köşede dönüyor. İki yanda süs çalıları ve otlar var.",
+    "en": "The boards are laid lengthwise and the path turns at the corner. Ornamental shrubs and grasses line both sides."
+  },
+  "seoFilename": "beyaz-kolonlu-sundurma-turuncu-yuruyus-yolu",
+  "tags": {
+    "type": [
+      "yürüyüş yolu",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

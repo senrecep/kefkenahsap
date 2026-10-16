@@ -1,0 +1,37 @@
+{
+  "source": "Merdivenler/8.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Köşklü ahşap gözetleme kulesi ve merdiveni",
+    "en": "Timber watchtower with a cabin, and its stairs"
+  },
+  "alt": {
+    "tr": "Ayaklar üzerinde yükselen, üstü kapalı köşkü olan ahşap gözetleme kulesi ve yan tarafındaki merdiven",
+    "en": "Timber watchtower raised on legs with a roofed cabin, and the stairs up its side"
+  },
+  "caption": {
+    "tr": "Kulenin köşkü yüksekte, korkuluklu bir balkonla çevrili. Merdiven yandan köşke çıkıyor, arkada demir yolu hattı var.",
+    "en": "The cabin of the tower sits high up, surrounded by a railed balcony. The stairs climb the side to the cabin, with a railway line behind."
+  },
+  "seoFilename": "koskulu-ahsap-gozetleme-kulesi-ve-merdiveni",
+  "tags": {
+    "type": [
+      "merdiven"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.6
+}

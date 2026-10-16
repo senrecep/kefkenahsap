@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/1823.webp",
+  "category": "ahsap-ev-ve-bungalov",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar ve çit arkasında balkonlu ahşap ev",
+    "en": "Timber house with balconies behind a stone wall and fence"
+  },
+  "alt": {
+    "tr": "Taş duvar ile çıtalı çitin arkasında, önünde yaprağını dökmüş ağaçlar bulunan balkonlu ahşap ev",
+    "en": "Timber house with balconies behind a stone wall and slatted fence, with leafless trees in front"
+  },
+  "caption": {
+    "tr": "Ev iki katlı ve balkonlu. Taş duvarın üstünde çıtalı çit sıralanıyor, bahçede çim var.",
+    "en": "The house has two floors and balconies. A slatted fence runs along the top of the stone wall and the garden is grassed."
+  },
+  "seoFilename": "balkonlu-ahsap-ev-ve-kuru-agaclar-tas-duvar",
+  "tags": {
+    "type": [
+      "ahşap ev / bungalov",
+      "çit"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

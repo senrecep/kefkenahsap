@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/13552.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz duvara yerleştirilmiş ahşap bank, yeşillik ve cilalı deck",
+    "en": "Timber bench set into a white wall with greenery and a polished deck"
+  },
+  "alt": {
+    "tr": "Beyaz sıvalı duvarın içine yerleştirilmiş ahşap oturma bankı ve cilalı deck zemin; sağda yuvarlak budanmış bir bitki",
+    "en": "A timber bench set into a white-rendered wall with a polished deck floor"
+  },
+  "caption": {
+    "tr": "Duvarın içine oyulmuş gibi duran bank, deck zeminle aynı tonda cilalanmış. Arkadaki yüksek bitkiler kapalı bir köşe yaratıyor.",
+    "en": "The bench, which looks cut into the wall, is finished in the same tone as the deck. The tall plants behind create an enclosed corner."
+  },
+  "seoFilename": "beyaz-duvara-yerlestirilmis-ahsap-bank-bitki-ve-cilali-deck",
+  "tags": {
+    "type": [
+      "bank",
+      "çiçeklik / saksı",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

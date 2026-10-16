@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/13297.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çalılık önünde çimde alçak çiçeklik kasaları",
+    "en": "Low planter boxes on the lawn in front of a hedge"
+  },
+  "alt": {
+    "tr": "Çalılık önünde çimenin üzerinde köşeli dizilmiş alçak turuncu ahşap çiçeklik kasaları; yerde aletler",
+    "en": "Low orange timber planter boxes set in an angle on the lawn in front of a hedge, with tools on the ground"
+  },
+  "caption": {
+    "tr": "Kasalar çimenlik alanı üç yandan çevreliyor, içleri henüz boş. Öndeki alet çantaları işin sürdüğünü gösteriyor.",
+    "en": "The boxes surround the lawn on three sides and are still empty. Tool cases in front show that the work is under way."
+  },
+  "seoFilename": "calilik-onunde-cimde-alcak-turuncu-ahsap-ciceklik-kasalari",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

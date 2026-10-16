@@ -1,0 +1,40 @@
+{
+  "source": "Deck ve Zeminler/4294.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çapraz korkuluklu L şekilli deck",
+    "en": "L-shaped deck with cross-braced railing"
+  },
+  "alt": {
+    "tr": "Çam ağaçları ve villaların önünde köşe yapan L şekilli açık renkli deck; X çıtalı korkuluk ve yan tarafta çıplak toprak",
+    "en": "L-shaped pale deck turning a corner in front of pine trees and villas, with an X-braced railing and bare soil at the side"
+  },
+  "caption": {
+    "tr": "Deckin uzun kolu villalara doğru uzanıyor, kısa kolu öne çıkıyor. Tahtalar ağaç gölgeleriyle benekli görünüyor.",
+    "en": "The long arm of the deck reaches towards the villas and the short arm juts forward. The boards look dappled with tree shade."
+  },
+  "seoFilename": "capraz-korkuluklu-l-seklinde-deck-cam-ve-villalar",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "orman / kır"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

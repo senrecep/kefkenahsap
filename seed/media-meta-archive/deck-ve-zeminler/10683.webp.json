@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/10683.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimenlik kenarında geniş kızıl tonlu deck",
+    "en": "Wide red-toned deck beside the lawn"
+  },
+  "alt": {
+    "tr": "Çimenlik kenarında uzanan geniş, parlak ve kızıl tonlu ahşap deck, perspektiften",
+    "en": "Wide, glossy, red-toned timber deck running beside a lawn, seen in perspective"
+  },
+  "caption": {
+    "tr": "Tahtalar duvara dik döşenmiş, uzun derzler perspektifi vurguluyor. Çimle buluşan kenar düz kesilmiş.",
+    "en": "The boards are laid at right angles to the wall and the long joints emphasise the perspective. The edge meeting the lawn is cut straight."
+  },
+  "seoFilename": "cimenlik-kenarinda-genis-parlak-ve-kizil-tonlu-ahsap-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

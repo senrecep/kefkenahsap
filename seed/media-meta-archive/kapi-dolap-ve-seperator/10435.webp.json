@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/10435.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölyede hazırlanan jaluzi kapaklı açık tonlu klima kasası",
+    "en": "Light air-conditioner housing with louvre sides built in the workshop"
+  },
+  "alt": {
+    "tr": "Atölyede fayans zeminde duran, yanları jaluzi çıtalı, üstü tahtalı açık tonlu ahşap kasa, arkada alet panosu",
+    "en": "Light timber housing with louvre sides and a slatted top standing on a tiled workshop floor, with a tool board behind"
+  },
+  "caption": {
+    "tr": "Kasanın yanları jaluzi çıtalı, kapağı düz tahtalı. Montaj öncesi atölyede deneniyor.",
+    "en": "The housing has louvred sides and a flat boarded lid, and is being tried in the workshop before installation."
+  },
+  "seoFilename": "atolyede-hazirlanan-jaluzi-kapakli-acik-tonlu-klima-kasasi",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

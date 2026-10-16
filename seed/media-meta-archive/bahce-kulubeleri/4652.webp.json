@@ -1,0 +1,39 @@
+{
+  "source": "Kapi Dolap ve Seperator/4652.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bina yanında açık renk, çift kapaklı ahşap depo",
+    "en": "Light timber shed with double doors beside a building"
+  },
+  "alt": {
+    "tr": "Yeşil shingle çatılı, yatay tahtalı açık renk ahşap depo; çift kapaklı, bina duvarının önünde duruyor",
+    "en": "A light timber shed with a green shingle roof, horizontal boards and double doors in front of a building wall"
+  },
+  "caption": {
+    "tr": "Depo emprenyeli çam tahtalardan, çatısı yeşil shingle. Yanındaki çimlik ve taş yol bahçenin devamı.",
+    "en": "The shed is made of pressure-treated pine boards with a green shingle roof. A lawn and a stone path run alongside."
+  },
+  "seoFilename": "acik-renk-cift-kapakli-depo-bina-yani",
+  "tags": {
+    "type": [
+      "bahçe kulübesi / depo"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

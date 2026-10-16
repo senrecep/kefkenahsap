@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14236.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yeşil boyalı deck ve oturma köşesi",
+    "en": "Green-painted deck and seating corner"
+  },
+  "alt": {
+    "tr": "Çam gövdesini saran, yeşile boyanmış deck; arka planda ahşap sandalyelerle bir oturma köşesi",
+    "en": "Green-painted deck wrapped around a pine trunk, with a seating corner of timber chairs behind"
+  },
+  "caption": {
+    "tr": "Deck gövdenin çevresinde kare boşlukla kesilmiş. Kenarda çalılar ve bir küp duruyor.",
+    "en": "The deck is cut with a square opening around the trunk. Shrubs and a clay pot stand at the edge."
+  },
+  "seoFilename": "yesil-boyali-deck-ve-oturma-kosesi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "orman / kır"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

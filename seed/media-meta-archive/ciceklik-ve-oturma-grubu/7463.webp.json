@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/7463.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam giriş önünde palmiyeli çiçeklik",
+    "en": "Planter with a palm in front of a glass entrance"
+  },
+  "alt": {
+    "tr": "Cam girişin önünde duran, kırmızı-kahve vernikli yatay çıtalı çiçeklik; içinde palmiye",
+    "en": "Red-brown varnished planter with horizontal slats in front of a glass entrance, with a palm inside"
+  },
+  "caption": {
+    "tr": "Çiçeklik kare ve ayaklarında kalın takozlar var. Palmiye saksısıyla birlikte içine oturtulmuş.",
+    "en": "The planter is square with thick blocks at its feet. The palm sits in it in its own pot."
+  },
+  "seoFilename": "cam-giris-onunde-kirmizi-kahve-vernikli-yatay-citali",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş",
+      "ticari mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

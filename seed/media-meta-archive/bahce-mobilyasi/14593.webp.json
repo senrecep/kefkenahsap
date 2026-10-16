@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/14593.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Doğal kenarlı masa ve kavisli bank, taş zeminde",
+    "en": "Live-edge table and curved bench on stone paving"
+  },
+  "alt": {
+    "tr": "Taş zeminde duran, doğal kenarlı vernikli ahşap masa ve arkasındaki kavisli bank",
+    "en": "Varnished live-edge timber table on stone paving with a curved bench behind it"
+  },
+  "caption": {
+    "tr": "Masanın tek parça tablasının kenarları ağacın hattını izliyor. Ayakları dört kollu ve kırmızımsı.",
+    "en": "The edges of the single-slab top follow the line of the tree. The base has four reddish arms."
+  },
+  "seoFilename": "dogal-kenarli-vernikli-masa-ve-kavisli-bank-tas-zemin",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

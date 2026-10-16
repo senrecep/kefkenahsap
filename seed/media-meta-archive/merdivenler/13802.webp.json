@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/13802.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yeşil karolu zemin yanında platform ve açık merdiven",
+    "en": "Platform and open stairs beside a green-tiled floor"
+  },
+  "alt": {
+    "tr": "Yeşil karolu zemin yanında kırmızımsı kahverengi ahşap platform ve açık basamaklı merdiven",
+    "en": "Red-brown timber platform and open-tread stairs beside a green-tiled floor"
+  },
+  "caption": {
+    "tr": "Platformun önünde yeşil karolu, süzgeçli bir zemin uzanıyor. Merdiven platformun üstünden yükseliyor.",
+    "en": "A green-tiled floor with a drain runs in front of the platform. The stairs rise above it."
+  },
+  "seoFilename": "yesil-karolu-zemin-yaninda-ahsap-platform-acik-merdiven",
+  "tags": {
+    "type": [
+      "merdiven",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

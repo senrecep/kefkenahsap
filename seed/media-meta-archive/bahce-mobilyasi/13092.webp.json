@@ -1,0 +1,35 @@
+{
+  "source": "Ireko-Teak/13092.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kavisli beton oturma alanının çevresine ahşap kaplama yapılıyor",
+    "en": "Timber cladding going onto a curved concrete seating area"
+  },
+  "alt": {
+    "tr": "Ağaçlı bir bahçede, yarım daire biçimli beton oturma alanının çevresine dikey ahşap kaplama monte ediliyor",
+    "en": "In a garden with trees, vertical timber cladding is being fitted around a semicircular concrete seating area"
+  },
+  "caption": {
+    "tr": "Beton yapının yüzeyine dikey ahşap şeritler tek tek monte ediliyor. Ortadaki kesme tezgâhı işin bahçede yapıldığını gösteriyor.",
+    "en": "Vertical timber strips are being fixed one by one to the face of the concrete structure. The cutting bench in the middle shows the work is done on site."
+  },
+  "seoFilename": "kavisli-beton-oturma-alani-cevresinde-ahsap-kaplama-kesme",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

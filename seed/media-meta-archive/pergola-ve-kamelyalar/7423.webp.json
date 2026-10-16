@@ -1,0 +1,37 @@
+{
+  "source": "Pergola ve Kamelyalar/7423.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Alttan çıtalı pergola çatı, aralardan gökyüzü görünüyor",
+    "en": "Slatted pergola roof from below with the sky showing through"
+  },
+  "alt": {
+    "tr": "Alttan görünen çıtalı ahşap pergola çatısı, koyu tonlu kirişler ve çıtaların arasından süzülen gökyüzü",
+    "en": "Slatted timber pergola roof seen from below, with dark-toned beams and the sky filtering through the slats"
+  },
+  "caption": {
+    "tr": "Çıtalar çapraz bir açıyla sıralı ve ana kirişlere oturuyor. Boşluklardan gelen ışık çizgiler çiziyor.",
+    "en": "The slats are laid at a diagonal angle on the main beams. Light through the gaps draws lines."
+  },
+  "seoFilename": "alttan-citali-pergola-cati-gokyuzu",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

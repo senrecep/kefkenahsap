@@ -1,0 +1,39 @@
+{
+  "source": "Korkuluk ve Cit/6434.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ağaç yanında yuvarlak direk ve sıralı çit direkleri",
+    "en": "Round post beside a tree with posts lined up behind"
+  },
+  "alt": {
+    "tr": "Yaşlı bir ağacın yanında duran kalın yuvarlak direk ve çamurlu arazide uzaklaşan sıralı ince direkler, yerde mavi hortum",
+    "en": "Thick round post beside an old tree, with slender posts receding across a muddy plot and a blue hose on the ground"
+  },
+  "caption": {
+    "tr": "Ön plandaki direk hattın ölçüsünü gösteriyor. Arkada direkler arazinin sonuna dek uzanıyor.",
+    "en": "The post in front shows the scale of the line. Behind it the posts stretch to the far end of the plot."
+  },
+  "seoFilename": "agac-yaninda-yuvarlak-direk-ve-sirali-cit-direkleri",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

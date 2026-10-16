@@ -1,0 +1,39 @@
+{
+  "source": "Ahsap Yapilar/12062.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Oyma desenli kafesli kamelya iç çatısı",
+    "en": "Gazebo ceiling with carved lattice panels"
+  },
+  "alt": {
+    "tr": "Kamelyanın koyu tonlu çatı altı, kirişler arasında oyma desenli kafes bölümler ve tahta kaplama",
+    "en": "Dark-toned underside of a gazebo roof with carved lattice panels between the beams and timber boarding"
+  },
+  "caption": {
+    "tr": "Kirişler ortada birleşen bir çatı kurguluyor, kafes bölümler kirişlerin arasındaki boşlukları süslüyor.",
+    "en": "The beams form a roof that meets at the centre, and the lattice panels fill the gaps between them."
+  },
+  "seoFilename": "oyma-desenli-kafesli-kamelya-cati-ici",
+  "tags": {
+    "type": [
+      "kamelya",
+      "tavan kaplaması / lambri",
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

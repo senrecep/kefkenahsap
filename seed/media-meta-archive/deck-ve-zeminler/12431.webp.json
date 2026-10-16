@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12431.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çit boyunca çakıl dolgulu alanda deck alt iskeleti",
+    "en": "Deck substructure over gravel along a fence"
+  },
+  "alt": {
+    "tr": "Çit ve duvar boyunca uzanan, mavi çakıl dolgulu alanda açık renkli ahşap deck alt iskeleti",
+    "en": "Pale timber deck substructure over blue-grey gravel running along a fence and wall"
+  },
+  "caption": {
+    "tr": "Kirişler çakıl yatağında uzun bir şerit boyunca sıralanmış. Kenarda çalılar ve çit direkleri görünüyor.",
+    "en": "The joists are laid in a long strip over the gravel bed. Shrubs and fence posts stand along the side."
+  },
+  "seoFilename": "cit-boyunca-cakil-dolgulu-alanda-deck-alt-iskeleti",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

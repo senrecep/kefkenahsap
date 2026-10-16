@@ -1,0 +1,40 @@
+{
+  "source": "Ahsap Yapilar/498.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kamelya çatı altında lambri kaplama ve çapraz kirişler",
+    "en": "Lining boards and crossing beams under a gazebo roof"
+  },
+  "alt": {
+    "tr": "Kamelyanın altından lambri çatı kaplaması, çapraz kirişler ve dışarıda yol ile ağaçlar",
+    "en": "Looking up at lining boards and crossing beams under a gazebo roof, with a road and trees outside"
+  },
+  "caption": {
+    "tr": "Direkler köşelerde yükseliyor, kirişler üçgen oluşturacak şekilde çaprazlanmış. Tavan tahtaları dar ve düzgün.",
+    "en": "The posts rise at the corners and the beams cross to form triangles. The ceiling boards are narrow and even."
+  },
+  "seoFilename": "kamelya-cati-alti-lambri-capraz-kirisler",
+  "tags": {
+    "type": [
+      "kamelya",
+      "tavan kaplaması / lambri"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

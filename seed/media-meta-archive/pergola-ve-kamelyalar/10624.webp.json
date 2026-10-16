@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/10624.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kamelya içinden yeşil çatı sıraları, banklar ve korkuluk",
+    "en": "Inside a gazebo with a green-edged roof, benches and rails"
+  },
+  "alt": {
+    "tr": "Kamelyanın içinden bakıldığında çatı kirişleri, yeşil çatı kenarı, banklar ve çıtalı korkuluklar",
+    "en": "View inside a gazebo showing roof beams, a green roof edge, benches and slatted rails"
+  },
+  "caption": {
+    "tr": "Kirişler ortada birleşiyor ve çatının kenarında yeşil shingle sırası görünüyor. Banklar korkulukla bütünleşik.",
+    "en": "The beams meet in the middle and a row of green shingles shows at the roof edge. The benches are built into the rails."
+  },
+  "seoFilename": "kamelya-ici-yesil-cati-kenari-banklar-korkuluk",
+  "tags": {
+    "type": [
+      "kamelya",
+      "bank",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

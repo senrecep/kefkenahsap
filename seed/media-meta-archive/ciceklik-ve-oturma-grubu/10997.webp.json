@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/10997.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kaldırımda sıralı vernikli çiçeklikler",
+    "en": "Varnished planters in a row on the pavement"
+  },
+  "alt": {
+    "tr": "Dükkânların önündeki kaldırımda arka arkaya dizilmiş vernikli ahşap çiçeklikler",
+    "en": "Varnished timber planters lined up one behind another on the pavement in front of shops"
+  },
+  "caption": {
+    "tr": "Çiçekliklerin içi siyah astarlı, yüzeyi yatay çıtalı. Arkada taş duvar ve dükkân tabelaları görünüyor.",
+    "en": "The planters have black liners and horizontally slatted sides. A stone wall and shop signs are visible behind."
+  },
+  "seoFilename": "kaldirimda-sirali-vernikli-ahsap-ciceklikler-dukkanlar",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

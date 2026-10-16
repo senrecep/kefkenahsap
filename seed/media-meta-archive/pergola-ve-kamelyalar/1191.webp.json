@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/1191.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Zemini hazırlanmamış bahçede emprenyeli pergola iskeleti",
+    "en": "Pressure-treated pergola frame over ground not yet laid"
+  },
+  "alt": {
+    "tr": "Zemini henüz hazırlanmamış bahçede emprenyeli çamdan pergola iskeleti, yatay kirişler ve çapraz payandalar",
+    "en": "Pressure-treated pine pergola frame over a garden floor not yet laid, with horizontal beams and diagonal braces"
+  },
+  "caption": {
+    "tr": "Direkler, kirişler ve payandalar yerinde ama ayak altı hâlâ çıplak. Arkada çiçek açmış defne ağaçları var.",
+    "en": "The posts, beams and braces are in place, but the ground below is still bare. Flowering oleanders stand behind."
+  },
+  "seoFilename": "zemini-hazir-olmayan-bahcede-emprenyeli-pergola",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

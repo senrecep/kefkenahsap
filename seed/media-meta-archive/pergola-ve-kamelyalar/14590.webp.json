@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/14590.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kamelya direği ve kavisli ahşap bank, çevrede güller",
+    "en": "Gazebo post and a curved timber bench with roses around"
+  },
+  "alt": {
+    "tr": "Kamelyanın direği ve fenerli köşesi, kavisli ahşap bank, arkada çimlik ve kırmızı güller",
+    "en": "Gazebo post with a lantern, a curved timber bench, and a lawn with red roses behind"
+  },
+  "caption": {
+    "tr": "Bankın oturma yüzeyi çıtalı, arkalık kavisli. Pergola direğinde bir fener asılı.",
+    "en": "The bench seat is slatted with a curved back. A lantern hangs from the gazebo post."
+  },
+  "seoFilename": "kamelya-diregi-kavisli-ahsap-bank-guller",
+  "tags": {
+    "type": [
+      "kamelya",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

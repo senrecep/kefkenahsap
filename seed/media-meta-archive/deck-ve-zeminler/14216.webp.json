@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/14216.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ahşap yapı yanında ağaçları saran deck",
+    "en": "Deck wrapping around trees beside a timber building"
+  },
+  "alt": {
+    "tr": "Çam ağaçlarının çevresinde dönen, arka planda ahşap bir yapıya ulaşan açık renkli deck",
+    "en": "Pale deck circling pine trees and reaching a timber structure in the background"
+  },
+  "caption": {
+    "tr": "Köşeli bir hatla ağaç gövdelerinin etrafından geçen deck, arkadaki ahşap yapıya doğru daralıyor.",
+    "en": "The deck passes the trunks in an angular line and narrows towards the timber building behind."
+  },
+  "seoFilename": "ahsap-yapi-yaninda-agaclari-saran-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "orman / kır"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

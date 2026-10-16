@@ -1,0 +1,35 @@
+{
+  "source": "Ireko-Teak/14191.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kızak ayaklı ahşap koltuk iskeletleri",
+    "en": "Skid-leg timber armchair frames"
+  },
+  "alt": {
+    "tr": "Atölyede, çıtalı oturaklı ve kızak ayaklı iki ahşap koltuk iskeleti",
+    "en": "Two timber armchair frames with slatted seats and skid legs in the workshop"
+  },
+  "caption": {
+    "tr": "Koltukların iskeleti bal rengi ahşap, ayaklar kızak biçiminde. Henüz minder yok.",
+    "en": "The frames are honey-coloured timber with skid-shaped legs. There are no cushions yet."
+  },
+  "seoFilename": "atolyede-kizak-ayakli-koltuk-iskeletleri",
+  "tags": {
+    "type": [
+      "oturma grubu"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

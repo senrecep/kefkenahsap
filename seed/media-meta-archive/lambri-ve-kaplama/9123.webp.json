@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/9123.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yatay cephe kaplama, dikey derz ve kapı boşluğu",
+    "en": "Horizontal facade cladding with a vertical joint and a doorway"
+  },
+  "alt": {
+    "tr": "Turuncu-kahve vernikli yatay ahşap kaplamada köşe boyunca inen dikey bir derz ve sağda kapı boşluğu",
+    "en": "Orange-brown varnished horizontal timber cladding with a vertical joint down the corner and a doorway on the right"
+  },
+  "caption": {
+    "tr": "Tahtalar iki yüzeyde farklı hizada başlıyor, köşede ince bir derz bırakılmış.",
+    "en": "The boards start at different alignments on the two faces, with a thin joint left at the corner."
+  },
+  "seoFilename": "yatay-ahsap-cephe-kaplama-dikey-derz-ve-kapi-boslugu",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

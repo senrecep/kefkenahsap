@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/4065.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çam ağaçları arasında X korkuluklu yükseltilmiş deck",
+    "en": "Raised deck with X railings among pine trees"
+  },
+  "alt": {
+    "tr": "Çam ormanında ayaklar üzerinde yükselen açık renkli deck ve çevresindeki çapraz X korkuluk",
+    "en": "Light deck raised on posts in a pine forest, with an X-pattern railing around it"
+  },
+  "caption": {
+    "tr": "Deck ağaçların arasına yerleşmiş ve zeminden yükseltilmiş. Korkuluk çaprazlarla sıkı örülmüş.",
+    "en": "The deck sits among the trees, lifted off the ground. The railing is tightly braced with crosses."
+  },
+  "seoFilename": "cam-agaclari-arasinda-x-korkuluklu-yukseltilmis-deck",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "orman / kır"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

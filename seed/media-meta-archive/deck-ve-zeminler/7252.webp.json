@@ -1,0 +1,40 @@
+{
+  "source": "Deck ve Zeminler/7252.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz katlanır masalı açık renkli deck",
+    "en": "Pale deck with a white folding table"
+  },
+  "alt": {
+    "tr": "Çimenin kenarında duran, üzerinde beyaz katlanır masa ve sandalyeler bulunan açık renkli deck",
+    "en": "Pale deck at the edge of a lawn with a white folding table and chairs on it"
+  },
+  "caption": {
+    "tr": "Deck çapraz bir yönde döşenmiş ve yüzeyi hafif nemli. Arka tarafta cam kapının önünde küçük bir bitki saksısı var.",
+    "en": "The deck is laid on a diagonal and its surface is slightly damp. A small potted plant stands in front of the glass door at the back."
+  },
+  "seoFilename": "beyaz-katlanir-masa-ve-sandalyeler-olan-acik-renkli-deck",
+  "tags": {
+    "type": [
+      "deck",
+      "masa ve sandalye takımı"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

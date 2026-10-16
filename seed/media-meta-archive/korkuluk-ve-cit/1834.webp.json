@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/1834.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar üstünde piket çit, arkada iki katlı ahşap ev",
+    "en": "Picket fence on a stone wall with a two-storey timber house behind"
+  },
+  "alt": {
+    "tr": "Taş duvarın üzerindeki ahşap çıtalı çit, arkasında kafes desenli balkonlu iki katlı ahşap yapı",
+    "en": "Timber picket fence on a stone wall, with a two-storey timber building with lattice-pattern balconies behind"
+  },
+  "caption": {
+    "tr": "Çit duvar boyunca uzanıp ahşap yapının önünden geçiyor. Önde taş parçaları duruyor.",
+    "en": "The fence runs along the wall past the front of the timber building. Stone pieces lie in front."
+  },
+  "seoFilename": "tas-duvar-ustunde-piket-cit-arkada-iki-katli-ahsap-yapi",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

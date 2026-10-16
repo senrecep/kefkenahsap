@@ -1,0 +1,42 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/61.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Korkuluklu ahşap deck üzerinde seramik üstlü masa ve iki tabure",
+    "en": "Ceramic-topped table and two stools on a railed timber deck"
+  },
+  "alt": {
+    "tr": "Çıtalı korkuluklarla çevrili ahşap deck üzerinde, ortası seramik karolu alçak masa ile iki çıtalı tabure",
+    "en": "On a timber deck fenced by slatted railings, a low table with ceramic tiles inset and two slatted stools"
+  },
+  "caption": {
+    "tr": "Masanın ortasına seramik karolar yerleştirilmiş. Taburelerle birlikte takım çıtalı yapıda ve deck zeminle uyumlu.",
+    "en": "Ceramic tiles are set into the middle of the table. With the stools it forms a slatted set that matches the decking."
+  },
+  "seoFilename": "korkuluklu-ahsap-deck-uzerinde-seramik-ustlu-masa-ve-iki",
+  "tags": {
+    "type": [
+      "sehpa",
+      "masa ve sandalye takımı",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras",
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

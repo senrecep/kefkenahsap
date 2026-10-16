@@ -1,0 +1,40 @@
+{
+  "source": "Deck ve Zeminler/4063.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çapraz korkuluk ve basamaklarla havuz yanında deck",
+    "en": "Deck beside a pool with cross-braced railing and steps"
+  },
+  "alt": {
+    "tr": "Soldaki havuzun yanında uzanan açık renkli deck; uzun çapraz çıtalı korkuluk, sağ üstte basamaklar ve arkada çam ormanı",
+    "en": "Pale deck running beside a pool on the left, with a long cross-braced railing, steps at upper right and a pine forest behind"
+  },
+  "caption": {
+    "tr": "Deck havuzun kenarını boydan boya izliyor. Korkuluk çam gövdesine kadar kesintisiz devam ediyor.",
+    "en": "The deck follows the pool edge along its whole length. The railing continues unbroken up to a pine trunk."
+  },
+  "seoFilename": "capraz-korkuluk-basamaklar-ve-havuz-yaninda-deck",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "orman / kır"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

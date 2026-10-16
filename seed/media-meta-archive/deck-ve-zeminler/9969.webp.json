@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/9969.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar dibinde kırmızı tonlu deck köşesi",
+    "en": "Red-toned deck corner against a stone wall"
+  },
+  "alt": {
+    "tr": "Taş kaplı bir duvarın dibinde, yağmur borusunun yanında kırmızı kahve tonlu dar deck alanı",
+    "en": "Narrow red-brown deck area at the foot of a stone-faced wall, beside a downpipe"
+  },
+  "caption": {
+    "tr": "Deck duvarın dibine kadar uzanıyor. Tahtalar uzun yönde, duvara dik döşenmiş.",
+    "en": "The deck runs right up to the wall. The boards lie lengthwise, at right angles to the wall."
+  },
+  "seoFilename": "tas-duvar-dibinde-kirmizi-tonlu-deck-kosesi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

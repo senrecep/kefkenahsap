@@ -1,0 +1,39 @@
+{
+  "source": "Korkuluk ve Cit/8275.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çalılar boyunca yeşil tel örgülü ahşap çit",
+    "en": "Green wire-mesh timber fence along shrubs"
+  },
+  "alt": {
+    "tr": "Çimenliğin kenarında sık çalıların önünden uzanan, yeşil tel örgülü ve ahşap çerçeveli çit",
+    "en": "Timber-framed fence with green wire mesh running in front of dense shrubs along a lawn"
+  },
+  "caption": {
+    "tr": "Çit çalılığı çimenden ayırıyor. Direkler eşit aralıkla sıralanıyor.",
+    "en": "The fence separates the shrubs from the lawn, with the posts at even spacing."
+  },
+  "seoFilename": "calilar-boyunca-yesil-tel-orgulu-ahsap-cit",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

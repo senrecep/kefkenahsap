@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/4828.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş istinat duvarı yanında çaprazlı merdiven",
+    "en": "Cross-braced stairs by a stone retaining wall"
+  },
+  "alt": {
+    "tr": "Çıplak toprak zeminde, taş istinat duvarı yanında çaprazlı korkuluklu ahşap merdiven; üstte duvar ve çıtalı korkuluk",
+    "en": "Timber stairs with a cross-braced railing on bare soil beside a stone retaining wall, with a wall and slatted railing above"
+  },
+  "caption": {
+    "tr": "Merdiven toprak zeminde, taş duvarın yanında yükseliyor. Çaprazlı korkuluk iki yandan basamakları çevreliyor.",
+    "en": "The stairs rise on bare soil beside the stone wall. The cross-braced railing frames the steps on both sides."
+  },
+  "seoFilename": "tas-istinat-duvari-yaninda-caprazli-merdiven-toprak",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/3730.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz kenarında yarım daire deck ve oturma grupları",
+    "en": "Semicircular pool deck with seating sets"
+  },
+  "alt": {
+    "tr": "Havuza doğru yarım daire uzanan açık renkli deck platformu, üzerinde iki ahşap oturma grubu ve beyaz şemsiye",
+    "en": "Light semicircular deck platform projecting toward a pool, with two timber seating sets and a white parasol"
+  },
+  "caption": {
+    "tr": "Deck havuzun kenarına yarım daire olarak çıkıyor. Oturma grupları için düz bir zemin sağlıyor.",
+    "en": "The deck projects as a semicircle at the pool edge and gives the seating sets a level floor."
+  },
+  "seoFilename": "havuz-kenarinda-yarim-daire-deck-ve-oturma-gruplari",
+  "tags": {
+    "type": [
+      "deck",
+      "oturma grubu"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı",
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

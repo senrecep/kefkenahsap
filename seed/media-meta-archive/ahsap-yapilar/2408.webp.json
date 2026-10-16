@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/2408.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz sıvalı duvarda koyu vernikli çatı saçağı",
+    "en": "Dark varnished eave on a white plastered wall"
+  },
+  "alt": {
+    "tr": "Beyaz sıvalı duvarın üstünde koyu vernikli çatı saçağı ve aynı tonda pencere kasası",
+    "en": "Dark varnished roof eave above a white plastered wall, with a window frame in the same tone"
+  },
+  "caption": {
+    "tr": "Saçağın kirişleri açıkta duruyor, pencere kasası da aynı koyu tonda. Duvar düz beyaz sıvalı.",
+    "en": "The eave rafters are left exposed and the window frame is in the same dark tone. The wall is plain white plaster."
+  },
+  "seoFilename": "beyaz-siva-duvarda-koyu-vernikli-cati-sacagi-ve-pencere",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

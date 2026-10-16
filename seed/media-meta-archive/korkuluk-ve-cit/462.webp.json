@@ -1,0 +1,40 @@
+{
+  "source": "Korkuluk ve Cit/462.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sahada çaprazlı ahşap kapı ve yüksek kapı kirişi",
+    "en": "Braced timber gate with a high lintel beam at a site"
+  },
+  "alt": {
+    "tr": "Yuvarlak kesitli iki yüksek direk ve üstünde yatay kapı kirişi, altında çaprazlı ahşap kapı, iki yanda yatay kirişli çit",
+    "en": "Two tall round posts with a horizontal lintel beam above a braced timber gate, with rail fencing on both sides"
+  },
+  "caption": {
+    "tr": "Kapı kirişi girişe yükseklik katıyor, çit iki yana sahanın çevresinde devam ediyor.",
+    "en": "The lintel adds height to the entrance, and the fence carries on to both sides around the site."
+  },
+  "seoFilename": "sahada-capraz-ahsap-kapi-ve-yuksek-kapi-kirisi",
+  "tags": {
+    "type": [
+      "çit",
+      "bahçe kapısı"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,39 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/10186.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sekizgen dikey tahtalı çiçeklik",
+    "en": "Octagonal planter with vertical boards"
+  },
+  "alt": {
+    "tr": "Dükkânın karo zemininde duran, dikey tahtalarla çevrili sekizgen ahşap çiçeklik",
+    "en": "Octagonal timber planter clad in vertical boards standing on a shop's tiled floor"
+  },
+  "caption": {
+    "tr": "Çiçeklik sekiz kenarlı, alt kenarında çıtalı bir kaide var. İçinde siyah astar görünüyor.",
+    "en": "The planter has eight sides and a slatted plinth at the base. A black liner is visible inside."
+  },
+  "seoFilename": "sekizgen-dikey-tahtali-ahsap-ciceklik-dukkan-zemini",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

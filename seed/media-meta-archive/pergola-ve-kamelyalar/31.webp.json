@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/31.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Üzüm bağı yanında yukarıdan görünen ahşap pergola dizisi",
+    "en": "Row of timber pergolas beside a vineyard seen from above"
+  },
+  "alt": {
+    "tr": "Yukarıdan görünen üzüm bağı yamacında taş duvarlı alanda sıralanan ahşap pergolalar ve yürüyüş yolu",
+    "en": "Timber pergolas lined up on a stone-walled terrace beside a vineyard slope, with a walkway, seen from above"
+  },
+  "caption": {
+    "tr": "Pergolalar taş duvarlı bir alanın kenarında peş peşe sıralanıyor. Çevrede basamaklı bağ sıraları uzanıyor.",
+    "en": "The pergolas stand one after another along a stone-walled area. Terraced rows of vines stretch around them."
+  },
+  "seoFilename": "uzum-bagi-yaninda-yukaridan-ahsap-pergola-dizisi",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

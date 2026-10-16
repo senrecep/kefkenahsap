@@ -1,0 +1,33 @@
+{
+  "source": "Ahsap Yapilar/9862.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kırmızı membranla kaplı küçük düz çatı",
+    "en": "Small flat roof covered with a red membrane"
+  },
+  "alt": {
+    "tr": "Kırmızı membranla kaplanmış küçük bir yapının düz çatısı, yukarıdan; yanında yeşil çit",
+    "en": "Flat roof of a small building covered with a red membrane, seen from above, with a green fence beside it"
+  },
+  "caption": {
+    "tr": "Çatı yüzeyi kırmızı bir örtüyle kaplı, kenarlarda gri profil var. Yanda tel çit ve bahçe görünüyor.",
+    "en": "The roof surface is covered with a red sheet and has a grey profile at the edges. A wire fence and a garden show at the side."
+  },
+  "seoFilename": "kucuk-yapinin-kirmizi-membranla-kapli-duz-cati-ustten",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.4
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/13383.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş tezgâhlı, ahşap çıtalı dış mutfak",
+    "en": "Outdoor kitchen with a stone counter and slatted timber wall"
+  },
+  "alt": {
+    "tr": "Taş tezgâhında lavabo olan, duvarı dikey ahşap çıtalarla kaplı dış mutfak köşesi",
+    "en": "Outdoor kitchen corner with a sink in the stone counter and a wall clad in vertical timber slats"
+  },
+  "caption": {
+    "tr": "Duvar dikey çıtalarla kaplı, lavabonun arkasında mavi yeşil fayans var. Yan tarafta ocak ve odun yığını görünüyor.",
+    "en": "The wall is clad in vertical slats and blue-green tiles sit behind the sink. A stove and a stack of logs show on the side."
+  },
+  "seoFilename": "tas-tezgahli-ahsap-citali-dis-mutfak-lavabo",
+  "tags": {
+    "type": [
+      "dış mutfak / mangal alanı"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.55
+}

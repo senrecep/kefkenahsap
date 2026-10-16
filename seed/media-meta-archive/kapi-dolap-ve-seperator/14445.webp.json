@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/14445.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölyede alt kapaklı yüksek koyu ahşap dolap gövdesi",
+    "en": "Tall dark timber cabinet body with a small lower door in the workshop"
+  },
+  "alt": {
+    "tr": "Atölye zemininde dik duran, yatay koyu tahtalarla kaplı yüksek dolap gövdesi ve alt kısımda küçük çift kapaklı bölme",
+    "en": "Tall upright cabinet body clad in dark horizontal boards on a workshop floor, with a small double-door bay at the bottom"
+  },
+  "caption": {
+    "tr": "Dolap boydan boya yatay tahtayla kaplanmış, altta küçük bir kapak var. Yan taraftaki merdiven ona dayalı.",
+    "en": "The cabinet is clad full height in horizontal boards with a small door at the bottom. A ladder leans beside it."
+  },
+  "seoFilename": "atolyede-alt-kapakli-yuksek-koyu-ahsap-dolap-govdesi",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

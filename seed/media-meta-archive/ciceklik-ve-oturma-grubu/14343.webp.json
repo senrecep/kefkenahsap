@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14343.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Uzun çiçeklik kenar profili ve paravan altı",
+    "en": "Edge profile of a long planter and base of a slatted screen"
+  },
+  "alt": {
+    "tr": "Kaldırımdaki uzun ahşap çiçekliğin kenar profili ve üzerindeki çıtalı paravanın alt kısmı, yakın çekim",
+    "en": "Close view of the edge profile of a long timber planter on the pavement and the lower part of the slatted screen above it"
+  },
+  "caption": {
+    "tr": "Çiçekliğin üst kenarı geniş kuşaklı, içi siyah astarlı. Çıtalı paravan çiçekliğe oturuyor.",
+    "en": "The top edge is a wide rail and the inside is lined black. The slatted screen sits on the planter."
+  },
+  "seoFilename": "uzun-ahsap-ciceklik-kenar-profili-ve-citali-paravan-alt",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı",
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

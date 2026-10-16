@@ -1,0 +1,38 @@
+{
+  "source": "Merdivenler/4593.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz boyalı ahşap giriş merdiveni ve korkuluğu",
+    "en": "White painted timber entrance stairs and railing"
+  },
+  "alt": {
+    "tr": "Ahşap evin girişine çıkan beyaz boyalı ahşap merdiven ve korkuluk; altta taş duvarlı bodrum katı",
+    "en": "White painted timber stairs and railing leading up to the entrance of a timber house, with a stone-walled basement below"
+  },
+  "caption": {
+    "tr": "Beyaz boyalı basamaklar ve korkuluk ahşap evin giriş kapısına çıkıyor. Altta taş duvarlı bir bodrum kat var.",
+    "en": "The white painted steps and railing lead up to the front door of the timber house. A stone-walled basement sits below."
+  },
+  "seoFilename": "beyaz-boyali-ahsap-giris-merdiveni-ve-korkuluk-ahsap-ev",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

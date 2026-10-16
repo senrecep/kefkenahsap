@@ -1,0 +1,36 @@
+{
+  "source": "Ireko-Teak/13376.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş zeminde kolçaklı ahşap bank salıncak, yakından",
+    "en": "Timber bench swing with arms on stone paving, close up"
+  },
+  "alt": {
+    "tr": "Yakın çekimde, çıtalı oturak ve sırtlığı ile kavisli kolçağı olan",
+    "en": "A close view of a timber swing bench with a slatted seat and back and a curved arm on a metal frame, over stone paving"
+  },
+  "caption": {
+    "tr": "Salıncağın oturağı ve sırtlığı ince çıtalardan, kolçağı kavisli. Metal çerçeveye asılı olarak duruyor.",
+    "en": "The seat and back of the swing are thin slats and the arm is curved. It hangs from a metal frame."
+  },
+  "seoFilename": "tas-zeminde-ahsap-salincak-veya-bank-yakin-cekim",
+  "tags": {
+    "type": [
+      "salıncak",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

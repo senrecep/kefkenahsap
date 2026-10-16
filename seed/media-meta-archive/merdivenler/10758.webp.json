@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/10758.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz çit yanında çaprazlı korkuluk ve çimlik",
+    "en": "Cross-braced railing by a white fence, with the lawn behind"
+  },
+  "alt": {
+    "tr": "Beyaz çit direğinin yanında çaprazlı korkuluklu ahşap merdiven; arkada çimlik, teras ve oturma takımı",
+    "en": "Timber stairs with a cross-braced railing beside a white fence post, with a lawn, a terrace and a seating set behind"
+  },
+  "caption": {
+    "tr": "Merdivenin başında kalın bir direk duruyor. Aşağıda çimlik ve terastaki oturma takımı görünüyor.",
+    "en": "A thick post stands at the head of the stairs. The lawn and the terrace seating set show below."
+  },
+  "seoFilename": "beyaz-cit-yaninda-caprazli-korkuluk-teras-cimligi",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

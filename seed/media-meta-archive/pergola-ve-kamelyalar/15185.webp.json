@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/15185.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yeşil çatılı ahşap kamelya, çevresinde çimen ve taş adımlar",
+    "en": "Green-roofed timber gazebo with lawn and stepping stones around"
+  },
+  "alt": {
+    "tr": "Yeşil çatılı ahşap kamelya, çevrede çimen, beton çiçeklik blokları ve taş adımlar, uzakta ovada çit",
+    "en": "Green-roofed timber gazebo with lawn around it, concrete planter blocks and stepping stones"
+  },
+  "caption": {
+    "tr": "Kamelyanın çatısı yeşil kaplı, korkulukları ve direkleri açık renk. Basamak taşları çimde sıralanmış.",
+    "en": "The gazebo roof is covered in green with light-toned rails and posts. Stepping stones are laid across the lawn."
+  },
+  "seoFilename": "yesil-catili-ahsap-kamelya-cimen-tas-adimlar",
+  "tags": {
+    "type": [
+      "kamelya",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

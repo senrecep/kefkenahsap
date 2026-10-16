@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/8429.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş sütunlar arasında telli çift kanat ahşap kapı, yanında çöp konteyneri",
+    "en": "Wire-mesh double timber gate between stone piers, with a waste bin beside it"
+  },
+  "alt": {
+    "tr": "Koyu taş sütunlar arasında, kare bölmeli ve tel örgü dolgulu gri tonlu çift kanatlı ahşap kapı; sağda yeşil çöp konteyneri",
+    "en": "A grey-toned double timber gate with square panels and wire-mesh infill between dark stone piers"
+  },
+  "caption": {
+    "tr": "Kapının her kanadı altı kareye bölünmüş, kareler tel örgüyle kapatılmış. Siyah dikmeler kapıyı sütunlara bağlıyor.",
+    "en": "Each leaf of the gate is divided into six squares and the squares are closed with wire mesh. Black posts connect the gate to the piers."
+  },
+  "seoFilename": "tas-sutunlar-arasinda-telli-cift-kanat-kapi-cop-konteyneri",
+  "tags": {
+    "type": [
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,39 @@
+{
+  "source": "Ahsap Yapilar/1770.webp",
+  "category": "ahsap-ev-ve-bungalov",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Geometrik korkuluklu balkonlu ahşap ev",
+    "en": "Timber house with geometric balcony railings"
+  },
+  "alt": {
+    "tr": "Önünde açık renk çıtalı çit bulunan, geometrik desenli korkuluklu balkonları olan ahşap ev",
+    "en": "Timber house with balconies fitted with geometric-pattern railings, a light slatted fence in front"
+  },
+  "caption": {
+    "tr": "Balkon korkulukları kare kafes desenli. Evin önünde açık renk çıtalı çit sıralanıyor.",
+    "en": "The balcony railings have a square lattice pattern. A light slatted fence lines the front of the house."
+  },
+  "seoFilename": "geometrik-korkuluklu-balkonlu-ahsap-ev",
+  "tags": {
+    "type": [
+      "ahşap ev / bungalov",
+      "korkuluk",
+      "çit"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

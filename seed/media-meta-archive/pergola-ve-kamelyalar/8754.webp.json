@@ -1,0 +1,37 @@
+{
+  "source": "Pergola ve Kamelyalar/8754.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Eğimli arazide yatay vernikli pergola kirişleri, zeytin ağacı",
+    "en": "Horizontal varnished pergola beams on a slope with an olive tree"
+  },
+  "alt": {
+    "tr": "Eğimli arazide yatay vernikli pergola kirişleri, tuğla kolon, zeytin ağacı ve uzakta sahil yerleşimi",
+    "en": "Horizontal varnished pergola beams on sloping ground with a brick column, an olive tree and a coastal village beyond"
+  },
+  "caption": {
+    "tr": "Kirişler eşit aralıkla sıralanıyor, bir ahşap çıta kirişlerin üstüne çapraz konmuş. Çevresi bahçe ve yol.",
+    "en": "The beams are set at equal spacing with a timber batten laid diagonally across them. A garden and a road surround it."
+  },
+  "seoFilename": "egimli-arazide-yatay-vernikli-pergola-kirisleri-zeytin",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

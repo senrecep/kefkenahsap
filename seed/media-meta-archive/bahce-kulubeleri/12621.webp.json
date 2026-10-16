@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/12621.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ağaçlı bahçede kaydıraklı oyun evi ve salıncak",
+    "en": "Playhouse with a slide and swing in a wooded garden"
+  },
+  "alt": {
+    "tr": "Ağaçların arasındaki bahçede, yüksekte duran ahşap oyun evi, yeşil kaydırak ve yan tarafta salıncak",
+    "en": "Raised timber playhouse in a garden among trees, with a green slide and a swing at the side"
+  },
+  "caption": {
+    "tr": "Oyun evinin ön yüzünde merdiven ve kaydırak var, salıncak ayrı bir çatıyla ahşap direklere bağlı. Yerde kesilmiş tahta parçaları duruyor.",
+    "en": "The front of the playhouse has a ladder and a slide, and the swing hangs from a timber frame of its own. Cut pieces of board lie on the ground."
+  },
+  "seoFilename": "agacli-bahcede-merdivenli-ahsap-oyun-evi-yesil-kaydirak-ve",
+  "tags": {
+    "type": [
+      "çocuk oyun evi",
+      "salıncak"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "orman / kır"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

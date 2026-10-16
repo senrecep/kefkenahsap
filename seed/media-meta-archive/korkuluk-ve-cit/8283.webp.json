@@ -1,0 +1,40 @@
+{
+  "source": "Korkuluk ve Cit/8283.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deck üstünde üç bölmeli korkuluk, ortada kapı",
+    "en": "Three-section railing on a deck with a gate in the middle"
+  },
+  "alt": {
+    "tr": "Karartılmış tahtalı deck zeminin kenarında ortası çaprazlı kapı olan üç bölmeli açık tonlu çıtalı korkuluk, arkada tel çit",
+    "en": "Three-section light slatted railing on the edge of a darkened-board deck, with an X-braced gate in the middle"
+  },
+  "caption": {
+    "tr": "Korkuluk deckin açık kenarını kapatıyor. Orta bölme kapı olarak açılıyor.",
+    "en": "The railing closes the open edge of the deck. The middle section opens as a gate."
+  },
+  "seoFilename": "deck-ustunde-uc-bolmeli-citali-korkuluk-ortada-kapi",
+  "tags": {
+    "type": [
+      "çit",
+      "bahçe kapısı"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

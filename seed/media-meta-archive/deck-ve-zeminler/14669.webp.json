@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14669.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ağaç altında deck zımparalama",
+    "en": "Sanding a deck under a tree"
+  },
+  "alt": {
+    "tr": "Ağaç altındaki geniş deckin diz çökmüş bir usta ve toz emme makinesiyle zımparalanması",
+    "en": "A wide deck under a tree being sanded by a kneeling craftsman with a dust extractor"
+  },
+  "caption": {
+    "tr": "Zımpara aletinden çıkan toz yan taraftaki makineye çekiliyor. Deck korkuluk halatlarıyla çevrili ve arkasında ağaçlı bir yamaç var.",
+    "en": "The dust from the sander is drawn into the machine at the side. The deck is bordered by cable railing and a wooded slope lies behind."
+  },
+  "seoFilename": "agac-altinda-deck-zimparalama-toz-emme",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

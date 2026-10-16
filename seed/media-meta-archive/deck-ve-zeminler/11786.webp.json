@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/11786.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Fayans kenarında çakıl dolgulu kiriş çerçevesi",
+    "en": "Joist frame in a gravel fill next to tiles"
+  },
+  "alt": {
+    "tr": "Fayans zemin kenarında çakıl dolgulu alana kurulmuş ahşap deck alt konstrüksiyon çerçevesi",
+    "en": "Timber deck substructure frame set in a gravel-filled area next to a tiled floor"
+  },
+  "caption": {
+    "tr": "Dış çerçeve ve içindeki ara kirişler çakıl yatağının üzerine yerleştirilmiş. Döşeme için tahta bekliyor.",
+    "en": "The outer frame and the cross joists inside it sit on the gravel bed. The boards are yet to be laid."
+  },
+  "seoFilename": "fayans-kenari-cakil-dolgulu-kiris-cercevesi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras",
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

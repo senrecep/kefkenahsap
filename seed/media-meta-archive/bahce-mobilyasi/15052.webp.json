@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/15052.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölyede L biçimli, yüksek sırtlı geniş oturma platformu",
+    "en": "Wide L-shaped high-back seating platform in the workshop"
+  },
+  "alt": {
+    "tr": "Alet duvarlarıyla çevrili bir atölyede, koyu vernikli, L biçimli, yüksek sırtlı geniş ahşap oturma platformu duruyor",
+    "en": "In a workshop lined with tool walls stands a wide dark-varnished L-shaped timber seating platform with a high back"
+  },
+  "caption": {
+    "tr": "Platform iki duvara yaslanan L biçiminde, geniş bir oturma yüzeyi veriyor. Atölyede kurulu hâlde bekliyor.",
+    "en": "The platform is an L against two walls, giving a broad seating surface. It stands assembled in the workshop."
+  },
+  "seoFilename": "atolyede-l-seklinde-yuksek-sirtli-genis-oturma-platformu",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

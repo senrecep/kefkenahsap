@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/13403.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sökülmüş eski deck tahtaları, kirişler arasında gönye testere",
+    "en": "Old deck boards stripped out with a mitre saw between the joists"
+  },
+  "alt": {
+    "tr": "Eski gri deck tahtaları sökülmüş, kirişlerin arasında toprak ve gönye testere ile kablo görünüyor",
+    "en": "Old grey deck boards taken up, with soil between the joists and a mitre saw and cable showing"
+  },
+  "caption": {
+    "tr": "Deck'in bir bölümü açılmış ve altındaki kirişler ortada duruyor. Söküm ile yeni tahta kesimi birlikte yürüyor.",
+    "en": "One part of the deck has been opened up and the joists beneath are exposed. Stripping and cutting of the new boards go on together."
+  },
+  "seoFilename": "sokulmus-eski-deck-tahtalari-kirisler-arasinda-gonye-testere",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

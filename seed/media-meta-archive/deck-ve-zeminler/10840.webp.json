@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/10840.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Üstten bakışla kare deck platformu",
+    "en": "Square deck platform from above"
+  },
+  "alt": {
+    "tr": "Üstten çekilmiş kare ahşap deck platformu; çimen kenarı ve kablolar görünüyor",
+    "en": "Square timber deck platform shot from above, with the lawn edge and cables visible"
+  },
+  "caption": {
+    "tr": "Tahtalar yatay döşenmiş, kızıl-kahve ve sarı çizgiler dönüşümlü. Platformun bir kenarı beton bordürde bitiyor.",
+    "en": "The boards are laid horizontally with red-brown and yellow stripes alternating. One side of the platform ends at a concrete kerb."
+  },
+  "seoFilename": "ustten-cekilmis-kare-ahsap-deck-platformu-cimen-ve-kablo",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

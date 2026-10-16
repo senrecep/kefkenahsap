@@ -1,0 +1,40 @@
+{
+  "source": "Kopru ve Iskele/763.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Şantiye toprağı ardında göl üstünde uzanan ahşap iskele",
+    "en": "Timber pier over the lake behind the building-site soil"
+  },
+  "alt": {
+    "tr": "Çamurlu şantiye ve toprak yığınlarının arkasında, göl yüzeyine paralel uzanan ahşap iskele ve korkuluğu; arkada yeşil tepeler",
+    "en": "Timber pier and its railing running parallel to the lake surface behind a muddy building site and earth heaps"
+  },
+  "caption": {
+    "tr": "Korkuluk iskelenin uzun kenarı boyunca düz gidiyor. Gölün öte yakasında tarlalar ve orman var.",
+    "en": "The railing runs straight along the long edge of the pier. Fields and woodland lie across the lake."
+  },
+  "seoFilename": "santiye-topragi-ardinda-gol-ustunde-ahsap-iskele",
+  "tags": {
+    "type": [
+      "iskele",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

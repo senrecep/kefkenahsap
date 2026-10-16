@@ -1,0 +1,40 @@
+{
+  "source": "Korkuluk ve Cit/8415.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sarmaşıklı piket çit ve kapı, kiremitli evler",
+    "en": "Picket fence and gate with climbing plants and tiled-roof houses"
+  },
+  "alt": {
+    "tr": "Sarmaşık sarılmış kahverengi çıtalı çit ve açık tonlu çıtalı kapı, arkada kiremit çatılı evler ve şehir manzarası",
+    "en": "Brown picket fence with climbing plants and a light slatted gate, with tiled-roof houses and a town view behind"
+  },
+  "caption": {
+    "tr": "Kapı kahverengi çitle yan yana duruyor, sarmaşık çıtaların arasına yayılmış.",
+    "en": "The gate stands beside the brown fence, and the climber has spread between the pickets."
+  },
+  "seoFilename": "sarmasikli-piket-cit-ve-kapi-kiremitli-evler",
+  "tags": {
+    "type": [
+      "çit",
+      "bahçe kapısı"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

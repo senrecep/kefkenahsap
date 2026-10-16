@@ -1,0 +1,39 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/561.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz duvara bitişik L biçimli ahşap oturma bankı",
+    "en": "L-shaped timber seat built against a white wall"
+  },
+  "alt": {
+    "tr": "Açık bir alanda, beyaz boyalı alçak duvarın dibine yapılmış, emprenyeli çam tahtalı L biçimli oturma bankı",
+    "en": "An L-shaped seat of pressure-treated pine boards built against a low white-painted wall in an open area"
+  },
+  "caption": {
+    "tr": "Bank beyaz duvarın kıvrımını izleyerek köşeyi dolaşıyor. Oturak, aralıklı çam tahtalardan yapılmış.",
+    "en": "The bench follows the bend of the white wall around the corner. The seat is made of spaced pine boards."
+  },
+  "seoFilename": "beyaz-duvara-bitisik-l-seklinde-ahsap-oturma-banki-acik-alan",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/13935.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz ve mavi boyalı verandalı oyun evi",
+    "en": "Playhouse with a veranda, painted white and blue"
+  },
+  "alt": {
+    "tr": "Beyaz boyalı, mavi kapı ve pencere kepenkli, ahşap verandası olan çocuk oyun evi",
+    "en": "Children's playhouse painted white with a blue door and window shutters and a timber veranda"
+  },
+  "caption": {
+    "tr": "Kapıda kalp biçimli bir oyuk var, pencerelerin kepenkleri mavi. Veranda beyaz korkuluklu, zemini ahşap tahtalı.",
+    "en": "The door has a heart-shaped cut-out and the window shutters are blue. The veranda has a white railing and a boarded timber floor."
+  },
+  "seoFilename": "beyaz-ve-mavi-boyali-verandali-cocuk-oyun-evi",
+  "tags": {
+    "type": [
+      "çocuk oyun evi"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

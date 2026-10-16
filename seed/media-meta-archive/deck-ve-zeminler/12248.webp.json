@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/12248.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Köşesinde kırmızı kutu olan eskimiş koyu deck",
+    "en": "Worn dark deck with a red box in the corner"
+  },
+  "alt": {
+    "tr": "Eskimiş koyu kahverengi deck zemini, köşede kırmızı ahşap kutu ve sandık",
+    "en": "Worn dark brown decking with a red timber box and chest in the corner"
+  },
+  "caption": {
+    "tr": "Tahtalar solmuş ve yer yer aşınmış. Yenileme ya da bakım öncesinin durumu bu.",
+    "en": "The boards are faded and worn in places. This is the state before renewal or maintenance."
+  },
+  "seoFilename": "koside-kirmizi-kutu-olan-eskimis-koyu-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

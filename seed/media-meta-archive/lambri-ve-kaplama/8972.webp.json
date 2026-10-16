@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/8972.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "İskele ve ustalarla gazbeton cephede çıta uygulaması",
+    "en": "Batten installation on an aerated-concrete facade with scaffolding and crew"
+  },
+  "alt": {
+    "tr": "Gazbeton cephenin önünde kurulu iskele, üzerinde çıta çakan ustalar ve yan tarafta kiremit çatılı bir bina",
+    "en": "Scaffolding set up in front of an aerated-concrete facade with workmen fixing battens, and a tiled-roof building on the side"
+  },
+  "caption": {
+    "tr": "Ekip iki ayrı katta çalışıyor. Çıtalar dikey sıralar halinde uzuyor.",
+    "en": "The crew works on two separate levels. The battens run in vertical rows."
+  },
+  "seoFilename": "iskele-ve-iscilerle-gazbeton-cephe-uzerinde-ahsap-cita",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

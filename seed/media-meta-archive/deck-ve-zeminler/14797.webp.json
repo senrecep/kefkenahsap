@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14797.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Şap zemin üzerinde deck alt çıtaları",
+    "en": "Deck battens over a screed floor"
+  },
+  "alt": {
+    "tr": "Şap zemin üzerine ayaklarla oturtulmuş ince emprenyeli çıtalar; solda yatay çıtalı ahşap korkuluk, önde sarı yapraklı çalılar",
+    "en": "Thin pressure-treated battens set on pedestals over a screed floor, with a horizontal-slat timber railing on the left"
+  },
+  "caption": {
+    "tr": "Çıtalar eşit aralıkla sıralanmış ve yüzey nemli. Üzerine deck tahtaları henüz gelmemiş.",
+    "en": "The battens are evenly spaced and the surface is damp. The deck boards have not gone on top yet."
+  },
+  "seoFilename": "sap-zemin-uzerinde-ayakli-ince-deck-alt-citalari",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

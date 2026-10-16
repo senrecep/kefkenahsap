@@ -1,0 +1,39 @@
+{
+  "source": "Kapi Dolap ve Seperator/9243.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Köşeden görünen yatay tahtalı ahşap kasa",
+    "en": "Horizontal-board timber box seen from the corner"
+  },
+  "alt": {
+    "tr": "Bina önünde, köşeden görünen yüksek ahşap kasa; yan ve ön yüzü yatay tahtalı, yerde kablo var",
+    "en": "Tall timber box seen from its corner, front and side clad in horizontal boards, with a cable on the paving"
+  },
+  "caption": {
+    "tr": "İki yüzü de aynı yatay tahta düzeniyle kaplı. Kasa teras karosunun üstünde, çevrede apartmanlar görünüyor.",
+    "en": "Both faces carry the same horizontal board pattern. The box stands on terrace tiles with apartment blocks around."
+  },
+  "seoFilename": "koseden-gorunen-yatay-tahtali-kasa",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

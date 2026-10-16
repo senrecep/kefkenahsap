@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/14823.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Zeytin ağacı altında deck, yakın plan",
+    "en": "Deck under an olive tree, close-up"
+  },
+  "alt": {
+    "tr": "Zeytin ağacının altına uzanan deck; arkada korkuluk ve yan duvarda oturma bölmesi, önde çapraz döşenmiş tahtalar",
+    "en": "Deck stretching under an olive tree, with a railing behind and a seating box along the side wall"
+  },
+  "caption": {
+    "tr": "Yakından bakınca tahtaların çapraz döşeme hattı ve cilanın sıcak bal tonu görülüyor. Çimen kenarında beyaz taşlar duruyor.",
+    "en": "Up close the diagonal laying line of the boards and the warm honey tone of the finish are visible. White stones sit at the edge of the lawn."
+  },
+  "seoFilename": "zeytin-agaci-altinda-deck-korkuluk-ve-yan-oturma-bolmesi",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/12634.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yüksek oyun evi, kaydırak ve salıncak",
+    "en": "Tall playhouse with a slide and swing"
+  },
+  "alt": {
+    "tr": "Toprak zeminde duran yüksek ahşap oyun evi, yeşil kaydırağı ve yan tarafta salıncağı",
+    "en": "Tall timber playhouse on an earth floor with a green slide and a swing at the side"
+  },
+  "caption": {
+    "tr": "Oyun evi yüksek bir platformun üstünde, önünden kaydırak iniyor. Salıncak solda ayrı bir ahşap çerçeveye asılı.",
+    "en": "The playhouse stands on a high platform with a slide coming down in front. The swing hangs from a separate timber frame at the side."
+  },
+  "seoFilename": "yuksek-ahsap-oyun-evi-yesil-kaydirak-ve-salincak-toprak",
+  "tags": {
+    "type": [
+      "çocuk oyun evi",
+      "salıncak"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "orman / kır"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

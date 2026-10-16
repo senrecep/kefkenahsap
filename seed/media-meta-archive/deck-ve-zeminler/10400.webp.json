@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/10400.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çakıl dolgulu deck altyapısı, kenarda toprak",
+    "en": "Gravel-filled deck substructure with soil at the edges"
+  },
+  "alt": {
+    "tr": "Çakıl dolgulu ahşap deck altyapısı; kenarlarında toprak ve çalılar, arkada cam kapı",
+    "en": "Gravel-filled timber deck substructure with soil and shrubs at its edges and a glass door behind"
+  },
+  "caption": {
+    "tr": "Çerçeve kapıdan bahçeye doğru yayılıyor. Çakıl, tahtaların altında su birikmesini önleyecek.",
+    "en": "The frame spreads from the door into the garden. The gravel keeps water from collecting under the boards."
+  },
+  "seoFilename": "cakil-dolgulu-ahsap-deck-altyapisi-kenarlarda-toprak-ve",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

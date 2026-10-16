@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/15136.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Mavi naylonda üç koyu vernikli kare çiçeklik",
+    "en": "Three dark-varnished square planters on blue plastic"
+  },
+  "alt": {
+    "tr": "Atölyede mavi naylonun üzerinde arka arkaya dizilmiş üç koyu vernikli kare ahşap çiçeklik",
+    "en": "Three dark-varnished square timber planters lined up one behind another on blue plastic in the workshop"
+  },
+  "caption": {
+    "tr": "Çiçeklikler koyu kahve, içleri siyah astarlı. Arkada kereste ve kapı kanatları dayalı.",
+    "en": "The planters are dark brown with black liners. Timber and door leaves lean behind."
+  },
+  "seoFilename": "mavi-naylon-uzerinde-atolyede-uc-adet-koyu-vernikli-kare",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

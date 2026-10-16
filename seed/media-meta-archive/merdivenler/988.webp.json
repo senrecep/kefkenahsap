@@ -1,0 +1,41 @@
+{
+  "source": "Merdivenler/988.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapı önünde basamaklar ve kapaklı depo",
+    "en": "Steps in front of a glass door, with a storage hatch"
+  },
+  "alt": {
+    "tr": "Cam kapının önünde basamaklar, yatay tahtalı korkuluk ve basamak yanında kapaklı depo; arkada taş duvar",
+    "en": "Steps in front of a glass door, with a horizontal-board railing and a storage compartment with a door beside the steps"
+  },
+  "caption": {
+    "tr": "Basamaklar cam kapıya çıkıyor, yanında yatay tahtalı korkuluk var. Basamakların yan bölmesi bir depo kapağıyla kapatılmış.",
+    "en": "The steps lead up to the glass door with a horizontal-board railing beside them. The side compartment of the steps is closed with a storage door."
+  },
+  "seoFilename": "cam-kapi-onunde-basamaklar-yatay-tahtali-korkuluk-kapakli",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk",
+      "gömme dolap / gardırop"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

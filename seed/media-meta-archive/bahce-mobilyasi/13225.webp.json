@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/13225.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş zeminde çıtalı küçük ahşap sehpa, yanında bank ucu",
+    "en": "Small slatted timber table on stone paving with the end of a bench beside it"
+  },
+  "alt": {
+    "tr": "Karo zeminde, kapalı rulo panjurlu bir duvarın önünde duran, üzeri çıtalı ve çerçeveli küçük kare ahşap sehpa",
+    "en": "A small square timber table with a slatted framed top on tiled flooring in front of a wall with a closed roller shutter"
+  },
+  "caption": {
+    "tr": "Sehpa küçük ve alçak, oturma bankının yanında yan masa olarak duruyor. Tablası çıtalı, kenarı çerçeveli.",
+    "en": "The table is small and low and sits beside the bench as a side table. Its top is slatted with a framed edge."
+  },
+  "seoFilename": "tas-zeminde-citali-ahsap-kucuk-sehpa-yaninda-bank-ucu-panjur",
+  "tags": {
+    "type": [
+      "sehpa"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

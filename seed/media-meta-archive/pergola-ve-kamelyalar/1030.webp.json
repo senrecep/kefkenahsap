@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/1030.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kıyıda beşik çatı çatkısı ve deck üzerinde montaj",
+    "en": "Gable roof frame and deck going up on the shore"
+  },
+  "alt": {
+    "tr": "Kıyıdaki ahşap deck üzerinde kurulan beşik çatı çatkısı, bir işçi kesim yapıyor, yanında dağınık dallar",
+    "en": "Gable roof frame on a shoreline timber deck, with one worker cutting and loose branches beside it"
+  },
+  "caption": {
+    "tr": "Çatı çatkısının kirişleri sıralanmış, alt kısımda deck tahtaları döşenmiş. Arkada tepe ve deniz var.",
+    "en": "The roof frame rafters are set in rows and the deck boards are laid below. A hill and the sea lie behind."
+  },
+  "seoFilename": "kiyida-besik-cati-catkisi-deck-montaji",
+  "tags": {
+    "type": [
+      "pergola",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

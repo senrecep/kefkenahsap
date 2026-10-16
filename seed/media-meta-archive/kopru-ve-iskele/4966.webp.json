@@ -1,0 +1,38 @@
+{
+  "source": "Kopru ve Iskele/4966.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sazlık kenarında iskele yapımı, üç işçi çalışıyor",
+    "en": "Pier construction beside the reeds with three workers"
+  },
+  "alt": {
+    "tr": "Göl kıyısında sazlığın yanında kurulan ahşap iskelenin kiriş çerçevesi ve ilk tahtalar; üç işçi çalışıyor",
+    "en": "Joist frame and first boards of a timber pier being built beside reeds on a lakeshore"
+  },
+  "caption": {
+    "tr": "Kirişler dikmelere oturtulmuş, sağ taraftaki zemin tahtaları döşenmiş. Soldaki bölüm henüz çerçeve hâlinde.",
+    "en": "The joists sit on the posts and the floor boards on the right are laid. The section on the left is still just a frame."
+  },
+  "seoFilename": "sazlik-kenarinda-iskele-yapimi-uc-isci",
+  "tags": {
+    "type": [
+      "iskele",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

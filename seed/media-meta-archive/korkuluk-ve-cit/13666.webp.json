@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/13666.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar önünde köpek kulübesi ve çit",
+    "en": "Dog house and fence in front of a stone wall"
+  },
+  "alt": {
+    "tr": "Koyu taş duvarın dibinde, yeşil çatılı kulübeyi önden kapatan bal rengi piket çit",
+    "en": "Honey-toned picket fence closing off a green-roofed kennel at the foot of a dark stone wall"
+  },
+  "caption": {
+    "tr": "Çit kulübenin önünü kapatıyor, çıtalar tek tek kulübenin genişliğinde sıralanmış.",
+    "en": "The fence closes off the front of the kennel, with the pickets lined up across its width."
+  },
+  "seoFilename": "tas-duvar-onunde-kopek-kulubesi-ve-cit",
+  "tags": {
+    "type": [
+      "çit",
+      "köpek kulübesi"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

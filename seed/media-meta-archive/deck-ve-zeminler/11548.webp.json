@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/11548.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapı önünde yarı soyulmuş eski deck",
+    "en": "Old deck half stripped in front of a glass door"
+  },
+  "alt": {
+    "tr": "Cam kapı önünde, yarısı soyulmuş ve kısmen kırmızı boyası kalmış eski ahşap deck",
+    "en": "Old timber deck in front of a glass door, half stripped with some red paint left"
+  },
+  "caption": {
+    "tr": "Boyası kazınan kısım açık renk ahşaba dönmüş, kalan kısımda gri ve kırmızı leke duruyor. Çam damarları ortaya çıkmış.",
+    "en": "The part where the paint was scraped is back to light timber, while grey and red patches remain elsewhere. The pine grain has come back out."
+  },
+  "seoFilename": "cam-kapi-onunde-eski-deck-yarisi-soyulmus-ve-kismen-kirmizi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

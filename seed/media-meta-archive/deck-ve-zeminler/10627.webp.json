@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/10627.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapı yanında kısmen döşenmiş yan teras decki",
+    "en": "Partly laid side-terrace deck beside a glass door"
+  },
+  "alt": {
+    "tr": "Cam kapı yanındaki dar yan teras boyunca kısmen döşenmiş ahşap deck; yerde matkap",
+    "en": "Timber deck partly laid along a narrow side terrace beside a glass door, with a drill on the ground"
+  },
+  "caption": {
+    "tr": "Deck tahtaları sağdan sola ilerliyor, solda çıplak kirişler ve çim görünüyor. Matkap tahtaların üstünde duruyor.",
+    "en": "The deck boards advance from right to left with bare joists and grass showing on the left. A drill rests on the boards."
+  },
+  "seoFilename": "cam-kapi-yaninda-yan-teras-uzerinde-kismen-dosenmis-ahsap",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

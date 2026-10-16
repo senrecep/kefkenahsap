@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/13080.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çit önünde alt kısmı kaplanmış, üst kısmı açık deck",
+    "en": "Deck boarded at the front with joists open behind"
+  },
+  "alt": {
+    "tr": "Çit önünde, ön kısmı tahtalarla kaplanmış, arka kısmında kirişleri açıkta duran deck, altta çimen",
+    "en": "Deck in front of a hedge, boarded at the front with the joists still open at the back, lawn below"
+  },
+  "caption": {
+    "tr": "Döşeme ön kenardan arkaya doğru ilerliyor. Kirişlerin yönü tahtalara dik.",
+    "en": "The boarding is moving from the front edge towards the back. The joists run square to the boards."
+  },
+  "seoFilename": "cit-onunde-alt-kismi-kaplanmis-ust-kismi-acik-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

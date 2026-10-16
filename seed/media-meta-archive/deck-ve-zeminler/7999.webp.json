@@ -1,0 +1,38 @@
+{
+  "source": "Kopru ve Iskele/7999.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dikmeli kavisli deck, boş havuz kenarında",
+    "en": "Curved deck with posts at the edge of an empty pool"
+  },
+  "alt": {
+    "tr": "Kabuk hâlindeki kavisli havuzu çevreleyen açık renkli deck ve kenarda yan yana duran ahşap dikmeler, arkada konutlar",
+    "en": "Light deck around a curved empty pool with a row of timber posts along one side, with residential buildings behind"
+  },
+  "caption": {
+    "tr": "Deck kavisi tamamlanmış. Kenara dikmeler çakılmış, korkuluk için hazır görünüyor.",
+    "en": "The deck curve is complete. Posts are in at the edge, apparently ready for a railing."
+  },
+  "seoFilename": "dikmeli-kavisli-deck-bos-havuz-kenarinda",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

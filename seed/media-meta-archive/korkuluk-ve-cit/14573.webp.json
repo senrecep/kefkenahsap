@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/14573.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Zincirle kilitlenen ahşap çıtalı kapı detayı",
+    "en": "Detail of a chain-locked slatted timber gate"
+  },
+  "alt": {
+    "tr": "Metal çerçeveli çift kanatlı kapının birleşim yerinde zincir ve asma kilit, iki yanda kahverengi ahşap çıtalar",
+    "en": "Chain and padlock at the meeting point of a double-leaf metal-framed gate, with brown timber slats on both sides"
+  },
+  "caption": {
+    "tr": "İki kanat ortada buluşuyor, zincir ikisini birden kilitliyor.",
+    "en": "The two leaves meet in the middle, and the chain locks both together."
+  },
+  "seoFilename": "zincirle-kilitlenen-ahsap-citali-kapi-detayi",
+  "tags": {
+    "type": [
+      "çit",
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

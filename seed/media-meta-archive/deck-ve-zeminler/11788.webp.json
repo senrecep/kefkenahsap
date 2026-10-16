@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/11788.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Seramik zemin kenarında çakıl üzerinde taşıyıcı kirişler",
+    "en": "Bearer joists on gravel beside ceramic flooring"
+  },
+  "alt": {
+    "tr": "Seramik zemin kenarında çakıl yatağına dizilmiş, aralarına destek parçaları konmuş deck kirişleri",
+    "en": "Deck joists laid in a gravel bed beside ceramic flooring, with short supports fixed between them"
+  },
+  "caption": {
+    "tr": "Kirişlerin arasındaki küçük takozlar çerçeveyi yerinde tutuyor. Üst tahtalar henüz yok.",
+    "en": "Small blocks between the joists hold the frame in place. The top boards are not on yet."
+  },
+  "seoFilename": "seramik-kenari-cakil-uzerinde-tasiyici-kirisler",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras",
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

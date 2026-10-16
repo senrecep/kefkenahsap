@@ -1,0 +1,33 @@
+{
+  "source": "Ahsap Yapilar/5863.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvarın üstüne konmuş ahşap tahta",
+    "en": "Timber board set on top of a stone wall"
+  },
+  "alt": {
+    "tr": "Taş duvarın üzerine oturtulmuş açık renk ahşap tahta ve üzerindeki yazılı pano",
+    "en": "Light timber board set on a stone wall with a sign fixed to it"
+  },
+  "caption": {
+    "tr": "Duvar iri taşlarla örülmüş, üstüne uzun bir tahta çakılmış. Duvarın arkasında ortanca çiçekleri açmış bir bahçe var.",
+    "en": "The wall is built of large stones with a long board fixed on top. Behind the wall is a garden with hydrangeas in bloom."
+  },
+  "seoFilename": "tas-duvar-ustune-konmus-ahsap-tahta-ve-pano",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.4
+}

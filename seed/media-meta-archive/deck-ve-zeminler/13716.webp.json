@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/13716.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Su kenarında ağaçlar arasında geniş deck ve korkuluk",
+    "en": "Broad deck with railing among trees at the waterside"
+  },
+  "alt": {
+    "tr": "Su kenarında ağaçlar arasında açık renkli geniş deck ve uçta korkuluk",
+    "en": "Broad pale deck among trees at the waterside, with a railing at the far end"
+  },
+  "caption": {
+    "tr": "Deck ağaçların arasında yer alıyor ve gövdeler tahtaların kenarından geçiyor. Korkuluk su tarafını kapatıyor.",
+    "en": "The deck sits among the trees with the trunks passing at its edges. The railing closes the water side."
+  },
+  "seoFilename": "su-kenarinda-agaclar-arasinda-genis-deck-ve-korkuluk",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

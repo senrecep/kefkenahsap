@@ -1,0 +1,40 @@
+{
+  "source": "Deck ve Zeminler/4273.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çam ağaçları arasında geniş deck ve korkuluk",
+    "en": "Wide deck and railing among pine trees"
+  },
+  "alt": {
+    "tr": "Çam ağaçları arasında, çıplak toprağın üzerine kurulmuş geniş açık renkli deck ve sağ kenarda çapraz korkuluk",
+    "en": "Wide pale deck built over bare soil among pine trees, with a cross-braced railing on the right edge"
+  },
+  "caption": {
+    "tr": "Korkuluğun çaprazları deckin yan kenarını kapatıyor. Arkada basamaklı bir toprak set ve konutlar görünüyor.",
+    "en": "The braces of the railing close off the side of the deck. A stepped earth bank and houses show behind."
+  },
+  "seoFilename": "cam-agaclari-arasinda-genis-deck-ve-capraz-korkuluk-yapim",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "orman / kır"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

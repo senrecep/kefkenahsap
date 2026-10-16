@@ -1,0 +1,36 @@
+{
+  "source": "Ahsap Yapilar/4583.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz ahşap kaplamalı yapıda kemerli pencere",
+    "en": "Arched window in a white timber-clad building"
+  },
+  "alt": {
+    "tr": "Beyaz boyalı yatay ahşap kaplamalı bir yapının çıkmasında, demir parmaklıklı kemerli üçlü pencere ve yanında uzun pencere",
+    "en": "Triple arched window with iron bars in the bay of a white-painted horizontal timber-clad building"
+  },
+  "caption": {
+    "tr": "Çıkma kısmın kaplaması pencere çevresinde kesintisiz sürüyor, çatı saçağı geniş.",
+    "en": "The cladding of the bay carries on uninterrupted around the window, under a wide roof eave."
+  },
+  "seoFilename": "beyaz-boyali-yatay-ahsap-kaplamali-yapida-kemerli-pencere",
+  "tags": {
+    "type": [
+      "cephe kaplaması",
+      "pencere / panjur"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

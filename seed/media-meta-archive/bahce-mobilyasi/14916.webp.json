@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14916.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çok uzun, koyu vernikli ahşap masa, trapez ayaklı",
+    "en": "Very long dark-varnished timber table on trapezoid legs"
+  },
+  "alt": {
+    "tr": "Perspektiften görünen, uzun tahtalardan yapılmış çok uzun koyu vernikli ahşap masa",
+    "en": "A very long dark-varnished timber table made of long boards seen in perspective, with legs that widen toward the bottom"
+  },
+  "caption": {
+    "tr": "Masa uzunluğuyla tek parça gibi duruyor, ayakları alta doğru açılıyor. Uzun tahtalar boydan boya devam ediyor.",
+    "en": "The table reads as one long piece, with legs that splay toward the floor. The long boards run end to end."
+  },
+  "seoFilename": "cok-uzun-koyu-vernikli-ahsap-masa-trapez-ayak",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

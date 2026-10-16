@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/8854.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ahşap pergola iskeleti, önde üst üste ahşap saksılıklar, aşağıda yol",
+    "en": "Timber pergola frame with stacked timber planters in front and a road below"
+  },
+  "alt": {
+    "tr": "Terasta ahşap pergola iskeleti, önde üst üste dizilmiş ahşap saksılıklar, kafes panel ve aşağıda uzanan yol",
+    "en": "Timber pergola frame on a terrace, with timber planters stacked in front, a lattice panel and a road running below"
+  },
+  "caption": {
+    "tr": "Saksılıklar iki kat halinde üst üste konmuş, arkasında kafes panel var. Teras yüksekten bir yola bakıyor.",
+    "en": "The planters are stacked in two tiers with a lattice panel behind. The terrace looks down over a road."
+  },
+  "seoFilename": "ahsap-pergola-iskeleti-ust-uste-ahsap-saksiliklar-yol",
+  "tags": {
+    "type": [
+      "pergola",
+      "çiçeklik / saksı"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

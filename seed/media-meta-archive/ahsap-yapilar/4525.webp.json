@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/4525.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Halat tutamaklı kütük tabureler",
+    "en": "Log stools with rope handles"
+  },
+  "alt": {
+    "tr": "Yuvarlak kütük duvarın önünde duran, kenarlarında halat tutamak bulunan kalın kütük tabureler",
+    "en": "Thick log stools with rope handles standing in front of a round-log wall"
+  },
+  "caption": {
+    "tr": "Taburelerin yüzeyi işlenmemiş, doğal ağaç dokusu açıkta. Tutamak olarak kalın bir halat geçirilmiş.",
+    "en": "The surface of the stools is untreated and the natural grain is exposed. A thick rope is threaded through as a handle."
+  },
+  "seoFilename": "halat-tutamakli-kutuk-tabureler-yuvarlak-kutuk-duvar-onunde",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.55
+}

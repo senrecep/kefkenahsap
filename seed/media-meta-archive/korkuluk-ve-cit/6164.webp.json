@@ -1,0 +1,39 @@
+{
+  "source": "Korkuluk ve Cit/6164.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bina girişinde dikey çıtalı ahşap korkuluk",
+    "en": "Vertical-slat timber railing at a building entrance"
+  },
+  "alt": {
+    "tr": "Bina girişine giden beton yolun kenarında, yeşilimsi dikey çıtalı ahşap korkuluk, sağda kahverengi giriş kapısı",
+    "en": "Greenish vertical-slat timber railing beside a concrete path to a building entrance, with a brown front door on the right"
+  },
+  "caption": {
+    "tr": "Korkuluk yol boyunca düz uzanıp kapı kasasındaki kırmızı direğe bağlanıyor.",
+    "en": "The railing runs straight along the path and joins the red post at the door frame."
+  },
+  "seoFilename": "bina-girisinde-dikey-citali-ahsap-korkuluk",
+  "tags": {
+    "type": [
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

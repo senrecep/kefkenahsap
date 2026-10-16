@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/12526.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapı önünde parlak bal rengi cilalı deck",
+    "en": "Glossy honey-coloured varnished deck at a glass door"
+  },
+  "alt": {
+    "tr": "Cam kapının önünde yeni cilalanmış parlak bal rengi deck; yerde boya kutusu ve fırça",
+    "en": "Freshly varnished glossy honey-coloured deck in front of a glass door, with a paint tin and brush on the ground"
+  },
+  "caption": {
+    "tr": "Cila tahtaların damarını öne çıkarmış ve yüzey ışığı yansıtıyor. Deck, kapının hemen önündeki küçük bir zemin.",
+    "en": "The varnish brings out the grain and the surface reflects light. The deck is a small floor right outside the door."
+  },
+  "seoFilename": "cam-kapi-onunde-parlak-bal-rengi-cilali-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/5618.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çim bahçeye bakan evin önünde deck",
+    "en": "Deck in front of a house facing a lawned garden"
+  },
+  "alt": {
+    "tr": "Çim bahçeye bakan evin cam kapıları önünde açık renkli deck; üstünde masa ve katlanır ahşap sandalyeler, kenarda bitkiler",
+    "en": "Pale deck in front of the glass doors of a house facing a lawned garden, with a table and folding timber chairs on it"
+  },
+  "caption": {
+    "tr": "Deck evin cephesi boyunca ilerliyor ve çimenle düz bir hatta buluşuyor. Ağaç gövdesi karenin sağında duruyor.",
+    "en": "The deck runs along the front of the house and meets the lawn in a straight line. A tree trunk stands at the right of the frame."
+  },
+  "seoFilename": "cim-bahceye-bakan-evin-onunde-deck-masa-ve-katlanir",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

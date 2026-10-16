@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/14838.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deck kenarında ahşap kaplı oturma bölmesi, yanında cam ve bitkiler",
+    "en": "Timber-clad seating unit at the edge of a deck beside glass and plants"
+  },
+  "alt": {
+    "tr": "Deck zeminin kenarında, yatay ahşap panellerle kaplı oturma bölmesinin yan yüzü; bir kenarı camla birleşiyor",
+    "en": "The side of a seating unit clad in horizontal timber panels at the edge of a deck, one side meeting glass"
+  },
+  "caption": {
+    "tr": "Oturma bölmesinin yan yüzü yatay ahşap panellerle kaplı. Yeşillik arkadan binayı gizliyor.",
+    "en": "The side of the seating unit is clad in horizontal timber panels. The greenery behind screens the building."
+  },
+  "seoFilename": "deck-kenarinda-ahsap-kapli-oturma-bolmesi-cam-ve-bitkiler",
+  "tags": {
+    "type": [
+      "bank",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

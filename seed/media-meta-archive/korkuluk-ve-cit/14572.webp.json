@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/14572.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kilitli metal çerçeveli kapıda ahşap çıtalar",
+    "en": "Timber slats on a padlocked metal-framed gate"
+  },
+  "alt": {
+    "tr": "Siyah metal çerçeveli kapının ortasında asma kilitli zincir, yanlarda kahverengi ahşap çıtalar, arkada otlak yol",
+    "en": "Padlocked chain at the centre of a black metal-framed gate, with brown timber slats on both sides and a grassy track behind"
+  },
+  "caption": {
+    "tr": "Çıtalar iki yatay metal profile vidalanmış, orta direkte zincir ve kilit duruyor.",
+    "en": "The slats are screwed to two horizontal metal profiles, with a chain and lock on the centre post."
+  },
+  "seoFilename": "kilitli-metal-cerceveli-kapida-ahsap-citalar",
+  "tags": {
+    "type": [
+      "çit",
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

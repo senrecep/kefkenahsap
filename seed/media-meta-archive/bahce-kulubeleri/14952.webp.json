@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/14952.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Koyu ahşap kulübe uzaktan, ağaçların önünde",
+    "en": "Dark timber shed from afar in front of trees"
+  },
+  "alt": {
+    "tr": "Çam ağaçlarının ve yapraklı ağaçların önünde uzaktan görünen koyu ahşap kulübe; yanında ahşap basamak",
+    "en": "Dark timber shed seen from a distance in front of conifers and leafy trees, with a timber step beside it"
+  },
+  "caption": {
+    "tr": "Kulübe geniş bir toprak alanın ortasında, arkada kocaman bir iğne yapraklı ağaç var. Sağ ön köşede ahşap basamak duruyor.",
+    "en": "The shed stands in the middle of a wide bare area with a large conifer behind it. A timber step sits at the front right corner."
+  },
+  "seoFilename": "koyu-ahsap-kulube-uzaktan-agaclarin-onunde-yaninda-ahsap",
+  "tags": {
+    "type": [
+      "bahçe kulübesi / depo"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

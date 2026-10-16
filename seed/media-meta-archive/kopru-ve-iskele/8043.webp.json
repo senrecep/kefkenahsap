@@ -1,0 +1,41 @@
+{
+  "source": "Kopru ve Iskele/8043.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Şemsiye ve çam arasında havuz üstündeki korkuluklu köprü",
+    "en": "Railed bridge over the pool between umbrella and pines"
+  },
+  "alt": {
+    "tr": "Sol önde beyaz şemsiye, arkada çam ağaçları ve beyaz bir ev; havuzun üzerinde korkuluklu küçük ahşap köprü",
+    "en": "A white umbrella at front left, pine trees and a white house behind, and a small railed timber bridge over the pool"
+  },
+  "caption": {
+    "tr": "Köprü uzaktan bakınca havuzun kıvrımını kesen ince bir hat gibi duruyor. Çevre deck şeridi suya paralel uzanıyor.",
+    "en": "Seen from a distance the bridge is a thin line across the curve of the pool. The surrounding deck strip runs parallel to the water."
+  },
+  "seoFilename": "semsiye-ve-cam-arasinda-havuz-ustundeki-kopru",
+  "tags": {
+    "type": [
+      "köprü",
+      "korkuluk",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

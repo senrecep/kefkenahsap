@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12287.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Duvar önünde çimene bitişik yağlı deck",
+    "en": "Oiled deck meeting the lawn in front of a wall"
+  },
+  "alt": {
+    "tr": "Duvar önünde çimene bitişen koyu kırmızı kahverengi deck, önde basamak taşları",
+    "en": "Dark red-brown deck meeting the lawn in front of a wall, with stepping stones in the foreground"
+  },
+  "caption": {
+    "tr": "Aynı deck yakından bakıldığında düz bir yüzey ve temiz kenarlar gösteriyor. Ahşabın koyu tonu çimenle belirgin bir zıtlık yapıyor.",
+    "en": "Seen closer, the same deck shows an even surface and clean edges. The dark tone of the wood contrasts sharply with the grass."
+  },
+  "seoFilename": "duvar-onunde-cimene-bitisik-yagli-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

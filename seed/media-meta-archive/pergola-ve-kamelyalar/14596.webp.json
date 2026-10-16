@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/14596.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimenlik bahçede taş duvarlı oturma alanı üzerinde altıgen kamelya",
+    "en": "Hexagonal gazebo over a stone-walled seating area on a lawn"
+  },
+  "alt": {
+    "tr": "Çimenlik bahçede taş duvarlı yuvarlak oturma alanı üzerinde altıgen koyu vernikli kamelya, çakıl kenarlı",
+    "en": "Dark varnished hexagonal gazebo over a round stone-walled seating area on a lawn, with a gravel edge"
+  },
+  "caption": {
+    "tr": "Kamelya yuvarlak taş duvarla çevrili bir alanın üzerinde duruyor. Çimlik ve çakıl şeridi alanı çerçeveliyor.",
+    "en": "The gazebo stands over an area ringed by a round stone wall. Lawn and a gravel strip frame the space."
+  },
+  "seoFilename": "cimenlik-bahcede-tas-duvarli-oturma-altigen-kamelya",
+  "tags": {
+    "type": [
+      "kamelya",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,39 @@
+{
+  "source": "Ahsap Yapilar/93.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sundurma altında ahşap kaplı duvar ve tahta kapı",
+    "en": "Timber-clad wall and plank door under a porch roof"
+  },
+  "alt": {
+    "tr": "Ahşap kirişli sundurma altında yatay ahşap kaplı duvar ve içine oturtulmuş dikey tahtalı kapı",
+    "en": "Horizontally clad timber wall under a timber-beamed porch roof with a vertical plank door set into it"
+  },
+  "caption": {
+    "tr": "Duvar ve kapı aynı yeşilimsi kahve tonda. Üstteki tavan kirişleri de ahşap.",
+    "en": "The wall and door share the same greenish brown tone, and the ceiling beams above are timber too."
+  },
+  "seoFilename": "sundurma-altinda-ahsap-kapli-duvar-ve-tahta-kapi",
+  "tags": {
+    "type": [
+      "kapı",
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş",
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

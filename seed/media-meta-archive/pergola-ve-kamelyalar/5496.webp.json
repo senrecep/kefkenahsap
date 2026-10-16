@@ -1,0 +1,41 @@
+{
+  "source": "Pergola ve Kamelyalar/5496.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Gün batımında su kenarı ahşap kamelya ve çapraz korkuluk",
+    "en": "Waterside timber gazebo and X-braced rail at sunset"
+  },
+  "alt": {
+    "tr": "Gün batımında su kenarındaki ahşap kamelya ve çapraz korkuluklu deck, suda ışık yansıması ve arkada yamaç evler",
+    "en": "Waterside timber gazebo and an X-braced deck railing at sunset, with light reflected on the water and hillside houses behind"
+  },
+  "caption": {
+    "tr": "Kamelya yükseltilmiş deck üzerinde duruyor, korkuluk çapraz çıtalarla örülmüş. Su yüzeyi ışığı yansıtıyor.",
+    "en": "The gazebo stands on a raised deck with an X-braced railing. The water surface reflects the light."
+  },
+  "seoFilename": "gun-batiminda-su-kenari-ahsap-kamelya-capraz-korkuluk",
+  "tags": {
+    "type": [
+      "kamelya",
+      "korkuluk",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/13243.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Tente altında hasır görünümlü koyu koltuk takımı",
+    "en": "Dark wicker-look sofa set under an awning"
+  },
+  "alt": {
+    "tr": "Evin camlı kapılarının önünde, tentenin gölgesinde hasır görünümlü koyu bir koltuk takımı duruyor",
+    "en": "A dark wicker-look sofa set sits in the shade of an awning in front of a house's glazed doors"
+  },
+  "caption": {
+    "tr": "Koltuk takımı evin girişine yakın, tentenin altında. Yağmurda da oturulabilecek korunaklı bir köşe oluşturuyor.",
+    "en": "The seating set stands under the awning near the house entrance, making a sheltered corner that can be used in the rain too."
+  },
+  "seoFilename": "tente-altinda-hasir-gorunumlu-koltuk-takimi-teras",
+  "tags": {
+    "type": [
+      "oturma grubu"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

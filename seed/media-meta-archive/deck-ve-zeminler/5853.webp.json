@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/5853.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar yanında tamamlanmış deck",
+    "en": "Finished deck beside a stone wall"
+  },
+  "alt": {
+    "tr": "Taş duvar ile cam kapı arasındaki dar alana döşenmiş açık gri tonlu deck; duvar üstünde ahşap bir çıta",
+    "en": "Light grey-toned deck laid in the narrow space between a stone wall and a glass door, with a timber rail on top of the wall"
+  },
+  "caption": {
+    "tr": "Tahtalar duvara paralel uzanıyor ve deck cam kapıya kadar ulaşıyor. Duvarın üstündeki çıta dikmelerle tutuluyor.",
+    "en": "The boards run parallel to the wall and the deck reaches the glass door. The rail on top of the wall is held by posts."
+  },
+  "seoFilename": "tas-duvar-yaninda-tamamlanmis-deck-koyu-cerceveli-gorunum",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

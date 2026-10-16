@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/6067.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz ve ev önünde bal rengi deck",
+    "en": "Honey-coloured deck in front of a pool and house"
+  },
+  "alt": {
+    "tr": "Havuz ve evin önünde uzanan bal rengi, cilalı parlak deck; kenarda lavanta ve saksılar, sağda çimen",
+    "en": "Honey-coloured polished glossy deck stretching in front of a pool and house, with lavender and planters at the edge"
+  },
+  "caption": {
+    "tr": "Tahtalar evin cam kapılarına doğru uzun yönde ilerliyor. Sol köşede havuzun taş kenarı görünüyor.",
+    "en": "The boards run lengthwise towards the glass doors of the house. The stone edge of the pool shows in the left corner."
+  },
+  "seoFilename": "havuz-ve-ev-onunde-bal-rengi-parlak-deck-lavanta",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/11979.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Vernikli bank üzerinde ağaç kütüğü diliminden servis tahtası",
+    "en": "Tree-trunk slice serving board on a varnished bench"
+  },
+  "alt": {
+    "tr": "Koyu vernikli ahşap bankın üzerinde, kabuklu kenarı olan büyük bir ağaç kütüğü dilimi ve iki küçük dilim duruyor",
+    "en": "On a dark-varnished timber bench lies a large slice of tree trunk with its bark edge, and two small slices"
+  },
+  "caption": {
+    "tr": "Kütük dilimi, bankın üzerinde servis tahtası gibi kullanılabilecek şekilde yerleştirilmiş. Yıllaklar açıkça görünüyor.",
+    "en": "The trunk slice is placed on the bench so it can serve as a tray. Its growth rings are clearly visible."
+  },
+  "seoFilename": "vernikli-bank-uzerinde-agac-kutugu-dilimi-servis-tahtasi",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

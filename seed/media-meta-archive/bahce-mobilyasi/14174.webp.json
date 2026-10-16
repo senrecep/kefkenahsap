@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/14174.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölyede parlak vernikli ahşap masa ve köşeli çerçeveli oturma elemanı",
+    "en": "Glossy-varnished timber table and a angular-framed seat in the workshop"
+  },
+  "alt": {
+    "tr": "Atölyede, arkada dik duran kereste raflarının önünde, parlak vernikli kırmızımsı ahşap masa tablası ve yanında çıtalı",
+    "en": "In a workshop in front of upright lumber, a glossy-varnished reddish timber table top and a slatted seat element"
+  },
+  "caption": {
+    "tr": "Masa tablası parlak vernikle kaplanmış, yanındaki oturma elemanının çerçevesi köşeli kesimli. İkisi de atölyede kereste önünde bekliyor.",
+    "en": "The table top is covered in glossy varnish, and the frame of the seat beside it has angled cuts. Both wait in the workshop in front of the lumber."
+  },
+  "seoFilename": "atolyede-parlak-vernikli-ahsap-masa-ve-oturma-elemani-arkada",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

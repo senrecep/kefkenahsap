@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/7485.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvarın önünde kurulan ahşap çatı yapısı",
+    "en": "Timber roof structure going up in front of a stone wall"
+  },
+  "alt": {
+    "tr": "Taş istinat duvarının önünde kurulan açık renk ahşap çatı yapısı, bir işçi ve solda deniz",
+    "en": "Light timber roof structure going up in front of a stone retaining wall, with one worker and the sea on the left"
+  },
+  "caption": {
+    "tr": "Direkler yerine oturmuş, beşik çatı kirişleri takılmış. Önünde bir çalışma masası duruyor.",
+    "en": "The posts are in place and the gable roof rafters are fixed. A work table stands in front."
+  },
+  "seoFilename": "tas-duvarin-onunde-ahsap-cati-yapisi",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Mobilya ve Cila/10381.webp",
+  "category": "mutfak-ve-gomme-dolap",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ahşap panelli TV ünitesi, alt gözlerde müzik seti",
+    "en": "Panelled TV unit with a music system in the lower bays"
+  },
+  "alt": {
+    "tr": "Yatay ahşap paneli olan TV ünitesi; alt gözlerde müzik seti ve hoparlörler, üstte kapalı televizyon",
+    "en": "A TV unit with a horizontal timber panel, with a music system and speakers in the lower bays and a switched-off television on"
+  },
+  "caption": {
+    "tr": "Televizyon tahta panelin ortasında, alttaki gözlere müzik seti ve iki hoparlör yerleştirilmiş. Zemin parke.",
+    "en": "The television sits in the middle of the timber panel, with a music system and two speakers placed in the bays below. The floor is parquet."
+  },
+  "seoFilename": "ahsap-panelli-tv-unitesi-alt-gozlerde-muzik-seti",
+  "tags": {
+    "type": [
+      "tv ünitesi"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.65
+}

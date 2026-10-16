@@ -1,0 +1,39 @@
+{
+  "source": "Merdivenler/217.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ağaçlar altında çimde açık renk ahşap basamak taşları",
+    "en": "Light timber stepping slabs on the lawn under trees"
+  },
+  "alt": {
+    "tr": "Taş duvar boyunca, ağaç gövdeleri arasındaki çimde uzaklaşan açık renk yeni tahta basamak plakaları; arkada oyun alanı",
+    "en": "New light timber stepping slabs receding across the lawn between tree trunks beside a stone wall, a play area in the distance"
+  },
+  "caption": {
+    "tr": "Plakalar yeşilimsi emprenyeli tahtalardan, çimin ortasında düz bir hatla gidiyor. Hat ağaçların arasından uzağa kıvrılmadan uzanıyor.",
+    "en": "The slabs are made of greenish pressure-treated boards and run straight across the lawn. The line extends between the trees without bending."
+  },
+  "seoFilename": "agaclar-altinda-cimde-acik-renk-basamak-taslari",
+  "tags": {
+    "type": [
+      "yürüyüş yolu"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

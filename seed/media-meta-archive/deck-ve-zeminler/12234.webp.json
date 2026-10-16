@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/12234.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sol kenarında korkuluk olan deck ve ağaç boşluğu",
+    "en": "Deck with a railing on the left and a gap for the tree"
+  },
+  "alt": {
+    "tr": "Deck zemininin sol kenarında ahşap korkuluk, ilerde ağaç gövdesi çevresinde bırakılmış boşluk",
+    "en": "Decking with a timber railing on its left edge and a gap left around a tree trunk further along"
+  },
+  "caption": {
+    "tr": "Tahtalar uzun yönde ağaca doğru ilerliyor. Gövde etrafındaki boşluk ağacın büyümesine yer bırakıyor.",
+    "en": "The boards run lengthwise towards the tree. The gap around the trunk leaves room for the tree to grow."
+  },
+  "seoFilename": "sol-kenarda-korkuluk-olan-deck-agac-boslugu",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

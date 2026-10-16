@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/13242.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Tente altında ahşap yemek masası ve katlanır sandalyeler",
+    "en": "Wooden dining table and folding chairs under an awning"
+  },
+  "alt": {
+    "tr": "Evin terasında, geri çekilir tentenin altında koyu balli ahşap bir masa ve etrafında katlanır sandalyeler duruyor",
+    "en": "On a house terrace under a retractable awning stands a honey-brown wooden table surrounded by folding chairs"
+  },
+  "caption": {
+    "tr": "Masa ve sandalyeler tentenin gölgesinde, evin kapısına yakın duruyor. Sandalyeler kullanılmadığında katlanıyor.",
+    "en": "The table and chairs sit in the awning's shade near the house door. The chairs fold when not in use."
+  },
+  "seoFilename": "tente-altinda-ahsap-yemek-masasi-katlanir-sandalye",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "teras",
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

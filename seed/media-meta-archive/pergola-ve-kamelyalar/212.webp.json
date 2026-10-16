@@ -1,0 +1,37 @@
+{
+  "source": "Pergola ve Kamelyalar/212.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar önünde kırmızımsı ahşap kamelya iskeleti, yanında merdiven",
+    "en": "Reddish timber gazebo frame in front of a stone wall with a ladder"
+  },
+  "alt": {
+    "tr": "Taş kaplı duvarın önünde kırmızımsı ahşap kamelya iskeleti, işlemeli kolonlar ve yanında bir merdiven",
+    "en": "Reddish timber gazebo frame in front of a stone-clad wall, with turned columns and a ladder beside it"
+  },
+  "caption": {
+    "tr": "Çatı kirişleri ortadaki bir yuvarlak süsle tamamlanıyor. Zemin henüz kum halinde, işler sürüyor.",
+    "en": "The roof rafters finish with a round ornament in the middle. The floor is still sand and work is going on."
+  },
+  "seoFilename": "tas-duvar-onunde-kirmizimsi-kamelya-iskeleti",
+  "tags": {
+    "type": [
+      "kamelya"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

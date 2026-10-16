@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/13576.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Tahta geçit ve çapraz çıtalı korkuluk",
+    "en": "Plank walkway with a cross-braced railing"
+  },
+  "alt": {
+    "tr": "Yan yana tahtalarla döşeli geçidin kenarında çapraz çıtalı açık tonlu ahşap korkuluk, arkada yeşil çit",
+    "en": "Cross-braced light timber railing along a walkway of boards, with a green hedge behind"
+  },
+  "caption": {
+    "tr": "Korkuluk geçidin tek yanında X desenli çıtalarla ilerliyor.",
+    "en": "The railing runs along one side of the walkway with X-shaped braces."
+  },
+  "seoFilename": "tahta-gecit-ve-capraz-citali-korkuluk",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "yürüyüş yolu"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

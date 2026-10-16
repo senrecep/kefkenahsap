@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/9853.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Üstten platform, çaprazlı korkuluk ve kalın direk",
+    "en": "Platform, cross-braced railing and thick post from above"
+  },
+  "alt": {
+    "tr": "Üstten bakışla ahşap platform, çaprazlı korkuluk ve kalın direk; solda demir parmaklıklı pencere, aşağıda toprak",
+    "en": "Top view of a timber platform, a cross-braced railing and a thick post, with an iron-barred window on the left and soil below"
+  },
+  "caption": {
+    "tr": "Platform evin demir parmaklıklı penceresinin yanında duruyor. Kalın direk korkuluğun köşesini taşıyor.",
+    "en": "The platform stands beside the house's iron-barred window. A thick post carries the corner of the railing."
+  },
+  "seoFilename": "ustten-platform-caprazli-korkuluk-ve-kalin-direk-demir",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

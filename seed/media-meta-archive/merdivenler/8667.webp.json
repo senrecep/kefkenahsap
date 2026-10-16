@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/8667.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Merdiven altında yatay kaplama ve açık kapak",
+    "en": "Horizontal boarding under the stairs with an open hatch"
+  },
+  "alt": {
+    "tr": "Merdiven altında yatay tahta kaplama ve açık duran panjurlu ahşap kapak; içeride bir pano görünüyor",
+    "en": "Horizontal board cladding under the stairs and an open louvred timber door, with a panel visible inside"
+  },
+  "caption": {
+    "tr": "Merdiven altındaki bölme yatay tahtalarla kapatılmış, kapağı açık. İçeride küçük bir pano seçiliyor.",
+    "en": "The compartment under the stairs is boarded in horizontally and its door is open. A small panel can be seen inside."
+  },
+  "seoFilename": "merdiven-altinda-yatay-tahta-kaplama-acik-kapak",
+  "tags": {
+    "type": [
+      "merdiven",
+      "gömme dolap / gardırop"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/2332.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beton sütun üzerinde yuvarlak kiriş ve metal çubuklar",
+    "en": "Round beam on a concrete post with metal rods below"
+  },
+  "alt": {
+    "tr": "Beton sütunun üzerinde koyu renk yuvarlak bir kiriş, altında metal çubuklar ve arkada çam ağaçları",
+    "en": "Dark round beam on top of a concrete post, with metal rods below and pine trees behind"
+  },
+  "caption": {
+    "tr": "Yapı ağaçlık bir arazide ve kiriş uçları metal profillerin üstünde duruyor. İş sahası dağınık.",
+    "en": "The structure stands on wooded ground and the beam rests over metal profiles. The work site is untidy."
+  },
+  "seoFilename": "beton-sutun-ustunde-yuvarlak-kiris",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.3
+}

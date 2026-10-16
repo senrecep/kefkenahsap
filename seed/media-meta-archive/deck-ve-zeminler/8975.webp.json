@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/8975.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz kenarındaki deck basınçlı suyla yıkanıyor",
+    "en": "Pool-side deck being pressure-washed"
+  },
+  "alt": {
+    "tr": "Havuz yanındaki deck yüzeyini basınçlı suyla yıkayan işçi, arkada cam kapılı bir ev ve bakım malzemeleri",
+    "en": "A worker pressure-washing the deck beside a pool, with a house with glass doors and maintenance supplies behind"
+  },
+  "caption": {
+    "tr": "Deck yıkanarak temizleniyor, yıkanan kısım rengini geri alıyor. Boya ve bakım malzemeleri kenarda hazır.",
+    "en": "The deck is washed clean and the washed part regains its colour. Paint and care products stand ready on the side."
+  },
+  "seoFilename": "havuz-kenari-deck-basincli-suyla-yikaniyor",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

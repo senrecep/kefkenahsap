@@ -1,0 +1,40 @@
+{
+  "source": "Ireko-Teak/13956.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapı yanında geniş, dikdörtgen ahşap masa",
+    "en": "Wide rectangular timber table beside a glass door"
+  },
+  "alt": {
+    "tr": "Evin terasında, kalın tahtalardan yapılmış geniş dikdörtgen ahşap masa ve kenarda beyaz bir sandalye görünüyor",
+    "en": "On a house terrace, a wide rectangular timber table of thick boards with a white chair at its edge"
+  },
+  "caption": {
+    "tr": "Masanın tablası birkaç kalın tahtadan, vernikle derin kahverengi tona ulaşmış. Cam kapılı bir cephenin önünde duruyor.",
+    "en": "The top is several thick boards that the varnish has taken to a deep brown. It stands in front of a glazed facade."
+  },
+  "seoFilename": "cam-kapi-yaninda-genis-dikdortgen-ahsap-masa-beyaz-sandalye",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [
+      "teak"
+    ],
+    "setting": [
+      "teras",
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

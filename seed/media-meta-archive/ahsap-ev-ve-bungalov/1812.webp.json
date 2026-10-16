@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/1812.webp",
+  "category": "ahsap-ev-ve-bungalov",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Desenli korkuluklu, yapımı süren ahşap ev",
+    "en": "Timber house in progress with patterned railings"
+  },
+  "alt": {
+    "tr": "Yapımı süren ahşap evde geometrik desenli korkuluklar ve henüz kapatılmamış alt kat",
+    "en": "Timber house under construction with geometric-pattern railings and a ground floor not yet closed in"
+  },
+  "caption": {
+    "tr": "Üst kat korkuluğu kare desenli. Alt katta açıklıklar henüz kapatılmamış, zeminde malzeme duruyor.",
+    "en": "The upper railing has a square pattern. The openings on the ground floor are still unclosed and materials lie on the floor."
+  },
+  "seoFilename": "desenli-korkuluk-ve-acik-alt-kat-yapim-asamasinda",
+  "tags": {
+    "type": [
+      "ahşap ev / bungalov",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

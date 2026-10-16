@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/10057.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Tuğla duvar yanında yükselen çaprazlı merdiven",
+    "en": "Cross-braced stairs rising beside a brick wall"
+  },
+  "alt": {
+    "tr": "Tuğla ve sıvalı duvarın yanında yükselen, çapraz çıtalı korkuluklu açık renkli ahşap merdiven",
+    "en": "Light timber staircase with cross-braced railing rising beside a brick and rendered wall"
+  },
+  "caption": {
+    "tr": "Merdiven çimlik bir bahçede duvara paralel yükseliyor. Korkuluğun çaprazları baştan sona devam ediyor.",
+    "en": "The stairs rise parallel to the wall in a lawned garden. The railing's cross braces run its full length."
+  },
+  "seoFilename": "tugla-duvar-yaninda-yukselen-caprazli-merdiven",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

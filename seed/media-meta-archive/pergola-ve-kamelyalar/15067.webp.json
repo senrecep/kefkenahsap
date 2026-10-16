@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/15067.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yeşil kaplı çatılı altıgen kamelya ve altıgen deck zemin",
+    "en": "Hexagonal gazebo with a green-covered roof and a hexagonal deck"
+  },
+  "alt": {
+    "tr": "Yakından: yeşil kaplı çatısı olan altıgen kamelya, altıgen koyu deck zemin ve çevrede çimen",
+    "en": "Close view of a hexagonal gazebo with a green-covered roof, a dark hexagonal deck floor and lawn around it"
+  },
+  "caption": {
+    "tr": "Direkler çapraz payandalarla çatıyı taşıyor. Deck tahtaları altıgenin kenarlarına uyacak şekilde kesilmiş.",
+    "en": "The posts carry the roof with diagonal braces. The deck boards are cut to follow the hexagon's edges."
+  },
+  "seoFilename": "yesil-kapli-catili-altigen-kamelya-altigen-deck",
+  "tags": {
+    "type": [
+      "kamelya",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

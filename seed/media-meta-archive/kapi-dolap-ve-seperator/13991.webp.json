@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/13991.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yeşil boyalı kasetli büyük çift kanatlı kapı",
+    "en": "Large green-painted double door with raised panels"
+  },
+  "alt": {
+    "tr": "Üst kenarı dilimli saçaklı, yeşile boyanmış kasetli geniş kapı yüzeyi ve yanında çalılar",
+    "en": "Wide green-painted door surface with raised panels and a scalloped valance along the top, with shrubs beside it"
+  },
+  "caption": {
+    "tr": "Kasetli kanatlar yan yana ve tek bir yüzey gibi duruyor. Üstteki dilimli süs kapıya bahçe evi havası veriyor.",
+    "en": "The panelled leaves sit side by side like one surface. The scalloped trim above gives it a garden-house look."
+  },
+  "seoFilename": "yesil-boyali-kasetli-buyuk-cift-kanatli-kapi",
+  "tags": {
+    "type": [
+      "kapı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

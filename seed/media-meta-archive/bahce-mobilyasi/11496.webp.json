@@ -1,0 +1,36 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/11496.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölyede yapım aşamasındaki bank ve masa iskeleti",
+    "en": "A bench and table frame being built in the workshop"
+  },
+  "alt": {
+    "tr": "Atölyede arka planda tamamlanmış bir bank, önde ise henüz kaplanmamış ahşap bir masa iskeleti duruyor",
+    "en": "In a workshop, a finished bench stands in the background and an unplanked timber table frame in the foreground"
+  },
+  "caption": {
+    "tr": "Masanın iskeleti kurulmuş, tablası henüz konmamış. Arkadaki bank ise tamamlanmış durumda.",
+    "en": "The table frame is assembled, but the top is not yet fitted. The bench behind it is finished."
+  },
+  "seoFilename": "atolyede-yapim-asamasinda-bank-ve-masa-iskeleti",
+  "tags": {
+    "type": [
+      "bank",
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

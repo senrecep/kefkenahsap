@@ -1,0 +1,40 @@
+{
+  "source": "Kapi Dolap ve Seperator/9919.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bina duvarı boyunca yatay çıtalı açık renk ahşap panel, teras köşesinde",
+    "en": "Light horizontal-slat timber panel along the building wall, in a terrace corner"
+  },
+  "alt": {
+    "tr": "Teras köşesinde bina duvarının önünde uzanan sık yatay çıtalı açık renk ahşap panel; solda dikey tahtalı yan yüz",
+    "en": "A light timber panel with closely spaced horizontal slats along the front of the building wall in a terrace corner"
+  },
+  "caption": {
+    "tr": "Panel beyaz alçak duvarın üzerine oturuyor ve köşeye kadar devam ediyor. Zemin gri karo.",
+    "en": "The panel sits on top of the low white wall and continues to the corner. The floor is grey tile."
+  },
+  "seoFilename": "bina-duvari-boyunca-yatay-citali-panel-teras-kosesi",
+  "tags": {
+    "type": [
+      "kafes / paravan",
+      "cephe kaplaması"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

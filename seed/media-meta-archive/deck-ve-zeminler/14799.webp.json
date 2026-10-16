@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14799.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Gri şap üzerinde aralıklı çıtalar",
+    "en": "Spaced battens over grey screed"
+  },
+  "alt": {
+    "tr": "Gri şap zemin üzerine yan yana sıralanmış aralıklı ahşap çıtalar; sağda açık renkli fayans kenar ve çimen",
+    "en": "Spaced timber battens laid side by side over grey screed, with a pale tiled edge and lawn on the right"
+  },
+  "caption": {
+    "tr": "Çıtalar zemine dik bir yönde dizilmiş ve alt ucunda ahşap bir çerçeveyle kapanıyor. Zemin henüz tamamen kuru değil.",
+    "en": "The battens run across the floor and close off at the bottom with a timber frame. The floor does not look fully dry yet."
+  },
+  "seoFilename": "gri-sap-uzerinde-aralikli-citalar-fayans-kenari",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

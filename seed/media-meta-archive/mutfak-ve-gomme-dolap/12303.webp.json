@@ -1,0 +1,38 @@
+{
+  "source": "Mobilya ve Cila/12303.webp",
+  "category": "mutfak-ve-gomme-dolap",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çift kapaklı çerçeveli beyaz gömme dolap, koyu zemin",
+    "en": "Framed double-door white built-in wardrobe on a dark floor"
+  },
+  "alt": {
+    "tr": "Girişte iki kanatlı, çerçeveli panolu beyaz gömme dolap ve koyu renkli taş zemin",
+    "en": "White built-in wardrobe with two framed panel doors in an entrance hall with a dark stone floor"
+  },
+  "caption": {
+    "tr": "Kapaklarda iç içe geçen çerçeve profilleri var, kulplar ince ve metal. Dolap duvar ve tavanla birlikte tek parça görünüyor.",
+    "en": "The doors carry stepped frame profiles with slim metal handles. The wardrobe reads as one piece with the wall and ceiling."
+  },
+  "seoFilename": "cerceveli-cift-kapakli-beyaz-gomme-dolap-giris",
+  "tags": {
+    "type": [
+      "gömme dolap / gardırop"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş",
+      "iç mekân"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

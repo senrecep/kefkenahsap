@@ -1,0 +1,39 @@
+{
+  "source": "Ahsap Yapilar/305.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çam ağaçları arasında taş merdivenle ulaşılan ahşap çatılı pavyon",
+    "en": "Timber-roofed pavilion among pine trees reached by stone steps"
+  },
+  "alt": {
+    "tr": "Taş merdiven ve istinat duvarının üstünde, çam ağaçları arasında duran ahşap çatılı pavyon ve beyaz tente",
+    "en": "Timber-roofed pavilion among pine trees above stone steps and a retaining wall, with a white tent nearby"
+  },
+  "caption": {
+    "tr": "Pavyonun koyu renk çatısı büyük bir çam ağacının yanında duruyor. Yapıya taş basamaklarla çıkılıyor.",
+    "en": "The pavilion's dark roof stands beside a large pine tree. The structure is reached by stone steps."
+  },
+  "seoFilename": "cam-agaclari-arasinda-ahsap-catili-pavyon",
+  "tags": {
+    "type": [
+      "kamelya",
+      "merdiven"
+    ],
+    "wood": [],
+    "setting": [
+      "ticari mekân",
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

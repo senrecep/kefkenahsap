@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/14401.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kafes yan panelli ahşap pergola kemeri, çevrede kum ve inşaat malzemesi",
+    "en": "Timber pergola arch with lattice side panels, sand and building materials around"
+  },
+  "alt": {
+    "tr": "Kafes yan panelli koyu vernikli ahşap pergola kemeri, çevrede kum yığını, taş döşeli yol ve cam cepheli bina",
+    "en": "Dark varnished timber pergola arch with lattice side panels, a sand pile, a paved path and a glass-fronted building"
+  },
+  "caption": {
+    "tr": "Kemerin iki yanı kare kafesle örülü, üstte kirişler yan yana sıralanıyor. Çevre düzenlemesi sürüyor.",
+    "en": "Both sides of the arch are filled with square lattice and beams run across the top. Landscaping is still going on around it."
+  },
+  "seoFilename": "kafes-yan-panelli-pergola-kemeri-insaat-malzemesi",
+  "tags": {
+    "type": [
+      "pergola",
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Pergola ve Kamelyalar/8768.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Üçgen geometrik pergola kirişleri, altta bahçe ve inşaat artığı",
+    "en": "Triangular geometric pergola beams above a garden and building debris"
+  },
+  "alt": {
+    "tr": "Üçgen geometrik desenli pergola kirişleri, altta bahçe, zeytin ağaçları ve inşaat artıkları, köşede tuğla kolon",
+    "en": "Triangular pattern pergola beams with a garden, olive trees and building debris below, and a brick column in the corner"
+  },
+  "caption": {
+    "tr": "Kafes bahçenin üzerinde geniş bir alanı örtüyor. Altta çalışma kalıntıları görünüyor.",
+    "en": "The lattice covers a wide area above the garden. Leftovers from the work show below."
+  },
+  "seoFilename": "ucgen-geometrik-pergola-kirisleri-bahce-insaat-artigi",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

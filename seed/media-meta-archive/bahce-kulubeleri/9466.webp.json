@@ -1,0 +1,39 @@
+{
+  "source": "Ahsap Yapilar/9466.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Shingle çatının üstten yakın çekimi, ahşap deponun kapaklı ön yüzü",
+    "en": "Close-up of a shingle roof from above on a timber shed"
+  },
+  "alt": {
+    "tr": "Ahşap deponun yeşil, balık pulu biçimli shingle çatısı üstten görünüyor; altta iki kapaklı ön yüz var",
+    "en": "Green fish-scale shingles on the roof of a timber shed seen from above, with the two-door front below"
+  },
+  "caption": {
+    "tr": "Çatı tek eğimli ve yeşil shingle ile kaplı. Kenarlarda metal bir profil suyun yönünü belirliyor.",
+    "en": "The roof has a single slope and is covered in green shingle. A metal trim along the edge directs the water."
+  },
+  "seoFilename": "shingle-cati-ustten-yakin-cekim",
+  "tags": {
+    "type": [
+      "bahçe kulübesi / depo"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

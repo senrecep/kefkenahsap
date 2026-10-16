@@ -1,0 +1,37 @@
+{
+  "source": "Kopru ve Iskele/7974.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz kabuğunu saran kavisli deck çerçevesi",
+    "en": "Curved deck frame wrapping a pool shell"
+  },
+  "alt": {
+    "tr": "Kabuk hâlindeki kavisli havuzun çevresinde granit zemin üzerine kurulan eğri hatlı ahşap deck çerçevesi",
+    "en": "Curving timber deck frame set on granite paving around the shell of a curved pool"
+  },
+  "caption": {
+    "tr": "Havuz henüz boş. Deck çerçevesi havuzun kavisini birebir izliyor.",
+    "en": "The pool is still empty. The deck frame follows the curve of the pool exactly."
+  },
+  "seoFilename": "havuz-kabugunu-saran-kavisli-deck-cercevesi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/10518.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Alçak bankın üzerinde yanık efektli ahşap koltuk",
+    "en": "Charred-effect timber armchair set on a low bench"
+  },
+  "alt": {
+    "tr": "Alçak, kırmızımsı bir bankın üzerinde duran, iki yanı yüksek yanık efektli ahşap koltuk; zemin mozaik taş",
+    "en": "A timber chair with high sides and a charred effect set on a low reddish bench above a mosaic stone floor"
+  },
+  "caption": {
+    "tr": "Koltuk, önündeki alçak bankla birlikte bir köşe oluşturuyor. Yan kolçaklar yüksek, oturak derin.",
+    "en": "With the low bench in front, the chair forms a corner seat. The side arms are high and the seat is deep."
+  },
+  "seoFilename": "alcak-banka-yerlestirilmis-yanik-efektli-ahsap-koltuk",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

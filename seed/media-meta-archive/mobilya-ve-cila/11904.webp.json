@@ -1,0 +1,35 @@
+{
+  "source": "Mobilya ve Cila/11904.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Koyu boyalı şömine çerçevesi",
+    "en": "Dark painted fireplace surround"
+  },
+  "alt": {
+    "tr": "Koyu renge boyanmış ahşap şömine çerçevesi ve arkasında çalışan bir kişi; basit profilli alt kaide",
+    "en": "A timber fireplace surround painted a dark colour, with someone working behind it and a simply profiled base"
+  },
+  "caption": {
+    "tr": "Çerçevenin kaidesi profilli ve koyu boyalı, ortasında şömine boşluğu bırakılmış. Boya işi sürüyor.",
+    "en": "The base of the surround is profiled and painted dark, with an opening left for the fireplace. The painting work is going on."
+  },
+  "seoFilename": "koyu-boyali-somine-cercevesi-calisma-ani",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

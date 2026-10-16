@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/6066.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuza doğru uzanan altın tonlu deck",
+    "en": "Golden-toned deck stretching towards the pool"
+  },
+  "alt": {
+    "tr": "Havuza doğru uzanan, altın sarısı tonlarda ve cilalı parlak deck; kenarda koyu mavi saksılar ve bitkiler",
+    "en": "Polished glossy deck in golden-yellow tones stretching towards the pool, with dark blue planters and plants at the edge"
+  },
+  "caption": {
+    "tr": "Tahtalar boyuna döşenmiş ve yüzeyde yansımalar var. Köşede çimen ve havuzun taş kenarı görünüyor.",
+    "en": "The boards are laid lengthwise and the surface carries reflections. Lawn and the stone edge of the pool show in the corner."
+  },
+  "seoFilename": "havuza-dogru-uzanan-altin-tonlu-parlak-deck-saksilar",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

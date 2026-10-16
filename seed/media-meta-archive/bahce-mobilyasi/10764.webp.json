@@ -1,0 +1,35 @@
+{
+  "source": "Ireko-Teak/10764.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Katlanır ahşap masanın çıtalı tablası, yukarıdan",
+    "en": "Slatted top of a folding timber table from above"
+  },
+  "alt": {
+    "tr": "Islak zeminde duran, ortasında şemsiye deliği ve çaprazlanan ayakları olan",
+    "en": "A framed slatted folding timber table with a parasol hole and crossed legs, standing on a wet floor, seen from above"
+  },
+  "caption": {
+    "tr": "Tabla çıtaları yeni vernikle parlak görünüyor. Masa katlanır ayaklı, ortasında şemsiye deliği var.",
+    "en": "The slats look glossy with fresh varnish. The table has folding legs and a parasol hole in the middle."
+  },
+  "seoFilename": "katlanir-ahsap-masa-tablasi-yukaridan-islak-zeminde-citali",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

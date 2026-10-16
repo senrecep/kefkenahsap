@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/14982.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Altıgen ahşap deck üzerinde yeşil çatılı kamelya",
+    "en": "Hexagonal timber gazebo with a green roof on a hexagonal deck"
+  },
+  "alt": {
+    "tr": "Çimlik bahçede altıgen ahşap deck üzerinde yeşil çatılı kamelya, önünde taş kaplı yürüyüş yolu",
+    "en": "Green-roofed gazebo on a hexagonal timber deck in a lawn garden, with a paved walkway in front"
+  },
+  "caption": {
+    "tr": "Kamelyanın çatısı yeşil kaplı ve altı direkle taşınıyor. Önünde açık renk bir patika uzanıyor.",
+    "en": "The gazebo roof is covered in green and carried on six posts. A pale path leads up to it."
+  },
+  "seoFilename": "altigen-ahsap-deck-uzerinde-yesil-catili-kamelya",
+  "tags": {
+    "type": [
+      "kamelya",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

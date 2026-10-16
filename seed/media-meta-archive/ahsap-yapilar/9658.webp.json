@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/9658.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Metal çemberli büyük ahşap varil, yakından",
+    "en": "Large timber barrel with metal hoops, close up"
+  },
+  "alt": {
+    "tr": "İki metal çemberi olan, damarları belirgin büyük ahşap varil; çevresinde başka fıçılar var",
+    "en": "Large timber barrel with two metal hoops and pronounced grain, with more casks around it"
+  },
+  "caption": {
+    "tr": "Varilin tahtaları açık kahverengi, lifler belirgin. Alt kısımda ona ait bir kâğıt duruyor.",
+    "en": "The staves of the barrel are light brown with pronounced grain. A sheet of paper sits at the foot of the barrel."
+  },
+  "seoFilename": "buyuk-ahsap-varil-metal-cemberli-yakin-cekim",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.5
+}

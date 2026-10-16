@@ -1,0 +1,39 @@
+{
+  "source": "Kapi Dolap ve Seperator/9306.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dikey tahtalı uzun ahşap kasa, saksıların yanında",
+    "en": "Long vertical-board timber chest beside plant pots"
+  },
+  "alt": {
+    "tr": "Terasta duran, yan yüzü dikey tahtalı uzun ahşap kasa; önde terakota saksılar, arkada duvar ve bitkiler",
+    "en": "Long timber chest on a terrace with a vertical-board side, terracotta pots in front and a wall with plants behind"
+  },
+  "caption": {
+    "tr": "Uzun kasanın yan yüzü dikey tahtalarla kaplı, üstü düz bir kapakla kapanıyor. Ön tarafı üç kapaklı.",
+    "en": "The side of the long chest is clad in vertical boards under a flat lid. The front has three doors."
+  },
+  "seoFilename": "dikey-tahtali-uzun-ahsap-kasa-saksilar",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

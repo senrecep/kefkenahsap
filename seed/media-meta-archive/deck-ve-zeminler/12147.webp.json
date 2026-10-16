@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/12147.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölye zemininde istiflenmiş koyu kereste",
+    "en": "Dark timber stacked on a workshop floor"
+  },
+  "alt": {
+    "tr": "Fayans zeminli atölyede üst üste istiflenmiş koyu renkli kereste, arkada tezgâh",
+    "en": "Dark timber stacked up in a tiled-floor workshop, with a workbench behind"
+  },
+  "caption": {
+    "tr": "Çıtalar boyuna istiflenmiş, kullanılmaya hazır bekliyor. Deck işi için hazırlanan malzemeye benziyor ama zeminde iş görünmüyor.",
+    "en": "The lengths are stacked lengthwise, waiting to be used. It looks like stock for decking, but no floor work is visible."
+  },
+  "seoFilename": "atolye-zemininde-istiflenmis-koyu-kereste",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.4
+}

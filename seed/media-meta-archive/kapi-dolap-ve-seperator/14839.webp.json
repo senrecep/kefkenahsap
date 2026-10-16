@@ -1,0 +1,39 @@
+{
+  "source": "Kapi Dolap ve Seperator/14839.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bitki yanında küçük kapaklı ahşap kasa, içinde kablolar",
+    "en": "Timber box beside plants with a small door and cables inside"
+  },
+  "alt": {
+    "tr": "Çalıların ve bambu kaplı çitin yanında duran, yatay tahtalı ve küçük kapağı açık ahşap kasa; içinde kablolar ve toprak",
+    "en": "Timber box with horizontal boards and a small open door beside shrubs and a bamboo-covered fence, with cables and soil inside"
+  },
+  "caption": {
+    "tr": "Kasanın küçük kapağı açık, içindeki kablolar görünüyor. Üstü geniş tahtayla kapalı.",
+    "en": "The small door of the box is open and the cables inside are visible. A wide board closes the top."
+  },
+  "seoFilename": "bitki-yaninda-kucuk-kapakli-ahsap-kasa-icinde-kablolar",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

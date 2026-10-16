@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14307.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bina duvarı kenarında bal rengi küçük deck",
+    "en": "Small honey-coloured deck beside a building wall"
+  },
+  "alt": {
+    "tr": "Cam kapı önünde, bina duvarı ile toprak alan arasında bal rengi küçük deck; önünde taş plakalar ve çıplak zemin",
+    "en": "Small honey-toned deck in front of a glass door between the building wall and a soil area, with stone slabs"
+  },
+  "caption": {
+    "tr": "Deck kapıdan dışarı doğru kısa bir alan açıyor. Önünde henüz düzenlenmemiş toprak ve taşlar duruyor.",
+    "en": "The deck opens a short area out from the door. Unfinished soil and stones lie in front of it."
+  },
+  "seoFilename": "bal-rengi-kucuk-deck-bina-duvari-kenari",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

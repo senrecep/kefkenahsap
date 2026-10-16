@@ -1,0 +1,33 @@
+{
+  "source": "Ahsap Yapilar/7635.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Alçı pano kaplı bölüm ve ahşap çıtalar",
+    "en": "Plasterboard-lined section framed by timber battens"
+  },
+  "alt": {
+    "tr": "Ahşap çıtalarla çevrelenmiş, açık yeşilimsi alçı panolarla kaplanmış bir bölüm ve seramik zemin",
+    "en": "A section lined with pale green plasterboard framed by timber battens, with a ceramic tile floor"
+  },
+  "caption": {
+    "tr": "Alçı panolar ahşap çıtaların arasına vidalanmış. Alttaki zemin açık renk seramik kaplı, işçilik henüz tamamlanmamış.",
+    "en": "The plasterboards are screwed between the timber battens. The floor below is covered with light ceramic tiles and the work is not complete."
+  },
+  "seoFilename": "alci-pano-kapli-bolum-ahsap-kirisler-ve-seramik-zemin",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.4
+}

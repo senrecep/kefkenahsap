@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/9294.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Platform üzerinde çaprazlı korkuluk, çim ve duvar",
+    "en": "Cross-braced railing on a platform, with lawn and wall"
+  },
+  "alt": {
+    "tr": "Çimlik ve duvar yanındaki ahşap platformda çaprazlı korkuluk; platform tahtaları çapraz döşenmiş",
+    "en": "Cross-braced railing on a timber platform beside a lawn and a wall, with the platform boards laid diagonally"
+  },
+  "caption": {
+    "tr": "Platformun tahtaları çapraz bir düzenle döşenmiş. Korkuluk iki kenarı çevreliyor, kalın bir direkle bitiyor.",
+    "en": "The platform boards are laid in a diagonal pattern. The railing runs round two edges and ends at a thick post."
+  },
+  "seoFilename": "platform-uzerinde-caprazli-korkuluk-cim-ve-duvar",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

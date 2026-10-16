@@ -1,0 +1,40 @@
+{
+  "source": "Kopru ve Iskele/764.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Göl kıyısındaki çamurlu alanın arkasında uzanan korkuluklu iskele",
+    "en": "Railed pier behind the muddy ground at the lakeshore"
+  },
+  "alt": {
+    "tr": "Çamurlu zeminin ve toprak yığınlarının ardında, göl boyunca ince korkuluklu ahşap iskele; üstte orman kaplı tepe",
+    "en": "Thin-railed timber pier along the lake behind muddy ground and earth heaps, with a forested hill above"
+  },
+  "caption": {
+    "tr": "İskele gölün tüm genişliğince görünüyor. Çamurda tekerlek izleri, sağ altta kiremit çatı ucu var.",
+    "en": "The pier is seen along the width of the lake. There are tyre tracks in the mud and the edge of a tiled roof at bottom right."
+  },
+  "seoFilename": "camurlu-alanin-arkasinda-uzanan-korkuluklu-iskele",
+  "tags": {
+    "type": [
+      "iskele",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

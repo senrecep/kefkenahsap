@@ -1,0 +1,41 @@
+{
+  "source": "Pergola ve Kamelyalar/1139.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Palmiyeli bahçede yapım aşamasında pergola ve korkuluklu deck",
+    "en": "Pergola frame and railed deck going up in a palm garden"
+  },
+  "alt": {
+    "tr": "Palmiyeli bahçede yapım aşamasındaki geniş pergola iskeleti, korkuluklu deck ve çiçekli bitkiler",
+    "en": "Wide pergola frame under construction in a garden with palm trees, a railed deck and flowering plants"
+  },
+  "caption": {
+    "tr": "Çatı kirişleri üst üste binerek geniş bir açıklığı kapatıyor. Alt kısımda korkuluk çıtaları var.",
+    "en": "The roof beams overlap to span a wide opening. Rail slats can be seen along the lower edge."
+  },
+  "seoFilename": "palmiyeli-bahcede-pergola-iskeleti-korkuluklu-deck",
+  "tags": {
+    "type": [
+      "pergola",
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

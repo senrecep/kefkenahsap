@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/14419.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ağaçlı köşede taş duvar üstünde beyaz çit",
+    "en": "White fence on a stone wall at a tree-lined corner"
+  },
+  "alt": {
+    "tr": "Sonbahar yapraklı ağacın dibinde, taş duvarın üstünde uzanan beyaz çıtalı çit ve çöp kovası",
+    "en": "White picket fence on a stone wall at the foot of a tree in autumn leaf, with a bin"
+  },
+  "caption": {
+    "tr": "Çit duvarın köşesine kadar uzanıyor, önünde ağaç ve küp taş kaldırım var.",
+    "en": "The fence reaches the corner of the wall, with a tree and a sett pavement in front."
+  },
+  "seoFilename": "agacli-kose-sokakta-beyaz-cit-ve-tas-duvar",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Merdivenler/8201.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş merdiven yanında beyaz korkuluk, köşeden görünüm",
+    "en": "White railing by stone stairs, seen from the corner"
+  },
+  "alt": {
+    "tr": "Köşeden bakışla taş merdivenin yanındaki beyaz boyalı korkuluk; üstte bir bölüm daha, yanda çimlik ve tel çit",
+    "en": "White painted railing beside a stone staircase seen from the corner, with another flight above"
+  },
+  "caption": {
+    "tr": "Korkuluk köşede dönüp merdivenin üst bölümüne devam ediyor. Çimlikte adım taşları görünüyor.",
+    "en": "The railing turns at the corner and continues up the upper section. Stepping stones show in the lawn."
+  },
+  "seoFilename": "tas-merdiven-yaninda-beyaz-korkuluk-koseden-gorunum",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

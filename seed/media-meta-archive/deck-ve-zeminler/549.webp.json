@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/549.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deniz manzaralı yükseltilmiş deck ve çapraz korkuluk",
+    "en": "Raised sea-view deck with cross railing"
+  },
+  "alt": {
+    "tr": "Denizin hemen kıyısında, ayaklar üzerinde yükselen çapraz korkuluklu geniş deck; yerde hortum, arkada dağ silueti",
+    "en": "Wide deck on posts right at the sea edge with cross railing, a hose on the floor and a mountain outline behind"
+  },
+  "caption": {
+    "tr": "Deck suyun hemen kenarında geniş bir terasa dönüşüyor. Korkuluk ve pergola iskeleti tamamlanmış.",
+    "en": "The deck becomes a broad terrace right at the water. The railing and pergola frame are complete."
+  },
+  "seoFilename": "deniz-manzarali-yukseltilmis-deck-capraz-korkuluk",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk",
+      "pergola"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı",
+      "ticari mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

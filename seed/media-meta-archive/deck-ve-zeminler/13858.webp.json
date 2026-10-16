@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/13858.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Demir korkuluk yanında bahçeye inen deck yolu ve yeni tahtalar",
+    "en": "Deck path beside an iron railing with new boards at the end"
+  },
+  "alt": {
+    "tr": "Demir korkuluk yanında bahçeye inen gri eskimiş deck yolu, ucunda yeni açık renkli tahtalar",
+    "en": "Worn grey deck path beside an iron railing leading down into the garden, with new pale boards at its end"
+  },
+  "caption": {
+    "tr": "Yolun ucundaki yeni tahtalar eskimiş kısımların yenilendiğini gösteriyor. Yolun yanında çimen ve taş kenarlı bahçe başlıyor.",
+    "en": "The new boards at the end show that the worn sections are being renewed. Lawn and a stone-edged garden begin beside the path."
+  },
+  "seoFilename": "demir-korkuluk-yaninda-bahceye-inen-deck-yolu-yeni-tahta",
+  "tags": {
+    "type": [
+      "deck",
+      "yürüyüş yolu"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

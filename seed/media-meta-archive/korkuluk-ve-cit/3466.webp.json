@@ -1,0 +1,39 @@
+{
+  "source": "Korkuluk ve Cit/3466.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bahçe köşesinde yuvarlak kütük çit",
+    "en": "Round log fence at a garden corner"
+  },
+  "alt": {
+    "tr": "Servi fidanlarının önünde köşe yapan yuvarlak kütüklerden çit, kumlu toprak ve çimen kenarı",
+    "en": "Round log fence forming a corner in front of young cypress trees, beside sandy soil and a lawn"
+  },
+  "caption": {
+    "tr": "Kütük çit köşeyi dik açıyla dönüyor, arkada ev ve bahçe duvarı görünüyor.",
+    "en": "The log fence turns the corner at a right angle, with a house and garden wall visible behind."
+  },
+  "seoFilename": "bahce-kosesinde-yuvarlak-kutuk-palisat-cit",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

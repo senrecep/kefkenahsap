@@ -1,0 +1,39 @@
+{
+  "source": "Kapi Dolap ve Seperator/10454.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deck üzerinde jaluzi dolap ve duvara yaslı çıtalı panel",
+    "en": "Louvred cabinet on a deck beside a slatted panel"
+  },
+  "alt": {
+    "tr": "Mavi boyalı duvarın önünde deck zeminde duran jaluzi kapaklı küçük ahşap dolap ve yanında duvara yaslanmış çıtalı panel",
+    "en": "Small timber cabinet with louvred doors on a deck floor in front of a blue-painted wall"
+  },
+  "caption": {
+    "tr": "Dolap deck zemine yeni yerleştirilmiş, yanında çıtalı panel duvara dayalı. Montaj tamamlanmak üzere.",
+    "en": "The cabinet has just been placed on the deck, with a slatted panel leaning against the wall beside it. Fitting is nearly done."
+  },
+  "seoFilename": "deck-uzerinde-jaluzi-dolap-duvara-yasli-citali-panel",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)",
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

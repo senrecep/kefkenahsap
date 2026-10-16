@@ -1,0 +1,33 @@
+{
+  "source": "Ahsap Yapilar/8785.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Teras üstü OSB kaplı zemin ve dayalı merdiven",
+    "en": "OSB-covered terrace floor with a leaning ladder"
+  },
+  "alt": {
+    "tr": "OSB levhalarla kaplanmış teras zemini, yanında ahşap korkuluklu beyaz bina ve duvara dayalı merdiven",
+    "en": "Terrace floor covered with OSB boards, beside a white building with a timber balustrade and a ladder against the wall"
+  },
+  "caption": {
+    "tr": "Zemin henüz yalnızca OSB ile örtülü, son kat uygulanmamış. Binanın ahşap doğramaları koyu verniklidir.",
+    "en": "The floor is covered only with OSB so far and no top layer has been applied. The timber joinery of the building is finished in a dark varnish."
+  },
+  "seoFilename": "teras-ustu-osb-kapli-zemin-ahsap-korkuluklu-bina-ve-merdiven",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.45
+}

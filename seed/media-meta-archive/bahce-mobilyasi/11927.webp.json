@@ -1,0 +1,38 @@
+{
+  "source": "Ireko-Teak/11927.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Fayans zeminde dört küçük tabure ve ortada alçak masa",
+    "en": "Four small stools and a low central table on a tiled floor"
+  },
+  "alt": {
+    "tr": "Yukarıdan bakıldığında, fayans zeminde ortadaki küçük alçak masanın dört yanına yerleştirilmiş dört küçük ahşap tabure",
+    "en": "From above, four small timber stools set around a small low table in the middle on a tiled floor, all glossy-varnished"
+  },
+  "caption": {
+    "tr": "Dört tabure ve masa aynı parlak vernikle tamamlanmış. Tabure ve masanın üstü çok parçalı tahtalardan oluşuyor.",
+    "en": "The four stools and the table share the same glossy varnish. The tops of the stools and the table are made of several pieces of board."
+  },
+  "seoFilename": "fayans-zeminde-dort-kucuk-tabure-ve-orta-masa-parlak-ahsap",
+  "tags": {
+    "type": [
+      "sehpa",
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

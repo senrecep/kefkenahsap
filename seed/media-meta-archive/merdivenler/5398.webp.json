@@ -1,0 +1,39 @@
+{
+  "source": "Merdivenler/5398.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Üstten ahşap platform ve basamaklar",
+    "en": "Timber platform and steps from above"
+  },
+  "alt": {
+    "tr": "Taş duvarlı dar bir çukurda üstten görünen ahşap platform ve basamaklar; yapım aşamasında",
+    "en": "Timber platform and steps seen from above in a narrow stone-walled cut, under construction"
+  },
+  "caption": {
+    "tr": "Platform tahtaları ve basamaklar yukarıdan düzgün sıralı görünüyor. Alttaki bölümde iş sürüyor.",
+    "en": "The platform boards and steps line up neatly from above. Work is continuing on the lower section."
+  },
+  "seoFilename": "ustten-ahsap-platform-ve-basamaklar-dar-tas-sev",
+  "tags": {
+    "type": [
+      "merdiven"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

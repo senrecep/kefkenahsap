@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/8860.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimin üzerinde açık renkli emprenyeli deck parçaları",
+    "en": "Light pressure-treated deck sections on the lawn"
+  },
+  "alt": {
+    "tr": "Çimenlik üzerinde iki parça halinde açık renkli deck, üzerinde büyük bir saksı bitki",
+    "en": "Two sections of light-coloured deck on a lawn, with a large potted plant standing on one"
+  },
+  "caption": {
+    "tr": "Deck çimen içinde iki ayrı platform halinde duruyor. Saksı için de yer bırakılmış.",
+    "en": "The deck sits in the lawn as two separate platforms, with room left for the planter."
+  },
+  "seoFilename": "cim-uzerinde-acik-renkli-emprenyeli-deck-parcalari",
+  "tags": {
+    "type": [
+      "deck",
+      "çiçeklik / saksı"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

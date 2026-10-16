@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/13334.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kare vernikli çiçeklik, içi siyah astarlı",
+    "en": "Square varnished planter with black liner"
+  },
+  "alt": {
+    "tr": "Mavi örtü üzerinde duran, içi siyah astarlı kare vernikli ahşap çiçeklik",
+    "en": "Square varnished timber planter with a black liner standing on a blue sheet"
+  },
+  "caption": {
+    "tr": "Çiçeklik kare ve derin, alt kenarda çıtalı bir kaide var. Vernik koyu turuncuya çalıyor.",
+    "en": "The planter is square and deep with a slatted plinth at the base. The varnish leans towards dark orange."
+  },
+  "seoFilename": "mavi-ortu-uzerinde-ici-siyah-astarli-kare-vernikli-ahsap",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

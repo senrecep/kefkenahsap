@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/3220.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimde çapraz hatla sıralanan basamak plakaları, arkada havuz ve villa",
+    "en": "Stepping slabs on a diagonal line, pool and villa behind"
+  },
+  "alt": {
+    "tr": "Geniş çimlikte diyagonal bir hat izleyen turuncu-kahve ahşap basamak plakaları; arkada havuz ve sarı cepheli villa",
+    "en": "Orange-brown timber stepping slabs following a diagonal line across a broad lawn"
+  },
+  "caption": {
+    "tr": "Plakalar çimlikte köşegen boyunca uzanıyor. Hatın başladığı yerde hortum makarası var.",
+    "en": "The slabs run along a diagonal across the lawn. A hose reel stands where the line begins."
+  },
+  "seoFilename": "cimde-capraz-hatli-basamak-plakalari-havuz-villa",
+  "tags": {
+    "type": [
+      "yürüyüş yolu"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

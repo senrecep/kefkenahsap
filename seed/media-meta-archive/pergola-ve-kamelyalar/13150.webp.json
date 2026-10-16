@@ -1,0 +1,36 @@
+{
+  "source": "Pergola ve Kamelyalar/13150.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Metal çerçeveli pergolanın ahşap tavan çıtalarını takan ustalar",
+    "en": "Craftsmen fitting timber ceiling slats to a metal-framed pergola"
+  },
+  "alt": {
+    "tr": "Metal çerçeveli pergolada iskele üzerinde ahşap tavan çıtalarını ve şeffaf paneli takan iki usta, arkada tepe ve evler",
+    "en": "Two craftsmen on a platform fitting timber ceiling slats and a clear panel to a metal-framed pergola, with houses behind"
+  },
+  "caption": {
+    "tr": "Çıtalar çelik çerçevenin içine sıra sıra yerleştiriliyor. Altta örtülü bir mobilya ve geniş bir manzara var.",
+    "en": "The slats are placed row by row inside the steel frame. A covered piece of furniture and a wide view lie below."
+  },
+  "seoFilename": "metal-cerceveli-pergola-ahsap-tavan-citalari-montaji",
+  "tags": {
+    "type": [
+      "pergola",
+      "tavan kaplaması / lambri"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

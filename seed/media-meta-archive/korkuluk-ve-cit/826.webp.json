@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/826.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Siyah çerçeveli yatay tahtalı dört parçalı sürgülü kapı, üstü demir süslü",
+    "en": "Black-framed four-section sliding gate with horizontal boards and iron ornament"
+  },
+  "alt": {
+    "tr": "Çakıl zemin üstünde dört bölmeli, siyah metal çerçeveli, bal renkli yatay ahşap tahta dolgulu kapı; üstte kıvrımlı demir süs",
+    "en": "A four-panel gate with a black metal frame and honey-coloured horizontal timber board infill on gravel ground"
+  },
+  "caption": {
+    "tr": "Her bölme yatay tahtalarla dolu, sağdaki bölümde yaya kapısı kulpuyla ayrılmış. Üst kenarda dövme demir motif yer alıyor.",
+    "en": "Each panel is filled with horizontal boards and the right-hand section is set apart as a pedestrian door with its handle. A wrought-iron motif runs along the top edge."
+  },
+  "seoFilename": "siyah-cerceveli-yatay-tahtali-dort-parcali-surgulu-kapi",
+  "tags": {
+    "type": [
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

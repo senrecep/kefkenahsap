@@ -1,0 +1,40 @@
+{
+  "source": "Korkuluk ve Cit/8273.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deck üzerinde korkuluk ve çaprazlı kapı",
+    "en": "Railing and braced gate on a deck"
+  },
+  "alt": {
+    "tr": "Koyu tonlu deck zeminin kenarında üç bölmeli açık tonlu çıtalı korkuluk, ortasında çaprazlı kapı ve arkasında yeşil tel çit",
+    "en": "Three-section light slatted railing on the edge of a dark deck with a braced gate in the middle and a green wire fence behind"
+  },
+  "caption": {
+    "tr": "Korkuluk deck kenarını bahçeden ayırıyor, kapı basamağa açılıyor.",
+    "en": "The railing separates the deck edge from the garden, and the gate opens towards the step."
+  },
+  "seoFilename": "deck-uzerinde-ahsap-korkuluk-ve-capraz-kapi-telli-cit",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "bahçe kapısı"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/14804.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Köşede demir korkuluk ve ahşap küpeşte",
+    "en": "Iron railing and timber handrail at a corner"
+  },
+  "alt": {
+    "tr": "Terasın köşesinde dönen siyah demir korkuluk ve üstünde kahverengi ahşap küpeşte, arkada ağaçlar ve vadi",
+    "en": "Black iron railing turning at a terrace corner with a brown timber handrail, trees and a valley behind"
+  },
+  "caption": {
+    "tr": "Küpeşte köşede iki kenarı birleştiriyor. Korkuluk yerden metal ayaklarla sabitlenmiş.",
+    "en": "The handrail joins the two sides at the corner. The railing is fixed to the floor on metal footplates."
+  },
+  "seoFilename": "kosede-demir-korkuluk-ustunde-ahsap-kupeste-manzara",
+  "tags": {
+    "type": [
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

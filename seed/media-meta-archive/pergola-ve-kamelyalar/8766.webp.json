@@ -1,0 +1,37 @@
+{
+  "source": "Pergola ve Kamelyalar/8766.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Tuğla kolon ve taş duvar arasında üçgen desenli pergola çatı kafesi",
+    "en": "Triangular-pattern pergola roof lattice between a brick column and a stone wall"
+  },
+  "alt": {
+    "tr": "Tuğla kolon ve taş duvar arasında geometrik üçgen desenli vernikli pergola çatı kafesi, arkada korkuluk ve ev",
+    "en": "Varnished pergola roof lattice with a triangle pattern between a brick column and a stone wall"
+  },
+  "caption": {
+    "tr": "Kafes kolonla duvar arasındaki boşluğu kapatıyor. Kirişlerin kesişimleri yıldız biçiminde.",
+    "en": "The lattice spans the gap between the column and the wall. The beam crossings take a star form."
+  },
+  "seoFilename": "tugla-kolon-ile-tas-duvar-arasinda-ucgen-pergola-kafesi",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

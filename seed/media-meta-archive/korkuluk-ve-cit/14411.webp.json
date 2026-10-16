@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/14411.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ağaçlı yolda taş duvar üstünde beyaz çit",
+    "en": "White fence on a stone wall along a tree-lined path"
+  },
+  "alt": {
+    "tr": "Kaldırımda bir ağaç gövdesinin arkasında, koyu taş duvarın üstündeki beyaz boyalı çıtalı çit, arkada demir çit",
+    "en": "White-painted picket fence on a dark stone wall behind a tree trunk on a pavement, with an iron fence behind"
+  },
+  "caption": {
+    "tr": "Beyaz çıtalar koyu taş duvarın üstünde belirgin bir çizgi oluşturuyor.",
+    "en": "The white pickets form a clear line against the dark stone wall."
+  },
+  "seoFilename": "agacli-yolda-tas-duvar-ustunde-beyaz-cit",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

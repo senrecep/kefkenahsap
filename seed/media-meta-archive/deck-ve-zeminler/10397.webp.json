@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/10397.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Klima dış ünitesi yanında deck altyapısı",
+    "en": "Deck substructure beside an air-conditioning unit"
+  },
+  "alt": {
+    "tr": "Klima dış ünitesinin yanında, toprak üzerinde kurulmuş ahşap deck altyapısı; arkada metal korkuluk",
+    "en": "Timber deck substructure on soil beside an outdoor air-conditioning unit, with a metal railing behind"
+  },
+  "caption": {
+    "tr": "Kirişler klima ünitesine doğru uzanıyor. Arka planda yatay borulu metal korkuluk görünüyor.",
+    "en": "The joists run towards the AC unit. A metal railing with horizontal tubes is visible behind."
+  },
+  "seoFilename": "klima-dis-unitesi-yaninda-toprak-uzerinde-ahsap-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

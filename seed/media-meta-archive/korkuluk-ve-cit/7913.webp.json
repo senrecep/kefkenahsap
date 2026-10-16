@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/7913.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çayır çevresinde yatay bantlı koyu ahşap çit",
+    "en": "Dark timber fence with horizontal tapes around a meadow"
+  },
+  "alt": {
+    "tr": "Çayırın karşı sınırında uzanan koyu ahşap direkli çit ve yatay bantlar, arkada söğüt ve diğer ağaçlar",
+    "en": "Dark timber-post fence with horizontal tapes along the opposite edge of a meadow, with willow and other trees behind"
+  },
+  "caption": {
+    "tr": "Çit çayırı ağaçlardan ayırıyor, direkler eşit aralıkla sıralanıyor.",
+    "en": "The fence separates the meadow from the trees, with the posts at even spacing."
+  },
+  "seoFilename": "cayir-cevresinde-yatay-bantli-koyu-ahsap-cit-agaclar",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

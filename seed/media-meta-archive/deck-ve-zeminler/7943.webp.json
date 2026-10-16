@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/7943.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapılı ev önünde yüksek deck",
+    "en": "Raised deck in front of a house with glass doors"
+  },
+  "alt": {
+    "tr": "Çimle çevrili, evin cam kapılarının önüne uzanan yükseltilmiş açık renkli deck; kenarında kalın çerçeve tahtası",
+    "en": "Raised pale deck surrounded by lawn, stretching to the glass doors of the house, with a thick frame board at its edge"
+  },
+  "caption": {
+    "tr": "Ağaç gölgeleri deckin üstüne benekli ışık düşürüyor. Deck ayaklar üzerinde, altı çimenle çevrili.",
+    "en": "Tree shadows throw dappled light across the deck. The deck stands on legs with lawn around its underside."
+  },
+  "seoFilename": "cam-kapili-ev-onunde-cimle-cevrili-yuksek-acik-renkli-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14367.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapı yanında sandık bank ve koyu deck",
+    "en": "Storage bench beside a glass door on a dark deck"
+  },
+  "alt": {
+    "tr": "Cam kapının önünde, köşeye yerleştirilmiş ahşap sandık bankla birlikte koyu kırmızı kahverengi deck; kenarda çimen",
+    "en": "Dark red-brown deck in front of a glass door with a timber storage bench set into the corner and lawn at the edge"
+  },
+  "caption": {
+    "tr": "Sandık bank deckle aynı tonda ve köşede duruyor. Deck çimene doğru açılıyor.",
+    "en": "The storage bench matches the deck in tone and sits in the corner. The deck opens out towards the lawn."
+  },
+  "seoFilename": "cam-kapi-yaninda-sandik-bank-ve-koyu-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

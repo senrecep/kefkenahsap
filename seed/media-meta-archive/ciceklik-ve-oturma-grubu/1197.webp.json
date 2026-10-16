@@ -1,0 +1,39 @@
+{
+  "source": "Ahsap Yapilar/1197.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deniz kenarı terasında çiçeklik ve pergola direği",
+    "en": "Planter and pergola post on a seaside terrace"
+  },
+  "alt": {
+    "tr": "Denize bakan taş döşeli teraste ahşap çiçeklik kutusu ve pergola direği, çiçekler pembe",
+    "en": "Timber planter box and pergola post on a stone-paved terrace facing the sea, with pink flowers"
+  },
+  "caption": {
+    "tr": "Çiçeklik kutusu terasın kenarında, içinde pembe sardunyalar açmış. Pergola kirişleri yeşilimsi emprenyeli ahşap.",
+    "en": "The planter sits at the edge of the terrace with pink geraniums in bloom. The pergola beams are greenish pressure-treated timber."
+  },
+  "seoFilename": "deniz-kenari-terasinda-ahsap-ciceklik-kutusu-ve-pergola",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı",
+      "pergola"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı",
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

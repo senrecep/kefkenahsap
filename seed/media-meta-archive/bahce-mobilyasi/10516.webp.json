@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/10516.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yanık görünümlü iki kişilik ahşap koltuk, yuvarlak kenarlı",
+    "en": "Two-seat timber armchair with a charred look and rounded sides"
+  },
+  "alt": {
+    "tr": "Yüzeyi yanmış görünümde, yuvarlak kenarlı yüksek kolçaklı ahşap iki kişilik koltuk; altında kırmızımsı bir bank var",
+    "en": "A two-seat timber chair with a charred look and tall, rounded sides, standing on a reddish bench"
+  },
+  "caption": {
+    "tr": "Koltuğun yan kolçakları yüksek ve yuvarlatılmış. Tahtaların damarları yanık yüzeyde belirgin görünüyor.",
+    "en": "The side arms are tall and rounded. The grain of the boards stands out on the charred surface."
+  },
+  "seoFilename": "yanik-gorunumlu-yuvarlak-kenarli-iki-kisilik-ahsap-koltuk",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

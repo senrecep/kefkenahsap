@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14650.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çakıl dolgulu yan geçitte deck iskeleti",
+    "en": "Deck frame in a gravel-filled side passage"
+  },
+  "alt": {
+    "tr": "Yan bahçe geçidinde, aralarına çakıl serilmiş enine çıtalardan oluşan ahşap deck iskeleti",
+    "en": "Timber deck frame in a side garden passage, made of cross battens with gravel spread between them"
+  },
+  "caption": {
+    "tr": "Çıtalar iki yan kirişin arasında eşit aralıkla sıralanmış. Yol sonunda basamaklar ve çalılar görünüyor.",
+    "en": "The battens are spaced evenly between two side beams. Steps and shrubs show at the end of the path."
+  },
+  "seoFilename": "cakil-dolgulu-yan-gecitte-ahsap-deck-iskeleti",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

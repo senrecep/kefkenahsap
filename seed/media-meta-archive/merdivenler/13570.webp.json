@@ -1,0 +1,39 @@
+{
+  "source": "Merdivenler/13570.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Korkuluk direkleri dikili merdiven iskeleti",
+    "en": "Stair frame with the railing posts up"
+  },
+  "alt": {
+    "tr": "Korkuluk direkleri dikilmiş ahşap merdiven iskeleti; sarmaşıklı duvar yanında, yerde kablolar",
+    "en": "Timber stair frame with the railing posts set, beside an ivy-covered wall, with cables on the ground"
+  },
+  "caption": {
+    "tr": "Basamaklar ve direkler yerinde, korkuluk daha takılmamış. Sarmaşıklı bir duvarın dibinde çalışılıyor.",
+    "en": "The treads and posts are in place but the railing is not yet fitted. Work is going on at the foot of an ivy-covered wall."
+  },
+  "seoFilename": "korkuluk-direkleri-dikili-merdiven-iskeleti-sarmasik-duvar",
+  "tags": {
+    "type": [
+      "merdiven"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

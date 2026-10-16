@@ -1,0 +1,41 @@
+{
+  "source": "Deck ve Zeminler/13745.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Islak parlak çam deck yüzeyi ve göle uzanan korkuluk",
+    "en": "Wet glossy pine decking and a railing running to the lake"
+  },
+  "alt": {
+    "tr": "Islak, parlak çam deck yüzeyi ve göle doğru uzanan ahşap korkuluk, arkada söğüt",
+    "en": "Wet glossy pine decking with a timber railing running out towards the lake, and a willow behind"
+  },
+  "caption": {
+    "tr": "Tahtaların üstünde budak izleri ve damar deseni açıkça görünüyor. Korkuluk deck'in ucunda suya karşı kapanıyor.",
+    "en": "Knot marks and the grain pattern show clearly on the boards. The railing closes the end of the deck against the water."
+  },
+  "seoFilename": "islak-parlak-cam-deck-yuzeyi-ve-gole-uzanan-korkuluk",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "bahçe",
+      "su kenarı"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

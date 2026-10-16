@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/2205.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Pergola gölgesi düşen geniş deck zemini",
+    "en": "Wide deck floor under pergola shadow stripes"
+  },
+  "alt": {
+    "tr": "Pergola kirişlerinin gölgelerinin çizgi çizgi düştüğü geniş açık renkli deck zemini ve X korkuluklu kenar",
+    "en": "Wide light deck floor striped by shadows of pergola beams, with an X-pattern railing along the edge"
+  },
+  "caption": {
+    "tr": "Pergola kirişlerinden süzülen ışık zemine çizgiler düşürüyor. Kenar çapraz korkulukla kapalı.",
+    "en": "Light through the pergola beams draws stripes on the floor. The edge is closed by cross railing."
+  },
+  "seoFilename": "pergola-golgesi-dusen-genis-deck-zemini",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk",
+      "pergola"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras",
+      "ticari mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/13299.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimenlik kenarında uzun alçak çiçeklik",
+    "en": "Long low planter beside the lawn"
+  },
+  "alt": {
+    "tr": "Çimenin kenarına, çalılıkların önüne yapılmış uzun ve alçak vernikli ahşap çiçeklik",
+    "en": "Long, low varnished timber planter built at the edge of the lawn in front of shrubs"
+  },
+  "caption": {
+    "tr": "Çiçeklik dikey ara kirişlerle bölünmüş, yatay tahtalı. Yerde bir boru parçası yatıyor.",
+    "en": "The planter is divided by vertical posts and has horizontal boards. A piece of pipe lies on the ground."
+  },
+  "seoFilename": "cimenlik-uzerine-yapilmis-uzun-alcak-ahsap-ciceklik-calilar",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

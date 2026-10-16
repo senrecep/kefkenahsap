@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/14477.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kapağı açılan dolabın içindeki elektrik panosu",
+    "en": "Electrical panel inside a cabinet with an opening door"
+  },
+  "alt": {
+    "tr": "Beyaz kolonun yanında, açık duran Z çaprazlı ahşap dolap kapağı ve içinde şimşek işaretli beyaz bir elektrik panosu",
+    "en": "Open Z-braced timber cabinet door beside a white column, with a white electrical panel marked with a lightning sign inside"
+  },
+  "caption": {
+    "tr": "Pano dolabın içinde korunuyor, kapak açılınca ulaşılıyor. Kapağın arkasında Z çapraz var.",
+    "en": "The panel is protected inside the cabinet and reached by opening the door. A Z-brace stiffens the back of the door."
+  },
+  "seoFilename": "kapagi-acilan-dolabin-icindeki-elektrik-panosu",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

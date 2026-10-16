@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/10943.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş sütunlar arasında dikey çıtalı iki bahçe kapısı, küp taş giriş",
+    "en": "Two garden gates of vertical slats between stone piers, cobbled entrance"
+  },
+  "alt": {
+    "tr": "Küp taş döşeli girişte, iki taş sütun grubu arasında koyu çerçeveli dikey ahşap çıtalı geniş kapı ve soldaki yaya kapısı",
+    "en": "Wide dark-framed vertical-slat gate and a pedestrian gate at the left between two groups of stone piers on a cobbled entrance"
+  },
+  "caption": {
+    "tr": "Kapı tahtaları dikey ve aralıklı, çerçevesi siyah. Taş sütunların üstünde bahçe lambaları duruyor.",
+    "en": "The gate boards are vertical and spaced, with a black frame. Garden lamps stand on top of the stone piers."
+  },
+  "seoFilename": "tas-sutunlar-arasinda-dikey-citali-iki-bahce-kapisi",
+  "tags": {
+    "type": [
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

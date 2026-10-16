@@ -1,0 +1,38 @@
+{
+  "source": "Merdivenler/14243.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz sütun yanında kahverengi çaprazlı korkuluk",
+    "en": "Brown cross-braced railing beside a white column"
+  },
+  "alt": {
+    "tr": "Beyaz bir sütunun yanında, ahşap basamaklara inen kahverengi cilalı çaprazlı korkuluk, arkada yeşil çit ve çimlik",
+    "en": "Brown varnished cross-braced railing beside a white column, going down to timber steps, with a green hedge and lawn behind"
+  },
+  "caption": {
+    "tr": "Korkuluk dar basamak girişini çerçeveliyor, aşağıda çimlik başlıyor.",
+    "en": "The railing frames the narrow stair entrance, and the lawn begins below."
+  },
+  "seoFilename": "beyaz-sutun-yaninda-kahverengi-caprazli-ahsap-korkuluk",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "merdiven"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

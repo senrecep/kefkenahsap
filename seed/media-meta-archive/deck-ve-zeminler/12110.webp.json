@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/12110.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Duvar önünde gri kahverengi deck şeridi",
+    "en": "Grey-brown deck strip along a wall"
+  },
+  "alt": {
+    "tr": "Çimen kenarında, duvar ve çalıların önüne döşenmiş gri kahverengi dar deck şeridi",
+    "en": "Narrow grey-brown deck strip laid along a wall and shrubs at the lawn edge"
+  },
+  "caption": {
+    "tr": "Tahtalar şeridin boyunca uzanıyor. Çimenle birleştiği kenarda toprak hâlâ açık duruyor.",
+    "en": "The boards run the length of the strip. Soil is still bare along the edge next to the grass."
+  },
+  "seoFilename": "duvar-onunde-gri-kahverengi-deck-seridi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

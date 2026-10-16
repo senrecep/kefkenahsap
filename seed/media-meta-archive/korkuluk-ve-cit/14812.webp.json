@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/14812.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yandan görünen teras korkuluğu ve camlı kapılar, nar dalları arasında",
+    "en": "Side view of the terrace railing and glazed doors among pomegranate branches"
+  },
+  "alt": {
+    "tr": "Yan taraftan bakıldığında camlı ahşap kapıların üstündeki yatay çıtalı korkuluk; önde nar ağacının yaprak ve dalları",
+    "en": "Side view of the horizontal-slat railing above glazed timber doors"
+  },
+  "caption": {
+    "tr": "Korkuluk evin üst kenarı boyunca uzanıyor. Yaprakların arasından alt kattaki camlı kapılar seçiliyor.",
+    "en": "The railing runs along the top edge of the house. The glazed doors of the lower floor can be made out among the leaves."
+  },
+  "seoFilename": "yandan-gorunen-teras-korkulugu-camli-kapilar-nar-dallari",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "pencere / panjur"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

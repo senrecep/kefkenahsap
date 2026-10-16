@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/10610.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yandan görünen ahşap merdiven ve taş duvar",
+    "en": "Timber stairs from the side with a stone wall"
+  },
+  "alt": {
+    "tr": "Yandan bakışla çaprazlı korkuluklu ahşap merdiven; arkada taş duvar, kırmızı çalılar ve ev",
+    "en": "Side view of timber stairs with a cross-braced railing, with a stone wall, red shrubs and a house behind"
+  },
+  "caption": {
+    "tr": "Merdiven yandan görününce korkuluğun çapraz örgüsü ve basamak altı kirişler seçiliyor.",
+    "en": "From the side the railing's cross bracing and the stringers under the steps can be seen."
+  },
+  "seoFilename": "yandan-ahsap-merdiven-caprazli-korkuluk-tas-duvar",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

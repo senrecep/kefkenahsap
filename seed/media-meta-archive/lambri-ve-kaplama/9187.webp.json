@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/9187.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Alttan bakışla köşedeki ahşap kaplama",
+    "en": "Timber-clad corner seen from below"
+  },
+  "alt": {
+    "tr": "Ahşap kaplamalı bina köşesi alttan görünüyor; ortada şerit halinde membran var",
+    "en": "Corner of a timber-clad building seen from below, with a strip of membrane across the middle"
+  },
+  "caption": {
+    "tr": "Köşede tahtalar yukarı doğru uzanıyor. Ortada kaplamanın girmediği bir membran şeridi kalmış.",
+    "en": "The boards run up the corner. A strip of membrane is left in the middle where the cladding has not gone on."
+  },
+  "seoFilename": "alttan-cekim-kose-ahsap-kaplama-membran",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

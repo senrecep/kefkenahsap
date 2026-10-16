@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/9419.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ahşap panolu kabinin içi, köşede basamaklı oturak",
+    "en": "Inside a timber-panelled cabin with a stepped seat in the corner"
+  },
+  "alt": {
+    "tr": "Yatay ahşap panolarla kaplı küçük kabinin içi; köşede iki basamaklı ahşap oturak, zeminde seramik var",
+    "en": "Inside a small cabin lined with horizontal timber boards, with a two-step wooden seat in the corner and a ceramic floor"
+  },
+  "caption": {
+    "tr": "Kabinin duvarları yatay tahtalarla kaplı. Köşedeki iki basamaklı oturak hem oturmak hem eşya koymak için kullanılabilir.",
+    "en": "The cabin walls are clad in horizontal boards. The two-step seat in the corner works for sitting or for putting things down."
+  },
+  "seoFilename": "ahsap-panolu-kabin-ici-basamakli-oturak",
+  "tags": {
+    "type": [
+      "duş / soyunma kabini"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

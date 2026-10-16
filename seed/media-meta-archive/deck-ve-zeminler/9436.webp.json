@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/9436.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "İki yönlü tahta dizilimli deck döşemesi",
+    "en": "Deck tiles with boards running in two directions"
+  },
+  "alt": {
+    "tr": "Parke taşlı zeminde birleştirilmiş açık yeşilimsi emprenyeli deck panelleri, sağ altta tahtaları dik yöne dönen panel",
+    "en": "Pale greenish pressure-treated deck panels joined on paved ground, with the lower right panel turned crosswise"
+  },
+  "caption": {
+    "tr": "Paneller yan yana birleşiyor. Sağ alttaki parçada tahtalar farklı yöne dönerek bir desen oluşturuyor.",
+    "en": "The panels join side by side. In the lower right piece the boards turn the other way to form a pattern."
+  },
+  "seoFilename": "iki-yonlu-tahta-dizilimli-deck-dosemesi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

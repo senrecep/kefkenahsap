@@ -1,0 +1,39 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/15137.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Koyu vernikli çiçeklik yan yüzeyi, damar detayı",
+    "en": "Side of a dark-varnished planter, grain detail"
+  },
+  "alt": {
+    "tr": "Koyu vernikli ahşap çiçekliğin yan yüzeyi; yatay tahtalarda çam damarları belirgin",
+    "en": "Side of a dark-varnished timber planter with the grain clear on the horizontal boards"
+  },
+  "caption": {
+    "tr": "Vernik koyu olsa da ağacın damarı ve budak izleri seçiliyor. Alt köşede tahta takozlar var.",
+    "en": "Even under the dark varnish, the grain and knots of the wood show. Small timber blocks sit under the corner."
+  },
+  "seoFilename": "koyu-vernikli-ahsap-ciceklik-yan-yuzeyi-damar-detayi",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

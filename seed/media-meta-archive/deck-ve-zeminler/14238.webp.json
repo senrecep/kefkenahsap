@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14238.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çam ormanında yeşil boyalı geniş deck",
+    "en": "Wide green-painted deck in a pine grove"
+  },
+  "alt": {
+    "tr": "Çam gövdelerinin çevresinde uzanan yeşil boyalı geniş deck; arkada sandalye ve masalardan oluşan oturma alanı",
+    "en": "Wide green-painted deck spreading around pine trunks, with a seating area of chairs and tables beyond"
+  },
+  "caption": {
+    "tr": "Deck, tek tek ağaçların çevresinde boşluklar bırakarak büyüyor. Oturma alanı deckin ucunda ağaçların altında duruyor.",
+    "en": "The deck grows around individual trees, leaving openings. The seating area sits at the far end, under the trees."
+  },
+  "seoFilename": "yesil-boyali-genis-deck-ve-oturma-grubu",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "orman / kır"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

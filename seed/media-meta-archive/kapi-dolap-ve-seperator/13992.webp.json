@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/13992.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş basamaklı patikaya bakan yeşil kasetli kapı",
+    "en": "Green panelled door facing a stepping-stone path"
+  },
+  "alt": {
+    "tr": "Çimenin içindeki taş basamaklı patikanın kenarında yeşil boyalı kasetli kapı yüzeyi ve üstünde açık renkli saçak",
+    "en": "Green-painted panelled door surface beside a stepping-stone path in a lawn, with a pale valance above"
+  },
+  "caption": {
+    "tr": "Kapı yüzeyi dört kasetli kanattan oluşuyor. Önündeki patika kapıya doğru uzanıyor.",
+    "en": "The door is made up of four panelled leaves, with the path leading up to it."
+  },
+  "seoFilename": "tas-basamakli-patikaya-bakan-yesil-kasetli-kapi",
+  "tags": {
+    "type": [
+      "kapı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

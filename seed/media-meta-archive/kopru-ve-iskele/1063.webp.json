@@ -1,0 +1,39 @@
+{
+  "source": "Ahsap Yapilar/1063.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Platformda zemin döşeme ve korkuluk işi",
+    "en": "Laying the floor and railing on a seaside platform"
+  },
+  "alt": {
+    "tr": "Denize bakan platformda tahta zemin döşeniyor, korkuluk ve pergola dikmeleri yerinde; önde yerde kalaslar var",
+    "en": "Floor boards being laid on a platform facing the sea, railing and pergola posts in place and timbers on the ground"
+  },
+  "caption": {
+    "tr": "Zemin tahtaları sıra sıra çakılıyor. Kıyıda taş zemin ve palmiyeler görünüyor.",
+    "en": "The floor boards are being fixed row by row. Stone paving and palm trees are visible on the shore."
+  },
+  "seoFilename": "platformda-zemin-doseme-ve-korkuluk-isi",
+  "tags": {
+    "type": [
+      "iskele",
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

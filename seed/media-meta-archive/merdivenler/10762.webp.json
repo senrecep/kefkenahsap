@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/10762.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Duvar boyunca uzanan düz merdiven",
+    "en": "Straight stairs running along the wall"
+  },
+  "alt": {
+    "tr": "Bahçe duvarı boyunca uzanan, çaprazlı korkuluklu düz ahşap merdiven; üstte beyaz çıtalı çit, solda yeşil tel çit",
+    "en": "Straight timber stairs with a cross-braced railing running along a garden wall"
+  },
+  "caption": {
+    "tr": "Merdiven çimlikten duvarın üst seviyesine kadar düz bir hatla çıkıyor. Basamaklar açık renkli tahtadan.",
+    "en": "The stairs rise in a straight line from the lawn to the top of the wall. The treads are light-coloured boards."
+  },
+  "seoFilename": "duvar-boyunca-duz-merdiven-caprazli-korkuluk-beyaz-cit",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

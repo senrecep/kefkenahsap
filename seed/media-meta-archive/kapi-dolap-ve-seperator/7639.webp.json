@@ -1,0 +1,38 @@
+{
+  "source": "Kapi Dolap ve Seperator/7639.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Metal çerçeveli aralıklı yatay çıtalı ahşap bölme paneller",
+    "en": "Spaced horizontal-slat timber partition panels in metal frames"
+  },
+  "alt": {
+    "tr": "Dikey metal ve ahşap çerçeveler içinde yan yana sıralanmış, aralıklı yatay koyu ahşap çıtalı bölme panelleri",
+    "en": "Side-by-side partition panels of spaced horizontal dark timber slats set into vertical metal and timber frames"
+  },
+  "caption": {
+    "tr": "Paneller ışığı ve havayı süzen yatay çıtalarla örülmüş. Çerçeveler metal ve ahşabı bir arada kullanıyor.",
+    "en": "The panels are built of horizontal slats that filter light and air. The frames combine metal and timber."
+  },
+  "seoFilename": "metal-cerceveli-aralikli-yatay-citali-ahsap-bolme-paneller",
+  "tags": {
+    "type": [
+      "seperatör"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân",
+      "ticari mekân"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

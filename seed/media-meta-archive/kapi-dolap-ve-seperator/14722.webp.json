@@ -1,0 +1,38 @@
+{
+  "source": "Kapi Dolap ve Seperator/14722.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Parke taşlı yol boyunca uzayan çok kapaklı ahşap dolap hattı",
+    "en": "Multi-door timber cabinet run along a cobbled path"
+  },
+  "alt": {
+    "tr": "Teller çitin dibinde kavisli parke taşlı yol boyunca uzanan, düz üstlü, yatay tahtalı kapaklı koyu ahşap dolap hattı",
+    "en": "Multi-bay dark timber cabinet run along a curving cobbled path at the foot of a wire fence"
+  },
+  "caption": {
+    "tr": "Dolap hattı yolun eğrisine paralel uzuyor. Üst yüzü yekpare tahtalarla kaplı.",
+    "en": "The cabinet run follows the curve of the path. Its top is covered in continuous boards."
+  },
+  "seoFilename": "parke-tasli-yol-boyunca-uzayan-cok-kapakli-ahsap-dolap-hatti",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

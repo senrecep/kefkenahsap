@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/7243.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deck üzerinde dikdörtgen çiçeklik, cam kapı yanında",
+    "en": "Rectangular planter on a deck beside a glass door"
+  },
+  "alt": {
+    "tr": "Deck üzerinde duran dikdörtgen küçük ahşap çiçeklik; çevresinde saksılar, yanında cam kapı",
+    "en": "Small rectangular timber planter on a deck with pots around it and a glass door beside it"
+  },
+  "caption": {
+    "tr": "Çiçeklik, çıtalı üst kenarı ve eğik ayaklarıyla küçük bir sandığa benziyor. İçinde bahçe aletleri görünüyor.",
+    "en": "With its slatted top edge and splayed feet the planter looks like a small chest. Garden tools are visible inside."
+  },
+  "seoFilename": "deck-uzerinde-dikdortgen-kucuk-ahsap-ciceklik-cevresinde",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

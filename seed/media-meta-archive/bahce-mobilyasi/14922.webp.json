@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14922.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ağaçların altında, kumlu zeminde uzun koyu masa ve bank",
+    "en": "Long dark table and bench on sandy ground under trees"
+  },
+  "alt": {
+    "tr": "Ağaçların gölgesinde, kumlu bir zeminde duran uzun koyu vernikli ahşap masa ve yanında bir bank",
+    "en": "A long dark-varnished timber table with a bench beside it on sandy ground in the shade of trees, with an orchard behind"
+  },
+  "caption": {
+    "tr": "Masa ve bank bahçede ağaçların gölgesinde duruyor. Kalın tahtalar ve geniş ayaklar dışarıda kullanıma uygun.",
+    "en": "The table and bench sit in the shade of the garden trees. The thick boards and wide legs suit outdoor use."
+  },
+  "seoFilename": "agaclar-altinda-kumlu-zeminde-uzun-koyu-masa-ve-bank",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

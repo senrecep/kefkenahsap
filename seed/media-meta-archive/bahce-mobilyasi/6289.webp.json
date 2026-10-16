@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/6289.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Gri eskimiş ahşap masa yüzeyi ve arkasındaki bank sırtlığı",
+    "en": "Weathered grey timber table top with a bench back behind it"
+  },
+  "alt": {
+    "tr": "Çıtalı ve çapraz ara tahtalı, güneşten grileşmiş ahşap masa yüzeyi ile arkasında kafes desenli bir bank sırtlığı görünüyor",
+    "en": "The sun-greyed slatted top of a timber table with a diagonal centre board"
+  },
+  "caption": {
+    "tr": "Masanın yüzeyi güneş ve yağmurdan grileşmiş. Bu hâlde ahşap, zımpara ve yeni bir koruyucuyla toparlanabilecek durumda.",
+    "en": "The table's surface has greyed in sun and rain. In this state the wood can be recovered with sanding and a fresh protective coat."
+  },
+  "seoFilename": "gri-eskimis-ahsap-masa-yuzeyi-ve-bank-sirtligi",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

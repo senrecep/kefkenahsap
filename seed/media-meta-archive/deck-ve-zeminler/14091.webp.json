@@ -1,0 +1,38 @@
+{
+  "source": "Ireko-Teak/14091.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz kovaların yanında yağlanan uzun deck şeridi",
+    "en": "Long deck strip being oiled beside white buckets"
+  },
+  "alt": {
+    "tr": "Ev duvarı boyunca uzanan, kenarları mavi bantla korunmuş koyu turuncu deck ve önde beyaz kovalar",
+    "en": "Dark orange deck strip along a house wall, edges taped in blue, with white buckets in front"
+  },
+  "caption": {
+    "tr": "Deck şeridi tek hamlede yağlanıyor, kenarlardaki bant beton zemini koruyor. Kovalar işin hemen yanında.",
+    "en": "The strip is oiled in one go while tape protects the concrete at the edges. The buckets stand right by the work."
+  },
+  "seoFilename": "beyaz-kovalarin-yaninda-yaglanan-uzun-deck-seridi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

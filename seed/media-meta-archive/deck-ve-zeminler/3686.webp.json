@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/3686.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar önünde küçük kavisli platform",
+    "en": "Small curved platform in front of a stone wall"
+  },
+  "alt": {
+    "tr": "Havuz kenarında taş kaplı duvarın önünde duran küçük, kavisli ahşap platform ve üstünde beyaz şemsiye",
+    "en": "Small curved timber platform at the pool edge in front of a stone-clad wall, with a white parasol above"
+  },
+  "caption": {
+    "tr": "Platform havuzun suyuna yansıyor ve yan tarafında bir basamak var. Arkada ahşap korkuluklu bir bahçe alanı görünüyor.",
+    "en": "The platform is reflected in the pool water and has a step at its side. A garden area with a timber railing shows behind."
+  },
+  "seoFilename": "tas-duvar-onunde-kucuk-kavisli-platform-ve-semsiye",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

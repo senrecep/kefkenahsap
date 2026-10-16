@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/12442.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bitkilerle sınırlanan dar koyu deck yürüyüş yolu",
+    "en": "Narrow dark deck walkway edged with plants"
+  },
+  "alt": {
+    "tr": "Bina kenarında bitkilerle sınırlanan dar koyu kahverengi deck yürüyüş yolu",
+    "en": "Narrow dark brown deck walkway along a building edged with shrubs"
+  },
+  "caption": {
+    "tr": "Yol bina kenarından bahçenin içine doğru uzanıyor. Tahtalar enine döşenmiş ve yağlı yüzey parlıyor.",
+    "en": "The walkway runs from the building edge into the garden. The boards run across it and the oiled surface shines."
+  },
+  "seoFilename": "bitkilerle-sinirlanan-dar-koyu-deck-yuruyus-yolu",
+  "tags": {
+    "type": [
+      "deck",
+      "yürüyüş yolu"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

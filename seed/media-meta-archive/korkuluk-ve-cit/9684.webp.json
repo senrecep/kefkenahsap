@@ -1,0 +1,39 @@
+{
+  "source": "Kapi Dolap ve Seperator/9684.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar arasında bölmeli açık renk ahşap çift kanat kapı, posta kutulu",
+    "en": "Light panelled double timber gate between stone walls, with a letterbox"
+  },
+  "alt": {
+    "tr": "İki taş duvar arasında, bölmeli açık renk ahşap çift kanatlı kapı; sağdaki duvarda siyah posta kutusu, arkada ev",
+    "en": "A light-coloured panelled double timber gate between two stone walls"
+  },
+  "caption": {
+    "tr": "Kapının kanatları dikey ve yatay çıtalarla bölünmüş, açık tonlu. Kapı alçak taş duvarlara siyah menteşelerle bağlı.",
+    "en": "The gate leaves are divided by vertical and horizontal slats and are light in tone. The gate is attached to the low stone walls with black hinges."
+  },
+  "seoFilename": "tas-duvar-arasinda-bolmeli-acik-renk-kapi-posta-kutulu",
+  "tags": {
+    "type": [
+      "bahçe kapısı"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

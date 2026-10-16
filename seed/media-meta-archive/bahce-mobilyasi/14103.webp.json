@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14103.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beton zeminde metal ayaklı, yüksek arkalıklı kahverengi köşe bank",
+    "en": "Brown corner bench on metal legs with a high back on a concrete floor"
+  },
+  "alt": {
+    "tr": "Beton zeminde ince metal ayaklar üzerinde yükselen, dikey tahtalı yüksek arkalıklı kahverengi ahşap köşe bank",
+    "en": "A brown-varnished timber corner bench raised on thin metal legs on a concrete floor, with a tall back of vertical boards"
+  },
+  "caption": {
+    "tr": "Bankın sırtlığı dikey tahtalarla yapılmış ve oldukça yüksek. Metal ayaklar oturağı zeminden ayırıp hafif gösteriyor.",
+    "en": "The back of the bench is made of vertical boards and is quite tall. The metal legs lift the seat off the ground and make it look light."
+  },
+  "seoFilename": "beton-zeminde-metal-ayakli-yuksek-arkalikli-kahverengi-kose",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,36 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/10134.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yeşil kollu, çıtalı ahşap iki kişilik koltuk iskeleti",
+    "en": "Slatted timber two-seater frame with green arms"
+  },
+  "alt": {
+    "tr": "Minderi henüz konmamış, çıtalı ahşap iki kişilik koltuğun iskeleti; kolları yeşil boyalı, taş zemin üzerinde duruyor",
+    "en": "The frame of a slatted timber two-seater sofa without cushions, with green-painted arms, standing on a paved floor"
+  },
+  "caption": {
+    "tr": "Koltuğun ahşap iskeleti hazır, minder ve sırt yastıkları sonradan eklenecek. Kollar yeşil boyalı.",
+    "en": "The wooden frame of the sofa is ready, with cushions and backrests still to be added. The arms are painted green."
+  },
+  "seoFilename": "yesil-metal-kollu-ahsap-citali-iki-kisilik-koltuk-iskeleti",
+  "tags": {
+    "type": [
+      "oturma grubu"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "doğal ton",
+      "boyalı"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/14418.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Köşe sokakta uzun beyaz piket çit",
+    "en": "Long white picket fence on a street corner"
+  },
+  "alt": {
+    "tr": "Köşe başındaki taş duvar üzerinde uzayan beyaz çıtalı çit, arkada sonbahar renkli ağaç ve levhalar",
+    "en": "Long white picket fence on a stone wall at a street corner, with an autumn-coloured tree and signs behind"
+  },
+  "caption": {
+    "tr": "Çit duvarın üstünde yan yana, düzgün aralıklı çıtalarla sıralanmış. Alt kısımda küp taş yol var.",
+    "en": "The pickets sit side by side on the wall at even intervals. A sett-paved road runs below."
+  },
+  "seoFilename": "kose-sokakta-uzun-beyaz-piket-cit",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,40 @@
+{
+  "source": "Deck ve Zeminler/8210.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimenin içine açılan havuz kenarı deck alanı",
+    "en": "Pool-side deck panel set into the lawn"
+  },
+  "alt": {
+    "tr": "Havuzun yanında çimenle çevrili geniş deck yüzeyi, köşede kare bir bakım kapağı",
+    "en": "Wide deck surface next to a pool, surrounded by lawn, with a square access hatch near the corner"
+  },
+  "caption": {
+    "tr": "Deck çimenin içine düz kenarlarla yerleşmiş. Köşedeki kapak altındaki bölüme erişim sağlıyor.",
+    "en": "The deck sits in the lawn with straight edges. The hatch at the corner gives access to the space below."
+  },
+  "seoFilename": "cimenin-icine-acilan-havuz-kenari-deck-alani",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "havuz kenarı",
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/1523.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deniz kıyısında perdeli ahşap kamelya, altında masa ve sandalyeler",
+    "en": "Curtained timber gazebo on the seafront with a table and chairs"
+  },
+  "alt": {
+    "tr": "Deniz kıyısındaki çimlikte beyaz perdeli, saz tepeli ahşap kamelya, yükseltilmiş zeminde sandalyeler",
+    "en": "Timber gazebo with white curtains and a reed-topped roof on a seafront lawn, with chairs on a raised floor"
+  },
+  "caption": {
+    "tr": "Kamelya yükseltilmiş ahşap bir zeminin üzerinde duruyor, kenarlarda beyaz perdeler toplanmış. Arkada deniz uzanıyor.",
+    "en": "The gazebo stands on a raised timber floor with white curtains gathered at the sides. The sea stretches out behind."
+  },
+  "seoFilename": "denizde-perdeli-ahsap-kamelya-masa-sandalye",
+  "tags": {
+    "type": [
+      "kamelya",
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "su kenarı",
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

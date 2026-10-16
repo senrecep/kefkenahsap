@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/12350.webp",
+  "category": "mutfak-ve-gomme-dolap",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölyede kapaklı gözlü açık renkli tezgah",
+    "en": "Light timber counter with doors and an open niche in the workshop"
+  },
+  "alt": {
+    "tr": "Atölyede küçük kapaklı ve açık gözlü, açık renkli ahşap tezgah; arkada bir kişi kısmen görünüyor",
+    "en": "A light timber counter with small doors and an open niche in the workshop, with a person partly visible behind"
+  },
+  "caption": {
+    "tr": "Tezgahın üstü kalın tahtadan, altında bir açık göz ve iki küçük kapak var. Kapaklarda siyah menteşeler görünüyor.",
+    "en": "The top of the counter is thick board with an open niche and two small doors beneath. Black hinges show on the doors."
+  },
+  "seoFilename": "atolyede-kapakli-gozlu-acik-renkli-ahsap-tezgah",
+  "tags": {
+    "type": [
+      "gömme dolap / gardırop",
+      "bar / tezgâh"
+    ],
+    "wood": [],
+    "setting": [
+      "atölyede üretim"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

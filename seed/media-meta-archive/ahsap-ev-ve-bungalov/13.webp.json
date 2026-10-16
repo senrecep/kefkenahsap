@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/13.webp",
+  "category": "ahsap-ev-ve-bungalov",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yapım aşamasındaki iki katlı ahşap ev",
+    "en": "Two-storey timber house under construction"
+  },
+  "alt": {
+    "tr": "İki katlı, önünde sundurması ve korkuluğu olan, yapımı süren ahşap ev",
+    "en": "Two-storey timber house with a covered veranda and railing, still under construction"
+  },
+  "caption": {
+    "tr": "Ev henüz bitmemiş. Cephe kaplanmış, sundurma ve korkuluk yerine takılmış, çevrede inşaat artıkları duruyor.",
+    "en": "The house is not finished yet. The walls are clad, the veranda and railing are in place and building debris lies around it."
+  },
+  "seoFilename": "yapim-asamasinda-iki-katli-ahsap-ev",
+  "tags": {
+    "type": [
+      "ahşap ev / bungalov",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

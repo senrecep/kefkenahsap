@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/13115.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Masa ve oturma grubunun çevresini saran sivri uçlu açık renk çıtalı çit",
+    "en": "Light pointed-slat fence around a table and seating set"
+  },
+  "alt": {
+    "tr": "Çiçekli bir masa ve koyu rattan koltukların önünde, teras köşesini çeviren sivri uçlu açık renk ahşap çıtalı çit",
+    "en": "A light pointed-slat timber fence enclosing a terrace corner in front of a table with flowers and dark rattan chairs"
+  },
+  "caption": {
+    "tr": "Çit oturma alanının kenarını alçak bir hatla ayırıyor. Çıtalar sivri uçlu ve aralıklı sıralanmış.",
+    "en": "The fence marks the edge of the seating area with a low line. The slats are pointed and spaced."
+  },
+  "seoFilename": "masa-ve-oturma-grubunun-cevresini-saran-citali-cit",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

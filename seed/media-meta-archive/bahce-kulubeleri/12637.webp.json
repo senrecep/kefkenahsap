@@ -1,0 +1,40 @@
+{
+  "source": "Korkuluk ve Cit/12637.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beton ayaklı A salıncak ve arkasında ahşap oyun evi",
+    "en": "A-frame swing set in concrete footings with a timber playhouse behind"
+  },
+  "alt": {
+    "tr": "Ağaçların arasında, beton ayaklara oturan ahşap A salıncak ve arkasında yüksek zeminli oyun evi",
+    "en": "Among trees, a wooden A-frame swing set in concrete footings with a raised playhouse behind it"
+  },
+  "caption": {
+    "tr": "Salıncağın iki ayağı betona gömülü, böylece sallanırken yerinden oynamıyor. İki farklı oturak asılı.",
+    "en": "Both legs of the swing are set in concrete, so it stays put while swinging. Two different seats hang from it."
+  },
+  "seoFilename": "beton-ayakli-a-salincak-ve-ahsap-oyun-evi",
+  "tags": {
+    "type": [
+      "çocuk oyun evi",
+      "salıncak"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

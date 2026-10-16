@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/12352.webp",
+  "category": "mutfak-ve-gomme-dolap",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yatay tahta kaplı tezgah dolabı",
+    "en": "Counter cabinet clad in horizontal boards"
+  },
+  "alt": {
+    "tr": "Atölyede, yan yüzü yatay tahtayla kaplı, bir yanında gözleri olan ahşap tezgah dolabı",
+    "en": "A timber counter cabinet in the workshop with its long side clad in horizontal boards and compartments at one end"
+  },
+  "caption": {
+    "tr": "Tezgahın uzun yan yüzü yatay tahtalarla kaplanmış. Karşı uçta kapaklı bölmeler görünüyor.",
+    "en": "The long side of the counter is clad in horizontal boards. Compartments with doors show at the far end."
+  },
+  "seoFilename": "yatay-tahta-kapli-gozlu-ahsap-tezgah-dolabi-atolyede",
+  "tags": {
+    "type": [
+      "gömme dolap / gardırop",
+      "bar / tezgâh"
+    ],
+    "wood": [],
+    "setting": [
+      "atölyede üretim"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

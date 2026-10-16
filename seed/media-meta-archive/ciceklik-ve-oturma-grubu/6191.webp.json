@@ -1,0 +1,36 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/6191.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Uzun bölmeli kasa ve raflı ünite, yan görünüm",
+    "en": "Long compartmented box and shelf unit, side view"
+  },
+  "alt": {
+    "tr": "Atölyede uzun bölmeli ahşap kasa ve ucundaki raflı ünite, yandan görünüm",
+    "en": "Long compartmented timber box and the shelf unit at its end in the workshop, seen from the side"
+  },
+  "caption": {
+    "tr": "Kasanın kapakları üstte kapalı, yan yüzeyi düz tahtalı. Arkada tezgâh ve alet panosu var.",
+    "en": "The lids of the box are closed on top and the sides are plain boards. A bench and tool board are visible behind."
+  },
+  "seoFilename": "atolyede-uzun-bolmeli-kasa-ve-rafli-unite-yan-gorunum",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı",
+      "raf / kitaplık"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.55
+}

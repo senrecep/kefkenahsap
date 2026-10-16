@@ -1,0 +1,41 @@
+{
+  "source": "Pergola ve Kamelyalar/5416.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar üstünde yükseltilmiş deck ve kamelya, çatıda çalışan ustalar",
+    "en": "Raised deck and gazebo on a stone wall with craftsmen on the roof"
+  },
+  "alt": {
+    "tr": "Taş duvarın üstünde konsol payandalarla yükseltilmiş deck ve kamelya, çatıda iki usta çalışıyor",
+    "en": "Deck and gazebo raised on a stone wall with bracket supports, and two craftsmen working on the roof"
+  },
+  "caption": {
+    "tr": "Deck taş duvarın kenarından konsol payandalarla taşıyor. Kamelyanın çatı tahtaları çakılıyor.",
+    "en": "The deck is carried out from the stone wall edge on bracket supports. The gazebo roof boards are being fixed."
+  },
+  "seoFilename": "tas-duvar-ustunde-yukseltilmis-deck-kamelya-usta",
+  "tags": {
+    "type": [
+      "kamelya",
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

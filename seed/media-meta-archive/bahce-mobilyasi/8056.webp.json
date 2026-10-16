@@ -1,0 +1,39 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/8056.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Seramik zeminde sırtlıklı, uzun açık renkli ahşap bank",
+    "en": "Long light timber bench with a back on a ceramic floor"
+  },
+  "alt": {
+    "tr": "Açık renkli seramik zeminde duran, geniş tahtalı sırtlığı ve kalın ayakları olan uzun, emprenyeli çam bank",
+    "en": "A long pressure-treated pine bench with a broad-board back and thick supports on a pale ceramic floor, with a workshop behind"
+  },
+  "caption": {
+    "tr": "Bankın sırtlığı geniş iki tahtadan, oturağı kalın tahtalardan. Ayaklar kalın bloklara oturuyor.",
+    "en": "The back is two broad boards and the seat is thick planks. The supports stand on heavy blocks."
+  },
+  "seoFilename": "seramik-zeminde-sirtlikli-uzun-acik-renkli-ahsap-bank-atolye",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

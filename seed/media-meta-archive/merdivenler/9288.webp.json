@@ -1,0 +1,39 @@
+{
+  "source": "Merdivenler/9288.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Üstten dönüşlü basamaklar, yerde kereste parçaları",
+    "en": "Turning steps from above, with timber offcuts on the ground"
+  },
+  "alt": {
+    "tr": "Üstten görünen dönüşlü ahşap basamaklar ve sahanlık; çimde kereste parçaları, yanda ev duvarı",
+    "en": "Turning timber steps and a landing seen from above, with timber pieces on the grass and the house wall beside"
+  },
+  "caption": {
+    "tr": "Basamaklar sahanlıkta dönüyor, ölçüsünü bekleyen kereste parçaları çimde yatıyor. Korkuluk henüz yok.",
+    "en": "The steps turn at the landing and timber pieces wait on the grass to be cut to size. There is no railing yet."
+  },
+  "seoFilename": "ustten-donuslu-ahsap-basamaklar-yerde-kereste-parcalari",
+  "tags": {
+    "type": [
+      "merdiven"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

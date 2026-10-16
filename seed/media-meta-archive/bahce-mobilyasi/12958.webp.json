@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/12958.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Köşe duvara bitişik ahşap sedir, yukarıdan bakışla",
+    "en": "Timber corner bench against the wall, seen from above"
+  },
+  "alt": {
+    "tr": "Sarı duvarın köşesine yaslanmış ahşap sedir, taş döşeme üzerinde yukarıdan görünüyor; yanında yeşil bir örtü var",
+    "en": "A timber bench built into a yellow wall corner on stone paving seen from above, with a green cover beside it"
+  },
+  "caption": {
+    "tr": "Yukarıdan bakınca sedirin iki duvara oturduğu köşe belli oluyor. Üst yüzey kapaklı bölmelere ayrılmış.",
+    "en": "From above, the corner where the bench meets two walls is clear. The top is divided into lidded sections."
+  },
+  "seoFilename": "kose-duvara-bitisik-ahsap-sedir-ustten-bakis-tas-doseme",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/10849.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çaprazlı korkuluklu merdiven, arkada beyaz piket çit",
+    "en": "Cross-braced stairs with a white picket fence behind"
+  },
+  "alt": {
+    "tr": "Çaprazlı korkuluklu ahşap merdiven; arkada duvar ve beyaz piket çit, önde otlar",
+    "en": "Timber stairs with a cross-braced railing, a wall and a white picket fence behind, and tall grass in front"
+  },
+  "caption": {
+    "tr": "Merdiven duvara yaslanarak yükseliyor, korkuluğu iki yandan çaprazlarla örülmüş. Önünde uzun otlar var.",
+    "en": "The stairs rise beside the wall with cross-braced railings on both sides. Tall grass grows in front."
+  },
+  "seoFilename": "caprazli-korkuluklu-merdiven-beyaz-piket-cit-arkada",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

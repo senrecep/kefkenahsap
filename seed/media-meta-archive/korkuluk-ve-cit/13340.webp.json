@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/13340.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Üstten bakışla halatlı korkuluk ve ahşap küpeşte",
+    "en": "Cable railing and timber handrail seen from above"
+  },
+  "alt": {
+    "tr": "Merdiven başından aşağı bakışta gri basamaklar, çelik halatlar ve parlak ahşap küpeşte",
+    "en": "View down the stairs showing grey steps, steel cables and a glossy timber handrail"
+  },
+  "caption": {
+    "tr": "Küpeşte bahçeye inen basamaklar boyunca yan yana uzanıyor.",
+    "en": "The handrail runs along the steps going down into the garden."
+  },
+  "seoFilename": "ustten-gorunum-halatli-korkuluk-kupeste",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "merdiven"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

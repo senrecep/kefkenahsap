@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/12533.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Parlak cilalı deck ve ahşap basamak",
+    "en": "Glossy varnished deck with a timber step"
+  },
+  "alt": {
+    "tr": "Parlak cilalı deck ve ahşap basamak, önünde taş basamaklar, arkada çit ve ev",
+    "en": "Glossy varnished deck with a timber step, stone stepping slabs in front and a hedge and house behind"
+  },
+  "caption": {
+    "tr": "Ahşap basamak deck'in ön kenarına yerleştirilmiş, taş plakalar çimenin içinde yolu sürdürüyor. Yan yüzey yatay tahtalarla kaplı.",
+    "en": "The timber step is set at the front edge and stone slabs carry the path across the lawn. The side face is clad in horizontal boards."
+  },
+  "seoFilename": "parlak-cilali-deck-ve-ahsap-basamak-tas-basamaklar",
+  "tags": {
+    "type": [
+      "deck",
+      "merdiven"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

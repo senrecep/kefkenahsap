@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/6346.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Teras çatısında X çaprazlı yatay tahtalı ahşap perde",
+    "en": "Horizontal-board timber screen with an X brace on a roof terrace"
+  },
+  "alt": {
+    "tr": "Çatı terasında taş bordür üzerinde X çaprazlı, yatay tahta kaplı yüksek ahşap perde, arkada yerleşim ve mavi gökyüzü",
+    "en": "Tall timber screen with horizontal boarding and an X brace standing on a stone kerb on a roof terrace"
+  },
+  "caption": {
+    "tr": "Perde yatay tahtalarla kaplı, çaprazlar çerçeveyi sağlamlaştırıyor. Teras kenarını rüzgâra karşı kapatıyor.",
+    "en": "The screen is boarded horizontally with braces stiffening the frame. It closes the edge of the terrace against the wind."
+  },
+  "seoFilename": "teras-catisinda-x-capraz-yatay-tahtali-ahsap-perde",
+  "tags": {
+    "type": [
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

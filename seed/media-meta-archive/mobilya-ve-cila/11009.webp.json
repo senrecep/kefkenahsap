@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/11009.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Alçak yatak çerçevesi ve başlığın yakın çekimi",
+    "en": "Close-up of the low bed frame and headboard"
+  },
+  "alt": {
+    "tr": "Alçak ahşap yatak çerçevesinin köşesi ve geniş tahtadan yapılmış başlık, yakın çekim",
+    "en": "Close-up of the corner of a low timber bed frame and a headboard made from one wide board"
+  },
+  "caption": {
+    "tr": "Başlık tek geniş tahtadan, damarları ve budakları görünüyor. Çerçevenin köşesi düz birleştirilmiş.",
+    "en": "The headboard is a single wide board with its grain and knots showing. The corner of the frame is joined flush."
+  },
+  "seoFilename": "alcak-yatak-cercevesi-ve-basliginin-yakin-cekimi",
+  "tags": {
+    "type": [
+      "yatak / karyola"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

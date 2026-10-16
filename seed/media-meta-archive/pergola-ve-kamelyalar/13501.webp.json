@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/13501.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimenli bahçede yapım aşamasında kamelya, çapraz korkuluk",
+    "en": "Gazebo under construction on a lawn with X-braced rails"
+  },
+  "alt": {
+    "tr": "Çimenli bahçede yapım aşamasındaki kamelya: çapraz korkuluklar, ahşap zemin ve üstünde bir plastik sandalye",
+    "en": "Gazebo under construction on a lawn with X-braced rails, a timber floor and a plastic chair on it"
+  },
+  "caption": {
+    "tr": "Çatı kirişleri ortada birleşiyor, zemin tahtaları döşenmiş. Çimde basamak taşlarının gölgeleri düşüyor.",
+    "en": "The roof beams meet in the middle and the floor boards are laid. Shadows of the stepping stones fall on the lawn."
+  },
+  "seoFilename": "cimenli-bahcede-kamelya-yapimi-capraz-korkuluk",
+  "tags": {
+    "type": [
+      "kamelya",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

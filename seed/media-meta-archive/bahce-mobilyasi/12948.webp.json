@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/12948.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Teras karosunda koyu vernikli uzun ahşap sedir",
+    "en": "Long dark-varnished timber day-bed on terrace tiles"
+  },
+  "alt": {
+    "tr": "Taş görünümlü teras karolarının üzerinde, bir ucunda yüksek sırtı olan, koyu vernikli uzun ahşap sedir",
+    "en": "A long dark-varnished timber day-bed with a high back at one end on stone-effect terrace tiles, in front of a building wall"
+  },
+  "caption": {
+    "tr": "Sedir, terasın bir kenarına yerleştirilmiş. Üstü düz tahtalı, bir ucundaki sırtlıkla uzanıp yatmaya da uygun.",
+    "en": "The day-bed is placed along one edge of the terrace. The top is flat planks, and with the backrest at one end it works for lounging."
+  },
+  "seoFilename": "teras-karosunda-koyu-vernikli-uzun-ahsap-sedir",
+  "tags": {
+    "type": [
+      "bank",
+      "şezlong"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

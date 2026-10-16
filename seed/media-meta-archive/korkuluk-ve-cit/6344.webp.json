@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/6344.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kiremit çatılar arasında çıtalı ahşap kutu, uzaktan",
+    "en": "Slatted timber box among tiled roofs, from a distance"
+  },
+  "alt": {
+    "tr": "Kiremit çatılı binanın çatısı üzerinde, çapraz ve dikey çıtalı açık renk ahşap kafes kutu; altta ahşap ve taş cephe",
+    "en": "A light timber lattice box with diagonal and vertical slats on the roof of a tiled building"
+  },
+  "caption": {
+    "tr": "Kutu çatı çizgisinin üstünde dik duruyor. Çıtaları çapraz yerleştirilmiş, yüzeyi güneş ışığıyla aydınlanıyor.",
+    "en": "The box stands upright above the roofline. Its slats are set diagonally and its surface catches the sunlight."
+  },
+  "seoFilename": "kiremit-catilar-arasinda-citali-ahsap-kutu-uzaktan",
+  "tags": {
+    "type": [
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

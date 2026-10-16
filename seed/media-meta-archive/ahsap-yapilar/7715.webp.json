@@ -1,0 +1,37 @@
+{
+  "source": "Pergola ve Kamelyalar/7715.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz bina girişinde koyu direkli sundurma",
+    "en": "Porch with dark posts at the entrance of a white building"
+  },
+  "alt": {
+    "tr": "Beyaz bir binanın girişinde, koyu vernikli kalın direklerle taşınan düz çatılı ahşap sundurma",
+    "en": "Flat-roofed timber porch carried on thick dark varnished posts at the entrance of a white building"
+  },
+  "caption": {
+    "tr": "Çatı kirişleri üst üste binmiş, direkler sıralı. Girişte ahşap kapı ve pencere kasası ile aynı koyu ton kullanılmış.",
+    "en": "The roof beams overlap and the posts stand in a row. The same dark tone is used for the door and window frame at the entrance."
+  },
+  "seoFilename": "beyaz-bina-girisinde-koyu-vernikli-direkli-ahsap-sundurma",
+  "tags": {
+    "type": [
+      "sundurma / saçak / carport"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

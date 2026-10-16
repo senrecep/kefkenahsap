@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/11012.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş döşemeli kaldırım kenarında beyaz boyalı alçak ahşap çit",
+    "en": "Low white-painted timber fence beside a stone-paved pavement"
+  },
+  "alt": {
+    "tr": "Eve bitişik, taş kaplı alçak duvarın üstünde sivri uçlu beyaz boyalı ahşap çit; çitin içinde toprak yatak",
+    "en": "A white-painted pointed-slat timber fence on a low stone-clad wall beside a house"
+  },
+  "caption": {
+    "tr": "Çıtalar beyaz ve sivri uçlu, eşit aralıkla dizilmiş. Çit evin köşesine kadar uzanıyor.",
+    "en": "The slats are white and pointed and set at even gaps. The fence runs as far as the corner of the house."
+  },
+  "seoFilename": "tas-doseme-kaldirim-kenarinda-beyaz-alcak-cit",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

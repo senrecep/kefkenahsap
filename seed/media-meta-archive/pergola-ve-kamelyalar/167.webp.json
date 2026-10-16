@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/167.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sisli havada ahşap deck üzerinde dallı üstü açık pergola",
+    "en": "Open-top pergola with branches on a timber deck in misty weather"
+  },
+  "alt": {
+    "tr": "Sisli havada geniş ahşap deck üzerinde direkler, üzeri dallarla örtülü pergola, arkada tuğla bina ve spiral merdiven",
+    "en": "Pergola on a wide timber deck in misty weather, with posts and a roof of laid branches, and a brick building behind"
+  },
+  "caption": {
+    "tr": "Pergolanın üstü sık dallarla örtülmüş, gölge veriyor ama gökyüzü seçiliyor. Deck uzun bir hat boyunca uzanıyor.",
+    "en": "The pergola top is covered with branches that give shade while the sky shows through. The deck runs along a long line."
+  },
+  "seoFilename": "sisli-havada-ahsap-deck-dalli-ustu-acik-pergola",
+  "tags": {
+    "type": [
+      "pergola",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

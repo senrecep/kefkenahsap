@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/11378.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Teras zemininde ahşap yemek masası ve katlanır sandalyeler",
+    "en": "Wooden dining table and folding chairs on a terrace floor"
+  },
+  "alt": {
+    "tr": "Evin girişindeki karo terasta, uzun bir ahşap yemek masasının etrafında çıtalı katlanır ahşap sandalyeler diziliyor",
+    "en": "On a tiled terrace at a house entrance, folding slatted timber chairs arranged around a long wooden dining table"
+  },
+  "caption": {
+    "tr": "Sandalyeler katlanabildiği için kullanılmadığında kolayca kaldırılıyor. Masa uzun, kalabalık sofralara yetiyor.",
+    "en": "The chairs fold, so they are easy to put away when not in use. The table is long enough for a crowded meal."
+  },
+  "seoFilename": "teras-zemininde-ahsap-yemek-masasi-ve-katlanir-ahsap",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

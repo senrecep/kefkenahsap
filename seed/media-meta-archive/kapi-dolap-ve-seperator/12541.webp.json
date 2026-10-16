@@ -1,0 +1,39 @@
+{
+  "source": "Ireko-Teak/12541.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Klima dış ünitesinin üstündeki çıtalı ahşap kapak",
+    "en": "Slatted timber lid above an air-conditioner outdoor unit"
+  },
+  "alt": {
+    "tr": "Klima dış ünitesinin altında kızıl kahve ahşap çıtalı kasa ve üstünde menteşeli kapak, kapağın ucunda metal tutucu",
+    "en": "Reddish-brown slatted timber housing below an air-conditioner outdoor unit with a hinged lid and a metal catch at its end"
+  },
+  "caption": {
+    "tr": "Kasanın çıtaları yatay ve sık. Kapak havalandırma için ünitenin altına konumlanmış.",
+    "en": "The slats of the housing run horizontally and close together. The lid is positioned below the unit for ventilation."
+  },
+  "seoFilename": "klima-dis-unitesinin-ustundeki-citali-ahsap-kapak",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

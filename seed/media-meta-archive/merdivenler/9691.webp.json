@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/9691.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dar bahçede önden çaprazlı korkuluklu merdiven",
+    "en": "Cross-braced stairs in a narrow garden, from the front"
+  },
+  "alt": {
+    "tr": "Dar bir bahçe şeridinde önden görünen, iki yanı çaprazlı korkuluklu ahşap merdiven; arkada duvar ve ağaçlar",
+    "en": "Timber stairs seen from the front in a narrow strip of garden"
+  },
+  "caption": {
+    "tr": "Merdiven duvarın dibinden düz bir hatla yukarı çıkıyor. Arkada çam ağaçları görünüyor.",
+    "en": "The stairs rise in a straight line from the foot of the wall. Pine trees show behind."
+  },
+  "seoFilename": "dar-bahcede-onden-caprazli-korkuluklu-ahsap-merdiven",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

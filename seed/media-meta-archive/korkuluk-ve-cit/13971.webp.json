@@ -1,0 +1,40 @@
+{
+  "source": "Kapi Dolap ve Seperator/13971.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Tel örgülü dikey çıtalı ahşap panel, bitki saksısı önünde",
+    "en": "Wire-mesh vertical-slat timber panel in front of a plant pot"
+  },
+  "alt": {
+    "tr": "Yeşilimsi tonlu, tel örgü dolgulu dikey çıtalı ahşap panelin köşesi; üstte bambu yaprakları, altta gri zemin",
+    "en": "Corner of a greenish-toned vertical-slat timber panel with wire-mesh infill, bamboo leaves above and a grey floor below"
+  },
+  "caption": {
+    "tr": "Çıtalar dikey ve aralıklı, tel örgü arkasında gerilmiş. Panelin üst kenarı düz bir tahtayla kapatılmış.",
+    "en": "The slats are vertical and spaced with the wire mesh stretched behind them. The top edge of the panel is closed with a flat board."
+  },
+  "seoFilename": "tel-orgulu-dikey-citali-ahsap-panel-bitki-saksisi",
+  "tags": {
+    "type": [
+      "kafes / paravan",
+      "çit"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

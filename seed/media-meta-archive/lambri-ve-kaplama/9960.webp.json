@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/9960.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Boyası aşınmış gri kaplamalı çıkıntı",
+    "en": "Projecting bay with worn grey paint"
+  },
+  "alt": {
+    "tr": "Boyası aşınmış gri ahşap kaplamalı bina çıkıntısı; önünde yeşil bir çalı, ortada küçük havalandırma penceresi",
+    "en": "Projecting part of a building clad in grey timber with worn paint"
+  },
+  "caption": {
+    "tr": "Tahtaların boyası solmuş ve soyulmuş. Çıkıntının ortasında panjurlu küçük bir açıklık var.",
+    "en": "The paint on the boards has faded and flaked. A small louvred opening sits in the middle of the projection."
+  },
+  "seoFilename": "asinmis-gri-ahsap-cikinti-yesil-calinin-arkasi",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

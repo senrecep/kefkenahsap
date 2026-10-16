@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12838.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Tamamlanmış geniş deck yüzeyi ve çelik taşıyıcı detayı",
+    "en": "Finished broad deck surface with a steel support detail"
+  },
+  "alt": {
+    "tr": "Açık renkli, tamamlanmış geniş deck yüzeyi; kenarında çerçeve tahtası ve altta kırmızı çelik taşıyıcı",
+    "en": "Finished broad pale deck surface with a frame board at its edge and a red steel support underneath"
+  },
+  "caption": {
+    "tr": "Kenara kalın bir çerçeve tahtası çevrilmiş ve deck'in köşesi temiz kapanmış. Çelik taşıyıcı alttan hafifçe görünüyor.",
+    "en": "A thick frame board runs round the edge and closes the corner cleanly. The steel support just shows from below."
+  },
+  "seoFilename": "tamamlanmis-genis-deck-yuzeyi-celik-tasiyici-detayi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

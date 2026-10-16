@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12499.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Pembe binanın önünde yatay deck alt kirişleri",
+    "en": "Horizontal deck sub-joists in front of a pink building"
+  },
+  "alt": {
+    "tr": "Bahçede pembe binanın önünde sıra sıra dizilmiş yatay deck alt kirişleri",
+    "en": "Horizontal deck sub-joists laid out in rows in a garden in front of a pink building"
+  },
+  "caption": {
+    "tr": "Kirişlerin arası eşit tutulmuş ve hepsi aynı yöne bakıyor. Altındaki toprak henüz düzleştirilmemiş.",
+    "en": "The gaps between joists are even and all run the same way. The soil beneath is not yet levelled."
+  },
+  "seoFilename": "pembe-binanin-onunde-yatay-deck-alt-kirisleri",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

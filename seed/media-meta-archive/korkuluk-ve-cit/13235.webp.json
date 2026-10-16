@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/13235.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Selvi çit önünde uzanan sivri uçlu çıtalı çit parçası, yeşil çalı yanında",
+    "en": "Pointed-slat fence section in front of the cypress hedge, beside a green shrub"
+  },
+  "alt": {
+    "tr": "Koyu selvi çitin önünde çimde duran, eğik hatla uzayan sivri uçlu açık renk çıtalı çit parçası",
+    "en": "A light pointed-slat fence section standing on the lawn in front of a dark cypress hedge, running on a slant"
+  },
+  "caption": {
+    "tr": "Çit parçası çimde serbest duruyor, çıtaları eşit boyda ve aralıklı. Sol tarafta açık yeşil yapraklı bir çalı var.",
+    "en": "The fence section stands freely on the lawn and its slats are equal in length and spaced. There is a shrub with light green leaves on the left."
+  },
+  "seoFilename": "selvi-cit-onunde-sivri-citali-cit-parcasi-yesil-cali",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

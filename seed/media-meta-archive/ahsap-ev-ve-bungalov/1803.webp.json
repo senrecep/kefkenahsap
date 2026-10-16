@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/1803.webp",
+  "category": "ahsap-ev-ve-bungalov",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Geniş pencere boşluklu yapım aşamasında ev içi",
+    "en": "Interior of a house in progress with a wide window opening"
+  },
+  "alt": {
+    "tr": "Kirişli tavanı ve geniş pencere boşluğu olan, zemininde kalaslar duran yapım aşamasındaki ahşap ev içi",
+    "en": "Inside a timber house in progress, with a beamed ceiling, a wide window opening and planks on the floor"
+  },
+  "caption": {
+    "tr": "Yatay tahta duvarlar ve kirişli tavan görünüyor. Zeminde kalaslar yığılı, pencere boşluğundan çevre manzarası seçiliyor.",
+    "en": "Horizontal board walls and a beamed ceiling are visible. Planks are stacked on the floor and the landscape shows through the opening."
+  },
+  "seoFilename": "genis-pencere-boslugu-kirisli-tavan-ahsap-ev-ici",
+  "tags": {
+    "type": [
+      "ahşap ev / bungalov"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

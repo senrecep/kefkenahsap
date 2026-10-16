@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/7668.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çerçeveli zeminde küçük ahşap ev maketi",
+    "en": "Small timber house model on a framed base"
+  },
+  "alt": {
+    "tr": "Çevresi ahşap çerçeveli zeminin üstünde duran küçük ahşap ev maketi; arkada deniz ve yamaç",
+    "en": "Small timber house model standing on a base framed with timber, with the sea and a hillside behind"
+  },
+  "caption": {
+    "tr": "Maketin pencereleri küçük kare deliklerle belirtilmiş, çatısı iki yöne eğimli. Arkada mavi deniz ve tepeler görünüyor.",
+    "en": "The windows of the model are shown as small square openings and the roof slopes two ways. Blue sea and hills show behind."
+  },
+  "seoFilename": "cevresi-cerceveli-zemin-ustunde-kucuk-ahsap-ev-maketi-deniz",
+  "tags": {
+    "type": [],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.4
+}

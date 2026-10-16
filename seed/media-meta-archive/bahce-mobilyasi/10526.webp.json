@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/10526.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Koyu tonlu ahşap koltuğun üstten yakın çekimi",
+    "en": "Top-down close-up of a dark timber armchair"
+  },
+  "alt": {
+    "tr": "Üstten bakıldığında yuvarlak yan panelli, koyu tonlu ahşap koltuğun oturma yüzeyi ve tahta damarları görünüyor",
+    "en": "From above, the seat surface and wood grain of a dark timber armchair with rounded side panels"
+  },
+  "caption": {
+    "tr": "Oturma yüzeyi düz tahtalardan, yan paneller yukarı doğru kavisleniyor. Damarlar koyu yüzeyde belirgin.",
+    "en": "The seat surface is made of flat boards and the side panels curve upward. The grain shows clearly on the dark surface."
+  },
+  "seoFilename": "koyu-tonlu-ahsap-koltugun-ustten-yakin-cekimi",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

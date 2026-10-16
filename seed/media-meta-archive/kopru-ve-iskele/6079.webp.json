@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/6079.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Uzun çim bahçede kırmızı basamak plakalarıyla villaya giden yol",
+    "en": "Red stepping-slab path across a long lawn towards the villa"
+  },
+  "alt": {
+    "tr": "Geniş çim bahçede kırmızımsı ahşap basamak plakalarından oluşan yol; uzakta kırmızı kiremit çatılı villa, solda mavi örtü",
+    "en": "Path of reddish timber stepping slabs across a large lawn towards a red-tiled villa, with a blue sheet at the left"
+  },
+  "caption": {
+    "tr": "Plakalar bahçenin ortasından düz bir hatla villaya doğru gidiyor. Yan taraftaki ağaçlar yolu çerçeveliyor.",
+    "en": "The slabs run in a straight line down the middle of the garden towards the villa. Trees at the side frame the path."
+  },
+  "seoFilename": "uzun-cim-bahcede-kirmizi-plakalarla-villaya-yol",
+  "tags": {
+    "type": [
+      "yürüyüş yolu"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

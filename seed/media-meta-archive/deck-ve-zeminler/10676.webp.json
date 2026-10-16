@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/10676.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Toprak üzerinde deck kiriş çerçevesi, yanda çim",
+    "en": "Deck joist frame on soil, lawn beside it"
+  },
+  "alt": {
+    "tr": "Toprak üzerinde ahşap deck kiriş çerçevesi; yan tarafta çim, alet ve ilk döşenen tahtalar",
+    "en": "Timber deck joist frame on soil with lawn, tools and the first laid boards beside it"
+  },
+  "caption": {
+    "tr": "Çerçeve dikdörtgen, kirişler eşit aralıklı. Arka planda yeşil çit ve komşu bina görünüyor.",
+    "en": "The frame is rectangular with evenly spaced joists. A green hedge and a neighbouring building are visible behind."
+  },
+  "seoFilename": "toprak-uzerinde-ahsap-deck-kiris-cercevesi-yan-tarafta-cim",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/14705.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz boyalı ahşap giriş pergolası ve kafes yan paneller",
+    "en": "White-painted timber entrance pergola with lattice side panels"
+  },
+  "alt": {
+    "tr": "Villa girişinde beyaz boyalı ahşap pergola, kafes yan paneller ve iki yanda budanmış çalılar",
+    "en": "White-painted timber pergola at a villa entrance with lattice side panels and trimmed shrubs on both sides"
+  },
+  "caption": {
+    "tr": "Pergola evin giriş cephesine bakıyor. Yan paneller kare kafesle örülmüş.",
+    "en": "The pergola faces the front of the house. The side panels are filled with square lattice."
+  },
+  "seoFilename": "beyaz-boyali-ahsap-giris-pergolasi-kafes-paneller",
+  "tags": {
+    "type": [
+      "pergola",
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

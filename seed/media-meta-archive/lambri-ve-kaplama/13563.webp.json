@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/13563.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çakıl zeminde ahşap duvar ve köşe oturma yeri",
+    "en": "Timber wall and corner seat on a gravel floor"
+  },
+  "alt": {
+    "tr": "Çakıl zeminli bir alanda yatay ahşap duvar kaplaması ve köşede ahşap oturma bölümü",
+    "en": "Horizontal timber wall cladding over a gravel floor, with a timber seating section in the corner"
+  },
+  "caption": {
+    "tr": "Duvar yatay tahtalarla kaplı, dibinde tahta bir şerit boydan boya uzanıyor. Köşede ahşap bir oturma yeri var.",
+    "en": "The wall is clad in horizontal boards with a timber strip running along its foot. A wooden seat fills the corner."
+  },
+  "seoFilename": "cakil-zemin-ahsap-duvar-kaplama-kose-oturma",
+  "tags": {
+    "type": [
+      "iç duvar kaplaması",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

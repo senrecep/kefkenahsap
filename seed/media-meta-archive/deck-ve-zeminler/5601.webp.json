@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/5601.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deniz kenarında geniş direk ve kiriş iskeleti",
+    "en": "Wide post and joist frame by the sea"
+  },
+  "alt": {
+    "tr": "Koy kıyısında geniş bir alana yayılan ahşap direk ve kiriş iskeleti; uzakta tamamlanmış çatılı platform ve dağlık kıyı",
+    "en": "Timber post and joist frame spreading over a wide area on a bay shore, with a finished roofed platform"
+  },
+  "caption": {
+    "tr": "Dikmeler sıra sıra duruyor ve kirişler ızgara oluşturuyor. Arkada sudan yükselen küçük bir iskele görünüyor.",
+    "en": "The posts stand in rows and the joists form a grid. A small jetty rising from the water shows behind."
+  },
+  "seoFilename": "deniz-kenarinda-genis-ahsap-direk-ve-kiris-iskeleti",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

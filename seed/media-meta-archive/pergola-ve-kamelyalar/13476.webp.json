@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/13476.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Alacakaranlıkta çapraz korkuluklu ahşap kamelya iskeleti",
+    "en": "Timber gazebo frame with X-braced rails at dusk"
+  },
+  "alt": {
+    "tr": "Akşam ışığında çapraz çıtalı korkuluklu ahşap kamelya iskeleti, önünde taş basamaklar ve toprak zemin",
+    "en": "Timber gazebo frame with X-braced rails in the evening light, with stepping stones and bare soil in front"
+  },
+  "caption": {
+    "tr": "Kamelyanın kirişleri üçgen alın oluşturuyor, korkuluk çıtaları çaprazlanmış. Çevre henüz düzenlenmemiş.",
+    "en": "The rafters form a triangular gable and the rail slats cross. The surroundings have not been landscaped yet."
+  },
+  "seoFilename": "alacakaranlikta-capraz-korkuluklu-kamelya-iskeleti",
+  "tags": {
+    "type": [
+      "kamelya",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

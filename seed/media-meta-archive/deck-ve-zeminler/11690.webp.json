@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/11690.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çakıl dolgu üzerinde deck taşıyıcı kirişleri",
+    "en": "Deck bearers over a gravel fill"
+  },
+  "alt": {
+    "tr": "Koyu çakıl üzerinde çapraz ve boyuna uzanan açık renkli deck kirişleri, arkada ahşap oturma grubu",
+    "en": "Light timber deck joists running lengthwise and across on dark gravel, a wooden sofa set behind"
+  },
+  "caption": {
+    "tr": "Ana kirişlere dik uzanan ara kirişler çerçeveyi sağlamlaştırıyor. Üst yüzey için tahta döşemesi bekliyor.",
+    "en": "Cross joists run square to the main bearers and stiffen the frame. The surface boards are still to come."
+  },
+  "seoFilename": "cakil-dolgu-uzerinde-deck-tasiyici-kirisler",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı",
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

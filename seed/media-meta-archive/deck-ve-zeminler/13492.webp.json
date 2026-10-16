@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/13492.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimen kenarında ağaç ve binaya doğru uzanan deck",
+    "en": "Deck running towards a tree and the building along the lawn"
+  },
+  "alt": {
+    "tr": "Çimen kenarında ağaca ve binaya doğru uzanan, açık renkli ve düz bir deck",
+    "en": "Pale, flat deck running along the lawn edge towards a tree and the building"
+  },
+  "caption": {
+    "tr": "Deck bahçenin uzun kenarı boyunca ilerliyor ve ağaç gövdesinin yanından geçiyor. Yüzeyde yeni tahtanın açık rengi görünüyor.",
+    "en": "The deck follows the long edge of the garden and passes beside the tree trunk. The surface shows the pale colour of new timber."
+  },
+  "seoFilename": "cimen-kenarinda-agac-ve-binaya-dogru-uzanan-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

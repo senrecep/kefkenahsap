@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14229.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Aralıklı çıtalı küçük deck platformu",
+    "en": "Small deck platform with spaced slats"
+  },
+  "alt": {
+    "tr": "Çimen ve çakıl zemin üzerine konmuş, aralıklı koyu kırmızı kahverengi çıtalardan küçük bir platform",
+    "en": "Small platform of spaced dark red-brown slats set on lawn and gravel"
+  },
+  "caption": {
+    "tr": "Platform duvar dibinde, mavi kılıfla sarılı bir armatürün önünde duruyor. Çıtalar arasındaki boşluklar suyun akmasına izin veriyor.",
+    "en": "The platform sits at the foot of a wall in front of a fixture wrapped in blue cover. The gaps between slats let water drain."
+  },
+  "seoFilename": "aralikli-citali-kucuk-deck-platformu",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

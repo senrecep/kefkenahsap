@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/2234.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Açık renkli deck köşesi, altta taş basamaklar",
+    "en": "Corner of a pale deck, with stone steps below"
+  },
+  "alt": {
+    "tr": "Yukarıdan bakıldığında açık renkli bir deckin köşesi; altta taş basamaklar, palmiye ve kenarda ahşap bir masa",
+    "en": "Seen from above, the corner of a pale deck, with stone steps below, a palm, and a timber table at the edge"
+  },
+  "caption": {
+    "tr": "Deck, basamaklı bir bahçe yamacının üstüne yerleşmiş. Palmiye yaprakları basamakların kenarına sarkıyor.",
+    "en": "The deck sits above a stepped garden slope. Palm fronds hang over the edge of the steps."
+  },
+  "seoFilename": "acik-renkli-deck-kosesi-tas-basamak-ve-palmiye",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

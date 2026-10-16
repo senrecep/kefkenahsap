@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/7922.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz basamakları ve yanındaki deck",
+    "en": "Pool steps and the deck beside them"
+  },
+  "alt": {
+    "tr": "Mozaik fayanslı havuzun basamakları ve yanındaki deck şeridi; iki yanda beyaz saksılarda kırmızı çiçekler, arkada şezlonglar",
+    "en": "The steps of a mosaic-tiled pool and the deck strip beside them, with red flowers in white planters on both sides"
+  },
+  "caption": {
+    "tr": "Deck havuzun ızgaralı kenarını izliyor ve taş plakalarla çimene bağlanıyor. Havuzun suyu açık turkuaz bir renkte.",
+    "en": "The deck follows the grated pool edge and joins the lawn with stone slabs. The pool water is a pale turquoise."
+  },
+  "seoFilename": "havuz-basamaklari-ve-yanindaki-deck-kirmizi-cicekli-saksilar",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/9296.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Üstten uzun ahşap geçit ve korkuluk gölgeleri",
+    "en": "Long timber walkway from above, with railing shadows"
+  },
+  "alt": {
+    "tr": "Üstten bakışla uzun ahşap geçit ve çaprazlı korkuluk; gölgeler tahtaların üstüne düşüyor, yanda çimlik ve tel çit",
+    "en": "Top view of a long timber walkway and a cross-braced railing, with shadows falling across the boards"
+  },
+  "caption": {
+    "tr": "Geçit tahtaları uzun bir şerit halinde uzanıyor. Korkuluğun gölgeleri tahtaların üzerinde çapraz çizgiler çiziyor.",
+    "en": "The walkway boards run in one long strip. The railing's shadows draw diagonal lines across the boards."
+  },
+  "seoFilename": "ustten-uzun-ahsap-gecit-ve-caprazli-korkuluk-golgeler",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

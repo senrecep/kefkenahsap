@@ -1,0 +1,40 @@
+{
+  "source": "Korkuluk ve Cit/980.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yatay tahtalı korkuluk ve yeni deck, şehir manzarası",
+    "en": "Horizontal-board railing and new deck with a town view"
+  },
+  "alt": {
+    "tr": "Yeni serilmiş açık renkli deck tahtaları ve köşeyi dönen kalın yatay tahtalı korkuluk, arkada çıplak ağaçlar ve şehir",
+    "en": "Freshly laid pale decking and a thick horizontal-board railing turning the corner, with bare trees and a town behind"
+  },
+  "caption": {
+    "tr": "Korkuluk köşede kalın bir direğe yaslanıyor, tahtalar eşit aralıkla yatay dizilmiş.",
+    "en": "The railing rests on a thick post at the corner, and the boards run horizontally at even intervals."
+  },
+  "seoFilename": "yatay-tahtali-korkuluk-ve-yeni-deck-arkada-sehir-manzarasi",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

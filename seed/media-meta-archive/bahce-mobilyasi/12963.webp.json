@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/12963.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölyede yerde duran çıtalı şezlong ve bank iskeletleri",
+    "en": "Slatted lounger and bench frames on the workshop floor"
+  },
+  "alt": {
+    "tr": "Atölye zemininde, kırmızımsı vernikli çıtalı bir şezlong iskeleti önde, L biçimli bank iskeleti arkada duruyor",
+    "en": "On a workshop floor, a reddish-varnished slatted lounger frame in front and an L-shaped bench frame behind"
+  },
+  "caption": {
+    "tr": "Çıtalı iskeletlerin minderi henüz konmamış. Arkada duran L biçimli iskelet köşe oturma grubuna ait.",
+    "en": "The slatted frames have no cushions yet. The L-shaped frame behind belongs to a corner seating group."
+  },
+  "seoFilename": "atolyede-yerde-citali-sezlong-ve-bank-iskeletleri",
+  "tags": {
+    "type": [
+      "şezlong",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

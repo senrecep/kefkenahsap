@@ -1,0 +1,40 @@
+{
+  "source": "Deck ve Zeminler/4283.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çapraz korkuluklu deck, solda kereste traversler",
+    "en": "Cross-braced deck with timber sleepers beside it"
+  },
+  "alt": {
+    "tr": "Çam ağaçları arasında çapraz korkuluklu açık renkli deck; yanda toprağa sıra sıra yerleştirilmiş kereste traversler",
+    "en": "Pale deck with a cross-braced railing among pine trees, with timber sleepers set in rows in the soil beside it"
+  },
+  "caption": {
+    "tr": "Traversler arazinin eğimini basamak gibi kademelendiriyor. Deckin ön yüzü ayaklar üzerinde, açık duruyor.",
+    "en": "The sleepers step the slope of the land. The front face of the deck stands open on its legs."
+  },
+  "seoFilename": "capraz-korkuluklu-deck-solda-kereste-traversler",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "orman / kır"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

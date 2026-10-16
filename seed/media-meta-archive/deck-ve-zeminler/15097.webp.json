@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/15097.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Koyu gri deck üzerinde masa ve hasır sandalyeler",
+    "en": "Table and wicker chairs on a dark grey deck"
+  },
+  "alt": {
+    "tr": "Koyu gri tonlu deck üzerine kurulmuş ahşap yemek masası ve hasır sandalyeler; kenarda dere taşı, arkada çimen",
+    "en": "Timber dining table and wicker chairs set on a dark grey deck, with river pebbles at the edge and lawn behind"
+  },
+  "caption": {
+    "tr": "Deck evin taş cephesine kadar uzanıyor ve masa takımına geniş yer açıyor. Sağdaki yuvarlak taşlar deckin kenarını yumuşatıyor.",
+    "en": "The deck runs up to the stone facade of the house and gives the table set plenty of room. Round stones on the right soften the deck edge."
+  },
+  "seoFilename": "koyu-gri-deck-uzerinde-masa-ve-hasir-sandalyeler",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

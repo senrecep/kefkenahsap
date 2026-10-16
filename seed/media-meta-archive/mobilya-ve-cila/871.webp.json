@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/871.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çıtalı çatılı bar tezgahı ve yemek masaları",
+    "en": "Bar counter under a slatted roof, with dining tables"
+  },
+  "alt": {
+    "tr": "Çıtalı ahşap çatının altında uzanan bar tezgahı; önünde yemek masaları ve açık mavi şemsiye",
+    "en": "A bar counter running under a slatted timber roof, with dining tables and a bright blue parasol in front"
+  },
+  "caption": {
+    "tr": "Tezgah çıtalı çatıyla örtülü, kalın direklerle taşınıyor. Önündeki terasta örtülü masalar ve şemsiye var.",
+    "en": "The counter is covered by a slatted roof carried on thick posts. Covered tables and a parasol stand on the terrace in front."
+  },
+  "seoFilename": "citali-catili-bar-tezgahi-ve-yemek-masalari-semsiye",
+  "tags": {
+    "type": [
+      "bar / tezgâh",
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "ticari mekân",
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

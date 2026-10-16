@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/3712.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar önünde ahşap oturma bölümü",
+    "en": "Timber seating area in front of a stone wall"
+  },
+  "alt": {
+    "tr": "Taş kaplı duvarın önünde, korkuluklu ahşap oturma bölümü ve alçak masa; deck kenarında kademeli basamak bloğu",
+    "en": "Timber seating area with a railing and a low table in front of a stone-clad wall, with a stepped block at the deck edge"
+  },
+  "caption": {
+    "tr": "Oturma bölümü deck zemine yerleşmiş ve arkasında yatay çıtalı korkuluk var. Sağ kenarda ızgaralı havuz kenarı görünüyor.",
+    "en": "The seating area is set on the deck floor with a horizontal-slat railing behind. The grated pool edge shows on the right."
+  },
+  "seoFilename": "tas-duvar-onunde-ahsap-oturma-bolumu-ve-alcak-masa",
+  "tags": {
+    "type": [
+      "deck",
+      "bank",
+      "sehpa"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

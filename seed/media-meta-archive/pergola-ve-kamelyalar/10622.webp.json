@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/10622.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kafes tavanlı ahşap kamelyada L biçimli oturma bankı",
+    "en": "L-shaped bench inside a timber gazebo with a lattice ceiling"
+  },
+  "alt": {
+    "tr": "Kafes düzenli üst bölümü olan ahşap kamelyanın içinde L biçiminde yerleşik bank ve desenli kilit taş zemin",
+    "en": "L-shaped built-in bench inside a timber gazebo with a lattice upper section, on interlocking paving"
+  },
+  "caption": {
+    "tr": "Bank kamelyanın iki kenarını izliyor, korkuluk çıtaları dikey. Dışarıda cadde ve araçlar görünüyor.",
+    "en": "The bench follows two sides of the gazebo with vertical rail slats. A road and vehicles can be seen outside."
+  },
+  "seoFilename": "kafes-tavanli-kamelya-l-biciminde-oturma-banki",
+  "tags": {
+    "type": [
+      "kamelya",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

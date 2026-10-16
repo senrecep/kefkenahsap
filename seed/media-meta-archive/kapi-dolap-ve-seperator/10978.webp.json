@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/10978.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz duvara asılan yatay çıtalı ahşap panel",
+    "en": "Horizontal-slat timber panel hung on a white wall"
+  },
+  "alt": {
+    "tr": "Beyaz sıvalı balkon duvarına asılmış, aralıklı yatay çıtalardan oluşan dikdörtgen açık kahve ahşap panel",
+    "en": "Rectangular light brown timber panel of spaced horizontal slats mounted on a white-rendered balcony wall"
+  },
+  "caption": {
+    "tr": "Panel duvara düz ve tek parça monte edilmiş. Çıta araları hava akışına izin veriyor.",
+    "en": "The panel is mounted flat in a single piece. The gaps between the slats let air pass."
+  },
+  "seoFilename": "beyaz-duvara-asilan-yatay-citali-ahsap-panel",
+  "tags": {
+    "type": [
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "balkon"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

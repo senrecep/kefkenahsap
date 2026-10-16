@@ -1,0 +1,40 @@
+{
+  "source": "Korkuluk ve Cit/881.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çim yanında deck, sandalyeler ve çapraz çıtalı korkuluk",
+    "en": "Deck beside a lawn with chairs and a cross-braced railing"
+  },
+  "alt": {
+    "tr": "Çimlik kenarındaki deck terasın çevresinde sarımsı çapraz çıtalı ahşap korkuluk, içeride ahşap masa ve sandalyeler",
+    "en": "Yellowish cross-braced timber railing around a deck terrace beside a lawn, with timber tables"
+  },
+  "caption": {
+    "tr": "Korkuluk teras alanını çimlikten ayırıyor, içerideki oturma düzeni kafe terasını andırıyor.",
+    "en": "The railing separates the terrace from the lawn, and the seating inside looks like a café terrace."
+  },
+  "seoFilename": "cim-yaninda-deck-uzerinde-sandalyeler-ve-capraz-citali",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

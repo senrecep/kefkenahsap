@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/8969.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "İskeleli gazbeton cephede kaplama altyapısı",
+    "en": "Cladding substructure on a scaffolded aerated-concrete facade"
+  },
+  "alt": {
+    "tr": "Gazbeton bloktan örülmüş çok katlı bir binanın cephesinde iskele ve üzerinde çalışan ustalar",
+    "en": "Scaffolding and workers on the facade of a multi-storey building made of aerated-concrete blocks"
+  },
+  "caption": {
+    "tr": "Dikey çıtalar kaplamanın altyapısını oluşturuyor. İş üst kata doğru ilerliyor.",
+    "en": "The vertical battens form the substructure for the cladding. The work is moving up towards the top floor."
+  },
+  "seoFilename": "gazbeton-duvarli-binada-iskele-uzerinde-ahsap-cita-altyapisi",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

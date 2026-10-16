@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/12340.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Tenteli pergola altında kavisli oturma, masa ve metal sehpa",
+    "en": "Curved seating, table and metal coffee table under a canvas pergola"
+  },
+  "alt": {
+    "tr": "Tenteli pergola altında kavisli minderli oturma, ahşap masa ve ayakları metal bir sehpa, taş zemin",
+    "en": "Curved cushioned seating, a wooden table and a metal-legged coffee table under a canvas pergola, on stone paving"
+  },
+  "caption": {
+    "tr": "Oturma bölümü köşeye yayılıyor, ortada ince demir ayaklı bir sehpa duruyor. Pergolanın kirişleri tenteyle örtülü.",
+    "en": "The seating wraps around the corner with a slim iron-legged coffee table in the middle. The pergola beams are covered with canvas."
+  },
+  "seoFilename": "tenteli-pergola-altinda-kavisli-oturma-sehpa",
+  "tags": {
+    "type": [
+      "pergola",
+      "oturma grubu",
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

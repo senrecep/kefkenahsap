@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/14444.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beton nişte çift kapaklı koyu yatay tahtalı dolap",
+    "en": "Dark double-door horizontal-board cabinet in a concrete niche"
+  },
+  "alt": {
+    "tr": "Beton nişin içinde koyu kahve, yatay tahtalı iki kapaklı ahşap dolap, kapaklarda metal menteşe ve kulp, yanda radyatör",
+    "en": "Dark brown timber cabinet with two horizontally boarded doors in a concrete niche"
+  },
+  "caption": {
+    "tr": "Dolap nişe ölçüyle oturtulmuş ve iki kapaklı. Kapaklar kapalı hâlde düzgün bir yüzey oluşturuyor.",
+    "en": "The cabinet is cut to the niche and has two doors. Closed, they form a clean flat face."
+  },
+  "seoFilename": "beton-niste-cift-kapakli-koyu-yatay-tahtali-dolap",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

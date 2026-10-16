@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/13964.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yatay ahşap çit önünde çakıl dolgulu ahşap çerçeveli zemin ve lamba",
+    "en": "Wood-framed gravel paving and a lamp in front of the horizontal timber fence"
+  },
+  "alt": {
+    "tr": "Alçak yatay ahşap çitin önünde çakıl ve tahta şeritlerle döşenmiş zemin; yanda bahçe lambası, önde çimde yeşil kapak",
+    "en": "Ground laid with gravel and timber strips in front of a low horizontal timber fence"
+  },
+  "caption": {
+    "tr": "Zemin çitin boyunca uzanıyor, çakıl ve tahta şeritleri ahşap bir çerçeveyle ayrılmış. Çitin arkasında yoğun bir selvi sırası var.",
+    "en": "The paving runs along the fence and the gravel and timber strips are separated by a timber frame. A dense row of cypress stands behind the fence."
+  },
+  "seoFilename": "yatay-cit-onunde-cakil-dolgulu-zemin-ve-lamba",
+  "tags": {
+    "type": [
+      "çit",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

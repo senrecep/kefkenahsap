@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/9846.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ev yanında çaprazlı merdiven, yerde kablo",
+    "en": "Cross-braced stairs beside the house, with a cable on the ground"
+  },
+  "alt": {
+    "tr": "Evin yanında çaprazlı korkuluklu ahşap merdiven; beton kenar, yerde kablo ve açık toprak",
+    "en": "Timber stairs with a cross-braced railing beside a house, with a concrete edge, a cable on the ground and bare soil"
+  },
+  "caption": {
+    "tr": "Merdiven beton kenarın üstünden evin duvarı boyunca yükseliyor. Zeminde kablo ve toprak duruyor.",
+    "en": "The stairs rise from the concrete edge along the wall of the house. A cable and soil lie on the ground."
+  },
+  "seoFilename": "ev-yaninda-caprazli-korkuluklu-merdiven-yerde-kablo-beton",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/8751.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Şantiyede bekleyen koyu deck tahtaları ve kereste destesi",
+    "en": "Dark deck boards and a bundle of timber waiting on site"
+  },
+  "alt": {
+    "tr": "Çakıllı zeminde yerde duran koyu deck tahtaları, bağlı kereste destesi ve taş duvar",
+    "en": "Dark deck boards lying on a gravel base, a strapped bundle of timber and a stone wall behind"
+  },
+  "caption": {
+    "tr": "Tahtalar ve çıtalar döşemeden önce sahada bekliyor. Zemin henüz hazırlanıyor.",
+    "en": "Boards and battens wait on site before laying. The ground is still being prepared."
+  },
+  "seoFilename": "santiyede-bekleyen-koyu-deck-tahtalari-kereste",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

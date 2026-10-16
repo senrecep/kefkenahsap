@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/4931.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz kenarında uzun gri tonlu deck yolu",
+    "en": "Long grey-toned deck path beside a pool"
+  },
+  "alt": {
+    "tr": "Izgaralı havuz kenarı boyunca uzanan, gri tonlu uzun deck yolu; çimen kenarı ve üst köşede havuz suyu",
+    "en": "Long grey-toned deck path along a grated pool edge, with a lawn edge and the pool water in the upper corner"
+  },
+  "caption": {
+    "tr": "Tahtalar boyuna döşenmiş ve yüzeyde rögar kapakları kesilmiş. Yol havuzun taş çerçevesine paralel ilerliyor.",
+    "en": "The boards are laid lengthwise and access covers are cut into the surface. The path runs parallel to the stone frame of the pool."
+  },
+  "seoFilename": "havuz-kenarinda-izgarali-uzun-gri-tonlu-deck-yolu",
+  "tags": {
+    "type": [
+      "deck",
+      "yürüyüş yolu"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

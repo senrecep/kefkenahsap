@@ -1,0 +1,37 @@
+{
+  "source": "Pergola ve Kamelyalar/9247.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çıtalı tavanlı dar kabinin içi, lambri duvarlı",
+    "en": "Narrow cabin interior with a slatted ceiling and lambris walls"
+  },
+  "alt": {
+    "tr": "Dar ve yüksek ahşap kabinin içinden bakış; tavan aralıklı çıtalardan, arka duvar lambri, yan panel çıtalı",
+    "en": "Looking into a narrow, tall timber cabin with a ceiling of spaced slats, a lambris back wall and a slatted side panel"
+  },
+  "caption": {
+    "tr": "Tavandaki aralıklar içeriye ışık ve hava alıyor. Yan taraftaki çıtalı panel kabini havadar tutuyor.",
+    "en": "The gaps in the ceiling let in light and air. The slatted side panel keeps the cabin ventilated."
+  },
+  "seoFilename": "citali-tavanli-dar-kabin-ici-lambri-duvar",
+  "tags": {
+    "type": [
+      "duş / soyunma kabini"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

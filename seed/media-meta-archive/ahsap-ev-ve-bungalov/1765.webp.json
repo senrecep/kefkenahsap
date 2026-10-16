@@ -1,0 +1,39 @@
+{
+  "source": "Ahsap Yapilar/1765.webp",
+  "category": "ahsap-ev-ve-bungalov",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sekizgen kamelya yanında balkonlu ahşap ev",
+    "en": "Timber house with balconies beside an octagonal gazebo"
+  },
+  "alt": {
+    "tr": "Taş istinat duvarı ve ahşap çitin arkasında balkonlu ahşap ev ile sekizgen çatılı kamelya",
+    "en": "Timber house with balconies and a gazebo with an octagonal roof behind a stone retaining wall and a timber fence"
+  },
+  "caption": {
+    "tr": "Evin solunda sekizgen çatılı bir kamelya duruyor. Önde taş istinat duvarı ve üzerinde çıtalı çit var.",
+    "en": "To the left of the house stands a gazebo with an octagonal roof. In front are a stone retaining wall and a slatted fence on top of it."
+  },
+  "seoFilename": "sekizgen-kamelya-ve-istinat-duvari-ahsap-ev",
+  "tags": {
+    "type": [
+      "ahşap ev / bungalov",
+      "kamelya",
+      "çit"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

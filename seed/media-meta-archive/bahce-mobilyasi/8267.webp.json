@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/8267.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Koyu deck üzerinde küçük katlanır ahşap masa, yanında çakıl",
+    "en": "Small folding timber table on dark decking beside gravel"
+  },
+  "alt": {
+    "tr": "Koyu ahşap deck zemin ile çimlik arasında, çapraz ayaklı küçük kare katlanır ahşap masa duruyor",
+    "en": "A small square folding timber table with crossed legs stands between dark timber decking and lawn"
+  },
+  "caption": {
+    "tr": "Küçük masa katlanabiliyor, kolayca taşınıyor. Deck üzerinde yan masa veya içecek masası olarak kullanılabilir.",
+    "en": "The small table folds and is easy to carry. On the deck it can serve as a side table or a drinks table."
+  },
+  "seoFilename": "koyu-deck-uzerinde-katlanir-ahsap-masa-cimde-cakil",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

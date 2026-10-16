@@ -1,0 +1,41 @@
+{
+  "source": "Pergola ve Kamelyalar/1222.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Palmiyeli bahçede çapraz korkuluklu platform ve çatılı pergola",
+    "en": "Palm garden platform with an X-braced rail and a roofed pergola"
+  },
+  "alt": {
+    "tr": "Palmiyenin yanında taş duvar üstünde çapraz çıtalı korkuluklu ahşap platform ve çatılı pergolalar",
+    "en": "Timber platform on a stone wall beside a palm tree with an X-braced railing and roofed pergolas"
+  },
+  "caption": {
+    "tr": "Platform taş duvarın üstünde yükseliyor, arkada iki pergola çatısı sıralanıyor. Duvarın önünde sarkan yeşillik var.",
+    "en": "The platform rises above the stone wall with two pergola roofs lined up behind. Trailing greenery hangs over the wall."
+  },
+  "seoFilename": "palmiyeli-bahcede-capraz-korkuluklu-platform-pergola",
+  "tags": {
+    "type": [
+      "pergola",
+      "korkuluk",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,39 @@
+{
+  "source": "Korkuluk ve Cit/6416.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yığılmış kereste ve ahşap kasalar, arkada direkler",
+    "en": "Stacked timber and crates with posts behind"
+  },
+  "alt": {
+    "tr": "Çimen üzerine yığılmış tahta kasalar ve kereste, arkada park halinde bir araç ve toprağa dikili ince direkler",
+    "en": "Wooden crates and timber stacked on grass, with a parked vehicle and slender posts set in the soil behind"
+  },
+  "caption": {
+    "tr": "Malzeme sahaya getirilmiş, direkler arkada sıra halinde dikilmiş.",
+    "en": "The materials have been brought to site, and the posts are set in a row behind."
+  },
+  "seoFilename": "yigilmis-ahsap-kereste-ve-kasalar-arkada-direkler",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.35
+}

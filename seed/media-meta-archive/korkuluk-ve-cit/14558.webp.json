@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/14558.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş sütunlar arasında beyaz piket kapı",
+    "en": "White picket gate between stone posts"
+  },
+  "alt": {
+    "tr": "İki taş sütun arasına oturan beyaz boyalı çıtalı bahçe kapısı, arkada defne çalısı ve ev girişi, önde küp taş yol",
+    "en": "White-painted picket garden gate set between two stone posts, with a laurel bush and a house entrance behind"
+  },
+  "caption": {
+    "tr": "Kapı iki kanatlı ve çıtaları üstte hafif kavisli. Eşiğin önünde ızgara var.",
+    "en": "The gate has two leaves and slightly curved tops. A drain grille runs in front of the threshold."
+  },
+  "seoFilename": "tas-sutunlar-arasinda-beyaz-piket-bahce-kapisi",
+  "tags": {
+    "type": [
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

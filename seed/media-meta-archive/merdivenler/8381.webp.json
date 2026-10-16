@@ -1,0 +1,39 @@
+{
+  "source": "Merdivenler/8381.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Merdiven altından kiriş ve destek direği",
+    "en": "Stringer and support post seen from under the stairs"
+  },
+  "alt": {
+    "tr": "Beyaz duvarın yanında merdivenin altından görünen kiriş, basamak altları ve destek direği",
+    "en": "The stringer, the undersides of the steps and a support post seen from beneath a staircase beside a white wall"
+  },
+  "caption": {
+    "tr": "Alttan bakınca eğimli kirişin basamakları nasıl taşıdığı görülüyor. Kirişi tek bir direk destekliyor.",
+    "en": "From below you can see how the sloping stringer carries the steps. A single post supports the stringer."
+  },
+  "seoFilename": "merdiven-altindan-kiris-ve-destek-diregi-beyaz-duvar",
+  "tags": {
+    "type": [
+      "merdiven"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

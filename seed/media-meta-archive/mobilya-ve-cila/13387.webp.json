@@ -1,0 +1,36 @@
+{
+  "source": "Ireko-Teak/13387.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Şeritli bar tezgahı, tabureler ve deck-taş geçişi",
+    "en": "Strip-clad bar counter, stools and the deck-to-stone transition"
+  },
+  "alt": {
+    "tr": "Ahşap şeritlerle kaplı bar tezgahı, iki yüksek taburesi ve deck zeminin traverten zemine geçtiği yer, yakın çekim",
+    "en": "Close-up of a bar counter clad in timber strips"
+  },
+  "caption": {
+    "tr": "Tezgahın ön yüzü dik ahşap şeritlerle kaplı. Zeminde deck tahtaları taş döşemeye bağlanıyor.",
+    "en": "The front of the counter is clad in upright timber strips. On the floor the deck boards meet the stone paving."
+  },
+  "seoFilename": "seritli-bar-tezgahi-tabureler-ve-deck-tas-gecisi",
+  "tags": {
+    "type": [
+      "bar / tezgâh",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

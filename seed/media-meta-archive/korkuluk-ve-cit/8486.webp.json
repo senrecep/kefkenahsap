@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/8486.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çalılar arasında dikey çıtalı küçük kırmızı ahşap kapı",
+    "en": "Small red timber gate of vertical slats among shrubs"
+  },
+  "alt": {
+    "tr": "Selvi ve saksı bitkisi arasında duran, dikey çıtalı bordo-kırmızı boyalı küçük ahşap bahçe kapısı; üstte paslanmaz mandal",
+    "en": "A small burgundy-red painted vertical-slat timber garden gate standing between conifers and a potted plant"
+  },
+  "caption": {
+    "tr": "Kapı alçak ve dar, dikey çıtalar iki yatay kirişe bağlı. Menteşeler beton zemine metal ayakla sabitlenmiş.",
+    "en": "The gate is low and narrow with its vertical slats tied to two horizontal rails. The hinges are fixed to the concrete floor with metal feet."
+  },
+  "seoFilename": "calilar-arasinda-dikey-citali-kucuk-kirmizi-kapi",
+  "tags": {
+    "type": [
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

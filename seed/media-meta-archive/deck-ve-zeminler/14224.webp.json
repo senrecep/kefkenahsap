@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14224.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Izgaralı kanal yanında koyu yağlanmış deck",
+    "en": "Dark-oiled deck beside the grated channel"
+  },
+  "alt": {
+    "tr": "Havuz kenarındaki beyaz ızgaralı kanalın yanında, koyu kırmızı kahverengiye yağlanmış deck; köşede yağlanmamış açık bir parça",
+    "en": "Deck oiled to a dark red-brown beside a white-grated channel at the pool edge, with one unoiled pale patch in the corner"
+  },
+  "caption": {
+    "tr": "Yağ sürülen tahtaların rengi derinleşmiş. Sol alt köşede henüz işlenmemiş açık tonlu tahtalar kalmış.",
+    "en": "The oiled boards have deepened in colour. Pale, untreated boards remain in the lower-left corner."
+  },
+  "seoFilename": "izgarali-kanal-yaninda-koyu-yaglanmis-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

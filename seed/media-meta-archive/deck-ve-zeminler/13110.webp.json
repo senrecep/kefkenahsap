@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/13110.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Eski deck üzerinde ahşap bank, sandalyeler ve sehpa",
+    "en": "Timber bench, chairs and side table on an old deck"
+  },
+  "alt": {
+    "tr": "Kahverengi deck üzerinde ahşap bank, sandalyeler ve küçük sehpa; ön kenarda köpek ve yıpranmış deck kenarı",
+    "en": "Timber bench, chairs and a small side table on a brown deck, with a dog and a worn deck edge in front"
+  },
+  "caption": {
+    "tr": "Deck'in ön kenarı kırılmış ve yıpranmış, yan tarafta çakıl dolgusu görünüyor. Oturma alanı yine de kullanımda.",
+    "en": "The front edge of the deck is broken and worn, with gravel fill showing at the side. The seating area is still in use."
+  },
+  "seoFilename": "eski-deck-uzerinde-ahsap-bank-sandalyeler-ve-sehpa",
+  "tags": {
+    "type": [
+      "deck",
+      "oturma grubu",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

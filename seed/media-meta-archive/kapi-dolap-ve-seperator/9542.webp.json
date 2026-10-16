@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/9542.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çift kapaklı deponun paslanmaz menteşe ve kulpları",
+    "en": "Stainless hinges and handles on a double-door store"
+  },
+  "alt": {
+    "tr": "Çift kapaklı ahşap deponun yakın çekimi: yatay tahtalı kapaklar, paslanmaz menteşeler ve alt kısımda iki kulp",
+    "en": "Close-up of a double-door timber store with horizontal-board doors, stainless hinges and two handles along the lower edge"
+  },
+  "caption": {
+    "tr": "Kapaklar yatay tahtalı, menteşe ve kulplar paslanmaz çelik. Vernik ahşabın damarını koyulaştırmış.",
+    "en": "The doors are horizontally boarded, with stainless steel hinges and handles. The varnish has deepened the grain."
+  },
+  "seoFilename": "cift-kapakli-depo-paslanmaz-mentese-kulp",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

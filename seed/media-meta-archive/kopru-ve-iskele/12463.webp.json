@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/12463.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimde uzun bir hat boyunca sıralı kırmızı-kahve basamak plakaları",
+    "en": "Red-brown stepping slabs in a long line across the lawn"
+  },
+  "alt": {
+    "tr": "Yeşil çimin ortasında, ileriye doğru küçülen perspektifle sıralanmış kırmızımsı kahve ahşap basamak plakaları",
+    "en": "Reddish-brown timber stepping slabs set out in a line receding across green lawn"
+  },
+  "caption": {
+    "tr": "Plakalar eşit aralıkla dizilmiş, her biri birkaç tahtadan oluşuyor. Yol çimin ortasından düz gidiyor.",
+    "en": "The slabs are evenly spaced and each is made of several boards. The path runs straight across the middle of the grass."
+  },
+  "seoFilename": "cimde-uzun-hat-sirali-kirmizi-kahve-basamak",
+  "tags": {
+    "type": [
+      "yürüyüş yolu"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

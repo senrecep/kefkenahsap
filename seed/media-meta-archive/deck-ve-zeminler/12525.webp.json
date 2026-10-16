@@ -1,0 +1,40 @@
+{
+  "source": "Deck ve Zeminler/12525.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş kolon ve çalı yanında deck ile ahşap basamak",
+    "en": "Deck with a timber step beside a stone column and shrub"
+  },
+  "alt": {
+    "tr": "Taş kolon ve çalının yanında açık renkli deck, yan tarafta ahşap basamak, arkada çit ve pembe bina",
+    "en": "Pale deck beside a stone column and shrub, with a timber step at the side, a hedge and a pink building behind"
+  },
+  "caption": {
+    "tr": "Deck yüzeyi düz ve geniş, tahtalar tek yönde. Basamak deck'ten bahçeye inişi kolaylaştırıyor.",
+    "en": "The deck surface is flat and broad with the boards running one way. The step makes it easier to come down into the garden."
+  },
+  "seoFilename": "tas-kolon-ve-cali-yaninda-deck-ile-ahsap-basamak",
+  "tags": {
+    "type": [
+      "deck",
+      "merdiven"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

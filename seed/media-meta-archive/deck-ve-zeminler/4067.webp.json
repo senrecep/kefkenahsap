@@ -1,0 +1,40 @@
+{
+  "source": "Deck ve Zeminler/4067.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çapraz desenli korkuluk ve deck zemini",
+    "en": "Cross-patterned railing and deck floor"
+  },
+  "alt": {
+    "tr": "Çam ağaçları ve uzaktaki evlerin önünde, X desenli ahşap korkuluğa sahip deck zemini; sol kenarda merdiven ve tırabzan",
+    "en": "Deck floor with an X-patterned timber railing in front of pine trees and distant houses, with a stair"
+  },
+  "caption": {
+    "tr": "Korkuluğun çaprazları düzenli bir desen oluşturuyor. Deck tahtaları ağaç gölgeleriyle desenli görünüyor.",
+    "en": "The braces of the railing form a regular pattern. Tree shadows give the deck boards a mottled look."
+  },
+  "seoFilename": "capraz-desenli-ahsap-korkuluk-ve-deck-zemini-cam-ve-evler",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "orman / kır"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

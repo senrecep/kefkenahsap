@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/11323.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bahçeye inen merdiven, üstten görünüm",
+    "en": "Stairs down to the garden, view from above"
+  },
+  "alt": {
+    "tr": "Üst sahanlıktan bahçeye inen ahşap merdiven; çaprazlı korkuluk, selvi çitleri, çimlik ve uzakta evler",
+    "en": "Timber stairs going down to the garden from the top landing, with a cross-braced railing, cypress hedges"
+  },
+  "caption": {
+    "tr": "Korkuluğun çaprazları basamakları iki yandan çerçeveliyor. Aşağıda çimlik ve selvi sırası var.",
+    "en": "The railing's cross braces frame the steps on both sides. A lawn and a row of cypresses lie below."
+  },
+  "seoFilename": "bahceye-inen-merdiven-ustten-cim-selvi-trambolin",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

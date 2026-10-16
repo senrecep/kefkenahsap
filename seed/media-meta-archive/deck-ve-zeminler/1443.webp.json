@@ -1,0 +1,40 @@
+{
+  "source": "Deck ve Zeminler/1443.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Geniş açık renkli deck ve X çıtalı korkuluk",
+    "en": "Wide pale deck with an X-braced railing"
+  },
+  "alt": {
+    "tr": "Uzaktaki yerleşime bakan, tahtaları uzun yönde döşenmiş geniş deck; kenarında X biçiminde çapraz çıtalı ahşap korkuluk",
+    "en": "Broad deck with boards laid lengthwise, facing a distant settlement, with a timber railing braced in an X pattern at its edge"
+  },
+  "caption": {
+    "tr": "Çam ağaçları deckin arkasında sıralanıyor. Korkuluk deckin üç kenarını çevreliyor.",
+    "en": "Pine trees line up behind the deck. The railing runs around the edges of the deck."
+  },
+  "seoFilename": "genis-acik-renkli-deck-ve-x-citali-korkuluk",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

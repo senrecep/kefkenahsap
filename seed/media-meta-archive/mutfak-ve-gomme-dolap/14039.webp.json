@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/14039.webp",
+  "category": "mutfak-ve-gomme-dolap",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ofiste çekmeceli konsol dolap, önünde siyah mermer masa",
+    "en": "Drawer console cabinet in an office, with a black marble table"
+  },
+  "alt": {
+    "tr": "Ofiste duvar önünde çekmeceli ve kapaklı vernikli ahşap konsol dolap; önde siyah mermer sehpa, arkada tuğla duvar",
+    "en": "A varnished timber console cabinet with drawers and doors against a wall in an office"
+  },
+  "caption": {
+    "tr": "Dolabın üstünde sıralı çekmeceler, altında kapaklar var. Önündeki siyah mermer masa ve tuğla duvar ofise sıcak bir hava veriyor.",
+    "en": "The cabinet has a row of drawers above and doors below. The black marble table in front and the brick wall give the office a warm feel."
+  },
+  "seoFilename": "ofiste-cekmeceli-ahsap-konsol-dolap-siyah-mermer-masa",
+  "tags": {
+    "type": [
+      "gömme dolap / gardırop"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

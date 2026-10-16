@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/10614.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Üstten ahşap merdiven ve taş döşeme",
+    "en": "Timber stairs and stone paving seen from above"
+  },
+  "alt": {
+    "tr": "Üstten bakışla ahşap merdiven, çaprazlı korkuluk ve taş döşeme; yanda selvi çitleri",
+    "en": "Top-down view of timber stairs, cross-braced railing and stone paving, with cypress hedges at the side"
+  },
+  "caption": {
+    "tr": "Taş döşemeden aşağı inen basamaklar yukarıdan görülüyor. Kalın direkler korkuluğu taşıyor.",
+    "en": "The steps going down from the stone paving are seen from above. Thick posts carry the railing."
+  },
+  "seoFilename": "ustten-ahsap-merdiven-caprazli-korkuluk-tas-doseme",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

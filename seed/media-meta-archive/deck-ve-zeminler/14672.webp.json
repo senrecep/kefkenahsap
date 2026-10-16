@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14672.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Gri taş döşeme kenarında yeni deck",
+    "en": "New deck beside grey stone paving"
+  },
+  "alt": {
+    "tr": "Bina duvarının önünde, gri taş zemine kademeli bir hatla birleşen yeni döşenmiş açık renkli deck",
+    "en": "Newly laid pale deck in front of a building wall, meeting grey stone flooring along a stepped edge"
+  },
+  "caption": {
+    "tr": "Tahtalar taş plakaların kesim hattına göre basamak basamak kesilmiş. Uzakta bir usta diz çökmüş çalışıyor.",
+    "en": "The boards are cut in steps to follow the line of the stone slabs. A craftsman kneels working in the distance."
+  },
+  "seoFilename": "gri-tas-doseme-kenarinda-yeni-acik-renkli-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14624.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapı önünde açık kahverengi deck",
+    "en": "Light brown deck in front of a glass door"
+  },
+  "alt": {
+    "tr": "Beyaz çerçeveli sürme cam kapının önüne döşenmiş açık kahverengi deck; zeminde küçük bir boya kutusu",
+    "en": "Light brown deck laid in front of a white-framed sliding glass door, with a small paint tin on the floor"
+  },
+  "caption": {
+    "tr": "Tahtalar çapraz bir yönde döşenmiş ve henüz son kat uygulanmamış görünüyor. Alt kenarda bir boya kutusunun ağzı seçiliyor.",
+    "en": "The boards run on a diagonal and the final coat does not seem to be on yet. The rim of a paint tin shows at the bottom edge."
+  },
+  "seoFilename": "cam-kapi-onunde-acik-kahverengi-deck-boya-kutusu",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/367.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deniz kenarında çimde ahşap kamelya, içinde kenar bankları ve zemin platformu",
+    "en": "Seafront timber gazebo on the grass with edge benches and a floor platform"
+  },
+  "alt": {
+    "tr": "Deniz kıyısında çimde ahşap kamelya, içinde kenarları saran bankları ve yükseltilmiş zemin platformu",
+    "en": "Timber gazebo on grass by the sea, with benches around the edges and a raised floor platform"
+  },
+  "caption": {
+    "tr": "Kamelya sade, düz bir çatıyla kaplı ve açık kenarlı. Bankları zemin platformunun çevresinde.",
+    "en": "The gazebo has a plain pitched roof and open sides. Its benches run around the floor platform."
+  },
+  "seoFilename": "denizde-cimde-ahsap-kamelya-kenar-bankleri-platform",
+  "tags": {
+    "type": [
+      "kamelya",
+      "bank",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

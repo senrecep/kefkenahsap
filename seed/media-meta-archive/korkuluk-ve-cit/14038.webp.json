@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14038.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Giriş sundurmasında ızgara paravanlı vernikli ahşap çiçeklik",
+    "en": "Varnished timber planter with a lattice screen on an entrance porch"
+  },
+  "alt": {
+    "tr": "Terakota karolu giriş sundurmasında, ahşap kare gözlü ızgara paravanlı, altta yatay tahtalı çiçeklik kutusu",
+    "en": "Timber planter with a square-mesh lattice screen and a boarded box below, on an entrance porch with terracotta tiles"
+  },
+  "caption": {
+    "tr": "Paravan sundurmanın açıklığına oturuyor, çiçeklik kutusu altında duruyor. Kafesin boşluklarından arkadaki merdiven ve çatı görünüyor.",
+    "en": "The screen fits the opening of the porch with the planter box below it. Through the gaps in the lattice you can see the stairs and roof beyond."
+  },
+  "seoFilename": "giris-sundurmasinda-izgara-paravanli-cicekli",
+  "tags": {
+    "type": [
+      "kafes / paravan",
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

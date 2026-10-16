@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/13541.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sarmaşıklı duvar önünde parlak cilalı deck zemini",
+    "en": "Glossy varnished decking in front of an ivy-covered wall"
+  },
+  "alt": {
+    "tr": "Sarmaşıklı duvarın önünde parlak cilalı turuncu kahverengi deck zemini, duvarda süs saksıları",
+    "en": "Glossy varnished orange-brown decking in front of an ivy-covered wall, with decorative pots on the wall"
+  },
+  "caption": {
+    "tr": "Cila uygulanan deck, avlunun dar zeminini tek renkte topluyor. Duvardaki ayna ve saksılar mekâna sıcak bir ton katıyor.",
+    "en": "The varnish brings the narrow courtyard floor together in one colour. The mirror and pots on the wall give the space a warm note."
+  },
+  "seoFilename": "sarmasikli-duvar-onunde-parlak-cilali-deck-zemini",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

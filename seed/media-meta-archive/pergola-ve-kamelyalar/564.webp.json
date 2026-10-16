@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/564.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deniz yolu kenarında çatılı kamelya, beyaz tabanlı bank oturakları",
+    "en": "Roofed gazebo beside a seafront road with white-based bench seating"
+  },
+  "alt": {
+    "tr": "Deniz yolu kenarında tahta çatılı kamelya, beyaz sıvalı tabanın üzerinde ahşap bank oturakları, arkada deniz",
+    "en": "Boarded-roof gazebo beside a seafront road, with timber bench seats on a white rendered base and the sea behind"
+  },
+  "caption": {
+    "tr": "Bank oturakları beyaz taban üzerine ahşap tahtayla kaplanıyor. Çatı iki eğimli yüzeyle denize bakıyor.",
+    "en": "The bench seats are being covered with timber boards on the white base. The roof faces the sea with two sloping faces."
+  },
+  "seoFilename": "deniz-yolu-kenarinda-catili-kamelya-beyaz-tabanli-bank",
+  "tags": {
+    "type": [
+      "kamelya",
+      "bank"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

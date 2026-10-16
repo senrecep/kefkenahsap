@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/13559.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar üstünde korkuluk ve çıtalı paravan",
+    "en": "Railing and slatted screen on top of a stone wall"
+  },
+  "alt": {
+    "tr": "Taş duvarın üstünde turuncu tonlu dikey çıtalı korkuluk ve yanında yatay çıtalı yüksek paravan",
+    "en": "Orange-toned vertical-slat railing on a stone wall, with a tall horizontal-slat screen beside it"
+  },
+  "caption": {
+    "tr": "Alçak korkuluk bahçe seviyesini ayırıyor, yanındaki paravan bina cephesine doğru yükseliyor.",
+    "en": "The low railing marks the garden level, and the screen next to it rises towards the building."
+  },
+  "seoFilename": "tas-duvar-ustunde-korkuluk-ve-citali-paravan",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

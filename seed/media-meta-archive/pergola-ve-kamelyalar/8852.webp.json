@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/8852.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çatı terasında dizili emprenyeli kirişler, bina köşesi ve bir sandalye",
+    "en": "Pressure-treated beams in a row on a roof terrace with a chair"
+  },
+  "alt": {
+    "tr": "Çatı terasında sıralanan emprenyeli çam kirişler, bina köşesi, duvar apliği ve bir ahşap sandalye",
+    "en": "Pressure-treated pine beams laid in a row on a roof terrace, with a building corner, a wall light and a wooden chair"
+  },
+  "caption": {
+    "tr": "Kirişler terasın kenar duvarına oturuyor, araları seyrek. Köşede bir sandalye duruyor.",
+    "en": "The beams rest on the terrace edge wall with wide gaps between them. A chair stands in the corner."
+  },
+  "seoFilename": "cati-terasinda-dizili-emprenyeli-kirisler-sandalye",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

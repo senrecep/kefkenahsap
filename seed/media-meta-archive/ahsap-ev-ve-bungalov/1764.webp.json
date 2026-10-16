@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/1764.webp",
+  "category": "ahsap-ev-ve-bungalov",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvarlı arazide ahşap ev ve kamelya",
+    "en": "Timber house and gazebo on land with a stone wall"
+  },
+  "alt": {
+    "tr": "Taş duvarla çevrili arazide iki katlı ahşap ev, solunda kamelya ve aşağıya inen basamaklar",
+    "en": "Two-storey timber house on land edged by a stone wall, with a gazebo on its left and steps leading down"
+  },
+  "caption": {
+    "tr": "Arazi taş duvarla çevrilmiş. Ahşap ev ile yanındaki kamelya aynı bahçenin içinde duruyor.",
+    "en": "The land is edged by a stone wall. The timber house and the gazebo beside it stand in the same garden."
+  },
+  "seoFilename": "tas-duvarli-arazide-ahsap-ev-ve-kamelya",
+  "tags": {
+    "type": [
+      "ahşap ev / bungalov",
+      "kamelya"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

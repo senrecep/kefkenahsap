@@ -1,0 +1,33 @@
+{
+  "source": "Deck ve Zeminler/14063.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Şerit metreyle ölçülen ağaç kütüğü dilimi",
+    "en": "Log slice measured with a tape"
+  },
+  "alt": {
+    "tr": "Tezgâhta duran iki kabuklu ağaç kütüğü diliminin üstüne serilmiş sarı şerit metre",
+    "en": "Two bark-edged log slices on a workbench with a yellow measuring tape laid across one"
+  },
+  "caption": {
+    "tr": "Deck ile doğrudan ilgisi görünmüyor. Kesit yüzeyindeki yıllık halkalar ve kabuk kenarı net seçiliyor.",
+    "en": "No direct link to decking is visible. The growth rings on the cut face and the bark edge are clearly visible."
+  },
+  "seoFilename": "kabuklu-agac-kutugu-dilimleri-metre",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.25
+}

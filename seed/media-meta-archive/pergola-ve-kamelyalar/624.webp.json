@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/624.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Göl kenarı parkta koyu ahşap pergola, L biçimli banklar ve taş zemin",
+    "en": "Dark timber pergola in a lakeside park with L-shaped benches and stone paving"
+  },
+  "alt": {
+    "tr": "Göl kenarındaki parkta koyu vernikli ahşap pergola, köşede L biçimli bankları ve taş döşeme; arkada göl ve uzak binalar",
+    "en": "Dark varnished timber pergola in a lakeside park with L-shaped benches in the corner, stone paving, and the lake behind"
+  },
+  "caption": {
+    "tr": "Pergola göle bakan bir köşede duruyor, banklar iki yanı çeviriyor. Kirişler uçlarında kesik şekilli.",
+    "en": "The pergola stands on a corner facing the lake with benches along two sides. The beam ends are cut to a shaped profile."
+  },
+  "seoFilename": "gol-kenari-parkta-koyu-pergola-l-biciminde-banklar",
+  "tags": {
+    "type": [
+      "pergola",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

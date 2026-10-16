@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/13262.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz cam çiti boyunca eğrisel koyu deck ve çimen kenarı",
+    "en": "Curving dark deck along the pool's glass fence beside the lawn"
+  },
+  "alt": {
+    "tr": "Havuz cam çiti boyunca eğrisel uzanan koyu kırmızı kahverengi deck ve çimen kenarı",
+    "en": "Dark red-brown deck curving along the glass fence of a pool, with a lawn edge beside it"
+  },
+  "caption": {
+    "tr": "Deck havuz taşının dışında dar bir yürüme şeridi oluşturuyor. Eğri boyunca tahtalar yelpaze gibi açılıyor.",
+    "en": "The deck makes a narrow walking strip outside the pool coping. Along the curve the boards fan out."
+  },
+  "seoFilename": "havuz-cam-citi-boyunca-egrisel-koyu-deck-cimen-kenari",
+  "tags": {
+    "type": [
+      "deck",
+      "yürüyüş yolu"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı",
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

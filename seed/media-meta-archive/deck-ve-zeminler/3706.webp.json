@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/3706.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deck üzerinde alçak masa ve köşe bank",
+    "en": "Low table and corner bench on the deck"
+  },
+  "alt": {
+    "tr": "Islak parlayan deck üzerinde, korkuluklu bir köşe bankın önüne yerleştirilmiş alçak ahşap masa",
+    "en": "Low timber table set in front of a corner bench with a railing back on a deck shining wet"
+  },
+  "caption": {
+    "tr": "Bankın sırtlığı dikey çıtalardan yapılmış ve köşeden dönüyor. Deck tahtaları çapraz bir desenle döşenmiş.",
+    "en": "The bench back is made of vertical slats and turns at the corner. The deck boards are laid in a diagonal pattern."
+  },
+  "seoFilename": "deck-uzerinde-ahsap-alcak-masa-ve-korkuluklu-bank-takimi",
+  "tags": {
+    "type": [
+      "deck",
+      "bank",
+      "sehpa"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

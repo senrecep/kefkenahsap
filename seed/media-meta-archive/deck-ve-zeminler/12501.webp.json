@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12501.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ortada gri metal profil uzanan deck çerçevesi",
+    "en": "Deck frame with a grey metal profile across the middle"
+  },
+  "alt": {
+    "tr": "Toprak üzerine kurulmuş ahşap deck çerçevesi ve ortadan uzanan gri metal profil",
+    "en": "Timber deck frame laid on soil with a grey metal profile running across the middle"
+  },
+  "caption": {
+    "tr": "Çerçevenin içinde birkaç ara kiriş var, metal profil de bunlara paralel uzanıyor. Arka kenarda malzeme yığını duruyor.",
+    "en": "There are a few cross joists inside the frame, and the metal profile lies parallel to them. A pile of material stands at the back."
+  },
+  "seoFilename": "ortada-gri-metal-profil-uzanan-deck-cercevesi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

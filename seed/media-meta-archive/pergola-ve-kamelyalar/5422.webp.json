@@ -1,0 +1,41 @@
+{
+  "source": "Pergola ve Kamelyalar/5422.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deniz kıyısında çok yüzeyli çatılı ahşap kamelya, deck ve piknik masası",
+    "en": "Seafront timber gazebo with a multi-faced roof, a deck and a picnic table"
+  },
+  "alt": {
+    "tr": "Deniz kıyısında çok yüzeyli tahta çatılı açık ahşap kamelya, ahşap deck ve piknik masası, arkada kayalık ve beyaz evler",
+    "en": "Open timber gazebo on the seafront with a multi-faced boarded roof, a timber deck and a picnic table, with rocks behind"
+  },
+  "caption": {
+    "tr": "Çatı birkaç eğimli yüzeyden oluşuyor ve kenarlar açık. Deck suya bakan bir kenara kadar uzanıyor.",
+    "en": "The roof is made of several sloping faces and the sides are open. The deck reaches a water-facing edge."
+  },
+  "seoFilename": "denizde-cok-yuzeyli-catili-ahsap-kamelya-deck-piknik",
+  "tags": {
+    "type": [
+      "kamelya",
+      "deck",
+      "piknik masası"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

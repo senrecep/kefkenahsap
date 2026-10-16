@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/5109.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Toprak üzerinde yeni dikdörtgen deck",
+    "en": "New rectangular deck on soil"
+  },
+  "alt": {
+    "tr": "Toprak zeminde yatan, tahtaları boyuna döşenmiş yeni açık renkli dikdörtgen deck; arkada taş duvar",
+    "en": "New pale rectangular deck with lengthwise boards lying on soil, with a stone wall behind"
+  },
+  "caption": {
+    "tr": "Tahtalar eşit aralıkla sıralanmış ve yüzey henüz işlenmemiş. Deckin etrafında toprak ve küçük taşlar duruyor.",
+    "en": "The boards are evenly spaced and the surface has not been finished yet. Soil and small stones lie around the deck."
+  },
+  "seoFilename": "toprak-uzerinde-yeni-acik-renkli-dikdortgen-deck-ve-tas",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

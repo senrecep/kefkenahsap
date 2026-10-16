@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/9029.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kanallı deck tahtalarının profili ve renk geçişi",
+    "en": "Profile and colour shift of grooved deck boards"
+  },
+  "alt": {
+    "tr": "Üst üste duran kanallı deck tahtalarının yan profili, balık sırtı gibi sıralı oluklar ve açık turuncu tonlu damar",
+    "en": "Side profile of stacked grooved deck boards, with rows of fine ridges and light orange grain"
+  },
+  "caption": {
+    "tr": "Yüzeydeki oluklar kaymayı azaltmak için açılır. Tahtanın damarı ve rengi yakından seçiliyor.",
+    "en": "The grooves in the surface are cut for grip. The grain and colour of the board show up close."
+  },
+  "seoFilename": "kanalli-deck-tahtalarinin-profili-renk-gecisi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "iroko"
+    ],
+    "setting": [],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

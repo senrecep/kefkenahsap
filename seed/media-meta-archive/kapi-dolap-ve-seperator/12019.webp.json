@@ -1,0 +1,39 @@
+{
+  "source": "Ireko-Teak/12019.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölye masasında menteşeli iroko kapak",
+    "en": "Hinged iroko lid on a workshop bench"
+  },
+  "alt": {
+    "tr": "Atölye masasının üzerinde, kızıl kahve cilalı çıtalı ve menteşeli bir kapak parçası, yanında ikinci bir parça",
+    "en": "Reddish-brown polished slatted lid with a hinge lying on a workshop bench, with a second piece beside it"
+  },
+  "caption": {
+    "tr": "Kapak çıtalar yan yana sıralanarak yapılmış, menteşe yerine takılmış. Cila renk derinliği veriyor.",
+    "en": "The lid is made of slats set side by side and the hinge is already fitted. The polish adds depth of colour."
+  },
+  "seoFilename": "atolye-masasinda-mentesele-iroko-kapak",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

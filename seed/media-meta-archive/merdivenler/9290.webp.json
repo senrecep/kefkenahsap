@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/9290.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çaprazlı korkuluk ve basamaklar, pembe duvar önünde",
+    "en": "Cross-braced railing and steps in front of a pink wall"
+  },
+  "alt": {
+    "tr": "Pembe boyalı duvarın önünde çaprazlı korkuluklu ahşap merdiven; ilk basamak çimde duruyor",
+    "en": "Timber stairs with a cross-braced railing in front of a pink painted wall, with the first step on the grass"
+  },
+  "caption": {
+    "tr": "Merdiven pembe sıvalı düz bir duvarın önünde yükseliyor. Korkuluğun çaprazları basamaklarla aynı eğimde.",
+    "en": "The stairs rise in front of a plain pink rendered wall. The railing's cross braces follow the slope of the steps."
+  },
+  "seoFilename": "caprazli-korkuluk-ve-basamaklar-pembe-duvar-onunde",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

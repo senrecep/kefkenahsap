@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/1552.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yeşil boyalı yatay çıtalı ahşap çit, metal dikmelerle",
+    "en": "Green-painted horizontal-slat timber fence with metal posts"
+  },
+  "alt": {
+    "tr": "Gri zeminde, yeşil boyalı metal dikmelere sabitlenmiş uzun yatay çıtalı ahşap çit; arkada çıplak ağaçlar ve gökyüzü",
+    "en": "A long horizontal-slat timber fence fixed to green-painted metal posts on grey paving, with bare trees and sky behind"
+  },
+  "caption": {
+    "tr": "Çıtalar dikmelerin önüne yan yana, eşit aralıkla sıralanıyor. Çit alçak bir köşe oluşturarak sağa doğru ilerliyor.",
+    "en": "The slats are fixed one above the other in front of the posts at even gaps. The fence runs on to the right, forming a low corner."
+  },
+  "seoFilename": "yesil-boyali-yatay-citali-ahsap-cit-metal-dikmeler",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

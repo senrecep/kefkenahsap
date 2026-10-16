@@ -1,0 +1,40 @@
+{
+  "source": "Deck ve Zeminler/4061.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çapraz korkuluklu geniş deck ve basamaklar",
+    "en": "Wide deck with cross-braced railing and steps"
+  },
+  "alt": {
+    "tr": "Çam ağaçları arasında, çapraz çıtalı korkuluklu geniş açık renkli deck; arkada basamaklar ve sol altta havuz kenarı",
+    "en": "Wide pale deck among pine trees with a cross-braced railing, steps behind and the pool edge at lower left"
+  },
+  "caption": {
+    "tr": "Deck iki kademeli ve basamaklar üst bölüme çıkıyor. Ağaç gölgeleri tahtaların üzerine düşüyor.",
+    "en": "The deck has two levels and steps lead up to the upper part. Tree shadows fall across the boards."
+  },
+  "seoFilename": "capraz-korkuluklu-genis-deck-basamaklar-ve-havuz-kenari",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "orman / kır"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

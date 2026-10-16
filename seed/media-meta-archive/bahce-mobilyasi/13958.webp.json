@@ -1,0 +1,42 @@
+{
+  "source": "Ireko-Teak/13958.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bej fayans terasta ahşap koltuk takımı ve sehpa, arkada bahçe",
+    "en": "Timber armchair set and table on a beige tiled terrace with the garden behind"
+  },
+  "alt": {
+    "tr": "Bej fayans döşeli terasta, kolçaklı ahşap koltuklar, bir bank ve çıtalı alçak sehpa bir arada duruyor",
+    "en": "On a beige-tiled terrace, timber armchairs with arms, a bench and a low slatted table stand together"
+  },
+  "caption": {
+    "tr": "Takım terasın ortasında, birbirine bakacak biçimde yerleştirilmiş. Doğal ahşap tonu bej zeminle uyumlu.",
+    "en": "The set is arranged facing inward in the middle of the terrace. The natural timber tone goes well with the beige floor."
+  },
+  "seoFilename": "bej-fayans-teras-uzerinde-ahsap-koltuk-takimi-ve-sehpa-arka",
+  "tags": {
+    "type": [
+      "oturma grubu",
+      "sehpa",
+      "bank"
+    ],
+    "wood": [
+      "teak"
+    ],
+    "setting": [
+      "teras",
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

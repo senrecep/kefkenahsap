@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14371.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapılar önünde bank bulunan koyu deck",
+    "en": "Dark deck with a bench in front of glass doors"
+  },
+  "alt": {
+    "tr": "Geniş cam kapıların önüne uzanan, köşede ahşap bank bulunan koyu kahverengi deck; önde bir sandalyenin parçası",
+    "en": "Dark brown deck stretching in front of wide glass doors with a timber bench in the corner and part of a chair in front"
+  },
+  "caption": {
+    "tr": "Deck evin cephesi boyunca ilerliyor, çimen kenarından başlıyor. Kenardaki bitkiler alanı bahçeyle birleştiriyor.",
+    "en": "The deck runs along the house front, starting at the edge of the lawn. Plants at the side link the area with the garden."
+  },
+  "seoFilename": "cam-kapilar-onunde-bank-bulunan-koyu-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/12881.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Islak cilalı deck üzerinde mangal ve paslı ocak",
+    "en": "Barbecue and rusty fire pit on a wet varnished deck"
+  },
+  "alt": {
+    "tr": "Islak, cilalı deck üzerinde mangal, paslı bir ocak ve ahşap korkuluk; kenarda taş zemin",
+    "en": "Barbecue and a rusty fire pit on a wet varnished deck with a timber railing and stone paving at the edge"
+  },
+  "caption": {
+    "tr": "Yağmur sonrası ıslak yüzey cilanın parlaklığını gösteriyor. Mangal alanı deck'in köşesinde duruyor.",
+    "en": "The wet surface after rain shows how glossy the varnish is. The barbecue area sits in a corner of the deck."
+  },
+  "seoFilename": "islak-cilali-deck-mangal-ve-pasli-ocak",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/12635.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ağaçlar arasında oyun evi, salıncak ve köpek kulübesi",
+    "en": "Playhouse, swing and a dog house among trees"
+  },
+  "alt": {
+    "tr": "Ağaçların arasında kaydıraklı ahşap oyun evi ve salıncak; arka planda küçük bir köpek kulübesi",
+    "en": "Timber playhouse with a slide and a swing among trees, with a small dog house in the background"
+  },
+  "caption": {
+    "tr": "Oyun evi merdiven ve kaydırakla yan yana, salıncak sağdaki çerçevede. Uzakta kırmızı çatılı küçük bir kulübe duruyor.",
+    "en": "The playhouse stands with its ladder and slide side by side and the swing hangs in the frame on the right. A small red-roofed hut stands in the distance."
+  },
+  "seoFilename": "agaclar-arasinda-kaydirakli-oyun-evi-ve-salincak-arkada",
+  "tags": {
+    "type": [
+      "çocuk oyun evi",
+      "salıncak"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "orman / kır"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

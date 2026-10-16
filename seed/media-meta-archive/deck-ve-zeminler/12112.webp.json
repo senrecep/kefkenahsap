@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/12112.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sökülen tahtalar ve kablo bulunan kahverengi deck",
+    "en": "Brown deck with lifted boards and a cable"
+  },
+  "alt": {
+    "tr": "Kahverengi deck üzerinde sökülmüş bazı tahtalar ve uzanan kablo, kenarda çimen",
+    "en": "Brown deck with some boards lifted and a cable running across it, lawn at the edge"
+  },
+  "caption": {
+    "tr": "Tahtalardan bazıları yerinden çıkarılmış, deck üzerinde onarım ya da yenileme çalışması sürüyor.",
+    "en": "Some boards have been taken up while repair or renewal work goes on across the deck."
+  },
+  "seoFilename": "sokulen-tahtalar-kablo-kahverengi-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

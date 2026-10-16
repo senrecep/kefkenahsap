@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/12279.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çit kenarında yeşilimsi tahtalardan dar yol",
+    "en": "Narrow path of greenish boards along a fence"
+  },
+  "alt": {
+    "tr": "Ahşap çitin kenarında, açık yeşilimsi emprenyeli çam tahtalardan döşenmiş dar yürüyüş yolu",
+    "en": "Narrow walkway of pale greenish pressure-treated pine boards beside a timber fence"
+  },
+  "caption": {
+    "tr": "Yol çit boyunca dümdüz uzanıyor ve bahçe kapısına çıkıyor. Başlangıcında çimen taşları görünüyor.",
+    "en": "The path runs straight along the fence to the garden gate. Grass pavers show at its start."
+  },
+  "seoFilename": "cit-kenarinda-yesilimsi-tahtalardan-dar-yol",
+  "tags": {
+    "type": [
+      "deck",
+      "yürüyüş yolu"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

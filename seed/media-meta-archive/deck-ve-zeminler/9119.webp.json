@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/9119.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yüzeyinde leke izi görünen deck tahtası",
+    "en": "Deck board with stain marks on its surface"
+  },
+  "alt": {
+    "tr": "Turuncu tonlu dik duran deck tahtasının yüzeyinde koyu kahve kalem benzeri izler, yanında tahta araları ve altta toprak",
+    "en": "Upright orange-toned deck board with dark brown pencil-like marks on its surface, gaps beside it and soil below"
+  },
+  "caption": {
+    "tr": "Tahta yüzeyindeki çizgiler montaj öncesi işaretleme izine benziyor. Altta taşıyıcı çıta görünüyor.",
+    "en": "The lines on the board look like marking left before fitting. A support batten shows underneath."
+  },
+  "seoFilename": "yuzeyinde-leke-izi-gorunen-deck-tahtasi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.55
+}

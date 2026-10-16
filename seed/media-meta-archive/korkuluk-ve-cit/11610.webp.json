@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/11610.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Siyah çerçeveli yatay tahtalı sürgülü kapı ve yaya kapısı, drenaj kanalı önünde",
+    "en": "Black-framed horizontal-board sliding gate and pedestrian gate beside a drain"
+  },
+  "alt": {
+    "tr": "Parke taşlı girişte, siyah metal çerçeveli yatay tahta dolgulu uzun sürgülü kapı ve sağda yaya kapısı",
+    "en": "Long sliding gate with a black metal frame and horizontal-board infill, a pedestrian gate at the right and a drainage grate"
+  },
+  "caption": {
+    "tr": "Kapı tahtaları yatay döşenmiş, çerçeve siyah. Kapının önünde su kanalı ızgarası uzanıyor.",
+    "en": "The gate boards are laid horizontally in a black frame. A drainage channel grate runs in front of the gate."
+  },
+  "seoFilename": "siyah-cerceveli-yatay-tahtali-surgulu-kapi-drenaj",
+  "tags": {
+    "type": [
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

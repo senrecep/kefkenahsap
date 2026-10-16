@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/10341.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dik eğimli tavanda açık renk lambri, çokgen pencere",
+    "en": "Light panelling on a steep ceiling with a polygonal window"
+  },
+  "alt": {
+    "tr": "Dik eğimli çatı altında dar şeritler halinde döşenmiş açık renkli lambri tavan ve altta çokgen biçimli bir pencere",
+    "en": "Light panelled ceiling laid in narrow strips under a steep roof, with a polygonal window below"
+  },
+  "caption": {
+    "tr": "Lambri şeritler pencere çevresinde farklı yönlerde birleşiyor. Tavan baştan sona aynı tonda.",
+    "en": "The panelling strips meet in different directions around the window. The ceiling keeps one tone throughout."
+  },
+  "seoFilename": "dik-egimli-tavanda-acik-renk-lambri-cokgen-pencere",
+  "tags": {
+    "type": [
+      "tavan kaplaması / lambri"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

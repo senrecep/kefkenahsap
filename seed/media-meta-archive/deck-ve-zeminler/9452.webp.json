@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/9452.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bitki tarhını saran açık renkli deck",
+    "en": "Pale deck wrapping around a planting bed"
+  },
+  "alt": {
+    "tr": "Süs çimi tarhının çevresinden dönen açık renkli yeni emprenyeli deck, arka planda çalı sırası",
+    "en": "New light pressure-treated deck curving around a bed of ornamental grass, with a hedge behind"
+  },
+  "caption": {
+    "tr": "Deck tarhın köşesini keserek kavis yapıyor. Tahtalar bitkilerin çevresine kadar düzgün döşenmiş.",
+    "en": "The deck cuts around the corner of the bed. The boards are laid neatly up to the plants."
+  },
+  "seoFilename": "bitki-tarhini-saran-acik-renkli-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

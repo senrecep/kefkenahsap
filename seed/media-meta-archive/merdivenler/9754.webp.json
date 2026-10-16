@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/9754.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dar geçitte önden basamaklar ve korkuluk, toprak zemin",
+    "en": "Steps and railing in a narrow passage, from the front, on bare soil"
+  },
+  "alt": {
+    "tr": "Dar geçitte önden görünen ahşap basamaklar ve sağ yanda çaprazlı korkuluk; sol tarafta henüz korkuluk yok",
+    "en": "Timber steps seen from the front in a narrow passage, with a cross-braced railing on the right and none yet on the left"
+  },
+  "caption": {
+    "tr": "Basamaklar dar geçidin ortasından yukarı çıkıyor. Korkuluk yalnız sağ yanda takılmış, sol direk tek başına duruyor.",
+    "en": "The steps climb up the middle of the narrow passage. The railing is fitted on the right only and the post on the left stands alone."
+  },
+  "seoFilename": "dar-gecitte-onden-basamaklar-ve-korkuluk-toprak-zemin",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

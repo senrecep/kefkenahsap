@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/14731.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz cephede kapalı adaçayı yeşili ahşap panjur, yerde boya kutusu",
+    "en": "Closed sage-green timber shutter on a white facade, paint tin on the ground"
+  },
+  "alt": {
+    "tr": "Beyaz cephede pencereyi kapatan adaçayı yeşili dikey çıtalı ahşap panjur, yerde boya kovası ve koruyucu örtü",
+    "en": "Sage-green vertical-slat timber shutter closing a window on a white rendered facade, with a paint tin"
+  },
+  "caption": {
+    "tr": "Panjur iki kanatlı ve siyah menteşeli, pencerenin tamamını örtüyor. Boya ve el aletleri hâlâ yerde duruyor.",
+    "en": "The shutter has two leaves on black hinges and covers the whole window. Paint and power tools are still on the ground."
+  },
+  "seoFilename": "beyaz-cephede-kapali-adacayi-yesili-ahsap-panjur-yerde-boya",
+  "tags": {
+    "type": [
+      "pencere / panjur"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

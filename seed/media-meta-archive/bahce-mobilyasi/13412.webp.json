@@ -1,0 +1,38 @@
+{
+  "source": "Ireko-Teak/13412.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Duvar yanında ahşap kaplamalı uzun bank, metal ayaklı",
+    "en": "Long timber-clad bench with metal legs beside a wall"
+  },
+  "alt": {
+    "tr": "Taş döşeme üzerinde, alçak taş duvar boyunca uzanan, dikey şeritli arkalığı ve ince metal ayakları olan uzun ahşap bank",
+    "en": "A long timber bench with a back of vertical strips and thin metal legs running along a low stone wall on paving"
+  },
+  "caption": {
+    "tr": "Bank alçak taş duvarın dibine uzanıyor. İnce metal ayaklar uzun oturağı hafif gösteriyor.",
+    "en": "The bench runs along the foot of the low stone wall. The thin metal legs make the long seat look light."
+  },
+  "seoFilename": "duvar-yaninda-ahsap-kaplamali-uzun-bank-metal-ayakli-tas",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/9302.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beton duvar yanında uzayan ahşap geçit",
+    "en": "Timber walkway running beside a concrete wall"
+  },
+  "alt": {
+    "tr": "Beton duvar yanında uzayan ahşap geçit ve çaprazlı korkuluk; yeşil tel çit, çimlik ve kalın uç direği",
+    "en": "Timber walkway and cross-braced railing running beside a concrete wall, with green wire fencing, a lawn and a thick end post"
+  },
+  "caption": {
+    "tr": "Geçit tahtaları duvarın dibinde uzun bir yol oluşturuyor. Korkuluğun kalın uç direği öne çıkıyor.",
+    "en": "The walkway boards form a long path at the foot of the wall. The railing's thick end post stands out."
+  },
+  "seoFilename": "beton-duvar-yaninda-uzayan-ahsap-gecit-ve-caprazli-korkuluk",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

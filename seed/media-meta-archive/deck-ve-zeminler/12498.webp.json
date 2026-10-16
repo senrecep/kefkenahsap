@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12498.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimen üzerinde yükseltilmiş deck taşıyıcı kirişleri",
+    "en": "Raised deck bearers over the grass"
+  },
+  "alt": {
+    "tr": "Yükseltilmiş deck için çimen üzerine kurulan kalın ahşap taşıyıcı kirişler, arkada pembe bir bina",
+    "en": "Thick timber bearers set over the grass for a raised deck, with a pink building behind"
+  },
+  "caption": {
+    "tr": "Kirişler zeminden yukarıda tutuluyor ve ara kirişlerle sıklaştırılıyor. Kenarlarda cıvata izleri görünüyor.",
+    "en": "The bearers are held up off the ground and stiffened with cross joists. Bolt marks show at the joints."
+  },
+  "seoFilename": "cimen-uzerinde-yukseltilmis-deck-tasiyici-kirisleri",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

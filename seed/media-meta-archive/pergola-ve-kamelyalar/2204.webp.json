@@ -1,0 +1,41 @@
+{
+  "source": "Pergola ve Kamelyalar/2204.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çapraz korkuluklu açık renkli deck ve pergola çatısı",
+    "en": "Light deck with an X-braced rail and a pergola roof"
+  },
+  "alt": {
+    "tr": "Çapraz korkuluklu açık renkli deck üzerinde pergola çatı kirişleri, arkada yeşil bitki örtüsü",
+    "en": "Pergola roof beams over a light deck with an X-braced railing, with green planting behind"
+  },
+  "caption": {
+    "tr": "Çatı çıtaları sık aralıklı ve güneş ışığı deck üzerine çizgiler düşürüyor. Korkuluk çapraz çıtalarla bölünmüş.",
+    "en": "The roof slats are closely spaced and sunlight draws lines across the deck. The railing is split by cross bracing."
+  },
+  "seoFilename": "capraz-korkuluklu-acik-renkli-deck-pergola-cati",
+  "tags": {
+    "type": [
+      "pergola",
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

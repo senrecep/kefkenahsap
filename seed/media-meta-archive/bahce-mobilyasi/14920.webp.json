@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14920.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Koyu ahşap masa ve yanında iki bank, iç mekânda",
+    "en": "Dark timber table with two benches beside it, indoors"
+  },
+  "alt": {
+    "tr": "Koyu vernikli ahşap bir masa ve önünde yan yana iki bank; arkada tuğla duvar, kütük dilimleri ve bir televizyon görünüyor",
+    "en": "A dark-varnished timber table with two benches side by side in front of it, with a brick wall"
+  },
+  "caption": {
+    "tr": "Banklar masayla aynı koyu tonda yapılmış. Takım iç mekânda, tuğla duvarın önünde sergileniyor.",
+    "en": "The benches are made in the same dark tone as the table. The set is displayed indoors in front of a brick wall."
+  },
+  "seoFilename": "koyu-ahsap-masa-ve-yaninda-iki-bank-odun-kutukleri-onunde",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

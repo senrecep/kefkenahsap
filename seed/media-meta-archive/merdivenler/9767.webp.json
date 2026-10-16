@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/9767.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar yanında merdiven, toprak zemin",
+    "en": "Stairs beside a stone wall on bare soil"
+  },
+  "alt": {
+    "tr": "Koyu taş duvar yanında yükselen çaprazlı korkuluklu ahşap merdiven; zemin açık toprak, yanda tel çit",
+    "en": "Timber stairs with a cross-braced railing rising beside a dark stone wall, with bare soil and wire fencing alongside"
+  },
+  "caption": {
+    "tr": "Merdiven taş duvarın yanında yukarı çıkıyor. Zemin henüz düzenlenmemiş, toprak üstünde malzeme kalıntıları var.",
+    "en": "The stairs rise beside the stone wall. The ground has not been landscaped and some material offcuts lie on the soil."
+  },
+  "seoFilename": "tas-duvar-yaninda-caprazli-korkuluklu-merdiven-toprak-zemin",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

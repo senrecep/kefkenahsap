@@ -1,0 +1,39 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/10900.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Eskitilmiş görünümlü yatay tahtalı çiçeklik",
+    "en": "Planter with horizontal boards and an aged look"
+  },
+  "alt": {
+    "tr": "Atölyede duran, açık tonlu ve eskitilmiş görünümlü yatay tahtalı dikdörtgen ahşap çiçeklik",
+    "en": "Light-toned rectangular timber planter with horizontal boards and an aged look in the workshop"
+  },
+  "caption": {
+    "tr": "Tahtalarda yeşilimsi ve gri tonlar var. Arkada atölyenin tezgâhı ve kapısı görünüyor.",
+    "en": "The boards show greenish and grey tones. The workshop bench and door are visible behind."
+  },
+  "seoFilename": "eskitilmis-acik-tonlu-yatay-tahtali-ahsap-ciceklik",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

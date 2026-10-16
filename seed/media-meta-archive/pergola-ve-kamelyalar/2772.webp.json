@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/2772.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deniz kenarında pergola çatısı yapımı, otoparkta kereste",
+    "en": "Building a pergola roof by the sea with timber stacked in the car park"
+  },
+  "alt": {
+    "tr": "Deniz kıyısında çatısı çakılan pergola, palmiyeler ve otoparkta masalar ile kereste, uzakta tepeler",
+    "en": "Seafront pergola with its roof being fixed, palm trees, tables and timber in the car park and hills in the distance"
+  },
+  "caption": {
+    "tr": "Pergola çatısındaki çalışma sürerken yerde kesilmiş kereste ve çalışma masası duruyor.",
+    "en": "Work continues on the pergola roof while cut timber and a work table stand on the ground."
+  },
+  "seoFilename": "deniz-kenarinda-pergola-cati-yapimi",
+  "tags": {
+    "type": [
+      "pergola",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14252.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz kolon yanında koyu deck",
+    "en": "Dark deck beside a white column"
+  },
+  "alt": {
+    "tr": "Çimenin kenarında, beyaz kolonun yanından sarmaşıklı kafese uzanan koyu kırmızı kahverengi deck; arka duvarda yerleşik bank",
+    "en": "Dark red-brown deck on the edge of a lawn, running from beside a white column to a vine-covered trellis"
+  },
+  "caption": {
+    "tr": "Deck, arka duvardaki bankın altına kadar devam ediyor. Kafes üzerindeki sarmaşık yeşil bir fon oluşturuyor.",
+    "en": "The deck continues right up to the bench on the back wall. The vine on the trellis forms a green backdrop."
+  },
+  "seoFilename": "beyaz-kolon-yaninda-koyu-deck-sarmasikli-bank",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

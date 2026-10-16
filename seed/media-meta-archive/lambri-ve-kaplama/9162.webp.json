@@ -1,0 +1,36 @@
+{
+  "source": "Ahsap Yapilar/9162.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çıkıntı altında ahşap tavan ve koyu bant",
+    "en": "Timber soffit and dark band under an overhang"
+  },
+  "alt": {
+    "tr": "Binanın çıkıntısının altında ahşap tavan kaplaması, çevresinde koyu metal bant ve yanlarda yatay cephe tahtaları",
+    "en": "Timber ceiling cladding under a building overhang, framed by a dark metal band, with horizontal facade boards at the sides"
+  },
+  "caption": {
+    "tr": "Çıkıntının altı ahşapla kaplanmış. Tavan ile cephe arasında koyu bir bant geçiyor.",
+    "en": "The underside of the overhang is clad in timber. A dark band runs between the ceiling and the facade."
+  },
+  "seoFilename": "cikinti-altinda-ahsap-tavan-koyu-bant",
+  "tags": {
+    "type": [
+      "tavan kaplaması / lambri",
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

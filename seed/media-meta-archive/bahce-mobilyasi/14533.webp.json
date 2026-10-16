@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14533.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Seramik zeminde kapaklı, çıtalı kahverengi ahşap sandık bank",
+    "en": "Brown slatted timber chest bench with a lid on a ceramic floor"
+  },
+  "alt": {
+    "tr": "Açık renkli seramik zeminde, köşeye yerleştirilmiş kapaklı, çıtalı kahverengi vernikli ahşap sandık bank",
+    "en": "A brown-varnished slatted timber chest bench with a lid placed in a corner on a pale ceramic floor"
+  },
+  "caption": {
+    "tr": "Sandık bankın kapağı oturak olarak da kullanılıyor, içine eşya konabiliyor. Gövde çıtalı, kapak düz tahtalı.",
+    "en": "The lid of the chest bench doubles as the seat, and things can be stored inside. The body is slatted and the lid is flat planks."
+  },
+  "seoFilename": "seramik-zeminde-kapakli-citali-kahverengi-ahsap-sandik-bank",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

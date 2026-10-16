@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/3695.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kavisli korkuluklu ahşap platform",
+    "en": "Timber platform with a curved railing"
+  },
+  "alt": {
+    "tr": "Havuza uzanan bir yol ve ucunda, kavisli ahşap korkuluklu yükseltilmiş platform; üzerinde beyaz şemsiye",
+    "en": "A path leading towards the pool and, at its end, a raised platform with a curved timber railing and a white parasol above"
+  },
+  "caption": {
+    "tr": "Korkuluğun dikey çıtaları platformun yuvarlak köşesini izliyor. Platform arka duvar ve çitle çevrili.",
+    "en": "The vertical slats of the railing follow the rounded corner of the platform. The platform is bounded by the back wall and a fence."
+  },
+  "seoFilename": "kavisli-korkuluklu-ahsap-platform-havuza-uzanan-yol",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

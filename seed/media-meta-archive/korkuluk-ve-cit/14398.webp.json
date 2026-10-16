@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/14398.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş döşeme kenarında yeni çit direkleri",
+    "en": "New fence posts along a stone-paved path"
+  },
+  "alt": {
+    "tr": "Gri taş döşeme yolun kenarında toprağa dikilmiş koyu ahşap çit direkleri, yerde tahta ve toprak yığını",
+    "en": "Dark timber fence posts set in the soil beside a grey stone-paved path, with a board and a pile of earth on the ground"
+  },
+  "caption": {
+    "tr": "Direkler yerine oturmuş, çıtalar henüz takılmamış. Arkada tenis sahası var.",
+    "en": "The posts are in place and the slats are not fitted yet. A tennis court lies behind."
+  },
+  "seoFilename": "tas-doseme-kenarinda-yeni-cit-direkleri",
+  "tags": {
+    "type": [
+      "çit",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

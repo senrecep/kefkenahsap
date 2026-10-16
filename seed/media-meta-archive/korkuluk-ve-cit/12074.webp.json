@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/12074.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deck köşesinde telli ahşap çerçeve ve çıtalı çit, ağaç gövdesinin yanında",
+    "en": "Wire-mesh timber frame and slat fence at the deck corner, beside a tree trunk"
+  },
+  "alt": {
+    "tr": "Koyu kahve deck zeminin köşesinde, bir ağaç gövdesini çevreleyen telli ahşap çerçeve; arkada sivri uçlu açık renk çıtalı çit",
+    "en": "A wire-mesh timber frame surrounding a tree trunk at the corner of a dark brown deck, with a light pointed-slat fence behind"
+  },
+  "caption": {
+    "tr": "Çerçeve ağacın etrafını açık bırakıp deck kenarını kapatıyor. Tel örgü yeşil renkte.",
+    "en": "The frame leaves the tree open while closing off the edge of the deck. The wire mesh is green."
+  },
+  "seoFilename": "deck-kosesinde-telli-ahsap-cerceve-citali-cit-agac-govdesi",
+  "tags": {
+    "type": [
+      "çit",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

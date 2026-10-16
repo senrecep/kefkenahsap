@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/10615.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kalın direkli ahşap merdiven ve taş başlık",
+    "en": "Timber stairs with thick newel post and stone coping"
+  },
+  "alt": {
+    "tr": "Kalın başlangıç direkli çaprazlı korkuluk ve aşağı inen basamaklar; yanda taş başlık ve bodrum penceresi",
+    "en": "Cross-braced railing with a thick newel post and steps going down, with a stone coping and a basement window beside"
+  },
+  "caption": {
+    "tr": "Korkuluğun kalın direği merdivenin başında duruyor. Aşağıda bodrum penceresi ve kiremitli çatı görünüyor.",
+    "en": "The railing's thick post stands at the head of the stairs. A basement window and a tiled roof show below."
+  },
+  "seoFilename": "kalin-direkli-ahsap-merdiven-tas-baslik-bodrum-penceresi",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

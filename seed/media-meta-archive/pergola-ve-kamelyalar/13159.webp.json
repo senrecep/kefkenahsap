@@ -1,0 +1,40 @@
+{
+  "source": "Ireko-Teak/13159.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam korkuluklu geniş terasta çıtalı ahşap tavan ve deck",
+    "en": "Wide terrace with a glass rail, slatted timber ceiling and deck"
+  },
+  "alt": {
+    "tr": "Cam korkuluklu geniş teras: metal çerçeveli, çıtalı ahşap tavan, sıcak tonlu deck zemin ve çimlik",
+    "en": "Wide terrace with a glass railing, metal frame, slatted timber ceiling, warm-toned deck floor and a lawn"
+  },
+  "caption": {
+    "tr": "Teras çimlik alanına açılıyor ve kenarda cam korkuluk var. Uzakta bir dış mutfak köşesi seçiliyor.",
+    "en": "The terrace opens onto the lawn with a glass rail along the edge. An outdoor kitchen corner can be made out in the distance."
+  },
+  "seoFilename": "cam-korkuluklu-genis-teras-citali-tavan-deck",
+  "tags": {
+    "type": [
+      "pergola",
+      "deck",
+      "dış mutfak / mangal alanı"
+    ],
+    "wood": [],
+    "setting": [
+      "teras",
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

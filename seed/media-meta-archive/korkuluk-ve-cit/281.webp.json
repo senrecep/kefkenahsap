@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/281.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kafes panelli ahşap kabin duvarları, çıtalı tavan",
+    "en": "Lattice-panelled timber cabin walls with a slatted ceiling"
+  },
+  "alt": {
+    "tr": "Parlak zeminli teras üzerinde kare gözlü kafes panellerle ayrılmış ahşap kabinler ve çıtalı tavan, yanda bir bitki",
+    "en": "Timber cubicles divided by square lattice panels on a glossy terrace floor, with a slatted ceiling and a plant at the side"
+  },
+  "caption": {
+    "tr": "Kafes paneller kabinleri birbirinden ayırıyor ama ışığı ve havayı geçiriyor.",
+    "en": "The lattice panels separate the cubicles but let light and air through."
+  },
+  "seoFilename": "kafes-panelli-ahsap-kabin-duvarlari-citali-tavan",
+  "tags": {
+    "type": [
+      "kafes / paravan"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

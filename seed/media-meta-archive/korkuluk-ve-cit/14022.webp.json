@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/14022.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz boyalı çift kanatlı piket kapı",
+    "en": "White-painted double-leaf picket gate"
+  },
+  "alt": {
+    "tr": "Taş zeminli bir giriş yolunda, taş sütunlar arasında beyaz boyalı çapraz kuşaklı çift kanatlı kapı",
+    "en": "White-painted double-leaf gate with diagonal braces between stone posts at a paved entrance"
+  },
+  "caption": {
+    "tr": "Beyaz kapı iki taş sütun arasına oturuyor. Çıtalar çapraz bir kuşakla destekleniyor.",
+    "en": "The white gate sits between two stone posts. The pickets are supported by a diagonal brace."
+  },
+  "seoFilename": "beyaz-boyali-cift-kanatli-piket-kapi",
+  "tags": {
+    "type": [
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

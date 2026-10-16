@@ -1,0 +1,36 @@
+{
+  "source": "Ireko-Teak/11289.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çıtalı masa tablasının köşe birleşimi, tek bölümü açık renk",
+    "en": "Corner joint of a slatted table top with one lighter section"
+  },
+  "alt": {
+    "tr": "Yakın çekimde, çıtalı masa tablasının köşe birleşimi; çıtaların bir bölümü diğerlerinden daha açık renkli",
+    "en": "A close view of the corner of a slatted table top in which one section of slats is lighter than the rest"
+  },
+  "caption": {
+    "tr": "Tablanın bir bölümü tazelenmiş, diğer kısımlar henüz eski renginde. Kenar çerçevesi daha koyu duruyor.",
+    "en": "One section of the top has been renewed while the rest is still in its old colour. The edge frame stays darker."
+  },
+  "seoFilename": "citali-masa-tablasinin-kose-birlesimi-yakin-cekim-bir-bolum",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process",
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

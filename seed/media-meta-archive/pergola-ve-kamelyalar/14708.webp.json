@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/14708.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz boyalı pergola kemeri altında çıtalı kapı, taş basamak",
+    "en": "Picket gate under a white-painted pergola arch with stone steps"
+  },
+  "alt": {
+    "tr": "Beyaz boyalı pergola kemerinin altında çıtalı bahçe kapısı, kapı direkleri, taş basamaklar ve taş döşeli yol",
+    "en": "Picket garden gate under a white-painted pergola arch, with gate posts, stone steps and a flagstone path"
+  },
+  "caption": {
+    "tr": "Kemer kapının üstünde bir giriş çerçevesi oluşturuyor. Kapı çaprazlı çıtalardan yapılmış.",
+    "en": "The arch forms an entrance frame above the gate. The gate is made of braced slats."
+  },
+  "seoFilename": "beyaz-pergola-kemeri-altinda-citali-kapi-basamak",
+  "tags": {
+    "type": [
+      "pergola",
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

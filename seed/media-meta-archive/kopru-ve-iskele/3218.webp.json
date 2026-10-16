@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/3218.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimde dikdörtgen basamak plakaları, makara duvarın yanında",
+    "en": "Rectangular stepping slabs on the lawn beside a hose reel"
+  },
+  "alt": {
+    "tr": "Duvar kenarında, yeşil hortum makarasının yanından başlayan sıralı ahşap basamak plakaları; öndeki tahtalar farklı yönde",
+    "en": "Timber stepping slabs in a row starting beside a green hose reel at the wall"
+  },
+  "caption": {
+    "tr": "Plakalar çimde bir hat boyunca diziliyor. Öndeki iki plakanın tahtaları farklı yöne bakıyor.",
+    "en": "The slabs line up along the lawn. The boards of the two front slabs run in different directions."
+  },
+  "seoFilename": "cimde-dikdortgen-basamak-plakalari-hortum-makarasi",
+  "tags": {
+    "type": [
+      "yürüyüş yolu"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

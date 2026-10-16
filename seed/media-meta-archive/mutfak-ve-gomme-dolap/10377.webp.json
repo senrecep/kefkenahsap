@@ -1,0 +1,37 @@
+{
+  "source": "Mobilya ve Cila/10377.webp",
+  "category": "mutfak-ve-gomme-dolap",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Tahta panel arkalıklı TV ünitesi, hoparlör gözleri",
+    "en": "TV unit with a board-panel back, with speaker bays"
+  },
+  "alt": {
+    "tr": "Yatay tahta panel arkalıklı ahşap TV ünitesi; iki yanda hoparlör gözleri, ortada cihaz rafı",
+    "en": "A timber TV unit with a horizontal board-panel back, with speaker bays at both sides and a shelf for equipment in the middle"
+  },
+  "caption": {
+    "tr": "Televizyon panelin üzerine asılı, altında iki yanda hoparlör gözleri, ortada cihaz rafı var. Panel koyu vernikli yatay tahtalardan.",
+    "en": "The television hangs on the panel, with speaker bays at both sides below it and an equipment shelf in the middle. The panel is made of dark varnished horizontal boards."
+  },
+  "seoFilename": "tahta-panel-arkalikli-ahsap-tv-unitesi-hoparlor-gozleri",
+  "tags": {
+    "type": [
+      "tv ünitesi"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.65
+}

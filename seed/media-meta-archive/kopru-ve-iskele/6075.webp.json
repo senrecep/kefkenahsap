@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/6075.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Gün ışığında çimde sarımsı basamak plakaları",
+    "en": "Yellowish stepping slabs on a sunlit lawn"
+  },
+  "alt": {
+    "tr": "Güneş ışığı alan çimde, gölgeli ve aydınlık bölgeler arasından geçen sarımsı ahşap basamak plakaları",
+    "en": "Yellowish timber stepping slabs crossing a lawn between shaded and sunlit patches"
+  },
+  "caption": {
+    "tr": "Plakalar uzağa doğru küçülerek dizilmiş. Yeni tahtalarda reçine rengi sıcak bir sarı görülüyor.",
+    "en": "The slabs shrink in size into the distance. The new boards show a warm resin-yellow colour."
+  },
+  "seoFilename": "gun-isiginda-cimde-sarimsi-basamak-plakalari",
+  "tags": {
+    "type": [
+      "yürüyüş yolu"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

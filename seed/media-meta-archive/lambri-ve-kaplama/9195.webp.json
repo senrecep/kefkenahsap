@@ -1,0 +1,33 @@
+{
+  "source": "Ahsap Yapilar/9195.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Gazbeton duvarda dikey çıta altyapısı",
+    "en": "Vertical battens on an aerated concrete wall"
+  },
+  "alt": {
+    "tr": "Gazbeton duvara dikey ahşap çıtalar çakılmış; üstte mavi saçak altı, uzakta deniz görünüyor",
+    "en": "Vertical timber battens fixed to an aerated concrete wall, with a blue soffit above and water in the distance"
+  },
+  "caption": {
+    "tr": "Kaplamanın altyapısı hazır: gazbeton duvara dikey çıtalar sıralanmış. Tahtalar bu çıtaların üzerine gelecek.",
+    "en": "The framework for the cladding is ready: vertical battens are lined up on the aerated concrete wall. The boards will go on top of them."
+  },
+  "seoFilename": "gazbeton-duvar-dikey-citalar-ahsap-altyapi",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

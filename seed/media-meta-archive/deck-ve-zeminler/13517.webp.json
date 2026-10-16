@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/13517.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Toprak zeminde yığılmış turuncu kahverengi kereste ve çıtalar",
+    "en": "Orange-brown timber and battens piled on bare ground"
+  },
+  "alt": {
+    "tr": "Toprak zeminde yığılmış çok sayıda turuncu kahverengi kereste ve çıta, arkada cam kapılı bina",
+    "en": "A large pile of orange-brown timber and battens on bare ground, with a glass-doored building behind"
+  },
+  "caption": {
+    "tr": "Malzeme işin başlamasından önce sahaya getirilmiş. Deck tahtası, kiriş ve çıta ayrı ayrı yığılmış.",
+    "en": "The material has been brought to site before the work starts. Boards, joists and battens are piled separately."
+  },
+  "seoFilename": "toprakta-yigilmis-turuncu-kahverengi-kereste-ve-citalar",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.4
+}

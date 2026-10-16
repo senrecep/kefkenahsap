@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14107.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çit önünde taş döşemede koyu vernikli L bank",
+    "en": "Dark-varnished L bench on stone paving in front of a fence"
+  },
+  "alt": {
+    "tr": "Sık yeşilliğin ve tel çitin önünde, taş döşeme üzerinde duran, geniş oturaklı koyu vernikli L biçimli ahşap bank",
+    "en": "A dark-varnished L-shaped timber bench with a broad seat on stone paving in front of dense greenery and a wire fence"
+  },
+  "caption": {
+    "tr": "Bank iki kenarda sırtlığı olan geniş bir köşe oluşturuyor. Çevredeki yeşillik oturma alanına doğal bir arka plan sağlıyor.",
+    "en": "The bench forms a wide corner with a back on both sides. The surrounding greenery gives the seating area a natural backdrop."
+  },
+  "seoFilename": "cit-onunde-tas-doseme-uzerinde-koyu-l-bank",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

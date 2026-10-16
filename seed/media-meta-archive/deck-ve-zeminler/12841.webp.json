@@ -1,0 +1,39 @@
+{
+  "source": "Ireko-Teak/12841.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Basamaklı deck köşesinde açık tonlu ahşap",
+    "en": "Light timber at a stepped deck corner"
+  },
+  "alt": {
+    "tr": "Taş duvar ve basamakların yanında, kenarı dikey kuşakla kapatılmış açık tonlu deck köşesi, altta çimen",
+    "en": "Corner of a light deck beside a stone wall and steps, with the edge closed by a vertical fascia and lawn below"
+  },
+  "caption": {
+    "tr": "Deck köşesi kenar tahtasıyla temiz kapatılmış. Üst yüzey ve kenar aynı ahşaptan.",
+    "en": "The deck corner is closed neatly with an edge board. The top surface and the edge are the same timber."
+  },
+  "seoFilename": "basamakli-deck-kosesinde-acik-tonlu-ahsap",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/14397.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kalın dikmeli ahşap kafes panelin yakın çekimi, arkada atölye",
+    "en": "Close-up of a timber lattice panel with a thick upright, workshop behind"
+  },
+  "alt": {
+    "tr": "Koyu vernikli, kalın dikmeli ve kare gözlü ahşap kafes panelin yakından görünümü; arkada atölye ve merdiven",
+    "en": "Close view of a dark-varnished square-cell timber lattice panel with a thick upright, with the workshop and a ladder behind"
+  },
+  "caption": {
+    "tr": "Çıtalar yatay ve dikey bindirilmiş, kalın yan dikme yüzeyde damarı gösteriyor. Panelin gözleri eşit aralıklı.",
+    "en": "The slats are overlapped horizontally and vertically and the thick side upright shows its grain on the surface. The cells of the panel are evenly spaced."
+  },
+  "seoFilename": "kalin-dikmeli-ahsap-kafes-panelin-yakin-cekimi",
+  "tags": {
+    "type": [
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

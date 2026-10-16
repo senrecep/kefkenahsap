@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/13281.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Eğri hat boyunca kenar kirişli basamaklı deck döşemesi",
+    "en": "Stepped deck boarding with edge beams along a curve"
+  },
+  "alt": {
+    "tr": "Eğri hat boyunca ahşap kenar kirişli, basamaklı panel şeklinde deck döşemesi; çakıl kenar ve saksı",
+    "en": "Stepped panel deck boarding along a curved line with timber edge beams, a gravel edge and a flower pot"
+  },
+  "caption": {
+    "tr": "Kenar kirişi eğriyi önceden çiziyor ve paneller onun içinde sıralanıyor. Arkada korkuluk ve saksı bitkisi görünüyor.",
+    "en": "The edge beam draws the curve first and the panels are laid within it. A railing and a potted plant show behind."
+  },
+  "seoFilename": "egri-hat-boyunca-kenar-kirisli-basamakli-deck-dosemesi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

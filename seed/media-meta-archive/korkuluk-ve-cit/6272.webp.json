@@ -1,0 +1,40 @@
+{
+  "source": "Korkuluk ve Cit/6272.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Uzun çift kanatlı ahşap kapı, ağaç altında",
+    "en": "Wide double-leaf timber gate under a tree"
+  },
+  "alt": {
+    "tr": "Büyük bir ağacın yanında, düzleştirilmiş toprak girişi kapatan geniş çift kanatlı çaprazlı ahşap kapı ve metal kuşaklar",
+    "en": "Wide double-leaf braced timber gate with metal straps closing a levelled soil entrance beside a large tree"
+  },
+  "caption": {
+    "tr": "Kapı iki kanat halinde ortada buluşuyor, her kanat çapraz kuşakla destekleniyor.",
+    "en": "The two leaves meet in the middle, and each is stiffened by a diagonal brace."
+  },
+  "seoFilename": "uzun-cift-kanatli-ahsap-kapi-agac-altinda-toprak-zemin",
+  "tags": {
+    "type": [
+      "bahçe kapısı",
+      "çit"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

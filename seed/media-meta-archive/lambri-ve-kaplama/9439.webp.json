@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/9439.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Vida başları görünen açık renk yatay tahtalar",
+    "en": "Light horizontal boards with visible screw heads"
+  },
+  "alt": {
+    "tr": "Yatay döşenmiş açık renkli ahşap kaplama tahtalarının yakın çekimi; vida başları ve tahtalar arası aralıklar görünüyor",
+    "en": "Close-up of light-coloured horizontal timber cladding boards, with screw heads and the gaps between boards visible"
+  },
+  "caption": {
+    "tr": "Açık renkli tahtalar yatay sıralanmış, her birinin ucunda vida başı seçiliyor. Damarlar net görünüyor.",
+    "en": "The light boards run in horizontal rows with screw heads visible near the ends. The grain is clear."
+  },
+  "seoFilename": "vida-basli-acik-renk-yatay-kaplama-yakin",
+  "tags": {
+    "type": [
+      "iç duvar kaplaması"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [],
+    "finish": [],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

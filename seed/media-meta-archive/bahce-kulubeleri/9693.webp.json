@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/9693.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Açık kapıdan görünen lambri kaplı depo içi",
+    "en": "Lambris-lined shed interior seen through the open door"
+  },
+  "alt": {
+    "tr": "Açık kapıdan dar bir depo içi görünüyor; duvarlar lambri, zemin ahşap tahta",
+    "en": "A narrow shed interior seen through an open door, with tongue-and-groove walls and a plank floor"
+  },
+  "caption": {
+    "tr": "Depo derin değil ama boyu uzun. İçi lambri ile kaplı, zemini de tahta; kapı açılınca bütün iç alan tek bakışta görülüyor.",
+    "en": "The shed is shallow but tall. The inside is lined with lambris and has a plank floor, so the whole interior is visible once the door is open."
+  },
+  "seoFilename": "acik-kapidan-lambri-kapli-depo-ici",
+  "tags": {
+    "type": [
+      "bahçe kulübesi / depo"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

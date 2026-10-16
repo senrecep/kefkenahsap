@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/7786.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Göl manzaralı çapraz korkuluklu deck",
+    "en": "Lake-view deck with a cross-braced railing"
+  },
+  "alt": {
+    "tr": "Göle bakan, çapraz çıtalı ahşap korkuluklu açık renkli deck; tahta yüzeyde korkuluk ve direk gölgeleri",
+    "en": "Pale deck facing a lake with a cross-braced timber railing, and shadows of the railing and posts on the board surface"
+  },
+  "caption": {
+    "tr": "Gölün öte yakasında konutlar sıralanıyor ve su güneşte parlıyor. Tahtalar boyuna döşenmiş ve yüzeyi hafifçe gri bir ton almış.",
+    "en": "Houses line the far side of the lake and the water glitters in the sun. The boards are laid lengthwise and the surface has taken on a slightly grey tone."
+  },
+  "seoFilename": "goel-manzarali-capraz-korkuluklu-deck-golgeli-tahta-yuzey",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

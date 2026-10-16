@@ -1,0 +1,36 @@
+{
+  "source": "Ireko-Teak/13381.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dış mutfak, bar tezgâhı ve odun deposu",
+    "en": "Outdoor kitchen, bar counter and log store"
+  },
+  "alt": {
+    "tr": "Ahşap kaplı dış mutfak ile yüksek tabureli bar tezgâhı; altta odun deposu, arkada çıtalı paravan",
+    "en": "Timber-clad outdoor kitchen with a bar counter and high stools, a log store below and a slatted screen behind"
+  },
+  "caption": {
+    "tr": "Bar tezgâhının önünde iki yüksek tabure duruyor. Fırının altındaki gözde kesilmiş odunlar istiflenmiş.",
+    "en": "Two high stools stand at the bar counter. Cut logs are stacked in the opening under the oven."
+  },
+  "seoFilename": "ahsap-kapli-dis-mutfak-ve-bar-tezgahi-yuksek-tabureler-odun",
+  "tags": {
+    "type": [
+      "dış mutfak / mangal alanı",
+      "bar / tezgâh"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.6
+}

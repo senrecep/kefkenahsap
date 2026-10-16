@@ -1,0 +1,35 @@
+{
+  "source": "Ireko-Teak/15144.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Raflarda istiflenmiş ham sandalye iskeletleri",
+    "en": "Raw chair frames stacked on racks"
+  },
+  "alt": {
+    "tr": "Atölye raflarında üst üste dizilmiş, henüz cilalanmamış ahşap sandalye ve masa iskeletleri",
+    "en": "Unfinished timber chair and table frames stacked on workshop racks"
+  },
+  "caption": {
+    "tr": "İskeletler çıtalı ve boyasız. Raflar atölyenin depo kısmında duruyor.",
+    "en": "The frames are slatted and unpainted. The racks stand in the storage area of the workshop."
+  },
+  "seoFilename": "raflarda-istiflenmis-ham-ahsap-sandalye-masa-iskeletleri",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

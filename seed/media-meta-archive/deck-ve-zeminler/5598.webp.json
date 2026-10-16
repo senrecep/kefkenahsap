@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/5598.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar üstünde çapraz korkuluklu deck",
+    "en": "Cross-braced deck on a stone wall"
+  },
+  "alt": {
+    "tr": "Deniz kıyısında yüksekten görünen açık renkli deck; çapraz çıtalı korkuluk, taş duvar ve arkada ahşap platformlar",
+    "en": "Pale deck seen from above on the sea shore, with a cross-braced railing, a stone wall and timber platforms behind"
+  },
+  "caption": {
+    "tr": "Deck taş istinat duvarının üstüne oturuyor. Korkuluk basamaklı bir iniş bölümünü çevreliyor.",
+    "en": "The deck sits on top of a stone retaining wall. The railing encloses a stepped landing."
+  },
+  "seoFilename": "deniz-kenarinda-capraz-korkuluklu-deck-ve-tas-duvar",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

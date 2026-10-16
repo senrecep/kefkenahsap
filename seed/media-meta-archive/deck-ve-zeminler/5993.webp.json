@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/5993.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kırmızı duvarlı evin önünde eskimiş deck",
+    "en": "Weathered deck in front of a red-walled house"
+  },
+  "alt": {
+    "tr": "Çimen üzerinde, kırmızı duvarlı evin pencerelerinin önünde duran, lekelenmiş ve solmuş açık kahverengi deck",
+    "en": "Stained, faded light brown deck on a lawn in front of the windows of a red-walled house"
+  },
+  "caption": {
+    "tr": "Tahta yüzeyinde koyu lekeler ve yer yer kirlenme var, iki bölümlü deck ortadan bir aralıkla ayrılıyor. Görüntü köşelerde koyu bir çerçeve efektiyle çekilmiş.",
+    "en": "The boards show dark stains and some grime, and the two-part deck is split by a gap in the middle. The image has a dark vignette effect at the corners."
+  },
+  "seoFilename": "kirmizi-duvarli-evin-onunde-cimde-eskimis-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

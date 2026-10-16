@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/9457.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kolonların yanından geçen dar deck şeridi",
+    "en": "Narrow deck strip passing beside the columns"
+  },
+  "alt": {
+    "tr": "Zemin kat sundurmasının kolonları boyunca uzanan açık renkli deck, yanda duvar ve çalılar",
+    "en": "Light deck running past the columns of a ground-floor canopy, with a wall and shrubs at the side"
+  },
+  "caption": {
+    "tr": "Deck evin yan cephesi boyunca ilerleyip arkaya dönüyor. Tahtalar yürüme yönüne dik döşenmiş.",
+    "en": "The deck follows the side of the house and turns toward the back. Boards run across the walking direction."
+  },
+  "seoFilename": "kolonlarin-yanindan-gecen-dar-deck-seridi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe",
+      "giriş"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

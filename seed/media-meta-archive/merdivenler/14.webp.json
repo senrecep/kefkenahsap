@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/14.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş kaplı evin girişinde basamak ve korkuluk",
+    "en": "Steps and railing at the entrance of a stone-clad house"
+  },
+  "alt": {
+    "tr": "Taş kaplı evin girişinde ahşap basamaklar ve çapraz desenli korkuluk; yanda aynı desenle sundurma korkuluğu",
+    "en": "Timber steps and a cross-patterned railing at the entrance of a stone-clad house, with a porch railing in a similar pattern"
+  },
+  "caption": {
+    "tr": "Basamaklar giriş sundurmasına çıkıyor. Korkuluk çapraz desenli, sundurmadaki korkuluğun deseniyle uyumlu.",
+    "en": "The steps lead up to the entrance porch. The railing has a cross pattern that matches the porch railing."
+  },
+  "seoFilename": "tas-kapli-evin-girisinde-ahsap-basamak-ve-capraz-korkuluk",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

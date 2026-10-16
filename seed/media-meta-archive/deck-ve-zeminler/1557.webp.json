@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/1557.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yapım halindeki havuz çevresinde deck",
+    "en": "Deck around a pool under construction"
+  },
+  "alt": {
+    "tr": "Mavi fayanslı yeni bir havuzun köşesini saran, yağmurda ıslanmış sarımsı deck tahtaları; çevrede açık toprak",
+    "en": "Yellowish deck boards wet from rain, wrapping the corner of a new blue-tiled pool, with open soil around"
+  },
+  "caption": {
+    "tr": "Tahtalar havuz kenarına dik döşenmiş ve yüzeyde ıslak parlaklık var. Sol kenarda ahşap parçaları yerde duruyor.",
+    "en": "The boards are laid square to the pool edge and the surface has a wet shine. Pieces of timber lie on the ground at the left."
+  },
+  "seoFilename": "yapim-halindeki-havuz-cevresinde-islak-sarimsi-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

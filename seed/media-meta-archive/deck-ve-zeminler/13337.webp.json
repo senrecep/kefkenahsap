@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/13337.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Aralıklı döşenmiş deck tahtalarının damarı",
+    "en": "Grain of deck boards laid with gaps"
+  },
+  "alt": {
+    "tr": "Eğik açıdan çekilmiş kahverengi deck tahtaları, aralarındaki derz ve tahta yüzeyinde küçük bir leke",
+    "en": "Brown deck boards shot at an angle, showing the joint gaps between them and a small mark on the surface"
+  },
+  "caption": {
+    "tr": "Tahta araları su akışına izin veriyor. Yüzeyin damarı yakından seçiliyor.",
+    "en": "The gaps let water drain away. The surface grain is clearly visible up close."
+  },
+  "seoFilename": "aralikli-dosenmis-deck-tahtalarinin-damari",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "iroko"
+    ],
+    "setting": [],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

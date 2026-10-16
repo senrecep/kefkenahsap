@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/4732.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Üstten bakışla geniş basamaklı korkuluklu merdiven",
+    "en": "Wide-tread stairs with railing seen from above"
+  },
+  "alt": {
+    "tr": "Üstten görünen geniş basamaklı ahşap merdiven; çıtalı korkuluk ve yanda telli çit",
+    "en": "Wide-tread timber stairs seen from above, with a slatted railing and wire fencing at the side"
+  },
+  "caption": {
+    "tr": "Geniş basamaklar yukarıdan düzgün sıralanmış görünüyor. Korkuluk ince çıtalardan, yanda tel çit var.",
+    "en": "Seen from above, the wide treads line up neatly. The railing is made of thin slats and wire fencing runs alongside."
+  },
+  "seoFilename": "ustten-bakisla-genis-basamakli-korkuluklu-ahsap-merdiven",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/12080.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deck zemin ve çalı arasında köşeyi kapatan telli ahşap çerçeve",
+    "en": "Wire-mesh timber frame closing the corner between deck floor and shrubs"
+  },
+  "alt": {
+    "tr": "Kırmızımsı kahve deck zeminin kenarında, çalı ve çıtalı çit arasında köşeyi kapatan tel örgülü ahşap çerçeve",
+    "en": "A wire-mesh timber frame closing the corner at the edge of a reddish-brown deck between shrubs and a slat fence"
+  },
+  "caption": {
+    "tr": "Çerçeve deck'in kenarında dik duruyor, tel örgüsü ağaç gövdesinin önünde. Deck tahtalarının yüzeyi nemli parlıyor.",
+    "en": "The frame stands upright at the edge of the deck with its mesh in front of the tree trunk. The surface of the deck boards shines with moisture."
+  },
+  "seoFilename": "deck-zemin-ve-cali-arasinda-koseyi-kapatan-telli-cerceve",
+  "tags": {
+    "type": [
+      "çit",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

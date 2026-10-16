@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/11056.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kare tahtalı alçak masa, yeşil halı üzerinde",
+    "en": "Low square plank table on a green mat"
+  },
+  "alt": {
+    "tr": "Yeşil suni çim üzerinde, tabla tahtalarının damarları öne çıkan kare ahşap alçak masa",
+    "en": "A low square timber table on green artificial turf, with prominent wood grain on the top boards"
+  },
+  "caption": {
+    "tr": "Masanın tablası altı tahtadan, ortada tek ayakla taşınıyor. Vernik tahtaların desenini öne çıkarmış.",
+    "en": "The tabletop is made of six boards and rests on a single central base. The varnish brings out the pattern of the wood."
+  },
+  "seoFilename": "kare-tahtali-alcak-masa-yesil-hali-uzerinde",
+  "tags": {
+    "type": [
+      "sehpa"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

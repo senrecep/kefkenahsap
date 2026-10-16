@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/10609.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş bloklar arasında ahşap merdiven",
+    "en": "Timber stairs between stone blocks"
+  },
+  "alt": {
+    "tr": "Taş bloklar arasında aşağı inen ahşap merdiven; sağda kırmızı yapraklı çalılar ve tel çit",
+    "en": "Timber stairs going down between stone blocks, with red-leaved shrubs and a mesh fence on the right"
+  },
+  "caption": {
+    "tr": "Taş blokların arasında basamaklar aşağı iniyor. Sağdaki kırmızı çalılar yeşil çitin önünde sıralanmış.",
+    "en": "The steps go down between the stone blocks. Red shrubs on the right line up in front of the green fence."
+  },
+  "seoFilename": "tas-bloklar-arasinda-ahsap-merdiven-kirmizi-calilar",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

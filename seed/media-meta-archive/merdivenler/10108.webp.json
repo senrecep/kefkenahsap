@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/10108.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dar bahçe geçidinde uzaktan ahşap merdiven",
+    "en": "Timber outdoor stairs in a narrow garden passage, seen from a distance"
+  },
+  "alt": {
+    "tr": "Dar bahçe geçidinde ev duvarı ile çalılar arasında uzanan ahşap dış merdiven, uzaktan görünüm",
+    "en": "Timber outdoor staircase running between a house wall and shrubs in a narrow garden passage, seen from a distance"
+  },
+  "caption": {
+    "tr": "Merdiven dar geçide tam oturmuş ve düz bir hatla yukarı çıkıyor. Solda sık bir çalı, sağda ev duvarı var.",
+    "en": "The stairs fit the narrow passage and climb in a straight line. Dense shrubs are on the left and the house wall on the right."
+  },
+  "seoFilename": "dar-bahce-gecidinde-uzaktan-ahsap-dis-merdiven",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

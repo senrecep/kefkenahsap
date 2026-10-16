@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/10352.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Vernikli sıcak tonlu lambri tavan, kırık çatı hattı",
+    "en": "Warm varnished panelled ceiling with a broken roof line"
+  },
+  "alt": {
+    "tr": "Ortada tepe çizgisi olan, bal-kahve tonlarında vernikli lambri tavan ve alt uçta ışık alan bir pencere",
+    "en": "Varnished panelled ceiling in honey-brown tones with a ridge line in the middle"
+  },
+  "caption": {
+    "tr": "Şeritlerin arasındaki ince oluklar vernikle belirginleşmiş. Tavan köşelere doğru koyulaşıyor.",
+    "en": "The thin grooves between the strips are picked out by the varnish. The ceiling darkens towards the corners."
+  },
+  "seoFilename": "vernikli-sicak-tonlu-lambri-tavan-kirik-cati-hatti",
+  "tags": {
+    "type": [
+      "tavan kaplaması / lambri"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

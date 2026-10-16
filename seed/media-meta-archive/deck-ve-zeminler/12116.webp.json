@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/12116.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yeşil bitkinin yanında işlenmemiş çam deck tahtaları",
+    "en": "Untreated pine deck boards beside a green shrub"
+  },
+  "alt": {
+    "tr": "Tuğla duvarın önünde, kenarında yeşil bitki olan açık renkli, işlenmemiş ahşap deck tahtaları",
+    "en": "Pale untreated timber deck boards in front of a brick wall, with a green shrub at the edge"
+  },
+  "caption": {
+    "tr": "Tahtalar çıplak, üzerinde boya ya da yağ yok. Damarlar ve budak izleri açıkça görünüyor.",
+    "en": "The boards are bare, with no stain or oil on them. The grain and knots are clearly visible."
+  },
+  "seoFilename": "yesil-bitki-yaninda-islenmemis-cam-deck-tahtalari",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

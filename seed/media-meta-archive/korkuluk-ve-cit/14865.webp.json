@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/14865.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Parlak kırmızı tuğla terasta siyah korkuluk",
+    "en": "Black railing on a glossy red brick terrace"
+  },
+  "alt": {
+    "tr": "Parlak, yeni cilalanmış kırmızı tuğla desenli teras zemini ve çevresinde siyah demir korkuluk, üstünde ahşap küpeşte",
+    "en": "Glossy, freshly sealed red brick terrace floor with a black iron railing and a timber handrail around it"
+  },
+  "caption": {
+    "tr": "Zemin ıslak gibi parlıyor, korkuluk terası üç yandan çevreliyor.",
+    "en": "The floor shines as if wet, and the railing encloses the terrace on three sides."
+  },
+  "seoFilename": "parlak-kirmizi-tugla-desenli-teras-siyah-korkuluk",
+  "tags": {
+    "type": [
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

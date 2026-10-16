@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/14829.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar üzerine oturan deck",
+    "en": "Deck sitting on a stone wall"
+  },
+  "alt": {
+    "tr": "Doğal taş örgülü alçak bir duvarın üstüne oturan koyu kırmızı kahverengi deck; arkada çam ağaçları, zeytin ve selviler",
+    "en": "Dark red-brown deck resting on a low natural-stone wall, with pine trees, olives and cypresses behind"
+  },
+  "caption": {
+    "tr": "Duvarın taşları deckin kenarına kadar çıkıyor, altta kumlu zemin uzanıyor. Deckin ucunda uzun bir selvi yükseliyor.",
+    "en": "The stones of the wall rise right up to the deck edge, with sandy ground below. A tall cypress rises at the end of the deck."
+  },
+  "seoFilename": "tas-duvar-uzerine-oturan-deck-ve-selvi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/13196.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz kenarında koyu kırmızı kahverengi yağlı deck",
+    "en": "Dark red-brown oiled deck at the pool edge"
+  },
+  "alt": {
+    "tr": "Havuz kenarında koyu kırmızı kahverengi yağlı deck; kaplanmamış zemin ve ızgara görünüyor",
+    "en": "Dark red-brown oiled deck at the pool edge, with unboarded ground and a grille showing"
+  },
+  "caption": {
+    "tr": "Aynı deck yağlandıktan sonra çok daha koyu ve derin bir ton almış. Havuz kenar taşı ve çit yanda duruyor.",
+    "en": "After oiling, the same deck has taken on a much darker, deeper tone. The pool edge stones and a hedge stand beside it."
+  },
+  "seoFilename": "havuz-kenarinda-koyu-kirmizi-kahverengi-yagli-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

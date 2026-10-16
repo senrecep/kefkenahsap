@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/548.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kıyıdaki kayalık üzerinde ayaklı pergolalı deck",
+    "en": "Pergola deck on posts over a rocky shore"
+  },
+  "alt": {
+    "tr": "Deniz kıyısında taş duvarın üstünde ayaklarla yükselen, X korkuluklu ve pergola iskeletli deck, uzakta dağlar",
+    "en": "Deck raised on posts above a stone wall by the sea, with X-pattern railings and a pergola frame, mountains in the distance"
+  },
+  "caption": {
+    "tr": "Deck kıyıdan denize doğru çıkıyor. Altında ayaklar ve taş duvar var, üstü pergola iskeletiyle kapanıyor.",
+    "en": "The deck projects from the shore toward the sea with posts and a stone wall beneath and a pergola frame above."
+  },
+  "seoFilename": "kiyidaki-kayalik-uzerinde-ayakli-pergolali-deck",
+  "tags": {
+    "type": [
+      "deck",
+      "pergola",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı",
+      "ticari mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

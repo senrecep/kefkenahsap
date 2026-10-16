@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/6078.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kırmızımsı deck ve bank, filtreli görüntü",
+    "en": "Reddish deck and bench, filtered image"
+  },
+  "alt": {
+    "tr": "Kırmızımsı kahverengi deck ve arkasında yatay tahtalı ahşap bank; krem çerçeveli renkli filtre efektiyle çekilmiş",
+    "en": "Reddish-brown deck with a horizontal-board timber bench behind, shot with a colour filter effect and a cream border"
+  },
+  "caption": {
+    "tr": "Efekt renkleri sıcak ve doygun gösteriyor, gökyüzü mavi-yeşil bir tona dönmüş. Önde mor çiçekler görünüyor.",
+    "en": "The effect makes the colours warm and saturated and the sky takes on a blue-green tone. Purple flowers show in front."
+  },
+  "seoFilename": "kirmizimsi-deck-ve-bank-krem-cerceveli-renkli-filtre",
+  "tags": {
+    "type": [
+      "deck",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/8862.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Hasır koltuklu bahçe deck zemini",
+    "en": "Garden deck floor with a wicker armchair"
+  },
+  "alt": {
+    "tr": "Çimenlik içinde uzanan açık renkli deck zemini, sağda hasır koltuk, arkada cam sürgülü kapı ve saksı",
+    "en": "Light deck floor stretching into a lawn, with a wicker armchair on the right and a sliding glass door and plant pot behind"
+  },
+  "caption": {
+    "tr": "Deck tahtaları cam kapıdan çime doğru uzanıyor. Koltuk için yeterli yer kalmış.",
+    "en": "The boards run from the glass door out into the lawn, leaving enough room for the armchair."
+  },
+  "seoFilename": "hasir-koltuklu-bahce-deck-zemini",
+  "tags": {
+    "type": [
+      "deck",
+      "oturma grubu"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

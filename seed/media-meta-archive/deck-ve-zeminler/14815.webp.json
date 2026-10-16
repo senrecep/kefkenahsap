@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/14815.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Zeytin ağacı yanında korkuluklu deck",
+    "en": "Deck with a railing beside an olive tree"
+  },
+  "alt": {
+    "tr": "Bahçede zeytin ağacının yanında, korkuluğu ve yan duvarda oturma bölmesi olan ahşap deck; taş döşemeyle birleşiyor",
+    "en": "Timber deck in a garden next to an olive tree, with a railing and a seating box along the side wall, joined to stone paving"
+  },
+  "caption": {
+    "tr": "Deck taş döşemeye dik bir hatla bağlanıyor. Köşedeki alçak ahşap bölme bank olarak da kullanılabilir.",
+    "en": "The deck meets the stone paving along a square line. The low timber box in the corner can double as a bench."
+  },
+  "seoFilename": "zeytin-agaci-yaninda-korkuluklu-deck-ve-oturma-bolmesi",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

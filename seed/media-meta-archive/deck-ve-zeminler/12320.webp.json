@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/12320.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapılı evin önünde kırmızımsı kahverengi küçük deck",
+    "en": "Small reddish-brown deck in front of a house with glass doors"
+  },
+  "alt": {
+    "tr": "Cam kapılı evin önünde çimene uzanan kırmızımsı kahverengi küçük ahşap deck",
+    "en": "Small reddish-brown timber deck extending onto the lawn in front of a house with glass doors"
+  },
+  "caption": {
+    "tr": "Deck kapı çıkışında bir basamak yüksekliğinde duruyor. Boya yüzeyi eşit bir tonda kaplamış.",
+    "en": "The deck stands about one step high at the door exit. The stain covers the surface in an even tone."
+  },
+  "seoFilename": "cam-kapili-evin-onunde-kirmizimsi-kahverengi-kucuk-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "giriş"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

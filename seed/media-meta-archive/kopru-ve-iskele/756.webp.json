@@ -1,0 +1,40 @@
+{
+  "source": "Kopru ve Iskele/756.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Göl kıyısında geniş korkuluklu ahşap iskele platformu",
+    "en": "Wide railed timber pier platform on the lakeshore"
+  },
+  "alt": {
+    "tr": "Geniş açıdan, göl boyunca uzanan ve çevresi yatay korkuluklu açık renk ahşap platform; arkada tepeler ve uzak kıyı",
+    "en": "Wide-angle view of a light timber platform running along the lake with a horizontal railing around it"
+  },
+  "caption": {
+    "tr": "Platformun korkuluğu iki sıra yatay tahtadan yapılmış. Ortasında zemin tahtaları boyuna döşenmiş.",
+    "en": "The railing is made of two horizontal rails. The floor boards in the middle are laid lengthwise."
+  },
+  "seoFilename": "gol-kiyisinda-genis-korkuluklu-iskele-platformu",
+  "tags": {
+    "type": [
+      "iskele",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

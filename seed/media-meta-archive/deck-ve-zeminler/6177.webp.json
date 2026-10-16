@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/6177.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Toprak zeminde uzun ahşap kirişler",
+    "en": "Long timber joists on bare soil"
+  },
+  "alt": {
+    "tr": "Toprak zemin üzerine eşit aralıkla yerleştirilmiş uzun ahşap kirişler; arkada beyazımsı ahşap çit ve altta uzatma kablosu",
+    "en": "Long timber joists set at even spacing over bare soil, with a whitish timber fence behind"
+  },
+  "caption": {
+    "tr": "Kirişlerin etrafı çerçeve tahtasıyla kapanıyor. Zemin henüz düzleştirilmiş kuru toprak.",
+    "en": "The joists are enclosed by a frame board. The ground is dry soil that has been levelled."
+  },
+  "seoFilename": "toprak-zemin-uzerine-konmus-uzun-ahsap-kirisler-ahsap-cit",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

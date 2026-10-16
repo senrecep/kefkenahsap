@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/10342.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Eğimli ahşap tavan, çokgen pencere çevresi",
+    "en": "Sloping timber ceiling around a polygonal window"
+  },
+  "alt": {
+    "tr": "Çokgen pencerenin çevresini saran, eğimli açık tonlu ahşap tavan kaplaması ve yanda alçı duvar",
+    "en": "Sloping light timber ceiling lining that wraps around a polygonal window, with a plastered wall beside it"
+  },
+  "caption": {
+    "tr": "Lambri şeritler pencerenin köşelerine göre kesilip uyumlanmış.",
+    "en": "The panelling strips are cut to fit the corners of the window."
+  },
+  "seoFilename": "egimli-ahsap-tavan-kaplamasi-cokgen-pencere-cevresi",
+  "tags": {
+    "type": [
+      "tavan kaplaması / lambri"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

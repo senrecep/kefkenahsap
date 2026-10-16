@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/12454.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapı önünde sökülmüş eski deck iskeleti",
+    "en": "Stripped-back old deck frame at a glass door"
+  },
+  "alt": {
+    "tr": "Cam kapının önünde tahtaları sökülmüş, eski ahşap deck alt iskeleti açıkta duruyor",
+    "en": "Old timber deck frame stripped of its boards and left exposed in front of a glass door"
+  },
+  "caption": {
+    "tr": "Kirişler çapraz parçalarla birbirine bağlı. Altında beton zemin görünüyor, yeni döşeme için hazırlık yapılıyor.",
+    "en": "The joists are tied together with diagonal braces. A concrete floor shows beneath, ready for new boarding."
+  },
+  "seoFilename": "cam-kapi-onunde-sokulmus-eski-deck-iskeleti",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

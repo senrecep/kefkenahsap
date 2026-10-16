@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/7816.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Duş kabini içinde bank ve askı yuvaları",
+    "en": "Bench and hooks inside a shower cabin"
+  },
+  "alt": {
+    "tr": "Duş kabininin içinde yatay kaplı ahşap duvar, bank ve duvardaki askı yuvaları; çıtalı tavan",
+    "en": "Inside a shower cabin: a horizontally boarded timber wall, a bench, hooks in the wall and a slatted ceiling"
+  },
+  "caption": {
+    "tr": "Duvar tahtaları birbirine sıkıca geçmiş. Duvarda renkli küçük askılıklar duruyor, yanda bir bank uzanıyor.",
+    "en": "The wall boards fit tightly together. Small coloured hooks sit on the wall and a bench runs alongside."
+  },
+  "seoFilename": "dus-kabini-ici-yatay-kapli-duvar-bank-ve-aski-yuvalari",
+  "tags": {
+    "type": [
+      "duş / soyunma kabini"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

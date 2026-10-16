@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/15191.webp",
+  "category": "ahsap-ev-ve-bungalov",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Koyu ahşap kaplamalı modüler yapı",
+    "en": "Modular building clad in dark timber"
+  },
+  "alt": {
+    "tr": "Koyu ahşap kaplamalı, camlı kapısı olan dikdörtgen modüler yapı, önü desenli taş döşeli",
+    "en": "Rectangular modular building clad in dark timber with a glazed door, set on patterned paving"
+  },
+  "caption": {
+    "tr": "Dikdörtgen gövdenin dış yüzü yatay ahşap kaplama. Cam kapılı ön cephe ve kilit taş zemin görünüyor.",
+    "en": "The outside of the box-shaped body is clad in horizontal timber. The glazed front and the interlocking-stone ground are visible."
+  },
+  "seoFilename": "koyu-ahsap-kapli-moduler-yapi",
+  "tags": {
+    "type": [
+      "ahşap ev / bungalov"
+    ],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

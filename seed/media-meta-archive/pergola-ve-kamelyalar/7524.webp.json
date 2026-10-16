@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/7524.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Eğik çatı iskeletli ahşap kamelya, arkada körfez ve yamaç evleri",
+    "en": "Timber gazebo with a pitched roof frame, the bay and hillside houses behind"
+  },
+  "alt": {
+    "tr": "Eğik çatı iskeletli ahşap kamelya, çiçekli yamacın yanında deniz kenarı zemini; arkada körfez ve yamaç evleri",
+    "en": "Timber gazebo with a pitched roof frame beside a flowering bank on a waterside floor, with the bay and hillside houses behind"
+  },
+  "caption": {
+    "tr": "Kamelya körfeze bakıyor, çatı tahtaları yeni kaplanmış. Önünde pembe çiçekli bir yamaç var.",
+    "en": "The gazebo faces the bay with freshly laid roof boards. A slope with pink flowers lies in front."
+  },
+  "seoFilename": "egik-cati-iskeletli-kamelya-korfez-yamac-evleri",
+  "tags": {
+    "type": [
+      "kamelya"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/7906.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Göl manzaralı balkonda boyalı deck",
+    "en": "Painted deck on a lake-view balcony"
+  },
+  "alt": {
+    "tr": "Göle bakan koyu renkli korkuluklu balkonda koyu kırmızımsı kahverengiye boyanmış deck; köşede bir boya kutusu",
+    "en": "Deck painted dark reddish-brown on a balcony facing a lake with a dark railing, with a paint tin in the corner"
+  },
+  "caption": {
+    "tr": "Korkuluk dikey çıtalarla örülmüş ve köşede bir destek payandası var. Uzakta göl ve yeşil bir alan seçiliyor.",
+    "en": "The railing is built from vertical slats and has a support brace at the corner. The lake and a green field can be made out in the distance."
+  },
+  "seoFilename": "goel-manzarali-koyu-korkuluklu-balkon-boyali-deck",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "balkon"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

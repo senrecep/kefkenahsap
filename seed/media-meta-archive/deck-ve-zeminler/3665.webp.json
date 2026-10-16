@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/3665.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz çevresinde açık renkli deck",
+    "en": "Pale deck around a pool"
+  },
+  "alt": {
+    "tr": "Mavi havuzu çevreleyen açık renkli emprenyeli çam deck; solda şemsiyeli ahşap bir salıncak, yanda çimen ve taş duvar",
+    "en": "Pale pressure-treated pine deck surrounding a blue pool, with a timber swing with a canopy on the left and lawn"
+  },
+  "caption": {
+    "tr": "Tahtalar havuzun ızgaralı kenarına dik döşenmiş. Yerde uzanan bir kablo deckin yanından geçiyor.",
+    "en": "The boards are laid square to the grated pool edge. A cable lies along the deck."
+  },
+  "seoFilename": "havuz-cevresinde-acik-renkli-deck-ve-ahsap-salincak",
+  "tags": {
+    "type": [
+      "deck",
+      "salıncak"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

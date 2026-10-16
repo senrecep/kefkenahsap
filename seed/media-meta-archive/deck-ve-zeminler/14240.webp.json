@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14240.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yeşil deck basamağı ve ağaçlar arasında hamak",
+    "en": "Green deck step with a hammock among trees"
+  },
+  "alt": {
+    "tr": "Çam ağaçlarının altında yeşile boyanmış deck, ön kenarında yine yeşil boyalı bir basamak, arkada hamak",
+    "en": "Green-painted deck under pine trees, with a green-painted step at its front edge and a hammock behind"
+  },
+  "caption": {
+    "tr": "Basamak deckten bahçe zeminine iniyor. Deck tahtaları boyuna döşenmiş ve üzerinde yağmur damlaları var.",
+    "en": "The step leads from the deck down to the garden floor. The boards run lengthwise and carry raindrops."
+  },
+  "seoFilename": "yesil-deck-basamagi-ve-hamak",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "orman / kır"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

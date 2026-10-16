@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/13542.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Duvar ve çalılık kenarında parlak cilalı deck tahtaları",
+    "en": "Glossy varnished deck boards beside a wall and shrubbery"
+  },
+  "alt": {
+    "tr": "Duvar ve çalılık kenarında uzanan parlak cilalı turuncu kahverengi deck tahtaları",
+    "en": "Glossy varnished orange-brown deck boards stretching along a wall and shrubbery"
+  },
+  "caption": {
+    "tr": "Tahtalar dar şeritte yan yana sıralanmış ve çalıların kırmızı yaprakları deck'e karşı duruyor. Cila altında ahşabın damarı seçiliyor.",
+    "en": "The boards are lined up side by side along the narrow strip and the red leaves of the shrubs stand out against the deck. The grain shows under the varnish."
+  },
+  "seoFilename": "duvar-ve-calilik-kenarinda-parlak-cilali-deck-tahtalari",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

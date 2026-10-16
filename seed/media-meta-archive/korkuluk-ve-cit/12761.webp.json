@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/12761.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sarı duvar önünde terasta beyaz boyalı ayaklı kafes panel",
+    "en": "White-painted lattice panel on feet on a terrace in front of a yellow wall"
+  },
+  "alt": {
+    "tr": "Sarı cepheli evin terasında, panjurlu pencerenin yanında beyaz boyalı çaprazlı ayaklı kafes panel; karo zeminde",
+    "en": "A white-painted diagonal lattice panel on feet on the terrace of a yellow-fronted house beside a shuttered window"
+  },
+  "caption": {
+    "tr": "Panel pencerenin önünde ayakları üstünde dikili duruyor. Arkasından pencere ve panjur görünüyor.",
+    "en": "The panel stands upright on its feet in front of the window. The window and shutter can be seen behind it."
+  },
+  "seoFilename": "sari-duvar-onunde-terasta-beyaz-ayakli-kafes-panel",
+  "tags": {
+    "type": [
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

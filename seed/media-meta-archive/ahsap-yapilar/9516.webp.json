@@ -1,0 +1,36 @@
+{
+  "source": "Ahsap Yapilar/9516.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz boyalı ve doğal lambri numune panosu",
+    "en": "Sample board of white-painted and natural tongue-and-groove boards"
+  },
+  "alt": {
+    "tr": "Yan yana dizilmiş, beyaz boyalı ve doğal tonlu lambri tahtalarından oluşan numune panosu",
+    "en": "Sample board of tongue-and-groove boards set side by side, white-painted and natural in tone"
+  },
+  "caption": {
+    "tr": "Dört tahta beyaza boyanmış, sağdaki tahta boyasız doğal tonda. Numune küçük bir ahşap ayak üstünde duruyor.",
+    "en": "Four boards are painted white and the board on the right is unpainted in its natural tone. The sample stands on a small timber foot."
+  },
+  "seoFilename": "beyaz-boyali-ve-dogal-lambri-tahta-numune-panosu",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "boyalı",
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.5
+}

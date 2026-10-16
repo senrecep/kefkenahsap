@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/15172.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Gün batımında korkuluklu kamelya, önde merdivenler ve istif tahtalar",
+    "en": "Railed gazebo at sunset with ladders and stacked boards in front"
+  },
+  "alt": {
+    "tr": "Gün batımı ışığında korkuluklu kamelya, önde merdivenler, mavi iskele ve yığılmış tahtalar; taş basamaklı çimlik",
+    "en": "Railed gazebo in sunset light with ladders, blue scaffolding and stacked boards in front, and stepping stones across the lawn"
+  },
+  "caption": {
+    "tr": "Kamelya dört yöne eğimli bir çatı ve çapraz korkulukla yükseliyor. Kenarda beton çiçeklik blokları sıralanmış.",
+    "en": "The gazebo rises with a hipped roof and cross-braced rail. Concrete planter blocks line the edge."
+  },
+  "seoFilename": "gun-batiminda-korkuluklu-kamelya-istif-tahtalar",
+  "tags": {
+    "type": [
+      "kamelya",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

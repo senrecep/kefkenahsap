@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/14692.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Eskimiş grileşmiş deck tahtaları",
+    "en": "Aged, greyed deck boards"
+  },
+  "alt": {
+    "tr": "Yılların etkisiyle grileşmiş deck tahtaları; ortada çürümüş ve dağılmış bir boşluk, bir tahta yana kalkmış",
+    "en": "Deck boards turned grey with age, with a rotted, broken-up gap in the middle and one board lifted to the side"
+  },
+  "caption": {
+    "tr": "Yüzeyde çatlaklar ve lif kopmaları var. Boşluğun içinde kuru yaprak ve çürümüş ahşap parçaları görünüyor.",
+    "en": "The surface shows cracks and torn fibres. Dry leaves and rotted wood fragments are visible inside the gap."
+  },
+  "seoFilename": "eskimis-grilesmis-deck-tahtalari-cokmus-bosluk",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

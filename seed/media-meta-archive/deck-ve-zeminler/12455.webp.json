@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/12455.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kumlu zeminde kalın kirişli deck alt çerçevesi",
+    "en": "Deck sub-frame of thick joists on sandy ground"
+  },
+  "alt": {
+    "tr": "Kumlu zeminde, kalın ahşap kirişlerle kurulmuş deck alt çerçevesi; arkada bahçe ve mavi bir fıçı",
+    "en": "Deck sub-frame built from thick timber joists on sandy ground, with a garden and a blue barrel behind"
+  },
+  "caption": {
+    "tr": "Dış çerçeve kalın kirişlerle kapatılmış ve içine ara kirişler yerleştirilmiş. Ölçüleri tutturmak için iplerle çizgi çekilmiş.",
+    "en": "The outer frame is closed with thick joists and cross joists set inside. String lines mark the layout."
+  },
+  "seoFilename": "kumlu-zeminde-kalin-kirisli-deck-alt-cercevesi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

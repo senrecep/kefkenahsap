@@ -1,0 +1,38 @@
+{
+  "source": "Ireko-Teak/9134.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bahçe terasında kare ahşap yan masa",
+    "en": "Square timber side table on a garden terrace"
+  },
+  "alt": {
+    "tr": "Sarmaşıkların önündeki teraste, çıtalı üstü olan kare ahşap yan masa",
+    "en": "Square timber side table with a slatted top on a terrace in front of ivy"
+  },
+  "caption": {
+    "tr": "Masanın üstü ince çıtalardan, ayakları düz. Yanında bir masa daha görünüyor.",
+    "en": "The top is made of thin slats and the legs are straight. Another table is visible beside it."
+  },
+  "seoFilename": "bahce-terasinda-kare-ahsap-yan-masa",
+  "tags": {
+    "type": [
+      "sehpa"
+    ],
+    "wood": [],
+    "setting": [
+      "teras",
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

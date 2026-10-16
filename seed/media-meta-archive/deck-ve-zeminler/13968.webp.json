@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/13968.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam cepheli yapının yanında parlak deck",
+    "en": "Glossy deck beside a glass-fronted building"
+  },
+  "alt": {
+    "tr": "Çimenlik bahçede, cam duvarlı siyah çerçeveli yapının önüne döşenmiş kırmızımsı kahverengi vernikli deck",
+    "en": "Reddish-brown varnished deck laid on a lawn in front of a black-framed glass-walled structure"
+  },
+  "caption": {
+    "tr": "Deck çimenin hemen kenarında başlıyor ve cam duvarlı yapıya kadar uzanıyor. Yüzeyde parlak bir vernik katmanı var.",
+    "en": "The deck starts right at the edge of the lawn and runs up to the glass-walled building. The surface carries a glossy varnish coat."
+  },
+  "seoFilename": "cam-cepheli-yapi-yaninda-parlak-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

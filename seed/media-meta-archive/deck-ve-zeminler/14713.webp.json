@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14713.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Göl kenarında ıslak cilalı koyu deck",
+    "en": "Wet polished dark deck by the lake"
+  },
+  "alt": {
+    "tr": "Göle bakan, ıslak ve parlak cilalı koyu kahverengi deck; kenarında halat korkuluk, karşı kıyıda renkli evler",
+    "en": "Wet, shiny polished dark brown deck facing a lake, with a rope railing at its edge and colourful houses on the far shore"
+  },
+  "caption": {
+    "tr": "Işık tahtaların damarlarını öne çıkarıyor. Deck çalı ve ağaçların arasından gölün kenarına uzanıyor.",
+    "en": "The light brings out the grain of the boards. The deck stretches between shrubs and trees to the water's edge."
+  },
+  "seoFilename": "gol-kenarinda-islak-cilali-koyu-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

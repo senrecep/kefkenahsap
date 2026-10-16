@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/11440.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çatı terasında şeffaf örtülü vernikli ahşap pergola, yukarıdan",
+    "en": "Varnished timber pergola with a clear cover on a roof terrace, from above"
+  },
+  "alt": {
+    "tr": "Yukarıdan görünen çatı terasında vernikli ahşap pergola ve şeffaf çatı levhaları, çevrede apartmanlar",
+    "en": "Roof terrace pergola with varnished timber and clear roof sheets seen from above, with apartment blocks around"
+  },
+  "caption": {
+    "tr": "Şeffaf levhalar kiriş sıraları arasına yatay döşenmiş. Çatı kırmızı kaplamalı, üçgen pencereli bir bina görünüyor.",
+    "en": "The clear sheets are laid between rows of beams. A building with a red roof and a triangular window shows nearby."
+  },
+  "seoFilename": "cati-terasinda-seffaf-ortulu-vernikli-pergola",
+  "tags": {
+    "type": [
+      "pergola",
+      "sundurma / saçak / carport"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

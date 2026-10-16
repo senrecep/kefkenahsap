@@ -1,0 +1,38 @@
+{
+  "source": "Kapi Dolap ve Seperator/11614.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Telörgülü X çaprazlı üç parçalı ahşap panel, arkada saksı bitkileri",
+    "en": "Three-section wire-mesh X-braced timber panel with potted plants behind"
+  },
+  "alt": {
+    "tr": "Terasta kiremit rengi karo üzerinde, tel kafesli ve X çaprazlı üç parçalı vernikli ahşap panel",
+    "en": "Three-section varnished timber panel with wire mesh and X braces on terracotta-coloured tiles on a terrace"
+  },
+  "caption": {
+    "tr": "Üç panel yan yana birleştirilmiş, üstte sivri çıtalar sıralı. Tel örgü X çaprazların arkasında geriliyor.",
+    "en": "The three panels are joined side by side with pointed slats in a row along the top. The wire mesh is stretched behind the X braces."
+  },
+  "seoFilename": "telorgulu-x-capraz-uc-parcali-ahsap-panel-saksi",
+  "tags": {
+    "type": [
+      "çit",
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

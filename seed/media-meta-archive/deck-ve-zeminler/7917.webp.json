@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/7917.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dikdörtgen havuz çevresinde geniş deck",
+    "en": "Wide deck around a rectangular pool"
+  },
+  "alt": {
+    "tr": "Dikdörtgen havuzun çevresini saran geniş açık renkli deck; yanında yüksek yeşil çit ve beyaz çakıl şeridi",
+    "en": "Wide pale deck surrounding a rectangular pool, with a tall green hedge beside it and a strip of white pebbles"
+  },
+  "caption": {
+    "tr": "Tahtalar havuz kenarına dik döşenmiş ve yüzeyde birkaç kapak çizgisi görünüyor. Ev duvarının dibinde bir bahçe hortumu duruyor.",
+    "en": "The boards are laid square to the pool edge and a few cover outlines show on the surface. A garden hose lies at the foot of the house wall."
+  },
+  "seoFilename": "dikdortgen-havuz-cevresinde-genis-acik-renkli-deck-ve-yuksek",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

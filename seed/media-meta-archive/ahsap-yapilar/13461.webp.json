@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/13461.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz boyalı kirişli veranda tavanı",
+    "en": "White-painted beamed veranda ceiling"
+  },
+  "alt": {
+    "tr": "Beyaz boyalı ahşap kirişleri ve tavan tahtaları görünen, altında oturma alanı olan veranda",
+    "en": "Veranda showing white-painted timber beams and ceiling boards, with a seating area underneath"
+  },
+  "caption": {
+    "tr": "Kirişler ve eğik destekler beyaza boyanmış, tavan tahtaları da aynı renkte. Verandanın altında masa ve sandalyeler duruyor.",
+    "en": "The beams and the angled braces are painted white and so are the ceiling boards. A table and chairs stand under the veranda."
+  },
+  "seoFilename": "beyaz-boyali-kirisli-veranda-tavani",
+  "tags": {
+    "type": [
+      "sundurma / saçak / carport",
+      "tavan kaplaması / lambri"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

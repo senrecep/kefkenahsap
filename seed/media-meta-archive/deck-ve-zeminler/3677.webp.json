@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/3677.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz içine uzanan platform ve beyaz şemsiye",
+    "en": "Platform reaching into the pool, with a white parasol"
+  },
+  "alt": {
+    "tr": "Havuzun üzerine uzanan açık renkli ahşap platform ve onu kıyıya bağlayan dar yürüyüş yolu; üstünde büyük beyaz bir şemsiye",
+    "en": "Pale timber platform extending over the pool and a narrow walkway linking it to the shore, with a large white parasol above"
+  },
+  "caption": {
+    "tr": "Platform suyun üstünde küçük bir ada gibi duruyor. Arkada taş kaplı bir duvar ve yeşillik uzanıyor.",
+    "en": "The platform sits above the water like a small island. A stone-clad wall and greenery stretch behind."
+  },
+  "seoFilename": "havuz-icine-uzanan-platform-ve-beyaz-semsiye",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

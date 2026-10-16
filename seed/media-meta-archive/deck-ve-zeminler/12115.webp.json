@@ -1,0 +1,40 @@
+{
+  "source": "Deck ve Zeminler/12115.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Tuğla duvar önünde işlem görmemiş açık renkli deck",
+    "en": "Untreated pale deck in front of a brick wall"
+  },
+  "alt": {
+    "tr": "Çimen kenarında, tuğla duvar önünde işlem görmemiş açık renkli çam deck ve arkasında ahşap bank",
+    "en": "Untreated pale pine deck at the lawn edge in front of a brick wall, with a timber bench behind"
+  },
+  "caption": {
+    "tr": "Tahtalar henüz boyanmamış ve yağlanmamış. Deck, evin cam kapısından çimene doğru uzanıyor.",
+    "en": "The boards are not yet stained or oiled. The deck runs from the glass door of the house out to the lawn."
+  },
+  "seoFilename": "tugla-duvar-onunde-islem-gormemis-deck",
+  "tags": {
+    "type": [
+      "deck",
+      "bank"
+    ],
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

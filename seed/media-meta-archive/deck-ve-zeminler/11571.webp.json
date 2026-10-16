@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/11571.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapı önünde deck, masa ve ayakkabılık",
+    "en": "Deck with table and shoe rack by the glass door"
+  },
+  "alt": {
+    "tr": "Cam kapının önünde ahşap deck, üzerinde masa, ahşap ayakkabılık ve saksı bitkileri",
+    "en": "Timber deck in front of a glass door, with a table, a wooden shoe rack and potted plants"
+  },
+  "caption": {
+    "tr": "Deck, evin çıkışını bahçedeki taş yola bağlıyor. Yan tarafta saksılar sıralanmış.",
+    "en": "The deck links the house exit to the stone path in the garden. Potted plants line one side."
+  },
+  "seoFilename": "cam-kapi-onunde-deck-ayakkabilik",
+  "tags": {
+    "type": [
+      "deck",
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "teras",
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/14516.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dağ manzarasında yatay çıtalı çit",
+    "en": "Horizontal-rail fence with a mountain view"
+  },
+  "alt": {
+    "tr": "Kırmızı topraklı arazide uzayıp giden iki sıra yatay çıtalı ahşap çit, arkada zeytinlik ve dağ",
+    "en": "Long double-rail timber fence on red soil, with an olive grove and mountain behind"
+  },
+  "caption": {
+    "tr": "Çit eğimli arazinin kenarını izleyerek uzuyor, önde boş bir boru parçası duruyor.",
+    "en": "The fence follows the edge of the sloping plot, with an empty pipe section lying in front."
+  },
+  "seoFilename": "kirmizi-topraga-uzanan-yatay-citali-cit-dag-manzarasi",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

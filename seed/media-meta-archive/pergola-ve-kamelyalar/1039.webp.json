@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/1039.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kıyıda kirişli üst örtüsü ve deck zeminiyle ahşap yapı",
+    "en": "Seafront timber structure with roof beams and a deck floor"
+  },
+  "alt": {
+    "tr": "Kıyıdaki ahşap yapıda direkler, üst örtü kirişleri ve geniş deck zemin; işçiler zemin tahtası döşüyor",
+    "en": "Seafront timber structure with posts, overhead beams and a wide deck floor, workers laying boards"
+  },
+  "caption": {
+    "tr": "Zemin tahtaları yeni döşenmiş ve çok sayıda direk görünüyor. Arkada palmiyeler ve yamaç var.",
+    "en": "The floor boards are freshly laid and many posts are visible. Palm trees and a slope lie behind."
+  },
+  "seoFilename": "kiyida-kirisli-ust-ortu-deck-zeminli-ahsap-yapi",
+  "tags": {
+    "type": [
+      "pergola",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

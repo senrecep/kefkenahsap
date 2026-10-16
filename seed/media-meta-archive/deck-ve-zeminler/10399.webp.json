@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/10399.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çakıl dolgulu deck kiriş altyapısı, üstten",
+    "en": "Gravel-filled deck joist substructure from above"
+  },
+  "alt": {
+    "tr": "Kirişler arası çakılla doldurulmuş ahşap deck altyapısı, üstten görünüş",
+    "en": "Timber deck substructure with the gaps between joists filled with gravel, seen from above"
+  },
+  "caption": {
+    "tr": "Kirişler eşit aralıkla düzülmüş, aralar gri çakılla dolu. Kenarda duvar ve çalılar duruyor.",
+    "en": "The joists are laid at equal spacing with grey gravel in between. A wall and shrubs stand at the edge."
+  },
+  "seoFilename": "cakil-dolgulu-araliklarla-yapilmis-ahsap-deck-kiris",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

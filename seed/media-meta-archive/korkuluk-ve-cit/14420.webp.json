@@ -1,0 +1,39 @@
+{
+  "source": "Ireko-Teak/14420.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bitkiler arasında yatay çıtalı ahşap paravan ve çapraz korkuluk",
+    "en": "Horizontal-slat timber screen and cross-braced railing among plants"
+  },
+  "alt": {
+    "tr": "Taş basamak plakalarının yanında, bitkilerin arasındaki yatay çıtalı ahşap paravan ve X çaprazlı korkuluk",
+    "en": "A horizontal-slat timber screen and an X-braced railing among plants beside stone stepping slabs"
+  },
+  "caption": {
+    "tr": "Paravan yatay çıtalarla örülmüş, korkuluk X çaprazlarıyla ayrı bir bölüm oluşturuyor. Taş plakalardan bir yol çalıların arasından geçiyor.",
+    "en": "The screen is made of horizontal slats and the X-braced railing forms a separate section. A path of stone slabs passes between the shrubs."
+  },
+  "seoFilename": "bitkiler-arasinda-yatay-citali-paravan-capraz-korkuluk",
+  "tags": {
+    "type": [
+      "kafes / paravan",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

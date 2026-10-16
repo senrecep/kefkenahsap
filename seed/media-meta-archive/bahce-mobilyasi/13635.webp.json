@@ -1,0 +1,39 @@
+{
+  "source": "Ireko-Teak/13635.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bambu önünde ahşap arkalıklı bank ve gri zemin",
+    "en": "Bench with a timber back in front of bamboo on a grey floor"
+  },
+  "alt": {
+    "tr": "Bambu ve büyük yapraklı bitkilerin önünde, gri zeminde uzanan",
+    "en": "A long timber bench with a back of vertical boards and a seat whose corner is cut at an angle"
+  },
+  "caption": {
+    "tr": "Bank bambu bahçesinin önüne yerleştirilmiş. Arkalığın dikey tahtaları sıcak bir ton veriyor, gri zemin onu öne çıkarıyor.",
+    "en": "The bench is set in front of the bamboo planting. The vertical boards of the back give a warm tone that the grey floor sets off."
+  },
+  "seoFilename": "bambu-onunde-ahsap-arkalikli-bank-ve-gri-zemin-solda-bitki",
+  "tags": {
+    "type": [
+      "bank",
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/12135.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Balık sırtı desenli gri kahverengi deck",
+    "en": "Grey-brown deck in a herringbone-style pattern"
+  },
+  "alt": {
+    "tr": "İki farklı yönde, balık sırtı benzeri bir desenle döşenmiş gri kahverengi deck tahtaları",
+    "en": "Grey-brown deck boards laid in two directions to make a herringbone-like pattern"
+  },
+  "caption": {
+    "tr": "İki tahta grubu ortadaki çizgide V şeklinde birleşiyor. Bu düzen zemine hareketli bir görünüm veriyor.",
+    "en": "The two groups of boards meet in a V along the centre line. This layout gives the floor a lively look."
+  },
+  "seoFilename": "balik-sirti-desenli-gri-kahverengi-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/14560.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Siyah metal çerçeveli ahşap çit ve kapı",
+    "en": "Timber slat fence and gate in a black metal frame"
+  },
+  "alt": {
+    "tr": "Siyah metal çerçeveye oturtulmuş kahverengi ahşap çıtalardan çit ve kapı, arkada çayır, ağaçlar ve küçük bir yapı",
+    "en": "Fence and gate of brown timber slats set in a black metal frame, with a meadow, trees and a small building behind"
+  },
+  "caption": {
+    "tr": "Çıtalar metal çerçevenin içinde yan yana diziliyor. Önünde düzeltilmiş toprak var.",
+    "en": "The slats sit side by side inside the metal frame. Levelled soil lies in front."
+  },
+  "seoFilename": "siyah-metal-cerceveli-ahsap-citali-cit-ve-kapi",
+  "tags": {
+    "type": [
+      "çit",
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

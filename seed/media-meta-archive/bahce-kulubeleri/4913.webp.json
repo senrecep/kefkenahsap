@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/4913.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimenli bahçede kiremit çatılı küçük kabin",
+    "en": "Small cabin with a tile roof on a lawned garden"
+  },
+  "alt": {
+    "tr": "Geniş çimli bahçenin ucunda, kiremit çatılı, kahverengi vernikli küçük ahşap kabin; yanında bir araç",
+    "en": "Small brown-varnished timber cabin with a tile roof at the end of a wide lawned garden, with a vehicle beside it"
+  },
+  "caption": {
+    "tr": "Kabinin önünde ahşap bir sekü ile çevrili çim alan uzanıyor. Arkada yamaç, solda çam ağaçları ve bir söğüt var.",
+    "en": "A lawn edged by a timber border runs in front of the cabin. A slope lies behind with conifers on the left and a willow."
+  },
+  "seoFilename": "cimenli-bahcede-kiremit-catili-kucuk-ahsap-kabin-yaninda",
+  "tags": {
+    "type": [
+      "bahçe kulübesi / depo"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

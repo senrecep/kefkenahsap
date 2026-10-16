@@ -1,0 +1,35 @@
+{
+  "source": "Pergola ve Kamelyalar/9878.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Metal direkli geniş pergola, üstü beyaz örtülü, çevrede çalılar",
+    "en": "Wide metal-post pergola with a white cover and shrubs around"
+  },
+  "alt": {
+    "tr": "Antrasit metal direkli geniş pergola, üstü beyaz örtülü, önde sarı yeşil çalılar ve arkada bahçe çiti",
+    "en": "Wide pergola with anthracite metal posts and a white cover, with yellow-green shrubs in front and a garden fence behind"
+  },
+  "caption": {
+    "tr": "Pergolanın metal çerçevesi bahçenin üzerine geniş bir gölge açıyor. Altında bir çalışma tezgâhı ve kırmızı bir kap seçiliyor.",
+    "en": "The pergola's metal frame spreads a wide shade over the garden. A work bench and a red container can be made out beneath."
+  },
+  "seoFilename": "metal-direkli-genis-pergola-beyaz-ortulu-calilar",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

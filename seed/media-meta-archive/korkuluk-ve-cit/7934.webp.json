@@ -1,0 +1,40 @@
+{
+  "source": "Korkuluk ve Cit/7934.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ev yanında piket kapı ve çapraz korkuluk",
+    "en": "Picket gate and cross-braced railing beside a house"
+  },
+  "alt": {
+    "tr": "Evin yan duvarında basamak başına konmuş yeşilimsi ahşap piket kapı ve solda X çaprazlı korkuluk, arkada şehir manzarası",
+    "en": "Greenish timber picket gate fitted at the head of steps against the side of a house, with an X-braced railing on the left"
+  },
+  "caption": {
+    "tr": "Kapı alçak ve ucu kavisli çıtalı. Soldaki korkuluk bahçe kenarını kapatıyor.",
+    "en": "The gate is low with curved-top pickets. The railing on the left closes the garden edge."
+  },
+  "seoFilename": "ev-yaninda-piket-kapi-ve-yan-capraz-korkuluk-manzara",
+  "tags": {
+    "type": [
+      "bahçe kapısı",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

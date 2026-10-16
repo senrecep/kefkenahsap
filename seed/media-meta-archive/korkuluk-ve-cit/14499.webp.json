@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/14499.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Toprak zeminde çit ve çaprazlı kapı çerçevesi",
+    "en": "Fence and braced gate frame on bare ground"
+  },
+  "alt": {
+    "tr": "Kırmızı toprak zeminde ahşap yatay çıtalı çit hattı ve içinde çaprazlı kapı çerçevesi, uzakta ağaçlı tepe",
+    "en": "Horizontal-rail timber fence line on red soil with a braced gate frame in it, and a wooded hill in the distance"
+  },
+  "caption": {
+    "tr": "Kapı çerçevesi çit hattına dahil, çapraz kuşak kapıyı dik tutuyor.",
+    "en": "The gate frame is part of the fence line, and the diagonal brace keeps it square."
+  },
+  "seoFilename": "toprak-zeminde-yatay-citali-cit-ve-caprazli-kapi",
+  "tags": {
+    "type": [
+      "çit",
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

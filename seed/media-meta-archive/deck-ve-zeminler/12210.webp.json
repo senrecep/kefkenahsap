@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12210.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ağaç gövdesine delik bırakılarak başlanan döşeme",
+    "en": "Boarding begun with an opening left for the tree trunk"
+  },
+  "alt": {
+    "tr": "Ağaç gövdesi için boşluk bırakılarak üstüne tahta döşenmeye başlanmış kiriş iskeleti",
+    "en": "Joist frame with the first boards going down on top and a gap left around the tree trunk"
+  },
+  "caption": {
+    "tr": "Tahtalar ağacın çevresinden başlıyor ve gövde güvenle dışarıda kalıyor. Üstte matkaplar ve vidalar duruyor.",
+    "en": "The boards start around the tree and the trunk is left clear. Drills and screws lie on top."
+  },
+  "seoFilename": "agac-govdesine-delik-birakilarak-baslanan-doseme",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

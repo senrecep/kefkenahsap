@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/12188.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş işçilikli kavisli bank üzerinde vernikli pergola, beyaz çakıl",
+    "en": "Varnished pergola over a curved bench with stonework and white pebbles"
+  },
+  "alt": {
+    "tr": "Taş örgülü kavisli ahşap bankın üstünde vernikli pergola, çimlik ve beyaz çakıl şeridi",
+    "en": "Varnished timber pergola over a curved timber bench on a stone-laid base, with lawn and a strip of white pebbles"
+  },
+  "caption": {
+    "tr": "Taş örgü bankın tabanını oluşturuyor, üstü ahşap tahtayla kaplı. Pergolanın kirişleri üstte çaprazlanıyor.",
+    "en": "The stonework forms the base of the bench with timber boards on top. The pergola beams cross overhead."
+  },
+  "seoFilename": "tas-iscilikli-kavisli-bank-vernikli-pergola",
+  "tags": {
+    "type": [
+      "pergola",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

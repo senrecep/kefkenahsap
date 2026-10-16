@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/13050.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Camlı bina yanında koyu basamaklı merdiven",
+    "en": "Dark-tread stairs beside a glazed building"
+  },
+  "alt": {
+    "tr": "Camlı binanın yanında yukarıdan görünen koyu renkli desenli metal basamaklar ve ahşap küpeşte",
+    "en": "Dark patterned metal treads seen from above beside a glazed building, with a timber handrail"
+  },
+  "caption": {
+    "tr": "Koyu basamaklar şevden aşağıya iniyor, küpeşte ahşap. Yanda gri tahta kaplı bir geçit uzanıyor.",
+    "en": "The dark treads run down the slope with a timber handrail. A grey boarded walkway runs alongside."
+  },
+  "seoFilename": "camli-bina-yaninda-koyu-basamakli-merdiven-ahsap-kupeste",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

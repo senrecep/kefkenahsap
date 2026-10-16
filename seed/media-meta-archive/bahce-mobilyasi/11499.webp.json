@@ -1,0 +1,38 @@
+{
+  "source": "Ireko-Teak/11499.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş zeminde oval ahşap masa ve katlanır kolçaklı sandalyeler",
+    "en": "Oval timber table and folding armchairs on stone paving"
+  },
+  "alt": {
+    "tr": "Taş döşemede, oval çıtalı bir ahşap yemek masası ve çevresine yerleştirilmiş",
+    "en": "On stone paving, an oval slatted timber dining table with folding slatted-back armchairs placed around it"
+  },
+  "caption": {
+    "tr": "Oval masa yuvarlak hatlarıyla sandalyelerin etrafında rahat bir düzen veriyor. Sandalyeler katlanıp yer açabiliyor.",
+    "en": "The oval table gives an easy arrangement around it with its rounded lines. The chairs fold away to save space."
+  },
+  "seoFilename": "tas-zeminde-oval-ahsap-masa-ve-alti-katlanir-kolcakli",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

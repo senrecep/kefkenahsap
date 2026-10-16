@@ -1,0 +1,40 @@
+{
+  "source": "Kapi Dolap ve Seperator/12665.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yoldan bakıldığında düz kapaklı uzun ahşap dolap",
+    "en": "Long timber cabinet with a flat lid seen from the path"
+  },
+  "alt": {
+    "tr": "Parke taşlı yol ve taş duvar yanında kızıl kahve, düz kapaklı, dikey tahtalı kapaklı uzun ahşap dolap",
+    "en": "Long red-brown timber cabinet with a flat lid and vertically boarded doors beside a cobbled path and stone wall"
+  },
+  "caption": {
+    "tr": "Dolap duvarın hattını izleyerek uzuyor. Kapaklar menteşeli, üst kapak düz tahtalı.",
+    "en": "The cabinet follows the line of the wall. The doors are hinged and the top is flat-boarded."
+  },
+  "seoFilename": "yoldan-bakildiginda-duz-kapakli-uzun-ahsap-dolap",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "bahçe",
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

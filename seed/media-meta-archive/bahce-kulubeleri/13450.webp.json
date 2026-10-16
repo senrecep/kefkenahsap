@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/13450.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Uzaktan köpek kulübesi, yeşil çatı ön planda",
+    "en": "Dog house from a distance with the green roof prominent"
+  },
+  "alt": {
+    "tr": "Atölye zemininde uzaktan görünen köpek kulübesi; yeşil shingle çatısı ve koyu ön cephe seçiliyor",
+    "en": "A dog house seen from a distance on a workshop floor, its green shingle roof and dark front visible"
+  },
+  "caption": {
+    "tr": "Kulübe kadrajın ortasında, çevresinde geniş boş bir zemin var. Arkada beyaz duvar ve bir merdiven duruyor.",
+    "en": "The house is in the middle of the frame with a wide empty floor around it. A white wall and a ladder stand behind."
+  },
+  "seoFilename": "kopek-kulubesi-uzaktan-yesil-shingle-cati-ve-on-cephe",
+  "tags": {
+    "type": [
+      "köpek kulübesi"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

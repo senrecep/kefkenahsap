@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/1146.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çapraz korkuluklu ahşap platform ve üzerinde pergola iskeleti",
+    "en": "Timber platform with an X-braced rail and a pergola frame above"
+  },
+  "alt": {
+    "tr": "Deniz kıyısında çapraz çıtalı korkuluğu olan ahşap platform ve üzerinde yükselen pergola iskeleti",
+    "en": "Timber platform on the shoreline with an X-braced railing and a pergola frame rising above it"
+  },
+  "caption": {
+    "tr": "Platform deniz seviyesinin üzerinde kurulu, deck tahtaları aralıklı döşenmiş. Yan tarafta korkuluk köşesi görünüyor.",
+    "en": "The platform is built above sea level with spaced deck boards. A railing corner can be seen at the side."
+  },
+  "seoFilename": "capraz-korkuluklu-ahsap-platform-pergola-iskeleti",
+  "tags": {
+    "type": [
+      "pergola",
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/7433.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam zemin üstünde ahşap pergola, beyaz teraslı ev ve deniz",
+    "en": "Timber pergola over a glass floor on a white terrace with the sea behind"
+  },
+  "alt": {
+    "tr": "Beyaz evin terasında cam zeminin üzerinde ahşap pergola, arkada deniz ve bir ağaç",
+    "en": "Timber pergola over a glass floor on the terrace of a white house, with the sea and a tree behind"
+  },
+  "caption": {
+    "tr": "Pergola kirişleri koyu tonlu ve teras duvarına oturuyor. Cam zemin alt kata ışık veriyor.",
+    "en": "The pergola beams are dark-toned and rest on the terrace wall. The glass floor lets light into the room below."
+  },
+  "seoFilename": "cam-zemin-ustunde-ahsap-pergola-beyaz-teras",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

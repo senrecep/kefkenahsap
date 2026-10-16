@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/8333.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz piket çit ve kapı, yanında taş bloklar",
+    "en": "White picket fence and gate beside stone blocks"
+  },
+  "alt": {
+    "tr": "İki taş blok arasındaki giriş boşluğuna oturan beyaz boyalı çıtalı kapı ve iki yana uzanan beyaz çit, arkada evler",
+    "en": "White-painted picket gate set in the entrance gap between two stone blocks, with white fence on both sides and houses behind"
+  },
+  "caption": {
+    "tr": "Kapının üst hattı kavisli, çit çıtaları iki yanda düz bir sıra halinde.",
+    "en": "The top line of the gate is curved, and the fence pickets form a straight row on both sides."
+  },
+  "seoFilename": "beyaz-boyali-piket-cit-ve-kapi-yaninda-tas-bloklar",
+  "tags": {
+    "type": [
+      "çit",
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

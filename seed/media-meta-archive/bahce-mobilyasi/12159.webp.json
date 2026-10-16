@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/12159.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Arka arkaya dizilmiş dört ahşap katlanır sandalye",
+    "en": "Four timber folding chairs lined up one behind the other"
+  },
+  "alt": {
+    "tr": "Kırmızımsı taş zeminde, yan yana değil art arda sıralanmış, çıtalı sırtlı turuncu kahve vernikli dört katlanır ahşap sandalye",
+    "en": "Four orange-brown varnished folding timber chairs with slatted backs lined up in a row on a reddish stone floor"
+  },
+  "caption": {
+    "tr": "Sandalyeler çıtalı sırtlığa ve katlanır ayağa sahip, aynı vernik tonunda. Katlandığında yan yana az yer tutuyorlar.",
+    "en": "The chairs have slatted backs and folding legs, all in the same varnish tone. Folded, they take little room side by side."
+  },
+  "seoFilename": "dort-ahsap-katlanir-sandalye-arka-arkaya-kirmizi-tas-zemin",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

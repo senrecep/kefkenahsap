@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/12580.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Renkli boyalı basamaklı eski merdiven",
+    "en": "Old stairs with colour-painted risers"
+  },
+  "alt": {
+    "tr": "Eski ahşap merdivende mavi, turuncu, yeşil ve sarıya boyanmış basamak yüzleri",
+    "en": "Old timber staircase with risers painted blue, orange, green and yellow"
+  },
+  "caption": {
+    "tr": "Basamakların alın tahtaları farklı renklere boyanmış. Üstteki basamaklar boyasız ve grileşmiş.",
+    "en": "The risers have been painted in different colours. The treads above are bare and greyed."
+  },
+  "seoFilename": "renkli-boyali-basamak-eski-ahsap-merdiven",
+  "tags": {
+    "type": [
+      "merdiven"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

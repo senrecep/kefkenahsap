@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/13626.webp",
+  "category": "mutfak-ve-gomme-dolap",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Tezgahta yatan bölmeli raf iskeleti, arkada el aletleri",
+    "en": "Compartmented shelf frame lying on the bench, hand tools behind"
+  },
+  "alt": {
+    "tr": "Mavi atölye tezgahında yatay duran bölmeli açık renk ahşap raf iskeleti; arkada duvarda el aletleri",
+    "en": "A light timber compartmented shelf frame lying flat on a blue workshop bench, with hand tools on the wall behind"
+  },
+  "caption": {
+    "tr": "Raf iskeleti yan yatırılmış, bölmeleri yukarıdan seçiliyor. Arkada duvara asılı pense ve el aletleri görünüyor.",
+    "en": "The shelf frame is laid on its side and its compartments show from above. Pliers and hand tools hang on the wall behind."
+  },
+  "seoFilename": "tezgahta-yatan-bolmeli-raf-iskeleti-arkada-el-aletleri",
+  "tags": {
+    "type": [
+      "raf / kitaplık"
+    ],
+    "wood": [],
+    "setting": [
+      "atölyede üretim"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.7
+}

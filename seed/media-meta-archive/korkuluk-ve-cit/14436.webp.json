@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/14436.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kare gözlü koyu vernikli ahşap kafes panel, duvara yakın",
+    "en": "Dark-varnished square-mesh timber lattice panel close to the wall"
+  },
+  "alt": {
+    "tr": "Beyaz duvarın önünde duran, kalın dikmeli ve kare gözlü koyu vernikli ahşap kafes panel; gözler geniş ve eşit",
+    "en": "A dark-varnished timber lattice panel with a thick frame and square cells standing in front of a white wall"
+  },
+  "caption": {
+    "tr": "Panelin çıtaları yatay bindirilmiş, çerçeve kalın ve koyu. Ahşabın damarı vernik altında seçiliyor.",
+    "en": "The slats of the panel are overlapped horizontally and the frame is thick and dark. The grain of the wood shows through the varnish."
+  },
+  "seoFilename": "kare-gozlu-koyu-vernikli-ahsap-kafes-duvara-yakin",
+  "tags": {
+    "type": [
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

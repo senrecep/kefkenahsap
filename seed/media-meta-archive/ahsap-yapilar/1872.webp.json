@@ -1,0 +1,33 @@
+{
+  "source": "Ahsap Yapilar/1872.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yalıtım örtüsü sermiş çatıda shingle işi",
+    "en": "Shingle roofing under way on a membrane-covered roof"
+  },
+  "alt": {
+    "tr": "Su yalıtım örtüsünün serildiği, köşesinde kırmızı shingle başlamış çatı ve arkada tarla manzarası",
+    "en": "A roof covered with a waterproofing membrane with red shingles started at the edge, fields in the distance"
+  },
+  "caption": {
+    "tr": "Çatının büyük bölümü hâlâ yalıtım örtüsüyle kaplı. Bacanın yanında çatıdan geniş bir tarla ve birkaç ev görünüyor.",
+    "en": "Most of the roof is still covered by the membrane. Beyond the chimney a wide field and a few houses can be seen from the roof."
+  },
+  "seoFilename": "su-yalitim-orturlu-cati-yarim-shingle-tarla-manzarasi",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.4
+}

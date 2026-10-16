@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/2415.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Koyu ahşap çerçeveli pencere, tuğla kaplı yapı",
+    "en": "Dark timber-framed window in a brick-faced building"
+  },
+  "alt": {
+    "tr": "Beyaz sıvalı ve alt kısmı tuğla kaplı yeni yapıda koyu kahve ahşap çerçeveli pencere ve üstünde geniş ahşap saçak",
+    "en": "Dark brown timber-framed window in a new building with white render and brick facing at the base"
+  },
+  "caption": {
+    "tr": "Pencere çerçevesi duvarın içine oturtulmuş, saçak kirişleri üstte görünüyor. Çevrede inşaat zemini var.",
+    "en": "The window frame sits set into the wall and the eave beams show above. Building-site ground surrounds it."
+  },
+  "seoFilename": "koyu-ahsap-cerceveli-pencere-tugla-kapli-yapi",
+  "tags": {
+    "type": [
+      "pencere / panjur"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

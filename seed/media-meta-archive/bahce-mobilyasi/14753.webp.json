@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/14753.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çakıl zeminde deck platformu üstünde ahşap piknik masası",
+    "en": "Timber picnic table on a deck platform over gravel"
+  },
+  "alt": {
+    "tr": "Çakıl taşlarıyla çevrili küçük bir deck platformunun üzerinde, bankları bağlı ahşap piknik masası",
+    "en": "A timber picnic table with attached benches on a small deck platform surrounded by gravel"
+  },
+  "caption": {
+    "tr": "Piknik masası deck platformun ortasına oturuyor, çakıl ise çevresindeki alanı kaplıyor. Deck, masanın ayaklarını çakıldan ayırıyor.",
+    "en": "The picnic table sits in the middle of the deck platform with gravel covering the area around it. The deck keeps the table legs off the gravel."
+  },
+  "seoFilename": "cakil-zemin-uzerinde-deck-platformunda-ahsap-piknik-masasi",
+  "tags": {
+    "type": [
+      "piknik masası",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

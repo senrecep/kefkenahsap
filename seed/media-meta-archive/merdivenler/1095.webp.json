@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/1095.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kıyı platformuna çıkan ahşap merdiven",
+    "en": "Timber stairs up to a waterside platform"
+  },
+  "alt": {
+    "tr": "Taş duvar önünde, denize yakın platforma çıkan çaprazlı korkuluklu ahşap merdiven ve üstteki çatı yapısı",
+    "en": "Timber stairs with a cross-braced railing up to a platform near the sea in front of a stone wall, with a roof structure above"
+  },
+  "caption": {
+    "tr": "Merdivenin iki kolu taş duvarın önünde yükselen platforma çıkıyor. Platformun altı ahşap ayaklarla taşınıyor.",
+    "en": "The two flights lead up to a platform raised in front of the stone wall. The platform is carried on timber legs."
+  },
+  "seoFilename": "kiyi-platformuna-cikan-ahsap-merdiven-tas-duvar-deniz",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

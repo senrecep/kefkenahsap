@@ -1,0 +1,37 @@
+{
+  "source": "Mobilya ve Cila/12517.webp",
+  "category": "mutfak-ve-gomme-dolap",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Krem gömme dolap ve ortasında çekmeceli nişli bölüm",
+    "en": "Cream built-in wardrobe with a drawer niche in the middle"
+  },
+  "alt": {
+    "tr": "Krem renkli yüksek dolap modülleri arasında açık bir niş ve altında üç çekmece, açık renk parke zemin",
+    "en": "Cream tall cabinet modules with an open niche in the middle and three drawers below, on a light parquet floor"
+  },
+  "caption": {
+    "tr": "İki yandaki dolaplar tavana kadar çıkıyor, ortadaki bölüm tezgâh yüksekliğinde açık bırakılmış. Kapaklar kulpsuz ve düz.",
+    "en": "The tall units on both sides reach the ceiling, while the middle section is left open at counter height. The doors are flat and handleless."
+  },
+  "seoFilename": "krem-gomme-dolap-ortada-cekmeceli-nis",
+  "tags": {
+    "type": [
+      "gömme dolap / gardırop"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

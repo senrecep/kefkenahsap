@@ -1,0 +1,37 @@
+{
+  "source": "Pergola ve Kamelyalar/8760.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Tuğla kolona oturan vernikli pergola, bina yanında yapım sürüyor",
+    "en": "Varnished pergola on a brick column, under construction beside a building"
+  },
+  "alt": {
+    "tr": "Binanın yanında tuğla kolona oturan vernikli pergola çerçevesi ve sıralı kirişler, alt katta panjurlu pencereler",
+    "en": "Varnished pergola frame resting on a brick column beside a building, with rows of beams and shuttered windows below"
+  },
+  "caption": {
+    "tr": "Çerçeve kolonun üzerine yatay olarak oturtulmuş, kirişler çerçeveye dik. Kolon henüz sıvasız.",
+    "en": "The frame is seated horizontally on the column and the beams run across it. The column is still unrendered."
+  },
+  "seoFilename": "tugla-kolona-oturan-vernikli-pergola-bina-yaninda",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

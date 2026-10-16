@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/2419.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Turuncu kiremit çatıda sırt latası",
+    "en": "Ridge batten on an orange tile roof"
+  },
+  "alt": {
+    "tr": "Turuncu kiremit çatıda sırt boyunca uzanan ahşap lata ve iki yanındaki yeşil bant",
+    "en": "Timber batten along the ridge of an orange tile roof with a green band on both sides"
+  },
+  "caption": {
+    "tr": "Sırt hattında emprenyeli renkte bir lata, iki yanında yeşil bir bant uzanıyor. Kiremitler sıra sıra döşenmiş.",
+    "en": "A batten in a pressure-treated tint runs along the ridge with a green band beside it. The tiles are laid row by row."
+  },
+  "seoFilename": "turuncu-kiremit-cati-sirt-latasi-ve-yesil-bant",
+  "tags": {
+    "type": [],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.4
+}

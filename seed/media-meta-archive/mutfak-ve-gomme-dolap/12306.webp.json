@@ -1,0 +1,37 @@
+{
+  "source": "Mobilya ve Cila/12306.webp",
+  "category": "mutfak-ve-gomme-dolap",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dört kapaklı beyaz gömme dolap ve tavan spotları",
+    "en": "Four-door white built-in wardrobe under ceiling spotlights"
+  },
+  "alt": {
+    "tr": "Tavandan zemine çıkan dört kapaklı beyaz gömme dolap, üstte spot ışık ve koyu taş zemin",
+    "en": "Floor-to-ceiling four-door white built-in wardrobe with a ceiling spotlight above and a dark stone floor"
+  },
+  "caption": {
+    "tr": "Kapaklar eşit genişlikte ve ince metal kulplu. Dolap duvar boyunca tavana kadar uzanıyor.",
+    "en": "The doors are equal in width with slim metal handles. The wardrobe runs along the wall up to the ceiling."
+  },
+  "seoFilename": "dort-kapakli-beyaz-gomme-dolap-spot-isik",
+  "tags": {
+    "type": [
+      "gömme dolap / gardırop"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

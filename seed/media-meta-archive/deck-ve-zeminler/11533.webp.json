@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/11533.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimde dikdörtgen turuncu deck, sağda dolap",
+    "en": "Rectangular orange deck on the lawn with a cabinet at the right"
+  },
+  "alt": {
+    "tr": "Çimen üzerinde dikdörtgen turuncu deck ve sağda yeşil çit önünde duran ahşap dolap",
+    "en": "Rectangular orange deck on the lawn with a timber cabinet standing in front of the green hedge on the right"
+  },
+  "caption": {
+    "tr": "Deck çimin içine düz bir kenarla yerleşmiş, dolap çitin köşesine yaslanmış. Arkada servi çit uzanıyor.",
+    "en": "The deck sits in the lawn with a straight edge and the cabinet leans into the corner of the hedge. A cypress hedge stretches behind."
+  },
+  "seoFilename": "cimen-uzerinde-dikdortgen-turuncu-deck-ve-sagda-yesil-cit",
+  "tags": {
+    "type": [
+      "deck",
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

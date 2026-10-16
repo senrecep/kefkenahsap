@@ -1,0 +1,36 @@
+{
+  "source": "Ahsap Yapilar/12630.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Oyun evi ve merdiven, yakından",
+    "en": "Playhouse and ladder, close up"
+  },
+  "alt": {
+    "tr": "Direkler üzerinde yükseltilmiş ahşap oyun evinin yakından görünümü; merdiven ve kaydırağın bir kısmı seçiliyor",
+    "en": "Close view of a timber playhouse raised on posts, with the ladder and part of the slide visible"
+  },
+  "caption": {
+    "tr": "Evin duvarları yatay tahtalı, küçük pencereleri kepenkli. Alttaki kum zemin ve merdiven net görünüyor.",
+    "en": "The walls of the house are horizontal boards and the small windows have shutters. The sand floor below and the ladder are clearly visible."
+  },
+  "seoFilename": "direkler-uzerinde-ahsap-oyun-evi-ve-merdiven-yakindan",
+  "tags": {
+    "type": [
+      "çocuk oyun evi"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "orman / kır"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

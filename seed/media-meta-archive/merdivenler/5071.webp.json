@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/5071.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Basamak ve çaprazlı korkuluk yakın planda",
+    "en": "Treads and cross-braced railing up close"
+  },
+  "alt": {
+    "tr": "Açık renkli emprenyeli ahşaptan basamaklar ve çaprazlı korkuluk, yakın çekim",
+    "en": "Close-up of treads and a cross-braced railing in light-coloured pressure-treated timber"
+  },
+  "caption": {
+    "tr": "Basamak tahtaları ve korkuluk çaprazları yakından görülüyor. Ahşap açık renkli ve temiz.",
+    "en": "The tread boards and the railing's cross braces are seen up close. The timber is light and clean."
+  },
+  "seoFilename": "basamak-ve-capraz-korkuluk-yakin-plan-emprenyeli",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

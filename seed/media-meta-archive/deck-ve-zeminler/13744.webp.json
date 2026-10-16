@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/13744.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Söğüt altında korkuluklu deck ve ön planda yeşil çalı",
+    "en": "Railed deck under a willow with a green shrub in the foreground"
+  },
+  "alt": {
+    "tr": "Göl kenarında söğüt altında korkuluklu deck; ön planda yeşil çalı, solda yuvarlak ahşap masa",
+    "en": "Railed deck under a willow at the lakeside, with a green shrub in front and a round timber table on the left"
+  },
+  "caption": {
+    "tr": "Deck'in arka kenarında korkuluk su kıyısını çeviriyor. Yuvarlak masa, deck'in bir oturma alanı olarak kullanılacağını gösteriyor.",
+    "en": "The railing along the back edge fences the shore. The round table shows the deck will serve as a sitting area."
+  },
+  "seoFilename": "sogut-altinda-korkuluklu-deck-on-planda-yesil-cali",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "su kenarı"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

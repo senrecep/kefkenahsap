@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/1154.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş zeminde yapımı süren küçük ahşap kulübe",
+    "en": "Small timber shed under construction on a stone floor"
+  },
+  "alt": {
+    "tr": "Taş döşeli zeminde duran, yatay kaplamalı ve yapımı süren küçük ahşap kulübe; çevrede kalaslar var",
+    "en": "Small timber shed with horizontal cladding under construction on a stone-paved floor, with timbers lying around"
+  },
+  "caption": {
+    "tr": "Kulübenin duvarları yatay tahtalarla kaplanmış, çatı kenarında ahşap bir saçak başlamış. Çevrede kalas ve merdiven bırakılmış.",
+    "en": "The walls of the shed are clad in horizontal boards and a timber eave has started at the edge of the roof. Timbers and a ladder are left around it."
+  },
+  "seoFilename": "tas-zemin-uzerinde-yatay-kaplamali-kucuk-ahsap-kulube",
+  "tags": {
+    "type": [
+      "bahçe kulübesi / depo"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

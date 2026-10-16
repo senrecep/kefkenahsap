@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/13202.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz kenarında deck söküm çalışması ve gönye testere",
+    "en": "Deck stripping work at the pool edge with a mitre saw"
+  },
+  "alt": {
+    "tr": "Havuz kenarında eski deck tahtaları sökülüyor, önde gönye testere ve aletler duruyor",
+    "en": "Old deck boards being lifted at the pool edge, with a mitre saw and tools in front"
+  },
+  "caption": {
+    "tr": "Söküm ve yeni kesim işi aynı yerde yürüyor. Arkada havuzun suyu açıkça görünüyor.",
+    "en": "Stripping and cutting for the new boards go on side by side. The pool water is clearly visible behind."
+  },
+  "seoFilename": "havuz-kenarinda-deck-sokum-calismasi-ve-gonye-testere",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

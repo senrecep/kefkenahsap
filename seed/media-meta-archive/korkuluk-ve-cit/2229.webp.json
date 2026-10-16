@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/2229.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deniz kenarı platformda çapraz korkuluk, yerde kereste yığınları",
+    "en": "Cross-braced railing on a seaside platform, timber stacks on the ground"
+  },
+  "alt": {
+    "tr": "Palmiyelerin ve denizin önündeki platformda çapraz çıtalı korkuluk; yerde kesilmiş kereste ve tahta parçaları",
+    "en": "Cross-braced railing on a platform in front of palm trees and the sea"
+  },
+  "caption": {
+    "tr": "Korkuluk platformun kenarını X çaprazlarla çevreliyor. İş yeri henüz toplanmamış, malzeme zeminde duruyor.",
+    "en": "The railing encloses the platform edge with X-shaped braces. The work site is not yet cleared and materials lie on the floor."
+  },
+  "seoFilename": "deniz-kenari-platformda-capraz-korkuluk-kereste",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

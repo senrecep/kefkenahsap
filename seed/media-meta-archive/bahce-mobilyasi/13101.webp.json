@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/13101.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Geniş kavisli ahşap bank, uzaktan bakışla",
+    "en": "Wide curved timber bench seen from a distance"
+  },
+  "alt": {
+    "tr": "Uzaktan görünen geniş kavisli ahşap bank, beton zemin üzerinde bahçenin ortasında duruyor",
+    "en": "A wide curved timber bench seen from a distance on a concrete floor in the middle of a garden"
+  },
+  "caption": {
+    "tr": "Uzaktan bakınca bankın bahçedeki ölçeği daha iyi anlaşılıyor. Beton alanın bir yanını tamamen çevreliyor.",
+    "en": "From a distance you can judge the scale of the bench in the garden better. It encloses one whole side of the concrete area."
+  },
+  "seoFilename": "genis-kavisli-ahsap-bank-uzaktan-beton-zemin-ve-bahce",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

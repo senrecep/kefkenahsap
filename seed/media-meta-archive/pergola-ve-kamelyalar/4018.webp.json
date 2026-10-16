@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/4018.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çam ormanında eğimli arazide yapım aşamasında ahşap pergola iskeleti",
+    "en": "Timber pergola frame under construction on sloping ground in a pine wood"
+  },
+  "alt": {
+    "tr": "Çam ağaçları arasında eğimli arazide yapım aşamasındaki ahşap pergola iskeleti ve çapraz payandalar",
+    "en": "Timber pergola frame with diagonal braces under construction on sloping ground among pine trees"
+  },
+  "caption": {
+    "tr": "Direkler eğimli zeminde farklı yüksekliklerde duruyor, üst kirişler bunları birbirine bağlıyor. Zemin henüz kumlu.",
+    "en": "The posts stand at different heights on the sloping ground, with top beams tying them together. The ground is still sandy."
+  },
+  "seoFilename": "cam-ormaninda-egimli-arazide-pergola-iskeleti",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "orman / kır"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

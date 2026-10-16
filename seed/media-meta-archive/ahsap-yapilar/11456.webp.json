@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/11456.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "LED ışıklı yatay çıtalı ahşap pano",
+    "en": "LED-lit horizontal slatted timber panel"
+  },
+  "alt": {
+    "tr": "Atölyede ayakta duran, yatay çıtalı ve kenarları LED ile aydınlatılmış uzun ahşap pano",
+    "en": "Tall timber panel with horizontal slats and LED-lit edges, standing in a workshop"
+  },
+  "caption": {
+    "tr": "Panonun üstünde yeşil bir logo var. Yatay çıtaların arasından sarı ışık sızıyor.",
+    "en": "There is a green logo at the top of the panel. Yellow light glows between the horizontal slats."
+  },
+  "seoFilename": "led-aydinlatmali-ahsap-tabela-panosu",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.3
+}

@@ -1,0 +1,39 @@
+{
+  "source": "Ahsap Yapilar/5528.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yatay çıtalı bölme ve ön yüzü kaplı bar tezgahı",
+    "en": "Horizontal-slat partition and bar counter with a clad front"
+  },
+  "alt": {
+    "tr": "Yatay çıtalı bölme ve ön yüzü açık renk tahtayla kaplanan ahşap bar tezgahı; yapım aşamasında",
+    "en": "A timber bar counter with a horizontal-slat partition and a front clad in light boards, under construction"
+  },
+  "caption": {
+    "tr": "Çıtalı bölmenin yanında tezgahın ön yüzü açık renkli tahtalarla kaplanmış. Tezgah henüz bitmemiş.",
+    "en": "Next to the slatted partition the front of the counter is clad in light boards. The counter is not finished yet."
+  },
+  "seoFilename": "yatay-citali-bolme-ve-kaplanmis-on-yuzlu-bar-tezgahi-yapimi",
+  "tags": {
+    "type": [
+      "bar / tezgâh",
+      "seperatör"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı",
+      "ticari mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

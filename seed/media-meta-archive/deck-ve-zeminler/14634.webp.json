@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/14634.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Siyah metal korkuluklu uzun balkon deck'i",
+    "en": "Long balcony deck with a black metal railing"
+  },
+  "alt": {
+    "tr": "Uzun ve dar bir balkonu baştan sona kaplayan parlak kırmızı kahverengi deck; yanda siyah metal korkuluk",
+    "en": "Glossy red-brown deck covering a long narrow balcony from end to end, with a black metal railing beside it"
+  },
+  "caption": {
+    "tr": "Korkuluğun gölgeleri deckin üzerine çizgiler bırakıyor. Balkonun ucundan ağaçlı bir manzara görünüyor.",
+    "en": "The railing's shadows leave lines on the deck. A tree-lined view opens from the end of the balcony."
+  },
+  "seoFilename": "siyah-metal-korkuluklu-uzun-balkon-deck",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "balkon"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

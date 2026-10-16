@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/11787.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Seramik zemin yanında ince kirişli deck iskeleti",
+    "en": "Deck frame with slim joists next to ceramic flooring"
+  },
+  "alt": {
+    "tr": "Çakıl üzerinde ince kirişlerle kurulmuş deck alt iskeleti, yanında seramik zemin",
+    "en": "Deck substructure of slim joists on gravel, with ceramic flooring alongside"
+  },
+  "caption": {
+    "tr": "Çerçeve seramik zeminle aynı hizaya yakın bir seviyede kuruluyor. Arka tarafta toprak alan duruyor.",
+    "en": "The frame is being set close to the level of the ceramic floor. Bare soil lies beyond it."
+  },
+  "seoFilename": "seramik-zemin-yaninda-ince-kirisli-deck-iskeleti",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras",
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

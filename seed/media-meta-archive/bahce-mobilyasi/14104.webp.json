@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/14104.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Köşe biçimli kahverengi ahşap arkalıklı bank, beton zeminde",
+    "en": "Brown timber corner bench with a back on a concrete floor"
+  },
+  "alt": {
+    "tr": "Beton zeminde, çevresi yeşillik ve tel çitle çevrili, köşeye oturan kahverengi vernikli ahşap arkalıklı bank",
+    "en": "A brown-varnished timber corner bench with a back on thin metal legs on a concrete floor"
+  },
+  "caption": {
+    "tr": "Bank iki kenarı birleştiren bir köşe oluşturuyor. Dikey tahtalı sırtlık, oturak boyunca kesintisiz devam ediyor.",
+    "en": "The bench forms a corner joining two sides. The back of vertical boards runs along the seat without a break."
+  },
+  "seoFilename": "beton-zeminde-kose-seklinde-kahverengi-ahsap-arkalikli-bank",
+  "tags": {
+    "type": [
+      "bank",
+      "oturma grubu"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

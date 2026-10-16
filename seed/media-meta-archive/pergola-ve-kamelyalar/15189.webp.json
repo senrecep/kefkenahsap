@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/15189.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yeşil çatılı kamelya, çimenlik bahçede alçak gün ışığı",
+    "en": "Green-roofed gazebo in low daylight on a lawn"
+  },
+  "alt": {
+    "tr": "Alçak gün ışığında çimenlik bahçede yeşil çatılı ahşap kamelya, önde toprak zemin, arkada çevre teli",
+    "en": "Green-roofed timber gazebo in low light on a lawn, with bare soil in front and perimeter fencing behind"
+  },
+  "caption": {
+    "tr": "Kamelya çapraz çıtalı alın ve korkuluklarla bitirilmiş. Servi fidanları çit boyunca sıralı.",
+    "en": "The gazebo is finished with X-pattern gable slats and railings. Cypress saplings line the fence."
+  },
+  "seoFilename": "yesil-catili-kamelya-cimenlik-alcak-gun-isigi",
+  "tags": {
+    "type": [
+      "kamelya",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

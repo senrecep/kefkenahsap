@@ -1,0 +1,33 @@
+{
+  "source": "Kapi Dolap ve Seperator/8770.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Panjurlu ahşap pencere kanatları",
+    "en": "Louvred timber window sashes"
+  },
+  "alt": {
+    "tr": "Koruyucu film kaplı çerçevelerde duran, koyu vernikli ve panjurlu iki ahşap pencere kanadı",
+    "en": "Two dark-varnished timber window sashes with louvres, standing with protective film still on the frames"
+  },
+  "caption": {
+    "tr": "Panjur çıtaları sık ve eşit aralıklı. Kanatların çerçevesindeki koruyucu film henüz sökülmemiş.",
+    "en": "The louvre slats are closely and evenly spaced. The protective film is still on the sash frames."
+  },
+  "seoFilename": "panjurlu-ahsap-pencere-kanatlari",
+  "tags": {
+    "type": [
+      "pencere / panjur"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/13564.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Açık merdiven altında yatay kaplama ve oturma yeri",
+    "en": "Horizontal cladding and seat under open stairs"
+  },
+  "alt": {
+    "tr": "Açık basamaklı merdivenin altında yatay ahşap duvar kaplaması, ahşap oturma bölümü ve çakıl zemin",
+    "en": "Horizontal timber wall cladding, a timber seating section and a gravel floor under an open-tread staircase"
+  },
+  "caption": {
+    "tr": "Merdivenin altı boş bırakılmamış: yan duvar tahtayla kaplı, köşeye ahşap bir oturma yeri yapılmış.",
+    "en": "The space under the stairs is put to use: the side wall is clad in boards and a wooden seat is built into the corner."
+  },
+  "seoFilename": "acik-merdiven-alti-yatay-kaplama-bank-cakil",
+  "tags": {
+    "type": [
+      "merdiven",
+      "iç duvar kaplaması"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/13493.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bina önünde ağaç yanında geniş deck ve mangal",
+    "en": "Broad deck in front of a house beside a tree with a barbecue"
+  },
+  "alt": {
+    "tr": "Bina önünde çimen kenarında, ağaç yanında geniş açık renkli deck ve köşede kapaklı mangal",
+    "en": "Broad pale deck at the lawn edge in front of a house beside a tree, with a covered barbecue in the corner"
+  },
+  "caption": {
+    "tr": "Deck evin iki cam kapısının önünü kaplıyor ve bahçeye doğru açılıyor. Yan tarafta bir mangal alanı ayrılmış.",
+    "en": "The deck covers the front of the house's two glass doors and opens out to the garden. A barbecue spot has been set aside at one side."
+  },
+  "seoFilename": "bina-onunde-agac-yaninda-genis-deck-ve-mangal",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

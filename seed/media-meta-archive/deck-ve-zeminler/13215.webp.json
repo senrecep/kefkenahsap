@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/13215.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz kenarında çapraz korkuluklu deck, yeni ve eski tahtalar karışık",
+    "en": "Deck with a cross-braced railing at the pool, new and old boards mixed"
+  },
+  "alt": {
+    "tr": "Havuz kenarında çapraz korkuluklu deck; yeni açık renkli tahtalar eski gri tahtalarla karışık duruyor",
+    "en": "Deck beside a pool with a cross-braced railing, where new pale boards sit mixed in with the old grey ones"
+  },
+  "caption": {
+    "tr": "Çürüyen tahtalar tek tek değiştirilmiş, yeni tahtalar henüz solmadan açık renkli duruyor. Deck tamamen yenilenmeden kullanılabilir hâle geliyor.",
+    "en": "Worn boards have been replaced one by one and the new ones are still pale, not yet weathered. The deck becomes usable again without being fully renewed."
+  },
+  "seoFilename": "havuz-kenarinda-capraz-korkuluklu-deck-yeni-eski-tahta",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

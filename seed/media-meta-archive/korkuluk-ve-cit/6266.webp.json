@@ -1,0 +1,40 @@
+{
+  "source": "Korkuluk ve Cit/6266.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çift kanatlı çaprazlı ahşap kapı, arkada ağaç ve ev",
+    "en": "Double-leaf braced timber gate with a tree and house behind"
+  },
+  "alt": {
+    "tr": "Yol girişini kapatan, iki kanatlı çapraz kuşaklı yeşilimsi ahşap kapı, arkada ağaçlar ve bir ev",
+    "en": "Greenish double-leaf timber gate with diagonal braces closing a track entrance, with trees and a house behind"
+  },
+  "caption": {
+    "tr": "Kapı iki kalın direk arasında, iki kanat ortada buluşuyor. Önünde beton zemin var.",
+    "en": "The gate stands between two thick posts, with its two leaves meeting in the middle. A concrete base lies in front."
+  },
+  "seoFilename": "cift-kanatli-capraz-ahsap-kapi-arkada-agac-ve-ev",
+  "tags": {
+    "type": [
+      "bahçe kapısı",
+      "çit"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

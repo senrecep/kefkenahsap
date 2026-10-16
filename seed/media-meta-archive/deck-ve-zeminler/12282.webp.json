@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12282.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar önünde yeşilimsi tahtalı deck",
+    "en": "Greenish-board deck in front of a stone wall"
+  },
+  "alt": {
+    "tr": "Taş duvar önünde açık renkli, yer yer yeşilimsi deck tahtaları, üzerinde yeşil sarmal hortum",
+    "en": "Pale deck boards with greenish patches in front of a stone wall, a coiled green hose lying across them"
+  },
+  "caption": {
+    "tr": "Tahtalar duvara dik döşenmiş ve aralarında dar derzler var. Budak izleri yüzeyde görünüyor.",
+    "en": "The boards run square to the wall with narrow gaps between them. Knot marks show on the surface."
+  },
+  "seoFilename": "tas-duvar-onunde-yesilimsi-tahtali-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

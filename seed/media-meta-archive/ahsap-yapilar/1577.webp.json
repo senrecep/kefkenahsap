@@ -1,0 +1,36 @@
+{
+  "source": "Ahsap Yapilar/1577.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Hasır çatılı ahşap gözetleme kulesi",
+    "en": "Timber lookout tower with a thatched roof"
+  },
+  "alt": {
+    "tr": "Balkonlu ve hasır çatılı, alt gövdesi panjur kaplı iki katlı ahşap gözetleme kulesi",
+    "en": "Two-level timber lookout tower with a balcony and thatched roof, its lower body clad in louvres"
+  },
+  "caption": {
+    "tr": "Üst katta korkuluklu bir balkon, kenarlarda can simidi asılı. Alt gövde dikey panjurlu ve çapraz çıtalı kapılı.",
+    "en": "There is a balcony with a railing on the upper level and life rings hang on the sides. The lower body has vertical louvres and crossed-batten doors."
+  },
+  "seoFilename": "hasir-catili-balkonlu-ahsap-gozetleme-kulesi",
+  "tags": {
+    "type": [],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı",
+      "ticari mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

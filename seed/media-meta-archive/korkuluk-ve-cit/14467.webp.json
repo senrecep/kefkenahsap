@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/14467.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kanal üzerinde ahşap platform ve piket kapı",
+    "en": "Timber platform over a channel with a picket gate"
+  },
+  "alt": {
+    "tr": "Su kanalının üzerine yerleştirilmiş cilalı ahşap platform ve kenarında ucu yuvarlak çıtalı kapı, arkada demir korkuluk",
+    "en": "Varnished timber platform laid over a water channel, with a rounded-top picket gate at its edge and an iron railing behind"
+  },
+  "caption": {
+    "tr": "Platform kanalın iki yakasını birleştiriyor. Çıtalı kapı kenarında dikey duruyor.",
+    "en": "The platform links the two banks of the channel. The picket gate stands upright at its edge."
+  },
+  "seoFilename": "kanal-uzerinde-ahsap-platform-ve-piket-kapi",
+  "tags": {
+    "type": [
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

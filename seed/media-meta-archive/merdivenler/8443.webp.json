@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/8443.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar yanında çaprazlı merdiven, yan bahçe",
+    "en": "Cross-braced stairs beside a stone wall in the side garden"
+  },
+  "alt": {
+    "tr": "Taş duvar ve ev duvarı arasındaki yan bahçede çaprazlı korkuluklu ahşap merdiven; arkada tel çit",
+    "en": "Timber stairs with a cross-braced railing in the side garden between a stone wall and the house wall"
+  },
+  "caption": {
+    "tr": "Merdiven yan bahçedeki çimlikten duvarın üstüne çıkıyor. Evin kapısının önünde küçük bir döşeme var.",
+    "en": "The stairs rise from the lawn in the side garden to the top of the wall. A small paved area lies in front of the house door."
+  },
+  "seoFilename": "tas-duvar-yaninda-caprazli-ahsap-merdiven-yan-bahce",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

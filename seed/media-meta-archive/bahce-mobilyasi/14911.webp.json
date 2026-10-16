@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14911.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "İç mekânda koyu renkli, uzun ve kalın tahtalı ahşap masa",
+    "en": "Long dark timber table of thick boards indoors"
+  },
+  "alt": {
+    "tr": "Düz gri zeminli bir iç mekânda duran, kalın tahtalardan yapılmış uzun koyu ahşap masa",
+    "en": "A long dark timber table made of thick boards in an indoor space with a plain grey floor"
+  },
+  "caption": {
+    "tr": "Masa uzun ve geniş, tablası kalın tahtalardan. Ayakları kalın kerestelerden, alt kısımda bir bağlantı çıtası var.",
+    "en": "The table is long and wide with a top of thick boards. The legs are heavy timber with a stretcher at the bottom."
+  },
+  "seoFilename": "ofis-benzeri-ic-mekanda-koyu-uzun-kalin-tahtali-ahsap-masa",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

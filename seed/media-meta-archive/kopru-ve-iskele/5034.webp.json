@@ -1,0 +1,40 @@
+{
+  "source": "Kopru ve Iskele/5034.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Göl kıyısında yatay korkuluklu yeni gezinti platformu",
+    "en": "New walkway platform with horizontal railing on the lakeshore"
+  },
+  "alt": {
+    "tr": "Çimlikten göle doğru uzanan, yatay üç tahtalı korkuluğu ve yüksek direkleri olan yeni açık renk tahta yol; arkada tekne",
+    "en": "New light timber walkway running from the lawn to the lake with a three-rail horizontal railing and tall posts, a boat behind"
+  },
+  "caption": {
+    "tr": "Korkuluk dikmelere yatay üç sıra tahtayla bağlanmış. Yol çimden başlayıp kıyıya kadar gidiyor.",
+    "en": "The railing is built from three horizontal boards between posts. The walkway runs from the lawn to the shore."
+  },
+  "seoFilename": "gol-kiyisinda-yatay-korkuluklu-yeni-platform",
+  "tags": {
+    "type": [
+      "iskele",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

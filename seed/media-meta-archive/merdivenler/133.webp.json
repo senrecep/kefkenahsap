@@ -1,0 +1,37 @@
+{
+  "source": "Merdivenler/133.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dış merdivenin yanında ahşap kaplı yan duvar",
+    "en": "Timber-clad side wall beside outdoor stairs"
+  },
+  "alt": {
+    "tr": "Beton basamaklı dış merdivenin altında ve yanında ahşap kaplanmış yan yüzey; kapı, saksı ve çimlik",
+    "en": "Timber-clad side and underside of a concrete outdoor staircase, with a door, a plant pot and a lawn"
+  },
+  "caption": {
+    "tr": "Merdivenin yan yüzü ve altı tahtayla kaplanmış. Altındaki girişte kapı ve büyük bir saksı duruyor.",
+    "en": "The side and the underside of the stairs are clad in boards. A door and a large pot stand at the entrance beneath."
+  },
+  "seoFilename": "betonarme-dis-merdiven-yaninda-ahsap-kaplama-yan-duvar",
+  "tags": {
+    "type": [
+      "merdiven"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

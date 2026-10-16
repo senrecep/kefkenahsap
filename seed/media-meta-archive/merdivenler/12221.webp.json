@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/12221.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ağaç altında yükseltilmiş deck ve merdiveni",
+    "en": "Raised deck and stairs under a tree"
+  },
+  "alt": {
+    "tr": "Ağacın altında yükseltilmiş ahşap deck, çıkışında korkuluklu ahşap merdiven; arkada taş duvar",
+    "en": "Raised timber deck under a tree, with timber stairs and railings leading up to it and a stone wall behind"
+  },
+  "caption": {
+    "tr": "Deck zeminden yükseltilmiş, merdivenle çıkılıyor. Her iki tarafta ahşap korkuluk var.",
+    "en": "The deck stands above ground level and is reached by the stairs. Timber railings run along both sides."
+  },
+  "seoFilename": "agac-altinda-yukseltilmis-deck-merdiven-korkuluk",
+  "tags": {
+    "type": [
+      "merdiven",
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

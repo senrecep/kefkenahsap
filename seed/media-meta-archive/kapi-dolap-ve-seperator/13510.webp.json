@@ -1,0 +1,35 @@
+{
+  "source": "Kapi Dolap ve Seperator/13510.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölye duvarına dayalı kızıl kahve kirişler ve dişli çıtalar",
+    "en": "Red-brown beams and notched slats leaning on the workshop wall"
+  },
+  "alt": {
+    "tr": "Atölye duvarına dik dayanmış, uzun kızıl kahve ahşap kirişler ve kenarı dişli kesilmiş iki çıta, arkada boyalı koyu bir kapak",
+    "en": "Long red-brown timber beams and two slats with notched edges leaning upright against a workshop wall"
+  },
+  "caption": {
+    "tr": "Parçalar kesilip boyandıktan sonra duvara dikilmiş. Dişli kenarlar çıtaların birbirine geçeceğini gösteriyor.",
+    "en": "The pieces were cut, finished and stood against the wall. The notched edges show how the slats will interlock."
+  },
+  "seoFilename": "atolye-duvarina-dayali-kizil-kahve-kirisler-disli-citalar",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.55
+}

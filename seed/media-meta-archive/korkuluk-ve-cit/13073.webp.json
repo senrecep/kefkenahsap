@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/13073.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beton duvarda üç ahşap kafes panel, altında bitkili çiçek yatağı",
+    "en": "Three timber lattice panels on a concrete wall above a planted bed"
+  },
+  "alt": {
+    "tr": "Düz duvara monte edilmiş üç ahşap kare gözlü kafes panel; altta çalılar ve çiçeklerle dolu uzun yatak",
+    "en": "Three square-mesh timber lattice panels fixed to a plain wall with a long bed full of shrubs and flowers below"
+  },
+  "caption": {
+    "tr": "Kafesler duvarın üst kısmında eşit aralıkla duruyor, sarmaşıklar yukarı tırmanıyor. Yatak duvar boyunca uzanıyor.",
+    "en": "The lattices stand at even intervals on the upper wall and climbing plants are working their way up. The bed runs along the wall."
+  },
+  "seoFilename": "beton-duvarda-uc-ahsap-kafes-panel-bitkili-yatak",
+  "tags": {
+    "type": [
+      "kafes / paravan",
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

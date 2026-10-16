@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/14474.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kırmızı çatılı, siyah menteşeli uzun çit önü dolabı",
+    "en": "Long hedge-side cabinet with a red roof and black hinges"
+  },
+  "alt": {
+    "tr": "Çalı çitinin dibinde taş tabanlı, koyu bal rengi dikey tahtalı kapaklı, siyah menteşeli, kırmızı çatılı uzun ahşap dolap",
+    "en": "Long timber cabinet at the foot of a hedge on a stone base, with dark honey vertical-board doors, black hinges and a red roof"
+  },
+  "caption": {
+    "tr": "Dolabın üstü kırmızı kaplamayla örtülü ve hafif eğimli. Kapaklar siyah menteşelerle tek hat oluşturuyor.",
+    "en": "The top is covered in red sheeting with a slight slope. The doors line up on black hinges."
+  },
+  "seoFilename": "kirmizi-catili-siyah-menteseli-uzun-cit-onu-dolabi",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

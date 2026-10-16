@@ -1,0 +1,39 @@
+{
+  "source": "Ireko-Teak/10430.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deck kenarına yaslanan süpürgelik numuneleri",
+    "en": "Skirting samples leaning at the deck edge"
+  },
+  "alt": {
+    "tr": "Gri duvarın dibinde sıralanmış üç kahverengi ahşap süpürgelik parçası, önünde deck tahtaları ve taş kaplama",
+    "en": "Three brown timber skirting pieces lined up at the foot of a grey wall, with deck boards and stone cladding in front"
+  },
+  "caption": {
+    "tr": "Süpürgelik parçaları duvar ile zemin arasındaki birleşimi gösteriyor. Alt tarafta deck tahtaları sıralı.",
+    "en": "The skirting pieces show the joint between wall and floor. The deck boards run in rows below."
+  },
+  "seoFilename": "deck-kenarina-yaslanan-supurgelik-numuneleri",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

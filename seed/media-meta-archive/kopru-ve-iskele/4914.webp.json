@@ -1,0 +1,38 @@
+{
+  "source": "Kopru ve Iskele/4914.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Göl kenarındaki çimlikte dar ahşap yürüyüş yolu",
+    "en": "Narrow timber walkway across the lawn by the lake"
+  },
+  "alt": {
+    "tr": "Göl manzaralı çimlikte uzanan dar ahşap yürüyüş yolu; arkada kıyı boyunca korkuluk, ağaçlı tepeler",
+    "en": "Narrow timber walkway crossing a lawn with a lake view, a railing along the shore behind and wooded hills beyond"
+  },
+  "caption": {
+    "tr": "Yol çimin içinde açık renkli tahtalarla döşenmiş. Uzakta kıyıdaki korkuluk ve gölün karşı yakası görünüyor.",
+    "en": "The path is laid with light boards through the grass. In the distance are the shoreline railing and the far side of the lake."
+  },
+  "seoFilename": "gol-kenarindaki-cimlikte-dar-yuruyus-yolu",
+  "tags": {
+    "type": [
+      "yürüyüş yolu"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/13397.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapı yanında eski gri deck üzerine yeni tahtalar",
+    "en": "New boards going over old grey deck beside a glass door"
+  },
+  "alt": {
+    "tr": "Cam kapı yanında, eski gri deck üzerine açık renkli yeni tahtalar döşeniyor",
+    "en": "New pale boards being laid over an old grey deck beside a glass door"
+  },
+  "caption": {
+    "tr": "Yeni tahtalar bahçeye doğru uzanan bir şerit hâlinde ilerliyor. Çevresinde kuru yapraklar ve toprak duruyor.",
+    "en": "The new boards run out into the garden in a strip. Dry leaves and soil lie around it."
+  },
+  "seoFilename": "cam-kapi-yaninda-eski-gri-deck-uzerine-yeni-tahtalar",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras",
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

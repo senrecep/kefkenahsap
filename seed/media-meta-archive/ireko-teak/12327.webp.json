@@ -1,0 +1,35 @@
+{
+  "source": "Ireko-Teak/12327.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Fayans zeminde kademeli çıtalı ahşap parça",
+    "en": "Stepped slatted timber piece on a tiled floor"
+  },
+  "alt": {
+    "tr": "Beyaz fayans zeminin üzerinde, kenarı basamak gibi kademelenen açık renkli ahşap çıtalı yüzey parçası",
+    "en": "Light slatted timber piece on a white tiled floor with its edge stepped like stairs"
+  },
+  "caption": {
+    "tr": "Çıtalar kademeli bir kenar oluşturuyor. Parça fayansın üzerinde düz duruyor.",
+    "en": "The slats form a stepped edge. The piece sits flat on the tiles."
+  },
+  "seoFilename": "fayans-zeminde-kademeli-citali-ahsap-parca",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.4
+}

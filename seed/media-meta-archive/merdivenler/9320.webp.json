@@ -1,0 +1,38 @@
+{
+  "source": "Merdivenler/9320.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz boyalı merdiven ve altındaki kapaklı depo",
+    "en": "White painted stairs and the cupboard beneath them"
+  },
+  "alt": {
+    "tr": "Beyaz boyalı açık basamaklı ahşap merdiven ve altına yerleştirilmiş beyaz çift kapaklı depo; yanda evin cam kapısı",
+    "en": "White painted open-tread timber stairs and a white double-door storage cupboard set beneath"
+  },
+  "caption": {
+    "tr": "Merdivenin altındaki boşluk beyaz çift kapaklı bir depo olmuş. Basamaklar ve korkuluk da aynı beyaza boyalı.",
+    "en": "The space under the stairs has become a white double-door storage cupboard. The steps and railing are painted the same white."
+  },
+  "seoFilename": "beyaz-boyali-merdiven-ve-altindaki-beyaz-kapakli-depo",
+  "tags": {
+    "type": [
+      "merdiven",
+      "gömme dolap / gardırop"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

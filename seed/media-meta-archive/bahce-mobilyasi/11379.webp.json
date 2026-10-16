@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/11379.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölyede ahşap köşe koltuk ve alçak sehpa",
+    "en": "Timber corner sofa and low coffee table in the workshop"
+  },
+  "alt": {
+    "tr": "Çıtalı sırtlı L biçimli vernikli ahşap köşe koltuk ve önünde alçak sehpa; arka planda atölye aletleri görünüyor",
+    "en": "An L-shaped varnished timber corner sofa with a slatted back and a low table in front, with workshop tools behind"
+  },
+  "caption": {
+    "tr": "Köşe koltuk iki kenarı çıtalı sırtla çevrili. Sehpa aynı vernik tonunda, koltuğun önüne yerleştirilmiş.",
+    "en": "The corner sofa has slatted backs along two sides. The table, in the same varnish tone, is set in front of it."
+  },
+  "seoFilename": "atolyede-ahsap-kose-koltuk-ve-alcak-sehpa",
+  "tags": {
+    "type": [
+      "oturma grubu",
+      "sehpa"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

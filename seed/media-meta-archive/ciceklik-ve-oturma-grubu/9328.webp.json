@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/9328.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Gazete üzerinde yeni cilalanmış turuncu-kahve kasa",
+    "en": "Freshly varnished orange-brown box on newspaper"
+  },
+  "alt": {
+    "tr": "Dükkân önünde gazete serili zeminde duran, yeni vernik sürülmüş turuncu-kahve yatay tahtalı ahşap çiçeklik",
+    "en": "Orange-brown timber planter with horizontal boards and fresh varnish standing on newspaper in front of a shop"
+  },
+  "caption": {
+    "tr": "Kasanın tahtaları yatay ve vernik taze. Altına takoz konmuş, zemin vernik damlamasına karşı örtülmüş.",
+    "en": "The boards of the box are horizontal and the varnish is fresh. Blocks are placed under it and the floor is covered against drips."
+  },
+  "seoFilename": "gazete-uzerinde-vernik-uygulanmis-turuncu-kahve-ahsap-kasa",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

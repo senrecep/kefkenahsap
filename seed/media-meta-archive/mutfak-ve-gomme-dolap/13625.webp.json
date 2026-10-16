@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/13625.webp",
+  "category": "mutfak-ve-gomme-dolap",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Mavi tezgahta dik duran basamaklı raf iskeleti",
+    "en": "Stepped shelf frame standing upright on the blue bench"
+  },
+  "alt": {
+    "tr": "Mavi atölye tezgahı üzerinde dik duran, bölmeli ve basamak biçimli açık renk ahşap raf iskeleti",
+    "en": "A light timber shelf frame with compartments in a stepped form, standing upright on a blue workshop bench"
+  },
+  "caption": {
+    "tr": "İskelet üstten bakıldığında basamaklı bölmeler halinde görünüyor. Altta köşede kare bir göz ayrılmış.",
+    "en": "From above the frame reads as stepped compartments, with a square cell set apart in the lower corner."
+  },
+  "seoFilename": "mavi-tezgahta-dik-duran-basamakli-raf-iskeleti",
+  "tags": {
+    "type": [
+      "raf / kitaplık"
+    ],
+    "wood": [],
+    "setting": [
+      "atölyede üretim"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.7
+}

@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/10109.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Merdiven başında kalın direk ve çapraz korkuluk",
+    "en": "Thick post and cross-braced railing at the top of stairs"
+  },
+  "alt": {
+    "tr": "Çimlik kenarındaki ahşap merdivenin başında kalın bir direk ve X çaprazlı açık tonlu korkuluk, yanda servi sırası ve tel çit",
+    "en": "Thick post and light X-braced railing at the head of a timber staircase beside a lawn, with a row of cypress"
+  },
+  "caption": {
+    "tr": "Korkuluk basamakların yan tarafını boydan boya kapatıyor, kalın direk başlangıcı belirliyor.",
+    "en": "The railing closes the side of the steps along their length, and the thick post marks the start."
+  },
+  "seoFilename": "merdiven-basinda-kalin-direk-ve-capraz-korkuluk-cimlik",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "merdiven"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

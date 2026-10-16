@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/10948.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Siyah çerçeveli, dikey tahtalı çift kanatlı yaya kapısı, taş sütun yanında",
+    "en": "Double-leaf pedestrian gate with a black frame and vertical boards"
+  },
+  "alt": {
+    "tr": "Dik tahtalarla doldurulmuş siyah metal çerçeveli çift kanatlı yaya kapısı; iki yanında beyaz taş sütunlar, üstte mavi gökyüzü",
+    "en": "A double-leaf pedestrian gate with a black metal frame filled with upright boards"
+  },
+  "caption": {
+    "tr": "Kanatlar dikey, bal rengi tahtalarla dolu, aralarında dar boşluk var. Kapı taş sütunlara oturuyor.",
+    "en": "The leaves are filled with vertical honey-coloured boards with narrow gaps between them. The gate sits between the stone piers."
+  },
+  "seoFilename": "siyah-cerceveli-dikey-tahtali-cift-kanatli-yaya-kapisi",
+  "tags": {
+    "type": [
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Pergola ve Kamelyalar/8923.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Pergola üzerine gerili bej kumaş örtü, altında cam kapılı teras",
+    "en": "Beige fabric stretched over a pergola above a terrace with glass doors"
+  },
+  "alt": {
+    "tr": "Ahşap pergola üzerine gerilmiş bej kumaş örtü, altında cam kapılı teras, kenarda kafes panel",
+    "en": "Beige fabric stretched over a timber pergola above a terrace with glass doors, with a lattice panel at the side"
+  },
+  "caption": {
+    "tr": "Kumaş kirişlerin üstünde ve arasında gerilmiş, teras gölgede kalıyor. Kapılar cam ve geniş.",
+    "en": "The fabric is stretched over and between the beams, shading the terrace. The doors are glazed and wide."
+  },
+  "seoFilename": "pergola-uzerine-gerili-bej-kumas-ortu-cam-kapili-teras",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

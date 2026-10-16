@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/13776.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimen üzerinde, ağaç yanında koyu renkli alçak ahşap masa",
+    "en": "Low dark timber table on grass beside a tree"
+  },
+  "alt": {
+    "tr": "Çimlik bahçede, kalın bir ağaç gövdesinin yanında duran, kısa ayaklı, eskitilmiş görünümlü koyu renkli alçak ahşap masa",
+    "en": "A low dark timber table with short legs and an aged look on a garden lawn beside a thick tree trunk"
+  },
+  "caption": {
+    "tr": "Masa alçak ve geniş, tablası kalın tahtalardan. Eskitilmiş yüzeyi bahçedeki doğal ortama uyuyor.",
+    "en": "The table is low and wide, with a top of thick boards. Its aged surface suits the natural setting of the garden."
+  },
+  "seoFilename": "cimen-uzerinde-agac-yaninda-koyu-alcak-ahsap-masa",
+  "tags": {
+    "type": [
+      "sehpa"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

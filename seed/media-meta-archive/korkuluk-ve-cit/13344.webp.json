@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/13344.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bahçeye inen merdivende ahşap küpeşte",
+    "en": "Timber handrail on stairs down to the garden"
+  },
+  "alt": {
+    "tr": "Çalılar ve ağaçlarla çevrili bahçeye inen basamaklar, iki yanda ahşap küpeşteli halatlı korkuluk",
+    "en": "Steps down to a garden with shrubs and trees, with cable railings and timber handrails on both sides"
+  },
+  "caption": {
+    "tr": "Merdiven alt kata doğru basamak basamak iniyor, korkuluk onu iki yandan çevreliyor.",
+    "en": "The stairs descend step by step, with the railing flanking them on both sides."
+  },
+  "seoFilename": "bahceye-inen-merdiven-kupeste-halat",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "merdiven"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

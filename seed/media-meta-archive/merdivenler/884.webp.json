@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/884.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Masalı terasta ahşap basamaklar ve çaprazlı korkuluk",
+    "en": "Timber steps and cross-braced railing on a terrace with tables"
+  },
+  "alt": {
+    "tr": "Masaların ve şemsiyelerin olduğu terasta ahşap basamaklar ve çaprazlı korkuluk; zemin satranç tahtası desenli",
+    "en": "Timber steps and a cross-braced railing on a terrace with tables and parasols, with a chequerboard floor"
+  },
+  "caption": {
+    "tr": "Teras zemini siyah beyaz karolu. Ahşap basamaklar ve çaprazlı korkuluk alanı bir üst seviyeye bağlıyor.",
+    "en": "The terrace floor is tiled in a black and white chequer. Timber steps and a cross-braced railing connect it to the level above."
+  },
+  "seoFilename": "masalarin-oldugu-terasta-ahsap-basamaklar-ve-caprazli",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

@@ -1,0 +1,39 @@
+{
+  "source": "Korkuluk ve Cit/12982.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölye zemininde yatay serilmiş sivri uçlu çıtalı çit paneli",
+    "en": "Pointed-slat fence panel laid flat on the workshop floor"
+  },
+  "alt": {
+    "tr": "Atölyede gri zemine uzunlamasına serilmiş, sivri uçlu açık renk çıtalı çit paneli; uçta kalın bir kalas",
+    "en": "A light pointed-slat fence panel laid lengthwise on the grey floor of a workshop"
+  },
+  "caption": {
+    "tr": "Panel iki yatay kirişe çıtaların çakılmasıyla yapılmış, henüz boyanmamış. Çıtaların boyu ucundan başa doğru değişiyor.",
+    "en": "The panel is made by fixing slats to two horizontal rails and has not yet been painted. The length of the slats changes from one end to the other."
+  },
+  "seoFilename": "atolye-zemininde-yatay-serilmis-sivri-uclu-cit-paneli",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/30.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Pembe bahçe evi önünde uzun düz çatılı ahşap pergola",
+    "en": "Long flat-roofed timber pergola in front of a pink garden house"
+  },
+  "alt": {
+    "tr": "Pembe bahçe evinin önünde uzun, düz çatılı açık yeşil ahşap pergola, önünde güller ve sarmaşık",
+    "en": "Long flat-roofed pale green timber pergola in front of a pink garden house, with roses and climbers before it"
+  },
+  "caption": {
+    "tr": "Pergola evin cephesi boyunca uzanıyor, düz çatısı çıtalı. Arkada tarlalar ve alçak tepeler görünüyor.",
+    "en": "The pergola runs along the front of the house with a slatted flat roof. Fields and low hills lie behind."
+  },
+  "seoFilename": "pembe-bahce-evi-onunde-uzun-duz-catili-pergola",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

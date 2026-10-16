@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/13536.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çakıl üzerinde çıtalara tahta döşenirken matkap ve vidalar",
+    "en": "Boards going onto battens over gravel with a drill and screws"
+  },
+  "alt": {
+    "tr": "Çakıl üzerinde çıtalara döşenen tahtalar; üstte matkap ve vida kutusu, çıtalar arasında koyu çakıl",
+    "en": "Boards being laid on battens over dark gravel, with a drill and a tub of screws on top"
+  },
+  "caption": {
+    "tr": "Tahtalar çıtalara dik olarak vidalanıyor ve döşeme tek şerit olarak ilerliyor. Alttaki koyu çakıl henüz açıkta.",
+    "en": "The boards are screwed down square to the battens and the laying proceeds in a single strip. The dark gravel below is still open."
+  },
+  "seoFilename": "cakil-uzerinde-citalara-tahta-doserken-matkap-ve-vidalar",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

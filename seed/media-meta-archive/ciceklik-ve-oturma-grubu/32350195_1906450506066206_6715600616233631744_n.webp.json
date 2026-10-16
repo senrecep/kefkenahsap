@@ -1,0 +1,39 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/32350195_1906450506066206_6715600616233631744_n.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Gazete serili zeminde büyük açık renk çiçeklik",
+    "en": "Large light planter on newspaper-covered ground"
+  },
+  "alt": {
+    "tr": "Gazete serili zeminde duran, içi siyah astarlı büyük açık renkli ahşap çiçeklik",
+    "en": "Large light timber planter with a black liner standing on newspaper-covered ground"
+  },
+  "caption": {
+    "tr": "Çiçeklik kalın kare direkli, ortasında dikey tahtalar var. Üst kuşağı geniş ve düz.",
+    "en": "The planter has thick square corner posts with vertical boards between them. The top rail is wide and flat."
+  },
+  "seoFilename": "gazete-serili-zeminde-acik-renkli-ici-siyah-astarli-buyuk",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

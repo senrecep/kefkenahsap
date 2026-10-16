@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/13972.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deck üzerinde telli çapraz çıtalı kapı",
+    "en": "Wire-mesh gate with cross braces on a deck"
+  },
+  "alt": {
+    "tr": "Gri deck zemin üzerinde, içi tel örgülü çapraz çıtalı koyu ahşap kapı, arkada çalılar",
+    "en": "Dark timber gate with cross braces and wire mesh infill, standing on grey decking with shrubs behind"
+  },
+  "caption": {
+    "tr": "Kapının çıtaları arasına tel örgü gerilmiş. Çapraz çıtalar kapıyı sabit tutuyor.",
+    "en": "Wire mesh is stretched between the slats. The cross braces keep the gate square."
+  },
+  "seoFilename": "deck-uzerinde-telli-capraz-citali-kapi",
+  "tags": {
+    "type": [
+      "bahçe kapısı",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

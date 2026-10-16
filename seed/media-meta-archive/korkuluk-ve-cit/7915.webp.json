@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/7915.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimenlik boyunca yeşil bantlı ahşap direkli çit",
+    "en": "Green-tape fence with timber posts along a lawn"
+  },
+  "alt": {
+    "tr": "Çimenliğin kenarında uzaklaşan, yuvarlak ahşap direklere yeşil bantlarla gerilmiş çit, yanında gür çalılar",
+    "en": "Fence of green tapes on round timber posts receding along a lawn, with dense shrubs beside it"
+  },
+  "caption": {
+    "tr": "Çit perspektifle uzaklaşıyor, üç sıra bant direklere tutturulmuş.",
+    "en": "The fence recedes in perspective, with three rows of tape fixed to the posts."
+  },
+  "seoFilename": "cimenlik-boyunca-yesil-bantli-ahsap-direkli-cit",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

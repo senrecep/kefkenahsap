@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/7165.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yarı ahşap cepheli evde çapraz çıtalı balkon korkuluğu, yakın görünüm",
+    "en": "Cross-slat balcony railing on a half-timbered house, close view"
+  },
+  "alt": {
+    "tr": "Yarı ahşap cepheli evin balkonundaki çapraz çıtalı ahşap korkuluk; üstte sivri çatı ve ahşap saçak, zincir sarkıyor",
+    "en": "Cross-slat timber railing on the balcony of a half-timbered house"
+  },
+  "caption": {
+    "tr": "Korkuluk balkonun kenarını X çaprazlarla çevreliyor, cephedeki kirişlerle aynı kahverengi vernik tonunda.",
+    "en": "The railing encloses the balcony edge with X braces, in the same brown varnish tone as the beams on the facade."
+  },
+  "seoFilename": "yari-ahsap-cepheli-evde-capraz-citali-balkon-korkulugu",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

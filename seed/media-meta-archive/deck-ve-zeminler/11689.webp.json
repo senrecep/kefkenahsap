@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/11689.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz yanında çakıl üzerine kiriş iskeleti",
+    "en": "Joist frame on gravel beside the pool"
+  },
+  "alt": {
+    "tr": "Havuz kenarında çakıl dolgunun üzerine sıralanmış deck alt taşıyıcı kirişleri",
+    "en": "Deck substructure joists laid out across a gravel bed beside a pool"
+  },
+  "caption": {
+    "tr": "Tahtalar henüz döşenmedi. Kirişler düzgün aralıklarla çakılın üzerinde sıralı duruyor.",
+    "en": "The boards are not laid yet. The joists sit in even rows on the gravel."
+  },
+  "seoFilename": "havuz-kenari-cakil-uzerinde-kiris-iskeleti",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı",
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

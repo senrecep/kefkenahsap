@@ -1,0 +1,39 @@
+{
+  "source": "Ireko-Teak/13865.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bahçede kavisli kollu ahşap koltuklar, minderler ve sehpa",
+    "en": "Curved-arm timber armchairs, cushions and a table in a garden"
+  },
+  "alt": {
+    "tr": "Kırmızı yapraklı bir ağacın altında, karo terasta, minderli ve yastıklı kavisli ahşap kanepe, iki koltuk ve bir sehpa duruyor",
+    "en": "Under a red-leaved tree on a tiled terrace, a curved timber sofa with a cushion and pillows, two armchairs and a table"
+  },
+  "caption": {
+    "tr": "Takım ağaç gölgesinde, teras karosu üzerinde duruyor. Kanepedeki mavi minder ve renkli yastıklar oturma alanını canlandırıyor.",
+    "en": "The set stands in the shade of the tree on the terrace tiles. The blue cushion and coloured pillows on the sofa brighten the seating area."
+  },
+  "seoFilename": "bahcede-kavisli-kollu-ahsap-koltuklar-minderler-ve-sehpa",
+  "tags": {
+    "type": [
+      "oturma grubu",
+      "sehpa"
+    ],
+    "wood": [],
+    "setting": [
+      "teras",
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,40 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/8831.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dükkân önünde siyah astarlı açık renk çiçeklik",
+    "en": "Light planter with a black liner outside a shop"
+  },
+  "alt": {
+    "tr": "Dükkânın önünde duran, içi siyah astarlı ve aralarında ara kirişi olan açık renkli ahşap çiçeklik",
+    "en": "Light timber planter with a black liner and a middle cross-brace standing outside a shop"
+  },
+  "caption": {
+    "tr": "Çiçeklik üstten ortadan bir kirişle desteklenmiş. Zemin kırmızı karo, arkada bir kapı aralık.",
+    "en": "The planter is braced across the middle from above. The floor is red tile and a door stands ajar behind."
+  },
+  "seoFilename": "dukkan-onunde-acik-renkli-ahsap-ciceklik-ici-siyah-astarli",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "giriş",
+      "ticari mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

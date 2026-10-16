@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/10509.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimenlik kenarında deck kenar ve köşe bitişi",
+    "en": "Deck edge and corner finish beside the lawn"
+  },
+  "alt": {
+    "tr": "Çimenlik kenarında ahşap deck kenarı ve köşe bitişi; tahta yüzeyi parlak ve kızıl-kahve",
+    "en": "Edge and corner finish of a timber deck beside a lawn, the board surface glossy and red-brown"
+  },
+  "caption": {
+    "tr": "Çerçeve tahtası köşede 45 derece birleşiyor, tahtalar arasındaki derzler düzgün. Yüzeyde damlalar ve damarlar görünüyor.",
+    "en": "The border board meets at 45 degrees in the corner and the joints between boards are even. Droplets and grain show on the surface."
+  },
+  "seoFilename": "cimenlik-kenarinda-ahsap-deck-kenar-ve-kose-bitisi-parlak",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

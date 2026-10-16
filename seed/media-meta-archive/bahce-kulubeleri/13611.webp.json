@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/13611.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Önünde sundurma tabanı olan açık renk kulübe",
+    "en": "Pale dog house with a porch floor in front"
+  },
+  "alt": {
+    "tr": "Açık renk yatay kaplamalı, önüne döşemeli bir sundurma tabanı eklenmiş büyük köpek kulübesi",
+    "en": "Large dog house with pale horizontal cladding and a boarded porch floor added in front"
+  },
+  "caption": {
+    "tr": "Kulübenin çatısı henüz takılmamış, duvarlar yatay tahtalarla örülmüş. Girişin önünde tahta bir platform uzanıyor.",
+    "en": "The roof of the house has not been fitted yet and the walls are built of horizontal boards. A timber platform extends in front of the entrance."
+  },
+  "seoFilename": "acik-renk-yatay-kaplamali-kopek-kulubesi-onunde-dosemeli",
+  "tags": {
+    "type": [
+      "köpek kulübesi"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

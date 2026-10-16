@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/6513.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Merdiven altında kapaklı depo, çıtalı korkuluk",
+    "en": "Storage with doors under the stairs, slatted railing"
+  },
+  "alt": {
+    "tr": "Merdivenin altı tahtayla kaplanmış kapaklı bir depoya çevrilmiş; üstte çıtalı korkuluk, yanda taş duvar ve çim",
+    "en": "The space under the stairs boarded in as a storage cupboard with doors, with a slatted railing above"
+  },
+  "caption": {
+    "tr": "Merdiven altındaki üçgen boşluk iki kapaklı depo olmuş. Eğimli kiriş ve korkuluk koyu sarı tonda.",
+    "en": "The triangular space under the stairs has become a cupboard with doors. The sloping stringer and railing are a deep yellow tone."
+  },
+  "seoFilename": "merdiven-altinda-kapakli-depo-citali-korkuluk-ahsap",
+  "tags": {
+    "type": [
+      "merdiven",
+      "gömme dolap / gardırop"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

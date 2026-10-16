@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/7520.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kıyıda tek eğimli ahşap çatı iskeleti ve kırmızı masa",
+    "en": "Single-pitch timber roof frame on the shore with a red table"
+  },
+  "alt": {
+    "tr": "Kıyıdaki beton zeminde tek eğimli ahşap çatı iskeleti, yanında kırmızı bir masa ve çalışan bir işçi",
+    "en": "Single-pitch timber roof frame on a concrete shoreline slab, with a red table beside it and a worker at the back"
+  },
+  "caption": {
+    "tr": "İskelet uzun bir hat boyunca sıralanmış direklerden oluşuyor. Çatı eğimi denize doğru alçalıyor.",
+    "en": "The frame is made of posts set along a long line. The roof pitch falls toward the sea."
+  },
+  "seoFilename": "kiyida-tek-egimli-ahsap-cati-iskeleti",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

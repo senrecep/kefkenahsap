@@ -1,0 +1,38 @@
+{
+  "source": "Ireko-Teak/14087.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bantlarla korunan, yağı yeni sürülmüş yan bahçe deck'i",
+    "en": "Freshly oiled side-garden deck protected with tape"
+  },
+  "alt": {
+    "tr": "Ev yanındaki dar alanda mavi bantla kenarları korunmuş, yeni yağlanmış turuncu kahve deck ve önde boya kovası",
+    "en": "Freshly oiled orange-brown deck in a narrow area beside a house, edges protected by blue tape, with a paint bucket in front"
+  },
+  "caption": {
+    "tr": "Yağ sürülürken çevre betonu bantlanmış. Deck tahtalarının rengi koyulaşıp derinleşmiş.",
+    "en": "The surrounding concrete is taped off while the oil goes on. The boards have deepened in colour."
+  },
+  "seoFilename": "bantlarla-korunan-yagi-yeni-surulmus-yan-bahce-decki",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

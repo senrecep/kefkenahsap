@@ -1,0 +1,38 @@
+{
+  "source": "Kopru ve Iskele/8007.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Granit meydandaki kavisli havuzun deck kenarı",
+    "en": "Deck edge of a curved pool on a granite plaza"
+  },
+  "alt": {
+    "tr": "Granit meydandaki kavisli havuz kabuğunun çevresine döşenmiş açık renkli deck şeridi, arkada şemsiye ve ağaçlar",
+    "en": "Light deck strip laid around the shell of a curved pool on a granite plaza, with a parasol and trees behind"
+  },
+  "caption": {
+    "tr": "Deck şeridi havuzun eğrisini yumuşak bir hatla izliyor. Havuzun içi henüz bitmemiş.",
+    "en": "The deck strip follows the curve of the pool in a smooth line. The inside of the pool is not finished yet."
+  },
+  "seoFilename": "granit-meydandaki-kavisli-havuzun-deck-kenari",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı",
+      "ticari mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/12603.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Balkonda ahşap masa ve minderli sandalye, arkada apartmanlar",
+    "en": "Timber table and a cushioned chair on a balcony with apartment blocks behind"
+  },
+  "alt": {
+    "tr": "Fayans zeminli bir balkonda, çıtalı uzun ahşap bir masa ve önünde yeşil minderli bir ahşap sandalye var",
+    "en": "On a tiled balcony, a long slatted timber table with a timber chair holding a green cushion in front"
+  },
+  "caption": {
+    "tr": "Masa dar bir balkona sığacak uzunlukta. Sandalyedeki yeşil minder oturmayı rahatlatıyor.",
+    "en": "The table is a length that fits a narrow balcony. The green cushion on the chair makes sitting more comfortable."
+  },
+  "seoFilename": "balkonda-ahsap-masa-ve-minderli-sandalye-fayans-zemin",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "balkon"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

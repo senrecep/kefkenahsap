@@ -1,0 +1,38 @@
+{
+  "source": "Merdivenler/8205.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar boyunca beyaz korkuluk ve üstte kapı",
+    "en": "White railing along a stone wall, with a gate above"
+  },
+  "alt": {
+    "tr": "Taş duvar boyunca uzanan beyaz boyalı korkuluk ve merdiven; üstte çapraz desenli kapı ve çit",
+    "en": "White painted railing and stairs running along a stone wall, with a cross-patterned gate and fence above"
+  },
+  "caption": {
+    "tr": "Taş duvarın yanında uzanan merdivenin korkuluğu beyaza boyalı. Üstte kapı ve çit görünüyor.",
+    "en": "The stairs beside the stone wall have a white painted railing. A gate and fence show at the top."
+  },
+  "seoFilename": "tas-duvar-boyunca-beyaz-citali-korkuluk-ve-ustte-kapi",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

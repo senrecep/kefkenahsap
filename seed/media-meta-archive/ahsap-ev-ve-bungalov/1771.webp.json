@@ -1,0 +1,39 @@
+{
+  "source": "Ahsap Yapilar/1771.webp",
+  "category": "ahsap-ev-ve-bungalov",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çıtalı çit ve taş duvarın arkasında ahşap ev",
+    "en": "Slatted fence and stone wall in front of a timber house"
+  },
+  "alt": {
+    "tr": "Taş duvar üzerinde sıralanan çıtalı ahşap çitin arkasında, kamelyayla yan yana duran ahşap ev",
+    "en": "Timber house standing next to a gazebo behind a slatted timber fence on top of a stone wall"
+  },
+  "caption": {
+    "tr": "Çit ve taş duvar ön planda, ev ile kamelya arkada. Hepsi aynı bahçenin içinde.",
+    "en": "The fence and stone wall are in the foreground, the house and gazebo behind. All sit in the same garden."
+  },
+  "seoFilename": "cit-ve-tas-duvar-arkasinda-ahsap-ev-ile-kamelya",
+  "tags": {
+    "type": [
+      "çit",
+      "ahşap ev / bungalov",
+      "kamelya"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

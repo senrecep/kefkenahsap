@@ -1,0 +1,41 @@
+{
+  "source": "Merdivenler/12238.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deck merdiveninde basamaklar ve çıtalı korkuluk",
+    "en": "Treads and slatted railing on deck stairs"
+  },
+  "alt": {
+    "tr": "Deck merdivenine yakın çekim; kalın basamaklar, dikey çıtalı korkuluk ve üstte platform",
+    "en": "Close-up of deck stairs, with thick treads, a vertical-slat railing and the platform above"
+  },
+  "caption": {
+    "tr": "Basamaklar kalın tahtadan, el tutamağı korkuluk direklerine oturuyor. Yukarıda platformun korkuluğu devam ediyor.",
+    "en": "The treads are thick boards and the handrail sits on the railing posts. The platform railing carries on above."
+  },
+  "seoFilename": "deck-merdivenine-yakin-cekim-basamak-citali-korkuluk",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

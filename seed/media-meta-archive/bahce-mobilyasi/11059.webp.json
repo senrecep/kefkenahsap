@@ -1,0 +1,35 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/11059.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kare ahşap masanın tablası ve çapraz ayağı, yakından",
+    "en": "Square timber table top and crossed base up close"
+  },
+  "alt": {
+    "tr": "Yakın çekimde kare ahşap masanın yedi tahtalı tablası ve ortadaki çapraz ayak; zeminde mozaik taş ve yeşil çim",
+    "en": "A close shot of a square timber table with a seven-plank top and a central crossed base"
+  },
+  "caption": {
+    "tr": "Tabla, yan yana dizilmiş tahtalardan oluşuyor ve altı çerçeveyle toplanmış. Ortadaki ayak masayı dengede tutuyor.",
+    "en": "The top is made of boards laid side by side and held by a frame underneath. The central base keeps the table balanced."
+  },
+  "seoFilename": "kare-tahtali-masa-capraz-ayak-yakin-cekim-mozaik",
+  "tags": {
+    "type": [
+      "sehpa"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

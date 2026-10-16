@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/9441.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz duvar dibinde saksılı alçak deck alanı",
+    "en": "Low deck area with plant pots against a white wall"
+  },
+  "alt": {
+    "tr": "Beyaz duvarın dibinde çimle sınırlanan açık renkli deck platformu, üzerinde biberiye ve iki kırmızı toprak saksı",
+    "en": "Light deck platform against a white wall, bordered by lawn, with a rosemary pot and two terracotta pots on it"
+  },
+  "caption": {
+    "tr": "Küçük deck duvarın dibinde saksılara yer açıyor. Köşeli çıkıntısı çimenin içine uzanıyor.",
+    "en": "The small deck gives the pots a base against the wall. Its stepped edge reaches into the lawn."
+  },
+  "seoFilename": "beyaz-duvar-dibinde-saksili-alcak-deck-alani",
+  "tags": {
+    "type": [
+      "deck",
+      "çiçeklik / saksı"
+    ],
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

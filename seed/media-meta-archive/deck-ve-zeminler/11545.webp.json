@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/11545.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Eski boyalı deck tahtaları zımparalanıyor",
+    "en": "Old painted deck boards being sanded"
+  },
+  "alt": {
+    "tr": "Eski boyalı deck tahtaları elle tutulan zımpara makinesiyle zımparalanıyor; yüzeyde boya kalıntıları var",
+    "en": "Old painted deck boards being sanded with a hand-held sander, with paint residue on the surface"
+  },
+  "caption": {
+    "tr": "Zımpara makinesinin geçtiği tahtalar açık renge dönmüş. Geride kalan kısımda eski kırmızı boya ve gri aşınma duruyor.",
+    "en": "The boards the sander has passed over have turned light. Old red paint and grey weathering remain on the part left behind."
+  },
+  "seoFilename": "eski-boyali-deck-tahtalari-zimparalaniyor-solda-elle-tutulan",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

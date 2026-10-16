@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/13335.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Mavi örtüde yan yana iki uzun çiçeklik",
+    "en": "Two long planters side by side on a blue sheet"
+  },
+  "alt": {
+    "tr": "Mavi örtü üzerinde yan yana duran, vernikli ve içi siyah astarlı iki uzun ahşap çiçeklik",
+    "en": "Two long varnished timber planters with black liners standing side by side on a blue sheet"
+  },
+  "caption": {
+    "tr": "İki çiçeklik birbirine yaslanmış, köşe direkleri aynı hizada. Arkada kapı kanatları dizili.",
+    "en": "The two planters lean close together, with their corner posts aligned. Door leaves are lined up behind."
+  },
+  "seoFilename": "mavi-ortu-uzerinde-vernikli-uzun-iki-ahsap-ciceklik-ic-astar",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

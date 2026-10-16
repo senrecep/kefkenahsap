@@ -1,0 +1,33 @@
+{
+  "source": "Kapi Dolap ve Seperator/8463.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölyede ham keresteden eğik destek çerçevesi",
+    "en": "Sloping support frame of raw timber in the workshop"
+  },
+  "alt": {
+    "tr": "Fayans zeminli atölyede, ham kerestelerden yapılmış eğik destek çerçevesi; arka planda tezgâhlar, aletler ve raflar",
+    "en": "Sloping support frame made of raw timber in a tiled workshop, with benches, tools and shelves in the background"
+  },
+  "caption": {
+    "tr": "Çerçeve kirişleri eğimli bir hatla birbirine bağlanmış. Atölye içinde bir deneme parçası olarak duruyor.",
+    "en": "The frame beams are joined along a sloping line. It stands in the workshop as a trial piece."
+  },
+  "seoFilename": "atolyede-ham-keresteden-egik-destek-cercevesi",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.3
+}

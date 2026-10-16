@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/11510.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Uzun balkonda yarım boyanmış deck",
+    "en": "Long balcony deck, partly stained"
+  },
+  "alt": {
+    "tr": "Uzun balkonda deck tahtaları; bir kısmı koyu boyalı, bir kısmı ıslak ve gri",
+    "en": "Deck boards on a long balcony, partly stained dark and partly wet and grey"
+  },
+  "caption": {
+    "tr": "Koruyucu sürülen tahtalar koyu kahve, sürülmeyenler hâlâ gri ve ıslak. Balkonun ucunda çiçeklikler görünüyor.",
+    "en": "The boards with protective coat are dark brown, the rest are still grey and wet. Planters are visible at the far end of the balcony."
+  },
+  "seoFilename": "uzun-balkonda-deck-tahtalari-bir-kismi-koyu-boyali-bir-kismi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "balkon"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

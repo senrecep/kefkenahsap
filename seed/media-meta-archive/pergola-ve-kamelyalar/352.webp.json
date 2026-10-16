@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/352.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kamelya çatı kirişleri ve çapraz payandalar alttan",
+    "en": "Gazebo roof beams and diagonal braces from below"
+  },
+  "alt": {
+    "tr": "Alttan görünen kamelya çatısı: ortadan açılan kirişler, çapraz payandalar ve açık renk lambri kaplama",
+    "en": "Underside of a gazebo roof: beams fanning out from the centre, diagonal braces and light lining boards"
+  },
+  "caption": {
+    "tr": "Kirişler ortadaki bir noktada birleşiyor, payandalar köşelere iniyor. Tahtalar dar ve yan yana.",
+    "en": "The beams meet at a point in the centre and the braces drop to the corners. The boards are narrow and side by side."
+  },
+  "seoFilename": "kamelya-cati-kirisleri-capraz-payandalar-alttan",
+  "tags": {
+    "type": [
+      "kamelya",
+      "tavan kaplaması / lambri"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

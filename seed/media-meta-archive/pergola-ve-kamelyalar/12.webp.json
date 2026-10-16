@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/12.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kamelya çatı altında çapraz kirişler ve tahta kaplama",
+    "en": "Crossing beams and boarding under a gazebo roof"
+  },
+  "alt": {
+    "tr": "Kamelya çatısının altı: açık yeşil emprenyeli tahta kaplama ve çapraz oturan kirişler",
+    "en": "Underside of a gazebo roof with pale green pressure-treated board lining and crossing beams"
+  },
+  "caption": {
+    "tr": "Tahtalar kirişlere dik yönde çakılmış. Kenarda çatı saçağının kırmızı boyalı alt kenarı görünüyor.",
+    "en": "The boards run across the beams. At the edge you can see the red-painted underside of the roof eave."
+  },
+  "seoFilename": "kamelya-cati-alti-capraz-kirisler",
+  "tags": {
+    "type": [
+      "kamelya",
+      "tavan kaplaması / lambri"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

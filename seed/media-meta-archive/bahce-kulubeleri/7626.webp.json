@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/7626.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yamaçta yeşil çatılı uzun ahşap kabin",
+    "en": "Long timber cabin with a green roof on a slope"
+  },
+  "alt": {
+    "tr": "Yamaçta, ağaçlar ve çalıların arasında duran yeşil shingle çatılı uzun ahşap kabin; yan duvarda küçük pencereler",
+    "en": "Long timber cabin with a green shingle roof standing among trees and shrubs on a slope, with small windows in the side wall"
+  },
+  "caption": {
+    "tr": "Kabinin uzun yan duvarında sıralı küçük pencereler var, alınlığı camlı. Önde sivri bir çam ve çalılar duruyor.",
+    "en": "The long side wall of the cabin has a row of small windows and the gable is glazed. A pointed pine and shrubs stand in front."
+  },
+  "seoFilename": "yamacta-yesil-shingle-catili-uzun-ahsap-kabin-kucuk",
+  "tags": {
+    "type": [
+      "bahçe kulübesi / depo"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

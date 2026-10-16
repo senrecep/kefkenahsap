@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/989.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yatay tahtalı köşe korkuluk ve basamaklar",
+    "en": "Corner horizontal-board railing and steps at a glass door"
+  },
+  "alt": {
+    "tr": "Cam cepheli girişin önünde, köşeyi dönen yatay tahtalı açık tonlu ahşap korkuluk ve ahşap basamaklar, yanda taş duvar",
+    "en": "Corner horizontal-board light timber railing and timber steps in front of a glazed entrance, with a stone wall to one side"
+  },
+  "caption": {
+    "tr": "Korkuluk köşede kalın direklerle tutuluyor, basamaklar kapıya doğru yükseliyor.",
+    "en": "The railing is held at the corner by thick posts, and the steps rise towards the door."
+  },
+  "seoFilename": "yatay-tahtali-kose-korkuluk-ve-basamaklar-cam-kapi-onu",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "merdiven"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

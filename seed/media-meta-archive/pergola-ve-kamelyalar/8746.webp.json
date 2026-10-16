@@ -1,0 +1,37 @@
+{
+  "source": "Pergola ve Kamelyalar/8746.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Vernikli kalın pergola kirişi ve tuğla kolon, arkada bahçe",
+    "en": "Thick varnished pergola beam and a brick column with a garden behind"
+  },
+  "alt": {
+    "tr": "Yakından vernikli kalın pergola kirişi ve direği, arkada tuğla kolon, bahçe ve kıvrılan yol",
+    "en": "Close view of a thick varnished pergola beam and post, with a brick column, a garden and a winding road behind"
+  },
+  "caption": {
+    "tr": "Kalın kirişin yüzeyindeki ahşap damarı belirgin. Kirişin altında bir tahta parçası duruyor.",
+    "en": "The grain on the thick beam's surface is clear. A scrap of board rests beneath it."
+  },
+  "seoFilename": "vernikli-kalin-pergola-kirisi-tugla-kolon-bahce",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

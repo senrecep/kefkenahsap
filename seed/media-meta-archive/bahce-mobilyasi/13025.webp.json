@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/13025.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kereste yığını önünde seramik kaplı alçak sehpa",
+    "en": "Low ceramic-topped table in front of a stack of lumber"
+  },
+  "alt": {
+    "tr": "Atölyenin beton zemininde, arkasında dikey kereste yığını bulunan, mavi-beyaz seramik kaplı alçak ahşap sehpa",
+    "en": "A low timber table topped with blue-and-white ceramic on a workshop's concrete floor, with a stack of upright lumber behind"
+  },
+  "caption": {
+    "tr": "Sehpa atölyenin köşesinde, kerestelerin önünde duruyor. Ahşap kasa yan yüzleri koyu renkte.",
+    "en": "The table stands in a corner of the workshop in front of the lumber. The sides of the timber frame are dark."
+  },
+  "seoFilename": "seramik-kapli-alcak-sehpa-kereste-yigini-onunde",
+  "tags": {
+    "type": [
+      "sehpa"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

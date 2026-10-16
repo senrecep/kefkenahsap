@@ -1,0 +1,36 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14443.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kamyon kasasında nakliye için yüklenmiş paravanlar ve çiçeklikler",
+    "en": "Screens and planters loaded on a lorry bed for delivery"
+  },
+  "alt": {
+    "tr": "Kamyon kasasına yüklenmiş yatay çıtalı ahşap paravanlar ve yanlarındaki uzun çiçeklik kutuları",
+    "en": "Horizontal-slat timber screens loaded on a lorry bed with long planter boxes beside them"
+  },
+  "caption": {
+    "tr": "Paravanlar kasada dik duruyor, çiçeklik kutuları yan yana dizilmiş. Teslim yerine götürülmeye hazırlar.",
+    "en": "The screens stand upright on the bed and the planter boxes are lined up side by side. They are ready to be taken to the delivery site."
+  },
+  "seoFilename": "kamyon-kasasinda-nakliye-icin-paravanlar-cicekler",
+  "tags": {
+    "type": [
+      "kafes / paravan",
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.55
+}

@@ -1,0 +1,39 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/10718.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "İç içe ve üst üste dizilmiş kare çiçeklikler",
+    "en": "Square planters nested and stacked"
+  },
+  "alt": {
+    "tr": "Yan yana ve üst üste yerleştirilmiş, içleri siyah astarlı kare ahşap çiçeklikler",
+    "en": "Square timber planters with black liners placed side by side and on top of each other"
+  },
+  "caption": {
+    "tr": "Çiçeklikler dikey tahta kaplı ve aynı boyda. En üstteki sıra yana kaydırılarak yerleştirilmiş.",
+    "en": "The planters are clad in vertical boards and are the same size. The top row is set slightly off to the side."
+  },
+  "seoFilename": "ic-ice-dizilmis-kare-ahsap-ciceklikler-siyah-astarli",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

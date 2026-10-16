@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/9889.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Üstten çaprazlı korkuluk ve basamaklar, çimlik",
+    "en": "Cross-braced railing and steps from above, with a lawn"
+  },
+  "alt": {
+    "tr": "Üstten bakışla çaprazlı korkuluk ve ahşap basamaklar; yanda çimlik, çiçek tarhı ve evin cephesi",
+    "en": "Top view of a cross-braced railing and timber steps, with a lawn, a flower bed and the house facade beside"
+  },
+  "caption": {
+    "tr": "Korkuluk evin cephesi boyunca uzanıyor, aşağıda çimlik ve çiçek tarhı görünüyor.",
+    "en": "The railing runs along the house facade and a lawn and flower bed show below."
+  },
+  "seoFilename": "ustten-caprazli-korkuluk-ve-ahsap-basamaklar-cimlik-cicekler",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

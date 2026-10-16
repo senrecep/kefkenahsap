@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/8965.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "İskele kurulu binada ahşap çıtalı cephe altyapısı",
+    "en": "Timber-batten facade substructure on a scaffolded building"
+  },
+  "alt": {
+    "tr": "İskele kurulu binada, yalıtım levhalarının üzerine ahşap çıtalarla hazırlanan cephe altyapısı; işçiler çalışıyor",
+    "en": "Facade substructure prepared with timber battens over insulation boards on a scaffolded building, workers at work"
+  },
+  "caption": {
+    "tr": "Gri yalıtım levhalarının üstüne dikey ahşap çıtalar çakılmış. İskelenin içinde iki işçi çalışıyor.",
+    "en": "Vertical timber battens are fixed over grey insulation boards. Two workers are at work inside the scaffold."
+  },
+  "seoFilename": "iskele-kurulu-binada-ahsap-citalarla-hazirlanan-cephe",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

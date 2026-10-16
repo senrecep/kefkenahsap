@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/9293.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Duvarlar arasında merdiven altı yapısı",
+    "en": "Stair substructure between two walls"
+  },
+  "alt": {
+    "tr": "İki duvar arasında merdivenin alt yapısı ve çaprazlı korkuluk; altta yatay bir kiriş ve direkler",
+    "en": "The substructure of a staircase between two walls with a cross-braced railing, with a horizontal beam and posts below"
+  },
+  "caption": {
+    "tr": "Merdivenin altında direkler ve yatay bir kiriş duruyor, üstte çaprazlı korkuluk takılmış.",
+    "en": "Posts and a horizontal beam stand under the stairs and a cross-braced railing is fitted above."
+  },
+  "seoFilename": "duvar-arasi-merdiven-alti-yapisi-ve-caprazli-korkuluk",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

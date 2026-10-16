@@ -1,0 +1,39 @@
+{
+  "source": "Ireko-Teak/14654.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çapraz döşenmiş dar deck şeridi ve çalı kenarı",
+    "en": "Diagonal narrow deck strip at the shrub edge"
+  },
+  "alt": {
+    "tr": "Beton zemin üzerinde çalı bordürüne bitişik, çapraz yönde döşenmiş bal rengi dar deck şeridi",
+    "en": "Narrow honey-coloured deck strip laid diagonally on concrete alongside a shrub border"
+  },
+  "caption": {
+    "tr": "Tahtalar şerit boyunca çapraz ilerliyor. Kenardaki bordürde spotlar yerinde duruyor.",
+    "en": "The boards run diagonally along the strip. The spotlights stay in place on the kerb."
+  },
+  "seoFilename": "capraz-dosenmis-dar-deck-seridi-cali-kenari",
+  "tags": {
+    "type": [
+      "deck",
+      "yürüyüş yolu"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

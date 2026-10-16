@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/946.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kırmızı kiremitli büyük açık ahşap pavyon, önünde çim alan",
+    "en": "Large open timber pavilion with a red tile roof and a lawn in front"
+  },
+  "alt": {
+    "tr": "Kırmızı kiremit çatılı büyük açık ahşap pavyon, önünde çim alan ve parke taşlı yol, arkada ormanlık tepe",
+    "en": "Large open timber pavilion with a red tile roof, a lawn and a paved road in front, and a wooded hill behind"
+  },
+  "caption": {
+    "tr": "Çatının alın kısmında çapraz ahşap bağlantılar var. Yan duvarlar kapalı, ön cephe açık bırakılmış.",
+    "en": "The roof gable shows crossed timber bracing. The side walls are closed and the front is left open."
+  },
+  "seoFilename": "kirmizi-kiremitli-buyuk-acik-ahsap-pavyon",
+  "tags": {
+    "type": [
+      "kamelya",
+      "sundurma / saçak / carport"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/149.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapı önünde sarı turuncu deck",
+    "en": "Yellow-orange deck in front of a glass door"
+  },
+  "alt": {
+    "tr": "Sürme cam kapıların önüne boyuna döşenmiş, sarıdan turuncuya değişen tonlarda cilalı deck; sağda çimen kenarı",
+    "en": "Varnished deck in tones from yellow to orange, laid lengthwise in front of sliding glass doors"
+  },
+  "caption": {
+    "tr": "Tahtalar cam kapıya paralel uzanıyor ve yüzey ışığı sıcak bir tonda yansıtıyor. Arkada koyu yeşil yapraklı bir çalı sıralanıyor.",
+    "en": "The boards run parallel to the glass doors and the surface reflects the light in a warm tone. A dark green hedge runs behind."
+  },
+  "seoFilename": "cam-kapi-onunde-sari-turuncu-tonlu-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

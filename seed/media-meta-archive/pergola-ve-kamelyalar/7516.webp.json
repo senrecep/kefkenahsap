@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/7516.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Gölün kenarında direkli ahşap çatı iskeleti, beton zemin",
+    "en": "Post-and-rafter timber frame on a concrete slab by the water"
+  },
+  "alt": {
+    "tr": "Beton zeminin üzerinde dik direkler ve çatı kirişlerinden oluşan ahşap iskelet, arkada su ve beyaz evler",
+    "en": "Timber frame of upright posts and roof rafters on a concrete slab, with water and white houses behind"
+  },
+  "caption": {
+    "tr": "Direkler eşit aralıkta dizilmiş, çatı kirişleri üstte bir beşik oluşturuyor. Kaplama henüz yapılmamış.",
+    "en": "The posts stand at even spacing and the rafters form a gable above. No cladding has been added yet."
+  },
+  "seoFilename": "golun-kenarinda-direkli-ahsap-cati-iskeleti",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/488.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Toprak yığını yanında pergola iskeleti, arkada apartmanlar",
+    "en": "Pergola frame beside a pile of soil with apartment blocks behind"
+  },
+  "alt": {
+    "tr": "Toprak yığınının yanında yükselen ahşap pergola iskeleti, payandalı kirişler ve arkada çok katlı apartmanlar",
+    "en": "Timber pergola frame rising beside a pile of soil, with braced beams and tall apartment blocks behind"
+  },
+  "caption": {
+    "tr": "Pergola iki yönlü kiriş düzeniyle kuruluyor, korkuluk çıtaları bir yanda duruyor. Çevre düzenlemesi sürüyor.",
+    "en": "The pergola is set up with beams in two directions and railing slats at one side. Landscaping is ongoing."
+  },
+  "seoFilename": "toprak-yigini-yaninda-pergola-iskeleti-apartmanlar",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

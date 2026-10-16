@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/2413.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çok çatılı evde koyu saçaklar ve bacalar",
+    "en": "House with several roofs, dark eaves and chimneys"
+  },
+  "alt": {
+    "tr": "Birbirine geçmiş çatıları, koyu saçakları ve beyaz bacası olan, alt kısmı tuğla kaplı ev",
+    "en": "House with interlocking roofs, dark eaves and a white chimney, its lower walls clad in brick"
+  },
+  "caption": {
+    "tr": "Birkaç çatı farklı yüksekliklerde birleşiyor. Her çatının altında koyu ahşap saçak, solda uzun bir baca görünüyor.",
+    "en": "Several roofs meet at different heights. Each roof has a dark timber eave beneath it and a tall chimney rises on the left."
+  },
+  "seoFilename": "cok-catili-ev-koyu-sacaklar-bacalar-tugla-kaideli-duvar",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

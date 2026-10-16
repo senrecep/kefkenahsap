@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/12783.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Rolo kepenk yanında çiçeklik kutusu ve kırmızı kahverengi deck",
+    "en": "Planter box and red-brown deck beside a roller shutter"
+  },
+  "alt": {
+    "tr": "Rolo kepenk yanında, koyu ahşap çiçeklik kutusu ve onunla yan yana kırmızı kahverengi deck",
+    "en": "Dark timber planter box beside a roller shutter with a red-brown deck running alongside it"
+  },
+  "caption": {
+    "tr": "Çiçeklik kutusunun içi henüz boş, deck ise yerine oturmuş. Zemin çakıl dolgulu ve toprak kısım henüz düzeltilmemiş.",
+    "en": "The planter box is still empty while the deck is already in place. The ground is gravel-filled and the soil part is not yet dressed."
+  },
+  "seoFilename": "rolo-kepenk-yaninda-ciceklik-kutusu-kirmizi-deck",
+  "tags": {
+    "type": [
+      "deck",
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

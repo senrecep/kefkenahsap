@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/8197.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz boyalı X çaprazlı ahşap kapı kanadı ve menteşe, tel çit önünde",
+    "en": "White-painted X-braced timber gate leaf and hinge in front of a wire fence"
+  },
+  "alt": {
+    "tr": "Beyaz boyalı çapraz kirişli ahşap kapı kanadı, siyah mandalı ve menteşesi yakından; arkada tel çit ve taş duvar",
+    "en": "Close view of a white-painted timber gate leaf with diagonal brace, its black latch and hinge"
+  },
+  "caption": {
+    "tr": "Kapının çapraz kirişi alt köşeden üst köşeye uzanıyor. Mandal siyah demirden, çerçeve beyaz boyalı.",
+    "en": "The diagonal brace of the gate runs from the lower corner to the upper corner. The latch is black iron and the frame is painted white."
+  },
+  "seoFilename": "beyaz-boyali-capraz-ahsap-kapi-kanadi-mentese-tel-cit",
+  "tags": {
+    "type": [
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

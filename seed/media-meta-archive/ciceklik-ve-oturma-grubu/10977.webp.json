@@ -1,0 +1,35 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/10977.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yatay çıtalı, üstü kapalı ahşap kutu",
+    "en": "Closed horizontal-slat timber box"
+  },
+  "alt": {
+    "tr": "Teras zemininde duran, yatay çıtalarla kaplı ve üstü çıtalı kapakla kapatılmış ahşap kutu",
+    "en": "Timber box clad in horizontal slats with a slatted lid standing on a terrace floor"
+  },
+  "caption": {
+    "tr": "Kutunun yanları ve kapağı aynı çıtalardan. Güneş çıtaların arasından gölge düşürüyor.",
+    "en": "The sides and lid are made of the same slats. Sunlight throws shadows between the slats."
+  },
+  "seoFilename": "yatay-citali-ustu-kapali-ahsap-kutu-teras-zemini",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.45
+}

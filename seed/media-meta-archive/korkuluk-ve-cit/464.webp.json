@@ -1,0 +1,39 @@
+{
+  "source": "Kapi Dolap ve Seperator/464.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Siyah çerçeveli, dikey tahtalı çift kanat ahşap kapı, flaşlı çekim",
+    "en": "Black-framed double timber gate with vertical boards, flash photograph"
+  },
+  "alt": {
+    "tr": "Kavisli üst hatlı siyah çerçeveli, dikey ahşap tahta dolgulu çift kanatlı kapı; önünde tuğla döşeme, iki yanda taş sütun",
+    "en": "A double gate with a black frame, vertical timber board infill and a curved top line"
+  },
+  "caption": {
+    "tr": "Kapı kanatlarının üst kenarı ortaya doğru yükselen bir kavis çiziyor. Tahtalar yeşilimsi, flaşla parlak çıkmış.",
+    "en": "The top edge of the gate leaves rises in a curve towards the middle. The boards are greenish and look bright under the flash."
+  },
+  "seoFilename": "siyah-cerceveli-dikey-tahtali-cift-kanat-kapi-flas",
+  "tags": {
+    "type": [
+      "bahçe kapısı"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

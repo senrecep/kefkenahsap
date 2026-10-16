@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/10343.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kemerli pencere yanında eğimli lambri tavan",
+    "en": "Sloping panelled ceiling beside an arched window"
+  },
+  "alt": {
+    "tr": "Eğimli tavanda açık tonlu lambri kaplama ve altta kemerli pencerenin üst kısmı, sağda alçı duvar ve ikinci bir pencere",
+    "en": "Light panelling on a sloping ceiling with the top of an arched window below, a plastered wall"
+  },
+  "caption": {
+    "tr": "Tavan pencere hizasında bir basamak yapıp yön değiştiriyor.",
+    "en": "The ceiling steps at the window line and changes direction."
+  },
+  "seoFilename": "kemerli-pencere-yaninda-egimli-tavan-lambri-kaplama",
+  "tags": {
+    "type": [
+      "tavan kaplaması / lambri"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

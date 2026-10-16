@@ -1,0 +1,36 @@
+{
+  "source": "Korkuluk ve Cit/12769.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deck köşesinde ahşap korkuluk, saksı ve taş kenar",
+    "en": "Timber railing at a deck corner, a pot and stone edge"
+  },
+  "alt": {
+    "tr": "Deck köşesindeki çapraz kirişli ahşap korkuluk; solda terakota saksı",
+    "en": "A timber railing with diagonal braces at the corner of a deck, a terracotta pot at left"
+  },
+  "caption": {
+    "tr": "Korkuluk dikmeleri köşeyi dik açıyla çeviriyor, deck tahtaları eskimiş. Arkada havuz ve çalılar görünüyor.",
+    "en": "The railing posts turn the corner at a right angle and the deck boards are weathered. A pool and shrubs are visible behind."
+  },
+  "seoFilename": "deck-kosesinde-ahsap-korkuluk-saksi-tas-kenar",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

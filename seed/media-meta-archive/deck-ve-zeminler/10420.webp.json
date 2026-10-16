@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/10420.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kısmen döşenmiş deck, L şekilli kesim",
+    "en": "Partly laid deck with an L-shaped cut-out"
+  },
+  "alt": {
+    "tr": "Kısmen döşenmiş ahşap deck ve L şeklinde bırakılan kesim; arkada palet ve toprak",
+    "en": "Partly laid timber deck with an L-shaped notch, with a pallet and soil behind"
+  },
+  "caption": {
+    "tr": "Tahtalar dikey yönde, bir köşe L biçiminde içeri giriyor. Ön tarafta çerçeve tahtası döşeli.",
+    "en": "The boards run in one direction with a corner stepping in as an L. The border board is already laid along the front."
+  },
+  "seoFilename": "kismen-dosenmis-ahsap-deck-l-sekilli-kesim-arkada-palet-ve",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

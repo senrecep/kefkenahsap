@@ -1,0 +1,39 @@
+{
+  "source": "Korkuluk ve Cit/2227.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kıyıda çapraz çıtalı korkuluk ve palmiyeler",
+    "en": "Cross-braced railing on the shore with palm trees"
+  },
+  "alt": {
+    "tr": "Kıyı yolunun kenarında yeşilimsi ahşap çapraz çıtalı korkuluk, arkada palmiyeler ve ahşap çatılı yapılar",
+    "en": "Greenish timber cross-braced railing beside a shore path, with palm trees and timber-roofed structures behind"
+  },
+  "caption": {
+    "tr": "Korkuluk yolun kıvrımını izliyor. Arkada kıyıdaki ahşap yapılar görünüyor.",
+    "en": "The railing follows the curve of the path. Timber structures along the shore show behind."
+  },
+  "seoFilename": "kiyida-capraz-citali-korkuluk-palmiyeler",
+  "tags": {
+    "type": [
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

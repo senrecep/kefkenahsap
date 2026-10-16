@@ -1,0 +1,39 @@
+{
+  "source": "Ahsap Yapilar/1763.webp",
+  "category": "ahsap-ev-ve-bungalov",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yamaçtaki iki katlı ahşap ev ve çıtalı çit",
+    "en": "Two-storey timber house on a slope with a slatted fence"
+  },
+  "alt": {
+    "tr": "Eğimli arazide iki katlı, balkonlu ahşap ev; önünde çıtalı çit, solda kamelya",
+    "en": "Two-storey timber house with balconies on sloping ground, a slatted fence in front and a gazebo on the left"
+  },
+  "caption": {
+    "tr": "Ev yamaca oturuyor. Alt ve üst kat balkonlu, önde ise çıtalı bir çit uzanıyor.",
+    "en": "The house sits on a slope. Both floors have balconies and a slatted fence runs along the front."
+  },
+  "seoFilename": "yamactaki-iki-katli-ahsap-ev-ve-citi",
+  "tags": {
+    "type": [
+      "ahşap ev / bungalov",
+      "çit",
+      "kamelya"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

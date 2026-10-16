@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/15150.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölyede kafes yanlı kemer altında hasır koltuk",
+    "en": "Wicker seat under a lattice-sided arch in the workshop"
+  },
+  "alt": {
+    "tr": "Atölyede kafes yanlı koyu ahşap kemerin altında duran, yelpaze biçimli hasır koltuk, çevrede dikili tahtalar",
+    "en": "Fan-shaped wicker seat standing under a dark timber arch with lattice sides in a workshop, with boards leaning around"
+  },
+  "caption": {
+    "tr": "Kemer koltuğu çerçeveliyor, arkada rafta tahtalar ve yan duvarda yuvarlak havalandırma var.",
+    "en": "The arch frames the seat, with boards on a shelf behind and a round vent on the side wall."
+  },
+  "seoFilename": "atolyede-kafes-yanli-kemer-altinda-hasir-koltuk",
+  "tags": {
+    "type": [
+      "kafes / paravan",
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.4
+}

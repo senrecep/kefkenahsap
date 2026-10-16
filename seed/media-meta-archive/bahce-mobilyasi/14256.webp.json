@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14256.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Teras taşı üzerinde köşe ahşap oturma ünitesi ve seramik üstlü sehpa",
+    "en": "Timber corner seating and a ceramic-topped table on terrace stone"
+  },
+  "alt": {
+    "tr": "Sarı duvarlı terasın köşesinde, koyu ahşap L biçimli oturma ünitesi",
+    "en": "In the corner of a terrace with yellow walls, a dark timber L-shaped seating unit"
+  },
+  "caption": {
+    "tr": "Köşe oturma ünitesi duvarlara yaslanıyor. Önündeki seramik üstlü sehpa ve ikinci alçak kasa masa olarak kullanılabilir.",
+    "en": "The corner seating leans against the walls. The ceramic-topped table in front and the second low box can serve as tables."
+  },
+  "seoFilename": "teras-tasi-uzerinde-kose-ahsap-oturma-unitesi-seramik-ustlu",
+  "tags": {
+    "type": [
+      "oturma grubu",
+      "sehpa"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/9752.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çakıl üstünde kurulan merdiven, mavi gökyüzü",
+    "en": "Stairs set up on gravel, under a blue sky"
+  },
+  "alt": {
+    "tr": "Çakıl üstüne kurulan çaprazlı korkuluklu ahşap merdiven; yan tarafta bina ve mavi gökyüzü",
+    "en": "Timber stairs with a cross-braced railing set up on gravel, with a building at the side and a blue sky"
+  },
+  "caption": {
+    "tr": "Merdiven çakıl yatağının üstünde yükseliyor, iki yanındaki çaprazlı korkuluk gökyüzüne karşı net seçiliyor.",
+    "en": "The stairs rise from a bed of gravel and the cross-braced railings on both sides stand out clearly against the sky."
+  },
+  "seoFilename": "cakil-ustunde-kurulan-caprazli-ahsap-merdiven-mavi-gokyuzu",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

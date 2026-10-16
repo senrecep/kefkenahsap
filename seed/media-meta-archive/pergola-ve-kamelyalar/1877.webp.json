@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/1877.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kırmızı shingle çatılı sekizgen kamelya, yukarıdan görünüm",
+    "en": "Octagonal gazebo with a red shingle roof seen from above"
+  },
+  "alt": {
+    "tr": "Yukarıdan çekilmiş sekizgen kamelya, kırmızı shingle çatı, çevrede genç servi ağaçları ve toprak zemin",
+    "en": "Octagonal gazebo seen from above with a red shingle roof, young cypress trees around it and bare ground"
+  },
+  "caption": {
+    "tr": "Çatı kaplanmış ama etrafta çalışma devam ediyor: kereste parçaları ve toprak zemin görünüyor.",
+    "en": "The roof is covered, but work is still going on around it, with offcuts of timber and bare ground visible."
+  },
+  "seoFilename": "kirmizi-shingle-catili-sekizgen-kamelya",
+  "tags": {
+    "type": [
+      "kamelya"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

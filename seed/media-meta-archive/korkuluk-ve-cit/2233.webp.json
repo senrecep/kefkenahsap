@@ -1,0 +1,40 @@
+{
+  "source": "Korkuluk ve Cit/2233.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deniz kenarında deck ve çapraz korkuluk, işçilerle",
+    "en": "Seaside deck and cross-braced railing with workers"
+  },
+  "alt": {
+    "tr": "Deniz kıyısında yeşilimsi tahta döşeli deck ve kenarında çapraz çıtalı korkuluk, ortada çalışan iki kişi ve plastik sandalye",
+    "en": "Greenish boarded deck by the sea with a cross-braced railing at its edge, two people working in the middle"
+  },
+  "caption": {
+    "tr": "Deck tahtaları döşenmiş, işçiler masa başında çalışıyor. Arkada iskele ve deniz var.",
+    "en": "The deck boards are laid, and workers are busy at a bench. A jetty and the sea lie beyond."
+  },
+  "seoFilename": "deniz-kenarinda-deck-ve-capraz-korkuluk-iscilerle",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

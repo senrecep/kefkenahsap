@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/13102.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kavisli arkalıklı ahşap bank, yanında toprak ve çimen",
+    "en": "Curved-back timber bench beside soil and grass"
+  },
+  "alt": {
+    "tr": "Beton bir daireyi kenarından saran kavisli ahşap arkalıklı bank; dış kenarında kırmızımsı toprak ve çimen",
+    "en": "A timber bench with a curved back along the edge of a concrete circle"
+  },
+  "caption": {
+    "tr": "Bankın dış yüzü toprakla buluşuyor, bu da çevre düzenlemesinin henüz tamamlanmadığını gösteriyor. Oturak yüzeyi tamamen tahta.",
+    "en": "The outer face of the bench meets bare soil, showing the landscaping is not yet finished. The seat is all timber."
+  },
+  "seoFilename": "kavisli-arkalikli-ahsap-bank-beton-daire-yaninda-toprak-ve",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

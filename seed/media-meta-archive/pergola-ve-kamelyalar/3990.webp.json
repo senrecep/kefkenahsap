@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/3990.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yeşil çitli bahçede pergola direği ve çıtalı panel",
+    "en": "Pergola post and slatted panel in a garden with a green fence"
+  },
+  "alt": {
+    "tr": "Yeşil telli çit boyunca bahçede pergola direği, dikey çıtalı panel, basamaklı yeşillik ve süs otları",
+    "en": "Pergola post and a vertical slatted panel along a green wire fence in a garden, with stepped planting and ornamental grasses"
+  },
+  "caption": {
+    "tr": "Dikey çıtalı panel çitin önünde mahremiyet sağlıyor. Basamaklı bahçeye yukarıdan merdiven iniyor.",
+    "en": "The vertical slatted panel gives privacy in front of the fence. A stair comes down into the stepped garden."
+  },
+  "seoFilename": "yesil-citli-bahcede-pergola-diregi-citali-panel",
+  "tags": {
+    "type": [
+      "pergola",
+      "kafes / paravan"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

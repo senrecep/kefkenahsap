@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/14280.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz kenarındaki köşk duvarında yatay ahşap kaplama",
+    "en": "Horizontal timber cladding on a poolside pavilion wall"
+  },
+  "alt": {
+    "tr": "Havuz kenarındaki çatılı yapının yan duvarını kaplayan yatay ahşap çıtalar, köşede çapraz destek ve altta hasır sandalyeler",
+    "en": "Horizontal timber slats cladding the side wall of a roofed poolside structure"
+  },
+  "caption": {
+    "tr": "Duvar yatay çıtalarla kaplanmış, saçak altında çapraz bir destek duruyor. Aşağıda oturma alanı var.",
+    "en": "The wall is clad in horizontal slats and a diagonal brace sits under the eaves. A seating area lies below."
+  },
+  "seoFilename": "havuz-kenari-kosk-duvarinda-yatay-ahsap-kaplama",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı",
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.55
+}

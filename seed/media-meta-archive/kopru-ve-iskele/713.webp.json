@@ -1,0 +1,40 @@
+{
+  "source": "Kopru ve Iskele/713.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş basamaklı inişi olan korkuluklu ahşap iskele platformu",
+    "en": "Railed timber pier platform with a stone-paved set of steps"
+  },
+  "alt": {
+    "tr": "Göle bakan, çevresi korkuluklu açık renk ahşap platform; önde taş döşemeye bağlanan geniş basamaklar, arkada sazlık",
+    "en": "Light timber platform facing the lake with a railing around it, wide steps to the stone paving in front and reeds behind"
+  },
+  "caption": {
+    "tr": "Basamaklar platformdan taş zemine iniyor. Korkuluk platformu üç yandan çeviriyor.",
+    "en": "The steps lead from the platform down to the stone paving. The railing encloses the platform on three sides."
+  },
+  "seoFilename": "tas-basamakli-inisi-olan-korkuluklu-iskele-platformu",
+  "tags": {
+    "type": [
+      "iskele",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

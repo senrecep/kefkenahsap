@@ -1,0 +1,39 @@
+{
+  "source": "Merdivenler/12613.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yapım aşamasındaki ayaklı oyun evi, yerde kaydırak ve çuvallar",
+    "en": "Playhouse on posts under construction, slide and sacks on the ground"
+  },
+  "alt": {
+    "tr": "Ormanlık bir arazide, ayaklar üzerinde yükselen ahşap oyun evi; yerde henüz takılmamış yeşil kaydırak ve çuvallar duruyor",
+    "en": "A timber playhouse on posts in a wooded plot, with an unmounted green slide and sacks lying on the ground"
+  },
+  "caption": {
+    "tr": "Oyun evinin gövdesi ve basamakları kurulmuş. Kaydırak henüz yerinde değil, yanında bekliyor.",
+    "en": "The body and steps of the playhouse are up. The slide is not yet in place and waits beside it."
+  },
+  "seoFilename": "yapim-asamasinda-ayakli-oyun-evi-kaydirak-cuval",
+  "tags": {
+    "type": [
+      "çocuk oyun evi"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "orman / kır"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

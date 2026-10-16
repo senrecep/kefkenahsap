@@ -1,0 +1,36 @@
+{
+  "source": "Ahsap Yapilar/8718.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çerçeveli panolarda vernik ve boya numuneleri",
+    "en": "Varnish and paint samples on framed panels"
+  },
+  "alt": {
+    "tr": "Çerçeveli iki panoda, açıktan koyuya farklı vernik ve boya tonlarıyla yatay tahta numuneleri",
+    "en": "Horizontal boards in different varnish and paint shades from light to dark on two framed panels"
+  },
+  "caption": {
+    "tr": "Her tahta farklı bir tonda: sarıdan kahverengiye, yeşilden siyaha uzanan bir renk sırası var. Panolar atölyede duruyor.",
+    "en": "Each board has a different shade, from yellow to brown and from green to black. The panels stand in a workshop."
+  },
+  "seoFilename": "cerceveli-iki-panoda-renk-ve-vernik-numuneleri-yatay-tahta",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila",
+      "boyalı"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.5
+}

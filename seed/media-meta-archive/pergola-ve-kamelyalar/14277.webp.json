@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/14277.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz duvarlı eve bitişik vernikli lambri tavanlı çatı altı",
+    "en": "Varnished lining-board ceiling under a roof attached to a white house"
+  },
+  "alt": {
+    "tr": "Beyaz duvarlı eve bitişik teras çatısının vernikli lambri tavanı ve kirişleri, yanında yeşil çit",
+    "en": "Varnished lining-board ceiling and beams of a terrace roof attached to a white-walled house, with a green hedge beside"
+  },
+  "caption": {
+    "tr": "Tavan tahtaları dar ve yan yana, kirişler üstte düz hatlarla geçiyor. Duvarda küçük bir aplik var.",
+    "en": "The ceiling boards are narrow and side by side with straight beams across them. A small wall light sits on the wall."
+  },
+  "seoFilename": "beyaz-duvarli-eve-bitisik-vernikli-lambri-tavan",
+  "tags": {
+    "type": [
+      "pergola",
+      "sundurma / saçak / carport",
+      "tavan kaplaması / lambri"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

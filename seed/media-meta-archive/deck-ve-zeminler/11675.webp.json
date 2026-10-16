@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/11675.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimenin üzerinde dikdörtgen deck",
+    "en": "Rectangular deck laid on the lawn"
+  },
+  "alt": {
+    "tr": "Çimen bahçeye serilmiş açık renkli dikdörtgen ahşap deck, arkada taş duvar ve beyaz çit",
+    "en": "Light rectangular timber deck laid on a lawn, with a stone wall and white fence behind"
+  },
+  "caption": {
+    "tr": "Deck tahtaları aynı yönde, ara boşluksuza yakın döşenmiş. Zemin bahçede küçük bir oturma alanı açıyor.",
+    "en": "The boards run in one direction with tight joints. The deck opens up a small sitting area in the garden."
+  },
+  "seoFilename": "cimen-uzerinde-dikdortgen-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

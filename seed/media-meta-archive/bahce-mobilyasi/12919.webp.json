@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/12919.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yan yana tahtalardan yapılmış uzun oturma ünitesi, üstten",
+    "en": "Long seating unit of side-by-side boards, from above"
+  },
+  "alt": {
+    "tr": "Yukarıdan bakıldığında, bitişik tahtalardan yapılmış uzun oturma yüzeyi ve köşede yükselen sırt bölümü görünüyor",
+    "en": "From above, a long seating surface made of adjoining boards with a back section rising at the corner"
+  },
+  "caption": {
+    "tr": "Oturak yüzeyi birbirine bitişik tahtalardan, sırt bölümü köşede yükseliyor. Açık yeşil çam tonu belli.",
+    "en": "The seat is made of boards laid tight together, with the back rising at the corner. The light green pine tone is clear."
+  },
+  "seoFilename": "yan-yana-tahtalardan-uzun-ahsap-oturma-unitesi-ustten",
+  "tags": {
+    "type": [
+      "bank",
+      "oturma grubu"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

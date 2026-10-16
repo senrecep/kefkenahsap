@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/8772.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Panjurlu pencere önünde koyu ahşap saçak",
+    "en": "Dark timber canopy in front of shuttered windows"
+  },
+  "alt": {
+    "tr": "Panjurlu kapı ve pencerelerin önünde koyu ahşap küçük saçak; yanda ahşap bir merdiven dayalı",
+    "en": "Small dark timber canopy in front of shuttered doors and windows, with a timber ladder leaning beside it"
+  },
+  "caption": {
+    "tr": "Teras zemini henüz yarım, kirişler açıkta duruyor. Saçak iki yan desteğe ve ince direklere oturuyor.",
+    "en": "The terrace floor is half done with the joists exposed. The canopy rests on two side brackets and slim posts."
+  },
+  "seoFilename": "panjurlu-pencere-onunde-koyu-ahsap-kucuk-sacak-ve-ahsap",
+  "tags": {
+    "type": [
+      "sundurma / saçak / carport",
+      "pencere / panjur"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

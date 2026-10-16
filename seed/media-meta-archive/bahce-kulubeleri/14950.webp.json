@@ -1,0 +1,38 @@
+{
+  "source": "Kapi Dolap ve Seperator/14950.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Koyu vernikli ahşap deponun çift kapaklı ön yüzü",
+    "en": "Front of a dark-varnished timber shed with double doors"
+  },
+  "alt": {
+    "tr": "Yatay tahtalı koyu ahşap deponun siyah menteşeli çift kapağı; köşede deck tahtası parçası görünüyor",
+    "en": "The double door of a dark timber shed with horizontal boards and black hinges, with part of a deck platform in the corner"
+  },
+  "caption": {
+    "tr": "Siyah menteşeler koyu tahtalarla uyumlu. Depo önüne bir deck platformu konacak şekilde yerleştirilmiş.",
+    "en": "The black hinges match the dark boards. The shed is set up with a deck platform in front of it."
+  },
+  "seoFilename": "koyu-vernikli-depo-cift-kapak-yakin-plan",
+  "tags": {
+    "type": [
+      "bahçe kulübesi / depo",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

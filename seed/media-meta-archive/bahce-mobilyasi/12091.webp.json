@@ -1,0 +1,35 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/12091.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çıtalı sırtlı koyu vernikli bank, mozaik zeminde",
+    "en": "Dark-varnished bench with a slatted back on a mosaic floor"
+  },
+  "alt": {
+    "tr": "Yatay çıtalardan yapılmış sırtlığı açık tonda, oturağı ve ayakları koyu vernikli bir ahşap bank mozaik zemin üzerinde",
+    "en": "A timber bench with a light horizontal-slat back and a dark-varnished seat and legs on a mosaic floor"
+  },
+  "caption": {
+    "tr": "Sırtlıktaki açık renk çıtalar, koyu oturakla karşıtlık oluşturuyor. Bank yüksekçe ve sırtı dik.",
+    "en": "The light slats of the back contrast with the dark seat. The bench is fairly high with an upright back."
+  },
+  "seoFilename": "citali-sirtli-koyu-vernikli-bank-mozaik-zemin",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

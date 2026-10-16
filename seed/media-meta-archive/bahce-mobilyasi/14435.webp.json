@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14435.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beton gövde üzerinde vernikli ahşap oturaklı bank, evin yanında",
+    "en": "Bench with a varnished timber seat on a concrete base beside a house"
+  },
+  "alt": {
+    "tr": "Evin dış duvarı boyunca uzanan beton bir gövdenin üzerine konmuş, altın rengi vernikli tahta oturaklı uzun bank",
+    "en": "A long bench with a golden-varnished plank seat fixed on a concrete base running along the outer wall of a house"
+  },
+  "caption": {
+    "tr": "Bankın gövdesi betondan, oturağı tahtadan. Ahşap yalnızca oturulan yüzeyde kullanılmış.",
+    "en": "The body of the bench is concrete and the seat is timber. Wood is used only on the part you sit on."
+  },
+  "seoFilename": "beton-govde-uzerinde-vernikli-ahsap-oturakli-bank-ev-yani",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

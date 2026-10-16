@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12441.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Farklı tonlu koyu kırmızı kahverengi deck tahtaları",
+    "en": "Dark red-brown deck boards in mixed tones"
+  },
+  "alt": {
+    "tr": "Koyu kırmızı kahverengi, tahtadan tahtaya tonu değişen deck zemininin yakın çekimi, köşede taş duvar",
+    "en": "Close view of dark red-brown decking where the tone varies from board to board, with a stone wall in the corner"
+  },
+  "caption": {
+    "tr": "Tahtalar farklı boylarda ve kesişen derzlerle döşenmiş. Yağlanmış yüzey ışığı yansıtıyor.",
+    "en": "The boards are laid in mixed lengths with staggered joints. The oiled surface catches the light."
+  },
+  "seoFilename": "farkli-tonlu-koyu-kirmizi-kahverengi-deck-tahtalari",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

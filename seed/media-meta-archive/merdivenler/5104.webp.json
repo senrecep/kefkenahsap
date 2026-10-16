@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/5104.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Toprak zeminde taş döşemeli çaprazlı merdiven",
+    "en": "Cross-braced stairs on soil with stone slabs at the foot"
+  },
+  "alt": {
+    "tr": "İlk basamağın önüne taş döşenmiş çaprazlı korkuluklu ahşap merdiven; yanda tel çit ve duvar",
+    "en": "Timber stairs with a cross-braced railing and flat stones laid in front of the first step"
+  },
+  "caption": {
+    "tr": "Merdivenin önünde toprak üzerine yassı taşlar konmuş. Korkuluk çaprazlı, yanda tel çit var.",
+    "en": "Flat stones are laid on the soil in front of the stairs. The railing is cross-braced and wire fencing runs alongside."
+  },
+  "seoFilename": "toprak-zeminde-tas-basamakli-caprazli-ahsap-merdiven",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

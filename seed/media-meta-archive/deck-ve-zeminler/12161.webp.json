@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12161.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Karo zemin üzerinde koyu boyalı çıtalı deck panelleri",
+    "en": "Dark-stained slatted deck panels on a tiled floor"
+  },
+  "alt": {
+    "tr": "Karo zemin üzerine serilmiş, koyu boyalı çıtalardan yapılmış deck panelleri",
+    "en": "Deck panels made of dark-stained slats laid out on a tiled floor"
+  },
+  "caption": {
+    "tr": "Paneller yerleştirilmeden önce yan yana dizilmiş. Çıtalar eşit aralıklı ve koyu tonda.",
+    "en": "The panels are laid side by side before being fitted. The slats are evenly spaced and dark in tone."
+  },
+  "seoFilename": "karo-zemin-uzerinde-koyu-boyali-citali-deck-panelleri",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

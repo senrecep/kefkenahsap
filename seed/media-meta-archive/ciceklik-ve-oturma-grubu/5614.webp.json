@@ -1,0 +1,35 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/5614.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz duvar kenarında uzun açık renk çiçeklik",
+    "en": "Long light planter along a white wall"
+  },
+  "alt": {
+    "tr": "Beyaz duvar boyunca uzanan, işlenmemiş açık renkli uzun ahşap çiçeklik; içinde bitkiler ve taşlar",
+    "en": "Long untreated light timber planter running along a white wall, with plants and rocks inside"
+  },
+  "caption": {
+    "tr": "Çiçeklik duvar boyunca kıvrılarak uzuyor, içine kaya parçaları ve bitkiler yerleştirilmiş. Yan tahtalar yatay.",
+    "en": "The planter curves along the wall with rock pieces and plants set inside. The side boards are horizontal."
+  },
+  "seoFilename": "beyaz-duvar-kenarinda-uzun-islenmemis-acik-renkli-ahsap",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

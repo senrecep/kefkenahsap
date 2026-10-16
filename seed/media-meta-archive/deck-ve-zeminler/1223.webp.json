@@ -1,0 +1,40 @@
+{
+  "source": "Ahsap Yapilar/1223.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deniz kenarında deck, çapraz korkuluk ve çiçeklik",
+    "en": "Seaside deck, cross-braced railing and planter"
+  },
+  "alt": {
+    "tr": "Deniz kıyısında ahşap deck zemin, çapraz kirişli korkuluk ve pembe çiçekli ahşap çiçeklik kutusu",
+    "en": "Timber deck by the sea with a cross-braced railing and a timber planter box with pink flowers"
+  },
+  "caption": {
+    "tr": "Deck tahtaları denize doğru uzanıyor, korkuluk çapraz kirişli. Çiçeklik kutusu deckin kenarında duruyor.",
+    "en": "The deck boards run towards the sea and the railing is cross-braced. The planter box stands at the edge of the deck."
+  },
+  "seoFilename": "deniz-kenarinda-deck-zemin-capraz-korkuluk-ve-ahsap-ciceklik",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk",
+      "çiçeklik / saksı"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı",
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

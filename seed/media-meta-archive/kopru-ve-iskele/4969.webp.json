@@ -1,0 +1,36 @@
+{
+  "source": "Kopru ve Iskele/4969.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Nehir kenarında direkli ahşap gezinti yolu, yanında taş patika",
+    "en": "Posted timber boardwalk by the river with a stone path beside it"
+  },
+  "alt": {
+    "tr": "Su kıyısı boyunca uzanan gri-kahve tahtalı gezinti yolu; kenarda ahşap direkler, sazlık ve çimde taş patika",
+    "en": "Grey-brown boardwalk running along the waterside with timber posts along the edge, reeds, and a stone path through the grass"
+  },
+  "caption": {
+    "tr": "Yol tahtaları suya paralel uzunlamasına döşenmiş. Çimde yola eşlik eden bir taş patika var.",
+    "en": "The boards run lengthwise parallel to the water. A stone path accompanies the walkway across the grass."
+  },
+  "seoFilename": "nehir-kenarinda-direkli-gezinti-yolu-tas-patika",
+  "tags": {
+    "type": [
+      "yürüyüş yolu",
+      "iskele"
+    ],
+    "wood": [],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

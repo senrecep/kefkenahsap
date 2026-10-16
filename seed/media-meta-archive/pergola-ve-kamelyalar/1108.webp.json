@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/1108.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Pergola çatı kirişleri ve çapraz payandalar, arkada otopark",
+    "en": "Pergola roof beams and diagonal braces with a car park behind"
+  },
+  "alt": {
+    "tr": "Pergola çatı kirişleri ve köşelerdeki çapraz payandalar, arkada otopark ve beyaz bir araç",
+    "en": "Pergola roof beams with diagonal braces at the corners, and a car park with a white van behind"
+  },
+  "caption": {
+    "tr": "Payandalar direkle kirişi birbirine bağlıyor. Yapının üstü henüz örtüsüz, gökyüzü görünüyor.",
+    "en": "The braces tie the posts to the beams. The top is not yet covered and the sky shows through."
+  },
+  "seoFilename": "pergola-cati-kirisleri-capraz-payandalar",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

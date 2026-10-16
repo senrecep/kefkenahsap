@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/13551.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz sıvalı duvarlı oturma köşesinde ahşap kaplı bank ve budanmış bitkiler",
+    "en": "Timber-capped bench with clipped shrubs in a white-rendered seating nook"
+  },
+  "alt": {
+    "tr": "Beyaz sıvalı alçak duvar üstünde ahşap kaplamalı bank, yuvarlak budanmış bitkiler ve kırmızımsı deck zemin",
+    "en": "A timber-capped bench on a low white-rendered wall, round clipped shrubs and a reddish-varnished deck floor"
+  },
+  "caption": {
+    "tr": "Bankın üst yüzeyi ahşapla kaplanmış, gövde beyaz sıvalı. Yuvarlak budanmış bitkiler duvar üstüne yerleştirilmiş.",
+    "en": "The top of the bench is capped in timber and the body is white render. Round clipped shrubs sit on the wall."
+  },
+  "seoFilename": "beyaz-siva-duvar-icinde-ahsap-kapli-bank-budanmis-bitki-ve",
+  "tags": {
+    "type": [
+      "bank",
+      "çiçeklik / saksı",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

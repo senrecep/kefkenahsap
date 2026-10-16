@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/11852.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Seramik zeminde iki mat koyu vernikli ahşap bank",
+    "en": "Two matt dark-varnished timber benches on a ceramic floor"
+  },
+  "alt": {
+    "tr": "Karo zeminde yan yana duran, mat koyu vernikli iki uzun ahşap bank; arkada atölye rafları görünüyor",
+    "en": "Two long matt dark-varnished timber benches side by side on a tiled floor, with workshop shelving behind"
+  },
+  "caption": {
+    "tr": "Banklar sade, düz tahtalı ve sırtsız. Mat koyu vernik tahtaların damarını hafifçe gösteriyor.",
+    "en": "The benches are plain, flat-planked and backless. The matt dark varnish shows a hint of grain."
+  },
+  "seoFilename": "seramik-zeminde-iki-mat-koyu-vernikli-ahsap-bank",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

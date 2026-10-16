@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/11346.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimenlik alanı saran L biçimli deck",
+    "en": "L-shaped deck wrapping a lawn"
+  },
+  "alt": {
+    "tr": "Küçük çimen alanını çevreleyen L biçimli ahşap deck; kenarda kırmızı yapraklı bitkiler",
+    "en": "L-shaped timber deck wrapping around a small lawn, with red-leaved plants at the edge"
+  },
+  "caption": {
+    "tr": "Deck çimin iki yanından dolanıyor, tahtalar köşede yön değiştiriyor. Üstte taş bir alan ve saksılar görünüyor.",
+    "en": "The deck wraps around two sides of the lawn and the boards change direction at the corner. A stone area and pots are visible above."
+  },
+  "seoFilename": "cimen-alani-cevreleyen-l-seklinde-ahsap-deck-kenarda-kirmizi",
+  "tags": {
+    "type": [
+      "deck",
+      "yürüyüş yolu"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

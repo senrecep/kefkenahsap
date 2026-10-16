@@ -1,0 +1,39 @@
+{
+  "source": "Kapi Dolap ve Seperator/9351.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Üst kısmında küçük menfezler olan uzun ahşap kasa",
+    "en": "Long timber box with small vents near the top"
+  },
+  "alt": {
+    "tr": "Apartmanlar önünde, köşeden görünen yatay tahtalı uzun ahşap kasa; üst kenarda iki küçük kare menfez var",
+    "en": "Long horizontal-board timber box seen from the corner, with two small square vents near the top and apartments behind"
+  },
+  "caption": {
+    "tr": "Uzun kasanın ön ve yan yüzü yatay tahtalarla kaplı. Üst kenardaki küçük açıklıklar içeriye hava alıyor.",
+    "en": "The front and side of the long box are clad in horizontal boards. The small openings near the top let air in."
+  },
+  "seoFilename": "ust-kisminda-menfezli-uzun-ahsap-kasa",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

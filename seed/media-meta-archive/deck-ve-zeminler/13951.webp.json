@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/13951.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Koyu deck üzerinde ahşap masa, beyaz katlanır sandalye ve saksı",
+    "en": "Timber table, white folding chair and pot on a dark deck"
+  },
+  "alt": {
+    "tr": "Koyu kahverengi deck üzerinde ahşap masa, beyaz katlanır sandalye ve yeşil saksıda bitki",
+    "en": "Timber table, a white folding chair and a plant in a green pot on a dark brown deck"
+  },
+  "caption": {
+    "tr": "Deck evin yan cephesindeki dar bahçeyi bir yemek alanına çeviriyor. Çalılar ve çakıl şeridi deck'in kenarını çerçeveliyor.",
+    "en": "The deck turns the narrow side garden into a dining area. Shrubs and a gravel strip frame its edge."
+  },
+  "seoFilename": "koyu-deck-uzerinde-ahsap-masa-katlanir-sandalye-ve-saksi",
+  "tags": {
+    "type": [
+      "deck",
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

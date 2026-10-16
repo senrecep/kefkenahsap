@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/13234.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimlikte sivri çıtalı alçak çit köşesi, yanda salıncak direği",
+    "en": "Corner of a low pointed-slat fence on the lawn, with a swing pole beside it"
+  },
+  "alt": {
+    "tr": "Yeşil çimde köşe oluşturan sivri uçlu açık renk alçak çıtalı çit; arkada koyu çalılar, sağ kenarda salıncağın metal direği",
+    "en": "A low light pointed-slat fence forming a corner on green lawn"
+  },
+  "caption": {
+    "tr": "İki çit parçası köşede birleşiyor ve çalıların önünde duruyor. Çimlik düzgün biçilmiş.",
+    "en": "Two lengths of fence meet at the corner and stand in front of the shrubs. The lawn is neatly mown."
+  },
+  "seoFilename": "cimlikte-sivri-citali-alcak-cit-kosesi-salincak-diregi",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

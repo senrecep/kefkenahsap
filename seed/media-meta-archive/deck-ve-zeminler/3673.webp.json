@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/3673.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz kenarında deck ve açık ahşap iskelet",
+    "en": "Deck at the pool edge with an open timber frame"
+  },
+  "alt": {
+    "tr": "Mavi havuzun kenarını saran açık renkli deck; üst köşede kaplanmamış, kafes gibi duran ahşap iskelet",
+    "en": "Pale deck around the edge of a blue pool, with an uncovered lattice-like timber frame in the upper corner"
+  },
+  "caption": {
+    "tr": "İskelet üst köşede çapraz kirişlerden oluşuyor ve havuz üzerine bir platform için hazırlanmış gibi görünüyor. Alt kenarda deck ızgaralı havuz kenarıyla birleşiyor.",
+    "en": "The frame in the upper corner is made of crossing joists and looks prepared for a platform. At the lower edge the deck meets the grated pool edge."
+  },
+  "seoFilename": "havuz-kenarinda-deck-ve-acik-duran-ahsap-iskelet",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

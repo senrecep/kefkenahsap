@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/11527.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çit önünde çift kapaklı, kırmızımsı ahşap depo",
+    "en": "Reddish timber shed with double doors in front of a hedge"
+  },
+  "alt": {
+    "tr": "Yeşil çitin önünde, kırmızımsı tonda boyanmış küçük ahşap depo; çift kapaklı, çatısı hafif eğimli",
+    "en": "A small reddish-stained timber shed with double doors in front of a green hedge, with a slightly sloping roof"
+  },
+  "caption": {
+    "tr": "Depo bahçenin köşesinde, sık çitin önüne yerleştirilmiş. Tahtalar yatay döşenmiş, kapaklar çift kanatlı.",
+    "en": "The shed is placed in a corner of the garden in front of a dense hedge. The boards run horizontally and the doors have two leaves."
+  },
+  "seoFilename": "kirmizimsi-cift-kapakli-kucuk-depo-cit-onunde",
+  "tags": {
+    "type": [
+      "bahçe kulübesi / depo"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

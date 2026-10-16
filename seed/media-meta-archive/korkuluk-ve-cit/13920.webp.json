@@ -1,0 +1,39 @@
+{
+  "source": "Korkuluk ve Cit/13920.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dikey çıtalı ahşap çerçeve detayı",
+    "en": "Detail of a vertical-slat timber frame"
+  },
+  "alt": {
+    "tr": "Açık tonlu, dikey çıtalı ve üstten çerçeveli ahşap panelin yakın görüntüsü, arkada dağınık bir iç mekân",
+    "en": "Close view of a light-toned timber panel with vertical slats and a top frame, in a cluttered interior behind"
+  },
+  "caption": {
+    "tr": "Çıtalar eşit aralıkla dizilmiş ve üstte yatay bir kuşakla birleşmiş.",
+    "en": "The slats are evenly spaced and joined by a horizontal rail at the top."
+  },
+  "seoFilename": "dikey-citali-ahsap-cerceve-detayi",
+  "tags": {
+    "type": [
+      "korkuluk"
+    ],
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.35
+}

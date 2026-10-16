@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/14983.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çakıl zeminde koyu vernikli tek eğimli kulübe",
+    "en": "Dark varnished mono-pitch shed on gravel"
+  },
+  "alt": {
+    "tr": "Çakıl serili zeminde duran koyu vernikli, yatay kaplamalı tek eğimli kulübe; yanında ahşap platform",
+    "en": "Dark varnished mono-pitch shed with horizontal cladding standing on gravel, with a timber platform beside it"
+  },
+  "caption": {
+    "tr": "Kulübenin tabanına çakıl dökülmüş, sağda koyu bir tahta platform duruyor. Arkada meyve ve çam ağaçları var.",
+    "en": "Gravel has been laid around the base of the shed and a dark board platform stands on the right. Fruit trees and pines are behind."
+  },
+  "seoFilename": "cakil-zemin-ustunde-koyu-vernikli-tek-egimli-kulube-yaninda",
+  "tags": {
+    "type": [
+      "bahçe kulübesi / depo"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

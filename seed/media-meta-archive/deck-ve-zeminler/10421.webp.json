@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/10421.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deck tahtası yığını ve elektrikli aletler",
+    "en": "Pile of deck boards and power tools"
+  },
+  "alt": {
+    "tr": "Çakıllı altyapı üzerinde yarısı döşenmiş ahşap deck; yanında tahta yığını ve elektrikli aletler",
+    "en": "Half-laid timber deck over a gravel substructure, with a pile of boards and power tools beside it"
+  },
+  "caption": {
+    "tr": "Döşenmiş kısmın yanında çakıl dolgulu kirişler açıkta duruyor. Tahtalar istiflenmiş, vidalama aletleri hazır.",
+    "en": "Next to the laid part, the gravel-filled joists are still exposed. The boards are stacked and the screwing tools are ready."
+  },
+  "seoFilename": "deck-tahtalari-yigini-ve-elektrikli-aletler-yarisi-dosenmis",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

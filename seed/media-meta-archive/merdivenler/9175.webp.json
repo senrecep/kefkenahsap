@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/9175.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Üstten platform ve çaprazlı korkuluk",
+    "en": "Platform and cross-braced railing from above"
+  },
+  "alt": {
+    "tr": "Üstten bakışla ahşap platform ve köşede çaprazlı korkuluk; yanda taş basamaklar, çimlikte adım taşları ve cam kapılı ev",
+    "en": "Top view of a timber platform with a cross-braced railing at the corner, with stone steps"
+  },
+  "caption": {
+    "tr": "Platform taş basamağın ucundan başlıyor, köşede çaprazlı korkuluk dönüyor. Çimlikte adım taşları evin kapısına gidiyor.",
+    "en": "The platform starts at the end of the stone steps and the railing turns at the corner. Stepping stones lead across the lawn to the house door."
+  },
+  "seoFilename": "ustten-platform-ve-caprazli-korkuluk-tas-basamaklar-adim",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

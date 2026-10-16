@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14021.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölyede yıkanan ıslak deck paneli",
+    "en": "Wet deck panel being washed in the workshop"
+  },
+  "alt": {
+    "tr": "Atölye zemininde basınçlı suyla yıkanan, ıslak ve parlak tahta yüzey; arkada kereste rafları",
+    "en": "Wet, shiny timber surface being pressure-washed on a workshop floor, with timber racks behind"
+  },
+  "caption": {
+    "tr": "Karede bir kişi basınçlı yıkama yapıyor. Görüntünün odağı iş yapan kişi, deck yüzeyi ise alt yarıda kalıyor.",
+    "en": "A person in the frame is pressure-washing the surface. The focus is on the worker, and the deck itself only fills the lower half."
+  },
+  "seoFilename": "atolyede-yikanan-islak-deck-paneli",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.3
+}

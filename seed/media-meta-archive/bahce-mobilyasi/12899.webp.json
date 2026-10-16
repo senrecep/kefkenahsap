@@ -1,0 +1,38 @@
+{
+  "source": "Ireko-Teak/12899.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölyede dikey şeritli renkli ahşap sandık, arkada alet panosu",
+    "en": "Vertical-strip multicoloured timber chest in the workshop"
+  },
+  "alt": {
+    "tr": "Atölyede alet panosunun önünde, yan yüzeyi dikey ahşap şeritlerden",
+    "en": "In a workshop in front of a tool board, a box-shaped timber chest with vertical strip sides and a glossy top"
+  },
+  "caption": {
+    "tr": "Sandığın yan yüzleri farklı tonlarda dikey şeritlerden oluşuyor, üst yüzey ise yatay tahtalarla kaplı.",
+    "en": "The sides of the chest are made of vertical strips in different tones, while the top is covered in horizontal boards."
+  },
+  "seoFilename": "atolyede-dikey-seritli-renkli-ahsap-sandik-arkada-alet",
+  "tags": {
+    "type": [
+      "sehpa",
+      "gömme dolap / gardırop"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

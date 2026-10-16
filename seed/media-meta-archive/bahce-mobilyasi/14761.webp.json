@@ -1,0 +1,39 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14761.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Koyu deck üzerinde kolçaklı, kavisli sırtlı ahşap bahçe bankı",
+    "en": "Garden bench with arms and a curved back on dark decking"
+  },
+  "alt": {
+    "tr": "Koyu ahşap deck üzerinde duran, kolçaklı, üst kenarı kavisli sırtlığı olan açık renkli ahşap bahçe bankı",
+    "en": "A light timber garden bench with arms and a curved top rail on dark decking, with flower pots behind it"
+  },
+  "caption": {
+    "tr": "Bankın sırtlığı yukarıda kavis yapıyor, kolçaklar ahşap. Koyu deck zeminle açık renkli bank arasında net bir karşıtlık var.",
+    "en": "The back of the bench curves at the top and the arms are timber. The light bench contrasts sharply with the dark decking."
+  },
+  "seoFilename": "koyu-ahsap-deck-uzerinde-kolcakli-kavisli-sirtli-bahce-banki",
+  "tags": {
+    "type": [
+      "bank",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras",
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

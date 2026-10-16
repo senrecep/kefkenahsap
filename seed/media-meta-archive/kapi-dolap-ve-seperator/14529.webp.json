@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/14529.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Pencereli duvar dibinde yeşil kaplı çatılı alçak ahşap dolap",
+    "en": "Low timber cabinet with a green-clad roof at the foot of a windowed wall"
+  },
+  "alt": {
+    "tr": "Pencereli duvarın dibinde parke taşlı zeminde yatay tahtalı yüzlü, yeşil kaplı eğimli çatılı uzun alçak ahşap dolap",
+    "en": "Long low timber cabinet with horizontal boards and a green-clad roof at the foot of a windowed wall"
+  },
+  "caption": {
+    "tr": "Dolap duvara yaslanmış, çatısı hafif eğimli. Yanında çiçeklik ve parke taşlı yol var.",
+    "en": "The cabinet leans against the wall with a gently sloped roof. A planter and a cobbled path run beside it."
+  },
+  "seoFilename": "pencereli-duvar-dibinde-yesil-kapli-catili-alcak-ahsap-dolap",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14980.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş zeminli patika kenarında küçük ahşap kasa",
+    "en": "Small timber box beside a stone-paved path"
+  },
+  "alt": {
+    "tr": "Sarı sıvalı duvar ile taş kaplı patika arasında duran küçük, koyu kahve çıtalı ahşap kasa",
+    "en": "Small dark brown slatted timber box standing between a yellow rendered wall and a stone-paved path"
+  },
+  "caption": {
+    "tr": "Kasa duvara yaslı, yanındaki patikayı daraltmıyor. Tahta kapağı düz ve tam oturuyor.",
+    "en": "The box leans against the wall without narrowing the path. Its lid sits flat and snug."
+  },
+  "seoFilename": "tas-zeminli-patika-kenarinda-kucuk-ahsap-kasa",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

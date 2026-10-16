@@ -1,0 +1,35 @@
+{
+  "source": "Kapi Dolap ve Seperator/10098.webp",
+  "category": "mutfak-ve-gomme-dolap",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sarmaşıklı duvar önünde bölmeli raf kutusu",
+    "en": "Compartmented shelf box in front of an ivy wall"
+  },
+  "alt": {
+    "tr": "Taş ve sarmaşıklı duvar önünde, koyu pürüzlü yüzeyli bir panonun içine yerleştirilmiş bölmeli ahşap raf",
+    "en": "A compartmented timber shelf set into a dark rough-surfaced panel in front of a stone wall covered in ivy"
+  },
+  "caption": {
+    "tr": "Koyu yüzeyli pano içinde ince tahtalarla beş bölmeli bir raf kurulmuş. Arkada sarmaşık ve taş duvar var.",
+    "en": "A shelf with five compartments, made of thin boards, is built into the dark panel. Ivy and a stone wall are behind."
+  },
+  "seoFilename": "sarmasikli-duvar-onunde-koyu-yuzeyli-bolmeli-raf-kutusu",
+  "tags": {
+    "type": [
+      "raf / kitaplık"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.5
+}

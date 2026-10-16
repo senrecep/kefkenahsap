@@ -1,0 +1,36 @@
+{
+  "source": "Ahsap Yapilar/1542.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yatay ahşap kaplamalı binada pencere ve köşe detayı",
+    "en": "Window and corner detail of a horizontal timber-clad building"
+  },
+  "alt": {
+    "tr": "Aşağıdan çekilmiş, gri-kahve yatay ahşap kaplamalı cephede ahşap çerçeveli pencereler ve çıkma köşesi",
+    "en": "Seen from below, windows with timber frames and a projecting corner on a grey-brown horizontal timber-clad facade"
+  },
+  "caption": {
+    "tr": "Pencere çerçeveleri kaplamadan hafif öne çıkıyor, köşe birleşimi dikey bir şeritle kapatılmış.",
+    "en": "The window frames stand slightly proud of the cladding, and the corner joint is closed with a vertical strip."
+  },
+  "seoFilename": "asagidan-yatay-ahsap-kaplamali-binanin-pencere-ve-kose",
+  "tags": {
+    "type": [
+      "cephe kaplaması",
+      "pencere / panjur"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

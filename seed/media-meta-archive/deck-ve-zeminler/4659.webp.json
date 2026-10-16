@@ -1,0 +1,40 @@
+{
+  "source": "Deck ve Zeminler/4659.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çim üzerinde uzun deck yolu",
+    "en": "Long deck path over a lawn"
+  },
+  "alt": {
+    "tr": "Çimenlik alan üzerinde ilerleyen uzun, açık renkli deck yolu; arkada ağaç gövdeleri",
+    "en": "Long pale deck path running across a lawn, with tree trunks behind"
+  },
+  "caption": {
+    "tr": "Yol yerden bir kademe yüksekte ve tahtalar boyuna döşenmiş. Kenar çerçevesi çimenle düz bir çizgi oluşturuyor.",
+    "en": "The path stands one step above ground and the boards are laid lengthwise. Its edge frame makes a clean line against the grass."
+  },
+  "seoFilename": "cimen-uzerinde-acik-renkli-uzun-deck-yolu",
+  "tags": {
+    "type": [
+      "deck",
+      "yürüyüş yolu"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,39 @@
+{
+  "source": "Kapi Dolap ve Seperator/10677.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam sürgünün yanında üstü saksılı ahşap dolap",
+    "en": "Timber cabinet with plant pots on top by a sliding glass door"
+  },
+  "alt": {
+    "tr": "Cam sürgülü kapının yanında üstüne iki saksı konmuş, açık renkli yatay tahtalı çift kapaklı ahşap dolap",
+    "en": "Pale double-door timber cabinet with horizontal boards beside a sliding glass door"
+  },
+  "caption": {
+    "tr": "Dolabın üstü saksılara raf oluyor. Kapaklar yatay tahtalı ve menteşeli.",
+    "en": "The top of the cabinet doubles as a shelf for the pots. The doors are horizontally boarded and hinged."
+  },
+  "seoFilename": "cam-surgunun-yaninda-ustu-saksili-ahsap-dolap",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)",
+      "çiçeklik / saksı"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe",
+      "giriş"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

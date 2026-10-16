@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/14764.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Koyu kahverengi deck üzerinde sırtlıklı ahşap bahçe bankı",
+    "en": "Timber garden bench with a back on dark brown decking"
+  },
+  "alt": {
+    "tr": "Koyu kahverengi deck zeminin üzerinde, evin yanındaki taş kaplı duvar boyunca duran, kavisli sırtlıklı uzun ahşap bahçe bankı",
+    "en": "A long timber garden bench with a curved back on dark brown decking along a stone-clad wall beside a house"
+  },
+  "caption": {
+    "tr": "Bank evin taş kaplı duvarının dibine yerleştirilmiş. Pencere kutularındaki çiçekler oturma alanına renk katıyor.",
+    "en": "The bench is placed at the foot of the house's stone-clad wall. Flowers in the window boxes add colour to the seating area."
+  },
+  "seoFilename": "koyu-kahverengi-deck-uzerinde-sirt-dayanakli-ahsap-bahce",
+  "tags": {
+    "type": [
+      "bank",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras",
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

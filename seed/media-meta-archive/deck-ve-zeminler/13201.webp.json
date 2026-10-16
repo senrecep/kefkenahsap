@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/13201.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimen kenarında sökülmüş gri tahtalar ve alt kirişler",
+    "en": "Grey boards lifted at the lawn edge with joists below"
+  },
+  "alt": {
+    "tr": "Çimen kenarında eski gri deck tahtaları sökülmüş, altta kirişler görünüyor",
+    "en": "Old grey deck boards taken up at the lawn edge with the joists showing underneath"
+  },
+  "caption": {
+    "tr": "Sökülen alanda kirişlerin arası boş kalmış. Kalan gri tahtalar sökülme sırasını bekliyor.",
+    "en": "The gaps between the joists are open where the boards came off. The remaining grey boards wait their turn."
+  },
+  "seoFilename": "cimen-kenarinda-sokulmus-gri-tahtalar-ve-alt-kirisler",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı",
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

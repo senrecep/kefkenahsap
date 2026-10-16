@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/8966.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ahşap kaplı küçük yapıda kiremitli giriş saçağı",
+    "en": "Small timber-clad building with a tiled entrance canopy"
+  },
+  "alt": {
+    "tr": "Kırmızımsı vernikli yatay ahşap kaplamalı iki katlı küçük bir yapı, girişte kırmızı kiremitli küçük saçak ve beyaz kapı",
+    "en": "Small two-storey building clad in reddish varnished horizontal timber, with a small red-tiled canopy"
+  },
+  "caption": {
+    "tr": "Kaplama köşeleri sarıyor, saçağın altında gri bir şerit alt ve üst katı ayırıyor.",
+    "en": "The cladding wraps the corners, and a grey band under the canopy separates the lower and upper floors."
+  },
+  "seoFilename": "ahsap-kapli-iki-katli-kucuk-yapi-girisinde-kiremitli-sacak",
+  "tags": {
+    "type": [
+      "cephe kaplaması",
+      "ahşap ev / bungalov"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

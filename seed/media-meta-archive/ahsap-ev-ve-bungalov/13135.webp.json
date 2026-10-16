@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/13135.webp",
+  "category": "ahsap-ev-ve-bungalov",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kırmızı kiremit çatılı koyu renk ahşap ev",
+    "en": "Dark timber house with a red tile roof"
+  },
+  "alt": {
+    "tr": "Taş döşeli yolun kenarında, çıtalı ahşap çitle çevrili kiremit çatılı koyu ahşap ev",
+    "en": "Dark timber house with a red tile roof behind a slatted timber fence, beside a paved road"
+  },
+  "caption": {
+    "tr": "Koyu tonlu ahşap evin önünde aynı renkte çıtalı bir çit var. Yol kilit taşla döşenmiş.",
+    "en": "A slatted fence in the same dark tone runs in front of the house. The road is paved with interlocking stones."
+  },
+  "seoFilename": "kirmizi-kiremitli-ahsap-ev-cit",
+  "tags": {
+    "type": [
+      "ahşap ev / bungalov",
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

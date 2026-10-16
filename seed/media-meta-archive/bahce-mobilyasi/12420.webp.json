@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/12420.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bitki duvarı önünde uzun, dar ahşap bank",
+    "en": "Long narrow timber bench in front of a plant wall"
+  },
+  "alt": {
+    "tr": "Pembe karo zeminde, arkasında yeşil bitkiler ve çim kaplı bir duvar bulunan uzun ahşap bank; arkada bir araç görünüyor",
+    "en": "A long timber bench on a pink tiled floor with green plants and a turf-covered wall behind, and a vehicle further back"
+  },
+  "caption": {
+    "tr": "Bank bitkilerin önünde, kenarları düz çizgilerle uzanıyor. Alt kısmında yatay bağlantı kirişleri var.",
+    "en": "The bench sits in front of the plants, its edges running in straight lines. There are horizontal tie beams at the bottom."
+  },
+  "seoFilename": "uzun-dar-ahsap-bank-arkada-bitki-duvari",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

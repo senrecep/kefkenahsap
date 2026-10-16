@@ -1,0 +1,40 @@
+{
+  "source": "Korkuluk ve Cit/979.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yamaca bakan deck ve yatay tahtalı korkuluk",
+    "en": "Deck over a slope with a horizontal-board railing"
+  },
+  "alt": {
+    "tr": "Evin yanında yamaca doğru uzanan açık tonlu ahşap deck ve kenarında yatay tahtalı korkuluk, arkada çıplak ağaçlar ve şehir",
+    "en": "Light timber deck extending over a slope beside a house, with a horizontal-board railing along its edge, bare trees"
+  },
+  "caption": {
+    "tr": "Deck bir kolonla yamacın üstüne taşıyor, korkuluk yatay tahtalarla geniş bir siper oluşturuyor.",
+    "en": "The deck is carried over the slope on a post, and the horizontal boards make the railing a broad screen."
+  },
+  "seoFilename": "yamaca-bakan-deck-uzerinde-yatay-tahtali-ahsap-korkuluk",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

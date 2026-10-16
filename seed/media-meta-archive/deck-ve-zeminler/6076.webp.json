@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/6076.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kırmızımsı kahve deck, boyunca ahşap bank",
+    "en": "Reddish-brown deck with a timber bench along the walls"
+  },
+  "alt": {
+    "tr": "Arka ve yan duvar boyunca L biçiminde ahşap oturma bankı olan, kırmızımsı kahverengi cilalı deck; önde mor çiçekli bitkiler",
+    "en": "Reddish-brown polished deck with an L-shaped timber bench along the back and side walls, with purple-flowered plants in front"
+  },
+  "caption": {
+    "tr": "Banklar deckle aynı tonda ve yatay tahtalı bir sırtlığa sahip. Deck kenarında bir basamak oluşturan çerçeve görünüyor.",
+    "en": "The benches match the deck in tone and have a horizontal-slat back. A frame forming a step shows at the deck edge."
+  },
+  "seoFilename": "kirmizimsi-kahve-deck-ve-arka-yan-duvar-boyunca-ahsap-bank",
+  "tags": {
+    "type": [
+      "deck",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

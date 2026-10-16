@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/13143.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölyede parlak vernikli, uzatılabilir ahşap masa tablası",
+    "en": "Glossy-varnished extending timber table top in the workshop"
+  },
+  "alt": {
+    "tr": "Beton atölye zemininde duran, uzatma kanatları olan çıtalı ahşap masa tablası parlak vernikle görünüyor",
+    "en": "A slatted timber table top with extension leaves on a concrete workshop floor"
+  },
+  "caption": {
+    "tr": "Tablanın uzatma kanatları açıkken tabla uzuyor, çıtalar kanatlarla kesintisiz devam ediyor. Çerçeve kenarı gönyeli birleşiyor.",
+    "en": "With the leaves opened the top gets longer and the slats carry on across them. The edge frame is mitred at the corners."
+  },
+  "seoFilename": "atolyede-parlak-vernikli-genisleyen-ahsap-masa-tablasi-beton",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

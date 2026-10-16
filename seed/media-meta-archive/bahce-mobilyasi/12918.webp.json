@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/12918.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölyede yüksek sırtlı geniş ahşap oturma bölümü",
+    "en": "Wide timber seating unit with a high back in the workshop"
+  },
+  "alt": {
+    "tr": "Atölyenin betonunda talaş serpili, açık yeşil emprenyeli çamdan yapılmış yüksek sırtlı geniş oturma ünitesi",
+    "en": "A wide, high-backed seating unit of light-green pressure-treated pine on a workshop floor strewn with sawdust"
+  },
+  "caption": {
+    "tr": "Oturma bölümü kalın tahtalardan, kutu gibi yapılmış. Henüz minder konmamış, atölyede bitmiş hâlde bekliyor.",
+    "en": "The seating unit is built from thick boards like a box. No cushions have been added yet, and it waits in the workshop, finished."
+  },
+  "seoFilename": "atolye-zemininde-yuksek-sirtli-genis-ahsap-oturma-bolumu",
+  "tags": {
+    "type": [
+      "bank",
+      "oturma grubu"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

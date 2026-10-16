@@ -1,0 +1,37 @@
+{
+  "source": "Merdivenler/15024.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Eskimiş gri basamaklar, ortada yeni açık renk basamak",
+    "en": "Old grey treads with one new light tread in the middle"
+  },
+  "alt": {
+    "tr": "Eskimiş gri tahta basamaklar; ortada yeni takılmış açık renk bir basamak, üstünde uzatma kablosu",
+    "en": "Old grey board treads with a newly fitted light tread in the middle and an extension cable on one step"
+  },
+  "caption": {
+    "tr": "Gri basamakların arasında yeni takılan tahta hemen göze çarpıyor. Yenileme basamak basamak yapılıyor.",
+    "en": "The newly fitted board stands out at once among the grey treads. The renewal is being done tread by tread."
+  },
+  "seoFilename": "eskimis-gri-tahta-basamaklar-ortada-yeni-acik-basamak",
+  "tags": {
+    "type": [
+      "merdiven"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

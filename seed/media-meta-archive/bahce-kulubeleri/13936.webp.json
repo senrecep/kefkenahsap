@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/13936.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sekizgen pencereli beyaz ahşap oyun evi",
+    "en": "White timber playhouse with an octagonal window"
+  },
+  "alt": {
+    "tr": "Beyaz boyalı, mavi çerçeveli sekizgen çatı penceresi ve kepenkli pencereleri olan ahşap oyun evi; yanında çalılık",
+    "en": "White-painted timber playhouse with a blue-framed octagonal gable window and shuttered windows, a hedge beside it"
+  },
+  "caption": {
+    "tr": "Oyun evinin yan duvarında mavi çerçeveli bir pencere ve kepenkler var. Çatı koyu gri, evin yanında kesilmiş bir çalılık duruyor.",
+    "en": "The side wall of the playhouse has a blue-framed window with shutters. The roof is dark grey and a trimmed hedge stands next to the house."
+  },
+  "seoFilename": "mavi-cerceveli-sekizgen-pencereli-beyaz-ahsap-oyun-evi",
+  "tags": {
+    "type": [
+      "çocuk oyun evi"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

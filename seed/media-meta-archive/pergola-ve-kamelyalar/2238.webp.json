@@ -1,0 +1,40 @@
+{
+  "source": "Ahsap Yapilar/2238.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çatı kirişlerinin altında çıtalı bölme ve bar alanı",
+    "en": "Slatted screen and bar area under the roof beams"
+  },
+  "alt": {
+    "tr": "Geniş ahşap çatı kirişlerinin altında çıtalı bölme duvar, soğutucu dolaplar ve bar tezgâhı",
+    "en": "Slatted screen wall, drink coolers and a bar counter under wide timber roof beams"
+  },
+  "caption": {
+    "tr": "Çatı iskeleti açıkta, altında bir bar alanı kurulmuş. Yan tarafta çıtalı bölme dolapları gizliyor.",
+    "en": "The roof frame is left open, and a bar area has been set up beneath it. The slatted screen hides the coolers at the side."
+  },
+  "seoFilename": "cati-kirisleri-altinda-citali-bolme-bar",
+  "tags": {
+    "type": [
+      "kamelya",
+      "seperatör",
+      "bar / tezgâh"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı",
+      "ticari mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

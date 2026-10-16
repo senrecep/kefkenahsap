@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/14333.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Açık kapaklı shingle çatılı dolabın iç hacmi",
+    "en": "Interior of a shingle-roofed cabinet with the door open"
+  },
+  "alt": {
+    "tr": "Pencere altındaki küçük ahşap dolabın kapakları açık, içinde yatay tahta kaplı iç yüzey ve alt raf, çimenlik üzerinde",
+    "en": "Small timber cabinet under a window with its doors open, showing a horizontally boarded interior and a base shelf"
+  },
+  "caption": {
+    "tr": "Dolabın içi yatay tahtalarla kaplı ve tek hacim. Altındaki jaluzi bölme havalanmayı sağlıyor.",
+    "en": "The inside is lined with horizontal boards as one compartment. The louvred bay below allows airflow."
+  },
+  "seoFilename": "acik-kapakli-shingle-catili-dolabin-ic-hacmi",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

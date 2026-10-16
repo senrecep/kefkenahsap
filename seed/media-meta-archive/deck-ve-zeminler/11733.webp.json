@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/11733.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimen üzerinde kahverengi deck ve bahçe salıncağı",
+    "en": "Brown deck on the lawn with a garden swing"
+  },
+  "alt": {
+    "tr": "Çimene serilmiş kahverengi dikdörtgen deck, arkada minderli bahçe salıncağı, önde beyaz çit",
+    "en": "Brown rectangular deck laid on the lawn, with a cushioned garden swing behind and a white fence in front"
+  },
+  "caption": {
+    "tr": "Küçük bir bahçede deck, salıncağın önünde sert bir oturma zemini veriyor. Tahtalar tek yönde döşenmiş.",
+    "en": "In a small garden the deck gives the swing a firm floor in front of it. The boards run in one direction."
+  },
+  "seoFilename": "cimen-uzerinde-kahverengi-deck-salincak",
+  "tags": {
+    "type": [
+      "deck",
+      "salıncak"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/13550.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Vernikli ahşap pergola, çıtalı çit ve taş döşeli zemin",
+    "en": "Varnished timber pergola with a slatted fence and stone paving"
+  },
+  "alt": {
+    "tr": "Girişte taş döşeli zeminin üstünde vernikli ahşap pergola, yanında ahşap çıtalı çit ve ağaç saksısı",
+    "en": "Varnished timber pergola over a stone-paved entrance area, with a timber slatted fence and a potted tree beside"
+  },
+  "caption": {
+    "tr": "Pergola kirişleri sık aralıkla sıralanmış ve duvara yaslanıyor. Yanındaki çıtalı çit alanı bölüyor.",
+    "en": "The pergola beams are closely spaced and lean on the wall. The slatted fence beside it divides the space."
+  },
+  "seoFilename": "vernikli-ahsap-pergola-citali-cit-tas-zemin",
+  "tags": {
+    "type": [
+      "pergola",
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş",
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

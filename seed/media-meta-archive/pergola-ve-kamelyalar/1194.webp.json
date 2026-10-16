@@ -1,0 +1,41 @@
+{
+  "source": "Pergola ve Kamelyalar/1194.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deniz kenarı deck üzerinde çapraz korkuluk ve çatılı pergola",
+    "en": "Seafront deck with an X-braced rail and a roofed pergola"
+  },
+  "alt": {
+    "tr": "Dalgalı denizin kenarındaki deck üzerinde çapraz çıtalı korkuluk ve düz çatılı bir pergola, uzakta beyaz evler",
+    "en": "Seafront deck with an X-braced railing and a flat-roofed pergola, with white houses in the distance"
+  },
+  "caption": {
+    "tr": "Deck platformu denize doğru uzanıyor, korkuluk çapraz çıtalı. Pergola çatısı tahtalarla kapatılmış.",
+    "en": "The deck platform stretches toward the sea with an X-braced rail. The pergola roof is boarded over."
+  },
+  "seoFilename": "deniz-kenari-deck-capraz-korkuluk-catili-pergola",
+  "tags": {
+    "type": [
+      "pergola",
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

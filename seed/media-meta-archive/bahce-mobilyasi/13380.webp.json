@@ -1,0 +1,38 @@
+{
+  "source": "Kapi Dolap ve Seperator/13380.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş fırınlı açık mutfak ve odun nişi",
+    "en": "Open kitchen with an oven and a log niche"
+  },
+  "alt": {
+    "tr": "Dikey çıtalı ahşap arka duvarın önünde fırın ve altında odun nişi olan açık mutfak",
+    "en": "Open kitchen with an oven in front of a vertical slatted timber back wall and a log niche beneath it"
+  },
+  "caption": {
+    "tr": "Fırının altındaki nişte kesilmiş odunlar istiflenmiş, arkada turkuaz fayans var. Zemin deck, öne doğru bir taş bant uzanıyor.",
+    "en": "Cut logs are stacked in the niche beneath the oven with turquoise tiles behind. The floor is decking with a band of stone running towards the front."
+  },
+  "seoFilename": "tas-firinli-acik-mutfak-dikey-citali-arka-duvar-ve-odun-nisi",
+  "tags": {
+    "type": [
+      "dış mutfak / mangal alanı",
+      "iç duvar kaplaması"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.6
+}

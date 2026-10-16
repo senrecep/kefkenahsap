@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/7615.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çaprazlı kapı kanatlı, çıtalı çatılı duş kabini",
+    "en": "Shower cabin with cross-braced doors and a slatted roof"
+  },
+  "alt": {
+    "tr": "Taş duvarın önünde, çaprazlı iki kapı kanadı ve çıtalı çatısı olan ahşap duş kabini; ortası cam",
+    "en": "Timber shower cabin with two cross-braced door leaves and a slatted roof in front of a stone wall, glass in the middle"
+  },
+  "caption": {
+    "tr": "İki yandaki kapı kanatları çapraz kuşakla sağlamlaştırılmış, ortadaki cam bölmeden duş armatürü görünüyor. Çatı aralıklı çıtalardan.",
+    "en": "The door leaves on either side are strengthened with a diagonal brace and the shower fitting shows through the central glass. The roof is made of spaced slats."
+  },
+  "seoFilename": "capraz-kapi-kanatli-citali-catili-ahsap-dus-kabini-tas-duvar",
+  "tags": {
+    "type": [
+      "duş / soyunma kabini"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

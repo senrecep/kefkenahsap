@@ -1,0 +1,35 @@
+{
+  "source": "Ireko-Teak/8978.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Hasır sandalyelerle çevrili çıtalı masa",
+    "en": "Slatted table surrounded by wicker chairs"
+  },
+  "alt": {
+    "tr": "Hasır örgülü sandalyelerin çevrelediği, çıtalı ahşap tablalı dikdörtgen masa",
+    "en": "Rectangular table with a slatted timber top surrounded by woven wicker chairs"
+  },
+  "caption": {
+    "tr": "Tabla çıtalardan, kenarında hasır örgülü bir çerçeve var. Zemin ahşap deck.",
+    "en": "The top is made of slats with a woven wicker border. The floor is timber decking."
+  },
+  "seoFilename": "hasir-sandalyelerle-cevrili-citali-ahsap-masa-ustu",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

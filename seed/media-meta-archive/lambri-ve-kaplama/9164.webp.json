@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/9164.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dikey tavan tahtaları ve koyu bandın üstü",
+    "en": "Vertical ceiling boards above a dark band"
+  },
+  "alt": {
+    "tr": "Dikey dizilmiş ahşap tavan tahtaları, altında koyu gri bant ve onun altında yatay cephe tahtaları",
+    "en": "Vertically laid timber ceiling boards above a dark grey band, with horizontal facade boards below it"
+  },
+  "caption": {
+    "tr": "Tavan tahtaları dikey, altındaki duvar tahtaları yatay döşenmiş. İkisinin arasında koyu gri bir bant geçiyor.",
+    "en": "The ceiling boards run vertically and the wall boards below run horizontally, with a dark grey band between them."
+  },
+  "seoFilename": "dikey-tavan-tahtasi-koyu-bant-ustu",
+  "tags": {
+    "type": [
+      "tavan kaplaması / lambri"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,41 @@
+{
+  "source": "Kopru ve Iskele/8373.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Palmiyeli saksı yanında korkuluklu köprü ayağı ve deck",
+    "en": "Bridge end with railing beside a palm planter, and deck"
+  },
+  "alt": {
+    "tr": "Turkuaz havuzda palmiyeli yuvarlak saksının yanından geçen korkuluklu köprünün başlangıcı",
+    "en": "Start of a railed bridge passing beside a round palm planter in a turquoise pool, a small red-roofed hut in the distance"
+  },
+  "caption": {
+    "tr": "Köprünün korkuluk dikmeleri ve çapraz ayağı havuza iniyor. Havuzun dibinde çakıl ve pompa görünüyor.",
+    "en": "The railing posts and a diagonal leg of the bridge go down into the pool. Pebbles and a pump are visible at the bottom."
+  },
+  "seoFilename": "palmiyeli-saksi-yaninda-korkuluklu-kopru-ayagi",
+  "tags": {
+    "type": [
+      "köprü",
+      "korkuluk",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

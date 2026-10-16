@@ -1,0 +1,35 @@
+{
+  "source": "Mobilya ve Cila/11879.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yuvarlak beyaz masa ve mavi minderli oturak",
+    "en": "Round white table and blue-cushioned bench"
+  },
+  "alt": {
+    "tr": "Mutfakta yuvarlak beyaz masa, sandalyeler ve kavisli mavi minderli bir oturak",
+    "en": "Round white table, chairs and a curved bench with a blue cushion in a kitchen"
+  },
+  "caption": {
+    "tr": "Masanın üstünde kahvaltı malzemeleri duruyor. Ahşap bir ürün görünmüyor, kare bir mutfaktan.",
+    "en": "Breakfast items sit on the table. No timber piece is visible, it is a kitchen shot."
+  },
+  "seoFilename": "yuvarlak-beyaz-masa-sandalyeler-mavi-minderli-oturak",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.2
+}

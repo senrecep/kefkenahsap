@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/3915.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz yanında duvar önü pergola ve oturma bankı",
+    "en": "Wall-front pergola with a seating bench beside a pool"
+  },
+  "alt": {
+    "tr": "Havuzun yanında sıvalı duvar önünde pergola, altında ahşap oturma bankı ve ön tarafta merdivenli havuz",
+    "en": "Pergola in front of a rendered wall beside a pool, with a timber bench beneath and a pool with a ladder in front"
+  },
+  "caption": {
+    "tr": "Pergola yalnızca duvar boyunca uzanan dar bir şerit kaplıyor. Bank kirişlerin altına yerleştirilmiş.",
+    "en": "The pergola covers only a narrow strip along the wall. The bench sits under the beams."
+  },
+  "seoFilename": "havuz-yaninda-duvar-onu-pergola-oturma-banki",
+  "tags": {
+    "type": [
+      "pergola",
+      "bank"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

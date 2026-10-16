@@ -1,0 +1,39 @@
+{
+  "source": "Kapi Dolap ve Seperator/6518.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beşik çatılı, yatay tahtalı köpek kulübesi, fayans zeminde",
+    "en": "Gabled dog house with horizontal boards on a tiled floor"
+  },
+  "alt": {
+    "tr": "Kemer biçimli girişi olan, yatay tahtalı ahşap köpek kulübesi karo zeminde duruyor; arkada düz bir duvar var",
+    "en": "A horizontal-board dog house with an arched doorway stands on a tiled floor in front of a plain wall"
+  },
+  "caption": {
+    "tr": "Çatı iki yöne eğimli, giriş kemerli. Kulübe kapalı bir alanda, karo zeminde sergileniyor.",
+    "en": "The roof slopes both ways and the entrance is arched. The dog house is displayed in a covered area on a tiled floor."
+  },
+  "seoFilename": "besik-catili-yatay-tahtali-kopek-kulubesi-fayans-zemin",
+  "tags": {
+    "type": [
+      "köpek kulübesi"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

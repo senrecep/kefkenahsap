@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/12225.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yeşil metal çit önünde çam deck ve çıtalı korkuluk",
+    "en": "Pine deck and slatted railing in front of a green metal fence"
+  },
+  "alt": {
+    "tr": "Açık renkli çam deck ve çıtalı korkuluk, arkada yeşil metal çit ve mavi branda",
+    "en": "Pale pine deck with a slatted railing, a green metal fence and a blue tarp behind"
+  },
+  "caption": {
+    "tr": "Tahtalar deck'in uzun yönünde döşenmiş. Korkuluk arka kenarı kapatıyor ve çit kapısına yönlendiriyor.",
+    "en": "The boards run along the length of the deck. The railing closes the back edge beside the fence gate."
+  },
+  "seoFilename": "yesil-metal-cit-onunde-cam-deck-citali-korkuluk",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

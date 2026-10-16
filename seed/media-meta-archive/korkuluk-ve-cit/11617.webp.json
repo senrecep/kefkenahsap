@@ -1,0 +1,38 @@
+{
+  "source": "Kapi Dolap ve Seperator/11617.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Telli çapraz kirişli çit panelinin yakın görünümü, yanında saksılar",
+    "en": "Close view of a wire-mesh X-braced fence panel with pots beside it"
+  },
+  "alt": {
+    "tr": "Yakından telörgülü, X çaprazlı ve kalın dikmeli çit paneli; yanında terakota saksı ve bitki, karo zemin",
+    "en": "Close view of a wire-mesh fence panel with X braces and thick posts"
+  },
+  "caption": {
+    "tr": "Panelin çaprazları tel örgüyü bölüyor, üstte tahta dikmeler sivri uçla bitiyor. Çerçeve kalın dikmelerle sağlam görünüyor.",
+    "en": "The panel's braces divide the wire mesh and the timber posts finish at the top in points. The frame looks solid with its thick posts."
+  },
+  "seoFilename": "telli-capraz-kirisli-cit-panelinin-yakin-gorunumu",
+  "tags": {
+    "type": [
+      "çit",
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

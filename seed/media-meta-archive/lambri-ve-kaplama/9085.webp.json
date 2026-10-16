@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/9085.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Köşe yapan üç katlı bej ahşap kaplı bina, alttan",
+    "en": "Three-storey beige timber-clad corner building seen from below"
+  },
+  "alt": {
+    "tr": "Alttan görünen, köşe yapan üç katlı bej boyalı ahşap kaplamalı bina, pencere parmaklıkları, geniş çatı saçağı",
+    "en": "Three-storey beige-painted timber-clad corner building seen from below with window grilles, a broad roof eave and a downpipe"
+  },
+  "caption": {
+    "tr": "Kaplama iki cepheyi köşede birleştiriyor. Pencerelerin bir kısmında demir parmaklık var.",
+    "en": "The cladding joins the two facades at the corner. Some of the windows have iron grilles."
+  },
+  "seoFilename": "kose-olusturan-uc-katli-bej-ahsap-kapli-bina-alttan",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

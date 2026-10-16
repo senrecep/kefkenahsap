@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/14733.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz cepheye monte edilen adaçayı yeşili Z çaprazlı panjurlar",
+    "en": "Sage-green Z-braced shutters fitted to a white facade"
+  },
+  "alt": {
+    "tr": "Beyaz sıvalı evin zemin katında, açık duran adaçayı yeşili, Z çaprazlı ahşap panjur kanatları; zeminde koruyucu naylon örtü",
+    "en": "Open sage-green timber shutter leaves with Z bracing on the ground floor of a white-rendered house"
+  },
+  "caption": {
+    "tr": "Panjur kanatları pencere ve kapı boşluğunun iki yanında açık duruyor. Zemin henüz inşaat örtüsüyle korunuyor.",
+    "en": "The shutter leaves stand open on both sides of the openings. The ground is still covered with protective sheeting."
+  },
+  "seoFilename": "beyaz-cepheye-monte-edilen-adacayi-yesili-z-capraz-panjurlar",
+  "tags": {
+    "type": [
+      "pencere / panjur"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

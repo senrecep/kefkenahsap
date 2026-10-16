@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14375.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yuvarlak çalılı havuz kenarı deck şeridi",
+    "en": "Pool-edge deck strip beside round shrubs"
+  },
+  "alt": {
+    "tr": "Havuzun ızgaralı kenarı boyunca uzanan, sol yanında yuvarlak budanmış çalılar bulunan koyu kahverengi deck şeridi",
+    "en": "Dark brown deck strip along the grated edge of a pool, with round-clipped shrubs on its left"
+  },
+  "caption": {
+    "tr": "Şeridin ucunda yeşil tişörtlü bir usta çalışıyor. Deck uzun tahtalarla havuzun kenarını izliyor.",
+    "en": "A craftsman in a green T-shirt works at the far end of the strip. The deck follows the pool edge on long boards."
+  },
+  "seoFilename": "yuvarlak-calili-havuz-kenari-koyu-deck-seridi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

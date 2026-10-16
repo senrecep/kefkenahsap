@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/12758.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz kafes panelin metal ayak ve çerçeve detayı",
+    "en": "Detail of the white lattice panel's foot and frame"
+  },
+  "alt": {
+    "tr": "Beyaz boyalı kafes panelin kalın dikmesi ve yere oturan L biçimli ayağı yakından; zemin kırmızımsı beton",
+    "en": "Close view of the thick upright of a white-painted lattice panel and its L-shaped foot on the floor, over reddish concrete"
+  },
+  "caption": {
+    "tr": "Dikme ayağa cıvatalanmış, panelin alt köşesinde çerçeve düz birleşiyor. Boya yüzeyi temiz.",
+    "en": "The upright is bolted to the foot and the frame joins neatly at the lower corner of the panel. The painted surface is clean."
+  },
+  "seoFilename": "beyaz-kafes-panelin-ayak-ve-cerceve-detayi",
+  "tags": {
+    "type": [
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

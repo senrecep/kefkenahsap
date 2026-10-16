@@ -1,0 +1,35 @@
+{
+  "source": "Ireko-Teak/13590.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sıralı ahşap çıtaların döşendiği iç mekân zemini",
+    "en": "Interior floor being laid with narrow timber strips"
+  },
+  "alt": {
+    "tr": "İç mekânda dar ahşap çıtalarla döşenen zemin, ortada uzatma kablosu ve yerde el zımpara makinesi",
+    "en": "Interior floor laid with narrow timber strips, with an extension cord in the middle and a hand sander on the floor"
+  },
+  "caption": {
+    "tr": "Dar tahtalar uzun yönde sıralanmış. Zımpara ve kablo işin hâlâ sürdüğünü gösteriyor.",
+    "en": "The narrow boards run lengthwise. The sander and cable show that work is still going on."
+  },
+  "seoFilename": "dar-ahsap-citalarla-dosenen-ic-mekan-zemini",
+  "tags": {
+    "type": [
+      "parke / iç zemin"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.5
+}

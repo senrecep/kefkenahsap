@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/307.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvarın üstünde masalar ve şemsiyelerle ahşap pavyon",
+    "en": "Timber pavilion above a stone wall with tables and umbrellas"
+  },
+  "alt": {
+    "tr": "Taş istinat duvarının üstünde çam ağaçları altında masalar, şemsiyeler ve uzakta ahşap çatılı pavyon",
+    "en": "Tables and umbrellas under pine trees above a stone retaining wall, with a timber-roofed pavilion in the distance"
+  },
+  "caption": {
+    "tr": "Patika taş döşeli ve duvar kenarı yeşillik. Pavyon ağaçların arasında, masalar önünde sıralanmış.",
+    "en": "The path is stone-paved and the wall edge is planted. The pavilion sits among the trees, with tables lined up in front."
+  },
+  "seoFilename": "tas-duvar-ustunde-masalar-semsiyeler-pavyon",
+  "tags": {
+    "type": [
+      "kamelya"
+    ],
+    "wood": [],
+    "setting": [
+      "ticari mekân",
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.55
+}

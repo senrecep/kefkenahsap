@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/12465.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deck kenarından çime inen koyu kırmızı-kahve basamak plakaları",
+    "en": "Dark red-brown stepping slabs leading from the deck onto the lawn"
+  },
+  "alt": {
+    "tr": "Çimde sıralı, ıslak görünümlü kırmızımsı kahve ahşap basamak plakaları; üstte deck, kenarda süs çalıları ve beyaz çakıl",
+    "en": "Reddish-brown wet-looking timber stepping slabs in a row across the lawn"
+  },
+  "caption": {
+    "tr": "Plakalar deck kenarından başlayıp çimin içine uzanıyor. Yağlanmış tahtalarda damar belirgin.",
+    "en": "The slabs start at the edge of the deck and run into the lawn. The grain shows clearly on the oiled boards."
+  },
+  "seoFilename": "deck-kenarindan-cime-inen-koyu-basamak-plakalari",
+  "tags": {
+    "type": [
+      "yürüyüş yolu",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

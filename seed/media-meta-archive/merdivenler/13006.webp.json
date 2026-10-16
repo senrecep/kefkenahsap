@@ -1,0 +1,38 @@
+{
+  "source": "Merdivenler/13006.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beton basamak, ahşap platform ve selvi çit",
+    "en": "Concrete step, timber platform and cypress hedge"
+  },
+  "alt": {
+    "tr": "Beton basamağın üstünde ahşap platform ve çaprazlı korkuluk; arkada sık selvi çiti",
+    "en": "Timber platform and cross-braced railing on top of a concrete step, with a dense cypress hedge behind"
+  },
+  "caption": {
+    "tr": "Betondan yükselen basamağın üstüne ahşap bir platform oturtulmuş. Korkuluk köşede kalın bir direkle bitiyor.",
+    "en": "A timber platform sits on top of the concrete step. The railing ends at a thick post in the corner."
+  },
+  "seoFilename": "beton-basamak-ahsap-platform-capraz-korkuluk-selvi-cit",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/14817.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yan duvarda oturma bölmeli deck",
+    "en": "Deck with a seating box along the side wall"
+  },
+  "alt": {
+    "tr": "Yatay çıtalı korkuluğu ve yan duvar boyunca bitkilerle çevrili oturma bölmesi olan turuncu cilalı deck",
+    "en": "Orange varnished deck with a horizontal-slat railing and a seating box along the side wall backed by plants"
+  },
+  "caption": {
+    "tr": "Oturma bölmesi deck tahtalarıyla aynı ahşabı taşıyor ve arkasında bitkiler sıralanıyor. Taş plakalar deck kenarına gidiyor.",
+    "en": "The seating box carries the same timber as the deck boards and plants line up behind it. Stone slabs lead to the deck edge."
+  },
+  "seoFilename": "yan-duvar-oturma-bolmeli-deck-ve-basamak-tasi",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

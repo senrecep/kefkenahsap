@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/13743.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Söğüt ağaçları yanında ıslak parlak deck ve korkuluk",
+    "en": "Wet glossy deck and railing by willow trees"
+  },
+  "alt": {
+    "tr": "Çimen önünde söğüt ağaçları yanında ıslak, parlak deck ve korkuluk",
+    "en": "Wet glossy deck and railing beside willow trees, in front of a lawn"
+  },
+  "caption": {
+    "tr": "Korkuluk deck'in kenarında kıvrılıp köşe yapıyor. Yağmurdan ıslanan tahtalar bal rengini daha da belirginleştirmiş.",
+    "en": "The railing bends round the edge of the deck to make a corner. Rain-wet boards bring out the honey colour even more."
+  },
+  "seoFilename": "sogut-agaclari-yaninda-islak-parlak-deck-ve-korkuluk",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "su kenarı"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

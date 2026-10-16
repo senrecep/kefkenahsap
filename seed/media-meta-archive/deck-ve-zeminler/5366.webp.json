@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/5366.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar üstüne kurulan kiriş ve direk iskeleti",
+    "en": "Joist and post frame built on a stone wall"
+  },
+  "alt": {
+    "tr": "Taş duvarın üzerine kurulmuş ahşap kiriş ve direk iskeleti; üstü henüz deck tahtasıyla kaplanmamış",
+    "en": "Timber joist and post frame built on a stone wall, not yet covered with deck boards"
+  },
+  "caption": {
+    "tr": "Kirişler çapraz destekle sağlamlaştırılmış, üzerinde el aletleri bekliyor. Arkada kıyı yolu ve ahşap bir tezgâh görünüyor.",
+    "en": "The joists are strengthened with diagonal braces and hand tools wait on top. A shore road and a timber workbench show behind."
+  },
+  "seoFilename": "tas-duvar-ustune-kurulan-ahsap-kiris-ve-direk-iskeleti",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

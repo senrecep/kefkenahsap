@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/12034.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz kolon ve bitkiler arasında turuncu deck",
+    "en": "Orange deck between a white column and plants"
+  },
+  "alt": {
+    "tr": "Beyaz kolonun yanında, yeşil çalılarla çevrili turuncu ahşap deck ve taş zemin",
+    "en": "Orange timber deck beside a white column, bordered by green shrubs and stone paving"
+  },
+  "caption": {
+    "tr": "Deck kenarı çalıların hizasına göre kesilmiş. Taş zeminden ahşap zemine geçiş düz bir hatta yapılmış.",
+    "en": "The deck edge is cut to follow the shrubs. The change from stone to timber is made along a straight line."
+  },
+  "seoFilename": "beyaz-kolon-ve-bitkiler-arasinda-turuncu-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

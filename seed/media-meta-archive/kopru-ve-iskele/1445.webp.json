@@ -1,0 +1,35 @@
+{
+  "source": "Kopru ve Iskele/1445.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Gün batımında göl kıyısında ahşap iskele",
+    "en": "Timber pier on a lakeshore at sunset"
+  },
+  "alt": {
+    "tr": "Gün batımında, ışığın yansıdığı göl kıyısında uzaktaki ahşap iskele; ön planda yeşil metal korkuluk",
+    "en": "A timber pier in the distance on a lakeshore at sunset with light reflecting off the water"
+  },
+  "caption": {
+    "tr": "Geniş göl yüzeyi ışıkla parlıyor, arkada çam ormanı var. İskele kıyıdan suya doğru uzanıyor.",
+    "en": "The wide lake surface glitters with light and a pine forest stands behind. The pier reaches out from the shore into the water."
+  },
+  "seoFilename": "gun-batiminda-gol-kiyisinda-ahsap-iskele",
+  "tags": {
+    "type": [
+      "iskele"
+    ],
+    "wood": [],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

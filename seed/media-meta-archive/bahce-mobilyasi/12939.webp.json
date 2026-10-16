@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/12939.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kapaklı depolamalı bankın üst yüzeyi, yakından",
+    "en": "Top surface of a lidded storage bench, close up"
+  },
+  "alt": {
+    "tr": "Yakından bakıldığında, kapaklı ahşap bankın düz tahtalı üst yüzeyi, kenar çerçevesi ve kapak ayrımı görünüyor",
+    "en": "A close look at the plank top of a lidded timber bench, with its edge frame and the line where the lid sits"
+  },
+  "caption": {
+    "tr": "Üst yüzey düz tahtalardan, kapağın yeri ince bir aralıkla belli oluyor. Kenar çerçevesi yüzeyi çevreliyor.",
+    "en": "The top is made of flat boards, with a thin gap marking the lid. An edge frame surrounds the surface."
+  },
+  "seoFilename": "kapakli-depolamali-bank-ust-yuzeyi-yakin-cekim",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

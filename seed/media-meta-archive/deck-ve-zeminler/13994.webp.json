@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/13994.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapı önünde çok tonlu deck",
+    "en": "Multi-tone deck outside a glass door"
+  },
+  "alt": {
+    "tr": "Cam sürme kapının önüne uzanan, sarıdan koyu kahverengiye değişen tonlarda cilalı deck tahtaları",
+    "en": "Polished deck boards in tones from yellow to dark brown, running out from a glass sliding door"
+  },
+  "caption": {
+    "tr": "Tahtalar cam kapıdan çimene doğru uzanıyor. Her tahtanın tonu biraz farklı, cila yüzeyi parlatıyor.",
+    "en": "The boards run from the glass door towards the lawn. Each board has a slightly different tone, and the finish gives the surface a shine."
+  },
+  "seoFilename": "cam-kapi-onunde-cok-tonlu-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/7461.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kırmızımsı vernikli uzun çiçeklik sandığı",
+    "en": "Reddish varnished long planter chest"
+  },
+  "alt": {
+    "tr": "Kırmızımsı vernikli yatay çıtalı uzun ahşap sandık biçiminde çiçeklik; arkada kapaklı başka bir ahşap kutu",
+    "en": "Long chest-shaped timber planter with a reddish varnish and horizontal slats, with another lidded timber box behind"
+  },
+  "caption": {
+    "tr": "Sandığın çıtaları sık dizilmiş, içi boş. Arkadaki kutunun üstünde bordo bir örtü var.",
+    "en": "The slats of the chest are closely spaced and it is empty inside. The box behind has a burgundy cover on top."
+  },
+  "seoFilename": "kirmizimsi-vernikli-uzun-ahsap-sandik-ciceklik-arkada",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

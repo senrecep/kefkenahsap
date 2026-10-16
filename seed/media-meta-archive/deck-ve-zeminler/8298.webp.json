@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/8298.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Teras zemininde sıralanmış çıtalar ve kenar kiriş",
+    "en": "Terrace floor with rows of battens and an edge beam"
+  },
+  "alt": {
+    "tr": "Fayans teras zemininde paralel sıralanan çıtalar, solda kalın bir kenar kirişi ve arkada cam sürgülü kapı",
+    "en": "Parallel battens across a tiled terrace floor, with a thicker edge beam on the left and sliding glass doors behind"
+  },
+  "caption": {
+    "tr": "Çıtalar teras boyunca paralel gidiyor, kenarda daha kalın bir kiriş çerçeveyi kapatıyor.",
+    "en": "The battens run parallel across the terrace and a thicker beam closes the frame at the edge."
+  },
+  "seoFilename": "teras-zemininde-siralanmis-citalar-kenar-kiris",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

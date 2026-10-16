@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/8297.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Fayans zemin üzerine serilmiş deck alt çıtaları",
+    "en": "Deck battens laid over a tiled floor"
+  },
+  "alt": {
+    "tr": "Fayans döşeli zeminin üzerine eşit aralıklarla sıralanmış ince emprenyeli çıtalar, arka planda cam kapılı teras",
+    "en": "Thin pressure-treated battens spaced evenly across a tiled floor, with a glazed terrace behind"
+  },
+  "caption": {
+    "tr": "Deck için önce zemine çıtalar serilmiş. Tahtalar bu çıtaların üzerine gelecek.",
+    "en": "Battens are laid on the floor first. The deck boards will go on top of them."
+  },
+  "seoFilename": "fayans-zemin-uzerine-serilmis-deck-alt-citalari",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

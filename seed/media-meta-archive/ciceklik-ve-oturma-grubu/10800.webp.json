@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/10800.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çakıl yol boyunca sıralı çiçeklikler",
+    "en": "Planters lined up along a gravel path"
+  },
+  "alt": {
+    "tr": "Çakıl yol boyunca arka arkaya dizilmiş, bitkilerle dolu kırmızımsı ahşap çiçeklikler",
+    "en": "Reddish timber planters full of plants lined up one behind another along a gravel path"
+  },
+  "caption": {
+    "tr": "Çiçekliklerde dikey tahtalar ve köşe direkleri var. Yolun ucunda taş bir duvar görünüyor.",
+    "en": "The planters have vertical boards and corner posts. A stone wall is visible at the end of the path."
+  },
+  "seoFilename": "cakil-yol-boyunca-sirali-kirmizimsi-ciceklikler-ve-bitkiler",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

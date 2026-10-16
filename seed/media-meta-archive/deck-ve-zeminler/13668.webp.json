@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/13668.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Islak deck, çıtalı çit ve arkada oturan köpek",
+    "en": "Wet deck and slatted fence with a dog sitting behind"
+  },
+  "alt": {
+    "tr": "Islak ahşap deck ve kahverengi çıtalı çit, arka planda çimde oturan siyah bir köpek",
+    "en": "Wet timber deck and a brown slatted fence, with a black dog sitting on the grass behind"
+  },
+  "caption": {
+    "tr": "Deck çitin hemen dibinde bitiyor ve çit bahçeyi iki bölüme ayırıyor. Islak yüzeyde tahtaların rengi koyulaşmış.",
+    "en": "The deck ends right at the fence, which splits the garden in two. The boards look darker on the wet surface."
+  },
+  "seoFilename": "islak-deck-citali-cit-ve-arkada-oturan-kopek",
+  "tags": {
+    "type": [
+      "deck",
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

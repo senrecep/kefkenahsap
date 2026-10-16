@@ -1,0 +1,35 @@
+{
+  "source": "Kapi Dolap ve Seperator/12832.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölyede ahşap çerçeveli telörgü kafesin üstten görünümü",
+    "en": "Top-side view of a timber-framed wire-mesh cage in the workshop"
+  },
+  "alt": {
+    "tr": "Atölye masasında duran, kızıl kahve çerçeveli ve telörgü yüzlü küçük kafes; arka planda televizyon ve bayrak",
+    "en": "Small red-brown framed cage with wire-mesh faces on a workshop table, with a television and a flag behind"
+  },
+  "caption": {
+    "tr": "Kafes dört yüzü ve üstü telle kapatılmış küçük bir kutu. Atölyede bitmiş hâliyle bekliyor.",
+    "en": "The cage is a small box with four faces and a top closed in wire. It waits finished in the workshop."
+  },
+  "seoFilename": "atolyede-ahsap-cerceveli-telorgu-kafesin-ustten-gorunumu",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.5
+}

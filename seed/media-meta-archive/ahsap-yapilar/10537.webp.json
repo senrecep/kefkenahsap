@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/10537.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapılı evin önünde ahşap sundurma",
+    "en": "Timber porch in front of a house with glazed doors"
+  },
+  "alt": {
+    "tr": "Cam kapılı evin önüne yapılmış, destek direkli ahşap sundurma; terasın yanında çit gibi budanmış çalılar var",
+    "en": "Timber porch with support posts built in front of a house with glazed doors, hedges trimmed like fences beside the terrace"
+  },
+  "caption": {
+    "tr": "Sundurmanın alt yüzü tahta kaplı, bir köşe desteği çatıyı taşıyor. Evin duvarında iki fener lambası görünüyor.",
+    "en": "The underside of the porch is boarded and a corner brace carries the roof. Two lantern lamps show on the wall of the house."
+  },
+  "seoFilename": "cam-kapili-evin-onunde-ahsap-sundurma-ve-destek-direkleri",
+  "tags": {
+    "type": [
+      "sundurma / saçak / carport"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

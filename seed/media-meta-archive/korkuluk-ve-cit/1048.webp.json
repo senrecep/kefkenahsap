@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/1048.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deniz kenarı deck ve çaprazlı korkuluk, uzakta kirişler",
+    "en": "Seaside deck and cross-braced railing with beams in the distance"
+  },
+  "alt": {
+    "tr": "Taş duvara yaslanan, ince ayaklar üzerinde denize uzanan ahşap deck ve çevresinde X çaprazlı korkuluk, ucunda çatı kirişleri",
+    "en": "Timber deck on slender legs reaching over the sea beside a stone wall, with an X-braced railing around it"
+  },
+  "caption": {
+    "tr": "Deck deniz seviyesinin üstünde duruyor, korkuluk üç kenarı çeviriyor.",
+    "en": "The deck stands above sea level, and the railing runs round three sides."
+  },
+  "seoFilename": "deniz-kenari-deck-ve-capraz-korkuluk-uzakta-kirisler",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

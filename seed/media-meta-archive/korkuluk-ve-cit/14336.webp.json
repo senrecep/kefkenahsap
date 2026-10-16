@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14336.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dükkan önünde yatay çıtalı paravanlı uzun ahşap çiçeklik",
+    "en": "Long timber planter with a horizontal-slat screen in front of a shop"
+  },
+  "alt": {
+    "tr": "Kaldırım kaplaması üzerinde duran, yatay çıtalı paravanı olan koyu kahve uzun ahşap çiçeklik; arkada dükkan girişi",
+    "en": "A long dark-brown timber planter with a horizontal-slat screen standing on pavement, with a shop entrance behind"
+  },
+  "caption": {
+    "tr": "Paravan çiçeklik kutusunun arka kenarına dikmelerle bağlı. Kutunun yan yüzü yatay tahtalı ve vernikli.",
+    "en": "The screen is tied to the back edge of the planter box by posts. The side of the box is horizontally boarded and varnished."
+  },
+  "seoFilename": "dukkan-onunde-yatay-citali-paravanli-uzun-ciceklik",
+  "tags": {
+    "type": [
+      "kafes / paravan",
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

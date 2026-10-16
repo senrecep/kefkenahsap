@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/14394.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kafes panel ve pergola kiriş uçları yakın görünüm",
+    "en": "Close view of a lattice panel and pergola beam ends"
+  },
+  "alt": {
+    "tr": "Atölyede kare gözlü ahşap kafes panelin yanında, üstte desenli kesilmiş kiriş uçları ve koyu cilalı direk",
+    "en": "Square-lattice timber panel in a workshop with patterned beam ends and a dark varnished post above"
+  },
+  "caption": {
+    "tr": "Kiriş uçları süslü biçimde kesilmiş, kafes panel direğe oturuyor.",
+    "en": "The beam ends are cut in a decorative shape, and the lattice panel sits against the post."
+  },
+  "seoFilename": "atolyede-kafes-panel-ve-pergola-kiris-uclari-yakin",
+  "tags": {
+    "type": [
+      "kafes / paravan",
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.55
+}

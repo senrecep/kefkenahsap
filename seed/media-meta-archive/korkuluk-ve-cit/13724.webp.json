@@ -1,0 +1,39 @@
+{
+  "source": "Kopru ve Iskele/13724.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ağaçlar arasında su kenarına uzanan gölgeli ahşap korkuluk",
+    "en": "Shaded timber railing along the water's edge among trees"
+  },
+  "alt": {
+    "tr": "Ağaçların gölgesinde, su kenarı boyunca uzayan açık renk yatay çıtalı ahşap korkuluk; önde toprak şev ve ince bir ip",
+    "en": "A light horizontal-slat timber railing running along the water's edge in the shade of trees"
+  },
+  "caption": {
+    "tr": "Korkuluk yukarıda şevin kenarını izliyor, alt tarafta su görünüyor. Işık ağaç dallarının arasından süzülüyor.",
+    "en": "The railing follows the edge of the slope above, with the water visible below. Light filters through the tree branches."
+  },
+  "seoFilename": "agaclar-arasinda-su-kenarina-uzanan-golgeli-korkuluk",
+  "tags": {
+    "type": [
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.55
+}

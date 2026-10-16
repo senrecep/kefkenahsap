@@ -1,0 +1,37 @@
+{
+  "source": "Mobilya ve Cila/12302.webp",
+  "category": "mutfak-ve-gomme-dolap",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz parlak mutfak dolapları ve ankastre buzdolabı",
+    "en": "Glossy white kitchen cabinets with a built-in fridge"
+  },
+  "alt": {
+    "tr": "Parlak beyaz kapaklı mutfak dolapları, ankastre paslanmaz buzdolabı ve koyu taş zemin",
+    "en": "Glossy white kitchen cabinets with a stainless steel fridge and a dark stone floor"
+  },
+  "caption": {
+    "tr": "Yüksek dolaplar tavana kadar çıkıyor, kapaklarda dikey kulplar var. Buzdolabı dolap sırasının içine oturtulmuş.",
+    "en": "The tall units run up to the ceiling and the doors have vertical handles. The fridge sits inside the row of cabinets."
+  },
+  "seoFilename": "parlak-beyaz-mutfak-dolaplari-buzdolabi",
+  "tags": {
+    "type": [
+      "mutfak dolabı"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "lake"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

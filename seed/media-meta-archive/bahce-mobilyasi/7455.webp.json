@@ -1,0 +1,34 @@
+{
+  "source": "Ireko-Teak/7455.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çıtalı alçak ahşap bank, çevresinde sarı sandalyeler",
+    "en": "Low slatted timber bench with yellow chairs around it"
+  },
+  "alt": {
+    "tr": "Beton zeminde, çıtalı yüzeyli alçak ahşap bank ve çevresinde sarı katlanır sandalyeler",
+    "en": "Low slatted timber bench on a concrete floor, surrounded by yellow folding chairs"
+  },
+  "caption": {
+    "tr": "Bank alçak ve çıtalı, çıtalar iki farklı ahşap tonunda. Çevrede sarı sandalyeler duruyor.",
+    "en": "The bench is low and slatted, the slats in two shades of timber. Yellow chairs stand around it."
+  },
+  "seoFilename": "beton-zeminde-citali-alcak-ahsap-bank-sari-sandalyeler",
+  "tags": {
+    "type": [
+      "bank",
+      "sehpa"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

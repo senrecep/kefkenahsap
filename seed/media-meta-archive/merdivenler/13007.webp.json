@@ -1,0 +1,38 @@
+{
+  "source": "Merdivenler/13007.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beton ve ahşap basamak, arkada evin bahçesi",
+    "en": "Concrete and timber step with the house garden behind"
+  },
+  "alt": {
+    "tr": "Beton kenar ve ahşap basamaklı platform, çaprazlı korkuluk; arkada pencereli ev ve çimlik",
+    "en": "Concrete edge and a timber-stepped platform with a cross-braced railing, with a windowed house and lawn behind"
+  },
+  "caption": {
+    "tr": "Beton kenar ahşap basamakla bir platforma bağlanıyor. Çimlikte bir iş merdiveni yatıyor.",
+    "en": "The concrete edge connects to a platform by a timber step. A ladder lies on the lawn."
+  },
+  "seoFilename": "beton-ve-ahsap-basamak-yaninda-bahce-evi-merdiven-cimde",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

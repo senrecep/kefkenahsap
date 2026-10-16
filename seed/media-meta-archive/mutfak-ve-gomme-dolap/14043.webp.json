@@ -1,0 +1,39 @@
+{
+  "source": "Ireko-Teak/14043.webp",
+  "category": "mutfak-ve-gomme-dolap",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Gri duvar yanında jaluzi kapaklı dış mekân dolabı",
+    "en": "Outdoor cabinet with louvred doors beside a grey wall"
+  },
+  "alt": {
+    "tr": "Gri duvarın yanında, jaluzi kapaklı ve açık renk boyalı ahşap dış mekân dolabı; taş döşeme üzerinde",
+    "en": "A light-painted timber outdoor cabinet with louvred doors beside a grey wall, on stone paving"
+  },
+  "caption": {
+    "tr": "Dolabın üç kapağı jaluzi biçiminde, havalanmaya izin veriyor. Siyah menteşeler ve kulplar kapaklara oturuyor.",
+    "en": "The cabinet's three doors are louvred to let air through. Black hinges and handles are fitted to the doors."
+  },
+  "seoFilename": "gri-duvar-yaninda-beyaz-boyali-jaluzi-kapakli-dis-mekan",
+  "tags": {
+    "type": [
+      "gömme dolap / gardırop",
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "giriş"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/12194.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Pergola altında uzun masa, yakın plan",
+    "en": "Long table under the pergola, close view"
+  },
+  "alt": {
+    "tr": "Pergolanın kirişleri altında duran uzun ahşap masa ve yanındaki bank, arkada kırmızı yapraklı çalılar",
+    "en": "Long timber table and a bench beside it under pergola beams, with red-leaved shrubs behind"
+  },
+  "caption": {
+    "tr": "Masanın üstü geniş tahtalardan, kenarları yuvarlatılmış. Pergola kirişlerinin gölgesi tablaya düşüyor.",
+    "en": "The top is made of wide boards with rounded corners. The shadows of the pergola beams fall across it."
+  },
+  "seoFilename": "pergola-altinda-uzun-ahsap-masa-ustu-yakin-plan",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı",
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

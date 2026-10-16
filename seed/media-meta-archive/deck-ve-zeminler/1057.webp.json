@@ -1,0 +1,39 @@
+{
+  "source": "Korkuluk ve Cit/1057.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş istinat duvarı önünde kurulan deck ve korkuluk",
+    "en": "Deck and railing going up in front of a stone retaining wall"
+  },
+  "alt": {
+    "tr": "Taş duvarlı bir bahçe alanında, yeni emprenyeli çam deck zemin, kenarda ahşap korkuluk dikmeleri ve yerde gönye testeresi",
+    "en": "New pressure-treated pine deck floor in a garden with a stone wall, timber railing posts at the edge"
+  },
+  "caption": {
+    "tr": "Deck zemini döşenmiş, korkuluk dikmeleri yerinde. Yerdeki testere işin sürdüğünü gösteriyor.",
+    "en": "The deck floor is laid and the railing posts are in. The saw on the floor shows the work is under way."
+  },
+  "seoFilename": "tas-istinat-duvari-onunde-kurulan-deck-ve-korkuluk",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

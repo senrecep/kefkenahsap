@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/13301.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam duvar önünde köşeyi dönen çiçeklik",
+    "en": "Planter turning the corner in front of a glass wall"
+  },
+  "alt": {
+    "tr": "Cam duvarın önünde köşede birleşen vernikli ahşap çiçeklik ve yanında yeşil bitki",
+    "en": "Varnished timber planter meeting at a corner in front of a glass wall, with a green plant beside it"
+  },
+  "caption": {
+    "tr": "Çiçeklik duvar boyunca uzanıp köşeden dönüyor. Köşede genç bir bitki yetişiyor.",
+    "en": "The planter runs along the wall and turns at the corner. A young plant is growing in the corner."
+  },
+  "seoFilename": "cam-duvar-onunde-koseyi-donen-ahsap-ciceklik-yesil-bitki",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

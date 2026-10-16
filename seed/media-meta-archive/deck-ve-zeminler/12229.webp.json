@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/12229.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Basamaklı girişi olan ağaçlı deck",
+    "en": "Tree deck with a stepped entry edge"
+  },
+  "alt": {
+    "tr": "Ağaç gövdesi çıkan deck, çıtalı korkuluk ve yan tarafta basamaklı giriş kenarı",
+    "en": "Deck with a tree trunk rising through it, a slatted railing and a stepped entry edge at the side"
+  },
+  "caption": {
+    "tr": "Korkuluk bir yanda açık bırakılmış, deck'e oradan basamakla çıkılıyor. Alt kenar kırmızı bir zemin parçasına dayanıyor.",
+    "en": "The railing is left open on one side, where a step leads up onto the deck. The lower edge meets a red floor piece."
+  },
+  "seoFilename": "basamakli-girisi-olan-agacli-deck",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

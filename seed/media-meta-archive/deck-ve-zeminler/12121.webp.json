@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/12121.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Tenteli girişin önünde açık kahverengi deck",
+    "en": "Light brown deck in front of an awning-covered entrance"
+  },
+  "alt": {
+    "tr": "Tuğla binanın tenteli girişi önünde çimene bakan açık kahverengi deck, kenarda hasır koltuk",
+    "en": "Light brown deck before the awning-covered entrance of a brick building, facing the lawn, wicker armchair at the edge"
+  },
+  "caption": {
+    "tr": "Deck girişteki kapıyla çimen arasında düz bir geçiş sağlıyor. Köşede çiçekli saksılar duruyor.",
+    "en": "The deck gives a level passage between the entrance door and the lawn. Flower pots stand in the corner."
+  },
+  "seoFilename": "tenteli-giris-onunde-acik-kahverengi-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "giriş"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

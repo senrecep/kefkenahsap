@@ -1,0 +1,39 @@
+{
+  "source": "Korkuluk ve Cit/12967.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Evin duvarı altında açık renk alçak çıtalı çit, pencerenin önünde",
+    "en": "Low light slatted fence below the house wall, in front of the window"
+  },
+  "alt": {
+    "tr": "Pencerenin altındaki duvar dibinde, çalıların önünde duran açık renk alçak ahşap çıtalı çit; önde çıplak çim",
+    "en": "A low light timber slatted fence at the foot of the wall below a window in front of shrubs, with bare lawn in the front"
+  },
+  "caption": {
+    "tr": "Çit duvara dayalı ve alçak, çıtaları dikey ve sivri. Çalı çitin yanında bitiyor.",
+    "en": "The fence is low and against the wall with vertical pointed slats. The shrub ends beside the fence."
+  },
+  "seoFilename": "evin-duvari-altinda-acik-renk-alcak-citali-cit",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

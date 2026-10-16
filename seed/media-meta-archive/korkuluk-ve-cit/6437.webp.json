@@ -1,0 +1,40 @@
+{
+  "source": "Korkuluk ve Cit/6437.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çamurlu arazide direkler ve kapı kirişi köşesi",
+    "en": "Posts and a gate rail corner on a muddy site"
+  },
+  "alt": {
+    "tr": "Çamurlu geniş arazide uzaklaşan sıralı direkler ve önde galvaniz menteşeli kapı kirişinin köşesi",
+    "en": "Rows of posts receding across a muddy site, with the corner of a gate rail with a galvanised hinge in front"
+  },
+  "caption": {
+    "tr": "Önde kapı iskeletinin bir kolu görünüyor, arkada direkler hattı sürdürüyor.",
+    "en": "One arm of the gate frame shows in front, and the posts carry on the line behind."
+  },
+  "seoFilename": "camurlu-arazide-direkler-ve-kapi-kirisi-kosesi",
+  "tags": {
+    "type": [
+      "çit",
+      "bahçe kapısı"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

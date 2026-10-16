@@ -1,0 +1,38 @@
+{
+  "source": "Merdivenler/8215.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz boyalı korkuluk, taş merdiven ve çim",
+    "en": "White painted railing, stone stairs and lawn"
+  },
+  "alt": {
+    "tr": "Yakından beyaz boyalı çıtalı korkuluk, taş merdiven ve çimlik; üstte telli çit",
+    "en": "A closer view of the white painted slatted railing, stone stairs and lawn, with wire fencing above"
+  },
+  "caption": {
+    "tr": "Beyaz korkuluğun kalın başlangıç direği önde duruyor. Arkada taş basamaklar ve çimlik uzanıyor.",
+    "en": "The railing's thick starting post stands in front. Stone steps and lawn stretch out behind."
+  },
+  "seoFilename": "beyaz-boyali-korkuluk-tas-merdiven-ve-cim-yakin",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

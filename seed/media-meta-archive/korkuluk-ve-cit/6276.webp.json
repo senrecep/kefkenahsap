@@ -1,0 +1,39 @@
+{
+  "source": "Korkuluk ve Cit/6276.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Direkler arasında gerilen bant, çit yapım aşaması",
+    "en": "Tape stretched between posts while the fence is built"
+  },
+  "alt": {
+    "tr": "Kalın ahşap direkler arasına gerilmiş siyah ve beyaz bant, arkada çakıl yol ve ağaçların altındaki araçlar",
+    "en": "Black and white tape stretched between thick timber posts, with a gravel track and vehicles under the trees behind"
+  },
+  "caption": {
+    "tr": "Bant direklerin hizasını gösteriyor, çit çıtaları henüz takılmamış.",
+    "en": "The tape marks the line of the posts, and the fence rails are not fitted yet."
+  },
+  "seoFilename": "direkler-arasinda-gerilen-bant-cit-yapim-asamasi",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/4632.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuzun L şekilli deck çevresi",
+    "en": "L-shaped deck surround for a pool"
+  },
+  "alt": {
+    "tr": "Mavi havuzun çevresinde L biçiminde dönen geniş açık renkli deck; arkada servi sırası ve kiremit çatılı villalar",
+    "en": "Wide pale deck turning in an L around a blue pool, with a row of cypress and tile-roofed villas behind"
+  },
+  "caption": {
+    "tr": "Deck ön tarafta geniş bir alana yayılıyor ve havuzun üç kenarını çevreliyor. Ev duvarının kenarında bir boya kovası duruyor.",
+    "en": "The deck spreads into a wide area at the front and surrounds three sides of the pool. A paint bucket sits by the house wall."
+  },
+  "seoFilename": "havuzun-l-seklindeki-deck-cevresi-ve-servi-sirasi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

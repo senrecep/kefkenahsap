@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/6059.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Diyagonal tahtalı deck yüzeyi",
+    "en": "Diagonally laid deck surface"
+  },
+  "alt": {
+    "tr": "Çapraz döşenmiş, damar ve budak izleri belirgin altın tonlu deck tahtalarının yakın planı; kenarlarda koyu çerçeve efekti",
+    "en": "Close-up of diagonally laid golden-toned deck boards with pronounced grain and knot marks"
+  },
+  "caption": {
+    "tr": "Işık tahtaların üzerine çapraz gölge bantları düşürüyor. Köşede lavanta yaprakları görünüyor.",
+    "en": "Light casts diagonal bands of shadow over the boards. Lavender leaves show in the corner."
+  },
+  "seoFilename": "diyagonal-tahtali-deck-yuzeyi-damarlar-belirgin",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

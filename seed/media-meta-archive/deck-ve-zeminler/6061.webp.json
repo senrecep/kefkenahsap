@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/6061.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz önünde yarısı koyu boyanmış deck",
+    "en": "Deck in front of a pool, half painted dark"
+  },
+  "alt": {
+    "tr": "Havuzun önündeki deck yüzeyi; sağ yarısı koyu kırmızımsı kahverengiye boyanmış, sol yarısı ham ve açık renkli",
+    "en": "Deck surface in front of a pool, its right half painted dark reddish-brown and its left half raw and pale"
+  },
+  "caption": {
+    "tr": "Boya sınırı tahta uçlarında net bir çizgi oluşturuyor. Kenarda lavanta, saksılar ve arkada mavi havuz görünüyor.",
+    "en": "The edge of the paint makes a clear line across the board ends. Lavender, planters and the blue pool show beside and behind it."
+  },
+  "seoFilename": "havuz-onunde-sag-yarisi-koyu-kirmizimsi-boyanmis-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

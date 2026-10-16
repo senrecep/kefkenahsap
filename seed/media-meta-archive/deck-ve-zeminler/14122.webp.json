@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14122.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dar balkonda turuncu kahverengi deck",
+    "en": "Orange-brown deck on a narrow balcony"
+  },
+  "alt": {
+    "tr": "Uzun ve dar bir balkonu boydan boya kaplayan, parlak turuncu kahverengi cilalı deck; yanda ahşap korkuluk",
+    "en": "Glossy orange-brown polished deck covering a long narrow balcony, with a timber railing alongside"
+  },
+  "caption": {
+    "tr": "Tahtalar balkonun uzun yönünde ilerliyor. Sol tarafta cam kapılar, sağda dikey çıtalı korkuluk var.",
+    "en": "The boards run along the length of the balcony. Glass doors are on the left and a vertical-slat railing on the right."
+  },
+  "seoFilename": "dar-balkonda-turuncu-kahverengi-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "balkon"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

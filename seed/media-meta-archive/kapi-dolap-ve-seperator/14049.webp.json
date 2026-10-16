@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/14049.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Gri boyalı, siyah menteşeli jaluzi kapaklı üç kanatlı dolap",
+    "en": "Grey-painted three-leaf louvred cabinet with black hinges"
+  },
+  "alt": {
+    "tr": "Taş döşeli patika kenarında duran, gri boyalı ve jaluzi çıtalı üç kanatlı uzun ahşap dolap; kanatlarda siyah menteşeler",
+    "en": "Tall grey-painted timber cabinet with three louvred leaves beside a stone-paved path, with black hinges on the leaves"
+  },
+  "caption": {
+    "tr": "Kanatlar jaluzi çıtalı, siyah menteşelerle sabit. Dolap gri boyayla evin gri cephe tonuna uyuyor.",
+    "en": "The leaves are louvred and hung on black hinges. The grey paint matches the grey of the house wall."
+  },
+  "seoFilename": "gri-boyali-siyah-mentese-jaluzi-kapakli-uc-kanatli-dolap",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

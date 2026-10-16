@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/234.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Turuncu vernikli dikey kaplamalı, işlemeli bina cephesi",
+    "en": "Orange varnished vertical-clad facade with carved details"
+  },
+  "alt": {
+    "tr": "Turuncu tonlu vernikli dikey ahşap kaplamalı üç katlı bina cephesi, pencere üstlerinde oyma süsler, altta sarı sıvalı kat",
+    "en": "Three-storey building facade in orange varnished vertical timber cladding with carved ornaments above the windows"
+  },
+  "caption": {
+    "tr": "Dikey tahtalar cepheye uzun bir çizgi veriyor, pencere üstlerindeki oymalar ritim oluşturuyor.",
+    "en": "The vertical boards give the facade long lines, and the carvings above the windows set a rhythm."
+  },
+  "seoFilename": "turuncu-vernikli-dikey-ahsap-kaplamali-islemeli-uc-katli",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

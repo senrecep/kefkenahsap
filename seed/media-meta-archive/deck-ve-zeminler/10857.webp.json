@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/10857.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Turuncu tonlu kütük dilimi, halkalar belirgin",
+    "en": "Orange-toned log slice with clear rings"
+  },
+  "alt": {
+    "tr": "Beton zemin üzerinde duran, turuncu tonlu ve halkaları belirgin kabuklu ağaç kütüğü dilimi",
+    "en": "Orange-toned slice of a tree trunk with bark and clear rings, standing on a concrete floor"
+  },
+  "caption": {
+    "tr": "Dilimin yüzeyi pürüzsüz, kenarında kalın kabuk duruyor. Üst yüzeyde iki küçük delik görünüyor.",
+    "en": "The surface is smooth with thick bark around the edge. Two small holes are visible on the top face."
+  },
+  "seoFilename": "beton-zemin-uzerinde-turuncu-renkli-halkalari-gorunen",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.4
+}

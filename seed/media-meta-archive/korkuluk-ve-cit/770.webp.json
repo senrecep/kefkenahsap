@@ -1,0 +1,40 @@
+{
+  "source": "Korkuluk ve Cit/770.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kütük istinat üstünde çıtalı ahşap korkuluk",
+    "en": "Slatted timber railing above a log retaining wall"
+  },
+  "alt": {
+    "tr": "Dikey dizilmiş kütüklerden istinat duvarının üstünde, yeşil örtü bitkisinin arkasında uzanan açık tonlu çıtalı ahşap korkuluk",
+    "en": "Light slatted timber railing above a retaining wall of upright logs, behind a green ground-cover plant"
+  },
+  "caption": {
+    "tr": "Kütük duvar toprağı tutuyor, korkuluk üstte yeşil örtüyle birlikte bir bordür oluşturuyor.",
+    "en": "The log wall holds back the soil, and the railing with the green cover forms a border on top."
+  },
+  "seoFilename": "kutuk-istinat-ustunde-citali-ahsap-korkuluk-yesil-ortu",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "çit"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

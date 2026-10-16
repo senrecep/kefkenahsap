@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/12531.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ortanca çiçeği yanında cilalı küçük deck alanı",
+    "en": "Small varnished deck by a hydrangea at the door"
+  },
+  "alt": {
+    "tr": "Ortanca çiçeği yanında, cam kapının önünde cilalı kahverengi küçük deck alanı",
+    "en": "Small varnished brown deck area in front of a glass door beside a hydrangea"
+  },
+  "caption": {
+    "tr": "Deck, kapı eşiğinden bir basamak yukarıda duruyor ve taş basamakla bahçeye bağlanıyor. Önünde toprak zemin duruyor.",
+    "en": "The deck sits a step above the threshold and links to the garden by a stone step. Bare soil lies in front."
+  },
+  "seoFilename": "ortanca-cicegi-yaninda-cilali-kucuk-deck-alani",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

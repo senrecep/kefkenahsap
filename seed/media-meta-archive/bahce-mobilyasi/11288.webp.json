@@ -1,0 +1,35 @@
+{
+  "source": "Ireko-Teak/11288.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çıtalı ahşap masa tablasının çerçeve köşe birleşimi, yakından",
+    "en": "Frame corner joint of a slatted timber table top up close"
+  },
+  "alt": {
+    "tr": "Yakın çekimde, çıtalı ahşap masa tablasının köşesinde, kalın çerçevenin gönyeli birleşimi ve yanındaki ince çıtalar görünüyor",
+    "en": "A close view of a corner of a slatted timber table top, with the mitred joint of the thick frame and the slim slats alongside"
+  },
+  "caption": {
+    "tr": "Çerçevenin köşesi gönyeli kesilmiş ve düzgün oturmuş. Çıtalar arasındaki boşluk yağmur suyunu aşağı iniriyor.",
+    "en": "The corner of the frame is mitred and sits tight. The gaps between the slats let rainwater run down."
+  },
+  "seoFilename": "citali-ahsap-masa-tablasi-ve-cerceve-kose-birlesimi-yakin",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

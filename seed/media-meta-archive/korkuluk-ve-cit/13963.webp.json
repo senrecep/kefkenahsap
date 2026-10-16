@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/13963.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çakıl ve ahşap şeritli zemin deseni, çit önünde bahçe lambası",
+    "en": "Ground pattern of gravel and timber strips, garden lamp beside the fence"
+  },
+  "alt": {
+    "tr": "Çimin kenarında ahşap şeritler ve gri çakıl dolgulu dikdörtgenlerden oluşan zemin deseni",
+    "en": "Ground pattern of timber strips and grey gravel-filled rectangles at the lawn edge"
+  },
+  "caption": {
+    "tr": "Zemin ahşap çerçeve içinde çakıl ve tahta şeritlerin dönüşümlü sıralanmasıyla yapılmış. Kenarda alçak bir bahçe lambası duruyor.",
+    "en": "The ground is made of gravel and timber strips set alternately inside a timber frame. A low garden lamp stands at the side."
+  },
+  "seoFilename": "cakil-ve-ahsap-seritli-zemin-deseni-bahce-lambasi",
+  "tags": {
+    "type": [
+      "çit",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

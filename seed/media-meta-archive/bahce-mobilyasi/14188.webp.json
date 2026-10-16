@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14188.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Metal iskeletli, çıtalı ahşap kanepe, cam kapı önünde",
+    "en": "Metal-framed slatted timber sofa in front of a glass door"
+  },
+  "alt": {
+    "tr": "Terasta, camlı kapının önünde, gri metal iskeletli ve çıtalı ahşap sırt ile kollu bir kanepe",
+    "en": "On a terrace in front of a glass door, a sofa with a grey metal frame and slatted timber back and arms"
+  },
+  "caption": {
+    "tr": "Kanepenin çerçevesi metal, kolları ve sırtı çıtalı ahşap. Minder konulmadığı için oturak çıtaları görünüyor.",
+    "en": "The frame is metal and the arms and back are slatted timber. Since no cushions are on it, the seat slats show."
+  },
+  "seoFilename": "metal-iskeletli-citali-ahsap-kanepe-cam-kapi-onunde",
+  "tags": {
+    "type": [
+      "oturma grubu"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

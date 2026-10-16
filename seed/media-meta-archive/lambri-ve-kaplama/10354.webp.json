@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/10354.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Turuncu tonlu vernikli tavan lambrisi",
+    "en": "Orange-toned varnished ceiling panelling"
+  },
+  "alt": {
+    "tr": "Turuncu tonlu vernikli lambri tavan, ortasında basamak yapan eğimli bölüm ve içeri ışık dolduran parlak bir pencere",
+    "en": "Orange-toned varnished panelled ceiling with a sloping section forming a step in the middle"
+  },
+  "caption": {
+    "tr": "Vernik lambri şeritlerin damarını öne çıkarıyor, pencere ışığı tavana yayılıyor.",
+    "en": "The varnish brings out the grain of the strips, and light from the window spreads over the ceiling."
+  },
+  "seoFilename": "turuncu-tonlu-vernikli-tavan-lambrisi-isik-alan-pencere",
+  "tags": {
+    "type": [
+      "tavan kaplaması / lambri"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

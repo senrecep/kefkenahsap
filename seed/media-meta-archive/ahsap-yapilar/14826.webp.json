@@ -1,0 +1,35 @@
+{
+  "source": "Kapi Dolap ve Seperator/14826.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kapı üstünde demir kıvrımlı giriş saçağı",
+    "en": "Entrance canopy with wrought iron scrolls over a door"
+  },
+  "alt": {
+    "tr": "Kapının üstüne konmuş, gri kaplamalı ve demir kıvrım destekli giriş saçağı",
+    "en": "Entrance canopy with grey cladding and wrought iron scroll supports above a door"
+  },
+  "caption": {
+    "tr": "Saçağın alt yüzü beyaz, çerçevesi koyu kirişli. Demir kıvrımlar duvara bağlanıyor, aşağıda kemerli bir kapı görünüyor.",
+    "en": "The underside of the canopy is white with a dark beamed frame. Iron scrolls connect it to the wall and an arched door shows below."
+  },
+  "seoFilename": "kapi-ustunde-demir-kivrimli-gri-kapli-giris-sacagi",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.45
+}

@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/8886.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Üstten bakışla merdiven, taş duvar ve çimlik",
+    "en": "Stairs from above, with a stone wall and lawn"
+  },
+  "alt": {
+    "tr": "Üstten görünen ahşap merdiven ve çaprazlı korkuluk; yanda taş duvar, kırmızı çalılar ve çimlik",
+    "en": "Timber stairs and a cross-braced railing seen from above, with a stone wall, red shrubs and a lawn beside"
+  },
+  "caption": {
+    "tr": "Korkuluğun çaprazları ve basamaklar yukarıdan görülüyor. Yanda kırmızı çalılı bir taş duvar var.",
+    "en": "The railing's cross braces and the steps are seen from above. A stone wall with red shrubs stands alongside."
+  },
+  "seoFilename": "ustten-ahsap-merdiven-ve-caprazli-korkuluk-tas-duvar-cimlik",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/13051.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Toprak şevde metal basamaklı merdiven",
+    "en": "Metal-tread stairs on an earth slope"
+  },
+  "alt": {
+    "tr": "Toprak şev üzerinde metal basamaklı, ahşap küpeşteli merdiven; uzakta konutlar görünüyor",
+    "en": "Metal-tread staircase with a timber handrail on an earth slope, with houses in the distance"
+  },
+  "caption": {
+    "tr": "Merdiven çıplak toprak şevde, camlı korkuluğun yanında yükseliyor. Çevre düzenlemesi henüz yapılmamış.",
+    "en": "The stairs climb the bare earth slope beside a glass balustrade. Landscaping has not been done yet."
+  },
+  "seoFilename": "toprak-sev-metal-basamakli-merdiven-ahsap-kupeste-manzara",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/12770.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Eskimiş deck ve korkuluk köşesi, taş kenarlık",
+    "en": "Worn deck and railing corner with stone edging"
+  },
+  "alt": {
+    "tr": "Eskimiş ahşap deck ve korkuluk köşesi, altta taş kenarlık ve çimen",
+    "en": "Worn timber deck and railing corner, with stone edging and lawn below"
+  },
+  "caption": {
+    "tr": "Korkuluk ve deck tahtaları solmuş, birleşim yerleri yıpranmış. Yan tarafta saksı ve yeşil bitkiler görünüyor.",
+    "en": "The railing and deck boards have faded and the joints are worn. A pot and green plants show at the side."
+  },
+  "seoFilename": "eskimis-deck-ve-korkuluk-kosesi-tas-kenarlik",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

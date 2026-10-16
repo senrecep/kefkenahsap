@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/11367.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beş tahtalı dar turuncu deck parçası",
+    "en": "Narrow orange deck piece of five boards"
+  },
+  "alt": {
+    "tr": "Toprak zemin üzerinde duran, beş tahtadan oluşan dar turuncu ahşap deck parçası",
+    "en": "Narrow orange timber deck piece of five boards lying on the soil"
+  },
+  "caption": {
+    "tr": "Parça beton kenarın yanına konmuş, tahtalar iki çıtaya vidalı. Çevre henüz düzeltilmemiş.",
+    "en": "The piece is set beside a concrete edge with the boards screwed to two battens. The surroundings are not tidied yet."
+  },
+  "seoFilename": "toprak-zemin-uzerinde-duran-bes-tahtadan-olusan-dar-turuncu",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

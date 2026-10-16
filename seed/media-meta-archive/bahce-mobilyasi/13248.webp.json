@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/13248.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çıtalı paravan önünde dış mutfak dolapları",
+    "en": "Outdoor kitchen cabinets in front of a slatted screen"
+  },
+  "alt": {
+    "tr": "Çıtalı ahşap paravanın önünde, beyaz bölmeli, ahşap kaplı dış mutfak dolapları",
+    "en": "Timber-clad outdoor kitchen cabinets with a white partition in front of a slatted timber screen"
+  },
+  "caption": {
+    "tr": "Dolaplar köşe yapıyor, aralarında oturma gibi basamaklı bir boşluk var. Paravanın aralarından bahçe görünüyor.",
+    "en": "The cabinets form a corner with a stepped recess between them. The garden shows through the gaps in the screen."
+  },
+  "seoFilename": "citali-paravan-onunde-ahsap-kapli-dis-mutfak-dolaplari-beyaz",
+  "tags": {
+    "type": [
+      "dış mutfak / mangal alanı",
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.6
+}

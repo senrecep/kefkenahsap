@@ -1,0 +1,33 @@
+{
+  "source": "Ahsap Yapilar/14565.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ahşap doğramalı cephe ve taş döşeli yol",
+    "en": "Timber-framed facade and a stone-paved path"
+  },
+  "alt": {
+    "tr": "Kiremit çatılı evin ahşap doğramalı cephesi, önünde taş döşeli bir yol ve çimli bahçe",
+    "en": "Facade with timber-framed windows on a tile-roofed house, a stone-paved path and a grassy garden in front"
+  },
+  "caption": {
+    "tr": "Evin cephesindeki pencereler ahşap doğramalı. Taş döşeli yol bahçenin içinden eve doğru uzanıyor.",
+    "en": "The windows on the facade have timber frames. A stone-paved path runs through the garden towards the house."
+  },
+  "seoFilename": "ahsap-dogramali-cephe-ve-tas-doseli-yol-kiremit-catili-ev",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.4
+}

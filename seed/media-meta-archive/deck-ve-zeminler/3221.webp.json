@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/3221.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "L şekilli bank bulunan koyu deck",
+    "en": "Dark deck with an L-shaped bench"
+  },
+  "alt": {
+    "tr": "Arka duvar boyunca L şeklinde dönen ahşap bank ve önünde koyu kahverengi deck; ön tarafta bitkiler ve taş plakalar",
+    "en": "Timber bench turning in an L along the back wall with a dark brown deck in front, plants and stone slabs at the front"
+  },
+  "caption": {
+    "tr": "Bank sırtlıklı ve deckle aynı tonda. Taş plakalar çimenden deck kenarına geçişi sağlıyor.",
+    "en": "The bench has a back and matches the deck in tone. Stone slabs make the transition from the lawn to the deck edge."
+  },
+  "seoFilename": "l-seklinde-oturma-banki-olan-koyu-deck-ve-tas-plakalar",
+  "tags": {
+    "type": [
+      "deck",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

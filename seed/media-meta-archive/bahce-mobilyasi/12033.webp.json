@@ -1,0 +1,38 @@
+{
+  "source": "Ireko-Teak/12033.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş zeminde hasır oturaklı, çapraz demir sırtlıklı iki ahşap sandalye",
+    "en": "Two timber chairs with woven seats and crossed iron backs on stone paving"
+  },
+  "alt": {
+    "tr": "Desenli taş zeminde, bükme ahşap kollu, hasır görünümlü oturaklı ve çapraz demir sırtlıklı iki sandalye",
+    "en": "Two chairs with bentwood arms, woven-look seats and crossed iron back rods side by side on patterned stone"
+  },
+  "caption": {
+    "tr": "Sandalyelerin kolları bükme ahşaptan, sırtında çapraz demir çubuk var. Ahşap ve demir bir arada kullanılmış.",
+    "en": "The arms of the chairs are bentwood and the backs have crossed iron bars. Timber and iron are used together."
+  },
+  "seoFilename": "tas-zeminde-iki-hasir-oturakli-kollu-ahsap-sandalye-capraz",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

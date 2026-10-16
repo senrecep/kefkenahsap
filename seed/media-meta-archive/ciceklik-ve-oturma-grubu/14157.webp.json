@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14157.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kilit taşında kare koyu vernikli çiçeklik",
+    "en": "Square dark-varnished planter on interlocking paving"
+  },
+  "alt": {
+    "tr": "Kilit taşı döşeli kaldırımda duran, içinde sarı yapraklı çalı olan kare koyu vernikli ahşap çiçeklik",
+    "en": "Square dark-varnished timber planter with a yellow-leaved shrub standing on interlocking paving"
+  },
+  "caption": {
+    "tr": "Çiçeklik koyu kahve vernikli, yanları dikey tahtalı. İçindeki genç çalı yeni yeşermiş.",
+    "en": "The planter is varnished dark brown with vertical side boards. The young shrub in it has just come into leaf."
+  },
+  "seoFilename": "kilit-tasi-zeminde-bitkili-kare-koyu-vernikli-ahsap-ciceklik",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

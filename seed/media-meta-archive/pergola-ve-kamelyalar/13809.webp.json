@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/13809.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dar uzun havuz kenarında ahşap korkuluklu deck ve pergola",
+    "en": "Timber-railed deck and pergola along a long narrow pool"
+  },
+  "alt": {
+    "tr": "Dar ve uzun bir havuzun kenarında ahşap korkuluklu deck ve pergola, arkada kırmızı çatılı büyük ev",
+    "en": "Timber-railed deck and pergola along a long narrow pool, with a large red-roofed house behind"
+  },
+  "caption": {
+    "tr": "Havuz uzun bir hat boyunca uzanıyor, deck ve pergola aynı hatta ilerliyor. Korkuluk kenar boyunca devam ediyor.",
+    "en": "The pool runs along a long line, with the deck and pergola following the same line. The railing continues along the edge."
+  },
+  "seoFilename": "dar-uzun-havuz-kenarinda-ahsap-korkuluklu-deck",
+  "tags": {
+    "type": [
+      "pergola",
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

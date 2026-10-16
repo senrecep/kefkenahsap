@@ -1,0 +1,35 @@
+{
+  "source": "Korkuluk ve Cit/15093.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bahçede uzayıp giden sıralı direk ve kirişler",
+    "en": "Row of posts and beams stretching through a garden"
+  },
+  "alt": {
+    "tr": "Meyve ağaçlarının arasında toprak zeminde ileriye doğru sıralanan, üstleri yatay kirişli ince ahşap direkler",
+    "en": "Slender timber posts with horizontal beams on top, lined up across bare soil among fruit trees"
+  },
+  "caption": {
+    "tr": "Direk sırası bahçenin uzun kenarı boyunca perspektifle küçülüyor.",
+    "en": "The row of posts shrinks in perspective along the long side of the garden."
+  },
+  "seoFilename": "bahcede-uzayip-giden-sirali-ahsap-direk-ve-kirisler",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.4
+}

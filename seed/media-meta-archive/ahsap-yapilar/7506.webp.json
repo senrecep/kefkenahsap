@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/7506.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Geniş çatı iskeleti, arkada kıyı evleri",
+    "en": "Wide roof frame with coastal buildings behind"
+  },
+  "alt": {
+    "tr": "Yukarıdan görünen geniş ahşap çatı iskeleti; arkada kıyıdaki küçük yapılar ve yerde bir alet",
+    "en": "Wide timber roof frame seen from above, with small buildings along the shore behind and a tool on the ground"
+  },
+  "caption": {
+    "tr": "İskelet çift eğimli çatının kirişlerinden oluşuyor. Altta tahta parçaları ve bir el aleti duruyor, arkada yeşillik var.",
+    "en": "The frame is made of the rafters of a pitched roof. Pieces of board and a hand tool lie below with greenery behind."
+  },
+  "seoFilename": "genis-cati-iskeleti-yukaridan-arkada-kiyi-evleri",
+  "tags": {
+    "type": [
+      "sundurma / saçak / carport"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

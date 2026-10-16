@@ -1,0 +1,33 @@
+{
+  "source": "Ahsap Yapilar/9197.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "İskeleli gazbeton cephede çıta sıraları",
+    "en": "Rows of battens on a scaffolded aerated concrete facade"
+  },
+  "alt": {
+    "tr": "Gazbeton cephede iskele arkasında dikey çıta sıraları ve küçük bir pencere boşluğu",
+    "en": "Rows of vertical battens on an aerated concrete facade behind scaffolding, with a small window opening"
+  },
+  "caption": {
+    "tr": "Geniş gazbeton yüzeye çıtalar düzenli aralıklarla çakılmış. Ortada küçük bir pencere boşluğu bırakılmış.",
+    "en": "Battens are fixed at regular intervals across the wide aerated concrete surface. A small window opening is left in the middle."
+  },
+  "seoFilename": "iskeleli-gazbeton-cephe-cita-pencere-boslugu",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,41 @@
+{
+  "source": "Pergola ve Kamelyalar/1825.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş basamaklı yolda çitli giriş kapısı ve saçak",
+    "en": "Fenced entrance gate on a stone-stepped path with a small canopy"
+  },
+  "alt": {
+    "tr": "Taş basamaklı bahçe yolunun başında, küçük çatılı ahşap giriş kapısı ve yanında taş duvar üstünde piket çit",
+    "en": "Small timber gate with a little roof at the head of a stone-stepped garden path"
+  },
+  "caption": {
+    "tr": "Giriş kapısı iki direğe oturan hafif eğimli bir saçakla örtülü, çit duvar boyunca uzanıyor.",
+    "en": "The entrance gate is covered by a gently sloping canopy on two posts, and the fence runs along the wall."
+  },
+  "seoFilename": "tas-basamakli-yolda-citli-giris-kapisi-ve-kucuk-sacak",
+  "tags": {
+    "type": [
+      "bahçe kapısı",
+      "çit",
+      "merdiven"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/11386.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Duvara dayalı kare gözlü kırmızımsı vernikli ahşap kafes paneller",
+    "en": "Square-mesh reddish varnished timber lattice panels leaning on a wall"
+  },
+  "alt": {
+    "tr": "Taş döşemede duvara yaslanmış iki kırmızımsı vernikli ahşap kafes panel; çıtalar çapraz bindirilmiş",
+    "en": "Two reddish varnished timber lattice panels leaning on a wall on stone paving"
+  },
+  "caption": {
+    "tr": "İki panel üst üste yaslanmış, çıtalar aralıklı kare gözler oluşturuyor. Ahşabın damarı vernik altında belirgin.",
+    "en": "The two panels lean against each other and the slats form spaced square cells. The grain of the wood is clear under the varnish."
+  },
+  "seoFilename": "duvara-dayali-kare-gozlu-kirmizimsi-vernikli-kafes",
+  "tags": {
+    "type": [
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/5220.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Villa girişinde beyaz boyalı pergola, kiremit çatılı sarı bina",
+    "en": "White-painted pergola at a villa entrance beside a tile-roofed yellow house"
+  },
+  "alt": {
+    "tr": "Villanın giriş cephesinde beyaz boyalı pergola, kiremit çatılı sarı bina, panjurlu pencereler ve ahşap deck",
+    "en": "White-painted pergola along a villa's entrance front, with a tile-roofed yellow house, shuttered windows and a timber deck"
+  },
+  "caption": {
+    "tr": "Pergola cephenin altında uzun bir hat boyunca uzanıyor. Köşede çocuk salıncağının bir ayağı görünüyor.",
+    "en": "The pergola runs along a long line beneath the facade. One leg of a child's swing shows at the corner."
+  },
+  "seoFilename": "villa-girisinde-beyaz-boyali-pergola-kiremit-cati",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş",
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,40 @@
+{
+  "source": "Ireko-Teak/14648.webp",
+  "category": "mutfak-ve-gomme-dolap",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yatay sırtlıklı uzun bank dolap",
+    "en": "Long bench cabinet with a horizontal-slat back"
+  },
+  "alt": {
+    "tr": "Küp taş zeminde yatay sırtlıklı uzun ahşap bank ve altında sıralı kapaklar; arkada saksılar asılı tel çit",
+    "en": "A long timber bench with a horizontal-slat back and a row of doors beneath, on cobblestones"
+  },
+  "caption": {
+    "tr": "Bank boydan boya uzanıyor, sırtlığı yatay tahtalardan. Altındaki kapaklar sıra sıra dizili, arkada tel çitte saksılar asılı.",
+    "en": "The bench runs the full length with a back of horizontal boards. The doors beneath are lined up in a row and pots hang on the wire fence behind."
+  },
+  "seoFilename": "kup-tas-zeminde-yatay-sirtlikli-uzun-bank-dolap-saksilar",
+  "tags": {
+    "type": [
+      "gömme dolap / gardırop",
+      "bank",
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş",
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

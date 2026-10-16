@@ -1,0 +1,36 @@
+{
+  "source": "Korkuluk ve Cit/8662.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Merdiven altına gizlenen yatay tahta kaplı kapı",
+    "en": "Door clad in horizontal boards under a staircase"
+  },
+  "alt": {
+    "tr": "Merdivenin altındaki eğimli boşluğa uyan, yatay tahta kaplı iki kanatlı kapı; ortada metal kulp, yanlarda menteşe",
+    "en": "Two-leaf door clad in horizontal boards fitted into the sloping space under a staircase"
+  },
+  "caption": {
+    "tr": "Kapı kaplamasıyla duvarın bir parçası gibi duruyor. Eğimli üst kenarı merdiven kirişini izliyor.",
+    "en": "The cladding makes the door read as part of the wall. Its sloped top edge follows the stair stringer."
+  },
+  "seoFilename": "merdiven-altinda-yatay-tahta-kapli-kapi",
+  "tags": {
+    "type": [
+      "kapı",
+      "gömme dolap / gardırop"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

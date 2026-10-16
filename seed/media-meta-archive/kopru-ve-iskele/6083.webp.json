@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/6083.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kırmızı-kahve basamak plakaları, çimde yakın çekim",
+    "en": "Red-brown stepping slabs close-up on the lawn"
+  },
+  "alt": {
+    "tr": "Çimde köşegen sıralanan kırmızı-kahve ahşap basamak plakaları, ön planda en büyüğü; tahtalar boyuna döşenmiş",
+    "en": "Red-brown timber stepping slabs set out diagonally on the lawn, the largest in the foreground, boards laid lengthwise"
+  },
+  "caption": {
+    "tr": "Plakalar tahta tahta yan yana birleşiyor, aralarından çimin kenarı görünüyor. Yol uzağa doğru daralıyor.",
+    "en": "Each slab is made of boards fixed side by side, with the edge of the grass showing between them. The path narrows into the distance."
+  },
+  "seoFilename": "kirmizi-kahve-basamak-plakalari-yakin-cekim",
+  "tags": {
+    "type": [
+      "yürüyüş yolu"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

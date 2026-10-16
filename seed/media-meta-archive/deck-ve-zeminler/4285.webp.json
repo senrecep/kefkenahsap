@@ -1,0 +1,40 @@
+{
+  "source": "Deck ve Zeminler/4285.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ağaç gövdeleri etrafında geniş deck",
+    "en": "Wide deck around tree trunks"
+  },
+  "alt": {
+    "tr": "Çam gövdelerinin çevresinde kare boşluklarla kesilmiş geniş açık renkli deck; X çıtalı korkuluk ve toprak kenar",
+    "en": "Wide pale deck cut with square openings around pine trunks, with an X-braced railing and an earth edge"
+  },
+  "caption": {
+    "tr": "Deck ağaçları kesmeden aralarından geçiyor. Korkuluğun uzun hattı arka kenarı boydan boya izliyor.",
+    "en": "The deck passes between the trees without cutting them. The long line of the railing follows the back edge along its whole length."
+  },
+  "seoFilename": "agac-govdeleri-etrafinda-genis-deck-ve-capraz-korkuluk",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "orman / kır"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

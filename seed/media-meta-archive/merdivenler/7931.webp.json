@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/7931.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beton duvar boyunca uzanan merdiven, yanda evin kapısı",
+    "en": "Stairs along a concrete wall beside the house door"
+  },
+  "alt": {
+    "tr": "Beton duvar boyunca çaprazlı korkuluklu ahşap merdiven; sağda evin kapısı, zeminde toprak ve palet",
+    "en": "Timber stairs with a cross-braced railing along a concrete wall"
+  },
+  "caption": {
+    "tr": "Merdiven uzun beton duvarın boyunca yükseliyor. Sağda evin kapısı, aşağıda toprak zemin görünüyor.",
+    "en": "The stairs rise along the long concrete wall. The house door is on the right and bare ground below."
+  },
+  "seoFilename": "beton-duvar-boyunca-uzanan-caprazli-korkuluklu-merdiven-ev",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

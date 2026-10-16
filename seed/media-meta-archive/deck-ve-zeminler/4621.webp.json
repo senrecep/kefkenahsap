@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/4621.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz çevresinde taşıyıcı iskelet",
+    "en": "Support frame around a pool"
+  },
+  "alt": {
+    "tr": "Mozaik fayanslı havuzun çevresine kurulmuş, henüz kaplanmamış ahşap taşıyıcı iskelet; arkada ahşap kulübe ve selvi çiti",
+    "en": "Timber support frame set out around a mosaic-tiled pool and not yet covered, with a timber shed and a cypress hedge behind"
+  },
+  "caption": {
+    "tr": "İskelet kare ve dikdörtgen bölmelerden oluşuyor ve toprak zeminin üstünde duruyor. Havuz kenarında taş bir kenar bandı var.",
+    "en": "The frame is made of square and rectangular bays and stands on bare soil. A stone coping runs along the pool edge."
+  },
+  "seoFilename": "havuz-cevresinde-ahsap-tasiyici-iskelet-kaplama-baslamamis",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/13478.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kamelya içinden kiriş ve payanda detayı, çapraz korkuluk",
+    "en": "Beam and brace detail inside a gazebo with an X-braced rail"
+  },
+  "alt": {
+    "tr": "Kamelyanın içinden çatı kirişleri, V biçimli payandalar ve çapraz çıtalı korkuluk, arkada çit",
+    "en": "Inside a gazebo: roof beams, V-shaped braces and an X-braced railing, with a fence behind"
+  },
+  "caption": {
+    "tr": "Payandalar ortadaki direkten kirişlere açılıyor. Alt kısımda korkuluk çıtaları çaprazlanmış.",
+    "en": "The braces fan out from the centre post to the beams. Rail slats cross along the lower edge."
+  },
+  "seoFilename": "kamelya-ici-kiris-payanda-detayi-capraz-korkuluk",
+  "tags": {
+    "type": [
+      "kamelya",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

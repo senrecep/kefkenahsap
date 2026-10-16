@@ -1,0 +1,39 @@
+{
+  "source": "Korkuluk ve Cit/458.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kırmızı toprakta yeni çit direkleri ve yatay kirişler",
+    "en": "New fence posts and horizontal rails on red soil"
+  },
+  "alt": {
+    "tr": "Kırmızı topraklı geniş sahanın kenarına dikilmiş yeşilimsi kalın direkler ve çivili yatay kirişler, arkada yeşil şev",
+    "en": "Thick greenish posts set at the edge of a wide red-soil site with horizontal rails fixed to them, a green bank behind"
+  },
+  "caption": {
+    "tr": "Kirişler direklere iki sıra halinde bağlanmış ve çit saha boyunca uzuyor. Direk diplerinde beton izi var.",
+    "en": "The rails are fixed to the posts in two rows and the fence runs the length of the site. Concrete shows at the post bases."
+  },
+  "seoFilename": "kirmizi-topraga-yeni-dikilen-ahsap-cit-direkleri-ve-kirisler",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

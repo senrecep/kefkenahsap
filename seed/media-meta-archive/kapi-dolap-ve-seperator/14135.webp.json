@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/14135.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kapakları açılmış tezgâh altı dolabı, raf bölmesi",
+    "en": "Counter-height cabinet with open doors and a shelf bay"
+  },
+  "alt": {
+    "tr": "Parke taşlı zeminde, tezgâh altındaki ahşap dolabın iki kapağı açık, ortada tek bir raf bulunan bölme ve çit önünde duruyor",
+    "en": "Under-counter timber cabinet on cobbled paving with its two doors open, a bay with a single shelf in the middle"
+  },
+  "caption": {
+    "tr": "Kapaklar jaluzi çıtalı, içindeki raf ortada duruyor. Alt kısımda boşluk bırakılmış.",
+    "en": "The doors are louvred and the shelf sits in the middle. A gap is left at the bottom."
+  },
+  "seoFilename": "kapaklari-acilmis-tezgah-alti-dolabi-raf-bolmesi",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

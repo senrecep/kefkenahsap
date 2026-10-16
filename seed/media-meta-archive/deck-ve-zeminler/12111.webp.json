@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12111.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam doğrama önünde eskimiş deck",
+    "en": "Weathered deck in front of a glazed frame"
+  },
+  "alt": {
+    "tr": "Cam doğrama önündeki eskimiş deck, dökülen turuncu boya ve çıplak ahşap lekeleri",
+    "en": "Weathered deck in front of a glazed frame, with flaking orange coating and patches of bare wood"
+  },
+  "caption": {
+    "tr": "Eski kaplama tahtalardan kalkmış, altından açık renkli ahşap çıkmış. Yenileme öncesi durum.",
+    "en": "The old coating has lifted off the boards and pale wood shows through. This is the state before renewal."
+  },
+  "seoFilename": "eskimis-deck-dokulen-turuncu-boya",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

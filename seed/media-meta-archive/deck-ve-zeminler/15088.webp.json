@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/15088.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beton zeminde çıtalı ahşap ızgara kapak",
+    "en": "Slatted timber grate cover on a concrete floor"
+  },
+  "alt": {
+    "tr": "Taş duvarın önündeki açık renkli zemin üzerine yerleştirilmiş, yatay çıtalardan yapılmış kare ahşap ızgara kapak",
+    "en": "Square timber grate cover made of horizontal slats, set into a pale floor in front of a stone wall"
+  },
+  "caption": {
+    "tr": "Kapak zeminle aynı hizada duruyor ve ortasında iki küçük delik var. Arkada kaba işlenmiş doğal taş duvar yükseliyor.",
+    "en": "The cover sits flush with the floor and has two small holes in the middle. A rough-cut natural stone wall rises behind."
+  },
+  "seoFilename": "beton-zeminde-citali-ahsap-izgara-kapak-tas-duvar",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.55
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/13838.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar arasında telli, kare bölmeli açık renk ahşap çift kanat kapı",
+    "en": "Light timber double gate with wire mesh and square panels between stone walls"
+  },
+  "alt": {
+    "tr": "İki taş duvar arasında, kare bölmeli ve tel örgü dolgulu açık renk ahşap çift kanatlı kapı; önde taş döşeme",
+    "en": "A light timber double gate with square panels and wire-mesh infill between two stone walls"
+  },
+  "caption": {
+    "tr": "Kapının her kanadı kalın çıtalarla karelere bölünmüş, aralar tel örgüyle kapatılmış. Kapı alçak taş duvarlara oturuyor.",
+    "en": "Each leaf of the gate is divided into squares by thick slats and the gaps are closed with wire mesh. The gate sits between low stone walls."
+  },
+  "seoFilename": "tas-duvar-arasinda-telli-kare-bolmeli-cift-kanat-kapi",
+  "tags": {
+    "type": [
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

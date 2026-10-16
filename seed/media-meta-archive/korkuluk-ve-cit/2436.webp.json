@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/2436.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar üstünde yatay kirişli korkuluk hattı",
+    "en": "Horizontal-rail line on top of a stone wall"
+  },
+  "alt": {
+    "tr": "Yamaç kenarındaki taş duvarın üstünde uzanan, taş sütunlarla ayrılmış yatay kirişli ahşap korkuluk, arkada şehir ve deniz",
+    "en": "Horizontal-rail timber fence on top of a stone wall at a hillside edge, divided by stone piers, with a town"
+  },
+  "caption": {
+    "tr": "Hat toprak yolun kenarında kıvrılarak ilerliyor. Zemin henüz tamamlanmamış.",
+    "en": "The line curves along the edge of the dirt road. The ground is not yet finished."
+  },
+  "seoFilename": "tas-duvar-ustunde-ahsap-korkuluk-hatti-ve-sehir-manzarasi",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

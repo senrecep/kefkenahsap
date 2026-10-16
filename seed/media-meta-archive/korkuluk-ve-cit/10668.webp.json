@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/10668.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş döşeli geçitte çapraz kirişli, telli kırmızı ahşap alçak kapı",
+    "en": "Low red timber gate with X braces and wire mesh on a stone-paved passage"
+  },
+  "alt": {
+    "tr": "Taş döşeli dar geçitte, X çapraz kirişli ve tel örgü dolgulu kırmızı boyalı alçak ahşap kapı; yanda bitkili saksı ve duvar",
+    "en": "A low red-painted timber gate with X braces and wire-mesh infill in a narrow stone-paved passage"
+  },
+  "caption": {
+    "tr": "Kapı alçak, iki yanındaki dikmelere menteşeli. Tel örgü kapının çerçevesine sabitlenmiş.",
+    "en": "The gate is low and hinged to posts on either side. The wire mesh is fixed to the frame of the gate."
+  },
+  "seoFilename": "tas-doseli-gecitte-capraz-kirisli-telli-kirmizi-kapi",
+  "tags": {
+    "type": [
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

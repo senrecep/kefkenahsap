@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/1773.webp",
+  "category": "ahsap-ev-ve-bungalov",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Alttan bakışla iki katlı ahşap ev",
+    "en": "Two-storey timber house seen from below"
+  },
+  "alt": {
+    "tr": "Çimli yamaçtan görünen, geometrik desenli balkon korkuluklarıyla iki katlı ahşap ev",
+    "en": "Two-storey timber house seen from a grassy slope, with geometric-pattern balcony railings"
+  },
+  "caption": {
+    "tr": "Evin alt ve üst balkonlarında kare desenli korkuluk var. Ev çimli bir zeminin üzerinde yükseliyor.",
+    "en": "Both balconies carry a square-pattern railing. The house rises above a grassy ground."
+  },
+  "seoFilename": "alttan-gorunen-balkonlu-ahsap-ev-geometrik-korkuluk",
+  "tags": {
+    "type": [
+      "ahşap ev / bungalov",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

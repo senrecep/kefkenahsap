@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/9553.webp",
+  "category": "mutfak-ve-gomme-dolap",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yatay panelli kahverengi dolap kapakları",
+    "en": "Brown horizontal-panel cabinet doors"
+  },
+  "alt": {
+    "tr": "Taş zemin önünde menteşeli, yatay panelli koyu kahverengi ahşap dolap kapakları",
+    "en": "Dark brown timber cabinet doors with horizontal panels and hinges, in front of stone paving"
+  },
+  "caption": {
+    "tr": "İki kapak yatay tahtalarla kaplanmış, menteşeler dışarıda. Kapaklar vernikle koyu bir ton almış.",
+    "en": "The two doors are clad in horizontal boards with the hinges showing outside. The varnish has given them a dark tone."
+  },
+  "seoFilename": "yatay-panelli-kahverengi-ahsap-dolap-kapaklari-mentese",
+  "tags": {
+    "type": [
+      "gömme dolap / gardırop",
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

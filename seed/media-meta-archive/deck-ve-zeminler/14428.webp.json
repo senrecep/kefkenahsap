@@ -1,0 +1,38 @@
+{
+  "source": "Ireko-Teak/14428.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz duvarlı köşede deck zemin ve gömme oturma bankı",
+    "en": "Deck floor with a built-in bench in a white-walled corner"
+  },
+  "alt": {
+    "tr": "Beyaz sıvalı bir köşede turuncu kahve deck zemin ve duvara bitişik aynı ahşaptan oturma bankı, arkada çalılar",
+    "en": "Orange-brown deck floor in a white-rendered corner, with a bench of the same timber against the wall and hedges behind"
+  },
+  "caption": {
+    "tr": "Zemin ve bank aynı ahşapla kaplanmış, köşe bütün görünüyor. Çevre çalılarla çevrili.",
+    "en": "The floor and bench share the same timber, so the corner reads as one piece. Shrubs surround it."
+  },
+  "seoFilename": "beyaz-duvarli-kosede-deck-zemin-gomme-oturma-banki",
+  "tags": {
+    "type": [
+      "deck",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

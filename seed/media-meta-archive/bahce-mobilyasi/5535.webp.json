@@ -1,0 +1,41 @@
+{
+  "source": "Pergola ve Kamelyalar/5535.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Pergola altında mangal ocağı ve piknik masaları",
+    "en": "Barbecue hearth and picnic tables under a pergola"
+  },
+  "alt": {
+    "tr": "Çıtalı pergolanın altında kırmızı tuğlalı mangal ocağı ve ahşap piknik masaları; yanda çiçekli bir duvar",
+    "en": "Red-brick barbecue hearth and timber picnic tables under a slatted pergola, with a flowering wall alongside"
+  },
+  "caption": {
+    "tr": "Pergolanın altında fırınlı bir ocak ve açık renk masalar duruyor. Çiçek açmış bir sarmaşık duvarı kaplıyor.",
+    "en": "A hearth with an oven and pale tables stand in the shade of the pergola. A flowering climber covers the wall."
+  },
+  "seoFilename": "pergola-altinda-tugla-mangal-ocagi-ve-ahsap-piknik-masalari",
+  "tags": {
+    "type": [
+      "dış mutfak / mangal alanı",
+      "pergola",
+      "piknik masası"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

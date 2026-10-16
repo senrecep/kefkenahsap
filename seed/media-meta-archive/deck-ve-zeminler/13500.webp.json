@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/13500.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Parlak yansımalı cilalı deck tahtaları",
+    "en": "Varnished deck boards with a bright reflection"
+  },
+  "alt": {
+    "tr": "Cilalı, parlak yansımalı deck tahtaları, arka planda çalılar ve çit",
+    "en": "Varnished deck boards with bright reflections, with shrubs and a hedge behind"
+  },
+  "caption": {
+    "tr": "Tahtalar uzun yönde çapraz bir açıyla uzanıyor ve ışık cilanın üzerinde parlıyor. Yüzey ıslakmış gibi düzgün ve pürüzsüz.",
+    "en": "The boards run diagonally in long lines and the light flashes off the varnish. The surface is smooth and looks wet."
+  },
+  "seoFilename": "cilali-parlak-yansimali-deck-tahtalari",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

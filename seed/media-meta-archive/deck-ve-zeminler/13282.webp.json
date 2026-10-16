@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/13282.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kıvrımlı kenarlı parlak deck ve ahşap korkuluk",
+    "en": "Glossy deck with a curved edge and timber railing"
+  },
+  "alt": {
+    "tr": "Kıvrımlı kenarlı parlak turuncu kahverengi deck ve ahşap korkuluk, çevresinde bitkiler",
+    "en": "Glossy orange-brown deck with a curved edge and a timber railing, with plants around it"
+  },
+  "caption": {
+    "tr": "Deck'in yuvarlak köşesi çakıl kenara doğru kıvrılıyor ve korkuluk diğer iki kenarı çeviriyor. Cila yüzeyi ışıkta parlatıyor.",
+    "en": "The rounded corner of the deck sweeps towards the gravel edge and the railing encloses the other two sides. The varnish shines in the light."
+  },
+  "seoFilename": "kivrimli-kenarli-parlak-deck-ve-ahsap-korkuluk",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

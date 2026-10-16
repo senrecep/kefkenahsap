@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/13082.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çit önünde palet benzeri destekli dikdörtgen deck",
+    "en": "Rectangular deck on pallet-like supports in front of a hedge"
+  },
+  "alt": {
+    "tr": "Çit önünde, altı palete benzeyen ahşap desteklerle yükseltilmiş açık renkli dikdörtgen deck",
+    "en": "Pale rectangular deck raised on pallet-like timber supports in front of a hedge"
+  },
+  "caption": {
+    "tr": "Deck, eğimli çimeni dengelemek için bir yandan daha yüksek tutulmuş. Altı açık ve havalanıyor.",
+    "en": "The deck is held higher on one side to make up for the sloping lawn. The space underneath is open and ventilated."
+  },
+  "seoFilename": "cit-onunde-palet-benzeri-destekli-dikdortgen-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

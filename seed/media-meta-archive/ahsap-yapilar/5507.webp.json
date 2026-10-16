@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/5507.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kulübe çatısının içinde çapraz kirişler",
+    "en": "Diagonal rafters inside a shed roof"
+  },
+  "alt": {
+    "tr": "Kulübe çatısının iç yüzünde OSB kaplama ve köşelere doğru inen çapraz ahşap kirişler",
+    "en": "OSB lining and diagonal timber rafters running down to the corners on the inside of a shed roof"
+  },
+  "caption": {
+    "tr": "Çatı altı OSB levhayla kaplı, kirişler köşelere doğru çapraz iniyor. Duvarlar açık renk tahta.",
+    "en": "The underside of the roof is lined with OSB and the rafters run diagonally to the corners. The walls are light timber boards."
+  },
+  "seoFilename": "kulube-cati-ici-osb-kaplama-ve-capraz-kirisler",
+  "tags": {
+    "type": [
+      "bahçe kulübesi / depo"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

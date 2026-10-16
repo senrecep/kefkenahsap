@@ -1,0 +1,35 @@
+{
+  "source": "Korkuluk ve Cit/6352.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çim alanda temel kazısı ve kalıp çıtası",
+    "en": "Foundation trench and formwork slats on a lawn"
+  },
+  "alt": {
+    "tr": "Çim alanın içinde kazılmış dar bir temel hendeği, kenarında kalıp çıtaları ve yanında çömelip çalışan bir usta",
+    "en": "A narrow foundation trench dug into a lawn, with formwork slats at its edge and a worker crouching beside it, trees behind"
+  },
+  "caption": {
+    "tr": "Hendek çim alanı boydan boya kesiyor, kalıp çıtaları dizilmeyi bekliyor.",
+    "en": "The trench cuts across the lawn, and the formwork slats are waiting to be set."
+  },
+  "seoFilename": "cim-alanda-temel-kazisi-ve-kalip-citasi",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.4
+}
