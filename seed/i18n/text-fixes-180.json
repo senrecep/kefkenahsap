@@ -389,6 +389,9 @@
       },
       "de": {
         "alt": "Waagerechtes Holzlattenpaneel und Deckboden unter einem Dach mit Profilbrettdecke, dahinter ein Pool"
+      },
+      "ru": {
+        "caption": "Панель под крышей служит боковой стенкой, каменное основание под ней обращено к бассейну. Пол — доски настила."
       }
     },
     "media-meta-archive/ahsap-yapilar/14284.webp.json": {
@@ -402,6 +405,12 @@
         "title": "مظلة وأرضية ديك نصف دائرية بجانب منزل",
         "alt": "مظلة خشبية بأعمدة داكنة وأرضية ديك خشبية نصف دائرية بجانب منزل أبيض، والعمل مستمر",
         "caption": "ألواح الديك مرصوصة على شكل نصف دائرة وعلى الحافة كومة ألواح لم تُركب بعد، وترتكز المظلة على عمودين نحيفين."
+      },
+      "de": {
+        "caption": "Die Deckbretter sind im Halbkreis verlegt, am Rand liegt ein Stapel noch nicht verlegter Bretter. Das Vordach ruht auf zwei schlanken Pfosten."
+      },
+      "ru": {
+        "caption": "Доски настила выложены полукругом, сбоку лежит стопка ещё не уложенных досок. Навес опирается на две тонкие стойки."
       }
     },
     "media-meta-archive/ahsap-yapilar/4010.webp.json": {
@@ -441,6 +450,12 @@
         "title": "بيت كلب على أرضية ديك أمام جدار حجري",
         "alt": "بيت كلب بزخرفة عظمة وحوض طعام منزلق على أرضية ديك أمام جدار حجري",
         "caption": "يقف البيت على ألواح الديك وخلفه جدار حجري داكن، ويظهر بوضوح الباب الصغير والنافذة ذات الشبك في الواجهة."
+      },
+      "de": {
+        "caption": "Die Hütte steht auf Deckbrettern, dahinter liegt eine dunkle Steinmauer. Klappe und Gitterfenster an der Vorderseite sind gut zu erkennen."
+      },
+      "ru": {
+        "caption": "Будка стоит на досках настила, позади неё тёмная каменная стена. Хорошо видны люк и окошко с решёткой на передней стенке."
       }
     },
     "media-meta-archive/bahce-kulubeleri/13672.webp.json": {
@@ -586,6 +601,9 @@
       "ar": {
         "alt": "ركن بار على أرضية ديك بمنضدة حجرية وواجهة مكسوة بشرائح خشبية عمودية",
         "caption": "هيكل البار يبدو حجرياً وواجهته بشرائح خشبية عمودية، والأرضية من ألواح ديك عريضة."
+      },
+      "de": {
+        "caption": "Der Barkorpus wirkt wie Stein, seine Front ist mit senkrechten Holzlatten verkleidet. Der Boden besteht aus breiten Deckbrettern."
       }
     },
     "media-meta-archive/bahce-mobilyasi/13380.webp.json": {
@@ -843,6 +861,9 @@
         "title": "حوض زهور بحافة عريضة على ديك من ألواح عريضة",
         "alt": "حوض زهور خشبي بحافة عريضة على ديك من ألواح عريضة وخلفه نبتة بأوراق حمراء وأصص",
         "caption": "تبرز الحافة العلوية إلى الخارج وتحتها ألواح أفقية. وألواح الديك أعرض بكثير من ألواح الحوض."
+      },
+      "ru": {
+        "caption": "Верхний борт выступает наружу, ниже горизонтальные доски. Доски настила намного шире досок кашпо."
       }
     },
     "media-meta-archive/deck-ve-zeminler/10080.webp.json": {
@@ -850,6 +871,9 @@
         "title": "ديك حديث الفرش على طول تراس جانبي ضيق",
         "alt": "ديك خشبي فاتح حديث الفرش على طول تراس جانبي ضيق ويلمع بسبب البلل",
         "caption": "ألواح الديك ممتدة على طول التراس وتبرز العروق على السطح المبلل. وبجانبه باب زجاجي وجدار."
+      },
+      "ru": {
+        "caption": "Доски настила идут вдоль всей террасы, на мокрой поверхности проступает рисунок волокон. Рядом стеклянная дверь и стена."
       }
     },
     "media-meta-archive/deck-ve-zeminler/10081.webp.json": {
@@ -869,6 +893,9 @@
       "ar": {
         "title": "ألواح ديك مبللة بجانب الجدار عن قرب",
         "alt": "لقطة قريبة لألواح ديك خشبي مبللة ولامعة بجانب جدار"
+      },
+      "ru": {
+        "title": "Мокрые доски настила у стены, крупный план"
       }
     },
     "media-meta-archive/deck-ve-zeminler/10126.webp.json": {
@@ -1019,6 +1046,9 @@
       "de": {
         "title": "Frisch verlegte Deckdielen und Randrahmen",
         "alt": "Nahaufnahme frisch verlegter heller Holzdeckdielen und der umlaufenden Randdiele"
+      },
+      "ru": {
+        "title": "Только что уложенные доски настила и окантовка"
       }
     },
     "media-meta-archive/deck-ve-zeminler/10419.webp.json": {
@@ -1068,6 +1098,9 @@
         "title": "حافة ديك جديد وخزانة خشبية بشيش",
         "alt": "حافة ديك خشبي حديث الفرش وبجانبه خزانة خشبية بشيش وخلفه بيوت الجيران",
         "caption": "للخزانة شيش رأسي وتقف قرب زاوية الديك. وتنتهي ألواح الديك بلوح إطار."
+      },
+      "ru": {
+        "caption": "Короб с вертикальными жалюзи стоит возле угла настила. Доски настила закрываются окантовкой."
       }
     },
     "media-meta-archive/deck-ve-zeminler/10507.webp.json": {
@@ -1095,6 +1128,9 @@
         "title": "ديك تراس جانبي مفروش جزئيًا بجانب باب زجاجي",
         "alt": "ديك خشبي مفروش جزئيًا على طول تراس جانبي ضيق بجانب باب زجاجي وعلى الأرض مثقاب",
         "caption": "تتقدم ألواح الديك من اليمين إلى اليسار وتظهر على اليسار عوارض عارية وعشب. والمثقاب موضوع على الألواح."
+      },
+      "ru": {
+        "caption": "Доски настила продвигаются справа налево, слева видны голые лаги и трава. Дрель лежит на досках."
       }
     },
     "media-meta-archive/deck-ve-zeminler/10628.webp.json": {
@@ -1115,6 +1151,10 @@
       "de": {
         "title": "Deckdielen entlang einer langen Seitenterrasse",
         "alt": "Deckdielen, die entlang einer langen Seitenterrasse verlegt werden, der Rest liegt noch auf blanken Balken"
+      },
+      "ru": {
+        "title": "Доски настила вдоль длинной боковой террасы",
+        "alt": "Доски настила, укладываемые вдоль длинной боковой террасы, остальная часть пока на голых лагах"
       }
     },
     "media-meta-archive/deck-ve-zeminler/10630.webp.json": {
@@ -1157,6 +1197,10 @@
       "de": {
         "title": "Ordentlich gestapelte Deckdielen und Latten",
         "alt": "Holzdeckdielen und Latten, ordentlich auf einem Fliesenboden gestapelt, dahinter eine efeubewachsene Wand"
+      },
+      "ru": {
+        "title": "Аккуратно сложенные доски настила и рейки",
+        "alt": "Деревянные доски настила и рейки, аккуратно сложенные на плиточном полу, сзади стена с плющом"
       }
     },
     "media-meta-archive/deck-ve-zeminler/10682.webp.json": {
@@ -1164,6 +1208,9 @@
         "title": "ديك بني ذهبي أمام عشب شقة الطابق الأرضي",
         "alt": "ديك خشبي بني ذهبي مفروش أمام عشب شقة في الطابق الأرضي وأمامه زهور وردية",
         "caption": "تلتقي ألواح الديك بالعشب بقطع مائل. واللون دافئ والسطح يلمع كأنه مدهون بالزيت."
+      },
+      "ru": {
+        "caption": "Доски настила встречаются с травой по косому срезу. Цвет тёплый, поверхность блестит, словно промаслена."
       }
     },
     "media-meta-archive/deck-ve-zeminler/10683.webp.json": {
@@ -1303,6 +1350,9 @@
         "title": "ديك قديم رمادي وخلفه هيكل لعب",
         "alt": "ديك خشبي قديم متأثر بالطقس ورمادي ومتآكل وخلفه هيكل لعب خشبي بدرج",
         "caption": "ألواح الديك رمادية ومتشققة وتبرز رؤوس المسامير في مواضع كثيرة. ديك يُعدّ للتجديد."
+      },
+      "ru": {
+        "caption": "Доски настила серые, потрескавшиеся, во многих местах торчат шляпки гвоздей. Настил, которому предстоит обновление."
       }
     },
     "media-meta-archive/deck-ve-zeminler/11360.webp.json": {
@@ -1341,6 +1391,9 @@
       "de": {
         "title": "Deckdielen in schräger Nahaufnahme",
         "alt": "Schräge Nahaufnahme heller Holzdeckdielen, dahinter Rasen und ein Kasten"
+      },
+      "ru": {
+        "title": "Доски настила под углом, крупный план"
       }
     },
     "media-meta-archive/deck-ve-zeminler/11478.webp.json": {
@@ -1365,6 +1418,9 @@
       },
       "de": {
         "alt": "Deckdielen auf einem langen Balkon, teils dunkel gestrichen, teils nass und grau"
+      },
+      "ru": {
+        "alt": "Доски настила на длинном балконе, часть окрашена в тёмный цвет, часть мокрая и серая"
       }
     },
     "media-meta-archive/deck-ve-zeminler/11526.webp.json": {
@@ -1399,6 +1455,9 @@
       "de": {
         "title": "Alte gestrichene Deckdielen werden geschliffen",
         "alt": "Alte gestrichene Deckdielen werden mit einem Handschleifer geschliffen, auf der Oberfläche sind Farbreste"
+      },
+      "ru": {
+        "alt": "Старые окрашенные доски настила шлифуют ручной шлифовальной машиной, на поверхности остатки краски"
       }
     },
     "media-meta-archive/deck-ve-zeminler/11548.webp.json": {
@@ -1468,17 +1527,27 @@
       },
       "de": {
         "title": "Deck-Balkenrahmen auf Kiesuntergrund"
+      },
+      "ru": {
+        "caption": "Балки образуют прямоугольные ячейки над галькой. Доски дека будут крепиться поверх этого каркаса."
       }
     },
     "media-meta-archive/deck-ve-zeminler/11699.webp.json": {
       "ar": {
         "alt": "ألواح دك بنية داكنة مخددة على تراس بجانب العشب مع تغيّر اتجاه الألواح"
+      },
+      "ru": {
+        "alt": "Тёмно-коричневые рифлёные доски дека на террасе у газона, направление панелей меняется"
       }
     },
     "media-meta-archive/deck-ve-zeminler/11704.webp.json": {
       "ar": {
         "title": "هيكل العوارض مغطى نصفه بألواح الدك",
         "alt": "هيكل عوارض فوق الحصى مغطى جزء منه بألواح الدك وخلفه طقم جلوس"
+      },
+      "ru": {
+        "title": "Каркас из балок, наполовину покрытый досками дека",
+        "alt": "Каркас из балок на гальке, часть которого уже покрыта досками дека, позади зона отдыха"
       }
     },
     "media-meta-archive/deck-ve-zeminler/11709.webp.json": {
@@ -1504,17 +1573,27 @@
       "de": {
         "title": "Leuchtend gelbe Deckdielen auf sonnigem Balkon",
         "alt": "Orangegelbe Deckdielen auf einem sonnigen Balkon, Schatten der Verglasung fallen darüber"
+      },
+      "ru": {
+        "title": "Яркие жёлтые доски дека на солнечном балконе",
+        "alt": "Оранжево-жёлтые доски дека на солнечном балконе, тени от остекления ложатся на доски"
       }
     },
     "media-meta-archive/deck-ve-zeminler/11736.webp.json": {
       "ar": {
         "alt": "ألواح دك خشبية صفراء بنية مفروشة في ركن شرفة مزجّجة"
+      },
+      "ru": {
+        "alt": "Жёлто-коричневые доски дека, уложенные в углу остеклённого балкона"
       }
     },
     "media-meta-archive/deck-ve-zeminler/11737.webp.json": {
       "ar": {
         "title": "فرش دك أصفر فاتح على شرفة طويلة",
         "alt": "فرش دك خشبي أصفر فاتح على شرفة طويلة بجانب إطار الزجاج"
+      },
+      "de": {
+        "title": "Hellgelber Deckbelag auf einem langen Balkon"
       }
     },
     "media-meta-archive/deck-ve-zeminler/11786.webp.json": {
@@ -1594,6 +1673,10 @@
       "ar": {
         "title": "أرضية دك رمادية بنية أمام باب بستارة",
         "alt": "أرضية دك رمادية بنية مفروشة عند حافة العشب أمام باب زجاجي بستارة"
+      },
+      "de": {
+        "title": "Graubrauner Deckbelag vor einer Tür mit Vorhang",
+        "alt": "Graubrauner Deckbelag am Rasenrand vor einer Glastür mit Vorhang"
       }
     },
     "media-meta-archive/deck-ve-zeminler/12108.webp.json": {
@@ -1609,6 +1692,9 @@
       "de": {
         "title": "Geriffelte graubraune Deckdielen",
         "alt": "Nahaufnahme graubrauner geriffelter Deckdielen, oben Glastür und Vorhang"
+      },
+      "ru": {
+        "title": "Рифлёные серо-коричневые доски дека"
       }
     },
     "media-meta-archive/deck-ve-zeminler/12110.webp.json": {
@@ -1630,6 +1716,10 @@
       "de": {
         "title": "Zur Hälfte abgeschliffene Deckdielen",
         "alt": "Deckdielen, links bis aufs helle Holz abgeschliffen, rechts noch dunkelbraun"
+      },
+      "ru": {
+        "title": "Доски дека, отшлифованные наполовину",
+        "alt": "Доски дека: левая часть отшлифована до светлого дерева, правая всё ещё тёмно-коричневая"
       }
     },
     "media-meta-archive/deck-ve-zeminler/12115.webp.json": {
@@ -1644,12 +1734,19 @@
       },
       "de": {
         "title": "Unbehandelte Kiefern-Deckdielen neben einem grünen Strauch"
+      },
+      "ru": {
+        "title": "Необработанные сосновые доски дека рядом с зелёным кустом",
+        "alt": "Светлые необработанные деревянные доски дека перед кирпичной стеной, у края зелёный куст"
       }
     },
     "media-meta-archive/deck-ve-zeminler/12117.webp.json": {
       "ar": {
         "alt": "أرضية دك فاتحة غير معالجة مع مقعد خشبي في الزاوية بمحاذاة الجدار",
         "caption": "المقعد مبني ملاصقاً لزاوية الدك وخلفه نباتات خضراء، والألواح مرصوفة بشكل قطري."
+      },
+      "de": {
+        "alt": "Heller unbehandelter Deckbelag mit einer Holzsitzbank in der Ecke an der Wand"
       }
     },
     "media-meta-archive/deck-ve-zeminler/12118.webp.json": {
@@ -1658,6 +1755,9 @@
       },
       "de": {
         "title": "Blanke Deckdiele, halb braun gestrichen"
+      },
+      "ru": {
+        "title": "Голая доска дека, наполовину окрашенная в коричневый"
       }
     },
     "media-meta-archive/deck-ve-zeminler/12119.webp.json": {
@@ -1668,6 +1768,9 @@
     "media-meta-archive/deck-ve-zeminler/12120.webp.json": {
       "ar": {
         "alt": "أرضية دك مصبوغة بنية رمادية على حافة العشب بجانب زاوية بأحواض زهور"
+      },
+      "de": {
+        "alt": "Graubraun gestrichener Deckbelag am Rasenrand neben einer Ecke mit Blumentöpfen"
       }
     },
     "media-meta-archive/deck-ve-zeminler/12121.webp.json": {
@@ -1726,6 +1829,9 @@
       },
       "de": {
         "alt": "Graubraune Deckdielen in zwei Richtungen verlegt, ähnlich einem Fischgrätmuster"
+      },
+      "ru": {
+        "alt": "Серо-коричневые доски дека, уложенные в двух направлениях в виде узора, похожего на ёлочку"
       }
     },
     "media-meta-archive/deck-ve-zeminler/12147.webp.json": {
@@ -1829,6 +1935,9 @@
         "title": "دك صنوبر ودرابزين شرائحي أمام مشمّع أزرق",
         "alt": "أرضية دك صنوبر فاتحة مع درابزين شرائحي وخلفها مشمّع أزرق وجدار حجري",
         "caption": "يشكّل الدك أرضية واسعة ويغلق الدرابزين الحافة المقابلة، وتظهر العروق والعقد على الألواح."
+      },
+      "de": {
+        "alt": "Heller Kiefern-Deckbelag mit Lattengeländer, dahinter blaue Plane und Steinmauer"
       }
     },
     "media-meta-archive/deck-ve-zeminler/12229.webp.json": {
@@ -1843,12 +1952,18 @@
         "title": "ديك على البحر ودرابزين متقاطع وحوض زهور",
         "alt": "ديك خشبي على شاطئ البحر ودرابزين بعوارض متقاطعة وصندوق زهور خشبي بزهور وردية",
         "caption": "تمتد ألواح الديك نحو البحر والدرابزين بعوارض متقاطعة. ويقف حوض الزهور عند حافة الديك."
+      },
+      "ru": {
+        "caption": "Доски настила тянутся к морю, перила с перекрёстными балками. Ящик-кашпо стоит на краю настила."
       }
     },
     "media-meta-archive/deck-ve-zeminler/12230.webp.json": {
       "ar": {
         "title": "دك واسع بجذع شجرة ودرابزين محيط",
         "alt": "أرضية دك صنوبر واسعة مع جذع شجرة ودرابزين شرائحي على الحافة المقابلة"
+      },
+      "de": {
+        "alt": "Breiter Kiefern-Deckbelag mit Baumstamm und Lattengeländer an der gegenüberliegenden Kante"
       }
     },
     "media-meta-archive/deck-ve-zeminler/12232.webp.json": {
@@ -1862,12 +1977,18 @@
       "ar": {
         "title": "دك صنوبر مصفرّ وخلفه مشمّع أزرق",
         "alt": "أرضية دك صنوبر مصفرّة وخلفها درابزين شرائحي ومشمّع أزرق"
+      },
+      "de": {
+        "alt": "Gelblicher Kiefern-Deckbelag, dahinter ein Lattengeländer und eine blaue Plane"
       }
     },
     "media-meta-archive/deck-ve-zeminler/12234.webp.json": {
       "ar": {
         "title": "دك بدرابزين على اليسار وفتحة للشجرة",
         "alt": "أرضية دك بدرابزين خشبي على حافتها اليسرى وفتحة مُتروكة حول جذع شجرة أبعد"
+      },
+      "de": {
+        "alt": "Deckbelag mit Holzgeländer an der linken Kante und einer Aussparung um einen Baumstamm weiter hinten"
       }
     },
     "media-meta-archive/deck-ve-zeminler/12240.webp.json": {
@@ -1878,6 +1999,9 @@
       },
       "de": {
         "alt": "Helle Deckdielen, mit einem runden Ausschnitt um einen Baumstamm verlegt"
+      },
+      "ru": {
+        "alt": "Светлые доски дека, уложенные с круглым проёмом вокруг ствола дерева"
       }
     },
     "media-meta-archive/deck-ve-zeminler/12245.webp.json": {
@@ -1894,6 +2018,9 @@
       "ar": {
         "title": "دك داكن متقادم مع صندوق أحمر في الزاوية",
         "alt": "أرضية دك بنية داكنة متقادمة وفي الزاوية صندوق وخزانة خشبية حمراء"
+      },
+      "de": {
+        "alt": "Verwitterter dunkelbrauner Deckbelag, in der Ecke ein roter Holzkasten und eine Truhe"
       }
     },
     "media-meta-archive/deck-ve-zeminler/12249.webp.json": {
@@ -1922,6 +2049,9 @@
       },
       "de": {
         "alt": "Helle Deckdielen mit grünlichen Stellen vor einer Steinmauer, darüber ein grüner Spiralschlauch"
+      },
+      "ru": {
+        "alt": "Светлые доски дека с зеленоватыми пятнами перед каменной стеной, поперёк лежит зелёный спиральный шланг"
       }
     },
     "media-meta-archive/deck-ve-zeminler/12284.webp.json": {
@@ -1932,6 +2062,9 @@
       },
       "de": {
         "alt": "Helle grünliche Deckdielen neben Zaun und Säule, darauf Schlauch und kleiner Hocker"
+      },
+      "ru": {
+        "alt": "Светлые зеленоватые доски дека рядом с забором и колонной, сверху шланг и небольшая табуретка"
       }
     },
     "media-meta-archive/deck-ve-zeminler/12285.webp.json": {
@@ -1939,6 +2072,9 @@
         "title": "دك فاتح أمام جدار فيه موقد حجري وباب زجاجي",
         "alt": "أرضية دك فاتحة أمام جدار فيه موقد حجري وباب زجاجي وعليها خرطوم",
         "caption": "الألواح مرصوفة بالطول نحو الموقد، ويشكّل الدك أرضية تصلح لمطبخ خارجي ومنطقة جلوس."
+      },
+      "de": {
+        "alt": "Heller Deckbelag vor einer Wand mit gemauerter Feuerstelle und einer Glastür, darauf ein Schlauch"
       }
     },
     "media-meta-archive/deck-ve-zeminler/12286.webp.json": {
@@ -2015,7 +2151,11 @@
         "alt": "لقطة قريبة لأرضية دك بنية محمرة داكنة يتغيّر لونها من لوح إلى آخر وفي الزاوية جدار حجري"
       },
       "de": {
-        "title": "Dunkel rotbraune Deckdielen in gemischten Tönen"
+        "title": "Dunkel rotbraune Deckdielen in gemischten Tönen",
+        "alt": "Nahaufnahme eines dunkel rotbraunen Deckbelags, dessen Ton von Diele zu Diele wechselt, in der Ecke eine Steinmauer"
+      },
+      "ru": {
+        "title": "Тёмные красно-коричневые доски дека разных тонов"
       }
     },
     "media-meta-archive/deck-ve-zeminler/12442.webp.json": {
@@ -2293,6 +2433,9 @@
       },
       "de": {
         "caption": "Geländer und Deckdielen sind verblasst und die Verbindungen abgenutzt. Seitlich sieht man einen Topf und grüne Pflanzen."
+      },
+      "ru": {
+        "caption": "Ограждение и доски дека выцвели, места соединений изношены. Сбоку видны горшок и зелёные растения."
       }
     },
     "media-meta-archive/deck-ve-zeminler/12783.webp.json": {
@@ -2357,6 +2500,9 @@
       },
       "de": {
         "caption": "Die Latten liegen eng und bilden über dem Rahmen eine ebene Fläche. Darauf werden die Deckdielen verlegt."
+      },
+      "ru": {
+        "caption": "Рейки расположены часто и образуют ровную поверхность над каркасом. Сверху будут уложены доски дека."
       }
     },
     "media-meta-archive/deck-ve-zeminler/12835.webp.json": {
@@ -2518,6 +2664,9 @@
       },
       "de": {
         "caption": "Der Rahmen schließt an den Poolrand an und steht auf erhöhten Stützen. Darauf kommen Deckdielen für die Poolumrandung."
+      },
+      "ru": {
+        "caption": "Каркас примыкает к борту бассейна и стоит на приподнятых опорах. Сверху ляжут доски дека для обрамления бассейна."
       }
     },
     "media-meta-archive/deck-ve-zeminler/13170.webp.json": {
@@ -2534,6 +2683,10 @@
       "de": {
         "title": "Graue Deckdielen neben Blumen, linke Seite bearbeitet",
         "alt": "Alte graue Deckdielen neben Blumen, die linke Seite abgeschliffen und heller"
+      },
+      "ru": {
+        "title": "Серые доски дека рядом с цветами, левая часть обработана",
+        "alt": "Старые серые доски дека рядом с цветами, левая часть отшлифована и светлее"
       }
     },
     "media-meta-archive/deck-ve-zeminler/13172.webp.json": {
@@ -2575,6 +2728,10 @@
       "de": {
         "title": "Deckdielen werden neben einem Baum und Geländer abgenommen",
         "alt": "Alte Deckdielen neben einem Baumstamm und einem Kreuzgeländer abgenommen, die Balken liegen frei"
+      },
+      "ru": {
+        "title": "Снимаемые доски дека рядом с деревом и ограждением",
+        "alt": "Старые доски дека сняты рядом со стволом дерева и ограждением с крестовой решёткой, балки остались открытыми"
       }
     },
     "media-meta-archive/deck-ve-zeminler/13201.webp.json": {
@@ -2583,6 +2740,9 @@
       },
       "de": {
         "alt": "Alte graue Deckdielen am Rasenrand abgenommen, darunter sind die Balken zu sehen"
+      },
+      "ru": {
+        "alt": "Старые серые доски дека сняты у края газона, внизу видны балки"
       }
     },
     "media-meta-archive/deck-ve-zeminler/13202.webp.json": {
@@ -2593,6 +2753,9 @@
       "de": {
         "title": "Deck-Rückbau am Poolrand mit Kappsäge",
         "alt": "Alte Deckdielen werden am Poolrand abgenommen, vorn Kappsäge und Werkzeug"
+      },
+      "ru": {
+        "alt": "Старые доски дека снимают у бассейна, спереди торцовочная пила и инструменты"
       }
     },
     "media-meta-archive/deck-ve-zeminler/13215.webp.json": {
@@ -2622,6 +2785,9 @@
       },
       "de": {
         "caption": "Die Klappe ist bündig in die Deckdielen eingesetzt und die neuen Dielen laufen um sie herum. Das Geländer am Weg ist mit gekreuzten Holzlatten ausgesteift."
+      },
+      "ru": {
+        "caption": "Люк установлен вровень с досками дека, новые доски уложены вокруг него. Ограждение у дорожки скреплено крест-накрест деревянными планками."
       }
     },
     "media-meta-archive/deck-ve-zeminler/13219.webp.json": {
@@ -2638,6 +2804,10 @@
       "de": {
         "title": "Neue Deckdielen zwischen alten am Poolrand",
         "alt": "Neue helle Deckdielen zwischen alten grauen am Poolrand, daneben das blaue Becken"
+      },
+      "ru": {
+        "title": "Новые доски дека вперемешку со старыми у края бассейна",
+        "alt": "Новые светлые доски дека вперемешку со старыми серыми вдоль бассейна, рядом голубая вода"
       }
     },
     "media-meta-archive/deck-ve-zeminler/13221.webp.json": {
@@ -2651,6 +2821,10 @@
       "ar": {
         "title": "أرضية دك مخددة بجانب عمود أمام جدار مزروع",
         "alt": "أرضية دك بنية مخددة بجانب عمود أمام جدار مزروع"
+      },
+      "de": {
+        "title": "Geriffelter Deckbelag neben einem Pfosten vor einer begrünten Wand",
+        "alt": "Brauner geriffelter Deckbelag neben einem Pfosten vor einer begrünten Wand"
       }
     },
     "media-meta-archive/deck-ve-zeminler/13259.webp.json": {
@@ -2702,6 +2876,10 @@
       "ar": {
         "title": "فرش دك متدرّج بعوارض حافة على امتداد منحنى",
         "alt": "فرش دك بألواح متدرّجة على امتداد خط منحنٍ مع عوارض حافة خشبية وحافة حصى وأصيص زهور"
+      },
+      "de": {
+        "title": "Gestufter Deckbelag mit Randbalken entlang einer Kurve",
+        "alt": "Gestufter Paneel-Deckbelag entlang einer Kurve mit hölzernen Randbalken, Kiesrand und Blumentopf"
       }
     },
     "media-meta-archive/deck-ve-zeminler/13282.webp.json": {
@@ -2733,6 +2911,10 @@
       "de": {
         "title": "Abgebaute alte Deckdielen mit Kappsäge zwischen den Balken",
         "alt": "Alte graue Deckdielen abgenommen, zwischen den Balken sieht man Erde, eine Kappsäge und ein Kabel"
+      },
+      "ru": {
+        "title": "Снятые старые доски дека и торцовочная пила между балками",
+        "alt": "Старые серые доски дека сняты, между балками виден грунт, а также торцовочная пила и кабель"
       }
     },
     "media-meta-archive/deck-ve-zeminler/13404.webp.json": {
@@ -2794,6 +2976,10 @@
       "ar": {
         "title": "أرضية دك واسعة بجانب جذع شجرة وأبواب زجاجية",
         "alt": "أرضية دك واسعة فاتحة بجانب جذع شجرة وأبواب زجاجية تمتد من طرف إلى آخر"
+      },
+      "de": {
+        "title": "Breiter Deckbelag neben Baumstamm und Glastüren",
+        "alt": "Breiter heller Deckbelag neben einem Baumstamm und Glastüren, von einem Ende zum anderen"
       }
     },
     "media-meta-archive/deck-ve-zeminler/13495.webp.json": {
@@ -2818,6 +3004,10 @@
       "de": {
         "title": "Lackierte Deckdielen mit hellen Reflexen",
         "alt": "Lackierte Deckdielen mit hellen Reflexen, dahinter Sträucher und eine Hecke"
+      },
+      "ru": {
+        "title": "Лакированные доски дека с яркими бликами",
+        "alt": "Лакированные доски дека с яркими бликами, позади кусты и изгородь"
       }
     },
     "media-meta-archive/deck-ve-zeminler/13519.webp.json": {
@@ -2866,6 +3056,10 @@
       "de": {
         "title": "Glänzend lackierte Deckdielen in Orange- und Brauntönen",
         "alt": "Glänzend lackierte Deckdielen in Orange- und Brauntönen, am Rand Wand und Sträucher"
+      },
+      "ru": {
+        "title": "Блестящие лакированные доски дека оранжевых и коричневых тонов",
+        "alt": "Блестящие лакированные доски дека оранжевых и коричневых тонов, у края стена и кусты"
       }
     },
     "media-meta-archive/deck-ve-zeminler/13540.webp.json": {
@@ -2879,6 +3073,10 @@
       "ar": {
         "title": "أرضية دك لامعة مطلية بالورنيش أمام جدار مغطى باللبلاب",
         "alt": "أرضية دك بنية برتقالية لامعة مطلية بالورنيش أمام جدار مغطى باللبلاب وعلى الجدار أصص زينة"
+      },
+      "de": {
+        "title": "Glänzend lackierter Deckbelag vor einer efeubewachsenen Wand",
+        "alt": "Glänzend lackierter orangebrauner Deckbelag vor einer efeubewachsenen Wand, an der Wand Zierkübel"
       }
     },
     "media-meta-archive/deck-ve-zeminler/13542.webp.json": {
@@ -2890,6 +3088,10 @@
       "de": {
         "title": "Glänzend lackierte Deckdielen neben Wand und Buschwerk",
         "alt": "Glänzend lackierte orangebraune Deckdielen entlang einer Wand und eines Buschwerks"
+      },
+      "ru": {
+        "title": "Блестящие лакированные доски дека у стены и кустарника",
+        "alt": "Блестящие лакированные оранжево-коричневые доски дека вдоль стены и кустарника"
       }
     },
     "media-meta-archive/deck-ve-zeminler/13667.webp.json": {
@@ -5745,6 +5947,12 @@
         "title": "منظر جانبي للجسر بسيقان مائلة ودرجة الديك",
         "alt": "منظر جانبي لجسر خشبي فوق المسبح بأعمدة سميكة وسيقان مائلة ودرجة تنزل إلى الديك، وخلفه واجهة مبنى",
         "caption": "درابزين الجسر له مسند في الأعلى وشرائح رأسية في الأسفل، وألواح الديك مفروشة بعكس اتجاه الجسر."
+      },
+      "de": {
+        "caption": "Das Brückengeländer hat oben einen Handlauf und unten senkrechte Latten. Die Deckbretter liegen quer zur Brückenrichtung."
+      },
+      "ru": {
+        "caption": "Ограждение моста: сверху поручень, ниже вертикальные рейки. Доски дека уложены поперёк направления моста."
       }
     },
     "media-meta-archive/kopru-ve-iskele/8080.webp.json": {
@@ -5768,6 +5976,12 @@
     "media-meta-archive/kopru-ve-iskele/8378.webp.json": {
       "ar": {
         "caption": "عمود الدرابزين مثبت بألواح الديك وساق الدعم تنزل إلى المسبح، وأصص النخيل الدائرية مصطفة في المسبح."
+      },
+      "de": {
+        "caption": "Der Geländerpfosten ist an den Deckbrettern befestigt, das Stützbein reicht in den Pool. Runde Palmenkübel reihen sich im Pool."
+      },
+      "ru": {
+        "caption": "Стойка ограждения закреплена на досках дека, опора уходит в бассейн. В бассейне выстроены круглые кадки с пальмами."
       }
     },
     "media-meta-archive/korkuluk-ve-cit/12074.webp.json": {
@@ -5782,6 +5996,9 @@
         "title": "إطار خشبي بشبك سلكي يسدّ الزاوية بين أرضية الديك والشجيرات",
         "alt": "إطار خشبي بشبك سلكي يسدّ الزاوية عند حافة ديك بني محمرّ بين الشجيرات وسياج الشرائح، وعلى الأرض قصاصات ورق",
         "caption": "الإطار قائم عند حافة الديك وشبكه أمام جذع الشجرة، وسطح ألواح الديك يلمع من الرطوبة."
+      },
+      "de": {
+        "caption": "Der Rahmen steht aufrecht am Deckrand, das Geflecht vor dem Baumstamm. Die Oberfläche der Deckbretter glänzt feucht."
       },
       "ru": {
         "title": "Деревянная рама с сеткой, закрывающая угол между декингом и кустами"
@@ -5806,6 +6023,14 @@
         "title": "درابزين خشبي من ألواح أفقية على ديك وخلفه موقع بناء",
         "alt": "درابزين خشبي من ثلاثة ألواح أفقية على أعمدة مزدوجة سميكة، وأمامه ألواح ديك متآكلة وخلفه موقع بناء بتراب وأكياس بيضاء",
         "caption": "ألواح الدرابزين مثبتة بمسامير أمام الأعمدة وألواح الديك تحتها رمادية بنية، ويظهر خلفها موقع بناء."
+      },
+      "de": {
+        "alt": "Holzgeländer aus drei waagerechten Brettern an dicken Doppelpfosten, davor verwitterte Deckbretter",
+        "caption": "Die Geländerbretter sind vor den Pfosten verschraubt, die Deckbretter darunter sind graubraun. Dahinter ist ein Baubereich zu sehen."
+      },
+      "ru": {
+        "alt": "Деревянное ограждение из трёх горизонтальных досок на толстых парных стойках, впереди выветренные доски дека",
+        "caption": "Доски ограждения прикреплены болтами перед стойками, доски дека внизу серо-коричневые. Позади виден участок стройки."
       }
     },
     "media-meta-archive/korkuluk-ve-cit/12769.webp.json": {
@@ -5813,6 +6038,12 @@
         "title": "درابزين خشبي عند زاوية الديك وأصيص وحافة حجرية",
         "alt": "درابزين خشبي بقطع مائلة عند زاوية ديك، وعلى اليسار أصيص فخاري وفي الأسفل حافة حجرية فاتحة وزاوية حافة مسبح في العشب",
         "caption": "تدور أعمدة الدرابزين حول الزاوية بزاوية قائمة وألواح الديك متآكلة، ويظهر خلفها مسبح وشجيرات."
+      },
+      "de": {
+        "caption": "Die Geländerpfosten führen im rechten Winkel um die Ecke, die Deckbretter sind verwittert. Dahinter sind ein Pool und Sträucher zu sehen."
+      },
+      "ru": {
+        "caption": "Стойки ограждения поворачивают угол под прямым углом, доски дека выветрены. Позади видны бассейн и кусты."
       }
     },
     "media-meta-archive/korkuluk-ve-cit/13330.webp.json": {
@@ -5832,6 +6063,7 @@
         "caption": "أطراف الشرائح العليا مقصوصة بشكل مدبب وثُبّتت على عارضتين أفقيتين، والبوابة قائمة على أرضية الديك."
       },
       "de": {
+        "alt": "Rotbraun lackierte Gartentür aus senkrechten spitzen Latten auf dem Rasen neben einem Steinweg, unten Deckbretter",
         "caption": "Die Oberkanten der Latten sind spitz zugeschnitten und an zwei waagerechten Riegeln befestigt. Die Tür steht auf dem Deckboden."
       }
     },
@@ -5853,6 +6085,12 @@
         "title": "زاوية درابزين منصة ديك بجانب المسبح، منظر قريب",
         "alt": "درابزين من شرائح رأسية وعمود زاوية لمنصة ديك جديدة فاتحة مخضرّة، وخلفها المسبح وشخص يعمل وجدار الحديقة",
         "caption": "أعمدة الدرابزين سميكة وبينها شرائح رأسية رفيعة، وألواح الديك مفروشة عند الزاوية بزاوية قائمة."
+      },
+      "de": {
+        "caption": "Die Geländerpfosten sind dick, dazwischen sitzen dünne senkrechte Latten. Die Deckbretter sind an der Ecke im rechten Winkel verlegt."
+      },
+      "ru": {
+        "caption": "Стойки ограждения толстые, между ними частые тонкие вертикальные рейки. Доски дека в углу уложены под прямым углом."
       }
     },
     "media-meta-archive/korkuluk-ve-cit/3720.webp.json": {
@@ -5888,6 +6126,9 @@
       "de": {
         "alt": "Nahaufnahme einer Bartheke mit Front aus Holzleisten, zwei hohen Hockern und der Stelle",
         "caption": "Die Front der Theke ist mit senkrechten Holzleisten verkleidet. Am Boden treffen die Deckdielen auf das Steinpflaster."
+      },
+      "ru": {
+        "caption": "Лицевая часть стойки обшита вертикальными деревянными рейками. На полу доски настила смыкаются с каменным покрытием."
       }
     },
     "media-meta-archive/mobilya-ve-cila/172.webp.json": {
@@ -5896,6 +6137,9 @@
       },
       "de": {
         "caption": "Die Pergola ruht auf kräftigen Pfosten, darunter steht eine dunkel polierte Theke. Der Boden ist mit Deckdielen belegt."
+      },
+      "ru": {
+        "caption": "Пергола опирается на толстые стойки, под ней стоит тёмная полированная стойка. Пол выложен досками настила."
       }
     },
     "media-meta-archive/pergola-ve-kamelyalar/10622.webp.json": {
@@ -6039,7 +6283,11 @@
         "alt": "لقطة قريبة لكاميليا سداسية بسقف أخضر وسطح خشبي سداسي داكن ومرج حولها"
       },
       "de": {
-        "alt": "Nahaufnahme eines sechseckigen Pavillons mit grünem Dach, dunklem sechseckigem Deckboden und Rasen ringsum"
+        "alt": "Nahaufnahme eines sechseckigen Pavillons mit grünem Dach, dunklem sechseckigem Deckboden und Rasen ringsum",
+        "caption": "Die Pfosten tragen das Dach mit Kopfbändern. Die Deckbretter sind passend zu den Sechseckkanten zugeschnitten."
+      },
+      "ru": {
+        "caption": "Столбы несут крышу с диагональными подкосами. Доски дека подрезаны по сторонам шестиугольника."
       }
     },
     "media-meta-archive/pergola-ve-kamelyalar/15167.webp.json": {
@@ -6599,9 +6847,33 @@
         "alt": "Kleiner Holzschrank mit Lamellentüren auf einem Deckboden vor einer blau gestrichenen Wand, daneben lehnt eine Lattenplatte"
       }
     },
+    "media-meta-archive/korkuluk-ve-cit/2233.webp.json": {
+      "de": {
+        "caption": "Die Deckbretter sind verlegt, die Arbeiter sind an einer Werkbank beschäftigt. Dahinter liegen Steg und Meer."
+      },
+      "ru": {
+        "caption": "Доски дека уложены, рабочие трудятся у стола. Дальше виднеются пирс и море."
+      }
+    },
     "media-meta-archive/korkuluk-ve-cit/7783.webp.json": {
       "de": {
         "caption": "Die Latten des Schirms sind mit Abstand gesetzt und verdecken den Bereich dahinter. An der Ecke sind die Latten an einem Pfosten befestigt."
+      }
+    },
+    "media-meta-archive/korkuluk-ve-cit/980.webp.json": {
+      "de": {
+        "alt": "Frisch verlegte helle Deckbretter und ein kräftiges Geländer aus waagerechten Brettern, das um die Ecke biegt"
+      },
+      "ru": {
+        "alt": "Свежеуложенные светлые доски дека и толстые перила из горизонтальных досок, поворачивающие на углу, позади голые деревья"
+      }
+    },
+    "media-meta-archive/korkuluk-ve-cit/981.webp.json": {
+      "de": {
+        "caption": "Die Deckbretter sind lang und sauber verlegt, das Geländer zeichnet die Deckkante auf ganzer Länge nach."
+      },
+      "ru": {
+        "caption": "Доски дека длинные и аккуратно уложены, перила обозначают край дека по всей длине."
       }
     },
     "media-meta-archive/pergola-ve-kamelyalar/1028.webp.json": {
@@ -6610,6 +6882,14 @@
       },
       "ru": {
         "alt": "Каркас перголы над декингом на берегу моря, монтаж балок крыши, на площадке рабочие"
+      }
+    },
+    "media-meta-archive/pergola-ve-kamelyalar/1030.webp.json": {
+      "de": {
+        "caption": "Die Dachsparren stehen in Reihen, darunter sind Deckbretter verlegt. Dahinter liegen ein Hügel und das Meer."
+      },
+      "ru": {
+        "caption": "Стропила крыши уложены рядами, ниже настелены доски дека. Позади холм и море."
       }
     },
     "media-meta-archive/pergola-ve-kamelyalar/1039.webp.json": {
@@ -6626,12 +6906,40 @@
     "media-meta-archive/pergola-ve-kamelyalar/1052.webp.json": {
       "de": {
         "title": "Deckboden und Pergolapfosten am Hang mit Steinmauer",
-        "alt": "Breiter Deckboden an einem Hang mit Steinmauer, in der Mitte Pfosten mit Balkendach, dahinter blühende Pflanzen"
+        "alt": "Breiter Deckboden an einem Hang mit Steinmauer, in der Mitte Pfosten mit Balkendach, dahinter blühende Pflanzen",
+        "caption": "Das Sonnenlicht wirft die Schatten der Pfosten auf die Deckbretter. Der Boden ist noch ganz leer."
+      },
+      "ru": {
+        "caption": "Солнце отбрасывает тени стоек на доски дека. Пол пока совершенно пуст."
+      }
+    },
+    "media-meta-archive/pergola-ve-kamelyalar/1054.webp.json": {
+      "de": {
+        "caption": "Die Geländerlatten sind über Kreuz gesetzt, die Deckbretter laufen in langen Bahnen. Die Balken darüber sind noch nicht fertig."
+      },
+      "ru": {
+        "caption": "Планки перил поставлены крест-накрест, доски дека идут длинными линиями. Балки сверху ещё не закончены."
       }
     },
     "media-meta-archive/pergola-ve-kamelyalar/1056.webp.json": {
       "de": {
         "alt": "Breiter Deckboden am Ufer im Bau, senkrechte Pfosten und Balken, ein Handwerker bei der Arbeit an den Brettern"
+      }
+    },
+    "media-meta-archive/pergola-ve-kamelyalar/1146.webp.json": {
+      "de": {
+        "caption": "Die Plattform steht über dem Meeresspiegel, die Deckbretter liegen mit Fugen. Seitlich sieht man eine Geländerecke."
+      },
+      "ru": {
+        "caption": "Платформа построена над уровнем моря, доски дека уложены с зазорами. Сбоку виден угол ограждения."
+      }
+    },
+    "media-meta-archive/pergola-ve-kamelyalar/13153.webp.json": {
+      "de": {
+        "caption": "Die Latten liegen eng und quer zum Rahmen. Die Deckbretter darunter laufen in dieselbe Richtung."
+      },
+      "ru": {
+        "caption": "Рейки уложены часто и поперёк каркаса. Доски дека внизу идут в том же направлении."
       }
     },
     "media-meta-archive/pergola-ve-kamelyalar/13159.webp.json": {
@@ -6640,6 +6948,14 @@
       },
       "ru": {
         "alt": "Широкая терраса со стеклянными перилами, металлическим каркасом, реечным деревянным потолком, тёплым декингом и газоном"
+      }
+    },
+    "media-meta-archive/pergola-ve-kamelyalar/2236.webp.json": {
+      "de": {
+        "caption": "Die Dachbalken bleiben sichtbar, die Deckbretter sind noch sauber. Die Lattenwand teilt den Raum."
+      },
+      "ru": {
+        "caption": "Балки крыши остаются открытыми, доски дека ещё чистые. Реечная стена делит пространство."
       }
     },
     "media-meta-archive/pergola-ve-kamelyalar/2765.webp.json": {
@@ -6754,6 +7070,11 @@
         "alt": "В комнате с паркетом и камином видны тонкая деревянная окантовка и ножки сидячего модуля с белым матрасом и подушками"
       }
     },
+    "media-meta-archive/deck-ve-zeminler/1024.webp.json": {
+      "ru": {
+        "caption": "Стойки установлены, доски настила укладывают. Строится широкая платформа, учитывающая уклон склона."
+      }
+    },
     "media-meta-archive/kapi-dolap-ve-seperator/14325.webp.json": {
       "ru": {
         "title": "Высокий садовый шкаф с кровлей из шингла и жалюзийным нижним отсеком",
@@ -6769,6 +7090,26 @@
     "media-meta-archive/kapi-dolap-ve-seperator/14333.webp.json": {
       "ru": {
         "title": "Внутреннее пространство шкафа с крышей из шингла при открытой дверце"
+      }
+    },
+    "media-meta-archive/kopru-ve-iskele/4903.webp.json": {
+      "ru": {
+        "caption": "Доски настила уложены вдоль пирса, слева продолжаются перила. Справа камыш и лодка."
+      }
+    },
+    "media-meta-archive/kopru-ve-iskele/756.webp.json": {
+      "ru": {
+        "caption": "Ограждение собрано из двух горизонтальных досок. Доски настила посередине уложены вдоль."
+      }
+    },
+    "media-meta-archive/kopru-ve-iskele/95.webp.json": {
+      "ru": {
+        "caption": "Доски настила уложены рядом по всей длине. Столбы по краю соединены канатом."
+      }
+    },
+    "media-meta-archive/korkuluk-ve-cit/8780.webp.json": {
+      "ru": {
+        "alt": "Толстая тёмная деревянная балка перил перед окном с коричневыми ставнями, справа доски настила и крыша"
       }
     }
   }

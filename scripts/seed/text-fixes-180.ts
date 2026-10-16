@@ -62,6 +62,9 @@ for (const [slug, byLocale] of Object.entries(replaced.categories)) {
       const current = await payload.findByID({ collection: 'categories', id: found.id, locale, fallbackLocale: false, draft: true, depth: 0 })
       const patch = replacedFieldsPatch(current as never, old, texts[locale])
       tally(old, patch)
+      // Named, so a field that keeps a text other than the replaced one can be checked by hand.
+      const kept = Object.keys(old).filter((k) => !(k in patch))
+      if (kept.length) console.log(`${label} [${locale}]: kept ${kept.join(', ')} (edited or already fixed)`)
       if (!Object.keys(patch).length) continue
       console.log(`${tag}${label} [${locale}]: ${Object.keys(patch).join(', ')}`)
       if (!dryRun) await payload.update({ collection: 'categories', id: found.id, locale, data: { ...patch, _status: 'published' } as never, context: { skipAi: true } })
