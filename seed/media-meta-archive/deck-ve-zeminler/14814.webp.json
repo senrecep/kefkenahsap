@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14814.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bina girişine uzanan deck, zeytin ağacı yanında",
+    "en": "Deck reaching the building entrance, beside an olive tree"
+  },
+  "alt": {
+    "tr": "Çimenin kenarında, bir zeytin ağacının altından beton yürüyüş yoluna ve bina girişine uzanan turuncu kahverengi deck",
+    "en": "Orange-brown deck at the edge of a lawn, running from under an olive tree to a concrete path and the entrance of a building"
+  },
+  "caption": {
+    "tr": "Deck köşeli bir hatla çimene doğru açılıyor. Arkada çalı çit ve bir bahçe aydınlatması görünüyor.",
+    "en": "The deck opens towards the lawn along an angular edge. A hedge and a garden light show behind."
+  },
+  "seoFilename": "bina-girisine-uzanan-deck-zeytin-agaci-yaninda",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

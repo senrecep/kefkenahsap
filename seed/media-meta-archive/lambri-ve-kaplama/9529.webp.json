@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/9529.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Şerit pencereli iki katlı yatay ahşap cephe",
+    "en": "Two-storey horizontal timber facade with ribbon windows"
+  },
+  "alt": {
+    "tr": "İki katlı binada yatay ahşap cephe kaplaması; alt katta şerit pencereler, ortada koyu bant",
+    "en": "Horizontal timber facade cladding on a two-storey building with ribbon windows on the ground floor and a dark band in the"
+  },
+  "caption": {
+    "tr": "Cephe yatay tahtalarla kaplı. Alt katta üst üste üç yatay pencere, ortada koyu bir bant var; önünde zemin henüz düzenlenmemiş.",
+    "en": "The facade is clad in horizontal boards. Three horizontal windows are stacked on the lower floor with a dark band above, and the ground in front is not yet landscaped."
+  },
+  "seoFilename": "iki-katli-yatay-cephe-seritpencere-koyu-bant",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

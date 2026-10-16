@@ -1,0 +1,38 @@
+{
+  "source": "Kapi Dolap ve Seperator/14723.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çit önündeki çok bölmeli dolap hattının cephe görünümü",
+    "en": "Front view of the multi-bay cabinet run in front of a fence"
+  },
+  "alt": {
+    "tr": "Teller çit ve evin önünde, parke taşlı zeminde sıralanmış siyah menteşeli, yatay tahtalı koyu bal rengi çok sayıda kapak",
+    "en": "Many dark honey horizontally boarded doors on black hinges lined up on cobbled paving in front of a wire fence and a house"
+  },
+  "caption": {
+    "tr": "Kapaklar eşit genişlikte, sürgü ve menteşeler aynı hatta. Dolap boyunca tek bir yüzey gibi okunuyor.",
+    "en": "The doors are of equal width with bolts and hinges on one line. The run reads as a single surface."
+  },
+  "seoFilename": "cit-onundeki-cok-bolmeli-dolap-hattinin-cephe-gorunumu",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

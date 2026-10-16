@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/10395.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bahçede deck altyapısı ve kiriş bağlantıları",
+    "en": "Deck substructure and joist connections in a garden"
+  },
+  "alt": {
+    "tr": "Bahçede toprak zemin üzerine kurulu ahşap deck altyapısı ve kirişlerin birbirine bağlandığı noktalar",
+    "en": "Timber deck substructure on soil in a garden, showing the points where the joists connect"
+  },
+  "caption": {
+    "tr": "Kirişler iki yönde birbirine geçmiş, çerçevenin köşesi bir çalıya yakın. Çerçeve duvar tarafına dayanıyor.",
+    "en": "The joists meet in two directions and a corner of the frame is close to a shrub. The frame rests against the wall side."
+  },
+  "seoFilename": "bahcede-toprak-zemin-uzerine-kurulu-ahsap-deck-altyapisi-ve",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

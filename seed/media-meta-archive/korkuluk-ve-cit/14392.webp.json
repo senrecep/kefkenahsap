@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/14392.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölyede çıtalı kafes paneller ve bahçe kemeri",
+    "en": "Slatted lattice panels and a garden arch in the workshop"
+  },
+  "alt": {
+    "tr": "Atölye içinde kare gözlü kafes yanları olan koyu cilalı ahşap bahçe kemeri, üstünde kirişler, yanda yığılmış tahtalar",
+    "en": "Dark varnished timber garden arch with square lattice sides inside a workshop, with beams on top and boards stacked beside it"
+  },
+  "caption": {
+    "tr": "Kemerin iki yanı kafes kaplı, üst kirişleri öne çıkıyor.",
+    "en": "Both sides of the arch are latticed, and the cross beams stand out on top."
+  },
+  "seoFilename": "atolyede-citali-kafes-paneller-ve-bahce-kemeri",
+  "tags": {
+    "type": [
+      "kafes / paravan",
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

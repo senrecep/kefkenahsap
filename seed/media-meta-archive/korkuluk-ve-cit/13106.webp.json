@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/13106.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Duvardaki ahşap kafese tırmanan sarmaşık ve altta mor çiçekler",
+    "en": "Climber on the wall trellis with purple flowers below"
+  },
+  "alt": {
+    "tr": "Duvara monte edilmiş geniş aralıklı ahşap kafesin ortasına kadar tırmanmış sarmaşık; altta mor yapraklı ve çiçekli bitkiler",
+    "en": "A climber that has reached the middle of a widely spaced timber trellis fixed to the wall"
+  },
+  "caption": {
+    "tr": "Kafes duvarın üst bölümünü kaplıyor, sarmaşık ortadan yukarı yönlendirilmiş. Altta çalılar yoğun.",
+    "en": "The trellis covers the upper part of the wall and the climber is trained upward from the middle. The shrubs below are dense."
+  },
+  "seoFilename": "duvardaki-ahsap-kafese-tirmanan-sarmasik-mor-cicekler",
+  "tags": {
+    "type": [
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/14116.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Siyah çıtalı korkuluk üstünde turuncu küpeşte",
+    "en": "Orange handrail on a black slatted railing"
+  },
+  "alt": {
+    "tr": "Çimlik kenarında siyah çıtalı korkuluğun üstünde geniş, turuncu tonlu ahşap küpeşte, çıtalara bant şeridi bağlı",
+    "en": "Wide orange-toned timber handrail on a black slatted railing beside a lawn, with warning tape tied to the slats"
+  },
+  "caption": {
+    "tr": "Küpeşte köşede dönerek korkuluğun üstünü baştan sona kaplıyor.",
+    "en": "The handrail turns at the corner and caps the whole top of the railing."
+  },
+  "seoFilename": "siyah-citali-korkuluk-uzerinde-turuncu-kupeste",
+  "tags": {
+    "type": [
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

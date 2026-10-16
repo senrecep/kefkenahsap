@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/12524.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dar ve uzun yükseltilmiş deck platformu",
+    "en": "Narrow, long raised deck platform"
+  },
+  "alt": {
+    "tr": "Bahçede dar ve uzun yükseltilmiş deck platformu; yan yüzeyi yatay tahtalarla kaplanmış",
+    "en": "Narrow, long raised deck platform in a garden with its side face clad in horizontal boards"
+  },
+  "caption": {
+    "tr": "Platform bina önünden bahçeye doğru uzanıyor. Üst tahtalarda emprenyenin yeşilimsi tonu hâlâ seçiliyor.",
+    "en": "The platform runs out from in front of the building into the garden. The greenish tint of the pressure treatment still shows on the top boards."
+  },
+  "seoFilename": "dar-ve-uzun-yukseltilmis-deck-platformu",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/9871.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimde gri eskimiş deck üzerinde ahşap masa, sandalyeler, bank ve salıncak",
+    "en": "Timber table, chairs, bench and swing on weathered grey decking in the lawn"
+  },
+  "alt": {
+    "tr": "Çimlik bahçede, güneşten grileşmiş bir deck platformunun üzerinde, ahşap masa, kolçaklı sandalyeler",
+    "en": "On a sun-greyed deck platform in a lawn garden, a timber table, armchairs, a bench and, behind them, a timber-framed swing"
+  },
+  "caption": {
+    "tr": "Deck platformu çimin üzerinde bir oturma alanı oluşturuyor. Güneşten grileşen ahşap yenilenmeye hazır.",
+    "en": "The deck platform makes a seating area on the lawn. The sun-greyed timber is ready to be renewed."
+  },
+  "seoFilename": "cimde-gri-eskimis-deck-uzerinde-ahsap-masa-sandalyeler-bank",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı",
+      "bank",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

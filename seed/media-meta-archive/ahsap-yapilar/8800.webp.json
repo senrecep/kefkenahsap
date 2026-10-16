@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/8800.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Üst kat terasında ahşap korkuluk ve çatı",
+    "en": "Timber railing and roof on an upper-floor terrace"
+  },
+  "alt": {
+    "tr": "Üst kat terasında koyu ahşap korkuluk ve çatı; arkada çalışan işçiler ve koy görünüyor",
+    "en": "Dark timber railing and roof on an upper-floor terrace, with workers and a bay visible behind"
+  },
+  "caption": {
+    "tr": "Korkuluk yatay üç çıtadan oluşuyor, direkler çatıya kadar uzanıyor. Teras zemininde ahşap tahtalar ve işçiler seçiliyor.",
+    "en": "The railing is made of three horizontal rails and the posts rise up to the roof. Timber boards and workers can be made out on the terrace floor."
+  },
+  "seoFilename": "ust-kat-terasinda-ahsap-korkuluk-ve-cati-arkada-isciler-ve",
+  "tags": {
+    "type": [
+      "sundurma / saçak / carport",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

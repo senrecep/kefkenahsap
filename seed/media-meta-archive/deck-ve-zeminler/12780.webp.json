@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/12780.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çakıl üzerine kurulan emprenyeli kiriş çerçevesi",
+    "en": "Pressure-treated joist frame laid on gravel"
+  },
+  "alt": {
+    "tr": "Çakıl serili zeminde yan yana duran iki uzun kiriş ve araya çakılmış kısa çaprazlar, ucunda başlamış deck tahtaları",
+    "en": "Two long joists side by side on gravel with short cross pieces between them, and deck boards started at the far end"
+  },
+  "caption": {
+    "tr": "Çerçeve çakılın üzerinde düz bir hatta kurulmuş. Tahtalar uçtan itibaren döşenmeye başlamış.",
+    "en": "The frame is set in a straight line on the gravel. Boards have begun at the far end."
+  },
+  "seoFilename": "cakil-uzerine-kurulan-emprenyeli-kiris-cercevesi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

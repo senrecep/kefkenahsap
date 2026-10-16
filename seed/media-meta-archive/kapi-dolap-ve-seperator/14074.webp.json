@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/14074.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çit önünde duran uzun ve alçak koyu ahşap dolap",
+    "en": "Long low dark timber cabinet in front of a hedge"
+  },
+  "alt": {
+    "tr": "Taş zemin ve kısa duvar önünde, çalı çitinin altında uzanan, dikey tahtalı ve düz kapaklı uzun koyu ahşap dolap",
+    "en": "Long dark timber cabinet with vertical boards and a flat lid along a stone base below a hedge"
+  },
+  "caption": {
+    "tr": "Dolap çitin boyunu izleyerek tek hat uzuyor. Üstü düz, kapakları dikey tahtalı.",
+    "en": "The cabinet follows the length of the hedge in a single line. The top is flat and the doors are vertically boarded."
+  },
+  "seoFilename": "cit-onunde-duran-uzun-ve-alcak-koyu-ahsap-dolap",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

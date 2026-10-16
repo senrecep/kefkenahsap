@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/12885.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deck kenarında yerleşik bank ve saksılar",
+    "en": "Built-in bench with pots at the deck edge"
+  },
+  "alt": {
+    "tr": "Deck kenarında yerleşik ahşap bank ve üstünde saksılar; zeminde ıslak ahşap, arkada kırmızı meyveli bitkiler",
+    "en": "Built-in timber bench along the deck edge with pots on it, wet wood underfoot and red-berried plants behind"
+  },
+  "caption": {
+    "tr": "Bank deck'in kenarını çevreleyerek hem oturma yeri hem de saksı rafı oluyor. Altından bir kablo ucu çıkıyor.",
+    "en": "The bench follows the deck edge and serves as both seating and a shelf for pots. A cable end comes out from underneath."
+  },
+  "seoFilename": "deck-kenarinda-yerlesik-bank-ve-saksilar",
+  "tags": {
+    "type": [
+      "deck",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,39 @@
+{
+  "source": "Ahsap Yapilar/6511.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yeşil çatılı, kemerli kapılı köpek kulübesi",
+    "en": "Dog house with a green roof and an arched door"
+  },
+  "alt": {
+    "tr": "Yeşil shingle çatılı, kemerli kapısı kapalı açık renk ahşap köpek kulübesi; seramik zeminde",
+    "en": "Pale timber dog house with a green shingle roof and a closed arched door, standing on a tiled floor"
+  },
+  "caption": {
+    "tr": "Kapı kanadı kemerli ve iki demir kancayla kapanıyor. Arkada kereste istifi duruyor.",
+    "en": "The door leaf is arched and closed with two iron catches. A stack of timber stands behind."
+  },
+  "seoFilename": "yesil-shingle-catili-kemerli-kapili-acik-renk-ahsap-kopek",
+  "tags": {
+    "type": [
+      "köpek kulübesi"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

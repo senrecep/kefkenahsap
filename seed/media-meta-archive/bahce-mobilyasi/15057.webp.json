@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/15057.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Koyu ahşap L oturma platformu, beton zeminli atölyede",
+    "en": "Dark timber L seating platform in a workshop with a concrete floor"
+  },
+  "alt": {
+    "tr": "Beton zeminli atölyede kurulu, koyu vernikli L biçimli ahşap oturma platformu, dar yan yüzü ve sırtlığıyla görünüyor",
+    "en": "A dark-varnished L-shaped timber seating platform set up in a workshop with a concrete floor"
+  },
+  "caption": {
+    "tr": "Platformun yan yüzü düzgün kesilmiş, sırtlık yan kenardan kesintisiz devam ediyor. Atölye zemini beton.",
+    "en": "The side of the platform is cut cleanly and the back continues from the edge without a break. The workshop floor is concrete."
+  },
+  "seoFilename": "koyu-ahsap-l-oturma-platformu-atolye-ici-beton-zemin",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

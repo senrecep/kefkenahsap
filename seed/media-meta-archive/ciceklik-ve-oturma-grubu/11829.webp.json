@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/11829.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yeşil halı üzerinde çiçekli el arabası",
+    "en": "Flowered wheelbarrow on green matting"
+  },
+  "alt": {
+    "tr": "Yeşil halı üzerinde duran, pembe ve beyaz çiçekli küçük ahşap el arabası; arkada renkli afiş",
+    "en": "Small timber wheelbarrow with pink and white flowers on green matting, with a colourful poster behind"
+  },
+  "caption": {
+    "tr": "El arabası küçük ve alçak, yanında ahşap bir bank ucu görünüyor. Zemin yeşil halı ve mozaik.",
+    "en": "The barrow is small and low, with the end of a timber bench visible beside it. The floor is green matting and mosaic."
+  },
+  "seoFilename": "yesil-hali-uzerinde-cicekli-ahsap-el-arabasi-arkada-afis",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

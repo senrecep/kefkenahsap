@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/9435.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş avluya serilmiş modüler deck paneli",
+    "en": "Modular deck panel laid over a paved yard"
+  },
+  "alt": {
+    "tr": "Parke taşlı zemine yerleştirilmiş açık renkli emprenyeli çam deck paneli, tahtalar iki farklı yönde, kenarda saksılar",
+    "en": "Light pressure-treated pine deck panel on a paved floor, with boards running in two directions and planters along the edge"
+  },
+  "caption": {
+    "tr": "Deck panelleri hazır parçalar halinde zemine konuyor. Tahtaların yönü paneller arasında değişiyor.",
+    "en": "The deck panels are set on the floor in ready-made pieces. The board direction changes from panel to panel."
+  },
+  "seoFilename": "tas-avluya-serilmis-moduler-deck-paneli",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

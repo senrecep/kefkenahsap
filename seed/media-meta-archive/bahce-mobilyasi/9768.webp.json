@@ -1,0 +1,38 @@
+{
+  "source": "Ireko-Teak/9768.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çıtalı şezlong ve yuvarlak yan masa",
+    "en": "Slatted lounger and round side table"
+  },
+  "alt": {
+    "tr": "Karo zeminli teraste çıtalı ahşap şezlong ve arkasında yuvarlak yan masa",
+    "en": "Slatted timber lounger with a round side table behind it on a tiled terrace"
+  },
+  "caption": {
+    "tr": "Şezlongun çıtaları eğimli oturağı boydan boya kaplıyor. Yuvarlak masa çıtalı.",
+    "en": "The lounger slats cover the whole angled seat. The round table is slatted too."
+  },
+  "seoFilename": "citali-ahsap-sezlong-ve-yuvarlak-yan-masa-detay",
+  "tags": {
+    "type": [
+      "şezlong",
+      "sehpa"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

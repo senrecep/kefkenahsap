@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/9023.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deck tahtalarının geçme kenarı ve ahşap damarı",
+    "en": "Tongue-and-groove edge and grain of deck boards"
+  },
+  "alt": {
+    "tr": "Turuncu tonlu deck tahtalarının yakın çekimi, tahta araları ve yüzeydeki damar ile küçük bir budak izi",
+    "en": "Close-up of orange-toned deck boards showing the gaps between boards, the grain and a small knot mark"
+  },
+  "caption": {
+    "tr": "Yakından bakınca tahta araları ve damar deseni net görünüyor. Yüzey düzgün işlenmiş.",
+    "en": "Up close, the board gaps and grain pattern are clear. The surface is cleanly machined."
+  },
+  "seoFilename": "deck-tahtalarinin-gecme-kenari-ahsap-damari",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

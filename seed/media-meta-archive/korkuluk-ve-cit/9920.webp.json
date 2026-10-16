@@ -1,0 +1,39 @@
+{
+  "source": "Korkuluk ve Cit/9920.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Avlu duvarı üstünde yatay çıtalı paravan",
+    "en": "Horizontal-slat screen on top of a courtyard wall"
+  },
+  "alt": {
+    "tr": "Beyaz sıvalı avlu duvarının üstünde L biçiminde uzanan açık tonlu yatay çıtalı ahşap paravan, altta karo zemin",
+    "en": "Light horizontal-slat timber screen in an L shape on top of a white rendered courtyard wall, with tiled flooring below"
+  },
+  "caption": {
+    "tr": "Paravan avluyu apartman cephelerinden gizliyor. Çıtalar eşit aralıkla yatay dizilmiş.",
+    "en": "The screen hides the courtyard from the apartment facades. The slats run horizontally at even intervals."
+  },
+  "seoFilename": "avlu-duvari-ustunde-yatay-citali-ahsap-paravan",
+  "tags": {
+    "type": [
+      "kafes / paravan"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

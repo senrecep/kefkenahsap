@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/11377.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapı yanında açılır ahşap masa ve kolçaklı sandalyeler",
+    "en": "Extending timber table and armchairs beside a glass door"
+  },
+  "alt": {
+    "tr": "Cam kapılı evin terasında uzatma kanatlı çıtalı ahşap yemek masası ve çevresinde kolçaklı katlanır sandalyeler",
+    "en": "On a glass-doored house's terrace, a slatted timber dining table with extension leaves and folding armchairs"
+  },
+  "caption": {
+    "tr": "Masanın ortasındaki kanatlar açılınca masa uzuyor. Çevresindeki sandalyeler kolçaklı ve katlanabiliyor.",
+    "en": "The table lengthens when the leaves in the middle are opened out. The chairs around it have arms and fold."
+  },
+  "seoFilename": "cam-kapi-yaninda-acilir-ahsap-masa-ve-kolcakli-sandalyeler",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

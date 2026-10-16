@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/449.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deck üzerinde yatay tahtalı geniş çiçeklik",
+    "en": "Wide horizontal-board planter on a deck"
+  },
+  "alt": {
+    "tr": "Taş duvarın önünde ahşap deck üzerinde duran, içinde yeşil çalılar olan yatay tahtalı geniş ahşap çiçeklik",
+    "en": "Wide timber planter of horizontal boards with green shrubs standing on a timber deck in front of a stone wall"
+  },
+  "caption": {
+    "tr": "Çiçekliğin yatay tahtaları sıkı döşenmiş, köşelerde düz direkler var. İçinde yuvarlak yapraklı çalılar ve mavi iğne yapraklı bitki duruyor.",
+    "en": "The horizontal boards are laid tight with plain posts at the corners. Round-leaved shrubs and a blue conifer grow inside."
+  },
+  "seoFilename": "deck-uzerinde-yatay-tahtali-genis-ahsap-ciceklik-calilar",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Kapi Dolap ve Seperator/15081.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Zincirli yağmur borusu ve kapalı yeşil panjurlu köşe",
+    "en": "Corner with a rain chain and a closed green shutter"
+  },
+  "alt": {
+    "tr": "Beyaz cephenin köşesinde, kapalı adaçayı yeşili panjurun yanında çatıdan sarkan zincir, terracotta saksı ve ahşap bir koltuk",
+    "en": "Corner of a white facade with a closed sage-green shutter, a chain hanging from the roof into a terracotta pot"
+  },
+  "caption": {
+    "tr": "Panjur penceresi kapalı, yanında zincir saksıya iniyor. Köşede ahşap bir koltuk dinleniyor.",
+    "en": "The shutter is closed over the window and the chain runs down to the pot. A timber chair rests in the corner."
+  },
+  "seoFilename": "zincirli-yagmur-borusu-ve-kapali-yesil-panjurlu-kose",
+  "tags": {
+    "type": [
+      "pencere / panjur"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "giriş"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

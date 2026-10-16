@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12837.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Palmiye önünde uzun yükseltilmiş deck platformu",
+    "en": "Long raised deck platform in front of a palm"
+  },
+  "alt": {
+    "tr": "Palmiye ve yamaç önünde uzanan uzun, açık renkli yükseltilmiş ahşap deck platformu",
+    "en": "Long pale raised timber deck platform stretching in front of a palm and a slope"
+  },
+  "caption": {
+    "tr": "Platformun solundaki beton kanal ve sağındaki yamaç, deck'in arazide nasıl yer aldığını gösteriyor. Üzerinde henüz eşya yok.",
+    "en": "The concrete channel on one side and the slope on the other show how the deck sits in the terrain. Nothing stands on it yet."
+  },
+  "seoFilename": "palmiye-onunde-uzun-yukseltilmis-deck-platformu",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

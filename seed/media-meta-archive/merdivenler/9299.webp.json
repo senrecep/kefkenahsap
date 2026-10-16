@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/9299.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Platform ve çaprazlı korkuluk, arkada merdiven",
+    "en": "Platform and cross-braced railing, with stairs behind"
+  },
+  "alt": {
+    "tr": "Pembe duvar önünde platform ve çaprazlı korkuluk; arkada yukarı çıkan merdiven ve tel çit",
+    "en": "A platform and cross-braced railing in front of a pink wall, with stairs climbing behind it and wire fencing"
+  },
+  "caption": {
+    "tr": "Platform duvarın önüne yükseltilmiş, korkuluk köşeden dönüyor. Arkasında merdiven yukarı devam ediyor.",
+    "en": "The platform is raised in front of the wall and the railing turns at the corner. The stairs carry on upwards behind."
+  },
+  "seoFilename": "platform-ve-caprazli-korkuluk-arkada-merdiven-pembe-duvar",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

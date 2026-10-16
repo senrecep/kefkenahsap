@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/8774.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Köşebentli koyu saçak ve lambri tavan altı",
+    "en": "Dark eave with brackets and a panelled soffit"
+  },
+  "alt": {
+    "tr": "Köşebentli koyu vernikli ahşap saçağın lambri kaplı alt yüzü; altında panjurlu pencereler",
+    "en": "Panelled underside of a dark varnished timber eave with corner brackets, shuttered windows beneath"
+  },
+  "caption": {
+    "tr": "Eğik köşe destekleri saçağı duvara bağlıyor, tavan tahtaları kirişlere dik döşenmiş. Yan tarafta bir merdiven dayalı.",
+    "en": "Angled corner braces tie the eave to the wall and the ceiling boards are laid across the beams. A ladder leans at the side."
+  },
+  "seoFilename": "kosebentli-koyu-vernikli-ahsap-sacak-ve-lambri-tavan-alti",
+  "tags": {
+    "type": [
+      "sundurma / saçak / carport",
+      "tavan kaplaması / lambri"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

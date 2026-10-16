@@ -1,0 +1,39 @@
+{
+  "source": "Ahsap Yapilar/947.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kiremit çatılı geniş ahşap pavyonun altında masalar",
+    "en": "Picnic tables under the roof of a wide timber pavilion"
+  },
+  "alt": {
+    "tr": "Kiremit çatılı geniş ahşap pavyon, altında ahşap masalar, önünde çim ve parke döşeli zemin",
+    "en": "Wide timber pavilion with a tiled roof, wooden tables beneath it, and lawn and paving in front"
+  },
+  "caption": {
+    "tr": "Pavyonun kenarı taş sıralı bir tabanla yükseltilmiş. Kapalı bölümde küçük pencereler var.",
+    "en": "The edge of the pavilion is raised on a stone-faced base. The enclosed section has small windows."
+  },
+  "seoFilename": "kiremit-catili-genis-pavyon-ahsap-masalar",
+  "tags": {
+    "type": [
+      "kamelya",
+      "sundurma / saçak / carport",
+      "piknik masası"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

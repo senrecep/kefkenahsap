@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/1810.webp",
+  "category": "ahsap-ev-ve-bungalov",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kapı açıklığı olan yapım aşamasında ev içi",
+    "en": "Interior with a door opening in a house under construction"
+  },
+  "alt": {
+    "tr": "Yatay tahta duvarları ve kapı açıklığı olan, yapımı süren ahşap ev odası",
+    "en": "Room of a timber house under construction, with horizontal board walls and a door opening"
+  },
+  "caption": {
+    "tr": "Duvarlar yatay tahta ile örülmüş. Kapı açıklığının ardında ikinci bir oda başlıyor, tavanda kirişler duruyor.",
+    "en": "The walls are built from horizontal boards. A second room starts behind the door opening, and beams run across the ceiling."
+  },
+  "seoFilename": "kapi-acikligi-olan-yapim-asamasinda-ahsap-ev-ici",
+  "tags": {
+    "type": [
+      "ahşap ev / bungalov"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

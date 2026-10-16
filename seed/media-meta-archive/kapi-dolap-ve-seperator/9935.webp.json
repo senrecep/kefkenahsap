@@ -1,0 +1,39 @@
+{
+  "source": "Kapi Dolap ve Seperator/9935.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kasanın içinde mavi su deposu ve borular",
+    "en": "Blue water tank and pipes inside the box"
+  },
+  "alt": {
+    "tr": "Kapağı açılmış ahşap kasanın içinde, boru bağlantılı mavi bir su deposu görünüyor; yanında çit ve taş zemin",
+    "en": "Timber box with its door open, showing a blue water tank with pipe fittings inside; a fence and stone paving beside it"
+  },
+  "caption": {
+    "tr": "Kasa deponun etrafını kapatıyor, kapak çerçeveli ve çapraz destekli. Borulara kapaktan ulaşılıyor.",
+    "en": "The box encloses the tank and its door is framed and braced diagonally. The pipes are reached through the door."
+  },
+  "seoFilename": "kasanin-icinde-mavi-su-deposu-borular",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

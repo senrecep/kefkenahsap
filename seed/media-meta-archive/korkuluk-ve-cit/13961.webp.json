@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/13961.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimde alçak yatay tahtalı turuncu çevirme, arkasında selvi çit",
+    "en": "Low orange horizontal-board garden edging on the lawn, cypress hedge behind"
+  },
+  "alt": {
+    "tr": "Yeşil servi çitin önünde çim kenarı boyunca uzanan alçak, yatay tahtalı turuncu vernikli ahşap bahçe çevirmesi",
+    "en": "Low horizontal-board orange-varnished timber garden edging running along the lawn edge in front of a green cypress hedge"
+  },
+  "caption": {
+    "tr": "Çevirme çimle çalı arasındaki sınırı belirliyor. Tahtalar yatay döşenmiş, köşede kutu gibi dönüyor.",
+    "en": "The edging marks the boundary between lawn and planting. The boards are laid horizontally and the edging turns at the corner like a box."
+  },
+  "seoFilename": "cimde-alcak-yatay-tahtali-turuncu-cevirme-selvi-cit",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Pergola ve Kamelyalar/15112.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Koyu ahşap pergola kirişleri, altında plastik örtü ve boya malzemesi",
+    "en": "Dark timber pergola beams with a plastic sheet and paint supplies below"
+  },
+  "alt": {
+    "tr": "Bahçede koyu boyalı ahşap pergola kirişleri, altında serilmiş plastik örtü, sprey kutusu ve poşet",
+    "en": "Dark-stained timber pergola beams in a garden, with a plastic sheet spread below and a spray can and bag on it"
+  },
+  "caption": {
+    "tr": "Kirişlere boya işi yapılıyor, altı örtüyle korunmuş. Kirişlerde sarkan iki hasır avize görünüyor.",
+    "en": "The beams are being treated and the floor below is protected with a sheet. Two woven pendant lamps hang from the beams."
+  },
+  "seoFilename": "koyu-ahsap-pergola-kirisleri-plastik-ortu-boya",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.45
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12149.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölyede gri ve kırmızı kahverengi iki deck paneli",
+    "en": "Two deck panels in the workshop, one grey and one red-brown"
+  },
+  "alt": {
+    "tr": "Atölyede yan yana duran iki hazır deck paneli; solda gri, sağda koyu kırmızı kahverengi boyalı",
+    "en": "Two ready-made deck panels side by side in a workshop, grey on the left and dark red-brown stained on the right"
+  },
+  "caption": {
+    "tr": "Paneller çıtalardan çerçeveli olarak hazırlanmış. Arkada kereste yığınları görünüyor.",
+    "en": "The panels are built as framed slat sections. Stacks of timber show in the background."
+  },
+  "seoFilename": "atolyede-gri-ve-kirmizi-kahverengi-deck-paneli",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

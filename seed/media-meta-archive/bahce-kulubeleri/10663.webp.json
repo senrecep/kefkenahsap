@@ -1,0 +1,39 @@
+{
+  "source": "Kapi Dolap ve Seperator/10663.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kapalı kapaklı, yatay tahtalı ahşap alet dolabı",
+    "en": "Closed timber tool cabinet with horizontal boards"
+  },
+  "alt": {
+    "tr": "Yatay tahtalarla kaplı, yeşil shingle çatılı, kapağı kapalı ahşap alet dolabı; kapakta metal sürgü var",
+    "en": "A timber tool cabinet clad in horizontal boards with a green shingle roof, door closed and fitted with a metal latch"
+  },
+  "caption": {
+    "tr": "Dolap dar ve yüksek, kapağı tek parça. Sürgüsü metal olduğu için dışarıda da rahat kullanılır.",
+    "en": "The cabinet is narrow and tall, with a single door. The metal latch makes it practical outdoors."
+  },
+  "seoFilename": "kapali-kapakli-yatay-tahtali-alet-dolabi",
+  "tags": {
+    "type": [
+      "bahçe kulübesi / depo"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

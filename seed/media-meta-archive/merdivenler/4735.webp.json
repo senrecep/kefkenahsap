@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/4735.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Basamaklar boyunca uzanan çıtalı korkuluk",
+    "en": "Slatted railing running along the steps"
+  },
+  "alt": {
+    "tr": "Eğik açıdan geniş basamaklar ve boydan boya uzanan dikey çıtalı korkuluk; yanda tel çit ve yeşillik",
+    "en": "Angled view of wide steps and a full-length vertical-slat railing, with wire fencing and greenery at the side"
+  },
+  "caption": {
+    "tr": "Korkuluğun ince çıtaları basamaklarla birlikte aşağı doğru iniyor. Solda tel çit ve yeşillik var.",
+    "en": "The railing's thin slats run down alongside the steps. Wire fencing and greenery are on the left."
+  },
+  "seoFilename": "basamaklar-boyunca-uzanan-citali-korkuluk-tel-cit",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

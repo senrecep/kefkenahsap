@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14595.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimen kenarında taş kaideli kavisli ahşap bank oturağı",
+    "en": "Curved timber bench seat on a stone base at the edge of the lawn"
+  },
+  "alt": {
+    "tr": "Çimlik bahçenin kenarında, taş kaide üzerinde ince tahtalardan kavisli döşenmiş bank oturağı yakından görünüyor",
+    "en": "A close view of a bench seat of slim boards laid in a curve on a stone base at the edge of a lawn, with red roses behind"
+  },
+  "caption": {
+    "tr": "İnce tahtalar kavisi izlemek için hafif çapraz kesilmiş. Kenardaki taş kaide oturağı çimenin üstünde tutuyor.",
+    "en": "The thin boards are cut slightly angled to follow the curve. The stone base at the edge holds the seat above the lawn."
+  },
+  "seoFilename": "cimen-kenarinda-tas-kaideli-kavisli-ahsap-bank-oturagi",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

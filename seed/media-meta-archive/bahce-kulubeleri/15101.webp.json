@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/15101.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kulübe içinde duvara monte ahşap raflar",
+    "en": "Timber shelves fixed to the wall inside a shed"
+  },
+  "alt": {
+    "tr": "Kulübenin içinde, koyu vernikli kaplı duvarlara monte edilmiş üç sıra ahşap raf; zemin beton",
+    "en": "Three tiers of timber shelves fixed to dark varnished walls inside a shed, with a concrete floor"
+  },
+  "caption": {
+    "tr": "Raflar iki duvar boyunca sıralanmış, payandalarla duvara bağlanıyor. Tavan OSB levhayla kaplı, içerisi henüz boş.",
+    "en": "The shelves run along two walls and are tied to the wall with brackets. The ceiling is lined with OSB and the inside is still empty."
+  },
+  "seoFilename": "kulube-icinde-koyu-vernikli-kapli-duvara-monte-ahsap-raflar",
+  "tags": {
+    "type": [
+      "bahçe kulübesi / depo",
+      "raf / kitaplık"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

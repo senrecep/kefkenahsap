@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/14897.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "İki oluklu deck tahtası örneği",
+    "en": "Two grooved deck board samples"
+  },
+  "alt": {
+    "tr": "Beyaz bir masa üzerinde yan yana duran, yüzeyi boyuna oluklu iki koyu kahverengi deck tahtası",
+    "en": "Two dark brown deck boards with lengthwise grooves on the surface, lying side by side on a white table"
+  },
+  "caption": {
+    "tr": "Tahtaların üstündeki oluklar ayağın kaymasını azaltmak için açılır. Soldaki tahta biraz daha kısa ve damar yapısı daha belirgin.",
+    "en": "Grooves on the surface are cut to reduce slipping underfoot. The left board is a little shorter and its grain is more pronounced."
+  },
+  "seoFilename": "iki-oluklu-deck-tahtasi-ornegi-masa-ustunde",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

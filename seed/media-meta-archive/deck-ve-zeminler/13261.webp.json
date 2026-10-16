@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/13261.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam korkuluklu havuzu çevreleyen kıvrımlı deck şeridi",
+    "en": "Curved deck strip around a glass-fenced pool"
+  },
+  "alt": {
+    "tr": "Cam korkuluklu havuzu çevreleyen kıvrımlı koyu kırmızı kahverengi deck şeridi, çimenle sınırlı",
+    "en": "Curved dark red-brown deck strip around a glass-fenced pool, bordered by lawn"
+  },
+  "caption": {
+    "tr": "Şerit havuzun eğrisini izliyor ve çimenle havuz kenarı arasında temiz bir geçiş yapıyor. Tahtalar eğriye uyacak kısa parçalara kesilmiş.",
+    "en": "The strip follows the curve of the pool and makes a clean transition between lawn and pool edge. The boards are cut into short pieces to follow the curve."
+  },
+  "seoFilename": "cam-korkuluklu-havuzu-cevreleyen-kivrimli-deck-seridi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı",
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

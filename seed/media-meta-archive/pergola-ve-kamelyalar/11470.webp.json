@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/11470.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Pergola gölgesinde hasır koltuk takımı, sarmaşıklı duvar yanında",
+    "en": "Wicker armchairs in pergola shade beside an ivy wall"
+  },
+  "alt": {
+    "tr": "Kırmızımsı pergola kirişlerinin altındaki hasır koltuk takımı ve alçak masa; arkada sarmaşıklı beyaz duvar",
+    "en": "Wicker seating and a low table under reddish pergola beams, with a white ivy-covered wall behind"
+  },
+  "caption": {
+    "tr": "Kadraj koltukları yakından gösteriyor. Üstte tente ve kirişler, arkada bahçe bitkileri görünüyor.",
+    "en": "The frame shows the seats up close. The canvas and beams are above and garden plants are behind."
+  },
+  "seoFilename": "pergola-golgesinde-hasir-koltuk-takimi-sarmasik",
+  "tags": {
+    "type": [
+      "pergola",
+      "oturma grubu",
+      "sehpa"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

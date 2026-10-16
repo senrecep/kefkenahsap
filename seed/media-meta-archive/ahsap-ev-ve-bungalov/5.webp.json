@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/5.webp",
+  "category": "ahsap-ev-ve-bungalov",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ahşap ev iskeletinde çalışan ustalar",
+    "en": "Craftsmen working at a timber house frame"
+  },
+  "alt": {
+    "tr": "Duvar iskeleti dikilmiş ahşap evin önünde, kesim tezgâhı başında çalışan üç usta",
+    "en": "Three craftsmen at a cutting bench in front of a timber house whose wall frame has been erected"
+  },
+  "caption": {
+    "tr": "Ustalar tahtaları ölçüp kesiyor, arkada ev iskeleti ve pencere boşlukları görünüyor. Kasalarda malzeme duruyor.",
+    "en": "The craftsmen measure and cut boards while the house frame and window openings rise behind them. Material sits in tubs."
+  },
+  "seoFilename": "ahsap-ev-iskeleti-ve-calisan-ustalar",
+  "tags": {
+    "type": [
+      "ahşap ev / bungalov"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

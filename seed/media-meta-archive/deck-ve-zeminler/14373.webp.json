@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/14373.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yan tarafında çiçeklikli koyu deck",
+    "en": "Dark deck with a planter at its side"
+  },
+  "alt": {
+    "tr": "Cam kapı önünde, yan kenarına ahşap çiçeklik yerleştirilmiş koyu kahverengi deck tahtaları",
+    "en": "Dark brown deck boards in front of a glass door with a timber planter set along one edge"
+  },
+  "caption": {
+    "tr": "Tahtalar aralıklı sıralanmış, yüzeyde ışık ve gölge çizgileri var. Çiçeklik sol kenara bitişik.",
+    "en": "The boards are spaced evenly and the surface carries lines of light and shade. The planter sits against the left edge."
+  },
+  "seoFilename": "yan-tarafinda-ciceklikli-koyu-deck-tahtalari",
+  "tags": {
+    "type": [
+      "deck",
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

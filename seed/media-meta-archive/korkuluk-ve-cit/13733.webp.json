@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/13733.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Merdiven önünde koyu ahşap piket bariyer",
+    "en": "Dark timber picket barrier at the foot of a staircase"
+  },
+  "alt": {
+    "tr": "Parke zeminli iç mekânda, merdivenin önünde köşe yapan koyu cilalı çıtalı ahşap bariyer",
+    "en": "Dark varnished slatted timber barrier forming a corner in front of a staircase on a wood-floored interior"
+  },
+  "caption": {
+    "tr": "Bariyer iki duvar arasında köşe yaparak merdiven girişini kapatıyor.",
+    "en": "The barrier forms a corner between two walls and closes off the stair entrance."
+  },
+  "seoFilename": "merdiven-onunde-koyu-ahsap-piket-bariyer",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

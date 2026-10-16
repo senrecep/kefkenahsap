@@ -1,0 +1,36 @@
+{
+  "source": "Ireko-Teak/13255.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Odun fırınlı dış mutfak ve deck zemin",
+    "en": "Outdoor kitchen with a wood-fired oven on a deck"
+  },
+  "alt": {
+    "tr": "Çıtalı duvarın önünde odun fırını, ocak ve paslanmaz buzdolaplı dış mutfak; solda masa köşesi",
+    "en": "Outdoor kitchen with a wood-fired oven, a stove and a stainless fridge in front of a slatted wall, a table corner on the left"
+  },
+  "caption": {
+    "tr": "Siyah odun fırını ortada, yanında ocak ve fırın var. Sağda paslanmaz çelik iki kapaklı buzdolabı duruyor, zemin deck.",
+    "en": "The black wood-fired oven sits in the middle with a stove and an oven beside it. A two-door stainless steel fridge stands on the right and the floor is decking."
+  },
+  "seoFilename": "odun-firinli-dis-mutfak-ve-deck-zemin-solda-masa-kosesi",
+  "tags": {
+    "type": [
+      "dış mutfak / mangal alanı",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.6
+}

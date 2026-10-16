@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/6180.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Toprakta ahşap çerçeve ve kirişler",
+    "en": "Timber frame and joists on soil"
+  },
+  "alt": {
+    "tr": "Toprak üzerine kurulmuş ahşap çerçeve ve içindeki ince kirişler; arkada kapılı ahşap çit, sağda elektrik kablosu",
+    "en": "Timber frame set up on soil with thin joists inside it, a timber fence with a gate behind and an electric cable on the right"
+  },
+  "caption": {
+    "tr": "Çerçeve dikdörtgen bir alanı sınırlıyor, kirişler çaprazlama eşit aralıkla sıralanıyor. Çitin yanında bir kapı ve bahçe bitkileri görünüyor.",
+    "en": "The frame outlines a rectangular area and the joists are set at even spacing across it. A gate and garden plants show beside the fence."
+  },
+  "seoFilename": "toprakta-ahsap-cerceve-ve-kirisler-cit-ve-elektrik-kablosu",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

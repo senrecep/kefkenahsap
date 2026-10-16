@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14235.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çelik sehpadaki çiçeklik, atölye arka planında",
+    "en": "Planter on a steel stand against the workshop backdrop"
+  },
+  "alt": {
+    "tr": "Çelik sehpa üzerinde duran vernikli ahşap çiçeklik; arkada atölye rafları ve dolaplar",
+    "en": "Varnished timber planter on a steel stand with workshop shelves and cupboards behind"
+  },
+  "caption": {
+    "tr": "Vernik yatay çıtalara düzgün yayılmış, koyu turuncu bir ton oluşmuş. Çiçeklik henüz teslim edilmemiş.",
+    "en": "The varnish is spread evenly over the horizontal slats in a dark orange tone. The planter has not been delivered yet."
+  },
+  "seoFilename": "celik-sehpa-uzerindeki-vernikli-ahsap-ciceklik-atolye-arka",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

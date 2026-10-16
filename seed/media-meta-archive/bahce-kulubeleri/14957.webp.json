@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/14957.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Koyu vernikli kaplamada siyah demir menteşe",
+    "en": "Black iron hinge on dark varnished cladding"
+  },
+  "alt": {
+    "tr": "Koyu vernikli yatay kaplamalı kulübe kapısında iki siyah demir menteşe, yakın çekim",
+    "en": "Close-up of two black iron hinges on the door of a shed with dark varnished horizontal cladding"
+  },
+  "caption": {
+    "tr": "Tahtaların damarları ve budak izleri cilanın altında belli oluyor. Kapı kanatları iki dekoratif menteşeyle tutuluyor.",
+    "en": "The grain and knots of the boards show beneath the finish. The door leaves are held by two decorative hinges."
+  },
+  "seoFilename": "koyu-vernikli-yatay-kaplamada-siyah-demir-mentese-detayi",
+  "tags": {
+    "type": [
+      "bahçe kulübesi / depo"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

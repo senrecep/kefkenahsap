@@ -1,0 +1,41 @@
+{
+  "source": "Kopru ve Iskele/8059.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Böbrek biçimli havuzun ucunda korkuluklu köprü",
+    "en": "Railed bridge at the end of a kidney-shaped pool"
+  },
+  "alt": {
+    "tr": "Böbrek biçimli, deckle çevrili havuzun bir ucuna oturan korkuluklu ahşap köprü; arkada köşk, çam ve çalılar",
+    "en": "Railed timber bridge at one end of a kidney-shaped pool edged with decking, a pavilion, pine and shrubs behind"
+  },
+  "caption": {
+    "tr": "Deck havuzun düzensiz kenarını izliyor. Köprü havuzun dar yerinde karşıdan karşıya geçiyor.",
+    "en": "The decking follows the irregular edge of the pool. The bridge crosses at the narrow point of the pool."
+  },
+  "seoFilename": "bobrek-bicimli-havuzun-ucunda-korkuluklu-kopru",
+  "tags": {
+    "type": [
+      "köprü",
+      "korkuluk",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

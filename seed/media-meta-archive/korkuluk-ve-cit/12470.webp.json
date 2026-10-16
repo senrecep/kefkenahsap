@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/12470.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kahverengi evin cephesinde pencere çevresinde ahşap kafes panel",
+    "en": "Timber lattice panel around the windows of a brown house facade"
+  },
+  "alt": {
+    "tr": "Kahverengi boyalı ev cephesinde iki pencerenin arasını kaplayan ahşap kare gözlü kafes panel",
+    "en": "Square-mesh timber lattice panel covering the wall between and around two windows on a brown-painted house facade"
+  },
+  "caption": {
+    "tr": "Kafes pencerelerin çevresine ve arasına kare gözlerle yayılmış. Alt kısımda çiçekli saksılar ve çiçekli çalı var.",
+    "en": "The lattice spreads in square cells around and between the windows. There are potted flowers and a flowering shrub below."
+  },
+  "seoFilename": "kahverengi-evin-cephesinde-pencere-cevresi-kafes",
+  "tags": {
+    "type": [
+      "kafes / paravan",
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

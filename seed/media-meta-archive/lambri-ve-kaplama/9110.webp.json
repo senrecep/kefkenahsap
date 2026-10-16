@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/9110.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Turuncu-kahve tonlu kaplama tahtasının yakın çekimi",
+    "en": "Close view of an orange-brown cladding board"
+  },
+  "alt": {
+    "tr": "Turuncu-kahve vernikli, damarları ve birleşim oluğu belirgin yatay ahşap kaplama tahtalarının yakın görüntüsü",
+    "en": "Close view of orange-brown varnished horizontal timber cladding boards with the grain and the joint groove clearly visible"
+  },
+  "caption": {
+    "tr": "İki tahta arasındaki birleşim oluğu koyu bir çizgi çiziyor, vernik yüzeyi sıcak tutuyor.",
+    "en": "The groove between two boards draws a dark line, and the varnish keeps the surface warm."
+  },
+  "seoFilename": "turuncu-kahve-tonlu-yatay-ahsap-kaplama-tahtasinin-yakin",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

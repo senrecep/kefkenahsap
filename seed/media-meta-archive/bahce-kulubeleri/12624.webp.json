@@ -1,0 +1,40 @@
+{
+  "source": "Korkuluk ve Cit/12624.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yüksek zeminli oyun evinin yanında A biçimli salıncak",
+    "en": "A-frame swing beside a raised timber playhouse"
+  },
+  "alt": {
+    "tr": "Bordo çatılı, ayaklar üzerinde ahşap oyun evinin yanında A biçimli ahşap salıncak; zeminde yeşil bir oyuncak var",
+    "en": "An A-frame wooden swing beside a timber playhouse with a dark red roof raised on posts, with a green toy on the ground"
+  },
+  "caption": {
+    "tr": "Salıncak, iki yandan çaprazlanan kirişlerle ayakta duruyor. Oyun evi onun arkasında, yüksek bir platformda.",
+    "en": "The swing stands on beams crossed on both sides. The playhouse sits behind it on a high platform."
+  },
+  "seoFilename": "yuksek-zeminli-oyun-evi-yaninda-a-salincak",
+  "tags": {
+    "type": [
+      "çocuk oyun evi",
+      "salıncak"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/13513.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Izgara paravanlı vernikli çiçeklik, yanında ikinci bir çiçeklik",
+    "en": "Varnished planter with a lattice screen, a second planter beside it"
+  },
+  "alt": {
+    "tr": "Atölyede, ızgara paravanlı vernikli ahşap çiçeklik; solda başka bir çiçeklik kutusunun kenarı kısmen görünüyor",
+    "en": "A varnished timber planter with a lattice screen in a workshop, the edge of another planter box partly visible at left"
+  },
+  "caption": {
+    "tr": "Paravan çiçeklik kutusuna dikmelerle bağlı ve kutudan yüksekte duruyor. Çiçeklik üç sıra yatay tahtadan örülmüş.",
+    "en": "The screen is tied to the planter box by posts and stands high above it. The planter is built from three rows of horizontal boards."
+  },
+  "seoFilename": "izgara-paravanli-vernikli-ciceklik-yaninda-ikinci",
+  "tags": {
+    "type": [
+      "kafes / paravan",
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

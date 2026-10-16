@@ -1,0 +1,39 @@
+{
+  "source": "Kapi Dolap ve Seperator/9244.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kapılı ahşap kasa havuz kenarında",
+    "en": "Timber box with a braced door beside the pool"
+  },
+  "alt": {
+    "tr": "Havuz kenarında duran, çapraz destekli kapısı olan yatay tahtalı ahşap kasa; üst kısmı açık",
+    "en": "Timber box with horizontal boards and a diagonally braced door beside a pool, open at the top"
+  },
+  "caption": {
+    "tr": "Kapı kanadı çapraz bir çıtayla sağlamlaştırılmış. Kasanın üst kısmı havalanması için açık bırakılmış.",
+    "en": "The door leaf is stiffened with a diagonal brace. The top of the box is left open for ventilation."
+  },
+  "seoFilename": "kapili-ahsap-kasa-havuz-kenari",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

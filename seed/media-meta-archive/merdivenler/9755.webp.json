@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/9755.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Evin yan duvarı boyunca çaprazlı merdiven",
+    "en": "Cross-braced stairs along the side wall of a house"
+  },
+  "alt": {
+    "tr": "Evin yan duvarı boyunca yükselen çaprazlı korkuluklu ahşap merdiven; altta tel çit, zemin açık toprak",
+    "en": "Timber stairs with a cross-braced railing rising along the side wall of a house, with wire fencing below and bare soil"
+  },
+  "caption": {
+    "tr": "Merdiven pencereli yan duvarın önünden yukarı çıkıyor. Altta tel çit ve açık toprak görünüyor.",
+    "en": "The stairs rise in front of the windowed side wall. Wire fencing and bare soil show below."
+  },
+  "seoFilename": "evin-yan-duvari-boyunca-caprazli-ahsap-merdiven-tel-cit-alt",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

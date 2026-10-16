@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14979.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sarı duvarın dibinde yerleştirilmiş koyu ahşap kasa",
+    "en": "Dark timber box placed at the foot of a yellow wall"
+  },
+  "alt": {
+    "tr": "Sıvalı sarı duvarın dibinde, fayans döşeli zeminde duran küçük koyu kahve ahşap kasa ve yanında beyaz havlupan radyatör",
+    "en": "Small dark brown timber box on a tiled floor at the foot of a yellow rendered wall, with a white towel radiator beside it"
+  },
+  "caption": {
+    "tr": "Kasa duvarın köşesine oturmuş, çıtalı yan yüzeyleri duvara dik. Rengi zeminin taşıyla uyumlu.",
+    "en": "The box sits in the corner of the wall with slatted sides. Its colour suits the tone of the paving."
+  },
+  "seoFilename": "sari-duvarin-dibinde-yerlestirilmis-koyu-ahsap-kasa",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

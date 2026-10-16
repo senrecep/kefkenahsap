@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/8861.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapılı ev girişinde çim üzerine kurulmuş deck platformu",
+    "en": "Deck platform on the lawn by a glazed ground-floor entrance"
+  },
+  "alt": {
+    "tr": "Zemin kat cam kapılarının önünde çimenlikte duran açık renkli emprenyeli deck platformu, arkada hasır koltuk",
+    "en": "Light pressure-treated deck platform on lawn in front of ground-floor glass doors, with a wicker sofa behind"
+  },
+  "caption": {
+    "tr": "Platform bahçeyle evin arasında düz bir oturma zemini oluşturuyor. Kenarı çimle aynı hizada bitiyor.",
+    "en": "The platform makes a level seating floor between garden and house, finishing flush with the lawn edge."
+  },
+  "seoFilename": "cam-kapili-giris-onunde-cim-uzerinde-deck-platformu",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe",
+      "giriş"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

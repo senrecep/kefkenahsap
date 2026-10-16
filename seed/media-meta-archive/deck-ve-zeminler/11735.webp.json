@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/11735.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Güneşli balkonda parlak sarı deck tahtaları",
+    "en": "Bright yellow deck boards on a sunny balcony"
+  },
+  "alt": {
+    "tr": "Güneş alan balkonda turuncu sarı tonlu deck tahtaları, camın gölgesi tahtaların üzerine düşüyor",
+    "en": "Orange-yellow deck boards on a sunlit balcony with shadows of the glazing falling across them"
+  },
+  "caption": {
+    "tr": "Uzun tahtalar balkonun boyunca döşenmiş, damar deseni net görünüyor. Cam kapı yanında zemin düz bitiyor.",
+    "en": "Long boards run the length of the balcony and the grain shows clearly. The floor ends flush at the glass door."
+  },
+  "seoFilename": "gunesli-balkonda-parlak-sari-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "balkon"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

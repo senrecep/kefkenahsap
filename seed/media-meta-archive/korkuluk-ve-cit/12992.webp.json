@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/12992.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Metal merdivende ahşap küpeşte yakın çekimi, arkada bahçe",
+    "en": "Close-up of a timber handrail on a metal staircase, garden behind"
+  },
+  "alt": {
+    "tr": "Metal korkuluklu merdivenin üstünde yuvarlak kenarlı ahşap küpeşte yakından; altta bahçe, taş saksılar ve uzakta birkaç kişi",
+    "en": "Close view of a round-edged timber handrail on a metal-railed staircase, with the garden"
+  },
+  "caption": {
+    "tr": "Küpeşte yuvarlatılmış profilde, koyu bal rengi vernikli. Altında merdiven boşluğu ve bitkili taş yatak görünüyor.",
+    "en": "The handrail has a rounded profile and a dark honey varnish. Below it can be seen the stairwell and a stone bed with plants."
+  },
+  "seoFilename": "metal-merdivende-ahsap-kupeste-yakin-cekim-bahce",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "merdiven"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

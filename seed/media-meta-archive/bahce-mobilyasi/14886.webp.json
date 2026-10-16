@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/14886.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çıtalı tablalı masa, tuğla duvarlı ofiste",
+    "en": "Slatted-top table in an office with a brick wall"
+  },
+  "alt": {
+    "tr": "Tuğla duvarlı ofiste duran, çıtalı tablalı vernikli ahşap masa ve sandalye",
+    "en": "Varnished timber table with a slatted top and a chair in an office with a brick wall"
+  },
+  "caption": {
+    "tr": "Masanın tablası çıta çıta döşenmiş, yüzey parlak vernikli. Arkada ofis masası ve kütük dilimleri görünüyor.",
+    "en": "The tabletop is laid in slats with a glossy varnish. An office desk and log slices are visible behind."
+  },
+  "seoFilename": "citali-tablali-ahsap-masa-ofis-tugla-duvar",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

@@ -1,0 +1,41 @@
+{
+  "source": "Ahsap Yapilar/1569.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cankurtaran simidi asılı ahşap bar yapısı",
+    "en": "Timber bar structure with a life ring on the wall"
+  },
+  "alt": {
+    "tr": "Üstü ahşap kirişli çatıyla örtülü bar yapısı; cankurtaran simidi, balık ağı süsü ve hasır sandalyeli masalar",
+    "en": "A bar structure under a roof of timber beams, with a life ring, fishing-net decoration and tables with wicker chairs"
+  },
+  "caption": {
+    "tr": "Bar yapısı kalın direkler ve kirişli çatıyla ayakta duruyor. Önünde hasır sandalyeli masalar ve şemsiye var.",
+    "en": "The bar structure stands on thick posts under a beamed roof. Tables with wicker chairs and a parasol are in front."
+  },
+  "seoFilename": "agac-carkli-ahsap-bar-yapisi-hasir-sandalyeli-masalar",
+  "tags": {
+    "type": [
+      "bar / tezgâh",
+      "sundurma / saçak / carport"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı",
+      "ticari mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

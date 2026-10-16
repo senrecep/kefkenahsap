@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/9882.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Pencereli duvar boyunca merdiven iskeleti",
+    "en": "Stair frame along a wall with windows"
+  },
+  "alt": {
+    "tr": "Pencereli ve balkonlu duvar boyunca uzanan ahşap merdiven iskeleti; altta tel çit, zemin açık toprak",
+    "en": "Timber stair frame running along a wall with windows and a balcony, with wire fencing below and bare soil"
+  },
+  "caption": {
+    "tr": "Merdiven iskeleti pencerelerin önünden balkon hizasına doğru yükseliyor. Alt bölümde basamaklar açık, zemin toprak.",
+    "en": "The stair frame rises in front of the windows towards balcony level. The steps below are open and the ground is soil."
+  },
+  "seoFilename": "pencereli-duvar-boyunca-ahsap-merdiven-iskeleti-toprak-zemin",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

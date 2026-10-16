@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/11559.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapı boyunca uzanan dar deck",
+    "en": "Narrow deck running along a glass door"
+  },
+  "alt": {
+    "tr": "Cam kapı boyunca uzanan dar kahverengi ahşap deck ve yanında bitkiler",
+    "en": "Narrow brown timber deck running along a glass door with plants beside it"
+  },
+  "caption": {
+    "tr": "Deck kapının dibinden başlayıp balkonun sonuna kadar gidiyor. Güneş yaprakların gölgesini tahtalara düşürüyor.",
+    "en": "The deck starts at the foot of the door and goes all the way to the end of the balcony. The sun casts the shadows of leaves on the boards."
+  },
+  "seoFilename": "cam-kapi-boyunca-uzanan-dar-kahverengi-ahsap-deck-ve-yaninda",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "balkon"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

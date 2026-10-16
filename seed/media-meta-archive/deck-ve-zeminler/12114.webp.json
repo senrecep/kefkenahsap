@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12114.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yarısı zımparalanmış deck tahtaları",
+    "en": "Deck boards sanded on one half"
+  },
+  "alt": {
+    "tr": "Deck tahtalarının sol tarafı açık renkli zımparalanmış, sağ tarafı koyu kahverengi boyalı",
+    "en": "Deck boards with the left side sanded back to pale wood and the right side still dark brown"
+  },
+  "caption": {
+    "tr": "Eski koyu kaplama zımparayla alınıyor. Zımparalanan kısımda ahşabın doğal rengi ve damarı ortaya çıkmış.",
+    "en": "The old dark coating is being sanded off. Where it is done the natural colour and grain of the wood show."
+  },
+  "seoFilename": "yarisi-zimparalanmis-deck-tahtalari",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

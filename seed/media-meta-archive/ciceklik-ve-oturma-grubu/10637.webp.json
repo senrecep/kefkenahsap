@@ -1,0 +1,39 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/10637.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Gazete üzerinde siyah astarlı açık renk çiçeklik",
+    "en": "Light planter with black liner on newspaper"
+  },
+  "alt": {
+    "tr": "Terasta gazete serilmiş zeminde duran, içi siyah astarlı, açık renk dikdörtgen ahşap çiçeklik",
+    "en": "Light rectangular timber planter with a black liner standing on newspaper laid over a terrace floor"
+  },
+  "caption": {
+    "tr": "Çiçeklik dikey tahta kaplı, köşelerinde kalın direkler var. Zemin boyaya karşı gazeteyle örtülmüş.",
+    "en": "The planter is clad in vertical boards with thick corner posts. Newspaper covers the floor to protect it."
+  },
+  "seoFilename": "gazete-uzerinde-siyah-astarli-acik-renk-ahsap-ciceklik",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

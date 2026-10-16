@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/15107.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çim kenarında koyu kulübe, önünde sulama borusu",
+    "en": "Dark shed beside the lawn with an irrigation pipe in front"
+  },
+  "alt": {
+    "tr": "Yeni serilmiş çimin kenarında duran koyu ahşap kulübe; önünde sulama borusu ve düzlenmiş toprak",
+    "en": "Dark timber shed standing at the edge of newly laid turf, with an irrigation pipe and levelled earth in front"
+  },
+  "caption": {
+    "tr": "Çimin sınırı kulübenin önünden geçiyor, toprak yüzey henüz çimlenmemiş. Kapının altında küçük bir menteşe kanadı görünüyor.",
+    "en": "The edge of the lawn runs in front of the shed and the earth surface has not been turfed yet. A small hinged flap shows at the foot of the door."
+  },
+  "seoFilename": "cim-kenarinda-koyu-ahsap-kulube-onunde-sulama-borusu-ve",
+  "tags": {
+    "type": [
+      "bahçe kulübesi / depo"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,35 @@
+{
+  "source": "Boya Tamir ve Bakim/11522.webp",
+  "category": "boya-tamir-ve-bakim",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yan yatırılmış ahşap yapının basınçlı suyla yıkanması",
+    "en": "Pressure-washing a timber structure laid on its side"
+  },
+  "alt": {
+    "tr": "Bahçede yan yatırılmış ahşap bir yapı, basınçlı su tabancasıyla yıkanıyor",
+    "en": "A timber structure laid on its side in a garden being washed with a pressure-washer gun"
+  },
+  "caption": {
+    "tr": "Yapı çimin üzerinde yan yatırılmış, eski cila ve kir su ile temizleniyor. Bakım öncesi hazırlık aşaması.",
+    "en": "The structure lies on its side on the lawn while old varnish and dirt are washed off. This is the preparation stage before maintenance."
+  },
+  "seoFilename": "yan-yatirilmis-ahsap-yapinin-basincli-suyla-yikanmasi",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

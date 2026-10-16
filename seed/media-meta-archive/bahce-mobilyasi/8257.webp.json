@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/8257.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kolçaklı, çıtalı kahverengi vernikli ahşap bank, koyu deck üzerinde",
+    "en": "Brown-varnished slatted timber bench with arms on dark decking"
+  },
+  "alt": {
+    "tr": "Koyu ahşap deck zeminde, açık duvarın yanında duran, kavisli kolçaklı ve çıtalı sırtlı kahverengi ahşap bank",
+    "en": "A brown timber bench with curved arms and a slatted back on dark timber decking beside a pale wall"
+  },
+  "caption": {
+    "tr": "Bankın oturağı da sırtlığı da ince çıtalardan. Kolçaklar hafifçe dışa kavisleniyor.",
+    "en": "Both the seat and the back of the bench are made of thin slats. The arms curve gently outward."
+  },
+  "seoFilename": "kolcakli-citali-kahve-vernikli-bank-koyu-deck-uzerinde",
+  "tags": {
+    "type": [
+      "bank",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

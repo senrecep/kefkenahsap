@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/9353.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çift kanatlı kapılı yatay tahtalı ahşap depo",
+    "en": "Timber store with a double door and horizontal boards"
+  },
+  "alt": {
+    "tr": "Çift kanatlı kapısı ve üst kısmında havalandırma delikleri olan, yatay tahtalı ahşap depo",
+    "en": "Timber store of horizontal boards with a double door and ventilation openings at the top"
+  },
+  "caption": {
+    "tr": "Kapı kanatları duvarla aynı düzlemde, ortasında metal bir kol var. Yan tarafta çim ve bir çit görünüyor.",
+    "en": "The door leaves sit flush with the wall with a metal handle in the middle. Lawn and a fence show at the side."
+  },
+  "seoFilename": "yatay-tahtali-ahsap-depo-cift-kanatli-kapi-ve-havalandirma",
+  "tags": {
+    "type": [
+      "bahçe kulübesi / depo",
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/9304.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dükkân önünde dikey tahta kaplanan dolap gövdesi",
+    "en": "Cabinet body being clad with vertical boards in front of a shop"
+  },
+  "alt": {
+    "tr": "Cam önlü dükkânın girişinde yan yüzeyi dikey tahtalarla kaplanan açık renkli emprenyeli dolap gövdesi, yanında saksı",
+    "en": "Pale pressure-treated cabinet body at a shopfront, its side clad with vertical boards, with a potted plant beside it"
+  },
+  "caption": {
+    "tr": "Gövdenin yan kısmı dikey tahtalarla kapanmış, üstü hâlâ açık. Dolap girişin önüne ölçülü yerleştirilmiş.",
+    "en": "The side of the body is closed with vertical boards while the top is still open. The cabinet is placed to measure in front of the entrance."
+  },
+  "seoFilename": "dukkan-onunde-dikey-tahta-kaplanan-dolap-govdesi",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

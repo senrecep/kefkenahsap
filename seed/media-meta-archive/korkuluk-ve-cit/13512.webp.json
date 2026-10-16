@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/13512.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dikey ızgara kafesli, altı çiçeklik kutulu vernikli ahşap ünite",
+    "en": "Varnished timber unit with vertical lattice and planter box below"
+  },
+  "alt": {
+    "tr": "Atölyede, beyaz duvarın önünde duran dikey kare gözlü kafesli ve alt kısmı siyah astarlı çiçeklik kutulu vernikli ahşap ünite",
+    "en": "Varnished timber unit in a workshop with a vertical square-mesh lattice and a black-lined planter box at the bottom"
+  },
+  "caption": {
+    "tr": "Kafes çiçeklik kutusunun arkasında yükseliyor, birlikte tek parça gibi duruyor. Çiçeklik yatay tahtalarla kaplı.",
+    "en": "The lattice rises behind the planter box and the two stand together as one piece. The planter is clad in horizontal boards."
+  },
+  "seoFilename": "dikey-izgara-kafesli-ciceklikli-vernikli-unite",
+  "tags": {
+    "type": [
+      "kafes / paravan",
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

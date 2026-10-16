@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/1206.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar ve palmiye önünde çatılı ahşap pergola, altında şezlonglar",
+    "en": "Roofed timber pergola with loungers in front of a stone wall and a palm"
+  },
+  "alt": {
+    "tr": "Taş duvar ve palmiyenin önünde tahta çatılı ahşap pergola, çevrede çiçekli bitkiler ve altta şezlonglar",
+    "en": "Timber pergola with a boarded roof in front of a stone wall and a palm, with flowering plants around and loungers beneath"
+  },
+  "caption": {
+    "tr": "Çatı yan kenarda kalın kirişlerle taşınıyor, çatı altı çıtalı. Pergolanın yanında başka bir ahşap yapı da görünüyor.",
+    "en": "The roof is carried by thick beams at the side, and the underside is slatted. Another timber structure shows beside the pergola."
+  },
+  "seoFilename": "tas-duvar-palmiye-onunde-catili-pergola-sezlong",
+  "tags": {
+    "type": [
+      "pergola",
+      "şezlong"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

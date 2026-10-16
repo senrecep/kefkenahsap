@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/10394.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Geniş deck alt konstrüksiyonu, üstten görünüş",
+    "en": "Wide deck substructure from above"
+  },
+  "alt": {
+    "tr": "Toprak üzerinde kurulu geniş ahşap deck alt konstrüksiyon çerçevesi, üstten görünüş",
+    "en": "Wide timber deck substructure frame laid on soil, seen from above"
+  },
+  "caption": {
+    "tr": "Kirişler tek yönde sıralanmış, ortada ve kenarlarda enine bağlantılar var. Sol tarafta yeşil bir çalı duruyor.",
+    "en": "The joists run in one direction with cross ties in the middle and at the edges. A green shrub stands on the left."
+  },
+  "seoFilename": "toprak-uzerinde-genis-ahsap-deck-alt-konstruksiyon-cercevesi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

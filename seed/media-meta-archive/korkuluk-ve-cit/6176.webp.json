@@ -1,0 +1,40 @@
+{
+  "source": "Korkuluk ve Cit/6176.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Basamakların iki yanında çıtalı korkuluk ve ortancalar",
+    "en": "Slatted railing on both sides of steps with hydrangeas"
+  },
+  "alt": {
+    "tr": "Taş basamakların iki yanında yükselen açık yeşil çıtalı ahşap korkuluk, üstte siyah demir kapı, sağda pembe ortancalar",
+    "en": "Light green slatted timber railing rising on both sides of stone steps, with a black iron gate at the top"
+  },
+  "caption": {
+    "tr": "İki korkuluk basamakları ortaya alıp kapıya kadar götürüyor.",
+    "en": "The two railings frame the steps and lead up to the gate."
+  },
+  "seoFilename": "basamaklar-iki-yaninda-citali-korkuluk-cicek-ve-demir-kapi",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "merdiven"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

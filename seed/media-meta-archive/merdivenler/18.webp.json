@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/18.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çam kaplı iç mekanda aşağı dönen merdiven",
+    "en": "Stairs turning down inside a pine-clad interior"
+  },
+  "alt": {
+    "tr": "Duvarları tahta kaplı iç mekanda aşağı dönen ahşap merdiven; korkuluk üstünde bir kumaş asılı",
+    "en": "Timber stairs turning down in an interior with board-clad walls, with a piece of fabric hung over the railing"
+  },
+  "caption": {
+    "tr": "Duvar ve tavan tahtayla kaplı, merdiven köşede dönerek aşağı iniyor. Korkuluk direği kalın.",
+    "en": "The walls and ceiling are board-clad and the stairs turn at the corner on the way down. The railing post is thick."
+  },
+  "seoFilename": "cam-kapli-ic-mekanda-ahsap-merdiven-donus",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

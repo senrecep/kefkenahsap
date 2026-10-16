@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/10603.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş zeminde üç basamaklı ahşap merdiven",
+    "en": "Three-step timber stairs on stone paving"
+  },
+  "alt": {
+    "tr": "Taş döşeme üzerinde üç basamaklı ahşap merdiven; arkada çaprazlı korkuluk ve ahşap kapaklı dolap",
+    "en": "Three-step timber stairs on stone paving, with a cross-braced railing and a timber-doored cabinet behind"
+  },
+  "caption": {
+    "tr": "Üç geniş basamak taş zeminden yükseltiye çıkıyor. Arkada ahşap kapaklı bir dolap var.",
+    "en": "Three wide steps rise from the stone paving to the raised level. A timber-doored cabinet stands behind."
+  },
+  "seoFilename": "tas-zeminde-uc-basamakli-ahsap-merdiven",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/9657.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Metal çemberli iki ahşap varil",
+    "en": "Two timber barrels with metal hoops"
+  },
+  "alt": {
+    "tr": "Üst üste konmuş, metal çemberli iki büyük ahşap varil; arkada başka fıçılar",
+    "en": "Two large timber barrels with metal hoops placed one on top of the other, with more casks behind"
+  },
+  "caption": {
+    "tr": "Alttaki varil geniş ve yatık, üsttekini ahşap iki ayak tutuyor. Çemberler koyu metalden.",
+    "en": "The lower barrel is wide and lying and two wooden feet hold the upper one. The hoops are dark metal."
+  },
+  "seoFilename": "metal-cemberli-iki-ahsap-varil-ust-uste",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.5
+}

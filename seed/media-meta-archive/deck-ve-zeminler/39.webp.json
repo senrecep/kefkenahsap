@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/39.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kavisli yükseltilmiş deck, yuvarlak basamak ve bank",
+    "en": "Curved raised deck with a round step and bench"
+  },
+  "alt": {
+    "tr": "Bahçede bir yamaca oturan, kavisli kenarlı yükseltilmiş açık renkli deck; yuvarlak bir basamak ve arkada ahşap bank",
+    "en": "Raised pale deck with curved edges set into a slope in a garden, with a round step and a timber bench behind"
+  },
+  "caption": {
+    "tr": "Basamak deck yüzeyinden bahçe yoluna iniyor. Çevrede yuvarlak budanmış çalılar, çakıl taşları ve büyük bir toprak küp var.",
+    "en": "The step leads from the deck surface down to the garden path. Round-clipped shrubs, pebbles and a large clay pot lie around it."
+  },
+  "seoFilename": "kavisli-yukseltilmis-deck-yuvarlak-basamak-ve-bank",
+  "tags": {
+    "type": [
+      "deck",
+      "bank"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

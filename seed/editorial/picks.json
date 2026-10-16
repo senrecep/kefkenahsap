@@ -54,8 +54,8 @@
       "reason": "Ground-floor garden deck with flower boxes and seating, 2560 px wide, small watermark; replaces the stacked-watermark header."
     },
     "pergola-ve-kamelyalar": {
-      "seedKey": "pergola-ve-kamelyalar/47-1.webp",
-      "reason": "Pergola over a deck with cross railings above a planted stone wall, single watermark; the other wide pergola shots carry stacked watermarks."
+      "seedKey": "pergola-ve-kamelyalar/12794668_1111882005523064_8626405051701727182_o-2.webp",
+      "reason": "#175: dark-stained pergola beams against a clear sky, 2048 px, one small watermark; the earlier pick (47-1) was rejected by the photo review."
     },
     "korkuluk-ve-cit": {
       "seedKey": "korkuluk-ve-cit/WhatsApp Image 2026-08-07 at 17.59.57 (2).webp",
@@ -78,8 +78,8 @@
       "reason": "Slatted outdoor storage cabinet, finished and front-on, 2560 px wide."
     },
     "ireko-teak": {
-      "seedKey": "ireko-teak/WhatsApp-Image-2021-06-27-at-20.13.46-2-1.webp",
-      "reason": "Warm-toned hardwood deck laid around a topiary tree and box hedges: crisp, no camera stamp, watermark beside the tree; not a frame of any featured project's cover."
+      "seedKey": "ireko-teak/WhatsApp-Image-2021-06-08-at-23.27.44-3-1.webp",
+      "reason": "#175: curved iroko bench wrapping a garden terrace, 1600 px, rated good by the photo review; the earlier pick (20.13.46-2-1) was rejected by it."
     },
     "mobilya-ve-cila": {
       "seedKey": "mobilya-ve-cila/86fb075e-3647-40dc-b134-6ddc810b04ae.webp",
@@ -156,6 +156,16 @@
         "from": "ahsap-yapilar/55-1.webp",
         "to": "ahsap-yapilar/60.webp",
         "reason": "#172: see categoryCovers.sundurma-ve-ahsap-cati. Run after categories-rename.ts (found by the new TR slug)."
+      },
+      "pergola-ve-kamelyalar": {
+        "from": "pergola-ve-kamelyalar/47-1.webp",
+        "to": "pergola-ve-kamelyalar/12794668_1111882005523064_8626405051701727182_o-2.webp",
+        "reason": "#175: see categoryCovers.pergola-ve-kamelyalar."
+      },
+      "ireko-teak": {
+        "from": "ireko-teak/WhatsApp-Image-2021-06-27-at-20.13.46-2-1.webp",
+        "to": "ireko-teak/WhatsApp-Image-2021-06-08-at-23.27.44-3-1.webp",
+        "reason": "#175: see categoryCovers.ireko-teak."
       }
     },
     "projectCovers": {

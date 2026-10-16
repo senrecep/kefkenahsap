@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/13060.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çit önünde parlak turuncu deck köşesi",
+    "en": "Bright orange deck corner in front of a hedge"
+  },
+  "alt": {
+    "tr": "Çit önünde çimene bitişik, parlak turuncu cilalı ahşap deck köşesi",
+    "en": "Bright orange varnished timber deck corner next to the lawn in front of a hedge"
+  },
+  "caption": {
+    "tr": "Tahtalar çapraz yönde ve ince derzlerle döşenmiş. Ağaç gölgeleri yüzeye düşüyor.",
+    "en": "The boards run diagonally with fine joints. Shadows of branches fall across the surface."
+  },
+  "seoFilename": "cit-onunde-parlak-turuncu-deck-kosesi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

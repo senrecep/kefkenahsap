@@ -1,0 +1,38 @@
+{
+  "source": "Kapi Dolap ve Seperator/11621.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çalılar arasında karşı ışıkta çapraz kirişli telli ahşap kapı",
+    "en": "Wire-mesh X-braced timber gate among shrubs against the light"
+  },
+  "alt": {
+    "tr": "Toprak yol üzerinde, iki yanda çalılarla çevrili X çaprazlı telörgü dolgulu ahşap çift kanatlı alçak kapı; arkada çimlik",
+    "en": "A low double-leaf timber gate with X braces and wire-mesh infill on a dirt path"
+  },
+  "caption": {
+    "tr": "Kapı alçak ve iki kanatlı, ortasında X desen oluşuyor. Arkadan gelen ışık tel örgünün içinden geçiyor.",
+    "en": "The gate is low with two leaves and forms an X pattern in the middle. Backlight comes through the wire mesh."
+  },
+  "seoFilename": "calilar-arasinda-karsi-isikta-capraz-kirisli-telli-kapi",
+  "tags": {
+    "type": [
+      "bahçe kapısı",
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

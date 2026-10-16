@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/8499.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Duvar arasında yukarı çıkan merdiven, yanında çalılar",
+    "en": "Stairs rising between two walls, with shrubs beside"
+  },
+  "alt": {
+    "tr": "İki duvar arasındaki dar alanda yukarı çıkan ahşap merdiven; solda çalılar ve tel çit, duvarda lamba",
+    "en": "Timber stairs rising through the narrow space between two walls"
+  },
+  "caption": {
+    "tr": "Merdiven basit bir korkuluk ve düz basamaklarla duvarın üstüne çıkıyor. Solda sık yeşil çalılar duruyor.",
+    "en": "The stairs climb to the top of the wall with a plain railing and straight treads. Dense green shrubs stand on the left."
+  },
+  "seoFilename": "duvar-arasinda-yukari-cikan-ahsap-merdiven-yaninda-calilar",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

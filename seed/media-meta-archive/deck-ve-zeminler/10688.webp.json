@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/10688.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimenlik içinde cam kapıya dayalı geniş deck",
+    "en": "Wide deck in the lawn against a glass door"
+  },
+  "alt": {
+    "tr": "Çimenlik içinde cam kapıya dayalı geniş ahşap deck; tahtalar parlak ve eğik kesimle çimde bitiyor",
+    "en": "Wide timber deck set against a glass door in a lawn, the glossy boards ending in an angled cut"
+  },
+  "caption": {
+    "tr": "Deck cam kapıdan çimenin içine uzuyor, tahtaların rengi bal ile kızıl arasında. Çimde birkaç kuru yaprak var.",
+    "en": "The deck extends from the glass door into the lawn in a colour between honey and red. A few dry leaves lie on the grass."
+  },
+  "seoFilename": "cimenlik-icinde-genis-ahsap-deck-cam-kapiya-dayali-tahtalar",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

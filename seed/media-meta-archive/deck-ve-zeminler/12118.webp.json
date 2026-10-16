@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/12118.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yarısı kahverengi boyanmış çıplak deck tahtası",
+    "en": "Bare deck board half stained brown"
+  },
+  "alt": {
+    "tr": "Çıplak açık renkli çam tahtalar ve yanında kahverengi boyanmış tahtalar, boya sınırı çapraz bir çizgide",
+    "en": "Bare pale pine boards beside boards already stained brown, with the stain edge on a diagonal line"
+  },
+  "caption": {
+    "tr": "Boya fırçayla tahta tahta uygulanıyor. Boyalı kısımda damar görünmeye devam ediyor.",
+    "en": "The stain goes on board by board with a brush. The grain still shows through the coloured part."
+  },
+  "seoFilename": "yarisi-kahverengi-boyanmis-ciplak-deck-tahtasi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

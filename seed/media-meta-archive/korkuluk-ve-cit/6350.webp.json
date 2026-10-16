@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/6350.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dikey çıtalı sürgülü bahçe kapısı, küp taş döşeli giriş",
+    "en": "Sliding garden gate of vertical slats at a cobbled entrance"
+  },
+  "alt": {
+    "tr": "Küp taş döşeli girişte, siyah çerçeveli dikey ahşap çıtalı sürgülü kapının bir kanadı; uzakta kapı önünde iki kişi",
+    "en": "One leaf of a sliding gate of vertical timber slats in a black frame at a cobbled entrance"
+  },
+  "caption": {
+    "tr": "Sürgülü kapının çıtaları dikey, çerçevesi siyah metal. Kapının arkasında taş duvar ve ahşap çatılı bir yapı var.",
+    "en": "The slats of the sliding gate are vertical and the frame is black metal. A stone wall and a timber-roofed building stand behind it."
+  },
+  "seoFilename": "dikey-citali-surgulu-bahce-kapisi-kup-tas-giris",
+  "tags": {
+    "type": [
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

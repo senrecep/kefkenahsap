@@ -1,0 +1,39 @@
+{
+  "source": "Korkuluk ve Cit/886.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz yanı restoranda korkuluk, bank ve masalar",
+    "en": "Railing, bench and tables at a poolside restaurant"
+  },
+  "alt": {
+    "tr": "Havuz kenarındaki restoran terasında çapraz çıtalı açık tonlu ahşap korkuluk, ahşap bank ve örtülü yemek masaları",
+    "en": "Light cross-braced timber railing, a timber bench and cloth-covered dining tables on a poolside restaurant terrace"
+  },
+  "caption": {
+    "tr": "Korkuluk teras kenarını çeviriyor, bank bir masanın yanında duruyor. Arkada havuz ve şemsiyeler görünüyor.",
+    "en": "The railing runs around the terrace edge, and a bench sits by a table. The pool and parasols show behind."
+  },
+  "seoFilename": "havuz-yani-restoranda-ahsap-korkuluk-bank-ve-masalar",
+  "tags": {
+    "type": [
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

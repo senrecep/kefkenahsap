@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/5849.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz örtü üzerine döşenmiş ahşap kirişler",
+    "en": "Timber joists laid on white sheeting"
+  },
+  "alt": {
+    "tr": "Taş duvarın yanında, beyaz örtü üzerinde küçük ahşap bloklara oturtulmuş enine ve boyuna kirişler",
+    "en": "Crosswise and lengthwise joists set on small timber blocks over white sheeting beside a stone wall"
+  },
+  "caption": {
+    "tr": "Kirişler yerden bir kademe yükseltilmiş, bina cephesine doğru uzanıyor. Sağda deck tahtaları ilk sırada duruyor.",
+    "en": "The joists are raised one step off the ground and run towards the building front. The first deck boards sit at the right."
+  },
+  "seoFilename": "tas-duvar-yaninda-beyaz-ortu-uzerine-dosenmis-ahsap-kirisler",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

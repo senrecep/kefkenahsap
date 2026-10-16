@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/13931.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapılı binanın önünde lavanta etrafında turuncu deck",
+    "en": "Orange deck round lavender in front of a glass-doored building"
+  },
+  "alt": {
+    "tr": "Cam kapılı binanın önünde lavanta etrafında dolanan turuncu deck; uzakta bir kişi, yerde metal kap",
+    "en": "Orange deck running round lavender in front of a glass-doored building, with a metal bowl on the grass"
+  },
+  "caption": {
+    "tr": "Deck lavanta kümesini üç yandan saran bir yürüme yolu oluşturuyor. Kapıdan çimene kadar uzanan temiz bir geçiş sağlıyor.",
+    "en": "The deck makes a walkway round three sides of the lavender bed. It gives a clean passage from the door out to the lawn."
+  },
+  "seoFilename": "cam-kapili-binanin-onunde-lavanta-etrafinda-turuncu-deck",
+  "tags": {
+    "type": [
+      "deck",
+      "yürüyüş yolu"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

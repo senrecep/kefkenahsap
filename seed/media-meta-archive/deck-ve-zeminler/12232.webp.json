@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/12232.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sarımsı çam deck ve yaprakların altındaki korkuluk",
+    "en": "Yellowish pine deck and railing under leaves"
+  },
+  "alt": {
+    "tr": "Sarımsı tonlu çam deck, yaprakları deck üstüne sarkan ağaç gövdesi ve çıtalı korkuluk",
+    "en": "Yellowish pine deck with a tree trunk whose leaves hang over it, and a slatted railing"
+  },
+  "caption": {
+    "tr": "Tahtaların üzerindeki damar ve budaklar net görünüyor. Korkuluk deck'in iki kenarını köşede birleşerek çeviriyor.",
+    "en": "Grain and knots stand out on the boards. The railing meets at the corner and encloses two edges of the deck."
+  },
+  "seoFilename": "sarimsi-cam-deck-yapraklar-altinda-korkuluk",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

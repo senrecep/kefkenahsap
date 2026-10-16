@@ -1,0 +1,33 @@
+{
+  "source": "Ahsap Yapilar/7529.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "OSB levhayla kaplı piramit çatı",
+    "en": "Pyramid roof clad in OSB boards"
+  },
+  "alt": {
+    "tr": "OSB levhalarla kaplanmış dört yöne eğimli piramit çatı; arka planda su ve ağaçlar",
+    "en": "Hipped pyramid roof clad in OSB boards, with water and trees in the background"
+  },
+  "caption": {
+    "tr": "Çatı yüzeyi OSB levhalarla örtülmüş, kenarlarda köşe birleşimleri belli. Arkada çalılıklar ve mavi bir su yüzeyi görünüyor.",
+    "en": "The roof surface is covered with OSB boards and the hip joints are visible. Shrubs and a stretch of blue water show behind."
+  },
+  "seoFilename": "osb-levhayla-kapli-piramit-cati-arkada-su-ve-agaclar",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

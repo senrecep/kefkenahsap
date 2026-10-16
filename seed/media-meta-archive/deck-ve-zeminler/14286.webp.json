@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14286.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Palmiye ve çimen önünde havuz deck'i",
+    "en": "Poolside deck in front of a palm and lawn"
+  },
+  "alt": {
+    "tr": "Çimenlik bahçede bir palmiyenin arkasında, havuzun kenarını saran ve sağda çatılı bir yapıya ulaşan koyu deck",
+    "en": "Dark deck wrapping the pool edge behind a palm in a lawned garden and reaching a roofed structure on the right"
+  },
+  "caption": {
+    "tr": "Deck havuzu çimenden ayırıyor ve sağdaki sundurmanın altına giriyor. Havuz suyu uzakta mavi bir şerit gibi görünüyor.",
+    "en": "The deck separates the pool from the lawn and runs under the canopy on the right. The pool water shows as a blue strip in the distance."
+  },
+  "seoFilename": "palmiye-ve-cimen-onunde-havuz-kenari-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

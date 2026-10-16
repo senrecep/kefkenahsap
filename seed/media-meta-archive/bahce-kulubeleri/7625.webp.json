@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/7625.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deniz kıyısında yeşil çatılı, üstü camlı kabin",
+    "en": "Cabin by the sea with a green roof and glazed top"
+  },
+  "alt": {
+    "tr": "Deniz kıyısında duran, yeşil shingle çatılı, yatay kaplamalı ve üst kısmı camlı ahşap kabin",
+    "en": "Timber cabin at the water's edge with a green shingle roof, horizontal cladding and a glazed upper part"
+  },
+  "caption": {
+    "tr": "Kabinin alınlığı cam paneller taşıyor, çatı yeşil. Önde çiçek açmış bir çalı, arkada koy ve yapılar görünüyor.",
+    "en": "The gable of the cabin carries glass panels and the roof is green. A flowering shrub is in front with a bay and buildings behind."
+  },
+  "seoFilename": "deniz-kiyisinda-yesil-shingle-catili-ustu-camli-yatay",
+  "tags": {
+    "type": [
+      "bahçe kulübesi / depo"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

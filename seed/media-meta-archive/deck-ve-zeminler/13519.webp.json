@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/13519.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapı yanında deck kenarı ve altındaki boşluk",
+    "en": "Deck edge beside a glass door with the void beneath"
+  },
+  "alt": {
+    "tr": "Cam kapı yanında deck kenarı, altta boşluk, taşlar ve metal profil görünüyor",
+    "en": "Deck edge beside a glass door with the void beneath it, stones and a metal profile showing"
+  },
+  "caption": {
+    "tr": "Deck kapı eşiğine kadar uzanıyor ve altındaki boşluk açıkta. Tahtalar farklı genişliklerde ve eşit olmayan derzlerle döşenmiş.",
+    "en": "The deck runs right up to the door threshold and the void beneath is exposed. The boards are of different widths with uneven joints."
+  },
+  "seoFilename": "cam-kapi-yaninda-deck-kenari-ve-altindaki-bosluk",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "giriş"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

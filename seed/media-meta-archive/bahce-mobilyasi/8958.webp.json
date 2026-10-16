@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/8958.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Katlanır sandalye sırtları ve masa kenarı",
+    "en": "Folding chair backs and table edge"
+  },
+  "alt": {
+    "tr": "Katlanır ahşap sandalyelerin dikey çıtalı sırtları ve masanın çıtalı kenarı, yakın plan",
+    "en": "Close view of the vertical-slatted backs of folding timber chairs and the slatted edge of a table"
+  },
+  "caption": {
+    "tr": "Sandalye sırtları ince dikey çıtalardan. Masanın kenarında çıtalar bir çerçeveyle çevrili.",
+    "en": "The chair backs are made of thin vertical slats. On the table, the slats are framed by a border."
+  },
+  "seoFilename": "katlanir-sandalye-sirtlari-ve-masa-kenari-yakin-plan",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

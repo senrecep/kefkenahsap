@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/8940.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yatay ahşap cephe kaplama, pencereler ve bakır renkli boru",
+    "en": "Horizontal timber facade cladding with windows and a copper-coloured pipe"
+  },
+  "alt": {
+    "tr": "Açık tonlu yatay ahşap kaplamalı cephe, solda cam tuğlalı pencereler ve beyaz duvar, kenarda bakır renkli yağmur borusu",
+    "en": "Light-toned horizontal timber-clad facade with windows with glass blocks and a white wall on the left"
+  },
+  "caption": {
+    "tr": "Kaplama ile beyaz duvar yan yana ve boru iki yüzeyin birleştiği çizgide iniyor.",
+    "en": "The cladding and the white wall sit side by side, and the pipe runs down the line where they meet."
+  },
+  "seoFilename": "yatay-ahsap-cephe-kaplama-yan-yana-pencere-ve-bakir-yagmur",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

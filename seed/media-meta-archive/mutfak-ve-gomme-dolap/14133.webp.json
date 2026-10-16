@@ -1,0 +1,40 @@
+{
+  "source": "Ireko-Teak/14133.webp",
+  "category": "mutfak-ve-gomme-dolap",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Teller önünde uzun dolap ve üstü",
+    "en": "Long cabinet and its top in front of wire fencing"
+  },
+  "alt": {
+    "tr": "Tel çit önünde küp taş zeminde uzun ahşap kaplı dolap ve üst tablası",
+    "en": "A long timber-clad cabinet and its top on cobblestone paving in front of wire fencing"
+  },
+  "caption": {
+    "tr": "Uzun dolap tel çit boyunca uzanıyor, üst tabla tek parça gibi görünüyor. Yan yüzü yatay tahtalarla kaplı.",
+    "en": "The long cabinet runs along the wire fence and the top looks like a single piece. Its side is clad in horizontal boards."
+  },
+  "seoFilename": "teller-onunde-uzun-ahsap-kapli-dolap-ve-ustu-kup-tas-zemin",
+  "tags": {
+    "type": [
+      "gömme dolap / gardırop",
+      "bank",
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş",
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

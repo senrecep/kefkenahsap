@@ -1,0 +1,36 @@
+{
+  "source": "Ahsap Yapilar/9163.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ahşap tavan ve köşedeki gri profil",
+    "en": "Timber ceiling and grey metal profile in the corner"
+  },
+  "alt": {
+    "tr": "Yatay tahtalı ahşap tavan kaplaması ile köşede uzanan koyu gri metal profil, yan duvarda cephe tahtaları",
+    "en": "Horizontal timber ceiling boards meeting a dark grey metal profile in the corner, with the same boards on the side wall"
+  },
+  "caption": {
+    "tr": "Tavan tahtaları yatay uzanıyor, köşede koyu gri bir metal profil var. Yan yüzeyde de aynı ahşap devam ediyor.",
+    "en": "The ceiling boards run horizontally and a dark grey metal profile sits in the corner. The same timber continues on the side wall."
+  },
+  "seoFilename": "ahsap-tavan-kosede-gri-metal-profil",
+  "tags": {
+    "type": [
+      "tavan kaplaması / lambri",
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Merdivenler/14882.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "İç mekanda dönerli ahşap merdiven ve işlemeli korkuluk",
+    "en": "Indoor timber stairs with turned balusters"
+  },
+  "alt": {
+    "tr": "İç mekanda vernikli ahşap merdiven; işlenmiş korkuluk çubukları, topuz başlı direk, yerde koruma örtüsü",
+    "en": "Indoor varnished timber staircase with turned balusters, a ball-topped newel post and a protective sheet on the floor"
+  },
+  "caption": {
+    "tr": "Merdivenin korkuluk çubukları tornalanmış, direk topuz başlı. Zemin, iş sürerken örtüyle korunmuş.",
+    "en": "The balusters are turned and the newel post has a ball finial. The floor is covered with a sheet while the work goes on."
+  },
+  "seoFilename": "icmekanda-oymali-baklava-korkuluklu-ahsap-merdiven",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

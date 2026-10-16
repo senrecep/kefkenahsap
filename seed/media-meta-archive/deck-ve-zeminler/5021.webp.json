@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/5021.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz kenarı platformunda bank takımı",
+    "en": "Bench set on a poolside platform"
+  },
+  "alt": {
+    "tr": "Havuzun karşı kıyısında kavisli kenarlı deck platformu üzerinde bank takımı ve kapalı şemsiyeler; arkada villa",
+    "en": "Bench set and closed parasols on a deck platform with a curved edge on the far side of the pool, with a villa"
+  },
+  "caption": {
+    "tr": "Platform çimenden suyun üstüne uzanıyor. Arka planda taş kaplı bahçe duvarı ve demir çit sıralanıyor.",
+    "en": "The platform extends from the lawn out over the water. A stone-clad garden wall and iron fence line up behind."
+  },
+  "seoFilename": "havuz-kenari-platformda-bank-takimi-ve-kapali-semsiyeler",
+  "tags": {
+    "type": [
+      "deck",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

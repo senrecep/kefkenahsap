@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/11004.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ahşap tavanlı sekizgen kamelyada sabit oturma bankları",
+    "en": "Octagonal gazebo with fixed benches and a timber ceiling"
+  },
+  "alt": {
+    "tr": "Ahşap lambri tavanlı sekizgen kamelyanın içinde çevreyi dolanan sabit banklar ve düzensiz taş döşeli zemin",
+    "en": "Inside an octagonal gazebo with a timber lining ceiling, fixed benches around the edge and irregular stone paving"
+  },
+  "caption": {
+    "tr": "Kirişler çatıyı çevreden merkeze taşıyor. Dışarıda ağaçlık bir alan görünüyor.",
+    "en": "The beams carry the roof from the edge towards the centre. A wooded area can be seen outside."
+  },
+  "seoFilename": "ahsap-tavanli-sekizgen-kamelya-sabit-bankler",
+  "tags": {
+    "type": [
+      "kamelya",
+      "bank",
+      "tavan kaplaması / lambri"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

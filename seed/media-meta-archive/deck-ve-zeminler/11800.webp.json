@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/11800.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Toprak üzerine döşenmiş çizgili kahverengi deck",
+    "en": "Striped brown deck laid over bare ground"
+  },
+  "alt": {
+    "tr": "Seramik zemin kenarında, toprak alana döşenmiş koyu çizgili kahverengi ahşap deck",
+    "en": "Dark-striped brown timber deck laid on bare ground at the edge of a ceramic floor"
+  },
+  "caption": {
+    "tr": "Tahtalar uzun yönde sıralanmış, ön kenar düz bir çıta ile kapatılmış. Önünde toprak alan duruyor.",
+    "en": "The boards run lengthwise and the front edge is closed with a straight trim. Bare soil lies in front."
+  },
+  "seoFilename": "toprak-uzerine-cizgili-kahverengi-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

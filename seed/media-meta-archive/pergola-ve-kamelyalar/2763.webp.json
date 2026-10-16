@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/2763.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Körfez kenarında palmiye yanında korkuluklu ahşap kamelya",
+    "en": "Railed timber gazebo beside a palm on the edge of a bay"
+  },
+  "alt": {
+    "tr": "Körfez kıyısında palmiyenin yanında korkuluklu ahşap kamelya, bir işçi çatıda çalışıyor, uzakta beyaz evler",
+    "en": "Railed timber gazebo beside a palm on the edge of a bay, with a worker on the roof and white houses in the distance"
+  },
+  "caption": {
+    "tr": "Kamelyanın zemini suya doğru uzanıyor, çatısı tek eğimli. Kıyı boyunca taş döşeli bir yol var.",
+    "en": "The gazebo floor reaches out toward the water and the roof has a single pitch. A stone-paved path runs along the shore."
+  },
+  "seoFilename": "korfez-kenarinda-palmiye-yaninda-korkuluklu-kamelya",
+  "tags": {
+    "type": [
+      "kamelya",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,36 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/6188.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölyede uzun bölmeli kasa ve raflı ünite",
+    "en": "Long compartmented box and shelf unit in the workshop"
+  },
+  "alt": {
+    "tr": "Atölyede zeminde duran uzun, bölmeli ahşap kasa ve bir ucunda raflı ahşap ünite",
+    "en": "Long compartmented timber box on the workshop floor with a shelved timber unit at one end"
+  },
+  "caption": {
+    "tr": "Kasa üç dört bölmeli ve kapaksız, uç tarafta iki raflı bir dolap gövdesi var. Henüz boyası veya cilası yok.",
+    "en": "The box has three or four compartments and no lid, with a two-shelf cabinet body at the end. It has no paint or finish yet."
+  },
+  "seoFilename": "atolyede-uzun-bolmeli-ahsap-kasa-ve-rafli-unite",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı",
+      "raf / kitaplık"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

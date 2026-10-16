@@ -1,0 +1,40 @@
+{
+  "source": "Deck ve Zeminler/4297.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çapraz korkuluk köşesi, yakın plan",
+    "en": "Cross-braced railing corner, close-up"
+  },
+  "alt": {
+    "tr": "Deckin köşesindeki kalın direk ve çapraz çıtalı korkuluk, yakından; arkada kiremit çatılı villa",
+    "en": "The thick post and cross-braced railing at the corner of a deck, seen up close, with a tile-roofed villa behind"
+  },
+  "caption": {
+    "tr": "Köşe direği deck kirişine oturuyor, çaprazlar iki yönde çıtalarla bağlı. Deckin kenarındaki bağlantı ayakları toprakta görünüyor.",
+    "en": "The corner post is seated on the deck beam and the braces are joined by slats in two directions. The connecting legs at the deck edge show in the soil."
+  },
+  "seoFilename": "capraz-korkuluk-kosesi-ve-deck-kenari-yakin-plan",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "orman / kır"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

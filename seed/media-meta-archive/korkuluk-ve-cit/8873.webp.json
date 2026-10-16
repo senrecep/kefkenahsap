@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/8873.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dükkan önünde duvara dayalı kare gözlü ahşap kafes panel",
+    "en": "Square-mesh timber lattice panel leaning on a wall in front of a shop"
+  },
+  "alt": {
+    "tr": "Dükkan camı ve girişi önünde duvara yaslanmış, kare gözlü açık renk ahşap kafes panel; yerde karton kutu",
+    "en": "A light timber lattice panel with square cells leaning in front of a shop window and entrance"
+  },
+  "caption": {
+    "tr": "Panel ayakta, dükkan vitrinine yaslı. Gözler kare ve eşit aralıklı, kenar çıtası geniş.",
+    "en": "The panel stands upright leaning on the shop window. The cells are square and evenly spaced, and the edge slat is wide."
+  },
+  "seoFilename": "dukkan-onunde-duvara-dayali-kare-gozlu-kafes-panel",
+  "tags": {
+    "type": [
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

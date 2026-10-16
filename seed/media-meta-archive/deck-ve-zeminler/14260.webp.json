@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14260.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Koyu deck üzerinde ahşap masa",
+    "en": "Timber table on a dark deck"
+  },
+  "alt": {
+    "tr": "Evin yan cephesinde uzanan koyu kahverengi deck, üzerinde ahşap yemek masası ve beyaz katlanır sandalye",
+    "en": "Dark brown deck along the side of a house with a timber dining table and a white folding chair"
+  },
+  "caption": {
+    "tr": "Deck çimenden eve kadar uzanıyor ve masa takımına yer açıyor. Duvar dibinde sıralı çalılar görünüyor.",
+    "en": "The deck extends from the lawn to the house and gives room for the table set. A row of shrubs lines the wall."
+  },
+  "seoFilename": "koyu-deck-uzerinde-ahsap-masa-ve-beyaz-sandalye",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

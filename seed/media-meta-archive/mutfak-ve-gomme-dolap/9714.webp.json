@@ -1,0 +1,40 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/9714.webp",
+  "category": "mutfak-ve-gomme-dolap",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dükkan önünde üç katlı basamak biçimli raf",
+    "en": "Three-tier stepped shelf in front of a shop"
+  },
+  "alt": {
+    "tr": "Dükkan girişinde, mozaik zemin üzerinde duran üç katlı, basamak biçimli açık renk ahşap raf",
+    "en": "A three-tier stepped light timber shelf standing on a mosaic floor at a shop entrance"
+  },
+  "caption": {
+    "tr": "Raf A biçiminde, üç katı da açık ve basamak gibi içeri doğru daralıyor. Arkada dükkan camı görünüyor.",
+    "en": "The shelf is A-shaped, with its three open tiers narrowing inwards like steps. The shop window shows behind."
+  },
+  "seoFilename": "dukkan-onunde-uc-katli-basamak-bicimli-acik-renk-ahsap-raf",
+  "tags": {
+    "type": [
+      "raf / kitaplık"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "giriş",
+      "ticari mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.6
+}

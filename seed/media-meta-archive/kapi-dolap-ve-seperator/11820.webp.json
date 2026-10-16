@@ -1,0 +1,38 @@
+{
+  "source": "Kapi Dolap ve Seperator/11820.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Parkta ahşap çıtalı yuvarlak çöp kovası",
+    "en": "Round litter bin with timber staves in a park"
+  },
+  "alt": {
+    "tr": "Parkta çimen ve parke taş yolu kenarında, çevresi dikey ahşap çıtalarla kaplı metal çöp kovası, içinde mavi poşet",
+    "en": "Metal litter bin clad all round with vertical timber staves beside a lawn and cobbled path in a park, with a blue bag inside"
+  },
+  "caption": {
+    "tr": "Metal kovanın çevresi dikey çıtalarla çevrelenmiş ve cıvatalarla sabit. Çöp poşeti üstten görünüyor.",
+    "en": "The metal bin is wrapped in vertical staves held with bolts. The bin liner shows at the top."
+  },
+  "seoFilename": "parkta-ahsap-citali-yuvarlak-cop-kovasi",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "ticari mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

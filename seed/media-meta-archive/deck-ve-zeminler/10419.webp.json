@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/10419.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapı önünde döşenmiş deck, kenarlarda toprak",
+    "en": "Deck laid in front of a glass door, soil at the edges"
+  },
+  "alt": {
+    "tr": "Cam kapı önünde döşenmiş ahşap deck; kenarlarında toprak ve bir çalı görünüyor",
+    "en": "Timber deck laid in front of a glass door, with soil and a shrub visible at its edges"
+  },
+  "caption": {
+    "tr": "Deck kapının tam önünde dikdörtgen bir alan kaplıyor. Çevre düzenlemesi henüz yapılmamış.",
+    "en": "The deck covers a rectangle right in front of the door. The surrounding landscaping has not been done yet."
+  },
+  "seoFilename": "cam-kapi-onunde-dosenmis-ahsap-deck-kenarlarda-toprak-ve",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

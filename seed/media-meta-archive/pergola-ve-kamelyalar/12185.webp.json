@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/12185.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bahçede yarım daire taş duvarlı oturma alanı üzerinde pergola",
+    "en": "Pergola over a half-round stone-walled seating area in a garden"
+  },
+  "alt": {
+    "tr": "Çimlik bahçede yarım daire taş duvarlı oturma alanının üstünde koyu vernikli pergola, arkada modern bir ev",
+    "en": "Dark varnished pergola over a half-round stone-walled seating area on a lawn, with a modern house behind"
+  },
+  "caption": {
+    "tr": "Oturma alanı taş zeminle çevrili, önünde beyaz çakıl şeridi var. Pergola kirişleri alana gölge veriyor.",
+    "en": "The seating area is ringed by stone paving with a strip of white pebbles in front. The pergola beams shade the space."
+  },
+  "seoFilename": "bahcede-yari-daire-oturma-alani-uzerinde-pergola",
+  "tags": {
+    "type": [
+      "pergola",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/13827.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Uzun bahçe yolu boyunca korkuluklu vernikli pergola, uzakta havuz",
+    "en": "Varnished railed pergola along a long garden path with a pool in the distance"
+  },
+  "alt": {
+    "tr": "Uzun yol boyunca sıralanan korkuluklu vernikli pergola, uzakta havuz ve yanında lamba direkleri",
+    "en": "Varnished railed pergola along a long path, with a pool in the distance and lamp posts beside it"
+  },
+  "caption": {
+    "tr": "Pergola kesintisiz bir hat oluşturuyor, yol kenarında aydınlatma direkleri var. Zemin ahşap desenli seramik.",
+    "en": "The pergola forms an unbroken line with lighting posts along the path. The floor is wood-pattern ceramic."
+  },
+  "seoFilename": "uzun-bahce-yolu-boyunca-korkuluklu-pergola-havuz",
+  "tags": {
+    "type": [
+      "pergola",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "havuz kenarı"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12288.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Pembe çiçeklerin yanında koyu kahverengi yağlı deck",
+    "en": "Dark brown oiled deck beside pink flowers"
+  },
+  "alt": {
+    "tr": "Gri duvar kenarında koyu kahverengi deck; önde pembe çiçekler ve çimen içinde basamak taşları",
+    "en": "Dark brown deck beside a grey wall, with pink flowers and stepping stones across the lawn in front"
+  },
+  "caption": {
+    "tr": "Deck çimenin bir köşesinde küçük bir oturma zemini oluşturuyor. Taşlar çimenin içinden zemine yol veriyor.",
+    "en": "The deck makes a small seating floor in a corner of the lawn. Stepping stones lead across the grass to it."
+  },
+  "seoFilename": "pembe-cicekler-yaninda-koyu-kahverengi-yagli-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

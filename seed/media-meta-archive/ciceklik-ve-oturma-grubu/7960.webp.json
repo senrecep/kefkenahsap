@@ -1,0 +1,39 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/7960.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dükkân duvarı önünde küçük açık renk çiçeklik",
+    "en": "Small light planter in front of a shop wall"
+  },
+  "alt": {
+    "tr": "Dükkân duvarının önünde duran, açık renkli yatay tahtalı küçük ahşap çiçeklik",
+    "en": "Small light timber planter with horizontal boards standing in front of a shop wall"
+  },
+  "caption": {
+    "tr": "Çiçeklik küçük ve kutu biçiminde, yatay tahtaları yeşilimsi. Arkadaki duvar eski ve boyası dökülmüş.",
+    "en": "The planter is small and box-shaped with greenish horizontal boards. The wall behind is old and the paint is flaking."
+  },
+  "seoFilename": "dukkan-duvari-onunde-acik-renkli-yatay-tahtali-kucuk-ahsap",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

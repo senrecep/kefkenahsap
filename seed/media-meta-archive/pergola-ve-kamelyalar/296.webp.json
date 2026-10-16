@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/296.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sekizgen kamelya tavan lambrisi ve kafes paneller, sıcak ışıkta",
+    "en": "Octagonal gazebo ceiling lining and lattice panels in warm light"
+  },
+  "alt": {
+    "tr": "Sekizgen kamelyanın içinden bal rengi lambri tavan, kirişler ve alt kısımda kafes paneller; sıcak ışık",
+    "en": "Inside an octagonal gazebo: honey-toned lining-board ceiling, beams and lattice panels below, in warm light"
+  },
+  "caption": {
+    "tr": "Tavan lambrisi merkezden dışa doğru sekiz bölüme ayrılıyor. Kirişler köşelere payandalarla bağlanıyor.",
+    "en": "The ceiling lining divides into eight sections from the centre outward. Beams are tied to the corners with braces."
+  },
+  "seoFilename": "sekizgen-kamelya-tavan-lambrisi-kafes-paneller",
+  "tags": {
+    "type": [
+      "kamelya",
+      "tavan kaplaması / lambri",
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

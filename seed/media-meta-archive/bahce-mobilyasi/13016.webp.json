@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/13016.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Seramik üstlü, koyu kahve kasalı sehpa, yandan görünüş",
+    "en": "Ceramic-topped table with a dark brown frame, side view"
+  },
+  "alt": {
+    "tr": "Yandan bakılınca seramik karo kaplı üst yüzey ve koyu kahve ahşap kasa görünüyor; altta küçük tekerlekler var",
+    "en": "From the side, the ceramic-tiled top and dark brown timber frame, with small casters underneath"
+  },
+  "caption": {
+    "tr": "Kasanın kenarı kalın tahtadan, üst yüzey seramikle sıvanmış gibi düz. Altındaki tekerlekler sehpanın yerini değiştirmeyi kolaylaştırıyor.",
+    "en": "The frame edge is thick board and the ceramic top sits flat. The casters underneath make the table easy to move."
+  },
+  "seoFilename": "seramik-ustlu-koyu-kahve-ahsap-kasali-sehpa-yandan",
+  "tags": {
+    "type": [
+      "sehpa"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Kopru ve Iskele/8371.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Turkuaz mozaik havuzda palmiyeli saksı ve deck kenarı",
+    "en": "Palm planter in a turquoise mosaic pool beside the deck edge"
+  },
+  "alt": {
+    "tr": "Turkuaz mozaikli havuzun içinde yuvarlak taş çerçeveli palmiyeli saksı; solda kamışlar, sağda yuvarlak taş kenarlı havuzcuk",
+    "en": "A palm in a round stone-edged planter inside a turquoise mosaic pool"
+  },
+  "caption": {
+    "tr": "Palmiye havuzun içindeki yuvarlak bir saksıda duruyor. Havuzun kenarı kayrak taş ve ahşap deckle çevrili.",
+    "en": "The palm stands in a round planter set in the pool. The pool edge is framed with slate stone and timber decking."
+  },
+  "seoFilename": "turkuaz-mozaik-havuzda-palmiyeli-saksi-deck-kenari",
+  "tags": {
+    "type": [
+      "köprü",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.55
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/10525.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Koyu yanık efektli koltuk, ahşap ayaklı, mozaik zeminde",
+    "en": "Dark charred-effect armchair on wooden legs over a mosaic floor"
+  },
+  "alt": {
+    "tr": "Koyu tonlu yanık efektli ahşap koltuk; kırmızımsı ahşap ayaklar üzerinde, yanında çimden bir parça ve kütük var",
+    "en": "A dark charred-effect timber armchair on reddish wooden legs, with a patch of artificial grass and a log beside it"
+  },
+  "caption": {
+    "tr": "Koltuğun yüksek sırtı ve yuvarlak kolçakları var. Alt iskelet kırmızımsı tonda, koltuk ise daha koyu.",
+    "en": "The armchair has a high back and rounded arms. The base frame is reddish while the chair itself is darker."
+  },
+  "seoFilename": "koyu-yanik-efektli-koltuk-ahsap-ayakli-mozaik-zemin",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

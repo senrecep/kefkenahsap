@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/14557.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar önünde beyaz çaprazlı bahçe kapısı",
+    "en": "White braced garden gate in front of a stone wall"
+  },
+  "alt": {
+    "tr": "Taş duvarın ve sarmaşığın önünde, çapraz kuşaklı beyaz boyalı çıtalı bahçe kapısı, yanında yeşil çöp kovası",
+    "en": "White-painted picket garden gate with a diagonal brace in front of a stone wall and ivy, with a green bin beside it"
+  },
+  "caption": {
+    "tr": "Kapı düz traverten benzeri bir döşemenin başında, çapraz kuşak iki kanadı bağlıyor.",
+    "en": "The gate stands at the end of a flat paved area, and the diagonal brace ties its two leaves together."
+  },
+  "seoFilename": "tas-duvar-onunde-beyaz-caprazli-bahce-kapisi",
+  "tags": {
+    "type": [
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

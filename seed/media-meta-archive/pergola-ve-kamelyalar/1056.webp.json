@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/1056.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kıyıda direkleri dikilmiş deck ve kirişlerin üzerinde çalışan usta",
+    "en": "Shoreline deck with posts up and a craftsman working on it"
+  },
+  "alt": {
+    "tr": "Deniz kıyısında yapım aşamasında geniş deck zemin, dik direkler ve kirişler, zeminde çalışan bir usta",
+    "en": "Wide deck floor under construction on the shoreline, with upright posts and beams and a craftsman working on the boards"
+  },
+  "caption": {
+    "tr": "Zeminde talaş ve kesim izleri var. Direkler ve üst kirişler zemin boyunca sıralanıyor.",
+    "en": "There is sawdust and cut marks on the floor. Posts and overhead beams run along the length of the deck."
+  },
+  "seoFilename": "kiyida-direkleri-dikilmis-deck-calisan-usta",
+  "tags": {
+    "type": [
+      "pergola",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

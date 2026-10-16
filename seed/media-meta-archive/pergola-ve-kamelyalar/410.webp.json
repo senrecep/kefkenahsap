@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/410.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Güllü bahçede geniş çıtalı çatılı ahşap pergola",
+    "en": "Wide slatted-roof timber pergola in a rose garden"
+  },
+  "alt": {
+    "tr": "Gül çalıları arasında geniş, çıtalı çatılı açık renk ahşap pergola, payandalı köşe ve arkada kafes panel",
+    "en": "Wide light timber pergola with a slatted roof among rose bushes, with a braced corner and a lattice panel behind"
+  },
+  "caption": {
+    "tr": "Çatı çıtaları iki yönde yan yana sıralanıyor, köşelerde payandalar var. Altında taş basamaklı bir alan görünüyor.",
+    "en": "The roof slats lie side by side in two directions with braces at the corners. A stone-stepped area shows below."
+  },
+  "seoFilename": "gullu-bahcede-genis-citali-catili-ahsap-pergola",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

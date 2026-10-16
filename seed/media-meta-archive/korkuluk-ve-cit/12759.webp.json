@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/12759.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz çıtalı kafes panelin çerçeve ve ayak yakın çekimi",
+    "en": "Close-up of the white slatted lattice panel's frame and foot"
+  },
+  "alt": {
+    "tr": "Beyaz boyalı çaprazlı kafes panelin çerçevesi ve ayağı yakından; çıtalar eşkenar dörtgen gözler oluşturuyor, arkada atölye",
+    "en": "Close view of the frame and foot of a white-painted diagonal lattice panel"
+  },
+  "caption": {
+    "tr": "Gözler küçük ve eşit, çıtaların kesişme yerleri düzgün. Çerçeve kalın bir kenar profiliyle bitiyor.",
+    "en": "The cells are small and even and the slat crossings are neat. The frame ends in a thick edge profile."
+  },
+  "seoFilename": "beyaz-citali-kafes-panelin-cerceve-ve-ayak-yakin",
+  "tags": {
+    "type": [
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

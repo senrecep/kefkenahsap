@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/15139.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Mavi naylonda üç koyu çiçeklik, içleri siyah",
+    "en": "Three dark planters on blue plastic, black inside"
+  },
+  "alt": {
+    "tr": "Mavi naylon üzerinde üç adet koyu kare ahşap çiçeklik; içleri siyah astarlı, arkada kereste rafı",
+    "en": "Three dark square timber planters on blue plastic, black-lined inside, with a timber rack behind"
+  },
+  "caption": {
+    "tr": "Çiçeklikler eşit aralıkla dizilmiş, tabanlarında tahta takozlar var. Arkada kereste rafı ve dolap duruyor.",
+    "en": "The planters stand at equal intervals with timber blocks under them. A timber rack and a cabinet stand behind."
+  },
+  "seoFilename": "mavi-naylon-uzerinde-uc-adet-koyu-kare-ahsap-ciceklik-icleri",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

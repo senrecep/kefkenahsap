@@ -1,0 +1,39 @@
+{
+  "source": "Korkuluk ve Cit/12623.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ağaçlık bahçede yüksek zeminli oyun evi, rampa ve kaydırak",
+    "en": "Raised playhouse with a ramp and slide in a wooded garden"
+  },
+  "alt": {
+    "tr": "Ayaklar üzerinde yükseltilmiş ahşap oyun evine tırmanma rampası ve yeşil kaydırak bağlı; çevre ağaçlık",
+    "en": "A timber playhouse raised on posts with a climbing ramp and a green slide, in a garden among trees"
+  },
+  "caption": {
+    "tr": "Oyun evi zeminden yukarıda duruyor. Çocuklar rampadan tırmanıp kaydırakla iniyor.",
+    "en": "The playhouse stands above the ground. Children climb up the ramp and come down the slide."
+  },
+  "seoFilename": "agaclik-bahcede-yuksek-zeminli-oyun-evi-rampa",
+  "tags": {
+    "type": [
+      "çocuk oyun evi"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/13259.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çit önünde farklı tonlu tahtalardan koyu kırmızı deck",
+    "en": "Dark red deck of mixed-tone boards in front of a hedge"
+  },
+  "alt": {
+    "tr": "Çit önünde çimene bitişik, koyu kırmızı kahverengi ve tonları farklı tahtalardan döşenmiş deck",
+    "en": "Deck laid in front of a hedge beside the lawn, made of dark red-brown boards of varying tone"
+  },
+  "caption": {
+    "tr": "Tahtalar farklı boylarda ve kesişen derzlerle döşenmiş, yağ yüzeyde parlıyor. Deck düz bir köşe çiziyor.",
+    "en": "The boards are laid in mixed lengths with staggered joints and the oil shines on the surface. The deck makes a clean corner."
+  },
+  "seoFilename": "cit-onunde-farkli-tonlu-tahtalardan-koyu-kirmizi-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

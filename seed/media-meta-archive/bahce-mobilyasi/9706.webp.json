@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/9706.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yeşil çitin önünde dikdörtgen masa ve sandalyeler",
+    "en": "Rectangular table and chairs in front of a green hedge"
+  },
+  "alt": {
+    "tr": "Yüksek yeşil çitin önündeki teraste dikdörtgen ahşap masa ve kollu sandalyeler",
+    "en": "Rectangular timber table and armchairs on a terrace in front of a tall green hedge"
+  },
+  "caption": {
+    "tr": "Masanın ortasında şemsiye deliği var. Sandalyeler kollu ve katlanır tipte.",
+    "en": "There is a parasol hole in the middle of the table. The chairs are armchairs of the folding type."
+  },
+  "seoFilename": "yesil-cit-onunde-dikdortgen-masa-ve-kollu-sandalyeler",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

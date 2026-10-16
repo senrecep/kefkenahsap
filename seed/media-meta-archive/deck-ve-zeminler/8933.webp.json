@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/8933.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Gri yıpranmış deck üzerinde yeni değişen tahtalar",
+    "en": "Replaced new boards on a weathered grey deck"
+  },
+  "alt": {
+    "tr": "Grileşmiş eski deck yüzeyinde kızıl tonlu yeni bir tahta sırası, üstte hasır oturma elemanları",
+    "en": "A row of new reddish boards among weathered grey deck boards, with wicker seating at the top"
+  },
+  "caption": {
+    "tr": "Eski tahtaların rengi solmuş, araya yeni tahtalar konmuş. Fark yan yana açıkça görülüyor.",
+    "en": "The old boards have faded and new ones were set in. The difference is clear side by side."
+  },
+  "seoFilename": "gri-yipranmis-deck-yeni-degisen-tahtalar",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

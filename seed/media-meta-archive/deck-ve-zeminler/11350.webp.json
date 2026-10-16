@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/11350.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bina girişi önünde turuncu tonlu deck şeridi",
+    "en": "Orange-toned deck strip in front of a building entrance"
+  },
+  "alt": {
+    "tr": "Bina girişi önünde, çimenlik kenarında uzanan turuncu tonlu ahşap deck şeridi",
+    "en": "Orange-toned timber deck strip along a lawn in front of a building entrance"
+  },
+  "caption": {
+    "tr": "Deck şeridi çimi iki yandan sarıyor ve cam kapıya ulaşıyor. Önde saksılar ve bir kapaklı çöp kovası duruyor.",
+    "en": "The strip wraps the lawn on two sides and reaches the glass door. Pots and a lidded bin stand in front."
+  },
+  "seoFilename": "bina-girisi-onunde-cimenlik-kenarinda-turuncu-tonlu-ahsap",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş",
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

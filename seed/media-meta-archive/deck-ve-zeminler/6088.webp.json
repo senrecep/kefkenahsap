@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/6088.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz kenarında kırmızı kahve deck yüzeyi",
+    "en": "Red-brown deck surface at the pool edge"
+  },
+  "alt": {
+    "tr": "Havuz kenarında uzanan, damar dokusu belirgin kırmızı kahverengi deck yüzeyi; arkada çalılar, bir küp ve kiremit çatılı villa",
+    "en": "Red-brown deck surface at a pool edge with pronounced grain texture, with shrubs, an urn and a tile-roofed villa behind"
+  },
+  "caption": {
+    "tr": "Tahtaların lifleri yakın çekimde net seçiliyor. Havuz suyu sağ üst köşede mavi bir şerit olarak duruyor.",
+    "en": "The fibres of the boards are clearly visible up close. The pool water sits as a blue strip in the upper-right corner."
+  },
+  "seoFilename": "havuz-kenarinda-kirmizi-kahve-deck-yuzeyi-damar-dokusu",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

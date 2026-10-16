@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/12972.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kulübe girişi ve iç taban tahtaları",
+    "en": "Dog house entrance and floorboards inside"
+  },
+  "alt": {
+    "tr": "Köpek kulübesinin giriş açıklığı ve içindeki taban tahtaları, yatay vernikli kaplama",
+    "en": "Entrance opening of a dog house and the floorboards inside, with horizontal varnished cladding"
+  },
+  "caption": {
+    "tr": "Giriş çerçevesi koyu vernikli, içeride açık renkli taban tahtaları döşenmiş. Duvarlar yatay dizilmiş tahtalardan.",
+    "en": "The entrance frame is dark varnished and pale floorboards are laid inside. The walls are made of boards laid horizontally."
+  },
+  "seoFilename": "kulube-girisi-ve-ic-taban-tahtalari-yatay-vernikli-kaplama",
+  "tags": {
+    "type": [
+      "köpek kulübesi"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

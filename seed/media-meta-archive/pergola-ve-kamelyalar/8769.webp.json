@@ -1,0 +1,37 @@
+{
+  "source": "Pergola ve Kamelyalar/8769.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Gökyüzüne karşı üçgen desenli koyu vernikli pergola kafesi",
+    "en": "Dark varnished triangular-pattern pergola lattice against the sky"
+  },
+  "alt": {
+    "tr": "Alttan görünen koyu vernikli üçgen desenli pergola kafesi, aralardan mavi gökyüzü, köşede tuğla kolon",
+    "en": "Dark varnished triangular-pattern pergola lattice seen from below, with blue sky through the gaps and a brick column"
+  },
+  "caption": {
+    "tr": "Kirişlerin koyu rengi mavi gökyüzüne karşı net bir geometri çiziyor. Kafes üçgen boşluklardan ışık geçiriyor.",
+    "en": "The dark colour of the beams draws a clear geometry against the blue sky. The lattice lets light through its triangular gaps."
+  },
+  "seoFilename": "gokyuzune-karsi-ucgen-desenli-koyu-pergola-kafesi",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

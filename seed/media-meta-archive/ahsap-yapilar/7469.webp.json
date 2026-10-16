@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/7469.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ağaç türü etiketli tahta numuneleri",
+    "en": "Timber samples labelled with wood species"
+  },
+  "alt": {
+    "tr": "Üst üste dizilmiş yatay tahtalar; her birinin üzerinde çam, köknar, teak, meşe gibi ağaç türü adı yazan etiket var",
+    "en": "Horizontal boards stacked in rows, each with a label naming a species such as pine, fir, teak and oak"
+  },
+  "caption": {
+    "tr": "Tahtaların rengi türe göre açıktan kızıla değişiyor. Etiketlerde türün Latince adı da yazılı.",
+    "en": "The colour of the boards changes from pale to red depending on the species. The labels also give the Latin name of each species."
+  },
+  "seoFilename": "agac-turu-isimli-etiketli-yatay-tahta-numuneleri",
+  "tags": {
+    "type": [],
+    "wood": [
+      "çam",
+      "teak",
+      "meşe"
+    ],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.55
+}

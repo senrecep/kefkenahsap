@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/10686.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deck üzerinde masa, sandalyeler ve saksılar",
+    "en": "Table, chairs and pots on a deck"
+  },
+  "alt": {
+    "tr": "Ahşap deck üzerinde küçük masa, iki sandalye ve sıralı çiçek saksıları; önde çim ve taş basamaklar",
+    "en": "Small table, two chairs and a row of flower pots on a timber deck, with lawn and stepping stones in front"
+  },
+  "caption": {
+    "tr": "Deck cam kapının önünde boydan boya uzanıyor, saksılar kenarına dizilmiş. Çimde iki kare taş döşeme parçası var.",
+    "en": "The deck runs the full width of the glass door with pots lined along its edge. Two square stone slabs lie in the lawn."
+  },
+  "seoFilename": "ahsap-deck-uzerinde-masa-sandalyeler-ve-cicek-saksilari-onde",
+  "tags": {
+    "type": [
+      "deck",
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/10127.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz kenarı çimde kare deck platform",
+    "en": "Square deck platform on the lawn by the pool"
+  },
+  "alt": {
+    "tr": "Havuz kenarı çimde, taş zemin üzerine oturan kırmızımsı kare ahşap deck platform ve yanında kapak",
+    "en": "Reddish square timber deck platform on a stone base on the lawn beside a pool, with a cover next to it"
+  },
+  "caption": {
+    "tr": "Platform bir kapağın yanında duruyor, tahtaları vernikli. Arkada servi ağaçları sıralanıyor.",
+    "en": "The platform stands beside a cover and its boards are varnished. A row of cypress trees stands behind."
+  },
+  "seoFilename": "havuz-kenari-cimde-kirmizimsi-kare-ahsap-deck-platform-ve",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

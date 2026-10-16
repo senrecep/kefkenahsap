@@ -1,0 +1,39 @@
+{
+  "source": "Ahsap Yapilar/14941.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölyede kurulan yatay tahtalı kulübe gövdesi",
+    "en": "Shed body with horizontal boards being built in the workshop"
+  },
+  "alt": {
+    "tr": "Atölyede kurulan, yatay çam tahtalarla kaplı kulübe gövdesi; içinde bir merdiven duruyor",
+    "en": "The body of a shed clad in horizontal pine boards, assembled in the workshop with a ladder standing inside"
+  },
+  "caption": {
+    "tr": "Kulübenin duvarları ve kapı açıklığı tamam, çatı henüz yok. Zeminde talaş ve kablolar var.",
+    "en": "The walls and the door opening of the shed are done but there is no roof yet. Sawdust and cables lie on the floor."
+  },
+  "seoFilename": "atolyede-cam-kaplamali-yatay-tahtali-kulube-govdesi-merdiven",
+  "tags": {
+    "type": [
+      "bahçe kulübesi / depo"
+    ],
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

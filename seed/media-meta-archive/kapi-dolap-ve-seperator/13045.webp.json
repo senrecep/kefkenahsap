@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/13045.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dikey tahtalı ahşap kapak parçası duvara dayalı",
+    "en": "Vertical-board timber door leaf leaning on a wall"
+  },
+  "alt": {
+    "tr": "Beyaz duvara yaslanmış, dikey tahtalı ve ortasında küçük bir tutamağı olan açık kahve ahşap kapak iki parça hâlinde",
+    "en": "Light brown vertical-board timber door leaf in two parts leaning on a white wall, with a small handle in the middle"
+  },
+  "caption": {
+    "tr": "Kapak parçaları üst üste dayalı, tahtalar dikey ve eşit. Montaj için bekliyor.",
+    "en": "The door parts lean one over the other, with even vertical boards. They wait to be fitted."
+  },
+  "seoFilename": "dikey-tahtali-ahsap-kapak-parcasi-duvara-dayali",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

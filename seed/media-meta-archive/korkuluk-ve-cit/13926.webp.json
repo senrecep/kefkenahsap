@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/13926.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çıtalı panelin köşe detayı",
+    "en": "Corner detail of a slatted panel"
+  },
+  "alt": {
+    "tr": "Kırmızı karo zemin üzerinde duran açık tonlu çıtalı panelin köşesi, yanında gri cephe kaplaması",
+    "en": "Corner of a light-toned slatted panel standing on red tile flooring, next to grey wall cladding"
+  },
+  "caption": {
+    "tr": "Panel duvara yaslanmış, dikey çıtalar alttan yatay bir kuşakla bağlanıyor.",
+    "en": "The panel leans against the wall, with vertical slats tied together by a horizontal rail at the bottom."
+  },
+  "seoFilename": "citali-panel-kose-detayi-kirmizi-zemin",
+  "tags": {
+    "type": [
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.45
+}

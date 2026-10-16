@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/10629.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Uzun yan teras boyunca döşenen deck tahtaları",
+    "en": "Deck boards being laid along a long side terrace"
+  },
+  "alt": {
+    "tr": "Uzun yan teras boyunca döşenen deck tahtaları; kalan kısım henüz çıplak kirişlerde",
+    "en": "Deck boards being laid along a long side terrace, the remainder still on bare joists"
+  },
+  "caption": {
+    "tr": "Tahtalar duvara paralel, uzun bir şerit hâlinde ilerliyor. Kirişlerin arası çimle dolu.",
+    "en": "The boards advance in a long strip parallel to the wall. The spaces between the joists are filled with grass."
+  },
+  "seoFilename": "uzun-yan-teras-boyunca-dosenen-deck-tahtalari-kalan-kisim",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

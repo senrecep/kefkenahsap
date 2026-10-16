@@ -1,0 +1,36 @@
+{
+  "source": "Ireko-Teak/13246.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz duvar önünde U biçimli dış mutfak dolapları",
+    "en": "U-shaped outdoor kitchen cabinets in front of a white wall"
+  },
+  "alt": {
+    "tr": "Deck zeminde, beyaz duvarın önüne U biçiminde kurulmuş ahşap kaplı dış mutfak dolapları",
+    "en": "Timber-clad outdoor kitchen cabinets set up in a U shape in front of a white wall on a deck"
+  },
+  "caption": {
+    "tr": "Dolap gövdeleri ahşap çıtalarla kaplı, tezgâh yeri henüz boş. Arkada çıtalı panel ve bahçe yeşilliği görünüyor.",
+    "en": "The cabinet bodies are clad in timber slats and the spaces for the appliances are still empty. A slatted panel and garden greenery show behind."
+  },
+  "seoFilename": "beyaz-duvar-onunde-u-bicimli-ahsap-kapli-dis-mutfak",
+  "tags": {
+    "type": [
+      "dış mutfak / mangal alanı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.6
+}

@@ -1,0 +1,39 @@
+{
+  "source": "Korkuluk ve Cit/773.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dikey yuvarlak kütük duvar üstünde korkuluk",
+    "en": "Railing above a wall of upright round logs"
+  },
+  "alt": {
+    "tr": "Dikey yuvarlak kütüklerle kaplı duvarın üstüne oturan geniş kapaklı ahşap korkuluk, yukarıda çıtalı üst kısım",
+    "en": "Timber railing with a wide cap resting on a wall of upright round logs, with a slatted upper section above"
+  },
+  "caption": {
+    "tr": "Kütükler sıkıca yan yana dizilmiş ve üstü geniş bir tahtayla kapatılmış. Yakından bakınca çivi başları görünüyor.",
+    "en": "The logs stand tight together and are capped with a wide board. Nail heads show in the close view."
+  },
+  "seoFilename": "dikey-yuvarlak-kutuk-duvar-ustunde-ahsap-korkuluk",
+  "tags": {
+    "type": [
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

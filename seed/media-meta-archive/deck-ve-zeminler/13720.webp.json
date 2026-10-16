@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/13720.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ağaçlar arasında göl kıyısında deck ve sol kenarda korkuluk",
+    "en": "Deck at the lakeside among trees with a railing on the left"
+  },
+  "alt": {
+    "tr": "Ağaçlar arasında göl kıyısında açık renkli deck ve sol kenarında korkuluk",
+    "en": "Pale deck among trees at the lakeside with a railing along its left edge"
+  },
+  "caption": {
+    "tr": "Korkuluk deck'in sol kenarını boydan boya çeviriyor ve ucuna kadar devam ediyor. Çıplak dallar tahtalara gölge düşürüyor.",
+    "en": "The railing runs the full length of the left edge to the far end. Bare branches throw shadows over the boards."
+  },
+  "seoFilename": "agaclar-arasinda-gol-kiyisinda-deck-ve-sol-kenarda-korkuluk",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

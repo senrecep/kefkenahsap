@@ -1,0 +1,40 @@
+{
+  "source": "Ireko-Teak/14131.webp",
+  "category": "mutfak-ve-gomme-dolap",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Küp taş zeminde uzun dolap, üstü bank, basamak kenarı",
+    "en": "Long cabinet with a bench top on cobblestones, by a step"
+  },
+  "alt": {
+    "tr": "Küp taş zeminde duvar boyunca uzanan yatay panelli ahşap dolap ve üstü bank; yanda beton basamak",
+    "en": "A long horizontal-panel timber cabinet with a bench top along a wall on cobblestone paving, with a concrete step at the side"
+  },
+  "caption": {
+    "tr": "Dolabın üstü bank olarak kullanılıyor, ön yüzü yatay tahtalarla kaplı. Basamaklar dolabın bittiği yerde başlıyor.",
+    "en": "The top of the cabinet doubles as a bench and its front is clad in horizontal boards. The steps start where the cabinet ends."
+  },
+  "seoFilename": "kup-tas-zeminde-uzun-ahsap-kapli-dolap-ustu-bank-basamak",
+  "tags": {
+    "type": [
+      "gömme dolap / gardırop",
+      "bank",
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş",
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

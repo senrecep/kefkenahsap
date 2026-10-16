@@ -1,0 +1,40 @@
+{
+  "source": "Korkuluk ve Cit/8494.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ahşap merdiven korkuluğu, direk ve yeşil panel çit",
+    "en": "Timber stair railing with a post and green panel fence"
+  },
+  "alt": {
+    "tr": "Çimliğe inen ahşap merdivenin kenarında X çaprazlı korkuluk, kalın bir direk ve yanında yeşil kaynaklı tel panel çit",
+    "en": "X-braced railing along a timber staircase down to a lawn, with a thick post and a green welded-wire panel fence beside it"
+  },
+  "caption": {
+    "tr": "Korkuluk basamaklara paralel iniyor, tel panel çit evin bahçe sınırını çiziyor.",
+    "en": "The railing descends parallel to the steps, and the wire panel fence marks the garden boundary."
+  },
+  "seoFilename": "ahsap-merdiven-korkugu-direk-ve-yesil-panel-cit",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "merdiven"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

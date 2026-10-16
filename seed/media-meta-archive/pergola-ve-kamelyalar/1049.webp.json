@@ -1,0 +1,41 @@
+{
+  "source": "Pergola ve Kamelyalar/1049.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar önünde çatı çatkısı, deck ve çalışma tezgâhı",
+    "en": "Roof frame, deck and work bench in front of a stone wall"
+  },
+  "alt": {
+    "tr": "Taş duvarın önünde deck üzerinde çatı çatkısı, çapraz korkuluklar, solda çalışma tezgâhı ve palmiye",
+    "en": "Roof frame on a deck in front of a stone wall, with cross-braced rails, a work bench on the left and a palm tree"
+  },
+  "caption": {
+    "tr": "Çatkının altında korkuluk çıtaları çaprazlanmış. Zeminin kenarı taş duvarın üzerine oturuyor.",
+    "en": "Rail slats cross under the roof frame. The edge of the floor rests on the stone wall."
+  },
+  "seoFilename": "tas-duvar-onunde-cati-catkisi-calisma-tezgahi",
+  "tags": {
+    "type": [
+      "pergola",
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

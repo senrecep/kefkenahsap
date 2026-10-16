@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/6181.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ahşap çit önünde yeni açık renkli deck",
+    "en": "New pale deck in front of a timber fence"
+  },
+  "alt": {
+    "tr": "Ahşap çitin önünde, toprak kenarlı yeni döşenmiş açık renkli emprenyeli çam deck",
+    "en": "Newly laid pale pressure-treated pine deck with an earth edge, in front of a timber fence"
+  },
+  "caption": {
+    "tr": "Tahtalar çapraz bir yönde ilerliyor ve kenarı kalın bir çerçeve tahtasıyla kapalı. Çitin tahtaları deckle aynı açık tonda.",
+    "en": "The boards run on a diagonal and the edge is closed with a thick frame board. The fence boards are the same pale tone as the deck."
+  },
+  "seoFilename": "ahsap-cit-onunde-yeni-dosenmis-acik-renkli-deck-toprak",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/12937.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sırtlıklı ahşap bank ünitesi, yandan görünümüyle",
+    "en": "Backed timber bench unit seen from the side"
+  },
+  "alt": {
+    "tr": "Atölyede kereste yanında, üst yüzeyi kalın bir kenarla çevrili ahşap bank ünitesinin yan görünüşü",
+    "en": "A side view of a timber bench unit in a workshop beside lumber, its top framed by a thick edge"
+  },
+  "caption": {
+    "tr": "Yan duvar kalın tahtalardan, üst kenar çerçeve gibi yükseliyor. Bank atölyede bitmiş hâlde bekliyor.",
+    "en": "The side wall is made of thick boards and the top edge rises like a frame. The bench waits finished in the workshop."
+  },
+  "seoFilename": "sirtlikli-ahsap-bank-unitesi-yan-gorunus-kereste-yaninda",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/9168.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çıkıntılı binada yatay cephe ve gri bant",
+    "en": "Horizontal facade and grey band on a stepped building"
+  },
+  "alt": {
+    "tr": "Çıkıntılı binada yatay ahşap cephe kaplaması; ortadan koyu gri bir bant geçiyor",
+    "en": "Horizontal timber facade cladding on a building with projecting volumes, with a dark grey band across the middle"
+  },
+  "caption": {
+    "tr": "Bina iki hacim halinde yükseliyor ve cephe baştan sona yatay tahtalarla kaplı. Ortadaki koyu gri bant cepheyi ikiye bölüyor.",
+    "en": "The building rises in two volumes and the facade is clad in horizontal boards throughout. A dark grey band splits it across the middle."
+  },
+  "seoFilename": "cikintili-bina-yatay-cephe-gri-bant",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,41 @@
+{
+  "source": "Pergola ve Kamelyalar/8851.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Terasta emprenyeli pergola kirişleri, pencereli duvar, kafes panel ve saksılık",
+    "en": "Pressure-treated pergola beams on a terrace with a lattice panel and planter"
+  },
+  "alt": {
+    "tr": "Terasta emprenyeli çam pergola kirişleri, cam sürgülü kapılı duvar, kafes panel ve ahşap saksılık",
+    "en": "Pressure-treated pine pergola beams on a terrace with a glass sliding-door wall, a lattice panel and a timber planter"
+  },
+  "caption": {
+    "tr": "Kirişler duvara yaslanıp teras kapısının önüne uzanıyor. Duvarda aplik ve kafes üzerinde sarmaşık var.",
+    "en": "The beams lean on the wall and reach in front of the terrace door. There is a wall light and a climber on the lattice."
+  },
+  "seoFilename": "terasta-emprenyeli-pergola-kirisleri-kafes-saksilik",
+  "tags": {
+    "type": [
+      "pergola",
+      "çiçeklik / saksı",
+      "kafes / paravan"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Ireko-Teak/12129.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş zeminde çapraz ayaklı ahşap masa çerçevesi, arkasında kereste",
+    "en": "Timber table frame with crossed legs on stone paving, lumber behind"
+  },
+  "alt": {
+    "tr": "Taş döşeme üzerinde, kavisli çapraz ayakları ve boş üst çerçevesi olan ahşap masa iskeleti; arkada dik duran kereste var",
+    "en": "A timber table frame on stone paving with curved crossed legs and an empty top frame, with lumber standing upright behind"
+  },
+  "caption": {
+    "tr": "Masanın iskeleti ön cepheden bakınca simetrik. Ayaklar ortadaki sütuna oturuyor, üst çerçeve kare biçiminde.",
+    "en": "Seen from the front the frame is symmetrical. The legs rest on a central column and the top frame is square."
+  },
+  "seoFilename": "tas-zeminde-capraz-ayakli-ahsap-masa-cercevesi-arkada",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

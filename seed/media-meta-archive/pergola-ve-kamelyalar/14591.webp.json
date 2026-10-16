@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/14591.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Tenteli kamelya altında kavisli ahşap bank ve masa, taş zemin",
+    "en": "Curved timber bench and table under a canvas gazebo on stone paving"
+  },
+  "alt": {
+    "tr": "Tenteli kamelyanın altında taş duvarlı kavisli ahşap bank, ahşap masa ve taş döşeli zemin, arkada güller",
+    "en": "Curved stone-walled timber bench and wooden table under a canvas gazebo, on stone paving with roses behind"
+  },
+  "caption": {
+    "tr": "Kamelya direği çapraz payandalarla tentenin kirişlerini taşıyor. Direğin dibinde küçük bir elektrik kutusu görünüyor.",
+    "en": "The gazebo post carries the canvas beams with diagonal braces. A small electrical box shows at the foot of the post."
+  },
+  "seoFilename": "tenteli-kamelya-altinda-kavisli-bank-masa-tas-zemin",
+  "tags": {
+    "type": [
+      "kamelya",
+      "bank",
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

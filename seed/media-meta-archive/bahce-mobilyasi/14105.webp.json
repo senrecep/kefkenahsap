@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14105.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bahçe zemininde uzaktan görünen ahşap L bank",
+    "en": "Distant view of a timber L-shaped bench in a garden"
+  },
+  "alt": {
+    "tr": "Beton zeminli bahçede, çit boyunca uzanan koyu ahşap L biçimli bank uzaktan görünüyor; önde agav benzeri bir bitki var",
+    "en": "A dark timber L-shaped bench along a fence in a concrete-floored garden seen from a distance"
+  },
+  "caption": {
+    "tr": "Uzaktan bakınca bankın bahçedeki yeri ve boyutu daha iyi anlaşılıyor. Bank çit boyunca iki kenarı kaplıyor.",
+    "en": "From a distance you can judge the bench's place and size in the garden better. It covers two sides along the fence."
+  },
+  "seoFilename": "bahce-zemininde-uzaktan-gorunen-ahsap-l-bank-sari-cicekli",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

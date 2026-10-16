@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/13015.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Mavi beyaz desenli seramik kaplı alçak kare sehpa",
+    "en": "Low square table with a blue and white patterned ceramic top"
+  },
+  "alt": {
+    "tr": "Üstü mavi-beyaz desenli seramik karoyla kaplı, koyu ahşap kasalı alçak kare sehpa atölye zemininde duruyor",
+    "en": "A low square table with a top of blue-and-white patterned ceramic tiles and a dark timber frame on a workshop floor"
+  },
+  "caption": {
+    "tr": "Sehpanın üstü desenli seramikle kaplı, kenarları koyu ahşap bir kasayla çevrili. Atölyede, kereste yanında duruyor.",
+    "en": "The top is covered with patterned ceramic and framed by a dark timber box. It stands in the workshop beside lumber."
+  },
+  "seoFilename": "mavi-beyaz-seramik-kapli-kare-sehpa-koyu-ahsap-kasa",
+  "tags": {
+    "type": [
+      "sehpa"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

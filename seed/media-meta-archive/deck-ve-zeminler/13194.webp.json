@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/13194.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çit önünde bitki yanında havuza bitişik pembemsi deck",
+    "en": "Pinkish deck beside the pool next to a plant and hedge"
+  },
+  "alt": {
+    "tr": "Çit önünde, bitkinin yanında uzanan, havuz kenarına bitişik pembemsi tonlu ahşap deck",
+    "en": "Pinkish-toned timber deck running beside a plant in front of a hedge, next to a pool edge"
+  },
+  "caption": {
+    "tr": "Tahtalar havuz kenarına paralel döşenmiş ve çit boyunca devam ediyor. Kenarda süzme kanalı görünüyor.",
+    "en": "The boards run parallel to the pool edge and continue along the hedge. A drainage channel shows at the side."
+  },
+  "seoFilename": "cit-onunde-bitki-yaninda-havuza-bitisik-pembemsi-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı",
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,41 @@
+{
+  "source": "Deck ve Zeminler/4661.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çim alanda uzanan deck yolu, ucunda korkuluk",
+    "en": "Deck path across a lawn, ending in a railing"
+  },
+  "alt": {
+    "tr": "Çimlik alandan çam ağaçlarına doğru uzanan açık renkli deck yolu; ucunda çapraz çıtalı korkuluk",
+    "en": "Pale deck path running across a lawn towards pine trees, ending in a cross-braced railing"
+  },
+  "caption": {
+    "tr": "Yol çimenin içinde ağaçlı bölüme doğru ilerliyor. Arkada konutlar ve uzun çam gövdeleri görünüyor.",
+    "en": "The path leads through the grass to the wooded area. Houses and tall pine trunks show behind."
+  },
+  "seoFilename": "cim-alaninda-uzanan-deck-yolu-ve-capraz-korkuluk",
+  "tags": {
+    "type": [
+      "deck",
+      "yürüyüş yolu",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "orman / kır"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

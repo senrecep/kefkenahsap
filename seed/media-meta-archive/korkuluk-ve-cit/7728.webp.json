@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/7728.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar yanında koyu ahşap kapı kanadı ve menteşe detayı",
+    "en": "Dark timber gate leaf and hinge detail beside the stone wall"
+  },
+  "alt": {
+    "tr": "Taş duvara oturan koyu kahve vernikli ahşap kapı kanadının kenarı ve paslanmaz menteşe yakından",
+    "en": "Close view of the edge of a dark brown varnished timber gate leaf set against the stone wall and its stainless hinge"
+  },
+  "caption": {
+    "tr": "Menteşe taş duvardaki dikmeye sabitlenmiş, kuşak tahta kanadın üstünü tutuyor. Tahtalar dikey ve vernikle koyulaşmış.",
+    "en": "The hinge is fixed to the post in the stone wall and the ledge holds the top of the leaf. The boards are vertical and darkened by the varnish."
+  },
+  "seoFilename": "tas-duvar-yaninda-koyu-ahsap-kapi-kanadi-mentese",
+  "tags": {
+    "type": [
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

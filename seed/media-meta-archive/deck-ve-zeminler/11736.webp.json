@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/11736.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Camlı balkon köşesinde sarı kahverengi deck",
+    "en": "Yellow-brown deck in a glazed balcony corner"
+  },
+  "alt": {
+    "tr": "Camlı balkonun köşesine döşenmiş sarı kahverengi ahşap deck tahtaları",
+    "en": "Yellow-brown timber deck boards laid into the corner of a glazed balcony"
+  },
+  "caption": {
+    "tr": "Tahtalar balkonun uzun yönünde ilerliyor ve duvara kadar uzanıyor. Camlardan gelen ışık yüzeyi parlatıyor.",
+    "en": "The boards follow the long direction of the balcony and run up to the wall. Light from the glazing brings out the surface."
+  },
+  "seoFilename": "camli-balkon-kosesinde-sari-kahverengi-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "balkon"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,35 @@
+{
+  "source": "Kapi Dolap ve Seperator/12381.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cilalı damarlı kapaklı ahşap sandık",
+    "en": "Wooden chest with a polished figured lid"
+  },
+  "alt": {
+    "tr": "Parlak cilalı, koyu ve kızıl damar desenli kapağı olan, metal tutacaklı ahşap sandık; taş zeminde, arkada bahçe mobilyası",
+    "en": "Wooden chest with a high-gloss lid showing dark and red figured grain and a metal handle"
+  },
+  "caption": {
+    "tr": "Kapaktaki damar deseni cila altında derin görünüyor. Köşeler geçmeli birleşmiş.",
+    "en": "The grain pattern on the lid looks deep under the polish. The corners are dovetail-jointed."
+  },
+  "seoFilename": "cilali-damarli-kapakli-ahsap-sandik",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.5
+}

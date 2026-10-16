@@ -1,0 +1,35 @@
+{
+  "source": "Ireko-Teak/12167.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Uzun ahşap masa tablasının köşesi, kalın kenar çerçevesiyle",
+    "en": "Corner of a long timber table top with a thick edge frame"
+  },
+  "alt": {
+    "tr": "Yakın çekimde, uzun bir ahşap masa tablasının köşesi; kalın kenar çerçevesi ve içindeki çıtalar parlak vernikle görünüyor",
+    "en": "A close view of the corner of a long timber table top, with its thick edge frame and the slats within under glossy varnish"
+  },
+  "caption": {
+    "tr": "Köşe kalın bir çerçeveyle çevrelenmiş, çıtalar içeride sıralı. Vernik damarları derinleştirmiş.",
+    "en": "The corner is wrapped by a thick frame with the slats neatly ordered inside. The varnish has deepened the grain."
+  },
+  "seoFilename": "uzun-ahsap-masa-tablasi-kose-yakin-cekim-kalin-kenar",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

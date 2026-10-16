@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/14574.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Siyah metal çerçeveli çıtalı çit, arkada bahçe",
+    "en": "Slatted fence in a black metal frame with a garden behind"
+  },
+  "alt": {
+    "tr": "Taş duvardan başlayıp bahçeye doğru uzanan siyah metal çerçeveli kahverengi çıtalı çit, arkada yeşil bahçe",
+    "en": "Brown slatted fence in a black metal frame running from a stone wall along a green garden"
+  },
+  "caption": {
+    "tr": "Çit taş duvara bağlanıyor ve çerçevenin üst profili boyunca düzgün bir hat çiziyor.",
+    "en": "The fence joins the stone wall and runs in a clean line along the top profile of the frame."
+  },
+  "seoFilename": "siyah-metal-cerceveli-citali-cit-arkada-bahce",
+  "tags": {
+    "type": [
+      "çit",
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

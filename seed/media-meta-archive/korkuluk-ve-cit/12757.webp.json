@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/12757.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz boyalı kafes panel, atölye raflarının önünde",
+    "en": "White-painted lattice panel in front of the workshop shelves"
+  },
+  "alt": {
+    "tr": "Atölyede raflar ve malzemeler önünde, beyaz boyalı çaprazlı kafes panel; arkadaki raflarda aletler ve bir tabela",
+    "en": "A white-painted diagonal lattice panel in front of shelves and materials in the workshop"
+  },
+  "caption": {
+    "tr": "Panelin gözleri eşkenar dörtgen, çerçevesi düz. Arkasındaki raflar panelden görünüyor.",
+    "en": "The cells of the panel are diamond-shaped with a plain frame. The shelves behind it show through the panel."
+  },
+  "seoFilename": "beyaz-boyali-kafes-panel-atolye-raflarinin-onunde",
+  "tags": {
+    "type": [
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

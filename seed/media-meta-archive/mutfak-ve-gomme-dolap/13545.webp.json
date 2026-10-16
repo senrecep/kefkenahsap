@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/13545.webp",
+  "category": "mutfak-ve-gomme-dolap",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kahverengi dikmeli beyaz raflı raf ünitesi",
+    "en": "Shelf unit with brown uprights and white shelves"
+  },
+  "alt": {
+    "tr": "Kırmızımsı kahverengi vernikli dikmeleri ve basamaklı yerleşmiş beyaz raf tablaları olan ahşap raf ünitesi",
+    "en": "A timber shelf unit with reddish brown varnished uprights and white shelf boards set at staggered heights"
+  },
+  "caption": {
+    "tr": "Dikmeler kahverengi vernikli, raf tablaları beyaz boyalı ve birbirinden farklı yüksekliklerde. Ünite duvara yaslı duruyor.",
+    "en": "The uprights are varnished brown and the shelf boards are painted white at different heights. The unit leans against the wall."
+  },
+  "seoFilename": "kahverengi-dikmeli-beyaz-rafli-ahsap-raf-unitesi",
+  "tags": {
+    "type": [
+      "raf / kitaplık"
+    ],
+    "wood": [],
+    "setting": [
+      "atölyede üretim"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.6
+}

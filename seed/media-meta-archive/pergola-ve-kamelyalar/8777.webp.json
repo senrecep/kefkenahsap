@@ -1,0 +1,37 @@
+{
+  "source": "Pergola ve Kamelyalar/8777.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yarım kalmış üçgen desenli pergola kafesi, yanında tuğla ve beton kolon",
+    "en": "Half-built triangular-pattern pergola lattice beside brick and concrete columns"
+  },
+  "alt": {
+    "tr": "Tamamlanmamış üçgen desenli pergola kafesi, yanında tuğla ve beton kolon, ahşap geçit ve zeytin ağaçları",
+    "en": "Unfinished triangular-pattern pergola lattice beside brick and concrete columns, a timber walkway and olive trees"
+  },
+  "caption": {
+    "tr": "Kafesin yarısı kurulmuş, kalan kısım düz kirişlerle bekliyor. Yanda deck bir geçit uzanıyor.",
+    "en": "Half the lattice is built and the rest waits as plain beams. A decked walkway runs alongside."
+  },
+  "seoFilename": "yarim-kalmis-ucgen-desenli-pergola-kafesi-beton-kolon",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/943.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ahşap kaplı prefabrik uzun kabin",
+    "en": "Long prefabricated cabin clad in timber"
+  },
+  "alt": {
+    "tr": "Kilit parke taşlı zeminde duran, dış yüzü yatay ahşapla kaplı uzun prefabrik kabin; önünde iki kişi",
+    "en": "Long prefabricated cabin clad in horizontal timber on interlocking paving, two people standing in front"
+  },
+  "caption": {
+    "tr": "Kabinin yan yüzünde pencereler ve bir kapı var, çatısı düz. Önünde iki kişi konuşuyor.",
+    "en": "The side of the cabin has windows and a door and the roof is flat. Two people are talking in front of it."
+  },
+  "seoFilename": "ahsap-kapli-prefabrik-uzun-kabin-kilit-parke-zemin",
+  "tags": {
+    "type": [
+      "ahşap ev / bungalov"
+    ],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

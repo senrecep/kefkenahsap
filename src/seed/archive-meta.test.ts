@@ -18,11 +18,16 @@ const BANNED = [/eşsiz/i, /hayallerinizdeki/i, /kaliteden ödün/i, /en iyi hiz
 const PROPER = /^(İroko|Iroko|Teak|İstanbul|Istanbul|Kefken|Şile|Riva)$/
 
 // A timber species named in the text must be visible and tagged (tags.wood); trees in the scenery ("çamlar arasında",
-// "pine trees") are fine. (?<!\p{L}) / (?!\p{L}) act as Unicode word edges.
-const SPECIES = /(?<!\p{L})(iroko|teak|tik|meşe|thermowood|ladin|sedir|oak|cedar|spruce|çam(?! ağaç)|pine(?! trees?))(?!\p{L})/gu
+// "pine trees", "çam ormanı", "pine trunk") are fine. (?<!\p{L}) / (?!\p{L}) act as Unicode word edges. "sedir" is left to
+// the EN "cedar": in Turkish it is also a divan bench, a piece of garden furniture.
+const SPECIES = /(?<!\p{L})(iroko|teak|tik|meşe|thermowood|ladin|oak|cedar|spruce|çam(?! ağa[çc]| orman| gövde)|pine(?! trees?| forest| grove| trunks?|-forest))(?!\p{L})/gu
+// Wood tags are TR names, so an EN species counts as tagged by its TR name ("pine" by "emprenyeli çam").
+const TR_SPECIES: Record<string, string> = { pine: 'çam', oak: 'meşe', spruce: 'ladin', cedar: 'sedir' }
 const untaggedSpecies = (text: string, wood: string[]) =>
   // Lower-cased the Turkish way first: a regex /i flag does not fold "İ" to "i".
-  [...text.toLocaleLowerCase('tr').matchAll(SPECIES)].map((m) => m[1]!).filter((w) => !wood.some((t) => t.toLocaleLowerCase('tr').includes(w)))
+  [...text.toLocaleLowerCase('tr').matchAll(SPECIES)]
+    .map((m) => m[1]!)
+    .filter((w) => !wood.some((t) => [w, TR_SPECIES[w]].some((name) => name && t.toLocaleLowerCase('tr').includes(name))))
 
 /** "Every Word Capitalised" is title case; sentence case leaves later words lower case (CONTENT-STYLE-TR §3). */
 const isTitleCase = (s: string) => {
@@ -44,6 +49,14 @@ describe('untaggedSpecies', () => {
     expect(untaggedSpecies('İroko deck havuz kenarında', ['iroko'])).toEqual([])
     expect(untaggedSpecies('Çamlar arasında ahşap köprü; çam ağaçlarının altında', [])).toEqual([])
     expect(untaggedSpecies('Deck among pines and pine trees', [])).toEqual([])
+    expect(untaggedSpecies('Çam ormanında yürüyüş yolu, çam ağacının yanında; a deck around a pine trunk in a pine grove', [])).toEqual([])
+  })
+
+  it('accepts an EN species tagged by its TR name, and leaves the divan "sedir" to the EN text', () => {
+    expect(untaggedSpecies('Pressure-treated pine posts', ['emprenyeli çam'])).toEqual([])
+    expect(untaggedSpecies('Oak boards', ['çam'])).toEqual(['oak'])
+    expect(untaggedSpecies('Terasta ahşap sedir', [])).toEqual([])
+    expect(untaggedSpecies('Cedar cladding', [])).toEqual(['cedar'])
     expect(untaggedSpecies('Pine decking by a pool', [])).toEqual(['pine'])
   })
 })

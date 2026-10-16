@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/7522.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Uzaktan deniz kenarında ahşap kamelya iskeleti, kırmızı sandalye",
+    "en": "Distant seafront timber gazebo frame with a red chair"
+  },
+  "alt": {
+    "tr": "Uzaktan deniz kenarındaki ahşap kamelya iskeleti, beton zeminde kırmızı bir sandalye, arkada yamaç evleri",
+    "en": "Distant seafront timber gazebo frame with a red chair on the concrete floor, and hillside houses behind"
+  },
+  "caption": {
+    "tr": "İskelet kıyıya paralel uzanıyor, çatı kirişleri tamamlanmış. Önde iş aletleri ve kırmızı bir sandalye duruyor.",
+    "en": "The frame runs parallel to the shore with its rafters complete. Tools and a red chair stand at the front."
+  },
+  "seoFilename": "uzaktan-deniz-kenarinda-kamelya-iskeleti-kirmizi-sandalye",
+  "tags": {
+    "type": [
+      "kamelya"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

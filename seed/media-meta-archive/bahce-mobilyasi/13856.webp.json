@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/13856.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölyede kavisli ahşap sırtlıklı koltuklar, arkada kereste rafı",
+    "en": "Curved-back timber armchairs in the workshop with a lumber rack behind"
+  },
+  "alt": {
+    "tr": "Atölye zemininde, yuvarlak çıtalı sırtlıkları ve bükme ahşap kolçakları olan koltuklar duruyor",
+    "en": "Armchairs with rounded slatted backs and bentwood arms on a workshop floor, with a rack of upright lumber behind"
+  },
+  "caption": {
+    "tr": "Koltukların sırtlığı ve kolları tek bir kavisle birleşiyor. Atölyede minder konmadan, ham iskelet hâlinde duruyorlar.",
+    "en": "The back and arms of the chairs join in one sweeping curve. They stand in the workshop as bare frames without cushions."
+  },
+  "seoFilename": "atolyede-kavisli-ahsap-sirtlikli-koltuklar-arkada-kereste",
+  "tags": {
+    "type": [
+      "oturma grubu"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

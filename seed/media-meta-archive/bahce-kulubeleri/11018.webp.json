@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/11018.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kırmızı çatılı küçük ahşap ev, bank üzerinde",
+    "en": "Small timber house with a red roof on a bench"
+  },
+  "alt": {
+    "tr": "Kırmızı çatılı, vernikli küçük bir ahşap ev; kırmızımsı ahşap bank üzerinde duruyor",
+    "en": "Small varnished timber house with a red roof standing on a reddish timber bench"
+  },
+  "caption": {
+    "tr": "Çatısı kırmızı kaplamalı, gövdesi bal rengi ahşap. Çatının önünde ince bir yarık var, arkada çıtalı bir panel görünüyor.",
+    "en": "The roof is covered in red and the body is honey-coloured timber. There is a thin slot in front of the roof and a slatted panel shows behind."
+  },
+  "seoFilename": "kirmizi-kiremit-kapli-catili-kucuk-ahsap-ev-modeli-bank",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.5
+}

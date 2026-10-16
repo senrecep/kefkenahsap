@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/12070.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimlikte taş basamaklar yanında sivri uçlu çıtalı ahşap çit",
+    "en": "Pointed-slat timber fence beside stone stepping stones on the lawn"
+  },
+  "alt": {
+    "tr": "Selvi çitin önünde, çimlik boyunca uzanan sivri uçlu açık renk çıtalı ahşap çit; çimde taş basamak plakaları ve bir hortum",
+    "en": "A light pointed-slat timber fence running along the lawn in front of a cypress hedge"
+  },
+  "caption": {
+    "tr": "Çıtalar eşit boyda ve sivri, çit hafif bir açıyla uzağa gidiyor. Taş plakalar çimin içinden çite paralel uzanıyor.",
+    "en": "The slats are equal in length and pointed, and the fence recedes at a slight angle. The stone slabs run through the lawn parallel to the fence."
+  },
+  "seoFilename": "cimlikte-tas-basamaklar-yaninda-sivri-uclu-citali-cit",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

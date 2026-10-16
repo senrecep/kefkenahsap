@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/13623.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bahçede sundurma tabanlı köpek kulübesi",
+    "en": "Dog house with a porch floor in a garden"
+  },
+  "alt": {
+    "tr": "Bahçede çimin kenarına konmuş, yeşil çatısı öne uzanan ve sundurma tabanı olan vernikli köpek kulübesi",
+    "en": "Varnished dog house set at the edge of a lawn, its green roof extending forward over a boarded porch floor"
+  },
+  "caption": {
+    "tr": "Çatı ön tarafta düz bir tahta platformu gölgeliyor. Kulübenin önünde kırmızı bir kemik şekilli taş var.",
+    "en": "The roof shades a flat timber platform at the front. A bone-shaped red stone lies in front of the house."
+  },
+  "seoFilename": "bahcede-yesil-catili-sundurma-tabanli-vernikli-kopek",
+  "tags": {
+    "type": [
+      "köpek kulübesi"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

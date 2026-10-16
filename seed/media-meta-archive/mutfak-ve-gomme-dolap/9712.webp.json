@@ -1,0 +1,40 @@
+{
+  "source": "Kapi Dolap ve Seperator/9712.webp",
+  "category": "mutfak-ve-gomme-dolap",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dükkan önünde A biçimli açık renk raf",
+    "en": "A-shaped light timber shelf in front of a shop"
+  },
+  "alt": {
+    "tr": "Dükkan önünde duran, A biçiminde, üç katlı açık renk ahşap raf; üstünde koyu tahtalı panel",
+    "en": "An A-shaped, three-tier light timber shelf standing in front of a shop, with a dark-boarded panel at the top"
+  },
+  "caption": {
+    "tr": "Raf yan yana iki eğik ayak üzerinde duruyor, üç açık tabla var. Arkada dükkanın camı görünüyor.",
+    "en": "The shelf stands on two angled legs with three open shelves. The shop window shows behind."
+  },
+  "seoFilename": "dukkan-onunde-a-seklinde-uc-katli-acik-renk-ahsap-raf",
+  "tags": {
+    "type": [
+      "raf / kitaplık"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "giriş",
+      "ticari mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.6
+}

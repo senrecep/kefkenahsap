@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/13852.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Eski beyaz boyalı iki uzun jaluzi panjur kanadı",
+    "en": "Two tall old white-painted louvred shutter leaves"
+  },
+  "alt": {
+    "tr": "Duvara dayalı, beyaz boyası yer yer dökülmüş iki uzun jaluzi panjur kanadı, yanında merdiven ve koyu bir panel",
+    "en": "Two tall louvred shutter leaves with flaking white paint leaning on a wall, with a ladder and a dark panel beside them"
+  },
+  "caption": {
+    "tr": "Kanatların boyası yıpranmış, çıtalar yerinde duruyor. Bu hâliyle yenilenmek üzere atölyede bekliyor.",
+    "en": "The paint on the leaves is worn but the louvres are intact. They wait in the workshop for renewal."
+  },
+  "seoFilename": "eski-beyaz-boyali-iki-uzun-jaluzi-panjur-kanadi",
+  "tags": {
+    "type": [
+      "pencere / panjur"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

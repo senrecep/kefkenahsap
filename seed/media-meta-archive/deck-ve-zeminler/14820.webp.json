@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/14820.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Basamak taşlı küçük deck",
+    "en": "Small deck with stepping stones"
+  },
+  "alt": {
+    "tr": "Çimlik bahçede zeytin ağacının yanında, basamak taşlarla ulaşılan korkuluklu küçük ahşap deck",
+    "en": "Small timber deck with a railing beside an olive tree in a lawned garden, reached by stepping stones"
+  },
+  "caption": {
+    "tr": "Taş plakalar çimen üzerinde deckin kenarına kıvrılarak gidiyor. Gövde dibindeki beyaz taşlar bahçeye doğal bir görünüm veriyor.",
+    "en": "Stone slabs curve across the lawn to the edge of the deck. White stones at the base of the trunk give the garden a natural look."
+  },
+  "seoFilename": "basamak-tasli-kucuk-deck-ve-zeytin-agaci",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

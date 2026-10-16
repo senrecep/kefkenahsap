@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14925.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kum zeminde uzun ahşap masa ve bank, yukarıdan bakışla",
+    "en": "Long timber table and bench on sand, seen from above"
+  },
+  "alt": {
+    "tr": "Yukarıdan bakıldığında, kumlu zeminde uzanan uzun ahşap masa ve onun yanındaki uzun bank; ağaç gölgeleri tablaya düşüyor",
+    "en": "From above, a long timber table on sandy ground with a long bench beside it, and tree shadows falling across the top"
+  },
+  "caption": {
+    "tr": "Yukarıdan bakınca masa ile bankın uzunluğu net görünüyor. Tahtalar boydan boya sıralı.",
+    "en": "From this angle the length of the table and bench is clear. The boards run in order from end to end."
+  },
+  "seoFilename": "kum-zeminde-uzun-ahsap-masa-ve-bank-yukaridan-cekim",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

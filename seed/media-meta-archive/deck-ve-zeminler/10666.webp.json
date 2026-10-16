@@ -1,0 +1,40 @@
+{
+  "source": "Deck ve Zeminler/10666.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yan bahçede deck ve çimde tahta basamak yolu",
+    "en": "Deck and board stepping path across the lawn"
+  },
+  "alt": {
+    "tr": "Yan bahçede deck ve devamında çimde sıralanan ahşap basamak tahtalarından yürüyüş yolu",
+    "en": "Deck in a side garden continuing as a walking path of timber stepping boards across the lawn"
+  },
+  "caption": {
+    "tr": "Deck çimin ucuna kadar uzanıyor, ötesinde tek tek tahta parçalar patika oluşturuyor. Yanda alçak bir dolap duruyor.",
+    "en": "The deck reaches to the lawn and beyond it single timber pieces form a path. A low cabinet stands to the side."
+  },
+  "seoFilename": "yan-bahcede-deck-ve-devaminda-cimde-ahsap-basamak",
+  "tags": {
+    "type": [
+      "deck",
+      "yürüyüş yolu"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

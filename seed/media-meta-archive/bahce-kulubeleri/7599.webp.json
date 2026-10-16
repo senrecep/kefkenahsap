@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/7599.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam bölmeli, bankı olan ahşap dış duş",
+    "en": "Timber outdoor shower with a glass screen and a bench"
+  },
+  "alt": {
+    "tr": "Eğik çatılı, cepheleri açık, cam bölmeli ve yan bölümde bankı bulunan ahşap dış duş kabini",
+    "en": "Open-fronted timber outdoor shower cabin with a sloping roof, a glass screen and a bench in the side section"
+  },
+  "caption": {
+    "tr": "Orta bölüm cam kapı ile ayrılmış, iki yanında ahşap kaplı duvarlar var. Çatı çıtalı, zemin ahşap tahtalı.",
+    "en": "The middle section is separated by a glass door with timber-clad walls on both sides. The roof is slatted and the floor is boarded."
+  },
+  "seoFilename": "acik-cepheli-cam-bolmeli-banki-olan-ahsap-dis-dus-kabini",
+  "tags": {
+    "type": [
+      "duş / soyunma kabini"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

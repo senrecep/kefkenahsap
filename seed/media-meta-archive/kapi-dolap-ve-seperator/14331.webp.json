@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/14331.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Pencere altına yerleştirilen shingle çatılı küçük dolap",
+    "en": "Small shingle-roofed cabinet placed under a window"
+  },
+  "alt": {
+    "tr": "Çimenlikte tuğla duvardaki pencerenin altına yerleştirilmiş, üstü shingle kaplı ve yan yüzü yatay tahtalı küçük ahşap dolap",
+    "en": "Small timber cabinet with a shingle-clad top and horizontally boarded sides placed under a window in a brick wall on a lawn"
+  },
+  "caption": {
+    "tr": "Dolap pencere denizliğinin altına sığacak ölçüde yapılmış. Çatısı yağmuru dışa akıtıyor.",
+    "en": "The cabinet is made to fit under the window sill, and its roof sheds rain outward."
+  },
+  "seoFilename": "pencere-altina-yerlestirilen-shingle-catili-kucuk-dolap",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

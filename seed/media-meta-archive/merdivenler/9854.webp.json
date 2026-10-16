@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/9854.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yandan ahşap platform ve çaprazlı korkuluk",
+    "en": "Timber platform and cross-braced railing from the side"
+  },
+  "alt": {
+    "tr": "Yandan görünen ahşap platform, merdiven ve çaprazlı korkuluk; sağda beyaz çit, zemin açık toprak",
+    "en": "Side view of a timber platform, stairs and cross-braced railing, with a white fence on the right and bare soil"
+  },
+  "caption": {
+    "tr": "Platformun alt kirişleri yandan seçiliyor, korkuluğun çaprazları iki sıra halinde uzanıyor.",
+    "en": "The platform's lower beams are visible from the side and the railing's cross braces run in two rows."
+  },
+  "seoFilename": "yandan-ahsap-merdiven-ve-caprazli-korkuluk-beyaz-cit-kenari",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

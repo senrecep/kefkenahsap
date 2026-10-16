@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/14802.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Balık sırtı tuğla terasta siyah korkuluk",
+    "en": "Black railing on a herringbone brick terrace"
+  },
+  "alt": {
+    "tr": "Balık sırtı örgülü kırmızı tuğla teras zemininin kenarında, kıvrımlı süslemeli siyah demir korkuluk",
+    "en": "Black iron railing with curled decoration and a brown timber handrail along a terrace paved in red herringbone brick"
+  },
+  "caption": {
+    "tr": "Küpeşte korkuluğun üstünden köşeye kadar uzanıyor, arkada ağaçlık bir bahçe var.",
+    "en": "The handrail runs along the top of the railing to the corner, with a wooded garden behind."
+  },
+  "seoFilename": "balik-sirti-tugla-terasta-siyah-korkuluk-ahsap-kupeste",
+  "tags": {
+    "type": [
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

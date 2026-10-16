@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14241.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yeşil deck ve ağaç gölgesindeki sandalyeler",
+    "en": "Green deck with chairs in the shade of the trees"
+  },
+  "alt": {
+    "tr": "Ağaç gövdesi etrafında genişleyen yeşil boyalı deck; ucunda ahşap sandalyeler ve masa",
+    "en": "Green-painted deck widening around a tree trunk, with timber chairs and a table at its far end"
+  },
+  "caption": {
+    "tr": "Deck çapraz bir hatla bahçeye açılıyor. Uzaktaki sandalyeler yeşil zeminin üstünde ağaçların gölgesinde duruyor.",
+    "en": "The deck opens into the garden along a diagonal line. The chairs in the distance stand on the green floor in the tree shade."
+  },
+  "seoFilename": "yesil-deck-ve-agac-golgesindeki-sandalyeler",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "orman / kır"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

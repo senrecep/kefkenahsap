@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/11476.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deck tahtalarının eğik açıdan yakın çekimi",
+    "en": "Slanted close-up of deck boards"
+  },
+  "alt": {
+    "tr": "Açık renkli ahşap deck tahtalarının eğik açıdan yakın çekimi; arkada çimen ve bir kutu",
+    "en": "Slanted close-up of light timber deck boards with lawn and a box behind"
+  },
+  "caption": {
+    "tr": "Tahtalar uzun bir hat boyunca ilerliyor, yüzeyde grimsi bir ton var. Tahtaların arasındaki derz düzgün.",
+    "en": "The boards run in a long line with a greyish tone on the surface. The joints between the boards are even."
+  },
+  "seoFilename": "acik-renkli-ahsap-deck-tahtalarinin-egik-acidan-yakin-cekimi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

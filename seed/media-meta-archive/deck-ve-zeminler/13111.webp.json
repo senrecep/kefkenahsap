@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/13111.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Basamak taşları önünde su kıyısına bakan koyu deck",
+    "en": "Dark deck facing the waterside behind stepping stones"
+  },
+  "alt": {
+    "tr": "Çimen üzerinde basamak taşlarının önünde, arkada su ve yeşillik görünen koyu kırmızı kahverengi deck",
+    "en": "Dark red-brown deck on the lawn beyond stepping stones, with water and greenery visible behind"
+  },
+  "caption": {
+    "tr": "Taş plakalar çimenin içinden deck'e giden yolu işaretliyor. Deck bahçenin en ucunda, manzaraya doğru duruyor.",
+    "en": "Stone slabs mark the way across the lawn to the deck. The deck sits at the very end of the garden, facing the view."
+  },
+  "seoFilename": "basamak-tasi-onunde-su-kiyisina-bakan-koyu-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "su kenarı"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

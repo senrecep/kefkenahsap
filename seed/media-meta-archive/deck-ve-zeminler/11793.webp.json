@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/11793.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Seramik zemin yanında turuncu kahverengi deck",
+    "en": "Orange-brown deck next to ceramic flooring"
+  },
+  "alt": {
+    "tr": "Seramik zeminin yanında, toprak alana serilmiş turuncu kahverengi tahtalardan dikdörtgen deck",
+    "en": "Rectangular deck of orange-brown boards laid on bare ground beside ceramic flooring"
+  },
+  "caption": {
+    "tr": "Tahtalar çapraz yönde döşenmiş ve kenarları ince bir çerçeveyle toplanmış. Güneş yüzeyde gölge çiziyor.",
+    "en": "The boards run diagonally and the edges are finished with a slim border. Sunlight casts a shadow across the surface."
+  },
+  "seoFilename": "seramik-yaninda-turuncu-kahverengi-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

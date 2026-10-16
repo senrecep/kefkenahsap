@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/13289.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölyede ölçüsü alınmış yatay çıtalı kasa, yandan görünüm",
+    "en": "Horizontal-slat housing from the side, checked in the workshop"
+  },
+  "alt": {
+    "tr": "Atölye zemininde duran, yatay aralıklı çıtalı yüksek ahşap kasa ve arkasında beyaz duvar ile kapı çerçevesi",
+    "en": "Tall timber housing with spaced horizontal slats standing on a workshop floor, with a white wall and door frame behind"
+  },
+  "caption": {
+    "tr": "Çıtalar eşit aralıklı ve köşeler düzgün. Kasa montaj öncesi atölyede son kez kontrol ediliyor.",
+    "en": "The slats are evenly spaced and the corners tidy. The housing gets a last check in the workshop before installation."
+  },
+  "seoFilename": "atolyede-olcusu-alinmis-yatay-citali-kasa-yandan-gorunum",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

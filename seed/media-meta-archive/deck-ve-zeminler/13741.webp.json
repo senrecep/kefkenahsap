@@ -1,0 +1,40 @@
+{
+  "source": "Deck ve Zeminler/13741.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ağaç altında korkuluklu deck ve toprak üzerinde ahşap basamak",
+    "en": "Railed deck under a tree with a timber step on the soil"
+  },
+  "alt": {
+    "tr": "Göl kenarında ağaç altında korkuluklu deck ve toprak üzerine konmuş ahşap basamak",
+    "en": "Railed deck under a tree at the lakeside with a timber step set on the soil"
+  },
+  "caption": {
+    "tr": "Basamaklar deck'ten aşağı doğru eğimli toprağa iniyor. Korkuluk çitle birleşip su tarafını kapatıyor.",
+    "en": "The steps lead down from the deck onto the sloping soil. The railing joins a fence and closes off the water side."
+  },
+  "seoFilename": "agac-altinda-korkuluklu-deck-ve-toprakta-ahsap-basamak",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk",
+      "merdiven"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

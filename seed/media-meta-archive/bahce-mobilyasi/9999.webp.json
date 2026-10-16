@@ -1,0 +1,38 @@
+{
+  "source": "Ireko-Teak/9999.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimde kırmızımsı vernikli masa ve bank takımı",
+    "en": "Reddish varnished table and bench set on the lawn"
+  },
+  "alt": {
+    "tr": "Bahçede çimin üzerinde duran uzun ahşap masa ve yanındaki iki bank",
+    "en": "Long timber table with two benches beside it standing on garden grass"
+  },
+  "caption": {
+    "tr": "Masa ve banklar kalın kalaslardan, kırmızımsı vernikli. Arkada çalılar var.",
+    "en": "The table and benches are built from thick planks with a reddish varnish. Shrubs stand behind."
+  },
+  "seoFilename": "cimde-kirmizimsi-vernikli-uzun-masa-ve-bank-takimi",
+  "tags": {
+    "type": [
+      "piknik masası",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14619.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Gri zeminde açık kahverengi dar deck",
+    "en": "Narrow light brown deck on a grey base"
+  },
+  "alt": {
+    "tr": "Gri zemin üzerine boyuna döşenmiş, açık kahverengi uzun ve dar deck; arka planda saksılar ve duvar rafı",
+    "en": "Long narrow light brown deck laid lengthwise over a grey surface, with plant pots and a wall shelf in the background"
+  },
+  "caption": {
+    "tr": "Tahta aralıkları düzgün, yüzeyde bir miktar gölge var. Deck çimen kenarındaki teras boyunca ilerliyor.",
+    "en": "The gaps between boards are even and there is some shade on the surface. The deck runs along the terrace by the lawn."
+  },
+  "seoFilename": "gri-zeminde-acik-kahverengi-dar-uzun-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

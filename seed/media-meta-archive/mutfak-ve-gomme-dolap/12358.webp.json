@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/12358.webp",
+  "category": "mutfak-ve-gomme-dolap",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Siyah dökme braketli raf, yakın çekim",
+    "en": "Shelf on black cast brackets, close-up"
+  },
+  "alt": {
+    "tr": "Ahşap yüzeye siyah süslü dökme braketlerle monte edilmiş açık renkli raf tahtası, yakın çekim",
+    "en": "Close-up of a light shelf board mounted on a timber surface with black decorative cast brackets"
+  },
+  "caption": {
+    "tr": "Raf tahtası iki siyah kıvrımlı braketle duvar paneline oturuyor. Arkada atölye aletleri asılı.",
+    "en": "The shelf board rests on two black scrolled brackets against the wall panel. Workshop tools hang behind."
+  },
+  "seoFilename": "siyah-dokme-braketli-raf-yakin-cekim-ahsap-yuzey",
+  "tags": {
+    "type": [
+      "raf / kitaplık"
+    ],
+    "wood": [],
+    "setting": [
+      "atölyede üretim"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.75
+}

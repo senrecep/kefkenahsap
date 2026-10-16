@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/15053.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Uzun, yüksek sırtlı koyu vernikli ahşap L oturma platformu",
+    "en": "Long high-back dark-varnished timber L seating platform"
+  },
+  "alt": {
+    "tr": "Atölyede, köşeye oturan yüksek sırtlı koyu vernikli ahşap L oturma platformu yakından görünüyor",
+    "en": "A closer view of a high-back dark-varnished timber L seating platform fitted into a corner of the workshop"
+  },
+  "caption": {
+    "tr": "Oturma platformunun yüzeyi geniş ve düz, sırtlığı koyu tahtalardan. Yan kenarı kalın ve düzgün işlenmiş.",
+    "en": "The platform's seat is broad and flat with a back of dark boards. The side edge is thick and neatly finished."
+  },
+  "seoFilename": "uzun-yuksek-sirtli-koyu-vernikli-ahsap-l-oturma-platformu",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

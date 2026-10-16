@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/13801.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yeşil karolu zeminde köşede eskimiş yükseltilmiş ahşap platform",
+    "en": "Worn raised timber platform in the corner of a green-tiled floor"
+  },
+  "alt": {
+    "tr": "Yeşil karolu zeminde köşede yükseltilmiş eskimiş ahşap platform ve arkada ahşap duvar kaplaması",
+    "en": "Worn raised timber platform in a corner on a green-tiled floor, with timber wall cladding behind"
+  },
+  "caption": {
+    "tr": "Platformun yüzeyi solmuş ve yer yer gri. Köşeye oturan yapı bank olarak da kullanılabilecek bir yükseklikte.",
+    "en": "The platform's surface has faded and gone grey in places. Tucked into the corner, it is at a height that doubles as a seat."
+  },
+  "seoFilename": "yesil-karolu-zeminde-koseye-yukseltilmis-eski-platform",
+  "tags": {
+    "type": [
+      "deck",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

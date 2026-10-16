@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/11734.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz tenteli salıncak koltuğu, çimde deck zemin",
+    "en": "White-canopy swing seat on a deck over the lawn"
+  },
+  "alt": {
+    "tr": "Çimin üzerinde deck zemine oturan, beyaz tenteli ve açık renk minderli ahşap salıncak koltuğu",
+    "en": "Timber swing seat with a white canopy and light cushions resting on a deck over the lawn"
+  },
+  "caption": {
+    "tr": "Salıncağın tenteyi taşıyan iskeleti ahşap kirişli. Minderler açık gri ve pembe.",
+    "en": "The frame carrying the canopy has timber beams. The cushions are light grey and pink."
+  },
+  "seoFilename": "beyaz-tenteli-ahsap-salincak-koltugu-cimde-deck-zemin",
+  "tags": {
+    "type": [
+      "salıncak",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

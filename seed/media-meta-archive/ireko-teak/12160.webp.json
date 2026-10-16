@@ -1,0 +1,35 @@
+{
+  "source": "Ireko-Teak/12160.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yan yana dizilmiş koyu renkli kare kesitli kirişler",
+    "en": "Dark square-section beams laid side by side"
+  },
+  "alt": {
+    "tr": "Koyu kahve boyalı, kare kesitli uzun ahşap kirişlerin yan yana sıralanmış yığını; uçlarında açık renkli kesitler",
+    "en": "A side-by-side stack of long dark brown stained timber beams of square section, with pale cut ends"
+  },
+  "caption": {
+    "tr": "Kirişler boy boy yan yana dizili, ucu açık renkli kesitli. Boya ahşabın damarını koyulaştırmış.",
+    "en": "The beams are lined up length by length with pale cut ends. The stain has darkened the grain."
+  },
+  "seoFilename": "yan-yana-dizilmis-koyu-renkli-kare-kesitli-kirisler",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.4
+}

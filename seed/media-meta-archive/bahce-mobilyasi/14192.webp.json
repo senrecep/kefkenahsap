@@ -1,0 +1,35 @@
+{
+  "source": "Ireko-Teak/14192.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çıtalı tablalı kızak ayaklı sehpa",
+    "en": "Slatted coffee table on curved skid legs"
+  },
+  "alt": {
+    "tr": "Atölye zemininde duran, çıtalı tablalı ve kavisli kızak ayaklı ahşap sehpa",
+    "en": "Timber coffee table with a slatted top and curved skid legs standing on the workshop floor"
+  },
+  "caption": {
+    "tr": "Sehpanın tablası çıtalı, ayakları kavisli. Arkada çekmeceli bir dolap ve çalışma tezgâhı görünüyor.",
+    "en": "The tabletop is slatted and the legs are curved. A chest of drawers and a workbench are visible behind."
+  },
+  "seoFilename": "citali-kizak-ayakli-ahsap-sehpa-atolye",
+  "tags": {
+    "type": [
+      "sehpa"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

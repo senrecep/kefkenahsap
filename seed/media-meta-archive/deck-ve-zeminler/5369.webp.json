@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/5369.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kıyıda kiriş iskeleti, sağda deck kaplama başlıyor",
+    "en": "Joist frame on the shore, decking starting on the right"
+  },
+  "alt": {
+    "tr": "Deniz kıyısında ahşap kiriş iskeleti; sağ tarafta deck tahtaları döşenmeye başlamış, arkada çiçekli bir bahçe",
+    "en": "Timber joist frame by the sea, with deck boards starting to go down on the right and a flowering garden behind"
+  },
+  "caption": {
+    "tr": "Döşenen bölüm iskeletin sağ yarısını kaplıyor, sol yarı hâlâ açık. Dikmeler üst kenarda sıralanıyor.",
+    "en": "The laid part covers the right half of the frame while the left half is still open. Posts line up along the upper edge."
+  },
+  "seoFilename": "deniz-kiyisinda-ahsap-kiris-iskeleti-ve-baslayan-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

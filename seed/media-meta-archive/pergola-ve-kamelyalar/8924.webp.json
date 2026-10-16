@@ -1,0 +1,37 @@
+{
+  "source": "Pergola ve Kamelyalar/8924.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Terasta kumaş örtülü ahşap pergola, arkada şömine ve yol manzarası",
+    "en": "Fabric-covered timber pergola on a terrace with a fireplace and a road view"
+  },
+  "alt": {
+    "tr": "Terasta kumaş örtülü ahşap pergola, köşede tuğla şömine, ağaçlı tepeler ve aşağıda uzanan yol",
+    "en": "Fabric-covered timber pergola on a terrace, with a brick fireplace in the corner, wooded hills and a road running below"
+  },
+  "caption": {
+    "tr": "Pergola teras boyunca uzanıyor, kumaşın altında şömine ve cam kapı görünüyor. Teras yüksek bir kattan yola bakıyor.",
+    "en": "The pergola runs along the terrace with a fireplace and glass door visible beneath the fabric. The terrace looks down from a high floor onto the road."
+  },
+  "seoFilename": "terasta-kumas-ortulu-ahsap-pergola-somine-yol-manzarasi",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/14496.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Toprak arazide yatay çıtalı çit hattı",
+    "en": "Horizontal-rail fence line on bare ground"
+  },
+  "alt": {
+    "tr": "Kırmızı topraklı arazide iki yatay çıtalı ahşap çit hattı, arkada dağ ve zeytin ağaçları",
+    "en": "Two lines of horizontal-rail timber fence on red-soil ground, with a mountain and olive trees behind"
+  },
+  "caption": {
+    "tr": "Çit arazinin sınırını dikdörtgen bir hatla çiziyor. Önde fotoğrafçının gölgesi düşmüş.",
+    "en": "The fence outlines the plot in a rectangle. The photographer’s shadow falls in front."
+  },
+  "seoFilename": "toprak-arazide-yatay-citali-cit-hatti",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

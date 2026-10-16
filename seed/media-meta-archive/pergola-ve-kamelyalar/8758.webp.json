@@ -1,0 +1,37 @@
+{
+  "source": "Pergola ve Kamelyalar/8758.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Pergola kirişleri ve sıvalı balkon, alt katta kahverengi panjurlar",
+    "en": "Pergola beams and a plastered balcony with brown shutters on the floor below"
+  },
+  "alt": {
+    "tr": "Pergola kirişleri sıvalı balkonun yanından uzanıyor, alt katta kahverengi panjurlu pencereler ve demir korkuluk",
+    "en": "Pergola beams reaching out beside a plastered balcony, with brown-shuttered windows and an iron railing on the floor below"
+  },
+  "caption": {
+    "tr": "Kirişler hem balkonun üstünde hem yanında devam ediyor. Alt katta pencere bantları görünüyor.",
+    "en": "The beams continue both over and beside the balcony. Taped window frames show on the lower floor."
+  },
+  "seoFilename": "pergola-kirisleri-sivali-balkon-kahverengi-panjurlar",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

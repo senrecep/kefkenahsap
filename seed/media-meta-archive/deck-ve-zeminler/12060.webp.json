@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/12060.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapılı evin önünde turuncu deck",
+    "en": "Orange deck in front of a house with glass doors"
+  },
+  "alt": {
+    "tr": "Cam kapılı evin önünde, çimen kenarına serilmiş turuncu tonlu ahşap deck",
+    "en": "Orange-toned timber deck laid at the lawn edge in front of a house with glass doors"
+  },
+  "caption": {
+    "tr": "Deck evin girişinden çimene kadar uzanıyor ve kapıdan çıkışı düz bir zemine bağlıyor.",
+    "en": "The deck runs from the entrance out to the lawn and gives the doorway a level floor."
+  },
+  "seoFilename": "cam-kapili-evin-onunde-turuncu-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "giriş"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/13220.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz kenarında eski tahtalara karışmış yeni deck tahtaları",
+    "en": "New deck boards mixed with old ones along the pool edge"
+  },
+  "alt": {
+    "tr": "Havuz kenarında eski gri tahtalara karışmış yeni açık renkli deck tahtaları, yanda mavi havuz",
+    "en": "New pale deck boards mixed in with old grey ones along the pool edge, with the blue pool alongside"
+  },
+  "caption": {
+    "tr": "Deck havuzun kenarını izliyor ve yeni tahtalar eski olanların arasında aralıklı yer alıyor. Havuz kenar taşı deck'e yan yana bitişiyor.",
+    "en": "The deck follows the pool edge with new boards spaced among the old ones. The pool coping sits right alongside it."
+  },
+  "seoFilename": "havuz-kenarinda-eski-tahtalara-karismis-yeni-deck-tahtalari",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

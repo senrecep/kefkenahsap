@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14303.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ahşap standa asılı krem rengi hamak, çimen bahçede",
+    "en": "Cream hammock hung on a timber stand in a lawn garden"
+  },
+  "alt": {
+    "tr": "Kavisli ahşap hamak standına bağlı krem rengi bir hamak, çimlik bahçede duruyor; arkada çiçekli ağaçlar var",
+    "en": "A cream-coloured hammock slung on a curved timber stand in a lawn garden, with flowering trees behind"
+  },
+  "caption": {
+    "tr": "Hamak, ahşap standın iki ucuna bağlı ve yere yakın sallanıyor. Stand ağaçsız bahçelerde de kullanılabiliyor.",
+    "en": "The hammock is tied to both ends of the timber stand and hangs low. The stand works in gardens without trees too."
+  },
+  "seoFilename": "ahsap-hamak-standina-bagli-krem-hamak-cimen-bahce",
+  "tags": {
+    "type": [
+      "hamak standı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

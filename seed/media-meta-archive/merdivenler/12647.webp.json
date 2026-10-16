@@ -1,0 +1,38 @@
+{
+  "source": "Merdivenler/12647.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beton kenar üstünde çaprazlı korkuluklu merdiven",
+    "en": "Cross-braced stairs from a concrete edge"
+  },
+  "alt": {
+    "tr": "Beton kenardan çimlik bahçeye inen, çaprazlı korkuluklu ahşap merdiven; yanda koyu yeşil tel çit, arkada ev",
+    "en": "Timber stairs with a cross-braced railing going down from a concrete edge to a lawned garden"
+  },
+  "caption": {
+    "tr": "Merdiven beton kenarın ucundan aşağıya, çimliğe doğru iniyor. Korkuluğun başlangıç direği kalın.",
+    "en": "The stairs go down from the end of the concrete edge toward the lawn. The railing's starting post is thick."
+  },
+  "seoFilename": "beton-kenar-ustunde-caprazli-korkuluklu-merdiven-cimlik",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

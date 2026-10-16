@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/5073.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Merdiven altı kaplaması ve korkuluk direkleri",
+    "en": "Under-stair boarding and railing posts"
+  },
+  "alt": {
+    "tr": "Merdiven altındaki yatay tahta kaplama; öne çıkan kalın korkuluk direği ve çapraz bağlantılar",
+    "en": "Horizontal board cladding under a staircase, with a thick railing post and cross braces in front"
+  },
+  "caption": {
+    "tr": "Alt kaplama yatay tahtalardan, önde kalın bir direk ve çaprazlar duruyor. Yanda küçük bir kapak seçiliyor.",
+    "en": "The lower cladding is made of horizontal boards, with a thick post and cross braces in front. A small hatch can be made out at the side."
+  },
+  "seoFilename": "merdiven-alti-yatay-kaplama-capraz-korkuluk-direkleri",
+  "tags": {
+    "type": [
+      "merdiven",
+      "gömme dolap / gardırop"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

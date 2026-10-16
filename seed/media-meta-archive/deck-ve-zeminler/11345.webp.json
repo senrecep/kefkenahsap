@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/11345.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Süs bitkileri arasında dar deck alanı",
+    "en": "Narrow deck area among ornamental plants"
+  },
+  "alt": {
+    "tr": "Süs bitkileri arasında, bahçede çimen kenarına yerleştirilmiş dar ahşap deck alanı",
+    "en": "Narrow timber deck area set beside the lawn in a garden among ornamental plants"
+  },
+  "caption": {
+    "tr": "Deck köşede L biçiminde dönüyor, tahtalar boyuna sıralı. Kırmızı yapraklı çalılar deck kenarına yaslanıyor.",
+    "en": "The deck turns an L at the corner with the boards running lengthways. Red-leaved shrubs lean against its edge."
+  },
+  "seoFilename": "suslu-bitkiler-arasinda-bahcede-cimen-kenarinda-dar-ahsap",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

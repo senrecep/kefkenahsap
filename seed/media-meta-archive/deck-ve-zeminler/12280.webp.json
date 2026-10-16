@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/12280.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapılı evin önünde çimene açılan deck",
+    "en": "Deck opening onto the lawn at a house with glass doors"
+  },
+  "alt": {
+    "tr": "Çimen kenarında, cam kapılı evin önüne serilmiş açık renkli ahşap deck, yanda bir ağaç ve ahşap çit",
+    "en": "Pale timber deck laid in front of a house with glass doors at the lawn edge, with a tree and a timber fence beside it"
+  },
+  "caption": {
+    "tr": "Deck evin kapısından çimene doğru yarım daire biçiminde çıkıyor. Üzerinde küçük bir tabure duruyor.",
+    "en": "The deck curves out from the house door towards the lawn. A small stool stands on it."
+  },
+  "seoFilename": "cam-kapili-evin-onunde-cimene-acilan-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

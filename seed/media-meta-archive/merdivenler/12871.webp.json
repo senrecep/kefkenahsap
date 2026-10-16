@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/12871.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Metal basamaklı merdiven, ahşap küpeşte ve halat korkuluk",
+    "en": "Metal-tread stairs with timber handrail and rope balustrade"
+  },
+  "alt": {
+    "tr": "Metal basamaklı merdivende ahşap küpeşte ve ince halatlı korkuluk; yanda taş duvar ve zeytin ağacı",
+    "en": "Metal-tread staircase with a timber handrail and thin-rope balustrade, a stone wall and an olive tree beside it"
+  },
+  "caption": {
+    "tr": "Küpeşte ahşap, dolgusu ince halatlardan. Merdiven taş duvarın önünde yükseliyor.",
+    "en": "The handrail is timber and the infill is thin rope. The stairs rise in front of a stone wall."
+  },
+  "seoFilename": "metal-basamakli-merdiven-ahsap-kupeste-halat-korkuluk",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

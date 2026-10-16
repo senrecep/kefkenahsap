@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/13079.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kısmen tahta kaplı yükseltilmiş deck ve istif kereste",
+    "en": "Part-boarded raised deck with stacked timber in front"
+  },
+  "alt": {
+    "tr": "Kısmen tahta kaplı yükseltilmiş deck, önde yığılmış kereste parçaları, arkada yeşil çit",
+    "en": "Part-boarded raised deck with stacked lengths of timber in front and a green hedge behind"
+  },
+  "caption": {
+    "tr": "Deck kısa ayaklar üzerinde duruyor, döşenen kısım kirişlerin kenarına kadar geliyor. Kalan tahtalar ön tarafta bekliyor.",
+    "en": "The deck stands on short legs and the boarded part reaches the edge of the joists. The remaining boards wait in front."
+  },
+  "seoFilename": "kismen-tahta-kapli-yukseltilmis-deck-ve-istif-kereste",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

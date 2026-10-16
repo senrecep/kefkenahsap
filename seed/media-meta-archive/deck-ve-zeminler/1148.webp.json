@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/1148.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Palmiye yanındaki X korkuluklu deck ve pergola iskeleti",
+    "en": "Deck with X railing and pergola frame beside a palm"
+  },
+  "alt": {
+    "tr": "Bir palmiyenin yanında, çapraz korkuluklu ve üstte pergola iskeleti olan alçak deck, ön tarafta basamak",
+    "en": "Low deck beside a palm tree with X-pattern railing and a pergola frame above, with a step at the front"
+  },
+  "caption": {
+    "tr": "Deck alçak ve geniş, çevresi çapraz korkulukla kapanmış. Pergola kirişleri üstte hazır.",
+    "en": "The deck is low and wide, enclosed by cross railing, and the pergola beams are already up."
+  },
+  "seoFilename": "palmiye-yanindaki-x-korkuluklu-deck-pergola-iskeleti",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk",
+      "pergola"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe",
+      "ticari mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

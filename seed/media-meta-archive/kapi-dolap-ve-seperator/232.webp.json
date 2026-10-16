@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/232.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ahşap kaplı cephede panolu ceviz tonlu çift kanatlı kapı",
+    "en": "Panelled walnut-toned double door on a timber-clad facade"
+  },
+  "alt": {
+    "tr": "Ahşap kaplı cephede buzlu camlı, panolu, koyu bal rengi cilalı çift kanatlı ahşap kapı, yanda elektrik sayacı",
+    "en": "Polished dark-honey panelled double timber door with frosted glazing at the top"
+  },
+  "caption": {
+    "tr": "Kapı pano ve cam bölümleriyle simetrik. Cephedeki yatay kaplama kapının rengiyle uyumlu.",
+    "en": "The door is symmetrical with its panels and glazing. The horizontal cladding on the facade matches its colour."
+  },
+  "seoFilename": "ahsap-kapli-cephede-panolu-ceviz-tonlu-cift-kanatli-kapi",
+  "tags": {
+    "type": [
+      "kapı",
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

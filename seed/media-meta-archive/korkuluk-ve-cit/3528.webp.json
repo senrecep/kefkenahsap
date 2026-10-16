@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/3528.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çim bahçeyi çeviren dikey tahtalı koyu alçak duvar",
+    "en": "Low dark vertical-board wall around the lawn"
+  },
+  "alt": {
+    "tr": "Çim alanı üç yandan çeviren, dikey tahtalı kahverengi alçak ahşap duvar; arkada ince gövdeli ağaçlar ve çalılar",
+    "en": "Low brown timber wall of vertical boards enclosing the lawn on three sides, with slim-trunked trees and shrubs behind"
+  },
+  "caption": {
+    "tr": "Duvar tahtaları dikey çakılmış, üstü eğik bir çıtayla kapanıyor. Çim önünde yemyeşil, duvar arkasında bitkiler yükseliyor.",
+    "en": "The wall boards are fixed vertically and capped with an angled slat. The lawn in front is vivid green and plants rise behind the wall."
+  },
+  "seoFilename": "cim-bahceyi-ceviren-dikey-tahtali-koyu-alcak-duvar",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

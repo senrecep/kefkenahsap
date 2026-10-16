@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/9994.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kırmızımsı vernikli uzun ahşap masa ve bank, karo kaldırımda",
+    "en": "Reddish-varnished long timber table and bench on a tiled pavement"
+  },
+  "alt": {
+    "tr": "Karo kaldırım üzerinde, kırmızımsı vernikli, kalın tahtalı uzun ahşap masa ve yanında bank; arkada sokak ve binalar görünüyor",
+    "en": "A long reddish-varnished timber table of thick boards with a bench beside it on a tiled pavement"
+  },
+  "caption": {
+    "tr": "Masa ve bank birbirine yakın yerleştirilmiş, ikisi de kalın tahtalardan. Alt çerçeveli ayaklar sağlam duruyor.",
+    "en": "The table and bench are set close together, both of thick boards. The framed legs stand solidly."
+  },
+  "seoFilename": "kirmizimsi-vernikli-uzun-ahsap-masa-ve-bank-karo-kaldirim",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

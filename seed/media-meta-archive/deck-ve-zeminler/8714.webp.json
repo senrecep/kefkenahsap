@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/8714.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yapay çim kenarlı koyu tonlu deck",
+    "en": "Dark-toned deck bordering artificial grass"
+  },
+  "alt": {
+    "tr": "Yapay çimle sınırlanan, koyu kahve tonlu ve cilalı deck yüzeyi, kenarda sıralı bir bordür tahtası",
+    "en": "Dark brown, glossy deck surface bordering artificial grass, with a trim board along the edge"
+  },
+  "caption": {
+    "tr": "Deck çimin kenarında düz bir bordür tahtasıyla bitiyor. Yüzey cilalı, tahta araları ince.",
+    "en": "The deck ends at the grass with a straight trim board. The surface is glossy and the board gaps are narrow."
+  },
+  "seoFilename": "yapay-cim-kenarli-koyu-tonlu-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

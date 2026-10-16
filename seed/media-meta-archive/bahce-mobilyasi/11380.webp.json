@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/11380.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çıtalı sırtlı ahşap koltuk, önünde alçak sehpa",
+    "en": "Slatted-back timber sofa with a low table in front"
+  },
+  "alt": {
+    "tr": "Atölyenin fayans zemininde, yatay çıtalı sırtı olan vernikli ahşap koltuk ve önünde dikdörtgen alçak sehpa",
+    "en": "On a tiled workshop floor, a varnished timber sofa with a horizontal-slat back and a rectangular low table in front"
+  },
+  "caption": {
+    "tr": "Koltuk uzun ve alçak. Sehpa tahtalarının yönü, koltuğun çıtalarıyla uyumlu.",
+    "en": "The sofa is long and low. The boards of the table follow the direction of the sofa's slats."
+  },
+  "seoFilename": "citali-sirtli-ahsap-koltuk-onunde-alcak-sehpa-atolye",
+  "tags": {
+    "type": [
+      "oturma grubu",
+      "sehpa"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

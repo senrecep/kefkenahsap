@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/3921.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz kenarında kırmızımsı deck tahtaları",
+    "en": "Reddish deck boards at the pool edge"
+  },
+  "alt": {
+    "tr": "Havuzun ızgaralı kenarında döşenmekte olan kırmızımsı kahverengi deck tahtaları; köşede bir testere",
+    "en": "Reddish-brown deck boards being laid at the grated pool edge, with a saw in the corner and pale stone paving beside"
+  },
+  "caption": {
+    "tr": "Tahtalar vidalarla altlığa sabitleniyor ve kenar kirişi görünüyor. Havuz suyu üst kenarda mavi bir şerit gibi duruyor.",
+    "en": "The boards are fixed to the frame with screws and the edge beam shows. The pool water sits as a blue strip along the top edge."
+  },
+  "seoFilename": "havuz-kenarinda-kirmizimsi-deck-tahtalari-dosenirken",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

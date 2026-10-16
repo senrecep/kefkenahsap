@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/14837.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çam ağaçları önünde geniş deck yüzeyi",
+    "en": "Wide deck surface in front of pine trees"
+  },
+  "alt": {
+    "tr": "Çimen kenarında uzanan, kırmızımsı kahverengi geniş deck yüzeyi; arkada çam ağaçları ve yatay çıtalı korkuluk",
+    "en": "Wide reddish-brown deck surface beside a lawn, with pine trees and a horizontal-slat railing behind"
+  },
+  "caption": {
+    "tr": "Tahtalar uzun yönde ve eşit aralıkla döşenmiş. Deckin kenarı çimene hafif yükseltilmiş bir çerçeveyle iniyor.",
+    "en": "The boards are laid lengthwise with even gaps. The deck edge drops to the lawn with a slightly raised frame."
+  },
+  "seoFilename": "cam-agaclari-onunde-genis-deck-yuzeyi-ve-arka-korkuluk",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

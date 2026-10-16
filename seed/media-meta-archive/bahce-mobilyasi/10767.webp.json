@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/10767.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çerçeveli çıtalı ahşap masa, arkasında dört sandalye sırtlığı",
+    "en": "Framed slatted timber table with four chair backs behind"
+  },
+  "alt": {
+    "tr": "Karo zeminde ortasında şemsiye deliği olan çerçeveli çıtalı ahşap masa ve arkasında dört çıtalı sandalye sırtlığı",
+    "en": "On a tiled floor, a framed slatted timber table with a parasol hole and a row of four slatted chair backs behind it"
+  },
+  "caption": {
+    "tr": "Masa dört sandalyeli bir takımın parçası. Tabla çıtaları iki bölüme ayrılmış, ortada şemsiye deliği var.",
+    "en": "The table is part of a four-chair set. The slats of the top are split into two sections with a parasol hole in the middle."
+  },
+  "seoFilename": "cerceveli-citali-ahsap-masa-arkada-dort-sandalye-sirtligi",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,41 @@
+{
+  "source": "Pergola ve Kamelyalar/208.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Salkımlı pergola altında deck, restoran masaları ve spiral merdiven",
+    "en": "Deck with restaurant tables and a spiral stair under a wisteria pergola"
+  },
+  "alt": {
+    "tr": "Salkımlı pergola altında ahşap deck, çapraz korkuluk, restoran masaları, spiral merdiven ve çimlik",
+    "en": "Timber deck under a wisteria pergola with an X-braced rail, restaurant tables, a spiral stair and a lawn"
+  },
+  "caption": {
+    "tr": "Deck çimlik eğimin üzerinde yükseliyor, masalar pergolanın gölgesinde dizili. Üstte gergi bir gölgelik de var.",
+    "en": "The deck rises above the sloping lawn with tables lined up in the pergola's shade. A tensioned shade sail hangs above."
+  },
+  "seoFilename": "salkimli-pergola-altinda-deck-restoran-masalari",
+  "tags": {
+    "type": [
+      "pergola",
+      "deck",
+      "masa ve sandalye takımı"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

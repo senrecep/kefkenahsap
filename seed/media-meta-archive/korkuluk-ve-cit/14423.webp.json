@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/14423.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çalılıkla çevrili kahverengi ahşap korkuluk",
+    "en": "Brown timber railing among shrubs"
+  },
+  "alt": {
+    "tr": "Yakından görünen kahverengi cilalı dikey çıtalı ahşap korkuluk ve küpeşte, yanında yeşil çalılık",
+    "en": "Close view of a brown varnished timber railing with vertical slats and a handrail, with green shrubs beside it"
+  },
+  "caption": {
+    "tr": "Küpeşte köşede dönüyor, çıtalar çalılığın yanında sık aralıkla sıralanıyor.",
+    "en": "The handrail turns at the corner, and the slats stand close together beside the shrubs."
+  },
+  "seoFilename": "calilikla-cevrili-kahverengi-ahsap-korkuluk",
+  "tags": {
+    "type": [
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

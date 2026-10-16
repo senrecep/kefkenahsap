@@ -1,0 +1,40 @@
+{
+  "source": "Korkuluk ve Cit/987.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ev yanındaki deck boyunca yatay tahtalı korkuluk",
+    "en": "Horizontal-board railing along a deck beside a house"
+  },
+  "alt": {
+    "tr": "Evin yan cephesi boyunca uzanan açık tonlu deck ve yamaca bakan yatay tahtalı korkuluk, yanda ızgara ve taş duvar",
+    "en": "Pale deck along the side of a house with a horizontal-board railing facing a slope, with a grill, a stone wall"
+  },
+  "caption": {
+    "tr": "Korkuluk deckin dış kenarını izliyor, evin camlı kapısı deckin içine açılıyor.",
+    "en": "The railing follows the outer edge of the deck, and the glazed door of the house opens onto it."
+  },
+  "seoFilename": "ev-yanindaki-deck-boyunca-yatay-tahtali-korkuluk",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

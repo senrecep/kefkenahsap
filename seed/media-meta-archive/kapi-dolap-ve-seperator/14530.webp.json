@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/14530.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yanında odun yığını bölmesi bulunan çift kapaklı ahşap dolap",
+    "en": "Double-door timber cabinet with an open firewood bay"
+  },
+  "alt": {
+    "tr": "Beyaz duvar dibinde yatay tahtalı ahşap dolap, iki kapaklı kısım kapalı, sağ bölme açık ve içi odun dolu, çatı yeşil kaplı",
+    "en": "Horizontally boarded timber cabinet with two closed doors and an open right-hand bay stacked with firewood"
+  },
+  "caption": {
+    "tr": "Dolabın sağ bölmesi açık bırakılmış, odun burada istifleniyor. Kapaklı bölmeler yan yana ve eşit boyda.",
+    "en": "The right bay is left open for stacking firewood. The doored bays sit side by side at equal size."
+  },
+  "seoFilename": "yaninda-odun-yigini-bolmesi-bulunan-cift-kapakli-ahsap-dolap",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

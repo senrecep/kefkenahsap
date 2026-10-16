@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14299.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimde kavisli, turuncu kahverengi ahşap hamak standı",
+    "en": "Curved orange-brown timber hammock stand on grass"
+  },
+  "alt": {
+    "tr": "Çimlik bahçede, iki ucu yere basan kavisli turuncu-kahverengi bir ahşap hamak standı duruyor",
+    "en": "A curved orange-brown timber hammock stand with both ends on the ground in a lawn garden"
+  },
+  "caption": {
+    "tr": "Stand tek parça kavisli bir kirişle iki yatay ayağa oturuyor. Hamağı iki yandan çekerek taşıyor.",
+    "en": "The stand is a single curved beam resting on two horizontal feet. It carries the hammock by pulling from both ends."
+  },
+  "seoFilename": "cimen-uzerinde-kavisli-turuncu-kahverengi-ahsap-hamak-standi",
+  "tags": {
+    "type": [
+      "hamak standı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

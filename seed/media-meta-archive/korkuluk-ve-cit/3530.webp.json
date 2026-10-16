@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/3530.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çim bahçe kenarında kütük çit ve çiçekli bitki",
+    "en": "Log fence by a lawn with a flowering plant"
+  },
+  "alt": {
+    "tr": "Çim bahçenin kenarında uzanan koyu tonlu kütük çit, önde büyük yapraklı çiçekli bir bitki, arkada servi sırası",
+    "en": "Dark-toned log fence along the edge of a lawn, with a large-leaved flowering plant in front and a row of cypress behind"
+  },
+  "caption": {
+    "tr": "Çit çimin sınırını belirliyor, önde yaprakları geniş bir bitki duruyor.",
+    "en": "The fence marks the boundary of the lawn, with a broad-leaved plant in front."
+  },
+  "seoFilename": "cim-bahce-kenarinda-kutuk-cit-ve-cicekli-bitkiler",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/9078.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yatay kaplamalı eski tip ahşap bina, çok pencereli cephe",
+    "en": "Old-style timber building with horizontal cladding and many windows"
+  },
+  "alt": {
+    "tr": "Bej boyalı yatay ahşap kaplamalı, çıkmalı köşesi ve sıra sıra pencereleri olan eski tip bir bina cephesi",
+    "en": "Facade of an older-style building clad in beige-painted horizontal timber, with a projecting corner and rows of windows"
+  },
+  "caption": {
+    "tr": "Pencereler kalın çerçevelerle kaplamadan ayrılıyor, köşedeki çıkma cepheye derinlik katıyor.",
+    "en": "The windows are set off from the cladding by thick frames, and the projecting corner gives the facade depth."
+  },
+  "seoFilename": "yatay-kaplamali-boyali-eski-tip-ahsap-bina-cephesi-cok",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/14834.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çim ve taş kenar arasında geniş deck",
+    "en": "Wide deck between lawn and stone edge"
+  },
+  "alt": {
+    "tr": "Çimenin ve açık renkli taş kenarın arasında uzanan geniş koyu tonlu deck; arkada korkuluk, zeytin ve çam ağaçları",
+    "en": "Wide dark-toned deck between the lawn and a pale stone border, with a railing, olive and pine trees behind"
+  },
+  "caption": {
+    "tr": "Deck çimene açık ve sağ kenarda taş şeritle sınırlanıyor. Arka sınırda yatay çıtalı korkuluk görünüyor.",
+    "en": "The deck opens onto the lawn and is bordered by a stone strip on the right. A horizontal-slat railing shows along the back boundary."
+  },
+  "seoFilename": "cim-ve-tas-kenar-arasinda-genis-koyu-deck",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

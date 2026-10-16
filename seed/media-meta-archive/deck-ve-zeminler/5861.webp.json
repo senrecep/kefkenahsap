@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/5861.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sürgülü cam kapı önünde taş duvar boyunca deck",
+    "en": "Deck along a stone wall in front of a sliding glass door"
+  },
+  "alt": {
+    "tr": "Cam sürgülü kapının önünde taş duvar boyunca uzanan açık renkli deck; arkada oturma alanı ve bitkiler",
+    "en": "Pale deck running along a stone wall in front of a sliding glass door, with a seating area and plants beyond"
+  },
+  "caption": {
+    "tr": "Deckin ucu cam kapıdan başlayıp duvar dibinde bitiyor. Ön kenarda kalın bir çevre tahtası yer alıyor.",
+    "en": "The deck starts at the glass door and ends at the foot of the wall. A thick fascia board runs along the front edge."
+  },
+  "seoFilename": "surgulu-cam-kapi-onunde-tas-duvar-boyunca-acik-renkli-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

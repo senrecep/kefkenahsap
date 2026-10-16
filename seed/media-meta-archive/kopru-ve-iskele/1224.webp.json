@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/1224.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kıyıdaki yükseltilmiş platform ve çatılı pergola alanı",
+    "en": "Raised shoreline platform with a roofed pergola area"
+  },
+  "alt": {
+    "tr": "Berrak denizin kıyısında, yükseltilmiş ahşap platform üzerinde kısmen örtülü pergola alanı; önde beton iskele kenarı",
+    "en": "Partly roofed pergola area on a raised timber platform on the shore of clear sea water, concrete quay edge in front"
+  },
+  "caption": {
+    "tr": "Platform ağaçların önünde, suya paralel uzanıyor. Üstündeki pergolanın bir bölümü çatıyla kapatılmış.",
+    "en": "The platform runs parallel to the water in front of the trees. Part of the pergola above it is closed with a roof."
+  },
+  "seoFilename": "kiyidaki-yukseltilmis-platform-catili-pergola",
+  "tags": {
+    "type": [
+      "iskele",
+      "pergola"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

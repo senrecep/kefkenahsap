@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/8153.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz yanında yarım kalmış deck döşemesi",
+    "en": "Half-laid deck beside a pool"
+  },
+  "alt": {
+    "tr": "Havuz kenarında uzanan deck yüzeyi, uçta çıplak taşıyıcı çerçeve ve yerde matkap ile el aletleri",
+    "en": "Deck surface along a pool, with a bare support frame at the far end and a drill and hand tools lying on it"
+  },
+  "caption": {
+    "tr": "Deck tahtaları havuz boyunca ilerlemiş. Uç kısımda çerçeve henüz açık, döşeme sürüyor.",
+    "en": "The deck boards run along the pool. The frame at the far end is still open and laying continues."
+  },
+  "seoFilename": "havuz-yaninda-yarim-kalmis-deck-dosemesi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "havuz kenarı",
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

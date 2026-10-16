@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/8950.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Küvet kaplamasındaki ahşap çıtaların yakın görünümü",
+    "en": "Close view of the timber slats on a tub surround"
+  },
+  "alt": {
+    "tr": "Beyaz küvetin kenarını saran dikey ahşap çıtaların yakın çekimi, sarıdan kahveye değişen damar ve arka planda klozet",
+    "en": "Close-up of vertical timber slats around the edge of a white tub"
+  },
+  "caption": {
+    "tr": "Çıtaların damarı ve renk geçişi yakından net görünüyor. Aralar dar ve düzgün.",
+    "en": "Grain and colour shifts in the slats are clear up close. The gaps are narrow and tidy."
+  },
+  "seoFilename": "kuvet-kaplamasindaki-ahsap-citalarin-yakin-gorunumu",
+  "tags": {
+    "type": [],
+    "wood": [
+      "teak"
+    ],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.55
+}

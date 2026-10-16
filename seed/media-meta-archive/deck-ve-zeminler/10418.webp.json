@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/10418.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yeni döşenmiş deck tahtaları ve kenar çerçevesi",
+    "en": "Newly laid deck boards and edge frame"
+  },
+  "alt": {
+    "tr": "Yeni döşenmiş açık tonlu ahşap deck tahtaları ve kenarı saran çerçeve tahtası, yakın çekim",
+    "en": "Close view of newly laid light-toned timber deck boards and the border board around the edge"
+  },
+  "caption": {
+    "tr": "Tahtalar uzun ve dar, boydan boya tek yönde döşenmiş. Kenar çerçevesi köşede 45 derece birleşiyor.",
+    "en": "The boards are long and narrow, laid in one direction. The border frame meets at the corner at 45 degrees."
+  },
+  "seoFilename": "yeni-dosenmis-acik-tonlu-ahsap-deck-tahtalari-ve-kenar",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

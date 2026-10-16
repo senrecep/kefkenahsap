@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14341.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Uzun çiçeklik kutusu ve çıtalı paravan, perspektif görünüm",
+    "en": "Long planter box with a slatted screen, perspective view"
+  },
+  "alt": {
+    "tr": "Alçak açıdan uzun ahşap çiçeklik kutusu ve onun içine monte yatay çıtalı paravan; kutunun içi siyah astarlı",
+    "en": "Low-angle view of a long timber planter box with a horizontal-slat screen fixed into it"
+  },
+  "caption": {
+    "tr": "Kutunun uzun yüzü yatay tahtalarla kaplı, paravan ise iki dikmeye oturuyor. Sağdaki panoda yazılar var, ama okunmuyor.",
+    "en": "The long face of the box is clad in horizontal boards and the screen sits on two posts. There is a notice board on the right."
+  },
+  "seoFilename": "uzun-cicekli-kutusu-citali-paravan-perspektif",
+  "tags": {
+    "type": [
+      "kafes / paravan",
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

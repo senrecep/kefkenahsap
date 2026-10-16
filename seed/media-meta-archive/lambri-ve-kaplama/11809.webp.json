@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/11809.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Gri boyalı ahşap kaplamalı, kepenkli üç katlı bina",
+    "en": "Grey-painted timber-clad three-storey building with shutters"
+  },
+  "alt": {
+    "tr": "Gri boyalı yatay ahşap kaplamalı, pencereleri kepenkli, üst kenarı işlemeli çok katlı eski tip bir bina cephesi",
+    "en": "Facade of an older-style multi-storey building clad in grey-painted horizontal timber, with shuttered windows"
+  },
+  "caption": {
+    "tr": "Pencere çevreleri ve kepenkler cephede dikey bir ritim oluşturuyor.",
+    "en": "The window surrounds and shutters set a vertical rhythm across the facade."
+  },
+  "seoFilename": "gri-boyali-yatay-ahsap-kaplamali-kepenkli-tarihi-bina",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

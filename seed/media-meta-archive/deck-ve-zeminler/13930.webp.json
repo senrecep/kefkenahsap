@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/13930.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Lavanta kenarında turuncu deck şeridi, direk ve beton plakalar",
+    "en": "Orange deck strip by lavender with a post and concrete slabs"
+  },
+  "alt": {
+    "tr": "Lavanta bitkileri kenarında turuncu ahşap deck şeridi; yanda ahşap direk ve beton plakalar",
+    "en": "Orange timber deck strip beside lavender plants, with a timber post and concrete slabs alongside"
+  },
+  "caption": {
+    "tr": "Şerit lavanta tarlasının kenarından dönüp köşe yapıyor ve beton plakalarla birleşiyor. Cila turuncu rengi parlak gösteriyor.",
+    "en": "The strip turns a corner at the edge of the lavender and meets the concrete slabs. The varnish makes the orange colour glow."
+  },
+  "seoFilename": "lavanta-kenarinda-turuncu-deck-seridi-direk-beton-plaka",
+  "tags": {
+    "type": [
+      "deck",
+      "yürüyüş yolu"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

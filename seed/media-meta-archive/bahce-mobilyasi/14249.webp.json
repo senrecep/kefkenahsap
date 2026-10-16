@@ -1,0 +1,38 @@
+{
+  "source": "Ireko-Teak/14249.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş döşeme teraste açılır masa takımı",
+    "en": "Extending table set on a stone-paved terrace"
+  },
+  "alt": {
+    "tr": "Taş döşemeli teraste açılır ahşap masa, katlanır sandalye ve kanepe",
+    "en": "Extending timber table, folding chair and sofa on a stone-paved terrace"
+  },
+  "caption": {
+    "tr": "Masa açılır tip, sandalyeler katlanıyor. Yanında aynı ahşaptan bir kanepe duruyor.",
+    "en": "The table extends and the chairs fold. A sofa in the same timber stands beside it."
+  },
+  "seoFilename": "tas-doseme-terasta-acilir-masa-katlanir-sandalye",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı",
+      "oturma grubu"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

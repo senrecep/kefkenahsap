@@ -1,0 +1,38 @@
+{
+  "source": "Mobilya ve Cila/12305.webp",
+  "category": "mutfak-ve-gomme-dolap",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Koyu taş zeminde çerçeveli beyaz gömme dolap",
+    "en": "Framed white built-in wardrobe on a dark stone floor"
+  },
+  "alt": {
+    "tr": "Giriş kapısının yanında iki kanatlı beyaz gömme dolap, süpürgelik ve koyu taş döşeme",
+    "en": "Two-door white built-in wardrobe next to a front door, with skirting board and dark stone tiles"
+  },
+  "caption": {
+    "tr": "Dolabın alt kısmı süpürgelikle zemine bağlanıyor. Kapak panoları üst ve alt bölümlere ayrılmış.",
+    "en": "The base of the wardrobe meets the floor with a skirting board. The door panels are split into upper and lower sections."
+  },
+  "seoFilename": "koyu-tas-zeminde-cerceveli-beyaz-dolap",
+  "tags": {
+    "type": [
+      "gömme dolap / gardırop"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş",
+      "iç mekân"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

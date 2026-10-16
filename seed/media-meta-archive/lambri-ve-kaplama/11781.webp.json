@@ -1,0 +1,33 @@
+{
+  "source": "Ahsap Yapilar/11781.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Solmuş ve soyulmuş ahşap cephe kaplaması",
+    "en": "Faded and peeling timber facade cladding"
+  },
+  "alt": {
+    "tr": "Pencerelerin arasında yatay ahşap cephe kaplaması, rengi solmuş ve cilası yer yer soyulmuş, altta beyaz sıvalı duvar",
+    "en": "Horizontal timber facade cladding between windows with faded colour and finish peeling in patches"
+  },
+  "caption": {
+    "tr": "Kaplama tahtalarının yüzeyi ağarmış ve pul pul dökülüyor. Bu cephenin bakıma ihtiyacı var.",
+    "en": "The surface of the boards has greyed and is flaking. This facade needs maintenance."
+  },
+  "seoFilename": "pencere-altinda-solmus-soyulmus-ahsap-cephe-kaplamasi",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

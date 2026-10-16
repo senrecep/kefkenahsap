@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/13667.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ahşap çıtalı bahçe çiti yanında deck ve metal su kabı",
+    "en": "Deck beside a slatted garden fence with a metal water bowl"
+  },
+  "alt": {
+    "tr": "Ahşap çıtalı bahçe çiti yanında kahverengi deck; üzerinde metal bir su kabı",
+    "en": "Brown deck beside a slatted timber garden fence, with a metal water bowl on it"
+  },
+  "caption": {
+    "tr": "Çit deck'in kenarını yükseltmeden ayırıyor ve arkada çakıllı bahçe kısmı görünüyor. Tahtalar çite dik uzanıyor.",
+    "en": "The fence marks off the deck edge without raising it, and a gravel part of the garden shows behind. The boards run square to the fence."
+  },
+  "seoFilename": "ahsap-citali-bahce-citi-yaninda-deck-ve-metal-su-kabi",
+  "tags": {
+    "type": [
+      "deck",
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

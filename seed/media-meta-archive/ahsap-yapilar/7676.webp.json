@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/7676.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Duvar üstünde ahşap ev maketi, yandan görünüş",
+    "en": "Timber house model on a wall, side view"
+  },
+  "alt": {
+    "tr": "Duvarın kenarına konmuş ahşap ev maketi yandan; arkada koy, küçük bir iskele ve tepeler",
+    "en": "Timber house model set on the edge of a wall seen from the side, with a bay, a small pier and hills behind"
+  },
+  "caption": {
+    "tr": "Maketin çevresi çerçeveli bir zemine yerleştirilmiş. Arkada kıyıdaki ahşap yapılar ve iskele seçiliyor.",
+    "en": "The model sits on a framed base. Timber structures along the shore and a pier can be made out behind."
+  },
+  "seoFilename": "duvar-ustunde-ahsap-ev-maketi-yandan-koy-ve-tepeler",
+  "tags": {
+    "type": [],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.4
+}

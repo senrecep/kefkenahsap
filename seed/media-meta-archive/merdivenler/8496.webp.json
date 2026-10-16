@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/8496.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Platformlu ahşap merdiven ve çaprazlı korkuluk",
+    "en": "Timber stairs with a platform and cross-braced railing"
+  },
+  "alt": {
+    "tr": "Yandan görünen platformlu ahşap merdiven; çaprazlı korkuluk, yanda yeşil telli çit ve ev cephesi",
+    "en": "Side view of timber stairs with a platform, a cross-braced railing, green wire fencing and the house facade beside"
+  },
+  "caption": {
+    "tr": "Merdivenin ortasında geniş bir platform var. Korkuluk platformu çevreleyip basamaklara devam ediyor.",
+    "en": "A wide platform sits in the middle of the stairs. The railing wraps around the platform and carries on along the steps."
+  },
+  "seoFilename": "platformlu-ahsap-merdiven-caprazli-korkuluk-telli-cit",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

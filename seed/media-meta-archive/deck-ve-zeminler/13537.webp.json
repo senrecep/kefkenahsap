@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/13537.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapı önünde yeni döşenmiş açık sarımsı deck",
+    "en": "Freshly laid pale yellowish deck at a glass door"
+  },
+  "alt": {
+    "tr": "Cam kapı önünde açık sarımsı tahtalardan yeni döşenmiş deck; yanda yeşil bitkiler",
+    "en": "Freshly laid deck of pale yellowish boards in front of a glass door, with green plants beside it"
+  },
+  "caption": {
+    "tr": "Tahtalar ince şerit halinde bahçeye doğru uzanıyor, başındaki parça bir enine tahtayla kapatılmış. Deck henüz cilalanmamış ve doğal rengini taşıyor.",
+    "en": "The boards run out into the garden in a narrow strip, with the start closed by a cross board. The deck has not been finished yet and shows its natural colour."
+  },
+  "seoFilename": "cam-kapi-onunde-yeni-dosenmis-acik-sarimsi-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "giriş"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

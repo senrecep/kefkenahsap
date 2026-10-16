@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/7621.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Üstü camlı yatay çıtalı kabin, kapısı açık",
+    "en": "Cabin with horizontal slats and a glazed top, door open"
+  },
+  "alt": {
+    "tr": "Yatay çıtalı kaplamalı, üst kısmı camlı ahşap kabin; kapısı açık, arkada ağaçlar",
+    "en": "Timber cabin with horizontal slat cladding and a glazed upper section, with the door open and trees behind"
+  },
+  "caption": {
+    "tr": "Duvarın üst bölümü cam şeritlerle açılmış, gövde yatay çıtalarla örülmüş. Kapı koyu renkli ve yarı açık duruyor.",
+    "en": "The upper part of the wall is opened up with glass strips and the body is built of horizontal slats. The door is dark and stands ajar."
+  },
+  "seoFilename": "yatay-citali-kaplamali-ustu-camli-ahsap-soyunma-kabini-kapi",
+  "tags": {
+    "type": [
+      "duş / soyunma kabini"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/10081.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Duvar kenarında yeni döşenmiş deck, güneş ışığında",
+    "en": "Newly laid deck beside a wall in sunlight"
+  },
+  "alt": {
+    "tr": "Yan bahçede duvar boyunca uzanan, yeni döşenmiş ahşap deck; güneş ışığı tahtalara vuruyor",
+    "en": "Newly laid timber deck running along a wall in a side garden, with sunlight on the boards"
+  },
+  "caption": {
+    "tr": "Deck dar ve uzun, ucunda yeşillik var. Tahtalar arasında düzgün derz aralığı bırakılmış.",
+    "en": "The deck is narrow and long with greenery at the end. An even gap is left between the boards."
+  },
+  "seoFilename": "yan-bahcede-duvar-kenarinda-uzanan-yeni-dosenmis-ahsap-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

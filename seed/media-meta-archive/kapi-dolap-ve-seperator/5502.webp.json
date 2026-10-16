@@ -1,0 +1,35 @@
+{
+  "source": "Kapi Dolap ve Seperator/5502.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Z çaprazlı çam çift kapağın kanat birleşimi",
+    "en": "Leaf junction of a Z-braced pine double door"
+  },
+  "alt": {
+    "tr": "Açık renkli çam dikey tahtalı, Z çaprazlı çift kanatlı kapağın yakın görünümü, ortada sürgü ve yanlarda menteşeler",
+    "en": "Close view of a double door of pale pine vertical boards with Z bracing, with a bolt in the middle and hinges at the sides"
+  },
+  "caption": {
+    "tr": "Kanatlar ortada birleşiyor, Z çapraz tahtaları kanatta düz tutuyor. Ham çamın damarı açık görünüyor.",
+    "en": "The leaves meet in the middle and the Z braces keep the boards flat. The grain of the raw pine is clearly visible."
+  },
+  "seoFilename": "z-capraz-cam-cift-kapagin-kanat-birlesimi",
+  "tags": {
+    "type": [
+      "kapı"
+    ],
+    "wood": [
+      "çam"
+    ],
+    "setting": [],
+    "finish": [],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/13820.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ahşap korkuluklu platform ve pergola direkleri, ahşap görünümlü zemin",
+    "en": "Timber-railed platform and pergola posts over a wood-look floor"
+  },
+  "alt": {
+    "tr": "Ahşap korkuluklu platform, pergola direkleri ve kirişleri, ahşap görünümlü seramik zemin ve uzakta ağaçlık",
+    "en": "Timber-railed platform with pergola posts and beams, wood-effect tile floor and trees in the distance"
+  },
+  "caption": {
+    "tr": "Platform havuz kenarından yükseltilmiş ve etrafı korkuluklarla çevrili. Üstte kirişler çatıyı açıkta bırakıyor.",
+    "en": "The platform is raised above the pool edge and enclosed by railings. The beams above leave the roof open."
+  },
+  "seoFilename": "ahsap-korkuluklu-platform-pergola-direkleri",
+  "tags": {
+    "type": [
+      "pergola",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

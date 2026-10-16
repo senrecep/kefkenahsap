@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/14774.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Camlı ahşap kapıların üstünde yatay çıtalı korkuluk",
+    "en": "Horizontal-slat railing above glazed timber doors"
+  },
+  "alt": {
+    "tr": "Zemin kattaki camlı ahşap kapıların üstünde uzanan, yatay çıtalı kahverengi vernikli ahşap teras korkuluğu",
+    "en": "Brown varnished horizontal-slat timber terrace railing running above glazed timber doors on the ground floor"
+  },
+  "caption": {
+    "tr": "Korkuluğun yatay çıtaları kalın dikmelere oturuyor ve üst baskıyla bitiyor. Altta bej sıvalı duvar ve camlı kapılar var.",
+    "en": "The horizontal slats of the railing sit in thick posts and finish under a top rail. Below are a beige rendered wall and glazed doors."
+  },
+  "seoFilename": "camli-ahsap-kapilarin-ustunde-yatay-citali-korkuluk",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "pencere / panjur"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

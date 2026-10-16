@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/13497.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Köpek kulübesini çevreleyen piket çit",
+    "en": "Picket fence enclosing a dog house"
+  },
+  "alt": {
+    "tr": "Yeşil çatılı küçük bir köpek kulübesini üç yandan saran, bal rengi cilalı ahşap çıta çit",
+    "en": "Honey-toned varnished slatted fence around a small dog house with a green roof"
+  },
+  "caption": {
+    "tr": "Çıtalı çit kulübenin etrafında ayrı bir alan oluşturuyor, yer de aynı ahşapla kaplanmış.",
+    "en": "The slatted fence makes a separate area around the kennel, and the floor is boarded in the same timber."
+  },
+  "seoFilename": "kopek-kulubesi-cevresinde-piket-cit-alani",
+  "tags": {
+    "type": [
+      "çit",
+      "köpek kulübesi"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

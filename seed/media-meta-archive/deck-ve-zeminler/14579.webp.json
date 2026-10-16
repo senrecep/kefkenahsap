@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/14579.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kolon yanında bitkili ahşap kutu ve deck",
+    "en": "Planter box and deck beside a column"
+  },
+  "alt": {
+    "tr": "Kırmızı boyalı kolonun yanında, bitkilerle dolu ahşap çiçeklik ve önünde koyu kahverengi cilalı deck",
+    "en": "Timber planter full of plants beside a red-painted column, with a dark brown polished deck in front"
+  },
+  "caption": {
+    "tr": "Tahtalar boyuna sıralanmış ve yüzey ıslak parlıyor. Arkada taş kaplı bir duvar ve eve ait pencereler görünüyor.",
+    "en": "The boards run lengthwise and the surface gleams wet. A stone-clad wall and the windows of the house show behind."
+  },
+  "seoFilename": "kolon-yaninda-bitkili-ahsap-kutu-ve-deck-kapagi",
+  "tags": {
+    "type": [
+      "deck",
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

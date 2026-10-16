@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14266.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bahçe lambası kenarında çimde uzanan basamak plakaları",
+    "en": "Stepping slabs along the lawn beside a garden lamp"
+  },
+  "alt": {
+    "tr": "Sık çalıların ve bir bahçe lambasının yanında, çimde uzaklaşan kahverengi ahşap basamak plakaları",
+    "en": "Brown timber stepping slabs receding across the lawn beside dense shrubs and a garden lamp"
+  },
+  "caption": {
+    "tr": "Plakalar yakından uzağa küçülerek sıralanıyor. Kenarında alçak bir bahçe lambası duruyor.",
+    "en": "The slabs shrink in size from near to far along the path. A low garden lamp stands beside the path."
+  },
+  "seoFilename": "bahce-lambasi-kenarinda-cimde-basamak-plakalari",
+  "tags": {
+    "type": [
+      "yürüyüş yolu"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

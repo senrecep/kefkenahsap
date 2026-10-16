@@ -1,0 +1,40 @@
+{
+  "source": "Korkuluk ve Cit/6414.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ağaç önünde çaprazlı ahşap çiftlik kapısı",
+    "en": "Braced timber farm gate in front of a tree"
+  },
+  "alt": {
+    "tr": "Büyük bir ağaç gövdesinin önünde duran çapraz kuşaklı yeşilimsi ahşap kapı, altta galvaniz menteşe şeritleri",
+    "en": "Greenish braced timber gate standing in front of a big tree trunk, with galvanised hinge straps at the bottom"
+  },
+  "caption": {
+    "tr": "Kapı henüz yerine asılmamış gibi duruyor. Çapraz kuşaklar kanadı sağlamlaştırıyor.",
+    "en": "The gate looks as if it has not yet been hung. The diagonal braces stiffen the leaf."
+  },
+  "seoFilename": "agac-onunde-capraz-ahsap-ciftlik-kapisi-yerde-tahtalar",
+  "tags": {
+    "type": [
+      "bahçe kapısı",
+      "çit"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

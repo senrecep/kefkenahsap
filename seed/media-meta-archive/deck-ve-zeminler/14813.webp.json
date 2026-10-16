@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/14813.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Köşede korkuluk ve bank bulunan turuncu deck",
+    "en": "Orange deck with a corner railing and bench"
+  },
+  "alt": {
+    "tr": "Köşesinde yatay çıtalı ahşap korkuluk ve bank bulunan turuncu kahverengi cilalı deck; önde sarı çalılar",
+    "en": "Orange-brown varnished deck with a horizontal-slat timber railing and a bench in the corner, with yellow shrubs"
+  },
+  "caption": {
+    "tr": "Deck çalı çitin önünde duruyor, korkuluk iki kenarı çevreliyor. Taş plakalar çimen üzerinde deck kenarına yürüyüş yolu yapıyor.",
+    "en": "The deck sits in front of a hedge and the railing runs along two edges. Stone slabs on the lawn make a path to the deck edge."
+  },
+  "seoFilename": "kosede-yatay-citali-korkuluk-ve-bank-turuncu-deck",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

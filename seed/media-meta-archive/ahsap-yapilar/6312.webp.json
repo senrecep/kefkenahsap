@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/6312.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Geniş kapalı hacimde lamine ahşap çatı",
+    "en": "Laminated timber roof over a wide enclosed space"
+  },
+  "alt": {
+    "tr": "Beton zeminli geniş kapalı hacmi örten, tahta tavan kaplamalı lamine ahşap çatı yapısı",
+    "en": "Laminated timber roof structure with a boarded ceiling covering a wide enclosed space with a concrete floor"
+  },
+  "caption": {
+    "tr": "Çatı kirişleri uzun bir koridor oluşturacak şekilde dizilmiş. Zemin hâlâ beton ve inşaat devam ediyor.",
+    "en": "The roof beams line up to form a long run. The floor is still bare concrete and construction continues."
+  },
+  "seoFilename": "genis-kapali-hacimde-lamine-ahsap-cati-yapisi-beton-zemin",
+  "tags": {
+    "type": [
+      "tavan kaplaması / lambri"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

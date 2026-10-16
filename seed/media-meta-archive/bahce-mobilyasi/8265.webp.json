@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/8265.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapı önünde ahşap koltuklar, kanepe ve sehpa takımı",
+    "en": "Timber armchairs, sofa and table set in front of a glass door"
+  },
+  "alt": {
+    "tr": "Koyu ahşap deck terasta, cam kapının önünde, kahverengi vernikli üç ahşap koltuk, bir köşe kanepe ve alçak bir sehpa duruyor",
+    "en": "On a dark timber deck terrace in front of a glass door, three brown-varnished timber armchairs, a corner sofa and a low table"
+  },
+  "caption": {
+    "tr": "Takımın koltukları kolçaklı, çıtalı ve minderi henüz konmamış. Köşe kanepe ve sehpa aynı vernik tonunda.",
+    "en": "The armchairs of the set have arms and slatted seats, with no cushions yet. The corner sofa and table are in the same varnish tone."
+  },
+  "seoFilename": "cam-kapi-onunde-ahsap-koltuklar-kanepe-ve-sehpa-takimi-koyu",
+  "tags": {
+    "type": [
+      "oturma grubu",
+      "deck",
+      "sehpa"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

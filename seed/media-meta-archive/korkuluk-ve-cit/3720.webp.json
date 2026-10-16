@@ -1,0 +1,41 @@
+{
+  "source": "Deck ve Zeminler/3720.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Basamaklı, kavisli kenarlı deck platformu ve çift korkuluk, havuz önünde",
+    "en": "Deck platform with curved edge, steps and double railing in front of the pool"
+  },
+  "alt": {
+    "tr": "Havuz önünde, kavisli kenarlı deck platformunun iki yanında dikey çıtalı korkuluklar ve ortada basamaklı geçiş",
+    "en": "Vertical-slat railings on both sides of a curved-edge deck platform in front of a pool with a stepped opening in the middle"
+  },
+  "caption": {
+    "tr": "Korkuluklar platformun iki kenarında duruyor, ortada basamaklı bir geçiş açık bırakılmış. Deck'in ön kenarı yumuşak kavisle bitiyor.",
+    "en": "The railings stand along both edges of the platform with a stepped opening left in the middle. The front edge of the deck ends in a soft curve."
+  },
+  "seoFilename": "basamakli-kavisli-kenarli-deck-platformu-cift-korkuluk",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı",
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

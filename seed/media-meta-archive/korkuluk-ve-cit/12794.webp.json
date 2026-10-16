@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/12794.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dikey çıtalı vernikli ahşap kapı alt kısmı ve menteşe yakın çekim",
+    "en": "Lower part of a vertical-slat varnished timber gate and its hinge, close-up"
+  },
+  "alt": {
+    "tr": "Beton eşik üzerinde duran, dikey tahtalı vernikli ahşap kapı kanadının alt köşesi, yatay kuşak ve menteşe",
+    "en": "The lower corner of a vertical-board varnished timber gate leaf standing on a concrete threshold"
+  },
+  "caption": {
+    "tr": "Kapının alt kuşağı tahtaları birbirine bağlıyor, menteşe kasaya sabit. Vernik tahtaların damarını koyulaştırmış.",
+    "en": "The lower ledge ties the boards together and the hinge is fixed to the frame. The varnish has deepened the grain of the boards."
+  },
+  "seoFilename": "dikey-citali-vernikli-kapi-alt-kismi-mentese-yakin-cekim",
+  "tags": {
+    "type": [
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,39 @@
+{
+  "source": "Ireko-Teak/8155.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Perspektifte daralan altın kahve deck tahtaları",
+    "en": "Golden-brown deck boards narrowing in perspective"
+  },
+  "alt": {
+    "tr": "Altın kahve tonlu, koyu damarlı deck tahtalarının uzak noktaya doğru daralan yakın görüntüsü; üst köşede bir torba",
+    "en": "Close view of golden-brown deck boards with dark streaks narrowing toward the distance, with a bag in the top corner"
+  },
+  "caption": {
+    "tr": "Tahtalar sıkı ve düz sıralanmış, araları eşit. Damar ve renk geçişleri yakından belli oluyor.",
+    "en": "The boards are packed straight with even gaps. Grain and colour shifts show clearly up close."
+  },
+  "seoFilename": "perspektifte-daralan-altin-kahve-deck-tahtalari",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

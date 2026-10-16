@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/13032.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Doğal tonlu köpek kulübesi, ön cepheden",
+    "en": "Natural-toned dog house seen from the front"
+  },
+  "alt": {
+    "tr": "Yeşil shingle çatılı, doğal tonlu köpek kulübesi, atölye zemininde ön cepheden",
+    "en": "Natural-toned dog house with a green shingle roof on a workshop floor, seen from the front"
+  },
+  "caption": {
+    "tr": "Kulübenin girişi öne bakıyor, çatı kenarı beyaz çıtalı. Zemin tozlu, arkada atölyenin beyaz duvarı ve el arabası var.",
+    "en": "The entrance faces forward and the roof edge has a white batten. The floor is dusty with the white workshop wall and a hand truck behind."
+  },
+  "seoFilename": "yesil-shingle-catili-dogal-tonlu-kopek-kulubesi-atolyede-on",
+  "tags": {
+    "type": [
+      "köpek kulübesi"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

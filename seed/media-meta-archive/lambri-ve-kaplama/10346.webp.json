@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/10346.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Eğimli tavan lambrisi, sağda iskele borusu",
+    "en": "Sloping ceiling panelling with a scaffold pipe on the right"
+  },
+  "alt": {
+    "tr": "Eğimli ve kırık hatlı açık tonlu lambri tavan, sağda metal iskele borusu, duvarlar henüz boyanmamış ham alçı",
+    "en": "Light panelled ceiling with a sloping, angled line, a metal scaffold pipe on the right"
+  },
+  "caption": {
+    "tr": "Tavan kaplaması tamamlanmış, duvar işleri sürüyor.",
+    "en": "The ceiling lining is finished, and the wall work is still going on."
+  },
+  "seoFilename": "egimli-tavan-lambri-kaplama-iskele-boru-ham-alci",
+  "tags": {
+    "type": [
+      "tavan kaplaması / lambri"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

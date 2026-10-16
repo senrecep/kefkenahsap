@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/5389.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar önünde yapım aşamasında ahşap merdiven",
+    "en": "Timber stairs under construction in front of a stone wall"
+  },
+  "alt": {
+    "tr": "Taş duvarın önünde yapım aşamasındaki ahşap merdiven ve platform iskeleti; ustalardan biri çalışıyor",
+    "en": "Timber stairs and platform frame under construction in front of a stone wall, with one of the carpenters at work"
+  },
+  "caption": {
+    "tr": "Platformun taşıyıcı iskeleti kurulmuş, merdiven kısmen yerinde. Arkada taş duvar ve çam ağaçları var.",
+    "en": "The platform's supporting frame is up and the stairs are partly in place. A stone wall and pine trees are behind."
+  },
+  "seoFilename": "tas-duvar-onunde-yapim-asamasinda-ahsap-merdiven-platform",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

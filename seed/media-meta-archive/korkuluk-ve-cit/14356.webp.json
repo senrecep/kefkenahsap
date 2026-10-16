@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14356.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yan yana iki çiçeklik ve üzerindeki çıtalı paravanlar, kepenk önünde",
+    "en": "Two planters side by side with slatted screens, in front of a shutter"
+  },
+  "alt": {
+    "tr": "Kaldırım karolarında yan yana duran iki uzun ahşap çiçeklik; üstlerinde yatay çıtalı paravanlar",
+    "en": "Two long timber planters side by side on pavement tiles with horizontal-slat screens on them"
+  },
+  "caption": {
+    "tr": "Paravanlar çiçekliklerin arka kenarında sıralı duruyor. Kutuların içi toprak için boş.",
+    "en": "The screens stand in a row along the back edge of the planters. The boxes are empty, ready for soil."
+  },
+  "seoFilename": "yan-yana-iki-ciceklik-citali-paravanlar-kepenk",
+  "tags": {
+    "type": [
+      "kafes / paravan",
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

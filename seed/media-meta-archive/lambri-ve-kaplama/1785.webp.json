@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/1785.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çatı altı kirişler, lambri tavan ve yatay tahta duvar",
+    "en": "Roof beams, panelled ceiling and horizontal-board wall"
+  },
+  "alt": {
+    "tr": "Çatı altında çapraz kirişlerin arasına lambri döşenmiş tavan, altında yatay tahta duvar ve bir kapı açıklığı",
+    "en": "Panelled ceiling laid between angled roof beams under a roof, with a horizontal-board wall below and a doorway opening"
+  },
+  "caption": {
+    "tr": "Kirişler çatı eğimini taşıyor, lambri aralarındaki boşluğu kapatıyor.",
+    "en": "The beams carry the roof slope, and the panelling fills the spaces between them."
+  },
+  "seoFilename": "cati-alti-kirisler-lambri-tavan-ve-yatay-tahta-duvar",
+  "tags": {
+    "type": [
+      "tavan kaplaması / lambri"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/11438.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Teras üzerinde koyu kırmızı vernikli kirişler ve şeffaf çatı örtüsü",
+    "en": "Dark red varnished beams with a clear roof sheet over a terrace"
+  },
+  "alt": {
+    "tr": "Teras üzerinde çapraz oturan koyu kırmızı vernikli kirişler ve şeffaf çatı örtüsü, yanda çatı katı kapısı",
+    "en": "Crossing dark red varnished beams with a clear roof sheet over a terrace, with an attic door at the side"
+  },
+  "caption": {
+    "tr": "Kirişler eğimli çatı duvarına uyacak şekilde bağlanmış. Şeffaf levha gün ışığını geçiriyor.",
+    "en": "The beams are fixed to follow the sloping roof wall. The clear sheet lets daylight through."
+  },
+  "seoFilename": "teras-ustunde-kirmizi-vernikli-kirisler-seffaf-cati",
+  "tags": {
+    "type": [
+      "pergola",
+      "sundurma / saçak / carport"
+    ],
+    "wood": [],
+    "setting": [
+      "balkon",
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/6196.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölyede kapaklı açık tonlu çam kasa",
+    "en": "Pale pine chest with a lid in the workshop"
+  },
+  "alt": {
+    "tr": "Atölyede fayans zeminde dikey tahtalı, kapaklı, açık renkli emprenyeli çam sandık, arkada atölye tezgâhı",
+    "en": "Pale pressure-treated pine chest with vertical boards and a lid standing on a tiled workshop floor"
+  },
+  "caption": {
+    "tr": "Kasa dikey tahtalarla örülmüş, üst kapağı tek parça. Kapağın ucunda küçük bir tutamak var.",
+    "en": "The chest is built of vertical boards with a one-piece lid and a small handle at its end."
+  },
+  "seoFilename": "atolyede-kapakli-acik-tonlu-cam-kasa",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

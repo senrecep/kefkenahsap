@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/12610.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kapılı ve pencereli küçük ahşap oyun evi",
+    "en": "Small timber playhouse with a door and window"
+  },
+  "alt": {
+    "tr": "Atölye zemininde duran, kapı ve pencere açıklığı olan, kırmızı çatılı küçük ahşap oyun evi",
+    "en": "Small timber playhouse with a red roof and a door and window opening, standing on a workshop floor"
+  },
+  "caption": {
+    "tr": "Oyun evinin duvarları yatay tahtadan, çatısı kırmızı kaplamalı. Kapı açıklığından içindeki ikinci duvar görünüyor.",
+    "en": "The walls of the playhouse are horizontal boards and the roof is covered in red. A second wall is visible inside through the doorway."
+  },
+  "seoFilename": "kapili-ve-pencereli-kucuk-ahsap-oyun-evi-atolyede",
+  "tags": {
+    "type": [
+      "çocuk oyun evi"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

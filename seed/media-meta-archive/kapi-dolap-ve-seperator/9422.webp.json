@@ -1,0 +1,38 @@
+{
+  "source": "Kapi Dolap ve Seperator/9422.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çakıllı şerit üzerinde kırmızımsı çift kapaklı ahşap depo",
+    "en": "Reddish double-door timber store on a gravel strip"
+  },
+  "alt": {
+    "tr": "Çimde, çakıl şeridin üstünde duran, tek eğimli çatılı çift kapaklı kırmızımsı vernikli ahşap depo; yanında taş duvar",
+    "en": "Reddish varnished double-door timber store with a single-pitch roof on a gravel strip in the lawn beside a stone wall"
+  },
+  "caption": {
+    "tr": "Depo yatay tahtalı ve çift kapaklı, çatısı tek yöne eğimli. Zemine çakıl serilmiş, yaprak ve çim çevresinde.",
+    "en": "The store is clad in horizontal boards and has a roof that slopes one way. Gravel is laid under it, with lawn around."
+  },
+  "seoFilename": "kirmizimsi-cift-kapakli-ahsap-depo-cakil",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)",
+      "bahçe kulübesi / depo"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

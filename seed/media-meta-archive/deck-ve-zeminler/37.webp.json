@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/37.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Gri evin önünde gri tonlu deck",
+    "en": "Grey-toned deck in front of a grey house"
+  },
+  "alt": {
+    "tr": "Gri boyalı evin önünde, alçak duvarla sınırlanan gri tonlu deck; önünde traverslerden döşenmiş bir yürüyüş yolu",
+    "en": "Grey-toned deck in front of a grey-painted house, bounded by a low wall, with a path laid from sleepers in front"
+  },
+  "caption": {
+    "tr": "Yol çalılar ve süs bitkileri arasından deck alanına ulaşıyor. Deckin kenarındaki alçak duvar bir korkuluk bandıyla bitiyor.",
+    "en": "The path reaches the deck area through shrubs and ornamental plants. The low wall at the edge of the deck finishes with a rail band."
+  },
+  "seoFilename": "gri-evin-onunde-gri-tonlu-deck-ve-travers-yolu",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

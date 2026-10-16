@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/12527.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cilalı turuncu kahverengi deck köşesi ve beton basamak",
+    "en": "Varnished orange-brown deck corner with a concrete step"
+  },
+  "alt": {
+    "tr": "Cilalı turuncu kahverengi deck köşesi, önünde beton basamak ve yerde açık boya kutusu",
+    "en": "Corner of a varnished orange-brown deck with a concrete step in front and an open paint tin on the ground"
+  },
+  "caption": {
+    "tr": "Tahtalar basamak kenarına kadar cilalanmış. Hortensiyalar deck'in yanında duruyor.",
+    "en": "The boards are varnished right up to the step edge. Hydrangeas stand beside the deck."
+  },
+  "seoFilename": "cilali-turuncu-kahverengi-deck-kosesi-beton-basamak",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

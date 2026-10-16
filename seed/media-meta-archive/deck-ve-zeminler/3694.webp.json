@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/3694.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Platform üzerinde korkuluk montajı",
+    "en": "Railing installation on the platform"
+  },
+  "alt": {
+    "tr": "Havuz kenarındaki yükseltilmiş platformun üzerinde süren ahşap korkuluk montajı; tahta parçaları ve el aletleri yerde duruyor",
+    "en": "Timber railing being installed on the raised platform at the pool edge, with offcuts and hand tools lying on the deck"
+  },
+  "caption": {
+    "tr": "Korkuluk direkleri dikilmiş, üst tırabzan parçaları yerde bekliyor. Üstte büyük beyaz bir şemsiye açılmış durumda.",
+    "en": "The railing posts are up and the top rail pieces wait on the floor. A large white parasol is open above."
+  },
+  "seoFilename": "platform-uzerinde-korkuluk-montaji-takimlar-gorunuyor",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

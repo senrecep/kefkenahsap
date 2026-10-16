@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14301.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimde kavisli ahşap hamak standının yakın çekimi",
+    "en": "Close-up of a curved timber hammock stand on grass"
+  },
+  "alt": {
+    "tr": "Çimlik bahçede, kavisli ahşap hamak standının alt ayağı ve eğri kirişi yakından görünüyor; arkada pembe çiçekli bitkiler var",
+    "en": "A close view of the foot and curved beam of a timber hammock stand on a garden lawn, with pink-flowering plants behind"
+  },
+  "caption": {
+    "tr": "Kavisli kirişin yere değdiği ayak kısmı çaprazlanıyor. Böylece stand çimde yan yatmadan duruyor.",
+    "en": "The foot where the curved beam meets the ground is crossed, so the stand does not tip sideways on the lawn."
+  },
+  "seoFilename": "cimende-kavisli-ahsap-hamak-standinin-yakin-cekimi-sag-kismi",
+  "tags": {
+    "type": [
+      "hamak standı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

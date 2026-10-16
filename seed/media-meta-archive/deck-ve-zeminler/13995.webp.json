@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/13995.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Pembe fayans kenarında cilalı deck",
+    "en": "Polished deck beside pink tiles"
+  },
+  "alt": {
+    "tr": "Cam kapının önünde, pembe fayans döşemeyle birleşen parlak ve çok tonlu cilalı deck",
+    "en": "Glossy multi-tone deck in front of a glass door, meeting a pink tiled floor"
+  },
+  "caption": {
+    "tr": "Deck ince tahtalardan oluşuyor ve fayans zeminle düz bir çizgide buluşuyor. Cila tahtaların damar farklarını öne çıkarıyor.",
+    "en": "The deck is made of narrow boards and meets the tiles in a straight line. The finish brings out the differences in grain between boards."
+  },
+  "seoFilename": "pembe-fayans-kenarinda-cilali-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/12346.webp",
+  "category": "mutfak-ve-gomme-dolap",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kapağı açık sandık üstü ve iki kapaklı dolap",
+    "en": "Open-lidded chest top over a two-door cabinet"
+  },
+  "alt": {
+    "tr": "Kapağı açık duran ahşap sandık üstü ve altında siyah kulplu, siyah menteşeli iki kapaklı dolap",
+    "en": "A timber chest with its lid open on top of a two-door cabinet with black handles and hinges"
+  },
+  "caption": {
+    "tr": "Üstteki sandığın kapağı açık, içi tahtayla kaplı. Altındaki dolabın iki kapağında siyah demir kulp ve menteşe var.",
+    "en": "The lid of the chest above is open and the inside is lined with boards. The two doors of the cabinet below have black iron handles and hinges."
+  },
+  "seoFilename": "kapagi-acik-ahsap-sandik-ustu-ve-iki-kapakli-dolap",
+  "tags": {
+    "type": [
+      "gömme dolap / gardırop"
+    ],
+    "wood": [],
+    "setting": [
+      "atölyede üretim"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

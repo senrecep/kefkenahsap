@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/13241.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Salıncaklı bahçeyi saran ahşap çit",
+    "en": "Timber slat fence enclosing a garden with a swing"
+  },
+  "alt": {
+    "tr": "Gölgelikli bahçe salıncağının durduğu çimliği yandan çevreleyen alçak çıtalı ahşap çit",
+    "en": "Low slatted timber fence along the side of a lawn with a canopy garden swing"
+  },
+  "caption": {
+    "tr": "Alçak çıtalı çit çimliği yandan sınırlıyor, arkada çalılar ve salıncak görünüyor.",
+    "en": "The low slatted fence marks the side of the lawn, with shrubs and the swing behind."
+  },
+  "seoFilename": "salincakli-bahcede-citali-ahsap-cit",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

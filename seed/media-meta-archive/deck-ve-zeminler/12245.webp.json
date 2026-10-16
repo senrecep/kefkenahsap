@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/12245.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Toprak zeminde dağınık kirişler ve matkap",
+    "en": "Loose joists and a drill on bare ground"
+  },
+  "alt": {
+    "tr": "Toprak zemin üzerine bırakılmış ahşap kirişler ve yerde duran bir matkap, arkada bahçe çiti",
+    "en": "Timber joists set on bare ground with a drill lying beside them, and a garden fence behind"
+  },
+  "caption": {
+    "tr": "Kirişler henüz yerlerine sabitlenmemiş, deck'in iskeleti kurulmaya başlıyor. Eski koyu parçalar toprakta duruyor.",
+    "en": "The joists are not yet fixed in place and the frame is only just being set out. Old dark pieces still lie in the soil."
+  },
+  "seoFilename": "toprak-zeminde-dagnik-kirisler-matkap",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

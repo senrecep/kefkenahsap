@@ -1,0 +1,39 @@
+{
+  "source": "Kapi Dolap ve Seperator/4163.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çapraz kafes örgülü kare klima kasası, fayans zeminde",
+    "en": "Square housing with diagonal lattice on a tiled floor"
+  },
+  "alt": {
+    "tr": "Fayans zeminde duran, yan ve üst yüzeyleri çapraz kafes örgülü açık renkli emprenyeli çerçeveli kare ahşap kasa",
+    "en": "Square timber housing with a light pressure-treated frame and diagonal lattice on its sides and top"
+  },
+  "caption": {
+    "tr": "Kafes yüzeyler cihazı örtüyor ve hava geçişini sürdürüyor. Çerçeve köşeleri 45 derece birleşmiş.",
+    "en": "The lattice faces cover the unit and let air through. The frame corners are mitred at 45 degrees."
+  },
+  "seoFilename": "capraz-kafes-orgulu-kare-klima-kasasi-fayans-zeminde",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)",
+      "kafes / paravan"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "iç mekân",
+      "balkon"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

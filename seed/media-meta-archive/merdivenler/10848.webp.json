@@ -1,0 +1,39 @@
+{
+  "source": "Merdivenler/10848.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Merdiven altından X çapraz bağlantılar",
+    "en": "X cross-bracing seen from under the stairs"
+  },
+  "alt": {
+    "tr": "Ahşap merdivenin altından görünen X biçimli çapraz bağlantılar, kalın ayaklar ve basamak altları",
+    "en": "X-shaped cross-bracing, thick legs and the undersides of the treads seen from under a timber staircase"
+  },
+  "caption": {
+    "tr": "Alttan bakıldığında ayakları birbirine bağlayan X çaprazlar seçiliyor. Basamaklar üstte sıralanmış.",
+    "en": "From below, the X braces tying the legs together stand out. The treads are lined up above."
+  },
+  "seoFilename": "merdiven-altindan-x-capraz-baglantilar",
+  "tags": {
+    "type": [
+      "merdiven"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

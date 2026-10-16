@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/14830.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar üstünde yükseltilmiş deck",
+    "en": "Raised deck on top of a stone wall"
+  },
+  "alt": {
+    "tr": "Kumlu zeminden yükselen taş örgülü duvarın üstünde uzanan, koyu tonlu ahşap deck; arka planda ağaçlar ve ince bir selvi",
+    "en": "Dark-toned timber deck lying on top of a stone wall rising from sandy ground, with trees and a slim cypress behind"
+  },
+  "caption": {
+    "tr": "Duvar eğimli araziyi dengeliyor ve deck düz bir yüzey sağlıyor. Deck tahtaları duvara paralel döşenmiş.",
+    "en": "The wall levels the sloping site and the deck provides a flat surface. The deck boards run parallel to the wall."
+  },
+  "seoFilename": "yukseltilmis-deck-tas-duvar-ustunde-kumlu-zemin",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

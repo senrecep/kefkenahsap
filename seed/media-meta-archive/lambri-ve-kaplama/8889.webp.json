@@ -1,0 +1,33 @@
+{
+  "source": "Ireko-Teak/8889.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Karışık genişlikli kahverengi ahşap şeritli panel",
+    "en": "Panel of mixed-width brown timber strips"
+  },
+  "alt": {
+    "tr": "Farklı genişlikte kahverengi ahşap şeritlerden oluşan kaplama paneli, dışarıda taş zeminde dik duruyor",
+    "en": "Cladding panel made of brown timber strips of different widths, standing upright outdoors on a paved floor"
+  },
+  "caption": {
+    "tr": "Panel, farklı genişlikte ve tonda ahşap şeritlerin üst üste dizilmesiyle yapılmış. Çerçeve yanında bekliyor.",
+    "en": "The panel is built from timber strips of different widths and shades stacked on top of one another. It leans beside a frame."
+  },
+  "seoFilename": "karisik-genislikte-kahverengi-ahsap-seritli-panel",
+  "tags": {
+    "type": [
+      "iç duvar kaplaması"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

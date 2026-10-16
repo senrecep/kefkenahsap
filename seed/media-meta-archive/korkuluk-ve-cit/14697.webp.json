@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/14697.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölye deposunda beyaz boyalı kare gözlü kafes panel",
+    "en": "White-painted square-mesh lattice panel in the workshop store"
+  },
+  "alt": {
+    "tr": "Kereste yığınları ve malzemeler arasında, beyaz boyalı kalın dikmeli kare gözlü ahşap kafes panel; zemin gri beton",
+    "en": "A white-painted timber lattice panel with thick uprights and square cells among timber stacks and materials"
+  },
+  "caption": {
+    "tr": "Panel iki kalın dikmenin arasına kurulmuş, gözleri eşit ve geniş. Arkada ahşap parçaları rafta istifli duruyor.",
+    "en": "The panel is set between two thick uprights with even, wide cells. Pieces of timber are stacked on the shelves behind."
+  },
+  "seoFilename": "atolye-deposunda-beyaz-boyali-kare-gozlu-kafes-panel",
+  "tags": {
+    "type": [
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

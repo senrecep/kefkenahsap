@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/14878.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş zemin üstündeki pencerede kapalı çift kanatlı yeşil panjur",
+    "en": "Closed two-leaf green shutter on a window above stone paving"
+  },
+  "alt": {
+    "tr": "Beyaz duvarda taş zeminin üstündeki pencereyi kapatan, çerçeveli, siyah menteşeli yeşil dikey çıtalı çift kanatlı panjur",
+    "en": "Closed green two-leaf vertical-slat shutter with black hinges on a window in a white wall above stone paving"
+  },
+  "caption": {
+    "tr": "Panjur kanatları kapalı ve pencerenin tamamını örtüyor. Üstte küçük bir korkuluk saçak var.",
+    "en": "The shutter leaves are closed and cover the whole window. A small drip cap runs along the top."
+  },
+  "seoFilename": "tas-zemin-ustundeki-pencerede-kapali-cift-kanatli-yesil",
+  "tags": {
+    "type": [
+      "pencere / panjur"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/13499.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ağaç çevresinde ıslak cilalı turuncu deck",
+    "en": "Wet varnished orange deck around a tree"
+  },
+  "alt": {
+    "tr": "Ağaç çevresinde parlak, ıslak cilalı turuncu kahverengi deck yüzeyi",
+    "en": "Glossy wet varnished orange-brown deck surface around a tree"
+  },
+  "caption": {
+    "tr": "Cila tahtaların rengini derinleştirmiş ve ağacın yansımasını yüzeye düşürmüş. Gövde, deck'in içindeki yuvarlak boşluktan çıkıyor.",
+    "en": "The varnish has deepened the colour of the boards and mirrors the tree on the surface. The trunk rises through a round opening in the deck."
+  },
+  "seoFilename": "agac-cevresinde-islak-cilali-turuncu-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

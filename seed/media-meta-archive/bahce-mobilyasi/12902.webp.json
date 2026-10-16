@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/12902.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dikey şeritli ahşap kasa ve küçük oturak, arkasında dikili kereste",
+    "en": "Vertical-strip timber box and small seat with upright lumber behind"
+  },
+  "alt": {
+    "tr": "Atölyenin beton zemininde, yan yüzü dikey şeritli uzun bir ahşap kasa ve önünde küçük bir oturak duruyor",
+    "en": "On a workshop's concrete floor, a long timber box with sides of vertical strips and a small seat in front of it"
+  },
+  "caption": {
+    "tr": "Kasa uzun, yan yüzü dikey ahşap şeritlerle kaplı. Önündeki küçük oturak basamak olarak da kullanılabilir.",
+    "en": "The box is long and its side is clad in vertical timber strips. The small seat in front can double as a step."
+  },
+  "seoFilename": "dikey-seritli-ahsap-kasa-ve-kucuk-oturak-arkada-dikili",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

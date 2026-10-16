@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/10617.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Üstten bakışla dar ahşap merdiven",
+    "en": "Narrow timber stairs seen from above"
+  },
+  "alt": {
+    "tr": "Dar ahşap merdivenin üstten görünüşü; kalın direkli çaprazlı korkuluk, yanda tel çit ve kırmızı yapraklı çalılar",
+    "en": "Top view of narrow timber stairs, with a cross-braced railing on thick posts, a mesh fence and red-leaved shrubs beside"
+  },
+  "caption": {
+    "tr": "Merdiven ev duvarı ile çalı sırası arasındaki dar şeritte iniyor. Başlangıç direği kalın bir kereste.",
+    "en": "The stairs go down a narrow strip between the house wall and the row of shrubs. The newel post is a thick timber."
+  },
+  "seoFilename": "ustten-dar-ahsap-merdiven-cit-kirmizi-calilar",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

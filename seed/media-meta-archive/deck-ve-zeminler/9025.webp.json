@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/9025.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Açık arazide serilmiş deck tahtası dizilimi",
+    "en": "Deck boards laid out on open ground"
+  },
+  "alt": {
+    "tr": "Kuru otlu açık arazide, çıtaların üzerine aralıklı dizilmiş turuncu kahve ahşap tahtalar",
+    "en": "Orange-brown timber boards spaced out on battens over dry open ground"
+  },
+  "caption": {
+    "tr": "Tahtalar yerde çıtaların üzerine önceden dizilmiş. Yerine montaj için hazırlanmış.",
+    "en": "The boards are pre-laid on battens on the ground, ready to be fitted in place."
+  },
+  "seoFilename": "acik-arazide-serilmis-deck-tahtasi-dizilimi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

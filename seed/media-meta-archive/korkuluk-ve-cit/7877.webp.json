@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/7877.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yuvarlak ahşap direk ve yeşil bantlı mera çiti",
+    "en": "Round timber post and green-tape fence at a grazing field"
+  },
+  "alt": {
+    "tr": "Mera alanını çevreleyen yeşil bantlı çitin kıvrıldığı köşede duran yuvarlak kesitli ahşap direk, yanında yeşil çimen",
+    "en": "Round timber post at the corner of a green-tape fence enclosing a grazing field, with green grass beside it"
+  },
+  "caption": {
+    "tr": "Direk üstü kesik olarak bitiyor, bantlar iki yöne doğru uzanıyor.",
+    "en": "The post ends in a flat cut top, and the tapes run off in two directions."
+  },
+  "seoFilename": "yuvarlak-ahsap-direk-ve-yesil-bantli-cit-mera-alani",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

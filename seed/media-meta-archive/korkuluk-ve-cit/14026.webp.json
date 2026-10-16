@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/14026.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Tuğla kenarlı yatakta ahşap kenarlık",
+    "en": "Wooden edging in a brick-bordered garden bed"
+  },
+  "alt": {
+    "tr": "Tuğla kenarlı toprak bahçe yatağının arkasında ahşap kenarlık, yerde kalıntı parçalar, üstte yeşil çalılık",
+    "en": "Wooden edging behind a brick-bordered bed of bare soil, with debris on the ground and a green hedge above"
+  },
+  "caption": {
+    "tr": "Yatağın kenarına ince bir ahşap şerit konmuş. Toprak henüz dikime hazırlanmamış.",
+    "en": "A thin strip of timber lines the edge of the bed. The soil is not yet ready for planting."
+  },
+  "seoFilename": "tugla-kenarli-yatakta-ahsap-kenarlik",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.4
+}

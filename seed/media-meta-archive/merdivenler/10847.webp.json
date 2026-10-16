@@ -1,0 +1,39 @@
+{
+  "source": "Merdivenler/10847.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Korkuluğu takılmamış merdiven iskeleti",
+    "en": "Stair frame before the railing goes on"
+  },
+  "alt": {
+    "tr": "Korkuluğu henüz takılmamış ahşap merdiven iskeleti; basamaklar yerinde, direkler dikili, yanda alüminyum merdiven",
+    "en": "Timber stair frame with the treads in place and the posts up but no railing yet, with a step ladder beside it"
+  },
+  "caption": {
+    "tr": "Basamaklar kirişlere oturtulmuş, korkuluk direkleri dikilmiş ama korkuluk henüz yok. Yanda iş merdiveni duruyor.",
+    "en": "The treads are fixed to the stringers and the railing posts are up, but the railing is not on yet. A step ladder leans beside it."
+  },
+  "seoFilename": "korkulugu-takilmamis-ahsap-merdiven-iskeleti-yaninda",
+  "tags": {
+    "type": [
+      "merdiven"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

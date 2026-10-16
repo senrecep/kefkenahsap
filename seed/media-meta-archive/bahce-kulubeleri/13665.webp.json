@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/13665.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Köpek kulübesi, yeşil çatılı yan görünüm",
+    "en": "Dog house with a green roof, side view"
+  },
+  "alt": {
+    "tr": "Gri zeminde duran yeşil çatılı köpek kulübesinin yan görünümü; arkada pencereli bir oda",
+    "en": "Side view of a dog house with a green roof standing on a grey floor, with a room with windows behind"
+  },
+  "caption": {
+    "tr": "Kulübenin yan duvarı yatay tahtalarla düzgün kaplı, çatı yeşil. Zemin gri boyalı, arkada cam kapılı bir oda var.",
+    "en": "The side wall of the house is neatly clad in horizontal boards and the roof is green. The floor is painted grey with a glazed room behind."
+  },
+  "seoFilename": "kopek-kulubesinin-yesil-catili-yan-gorunumu-gri-atolye",
+  "tags": {
+    "type": [
+      "köpek kulübesi"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

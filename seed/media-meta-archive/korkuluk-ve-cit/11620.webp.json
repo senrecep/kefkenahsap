@@ -1,0 +1,38 @@
+{
+  "source": "Ireko-Teak/11620.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Telörgülü ahşap çerçeveli çit ve çapraz desenli çift kanatlı kapı",
+    "en": "Wire-mesh timber-framed fence and a cross-patterned double gate"
+  },
+  "alt": {
+    "tr": "Toprak zeminde, bitkilerin arasında duran telörgü dolgulu ahşap çerçeveli çit ve X çaprazlı çift kanatlı kapı",
+    "en": "A timber-framed fence with wire-mesh infill and a double gate with X braces on dirt ground among plants"
+  },
+  "caption": {
+    "tr": "Kapının her kanadında X çapraz var, aralar tel örgüyle doldurulmuş. Çit dikmeleri üstte sivri bitiyor.",
+    "en": "Each leaf of the gate has an X brace and the gaps are filled with wire mesh. The fence posts finish in points at the top."
+  },
+  "seoFilename": "telorgulu-ahsap-cerceveli-cit-capraz-cift-kapi",
+  "tags": {
+    "type": [
+      "çit",
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

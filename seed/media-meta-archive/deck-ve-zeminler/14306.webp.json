@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14306.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapı ve beton duvar kenarında dar deck",
+    "en": "Narrow deck beside a glass door and concrete wall"
+  },
+  "alt": {
+    "tr": "Cam kapı ile alçak beton duvar arasında kalan turuncu kahverengi dar deck; önünde taş plakalar",
+    "en": "Orange-brown narrow deck between a glass door and a low concrete wall, with stone slabs in front"
+  },
+  "caption": {
+    "tr": "Korkuluk gölgeleri deckin üstüne çizgiler düşürüyor. Deck bitişinden sonra toprak ve taş plakalı yürüme yolu başlıyor.",
+    "en": "Railing shadows draw lines across the deck. Past its end, a path of soil and stone slabs begins."
+  },
+  "seoFilename": "cam-kapi-ve-beton-duvar-kenarinda-dar-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

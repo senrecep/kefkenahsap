@@ -1,0 +1,33 @@
+{
+  "source": "Ahsap Yapilar/9857.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Küçük yapının düz çatısında OSB levhalar",
+    "en": "OSB boards on the flat roof of a small building"
+  },
+  "alt": {
+    "tr": "Küçük bir yapının düz çatısına döşenmiş OSB levhalar, yukarıdan görünüm",
+    "en": "OSB boards laid on the flat roof of a small building, seen from above"
+  },
+  "caption": {
+    "tr": "Çatı yüzeyi OSB levhalarla örtülmüş, üzerinde bir kablo kıvrımı duruyor. Arkada bahçe ve bir bina var.",
+    "en": "The roof surface is covered with OSB boards with a coil of cable lying on it. A garden and a building are behind."
+  },
+  "seoFilename": "kucuk-yapinin-duz-cati-osb-levhalar-ustten",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.4
+}

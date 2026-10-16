@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/1769.webp",
+  "category": "ahsap-ev-ve-bungalov",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar üstünde çıtalı ahşap çit",
+    "en": "Slatted timber fence on a stone wall"
+  },
+  "alt": {
+    "tr": "Taş duvarın üzerine kurulmuş açık renk çıtalı ahşap çit, arkada ahşap ev ve kamelya",
+    "en": "Light slatted timber fence set on a stone wall, with a timber house and a gazebo behind"
+  },
+  "caption": {
+    "tr": "Çit dikey çıtalardan oluşuyor ve taş duvarın üzerinde yükseliyor. Arkada ahşap ev görünüyor.",
+    "en": "The fence is made of vertical slats and rises from the stone wall. A timber house shows behind it."
+  },
+  "seoFilename": "tas-duvar-ustunde-citali-ahsap-cit-ve-ev",
+  "tags": {
+    "type": [
+      "çit",
+      "ahşap ev / bungalov"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.5
+}

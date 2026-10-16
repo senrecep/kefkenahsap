@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/13707.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ağaç altında basamak taşlı yoldan ulaşılan deck kiriş iskeleti",
+    "en": "Deck joist frame under a tree reached by a stepping-stone path"
+  },
+  "alt": {
+    "tr": "Ağaç altında, çimen üzerindeki basamak taşlı yoldan ulaşılan deck kiriş iskeleti",
+    "en": "Deck joist frame under a tree, reached by a path of stepping stones across the lawn"
+  },
+  "caption": {
+    "tr": "İskelet ağaçların altında, kirişleri yan yana dizilmiş halde duruyor. Üst sağdaki parça henüz yerine oturtulmamış.",
+    "en": "The frame stands under the trees with its joists laid side by side. The piece at the top right has not yet been fixed in place."
+  },
+  "seoFilename": "agac-altinda-tas-basamakli-yoldan-deck-kiris-iskeleti",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe",
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

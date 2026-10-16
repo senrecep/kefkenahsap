@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/267.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Otel bahçesinde kafes panelli uzun ahşap geçit pergolası",
+    "en": "Long lattice-panelled timber walkway pergola in a hotel garden"
+  },
+  "alt": {
+    "tr": "Otel girişinde kafes panelli uzun ahşap geçit pergolası, aydınlatma direği ve bitkili düzenleme",
+    "en": "Long lattice-panelled timber walkway pergola at a hotel entrance, with a lamp post and planted beds"
+  },
+  "caption": {
+    "tr": "Yan paneller kare kafesle örülü, geçit otelin cam girişine bağlanıyor. Önünde yeşil bitki örtüsü var.",
+    "en": "The side panels are filled with square lattice and the walkway connects to the hotel's glazed entrance. Green planting sits in front."
+  },
+  "seoFilename": "otel-bahcesinde-kafes-panelli-uzun-gecit-pergolasi",
+  "tags": {
+    "type": [
+      "pergola",
+      "kafes / paravan"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/1444.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Manzaralı deck, önünde saksı sırası",
+    "en": "Scenic deck with a row of pots in front"
+  },
+  "alt": {
+    "tr": "Ağaçlarla çevrili geniş deck platformu, kenarında çapraz çıtalı korkuluk ve önünde sıralı pişmiş toprak saksılar",
+    "en": "Wide decking platform framed by trees, with a cross-braced railing at the edge and a row of terracotta pots in front"
+  },
+  "caption": {
+    "tr": "Deck bir tepenin kenarında, korkuluğun ardında vadi ve şehir görünüyor.",
+    "en": "The deck sits at the edge of a hillside, and a valley and town show beyond the railing."
+  },
+  "seoFilename": "manzarali-deck-capraz-korkuluk-onunde-saksi-sirasi",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

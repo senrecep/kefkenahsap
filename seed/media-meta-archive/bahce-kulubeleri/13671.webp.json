@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/13671.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar önünde deck zeminde köpek kulübesi",
+    "en": "Dog house on a deck in front of a stone wall"
+  },
+  "alt": {
+    "tr": "Taş duvar önündeki deck zeminde duran, kemik süslü ve sürmeli yemlikli köpek kulübesi",
+    "en": "Dog house with a bone ornament and a sliding feeding tray standing on a deck in front of a stone wall"
+  },
+  "caption": {
+    "tr": "Kulübe deck tahtalarının üstünde, arkasında koyu taş duvar var. Ön yüzdeki kapak ve kafesli pencere yakından seçiliyor.",
+    "en": "The house stands on deck boards with a dark stone wall behind it. The hatch and the grilled window on the front are clearly visible."
+  },
+  "seoFilename": "tas-duvar-onunde-deck-zeminde-kemik-suslu-kopek-kulubesi",
+  "tags": {
+    "type": [
+      "köpek kulübesi",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

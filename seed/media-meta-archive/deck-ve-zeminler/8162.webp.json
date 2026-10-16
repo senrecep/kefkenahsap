@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/8162.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bakım kapağı bırakılmış deck tahtalarına yakın bakış",
+    "en": "Close look at deck boards with an inspection hatch"
+  },
+  "alt": {
+    "tr": "Turuncu kahve tonlu deck tahtalarının yakın görüntüsü, ortada tahtalara kesilmiş kare bir kapak ve iki tutma deliği",
+    "en": "Close view of orange-brown deck boards with a square hatch cut into them and two finger holes"
+  },
+  "caption": {
+    "tr": "Tahtalar boydan boya düzgün ilerliyor. Ortadaki kare kapak altındaki tesisata ulaşmak için ayrılmış.",
+    "en": "The boards run evenly across the frame. The square hatch in the middle gives access to what lies below."
+  },
+  "seoFilename": "bakim-kapagi-birakilmis-deck-tahtalari",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

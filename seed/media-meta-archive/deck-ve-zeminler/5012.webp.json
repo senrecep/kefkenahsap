@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/5012.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kahverengi deck üzerinde bank takımı",
+    "en": "Bench set on a brown deck"
+  },
+  "alt": {
+    "tr": "Havuzun karşısında kahverengi deck üzerine kurulmuş bank takımı; korkuluk, kapalı şemsiye ve arkada villa",
+    "en": "A bench set on a brown deck across the pool, with a railing, a closed parasol and a villa behind"
+  },
+  "caption": {
+    "tr": "Platformun kavisli kenarı suyun üstüne çıkıyor. Köşelerde kademeli ahşap fenerler duruyor.",
+    "en": "The curved edge of the platform extends over the water. Stepped timber lanterns stand at the corners."
+  },
+  "seoFilename": "kahverengi-deck-uzerinde-bank-takimi-korkuluk-ve-semsiye",
+  "tags": {
+    "type": [
+      "deck",
+      "bank",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

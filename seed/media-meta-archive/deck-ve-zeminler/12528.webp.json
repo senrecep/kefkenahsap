@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12528.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimen önünde yan kaplamalı cilalı yükseltilmiş deck",
+    "en": "Varnished raised deck with side cladding facing the lawn"
+  },
+  "alt": {
+    "tr": "Çimen önünde, yan yüzeyi tahta kaplı cilalı turuncu kahverengi yükseltilmiş deck",
+    "en": "Varnished orange-brown raised deck with a board-clad side face in front of the lawn"
+  },
+  "caption": {
+    "tr": "Deck evin köşesinden bahçeye doğru uzanıyor. Önündeki çimen ve toprak henüz bakım bekliyor.",
+    "en": "The deck runs from the corner of the house out into the garden. The grass and soil in front still need attention."
+  },
+  "seoFilename": "cimen-onunde-yan-kapli-cilali-yukseltilmis-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

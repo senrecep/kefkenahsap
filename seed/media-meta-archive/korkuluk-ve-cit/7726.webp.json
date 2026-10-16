@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/7726.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar arasında koyu renkli, tahta tahta çakılmış çift kanatlı kapı",
+    "en": "Dark double gate of boards between stone walls"
+  },
+  "alt": {
+    "tr": "Taş duvarlar arasındaki girişte, yatay kuşakları olan koyu kahve dikey tahtalı ahşap çift kanatlı kapı",
+    "en": "A dark brown double timber gate of vertical boards with horizontal ledges at the entrance between stone walls"
+  },
+  "caption": {
+    "tr": "Kapı kanatları dikey tahtalardan, iki yatay kuşakla sabitlenmiş. Kapının önünde beton bir eşik var.",
+    "en": "The gate leaves are made of vertical boards held by two horizontal ledges. There is a concrete threshold in front of the gate."
+  },
+  "seoFilename": "tas-duvar-arasinda-koyu-tahtali-cift-kanatli-kapi",
+  "tags": {
+    "type": [
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

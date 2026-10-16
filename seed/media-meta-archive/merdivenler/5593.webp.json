@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/5593.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Üst yapıya çıkan merdiven iskeleti ve çaprazlı korkuluk",
+    "en": "Stair frame and cross-braced railing up to the structure above"
+  },
+  "alt": {
+    "tr": "Üstteki ahşap yapıya çıkan merdiven iskeleti, çaprazlı korkuluk ve altta taşıyıcı direkler",
+    "en": "Stair frame leading up to the timber structure above, with a cross-braced railing and supporting posts below"
+  },
+  "caption": {
+    "tr": "Merdiven çok katmanlı bir ahşap yapıya çıkıyor. Altta direkler ve kirişler platformu taşıyor.",
+    "en": "The stairs lead up to a multi-level timber structure. Posts and beams below carry the platform."
+  },
+  "seoFilename": "ust-yapiya-cikan-ahsap-merdiven-iskeleti-ve-capraz-korkuluk",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

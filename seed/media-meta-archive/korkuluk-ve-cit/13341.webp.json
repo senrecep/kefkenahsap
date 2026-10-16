@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/13341.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapı yanında eğimli ahşap küpeşte",
+    "en": "Sloping timber handrail beside a glass door"
+  },
+  "alt": {
+    "tr": "Cam kapının yanından bahçeye inen gri basamaklar ve turuncu tonlu ahşap küpeşte",
+    "en": "Grey steps leading down to the garden beside a glass door, with an orange-toned timber handrail"
+  },
+  "caption": {
+    "tr": "Küpeşte sahanlıktan başlayıp basamaklarla birlikte aşağı eğiliyor.",
+    "en": "The handrail starts at the landing and slopes down with the steps."
+  },
+  "seoFilename": "cam-kapi-yaninda-egimli-ahsap-kupeste",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "merdiven"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

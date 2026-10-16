@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14981.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bambu ile sarı duvar arasındaki dar geçitte ahşap kasa",
+    "en": "Timber box in the narrow passage between bamboo and a yellow wall"
+  },
+  "alt": {
+    "tr": "Bambu bitkileri ve sarı duvar arasındaki dar taş zeminli geçitte, duvara yaslanmış küçük koyu ahşap kasa",
+    "en": "Small dark timber box leaning against a wall in a narrow stone-paved passage between bamboo plants and a yellow wall"
+  },
+  "caption": {
+    "tr": "Geçit dar ve kasa duvarın dibine yerleştirilmiş. Üstteki tahtalar bambu tarafına doğru uzanıyor.",
+    "en": "The passage is narrow and the box sits at the foot of the wall. The boards on top run toward the bamboo."
+  },
+  "seoFilename": "bambu-ile-sari-duvar-arasindaki-dar-gecitte-ahsap-kasa",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

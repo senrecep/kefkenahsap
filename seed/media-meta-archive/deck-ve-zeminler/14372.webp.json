@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/14372.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çiçeklik kutusu ve koyu kırmızı deck",
+    "en": "Planter box and dark red deck"
+  },
+  "alt": {
+    "tr": "Cam kapının yanında, bitkilerle dolu ahşap çiçeklik kutusunun önünde koyu kırmızı kahverengi deck",
+    "en": "Dark red-brown deck beside a glass door in front of a timber planter box full of plants"
+  },
+  "caption": {
+    "tr": "Çiçeklik kutusu deckle aynı ahşap tonunda. Üzerinde sulama kabı ve eğrelti otları görünüyor.",
+    "en": "The planter box matches the deck in wood tone. A watering can and ferns show above it."
+  },
+  "seoFilename": "ahsap-ciceklik-kutusu-ve-koyu-deck",
+  "tags": {
+    "type": [
+      "deck",
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

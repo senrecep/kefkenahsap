@@ -1,0 +1,37 @@
+{
+  "source": "Mobilya ve Cila/12519.webp",
+  "category": "mutfak-ve-gomme-dolap",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Köşede krem renkli yüksek gömme dolap, parke zemin",
+    "en": "Tall cream built-in wardrobe in a corner with a parquet floor"
+  },
+  "alt": {
+    "tr": "Odanın köşesinde tek parça görünen, krem renkli iki kanatlı yüksek dolap ve açık renk parke",
+    "en": "Tall two-door cream wardrobe set into a corner, with a light parquet floor and a mirror at the side"
+  },
+  "caption": {
+    "tr": "Dolap eğimli tavana uyacak şekilde yüksekliğe kadar çıkıyor. Kapaklar düz ve kulpsuz.",
+    "en": "The wardrobe rises to the height of the sloping ceiling. The doors are flat and handleless."
+  },
+  "seoFilename": "kosede-krem-yuksek-gomme-dolap-parke",
+  "tags": {
+    "type": [
+      "gömme dolap / gardırop"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

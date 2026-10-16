@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14362.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kaldırım taşı üstünde paravanlı çiçeklik, arkada dükkan tabelası",
+    "en": "Planter with a screen on the kerb, a shop sign behind"
+  },
+  "alt": {
+    "tr": "Yol kenarında, kaldırım taşının üstünde duran yatay çıtalı paravanlı ahşap çiçeklik; arkada dükkan cephesi",
+    "en": "A timber planter with a horizontal-slat screen standing on the kerb at the roadside, a shop front behind"
+  },
+  "caption": {
+    "tr": "Çiçeklik kutusu kaldırım kenarına paralel, paravan iki panelden oluşuyor. Arka planda dükkanın girişi ve tabelalar var.",
+    "en": "The planter box is parallel to the kerb and the screen is made of two panels. The shop entrance and signs are in the background."
+  },
+  "seoFilename": "kaldirim-tasi-ustunde-paravanli-ciceklik-tabela",
+  "tags": {
+    "type": [
+      "kafes / paravan",
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

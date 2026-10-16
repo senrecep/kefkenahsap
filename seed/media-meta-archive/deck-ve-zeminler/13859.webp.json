@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/13859.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yeşil metal direk çevresinde eskimiş koyu deck",
+    "en": "Worn dark deck around a green metal post"
+  },
+  "alt": {
+    "tr": "Çit önünde, yeşil metal direğin çevresinden geçen eskimiş koyu kahverengi deck, kenarda bitkiler",
+    "en": "Worn dark brown deck passing around a green metal post in front of a fence, with plants at the edge"
+  },
+  "caption": {
+    "tr": "Direğin dibindeki tahtalar direğe göre kesilmiş. Yüzey soluk ve yer yer yıpranmış, yenileme için bekliyor.",
+    "en": "The boards at the foot of the post are cut to fit round it. The surface is faded and worn in places, waiting to be renewed."
+  },
+  "seoFilename": "yesil-metal-direk-cevresinde-eskimis-koyu-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

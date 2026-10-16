@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/14478.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çit önündeki kırmızı çatılı dolabın uçtan görünüşü",
+    "en": "End view of the red-roofed cabinet along the hedge"
+  },
+  "alt": {
+    "tr": "Çalı çitinin önünde taş tabanlı uzun dolabın ucu, kırmızı kaplı çatı ve siyah menteşeli koyu bal rengi kapaklar",
+    "en": "End of a long cabinet standing on a stone base in front of a hedge"
+  },
+  "caption": {
+    "tr": "Dolabın ucu beyaz kolona kadar uzanıyor. Parke taşlı yol dolabın önünden geçiyor.",
+    "en": "The end of the cabinet reaches the white column. A cobbled path passes in front of it."
+  },
+  "seoFilename": "cit-onundeki-kirmizi-catili-dolabin-ucdan-gorunusu",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

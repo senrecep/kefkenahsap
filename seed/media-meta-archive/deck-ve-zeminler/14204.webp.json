@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/14204.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ağaçlı bahçede deck kirişleri ve yeni tahtalar",
+    "en": "Deck joists and new boards in a wooded garden"
+  },
+  "alt": {
+    "tr": "Çalı çitin önünde, sıralı alt kirişlerin üzerine ilk emprenyeli çam tahtaları döşenen geniş deck",
+    "en": "Wide deck in front of a hedge, with the first pressure-treated pine boards going onto rows of joists"
+  },
+  "caption": {
+    "tr": "Önde yeni konmuş tahtalar, arkada henüz kaplanmamış kiriş sıraları var. Deck köşeli bir sınırla bahçeye açılıyor.",
+    "en": "New boards sit in the foreground and uncovered joists run behind them. The deck opens onto the garden with an angular outline."
+  },
+  "seoFilename": "agac-bahcesinde-deck-kirisleri-ve-yeni-tahtalar",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "orman / kır"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,40 @@
+{
+  "source": "Ireko-Teak/14647.webp",
+  "category": "mutfak-ve-gomme-dolap",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Küp taş zeminde uzun dolap, arkada saksılar",
+    "en": "Long cabinet on cobblestones, with planters behind"
+  },
+  "alt": {
+    "tr": "Küp taş zeminde uzun ahşap kaplı dolap ve üst tablası; arkada tel çit ve çite asılı saksılar",
+    "en": "A long timber-clad cabinet and its top on cobblestones, with wire fencing and pots hung on it behind"
+  },
+  "caption": {
+    "tr": "Dolabın üst tablası boydan boya kırmızımsı cilalı tahtalardan. Tel çite asılı saksılar arka planı canlandırıyor.",
+    "en": "The top of the cabinet is made of reddish polished boards along its whole length. Pots hung on the wire fence liven up the background."
+  },
+  "seoFilename": "kup-tas-zeminde-uzun-dolap-ustu-arkada-tel-cit-ve-saksilar",
+  "tags": {
+    "type": [
+      "gömme dolap / gardırop",
+      "bank",
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş",
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

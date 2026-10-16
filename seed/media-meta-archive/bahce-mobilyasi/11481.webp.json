@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/11481.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Geniş oturaklı kolçaklı ahşap bank, yeşil halı üzerinde",
+    "en": "Wide-seat timber bench with arms on a green mat"
+  },
+  "alt": {
+    "tr": "Düz tahtalı geniş oturağı ve iki sırt tahtası olan, kolçaklı açık tonlu vernikli ahşap bank yeşil zeminde duruyor",
+    "en": "A light-varnished timber bench with arms, a wide plank seat and a two-board back stands on a green surface"
+  },
+  "caption": {
+    "tr": "Bankın oturağı geniş ve tek parça gibi duruyor. Kolçaklar elin rahat yatacağı kalınlıkta.",
+    "en": "The seat is wide and looks like a single piece. The arms are thick enough to rest a hand comfortably."
+  },
+  "seoFilename": "genis-oturakli-kolcakli-ahsap-bank-yesil-hali",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

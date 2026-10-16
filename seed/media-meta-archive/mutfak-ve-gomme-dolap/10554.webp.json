@@ -1,0 +1,38 @@
+{
+  "source": "Mobilya ve Cila/10554.webp",
+  "category": "mutfak-ve-gomme-dolap",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Duvara monteli koyu kapaklı dolap modülü, beyaz iç raf",
+    "en": "Wall-mounted cabinet module with dark doors and a white-lined shelf"
+  },
+  "alt": {
+    "tr": "Duvara monteli, iç yüzü beyaz, kapakları koyu gri ve kenarı metal profilli üst dolap modülü; solda açık raf",
+    "en": "A wall-mounted upper cabinet module with a white interior, dark grey doors and a metal edge profile"
+  },
+  "caption": {
+    "tr": "Modülün sol ucu açık raflı, yanında koyu kapaklar yan yana uzanıyor. Kapakların alt kenarında ince metal profil var.",
+    "en": "The left end of the module is open shelving, with dark doors side by side next to it. A thin metal profile runs along the lower edge of the doors."
+  },
+  "seoFilename": "duvara-monteli-beyaz-ic-koyu-kapakli-raf-ve-dolap-modulu",
+  "tags": {
+    "type": [
+      "raf / kitaplık",
+      "gömme dolap / gardırop"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

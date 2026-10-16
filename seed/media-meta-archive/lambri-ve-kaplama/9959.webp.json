@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/9959.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Boyası dökülen gri cephe ve panjurlu kapak",
+    "en": "Grey facade with peeling paint and a louvred panel"
+  },
+  "alt": {
+    "tr": "Boyası kabarıp dökülmüş gri yatay ahşap cephe kaplaması ve panjur tipi kapak; yanda kırmızı yapraklı bir bitki",
+    "en": "Grey horizontal timber facade cladding with blistered, peeling paint and a louvred panel, with a red-leaved plant beside it"
+  },
+  "caption": {
+    "tr": "Tahtaların gri boyası yer yer dökülmüş, ahşap açığa çıkmış. Cephe yenilenmeyi bekliyor.",
+    "en": "The grey paint on the boards has come off in places and the timber shows through. The facade is waiting for renewal."
+  },
+  "seoFilename": "dokulmus-gri-boya-cephe-tahtasi-panjur",
+  "tags": {
+    "type": [
+      "cephe kaplaması",
+      "pencere / panjur"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

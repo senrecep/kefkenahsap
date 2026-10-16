@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/3781.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz yanındaki teras kolonlarında yatay kaplama",
+    "en": "Horizontal cladding on terrace columns beside a pool"
+  },
+  "alt": {
+    "tr": "Havuz kenarındaki teras girişinde yatay ahşap tahtalarla kaplanmış kolonlar, taş duvar, çimlik ve yerde aletler, kovalar",
+    "en": "Columns clad in horizontal timber boards at a poolside terrace entrance, with a stone wall, lawn, tools"
+  },
+  "caption": {
+    "tr": "Kolonların kaplaması tamamlanmış, zemin ise hâlâ iş sahası gibi duruyor.",
+    "en": "The column cladding is done, while the floor still looks like a work site."
+  },
+  "seoFilename": "havuz-yanindaki-teras-cephesi-kolonlarinda-yatay-ahsap",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı",
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

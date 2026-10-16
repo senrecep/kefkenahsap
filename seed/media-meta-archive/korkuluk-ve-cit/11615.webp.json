@@ -1,0 +1,38 @@
+{
+  "source": "Kapi Dolap ve Seperator/11615.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çapraz kirişli telli ahşap paneller önünde saksılar, kenarda bir kol",
+    "en": "Wire-mesh X-braced timber panels in front of pots, an arm at the edge"
+  },
+  "alt": {
+    "tr": "Teras karolarında, X çapraz kirişli üç parçalı telli ahşap panel; önünde ve arkasında saksılar",
+    "en": "Three-section wire-mesh timber panel with X-shaped bracing on terrace tiles"
+  },
+  "caption": {
+    "tr": "Panel zemine açık olarak yerleştirilmiş, çaprazlar tel örgüyü iki yana bölüyor. Üst kenarda sivri çıtalar sıralı.",
+    "en": "The panel is set out in the open and the braces divide the wire mesh into sections. Pointed slats run in a row along the top edge."
+  },
+  "seoFilename": "capraz-kirisli-telli-ahsap-paneller-onunde-saksilar",
+  "tags": {
+    "type": [
+      "çit",
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/14305.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beton tavan altında vernikli yatay kaplama duvar",
+    "en": "Varnished horizontal-clad wall under a concrete ceiling"
+  },
+  "alt": {
+    "tr": "Beton tavanın altındaki duvarı kaplayan turuncu-kahve vernikli yatay ahşap kaplama, önde taş zemin ve yeşillik",
+    "en": "Orange-brown varnished horizontal timber cladding covering a wall under a concrete ceiling, with stone ground"
+  },
+  "caption": {
+    "tr": "Tahtalar gölgeli bir terasın duvarında yan yana sıralanıyor, vernik rengi sıcak.",
+    "en": "The boards line up on the wall of a shaded terrace, and the varnish has a warm colour."
+  },
+  "seoFilename": "beton-tavan-altinda-vernikli-yatay-ahsap-kaplama-duvar",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

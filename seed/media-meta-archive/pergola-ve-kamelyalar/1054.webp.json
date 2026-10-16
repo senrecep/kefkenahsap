@@ -1,0 +1,41 @@
+{
+  "source": "Pergola ve Kamelyalar/1054.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çaprazlı korkuluklu deck ve üzerinde yapımı süren ahşap iskelet",
+    "en": "Deck with X-braced rails and a timber frame going up above"
+  },
+  "alt": {
+    "tr": "Taş duvarın yanında çapraz çıtalı korkuluklu deck ve üzerinde yapımı süren ahşap pergola iskeleti",
+    "en": "Deck with X-braced railings beside a stone wall and a timber pergola frame under construction above it"
+  },
+  "caption": {
+    "tr": "Korkuluk çıtaları çapraz yerleştirilmiş, deck tahtaları uzun hatlarla döşenmiş. Üstte kirişler henüz tamamlanmamış.",
+    "en": "The rail slats are set crosswise and the deck boards run in long lines. The beams above are not finished yet."
+  },
+  "seoFilename": "capraz-korkuluklu-deck-ahsap-iskelet-yapimi",
+  "tags": {
+    "type": [
+      "pergola",
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

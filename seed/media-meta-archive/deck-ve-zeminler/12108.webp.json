@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/12108.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapı önünde çimene bitişik açık kahverengi deck",
+    "en": "Light brown deck meeting the lawn at a glass door"
+  },
+  "alt": {
+    "tr": "Cam kapının önünde çimenle birleşen açık kahverengi ahşap deck, yanında çalılar",
+    "en": "Light brown timber deck meeting the lawn in front of a glass door, with shrubs beside it"
+  },
+  "caption": {
+    "tr": "Deck kapı eşiğinden çimene doğru açılan düz bir alan oluşturuyor. Köşede koyu gri bir tahta parçası görünüyor.",
+    "en": "The deck makes a level area opening from the threshold onto the lawn. A dark grey board offcut shows in the corner."
+  },
+  "seoFilename": "cam-kapi-onunde-cimene-bitisik-acik-kahverengi-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

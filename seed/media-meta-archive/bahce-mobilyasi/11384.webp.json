@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/11384.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kolçaklı, kırmızımsı vernikli ahşap bank, taş duvar önünde",
+    "en": "Reddish varnished timber bench with arms in front of a stone wall"
+  },
+  "alt": {
+    "tr": "Çıtalı oturağı ve iki sırt çıtası olan kolçaklı ahşap bank, arkasında taş duvar ve çiçekli bir ağaç var",
+    "en": "A timber bench with arms, a slatted seat and a two-rail back, in front of a stone wall and a flowering tree"
+  },
+  "caption": {
+    "tr": "Bankın oturağı aralıklı çıtalardan, yağmur suyu aralıklardan süzülüyor. İki yanda kolçak var.",
+    "en": "The seat is made of spaced slats, so rainwater drains through the gaps. There is an arm on each side."
+  },
+  "seoFilename": "kolcakli-kirmizimsi-vernikli-bank-tas-duvar-onunde",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/7662.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çapraz çıtalı koyu kahverengi ahşap korkuluk",
+    "en": "Dark brown timber railing with cross braces"
+  },
+  "alt": {
+    "tr": "Fayans döşeli balkonun kenarında, çapraz çıtalı koyu kahverengi cilalı ahşap korkuluk, arkada palmiye ve beyaz duvarlar",
+    "en": "Dark brown varnished timber railing with cross braces on the edge of a tiled balcony, with a palm and white walls behind"
+  },
+  "caption": {
+    "tr": "Korkuluk iki bölmeden oluşuyor ve köşe direğiyle bağlanıyor. Zemin açık renk fayans.",
+    "en": "The railing is made of two sections joined at a corner post. The floor is light tile."
+  },
+  "seoFilename": "capraz-citali-koyu-kahverengi-ahsap-korkuluk-balkon",
+  "tags": {
+    "type": [
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "balkon"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

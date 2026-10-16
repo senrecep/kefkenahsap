@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/9758.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Duvar boyunca uzanan merdiven, yerde hortum ve iş merdiveni",
+    "en": "Stairs along the wall, with a hose and a work ladder"
+  },
+  "alt": {
+    "tr": "Duvar boyunca uzanan ahşap merdiven; yerde hortum, yanda duvara dayalı iş merdiveni ve taş duvar",
+    "en": "Timber stairs running along a wall, with a hose on the ground, a work ladder leaning at the side and a stone wall"
+  },
+  "caption": {
+    "tr": "Merdiven uzun duvarın boyunca yükseliyor, yanında ahşap bir iş merdiveni dayalı. Zeminde yeşil bir hortum var.",
+    "en": "The stairs rise along the long wall with a wooden work ladder leaning beside them. A green hose lies on the ground."
+  },
+  "seoFilename": "duvar-boyunca-uzanan-ahsap-merdiven-yerde-hortum-ve-iskele",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

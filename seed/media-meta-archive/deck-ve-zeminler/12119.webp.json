@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/12119.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Boyanmış açık kahverengi deck ve köşedeki bank",
+    "en": "Stained light brown deck with a corner bench"
+  },
+  "alt": {
+    "tr": "Çimen kenarında boyanmış açık kahverengi deck, köşede ahşap bank ve tuğla duvar",
+    "en": "Stained light brown deck at the lawn edge, with a timber bench and a brick wall in the corner"
+  },
+  "caption": {
+    "tr": "Aynı deck boyandıktan sonra tek tonda, düzgün bir yüzey vermiş. Cam kapıdan çimene kadar uzanıyor.",
+    "en": "After staining, the same deck has an even single tone. It runs from the glass door out to the lawn."
+  },
+  "seoFilename": "boyanmis-acik-kahverengi-deck-kosedeki-bank",
+  "tags": {
+    "type": [
+      "deck",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

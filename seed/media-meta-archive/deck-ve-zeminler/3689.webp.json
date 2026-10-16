@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/3689.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çim kenarında kavisli yan yüzeyli platform",
+    "en": "Platform with curved sides at the lawn edge"
+  },
+  "alt": {
+    "tr": "Çimenin kenarında duran, yan yüzeyi kavisli tahtalarla örülmüş geniş ahşap platform; havuza uzanan dar bir geçit",
+    "en": "Wide timber platform at the edge of a lawn, its sides built from curved boards, with a narrow walkway to the pool"
+  },
+  "caption": {
+    "tr": "Kavisli tahtalar platformun kenarını yumuşatıyor. Arkada taş kaplı duvar ve çalılar sıralanıyor.",
+    "en": "The curved boards soften the platform edge. A stone-clad wall and shrubs line up behind."
+  },
+  "seoFilename": "cim-kenarinda-kavisli-yan-yuzeyli-platform-ve-gecit",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

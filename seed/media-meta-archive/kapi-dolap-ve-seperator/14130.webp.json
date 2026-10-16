@@ -1,0 +1,38 @@
+{
+  "source": "Kapi Dolap ve Seperator/14130.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Pergola altında uzun alçak ahşap dolap hattı",
+    "en": "Long low timber cabinet run under a pergola"
+  },
+  "alt": {
+    "tr": "Parke taşlı avluda pergola altında duvar boyunca uzanan, geniş tahta tezgâhlı ve açık raflı uzun ahşap dolap hattı",
+    "en": "Long timber cabinet run along the wall under a pergola in a cobbled courtyard"
+  },
+  "caption": {
+    "tr": "Tezgâh üstü tek parça gibi uzuyor, altında raflar ve tesisat bölmeleri var. Avlu zemini parke taş.",
+    "en": "The top runs on like a single piece with shelves and service bays below. The courtyard is cobbled."
+  },
+  "seoFilename": "pergola-altinda-uzun-alcak-ahsap-dolap-hatti",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/2409.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Koyu saçaklı beyaz ev, tuğla kaide",
+    "en": "White house with dark eaves and a brick base"
+  },
+  "alt": {
+    "tr": "Koyu ahşap saçakları ve pencere kasaları olan, alt kısmı tuğla kaplı beyaz sıvalı iki katlı ev",
+    "en": "Two-storey white plastered house with dark timber eaves and window frames and a brick base"
+  },
+  "caption": {
+    "tr": "Ev kademeli çatılı ve bacalı. Saçaklar ile kasalar koyu ahşap, duvarın altında tuğla sıra var.",
+    "en": "The house has a stepped roof and a chimney. The eaves and frames are dark timber and a course of brick runs along the foot of the wall."
+  },
+  "seoFilename": "beyaz-siva-ev-koyu-sacaklar-ve-tugla-kaide-alttan",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

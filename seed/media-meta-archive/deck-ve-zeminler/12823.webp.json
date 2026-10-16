@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/12823.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çelik çerçeve üzerinde ahşap çıtaların dizildiği geniş deck alt yapısı",
+    "en": "Wide deck substructure with timber battens on a steel frame"
+  },
+  "alt": {
+    "tr": "Çelik çerçeve üzerine ahşap çıtaların sıralandığı geniş deck alt konstrüksiyonu, yamaçta bir bahçe önünde",
+    "en": "Wide deck substructure with timber battens laid over a steel frame, in front of a sloping garden"
+  },
+  "caption": {
+    "tr": "Çıtalar çelik çerçeveye eşit aralıklarla oturtulmuş. Yan taraftaki taş duvar ve yamaç aşağıya doğru iniyor.",
+    "en": "The battens sit on the steel frame at even spacing. A stone wall and the slope drop away at the side."
+  },
+  "seoFilename": "celik-cerceve-uzerinde-ahsap-citali-genis-deck-alt-yapisi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

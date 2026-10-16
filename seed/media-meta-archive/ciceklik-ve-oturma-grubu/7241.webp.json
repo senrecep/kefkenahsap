@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/7241.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deck üzerinde küçük çiçeklik, yanında mor çiçekli saksılar",
+    "en": "Small planter on a deck with purple-flowered pots beside it"
+  },
+  "alt": {
+    "tr": "Ahşap deck üzerinde duran küçük ahşap çiçeklik; yanında mor çiçekli saksılar ve kırmızı yapraklı çalı",
+    "en": "Small timber planter on a timber deck with purple-flowered pots and a red-leaved shrub beside it"
+  },
+  "caption": {
+    "tr": "Çiçeklik alçak ve dikdörtgen, çevresine beyaz saksılar dizilmiş. Zemin yıllanmış gri ahşap deck.",
+    "en": "The planter is low and rectangular with white pots arranged around it. The floor is aged grey timber decking."
+  },
+  "seoFilename": "ahsap-deck-uzerinde-kucuk-ahsap-ciceklik-yaninda-mor-cicekli",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/2457.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar üzerinde yatay kirişli çit, yerleşim manzarası",
+    "en": "Horizontal-rail fence on a stone wall with a town view"
+  },
+  "alt": {
+    "tr": "Yakından görünen taş duvar ve üstündeki yatay kirişli ahşap çit, arkada su kulesi ve evler",
+    "en": "Close view of a stone wall with a horizontal-rail timber fence on top, with a water tower and houses behind"
+  },
+  "caption": {
+    "tr": "Taş sütun çitin kirişlerini taşıyor, direkler duvarın tepesine oturuyor.",
+    "en": "A stone pier carries the rails of the fence, and the posts sit on the top of the wall."
+  },
+  "seoFilename": "tas-duvar-uzerinde-yatay-kirisli-ahsap-cit-yerlesim",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

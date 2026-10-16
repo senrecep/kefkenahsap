@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/13843.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimenlik üzerinde parlak turuncu deck ve kırmızı hortum",
+    "en": "Glossy orange deck on the lawn with a red hose"
+  },
+  "alt": {
+    "tr": "Çimenlik üzerinde parlak turuncu kahverengi deck, yanında kıvrılan kırmızı bir hortum",
+    "en": "Glossy orange-brown deck on the lawn with a red hose curving beside it"
+  },
+  "caption": {
+    "tr": "Deck çimene yeni serilmiş ve kenarları ince bir çerçeve tahtasıyla kapanmış. Ağacın gölgesi tahtaların üzerine vuruyor.",
+    "en": "The deck has just been laid on the lawn with its edges closed by a slim frame board. The tree's shade falls across the boards."
+  },
+  "seoFilename": "cimenlik-uzerinde-parlak-turuncu-deck-ve-kirmizi-hortum",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

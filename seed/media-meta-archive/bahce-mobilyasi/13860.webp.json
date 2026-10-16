@@ -1,0 +1,39 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/13860.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Karo teraste çıtalı, yuvarlak sırtlı ahşap koltuklar ve sehpa",
+    "en": "Slatted round-back timber armchairs and table on a tiled terrace"
+  },
+  "alt": {
+    "tr": "Karo döşeli terasta, yuvarlak çıtalı sırtlı iki koltuk, aynı biçimde bir kanepe ve alt rafı olan bir sehpa duruyor",
+    "en": "On a tiled terrace, two round slatted-back armchairs, a matching sofa and a table with a lower shelf"
+  },
+  "caption": {
+    "tr": "Koltukların sırtı ve yan kenarları kavisli çıtalardan örülmüş. Takımda iki koltuk, bir kanepe ve alt rafı olan bir sehpa var.",
+    "en": "The backs and sides of the chairs are woven from curved slats. The set has two armchairs, a sofa and a table with a lower shelf."
+  },
+  "seoFilename": "karo-teraste-citali-yuvarlak-sirtli-koltuklar-ve-sehpa",
+  "tags": {
+    "type": [
+      "oturma grubu",
+      "sehpa"
+    ],
+    "wood": [],
+    "setting": [
+      "teras",
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

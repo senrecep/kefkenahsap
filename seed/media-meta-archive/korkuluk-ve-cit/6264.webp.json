@@ -1,0 +1,40 @@
+{
+  "source": "Korkuluk ve Cit/6264.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yandan görünümde çaprazlı ahşap kapı, çakıl yol",
+    "en": "Side view of a braced timber gate beside a gravel track"
+  },
+  "alt": {
+    "tr": "Toprak alanın girişinde kalın direğe bağlı çaprazlı ahşap kapı, yanında çakıl yol ve arkada ağaçlar",
+    "en": "Braced timber gate hung on a thick post at the entrance to a bare plot, with a gravel track beside it and trees behind"
+  },
+  "caption": {
+    "tr": "Kapı yan açıdan görününce galvaniz menteşeler ve çapraz kuşak net seçiliyor.",
+    "en": "From the side the galvanised hinges and the diagonal brace show clearly."
+  },
+  "seoFilename": "yandan-gorunum-capraz-ahsap-kapi-toprak-ve-cakil-yol",
+  "tags": {
+    "type": [
+      "bahçe kapısı",
+      "çit"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

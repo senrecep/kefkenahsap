@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/10107.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çim bahçeden üst kata çıkan merdiven",
+    "en": "Stairs leading from the lawn up to the upper level"
+  },
+  "alt": {
+    "tr": "Çim bahçeden duvarın üstündeki alana çıkan çaprazlı korkuluklu ahşap merdiven; üstte beyaz çıtalı çit",
+    "en": "Timber staircase with cross-braced railings leading from a lawn to the area above the wall"
+  },
+  "caption": {
+    "tr": "Merdiven çimlikten başlayıp duvarın üstündeki alana ulaşıyor. En üstte beyaz bir çit görünüyor.",
+    "en": "The stairs start on the lawn and reach the area above the wall. A white fence shows at the very top."
+  },
+  "seoFilename": "cim-bahceden-ust-kata-cikan-merdiven-beyaz-citli",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

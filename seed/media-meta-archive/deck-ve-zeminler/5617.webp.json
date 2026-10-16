@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/5617.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Açık renkli deck yüzeyinin yakın planı",
+    "en": "Close-up of a pale deck surface"
+  },
+  "alt": {
+    "tr": "Boyuna döşenmiş açık renkli çam deck tahtaları, belirgin damarlar ve gölge çizgisi; sol kenarda çimen",
+    "en": "Pale pine deck boards laid lengthwise, with pronounced grain and a line of shadow, and grass on the left edge"
+  },
+  "caption": {
+    "tr": "Yüzeyde yıllık halkalar ve lif yapısı net görünüyor. Tahtalar eşit aralıkla sıralanmış.",
+    "en": "Growth rings and fibre structure are clearly visible on the surface. The boards are evenly spaced."
+  },
+  "seoFilename": "acik-renkli-tahta-damarli-deck-yuzeyi-yakin-plan",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

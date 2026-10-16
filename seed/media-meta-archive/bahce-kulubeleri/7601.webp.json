@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/7601.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kenar duvarlı, ortası camlı ahşap duş kabini",
+    "en": "Timber shower cabin with side walls and a glazed middle"
+  },
+  "alt": {
+    "tr": "Yatay kaplamalı kenar duvarları ve ortada cam bölmesi olan ahşap duş kabini; arkada yamaç",
+    "en": "Timber shower cabin with horizontally clad side walls and a glass screen in the middle, with a slope behind"
+  },
+  "caption": {
+    "tr": "Kabin iki yanında kapalı ahşap duvarlarla, ortasında açık camlı bölümle yapılmış. Arkada kayalık bir yamaç ve deniz kıyısı var.",
+    "en": "The cabin is built with closed timber walls on both sides and a glazed open section in the middle. A rocky slope and the shore are behind."
+  },
+  "seoFilename": "yatay-kaplamali-kenar-duvarli-ortasi-camli-ahsap-dus-kabini",
+  "tags": {
+    "type": [
+      "duş / soyunma kabini"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

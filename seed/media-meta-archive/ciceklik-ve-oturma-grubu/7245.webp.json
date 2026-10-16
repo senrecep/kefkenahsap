@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/7245.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Geniş tahtalı deckte kenarlı çiçeklik",
+    "en": "Planter with a wide rim on a wide-board deck"
+  },
+  "alt": {
+    "tr": "Geniş tahtalı deck üzerinde, geniş kenar kuşaklı ahşap çiçeklik; arkada kırmızı yapraklı bitki ve saksılar",
+    "en": "Timber planter with a wide rim on a wide-board deck, with a red-leaved plant and pots behind"
+  },
+  "caption": {
+    "tr": "Çiçekliğin üst kuşağı dışa taşıyor, alttaki tahtalar yatay. Deck tahtaları çiçekliğe göre çok daha geniş.",
+    "en": "The top rim projects outward, with horizontal boards beneath. The deck boards are much wider than the planter boards."
+  },
+  "seoFilename": "genis-tahtali-deck-uzerinde-kenarli-ahsap-ciceklik-arkada",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

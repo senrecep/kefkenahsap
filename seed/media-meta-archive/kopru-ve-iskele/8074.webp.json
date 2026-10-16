@@ -1,0 +1,40 @@
+{
+  "source": "Kopru ve Iskele/8074.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Köprü korkuluğunun dikey çıtaları ve alt destek parçaları",
+    "en": "Vertical slats of the bridge railing and the support pieces below"
+  },
+  "alt": {
+    "tr": "Kavisli ahşap köprünün korkuluğu ve alt destek parçaları yakından; dikey çıtalar kalın dikmeye oturuyor",
+    "en": "Railing and underside support pieces of a curved timber bridge close up, vertical slats set into thick posts"
+  },
+  "caption": {
+    "tr": "Çıtalar eşit aralıkla dizili, üstte kavisli bir küpeşte onları birbirine bağlıyor. Altta çapraz destekler suya doğru iniyor.",
+    "en": "The slats are evenly spaced and a curved handrail ties them together on top. Diagonal supports run down towards the water below."
+  },
+  "seoFilename": "kopru-korkulugunun-dikey-citalari-alt-destek",
+  "tags": {
+    "type": [
+      "köprü",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

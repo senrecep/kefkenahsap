@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/4658.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bina yanına yaslanmış açık renk ahşap kulübe",
+    "en": "Pale timber shed leaning against a building"
+  },
+  "alt": {
+    "tr": "Binanın yan duvarına yaslanmış, açık renk yatay kaplamalı ahşap kulübe; üstünde uydu çanağı görünüyor",
+    "en": "Pale timber shed with horizontal cladding leaning against the side wall of a building, with a satellite dish visible above"
+  },
+  "caption": {
+    "tr": "Kulübenin çatısı tek eğimli, bina duvarına yaslanıyor. Kapı kanatlarında demir tutamaklar var.",
+    "en": "The roof of the shed is mono-pitch and rests against the wall of the building. The door leaves have iron handles."
+  },
+  "seoFilename": "bina-yanina-yaslanmis-acik-renk-ahsap-kulube-cati-ucunda",
+  "tags": {
+    "type": [
+      "bahçe kulübesi / depo"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

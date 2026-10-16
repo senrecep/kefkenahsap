@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/12131.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Toprak üzerinde ayak bloklu deck alt kirişleri",
+    "en": "Deck sub-joists on soil with support blocks"
+  },
+  "alt": {
+    "tr": "Kiremit renkli zemin kenarında toprağa serilmiş ahşap deck alt kirişleri ve ayak blokları",
+    "en": "Timber deck sub-joists set on soil with support blocks, next to a terracotta-coloured floor"
+  },
+  "caption": {
+    "tr": "Kirişler küçük ahşap bloklar üzerinde yükseltilmiş. Önde bir kutu vida ve kesilmiş tahta parçası duruyor.",
+    "en": "The joists are raised on small timber blocks. A tub of screws and a cut offcut lie in front."
+  },
+  "seoFilename": "kiremit-rengi-zemin-kenari-ayak-bloklu-deck-kirisleri",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras",
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/1818.webp",
+  "category": "ahsap-ev-ve-bungalov",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yatay kaplamalı ahşap ev duvarı",
+    "en": "Horizontally clad timber house wall"
+  },
+  "alt": {
+    "tr": "Pencere boşlukları henüz açık olan, yatay tahta kaplı yapım aşamasındaki ahşap ev cephesi",
+    "en": "Wall of a timber house under construction, clad in horizontal boards, with the window openings still empty"
+  },
+  "caption": {
+    "tr": "Cephe yatay tahtalarla kaplanmış. Pencereler yerine takılmamış, duvarın dibinde paketler duruyor.",
+    "en": "The facade is clad in horizontal boards. The windows are not fitted yet and packs of material stand at the foot of the wall."
+  },
+  "seoFilename": "yatay-kaplamali-ahsap-ev-duvari-pencere-bosluklari",
+  "tags": {
+    "type": [
+      "ahşap ev / bungalov",
+      "cephe kaplaması"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

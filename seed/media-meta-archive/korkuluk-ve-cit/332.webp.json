@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/332.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Park alanında ahşap pergola, bank ve çit",
+    "en": "Timber pergola, bench and fence in a park"
+  },
+  "alt": {
+    "tr": "Çocuk oyun alanının önünde, çimenlik içinde ahşap pergola, uzun bank ve yanında açık tonlu ahşap çit",
+    "en": "Timber pergola with a long bench in front of a children’s play area on a lawn, with a light timber fence beside it"
+  },
+  "caption": {
+    "tr": "Pergola oyun alanını çimlikten ayırıyor. Arkada renkli kaydıraklar görünüyor.",
+    "en": "The pergola separates the play area from the lawn, with colourful slides visible behind."
+  },
+  "seoFilename": "park-alaninda-ahsap-pergola-bank-ve-cit",
+  "tags": {
+    "type": [],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.45
+}

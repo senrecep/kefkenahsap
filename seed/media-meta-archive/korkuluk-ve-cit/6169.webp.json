@@ -1,0 +1,40 @@
+{
+  "source": "Korkuluk ve Cit/6169.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Merdiven yanında çıtalı korkuluk ve menteşeli kapı",
+    "en": "Slatted railing and hinged gate beside stairs"
+  },
+  "alt": {
+    "tr": "Taş basamakların yanında dikey çıtalı yeşilimsi ahşap korkuluk ve siyah menteşeli kapı kanadı, arkada ortancalar",
+    "en": "Greenish vertical-slat timber railing and a gate leaf on black hinges beside stone steps, with hydrangeas behind"
+  },
+  "caption": {
+    "tr": "Korkuluk basamaklardan başlayıp kırmızı direğe kadar uzanıyor, kapı o direğe asılı.",
+    "en": "The railing starts at the steps and runs to the red post, where the gate is hung."
+  },
+  "seoFilename": "merdiven-yaninda-citali-ahsap-korkuluk-ve-mentese-kapi",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "bahçe kapısı"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,42 @@
+{
+  "source": "Pergola ve Kamelyalar/1199.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deniz kenarında deck üzerinde çatılı pergola ve çiçekli ahşap saksı",
+    "en": "Roofed pergola on a seafront deck with a flower planter"
+  },
+  "alt": {
+    "tr": "Deniz kenarındaki deck üzerinde tahta çatılı pergola ve ön tarafta çiçek açmış ahşap saksı",
+    "en": "Boarded-roof pergola on a seafront deck with a timber planter of flowers in the front"
+  },
+  "caption": {
+    "tr": "Deck güneşte parlıyor, pergola çatısı uzun bir hat boyunca uzanıyor. Ahşap saksıda pembe çiçekler var.",
+    "en": "The deck gleams in the sun and the pergola roof runs along a long line. The timber planter holds pink flowers."
+  },
+  "seoFilename": "deniz-kenarinda-deck-catili-pergola-ahsap-saksi",
+  "tags": {
+    "type": [
+      "pergola",
+      "deck",
+      "çiçeklik / saksı"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı",
+      "havuz kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

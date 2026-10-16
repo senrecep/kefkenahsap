@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14154.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kaldırımda kare çiçeklik, arkada ahşap bank",
+    "en": "Square planter on the pavement with a timber bench behind"
+  },
+  "alt": {
+    "tr": "Kaldırımda duran bitkili kare ahşap çiçeklik ve arkasında sıralanmış ahşap bank",
+    "en": "Square timber planter with a plant on the pavement, with a timber bench lined up behind it"
+  },
+  "caption": {
+    "tr": "Çiçeklik koyu vernikli ve eğik kenarlı, içinde yeni sürmüş bir çalı var. Bank ve ikinci bir çiçeklik arkada.",
+    "en": "The planter has a dark varnish and sloping sides, with a shrub just coming into leaf. The bench and a second planter stand behind."
+  },
+  "seoFilename": "kaldirimda-bitkili-kare-ahsap-ciceklik-arkada-ahsap-bank",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

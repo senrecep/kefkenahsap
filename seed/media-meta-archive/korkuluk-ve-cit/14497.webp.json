@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/14497.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kırmızı toprakta uzun yatay çıtalı çit",
+    "en": "Long horizontal-rail fence on red soil"
+  },
+  "alt": {
+    "tr": "Kırmızı toprak arazide uzun bir dikdörtgeni çeviren yatay çıtalı açık tonlu ahşap çit, önde bir saksı ve kök parçaları",
+    "en": "Light timber fence with horizontal rails enclosing a long rectangle on red soil, with a pot and roots in front"
+  },
+  "caption": {
+    "tr": "Çit düz bir hatla uzayıp köşeden dönüyor. Arazide henüz bitki yok.",
+    "en": "The fence runs straight and turns at the corner. There are no plants on the plot yet."
+  },
+  "seoFilename": "kirmizi-topraklarda-uzun-yatay-citali-cit",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

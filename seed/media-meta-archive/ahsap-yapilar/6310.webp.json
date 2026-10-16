@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/6310.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yüksek salonda lamine çapraz çatı kirişleri",
+    "en": "Crossing laminated roof beams in a high hall"
+  },
+  "alt": {
+    "tr": "Yüksek bir salonda ortada birleşen çapraz lamine ahşap çatı kirişleri ve tahta tavan kaplaması",
+    "en": "Diagonal laminated timber roof beams meeting in the middle of a high hall with a boarded timber ceiling"
+  },
+  "caption": {
+    "tr": "Çatı kirişleri orta hatta birleşip yelpaze gibi açılıyor. Tavan tahtaları açık renk, uçtaki pencereden gün ışığı giriyor.",
+    "en": "The beams meet along the centre line and fan out like ribs. The ceiling boards are light and daylight comes in through the window at the end."
+  },
+  "seoFilename": "yuksek-salonda-lamine-capraz-cati-kirisleri-ve-tavan",
+  "tags": {
+    "type": [
+      "tavan kaplaması / lambri"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

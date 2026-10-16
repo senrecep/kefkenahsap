@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/10001.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çalılık ve çimenlik içinde uzaktan görünen ahşap masa ve bank",
+    "en": "Distant view of a timber table and bench among hedges and lawn"
+  },
+  "alt": {
+    "tr": "Çalılarla çevrili, çimlik bir bahçede kırmızımsı vernikli uzun ahşap masa ve bank",
+    "en": "A reddish-varnished long timber table and bench in a lawn garden among shrubs"
+  },
+  "caption": {
+    "tr": "Masa ve bank bahçenin bir köşesine, çalıların arasına yerleştirilmiş. Evin camlı kapılarından görülebilen bir mesafede duruyor.",
+    "en": "The table and bench are set in a garden corner among the shrubs, within sight of the house's glass doors."
+  },
+  "seoFilename": "calilik-ve-cimenlik-icinde-uzaktan-vernikli-ahsap-masa-bank",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

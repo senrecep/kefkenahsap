@@ -1,0 +1,40 @@
+{
+  "source": "Kopru ve Iskele/951.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar boyunca göle uzanan ahşap iskele yapısı",
+    "en": "Timber pier structure running to the lake along a stone wall"
+  },
+  "alt": {
+    "tr": "Çim alanın kenarındaki taş duvarın ardında, göl kıyısında uzanan ahşap iskele yapısı; önde yeni dikilmiş bitki yatağı",
+    "en": "Timber pier structure on the lakeshore beyond a stone wall at the edge of a lawn, with a freshly planted bed in front"
+  },
+  "caption": {
+    "tr": "İskele yapısı gölün üstüne dikmelerle uzanıyor. Önündeki toprak alanda küçük bitkiler dikilmiş.",
+    "en": "The pier structure reaches out over the lake on posts. Small plants have been set in the soil in front."
+  },
+  "seoFilename": "tas-duvar-boyunca-gole-uzanan-ahsap-iskele-yapisi",
+  "tags": {
+    "type": [
+      "iskele",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

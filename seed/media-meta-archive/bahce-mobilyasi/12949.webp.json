@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/12949.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Köşeye yapılmış koyu vernikli ahşap sedir, sarı duvar dibinde",
+    "en": "Dark-varnished timber corner bench built against a yellow wall"
+  },
+  "alt": {
+    "tr": "Terasın sarı boyalı duvarlarının oluşturduğu köşeye yapılmış, koyu vernikli ahşap sedir; önünde taş görünümlü karo zemin",
+    "en": "A dark-varnished timber corner bench fitted into the angle of a terrace's yellow-painted walls"
+  },
+  "caption": {
+    "tr": "Sedir iki duvarın birleştiği köşeyi dolduruyor. Bu yerleşim teras alanını boşa harcamadan oturma yeri sağlıyor.",
+    "en": "The bench fills the corner where two walls meet. This layout adds seating without wasting terrace space."
+  },
+  "seoFilename": "sari-duvar-dibinda-kosede-koyu-vernikli-ahsap-sedir",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

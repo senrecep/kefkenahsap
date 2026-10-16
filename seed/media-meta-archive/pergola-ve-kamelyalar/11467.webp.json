@@ -1,0 +1,37 @@
+{
+  "source": "Pergola ve Kamelyalar/11467.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sarmaşıklı bahçede kahverengi vernikli pergola kirişleri",
+    "en": "Brown varnished pergola beams in an ivy-covered garden"
+  },
+  "alt": {
+    "tr": "Sarmaşıklı bahçede kahverengi vernikli ahşap pergola kirişleri, köşede ağaç dalları ve çiçek açmış bitkiler",
+    "en": "Brown varnished timber pergola beams in a garden with ivy, tree branches and flowering plants at the side"
+  },
+  "caption": {
+    "tr": "Kirişler sıkı aralıkla dizilmiş ve ağaç yapraklarına doğru uzanıyor. Duvarın bir kısmı sarmaşıkla kaplı.",
+    "en": "The beams are closely spaced and reach out toward the tree leaves. Part of the wall is covered in ivy."
+  },
+  "seoFilename": "sarmasikli-bahcede-kahverengi-pergola-kirisleri",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

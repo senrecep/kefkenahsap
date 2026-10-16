@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/7483.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kayalık yamaçta dikdörtgen planlı kamelya iskeleti, çiçekli yamaç",
+    "en": "Rectangular-plan gazebo frame on a rocky slope with a flowering bank"
+  },
+  "alt": {
+    "tr": "Çiçek açmış yamacın yanında dikdörtgen planlı ahşap kamelya iskeleti, taş döşeli zeminde, mavi gökyüzü",
+    "en": "Rectangular-plan timber gazebo frame beside a flowering bank on stone paving under a blue sky"
+  },
+  "caption": {
+    "tr": "Kamelya dar ve uzun bir plana sahip, çatı kirişleri üstte sıralı. Zemin taş döşeli ve kenarında kaya var.",
+    "en": "The gazebo has a narrow, long plan with rafters set out above. The floor is stone-paved with rock along the edge."
+  },
+  "seoFilename": "kayalik-yamacta-dikdortgen-planli-kamelya-iskeleti",
+  "tags": {
+    "type": [
+      "kamelya"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

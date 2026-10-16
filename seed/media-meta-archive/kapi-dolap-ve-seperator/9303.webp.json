@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/9303.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Avluda gövdesi çıtalı, üstü açık dolap iskeleti",
+    "en": "Open-topped cabinet frame with slatted sides in a courtyard"
+  },
+  "alt": {
+    "tr": "Parke taşlı avluda, üstü henüz kapatılmamış, kirişli ve çıtalı gövdeli emprenyeli geniş ahşap dolap iskeleti",
+    "en": "Large pressure-treated timber cabinet frame with beams and slatted sides, still open at the top"
+  },
+  "caption": {
+    "tr": "Dolabın gövdesi çıtalarla örülmüş, üst kirişler açıkta. Kapaklar ve kapak tahtaları henüz takılmamış.",
+    "en": "The body is clad in slats and the top beams are exposed. Doors and lid boards have not been fitted yet."
+  },
+  "seoFilename": "avluda-govdesi-citali-ustu-acik-dolap-iskeleti",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Mobilya ve Cila/11993.webp",
+  "category": "mutfak-ve-gomme-dolap",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Duvar dibinde tek kapaklı uzun beyaz dolap",
+    "en": "Tall single-door white cabinet along a wall"
+  },
+  "alt": {
+    "tr": "Odanın köşesinde duvara yaslı, tek kapaklı, yerden tavana yakın beyaz boyalı dolap",
+    "en": "White painted tall single-door cabinet standing against the wall in the corner of a room"
+  },
+  "caption": {
+    "tr": "Dolap duvar hizasında duruyor ve kapağı düz, süssüz. Yanındaki panele ve prize dokunmadan yerleştirilmiş.",
+    "en": "The cabinet sits flush against the wall with a plain, flat door. It was fitted around the panel and socket beside it."
+  },
+  "seoFilename": "duvar-dibinde-tek-kapakli-beyaz-dolap",
+  "tags": {
+    "type": [
+      "gömme dolap / gardırop"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

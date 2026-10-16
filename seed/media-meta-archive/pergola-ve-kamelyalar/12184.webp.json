@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/12184.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Pergola altında taş duvarlı kavisli bank ve masa",
+    "en": "Curved stone-walled bench and table under a pergola"
+  },
+  "alt": {
+    "tr": "Bahçede pergolanın altında taş kaplı duvarla çevrili kavisli ahşap bank ve ahşap masa, taş döşeli yol",
+    "en": "Curved timber bench with a stone-clad base and a wooden table under a pergola in a garden, with a flagstone path"
+  },
+  "caption": {
+    "tr": "Bank taş duvarın üstüne oturtulmuş ve yarım daire çiziyor. Masa bankın önüne yerleşmiş.",
+    "en": "The bench sits on a stone wall and draws a half circle. The table is set in front of it."
+  },
+  "seoFilename": "pergola-altinda-tas-duvarli-kavisli-bank-masa",
+  "tags": {
+    "type": [
+      "pergola",
+      "bank",
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

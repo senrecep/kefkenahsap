@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/12538.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yatay vernikli kaplama, nişin içinde ve köşede",
+    "en": "Horizontal varnished cladding inside a niche and at a corner"
+  },
+  "alt": {
+    "tr": "Bir girinti içinde ve köşede devam eden yatay vernikli ahşap kaplama, bal-kahve tonlarında, üstte gölge çizgisi",
+    "en": "Horizontal varnished timber cladding carrying on inside a recess and round a corner in honey-brown tones"
+  },
+  "caption": {
+    "tr": "Tahtalar nişin iç yüzeyinde de aynı yönde sürüyor, köşe birleşimi temiz.",
+    "en": "The boards continue in the same direction on the inner face of the niche, and the corner joint is clean."
+  },
+  "seoFilename": "yatay-vernikli-ahsap-kaplama-nisin-icinde-ve-kosede",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

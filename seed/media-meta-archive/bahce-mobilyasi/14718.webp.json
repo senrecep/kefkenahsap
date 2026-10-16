@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/14718.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimen kenarında ahşap yemek masası, katlanır sandalyeler ve küçük yan masa",
+    "en": "Wooden dining table, folding chairs and a small side table beside the lawn"
+  },
+  "alt": {
+    "tr": "Açık renkli karo terasın çimenle buluştuğu kenarda, uzun ahşap yemek masası",
+    "en": "At the edge where a pale tiled terrace meets the lawn, a long wooden dining table"
+  },
+  "caption": {
+    "tr": "Sandalyeler ve yan masa katlanabiliyor, sofra kurulmadığında az yer kaplıyor. Masanın uçları yuvarlatılmış.",
+    "en": "The chairs and side table fold and take little room when the table is not laid. The ends of the table are rounded."
+  },
+  "seoFilename": "cimen-kenarinda-ahsap-yemek-masasi-katlanir-sandalyeler",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "teras",
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

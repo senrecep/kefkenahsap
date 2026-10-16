@@ -1,0 +1,38 @@
+{
+  "source": "Merdivenler/8204.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş basamaklar yanında beyaz çıtalı korkuluk ve kapı",
+    "en": "White slatted railing and gate beside stone steps"
+  },
+  "alt": {
+    "tr": "Taş basamakların yanında beyaz boyalı çıtalı korkuluk; üstte çapraz desenli beyaz bahçe kapısı",
+    "en": "White painted slatted railing beside stone steps, with a white garden gate with a cross pattern at the top"
+  },
+  "caption": {
+    "tr": "Basamaklar taş, korkuluk beyaz boyalı çıtalardan. Merdivenin başında çapraz desenli küçük bir kapı var.",
+    "en": "The steps are stone and the railing is made of white painted slats. A small gate with a cross pattern stands at the head of the stairs."
+  },
+  "seoFilename": "tas-basamaklar-yaninda-beyaz-citali-korkuluk-ve-kapi",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

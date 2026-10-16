@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/3894.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kirişli ahşap sundurmada çatı bağlantıları",
+    "en": "Roof joints of a beamed timber carport"
+  },
+  "alt": {
+    "tr": "Altında araç duran, kirişli çatısı ve kırmızı bayrağı olan ahşap sundurma; yanında taş sütun",
+    "en": "Timber carport with a beamed roof and a red flag, a car beneath it and a stone pillar beside it"
+  },
+  "caption": {
+    "tr": "Çatı eğimli kirişlerle birbirine bağlanıyor. Solda taş bir sütun, sağda taş kaplı küçük yapı görünüyor.",
+    "en": "The roof is tied together with angled beams. A stone pillar shows on the left and a small stone-clad structure on the right."
+  },
+  "seoFilename": "kirisli-ahsap-sundurma-kirmizi-bayrak-ve-tas-sutun",
+  "tags": {
+    "type": [
+      "sundurma / saçak / carport"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

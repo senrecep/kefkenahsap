@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/9031.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Tepe üstünde deck panelleri hazırlayan ekip",
+    "en": "Crew prefabricating deck panels on a hilltop"
+  },
+  "alt": {
+    "tr": "Denize bakan açık bir tepede, çalışma masalarının yanında zemine dizilmiş deck panelleri ve üzerinde çalışan üç kişi",
+    "en": "On an open hill overlooking the sea, deck panels laid out on the ground beside work tables, with three people working on them"
+  },
+  "caption": {
+    "tr": "Deck panelleri sahada hazırlanıp zeminde diziliyor. Çevrede yapı yok, arazi açık.",
+    "en": "The deck panels are prepared on site and laid out on the ground. The land around is open."
+  },
+  "seoFilename": "tepe-ustunde-deck-panelleri-hazirlayan-ekip",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "orman / kır"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.55
+}

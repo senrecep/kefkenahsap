@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/11802.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çakıl ve taş zeminde iki bölmeli çiçeklik",
+    "en": "Two-compartment planter on gravel and stone"
+  },
+  "alt": {
+    "tr": "Çakıl ve taş döşeme üzerinde duran, iki bölmeli ahşap çiçeklik; yanında bitkiler ve arkada deck",
+    "en": "Two-compartment timber planter on gravel and stone paving, with plants beside it and decking behind"
+  },
+  "caption": {
+    "tr": "Çiçekliğin iç yüzeyi siyah astarlı, bitkiler henüz dikilmemiş. Arka planda ahşap deck ve masa görünüyor.",
+    "en": "The inside of the planter has a black liner and the plants are not in yet. A timber deck and table are visible behind."
+  },
+  "seoFilename": "cakil-ve-tas-zemin-uzerinde-iki-bolmeli-ahsap-ciceklik",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

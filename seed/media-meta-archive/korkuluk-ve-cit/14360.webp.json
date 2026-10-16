@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14360.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Köşeden görünen büyük ahşap çiçeklik ve paravan, kaldırım kenarında",
+    "en": "Large timber planter and screen seen from the corner, at the kerbside"
+  },
+  "alt": {
+    "tr": "Kaldırım kenarında, köşeden görünen büyük ahşap çiçeklik ve yatay çıtalı paravan; solda ikinci bir çiçeklik ve paravan",
+    "en": "A large timber planter with a horizontal-slat screen seen from the corner beside the kerb"
+  },
+  "caption": {
+    "tr": "Paravan çiçekliğin içine oturuyor ve boydan yüksekte duruyor. Yol kenarında kaldırım taşı görünüyor.",
+    "en": "The screen is set into the planter and stands taller than a person. The kerbstone is visible at the road edge."
+  },
+  "seoFilename": "koseden-gorunen-buyuk-ahsap-ciceklik-paravan",
+  "tags": {
+    "type": [
+      "kafes / paravan",
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

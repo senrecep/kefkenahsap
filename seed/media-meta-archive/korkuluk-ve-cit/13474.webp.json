@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/13474.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölyede üst üste duran ham ahşap X çaprazlı çerçeve paneller",
+    "en": "Raw timber X-braced frame panels stacked in the workshop"
+  },
+  "alt": {
+    "tr": "Atölyede gri zeminde duvara yaslanmış, ham renkte üç ahşap çerçeve; her birinin içinde X çapraz çıtalar var",
+    "en": "Three raw-coloured timber frames leaning against the wall on a grey workshop floor, each with X-shaped slats inside"
+  },
+  "caption": {
+    "tr": "Çerçeveler henüz boyanmamış, açık renkli. Kenarda kereste parçaları ve bir torba duruyor.",
+    "en": "The frames are still unpainted and light in colour. Pieces of timber and a bag stand at the side."
+  },
+  "seoFilename": "atolyede-ham-ahsap-x-capraz-cerceve-paneller",
+  "tags": {
+    "type": [
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

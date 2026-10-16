@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/10910.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Siyah astarlı vernikli çiçeklik sırası, yakın çekim",
+    "en": "Row of varnished planters with black liners, close view"
+  },
+  "alt": {
+    "tr": "Yan yana duran vernikli ahşap çiçekliklerin ön sırası ve içlerindeki siyah astarlar, yakın çekim",
+    "en": "Front of a row of varnished timber planters standing side by side, with black liners inside, close view"
+  },
+  "caption": {
+    "tr": "Çiçeklikler aynı ölçüde, üst kenarları geniş kuşaklı. Yeni cilalanmış oldukları belli.",
+    "en": "The planters are the same size, with wide top rails. They look freshly varnished."
+  },
+  "seoFilename": "siyah-astarli-vernikli-ahsap-ciceklik-sirasi-yakin-cekim",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

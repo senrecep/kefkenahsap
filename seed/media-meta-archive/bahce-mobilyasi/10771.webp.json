@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/10771.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş zeminde kolçaklı ahşap sandalye ve küçük katlanır masa",
+    "en": "Timber armchair and a small folding table on stone paving"
+  },
+  "alt": {
+    "tr": "Taş zeminde, yüksek çıtalı sırtlığı olan kolçaklı bir ahşap sandalye ve yanında küçük kare katlanır masa duruyor",
+    "en": "On stone paving, a timber armchair with a tall slatted back and a small square folding table beside it, with ivy behind"
+  },
+  "caption": {
+    "tr": "Sandalyenin sırtlığı yaslanmaya uygun açıda eğimli, kolçakları geniş. Küçük masa çay ya da kahve için yeterli.",
+    "en": "The chair back is angled for leaning and the arms are wide. The small table is enough for tea or coffee."
+  },
+  "seoFilename": "tas-zeminde-kolcakli-ahsap-sandalye-ve-kucuk-katlanir-masa",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

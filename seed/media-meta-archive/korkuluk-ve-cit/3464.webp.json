@@ -1,0 +1,39 @@
+{
+  "source": "Korkuluk ve Cit/3464.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimen kenarında yuvarlak kütüklerden alçak çit",
+    "en": "Low log fence along the edge of a lawn"
+  },
+  "alt": {
+    "tr": "Çimenlik kenarında dikey dizilmiş yuvarlak kütüklerden alçak çit, arkada sıralı servi fidanları ve kahverengi duvar",
+    "en": "Low fence of upright round logs along a lawn, with a row of young cypress trees and a brown wall behind"
+  },
+  "caption": {
+    "tr": "Kütükler yan yana dikilmiş, üstü ince bir kuşakla düzeltilmiş. Çit çimi servilerden ayırıyor.",
+    "en": "The logs stand side by side, capped with a thin rail. The fence separates the lawn from the cypresses."
+  },
+  "seoFilename": "cimen-kenarinda-yuvarlak-kutuklerden-alcak-cit",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

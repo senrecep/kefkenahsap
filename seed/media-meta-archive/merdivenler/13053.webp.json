@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/13053.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Şevde yapım aşamasındaki metal merdiven",
+    "en": "Metal stairs under construction on a slope"
+  },
+  "alt": {
+    "tr": "Şevde yapım aşamasındaki metal merdiven ve ahşap küpeşte; arkada yamaca dizilmiş konutlar",
+    "en": "Metal staircase with a timber handrail under construction on a slope, with houses lined up on the hillside behind"
+  },
+  "caption": {
+    "tr": "Basamaklar yerine oturmuş, küpeşte takılmış. Şevin toprağı hâlâ açıkta.",
+    "en": "The treads are in place and the handrail is fitted. The soil of the slope is still bare."
+  },
+  "seoFilename": "sevde-yapim-asamasinda-metal-merdiven-konutlar-arkada",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

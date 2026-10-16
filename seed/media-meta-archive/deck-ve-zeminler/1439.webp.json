@@ -1,0 +1,40 @@
+{
+  "source": "Deck ve Zeminler/1439.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Manzaraya bakan çapraz korkuluklu deck",
+    "en": "Deck facing the view with a cross-braced railing"
+  },
+  "alt": {
+    "tr": "Çam ağaçlarının yanında, uzaktaki vadiye bakan geniş ve açık renkli deck; kenarında çapraz çıtalı korkuluk",
+    "en": "Wide, pale deck beside pine trees looking over a distant valley, with a cross-braced railing at its edge"
+  },
+  "caption": {
+    "tr": "Deck yüksek bir kenarda duruyor ve işlenmemiş çam tahtaları yeşilimsi bir ton taşıyor. Köşede bir kalın kolon dikilmiş.",
+    "en": "The deck sits on a high edge and the untreated pine boards carry a greenish tone. A thick post stands in the corner."
+  },
+  "seoFilename": "cam-agaclari-ve-manzaraya-bakan-capraz-korkuluklu-deck",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

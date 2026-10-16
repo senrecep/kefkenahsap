@@ -1,0 +1,39 @@
+{
+  "source": "Ahsap Yapilar/887.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Açık hava bar tezgahı ve üstündeki kirişli pergola",
+    "en": "Open-air bar counter under a beamed pergola"
+  },
+  "alt": {
+    "tr": "Satranç desenli teras zemininde, kirişli pergolanın altında uzanan ahşap bar tezgahı; yanda merdiven ve bir kişi",
+    "en": "A long timber bar counter running under a beamed pergola on a chequerboard terrace"
+  },
+  "caption": {
+    "tr": "Uzun tezgah, çıtalı bir pergolanın altında teras boyunca uzanıyor. Önünde masalar, yanda ahşap korkuluklu bir merdiven var.",
+    "en": "The long counter runs the length of the terrace under a slatted pergola. Tables stand in front and a staircase with a timber railing at the side."
+  },
+  "seoFilename": "acik-hava-bar-tezgahi-ve-ustundeki-kirisli-pergola",
+  "tags": {
+    "type": [
+      "bar / tezgâh",
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "ticari mekân",
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

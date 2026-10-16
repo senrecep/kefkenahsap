@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/12458.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimen kenarında koyu deck üzerinde ahşap yemek masası",
+    "en": "Wooden dining table on a dark deck at the lawn edge"
+  },
+  "alt": {
+    "tr": "Çimen kenarında, beyaz çakıl şeridi boyunca uzanan koyu deck üzerinde ahşap yemek masası ve sandalyeler",
+    "en": "Wooden dining table and chairs on a dark deck running along a strip of white gravel beside the lawn"
+  },
+  "caption": {
+    "tr": "Yemek masası deck'in sonunda, evin duvarına yakın duruyor. Bahçenin bu kısmı açık hava yemek alanına dönüşmüş.",
+    "en": "The dining table stands at the end of the deck near the house wall. This part of the garden has become an outdoor dining area."
+  },
+  "seoFilename": "cimen-kenarinda-koyu-deck-ahsap-yemek-masasi",
+  "tags": {
+    "type": [
+      "deck",
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

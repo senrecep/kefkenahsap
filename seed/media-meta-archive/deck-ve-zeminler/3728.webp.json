@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/3728.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yükseltilmiş platform, şemsiye altında bank ve masalar",
+    "en": "Raised platform with benches and tables under a parasol"
+  },
+  "alt": {
+    "tr": "Havuz kenarında yükseltilmiş platform; beyaz şemsiyenin altında iki yanda bank ve ortada alçak masalar",
+    "en": "Raised platform at the pool edge, with benches on both sides under a white parasol and low tables in the middle"
+  },
+  "caption": {
+    "tr": "Platform taş kaplı duvarın önüne konmuş ve iki yandaki bank bölümleri korkulukla çevrili. Havuzun yan kenarında dar bir deck yolu var.",
+    "en": "The platform sits in front of a stone-clad wall and the bench sections on both sides are enclosed by railings. A narrow deck path runs along the side of the pool."
+  },
+  "seoFilename": "yukseltilmis-platform-semsiye-altinda-bank-ve-masalar",
+  "tags": {
+    "type": [
+      "deck",
+      "bank",
+      "sehpa"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

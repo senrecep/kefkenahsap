@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/22.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yakından geniş pergola kirişleri ve direkleri",
+    "en": "Close view of broad pergola beams and posts"
+  },
+  "alt": {
+    "tr": "Yakından geniş açıklıklı pergolanın üst üste binen kirişleri, kalın direkleri ve payandaları, arkada ağaçlar",
+    "en": "Close view of a wide-span pergola's overlapping beams, thick posts and braces, with trees behind"
+  },
+  "caption": {
+    "tr": "Kirişler direklerin üstünde birbirine geçiyor, payandalar yükü paylaştırıyor. Yapının ötesinde başka pergolalar sıralanıyor.",
+    "en": "The beams interlock above the posts and braces share the load. More pergolas line up beyond the structure."
+  },
+  "seoFilename": "yakindan-genis-pergola-kirisleri-direkleri",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

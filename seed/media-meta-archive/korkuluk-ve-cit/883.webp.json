@@ -1,0 +1,40 @@
+{
+  "source": "Korkuluk ve Cit/883.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Restoran terasında basamaklar ve çapraz korkuluk",
+    "en": "Steps and cross-braced railing on a restaurant terrace"
+  },
+  "alt": {
+    "tr": "Damalı zeminli bir terasta ahşap basamakların iki yanında çapraz çıtalı korkuluk, arkada kırmızı şemsiye ve masalar",
+    "en": "Cross-braced timber railing on both sides of timber steps on a chequered terrace, with a red parasol and tables behind"
+  },
+  "caption": {
+    "tr": "Korkuluk basamaklara çıkışı çerçeveliyor. Arkada oturma alanı ve şemsiye görünüyor.",
+    "en": "The railing frames the way up the steps, with a seating area and parasol visible behind."
+  },
+  "seoFilename": "restoran-terasinda-basamaklar-ve-capraz-citali-korkuluk",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "merdiven"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

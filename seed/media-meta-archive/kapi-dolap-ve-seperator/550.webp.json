@@ -1,0 +1,36 @@
+{
+  "source": "Kapi Dolap ve Seperator/550.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar önünde Z çaprazlı iki kanatlı açık tonlu kapı",
+    "en": "Pale two-leaf door with Z bracing in front of a stone wall"
+  },
+  "alt": {
+    "tr": "Taş duvarın önünde ahşap çerçeveye oturan, Z çaprazlı ve dikey tahtalı açık renkli iki kanatlı kapı, zeminde taş döşeme",
+    "en": "Pale two-leaf door with vertical boards and Z bracing set in a timber frame in front of a stone wall"
+  },
+  "caption": {
+    "tr": "İki kanat da Z çaprazla sağlamlaştırılmış, siyah menteşelerle çerçeveye bağlı. Yeni, henüz boyanmamış.",
+    "en": "Both leaves are stiffened with Z braces and hung in the frame on black hinges. They are new and not yet finished."
+  },
+  "seoFilename": "tas-duvar-onunde-z-capraz-iki-kanatli-acik-tonlu-kapi",
+  "tags": {
+    "type": [
+      "kapı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "giriş"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

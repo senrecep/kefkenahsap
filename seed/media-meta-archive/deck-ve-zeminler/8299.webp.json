@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/8299.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deck öncesi çıtalanmış fayans teras",
+    "en": "Tiled terrace battened ahead of the deck"
+  },
+  "alt": {
+    "tr": "Geniş fayans terasın üzerinde köşeye doğru uzanan emprenyeli çıta sıraları, çevrede cam doğrama",
+    "en": "Rows of pressure-treated battens running toward the corner of a wide tiled terrace, glazing around"
+  },
+  "caption": {
+    "tr": "Çıtaların hizası kontrol edilmiş, aralar eşit. Deck tahtaları için zemin hazır.",
+    "en": "The battens are aligned with even spacing. The base is ready for the deck boards."
+  },
+  "seoFilename": "deck-oncesi-citalanmis-fayans-teras",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

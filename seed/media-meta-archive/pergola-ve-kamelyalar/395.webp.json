@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/395.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Eğimli arazide uzun ahşap pergola ve geniş deck, yan korkuluk",
+    "en": "Long timber pergola and wide deck on a sloping site with a side rail"
+  },
+  "alt": {
+    "tr": "Eğimli arazide uzayıp giden ahşap pergola, geniş deck, yan korkuluk, ön tarafta plastik taburelerle çalışma alanı",
+    "en": "Long timber pergola on a sloping site with a wide deck and a side rail, with plastic stools in the foreground"
+  },
+  "caption": {
+    "tr": "Pergola kirişleri deck boyunca uzanıyor, uzakta ikinci bir ahşap çatı yapısı görünüyor. Deck güneşte parlıyor.",
+    "en": "The pergola beams run along the deck and a second timber roof structure shows in the distance. The deck glows in the sun."
+  },
+  "seoFilename": "egimli-arazide-uzun-ahsap-pergola-genis-deck",
+  "tags": {
+    "type": [
+      "pergola",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

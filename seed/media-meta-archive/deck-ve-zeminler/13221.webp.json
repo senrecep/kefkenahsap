@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/13221.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Geniş deck, çapraz korkuluk ve gri tahtalar arasında yeni şeritler",
+    "en": "Broad deck with cross-braced railing and new strips among grey boards"
+  },
+  "alt": {
+    "tr": "Çapraz korkuluklu geniş deck, eski gri tahtaların arasında yeni açık renkli tahtalar; arkada çam ağaçları",
+    "en": "Broad deck with a cross-braced railing and new pale boards among old grey ones, with pine trees behind"
+  },
+  "caption": {
+    "tr": "Yenilenen tahtalar deck'in uzun yönünde açık şeritler hâlinde ilerliyor. Korkuluk deck'in dış kenarını boydan boya çeviriyor.",
+    "en": "The renewed boards run in pale bands along the length of the deck. The railing encloses the outer edge from end to end."
+  },
+  "seoFilename": "genis-deck-capraz-korkuluk-gri-tahtalar-arasinda-seritler",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

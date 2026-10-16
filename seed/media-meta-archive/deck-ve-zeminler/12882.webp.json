@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/12882.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Islak cilalı deck üzerinde sandalye ve mangal",
+    "en": "Chair and barbecue on a wet varnished deck"
+  },
+  "alt": {
+    "tr": "Islak cilalı deck üzerinde sandalye, mangal ve küçük masa; arkada çiçekler",
+    "en": "Chair, barbecue and small table on a wet varnished deck, with flowers behind"
+  },
+  "caption": {
+    "tr": "Deck, bahçede oturma ve mangal için ayrılmış düzgün bir alan veriyor. Kenarı çimene bir basamak yükseklikte iniyor.",
+    "en": "The deck gives the garden a level spot for sitting and grilling. Its edge steps down a level to the lawn."
+  },
+  "seoFilename": "islak-cilali-deck-uzerinde-sandalye-ve-mangal",
+  "tags": {
+    "type": [
+      "deck",
+      "oturma grubu"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

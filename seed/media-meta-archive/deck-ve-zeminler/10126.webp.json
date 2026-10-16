@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/10126.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz kenarında çimde küçük deck platformu",
+    "en": "Small deck platform on the lawn by the pool"
+  },
+  "alt": {
+    "tr": "Havuz kenarında çim üzerine yerleştirilmiş küçük kırmızımsı ahşap deck platformu",
+    "en": "Small reddish timber deck platform placed on the lawn beside a pool"
+  },
+  "caption": {
+    "tr": "Platform kare biçiminde, tahtaları parlak kırmızı-kahve vernikli. Yanında traversler ve havuz kenar taşı görünüyor.",
+    "en": "The platform is square with boards in a glossy red-brown varnish. Sleepers and the pool coping are visible next to it."
+  },
+  "seoFilename": "havuz-kenarinda-cim-uzerine-yerlestirilmis-kucuk-kirmizimsi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

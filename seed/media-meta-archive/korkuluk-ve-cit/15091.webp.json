@@ -1,0 +1,35 @@
+{
+  "source": "Korkuluk ve Cit/15091.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yuvarlak direk ve yatay kirişler yakın çekim",
+    "en": "Close view of a round post and horizontal beams"
+  },
+  "alt": {
+    "tr": "Yuvarlak kesitli açık tonlu bir ahşap direk ve üzerine bağlı yatay kirişler, arkada aynı hatta devam eden direk sırası",
+    "en": "Close view of a light round timber post with horizontal beams fixed to it, with the same row of posts continuing behind"
+  },
+  "caption": {
+    "tr": "Direk üstte kirişle birleşiyor, arkada sıra bahçenin sonuna kadar uzanıyor.",
+    "en": "The post meets the beam at the top, and the row continues to the far end of the garden."
+  },
+  "seoFilename": "yakin-cekim-yuvarlak-direk-ve-yatay-kirisler",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.4
+}

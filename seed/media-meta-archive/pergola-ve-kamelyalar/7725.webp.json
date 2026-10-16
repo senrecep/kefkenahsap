@@ -1,0 +1,37 @@
+{
+  "source": "Pergola ve Kamelyalar/7725.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Alttan çıtalı koyu vernikli pergola çatısı, aralardan gökyüzü",
+    "en": "Dark varnished slatted pergola roof from below with sky between"
+  },
+  "alt": {
+    "tr": "Alttan görünen koyu vernikli çıtalı pergola çatısı, ana kirişler ve aralardan süzülen gökyüzü",
+    "en": "Dark varnished slatted pergola roof seen from below, with main beams and the sky filtering between the slats"
+  },
+  "caption": {
+    "tr": "Çıtalar dik açıyla ana kirişlere oturuyor, aralarından ışık geçiyor. Kirişler koyu vernikle bitirilmiş.",
+    "en": "The slats sit at right angles on the main beams with light between them. The beams are finished in dark varnish."
+  },
+  "seoFilename": "alttan-citali-koyu-vernikli-pergola-cati-gokyuzu",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

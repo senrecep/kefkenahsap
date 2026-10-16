@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/12585.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sökülmüş eski merdiven parçaları",
+    "en": "Pieces of a dismantled old staircase"
+  },
+  "alt": {
+    "tr": "Seramik zeminde sökülmüş eski ahşap merdiven kirişleri, basamak parçaları ve dökülmüş toprak",
+    "en": "Dismantled old timber stair stringers and tread pieces on a ceramic floor, with spilled soil"
+  },
+  "caption": {
+    "tr": "Eski merdiven söküldüğünde geriye kirişler ve kırık basamaklar kalmış. Zeminde toprak birikmiş.",
+    "en": "Once the old stairs came apart, stringers and broken treads were left. Soil has collected on the floor."
+  },
+  "seoFilename": "sokulmus-eski-merdiven-parcalari-seramik-zemin",
+  "tags": {
+    "type": [
+      "merdiven"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,39 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/10703.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Üst üste istiflenmiş çiçeklik yan panelleri",
+    "en": "Stacked planter side panels"
+  },
+  "alt": {
+    "tr": "Dışarıda üst üste dizilmiş çiçeklik yan panelleri ve yanında kırmızımsı kahve bir çiçeklik",
+    "en": "Planter side panels stacked outside, with a reddish-brown planter beside them"
+  },
+  "caption": {
+    "tr": "Paneller çıtalarla ayrılarak düzgünce istiflenmiş. Yanda boyası bitmiş bir çiçeklik duruyor.",
+    "en": "The panels are stacked neatly with spacer battens between them. A finished, stained planter stands to the side."
+  },
+  "seoFilename": "disarida-ust-uste-istiflenmis-ciceklik-yan-panelleri",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/13494.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ağaç gövdesi ve cam kapılar yanında geniş deck zemini",
+    "en": "Broad decking beside a tree trunk and glass doors"
+  },
+  "alt": {
+    "tr": "Ağaç gövdesi ve cam kapılar yanında geniş, açık renkli deck zemini, boydan boya uzanıyor",
+    "en": "Broad pale decking beside a tree trunk and glass doors, stretching from end to end"
+  },
+  "caption": {
+    "tr": "Tahtalar evin cephesine paralel döşenmiş. Tek parça görünen yüzey kapılardan ağaca kadar kesintisiz devam ediyor.",
+    "en": "The boards run parallel to the front of the house. The surface looks like one piece from the doors to the tree."
+  },
+  "seoFilename": "agac-govdesi-ve-cam-kapilar-yaninda-genis-deck-zemini",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

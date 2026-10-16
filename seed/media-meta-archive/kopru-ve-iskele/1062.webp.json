@@ -1,0 +1,39 @@
+{
+  "source": "Ahsap Yapilar/1062.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deniz manzaralı platformda çapraz korkuluk ve pergola iskeleti",
+    "en": "Cross-braced railing and pergola frame on a sea-view platform"
+  },
+  "alt": {
+    "tr": "Denize bakan ahşap platformda çapraz çıtalı korkuluk ve pergola iskeleti; işçiler çalışıyor, sağda kalaslar duruyor",
+    "en": "Cross-braced railing and pergola frame on a timber platform facing the sea, workers on site and timbers stacked at the right"
+  },
+  "caption": {
+    "tr": "Korkuluk X şeklinde çaprazlarla yapılmış. Platformun zemini döşenmiş, pergola kirişleri üstte.",
+    "en": "The railing is built with X-shaped crossbars. The platform floor is laid and the pergola beams are above."
+  },
+  "seoFilename": "denize-bakan-platformda-capraz-korkuluk",
+  "tags": {
+    "type": [
+      "iskele",
+      "korkuluk",
+      "pergola"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

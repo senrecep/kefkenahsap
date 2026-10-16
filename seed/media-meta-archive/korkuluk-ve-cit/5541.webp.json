@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/5541.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çapraz korkuluk ve arkada plajdaki ahşap platformlar, gün batımı",
+    "en": "Cross-braced railing with beach platforms and pergolas at sunset"
+  },
+  "alt": {
+    "tr": "Önde çapraz çıtalı ahşap korkuluk; arkada kumsalda ahşap platformlar, pergolalar ve gün batımında deniz",
+    "en": "Cross-braced timber railing in the foreground with timber platforms and pergolas along the beach and the sea at sunset behind"
+  },
+  "caption": {
+    "tr": "Korkuluk sahil yoluna bakıyor, aşağıda kumsal boyunca ahşap yapılar sıralanıyor. Işık yapıları sıcak bir tonla aydınlatıyor.",
+    "en": "The railing looks onto the shore road while timber structures line the beach below. The light gives the structures a warm tone."
+  },
+  "seoFilename": "capraz-korkuluk-plajdaki-ahsap-platformlar-gun-batimi",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "iskele"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

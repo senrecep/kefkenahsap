@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/14217.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Birden çok gövdeli geniş açık deck",
+    "en": "Wide pale deck with several trunk openings"
+  },
+  "alt": {
+    "tr": "Birkaç çam gövdesi için boşluk bırakılmış, ağaç ve çalı çevreli geniş açık renkli deck",
+    "en": "Broad pale deck with openings for several pine trunks, ringed by trees and shrubs"
+  },
+  "caption": {
+    "tr": "Tahtalar enine döşenmiş, her gövdenin dibinde kare bir pencere var. Yaprak gölgeleri yüzeye düşüyor.",
+    "en": "The boards are laid across, with a square opening at the base of each trunk. Leaf shadows fall across the surface."
+  },
+  "seoFilename": "birden-fazla-govdeli-genis-acik-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "orman / kır"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

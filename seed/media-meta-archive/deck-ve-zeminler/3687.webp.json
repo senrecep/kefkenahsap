@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/3687.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz kenarı deck'i ve yükseltilmiş platform",
+    "en": "Poolside deck and raised platform"
+  },
+  "alt": {
+    "tr": "Önde çapraz döşenmiş açık renkli havuz kenarı deck'i, arkada suyun içine uzanan yükseltilmiş ahşap platform",
+    "en": "Pale poolside deck laid on a diagonal in front, with a raised timber platform reaching into the water behind"
+  },
+  "caption": {
+    "tr": "Deck ızgaralı havuz kenarını izliyor. Platformun yan yüzeyi yatay tahtalarla kaplanmış.",
+    "en": "The deck follows the grated pool edge. The side of the platform is clad in horizontal boards."
+  },
+  "seoFilename": "havuz-kenari-deck-ve-arkada-yukseltilmis-platform",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

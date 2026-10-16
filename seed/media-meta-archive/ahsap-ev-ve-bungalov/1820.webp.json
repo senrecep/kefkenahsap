@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/1820.webp",
+  "category": "ahsap-ev-ve-bungalov",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimli yamaçta yapım aşamasında iki katlı ev",
+    "en": "Two-storey house in progress on a grassy slope"
+  },
+  "alt": {
+    "tr": "Çimli yamacın üstünde duran, yapımı süren iki katlı ahşap ev; güneşe karşı çekilmiş",
+    "en": "Two-storey timber house under construction on a grassy slope, shot against the sun"
+  },
+  "caption": {
+    "tr": "Ev arkadan gelen ışıkla siluet gibi görünüyor. Balkon ve pencere boşlukları açık, önde çıplak bir ağaç var.",
+    "en": "The house stands in backlight, almost as a silhouette. The balcony and window openings are open and a bare tree stands in front."
+  },
+  "seoFilename": "cimli-yamacta-iki-katli-ahsap-ev-yapim-asamasi",
+  "tags": {
+    "type": [
+      "ahşap ev / bungalov"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

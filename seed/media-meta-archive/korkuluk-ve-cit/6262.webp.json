@@ -1,0 +1,40 @@
+{
+  "source": "Korkuluk ve Cit/6262.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çaprazlı ahşap çiftlik kapısı, eski görünümlü kare",
+    "en": "Braced timber farm gate in a vintage-style frame"
+  },
+  "alt": {
+    "tr": "Kalın direğe galvaniz menteşelerle asılı, çapraz kuşaklı geniş ahşap kapı, arkada toprak alan ve ağaçlar",
+    "en": "Wide braced timber gate hung on galvanised hinges from a thick post, with a bare plot and trees behind"
+  },
+  "caption": {
+    "tr": "Kapı iki yatay kiriş ve çapraz destekle yapılmış. Fotoğraf eski çerçeve efektiyle kenarlanmış.",
+    "en": "The gate is made of two horizontal rails and a diagonal brace. The photo has an aged border effect."
+  },
+  "seoFilename": "capraz-ahsap-ciftlik-kapisi-eski-gorunumlu-kare",
+  "tags": {
+    "type": [
+      "bahçe kapısı",
+      "çit"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

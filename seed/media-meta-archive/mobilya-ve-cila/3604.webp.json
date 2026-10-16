@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/3604.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Vernikli bar tezgahı ve yüksek tabureler",
+    "en": "Varnished bar counter and high stools"
+  },
+  "alt": {
+    "tr": "Taş duvar ve kirişli çatı altında vernikli ahşap bar tezgahı; önünde yüksek tabureler, üstte sarkıt lambalar",
+    "en": "A varnished timber bar counter under a stone wall and a beamed roof, with high stools in front and pendant lamps above"
+  },
+  "caption": {
+    "tr": "Tezgah sarı tonda vernikli, önünde yüksek tabureler sıralanmış. Arkadaki taş duvar ve kirişler ortamı sıcak tutuyor.",
+    "en": "The counter is varnished in a yellow tone with high stools lined up in front. The stone wall and beams behind keep the setting warm."
+  },
+  "seoFilename": "vernikli-ahsap-bar-tezgahi-yuksek-taburelerle-kirisli-cati",
+  "tags": {
+    "type": [
+      "bar / tezgâh"
+    ],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/1187.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yatay kaplamalı kulübenin pencere kenarı",
+    "en": "Window edge of a shed with horizontal cladding"
+  },
+  "alt": {
+    "tr": "Yatay ahşap kaplamalı kulübenin pencere kenarı ve çatı saçağı; arkada çam ağaçları",
+    "en": "Window edge and roof eave of a shed with horizontal timber cladding, with pine trees behind"
+  },
+  "caption": {
+    "tr": "Pencere çerçevesi duvar tahtalarıyla aynı açık yeşilimsi emprenyeli tonda. Saçak köşede bir payandayla taşınıyor.",
+    "en": "The window frame is in the same pale greenish pressure-treated tint as the wall boards. The eave is carried on a bracket at the corner."
+  },
+  "seoFilename": "yatay-ahsap-kaplamali-kulubenin-pencere-kenari-arkada-cam",
+  "tags": {
+    "type": [
+      "bahçe kulübesi / depo"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

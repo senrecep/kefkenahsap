@@ -1,0 +1,37 @@
+{
+  "source": "Pergola ve Kamelyalar/8797.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz duvar yanında üçgen desenli vernikli pergola kafesi, yeşil bahçe",
+    "en": "Triangular-pattern varnished pergola lattice beside a white wall"
+  },
+  "alt": {
+    "tr": "Beyaz duvarın yanında üçgen desenli vernikli pergola kafesinin kenarı, altında yeşil bahçe ve demir korkuluk",
+    "en": "Edge of a varnished triangular-pattern pergola lattice beside a white wall, with a green garden and an iron railing below"
+  },
+  "caption": {
+    "tr": "Kafesin uç kısmı düz kirişlerle sonlanıyor. Beyaz duvarın köşesi kırmızı bir çatı kaplamasıyla bitiyor.",
+    "en": "The end of the lattice finishes in plain beams. The corner of the white wall ends in a red roof covering."
+  },
+  "seoFilename": "beyaz-duvar-yaninda-ucgen-pergola-kafesi-yesil-bahce",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

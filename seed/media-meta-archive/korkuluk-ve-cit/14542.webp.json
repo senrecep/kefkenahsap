@@ -1,0 +1,38 @@
+{
+  "source": "Kapi Dolap ve Seperator/14542.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yüksek yataklı bahçe önünde sık çıtalı ahşap panel, yerde boya kutusu",
+    "en": "Dense-slat timber panel in front of a raised bed, a paint tin on the floor"
+  },
+  "alt": {
+    "tr": "Ahşap çiçek yatağının önünde, sık çapraz çıtalı turuncu ahşap panel; yanda beyaz çiçekli çalı, deck zeminde boya kutusu",
+    "en": "A dense cross-slat orange timber panel in front of a timber flower bed"
+  },
+  "caption": {
+    "tr": "Panel yataktan yükseğe uzanıyor, sık çıtalı yüzeyiyle arkayı örtüyor. Deck zeminin üzerinde açık bir boya kutusu duruyor.",
+    "en": "The panel rises above the bed and its dense slatted surface screens what is behind. An open paint tin stands on the decking."
+  },
+  "seoFilename": "yuksek-yatakli-bahce-onunde-sik-citali-panel-boya-kutusu",
+  "tags": {
+    "type": [
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

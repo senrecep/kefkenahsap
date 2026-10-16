@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/10678.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Düzgün istiflenmiş deck tahtaları ve çıtalar",
+    "en": "Neatly stacked deck boards and battens"
+  },
+  "alt": {
+    "tr": "Karo zeminde düzgün istiflenmiş ahşap deck tahtaları ve çıtalar; arkada sarmaşıklı duvar",
+    "en": "Timber deck boards and battens neatly stacked on a tiled floor, with an ivy-covered wall behind"
+  },
+  "caption": {
+    "tr": "Tahtalar boylarına ve kalınlıklarına göre ayrı yığınlar hâlinde duruyor. İstifin üstünde ince çıtalar ayrılmış.",
+    "en": "The boards stand in separate piles by length and thickness. Thinner battens are set apart on top of the stack."
+  },
+  "seoFilename": "zeminde-duzgun-istiflenmis-ahsap-deck-tahtalari-ve-citalar",
+  "tags": {
+    "type": [],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

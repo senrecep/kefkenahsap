@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/3219.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Köşe oturma bölmeli koyu kahve deck",
+    "en": "Dark brown deck with a built-in corner seat"
+  },
+  "alt": {
+    "tr": "Köşesinde yerleşik oturma bölmesi bulunan koyu kahverengi deck; önde uzun yapraklı bitkiler",
+    "en": "Dark brown deck with a built-in seating box in the corner and long-leaved plants in front"
+  },
+  "caption": {
+    "tr": "Oturma bölmesi deckle aynı ahşaptan yapılmış ve duvar boyunca dönüyor. Tahtalar bölmenin önüne kadar boyuna uzanıyor.",
+    "en": "The seating box is made of the same timber as the deck and turns along the wall. The boards run lengthwise right up to it."
+  },
+  "seoFilename": "kose-oturma-bolmeli-koyu-kahve-deck-bitkili",
+  "tags": {
+    "type": [
+      "deck",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

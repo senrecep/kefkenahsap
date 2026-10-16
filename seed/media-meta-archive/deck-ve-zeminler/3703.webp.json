@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/3703.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz önünde korkuluklu oturma platformu",
+    "en": "Railed seating platform in front of a pool"
+  },
+  "alt": {
+    "tr": "Havuzun karşı kıyısında, beyaz şemsiyenin altında korkuluklu ve banklı yükseltilmiş ahşap platform",
+    "en": "Raised timber platform with a railing and benches under a white parasol on the far side of the pool"
+  },
+  "caption": {
+    "tr": "Platformun kenarları dikey çıtalı korkulukla çevrili ve içine iki bank yerleştirilmiş. Havuzun suyu platformu yansıtıyor.",
+    "en": "The platform edges are enclosed by a vertical-slat railing with two benches set inside. The pool water reflects the platform."
+  },
+  "seoFilename": "havuz-onunde-korkuluklu-oturma-platformu-ve-semsiye",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk",
+      "bank"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

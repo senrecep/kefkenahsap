@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/7821.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam bölme altında yeni deck zemin",
+    "en": "New deck floor under a glass partition"
+  },
+  "alt": {
+    "tr": "Cam bölmenin altında, duş alanına döşenmiş yeni bal rengi deck zemin; yüzeyde ıslak ve koyu yağ lekeleri",
+    "en": "New honey-coloured deck floor laid in a shower area beneath a glass partition, with wet and dark oily stains on the surface"
+  },
+  "caption": {
+    "tr": "Tahtalar yatay döşenmiş ve yüzeyde birkaç koyu leke var. Arkada fayans kaplı duvarda duş başlıkları görünüyor.",
+    "en": "The boards are laid horizontally and a few dark stains sit on the surface. Shower heads show on the tiled wall behind."
+  },
+  "seoFilename": "cam-bolme-altinda-yeni-deck-islak-ve-yagli-lekeler",
+  "tags": {
+    "type": [
+      "deck",
+      "duş / soyunma kabini"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

@@ -1,0 +1,39 @@
+{
+  "source": "Ireko-Teak/11385.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Metal köşeli koyu kahverengi ahşap masa, yanında bank",
+    "en": "Dark brown timber table with metal corner caps and a bench beside it"
+  },
+  "alt": {
+    "tr": "Karo zeminli avluda ayakları metal köşe parçalarıyla birleşen dikdörtgen koyu kahverengi ahşap masa ve bank",
+    "en": "In a tiled courtyard, a rectangular dark brown timber table with metal fittings where the legs meet the top"
+  },
+  "caption": {
+    "tr": "Masanın ayakları kalın ve düz, birleşim yerlerinde metal köşe parçası var. Arkadaki bank aynı takıma ait.",
+    "en": "The legs are thick and straight, with a metal corner piece at each joint. The bench behind belongs to the same set."
+  },
+  "seoFilename": "metal-koseli-koyu-kahve-ahsap-masa-yaninda-bank-tas-zemin",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/13535.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapı önünde çakıl üzerine ince deck alt çıtaları",
+    "en": "Slim deck battens on gravel in front of a glass door"
+  },
+  "alt": {
+    "tr": "Cam kapı önünde çakıl üzerine dizilmiş, çerçeveli ince ahşap deck alt çıtaları",
+    "en": "Slim timber deck battens in a frame laid out on gravel in front of a glass door"
+  },
+  "caption": {
+    "tr": "Çıtalar çerçevenin içinde eşit aralıkla uzanıyor ve araları küçük takozlarla bağlanmış. Yan tarafta turuncu yapraklı bir bitki var.",
+    "en": "The battens run inside the frame at even spacing, tied across with small blocks. A plant with orange leaves stands at the side."
+  },
+  "seoFilename": "cam-kapi-onunde-cakil-uzerine-ince-deck-alt-citalari",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe",
+      "giriş"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

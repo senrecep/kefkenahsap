@@ -1,0 +1,38 @@
+{
+  "source": "Ireko-Teak/14251.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dar terasta kanepe ve katlanır sandalyeler",
+    "en": "Sofa and folding chairs on a narrow terrace"
+  },
+  "alt": {
+    "tr": "Taş döşemeli dar terasta ahşap kanepe ve yan yana duran iki katlanır sandalye",
+    "en": "Timber sofa and two folding chairs side by side on a narrow stone-paved terrace"
+  },
+  "caption": {
+    "tr": "Kanepe ve sandalyeler aynı çıtalı yapıda. Sandalyeler açık duruyor, kanepe duvar kenarında.",
+    "en": "The sofa and chairs share the same slatted build. The chairs are open and the sofa sits along the wall."
+  },
+  "seoFilename": "dar-terasta-ahsap-kanepe-iki-katlanir-sandalye",
+  "tags": {
+    "type": [
+      "oturma grubu",
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

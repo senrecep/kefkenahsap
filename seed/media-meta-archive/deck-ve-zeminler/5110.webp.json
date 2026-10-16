@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/5110.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sarı tonlu yeni deck tahtaları",
+    "en": "New yellow-toned deck boards"
+  },
+  "alt": {
+    "tr": "Toprak ve bitki kenarında, fayans zemine bitişik sarı bal tonlu yeni deck tahtaları",
+    "en": "New honey-yellow deck boards beside soil and plants, adjoining a tiled floor"
+  },
+  "caption": {
+    "tr": "Tahtalar damar yapısını net gösteriyor ve boyuna sıralanmış. Üst kenarda çalılar, solda açık renkli fayans var.",
+    "en": "The boards show their grain clearly and are laid lengthwise. Shrubs run along the upper edge and pale tiles are at the left."
+  },
+  "seoFilename": "sari-tonlu-yeni-deck-tahtalari-toprak-ve-bitki-kenari",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

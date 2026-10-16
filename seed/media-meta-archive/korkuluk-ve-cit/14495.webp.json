@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/14495.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yatay kirişli çit ve A çaprazlı kapı iskeleti",
+    "en": "Rail fence with an A-braced gate frame"
+  },
+  "alt": {
+    "tr": "Yeşil otların arkasında uzanan yatay kirişli ahşap çit ve ortasında A biçimli çaprazlı kapı iskeleti, arkada beyaz duvar",
+    "en": "Rail fence running behind green grass with an A-braced gate frame in the middle, a white wall behind"
+  },
+  "caption": {
+    "tr": "Kapı iskeleti çitin ortasında duruyor, A biçimli çapraz kapıya sağlamlık veriyor.",
+    "en": "The gate frame stands in the middle of the fence, with the A-shaped brace stiffening it."
+  },
+  "seoFilename": "yatay-kirisli-cit-ve-a-capraz-li-kapi-iskeleti",
+  "tags": {
+    "type": [
+      "çit",
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

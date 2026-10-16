@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/12132.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Koyu kirişli deck iskeleti ve levye",
+    "en": "Dark joist deck frame with a pry bar"
+  },
+  "alt": {
+    "tr": "Toprak üzerinde koyu kirişlerle kurulmuş deck alt iskeleti, yan tarafta vida kabı ve mavi levye",
+    "en": "Deck substructure of dark joists on soil, with a screw tub and a blue pry bar to one side"
+  },
+  "caption": {
+    "tr": "İskelet yan yana sıralanmış kirişlerden oluşuyor. Kenarda plastik örtü ve kalan malzeme duruyor.",
+    "en": "The frame is made of joists set side by side. A plastic sheet and spare material lie to one side."
+  },
+  "seoFilename": "koyu-kirisli-deck-iskeleti-levye",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras",
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

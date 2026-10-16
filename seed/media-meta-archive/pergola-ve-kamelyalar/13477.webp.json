@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/13477.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Koyu çatı kaplı kamelya, önünde taş basamaklar",
+    "en": "Gazebo with a dark roof covering and stepping stones in front"
+  },
+  "alt": {
+    "tr": "Koyu renk çatı kaplı korkuluklu kamelya, önünde sıralı beton basamak taşları ve düzenlenmemiş toprak",
+    "en": "Railed gazebo with a dark roof covering, stepping stones laid in front and bare, unlandscaped soil"
+  },
+  "caption": {
+    "tr": "Kamelyanın çatısı kaplanmış, korkuluk çıtaları çaprazlanmış. Basamak taşları yapıya doğru sıralanıyor.",
+    "en": "The gazebo roof is covered and the rail slats cross. The stepping stones lead toward the structure."
+  },
+  "seoFilename": "koyu-cati-kapli-kamelya-onunde-basamak-taslari",
+  "tags": {
+    "type": [
+      "kamelya",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Ireko-Teak/11936.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Terasta koyu kahverengi ahşap sehpa ve kolçaklı koltuklar",
+    "en": "Dark brown timber table and armchairs on a terrace"
+  },
+  "alt": {
+    "tr": "Desenli taş görünümlü teras zemininde çıtalı koyu kahverengi alçak sehpa, kolçaklı koltuklar ve bir bank",
+    "en": "On a patterned stone-effect terrace floor, a dark brown slatted low table with slatted armchairs and a bench behind it"
+  },
+  "caption": {
+    "tr": "Sehpa alçak ve çıtalı, koltuklar aynı koyu tonda. Takım teras zemininde bir arada duruyor.",
+    "en": "The table is low and slatted and the armchairs share the same dark tone. The set stands together on the terrace floor."
+  },
+  "seoFilename": "teras-zemininde-koyu-kahve-ahsap-sehpa-ve-koltuklar",
+  "tags": {
+    "type": [
+      "sehpa",
+      "oturma grubu"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

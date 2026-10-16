@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/3997.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yapım aşamasında giriş sundurması",
+    "en": "Entrance porch under construction"
+  },
+  "alt": {
+    "tr": "Yeşil shingle çatılı, emprenyeli çam kolonlarla kurulan ve yapımı süren giriş sundurması",
+    "en": "Entrance porch with a green shingle roof built on pressure-treated pine posts, still in progress"
+  },
+  "caption": {
+    "tr": "Kolonlar ve çatı yerinde, sundurmanın zemini ise henüz bitmemiş. Evin koyu renkli kapıları sundurmanın içine açılıyor.",
+    "en": "The posts and roof are in place but the porch floor is not finished. The dark doors of the house open onto the porch."
+  },
+  "seoFilename": "yesil-shingle-catili-giris-sundurmasi-yapim-asamasinda",
+  "tags": {
+    "type": [
+      "sundurma / saçak / carport"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

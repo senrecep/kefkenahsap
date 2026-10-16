@@ -1,0 +1,39 @@
+{
+  "source": "Ireko-Teak/14132.webp",
+  "category": "mutfak-ve-gomme-dolap",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yatay ahşap panelli dolap kapakları ve üst tabla",
+    "en": "Horizontal timber-panel cabinet doors and the top, close-up"
+  },
+  "alt": {
+    "tr": "Yatay ahşap panelli dolap kapakları ve yuvarlatılmış kenarlı üst tabla, yakın çekim",
+    "en": "Close-up of horizontal timber-panel cabinet doors and a top with rounded edges"
+  },
+  "caption": {
+    "tr": "Kapaklar ve üst tabla aynı kırmızımsı kahverengi tonda, tahta damarları cilanın altından seçiliyor. Kenarlar yuvarlatılmış.",
+    "en": "The doors and the top are the same reddish brown tone, with the grain showing through the finish. The edges are rounded."
+  },
+  "seoFilename": "yatay-ahsap-panelli-dolap-kapaklari-ve-ust-tabla-yakin",
+  "tags": {
+    "type": [
+      "gömme dolap / gardırop",
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş",
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

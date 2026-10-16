@@ -1,0 +1,37 @@
+{
+  "source": "Pergola ve Kamelyalar/10751.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kumaş örtülü koyu kahverengi pergola ve demir parmaklık",
+    "en": "Dark brown pergola with a cream fabric cover and an iron fence"
+  },
+  "alt": {
+    "tr": "Taş kaplı duvarın önünde koyu kahverengi ahşap pergola, üstünde krem kumaş örtü ve ön tarafta demir parmaklık",
+    "en": "Dark brown timber pergola in front of a stone-clad wall, with a cream fabric cover on top and an iron fence at the front"
+  },
+  "caption": {
+    "tr": "Kumaş örtü kirişlerin arasından geçecek şekilde gerilmiş. Arkada kırmızı çatılı küçük bir yapı ve ahşap korkuluk görünüyor.",
+    "en": "The fabric cover is stretched so it weaves between the beams. A small red-roofed building and a timber rail show behind."
+  },
+  "seoFilename": "kumas-ortulu-koyu-pergola-demir-parmaklik",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

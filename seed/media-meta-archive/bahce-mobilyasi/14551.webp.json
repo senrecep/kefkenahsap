@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14551.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yarısı beyaz boyalı, çıtalı sırtlı ahşap bahçe sandalyesi",
+    "en": "Half-painted white slatted-back timber garden chair"
+  },
+  "alt": {
+    "tr": "Gri beton zeminde, sırtı beyaza boyanmış ama oturağı henüz boyanmamış çıtalı bir ahşap bahçe sandalyesi duruyor",
+    "en": "On a grey concrete floor, a slatted timber garden chair with its back painted white and its seat not yet painted"
+  },
+  "caption": {
+    "tr": "Sandalyenin sırtı beyaza boyanmış, oturağı ise ham ahşap rengini koruyor. Boyama işi henüz yarım.",
+    "en": "The back of the chair has been painted white while the seat keeps its raw wood colour. The painting is only half done."
+  },
+  "seoFilename": "yarisi-beyaz-boyali-citali-sirtli-ahsap-bahce-sandalyesi",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

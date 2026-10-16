@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/1811.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kirişli ahşap tavanda lambri ve sarkan kablo",
+    "en": "Panelling on a beamed timber ceiling with a hanging cable"
+  },
+  "alt": {
+    "tr": "Yan yana kirişlerin üzerinde döşenmiş sıcak tonlu lambri tavan ve ortadan sarkan bir elektrik kablosu",
+    "en": "Warm-toned panelled ceiling laid across parallel beams with an electric cable hanging from the middle"
+  },
+  "caption": {
+    "tr": "Tavan tamamlanmış ama elektrik bağlantısı henüz yapılmamış. Kablo ucu serbest sarkıyor.",
+    "en": "The ceiling is finished but the wiring is not connected yet. The cable end hangs loose."
+  },
+  "seoFilename": "kirisli-ahsap-tavanda-lambri-kaplama-ve-sarkan-kablo",
+  "tags": {
+    "type": [
+      "tavan kaplaması / lambri"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

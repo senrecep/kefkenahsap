@@ -1,0 +1,35 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14460.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Açık renkli, ince ayaklı dikdörtgen ahşap masa, tuğla duvar önünde",
+    "en": "Light rectangular timber table with slim legs in front of a brick wall"
+  },
+  "alt": {
+    "tr": "Gri zeminde duran açık tonlu, ince ayaklı dikdörtgen ahşap masa",
+    "en": "A light rectangular timber table with slim legs on a grey floor"
+  },
+  "caption": {
+    "tr": "Masanın tablası tek yüzey halinde yan yana tahtalardan, ayakları ince ve düz. Arkadaki tuğla duvar ahşabın rengini öne çıkarıyor.",
+    "en": "The top is a single surface of boards side by side, with slim straight legs. The brick wall behind sets off the colour of the wood."
+  },
+  "seoFilename": "acik-renkli-ince-ayakli-dikdortgen-ahsap-masa-tugla-duvar",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/15106.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kulübe çevresinde sulama hortumları ve toprak",
+    "en": "Shed with irrigation hoses and dug earth around it"
+  },
+  "alt": {
+    "tr": "Koyu vernikli ahşap kulübe; çevresinde serilmiş sulama hortumları ve kazılmış toprak, arkada çam ağaçları",
+    "en": "Dark varnished timber shed with irrigation hoses laid around it and dug earth, pines behind"
+  },
+  "caption": {
+    "tr": "Kulübe düz bir zeminin üstüne yerleşmiş, çevresinde peyzaj işi sürüyor. Hortumlar toprağın üzerinde kıvrılıyor.",
+    "en": "The shed sits on level ground with landscaping still under way around it. Hoses curl across the earth."
+  },
+  "seoFilename": "koyu-vernikli-ahsap-kulube-cevrede-sulama-hortumlari-ve",
+  "tags": {
+    "type": [
+      "bahçe kulübesi / depo"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

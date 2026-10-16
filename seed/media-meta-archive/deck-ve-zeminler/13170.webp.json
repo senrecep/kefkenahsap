@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/13170.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Eski gri deck ortasında zımparalanmış açık renkli şerit",
+    "en": "Old grey deck with a sanded pale strip in the middle"
+  },
+  "alt": {
+    "tr": "Çimen kenarında eski gri deck, ortasında zımparalanmış açık renkli geniş şerit",
+    "en": "Old grey deck at the lawn edge with a wide sanded pale strip across the middle"
+  },
+  "caption": {
+    "tr": "Zımpara geçen kısım ahşabın gerçek rengini göstermiş, kenarlardaki tahtalar hâlâ gri. İki bölüm arasındaki fark yenilemenin ne kadar değiştirdiğini gösteriyor.",
+    "en": "The sanded section shows the true colour of the wood while the boards at the sides are still grey. The contrast shows how much the renewal changes."
+  },
+  "seoFilename": "eski-gri-deck-ortasinda-zimparalanmis-acik-serit",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

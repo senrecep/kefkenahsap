@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12286.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Gri duvar önünde koyu kırmızı kahverengi deck",
+    "en": "Dark red-brown deck in front of a grey wall"
+  },
+  "alt": {
+    "tr": "Çimen üzerinde gri duvarın önüne serilmiş koyu kırmızı kahverengi yağlı deck, yanda basamak taşları ve çiçekler",
+    "en": "Dark red-brown oiled deck laid on the lawn in front of a grey wall, with stepping stones and flowers beside it"
+  },
+  "caption": {
+    "tr": "Yağ ahşabın damarını koyulaştırmış ve yüzeyi parlatmış. Deck çimenin içinde tek parça bir zemin gibi duruyor.",
+    "en": "The oil has deepened the grain and given the surface a sheen. The deck sits in the lawn as a single clean slab."
+  },
+  "seoFilename": "gri-duvar-onunde-koyu-kirmizi-kahverengi-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/1096.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deniz kenarı platformunda merdiven ve korkuluk",
+    "en": "Stairs and railing on a seaside platform"
+  },
+  "alt": {
+    "tr": "Deniz kenarındaki platformda ahşap merdiven ve çaprazlı korkuluk; arkada deniz ve ahşap direkler",
+    "en": "Timber stairs and cross-braced railing on a platform at the water's edge, with the sea and timber posts behind"
+  },
+  "caption": {
+    "tr": "Platform ve merdiven yakından görülüyor, çaprazlar korkuluğu baştan sona kapatıyor. Arkada deniz seçiliyor.",
+    "en": "The platform and stairs are seen close up, with the cross braces covering the railing end to end. The sea shows behind."
+  },
+  "seoFilename": "deniz-kenari-platformunda-merdiven-capraz-korkuluk-yakin",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/12615.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölye tezgâhında vernikli ahşap çerçeve",
+    "en": "Varnished timber frame on a workshop bench"
+  },
+  "alt": {
+    "tr": "Atölyede masaya dayanmış, damarlı vernikli ahşap çerçeve; arkada daire testere görünüyor",
+    "en": "Grained varnished timber frame leaning on a table in a workshop, with a circular saw behind"
+  },
+  "caption": {
+    "tr": "Çerçevenin lifli yüzeyi koyu cilayla parlıyor. Arkada tezgâh ve testere makinesi seçiliyor.",
+    "en": "The grained surface of the frame shines with a dark finish. A bench and a saw machine are visible behind."
+  },
+  "seoFilename": "vernikli-ahsap-cerceve-atolye-tezgahinda",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.3
+}

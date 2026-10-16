@@ -1,0 +1,35 @@
+{
+  "source": "Ireko-Teak/10432.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yatay çıtalı küçük ahşap panel örneği",
+    "en": "Small sample panel of horizontal slats"
+  },
+  "alt": {
+    "tr": "Cam önünde duran, aralıklı yatay çıtalı ve iki dikmeli küçük açık kahve ahşap panel; altta bir tahta parçası",
+    "en": "A small light-brown timber panel with spaced horizontal slats on two uprights, standing in front of glass"
+  },
+  "caption": {
+    "tr": "Panel birkaç yatay çıtanın iki dikme üzerine sabitlenmesiyle yapılmış. Çıtaların damarı ve renk geçişleri açıkça görünüyor.",
+    "en": "The panel is made by fixing several horizontal slats to two uprights. The grain and colour variations of the slats are clearly visible."
+  },
+  "seoFilename": "yatay-citali-kucuk-ahsap-panel-ornegi",
+  "tags": {
+    "type": [
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.5
+}

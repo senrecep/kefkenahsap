@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/11724.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kilit taşı zeminde geniş tahtalı uzun çiçeklikler",
+    "en": "Long wide-board planters on interlocking paving"
+  },
+  "alt": {
+    "tr": "Kilit taşı döşeli teraste geniş yatay tahtalarla yapılmış uzun ahşap çiçeklikler",
+    "en": "Long timber planters made of wide horizontal boards on a terrace paved with interlocking stone"
+  },
+  "caption": {
+    "tr": "Çiçeklikler iki parça hâlinde yan yana duruyor. Arkada yemek masası ve taş duvar var.",
+    "en": "The planters stand in two parts side by side. A dining table and a stone wall are visible behind."
+  },
+  "seoFilename": "kilit-tasi-zeminde-genis-yatay-tahtali-uzun-ahsap",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

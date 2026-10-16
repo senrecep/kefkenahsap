@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14155.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kilit taş zeminde üç tahtalı alçak ahşap bank",
+    "en": "Low three-board timber bench on interlocking paving"
+  },
+  "alt": {
+    "tr": "Kilit taş döşemede, üç kalın tahtadan oluşan alçak ahşap bank ve arkasında içinde bitki olan ahşap bir çiçeklik duruyor",
+    "en": "On interlocking paving, a low timber bench made of three thick boards, with a timber planter holding a shrub behind it"
+  },
+  "caption": {
+    "tr": "Bank üç kalın tahtadan, sırtsız ve alçak. Arkasında koyu vernikli bir çiçeklik yer alıyor.",
+    "en": "The bench is three thick boards, backless and low. A dark-varnished planter stands behind it."
+  },
+  "seoFilename": "kilit-tas-zeminde-uc-tahtali-alcak-ahsap-bank-ciceklik",
+  "tags": {
+    "type": [
+      "bank",
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

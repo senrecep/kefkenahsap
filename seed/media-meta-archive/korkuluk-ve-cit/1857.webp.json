@@ -1,0 +1,37 @@
+{
+  "source": "Pergola ve Kamelyalar/1857.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Lambri tavan altından görünen oymalı korkuluk",
+    "en": "Carved railing seen from under a panelled ceiling"
+  },
+  "alt": {
+    "tr": "Lambri kaplı çatı altında, geometrik oyma desenli ahşap korkuluk ve ardında vadi manzarası, köşede istif edilmiş tahtalar",
+    "en": "Geometric-pattern carved timber railing under a panelled roof, with a valley view beyond and boards stacked in the corner"
+  },
+  "caption": {
+    "tr": "Korkuluk çatılı balkonun kenarında duruyor, tavanda lambri sıraları görünüyor.",
+    "en": "The railing stands at the edge of a roofed balcony, with rows of lambri on the ceiling."
+  },
+  "seoFilename": "lambri-tavanli-catinin-altindan-oymali-ahsap-korkuluk-ve",
+  "tags": {
+    "type": [
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

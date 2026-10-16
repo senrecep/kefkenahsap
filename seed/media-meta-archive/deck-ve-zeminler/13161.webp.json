@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/13161.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yer üstü havuz kenarında ahşap taşıyıcı çerçeve",
+    "en": "Timber support frame beside an above-ground pool"
+  },
+  "alt": {
+    "tr": "Yer üstü havuzun kenarında, yeşil suni çim üzerine kurulan ahşap taşıyıcı çerçeve",
+    "en": "Timber support frame built beside an above-ground pool on green artificial turf"
+  },
+  "caption": {
+    "tr": "Çerçeve havuzun kenarına dayanıyor ve yüksekte duran ayaklara oturuyor. Üstüne havuz çevresi için deck tahtası gelecek.",
+    "en": "The frame meets the pool edge and rests on raised legs. Deck boards for the pool surround will go on top."
+  },
+  "seoFilename": "yer-ustu-havuz-kenarinda-ahsap-tasiyici-cerceve",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı",
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

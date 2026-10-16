@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/12165.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Pembe taş zeminde çok uzun ahşap masa tablası, arkada cadde",
+    "en": "Very long timber table top on pink stone paving with a street behind"
+  },
+  "alt": {
+    "tr": "Pembe taş döşemeli bir alanda, çok uzun ahşap masa tablasının vernikli yüzeyi görünüyor",
+    "en": "On an area of pink stone paving, the varnished surface of a very long timber table top"
+  },
+  "caption": {
+    "tr": "Masa tablası çok uzun ve geniş, çıtalar boydan boya devam ediyor. Güneş vernikli yüzeyi parlatıyor.",
+    "en": "The top is very long and wide, with slats running its whole length. The sun makes the varnished surface glow."
+  },
+  "seoFilename": "pembe-tas-zeminde-cok-uzun-ahsap-masa-tablasi-arkada-cadde",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

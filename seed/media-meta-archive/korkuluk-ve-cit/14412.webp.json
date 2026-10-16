@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/14412.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar üstünde beyaz piket, arkada demir çit",
+    "en": "White picket fence on a stone wall with an iron fence behind"
+  },
+  "alt": {
+    "tr": "Taş duvarın üstünde beyaz boyalı ahşap çıtalı çit, arkasında siyah demir parmaklık ve yeşillik",
+    "en": "White-painted timber picket fence on a stone wall, with a black iron railing and greenery behind"
+  },
+  "caption": {
+    "tr": "Beyaz çıtalar demir parmaklığın önünde alçak bir sıra oluşturuyor. Kaldırım küp taşla döşenmiş.",
+    "en": "The white pickets form a low row in front of the iron railing. The pavement is laid with setts."
+  },
+  "seoFilename": "tas-duvar-ustunde-beyaz-piket-cit-demir-parmaklik",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

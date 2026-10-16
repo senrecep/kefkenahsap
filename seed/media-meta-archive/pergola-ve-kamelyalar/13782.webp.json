@@ -1,0 +1,37 @@
+{
+  "source": "Pergola ve Kamelyalar/13782.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Geniş ahşap çatı makasları altında boş döşemeli salon",
+    "en": "Open hall under broad timber roof trusses with a bare floor"
+  },
+  "alt": {
+    "tr": "Geniş ahşap çatı makaslarının altında uzayan açık salon, boş döşeme, uzakta masalar",
+    "en": "Open hall stretching under broad timber roof trusses, with a bare floor and tables in the distance"
+  },
+  "caption": {
+    "tr": "Makaslar çatıyı uzun bir hat boyunca taşıyor. Zemin henüz tamamlanmamış, iş aletleri yerde duruyor.",
+    "en": "The trusses carry the roof along a long line. The floor is not finished yet and tools lie on it."
+  },
+  "seoFilename": "genis-ahsap-cati-makaslari-altinda-acik-salon",
+  "tags": {
+    "type": [
+      "kamelya"
+    ],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

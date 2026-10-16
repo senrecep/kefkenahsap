@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/1784.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ahşap kirişli tavanda aralıklı lambri, yakın çekim",
+    "en": "Close view of spaced panelling on a beamed ceiling"
+  },
+  "alt": {
+    "tr": "Birbirini kesen ahşap kirişlerin arasına döşenmiş, aralıklı sıralanmış lambri tavan kaplaması, yakından",
+    "en": "Close view of ceiling panelling laid with small gaps between crossing timber beams"
+  },
+  "caption": {
+    "tr": "Lambri şeritler kirişlerin arasında sıralanıyor, tahta damarları ve budaklar görünüyor.",
+    "en": "The panelling strips sit between the beams, with the grain and knots showing."
+  },
+  "seoFilename": "ahsap-kirisli-tavanda-aralikli-lambri-kaplama-yakin",
+  "tags": {
+    "type": [
+      "tavan kaplaması / lambri"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

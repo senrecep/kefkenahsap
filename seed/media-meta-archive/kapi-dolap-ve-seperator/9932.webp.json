@@ -1,0 +1,39 @@
+{
+  "source": "Kapi Dolap ve Seperator/9932.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çit önünde açık renk yüksek ahşap kasa",
+    "en": "Tall light timber box in front of a fence"
+  },
+  "alt": {
+    "tr": "Taş döşeli avluda, tahta çitin önünde duran yatay tahtalı açık renk yüksek ahşap kasa; arkada bej cepheli ev",
+    "en": "Tall light timber box clad in horizontal boards standing on stone paving in front of a picket fence, a beige house behind"
+  },
+  "caption": {
+    "tr": "Kasa yatay tahtalarla kaplı ve çitin yanında duruyor. Yanında eskimiş tahtalı başka bir dolap görünüyor.",
+    "en": "The box is clad in horizontal boards and stands beside the fence. An older weathered cabinet is visible next to it."
+  },
+  "seoFilename": "cit-onunde-acik-renk-yuksek-ahsap-kasa",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

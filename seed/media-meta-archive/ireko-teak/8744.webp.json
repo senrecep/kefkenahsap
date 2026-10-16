@@ -1,0 +1,33 @@
+{
+  "source": "Ireko-Teak/8744.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dikey duran koyu ahşap çıtalar, perspektifte",
+    "en": "Dark timber battens standing in perspective"
+  },
+  "alt": {
+    "tr": "Aralıklı sıralanmış koyu kahve ahşap çıtaların uzaktaki bir noktaya doğru daraldığı yakın görünüm, kenarda taş duvar",
+    "en": "Close view of dark brown timber battens spaced in rows narrowing toward a distant point, with a stone wall at the edge"
+  },
+  "caption": {
+    "tr": "Çıtalar eşit aralıkla uzayıp gidiyor. Işık ahşabın koyu tonunda damarı öne çıkarıyor.",
+    "en": "The battens extend at even spacing. Light picks out the grain in the dark tone of the timber."
+  },
+  "seoFilename": "dikey-duran-koyu-ahsap-citalar-perspektifte",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.4
+}

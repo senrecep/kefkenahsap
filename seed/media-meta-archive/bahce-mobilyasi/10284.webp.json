@@ -1,0 +1,35 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/10284.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kalın kereste ayaklı masif ahşap masa",
+    "en": "Solid timber table with thick-beam legs"
+  },
+  "alt": {
+    "tr": "Kalın tahtalardan yapılmış uzun masif ahşap masa; yan tarafta istif edilmiş kereste var",
+    "en": "A long solid timber table made of thick boards, with stacked lumber at its side"
+  },
+  "caption": {
+    "tr": "Masanın tablası kalın tahtalardan, ayakları da kalın kerestelerden. Arkada istiflenmiş kereste görünüyor.",
+    "en": "The tabletop is made of thick planks and the legs of heavy beams. Stacked lumber can be seen behind."
+  },
+  "seoFilename": "kalin-kereste-ayakli-masif-ahsap-masa",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Pergola ve Kamelyalar/2401.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Girişte koyu ahşap iki yönlü saçak",
+    "en": "Dark timber double-pitch canopy at an entrance"
+  },
+  "alt": {
+    "tr": "Yapımı süren beyaz binanın girişinde, iki yöne eğimli koyu ahşap saçak ve iki kalın direk",
+    "en": "Dark timber canopy sloping two ways with two thick posts at the entrance of a white building under construction"
+  },
+  "caption": {
+    "tr": "Giriş cephesi tuğla kaideli, pencere kasaları saçakla aynı koyu tonda. İçeride malzeme kolileri ve mavi bir hortum duruyor.",
+    "en": "The entrance front has a brick base and the window frames are in the same dark tone as the canopy. Boxes of material and a blue hose lie inside."
+  },
+  "seoFilename": "beyaz-binanin-girisinde-koyu-ahsap-iki-yonlu-sacak-insaat",
+  "tags": {
+    "type": [
+      "sundurma / saçak / carport"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

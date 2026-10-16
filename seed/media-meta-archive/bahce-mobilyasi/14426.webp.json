@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/14426.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz duvarlı bank, bahçe lambası ve koyu kahverengi deck",
+    "en": "White-walled bench, garden lamp and dark brown deck"
+  },
+  "alt": {
+    "tr": "Beyaz sıvalı alçak duvarın üstünde ahşap kaplamalı bank, yuvarlak budanmış bitkiler",
+    "en": "A timber-capped bench on a low white-rendered wall, round clipped shrubs, a small garden lamp and a dark brown deck floor"
+  },
+  "caption": {
+    "tr": "Bank ve deck aynı koyu tonda, beyaz duvarlarla çevrili. Bahçe lambası akşamları alanı aydınlatıyor.",
+    "en": "The bench and deck share the same dark tone and are framed by white walls. The garden lamp lights the area in the evening."
+  },
+  "seoFilename": "beyaz-duvarli-bank-bahce-lambasi-ve-koyu-kahverengi-deck",
+  "tags": {
+    "type": [
+      "bank",
+      "çiçeklik / saksı",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,40 @@
+{
+  "source": "Korkuluk ve Cit/1442.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Geniş ahşap platform ve çapraz çıtalı korkuluk",
+    "en": "Wide timber platform with a cross-braced railing"
+  },
+  "alt": {
+    "tr": "Açık yeşilimsi tahtalarla döşenmiş geniş platform, kenarında çapraz çıtalı korkuluk, uzakta kırmızı çatılı konutlar",
+    "en": "Wide platform of light greenish boards with a cross-braced railing along the edge, red-roofed houses in the distance"
+  },
+  "caption": {
+    "tr": "Platform tahtaları yeni döşenmiş, üzerinde talaş var. Korkuluk bir kenarı boydan boya izliyor.",
+    "en": "The boards are newly laid, with sawdust on top. The railing follows one whole edge."
+  },
+  "seoFilename": "genis-ahsap-platform-capraz-citali-korkuluk-manzara",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

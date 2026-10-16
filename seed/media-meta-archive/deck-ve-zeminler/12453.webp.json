@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/12453.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Eski deck alt iskeleti ve çakıllı zemin",
+    "en": "Old deck substructure and gravel base"
+  },
+  "alt": {
+    "tr": "Çit kenarında, eski ahşap deck'in söküldükten sonra açıkta kalan alt iskeleti ve çakıllı zemin",
+    "en": "Old timber deck frame left exposed after the boards were removed, over a gravel base beside a fence"
+  },
+  "caption": {
+    "tr": "Kirişlerin bazıları kararmış ve aşınmış. Yenileme için eski yapının önce söküldüğü görülüyor.",
+    "en": "Some of the joists are dark and worn. The old structure is being taken apart before the renewal."
+  },
+  "seoFilename": "eski-deck-alt-iskeleti-ve-cakilli-zemin",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

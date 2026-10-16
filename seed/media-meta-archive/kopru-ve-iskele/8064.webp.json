@@ -1,0 +1,41 @@
+{
+  "source": "Kopru ve Iskele/8064.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yan açıdan çapraz ayaklı köprü ve deck basamağı",
+    "en": "Side view of the bridge with diagonal legs and deck step"
+  },
+  "alt": {
+    "tr": "Havuzu aşan ahşap köprünün yan açıdan görüntüsü; kalın dikmeler, çapraz ayaklar ve deck'e inen basamak, arkada bina cephesi",
+    "en": "Side view of a timber bridge over the pool with thick posts, diagonal legs and a step down to the deck"
+  },
+  "caption": {
+    "tr": "Köprü korkuluğu üstte küpeşte, aşağıda dikey çıtalarla örülmüş. Deck'te tahtalar köprüye dik yönde döşenmiş.",
+    "en": "The bridge railing has a handrail on top and vertical slats below. The deck boards are laid across the direction of the bridge."
+  },
+  "seoFilename": "yan-acidan-capraz-ayakli-kopru-ve-deck-basamagi",
+  "tags": {
+    "type": [
+      "köprü",
+      "korkuluk",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

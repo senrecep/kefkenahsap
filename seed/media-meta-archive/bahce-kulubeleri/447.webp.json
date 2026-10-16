@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/447.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kırmızı kapı ve pencere kepengi, yakından",
+    "en": "Red door and window shutter, close up"
+  },
+  "alt": {
+    "tr": "Küçük ahşap evin kırmızı kemerli kapısı, kepengi ve sıra sıra çıtalarla kaplı çatısının yakın görünümü",
+    "en": "Close view of the red arched door, shutter and scale-slatted roof of a small timber house"
+  },
+  "caption": {
+    "tr": "Pencerenin kepengi kırmızıya boyalı ve siyah menteşelerle bağlı. Çatı çıtaları pul gibi üst üste dizilmiş.",
+    "en": "The window shutter is painted red and hung on black hinges. The roof slats are laid over one another like scales."
+  },
+  "seoFilename": "kirmizi-kapi-ve-pencere-kepengi-sirali-cita-cati-kucuk-ahsap",
+  "tags": {
+    "type": [
+      "çocuk oyun evi"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

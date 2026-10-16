@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/11498.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Oval ahşap masa tablasının yakın çekimi, balıksırtı çıtalarıyla",
+    "en": "Close-up of an oval timber table top with herringbone-laid slats"
+  },
+  "alt": {
+    "tr": "Yakın çekimde oval bir ahşap masa tablası; ortasında uzunlamasına çıtalar",
+    "en": "A close view of an oval timber table top with lengthwise slats in the middle"
+  },
+  "caption": {
+    "tr": "Tablanın uçlarındaki çıtalar yelpaze gibi açılıyor, bu da oval hatları takip ediyor. Çerçeve tabla çevresini tamamlıyor.",
+    "en": "The slats at the ends fan out to follow the oval outline. The frame completes the edge of the top."
+  },
+  "seoFilename": "oval-ahsap-masa-tablasi-yakin-cekim-balik-sirti-citalar",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

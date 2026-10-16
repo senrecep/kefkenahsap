@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/12782.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çakıllı alanda koyu ahşap çiçeklik kutusu iskeleti",
+    "en": "Dark timber planter box frame on a gravel area"
+  },
+  "alt": {
+    "tr": "Çakıllı alanda köşeli kurulmuş koyu kahverengi ahşap çiçeklik kutusu iskeleti, yerde hortum",
+    "en": "Frame of a dark brown timber planter box built on a corner of a gravel area, with a hose on the ground"
+  },
+  "caption": {
+    "tr": "Kutu L biçiminde kurulmuş ve içi henüz toprakla doldurulmamış. Arkada çit ve bahçe lambası görünüyor.",
+    "en": "The box is built in an L-shape and has not yet been filled with soil. A hedge and garden light show behind."
+  },
+  "seoFilename": "cakilli-alanda-koyu-ahsap-ciceklik-kutusu-iskeleti",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.5
+}

@@ -1,0 +1,35 @@
+{
+  "source": "Kapi Dolap ve Seperator/12827.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölye masasında telörgülü ahşap kafes kutusu",
+    "en": "Wire-mesh timber cage frame on a workshop table"
+  },
+  "alt": {
+    "tr": "Atölyede beyaz iş masasında duran, telörgü kaplı yan ve üst yüzeyli kızıl kahve çerçeveli ahşap kafes",
+    "en": "Red-brown timber cage frame with wire-mesh sides and top on a white workbench in a workshop, with material shelves behind"
+  },
+  "caption": {
+    "tr": "Çerçeve ahşaptan, yüzeyleri tel örgüyle kapatılmış. Alt tarafı hasır malzemeyle kaplı.",
+    "en": "The frame is timber and its faces are covered with wire mesh. The base is lined with a woven material."
+  },
+  "seoFilename": "atolye-masasinda-telorgulu-ahsap-kafes-kutusu",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.5
+}

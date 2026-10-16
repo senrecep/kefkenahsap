@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/10594.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz çit ve ahşap korkuluk köşesi, arkada ev",
+    "en": "Corner of a white fence and timber railing with a house behind"
+  },
+  "alt": {
+    "tr": "Kırmızı çatılı sarı evin yanında, yukarıdan görünen X çaprazlı ahşap korkuluk ve önde beyaz boyalı çıtalı çit, aşağıda çimlik",
+    "en": "X-braced timber railing seen from above beside a yellow house with a red roof, with a white-painted picket fence in front"
+  },
+  "caption": {
+    "tr": "Beyaz çit ve ahşap korkuluk aynı köşede buluşuyor. Arkada ev girişi ve toprak alan var.",
+    "en": "The white fence and the timber railing meet at the same corner. The house entrance and bare ground lie behind."
+  },
+  "seoFilename": "beyaz-cit-ve-ahsap-korkuluk-kosesi-arkada-ev-ve-cimlik",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "merdiven"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

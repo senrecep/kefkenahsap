@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/10618.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Evin yanına inen merdiven ve iki kalın direk",
+    "en": "Stairs down beside the house with two thick posts"
+  },
+  "alt": {
+    "tr": "İki ev arasındaki dar geçide inen ahşap merdiven; başında kalın direkler ve çaprazlı korkuluk",
+    "en": "Timber stairs going down into the narrow passage between two houses, with thick posts at the head and a cross-braced railing"
+  },
+  "caption": {
+    "tr": "Merdiven yukarıdan düz bir hatla aşağıya iniyor. İki yanda kalın direkler ve çaprazlı korkuluk var.",
+    "en": "Seen from above, the stairs run down in a straight line. Thick posts and cross-braced railings stand on both sides."
+  },
+  "seoFilename": "evin-yanina-inen-merdiven-iki-kalin-direk",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

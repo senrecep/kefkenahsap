@@ -1,0 +1,36 @@
+{
+  "source": "Ahsap Yapilar/4600.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz ahşap kaplamalı bina, balkon ve cumba",
+    "en": "White timber-clad building with a balcony and an oriel"
+  },
+  "alt": {
+    "tr": "Beyaz boyalı ahşap kaplamalı yapıda balkon korkuluğu, altında çıkma cumbalı pencere ve yanında kepenkli bir pencere",
+    "en": "Balcony railing on a white-painted timber-clad building, with a projecting oriel window beneath, a shuttered window beside it"
+  },
+  "caption": {
+    "tr": "Cumbalı pencere kaplamanın üstüne öne çıkıyor, çatı payandalarla taşınıyor.",
+    "en": "The oriel window projects from the cladding, and the eave is carried on brackets."
+  },
+  "seoFilename": "beyaz-boyali-ahsap-kaplamali-bina-balkon-ve-cumbali-pencere",
+  "tags": {
+    "type": [
+      "cephe kaplaması",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/13249.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dikey çıtalı duvar ve alçak dolaplar",
+    "en": "Vertical slatted wall and low cabinets"
+  },
+  "alt": {
+    "tr": "Dikey çıtalı ahşap duvarın dibinde, beyaz duvara yaslanan alçak ahşap kaplı dolaplar",
+    "en": "Low timber-clad cabinets set against a white wall at the foot of a vertical slatted timber wall"
+  },
+  "caption": {
+    "tr": "Çıtalı duvar iki yandan köşe yapıyor, dolaplar beyaz bir duvarın önünde sıralanıyor. Tezgâh tablası henüz yerleşmemiş.",
+    "en": "The slatted wall turns a corner on both sides and the cabinets line up in front of a white wall. The worktop has not been fitted yet."
+  },
+  "seoFilename": "dikey-citali-ahsap-duvar-ve-alcak-ahsap-kapli-dolaplar-beyaz",
+  "tags": {
+    "type": [
+      "dış mutfak / mangal alanı",
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.55
+}

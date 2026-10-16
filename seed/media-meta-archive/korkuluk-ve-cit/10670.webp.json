@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/10670.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Pembe karolu geçitte çapraz kirişli, telli kırmızı ahşap alçak kapı",
+    "en": "Low red timber gate with X braces and wire mesh in a paved passage"
+  },
+  "alt": {
+    "tr": "Pembe karo döşeli dar geçitte, X çaprazlı ve tel örgü dolgulu kırmızı boyalı alçak ahşap kapı; solda duvar",
+    "en": "A low red-painted timber gate with X braces and wire-mesh infill in a narrow passage paved with pink tiles"
+  },
+  "caption": {
+    "tr": "Kapı iki dikme arasına oturuyor, kapının önünde bir paspas duruyor. Arkasında demir korkuluklu bir bahçe görünüyor.",
+    "en": "The gate sits between two posts and there is a doormat in front of it. A garden with an iron railing is visible behind."
+  },
+  "seoFilename": "pembe-karo-gecitte-capraz-kirisli-telli-kirmizi-kapi",
+  "tags": {
+    "type": [
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

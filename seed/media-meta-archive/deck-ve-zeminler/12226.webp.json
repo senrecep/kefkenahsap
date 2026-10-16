@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/12226.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ağaç çevresinde çıtalı ahşap korkuluklu deck",
+    "en": "Deck with a slatted timber railing around a tree"
+  },
+  "alt": {
+    "tr": "Ağacın çevresinde açık renkli çam deck ve boyunca uzanan çıtalı ahşap korkuluk",
+    "en": "Pale pine deck around a tree with a slatted timber railing running along its edge"
+  },
+  "caption": {
+    "tr": "Korkuluk dikmeleri ve aralıklı çıtaları deck kenarında düzenli bir sıra oluşturuyor. Ağaç gövdesi deck içinden geçiyor.",
+    "en": "Railing posts and evenly spaced slats make a regular line along the deck edge. The tree trunk passes through the deck."
+  },
+  "seoFilename": "agac-cevresinde-citali-ahsap-korkuluklu-deck",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

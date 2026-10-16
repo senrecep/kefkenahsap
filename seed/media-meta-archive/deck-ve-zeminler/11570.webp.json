@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/11570.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cilalı deck üzerinde masa ve sandalyeler",
+    "en": "Table and chairs on a varnished deck"
+  },
+  "alt": {
+    "tr": "Teras köşesindeki kırmızımsı cilalı ahşap deck üzerinde masa, katlanır sandalyeler ve bank",
+    "en": "Table, folding chairs and a bench on a reddish varnished timber deck in a terrace corner"
+  },
+  "caption": {
+    "tr": "Deck zemini cam kapının önünde oturma alanı olarak kullanılıyor. Kenarda beyaz çakıl ve taş plakalar var.",
+    "en": "The deck serves as a seating area in front of the glass door. White gravel and stone slabs run along its edge."
+  },
+  "seoFilename": "cilali-deck-masa-sandalye-teras",
+  "tags": {
+    "type": [
+      "deck",
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/12774.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimde ahşap direkli salıncak ve merdiven",
+    "en": "Timber-post swing and ladder on the lawn"
+  },
+  "alt": {
+    "tr": "Çim bahçede ahşap direkli salıncak ile yan merdiveni, önünde alet ve çanta",
+    "en": "Timber-post swing with a side ladder in a lawn garden, with tools and a bag in front"
+  },
+  "caption": {
+    "tr": "Salıncağın direkleri yuvarlak ahşaptan. Önünde matkap, su terazisi ve bir çanta duruyor.",
+    "en": "The swing posts are round timber. A drill, spirit level and a bag lie in front."
+  },
+  "seoFilename": "cimde-ahsap-direkli-salincak-ve-merdiven-kurulumu",
+  "tags": {
+    "type": [
+      "salıncak"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/8654.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ahşap kaplamalı modern iki katlı villa cephesi",
+    "en": "Modern two-storey villa facade with timber cladding"
+  },
+  "alt": {
+    "tr": "Kırmızımsı dikey ve yatay ahşap kaplamalı iki katlı modern bir evin cephesi, camlı balkon korkuluğu ve büyük cam kapılar",
+    "en": "Facade of a modern two-storey house clad in reddish vertical and horizontal timber, with a glass balcony balustrade"
+  },
+  "caption": {
+    "tr": "Ahşap kaplama cam yüzeylerle dönüşümlü sıralanıyor, önde taş döşeme yolu hazırlanmış.",
+    "en": "The timber cladding alternates with glass surfaces, and a stone-paved path is laid in front."
+  },
+  "seoFilename": "ahsap-kapli-modern-iki-katli-villa-cephesi-camli-balkon",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

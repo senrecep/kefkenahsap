@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/14228.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Seramik terasta iki ahşap şezlong, yuvarlak masa ve sandalye",
+    "en": "Two timber loungers, a round table and a chair on a ceramic terrace"
+  },
+  "alt": {
+    "tr": "Evin girişindeki açık renkli seramik terasta, koyu vernikli iki ahşap şezlong",
+    "en": "On the pale ceramic terrace at a house entrance, two dark-varnished timber loungers, a round table and a folding chair"
+  },
+  "caption": {
+    "tr": "Şezlonglar alçak, yassı ve çıtalı. Yuvarlak masa ve sandalye aynı koyu ahşap tonunda, terasın karşı köşesinde.",
+    "en": "The loungers are low, flat and slatted. The round table and chair share the same dark timber tone, at the far side of the terrace."
+  },
+  "seoFilename": "seramik-teras-zemininde-ahsap-sezlonglar-yuvarlak-masa-ve",
+  "tags": {
+    "type": [
+      "şezlong",
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

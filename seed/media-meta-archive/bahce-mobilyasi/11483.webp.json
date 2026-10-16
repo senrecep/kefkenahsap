@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/11483.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ahşap bank sırtlığının iki tahtası, vernikli yüzeyle yakından",
+    "en": "Two backrest boards of a timber bench with a varnished surface up close"
+  },
+  "alt": {
+    "tr": "Ahşap bank sırtlığının iki yatay tahtası yakından görünüyor; vernikli yüzeyde odun budakları ve damarlar seçiliyor",
+    "en": "A close view of two horizontal backrest boards of a timber bench, with knots and grain visible in the varnish"
+  },
+  "caption": {
+    "tr": "Sırt tahtaları vernikle korunmuş, budaklar ve damarlar açıkta. Arkada bahçe bitkileri bulanık görünüyor.",
+    "en": "The backrest boards are protected with varnish, and the knots and grain stay visible. Garden plants blur in the background."
+  },
+  "seoFilename": "bank-sirtlik-tahtalari-yakin-cekim-vernikli-yuzey",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.4
+}

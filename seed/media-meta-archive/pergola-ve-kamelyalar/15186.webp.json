@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/15186.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kamelya içinden çapraz çıtalı korkuluk ve masa, çevrede beton çiçeklik blokları",
+    "en": "Inside a gazebo: X-braced rail, a table and concrete planter blocks"
+  },
+  "alt": {
+    "tr": "Kamelyanın içinden çapraz çıtalı korkuluk, ahşap masa ve bankların bir kısmı, dışarıda beton çiçeklik blokları",
+    "en": "Inside a gazebo: X-braced railing, a wooden table and part of the benches, with concrete planter blocks outside"
+  },
+  "caption": {
+    "tr": "Çatı alt kenarında X biçimli çıtalar var. Masa kamelyanın ortasına yerleştirilmiş.",
+    "en": "The roof edge has X-shaped slats. The table is set in the middle of the gazebo."
+  },
+  "seoFilename": "kamelya-ici-capraz-citali-korkuluk-masa",
+  "tags": {
+    "type": [
+      "kamelya",
+      "korkuluk",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

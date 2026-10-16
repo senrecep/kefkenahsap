@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/13959.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çapraz sırtlıklı ahşap iki kişilik bank, açık renk karoda",
+    "en": "Two-seat timber bench with a cross-braced back on pale tiles"
+  },
+  "alt": {
+    "tr": "Açık renk teras karoları üzerinde, sırtlığında çapraz çıtalar olan kolçaklı ahşap bank; arkada evin rulo kepenkli kapısı var",
+    "en": "A timber bench with arms and a cross-braced back on pale terrace tiles, in front of a house door with a roller shutter"
+  },
+  "caption": {
+    "tr": "Sırtlıktaki çapraz çıtalar bankın tasarımını belirliyor. Oturak, sık çıtalardan yapılmış.",
+    "en": "The crossed slats in the back give the bench its look. The seat is made of closely set slats."
+  },
+  "seoFilename": "capraz-sirtlikli-ahsap-iki-kisilik-bank-acik-renk-karo",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

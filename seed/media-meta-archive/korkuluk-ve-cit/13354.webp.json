@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/13354.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz boyalı piket çit ve kapı",
+    "en": "White-painted picket fence and gate"
+  },
+  "alt": {
+    "tr": "Taş döşeli zeminin önünde beyaz boyalı çıtalı çit ve ortasında küçük kapı, arkada ev ve ağaçlar",
+    "en": "White-painted picket fence with a small gate in the middle, in front of stone paving, with a house and trees behind"
+  },
+  "caption": {
+    "tr": "Çit kapıyla birlikte tek bir beyaz hat oluşturuyor. Zemin kare taşla döşenmiş.",
+    "en": "The fence and gate form one white line. The ground is paved with square stones."
+  },
+  "seoFilename": "beyaz-boyali-piket-cit-ve-kapi-tas-zemin",
+  "tags": {
+    "type": [
+      "çit",
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/10687.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapılar önünde altın-kahve tahtalı deck",
+    "en": "Golden-brown deck in front of glass doors"
+  },
+  "alt": {
+    "tr": "Cam kapıların önünde, yandan çimenle çevrili altın-kahve tahtalı ahşap deck",
+    "en": "Golden-brown board timber deck in front of glass doors, bordered by lawn on the side"
+  },
+  "caption": {
+    "tr": "Tahtalar boydan boya düzgün sıralı, kenarda dar çerçeve tahtası var. Yüzeydeki parlaklık tahtaların damarını gösteriyor.",
+    "en": "The boards run neatly end to end with a narrow border board at the edge. The sheen on the surface shows the grain."
+  },
+  "seoFilename": "cam-kapilar-onunde-altin-kahve-tahtali-ahsap-deck-yandan",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

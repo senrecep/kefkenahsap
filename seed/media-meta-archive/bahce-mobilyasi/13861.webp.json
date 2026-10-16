@@ -1,0 +1,40 @@
+{
+  "source": "Ireko-Teak/13861.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Terasta alçak ahşap sehpa ve kavisli sırtlıklı koltuklar",
+    "en": "Low timber table and curved-back armchairs on a terrace"
+  },
+  "alt": {
+    "tr": "Karo terasta alt rafı çıtalı geniş alçak ahşap sehpa, arkasında kavisli çıtalı sırtlı koltuklar ve kanepe",
+    "en": "On a tiled terrace, a wide low timber table with a slatted lower shelf, with curved-back armchairs and a sofa behind"
+  },
+  "caption": {
+    "tr": "Sehpanın üst yüzeyi geniş tahtalardan, alt rafı çıtalı. Arkadaki koltuklar kavisli çıtalı sırtlığıyla aynı takımın parçası.",
+    "en": "The top of the table is wide boards with a slatted shelf below. The armchairs behind, with their curved slatted backs, belong to the same set."
+  },
+  "seoFilename": "teras-uzerinde-ahsap-alcak-sehpa-ve-kavisli-sirtlikli",
+  "tags": {
+    "type": [
+      "sehpa",
+      "oturma grubu"
+    ],
+    "wood": [
+      "teak"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

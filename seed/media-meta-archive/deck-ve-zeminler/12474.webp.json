@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/12474.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kırmızımsı boyalı deck, korkuluk ve basamak",
+    "en": "Reddish painted deck, railing and step"
+  },
+  "alt": {
+    "tr": "Kırmızımsı boyalı ahşap deck, korkuluk ve basamak; önünde bahçe lambası ve taş yol",
+    "en": "Reddish painted timber deck with a railing and a step, with a garden light and stone path in front"
+  },
+  "caption": {
+    "tr": "Korkuluk deck'in iki kenarını çeviriyor ve bir yanda basamakla açılıyor. Boya tahtaların rengini eşit tutmuş.",
+    "en": "The railing encloses two sides of the deck and opens at one side with a step. The paint keeps the boards an even colour."
+  },
+  "seoFilename": "kirmizimsi-boyali-deck-korkuluk-ve-basamak",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk",
+      "merdiven"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

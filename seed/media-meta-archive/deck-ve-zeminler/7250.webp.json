@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/7250.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Islak çimli terasın önünde yeni deck",
+    "en": "New deck beside a wet lawn terrace"
+  },
+  "alt": {
+    "tr": "Islak ve çamurlu çimenlik kenarında yeni döşenmiş açık renkli deck; arkada beyaz katlanır sandalyeler",
+    "en": "Newly laid pale deck at the edge of a wet, muddy lawn, with white folding chairs behind"
+  },
+  "caption": {
+    "tr": "Tahtaların yüzeyi ıslak parlıyor ve çapraz bir hatla uzanıyor. Solda kırmızı yapraklı bir çalı görünüyor.",
+    "en": "The surface of the boards shines wet and runs on a diagonal line. A red-leaved shrub shows on the left."
+  },
+  "seoFilename": "islak-cimli-teras-onunde-yeni-deck-ve-beyaz-sandalyeler",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

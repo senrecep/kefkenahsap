@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/9840.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çim üzerinde ayaklı merdiven ve çaprazlı korkuluk",
+    "en": "Stairs on legs over the lawn, with cross-braced railing"
+  },
+  "alt": {
+    "tr": "Yeni serilmiş çim üzerinde ayaklı ahşap merdiven ve çaprazlı korkuluk; arkada duvar ve sisli hava",
+    "en": "Timber stairs on legs and a cross-braced railing over freshly laid lawn, with a wall behind and hazy air"
+  },
+  "caption": {
+    "tr": "Merdiven ayaklar üzerinde, çimin hemen kenarında duruyor. Korkuluk iki yanda çaprazlarla örülmüş.",
+    "en": "The stairs stand on legs right at the edge of the lawn. The railings are braced with crosses on both sides."
+  },
+  "seoFilename": "cim-uzerinde-ayakli-ahsap-merdiven-ve-caprazli-korkuluk",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

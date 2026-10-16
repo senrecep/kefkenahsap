@@ -1,0 +1,39 @@
+{
+  "source": "Ahsap Yapilar/1143.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dalgalı kıyıda yüksek ahşap platform ve pergola yapısı",
+    "en": "Tall timber platform with pergola on a wavy shore"
+  },
+  "alt": {
+    "tr": "Dalgaların vurduğu kıyıda kazıklar üzerinde yükselen ahşap platform; üstte çapraz korkuluk ve pergola çatısı",
+    "en": "Timber platform raised on posts on a shore washed by waves, with cross-braced railing and a pergola roof above"
+  },
+  "caption": {
+    "tr": "Platform kıyıdaki bir bölgenin üstünü örtüyor. Çapraz korkuluk kenarı boydan boya çevreliyor.",
+    "en": "The platform covers the area along the shore. The cross-braced railing runs around its whole edge."
+  },
+  "seoFilename": "dalgali-kiyida-yuksek-platform-pergola",
+  "tags": {
+    "type": [
+      "iskele",
+      "deck",
+      "pergola"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

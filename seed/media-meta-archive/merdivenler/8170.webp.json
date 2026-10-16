@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/8170.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş kaplı duvar boyunca çıtalı korkuluk",
+    "en": "Slatted railing along a stone-clad wall"
+  },
+  "alt": {
+    "tr": "Taş kaplı istinat duvarı boyunca yükselen çıtalı ahşap korkuluk ve taş merdiven; aşağıda çimlik",
+    "en": "Slatted timber railing along a stone-clad retaining wall with a stone staircase, and a lawn below"
+  },
+  "caption": {
+    "tr": "Taş basamaklar duvar boyunca yukarı çıkıyor, açık renkli çıtalı korkuluk yanından eşlik ediyor.",
+    "en": "The stone steps climb along the wall with a light slatted railing beside them."
+  },
+  "seoFilename": "tas-kapli-duvar-boyunca-citali-ahsap-korkuluk-ve-merdiven",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

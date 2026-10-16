@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12284.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çit ve kolon yanında yeşilimsi tonlu deck",
+    "en": "Greenish-toned deck beside a fence and column"
+  },
+  "alt": {
+    "tr": "Çit ve kolonun yanında açık renkli, yeşilimsi tonlu deck tahtaları, üzerinde hortum ve küçük tabure",
+    "en": "Pale greenish deck boards beside a fence and a column, with a hose and a small stool on top"
+  },
+  "caption": {
+    "tr": "Deck çimene yuvarlak bir hatla bitiyor. Tahtalar ıslak ve yeni yıkanmış gibi parlıyor.",
+    "en": "The deck ends in a rounded line at the lawn. The boards shine as if freshly washed."
+  },
+  "seoFilename": "cit-ve-kolon-yaninda-yesilimsi-tonlu-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

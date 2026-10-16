@@ -1,0 +1,38 @@
+{
+  "source": "Ireko-Teak/11291.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimen kenarında ızgara tablalı küçük katlanır ahşap masa",
+    "en": "Small folding timber table with a grille top beside the lawn"
+  },
+  "alt": {
+    "tr": "Çimlik kenarındaki karo zeminde, yüzeyi kare delikli ızgara biçiminde işlenmiş küçük bir katlanır ahşap masa duruyor",
+    "en": "On the tiled floor beside a lawn stands a small folding timber table whose top is cut as a grid of square openings"
+  },
+  "caption": {
+    "tr": "Masanın ızgara yüzeyi suyun hemen aşağı akmasını sağlıyor. Katlanır ayakları sayesinde kullanılmadığında kolayca kaldırılıyor.",
+    "en": "The grille top lets water drain straight through. The folding legs make it easy to put away when not in use."
+  },
+  "seoFilename": "cim-kenarinda-izgara-tablali-kucuk-katlanir-ahsap-masa",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

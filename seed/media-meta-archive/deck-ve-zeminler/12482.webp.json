@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/12482.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar önünde dağılmış eski yeşilimsi kirişler",
+    "en": "Scattered old greenish joists in front of a stone wall"
+  },
+  "alt": {
+    "tr": "Taş duvar önünde eski yeşilimsi deck alt kirişleri ve yerde dağılmış ahşap parçaları",
+    "en": "Old greenish deck sub-joists in front of a stone wall with broken timber pieces scattered on the ground"
+  },
+  "caption": {
+    "tr": "Kirişlerin ayakları kırılmış, çevrede kırık tahta parçaları var. Alan, yeni deck için temizlenmeyi bekliyor.",
+    "en": "The joist supports are broken and splintered boards lie around. The area waits to be cleared for a new deck."
+  },
+  "seoFilename": "tas-duvar-onunde-dagilmis-eski-yesilimsi-kirisler",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

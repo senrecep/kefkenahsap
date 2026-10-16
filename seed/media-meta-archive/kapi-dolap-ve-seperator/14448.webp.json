@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/14448.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Alt bölme kapağı açılmış yüksek ahşap dolap, atölyede",
+    "en": "Tall timber cabinet with its lower door open in the workshop"
+  },
+  "alt": {
+    "tr": "Atölyede duran yüksek koyu ahşap dolabın alt bölme kapağı açık, içinde mavi bir merdiven ya da çerçeve görünüyor",
+    "en": "Tall dark timber cabinet in a workshop with its lower door open, showing a blue ladder or frame inside"
+  },
+  "caption": {
+    "tr": "Alt kapak içeriye boydan boya erişim sağlıyor. Çerçeve tahtaları kapalıyken düz bir yüzey oluşturuyor.",
+    "en": "The lower door gives access to the inside. Closed, the boards form a flat surface."
+  },
+  "seoFilename": "alt-bolme-kapagi-acilmis-yuksek-ahsap-dolap-atolyede",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

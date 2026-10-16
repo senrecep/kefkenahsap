@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/13631.webp",
+  "category": "mutfak-ve-gomme-dolap",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Düzensiz bölmeli basamak biçimli raf gövdesi",
+    "en": "Stepped shelf body with irregular compartments"
+  },
+  "alt": {
+    "tr": "Tezgah üzerinde dik duran, farklı boylarda bölmeleri olan basamak biçimli ahşap raf gövdesi",
+    "en": "A stepped timber shelf body standing upright on a bench, with compartments of different sizes"
+  },
+  "caption": {
+    "tr": "Bölmeler yukarıdan aşağıya genişliyor, sağ altta kare bir göz ayrılmış. Arkada ahşap sandıklar duruyor.",
+    "en": "The compartments widen from top to bottom, with a square cell set apart at the lower right. Timber crates stand behind."
+  },
+  "seoFilename": "duzensiz-bolmeli-basamak-bicimli-ahsap-raf-govdesi-tezgahta",
+  "tags": {
+    "type": [
+      "raf / kitaplık"
+    ],
+    "wood": [],
+    "setting": [
+      "atölyede üretim"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.7
+}

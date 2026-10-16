@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/5115.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yan yana dizilmiş bal rengi ahşap tahtalar",
+    "en": "Honey-coloured timber boards laid side by side"
+  },
+  "alt": {
+    "tr": "Birbirine sıkı oturan, bal rengi ve ince damarlı ahşap tahtaların yakın çekimi",
+    "en": "Close-up of tightly fitted honey-coloured timber boards with fine grain"
+  },
+  "caption": {
+    "tr": "Tahtalar yan yana düz bir hatta sıralanmış. Yüzey düzgün zımparalanmış ve damar ince.",
+    "en": "The boards sit in a straight line side by side. The surface is smoothly sanded and the grain is fine."
+  },
+  "seoFilename": "yan-yana-dizilmis-bal-rengi-ahsap-tahtalar",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "iroko"
+    ],
+    "setting": [],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.5
+}

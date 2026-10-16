@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/11939.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Telörgülü çapraz kirişli kapı ve çıtalı çit, çocuk oyun alanı arkada",
+    "en": "Wire-mesh X-braced gate and slat fence with a children's play area behind"
+  },
+  "alt": {
+    "tr": "Tel örgü dolgulu, X çaprazlı ahşap kapı ve devamındaki dikey çıtalı tel çit; arkada çocuk oyun alanı",
+    "en": "A wire-mesh X-braced timber gate and the vertical-slat wire fence continuing from it"
+  },
+  "caption": {
+    "tr": "Kapı ile çit aynı gri-kahve tonunda. Tel örgü hem kapı çerçevesine hem çıtaların arkasına gerilmiş.",
+    "en": "The gate and fence are the same grey-brown tone. Wire mesh is stretched both over the gate frame and behind the slats."
+  },
+  "seoFilename": "telorgulu-capraz-kirisli-kapi-citali-cit-oyun-alani",
+  "tags": {
+    "type": [
+      "çit",
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

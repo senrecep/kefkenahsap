@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/13790.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Geniş vernikli çatı yapısı altında fayans zeminli açık alan",
+    "en": "Open area with tiled floor under a broad varnished roof structure"
+  },
+  "alt": {
+    "tr": "Vernikli geniş ahşap çatı yapısının altında fayans zeminli açık alan, uzakta ahşap masalar ve sarı bir bina",
+    "en": "Open area with a tiled floor under a broad varnished timber roof structure, with wooden tables and a yellow building beyond"
+  },
+  "caption": {
+    "tr": "Çatı kirişleri ve makaslar tavanı açıkta bırakıyor. Zeminde temizlik kovası duruyor.",
+    "en": "The roof beams and trusses leave the ceiling exposed. A cleaning bucket stands on the floor."
+  },
+  "seoFilename": "genis-vernikli-cati-yapisi-altinda-fayans-zemin",
+  "tags": {
+    "type": [
+      "kamelya",
+      "sundurma / saçak / carport"
+    ],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/15179.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam cepheli mekânda deck ve basamaklar",
+    "en": "Deck and steps at a glass-fronted venue"
+  },
+  "alt": {
+    "tr": "Cam cepheli bir mekânın girişinde koyu deck ve basamaklar; yanında nemli beton zemin ve açıkta kalan borular",
+    "en": "Dark deck and steps at the entrance of a glass-fronted venue, with damp concrete floor and exposed pipes beside them"
+  },
+  "caption": {
+    "tr": "Deck tahtaları çapraz köşeyle basamaklara dönüyor. Beton alan henüz kaplanmamış, boru ve kablolar zeminde duruyor.",
+    "en": "The deck boards turn into the steps at a mitred corner. The concrete area has not been covered yet, and pipes and cables lie on the floor."
+  },
+  "seoFilename": "cam-cepheli-mekanda-deck-ve-basamaklar-acik-beton",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

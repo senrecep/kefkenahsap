@@ -1,0 +1,38 @@
+{
+  "source": "Kapi Dolap ve Seperator/14943.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Duvara asılı beyaz kabinin içindeki kablolu cihaz, önden görünüm",
+    "en": "Front view of the cabled device inside a white wall housing"
+  },
+  "alt": {
+    "tr": "Pembe cephede pencerenin yanındaki beyaz ahşap kabinin içinde duvara bağlı gri cihaz ve aşağı sarkan siyah kablolar",
+    "en": "Grey wall-mounted device inside a white timber housing beside a window on a pink facade, with black cables coiled downward"
+  },
+  "caption": {
+    "tr": "Kabin cihazı üstten ve yanlardan koruyor, ön yüzü kullanım için açık. Kablolar alt kısımdan geçiyor.",
+    "en": "The housing shelters the device from above and the sides while the front stays open for use. The cables pass through the bottom."
+  },
+  "seoFilename": "duvara-asili-beyaz-kabinin-icindeki-kablolu-cihaz-onden",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "giriş"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

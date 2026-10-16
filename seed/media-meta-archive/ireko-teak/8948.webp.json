@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/8948.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Köşe küvetin dikey ahşap çıtalı kaplaması",
+    "en": "Vertical timber-slat cladding on a corner bathtub"
+  },
+  "alt": {
+    "tr": "Beyaz köşe küvetin dış yüzeyini saran, altın kahve ve koyu damarlı dikey ahşap çıtalar",
+    "en": "Vertical timber slats in golden brown with dark streaks wrapping the outside of a white corner bathtub"
+  },
+  "caption": {
+    "tr": "Küvetin eğri yüzeyi dar çıtalarla kaplanmış, çıtalar kavisi izliyor. Ahşabın sıcak rengi beyaz küvetle iyi ayrışıyor.",
+    "en": "Narrow slats follow the curve of the tub. The warm colour of the timber contrasts well with the white tub."
+  },
+  "seoFilename": "kose-kuvetin-dikey-ahsap-citali-kaplamasi",
+  "tags": {
+    "type": [],
+    "wood": [
+      "teak"
+    ],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.55
+}

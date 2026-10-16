@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/9174.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dar geçitte önden ahşap basamaklar ve korkuluk",
+    "en": "Timber steps and railing in a narrow passage, from the front"
+  },
+  "alt": {
+    "tr": "Evin yan duvarı ile çalılar arasındaki dar geçitte önden ahşap basamaklar ve tek taraflı korkuluk",
+    "en": "Timber steps and a one-sided railing seen from the front in the narrow passage between the house's side wall and shrubs"
+  },
+  "caption": {
+    "tr": "Basamaklar dar geçide tam sığıyor. Korkuluk sol tarafta takılmış, altta toprak açıkta.",
+    "en": "The steps fit the narrow passage exactly. The railing is fitted on the left and the soil beneath is still bare."
+  },
+  "seoFilename": "dar-gecitte-onden-ahsap-basamaklar-ve-korkuluk-yapim",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

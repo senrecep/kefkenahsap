@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/7477.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar önünde dizili ahşap pergola iskeleti, kırmızı bank ve deniz",
+    "en": "Row of timber pergola frames in front of a stone wall with a red bench"
+  },
+  "alt": {
+    "tr": "Taş duvarın önünde peş peşe dizili ahşap pergola iskeletleri, kırmızı bir bank ve kıyıya vuran dalgalar",
+    "en": "Timber pergola frames lined up in front of a stone wall, with a red bench and waves breaking on the shore"
+  },
+  "caption": {
+    "tr": "Pergola çerçeveleri taş duvara paralel uzanıyor, üst kirişleri henüz seyrek. Zemin kırmızı kaplama.",
+    "en": "The pergola frames run parallel to the stone wall with their top beams still sparse. The floor has a red finish."
+  },
+  "seoFilename": "tas-duvar-onunde-dizili-pergola-iskeleti-kirmizi-bank",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14758.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bahçe lambaları önünde küçük parlak deck",
+    "en": "Small glossy deck in front of garden lamps"
+  },
+  "alt": {
+    "tr": "Çalı çitin önünde, iki bahçe lambası arasında çimene oturan parlak koyu kırmızı kahverengi küçük deck platformu",
+    "en": "Small glossy dark red-brown deck platform set on the lawn in front of a hedge between two garden lamps"
+  },
+  "caption": {
+    "tr": "Platform dikdörtgen biçimde ve tahtalar enine döşenmiş. Çimende bir sopa uzanıyor.",
+    "en": "The platform is rectangular with boards laid across. A stick lies on the lawn."
+  },
+  "seoFilename": "bahce-lambalari-onunde-parlak-kucuk-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

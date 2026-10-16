@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/11805.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Siyah boyalı çiçeklik iç yüzeyi, üstten görünüm",
+    "en": "Inside of a black-painted planter from above"
+  },
+  "alt": {
+    "tr": "Üstten bakıldığında içi siyaha boyanmış, toprakla dolu ve bölmeli ahşap çiçekliğin iç yüzeyi",
+    "en": "Top view of the inside of a compartmented timber planter painted black and filled with soil"
+  },
+  "caption": {
+    "tr": "İç yüzeyler siyah boyalı, ortada ahşap bir ara parça var. Bir fidan ve toprak içeride duruyor.",
+    "en": "The inner surfaces are painted black, with a timber divider in the middle. A sapling and soil sit inside."
+  },
+  "seoFilename": "ustten-gorunen-siyah-boyali-ahsap-ciceklik-ic-yuzeyi-toprak",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

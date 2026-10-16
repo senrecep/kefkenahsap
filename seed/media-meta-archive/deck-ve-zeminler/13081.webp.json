@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/13081.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yeşil çit köşesinde işlenmemiş açık renkli yükseltilmiş deck",
+    "en": "Untreated pale raised deck in a green hedge corner"
+  },
+  "alt": {
+    "tr": "Yeşil çit köşesinde ayaklı, işlenmemiş açık renkli geniş yükseltilmiş deck",
+    "en": "Wide untreated pale raised deck on short legs in the corner of a green hedge"
+  },
+  "caption": {
+    "tr": "Deck tamamen döşenmiş, yüzey düz ve boşluksuz. Yan taraftan bakıldığında altındaki ayaklar seçiliyor.",
+    "en": "The deck is fully boarded with a flat, even surface. The short legs underneath show from the side."
+  },
+  "seoFilename": "yesil-cit-kosesinde-islenmemis-acik-renkli-yukseltilmis-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

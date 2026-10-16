@@ -1,0 +1,39 @@
+{
+  "source": "Kapi Dolap ve Seperator/6503.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kemerli girişli açık renk köpek kulübesi, iç mekânda",
+    "en": "Light timber dog house with an arched entrance, shown indoors"
+  },
+  "alt": {
+    "tr": "Beşik çatılı, kemer biçimli girişi olan açık renk ahşap köpek kulübesi, karo zeminli bir iç mekânda duruyor",
+    "en": "A light timber dog house with a gabled roof and an arched doorway stands on a tiled indoor floor"
+  },
+  "caption": {
+    "tr": "Kulübenin girişi kemerli, önündeki kapak ayrıca kapatılabiliyor. Duvarlar yatay tahta ile örülmüş.",
+    "en": "The entrance is arched, and a separate door can close it. The walls are built from horizontal boards."
+  },
+  "seoFilename": "kemerli-girisli-besik-catili-kopek-kulubesi-showroom",
+  "tags": {
+    "type": [
+      "köpek kulübesi"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

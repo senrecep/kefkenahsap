@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/2766.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kamelya çatı kirişleri ve çıtaları alttan, arkada palmiyeler",
+    "en": "Gazebo roof rafters and slats from below with palms behind"
+  },
+  "alt": {
+    "tr": "Alttan görünen kamelya çatı kirişleri ve sık çıtaları, arkada palmiyeler ve kıyı",
+    "en": "Gazebo roof rafters and closely spaced slats seen from below, with palms and the shore behind"
+  },
+  "caption": {
+    "tr": "Çıtalar kirişlerin üstüne yan yana çakılmış, aralarından gökyüzü seçiliyor. Payandalar yükü direklere aktarıyor.",
+    "en": "The slats are fixed side by side over the rafters, with the sky visible through them. Braces carry the load to the posts."
+  },
+  "seoFilename": "kamelya-cati-kirisleri-citalari-alttan-palmiyeler",
+  "tags": {
+    "type": [
+      "kamelya"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

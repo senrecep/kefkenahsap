@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/9747.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Duvar yanında platform ve korkuluk, yerde toprak",
+    "en": "Platform and railing beside a wall, with bare soil"
+  },
+  "alt": {
+    "tr": "Ev duvarının yanında platform ve çaprazlı korkuluk; çevrede açık toprak alan, kalın bir direk önde",
+    "en": "A platform and cross-braced railing beside the house wall, with open soil around it and a thick post in front"
+  },
+  "caption": {
+    "tr": "Platformun korkuluğu yerine takılmış, çevresinde toprak henüz düzenlenmemiş. Kalın bir direk öne çıkıyor.",
+    "en": "The platform's railing is fitted but the soil around it has not been landscaped yet. A thick post stands in the foreground."
+  },
+  "seoFilename": "duvar-yaninda-platform-ve-caprazli-korkuluk-yerde-toprak",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

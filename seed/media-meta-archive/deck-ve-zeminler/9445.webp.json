@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/9445.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimin üzerinde takozlara oturan deck kirişleri",
+    "en": "Deck joists resting on blocks over the lawn"
+  },
+  "alt": {
+    "tr": "Çimenlik üzerinde paralel uzanan üç açık renkli kiriş, altlarında ahşap takozlar",
+    "en": "Three pale joists running in parallel over a lawn, with timber blocks underneath"
+  },
+  "caption": {
+    "tr": "Kirişler takozlarla yerden yükseltilmiş. Deck tahtaları bu çerçeveye döşenecek.",
+    "en": "The joists are lifted off the ground on blocks. The deck boards will be laid on this frame."
+  },
+  "seoFilename": "cimin-uzerinde-takozlara-oturan-deck-kirisleri",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

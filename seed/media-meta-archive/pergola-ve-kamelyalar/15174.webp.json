@@ -1,0 +1,37 @@
+{
+  "source": "Pergola ve Kamelyalar/15174.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Uzaktan kamelya, mavi iskele ve merdiven, taş basamaklı çimenlik",
+    "en": "Gazebo from a distance with blue scaffolding, a ladder and stepping stones"
+  },
+  "alt": {
+    "tr": "Uzaktan kamelya, çevresinde mavi iskele ve merdiven, çimenlik ve basamak taşları, pembe ışıklı gökyüzü",
+    "en": "Gazebo seen from a distance with blue scaffolding and a ladder around it, lawn and stepping stones, and a pink-lit sky"
+  },
+  "caption": {
+    "tr": "Kamelya bahçenin sonunda duruyor, yan tarafta beton plakalar üstünde iskele parçaları var. Basamak taşları yapıya kıvrılarak ulaşıyor.",
+    "en": "The gazebo stands at the end of the garden with scaffold parts on concrete slabs beside it. The stepping stones curve toward it."
+  },
+  "seoFilename": "uzaktan-kamelya-mavi-iskele-basamak-taslari",
+  "tags": {
+    "type": [
+      "kamelya"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

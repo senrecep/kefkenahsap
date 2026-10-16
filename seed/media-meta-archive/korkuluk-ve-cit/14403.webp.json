@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/14403.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş zemin kenarında koyu piket çit",
+    "en": "Dark picket fence along a stone floor"
+  },
+  "alt": {
+    "tr": "Gri taş zemin boyunca uzanan, metal ayakla sabitlenmiş koyu kahverengi çıtalı çit, arkada tel örgülü saha",
+    "en": "Dark brown slatted fence on metal feet along a grey stone floor, with a wire-fenced court behind"
+  },
+  "caption": {
+    "tr": "Çit zemin kenarını boydan boya izliyor. Arkada toprak alan ve spor sahası görünüyor.",
+    "en": "The fence follows the edge of the floor along its whole length, with bare earth and a sports court behind."
+  },
+  "seoFilename": "tas-zemin-kenarinda-koyu-piket-cit-saha",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

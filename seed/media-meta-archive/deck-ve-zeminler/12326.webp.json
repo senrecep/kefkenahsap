@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/12326.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölyede çivi tabancasıyla deck paneli montajı",
+    "en": "Assembling a deck panel with a nail gun in the workshop"
+  },
+  "alt": {
+    "tr": "Atölyede fayans zemin üzerinde deck paneli kuruluyor; çıtalar sıralanmış, yanda çivi tabancası ve hava hortumu",
+    "en": "A deck panel being assembled on a tiled workshop floor, with slats laid out and a nail gun and air hose beside it"
+  },
+  "caption": {
+    "tr": "Panel önceden atölyede hazırlanıyor, çıtalar çerçeveye çakılıyor. Parçalar sonra yerinde birleştirilecek.",
+    "en": "The panel is prepared in advance in the workshop, with the slats nailed into the frame. The parts will be joined on site later."
+  },
+  "seoFilename": "atolyede-civi-tabancasiyla-deck-paneli-montaji",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

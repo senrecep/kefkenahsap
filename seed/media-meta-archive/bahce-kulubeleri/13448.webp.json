@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/13448.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yeşil çatılı köpek kulübesi, çapraz açıdan",
+    "en": "Green-roofed dog house from an angle"
+  },
+  "alt": {
+    "tr": "Atölye zemininde çapraz açıdan görünen yeşil çatılı, vernikli ahşap köpek kulübesi",
+    "en": "Varnished timber dog house with a green roof seen at an angle on a workshop floor"
+  },
+  "caption": {
+    "tr": "Kulübenin çatısı ve giriş açıklığı aynı karede görünüyor. Arkada kırmızı perdeli bir merdiven var.",
+    "en": "The roof and the entrance opening of the house are both in view. A staircase with a red curtain stands behind."
+  },
+  "seoFilename": "yesil-catili-vernikli-kopek-kulubesi-capraz-aciyla",
+  "tags": {
+    "type": [
+      "köpek kulübesi"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

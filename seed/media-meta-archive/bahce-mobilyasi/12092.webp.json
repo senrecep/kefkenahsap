@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/12092.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kahverengi vernikli ahşap bank, mozaik fayans zemininde, yakından",
+    "en": "Brown-varnished timber bench on a mosaic tiled floor, close up"
+  },
+  "alt": {
+    "tr": "Yakın çekimde, kahverengi vernikli ahşap bankın yüksek sırtlığı ve oturak kenarı",
+    "en": "A close shot of a brown-varnished timber bench's tall back and seat edge, with circle-patterned mosaic tiles in front"
+  },
+  "caption": {
+    "tr": "Bankın sırtlığı iki geniş tahtadan, oturak kenarı kalın. Vernik kahverengi tonunu tahtaya derin biçimde işlemiş.",
+    "en": "The back of the bench is two wide boards and the seat edge is thick. The varnish has sunk its brown tone deep into the wood."
+  },
+  "seoFilename": "kahverengi-ahsap-bank-yakin-cekim-fayans-zemin",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.55
+}

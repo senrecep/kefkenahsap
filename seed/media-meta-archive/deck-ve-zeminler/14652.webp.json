@@ -1,0 +1,38 @@
+{
+  "source": "Ireko-Teak/14652.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çit boyunca uzanan dar ahşap yürüyüş şeridi",
+    "en": "Narrow timber walkway beside a hedge"
+  },
+  "alt": {
+    "tr": "Beton zeminin ve yeşil çitin arasında uzanan dar yeni deck şeridi, solda zincir ve altta toprak zemin",
+    "en": "Narrow new deck strip between a concrete floor and a green hedge, with a chain on the left and bare soil below"
+  },
+  "caption": {
+    "tr": "Deck çitin kenarına dar bir yol olarak döşenmiş. Ucunda zemin henüz toprak.",
+    "en": "The deck is laid as a narrow path along the hedge. The ground at its end is still bare soil."
+  },
+  "seoFilename": "cit-boyunca-uzanan-dar-ahsap-yuruyus-seridi",
+  "tags": {
+    "type": [
+      "deck",
+      "yürüyüş yolu"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

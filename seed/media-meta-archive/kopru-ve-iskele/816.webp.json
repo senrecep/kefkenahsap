@@ -1,0 +1,37 @@
+{
+  "source": "Kopru ve Iskele/816.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Göl kıyısında kazılmış toprak üstünde yan yana taşıyıcı kirişler",
+    "en": "Load-bearing beams laid side by side on dug ground at the lakeshore"
+  },
+  "alt": {
+    "tr": "Kazılmış kumlu zeminde göle doğru yan yana döşenmiş üç ahşap taşıyıcı kiriş; yanında su damacanası, arkada göl ve sazlık",
+    "en": "Three timber beams laid side by side towards the lake on dug sandy ground"
+  },
+  "caption": {
+    "tr": "Kirişler kısa ayaklara oturtulmuş, birbirine paralel duruyor. İskele yapımının ilk adımı olarak zemin hazırlanmış.",
+    "en": "The beams rest on short supports and run parallel to each other. The ground has been prepared as the first step of the pier."
+  },
+  "seoFilename": "gol-kiyisinda-kazilmis-toprakta-tasiyici-kirisler",
+  "tags": {
+    "type": [
+      "iskele"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/12224.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ağaç gövdesi etrafında çam deck ve korkuluk",
+    "en": "Pine deck and railing around a tree trunk"
+  },
+  "alt": {
+    "tr": "Ağaç gövdesinin çevresine döşenmiş açık renkli çam deck ve çıtalı korkuluk, köşede mavi soğutucu",
+    "en": "Pale pine deck laid around a tree trunk with a slatted railing, and a blue cool box in the corner"
+  },
+  "caption": {
+    "tr": "Gövde deck'ten yuvarlak bir boşluktan çıkıyor, tahtalar ağaca zarar vermeden çevresinden geçiyor. Korkuluk deck'in kenarını çevreliyor.",
+    "en": "The trunk rises through a round opening in the deck and the boards stop short of the bark. A railing runs along the deck edge."
+  },
+  "seoFilename": "agac-govdesi-etrafinda-cam-deck-ve-korkuluk",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

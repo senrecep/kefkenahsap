@@ -1,0 +1,103 @@
+import { describe, expect, it } from 'vitest'
+
+import { duplicateToHide, importStatus, mediaRefs, moveAction, pickCover, remedyDue, tagIdsToAdd, type TagRef } from './taxonomy'
+
+const TAGS: TagRef[] = [
+  { id: 1, axis: 'type', slug: 'deck', name: 'Deck' },
+  { id: 2, axis: 'type', slug: 'korkuluk', name: 'Korkuluk' },
+  { id: 3, axis: 'setting', slug: 'bahce', name: 'Bahçe' },
+  { id: 4, axis: 'setting', slug: 'teras', name: 'Teras' },
+  { id: 5, axis: 'wood', slug: 'emprenyeli-cam', name: 'Emprenyeli çam' },
+  { id: 6, axis: 'finish', slug: 'dogal', name: 'Doğal ton' },
+  { id: 7, axis: 'finish', slug: 'vernikli', name: 'Vernik / cila' },
+  { id: 8, axis: 'stage', slug: 'oncesi', name: 'Öncesi' },
+  { id: 9, axis: 'stage', slug: 'uygulama-asamasi', name: 'Uygulama aşaması' },
+  { id: 10, axis: 'stage', slug: 'detay', name: 'Detay' },
+]
+
+describe('tagIdsToAdd', () => {
+  it('maps the photo facts by tag slug, stage through its TR tag', () => {
+    const r = tagIdsToAdd({ type: ['deck', 'korkuluk'], setting: ['bahce'], wood: ['emprenyeli-cam'], finish: ['dogal'], stage: ['before'] }, undefined, TAGS, [])
+    expect(r.add).toEqual([1, 2, 3, 5, 6, 8])
+    expect(r.unmapped).toEqual([])
+  })
+
+  it('treats a finished photo as having no stage tag and a workshop photo as in progress', () => {
+    expect(tagIdsToAdd({ stage: ['finished'] }, undefined, TAGS, []).add).toEqual([])
+    expect(tagIdsToAdd({ stage: ['workshop'] }, undefined, TAGS, []).add).toEqual([9])
+  })
+
+  it('falls back to the meta tag names (TR name, any case) only for an axis the facts leave empty', () => {
+    const r = tagIdsToAdd({ finish: ['dogal'] }, { finish: ['vernik / cila'], setting: ['TERAS', 'dış mekân'], stage: ['detail'] }, TAGS, [])
+    expect(r.add).toEqual([4, 6, 10])
+    expect(r.unmapped).toEqual(['setting:dış mekân'])
+  })
+
+  it('lists values without a tag, including other:* types', () => {
+    expect(tagIdsToAdd({ type: ['other:tabela', 'deck'], setting: ['orman'] }, undefined, TAGS, []).unmapped).toEqual(['type:other:tabela', 'setting:orman'])
+  })
+
+  it('never re-adds a tag the photo has, and leaves a single-value axis the photo already has alone', () => {
+    const current = [{ id: 3, axis: 'setting' }, { id: 7, axis: 'finish' }]
+    const r = tagIdsToAdd({ type: ['deck'], setting: ['bahce', 'teras'], finish: ['dogal'] }, undefined, TAGS, current)
+    expect(r.add).toEqual([1, 4])
+  })
+
+  it('does not match a slug on another axis', () => {
+    expect(tagIdsToAdd({ setting: ['deck'] }, undefined, TAGS, []).add).toEqual([])
+  })
+})
+
+describe('importStatus', () => {
+  it('holds back only a photo the tagger doubted (category disagrees, confidence 0.3 or less)', () => {
+    expect(importStatus({ categoryAgrees: false, confidence: 0.3 })).toBe('pending')
+    expect(importStatus({ categoryAgrees: false, confidence: 0.4 })).toBe('approved')
+    expect(importStatus({ categoryAgrees: true, confidence: 0.1 })).toBe('approved')
+  })
+})
+
+describe('moveAction', () => {
+  it('moves only from the planned category', () => {
+    expect(moveAction(10, 10, 20)).toBe('move')
+    expect(moveAction(20, 10, 20)).toBe('done')
+    expect(moveAction(30, 10, 20)).toBe('mismatch')
+    expect(moveAction(undefined, 10, 20)).toBe('mismatch')
+  })
+})
+
+describe('remedyDue', () => {
+  const planned = { filename: 'a.webp', filesize: 1000 }
+  it('replaces only while the stored file is still the planned one', () => {
+    expect(remedyDue({ filename: 'a.webp', filesize: 1000 }, planned)).toBe(true)
+    expect(remedyDue({ filename: 'a.webp', filesize: 999 }, planned)).toBe(false)
+    expect(remedyDue({ filename: 'a-1.webp', filesize: 1000 }, planned)).toBe(false)
+  })
+})
+
+describe('pickCover', () => {
+  const c = (id: number, width: number, height: number, live: boolean, quality = 'good') => ({ id, width, height, live, quality })
+  it('takes a good, landscape, at least 1280 px wide photo, live ones first, then the widest', () => {
+    expect(pickCover([c(1, 2560, 1440, false), c(2, 1600, 1200, true), c(3, 1920, 1080, true)])).toBe(3)
+  })
+  it('skips portrait, narrow and not-good photos', () => {
+    expect(pickCover([c(1, 1200, 1600, true), c(2, 1024, 768, true), c(3, 2048, 1536, true, 'ok'), { id: 4, width: 2048, height: 1536, live: true }])).toBeUndefined()
+  })
+  it('breaks ties on the lower id', () => {
+    expect(pickCover([c(5, 2048, 1536, true), c(4, 2048, 1536, true)])).toBe(4)
+  })
+})
+
+describe('mediaRefs', () => {
+  it('collects the media ids of upload fields anywhere in a depth-0 document, in every locale', () => {
+    const doc = { id: 9, cover: 4, gallery: [5, 6], hero: { image: 7, mobileImage: null }, seo: { tr: { ogImage: 8 }, en: { ogImage: 8 } }, sort: 3, layout: [{ blockType: 'hero', image: { id: 11 } }] }
+    expect([...mediaRefs(doc)].sort((a, b) => a - b)).toEqual([4, 5, 6, 7, 8, 11])
+  })
+})
+
+describe('duplicateToHide', () => {
+  it('hides the planned copy, else the kept one when only the planned copy is in use, else neither', () => {
+    expect(duplicateToHide({ id: 1, used: false }, { id: 2, used: false })).toBe(1)
+    expect(duplicateToHide({ id: 1, used: true }, { id: 2, used: false })).toBe(2)
+    expect(duplicateToHide({ id: 1, used: true }, { id: 2, used: true })).toBeUndefined()
+  })
+})

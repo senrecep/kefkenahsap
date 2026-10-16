@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14335.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapıdan çimene turuncu cilalı deck",
+    "en": "Orange varnished deck from glass door to lawn"
+  },
+  "alt": {
+    "tr": "Cam kapının önünden çimene uzanan dar, turuncu tonlu cilalı deck; önünde mavi bir hortum",
+    "en": "Narrow orange-toned varnished deck running from a glass door out to the lawn, with a blue hose in front"
+  },
+  "caption": {
+    "tr": "Tahtalar uzun yönde döşenmiş, deck duvar ve çalı çit arasında kalıyor. Hortum çimenin üzerinde kıvrılmış duruyor.",
+    "en": "The boards run lengthwise and the deck sits between the wall and a hedge. The hose lies coiled on the grass."
+  },
+  "seoFilename": "cam-kapidan-cimene-turuncu-cilali-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

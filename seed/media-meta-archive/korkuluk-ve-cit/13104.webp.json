@@ -1,0 +1,39 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/13104.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Duvardaki ahşap kafesler ve sarmaşık, önde desenli karo",
+    "en": "Timber lattices and climbers on the wall, patterned tiles in front"
+  },
+  "alt": {
+    "tr": "Duvarda yan yana üç ahşap kafes; altında çiçekli yatak ve ön planda gri-beyaz desenli karo zemin",
+    "en": "Three timber lattices side by side on a wall, a flowering bed below and a grey-and-white patterned tile floor in front"
+  },
+  "caption": {
+    "tr": "Kafeslerden biri sarmaşıkla örtülüyor. Çiçek yatağı yükseltilmiş ve duvara paralel uzanıyor.",
+    "en": "One of the lattices is being covered by a climber. The flower bed is raised and runs parallel to the wall."
+  },
+  "seoFilename": "duvardaki-ahsap-kafesler-sarmasik-desenli-karo",
+  "tags": {
+    "type": [
+      "kafes / paravan",
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/13528.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz sıvalı duvarın içine yerleştirilmiş L biçimli ahşap bank ve deck",
+    "en": "L-shaped timber bench and deck set into a white-rendered wall"
+  },
+  "alt": {
+    "tr": "Yukarıdan bakıldığında, beyaz sıvalı alçak duvarın içinde L biçimli, açık renkli ahşap oturma bankı ve ortada deck zemin",
+    "en": "From above, a light timber L-shaped bench and a deck floor in the middle set within a low white-rendered wall"
+  },
+  "caption": {
+    "tr": "Bank, beyaz duvarın üç kenarını izleyerek uzanıyor. Ortadaki deck alan oturanların ayağını koyabileceği bir zemin oluşturuyor.",
+    "en": "The bench follows three sides of the white wall. The deck in the middle forms a floor for the seated people's feet."
+  },
+  "seoFilename": "beyaz-siva-duvara-yerlestirilmis-l-seklinde-ahsap-oturma",
+  "tags": {
+    "type": [
+      "bank",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

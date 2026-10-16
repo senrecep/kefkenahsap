@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/12632.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ağaç gövdesine asılı kırmızı çatılı kuş yuvası",
+    "en": "Red-roofed birdhouse hanging on a tree trunk"
+  },
+  "alt": {
+    "tr": "Bir ağaç gövdesine asılmış, kırmızı çatılı ve kahverengi vernikli ahşap kuş yuvası",
+    "en": "Timber birdhouse with a red roof and brown varnish hanging on a tree trunk"
+  },
+  "caption": {
+    "tr": "Yuvanın kırmızı çatısı çift eğimli, ön yüzünde yuvarlak bir giriş deliği var. Arkada sonbahar ağaçları görünüyor.",
+    "en": "The red roof has two slopes and the front has a round entrance hole. Autumn trees show behind."
+  },
+  "seoFilename": "agac-govdesine-asili-kirmizi-catili-ahsap-kus-yuvasi",
+  "tags": {
+    "type": [
+      "kuş evi"
+    ],
+    "wood": [],
+    "setting": [
+      "orman / kır"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

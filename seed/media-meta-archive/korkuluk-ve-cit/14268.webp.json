@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/14268.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çalılık kenarında kıvrımlı kısa çit",
+    "en": "Short curving fence beside a shrub bed"
+  },
+  "alt": {
+    "tr": "Yeşil çalılık yatağını çeviren, ucu yuvarlak çıtalı kısa bal rengi ahşap çit, yerde bir matkap ve kereste",
+    "en": "Short honey-toned slatted fence with rounded tops around a green shrub bed, with a drill and timber on the ground"
+  },
+  "caption": {
+    "tr": "Çit çalılığın kenarını yumuşak bir kavisle izliyor. Taş döşemede işin aletleri duruyor.",
+    "en": "The fence follows the shrub bed in a gentle curve. Work tools sit on the stone paving."
+  },
+  "seoFilename": "calilik-kenarinda-kivrimli-kisa-cit",
+  "tags": {
+    "type": [
+      "çit",
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

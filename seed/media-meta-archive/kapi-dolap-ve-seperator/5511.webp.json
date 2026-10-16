@@ -1,0 +1,35 @@
+{
+  "source": "Kapi Dolap ve Seperator/5511.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kırmızı tuğla çerçeveli çıtalı havalandırma kapağı, toprak kazıda",
+    "en": "Slatted vent hatch in a red-brick frame in an earth cut"
+  },
+  "alt": {
+    "tr": "Kumlu kazı yüzeyinde kırmızı kaplama taşlarla çerçevelenmiş, yatay çıtalı küçük ahşap havalandırma kapağı; yanda çakıl yığını",
+    "en": "Small horizontally slatted timber vent hatch framed with red paving blocks in a sandy excavation face"
+  },
+  "caption": {
+    "tr": "Kapak beton çerçeveye ölçüyle oturtulmuş. Çıtalar alt hacmin havalanmasına izin veriyor.",
+    "en": "The hatch is fitted to the block frame. The slats let the space behind it ventilate."
+  },
+  "seoFilename": "kirmizi-tugla-cerceveli-citali-havalandirma-kapagi-toprak",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.55
+}

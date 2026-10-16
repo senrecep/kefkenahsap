@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/13156.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çıtalı ahşap duvar önünde dış mutfak",
+    "en": "Outdoor kitchen in front of a slatted timber wall"
+  },
+  "alt": {
+    "tr": "Dikey çıtalı ahşap duvarın önünde ocak, odun fırını ve tezgâhtan oluşan dış mutfak; zeminde kablo",
+    "en": "Outdoor kitchen with a stove, wood-fired oven and counter in front of a vertical slatted timber wall, a cable on the floor"
+  },
+  "caption": {
+    "tr": "Ahşap kaplı dolapların üstünde gri tezgâh uzanıyor, ortada siyah bir odun fırını duruyor. Kurulum sürüyor, deck zeminde kablo kangalı var.",
+    "en": "A grey worktop runs over the timber-clad cabinets with a black wood-fired oven in the middle. Installation is under way and a coil of cable lies on the deck."
+  },
+  "seoFilename": "citali-ahsap-duvar-onunde-dis-mutfak-ocak-odun-firini-ve",
+  "tags": {
+    "type": [
+      "dış mutfak / mangal alanı",
+      "iç duvar kaplaması",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.6
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/12192.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş kaplamalı kavisli bank ve pergola altında masa",
+    "en": "Curved stone-based bench and a table under the pergola"
+  },
+  "alt": {
+    "tr": "Çimlik bahçede taş duvar üzerine oturan kavisli ahşap bank ve pergola direkleri altında bir masa",
+    "en": "Curved timber bench on a stone base in a lawn garden, with a table under the pergola posts"
+  },
+  "caption": {
+    "tr": "Bankın oturağı ahşap, gövdesi taş kaplı. Yanında ayağı çapraz bir masa duruyor.",
+    "en": "The bench seat is timber on a stone-clad base. A table with splayed legs stands beside it."
+  },
+  "seoFilename": "tas-kaplamali-kavisli-ahsap-bank-pergola-altinda-masa",
+  "tags": {
+    "type": [
+      "bank",
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

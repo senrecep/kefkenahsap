@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/14514.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çamurlu zeminde çaprazlı ahşap çit kapısı",
+    "en": "Braced timber fence gate on muddy ground"
+  },
+  "alt": {
+    "tr": "Çamurlu zeminde, menteşeli A biçimli çaprazlı kalın ahşap çit kapısı, arkada yatay çıtalı çit",
+    "en": "Thick timber fence gate with an A-shaped brace and hinges on muddy ground, with a rail fence behind"
+  },
+  "caption": {
+    "tr": "Kapı iki kalın direk arasında menteşelerle asılı. Çaprazlar kanadı dik tutuyor.",
+    "en": "The gate hangs on hinges between two thick posts. The braces hold the leaf square."
+  },
+  "seoFilename": "camurlu-zeminde-capraz-kusakli-cit-kapisi",
+  "tags": {
+    "type": [
+      "bahçe kapısı",
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/14096.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Siyah direkli beyaz piket bahçe kapısı",
+    "en": "White picket garden gate between black posts"
+  },
+  "alt": {
+    "tr": "İki siyah direk arasında beyaz boyalı, kemerli üstlü çıtalı bahçe kapısı, arkada camlı giriş",
+    "en": "White-painted picket garden gate with an arched top between two black posts, with a glazed entrance behind"
+  },
+  "caption": {
+    "tr": "Kapının üst hattı hafif kavisli. Arkada evin camlı girişi görünüyor.",
+    "en": "The top line of the gate curves slightly. The glazed house entrance shows behind it."
+  },
+  "seoFilename": "siyah-direkli-beyaz-piket-bahce-kapisi",
+  "tags": {
+    "type": [
+      "bahçe kapısı",
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

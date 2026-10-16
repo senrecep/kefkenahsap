@@ -1,0 +1,35 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/3462.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kütük çıtalı alçak bahçe bordürü",
+    "en": "Low log-slat garden border"
+  },
+  "alt": {
+    "tr": "Bahçede kütük çıtalardan yapılmış alçak bordür; ortada kumlu alan, arkada servi ağaçları",
+    "en": "Low border made of log slats in a garden, with a sandy area in the middle and cypress trees behind"
+  },
+  "caption": {
+    "tr": "Bordürün çıtaları yarım yuvarlak kütük, kumlu alanı çevreliyor. Arkada taş duvar ve servi sırası görünüyor.",
+    "en": "The slats of the border are half-round logs enclosing the sandy area. A stone wall and a row of cypresses are behind."
+  },
+  "seoFilename": "bahcede-kutuk-citalardan-alcak-bordur-ortada-kumlu-alan",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.55
+}

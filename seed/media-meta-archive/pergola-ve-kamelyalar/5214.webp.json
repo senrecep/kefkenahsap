@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/5214.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz boyalı pergola kirişleri, arkada havuz ve sarı bina",
+    "en": "White-painted pergola beams with a pool and a yellow building behind"
+  },
+  "alt": {
+    "tr": "Beyaz boyalı pergola kirişleri, aralarından görünen havuz ve palmiye, yanında sarı villa duvarı ve fener",
+    "en": "White-painted pergola beams with a pool and palm seen between them, beside the yellow villa wall and a wall lantern"
+  },
+  "caption": {
+    "tr": "Kirişler duvardan dışa doğru uzanıp bir sundurma oluşturuyor. Duvarda fener biçimli bir aplik asılı.",
+    "en": "The beams reach out from the wall to form a canopy. A lantern-style wall light hangs on the wall."
+  },
+  "seoFilename": "beyaz-boyali-pergola-kirisleri-havuz-sari-bina",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "havuz kenarı"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

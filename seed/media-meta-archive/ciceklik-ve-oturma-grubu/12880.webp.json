@@ -1,0 +1,35 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/12880.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Traverten döşemede gri eskimiş çiçeklik",
+    "en": "Weathered grey planter on travertine paving"
+  },
+  "alt": {
+    "tr": "Traverten döşemeli bahçede, tahtaları griye dönmüş uzun ahşap çiçeklik; içinde kuru dallar",
+    "en": "Long timber planter with boards weathered to grey on travertine paving in a garden, dry stems inside"
+  },
+  "caption": {
+    "tr": "Çiçeklik yıllanmış, tahtaları gri ve çatlak. İçinde kış sonu kuru dallar duruyor.",
+    "en": "The planter has aged, with grey and cracked boards. Dry stems from late winter stand in it."
+  },
+  "seoFilename": "traverten-dosemeli-bahcede-gri-eskimis-tahtali-uzun-ciceklik",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

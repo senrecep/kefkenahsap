@@ -1,0 +1,35 @@
+{
+  "source": "Korkuluk ve Cit/12576.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yıpranmış gri basamaklar yukarıdan",
+    "en": "Worn grey treads seen from above"
+  },
+  "alt": {
+    "tr": "Yukarıdan bakılan yıpranmış gri ahşap merdiven basamakları; üstte sarı boyalı bir basamak",
+    "en": "Worn grey timber stair treads seen from above, with one yellow-painted tread at the top"
+  },
+  "caption": {
+    "tr": "Basamaklar griye dönmüş, kenarları aşınmış. En üstteki basamak sarıya boyanmış.",
+    "en": "The treads have turned grey with worn edges. The topmost tread is painted yellow."
+  },
+  "seoFilename": "yipranmis-gri-merdiven-basamaklari-yukaridan",
+  "tags": {
+    "type": [
+      "merdiven"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

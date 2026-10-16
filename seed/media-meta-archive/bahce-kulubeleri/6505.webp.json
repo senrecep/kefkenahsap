@@ -1,0 +1,39 @@
+{
+  "source": "Ahsap Yapilar/6505.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Açık kapaklı, OSB iç kaplamalı köpek kulübesi",
+    "en": "Dog house with an open hatch and OSB lining"
+  },
+  "alt": {
+    "tr": "Kemerli girişi ve açık kapağı olan, içi OSB levhayla kaplı açık renk ahşap köpek kulübesi; seramik zeminde",
+    "en": "Pale timber dog house with an arched entrance and an open hatch, lined with OSB inside, standing on a tiled floor"
+  },
+  "caption": {
+    "tr": "Kulübenin kapağı dışarı açık, içindeki OSB taban ve duvar kaplaması görünüyor. Gövdesi açık yeşilimsi emprenyeli tahta.",
+    "en": "The hatch of the house is swung open showing the OSB floor and wall lining inside. The body is pale greenish pressure-treated board."
+  },
+  "seoFilename": "acik-kapakli-osb-ic-kaplamali-acik-renk-ahsap-kopek-kulubesi",
+  "tags": {
+    "type": [
+      "köpek kulübesi"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

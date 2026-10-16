@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/4623.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Küçük havuz çevresinde alt iskelet",
+    "en": "Sub-frame around a small pool"
+  },
+  "alt": {
+    "tr": "Küçük bir havuzun çevresine döşenmiş ahşap alt iskelet; iskelette kapak boşlukları ve çevrede toprak",
+    "en": "Timber sub-frame laid around a small pool, with openings left for covers in the frame and soil around it"
+  },
+  "caption": {
+    "tr": "İskeletin bazı bölmeleri kapak için ayrılmış. Arka planda ev duvarı ve kenarda çalılık görünüyor.",
+    "en": "Some bays of the frame are left for access covers. A house wall and shrubs show in the background."
+  },
+  "seoFilename": "kucuk-havuz-cevresinde-alt-iskelet-ve-kapak-bosluklari",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

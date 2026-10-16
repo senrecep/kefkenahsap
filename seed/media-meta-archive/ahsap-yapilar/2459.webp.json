@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/2459.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Geniş cam kapılı beyaz ev ve taş zeminli teras",
+    "en": "White house with wide glass doors and a stone-floored terrace"
+  },
+  "alt": {
+    "tr": "Beyaz sıvalı evde koyu ahşap saçaklar ve geniş cam kapılar; önünde taş zeminli teras",
+    "en": "White plastered house with dark timber eaves and wide glass doors, a stone-floored terrace in front"
+  },
+  "caption": {
+    "tr": "Ev kademeli çatılı, teras girişinde iki ahşap kolon var. Terasın önünde kereste ve toprak bırakılmış.",
+    "en": "The house has a stepped roof and two timber posts at the terrace entrance. Timber and soil are left in front of the terrace."
+  },
+  "seoFilename": "genis-cam-kapili-beyaz-ev-koyu-sacaklar-tas-zeminli-teras",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [
+      "teras",
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

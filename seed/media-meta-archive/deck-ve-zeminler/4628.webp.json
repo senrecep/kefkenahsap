@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/4628.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Küçük havuz kenarında deck şeridi",
+    "en": "Deck strip at the edge of a small pool"
+  },
+  "alt": {
+    "tr": "Küçük havuzun kenarında uzanan açık renkli deck şeridi; arkada ahşap bir bahçe kulübesi ve selvi sırası, yanda toprak alan",
+    "en": "Pale deck strip along the edge of a small pool, with a timber garden shed and a row of cypress behind"
+  },
+  "caption": {
+    "tr": "Deck şeridi taş döşemeye yaklaşıyor, taş plakalar ve bir çuval yerde bekliyor. Çevre düzenlemesi henüz tamamlanmamış.",
+    "en": "The strip approaches the stone paving, where stone slabs and a sack wait on the ground. The landscaping is not yet finished."
+  },
+  "seoFilename": "kucuk-havuz-kenarinda-deck-seridi-ve-ahsap-bahce-kulubesi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

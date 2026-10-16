@@ -1,0 +1,33 @@
+{
+  "source": "Ahsap Yapilar/14564.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ahşap çerçeveli camlı bölümü olan ev",
+    "en": "House with a timber-framed glazed section"
+  },
+  "alt": {
+    "tr": "Kiremit çatılı evin ahşap çerçeveli, camlı çıkması ve önünde plastik sandalyeler",
+    "en": "Tile-roofed house with a timber-framed glazed extension and plastic chairs in front"
+  },
+  "caption": {
+    "tr": "Evin köşesinde ahşap doğramalı camlı bir bölüm var. Önde taş döşeli alan ve plastik sandalyeler duruyor.",
+    "en": "At the corner of the house is a glazed section with timber frames. A stone-paved area and plastic chairs lie in front."
+  },
+  "seoFilename": "ahsap-dogramali-camli-bolum-kiremit-catili-ev",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.4
+}

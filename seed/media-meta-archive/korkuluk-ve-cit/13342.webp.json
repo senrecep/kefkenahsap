@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/13342.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Merdiven korkuluğunda köşe dönüşlü küpeşte",
+    "en": "Handrail turning a corner on a staircase railing"
+  },
+  "alt": {
+    "tr": "Merdiven kenarında köşede dönen cilalı ahşap küpeşte ve alttan geçen çelik halatlar",
+    "en": "Varnished timber handrail turning at a corner on a staircase, with steel cables below"
+  },
+  "caption": {
+    "tr": "Küpeşte sahanlık köşesinde dik açıyla dönüyor, halatlar altından devam ediyor.",
+    "en": "The handrail turns at a right angle at the landing corner, and the cables carry on below."
+  },
+  "seoFilename": "merdiven-korkugunda-kose-donuslu-kupeste",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "merdiven"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

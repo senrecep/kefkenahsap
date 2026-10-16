@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/14086.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "İskelet üzerine dizilen deck tahtaları",
+    "en": "Deck boards being laid over the frame"
+  },
+  "alt": {
+    "tr": "Ayaklı çıtalar üzerine yan yana konan ilk deck tahtaları, yanda istif ve uzatma kablosu",
+    "en": "First deck boards placed side by side on pedestal-mounted joists, with a stack and an extension cable beside them"
+  },
+  "caption": {
+    "tr": "Tahtalar kenardan başlanarak sıralanıyor. Kalan tahtalar yan tarafta istiflenmiş, zeminde kablo uzanıyor.",
+    "en": "Laying starts at the edge. The remaining boards are stacked to the side and a cable runs across the floor."
+  },
+  "seoFilename": "iskelet-uzerine-dizilen-deck-tahtalari",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14755.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ağaç yanında yeni deck ve aletler",
+    "en": "New deck beside a tree, with tools"
+  },
+  "alt": {
+    "tr": "Çimenlik bahçede ağacın yanında yeni döşenmiş, cilası sürülmüş koyu deck; yanda bir usta, boya kutusu ve alet çantaları",
+    "en": "Newly laid, freshly finished dark deck beside a tree in a lawned garden, with a craftsman, a paint tin and tool bags nearby"
+  },
+  "caption": {
+    "tr": "Deck çalı ve ağaçlarla çevrili küçük bir alanı kaplıyor. Çimen üzerinde artık tahta parçaları ve bir hortum duruyor.",
+    "en": "The deck covers a small area surrounded by shrubs and trees. Offcut boards and a hose lie on the lawn."
+  },
+  "seoFilename": "agac-yaninda-yeni-deck-boya-kutusu-ve-aletler",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

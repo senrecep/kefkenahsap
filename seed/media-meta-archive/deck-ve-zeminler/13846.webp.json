@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/13846.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş yanında parlak turuncu kahverengi dikdörtgen deck",
+    "en": "Glossy orange-brown rectangular deck beside a boulder"
+  },
+  "alt": {
+    "tr": "Çimen üzerinde büyük bir taşın yanında parlak turuncu kahverengi dikdörtgen deck, arkada çiçekli çalılar",
+    "en": "Glossy orange-brown rectangular deck on the lawn beside a large boulder, with flowering shrubs behind"
+  },
+  "caption": {
+    "tr": "Deck bahçenin içinde tek parça bir oturma zemini gibi duruyor. Çevresindeki taş ve çalılar zemini bahçenin parçası yapıyor.",
+    "en": "The deck stands in the garden as a single sitting floor. The boulder and shrubs around it make it part of the garden."
+  },
+  "seoFilename": "tas-yaninda-parlak-turuncu-kahverengi-dikdortgen-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

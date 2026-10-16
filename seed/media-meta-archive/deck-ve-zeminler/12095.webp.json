@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12095.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapı girişinde küçük ahşap paspas deck",
+    "en": "Small timber doormat deck at a glass door"
+  },
+  "alt": {
+    "tr": "Cam kapının önünde, taşlar arasına yerleştirilmiş kırmızı kahverengi cilalı küçük ahşap zemin",
+    "en": "Small red-brown varnished timber platform set among stones in front of a glass door"
+  },
+  "caption": {
+    "tr": "Kısa tahtalardan yapılmış küçük bir deck, kapıdan çıkışta ayağın bastığı yeri düzlüyor. Çevresinde taş ve çim var.",
+    "en": "A short-board mini deck gives a level footing right outside the door. Stones and grass lie around it."
+  },
+  "seoFilename": "cam-kapi-girisinde-kucuk-ahsap-paspas-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.5
+}

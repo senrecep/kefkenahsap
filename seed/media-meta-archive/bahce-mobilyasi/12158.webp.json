@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/12158.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kırmızı fayans terasta kollu katlanır ahşap sandalye, yandan",
+    "en": "Timber folding armchair on a red-tiled terrace, from the side"
+  },
+  "alt": {
+    "tr": "Kırmızı fayans terasta, yandan görünen kollu ve çıtalı sırtlı katlanır ahşap sandalye; arkada kereste yığını ve bir kapı var",
+    "en": "A folding timber armchair with a slatted back seen from the side on a red tiled terrace"
+  },
+  "caption": {
+    "tr": "Yandan bakıldığında sandalyenin eğimli sırtlığı ve katlanır ayak mekanizması belli oluyor. Kollar öne doğru uzanıyor.",
+    "en": "From the side you can see the chair's reclined back and the folding leg mechanism. The arms reach forward."
+  },
+  "seoFilename": "kirmizi-fayans-terasta-kollu-ahsap-katlanir-sandalye-kereste",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

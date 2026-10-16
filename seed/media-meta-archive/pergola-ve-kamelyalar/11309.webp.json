@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/11309.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sekizgen kamelya çatısının altından ahşap kiriş görünümü",
+    "en": "Looking up at timber rafters inside a gazebo roof"
+  },
+  "alt": {
+    "tr": "Kamelyanın içinden bakıldığında çatı kirişleri ve tahta kaplama, dışarıda cadde ve park etmiş araçlar",
+    "en": "View from inside a gazebo up to the roof rafters and timber boarding, with a street and parked vehicles outside"
+  },
+  "caption": {
+    "tr": "Kirişler tepede birleşiyor, aralarına dar tahtalar çakılmış. Korkuluk çıtaları kenarda görünüyor.",
+    "en": "The rafters meet at the peak with narrow boards fixed between them. Railing slats can be seen along the edge."
+  },
+  "seoFilename": "kamelya-ici-cati-kirisleri-tahta-kaplama",
+  "tags": {
+    "type": [
+      "kamelya"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

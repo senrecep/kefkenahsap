@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/2456.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ahşap çatı saçağı altında oluk ve zincir",
+    "en": "Gutter and chain under a timber roof eave"
+  },
+  "alt": {
+    "tr": "Ahşap çatı saçağının kenarındaki oluk, yağmur zinciri ve altındaki kalın kolon, alttan görünüm",
+    "en": "Gutter, rain chain and a thick post at the edge of a timber roof eave, seen from below"
+  },
+  "caption": {
+    "tr": "Saçak tahtaları sıkı döşenmiş, kenarda bakır tonlu bir oluk var. Oluğun ucundan zincir aşağı iniyor.",
+    "en": "The soffit boards are laid tightly and a copper-toned gutter runs along the edge. A chain hangs down from the end of the gutter."
+  },
+  "seoFilename": "ahsap-cati-sacagi-altinda-oluk-zincir-ve-kolon",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

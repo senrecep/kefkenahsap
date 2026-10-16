@@ -1,0 +1,37 @@
+{
+  "source": "Pergola ve Kamelyalar/8773.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Tuğla kolon yanında üçgen desenli pergola kafesi, arkada deniz",
+    "en": "Triangular-pattern pergola lattice beside a brick column with the sea behind"
+  },
+  "alt": {
+    "tr": "Tuğla kolon yanında üçgen desenli vernikli pergola kafesi, arkada teras ve mavi deniz",
+    "en": "Varnished pergola lattice with a triangular pattern beside a brick column, with a terrace and the blue sea behind"
+  },
+  "caption": {
+    "tr": "Kafes terasın üzerine uzanıyor, uzakta deniz ve karşı kıyı görünüyor. Kolon henüz tuğla halinde.",
+    "en": "The lattice stretches over the terrace with the sea and opposite shore in the distance. The column is still bare brick."
+  },
+  "seoFilename": "tugla-kolon-yaninda-ucgen-pergola-kafesi-deniz",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

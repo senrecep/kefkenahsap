@@ -1,0 +1,38 @@
+{
+  "source": "Merdivenler/8199.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş merdiven boyunca beyaz boyalı korkuluk",
+    "en": "White painted railing along stone stairs"
+  },
+  "alt": {
+    "tr": "Taş merdiven boyunca uzanan beyaz boyalı çıtalı ahşap korkuluk; yanda çimlik ve taş duvar",
+    "en": "White painted slatted timber railing running along a stone staircase, with a lawn and stone wall beside"
+  },
+  "caption": {
+    "tr": "Beyaz boyalı korkuluk basamakların kenarında baştan sona uzanıyor. Köşede direk daha kalın.",
+    "en": "The white painted railing runs the full length at the edge of the steps. The post at the corner is thicker."
+  },
+  "seoFilename": "tas-merdiven-boyunca-beyaz-boyali-citali-korkuluk-cim",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

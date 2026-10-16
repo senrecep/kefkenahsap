@@ -1,0 +1,36 @@
+{
+  "source": "Ireko-Teak/14160.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beton gövdede ahşap çıtalı yüzey, yanında çim",
+    "en": "Slatted timber surface on a concrete body"
+  },
+  "alt": {
+    "tr": "Beton gövdeli tezgâhın üstüne yerleştirilmiş bal rengi ahşap çıtalı yüzey; yanda çim alan",
+    "en": "Honey-coloured slatted timber surface set into a concrete-bodied counter, with a lawn alongside"
+  },
+  "caption": {
+    "tr": "Beton çerçevenin içinde dar ahşap çıtalar yan yana sıralanmış. Tezgâhın yanında çim alan görünüyor.",
+    "en": "Narrow timber slats are lined up side by side inside the concrete frame. A lawn is visible next to the counter."
+  },
+  "seoFilename": "beton-govdede-ahsap-citali-yuzey-yaninda-cim-ve-canta",
+  "tags": {
+    "type": [
+      "bar / tezgâh"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.45
+}

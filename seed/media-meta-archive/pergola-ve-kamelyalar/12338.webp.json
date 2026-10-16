@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/12338.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş zeminde tenteli pergola altında kavisli bank, uzun masa ve sandalyeler",
+    "en": "Curved bench, long table and chairs under a canvas pergola on stone paving"
+  },
+  "alt": {
+    "tr": "Taş döşeli yuvarlak zeminde tenteli ahşap pergola, altında kavisli minderli bank, uzun masa ve örtülü sandalyeler",
+    "en": "Canvas-covered timber pergola on a round stone-paved floor, with a curved cushioned bench, a long table and covered chairs"
+  },
+  "caption": {
+    "tr": "Uzun masa kalabalık bir sofraya uygun. Arkada geniş camlı modern bir ev görünüyor.",
+    "en": "The long table suits a large gathering. A modern house with big glass doors shows behind."
+  },
+  "seoFilename": "tas-zeminde-tenteli-pergola-uzun-masa-sandalyeler",
+  "tags": {
+    "type": [
+      "pergola",
+      "bank",
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

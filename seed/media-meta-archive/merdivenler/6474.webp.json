@@ -1,0 +1,39 @@
+{
+  "source": "Merdivenler/6474.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Duvar boyunca uzanan açık renk basamaklar",
+    "en": "Light timber steps running along the wall"
+  },
+  "alt": {
+    "tr": "Bej duvar boyunca yukarı uzanan açık renkli ahşap basamaklar, duvarda ahşap tutamak; üstten görünüm",
+    "en": "Light timber steps running up along a beige wall with a timber handrail on the wall, seen from above"
+  },
+  "caption": {
+    "tr": "Basamaklar dar bir hatta yukarı çıkıyor, duvarda boydan boya bir tutamak uzanıyor. Tahtalar açık ve temiz.",
+    "en": "The steps climb in a narrow line with a handrail running along the wall. The boards are light and clean."
+  },
+  "seoFilename": "duvar-boyunca-acik-renk-ahsap-basamaklar-ustten",
+  "tags": {
+    "type": [
+      "merdiven"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

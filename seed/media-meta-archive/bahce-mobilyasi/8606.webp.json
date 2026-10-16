@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/8606.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Açık renkli çam masa, ortasında kütük dilim tepsi; minderli koltuklar",
+    "en": "Light pine table with a log-slice tray and cushioned chairs"
+  },
+  "alt": {
+    "tr": "Yeşil suni çim üzerinde, çapraz ayaklı açık renkli çam masa; ortasında kütük diliminden bir tepsi",
+    "en": "On green artificial turf, a light pine table with crossed legs and a log-slice tray in the middle"
+  },
+  "caption": {
+    "tr": "Masanın ayakları çapraz geçmeli, köşeleri yuvarlatılmış. Ortadaki kütük tepsi masaya doğal bir görünüm katıyor.",
+    "en": "The legs of the table cross, and its corners are rounded. The log-slice tray in the middle gives the table a natural look."
+  },
+  "seoFilename": "acik-renkli-cam-masa-ortada-kutuk-dilim-tepsi-minderli",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı",
+      "oturma grubu"
+    ],
+    "wood": [
+      "çam"
+    ],
+    "setting": [],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

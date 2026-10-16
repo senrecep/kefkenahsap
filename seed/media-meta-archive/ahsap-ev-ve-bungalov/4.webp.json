@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/4.webp",
+  "category": "ahsap-ev-ve-bungalov",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çatı iskeleti kurulmuş ahşap ev ve istif kereste",
+    "en": "Timber house with its roof frame up and stacked timber"
+  },
+  "alt": {
+    "tr": "Duvar ve çatı iskeleti dikilmiş, önünde kereste yığını duran ahşap ev yapısı",
+    "en": "Timber house with the wall and roof frame erected and a stack of timber in front"
+  },
+  "caption": {
+    "tr": "Çatı makasları yerine oturmuş, duvarların bir kısmı kaplanmış. Önde istiflenmiş kereste bekliyor.",
+    "en": "The roof trusses are in place and part of the walls are already clad. Stacked timber waits in front."
+  },
+  "seoFilename": "cati-iskeleti-kurulmus-ahsap-ev-ve-istif-kereste",
+  "tags": {
+    "type": [
+      "ahşap ev / bungalov"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

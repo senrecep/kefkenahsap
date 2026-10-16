@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/9692.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Üstten bakışla basamaklar ve iki yanda korkuluk",
+    "en": "Steps from above with railings on both sides"
+  },
+  "alt": {
+    "tr": "Üstten görünen düz basamaklar ve iki yanında ahşap korkuluk; uzakta tel çit ve ağaçlar",
+    "en": "Straight steps seen from above with timber railings on both sides, with wire fencing and trees in the distance"
+  },
+  "caption": {
+    "tr": "Basamaklar iki korkuluk arasında dümdüz iniyor. Tahtaların üstünde güneş izleri görünüyor.",
+    "en": "The steps go straight down between the two railings. Patches of sun mark the boards."
+  },
+  "seoFilename": "ustten-bakisla-basamaklar-ve-iki-yanda-ahsap-korkuluk",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

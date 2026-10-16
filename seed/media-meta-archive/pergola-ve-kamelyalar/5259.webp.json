@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/5259.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar kenarında pergola kirişlerini yerleştiren ustalar",
+    "en": "Craftsmen placing pergola beams beside a stone wall"
+  },
+  "alt": {
+    "tr": "Taş duvarın üstünde pergola kirişlerini yerleştiren işçiler, arkada ahşap kabin ve beyaz evler",
+    "en": "Workers placing pergola beams on top of a stone wall, with a timber cabin and white houses behind"
+  },
+  "caption": {
+    "tr": "Kirişler duvarın üstüne sıra sıra konuyor, bir işçi merdivende. Geride küçük bir ahşap yapı görünüyor.",
+    "en": "The beams are laid across the wall one after another, with a worker on the ladder. A small timber building stands behind."
+  },
+  "seoFilename": "tas-duvar-kenarinda-pergola-kirisi-montaji",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

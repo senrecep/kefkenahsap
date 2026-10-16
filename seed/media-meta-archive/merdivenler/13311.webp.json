@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/13311.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Önden ahşap dış merdiven, iki yanda korkuluk",
+    "en": "Timber outdoor stairs from the front, railings on both sides"
+  },
+  "alt": {
+    "tr": "Önden görünen düz ahşap dış merdiven; iki yanında ahşap korkuluk, üstte beyaz çit",
+    "en": "Straight timber outdoor stairs seen from the front, with timber railings on both sides and a white fence above"
+  },
+  "caption": {
+    "tr": "Merdiven önden bakıldığında dümdüz yükseliyor. Her iki yanda direkli ve tutamaklı korkuluk var.",
+    "en": "Seen from the front the stairs rise straight up. Posted railings with handrails run on both sides."
+  },
+  "seoFilename": "onden-ahsap-dis-merdiven-iki-yanda-ahsap-korkuluk",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

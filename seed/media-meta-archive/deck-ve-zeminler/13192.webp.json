@@ -1,0 +1,36 @@
+{
+  "source": "Korkuluk ve Cit/13192.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çam ormanında yürüyüş yolunun basınçlı suyla temizlenmesi",
+    "en": "Pressure-washing a pine-forest boardwalk"
+  },
+  "alt": {
+    "tr": "Çam ağaçları arasındaki grileşmiş ahşap yürüyüş yolu ve korkuluğu yıkayan basınçlı su hortumu, yanında yeşil bitkiler",
+    "en": "A pressure-washer jet cleaning a greyed timber boardwalk and railing among pine trees, with green plants alongside"
+  },
+  "caption": {
+    "tr": "Yürüyüş yolunun yıpranmış yüzeyi basınçlı suyla yıkanıyor. Temizlik, yeni bakım katı öncesinde yapılıyor.",
+    "en": "The worn surface of the boardwalk is being washed with a pressure jet, a cleaning step before a fresh coat."
+  },
+  "seoFilename": "cam-ormaninda-yuruyus-yolunun-basincli-suyla-temizlenmesi",
+  "tags": {
+    "type": [
+      "yürüyüş yolu",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "orman / kır"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

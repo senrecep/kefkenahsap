@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/13416.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Siyah duvar önünde dikey arkalıklı ve metal ayaklı bank, yakından",
+    "en": "Bench with a vertical back and metal legs in front of a black wall, close up"
+  },
+  "alt": {
+    "tr": "Yakın çekimde, siyah bir duvarın önündeki ahşap bankın dikey tahtalı arkalığı, oturak kenarı ve ince metal ayağı görünüyor",
+    "en": "A close view of the vertical-board back, seat edge and thin metal leg of a timber bench in front of a black wall"
+  },
+  "caption": {
+    "tr": "Arkalığın dikey tahtaları ve oturağın kenarı yakından düzgün işlenmiş görünüyor. Metal ayak bankı zeminden ayırıyor.",
+    "en": "Up close, the vertical boards of the back and the seat edge look neatly finished. The metal leg lifts the bench off the ground."
+  },
+  "seoFilename": "siyah-duvar-onunde-dikey-ahsap-arkalikli-bank-metal-ayakli",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/9199.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kısmen tamamlanmış yatay kaplama",
+    "en": "Partly completed horizontal cladding"
+  },
+  "alt": {
+    "tr": "Yatay ahşap kaplama kısmen tamamlanmış; üst kısımda çıtalar ve membran açıkta, kapı boşlukları görünüyor",
+    "en": "Horizontal timber cladding partly completed, with battens and membrane exposed above and door openings visible"
+  },
+  "caption": {
+    "tr": "Alt bölümde yatay tahtalar yerinde. Üstte çıtalar ve membran henüz açıkta, tahtalar yukarı doğru devam edecek.",
+    "en": "The horizontal boards are in place on the lower part. Battens and membrane are still exposed above, and the boards will continue upwards."
+  },
+  "seoFilename": "kismen-tamamlanmis-yatay-kaplama-cita-membran",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

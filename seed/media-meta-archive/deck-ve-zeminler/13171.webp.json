@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/13171.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çiçekler yanında gri deck tahtaları, sol tarafı işlenmiş",
+    "en": "Grey deck boards beside flowers, left side treated"
+  },
+  "alt": {
+    "tr": "Çiçeklerin yanında gri eski deck tahtaları; sol tarafı zımparalanmış ve daha açık renkli",
+    "en": "Old grey deck boards beside flowers, with the left side sanded and paler in colour"
+  },
+  "caption": {
+    "tr": "Soldaki tahtalar işlenmiş ve ahşabın damarı daha net görünüyor. Sağ taraf güneşte solmuş gri tonunu koruyor.",
+    "en": "The boards on the left have been worked and the grain is clearer. The right side keeps its sun-faded grey."
+  },
+  "seoFilename": "cicekler-yaninda-gri-deck-tahtalari-sol-tarafi-islenmis",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

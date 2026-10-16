@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/325.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kafe salonunda kirişli çatı ve kırmızı koltuklar",
+    "en": "Beamed roof and red seats in a cafe hall"
+  },
+  "alt": {
+    "tr": "Ahşap kirişli çatının altında, kırmızı koltukların ve masaların dizildiği camlı kafe salonu",
+    "en": "Glazed cafe hall under a timber-beamed roof, with red seats and tables set out"
+  },
+  "caption": {
+    "tr": "Açıkta duran kirişler ve tavan tahtaları salona sıcak bir ton veriyor. Cam bölmelerin ardında dışarısı görünüyor.",
+    "en": "The exposed beams and ceiling boards give the hall a warm tone. The outside can be seen through the glazed screens."
+  },
+  "seoFilename": "kafe-salonunda-kirisli-cati-kirmizi-koltuklar",
+  "tags": {
+    "type": [
+      "sundurma / saçak / carport",
+      "tavan kaplaması / lambri"
+    ],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

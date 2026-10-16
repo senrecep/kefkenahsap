@@ -1,0 +1,39 @@
+{
+  "source": "Korkuluk ve Cit/6428.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Geniş çamurlu arazide sıralı yuvarlak direkler",
+    "en": "Rows of round posts across a wide muddy site"
+  },
+  "alt": {
+    "tr": "Çakıl yolun yanında, çamurlu geniş arazide sıra sıra dikilmiş yuvarlak kesitli ahşap çit direkleri, önde kalın bir direk",
+    "en": "Round timber fence posts set in rows across a wide muddy site beside a gravel road, with a thick post in the foreground"
+  },
+  "caption": {
+    "tr": "Direkler arazide kare ızgara oluşturacak şekilde dikilmiş. Tekerlek izleri toprakta duruyor.",
+    "en": "The posts are set to form a grid across the plot, and wheel ruts remain in the soil."
+  },
+  "seoFilename": "genis-camurlu-arazide-sirali-yuvarlak-ahsap-cit-direkleri",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

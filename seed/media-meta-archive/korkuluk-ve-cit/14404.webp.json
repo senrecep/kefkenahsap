@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/14404.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yol kenarında koyu piket çit, metal ayaklı",
+    "en": "Dark picket fence beside a path on metal feet"
+  },
+  "alt": {
+    "tr": "Yakından çekilmiş yatay kuşaklı koyu kahverengi çıtalı çit ve yol boyunca devam eden aynı çit hattı, arkada apartmanlar",
+    "en": "Close view of a dark brown slatted fence with horizontal rails, with the same fence line continuing along the path"
+  },
+  "caption": {
+    "tr": "Önde kalın bir direk ve iki yatay kuşak görünüyor, çıtalar yuvarlak uçlu.",
+    "en": "A thick post and two horizontal rails show in front, and the pickets have rounded tops."
+  },
+  "seoFilename": "yol-kenarinda-koyu-piket-cit-ayak-profilleri",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

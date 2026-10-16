@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/10968.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Siyah çerçeveli turuncu ahşap kapı, beyaz taş sütun ve kırmızı posta kutusu",
+    "en": "Black-framed orange timber gate, white stone pier and red letterbox"
+  },
+  "alt": {
+    "tr": "Beyaz taş sütunun yanında siyah çerçeveli, turuncu-kahve dikey tahtalı kapı ve sütun üstündeki kırmızı-kahve ahşap kutu",
+    "en": "A black-framed orange-brown vertical-board gate beside a white stone pier"
+  },
+  "caption": {
+    "tr": "Kapının tahtaları dikey, çerçeve ince siyah. Taş sütun kapıyı yoldan ayırıyor, arkada selvi görünüyor.",
+    "en": "The gate boards are vertical and the frame is a slim black. The stone pier separates the gate from the road and cypress stands behind."
+  },
+  "seoFilename": "siyah-cerceveli-turuncu-ahsap-kapi-tas-sutun-posta-kutusu",
+  "tags": {
+    "type": [
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

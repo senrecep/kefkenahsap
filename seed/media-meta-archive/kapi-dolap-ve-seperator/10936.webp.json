@@ -1,0 +1,38 @@
+{
+  "source": "Kapi Dolap ve Seperator/10936.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Mozaik zeminli bahçe köşesinde dikey tahtalı paravan",
+    "en": "Vertical-board screen in a garden corner with mosaic paving"
+  },
+  "alt": {
+    "tr": "Mozaik zeminli bahçe köşesinde beyaz kafesli duvarın önünde bal rengi dikey tahtalı paravan ve ahşap jardiniyer",
+    "en": "Honey-coloured vertical-board screen in a garden corner with mosaic paving, in front of a white lattice wall"
+  },
+  "caption": {
+    "tr": "Paravan köşeyi göz önünden saklıyor, tahtalar eşit aralıkla dizili. Zemindeki mozaik düzenli bir desen veriyor.",
+    "en": "The screen hides the corner from view with evenly spaced boards. The mosaic paving makes a tidy pattern."
+  },
+  "seoFilename": "mozaik-zeminli-bahce-kosesinde-dikey-tahtali-paravan",
+  "tags": {
+    "type": [
+      "kafes / paravan",
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

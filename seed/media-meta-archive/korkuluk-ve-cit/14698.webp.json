@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/14698.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kereste yığını önünde beyaz boyalı ahşap kafes panel",
+    "en": "White-painted timber lattice panel in front of a stack of timber"
+  },
+  "alt": {
+    "tr": "Dik duran kereste ve çit tahtaları önünde, beyaz boyalı iki kalın dikmeli kare gözlü ahşap kafes panel; altında bir tahta",
+    "en": "A white-painted square-cell timber lattice panel with two thick uprights in front of upright timber and fence boards"
+  },
+  "caption": {
+    "tr": "Panel kereste yığınına yaslı değil, kendi başına dik duruyor. Arkada sivri uçlu çit tahtaları görünüyor.",
+    "en": "The panel does not lean on the timber stack but stands upright by itself. Pointed fence boards are visible behind."
+  },
+  "seoFilename": "kereste-yigini-onunde-beyaz-boyali-ahsap-kafes-panel",
+  "tags": {
+    "type": [
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

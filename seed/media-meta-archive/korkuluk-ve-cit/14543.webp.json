@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/14543.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar üstünde sık yatay çıtalı ahşap panel, sarı duvar önünde",
+    "en": "Dense horizontal-slat timber panel on a stone wall in front of a yellow wall"
+  },
+  "alt": {
+    "tr": "Taş kaplı alçak duvarın üstünde uzanan sık çıtalı turuncu ahşap panel; arkada sarı cephe, önde çiçekli ağaç dalları",
+    "en": "A dense-slatted orange timber panel running along the top of a stone-clad low wall"
+  },
+  "caption": {
+    "tr": "Panel duvarın üstünde teras kenarını boydan boya kapatıyor. Çıtalar yatay ve çok sık aralıklı.",
+    "en": "The panel closes off the whole edge of the terrace along the top of the wall. The slats are horizontal and very closely spaced."
+  },
+  "seoFilename": "tas-duvar-ustunde-sik-yatay-citali-panel-sari-duvar",
+  "tags": {
+    "type": [
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/11737.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Uzun balkonda açık sarı deck döşemesi",
+    "en": "Light yellow decking on a long balcony"
+  },
+  "alt": {
+    "tr": "Cam doğrama kenarındaki uzun balkonda açık sarı ahşap deck döşemesi",
+    "en": "Light yellow timber decking on a long balcony along the glazed frame"
+  },
+  "caption": {
+    "tr": "Balkonun tamamı tahtalarla kaplanmış, boyuna uzanan bir gölge çizgisi tahtalara paralel düşüyor.",
+    "en": "The whole balcony is covered in boards, with a long shadow line falling parallel to them."
+  },
+  "seoFilename": "uzun-balkonda-acik-sari-deck-dosemesi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "balkon"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

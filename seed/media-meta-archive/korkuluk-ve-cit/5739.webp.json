@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/5739.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar önünde siyah çerçeveli ahşap çıtalı çit ve tabela",
+    "en": "Black-framed timber slat fence in front of a stone wall, with a sign"
+  },
+  "alt": {
+    "tr": "Taş duvarın önünde, küp taş yola paralel uzanan siyah çerçeveli dikey çıtalı çit; yanda küçük bir tabela, yerde kalas",
+    "en": "A vertical-slat fence with a black frame running parallel to the cobbled road in front of a stone wall"
+  },
+  "caption": {
+    "tr": "Çıtalar eşit aralıkla siyah çerçeveye bağlı, çit taş duvarı yol tarafından kapatıyor. Çitin kenarında yere konmuş bir kalas var.",
+    "en": "The slats are fixed to the black frame at even gaps and the fence screens the stone wall from the road side. A timber lies on the ground at the edge of the fence."
+  },
+  "seoFilename": "tas-duvar-onunde-siyah-cerceveli-citali-cit-tabela",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

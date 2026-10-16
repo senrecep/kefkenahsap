@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/13770.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çıtalı kapının ardında kemik süslü köpek kulübesi",
+    "en": "Dog house with a bone ornament behind a picket gate"
+  },
+  "alt": {
+    "tr": "Sivri çıtalı ahşap kapının arkasında, çatısında kemik motifi olan küçük köpek kulübesi; önünde çakıl döşeli alan var",
+    "en": "A small dog house with a bone motif on its roof stands behind a pointed picket gate, with a gravel area in front"
+  },
+  "caption": {
+    "tr": "Köpeğin alanı çıtalı bir kapıyla ayrılmış, önüne çakıl serilmiş. Kulübenin çatısındaki kemik motifi uzaktan görünüyor.",
+    "en": "The dog's area is fenced off with a picket gate and covered in gravel. The bone motif on the roof can be seen from a distance."
+  },
+  "seoFilename": "citali-kapi-arkasinda-kemik-susulu-kopek-kulubesi",
+  "tags": {
+    "type": [
+      "köpek kulübesi",
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

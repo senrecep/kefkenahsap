@@ -1,0 +1,39 @@
+{
+  "source": "Ahsap Yapilar/1832.webp",
+  "category": "ahsap-ev-ve-bungalov",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar, basamaklar ve çit önünde ahşap ev",
+    "en": "Timber house behind a stone wall, steps and fence"
+  },
+  "alt": {
+    "tr": "Geniş kadrajda taş duvar, yukarı çıkan basamaklar ve çıtalı çitin arkasında balkonlu ahşap ev",
+    "en": "Wide view of a timber house with balconies behind a stone wall, a flight of steps and a slatted fence"
+  },
+  "caption": {
+    "tr": "Basamaklar taş duvarın ortasından bahçeye çıkıyor. Yanında sundurmalı kamelya ve balkonlu ev görünüyor.",
+    "en": "The steps climb through the stone wall into the garden. A covered gazebo and the house with balconies stand beside them."
+  },
+  "seoFilename": "tas-duvar-merdiven-ve-citin-ardinda-ahsap-ev-genis-kadraj",
+  "tags": {
+    "type": [
+      "ahşap ev / bungalov",
+      "merdiven",
+      "çit"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

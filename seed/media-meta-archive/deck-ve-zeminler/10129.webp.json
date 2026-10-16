@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/10129.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çim ve taş zeminde kırmızı-kahve deck platformu",
+    "en": "Red-brown deck platform on lawn and stone"
+  },
+  "alt": {
+    "tr": "Çim ve taş zemin üzerinde, havuza yakın duran kırmızı-kahve ahşap deck platformu",
+    "en": "Red-brown timber deck platform near a pool, sitting on lawn and stone paving"
+  },
+  "caption": {
+    "tr": "Platform çimenle taş arasındaki alana oturtulmuş. Üst yüzeyde dar tahtalar boydan boya sıralı.",
+    "en": "The platform sits in the area between the lawn and the stone. Narrow boards run across the top."
+  },
+  "seoFilename": "cim-ve-tas-zemin-uzerinde-havuza-yakin-kirmizi-kahve-ahsap",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

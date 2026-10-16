@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/14816.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çam ağaçları önünde geniş deck",
+    "en": "Wide deck in front of pine trees"
+  },
+  "alt": {
+    "tr": "Çam ağaçlarının ve çimenin önünde duran geniş turuncu kahverengi deck; arkada yatay çıtalı korkuluk, önde taş döşeme",
+    "en": "Wide orange-brown deck in front of pine trees and lawn, with a horizontal-slat railing at the back"
+  },
+  "caption": {
+    "tr": "Deckin tahtaları ön kenara dik döşenmiş ve yüzey ışıkla parlıyor. Arka sınırı korkuluk çiziyor.",
+    "en": "The deck boards run square to the front edge and the surface shines in the light. The railing marks the back boundary."
+  },
+  "seoFilename": "cam-agaclari-onunde-genis-deck-ve-yatay-citali-korkuluk",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/13490.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ağaç gövdesi etrafında döşenen deck, yerde alet ve kutu",
+    "en": "Deck laid round a tree trunk with tools and a tub on it"
+  },
+  "alt": {
+    "tr": "Ağaç gövdesi etrafında döşenmiş açık renkli deck, üzerinde alet ve plastik kutu",
+    "en": "Pale deck laid round a tree trunk with a tool and a plastic tub on it"
+  },
+  "caption": {
+    "tr": "Tahtalar ağaç gövdesine yuvarlak bir boşluk bırakarak dönüyor. Aletler deck'in üstünde, iş sürüyor.",
+    "en": "The boards turn round the trunk, leaving a round gap. Tools lie on the deck while the work goes on."
+  },
+  "seoFilename": "agac-govdesi-etrafinda-doseli-deck-yerde-alet-ve-kutu",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

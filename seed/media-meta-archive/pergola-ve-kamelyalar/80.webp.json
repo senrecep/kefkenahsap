@@ -1,0 +1,42 @@
+{
+  "source": "Pergola ve Kamelyalar/80.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz kenarı çimde çapraz korkuluklu ahşap kamelya, arkada yazlık evler",
+    "en": "Poolside lawn gazebo with an X-braced rail and summer houses behind"
+  },
+  "alt": {
+    "tr": "Havuz kenarındaki çimlikte çapraz korkuluklu ahşap kamelya, üstte kafes çatı, arkada kiremit çatılı yazlık evler",
+    "en": "Timber gazebo with an X-braced railing on the lawn beside a pool, with a lattice roof above and tile-roofed houses behind"
+  },
+  "caption": {
+    "tr": "Kamelya düz çıtalı çatı ve çapraz korkuluklarla kapanıyor. Çevresinde servi ağaçları sıralanıyor.",
+    "en": "The gazebo is closed with a slatted flat roof and X-braced railings. Cypress trees line up around it."
+  },
+  "seoFilename": "havuz-kenari-cimde-capraz-korkuluklu-kamelya-yazlik",
+  "tags": {
+    "type": [
+      "kamelya",
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı",
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

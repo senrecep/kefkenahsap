@@ -1,0 +1,39 @@
+{
+  "source": "Ahsap Yapilar/9595.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvardaki kapının üstünde ahşap konsol saçak",
+    "en": "Timber bracket canopy over a door in a stone wall"
+  },
+  "alt": {
+    "tr": "Taş örgülü duvarda bir kapının üzerinde, ahşap konsollarla taşınan eğimli ahşap saçak; yanda gri bahçe kulübesi",
+    "en": "Sloping timber canopy carried on timber brackets over a door in a stone wall, with a grey garden shed beside it"
+  },
+  "caption": {
+    "tr": "Saçak iki konsola oturuyor ve kapının önüne gölge yapıyor. Duvarın taşı sıvasız bırakılmış.",
+    "en": "The canopy rests on two brackets and shades the door. The stone of the wall is left exposed."
+  },
+  "seoFilename": "tas-duvardaki-kapinin-ustunde-ahsap-konsol-sacak",
+  "tags": {
+    "type": [
+      "sundurma / saçak / carport",
+      "kapı"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş",
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

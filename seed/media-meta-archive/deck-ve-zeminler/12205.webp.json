@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12205.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar önünde geniş alanda deck kirişleri",
+    "en": "Deck joists across a wide area in front of a stone wall"
+  },
+  "alt": {
+    "tr": "Taş duvar önündeki geniş alanda sık aralıklı açık renkli deck kirişleri, ağaç gövdesinin çevresinde",
+    "en": "Closely spaced pale deck joists over a wide area in front of a stone wall, around a tree trunk"
+  },
+  "caption": {
+    "tr": "Kirişler ağaç gövdesine uyacak şekilde bırakılmış. Üstü henüz açık ve döşeme bekliyor.",
+    "en": "The joists are left to fit around the trunk. The top is still open, waiting for the boards."
+  },
+  "seoFilename": "tas-duvar-onunde-genis-alanda-deck-kirisleri",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

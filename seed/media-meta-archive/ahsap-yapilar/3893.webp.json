@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/3893.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Gri shingle çatılı ahşap araç sundurması",
+    "en": "Timber carport with a grey shingle roof"
+  },
+  "alt": {
+    "tr": "Turuncu tonda vernikli kolonları ve gri shingle çatısı olan, altında araç duran ahşap sundurma",
+    "en": "Timber carport with orange-toned varnished posts and a grey shingle roof, a car parked beneath"
+  },
+  "caption": {
+    "tr": "Sundurma iki sıra kolon üzerinde duruyor. Yanında lavanta ve çiçek saksısı, arkada yeşillik var.",
+    "en": "The carport stands on two rows of posts. Lavender and a flower pot sit beside it with greenery behind."
+  },
+  "seoFilename": "gri-shingle-catili-turuncu-vernikli-arac-sundurmasi",
+  "tags": {
+    "type": [
+      "sundurma / saçak / carport"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

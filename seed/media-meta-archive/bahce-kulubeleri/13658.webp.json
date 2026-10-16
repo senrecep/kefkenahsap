@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/13658.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kemik süslü, yemlikli köpek kulübesi, oda içinde",
+    "en": "Dog house with a bone ornament and feeding tray, in a room"
+  },
+  "alt": {
+    "tr": "Oda içinde duran, kemik süslü, havalandırma kafesli ve yemlikli, yeşil çatılı vernikli köpek kulübesi",
+    "en": "Varnished dog house with a green roof, a bone ornament, a grilled vent and a feeding tray, standing in a room"
+  },
+  "caption": {
+    "tr": "Kulübenin ön yüzünde kemik biçimli bir süs ve küçük kafesli bir pencere var. Alt köşede çekmeceli bir yemlik duruyor.",
+    "en": "The front of the house has a bone-shaped ornament and a small grilled window. A feeding tray like a small drawer sits in the lower corner."
+  },
+  "seoFilename": "kemik-suslu-havalandirma-kafesli-ve-yemlikli-kopek-kulubesi",
+  "tags": {
+    "type": [
+      "köpek kulübesi"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/9456.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sundurma altında masa takımlı deck terası",
+    "en": "Deck terrace with a dining set under a canopy"
+  },
+  "alt": {
+    "tr": "Zemin kat sundurmasının altından çime uzanan açık renkli deck, üzerinde ahşap masa ve dört sandalye",
+    "en": "Light deck extending from beneath a ground-floor canopy onto the lawn, with a wooden table and four chairs on it"
+  },
+  "caption": {
+    "tr": "Deck evin girişinden bahçeye uzanıyor ve masa takımına zemin oluyor.",
+    "en": "The deck extends from the house entrance into the garden and serves as a floor for the dining set."
+  },
+  "seoFilename": "sundurma-altinda-masa-takimli-deck",
+  "tags": {
+    "type": [
+      "deck",
+      "masa ve sandalye takımı"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

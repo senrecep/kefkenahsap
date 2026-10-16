@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12207.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kalın direk ve yatay kirişlerin bağlantı noktası",
+    "en": "Joint between a thick post and horizontal beams"
+  },
+  "alt": {
+    "tr": "Ağaç gövdesi yanında kalın bir direk ile yatay kirişlerin bağlantı noktasının yakın görünümü",
+    "en": "Close view of where a thick post meets horizontal beams, beside a tree trunk"
+  },
+  "caption": {
+    "tr": "Kirişler direğe geçmeli ve cıvatalı olarak oturuyor. Bu bağlantı yükseltilmiş deck'in ağırlığını direğe aktarıyor.",
+    "en": "The beams sit on the post with a bolted notched joint. This connection passes the load of the raised deck to the post."
+  },
+  "seoFilename": "kalin-direk-ve-yatay-kirislerin-baglanti-noktasi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

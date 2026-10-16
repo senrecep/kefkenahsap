@@ -1,0 +1,39 @@
+{
+  "source": "Ahsap Yapilar/1061.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kıyıda yüksek platform üzerinde pergola taşıyıcıları",
+    "en": "Pergola supports on a tall shoreline platform"
+  },
+  "alt": {
+    "tr": "Deniz kıyısında uzun ahşap platformun üzerinde pergola taşıyıcıları ve çalışan işçiler; arkada palmiyeler",
+    "en": "Pergola supports and workers on top of a long timber platform on the seashore, palm trees behind"
+  },
+  "caption": {
+    "tr": "Platformun altı açık, dikmeler kıyı duvarına kadar sıralanmış. Üstte pergola için hazırlık sürüyor.",
+    "en": "The underside of the platform is open and the posts line up along the quay wall. Work on the pergola is under way above."
+  },
+  "seoFilename": "kiyida-yuksek-platform-pergola-tasiyicilari",
+  "tags": {
+    "type": [
+      "iskele",
+      "deck",
+      "pergola"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

@@ -1,0 +1,41 @@
+{
+  "source": "Pergola ve Kamelyalar/52.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Pembe binaya bitişik pergola ve kafes panel, çiçekli giriş",
+    "en": "Pergola with a lattice panel against a pink building and a flowered entrance"
+  },
+  "alt": {
+    "tr": "Pembe cepheli binaya bitişik ahşap pergola, yan kafes panel, ön tarafta çiçekli saksılar ve yeşil masa",
+    "en": "Timber pergola against a pink-fronted building with a side lattice panel, flowerpots and a green table in front"
+  },
+  "caption": {
+    "tr": "Pergola kirişleri üst üste binerek çok yönlü bir gölge oluşturuyor. Giriş çiçeklerle donatılmış.",
+    "en": "The pergola beams overlap into a shade structure in several directions. The entrance is dressed with flowers."
+  },
+  "seoFilename": "pembe-binaya-bitisik-pergola-kafes-panel-cicekli",
+  "tags": {
+    "type": [
+      "pergola",
+      "kafes / paravan"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras",
+      "giriş"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

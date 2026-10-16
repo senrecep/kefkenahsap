@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/13718.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Suya bakan deck ve ağaç gölgeleri",
+    "en": "Deck facing the water under tree shadows"
+  },
+  "alt": {
+    "tr": "Suya bakan açık renkli deck ve üzerine düşen ağaç gölgeleri, uçta ahşap korkuluk",
+    "en": "Pale deck facing the water with tree shadows falling across it and a timber railing at the end"
+  },
+  "caption": {
+    "tr": "Tahtalar çapraz bir açıyla uzanıyor ve korkuluğun ardında göl yüzeyi görünüyor. Yüzey gölgelerle desenlenmiş.",
+    "en": "The boards run at an angle and the water surface shows beyond the railing. Shadows pattern the surface."
+  },
+  "seoFilename": "suya-bakan-deck-ve-agac-golgeleri",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/13996.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz duvar ve cam kapı önünde deck zemin",
+    "en": "Deck floor in front of a white wall and glass door"
+  },
+  "alt": {
+    "tr": "Beyaz boyalı duvar ve kepenkli cam kapının önünde, yer fayansıyla birleşen cilalı deck",
+    "en": "Varnished deck in front of a white-painted wall and a shuttered glass door, joined to the tiled floor"
+  },
+  "caption": {
+    "tr": "Deck, evin duvarı boyunca uzanıyor ve fayans basamak alanıyla birleşiyor. Tahtaların rengi sarıdan kahverengiye değişiyor.",
+    "en": "The deck runs along the wall of the house and meets the tiled area. The board colour shifts from yellow to brown."
+  },
+  "seoFilename": "beyaz-duvar-onunde-cilali-deck-zemin",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

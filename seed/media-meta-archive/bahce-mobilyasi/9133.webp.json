@@ -1,0 +1,39 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/9133.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sarmaşıklı duvar önünde vernikli ahşap bank ve çıtalı masa",
+    "en": "Varnished timber bench and slatted table in front of an ivy wall"
+  },
+  "alt": {
+    "tr": "Sarmaşıkla kaplı duvarın önünde, karo zeminde duran kırmızımsı vernikli, dik sırtlı ahşap bank ve yanında çıtalı küçük masa",
+    "en": "A reddish-varnished timber bench with an upright slatted back and a small slatted table in front of an ivy wall"
+  },
+  "caption": {
+    "tr": "Bankın sırtlığı dikey çıtalardan oluşuyor. Yanındaki küçük çıtalı masa çay veya içecek koymak için uygun.",
+    "en": "The bench back is made of vertical slats. The small slatted table next to it is handy for tea or drinks."
+  },
+  "seoFilename": "sarmasikli-duvar-onunde-vernikli-bank-ve-citali-masa-karo",
+  "tags": {
+    "type": [
+      "bank",
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

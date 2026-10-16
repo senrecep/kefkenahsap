@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/14806.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Zincirli rulo mekanizmalı yeşil kapalı panjur",
+    "en": "Closed green shutter beside a chain-operated mechanism"
+  },
+  "alt": {
+    "tr": "Beyaz cephede kapalı duran yeşil dikey çıtalı panjur kanadı, siyah menteşeler ve yanında zincir sarkan bir mekanizma",
+    "en": "Closed green vertically slatted shutter leaf on a white facade"
+  },
+  "caption": {
+    "tr": "Panjur kanadı pencerenin üstünü örtüyor. Yanında çalışan bir zincir mekanizması sarkıyor.",
+    "en": "The shutter leaf covers the window. A chain mechanism hangs next to it."
+  },
+  "seoFilename": "zincirli-mekanizmali-yesil-kapali-panjur",
+  "tags": {
+    "type": [
+      "pencere / panjur"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

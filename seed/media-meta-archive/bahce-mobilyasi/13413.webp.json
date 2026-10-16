@@ -1,0 +1,38 @@
+{
+  "source": "Ireko-Teak/13413.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "L biçimli ahşap bank, dikey arkalıklı, taş duvar önünde",
+    "en": "L-shaped timber bench with a vertical-slat back in front of a stone wall"
+  },
+  "alt": {
+    "tr": "Sarmaşıklı koyu taş duvarın önünde, ince metal ayaklı, dikey arkalıklı L biçimli ahşap bank",
+    "en": "An L-shaped timber bench with a vertical-slat back on thin metal legs in front of a wall of dark stone covered in ivy"
+  },
+  "caption": {
+    "tr": "Bank köşeyi dönerek iki yöne uzanıyor. Arkalıktaki dikey tahtalar bankın hattını takip ediyor.",
+    "en": "The bench turns the corner and runs in two directions. The vertical boards of the back follow the line of the bench."
+  },
+  "seoFilename": "l-bicimli-ahsap-bank-ve-arkalik-metal-ayakli-tas-duvar",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,40 @@
+{
+  "source": "Ahsap Yapilar/12625.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "İki oturaklı ahşap salıncak, arkada oyun evi",
+    "en": "Wooden swing with two seats and a playhouse behind"
+  },
+  "alt": {
+    "tr": "Beton ayağa oturan ahşap salıncakta biri yeşil plastik, biri tahta iki oturak asılı; arkada yüksek zeminli oyun evi",
+    "en": "A wooden swing set in a concrete footing with two seats, one green plastic and one wooden plank"
+  },
+  "caption": {
+    "tr": "Küçük çocuklar için plastik, büyükler için tahta oturak takılmış. Salıncak, oyun evinin hemen yanında.",
+    "en": "A plastic seat is fitted for small children and a plank seat for older ones. The swing stands right next to the playhouse."
+  },
+  "seoFilename": "iki-oturakli-ahsap-salincak-arkada-oyun-evi",
+  "tags": {
+    "type": [
+      "salıncak",
+      "çocuk oyun evi"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

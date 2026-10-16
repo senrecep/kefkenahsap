@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/218.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş kaplı duvar üstünde yatay çıtalı çit",
+    "en": "Horizontal-slat fence above a stone-clad wall"
+  },
+  "alt": {
+    "tr": "Taş kaplı bir duvarın üstünde uzanan yatay çıtalı açık tonlu ahşap çit, önde ağaçlar ve çimde sıralı basamak tahtaları",
+    "en": "Light timber fence of horizontal slats above a stone-clad wall, with trees in front and stepping boards across the lawn"
+  },
+  "caption": {
+    "tr": "Çıtalar duvarı yükseltip bahçeyi dışarıdan örtüyor. Çimlikte tahta basamak sırası ilerliyor.",
+    "en": "The slats raise the wall and screen the garden. A line of stepping boards crosses the lawn."
+  },
+  "seoFilename": "tas-kapli-duvar-ustunde-yatay-citali-paravan-ve-basamak",
+  "tags": {
+    "type": [
+      "çit",
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

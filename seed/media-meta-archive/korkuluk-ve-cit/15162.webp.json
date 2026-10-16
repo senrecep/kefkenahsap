@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/15162.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölyede X çaprazlı ham ahşap çerçeveler, yanında merdiven ve kereste",
+    "en": "Raw timber X-braced frames in the workshop beside a ladder and timber"
+  },
+  "alt": {
+    "tr": "Atölyede duvara dayalı, ham renkli iki farklı boyda X çaprazlı ahşap çerçeve; yanda alüminyum merdiven ve kereste yığını",
+    "en": "Two raw-coloured timber frames of different sizes with X braces leaning against the wall in the workshop"
+  },
+  "caption": {
+    "tr": "Çerçevelerin içindeki X çaprazlar çıtalarla örülmüş. Zemin gri boyalı, arka planda istifli kalaslar var.",
+    "en": "The X braces inside the frames are made of slats. The floor is painted grey and stacked planks are in the background."
+  },
+  "seoFilename": "atolyede-x-capraz-ham-ahsap-cerceveler-merdiven-kereste",
+  "tags": {
+    "type": [
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

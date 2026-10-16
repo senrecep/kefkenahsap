@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/77.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Göl kıyısında kavisli gri deck platformu",
+    "en": "Curved grey deck platform on a lake shore"
+  },
+  "alt": {
+    "tr": "Göl kıyısında, tahtaları yaprak desenli döşenmiş kavisli gri tonlu ahşap deck platformu; çevresinde alçak ahşap duvar",
+    "en": "Curved grey-toned timber deck platform on a lake shore, with boards laid in a leaf pattern, a low timber wall around it"
+  },
+  "caption": {
+    "tr": "Platformun kenarını alçak bir ahşap duvar çeviriyor ve bitkilerle dolu bir şerit var. Uzakta suyun öte yakasında yerleşim görünüyor.",
+    "en": "A low timber wall surrounds the platform edge, with a planted strip. A settlement shows on the far side of the water."
+  },
+  "seoFilename": "goel-kiyisinda-kavisli-gri-tonlu-ahsap-deck-platformu-ve",
+  "tags": {
+    "type": [
+      "deck",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/1198.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deniz kenarında sardunyalı uzun çiçeklik",
+    "en": "Long planter with geraniums by the sea"
+  },
+  "alt": {
+    "tr": "Deniz kenarındaki taş döşeli alanda pembe sardunyalı uzun ahşap çiçeklik; arkada korkuluklu ahşap yapı",
+    "en": "Long timber planter with pink geraniums on a stone-paved area by the sea, a railed timber structure behind it"
+  },
+  "caption": {
+    "tr": "Çiçeklik köşeli, kalın tahtalı ve çiçeklerle dolu. Arkada denize uzanan korkuluklu ahşap iskele benzeri bir yapı var.",
+    "en": "The planter is square-cornered, made of thick boards and full of flowers. Behind it a railed timber structure extends towards the sea."
+  },
+  "seoFilename": "deniz-kenarinda-sardunyali-uzun-ahsap-ciceklik-korkuluklu",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

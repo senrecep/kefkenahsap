@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/12014.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ahşap kaplı duvar önünde yatay çıtalı çiçeklik",
+    "en": "Horizontal-slat planter in front of a timber-clad wall"
+  },
+  "alt": {
+    "tr": "Kilit taşlı zeminde, ahşap kaplı duvarın önünde duran yatay çıtalı vernikli çiçeklik",
+    "en": "Varnished planter with horizontal slats standing on interlocking paving in front of a timber-clad wall"
+  },
+  "caption": {
+    "tr": "Çiçekliğin çıtaları aralıklı döşenmiş, içi siyah astarlı. Arkadaki duvar da yatay ahşapla kaplı.",
+    "en": "The slats of the planter are laid with gaps and it has a black liner. The wall behind is also clad in horizontal timber."
+  },
+  "seoFilename": "kilit-tasli-zeminde-ahsap-kapli-duvar-onunde-yatay-citali",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

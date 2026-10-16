@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/5098.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Koyu, budaklı geniş tahta yüzeyi",
+    "en": "Dark knotty wide board surface"
+  },
+  "alt": {
+    "tr": "Koyu tonlu, budaklı ve damarları belirgin, eskitme görünümlü geniş ahşap tahta yüzeyinin yakın çekimi",
+    "en": "Close-up of the surface of a wide timber board in a dark tone, with knots, pronounced grain and an aged look"
+  },
+  "caption": {
+    "tr": "Yüzeyde derin lif izleri ve birkaç budak seçiliyor. Çekimde ortam ya da kullanım yeri görünmüyor.",
+    "en": "Deep fibre marks and a few knots can be seen on the surface. The shot shows no setting or place of use."
+  },
+  "seoFilename": "koyu-budakli-eskitme-gorunumlu-genis-ahsap-tahta-yuzeyi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.5
+}

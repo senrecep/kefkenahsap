@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/5524.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Plajda hasır çatılı ağaç çevresinde deck",
+    "en": "Deck around a thatch-roofed tree on a beach"
+  },
+  "alt": {
+    "tr": "Plajda hasır şemsiyeli bir ağacın çevresine uzanan deck; üstünde ahşap masalar ve sandalyeler, arkada şezlonglar ve deniz",
+    "en": "Deck stretching around a tree with a thatched parasol on a beach, with timber tables and chairs on it, and sun loungers"
+  },
+  "caption": {
+    "tr": "Deck kumsalın kenarında bir oturma alanı oluşturuyor. Arkada plaj şemsiyeleri ve karşı kıyıdaki yapılar seçiliyor.",
+    "en": "The deck forms a seating area at the edge of the sand. Beach parasols and buildings on the far shore show behind."
+  },
+  "seoFilename": "plajda-hasir-catili-agac-cevresinde-deck-ve-ahsap-masalar",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

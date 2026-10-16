@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/4928.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yatay çıtalı açık ahşap kaplama, lamba ve hoparlör",
+    "en": "Light horizontal-slat timber cladding with a lamp and a speaker"
+  },
+  "alt": {
+    "tr": "Camlı kapı yanında, aralıklı yatay çıtalarla kaplanmış açık tonlu ahşap duvar, üstünde duvar lambası ve beyaz hoparlör",
+    "en": "Light timber wall clad in horizontal slats with gaps beside a glass door, with a wall lamp and a white speaker on it"
+  },
+  "caption": {
+    "tr": "Çıtalar duvarı ve tavanı aynı çizgide kaplıyor, lamba ve hoparlör kaplamaya doğrudan monte edilmiş.",
+    "en": "The slats line the wall and ceiling in one line, and the lamp and speaker are mounted straight onto the cladding."
+  },
+  "seoFilename": "yatay-citali-acik-ahsap-kaplama-duvar-lamba-ve-hoparlor",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

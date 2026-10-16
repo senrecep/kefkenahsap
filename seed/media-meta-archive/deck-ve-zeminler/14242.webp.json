@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/14242.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çalılar arasında uzayan yeşil deck yolu",
+    "en": "Green deck path stretching between shrubs"
+  },
+  "alt": {
+    "tr": "Sık çalılar ve ağaç gövdeleri arasında, yeşile boyanmış dar bir deck yolu; ucunda bir hamak asılı",
+    "en": "Narrow green-painted deck path between dense shrubs and tree trunks, with a hammock hanging at the end"
+  },
+  "caption": {
+    "tr": "Yol uzun tahtalarla düz bir çizgide ilerliyor. Yüzey ıslak ve boya tahtaların damarını gizlemiyor.",
+    "en": "The path runs in a straight line on long boards. The surface is damp and the paint leaves the grain visible."
+  },
+  "seoFilename": "calilar-arasinda-uzayan-yesil-deck-yolu",
+  "tags": {
+    "type": [
+      "deck",
+      "yürüyüş yolu"
+    ],
+    "wood": [],
+    "setting": [
+      "orman / kır"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

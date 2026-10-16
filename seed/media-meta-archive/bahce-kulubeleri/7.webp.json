@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/7.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Tren biçimli ahşap oyun yapısı, merdiven ve kaydırak",
+    "en": "Train-shaped timber play structure with a staircase and slide"
+  },
+  "alt": {
+    "tr": "Lastik zeminli bir alanda, lokomotif biçiminde ahşap oyun yapısı; kenarında merdiven ve mavi kaydırak var",
+    "en": "A locomotive-shaped timber play structure on a rubber surface, with a staircase and a blue slide on its side"
+  },
+  "caption": {
+    "tr": "Oyun yapısı bir tren gibi tasarlanmış; gövde, tekerlekler ve çatı ahşaptan. Çocuklar merdivenle çıkıp kaydırakla iniyor.",
+    "en": "The structure is designed as a train, with body, wheels and roof in timber. Children climb the stairs and ride down the slide."
+  },
+  "seoFilename": "tren-bicimli-ahsap-oyun-parki-kaydirak",
+  "tags": {
+    "type": [
+      "çocuk oyun evi"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

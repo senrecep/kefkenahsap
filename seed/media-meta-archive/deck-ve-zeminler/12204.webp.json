@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12204.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Direk ve kiriş birleşimli yükseltilmiş deck iskeleti",
+    "en": "Raised deck frame with post-and-beam joints"
+  },
+  "alt": {
+    "tr": "Direk ve kiriş birleşimleriyle yükseltilmiş deck iskeleti, beton ayaklar ve arkada taş duvar",
+    "en": "Raised deck frame with post-and-beam joints, concrete footings and a stone wall behind"
+  },
+  "caption": {
+    "tr": "Her direk beton bir ayağa basıyor ve kirişlere cıvata ile bağlanıyor. Üstteki aralıklı kirişler tahta döşemesine hazır.",
+    "en": "Each post stands on its own concrete footing and is bolted to the beams. The spaced joists above are ready for boards."
+  },
+  "seoFilename": "direk-ve-kiris-birlesimli-yukseltilmis-deck-iskeleti",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

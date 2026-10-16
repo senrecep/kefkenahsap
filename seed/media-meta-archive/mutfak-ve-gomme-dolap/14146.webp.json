@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/14146.webp",
+  "category": "mutfak-ve-gomme-dolap",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölyede iki kapaklı alçak dolap",
+    "en": "Low two-door cabinet in the workshop"
+  },
+  "alt": {
+    "tr": "Atölyede beton zeminde duran iki kapaklı, açık renk alçak ahşap dolap; kapaklarda siyah menteşeler",
+    "en": "A low light timber two-door cabinet standing on a concrete floor in the workshop, with black hinges on the doors"
+  },
+  "caption": {
+    "tr": "Dolap alçak ve geniş, iki kapağı ince kulplu. Siyah menteşeler açık renk tahtayla güzel bir karşıtlık oluşturuyor.",
+    "en": "The cabinet is low and wide with two doors and slim handles. The black hinges make a good contrast with the light boards."
+  },
+  "seoFilename": "atolyede-iki-kapakli-acik-renk-alcak-ahsap-dolap",
+  "tags": {
+    "type": [
+      "gömme dolap / gardırop"
+    ],
+    "wood": [],
+    "setting": [
+      "atölyede üretim"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

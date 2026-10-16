@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/5512.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Plajda taş duvar yanında küçük ahşap kulübe",
+    "en": "Small timber hut by a stone wall on a beach"
+  },
+  "alt": {
+    "tr": "Kumsalda taş duvarın dibinde duran, çatısı levhalı küçük açık renk ahşap kulübe",
+    "en": "Small pale timber hut with a boarded roof standing on sand at the foot of a stone wall"
+  },
+  "caption": {
+    "tr": "Kulübe dar ve yüksek, kırmızı bir zemin parçasının üstünde duruyor. Arkada taş duvar, sağda deniz görünüyor.",
+    "en": "The hut is narrow and tall and stands on a red patch of flooring. A stone wall is behind it and the sea shows on the right."
+  },
+  "seoFilename": "plajda-tas-duvar-yaninda-kumda-duran-kucuk-acik-renk-ahsap",
+  "tags": {
+    "type": [
+      "bahçe kulübesi / depo"
+    ],
+    "wood": [],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

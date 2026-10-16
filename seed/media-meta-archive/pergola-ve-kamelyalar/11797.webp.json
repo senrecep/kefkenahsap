@@ -1,0 +1,37 @@
+{
+  "source": "Pergola ve Kamelyalar/11797.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Alttan görünen sık kirişli vernikli pergola",
+    "en": "Closely spaced varnished pergola beams seen from below"
+  },
+  "alt": {
+    "tr": "Alttan bakıldığında sık aralıklı vernikli ahşap pergola kirişleri, yanda uydu çanağı ve kıyıya bakan evler",
+    "en": "Looking up at closely spaced varnished timber pergola beams, with a satellite dish and houses facing the coast beside"
+  },
+  "caption": {
+    "tr": "Kirişler yatay çıtalar halinde sıralanmış ve aralarından gökyüzü görünüyor. Taşıyıcı kiriş duvarın üstünden uzanıyor.",
+    "en": "The beams run as horizontal slats with sky showing through. The main beam extends over the wall."
+  },
+  "seoFilename": "alttan-gorunen-sik-kirisli-vernikli-pergola",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

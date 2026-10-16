@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/7694.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Koyu kırmızı vernikli yatay çıtalı ahşap çatı ve yan panel",
+    "en": "Dark red varnished horizontal-slat roof and side panel"
+  },
+  "alt": {
+    "tr": "Yakından: koyu kırmızı vernikli yatay çıtalı ahşap çatı ve eğik duvara uyan yan panel, beyaz duvar",
+    "en": "Close view of a dark red varnished horizontal-slat timber roof and a side panel fitted to a sloping wall, with a white wall"
+  },
+  "caption": {
+    "tr": "Çıtalar yatay sıralanmış ve aralarından ışık geçiyor. Panel eğimli duvara paralel kesilmiş.",
+    "en": "The slats are laid horizontally with light passing between them. The panel is cut to run parallel to the sloping wall."
+  },
+  "seoFilename": "koyu-kirmizi-vernikli-yatay-citali-cati-yan-panel",
+  "tags": {
+    "type": [
+      "pergola",
+      "sundurma / saçak / carport"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/11763.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Eski ahşap çerçevesi çürümüş tekne güvertesi",
+    "en": "Boat deck with an old, rotted timber frame"
+  },
+  "alt": {
+    "tr": "Teknede kontrplak panelin yanında açılmış, çürüme izleri olan eski ahşap çerçeve ve enine kirişler",
+    "en": "Old timber frame with rot damage and cross beams exposed beside a plywood panel on a boat"
+  },
+  "caption": {
+    "tr": "Çerçevenin kenarındaki ahşap çürümüş. Güverte yenilenmeden önce eski yapı açılmış.",
+    "en": "The timber along the frame edge has rotted. The old structure has been opened up before the deck is renewed."
+  },
+  "seoFilename": "eski-ahsap-cercevesi-curumus-tekne-guvertesi",
+  "tags": {
+    "type": [
+      "tekne güvertesi"
+    ],
+    "wood": [],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.3
+}

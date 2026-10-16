@@ -1,0 +1,36 @@
+{
+  "source": "Ireko-Teak/14189.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yeşilliğin önünde ahşap tablalı masa takımı",
+    "en": "Timber-top table set in front of greenery"
+  },
+  "alt": {
+    "tr": "Bitkilerin önünde, ahşap tablalı masa ve gri metal sandalyelerden oluşan teras takımı",
+    "en": "Terrace set of a timber-top table and grey metal chairs in front of plants"
+  },
+  "caption": {
+    "tr": "Masanın tablası ahşap, ayakları ve sandalyeleri gri metal. Zemin seramik kaplı.",
+    "en": "The tabletop is timber, the legs and chairs are grey metal. The floor is tiled."
+  },
+  "seoFilename": "gri-metal-ayakli-ahsap-masa-sandalye-teras",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "balkon",
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/13219.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kulplu kontrol kapağı çevresinde yeni ve eski tahtalar",
+    "en": "New and old boards around a hatch with finger holes"
+  },
+  "alt": {
+    "tr": "Eski gri deck üzerinde yeni açık renkli tahtalar ve ortada iki delikle tutulan kontrol kapağı",
+    "en": "New pale boards across an old grey deck, with a hatch lifted by two finger holes in the middle"
+  },
+  "caption": {
+    "tr": "Kapak iki küçük delikten kaldırılıyor ve altındaki tesisata ulaşım sağlıyor. Çevresindeki tahtaların çoğu yenilenmiş.",
+    "en": "The cover lifts by two small holes and gives access to the services below. Most of the boards around it have been renewed."
+  },
+  "seoFilename": "kulplu-kontrol-kapagi-cevresinde-yeni-ve-eski-tahtalar",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,40 @@
+{
+  "source": "Korkuluk ve Cit/6430.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Direk sıraları arasında çaprazlı ahşap kapı",
+    "en": "Braced timber gate between rows of posts"
+  },
+  "alt": {
+    "tr": "Çamurlu arazide kalın direklere asılı çapraz kuşaklı yeşilimsi ahşap kapı, arkada direk sıraları ve beyaz bir ev",
+    "en": "Greenish braced timber gate hung from thick posts on a muddy plot, with rows of posts and a white house behind"
+  },
+  "caption": {
+    "tr": "Kapı çit hattının girişinde duruyor, yan direkler iki yanda uzayıp gidiyor.",
+    "en": "The gate stands at the entrance of the fence line, with the posts running away on both sides."
+  },
+  "seoFilename": "direk-sirasi-arasinda-capraz-ahsap-kapi-arkada-ev",
+  "tags": {
+    "type": [
+      "bahçe kapısı",
+      "çit"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

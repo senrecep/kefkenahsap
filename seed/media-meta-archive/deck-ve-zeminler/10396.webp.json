@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/10396.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deck kiriş çerçevesi, kısa takozlar ve çalılar",
+    "en": "Deck joist frame with short blocks and shrubs"
+  },
+  "alt": {
+    "tr": "Toprak üzerinde ahşap deck kiriş çerçevesi; kirişlerin arasında kısa takozlar, yanında çalılar",
+    "en": "Timber deck joist frame on soil with short blocks between the joists and shrubs alongside"
+  },
+  "caption": {
+    "tr": "Takozlar kirişleri birbirine sabitliyor. Çerçeve cam kapılara paralel uzanıyor.",
+    "en": "The blocks hold the joists to each other. The frame runs parallel to the glass doors."
+  },
+  "seoFilename": "toprak-uzerinde-ahsap-deck-kiris-cercevesi-kisa-takozlar-ve",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

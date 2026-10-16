@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/9137.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ahşap sehpa ve kolçaklı koltuklar, yakından",
+    "en": "Timber table and armchairs with arms up close"
+  },
+  "alt": {
+    "tr": "Fayans terasta, çıtalı uzun bir ahşap sehpa ile iki yanında kolçaklı",
+    "en": "On a tiled terrace, a long slatted timber table beside slatted-back armchairs with arms and a small side table"
+  },
+  "caption": {
+    "tr": "Koltukların sırtlıkları dik çıtalardan, kolçakları ahşap. Aralarındaki yan masa bir fincan veya kitap için yeterli.",
+    "en": "The chair backs are upright slats and the arms are timber. The side table between them is big enough for a cup or a book."
+  },
+  "seoFilename": "ahsap-sehpa-ve-kolcakli-koltuklar-yakin-cekim-fayans-teras",
+  "tags": {
+    "type": [
+      "oturma grubu",
+      "sehpa"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

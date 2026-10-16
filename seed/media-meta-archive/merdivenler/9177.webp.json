@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/9177.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Duvar kenarında çaprazlı merdiven ve selvi",
+    "en": "Cross-braced stairs beside a wall, with cypress"
+  },
+  "alt": {
+    "tr": "Ev duvarı kenarında çaprazlı korkuluklu ahşap merdiven; üstte köşeli korkuluklu sahanlık, yanda selvi çalıları",
+    "en": "Timber stairs with a cross-braced railing along a house wall"
+  },
+  "caption": {
+    "tr": "Merdiven düz duvar boyunca sahanlığa çıkıyor. Selvi çalıları ve tel çit alt kısmı örtüyor.",
+    "en": "The stairs run along the plain wall to the landing. Cypress shrubs and wire fencing screen the lower part."
+  },
+  "seoFilename": "duvar-kenarinda-caprazli-merdiven-ve-selvi-calilar",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

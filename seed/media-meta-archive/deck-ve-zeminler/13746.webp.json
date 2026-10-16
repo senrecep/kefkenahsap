@@ -1,0 +1,40 @@
+{
+  "source": "Deck ve Zeminler/13746.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Göl manzaralı deck, korkuluk ve koyu ahşap masa",
+    "en": "Lake-view deck with railing and a dark timber table"
+  },
+  "alt": {
+    "tr": "Göl manzaralı deck, ahşap korkuluk ve köşede koyu renkli ahşap masa",
+    "en": "Lake-view deck with a timber railing and a dark timber table in the corner"
+  },
+  "caption": {
+    "tr": "Korkuluk iki kenarı boydan boya çevirip köşede birleşiyor. Masa deck'in sağ köşesinde, gölün karşısında duruyor.",
+    "en": "The railing runs along two edges and meets at the corner. The table stands in the right-hand corner facing the lake."
+  },
+  "seoFilename": "gol-manzarali-deck-korkuluk-ve-koyu-ahsap-masa",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk",
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "su kenarı"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

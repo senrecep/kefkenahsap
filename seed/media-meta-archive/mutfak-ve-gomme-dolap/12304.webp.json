@@ -1,0 +1,37 @@
+{
+  "source": "Mobilya ve Cila/12304.webp",
+  "category": "mutfak-ve-gomme-dolap",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Koridor boyunca uzanan beyaz gömme dolap sırası",
+    "en": "A row of white built-in wardrobes along a hallway"
+  },
+  "alt": {
+    "tr": "Koridorun bir yanını kaplayan çok kapaklı, çerçeveli beyaz gömme dolap ve parke zemin",
+    "en": "Multi-door framed white built-in wardrobe lining one side of a hallway with a wood floor"
+  },
+  "caption": {
+    "tr": "Dolap koridor boyunca kesintisiz devam ediyor, kapaklar aynı çerçeve ölçüsünde. Zeminde ayakkabılar duruyor.",
+    "en": "The wardrobe runs along the hallway without a break and the doors share one frame size. Shoes sit on the floor in front."
+  },
+  "seoFilename": "koridor-boyunca-beyaz-gomme-dolap-sirasi",
+  "tags": {
+    "type": [
+      "gömme dolap / gardırop"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

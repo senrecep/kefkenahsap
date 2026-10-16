@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/1110.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bahçede deck üzerinde yüksek direkli pergola iskeleti",
+    "en": "Tall-post pergola frame over a garden deck"
+  },
+  "alt": {
+    "tr": "Palmiyeli bahçede ahşap deck üzerinde yükselen yüksek direkli pergola iskeleti ve payandalar",
+    "en": "Tall-post pergola frame rising over a timber deck in a garden with palm trees, with braces"
+  },
+  "caption": {
+    "tr": "Direkler deckin kenarında sıralanmış, kirişler payandalarla desteklenmiş. Önde bir bitki yaprakları görünüyor.",
+    "en": "The posts stand along the edge of the deck and the beams are braced. Plant leaves show in the foreground."
+  },
+  "seoFilename": "bahcede-deck-uzerinde-yuksek-direkli-pergola",
+  "tags": {
+    "type": [
+      "pergola",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

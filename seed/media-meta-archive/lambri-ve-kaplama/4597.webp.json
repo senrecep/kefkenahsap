@@ -1,0 +1,36 @@
+{
+  "source": "Ahsap Yapilar/4597.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ağaç arkasından beyaz ahşap bina, balkon ve kiremit saçak",
+    "en": "White timber building behind a tree with a balcony and a tiled eave"
+  },
+  "alt": {
+    "tr": "Çıplak bir ağacın ve palmiyenin arkasında, beyaz boyalı ahşap kaplamalı yapının uzun balkon korkuluğu",
+    "en": "Long balcony railing and a red-tiled eave on a white-painted timber-clad building behind a bare tree and a palm"
+  },
+  "caption": {
+    "tr": "Balkon cephenin üst katını boydan boya kaplıyor, altta kiremitli bir saçak var.",
+    "en": "The balcony runs across the upper floor of the facade, with a tiled eave below it."
+  },
+  "seoFilename": "agac-arkasindan-beyaz-ahsap-binanin-balkon-korkulugu-ve",
+  "tags": {
+    "type": [
+      "cephe kaplaması",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

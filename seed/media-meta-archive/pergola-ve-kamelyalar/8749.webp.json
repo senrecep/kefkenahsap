@@ -1,0 +1,37 @@
+{
+  "source": "Pergola ve Kamelyalar/8749.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Villa yanında vernikli pergola kirişleri, tuğla kolon ve deniz",
+    "en": "Varnished pergola beams beside a villa with a brick column and the sea"
+  },
+  "alt": {
+    "tr": "Villanın yanında vernikli pergola kirişleri, tuğla kolon, çalılık bahçe ve kenarda deniz",
+    "en": "Varnished pergola beams beside a villa, with a brick column, a shrubby garden and the sea at the edge"
+  },
+  "caption": {
+    "tr": "Kirişler eğimli bir hat boyunca yan yana sıralanıyor. Tuğla kolon üst kirişlerin altında yükseliyor.",
+    "en": "The beams are set side by side along a sloping line. A brick column rises beneath the upper beams."
+  },
+  "seoFilename": "villa-yaninda-vernikli-pergola-kirisleri-tugla-kolon-deniz",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

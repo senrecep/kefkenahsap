@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/3675.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuza uzanan kavisli yükseltilmiş platform",
+    "en": "Curved raised platform reaching into the pool"
+  },
+  "alt": {
+    "tr": "Çimenden havuza doğru uzanan, kavisli kenarlı ve yükseltilmiş açık renkli ahşap platform; ortada şemsiye direği",
+    "en": "Raised pale timber platform with curved edges reaching from the lawn towards the pool, with a parasol post in the middle"
+  },
+  "caption": {
+    "tr": "Platform ayaklar üzerinde duruyor, yan yüzeyleri kavisli tahtalarla kapatılmış. Dar bir deck geçidi platformu havuz kenarına bağlıyor.",
+    "en": "The platform stands on legs with its sides closed by curved boards. A narrow deck walkway links it to the pool edge."
+  },
+  "seoFilename": "havuza-uzanan-kavisli-yukseltilmis-platform-semsiye-diregi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

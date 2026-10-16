@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/12476.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yükseltilmiş deck'te korkuluk ve basamak, kırmızı-kahve boyalı",
+    "en": "Railing and step on a raised deck, painted red-brown"
+  },
+  "alt": {
+    "tr": "Taş zeminin yanında yükseltilmiş deck'in kırmızı-kahve boyalı ahşap korkuluğu ve basamak korkuluğu; arkada palmiyeler ve bina",
+    "en": "Red-brown painted timber railing and stair railing of a raised deck beside stone paving"
+  },
+  "caption": {
+    "tr": "Korkuluğun dikey çıtaları küpeşteyle sıralı bağlanıyor, basamak tarafında korkuluk eğimi izliyor. Deck'in altı yatay çıtalarla kapatılmış.",
+    "en": "The vertical slats of the railing are tied to the handrail in a row, and at the step side the railing follows the slope. The underside of the deck is closed with horizontal slats."
+  },
+  "seoFilename": "yukseltilmis-deckte-korkuluk-ve-basamak-kirmizi-kahve",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "merdiven",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

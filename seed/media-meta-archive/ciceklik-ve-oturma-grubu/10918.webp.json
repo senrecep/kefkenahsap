@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/10918.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Pembe zeminde uzun çiçeklik sırası",
+    "en": "Long row of planters on a pink floor"
+  },
+  "alt": {
+    "tr": "Pembe karo zeminde perspektifle uzayıp giden vernikli yatay çıtalı ahşap çiçeklik sırası",
+    "en": "Long row of varnished horizontally slatted timber planters receding in perspective on a pink tiled floor"
+  },
+  "caption": {
+    "tr": "Ön plandaki çiçeklik büyük, arkadakiler küçülerek sıralanıyor. Hepsi aynı vernik tonunda.",
+    "en": "The planter in front is large and the ones behind shrink into the distance. All share the same varnish tone."
+  },
+  "seoFilename": "uzun-sira-vernikli-ahsap-ciceklikler-pembe-zemin",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/13823.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Seramik zeminli yürüyüş yolu yanında korkuluklu ahşap pergola",
+    "en": "Railed timber pergola beside a ceramic-tiled walkway"
+  },
+  "alt": {
+    "tr": "Ahşap görünümlü seramik zeminli yürüyüş yolunun yanında korkuluklu ahşap pergola ve yeşil lamba direği",
+    "en": "Railed timber pergola beside a wood-effect ceramic-tiled walkway, with a green lamp post"
+  },
+  "caption": {
+    "tr": "Yol pergolanın önünden uzun bir hat boyunca uzanıyor. Korkuluk ve kirişler aynı koyu vernikle bitirilmiş.",
+    "en": "The path runs along the front of the pergola in a long line. The railing and beams share the same dark varnish."
+  },
+  "seoFilename": "seramik-zeminli-yuruyus-yolu-yaninda-pergola",
+  "tags": {
+    "type": [
+      "pergola",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/10538.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sundurma altından tahta kaplama ve kirişler",
+    "en": "Boarding and beams seen from under the porch"
+  },
+  "alt": {
+    "tr": "Sundurmanın altından görünen tahta kaplama ve kirişler; ileride çim bahçe ve komşu evler",
+    "en": "Roof boarding and beams seen from beneath the porch, with a lawn garden and neighbouring houses beyond"
+  },
+  "caption": {
+    "tr": "Çatı tahtaları kirişlere dik uzanıyor. İki ince direk ve köşe destekleri sundurmayı taşıyor.",
+    "en": "The roof boards run across the beams. Two slim posts and corner braces carry the porch."
+  },
+  "seoFilename": "sundurma-altindan-tahta-kaplama-ve-kirisler-cim-bahce",
+  "tags": {
+    "type": [
+      "sundurma / saçak / carport",
+      "tavan kaplaması / lambri"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

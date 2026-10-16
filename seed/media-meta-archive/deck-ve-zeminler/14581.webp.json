@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14581.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yeşil panjurlu girişe uzanan deck",
+    "en": "Deck reaching an entrance with green shutters"
+  },
+  "alt": {
+    "tr": "Yeşil panjurlu girişe doğru uzanan, çimen üzerinde L biçiminde cilalı koyu kahverengi deck",
+    "en": "Polished dark brown deck in an L shape across a lawn towards an entrance with green shutters"
+  },
+  "caption": {
+    "tr": "Deck çimeni boydan boya kesiyor ve eve kadar ulaşıyor. Girişin önündeki bitkili ahşap kutu deckle bütünleşiyor.",
+    "en": "The deck cuts across the lawn and reaches the house. The planter box before the entrance blends in with the deck."
+  },
+  "seoFilename": "yesil-panjurlu-girise-giden-l-seklinde-cilali-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

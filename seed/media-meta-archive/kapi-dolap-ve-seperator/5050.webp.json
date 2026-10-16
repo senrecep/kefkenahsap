@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/5050.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz kenarını çevreleyen yatay tahtalı ahşap perde",
+    "en": "Horizontal-board timber screen enclosing a poolside corner"
+  },
+  "alt": {
+    "tr": "Havuz kenarındaki bir köşeyi saran, açık renkli yatay emprenyeli tahtalarla örülmüş alçak ahşap paravan",
+    "en": "Low timber screen of pale horizontal pressure-treated boards enclosing a corner at a pool edge"
+  },
+  "caption": {
+    "tr": "Paravan tahta tahta yatay örülmüş, köşede kırılarak devam ediyor. Arkasındaki alanı gizliyor.",
+    "en": "The screen is built board by board and turns at the corner. It hides the area behind it."
+  },
+  "seoFilename": "havuz-kenarini-cevreleyen-yatay-tahtali-ahsap-perde",
+  "tags": {
+    "type": [
+      "kafes / paravan"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

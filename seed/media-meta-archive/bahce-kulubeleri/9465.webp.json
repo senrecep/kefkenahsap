@@ -1,0 +1,39 @@
+{
+  "source": "Kapi Dolap ve Seperator/9465.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Duvara yaslı yatay tahtalı depo, yeşil çatılı",
+    "en": "Horizontal-board shed leaning against a wall, with a green roof"
+  },
+  "alt": {
+    "tr": "Bina duvarına yaslanmış küçük ahşap depo; yeşil shingle çatılı, tek kapılı, önünde tahta zemin var",
+    "en": "A small timber shed against a building wall with a green shingle roof, a single door and a plank floor in front"
+  },
+  "caption": {
+    "tr": "Depo dar bir bahçe köşesine sığacak biçimde yapılmış. Yan duvar bina ile ortak, çatı suyu dışarı akıyor.",
+    "en": "The shed is built to fit a narrow garden corner. One side uses the building wall, and the roof drains outward."
+  },
+  "seoFilename": "duvara-yasli-yesil-catili-yatay-tahtali-depo",
+  "tags": {
+    "type": [
+      "bahçe kulübesi / depo"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

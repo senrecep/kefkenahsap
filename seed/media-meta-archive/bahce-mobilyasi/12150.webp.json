@@ -1,0 +1,38 @@
+{
+  "source": "Ireko-Teak/12150.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Uzun ahşap masa tablası, bir kısmı koyu boyanmış, diğeri ham",
+    "en": "Long timber table top, part painted dark and part still raw"
+  },
+  "alt": {
+    "tr": "Fayans zemin üzerinde duran uzun ahşap masa tablasının çıtalı yüzeyinde, bir bölüm koyu renkle işlenmiş",
+    "en": "On a tiled floor, the slatted surface of a long timber table top, one section treated dark and the rest raw"
+  },
+  "caption": {
+    "tr": "Tablanın yalnızca bir bölümüne koyu koruyucu sürülmüş, bu da renk farkını açıkça gösteriyor. İş yarım hâlde.",
+    "en": "Only one section of the top has had the dark finish, which shows the colour difference clearly. The job is part-way done."
+  },
+  "seoFilename": "uzun-ahsap-masa-tablasi-bir-kismi-koyu-boyali-digeri-ham",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "process",
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

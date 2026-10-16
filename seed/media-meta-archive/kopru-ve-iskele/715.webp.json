@@ -1,0 +1,40 @@
+{
+  "source": "Kopru ve Iskele/715.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar boyunca göle uzanan korkuluklu iskele yolu",
+    "en": "Railed pier walkway along the stone wall to the lake"
+  },
+  "alt": {
+    "tr": "Taş duvar yanında, çamurlu zeminden göle doğru ilerleyen ve iki yanı korkuluklu uzun ahşap iskele yolu",
+    "en": "Long timber pier walkway with railings on both sides running from muddy ground beside a stone wall towards the lake"
+  },
+  "caption": {
+    "tr": "Yol taş duvara paralel gidiyor, korkuluk tahtaları üç sıra. Sol tarafta kazı ve taş yığınları var.",
+    "en": "The walkway runs parallel to the stone wall with a three-rail railing. Excavation and stone heaps lie to the left."
+  },
+  "seoFilename": "tas-duvar-boyunca-goele-uzanan-korkuluklu-iskele-yolu",
+  "tags": {
+    "type": [
+      "iskele",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

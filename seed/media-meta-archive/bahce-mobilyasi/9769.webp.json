@@ -1,0 +1,35 @@
+{
+  "source": "Ireko-Teak/9769.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Griye solmuş, ters çevrilmiş sandalye oturağı",
+    "en": "Upturned chair seat weathered to grey"
+  },
+  "alt": {
+    "tr": "Ters çevrilmiş, rengi griye solmuş çıtalı ahşap sandalye oturağı",
+    "en": "Upturned slatted timber chair seat whose colour has faded to grey"
+  },
+  "caption": {
+    "tr": "Güneşte ve yağmurda kalan çıtalar gri bir ton almış. Yenileme öncesinden bir kare.",
+    "en": "The slats left in sun and rain have turned grey. A frame from before the renovation."
+  },
+  "seoFilename": "grilesmis-ters-cevrilmis-citali-sandalye-oturagi",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

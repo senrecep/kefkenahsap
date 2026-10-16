@@ -1,0 +1,40 @@
+{
+  "source": "Kapi Dolap ve Seperator/12651.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar kenarında uzayan koyu iroko dolap",
+    "en": "Dark iroko cabinet running along a stone wall"
+  },
+  "alt": {
+    "tr": "Parke taşlı yolun ve taş duvarın kenarında uzanan, dikey tahtalı kapaklı düz üstlü koyu kızıl kahve ahşap dolap",
+    "en": "Dark red-brown timber cabinet with a flat top and vertically boarded doors running along a cobbled path and stone wall"
+  },
+  "caption": {
+    "tr": "Dolap yolun kenarına dar bir hatta yerleşmiş. Üstü eğimsiz, kapaklar dikey tahtalı.",
+    "en": "The cabinet sits in a narrow line along the path. The top is flat and the doors are vertically boarded."
+  },
+  "seoFilename": "tas-duvar-kenarinda-uzayan-koyu-iroko-dolap",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "bahçe",
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

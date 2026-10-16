@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/13217.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Köşede korkuluklu deck, yeni ve eski tahta şeritleri",
+    "en": "Deck with a corner railing and bands of new and old boards"
+  },
+  "alt": {
+    "tr": "Deck üzerinde yeni açık renkli tahtalar eski gri tahtalara karışmış, köşede korkuluk görünüyor",
+    "en": "Deck on which new pale boards are mixed in with old grey ones, with a railing showing in the corner"
+  },
+  "caption": {
+    "tr": "Tahtaların bir kısmı yenilenmiş, yeşilimsi ve açık renkli duruyor. Yenilenmeyen tahtalar iki sıra boyunca uzanan koyu şerit oluşturuyor.",
+    "en": "Some of the boards have been renewed and look pale and greenish. The ones left in place form a dark band running two boards wide."
+  },
+  "seoFilename": "koside-korkuluklu-deck-yeni-ve-eski-tahta-seritleri",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

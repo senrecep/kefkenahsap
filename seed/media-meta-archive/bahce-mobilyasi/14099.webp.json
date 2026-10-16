@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14099.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Köşeye yapılmış koyu vernikli L biçimli ahşap bank",
+    "en": "Dark-varnished L-shaped timber bench built into a corner"
+  },
+  "alt": {
+    "tr": "Taş zeminli bahçe köşesine yerleştirilmiş koyu vernikli L biçimli ahşap bank; arkasında sık bitkiler ve tel çit var",
+    "en": "A dark-varnished L-shaped timber bench in a corner of a stone-paved garden, with dense shrubs and wire fencing behind"
+  },
+  "caption": {
+    "tr": "Bank iki kenara yaslanan bir L ile köşeyi dolduruyor. Dikey sırtlık hem bankı hem köşeyi çevreliyor.",
+    "en": "The bench fills the corner with an L-shape hugging both edges. The upright back runs along the bench and the corner."
+  },
+  "seoFilename": "kose-yapilmis-koyu-vernikli-l-bank-tas-zemin-bahce-citi",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

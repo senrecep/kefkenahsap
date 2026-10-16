@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/4653.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kulübe içinde ahşap raflar ve konsol destekler",
+    "en": "Timber shelves and bracket supports inside a shed"
+  },
+  "alt": {
+    "tr": "Kulübenin içinde, yatay tahta duvara monte edilmiş üç ahşap raf ve altlarındaki konsol destekler",
+    "en": "Three timber shelves fixed to a horizontally boarded wall inside a shed, with bracket supports beneath them"
+  },
+  "caption": {
+    "tr": "Raf tahtaları kalın, her birini köşeli iki ahşap destek taşıyor. Duvarlar açık renk yatay kaplama.",
+    "en": "The shelf boards are thick and each is carried by two angled timber brackets. The walls are pale horizontal cladding."
+  },
+  "seoFilename": "kulube-icinde-ahsap-raflar-ve-konsol-destekler",
+  "tags": {
+    "type": [
+      "bahçe kulübesi / depo",
+      "raf / kitaplık"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/13798.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sundurma çatı kirişleri ve korkuluğu",
+    "en": "Porch roof beams and railing"
+  },
+  "alt": {
+    "tr": "Çapraz geçmeli ahşap çatı kirişleri, kolon ve sundurmanın kenarındaki ahşap korkuluk",
+    "en": "Crossing timber roof beams, a post and the timber railing at the edge of the porch"
+  },
+  "caption": {
+    "tr": "Çatı altında kirişler çapraz bir kafes oluşturuyor. Önde koyu bir kolon, yanında korkuluğun yatay çıtaları duruyor.",
+    "en": "Under the roof the beams form a crossed lattice. A dark post stands in front with the horizontal rails of the railing beside it."
+  },
+  "seoFilename": "sundurma-cati-kirisleri-ve-korkuluk-onden-kolon",
+  "tags": {
+    "type": [
+      "sundurma / saçak / carport",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

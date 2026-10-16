@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/10969.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dikey çıtalı kahverengi kapılar arasında posta kutulu taş sütun",
+    "en": "Stone pier with a letterbox between brown vertical-slat gates"
+  },
+  "alt": {
+    "tr": "Küp taş döşeli yolda, siyah çerçeveli dikey çıtalı kahverengi kapı kanatları arasında lambalı taş sütun ve posta kutusu",
+    "en": "On a cobbled road, a stone pier with a lamp and letterbox between black-framed brown vertical-slat gate leaves"
+  },
+  "caption": {
+    "tr": "Sütunun solunda çift kanatlı, sağında tek kanatlı kapı duruyor. Çıtalar aralıklı, kapıların üstü düz.",
+    "en": "To the left of the pier is a double-leaf gate and to the right a single-leaf gate. The slats are spaced and the tops of the gates are flat."
+  },
+  "seoFilename": "dikey-citali-kahverengi-kapilar-arasinda-posta-kutulu-sutun",
+  "tags": {
+    "type": [
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Kapi Dolap ve Seperator/10451.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Aralıklı yatay çıtalı yüksek çift kapaklı dış dolap",
+    "en": "Tall double-door outdoor cabinet with spaced horizontal slats"
+  },
+  "alt": {
+    "tr": "Cam kapının yanındaki girişte yerden tavana uzanan, aralıklı yatay çıtalı çift kanatlı ahşap dolap ve önünde deck zemin",
+    "en": "Floor-to-ceiling double-door timber cabinet with spaced horizontal slats at an entrance beside a glass door"
+  },
+  "caption": {
+    "tr": "Kanatlar aralıklı çıtalarla örülü, içeriyi havalandırıyor. Dolap giriş boşluğuna ölçüyle yerleştirilmiş.",
+    "en": "The leaves are built of spaced slats that ventilate the inside. The cabinet is fitted to the entrance opening."
+  },
+  "seoFilename": "aralikli-yatay-citali-yuksek-cift-kapakli-dis-dolap",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş",
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14594.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş tabanlı kavisli ahşap bank, yanında ahşap masa",
+    "en": "Curved timber bench on a stone base with a wooden table beside it"
+  },
+  "alt": {
+    "tr": "Taş döşeme üzerinde, taş duvar kaideli, koyu vernikli kavisli ahşap bank uzanıyor",
+    "en": "A dark-varnished curved timber bench on a stone-walled base over stone paving"
+  },
+  "caption": {
+    "tr": "Bankın oturağı kavisli hat boyunca uzanıyor ve masayı yarım daire gibi sarıyor. Taş kaide ahşabı zeminden yüksekte tutuyor.",
+    "en": "The seat runs along the curve and wraps round the table in a half circle. The stone base keeps the timber raised off the ground."
+  },
+  "seoFilename": "tas-zeminde-tas-tabanli-kavisli-ahsap-bank-yaninda-ahsap",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

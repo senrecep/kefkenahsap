@@ -1,0 +1,40 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/8830.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dükkân girişinde açık renk çiçeklik, yanda mavi kasalar",
+    "en": "Light planter at a shop entrance with blue crates beside it"
+  },
+  "alt": {
+    "tr": "Dükkân girişinin önünde duran açık renkli yatay tahtalı ahşap çiçeklik; yanda mavi plastik kasalar",
+    "en": "Light timber planter with horizontal boards in front of a shop entrance, with blue plastic crates beside it"
+  },
+  "caption": {
+    "tr": "Çiçeklik dikdörtgen ve yüksek, içine siyah membran astar serilmiş. Girişte yazı ve cam kapı görünüyor.",
+    "en": "The planter is rectangular and tall, with a black membrane liner laid inside. A sign and a glass door are visible at the entrance."
+  },
+  "seoFilename": "dukkan-girisi-onunde-acik-renkli-yatay-tahtali-ahsap",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "giriş",
+      "ticari mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/9136.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Terasta turuncu kahve tonlu ahşap bank, sehpa ve koltuklar",
+    "en": "Orange-brown timber bench, table and armchairs on a terrace"
+  },
+  "alt": {
+    "tr": "Açık renkli teras zemininde, cam kapılı evin önünde, çıtalı ahşap bank",
+    "en": "On a pale terrace floor in front of a house with glazed doors, a slatted timber bench"
+  },
+  "caption": {
+    "tr": "Bank ve koltukların oturakları aralıklı çıtalardan, yağmur suyu aralıklardan süzülüyor. Takım aynı turuncu kahve tonda.",
+    "en": "The seats of the bench and chairs are spaced slats, so rainwater drains through. The whole set is in the same orange-brown tone."
+  },
+  "seoFilename": "teras-zemininde-turuncu-kahve-ahsap-bank-sehpa-ve-koltuklar",
+  "tags": {
+    "type": [
+      "oturma grubu",
+      "bank",
+      "sehpa"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

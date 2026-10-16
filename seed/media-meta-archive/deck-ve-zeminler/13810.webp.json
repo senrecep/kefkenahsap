@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/13810.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz boyunca uzanan eskimiş gri deck ve uzaktaki masa",
+    "en": "Worn grey deck running along the pool with a table in the distance"
+  },
+  "alt": {
+    "tr": "Havuz kenarında eskimiş gri deck ve kırmızı kahverengi korkuluk, uzakta bir masa ve sandalyeler",
+    "en": "Worn grey deck and a red-brown railing at the pool edge, with a table and chairs in the distance"
+  },
+  "caption": {
+    "tr": "Deck uzun bir şerit hâlinde havuzun yanında ilerliyor ve tahtalar güneşten solmuş. Korkuluğun gölgesi çizgiler hâlinde tahtalara düşüyor.",
+    "en": "The deck runs beside the pool in a long strip and the boards are sun-faded. The railing casts striped shadows across them."
+  },
+  "seoFilename": "havuz-boyunca-uzanan-eskimis-gri-deck-ve-uzaktaki-masa",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

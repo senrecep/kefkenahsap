@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/8634.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz metal ayaklı parlak vernikli bank",
+    "en": "Glossy varnished bench on white metal legs"
+  },
+  "alt": {
+    "tr": "Beyaz metal ayaklar üzerinde duran, parlak vernikli çıtalı ahşap bank",
+    "en": "Glossy varnished slatted timber bench on white metal legs"
+  },
+  "caption": {
+    "tr": "Banka çıtalardan oluşuyor, vernik parlak. Ayaklar beyaz metalden.",
+    "en": "The bench is made of slats with a glossy varnish. The legs are white metal."
+  },
+  "seoFilename": "beyaz-metal-ayakli-parlak-vernikli-citali-bank",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

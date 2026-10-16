@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14225.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz çevresinde beyaz çakıl ve koyu deck",
+    "en": "White pebbles and dark deck around the pool"
+  },
+  "alt": {
+    "tr": "Mavi havuzun çevresinde koyu kahverengi deck, çimenle arasında beyaz çakıl taşı şeridi",
+    "en": "Dark brown deck around a blue pool, separated from the lawn by a strip of white pebbles"
+  },
+  "caption": {
+    "tr": "Deck havuzun taş kenarına yaslanıyor ve çimene doğru çakılla ayrılıyor. Yağlı yüzey tahta damarlarını belli ediyor.",
+    "en": "The deck meets the stone pool edge and is divided from the lawn by pebbles. The oiled surface shows the grain."
+  },
+  "seoFilename": "havuz-cevresinde-beyaz-cakil-ve-koyu-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

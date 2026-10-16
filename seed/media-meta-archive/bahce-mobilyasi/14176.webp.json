@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/14176.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cilalı kollu ahşap sandalyeler",
+    "en": "Varnished timber armchairs"
+  },
+  "alt": {
+    "tr": "Gri zeminde yan yana duran, kolçaklı ve çıtalı sırtlı cilalı ahşap sandalyeler",
+    "en": "Varnished timber armchairs with slatted backs standing side by side on a grey floor"
+  },
+  "caption": {
+    "tr": "Sandalyeler kolçaklı, sırtları ve oturakları çıtalı. Yüzeyde cila ışığı yansıtıyor.",
+    "en": "The chairs have armrests and slatted backs and seats. The varnish catches the light."
+  },
+  "seoFilename": "kollu-ahsap-sandalyeler-atolye-cilali",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

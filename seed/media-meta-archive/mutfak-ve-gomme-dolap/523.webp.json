@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/523.webp",
+  "category": "mutfak-ve-gomme-dolap",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kulübe içinde ahşap raflar ve çift kanatlı kapı",
+    "en": "Timber shelves and a double door inside a shed"
+  },
+  "alt": {
+    "tr": "Tahta kaplı bir kulübenin içinde duvara yerleştirilmiş bölmeli ahşap raflar ve çift kanatlı kapı; raflarda boya kutuları",
+    "en": "Compartmented timber shelves set into the wall of a board-clad shed"
+  },
+  "caption": {
+    "tr": "Raflar duvar boyunca bölmeli sıralanmış, yanında tahta çift kanatlı bir kapı duruyor. Raflara boya kutuları dizilmiş.",
+    "en": "The shelves are laid out in compartments along the wall with a boarded double door beside them. Paint tins are lined up on the shelves."
+  },
+  "seoFilename": "kulube-icinde-ahsap-raflar-ve-cift-kanatli-kapi",
+  "tags": {
+    "type": [
+      "raf / kitaplık",
+      "bahçe kulübesi / depo"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.5
+}

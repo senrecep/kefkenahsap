@@ -1,0 +1,40 @@
+{
+  "source": "Korkuluk ve Cit/13313.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz çit yanında yeni ahşap merdiven ve küpeşte",
+    "en": "New timber stairs and handrail by a white fence"
+  },
+  "alt": {
+    "tr": "Beyaz çitin yanında açık renkli basamaklı ahşap merdiven ve küpeşte; arkada pembe evin cephesi",
+    "en": "Light-coloured timber stairs and handrail beside a white fence, with the front of a pink house behind"
+  },
+  "caption": {
+    "tr": "Merdiven yeni ve açık renkli, küpeşte kalın bir tahtayla yapılmış. Arkada beyaz çit ve ev görünüyor.",
+    "en": "The stairs are new and light in colour, with a handrail of thick timber. A white fence and a house show behind."
+  },
+  "seoFilename": "beyaz-cit-yaninda-yeni-ahsap-merdiven-ve-kupeste",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

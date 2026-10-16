@@ -1,0 +1,39 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/9938.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cephe önünde yatay tahtalı açık renkli ahşap perde ve eski dolap",
+    "en": "Pale horizontal-board timber screen beside an older cabinet"
+  },
+  "alt": {
+    "tr": "Parke taşlı bahçe girişinde köşeyi saran açık renkli yatay tahta perde ve sağında eskimiş, koyu kapaklı ahşap dolap",
+    "en": "Pale horizontal-board screen wrapping a corner at a paved garden gate, beside an older cabinet with dark doors"
+  },
+  "caption": {
+    "tr": "Yeni perde köşeyi tek hat olarak kapatıyor, yanındaki eski dolap rengi koyulaşmış. İkisi yan yana.",
+    "en": "The new screen closes the corner in one line, while the older cabinet beside it has darkened. The two stand together."
+  },
+  "seoFilename": "cephe-onunde-yatay-tahtali-acik-renkli-ahsap-perde-eski",
+  "tags": {
+    "type": [
+      "kafes / paravan",
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe",
+      "giriş"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

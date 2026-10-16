@@ -1,0 +1,41 @@
+{
+  "source": "Deck ve Zeminler/3697.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz kenarında kavisli ön yüzlü korkuluklu deck platformu",
+    "en": "Deck platform with a curved front and railing beside the pool"
+  },
+  "alt": {
+    "tr": "Çimin üzerinde, havuzun yanında yükseltilmiş, ön yüzü kavisli deck platformu ve çevresinde dikey çıtalı korkuluk",
+    "en": "Raised deck platform on the lawn beside a pool with a curved front and a vertical-slat railing around it"
+  },
+  "caption": {
+    "tr": "Platformun ön tarafı yarım daire gibi dışa taşıyor, korkuluk bu kavisi izliyor. Yan tarafta deck'e çıkan bir rampa var.",
+    "en": "The front of the platform bulges out like a half circle and the railing follows the curve. There is a ramp up to the deck on the side."
+  },
+  "seoFilename": "havuz-kenarinda-kavisli-on-yuzlu-korkuluklu-deck",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı",
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/11854.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Katlanır masa ve banklar, yukarıdan bakışla",
+    "en": "Folding table and benches from above"
+  },
+  "alt": {
+    "tr": "Yukarıdan bakıldığında çıtalı katlanır ahşap masa ve onun yanında iki koyu vernikli bank, karo zeminde görünüyor",
+    "en": "Seen from above, a slatted folding timber table with two dark-varnished benches beside it on a tiled floor"
+  },
+  "caption": {
+    "tr": "Masanın çıtaları sık dizilmiş, bankların oturağı tek parça tahtadan. Yeşil halı ve karo zemin yan yana.",
+    "en": "The slats of the table are closely spaced and the bench seats are single boards. A green mat and tiles lie side by side."
+  },
+  "seoFilename": "katlanir-masa-ve-banklar-ustten-gorunum-teras",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

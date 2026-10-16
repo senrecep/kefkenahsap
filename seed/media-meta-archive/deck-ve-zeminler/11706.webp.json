@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/11706.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz kolonun yanında turuncu tonlu deck",
+    "en": "Orange-toned deck beside a white column"
+  },
+  "alt": {
+    "tr": "Çimen kenarında, beyaz kolonun yanında uzanan turuncu kahverengi dikdörtgen ahşap deck",
+    "en": "Orange-brown rectangular timber deck beside a white column at the edge of a lawn"
+  },
+  "caption": {
+    "tr": "Tahtalar tek yönde ve düzgün aralıkla döşenmiş. Arkada budanmış bir ağaç ve çalılar var.",
+    "en": "The boards run in one direction with even gaps. A trimmed tree and shrubs stand behind."
+  },
+  "seoFilename": "beyaz-kolon-yaninda-turuncu-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

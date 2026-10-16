@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/12957.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Vernikli uzun sedir, arkasında cam kapı ve taş duvar",
+    "en": "Long varnished day-bed with a glass door and stone wall behind"
+  },
+  "alt": {
+    "tr": "Teras karosu üzerinde, ucunda yüksek sırtlığı olan uzun vernikli ahşap sedir; arkasında taş kaplı duvar ve cam kapı",
+    "en": "A long varnished timber day-bed with a taller back at its end on terrace tiles"
+  },
+  "caption": {
+    "tr": "Sedirin boyu kapının yanından terasın ortasına doğru uzanıyor. Sırtlık yalnızca bir uçta yükseliyor.",
+    "en": "The day-bed runs from beside the door toward the middle of the terrace. The back rises only at one end."
+  },
+  "seoFilename": "dikey-cekim-vernikli-uzun-sedir-cam-kapi-tas-duvar",
+  "tags": {
+    "type": [
+      "bank",
+      "şezlong"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,39 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/13864.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kırmızı yapraklı ağacın altında minderli kanepe, koltuk ve sehpa",
+    "en": "Cushioned sofa, armchair and table under a red-leaved tree"
+  },
+  "alt": {
+    "tr": "Mavi-gri minderi ve renkli yastıkları olan çıtalı kanepe, yanında koltuk ve alçak sehpa karo terasta",
+    "en": "A slatted sofa with a blue-grey cushion and coloured pillows"
+  },
+  "caption": {
+    "tr": "Minder ve yastıklarla kanepe oturmaya hazır. Koltuk ve sehpa aynı çıtalı yapıda, takım bir bütün oluşturuyor.",
+    "en": "With the cushion and pillows, the sofa is ready to sit on. The armchair and table share the same slatted build, so the set reads as a whole."
+  },
+  "seoFilename": "kirmizi-yaprakli-agac-altinda-citali-koltuk-sehpa-minderli",
+  "tags": {
+    "type": [
+      "oturma grubu",
+      "sehpa"
+    ],
+    "wood": [],
+    "setting": [
+      "teras",
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

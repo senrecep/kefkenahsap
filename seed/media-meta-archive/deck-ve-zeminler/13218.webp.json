@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/13218.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çapraz korkuluklu yolda kapaklı kontrol kapağı",
+    "en": "Inspection hatch in a deck walkway with a cross-braced railing"
+  },
+  "alt": {
+    "tr": "Çapraz korkuluklu deck yolu, tahtalara oturtulmuş kontrol kapağı ve yeni ile eski tahtalar",
+    "en": "Deck walkway with a cross-braced railing, an inspection hatch set into the boards, and a mix of new and old boards"
+  },
+  "caption": {
+    "tr": "Kontrol kapağı deck tahtalarıyla aynı çizgide kalacak şekilde yerleştirilmiş ve yeni tahtalar çevresinde sıralanmış. Yolun yanındaki korkuluk ahşap çıtalarla çaprazlanmış.",
+    "en": "The hatch is set flush with the deck boards and the new boards run round it. The railing beside the walkway is braced with crossed timber."
+  },
+  "seoFilename": "capraz-korkuluklu-yolda-kapakli-kontrol-kapagi",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

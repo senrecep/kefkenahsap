@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/10517.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yanık efektli ahşap koltuğun yakın çekimi",
+    "en": "Close-up of a charred-effect timber armchair"
+  },
+  "alt": {
+    "tr": "Yuvarlak köşeli, geniş oturaklı yanık efektli ahşap koltuğun önden ve yakından görünüşü",
+    "en": "A close frontal view of a wide, round-cornered timber armchair with a charred effect"
+  },
+  "caption": {
+    "tr": "Koltuk kalın tahtalardan çakılmış, köşeleri yuvarlatılmış. Yüzey koyulaştırılmış, odun deseni açıkta.",
+    "en": "The chair is built from thick boards with rounded corners. The surface is darkened, leaving the wood pattern visible."
+  },
+  "seoFilename": "yanik-efektli-ahsap-koltuk-yakin-cekim",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

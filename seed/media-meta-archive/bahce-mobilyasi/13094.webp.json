@@ -1,0 +1,35 @@
+{
+  "source": "Ireko-Teak/13094.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beton kavisli yapıda dikey ahşap arkalıklı bank, beton kenar ve toprak",
+    "en": "Bench with a vertical timber back on a curved concrete structure"
+  },
+  "alt": {
+    "tr": "Kavisli bir beton yapının üzerine oturtulmuş, dikey ahşap arkalıklı ve ahşap kaplı oturaklı bank",
+    "en": "A bench with a vertical timber back and timber-covered seat set on a curved concrete structure"
+  },
+  "caption": {
+    "tr": "Ahşap kaplama betonun üzerine oturtuluyor, çevre henüz toprak ve beton. Bank ve arkalığı tamamlanmış, çevre düzenlemesi bekliyor.",
+    "en": "The timber cladding is set over the concrete while the surroundings are still soil and concrete. The bench and its back are done and the landscaping is still to come."
+  },
+  "seoFilename": "beton-kavisli-yapida-dikey-ahsap-arkalikli-bank-beton-kenar",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

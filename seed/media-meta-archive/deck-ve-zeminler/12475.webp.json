@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/12475.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yeşil tenteli bahçe salıncağı olan boyalı deck",
+    "en": "Painted deck with a green-canopied garden swing"
+  },
+  "alt": {
+    "tr": "Kırmızımsı boyalı ahşap deck üzerinde yeşil tenteli bahçe salıncağı, kenarda bahçe lambası",
+    "en": "Reddish painted timber deck with a garden swing under a green canopy and a garden light at the edge"
+  },
+  "caption": {
+    "tr": "Salıncak ve oturma takımı deck üzerinde yan yana duruyor, deck çimenden bir basamak yüksek. Köşede ağaç gövdesi var.",
+    "en": "The swing and a seating set stand side by side on the deck, which sits a step above the lawn. A tree trunk stands in the corner."
+  },
+  "seoFilename": "yesil-tenteli-bahce-salincagi-olan-boyali-deck",
+  "tags": {
+    "type": [
+      "deck",
+      "salıncak"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

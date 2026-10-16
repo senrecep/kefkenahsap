@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/11446.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölyede kenar çıtalı deck modülü yapımı",
+    "en": "Building an edge-battened deck module in the workshop"
+  },
+  "alt": {
+    "tr": "Atölyede, arkada tezgâh dururken yapılan kenarları çıtalı ahşap deck modülü",
+    "en": "Timber deck module with battened edges being built in the workshop, with a work bench behind"
+  },
+  "caption": {
+    "tr": "Modülün yan kenarları dikey çıtalarla sınırlanmış, tahtalar vernikli. Arkada aletli bir çalışma tezgâhı var.",
+    "en": "The sides of the module are bordered with upright battens and the boards are varnished. A work bench with tools stands behind."
+  },
+  "seoFilename": "atolyede-tezgah-arka-plandayken-kenar-citali-ahsap-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

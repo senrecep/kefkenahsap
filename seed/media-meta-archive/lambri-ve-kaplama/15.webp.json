@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/15.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Küçük ahşap odada açık renk lambri duvar ve pencere",
+    "en": "Light panelled walls and a window in a small timber room"
+  },
+  "alt": {
+    "tr": "Küçük bir odanın duvarlarını ve tavanını kaplayan açık renkli lambri, ortada beyaz çerçeveli küçük pencere, ahşap zemin",
+    "en": "Light panelling covering the walls and ceiling of a small room, with a small white-framed window in the middle"
+  },
+  "caption": {
+    "tr": "Lambri şeritler duvar ve tavanda aynı yönde, odanın tamamı tek tonda.",
+    "en": "The panelling strips run in the same direction on walls and ceiling, giving the whole room a single tone."
+  },
+  "seoFilename": "kucuk-ahsap-odada-acik-renk-lambri-duvar-ve-pencere",
+  "tags": {
+    "type": [
+      "iç duvar kaplaması"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

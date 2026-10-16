@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/2330.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beton duvar üzerinde koyu pergola kirişleri, şehir manzaralı",
+    "en": "Dark pergola beams on a concrete wall with a view over the town"
+  },
+  "alt": {
+    "tr": "Sıvalı beton duvarın üstüne yerleştirilmiş koyu renk ahşap kirişler, arkada şehir ve tepeler",
+    "en": "Dark timber beams resting on a rendered concrete wall, with a town and hills in the background"
+  },
+  "caption": {
+    "tr": "Kirişler duvar üzerinden dışarı taşıyor ve gölgeleri duvara düşüyor. Çatı henüz tamamlanmamış.",
+    "en": "The beams project out over the wall and cast their shadows on it. The roof is not finished yet."
+  },
+  "seoFilename": "beton-duvar-uzerinde-koyu-pergola-kirisleri",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.55
+}

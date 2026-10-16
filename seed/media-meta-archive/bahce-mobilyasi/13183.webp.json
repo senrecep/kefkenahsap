@@ -1,0 +1,35 @@
+{
+  "source": "Ireko-Teak/13183.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Odun fırınlı, çıtalı dolaplı dış mutfak",
+    "en": "Outdoor kitchen with a wood-fired oven and slatted cabinets"
+  },
+  "alt": {
+    "tr": "Odun fırını, ocak ve çıtalı ahşap kaplı dolaplardan oluşan, deck zeminli dış mutfak",
+    "en": "Outdoor kitchen on a deck made up of a wood-fired oven, a stove and cabinets clad in timber slats"
+  },
+  "caption": {
+    "tr": "Mutfak tezgâhı duvar boyunca uzanıyor, arkada dikey çıtalı bir panel var. Dolapların biri açık raf, diğeri paslanmaz kapaklı.",
+    "en": "The kitchen counter runs along the wall with a vertically slatted panel behind. One cabinet is an open shelf and another has stainless steel doors."
+  },
+  "seoFilename": "odun-firini-ocak-ve-citali-ahsap-kapli-dolaplardan-dis",
+  "tags": {
+    "type": [
+      "dış mutfak / mangal alanı"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.6
+}

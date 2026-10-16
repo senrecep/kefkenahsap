@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/10110.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Üstten ahşap merdiven korkuluğu, yan bahçe ve çit",
+    "en": "Timber stair railing from above with a side garden and fence"
+  },
+  "alt": {
+    "tr": "Üstten görünen ahşap merdiven korkuluğu, kalın başlık direği, aşağıda çimlik, servi sırası ve tel çit",
+    "en": "Timber stair railing seen from above with a thick newel post, and a lawn, cypress row and wire fence below"
+  },
+  "caption": {
+    "tr": "Üstten bakışta korkuluk basamakları yan bahçeye doğru izliyor.",
+    "en": "Seen from above, the railing follows the steps towards the side garden."
+  },
+  "seoFilename": "ustten-ahsap-merdiven-korkugu-yan-bahce-ve-cit",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "merdiven"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

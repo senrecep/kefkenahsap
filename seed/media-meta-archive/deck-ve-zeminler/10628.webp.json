@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/10628.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimde deck kiriş çerçevesi, ilk tahtalar",
+    "en": "Deck joist frame on the lawn, first boards"
+  },
+  "alt": {
+    "tr": "Çimen üzerinde ahşap deck kiriş çerçevesi ve alt tarafta döşenmeye başlanan yeni deck tahtaları",
+    "en": "Timber deck joist frame on the lawn with the first new deck boards starting at the bottom"
+  },
+  "caption": {
+    "tr": "Kirişler çimin üstünde dikdörtgen bir çerçeve oluşturuyor. Tahtalar önden itibaren döşenmeye başlamış.",
+    "en": "The joists form a rectangular frame over the grass. Boards have started to be laid from the front."
+  },
+  "seoFilename": "cimen-uzerinde-ahsap-deck-kiris-cercevesi-ve-yeni-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

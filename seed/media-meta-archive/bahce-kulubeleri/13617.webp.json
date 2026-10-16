@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/13617.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Önü sundurmalı geniş köpek kulübesi",
+    "en": "Wide dog house with a porch in front"
+  },
+  "alt": {
+    "tr": "Önü sundurmalı, vernikli geniş köpek kulübesi; çatı bir direkle taşınıyor, zemin tahta kaplı",
+    "en": "Wide varnished dog house with a porch in front, the roof carried on a post and the floor boarded"
+  },
+  "caption": {
+    "tr": "Kulübenin önünde çatının uzanıp gölgelediği açık bir platform var. İçeri açılan giriş çerçeveli.",
+    "en": "In front of the house is an open platform shaded by the extended roof. The entrance into the house is framed."
+  },
+  "seoFilename": "onu-sundurmali-vernikli-genis-kopek-kulubesi-acik-zemin",
+  "tags": {
+    "type": [
+      "köpek kulübesi"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

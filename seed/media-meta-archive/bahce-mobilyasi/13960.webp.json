@@ -1,0 +1,38 @@
+{
+  "source": "Ireko-Teak/13960.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Panjur önünde fayans terasta iki ahşap sandalye ve sehpa",
+    "en": "Two timber chairs and a small table on a tiled terrace in front of a shutter"
+  },
+  "alt": {
+    "tr": "Açık renkli fayans terasta, kapalı beyaz rulo panjurun önünde",
+    "en": "On a pale tiled terrace in front of a closed white roller shutter"
+  },
+  "caption": {
+    "tr": "Sandalyeler geriye yaslanabiliyor, aralarındaki sehpa fincan veya kitap için yeterli. Küçük bir köşe oturma düzeni.",
+    "en": "The chairs recline, and the table between them is enough for a cup or a book. It makes a small corner seating arrangement."
+  },
+  "seoFilename": "panjur-onunde-fayans-terasta-iki-ahsap-sandalye-ve-sehpa",
+  "tags": {
+    "type": [
+      "oturma grubu",
+      "sehpa"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

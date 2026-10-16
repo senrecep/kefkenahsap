@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/12971.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Köpek kulübesinin yeşil çatısı, yakından",
+    "en": "Green roof of a dog house, close up"
+  },
+  "alt": {
+    "tr": "Köpek kulübesinin yeşil shingle çatısı ve altındaki koyu vernikli yan yüzey, yakın çekim",
+    "en": "Close-up of the green shingle roof of a dog house and the dark varnished side below it"
+  },
+  "caption": {
+    "tr": "Çatının balık pulu desenli yeşil parçaları sıra sıra döşenmiş, çatı kenarında ince bir ahşap çıta var. Duvar tahtaları koyu cilalı.",
+    "en": "The green fish-scale pieces of the roof are laid row by row with a thin timber batten at the roof edge. The wall boards have a dark polish."
+  },
+  "seoFilename": "kopek-kulubesi-yesil-shingle-cati-ve-vernikli-yan-yuzey",
+  "tags": {
+    "type": [
+      "köpek kulübesi"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

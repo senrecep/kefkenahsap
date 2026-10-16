@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/13806.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kavisli pergola kirişleri, ahşap balkon korkuluğu ve yeşil panjurlu bina",
+    "en": "Curved pergola beams, timber balcony rail and a building with green shutters"
+  },
+  "alt": {
+    "tr": "Kavisli pergola kirişleri, ahşap balkon korkuluğu ve yeşil panjurlu pembe renkli bina",
+    "en": "Curved pergola beams, a timber balcony railing and a pink building with green shutters"
+  },
+  "caption": {
+    "tr": "Kirişler kavis çizerek çatıya yükseliyor. Balkon korkuluğu kalın dikmeli ve vernikli.",
+    "en": "The beams rise in an arc toward the roof. The balcony railing has thick uprights and a varnished finish."
+  },
+  "seoFilename": "kavisli-pergola-kirisleri-ahsap-balkon-korkulugu",
+  "tags": {
+    "type": [
+      "pergola",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

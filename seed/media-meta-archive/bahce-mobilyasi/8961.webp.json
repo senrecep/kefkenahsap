@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/8961.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sandalyenin oturak ve arkalık çıtaları",
+    "en": "Seat and back slats of a chair"
+  },
+  "alt": {
+    "tr": "Ahşap sandalyenin oturak ve arkalık çıtalarına yakın açıdan bakış",
+    "en": "Close angle on the seat and back slats of a timber chair"
+  },
+  "caption": {
+    "tr": "Çıtalar eşit aralıkla sıralanmış. Kolçak oturağın yanından geçiyor.",
+    "en": "The slats are evenly spaced. The armrest runs along the side of the seat."
+  },
+  "seoFilename": "ahsap-sandalye-oturak-ve-arkalik-citalari-yakin-aci",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

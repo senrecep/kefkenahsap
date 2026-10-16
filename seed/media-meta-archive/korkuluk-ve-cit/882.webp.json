@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/882.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Restoran terasında çapraz çıtalı ahşap korkuluk, yığılmış sandalyeler",
+    "en": "Cross-slat timber railing on a restaurant terrace, stacked chairs"
+  },
+  "alt": {
+    "tr": "Restoran terasının kenarında çapraz çıtalı açık renk ahşap korkuluk; önde üst üste duran beyaz plastik sandalyeler",
+    "en": "Light timber cross-slat railing along the edge of a restaurant terrace"
+  },
+  "caption": {
+    "tr": "Korkuluk teras zemininin kenarını çevreliyor, sık dikmeleriyle çapraz çıtaları bağlıyor. Terasın içinde masalar görünüyor.",
+    "en": "The railing runs round the edge of the terrace, with closely set posts tied by crossed slats. Tables are visible inside the terrace."
+  },
+  "seoFilename": "restoran-terasinda-capraz-citali-korkuluk-sandalyeler",
+  "tags": {
+    "type": [
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "teras",
+      "ticari mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

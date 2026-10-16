@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/17.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Lambri kaplı küçük tuvalet odası",
+    "en": "Small toilet room lined with panelling"
+  },
+  "alt": {
+    "tr": "Duvarları yatay lambriyle kaplanmış dar bir tuvalet odası, klozet, lavabo ve tavandan sarkan ampul",
+    "en": "Narrow toilet room with walls lined in horizontal panelling, with a toilet, a basin and a bulb hanging from the ceiling"
+  },
+  "caption": {
+    "tr": "Lambri şeritler duvarların tamamını kaplıyor. Alt kısımda tesisat henüz tamamlanmamış.",
+    "en": "The panelling covers the entire wall. The plumbing at the bottom is not yet finished."
+  },
+  "seoFilename": "lambri-kapli-kucuk-tuvalet-odasi",
+  "tags": {
+    "type": [
+      "iç duvar kaplaması"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

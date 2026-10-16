@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/1024.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş basamakların yanında geniş bir deck terası kuruluyor",
+    "en": "A wide deck terrace going up beside stone steps"
+  },
+  "alt": {
+    "tr": "Kıyıdaki yamaçta taş basamakların yanında kurulan geniş teras, uzun dikmeler, yeni emprenyeli deck zemini ve ustalar",
+    "en": "Wide terrace being built on a coastal slope beside stone steps, with tall posts and a new pressure-treated deck floor"
+  },
+  "caption": {
+    "tr": "Dikmeler yerinde, zemin tahtaları döşenmeye başlamış. Yamacın eğimine uyan geniş bir platform kuruluyor.",
+    "en": "The posts are in and the floor boards are going down. A wide platform is being built to suit the slope."
+  },
+  "seoFilename": "tas-basamaklarin-yaninda-genis-deck-terasi-kuruluyor",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı",
+      "ticari mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

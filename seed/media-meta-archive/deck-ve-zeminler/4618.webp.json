@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/4618.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz kenarında deck tahtalarının çakılması",
+    "en": "Deck boards being fixed beside a pool"
+  },
+  "alt": {
+    "tr": "Havuzun taş kenarına kadar döşenmiş açık renkli deck tahtaları; iki usta tahtaları sabitliyor, yerde matkap ve uzatma kablosu",
+    "en": "Pale deck boards laid right up to the stone edge of a pool, with two craftsmen fixing boards and a drill"
+  },
+  "caption": {
+    "tr": "Çalışanlar karenin üst kısmında kısmen görünüyor. Tahtalar havuz kenarının köşesine göre kesilmiş.",
+    "en": "The workers are only partly visible at the top of the frame. The boards have been cut to the corner of the pool edge."
+  },
+  "seoFilename": "havuz-kenarinda-deck-tahtasi-cakan-iki-isci",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

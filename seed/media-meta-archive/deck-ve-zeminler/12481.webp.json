@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12481.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yeşil boyalı eski deck iskeleti ve döküntülü zemin",
+    "en": "Old green-painted deck frame over littered ground"
+  },
+  "alt": {
+    "tr": "Taş sütun kenarında, yeşil boyası dökülen eski ahşap deck alt iskeleti; zeminde döküntü ve kuru yapraklar",
+    "en": "Old timber deck substructure with flaking green paint beside a stone pillar, with debris and dry leaves on the ground"
+  },
+  "caption": {
+    "tr": "Kirişlerin bazıları çürümüş ve yerinden oynamış. Yenileme öncesinde bu eski iskeletin sökülmesi gerekiyor.",
+    "en": "Some of the joists are rotten and out of line. This old frame has to come out before the renewal."
+  },
+  "seoFilename": "yesil-boyali-eski-deck-iskeleti-dokuntulu-zemin",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

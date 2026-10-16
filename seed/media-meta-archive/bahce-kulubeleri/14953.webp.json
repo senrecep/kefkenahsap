@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/14953.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kapısı açık kulübe, içinde elektrik panosu",
+    "en": "Shed with its door open and an electrical panel inside"
+  },
+  "alt": {
+    "tr": "Kapısı açık koyu vernikli ahşap kulübe; içinde pano ve cihazlar, önünde ahşap sekü",
+    "en": "Dark varnished timber shed with the door open, with a panel and equipment inside and a timber step platform in front"
+  },
+  "caption": {
+    "tr": "Kulübenin kapısı dışarı doğru açık, içi koyu. Kapının önünde tahta bir sekü uzanıyor, arkada çam ağaçları var.",
+    "en": "The door of the shed swings outwards and the inside is dark. A boarded step lies in front of the door with pine trees behind."
+  },
+  "seoFilename": "kapisi-acik-koyu-vernikli-ahsap-kulube-icinde-elektrik",
+  "tags": {
+    "type": [
+      "bahçe kulübesi / depo"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

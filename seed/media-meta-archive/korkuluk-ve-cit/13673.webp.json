@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/13673.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kulübeyi saran piket çit, kumlu zemin",
+    "en": "Picket fence around a kennel on sandy ground"
+  },
+  "alt": {
+    "tr": "Kumlu zeminde, taş duvarın önünde yeşil çatılı kulübeyi çevreleyen bal rengi çıtalı çit",
+    "en": "Honey-toned slatted fence around a green-roofed kennel on sandy ground in front of a stone wall"
+  },
+  "caption": {
+    "tr": "Çit köşeden dönerek kulübenin iki yanını çevreliyor.",
+    "en": "The fence turns at the corner and encloses two sides of the kennel."
+  },
+  "seoFilename": "kulube-etrafinda-piket-cit-kum-zemin",
+  "tags": {
+    "type": [
+      "çit",
+      "köpek kulübesi"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

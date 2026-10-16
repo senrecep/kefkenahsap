@@ -1,0 +1,42 @@
+{
+  "source": "Deck ve Zeminler/5428.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çapraz korkuluk önünde kalın ahşap bank ve masa, yakından",
+    "en": "Thick timber bench and table in front of a cross-braced railing, up close"
+  },
+  "alt": {
+    "tr": "Su kıyısına bakan ahşap deck üzerinde, çapraz korkuluğun önünde",
+    "en": "On a timber deck facing the water, in front of a cross-braced railing"
+  },
+  "caption": {
+    "tr": "Masa ve bank kalın tahtalardan, ayakları dikdörtgen bloklardan yapılmış. Arkadaki çapraz korkuluk su manzarasını çerçeveliyor.",
+    "en": "The table and bench are built from thick boards on rectangular block legs. The cross-braced railing behind frames the view of the water."
+  },
+  "seoFilename": "capraz-korkuluk-onunde-kalin-ahsap-bank-ve-masa-yakin-cekim",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı",
+      "bank",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı",
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

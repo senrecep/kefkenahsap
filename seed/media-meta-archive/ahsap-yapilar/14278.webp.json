@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/14278.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz yanında koyu ahşap çatı ve deck zemin",
+    "en": "Dark timber roof and deck beside a pool"
+  },
+  "alt": {
+    "tr": "Havuzun kenarında, altında deck zemin bulunan koyu renkli ahşap çatı; arkada çim ve palmiye",
+    "en": "Dark timber roof with a deck floor beneath it at the edge of a pool, with lawn and a palm behind"
+  },
+  "caption": {
+    "tr": "Çatının tahtaları koyu vernikli, altından havuzun mavi suyu görünüyor. Deck zemin havuz kenarına kadar uzanıyor.",
+    "en": "The roof boards are a dark varnish and the blue pool water shows beyond it. The decking runs to the pool edge."
+  },
+  "seoFilename": "havuz-yaninda-koyu-renkli-ahsap-cati-ve-ahsap-deck-zemin",
+  "tags": {
+    "type": [
+      "sundurma / saçak / carport",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı",
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

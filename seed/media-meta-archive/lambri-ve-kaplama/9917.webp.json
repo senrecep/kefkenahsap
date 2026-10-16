@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/9917.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Eski kütük duvarın önünde yeni yatay tahtalar",
+    "en": "New horizontal boards in front of an old log wall"
+  },
+  "alt": {
+    "tr": "Eski kütük duvarın önünde çıtalar üzerine döşenen yeni açık renkli yatay tahta kaplama; zeminde el aletleri",
+    "en": "New light-coloured horizontal board cladding being fixed to battens in front of an old log wall, with hand tools on the floor"
+  },
+  "caption": {
+    "tr": "Eski kalın kütükler duvarda kalmış, önüne çıta çakılıp yatay tahtalar döşeniyor. Zeminde alet çantası var.",
+    "en": "The old thick logs stay in the wall while battens go up in front and horizontal boards are laid over them. A tool box sits on the floor."
+  },
+  "seoFilename": "eski-kutuk-duvar-onunde-yeni-yatay-tahta",
+  "tags": {
+    "type": [
+      "iç duvar kaplaması"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,41 @@
+{
+  "source": "Pergola ve Kamelyalar/1053.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çatı kirişleri takılan yapı, taş duvar ve palmiye yanında ustalar",
+    "en": "Roof beams being fitted beside a stone wall and a palm tree"
+  },
+  "alt": {
+    "tr": "Taş duvar ve palmiyenin yanında çatı kirişleri takılan ahşap yapı; deck üzerinde bir plastik sandalye ve çalışan ustalar",
+    "en": "Timber structure with roof beams being fitted beside a stone wall and a palm, with a plastic chair on the deck and workers"
+  },
+  "caption": {
+    "tr": "Çatkı simetrik bir beşik çatı oluşturuyor, korkuluk çıtaları alt katta çaprazlanmış. Ustalar zeminde çalışıyor.",
+    "en": "The frame forms a symmetrical gable and the rail slats cross on the lower level. Craftsmen work on the floor."
+  },
+  "seoFilename": "cati-kirisleri-takilan-yapi-tas-duvar-palmiye",
+  "tags": {
+    "type": [
+      "pergola",
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

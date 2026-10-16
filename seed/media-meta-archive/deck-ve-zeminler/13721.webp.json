@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/13721.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çam ağacı yanında köşede korkuluklu deck",
+    "en": "Deck with a corner railing beside a pine tree"
+  },
+  "alt": {
+    "tr": "Çam ağacı yanında açık renkli deck, köşede korkuluk ve üzerine düşen ağaç gölgeleri",
+    "en": "Pale deck beside a pine tree with a corner railing and tree shadows falling across it"
+  },
+  "caption": {
+    "tr": "Korkuluk iki yönde köşeyi dönüyor ve arkasında su görünüyor. Çam ağacının dalları deck'in üstüne sarkıyor.",
+    "en": "The railing turns the corner in two directions with water showing behind it. The pine tree's branches hang over the deck."
+  },
+  "seoFilename": "cam-agaci-yaninda-kosede-korkuluklu-deck",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

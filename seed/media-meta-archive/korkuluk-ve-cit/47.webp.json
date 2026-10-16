@@ -1,0 +1,40 @@
+{
+  "source": "Korkuluk ve Cit/47.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş döşeme kenarında kafes desenli ahşap çit",
+    "en": "Lattice-pattern timber fence beside stone paving"
+  },
+  "alt": {
+    "tr": "Bahçe yolunun kenarında kare gözlü kafes desenli yeşilimsi ahşap çit, arkada çimen, lavanta ve taş duvar",
+    "en": "Greenish timber fence with a square lattice pattern beside a garden path, with lawn, lavender and a stone wall behind"
+  },
+  "caption": {
+    "tr": "Kafes çit bahçe ile yol arasında alçak bir sınır oluşturuyor. Direkler kalın ve baş kısmı tıraşlı.",
+    "en": "The lattice fence makes a low boundary between garden and path. The posts are thick with chamfered tops."
+  },
+  "seoFilename": "tas-doseme-kenarinda-kafes-desenli-ahsap-cit",
+  "tags": {
+    "type": [
+      "çit",
+      "kafes / paravan"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

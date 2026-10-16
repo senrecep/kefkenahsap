@@ -1,0 +1,39 @@
+{
+  "source": "Ahsap Yapilar/9574.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Jaluzi kapılı ve yatay kaplamalı ahşap duvar, lambalı",
+    "en": "Timber wall with a louvred door, horizontal cladding and a lamp"
+  },
+  "alt": {
+    "tr": "Yatay ahşap kaplı duvarın yanında, jaluzi çıtalı koyu kahve kapı ve duvarda siyah bir dış mekân lambası",
+    "en": "Dark brown louvred door beside a horizontally clad timber wall, with a black outdoor lamp on the wall"
+  },
+  "caption": {
+    "tr": "Kapı kanadı jaluzi çıtalı, çerçevesi açık tonlu. Dış duvar yatay ahşap kaplamayla örtülü.",
+    "en": "The door leaf has louvre slats in a pale frame, and the outer wall is covered in horizontal timber cladding."
+  },
+  "seoFilename": "jaluzi-kapili-yatay-kaplamali-ahsap-duvar-lambali",
+  "tags": {
+    "type": [
+      "kapı",
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş",
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

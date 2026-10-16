@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/13663.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kulübenin yan yüzeyi ve menteşe, yakından",
+    "en": "Side surface and hinge of a dog house, close up"
+  },
+  "alt": {
+    "tr": "Yeşil shingle çatılı köpek kulübesinin yan yüzeyi ve kapıdaki menteşe, yakın çekim",
+    "en": "Close-up of the side of a dog house with a green shingle roof and the hinge on the door"
+  },
+  "caption": {
+    "tr": "Yatay tahtalar bal rengi cilalı, çatı balık pulu desenli. Ön köşede küçük bir menteşe ve kapak görünüyor.",
+    "en": "The horizontal boards are polished honey and the roof has a fish-scale pattern. A small hinge and a hatch show at the front corner."
+  },
+  "seoFilename": "yesil-shingle-catili-kopek-kulubesinin-yan-yuzeyi-ve-mentese",
+  "tags": {
+    "type": [
+      "köpek kulübesi"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

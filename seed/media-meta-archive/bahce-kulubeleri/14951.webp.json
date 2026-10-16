@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/14951.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Koyu vernikli kulübe ve küçük basamak platformu",
+    "en": "Dark varnished shed and a small step platform"
+  },
+  "alt": {
+    "tr": "Koyu vernikli ahşap kulübe ve yanındaki küçük basamak platformu; toprak zemin, arkada yapraklı ağaçlar",
+    "en": "Dark varnished timber shed with a small step platform beside it, on bare earth with leafy trees behind"
+  },
+  "caption": {
+    "tr": "Kulübenin yan duvarında yatay tahtalar sıkıca dizilmiş, çatısı hafif eğimli. Platform kapı önüne yerleştirilmiş.",
+    "en": "The horizontal boards on the side wall are tightly laid and the roof slopes slightly. The platform is placed in front of the door."
+  },
+  "seoFilename": "koyu-vernikli-ahsap-kulube-yaninda-kucuk-basamak-platformu",
+  "tags": {
+    "type": [
+      "bahçe kulübesi / depo"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

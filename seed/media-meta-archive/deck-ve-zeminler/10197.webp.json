@@ -1,0 +1,40 @@
+{
+  "source": "Deck ve Zeminler/10197.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Açık renkli deck üzerinde beyaz katlanır masa takımı",
+    "en": "White folding table set on a light deck"
+  },
+  "alt": {
+    "tr": "Açık renkli ahşap deck üzerinde duran beyaz katlanır masa ve sandalyeler; kenarda çiçeklikler",
+    "en": "White folding table and chairs on a light timber deck, with small planters along the edge"
+  },
+  "caption": {
+    "tr": "Beyaz mobilya, açık tonlu deckin üstünde öne çıkıyor. Deck kenarında küçük çiçeklikler sıralı.",
+    "en": "The white furniture stands out on the light-toned deck. Small planters line the edge of the deck."
+  },
+  "seoFilename": "acik-renkli-ahsap-deck-uzerinde-beyaz-katlanir-masa-ve",
+  "tags": {
+    "type": [
+      "deck",
+      "masa ve sandalye takımı"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

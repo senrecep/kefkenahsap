@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/1838.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ahşap kaplı odada taş kaplı şömine bacası",
+    "en": "Stone-clad chimney breast in a timber-lined room"
+  },
+  "alt": {
+    "tr": "Yatay ahşap kaplı duvarların arasında, düzensiz kesme taşlarla kaplı şömine bacası ve üstünde havalandırma ızgarası",
+    "en": "Chimney breast faced in irregular cut stone between horizontal timber-lined walls, with a ventilation grille on it"
+  },
+  "caption": {
+    "tr": "Taş kaplı baca odanın köşesinde yükseliyor, ahşap kaplama kirişli tavana kadar uzanıyor.",
+    "en": "The stone-clad chimney rises in the corner of the room, and the timber lining reaches up to the beamed ceiling."
+  },
+  "seoFilename": "ahsap-kapli-odada-tas-kapli-somine-bacasi",
+  "tags": {
+    "type": [
+      "iç duvar kaplaması"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

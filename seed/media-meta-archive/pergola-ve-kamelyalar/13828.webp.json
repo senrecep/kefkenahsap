@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/13828.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yürüyüş yolu kenarında dizili ahşap pergola ve mavi tabela",
+    "en": "Timber pergola line beside a walkway with a blue sign"
+  },
+  "alt": {
+    "tr": "Taş ve seramik döşeli yürüyüş yolunun kenarında sıralanan ahşap pergola, lamba direği ve mavi bilgi tabelası",
+    "en": "Line of timber pergolas beside a stone and ceramic walkway, with a lamp post and a blue information sign"
+  },
+  "caption": {
+    "tr": "Pergola yolun bir kenarı boyunca ilerliyor. Yol ağaçlarla ve çitle çevrili bir alana uzanıyor.",
+    "en": "The pergola follows one side of the walkway. The path leads into an area edged with trees and hedges."
+  },
+  "seoFilename": "yuruyus-yolu-kenarinda-dizili-ahsap-pergola",
+  "tags": {
+    "type": [
+      "pergola",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "havuz kenarı"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

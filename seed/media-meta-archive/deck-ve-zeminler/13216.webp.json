@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/13216.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ağaç gövdesi yanında çapraz korkuluklu, karışık tahtalı deck",
+    "en": "Mixed-board deck with a cross-braced railing beside a tree trunk"
+  },
+  "alt": {
+    "tr": "Havuz kenarında ağaç gövdesi yanında, eski ve yeni tahtaların karıştığı deck ve çapraz korkuluk",
+    "en": "Deck at the pool edge beside a tree trunk, with old and new boards mixed and a cross-braced railing"
+  },
+  "caption": {
+    "tr": "Yeni tahtalar eski gri tahtaların arasına çapraz bir şerit gibi yerleşmiş. Arkada havuzun mavisi görünüyor.",
+    "en": "The new boards sit among the old grey ones in a diagonal band. The blue of the pool shows behind."
+  },
+  "seoFilename": "agac-govdesi-yaninda-capraz-korkuluklu-karisik-tahtali-deck",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

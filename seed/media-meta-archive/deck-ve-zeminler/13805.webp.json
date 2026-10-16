@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/13805.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Gri eskimiş uzun deck ve kırmızı kahverengi korkuluk",
+    "en": "Long worn grey deck with a red-brown railing"
+  },
+  "alt": {
+    "tr": "Gri eskimiş uzun deck ve kırmızı kahverengi korkuluk; kenarda bir testi ve kolon",
+    "en": "Long worn grey deck with a red-brown railing, a clay jar and a column at the side"
+  },
+  "caption": {
+    "tr": "Tahtalar gri ve solmuş, korkuluk ise hâlâ koyu rengini koruyor. Deck, binanın yanında dar bir geçit oluşturuyor.",
+    "en": "The boards are grey and faded while the railing still holds its dark colour. The deck makes a narrow walkway along the building."
+  },
+  "seoFilename": "gri-eskimis-uzun-deck-ve-kirmizi-kahverengi-korkuluk",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

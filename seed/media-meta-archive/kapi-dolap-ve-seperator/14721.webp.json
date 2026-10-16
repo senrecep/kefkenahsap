@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14721.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Arka bahçe avlusunda uzun çok kapaklı ahşap dolap",
+    "en": "Long multi-door timber cabinet in a courtyard"
+  },
+  "alt": {
+    "tr": "Parke taş döşeli avluda, çitin önünde uzanan, birçok kapaklı ve kapaklı üstlü uzun ahşap dolap, arkada ev ve bahçe",
+    "en": "Long timber cabinet with many doors in a cobble-paved courtyard in front of a fence, with a house and garden behind"
+  },
+  "caption": {
+    "tr": "Dolap avlunun kenarı boyunca tek hatta uzuyor. Kapaklar eşit genişlikte ve aynı tonda.",
+    "en": "The cabinet runs in a single line along the courtyard edge. The doors are of equal width and the same tone."
+  },
+  "seoFilename": "arka-bahce-avlusunda-uzun-cok-kapakli-ahsap-dolap",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

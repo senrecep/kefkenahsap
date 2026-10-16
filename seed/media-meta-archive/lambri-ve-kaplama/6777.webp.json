@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/6777.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kademeli döşenmiş açık renkli kaplama tahtaları",
+    "en": "Light boards of cladding laid in a staggered pattern"
+  },
+  "alt": {
+    "tr": "Açık renkli, budaklı yatay ahşap kaplama tahtalarının farklı boylarda kademeli birleştirildiği yakın çekim",
+    "en": "Close view of light, knotty horizontal timber cladding boards joined in staggered lengths"
+  },
+  "caption": {
+    "tr": "Tahtaların uç birleşimleri şaşırtmalı sıralanmış, aralarda ince derzler var.",
+    "en": "The end joints of the boards are staggered, with thin gaps between them."
+  },
+  "seoFilename": "kademeli-yerlestirilmis-acik-renkli-yatay-ahsap-kaplama",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

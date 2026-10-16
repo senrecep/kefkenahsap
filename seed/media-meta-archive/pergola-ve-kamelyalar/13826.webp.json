@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/13826.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Koyu kahverengi pergola ve çıtalı korkuluk, çakıl yol kenarında",
+    "en": "Dark brown pergola and slatted rail beside a gravel path"
+  },
+  "alt": {
+    "tr": "Koyu kahverengi ahşap pergola ve çıtalı korkuluk, yanında çakıllı yol ve fidanlar, uzakta evler",
+    "en": "Dark brown timber pergola with a slatted rail, a gravel path and young trees beside it, and houses in the distance"
+  },
+  "caption": {
+    "tr": "Korkuluk platformun üç yanını çeviriyor ve kirişler eğimli bir çatı oluşturuyor. Kenarda genç ağaçlar sıralanmış.",
+    "en": "The railing wraps three sides of the platform and the beams form a sloping roof. Young trees line the edge."
+  },
+  "seoFilename": "koyu-kahverengi-pergola-citali-korkuluk-cakil-yol",
+  "tags": {
+    "type": [
+      "pergola",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

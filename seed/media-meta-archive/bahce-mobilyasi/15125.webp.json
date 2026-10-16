@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/15125.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Şömineli odada beyaz mindirli, ince ahşap kenarlı oturma bölümü",
+    "en": "Seating unit with a white mattress and a slim timber edge"
+  },
+  "alt": {
+    "tr": "Şömineli, parke zeminli bir odada, beyaz mindirli ve yastıklı bir oturma bölümünün ince ahşap kenarı ve ayakları görünüyor",
+    "en": "Seating unit with a white mattress and cushions on slim timber legs in a parquet room with a fireplace"
+  },
+  "caption": {
+    "tr": "Oturma bölümü duvar boyunca uzanıyor, beyaz mindirle kaplı. Ahşap yalnızca kenar ve ayaklarda kullanılmış.",
+    "en": "The seating unit runs along the wall under a white mattress. Timber is used only for the edge and legs."
+  },
+  "seoFilename": "somineli-odada-beyaz-mindirli-kanepe-yaninda-ince-ahsap",
+  "tags": {
+    "type": [
+      "bank",
+      "oturma grubu"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.5
+}

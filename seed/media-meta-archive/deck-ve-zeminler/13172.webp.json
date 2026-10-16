@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/13172.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Eski beton zemin üzerinde ince ahşap çıta dizileri",
+    "en": "Rows of slim timber battens over an old concrete floor"
+  },
+  "alt": {
+    "tr": "Eski beton zemin üzerine uzun yönde dizilmiş ince ahşap çıtalar, yerde matkap ve kablo, kenarda çit",
+    "en": "Slim timber battens laid lengthwise over an old concrete floor, with a drill and cable on the ground and a hedge at the edge"
+  },
+  "caption": {
+    "tr": "Çıtalar deck için taşıyıcı olarak betonun üzerine paralel diziliyor. Üzerine tahta döşenmeye hazır.",
+    "en": "The battens are laid parallel on the concrete to carry the deck. The surface is ready for boarding."
+  },
+  "seoFilename": "eski-beton-zemin-uzerinde-ince-ahsap-cita-dizileri",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

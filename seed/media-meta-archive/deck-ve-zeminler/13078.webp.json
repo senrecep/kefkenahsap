@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/13078.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çit köşesinde kısmen döşenmiş alt iskelet ve kablolar",
+    "en": "Part-boarded sub-frame in the hedge corner with cables"
+  },
+  "alt": {
+    "tr": "Çit köşesindeki alt iskeletin sağ tarafı açık renkli tahtalarla kısmen kaplanmış; çimende kablolar ve vida kutusu",
+    "en": "Sub-frame in the hedge corner with its right side partly covered in pale boards, and cables and a screw tub on the lawn"
+  },
+  "caption": {
+    "tr": "Tahta döşeme sağ kenardan başlamış ve çerçeve boyunca ilerliyor. Alet kabloları çimenin üzerinden uzanıyor.",
+    "en": "Boarding has started at the right edge and works along the frame. Tool cables run across the grass."
+  },
+  "seoFilename": "cit-kosesinde-kismen-doseli-alt-iskelet-ve-kablolar",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

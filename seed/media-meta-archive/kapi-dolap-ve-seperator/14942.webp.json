@@ -1,0 +1,38 @@
+{
+  "source": "Kapi Dolap ve Seperator/14942.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Pembe cephede yağmur borusunun yanında beyaz ahşap duvar kabini",
+    "en": "White timber wall housing beside a downpipe on a pink facade"
+  },
+  "alt": {
+    "tr": "Pembe cephede pencerenin altında yağmur borusunun yanına asılmış, eğimli kapaklı, önü açık beyaz ahşap duvar kabini",
+    "en": "White timber wall housing with a sloped lid mounted on a pink rendered facade below a window beside a downpipe"
+  },
+  "caption": {
+    "tr": "Kabin duvara asılmış, üstü eğimli olduğundan yağmur dışarı akıyor. Kablo kabinin altından aşağı iniyor.",
+    "en": "The housing is wall-mounted and its sloped top sheds rain outward. The cable runs down from the bottom."
+  },
+  "seoFilename": "pembe-cephede-yagmur-borusunun-yaninda-beyaz-ahsap-duvar",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "giriş"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

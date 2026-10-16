@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/7912.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çayır boyunca uzanan bantlı ahşap çit, uzaktan",
+    "en": "Distant view of a taped timber fence along a meadow"
+  },
+  "alt": {
+    "tr": "Geniş bir çayırın arka sınırı boyunca uzanan yatay bantlı ahşap çit, arkada koyu yeşil ağaçlar ve açık gökyüzü",
+    "en": "Timber fence with horizontal tapes running along the far edge of a wide meadow, with dark green trees and open sky behind"
+  },
+  "caption": {
+    "tr": "Çit çayırın uzak kenarını düz bir çizgiyle belirliyor.",
+    "en": "The fence marks the far edge of the meadow with a straight line."
+  },
+  "seoFilename": "cayir-boyunca-uzanan-bantli-ahsap-cit-uzaktan",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

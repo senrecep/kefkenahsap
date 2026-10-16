@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/1098.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Denize bakan geniş deck ve X korkuluklu pergola",
+    "en": "Wide sea-facing deck with X railings and a pergola"
+  },
+  "alt": {
+    "tr": "Deniz kıyısında çapraz X korkuluklarla çevrili, üzeri pergola çatılı geniş açık renkli deck, güneşte uzun gölgeler",
+    "en": "Wide light deck by the sea with X-pattern railings and a pergola roof above, with long shadows in the sun"
+  },
+  "caption": {
+    "tr": "Deck denize paralel uzuyor. Çapraz korkuluk ve pergola kirişleri tek bir düzende.",
+    "en": "The deck runs parallel to the sea. The cross-pattern railing and pergola beams follow one layout."
+  },
+  "seoFilename": "denize-bakan-genis-deck-x-korkuluklu-pergola",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk",
+      "pergola"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı",
+      "ticari mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12502.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çalılar yanında metal ayaklı dar deck alt çerçevesi",
+    "en": "Narrow deck sub-frame on metal supports beside shrubs"
+  },
+  "alt": {
+    "tr": "Çalıların yanında metal ayaklar üzerine oturan dar ahşap deck alt çerçevesi",
+    "en": "Narrow timber deck sub-frame resting on metal supports beside shrubs"
+  },
+  "caption": {
+    "tr": "Çerçeve zeminden yüksekte tutulmuş ve kısa kirişlerle bölünmüş. Arkada çit ve komşu bina görünüyor.",
+    "en": "The frame is held clear of the ground and divided by short joists. A fence and a neighbouring building show behind."
+  },
+  "seoFilename": "calilar-yaninda-metal-ayakli-dar-deck-alt-cercevesi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

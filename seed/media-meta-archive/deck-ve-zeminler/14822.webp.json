@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/14822.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çim bahçede korkuluklu geniş deck",
+    "en": "Wide deck with a railing in a lawned garden"
+  },
+  "alt": {
+    "tr": "Çam ağaçlarının önünde çim bahçeye yayılan geniş turuncu kahverengi deck; yatay çıtalı korkuluğu ve köşede oturma bölmesi var",
+    "en": "Wide orange-brown deck spreading across a lawn in front of pine trees, with a horizontal-slat railing"
+  },
+  "caption": {
+    "tr": "Deckin tahtaları çapraz bir yönde döşenmiş ve yüzeyde ağaç gölgeleri var. Sağ alt kenarda taş döşeme başlıyor.",
+    "en": "The deck boards are laid on a diagonal and tree shadows fall across the surface. Stone paving begins at the lower right edge."
+  },
+  "seoFilename": "cim-bahcede-yatay-citali-korkuluklu-genis-deck",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

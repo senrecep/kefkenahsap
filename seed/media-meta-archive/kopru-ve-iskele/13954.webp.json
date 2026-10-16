@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/13954.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimde koyu kahve basamak plakaları, ucunda çiçekli saksı",
+    "en": "Dark brown stepping slabs on the lawn ending at a flowering pot"
+  },
+  "alt": {
+    "tr": "Duvar boyunca çimde ilerleyen koyu kahve ahşap basamak plakaları; ucunda pembe çiçekli bir saksı",
+    "en": "Dark brown timber stepping slabs running along a wall across the lawn, ending at a pot with pink flowers"
+  },
+  "caption": {
+    "tr": "Plakalar eşit aralıkla dizilmiş, ön plandaki en büyüğü dört tahtalı. Çim plakaların çevresinden düzgün kesilmiş.",
+    "en": "The slabs are evenly spaced and the largest one in front is made of four boards. The grass is trimmed neatly around them."
+  },
+  "seoFilename": "cimde-koyu-kahve-basamak-plakalari-cicekli-saksi",
+  "tags": {
+    "type": [
+      "yürüyüş yolu"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

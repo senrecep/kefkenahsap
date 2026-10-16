@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14580.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "L şeklinde uzanan koyu deck",
+    "en": "L-shaped dark deck"
+  },
+  "alt": {
+    "tr": "Çimenin kenarında L biçiminde dönen, arkasında taş kaplı bir duvar bulunan koyu kahverengi cilalı deck",
+    "en": "Dark brown polished deck turning in an L along the edge of a lawn, with a stone-clad wall behind"
+  },
+  "caption": {
+    "tr": "Deckin uzun kolu çimen boyunca uzanıyor, kısa kolu duvar dibinde bitiyor. Önünde kağıt koruyucu serilmiş.",
+    "en": "The long arm of the deck runs along the lawn and the short arm ends at the foot of the wall. Protective paper is laid in front."
+  },
+  "seoFilename": "l-seklinde-uzanan-koyu-deck-tas-duvar-onunde",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

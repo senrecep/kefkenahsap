@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/11488.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölye masasında uzun çiçeklik, içinde siyah astar",
+    "en": "Long planter on the workshop table with black liner"
+  },
+  "alt": {
+    "tr": "Atölyede masanın üzerinde yatan uzun vernikli ahşap çiçeklik ve iç yüzeyini kaplayan siyah astar",
+    "en": "Long varnished timber planter lying on a table in the workshop, with a black liner covering the inside"
+  },
+  "caption": {
+    "tr": "Çiçeklik çok uzun ve dar, iki bölmeli. Arkada atölyenin tezgâhı ve kereste parçaları görünüyor.",
+    "en": "The planter is very long and narrow, with two compartments. The workshop bench and offcuts are visible behind."
+  },
+  "seoFilename": "atolyede-masa-uzerinde-uzun-vernikli-ahsap-ciceklik-siyah",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

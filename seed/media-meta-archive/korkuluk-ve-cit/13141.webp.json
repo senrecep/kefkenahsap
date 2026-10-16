@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/13141.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bahçede pembe sardunyalı saksılar yanında köşe yapan çıtalı çit",
+    "en": "Slatted fence forming a corner beside pots of pink geraniums in the garden"
+  },
+  "alt": {
+    "tr": "Pembe sardunyalı saksıların ve yuvarlak masanın arkasında, çimde köşe yapan sivri uçlu açık renk çıtalı ahşap çit",
+    "en": "A light pointed-slat timber fence forming a corner on the lawn behind pots of pink geraniums and a round table"
+  },
+  "caption": {
+    "tr": "Çit çimin kenarını iki yönde çeviriyor, köşede çalı ona yaslanıyor. Önde kiremit renkli bir taş döşeme var.",
+    "en": "The fence encloses the edge of the lawn in two directions and a shrub leans against it at the corner. A terracotta-coloured stone paving lies in front."
+  },
+  "seoFilename": "bahcede-pembe-sardunyali-saksilar-yaninda-kose-yapan-cit",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

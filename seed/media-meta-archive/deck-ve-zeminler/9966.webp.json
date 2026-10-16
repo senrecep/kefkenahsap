@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/9966.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Betonun üzerinde yarı döşenmiş kızıl deck",
+    "en": "Reddish deck half-laid over a concrete slab"
+  },
+  "alt": {
+    "tr": "Beton zeminde ahşap takozlara oturan kiriş iskeleti, sağ tarafta kızıl kahve deck tahtaları döşenmiş, yerde kablo",
+    "en": "Joist frame on a concrete slab resting on timber blocks"
+  },
+  "caption": {
+    "tr": "Deck betonun üzerine kirişler ve takozlarla kurulmuş. Tahtalar bir kenardan başlayarak ilerliyor.",
+    "en": "The deck is built on joists and blocks above the concrete. Boards advance from one edge."
+  },
+  "seoFilename": "betonun-uzerinde-yari-dosenmis-kizil-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

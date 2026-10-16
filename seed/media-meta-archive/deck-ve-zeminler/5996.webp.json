@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/5996.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ortancalar arasında cam kapı önünde deck",
+    "en": "Deck at a glass door among hydrangeas"
+  },
+  "alt": {
+    "tr": "Çimen ve ortanca çiçekleri arasında, cam kapının önüne uzanan açık renkli yenilenmiş deck; yanında gri taş plaka",
+    "en": "Pale refreshed deck stretching to a glass door between lawn and hydrangeas, with a grey stone slab beside it"
+  },
+  "caption": {
+    "tr": "Tahtalar temiz ve eşit tonda görünüyor, ortada ince bir aralık var. Arkada yeşil bir çit ve evin kırmızı duvarı duruyor.",
+    "en": "The boards look clean and even in tone with a thin gap in the middle. A green hedge and the red wall of the house stand behind."
+  },
+  "seoFilename": "cim-ve-ortancalar-arasinda-cam-kapi-onunde-deck-gri-tas",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

@@ -1,0 +1,33 @@
+{
+  "source": "Ireko-Teak/8890.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Karışık ahşap şeritlerin yakın çekimi",
+    "en": "Close-up of mixed timber strips"
+  },
+  "alt": {
+    "tr": "Farklı genişlikteki ahşap şeritlerden kaplama panelinin yakın çekimi; damarlar ve ton farkları görünüyor",
+    "en": "Close-up of a cladding panel made from timber strips of different widths, with the grain and tone differences visible"
+  },
+  "caption": {
+    "tr": "Şeritlerin damarları ve kahverengi tonları yakından seçiliyor. Her şerit farklı uzunlukta kesilmiş.",
+    "en": "The grain and the brown tones of the strips show up close. Each strip is cut to a different length."
+  },
+  "seoFilename": "karisik-genislikli-ahsap-seritler-yakin-cekim",
+  "tags": {
+    "type": [
+      "iç duvar kaplaması"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

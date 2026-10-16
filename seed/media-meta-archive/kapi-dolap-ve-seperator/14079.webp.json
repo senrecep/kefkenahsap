@@ -1,0 +1,38 @@
+{
+  "source": "Kapi Dolap ve Seperator/14079.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çıtalı yan yüzlü ahşap kabinin içindeki cihaz, yakın çekim",
+    "en": "Device inside a slatted-side timber booth, close view"
+  },
+  "alt": {
+    "tr": "Parke taşlı zeminde yan yüzü yatay çıtalı, önü açık koyu ahşap kabin, içinde siyah yuvarlak bir cihaz",
+    "en": "Dark timber booth with a horizontally slatted side and open front on cobbled paving"
+  },
+  "caption": {
+    "tr": "Kabin cihazı yağmur ve güneşten koruyor. Ön tarafı kullanım için açık bırakılmış.",
+    "en": "The booth shelters the device from rain and sun, with the front left open for use."
+  },
+  "seoFilename": "citali-yan-yuzlu-ahsap-kabinin-icindeki-cihaz-yakin-cekim",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

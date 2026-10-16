@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/13265.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz çevresinde bitkiler arasında kıvrılan parlak deck yolu",
+    "en": "Glossy deck path curving through plants around the pool"
+  },
+  "alt": {
+    "tr": "Havuz çevresinde bitkiler arasında kıvrılan parlak kırmızı kahverengi deck yolu, kenarda küçük bir spot",
+    "en": "Glossy red-brown deck path curving round the pool between plants, with a small ground spotlight at the edge"
+  },
+  "caption": {
+    "tr": "Tahtalar yolun eğrisine göre kesilmiş ve yağ yüzeyi parlatmış. Yan taraftaki bitkiler yola doğru uzanıyor.",
+    "en": "The boards are cut to the curve of the path and the oil gives the surface a sheen. Plants on the side lean in over the path."
+  },
+  "seoFilename": "havuz-cevresinde-bitkiler-arasinda-kivrilan-parlak-deck-yolu",
+  "tags": {
+    "type": [
+      "deck",
+      "yürüyüş yolu"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı",
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

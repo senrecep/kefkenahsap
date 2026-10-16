@@ -1,0 +1,40 @@
+{
+  "source": "Ireko-Teak/12646.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Duvar boyunca uzanan, kapağı açılan uzun iroko kasa",
+    "en": "Long iroko box along a wall with an opening lid"
+  },
+  "alt": {
+    "tr": "Taş duvarın yanında uzun ve alçak, üstü çıtalı, kızıl kahve ahşap kasa; yanında park halinde bir araç ve parke taş yol",
+    "en": "Long, low, red-brown timber box with a slatted top beside a stone wall, with a parked car and a cobbled path next to it"
+  },
+  "caption": {
+    "tr": "Kasa duvar boyunca uzanıyor, kapağı çıtalı. Yan yüzeyde menteşeler görünüyor.",
+    "en": "The box runs along the wall with a slatted lid, and hinges show on its side."
+  },
+  "seoFilename": "duvar-boyunca-uzanan-kapagi-acilan-uzun-iroko-kasa",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "bahçe",
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

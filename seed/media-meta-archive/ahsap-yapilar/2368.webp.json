@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/2368.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Koyu çatı kirişleri arasında beyaz levhalar",
+    "en": "White boards between dark roof beams"
+  },
+  "alt": {
+    "tr": "Koyu vernikli çatı kirişlerinin arasına yerleştirilmiş beyaz levhalar, alttan görünüm",
+    "en": "White boards fitted between dark varnished roof beams, seen from below"
+  },
+  "caption": {
+    "tr": "Kirişler çatı eğimi boyunca uzanıyor. Aralarındaki beyaz levhalar tavan yüzeyini oluşturuyor, duvar henüz sıvalı.",
+    "en": "The beams run along the roof pitch. The white boards between them form the ceiling surface and the wall is still plastered."
+  },
+  "seoFilename": "koyu-vernikli-cati-kirisleri-beyaz-yalitim-levhalari",
+  "tags": {
+    "type": [
+      "tavan kaplaması / lambri"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

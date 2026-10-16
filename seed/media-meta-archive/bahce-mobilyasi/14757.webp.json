@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14757.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çakıl şeridi üzerinde iki katlanır çıtalı ahşap bahçe sandalyesi",
+    "en": "Two folding slatted timber garden chairs on a gravel strip"
+  },
+  "alt": {
+    "tr": "Pembe boyalı duvarın önünde, çakıl taşı döşeli şeritte iki katlanır çıtalı ahşap bahçe sandalyesi ve küçük bir masa duruyor",
+    "en": "In front of a pink-painted wall, two folding slatted timber garden chairs and a small table on a strip of pebbles"
+  },
+  "caption": {
+    "tr": "Sandalyeler ve küçük masa katlanabiliyor, kullanılmadığında duvar dibinde yer kaplamıyor.",
+    "en": "The chairs and the small table fold, so they take little room by the wall when not in use."
+  },
+  "seoFilename": "cakil-seridi-uzerinde-iki-katlanir-citali-ahsap-bahce",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

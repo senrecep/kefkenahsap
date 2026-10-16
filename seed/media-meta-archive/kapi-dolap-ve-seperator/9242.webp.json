@@ -1,0 +1,39 @@
+{
+  "source": "Kapi Dolap ve Seperator/9242.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yatay tahtalı yüksek ahşap kasa, teras karosunda",
+    "en": "Tall horizontal-board timber box on a paved terrace"
+  },
+  "alt": {
+    "tr": "Teras karosu üzerinde duran, yatay tahtalı ve kapalı görünen yüksek ahşap kasa, arkada araç ve ağaçlar",
+    "en": "Tall closed timber box clad in horizontal boards, standing on terrace paving with a car and trees behind"
+  },
+  "caption": {
+    "tr": "Kasanın ön yüzü baştan sona yatay tahtalarla kaplanmış. Alt kısımda yer ile arasında havalandırma boşluğu var.",
+    "en": "The front is clad in horizontal boards from top to bottom. A ventilation gap is left at the base."
+  },
+  "seoFilename": "yatay-tahtali-yuksek-ahsap-kasa-teras",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

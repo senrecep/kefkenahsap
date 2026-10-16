@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/14546.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Teras duvarı üstünde yatay çıtalı ahşap panel, geniş açı",
+    "en": "Horizontal-slat timber panel on a terrace wall, wide angle"
+  },
+  "alt": {
+    "tr": "Taş kaplı teras duvarının üstünde uzanan, sağa doğru alçalan yatay çıtalı turuncu ahşap panel",
+    "en": "A horizontal-slat orange timber panel running along the top of a stone-clad terrace wall and sloping down to the right"
+  },
+  "caption": {
+    "tr": "Panel alt kısımda duvara oturuyor, kenar çizgisi sağa eğimli. Ön planda açık renk karo zemin var.",
+    "en": "The panel sits on the wall below and its top edge slopes to the right. Light-coloured tile flooring is in the foreground."
+  },
+  "seoFilename": "teras-duvari-ustunde-yatay-citali-panel-genis-aci",
+  "tags": {
+    "type": [
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

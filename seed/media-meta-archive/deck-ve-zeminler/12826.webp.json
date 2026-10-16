@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12826.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çelik çerçeve üzerine çaprazlama yerleştirilmiş çıtalar",
+    "en": "Battens set crosswise on a red steel frame"
+  },
+  "alt": {
+    "tr": "Kırmızı çelik çerçeve ve üzerine çaprazlama yerleştirilmiş ahşap çıtalar",
+    "en": "Red steel frame with timber battens set crosswise on top"
+  },
+  "caption": {
+    "tr": "Çıtalar sık aralıklı ve çerçevenin üzerinde düz bir yüzey oluşturuyor. Üzerine deck tahtaları döşenecek.",
+    "en": "The battens are closely spaced and make a flat surface over the frame. Deck boards will be laid on top."
+  },
+  "seoFilename": "celik-cerceve-uzerine-caprazlama-yerlestirilmis-citalar",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

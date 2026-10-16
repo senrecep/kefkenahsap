@@ -1,0 +1,39 @@
+{
+  "source": "Ahsap Yapilar/1060.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deniz kenarında kazıklı ahşap platform ve pergola iskeleti",
+    "en": "Raised timber platform and pergola frame on the shore"
+  },
+  "alt": {
+    "tr": "Kıyıda yüksek ahşap dikmeler üzerine kurulan platform; üstte pergola kirişleri, çalışan işçiler ve arkada palmiyeler",
+    "en": "Platform raised on tall timber posts along the shore, with pergola beams above, workers on top and palm trees behind"
+  },
+  "caption": {
+    "tr": "Platform kıyıdan yükseltilmiş, çapraz payandalar dikmeleri tutuyor. Pergola çatısının kirişleri yerleştirilmiş.",
+    "en": "The platform is lifted above the shore and diagonal braces hold the posts. The beams of the pergola roof are in place."
+  },
+  "seoFilename": "deniz-kenarinda-kazikli-platform-pergola-iskeleti",
+  "tags": {
+    "type": [
+      "iskele",
+      "deck",
+      "pergola"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

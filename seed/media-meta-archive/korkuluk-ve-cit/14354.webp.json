@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/14354.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Giriş önünde kısa kahverengi piket kapı",
+    "en": "Short brown picket gate at an entrance"
+  },
+  "alt": {
+    "tr": "Evin giriş basamağı önünde yeşil çalılar arasında duran, kahverengi cilalı alçak çıtalı kapı",
+    "en": "Low brown varnished picket gate between green shrubs in front of a house entrance"
+  },
+  "caption": {
+    "tr": "Kapı çalılar arasındaki dar geçidi kapatıyor, arkada giriş kapısı görünüyor.",
+    "en": "The gate closes the narrow gap between the shrubs, with the front door visible behind it."
+  },
+  "seoFilename": "giris-onunde-kisa-kahverengi-piket-kapi",
+  "tags": {
+    "type": [
+      "bahçe kapısı",
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

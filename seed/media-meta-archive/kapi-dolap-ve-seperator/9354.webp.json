@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/9354.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ahşap kasanın içi: tahta zemin ve duvarlar",
+    "en": "Inside a timber chest: boarded floor and walls"
+  },
+  "alt": {
+    "tr": "Ahşap kasanın içinden köşe görünümü; zemin ve duvarlar açık renk tahta, sağda kapı kenarı",
+    "en": "Corner view inside a timber chest with light boarded floor and walls and the edge of the door on the right"
+  },
+  "caption": {
+    "tr": "İçerisi baştan sona tahta kaplı. Zemin tahtaları duvar kaplamasıyla uyumlu ve yüzey düzgün.",
+    "en": "The interior is boarded throughout. The floor boards match the wall cladding and the surface is even."
+  },
+  "seoFilename": "ahsap-kasanin-ici-tahta-zemin-duvar",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

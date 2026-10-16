@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/14831.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Uzun dikdörtgen deck, arkada havuz",
+    "en": "Long rectangular deck with a pool behind"
+  },
+  "alt": {
+    "tr": "Kumlu zeminde uzanan, uzun dikdörtgen bir deck; arkasında havuzun yeşilimsi suyu ve ağaçlar",
+    "en": "Long rectangular deck on sandy ground, with the greenish water of a pool and trees behind"
+  },
+  "caption": {
+    "tr": "Tahtalar deckin uzun yönünde döşenmiş. Yerde yeşil bir hortum ve tek tük bitkiler görünüyor.",
+    "en": "The boards are laid along the long side of the deck. A green hose and a few plants show on the ground."
+  },
+  "seoFilename": "uzun-dikdortgen-deck-kumlu-zemin-ve-havuz-kenari",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/567.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yamaçta beton tabanlı bank alanı ve eğimli ahşap çatı iskeleti",
+    "en": "Bench area on a concrete base and a sloping timber roof frame on a hillside"
+  },
+  "alt": {
+    "tr": "Yamaçta beton tabanlı bank alanı ve tek eğimli ahşap çatı iskeleti, arkada koy ve yamaca dizilmiş beyaz evler",
+    "en": "Bench area on a concrete base and a single-pitch timber roof frame on a hillside, with a cove and white houses behind"
+  },
+  "caption": {
+    "tr": "Beton taban yamaca oturtulmuş, üzerine bank oturakları yerleşecek. Çatı iskeleti denize doğru eğimleniyor.",
+    "en": "The concrete base is set into the slope and bench seats will go on top. The roof frame slopes toward the sea."
+  },
+  "seoFilename": "yamacta-beton-tabanli-bank-alani-egimli-cati-iskeleti",
+  "tags": {
+    "type": [
+      "kamelya",
+      "bank"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

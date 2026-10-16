@@ -1,0 +1,40 @@
+{
+  "source": "Deck ve Zeminler/7963.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimde yeni deck, üstünde ahşap masa",
+    "en": "New deck on the lawn with a timber table"
+  },
+  "alt": {
+    "tr": "Çimenin kenarında, cam kapının önüne döşenmiş yeni açık renkli deck; üstünde turuncu ahşap bir masa ve sandalyeler",
+    "en": "New pale deck laid on the lawn in front of a glass door, with an orange timber table and chairs on it"
+  },
+  "caption": {
+    "tr": "Deck yerden bir kademe yüksekte duruyor ve kenarda bir yeşil kapak görünüyor. Sağda iri yapraklı bir çalı deckin üstüne uzanıyor.",
+    "en": "The deck stands one step above ground and a green cover shows at the edge. A large-leaved shrub reaches over the deck on the right."
+  },
+  "seoFilename": "cimde-yeni-acik-renkli-deck-ustunde-turuncu-ahsap-masa-ve",
+  "tags": {
+    "type": [
+      "deck",
+      "masa ve sandalye takımı"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

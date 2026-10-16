@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/2439.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Tuğla duvarda koyu ahşap pencere denizliği",
+    "en": "Dark timber window sill on a brick wall"
+  },
+  "alt": {
+    "tr": "Tuğla kaplı duvar boyunca uzanan, koyu kahve cilalı kalın ahşap denizlik, yanında ahşap kolon ve inşaat artıkları",
+    "en": "Thick dark brown polished timber sill running along a brick-faced wall, with a timber column and building debris beside it"
+  },
+  "caption": {
+    "tr": "Denizlik tuğla duvarın üstüne oturtulmuş, ucu kolona dayanıyor. Alt kısım henüz inşaat artığıyla dolu.",
+    "en": "The sill sits on the brick wall and rests against the column. The ground below is still covered in building debris."
+  },
+  "seoFilename": "tugla-duvarda-koyu-ahsap-pencere-denizligi",
+  "tags": {
+    "type": [
+      "pencere / panjur"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

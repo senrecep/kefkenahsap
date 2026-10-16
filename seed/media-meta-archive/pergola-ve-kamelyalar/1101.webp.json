@@ -1,0 +1,41 @@
+{
+  "source": "Pergola ve Kamelyalar/1101.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deniz kenarında uzun pergola, deck ve çapraz korkuluk",
+    "en": "Long seafront pergola with deck and X-braced rail"
+  },
+  "alt": {
+    "tr": "Deniz kenarında uzanan çatılı ahşap pergola, ahşap deck ve çapraz çıtalı korkuluk, palmiyeler",
+    "en": "Long timber pergola along the seafront with a deck, an X-braced railing and palm trees"
+  },
+  "caption": {
+    "tr": "Deck taş duvar boyunca uzanıyor, korkuluk çapraz çıtalarla bölünmüş. Pergola çatı kirişleri sıra sıra dizilmiş.",
+    "en": "The deck runs along a stone wall and the rail is split with cross bracing. The pergola rafters stand in rows."
+  },
+  "seoFilename": "deniz-kenarinda-uzun-pergola-deck-capraz-korkuluk",
+  "tags": {
+    "type": [
+      "pergola",
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

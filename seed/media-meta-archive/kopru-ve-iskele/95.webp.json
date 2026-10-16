@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/95.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Aydınlatma direkli ve halat korkuluklu deniz iskelesi",
+    "en": "Sea pier with lighting posts and rope railing"
+  },
+  "alt": {
+    "tr": "Denize uzanan ahşap iskele; kenarlarda lamba direkleri ve halat korkuluk, ucunda daha geniş bir platform",
+    "en": "Timber pier running out to sea with lamp posts and rope railing along the sides and a wider platform at the end"
+  },
+  "caption": {
+    "tr": "İskele tahtaları boydan boya yan yana döşenmiş. Kenardaki direkler halatla birbirine bağlanıyor.",
+    "en": "The deck boards run side by side along the full length. The posts at the edge are linked with rope."
+  },
+  "seoFilename": "aydinlatma-direkli-halat-korkuluklu-iskele",
+  "tags": {
+    "type": [
+      "iskele"
+    ],
+    "wood": [],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

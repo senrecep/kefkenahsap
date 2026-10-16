@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/172.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Tuğla bina önünde pergola altında bar tezgahı",
+    "en": "Bar counter under a pergola in front of a brick building"
+  },
+  "alt": {
+    "tr": "Tuğla bina önünde, çıtalı pergolanın altındaki koyu vernikli ahşap bar tezgahı ve yanında küçük dolap",
+    "en": "A dark varnished timber bar counter under a slatted pergola in front of a brick building, with a small cabinet beside it"
+  },
+  "caption": {
+    "tr": "Pergola kalın direklere oturuyor, altında koyu cilalı bir tezgah duruyor. Zemin deck tahtalarıyla döşenmiş.",
+    "en": "The pergola rests on thick posts with a dark polished counter beneath. The floor is laid with deck boards."
+  },
+  "seoFilename": "tugla-bina-onunde-pergola-altinda-ahsap-bar-tezgahi",
+  "tags": {
+    "type": [
+      "bar / tezgâh",
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "ticari mekân",
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

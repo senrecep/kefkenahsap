@@ -1,0 +1,40 @@
+{
+  "source": "Ireko-Teak/13970.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapı önünde, deck üzerinde masif eskitme alçak ahşap sehpa",
+    "en": "Solid distressed low timber table on decking in front of a glass door"
+  },
+  "alt": {
+    "tr": "Cam kapılı bir terasın deck zemininde, kalın ve eskitme görünümlü tahtalardan yapılmış geniş, alçak",
+    "en": "On the decking of a terrace with glass doors, a wide, low, solid timber table made of thick, distressed-looking boards"
+  },
+  "caption": {
+    "tr": "Sehpa kalın tahtalardan, yüzeyinde eskitilmiş bir doku var. Cam kapının hemen önünde, terasın ortasında duruyor.",
+    "en": "The table is made of thick boards with an aged texture on its surface. It stands in the middle of the terrace right in front of the glass door."
+  },
+  "seoFilename": "cam-kapi-onunde-deck-uzerinde-masif-eskitme-ahsap-alcak",
+  "tags": {
+    "type": [
+      "sehpa",
+      "deck"
+    ],
+    "wood": [
+      "teak"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

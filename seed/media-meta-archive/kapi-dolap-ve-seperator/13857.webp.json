@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/13857.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kemerli üst kenarlı ahşap kapak ve kemer parçaları",
+    "en": "Arch-topped timber door leaf and arch pieces"
+  },
+  "alt": {
+    "tr": "Duvara dayalı, üst kenarı kemerli kızıl kahve dikey tahtalı kapak ve yerde iki kemer biçimli parça",
+    "en": "Red-brown vertical-board door leaf with an arched top leaning on a wall, with two arch-shaped pieces on the floor"
+  },
+  "caption": {
+    "tr": "Kapağın üst köşesi kemer biçiminde kesilmiş. Yerdeki parçalar aynı kemer hattına göre hazırlanmış.",
+    "en": "The top corner of the leaf is cut as an arch. The pieces on the floor match the same arch line."
+  },
+  "seoFilename": "kemerli-ust-kenarli-ahsap-kapak-ve-kemer-parcalari",
+  "tags": {
+    "type": [
+      "kapı"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/5509.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar önünde küçük deck ve su terazisi",
+    "en": "Small deck and spirit level in front of a stone wall"
+  },
+  "alt": {
+    "tr": "Taş duvarın önündeki beton zemine yerleştirilen küçük deck paneli; çevresinde kırmızı beton plakalar",
+    "en": "A small deck panel set into the concrete floor in front of a stone wall, with red concrete slabs around it"
+  },
+  "caption": {
+    "tr": "Plakalar ve deck aynı seviyeye getirilmeye çalışılıyor. Duvarın dibinde taş parçaları ve kum görünüyor.",
+    "en": "The slabs and the deck are being brought to the same level. Stone pieces and sand show at the foot of the wall."
+  },
+  "seoFilename": "tas-duvar-onunde-kucuk-deck-kirmizi-beton-plakalar-ve-su",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

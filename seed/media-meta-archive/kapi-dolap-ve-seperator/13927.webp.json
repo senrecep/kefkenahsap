@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/13927.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Teras köşesinde açık tonlu dikey çıtalı paravan",
+    "en": "Pale vertical-slat screen in a terrace corner"
+  },
+  "alt": {
+    "tr": "Kırmızı fayans döşeli teras köşesinde, açık renkli dikey çıtalarla örülmüş yüksek ahşap paravan ve arkasında gri ahşap cephe",
+    "en": "Tall pale timber screen of vertical slats in a terrace corner with red tiles, with a grey timber-clad facade behind"
+  },
+  "caption": {
+    "tr": "Paravan dikey ve sık çıtalarla köşeyi kapatıyor. Çıtalar henüz boya ya da cila almamış.",
+    "en": "The screen closes the corner with close vertical slats. The slats have not yet been painted or finished."
+  },
+  "seoFilename": "teras-kosesinde-acik-tonlu-dikey-citali-paravan",
+  "tags": {
+    "type": [
+      "kafes / paravan"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

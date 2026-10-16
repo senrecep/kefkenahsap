@@ -1,0 +1,38 @@
+{
+  "source": "Ireko-Teak/9763.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kalın tahtalı büyük masa ve arkasında bank",
+    "en": "Large thick-board table with a bench behind"
+  },
+  "alt": {
+    "tr": "Beyaz duvarlı odada kalın tahtalardan yapılmış büyük ahşap masa, arkada bank",
+    "en": "Large timber table made of thick boards in a white-walled room, with a bench behind"
+  },
+  "caption": {
+    "tr": "Tabla kalın tahtalardan, ayaklar kalın ve kare kesitli. Arkada çıtalı bir bank var.",
+    "en": "The top is made of thick boards and the legs are thick and square. A slatted bench stands behind."
+  },
+  "seoFilename": "kalin-tahtali-buyuk-ahsap-masa-ve-bank",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/11711.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Budanmış ağacın çevresinden geçen deck",
+    "en": "Deck wrapping around a shaped tree"
+  },
+  "alt": {
+    "tr": "Kümeler halinde budanmış ağacın çevresinde ahşap zemin ve yanında yeşil çalılar",
+    "en": "Timber flooring around a cloud-pruned tree with green shrubs beside it"
+  },
+  "caption": {
+    "tr": "Deck ağacın etrafına oturtulmuş, ağaç tahtaların arasından çıkıyor. Kenarlar çalılarla çevrili.",
+    "en": "The deck is fitted around the tree, which rises from between the boards. Shrubs edge the sides."
+  },
+  "seoFilename": "budanmis-agac-cevresinde-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

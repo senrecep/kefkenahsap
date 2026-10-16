@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/11691.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çakıllı zeminde deck kiriş çerçevesi",
+    "en": "Deck joist frame on a gravel base"
+  },
+  "alt": {
+    "tr": "Çakıl üzerine kurulmuş ahşap kiriş çerçevesi, arkada havuz ve bahçe bitkileri",
+    "en": "Timber joist frame built over gravel, with a pool and garden plants behind"
+  },
+  "caption": {
+    "tr": "Kirişler çakılın üstünde dikdörtgen gözler oluşturuyor. Deck tahtaları bu iskeletin üzerine gelecek.",
+    "en": "The joists form rectangular bays over the gravel. The deck boards will be fixed on top of this frame."
+  },
+  "seoFilename": "cakilli-zeminde-deck-kiris-cercevesi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı",
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

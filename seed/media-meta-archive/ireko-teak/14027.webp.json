@@ -1,0 +1,35 @@
+{
+  "source": "Ireko-Teak/14027.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cilalı ağaç kütüğü dilimleri atölye zemininde",
+    "en": "Polished log slices on a workshop floor"
+  },
+  "alt": {
+    "tr": "Beton atölye zemininde dizilmiş, kabuklu ve cilalı yuvarlak ağaç kütüğü dilimleri",
+    "en": "Round polished log slices with bark laid out on a concrete workshop floor"
+  },
+  "caption": {
+    "tr": "Dilimler farklı çaplarda, kabuğu yerinde bırakılmış. Cila yüzeyde halkaları öne çıkarıyor.",
+    "en": "The slices vary in diameter and keep their bark. The polish brings out the growth rings."
+  },
+  "seoFilename": "cilali-agac-kutugu-dilimleri-atolye-zemininde",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.35
+}

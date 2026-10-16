@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/9705.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çıtalı ahşap masa tablasının üstten görünümü, şemsiye deliğiyle",
+    "en": "Top view of a slatted timber table top with its parasol hole"
+  },
+  "alt": {
+    "tr": "Yukarıdan, uzun bir ahşap masanın çıtalı tablası, ortasındaki şemsiye deliği ve yanlardaki geniş kenar tahtaları",
+    "en": "From above, the slatted top of a long timber table with a parasol hole in the middle and wider boards along its sides"
+  },
+  "caption": {
+    "tr": "Tabla ince çıtalardan, kenarda daha geniş bir çerçeve var. Çıtalar boyuna uzanıyor, şemsiye deliği ortada.",
+    "en": "The top is thin slats within a wider frame at the edge. The slats run lengthwise with the parasol hole in the centre."
+  },
+  "seoFilename": "citali-ahsap-masa-ustu-ve-semsiye-deligi-yukaridan",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

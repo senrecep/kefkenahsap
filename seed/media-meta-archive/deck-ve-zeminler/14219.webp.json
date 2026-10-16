@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/14219.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Köşeli kenarlı geniş deck",
+    "en": "Wide deck with angled edges"
+  },
+  "alt": {
+    "tr": "Çam ağacının yanında, açılı kenarlarla çakıllı zemine oturan geniş ve açık renkli deck",
+    "en": "Broad pale deck beside a pine tree, its angled edges sitting over a gravel base"
+  },
+  "caption": {
+    "tr": "Deck sınırı düz kesilmiş açılı bir çizgi izliyor. Üzerinde yaprak gölgeleri var, arkada çalı çit duruyor.",
+    "en": "The edge of the deck follows a straight-cut angled line. Leaf shadows lie across it and a hedge stands behind."
+  },
+  "seoFilename": "koseli-kenarli-genis-deck-cam-yaninda",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "orman / kır"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/13223.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Seramik terasta metal ayaklı ahşap bankların yanında yükseltilmiş platform",
+    "en": "Raised platform beside timber benches on metal legs on a tiled terrace"
+  },
+  "alt": {
+    "tr": "Açık renk seramik terasta, metal ayaklı çıtalı ahşap bankların yanında",
+    "en": "On a pale ceramic terrace, a raised platform with a grey surface beside slatted timber benches on metal legs"
+  },
+  "caption": {
+    "tr": "Bankların ayakları metal, oturak ve sırtlıkları çıtalı ahşap. Platform henüz bitmemiş görünüyor, yüzeyi gri bir malzemeyle kaplı.",
+    "en": "The benches have metal legs with slatted timber seats and backs. The platform looks unfinished, its top covered in a grey material."
+  },
+  "seoFilename": "seramik-terasta-metal-ayakli-ahsap-oturma-banklari",
+  "tags": {
+    "type": [
+      "bank",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.5
+}

@@ -1,0 +1,39 @@
+{
+  "source": "Merdivenler/8669.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Merdiven kirişleri altından, yeşil tel çitle kapalı boşluk",
+    "en": "Stair stringers from below, the gap closed with green mesh"
+  },
+  "alt": {
+    "tr": "Merdiven kirişleri ve basamak altları alttan; merdiven altı yeşil kaynaklı tel çitle kapatılmış",
+    "en": "Stair stringers and the undersides of the steps seen from below"
+  },
+  "caption": {
+    "tr": "Eğimli kirişler basamakları taşıyor, altındaki boşluk yeşil tel çitle çevrilmiş. Yanda boyalı bir duvar var.",
+    "en": "The sloping stringers carry the steps and the space beneath is enclosed with green mesh. A painted wall stands beside."
+  },
+  "seoFilename": "merdiven-kirisleri-altindan-yesil-tel-cit-ile-kapali-bosluk",
+  "tags": {
+    "type": [
+      "merdiven"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

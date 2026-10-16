@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/13742.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Eğimli zeminde ağaç yanında yükseltilmiş ıslak deck",
+    "en": "Raised wet deck beside a tree on sloping ground"
+  },
+  "alt": {
+    "tr": "Ağaç yanında çimen ve eğimli zemin üzerinde yükseltilmiş ıslak deck ve korkuluk",
+    "en": "Raised wet deck and railing beside a tree on grass and sloping ground"
+  },
+  "caption": {
+    "tr": "Deck eğim yüzünden bir yanda yerden yüksekte duruyor. Korkuluğun ardında söğüt dalları ve su görünüyor.",
+    "en": "The deck stands clear of the ground on one side because of the slope. Willow branches and water show beyond the railing."
+  },
+  "seoFilename": "egimli-zeminde-agac-yaninda-yukseltilmis-islak-deck",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "su kenarı"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/12227.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Mavi brandanın önünde çam deck ve çıtalı korkuluk",
+    "en": "Pine deck and slatted railing in front of a blue tarp"
+  },
+  "alt": {
+    "tr": "Açık renkli çam deck zemini ve çıtalı korkuluk, arkada mavi branda ve taş duvar",
+    "en": "Pale pine decking with a slatted railing, and a blue tarp and stone wall behind"
+  },
+  "caption": {
+    "tr": "Deck geniş bir zemin oluşturuyor ve korkuluk karşı kenarı çeviriyor. Tahtalarda damar ve budak izleri görünüyor.",
+    "en": "The deck forms a broad floor and the railing encloses the far edge. Grain and knots show on the boards."
+  },
+  "seoFilename": "mavi-branda-onunde-cam-deck-citali-korkuluk",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

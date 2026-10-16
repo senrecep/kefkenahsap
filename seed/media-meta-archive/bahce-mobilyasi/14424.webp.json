@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/14424.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz duvarlı köşe bank, koyu kahverengi deck ve taş plakalı yol",
+    "en": "Corner bench with white walls, a dark brown deck and a stepping-stone path"
+  },
+  "alt": {
+    "tr": "Beyaz sıvalı duvarların içindeki köşe ahşap bank ve koyu kahverengi deck zemin",
+    "en": "A corner timber bench set in white-rendered walls with a dark brown deck floor"
+  },
+  "caption": {
+    "tr": "Taş plakalar bahçeden oturma köşesine doğru uzanıyor. Köşedeki bank beyaz duvarın içine oturtulmuş.",
+    "en": "The stone slabs lead from the garden toward the seating corner. The bench in the corner is set into the white wall."
+  },
+  "seoFilename": "beyaz-duvarli-kose-ahsap-bank-koyu-kahverengi-deck-tas",
+  "tags": {
+    "type": [
+      "bank",
+      "çiçeklik / saksı",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

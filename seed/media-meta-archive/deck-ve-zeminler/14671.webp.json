@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14671.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ağaç gövdesi çevresinde zımparalanan deck",
+    "en": "Deck being sanded around a tree trunk"
+  },
+  "alt": {
+    "tr": "Ağaç gövdesi için boşluk bırakılmış geniş deckin zımpara makinesiyle işlenmesi",
+    "en": "A wide deck with an opening for a tree trunk being worked with a floor sander"
+  },
+  "caption": {
+    "tr": "Zımpara makinesi tahtalara boyuna sürülüyor. Deck çevresinde halat korkuluk ve arkada yeşil bir yamaç var.",
+    "en": "The sander is run lengthwise over the boards. A cable railing runs around the deck and a green slope lies behind."
+  },
+  "seoFilename": "agac-govdesi-cevresinde-zimparalanan-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

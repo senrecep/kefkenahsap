@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/15103.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kulübenin içi, mavi hortum ve koli",
+    "en": "Inside the shed, a blue hose and a box"
+  },
+  "alt": {
+    "tr": "Koyu ahşap kaplı duvarları ve OSB tavanı olan kulübenin içi; zeminde mavi bir hortum ve koli kutusu",
+    "en": "Inside a shed with dark timber-clad walls and an OSB ceiling, with a blue hose and a cardboard box on the floor"
+  },
+  "caption": {
+    "tr": "Duvarlar dikey kuşaklarla güçlendirilmiş, tavan kirişi çaprazlıyor. Beton zeminde yuvarlanmış mavi hortum duruyor.",
+    "en": "The walls are braced with vertical ribs and a ceiling beam crosses diagonally. A coil of blue hose lies on the concrete floor."
+  },
+  "seoFilename": "kulubenin-ic-mekani-koyu-ahsap-kapli-duvarlar-mavi-hortum-ve",
+  "tags": {
+    "type": [
+      "bahçe kulübesi / depo"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

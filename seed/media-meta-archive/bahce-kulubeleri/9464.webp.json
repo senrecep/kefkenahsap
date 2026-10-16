@@ -1,0 +1,39 @@
+{
+  "source": "Ahsap Yapilar/9464.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yeşil shingle çatılı ahşap depo, kapısı kapalı",
+    "en": "Timber shed with a green shingle roof and a closed door"
+  },
+  "alt": {
+    "tr": "Yatay tahtalı, tek kapılı küçük ahşap depo; üstü yeşil shingle ile kaplı, yanında çit ve çalılık var",
+    "en": "Small timber shed with horizontal boards and a single door, roofed in green shingle, with a fence and shrubs beside it"
+  },
+  "caption": {
+    "tr": "Depo duvara yaslanmış, yatay tahtalarla kaplı. Çatısı yeşil shingle olduğu için çevredeki bitkilerle uyumlu duruyor.",
+    "en": "The shed sits against the wall, clad in horizontal boards. Its green shingle roof blends in with the plants around it."
+  },
+  "seoFilename": "yesil-cati-kapali-kapili-ahsap-depo",
+  "tags": {
+    "type": [
+      "bahçe kulübesi / depo"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

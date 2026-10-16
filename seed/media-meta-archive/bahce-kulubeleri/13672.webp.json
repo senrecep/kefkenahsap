@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/13672.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deck zeminde yeşil çatılı kemik süslü kulübe",
+    "en": "Green-roofed bone-ornamented dog house on a deck"
+  },
+  "alt": {
+    "tr": "Deck zeminde, ağaç gövdesi ve taş duvarın önünde duran yeşil çatılı, kemik süslü köpek kulübesi",
+    "en": "Dog house with a green roof and a bone ornament standing on a deck in front of a tree trunk and a stone wall"
+  },
+  "caption": {
+    "tr": "Kulübenin yanında ince bir ağaç gövdesi ve tuğla bir bölüm görünüyor. Giriş tarafındaki yemlik çekmece gibi dışarı çıkıyor.",
+    "en": "A thin tree trunk and a brick section show beside the house. The feeding tray by the entrance pulls out like a drawer."
+  },
+  "seoFilename": "deck-zeminde-tas-duvar-onunde-yesil-catili-kemik-suslu",
+  "tags": {
+    "type": [
+      "köpek kulübesi",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,40 @@
+{
+  "source": "Deck ve Zeminler/8874.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Su kanalı yanında yarım kalmış iroko deck",
+    "en": "Half-finished iroko deck beside a water channel"
+  },
+  "alt": {
+    "tr": "Kenarında su kanalı olan alanda yeni döşenen deck tahtaları, çakıl üzerine kurulmuş çıplak ahşap iskelet",
+    "en": "New deck boards beside a water channel, with a bare timber frame set over gravel"
+  },
+  "caption": {
+    "tr": "Tahtalar kanal kenarından içeri doğru ilerliyor. Ucundaki çerçeve henüz kaplanmadı.",
+    "en": "The boards advance from the channel edge inward. The frame at the far end has not been covered yet."
+  },
+  "seoFilename": "su-kanali-yaninda-yarim-kalmis-iroko-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "su kenarı",
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

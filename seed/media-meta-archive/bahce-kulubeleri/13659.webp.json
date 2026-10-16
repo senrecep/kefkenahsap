@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/13659.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kemik süslü kulübe, gri zeminde",
+    "en": "Bone-ornamented dog house on a grey floor"
+  },
+  "alt": {
+    "tr": "Gri zeminde duran, yeşil çatılı, kemik süslü ve yemlikli vernikli köpek kulübesi; arkada televizyon görünüyor",
+    "en": "Varnished dog house with a green roof, a bone ornament and a feeding tray on a grey floor, a television visible behind"
+  },
+  "caption": {
+    "tr": "Kulübenin ön yüzünde bir kapak ve kafesli küçük bir pencere var. Arkada tuğla duvar ve televizyon duruyor.",
+    "en": "The front of the house has a hatch and a small grilled window. A brick wall and a television are behind."
+  },
+  "seoFilename": "kemik-suslu-yemlikli-vernikli-kopek-kulubesi-yesil-shingle",
+  "tags": {
+    "type": [
+      "köpek kulübesi"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,39 @@
+{
+  "source": "Ahsap Yapilar/2207.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Pergola ve çapraz korkuluktan deniz ve kıyı yerleşimi",
+    "en": "Sea and coastal houses seen through a pergola and cross-braced railing"
+  },
+  "alt": {
+    "tr": "Pergola kirişleri ve çapraz çıtalı korkuluk arasından görünen deniz, palmiye ve kıyıdaki evler",
+    "en": "Sea, palm trees and shoreline houses seen through pergola beams and a cross-braced railing"
+  },
+  "caption": {
+    "tr": "Teras denize doğru açık, korkuluk çapraz çıtalarla ikiye bölünmüş. Üstte pergola kirişleri sıralanıyor.",
+    "en": "The terrace opens toward the sea, with the railing split by cross bracing. Pergola beams run overhead."
+  },
+  "seoFilename": "pergola-capraz-korkuluk-deniz-manzarasi",
+  "tags": {
+    "type": [
+      "pergola",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı",
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

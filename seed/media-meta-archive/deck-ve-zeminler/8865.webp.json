@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/8865.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ağaç gövdesinin yanında çimde duran deck platformu",
+    "en": "Deck platform in the lawn beside a tree trunk"
+  },
+  "alt": {
+    "tr": "Ağaç gövdesi ve çiçek tarhı arasında, evin cam kapılarına açılan açık renkli alçak deck",
+    "en": "Light low deck between a tree trunk and a flower bed, opening onto the glass doors of a house"
+  },
+  "caption": {
+    "tr": "Platform çimenin içine yerleşmiş, evin kapısına bağlanıyor. Yan taraftaki ağaca dokunmadan yerleştirilmiş.",
+    "en": "The platform sits in the lawn and connects to the door of the house, set beside the tree without touching it."
+  },
+  "seoFilename": "agac-govdesi-yaninda-cimde-deck-platformu",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe",
+      "giriş"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

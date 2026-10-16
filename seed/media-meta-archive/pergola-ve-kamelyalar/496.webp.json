@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/496.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kamelya çatı yapısının içinden kalabalık cadde ve taksiler",
+    "en": "Busy street and taxis seen from inside a gazebo roof structure"
+  },
+  "alt": {
+    "tr": "Kamelyanın içinden görünen çatı kirişleri ve çapraz payandalar, dışarıda kalabalık cadde, taksiler ve bir minibüs",
+    "en": "Roof rafters and diagonal braces of a gazebo seen from inside, with a busy street, taxis and a van outside"
+  },
+  "caption": {
+    "tr": "Kamelya yolun hemen kenarında duruyor, kirişleri kalın ve açık renk. Çatı altı tahtalarla kaplı.",
+    "en": "The gazebo stands right beside the road with thick, light-toned rafters. The roof underside is boarded."
+  },
+  "seoFilename": "kamelya-cati-yapisi-icinden-kalabalik-cadde",
+  "tags": {
+    "type": [
+      "kamelya"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

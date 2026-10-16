@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/8855.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Teras kapısı önünde pergola kirişleri ve üst üste ahşap saksılıklar",
+    "en": "Pergola beams in front of a terrace door with stacked timber planters"
+  },
+  "alt": {
+    "tr": "Cam sürgülü teras kapısının önünde pergola kirişleri, kafes panel ve üst üste ahşap saksılıklar",
+    "en": "Pergola beams in front of a glass sliding terrace door, with a lattice panel and stacked timber planters"
+  },
+  "caption": {
+    "tr": "Kirişler kapının hemen önüne gelecek şekilde yerleştirilmiş. Saksılıklar kafes panelin önünde duruyor.",
+    "en": "The beams are placed to reach right in front of the door. The planters stand in front of the lattice panel."
+  },
+  "seoFilename": "teras-kapisi-onunde-pergola-kirisleri-ahsap-saksiliklar",
+  "tags": {
+    "type": [
+      "pergola",
+      "çiçeklik / saksı"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

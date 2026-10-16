@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/12107.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Perde önünde gri kahverengi deck zemini",
+    "en": "Grey-brown decking in front of a curtained door"
+  },
+  "alt": {
+    "tr": "Perdeli cam kapının önünde, çimen kenarına döşenmiş gri kahverengi deck zemini",
+    "en": "Grey-brown decking laid at the lawn edge in front of a curtained glass door"
+  },
+  "caption": {
+    "tr": "Tahtalar uzun yönde döşenmiş ve yüzeyde ince oluklar var. Kenarı çimenle düz bir çizgide bitiyor.",
+    "en": "The boards run lengthwise with fine grooves on the surface. The edge ends in a straight line along the grass."
+  },
+  "seoFilename": "perde-onunde-gri-kahverengi-deck-zemini",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

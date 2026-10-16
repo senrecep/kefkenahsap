@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/12332.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimen üzerinde küçük deck parçası ve minderli koltuk",
+    "en": "Small deck panel on grass with a cushioned armchair"
+  },
+  "alt": {
+    "tr": "Çimlik bahçede, küçük bir ahşap deck parçasının üzerine yerleştirilmiş metal çerçeveli, açık renk minderli koltuk",
+    "en": "On a garden lawn, a metal-framed armchair with light cushions set on a small timber deck panel"
+  },
+  "caption": {
+    "tr": "Küçük deck parçası, koltuğun çimene batmasını önlüyor. Yanındaki ikinci parça başka bir mobilya için hazır.",
+    "en": "The small deck panel keeps the armchair from sinking into the grass. The second panel beside it is ready for another piece of furniture."
+  },
+  "seoFilename": "cimen-uzerinde-kucuk-deck-parcasi-metal-cerceveli-minderli",
+  "tags": {
+    "type": [
+      "oturma grubu",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12058.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimen kenarında çakıllı kiriş iskeleti",
+    "en": "Gravel-filled joist frame at the lawn edge"
+  },
+  "alt": {
+    "tr": "Çimenin kenarında çakıl dolgulu alana kurulmuş deck kiriş iskeleti, yerde mavi bir hortum",
+    "en": "Deck joist frame set in a gravel fill at the edge of the lawn, with a blue hose on the ground"
+  },
+  "caption": {
+    "tr": "Çerçeve evin cam kapılarına doğru uzanıyor. Önde kesilmiş birkaç ahşap parça duruyor.",
+    "en": "The frame runs towards the glass doors of the house. A few cut pieces of timber lie in front."
+  },
+  "seoFilename": "cimen-kenarinda-cakilli-kiris-iskeleti",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

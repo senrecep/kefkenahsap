@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/5394.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar önündeki merdiven ve platform, geniş görünüm",
+    "en": "Wide view of the stairs and platform in front of the stone wall"
+  },
+  "alt": {
+    "tr": "Taş duvar önünde yapılan ahşap merdiven ve platformun geniş görünümü; iki usta çalışıyor",
+    "en": "Wide view of the timber stairs and platform being built in front of a stone wall, with two carpenters working"
+  },
+  "caption": {
+    "tr": "Platform, merdiven ve altındaki ayaklar tek karede görünüyor. Sağda iş merdiveni dayalı.",
+    "en": "The platform, the stairs and the legs underneath fit in one frame. A ladder leans on the right."
+  },
+  "seoFilename": "tas-duvar-onunde-ahsap-merdiven-ve-platform-isciler-genis",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

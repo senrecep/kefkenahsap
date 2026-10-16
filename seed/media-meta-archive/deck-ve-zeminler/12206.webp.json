@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12206.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yeşil çit önünde yükseltilmiş deck kirişleri",
+    "en": "Raised deck joists in front of a green fence"
+  },
+  "alt": {
+    "tr": "Beton ayak üzerine oturan direk ve yükseltilmiş deck kirişleri, arkada yeşil çit ve bahçe",
+    "en": "A post on a concrete footing and raised deck joists, with a green fence and garden behind"
+  },
+  "caption": {
+    "tr": "Taşıyıcı kirişler çapraz parçalarla sabitlenmiş ve zeminden yükseltilmiş. Tahta döşemesi sonraki aşamada.",
+    "en": "The bearers are braced with cross pieces and lifted off the ground. The boards come at a later stage."
+  },
+  "seoFilename": "yesil-cit-onunde-yukseltilmis-deck-kirisleri",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

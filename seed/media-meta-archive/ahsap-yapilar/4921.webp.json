@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/4921.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş kenarlı çimenin ucunda ahşap yapı",
+    "en": "Timber building at the far end of a stone-edged lawn"
+  },
+  "alt": {
+    "tr": "Taş kenarlı çim alanın uzağında, kiremit çatılı ve açık yanlı ahşap yapı; önde yaprak açmış bir ağaç",
+    "en": "Timber building with a tile roof and open sides in the distance across a stone-edged lawn, with a budding tree in front"
+  },
+  "caption": {
+    "tr": "Çimenin kenarı taşla çevrili. Yapı uzakta, önünde dallarında yeni yaprak açan bir ağaç duruyor.",
+    "en": "The lawn is edged with stone. The building stands far off, with a tree coming into leaf in front of it."
+  },
+  "seoFilename": "cimen-kenari-tas-duvar-ve-uzaktaki-kiremit-catili-ahsap-yapi",
+  "tags": {
+    "type": [
+      "sundurma / saçak / carport"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

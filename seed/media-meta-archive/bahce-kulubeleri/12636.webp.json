@@ -1,0 +1,39 @@
+{
+  "source": "Korkuluk ve Cit/12636.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Oyun evinin yakın görünümü, rampa ve korkuluklu sahanlık",
+    "en": "Close view of a playhouse with its ramp and railed landing"
+  },
+  "alt": {
+    "tr": "Yüksek ahşap oyun evinin kapısı, küçük pencere, çıtalı korkuluklu sahanlığı ve tırmanma tutamaklı rampası",
+    "en": "The door and small window of a raised timber playhouse, with a landing fenced by slats and a ramp with climbing grips"
+  },
+  "caption": {
+    "tr": "Rampanın üzerindeki çıtalar tırmanırken ayağın kaymasını önlüyor. Sahanlığın etrafı çıtalarla çevrili.",
+    "en": "The slats on the ramp keep feet from slipping while climbing. The landing is enclosed with slats."
+  },
+  "seoFilename": "yakin-plan-oyun-evi-rampa-korkuluklu-sahanlik",
+  "tags": {
+    "type": [
+      "çocuk oyun evi"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/10616.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş kenarlı alanda ayaklı merdiven ve sahanlık",
+    "en": "Stairs and landing on legs in a stone-edged area"
+  },
+  "alt": {
+    "tr": "Taş kenarlı alanda ayaklı ahşap merdiven ve sahanlık; çaprazlı korkuluk, arkada kapı ve kırmızı yapraklı çalılar",
+    "en": "Timber stairs and landing on legs in a stone-edged area, with a cross-braced railing, a door behind and red-leaved shrubs"
+  },
+  "caption": {
+    "tr": "Sahanlık, taş kenarın hizasında ahşap ayaklarla yükseltilmiş. Evin kapısı hemen arkada.",
+    "en": "The landing is raised on timber legs level with the stone edge. The house door is right behind."
+  },
+  "seoFilename": "tas-kenarli-alanda-ayakli-merdiven-sahanlik-kapi",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

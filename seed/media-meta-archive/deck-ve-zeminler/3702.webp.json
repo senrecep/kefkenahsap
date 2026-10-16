@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/3702.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dikdörtgen havuz kenarında deck şeridi",
+    "en": "Deck strip at a rectangular pool edge"
+  },
+  "alt": {
+    "tr": "Mavi dikdörtgen havuzun kenarında uzanan açık renkli deck şeridi; arkada korkuluklu yükseltilmiş platform ve çimen",
+    "en": "Pale deck strip along the edge of a blue rectangular pool, with a railed raised platform and lawn behind"
+  },
+  "caption": {
+    "tr": "Şerit havuzun taş çerçevesine paralel ilerliyor. Platformun korkuluğu dikey çıtalarla örülmüş ve arkada bir villa görünüyor.",
+    "en": "The strip runs parallel to the stone frame of the pool. The platform's railing is built from vertical slats and a villa shows behind."
+  },
+  "seoFilename": "dikdortgen-havuz-kenarinda-deck-seridi-ve-korkuluklu",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

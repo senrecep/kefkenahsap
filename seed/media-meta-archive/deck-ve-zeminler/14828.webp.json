@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/14828.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kumlu zeminde yeni yapılmış deck",
+    "en": "Newly built deck on sandy ground"
+  },
+  "alt": {
+    "tr": "Kumlu toprağa yerleştirilmiş, çevresi düzenlenmemiş dikdörtgen koyu kırmızı kahverengi deck; arkada zeytin ve selvi",
+    "en": "Rectangular dark red-brown deck on sandy soil, not yet landscaped around, with olive and cypress trees behind"
+  },
+  "caption": {
+    "tr": "Deck düz bir platform halinde duruyor, kenarında peyzaj henüz başlamamış. Toprağın içinde yeşil bir hortum ucu görünüyor.",
+    "en": "The deck stands as a flat platform and landscaping has not yet begun around it. The end of a green hose shows in the soil."
+  },
+  "seoFilename": "kumlu-zeminde-yeni-yapilmis-dikdortgen-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/9198.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yarım kalmış cephe kaplaması, yerde tahtalar",
+    "en": "Half-finished facade cladding with boards on the ground"
+  },
+  "alt": {
+    "tr": "Yarısı tamamlanmış ahşap cephe kaplaması; iskelede çalışan biri, yerde kaplama tahtaları yığılı",
+    "en": "Half-completed timber facade cladding, with someone working on the scaffold and cladding boards stacked on the ground"
+  },
+  "caption": {
+    "tr": "Cephenin bir yanı kaplanmış, diğer yanda çıtalar ve membran açıkta. Yerde sıra bekleyen kaplama tahtaları duruyor.",
+    "en": "One side of the facade is clad, while the battens and membrane are still exposed on the other. Cladding boards wait on the ground."
+  },
+  "seoFilename": "yarim-kalan-cephe-kaplama-yerde-tahtalar",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

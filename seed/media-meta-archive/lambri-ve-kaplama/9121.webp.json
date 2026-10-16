@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/9121.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "İskeleli cephede yatay kaplama, yanda kapı boşluğu",
+    "en": "Horizontal cladding on a scaffolded facade with a doorway at the side"
+  },
+  "alt": {
+    "tr": "İskelenin arkasında turuncu tonlu yatay ahşap kaplama ve sağda kapı boşluğundan görünen boş iç mekân ile merdiven",
+    "en": "Orange-toned horizontal timber cladding behind scaffolding, with an empty interior"
+  },
+  "caption": {
+    "tr": "Kaplama kapı çerçevesine kadar ilerlemiş, iç mekân henüz boş ve bitmemiş.",
+    "en": "The cladding reaches the door frame, and the interior is still empty and unfinished."
+  },
+  "seoFilename": "iskeleli-cephede-yatay-ahsap-kaplama-yanda-acik-kapi-boslugu",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

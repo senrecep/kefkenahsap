@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/13085.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çit önünde kahverengi boyalı deck",
+    "en": "Brown stained deck in front of a hedge"
+  },
+  "alt": {
+    "tr": "Çitin önünde çimene serilmiş kahverengi boyalı deck; sağ alt köşede bir nesne kısmen görünüyor",
+    "en": "Brown stained deck laid on the lawn in front of a hedge, with an object partly visible in the lower right corner"
+  },
+  "caption": {
+    "tr": "Aynı deck boyandıktan sonra koyu ve eşit bir tona ulaşmış. Tahtalar ıslak boyayla parlıyor.",
+    "en": "After staining, the same deck has reached a dark, even tone. The boards shine with the wet stain."
+  },
+  "seoFilename": "cit-onunde-kahverengi-boyali-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

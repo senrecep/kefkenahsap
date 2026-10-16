@@ -1,0 +1,38 @@
+{
+  "source": "Kopru ve Iskele/8001.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz kenarında dikmeleri dikilmiş kavisli deck alanı",
+    "en": "Curved pool deck with erected posts"
+  },
+  "alt": {
+    "tr": "Kavisli bir havuz kabuğunun çevresinde geniş açıdan görünen deck, ön plandaki kavis ve arkada dikmeler, şemsiyeler ve evler",
+    "en": "Wide view of the deck around a curved pool shell, with the curve in front and posts, parasols and houses behind"
+  },
+  "caption": {
+    "tr": "Geniş açıdan deck kavisinin tamamı izleniyor. Dikmeler ileride korkuluk taşıyacak gibi sıralanmış.",
+    "en": "The wide angle shows the full curve of the deck. The posts are lined up as if to carry a railing."
+  },
+  "seoFilename": "havuz-kenarinda-dikmeleri-dikilmis-kavisli-deck-alani",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

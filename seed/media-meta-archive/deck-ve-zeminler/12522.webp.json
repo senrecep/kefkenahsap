@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/12522.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapı önünde yan kaplamalı işlenmemiş yükseltilmiş deck",
+    "en": "Raised untreated deck with side cladding at a glass door"
+  },
+  "alt": {
+    "tr": "Cam kapının önünde yan kaplamalı, işlenmemiş açık renkli yükseltilmiş ahşap deck",
+    "en": "Raised, untreated pale timber deck with side cladding in front of a glass door"
+  },
+  "caption": {
+    "tr": "Yan yüzeydeki yatay tahtalar kalın ve eşit aralıkla döşenmiş. Deck'in kenarında taş sütun bulunuyor.",
+    "en": "The horizontal boards on the side are thick and evenly spaced. A stone pillar stands at the edge of the deck."
+  },
+  "seoFilename": "cam-kapi-onunde-yan-kapli-islenmemis-yukseltilmis-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

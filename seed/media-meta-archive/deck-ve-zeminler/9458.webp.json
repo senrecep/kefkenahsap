@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/9458.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Katlanır sandalyeli bahçe deck platformu",
+    "en": "Garden deck platform with folding chairs"
+  },
+  "alt": {
+    "tr": "Evin girişinde çimden yükselen açık renkli deck platformu, üstünde ahşap masa ve katlanır sandalyeler, yanında taş basamaklar",
+    "en": "Light deck platform rising from the lawn at a house entrance, with a wooden table"
+  },
+  "caption": {
+    "tr": "Platform bahçeyle evin arasında oturma yeri oluşturuyor. Çimden taş basamaklarla geçiliyor.",
+    "en": "The platform forms a seating spot between garden and house. Stepping stones lead to it from the lawn."
+  },
+  "seoFilename": "katlanir-sandalyeli-bahce-deck-platformu",
+  "tags": {
+    "type": [
+      "deck",
+      "masa ve sandalye takımı"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/14416.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz piket çit ve yanında inşaat malzemesi",
+    "en": "White picket fence beside building materials"
+  },
+  "alt": {
+    "tr": "Taş duvarın üzerindeki beyaz çıtalı çit, solda dikili ahşap kirişler ve yerde tahta yığını",
+    "en": "White picket fence on a stone wall, with upright timber beams on the left and a stack of boards on the ground"
+  },
+  "caption": {
+    "tr": "Çıtalar duvarın köşesinde bitiyor. Yan taraftaki kirişler başka bir işin parçası gibi duruyor.",
+    "en": "The pickets end at the corner of the wall. The beams to the side look like part of another job."
+  },
+  "seoFilename": "beyaz-piket-cit-yaninda-insaat-malzemesi",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

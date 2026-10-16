@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/13615.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Tek eğimli yeşil çatılı büyük köpek kulübesi",
+    "en": "Large dog house with a mono-pitch green roof"
+  },
+  "alt": {
+    "tr": "Tek eğimli yeşil çatılı, yatay kaplamalı büyük vernikli köpek kulübesi; atölye zemininde",
+    "en": "Large varnished dog house with horizontal cladding and a mono-pitch green roof, on a workshop floor"
+  },
+  "caption": {
+    "tr": "Kulübenin çatısı yana eğimli, yan duvarı yatay tahtalarla kaplı. Çatı sağ tarafta sundurma gibi dışarı uzanıyor.",
+    "en": "The roof slopes to one side and the side wall is clad in horizontal boards. On the right the roof extends outward like a porch."
+  },
+  "seoFilename": "tek-egimli-yesil-catili-buyuk-vernikli-kopek-kulubesi-atolye",
+  "tags": {
+    "type": [
+      "köpek kulübesi"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

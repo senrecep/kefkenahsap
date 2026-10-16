@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/10741.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dar yan bahçede açık sarı deck, sarı hortum",
+    "en": "Light yellow deck in a narrow side garden, yellow hose"
+  },
+  "alt": {
+    "tr": "Dar yan bahçede çimenin önüne döşenmiş açık sarı ahşap deck; yanda sarı bir bahçe hortumu",
+    "en": "Light yellow timber deck laid in front of the lawn in a narrow side garden, with a yellow garden hose beside it"
+  },
+  "caption": {
+    "tr": "Deck, cam kapıdan çime doğru uzanıyor. Çam tahtalarının budak ve damarları ışıkta seçiliyor.",
+    "en": "The deck runs from the glass door towards the lawn. The knots and grain of the pine boards show in the light."
+  },
+  "seoFilename": "dar-yan-bahcede-cimenin-onune-dosenmis-acik-sari-ahsap-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

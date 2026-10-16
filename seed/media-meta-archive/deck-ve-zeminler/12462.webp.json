@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/12462.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimen içine dizilmiş boyalı ahşap basamak panelleri",
+    "en": "Painted timber stepping panels set into the lawn"
+  },
+  "alt": {
+    "tr": "Çimenin içine dizilmiş, kırmızımsı boyalı küçük ahşap basamak panelleri; önde koyu renkli deck zemin",
+    "en": "Small reddish painted timber stepping panels set into the lawn, with a dark deck floor in front"
+  },
+  "caption": {
+    "tr": "Paneller çimende bir yürüyüş yolu çiziyor ve ayakları ıslak çimenden uzak tutuyor. Arkada sık yeşil bir çit var.",
+    "en": "The panels mark out a path across the lawn and keep feet off the wet grass. A dense green hedge stands behind."
+  },
+  "seoFilename": "cimen-icine-dizilmis-boyali-ahsap-basamak-panelleri",
+  "tags": {
+    "type": [
+      "deck",
+      "yürüyüş yolu"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

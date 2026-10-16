@@ -1,0 +1,40 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/8836.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yatay tahtalı çiçeklik, membran astarlı",
+    "en": "Horizontal-board planter with a membrane liner"
+  },
+  "alt": {
+    "tr": "Yatay tahtalı açık renkli ahşap çiçeklik; içine su geçirmez membran astar serilmiş",
+    "en": "Light timber planter with horizontal boards and a waterproof membrane liner laid inside"
+  },
+  "caption": {
+    "tr": "Çiçeklik alçak ve geniş, üstte düz bir kuşakla çevrili. Membran içte ortadaki kirişe kadar uzanıyor.",
+    "en": "The planter is low and wide, framed by a flat rail on top. The membrane runs inside as far as the middle brace."
+  },
+  "seoFilename": "yatay-tahtali-acik-renkli-ahsap-ciciklik-ici-yazili-membran",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "giriş",
+      "ticari mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

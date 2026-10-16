@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/13553.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yukarıdan bakışla L biçimli beyaz duvarlı bank ve deck zemini",
+    "en": "L-shaped white-walled bench and deck floor from above"
+  },
+  "alt": {
+    "tr": "Yukarıdan görünen, beyaz sıvalı duvarlarla çevrili L biçimli ahşap bank ve kırmızımsı deck zemin",
+    "en": "From above, an L-shaped timber bench enclosed by white-rendered walls and a reddish deck floor"
+  },
+  "caption": {
+    "tr": "Yukarıdan bakınca oturma köşesinin planı net görünüyor: L biçimli bank, ortada deck zemin, çevrede bitkiler.",
+    "en": "From above the plan of the nook is clear: an L-shaped bench, a deck floor in the middle and plants around."
+  },
+  "seoFilename": "yukaridan-l-seklinde-beyaz-duvarli-ahsap-bank-deck-zemini",
+  "tags": {
+    "type": [
+      "bank",
+      "deck",
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

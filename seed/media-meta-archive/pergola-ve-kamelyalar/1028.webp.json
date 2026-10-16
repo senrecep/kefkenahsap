@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/1028.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deniz üstünde deck ve çatı kirişleri takılan pergola iskeleti",
+    "en": "Pergola frame over a sea deck with roof beams being fitted"
+  },
+  "alt": {
+    "tr": "Deniz kıyısındaki deck üzerinde yükselen pergola iskeleti, çatı kirişleri takılıyor, işçiler çalışıyor",
+    "en": "Pergola frame rising over a seafront deck, with roof beams being fitted and workers on site"
+  },
+  "caption": {
+    "tr": "Direkler deck zeminden yükseliyor, üstte kirişler yan yana yerleştiriliyor. Arkada açık deniz görünüyor.",
+    "en": "The posts rise from the deck floor and beams are being laid across the top. Open sea shows behind."
+  },
+  "seoFilename": "deniz-ustunde-deck-pergola-iskeleti-kiris-montaji",
+  "tags": {
+    "type": [
+      "pergola",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

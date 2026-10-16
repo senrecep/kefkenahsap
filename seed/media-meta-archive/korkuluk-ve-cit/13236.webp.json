@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/13236.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bahçe salıncağı arkasında köşe yapan çıtalı ahşap çit",
+    "en": "Slatted timber fence forming a corner behind the garden swing"
+  },
+  "alt": {
+    "tr": "Çimde, yeşil çalı ve bahçe salıncağının önünde köşe yapan sivri uçlu açık renk çıtalı ahşap çit",
+    "en": "A light pointed-slat timber fence forming a corner on the lawn in front of a green shrub and a garden swing"
+  },
+  "caption": {
+    "tr": "Çit parçaları dik açıyla birleşip çalının dibini çeviriyor. Arkada koyu renk salıncak ve beyaz tente görünüyor.",
+    "en": "The fence sections meet at a right angle and enclose the foot of the shrub. A dark swing and a white canopy are visible behind."
+  },
+  "seoFilename": "bahce-salincagi-arkasinda-kose-yapan-citali-ahsap-cit",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

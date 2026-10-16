@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/12022.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Köşe dolabının dikey tahtalı kapağı ve metal tutucuları",
+    "en": "Vertical-board door and metal catches on a corner cabinet"
+  },
+  "alt": {
+    "tr": "Eğimli kapaklı köşe dolabın dikey tahtalı kapağı, iki yanında metal sürgü ve menteşeler; kaldırım taşı zemin üzerinde",
+    "en": "Vertical-board door of a corner cabinet with a sloped lid, with metal bolts and hinges on both sides"
+  },
+  "caption": {
+    "tr": "Kapak dikey tahtalarla yapılmış ve iki menteşeyle bağlanıyor. Sürgü kapağı yan taraftan sabitliyor.",
+    "en": "The door is made of vertical boards on two hinges, with a bolt holding it shut at the side."
+  },
+  "seoFilename": "kose-dolabinin-dikey-tahtali-kapagi-metal-tutuculari",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

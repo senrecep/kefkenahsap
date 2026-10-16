@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/7930.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beton duvar boyunca merdiven ve yerde paletler",
+    "en": "Stairs along a concrete wall with pallets on the ground"
+  },
+  "alt": {
+    "tr": "Beton istinat duvarı boyunca uzanan çaprazlı korkuluklu ahşap merdiven; zeminde paletler, arkada evler",
+    "en": "Timber stairs with a cross-braced railing running along a concrete retaining wall"
+  },
+  "caption": {
+    "tr": "Merdiven duvarın boyunca eğik uzanıyor. Alt kısımdaki boşlukta iki palet dayalı duruyor.",
+    "en": "The stairs run diagonally along the wall. Two pallets lean in the space underneath."
+  },
+  "seoFilename": "beton-duvar-boyunca-caprazli-merdiven-yerde-paletler",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

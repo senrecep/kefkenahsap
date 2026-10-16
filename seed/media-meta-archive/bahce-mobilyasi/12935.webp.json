@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/12935.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "İçinde depolama bölmesi olan ahşap oturma ünitesi",
+    "en": "Timber seating unit with an internal storage compartment"
+  },
+  "alt": {
+    "tr": "Açık renkli ahşap oturma ünitesinin kapağı kaldırılmış, içindeki koyu astarlı depolama bölmesi görünüyor; yanda kereste var",
+    "en": "The lid of a light timber seating unit lifted to show a dark-lined storage compartment, with lumber standing beside it"
+  },
+  "caption": {
+    "tr": "Kapak elle kaldırılıyor ve altındaki bölmeye rahatça ulaşılıyor. Bölmenin içi koyu bir malzemeyle kaplanmış.",
+    "en": "The lid is lifted by hand, giving easy access to the compartment beneath. The inside is lined with a dark material."
+  },
+  "seoFilename": "icinde-depolama-bolmesi-olan-ahsap-oturma-unitesi",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

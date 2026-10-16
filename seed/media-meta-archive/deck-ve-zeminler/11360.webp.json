@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/11360.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Uzun ıslak görünümlü kahverengi deck",
+    "en": "Long wet-looking brown deck"
+  },
+  "alt": {
+    "tr": "Uzun, ıslak görünümlü kahverengi ahşap deck zemini; kenarda çit ve masa",
+    "en": "Long brown timber deck floor with a wet look, with a fence and table at the side"
+  },
+  "caption": {
+    "tr": "Deck boydan boya uzanıyor, yüzeyde güneş ve su izleri var. Uzak ucunda ahşap çit ve masa seçiliyor.",
+    "en": "The deck runs a long way with sun and water marks on the surface. A timber fence and a table are visible at the far end."
+  },
+  "seoFilename": "uzun-islak-gorunumlu-kahverengi-ahsap-deck-zemini-kenarda",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,35 @@
+{
+  "source": "Ireko-Teak/12906.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Jakuzinin dikey ahşap şeritli kaplaması",
+    "en": "Vertical timber-strip cladding on a hot tub"
+  },
+  "alt": {
+    "tr": "Beyaz jakuzinin yan yüzeyini kaplayan dikey, kızıl kahve cilalı ahşap şeritler ve yanında ahşap oturak ile çıtalı zemin",
+    "en": "Vertical reddish-brown polished timber strips cladding the side of a white hot tub"
+  },
+  "caption": {
+    "tr": "Jakuzinin gövdesi baştan sona dikey çıtalarla kaplanmış. Yanındaki oturak ve çıtalı zemin aynı ahşaptan.",
+    "en": "The tub body is clad top to bottom in vertical slats. The seat and slatted floor beside it match."
+  },
+  "seoFilename": "jakuzinin-dikey-ahsap-seritli-kaplamasi",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.5
+}

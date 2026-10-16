@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/10569.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölyede masa üzerinde beyaz boyalı küçük yatak",
+    "en": "Small white painted bed on a workbench in the workshop"
+  },
+  "alt": {
+    "tr": "Atölye tezgahı üzerinde duran beyaz boyalı, kemerli oyuk detaylı küçük ahşap yatak",
+    "en": "A small white painted timber bed with arched cut-out detail sitting on a workshop bench"
+  },
+  "caption": {
+    "tr": "Yatak atölyede tezgahın üstüne konmuş, arkada kereste ve boya numune panoları görünüyor.",
+    "en": "The bed has been placed on the bench in the workshop, with timber and paint sample boards visible behind."
+  },
+  "seoFilename": "atolyede-masa-uzerinde-beyaz-boyali-kemerli-ahsap-mobilya",
+  "tags": {
+    "type": [
+      "yatak / karyola"
+    ],
+    "wood": [],
+    "setting": [
+      "atölyede üretim"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

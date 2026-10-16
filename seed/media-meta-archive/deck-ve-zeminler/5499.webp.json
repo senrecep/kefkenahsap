@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/5499.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Küçük ahşap kabin içinde deck zemin",
+    "en": "Deck floor inside a small timber cabin"
+  },
+  "alt": {
+    "tr": "Çam tahtalarla kaplanmış küçük bir ahşap kabinin içine döşenmiş yatay tahtalı deck zemin; kenarda kırmızı beton plakalar",
+    "en": "Deck floor of horizontal boards laid inside a small cabin clad in pine boards, with red concrete slabs at the edge"
+  },
+  "caption": {
+    "tr": "Kabinin duvarları ve içindeki oturak aynı açık renkli ahşapla yapılmış. Zemin tahtaları kabin girişine paralel döşenmiş.",
+    "en": "The walls of the cabin and the seat inside are made of the same pale timber. The floor boards run parallel to the cabin entrance."
+  },
+  "seoFilename": "kucuk-ahsap-kabin-icinde-deck-zemin-kirmizi-beton-plaka",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

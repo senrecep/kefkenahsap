@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/9084.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bej boyalı eski ahşap binanın dikey çekim cephesi",
+    "en": "Vertical view of an old beige-painted timber building facade"
+  },
+  "alt": {
+    "tr": "Bej boyalı yatay kaplamalı eski bir ahşap binanın yukarıya doğru çekilmiş cephesi, kalın çerçeveli pencereler ve altta kablo",
+    "en": "Upward view of the facade of an old beige-painted horizontal-clad timber building with thick-framed windows"
+  },
+  "caption": {
+    "tr": "Tahtaların bindirme çizgileri pencere çerçevelerinin altında kesintisiz sürüyor.",
+    "en": "The overlap lines of the boards carry on uninterrupted under the window frames."
+  },
+  "seoFilename": "bej-boyali-eski-ahsap-binanin-dikey-cekilmis-pencereli",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

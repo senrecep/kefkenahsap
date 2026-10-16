@@ -1,0 +1,39 @@
+{
+  "source": "Ireko-Teak/13944.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Duşakabin tabanında çıtalı teak ızgara",
+    "en": "Slatted teak grating on a shower tray floor"
+  },
+  "alt": {
+    "tr": "Duşakabin içinde, duş başlığının altında sıralanmış koyu ve bal tonlu ahşap çıtalardan yapılmış zemin ızgarası",
+    "en": "Floor grating made of dark and honey-toned timber slats inside a shower cubicle, below the shower head"
+  },
+  "caption": {
+    "tr": "Çıtalar aralıklı sıralanmış, su aralardan akıyor. Izgara duşakabin tabanına oturuyor.",
+    "en": "The slats are spaced so water drains between them. The grating sits on the shower tray."
+  },
+  "seoFilename": "dusakabin-tabaninda-citali-teak-izgara",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "teak"
+    ],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

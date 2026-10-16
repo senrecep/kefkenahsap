@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/10457.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yeni deck kenarı ve panjurlu ahşap kasa",
+    "en": "New deck edge and a louvred timber cabinet"
+  },
+  "alt": {
+    "tr": "Yeni döşenmiş ahşap deck kenarı ve yanında duran panjurlu ahşap kasa; arkada komşu evler",
+    "en": "Edge of a newly laid timber deck with a louvred timber cabinet beside it and neighbouring houses behind"
+  },
+  "caption": {
+    "tr": "Kasa dikey panjurlu, deckin köşesine yakın duruyor. Deck tahtaları çerçeve tahtasıyla kapanıyor.",
+    "en": "The cabinet has vertical louvres and stands near the corner of the deck. The deck boards finish with a border board."
+  },
+  "seoFilename": "yeni-ahsap-deck-kenari-ve-yaninda-panjurlu-ahsap-kasa",
+  "tags": {
+    "type": [
+      "deck",
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

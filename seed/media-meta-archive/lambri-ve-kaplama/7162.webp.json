@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/7162.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Tek katlı evin yarı ahşap kirişli cephesi",
+    "en": "Half-timbered facade of a single-storey house"
+  },
+  "alt": {
+    "tr": "Krem sıvalı yüzeyde koyu ahşap kirişler ve çaprazlar, ahşap çerçeveli pencereler ve önde alçak ahşap korkuluk",
+    "en": "Dark timber beams and diagonals on cream render, with timber-framed windows and a low timber railing in front"
+  },
+  "caption": {
+    "tr": "Ahşap kirişler cephenin ana çizgisini veriyor, pencere çerçeveleri aynı tonda.",
+    "en": "The timber beams set the main lines of the facade, and the window frames match in tone."
+  },
+  "seoFilename": "tek-katli-evin-yari-ahsap-kirisli-cephesi-ahsap-pencereler",
+  "tags": {
+    "type": [
+      "cephe kaplaması",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

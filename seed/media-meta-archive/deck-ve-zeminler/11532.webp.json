@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/11532.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çit önünde turuncu deck ve çift kapılı dolap",
+    "en": "Orange deck in front of a hedge with a double-door cabinet"
+  },
+  "alt": {
+    "tr": "Yeşil çitin önünde çimene serilmiş turuncu deck ve deckin ucunda çift kapılı ahşap dolap",
+    "en": "Orange deck laid on the lawn in front of a green hedge, with a double-door timber cabinet at its end"
+  },
+  "caption": {
+    "tr": "Dolap panjurlu çift kapıya sahip, deck dolabın önüne kadar uzanıyor. Çim kenarına ahşap kazık sırası çakılmış.",
+    "en": "The cabinet has louvred double doors and the deck extends up to it. A row of timber stakes edges the lawn."
+  },
+  "seoFilename": "cit-onunde-cimene-serilmis-turuncu-deck-ve-cift-kapili-ahsap",
+  "tags": {
+    "type": [
+      "deck",
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

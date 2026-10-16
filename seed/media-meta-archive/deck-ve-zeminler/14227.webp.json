@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14227.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz kenarında koyu deck şeridi",
+    "en": "Dark deck strip at the pool edge"
+  },
+  "alt": {
+    "tr": "Mavi havuzun alt kenarında uzanan koyu kahverengi deck, önünde çakıl şeridi ve arkada budanmış çit",
+    "en": "Dark brown deck along the near side of a blue pool, with a pebble strip in front and a trimmed hedge behind"
+  },
+  "caption": {
+    "tr": "Deck havuzun taş çerçevesini boydan boya takip ediyor. Çimende dökülmüş birkaç kuru yaprak görünüyor.",
+    "en": "The deck follows the stone pool frame along its whole length. A few fallen dry leaves lie on the lawn."
+  },
+  "seoFilename": "havuz-kenarinda-koyu-deck-seridi-ve-cit",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

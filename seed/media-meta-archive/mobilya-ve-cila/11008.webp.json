@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/11008.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Alçak ahşap yatak çerçevesi ve başlık",
+    "en": "Low timber bed frame and headboard"
+  },
+  "alt": {
+    "tr": "Parke zeminli odada, duvara yaslanan ahşap başlıklı alçak ahşap yatak çerçevesi",
+    "en": "A low timber bed frame with a timber headboard against the wall in a room with a laminate floor"
+  },
+  "caption": {
+    "tr": "Yatak çerçevesi yere yakın, kalın çıtalardan yapılmış. Başlık duvardan hafif ayrık duruyor.",
+    "en": "The bed frame sits close to the floor and is made of thick battens. The headboard stands slightly off the wall."
+  },
+  "seoFilename": "alcak-ahsap-yatak-cercevesi-ve-baslik-parke-oda",
+  "tags": {
+    "type": [
+      "yatak / karyola"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

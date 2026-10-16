@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14975.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölye koridorunda yan yana duran koyu çıtalı kasalar",
+    "en": "Dark slatted cover boxes side by side in the workshop passage"
+  },
+  "alt": {
+    "tr": "Atölye zemininde yan yana duran, yatay çıtalı gövdeli ve tahta kapaklı iki koyu kahve ahşap kasa, arkada kereste",
+    "en": "Dark brown timber boxes with horizontally slatted sides and boarded tops side by side on a workshop floor"
+  },
+  "caption": {
+    "tr": "Kasalar aynı ölçüde ve aynı tonda hazırlanmış. Montaj için atölyede sıraya dizilmiş.",
+    "en": "The boxes are made to the same size and tone and lined up in the workshop for fitting."
+  },
+  "seoFilename": "atolye-koridorunda-yan-yana-duran-koyu-citali-kasalar",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/14532.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çit önünde uyarı levhalı uzun ahşap dolap",
+    "en": "Long timber cabinet with a warning plate in front of a hedge"
+  },
+  "alt": {
+    "tr": "Çalı ve beyaz tahta çitin önünde taş tabanlı uzun koyu ahşap dolap, siyah menteşeli kapaklar ve sarı uyarı levhası",
+    "en": "Long dark timber cabinet on a stone base in front of a hedge and white picket fence"
+  },
+  "caption": {
+    "tr": "Dolabın sol yanında duvara bağlı bir cihaz görünüyor. Kapakların üstündeki levha tehlike uyarısı veriyor.",
+    "en": "A wall-mounted unit is visible on the left of the cabinet. The plate on the doors carries a hazard warning."
+  },
+  "seoFilename": "cit-onunde-uyari-levhali-uzun-ahsap-dolap",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/3790.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimenlikte yüksek yatay çıtalı açık tonlu kasa",
+    "en": "Tall pale horizontal-slat housing on a lawn"
+  },
+  "alt": {
+    "tr": "Çimenlik üzerinde yatay aralıklı açık renkli çıtalarla örülmüş yüksek kare kasa, çıtaların arasında koyu cihaz görünüyor",
+    "en": "Tall square-section timber housing of pale spaced horizontal slats standing on a lawn"
+  },
+  "caption": {
+    "tr": "Çıtalar sık aralıklarla dizilmiş, cihazı görüşten gizleyip havalandırıyor. Kasa bahçe duvarının dibinde duruyor.",
+    "en": "The slats are spaced closely, hiding the unit from view while letting it breathe. The housing stands at the foot of the garden wall."
+  },
+  "seoFilename": "cimenlikte-yuksek-yatay-citali-acik-tonlu-kasa",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/13291.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Pencere dibinde, çimenin kenarına yerleştirilmiş çıtalı kasa",
+    "en": "Slatted housing set at the lawn edge beside a window"
+  },
+  "alt": {
+    "tr": "Beyaz duvarın ve ahşap doğramalı cam kapının yanında, çimenin kenarına konmuş yatay çıtalı kızıl kahve küçük ahşap kasa",
+    "en": "Small red-brown timber housing with horizontal slats at the lawn edge beside a white wall and a glass door"
+  },
+  "caption": {
+    "tr": "Kasa duvarın dibinde, cam kapıdan sonra kalan köşeye yerleşmiş. Rengi doğrama ile uyumlu.",
+    "en": "The housing sits at the foot of the wall in the corner left beyond the glass door. Its colour matches the frame."
+  },
+  "seoFilename": "pencere-dibinde-cimenin-kenarina-yerlestirilmis-citali-kasa",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

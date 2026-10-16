@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/7258.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Karo teraste üç vernikli katlanır sandalye",
+    "en": "Three varnished folding chairs on a tiled terrace"
+  },
+  "alt": {
+    "tr": "Karo döşemeli teraste yan yana duran, çıtalı sırtlı üç vernikli ahşap sandalye",
+    "en": "Three varnished timber chairs with slatted backs side by side on a tiled terrace"
+  },
+  "caption": {
+    "tr": "Sandalyelerin sırtları uzun çıtalardan, oturakları eğimli. Katlanabilir yapıdalar.",
+    "en": "The chair backs have long slats and the seats are angled. The chairs fold."
+  },
+  "seoFilename": "karo-terasta-vernikli-katlanir-ahsap-sandalyeler",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

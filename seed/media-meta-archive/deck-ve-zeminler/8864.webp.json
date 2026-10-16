@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/8864.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bina cephesi boyunca uzanan alçak deck platformu",
+    "en": "Low deck platform running along a building front"
+  },
+  "alt": {
+    "tr": "Zemin kat dış duvarı boyunca çimenin üzerine döşenmiş açık renkli emprenyeli çam deck platformu",
+    "en": "Light pressure-treated pine deck platform laid on the lawn along the ground-floor wall of a building"
+  },
+  "caption": {
+    "tr": "Tahtalar duvara dik döşenmiş ve platform çimenle aynı hizada duruyor. Yüzeyde vida izleri düzgün sıralı.",
+    "en": "The boards run across the platform and sit close to the lawn level. The screw lines are neat and even."
+  },
+  "seoFilename": "bina-cephesi-boyunca-uzanan-alcak-deck-platformu",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe",
+      "giriş"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

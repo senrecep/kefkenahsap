@@ -1,0 +1,40 @@
+{
+  "source": "Kopru ve Iskele/8080.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Böbrek biçimli havuz ve köprü kuş bakışı, solda yuvarlak havuzcuk",
+    "en": "Bird's-eye view of the kidney-shaped pool and bridge with a round pool at left"
+  },
+  "alt": {
+    "tr": "Yukarıdan görünen, deckle çevrili böbrek biçimli havuz ve üzerinde köprü; solda yuvarlak küçük havuz, arkada köşkler",
+    "en": "View from above of a kidney-shaped pool edged with decking with a bridge across it"
+  },
+  "caption": {
+    "tr": "Deck havuzun kenarını boydan boya izliyor. Köprü havuzun ortasındaki dar boğazı geçiyor.",
+    "en": "The decking follows the pool edge along its whole length. The bridge crosses the narrow neck in the middle of the pool."
+  },
+  "seoFilename": "bobrek-bicimli-havuz-ve-kopru-kus-bakisi",
+  "tags": {
+    "type": [
+      "köprü",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

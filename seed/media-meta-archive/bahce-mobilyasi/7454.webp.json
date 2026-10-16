@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/7454.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beton zeminde kırmızımsı kahve piknik masası, bağlı bankları ile",
+    "en": "Reddish-brown picnic table with attached benches on a concrete floor"
+  },
+  "alt": {
+    "tr": "Beton zeminde duran, kırmızımsı kahverengi boyalı, çaprazlanan ayaklı ve bağlı bankları olan ahşap piknik masası",
+    "en": "A reddish-brown painted timber picnic table with crossed legs and attached benches on a concrete floor"
+  },
+  "caption": {
+    "tr": "Piknik masasının banklar masayla tek iskelet olarak birleşmiş. Tahtalar vidayla sabitlenmiş, ayaklar çapraz.",
+    "en": "The benches of the picnic table are part of the same frame as the table. The boards are screwed on and the legs are crossed."
+  },
+  "seoFilename": "beton-zeminde-kirmizimsi-kahve-piknik-masasi-bagli-bankli",
+  "tags": {
+    "type": [
+      "piknik masası"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

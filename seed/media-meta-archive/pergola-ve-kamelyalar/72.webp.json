@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/72.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimlik üzerinde kafes panelli ahşap pergola, taş zemin",
+    "en": "Lattice-panelled timber pergola on a lawn with stone paving"
+  },
+  "alt": {
+    "tr": "Çimlik bahçede taş zemin üzerinde dört yanı kafes panelli ahşap pergola, üstte sık kirişler",
+    "en": "Timber pergola with lattice panels on all sides on stone paving in a lawn garden, with closely spaced beams above"
+  },
+  "caption": {
+    "tr": "Kafes paneller yan yüzleri kapatıyor, ön tarafı açık. Çatı iki yönlü kirişle örülmüş.",
+    "en": "The lattice panels close the side faces and the front is open. The roof is built with beams in two directions."
+  },
+  "seoFilename": "cimlik-uzerinde-kafes-panelli-ahsap-pergola-tas-zemin",
+  "tags": {
+    "type": [
+      "pergola",
+      "kafes / paravan"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

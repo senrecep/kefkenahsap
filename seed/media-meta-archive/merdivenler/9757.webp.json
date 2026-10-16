@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/9757.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yandan çaprazlı korkuluk ve ahşap basamaklar",
+    "en": "Cross-braced railing and timber steps from the side"
+  },
+  "alt": {
+    "tr": "Yandan görünen çaprazlı korkuluk ve ahşap basamaklar; cam kapılı ev cephesi ve açık toprak yan bahçe",
+    "en": "Side view of a cross-braced railing and timber steps, with a glass-doored house facade and a bare-soil side garden"
+  },
+  "caption": {
+    "tr": "Korkuluğun iki sırası yandan üst üste görünüyor, ucunda kalın bir direk duruyor. Çevre henüz düzenlenmemiş.",
+    "en": "Both rows of the railing show one over the other from the side, with a thick post at the end. The surroundings are not yet landscaped."
+  },
+  "seoFilename": "yandan-caprazli-korkuluk-ve-ahsap-basamaklar-yan-bahce",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

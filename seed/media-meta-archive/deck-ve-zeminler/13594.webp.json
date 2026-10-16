@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/13594.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "İç mekânda parlak yansımalı vernikli parke",
+    "en": "Varnished parquet with bright reflections indoors"
+  },
+  "alt": {
+    "tr": "İç mekânda parlak yansımalı, vernikli koyu kahverengi ahşap parke",
+    "en": "Dark brown varnished timber parquet with bright reflections indoors"
+  },
+  "caption": {
+    "tr": "Verniğin parlaklığı odanın ışığını yüzeyde topluyor ve tahta renklerinin farkını öne çıkarıyor. Yüzey düzgün ve çiziksiz.",
+    "en": "The shine of the varnish gathers the room's light on the surface and brings out the difference between board colours. The surface is even and unmarked."
+  },
+  "seoFilename": "ic-mekanda-parlak-yansimali-vernikli-parke",
+  "tags": {
+    "type": [
+      "parke / iç zemin"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

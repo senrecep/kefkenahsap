@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/552.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bahçeye bakan korkuluk köşesi ve geniş deck zemini",
+    "en": "Railing corner overlooking the garden and broad deck floor"
+  },
+  "alt": {
+    "tr": "Palmiyeli bir bahçeye bakan geniş deck zemini, çapraz korkuluk, kalın tutamak kirişi ve pergola kolonları",
+    "en": "Broad deck floor overlooking a garden with palms, with cross railing, a thick handrail beam and pergola columns"
+  },
+  "caption": {
+    "tr": "Kalın tutamak kirişi korkuluğu boydan boya taşıyor. Zemin tahtaları uzun yönde döşenmiş.",
+    "en": "A thick handrail beam runs the full length of the railing. The floor boards run lengthwise."
+  },
+  "seoFilename": "bahceye-bakan-korkuluk-kosesi-genis-deck-zemini",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk",
+      "pergola"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe",
+      "ticari mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

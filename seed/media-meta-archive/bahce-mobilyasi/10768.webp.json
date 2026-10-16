@@ -1,0 +1,36 @@
+{
+  "source": "Ireko-Teak/10768.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Gri eskimiş çerçeveli masa tablası, çıtalar ve şemsiye deliğiyle",
+    "en": "Weathered grey-framed table top with slats and a parasol hole"
+  },
+  "alt": {
+    "tr": "Yakından, kenar çerçevesi gri ve eskimiş, çıtaları yenilenmiş altın kahve bir masa tablası ve ortada şemsiye deliği",
+    "en": "A close view of a table top with a grey, weathered edge frame and renewed golden-brown slats"
+  },
+  "caption": {
+    "tr": "Çerçevenin kenarı hâlâ gri, çıtaların yüzeyi ise tazelenmiş. Bakım işinin yarım kaldığı noktada çekilmiş.",
+    "en": "The edge of the frame is still grey while the slat surface has been refreshed. The shot catches the work part-way through."
+  },
+  "seoFilename": "gri-eskimis-cerceveli-masa-tablasi-citalar-ve-semsiye-deligi",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process",
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

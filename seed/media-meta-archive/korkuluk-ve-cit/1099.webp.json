@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/1099.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deniz manzaralı deck, çapraz korkuluk ve pergola kirişleri",
+    "en": "Sea-view deck with cross-braced railing and pergola beams"
+  },
+  "alt": {
+    "tr": "Denize bakan deck üzerinde kalın çaprazlı ahşap korkuluk, üstte pergola kirişleri, uzakta başka bir çatılı yapı ve palmiyeler",
+    "en": "Thick cross-braced timber railing on a deck facing the sea, with pergola beams above and another roofed structure"
+  },
+  "caption": {
+    "tr": "Pergola kirişleri deckin üstünü çerçeveliyor, korkuluk sahanlıkta köşe yapıyor.",
+    "en": "The pergola beams frame the top of the deck, and the railing makes a corner at the landing."
+  },
+  "seoFilename": "deniz-manzarali-deck-capraz-korkuluk-ve-pergola-kirisleri",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

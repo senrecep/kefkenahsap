@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/14215.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Gövde boşluklu, ağaç gölgeli deck",
+    "en": "Deck with a trunk opening, in tree shade"
+  },
+  "alt": {
+    "tr": "Çam gövdesinin çevresinde kare boşluk bırakılmış, yaprak gölgeleriyle kaplı açık renkli deck yolu",
+    "en": "Pale deck path with a square opening around a pine trunk, covered in leaf shadows"
+  },
+  "caption": {
+    "tr": "Tahta uçları gövdeye değmeden kesilmiş, ağaç yerinde duruyor. Yol çalı çitle sınırlanıyor.",
+    "en": "The board ends are cut clear of the trunk so the tree stays in place. A hedge borders the path."
+  },
+  "seoFilename": "agac-golgesinde-govde-bosluklu-agac-golgeli-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "orman / kır"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/10417.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Açık kahve tonlu deck döşendi, çevresi toprak",
+    "en": "Light brown deck laid, surrounded by bare soil"
+  },
+  "alt": {
+    "tr": "Cam kapıların önünde döşenmiş açık kahve tonlu ahşap deck zemini; çevresi henüz toprak",
+    "en": "Light brown timber deck floor laid in front of glass doors, with bare soil still around it"
+  },
+  "caption": {
+    "tr": "Tahtalar uzun ve dar, derzler düzgün. Deck kenarları işlenmiş, çevresinde bahçe düzenlemesi sürüyor.",
+    "en": "The boards are long and narrow with even joints. The edges of the deck are finished while the garden work around it continues."
+  },
+  "seoFilename": "acik-kahve-tonlu-ahsap-deck-zemini-dosenmis-cevresi-henuz",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

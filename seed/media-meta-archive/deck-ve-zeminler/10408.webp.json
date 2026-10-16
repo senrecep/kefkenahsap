@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/10408.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çakıl ve toprakta deck altyapısı, yanında klima",
+    "en": "Deck substructure on gravel and soil beside an AC unit"
+  },
+  "alt": {
+    "tr": "Çakıl ve toprak üzerinde ahşap deck altyapısı; yanında klima ünitesi ve duvara dayalı tahta",
+    "en": "Timber deck substructure on gravel and soil with an air-conditioning unit beside it and a board leaning on the wall"
+  },
+  "caption": {
+    "tr": "Kirişlerin arası çakıllı, bir bölümü kumla düzeltilmiş. Klima ünitesi duvarın dibinde duruyor.",
+    "en": "The gaps between the joists are gravelled and one section has been levelled with sand. The AC unit stands at the foot of the wall."
+  },
+  "seoFilename": "cakil-ve-toprak-uzerinde-ahsap-deck-altyapisi-yaninda-klima",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

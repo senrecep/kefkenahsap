@@ -1,0 +1,33 @@
+{
+  "source": "Kopru ve Iskele/10565.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölyede gazete üzerinde beyaz boyalı küçük yatak modeli",
+    "en": "Small white-painted bed model on newspaper in the workshop"
+  },
+  "alt": {
+    "tr": "Atölye tezgâhında gazete üzerine konmuş, kenarları dikey yarıklı beyaz boyalı küçük ahşap yatak modeli",
+    "en": "Small white-painted timber bed model with vertical slots in its ends, set on newspaper on a workshop bench"
+  },
+  "caption": {
+    "tr": "Model beyaz boyalı, baş ve ayak tarafında dikey yarıklar var. Arkada atölyenin alet rafları görünüyor.",
+    "en": "The model is painted white with vertical slots in the head and foot. The workshop tool shelves are behind it."
+  },
+  "seoFilename": "atolyede-beyaz-boyali-kucuk-yatak-modeli",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.3
+}
