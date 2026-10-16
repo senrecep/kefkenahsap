@@ -51,6 +51,13 @@ it('attaches the suggested tags that exist on approval, keeping the editor tags 
   expect((await tagsOf(id)).sort(byId)).toEqual([tag.teak!, tag.deck!, tag.bahce!].sort(byId))
 })
 
+it('keeps tags sent in the approving request and adds one wood tag from a multi-wood suggestion', async () => {
+  const two = { promptVersion: 'tagImage@3', tags: { type: [], wood: [`Bilinmeyen ${stamp}`, `zz iroko ${stamp}`, `ZZ TEAK ${stamp}`], setting: [], finish: [], stage: [] } }
+  const id = await create({ status: 'pending', aiSuggestion: two })
+  await payload.update({ collection: 'media', id, locale: 'tr', data: { status: 'approved', tags: [tag.bahce!] } })
+  expect((await tagsOf(id)).sort(byId)).toEqual([tag.bahce!, tag.iroko!].sort(byId))
+})
+
 it('works for a bulk approve and leaves a pre-tagImage@2 suggestion alone', async () => {
   const fresh = await create({ status: 'hidden', aiSuggestion: suggestion() })
   const old = await create({ status: 'pending', aiSuggestion: suggestion('tagImage@1') })

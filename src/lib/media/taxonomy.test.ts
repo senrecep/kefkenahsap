@@ -63,6 +63,13 @@ describe('tagIdsToAdd', () => {
     expect(r.add).toEqual([1, 4])
   })
 
+  it('adds one tag per single-value axis: the first value that maps to a tag; unmapped values are still listed', () => {
+    const tags: TagRef[] = [...TAGS, { id: 11, axis: 'wood', slug: 'iroko', name: 'İroko' }, { id: 12, axis: 'wood', slug: 'teak', name: 'Teak' }]
+    const r = tagIdsToAdd({}, { wood: ['bilinmeyen', 'iroko', 'teak'], stage: ['finished', 'before', 'detail'], setting: ['bahce', 'teras'] }, tags, [])
+    expect(r.add).toEqual([3, 4, 8, 11])
+    expect(r.unmapped).toEqual(['wood:bilinmeyen'])
+  })
+
   it('does not match a slug on another axis', () => {
     expect(tagIdsToAdd({ setting: ['deck'] }, undefined, TAGS, []).add).toEqual([])
   })
@@ -153,6 +160,11 @@ describe('approvalTags', () => {
   it('returns the current tags when there is nothing to add', () => {
     const current = [3]
     expect(approvalTags(s({ setting: ['Bahçe'], stage: ['finished'] }), TAGS, current)).toBe(current)
+  })
+
+  it('keeps one tag per single-value axis from a multi-value suggestion', () => {
+    const tags: TagRef[] = [...TAGS, { id: 11, axis: 'wood', slug: 'iroko', name: 'İroko' }, { id: 12, axis: 'wood', slug: 'teak', name: 'Teak' }]
+    expect(approvalTags(s({ wood: ['bilinmeyen', 'iroko', 'teak'], stage: ['finished', 'before', 'detail'] }), tags, [])).toEqual([8, 11])
   })
 
   it('skips a missing, malformed or pre-tagImage@2 suggestion', () => {
