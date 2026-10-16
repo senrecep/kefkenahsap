@@ -1,5 +1,14 @@
+import { mkdir, readdir, rm, writeFile } from 'fs/promises'
+import path from 'path'
 import sharp from 'sharp'
-import { type CollectionAfterChangeHook, type CollectionBeforeChangeHook, type CollectionConfig } from 'payload'
+import {
+  APIError,
+  type CollectionAfterChangeHook,
+  type CollectionAfterDeleteHook,
+  type CollectionBeforeChangeHook,
+  type CollectionBeforeOperationHook,
+  type CollectionConfig,
+} from 'payload'
 
 import { publicError } from '@/lib/http/public-error'
 import { Result } from 'tsentials/result'
@@ -7,6 +16,7 @@ import { Result } from 'tsentials/result'
 import { approvedOrStaff, isStaff, roleOf } from '@/access'
 import { mediaFileURL } from '@/lib/media/url'
 import { checkPublishable, type MediaStatus } from '@/lib/media/publish'
+import { applyWatermark, isStampable } from '@/lib/media/watermark'
 import { revalidateAfterChange, revalidateAfterDelete } from '@/hooks/revalidate'
 
 // WebP only: sources are already WebP; AVIF would double storage and encode time (PLAN §3.3).
@@ -18,6 +28,80 @@ export const MEDIA_WIDTHS = [320, 480, 640, 800, 960, 1280, 1920] as const
 // ~1 image px per CSS px even at w960 (148 KB); this crop shows the same framing at that sharpness in ~45 KB, which
 // moves mobile LCP by ~1 s. q70 at phone scale was indistinguishable from today's w960 in a side-by-side.
 export const PORTRAIT = { width: 400, height: 711, quality: 70 } as const
+
+// Clean originals of stamped uploads (#169): a private server volume like lead photos, never the public CDN bucket and
+// never served, so the mark can be re-applied or removed later. Named <stored stem><uploaded extension>.
+export const MEDIA_ORIGINALS_DIR = process.env.MEDIA_ORIGINALS_DIR || path.resolve(process.cwd(), 'data/media-originals')
+const stemOf = (filename: string) => path.parse(filename).name
+
+/**
+ * #169: stamp "kefkenahsap.com" on a newly uploaded file. beforeOperation runs before Payload's generateFileData, which
+ * writes the main file and every image size from req.file, so all of them inherit the one mark. Saves without a new
+ * file (re-saves, focal point/crop edits regenerated from the stored file) never reach here, so nothing is stamped twice.
+ * Relies on Payload's default `upload.useTempFiles: false`: with temp files req.file.data is empty and Payload reads
+ * tempFilePath instead, so the mark would silently be skipped.
+ */
+const stampUpload: CollectionBeforeOperationHook = async ({ args, operation, req }) => {
+  const file = req.file
+  if ((operation !== 'create' && operation !== 'update') || !file?.data?.length) return args
+  // One file for many documents would share one stored original and one private copy: not supported.
+  if (operation === 'update' && 'where' in args && args.where) throw new APIError('Dosya yalnızca tek bir görselde değiştirilebilir.', 400, null, true)
+  const data = (args.data ??= {}) as { watermark?: string | null; skipWatermark?: boolean }
+  // Any new file on an existing document replaces its clean original (removed after the save, even when not stamped).
+  if (operation === 'update') req.context.mediaFileReplaced = true
+  // Seeds/imports declare files that already carry the pipeline's mark. On update the admin echoes the stored state,
+  // which describes the replaced file, not the new one.
+  if (operation === 'create' && data.watermark === 'already') return args
+  if (data.skipWatermark || !(await isStampable(file.data, file.mimetype))) {
+    data.watermark = 'none'
+    return args
+  }
+  const stamped = await applyWatermark(file.data, file.mimetype)
+  req.context.mediaOriginal = { data: file.data, ext: path.extname(file.name) }
+  file.data = stamped
+  file.size = stamped.length
+  data.watermark = 'applied'
+  return args
+}
+
+/** A new document is 'applied' only if this request stamped it: a duplicate copies the marked file, not its clean original. */
+const truthfulWatermark: CollectionBeforeChangeHook = ({ data, operation, req }) => {
+  if (operation === 'create' && data.watermark === 'applied' && !req.context.mediaOriginal) data.watermark = 'already'
+  return data
+}
+
+/** Removes the clean original(s) stored for `filename`, except `keep` (a file just written under the same stem). */
+async function removeOriginal(filename: string, keep?: string) {
+  const stem = stemOf(filename)
+  const files = await readdir(MEDIA_ORIGINALS_DIR).catch(() => [] as string[])
+  await Promise.all(files.filter((f) => stemOf(f) === stem && f !== keep).map((f) => rm(path.join(MEDIA_ORIGINALS_DIR, f), { force: true })))
+}
+
+/**
+ * Keeps the clean upload once the stored filename is known. A failed write throws, so the document row rolls back
+ * (the files already uploaded to the bucket may stay behind as orphans). The new original is written before the
+ * replaced file's one is removed, so a failure never leaves the document without one.
+ */
+const keepOriginal: CollectionAfterChangeHook = async ({ doc, previousDoc, req }) => {
+  const original = req.context.mediaOriginal as { data: Buffer; ext: string } | undefined
+  const replaced = req.context.mediaFileReplaced === true
+  delete req.context.mediaOriginal
+  delete req.context.mediaFileReplaced
+  if (!doc.filename) return doc
+  let written: string | undefined
+  if (original) {
+    written = `${stemOf(doc.filename)}${original.ext}`
+    await mkdir(MEDIA_ORIGINALS_DIR, { recursive: true })
+    await writeFile(path.join(MEDIA_ORIGINALS_DIR, written), original.data)
+  }
+  if (replaced && previousDoc?.filename) await removeOriginal(previousDoc.filename, written)
+  return doc
+}
+
+const deleteOriginal: CollectionAfterDeleteHook = async ({ doc }) => {
+  if (doc.filename) await removeOriginal(doc.filename)
+  return doc
+}
 
 /** Tiny blurred placeholder + dominant colour, computed once at upload (skeleton/LQIP, CLS-free gallery). */
 const placeholder: CollectionBeforeChangeHook = async ({ data, req }) => {
@@ -84,7 +168,12 @@ export const Media: CollectionConfig = {
   },
   defaultSort: '-createdAt',
   access: { read: approvedOrStaff, create: isStaff, update: isStaff, delete: isStaff },
-  hooks: { beforeChange: [placeholder, publishGate], afterChange: [revalidateAfterChange('media', 'categories', 'projects'), queueAiSuggestion], afterDelete: [revalidateAfterDelete('media', 'categories', 'projects')] },
+  hooks: {
+    beforeOperation: [stampUpload],
+    beforeChange: [truthfulWatermark, placeholder, publishGate],
+    afterChange: [keepOriginal, revalidateAfterChange('media', 'categories', 'projects'), queueAiSuggestion],
+    afterDelete: [revalidateAfterDelete('media', 'categories', 'projects'), deleteOriginal],
+  },
   fields: [
     {
       name: 'status',
@@ -108,6 +197,26 @@ export const Media: CollectionConfig = {
     { name: 'project', type: 'relationship', relationTo: 'projects', index: true, label: 'Proje' },
     { name: 'featured', type: 'checkbox', label: 'Öne çıkan', admin: { position: 'sidebar' } },
     { name: 'capturedAt', type: 'date', label: 'Çekim tarihi', admin: { position: 'sidebar' } },
+    {
+      // Set by stampUpload; seeds/imports send 'already'. Not editable: it records what happened to the stored file.
+      name: 'watermark',
+      type: 'select',
+      label: 'Filigran',
+      options: [
+        { label: 'Eklendi (temiz orijinal saklı)', value: 'applied' },
+        { label: 'Dosyada zaten var', value: 'already' },
+        { label: 'Eklenmedi', value: 'none' },
+      ],
+      admin: { position: 'sidebar', readOnly: true, condition: (data) => Boolean(data?.watermark) },
+    },
+    {
+      name: 'skipWatermark',
+      type: 'checkbox',
+      virtual: true,
+      label: 'Filigran ekleme',
+      // Payload makes virtual fields read-only unless told otherwise; this one is an instruction for the upload, not stored.
+      admin: { position: 'sidebar', readOnly: false, description: 'İşaretlenirse yeni yüklenen dosyaya "kefkenahsap.com" filigranı basılmaz.' },
+    },
     { name: 'lqip', type: 'text', admin: { readOnly: true, hidden: true } },
     // Stable identity of seeded images (<category>/<source file>) so the seed is idempotent.
     { name: 'seedKey', type: 'text', unique: true, index: true, admin: { readOnly: true, hidden: true } },

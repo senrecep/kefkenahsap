@@ -85,6 +85,7 @@ try {
         filePath: upload,
         data: {
           seedKey,
+          watermark: 'already', // pipeline images carry the mark already (#169)
           category: categoryId,
           status: 'pending',
           title: meta.title.tr,

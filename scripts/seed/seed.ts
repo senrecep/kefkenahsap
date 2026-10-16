@@ -115,6 +115,7 @@ for (const [index, cat] of SEED_CATEGORIES.entries()) {
         filePath: upload,
         data: {
           seedKey,
+          watermark: 'already', // pipeline images carry the mark already (#169)
           category: categoryId,
           status: 'approved',
           title: meta.title.tr,

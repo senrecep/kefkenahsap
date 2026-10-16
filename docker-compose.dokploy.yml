@@ -32,12 +32,16 @@ services:
       NEXT_PUBLIC_UMAMI_SRC: ${NEXT_PUBLIC_UMAMI_SRC:-}
       SITE_ENV: ${SITE_ENV:?}
       LEAD_PHOTOS_DIR: /app/data/lead-photos
+      MEDIA_ORIGINALS_DIR: /app/data/media-originals
       SITE_BASIC_AUTH: ${SITE_BASIC_AUTH:-}
       NEXT_PUBLIC_TURNSTILE_SITE_KEY: ${NEXT_PUBLIC_TURNSTILE_SITE_KEY:-}
       TURNSTILE_SECRET_KEY: ${TURNSTILE_SECRET_KEY:-}
     volumes:
-      # Lead photos are personal data: private volume, never the CDN bucket (backed up with Dokploy volume backups).
+      # Lead photos are personal data: private disk volume, never the CDN bucket (archived nightly by kefken-backup).
       - lead-photos:/app/data/lead-photos
+      # Clean originals of watermarked admin uploads (#169): private disk volume, never served; kept to re-apply or
+      # remove the mark. Archived nightly by kefken-backup (a private R2 bucket needs the owner's new token, #51).
+      - media-originals:/app/data/media-originals
     depends_on:
       kefken-postgres:
         condition: service_healthy
@@ -144,7 +148,8 @@ services:
     profiles: [observability]
     restart: unless-stopped
 
-  # Nightly pg_dump of the kefken DB to a host directory (keeps 14), then optionally a copy to a PRIVATE R2 bucket.
+  # Nightly pg_dump of the kefken DB plus tar archives of the private file volumes (lead photos, clean media originals)
+  # to a host directory (keeps 14 each), then optionally a copy to a PRIVATE R2 bucket.
   # Runs at BACKUP_AT (HHMM, UTC). Run now: docker exec <container> touch /backups/.run-now (picked up within a minute).
   kefken-backup:
     image: kefken-backup:17-rclone1.75.1
@@ -171,6 +176,8 @@ services:
       RCLONE_CONFIG_R2_SECRET_ACCESS_KEY: ${BACKUP_S3_SECRET_ACCESS_KEY:-}
     volumes:
       - /var/lib/kefken-backups/${SITE_ENV:?}:/backups
+      - lead-photos:/data/lead-photos:ro
+      - media-originals:/data/media-originals:ro
     entrypoint: ['/bin/sh', '-c']
     command:
       - |
@@ -201,6 +208,17 @@ services:
           else
             rm -f "$$f.part"; log "pg_dump FAILED"
           fi
+          for v in lead-photos media-originals; do
+            a=/backups/$$v-$$(date -u +%Y%m%d-%H%M%S).tar.gz
+            # Same temp-name rule as the dump: only a complete, readable archive replaces or rotates out a good one.
+            if tar -czf "$$a.part" -C /data "$$v" && tar -tzf "$$a.part" >/dev/null && mv "$$a.part" "$$a"; then
+              log "wrote $$a ($$(du -h "$$a" | cut -f1))"
+              ls -1t /backups/$$v-*.tar.gz | tail -n +15 | xargs -r rm -f
+              upload "$$a"
+            else
+              rm -f "$$a.part"; log "$$v archive FAILED"
+            fi
+          done
         }
         log "scheduled daily at $$BACKUP_AT UTC"
         while :; do
@@ -216,6 +234,7 @@ services:
 volumes:
   pgdata:
   lead-photos:
+  media-originals:
 
 networks:
   dokploy-network:

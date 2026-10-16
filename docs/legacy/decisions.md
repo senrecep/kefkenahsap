@@ -16,7 +16,7 @@
 4. Diller: TR + EN başlangıç; ileride AR (RTL), RU, DE → altyapı N dil + RTL hazır.
 6. Lansman görsel seti: sadece Webiste (568). Kaliteli sonra admin'den eklenebilir.
 7. Alt metin/başlık/dosya adı/etiket: AI toplu üretim (TR/EN) + admin'de "onay bekliyor" durumu.
-8. Filigran: mevcutlar kalır, yeni yüklemelere otomatik eklenmez.
+8. Filigran: mevcutlar kalır; ~~yeni yüklemelere otomatik eklenmez~~ (→ 2026-10-16 sahibinin isteğiyle değişti, #169) admin'den yüklenen yeni görsellere "kefkenahsap.com" filigranı otomatik basılır: pipeline'ın ölçüsü ve saydamlığı (24_watermark.py), marka fontu Montserrat. Herkese açık dosya ve tüm boyutlar filigranlı; temiz orijinal sunucudaki gizli volume'da saklanır (filigran sonradan yeniden basılabilir veya kaldırılabilir). Tek seferlik: zaten filigranlı (seed/aktarım) görsellere ve yeniden kaydetmede basılmaz; "Filigran ekleme" kutusuyla istisna yapılabilir. Talep fotoğraflarına uygulanmaz.
 9. İçerik modeli: Kategori + Etiket + Proje (admin'den proje oluşturulur, listelenir).
 10. Stack: Next.js 16 + Payload 3.x (tek uygulama, bun) + Postgres 17 + ~~local volume media~~ (→ #29 R2 ile değişti) (sharp). Go backend yok.
 11. URL: tüm diller önekli (/tr/, /en/), çevrilmiş slug, hreflang + x-default; / → dil tespiti → /tr. 16 sayfa + 1169 medya + attachment sayfaları 301.
