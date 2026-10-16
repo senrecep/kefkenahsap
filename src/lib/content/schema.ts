@@ -127,3 +127,18 @@ export const parseProjectFixes = parseWith(
   z.record(z.string(), z.object({ year: z.number().int().optional(), title: anyLocaleChange.optional(), story: anyLocaleChange.optional() }).strict()),
 )
 export type ProjectFix = { year?: number; title?: Record<string, { old: string; new: string }>; story?: Record<string, { old: string; new: string }> }
+
+// #175: seed/taxonomy/photo-plan.json, the owner-approved photo taxonomy (see scripts/seed/taxonomy-*.ts). Categories by
+// key (src/seed/categories.ts); `facts` by Media seedKey, in tag slugs (stage in English, see src/lib/media/taxonomy.ts).
+const values = z.array(text).min(1).optional()
+export const parsePhotoPlan = parseWith(
+  z.object({
+    moves: z.array(z.object({ seedKey: text, from: slug, to: slug })),
+    rejects: z.array(text),
+    imports: z.array(z.object({ source: text, category: slug, quality: z.enum(['good', 'ok']), stamp: z.literal(true).optional() })),
+    facts: z.record(z.string(), z.object({ type: values, setting: values, wood: values, finish: values, stage: values, quality: z.enum(['good', 'ok', 'reject']) })),
+    remedies: z.array(z.object({ seedKey: text, source: text, stamp: z.boolean(), current: z.object({ filename: text, filesize: z.number().int().positive() }) })),
+    // Same photo twice in one category after the moves (image-work/review/same-category-dups.json): one copy is hidden.
+    duplicates: z.array(z.object({ hide: text, keep: text })),
+  }),
+)

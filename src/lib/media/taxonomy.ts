@@ -1,0 +1,74 @@
+// #175: pure rules of the photo-taxonomy loaders (scripts/seed/taxonomy-*.ts, plan in seed/taxonomy/photo-plan.json).
+
+export type Axis = 'type' | 'setting' | 'wood' | 'finish' | 'stage'
+export type TagRef = { id: number; axis: string; slug: string; name: string }
+type Values = Partial<Record<Axis, string[]>>
+
+const AXES: Axis[] = ['type', 'setting', 'wood', 'finish', 'stage']
+// One value per photo on these: a tag already there (seeded or the owner's) is never joined by a second one.
+const SINGLE: ReadonlySet<Axis> = new Set(['wood', 'finish', 'stage'])
+// Facts and tagImage name stages in English; the tags are Turkish. A finished photo has no stage tag; a workshop photo
+// shows the work in progress.
+const STAGE_SLUG: Record<string, string | null> = { before: 'oncesi', after: 'sonrasi', process: 'uygulama-asamasi', workshop: 'uygulama-asamasi', detail: 'detay', finished: null }
+const norm = (s: string) => s.trim().toLocaleLowerCase('tr')
+
+/**
+ * The tag ids to add to a photo: per axis from the vetted facts (tag slugs), or, where the facts have nothing, from the
+ * tagImage meta (tag names). Only adds: a tag the photo has stays, and a single-value axis the photo already has is left
+ * alone. `unmapped` lists `<axis>:<value>` without a matching tag.
+ */
+export function tagIdsToAdd(facts: Values, meta: Values | undefined, tags: TagRef[], current: { id: number; axis: string }[]): { add: number[]; unmapped: string[] } {
+  const has = new Set(current.map((t) => t.id))
+  const add: number[] = []
+  const unmapped: string[] = []
+  for (const axis of AXES) {
+    const values = facts[axis]?.length ? facts[axis] : (meta?.[axis] ?? [])
+    if (SINGLE.has(axis) && current.some((t) => t.axis === axis)) continue
+    for (const value of values) {
+      const key = axis === 'stage' && value in STAGE_SLUG ? STAGE_SLUG[value] : value
+      if (key === null) continue
+      const tag = tags.find((t) => t.axis === axis && (t.slug === key || norm(t.name) === norm(key!)))
+      if (!tag) unmapped.push(`${axis}:${value}`)
+      else if (!has.has(tag.id) && !add.includes(tag.id)) add.push(tag.id)
+    }
+  }
+  return { add: add.sort((a, b) => a - b), unmapped }
+}
+
+/** Owner decision (2026-10-16): every imported photo is published, except one the tagger doubted. */
+export const importStatus = (meta: { categoryAgrees: boolean; confidence: number }): 'approved' | 'pending' =>
+  !meta.categoryAgrees && meta.confidence <= 0.3 ? 'pending' : 'approved'
+
+/** A planned move happens only from the planned category; anywhere else it is reported, not forced. */
+export const moveAction = (current: number | undefined, from: number, to: number): 'move' | 'done' | 'mismatch' =>
+  current === to ? 'done' : current === from ? 'move' : 'mismatch'
+
+/** A file is replaced only while it is still exactly the stored file the plan was made from (not replaced since). */
+export const remedyDue = (current: { filename?: string | null; filesize?: number | null }, planned: { filename: string; filesize: number }) =>
+  current.filename === planned.filename && current.filesize === planned.filesize
+
+/** Category cover: a good, landscape photo at least 1280 px wide; live photos first, then the widest, then the lowest id. */
+export function pickCover(candidates: { id: number; width: number; height: number; live: boolean; quality?: string }[]): number | undefined {
+  return candidates
+    .filter((c) => c.quality === 'good' && c.width >= 1280 && c.width > c.height)
+    .sort((a, b) => Number(b.live) - Number(a.live) || b.width - a.width || a.id - b.id)[0]?.id
+}
+
+// Upload fields that point at media (collections and globals; see `relationTo: 'media'`).
+const UPLOAD_KEYS = new Set(['cover', 'gallery', 'image', 'mobileImage', 'logo', 'ogImage', 'defaultOgImage'])
+const idOf = (v: unknown) => (typeof v === 'number' ? v : typeof v === 'object' && v && typeof (v as { id?: unknown }).id === 'number' ? (v as { id: number }).id : undefined)
+
+/** The media ids a document shows (its upload fields, at any depth and in every locale). */
+export function mediaRefs(doc: unknown, into = new Set<number>()): Set<number> {
+  if (Array.isArray(doc)) for (const v of doc) mediaRefs(v, into)
+  else if (doc && typeof doc === 'object')
+    for (const [k, v] of Object.entries(doc)) {
+      if (UPLOAD_KEYS.has(k)) for (const x of Array.isArray(v) ? v : [v]) if (idOf(x) !== undefined) into.add(idOf(x)!)
+      mediaRefs(v, into)
+    }
+  return into
+}
+
+/** Which copy of a same-category duplicate to hide: the planned one, unless a page uses it; never one in use. */
+export const duplicateToHide = (hide: { id: number; used: boolean }, keep: { id: number; used: boolean }): number | undefined =>
+  !hide.used ? hide.id : !keep.used ? keep.id : undefined

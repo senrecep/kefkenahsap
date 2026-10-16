@@ -4,39 +4,28 @@
 // (_media_media_order), and these are created after the seed, so they come after the category's existing photos. The
 // galleries sort by id instead: /galeri page 1 is curated from the newest 200 featured-or-large photos, and later pages,
 // category/tag filters and "more from this category" run newest first, so approved archive photos show early there.
+// #175: the folder now also holds the taxonomy import (2,476 more photos, filed under their target category). Use
+// scripts/seed/taxonomy-import.ts for those: it creates them published per the owner's decision and re-files these 210.
 // Run (after seed.ts): bun run payload run scripts/seed/archive.ts   (KEFKEN_ARCHIVE = Kaliteli folder; uses the env's DB + S3)
-import { copyFileSync, existsSync, mkdtempSync, readdirSync, readFileSync, rmSync } from 'node:fs'
+import { existsSync, mkdtempSync, readdirSync, readFileSync, rmSync } from 'node:fs'
 import os from 'node:os'
 import path from 'node:path'
 import { getPayload } from 'payload'
-import sharp from 'sharp'
 
 import config from '@/payload.config'
+import { parsePhotoPlan } from '@/lib/content/schema'
 import { SEED_CATEGORIES } from '@/seed/categories'
 
-import { verifyStored } from './verify-stored'
+import { archiveSeedKey, type ArchiveMeta, createArchiveMedia, seedCtx as ctx } from './archive-media'
+import { unwrap } from './i18n'
 
 const ROOT = process.cwd()
 const ARCHIVE = process.env.KEFKEN_ARCHIVE ?? path.resolve(ROOT, '../../kefken-data/Kaliteli')
 const META = path.resolve(ROOT, 'seed/media-meta-archive')
-
-type Meta = {
-  source: string // "<archive folder>/<file>"
-  title: { tr: string; en: string }
-  alt: { tr: string; en: string }
-  caption: { tr: string; en: string }
-  seoFilename: string
-  tags: Record<string, string[]>
-  categoryAgrees: boolean
-  confidence: number
-  model: string
-  promptVersion: string
-  generatedAt: string
-}
+// #175: the few archive photos that carry no watermark yet are stamped once on upload (seed/taxonomy/photo-plan.json).
+const STAMP = new Set(unwrap(parsePhotoPlan(readFileSync(path.resolve(ROOT, 'seed/taxonomy/photo-plan.json'), 'utf8'))).imports.filter((i) => i.stamp).map((i) => i.source))
 
 const payload = await getPayload({ config: await config })
-// A fresh context per call: Payload keeps per-operation state in it. skipAi: the metadata is already here, never queue tagImage.
-const ctx = () => ({ skipAi: true })
 const tmp = mkdtempSync(path.join(os.tmpdir(), 'kefken-archive-'))
 
 const existingMedia = await payload.find({ collection: 'media', limit: 0, pagination: false, depth: 0, select: { seoFilename: true } })
@@ -55,10 +44,9 @@ try {
 
     const files = readdirSync(dir).filter((f) => f.endsWith('.json')).sort()
     for (const f of files) {
-      const meta = JSON.parse(readFileSync(path.join(dir, f), 'utf8')) as Meta
+      const meta = JSON.parse(readFileSync(path.join(dir, f), 'utf8')) as ArchiveMeta
       const src = path.join(ARCHIVE, meta.source)
-      // Keyed on the archive path, not the target category, so a photo filed under another category stays one record.
-      const seedKey = `archive/${meta.source}`
+      const seedKey = archiveSeedKey(meta)
 
       const found = await payload.find({ collection: 'media', locale: 'en', fallbackLocale: false, where: { seedKey: { equals: seedKey } }, limit: 1, depth: 0 })
       if (found.docs.length) {
@@ -70,42 +58,7 @@ try {
         continue
       }
       if (!existsSync(src)) throw new Error(`missing archive photo: ${src}`)
-
-      let name = meta.seoFilename
-      for (let n = 2; usedNames.has(name); n++) name = `${meta.seoFilename}-${n}`
-      usedNames.add(name)
-      const upload = path.join(tmp, `${name}.webp`)
-      copyFileSync(src, upload)
-      const { width = 0, height = 0 } = await sharp(upload).metadata()
-      const { source: _source, generatedAt, ...suggestion } = meta
-      const doc = await payload.create({
-        collection: 'media',
-        locale: 'tr',
-        context: ctx(),
-        filePath: upload,
-        data: {
-          seedKey,
-          watermark: 'already', // pipeline images carry the mark already (#169)
-          category: categoryId,
-          status: 'pending',
-          title: meta.title.tr,
-          alt: meta.alt.tr,
-          caption: meta.caption.tr,
-          seoFilename: name,
-          // Same shape the runtime tagImage job writes: an unreviewed suggestion, shown as "Onay bekliyor" in the Galeri.
-          aiSuggestion: { ...suggestion, at: generatedAt },
-        },
-      })
-      await payload.update({ collection: 'media', id: doc.id, locale: 'en', context: ctx(), data: { title: meta.title.en, alt: meta.alt.en, caption: meta.caption.en } })
-      const stored = doc.filename ?? ''
-      try {
-        if (stored !== `${name}.webp`) throw new Error(`stored as ${stored}, expected ${name}.webp`)
-        await verifyStored(stored, upload, { width, height }, servedDigests)
-      } catch (err) {
-        // Drop the unverified record, or the next run would skip it as already present.
-        await payload.delete({ collection: 'media', id: doc.id, context: ctx() })
-        throw err
-      }
+      await createArchiveMedia(payload, meta, { src, categoryId, status: 'pending', stamp: STAMP.has(meta.source), tmp, usedNames, servedDigests })
       created++
     }
     console.log(`  ${cat.key}: ${files.length} archive photos`)
