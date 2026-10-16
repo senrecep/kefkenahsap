@@ -27,7 +27,7 @@ export function tagIdsToAdd(facts: Values, meta: Values | undefined, tags: TagRe
     const values = facts[axis]?.length ? facts[axis] : (meta?.[axis] ?? [])
     if (SINGLE.has(axis) && current.some((t) => t.axis === axis)) continue
     for (const value of values) {
-      const key = axis === 'stage' && value in STAGE_SLUG ? STAGE_SLUG[value] : axis === 'type' ? (TYPE_ALIAS[value] ?? value) : value
+      const key = axis === 'stage' && Object.hasOwn(STAGE_SLUG, value) ? STAGE_SLUG[value] : axis === 'type' && Object.hasOwn(TYPE_ALIAS, value) ? TYPE_ALIAS[value] : value
       if (key === null) continue
       const tag = tags.find((t) => t.axis === axis && (t.slug === key || norm(t.name) === norm(key!)))
       if (!tag) unmapped.push(`${axis}:${value}`)
