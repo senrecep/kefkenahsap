@@ -2,7 +2,7 @@ import { RichText } from '@payloadcms/richtext-lexical/react'
 import { ArrowRight, Phone } from 'lucide-react'
 import type { Metadata } from 'next'
 import { getFormatter, getTranslations, setRequestLocale } from 'next-intl/server'
-import { notFound, permanentRedirect } from 'next/navigation'
+import { notFound, permanentRedirect, redirect } from 'next/navigation'
 import { Maybe } from 'tsentials/maybe'
 
 import { ProjectCard } from '@/components/projects/ProjectCard'
@@ -19,7 +19,7 @@ import { galleryLimit, hasRichText, pageFromQuery, priceGuide } from '@/lib/cate
 import { renameRedirect } from '@/lib/category/rename'
 import { areaLine } from '@/lib/company'
 import { telLink } from '@/lib/contact'
-import { getCategory, getCategoryGuides } from '@/lib/data/categories'
+import { categorySlugExists, getCategory, getCategoryGuides } from '@/lib/data/categories'
 import { getSiteSettings } from '@/lib/data/site'
 import { getProjectCards } from '@/lib/data/projects'
 import { safeDecode } from '@/lib/http/safe-decode'
@@ -35,14 +35,16 @@ type Search = Promise<Query>
 
 const categoryPath = (locale: Locale, slug: string) => getPathname({ locale, href: { pathname: '/[category]', params: { category: slug } } })
 
-/** The category, else a permanent redirect to the live slug of a renamed category (#172), else 404. */
+/** The category, else a redirect to the live slug of a renamed category (#172; old → new 308, new → old 307), else 404. */
 async function categoryOrRedirect(locale: Locale, slug: string, limit: number, query: Query) {
   const data = await getCategory(locale, slug, limit)
   if (data) return data
-  const to = await renameRedirect(locale, slug, async (s) => Boolean(await getCategory(locale, s, 1)))
+  const to = await renameRedirect(locale, slug, (s) => categorySlugExists(locale, s))
   if (to) {
     const qs = new URLSearchParams(Object.entries(query).flatMap(([k, v]) => [v ?? []].flat().map((x) => [k, x]))).toString()
-    permanentRedirect(categoryPath(locale, to) + (qs ? `?${qs}` : ''))
+    const target = categoryPath(locale, to.slug) + (qs ? `?${qs}` : '')
+    if (to.permanent) permanentRedirect(target)
+    redirect(target)
   }
   notFound()
 }

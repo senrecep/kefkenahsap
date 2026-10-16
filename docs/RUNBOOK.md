@@ -126,12 +126,14 @@ Run only after the owner has approved it. Until then, the deployed code works wi
    - An existing one only gets its empty fields filled.
    - A published one with an unpublished draft is skipped and the run exits 1.
 3. **`scripts/seed/editorial-swaps.ts`** moves the Sundurma cover from the cabin photo to `ahsap-yapilar/60.webp`, only while the cover is still the old pick.
+4. **Make it live:** redeploy the app, or open any category in the admin and save it once (that save runs inside Next and invalidates the category cache). Do this as the last step every time. Without it the running site keeps serving the old answers for up to an hour (see "Cache" below).
 
 ```bash
 bun run payload run scripts/seed/categories-rename.ts -- --dry-run      # add --publish-drafts if it lists a draft you checked
 bun run payload run scripts/seed/categories-rename.ts
 bun run payload run scripts/seed/categories-new.ts -- --dry-run && bun run payload run scripts/seed/categories-new.ts
 bun run payload run scripts/seed/editorial-swaps.ts -- --dry-run && bun run payload run scripts/seed/editorial-swaps.ts
+# then step 4: redeploy, or save a category once in the admin
 ```
 
 Every script exits 0 on a clean run. A re-run writes nothing.
@@ -142,7 +144,7 @@ Every script exits 0 on a clean run. A re-run writes nothing.
 
 To make the change live at once, redeploy, or save the category once in the admin (that save runs inside Next and invalidates the tags).
 
-After the rename, every old localized path (`/tr/ahsap-yapilar`, `/en/wooden-structures`, `/ru/derevyannye-konstruktsii`, `/de/holzbauten`, `/ar/hayakil-khashabiya`) answers 308 to the new path with the query kept. The category page does this on a miss (`src/lib/category/rename.ts`). The WordPress `/ahsap-yapilar/` answers 301 to `/tr/sundurma-ve-ahsap-cati`. The old slugs are reserved: no other category may take them.
+After the rename, every old localized path (`/tr/ahsap-yapilar`, `/en/wooden-structures`, `/ru/derevyannye-konstruktsii`, `/de/holzbauten`, `/ar/hayakil-khashabiya`) answers 308 (permanent) to the new path with the query kept. Before it, the new paths answer 307 (temporary) to the old ones. The check for which slug exists is never cached, so the two can never redirect to each other. The category page does this on a miss (`src/lib/category/rename.ts`). The WordPress `/ahsap-yapilar/` answers 301 to `/tr/sundurma-ve-ahsap-cati`. The old slugs are reserved: no other category may take them.
 
 ## Observability
 
