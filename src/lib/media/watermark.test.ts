@@ -1,7 +1,7 @@
 import sharp from 'sharp'
 import { describe, expect, it } from 'vitest'
 
-import { applyWatermark, fitFontSize, watermarkAlphas, watermarkLayout } from './watermark'
+import { applyWatermark, fitFontSize, isStampable, watermarkAlphas, watermarkLayout } from './watermark'
 
 // Expected sizes come from the pipeline itself: kefken-ahsap-image-pipeline/scripts/24_watermark.py `fit_font_size`
 // run under Pillow 11 + raqm with FONT_PATH pointed at src/app/fonts/Montserrat.woff2 decompressed to TTF.
@@ -73,5 +73,23 @@ describe('applyWatermark', () => {
     const out = await applyWatermark(rotated, 'image/jpeg')
     const meta = await sharp(out).metadata()
     expect([meta.width, meta.height, meta.orientation ?? 1]).toEqual([800, 600, 1])
+  })
+
+  it('an image narrower than the 14 px minimum text is still marked, without a full-size overlay error', async () => {
+    const out = await applyWatermark(await flat(20, 60, 400), 'image/png')
+    expect(await sharp(out).metadata()).toMatchObject({ width: 60, height: 400 })
+    const row = (await centre(out)).row
+    expect(Math.max(...row)).toBeGreaterThan(40)
+  })
+})
+
+describe('isStampable', () => {
+  const still = () => sharp({ create: { width: 40, height: 30, channels: 3, background: '#556' } }).webp().toBuffer()
+  it('stamps still raster images only: no GIF/SVG, no animation', async () => {
+    expect(await isStampable(await still(), 'image/webp')).toBe(true)
+    expect(await isStampable(await still(), 'image/svg+xml')).toBe(false)
+    // Two-frame 8×8 animated WebP written by Pillow (sharp's own animated join writes a single frame here).
+    const animated = Buffer.from('UklGRoQAAABXRUJQVlA4WAoAAAACAAAABwAABwAAQU5JTQYAAAAAAAAAAABBTk1GKAAAAAAAAAAAAAcAAAcAAGQAAAJWUDhMDwAAAC8HwAEABxD9j/4HIqL/AQBBTk1GKAAAAAAAAAAAAAcAAAcAAGQAAABWUDhMDwAAAC8HwAEABxDR//4HIqL/AQA=', 'base64')
+    expect(await isStampable(animated, 'image/webp')).toBe(false)
   })
 })

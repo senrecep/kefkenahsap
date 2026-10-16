@@ -9,7 +9,7 @@ Operational notes for kefkenahsap.com. Secrets are never written here.
 | Server | 45.196.28.107 (`ssh senrecep`), Dokploy, Docker 28 |
 | Dokploy project | `kefkenahsap` — environments `development` (development.kefkenahsap.com) and `production` |
 | Cloudflare zone | kefkenahsap.com (Free plan, SSL Full) |
-| R2 buckets | `kefkenahsap` (prod media, public via `cdn.kefkenahsap.com`), `kefkenahsap-dev` (dev media, `cdn-dev.kefkenahsap.com`), `kefkenahsap-leads` (private, lead photos), `kefkenahsap-backups` (private, DB backups) |
+| R2 buckets | `kefkenahsap` (prod media, public via `cdn.kefkenahsap.com`), `kefkenahsap-dev` (dev media, `cdn-dev.kefkenahsap.com`), `kefkenahsap-backups` (private, DB dumps and volume archives). Lead photos and the clean originals of watermarked uploads are **not** in R2: they live on private disk volumes (`lead-photos`, `media-originals`), never served by the CDN; a private bucket for them needs a new owner token (#51) |
 | Cache rule | `kefken: cdn immutable` — 1 year edge + browser on both CDN hosts |
 | Turnstile | widget `kefkenahsap` (kefkenahsap.com, development.kefkenahsap.com, localhost) |
 | Old WordPress | still at güzelhosting (104.247.167.3) behind the apex/www records until launch (#53) |
@@ -148,7 +148,8 @@ bun run payload run scripts/seed/editorial-swaps.ts -- --dry-run && bun run payl
 - Run one now: `docker exec <project>-kefken-backup-1 touch /backups/.run-now` (picked up within ~20 s). `docker logs <project>-kefken-backup-1` shows `wrote …` and the R2 result.
 - Off-site copy: after each dump, rclone (pinned `rclone/rclone:1.75.1` binary, baked into the service image at deploy) copies it to `r2:$BACKUP_S3_BUCKET/<SITE_ENV>/` with its **own** key `BACKUP_S3_ACCESS_KEY_ID` / `BACKUP_S3_SECRET_ACCESS_KEY`, never the app's `S3_*` media key. Only the exact bucket name `kefkenahsap-backups` is accepted; anything else is refused. Access denied is logged as `R2 upload skipped: access denied …; local copy kept`.
 - **Pending (owner):** create a dedicated R2 API token, **Object Read & Write scoped to `kefkenahsap-backups` only** (R2 has no write-only permission; no admin scope, no other buckets). Do **not** widen the app's media token. Put it in the Dokploy env as `BACKUP_S3_ACCESS_KEY_ID` / `BACKUP_S3_SECRET_ACCESS_KEY` and redeploy. Add a 30-day lifecycle rule (delete objects after 30 days) on that bucket (PLAN §3.2). Until then the log says `R2 upload skipped: BACKUP_S3_ACCESS_KEY_ID not set (dedicated backup token pending); local copy kept`.
-- Not covered: the `lead-photos` volume and the `umami` / `glitchtip` DBs.
+- Private file volumes: in the same run, `lead-photos` (customer photos, personal data) and `media-originals` (clean originals of watermarked admin uploads, #169) are mounted read-only and archived to `/backups/<volume>-YYYYmmdd-HHMMSS.tar.gz` (same `*.part` + `tar -tz` check, newest **14** kept), then copied off-site with the same `upload` step. Without `BACKUP_S3_*` the log says `R2 upload skipped: …; local copy kept`. Restore: `tar -xzf <archive> -C /var/lib/docker/volumes/<project>_<volume>/_data --strip-components=1` with the app stopped.
+- Not covered: the `umami` / `glitchtip` DBs.
 
 ### Restore
 

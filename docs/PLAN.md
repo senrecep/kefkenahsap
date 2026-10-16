@@ -99,7 +99,7 @@ Tüm metin alanları `localized: true`. Taslak/versiyon (`versions.drafts`) + Li
 | **regions** | name*, slug*, districts[], body* (elle yazılır), projects (rel), **publishGate** (en az 3 proje + 250 kelime yoksa noindex) |
 | **references** | name, location, projects (rel), logo (opsiyonel, izinliyse) |
 | **pages** | Hakkımızda, KVKK, Çerez Politikası, Süreç; blocks |
-| **leads** (Talepler) | name*, phone*, email, service, city/district, message, photos (≤5, private bucket), consentKvkk*, locale, sourcePage, utm, status (`new` / `contacted` / `closed`), retentionUntil (+2 yıl, job ile silinir) |
+| **leads** (Talepler) | name*, phone*, email, service, city/district, message, photos (≤5, private disk volume), consentKvkk*, locale, sourcePage, utm, status (`new` / `contacted` / `closed`), retentionUntil (+2 yıl, job ile silinir) |
 | **redirects** | `@payloadcms/plugin-redirects` (from, to, type 301) |
 | **aiUsage** | task, model, tokensIn/Out, costUsd (OpenRouter generation endpoint'inden), docRef, createdAt |
 
@@ -265,7 +265,7 @@ F2: Rehber dizini + yazı şablonu (TOC, FAQ, "AI'ya kopyala" butonu, yazar kutu
 
 - **GitHub** repo; Actions: `lint` (Biome veya ESLint — AÇIK: kullanıcının diğer projeleriyle hizalanacak), `typecheck`, `vitest`, `playwright` (smoke + redirect haritası + i18n/hreflang + sitemap + JSON-LD + form + admin upload/sıralama), Lighthouse CI → Docker image → **GHCR** → Dokploy deploy webhook. `main` → prod, `development` → **`development.kefkenahsap.com`** (noindex + basic auth; staging'in yerine).
 - **Cloudflare**: zone zaten Cloudflare'de (Free plan, SSL Full); lansmanda yalnızca apex/www A kayıtları güzelhosting'den (104.247.167.3) sunucuya çevrilir, cPanel kayıtları WP yedeği için kalır. **MX kaydı yok** → @kefkenahsap.com e-postası şu an çalışmıyor (info@ ayrı iş; sunucudaki Mailu ile açılabilir). proxy açık, SSL Full (strict), HTTP/3, Early Hints, Brotli; Cache Rules: `/_next/static/*` ve medya 1 yıl immutable, HTML edge 5 dk + Payload purge, `/admin` `/api` bypass; Turnstile (form); R2 custom domain `cdn.kefkenahsap.com`.
-- **Güvenlik**: Payload auth (admin/editor, güçlü şifre, login rate limit, opsiyonel 2FA — AÇIK), form: Turnstile + honeypot + rate limit + dosya türü/boyut doğrulama (≤10MB, image/*), lead fotoğrafları private bucket + imzalı URL, CSP + güvenlik başlıkları, secrets yalnızca Dokploy env.
+- **Güvenlik**: Payload auth (admin/editor, güçlü şifre, login rate limit, opsiyonel 2FA — AÇIK), form: Turnstile + honeypot + rate limit + dosya türü/boyut doğrulama (≤10MB, image/*), lead fotoğrafları private disk volume (yalnızca oturumlu Payload dosya rotası), CSP + güvenlik başlıkları, secrets yalnızca Dokploy env.
 - **KVKK**: talep verisi yurt dışı servislerden geçer (Cloudflare, Resend, Gmail; foto/metin AI'ya **gönderilmez**) → aydınlatma metni ve rıza metninde yurt dışına aktarım açıkça belirtilir. Aydınlatma metni + çerez politikası (şablon; avukat kontrolü önerilir), form açık rıza kutusu, talepler 2 yıl sonra otomatik silinir (job), log'larda kişisel veri yok.
 
 ---

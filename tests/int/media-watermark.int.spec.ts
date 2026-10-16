@@ -128,6 +128,27 @@ it('replacing the file stamps the new one and swaps the private original', async
   expect(updated.watermark).toBe('applied')
   expect(await diff(readFileSync(next), (await object(updated.filename!)).data, CENTRE)).toBeGreaterThan(5)
   expect(readFileSync(path.join(MEDIA_ORIGINALS_DIR, `${path.parse(updated.filename!).name}.png`)).equals(readFileSync(next))).toBe(true)
-  if (updated.filename !== doc.filename) expect(existsSync(path.join(MEDIA_ORIGINALS_DIR, `${path.parse(doc.filename!).name}.png`))).toBe(false)
+  expect(updated.filename).not.toBe(doc.filename)
+  expect(existsSync(path.join(MEDIA_ORIGINALS_DIR, `${path.parse(doc.filename!).name}.png`))).toBe(false)
   writeFileSync(next, '') // keep tmp small
+})
+
+it('replacing the file with "Filigran ekleme" still drops the old clean original', async () => {
+  const { doc } = await upload('replace-optout')
+  const next = path.join(DIR, `replace-optout-next-${Date.now()}.png`)
+  await sharp({ create: { width: W, height: H, channels: 3, background: { r: 200, g: 190, b: 170 } } }).png().toFile(next)
+  const updated = await payload.update({ collection: 'media', id: doc.id, data: { skipWatermark: true }, filePath: next, context: { skipAi: true } })
+  expect(updated.watermark).toBe('none')
+  expect(existsSync(path.join(MEDIA_ORIGINALS_DIR, `${path.parse(doc.filename!).name}.png`))).toBe(false)
+  expect(existsSync(path.join(MEDIA_ORIGINALS_DIR, `${path.parse(updated.filename!).name}.png`))).toBe(false)
+})
+
+it('a file upload on a bulk update is refused', async () => {
+  const { doc } = await upload('bulk')
+  const next = path.join(DIR, `bulk-next-${Date.now()}.png`)
+  await sharp({ create: { width: 300, height: 200, channels: 3, background: { r: 10, g: 10, b: 10 } } }).png().toFile(next)
+  await expect(
+    payload.update({ collection: 'media', where: { id: { equals: doc.id } }, data: {}, filePath: next, context: { skipAi: true } }),
+  ).rejects.toThrow(/tek bir görselde/)
+  expect((await payload.findByID({ collection: 'media', id: doc.id })).filename).toBe(doc.filename)
 })

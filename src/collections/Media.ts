@@ -2,6 +2,7 @@ import { mkdir, readdir, rm, writeFile } from 'fs/promises'
 import path from 'path'
 import sharp from 'sharp'
 import {
+  APIError,
   type CollectionAfterChangeHook,
   type CollectionAfterDeleteHook,
   type CollectionBeforeChangeHook,
@@ -15,7 +16,7 @@ import { Result } from 'tsentials/result'
 import { approvedOrStaff, isStaff, roleOf } from '@/access'
 import { mediaFileURL } from '@/lib/media/url'
 import { checkPublishable, type MediaStatus } from '@/lib/media/publish'
-import { applyWatermark, WATERMARK_MIME_TYPES } from '@/lib/media/watermark'
+import { applyWatermark, isStampable } from '@/lib/media/watermark'
 import { revalidateAfterChange, revalidateAfterDelete } from '@/hooks/revalidate'
 
 // WebP only: sources are already WebP; AVIF would double storage and encode time (PLAN §3.3).
@@ -37,15 +38,21 @@ const stemOf = (filename: string) => path.parse(filename).name
  * #169: stamp "kefkenahsap.com" on a newly uploaded file. beforeOperation runs before Payload's generateFileData, which
  * writes the main file and every image size from req.file, so all of them inherit the one mark. Saves without a new
  * file (re-saves, focal point/crop edits regenerated from the stored file) never reach here, so nothing is stamped twice.
+ * Relies on Payload's default `upload.useTempFiles: false`: with temp files req.file.data is empty and Payload reads
+ * tempFilePath instead, so the mark would silently be skipped.
  */
 const stampUpload: CollectionBeforeOperationHook = async ({ args, operation, req }) => {
   const file = req.file
   if ((operation !== 'create' && operation !== 'update') || !file?.data?.length) return args
+  // One file for many documents would share one stored original and one private copy: not supported.
+  if (operation === 'update' && 'where' in args && args.where) throw new APIError('Dosya yalnızca tek bir görselde değiştirilebilir.', 400, null, true)
   const data = (args.data ??= {}) as { watermark?: string | null; skipWatermark?: boolean }
+  // Any new file on an existing document replaces its clean original (removed after the save, even when not stamped).
+  if (operation === 'update') req.context.mediaFileReplaced = true
   // Seeds/imports declare files that already carry the pipeline's mark. On update the admin echoes the stored state,
   // which describes the replaced file, not the new one.
   if (operation === 'create' && data.watermark === 'already') return args
-  if (data.skipWatermark || !WATERMARK_MIME_TYPES.includes(file.mimetype)) {
+  if (data.skipWatermark || !(await isStampable(file.data, file.mimetype))) {
     data.watermark = 'none'
     return args
   }
@@ -63,20 +70,31 @@ const truthfulWatermark: CollectionBeforeChangeHook = ({ data, operation, req })
   return data
 }
 
-async function removeOriginal(filename: string) {
+/** Removes the clean original(s) stored for `filename`, except `keep` (a file just written under the same stem). */
+async function removeOriginal(filename: string, keep?: string) {
   const stem = stemOf(filename)
   const files = await readdir(MEDIA_ORIGINALS_DIR).catch(() => [] as string[])
-  await Promise.all(files.filter((f) => stemOf(f) === stem).map((f) => rm(path.join(MEDIA_ORIGINALS_DIR, f), { force: true })))
+  await Promise.all(files.filter((f) => stemOf(f) === stem && f !== keep).map((f) => rm(path.join(MEDIA_ORIGINALS_DIR, f), { force: true })))
 }
 
-/** Keeps the clean upload once the stored filename is known; failing here rolls the upload back rather than lose it. */
+/**
+ * Keeps the clean upload once the stored filename is known. A failed write throws, so the document row rolls back
+ * (the files already uploaded to the bucket may stay behind as orphans). The new original is written before the
+ * replaced file's one is removed, so a failure never leaves the document without one.
+ */
 const keepOriginal: CollectionAfterChangeHook = async ({ doc, previousDoc, req }) => {
   const original = req.context.mediaOriginal as { data: Buffer; ext: string } | undefined
-  if (!original || !doc.filename) return doc
+  const replaced = req.context.mediaFileReplaced === true
   delete req.context.mediaOriginal
-  if (previousDoc?.filename) await removeOriginal(previousDoc.filename) // the file was replaced
-  await mkdir(MEDIA_ORIGINALS_DIR, { recursive: true })
-  await writeFile(path.join(MEDIA_ORIGINALS_DIR, `${stemOf(doc.filename)}${original.ext}`), original.data)
+  delete req.context.mediaFileReplaced
+  if (!doc.filename) return doc
+  let written: string | undefined
+  if (original) {
+    written = `${stemOf(doc.filename)}${original.ext}`
+    await mkdir(MEDIA_ORIGINALS_DIR, { recursive: true })
+    await writeFile(path.join(MEDIA_ORIGINALS_DIR, written), original.data)
+  }
+  if (replaced && previousDoc?.filename) await removeOriginal(previousDoc.filename, written)
   return doc
 }
 
