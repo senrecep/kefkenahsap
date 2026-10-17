@@ -612,7 +612,7 @@ function AiFacts({ review }: { review: ReturnType<typeof aiReview> }) {
       <dl className="galeri__ai-facts">
         {review.confidence !== undefined && (
           <div>
-            <dt>AI güveni</dt>
+            <dt>AI güveni:</dt>
             <dd>
               {percent.format(review.confidence)}
               {low && ' (düşük)'}
@@ -621,12 +621,12 @@ function AiFacts({ review }: { review: ReturnType<typeof aiReview> }) {
         )}
         {review.categoryAgrees !== undefined && (
           <div>
-            <dt>Kategoriye uyuyor</dt>
+            <dt>Kategoriye uyuyor:</dt>
             <dd>{review.categoryAgrees ? 'Evet' : 'Hayır'}</dd>
           </div>
         )}
         <div>
-          <dt>Onaylayınca eklenecek etiketler</dt>
+          <dt>Onaylayınca eklenecek etiketler:</dt>
           <dd>{review.addTags.length ? review.addTags.join(', ') : 'Yok'}</dd>
         </div>
       </dl>

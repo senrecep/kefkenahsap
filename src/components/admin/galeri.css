@@ -335,20 +335,20 @@
   font-style: italic;
 }
 
-/* #192: the AI check under each card that waits for approval. A doubtful one gets a warning edge and a text flag. */
+/* #192: the AI check under each card that waits for approval. A doubtful one gets a warning frame and a text flag. */
 .galeri__ai {
   display: grid;
   gap: 8px;
   padding-block: 10px;
   padding-inline: 12px;
-  border-inline-start: 4px solid var(--theme-elevation-200);
+  border: 1px solid var(--theme-elevation-150);
   border-radius: var(--style-radius-s, 4px);
   background: var(--theme-elevation-50);
   font-size: 16px;
 }
 
 .galeri__ai[data-doubtful] {
-  border-inline-start-color: var(--theme-warning-500);
+  border: 2px solid var(--theme-warning-500);
   background: var(--theme-warning-50);
 }
 
@@ -371,10 +371,6 @@
 
 .galeri__ai-facts dt {
   color: var(--theme-elevation-650);
-}
-
-.galeri__ai-facts dt::after {
-  content: ':';
 }
 
 .galeri__ai-facts dd {
