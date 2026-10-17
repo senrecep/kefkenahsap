@@ -9,5 +9,6 @@ export function gaIdOf(settings: { gaId?: string | null }, env: string | undefin
   return (id && GA4_ID.test(id) ? id : env) || undefined
 }
 
-export const validateGaId = (value: string | null | undefined): true | string =>
-  !value?.trim() || GA4_ID.test(value.trim()) || 'GA4 ölçüm kimliği "G-" ile başlar, ör. G-S84WKG63MS.'
+/** Empty or a GA4 id; an unchanged stored value always passes, so a value saved before this rule never blocks a save. */
+export const validateGaId = (value: string | null | undefined, opts?: { previousValue?: unknown }): true | string =>
+  !value?.trim() || GA4_ID.test(value.trim()) || value === opts?.previousValue || 'GA4 ölçüm kimliği "G-" ile başlar, ör. G-S84WKG63MS.'

@@ -3,7 +3,7 @@ import path from 'node:path'
 import { describe, expect, it } from 'vitest'
 import { Maybe } from 'tsentials/maybe'
 
-import { mediaSeedKey, mergeTextFixes, overlayLocales, projectFixPatch, projectYearFix, readOverlay, replacedFieldsPatch, slugFix, textFixUpdate, uniqueSlugs } from './overlay'
+import { mediaMetaTexts, mediaSeedKey, mergeTextFixes, overlayLocales, projectFixPatch, projectYearFix, readOverlay, replacedFieldsPatch, slugFix, textFixUpdate, uniqueSlugs } from './overlay'
 import { parseCategoryOverlay, parseMediaMetaOverlay, parsePageOverlay, parseProjectFixes, parseReplacedTexts } from './schema'
 
 const SEED = path.resolve(process.cwd(), 'tests/fixtures/seed')
@@ -214,5 +214,16 @@ describe('parseReplacedTexts', () => {
 
   it('rejects any other locale key, so a typo cannot silently skip a field', () => {
     for (const l of ['fr', 'RU', 'ru-RU']) expect(parseReplacedTexts(file(l)).ok).toBe(false)
+  })
+})
+
+describe('mediaMetaTexts (#192: importers write every locale the photo metadata carries)', () => {
+  it('returns title/alt/caption per site locale beyond TR that the metadata has', () => {
+    const meta = { title: { tr: 'Deck', en: 'Decking', de: 'Terrasse' }, alt: { tr: 'Deck alt', en: 'Decking alt', de: 'Terrasse alt' }, caption: { tr: '', en: 'c', de: '' } }
+    expect(mediaMetaTexts(meta)).toEqual({ en: { title: 'Decking', alt: 'Decking alt', caption: 'c' }, de: { title: 'Terrasse', alt: 'Terrasse alt', caption: '' } })
+  })
+
+  it('TR/EN-only metadata (the committed seed) gives EN only', () => {
+    expect(Object.keys(mediaMetaTexts({ title: { tr: 'a', en: 'b' }, alt: { tr: 'a', en: 'b' }, caption: { tr: '', en: '' } }))).toEqual(['en'])
   })
 })

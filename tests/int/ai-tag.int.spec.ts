@@ -4,7 +4,7 @@ import os from 'os'
 import path from 'path'
 import { getPayload, type Payload } from 'payload'
 import sharp from 'sharp'
-import { afterAll, beforeAll, describe, expect, it } from 'vitest'
+import { afterAll, beforeAll, describe, expect, it, vi } from 'vitest'
 
 import { FAKE_TAG_IMAGE } from '@/ai/fake'
 
@@ -116,6 +116,33 @@ describe('tagImage job', () => {
     const usage = await payload.find({ collection: 'ai-usage', where: { docRef: { equals: `media:${m.id}` } } })
     usage.docs.forEach((d) => created.push({ collection: 'ai-usage', id: d.id }))
     expect(usage.totalDocs).toBe(1)
+  })
+
+  it('#192: a locale write that fails midway leaves the job unfinished; the retry fills the rest', async () => {
+    const m = await payload.create({ collection: 'media', data: {}, filePath: IMG })
+    created.push({ collection: 'media', id: m.id })
+    const update = payload.update.bind(payload)
+    const spy = vi.spyOn(payload, 'update').mockImplementation(((args: { locale?: string }) => {
+      if (args.locale === 'de') throw new Error('simulated DE write failure')
+      return update(args as never)
+    }) as never)
+    try {
+      await payload.jobs.queue({ task: 'tagImage', input: { mediaId: String(m.id) } })
+      await payload.jobs.run()
+    } finally {
+      spy.mockRestore()
+    }
+    const half = await payload.findByID({ collection: 'media', id: m.id, locale: 'de', fallbackLocale: false, depth: 0 })
+    expect(half.alt ?? null).toBeNull()
+    expect(half.aiSuggestion ?? null).toBeNull()
+
+    await payload.jobs.queue({ task: 'tagImage', input: { mediaId: String(m.id) } })
+    await payload.jobs.run()
+    const de = await payload.findByID({ collection: 'media', id: m.id, locale: 'de', fallbackLocale: false, depth: 0 })
+    expect(de.alt).toBe(SUGGESTION.alt.de)
+    expect((de.aiSuggestion as { promptVersion: string }).promptVersion).toBe('tagImage@4')
+    const usage = await payload.find({ collection: 'ai-usage', where: { docRef: { equals: `media:${m.id}` } } })
+    usage.docs.forEach((d) => created.push({ collection: 'ai-usage', id: d.id }))
   })
 
   it('#192: a photo deleted before its job runs is skipped, not a failed job', async () => {

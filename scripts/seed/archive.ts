@@ -13,12 +13,13 @@ import os from 'node:os'
 import path from 'node:path'
 import { getPayload } from 'payload'
 
+import { mediaMetaTexts } from '@/lib/content/overlay'
 import config from '@/payload.config'
 import { parsePhotoPlan } from '@/lib/content/schema'
 import { SEED_CATEGORIES } from '@/seed/categories'
 
-import { archiveSeedKey, type ArchiveMeta, createArchiveMedia, seedCtx as ctx } from './archive-media'
-import { unwrap } from './i18n'
+import { archiveSeedKey, type ArchiveMeta, createArchiveMedia } from './archive-media'
+import { fillLocales, unwrap } from './i18n'
 import { usedMediaNames } from './taxonomy'
 
 const ROOT = process.cwd()
@@ -56,10 +57,8 @@ try {
       const found = await payload.find({ collection: 'media', locale: 'en', fallbackLocale: false, where: { seedKey: { equals: seedKey } }, limit: 1, depth: 0 })
       if (found.docs.length) {
         skipped++
-        // Repair a run that died between the TR create and the EN update.
-        if (!found.docs[0]!.title) {
-          await payload.update({ collection: 'media', id: found.docs[0]!.id, locale: 'en', context: ctx(), data: { title: meta.title.en, alt: meta.alt.en, caption: meta.caption.en } })
-        }
+        // Repair a run that died between the TR create and the other locales: empty fields only (#192).
+        await fillLocales(payload, 'media', found.docs[0]!.id, mediaMetaTexts(meta), { label: seedKey })
         continue
       }
       if (!existsSync(src)) throw new Error(`missing archive photo: ${src}`)

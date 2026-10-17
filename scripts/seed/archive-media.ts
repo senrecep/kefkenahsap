@@ -4,6 +4,9 @@ import path from 'node:path'
 import type { Payload } from 'payload'
 import sharp from 'sharp'
 
+import type { Locale } from '@/i18n/routing'
+import { mediaMetaTexts } from '@/lib/content/overlay'
+
 import { verifyStored } from './verify-stored'
 
 export type ArchiveMeta = {
@@ -69,7 +72,8 @@ export async function createArchiveMedia(
       },
     })
     try {
-      await payload.update({ collection: 'media', id: doc.id, locale: 'en', context: seedCtx(), data: { title: meta.title.en, alt: meta.alt.en, caption: meta.caption.en } })
+      // #192: every locale the metadata carries (a fresh document, so nothing to keep).
+      for (const [locale, data] of Object.entries(mediaMetaTexts(meta))) await payload.update({ collection: 'media', id: doc.id, locale: locale as Locale, context: seedCtx(), data })
       const stored = doc.filename ?? ''
       if (stored !== `${name}.webp`) throw new Error(`stored as ${stored}, expected ${name}.webp`)
       if (opts.stamp && doc.watermark !== 'applied') throw new Error(`expected a stamped upload, got watermark=${doc.watermark}`)

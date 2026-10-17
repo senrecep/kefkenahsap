@@ -1,6 +1,8 @@
 import { describe, expect, it } from 'vitest'
 
-import { knownTypes, StoredTagImageSchema, TAG_IMAGE_PROMPT_VERSION, TagImageSchema, tagImageSystem, tagImageTypesLine } from './tagImage'
+import { routing } from '@/i18n/routing'
+
+import { LANGUAGE_GUIDANCE, knownTypes, StoredTagImageSchema, TAG_IMAGE_PROMPT_VERSION, TagImageSchema, tagImageSystem, tagImageTypesLine } from './tagImage'
 
 const TYPES = ['Deck', 'Pergola', 'Köpek kulübesi', 'Bahçe kulübesi / depo']
 const tags = { type: [], wood: [], setting: [], finish: [], stage: [] }
@@ -49,6 +51,14 @@ describe('tagImage@4: texts in every site locale (#192)', () => {
     const stored = StoredTagImageSchema.safeParse(v3)
     expect(stored.success && stored.data.alt).toEqual({ tr: 'Bahçede ahşap deck', en: 'A timber deck' })
     expect(StoredTagImageSchema.safeParse({ ...v3, alt: { en: 'A timber deck' } }).success).toBe(false)
+  })
+
+  it('has writing guidance for every site locale, and puts each one in the prompt', () => {
+    const system = tagImageSystem('2026-10-17')
+    for (const l of routing.locales) {
+      expect(LANGUAGE_GUIDANCE[l]?.trim()).toBeTruthy()
+      expect(system).toContain(`${l}: ${LANGUAGE_GUIDANCE[l]}`)
+    }
   })
 
   it('asks for every locale and carries the house terms per language', () => {

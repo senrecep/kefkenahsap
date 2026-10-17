@@ -26,6 +26,11 @@ describe('gaIdOf (#192: GA4 id from Site Bilgileri, env as fallback)', () => {
     expect(validateGaId('UA-1234-1')).toMatch(/G-/)
     expect(validateGaId('G-ABC"><script>')).toMatch(/G-/)
   })
+
+  it('never blocks a save over a value stored before the rule (unchanged previous value)', () => {
+    expect(validateGaId('UA-1234-1', { previousValue: 'UA-1234-1' })).toBe(true)
+    expect(validateGaId('UA-9999-1', { previousValue: 'UA-1234-1' })).toMatch(/G-/)
+  })
 })
 
 describe('legalUses names GA exactly when the site loads it (#156)', () => {

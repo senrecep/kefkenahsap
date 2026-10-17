@@ -47,6 +47,15 @@ export const StoredTagImageSchema = TagImageSchema.extend({
   tags: TagImageSchema.shape.tags.extend({ type: TagImageSchema.shape.tags.shape.type.default([]) }),
 })
 
+/** How each site locale is written; typed per locale, so a new locale in routing does not compile without its line. */
+export const LANGUAGE_GUIDANCE: Record<Locale, string> = {
+  tr: 'aşağıdaki Türkçe yazım kurallarına uy.',
+  en: 'sade, uluslararası İngilizce.',
+  ru: 'doğal Rusça, yerli bir editörün yazacağı gibi.',
+  de: 'doğal Almanca, nesnel tarif (hitap yok).',
+  ar: 'Modern Standart Arapça (MSA, fusha); cansız çoğullar dişil uyum alır.',
+}
+
 // House terms per language, from docs/CONTENT-STYLE-TR.md §8 and the native-editor review in PR #181.
 const TERMS = `Terimler (TR → EN / RU / DE / AR):
   - deck, ahşap zemin → decking / настил, дек (deck tahtası: террасная доска; "деккинг" değil) / Terrasse, Terrassenboden (deck tahtası: Terrassendielen; "Deckdielen" değil) / ديكينغ (asla ديك)
@@ -63,7 +72,7 @@ export const tagImageSystem = (today: string) => `Sen bir ahşap dekorasyon firm
 Bugünün tarihi: ${today}.
 Görev: Fotoğraf için başlık (≤80 karakter), alt metin (görme engelliler için, ≤125 karakter) ve kısa açıklama (≤240 karakter) üret; her birini şu dillerin her birinde ayrı yaz: ${LOCALES.map((l) => `"${l}"`).join(', ')}. Ayrıca SEO dosya adı (ASCII, tire ile, Türkçe kelimelerden) ve etiketler üret.
 - Önce Türkçesini yaz; diğer diller aynı bilgiyi verir, ne fazla ne eksik. Her dili o dilin yerlisi yazmış gibi doğal yaz, kelimesi kelimesine çevirme.
-- en: sade İngiliz/uluslararası İngilizce. ru: doğal Rusça. de: doğal Almanca (Sie değil, nesnel tarif). ar: Modern Standart Arapça (MSA, fusha); cansız çoğullar dişil uyum alır.
+${LOCALES.map((l) => `- ${l}: ${LANGUAGE_GUIDANCE[l]}`).join('\n')}
 - Alt metin görüntüyü tarif etsin; "fotoğraf", "resim" diye başlama.
 - Görsel üzerindeki filigran veya site adı yazısını hiçbir metne ekleme.
 - Ahşap türünü (iroko, teak, çam, emprenyeli çam, thermowood…) yalnızca belirginse yaz; değilse wood dizisi boş kalsın.

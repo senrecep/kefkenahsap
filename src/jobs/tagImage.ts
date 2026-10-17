@@ -66,7 +66,18 @@ export const tagImageTask: TaskConfig<'tagImage'> = {
 
     const ctx = { skipAi: true }
     const blank = (v: unknown) => v == null || v === ''
-    const tr = media
+    // #192: one read of every locale (no fallback: an empty field reads as empty), then a write per locale that has an
+    // empty field. Text a person wrote in any locale is kept.
+    const all = (await payload.findByID({ collection: 'media', id: media.id, locale: 'all', depth: 0, req })) as unknown as Record<
+      'title' | 'alt' | 'caption',
+      Partial<Record<string, string | null>> | null
+    >
+    for (const locale of routing.locales) {
+      const data = Object.fromEntries((['title', 'alt', 'caption'] as const).filter((f) => blank(all[f]?.[locale])).map((f) => [f, output[f][locale]]))
+      if (Object.keys(data).length) await payload.update({ collection: 'media', id: media.id, locale, context: ctx, req, data })
+    }
+    // Written last: the suggestion marks the job done (see the idempotency check above), so a failure before this
+    // point leaves it unmarked and a retry fills the locales still empty.
     await payload.update({
       collection: 'media',
       id: media.id,
@@ -74,23 +85,10 @@ export const tagImageTask: TaskConfig<'tagImage'> = {
       context: ctx,
       req,
       data: {
-        ...(blank(tr.title) ? { title: output.title.tr } : {}),
-        ...(blank(tr.alt) ? { alt: output.alt.tr } : {}),
-        ...(blank(tr.caption) ? { caption: output.caption.tr } : {}),
-        ...(blank(tr.seoFilename) ? { seoFilename: output.seoFilename } : {}),
+        ...(blank(media.seoFilename) ? { seoFilename: output.seoFilename } : {}),
         aiSuggestion: { ...output, model, promptVersion: TAG_IMAGE_PROMPT_VERSION, at: SystemDateTimeProvider.utcNow().toISOString() },
       },
     })
-    // #192: every other locale from the same answer. fallbackLocale false: an empty field must read as empty, not as the TR value.
-    for (const locale of routing.locales.filter((l) => l !== 'tr')) {
-      const doc = await payload.findByID({ collection: 'media', id: media.id, locale, fallbackLocale: false, depth: 0, req })
-      const data = {
-        ...(blank(doc.title) ? { title: output.title[locale] } : {}),
-        ...(blank(doc.alt) ? { alt: output.alt[locale] } : {}),
-        ...(blank(doc.caption) ? { caption: output.caption[locale] } : {}),
-      }
-      if (Object.keys(data).length) await payload.update({ collection: 'media', id: media.id, locale, context: ctx, req, data })
-    }
     return { output: { result: `ok:${model}` } }
   },
 }

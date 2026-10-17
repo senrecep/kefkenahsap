@@ -7,11 +7,24 @@ import { safeJsonParse } from 'tsentials/json'
 import { Maybe } from 'tsentials/maybe'
 import { Result } from 'tsentials/result'
 
+import { type Locale, routing } from '@/i18n/routing'
 import { slugify } from '@/lib/slug'
 
 import type { ProjectFix, TextFixes } from './schema'
 
 /** TR and EN come from the committed seed itself; every other configured locale comes from an overlay. */
+type Texts = Partial<Record<string, string>>
+/**
+ * #192: a photo's title/alt/caption per site locale beyond the default (TR, written on create), for every locale the
+ * metadata carries (the committed seed has EN only; tagImage@4-shaped metadata has them all).
+ */
+export const mediaMetaTexts = (meta: { title: Texts; alt: Texts; caption: Texts }): Partial<Record<Locale, { title?: string; alt?: string; caption?: string }>> =>
+  Object.fromEntries(
+    routing.locales
+      .filter((l) => l !== routing.defaultLocale && meta.title[l] !== undefined)
+      .map((l) => [l, { title: meta.title[l], alt: meta.alt[l], caption: meta.caption[l] }]),
+  )
+
 export const overlayLocales = <L extends string>(codes: readonly L[]): L[] => codes.filter((c) => c !== 'tr' && c !== 'en')
 
 /** One overlay file: none when it (or the whole locale) is missing, a failure when it is there but invalid. */
