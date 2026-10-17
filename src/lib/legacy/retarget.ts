@@ -1,6 +1,6 @@
 // #190: the redirect maps are baked into the image as file names, which go stale when a photo's file is replaced
 // (Payload stores the new upload as `<name>-1.webp`) or a duplicate is deleted. Each entry carries the photo's seedKey,
-// which never changes, so the maps can be re-pointed at the current files (scripts/legacy/refresh-maps.ts).
+// which never changes, so the maps can be re-pointed at the current files (scripts/seed/legacy-maps.ts).
 import type { LegacyMaps } from './resolve'
 
 export type LiveMedia = { filename: string; seoFilename: string }

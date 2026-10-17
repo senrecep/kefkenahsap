@@ -34,6 +34,27 @@ describe('retargetLegacyMaps', () => {
     expect(out).toEqual({ maps: { media: {}, attachments: {} }, unresolved: [] })
   })
 
+  it('follows a chain of duplicates to the last kept photo', () => {
+    const maps = { media: { '2018/09/32': { file: 'a.webp', seedKey: 'deck/32.webp' } }, attachments: {} }
+    const dups = [{ hide: 'deck/32.webp', keep: 'merdiven/32.webp' }, { hide: 'merdiven/32.webp', keep: 'yapi/80.webp' }]
+    const out = retargetLegacyMaps(maps, live([['yapi/80.webp', 'ev.webp']]), { duplicates: dups, rejects: [] })
+    expect(out).toEqual({ maps: { media: { '2018/09/32': { file: 'ev.webp', seedKey: 'yapi/80.webp' } }, attachments: {} }, unresolved: [] })
+  })
+
+  it('lists a duplicate whose kept twin was rejected and is gone (not dropped silently)', () => {
+    const maps = { media: { '2018/09/30': { file: 'a.webp', seedKey: 'deck/30.webp' } }, attachments: {} }
+    const out = retargetLegacyMaps(maps, live([]), { duplicates: [{ hide: 'deck/30.webp', keep: 'yapi/30.webp' }], rejects: ['yapi/30.webp'] })
+    expect(out.unresolved).toEqual(['deck/30.webp'])
+    expect(out.maps.media['2018/09/30']).toEqual({ file: 'a.webp', seedKey: 'deck/30.webp' })
+  })
+
+  it('keeps the redirect of a rejected photo that is still live', () => {
+    const maps = { media: { '2018/09/19': { file: 'x.webp', seedKey: 'yapi/19.webp' } }, attachments: { '/yapi/19/': { slug: 'x', seedKey: 'yapi/19.webp' } } }
+    const out = retargetLegacyMaps(maps, live([['yapi/19.webp', 'x-1.webp', 'x']]), { duplicates: [], rejects: ['yapi/19.webp'] })
+    expect(out.maps).toEqual({ media: { '2018/09/19': { file: 'x-1.webp', seedKey: 'yapi/19.webp' } }, attachments: { '/yapi/19/': { slug: 'x', seedKey: 'yapi/19.webp' } } })
+    expect(out.unresolved).toEqual([])
+  })
+
   it('lists a photo that is neither live, a duplicate nor rejected and leaves its entry as it was', () => {
     const maps = { media: { '2018/09/7': { file: 'gone.webp', seedKey: 'deck/7.webp' } }, attachments: {} }
     const out = retargetLegacyMaps(maps, live([]), { duplicates: [], rejects: [] })

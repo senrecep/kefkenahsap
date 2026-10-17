@@ -15,7 +15,8 @@ import { retargetLegacyMaps, type LiveMedia } from '@/lib/legacy/retarget'
 
 import { loadPlan, mediaBySeedKey } from './taxonomy'
 
-const dir = path.resolve(process.cwd(), 'src/lib/legacy')
+const ROOT = process.cwd() // as in seed.ts: run from the repo root
+const dir = path.resolve(ROOT, 'src/lib/legacy')
 const read = <T,>(f: string) => JSON.parse(readFileSync(path.join(dir, f), 'utf8')) as T
 const maps = { media: read<LegacyMaps['media']>('media-map.json'), attachments: read<LegacyMaps['attachments']>('attachment-map.json') }
 

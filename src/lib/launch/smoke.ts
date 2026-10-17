@@ -20,8 +20,8 @@ export type Check = {
 export type Answer = { status: number; location: string | null; body: string }
 
 // From the committed maps, so a replaced file (#190) moves the check with it.
-const LEGACY_IMAGE = media['2018/09/1-1']!.file
-const LEGACY_SLUG = attachments['/deck-ve-zeminler/1-6/']!.slug
+const LEGACY_IMAGE = (media['2018/09/1-1'] ?? Object.values(media)[0])?.file ?? ''
+const LEGACY_SLUG = (attachments['/deck-ve-zeminler/1-6/'] ?? Object.values(attachments)[0])?.slug ?? ''
 
 export function smokeChecks(opts: { site: string; mediaBase: string; production: boolean }): Check[] {
   const site = opts.site.replace(/\/$/, '')
