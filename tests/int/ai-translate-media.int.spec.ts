@@ -7,9 +7,11 @@ import { createLocalReq, getPayload, type Payload } from 'payload'
 import sharp from 'sharp'
 import { afterAll, beforeAll, describe, expect, it } from 'vitest'
 
-import { FAKE_TAG_IMAGE } from '@/ai/fake'
+import { FAKE_TAG_IMAGE, fakeHooks } from '@/ai/fake'
 import { syncMediaLocales } from '@/ai/translate/media'
+import { releaseStuckMediaJobs, STUCK_AFTER_MS } from '@/jobs/releaseStuck'
 import type { I18nSync } from '@/lib/media/i18nSync'
+import { createFakeDateTimeProvider } from 'tsentials/time'
 
 let payload: Payload
 const IMG = path.join(os.tmpdir(), 'kefken-ai', 'translate-media.webp')
@@ -127,6 +129,43 @@ describe('translateMedia (#203)', () => {
     const sync = (await read(id, 'tr')).i18nSync as I18nSync
     expect(sync.pending).toBeUndefined()
     expect(sync.stale).toEqual({ en: 'failed', ru: 'failed', de: 'failed', ar: 'failed' })
+  })
+
+  it('a save during the model call wins: the hand-edited locale is kept and stale, a TR edit made meanwhile stays pending', async () => {
+    const id = await aiPhoto()
+    await payload.update({ collection: 'media', id, locale: 'tr', data: { alt: 'Teak iskele' } })
+    fakeHooks.beforeAnswer = async () => {
+      fakeHooks.beforeAnswer = undefined
+      await payload.update({ collection: 'media', id, locale: 'de', data: { alt: 'Steg aus Teak, von Hand' } })
+      await payload.update({ collection: 'media', id, locale: 'tr', data: { title: 'Yeni başlık' } })
+    }
+    try {
+      const jobs = await openJobs(id)
+      // The TR title edit inside the hook queued a second job; run the first one.
+      await payload.jobs.runByID({ id: jobs.at(-1)!.id })
+    } finally {
+      fakeHooks.beforeAnswer = undefined
+    }
+    expect((await read(id, 'de')).alt).toBe('Steg aus Teak, von Hand')
+    expect((await read(id, 'en')).alt).toBe('[EN] Teak iskele')
+    const sync = (await read(id, 'tr')).i18nSync as I18nSync
+    expect(sync.stale).toEqual({ de: 'edited' })
+    expect(sync.pending).toEqual(['title'])
+    // The run the title edit queued is still there and translates it.
+    await runQueued(id)
+    expect((await read(id, 'en')).title).toBe('[EN] Yeni başlık')
+    expect(((await read(id, 'tr')).i18nSync as I18nSync).pending).toBeUndefined()
+  })
+
+  it('a photo job left "processing" by a dead process is released at startup after 15 minutes', async () => {
+    const job = await payload.jobs.queue({ task: 'translateMedia', input: { mediaId: '987654320' } })
+    await payload.update({ collection: 'payload-jobs', id: job.id, data: { processing: true } })
+    const soon = createFakeDateTimeProvider(new Date(Date.now() + STUCK_AFTER_MS - 60_000))
+    const later = createFakeDateTimeProvider(new Date(Date.now() + STUCK_AFTER_MS + 60_000))
+    expect(await releaseStuckMediaJobs(payload, soon)).toBe(0)
+    expect(await releaseStuckMediaJobs(payload, later)).toBeGreaterThanOrEqual(1)
+    expect((await payload.findByID({ collection: 'payload-jobs', id: job.id, depth: 0 })).processing).toBe(false)
+    await payload.delete({ collection: 'payload-jobs', id: job.id })
   })
 
   it('a client cannot overwrite the record (the edit form resubmits the hidden field)', async () => {

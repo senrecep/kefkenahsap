@@ -67,7 +67,8 @@ export const tagImageTask: TaskConfig<'tagImage'> = {
     const output = { ...run.value.output, tags: { ...run.value.output.tags, type: knownTypes(run.value.output.tags.type, types) } }
     await payload.create({ collection: 'ai-usage', data: { task: 'tagImage', ok: true, model, costUsd, inputTokens, outputTokens, docRef }, req })
 
-    const ctx = { skipAi: true }
+    // Fresh per write: Payload keeps the object as req.context and hooks add keys to it.
+    const ctx = () => ({ skipAi: true })
     const blank = (v: unknown) => v == null || v === ''
     // #192: one read of every locale (no fallback: an empty field reads as empty), then a write per locale that has an
     // empty field. Text a person wrote in any locale is kept.
@@ -88,7 +89,7 @@ export const tagImageTask: TaskConfig<'tagImage'> = {
         sync = { ...sync, prov: { ...sync?.prov, [locale]: { ...sync?.prov?.[locale], ...prov } } }
         data.i18nSync = sync
       }
-      await payload.update({ collection: 'media', id: media.id, locale, context: ctx, req, data })
+      await payload.update({ collection: 'media', id: media.id, locale, context: ctx(), req, data })
     }
     // Written last: the suggestion marks the job done (see the idempotency check above), so a failure before this
     // point leaves it unmarked and a retry fills the locales still empty.
@@ -96,7 +97,7 @@ export const tagImageTask: TaskConfig<'tagImage'> = {
       collection: 'media',
       id: media.id,
       locale: 'tr',
-      context: ctx,
+      context: ctx(),
       req,
       data: {
         ...(blank(media.seoFilename) ? { seoFilename: output.seoFilename } : {}),

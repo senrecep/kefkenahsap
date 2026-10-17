@@ -56,6 +56,9 @@ const RESPONDERS: Partial<Record<AiTask, Responder>> = {
   },
 }
 
+/** Tests only: runs before the fake answers, e.g. a person saving while the model is working (#203). */
+export const fakeHooks: { beforeAnswer?: (task: AiTask) => Promise<void> } = {}
+
 /** The last fake calls (system prompt + model id), newest last; tests read what the model was told. */
 export const fakeCalls: { task: AiTask; model: string; system: string }[] = []
 const systemText = (call: FakeCall) =>
@@ -69,6 +72,7 @@ export function fakeModel(task: AiTask, id: string): LanguageModel {
     doGenerate: async (call) => {
       const respond = RESPONDERS[task]
       if (!respond) throw new Error(`No fake response for task ${task}`)
+      await fakeHooks.beforeAnswer?.(task)
       fakeCalls.push({ task, model: id, system: systemText(call as FakeCall) })
       if (fakeCalls.length > 20) fakeCalls.shift()
       return {

@@ -174,12 +174,12 @@ describe('localesStatus (#203: the Galeri card line about the other languages)',
     expect(localesStatus({ pending: ['alt'], stale: { de: 'edited' } })).toEqual({ tone: 'busy', label: 'TR değişti, çeviriliyor…' })
   })
   it('names the hand-edited locales that may be out of date, in site order', () => {
-    expect(localesStatus({ stale: { ar: 'edited', de: 'edited' } })).toEqual({ tone: 'wait', label: 'Elle düzenlenmiş dil eski olabilir: DE, AR' })
+    expect(localesStatus({ stale: { ar: 'edited', de: 'edited' } })).toEqual({ tone: 'wait', label: 'Elle düzenlendi, güncel olmayabilir: DE, AR' })
   })
   it('names the locales that were not translated (budget, model error, AI off)', () => {
     expect(localesStatus({ stale: { en: 'failed', de: 'edited' } })).toEqual({
       tone: 'wait',
-      label: 'Elle düzenlenmiş dil eski olabilir: DE · Çevrilemedi, eski olabilir: EN',
+      label: 'Elle düzenlendi, güncel olmayabilir: DE · Çevrilemedi, eski olabilir: EN',
     })
   })
   it('nothing pending or stale (or no record at all) is up to date', () => {

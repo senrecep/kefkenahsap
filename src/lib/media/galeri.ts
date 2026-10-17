@@ -91,7 +91,7 @@ export function localesStatus(sync: I18nSync | null | undefined): { tone: BadgeT
   if (sync?.pending?.length) return { tone: 'busy', label: 'TR değişti, çeviriliyor…' }
   const names = (reason: string) => routing.locales.filter((l) => sync?.stale?.[l] === reason).map((l) => l.toUpperCase())
   const parts = [
-    [names('edited'), 'Elle düzenlenmiş dil eski olabilir'],
+    [names('edited'), 'Elle düzenlendi, güncel olmayabilir'],
     [names('failed'), 'Çevrilemedi, eski olabilir'],
   ] as const
   const label = parts.filter(([l]) => l.length).map(([l, text]) => `${text}: ${l.join(', ')}`).join(' · ')

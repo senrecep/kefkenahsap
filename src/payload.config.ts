@@ -3,6 +3,7 @@ import { FixedToolbarFeature, lexicalEditor } from '@payloadcms/richtext-lexical
 import path from 'path'
 import { buildConfig } from 'payload'
 import { fileURLToPath } from 'url'
+import { SystemDateTimeProvider } from 'tsentials/time'
 import sharp from 'sharp'
 
 import { Users } from './collections/Users'
@@ -18,6 +19,7 @@ import { Leads } from './collections/Leads'
 import { LeadPhotos } from './collections/LeadPhotos'
 import { purgeExpiredLeads } from './jobs/purgeExpiredLeads'
 import { tagImageTask } from './jobs/tagImage'
+import { releaseStuckMediaJobs } from './jobs/releaseStuck'
 import { translateMediaTask } from './jobs/translateMedia'
 import { AiUsage } from './collections/AiUsage'
 import { AiSettings } from './globals/AiSettings'
@@ -132,14 +134,18 @@ export default buildConfig({
     // The Homepage global always publishes every language (see its beforeOperation hook).
     defaultLocalePublishOption: 'active',
   },
+  // #203: photo jobs left "processing" by a process that died would block their photo forever (concurrency key).
+  onInit: async (payload) => {
+    const released = await releaseStuckMediaJobs(payload, SystemDateTimeProvider).catch((err: unknown) => {
+      payload.logger.warn({ err }, 'jobs: could not release stuck photo jobs')
+      return 0
+    })
+    if (released) payload.logger.warn(`jobs: released ${released} stuck photo job(s)`)
+  },
   jobs: {
     tasks: [purgeExpiredLeads, tagImageTask, translateMediaTask],
     // Runs queued jobs (AI tagging, retention, purge) every minute; tasks are added per feature.
-    // translateMedia (#203) has its own queue, so photo edits never hold up the default queue's run limit.
-    autoRun: [
-      { cron: '* * * * *', queue: 'default' },
-      { cron: '* * * * *', queue: 'translateMedia' },
-    ],
+    autoRun: [{ cron: '* * * * *', queue: 'default' }],
     // tagImage + translateMedia: one job per photo at a time (adds payload_jobs.concurrency_key).
     enableConcurrencyControl: true,
     // Never under Vitest: tests run the queue themselves, and a cron tick between a test's queue() and run() took the job

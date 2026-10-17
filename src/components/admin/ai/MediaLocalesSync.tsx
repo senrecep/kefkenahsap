@@ -30,15 +30,21 @@ export function MediaLocalesSync(props: {
   // The state read by polling; a new state from the parent (save, refresh) replaces it.
   const [polled, setPolled] = useState<{ base: I18nSync | null | undefined; sync: I18nSync | null }>()
   const sync = polled && polled.base === props.sync ? polled.sync : props.sync
-  const status = localesStatus(sync)
   const pending = Boolean(sync?.pending?.length)
+  // Polling stopped (3 min) while still pending: for this parent state only.
+  const [gaveUp, setGaveUp] = useState<I18nSync | null | undefined | false>(false)
+  const status = localesStatus(sync)
+  const label = pending && gaveUp === props.sync ? `${status.label} Durum için sayfayı yenileyin.` : status.label
 
   useEffect(() => {
     if (!pending) return
     const base = props.sync
     const started = Date.now()
     const timer = setInterval(async () => {
-      if (Date.now() - started > POLL_FOR_MS) return clearInterval(timer)
+      if (Date.now() - started > POLL_FOR_MS) {
+        clearInterval(timer)
+        return setGaveUp(base)
+      }
       if (document.visibilityState !== 'visible') return
       try {
         const res = await fetch(`/api/media/${props.id}?depth=0&locale=tr&select[i18nSync]=true`, { credentials: 'include' })
@@ -73,8 +79,9 @@ export function MediaLocalesSync(props: {
 
   return (
     <>
-      <p className={props.statusClassName} data-tone={status.tone} aria-live="polite">
-        {busy ? 'Diğer diller çevriliyor…' : status.label}
+      {/* One sentence, read whole when it changes; it only changes for the photo being edited or translated. */}
+      <p className={props.statusClassName} data-tone={status.tone} aria-live="polite" aria-atomic="true">
+        {busy ? 'Diğer diller çevriliyor…' : label}
       </p>
       {props.blocked && <p className="ai-action__hint">{props.blocked}</p>}
       <button type="button" className={props.buttonClassName} onClick={() => void retranslate()} disabled={busy || Boolean(props.blocked)}>

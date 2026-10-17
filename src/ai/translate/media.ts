@@ -4,7 +4,7 @@ import { Result } from 'tsentials/result'
 import { SystemDateTimeProvider } from 'tsentials/time'
 
 import { routing, type Locale } from '@/i18n/routing'
-import { type I18nSync, planSync, settleSync, SYNC_FIELDS, type SyncField, type SyncPlan, type Texts } from '@/lib/media/i18nSync'
+import { type I18nSync, planSync, rebasePlan, remainingPending, settleSync, SYNC_FIELDS, type SyncField, type SyncPlan, type Texts } from '@/lib/media/i18nSync'
 import { checkBudget } from '../budget'
 import { aiModel, resolveChain } from '../models'
 import { glossaryFrom, toSegmentMap, translateInput } from '../prompts/translate'
@@ -12,9 +12,13 @@ import { TRANSLATE_MEDIA_PROMPT_VERSION, translateMediaSchema, translateMediaSys
 import { failureUsage, runStructured } from '../run'
 import { monthUsage } from '../usage'
 
-/** Writes made here never queue another translation (Media trackTranslations) nor an AI suggestion. */
-const CTX = { skipAi: true }
+/** Writes made here never queue another translation (Media trackTranslations) nor an AI suggestion. Fresh per write:
+ * Payload keeps the object as req.context and hooks add keys to it. */
+const ctx = () => ({ skipAi: true })
 type AllLocales = Record<SyncField, Partial<Record<string, string | null>> | null> & { i18nSync?: I18nSync | null }
+
+/** settleSync drops pending; the TR fields edited during this run must stay pending for the run their save queued. */
+const keepPending = (sync: I18nSync, base: I18nSync): I18nSync => (base.pending ? { ...sync, pending: base.pending } : sync)
 
 /**
  * #203: brings a photo's other locales in step with its TR title/alt/caption, in one model call for every locale and
@@ -28,22 +32,35 @@ export async function syncMediaLocales(a: {
   force: boolean
 }): Promise<Result<{ locales: string[]; stale: string[]; model?: string; promptVersion: string }>> {
   const { payload, req, id } = a
-  const doc = (await payload.findByID({ collection: 'media', id, locale: 'all', depth: 0, disableErrors: true, req })) as unknown as AllLocales | null
+  const read = async () =>
+    (await payload.findByID({ collection: 'media', id, locale: 'all', depth: 0, disableErrors: true, req })) as unknown as AllLocales | null
+  const doc = await read()
   if (!doc) return Result.failure(Err.notFound('Media.NotFound', `media ${id}`))
-  const pick = (l: string): Texts => Object.fromEntries(SYNC_FIELDS.map((f) => [f, doc[f]?.[l]]))
-  const tr = pick(routing.defaultLocale)
   const targets = routing.locales.filter((l) => l !== routing.defaultLocale)
-  const plan = planSync({ tr, locales: Object.fromEntries(targets.map((l) => [l, pick(l)])), sync: doc.i18nSync, force: a.force })
+  const pick = (d: AllLocales, l: string): Texts => Object.fromEntries(SYNC_FIELDS.map((f) => [f, d[f]?.[l]]))
+  const others = (d: AllLocales) => Object.fromEntries(targets.map((l) => [l, pick(d, l)]))
+  const tr = pick(doc, routing.defaultLocale)
+  let plan = planSync({ tr, locales: others(doc), sync: doc.i18nSync, force: a.force })
   const save = (locale: Locale, data: Record<string, unknown>) =>
-    payload.update({ collection: 'media', id, locale, data, context: CTX, req, depth: 0 })
-  const done = { stale: plan.edited, promptVersion: TRANSLATE_MEDIA_PROMPT_VERSION }
+    payload.update({ collection: 'media', id, locale, data, context: ctx(), req, depth: 0 })
+  /**
+   * The record as it is now, not as the run first read it: a person may have saved during the model call. TR fields
+   * changed meanwhile stay pending (their save queued the next run); handled ones are cleared.
+   */
+  const current = async (): Promise<{ fresh: AllLocales; base: I18nSync } | null> => {
+    const fresh = await read()
+    if (!fresh) return null
+    const pending = remainingPending(fresh.i18nSync?.pending, tr, pick(fresh, routing.defaultLocale))
+    return { fresh, base: { ...fresh.i18nSync, pending } }
+  }
 
   const locales = Object.keys(plan.translate) as Locale[]
   let written: Record<string, Partial<Record<SyncField, string>>> = {}
   let model: string | undefined
   if (locales.length) {
     const fail = async (err: Parameters<typeof Result.failure>[0]) => {
-      await save(routing.defaultLocale, { i18nSync: settleSync({ sync: doc.i18nSync, tr, plan, written: {}, failed: true }) })
+      const now = await current()
+      if (now) await save(routing.defaultLocale, { i18nSync: keepPending(settleSync({ sync: now.base, tr, plan, written: {}, failed: true }), now.base) })
       return Result.failure(err)
     }
     const settings = await payload.findGlobal({ slug: 'aiSettings', req })
@@ -72,19 +89,24 @@ export async function syncMediaLocales(a: {
     written = Object.fromEntries(locales.map((l) => [l, Object.fromEntries(plan.translate[l]!.map((f) => [f, mapped.value[l]![f]!]))]))
   }
 
+  const now = await current()
+  if (!now) return Result.failure(Err.notFound('Media.NotFound', `media ${id}`))
+  plan = rebasePlan(plan, others(doc), others(now.fresh))
   // Each locale's text goes out with its provenance in one write: a failure in between never leaves fresh AI text
   // without the record that marks it as the AI's (it would read as hand-edited). Pending stays until the last write.
-  let sync = doc.i18nSync
+  let sync: I18nSync | null | undefined = now.base
   const only = (locale: string): SyncPlan => ({
     translate: plan.translate[locale] ? { [locale]: plan.translate[locale] } : {},
     clear: plan.clear[locale] ? { [locale]: plan.clear[locale] } : {},
     edited: [],
   })
-  for (const locale of new Set([...locales, ...(Object.keys(plan.clear) as Locale[])])) {
-    const texts = { ...Object.fromEntries((plan.clear[locale] ?? []).map((f) => [f, null])), ...written[locale] }
-    sync = { ...settleSync({ sync, tr, plan: only(locale), written: { [locale]: written[locale] ?? {} }, failed: false }), pending: sync?.pending }
+  for (const locale of new Set([...(Object.keys(plan.translate) as Locale[]), ...(Object.keys(plan.clear) as Locale[])])) {
+    const out = Object.fromEntries((plan.translate[locale] ?? []).map((f) => [f, written[locale]![f]!]))
+    const texts = { ...Object.fromEntries((plan.clear[locale] ?? []).map((f) => [f, null])), ...out }
+    sync = { ...settleSync({ sync, tr, plan: only(locale), written: { [locale]: out }, failed: false }), pending: sync?.pending }
     await save(locale, { ...texts, i18nSync: sync })
   }
-  await save(routing.defaultLocale, { i18nSync: settleSync({ sync, tr, plan: { translate: {}, clear: {}, edited: plan.edited }, written: {}, failed: false }) })
-  return Result.success({ ...done, locales, ...(model && { model }) })
+  const final = settleSync({ sync, tr, plan: { translate: {}, clear: {}, edited: plan.edited }, written: {}, failed: false })
+  await save(routing.defaultLocale, { i18nSync: keepPending(final, now.base) })
+  return Result.success({ locales: Object.keys(plan.translate), stale: plan.edited, promptVersion: TRANSLATE_MEDIA_PROMPT_VERSION, ...(model && { model }) })
 }

@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { backfillSync, changedFields, type I18nSync, planSync, settleSync, textHash } from './i18nSync'
+import { backfillSync, changedFields, type I18nSync, planSync, rebasePlan, remainingPending, settleSync, textHash } from './i18nSync'
 
 // Provenance of a locale field the AI wrote from a given TR text.
 const made = (tr: string, ai: string) => ({ src: textHash(tr), ai: textHash(ai) })
@@ -23,6 +23,10 @@ describe('changedFields (TR edit detection)', () => {
   })
   it('fields not sent are not changes', () => {
     expect(changedFields({ status: 'approved' } as never, { title: 'x' })).toEqual([])
+  })
+  it('a non-string value (a locale: "all" write sends { tr, en, … }) is not a TR change', () => {
+    expect(changedFields({ title: { tr: 'Yeni' } } as never, { title: 'Eski' })).toEqual([])
+    expect(changedFields({ alt: 'a' }, { alt: { tr: 'a' } } as never)).toEqual([])
   })
   it('a create (no stored doc) with text counts as changed', () => {
     expect(changedFields({ alt: 'a' }, null)).toEqual(['alt'])
@@ -89,6 +93,37 @@ describe('planSync (which locale fields the job may write)', () => {
     })
     expect(plan.translate).toEqual({ en: ['title', 'alt'], de: ['title', 'alt'] })
     expect(plan.edited).toEqual([])
+  })
+})
+
+describe('planSync force never clears', () => {
+  it('an empty TR field leaves the locale text alone even under force', () => {
+    const plan = planSync({ tr: { title: 'Başlık', caption: '' }, locales: { en: { title: 'Hand', caption: 'Hand caption' } }, sync: null, force: true })
+    expect(plan.translate).toEqual({ en: ['title'] })
+    expect(plan.clear).toEqual({})
+  })
+})
+
+describe('rebasePlan (texts changed while the model was answering)', () => {
+  it('drops a planned field whose locale text changed meanwhile and marks that locale edited', () => {
+    const plan = { translate: { en: ['alt' as const], de: ['alt' as const, 'title' as const] }, clear: { ru: ['caption' as const] }, edited: ['ar'] }
+    const before = { en: { alt: 'Old' }, de: { alt: 'Alt', title: 'Titel' }, ru: { caption: 'Подпись' } }
+    const after = { en: { alt: 'Old' }, de: { alt: 'Von Hand', title: 'Titel' }, ru: { caption: 'Вручную' } }
+    expect(rebasePlan(plan, before, after)).toEqual({ translate: { en: ['alt'], de: ['title'] }, clear: {}, edited: ['ar', 'de', 'ru'] })
+  })
+  it('nothing changed: the plan stays', () => {
+    const plan = { translate: { en: ['alt' as const] }, clear: {}, edited: [] }
+    expect(rebasePlan(plan, { en: { alt: 'x' } }, { en: { alt: ' x ' } })).toEqual(plan)
+  })
+})
+
+describe('remainingPending (TR edits made during a run stay pending)', () => {
+  it('keeps the pending fields whose TR text changed after the run read it', () => {
+    expect(remainingPending(['alt', 'title'], { alt: 'A', title: 'T' }, { alt: 'A', title: 'T2' })).toEqual(['title'])
+  })
+  it('nothing changed meanwhile: nothing stays pending', () => {
+    expect(remainingPending(['alt'], { alt: 'A' }, { alt: 'A' })).toBeUndefined()
+    expect(remainingPending(undefined, { alt: 'A' }, { alt: 'B' })).toBeUndefined()
   })
 })
 

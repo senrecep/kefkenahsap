@@ -24,7 +24,9 @@ export const textHash = (s: string | null | undefined) => createHash('sha1').upd
 
 /** The fields sent in `data` whose text differs from the stored one (null, '' and edge spaces count as equal). */
 export function changedFields(data: Texts, before: Texts | null | undefined): SyncField[] {
-  return SYNC_FIELDS.filter((f) => data[f] !== undefined && norm(data[f]) !== norm(before?.[f]))
+  // Only plain strings compare: a `locale: 'all'` write sends { tr, en, … } objects, which are not a TR edit here.
+  const text = (v: unknown) => v == null || typeof v === 'string'
+  return SYNC_FIELDS.filter((f) => data[f] !== undefined && text(data[f]) && text(before?.[f]) && norm(data[f]) !== norm(before?.[f]))
 }
 
 /**
@@ -51,11 +53,38 @@ export function planSync(a: { tr: Texts; locales: Record<string, Texts>; sync: I
         }
       }
       if (tr) add(plan.translate, locale, f)
-      else if (current) add(plan.clear, locale, f)
+      // Never under force: the owner's button only translates, it does not delete a locale's text.
+      else if (current && !a.force) add(plan.clear, locale, f)
     }
     if (edited) plan.edited.push(locale)
   }
   return plan
+}
+
+/**
+ * The plan after the model call: a locale field whose text changed since the plan was made (a person saved meanwhile)
+ * is dropped and its locale marked edited, so a run never overwrites text it did not plan against.
+ */
+export function rebasePlan(plan: SyncPlan, before: Record<string, Texts>, after: Record<string, Texts>): SyncPlan {
+  const edited = new Set(plan.edited)
+  const keep = (from: Record<string, SyncField[]>) => {
+    const out: Record<string, SyncField[]> = {}
+    for (const [locale, fields] of Object.entries(from)) {
+      const same = fields.filter((f) => textHash(before[locale]?.[f]) === textHash(after[locale]?.[f]))
+      if (same.length < fields.length) edited.add(locale)
+      if (same.length) out[locale] = same
+    }
+    return out
+  }
+  const translate = keep(plan.translate)
+  const clear = keep(plan.clear)
+  return { translate, clear, edited: [...edited] }
+}
+
+/** The pending TR fields that changed after the run read them: they still need a run (the hook queued one). */
+export function remainingPending(pending: SyncField[] | undefined, trBefore: Texts, trNow: Texts): SyncField[] | undefined {
+  const left = (pending ?? []).filter((f) => textHash(trBefore[f]) !== textHash(trNow[f]))
+  return left.length ? left : undefined
 }
 
 /** The stored state after a run: provenance of what was written, no pending fields, stale locales updated. */

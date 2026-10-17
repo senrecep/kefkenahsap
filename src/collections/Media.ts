@@ -247,7 +247,7 @@ const queueTranslation: CollectionAfterChangeHook = async ({ doc, req }) => {
   req.context[TRANSLATE_QUEUED] = ids.filter((i) => i !== doc.id)
   try {
     // No `req`: a failed insert inside the save's transaction would abort the save itself.
-    await req.payload.jobs.queue({ task: 'translateMedia', queue: 'translateMedia', input: { mediaId: String(doc.id) } })
+    await req.payload.jobs.queue({ task: 'translateMedia', input: { mediaId: String(doc.id) } })
   } catch (err) {
     req.payload.logger.warn({ err, media: doc.id }, 'media: could not queue translateMedia')
   }
@@ -297,7 +297,7 @@ export const Media: CollectionConfig = {
       admin: { components: { Field: '/components/admin/ai/MediaLocalesSync#MediaLocalesSyncField' } },
     },
     // #203: provenance of the AI-made locale texts, pending TR fields, stale locales (src/lib/media/i18nSync.ts).
-    { name: 'i18nSync', type: 'json', admin: { hidden: true } },
+    { name: 'i18nSync', type: 'json', access: { read: ({ req }) => Boolean(roleOf(req.user)) }, admin: { hidden: true } },
     { name: 'seoFilename', type: 'text', label: 'SEO dosya adı', index: true, admin: { position: 'sidebar' } },
     { name: 'category', type: 'relationship', relationTo: 'categories', index: true, label: 'Kategori' },
     { name: 'tags', type: 'relationship', relationTo: 'tags', hasMany: true, label: 'Etiketler' },

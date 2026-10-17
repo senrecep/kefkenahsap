@@ -544,6 +544,8 @@ export function GaleriClient({ categories, projects, tags }: { categories: Optio
                     <MediaLocalesSync
                       id={m.id}
                       sync={m.i18nSync as I18nSync | null}
+                      // The editor may hold unsaved TR text: translating now would use the saved one.
+                      blocked={editing === m.id ? 'Önce metni kaydedin ya da vazgeçin.' : null}
                       buttonClassName="galeri__btn"
                       statusClassName="galeri__langs-status"
                       onDone={() => void refresh(m.id)}
