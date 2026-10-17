@@ -1,9 +1,11 @@
 import { afterEach, describe, expect, it, vi } from 'vitest'
 
-import { buildMetadata, fullTitle } from './metadata'
+import { buildMetadata, fullTitle, siteOgImage } from './metadata'
 
 const SITE = 'https://www.kefkenahsap.com'
-const base = { siteName: 'Kefken Ahşap Dekorasyon', site: SITE, title: 'Deck ve Zeminler', description: 'Iroko ve teak deck.' }
+const ALT = 'Kefken Ahşap Dekorasyon — Ahşap deck, pergola'
+const card = { url: '/og-tr.png', width: 1200, height: 630, alt: ALT }
+const base = { siteName: 'Kefken Ahşap Dekorasyon', site: SITE, title: 'Deck ve Zeminler', description: 'Iroko ve teak deck.', ogImage: card }
 
 describe('buildMetadata', () => {
   it('title, description, self-canonical, hreflang and matching OG/Twitter tags', () => {
@@ -20,9 +22,9 @@ describe('buildMetadata', () => {
       locale: 'tr_TR',
       alternateLocale: ['en_US'],
       url: `${SITE}/tr/deck-ve-zeminler`,
-      images: [{ url: '/og.jpg', width: 1200, height: 630 }],
+      images: [card],
     })
-    expect(m.twitter).toEqual({ card: 'summary_large_image', title: 'Deck ve Zeminler', description: 'Iroko ve teak deck.' })
+    expect(m.twitter).toEqual({ card: 'summary_large_image', title: 'Deck ve Zeminler', description: 'Iroko ve teak deck.', images: [card] })
   })
 
   it('an absolute title (homepage) is used as-is for OG', () => {
@@ -47,6 +49,7 @@ describe('buildMetadata', () => {
   it('a page with its own opengraph-image file sets no config image (it would override the file)', () => {
     const m = buildMetadata({ ...base, locale: 'tr', paths: { tr: '/tr/galeri/x' }, ownOgImage: true })
     expect(m.openGraph).not.toHaveProperty('images')
+    expect(m.twitter).not.toHaveProperty('images')
   })
 
   it('omits an empty description instead of emitting an empty tag', () => {
@@ -54,6 +57,21 @@ describe('buildMetadata', () => {
     expect(m).not.toHaveProperty('description')
     expect(m.openGraph).not.toHaveProperty('description')
     expect(m.twitter).not.toHaveProperty('description')
+  })
+})
+
+describe('siteOgImage (site-wide share card)', () => {
+  it('without an admin image: the generated card of the page language, with size and alt', () => {
+    expect(siteOgImage('tr', null, ALT)).toEqual({ url: '/og-tr.png', width: 1200, height: 630, alt: ALT })
+    expect(siteOgImage('ar', undefined, 'alt ar')).toEqual({ url: '/og-ar.png', width: 1200, height: 630, alt: 'alt ar' })
+  })
+
+  it("the admin's default share image wins (served cropped by /og.jpg)", () => {
+    expect(siteOgImage('en', { id: 4, url: '/media/x.webp' }, ALT)).toEqual({ url: '/og.jpg', width: 1200, height: 630, alt: ALT })
+  })
+
+  it('an unpopulated id (the public may not read it) is not an image: the generated card stays', () => {
+    expect(siteOgImage('de', 4, ALT).url).toBe('/og-de.png')
   })
 })
 

@@ -1,0 +1,3 @@
+photo.jpg: kefken-data/Kaliteli/Ireko-Teak/13256.webp (2560×1183), seedKey archive/Ireko-Teak/13256.webp, the homepage hero's
+first slide (scripts/seed/hero-slides.ts): pergola terrace with an iroko deck and seating over the hills. A Kefken Ahşap job
+photo with its single www.kefkenahsap.com watermark, downscaled to 1600px wide (JPEG q82). Colours are the photo's own.
