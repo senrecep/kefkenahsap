@@ -15,7 +15,7 @@ type Args = Omit<Parameters<typeof buildMetadata>[0], 'siteName' | 'site' | 'loc
 /** The site-wide share card of `locale` (see siteOgImage); its alt is the text the generated card shows. */
 export async function siteOgImageFor(locale: Locale, defaultOgImage: unknown) {
   const t = await getTranslations({ locale, namespace: 'Site' })
-  return siteOgImage(locale, defaultOgImage, `${t('name')} — ${t('tagline')}`)
+  return siteOgImage(locale, defaultOgImage, `${t('name')}: ${t('tagline')}`)
 }
 
 /** `generateMetadata` helper for every public page: see buildMetadata. */
