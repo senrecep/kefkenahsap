@@ -68,7 +68,8 @@ Work through the phases in order and tick each step. Never paste a secret value 
    ( set -euo pipefail; R=~/Documents/projects/senrecep/kefkenahsap-workspace/kefkenahsap
      git -C "$R" fetch -q origin
      git -C "$R" worktree add --detach "$R/../kefkenahsap-wt/launch" origin/development
-     cd "$R/../kefkenahsap-wt/launch" && bun install --frozen-lockfile && test ! -e .env )
+     cd "$R/../kefkenahsap-wt/launch"; bun install --frozen-lockfile
+     [ ! -e .env ] || { echo 'unexpected .env in the launch worktree'; exit 1; } )
    ```
    To refresh it later (step 2.4 does this): `git -C <launch> fetch -q origin && git -C <launch> checkout -q --detach origin/development`.
 
@@ -128,10 +129,10 @@ Work through the phases in order and tick each step. Never paste a secret value 
   scp "$L/scripts/launch/promote-sanitize.sql" senrecep:/tmp/promote.sql
   ssh senrecep bash -s -- "$D" "$OWNER" <<'EOS'
 set -euo pipefail; PG=$1-kefken-postgres-1; OWNER=$2; DB=kefken_promote_rehearsal
-trap 'docker exec $PG dropdb -U kefken --if-exists $DB; docker exec $PG rm -f /tmp/promote.sql; rm -f /tmp/promote.sql' EXIT
+trap 'docker exec $PG rm -f /tmp/rehearsal.dump; docker exec $PG dropdb -U kefken --if-exists $DB; docker exec $PG rm -f /tmp/promote.sql; rm -f /tmp/promote.sql' EXIT
 docker exec $PG dropdb -U kefken --if-exists $DB; docker exec $PG createdb -U kefken $DB
 docker cp /tmp/promote.sql $PG:/tmp/promote.sql
-docker exec $PG sh -c "pg_dump -U kefken -d kefken -Fc --exclude-table-data=leads --exclude-table-data=leads_rels --exclude-table-data=lead_photos --exclude-table-data=users_sessions --exclude-table-data='payload_preferences*' --exclude-table-data='payload_locked_documents*' --exclude-table-data='payload_jobs*' --exclude-table-data=payload_kv --exclude-table-data=ai_usage > /tmp/rehearsal.dump && pg_restore -U kefken -d $DB --no-owner --no-acl --exit-on-error /tmp/rehearsal.dump; rm -f /tmp/rehearsal.dump"
+docker exec $PG sh -c "set -e; pg_dump -U kefken -d kefken -Fc --exclude-table-data=leads --exclude-table-data=leads_rels --exclude-table-data=lead_photos --exclude-table-data=users_sessions --exclude-table-data='payload_preferences*' --exclude-table-data='payload_locked_documents*' --exclude-table-data='payload_jobs*' --exclude-table-data=payload_kv --exclude-table-data=ai_usage > /tmp/rehearsal.dump; pg_restore -U kefken -d $DB --no-owner --no-acl --exit-on-error /tmp/rehearsal.dump"
 docker exec $PG psql -U kefken -d $DB -v owner_email="$OWNER" -f /tmp/promote.sql
 EOS
 )
@@ -196,7 +197,7 @@ set -euo pipefail; P=$1
 docker ps -a --format '{{.Names}}\t{{.Status}}' | grep "$P"      # app, kefken-postgres (healthy), umami, kefken-backup up; db-init Exited (0)
 docker exec $P-app-1 wget -qO- http://127.0.0.1:3000/api/health; echo   # {"ok":true}
 docker inspect $P-app-1 -f '{{range .Mounts}}{{.Name}} -> {{.Destination}}{{"\n"}}{{end}}'   # <P>_lead-photos and <P>_media-originals
-docker exec $P-app-1 sh -c 'for d in lead-photos media-originals; do touch /app/data/$d/.w && rm /app/data/$d/.w && echo "$d writable"; done'
+docker exec $P-app-1 sh -c 'set -e; for d in lead-photos media-originals; do touch /app/data/$d/.w; rm /app/data/$d/.w; echo "$d writable"; done'
 EOS
 )
 ```
@@ -213,7 +214,8 @@ docker exec $PG pg_dump -U kefken -d kefken -Fc \
   --exclude-table-data=leads --exclude-table-data=leads_rels --exclude-table-data=lead_photos \
   --exclude-table-data=users_sessions --exclude-table-data='payload_preferences*' --exclude-table-data='payload_locked_documents*' \
   --exclude-table-data='payload_jobs*' --exclude-table-data=payload_kv --exclude-table-data=ai_usage > "$F.part"
-docker exec -i $PG pg_restore -l < "$F.part" > /dev/null && mv "$F.part" "$F" && chmod 600 "$F" && ls -l "$F"
+docker exec -i $PG pg_restore -l < "$F.part" > /dev/null   # readable archive, or stop here
+mv "$F.part" "$F"; chmod 600 "$F"; ls -l "$F"
 docker exec $PG psql -U kefken -d kefken -Atc "select count(*) from media"   # dev's media count, for 2.13 and 2.15
 EOS
 )
@@ -243,8 +245,12 @@ set -euo pipefail; P=$1; EXPORTED=$2; PG=$P-kefken-postgres-1
 F=$(ls -1t /var/lib/kefken-backups/promote/dev-*.dump | head -1); echo "dump: $F"
 docker exec -i $PG pg_restore -l < "$F" > /dev/null
 n=$(docker exec $PG psql -U kefken -d kefken -Atc 'select count(*) from leads')   # fails (and stops) if the DB is unreachable
-if [ "$n" != 0 ] && [ "$EXPORTED" != yes ]; then
-  echo "refusing: prod holds $n leads. Export them first (phase 6, Re-attempt), then LEADS_EXPORTED=yes"; exit 1
+if [ "$n" != 0 ]; then
+  [ "$EXPORTED" = yes ] || { echo "refusing: prod holds $n leads. Export them first (phase 6, Re-attempt), then LEADS_EXPORTED=yes"; exit 1; }
+  K=/var/lib/kefken-backups/promote/leads-keep.dump
+  [ -s "$K" ] || { echo "refusing: LEADS_EXPORTED=yes but $K is missing"; exit 1; }
+  k=$(docker exec -i $PG pg_restore -a -t leads -f - < "$K" | awk '/^COPY public.leads /{on=1;next} /^\\\.$/{on=0} on' | wc -l)
+  [ "$k" = "$n" ] || { echo "refusing: $K holds $k leads, prod holds $n; re-export (phase 6 step 1)"; exit 1; }
 fi
 docker stop $P-app-1
 docker exec $PG psql -U kefken -d postgres -v ON_ERROR_STOP=1 -c 'DROP DATABASE kefken WITH (FORCE)' -c 'CREATE DATABASE kefken'
@@ -273,7 +279,7 @@ docker exec $PG psql -U kefken -d kefken -v owner_email="$2" -v commit="$3" -f /
 EOS
 )
 ```
-Run it once as a dry run and read the report. Then run it with `yes`. Expected report: `media` = the 2.10 count, `media_prefixed 0`, `users 1`, `leads 0`, `last_migration` = 2.11.
+Run it once as a dry run and read the report. Then run it with `yes`. Expected report: `media` = the 2.10 count, `media_prefixed 0`, `users 1`, `leads 0`, `last_migration` = 2.11, `site_ga_id` = decision 11. Dev's Site Settings → GA ID is copied with the DB, and a valid one **overrides** `NEXT_PUBLIC_GA_ID` (`gaIdOf`, `src/lib/analytics.ts`). If it isn't the prod property, fix it in the prod admin after T0, or on dev before the 2.10 dump.
 - Re-attempt with exported leads: put them back now (phase 6, "Re-attempt", step b).
 
 ### 2E. R2 delta and per-file verification
@@ -317,7 +323,7 @@ If `media.upload.imageSizes` gained a size since this runbook was written, add i
     ```bash
     ( set -euo pipefail; . ~/Documents/projects/senrecep/kefkenahsap-workspace/kefkenahsap-wt/launch/scripts/launch/env.sh
       ssh senrecep bash -s -- "${D}_media-originals" "${P}_media-originals" < "$L/scripts/launch/copy-volume.sh"   # "copied and verified N files"
-      ssh senrecep "docker start $P-app-1 && sleep 10 && docker exec $P-app-1 wget -qO- http://127.0.0.1:3000/api/health" )
+      ssh senrecep "set -e; docker start $P-app-1; sleep 10; docker exec $P-app-1 wget -qO- http://127.0.0.1:3000/api/health" )
     ```
     Confirm the volume names first with `ssh senrecep "docker volume ls -q | grep media-originals"`: Dokploy names them `<appName>_<volume>`.
 
@@ -367,10 +373,10 @@ If `media.upload.imageSizes` gained a size since this runbook was written, add i
       export -f hop; xargs -P 6 -d '\n' -n1 bash -c 'hop "$1"' _ < "$S/paths" > "$S/hops"
       need "$S/hops" "$(wc -l < "$S/paths")"
       awk '{print $1}' "$S/hops" | sort | uniq -c
-      ! awk '$1!=301 && $1!=410' "$S/hops" | grep .                     # no other first hop
+      bad=$(awk '$1!=301 && $1!=410' "$S/hops"); [ -z "$bad" ] || { echo "unexpected first hop:"; echo "$bad"; exit 1; }
       awk '$1==301{print $2}' "$S/hops" | sort -u | sed "s#^https://www.kefkenahsap.com#$BASE#" |
-        xargs -P 6 -I{} curl -sg -o /dev/null -w '%{http_code} {}\n' '{}' > "$S/finals"
-      ! awk '$1!=200' "$S/finals" | grep . )                            # every target 200
+        xargs -P 6 -I{} curl -sg -o /dev/null -w '%{http_code} {}\n' '{}' > "$S/finals" || true   # a network error shows as 000 below
+      bad=$(awk '$1!=200' "$S/finals"); [ -z "$bad" ] || { echo "targets not 200 (000 = network error):"; echo "$bad"; exit 1; } )
     ```
 22. [ ] **[Owner]** Click through on `http://localhost:13000` (the 2.16 tunnel, on this laptop), read-only. Check: home in all 5 locales, the hero slideshow, 3 categories, the gallery with tag filters, a project, a guide, the contact page. Content must look exactly like dev.
     - **GA consent, before T0**, in a private window with DevTools → Network on `http://localhost:13000/tr`:
@@ -391,12 +397,12 @@ F=$(ls -1t /var/lib/kefken-backups/production/kefken-*.dump | head -1)
 trap 'docker exec $PG dropdb -U kefken --if-exists kefken_restore_drill' EXIT
 docker exec $PG dropdb -U kefken --if-exists kefken_restore_drill; docker exec $PG createdb -U kefken kefken_restore_drill
 docker exec -i $PG pg_restore -U kefken -d kefken_restore_drill --no-owner --exit-on-error < "$F"
-for d in kefken kefken_restore_drill; do
-  docker exec $PG psql -U kefken -d $d -Atc "select '$d', (select count(*) from media), (select count(*) from categories), (select count(*) from users)"; done
+q="select (select count(*) from media), (select count(*) from categories), (select count(*) from users), (select count(*) from leads)"
+a=$(docker exec $PG psql -U kefken -d kefken -Atc "$q"); b=$(docker exec $PG psql -U kefken -d kefken_restore_drill -Atc "$q")
+echo "live=$a drill=$b (media|categories|users|leads)"; [ "$a" = "$b" ] || { echo 'restore drill does not match the live DB'; exit 1; }
 EOS
 )
 ```
-Both lines must show the same counts.
 
 24. [ ] **[Claude]** Close the tunnels:
     `( . ~/Documents/projects/senrecep/kefkenahsap-workspace/kefkenahsap-wt/launch/scripts/launch/env.sh; tunnel_close prodpg; tunnel_close prodapp )`.
@@ -525,7 +531,8 @@ The owner says "go" only when every box is ticked:
   ssh senrecep bash -s -- "$P" <<'EOS'
 set -euo pipefail; PG=$1-kefken-postgres-1; DIR=/var/lib/kefken-backups/promote; install -d -m 700 $DIR
 docker exec $PG pg_dump -U kefken -d kefken -Fc --data-only -t leads -t leads_rels -t lead_photos > $DIR/leads-keep.dump
-docker exec -i $PG pg_restore -l < $DIR/leads-keep.dump > /dev/null && chmod 600 $DIR/leads-keep.dump && ls -l $DIR/leads-keep.dump
+docker exec -i $PG pg_restore -l < $DIR/leads-keep.dump > /dev/null   # readable archive, or stop here
+chmod 600 $DIR/leads-keep.dump; ls -l $DIR/leads-keep.dump
 EOS
   ssh senrecep "docker exec $P-kefken-postgres-1 psql -U kefken -d kefken -c \"COPY (SELECT * FROM leads ORDER BY created_at) TO STDOUT WITH CSV HEADER\"" > "$W/leads-after-cutover.csv"; chmod 600 "$W/leads-after-cutover.csv" )
 ```
@@ -566,3 +573,4 @@ EOS
 | 8 | Lawyer KVKK/cookie sign-off: a hard blocker, or launch with the current texts | Hard blocker (personal data + consent). |
 | 9 | R2 backup token (#51) before T0 | Required: prod content is no longer reproducible from seeds. |
 | 10 | Traefik access logs (server-wide) for the 404 watch | Off; GSC + Cloudflare analytics are enough. |
+| 11 | GA ID in Site Settings (copied from dev; it overrides the env `G-S84WKG63MS`): same property, another one, or empty (= env) | Empty or `G-S84WKG63MS`, so prod and dev never report into a different property by accident. |

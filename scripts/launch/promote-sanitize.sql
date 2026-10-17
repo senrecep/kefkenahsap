@@ -75,7 +75,8 @@ END $$;
 
 SELECT (SELECT count(*) FROM media) AS media, (SELECT count(*) FROM media WHERE prefix <> '') AS media_prefixed,
   (SELECT count(*) FROM users) AS users, (SELECT count(*) FROM leads) AS leads,
-  (SELECT name FROM payload_migrations ORDER BY id DESC LIMIT 1) AS last_migration;
+  (SELECT name FROM payload_migrations ORDER BY id DESC LIMIT 1) AS last_migration,
+  (SELECT ga_id FROM site_settings LIMIT 1) AS site_ga_id;  -- overrides NEXT_PUBLIC_GA_ID when valid (gaIdOf)
 
 \if :{?commit}
 \else

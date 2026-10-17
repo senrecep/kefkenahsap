@@ -14,8 +14,9 @@ git -C "$repo" show "$ref:src/lib/legacy/attachment-map.json" | jq -r '.[].slug'
 for f in files slugs; do [ "$(wc -l < "$t/$f")" -ge 100 ] || { echo "too few $f in $ref's maps" >&2; exit 1; }; done
 extra=()
 if [ -n "$ip" ]; then host=$(echo "$site" | sed -E 's#^https?://([^/]+).*#\1#'); extra=(-k --resolve "$host:443:$ip"); fi
-check() { xargs -P 8 -I{} curl -s "${@:2}" -o /dev/null -w '%{http_code} {}\n' "$1" | awk '$1!=200'; }
+# curl prints 000 on a network error (and exits non-zero, which xargs reports); keep going and report it as a line.
+check() { { xargs -P 8 -I{} curl -s "${@:2}" -o /dev/null -w '%{http_code} {}\n' "$1" || true; } | awk '$1!=200'; }
 check "$cdn/{}" < "$t/files" > "$t/bad"
 check "$site/tr/galeri/{}" "${extra[@]}" < "$t/slugs" >> "$t/bad"
 echo "checked $(wc -l < "$t/files") files, $(wc -l < "$t/slugs") gallery pages; broken: $(wc -l < "$t/bad")"
-[ ! -s "$t/bad" ] || { cat "$t/bad"; exit 1; }
+[ ! -s "$t/bad" ] || { grep -q '^000 ' "$t/bad" && echo 'some requests failed at the network level (000): check the tunnel / DNS / --resolve'; cat "$t/bad"; exit 1; }
