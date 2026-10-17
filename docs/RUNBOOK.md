@@ -9,7 +9,7 @@ Operational notes for kefkenahsap.com. Secrets are never written here.
 | Server | 45.196.28.107 (`ssh senrecep`), Dokploy, Docker 28 |
 | Dokploy project | `kefkenahsap` — environments `development` (development.kefkenahsap.com) and `production` |
 | Cloudflare zone | kefkenahsap.com (Free plan, SSL Full) |
-| R2 buckets | `kefkenahsap` (prod media, public via `cdn.kefkenahsap.com`), `kefkenahsap-dev` (`cdn-dev.kefkenahsap.com`; the deployed dev app actually uses `kefkenahsap` with `S3_PREFIX=dev`, served at `cdn.kefkenahsap.com/dev/`), `kefkenahsap-backups` (private, DB dumps and volume archives). Lead photos and the clean originals of watermarked uploads are **not** in R2: they live on private disk volumes (`lead-photos`, `media-originals`), never served by the CDN; a private bucket for them needs a new owner token (#51) |
+| R2 buckets | `kefkenahsap` (prod media, public via `cdn.kefkenahsap.com`), `kefkenahsap-dev` (`cdn-dev.kefkenahsap.com`; the deployed dev app actually uses `kefkenahsap` with `S3_PREFIX=dev`, served at `cdn.kefkenahsap.com/dev/`), `kefkenahsap-backups` (private, DB dumps and the lead-photos archive). Live lead photos are **not** in R2: they live on the private `lead-photos` disk volume, never served by the CDN; a private bucket for them needs a new owner token (#51) |
 | Cache rule | `kefken: cdn immutable` — 1 year edge + browser on both CDN hosts |
 | Turnstile | widget `kefkenahsap` (kefkenahsap.com, development.kefkenahsap.com, localhost) |
 | Old WordPress | still at güzelhosting (104.247.167.3) behind the apex/www records until launch (#53) |
@@ -156,29 +156,18 @@ After the rename, every old localized path (`/tr/ahsap-yapilar`, `/en/wooden-str
 
 Loads the owner-approved photo taxonomy (`seed/taxonomy/photo-plan.json`): 156 live photos are moved to their new category, 2,686 archive photos are imported (all published except 20 the tagger doubted), product-type and other tags are added, 43 files with stacked watermarks are replaced, covers are set for the new categories, and same-category duplicates are hidden (set to `pending`, never deleted). Every script only adds, or changes state that is still exactly what the plan expects. Anything else is listed and left alone. A re-run writes nothing. Each script exits 1 if anything failed, and supports `--dry-run`. A remote database (or `SEED_REMOTE=1`) needs `--yes`.
 
-Run this after the #172 steps above. The scripts run on the laptop against the dev database and bucket (the dev runner passes `SEED_REMOTE=1`, `MEDIA_ORIGINALS_DIR` and `KEFKEN_*`). They need:
+Run this after the #172 steps above. The scripts run on the laptop against the dev database and bucket (the dev runner passes `SEED_REMOTE=1` and `KEFKEN_*`). They need:
 - `KEFKEN_ARCHIVE`: the `kefken-data/Kaliteli` folder.
 - `KEFKEN_WORKSPACE`: the folder holding `kefken-data/` and `image-work/`.
 - `KEFKEN_CONCURRENCY`: uploads at once, default 4.
-- `MEDIA_ORIGINALS_DIR`: required whenever a stamp is due (4 imports, 8 remedies). The upload hook keeps the clean original of each stamped file there. Run it on the laptop with a **local staging folder**, then copy that folder into the app's `media-originals` volume. Without the copy, the dev app has no clean original for those 12 files.
 
 ```bash
-export STAGE=$HOME/kefken-media-originals-175 && mkdir -p "$STAGE"
-export MEDIA_ORIGINALS_DIR=$STAGE KEFKEN_ARCHIVE=<…>/kefken-data/Kaliteli KEFKEN_WORKSPACE=<…>/kefkenahsap-workspace
+export KEFKEN_ARCHIVE=<…>/kefken-data/Kaliteli KEFKEN_WORKSPACE=<…>/kefkenahsap-workspace
 STEPS="taxonomy-reassign taxonomy-import taxonomy-tags taxonomy-remedy taxonomy-covers editorial-swaps taxonomy-dedup"
 # 1) every dry run first, and read the lists (a later step's dry run cannot see what an earlier step will write)
 for s in $STEPS; do bun run payload run scripts/seed/$s.ts -- --dry-run || break; done
 # 2) then the real runs, in order
 for s in $STEPS; do bun run payload run scripts/seed/$s.ts -- --yes || break; done
-# clean originals → the dev app's volume (compose: MEDIA_ORIGINALS_DIR=/app/data/media-originals)
-ls "$STAGE" | wc -l                                                    # 12 on a first run
-ssh senrecep 'rm -rf /tmp/media-originals-175 && mkdir -p /tmp/media-originals-175'
-scp "$STAGE"/* senrecep:/tmp/media-originals-175/
-ssh senrecep 'C=compose-hack-multi-byte-system-ysiihc-app-1 D=/app/data/media-originals
-  docker cp /tmp/media-originals-175/. $C:$D/ &&
-  docker exec -u 0 $C sh -c "chown -R \$(stat -c %u:%g $D) $D" &&
-  for f in $(ls /tmp/media-originals-175); do docker exec $C test -s $D/$f || echo "MISSING $f"; done &&
-  rm -r /tmp/media-originals-175'
 # last: restart the app so its page cache (unstable_cache, 1 h) drops the old answers
 ssh senrecep 'docker restart compose-hack-multi-byte-system-ysiihc-app-1'
 ```
@@ -245,12 +234,13 @@ The privacy notice promises that notification e-mails and WhatsApp messages are 
 ## Backups
 
 - Service `kefken-backup` (compose profile `backup`; dev runs `COMPOSE_PROFILES=observability,backup`) runs `pg_dump -Fc` of DB `kefken` daily at `BACKUP_AT` (HHMM, **UTC**; default `0100` = 04:00 Istanbul).
-- Location: host `/var/lib/kefken-backups/<SITE_ENV>/kefken-YYYYmmdd-HHMMSS.dump` (dir 700, files 600, root). Dumps hold personal data (leads): never put them in a public bucket.
-- Rotation: the newest **14** dumps are kept. A dump is written as `*.part` and must pass `pg_restore -l` before it is renamed, so a failed or corrupt dump never rotates out a good one (stale `*.part` files are removed at start).
+- Location: host `/var/lib/kefken-backups/<SITE_ENV>/kefken-YYYYmmdd-HHMMSS.dump` (dir 700, files 600, root). Dumps hold personal data (leads): never put them in a public bucket. **A local file exists only while its off-site copy is missing** (see Off-site copy): normally the directory is empty and the backups live in R2.
+- Age pruning (the cap for failed uploads): at the start of every run, `find` deletes `kefken-*.dump`, `lead-photos-*.tar.gz` and old `media-originals-*.tar.gz` older than 14 days (`-mtime +13`) in `/backups`; `pre-*` manual dumps never match. A dump is written as `*.part` and must pass `pg_restore -l` before it is renamed, so a failed or corrupt dump is never kept (stale `*.part` files are removed at start). Existing dev leftovers in `/var/lib/kefken-backups/development` (old dumps, `media-originals` archives, mostly from 2026-10-14..17) need no manual cleanup: the age rule removes them as they pass 14 days, and they are already in R2 where the upload succeeded.
 - Run one now: `docker exec <project>-kefken-backup-1 touch /backups/.run-now` (picked up within ~20 s). `docker logs <project>-kefken-backup-1` shows `wrote …` and the R2 result.
-- Off-site copy: after each dump, rclone (pinned `rclone/rclone:1.75.1` binary, baked into the service image at deploy) copies it to `r2:$BACKUP_S3_BUCKET/<SITE_ENV>/` with its **own** key `BACKUP_S3_ACCESS_KEY_ID` / `BACKUP_S3_SECRET_ACCESS_KEY`, never the app's `S3_*` media key. Only the exact bucket name `kefkenahsap-backups` is accepted; anything else is refused. Access denied is logged as `R2 upload skipped: access denied …; local copy kept`.
-- **Pending (owner):** create a dedicated R2 API token, **Object Read & Write scoped to `kefkenahsap-backups` only** (R2 has no write-only permission; no admin scope, no other buckets). Do **not** widen the app's media token. Put it in the Dokploy env as `BACKUP_S3_ACCESS_KEY_ID` / `BACKUP_S3_SECRET_ACCESS_KEY` and redeploy. Add a 30-day lifecycle rule (delete objects after 30 days) on that bucket (PLAN §3.2). Until then the log says `R2 upload skipped: BACKUP_S3_ACCESS_KEY_ID not set (dedicated backup token pending); local copy kept`.
-- Private file volumes: in the same run, `lead-photos` (customer photos, personal data) and `media-originals` (clean originals of watermarked admin uploads, #169) are mounted read-only and archived to `/backups/<volume>-YYYYmmdd-HHMMSS.tar.gz` (same `*.part` + `tar -tz` check, newest **14** kept), then copied off-site with the same `upload` step. Without `BACKUP_S3_*` the log says `R2 upload skipped: …; local copy kept`. Restore: `tar -xzf <archive> -C /var/lib/docker/volumes/<project>_<volume>/_data --strip-components=1` with the app stopped.
+- Off-site copy: after each dump, rclone (pinned `rclone/rclone:1.75.1` binary, baked into the service image at deploy) copies it to `r2:$BACKUP_S3_BUCKET/<SITE_ENV>/` with its **own** key `BACKUP_S3_ACCESS_KEY_ID` / `BACKUP_S3_SECRET_ACCESS_KEY`, never the app's `S3_*` media key. Only the exact bucket name `kefkenahsap-backups` is accepted; anything else is refused. The local file is **deleted only after the upload succeeded**; right after a success, older local leftovers of the same kind are retried (the first failure stops the retry). A failed upload (access denied, network, unset `BACKUP_S3_*`, wrong bucket) keeps it and is logged as `R2 upload failed: …; local copy kept` (or `skipped`); the rotation then caps the disk.
+- Backup token: a dedicated R2 API token, **Object Read & Write scoped to `kefkenahsap-backups` only** (R2 has no write-only permission; no admin scope, no other buckets), in the Dokploy env as `BACKUP_S3_ACCESS_KEY_ID` / `BACKUP_S3_SECRET_ACCESS_KEY`. Never widen the app's media token instead. **Development:** set, uploads verified 2026-10-17. **Production:** pending, set it at launch and redeploy. Without it the log says `R2 upload skipped: BACKUP_S3_ACCESS_KEY_ID not set (dedicated backup token pending); local copy kept`. The bucket has the lifecycle rule `kvkk-30-day-backups` (objects deleted after 30 days, PLAN §3.2).
+- Private file volume: in the same run, `lead-photos` (customer photos, personal data) is mounted read-only and archived to `/backups/lead-photos-YYYYmmdd-HHMMSS.tar.gz` (same `*.part` + `tar -tz` check), then copied off-site and deleted locally with the same step. Restore (app stopped): `docker exec <project>-kefken-backup-1 rclone cat r2:kefkenahsap-backups/<SITE_ENV>/lead-photos-<stamp>.tar.gz > /tmp/lead-photos.tar.gz && tar -xzf /tmp/lead-photos.tar.gz -C /var/lib/docker/volumes/<project>_lead-photos/_data --strip-components=1` (run as root; the `r2` remote exists only inside the backup container; use the local file in `/var/lib/kefken-backups/<SITE_ENV>/` instead if it is still there). Photo archives and DB dumps both live 30 days in R2, so when restoring an older dump, take the photo archive of the same date.
+- Clean originals of watermarked uploads are no longer kept (#204): nothing ever read them. The old dev `media-originals` volume (11 files) is unused now. Its last archive is in R2 `kefkenahsap-backups/development/` until the 30-day lifecycle removes it. The volume itself can be removed by hand later (`docker volume rm <project>_media-originals` once the app no longer mounts it); no script deletes it.
 - Not covered: the `umami` / `glitchtip` DBs.
 
 ### Restore
@@ -260,7 +250,7 @@ Rehearsed on dev 2026-10-14 into a scratch DB: row counts matched, scratch DB dr
 ```sh
 ssh senrecep
 PG=<project>-kefken-postgres-1
-F=$(ls -1t /var/lib/kefken-backups/development/kefken-*.dump | head -1)   # or pick one
+F=$(ls -1t /var/lib/kefken-backups/development/kefken-*.dump | head -1)   # only present if its upload failed; else fetch it from R2 (below)
 # 1. Rehearse into a scratch DB and compare counts with the live DB:
 docker exec $PG createdb -U kefken kefken_restore_test
 docker exec -i $PG pg_restore -U kefken -d kefken_restore_test --no-owner --exit-on-error < "$F"
@@ -273,4 +263,4 @@ docker exec -i $PG pg_restore -U kefken -d kefken --no-owner --exit-on-error < "
 docker start <project>-app-1    # or redeploy from Dokploy
 ```
 
-From R2 (once enabled): `rclone copyto r2:kefkenahsap-backups/<env>/<file> ./<file>` or download it from the Cloudflare dashboard, then the steps above.
+From R2 (the normal case, since the local copy is deleted after upload): the `r2` remote exists only inside the backup container, so run `docker exec <project>-kefken-backup-1 rclone cat r2:kefkenahsap-backups/<env>/<file> > /tmp/<file>` on the server and set `F=/tmp/<file>` (or download it from the Cloudflare dashboard), then the steps above.

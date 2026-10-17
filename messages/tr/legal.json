@@ -52,7 +52,7 @@
     "retention": {
       "title": "Verilerinizi ne kadar süre saklıyoruz?",
       "leads": "<b>Talepler ve ekli fotoğraflar:</b> alındıktan 2 yıl sonra otomatik olarak silinir.",
-      "backups": "<b>Yedekler:</b> veritabanı ve fotoğraf yedeği her gün alınır. Sunucuda son 14 günün, sunucu dışındaki kopyada son 30 günün yedeği tutulur. Silinen bir talep yedeklerden de en geç 30 gün içinde kalkar.",
+      "backups": "<b>Yedekler:</b> veritabanı ve fotoğraf yedeği her gün alınır. Yedekler sunucu dışındaki bir depoya (Cloudflare R2) kopyalanır ve orada 30 gün tutulur. Sunucuda yalnızca kopyalama başarısız olursa bir kopya kalır, o da en fazla 14 gün. Silinen bir talep yedeklerden de en geç 30 gün içinde kalkar.",
       "mail": "<b>Bildirim e-postaları ve WhatsApp yazışmaları:</b> 2 yıl saklanır, sonra silinir. İsterseniz daha önce sileriz.",
       "ga": "<b>Google Analytics verileri:</b> Google'da en fazla 14 ay tutulur.",
       "errors": "<b>Hata kayıtları:</b> 30 gün sonra otomatik olarak silinir.",

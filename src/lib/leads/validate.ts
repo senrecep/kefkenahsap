@@ -8,7 +8,7 @@ import { normalizeTrPhone } from '@/lib/whatsapp'
 export const LEAD_PHOTO_TYPES = ['image/jpeg', 'image/png', 'image/webp', 'image/heic', 'image/heif']
 export const MAX_PHOTOS = 5
 /** Date of the in-repo KVKK/cookie texts (messages/<locale>/legal.json), shown as "Son güncelleme" on both pages; legal.test.ts fails until it is updated with the text. */
-export const KVKK_TEXT_DATE = '2026-10-17'
+export const KVKK_TEXT_DATE = '2026-10-18'
 /** Version of the KVKK notice the form's acknowledgment box links to; stored on every lead. */
 export const KVKK_TEXT_VERSION = `kvkk-${KVKK_TEXT_DATE}`
 export const MAX_PHOTO_BYTES = 10 * 1024 * 1024

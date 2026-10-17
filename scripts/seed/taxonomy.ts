@@ -68,20 +68,6 @@ export function concurrency() {
   return n
 }
 
-/**
- * A stamped upload keeps its clean original in MEDIA_ORIGINALS_DIR (Media.ts). Its default is a folder of the machine
- * running the script, which for a remote database (SEED_REMOTE=1) is not the app's volume, so the originals would be
- * lost: a run with any stamp due must name the folder explicitly (RUNBOOK: copy it into the app's volume afterwards).
- */
-export function requireOriginalsDir(stampsDue: number) {
-  if (dryRun || !stampsDue) return
-  if (!process.env.MEDIA_ORIGINALS_DIR) {
-    console.error(`${stampsDue} upload(s) will be stamped: set MEDIA_ORIGINALS_DIR to the folder that keeps their clean originals (see docs/RUNBOOK.md)`)
-    process.exit(1)
-  }
-  console.log(`clean originals of ${stampsDue} stamped upload(s) → ${process.env.MEDIA_ORIGINALS_DIR}`)
-}
-
 /** Names a new upload must not take: every SEO file name and stored file name stem. */
 export async function usedMediaNames(payload: Payload) {
   const docs = (await payload.find({ collection: 'media', pagination: false, limit: 0, depth: 0, select: { seoFilename: true, filename: true } })).docs

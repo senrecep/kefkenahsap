@@ -35,16 +35,12 @@ services:
       NEXT_PUBLIC_UMAMI_SRC: ${NEXT_PUBLIC_UMAMI_SRC:-}
       SITE_ENV: ${SITE_ENV:?}
       LEAD_PHOTOS_DIR: /app/data/lead-photos
-      MEDIA_ORIGINALS_DIR: /app/data/media-originals
       SITE_BASIC_AUTH: ${SITE_BASIC_AUTH:-}
       NEXT_PUBLIC_TURNSTILE_SITE_KEY: ${NEXT_PUBLIC_TURNSTILE_SITE_KEY:-}
       TURNSTILE_SECRET_KEY: ${TURNSTILE_SECRET_KEY:-}
     volumes:
       # Lead photos are personal data: private disk volume, never the CDN bucket (archived nightly by kefken-backup).
       - lead-photos:/app/data/lead-photos
-      # Clean originals of watermarked admin uploads (#169): private disk volume, never served; kept to re-apply or
-      # remove the mark. Archived nightly by kefken-backup (a private R2 bucket needs the owner's new token, #51).
-      - media-originals:/app/data/media-originals
     depends_on:
       kefken-postgres:
         condition: service_healthy
@@ -154,8 +150,10 @@ services:
     profiles: [observability]
     restart: unless-stopped
 
-  # Nightly pg_dump of the kefken DB plus tar archives of the private file volumes (lead photos, clean media originals)
-  # to a host directory (keeps 14 each), then optionally a copy to a PRIVATE R2 bucket.
+  # Nightly pg_dump of the kefken DB plus a tar archive of the private lead-photos volume, written to a host directory
+  # and copied to a PRIVATE R2 bucket (30 days there via its lifecycle rule). Once the copy succeeded the local file is
+  # deleted; if it fails, or BACKUP_S3_* is unset, the file stays, is retried after the next successful upload, and is
+  # pruned once it is 14 days old (so a failed upload never fills the disk).
   # Runs at BACKUP_AT (HHMM, UTC). Run now: docker exec <container> touch /backups/.run-now (picked up within a minute).
   kefken-backup:
     image: kefken-backup:17-rclone1.75.1
@@ -183,7 +181,6 @@ services:
     volumes:
       - /var/lib/kefken-backups/${SITE_ENV:?}:/backups
       - lead-photos:/data/lead-photos:ro
-      - media-originals:/data/media-originals:ro
     entrypoint: ['/bin/sh', '-c']
     command:
       - |
@@ -191,36 +188,44 @@ services:
         log() { echo "$$(date -u +%FT%TZ) backup: $$*"; }
         upload() {
           case "$$BACKUP_S3_BUCKET" in
-            '') log "R2 upload skipped: BACKUP_S3_BUCKET not set"; return ;;
+            '') log "R2 upload skipped: BACKUP_S3_BUCKET not set; local copy kept"; return 1 ;;
             kefkenahsap-backups) ;;
-            *) log "R2 upload refused: '$$BACKUP_S3_BUCKET' is not the private kefkenahsap-backups bucket"; return ;;
+            *) log "R2 upload refused: '$$BACKUP_S3_BUCKET' is not the private kefkenahsap-backups bucket; local copy kept"; return 1 ;;
           esac
-          [ -n "$$BACKUP_S3_ACCESS_KEY_ID" ] || { log "R2 upload skipped: BACKUP_S3_ACCESS_KEY_ID not set (dedicated backup token pending); local copy kept"; return; }
+          [ -n "$$BACKUP_S3_ACCESS_KEY_ID" ] || { log "R2 upload skipped: BACKUP_S3_ACCESS_KEY_ID not set (dedicated backup token pending); local copy kept"; return 1; }
           if out=$$(rclone copyto "$$1" "r2:$$BACKUP_S3_BUCKET/$$SITE_ENV/$${1##*/}" --s3-no-check-bucket 2>&1); then
             log "uploaded to r2:$$BACKUP_S3_BUCKET/$$SITE_ENV/$${1##*/}"
           elif echo "$$out" | grep -qE 'AccessDenied|403'; then
-            log "R2 upload skipped: access denied to $$BACKUP_S3_BUCKET (check the backup token's bucket scope); local copy kept"
+            log "R2 upload failed: access denied to $$BACKUP_S3_BUCKET (check the backup token's bucket scope); local copy kept"; return 1
           else
-            log "R2 upload FAILED: $$(echo "$$out" | tail -n 1)"
+            log "R2 upload FAILED: $$(echo "$$out" | tail -n 1); local copy kept"; return 1
           fi
         }
+        # Off-site copy first; the local file goes only once it is safely in R2.
+        # After a success, older leftovers of the same kind (earlier failed uploads) are retried; the first failure stops it.
+        offsite() {
+          upload "$$1" || return 0
+          rm -f "$$1"
+          b=$${1##*/}; kind=$${b%%-[0-9]*}; ext=$${b#*.}
+          for o in /backups/$$kind-[0-9]*.$$ext; do [ -f "$$o" ] || continue; upload "$$o" && rm -f "$$o" || break; done
+        }
         run() {
+          # Age-based cap for files whose upload failed; pre-* manual dumps never match.
+          find /backups -maxdepth 1 \( -name 'kefken-*.dump' -o -name 'lead-photos-*.tar.gz' -o -name 'media-originals-*.tar.gz' \) -mtime +13 -delete
           f=/backups/kefken-$$(date -u +%Y%m%d-%H%M%S).dump
           # Temp name + readable-archive check first: a failed or corrupt dump never replaces or rotates out a good one.
           if pg_dump -h kefken-postgres -U kefken -d kefken -Fc -f "$$f.part" && pg_restore -l "$$f.part" >/dev/null && mv "$$f.part" "$$f"; then
             log "wrote $$f ($$(du -h "$$f" | cut -f1))"
-            ls -1t /backups/kefken-*.dump | tail -n +15 | xargs -r rm -f
-            upload "$$f"
+            offsite "$$f"
           else
             rm -f "$$f.part"; log "pg_dump FAILED"
           fi
-          for v in lead-photos media-originals; do
+          for v in lead-photos; do
             a=/backups/$$v-$$(date -u +%Y%m%d-%H%M%S).tar.gz
             # Same temp-name rule as the dump: only a complete, readable archive replaces or rotates out a good one.
             if tar -czf "$$a.part" -C /data "$$v" && tar -tzf "$$a.part" >/dev/null && mv "$$a.part" "$$a"; then
               log "wrote $$a ($$(du -h "$$a" | cut -f1))"
-              ls -1t /backups/$$v-*.tar.gz | tail -n +15 | xargs -r rm -f
-              upload "$$a"
+              offsite "$$a"
             else
               rm -f "$$a.part"; log "$$v archive FAILED"
             fi
@@ -240,7 +245,6 @@ services:
 volumes:
   pgdata:
   lead-photos:
-  media-originals:
 
 networks:
   dokploy-network:
