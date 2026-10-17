@@ -5,6 +5,7 @@ import { useCallback, useEffect, useRef, useState, useSyncExternalStore, type Ke
 
 /** How long a photo stays before the next fades in (ms), and the fade itself (Tailwind duration below). */
 const STAY = 6500
+const FADE_MS = 1400
 const FADE = 'duration-[1400ms]'
 
 type Labels = { group: string; pause: string; play: string; slides: string[] }
@@ -28,6 +29,11 @@ export function HeroSlides({ children, slides, labels }: { children: ReactNode; 
   const layers = useRef<(HTMLDivElement | null)[]>([])
   const [active, setActive] = useState(0)
   const [prev, setPrev] = useState<number | null>(null)
+  // The layer painted on top during a fade (the incoming one, or the outgoing one when stepping back to a photo that is
+  // still visible below it), and whether the last fade has finished (the photo below is then hidden).
+  const [top, setTop] = useState(0)
+  const [settled, setSettled] = useState(true)
+  const resetDrift = useRef<number | null>(null)
   // Layers whose photo is in the DOM / decoded; 0 is the server-rendered one.
   const [mounted, setMounted] = useState<ReadonlySet<number>>(() => new Set([0]))
   const [ready, setReady] = useState<ReadonlySet<number>>(() => new Set([0]))
@@ -54,16 +60,24 @@ export function HeroSlides({ children, slides, labels }: { children: ReactNode; 
   const goTo = useCallback(
     (i: number) => {
       if (i === active) return
+      // Back to the photo still showing below (mid-fade): the current one fades out on top instead, a true crossfade
+      // with no restart of the photo's drift. Any other photo is hidden, so it fades in on top and its drift restarts.
+      const visible = i === prev && !settled
       left.current = { index: i, ms: STAY }
       pending.current = null
       setPrev(active)
-      // The incoming photo: layer 0 drifts only once it comes round again (it entered with its own settle).
-      setShown((s) => new Set(s).add(i))
+      setTop(visible ? active : i)
+      setSettled(false)
+      if (!visible) {
+        // Layer 0 drifts only once it comes round again (it entered with its own settle).
+        setShown((s) => new Set(s).add(i))
+        resetDrift.current = i
+      }
       setActive(i)
       mount(i)
       mount((i + 1) % total)
     },
-    [active, mount, total],
+    [active, prev, settled, mount, total],
   )
 
   const advance = useCallback(() => {
@@ -132,9 +146,12 @@ export function HeroSlides({ children, slides, labels }: { children: ReactNode; 
     return () => off.forEach((f) => f())
   }, [mounted, ready, broken])
 
-  // The drift restarts each time a photo comes in, also when two photos take turns (their class never comes off).
+  // The drift restarts when a hidden photo comes in, also when two photos take turns (their class never comes off).
   useEffect(() => {
-    for (const a of layers.current[active]?.getAnimations() ?? []) if ((a as CSSAnimation).animationName === 'drift') a.currentTime = 0
+    if (resetDrift.current === active) for (const a of layers.current[active]?.getAnimations() ?? []) if ((a as CSSAnimation).animationName === 'drift') a.currentTime = 0
+    resetDrift.current = null
+    const t = window.setTimeout(() => setSettled(true), FADE_MS)
+    return () => window.clearTimeout(t)
   }, [active])
 
   // Arrow keys move focus with the current indicator, once it is displayed.
@@ -224,6 +241,8 @@ export function HeroSlides({ children, slides, labels }: { children: ReactNode; 
       <div aria-live={running ? 'off' : 'polite'} className="absolute inset-0 overflow-hidden">
         {[children, ...slides].map((slide, i) => {
           const on = i === active
+          const below = i === prev && top !== i && !settled // the previous photo, still showing under the fade
+          const z = i === top ? 'z-[2]' : on || i === prev ? 'z-[1]' : ''
           const drift = (on || i === prev) && (i !== 0 || shown.has(0))
           return (
             <div
@@ -231,7 +250,7 @@ export function HeroSlides({ children, slides, labels }: { children: ReactNode; 
               ref={(el) => void (layers.current[i] = el)}
               aria-hidden={!on}
               data-slide={i}
-              className={`absolute inset-0 transition-opacity ease-in-out ${FADE} ${on ? 'z-[2] opacity-100' : i === prev ? 'z-[1] opacity-100' : 'opacity-0'} ${drift ? 'motion-safe:animate-drift' : ''} ${on || i === prev ? 'will-change-[opacity,transform]' : ''}`}
+              className={`absolute inset-0 transition-opacity ease-in-out ${FADE} ${z} ${on || below ? 'opacity-100' : 'opacity-0'} ${drift ? 'motion-safe:animate-drift' : ''} ${on || i === prev ? 'will-change-[opacity,transform]' : ''}`}
             >
               {i === 0 || mounted.has(i) ? slide : null}
             </div>
@@ -247,7 +266,7 @@ export function HeroSlides({ children, slides, labels }: { children: ReactNode; 
           {playing ? <Pause aria-hidden size={18} strokeWidth={1.75} /> : <Play aria-hidden size={18} strokeWidth={1.75} />}
         </button>
         {/* APG toolbar: one tab stop, the arrow keys move along the indicators. */}
-        <div role="toolbar" aria-label={labels.group} className="flex items-center">
+        <div role="toolbar" className="flex items-center">
         {labels.slides.map((label, i) => (
           <button
             key={i}

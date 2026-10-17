@@ -238,6 +238,32 @@ test.describe('hero slideshow (#187)', () => {
     expect(await hero(page).locator('button:not([tabindex="-1"])').count()).toBe(2) // pause + the current indicator
   })
 
+  test('stepping back is a crossfade too: no zoom jump on the photo below, a hidden one fades in', async ({ page }) => {
+    await page.goto('/tr')
+    const layer = (n: number) => hero(page).locator(`[data-slide="${n}"]`)
+    // Scale and opacity of a layer as painted now (the drift is a scale transform).
+    const paint = (n: number) => layer(n).evaluate((el) => ({ scale: new DOMMatrix(getComputedStyle(el).transform).a, opacity: Number(getComputedStyle(el).opacity) }))
+    await expect(layer(1).locator('img')).toHaveJSProperty('complete', true)
+    await page.waitForTimeout(2000) // the first photo's own settle is over
+
+    // Mid-fade back to photo 1: it is still showing below, so it stays put and photo 2 fades out over it.
+    await dot(page, 2).click()
+    await page.waitForTimeout(300)
+    const before = await paint(0)
+    await dot(page, 1).click()
+    const after = await paint(0)
+    expect(Math.abs(after.scale - before.scale)).toBeLessThan(0.005)
+    expect(after.opacity).toBe(1)
+    expect((await paint(1)).opacity).toBeGreaterThan(0) // fading out, not cut
+
+    // Once a fade has finished the photo below is hidden; going back to it fades it in from transparent.
+    await dot(page, 2).click()
+    await page.waitForTimeout(1800)
+    await dot(page, 1).click()
+    expect((await paint(0)).opacity).toBeLessThan(0.9)
+    await expect.poll(async () => (await paint(0)).opacity).toBe(1)
+  })
+
   test('desktop controls take the click (the text block and its scrim lie over the photo layer)', async ({ browser }) => {
     for (const [path, width, height] of [['/de', 1366, 657], ['/tr', 1280, 600]] as const) {
       const page = await (await browser.newContext({ viewport: { width, height } })).newPage()

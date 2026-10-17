@@ -1516,7 +1516,7 @@ export interface Homepage {
              */
             mobileImage?: (number | null) | Media;
             /**
-             * İlk slayt yukarıdaki görseldir; buradaki fotoğraflar sırayla onu izler (en fazla 6). Sürükleyerek sıralayın. Boş bırakırsanız tek fotoğraf gösterilir.
+             * İlk slayt yukarıdaki görseldir; buradaki fotoğraflar sırayla onu izler (en fazla 6). Sürükleyerek sıralayın. Boş bırakırsanız tek fotoğraf gösterilir. Sonradan gizlenen bir fotoğrafı yayınlamadan önce buradan çıkarın.
              */
             slides?: (number | Media)[] | null;
             heading?: string | null;

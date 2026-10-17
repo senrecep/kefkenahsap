@@ -35,7 +35,7 @@ const blocks: Block[] = [
         maxRows: MAX_SLIDES - 1,
         label: 'Sonraki slaytlar',
         admin: {
-          description: `İlk slayt yukarıdaki görseldir; buradaki fotoğraflar sırayla onu izler (en fazla ${MAX_SLIDES - 1}). Sürükleyerek sıralayın. Boş bırakırsanız tek fotoğraf gösterilir.`,
+          description: `İlk slayt yukarıdaki görseldir; buradaki fotoğraflar sırayla onu izler (en fazla ${MAX_SLIDES - 1}). Sürükleyerek sıralayın. Boş bırakırsanız tek fotoğraf gösterilir. Sonradan gizlenen bir fotoğrafı yayınlamadan önce buradan çıkarın.`,
         },
       },
       heading,
