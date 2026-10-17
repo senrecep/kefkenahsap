@@ -6,9 +6,10 @@ import contact from './contact.json'
 import gallery from './gallery.json'
 import guides from './guides.json'
 import home from './home.json'
+import legal from './legal.json'
 import pages from './pages.json'
 import projects from './projects.json'
 import regions from './regions.json'
 
-const messages = { ...common, ...consent, ...contact, ...gallery, ...guides, ...home, ...pages, ...projects, ...regions, ...category }
+const messages = { ...common, ...consent, ...contact, ...gallery, ...guides, ...home, ...legal, ...pages, ...projects, ...regions, ...category }
 export default messages

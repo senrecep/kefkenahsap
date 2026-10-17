@@ -113,6 +113,9 @@ services:
       GLITCHTIP_DOMAIN: ${GLITCHTIP_DOMAIN:-}
       DEFAULT_FROM_EMAIL: ${GLITCHTIP_FROM_EMAIL:-}
       ENABLE_USER_REGISTRATION: 'false'
+      # KVKK notice (#195): error events are deleted after 30 days.
+      GLITCHTIP_RETENTION_DAYS: '30'
+      GLITCHTIP_MAX_EVENT_LIFE_DAYS: '30' # older GlitchTip releases
     depends_on:
       glitchtip-migrate:
         condition: service_completed_successfully

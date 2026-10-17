@@ -1,0 +1,138 @@
+{
+  "KvkkText": {
+    "intro": "This notice is given under Article 10 of the Turkish Personal Data Protection Law No. 6698 (KVKK). It explains which personal data we process when you use our website and send us a quote request, why, and how.",
+    "controller": {
+      "title": "Who is the data controller?",
+      "contact": "For any question or request about your personal data, use the contact details above.",
+      "who": "<b>{person}</b> is the data controller, as owner of the sole proprietorship trading as {name}."
+    },
+    "data": {
+      "title": "What data do we process?",
+      "form": "<b>What you enter in the quote form:</b> name, phone, e-mail (optional), service, city and district, your message and up to 5 photos you attach.",
+      "meta": "<b>Saved with the form:</b> the page, language and time you sent it; campaign link (utm) data if present; the version of the privacy notice you confirmed you had read.",
+      "ip": "<b>Your IP address:</b> held only in memory, in a 10-minute counter, to protect the form against abuse, and sent to the Cloudflare Turnstile check. Once the window ends, it is deleted on the next request. It is never written to disk or saved with your request.",
+      "visit": "<b>Technical data your browser sends while you browse:</b> IP address, browser type, the page you open and the time. It is processed to show you the site and keep it secure.",
+      "errors": "<b>Error logs:</b> if something breaks, a technical error record is kept on our own server. E-mail addresses, phone numbers and similar data are removed automatically before it is stored.",
+      "umami": "<b>Cookieless visit statistics:</b> with Umami we count which pages are opened and how often links such as WhatsApp and phone are clicked. Umami runs on our own server, uses no cookies and does not identify you.",
+      "ga": "<b>Google Analytics:</b> statistics on how you use the site, only if you accept cookies.",
+      "cookies": "Cookie details are in the <cookies>cookie policy</cookies>.",
+      "special": "We do not ask for special categories of personal data such as health, religion or biometric data. Please do not include such information in your message or photos."
+    },
+    "method": {
+      "title": "How do we collect it?",
+      "text": "We collect your data electronically: when you fill in the quote form, from the data your browser sends while you browse, and through cookies. If you contact us directly by WhatsApp, phone or e-mail, we use what you share there only to answer your request."
+    },
+    "purposes": {
+      "title": "Why do we process it, and on what legal basis?",
+      "quote": "<b>To review your request,</b> call or write to you, and prepare a site visit and a quote. Legal basis: necessary to enter into a contract (KVKK Art. 5/2-c).",
+      "security": "<b>To protect the form and the site against spam, attacks and abuse,</b> and to find and fix errors. Legal basis: our legitimate interest (KVKK Art. 5/2-f).",
+      "records": "<b>To keep the request history and the record that you read the privacy notice</b> for use in a possible dispute. Legal basis: establishing, exercising or protecting a right (KVKK Art. 5/2-e).",
+      "ga": "<b>Visit statistics (Google Analytics).</b> Legal basis: the explicit consent you give with the cookie banner (KVKK Art. 5/1).",
+      "abroad": "<b>Transfer to service providers abroad:</b> see “Is your data transferred abroad?” below.",
+      "umami": "<b>Cookieless visit statistics (Umami):</b> to see which pages are useful and improve the site. Legal basis: our legitimate interest (KVKK Art. 5/2-f)."
+    },
+    "recipients": {
+      "title": "Who do we share it with?",
+      "intro": "We do not sell your data or share it with anyone for advertising or marketing. We use these service providers to run the site:",
+      "cloudflare": "<b>Cloudflare, Inc. (USA):</b> site traffic passes through Cloudflare's network (fast loading and security). It runs the Turnstile check on the form. Site images and the off-server copy of database and photo backups are kept in Cloudflare R2 storage, in a private area.",
+      "resend": "<b>Resend (USA):</b> sends us a notification e-mail when a new request arrives. The e-mail contains your name, phone, e-mail, service, location, message, and the page and language you sent the form from; photos are not attached.",
+      "gmail": "<b>Google (Gmail, USA):</b> the mailbox that receives those notifications and where we write to you.",
+      "ga": "<b>Google (Analytics, USA):</b> visit statistics, only if you accept cookies.",
+      "map": "<b>Google (Maps, USA):</b> the map on the contact page loads from Google only if you click “Show the map”; Google then sees your IP address.",
+      "authorities": "<b>Competent public authorities:</b> only when the law requires it, and only as far as requested. Legal basis: complying with our legal obligation (KVKK Art. 5/2-ç).",
+      "hosting": "Our site, database and request photos run on a server we rent in Türkiye. The server provider stores the data only on our behalf and on our instructions (data processor). Request photos are never published at a public address; only authorised people signed in to the admin panel can see them.",
+      "ai": "Your message and photos are not sent to AI services.",
+      "whatsapp": "<b>Meta (WhatsApp, USA):</b> when you write to us on WhatsApp, or we reply there, the messages pass through this service."
+    },
+    "abroad": {
+      "title": "Is your data transferred abroad?",
+      "text": "Yes. Cloudflare, Resend, Google and Meta (WhatsApp) are US-based companies and process data on servers outside Türkiye. The data in your quote form passes through Cloudflare, Resend and Google; WhatsApp messages pass through Meta.",
+      "basis": "We make these transfers with appropriate safeguards under KVKK Art. 9/4: we have signed the standard contract published by the Personal Data Protection Board with these companies and notified each one to the Personal Data Protection Authority within 5 business days of signing."
+    },
+    "retention": {
+      "title": "How long do we keep it?",
+      "leads": "<b>Requests and attached photos:</b> deleted automatically 2 years after we receive them.",
+      "backups": "<b>Backups:</b> the database and photos are backed up daily. The server keeps the last 14 days, the off-server copy the last 30 days. A deleted request leaves the backups within 30 days at the latest.",
+      "mail": "<b>Notification e-mails and WhatsApp messages:</b> kept for 2 years, then deleted. We delete them sooner if you ask.",
+      "ga": "<b>Google Analytics data:</b> kept at Google for up to 14 months.",
+      "errors": "<b>Error logs:</b> deleted automatically after 30 days.",
+      "logs": "<b>Server access logs:</b> kept for up to 30 days. Cloudflare keeps its own security logs for the periods in its privacy policy.",
+      "umami": "<b>Umami counts:</b> contain nothing that identifies you; they are kept as site statistics without a time limit."
+    },
+    "security": {
+      "title": "How do we protect it?",
+      "text": "Your connection to the site is encrypted (HTTPS). Requests in the admin panel are visible only to authorised people who sign in with a password. The form is protected by a security check, a rate limit and file type and size checks. Backups are kept in private storage."
+    },
+    "rights": {
+      "title": "What are your rights?",
+      "intro": "Under KVKK Art. 11 you have the right to:",
+      "r1": "learn whether your personal data is processed and, if so, request information about it,",
+      "r2": "learn the purpose of processing and whether the data is used for that purpose,",
+      "r3": "know the third parties in Türkiye or abroad to whom it is transferred,",
+      "r4": "ask for it to be corrected if it is incomplete or wrong,",
+      "r5": "ask for it to be deleted or destroyed under the conditions of KVKK Art. 7,",
+      "r6": "ask that a correction, deletion or destruction be passed on to the third parties it was transferred to,",
+      "r7": "object to a result against you that comes solely from automated analysis,",
+      "r8": "claim compensation if unlawful processing caused you damage."
+    },
+    "apply": {
+      "title": "How can you apply?",
+      "intro": "Send your request in writing through one of these channels:",
+      "post": "a signed letter, delivered by hand or by post to the address above,",
+      "esign": "a document signed with a secure electronic or mobile signature, sent to <mail>our e-mail address</mail>,",
+      "email": "an e-mail to <mail>our e-mail address</mail> from an address you gave us before and that is in our records.",
+      "content": "Your request must include your full name, Turkish ID number (for foreigners: nationality and passport or ID number), postal address, e-mail and phone if any, and what you are asking for.",
+      "answer": "We answer free of charge within 30 days at the latest. If the action has an additional cost, we may charge the fee set by the Personal Data Protection Board.",
+      "complaint": "If your request is rejected, you find our answer insufficient, or we do not answer within 30 days, you may complain to the Personal Data Protection Board within 30 days of learning our answer and in any case within 60 days of your request (KVKK Art. 14)."
+    },
+    "links": {
+      "title": "Links to other sites",
+      "text": "The site has WhatsApp, social media and map links. When you click them, that service's own privacy rules apply. When you write to us on WhatsApp, your message reaches us through Meta's WhatsApp service."
+    },
+    "changes": {
+      "title": "If this notice changes",
+      "text": "We update this notice when the data we process or the services we use change. The current version is always on this page; the date of the last update is shown under the title."
+    }
+  },
+  "CookiesText": {
+    "intro": "A cookie is a small text file a website saves in your browser. This page explains which cookies and similar technologies the {name} website uses and why. We use no advertising cookies.",
+    "necessary": {
+      "title": "Which cookies are strictly necessary?",
+      "intro": "These cookies are needed for the site to work and stay secure. They need no consent; their legal basis is entering into a contract and our legitimate interest (KVKK Art. 5/2-c and 5/2-f).",
+      "locale": "<b>NEXT_LOCALE</b> (ours): remembers your language when you open the site in a language other than your browser's. Deleted when you close the browser.",
+      "consent": "<b>kh_consent</b> (ours): remembers your cookie choice (accept or reject). Kept for 6 months.",
+      "cloudflare": "<b>__cf_bm, cf_clearance</b> (Cloudflare): Cloudflare may set these security cookies while protecting the site against bots and attacks. __cf_bm is deleted after 30 minutes of inactivity; cf_clearance records that you passed a security check.",
+      "turnstile": "<b>Cloudflare Turnstile</b> (Cloudflare): the security check on the quote form. It runs in your browser to tell that a person is sending the form and creates a single-use verification code.",
+      "admin": "<b>payload-token</b> (ours): keeps our staff signed in to the admin panel. It is never set for visitors."
+    },
+    "analytics": {
+      "title": "Measurement cookies (only with your consent)",
+      "intro": "These cookies measure how many people use the site and how. Their legal basis is your explicit consent (KVKK Art. 5/1).",
+      "ga": "<b>_ga and cookies starting with _ga_</b> (Google Analytics 4, Google, USA): to tell visits apart and count them. Kept for up to 2 years. Measurement data goes to Google's servers abroad.",
+      "optIn": "When you first open the site, a cookie notice appears at the bottom of the page. The “Reject” and “Accept” buttons are equal and neither is preselected. Google Analytics does not load at all until you click “Accept”.",
+      "withdraw": "If you withdraw your consent, Google Analytics stops loading and we delete the _ga cookies from your browser."
+    },
+    "noAnalytics": {
+      "title": "Do we use measurement cookies?",
+      "text": "No. The site has no measurement or advertising cookies that track visitors."
+    },
+    "umami": {
+      "title": "Cookieless visit statistics",
+      "text": "With Umami we count which pages are opened and which links are clicked. Umami runs on our own server, uses no cookies and does not identify you."
+    },
+    "map": {
+      "title": "Map",
+      "text": "The Google Maps map on the contact page loads only when you click “Show the map”. From then on Google may use its own cookies, which follow Google's privacy policy."
+    },
+    "links": {
+      "title": "External links",
+      "text": "WhatsApp, social media and map links load nothing until you click them. Once you do, that service's own cookie rules apply."
+    },
+    "choice": {
+      "title": "How can you change your choice?",
+      "footer": "Use the “Cookie preferences” link at the bottom of every page to change your choice at any time.",
+      "browser": "You can also delete or block cookies in your browser settings. If you block the necessary ones, parts of the site such as the language choice or the security check may not work.",
+      "more": "More on your personal data in the <kvkk>privacy notice</kvkk>."
+    }
+  }
+}

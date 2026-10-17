@@ -29,7 +29,7 @@
     "photosHint": "Höchstens 5 Fotos. Sie werden vor dem Hochladen auf Ihrem Telefon verkleinert.",
     "photosSelected": "{count, plural, one {# Foto ausgewählt} other {# Fotos ausgewählt}}",
     "photosPreparing": "Fotos werden vorbereitet…",
-    "consent": "Ich habe die <link>Datenschutzhinweise (KVKK)</link> gelesen und bin einverstanden, dass meine Angaben für das Angebot verarbeitet und an Dienstleister im Ausland (Cloudflare, Resend, Google) übermittelt werden.",
+    "consent": "Ich habe die <link>Datenschutzhinweise (KVKK)</link> gelesen.",
     "submit": "Angebot anfragen",
     "sending": "Wird gesendet…",
     "honeypot": "Dieses Feld leer lassen",
@@ -41,7 +41,7 @@
     "errors": {
       "NameRequired": "Der Name fehlt. Schreiben Sie, wie wir Sie ansprechen sollen.",
       "PhoneInvalid": "Die Telefonnummer ist unvollständig oder falsch. Schreiben Sie sie im Format 0532 123 45 67, internationale Nummern mit Ländervorwahl (+49…).",
-      "ConsentRequired": "Die KVKK-Einwilligung fehlt. Setzen Sie zum Senden das Häkchen.",
+      "ConsentRequired": "Bestätigen Sie, dass Sie die Datenschutzhinweise gelesen haben.",
       "EmailInvalid": "Die E-Mail-Adresse scheint falsch zu sein. Schreiben Sie sie im Format name@beispiel.de oder lassen Sie das Feld leer.",
       "MessageTooLong": "Die Nachricht ist zu lang. Kürzen Sie sie auf unter 5000 Zeichen.",
       "TooManyPhotos": "Sie können höchstens 5 Fotos anhängen. Entfernen Sie die übrigen.",

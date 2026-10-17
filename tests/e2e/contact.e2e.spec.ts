@@ -61,7 +61,7 @@ test.describe('Contact page', () => {
     await page.getByRole('button', { name: 'Teklif iste' }).click()
     await expect(page.getByText('Ad soyad boş.')).toBeVisible()
     await expect(page.getByText('Telefon numarası eksik ya da hatalı.')).toBeVisible()
-    await expect(page.getByText('KVKK onayı verilmedi.')).toBeVisible()
+    await expect(page.getByText('Aydınlatma metnini okuduğunuzu işaretleyin.')).toBeVisible()
     await expect(page.getByLabel(/Ad soyad/)).toBeFocused()
     await expect(page.getByLabel(/Ad soyad/)).toHaveAttribute('aria-invalid', 'true')
   })

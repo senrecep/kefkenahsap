@@ -1,0 +1,138 @@
+{
+  "KvkkText": {
+    "intro": "Bu metin, 6698 sayılı Kişisel Verilerin Korunması Kanunu'nun (KVKK) 10. maddesine göre hazırlandı. Web sitemizi kullandığınızda ve bize teklif talebi gönderdiğinizde hangi kişisel verilerinizi, neden ve nasıl işlediğimizi anlatır.",
+    "controller": {
+      "title": "Veri sorumlusu kim?",
+      "contact": "Kişisel verilerinizle ilgili her soru ve başvuru için bize yukarıdaki iletişim bilgilerinden ulaşabilirsiniz.",
+      "who": "<b>{person}</b>, {name} adıyla çalışan şahıs işletmesinin sahibi olarak veri sorumlusudur."
+    },
+    "data": {
+      "title": "Hangi verilerinizi işliyoruz?",
+      "form": "<b>Teklif formuna yazdıklarınız:</b> ad soyad, telefon, e-posta (isteğe bağlı), hizmet, il ve ilçe, mesajınız ve eklediğiniz en fazla 5 fotoğraf.",
+      "meta": "<b>Formla birlikte kaydedilenler:</b> formu gönderdiğiniz sayfa, dil ve an; varsa kampanya bağlantısı (utm) bilgisi; okuduğunuzu işaretlediğiniz aydınlatma metninin sürümü.",
+      "ip": "<b>IP adresiniz:</b> formu kötüye kullanıma karşı korumak için yalnızca bellekte, 10 dakikalık bir sayaçta tutulur ve Cloudflare Turnstile doğrulamasına gönderilir. Pencere bitince bir sonraki istekte silinir. Diske yazılmaz, talebinizle birlikte kaydedilmez.",
+      "visit": "<b>Siteyi gezerken tarayıcınızın gönderdiği teknik bilgiler:</b> IP adresi, tarayıcı türü, açtığınız sayfa ve zaman. Bunlar siteyi size göstermek ve korumak için işlenir.",
+      "errors": "<b>Hata kayıtları:</b> sitede bir hata olursa teknik hata kaydı kendi sunucumuzda tutulur. Kayda girmeden önce e-posta adresi ve telefon numarası gibi bilgiler otomatik olarak silinir.",
+      "umami": "<b>Çerezsiz ziyaret istatistiği:</b> Umami ile hangi sayfaların açıldığını ve WhatsApp, telefon gibi bağlantılara kaç kez tıklandığını sayarız. Umami kendi sunucumuzda çalışır, çerez kullanmaz ve sizi tanımlamaz.",
+      "ga": "<b>Google Analytics:</b> yalnızca çerez onayı verirseniz, siteyi nasıl kullandığınıza dair istatistik.",
+      "cookies": "Çerezlerin ayrıntısı <cookies>çerez politikasında</cookies>.",
+      "special": "Sağlık, din, biyometrik veri gibi özel nitelikli kişisel verilerinizi istemiyoruz. Lütfen mesajınıza ve fotoğraflarınıza bu tür bilgileri eklemeyin."
+    },
+    "method": {
+      "title": "Verilerinizi nasıl topluyoruz?",
+      "text": "Verilerinizi elektronik ortamda topluyoruz: teklif formunu doldurduğunuzda, siteyi gezerken tarayıcınızın gönderdiği bilgilerden ve çerezlerden. Bize WhatsApp, telefon ya da e-postayla doğrudan yazarsanız, orada paylaştıklarınızı da yalnızca talebinizi yanıtlamak için kullanırız."
+    },
+    "purposes": {
+      "title": "Verilerinizi ne için ve hangi hukuki sebeple işliyoruz?",
+      "quote": "<b>Talebinizi değerlendirmek,</b> sizi aramak ya da size yazmak, keşif ve teklif hazırlamak. Hukuki sebep: bir sözleşmenin kurulmasıyla doğrudan ilgili olması (KVKK md. 5/2-c).",
+      "security": "<b>Formu ve siteyi spam, saldırı ve kötüye kullanıma karşı korumak,</b> hataları bulup düzeltmek. Hukuki sebep: meşru menfaatimiz (KVKK md. 5/2-f).",
+      "records": "<b>Talep geçmişini ve aydınlatma metnini okuduğunuzu gösteren kaydı saklamak,</b> olası bir anlaşmazlıkta kullanmak. Hukuki sebep: bir hakkın tesisi, kullanılması veya korunması (KVKK md. 5/2-e).",
+      "ga": "<b>Ziyaret istatistiği (Google Analytics).</b> Hukuki sebep: çerez onayınızla verdiğiniz açık rıza (KVKK md. 5/1).",
+      "abroad": "<b>Verilerin yurt dışındaki hizmet sağlayıcılara aktarılması:</b> aşağıdaki “Verileriniz yurt dışına aktarılıyor mu?” bölümüne bakın.",
+      "umami": "<b>Çerezsiz ziyaret istatistiği (Umami):</b> hangi sayfaların işe yaradığını görüp siteyi iyileştirmek. Hukuki sebep: meşru menfaatimiz (KVKK md. 5/2-f)."
+    },
+    "recipients": {
+      "title": "Verilerinizi kimlerle paylaşıyoruz?",
+      "intro": "Verilerinizi satmıyoruz, reklam veya pazarlama için kimseyle paylaşmıyoruz. Siteyi çalıştırmak için şu hizmet sağlayıcıları kullanıyoruz:",
+      "cloudflare": "<b>Cloudflare, Inc. (ABD):</b> sitenin trafiği Cloudflare ağından geçer (hızlı yükleme ve güvenlik). Formdaki Turnstile doğrulamasını yapar. Site görselleri ile veritabanı ve fotoğraf yedeklerinin sunucu dışındaki kopyası Cloudflare R2 depolamasında, herkese kapalı bir alanda durur.",
+      "resend": "<b>Resend (ABD):</b> yeni talep geldiğinde bize bildirim e-postası gönderir. E-postada adınız, telefonunuz, e-postanız, hizmet, konum, mesajınız ve formu gönderdiğiniz sayfa ile dil yer alır; fotoğraflar e-postaya eklenmez.",
+      "gmail": "<b>Google (Gmail, ABD):</b> bildirim e-postalarının geldiği ve sizinle yazıştığımız e-posta kutumuz.",
+      "ga": "<b>Google (Analytics, ABD):</b> yalnızca çerez onayı verirseniz ziyaret istatistikleri.",
+      "map": "<b>Google (Haritalar, ABD):</b> iletişim sayfasındaki harita yalnızca “Haritayı göster”e tıklarsanız Google'dan yüklenir; o anda Google IP adresinizi görür.",
+      "authorities": "<b>Yetkili kamu kurumları:</b> yalnızca kanunen zorunlu olduğunda ve istenen ölçüde. Hukuki sebep: hukuki yükümlülüğümüzü yerine getirmek (KVKK md. 5/2-ç).",
+      "hosting": "Sitemiz, veritabanımız ve talep fotoğrafları Türkiye'de kiraladığımız bir sunucuda çalışır. Sunucu sağlayıcısı verileri yalnızca bizim adımıza ve talimatımızla saklar (veri işleyen). Talep fotoğrafları herkese açık bir adresten yayınlanmaz; yalnızca yönetim paneline giriş yapan yetkili kişiler görür.",
+      "ai": "Mesajınız ve fotoğraflarınız yapay zekâ servislerine gönderilmez.",
+      "whatsapp": "<b>Meta (WhatsApp, ABD):</b> WhatsApp'tan bize yazdığınızda ya da size WhatsApp'tan döndüğümüzde mesajlar bu hizmet üzerinden iletilir."
+    },
+    "abroad": {
+      "title": "Verileriniz yurt dışına aktarılıyor mu?",
+      "text": "Evet. Cloudflare, Resend, Google ve Meta (WhatsApp) ABD merkezli şirketlerdir ve verileri Türkiye dışındaki sunucularında işler. Teklif formundaki bilgileriniz Cloudflare, Resend ve Google üzerinden, WhatsApp yazışmaları Meta üzerinden geçer.",
+      "basis": "Bu aktarımları KVKK md. 9/4'teki uygun güvencelerle yapıyoruz: bu şirketlerle Kişisel Verileri Koruma Kurulunun ilan ettiği standart sözleşmeyi imzaladık ve her birini imzadan sonraki 5 iş günü içinde Kişisel Verileri Koruma Kurumuna bildirdik."
+    },
+    "retention": {
+      "title": "Verilerinizi ne kadar süre saklıyoruz?",
+      "leads": "<b>Talepler ve ekli fotoğraflar:</b> alındıktan 2 yıl sonra otomatik olarak silinir.",
+      "backups": "<b>Yedekler:</b> veritabanı ve fotoğraf yedeği her gün alınır. Sunucuda son 14 günün, sunucu dışındaki kopyada son 30 günün yedeği tutulur. Silinen bir talep yedeklerden de en geç 30 gün içinde kalkar.",
+      "mail": "<b>Bildirim e-postaları ve WhatsApp yazışmaları:</b> 2 yıl saklanır, sonra silinir. İsterseniz daha önce sileriz.",
+      "ga": "<b>Google Analytics verileri:</b> Google'da en fazla 14 ay tutulur.",
+      "errors": "<b>Hata kayıtları:</b> 30 gün sonra otomatik olarak silinir.",
+      "logs": "<b>Sunucu erişim kayıtları:</b> en fazla 30 gün tutulur. Cloudflare kendi güvenlik kayıtlarını kendi gizlilik politikasındaki sürelerle tutar.",
+      "umami": "<b>Umami sayımları:</b> sizi tanımlayan bilgi içermez; site istatistiği olarak süre sınırı olmadan tutulur."
+    },
+    "security": {
+      "title": "Verilerinizi nasıl koruyoruz?",
+      "text": "Siteyle bağlantınız şifrelidir (HTTPS). Yönetim panelindeki talepleri yalnızca panele şifreyle giren yetkili kişiler görür. Form; güvenlik doğrulaması, deneme sınırı ve dosya türü ile boyutu denetimiyle korunur. Yedekler herkese kapalı alanlarda tutulur."
+    },
+    "rights": {
+      "title": "Haklarınız nelerdir?",
+      "intro": "KVKK md. 11'e göre bize başvurarak şunları isteyebilirsiniz:",
+      "r1": "kişisel verilerinizin işlenip işlenmediğini öğrenmek, işlenmişse bilgi istemek,",
+      "r2": "işlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenmek,",
+      "r3": "yurt içinde veya yurt dışında aktarıldığı üçüncü kişileri bilmek,",
+      "r4": "eksik veya yanlış işlenmişse düzeltilmesini istemek,",
+      "r5": "KVKK md. 7'deki şartlarla silinmesini veya yok edilmesini istemek,",
+      "r6": "düzeltme, silme ve yok etme işlemlerinin verilerin aktarıldığı üçüncü kişilere bildirilmesini istemek,",
+      "r7": "yalnızca otomatik sistemlerle yapılan bir analiz sonucunda aleyhinize bir sonuç çıkmasına itiraz etmek,",
+      "r8": "kanuna aykırı işleme yüzünden zarara uğradıysanız zararın giderilmesini istemek."
+    },
+    "apply": {
+      "title": "Bize nasıl başvurabilirsiniz?",
+      "intro": "Başvurunuzu yazılı olarak şu yollardan biriyle yapabilirsiniz:",
+      "post": "ıslak imzalı dilekçeyle, yukarıdaki adrese elden ya da postayla,",
+      "esign": "güvenli elektronik imza veya mobil imzayla imzalayıp <mail>e-posta adresimize</mail> göndererek,",
+      "email": "daha önce bize bildirdiğiniz ve kayıtlarımızda bulunan e-posta adresinizden <mail>e-posta adresimize</mail> yazarak.",
+      "content": "Başvurunuzda adınız soyadınız, T.C. kimlik numaranız (yabancıysanız uyruğunuz ve pasaport ya da kimlik numaranız), tebligat adresiniz, varsa e-posta adresiniz ve telefon numaranız ile talebinizin konusu yer almalıdır.",
+      "answer": "Başvurunuzu en geç 30 gün içinde ücretsiz olarak sonuçlandırırız. İşlem ayrıca bir maliyet gerektirirse, Kişisel Verileri Koruma Kurulunun belirlediği tarifeye göre ücret isteyebiliriz.",
+      "complaint": "Başvurunuz reddedilirse, cevabımızı yetersiz bulursanız ya da 30 gün içinde cevap vermezsek, cevabı öğrendiğiniz tarihten başlayarak 30 gün ve her durumda başvuru tarihinden başlayarak 60 gün içinde Kişisel Verileri Koruma Kuruluna şikâyette bulunabilirsiniz (KVKK md. 14)."
+    },
+    "links": {
+      "title": "Başka sitelere verdiğimiz bağlantılar",
+      "text": "Sitede WhatsApp, sosyal medya ve harita bağlantıları var. Bunlara tıkladığınızda o hizmetin kendi gizlilik kuralları geçerli olur. WhatsApp'tan yazdığınızda mesajınız Meta'nın WhatsApp hizmeti üzerinden bize ulaşır."
+    },
+    "changes": {
+      "title": "Bu metin değişirse",
+      "text": "İşlediğimiz veriler ya da kullandığımız hizmetler değiştiğinde bu metni güncelleriz. Güncel metin her zaman bu sayfadadır; son güncelleme tarihi başlığın altında yazar."
+    }
+  },
+  "CookiesText": {
+    "intro": "Çerez, bir web sitesinin tarayıcınıza kaydettiği küçük bir metin dosyasıdır. Bu sayfa, {name} sitesinin hangi çerezleri ve benzeri teknolojileri neden kullandığını anlatır. Reklam çerezi kullanmıyoruz.",
+    "necessary": {
+      "title": "Hangi çerezler zorunlu?",
+      "intro": "Bu çerezler sitenin çalışması ve güvenliği için gereklidir. Onay istemez; hukuki sebebi sözleşmenin kurulması ve meşru menfaatimizdir (KVKK md. 5/2-c ve 5/2-f).",
+      "locale": "<b>NEXT_LOCALE</b> (bizim): siteyi tarayıcınızın dilinden farklı bir dilde açtığınızda seçtiğiniz dili hatırlar. Tarayıcıyı kapatınca silinir.",
+      "consent": "<b>kh_consent</b> (bizim): çerez tercihinizi (kabul ya da ret) hatırlar. 6 ay saklanır.",
+      "cloudflare": "<b>__cf_bm, cf_clearance</b> (Cloudflare): Cloudflare siteyi bot ve saldırılara karşı korurken bu güvenlik çerezlerini yerleştirebilir. __cf_bm 30 dakika işlem yapılmazsa silinir; cf_clearance bir güvenlik doğrulamasını geçtiğinizi kaydeder.",
+      "turnstile": "<b>Cloudflare Turnstile</b> (Cloudflare): teklif formundaki güvenlik doğrulaması. Formu bir insanın gönderdiğini anlamak için tarayıcınızda çalışır ve tek kullanımlık bir doğrulama kodu üretir.",
+      "admin": "<b>payload-token</b> (bizim): yalnızca yönetim paneline giriş yapan çalışanlarımızın oturumunu açık tutar. Ziyaretçilere yerleştirilmez."
+    },
+    "analytics": {
+      "title": "Ölçüm çerezleri (yalnızca onayınızla)",
+      "intro": "Bu çerezler siteyi kaç kişinin ve nasıl kullandığını ölçer. Hukuki sebebi açık rızanızdır (KVKK md. 5/1).",
+      "ga": "<b>_ga ve _ga_ ile başlayan çerezler</b> (Google Analytics 4, Google, ABD): ziyaretleri ayırt edip saymak için. En fazla 2 yıl saklanır. Ölçüm verileri Google'ın yurt dışındaki sunucularına gider.",
+      "optIn": "Siteyi ilk açtığınızda sayfanın altında bir çerez bildirimi çıkar. “Reddet” ve “Kabul et” düğmeleri eşittir, hiçbiri önceden seçili değildir. “Kabul et”e tıklamadan Google Analytics hiç yüklenmez.",
+      "withdraw": "Onayınızı geri alırsanız Google Analytics artık yüklenmez ve _ga çerezlerini tarayıcınızdan sileriz."
+    },
+    "noAnalytics": {
+      "title": "Ölçüm çerezi kullanıyor muyuz?",
+      "text": "Hayır. Sitede ziyaretçileri izleyen ölçüm ya da reklam çerezi yok."
+    },
+    "umami": {
+      "title": "Çerezsiz ziyaret istatistiği",
+      "text": "Umami ile hangi sayfaların açıldığını ve hangi bağlantılara tıklandığını sayarız. Umami kendi sunucumuzda çalışır, çerez kullanmaz ve sizi tanımlamaz."
+    },
+    "map": {
+      "title": "Harita",
+      "text": "İletişim sayfasındaki Google Haritalar yalnızca “Haritayı göster”e tıkladığınızda yüklenir. O andan itibaren Google kendi çerezlerini kullanabilir; bunlar Google'ın gizlilik politikasına tabidir."
+    },
+    "links": {
+      "title": "Dış bağlantılar",
+      "text": "WhatsApp, sosyal medya ve harita bağlantıları siz tıklayana kadar hiçbir şey yüklemez. Tıkladığınızda o hizmetin kendi çerez kuralları geçerli olur."
+    },
+    "choice": {
+      "title": "Tercihinizi nasıl değiştirirsiniz?",
+      "footer": "Her sayfanın altındaki “Çerez tercihleri” bağlantısından seçiminizi istediğiniz zaman değiştirebilirsiniz.",
+      "browser": "Çerezleri tarayıcınızın ayarlarından da silebilir ya da engelleyebilirsiniz. Zorunlu çerezleri engellerseniz dil seçimi veya güvenlik doğrulaması gibi bazı bölümler çalışmayabilir.",
+      "more": "Kişisel verileriniz hakkındaki ayrıntılar <kvkk>KVKK aydınlatma metninde</kvkk>."
+    }
+  }
+}

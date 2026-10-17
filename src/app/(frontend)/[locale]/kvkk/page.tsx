@@ -6,6 +6,7 @@ import { ContentPage } from '@/components/content/ContentPage'
 import { KvkkDraft, legalUses } from '@/content/legal/kvkk'
 import type { Locale } from '@/i18n/routing'
 import { CMS_PAGES, getPage, getPageTitles } from '@/lib/data/pages'
+import { KVKK_TEXT_DATE } from '@/lib/leads/validate'
 import { getSiteSettings } from '@/lib/data/site'
 import { cmsPagePaths, pageMetadata } from '@/lib/seo/page-metadata'
 
@@ -35,13 +36,14 @@ export default async function Page({ params }: Props) {
         <RichText data={page.body} />
       </ContentPage>
     )
-  // In-repo template: no date shown, since the text has no recorded publish date.
+  // In-repo template: dated by KVKK_TEXT_DATE, the same version the contact form's consent stores.
   return (
-    <ContentPage title={t('kvkkTitle')}>
+    <ContentPage title={t('kvkkTitle')} note={t('updated', { date: format.dateTime(new Date(KVKK_TEXT_DATE), { dateStyle: 'long' }) })}>
       <KvkkDraft
         locale={locale}
         c={{
           name: settings.companyName,
+          person: settings.founder?.name,
           address: [settings.address?.street, settings.address?.district, settings.address?.city].filter(Boolean).join(', ') || undefined,
           email: settings.email,
         }}

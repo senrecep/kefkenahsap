@@ -1,0 +1,138 @@
+{
+  "KvkkText": {
+    "intro": "Diese Hinweise erteilen wir nach Art. 10 des türkischen Gesetzes Nr. 6698 zum Schutz personenbezogener Daten (KVKK). Sie erklären, welche personenbezogenen Daten wir verarbeiten, wenn Sie unsere Website nutzen und uns eine Angebotsanfrage senden, warum und wie.",
+    "controller": {
+      "title": "Wer ist der Verantwortliche?",
+      "contact": "Bei Fragen und Anträgen zu Ihren personenbezogenen Daten erreichen Sie uns über die obigen Kontaktdaten.",
+      "who": "Verantwortlicher ist <b>{person}</b> als Inhaber des Einzelunternehmens {name}."
+    },
+    "data": {
+      "title": "Welche Daten verarbeiten wir?",
+      "form": "<b>Ihre Angaben im Angebotsformular:</b> Name, Telefon, E-Mail (freiwillig), Leistung, Provinz und Bezirk, Ihre Nachricht und bis zu 5 angehängte Fotos.",
+      "meta": "<b>Mit dem Formular gespeichert:</b> Seite, Sprache und Zeitpunkt des Absendens; gegebenenfalls Kampagnendaten (utm); die Version der Datenschutzhinweise, deren Kenntnisnahme Sie bestätigt haben.",
+      "ip": "<b>Ihre IP-Adresse:</b> wird nur im Arbeitsspeicher in einem 10-Minuten-Zähler gehalten, um das Formular vor Missbrauch zu schützen, und an die Cloudflare-Turnstile-Prüfung übermittelt. Nach Ablauf des Zeitfensters wird sie bei der nächsten Anfrage gelöscht. Sie wird nie auf Datenträger geschrieben und nicht mit Ihrer Anfrage gespeichert.",
+      "visit": "<b>Technische Daten, die Ihr Browser beim Surfen sendet:</b> IP-Adresse, Browsertyp, aufgerufene Seite und Uhrzeit. Sie werden verarbeitet, um Ihnen die Website anzuzeigen und sie zu schützen.",
+      "errors": "<b>Fehlerprotokolle:</b> Tritt ein Fehler auf, wird ein technischer Fehlerbericht auf unserem eigenen Server gespeichert. E-Mail-Adressen, Telefonnummern und ähnliche Angaben werden vorher automatisch entfernt.",
+      "umami": "<b>Cookielose Besuchsstatistik:</b> Mit Umami zählen wir, welche Seiten aufgerufen und wie oft Links wie WhatsApp oder Telefon angeklickt werden. Umami läuft auf unserem eigenen Server, setzt keine Cookies und identifiziert Sie nicht.",
+      "ga": "<b>Google Analytics:</b> Statistiken zur Nutzung der Website, nur wenn Sie Cookies akzeptieren.",
+      "cookies": "Einzelheiten zu Cookies finden Sie in der <cookies>Cookie-Richtlinie</cookies>.",
+      "special": "Besondere Kategorien personenbezogener Daten wie Gesundheits-, Religions- oder biometrische Daten erfragen wir nicht. Bitte nehmen Sie solche Angaben nicht in Ihre Nachricht oder Fotos auf."
+    },
+    "method": {
+      "title": "Wie erheben wir Ihre Daten?",
+      "text": "Wir erheben Ihre Daten elektronisch: wenn Sie das Angebotsformular ausfüllen, aus den Daten, die Ihr Browser beim Surfen sendet, und über Cookies. Wenn Sie uns direkt per WhatsApp, Telefon oder E-Mail kontaktieren, nutzen wir das dort Mitgeteilte nur zur Beantwortung Ihrer Anfrage."
+    },
+    "purposes": {
+      "title": "Zu welchem Zweck und auf welcher Rechtsgrundlage?",
+      "quote": "<b>Um Ihre Anfrage zu prüfen,</b> Sie anzurufen oder Ihnen zu schreiben und eine Besichtigung und ein Angebot vorzubereiten. Rechtsgrundlage: unmittelbar mit dem Abschluss eines Vertrags verbunden (Art. 5/2-c KVKK).",
+      "security": "<b>Um Formular und Website vor Spam, Angriffen und Missbrauch zu schützen</b> und Fehler zu finden und zu beheben. Rechtsgrundlage: unser berechtigtes Interesse (Art. 5/2-f KVKK).",
+      "records": "<b>Um den Anfrageverlauf und den Nachweis, dass Sie die Hinweise gelesen haben, aufzubewahren</b> und bei einem möglichen Streit zu nutzen. Rechtsgrundlage: Begründung, Ausübung oder Schutz eines Rechts (Art. 5/2-e KVKK).",
+      "ga": "<b>Besuchsstatistik (Google Analytics).</b> Rechtsgrundlage: Ihre ausdrückliche Einwilligung über das Cookie-Banner (Art. 5/1 KVKK).",
+      "abroad": "<b>Übermittlung an Dienstleister im Ausland:</b> siehe unten „Werden Ihre Daten ins Ausland übermittelt?“.",
+      "umami": "<b>Cookielose Besuchsstatistik (Umami):</b> um zu sehen, welche Seiten nützlich sind, und die Website zu verbessern. Rechtsgrundlage: unser berechtigtes Interesse (Art. 5/2-f KVKK)."
+    },
+    "recipients": {
+      "title": "An wen geben wir Daten weiter?",
+      "intro": "Wir verkaufen Ihre Daten nicht und geben sie nicht für Werbung oder Marketing weiter. Für den Betrieb der Website nutzen wir diese Dienstleister:",
+      "cloudflare": "<b>Cloudflare, Inc. (USA):</b> Der Datenverkehr der Website läuft über das Netz von Cloudflare (schnelles Laden und Sicherheit). Cloudflare führt die Turnstile-Prüfung im Formular durch. Website-Bilder sowie die externe Kopie der Datenbank- und Fotosicherungen liegen im Speicher Cloudflare R2, in einem nicht öffentlichen Bereich.",
+      "resend": "<b>Resend (USA):</b> sendet uns bei einer neuen Anfrage eine Benachrichtigungs-E-Mail. Sie enthält Name, Telefon, E-Mail, Leistung, Ort, Nachricht sowie Seite und Sprache, von der aus Sie das Formular gesendet haben; Fotos werden nicht angehängt.",
+      "gmail": "<b>Google (Gmail, USA):</b> das Postfach, in dem diese Benachrichtigungen eingehen und über das wir Ihnen schreiben.",
+      "ga": "<b>Google (Analytics, USA):</b> Besuchsstatistik, nur wenn Sie Cookies akzeptieren.",
+      "map": "<b>Google (Maps, USA):</b> Die Karte auf der Kontaktseite wird nur von Google geladen, wenn Sie auf „Karte anzeigen“ klicken; Google sieht dann Ihre IP-Adresse.",
+      "authorities": "<b>Zuständige Behörden:</b> nur wenn das Gesetz es verlangt und nur im angeforderten Umfang. Rechtsgrundlage: Erfüllung unserer rechtlichen Pflicht (Art. 5/2-ç KVKK).",
+      "hosting": "Website, Datenbank und Anfragefotos laufen auf einem von uns gemieteten Server in der Türkei. Der Serveranbieter speichert die Daten nur in unserem Auftrag und nach unseren Weisungen (Auftragsverarbeiter). Anfragefotos werden nie unter einer öffentlichen Adresse veröffentlicht; nur befugte, im Verwaltungsbereich angemeldete Personen können sie sehen.",
+      "ai": "Ihre Nachricht und Ihre Fotos werden nicht an KI-Dienste gesendet.",
+      "whatsapp": "<b>Meta (WhatsApp, USA):</b> Wenn Sie uns über WhatsApp schreiben oder wir dort antworten, laufen die Nachrichten über diesen Dienst."
+    },
+    "abroad": {
+      "title": "Werden Ihre Daten ins Ausland übermittelt?",
+      "text": "Ja. Cloudflare, Resend, Google und Meta (WhatsApp) sind Unternehmen mit Sitz in den USA und verarbeiten Daten auf Servern außerhalb der Türkei. Die Angaben aus Ihrem Angebotsformular laufen über Cloudflare, Resend und Google, WhatsApp-Nachrichten über Meta.",
+      "basis": "Diese Übermittlungen erfolgen mit geeigneten Garantien nach Art. 9/4 KVKK: Wir haben mit diesen Unternehmen den Standardvertrag geschlossen, den der Datenschutzrat (Kişisel Verileri Koruma Kurulu, „Kurul“) veröffentlicht hat, und jeden Vertrag innerhalb von 5 Werktagen nach Unterzeichnung der KVKK-Behörde (Kişisel Verileri Koruma Kurumu, „Kurum“) gemeldet."
+    },
+    "retention": {
+      "title": "Wie lange speichern wir Ihre Daten?",
+      "leads": "<b>Anfragen und angehängte Fotos:</b> werden 2 Jahre nach Eingang automatisch gelöscht.",
+      "backups": "<b>Sicherungen:</b> Datenbank und Fotos werden täglich gesichert. Auf dem Server bleiben die letzten 14 Tage, in der externen Kopie die letzten 30 Tage. Eine gelöschte Anfrage verschwindet spätestens nach 30 Tagen auch aus den Sicherungen.",
+      "mail": "<b>Benachrichtigungs-E-Mails und WhatsApp-Nachrichten:</b> werden 2 Jahre aufbewahrt und dann gelöscht. Auf Wunsch löschen wir sie früher.",
+      "ga": "<b>Google-Analytics-Daten:</b> werden bei Google höchstens 14 Monate gespeichert.",
+      "errors": "<b>Fehlerprotokolle:</b> werden nach 30 Tagen automatisch gelöscht.",
+      "logs": "<b>Server-Zugriffsprotokolle:</b> werden höchstens 30 Tage aufbewahrt. Cloudflare bewahrt seine eigenen Sicherheitsprotokolle für die in seiner Datenschutzerklärung genannten Fristen auf.",
+      "umami": "<b>Umami-Zählungen:</b> enthalten nichts, was Sie identifiziert; sie werden als Website-Statistik ohne Frist aufbewahrt."
+    },
+    "security": {
+      "title": "Wie schützen wir Ihre Daten?",
+      "text": "Ihre Verbindung zur Website ist verschlüsselt (HTTPS). Anfragen im Verwaltungsbereich sehen nur befugte Personen, die sich mit Passwort anmelden. Das Formular ist durch eine Sicherheitsprüfung, eine Begrenzung der Versuche und eine Prüfung von Dateityp und -größe geschützt. Sicherungen liegen in nicht öffentlichen Speichern."
+    },
+    "rights": {
+      "title": "Welche Rechte haben Sie?",
+      "intro": "Nach Art. 11 KVKK haben Sie das Recht,",
+      "r1": "zu erfahren, ob Ihre personenbezogenen Daten verarbeitet werden, und gegebenenfalls Auskunft darüber zu verlangen,",
+      "r2": "den Zweck der Verarbeitung zu erfahren und ob die Daten zweckgemäß verwendet werden,",
+      "r3": "die Dritten im In- oder Ausland zu kennen, an die sie übermittelt wurden,",
+      "r4": "die Berichtigung unvollständiger oder falscher Daten zu verlangen,",
+      "r5": "die Löschung oder Vernichtung unter den Voraussetzungen des Art. 7 KVKK zu verlangen,",
+      "r6": "zu verlangen, dass Berichtigung, Löschung oder Vernichtung den Dritten mitgeteilt werden, an die die Daten übermittelt wurden,",
+      "r7": "Widerspruch gegen ein für Sie nachteiliges Ergebnis einzulegen, das ausschließlich auf automatisierter Auswertung beruht,",
+      "r8": "Ersatz eines Schadens zu verlangen, der Ihnen durch rechtswidrige Verarbeitung entstanden ist."
+    },
+    "apply": {
+      "title": "Wie können Sie einen Antrag stellen?",
+      "intro": "Stellen Sie Ihren Antrag schriftlich auf einem dieser Wege:",
+      "post": "eigenhändig unterschriebenes Schreiben, persönlich oder per Post an die obige Adresse,",
+      "esign": "mit qualifizierter elektronischer oder mobiler Signatur unterschriebenes Dokument an <mail>unsere E-Mail-Adresse</mail>,",
+      "email": "E-Mail an <mail>unsere E-Mail-Adresse</mail> von einer Adresse, die Sie uns zuvor mitgeteilt haben und die bei uns gespeichert ist.",
+      "content": "Ihr Antrag muss enthalten: Vor- und Nachname, türkische Identitätsnummer (bei Ausländern Staatsangehörigkeit und Pass- oder Ausweisnummer), Zustellanschrift, gegebenenfalls E-Mail und Telefon sowie Ihr Anliegen.",
+      "answer": "Wir beantworten Ihren Antrag spätestens innerhalb von 30 Tagen kostenlos. Verursacht die Bearbeitung zusätzliche Kosten, können wir die von der Datenschutzbehörde (Kişisel Verileri Koruma Kurulu) festgelegte Gebühr verlangen.",
+      "complaint": "Wird Ihr Antrag abgelehnt, halten Sie unsere Antwort für unzureichend oder antworten wir nicht innerhalb von 30 Tagen, können Sie innerhalb von 30 Tagen nach Kenntnis der Antwort, in jedem Fall innerhalb von 60 Tagen nach Antragstellung, Beschwerde bei der Datenschutzbehörde einlegen (Art. 14 KVKK)."
+    },
+    "links": {
+      "title": "Links zu anderen Websites",
+      "text": "Die Website enthält Links zu WhatsApp, sozialen Medien und Karten. Wenn Sie darauf klicken, gelten die Datenschutzregeln des jeweiligen Dienstes. Schreiben Sie uns über WhatsApp, erreicht uns Ihre Nachricht über den WhatsApp-Dienst von Meta."
+    },
+    "changes": {
+      "title": "Wenn sich diese Hinweise ändern",
+      "text": "Wir aktualisieren diese Hinweise, wenn sich die verarbeiteten Daten oder die genutzten Dienste ändern. Die aktuelle Fassung steht immer auf dieser Seite; das Datum der letzten Aktualisierung steht unter dem Titel."
+    }
+  },
+  "CookiesText": {
+    "intro": "Ein Cookie ist eine kleine Textdatei, die eine Website in Ihrem Browser speichert. Diese Seite erklärt, welche Cookies und ähnlichen Technologien die Website von {name} verwendet und warum. Werbe-Cookies verwenden wir nicht.",
+    "necessary": {
+      "title": "Welche Cookies sind unbedingt erforderlich?",
+      "intro": "Diese Cookies sind für Betrieb und Sicherheit der Website nötig. Sie erfordern keine Einwilligung; Rechtsgrundlage sind der Vertragsabschluss und unser berechtigtes Interesse (Art. 5/2-c und 5/2-f KVKK).",
+      "locale": "<b>NEXT_LOCALE</b> (eigenes): merkt sich Ihre Sprache, wenn Sie die Website in einer anderen Sprache als der Ihres Browsers öffnen. Wird beim Schließen des Browsers gelöscht.",
+      "consent": "<b>kh_consent</b> (eigenes): merkt sich Ihre Cookie-Auswahl (akzeptiert oder abgelehnt). Speicherdauer 6 Monate.",
+      "cloudflare": "<b>__cf_bm, cf_clearance</b> (Cloudflare): Cloudflare kann diese Sicherheits-Cookies setzen, während es die Website vor Bots und Angriffen schützt. __cf_bm wird nach 30 Minuten Inaktivität gelöscht; cf_clearance hält fest, dass Sie eine Sicherheitsprüfung bestanden haben.",
+      "turnstile": "<b>Cloudflare Turnstile</b> (Cloudflare): die Sicherheitsprüfung im Angebotsformular. Sie läuft in Ihrem Browser, um zu erkennen, dass ein Mensch das Formular sendet, und erzeugt einen einmaligen Prüfcode.",
+      "admin": "<b>payload-token</b> (eigenes): hält unsere Mitarbeitenden im Verwaltungsbereich angemeldet. Für Besucher wird es nie gesetzt."
+    },
+    "analytics": {
+      "title": "Analyse-Cookies (nur mit Ihrer Einwilligung)",
+      "intro": "Diese Cookies messen, wie viele Menschen die Website wie nutzen. Rechtsgrundlage ist Ihre ausdrückliche Einwilligung (Art. 5/1 KVKK).",
+      "ga": "<b>_ga und Cookies, die mit _ga_ beginnen</b> (Google Analytics 4, Google, USA): um Besuche zu unterscheiden und zu zählen. Speicherdauer bis zu 2 Jahre. Die Messdaten gehen an Server von Google im Ausland.",
+      "optIn": "Beim ersten Besuch erscheint unten auf der Seite ein Cookie-Hinweis. Die Schaltflächen „Ablehnen“ und „Akzeptieren“ sind gleichwertig, keine ist vorausgewählt. Bevor Sie auf „Akzeptieren“ klicken, wird Google Analytics gar nicht geladen.",
+      "withdraw": "Widerrufen Sie Ihre Einwilligung, wird Google Analytics nicht mehr geladen und wir löschen die _ga-Cookies aus Ihrem Browser."
+    },
+    "noAnalytics": {
+      "title": "Verwenden wir Analyse-Cookies?",
+      "text": "Nein. Die Website setzt keine Analyse- oder Werbe-Cookies, die Besucher verfolgen."
+    },
+    "umami": {
+      "title": "Cookielose Besuchsstatistik",
+      "text": "Mit Umami zählen wir, welche Seiten aufgerufen und welche Links angeklickt werden. Umami läuft auf unserem eigenen Server, setzt keine Cookies und identifiziert Sie nicht."
+    },
+    "map": {
+      "title": "Karte",
+      "text": "Die Google-Maps-Karte auf der Kontaktseite wird erst geladen, wenn Sie auf „Karte anzeigen“ klicken. Ab dann kann Google eigene Cookies verwenden; dafür gilt die Datenschutzerklärung von Google."
+    },
+    "links": {
+      "title": "Externe Links",
+      "text": "Links zu WhatsApp, sozialen Medien und Karten laden nichts, bis Sie sie anklicken. Danach gelten die Cookie-Regeln des jeweiligen Dienstes."
+    },
+    "choice": {
+      "title": "Wie ändern Sie Ihre Auswahl?",
+      "footer": "Über den Link „Cookie-Einstellungen“ unten auf jeder Seite können Sie Ihre Auswahl jederzeit ändern.",
+      "browser": "Sie können Cookies auch in den Browsereinstellungen löschen oder blockieren. Blockieren Sie die erforderlichen Cookies, funktionieren Teile der Website wie die Sprachauswahl oder die Sicherheitsprüfung womöglich nicht.",
+      "more": "Mehr zu Ihren personenbezogenen Daten in den <kvkk>Datenschutzhinweisen</kvkk>."
+    }
+  }
+}

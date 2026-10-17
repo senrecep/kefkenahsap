@@ -1,7 +1,7 @@
 {
   "Consent": {
     "label": "Cookie-Einstellung",
-    "text": "Google-Analytics-Cookies zur Messung der Besuche setzen wir nur mit Ihrer Einwilligung ein. Einzelheiten in der <link>Cookie-Richtlinie</link>.",
+    "text": "Google-Analytics-Cookies zur Messung der Besuche setzen wir nur mit Ihrer Einwilligung ein; diese Messdaten gehen an Server von Google im Ausland. Einzelheiten in der <link>Cookie-Richtlinie</link>.",
     "accept": "Akzeptieren",
     "reject": "Ablehnen",
     "preferences": "Cookie-Einstellungen"

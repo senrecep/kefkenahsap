@@ -29,7 +29,7 @@
     "photosHint": "Up to 5 photos. They are resized on your device before upload.",
     "photosSelected": "{count, plural, one {# photo selected} other {# photos selected}}",
     "photosPreparing": "Preparing photos…",
-    "consent": "I have read the <link>privacy notice</link> and agree that my details are processed for this quote and transferred to service providers abroad (Cloudflare, Resend, Google).",
+    "consent": "I have read the <link>privacy notice</link>.",
     "submit": "Request a quote",
     "sending": "Sending…",
     "honeypot": "Leave this field empty",
@@ -41,7 +41,7 @@
     "errors": {
       "NameRequired": "Name is empty. Tell us how to address you.",
       "PhoneInvalid": "Phone number is missing or wrong. Write it like 0532 123 45 67, or with the country code for international numbers (+49…).",
-      "ConsentRequired": "Consent not given. Tick the box to send.",
+      "ConsentRequired": "Confirm that you have read the privacy notice.",
       "EmailInvalid": "E-mail looks wrong. Write it like name@example.com or leave it empty.",
       "MessageTooLong": "Message is too long. Keep it under 5000 characters.",
       "TooManyPhotos": "You can add up to 5 photos. Remove the extra ones.",

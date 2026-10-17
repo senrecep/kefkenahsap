@@ -6,6 +6,7 @@ import contact from './contact.json'
 import gallery from './gallery.json'
 import guides from './guides.json'
 import home from './home.json'
+import legal from './legal.json'
 import pages from './pages.json'
 import projects from './projects.json'
 import regions from './regions.json'
@@ -17,6 +18,7 @@ const messages = {
   ...gallery,
   ...guides,
   ...home,
+  ...legal,
   ...pages,
   ...projects,
   ...regions,

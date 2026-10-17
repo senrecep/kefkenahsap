@@ -24,6 +24,21 @@ describe('createRateLimiter (5 per 10 minutes per key)', () => {
     expect(limiter.hit('b')).toBe(false) // b is still remembered and over its limit
     expect(limiter.hit('a')).toBe(true) // a was evicted, starts fresh
   })
+
+  it('forgets an IP once its window is over (KVKK notice: kept only for the window)', () => {
+    const clock = createFakeDateTimeProvider(new Date('2026-10-14T10:00:00Z'))
+    const limiter = createRateLimiter({ limit: 5, windowMs: 10 * 60_000, clock })
+    limiter.hit('1.2.3.4')
+    clock.advance(5 * 60_000)
+    limiter.hit('5.6.7.8')
+    expect(limiter.size()).toBe(2)
+    clock.advance(5 * 60_000 + 1) // 1.2.3.4's window is over, 5.6.7.8's is not
+    limiter.hit('9.9.9.9')
+    expect(limiter.size()).toBe(2)
+    clock.advance(10 * 60_000 + 1)
+    limiter.hit('9.9.9.9')
+    expect(limiter.size()).toBe(1)
+  })
 })
 
 describe('clientIp', () => {
