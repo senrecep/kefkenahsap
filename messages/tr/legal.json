@@ -3,13 +3,14 @@
     "intro": "Bu metin, 6698 sayılı Kişisel Verilerin Korunması Kanunu'nun (KVKK) 10. maddesine göre hazırlandı. Web sitemizi kullandığınızda ve bize teklif talebi gönderdiğinizde hangi kişisel verilerinizi, neden ve nasıl işlediğimizi anlatır.",
     "controller": {
       "title": "Veri sorumlusu kim?",
-      "contact": "Kişisel verilerinizle ilgili her soru ve başvuru için bize yukarıdaki adresten ya da e-postayla ulaşabilirsiniz."
+      "contact": "Kişisel verilerinizle ilgili her soru ve başvuru için bize yukarıdaki iletişim bilgilerinden ulaşabilirsiniz.",
+      "who": "<b>{person}</b>, {name} adıyla çalışan şahıs işletmesinin sahibi olarak veri sorumlusudur."
     },
     "data": {
       "title": "Hangi verilerinizi işliyoruz?",
       "form": "<b>Teklif formuna yazdıklarınız:</b> ad soyad, telefon, e-posta (isteğe bağlı), hizmet, il ve ilçe, mesajınız ve eklediğiniz en fazla 5 fotoğraf.",
-      "meta": "<b>Formla birlikte kaydedilenler:</b> formu gönderdiğiniz sayfa ve dil, varsa kampanya bağlantısı (utm) bilgisi, onay kutusunu işaretlediğiniz an ve onayladığınız metnin sürümü.",
-      "ip": "<b>IP adresiniz:</b> formu kötüye kullanıma karşı korumak için kısa süreli bir sayaçta tutulur ve Cloudflare Turnstile doğrulamasına gönderilir. Talebinizle birlikte kaydedilmez.",
+      "meta": "<b>Formla birlikte kaydedilenler:</b> formu gönderdiğiniz sayfa, dil ve an; varsa kampanya bağlantısı (utm) bilgisi; okuduğunuzu işaretlediğiniz aydınlatma metninin sürümü.",
+      "ip": "<b>IP adresiniz:</b> formu kötüye kullanıma karşı korumak için yalnızca bellekte, 10 dakikalık bir sayaçta tutulur ve Cloudflare Turnstile doğrulamasına gönderilir. Diske yazılmaz, talebinizle birlikte kaydedilmez.",
       "visit": "<b>Siteyi gezerken tarayıcınızın gönderdiği teknik bilgiler:</b> IP adresi, tarayıcı türü, açtığınız sayfa ve zaman. Bunlar siteyi size göstermek ve korumak için işlenir.",
       "errors": "<b>Hata kayıtları:</b> sitede bir hata olursa teknik hata kaydı kendi sunucumuzda tutulur. Kayda girmeden önce e-posta adresi ve telefon numarası gibi bilgiler otomatik olarak silinir.",
       "umami": "<b>Çerezsiz ziyaret istatistiği:</b> Umami ile hangi sayfaların açıldığını ve WhatsApp, telefon gibi bağlantılara kaç kez tıklandığını sayarız. Umami kendi sunucumuzda çalışır, çerez kullanmaz ve sizi tanımlamaz.",
@@ -25,33 +26,38 @@
       "title": "Verilerinizi ne için ve hangi hukuki sebeple işliyoruz?",
       "quote": "<b>Talebinizi değerlendirmek,</b> sizi aramak ya da size yazmak, keşif ve teklif hazırlamak. Hukuki sebep: bir sözleşmenin kurulmasıyla doğrudan ilgili olması (KVKK md. 5/2-c).",
       "security": "<b>Formu ve siteyi spam, saldırı ve kötüye kullanıma karşı korumak,</b> hataları bulup düzeltmek. Hukuki sebep: meşru menfaatimiz (KVKK md. 5/2-f).",
-      "records": "<b>Onay kaydını ve talep geçmişini saklamak,</b> olası bir anlaşmazlıkta kullanmak. Hukuki sebep: bir hakkın tesisi, kullanılması veya korunması (KVKK md. 5/2-e).",
+      "records": "<b>Talep geçmişini ve aydınlatma metnini okuduğunuzu gösteren kaydı saklamak,</b> olası bir anlaşmazlıkta kullanmak. Hukuki sebep: bir hakkın tesisi, kullanılması veya korunması (KVKK md. 5/2-e).",
       "ga": "<b>Ziyaret istatistiği (Google Analytics).</b> Hukuki sebep: çerez onayınızla verdiğiniz açık rıza (KVKK md. 5/1).",
-      "abroad": "<b>Verilerin yurt dışındaki hizmet sağlayıcılara aktarılması:</b> aşağıdaki “Verileriniz yurt dışına aktarılıyor mu?” bölümüne bakın."
+      "abroad": "<b>Verilerin yurt dışındaki hizmet sağlayıcılara aktarılması:</b> aşağıdaki “Verileriniz yurt dışına aktarılıyor mu?” bölümüne bakın.",
+      "umami": "<b>Çerezsiz ziyaret istatistiği (Umami):</b> hangi sayfaların işe yaradığını görüp siteyi iyileştirmek. Hukuki sebep: meşru menfaatimiz (KVKK md. 5/2-f)."
     },
     "recipients": {
       "title": "Verilerinizi kimlerle paylaşıyoruz?",
       "intro": "Verilerinizi satmıyoruz, reklam veya pazarlama için kimseyle paylaşmıyoruz. Siteyi çalıştırmak için şu hizmet sağlayıcıları kullanıyoruz:",
-      "cloudflare": "<b>Cloudflare, Inc. (ABD):</b> sitenin trafiği Cloudflare ağından geçer (hızlı yükleme ve güvenlik). Formdaki Turnstile doğrulamasını yapar. Site görselleri ve veritabanı ve fotoğraf yedeklerinin sunucu dışındaki kopyası Cloudflare R2 depolamasında, herkese kapalı bir alanda durur.",
-      "resend": "<b>Resend (ABD):</b> yeni talep geldiğinde bize bildirim e-postası gönderir. E-postada adınız, telefonunuz, e-postanız, hizmet, konum ve mesajınız yer alır; fotoğraflar e-postaya eklenmez.",
+      "cloudflare": "<b>Cloudflare, Inc. (ABD):</b> sitenin trafiği Cloudflare ağından geçer (hızlı yükleme ve güvenlik). Formdaki Turnstile doğrulamasını yapar. Site görselleri ile veritabanı ve fotoğraf yedeklerinin sunucu dışındaki kopyası Cloudflare R2 depolamasında, herkese kapalı bir alanda durur.",
+      "resend": "<b>Resend (ABD):</b> yeni talep geldiğinde bize bildirim e-postası gönderir. E-postada adınız, telefonunuz, e-postanız, hizmet, konum, mesajınız ve formu gönderdiğiniz sayfa ile dil yer alır; fotoğraflar e-postaya eklenmez.",
       "gmail": "<b>Google (Gmail, ABD):</b> bildirim e-postalarının geldiği ve sizinle yazıştığımız e-posta kutumuz.",
       "ga": "<b>Google (Analytics, ABD):</b> yalnızca çerez onayı verirseniz ziyaret istatistikleri.",
       "map": "<b>Google (Haritalar, ABD):</b> iletişim sayfasındaki harita yalnızca “Haritayı göster”e tıklarsanız Google'dan yüklenir; o anda Google IP adresinizi görür.",
-      "authorities": "<b>Yetkili kamu kurumları:</b> yalnızca kanunen zorunlu olduğunda ve istenen ölçüde.",
-      "hosting": "Sitemiz, veritabanımız ve talep fotoğrafları kendi sunucumuzda, Türkiye'de çalışır. Talep fotoğrafları herkese açık bir adresten yayınlanmaz; yalnızca yönetim paneline giriş yapan yetkili kişiler görür.",
-      "ai": "Mesajınız ve fotoğraflarınız yapay zekâ servislerine gönderilmez."
+      "authorities": "<b>Yetkili kamu kurumları:</b> yalnızca kanunen zorunlu olduğunda ve istenen ölçüde. Hukuki sebep: hukuki yükümlülüğümüzü yerine getirmek (KVKK md. 5/2-ç).",
+      "hosting": "Sitemiz, veritabanımız ve talep fotoğrafları Türkiye'de kiraladığımız bir sunucuda çalışır. Sunucu sağlayıcısı verileri yalnızca bizim adımıza ve talimatımızla saklar (veri işleyen). Talep fotoğrafları herkese açık bir adresten yayınlanmaz; yalnızca yönetim paneline giriş yapan yetkili kişiler görür.",
+      "ai": "Mesajınız ve fotoğraflarınız yapay zekâ servislerine gönderilmez.",
+      "whatsapp": "<b>Meta (WhatsApp, ABD):</b> WhatsApp'tan bize yazdığınızda ya da size WhatsApp'tan döndüğümüzde mesajlar bu hizmet üzerinden iletilir."
     },
     "abroad": {
       "title": "Verileriniz yurt dışına aktarılıyor mu?",
-      "text": "Evet. Cloudflare, Resend ve Google ABD merkezli şirketlerdir ve verileri Türkiye dışındaki sunucularında işler. Teklif formundaki bilgileriniz bu sağlayıcılar üzerinden geçer.",
-      "basis": "Bu aktarımları KVKK md. 9'a göre yapıyoruz. Teklif formundaki onay kutusunu işaretleyerek bu aktarıma açık rıza verirsiniz. Onayınızı aşağıdaki başvuru yollarıyla istediğiniz zaman geri alabilirsiniz; geri alma, ondan önce yapılan işlemleri etkilemez."
+      "text": "Evet. Cloudflare, Resend, Google ve Meta (WhatsApp) ABD merkezli şirketlerdir ve verileri Türkiye dışındaki sunucularında işler. Teklif formundaki bilgileriniz Cloudflare, Resend ve Google üzerinden, WhatsApp yazışmaları Meta üzerinden geçer.",
+      "basis": "Bu aktarımları KVKK md. 9/4'teki uygun güvencelerle yapıyoruz: bu şirketlerle Kişisel Verileri Koruma Kurulunun ilan ettiği standart sözleşmeyi imzaladık ve her birini imzadan sonraki 5 iş günü içinde Kişisel Verileri Koruma Kurumuna bildirdik."
     },
     "retention": {
       "title": "Verilerinizi ne kadar süre saklıyoruz?",
       "leads": "<b>Talepler ve ekli fotoğraflar:</b> alındıktan 2 yıl sonra otomatik olarak silinir.",
       "backups": "<b>Yedekler:</b> veritabanı ve fotoğraf yedeği her gün alınır. Sunucuda son 14 günün, sunucu dışındaki kopyada son 30 günün yedeği tutulur. Silinen bir talep yedeklerden de en geç 30 gün içinde kalkar.",
-      "mail": "<b>Bildirim e-postaları ve yazışmalar:</b> e-posta kutumuzda ve WhatsApp'ta kalır. İşiniz bittiğinde ya da siz istediğinizde sileriz.",
-      "ga": "<b>Google Analytics verileri:</b> Google'da en fazla 14 ay tutulur."
+      "mail": "<b>Bildirim e-postaları ve WhatsApp yazışmaları:</b> 2 yıl saklanır, sonra silinir. İsterseniz daha önce sileriz.",
+      "ga": "<b>Google Analytics verileri:</b> Google'da en fazla 14 ay tutulur.",
+      "errors": "<b>Hata kayıtları:</b> 30 gün sonra otomatik olarak silinir.",
+      "logs": "<b>Sunucu erişim kayıtları:</b> en fazla 30 gün tutulur. Cloudflare kendi güvenlik kayıtlarını kendi gizlilik politikasındaki sürelerle tutar.",
+      "umami": "<b>Umami sayımları:</b> sizi tanımlayan bilgi içermez; site istatistiği olarak süre sınırı olmadan tutulur."
     },
     "security": {
       "title": "Verilerinizi nasıl koruyoruz?",
@@ -102,7 +108,7 @@
     "analytics": {
       "title": "Ölçüm çerezleri (yalnızca onayınızla)",
       "intro": "Bu çerezler siteyi kaç kişinin ve nasıl kullandığını ölçer. Hukuki sebebi açık rızanızdır (KVKK md. 5/1).",
-      "ga": "<b>_ga ve _ga_ ile başlayan çerezler</b> (Google Analytics 4, Google): ziyaretleri ayırt edip saymak için. En fazla 2 yıl saklanır.",
+      "ga": "<b>_ga ve _ga_ ile başlayan çerezler</b> (Google Analytics 4, Google, ABD): ziyaretleri ayırt edip saymak için. En fazla 2 yıl saklanır. Ölçüm verileri Google'ın yurt dışındaki sunucularına gider.",
       "optIn": "Siteyi ilk açtığınızda sayfanın altında bir çerez bildirimi çıkar. “Reddet” ve “Kabul et” düğmeleri eşittir, hiçbiri önceden seçili değildir. “Kabul et”e tıklamadan Google Analytics hiç yüklenmez.",
       "withdraw": "Onayınızı geri alırsanız Google Analytics artık yüklenmez ve _ga çerezlerini tarayıcınızdan sileriz."
     },

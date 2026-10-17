@@ -29,7 +29,7 @@
     "photosHint": "En fazla 5 fotoğraf. Yüklemeden önce telefonunuzda küçültülür.",
     "photosSelected": "{count, plural, one {# fotoğraf seçildi} other {# fotoğraf seçildi}}",
     "photosPreparing": "Fotoğraflar hazırlanıyor…",
-    "consent": "<link>KVKK aydınlatma metnini</link> okudum; bilgilerimin teklif için işlenmesini ve yurt dışındaki hizmet sağlayıcılara (Cloudflare, Resend, Google) aktarılmasını kabul ediyorum.",
+    "consent": "<link>KVKK aydınlatma metnini</link> okudum.",
     "submit": "Teklif iste",
     "sending": "Gönderiliyor…",
     "honeypot": "Bu alanı boş bırakın",
@@ -41,7 +41,7 @@
     "errors": {
       "NameRequired": "Ad soyad boş. Size nasıl hitap edeceğimizi yazın.",
       "PhoneInvalid": "Telefon numarası eksik ya da hatalı. 0532 123 45 67 biçiminde, uluslararası numaralarda ülke koduyla (+49…) yazın.",
-      "ConsentRequired": "KVKK onayı verilmedi. Göndermek için kutuyu işaretleyin.",
+      "ConsentRequired": "Aydınlatma metnini okuduğunuzu işaretleyin.",
       "EmailInvalid": "E-posta adresi hatalı görünüyor. ad@ornek.com biçiminde yazın ya da boş bırakın.",
       "MessageTooLong": "Mesaj çok uzun. 5000 karakterin altına indirin.",
       "TooManyPhotos": "En fazla 5 fotoğraf ekleyebilirsiniz. Fazlasını çıkarın.",

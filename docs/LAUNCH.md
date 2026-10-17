@@ -77,6 +77,11 @@ Work through the phases in order and tick each step. Never paste a secret value 
 
 1. [ ] **[Owner]** Native review of the RU / DE / AR texts (UI strings + published content). There is **no per-locale off switch**: `localizeStatus` is off, and a locale is live wherever its slug and title are filled. A locale that isn't ready either ships as is, or needs its slugs cleared on dev **before** the T-1d dump. That second route is a separate issue.
 2. [ ] **[Owner]** Lawyer sign-off on the KVKK and cookie texts and the consent design, plus the server country.
+   The published texts (#195) state these as facts, so each one is a **gated** item for go:
+   - [ ] **Standart sözleşmeler imzalandı ve Kurum'a bildirildi.** Transfers abroad rest on KVKK md. 9/4: with Cloudflare, Google (Gmail, Analytics, Maps), Resend and Meta (WhatsApp), sign the standard contract published by the Kurul and notify each one to the Kişisel Verileri Koruma Kurumu within 5 business days of signing.
+   - [ ] GA4 → Admin → Data collection and modification → Data retention: **14 months**.
+   - [ ] Server access logs (Dokploy/Traefik) are kept for at most 30 days.
+   - [ ] Notification e-mails (Gmail) and WhatsApp chats are deleted after 2 years (monthly task, RUNBOOK → Owner notes).
 3. [ ] **[Owner]** `docs/content/CHECKLIST.md`: answer the open confirmations (content claims, the corridor photo, the 4 caption-derived project claims).
 4. [ ] **[Owner]** Decide the items under "Owner decisions" at the end of this file.
 5. [ ] **[Owner]** OpenRouter credit on the prod key, for the owner's own admin use only.
@@ -85,6 +90,7 @@ Work through the phases in order and tick each step. Never paste a secret value 
 
 6. [ ] **[Owner]** Cloudflare purge token (#185): My Profile → API Tokens → Custom. Permission **Zone → Cache Purge → Purge**, zone `kefkenahsap.com` only. The same token goes to dev and prod.
 7. [ ] **[Owner]** R2 backup token (#51): R2 → Manage API tokens → **Object Read & Write, bucket `kefkenahsap-backups` only**. Also add a 30-day lifecycle rule on that bucket. Never widen the app's media token.
+   - **Gated (KVKK notice, #195):** the privacy notice says the off-server backup copy is kept 30 days. Token, lifecycle rule and `COMPOSE_PROFILES` including `backup` (`backup`, or `observability,backup`) are required for go, and 2.23 must show the R2 upload, not `R2 upload skipped`.
 8. [ ] **[Owner]** GlitchTip prod. Recommended: the existing instance at https://glitchtip-dev.kefkenahsap.com, org `kefkenahsap`, new project `kefkenahsap-production`, and copy its DSN.
 9. [ ] **[Owner]** Resend is ready for `bildirim@kefkenahsap.com` (the app's `defaultFromAddress`):
    - Resend → Domains shows `kefkenahsap.com` **Verified**.
@@ -102,6 +108,7 @@ Work through the phases in order and tick each step. Never paste a secret value 
 11. [ ] **[Owner]** GitHub environment `production`: `gh variable list -R senrecep/kefkenahsap -e production` shows the three `NEXT_PUBLIC_*` with prod values. If Umami goes live (decision 6), also set `NEXT_PUBLIC_UMAMI_WEBSITE_ID` and `NEXT_PUBLIC_UMAMI_SRC` now.
 12. [ ] **[Claude] APPROVAL. Sync the prod raw compose with the repo (#189).** Dokploy → `kefkenahsap` / production → `app` → General → Raw compose. Replace it with `docker-compose.dokploy.yml` from `origin/development`, then Save. **Don't deploy.** (Over the API: `compose.update` with `composeFile`.) Step 2.7 diffs it again right before the gate opens.
     - It must happen before the first deploy. Otherwise the first boot has no `media-originals` volume, and clean originals land in the container and vanish on the next redeploy (#189).
+    - **Also sync the `development` raw compose** (where GlitchTip runs today) and redeploy it: the compose sets the GlitchTip event retention to 30 days, which the privacy notice promises (#195).
 
 ### 1C. Old site and DNS safety
 
@@ -441,6 +448,7 @@ The owner says "go" only when every box is ticked:
   ```
 - [ ] 2.19 smoke and 2.21 full legacy map green. Users = 1, password rotated (2.17), `/api/users/init` true.
 - [ ] 2.23: backup in R2 and the restore drill matched.
+- [ ] KVKK texts (#195) are true: the 1A.2 gated items are done, and 1B.7 (R2 token, 30-day lifecycle, `backup` profile) and the dev + prod compose sync of 1B.12 are in place.
 - [ ] Freeze held: no dev merges (except step 3's map PR) or admin edits since the 2.10 dump. Otherwise redo 2.10–2.23 (≈45 min).
 - [ ] `mail` is an A record since ≥ 1 h (1.15). The cPanel backup and the zone export are on disk (1.13–1.14).
 - [ ] The rollback steps (phase 6) have been read. The owner is reachable for the next 2 h.

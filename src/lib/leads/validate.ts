@@ -7,10 +7,10 @@ import { normalizeTrPhone } from '@/lib/whatsapp'
 /** Accepted lead photo types (no SVG: scriptable). Shared with the LeadPhotos upload config. */
 export const LEAD_PHOTO_TYPES = ['image/jpeg', 'image/png', 'image/webp', 'image/heic', 'image/heif']
 export const MAX_PHOTOS = 5
-/** Date of the in-repo KVKK/cookie texts, shown as "Son güncelleme" on both pages. Change it when the text changes. */
+/** Date of the in-repo KVKK/cookie texts (messages/<locale>/legal.json), shown as "Son güncelleme" on both pages; legal.test.ts fails until it is updated with the text. */
 export const KVKK_TEXT_DATE = '2026-10-17'
-/** Version of the KVKK notice the consent box links to; stored on every lead. */
-export const KVKK_TEXT_VERSION = `kvkk-taslak-${KVKK_TEXT_DATE}`
+/** Version of the KVKK notice the form's acknowledgment box links to; stored on every lead. */
+export const KVKK_TEXT_VERSION = `kvkk-${KVKK_TEXT_DATE}`
 export const MAX_PHOTO_BYTES = 10 * 1024 * 1024
 const MAX_TEXT = 5000
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/
@@ -53,7 +53,7 @@ export function validateLead(input: LeadInput): Result<ValidLead> {
   if (!name) errors.push(Err.validation('Lead.NameRequired', 'Ad soyad gerekli.'))
   const phone = leadPhone(input.phone ?? '')
   if (Result.isFailure(phone)) errors.push(Err.validation('Lead.PhoneInvalid', 'Geçerli bir telefon numarası girin.'))
-  if (!input.consentKvkk) errors.push(Err.validation('Lead.ConsentRequired', 'KVKK aydınlatma metnini onaylayın.'))
+  if (!input.consentKvkk) errors.push(Err.validation('Lead.ConsentRequired', 'Aydınlatma metnini okuduğunuzu işaretleyin.'))
   const email = input.email?.trim()
   if (email && !EMAIL.test(email)) errors.push(Err.validation('Lead.EmailInvalid', 'E-posta adresi geçersiz.'))
   if ((input.message?.length ?? 0) > MAX_TEXT) errors.push(Err.validation('Lead.MessageTooLong', 'Mesaj çok uzun.'))

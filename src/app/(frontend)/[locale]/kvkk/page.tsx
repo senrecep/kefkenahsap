@@ -43,6 +43,7 @@ export default async function Page({ params }: Props) {
         locale={locale}
         c={{
           name: settings.companyName,
+          person: settings.founder?.name,
           address: [settings.address?.street, settings.address?.district, settings.address?.city].filter(Boolean).join(', ') || undefined,
           email: settings.email,
         }}

@@ -13,6 +13,11 @@ export function createRateLimiter({ limit, windowMs, clock, maxKeys = 10_000 }: 
     /** Records a hit; false when the key is over its limit in the current window. */
     hit(key: string): boolean {
       const now = clock.utcNowMs()
+      // KVKK (#195): an IP is kept only while its window runs; Map order = window start order, so expired keys lead.
+      for (const [k, v] of hits) {
+        if (now - v.start <= windowMs) break
+        hits.delete(k)
+      }
       const w = hits.get(key)
       if (!w || now - w.start > windowMs) {
         // Re-insert so Map order = window start order; the oldest keys go first when memory is bounded.
@@ -24,6 +29,8 @@ export function createRateLimiter({ limit, windowMs, clock, maxKeys = 10_000 }: 
       w.count++
       return w.count <= limit
     },
+    /** Keys currently held (tests). */
+    size: () => hits.size,
   }
 }
 

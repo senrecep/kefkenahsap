@@ -1,12 +1,17 @@
+import { createHash } from 'node:crypto'
+import { readFileSync } from 'node:fs'
+
 import { describe, expect, it } from 'vitest'
 
 import { routing } from '@/i18n/routing'
+import { KVKK_TEXT_DATE } from '@/lib/leads/validate'
 
 import { cookiesSections } from './cookies'
 import { kvkkSections, type Section, type Uses } from './kvkk'
 
 const none: Uses = { ga: false, umami: false, map: false }
 const all: Uses = { ga: true, umami: true, map: true }
+const contact = { address: 'Arnavutköy, İstanbul', email: 'a@b.co' }
 const keysOf = (sections: Section[]) =>
   sections.flatMap((s) => [
     `${s.id}.title`,
@@ -30,7 +35,7 @@ describe('kvkkSections (#195)', () => {
     expect(keysOf(kvkkSections({ ...none, ga: true }))).toEqual(
       expect.arrayContaining(['data.ga', 'purposes.ga', 'recipients.ga', 'retention.ga']),
     )
-    expect(keysOf(kvkkSections({ ...none, umami: true }))).toContain('data.umami')
+    expect(keysOf(kvkkSections({ ...none, umami: true }))).toEqual(expect.arrayContaining(['data.umami', 'purposes.umami', 'retention.umami']))
     expect(keysOf(kvkkSections({ ...none, map: true }))).toContain('recipients.map')
   })
 
@@ -49,6 +54,14 @@ describe('kvkkSections (#195)', () => {
       ]),
     )
     expect(kvkkSections(none).find((s) => s.id === 'rights')?.list).toHaveLength(8)
+    expect(keysOf(kvkkSections(none))).toContain('recipients.whatsapp')
+  })
+
+  it('offers only the application channels the controller really has', () => {
+    const channels = (c: { address?: string; email?: string | null }) => kvkkSections(none, c).find((s) => s.id === 'apply')?.list
+    expect(channels(contact)).toEqual(['post', 'esign', 'email'])
+    expect(channels({ address: contact.address })).toEqual(['post'])
+    expect(channels({ email: contact.email })).toEqual(['esign', 'email'])
   })
 })
 
@@ -89,7 +102,7 @@ describe.each(routing.locales)('legal texts in %s', (locale) => {
   it('has every key the sections reference', async () => {
     const m = (await import(`../../../messages/${locale}/legal.json`)).default
     const missing = [
-      ...['intro', ...keysOf([...kvkkSections(all), ...kvkkSections(none)])].map(
+      ...['intro', 'controller.who', ...keysOf([...kvkkSections(all, contact), ...kvkkSections(none)])].map(
         (k) => `KvkkText.${k}`,
       ),
       ...['intro', ...keysOf([...cookiesSections(all), ...cookiesSections(none)])].map(
@@ -98,4 +111,14 @@ describe.each(routing.locales)('legal texts in %s', (locale) => {
     ].filter((k) => typeof get(m, k) !== 'string')
     expect(missing).toEqual([])
   })
+})
+
+// The pages show KVKK_TEXT_DATE as "Son güncelleme" and every lead stores it as the version it acknowledged. When a
+// legal.json changes, set KVKK_TEXT_DATE to the day of the change and paste the new hash here.
+const TEXT_STAMP = { date: '2026-10-17', sha256: 'f9ae68cc8f7e87c519e5f241854b5f40228350fd3f95e9ba3bbe6eddf3a64a88' }
+
+it('KVKK_TEXT_DATE moves with the legal texts', () => {
+  const hash = createHash('sha256')
+  for (const l of routing.locales) hash.update(readFileSync(`messages/${l}/legal.json`))
+  expect({ date: KVKK_TEXT_DATE, sha256: hash.digest('hex') }).toEqual(TEXT_STAMP)
 })
