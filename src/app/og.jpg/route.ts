@@ -31,7 +31,7 @@ export async function GET() {
   const settings = await getSiteSettings(routing.defaultLocale)
   const photo = adminOgMedia(settings.defaultOgImage)
   // Relative Location: behind the proxy the request URL carries the internal host.
-  if (!photo) return new Response(null, { status: 307, headers: { Location: `/og-${routing.defaultLocale}.png` } })
+  if (!photo) return new Response(null, { status: 307, headers: { Location: `/og-${routing.defaultLocale}.png`, 'Cache-Control': 'public, max-age=300' } })
   const url = responsiveImage(photo).src
   const card = url ? await cachedCard(url).catch(() => null) : null
   return ogResponse(card ? new Uint8Array(Buffer.from(card, 'base64')) : null)

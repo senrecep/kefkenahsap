@@ -1,4 +1,9 @@
+import { existsSync } from 'node:fs'
+import path from 'node:path'
+
 import { afterEach, describe, expect, it, vi } from 'vitest'
+
+import { routing } from '@/i18n/routing'
 
 import { buildMetadata, fullTitle, siteOgImage } from './metadata'
 
@@ -91,5 +96,11 @@ describe('title length (SERP shows ~60 chars)', () => {
     warn.mockClear()
     buildMetadata({ ...base, locale: 'tr', paths: { tr: '/tr/x' } })
     expect(warn).not.toHaveBeenCalled()
+  })
+})
+
+describe('share cards', () => {
+  it.each(routing.locales)('public/og-%s.png exists (rerun `bun run og:generate` after adding a locale)', (locale) => {
+    expect(existsSync(path.join(process.cwd(), 'public', `og-${locale}.png`))).toBe(true)
   })
 })
