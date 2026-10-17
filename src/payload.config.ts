@@ -134,6 +134,9 @@ export default buildConfig({
     tasks: [purgeExpiredLeads, tagImageTask],
     // Runs queued jobs (AI tagging, retention, purge) every minute; tasks are added per feature.
     autoRun: [{ cron: '* * * * *', queue: 'default' }],
+    // Never under Vitest: tests run the queue themselves, and a cron tick between a test's queue() and run() took the job
+    // away from it (flaky ai-tag int test, #192).
+    shouldAutoRun: () => process.env.NODE_ENV !== 'test',
   },
   // Fixed toolbar: the floating one only appears on text selection, which is hard on a phone.
   editor: lexicalEditor({ features: ({ defaultFeatures }) => [...defaultFeatures, FixedToolbarFeature()] }),

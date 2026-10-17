@@ -28,6 +28,13 @@ afterAll(async () => {
 })
 
 describe('tagImage job', () => {
+  // Flake in PR #191's CI: the every-minute autoRun cron ran inside this process too. When a tick landed between a
+  // test's queue() and run(), the cron took the job, run() found nothing and returned, and the assertion read the photo
+  // before the cron's run had written it. Tests run the queue themselves only.
+  it('the autoRun cron never runs jobs under test', async () => {
+    expect(await payload.config.jobs.shouldAutoRun?.(payload)).toBe(false)
+  })
+
   it('fills empty TR/EN fields, records the suggestion and cost, keeps the image pending', async () => {
     const m = await payload.create({ collection: 'media', data: {}, filePath: IMG })
     created.push({ collection: 'media', id: m.id })
