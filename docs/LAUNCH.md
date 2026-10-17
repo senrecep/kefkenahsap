@@ -41,7 +41,7 @@ r2env() { set -a; . "$W/.dokploy-prod.env"; set +a
 | Deploy gate | Repo variable `PRODUCTION_DEPLOY_APPROVED` is **not set**: a push to `main` runs CI only. |
 | `main` | 90 commits behind `development`. |
 | Dev data | Media under `kefkenahsap/dev/` → `https://cdn.kefkenahsap.com/dev/…`. The bucket root is empty. Dev is public (`SITE_BASIC_AUTH=off`) and noindex. |
-| Known blocker | **#190**: 8 of 487 legacy redirect-map targets don't exist on dev, so they would `301 → 404` after the promotion. It must be fixed before T-1d. |
+| Legacy maps | **#190 / PR #193**: 49 of 487 redirect-map targets pointed at files that were replaced (`<name>-1.webp`) or deduplicated away, so they would `301 → 404`. #193 keys every entry by `seedKey` and adds `scripts/seed/legacy-maps.ts`, which refreshes the maps from a database (49 → 0). `media-map.json` entries are `{seedKey, file}` (CDN file); `attachment-map.json` entries are `{seedKey, slug}` (gallery page `/tr/galeri/<slug>`). The maps are baked into the image, so they must match the promoted DB **before the release build**. |
 
 **Prod settings are by design, not by accident.** `SITE_ENV=production` is the only value that makes robots allow crawling and turns noindex off. Canonicals go to `www`. With `SITE_ENV=production` an empty `SITE_BASIC_AUTH` means no auth: `proxy.ts` fails closed only for `development`. Dev keeps `SITE_ENV=development`, so it stays noindex.
 
@@ -94,14 +94,16 @@ r2env() { set -a; . "$W/.dokploy-prod.env"; set +a
 
 ### 1D. Data pre-checks and R2 bulk copy
 
-15. [ ] **[Claude]** #190 is merged and deployed to dev, and every legacy-map target exists on dev (public HEAD requests, read-only):
+15. [ ] **[Claude]** #193 (#190) is merged and deployed to dev, and every legacy-map target answers 200 on dev (public HEAD requests, read-only). This is the **legacy targets check**, run again on prod in 2G and at go/no-go:
     ```bash
-    G="git -C $W/kefkenahsap"; $G fetch -q origin
-    { $G show origin/development:src/lib/legacy/media-map.json; $G show origin/development:src/lib/legacy/attachment-map.json; } |
-      jq -r '.[].file' | sort -u |
-      xargs -P 8 -I{} curl -s -o /dev/null -w '%{http_code} {}\n' 'https://cdn.kefkenahsap.com/dev/{}' | awk '$1!=200'   # must print nothing
+    G="git -C $W/kefkenahsap"; $G fetch -q origin; S=$(mktemp -d)
+    $G show origin/development:src/lib/legacy/media-map.json > $S/media.json; $G show origin/development:src/lib/legacy/attachment-map.json > $S/att.json
+    CDN=https://cdn.kefkenahsap.com/dev; SITE=https://development.kefkenahsap.com
+    jq -r '.[].file' $S/media.json | sort -u | xargs -P 8 -I{} curl -s -o /dev/null -w '%{http_code} {}\n' "$CDN/{}" | awk '$1!=200'          # must print nothing
+    jq -r '.[].slug' $S/att.json   | sort -u | xargs -P 8 -I{} curl -s -o /dev/null -w '%{http_code} {}\n' "$SITE/tr/galeri/{}" | awk '$1!=200'  # must print nothing
+    rm -r $S
     ```
-    On 2026-10-17 this printed the 8 files of #190.
+    Before #193 this found 49 broken targets; after it, 0.
 15b. [ ] **[Claude] APPROVAL (creates and drops a scratch DB on the dev Postgres; dev data untouched).** Rehearse 2C + 2D.9 on real data, so a leftover dev URL in old versions or rich text shows up now, not during the freeze:
     ```bash
     read -rp 'owner admin email: ' OWNER; scp "$W/kefkenahsap/scripts/launch/promote-sanitize.sql" senrecep:/tmp/promote.sql
@@ -135,6 +137,13 @@ r2env() { set -a; . "$W/.dokploy-prod.env"; set +a
    ```bash
    bun scripts/launch/smoke.ts https://development.kefkenahsap.com --media-base https://cdn.kefkenahsap.com/dev
    ```
+
+2b. [ ] **[Claude]** Refresh the legacy maps from the **dev** DB, before the dump and before the release build (the maps are baked into the image). Through the dev DB tunnel (`ssh -f -N -L 15432:<dev pg ip>:5432 senrecep`), in a clean worktree of `origin/development` with the dev env:
+   ```bash
+   SEED_REMOTE=1 bun run payload run scripts/seed/legacy-maps.ts     # reads only; exits 1 and writes nothing if a photo can't be found
+   git diff --stat src/lib/legacy/                                   # empty → go on
+   ```
+   A non-empty diff (owner photo edits since #193): commit it on a branch, PR to `development`, merge (the one allowed freeze exception), let dev redeploy, re-run 1D.15. Then continue.
 
 ### 2B. Release and first prod deploy
 
@@ -208,7 +217,7 @@ r2env() { set -a; . "$W/.dokploy-prod.env"; set +a
     rclone lsf -R --files-only r2:kefkenahsap/dev | sort > $S/dev.txt
     comm -13 $S/dev.txt $S/root.txt > $S/extra.txt; wc -l < $S/extra.txt   # files deleted on dev after the bulk copy; still public at the root
     # if not 0 (APPROVAL): rclone delete r2:kefkenahsap --files-from $S/extra.txt --s3-no-check-bucket
-    jq -r '.[].file' "$W/kefkenahsap/src/lib/legacy/"{media,attachment}-map.json | sort -u | comm -23 - $S/root.txt   # must print nothing
+    git -C "$W/kefkenahsap" show origin/main:src/lib/legacy/media-map.json | jq -r '.[].file' | sort -u | comm -23 - $S/root.txt   # must print nothing
     wc -l $S/db.txt $S/root.txt; rm -r $S; exit
     ```
     If `media.upload.imageSizes` gained a size since this runbook was written, add its `sizes_<name>_filename` to the array.
@@ -234,7 +243,14 @@ r2env() { set -a; . "$W/.dokploy-prod.env"; set +a
     ```
 13. [ ] **[Owner]** Log in at http://localhost:13000/admin with the dev credentials, then **change the password at once** (Account). The dev password was exposed in chat. If decision 2 says so, create the editor user. Then check:
     `curl -s http://localhost:13000/api/users/init` → `{"initialized":true}`. This must hold before any domain is added.
-14. [ ] **[Claude]** Smoke-test through the tunnel. Canonicals must be on www, robots must allow crawling, and the CDN root files must exist:
+13b. [ ] **[Claude]** The baked-in maps match the **prod** DB. Same command, against prod through the tunnel, in a clean worktree of `origin/main` (the release commit), with no `.env`:
+    ```bash
+    bash; set -a; . "$W/.dokploy-prod.env"; set +a; export DATABASE_URL="postgres://kefken:$POSTGRES_PASSWORD@127.0.0.1:15432/kefken" SEED_REMOTE=1
+    bun run payload run scripts/seed/legacy-maps.ts && git diff --stat src/lib/legacy/; exit
+    ```
+    **A non-empty diff means stop**: the image redirects to files prod doesn't have. Find out why (an edit after the 2b refresh), fix on dev, redo from 2b. Then `git checkout src/lib/legacy/`.
+14. [ ] **[Claude]** Legacy targets check on prod: 1D.15 with `CDN=https://cdn.kefkenahsap.com SITE=http://localhost:13000` and the maps from `origin/main`. Both lines print nothing.
+14b. [ ] **[Claude]** Smoke-test through the tunnel. Canonicals must be on www, robots must allow crawling, and the CDN root files must exist:
     ```bash
     bun scripts/launch/smoke.ts http://localhost:13000 --site https://www.kefkenahsap.com --production
     ```
@@ -280,7 +296,15 @@ TLS: Cloudflare proxies the site, and the zone is on SSL mode **Full** (not stri
 
 The owner says "go" only when every box is ticked:
 - [ ] 1A sign-offs done (native review, lawyer, checklist), or explicitly waived by the owner.
-- [ ] #190 closed, and 1D.15 and 2E print nothing.
+- [ ] #190 closed (#193 merged); 2b and 2G.13b diffs empty; 2E prints nothing.
+- [ ] **Legacy targets check = 0 broken** (was 49 before #193), against the prod origin before DNS:
+  ```bash
+  M=$(mktemp); git -C "$W/kefkenahsap" show origin/main:src/lib/legacy/media-map.json > $M
+  jq -r '.[].file' $M | sort -u | xargs -P 8 -I{} curl -s -o /dev/null -w '%{http_code} {}\n' 'https://cdn.kefkenahsap.com/{}' | awk '$1!=200'   # nothing
+  git -C "$W/kefkenahsap" show origin/main:src/lib/legacy/attachment-map.json | jq -r '.[].slug' | sort -u |
+    xargs -P 8 -I{} curl -sk -o /dev/null -w '%{http_code} {}\n' --resolve www.kefkenahsap.com:443:45.196.28.107 'https://www.kefkenahsap.com/tr/galeri/{}' | awk '$1!=200'   # nothing
+  rm $M
+  ```
 - [ ] 2G smoke and full legacy map green. Users = 1 (+ editor), password rotated, `/api/users/init` true.
 - [ ] First backup is in R2 (2G.17).
 - [ ] Freeze held: no dev merges or admin edits since the 2C dump. Otherwise redo 2C–2G (≈30 min).
