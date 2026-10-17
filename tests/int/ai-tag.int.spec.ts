@@ -133,9 +133,12 @@ describe('tagImage job', () => {
       if (args.locale === 'de') throw new Error('simulated DE write failure')
       return update(args as never)
     }) as never)
+    // One job, run by id both times: its retry is what fills the rest. A second job for the same photo would run in
+    // parallel with the retry, and Payload writes every locale of the doc it read on each update, so one job's later
+    // write could put back the empty DE the other had just filled (the flake in CI after #194).
+    const job = await payload.jobs.queue({ task: 'tagImage', input: { mediaId: String(m.id) } })
     try {
-      await payload.jobs.queue({ task: 'tagImage', input: { mediaId: String(m.id) } })
-      await payload.jobs.run()
+      await payload.jobs.runByID({ id: job.id })
     } finally {
       spy.mockRestore()
     }
@@ -143,8 +146,8 @@ describe('tagImage job', () => {
     expect(half.alt ?? null).toBeNull()
     expect(half.aiSuggestion ?? null).toBeNull()
 
-    await payload.jobs.queue({ task: 'tagImage', input: { mediaId: String(m.id) } })
-    await payload.jobs.run()
+    const { jobStatus } = await payload.jobs.runByID({ id: job.id })
+    expect(jobStatus?.[String(job.id)]?.status).toBe('success')
     const de = await payload.findByID({ collection: 'media', id: m.id, locale: 'de', fallbackLocale: false, depth: 0 })
     expect(de.alt).toBe(SUGGESTION.alt.de)
     expect((de.aiSuggestion as { promptVersion: string }).promptVersion).toBe('tagImage@4')
