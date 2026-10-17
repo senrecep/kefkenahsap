@@ -80,13 +80,14 @@ test.describe('page metadata', () => {
     expect((await head(request, '/en/search')).robots).toBe('noindex, follow')
   })
 
-  test('OG images are real 1200×630 JPEGs (default card and per photo)', async ({ request, baseURL }) => {
+  test('OG images are real 1200×630 images (branded PNG card, JPEG per photo)', async ({ request, baseURL }) => {
     const image = await firstImagePath(request)
     for (const path of ['/tr', image]) {
       const og = new URL((await head(request, path)).ogImage!)
       const res = await request.get(`${baseURL}${og.pathname}${og.search}`)
       expect(res.status(), path).toBe(200)
-      expect(res.headers()['content-type']).toBe('image/jpeg')
+      // The default card is the generated per-locale PNG (#199); photo pages get a JPEG crop.
+      expect(res.headers()['content-type'], path).toBe(path === '/tr' ? 'image/png' : 'image/jpeg')
       const img = sharp(await res.body())
       const meta = await img.metadata()
       expect([meta.width, meta.height], path).toEqual([1200, 630])

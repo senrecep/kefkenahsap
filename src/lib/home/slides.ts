@@ -7,7 +7,7 @@ const isMedia = (v: unknown): v is WithId => typeof v === 'object' && v !== null
 const idOf = (v: unknown) => (isMedia(v) ? v.id : typeof v === 'number' ? v : undefined)
 
 /**
- * The hero's photos in order: its image first (the LCP photo, og.jpg's source and mobileImage's partner), then its
+ * The hero's photos in order: its image first (the LCP photo and mobileImage's partner), then its
  * `slides` (a hasMany upload). Read with overrideAccess: false, a photo the public may not see arrives as a bare id and
  * is skipped; each photo shows once.
  */

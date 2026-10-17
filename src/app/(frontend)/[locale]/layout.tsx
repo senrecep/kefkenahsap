@@ -15,7 +15,7 @@ import { getSiteSettings } from '@/lib/data/site'
 import { ogLocale } from '@/lib/i18n/published'
 import { siteUrl } from '@/lib/seo/alternates'
 import { businessJsonLd, websiteJsonLd } from '@/lib/seo/jsonld'
-import { DEFAULT_OG_IMAGE } from '@/lib/seo/metadata'
+import { siteOgImageFor } from '@/lib/seo/page-metadata'
 import './styles.css'
 
 // Self-hosted (OFL, Latin subset, Montserrat 600 / Source Sans 3 400–600; src/app/fonts/README.md): no Google Fonts at build.
@@ -36,12 +36,13 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params
   if (!hasLocale(routing.locales, locale)) return {}
   const settings = await getSiteSettings(locale)
+  const ogImage = await siteOgImageFor(locale, settings.defaultOgImage)
   return {
     metadataBase: new URL(siteUrl()),
     title: { template: `%s | ${settings.companyName}`, default: settings.companyName },
     ...(settings.defaultDescription ? { description: settings.defaultDescription } : {}),
-    openGraph: { type: 'website', siteName: settings.companyName, locale: ogLocale(locale), images: [DEFAULT_OG_IMAGE] },
-    twitter: { card: 'summary_large_image' },
+    openGraph: { type: 'website', siteName: settings.companyName, locale: ogLocale(locale), images: [ogImage] },
+    twitter: { card: 'summary_large_image', images: [ogImage] },
   }
 }
 
@@ -59,6 +60,7 @@ export default async function LocaleLayout({
   const settings = await getSiteSettings(locale)
   const site = siteUrl().replace(/\/$/, '')
   const home = `${site}/${locale}`
+  const ogImage = await siteOgImageFor(locale, settings.defaultOgImage)
   return (
     <html lang={locale} dir={localeDir(locale)} className={`${montserrat.variable} ${sourceSans.variable} ${montserratCyr.variable} ${sourceSansCyr.variable} ${notoArabic.variable}`}>
       <body className="min-h-dvh antialiased">
@@ -72,7 +74,7 @@ export default async function LocaleLayout({
         <MobileActionBar locale={locale as Locale} />
         <JsonLd
           data={[
-            businessJsonLd(settings, { site, url: home, logo: `${site}/brand/logo.png`, image: `${site}${DEFAULT_OG_IMAGE.url}` }),
+            businessJsonLd(settings, { site, url: home, logo: `${site}/brand/logo.png`, image: `${site}${ogImage.url}` }),
             websiteJsonLd({ name: settings.companyName, site, url: home, locale }),
           ]}
         />
