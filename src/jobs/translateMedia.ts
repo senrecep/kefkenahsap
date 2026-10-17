@@ -8,8 +8,11 @@ export const translateMediaTask: TaskConfig<'translateMedia'> = {
   retries: 1,
   inputSchema: [{ name: 'mediaId', type: 'text', required: true }],
   outputSchema: [{ name: 'result', type: 'text' }],
-  // One run per photo at a time, and rapid edits collapse into the latest queued job: it reads the photo when it runs.
-  concurrency: { key: ({ input }) => `translateMedia:${input.mediaId}`, exclusive: true, supersedes: true },
+  // Shares tagImage's key: both rewrite every locale and i18nSync of the photo, so they must not run at once. No
+  // `supersedes` (it would delete a queued tagImage); a duplicate run is harmless, it reads its work from provenance.
+  // shortcut: the two queues' crons can pick both jobs in the same instant (Payload checks running keys before
+  // claiming), a rare lost write; move translateMedia to the default queue if that shows up.
+  concurrency: ({ input }) => `media:${input.mediaId}`,
   handler: async ({ input, req }) => {
     const r = await syncMediaLocales({ payload: req.payload, req, id: input.mediaId, force: false })
     // Refusals (budget, model failure, photo deleted) are recorded on the photo; the job itself is done.

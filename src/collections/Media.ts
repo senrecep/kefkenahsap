@@ -221,9 +221,12 @@ const trackTranslations: CollectionBeforeChangeHook = async ({ data, operation, 
   let sync = (originalDoc?.i18nSync ?? null) as I18nSync | null
   const changed = operation === 'update' && originalDoc ? changedFields(data, originalDoc) : []
   if (changed.length && req.locale === routing.defaultLocale) {
-    // No `req`: Payload would switch req.locale (see publishGate).
-    const settings = await req.payload.findGlobal({ slug: 'aiSettings', depth: 0 })
-    if ((process.env.OPENROUTER_API_KEY || isFakeAi()) && settings.enabled !== false) {
+    // No `req`: Payload would switch req.locale (see publishGate). A failed read counts as AI off: the save goes on.
+    const settings = await req.payload.findGlobal({ slug: 'aiSettings', depth: 0 }).catch((err: unknown) => {
+      req.payload.logger.warn({ err }, 'media: aiSettings unreadable; not queueing translateMedia')
+      return null
+    })
+    if ((process.env.OPENROUTER_API_KEY || isFakeAi()) && settings && settings.enabled !== false) {
       sync = { ...sync, pending: [...new Set([...(sync?.pending ?? []), ...changed])] }
       ;((req.context[TRANSLATE_QUEUED] ??= []) as unknown[]).push(originalDoc!.id)
     } else {

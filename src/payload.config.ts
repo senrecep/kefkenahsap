@@ -140,7 +140,7 @@ export default buildConfig({
       { cron: '* * * * *', queue: 'default' },
       { cron: '* * * * *', queue: 'translateMedia' },
     ],
-    // translateMedia: one job per photo at a time, newer edits supersede queued ones (adds payload_jobs.concurrency_key).
+    // tagImage + translateMedia: one job per photo at a time (adds payload_jobs.concurrency_key).
     enableConcurrencyControl: true,
     // Never under Vitest: tests run the queue themselves, and a cron tick between a test's queue() and run() took the job
     // away from it (flaky ai-tag int test, #192).

@@ -16,6 +16,8 @@ export const tagImageTask: TaskConfig<'tagImage'> = {
   retries: 1,
   inputSchema: [{ name: 'mediaId', type: 'text', required: true }],
   outputSchema: [{ name: 'result', type: 'text' }],
+  // #203: never at the same time as translateMedia on the same photo (same key).
+  concurrency: ({ input }) => `media:${input.mediaId}`,
   handler: async ({ input, req }) => {
     const { payload } = req
     const settings = await payload.findGlobal({ slug: 'aiSettings', req })

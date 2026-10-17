@@ -50,14 +50,13 @@ test('Galeri: TR edit shows the translation state; "Diğer dillere yeniden çevi
       expect(de.alt).toBe('[DE] Çam kamelya, oturma grubu ve çiçeklik')
       expect(de.title).toBe('[DE] Bahçe kamelyası')
       if (name === 'mobile' && process.env.UPDATE_SCREENSHOTS) await page.screenshot({ path: 'docs/screens/admin-galeri-diller-mobile.png', fullPage: true })
-      if (name === 'desktop') {
-        // The same state and button in the photo's edit view.
-        await page.goto(`/admin/collections/media/${photo.id}`)
-        const panel = page.locator('.ai-action', { hasText: 'Diğer diller' })
-        await expect(panel).toContainText('Diller: güncel')
-        await expect(panel.getByRole('button', { name: 'Diğer dillere yeniden çevir' })).toBeEnabled()
-        if (process.env.UPDATE_SCREENSHOTS) await page.screenshot({ path: 'docs/screens/admin-media-diller-desktop.png' })
-      }
+      // The same state and button in the photo's edit view.
+      await page.goto(`/admin/collections/media/${photo.id}`)
+      await expect(page.locator('#field-title')).toHaveValue('Bahçe kamelyası', { timeout: 30_000 })
+      const panel = page.locator('.ai-action', { hasText: 'Diğer diller' })
+      await expect(panel).toContainText('Diller: güncel')
+      await expect(panel.getByRole('button', { name: 'Diğer dillere yeniden çevir' })).toBeEnabled()
+      if (process.env.UPDATE_SCREENSHOTS) await page.screenshot({ path: `docs/screens/admin-media-diller-${name}.png`, fullPage: name === 'mobile' })
       await page.context().close()
     }
   } finally {
