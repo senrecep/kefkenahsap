@@ -9,6 +9,7 @@ import sharp from 'sharp'
 
 import config from '@/payload.config'
 import { SEED_CATEGORIES } from '@/seed/categories'
+import type { LegacyMaps } from '@/lib/legacy/resolve'
 import { fileKey, orderForCategory, uploadsForPhoto } from '@/seed/order'
 
 import { seedReferences } from './references'
@@ -58,8 +59,8 @@ console.log(await seedReferences(payload))
 const ctx = () => ({ skipAi: true })
 const tmp = mkdtempSync(path.join(os.tmpdir(), 'kefken-seed-'))
 
-const mediaMap: Record<string, { file: string; category: string }> = {}
-const attachmentMap: Record<string, { file: string; category: string }> = {}
+const mediaMap: LegacyMaps['media'] = {}
+const attachmentMap: LegacyMaps['attachments'] = {}
 // Names already taken in the DB (earlier or partial runs), so a new upload never collides.
 const existingMedia = await payload.find({ collection: 'media', limit: 0, pagination: false, depth: 0, select: { seoFilename: true } })
 const usedNames = new Set(existingMedia.docs.map((d) => d.seoFilename).filter(Boolean) as string[])
@@ -106,6 +107,8 @@ for (const [index, cat] of SEED_CATEGORIES.entries()) {
 
     const found = await payload.find({ collection: 'media', locale: 'en', fallbackLocale: false, where: { seedKey: { equals: seedKey } }, limit: 1, depth: 0 })
     let stored = found.docs[0]?.filename ?? undefined
+    // The gallery slug; a replaced file (taxonomy-remedy.ts) is stored as `<slug>-1.webp`, so it can differ from `stored`.
+    let slug = found.docs[0]?.seoFilename ?? undefined
     if (!found.docs.length) {
       // SEO file name, unique across the whole set.
       let name = meta.seoFilename
@@ -141,7 +144,8 @@ for (const [index, cat] of SEED_CATEGORIES.entries()) {
         data: { title: meta.title.en, alt: meta.alt.en, caption: meta.caption.en },
       })
       stored = doc.filename ?? undefined
-      // The redirect map derives the gallery slug from the file name.
+      slug = name
+      // A fresh upload keeps its SEO name; a suffix here means a name clash in the bucket.
       if (stored !== `${name}.webp`) throw new Error(`stored as ${stored}, expected ${name}.webp`)
       await verifyStored(stored, upload, { width, height }, servedDigests)
       created++
@@ -154,8 +158,8 @@ for (const [index, cat] of SEED_CATEGORIES.entries()) {
 
     for (const m of stored ? uploads : []) {
       const key = `${uploadDir(m.source_url)}/${fileKey(base(m.source_url))}`
-      mediaMap[key] ??= { file: stored!, category: cat.key }
-      attachmentMap[new URL(m.link).pathname] ??= { file: stored!, category: cat.key }
+      mediaMap[key] ??= { file: stored!, seedKey }
+      if (slug) attachmentMap[new URL(m.link).pathname] ??= { slug, seedKey }
     }
   }
   console.log(`  ${cat.key}: ${ordered.length} images`)

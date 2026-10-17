@@ -12,6 +12,7 @@
 // --dry-run writes nothing; a non-local database needs --yes; SITE_ENV=production is refused.
 // KEFKEN_WORKSPACE = the folder holding kefken-data/ and image-work/ (default ../..).
 // Run: bun run payload run scripts/seed/taxonomy-remedy.ts [-- --dry-run | --yes]
+// A replaced file gets a new name (`<name>-1.webp`): run scripts/seed/legacy-maps.ts afterwards and commit the maps (#190).
 import { copyFileSync, existsSync, mkdtempSync, rmSync } from 'node:fs'
 import os from 'node:os'
 import path from 'node:path'

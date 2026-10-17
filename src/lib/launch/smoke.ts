@@ -2,6 +2,9 @@
  * Launch smoke checks (#53): which URLs to hit and what each must answer. Pure; the CLI is scripts/launch/smoke.ts.
  * Legacy samples and targets come from PLAN §5.2 and the committed legacy maps (seed #31), not from the resolver.
  */
+import attachments from '../legacy/attachment-map.json'
+import media from '../legacy/media-map.json'
+
 export type Check = {
   /** Path on the base URL, or an absolute URL (the CDN file a legacy redirect points to). */
   path: string
@@ -16,7 +19,9 @@ export type Check = {
 }
 export type Answer = { status: number; location: string | null; body: string }
 
-const LEGACY_IMAGE = 'bahce-ahsap-deck-platformu.webp'
+// From the committed maps, so a replaced file (#190) moves the check with it.
+const LEGACY_IMAGE = media['2018/09/1-1']!.file
+const LEGACY_SLUG = attachments['/deck-ve-zeminler/1-6/']!.slug
 
 export function smokeChecks(opts: { site: string; mediaBase: string; production: boolean }): Check[] {
   const site = opts.site.replace(/\/$/, '')
@@ -33,7 +38,7 @@ export function smokeChecks(opts: { site: string; mediaBase: string; production:
     { path: '/ireko-teak/', status: 301, location: '/tr/ireko-teak' },
     { path: '/kefken-ahsap-dekorasyon/', status: 301, location: '/tr' },
     { path: '/wp-content/uploads/2018/09/1-1-400x400.jpg', status: 301, location: media },
-    { path: '/deck-ve-zeminler/1-6/', status: 301, location: '/tr/galeri/bahce-ahsap-deck-platformu' },
+    { path: '/deck-ve-zeminler/1-6/', status: 301, location: `/tr/galeri/${LEGACY_SLUG}` },
     // An upload the new site has no match for (Turkish characters, encoded).
     { path: '/wp-content/uploads/2021/02/kap%C4%B1dolap2.jpeg', status: 410 },
     // The redirect target must exist: catches an unseeded media bucket/prefix.

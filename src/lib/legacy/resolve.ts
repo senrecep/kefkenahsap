@@ -1,12 +1,12 @@
 import { CATEGORY_RENAMES } from '@/seed/categories'
 import { fileKey } from '@/seed/order'
 
-export type LegacyTarget = { file: string; category: string }
+/** `seedKey` names the photo for good; `file` (CDN) and `slug` (gallery) are refreshed from it (retarget.ts). */
 export type LegacyMaps = {
-  /** "YYYY/MM/<fileKey>" of the WP original → seeded file */
-  media: Record<string, LegacyTarget>
-  /** WP attachment page pathname → seeded file */
-  attachments: Record<string, LegacyTarget>
+  /** "YYYY/MM/<fileKey>" of the WP original → the photo's current CDN file */
+  media: Record<string, { file: string; seedKey: string }>
+  /** WP attachment page pathname → the photo's gallery slug (its SEO file name, which may differ from the CDN file) */
+  attachments: Record<string, { slug: string; seedKey: string }>
   /** Every attachment page the old site had ("/…/" form); unmapped ones answer 410 */
   attachmentPaths: ReadonlySet<string>
 }
@@ -68,7 +68,7 @@ export function resolveLegacy(pathname: string, search: string, maps: LegacyMaps
   if (PAGES[trimmed]) return redirect(PAGES[trimmed] + search)
   const withSlash = `/${trimmed}/`
   const hit = maps.attachments[withSlash]
-  if (hit) return redirect(`/tr/galeri/${hit.file.replace(/\.[a-z0-9]+$/i, '')}`)
+  if (hit) return redirect(`/tr/galeri/${hit.slug}`)
   if (maps.attachmentPaths.has(withSlash)) return { kind: 'gone' }
   return { kind: 'pass' }
 }
