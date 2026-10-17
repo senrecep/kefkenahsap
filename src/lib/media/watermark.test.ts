@@ -1,7 +1,7 @@
 import sharp from 'sharp'
 import { describe, expect, it } from 'vitest'
 
-import { applyWatermark, cleanOriginal, fitFontSize, isStampable, watermarkAlphas, watermarkLayout } from './watermark'
+import { applyWatermark, fitFontSize, isStampable, watermarkAlphas, watermarkLayout } from './watermark'
 
 // Expected sizes come from the pipeline itself: kefken-ahsap-image-pipeline/scripts/24_watermark.py `fit_font_size`
 // run under Pillow 11 + raqm with FONT_PATH pointed at src/app/fonts/Montserrat.woff2 decompressed to TTF.
@@ -91,34 +91,5 @@ describe('isStampable', () => {
     // Two-frame 8×8 animated WebP written by Pillow (sharp's own animated join writes a single frame here).
     const animated = Buffer.from('UklGRoQAAABXRUJQVlA4WAoAAAACAAAABwAABwAAQU5JTQYAAAAAAAAAAABBTk1GKAAAAAAAAAAAAAcAAAcAAGQAAAJWUDhMDwAAAC8HwAEABxD9j/4HIqL/AQBBTk1GKAAAAAAAAAAAAAcAAAcAAGQAAABWUDhMDwAAAC8HwAEABxDR//4HIqL/AQA=', 'base64')
     expect(await isStampable(animated, 'image/webp')).toBe(false)
-  })
-})
-
-describe('cleanOriginal', () => {
-  const photo = (width: number, height: number) =>
-    sharp({ create: { width, height, channels: 3, background: { r: 120, g: 90, b: 60 } } }).jpeg().toBuffer()
-  const size = async (buf: Buffer) => {
-    const meta = await sharp(buf).metadata()
-    return [meta.width, meta.height, meta.format]
-  }
-
-  it.each([
-    [4000, 3000, 2560, 1920], // long side over 2560 → downscaled, aspect kept
-    [3000, 4000, 1920, 2560], // portrait: the long side is the height
-    [2560, 1440, 2560, 1440], // exactly at the cap → untouched size
-    [800, 600, 800, 600], // small → never upscaled
-  ])('%i×%i → %i×%i WebP', async (w, h, ow, oh) => {
-    expect(await size(await cleanOriginal(await photo(w, h)))).toEqual([ow, oh, 'webp'])
-  })
-
-  it('applies EXIF orientation and keeps the ICC profile', async () => {
-    const rotated = await sharp({ create: { width: 600, height: 800, channels: 3, background: '#864' } })
-      .withIccProfile('p3')
-      .jpeg()
-      .withMetadata({ orientation: 6 })
-      .toBuffer()
-    const meta = await sharp(await cleanOriginal(rotated)).metadata()
-    expect([meta.width, meta.height, meta.orientation ?? 1]).toEqual([800, 600, 1])
-    expect(meta.icc).toBeDefined()
   })
 })

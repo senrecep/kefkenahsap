@@ -52,7 +52,7 @@
     "retention": {
       "title": "Wie lange speichern wir Ihre Daten?",
       "leads": "<b>Anfragen und angehängte Fotos:</b> werden 2 Jahre nach Eingang automatisch gelöscht.",
-      "backups": "<b>Sicherungen:</b> Datenbank und Fotos werden täglich gesichert. Auf dem Server bleiben die Datenbanksicherungen der letzten 14 Tage und die Fotosicherungen der letzten 3 Tage, in der externen Kopie beide für die letzten 30 Tage. Eine gelöschte Anfrage verschwindet spätestens nach 30 Tagen auch aus den Sicherungen.",
+      "backups": "<b>Sicherungen:</b> Datenbank und Fotos werden täglich gesichert. Die Sicherungen werden in einen externen Speicher (Cloudflare R2) kopiert und dort 30 Tage aufbewahrt. Eine Kopie bleibt nur dann auf dem Server, wenn das Kopieren fehlschlägt, und dann höchstens 14 Tage. Eine gelöschte Anfrage verschwindet spätestens nach 30 Tagen auch aus den Sicherungen.",
       "mail": "<b>Benachrichtigungs-E-Mails und WhatsApp-Nachrichten:</b> werden 2 Jahre aufbewahrt und dann gelöscht. Auf Wunsch löschen wir sie früher.",
       "ga": "<b>Google-Analytics-Daten:</b> werden bei Google höchstens 14 Monate gespeichert.",
       "errors": "<b>Fehlerprotokolle:</b> werden nach 30 Tagen automatisch gelöscht.",

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Copy one Docker volume into another and prove it: every source file must exist in the target with the same
-# SHA-256 (docs/LAUNCH.md 2F, media-originals dev → prod). Never deletes. Run ON the server:
+# SHA-256 (generic; no longer used by docs/LAUNCH.md since #204). Never deletes. Run ON the server:
 #   ssh senrecep bash -s -- <source volume> <target volume> < scripts/launch/copy-volume.sh
 # Uses postgres:17-alpine (already on the server for the stacks) as a busybox shell; no image is pulled.
 set -euo pipefail

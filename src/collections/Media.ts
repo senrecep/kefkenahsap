@@ -1,5 +1,3 @@
-import { mkdir, readdir, rm, writeFile } from 'fs/promises'
-import path from 'path'
 import sharp from 'sharp'
 import {
   APIError,
@@ -22,7 +20,7 @@ import { createCdnPurger, mediaPublicURLs } from '@/lib/media/cdn-purge'
 import { createReporter } from '@/lib/observability/report'
 import { checkPublishable, type MediaStatus } from '@/lib/media/publish'
 import { approvalTags, type TagRef } from '@/lib/media/taxonomy'
-import { applyWatermark, cleanOriginal, isStampable } from '@/lib/media/watermark'
+import { applyWatermark, isStampable } from '@/lib/media/watermark'
 import { revalidateAfterChange, revalidateAfterDelete } from '@/hooks/revalidate'
 
 // WebP only: sources are already WebP; AVIF would double storage and encode time (PLAN §3.3).
@@ -35,12 +33,6 @@ export const MEDIA_WIDTHS = [320, 480, 640, 800, 960, 1280, 1920] as const
 // moves mobile LCP by ~1 s. q70 at phone scale was indistinguishable from today's w960 in a side-by-side.
 export const PORTRAIT = { width: 400, height: 711, quality: 70 } as const
 
-// Clean originals of stamped uploads (#169): a private server volume like lead photos, never the public CDN bucket and
-// never served, so the mark can be re-applied or removed later. Named <stored stem>.webp: stored downscaled to keep
-// the shared server disk small (cleanOriginal). Older ones kept the uploaded extension; removeOriginal matches by stem.
-export const MEDIA_ORIGINALS_DIR = process.env.MEDIA_ORIGINALS_DIR || path.resolve(process.cwd(), 'data/media-originals')
-const stemOf = (filename: string) => path.parse(filename).name
-
 /**
  * #169: stamp "kefkenahsap.com" on a newly uploaded file. beforeOperation runs before Payload's generateFileData, which
  * writes the main file and every image size from req.file, so all of them inherit the one mark. Saves without a new
@@ -51,10 +43,10 @@ const stemOf = (filename: string) => path.parse(filename).name
 const stampUpload: CollectionBeforeOperationHook = async ({ args, operation, req }) => {
   const file = req.file
   if ((operation !== 'create' && operation !== 'update') || !file?.data?.length) return args
-  // One file for many documents would share one stored original and one private copy: not supported.
+  // One file for many documents is not supported.
   if (operation === 'update' && 'where' in args && args.where) throw new APIError('Dosya yalnızca tek bir görselde değiştirilebilir.', 400, null, true)
   const data = (args.data ??= {}) as { watermark?: string | null; skipWatermark?: boolean }
-  // Any new file on an existing document replaces its clean original (removed after the save, even when not stamped).
+  // Any new file on an existing document replaces the old one (purgeReplacedFile).
   if (operation === 'update') req.context.mediaFileReplaced = true
   // Seeds/imports declare files that already carry the pipeline's mark. On update the admin echoes the stored state,
   // which describes the replaced file, not the new one.
@@ -64,50 +56,17 @@ const stampUpload: CollectionBeforeOperationHook = async ({ args, operation, req
     return args
   }
   const stamped = await applyWatermark(file.data, file.mimetype)
-  req.context.mediaOriginal = await cleanOriginal(file.data)
+  req.context.mediaStamped = true
   file.data = stamped
   file.size = stamped.length
   data.watermark = 'applied'
   return args
 }
 
-/** A new document is 'applied' only if this request stamped it: a duplicate copies the marked file, not its clean original. */
+/** A new document is 'applied' only if this request stamped it: a duplicate copies the already marked file. */
 const truthfulWatermark: CollectionBeforeChangeHook = ({ data, operation, req }) => {
-  if (operation === 'create' && data.watermark === 'applied' && !req.context.mediaOriginal) data.watermark = 'already'
+  if (operation === 'create' && data.watermark === 'applied' && !req.context.mediaStamped) data.watermark = 'already'
   return data
-}
-
-/** Removes the clean original(s) stored for `filename`, except `keep` (a file just written under the same stem). */
-async function removeOriginal(filename: string, keep?: string) {
-  const stem = stemOf(filename)
-  const files = await readdir(MEDIA_ORIGINALS_DIR).catch(() => [] as string[])
-  await Promise.all(files.filter((f) => stemOf(f) === stem && f !== keep).map((f) => rm(path.join(MEDIA_ORIGINALS_DIR, f), { force: true })))
-}
-
-/**
- * Keeps the clean upload once the stored filename is known. A failed write throws, so the document row rolls back
- * (the files already uploaded to the bucket may stay behind as orphans). The new original is written before the
- * replaced file's one is removed, so a failure never leaves the document without one.
- */
-const keepOriginal: CollectionAfterChangeHook = async ({ doc, previousDoc, req }) => {
-  const original = req.context.mediaOriginal as Buffer | undefined
-  const replaced = req.context.mediaFileReplaced === true
-  delete req.context.mediaOriginal
-  delete req.context.mediaFileReplaced
-  if (!doc.filename) return doc
-  let written: string | undefined
-  if (original) {
-    written = `${stemOf(doc.filename)}.webp`
-    await mkdir(MEDIA_ORIGINALS_DIR, { recursive: true })
-    await writeFile(path.join(MEDIA_ORIGINALS_DIR, written), original)
-  }
-  if (replaced && previousDoc?.filename) await removeOriginal(previousDoc.filename, written)
-  return doc
-}
-
-const deleteOriginal: CollectionAfterDeleteHook = async ({ doc }) => {
-  if (doc.filename) await removeOriginal(doc.filename)
-  return doc
 }
 
 let purgeSkipLogged = false
@@ -121,7 +80,7 @@ function queuePurge(req: PayloadRequest, urls: string[]) {
 }
 
 /**
- * A new file (flag set by stampUpload; read before keepOriginal clears it) → every previous URL: the old objects are
+ * A new file (flag set by stampUpload) → every previous URL: the old objects are
  * deleted, or (same name) now hold other content. Otherwise only URLs that disappeared (admin crop/focal regeneration
  * under new names); added sizes purge nothing.
  */
@@ -129,7 +88,10 @@ const purgeReplacedFile: CollectionAfterChangeHook = ({ doc, operation, previous
   if (operation !== 'update' || !previousDoc) return doc
   const before = mediaPublicURLs(previousDoc, purgeBase())
   const after = new Set(mediaPublicURLs(doc, purgeBase()))
-  queuePurge(req, req.context.mediaFileReplaced === true ? before : before.filter((u) => !after.has(u)))
+  const replaced = req.context.mediaFileReplaced === true
+  // Payload runs afterChange again for the internal follow-up save of the same request: only the first one is the replacement.
+  delete req.context.mediaFileReplaced
+  queuePurge(req, replaced ? before : before.filter((u) => !after.has(u)))
   return doc
 }
 
@@ -256,8 +218,8 @@ export const Media: CollectionConfig = {
     beforeOperation: [stampUpload],
     afterOperation: [sendCdnPurge],
     beforeChange: [truthfulWatermark, placeholder, publishGate, attachSuggestedTags],
-    afterChange: [purgeReplacedFile, keepOriginal, revalidateAfterChange('media', 'categories', 'projects'), queueAiSuggestion],
-    afterDelete: [revalidateAfterDelete('media', 'categories', 'projects'), deleteOriginal, purgeDeletedFile],
+    afterChange: [purgeReplacedFile, revalidateAfterChange('media', 'categories', 'projects'), queueAiSuggestion],
+    afterDelete: [revalidateAfterDelete('media', 'categories', 'projects'), purgeDeletedFile],
   },
   fields: [
     {

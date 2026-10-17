@@ -52,7 +52,7 @@
     "retention": {
       "title": "How long do we keep it?",
       "leads": "<b>Requests and attached photos:</b> deleted automatically 2 years after we receive them.",
-      "backups": "<b>Backups:</b> the database and photos are backed up daily. The server keeps the last 14 days of database backups and the last 3 days of photo backups, the off-server copy the last 30 days of both. A deleted request leaves the backups within 30 days at the latest.",
+      "backups": "<b>Backups:</b> the database and photos are backed up daily. Backups are copied to an off-server store (Cloudflare R2) and kept there for 30 days. A copy stays on the server only if the copy fails, and then for 14 days at most. A deleted request leaves the backups within 30 days at the latest.",
       "mail": "<b>Notification e-mails and WhatsApp messages:</b> kept for 2 years, then deleted. We delete them sooner if you ask.",
       "ga": "<b>Google Analytics data:</b> kept at Google for up to 14 months.",
       "errors": "<b>Error logs:</b> deleted automatically after 30 days.",

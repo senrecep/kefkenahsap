@@ -1,14 +1,12 @@
-// #169: admin uploads get the "kefkenahsap.com" mark on the public file and every size, the clean original stays on the
-// private volume only, and nothing is ever stamped twice.
+// #169: admin uploads get the "kefkenahsap.com" mark on the public file and every size, and nothing is ever stamped twice.
 import { GetObjectCommand, ListObjectsV2Command, S3Client } from '@aws-sdk/client-s3'
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'fs'
+import { mkdirSync, readFileSync, writeFileSync } from 'fs'
 import os from 'os'
 import path from 'path'
 import { getPayload, type Payload } from 'payload'
 import sharp from 'sharp'
 import { afterAll, beforeAll, expect, it } from 'vitest'
 
-import { MEDIA_ORIGINALS_DIR } from '@/collections/Media'
 import config from '@/payload.config'
 
 let payload: Payload
@@ -59,7 +57,7 @@ afterAll(async () => {
   for (const id of created) await payload.delete({ collection: 'media', id }).catch(() => {})
 })
 
-it('stamps the public file and every size, keeps the clean original private', async () => {
+it('stamps the public file and every size, and stores no clean copy', async () => {
   const { doc, clean } = await upload('mark')
   expect(doc.watermark).toBe('applied')
 
@@ -71,41 +69,11 @@ it('stamps the public file and every size, keeps the clean original private', as
   expect(await sharp(w480.data).metadata()).toMatchObject({ width: 480 })
   expect(await diff(clean, w480.data, CENTRE)).toBeGreaterThan(5)
 
-  // The clean (unmarked) original is on the private volume as WebP, at its own size (never upscaled), outside public/
-  // and the bucket.
-  const original = path.join(MEDIA_ORIGINALS_DIR, `${path.parse(doc.filename!).name}.webp`)
-  expect(await sharp(readFileSync(original)).metadata()).toMatchObject({ width: W, height: H, format: 'webp' })
-  expect(await diff(clean, readFileSync(original), CENTRE)).toBeLessThan(2)
-  expect(path.relative(path.resolve('public'), MEDIA_ORIGINALS_DIR).startsWith('..')).toBe(true)
   const stem = path.parse(doc.filename!).name
   const listed = await s3.send(new ListObjectsV2Command({ Bucket: bucket, Prefix: key(stem) }))
   const stored = [doc.filename, ...Object.values(doc.sizes ?? {}).map((s) => s?.filename)].filter(Boolean).map((f) => key(f!))
   const ours = (listed.Contents ?? []).map((o) => o.Key!).filter((k) => path.parse(k).name.replace(/-\d+x\d+$/, '') === stem)
   expect(ours.sort()).toEqual([...new Set(stored)].sort()) // no clean copy next to the stamped ones
-
-  // Deleting the image deletes its clean original too.
-  await payload.delete({ collection: 'media', id: doc.id })
-  created.splice(created.indexOf(doc.id), 1)
-  expect(existsSync(original)).toBe(false)
-})
-
-it('a large upload keeps its clean original downscaled to 2560 px on the long side', async () => {
-  const { doc, clean } = await upload('large', {}, { width: 4000, height: 3000 })
-  const original = readFileSync(path.join(MEDIA_ORIGINALS_DIR, `${path.parse(doc.filename!).name}.webp`))
-  expect(await sharp(original).metadata()).toMatchObject({ width: 2560, height: 1920, format: 'webp' })
-  expect(await diff(clean, original, CENTRE)).toBeLessThan(2)
-})
-
-it('replacing the file removes an older original stored under its uploaded extension', async () => {
-  const { doc } = await upload('legacy')
-  const stem = path.parse(doc.filename!).name
-  const legacy = path.join(MEDIA_ORIGINALS_DIR, `${stem}.jpg`)
-  writeFileSync(legacy, 'old')
-  const next = path.join(DIR, `legacy-next-${Date.now()}.png`)
-  await sharp({ create: { width: 300, height: 200, channels: 3, background: { r: 10, g: 10, b: 10 } } }).png().toFile(next)
-  await payload.update({ collection: 'media', id: doc.id, data: {}, filePath: next, context: { skipAi: true } })
-  expect(existsSync(legacy)).toBe(false)
-  expect(existsSync(path.join(MEDIA_ORIGINALS_DIR, `${stem}.webp`))).toBe(false)
 })
 
 it('re-saving the document never stamps again', async () => {
@@ -118,14 +86,13 @@ it('re-saving the document never stamps again', async () => {
   expect(after.data.equals(before.data)).toBe(true)
 })
 
-it('a duplicate copies the marked file as is and does not claim a clean original', async () => {
+it('a duplicate copies the marked file as is', async () => {
   const { doc } = await upload('dup')
   const copy = await payload.duplicate({ collection: 'media', id: doc.id, context: { skipAi: true } })
   created.push(copy.id)
   expect(copy.watermark).toBe('already')
   const [source, copied] = await Promise.all([object(doc.filename!), object(copy.filename!)])
   expect(await diff(source.data, copied.data, CENTRE)).toBeLessThan(2)
-  expect(existsSync(path.join(MEDIA_ORIGINALS_DIR, `${path.parse(copy.filename!).name}.webp`))).toBe(false)
 })
 
 it('"Filigran ekleme" and files that already carry the mark are stored as uploaded', async () => {
@@ -136,11 +103,10 @@ it('"Filigran ekleme" and files that already carry the mark are stored as upload
     const { doc, clean } = await upload(name, data)
     expect(doc.watermark).toBe(state)
     expect(await diff(clean, (await object(doc.filename!)).data, CENTRE)).toBeLessThan(2)
-    expect(existsSync(path.join(MEDIA_ORIGINALS_DIR, `${path.parse(doc.filename!).name}.webp`))).toBe(false)
   }
 })
 
-it('replacing the file stamps the new one and swaps the private original', async () => {
+it('replacing the file stamps the new one', async () => {
   const { doc } = await upload('replace')
   const next = path.join(DIR, `replace-next-${Date.now()}.png`)
   await sharp({ create: { width: W, height: H, channels: 3, background: { r: 200, g: 190, b: 170 } } }).png().toFile(next)
@@ -148,20 +114,8 @@ it('replacing the file stamps the new one and swaps the private original', async
   const updated = await payload.update({ collection: 'media', id: doc.id, data: { watermark: 'applied' }, filePath: next, context: { skipAi: true } })
   expect(updated.watermark).toBe('applied')
   expect(await diff(readFileSync(next), (await object(updated.filename!)).data, CENTRE)).toBeGreaterThan(5)
-  expect(await diff(readFileSync(next), readFileSync(path.join(MEDIA_ORIGINALS_DIR, `${path.parse(updated.filename!).name}.webp`)), CENTRE)).toBeLessThan(2)
   expect(updated.filename).not.toBe(doc.filename)
-  expect(existsSync(path.join(MEDIA_ORIGINALS_DIR, `${path.parse(doc.filename!).name}.webp`))).toBe(false)
   writeFileSync(next, '') // keep tmp small
-})
-
-it('replacing the file with "Filigran ekleme" still drops the old clean original', async () => {
-  const { doc } = await upload('replace-optout')
-  const next = path.join(DIR, `replace-optout-next-${Date.now()}.png`)
-  await sharp({ create: { width: W, height: H, channels: 3, background: { r: 200, g: 190, b: 170 } } }).png().toFile(next)
-  const updated = await payload.update({ collection: 'media', id: doc.id, data: { skipWatermark: true }, filePath: next, context: { skipAi: true } })
-  expect(updated.watermark).toBe('none')
-  expect(existsSync(path.join(MEDIA_ORIGINALS_DIR, `${path.parse(doc.filename!).name}.webp`))).toBe(false)
-  expect(existsSync(path.join(MEDIA_ORIGINALS_DIR, `${path.parse(updated.filename!).name}.webp`))).toBe(false)
 })
 
 it('a file upload on a bulk update is refused', async () => {

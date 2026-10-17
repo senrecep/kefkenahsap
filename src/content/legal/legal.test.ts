@@ -115,7 +115,7 @@ describe.each(routing.locales)('legal texts in %s', (locale) => {
 
 // The pages show KVKK_TEXT_DATE as "Son güncelleme" and every lead stores it as the version it acknowledged. When a
 // legal.json changes, set KVKK_TEXT_DATE to the day of the change and paste the new hash here.
-const TEXT_STAMP = { date: '2026-10-18', sha256: '454cdf79be6717bc295b9eee738f35880dc520650bd3897842b5c121f5db14e2' }
+const TEXT_STAMP = { date: '2026-10-18', sha256: '51163d86acfacb241ccd0e0bb7167325150a62b5b7ab3505e99c688cc2baeb5f' }
 
 it('KVKK_TEXT_DATE moves with the legal texts', () => {
   const hash = createHash('sha256')

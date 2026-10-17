@@ -2,13 +2,12 @@
 // image-work/remedies.json) with the better source the review found, keeping the record (id, texts, tags, category, order).
 // - A twin from kefken-data, or a WP original that still has one mark: already single-marked, so it is uploaded without
 //   a stamp (skipWatermark, then watermark back to 'already' in a second, file-less update).
-// - A fully clean WP original (`stamp`): the upload hook stamps it once ('applied', the clean original kept privately).
+// - A fully clean WP original (`stamp`): the upload hook stamps it once ('applied').
 // A file is replaced only while the record still holds the exact file the plan was made from (filename + size), so a
 // re-run, or a file the owner has replaced since, is left alone and listed. After each replacement the stored file and
 // every size are fetched back from the CDN bucket and checked; one that fails the check is listed as "replaced but
 // unverified" (a re-run does not replace it again). An unstamped replacement whose 'already' write did not happen
-// (watermark 'none', the source's size) is finished on the next run. A stamp keeps the clean original in
-// MEDIA_ORIGINALS_DIR, which a run with a stamp due must set explicitly (docs/RUNBOOK.md).
+// (watermark 'none', the source's size) is finished on the next run.
 // --dry-run writes nothing; a non-local database needs --yes; SITE_ENV=production is refused.
 // KEFKEN_WORKSPACE = the folder holding kefken-data/ and image-work/ (default ../..).
 // Run: bun run payload run scripts/seed/taxonomy-remedy.ts [-- --dry-run | --yes]
@@ -25,7 +24,7 @@ import { mediaFileURL } from '@/lib/media/url'
 
 import { seedCtx } from './archive-media'
 import { guardTarget } from './i18n'
-import { dry, dryRun, finish, loadPlan, mediaBySeedKey, requireDir, requireOriginalsDir, WORKSPACE } from './taxonomy'
+import { dry, dryRun, finish, loadPlan, mediaBySeedKey, requireDir, WORKSPACE } from './taxonomy'
 
 requireDir('KEFKEN_WORKSPACE', WORKSPACE)
 
@@ -34,7 +33,6 @@ guardTarget(dryRun)
 if (!dryRun && !process.env.MEDIA_PUBLIC_URL) throw new Error('MEDIA_PUBLIC_URL is not set: cannot fetch the replaced files to verify them')
 const payload = await getPayload({ config: await config })
 const media = await mediaBySeedKey(payload, { filename: true, filesize: true, watermark: true, width: true, height: true })
-requireOriginalsDir(plan.remedies.filter((r) => r.stamp && media.get(r.seedKey) && remedyDue(media.get(r.seedKey)!, r.current)).length)
 const tmp = mkdtempSync(path.join(os.tmpdir(), 'kefken-remedy-'))
 
 /** Every stored file of the record (main + sizes) is served with the recorded dimensions. */

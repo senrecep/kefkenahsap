@@ -3,8 +3,7 @@
 // published, except the photos the tagger doubted (category disagrees, confidence ≤ 0.3), which stay `pending`.
 // - A photo not in the database is created (archive-media.ts, keyed on its archive path) in its plan category, as
 //   `pending` until its EN texts are in and the stored file is checked; its status is written last. Files carry the
-//   pipeline's mark already ('already'); the few the plan marks `stamp` are stamped once by the upload hook, which keeps
-//   the clean original in MEDIA_ORIGINALS_DIR: a run with a stamp due must set that folder explicitly (see RUNBOOK).
+//   pipeline's mark already ('already'); the few the plan marks `stamp` are stamped once by the upload hook.
 // - A photo already there (archive.ts made the first 210 pending in their old folder's category, or a run died before
 //   the status write) moves to its plan category while it is still in that folder's category; a pending one is approved
 //   only after its stored file is fetched back and checked. A hidden one, or one the owner filed elsewhere, is left as
@@ -24,7 +23,7 @@ import { importStatus } from '@/lib/media/taxonomy'
 
 import { archiveSeedKey, createArchiveMedia, seedCtx, verifyArchiveFile } from './archive-media'
 import { fillLocales, guardTarget, seedMediaLocales } from './i18n'
-import { categoryIds, concurrency, dry, dryRun, finish, loadArchiveMetas, loadPlan, mediaBySeedKey, requireDir, requireOriginalsDir, SEED, usedMediaNames } from './taxonomy'
+import { categoryIds, concurrency, dry, dryRun, finish, loadArchiveMetas, loadPlan, mediaBySeedKey, requireDir, SEED, usedMediaNames } from './taxonomy'
 
 const ARCHIVE = requireDir('KEFKEN_ARCHIVE', process.env.KEFKEN_ARCHIVE ?? path.resolve(process.cwd(), '../../kefken-data/Kaliteli'))
 const CONCURRENCY = concurrency()
@@ -34,7 +33,6 @@ guardTarget(dryRun)
 const payload = await getPayload({ config: await config })
 const cats = await categoryIds(payload)
 const media = await mediaBySeedKey(payload, { category: true, status: true, filename: true })
-requireOriginalsDir(plan.imports.filter((i) => i.stamp && !media.has(`archive/${i.source}`)).length)
 const idOf = (c: unknown) => (typeof c === 'object' && c ? (c as { id: number }).id : (c as number | null | undefined) ?? undefined)
 const usedNames = await usedMediaNames(payload)
 const servedDigests = new Map<string, string>()

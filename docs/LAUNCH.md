@@ -1,9 +1,8 @@
 # Launch: go-live runbook (#53)
 
-Production gets its data by **promoting development**, not by re-seeding. Dev holds the curated state: 16 categories, 53+ tags, 3,222 approved photos with texts in 5 locales, the hero slideshow, editorial picks and the owner's own edits. Most of it was loaded over time by one-off scripts (RUNBOOK → Loading translations, #146, #156, #172, #175, #180), and a re-seed could not reproduce it. The promotion has three parts:
+Production gets its data by **promoting development**, not by re-seeding. Dev holds the curated state: 16 categories, 53+ tags, 3,222 approved photos with texts in 5 locales, the hero slideshow, editorial picks and the owner's own edits. Most of it was loaded over time by one-off scripts (RUNBOOK → Loading translations, #146, #156, #172, #175, #180), and a re-seed could not reproduce it. The promotion has two parts:
 - a sanitized `pg_dump` of the dev DB, restored into prod (`scripts/launch/promote-sanitize.sql`);
 - a server-side copy of the R2 objects from `kefkenahsap/dev/` to the bucket root;
-- a verified copy of the `media-originals` volume (`scripts/launch/copy-volume.sh`).
 
 After launch, **prod is the source of truth for content.** The owner edits in the prod admin. Dev content is never promoted again. Once prod has taken a lead, a re-promotion is refused unless the leads are exported and put back (phase 6, "Re-attempt").
 
@@ -37,7 +36,7 @@ Work through the phases in order and tick each step. Never paste a secret value 
 
 | Piece | State |
 |---|---|
-| Prod Dokploy compose | `app`, id `e9_MpMOeFkF1QLwEItoeq`, appName `compose-reboot-haptic-feed-t5r4ra`, project `kefkenahsap` / environment `production`. The `wood-material-calculator` stack sits in the same environment and stays untouched. Raw compose, isolated deployment, auto-deploy off. **Never deployed, no domain.** Its raw compose is **older than the repo file**: no `media-originals` volume, no `CLOUDFLARE_*` (#189). |
+| Prod Dokploy compose | `app`, id `e9_MpMOeFkF1QLwEItoeq`, appName `compose-reboot-haptic-feed-t5r4ra`, project `kefkenahsap` / environment `production`. The `wood-material-calculator` stack sits in the same environment and stays untouched. Raw compose, isolated deployment, auto-deploy off. **Never deployed, no domain.** Its raw compose is **older than the repo file**: no `CLOUDFLARE_*` (#189). |
 | Prod Dokploy env | Saved from `.dokploy-prod.env`: fresh DB/Payload/Umami/GlitchTip secrets, `SITE_ENV=production`, `NEXT_PUBLIC_SITE_URL=https://www.kefkenahsap.com`, `S3_BUCKET=kefkenahsap`, `S3_PREFIX` empty, `MEDIA_PUBLIC_URL=https://cdn.kefkenahsap.com`, `NEXT_PUBLIC_GA_ID=G-S84WKG63MS`, the real Turnstile keys, `SITE_BASIC_AUTH` empty, `COMPOSE_PROFILES=backup`. Missing: `CLOUDFLARE_*`, `BACKUP_S3_*`, `SENTRY_DSN`. |
 | GitHub environment `production` | vars `DOKPLOY_COMPOSE_ID`, `NEXT_PUBLIC_SITE_URL`, `NEXT_PUBLIC_GA_ID`, `NEXT_PUBLIC_TURNSTILE_SITE_KEY`; secrets `DOKPLOY_URL`, `DOKPLOY_API_KEY`. `NEXT_PUBLIC_*` values are **baked into the image at build time**, so they must be final before the release merge. |
 | Deploy gate | Repo variable `PRODUCTION_DEPLOY_APPROVED` is **not set**: a push to `main` runs CI only. Once it is set, **every** push to `main` deploys prod. |
@@ -107,7 +106,7 @@ Work through the phases in order and tick each step. Never paste a secret value 
     ```
 11. [ ] **[Owner]** GitHub environment `production`: `gh variable list -R senrecep/kefkenahsap -e production` shows the three `NEXT_PUBLIC_*` with prod values. If Umami goes live (decision 6), also set `NEXT_PUBLIC_UMAMI_WEBSITE_ID` and `NEXT_PUBLIC_UMAMI_SRC` now.
 12. [ ] **[Claude] APPROVAL. Sync the prod raw compose with the repo (#189).** Dokploy → `kefkenahsap` / production → `app` → General → Raw compose. Replace it with `docker-compose.dokploy.yml` from `origin/development`, then Save. **Don't deploy.** (Over the API: `compose.update` with `composeFile`.) Step 2.7 diffs it again right before the gate opens.
-    - It must happen before the first deploy. Otherwise the first boot has no `media-originals` volume, and clean originals land in the container and vanish on the next redeploy (#189).
+    - It must happen before the first deploy, so the first boot already has the current volumes (#189).
     - **Also sync the `development` raw compose** (where GlitchTip runs today) and redeploy it: the compose sets the GlitchTip event retention to 30 days (`GLITCHTIP_RETENTION_DAYS`, legacy `GLITCHTIP_MAX_EVENT_LIFE_DAYS`), which the privacy notice promises (#195).
 
 ### 1C. Old site and DNS safety
@@ -203,8 +202,8 @@ It must end with `dry run: rolled back` and an empty leftover list. If a column 
 set -euo pipefail; P=$1
 docker ps -a --format '{{.Names}}\t{{.Status}}' | grep "$P"      # app, kefken-postgres (healthy), umami, kefken-backup up; db-init Exited (0)
 docker exec $P-app-1 wget -qO- http://127.0.0.1:3000/api/health; echo   # {"ok":true}
-docker inspect $P-app-1 -f '{{range .Mounts}}{{.Name}} -> {{.Destination}}{{"\n"}}{{end}}'   # <P>_lead-photos and <P>_media-originals
-docker exec $P-app-1 sh -c 'set -e; for d in lead-photos media-originals; do touch /app/data/$d/.w; rm /app/data/$d/.w; echo "$d writable"; done'
+docker inspect $P-app-1 -f '{{range .Mounts}}{{.Name}} -> {{.Destination}}{{"\n"}}{{end}}'   # <P>_lead-photos
+docker exec $P-app-1 sh -c 'set -e; for d in lead-photos; do touch /app/data/$d/.w; rm /app/data/$d/.w; echo "$d writable"; done'
 EOS
 )
 ```
@@ -324,15 +323,13 @@ SQL
 ```
 If `media.upload.imageSizes` gained a size since this runbook was written, add its `sizes_<name>_filename` to the array.
 
-### 2F. Clean originals volume — **APPROVAL** (writes a prod volume)
+### 2F. Start the app
 
-15. [ ] **[Claude]** Volume-to-volume copy of `media-originals` (dev → prod), verified by SHA-256 per file. It never deletes, and it refuses `lead-photos`. Then start the app:
+15. [ ] **[Claude]** Clean originals are no longer kept (#204), so there is no volume to copy. Start the app:
     ```bash
     ( set -euo pipefail; . ~/Documents/projects/senrecep/kefkenahsap-workspace/kefkenahsap-wt/launch/scripts/launch/env.sh
-      ssh senrecep bash -s -- "${D}_media-originals" "${P}_media-originals" < "$L/scripts/launch/copy-volume.sh"   # "copied and verified N files"
       ssh senrecep "set -e; docker start $P-app-1; sleep 10; docker exec $P-app-1 wget -qO- http://127.0.0.1:3000/api/health" )
     ```
-    Confirm the volume names first with `ssh senrecep "docker volume ls -q | grep media-originals"`: Dokploy names them `<appName>_<volume>`.
 
 ### 2G. Secure the admin and verify through tunnels
 
@@ -390,20 +387,21 @@ If `media.upload.imageSizes` gained a size since this runbook was written, add i
       - no `googletagmanager.com` or `google-analytics.com` request before the banner is answered;
       - Accept: `gtag/js?id=G-S84WKG63MS` loads;
       - Reject in a second window: no GA requests.
-23. [ ] **[Claude]** First prod backup, polled until all three artifacts report, then a **restore drill** into a scratch DB. Requires 1.7.
+23. [ ] **[Claude]** First prod backup, polled until both artifacts report, then a **restore drill** into a scratch DB. Requires 1.7.
 ```bash
 ( set -euo pipefail; . ~/Documents/projects/senrecep/kefkenahsap-workspace/kefkenahsap-wt/launch/scripts/launch/env.sh
   ssh senrecep bash -s -- "$P" <<'EOS'
 set -euo pipefail; P=$1; B=$P-kefken-backup-1; PG=$P-kefken-postgres-1; since=$(date -u +%FT%TZ)
 docker exec $B touch /backups/.run-now
-for i in $(seq 120); do   # one "uploaded"/"R2 upload …"/"FAILED" line per artifact: dump, lead-photos, media-originals
-  [ "$(docker logs --since "$since" $B 2>&1 | grep -cE 'uploaded to r2:|R2 upload|FAILED')" -ge 3 ] && break; sleep 5; done
+for i in $(seq 120); do   # one "uploaded"/"R2 upload …"/"FAILED" line per artifact: dump, lead-photos
+  [ "$(docker logs --since "$since" $B 2>&1 | grep -cE 'uploaded to r2:|R2 upload|FAILED')" -ge 2 ] && break; sleep 5; done
 docker logs --since "$since" $B 2>&1
-[ "$(docker logs --since "$since" $B 2>&1 | grep -c 'uploaded to r2:kefkenahsap-backups/production/')" -eq 3 ]
-F=$(ls -1t /var/lib/kefken-backups/production/kefken-*.dump | head -1)
+[ "$(docker logs --since "$since" $B 2>&1 | grep -c 'uploaded to r2:kefkenahsap-backups/production/')" -eq 2 ]
+# the local file is deleted after a successful upload: stream the drill's dump back from R2
+F=$(docker logs --since "$since" $B 2>&1 | grep -o 'r2:kefkenahsap-backups/production/kefken-[0-9-]*\.dump' | tail -1)
 trap 'docker exec $PG dropdb -U kefken --if-exists kefken_restore_drill' EXIT
 docker exec $PG dropdb -U kefken --if-exists kefken_restore_drill; docker exec $PG createdb -U kefken kefken_restore_drill
-docker exec -i $PG pg_restore -U kefken -d kefken_restore_drill --no-owner --exit-on-error < "$F"
+docker exec -i $PG pg_restore -U kefken -d kefken_restore_drill --no-owner --exit-on-error < <(docker exec $B rclone cat "$F")
 q="select (select count(*) from media), (select count(*) from categories), (select count(*) from users), (select count(*) from leads)"
 a=$(docker exec $PG psql -U kefken -d kefken -Atc "$q"); b=$(docker exec $PG psql -U kefken -d kefken_restore_drill -Atc "$q")
 echo "live=$a drill=$b (media|categories|users|leads)"; [ "$a" = "$b" ] || { echo 'restore drill does not match the live DB'; exit 1; }
@@ -513,7 +511,7 @@ The owner says "go" only when every box is ticked:
 
 | When | Who | What |
 |---|---|---|
-| T+1d | Claude | The nightly backup ran and reached R2 (`docker logs $P-kefken-backup-1`, three `uploaded to r2:` lines). Delete the promotion dump: `ssh senrecep 'rm -r /var/lib/kefken-backups/promote'`. |
+| T+1d | Claude | The nightly backup ran and reached R2 (`docker logs $P-kefken-backup-1`, two `uploaded to r2:` lines). Delete the promotion dump: `ssh senrecep 'rm -r /var/lib/kefken-backups/promote'`. |
 | T+1d | Claude | #62: geolyt **baseline** on prod → `docs/geo/`. |
 | T+1d | Owner + Claude, **APPROVAL** | Lock dev down again: set `SITE_BASIC_AUTH` back to a credential in the dev Dokploy env and redeploy. Also rotate the dev admin password (it was exposed in chat), with `set-password.ts` over the dev tunnel. This keeps dev's admin and contact form away from the public. |
 | T+1d … T+3d daily, then weekly to week 8 | Owner + Claude | 404 watch. Check each URL in GSC → Pages → "Not found (404)" with `curl -s -o /dev/null -w '%{http_code} %{redirect_url}\n' '<url>'`:<br>• 410 = intended.<br>• 404 = missing redirect: add it in admin → Redirects, then "Validate fix".<br>• 301 = already fixed.<br>Also watch Cloudflare → HTTP Traffic, filtered on 404 for www. Traefik access logs are off server-wide; turning them on is the owner's call. |
