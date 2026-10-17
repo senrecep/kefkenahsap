@@ -7,8 +7,10 @@ import { normalizeTrPhone } from '@/lib/whatsapp'
 /** Accepted lead photo types (no SVG: scriptable). Shared with the LeadPhotos upload config. */
 export const LEAD_PHOTO_TYPES = ['image/jpeg', 'image/png', 'image/webp', 'image/heic', 'image/heif']
 export const MAX_PHOTOS = 5
-/** Version of the KVKK notice the consent box links to; stored on every lead. Bump when the text changes. */
-export const KVKK_TEXT_VERSION = 'kvkk-taslak-2026-10-14'
+/** Date of the in-repo KVKK/cookie texts, shown as "Son güncelleme" on both pages. Change it when the text changes. */
+export const KVKK_TEXT_DATE = '2026-10-17'
+/** Version of the KVKK notice the consent box links to; stored on every lead. */
+export const KVKK_TEXT_VERSION = `kvkk-taslak-${KVKK_TEXT_DATE}`
 export const MAX_PHOTO_BYTES = 10 * 1024 * 1024
 const MAX_TEXT = 5000
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/
