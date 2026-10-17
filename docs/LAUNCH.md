@@ -102,6 +102,16 @@ r2env() { set -a; . "$W/.dokploy-prod.env"; set +a
       xargs -P 8 -I{} curl -s -o /dev/null -w '%{http_code} {}\n' 'https://cdn.kefkenahsap.com/dev/{}' | awk '$1!=200'   # must print nothing
     ```
     On 2026-10-17 this printed the 8 files of #190.
+15b. [ ] **[Claude] APPROVAL (creates and drops a scratch DB on the dev Postgres; dev data untouched).** Rehearse 2C + 2D.9 on real data, so a leftover dev URL in old versions or rich text shows up now, not during the freeze:
+    ```bash
+    read -rp 'owner admin email: ' OWNER; scp "$W/kefkenahsap/scripts/launch/promote-sanitize.sql" senrecep:/tmp/promote.sql
+    ssh senrecep "set -e; PG=$D-kefken-postgres-1; docker cp /tmp/promote.sql \$PG:/tmp/promote.sql
+      docker exec \$PG createdb -U kefken kefken_promote_rehearsal
+      docker exec \$PG sh -c \"pg_dump -U kefken -d kefken -Fc --exclude-table-data=leads --exclude-table-data=leads_rels --exclude-table-data=lead_photos --exclude-table-data=users_sessions --exclude-table-data='payload_preferences*' --exclude-table-data='payload_locked_documents*' --exclude-table-data='payload_jobs*' --exclude-table-data=payload_kv --exclude-table-data=ai_usage | pg_restore -U kefken -d kefken_promote_rehearsal --no-owner --no-acl --exit-on-error\"
+      docker exec \$PG psql -U kefken -d kefken_promote_rehearsal -v owner_email='$OWNER' -f /tmp/promote.sql || true
+      docker exec \$PG dropdb -U kefken kefken_promote_rehearsal; docker exec \$PG rm /tmp/promote.sql; rm /tmp/promote.sql"
+    ```
+    It must end with `dry run: rolled back` and an empty leftover list. A listed column means fixing that text in the dev admin now, then re-running this step.
 16. [ ] **[Claude] APPROVAL (writes to the prod bucket root; nothing references it yet).** Bulk server-side copy of `dev/` → root. It's resumable, and it never deletes:
     ```bash
     bash; r2env
@@ -132,12 +142,14 @@ r2env() { set -a; . "$W/.dokploy-prod.env"; set +a
    ```bash
    gh variable set PRODUCTION_DEPLOY_APPROVED -R senrecep/kefkenahsap -b true
    ```
+3b. [ ] **[Claude]** The prod raw compose still equals the release file (#189 drift): read it with Dokploy `compose.one` (read-only, field `composeFile`) and `diff` it against `git show origin/development:docker-compose.dokploy.yml`. Any difference → redo 1B.11 first.
 4. [ ] **[Owner] APPROVAL.** Merge the release PR (merge commit). CI `check`, then `deploy`, then the image `kefkenahsap-app:production`, then Dokploy `compose.deploy`. The stack boots on an **empty DB**, migrations run, and nothing is public: there's no domain.
 5. [ ] **[Claude]** Check the stack:
    ```bash
-   ssh senrecep "docker ps --format '{{.Names}}\t{{.Status}}' | grep $P"            # app, kefken-postgres (healthy), umami, kefken-backup; db-init exited 0
+   ssh senrecep "docker ps -a --format '{{.Names}}\t{{.Status}}' | grep $P"         # app, kefken-postgres (healthy), umami, kefken-backup; db-init Exited (0)
    ssh senrecep "docker exec $P-app-1 wget -qO- http://127.0.0.1:3000/api/health"   # {"ok":true}
    ssh senrecep "docker inspect $P-app-1 -f '{{range .Mounts}}{{.Destination}} {{end}}'"   # lists /app/data/media-originals and /app/data/lead-photos
+   ssh senrecep "docker exec $P-app-1 sh -c 'for d in lead-photos media-originals; do touch /app/data/\$d/.w && rm /app/data/\$d/.w && echo \$d writable; done'"   # both writable by the app user
    ```
 
 ### 2C. Dump dev (sanitized at the source)
@@ -193,6 +205,9 @@ r2env() { set -a; . "$W/.dokploy-prod.env"; set +a
       sizes_w800_filename, sizes_w960_filename, sizes_w1280_filename, sizes_w1920_filename]) f WHERE f IS NOT NULL;
     SQL
     comm -23 $S/db.txt $S/root.txt                                                                          # must print nothing
+    rclone lsf -R --files-only r2:kefkenahsap/dev | sort > $S/dev.txt
+    comm -13 $S/dev.txt $S/root.txt > $S/extra.txt; wc -l < $S/extra.txt   # files deleted on dev after the bulk copy; still public at the root
+    # if not 0 (APPROVAL): rclone delete r2:kefkenahsap --files-from $S/extra.txt --s3-no-check-bucket
     jq -r '.[].file' "$W/kefkenahsap/src/lib/legacy/"{media,attachment}-map.json | sort -u | comm -23 - $S/root.txt   # must print nothing
     wc -l $S/db.txt $S/root.txt; rm -r $S; exit
     ```
@@ -204,7 +219,7 @@ r2env() { set -a; . "$W/.dokploy-prod.env"; set +a
     ```bash
     ssh senrecep "set -e; T=\$(mktemp -d); docker cp $D-app-1:/app/data/media-originals/. \$T/; \
       docker start $P-app-1; sleep 5; docker cp \$T/. $P-app-1:/app/data/media-originals/; \
-      docker exec -u 0 $P-app-1 sh -c 'chown -R \$(stat -c %u:%g /app/data) /app/data/media-originals'; \
+      docker exec -u 0 $P-app-1 chown -R \$(docker exec $P-app-1 id -u):\$(docker exec $P-app-1 id -g) /app/data/media-originals; \
       echo dev=\$(ls \$T | wc -l) prod=\$(docker exec $P-app-1 ls /app/data/media-originals | wc -l); rm -rf \$T"
     ```
     The two counts must match. This step also starts the app again.
@@ -332,6 +347,7 @@ The owner says "go" only when every box is ticked:
 |---|---|---|
 | T+1d | Claude | The nightly backup ran (`docker logs $P-kefken-backup-1`) and reached R2. Delete the promotion dump: `ssh senrecep 'rm -r /var/lib/kefken-backups/promote'`. |
 | T+1d | Claude | #62: geolyt **baseline** on prod → `docs/geo/`. |
+| T+1d | Owner + Claude, **APPROVAL** | Lock dev down again: set `SITE_BASIC_AUTH` back to a credential in the dev Dokploy env and redeploy, and rotate the dev admin password (it was exposed in chat). Dev stays noindex either way; this keeps its admin and contact form away from the public. |
 | T+1d … T+3d daily, then weekly to week 8 | Owner + Claude | 404 watch. GSC → Pages → "Not found (404)". `curl -s -o /dev/null -w '%{http_code} %{redirect_url}\n' '<url>'`: 410 = intended, 404 = missing redirect (add it in admin → Redirects, then "Validate fix"), 301 = fixed. Also Cloudflare → HTTP Traffic, filtered on 404 for www. Traefik access logs are off server-wide; turning them on is the owner's call (Dokploy → Settings → Requests). |
 | T+1w | Owner | #54: GBP website link `https://www.kefkenahsap.com/tr?utm_source=gbp&utm_medium=organic`, GA4 ↔ GSC link, Instagram handle and founding year in siteSettings. |
 | T+1w | Claude | #189 permanent fix: the CI deploy job also sends the compose file (`compose.update`) before `compose.deploy`, so Dokploy can't drift from the repo again. |

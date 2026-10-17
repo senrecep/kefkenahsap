@@ -21,6 +21,8 @@ BEGIN
   IF n > 0 THEN RAISE EXCEPTION 'refusing: % media rows are not under prefix dev (not a dev dump, or already promoted)', n; END IF;
   SELECT count(*) INTO n FROM users WHERE lower(email) = lower(current_setting('promote.owner'));
   IF n <> 1 THEN RAISE EXCEPTION 'refusing: owner % not found in users', current_setting('promote.owner'); END IF;
+  -- A 'dev' row means the schema was once pushed, not migrated: prod's migrate-on-boot could then diverge.
+  IF EXISTS (SELECT 1 FROM payload_migrations WHERE name = 'dev') THEN RAISE EXCEPTION 'refusing: payload_migrations has a dev (push) row'; END IF;
 END $$;
 
 -- Personal data and dev runtime state. Jobs go too: queued AI jobs would call OpenRouter on prod's first boot.
@@ -69,7 +71,7 @@ END $$;
 
 SELECT (SELECT count(*) FROM media) AS media, (SELECT count(*) FROM media WHERE prefix <> '') AS media_prefixed,
   (SELECT count(*) FROM users) AS users, (SELECT count(*) FROM leads) AS leads,
-  (SELECT name FROM payload_migrations WHERE name <> 'dev' ORDER BY id DESC LIMIT 1) AS last_migration;
+  (SELECT name FROM payload_migrations ORDER BY id DESC LIMIT 1) AS last_migration;
 
 \if :{?commit}
 \else
