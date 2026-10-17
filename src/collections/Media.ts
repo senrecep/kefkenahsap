@@ -65,7 +65,10 @@ const stampUpload: CollectionBeforeOperationHook = async ({ args, operation, req
 
 /** A new document is 'applied' only if this request stamped it: a duplicate copies the already marked file. */
 const truthfulWatermark: CollectionBeforeChangeHook = ({ data, operation, req }) => {
-  if (operation === 'create' && data.watermark === 'applied' && !req.context.mediaStamped) data.watermark = 'already'
+  if (operation === 'create') {
+    if (data.watermark === 'applied' && !req.context.mediaStamped) data.watermark = 'already'
+    delete req.context.mediaStamped
+  }
   return data
 }
 
@@ -250,7 +253,7 @@ export const Media: CollectionConfig = {
       type: 'select',
       label: 'Filigran',
       options: [
-        { label: 'Eklendi (temiz orijinal saklı)', value: 'applied' },
+        { label: 'Eklendi', value: 'applied' },
         { label: 'Dosyada zaten var', value: 'already' },
         { label: 'Eklenmedi', value: 'none' },
       ],

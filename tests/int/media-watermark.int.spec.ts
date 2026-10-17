@@ -28,9 +28,9 @@ const object = async (filename: string) => {
 }
 
 // A distinct image per test so stored filenames never collide with an earlier run.
-async function upload(name: string, data: Record<string, unknown> = {}, size = { width: W, height: H }) {
+async function upload(name: string, data: Record<string, unknown> = {}) {
   const file = path.join(DIR, `${name}-${Date.now()}.png`)
-  await sharp({ create: { ...size, channels: 3, background: { r: 90, g: 80, b: 60 } } }).png().toFile(file)
+  await sharp({ create: { width: W, height: H, channels: 3, background: { r: 90, g: 80, b: 60 } } }).png().toFile(file)
   const doc = await payload.create({ collection: 'media', data, filePath: file, context: { skipAi: true } })
   created.push(doc.id)
   return { doc, clean: readFileSync(file) }
@@ -116,6 +116,15 @@ it('replacing the file stamps the new one', async () => {
   expect(await diff(readFileSync(next), (await object(updated.filename!)).data, CENTRE)).toBeGreaterThan(5)
   expect(updated.filename).not.toBe(doc.filename)
   writeFileSync(next, '') // keep tmp small
+})
+
+it('replacing the file with "Filigran ekleme" stores it unstamped', async () => {
+  const { doc } = await upload('replace-optout')
+  const next = path.join(DIR, `replace-optout-next-${Date.now()}.png`)
+  await sharp({ create: { width: W, height: H, channels: 3, background: { r: 200, g: 190, b: 170 } } }).png().toFile(next)
+  const updated = await payload.update({ collection: 'media', id: doc.id, data: { skipWatermark: true }, filePath: next, context: { skipAi: true } })
+  expect(updated.watermark).toBe('none')
+  expect(await diff(readFileSync(next), (await object(updated.filename!)).data, CENTRE)).toBeLessThan(2)
 })
 
 it('a file upload on a bulk update is refused', async () => {

@@ -398,10 +398,10 @@ for i in $(seq 120); do   # one "uploaded"/"R2 upload …"/"FAILED" line per art
 docker logs --since "$since" $B 2>&1
 [ "$(docker logs --since "$since" $B 2>&1 | grep -c 'uploaded to r2:kefkenahsap-backups/production/')" -eq 2 ]
 # the local file is deleted after a successful upload: stream the drill's dump back from R2
-F=$(docker logs --since "$since" $B 2>&1 | grep -o 'r2:kefkenahsap-backups/production/kefken-[0-9-]*\.dump' | tail -1)
+F=$(docker logs --since "$since" $B 2>&1 | grep -o 'r2:kefkenahsap-backups/production/kefken-[0-9-]*\.dump' | tail -1); [ -n "$F" ]
 trap 'docker exec $PG dropdb -U kefken --if-exists kefken_restore_drill' EXIT
 docker exec $PG dropdb -U kefken --if-exists kefken_restore_drill; docker exec $PG createdb -U kefken kefken_restore_drill
-docker exec -i $PG pg_restore -U kefken -d kefken_restore_drill --no-owner --exit-on-error < <(docker exec $B rclone cat "$F")
+docker exec $B rclone cat "$F" | docker exec -i $PG pg_restore -U kefken -d kefken_restore_drill --no-owner --exit-on-error
 q="select (select count(*) from media), (select count(*) from categories), (select count(*) from users), (select count(*) from leads)"
 a=$(docker exec $PG psql -U kefken -d kefken -Atc "$q"); b=$(docker exec $PG psql -U kefken -d kefken_restore_drill -Atc "$q")
 echo "live=$a drill=$b (media|categories|users|leads)"; [ "$a" = "$b" ] || { echo 'restore drill does not match the live DB'; exit 1; }
