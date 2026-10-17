@@ -28,6 +28,12 @@
   --animate-scrim: scrim 1.2s var(--ease-out-expo) both;
   @keyframes settle { from { transform: scale(1.04); } }
   @keyframes scrim { from { opacity: 0.8; } }
+  /* Hero slideshow (#187): every following photo settles the same way, slower, across its whole stay (fade in + ~6.5s +
+     fade out). It ends at scale 1, so the reduced-motion rule (animations cut to 0.01ms) leaves it still and unzoomed. */
+  --animate-drift: drift 9s cubic-bezier(0.25, 0.1, 0.25, 1) both;
+  --animate-progress: progress linear both;
+  @keyframes drift { from { transform: scale(1.06); } }
+  @keyframes progress { from { transform: scaleX(0); } }
 }
 
 @layer base {

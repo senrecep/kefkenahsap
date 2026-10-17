@@ -105,7 +105,7 @@ Tüm metin alanları `localized: true`. Taslak/versiyon (`versions.drafts`) + Li
 
 ### Global'ler
 - **siteSettings**: şirket adı, kuruluş yılı (boşsa hiçbir "X yıl" ifadesi render edilmez), kurucu/usta, ekip, proje sayısı, NAP (adres, geo, telefonlar, e-posta), çalışma saatleri, WhatsApp numarası + **mesaj şablonları** (sayfa türüne göre), sosyal profiller (Instagram, Facebook, GBP URL), hizmet bölgeleri (areaServed).
-- **homepage**: blok listesi (aç/kapa + sıralama) — Hero, Öne çıkan galeri, Hizmetler, Öne çıkan projeler, Süreç, Referanslar, Ahşap türleri, SSS, İletişim.
+- **homepage**: blok listesi (aç/kapa + sıralama) — Hero (görsel + en fazla 6 sonraki slayt, sürükleyerek sıralanır; #187, sahibin 2026-10-17 isteği), Öne çıkan galeri, Hizmetler, Öne çıkan projeler, Süreç, Referanslar, Ahşap türleri, SSS, İletişim.
 - **navigation**: header/footer linkleri.
 - **aiSettings**: görev bazlı model zinciri (bkz. §8), aylık bütçe limiti, terim sözlüğü (TR↔EN↔…).
 
@@ -174,7 +174,7 @@ Tüm metin alanları `localized: true`. Taslak/versiyon (`versions.drafts`) + Li
 **Tasarım yönü: Kategori standardı, tam ustalıkla** (impeccable kararı; ayrıntı §11).
 
 - **Header**: logo, Hizmetler (mega menü: 16 kategori, #172 ile 11'den 16'ya çıktı; uygulamada iki sütunlu metin listesi, kapak resmi yok), Projeler, Galeri, Rehber, Referanslar, İletişim, dil seçici, sağda telefon. Mobilde alt sabit çubuk: **WhatsApp · Ara · Teklif**.
-- **Ana sayfa** (blok sırası admin'den): Hero (tam genişlik gerçek fotoğraf, H1 değer önerisi, WhatsApp + Teklif butonları, OGL ahşap damarı efekti opsiyonel) → **Öne çıkan galeri** (filtre çipleri: kategori/ahşap/mekan, infinite masonry — "galeri odaklı") → Hizmetler gridi → Öne çıkan projeler → Süreç (keşif → teklif → imalat → montaj → bakım) → Referanslar → Ahşap türleri karşılaştırma (tablo) → SSS → İletişim/harita.
+- **Ana sayfa** (blok sırası admin'den): Hero (tam genişlik gerçek fotoğraf; admin slayt eklerse yavaş geçişli fotoğraf gösterisi, durdur/başlat düğmesiyle — #187; H1 değer önerisi, WhatsApp + Teklif butonları, OGL ahşap damarı efekti opsiyonel) → **Öne çıkan galeri** (filtre çipleri: kategori/ahşap/mekan, infinite masonry — "galeri odaklı") → Hizmetler gridi → Öne çıkan projeler → Süreç (keşif → teklif → imalat → montaj → bakım) → Referanslar → Ahşap türleri karşılaştırma (tablo) → SSS → İletişim/harita.
 - **Kategori sayfası**: H1 + cevap-önce giriş paragrafı → masonry galeri (infinite) → açıklama (300–600 kelime, H2'ler soru) → fiyat rehberi (aralık + güncelleme tarihi) → SSS → ilgili projeler + rehberler → hizmet bölgeleri → CTA.
 - **Proje sayfası**: kapak + künye (yer, yıl, ahşap, m², süre, finish) → hikaye → sıralı galeri → müşteri yorumu → benzer projeler.
 - **Görsel sayfası**: büyük görsel, başlık/alt/açıklama, etiket çipleri, bağlı proje/kategori, ilgili görseller; lightbox açılınca URL `history.replaceState` ile bu sayfaya döner.

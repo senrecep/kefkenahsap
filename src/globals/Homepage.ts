@@ -2,8 +2,13 @@ import type { Block, GlobalConfig } from 'payload'
 
 import { hiddenFromEditor, isStaff } from '@/access'
 import { revalidateGlobal } from '@/hooks/revalidate'
+import { MAX_SLIDES } from '@/lib/home/slides'
 
 const enabled = { name: 'enabled', type: 'checkbox' as const, defaultValue: true, label: 'Göster' }
+// Slides: the public sees approved photos only (an unapproved pick would silently drop out), so offer only those. Not on
+// image/mobileImage: filterOptions also validates on save, and a hero photo hidden later must not block every save
+// (the page already falls back for it).
+const approvedOnly = { status: { equals: 'approved' } } as const
 const heading = { name: 'heading', type: 'text' as const, localized: true, label: 'Başlık' }
 
 const blocks: Block[] = [
@@ -19,6 +24,19 @@ const blocks: Block[] = [
         relationTo: 'media',
         label: 'Telefon görseli (isteğe bağlı)',
         admin: { description: 'Telefonda bu görsel gösterilir. Filigranın başlığın arkasında kalmadığı dikey bir fotoğraf seçin; boşsa ana görsel kullanılır.' },
+      },
+      {
+        // hasMany upload: thumbnails and drag-to-sort out of the box (#187). Order = slide order after the image above.
+        name: 'slides',
+        type: 'upload',
+        relationTo: 'media',
+        hasMany: true,
+        filterOptions: approvedOnly,
+        maxRows: MAX_SLIDES - 1,
+        label: 'Sonraki slaytlar',
+        admin: {
+          description: `İlk slayt yukarıdaki görseldir; buradaki fotoğraflar sırayla onu izler (en fazla ${MAX_SLIDES - 1}). Sürükleyerek sıralayın. Boş bırakırsanız tek fotoğraf gösterilir. Sonradan gizlenen bir fotoğrafı yayınlamadan önce buradan çıkarın.`,
+        },
       },
       heading,
       { name: 'subheading', type: 'textarea', localized: true, label: 'Alt başlık' },

@@ -177,9 +177,16 @@ a.pill {
 }
 
 .collapsible__drag,
-.sort-row {
+.sort-row,
+.upload--has-many__drag {
   min-inline-size: 48px;
   min-block-size: 48px;
+}
+
+/* #187: the hero's slide list (a sortable many-photo upload): a thumbnail big enough to tell the photos apart (Payload: 26px). */
+.upload--has-many__dragItem .thumbnail {
+  inline-size: 72px;
+  block-size: 48px;
 }
 
 .copy-to-clipboard,
@@ -220,7 +227,8 @@ a.pill {
 }
 
 .collapsible__drag,
-.sort-row {
+.sort-row,
+.upload--has-many__drag {
   display: flex;
   align-items: center;
   justify-content: center;

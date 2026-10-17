@@ -1,6 +1,7 @@
 import { getTranslations } from 'next-intl/server'
 
 import { buttonClass } from '@/components/ui/button'
+import { HeroSlides } from '@/components/home/HeroSlides'
 import { Container } from '@/components/ui/Container'
 import { Picture } from '@/components/ui/Picture'
 import { WhatsAppButton } from '@/components/ui/WhatsAppButton'
@@ -8,41 +9,58 @@ import { Link } from '@/i18n/navigation'
 import type { Locale } from '@/i18n/routing'
 import { focalPosition, portraitOf, type MediaLike } from '@/lib/media/image'
 
-/** First viewport: full-bleed real job photo, bottom-left H1 + one sentence + WhatsApp / Teklif al on a bottom scrim. */
-export async function Hero({ locale, image, mobileImage, heading, subheading, priority = true, first = true }: { locale: Locale; image: MediaLike | null; mobileImage?: MediaLike | null; heading?: string | null; subheading?: string | null; priority?: boolean; first?: boolean }) {
+/**
+ * First viewport: full-bleed real job photo, bottom-left H1 + one sentence + WhatsApp / Teklif al on a bottom scrim.
+ * `slides` (#187): the photos that follow `image`, crossfading on the client; the first photo renders as it always has.
+ */
+export async function Hero({ locale, image, mobileImage, slides = [], heading, subheading, priority = true, first = true }: { locale: Locale; image: MediaLike | null; mobileImage?: MediaLike | null; slides?: MediaLike[]; heading?: string | null; subheading?: string | null; priority?: boolean; first?: boolean }) {
   const t = await getTranslations('Home')
   const tCta = await getTranslations('Cta')
   // One h1 per page: only the first hero's title; a second hero block is a section (h2) styled the same.
   const Title = first ? 'h1' : 'h2'
+  const photo = 'absolute! inset-0 h-full !aspect-auto'
+  const framing = 'object-[var(--focal-sm)] md:object-[var(--focal)]'
+  // A landscape photo covers the hero at more CSS px than sizes="100vw" says: never below w960 (w800 was visibly softer,
+  // #129). On phones a portrait (`mobileImage`, else the photo's own 9:16 crop, cut around the focal point at upload)
+  // fills the box instead, at a third of the bytes. Both frame on the focal point.
+  const firstPhoto = image && (
+    <Picture media={image} mobile={mobileImage ?? portraitOf(image)} sizes="100vw" minWidth={960} priority={priority} className={`${photo} motion-safe:animate-settle`} imgClassName={framing} />
+  )
   return (
     // Phones stack the photo over the text on Ink: the H1 never covers the work (or the watermark) at the photo's foot.
     // From md the text sits on the photo, over the scrim.
     <section className="relative isolate flex min-h-[max(30rem,calc(100svh-4.5rem))] flex-col justify-end overflow-hidden bg-ink text-white md:h-[78vh] md:max-h-[56rem] md:min-h-[30rem]">
       {image && (
         <div
-          className="relative min-h-56 flex-1 overflow-hidden md:absolute md:inset-0 md:-z-10"
+          // A slideshow clips its own photos: its phone controls hang below this box, onto the text ground.
+          className={`relative min-h-56 flex-1 md:absolute md:inset-0 md:-z-10 ${slides.length ? '' : 'overflow-hidden'}`}
           // Without an editor's focal point: low on desktop (full width, the worked surface sits low); a little higher in
           // the phone's near-square box, which shows ~60% of the height and would otherwise frame the lawn under the deck.
           style={{ ['--focal' as string]: focalPosition(image), ['--focal-sm' as string]: focalPosition(mobileImage ?? image, '50% 66%') }}
         >
-          {/* A landscape photo covers the hero at more CSS px than sizes="100vw" says: never below w960 (w800 was
-              visibly softer, #129). On phones a portrait (`mobileImage`, else the photo's own 9:16 crop, cut around the
-              focal point at upload) fills the box instead, at a third of the bytes. Both frame on the focal point. */}
-          <Picture
-            media={image}
-            mobile={mobileImage ?? portraitOf(image)}
-            sizes="100vw"
-            minWidth={960}
-            priority={priority}
-            className="absolute! inset-0 h-full !aspect-auto motion-safe:animate-settle"
-            imgClassName="object-[var(--focal-sm)] md:object-[var(--focal)]"
-          />
+          {slides.length ? (
+            <HeroSlides
+              labels={{ group: t('heroSlides'), pause: t('heroPause'), play: t('heroPlay'), slides: [image, ...slides].map((_, i) => t('heroSlide', { n: i + 1, total: slides.length + 1 })) }}
+              slides={slides.map((m, i) => (
+                // Each photo frames on its own focal point (the vars above are the first photo's).
+                <span key={i} className="absolute inset-0" style={{ ['--focal' as string]: focalPosition(m), ['--focal-sm' as string]: focalPosition(m, '50% 66%') }}>
+                  <Picture media={m} mobile={portraitOf(m)} sizes="100vw" minWidth={960} className={photo} imgClassName={framing} />
+                </span>
+              ))}
+            >
+              {firstPhoto}
+            </HeroSlides>
+          ) : (
+            firstPhoto
+          )}
         </div>
       )}
-      <div className="relative w-full">
+      {/* md+: this block lies over the photo layer, where the slideshow's controls are: only its own content takes clicks. */}
+      <div className="relative w-full md:pointer-events-none">
         {/* md+: scrim anchored to the text block, not the section: 0.64 ink under the H1 and subline keeps white text ≥4.5:1 even over a white patch or the watermark, at any viewport height; it fades out over 6rem above the H1. */}
-        <div aria-hidden className="absolute inset-x-0 -top-24 bottom-0 -z-10 hidden motion-safe:animate-scrim bg-[linear-gradient(to_top,rgb(29_31_28/0.64)_calc(100%-6rem),transparent)] md:block" />
-        <Container className="pt-7 pb-24 md:pt-0 lg:pb-16">
+        <div aria-hidden className="pointer-events-none absolute inset-x-0 -top-24 bottom-0 -z-10 hidden motion-safe:animate-scrim bg-[linear-gradient(to_top,rgb(29_31_28/0.64)_calc(100%-6rem),transparent)] md:block" />
+        {/* Phones: with a slideshow, its controls sit in the top 3rem of this block. */}
+        <Container className={`${slides.length ? 'pt-[4.25rem]' : 'pt-7'} pb-24 md:pt-0 lg:pb-16 md:[&>*]:pointer-events-auto`}>
           <Title className="max-w-[22ch] text-[clamp(2.1rem,5vw,3.6rem)] leading-[1.08] text-white">{heading || t('heroTitle')}</Title>
           <p className="mt-4 max-w-[52ch] text-[1.0625rem] text-white/85 md:text-lg md:text-white">{subheading || t('heroText')}</p>
           <div className="mt-7 flex flex-wrap gap-3">

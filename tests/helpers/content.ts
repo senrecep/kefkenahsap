@@ -54,3 +54,27 @@ export async function ensureWhatsApp(api: APIRequestContext): Promise<() => Prom
     await api.post('/api/globals/siteSettings?locale=tr', { data: prev })
   }
 }
+
+/**
+ * #187: a published homepage whose first hero shows at least three photos. A DB that already has them (the local seed)
+ * is left as is; otherwise (CI's empty DB) the hero gets approved landscape photos. Returns a restore function that puts
+ * the previous layout back.
+ */
+export async function ensureHeroSlides(api: APIRequestContext): Promise<() => Promise<void>> {
+  const current = await (await api.get('/api/globals/homepage?locale=tr&depth=0')).json()
+  const layout = (current.layout ?? []) as { blockType: string; image?: number | null; slides?: number[] | null }[]
+  const hero = layout.find((b) => b.blockType === 'hero')
+  if (hero?.image && (hero.slides?.length ?? 0) >= 2) return async () => {}
+  const photos = await (await api.get('/api/media?depth=0&limit=4&sort=id&where[status][equals]=approved&where[width][greater_than_equal]=1280')).json()
+  const ids = (photos.docs as { id: number; width: number; height: number }[]).filter((d) => d.width > d.height).map((d) => d.id)
+  expect(ids.length, 'needs three approved landscape photos').toBeGreaterThanOrEqual(3)
+  const sections = ['hero', 'featuredGallery', 'services', 'featuredProjects', 'process', 'references', 'woodTypes', 'faq', 'contact']
+  const next = hero ? layout.map((b) => (b === hero ? { ...b, image: b.image ?? ids[0], slides: ids.filter((id) => id !== (b.image ?? ids[0])).slice(0, 2) } : b)) : sections.map((blockType) => (blockType === 'hero' ? { blockType, image: ids[0], slides: ids.slice(1, 3) } : { blockType }))
+  const res = await api.post('/api/globals/homepage?locale=tr', { data: { layout: next, _status: 'published' } })
+  expect(res.ok(), await res.text()).toBe(true)
+  return async () => {
+    await api.post('/api/globals/homepage?locale=tr', { data: { layout, _status: current._status ?? 'published' } })
+    // Stale-while-revalidate: wait until /tr drops the slideshow, so the next spec meets the single hero again.
+    await expect(async () => expect(await (await api.get('/tr')).text()).not.toContain('aria-roledescription="carousel"')).toPass({ timeout: 45_000 })
+  }
+}
