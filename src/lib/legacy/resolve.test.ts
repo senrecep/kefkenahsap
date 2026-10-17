@@ -3,10 +3,10 @@ import { describe, expect, it } from 'vitest'
 import { resolveLegacy, type LegacyMaps } from './resolve'
 
 const maps: LegacyMaps = {
-  media: { '2018/09/1-1': { file: 'havuz-kenari-iroko-deck.webp', category: 'deck-ve-zeminler' }, '2021/02/kapidolap2': { file: 'surgulu-kapi.webp', category: 'kapi-dolap-ve-seperator' } },
+  media: { '2018/09/1-1': { file: 'havuz-kenari-iroko-deck.webp', seedKey: 'deck-ve-zeminler/1-1.webp' }, '2021/02/kapidolap2': { file: 'surgulu-kapi.webp', seedKey: 'kapi-dolap-ve-seperator/kapidolap2.webp' } },
   attachments: {
-    '/korkuluk-ve-cit/whatsapp-image-2021-06-08/': { file: 'bahce-korkulugu.webp', category: 'korkuluk-ve-cit' },
-    '/ahsap-yapilar/4-10/': { file: 'ahsap-sundurma.webp', category: 'ahsap-yapilar' },
+    '/korkuluk-ve-cit/whatsapp-image-2021-06-08/': { slug: 'bahce-korkulugu', seedKey: 'korkuluk-ve-cit/whatsapp-image-2021-06-08.webp' },
+    '/ahsap-yapilar/4-10/': { slug: 'ahsap-sundurma', seedKey: 'ahsap-yapilar/4-10.webp' },
   },
   attachmentPaths: new Set(['/korkuluk-ve-cit/whatsapp-image-2021-06-08/', '/korkuluk-ve-cit/whatsapp-image-1999-01-01/', '/33-2/', '/deck-ve-zeminler/attachment/13/']),
 }

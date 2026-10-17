@@ -6,6 +6,7 @@
 // so the covers it checks are the final ones.
 // --dry-run writes nothing; a non-local database needs --yes; SITE_ENV=production is refused.
 // Run: bun run payload run scripts/seed/taxonomy-dedup.ts [-- --dry-run | --yes]
+// A hidden copy's old URLs must follow its kept twin: run scripts/seed/legacy-maps.ts afterwards and commit the maps (#190).
 import { getPayload } from 'payload'
 
 import config from '@/payload.config'

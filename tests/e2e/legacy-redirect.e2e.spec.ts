@@ -13,7 +13,7 @@ test('old WP page with trailing slash → /tr/<slug> in one 301', async ({ reque
 test('WP size variant of a known image → CDN original in one 301', async ({ request }) => {
   const r = await hop(request, '/wp-content/uploads/2018/09/1-1-400x400.jpg')
   expect(r.status()).toBe(301)
-  expect(r.headers().location).toBe(`${process.env.MEDIA_PUBLIC_URL}/bahce-ahsap-deck-platformu.webp`)
+  expect(r.headers().location).toBe(`${process.env.MEDIA_PUBLIC_URL}/bahce-ahsap-deck-platformu-1.webp`)
 })
 
 test('old attachment page → its image page in one 301', async ({ request }) => {

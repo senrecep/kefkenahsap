@@ -24,20 +24,20 @@ describe('smokeChecks (launch #53)', () => {
     expect(byPath('/ireko-teak/').location).toBe('/tr/ireko-teak')
     expect(byPath('/kefken-ahsap-dekorasyon/').location).toBe('/tr')
     // Targets cross-checked against the committed legacy maps (seed #31), not the resolver.
-    expect(media['2018/09/1-1'].file).toBe('bahce-ahsap-deck-platformu.webp')
-    expect(attachments['/deck-ve-zeminler/1-6/'].file).toBe('bahce-ahsap-deck-platformu.webp')
-    expect(byPath('/wp-content/uploads/2018/09/1-1-400x400.jpg').location).toBe(`${CDN}/bahce-ahsap-deck-platformu.webp`)
+    expect(media['2018/09/1-1'].file).toBe('bahce-ahsap-deck-platformu-1.webp')
+    expect(attachments['/deck-ve-zeminler/1-6/'].slug).toBe('bahce-ahsap-deck-platformu')
+    expect(byPath('/wp-content/uploads/2018/09/1-1-400x400.jpg').location).toBe(`${CDN}/bahce-ahsap-deck-platformu-1.webp`)
     expect(byPath('/deck-ve-zeminler/1-6/').location).toBe('/tr/galeri/bahce-ahsap-deck-platformu')
   })
 
   it('an unknown WP upload is 410 and the redirected CDN file itself is 200', () => {
     expect(byPath('/wp-content/uploads/2021/02/kap%C4%B1dolap2.jpeg').status).toBe(410)
-    expect(byPath(`${CDN}/bahce-ahsap-deck-platformu.webp`).status).toBe(200)
+    expect(byPath(`${CDN}/bahce-ahsap-deck-platformu-1.webp`).status).toBe(200)
   })
 
   it('uses the media base as given (dev files live under /dev)', () => {
     const dev = smokeChecks({ site: 'https://development.kefkenahsap.com', mediaBase: `${CDN}/dev`, production: false })
-    expect(dev.find((c) => c.path.startsWith('/wp-content/uploads/2018'))?.location).toBe(`${CDN}/dev/bahce-ahsap-deck-platformu.webp`)
+    expect(dev.find((c) => c.path.startsWith('/wp-content/uploads/2018'))?.location).toBe(`${CDN}/dev/bahce-ahsap-deck-platformu-1.webp`)
   })
 })
 
