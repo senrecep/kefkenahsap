@@ -117,3 +117,20 @@ export async function applyWatermark(input: Buffer, mimetype: string): Promise<B
   const format = mimetype.split('/')[1] as 'jpeg' | 'png' | 'webp' | 'avif' | 'tiff'
   return (format === 'png' ? out.png() : out.toFormat(format, { quality: 95 })).toBuffer()
 }
+
+// Long-side cap for the clean original kept beside a stamped upload. The site's largest generated size is 1920 px wide;
+// 2560 leaves room for a future larger size or a re-crop without keeping multi-MB camera files on the shared server disk.
+export const ORIGINAL_MAX_PX = 2560
+
+/**
+ * The clean original as stored on the private volume: upright (EXIF orientation applied), long side at most 2560 px
+ * (never upscaled), high-quality WebP with the source's ICC profile, instead of the raw upload bytes.
+ */
+export function cleanOriginal(input: Buffer): Promise<Buffer> {
+  return sharp(input)
+    .rotate()
+    .resize(ORIGINAL_MAX_PX, ORIGINAL_MAX_PX, { fit: 'inside', withoutEnlargement: true })
+    .keepIccProfile()
+    .webp({ quality: 90 })
+    .toBuffer()
+}

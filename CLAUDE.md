@@ -17,7 +17,7 @@ User-visible copy is in Turkish. Code, identifiers, commits and tests are in Eng
 - Stack is fixed: bun, Next 16 App Router, Payload 3.x (the version pinned in the spike), Postgres 17, Tailwind 4, next-intl 4, Vercel AI SDK + OpenRouter, Motion / GSAP / OGL (lazy loaded only). Ask before adding a new dependency. Don't add a package for something a few lines can do.
 - Next 16: `proxy.ts` (not `middleware`); the Payload revalidate hooks use `revalidateTag(tag, { expire: 0 })` (read-your-writes from route handlers, #192), elsewhere `revalidateTag(tag, 'max')`.
 - No hardcoded locales: always use `routing.locales` and Payload `localization`. Write CSS with logical properties (`ms-`/`me-`, `start`/`end`) — Arabic RTL comes later.
-- Media is served directly from the CDN (`cdn.kefkenahsap.com`), never through `/api/media/file`. Lead photos (and the clean originals of watermarked uploads) go only to private disk volumes, never the CDN bucket.
+- Media is served directly from the CDN (`cdn.kefkenahsap.com`), never through `/api/media/file`. Lead photos (and the clean originals of watermarked uploads, stored as ≤2560 px WebP) go only to private disk volumes, never the CDN bucket.
 - Performance budget: initial JS ≤150KB gz, Lighthouse mobile ≥95, CLS <0.05. Any heavy library goes behind a dynamic import.
 - Accessibility: WCAG 2.2 AA. Published images must have approved alt text. Admin tap targets are ≥48px.
 - Secrets come only from env. `.env*` is never committed.

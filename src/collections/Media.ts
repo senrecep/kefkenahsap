@@ -22,7 +22,7 @@ import { createCdnPurger, mediaPublicURLs } from '@/lib/media/cdn-purge'
 import { createReporter } from '@/lib/observability/report'
 import { checkPublishable, type MediaStatus } from '@/lib/media/publish'
 import { approvalTags, type TagRef } from '@/lib/media/taxonomy'
-import { applyWatermark, isStampable } from '@/lib/media/watermark'
+import { applyWatermark, cleanOriginal, isStampable } from '@/lib/media/watermark'
 import { revalidateAfterChange, revalidateAfterDelete } from '@/hooks/revalidate'
 
 // WebP only: sources are already WebP; AVIF would double storage and encode time (PLAN §3.3).
@@ -36,7 +36,8 @@ export const MEDIA_WIDTHS = [320, 480, 640, 800, 960, 1280, 1920] as const
 export const PORTRAIT = { width: 400, height: 711, quality: 70 } as const
 
 // Clean originals of stamped uploads (#169): a private server volume like lead photos, never the public CDN bucket and
-// never served, so the mark can be re-applied or removed later. Named <stored stem><uploaded extension>.
+// never served, so the mark can be re-applied or removed later. Named <stored stem>.webp: stored downscaled to keep
+// the shared server disk small (cleanOriginal). Older ones kept the uploaded extension; removeOriginal matches by stem.
 export const MEDIA_ORIGINALS_DIR = process.env.MEDIA_ORIGINALS_DIR || path.resolve(process.cwd(), 'data/media-originals')
 const stemOf = (filename: string) => path.parse(filename).name
 
@@ -63,7 +64,7 @@ const stampUpload: CollectionBeforeOperationHook = async ({ args, operation, req
     return args
   }
   const stamped = await applyWatermark(file.data, file.mimetype)
-  req.context.mediaOriginal = { data: file.data, ext: path.extname(file.name) }
+  req.context.mediaOriginal = await cleanOriginal(file.data)
   file.data = stamped
   file.size = stamped.length
   data.watermark = 'applied'
@@ -89,16 +90,16 @@ async function removeOriginal(filename: string, keep?: string) {
  * replaced file's one is removed, so a failure never leaves the document without one.
  */
 const keepOriginal: CollectionAfterChangeHook = async ({ doc, previousDoc, req }) => {
-  const original = req.context.mediaOriginal as { data: Buffer; ext: string } | undefined
+  const original = req.context.mediaOriginal as Buffer | undefined
   const replaced = req.context.mediaFileReplaced === true
   delete req.context.mediaOriginal
   delete req.context.mediaFileReplaced
   if (!doc.filename) return doc
   let written: string | undefined
   if (original) {
-    written = `${stemOf(doc.filename)}${original.ext}`
+    written = `${stemOf(doc.filename)}.webp`
     await mkdir(MEDIA_ORIGINALS_DIR, { recursive: true })
-    await writeFile(path.join(MEDIA_ORIGINALS_DIR, written), original.data)
+    await writeFile(path.join(MEDIA_ORIGINALS_DIR, written), original)
   }
   if (replaced && previousDoc?.filename) await removeOriginal(previousDoc.filename, written)
   return doc

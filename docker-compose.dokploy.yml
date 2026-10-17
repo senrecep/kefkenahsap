@@ -155,7 +155,8 @@ services:
     restart: unless-stopped
 
   # Nightly pg_dump of the kefken DB plus tar archives of the private file volumes (lead photos, clean media originals)
-  # to a host directory (keeps 14 each), then optionally a copy to a PRIVATE R2 bucket.
+  # to a host directory, then optionally a copy to a PRIVATE R2 bucket. Local copies kept: 14 dumps, 3 archives per volume
+  # (the archives hold every photo, so they are the bulk of the disk; R2 keeps 30 days of them via its lifecycle rule).
   # Runs at BACKUP_AT (HHMM, UTC). Run now: docker exec <container> touch /backups/.run-now (picked up within a minute).
   kefken-backup:
     image: kefken-backup:17-rclone1.75.1
@@ -188,6 +189,7 @@ services:
     command:
       - |
         umask 077; chmod 700 /backups; rm -f /backups/*.part
+        DUMP_KEEP=14
         log() { echo "$$(date -u +%FT%TZ) backup: $$*"; }
         upload() {
           case "$$BACKUP_S3_BUCKET" in
@@ -209,17 +211,19 @@ services:
           # Temp name + readable-archive check first: a failed or corrupt dump never replaces or rotates out a good one.
           if pg_dump -h kefken-postgres -U kefken -d kefken -Fc -f "$$f.part" && pg_restore -l "$$f.part" >/dev/null && mv "$$f.part" "$$f"; then
             log "wrote $$f ($$(du -h "$$f" | cut -f1))"
-            ls -1t /backups/kefken-*.dump | tail -n +15 | xargs -r rm -f
+            ls -1t /backups/kefken-*.dump | tail -n +$$((DUMP_KEEP + 1)) | xargs -r rm -f
             upload "$$f"
           else
             rm -f "$$f.part"; log "pg_dump FAILED"
           fi
-          for v in lead-photos media-originals; do
+          # <volume>:<local copies kept>
+          for vk in lead-photos:3 media-originals:3; do
+            v=$${vk%:*} keep=$${vk#*:}
             a=/backups/$$v-$$(date -u +%Y%m%d-%H%M%S).tar.gz
             # Same temp-name rule as the dump: only a complete, readable archive replaces or rotates out a good one.
             if tar -czf "$$a.part" -C /data "$$v" && tar -tzf "$$a.part" >/dev/null && mv "$$a.part" "$$a"; then
               log "wrote $$a ($$(du -h "$$a" | cut -f1))"
-              ls -1t /backups/$$v-*.tar.gz | tail -n +15 | xargs -r rm -f
+              ls -1t /backups/$$v-*.tar.gz | tail -n +$$((keep + 1)) | xargs -r rm -f
               upload "$$a"
             else
               rm -f "$$a.part"; log "$$v archive FAILED"
