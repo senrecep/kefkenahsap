@@ -1,6 +1,6 @@
 import type { Field, GlobalConfig } from 'payload'
 
-import { hiddenFromEditor, isStaff } from '@/access'
+import { isStaff } from '@/access'
 import { validateHref } from '@/lib/http/safe-href'
 import { revalidateGlobal } from '@/hooks/revalidate'
 
@@ -9,10 +9,12 @@ const link: Field[] = [
   { name: 'href', type: 'text', required: true, validate: validateHref, label: 'Adres', admin: { description: 'Dil öneki olmadan, ör. /referanslar' } },
 ]
 
+// #192: hidden from everyone in the admin: the header and footer menus are built in code (Header.tsx, Footer.tsx), so edits
+// here changed nothing on the site. Kept (not dropped) so no data or migration is lost.
 export const Navigation: GlobalConfig = {
   slug: 'navigation',
   label: 'Menüler',
-  admin: { hidden: hiddenFromEditor, group: 'Yönetim', hideAPIURL: true },
+  admin: { hidden: true, group: 'Yönetim', hideAPIURL: true },
   hooks: { afterChange: [revalidateGlobal('site')] },
   access: { read: () => true, update: isStaff },
   fields: [

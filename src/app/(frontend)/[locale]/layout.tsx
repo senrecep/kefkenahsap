@@ -67,7 +67,7 @@ export default async function LocaleLayout({
         <Header locale={locale as Locale} />
         <main id="main">{children}</main>
         {/* Right after the content so keyboard users reach the cookie choice before the footer. */}
-        <Analytics locale={locale} />
+        <Analytics locale={locale} settings={settings} />
         <Footer locale={locale as Locale} />
         <MobileActionBar locale={locale as Locale} />
         <JsonLd

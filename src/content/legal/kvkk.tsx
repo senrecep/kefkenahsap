@@ -1,14 +1,15 @@
 // Draft privacy notice (KVKK aydınlatma metni) used until a published `pages` doc (slug kvkk/privacy) exists.
 // Facts only from siteSettings and the actual form/infra (PLAN §10). A lawyer should review it before launch.
 import { Link } from '@/i18n/navigation'
+import { gaIdOf } from '@/lib/analytics'
 import { isMapEmbedUrl } from '@/lib/http/safe-href'
 
 type Controller = { name: string; address?: string; email?: string | null }
-/** What this deployment really loads: GA4 (env), Umami (env), the click-to-load Google map (siteSettings). */
+/** What this deployment really loads: GA4 (siteSettings, else env), Umami (env), the click-to-load Google map (siteSettings). */
 export type Uses = { ga: boolean; umami: boolean; map: boolean }
 /** One answer for the KVKK notice and the cookie policy (#156): measurement is named in both, or in neither. */
-export const legalUses = (settings: { address?: { mapEmbedUrl?: string | null } | null }): Uses => ({
-  ga: Boolean(process.env.NEXT_PUBLIC_GA_ID),
+export const legalUses = (settings: { gaId?: string | null; address?: { mapEmbedUrl?: string | null } | null }): Uses => ({
+  ga: Boolean(gaIdOf(settings)),
   umami: Boolean(process.env.NEXT_PUBLIC_UMAMI_SRC && process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID),
   map: isMapEmbedUrl(settings.address?.mapEmbedUrl),
 })

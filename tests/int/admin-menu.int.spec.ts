@@ -18,8 +18,9 @@ describe('admin nav per role', async () => {
     expect(entities.filter((e) => !isHidden(e, editor)).map((e) => e.slug).sort()).toEqual([...editorVisible].sort())
   })
 
-  it('admin sees everything except the always-hidden lead photos', () => {
-    expect(entities.filter((e) => isHidden(e, admin)).map((e) => e.slug)).toEqual(['lead-photos'])
+  // #192: Menüler is hidden from everyone too: the site's menus are built in code, so its edits changed nothing.
+  it('admin sees everything except the always-hidden lead photos and Menüler', () => {
+    expect(entities.filter((e) => isHidden(e, admin)).map((e) => e.slug)).toEqual(['lead-photos', 'navigation'])
   })
 
   it('a missing user is treated as hidden (fail closed)', () => {
