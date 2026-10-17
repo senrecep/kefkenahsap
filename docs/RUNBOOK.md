@@ -9,7 +9,7 @@ Operational notes for kefkenahsap.com. Secrets are never written here.
 | Server | 45.196.28.107 (`ssh senrecep`), Dokploy, Docker 28 |
 | Dokploy project | `kefkenahsap` — environments `development` (development.kefkenahsap.com) and `production` |
 | Cloudflare zone | kefkenahsap.com (Free plan, SSL Full) |
-| R2 buckets | `kefkenahsap` (prod media, public via `cdn.kefkenahsap.com`), `kefkenahsap-dev` (dev media, `cdn-dev.kefkenahsap.com`), `kefkenahsap-backups` (private, DB dumps and volume archives). Lead photos and the clean originals of watermarked uploads are **not** in R2: they live on private disk volumes (`lead-photos`, `media-originals`), never served by the CDN; a private bucket for them needs a new owner token (#51) |
+| R2 buckets | `kefkenahsap` (prod media, public via `cdn.kefkenahsap.com`), `kefkenahsap-dev` (`cdn-dev.kefkenahsap.com`; the deployed dev app actually uses `kefkenahsap` with `S3_PREFIX=dev`, served at `cdn.kefkenahsap.com/dev/`), `kefkenahsap-backups` (private, DB dumps and volume archives). Lead photos and the clean originals of watermarked uploads are **not** in R2: they live on private disk volumes (`lead-photos`, `media-originals`), never served by the CDN; a private bucket for them needs a new owner token (#51) |
 | Cache rule | `kefken: cdn immutable` — 1 year edge + browser on both CDN hosts |
 | Turnstile | widget `kefkenahsap` (kefkenahsap.com, development.kefkenahsap.com, localhost) |
 | Old WordPress | still at güzelhosting (104.247.167.3) behind the apex/www records until launch (#53) |
@@ -52,7 +52,7 @@ ssh senrecep "docker rm -f kefken-gh-runner-$N; mkdir -p /var/lib/kefken-runner-
 
 - Dokploy compose `app` (id `e9_MpMOeFkF1QLwEItoeq`, appName `compose-reboot-haptic-feed-t5r4ra`) in project `kefkenahsap` / environment `production`, raw compose = `docker-compose.dokploy.yml`, isolated deployment. The same environment holds the unrelated `wood-material-calculator` stack.
 - Env in Dokploy and in the owner's local `.dokploy-prod.env`; `COMPOSE_PROFILES=backup`, no basic auth.
-- Cutover steps (deploy gate, seed, domain/TLS, DNS, rollback): `docs/LAUNCH.md`.
+- Go-live (deploy gate, dev → prod data promotion with `scripts/launch/promote-sanitize.sql`, domain/TLS, DNS, rollback): `docs/LAUNCH.md`. After launch, content is edited only in the prod admin.
 
 ### New image sizes for existing media
 
