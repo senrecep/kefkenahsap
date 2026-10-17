@@ -41,6 +41,8 @@ jobs:
     # The self-hosted runner has the host Docker socket: never run code from forks on it.
     if: github.event_name == 'push' || github.event.pull_request.head.repo.full_name == github.repository
     timeout-minutes: 50
+    # Data dirs are tmpfs: the images declare a VOLUME, and the runner removes service containers but not their
+    # anonymous volumes, which piled up on the shared host (#206).
     services:
       postgres:
         image: postgres:17-alpine
@@ -51,12 +53,14 @@ jobs:
         ports: ['5432']
         options: >-
           --health-cmd "pg_isready -U kefken" --health-interval 5s --health-retries 20
+          --tmpfs /var/lib/postgresql/data
       s3:
         image: rustfs/rustfs:1.0.1
         env:
           RUSTFS_ACCESS_KEY: ciaccess
           RUSTFS_SECRET_KEY: cisecret123
         ports: ['9000']
+        options: --tmpfs /data
     steps:
       - uses: actions/checkout@v4
       - uses: oven-sh/setup-bun@v2
