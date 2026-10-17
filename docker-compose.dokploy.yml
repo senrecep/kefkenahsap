@@ -22,6 +22,9 @@ services:
       S3_SECRET_ACCESS_KEY: ${S3_SECRET_ACCESS_KEY:?}
       S3_FORCE_PATH_STYLE: ${S3_FORCE_PATH_STYLE:-false}
       MEDIA_PUBLIC_URL: ${MEDIA_PUBLIC_URL:?}
+      # Purges deleted/replaced media from the CDN edge cache (#185); a token with only Zone → Cache Purge. Empty = skipped.
+      CLOUDFLARE_ZONE_ID: ${CLOUDFLARE_ZONE_ID:-}
+      CLOUDFLARE_PURGE_TOKEN: ${CLOUDFLARE_PURGE_TOKEN:-}
       OPENROUTER_API_KEY: ${OPENROUTER_API_KEY:-}
       RESEND_API_KEY: ${RESEND_API_KEY:-}
       LEADS_NOTIFY_EMAIL: ${LEADS_NOTIFY_EMAIL:-}

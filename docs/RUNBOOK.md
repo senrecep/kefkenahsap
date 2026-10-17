@@ -73,6 +73,12 @@ bun run payload run scripts/media/add-sizes.ts -- --yes       # ~2.5 min for 568
 
 Check the printed host, bucket and endpoint before adding `--yes`. Run it after the deploy that carries the migration; until then, pages simply use the existing sizes.
 
+### CDN purge of deleted and replaced media (#185)
+
+Media is served from `cdn.kefkenahsap.com` / `cdn-dev.kefkenahsap.com` with a one-year edge cache. Deleting a media document (or replacing its file) removes the objects from R2, but Cloudflare would keep serving them for up to a year. The app therefore purges the exact URLs (main file + every size) through the Cloudflare API after a delete or file replace. It never blocks or fails the save/delete; a failure is logged (`media: CDN purge after … failed`) and sent to GlitchTip when `SENTRY_DSN` is set.
+- **Pending (owner):** in Cloudflare → My Profile → API Tokens → Create Custom Token, permission **Zone → Cache Purge → Purge** only, Zone Resources **Include → Specific zone → kefkenahsap.com**, nothing else (no DNS, no edit scopes, no other zones). Put it in the Dokploy env of **both** `development` and `production` as `CLOUDFLARE_PURGE_TOKEN`, with `CLOUDFLARE_ZONE_ID=04160cf76d6ba4ad5d37d83145eaae57`; update the raw compose in Dokploy from `docker-compose.dokploy.yml` (it now passes both variables to `app`), then redeploy. Until then the app logs once `media: CLOUDFLARE_ZONE_ID / CLOUDFLARE_PURGE_TOKEN not set; …` and skips the purge.
+- Files deleted before the token was set are still cached: purge them by URL from the Cloudflare dashboard (Caching → Configuration → Custom Purge), or wait out the cache.
+
 ### Loading translations
 
 Translations for the locales other than TR/EN live in `seed/i18n/<locale>/`, which mirrors `seed/` (`content/**`, `media-meta/**`, `media-meta-archive/**`). TR/EN text fixes for the seeded photos live in `seed/i18n/sentence-case.json` (titles) and `seed/i18n/text-fixes.json` (any field, e.g. captions). The loaders fill only empty fields and skip missing files. A re-run writes nothing.
