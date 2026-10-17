@@ -32,7 +32,7 @@
     "recipients": {
       "title": "Who do we share it with?",
       "intro": "We do not sell your data or share it with anyone for advertising or marketing. We use these service providers to run the site:",
-      "cloudflare": "<b>Cloudflare, Inc. (USA):</b> site traffic passes through Cloudflare's network (fast loading and security). It runs the Turnstile check on the form. Site images and the off-server copy of database backups are kept in Cloudflare R2 storage, in a private area.",
+      "cloudflare": "<b>Cloudflare, Inc. (USA):</b> site traffic passes through Cloudflare's network (fast loading and security). It runs the Turnstile check on the form. Site images and the off-server copy of database and photo backups are kept in Cloudflare R2 storage, in a private area.",
       "resend": "<b>Resend (USA):</b> sends us a notification e-mail when a new request arrives. The e-mail contains your name, phone, e-mail, service, location and message; photos are not attached.",
       "gmail": "<b>Google (Gmail, USA):</b> the mailbox that receives those notifications and where we write to you.",
       "ga": "<b>Google (Analytics, USA):</b> visit statistics, only if you accept cookies.",
@@ -55,7 +55,7 @@
     },
     "security": {
       "title": "How do we protect it?",
-      "text": "Your connection to the site is encrypted (HTTPS). Only authorised people who sign in to the admin panel with a password see requests. The form is protected by a security check, a rate limit and file type and size checks. Backups are kept in private storage."
+      "text": "Your connection to the site is encrypted (HTTPS). Requests in the admin panel are visible only to authorised people who sign in with a password. The form is protected by a security check, a rate limit and file type and size checks. Backups are kept in private storage."
     },
     "rights": {
       "title": "What are your rights?",

@@ -32,7 +32,7 @@
     "recipients": {
       "title": "An wen geben wir Daten weiter?",
       "intro": "Wir verkaufen Ihre Daten nicht und geben sie nicht für Werbung oder Marketing weiter. Für den Betrieb der Website nutzen wir diese Dienstleister:",
-      "cloudflare": "<b>Cloudflare, Inc. (USA):</b> Der Datenverkehr der Website läuft über das Netz von Cloudflare (schnelles Laden und Sicherheit). Cloudflare führt die Turnstile-Prüfung im Formular durch. Website-Bilder und die externe Kopie der Datenbanksicherungen liegen im Speicher Cloudflare R2, in einem nicht öffentlichen Bereich.",
+      "cloudflare": "<b>Cloudflare, Inc. (USA):</b> Der Datenverkehr der Website läuft über das Netz von Cloudflare (schnelles Laden und Sicherheit). Cloudflare führt die Turnstile-Prüfung im Formular durch. Website-Bilder und die externe Kopie der Datenbank- und Fotosicherungen liegen im Speicher Cloudflare R2, in einem nicht öffentlichen Bereich.",
       "resend": "<b>Resend (USA):</b> sendet uns bei einer neuen Anfrage eine Benachrichtigungs-E-Mail. Sie enthält Name, Telefon, E-Mail, Leistung, Ort und Nachricht; Fotos werden nicht angehängt.",
       "gmail": "<b>Google (Gmail, USA):</b> das Postfach, in dem diese Benachrichtigungen eingehen und über das wir Ihnen schreiben.",
       "ga": "<b>Google (Analytics, USA):</b> Besuchsstatistik, nur wenn Sie Cookies akzeptieren.",
@@ -55,7 +55,7 @@
     },
     "security": {
       "title": "Wie schützen wir Ihre Daten?",
-      "text": "Ihre Verbindung zur Website ist verschlüsselt (HTTPS). Anfragen sehen nur befugte Personen, die sich mit Passwort im Verwaltungsbereich anmelden. Das Formular ist durch eine Sicherheitsprüfung, eine Begrenzung der Versuche und eine Prüfung von Dateityp und -größe geschützt. Sicherungen liegen in nicht öffentlichen Speichern."
+      "text": "Ihre Verbindung zur Website ist verschlüsselt (HTTPS). Anfragen im Verwaltungsbereich sehen nur befugte Personen, die sich mit Passwort anmelden. Das Formular ist durch eine Sicherheitsprüfung, eine Begrenzung der Versuche und eine Prüfung von Dateityp und -größe geschützt. Sicherungen liegen in nicht öffentlichen Speichern."
     },
     "rights": {
       "title": "Welche Rechte haben Sie?",

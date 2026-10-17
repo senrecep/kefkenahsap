@@ -32,7 +32,7 @@
     "recipients": {
       "title": "Verilerinizi kimlerle paylaşıyoruz?",
       "intro": "Verilerinizi satmıyoruz, reklam veya pazarlama için kimseyle paylaşmıyoruz. Siteyi çalıştırmak için şu hizmet sağlayıcıları kullanıyoruz:",
-      "cloudflare": "<b>Cloudflare, Inc. (ABD):</b> sitenin trafiği Cloudflare ağından geçer (hızlı yükleme ve güvenlik). Formdaki Turnstile doğrulamasını yapar. Site görselleri ve veritabanı yedeklerinin sunucu dışındaki kopyası Cloudflare R2 depolamasında, herkese kapalı bir alanda durur.",
+      "cloudflare": "<b>Cloudflare, Inc. (ABD):</b> sitenin trafiği Cloudflare ağından geçer (hızlı yükleme ve güvenlik). Formdaki Turnstile doğrulamasını yapar. Site görselleri ve veritabanı ve fotoğraf yedeklerinin sunucu dışındaki kopyası Cloudflare R2 depolamasında, herkese kapalı bir alanda durur.",
       "resend": "<b>Resend (ABD):</b> yeni talep geldiğinde bize bildirim e-postası gönderir. E-postada adınız, telefonunuz, e-postanız, hizmet, konum ve mesajınız yer alır; fotoğraflar e-postaya eklenmez.",
       "gmail": "<b>Google (Gmail, ABD):</b> bildirim e-postalarının geldiği ve sizinle yazıştığımız e-posta kutumuz.",
       "ga": "<b>Google (Analytics, ABD):</b> yalnızca çerez onayı verirseniz ziyaret istatistikleri.",
@@ -55,7 +55,7 @@
     },
     "security": {
       "title": "Verilerinizi nasıl koruyoruz?",
-      "text": "Siteyle bağlantınız şifrelidir (HTTPS). Talepleri yalnızca yönetim paneline şifreyle giren yetkili kişiler görür. Form; güvenlik doğrulaması, deneme sınırı ve dosya türü ile boyutu denetimiyle korunur. Yedekler herkese kapalı alanlarda tutulur."
+      "text": "Siteyle bağlantınız şifrelidir (HTTPS). Yönetim panelindeki talepleri yalnızca panele şifreyle giren yetkili kişiler görür. Form; güvenlik doğrulaması, deneme sınırı ve dosya türü ile boyutu denetimiyle korunur. Yedekler herkese kapalı alanlarda tutulur."
     },
     "rights": {
       "title": "Haklarınız nelerdir?",
