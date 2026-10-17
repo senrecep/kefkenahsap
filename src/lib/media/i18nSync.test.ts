@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { changedFields, type I18nSync, planSync, settleSync, textHash } from './i18nSync'
+import { backfillSync, changedFields, type I18nSync, planSync, settleSync, textHash } from './i18nSync'
 
 // Provenance of a locale field the AI wrote from a given TR text.
 const made = (tr: string, ai: string) => ({ src: textHash(tr), ai: textHash(ai) })
@@ -130,5 +130,25 @@ describe('settleSync (the stored state after a job)', () => {
       failed: true,
     })
     expect(next).toEqual({ stale: { en: 'failed', de: 'failed', ar: 'edited' } })
+  })
+})
+
+describe('backfillSync (seeded photos: their non-TR texts came from the seed AI pipeline)', () => {
+  it('records the current TR text as source and the current locale text as AI text, skipping empty locale fields', () => {
+    const sync = backfillSync({ title: 'Kamelya', alt: 'Çam kamelya', caption: null }, { en: { title: 'Gazebo', alt: '' }, de: { title: 'Pavillon', alt: 'Kiefernpavillon' } })
+    expect(sync).toEqual({
+      prov: {
+        en: { title: { src: textHash('Kamelya'), ai: textHash('Gazebo') } },
+        de: { title: { src: textHash('Kamelya'), ai: textHash('Pavillon') }, alt: { src: textHash('Çam kamelya'), ai: textHash('Kiefernpavillon') } },
+      },
+    })
+  })
+  it('a photo with no non-TR text gets nothing to record', () => {
+    expect(backfillSync({ title: 'Kamelya' }, { en: {}, de: { alt: ' ' } })).toBeNull()
+  })
+  it('after a backfill, a TR edit makes the job rewrite the locale (it reads as AI text)', () => {
+    const tr = { alt: 'Çam kamelya' }
+    const sync = { ...backfillSync(tr, { en: { alt: 'Pine gazebo' } })!, pending: ['alt' as const] }
+    expect(planSync({ tr: { alt: 'Teak kamelya' }, locales: { en: { alt: 'Pine gazebo' } }, sync, force: false }).translate).toEqual({ en: ['alt'] })
   })
 })

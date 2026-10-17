@@ -1,12 +1,15 @@
 'use client'
 
 import { useDocumentInfo, useFormFields, useFormModified } from '@payloadcms/ui'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import { localesStatus } from '@/lib/media/galeri'
 import type { I18nSync } from '@/lib/media/i18nSync'
 import './ai.css'
 
+// While a translation is pending: re-read the photo's state every 10 s for at most 3 min, only while the tab is visible.
+const POLL_MS = 10_000
+const POLL_FOR_MS = 3 * 60_000
 const CONFIRM = 'Başlık, alt metin ve açıklama Türkçe metinden diğer tüm dillere yeniden çevrilecek. Elle düzenlenmiş çeviriler de değişir. Devam edilsin mi?'
 
 /**
@@ -24,7 +27,28 @@ export function MediaLocalesSync(props: {
 }) {
   const [busy, setBusy] = useState(false)
   const [error, setError] = useState('')
-  const status = localesStatus(props.sync)
+  // The state read by polling; a new state from the parent (save, refresh) replaces it.
+  const [polled, setPolled] = useState<{ base: I18nSync | null | undefined; sync: I18nSync | null }>()
+  const sync = polled && polled.base === props.sync ? polled.sync : props.sync
+  const status = localesStatus(sync)
+  const pending = Boolean(sync?.pending?.length)
+
+  useEffect(() => {
+    if (!pending) return
+    const base = props.sync
+    const started = Date.now()
+    const timer = setInterval(async () => {
+      if (Date.now() - started > POLL_FOR_MS) return clearInterval(timer)
+      if (document.visibilityState !== 'visible') return
+      try {
+        const res = await fetch(`/api/media/${props.id}?depth=0&locale=tr&select[i18nSync]=true`, { credentials: 'include' })
+        if (res.ok) setPolled({ base, sync: ((await res.json()) as { i18nSync?: I18nSync | null }).i18nSync ?? null })
+      } catch {
+        // Offline for a moment: the next tick tries again.
+      }
+    }, POLL_MS)
+    return () => clearInterval(timer)
+  }, [pending, props.id, props.sync])
 
   async function retranslate() {
     if (!window.confirm(CONFIRM)) return

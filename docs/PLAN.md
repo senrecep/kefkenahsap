@@ -334,7 +334,7 @@ F2: Rehber dizini + yazı şablonu (TOC, FAQ, "AI'ya kopyala" butonu, yazar kutu
 6. info@kefkenahsap.com aktifleşince NAP güncellemesi (tek global alan).
 7. Müşteri yorumları ve referans logo izinleri.
 8. Fotoğraf ağırlığı (#116): gerçek fotoğraflarla Lighthouse mobil performansı ana sayfa/kategori/galeride ~80. Ara türev genişlik (`w480`) eklenip mevcut türevler yeniden üretilsin mi? Media yükleme ayarını değiştirir; karar bekliyor.
-9. Seed fotoğraflarının (~568) dil metinlerinde köken kaydı (#203) yok: TR düzenlenince diğer diller otomatik çevrilmez, "elle düzenlenmiş" sayılıp eski olabilir diye işaretlenir. İstenirse bunlar için toplu köken kaydı ("AI metni say") yazılabilir; incelenmiş metinlerin sessizce üzerine yazılmaması için yapılmadı, karar bekliyor.
+9. ~~Seed fotoğraflarının dil metinlerinde köken kaydı yok (#203).~~ Karar (2026-10-18): seed metinleri seed AI hattında üretildi ve elle düzenlenmedi, AI metni sayılır. `scripts/seed/media-provenance.ts` kaydı olmayan her fotoğrafa mevcut metinlerden köken kaydı yazar (metne dokunmaz, boş alanları çeviriye bırakır, iş kuyruğa almaz, tekrar çalışınca bir şey yazmaz); dev'e merge sonrası çalıştırılır.
 
 ## 13.1 Lansman sonrası kullanıcı işleri (not alındı, en sonda yapılacak)
 - [ ] GSC: Domain mülkü doğrulaması (TXT → Cloudflare'e eklenir), GA4 ↔ GSC bağlantısı, Performans (16 ay, sorgu+sayfa) ve Sayfalar raporu CSV dışa aktarımı → `docs/legacy/gsc/`.

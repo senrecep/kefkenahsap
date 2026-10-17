@@ -81,3 +81,15 @@ export function settleSync(a: {
   for (const locale of Object.keys(prov)) if (!Object.keys(prov[locale]!).length) delete prov[locale]
   return { ...(Object.keys(prov).length && { prov }), ...(Object.keys(stale).length && { stale }) }
 }
+
+/**
+ * Provenance for a photo that has none (seeded before #203): its non-TR texts came from the seed AI pipeline and were
+ * never hand-edited, so the current texts count as the AI's, made from the current TR text. Empty fields are left out
+ * (they get translated). Null when there is nothing to record.
+ */
+export function backfillSync(tr: Texts, locales: Record<string, Texts>): I18nSync | null {
+  const prov: NonNullable<I18nSync['prov']> = {}
+  for (const [locale, texts] of Object.entries(locales))
+    for (const f of SYNC_FIELDS) if (norm(texts[f])) (prov[locale] ??= {})[f] = { src: textHash(tr[f]), ai: textHash(texts[f]) }
+  return Object.keys(prov).length ? { prov } : null
+}

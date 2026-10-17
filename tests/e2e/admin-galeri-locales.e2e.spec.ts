@@ -8,7 +8,7 @@ import { login } from '../helpers/login'
 // #203: the Galeri card says whether the other languages follow the TR text, and "Diğer dillere yeniden çevir"
 // rewrites them (fake model: "[DE] <TR text>").
 test('Galeri: TR edit shows the translation state; "Diğer dillere yeniden çevir" updates every language', async ({ browser }) => {
-  test.setTimeout(120_000)
+  test.setTimeout(240_000)
   const payload = await getPayload({ config })
   const run = Date.now()
   const testUser = { email: `galeri-diller-${run}@local.test`, password: `galeri-diller-${run}`, name: 'E2E Diller', role: 'admin' as const }
@@ -41,6 +41,10 @@ test('Galeri: TR edit shows the translation state; "Diğer dillere yeniden çevi
         await card.getByRole('button', { name: 'Kaydet', exact: true }).click()
         await expect(status).toHaveText('TR değişti, çeviriliyor…')
         if (process.env.UPDATE_SCREENSHOTS) await page.screenshot({ path: 'docs/screens/admin-galeri-diller-desktop.png', fullPage: true })
+        // The dev server's cron runs the job (≤1 min); the card polls every 10 s and flips without a reload.
+        await expect(status).toHaveText('Diller: güncel', { timeout: 100_000 })
+        const en = await payload.findByID({ collection: 'media', id: photo.id, locale: 'en', fallbackLocale: false, depth: 0 })
+        expect(en.alt).toBe('[EN] Çam kamelya, oturma grubu ve çiçeklik')
       }
 
       page.once('dialog', (d) => void d.accept())
