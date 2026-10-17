@@ -10,7 +10,7 @@
       "title": "Hangi verilerinizi işliyoruz?",
       "form": "<b>Teklif formuna yazdıklarınız:</b> ad soyad, telefon, e-posta (isteğe bağlı), hizmet, il ve ilçe, mesajınız ve eklediğiniz en fazla 5 fotoğraf.",
       "meta": "<b>Formla birlikte kaydedilenler:</b> formu gönderdiğiniz sayfa, dil ve an; varsa kampanya bağlantısı (utm) bilgisi; okuduğunuzu işaretlediğiniz aydınlatma metninin sürümü.",
-      "ip": "<b>IP adresiniz:</b> formu kötüye kullanıma karşı korumak için yalnızca bellekte, 10 dakikalık bir sayaçta tutulur ve Cloudflare Turnstile doğrulamasına gönderilir. Diske yazılmaz, talebinizle birlikte kaydedilmez.",
+      "ip": "<b>IP adresiniz:</b> formu kötüye kullanıma karşı korumak için yalnızca bellekte, 10 dakikalık bir sayaçta tutulur ve Cloudflare Turnstile doğrulamasına gönderilir. Pencere bitince bir sonraki istekte silinir. Diske yazılmaz, talebinizle birlikte kaydedilmez.",
       "visit": "<b>Siteyi gezerken tarayıcınızın gönderdiği teknik bilgiler:</b> IP adresi, tarayıcı türü, açtığınız sayfa ve zaman. Bunlar siteyi size göstermek ve korumak için işlenir.",
       "errors": "<b>Hata kayıtları:</b> sitede bir hata olursa teknik hata kaydı kendi sunucumuzda tutulur. Kayda girmeden önce e-posta adresi ve telefon numarası gibi bilgiler otomatik olarak silinir.",
       "umami": "<b>Çerezsiz ziyaret istatistiği:</b> Umami ile hangi sayfaların açıldığını ve WhatsApp, telefon gibi bağlantılara kaç kez tıklandığını sayarız. Umami kendi sunucumuzda çalışır, çerez kullanmaz ve sizi tanımlamaz.",

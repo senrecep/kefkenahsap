@@ -10,7 +10,7 @@
       "title": "What data do we process?",
       "form": "<b>What you enter in the quote form:</b> name, phone, e-mail (optional), service, city and district, your message and up to 5 photos you attach.",
       "meta": "<b>Saved with the form:</b> the page, language and time you sent it; campaign link (utm) data if present; the version of the privacy notice you confirmed you had read.",
-      "ip": "<b>Your IP address:</b> held only in memory, in a 10-minute counter, to protect the form against abuse, and sent to the Cloudflare Turnstile check. It is never written to disk or saved with your request.",
+      "ip": "<b>Your IP address:</b> held only in memory, in a 10-minute counter, to protect the form against abuse, and sent to the Cloudflare Turnstile check. Once the window ends, it is deleted on the next request. It is never written to disk or saved with your request.",
       "visit": "<b>Technical data your browser sends while you browse:</b> IP address, browser type, the page you open and the time. It is processed to show you the site and keep it secure.",
       "errors": "<b>Error logs:</b> if something breaks, a technical error record is kept on our own server. E-mail addresses, phone numbers and similar data are removed automatically before it is stored.",
       "umami": "<b>Cookieless visit statistics:</b> with Umami we count which pages are opened and how often links such as WhatsApp and phone are clicked. Umami runs on our own server, uses no cookies and does not identify you.",

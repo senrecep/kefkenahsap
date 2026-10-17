@@ -10,7 +10,7 @@
       "title": "Welche Daten verarbeiten wir?",
       "form": "<b>Ihre Angaben im Angebotsformular:</b> Name, Telefon, E-Mail (freiwillig), Leistung, Provinz und Bezirk, Ihre Nachricht und bis zu 5 angehängte Fotos.",
       "meta": "<b>Mit dem Formular gespeichert:</b> Seite, Sprache und Zeitpunkt des Absendens; gegebenenfalls Kampagnendaten (utm); die Version der Datenschutzhinweise, deren Kenntnisnahme Sie bestätigt haben.",
-      "ip": "<b>Ihre IP-Adresse:</b> wird nur im Arbeitsspeicher in einem 10-Minuten-Zähler gehalten, um das Formular vor Missbrauch zu schützen, und an die Cloudflare-Turnstile-Prüfung übermittelt. Sie wird nie auf Datenträger geschrieben und nicht mit Ihrer Anfrage gespeichert.",
+      "ip": "<b>Ihre IP-Adresse:</b> wird nur im Arbeitsspeicher in einem 10-Minuten-Zähler gehalten, um das Formular vor Missbrauch zu schützen, und an die Cloudflare-Turnstile-Prüfung übermittelt. Nach Ablauf des Zeitfensters wird sie bei der nächsten Anfrage gelöscht. Sie wird nie auf Datenträger geschrieben und nicht mit Ihrer Anfrage gespeichert.",
       "visit": "<b>Technische Daten, die Ihr Browser beim Surfen sendet:</b> IP-Adresse, Browsertyp, aufgerufene Seite und Uhrzeit. Sie werden verarbeitet, um Ihnen die Website anzuzeigen und sie zu schützen.",
       "errors": "<b>Fehlerprotokolle:</b> Tritt ein Fehler auf, wird ein technischer Fehlerbericht auf unserem eigenen Server gespeichert. E-Mail-Adressen, Telefonnummern und ähnliche Angaben werden vorher automatisch entfernt.",
       "umami": "<b>Cookielose Besuchsstatistik:</b> Mit Umami zählen wir, welche Seiten aufgerufen und wie oft Links wie WhatsApp oder Telefon angeklickt werden. Umami läuft auf unserem eigenen Server, setzt keine Cookies und identifiziert Sie nicht.",
@@ -47,7 +47,7 @@
     "abroad": {
       "title": "Werden Ihre Daten ins Ausland übermittelt?",
       "text": "Ja. Cloudflare, Resend, Google und Meta (WhatsApp) sind Unternehmen mit Sitz in den USA und verarbeiten Daten auf Servern außerhalb der Türkei. Die Angaben aus Ihrem Angebotsformular laufen über Cloudflare, Resend und Google, WhatsApp-Nachrichten über Meta.",
-      "basis": "Diese Übermittlungen erfolgen mit geeigneten Garantien nach Art. 9/4 KVKK: Wir haben mit diesen Unternehmen den von der Datenschutzbehörde veröffentlichten Standardvertrag geschlossen und jeden innerhalb von 5 Werktagen nach Unterzeichnung der Datenschutzbehörde (Kişisel Verileri Koruma Kurumu) gemeldet."
+      "basis": "Diese Übermittlungen erfolgen mit geeigneten Garantien nach Art. 9/4 KVKK: Wir haben mit diesen Unternehmen den Standardvertrag geschlossen, den der Datenschutzrat (Kişisel Verileri Koruma Kurulu, „Kurul“) veröffentlicht hat, und jeden Vertrag innerhalb von 5 Werktagen nach Unterzeichnung der KVKK-Behörde (Kişisel Verileri Koruma Kurumu, „Kurum“) gemeldet."
     },
     "retention": {
       "title": "Wie lange speichern wir Ihre Daten?",

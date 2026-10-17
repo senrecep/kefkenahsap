@@ -204,6 +204,12 @@ SEED_REMOTE=1 bun run payload run scripts/seed/text-fixes-180.ts -- --yes
 
 ## Owner notes (admin)
 
+### Monthly: delete notification mails and WhatsApp chats older than 2 years (KVKK notice, #195)
+
+The privacy notice promises that notification e-mails and WhatsApp messages are kept for 2 years. Nothing deletes them automatically, so once a month:
+- Gmail (the `LEADS_NOTIFY_EMAIL` inbox): search `older_than:2y from:<sender>`, where `<sender>` is the Resend from-address of the "Yeni talep" mails. Select all results, delete them, then empty the Bin.
+- WhatsApp (the business phone): delete chats with customers whose last message is older than 2 years.
+
 - **After saving in the admin, the public page shows the new version on the next load** (#192). The revalidate hooks expire the cached data at once (`revalidateTag(tag, { expire: 0 })` in `src/hooks/revalidate.ts`), so the first visit after a save waits for a fresh render (a second or two) instead of showing the old page. Before #192 they used `'max'` (stale-while-revalidate): the first load after a save showed the old version, the next one the new. Still possible after a save: a tab that was already open keeps its page until it is reloaded, and a scripted seed run (no Next runtime) needs an app restart, as the seed sections below say.
 - **New photos get their texts in every language** (#192, `tagImage@4`): one AI call writes title, alt text and caption in TR, EN, RU, DE and AR, only into empty fields. Text you typed in any language is never replaced. The photo stays "Onay bekliyor" until you approve it; the Galeri card shows the AI's confidence, whether the photo fits the category (flagged "Kontrol edin" when confidence is under 50% or it does not fit) and the tags "Onayla" will add.
 - **Fields under "Yalnızca AI taslakları için"** (Site Bilgileri → Şirket: ekip büyüklüğü, proje sayısı; Kurucu → mesleğe başlama yılı) are not shown on the site. "AI ile taslak" uses them as facts, so fill them only with verified numbers.

@@ -108,7 +108,7 @@ Work through the phases in order and tick each step. Never paste a secret value 
 11. [ ] **[Owner]** GitHub environment `production`: `gh variable list -R senrecep/kefkenahsap -e production` shows the three `NEXT_PUBLIC_*` with prod values. If Umami goes live (decision 6), also set `NEXT_PUBLIC_UMAMI_WEBSITE_ID` and `NEXT_PUBLIC_UMAMI_SRC` now.
 12. [ ] **[Claude] APPROVAL. Sync the prod raw compose with the repo (#189).** Dokploy → `kefkenahsap` / production → `app` → General → Raw compose. Replace it with `docker-compose.dokploy.yml` from `origin/development`, then Save. **Don't deploy.** (Over the API: `compose.update` with `composeFile`.) Step 2.7 diffs it again right before the gate opens.
     - It must happen before the first deploy. Otherwise the first boot has no `media-originals` volume, and clean originals land in the container and vanish on the next redeploy (#189).
-    - **Also sync the `development` raw compose** (where GlitchTip runs today) and redeploy it: the compose sets the GlitchTip event retention to 30 days, which the privacy notice promises (#195).
+    - **Also sync the `development` raw compose** (where GlitchTip runs today) and redeploy it: the compose sets the GlitchTip event retention to 30 days (`GLITCHTIP_RETENTION_DAYS`, legacy `GLITCHTIP_MAX_EVENT_LIFE_DAYS`), which the privacy notice promises (#195).
 
 ### 1C. Old site and DNS safety
 
