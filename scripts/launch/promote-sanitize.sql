@@ -28,9 +28,13 @@ END $$;
 -- Personal data and dev runtime state. Jobs go too: queued AI jobs would call OpenRouter on prod's first boot.
 -- ai_usage goes so dev spend never counts toward prod's monthly AI budget.
 TRUNCATE leads, leads_rels, lead_photos, users_sessions, payload_preferences, payload_preferences_rels,
-  payload_locked_documents, payload_locked_documents_rels, payload_jobs, payload_jobs_log, payload_kv, ai_usage;
+  payload_locked_documents, payload_locked_documents_rels, payload_jobs, payload_jobs_log, payload_jobs_stats, payload_kv,
+  ai_usage RESTART IDENTITY;
 
 DELETE FROM users WHERE lower(email) <> lower(current_setting('promote.owner'));
+-- The owner starts unlocked and without a pending reset link; the password itself is rotated in LAUNCH 2G (set-password.ts).
+UPDATE users SET login_attempts = 0, lock_until = NULL, reset_password_token = NULL, reset_password_expiration = NULL,
+  reset_password_requested_at = NULL;
 
 -- Media: prefix dev → root. Every stored URL column (url, sizes_*_url, thumbnail_u_r_l), found from the schema so a new
 -- image size is covered without editing this file.
@@ -57,7 +61,7 @@ BEGIN
            WHERE c.table_schema = 'public' AND t.table_type = 'BASE TABLE'
              AND c.data_type IN ('text', 'character varying', 'jsonb', 'json')
   LOOP
-    EXECUTE format($q$SELECT count(*) FROM %I WHERE %I::text ~ '(cdn\.kefkenahsap\.com/dev/|cdn-dev\.kefkenahsap\.com|development\.kefkenahsap\.com|localhost:)'$q$,
+    EXECUTE format($q$SELECT count(*) FROM %I WHERE %I::text ~ '(cdn\.kefkenahsap\.com/dev/|cdn-dev\.kefkenahsap\.com|kefkenahsap-dev|development\.kefkenahsap\.com|glitchtip-dev\.|localhost[:/]|127\.0\.0\.1|kefken-media/)'$q$,
                    r.table_name, r.column_name) INTO n;
     IF n > 0 THEN INSERT INTO promote_leftovers VALUES (r.table_name || '.' || r.column_name, n); END IF;
   END LOOP;
