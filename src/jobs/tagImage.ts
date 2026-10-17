@@ -3,6 +3,7 @@ import { Result } from 'tsentials/result'
 import { SystemDateTimeProvider } from 'tsentials/time'
 
 import { checkBudget } from '@/ai/budget'
+import { routing } from '@/i18n/routing'
 import { aiModel, resolveChain } from '@/ai/models'
 import { knownTypes, TAG_IMAGE_PROMPT_VERSION, TagImageSchema, tagImageSystem, tagImageTypesLine } from '@/ai/prompts/tagImage'
 import { failureUsage, runStructured } from '@/ai/run'
@@ -21,7 +22,9 @@ export const tagImageTask: TaskConfig<'tagImage'> = {
     const budget = checkBudget(spent.reduce((s, d) => s + (d.costUsd ?? 0), 0), settings.monthlyBudgetUsd)
     if (Result.isFailure(budget)) return { output: { result: budget.errors[0]!.code } }
 
-    const media = await payload.findByID({ collection: 'media', id: input.mediaId, depth: 1, locale: 'tr', req })
+    // A photo deleted before its job ran: nothing to describe, and not a failed job.
+    const media = await payload.findByID({ collection: 'media', id: input.mediaId, depth: 1, locale: 'tr', disableErrors: true, req })
+    if (!media) return { output: { result: 'Media.NotFound' } }
     // Idempotent: a retried job never pays twice for the same image.
     if ((media.aiSuggestion as { at?: string } | null)?.at) return { output: { result: 'skipped:already-suggested' } }
     const sized = media.sizes?.w960
@@ -78,20 +81,16 @@ export const tagImageTask: TaskConfig<'tagImage'> = {
         aiSuggestion: { ...output, model, promptVersion: TAG_IMAGE_PROMPT_VERSION, at: SystemDateTimeProvider.utcNow().toISOString() },
       },
     })
-    // fallbackLocale false: an empty EN field must read as empty, not as the TR value.
-    const en = await payload.findByID({ collection: 'media', id: media.id, locale: 'en', fallbackLocale: false, depth: 0, req })
-    await payload.update({
-      collection: 'media',
-      id: media.id,
-      locale: 'en',
-      context: ctx,
-      req,
-      data: {
-        ...(blank(en.title) ? { title: output.title.en } : {}),
-        ...(blank(en.alt) ? { alt: output.alt.en } : {}),
-        ...(blank(en.caption) ? { caption: output.caption.en } : {}),
-      },
-    })
+    // #192: every other locale from the same answer. fallbackLocale false: an empty field must read as empty, not as the TR value.
+    for (const locale of routing.locales.filter((l) => l !== 'tr')) {
+      const doc = await payload.findByID({ collection: 'media', id: media.id, locale, fallbackLocale: false, depth: 0, req })
+      const data = {
+        ...(blank(doc.title) ? { title: output.title[locale] } : {}),
+        ...(blank(doc.alt) ? { alt: output.alt[locale] } : {}),
+        ...(blank(doc.caption) ? { caption: output.caption[locale] } : {}),
+      }
+      if (Object.keys(data).length) await payload.update({ collection: 'media', id: media.id, locale, context: ctx, req, data })
+    }
     return { output: { result: `ok:${model}` } }
   },
 }

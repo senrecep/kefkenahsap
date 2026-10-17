@@ -91,7 +91,7 @@ describe('tagImage job', () => {
       await payload.jobs.run()
       const tr = await payload.findByID({ collection: 'media', id: m.id, locale: 'tr' })
       const s = tr.aiSuggestion as { promptVersion: string; tags: { type: string[] } }
-      expect(s.promptVersion).toBe('tagImage@3')
+      expect(s.promptVersion).toBe('tagImage@4')
       expect(s.tags.type).toHaveLength(1)
       expect(s.tags.type[0]).not.toBe('Uydurma tür')
       const usage = await payload.find({ collection: 'ai-usage', where: { docRef: { equals: `media:${m.id}` } } })
@@ -99,6 +99,29 @@ describe('tagImage job', () => {
     } finally {
       await payload.delete({ collection: 'tags', id: tag.id })
     }
+  })
+
+  it('#192: fills every locale from one call and keeps text a person wrote in any of them', async () => {
+    const m = await payload.create({ collection: 'media', locale: 'tr', data: {}, filePath: IMG })
+    created.push({ collection: 'media', id: m.id })
+    await payload.update({ collection: 'media', id: m.id, locale: 'de', data: { alt: 'Von Hand geschriebener Alt-Text' }, context: { skipAi: true } })
+    await payload.jobs.queue({ task: 'tagImage', input: { mediaId: String(m.id) } })
+    await payload.jobs.run()
+    const read = (locale: 'ru' | 'de' | 'ar') => payload.findByID({ collection: 'media', id: m.id, locale, fallbackLocale: false, depth: 0 })
+    const [ru, de, ar] = await Promise.all([read('ru'), read('de'), read('ar')])
+    expect([ru.title, ru.alt, ru.caption]).toEqual([SUGGESTION.title.ru, SUGGESTION.alt.ru, SUGGESTION.caption.ru])
+    expect(ar.alt).toBe(SUGGESTION.alt.ar)
+    expect(de.alt).toBe('Von Hand geschriebener Alt-Text')
+    expect(de.title).toBe(SUGGESTION.title.de)
+    const usage = await payload.find({ collection: 'ai-usage', where: { docRef: { equals: `media:${m.id}` } } })
+    usage.docs.forEach((d) => created.push({ collection: 'ai-usage', id: d.id }))
+    expect(usage.totalDocs).toBe(1)
+  })
+
+  it('#192: a photo deleted before its job runs is skipped, not a failed job', async () => {
+    const job = await payload.jobs.queue({ task: 'tagImage', input: { mediaId: '987654321' } })
+    const { jobStatus } = await payload.jobs.run()
+    expect(jobStatus?.[String(job.id)]?.status).toBe('success')
   })
 
   it('#57: a model changed in AI Ayarları is used by the next job', async () => {

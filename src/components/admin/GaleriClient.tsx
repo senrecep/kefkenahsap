@@ -6,6 +6,7 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 
 import type { Media } from '@/payload-types'
 import {
+  aiReview,
   fitWithin,
   initialFilter,
   isTruncated,
@@ -15,13 +16,15 @@ import {
   type StatusFilter,
   statusCounts,
 } from '@/lib/media/galeri'
+import type { TagRef } from '@/lib/media/taxonomy'
 import './galeri.css'
 
 type Option = { id: number; name: string }
-type Item = Pick<Media, 'id' | 'status' | 'title' | 'alt' | 'aiSuggestion' | 'url' | 'filename' | 'sizes' | '_media_media_order'>
+type Item = Pick<Media, 'id' | 'status' | 'title' | 'alt' | 'aiSuggestion' | 'tags' | 'url' | 'filename' | 'sizes' | '_media_media_order'>
 type QueueEntry = { key: string; name: string; state: 'waiting' | 'working' | 'done' | 'error'; message?: string }
 
 const MAX_EDGE = 2560
+const percent = new Intl.NumberFormat('tr', { style: 'percent' })
 const STORE_KEY = 'galeri.secim'
 const NETWORK_ERROR = 'Bağlantı kurulamadı. İnternetinizi kontrol edip tekrar deneyin.'
 const FILTERS: [StatusFilter, string, string][] = [
@@ -77,7 +80,7 @@ function readStored(): { category?: number; project?: number } {
   }
 }
 
-export function GaleriClient({ categories, projects }: { categories: Option[]; projects: Option[] }) {
+export function GaleriClient({ categories, projects, tags }: { categories: Option[]; projects: Option[]; tags: TagRef[] }) {
   const [category, setCategory] = useState<number | undefined>(categories[0]?.id)
   const [project, setProject] = useState<number | undefined>()
   // #169: uploads get the site watermark unless the editor opts out for this batch.
@@ -523,6 +526,8 @@ export function GaleriClient({ categories, projects }: { categories: Option[]; p
                     <p className={m.alt ? 'galeri__alt' : 'galeri__alt galeri__alt--empty'}>{m.alt || 'Alt metin yok'}</p>
                   </div>
 
+                  {m.status !== 'approved' && <AiFacts review={aiReview(m, tags)} />}
+
                   {cardError[m.id] && (
                     <p className="galeri__error" role="alert">
                       {cardError[m.id]}
@@ -588,6 +593,43 @@ export function GaleriClient({ categories, projects }: { categories: Option[]; p
           </ol>
         </>
       )}
+    </div>
+  )
+}
+
+/** #192: the AI's confidence and category check, flagged when doubtful, and the tags "Onayla" will attach. */
+function AiFacts({ review }: { review: ReturnType<typeof aiReview> }) {
+  if (!review) return null
+  const low = review.confidence !== undefined && review.confidence < 0.5
+  return (
+    <div className="galeri__ai" data-doubtful={review.doubtful || undefined}>
+      {review.doubtful && (
+        <p className="galeri__ai-flag">
+          <strong>Kontrol edin:</strong>{' '}
+          {[low && 'AI bu fotoğraftan emin değil.', review.categoryAgrees === false && 'Fotoğraf bu kategoriye uymuyor olabilir.'].filter(Boolean).join(' ')}
+        </p>
+      )}
+      <dl className="galeri__ai-facts">
+        {review.confidence !== undefined && (
+          <div>
+            <dt>AI güveni</dt>
+            <dd>
+              {percent.format(review.confidence)}
+              {low && ' (düşük)'}
+            </dd>
+          </div>
+        )}
+        {review.categoryAgrees !== undefined && (
+          <div>
+            <dt>Kategoriye uyuyor</dt>
+            <dd>{review.categoryAgrees ? 'Evet' : 'Hayır'}</dd>
+          </div>
+        )}
+        <div>
+          <dt>Onaylayınca eklenecek etiketler</dt>
+          <dd>{review.addTags.length ? review.addTags.join(', ') : 'Yok'}</dd>
+        </div>
+      </dl>
     </div>
   )
 }
