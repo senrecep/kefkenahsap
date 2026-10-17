@@ -8,7 +8,7 @@ import { routing } from '@/i18n/routing'
 import { buildMetadata, fullTitle, siteOgImage } from './metadata'
 
 const SITE = 'https://www.kefkenahsap.com'
-const ALT = 'Kefken Ahşap Dekorasyon — Ahşap deck, pergola'
+const ALT = 'Kefken Ahşap Dekorasyon: Ahşap deck, pergola'
 const card = { url: '/og-tr.png', width: 1200, height: 630, alt: ALT }
 const base = { siteName: 'Kefken Ahşap Dekorasyon', site: SITE, title: 'Deck ve Zeminler', description: 'Iroko ve teak deck.', ogImage: card }
 
