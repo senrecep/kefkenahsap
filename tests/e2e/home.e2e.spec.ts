@@ -177,7 +177,10 @@ test.describe('hero slideshow (#187)', () => {
     // revalidateTag is stale-while-revalidate (and the test before rewrites the homepage): wait for the slideshow.
     await expect(async () => expect(await (await request.get('/tr')).text()).toContain('aria-roledescription="carousel"')).toPass({ timeout: 45_000 })
   })
-  test.afterAll(async () => restore())
+  test.afterAll(async () => {
+    test.setTimeout(60_000)
+    await restore()
+  })
 
   const hero = (page: Page) => page.locator('main section').first()
   const dot = (page: Page, n: number) => hero(page).getByRole('button', { name: new RegExp(`^${tr.Home.heroSlide.replace('{n}', String(n)).replace('{total}', '\\d+')}$`) })
@@ -228,6 +231,11 @@ test.describe('hero slideshow (#187)', () => {
     await dot(page, 2).click()
     await expect(dot(page, 2)).toHaveAttribute('aria-current', 'true')
     expect(await hero(page).locator('[data-slide="1"]').evaluate((el) => getComputedStyle(el).animationName)).toBe('none')
+    // The indicators are one tab stop; the arrow keys move along them.
+    await page.keyboard.press('ArrowRight')
+    await expect(dot(page, 3)).toHaveAttribute('aria-current', 'true')
+    await expect(dot(page, 3)).toBeFocused()
+    expect(await hero(page).locator('button:not([tabindex="-1"])').count()).toBe(2) // pause + the current indicator
   })
 
   test('phones: 44px controls between the photo and the title, and a swipe changes the photo', async ({ browser }) => {

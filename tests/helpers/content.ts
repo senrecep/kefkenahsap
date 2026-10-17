@@ -74,5 +74,7 @@ export async function ensureHeroSlides(api: APIRequestContext): Promise<() => Pr
   expect(res.ok(), await res.text()).toBe(true)
   return async () => {
     await api.post('/api/globals/homepage?locale=tr', { data: { layout, _status: current._status ?? 'published' } })
+    // Stale-while-revalidate: wait until /tr drops the slideshow, so the next spec meets the single hero again.
+    await expect(async () => expect(await (await api.get('/tr')).text()).not.toContain('aria-roledescription="carousel"')).toPass({ timeout: 45_000 })
   }
 }

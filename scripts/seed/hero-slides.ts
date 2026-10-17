@@ -3,8 +3,9 @@
 // picks the hero image): a homepage without a hero block is skipped with a message.
 // Photos are matched by seedKey and must exist and be approved here; a missing one is skipped, not guessed. The order is
 // the slide order after the hero image: varied services, alternating warm and cool frames, all landscape ≥2560px wide
-// with the single watermark in the middle (clear of the bottom-left headline). Picked by eye from the 'good' quality
-// review (image-work/review/assignments.jsonl); contact sheet: docs/screens/187-hero-slides-contact.jpg.
+// with a single, centred watermark. On desktop the wide frames put it near the headline's first line, under the 0.64
+// scrim (white text stays ≥4.5:1); on phones the text sits on Ink below the photo. Picked by eye from the 'good'
+// quality review (image-work/review/assignments.jsonl); contact sheet: docs/screens/187-hero-slides-contact.jpg.
 // The write keeps every block id and field (Payload merges per-language texts by block). It is published when the latest
 // homepage version is, else saved as a draft next to the owner's unpublished changes.
 // --dry-run writes nothing; a non-local database (or SEED_REMOTE=1) needs --yes; SITE_ENV=production is refused.

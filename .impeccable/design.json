@@ -195,6 +195,16 @@
         "purpose": "Hero scrim fades up alongside the settle."
       },
       {
+        "name": "drift",
+        "value": "drift 9s cubic-bezier(0.25, 0.1, 0.25, 1) both; from { transform: scale(1.06) }",
+        "purpose": "Hero slideshow (#187): each following photo crossfades in (1.4s, every 6.5s) and settles over its stay."
+      },
+      {
+        "name": "progress",
+        "value": "progress linear both (6.5s); from { transform: scaleX(0) }",
+        "purpose": "Hero slideshow: the current photo's indicator fills while it shows; holds when paused."
+      },
+      {
         "name": "state-change",
         "value": "colors 150ms",
         "purpose": "Every hover/press colour change. Reduced motion collapses all animation and transition to 0.01ms."
@@ -305,7 +315,7 @@
   ],
   "narrative": {
     "northStar": "The Finished Job, One Tap From a Human",
-    "overview": "This is the contractor-site standard built with care. Real job photographs carry every section. Copy is short and plain. The way to reach a person (WhatsApp, a phone call or a quote form) stays within reach on every page. The system adds no decoration of its own: wood appears only in the photos, the ground is a warm white, the text is a near-black ink, and one green marks every action. The craft is in execution: AA contrast over photos, 48px tap targets, hairline structure, a single motion moment, and empty states that always offer a next step.\n\nThe density is calm and documentary. Pages are photo grids and hairline lists separated by generous vertical rhythm, with no cards and no icon tiles. The site is built to feel like a tradesman's honest portfolio, not a luxury brand and not a template theme. It deliberately rejects the template version of this genre: slider heroes, icon-card grids, stock photos, and green used everywhere.",
+    "overview": "This is the contractor-site standard built with care. Real job photographs carry every section. Copy is short and plain. The way to reach a person (WhatsApp, a phone call or a quote form) stays within reach on every page. The system adds no decoration of its own: wood appears only in the photos, the ground is a warm white, the text is a near-black ink, and one green marks every action. The craft is in execution: AA contrast over photos, 48px tap targets, hairline structure, a single motion moment, and empty states that always offer a next step.\n\nThe density is calm and documentary. Pages are photo grids and hairline lists separated by generous vertical rhythm, with no cards and no icon tiles. The site is built to feel like a tradesman's honest portfolio, not a luxury brand and not a template theme. It deliberately rejects the template version of this genre: icon-card grids, stock photos, and green used everywhere. The hero does cycle through real job photos (owner request, 2026-10-17, #187), but as a slow crossfade behind a fixed headline, not a template slider with arrows and per-slide captions.",
     "keyCharacteristics": [
       "Full-bleed real photography. Nothing is illustrated, and wood is never drawn.",
       "One action green, reserved for buttons, links and the WhatsApp cell.",
@@ -313,7 +323,7 @@
       "10px corners on photos and controls. Pills only for filter chips and lightbox controls.",
       "Structure comes from 1px hairlines, not cards or boxes.",
       "Flat at rest, with one soft shadow reserved for floating elements.",
-      "One authored motion moment (the hero settle). Everything else is instant or a 150ms colour change."
+      "One authored motion moment: the hero settle, carried on by the hero's photo crossfade, where each following photo settles the same way, only slower. Everything else is instant or a 150ms colour change."
     ],
     "rules": [
       {
@@ -361,7 +371,7 @@
       "**Do** keep every tap target at 44px or more (48px for buttons and menu rows), and write layout with logical properties.",
       "**Do** give every empty state a next step: chips to categories, or a WhatsApp button.",
       "**Do** mark every form field \"zorunlu\" or \"isteğe bağlı\", and name the data processors in the consent label.",
-      "**Do** keep motion to the hero settle. Everything else is an instant or 150ms colour change, and all of it stops under reduced motion."
+      "**Do** keep motion to the hero settle and its photo crossfade. Everything else is an instant or 150ms colour change, and all of it stops under reduced motion."
     ],
     "donts": [
       "**Don't** add eyebrow or kicker labels above headings. Uppercase labels are allowed only when they are the heading or the term itself.",
@@ -371,7 +381,7 @@
       "**Don't** build icon-card grids or boxed cards. Use photos for work and hairline lists for text.",
       "**Don't** mix icon sets or use glyph or emoji icons. Use lucide only, with a 1.75 stroke.",
       "**Don't** use the logo greens (#009444, #39b54a) in UI, and don't add a second accent colour.",
-      "**Don't** use sliders, autoplay, carousels or stock or illustrated imagery.",
+      "**Don't** use sliders or carousels anywhere but the hero's photo crossfade, or stock or illustrated imagery.",
       "**Don't** nudge consent: Reddet and Kabul et always look identical."
     ]
   }

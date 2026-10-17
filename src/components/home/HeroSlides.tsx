@@ -1,7 +1,7 @@
 'use client'
 
 import { Pause, Play } from 'lucide-react'
-import { useCallback, useEffect, useRef, useState, useSyncExternalStore, type PointerEvent, type ReactNode } from 'react'
+import { useCallback, useEffect, useRef, useState, useSyncExternalStore, type KeyboardEvent, type PointerEvent, type ReactNode } from 'react'
 
 /** How long a photo stays before the next fades in (ms), and the fade itself (Tailwind duration below). */
 const STAY = 6500
@@ -43,6 +43,7 @@ export function HeroSlides({ children, slides, labels }: { children: ReactNode; 
   const left = useRef({ index: 0, ms: STAY })
   const pending = useRef<number | null>(null)
   const swipeX = useRef<number | null>(null)
+  const dots = useRef<(HTMLButtonElement | null)[]>([])
 
   const mount = useCallback((i: number) => setMounted((m) => (m.has(i) ? m : new Set(m).add(i))), [])
 
@@ -52,7 +53,8 @@ export function HeroSlides({ children, slides, labels }: { children: ReactNode; 
       left.current = { index: i, ms: STAY }
       pending.current = null
       setPrev(active)
-      setShown((s) => new Set(s).add(active))
+      // The incoming photo: layer 0 drifts only once it comes round again (it entered with its own settle).
+      setShown((s) => new Set(s).add(i))
       setActive(i)
       mount(i)
       mount((i + 1) % total)
@@ -149,6 +151,17 @@ export function HeroSlides({ children, slides, labels }: { children: ReactNode; 
     setChoice(!playing)
   }
 
+  // The indicators are one tab stop (the current one); arrow keys move along them, mirrored in RTL like the row.
+  const onDotKey = (e: KeyboardEvent<HTMLButtonElement>) => {
+    const rtl = getComputedStyle(e.currentTarget).direction === 'rtl'
+    const step = { ArrowRight: rtl ? -1 : 1, ArrowLeft: rtl ? 1 : -1 }[e.key]
+    const to = e.key === 'Home' ? 0 : e.key === 'End' ? total - 1 : step === undefined ? null : (active + step + total) % total
+    if (to === null) return
+    e.preventDefault()
+    goTo(to)
+    dots.current[to]?.focus()
+  }
+
   // Dragging the photo sideways: toward the start brings the next one (mirrored in RTL), as in the lightbox.
   const onPointerUp = (e: PointerEvent) => {
     if (swipeX.current === null) return
@@ -190,22 +203,26 @@ export function HeroSlides({ children, slides, labels }: { children: ReactNode; 
 
       {/* Phones: just under the photo, on the Ink text ground (the Hero leaves room above the H1), so they cover none of
           the work. From md the text block sits on the photo's foot, so they float at its top corner on the container's
-          end edge (Container: max-w-7xl, md:px-6), in a lightbox-style dark pill. 44px targets. */}
-      <div className="absolute start-1 top-full z-[3] mt-1 flex max-w-[calc(100%-0.5rem)] items-center text-white md:start-auto md:end-[max(1.5rem,calc((100%-80rem)/2+1.5rem))] md:top-6 md:mt-0 md:rounded-full md:bg-ink/60 md:shadow-[var(--shadow-float)]">
+          end edge (Container: max-w-7xl, md:px-6), in a lightbox-style Ink pill. 44px targets. */}
+      <div className="absolute start-1 top-full z-[3] mt-1 flex max-w-[calc(100%-0.5rem)] items-center text-white md:start-auto md:end-[max(1.5rem,calc((100%-80rem)/2+1.5rem))] md:top-6 md:mt-0 md:rounded-full md:bg-ink/75 md:shadow-[var(--shadow-float)]">
         <button type="button" onClick={toggle} aria-label={playing ? labels.pause : labels.play} className="inline-flex size-11 shrink-0 items-center justify-center rounded-full transition-colors hover:bg-white/15">
           {playing ? <Pause aria-hidden size={18} strokeWidth={1.75} /> : <Play aria-hidden size={18} strokeWidth={1.75} />}
         </button>
         {labels.slides.map((label, i) => (
           <button
             key={i}
+            ref={(el) => void (dots.current[i] = el)}
             type="button"
+            tabIndex={i === active ? 0 : -1}
             onClick={() => goTo(i)}
+            onKeyDown={onDotKey}
             aria-label={label}
             aria-current={i === active ? 'true' : undefined}
-            className="group inline-flex h-11 w-11 min-w-0 shrink items-center justify-center rounded-full"
+            className={`group size-11 shrink-0 items-center justify-center rounded-full ${i === active ? 'inline-flex' : 'hidden min-[22.5rem]:inline-flex'}`}
           >
-            {/* The current photo's bar is longer, and fills while it shows; the others stay short (≥3:1 on the pill). */}
-            <span aria-hidden className={`relative h-[3px] overflow-hidden rounded-full transition-colors ${i === active ? 'w-7 bg-white/40' : 'w-3 bg-white/75 group-hover:bg-white'}`}>
+            {/* The current photo's bar is longer, and fills while it shows; the others stay short. Every bar holds ≥3:1 on
+                the Ink 75% pill over a white patch, and on Ink. Under 360px only the current one shows (44px targets). */}
+            <span aria-hidden className={`relative h-[3px] overflow-hidden rounded-full transition-colors ${i === active ? 'w-7 bg-white/50' : 'w-3 bg-white/75 group-hover:bg-white'}`}>
               {i === active && (
                 <span
                   key={active}
