@@ -60,7 +60,7 @@ jobs:
           RUSTFS_ACCESS_KEY: ciaccess
           RUSTFS_SECRET_KEY: cisecret123
         ports: ['9000']
-        options: --tmpfs /data
+        options: --tmpfs /data:uid=10001,gid=10001 # rustfs runs as uid 10001
     steps:
       - uses: actions/checkout@v4
       - uses: oven-sh/setup-bun@v2
