@@ -16,11 +16,13 @@ import {
   type StatusFilter,
   statusCounts,
 } from '@/lib/media/galeri'
+import type { I18nSync } from '@/lib/media/i18nSync'
 import type { TagRef } from '@/lib/media/taxonomy'
+import { MediaLocalesSync } from './ai/MediaLocalesSync'
 import './galeri.css'
 
 type Option = { id: number; name: string }
-type Item = Pick<Media, 'id' | 'status' | 'title' | 'alt' | 'aiSuggestion' | 'tags' | 'url' | 'filename' | 'sizes' | '_media_media_order'>
+type Item = Pick<Media, 'id' | 'status' | 'title' | 'alt' | 'aiSuggestion' | 'i18nSync' | 'tags' | 'url' | 'filename' | 'sizes' | '_media_media_order'>
 type QueueEntry = { key: string; name: string; state: 'waiting' | 'working' | 'done' | 'error'; message?: string }
 
 const MAX_EDGE = 2560
@@ -216,6 +218,16 @@ export function GaleriClient({ categories, projects, tags }: { categories: Optio
       return false
     } finally {
       setBusy(null)
+    }
+  }
+
+  /** #203: re-reads one photo after "Diğer dillere yeniden çevir", so its card shows the new language state. */
+  async function refresh(id: number) {
+    try {
+      const doc = await api<Item>(`/api/media/${id}?depth=0&locale=tr`)
+      setItems((list) => list.map((m) => (m.id === id ? doc : m)))
+    } catch (e) {
+      setCardError((errs) => ({ ...errs, [id]: (e as Error).message }))
     }
   }
 
@@ -527,6 +539,16 @@ export function GaleriClient({ categories, projects, tags }: { categories: Optio
                   </div>
 
                   {m.status !== 'approved' && <AiFacts review={aiReview(m, tags)} />}
+
+                  <div className="galeri__langs">
+                    <MediaLocalesSync
+                      id={m.id}
+                      sync={m.i18nSync as I18nSync | null}
+                      buttonClassName="galeri__btn"
+                      statusClassName="galeri__langs-status"
+                      onDone={() => void refresh(m.id)}
+                    />
+                  </div>
 
                   {cardError[m.id] && (
                     <p className="galeri__error" role="alert">

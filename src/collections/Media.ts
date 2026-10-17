@@ -15,6 +15,9 @@ import { Result } from 'tsentials/result'
 import { SystemDateTimeProvider } from 'tsentials/time'
 
 import { approvedOrStaff, isStaff, roleOf } from '@/access'
+import { isFakeAi } from '@/ai/models'
+import { routing } from '@/i18n/routing'
+import { changedFields, type I18nSync } from '@/lib/media/i18nSync'
 import { mediaFileURL } from '@/lib/media/url'
 import { createCdnPurger, mediaPublicURLs } from '@/lib/media/cdn-purge'
 import { createReporter } from '@/lib/observability/report'
@@ -205,6 +208,49 @@ const queueAiSuggestion: CollectionAfterChangeHook = async ({ doc, operation, re
   return doc
 }
 
+const TRANSLATE_QUEUED = 'translateMediaIds'
+
+/**
+ * #203: keeps the other locales in step with the TR title/alt/caption. A TR edit marks the changed fields pending and
+ * queues translateMedia (queueTranslation); a person editing another locale takes it off the stale list. Writes with
+ * `skipAi` (the translate job itself, tagImage, seed/import scripts) set i18nSync themselves and never queue; from
+ * anyone else a sent i18nSync is ignored (the edit form resubmits the hidden field with whatever it loaded).
+ */
+const trackTranslations: CollectionBeforeChangeHook = async ({ data, operation, originalDoc, req }) => {
+  if (req.context.skipAi) return data
+  let sync = (originalDoc?.i18nSync ?? null) as I18nSync | null
+  const changed = operation === 'update' && originalDoc ? changedFields(data, originalDoc) : []
+  if (changed.length && req.locale === routing.defaultLocale) {
+    // No `req`: Payload would switch req.locale (see publishGate).
+    const settings = await req.payload.findGlobal({ slug: 'aiSettings', depth: 0 })
+    if ((process.env.OPENROUTER_API_KEY || isFakeAi()) && settings.enabled !== false) {
+      sync = { ...sync, pending: [...new Set([...(sync?.pending ?? []), ...changed])] }
+      ;((req.context[TRANSLATE_QUEUED] ??= []) as unknown[]).push(originalDoc!.id)
+    } else {
+      const others = routing.locales.filter((l) => l !== routing.defaultLocale)
+      sync = { ...sync, stale: { ...Object.fromEntries(others.map((l) => [l, 'failed'])), ...sync?.stale } }
+    }
+  } else if (changed.length && req.locale && sync?.stale?.[req.locale]) {
+    const { [req.locale]: _, ...stale } = sync.stale
+    sync = { ...sync, stale }
+  }
+  return { ...data, i18nSync: sync }
+}
+
+/** Queues the translation marked by trackTranslations. Never fails the save; the card then shows the pending state. */
+const queueTranslation: CollectionAfterChangeHook = async ({ doc, req }) => {
+  const ids = req.context[TRANSLATE_QUEUED] as unknown[] | undefined
+  if (!ids?.includes(doc.id)) return doc
+  req.context[TRANSLATE_QUEUED] = ids.filter((i) => i !== doc.id)
+  try {
+    // No `req`: a failed insert inside the save's transaction would abort the save itself.
+    await req.payload.jobs.queue({ task: 'translateMedia', queue: 'translateMedia', input: { mediaId: String(doc.id) } })
+  } catch (err) {
+    req.payload.logger.warn({ err, media: doc.id }, 'media: could not queue translateMedia')
+  }
+  return doc
+}
+
 export const Media: CollectionConfig = {
   slug: 'media',
   labels: { singular: 'Görsel', plural: 'Görseller' },
@@ -220,8 +266,8 @@ export const Media: CollectionConfig = {
   hooks: {
     beforeOperation: [stampUpload],
     afterOperation: [sendCdnPurge],
-    beforeChange: [truthfulWatermark, placeholder, publishGate, attachSuggestedTags],
-    afterChange: [purgeReplacedFile, revalidateAfterChange('media', 'categories', 'projects'), queueAiSuggestion],
+    beforeChange: [truthfulWatermark, placeholder, publishGate, attachSuggestedTags, trackTranslations],
+    afterChange: [purgeReplacedFile, revalidateAfterChange('media', 'categories', 'projects'), queueAiSuggestion, queueTranslation],
     afterDelete: [revalidateAfterDelete('media', 'categories', 'projects'), purgeDeletedFile],
   },
   fields: [
@@ -241,6 +287,14 @@ export const Media: CollectionConfig = {
     { name: 'title', type: 'text', localized: true, label: 'Başlık' },
     { name: 'alt', type: 'text', localized: true, label: 'Alt metin', maxLength: 125 },
     { name: 'caption', type: 'textarea', localized: true, label: 'Açıklama' },
+    {
+      // #203: other locales vs the TR texts, and "Diğer dillere yeniden çevir".
+      name: 'localesSync',
+      type: 'ui',
+      admin: { components: { Field: '/components/admin/ai/MediaLocalesSync#MediaLocalesSyncField' } },
+    },
+    // #203: provenance of the AI-made locale texts, pending TR fields, stale locales (src/lib/media/i18nSync.ts).
+    { name: 'i18nSync', type: 'json', admin: { hidden: true } },
     { name: 'seoFilename', type: 'text', label: 'SEO dosya adı', index: true, admin: { position: 'sidebar' } },
     { name: 'category', type: 'relationship', relationTo: 'categories', index: true, label: 'Kategori' },
     { name: 'tags', type: 'relationship', relationTo: 'tags', hasMany: true, label: 'Etiketler' },

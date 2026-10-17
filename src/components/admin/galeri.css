@@ -378,6 +378,24 @@
   font-weight: 700;
 }
 
+/* #203: the other languages vs the TR text, with "Diğer dillere yeniden çevir". */
+.galeri__langs {
+  display: grid;
+  gap: 8px;
+}
+
+.galeri__langs-status {
+  margin: 0;
+  font-size: 16px;
+  color: var(--theme-elevation-800);
+}
+
+.galeri__langs-status[data-tone='busy'],
+.galeri__langs-status[data-tone='wait'] {
+  color: var(--theme-warning-800);
+  font-weight: 700;
+}
+
 .galeri__editor {
   display: grid;
   gap: 12px;

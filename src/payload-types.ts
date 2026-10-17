@@ -149,6 +149,7 @@ export interface Config {
     tasks: {
       purgeExpiredLeads: TaskPurgeExpiredLeads;
       tagImage: TaskTagImage;
+      translateMedia: TaskTranslateMedia;
       inline: {
         input: unknown;
         output: unknown;
@@ -214,6 +215,15 @@ export interface Media {
   title?: string | null;
   alt?: string | null;
   caption?: string | null;
+  i18nSync?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
   seoFilename?: string | null;
   category?: (number | null) | Category;
   tags?: (number | Tag)[] | null;
@@ -786,7 +796,7 @@ export interface PayloadJob {
     | {
         executedAt: string;
         completedAt: string;
-        taskSlug: 'inline' | 'purgeExpiredLeads' | 'tagImage';
+        taskSlug: 'inline' | 'purgeExpiredLeads' | 'tagImage' | 'translateMedia';
         taskID: string;
         input?:
           | {
@@ -819,10 +829,14 @@ export interface PayloadJob {
         id?: string | null;
       }[]
     | null;
-  taskSlug?: ('inline' | 'purgeExpiredLeads' | 'tagImage') | null;
+  taskSlug?: ('inline' | 'purgeExpiredLeads' | 'tagImage' | 'translateMedia') | null;
   queue?: string | null;
   waitUntil?: string | null;
   processing?: boolean | null;
+  /**
+   * Used for concurrency control. Jobs with the same key are subject to exclusive/supersedes rules.
+   */
+  concurrencyKey?: string | null;
   meta?:
     | {
         [k: string]: unknown;
@@ -971,6 +985,7 @@ export interface MediaSelect<T extends boolean = true> {
   title?: T;
   alt?: T;
   caption?: T;
+  i18nSync?: T;
   seoFilename?: T;
   category?: T;
   tags?: T;
@@ -1383,6 +1398,7 @@ export interface PayloadJobsSelect<T extends boolean = true> {
   queue?: T;
   waitUntil?: T;
   processing?: T;
+  concurrencyKey?: T;
   meta?: T;
   updatedAt?: T;
   createdAt?: T;
@@ -1945,6 +1961,18 @@ export interface TaskPurgeExpiredLeads {
  * via the `definition` "TaskTagImage".
  */
 export interface TaskTagImage {
+  input: {
+    mediaId: string;
+  };
+  output: {
+    result?: string | null;
+  };
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "TaskTranslateMedia".
+ */
+export interface TaskTranslateMedia {
   input: {
     mediaId: string;
   };

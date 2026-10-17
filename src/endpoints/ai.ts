@@ -4,11 +4,13 @@ import { Err } from 'tsentials/errors'
 import { aiErrorResponse, aiGate, aiLimiter, isJsonRequest, positiveId } from '@/ai/guard'
 import { isDraftable, parseNotes } from '@/ai/draft/draft'
 import { draftDocument } from '@/ai/draft/run'
+import { syncMediaLocales } from '@/ai/translate/media'
 import { translateDocument } from '@/ai/translate/run'
 import { isTranslatable } from '@/ai/translate/segments'
 
 const translateLimiter = aiLimiter()
 const draftLimiter = aiLimiter()
+const mediaLimiter = aiLimiter()
 
 /** POST /api/ai/translate { collection, id }: the "AI ile çevir" button. */
 export const aiTranslateEndpoint: Endpoint = {
@@ -30,6 +32,31 @@ export const aiTranslateEndpoint: Endpoint = {
     } catch (e) {
       // Saving the draft can still fail (e.g. the translated slug is taken). Details go to the log only.
       req.payload.logger.error({ err: e, msg: 'ai translate failed' })
+      return aiErrorResponse(Err.unexpected('Translate.SaveFailed', 'save failed (see error log)'))
+    }
+  },
+}
+
+/**
+ * POST /api/ai/translate-media { id }: "Diğer dillere yeniden çevir" (#203). The owner's explicit action: every non-TR
+ * title/alt/caption of the photo is rewritten from the TR text, hand-edited ones too (the UI confirms first).
+ */
+export const aiTranslateMediaEndpoint: Endpoint = {
+  path: '/ai/translate-media',
+  method: 'post',
+  handler: async (req) => {
+    const log = (o: { code: string; detail: string }) => req.payload.logger.warn({ ...o, msg: 'ai translate-media refused/failed' })
+    if (!isJsonRequest(req.headers)) return aiErrorResponse(Err.validation('AI.BadContentType', 'non-JSON body'), log)
+    const gate = await aiGate(req.payload, req, mediaLimiter)
+    if (!gate.ok) return aiErrorResponse(gate.errors[0]!, log)
+    await addDataAndFileToRequest(req)
+    const id = positiveId((req.data as { id?: unknown } | undefined)?.id)
+    if (id === undefined) return aiErrorResponse(Err.validation('Translate.BadRequest', `id=${String((req.data as { id?: unknown })?.id)}`), log)
+    try {
+      const r = await syncMediaLocales({ payload: req.payload, req, id, force: true })
+      return r.ok ? Response.json(r.value) : aiErrorResponse(r.errors[0]!, log)
+    } catch (e) {
+      req.payload.logger.error({ err: e, msg: 'ai translate-media failed' })
       return aiErrorResponse(Err.unexpected('Translate.SaveFailed', 'save failed (see error log)'))
     }
   },

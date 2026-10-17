@@ -50,6 +50,7 @@ export const AI_MESSAGES: Record<string, { status: number; message: string }> = 
   'AI.BadContentType': { status: 415, message: 'Geçersiz istek.' },
   'Translate.BadRequest': { status: 400, message: 'Bu kayıt çevrilemez.' },
   'Translate.NotFound': { status: 404, message: 'Kayıt bulunamadı. Önce kaydedin.' },
+  'Media.NotFound': { status: 404, message: 'Fotoğraf bulunamadı; silinmiş olabilir.' },
   'Translate.NoSource': { status: 400, message: 'Çevrilecek metin yok: önce bir dilde başlığı doldurun.' },
   'Translate.NothingMissing': { status: 400, message: 'Tüm diller zaten dolu; çevrilecek eksik dil yok.' },
   'Translate.TooLong': { status: 400, message: 'Metin bir seferde çevrilemeyecek kadar uzun (en çok 20.000 karakter). Bir kısmını elle çevirin.' },

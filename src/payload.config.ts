@@ -18,10 +18,11 @@ import { Leads } from './collections/Leads'
 import { LeadPhotos } from './collections/LeadPhotos'
 import { purgeExpiredLeads } from './jobs/purgeExpiredLeads'
 import { tagImageTask } from './jobs/tagImage'
+import { translateMediaTask } from './jobs/translateMedia'
 import { AiUsage } from './collections/AiUsage'
 import { AiSettings } from './globals/AiSettings'
 import { isFakeAi } from './ai/models'
-import { aiDraftEndpoint, aiTranslateEndpoint } from './endpoints/ai'
+import { aiDraftEndpoint, aiTranslateEndpoint, aiTranslateMediaEndpoint } from './endpoints/ai'
 import { resendAdapter } from '@payloadcms/email-resend'
 import { redirectsPlugin } from '@payloadcms/plugin-redirects'
 import { hiddenFromEditor, isStaff } from './access'
@@ -96,6 +97,7 @@ export default buildConfig({
       },
     },
     aiTranslateEndpoint,
+    aiTranslateMediaEndpoint,
     aiDraftEndpoint,
   ],
   // The admin is Turkish only (one editor, one language); content localization below is separate.
@@ -131,9 +133,15 @@ export default buildConfig({
     defaultLocalePublishOption: 'active',
   },
   jobs: {
-    tasks: [purgeExpiredLeads, tagImageTask],
+    tasks: [purgeExpiredLeads, tagImageTask, translateMediaTask],
     // Runs queued jobs (AI tagging, retention, purge) every minute; tasks are added per feature.
-    autoRun: [{ cron: '* * * * *', queue: 'default' }],
+    // translateMedia (#203) has its own queue, so photo edits never hold up the default queue's run limit.
+    autoRun: [
+      { cron: '* * * * *', queue: 'default' },
+      { cron: '* * * * *', queue: 'translateMedia' },
+    ],
+    // translateMedia: one job per photo at a time, newer edits supersede queued ones (adds payload_jobs.concurrency_key).
+    enableConcurrencyControl: true,
     // Never under Vitest: tests run the queue themselves, and a cron tick between a test's queue() and run() took the job
     // away from it (flaky ai-tag int test, #192).
     shouldAutoRun: () => process.env.NODE_ENV !== 'test',
