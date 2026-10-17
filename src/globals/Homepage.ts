@@ -5,6 +5,8 @@ import { revalidateGlobal } from '@/hooks/revalidate'
 import { MAX_SLIDES } from '@/lib/home/slides'
 
 const enabled = { name: 'enabled', type: 'checkbox' as const, defaultValue: true, label: 'Göster' }
+// The public sees approved photos only (an unapproved pick would silently drop from the hero): offer only those.
+const approvedOnly = { status: { equals: 'approved' } } as const
 const heading = { name: 'heading', type: 'text' as const, localized: true, label: 'Başlık' }
 
 const blocks: Block[] = [
@@ -13,11 +15,12 @@ const blocks: Block[] = [
     labels: { singular: 'Hero', plural: 'Hero' },
     fields: [
       enabled,
-      { name: 'image', type: 'upload', relationTo: 'media', required: true, label: 'Görsel (gerçek proje)' },
+      { name: 'image', type: 'upload', relationTo: 'media', required: true, filterOptions: approvedOnly, label: 'Görsel (gerçek proje)' },
       {
         name: 'mobileImage',
         type: 'upload',
         relationTo: 'media',
+        filterOptions: approvedOnly,
         label: 'Telefon görseli (isteğe bağlı)',
         admin: { description: 'Telefonda bu görsel gösterilir. Filigranın başlığın arkasında kalmadığı dikey bir fotoğraf seçin; boşsa ana görsel kullanılır.' },
       },
@@ -27,6 +30,7 @@ const blocks: Block[] = [
         type: 'upload',
         relationTo: 'media',
         hasMany: true,
+        filterOptions: approvedOnly,
         maxRows: MAX_SLIDES - 1,
         label: 'Sonraki slaytlar',
         admin: {

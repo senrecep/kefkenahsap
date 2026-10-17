@@ -238,6 +238,36 @@ test.describe('hero slideshow (#187)', () => {
     expect(await hero(page).locator('button:not([tabindex="-1"])').count()).toBe(2) // pause + the current indicator
   })
 
+  test('desktop controls take the click (the text block and its scrim lie over the photo layer)', async ({ browser }) => {
+    for (const [path, width, height] of [['/de', 1366, 657], ['/tr', 1280, 600]] as const) {
+      const page = await (await browser.newContext({ viewport: { width, height } })).newPage()
+      await page.goto(path)
+      const controls = [hero(page).locator('button').first(), hero(page).getByRole('toolbar').getByRole('button').nth(1)]
+      for (const c of controls) {
+        const hit = await c.evaluate((el) => {
+          const r = el.getBoundingClientRect()
+          return el.contains(document.elementFromPoint(r.x + r.width / 2, r.y + r.height / 2))
+        })
+        expect(hit, `${path} ${width}×${height}`).toBe(true)
+      }
+      await controls[1]!.click()
+      await expect(controls[1]!).toHaveAttribute('aria-current', 'true')
+      await page.context().close()
+    }
+  })
+
+  test('320px: only the current indicator shows, and the arrow keys keep focus on it', async ({ browser }) => {
+    const page = await (await browser.newContext({ viewport: { width: 320, height: 640 }, reducedMotion: 'reduce' })).newPage()
+    await page.goto('/tr')
+    await expect(hero(page).getByRole('toolbar').getByRole('button').filter({ visible: true })).toHaveCount(1)
+    await dot(page, 1).focus()
+    await page.keyboard.press('ArrowRight')
+    await expect(dot(page, 2)).toHaveAttribute('aria-current', 'true')
+    await expect(dot(page, 2)).toBeFocused()
+    await page.keyboard.press('ArrowLeft')
+    await expect(dot(page, 1)).toBeFocused()
+  })
+
   test('phones: 44px controls between the photo and the title, and a swipe changes the photo', async ({ browser }) => {
     const page = await (await browser.newContext({ viewport: { width: 390, height: 844 }, hasTouch: true })).newPage()
     await page.goto('/tr')

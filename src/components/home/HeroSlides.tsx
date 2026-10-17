@@ -31,6 +31,8 @@ export function HeroSlides({ children, slides, labels }: { children: ReactNode; 
   // Layers whose photo is in the DOM / decoded; 0 is the server-rendered one.
   const [mounted, setMounted] = useState<ReadonlySet<number>>(() => new Set([0]))
   const [ready, setReady] = useState<ReadonlySet<number>>(() => new Set([0]))
+  // Photos that failed to load: the show skips them instead of waiting on them forever.
+  const [broken, setBroken] = useState<ReadonlySet<number>>(() => new Set())
   // Has the show come round to a layer again (layer 0 first appears with its own settle, not the drift)?
   const [shown, setShown] = useState<ReadonlySet<number>>(() => new Set())
   // Reduced motion: no autoplay unless the visitor presses play (the server renders the playing state).
@@ -44,6 +46,8 @@ export function HeroSlides({ children, slides, labels }: { children: ReactNode; 
   const pending = useRef<number | null>(null)
   const swipeX = useRef<number | null>(null)
   const dots = useRef<(HTMLButtonElement | null)[]>([])
+  // An indicator to focus once the render that shows it lands (under 360px only the current one is displayed).
+  const focusDot = useRef<number | null>(null)
 
   const mount = useCallback((i: number) => setMounted((m) => (m.has(i) ? m : new Set(m).add(i))), [])
 
@@ -63,18 +67,29 @@ export function HeroSlides({ children, slides, labels }: { children: ReactNode; 
   )
 
   const advance = useCallback(() => {
-    const next = (active + 1) % total
+    let next = (active + 1) % total
+    while (broken.has(next) && next !== active) next = (next + 1) % total
+    if (next === active) return
     if (ready.has(next)) goTo(next)
     else {
       // Slow network: wait on the next photo rather than fading to its blurred placeholder.
       pending.current = next
       mount(next)
     }
-  }, [active, total, ready, goTo, mount])
+  }, [active, total, ready, broken, goTo, mount])
 
+  // A photo the show waited on: fade to it once ready, but only while the show still runs (a pause or hold drops the
+  // wait; the timer asks again on resume). A failed one is skipped.
   useEffect(() => {
-    if (pending.current !== null && ready.has(pending.current)) goTo(pending.current)
-  }, [ready, goTo])
+    const p = pending.current
+    if (p === null) return
+    if (!running) pending.current = null
+    else if (ready.has(p)) goTo(p)
+    else if (broken.has(p)) {
+      pending.current = null
+      advance()
+    }
+  }, [ready, broken, running, goTo, advance])
 
   // The second photo is fetched only after the page's load event and an idle moment.
   useEffect(() => {
@@ -96,15 +111,37 @@ export function HeroSlides({ children, slides, labels }: { children: ReactNode; 
 
   // A photo counts as ready once decoded, so the crossfade never shows it half-painted.
   useEffect(() => {
+    const off: (() => void)[] = []
     for (const i of mounted) {
-      if (ready.has(i)) continue
+      if (ready.has(i) || broken.has(i)) continue
       const img = layers.current[i]?.querySelector('img')
       if (!img) continue
       const done = () => void img.decode().catch(() => undefined).then(() => setReady((r) => new Set(r).add(i)))
+      const fail = () => setBroken((b) => new Set(b).add(i))
       if (img.complete && img.naturalWidth) done()
-      else img.addEventListener('load', done, { once: true })
+      else if (img.complete) fail()
+      else {
+        img.addEventListener('load', done, { once: true })
+        img.addEventListener('error', fail, { once: true })
+        off.push(() => {
+          img.removeEventListener('load', done)
+          img.removeEventListener('error', fail)
+        })
+      }
     }
-  }, [mounted, ready])
+    return () => off.forEach((f) => f())
+  }, [mounted, ready, broken])
+
+  // The drift restarts each time a photo comes in, also when two photos take turns (their class never comes off).
+  useEffect(() => {
+    for (const a of layers.current[active]?.getAnimations() ?? []) if ((a as CSSAnimation).animationName === 'drift') a.currentTime = 0
+  }, [active])
+
+  // Arrow keys move focus with the current indicator, once it is displayed.
+  useEffect(() => {
+    if (focusDot.current === active) dots.current[active]?.focus()
+    focusDot.current = null
+  }, [active])
 
   // Hover, focus, a hidden tab and an off-screen hero hold the show; leaving them lets it run on.
   useEffect(() => {
@@ -124,6 +161,7 @@ export function HeroSlides({ children, slides, labels }: { children: ReactNode; 
     hero.addEventListener('focusout', focusOut)
     document.addEventListener('visibilitychange', visibility)
     io.observe(hero)
+    visibility() // a tab opened in the background starts hidden
     return () => {
       hero.removeEventListener('pointerenter', enter)
       hero.removeEventListener('pointerleave', leave)
@@ -158,8 +196,8 @@ export function HeroSlides({ children, slides, labels }: { children: ReactNode; 
     const to = e.key === 'Home' ? 0 : e.key === 'End' ? total - 1 : step === undefined ? null : (active + step + total) % total
     if (to === null) return
     e.preventDefault()
+    focusDot.current = to
     goTo(to)
-    dots.current[to]?.focus()
   }
 
   // Dragging the photo sideways: toward the start brings the next one (mirrored in RTL), as in the lightbox.
@@ -208,6 +246,8 @@ export function HeroSlides({ children, slides, labels }: { children: ReactNode; 
         <button type="button" onClick={toggle} aria-label={playing ? labels.pause : labels.play} className="inline-flex size-11 shrink-0 items-center justify-center rounded-full transition-colors hover:bg-white/15">
           {playing ? <Pause aria-hidden size={18} strokeWidth={1.75} /> : <Play aria-hidden size={18} strokeWidth={1.75} />}
         </button>
+        {/* APG toolbar: one tab stop, the arrow keys move along the indicators. */}
+        <div role="toolbar" aria-label={labels.group} className="flex items-center">
         {labels.slides.map((label, i) => (
           <button
             key={i}
@@ -233,6 +273,7 @@ export function HeroSlides({ children, slides, labels }: { children: ReactNode; 
             </span>
           </button>
         ))}
+        </div>
       </div>
     </div>
   )

@@ -7,9 +7,13 @@
 // scrim (white text stays ≥4.5:1); on phones the text sits on Ink below the photo. Picked by eye from the 'good'
 // quality review (image-work/review/assignments.jsonl); contact sheet: docs/screens/187-hero-slides-contact.jpg.
 // The write keeps every block id and field (Payload merges per-language texts by block). It is published when the latest
-// homepage version is, else saved as a draft next to the owner's unpublished changes.
+// homepage version is. When the latest version is a draft that differs from the published homepage (an owner's pending
+// edit, or a stale draft left by tests), it refuses: check the versions in the admin, then re-run with --use-draft to
+// add the slides to that draft (saved as a draft, nothing is published).
 // --dry-run writes nothing; a non-local database (or SEED_REMOTE=1) needs --yes; SITE_ENV=production is refused.
-// Run: bun run payload run scripts/seed/hero-slides.ts [-- --dry-run | --yes]
+// Run: bun run payload run scripts/seed/hero-slides.ts [-- --dry-run | --yes | --use-draft]
+// The site caches the homepage (unstable_cache) and this CLI process cannot revalidate the running server's cache:
+// restart / redeploy the app (or publish the homepage once in the admin) for the slides to show.
 import { getPayload } from 'payload'
 
 import config from '@/payload.config'
@@ -42,6 +46,14 @@ const picks = HERO_SLIDE_PICKS.flatMap((key) => {
 })
 
 const latest = await payload.findGlobal({ slug: 'homepage', locale: 'tr', fallbackLocale: false, draft: true, depth: 0 })
+if (latest._status !== 'published' && !process.argv.includes('--use-draft')) {
+  const published = await payload.findGlobal({ slug: 'homepage', locale: 'tr', fallbackLocale: false, draft: false, depth: 0 })
+  const shape = (l: unknown) => JSON.stringify(l ?? [])
+  if (shape(latest.layout) !== shape(published.layout)) {
+    console.error(`${dry}hero slides: the latest homepage version is a draft that differs from the published one (blocks: ${(latest.layout ?? []).map((b) => b.blockType).join(', ') || 'none'}). Check the versions in the admin; re-run with --use-draft to add the slides to that draft. Nothing written.`)
+    process.exit(1)
+  }
+}
 type Layout = Parameters<typeof fillHeroSlides>[0]
 const next = fillHeroSlides((latest.layout ?? []) as unknown as Layout, picks)
 if (!next.filled) {
@@ -51,6 +63,6 @@ if (!next.filled) {
 }
 const publish = latest._status === 'published'
 const ids = (next.layout.find((b) => b.blockType === 'hero')!.slides as number[]).join(', ')
-console.log(`${dry}hero slides: ${ids}${publish ? ' (published)' : ' (as a draft: the homepage has unpublished changes)'}`)
+console.log(`${dry}hero slides: ${ids}${publish ? ' (published)' : ' (as a draft: the homepage has unpublished changes)'}; restart or redeploy the app to show them`)
 if (!dryRun) await payload.updateGlobal({ slug: 'homepage', locale: 'tr', draft: !publish, data: { layout: next.layout as never, _status: publish ? 'published' : 'draft' }, depth: 0 })
 process.exit(0)

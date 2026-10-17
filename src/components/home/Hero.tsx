@@ -55,11 +55,12 @@ export async function Hero({ locale, image, mobileImage, slides = [], heading, s
           )}
         </div>
       )}
-      <div className="relative w-full">
+      {/* md+: this block lies over the photo layer, where the slideshow's controls are: only its own content takes clicks. */}
+      <div className="relative w-full md:pointer-events-none">
         {/* md+: scrim anchored to the text block, not the section: 0.64 ink under the H1 and subline keeps white text ≥4.5:1 even over a white patch or the watermark, at any viewport height; it fades out over 6rem above the H1. */}
-        <div aria-hidden className="absolute inset-x-0 -top-24 bottom-0 -z-10 hidden motion-safe:animate-scrim bg-[linear-gradient(to_top,rgb(29_31_28/0.64)_calc(100%-6rem),transparent)] md:block" />
+        <div aria-hidden className="pointer-events-none absolute inset-x-0 -top-24 bottom-0 -z-10 hidden motion-safe:animate-scrim bg-[linear-gradient(to_top,rgb(29_31_28/0.64)_calc(100%-6rem),transparent)] md:block" />
         {/* Phones: with a slideshow, its controls sit in the top 3rem of this block. */}
-        <Container className={`${slides.length ? 'pt-[4.25rem]' : 'pt-7'} pb-24 md:pt-0 lg:pb-16`}>
+        <Container className={`${slides.length ? 'pt-[4.25rem]' : 'pt-7'} pb-24 md:pt-0 lg:pb-16 md:[&>*]:pointer-events-auto`}>
           <Title className="max-w-[22ch] text-[clamp(2.1rem,5vw,3.6rem)] leading-[1.08] text-white">{heading || t('heroTitle')}</Title>
           <p className="mt-4 max-w-[52ch] text-[1.0625rem] text-white/85 md:text-lg md:text-white">{subheading || t('heroText')}</p>
           <div className="mt-7 flex flex-wrap gap-3">
