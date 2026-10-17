@@ -94,3 +94,62 @@ test('Galeri: upload three photos, reorder (↑, En başa, En sona, fast ↓↓)
     await payload.delete({ collection: 'users', where: { email: { equals: testUser.email } } })
   }
 })
+
+// #192: a card waiting for approval shows the AI's confidence and category check, flags a doubtful one, and lists the
+// tags "Onayla" will attach; approving attaches exactly those.
+test('Galeri: AI confidence, category check and the tags Onayla will attach', async ({ browser }) => {
+  test.setTimeout(120_000)
+  const payload = await getPayload({ config })
+  const run = Date.now()
+  const testUser = { email: `galeri-ai-${run}@local.test`, password: `galeri-ai-${run}`, name: 'E2E Galeri AI', role: 'admin' as const }
+  await payload.create({ collection: 'users', data: testUser })
+  const cat = await payload.create({ collection: 'categories', locale: 'tr', data: { name: `E2E Galeri AI ${run}` } })
+  const tag = await payload.create({ collection: 'tags', locale: 'tr', data: { name: `E2E Tür ${run}`, axis: 'type' } })
+  const file = { name: `ai-${run}.jpg`, mimetype: 'image/jpeg', size: 0, data: await sharp({ create: { width: 1200, height: 900, channels: 3, background: { r: 150, g: 110, b: 70 } } }).jpeg().toBuffer() }
+  file.size = file.data.length
+  const suggestion = (confidence: number, categoryAgrees: boolean) => ({
+    promptVersion: 'tagImage@4',
+    model: 'fake/model',
+    at: '2026-10-17T09:00:00.000Z',
+    tags: { type: [tag.name], wood: [], setting: [], finish: [], stage: [] },
+    confidence,
+    categoryAgrees,
+  })
+  const make = (title: string, s: Record<string, unknown>) =>
+    payload.create({ collection: 'media', locale: 'tr', context: { skipAi: true }, data: { category: cat.id, status: 'pending', title, alt: `${title} için alt metin`, aiSuggestion: s }, file: { ...file, name: `${title}-${run}.jpg` } })
+  const doubtful = await make('Foto-A', suggestion(0.32, false))
+  await make('Foto-B', suggestion(0.91, true))
+
+  try {
+    for (const [width, height, name] of [[1440, 900, 'desktop'], [390, 844, 'mobile']] as const) {
+      const page = await (await browser.newContext({ viewport: { width, height }, deviceScaleFactor: 1 })).newPage()
+      await login({ page, user: testUser })
+      await page.goto('/admin/galeri')
+      await page.getByLabel('Kategori').selectOption({ label: `E2E Galeri AI ${run}` })
+      const flagged = page.locator('.galeri__card', { hasText: 'Foto-A' })
+      const sure = page.locator('.galeri__card', { hasText: 'Foto-B' })
+      await expect(flagged.locator('.galeri__ai')).toHaveAttribute('data-doubtful', 'true')
+      await expect(flagged).toContainText('Kontrol edin: AI bu fotoğraftan emin değil. Fotoğraf bu kategoriye uymuyor olabilir.')
+      await expect(flagged).toContainText('AI güveni:%32 (düşük)')
+      await expect(flagged).toContainText('Kategoriye uyuyor:Hayır')
+      await expect(flagged).toContainText(`Onaylayınca eklenecek etiketler:E2E Tür ${run}`)
+      await expect(sure.locator('.galeri__ai')).not.toHaveAttribute('data-doubtful', /.*/)
+      await expect(sure).toContainText('AI güveni:%91')
+      if (process.env.UPDATE_SCREENSHOTS) await page.screenshot({ path: `docs/screens/admin-galeri-ai-${name}.png`, fullPage: true })
+      if (name === 'mobile') {
+        await flagged.getByRole('button', { name: 'Onayla' }).click()
+        await expect(flagged.locator('.galeri__badge')).toHaveText('Yayında')
+        // Approved: the AI check is gone, and the photo has the listed tag.
+        await expect(flagged.locator('.galeri__ai')).toHaveCount(0)
+        const saved = await payload.findByID({ collection: 'media', id: doubtful.id, depth: 0 })
+        expect(saved.tags).toEqual([tag.id])
+      }
+      await page.context().close()
+    }
+  } finally {
+    await payload.delete({ collection: 'media', where: { category: { equals: cat.id } } })
+    await payload.delete({ collection: 'categories', id: cat.id })
+    await payload.delete({ collection: 'tags', id: tag.id })
+    await payload.delete({ collection: 'users', where: { email: { equals: testUser.email } } })
+  }
+})

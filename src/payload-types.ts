@@ -1433,13 +1433,19 @@ export interface SiteSetting {
   founder?: {
     name?: string | null;
     phone?: string | null;
+    bio?: string | null;
     /**
-     * Doğrulanmadan boş bırakın; boşsa "X yıllık" ifadesi kullanılmaz.
+     * Sitede gösterilmez. "AI ile taslak" yazarken olgu olarak kullanılır; doğrulanmadan boş bırakın.
      */
     craftStartYear?: number | null;
-    bio?: string | null;
   };
+  /**
+   * Sitede gösterilmez. "AI ile taslak" yazarken olgu olarak kullanılır; doğrulanmadan boş bırakın.
+   */
   teamSize?: number | null;
+  /**
+   * Sitede gösterilmez. "AI ile taslak" yazarken olgu olarak kullanılır; doğrulanmadan boş bırakın.
+   */
   projectCount?: number | null;
   phones?:
     | {
@@ -1496,6 +1502,9 @@ export interface SiteSetting {
   };
   defaultDescription?: string | null;
   defaultOgImage?: (number | null) | Media;
+  /**
+   * Ör. G-S84WKG63MS. Boşsa sunucu ayarındaki kimlik kullanılır. Ziyaret ölçümü yalnızca çerez onayından sonra yüklenir; KVKK ve çerez metinleri buna göre yazılır.
+   */
   gaId?: string | null;
   updatedAt?: string | null;
   createdAt?: string | null;
@@ -1683,8 +1692,8 @@ export interface SiteSettingsSelect<T extends boolean = true> {
     | {
         name?: T;
         phone?: T;
-        craftStartYear?: T;
         bio?: T;
+        craftStartYear?: T;
       };
   teamSize?: T;
   projectCount?: T;

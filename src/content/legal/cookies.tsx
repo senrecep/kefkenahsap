@@ -1,5 +1,5 @@
 // Draft cookie policy used until a published `pages` doc (slug cerez-politikasi/cookies) exists. Lists what the site really sets:
-// GA4, the consent cookie and the footer "Çerez tercihleri" link exist only when NEXT_PUBLIC_GA_ID is set (Analytics.tsx, Footer.tsx).
+// GA4, the consent cookie and the footer "Çerez tercihleri" link exist only when a GA4 id is set (siteSettings.gaId, else NEXT_PUBLIC_GA_ID: gaIdOf in src/lib/analytics.ts).
 import { Link } from '@/i18n/navigation'
 
 import type { Uses } from './kvkk'

@@ -5,7 +5,10 @@ import type { CollectionAfterChangeHook, CollectionAfterDeleteHook, GlobalAfterC
 const bust = (tags: string[]) => {
   for (const t of tags) {
     try {
-      revalidateTag(t, 'max')
+      // #192 read-your-writes: { expire: 0 } makes the next request render fresh instead of serving the old page once
+      // ('max' is stale-while-revalidate). updateTag would do it too, but only in Server Actions, and admin saves come
+      // through Payload's REST route handlers (node_modules/next/dist/docs/.../revalidateTag.md).
+      revalidateTag(t, { expire: 0 })
     } catch (err) {
       // Outside a Next runtime (seed/CLI/tests) there is no cache to invalidate; anything else is a real failure.
       if (!/static generation store|incrementalCache|outside a request/i.test(String(err))) console.error('revalidateTag failed', t, err)

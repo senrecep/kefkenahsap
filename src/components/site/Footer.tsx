@@ -3,6 +3,7 @@ import { Maybe } from 'tsentials/maybe'
 
 import { Link } from '@/i18n/navigation'
 import type { Locale } from '@/i18n/routing'
+import { gaIdOf } from '@/lib/analytics'
 import { sinceYear } from '@/lib/company'
 import { telLink, waLink } from '@/lib/contact'
 import { getRegions } from '@/lib/data/regions'
@@ -107,7 +108,7 @@ export async function Footer({ locale }: { locale: Locale }) {
           <ul className="grid gap-1.5">
             <li><Link href="/kvkk" className="text-paper/90 hover:underline">{t('privacy')}</Link></li>
             <li><Link href="/cerez-politikasi" className="text-paper/90 hover:underline">{t('cookies')}</Link></li>
-            {process.env.NEXT_PUBLIC_GA_ID && (
+            {gaIdOf(settings) && (
               <li><CookiePreferencesButton label={tConsent('preferences')} className="text-start text-paper/90 hover:underline" /></li>
             )}
           </ul>

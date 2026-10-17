@@ -1,4 +1,5 @@
 import type { MediaStatus } from './publish'
+import { approvalTags, type TagRef } from './taxonomy'
 
 /** Target size for the client-side downscale: long edge ≤ max, never upscaled. */
 export function fitWithin(width: number, height: number, max: number): { width: number; height: number } {
@@ -60,3 +61,24 @@ export function statusCounts(list: readonly { status?: MediaStatus | null }[]): 
 
 /** Galeri opens on the photos that wait for approval, if any. */
 export const initialFilter = (counts: StatusCounts): StatusFilter => (counts.pending > 0 ? 'pending' : 'all')
+
+export type AiReview = { confidence?: number; categoryAgrees?: boolean; doubtful: boolean; addTags: string[] }
+
+/**
+ * #192: what a Galeri card shows about the AI suggestion: its confidence and category match (only when the suggestion has
+ * them), whether to flag it (confidence under 0.5, or the photo does not fit its category), and the names of the tags
+ * "Onayla" will attach (approvalTags, the rule the approve hook runs). No suggestion → null.
+ */
+export function aiReview(doc: { aiSuggestion?: unknown; tags?: (number | { id: number })[] | null }, tags: TagRef[]): AiReview | null {
+  const s = doc.aiSuggestion
+  if (!s || typeof s !== 'object') return null
+  const { confidence, categoryAgrees } = s as { confidence?: unknown; categoryAgrees?: unknown }
+  const current = (doc.tags ?? []).map((t) => (typeof t === 'number' ? t : t.id))
+  const added = approvalTags(s, tags, current).filter((id) => !current.includes(id))
+  return {
+    ...(typeof confidence === 'number' && { confidence }),
+    ...(typeof categoryAgrees === 'boolean' && { categoryAgrees }),
+    doubtful: (typeof confidence === 'number' && confidence < 0.5) || categoryAgrees === false,
+    addTags: added.map((id) => tags.find((t) => t.id === id)!.name),
+  }
+}

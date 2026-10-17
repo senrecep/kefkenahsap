@@ -19,10 +19,10 @@ export const References: CollectionConfig = {
       type: 'upload',
       relationTo: 'media',
       label: 'Logo (yalnızca izin varsa)',
-      admin: { condition: (d) => Boolean(d?.logoPermission) },
-      // No permission → never served, even if a logo is still attached.
+      // #192: hidden in the admin: references show no logos (PLAN §6). Columns kept; no permission → never served.
+      admin: { hidden: true },
       access: { read: ({ req, siblingData }) => Boolean(req.user) || Boolean(siblingData?.logoPermission) },
     },
-    { name: 'logoPermission', type: 'checkbox', label: 'Logo kullanım izni alındı' },
+    { name: 'logoPermission', type: 'checkbox', label: 'Logo kullanım izni alındı', admin: { hidden: true } },
   ],
 }

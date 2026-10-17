@@ -1,15 +1,19 @@
 import type { LanguageModel } from 'ai'
 import { MockLanguageModelV4 } from 'ai/test'
 
+import { type Locale, routing } from '@/i18n/routing'
+
 import type { AiTask } from './models'
 
 /** Fixed cost per fake call, so budget and cost-panel paths see real numbers. */
 export const FAKE_COST_USD = 0.0042
 
+// tagImage@4 answers in every site locale; locales other than TR/EN get a "[RU] <EN text>" marker, easy to assert.
+const inAll = (tr: string, en: string) => ({ ...Object.fromEntries(routing.locales.map((l) => [l, `[${l.toUpperCase()}] ${en}`])), tr, en }) as Record<Locale, string>
 export const FAKE_TAG_IMAGE = {
-  title: { tr: 'Havuz kenarı ahşap deck', en: 'Poolside timber deck' },
-  alt: { tr: 'Havuz kenarında açık renkli ahşap deck zemin', en: 'Light timber decking beside a pool' },
-  caption: { tr: 'Bahçe havuzu çevresine döşenen deck.', en: 'Decking laid around a garden pool.' },
+  title: inAll('Havuz kenarı ahşap deck', 'Poolside timber deck'),
+  alt: inAll('Havuz kenarında açık renkli ahşap deck zemin', 'Light timber decking beside a pool'),
+  caption: inAll('Bahçe havuzu çevresine döşenen deck.', 'Decking laid around a garden pool.'),
   seoFilename: 'havuz-kenari-ahsap-deck',
   tags: { type: [] as string[], wood: [], setting: ['havuz kenarı'], finish: ['doğal'], stage: ['finished'] },
   categoryAgrees: true,

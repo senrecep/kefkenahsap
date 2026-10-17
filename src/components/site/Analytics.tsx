@@ -1,6 +1,7 @@
 import { getTranslations } from 'next-intl/server'
 
 import { Link } from '@/i18n/navigation'
+import { gaIdOf } from '@/lib/analytics'
 
 import { CookieConsent } from './CookieConsent'
 
@@ -8,8 +9,8 @@ import { CookieConsent } from './CookieConsent'
 const consentDefaults = `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}window.gtag=gtag;gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied'});`
 
 /** Umami (cookieless, always on when configured) + GA4 behind the cookie banner (when configured). */
-export function Analytics({ locale }: { locale: string }) {
-  const gaId = process.env.NEXT_PUBLIC_GA_ID
+export function Analytics({ locale, settings }: { locale: string; settings: { gaId?: string | null } }) {
+  const gaId = gaIdOf(settings)
   const umamiSrc = process.env.NEXT_PUBLIC_UMAMI_SRC
   const umamiId = process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID
   return (

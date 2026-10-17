@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 
-import { fitWithin, initialFilter, isTruncated, MEDIA_LIMIT, mediaBadge, reorder, statusCounts } from './galeri'
+import { aiReview, fitWithin, initialFilter, isTruncated, MEDIA_LIMIT, mediaBadge, reorder, statusCounts } from './galeri'
+import type { TagRef } from './taxonomy'
 
 describe('fitWithin (client downscale to a 2560px long edge, PLAN §4)', () => {
   it('scales a landscape photo so the long edge is 2560', () => {
@@ -128,5 +129,42 @@ describe('statusCounts + initialFilter (Galeri filter chips)', () => {
   it('opens on "Onay bekliyor" when something waits, else on "Tümü"', () => {
     expect(initialFilter({ pending: 2, approved: 1, hidden: 1, all: 4 })).toBe('pending')
     expect(initialFilter({ pending: 0, approved: 3, hidden: 0, all: 3 })).toBe('all')
+  })
+})
+
+describe('aiReview (#192: what the Galeri card shows about the AI suggestion before "Onayla")', () => {
+  const TAGS: TagRef[] = [
+    { id: 1, axis: 'type', slug: 'deck', name: 'Deck' },
+    { id: 2, axis: 'setting', slug: 'bahce', name: 'Bahçe' },
+    { id: 3, axis: 'wood', slug: 'iroko', name: 'İroko' },
+    { id: 4, axis: 'stage', slug: 'detay', name: 'Detay' },
+  ]
+  const suggestion = (over: object = {}) => ({
+    promptVersion: 'tagImage@4',
+    tags: { type: ['Deck'], setting: ['bahçe'], wood: ['iroko'], finish: [], stage: ['detail'] },
+    categoryAgrees: true,
+    confidence: 0.9,
+    ...over,
+  })
+
+  it('shows confidence, category match and the tags Onayla will attach, by name, in approval order', () => {
+    expect(aiReview({ aiSuggestion: suggestion(), tags: [] }, TAGS)).toEqual({ confidence: 0.9, categoryAgrees: true, doubtful: false, addTags: ['Deck', 'Bahçe', 'İroko', 'Detay'] })
+  })
+
+  it('leaves out tags the photo already has (ids or populated)', () => {
+    expect(aiReview({ aiSuggestion: suggestion(), tags: [2, { id: 1 }] }, TAGS)?.addTags).toEqual(['İroko', 'Detay'])
+  })
+
+  it('flags a confidence under 0.5 or a category mismatch; exactly 0.5 is not flagged', () => {
+    expect(aiReview({ aiSuggestion: suggestion({ confidence: 0.49 }) }, TAGS)?.doubtful).toBe(true)
+    expect(aiReview({ aiSuggestion: suggestion({ confidence: 0.5 }) }, TAGS)?.doubtful).toBe(false)
+    expect(aiReview({ aiSuggestion: suggestion({ categoryAgrees: false }) }, TAGS)?.doubtful).toBe(true)
+  })
+
+  it('shows only what the suggestion really has; no suggestion → nothing', () => {
+    expect(aiReview({ aiSuggestion: { promptVersion: 'tagImage@1', tags: { type: ['Deck'] } } }, TAGS)).toEqual({ doubtful: false, addTags: [] })
+    expect(aiReview({ aiSuggestion: { confidence: '0.2', categoryAgrees: 'no' } }, TAGS)).toEqual({ doubtful: false, addTags: [] })
+    expect(aiReview({ aiSuggestion: null }, TAGS)).toBeNull()
+    expect(aiReview({}, TAGS)).toBeNull()
   })
 })

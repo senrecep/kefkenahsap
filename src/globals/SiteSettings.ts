@@ -1,11 +1,15 @@
 import type { GlobalConfig } from 'payload'
 
 import { isAdminField, isStaff } from '@/access'
+import { validateGaId } from '@/lib/analytics'
 import { validateHref, validateMapEmbedUrl } from '@/lib/http/safe-href'
 import { revalidateGlobal } from '@/hooks/revalidate'
 
 // Single source for NAP, founder facts, socials and WhatsApp templates (schema.org, footer, llms.txt read from here).
 // Empty optional fields render nothing anywhere (PRODUCT.md: no invented claims).
+// #192: a field the site never shows is either labelled as AI-draft-only or hidden (admin.hidden keeps its column and data).
+const AI_ONLY = 'Yalnızca AI taslakları için'
+const AI_ONLY_NOTE = 'Sitede gösterilmez. "AI ile taslak" yazarken olgu olarak kullanılır; doğrulanmadan boş bırakın.'
 export const SiteSettings: GlobalConfig = {
   slug: 'siteSettings',
   label: 'Site Bilgileri',
@@ -28,12 +32,22 @@ export const SiteSettings: GlobalConfig = {
               fields: [
                 { name: 'name', type: 'text', label: 'Ad soyad' },
                 { name: 'phone', type: 'text', label: 'Telefon' },
-                { name: 'craftStartYear', type: 'number', label: 'Mesleğe başlama yılı', admin: { description: 'Doğrulanmadan boş bırakın; boşsa "X yıllık" ifadesi kullanılmaz.' } },
                 { name: 'bio', type: 'textarea', localized: true, label: 'Kısa biyografi' },
+                {
+                  type: 'collapsible',
+                  label: AI_ONLY,
+                  fields: [{ name: 'craftStartYear', type: 'number', label: 'Mesleğe başlama yılı', admin: { description: AI_ONLY_NOTE } }],
+                },
               ],
             },
-            { name: 'teamSize', type: 'number', label: 'Ekip büyüklüğü' },
-            { name: 'projectCount', type: 'number', label: 'Tamamlanan proje sayısı' },
+            {
+              type: 'collapsible',
+              label: AI_ONLY,
+              fields: [
+                { name: 'teamSize', type: 'number', label: 'Ekip büyüklüğü', admin: { description: AI_ONLY_NOTE } },
+                { name: 'projectCount', type: 'number', label: 'Tamamlanan proje sayısı', admin: { description: AI_ONLY_NOTE } },
+              ],
+            },
           ],
         },
         {
@@ -158,7 +172,8 @@ export const SiteSettings: GlobalConfig = {
                 ] as const
               ).map(([name, label]) => ({ name, label, type: 'textarea' as const, localized: true })),
             },
-            { name: 'officeHoursNote', type: 'text', localized: true, label: 'Mesai dışı notu' },
+            // Hidden (#192): nothing on the site reads it.
+            { name: 'officeHoursNote', type: 'text', localized: true, label: 'Mesai dışı notu', admin: { hidden: true } },
           ],
         },
         {
@@ -176,7 +191,14 @@ export const SiteSettings: GlobalConfig = {
             },
             { name: 'defaultDescription', type: 'textarea', localized: true, label: 'Varsayılan meta açıklama' },
             { name: 'defaultOgImage', type: 'upload', relationTo: 'media', label: 'Varsayılan paylaşım görseli (WhatsApp, Facebook)' },
-            { name: 'gaId', type: 'text', label: 'GA4 ölçüm kimliği', access: { update: isAdminField } },
+            {
+              name: 'gaId',
+              type: 'text',
+              label: 'GA4 ölçüm kimliği',
+              validate: validateGaId,
+              access: { update: isAdminField },
+              admin: { description: 'Ör. G-S84WKG63MS. Boşsa sunucu ayarındaki kimlik kullanılır. Ziyaret ölçümü yalnızca çerez onayından sonra yüklenir; KVKK ve çerez metinleri buna göre yazılır.' },
+            },
           ],
         },
       ],

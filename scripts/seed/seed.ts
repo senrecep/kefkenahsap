@@ -7,11 +7,14 @@ import path from 'node:path'
 import { getPayload } from 'payload'
 import sharp from 'sharp'
 
+import type { Locale } from '@/i18n/routing'
+import { mediaMetaTexts } from '@/lib/content/overlay'
 import config from '@/payload.config'
 import { SEED_CATEGORIES } from '@/seed/categories'
 import type { LegacyMaps } from '@/lib/legacy/resolve'
 import { fileKey, orderForCategory, uploadsForPhoto } from '@/seed/order'
 
+import { fillLocales } from './i18n'
 import { seedReferences } from './references'
 import { seedSiteSettings } from './site-settings'
 import { verifyStored } from './verify-stored'
@@ -136,13 +139,8 @@ for (const [index, cat] of SEED_CATEGORIES.entries()) {
             : {}),
         },
       })
-      await payload.update({
-        collection: 'media',
-        id: doc.id,
-        locale: 'en',
-        context: ctx(),
-        data: { title: meta.title.en, alt: meta.alt.en, caption: meta.caption.en },
-      })
+      // #192: every locale the metadata carries (a fresh document, so nothing to keep).
+      for (const [locale, data] of Object.entries(mediaMetaTexts(meta))) await payload.update({ collection: 'media', id: doc.id, locale: locale as Locale, context: ctx(), data })
       stored = doc.filename ?? undefined
       slug = name
       // A fresh upload keeps its SEO name; a suffix here means a name clash in the bucket.
@@ -151,9 +149,8 @@ for (const [index, cat] of SEED_CATEGORIES.entries()) {
       created++
     } else {
       skipped++
-      if (!found.docs[0]!.title) {
-        await payload.update({ collection: 'media', id: found.docs[0]!.id, locale: 'en', context: ctx(), data: { title: meta.title.en, alt: meta.alt.en, caption: meta.caption.en } })
-      }
+      // Repair a run that died between the TR create and the other locales: empty fields only (#192).
+      await fillLocales(payload, 'media', found.docs[0]!.id, mediaMetaTexts(meta), { label: seedKey })
     }
 
     for (const m of stored ? uploads : []) {

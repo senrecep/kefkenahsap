@@ -18,6 +18,7 @@ import os from 'node:os'
 import path from 'node:path'
 import { getPayload } from 'payload'
 
+import { mediaMetaTexts } from '@/lib/content/overlay'
 import config from '@/payload.config'
 import { importStatus } from '@/lib/media/taxonomy'
 
@@ -79,7 +80,7 @@ for (const imp of plan.imports) {
   if (doc.status === 'pending' && status === 'approved') data.status = 'approved'
   else if (doc.status !== status && doc.status !== 'pending') leftAsIs.push(`${label} (${doc.status}, plan ${status})`)
   try {
-    const en = await fillLocales(payload, 'media', doc.id, { en: { title: entry.meta.title.en, alt: entry.meta.alt.en, caption: entry.meta.caption.en } }, { label, dryRun })
+    const en = await fillLocales(payload, 'media', doc.id, mediaMetaTexts(entry.meta), { label, dryRun })
     if (!Object.keys(data).length) {
       counts[en ? 'updated' : 'unchanged']++
       continue
