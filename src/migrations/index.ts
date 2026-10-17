@@ -23,6 +23,7 @@ import * as migration_20261015_085755_search_guides from './20261015_085755_sear
 import * as migration_20261015_085928_guide_cover from './20261015_085928_guide_cover';
 import * as migration_20261016_095824_media_watermark from './20261016_095824_media_watermark';
 import * as migration_20261016_115000_tag_type_axis from './20261016_115000_tag_type_axis';
+import * as migration_20261016_235956_hero_slides from './20261016_235956_hero_slides';
 
 export const migrations = [
   {
@@ -148,6 +149,11 @@ export const migrations = [
   {
     up: migration_20261016_115000_tag_type_axis.up,
     down: migration_20261016_115000_tag_type_axis.down,
-    name: '20261016_115000_tag_type_axis'
+    name: '20261016_115000_tag_type_axis',
+  },
+  {
+    up: migration_20261016_235956_hero_slides.up,
+    down: migration_20261016_235956_hero_slides.down,
+    name: '20261016_235956_hero_slides',
   },
 ];

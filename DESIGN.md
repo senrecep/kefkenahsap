@@ -119,7 +119,7 @@ components:
 
 This is the contractor-site standard built with care. Real job photographs carry every section. Copy is short and plain. The way to reach a person (WhatsApp, a phone call or a quote form) stays within reach on every page. The system adds no decoration of its own: wood appears only in the photos, the ground is a warm white, the text is a near-black ink, and one green marks every action. The craft is in execution: AA contrast over photos, 48px tap targets, hairline structure, a single motion moment, and empty states that always offer a next step.
 
-The density is calm and documentary. Pages are photo grids and hairline lists separated by generous vertical rhythm, with no cards and no icon tiles. The site is built to feel like a tradesman's honest portfolio, not a luxury brand and not a template theme. It deliberately rejects the template version of this genre: slider heroes, icon-card grids, stock photos, and green used everywhere.
+The density is calm and documentary. Pages are photo grids and hairline lists separated by generous vertical rhythm, with no cards and no icon tiles. The site is built to feel like a tradesman's honest portfolio, not a luxury brand and not a template theme. It deliberately rejects the template version of this genre: icon-card grids, stock photos, and green used everywhere. The hero does cycle through real job photos (owner request, 2026-10-17, #187), but as a slow crossfade behind a fixed headline, not a template slider with arrows and per-slide captions.
 
 Recorded adaptations from the direction contract (accepted deviations, not drift):
 - The header has six links, adding "Rehber". Five show while "Projeler" is hidden; it is hidden from the nav while no project is published, but its route still works.
@@ -134,7 +134,7 @@ Recorded adaptations from the direction contract (accepted deviations, not drift
 - 10px corners on photos and controls. Pills only for filter chips and lightbox controls.
 - Structure comes from 1px hairlines, not cards or boxes.
 - Flat at rest, with one soft shadow reserved for floating elements.
-- One authored motion moment (the hero settle). Everything else is instant or a 150ms colour change.
+- One authored motion moment: the hero settle, carried on by the hero's photo crossfade, where each following photo settles the same way, only slower. Everything else is instant or a 150ms colour change.
 
 ## Colors
 
@@ -244,7 +244,9 @@ Corners are gently rounded and consistent. Photos and controls (buttons, inputs,
 - **Mobile action bar:** three equal cells (WhatsApp · Ara · Teklif al), each 56px tall with an icon over a label. WhatsApp is the only filled cell, in Action Green. It is mounted once in the locale layout, so it is identical on every template. It hides from `lg` up.
 
 ### Hero
-A full-bleed photo with the H1, a one-sentence subline and two buttons (WhatsApp + on-photo "Teklif al") anchored bottom-left above the Functional Scrim. **Motion:** the system's single authored moment. The photo settles from scale 1.04 over 1.8s, and the scrim fades up from 0.8 opacity over 1.2s. Both use `cubic-bezier(0.16, 1, 0.3, 1)`. The image is visible from the first frame. The motion is CSS only and is disabled under `prefers-reduced-motion`. No slider and no autoplay.
+A full-bleed photo with the H1, a one-sentence subline and two buttons (WhatsApp + on-photo "Teklif al") anchored bottom-left above the Functional Scrim. **Motion:** the system's single authored moment. The photo settles from scale 1.04 over 1.8s, and the scrim fades up from 0.8 opacity over 1.2s. Both use `cubic-bezier(0.16, 1, 0.3, 1)`. The image is visible from the first frame. The motion is CSS only and is disabled under `prefers-reduced-motion`.
+
+**Slideshow (#187, owner request 2026-10-17).** The admin can add up to six photos after the hero image (`slides`, a sortable many-photo upload). The first photo is still the server-rendered LCP image; the next one is fetched only after the page's load event and an idle moment, one ahead, and decoded before it may show. Every 6.5s the next photo crossfades in over 1.4s on top of the previous one (so the hero never dips to Ink), while it settles from scale 1.06 to 1 over 9s, the `settle` signature at a slower pace. The headline, subline, buttons and scrim stay fixed. Autoplay stops under reduced motion (no zoom either; the play button can still start it), on hover, on keyboard focus in the hero, while the tab is hidden or the hero is off screen, and with the pause button. Controls: a pause/play button and one indicator per photo (44px targets; the current one is longer and fills while it shows). On phones they sit on Ink between the photo and the H1, so they cover none of the work; from md they float at the photo's top end, on the container edge, in a lightbox-style Ink 60% pill. A swipe on the photo changes it (mirrored in RTL). One photo only: no controls, exactly the single hero of before.
 
 ### Lightbox
 A native modal `<dialog>` on a near-black stage (#141513) with an 80% black backdrop. Across the top, an "n / N" counter in tabular Montserrat sits opposite the close button. The photo is centred with `object-contain` and a 10px radius. Below it are the title, an optional caption in white at 80%, and underlined links to the category and to the image's own page. The controls are 48px round buttons in black at 45% with the Float shadow. On desktop, prev/next sit at the sides. On mobile they sit under the caption, and swipe works. The URL follows the open image. Esc closes the dialog, and focus returns to the card that opened it.
@@ -266,7 +268,7 @@ An empty result always offers a way forward. No search results and the 404 page 
 - **Do** keep every tap target at 44px or more (48px for buttons and menu rows), and write layout with logical properties.
 - **Do** give every empty state a next step: chips to categories, or a WhatsApp button.
 - **Do** mark every form field "zorunlu" or "isteğe bağlı", and name the data processors in the consent label.
-- **Do** keep motion to the hero settle. Everything else is an instant or 150ms colour change, and all of it stops under reduced motion.
+- **Do** keep motion to the hero settle and its photo crossfade. Everything else is an instant or 150ms colour change, and all of it stops under reduced motion.
 
 ### Don't:
 - **Don't** add eyebrow or kicker labels above headings. Uppercase labels are allowed only when they are the heading or the term itself.
@@ -276,5 +278,5 @@ An empty result always offers a way forward. No search results and the 404 page 
 - **Don't** build icon-card grids or boxed cards. Use photos for work and hairline lists for text.
 - **Don't** mix icon sets or use glyph or emoji icons. Use lucide only, with a 1.75 stroke.
 - **Don't** use the logo greens (#009444, #39b54a) in UI, and don't add a second accent colour.
-- **Don't** use sliders, autoplay, carousels or stock or illustrated imagery.
+- **Don't** use sliders or carousels anywhere but the hero's photo crossfade, or stock or illustrated imagery.
 - **Don't** nudge consent: Reddet and Kabul et always look identical.

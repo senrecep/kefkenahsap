@@ -95,7 +95,7 @@ export function pickCover(candidates: { id: number; width: number; height: numbe
 }
 
 // Upload fields that point at media (collections and globals; see `relationTo: 'media'`).
-const UPLOAD_KEYS = new Set(['cover', 'gallery', 'image', 'mobileImage', 'logo', 'ogImage', 'defaultOgImage'])
+const UPLOAD_KEYS = new Set(['cover', 'gallery', 'image', 'mobileImage', 'slides', 'logo', 'ogImage', 'defaultOgImage'])
 const idOf = (v: unknown) => (typeof v === 'number' ? v : typeof v === 'object' && v && typeof (v as { id?: unknown }).id === 'number' ? (v as { id: number }).id : undefined)
 
 /** The media ids a document shows (its upload fields and rich-text upload nodes, at any depth and in every locale). */

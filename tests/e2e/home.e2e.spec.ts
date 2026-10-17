@@ -1,6 +1,6 @@
-import { expect, test } from '@playwright/test'
+import { expect, test, type Page } from '@playwright/test'
 
-import { adminApi } from '../helpers/content'
+import { adminApi, ensureHeroSlides } from '../helpers/content'
 
 import en from '../../messages/en/home.json' with { type: 'json' }
 import trCommon from '../../messages/tr/common.json' with { type: 'json' }
@@ -15,7 +15,7 @@ test.describe('homepage', () => {
     await expect(h1).not.toBeEmpty()
 
     // Hero photo is the LCP candidate: eager, high priority, full-width sizes.
-    const hero = page.locator('main section').first().locator('img')
+    const hero = page.locator('main section').first().locator('img').first()
     await expect(hero).toHaveAttribute('fetchpriority', 'high')
     await expect(hero).toHaveAttribute('sizes', '100vw')
     await expect(page.getByRole('link', { name: trCommon.Cta.quote }).first()).toBeVisible()
@@ -36,7 +36,7 @@ test.describe('homepage', () => {
       const page = await (await browser.newContext({ reducedMotion })).newPage()
       await page.goto('/tr')
       // The animated wrapper is the img's nearest span (a phone-crop <picture> may sit in between).
-      const photo = page.locator('main section').first().locator('img').locator('xpath=ancestor::span[1]')
+      const photo = page.locator('main section').first().locator('img').first().locator('xpath=ancestor::span[1]')
       return photo.evaluate((el) => getComputedStyle(el).animationName)
     }
     expect(await anim('no-preference')).toBe('settle')
@@ -51,10 +51,11 @@ test.describe('homepage', () => {
     page.on('request', (r) => requested.push(r.url()))
     await page.goto('/tr')
     const section = page.locator('main section').first()
-    const hero = section.locator('img')
+    const hero = section.locator('img').first()
     await expect(hero).toHaveJSProperty('complete', true)
-    const source = section.locator('source[media="(max-width: 767px)"]')
-    await expect(source).toHaveCount(1)
+    // The first photo's (a slideshow's next photo may bring its own).
+    const source = section.locator('source[media="(max-width: 767px)"]').first()
+    await expect(source).toBeAttached()
     const portrait = (await source.getAttribute('srcset'))!.split(', ').map((c) => c.split(' ')[0]!)
     expect(portrait).toContain(await hero.evaluate((img: HTMLImageElement) => img.currentSrc))
     const landscape = (await hero.getAttribute('srcset'))!.split(', ').map((c) => c.split(' ')[0]!)
@@ -165,5 +166,87 @@ test.describe('homepage without a hero', () => {
     } finally {
       await save({ layout: before.layout ?? [], _status: before._status ?? 'draft' })
     }
+  })
+})
+
+test.describe('hero slideshow (#187)', () => {
+  let restore = async () => {}
+  test.beforeAll(async ({ request }) => {
+    test.setTimeout(60_000)
+    restore = await ensureHeroSlides(await adminApi())
+    // revalidateTag is stale-while-revalidate (and the test before rewrites the homepage): wait for the slideshow.
+    await expect(async () => expect(await (await request.get('/tr')).text()).toContain('aria-roledescription="carousel"')).toPass({ timeout: 45_000 })
+  })
+  test.afterAll(async () => restore())
+
+  const hero = (page: Page) => page.locator('main section').first()
+  const dot = (page: Page, n: number) => hero(page).getByRole('button', { name: new RegExp(`^${tr.Home.heroSlide.replace('{n}', String(n)).replace('{total}', '\\d+')}$`) })
+
+  test('the first photo is the server-rendered LCP image; the others are not in the HTML', async ({ page, request }) => {
+    const html = await (await request.get('/tr')).text()
+    const at = html.indexOf('aria-roledescription="carousel"')
+    expect(at).toBeGreaterThan(0)
+    const section = html.slice(html.lastIndexOf('<section', at), html.indexOf('</section>', at))
+    expect(section.match(/<img /g)).toHaveLength(1)
+    expect(section).toMatch(/fetchpriority="high"/i)
+    await page.goto('/tr')
+    const first = hero(page).locator('img').first()
+    await expect(first).toHaveAttribute('fetchpriority', 'high')
+    await expect(first).toHaveAttribute('loading', 'eager')
+  })
+
+  test('autoplay crossfades to the next photo; pause stops it, the indicators jump', async ({ page }) => {
+    await page.clock.install()
+    await page.goto('/tr')
+    await expect(dot(page, 1)).toHaveAttribute('aria-current', 'true')
+    // Load + idle: the second photo is fetched only now, then decoded before it may fade in.
+    await page.clock.runFor(3500)
+    await expect(hero(page).locator('[data-slide="1"] img')).toHaveJSProperty('complete', true)
+    await page.clock.runFor(7000)
+    await expect(dot(page, 2)).toHaveAttribute('aria-current', 'true')
+    await expect(hero(page).locator('[data-slide="1"]')).toHaveAttribute('aria-hidden', 'false')
+
+    await hero(page).getByRole('button', { name: tr.Home.heroPause }).click()
+    await expect(hero(page).getByRole('button', { name: tr.Home.heroPlay })).toBeVisible()
+    await page.mouse.move(0, 0) // off the hero: only the pause holds it now
+    await page.clock.runFor(20_000)
+    await expect(dot(page, 2)).toHaveAttribute('aria-current', 'true')
+
+    await dot(page, 3).click()
+    await expect(dot(page, 3)).toHaveAttribute('aria-current', 'true')
+    await expect(hero(page).locator('[data-slide="2"]')).toHaveAttribute('aria-hidden', 'false')
+    await expect(hero(page).locator('[data-slide="1"]')).toHaveAttribute('aria-hidden', 'true')
+  })
+
+  test('reduced motion: no autoplay and no zoom, the play button can still start it', async ({ browser }) => {
+    const page = await (await browser.newContext({ reducedMotion: 'reduce' })).newPage()
+    await page.clock.install()
+    await page.goto('/tr')
+    await expect(hero(page).getByRole('button', { name: tr.Home.heroPlay })).toBeVisible()
+    await page.clock.runFor(30_000)
+    await expect(dot(page, 1)).toHaveAttribute('aria-current', 'true')
+    await dot(page, 2).click()
+    await expect(dot(page, 2)).toHaveAttribute('aria-current', 'true')
+    expect(await hero(page).locator('[data-slide="1"]').evaluate((el) => getComputedStyle(el).animationName)).toBe('none')
+  })
+
+  test('phones: 44px controls between the photo and the title, and a swipe changes the photo', async ({ browser }) => {
+    const page = await (await browser.newContext({ viewport: { width: 390, height: 844 }, hasTouch: true })).newPage()
+    await page.goto('/tr')
+    const photo = hero(page).locator('[data-slide="0"]')
+    const box = (await photo.boundingBox())!
+    const title = (await page.getByRole('heading', { level: 1 }).boundingBox())!
+    for (const b of await hero(page).getByRole('button').all()) {
+      const r = (await b.boundingBox())!
+      expect(r.width).toBeGreaterThanOrEqual(44)
+      expect(r.height).toBeGreaterThanOrEqual(44)
+      // Off the photo (they cover none of the work) and above the title.
+      expect(r.y).toBeGreaterThanOrEqual(box.y + box.height)
+      expect(r.y + r.height).toBeLessThanOrEqual(title.y)
+    }
+    const y = box.y + box.height / 3
+    await photo.dispatchEvent('pointerdown', { clientX: 300, clientY: y, pointerType: 'touch', isPrimary: true })
+    await photo.dispatchEvent('pointerup', { clientX: 120, clientY: y, pointerType: 'touch', isPrimary: true })
+    await expect(dot(page, 2)).toHaveAttribute('aria-current', 'true')
   })
 })

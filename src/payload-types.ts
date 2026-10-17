@@ -1515,6 +1515,10 @@ export interface Homepage {
              * Telefonda bu görsel gösterilir. Filigranın başlığın arkasında kalmadığı dikey bir fotoğraf seçin; boşsa ana görsel kullanılır.
              */
             mobileImage?: (number | null) | Media;
+            /**
+             * İlk slayt yukarıdaki görseldir; buradaki fotoğraflar sırayla onu izler (en fazla 6). Sürükleyerek sıralayın. Boş bırakırsanız tek fotoğraf gösterilir.
+             */
+            slides?: (number | Media)[] | null;
             heading?: string | null;
             subheading?: string | null;
             id?: string | null;
@@ -1761,6 +1765,7 @@ export interface HomepageSelect<T extends boolean = true> {
               enabled?: T;
               image?: T;
               mobileImage?: T;
+              slides?: T;
               heading?: T;
               subheading?: T;
               id?: T;

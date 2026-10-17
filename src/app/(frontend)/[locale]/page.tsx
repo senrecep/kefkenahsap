@@ -8,6 +8,7 @@ import type { Locale } from '@/i18n/routing'
 import { getHeroFallback, getHomepage } from '@/lib/data/home'
 import { getSiteSettings } from '@/lib/data/site'
 import { firstHero as findFirstHero, homeSections } from '@/lib/home/sections'
+import { heroSlides } from '@/lib/home/slides'
 import { pageMetadata, staticPaths } from '@/lib/seo/page-metadata'
 import type { Homepage } from '@/payload-types'
 
@@ -57,10 +58,13 @@ export default async function HomePage({ params }: Props) {
     switch (s.blockType) {
       case 'hero': {
         const b = s as Fields<'hero'>
-        const image = b.image && typeof b.image === 'object' ? b.image : (fallback?.media ?? null)
-        // Read with overrideAccess: false, so an unapproved phone photo arrives as a bare id and is skipped.
-        const mobileImage = b.mobileImage && typeof b.mobileImage === 'object' ? b.mobileImage : null
-        return () => Hero({ locale, image, mobileImage, heading: b.heading, subheading: b.subheading, priority: i === firstHero, first: i === firstHero })
+        const own = b.image && typeof b.image === 'object' ? b.image : null
+        const [first, ...slides] = heroSlides(own, b.slides)
+        const image = first ?? fallback?.media ?? null
+        // Read with overrideAccess: false, so an unapproved phone photo arrives as a bare id and is skipped. It belongs to
+        // the hero image only, not to a slide standing in for it.
+        const mobileImage = own && first === own && b.mobileImage && typeof b.mobileImage === 'object' ? b.mobileImage : null
+        return () => Hero({ locale, image, mobileImage, slides, heading: b.heading, subheading: b.subheading, priority: i === firstHero, first: i === firstHero })
       }
       case 'featuredGallery': {
         const b = s as Fields<'featuredGallery'>

@@ -128,8 +128,8 @@ describe('pickCover', () => {
 
 describe('mediaRefs', () => {
   it('collects the media ids of upload fields anywhere in a depth-0 document, in every locale', () => {
-    const doc = { id: 9, cover: 4, gallery: [5, 6], hero: { image: 7, mobileImage: null }, seo: { tr: { ogImage: 8 }, en: { ogImage: 8 } }, sort: 3, layout: [{ blockType: 'hero', image: { id: 11 } }] }
-    expect([...mediaRefs(doc)].sort((a, b) => a - b)).toEqual([4, 5, 6, 7, 8, 11])
+    const doc = { id: 9, cover: 4, gallery: [5, 6], hero: { image: 7, mobileImage: null }, seo: { tr: { ogImage: 8 }, en: { ogImage: 8 } }, sort: 3, layout: [{ blockType: 'hero', image: { id: 11 }, slides: [15, { id: 16 }] }] }
+    expect([...mediaRefs(doc)].sort((a, b) => a - b)).toEqual([4, 5, 6, 7, 8, 11, 15, 16])
   })
 
   it('collects images placed in rich text (Lexical upload nodes), not other uploads', () => {

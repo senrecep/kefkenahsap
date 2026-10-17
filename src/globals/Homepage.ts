@@ -2,6 +2,7 @@ import type { Block, GlobalConfig } from 'payload'
 
 import { hiddenFromEditor, isStaff } from '@/access'
 import { revalidateGlobal } from '@/hooks/revalidate'
+import { MAX_SLIDES } from '@/lib/home/slides'
 
 const enabled = { name: 'enabled', type: 'checkbox' as const, defaultValue: true, label: 'Göster' }
 const heading = { name: 'heading', type: 'text' as const, localized: true, label: 'Başlık' }
@@ -19,6 +20,18 @@ const blocks: Block[] = [
         relationTo: 'media',
         label: 'Telefon görseli (isteğe bağlı)',
         admin: { description: 'Telefonda bu görsel gösterilir. Filigranın başlığın arkasında kalmadığı dikey bir fotoğraf seçin; boşsa ana görsel kullanılır.' },
+      },
+      {
+        // hasMany upload: thumbnails and drag-to-sort out of the box (#187). Order = slide order after the image above.
+        name: 'slides',
+        type: 'upload',
+        relationTo: 'media',
+        hasMany: true,
+        maxRows: MAX_SLIDES - 1,
+        label: 'Sonraki slaytlar',
+        admin: {
+          description: `İlk slayt yukarıdaki görseldir; buradaki fotoğraflar sırayla onu izler (en fazla ${MAX_SLIDES - 1}). Sürükleyerek sıralayın. Boş bırakırsanız tek fotoğraf gösterilir.`,
+        },
       },
       heading,
       { name: 'subheading', type: 'textarea', localized: true, label: 'Alt başlık' },
