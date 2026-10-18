@@ -114,7 +114,12 @@ test.describe('gallery', () => {
     test(`masonry at ${width}px: columns of equal width, tiles stacked by the gap, no overlap, grid as tall as its columns (#215)`, async ({ page }) => {
       await page.setViewportSize({ width, height: 900 })
       await page.goto('/tr/galeri')
-      const boxes = await page.locator('[data-gallery-item]:visible').evaluateAll((a) => a.map((x) => x.getBoundingClientRect().toJSON() as DOMRect))
+      // One snapshot of the tiles and the grid: on a short grid (CI's small seed) the feed appends the next page as soon as
+      // the page loads, so separate reads could see two different grids.
+      const { boxes, ul } = await page.locator('.masonry > ul').evaluate((u) => ({
+        boxes: [...u.querySelectorAll<HTMLElement>('[data-gallery-item]')].filter((x) => x.offsetParent).map((x) => x.getBoundingClientRect().toJSON() as DOMRect),
+        ul: u.getBoundingClientRect().bottom,
+      }))
       const cols = [...new Set(boxes.map((b) => Math.round(b.x)))]
       expect(cols).toHaveLength(width < 768 ? 2 : width < 1024 ? 3 : 4)
       expect(new Set(boxes.map((b) => Math.round(b.width))).size).toBe(1)
@@ -123,7 +128,6 @@ test.describe('gallery', () => {
         const col = boxes.filter((b) => Math.round(b.x) === x).sort((p, q) => p.y - q.y)
         for (let i = 1; i < col.length; i++) expect(Math.abs(col[i]!.y - col[i - 1]!.bottom - gap)).toBeLessThan(1)
       }
-      const ul = await page.locator('.masonry > ul').evaluate((u) => u.getBoundingClientRect().bottom)
       expect(Math.abs(ul - Math.max(...boxes.map((b) => b.bottom)))).toBeLessThan(1)
     })
   }
