@@ -26,6 +26,7 @@ import * as migration_20261016_115000_tag_type_axis from './20261016_115000_tag_
 import * as migration_20261016_235956_hero_slides from './20261016_235956_hero_slides';
 import * as migration_20261017_224837_translate_media from './20261017_224837_translate_media';
 import * as migration_20261018_093407_seo_rename from './20261018_093407_seo_rename';
+import * as migration_20261018_095155_seo_retired_stems from './20261018_095155_seo_retired_stems';
 
 export const migrations = [
   {
@@ -166,6 +167,11 @@ export const migrations = [
   {
     up: migration_20261018_093407_seo_rename.up,
     down: migration_20261018_093407_seo_rename.down,
-    name: '20261018_093407_seo_rename'
+    name: '20261018_093407_seo_rename',
+  },
+  {
+    up: migration_20261018_095155_seo_retired_stems.up,
+    down: migration_20261018_095155_seo_retired_stems.down,
+    name: '20261018_095155_seo_retired_stems'
   },
 ];

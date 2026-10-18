@@ -128,7 +128,8 @@ it('approving queues a job that renames the original and every size, moves the o
   expect(await bytes(doc.prefix, `${seo}-480x336.webp`)).toEqual(w480Before)
 
   const oldURLs = oldFiles.map((f) => new URL(`${BASE}/${key(doc.prefix, f)}`).href)
-  expect([...new Set(purged)].sort()).toEqual([...oldURLs].sort())
+  const newURLs = newFiles.map((f) => new URL(`${BASE}/${key(doc.prefix, f)}`).href)
+  expect([...new Set(purged)].sort()).toEqual([...oldURLs, ...newURLs].sort()) // old (deleted) and new (a 404 cached before the job)
 })
 
 it('approving through the English edit form still names the file from the SEO name', async () => {
@@ -239,7 +240,7 @@ it('with neither seoFilename nor title the name is kefken-ahsap-<id>', async () 
   expect((await read(doc.id)).filename).toBe(`kefken-ahsap-${doc.id}.webp`)
 })
 
-it('a new file on a renamed document is stored under the SEO name again', async () => {
+it('a new file on a renamed document never reuses the old public name, and the new URLs are purged', async () => {
   const seo = `seo-replace-${run}`
   const doc = await create({ seoFilename: seo })
   await approve(doc.id)
@@ -249,10 +250,41 @@ it('a new file on a renamed document is stored under the SEO name again', async 
   const replaced = await payload.update({ collection: 'media', id: doc.id, data: {}, filePath: file, context: { skipAi: true } })
   expect(replaced.filename).not.toBe(`${seo}.webp`)
   expect(replaced.seoRenamed).toBe(false)
+  expect(replaced.seoRetiredStems).toEqual([seo])
+  purged.length = 0
   expect(await runJobs(doc.id)).toBe(1)
   const done = await read(doc.id)
-  expect(done.filename).toBe(`${seo}.webp`)
+  expect(done.filename).toBe(`${seo}-2.webp`)
   expect((await sharp(await bytes(doc.prefix, done.filename!)).stats()).dominant.r).toBeGreaterThan(150)
+  expect(purged).toContain(new URL(`${BASE}/${key(doc.prefix, `${seo}-2.webp`)}`).href) // the new URL
+  // A second replacement retires -2 as well.
+  await payload.update({ collection: 'media', id: doc.id, data: {}, filePath: file, context: { skipAi: true } })
+  await runJobs(doc.id)
+  expect((await read(doc.id)).filename).toBe(`${seo}-3.webp`)
+})
+
+it('an admin save that changes the file during the job is not overwritten', async () => {
+  const seo = `seo-stale-${run}`
+  const doc = await create({ seoFilename: seo })
+  await approve(doc.id)
+  const send = S3Client.prototype.send
+  let raced = false
+  vi.spyOn(S3Client.prototype, 'send').mockImplementation(async function (this: S3Client, command: unknown) {
+    if (command instanceof CopyObjectCommand && !raced) {
+      raced = true
+      await payload.update({ collection: 'media', id: doc.id, data: { filename: `racing-${run}.webp` }, context: { skipAi: true, seoRenameJob: true } })
+    }
+    return (send as (c: unknown) => Promise<unknown>).call(this, command)
+  } as never)
+  const [job] = await openJobs(doc.id)
+  await payload.jobs.runByID({ id: job!.id })
+  vi.restoreAllMocks()
+
+  const stored = await read(doc.id)
+  expect(stored.filename).toBe(`racing-${run}.webp`)
+  expect(stored.seoRenamed).toBe(false)
+  expect(await exists(doc.prefix, `${seo}.webp`)).toBe(false) // our copies are gone
+  expect(await exists(doc.prefix, doc.filename!)).toBe(true)
 })
 
 it('a seeded photo keeps its file names', async () => {

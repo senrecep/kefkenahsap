@@ -22,7 +22,7 @@ import { mediaFileURL } from '@/lib/media/url'
 import { createCdnPurger, mediaPublicURLs } from '@/lib/media/cdn-purge'
 import { createReporter } from '@/lib/observability/report'
 import { checkPublishable, type MediaStatus } from '@/lib/media/publish'
-import { needsSeoRename } from '@/lib/media/seoName'
+import { isSeoNamed, needsSeoRename, stemOf } from '@/lib/media/seoName'
 import { approvalTags, type TagRef } from '@/lib/media/taxonomy'
 import { applyWatermark, isStampable } from '@/lib/media/watermark'
 import { revalidateAfterChange, revalidateAfterDelete } from '@/hooks/revalidate'
@@ -49,12 +49,18 @@ const stampUpload: CollectionBeforeOperationHook = async ({ args, operation, req
   if ((operation !== 'create' && operation !== 'update') || !file?.data?.length) return args
   // One file for many documents is not supported.
   if (operation === 'update' && 'where' in args && args.where) throw new APIError('Dosya yalnızca tek bir görselde değiştirilebilir.', 400, null, true)
-  const data = (args.data ??= {}) as { watermark?: string | null; skipWatermark?: boolean; seoRenamed?: boolean }
+  const data = (args.data ??= {}) as { watermark?: string | null; skipWatermark?: boolean; seoRenamed?: boolean; seoRetiredStems?: string[] }
   // Any new file on an existing document replaces the old one (purgeReplacedFile).
   if (operation === 'update') {
     req.context.mediaFileReplaced = true
-    // #209: the new file has the upload's name again: the seoRename job gives it its SEO name.
+    // #209: the new file has the upload's name again: the seoRename job gives it a SEO name. A stem that was ever public
+    // is retired, never reused: the CDN keeps its URLs for a year (immutable), so the same URL would serve the old bytes.
     data.seoRenamed = false
+    const id = (args as { id?: number | string }).id
+    const prev = id === undefined ? null : await req.payload.findByID({ collection: 'media', id, depth: 0, select: { filename: true, seoFilename: true, seoRenamed: true, seoRetiredStems: true } }).catch(() => null)
+    if (prev?.filename && (prev.seoRenamed || isSeoNamed(prev.filename, prev.seoFilename))) {
+      data.seoRetiredStems = [...new Set([...((prev.seoRetiredStems as string[] | null) ?? []), stemOf(prev.filename)])]
+    }
   }
   // Seeds/imports declare files that already carry the pipeline's mark. On update the admin echoes the stored state,
   // which describes the replaced file, not the new one.
@@ -353,6 +359,8 @@ export const Media: CollectionConfig = {
     },
     // #209: set by the seoRename job once the stored files carry the SEO name; cleared when the file is replaced. Never renamed twice.
     { name: 'seoRenamed', type: 'checkbox', defaultValue: false, admin: { readOnly: true, hidden: true } },
+    // #209: file stems that were public before a file replacement; the seoRename job never picks them again.
+    { name: 'seoRetiredStems', type: 'json', admin: { readOnly: true, hidden: true } },
     { name: 'lqip', type: 'text', admin: { readOnly: true, hidden: true } },
     // Stable identity of seeded images (<category>/<source file>) so the seed is idempotent.
     { name: 'seedKey', type: 'text', unique: true, index: true, admin: { readOnly: true, hidden: true } },

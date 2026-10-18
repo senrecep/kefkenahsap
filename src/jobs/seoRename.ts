@@ -33,7 +33,7 @@ export const seoRenameTask: TaskConfig<'seoRename'> = {
 
     const first = pickSeoName({ seoFilename: doc.seoFilename, titleTr: doc.title, id: doc.id, taken: new Set() })
     const found = await payload.find({ collection: 'media', where: { filename: { contains: first } }, pagination: false, depth: 0, select: { filename: true }, req })
-    const taken = new Set(found.docs.filter((d) => d.id !== doc.id).map((d) => stemOf(d.filename ?? '')))
+    const taken = new Set([...found.docs.filter((d) => d.id !== doc.id).map((d) => stemOf(d.filename ?? '')), ...((doc.seoRetiredStems as string[] | null) ?? [])])
     const { bucket, s3 } = mediaBucket()
     let name = pickSeoName({ seoFilename: doc.seoFilename, titleTr: doc.title, id: doc.id, taken })
     let plan = renamePlan({ filename, sizes: doc.sizes }, name)
@@ -47,26 +47,36 @@ export const seoRenameTask: TaskConfig<'seoRename'> = {
     if (!copied.ok) throw new Error(copied.errors.map((e) => e.description).join('; '))
 
     const sizes = Object.fromEntries(Object.entries(doc.sizes ?? {}).map(([k, v]) => [k, plan.sizes[k] ? { ...v, filename: plan.sizes[k] } : v]))
+    // Only if the file is still the one we copied: an admin save during the job must not be overwritten with stale data.
+    let changed = 0
     try {
-      await payload.update({
+      const res = await payload.update({
         collection: 'media',
-        id: doc.id,
+        where: { id: { equals: doc.id }, filename: { equals: filename } },
         locale: 'tr',
         data: { filename: plan.filename, sizes, seoRenamed: true, ...(doc.seoFilename?.trim() ? {} : { seoFilename: name }) },
         context: { skipAi: true, seoRenameJob: true },
         depth: 0,
         req,
       })
+      changed = res.docs.length
+      if (res.errors.length) throw new Error(res.errors.map((e) => e.message).join('; '))
     } catch (err) {
       await deleteObjects(s3, bucket, doc.prefix, plan.moves.map((m) => m.to))
       throw err
+    }
+    if (!changed) {
+      await deleteObjects(s3, bucket, doc.prefix, plan.moves.map((m) => m.to))
+      return { output: { result: 'aborted:changed' } } // the photo's file changed meanwhile; that save queued its own job
     }
 
     // The document points at the copies now; what is left of the old objects is garbage. Failures are only logged.
     const old = plan.moves.map((m) => m.from)
     const deleted = await deleteObjects(s3, bucket, doc.prefix, old)
     if (!deleted.ok) payload.logger.warn({ errors: deleted.errors, media: doc.id }, 'media: old objects not deleted after SEO rename')
-    await purgeURLs(req, mediaPublicURLs({ filename, prefix: doc.prefix, sizes: doc.sizes }, process.env.MEDIA_PUBLIC_URL ?? ''))
+    // The new URLs too: a 404 cached before the job ran would otherwise outlive it.
+    const base = process.env.MEDIA_PUBLIC_URL ?? ''
+    await purgeURLs(req, [...mediaPublicURLs({ filename, prefix: doc.prefix, sizes: doc.sizes }, base), ...mediaPublicURLs({ filename: plan.filename, prefix: doc.prefix, sizes: Object.fromEntries(Object.entries(plan.sizes).map(([k, f]) => [k, { filename: f }])) }, base)])
     return { output: { result: `renamed:${plan.filename}` } }
   },
 }

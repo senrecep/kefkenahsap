@@ -237,6 +237,15 @@ export interface Media {
    */
   skipWatermark?: boolean | null;
   seoRenamed?: boolean | null;
+  seoRetiredStems?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
   lqip?: string | null;
   seedKey?: string | null;
   dominantColor?: string | null;
@@ -997,6 +1006,7 @@ export interface MediaSelect<T extends boolean = true> {
   watermark?: T;
   skipWatermark?: T;
   seoRenamed?: T;
+  seoRetiredStems?: T;
   lqip?: T;
   seedKey?: T;
   dominantColor?: T;
