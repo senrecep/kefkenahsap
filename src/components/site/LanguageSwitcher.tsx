@@ -11,7 +11,7 @@ const NATIVE = { tr: 'Türkçe', en: 'English', ru: 'Русский', de: 'Deuts
 // The remembered choice `/` redirects to (PLAN §5.1, src/app/route.ts). Written here, not by the proxy: pages are cached,
 // and a shared cache skips a response that sets a cookie (#211).
 const rememberLocale = (locale: string) => {
-  document.cookie = `NEXT_LOCALE=${locale}; path=/; max-age=31536000; samesite=lax`
+  document.cookie = `NEXT_LOCALE=${locale}; path=/; max-age=31536000; samesite=lax${location.protocol === 'https:' ? '; secure' : ''}`
 }
 
 /** Follows the page's own <link rel="alternate" hreflang> (set by each page's metadata), so CMS slugs switch correctly. */
@@ -66,7 +66,7 @@ export function LanguageSwitcher({
       return
     }
     rememberLocale(target)
-    const alt =document.querySelector<HTMLLinkElement>(`link[rel="alternate"][hreflang="${target}"]`)
+    const alt = document.querySelector<HTMLLinkElement>(`link[rel="alternate"][hreflang="${target}"]`)
     if (alt?.href) {
       e.preventDefault()
       if (details.current) details.current.open = false // not restored open from the bfcache on Back
