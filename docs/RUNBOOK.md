@@ -90,6 +90,7 @@ Translations for the locales other than TR/EN live in `seed/i18n/<locale>/`, whi
 - `content.ts` checks the overlay slugs before writing. A slug used twice in a locale, or already used by another document, stops the run and names the file.
 - Every script prints `host:port/database` first and refuses `SITE_ENV=production`. A non-local host needs `--yes`. A tunnelled DB reads as `localhost`, so check the database name and run `--dry-run` first where there is one. `SEED_REMOTE=1` (set by the dev runner) marks the database remote even when it reads as `localhost`, so `--yes` is required.
 - `media-locales` and `media-text-fixes` carry on past a failing photo, list its seedKey, and exit 1.
+- `seo-filenames` (#209) renames the stored files (original + every size) of approved or hidden admin uploads whose file is not yet named after its SEO name, to `<seoName>.webp` / `<seoName>-<W>x<H>.webp`. It runs the same code as the first approval: objects are copied, the document is pointed at the copies (no second watermark), the old objects are deleted and their CDN URLs purged (needs `CLOUDFLARE_*`; it waits 5 s for the purge before exiting). Seeded photos (`seedKey`) and pending photos are skipped (pending ones are renamed when approved). Idempotent. **The public URL of an approved photo changes**, so run `--dry-run` first and read the list. It carries on past a failing photo, lists its id, and exits 1.
 
 ```bash
 bun run payload run scripts/seed/content.ts            # categories, pages, guides, reference locations
@@ -97,6 +98,7 @@ bun run payload run scripts/seed/project-stories.ts    # draft projects: title +
 bun run payload run scripts/seed/media-locales.ts -- --dry-run && bun run payload run scripts/seed/media-locales.ts
 bun run payload run scripts/seed/media-text-fixes.ts -- --dry-run && bun run payload run scripts/seed/media-text-fixes.ts
 bun run payload run scripts/seed/project-story-fixes.ts -- --dry-run && bun run payload run scripts/seed/project-story-fixes.ts
+bun run payload run scripts/seed/seo-filenames.ts -- --dry-run && bun run payload run scripts/seed/seo-filenames.ts -- --yes   # dev: SEED_REMOTE=1 needs --yes
 ```
 
 Editorial picks (#150): `seed/editorial/picks.json` (hero, phone hero, featured projects, category covers, homepage FAQ refs, each with its reason) and `seed/editorial/tags.json` (gallery tags in 5 locales + the raw per-photo values they map from). `scripts/seed/editorial.ts` fills only what is empty: tags are added to photos (never removed), the homepage gets all default sections on an empty layout (else only an empty hero photo / FAQ), projects are featured only while none is, covers only where unset. A document with a pending draft gets a new draft; one whose latest version is published (and the never-configured homepage) is written published. Run `bun run payload run scripts/seed/editorial.ts -- --dry-run`, then without it (after `seed.ts`, `content.ts` and `project-drafts.ts`). The running site caches pages for an hour: restart `bun dev` after clearing `.next/dev/cache/fetch-cache` to see the result locally.
