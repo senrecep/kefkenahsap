@@ -89,6 +89,21 @@ Incident 2026-10-18: a photo's old URLs were requested after a rename and answer
 - **Post-deploy check:** upload a photo on dev, then `curl -sI <its cdn-dev URL> | grep -i cache-control` must show `cache-control: public, max-age=31536000, immutable`. Only then switch the zone's Browser TTL to `respect_origin`.
 - Check: `curl -sI https://cdn.kefkenahsap.com/does-not-exist.webp | grep -iE 'cache-control|cf-cache-status'` must not show `max-age=31536000`. A stuck 404 on a real file: purge its URL (Caching → Custom Purge).
 
+### Cache-Control on objects stored before #216 (#219)
+
+Objects the app wrote before #216 (the seeded originals and every size, ~3.2k under `dev/` on dev) have no `Cache-Control`. With the zone's Browser TTL on "Respect origin", browsers do not keep them. `scripts/media/backfill-cache-control.ts` lists every object under `S3_PREFIX` (orphans and legacy files too), HEADs each, and self-copies the ones whose `Cache-Control` is not `public, max-age=31536000, immutable` with `MetadataDirective: REPLACE`.
+- `Content-Type` is kept as stored (a missing or generic one is inferred from the extension); the other headers and user metadata are copied over; the bytes are never rewritten and nothing is deleted.
+- Idempotent and resumable: a re-run skips what already has the header. 16 requests in parallel; the SDK retries throttling and 5xx with backoff. A failed key is printed and counted, the exit code is 1.
+- No Payload or database needed. It prints bucket, prefix and endpoint first; a non-local endpoint needs `--yes` (or `--dry-run`).
+- The edge cache is not touched (it forces 1 year anyway); browsers pick the header up on their next fetch.
+
+```bash
+set -a; . ./.dokploy-dev.env; set +a   # S3_* of the environment (never committed); S3_PREFIX=dev/ on dev
+bun scripts/media/backfill-cache-control.ts --dry-run   # counts only
+bun scripts/media/backfill-cache-control.ts --yes
+curl -sI https://cdn-dev.kefkenahsap.com/<a seeded file> | grep -i cache-control
+```
+
 ### Page caching and Cloudflare HTML (#211)
 
 Public pages are ISR: Next renders each one on its first request and keeps it in `.next` until a Payload save revalidates its tags (immediately, #192) or its data's `revalidate` time passes (1 h). Responses carry `Cache-Control: s-maxage=3600, stale-while-revalidate=…`. Query URLs that change a page (`?kategori`, `?etiket`, `?sayfa`) render per request (`no-store`); tracking parameters stay on the cached page. Unknown URLs answer 404 without being stored.

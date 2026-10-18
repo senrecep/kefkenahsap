@@ -155,6 +155,7 @@ It must end with `dry run: rolled back` and an empty leftover list. If a column 
       rclone copy r2:kefkenahsap/dev r2:kefkenahsap --checksum --transfers 32 --s3-no-check-bucket --stats 30s )
     ```
     - **Never `rclone sync`**: it would delete `dev/`.
+    - The server-side copy keeps each object's `Cache-Control`, `Content-Type` and user metadata (rclone uses CopyObject with its default COPY directive; verified with rclone 1.75 against RustFS, #219). Don't add `--metadata` or `--header-upload`: they make it rewrite headers. So the root only gets `Cache-Control` if `dev/` has it: run `scripts/media/backfill-cache-control.ts` on dev first (`docs/RUNBOOK.md` "Cache-Control on objects stored before #216"), or run it against the prod root (`S3_PREFIX=`) after this copy. Check with `curl -sI` on one root file only after step 19.
     - Make **no HTTP request to `cdn.kefkenahsap.com/<root file>` before this finishes**. The CDN rule caches for a year at the edge, 404s included.
 19. [ ] **[Owner]** Cloudflare → Caching → Custom Purge → `https://cdn.kefkenahsap.com/bahce-ahsap-deck-platformu.webp`. That root URL was requested on 2026-10-14, while the root was still empty, so its 404 may be cached.
 20. [ ] **[Claude]** Open the release PR, don't merge it yet. Use a **merge commit** (not squash), so the branches stay in step:
