@@ -18,10 +18,12 @@ const LAYOUTS = [
 ] as const
 // Scrolling loads at most this many pages by itself; then the button takes over so the footer stays reachable.
 const AUTO_PAGES = 2
-const SIZES = '(min-width: 1280px) 296px, (min-width: 1024px) 23vw, (min-width: 768px) 31vw, 48vw'
+// Column width inside the Container (px-4 / md:px-6) less the gaps: 2 / 3 / 4 columns (#211).
+const SIZES = '(min-width: 1280px) 296px, (min-width: 1024px) calc(25vw - 1.5rem), (min-width: 768px) calc(33.4vw - 1.6rem), calc(50vw - 1.25rem)'
 // `priority` (a grid at the top of the page): the phone grid's likely LCP card, the tallest of the first two rows, loads
-// eagerly (#129). Just that one: every eager byte competes with it. Only in the 2-column copy, because an eager image in
-// a display:none copy still downloads (on desktop it resolves to the w320 the visible grid uses anyway).
+// with high priority (#129); the other cards of those rows load eagerly at normal priority, as a lazy image only starts
+// after layout and the real LCP card can be another one (#211). Only in the 2-column copy, because an eager image in a
+// display:none copy still downloads (on desktop it resolves to the w320 the visible grid uses anyway).
 const FIRST_SCREEN_ROWS = 2
 
 /** Masonry gallery: SSR first page, infinite feed appended to column ends, lightbox loaded on first open. */
@@ -136,7 +138,7 @@ export function GalleryGridClient({
         <div key={layout.cols} className={layout.className}>
           {layout.columns.map((col, c) => (
             <ul key={c} className="flex min-w-0 flex-col gap-2 sm:gap-3 md:gap-4">
-              {col.map((i) => {
+              {col.map((i, row) => {
                 const item = items[i]!
                 return (
                   <li key={item.id}>
@@ -155,6 +157,7 @@ export function GalleryGridClient({
                         maxWidth={960}
                         // Hidden on desktop yet still fetched: it resolves to the w320 the visible grid shows, so no extra bytes.
                         priority={layout === phone && i === lcpItem}
+                        eager={priority && layout === phone && row < FIRST_SCREEN_ROWS}
                         imgClassName="transition-transform duration-500 ease-[var(--ease-out-expo)] group-hover:scale-[1.03]"
                       />
                     </a>

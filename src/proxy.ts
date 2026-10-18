@@ -8,6 +8,7 @@ import media from './lib/legacy/media-map.json'
 import attachmentPathList from './lib/legacy/wp-attachment-paths.json'
 import { apexRedirectOrigin } from './lib/legacy/host'
 import { resolveLegacy, type LegacyMaps } from './lib/legacy/resolve'
+import { queryRoute } from './lib/i18n/query-route'
 
 const intl = createMiddleware(routing)
 const FEED_PATHS = new Set(
@@ -91,6 +92,18 @@ export default function proxy(req: NextRequest) {
     const to = new URL(req.url)
     to.pathname = pathname.replace(/\/+$/, '')
     return NextResponse.redirect(to, 308)
+  }
+
+  // #211: a URL with a query string renders per request on the internal /_q copy of its route (src/lib/i18n/query-route.ts),
+  // so the bare URL stays ISR. The copy itself is not a public URL.
+  if (/^\/[^/]+\/_q(\/|$)/.test(pathname)) return new NextResponse('Not found', { status: 404 })
+  const queryTarget = req.nextUrl.search ? queryRoute(pathname) : null
+  if (queryTarget) {
+    const to = req.nextUrl.clone()
+    to.pathname = queryTarget
+    const headers = new Headers(req.headers)
+    headers.set('X-NEXT-INTL-LOCALE', pathname.split('/')[1]!) // what next-intl's own rewrite passes on
+    return NextResponse.rewrite(to, { request: { headers } })
   }
 
   const res = intl(req)

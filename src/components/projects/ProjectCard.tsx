@@ -18,7 +18,7 @@ export function ProjectCard({ project: p, priority = false, wide = false }: { pr
       {p.cover && (
         <Picture
           media={p.cover}
-          sizes={wide ? '(min-width: 1280px) 720px, (min-width: 640px) 58vw, 100vw' : '(min-width: 1280px) 400px, (min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw'}
+          sizes={wide ? '(min-width: 1280px) 720px, (min-width: 640px) 58vw, calc(100vw - 2rem)' : '(min-width: 1280px) 395px, (min-width: 1024px) calc(33.4vw - 2rem), (min-width: 640px) calc(50vw - 1.75rem), calc(100vw - 2rem)'}
           maxWidth={1280}
           priority={priority}
           className="aspect-[3/2]! rounded-[var(--radius-photo)]"

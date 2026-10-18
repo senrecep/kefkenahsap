@@ -30,8 +30,10 @@ const nextConfig: NextConfig = {
     const privateFiles = { source: '/api/lead-photos/:path*', headers: [{ key: 'Cache-Control', value: 'private, no-store' }] }
     // Share cards (#199): unversioned names, so a day's cache plus a week of stale-while-revalidate, not immutable.
     const ogCards = { source: '/og-:locale.png', headers: [{ key: 'Cache-Control', value: 'public, max-age=86400, stale-while-revalidate=604800' }] }
-    if (process.env.SITE_ENV === 'production') return [privateFiles, ogCards]
-    return [privateFiles, ogCards, { source: '/:path*', headers: [{ key: 'X-Robots-Tag', value: 'noindex, nofollow' }] }]
+    // Logo and icons (#211): fixed names, rarely changed, so a week fresh and then refreshed in the background.
+    const brand = { source: '/brand/:file*', headers: [{ key: 'Cache-Control', value: 'public, max-age=604800, stale-while-revalidate=31536000' }] }
+    if (process.env.SITE_ENV === 'production') return [privateFiles, ogCards, brand]
+    return [privateFiles, ogCards, brand, { source: '/:path*', headers: [{ key: 'X-Robots-Tag', value: 'noindex, nofollow' }] }]
   },
   turbopack: {
     root: path.resolve(dirname),

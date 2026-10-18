@@ -64,7 +64,6 @@ export function ContactForm({
   services,
   whatsappHref,
   sourcePage,
-  utm,
 }: {
   copy: ContactCopy
   locale: string
@@ -72,12 +71,14 @@ export function ContactForm({
   services: string[]
   whatsappHref: string | null
   sourcePage: string
-  utm?: Record<string, string>
 }) {
   const t = (key: string) => copy.text[key] ?? key
   const [state, dispatch, pending] = useActionState<LeadFormState, FormData>(submitLead, { status: 'idle' })
   const [photoState, setPhotoState] = useState<{ count: number; preparing: boolean; error?: string }>({ count: 0, preparing: false })
   const formRef = useRef<HTMLFormElement>(null)
+  // Read on the client so the page itself stays cached (#211); the server action keeps only the known utm_* keys.
+  const [utm, setUtm] = useState<[string, string][]>([])
+  useEffect(() => setUtm([...new URLSearchParams(window.location.search)].filter(([k]) => k.startsWith('utm_'))), [])
   const widgetRef = useRef<HTMLDivElement>(null)
   const widgetId = useRef<string | null>(null)
   // interaction-only: the check usually passes unseen. The widget box only gets its margin while Turnstile actually shows
@@ -193,7 +194,7 @@ export function ContactForm({
     <form ref={formRef} action={dispatch} onSubmit={onSubmit} noValidate className="grid gap-5">
       <input type="hidden" name="locale" value={locale} />
       <input type="hidden" name="sourcePage" value={sourcePage} />
-      {Object.entries(utm ?? {}).map(([k, v]) => (
+      {utm.map(([k, v]) => (
         <input key={k} type="hidden" name={k} value={v} />
       ))}
       {/* Honeypot: hidden from people and assistive tech, tempting for bots. */}

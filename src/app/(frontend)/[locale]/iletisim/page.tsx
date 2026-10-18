@@ -10,13 +10,12 @@ import { getPathname, Link } from '@/i18n/navigation'
 import type { Locale } from '@/i18n/routing'
 import { directionsUrl, telLink, waLink } from '@/lib/contact'
 import { getNavCategories, getSiteSettings } from '@/lib/data/site'
-import { pickUtm } from '@/lib/leads/guard'
 import { MAX_PHOTOS } from '@/lib/leads/validate'
 import { pageMetadata, staticPaths } from '@/lib/seo/page-metadata'
 
 import { ContactForm, type ContactCopy } from './ContactForm'
 
-type Props = { params: Promise<{ locale: string }>; searchParams: Promise<Record<string, string | string[] | undefined>> }
+type Props = { params: Promise<{ locale: string }> }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params
@@ -25,22 +24,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return pageMetadata({ locale: locale as Locale, title: { absolute: t('metaTitle') }, description: t('metaDescription'), paths: await staticPaths('/iletisim') })
 }
 
-export default async function ContactPage({ params, searchParams }: Props) {
+export default async function ContactPage({ params }: Props) {
   const { locale: l } = await params
   const locale = l as Locale
   setRequestLocale(locale)
-  const [t, tDays, settings, categories, query] = await Promise.all([
+  const [t, tDays, settings, categories] = await Promise.all([
     getTranslations('Contact'),
     getTranslations('Days'),
     getSiteSettings(locale),
     getNavCategories(locale),
-    searchParams,
   ])
   const a = settings.address
   const directions = directionsUrl(a)
   const h2 = 'font-[family-name:var(--font-display)] text-sm font-semibold uppercase tracking-wide text-ink-soft'
   const link = 'text-lg text-ink underline decoration-ink/25 underline-offset-4 hover:decoration-action'
-  const utm = pickUtm(query)
   const messages = (await getMessages({ locale })).Contact as Record<string, unknown> & { errors: Record<string, string> }
   const plainKeys = Object.keys(messages).filter((k) => typeof messages[k] === 'string' && k !== 'photosSelected' && k !== 'consent')
   const copy: ContactCopy = {
@@ -144,7 +141,6 @@ export default async function ContactPage({ params, searchParams }: Props) {
             services={categories.map((c) => c.name).filter(Boolean)}
             whatsappHref={waLink(settings, { kind: 'contact' })}
             sourcePage={getPathname({ locale, href: '/iletisim' })}
-            {...(utm ? { utm } : {})}
           />
         </section>
       </div>

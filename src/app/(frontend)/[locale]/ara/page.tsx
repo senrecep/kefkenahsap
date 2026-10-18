@@ -21,6 +21,9 @@ const LIMIT = 24
 
 type Props = { params: Promise<{ locale: string }>; searchParams: Promise<{ q?: string | string[] }> }
 
+// Search results depend on ?q: rendered per request (#211; the locale layout makes the other pages ISR).
+export const dynamic = 'force-dynamic'
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'Search' })

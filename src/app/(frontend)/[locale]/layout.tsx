@@ -28,8 +28,10 @@ const sourceSansCyr = localFont({ src: '../../fonts/SourceSans3-cyrillic.woff2',
 // Arabic (ar): Montserrat / Source Sans 3 have no Arabic glyphs, so Noto Sans Arabic serves both roles, same loading rules.
 const notoArabic = localFont({ src: '../../fonts/NotoSansArabic.woff2', weight: '400 700', variable: '--font-arabic', display: 'swap', preload: false, adjustFontFallback: false, declarations: [{ prop: 'unicode-range', value: 'U+0600-06FF, U+0750-077F, U+FB50-FDFF, U+FE70-FEFF, U+200C-200F, U+2066-2069' }] })
 
-// Pages read CMS data per request (cached via unstable_cache tags + Cloudflare edge); no DB needed at build time.
-export const dynamic = 'force-dynamic'
+// ISR (#211): nothing is prerendered at build (the image build has no DB); each page renders on its first request and is
+// then served from the cache until a tag revalidation (src/hooks/revalidate.ts) or its data's revalidate time. Every
+// dynamic segment below needs its own empty generateStaticParams, or Next renders it per request.
+export const generateStaticParams = () => []
 
 // Site-wide defaults; pages set their own text and alternates through `pageMetadata` (src/lib/seo).
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {

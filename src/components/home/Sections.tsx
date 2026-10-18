@@ -76,7 +76,7 @@ export async function Services({ locale, heading, galleryCount = 0 }: Heading & 
   ])
   if (!listed.length) return null
   const cover = galleryTileCover(curated, listed, curated.slice(0, galleryCount).map((i) => i.id))
-  const sizes = '(min-width: 1280px) 400px, (min-width: 1024px) 31vw, 48vw'
+  const sizes = '(min-width: 1280px) 400px, (min-width: 1024px) 31vw, calc(50vw - 1.5rem)'
   const pic = '!aspect-[4/3] rounded-[var(--radius-photo)]'
   const zoom = 'transition-transform duration-500 ease-[var(--ease-out-expo)] group-hover:scale-[1.03]'
   const name = 'mt-3 text-[1.05rem] group-hover:text-action sm:mt-4 sm:text-xl'
@@ -122,7 +122,7 @@ export async function FeaturedProjects({ locale, heading }: Heading & { locale: 
           <li key={p.id}>
             <Link href={{ pathname: '/projeler/[slug]', params: { slug: p.slug! } }} className="group block">
               {p.cover && typeof p.cover === 'object' && (
-                <Picture media={p.cover} sizes="(min-width: 1024px) 31vw, (min-width: 640px) 48vw, 100vw" maxWidth={1280} className="!aspect-[4/3] rounded-[var(--radius-photo)]" />
+                <Picture media={p.cover} sizes="(min-width: 1024px) 31vw, (min-width: 640px) 48vw, calc(100vw - 2rem)" maxWidth={1280} className="!aspect-[4/3] rounded-[var(--radius-photo)]" />
               )}
               <h3 className="mt-4 text-xl group-hover:text-action">{p.title}</h3>
               {(p.city || p.year) && <p className="mt-1 text-ink-soft">{[p.city, p.year].filter(Boolean).join(' · ')}</p>}
