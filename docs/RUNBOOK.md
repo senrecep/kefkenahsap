@@ -79,6 +79,17 @@ Media is served from `cdn.kefkenahsap.com` / `cdn-dev.kefkenahsap.com` with a on
 - **Pending (owner):** in Cloudflare → My Profile → API Tokens → Create Custom Token, permission **Zone → Cache Purge → Purge** only, Zone Resources **Include → Specific zone → kefkenahsap.com**, nothing else (no DNS, no edit scopes, no other zones). Put it in the Dokploy env of **both** `development` and `production` as `CLOUDFLARE_PURGE_TOKEN`, with `CLOUDFLARE_ZONE_ID=04160cf76d6ba4ad5d37d83145eaae57`; update the raw compose in Dokploy from `docker-compose.dokploy.yml` (it now passes both variables to `app`), then redeploy. Until then the app logs once `media: CLOUDFLARE_ZONE_ID / CLOUDFLARE_PURGE_TOKEN not set; …` and skips the purge.
 - Files deleted before the token was set are still cached: purge them by URL from the Cloudflare dashboard (Caching → Configuration → Custom Purge), or wait out the cache.
 
+### Page caching and Cloudflare HTML (#211)
+
+Public pages are ISR: Next renders each one on its first request and keeps it in `.next` until a Payload save revalidates its tags (immediately, #192) or its data's `revalidate` time passes (1 h). Responses carry `Cache-Control: s-maxage=3600, stale-while-revalidate=…`. Query URLs that change a page (`?kategori`, `?etiket`, `?sayfa`) render per request (`no-store`); tracking parameters stay on the cached page. Unknown URLs answer 404 without being stored.
+
+- **The app never purges Cloudflare's HTML.** Tag revalidation refreshes only Next's own copy; the Cloudflare purge exists for media files only (above). So an HTML Cache Rule at the edge **must not honour the origin's `s-maxage`** (1 h of stale pages after every admin save): set **Edge TTL = 5 minutes, override origin** (PLAN §10), and Browser TTL = respect origin. Longer edge caching needs an HTML purge from the Payload hooks first (PLAN §3, not built).
+- Rule scope: `kefkenahsap.com` hostname, not `/admin*`, not `/api/*`, not `/` (root redirect depends on cookie / Accept-Language). "Ignore cache-control, use 5 min" also keeps the per-request query pages and 404s for 5 min: acceptable, public pages hold nothing personal. Never apply the rule to development (Basic auth).
+- **404 floods:** the page cache is a bounded in-memory LRU (`next.config.ts`, `isrFlushToDisk: false`), so scans cannot fill the disk, but a burst of made-up URLs can push real pages out of it, and those pages then re-render on their next visit. Add a Cloudflare rate-limiting rule on 404 responses (LAUNCH 1B).
+- Pages send no `Set-Cookie` (the language switcher writes `NEXT_LOCALE` in the browser), which Cloudflare requires to store a response.
+- Development: behind Basic auth every page answers `Cache-Control: private, no-store`, so no shared cache keeps an authorised page; Next's own ISR still works there.
+- Not done, owner decision: turn off Cloudflare **Email Obfuscation** (rewrites the HTML, risks React hydration errors, adds a script) and **Web Analytics** (Umami + consented GA4 already cover it; the beacon adds ~10 KB of legacy JS).
+
 ### Loading translations
 
 Translations for the locales other than TR/EN live in `seed/i18n/<locale>/`, which mirrors `seed/` (`content/**`, `media-meta/**`, `media-meta-archive/**`). TR/EN text fixes for the seeded photos live in `seed/i18n/sentence-case.json` (titles) and `seed/i18n/text-fixes.json` (any field, e.g. captions). The loaders fill only empty fields and skip missing files. A re-run writes nothing.

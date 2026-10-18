@@ -28,6 +28,9 @@ const projectPath = (locale: Locale, slug: string) => getPathname({ locale, href
 type LexicalNode = { type?: string; text?: string; children?: LexicalNode[] }
 const hasText = (n: LexicalNode | undefined): boolean => Boolean(n && (n.type === 'text' ? n.text?.trim() : n.children?.some(hasText)))
 
+// ISR on first request (see the locale layout).
+export const generateStaticParams = () => []
+
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
   const { locale, slug } = await params
   const data = await getProject(locale, safeDecode(slug))
@@ -146,7 +149,7 @@ export default async function ProjectPage({ params }: { params: Params }) {
           </h2>
           <ul className="mt-6 grid gap-3 sm:grid-cols-2">
             {photos.map((m) => {
-              const pic = <Picture media={m} sizes="(min-width: 1280px) 610px, (min-width: 640px) 50vw, 100vw" maxWidth={1280} className="aspect-[3/2]! rounded-[var(--radius-photo)]" />
+              const pic = <Picture media={m} sizes="(min-width: 1280px) 610px, (min-width: 640px) 50vw, calc(100vw - 2rem)" maxWidth={1280} className="aspect-[3/2]! rounded-[var(--radius-photo)]" />
               return (
                 <li key={m.id}>
                   {m.seoFilename ? (

@@ -80,3 +80,45 @@ describe.each([
     if (host === 'kefkenahsap.com') expect(location!.startsWith(`${CANON}/`)).toBe(true)
   })
 })
+
+// #211: public pages are ISR; the proxy decides which requests reach the per-request copy and what a shared cache may keep.
+describe('proxy and page caching', () => {
+  const www = 'www.kefkenahsap.com'
+  const rewrite = (res: Response) => {
+    const to = res.headers.get('x-middleware-rewrite')
+    return to ? new URL(to).pathname + new URL(to).search : null
+  }
+  afterEach(() => vi.unstubAllEnvs())
+
+  it('sends a filter / no-JS page query to the per-request copy', () => {
+    expect(rewrite(proxy(req('/tr/galeri?kategori=deck', www)))).toBe('/tr/_q/galeri?kategori=deck')
+    expect(rewrite(proxy(req('/en/gallery?sayfa=2&utm_source=x', www)))).toBe('/en/_q/galeri?sayfa=2&utm_source=x')
+    expect(rewrite(proxy(req('/tr/projeler?kategori=deck', www)))).toBe('/tr/_q/projeler?kategori=deck')
+    expect(rewrite(proxy(req('/tr/deck-ve-zeminler?sayfa=2', www)))).toBe('/tr/_q/deck-ve-zeminler?sayfa=2')
+  })
+
+  it('keeps tracking-only queries (and keys a route does not read) on the cached page', () => {
+    for (const path of ['/tr/galeri?utm_source=x', '/tr/galeri?gclid=1', '/tr/projeler?fbclid=1', '/tr/projeler?sayfa=2', '/tr/deck-ve-zeminler?kategori=x', '/tr/deck-ve-zeminler?preview=1']) {
+      expect(rewrite(proxy(req(path, www))), path).toBeNull()
+    }
+  })
+
+  it('answers 404 for the internal copy, however its name is escaped', () => {
+    for (const path of ['/tr/_q/galeri', '/tr/%5Fq/galeri', '/tr/%5fq/galeri', '/en/_q']) expect(proxy(req(path, www)).status, path).toBe(404)
+  })
+
+  it('sends no Set-Cookie on pages, so a shared cache may keep them', () => {
+    for (const path of ['/tr', '/en/gallery', '/tr/galeri?kategori=deck']) expect(proxy(req(path, www)).headers.get('set-cookie'), path).toBeNull()
+  })
+
+  it('marks pages private behind the development Basic auth gate', () => {
+    vi.stubEnv('SITE_ENV', 'development')
+    vi.stubEnv('SITE_BASIC_AUTH', 'u:p')
+    const auth = { authorization: `Basic ${btoa('u:p')}` }
+    for (const path of ['/tr', '/tr/galeri?kategori=deck']) expect(proxy(req(path, www, { headers: auth })).headers.get('cache-control'), path).toBe('private, no-store')
+  })
+
+  it('leaves Cache-Control to Next when no gate is set', () => {
+    expect(proxy(req('/tr', www)).headers.get('cache-control')).toBeNull()
+  })
+})

@@ -66,8 +66,16 @@ test.describe('Contact page', () => {
     await expect(page.getByLabel(/Ad soyad/)).toHaveAttribute('aria-invalid', 'true')
   })
 
+  test('UTM comes from the URL on the client: one field per key, the first value (#211)', async ({ page }) => {
+    await page.goto('/tr/iletisim?utm_source=e2e&utm_source=dup&utm_medium=cpc&gclid=1')
+    await expect(page.locator('input[type="hidden"][name="utm_source"]')).toHaveValue('e2e')
+    await expect(page.locator('input[type="hidden"][name="utm_medium"]')).toHaveValue('cpc')
+    await expect(page.locator('input[type="hidden"][name^="utm_"]')).toHaveCount(2)
+    await expect(page.locator('input[name="gclid"]')).toHaveCount(0)
+  })
+
   test('submits a lead with a photo, utm and locale', async ({ page }) => {
-    await page.goto('/tr/iletisim?utm_source=e2e')
+    await page.goto('/tr/iletisim?utm_source=e2e&utm_source=dup&gclid=1')
     await page.getByLabel(/Ad soyad/).fill(`E2E ${stamp}`)
     await page.getByLabel(/^Telefon/).fill('0532 111 22 33')
     await page.getByLabel(/Mesajınız/).fill('Bahçeye 20 m² deck')

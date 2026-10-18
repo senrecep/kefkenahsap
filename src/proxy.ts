@@ -8,14 +8,9 @@ import media from './lib/legacy/media-map.json'
 import attachmentPathList from './lib/legacy/wp-attachment-paths.json'
 import { apexRedirectOrigin } from './lib/legacy/host'
 import { resolveLegacy, type LegacyMaps } from './lib/legacy/resolve'
+import { queryRoute } from './lib/i18n/query-route'
 
 const intl = createMiddleware(routing)
-const FEED_PATHS = new Set(
-  routing.locales.map((l) => {
-    const p = routing.pathnames['/galeri']
-    return `/${l}${typeof p === 'string' ? p : p[l]}/feed`
-  }),
-)
 
 const legacyMaps: LegacyMaps = { media, attachments, attachmentPaths: new Set(attachmentPathList) }
 const mediaBase = [process.env.MEDIA_PUBLIC_URL, process.env.S3_PREFIX].filter(Boolean).join('/')
@@ -93,10 +88,29 @@ export default function proxy(req: NextRequest) {
     return NextResponse.redirect(to, 308)
   }
 
+  // #211: a URL with a query string renders per request on the internal /_q copy of its route (src/lib/i18n/query-route.ts),
+  // so the bare URL stays ISR. The copy itself is not a public URL.
+  // Decoded: Next routes /tr/%5Fq/… to the same folder.
+  if (/^\/[^/]+\/_q(\/|$)/.test(decodeURIComponent(pathname))) return new NextResponse('Not found', { status: 404 })
+  // Behind the development Basic auth gate no shared cache (Cloudflare, proxies) may keep a page; Next's own ISR still does.
+  const gated = (res: NextResponse) => {
+    if (basic && basic !== 'off') res.headers.set('Cache-Control', 'private, no-store')
+    return res
+  }
+  const queryTarget = queryRoute(pathname, req.nextUrl.searchParams)
+  if (queryTarget) {
+    const to = req.nextUrl.clone()
+    to.pathname = queryTarget
+    const headers = new Headers(req.headers)
+    headers.set('X-NEXT-INTL-LOCALE', pathname.split('/')[1]!) // what next-intl's own rewrite passes on
+    return gated(NextResponse.rewrite(to, { request: { headers } }))
+  }
+
   const res = intl(req)
-  // The gallery feed is cacheable JSON: a locale Set-Cookie would make the edge skip it.
-  if (FEED_PATHS.has(pathname)) res.headers.delete('set-cookie')
-  return res
+  // No locale Set-Cookie on pages (or the gallery feed): a shared cache skips any response that sets one (#211). The
+  // remembered language for `/` (PLAN §5.1) is written by the language switcher instead.
+  res.headers.delete('set-cookie')
+  return gated(res)
 }
 
 export const config = {

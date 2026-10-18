@@ -8,6 +8,12 @@ import type { Locale } from '@/i18n/routing'
 // Endonyms: each language is named in itself, never translated.
 const NATIVE = { tr: 'Türkçe', en: 'English', ru: 'Русский', de: 'Deutsch', ar: 'العربية' } as const satisfies Record<Locale, string>
 
+// The remembered choice `/` redirects to (PLAN §5.1, src/app/route.ts). Written here, not by the proxy: pages are cached,
+// and a shared cache skips a response that sets a cookie (#211).
+const rememberLocale = (locale: string) => {
+  document.cookie = `NEXT_LOCALE=${locale}; path=/; max-age=31536000; samesite=lax${location.protocol === 'https:' ? '; secure' : ''}`
+}
+
 /** Follows the page's own <link rel="alternate" hreflang> (set by each page's metadata), so CMS slugs switch correctly. */
 // locale, locales (the ones with content) and label come from the server Header, keeping the i18n runtime out of the client bundle.
 // `menu`: a native <details> dropdown for the header; `list`: the same links laid out open, for the mobile menu panel.
@@ -59,6 +65,7 @@ export function LanguageSwitcher({
       if (details.current) details.current.open = false
       return
     }
+    rememberLocale(target)
     const alt = document.querySelector<HTMLLinkElement>(`link[rel="alternate"][hreflang="${target}"]`)
     if (alt?.href) {
       e.preventDefault()

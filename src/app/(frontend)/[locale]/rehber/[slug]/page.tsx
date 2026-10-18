@@ -29,6 +29,9 @@ import { pageMetadata } from '@/lib/seo/page-metadata'
 
 type Props = { params: Promise<{ locale: Locale; slug: string }> }
 
+// ISR on first request (see the locale layout).
+export const generateStaticParams = () => []
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = await params
   const found = await getGuide(locale, slug)

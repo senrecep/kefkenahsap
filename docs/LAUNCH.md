@@ -109,6 +109,8 @@ Work through the phases in order and tick each step. Never paste a secret value 
     - It must happen before the first deploy, so the first boot already has the current volumes (#189).
     - **Also sync the `development` raw compose** (where GlitchTip runs today) and redeploy it: the compose sets the GlitchTip event retention to 30 days (`GLITCHTIP_RETENTION_DAYS`, legacy `GLITCHTIP_MAX_EVENT_LIFE_DAYS`), which the privacy notice promises (#195).
 
+- [ ] **[Owner]** Cloudflare: HTML Cache Rule and 404 burst limit (#211, `docs/RUNBOOK.md` "Page caching and Cloudflare HTML"). (a) HTML Cache Rule on `kefkenahsap.com`: Edge TTL **5 min, ignore origin** (the app does not purge Cloudflare's HTML). Not on `/`, `/admin*` or `/api/*`, never on development. (b) WAF rate-limiting rule (Free plan allows one): block an IP for 10 s after more than ~30 responses with status 404 in 10 s on `kefkenahsap.com`. Why: the app's page cache is a bounded in-memory LRU (`next.config.ts`), and a flood of made-up URLs would push the real pages out of it. Each pushed-out page then renders again on its next visit.
+
 ### 1C. Old site and DNS safety
 
 13. [ ] **[Owner]** Full cPanel backup at güzelhosting (files + DB), downloaded. WordPress stays there untouched as the rollback target.
