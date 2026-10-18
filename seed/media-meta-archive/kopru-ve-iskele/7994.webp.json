@@ -1,0 +1,39 @@
+{
+  "source": "Kopru ve Iskele/7994.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kavisli ahşap kirişin yakın görünümü, dikme ve payandalarla",
+    "en": "Close view of a curved timber beam with posts and braces"
+  },
+  "alt": {
+    "tr": "Kavisli ahşap köprü kirişi ve çapraz payandalı dikmeler yakından; arkada şemsiye ve bina cephesi",
+    "en": "Curved timber bridge beam and posts with diagonal braces seen close up, with an umbrella and a building front behind"
+  },
+  "caption": {
+    "tr": "Kavisli kiriş dikmelerin arasından geçip köprünün kemerini oluşturuyor. Çapraz payandalar dikmeyi yana karşı tutuyor.",
+    "en": "The curved beam passes between the posts to form the arch of the bridge. Diagonal braces hold the posts against sideways movement."
+  },
+  "seoFilename": "kavisli-ahsap-kirisin-yakin-gorunumu-dikme-payanda",
+  "tags": {
+    "type": [
+      "köprü"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

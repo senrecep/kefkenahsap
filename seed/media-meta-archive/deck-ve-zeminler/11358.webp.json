@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/11358.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Grileşmiş eski deck, arkada oyun yapısı",
+    "en": "Old greyed deck with a play structure behind"
+  },
+  "alt": {
+    "tr": "Hava almış, grileşmiş ve aşınmış eski ahşap deck; arkada merdivenli ahşap oyun yapısı",
+    "en": "Old weathered, greyed and worn timber deck with a timber play structure with a stair behind"
+  },
+  "caption": {
+    "tr": "Deck tahtaları gri, çatlak ve birçok yerde çivi başları çıkmış. Yenilenmeye hazırlanan bir deck.",
+    "en": "The deck boards are grey and cracked, with nail heads standing proud in many places. A deck being prepared for renovation."
+  },
+  "seoFilename": "hava-almis-grilesmis-eski-ahsap-deck-arkada-merdivenli-ahsap",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

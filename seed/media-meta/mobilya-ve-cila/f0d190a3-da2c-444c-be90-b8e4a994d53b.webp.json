@@ -1,0 +1,35 @@
+{
+  "file": "f0d190a3-da2c-444c-be90-b8e4a994d53b.webp",
+  "category": "mobilya-ve-cila",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Özel üretim ahşap ofis bankosu ve çıtalı duvar kaplaması",
+    "en": "Custom wood office reception desk and slat wall paneling"
+  },
+  "alt": {
+    "tr": "Ofis bekleme alanında ahşap karşılama bankosu, çıtalı koyu duvar kaplaması ve oturma alanı.",
+    "en": "Wooden reception desk, dark slatted wall paneling, and lounge seating in an office waiting area."
+  },
+  "caption": {
+    "tr": "Ofis giriş ve bekleme bölümü için uygulanan ahşap tablalı karşılama bankosu ve arka fondaki dikey çıtalı dekoratif ahşap duvar paneli.",
+    "en": "Custom wooden reception desk and vertical slat wood accent wall crafted for an office entrance and lounge area."
+  },
+  "seoFilename": "ahsap-ofis-bankosu-ve-catili-duvar-kaplamasi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "ofis",
+      "iç mekan",
+      "bekleme alanı"
+    ],
+    "finish": [
+      "mat cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

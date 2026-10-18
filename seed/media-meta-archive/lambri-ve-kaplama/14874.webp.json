@@ -1,0 +1,35 @@
+{
+  "source": "Kapi Dolap ve Seperator/14874.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Eğimli tavanlı odada bej duvar paneli",
+    "en": "Beige wall panel in a room with a sloped ceiling"
+  },
+  "alt": {
+    "tr": "Eğimli tavanlı odada duvar dibine yerleştirilmiş bej renkli çıtalı panel; zemin karton kaplı, yerde alet çantası",
+    "en": "Beige ribbed panel fitted at the foot of a wall in a room with a sloped ceiling"
+  },
+  "caption": {
+    "tr": "Panel odanın alt duvarına takılmış. Zemin kartonla örtülmüş, iş devam ediyor.",
+    "en": "The panel is fitted to the lower part of the wall. The floor is covered with cardboard and the work is still going on."
+  },
+  "seoFilename": "egimli-tavanli-oda-bej-citali-duvar-paneli",
+  "tags": {
+    "type": [
+      "iç duvar kaplaması"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

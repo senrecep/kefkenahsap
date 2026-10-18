@@ -1,0 +1,33 @@
+{
+  "file": "IMG_20180525_095350.jpg1_.webp",
+  "category": "boya-tamir-ve-bakim",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Terasta ahşap bahçe masası ve katlanır sandalyeler",
+    "en": "Wooden garden table and folding chairs on a terrace"
+  },
+  "alt": {
+    "tr": "Terasta çıtalı yüzeyli dikdörtgen ahşap masa ve etrafında katlanır ahşap sandalyeler, arkada beyaz minderli koltuk",
+    "en": "Rectangular slatted wooden table with folding wooden chairs on a terrace, white cushioned sofa in the background"
+  },
+  "caption": {
+    "tr": "Çıtalı masa ve katlanır sandalyelerden oluşan ahşap bahçe takımı, bakım sonrası teras kullanımına hazır.",
+    "en": "A wooden garden set with a slatted table and folding chairs, ready for use on the terrace after maintenance."
+  },
+  "seoFilename": "teras-ahsap-bahce-masasi-katlanir-sandalye",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "teras",
+      "bahçe",
+      "dış mekan"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

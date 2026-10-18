@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/8856.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yan yüzü tahta kaplı merdiven, yanda trambolin",
+    "en": "Stairs with a boarded side, a trampoline beside"
+  },
+  "alt": {
+    "tr": "Çaprazlı korkuluklu ahşap merdiven; yan yüzü yatay tahtayla kaplı, sağda trambolin, solda tel çit",
+    "en": "Timber stairs with a cross-braced railing and the side clad in horizontal boards"
+  },
+  "caption": {
+    "tr": "Merdivenin altı ve yan yüzü yatay tahtayla kapatılmış. Sağdaki trambolin bahçenin oyun alanı olduğunu gösteriyor.",
+    "en": "The underside and side of the stairs are boarded in horizontally. The trampoline on the right shows the garden is used for play."
+  },
+  "seoFilename": "yan-yuzu-tahta-kapli-capraz-merdiven-trambolin-yaninda",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

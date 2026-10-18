@@ -1,0 +1,36 @@
+{
+  "file": "5003a153-b772-4a96-819a-57f2067f49f0.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Gri boyalı askılı banyo dolabı ve mermer tezgah",
+    "en": "Grey painted wall-hung vanity with marble top"
+  },
+  "alt": {
+    "tr": "Gri metro fayanslı banyoda, mermer tezgahlı ve iki lavabolu gri boyalı askılı dolap; üstünde çerçeveli geniş ayna",
+    "en": "Grey painted wall-hung vanity with two sinks and a marble top in a tiled bathroom, with a large framed mirror above"
+  },
+  "caption": {
+    "tr": "İki çekmeceli, krom kulplu gri boyalı askılı banyo dolabı. Üzerinde beyaz damarlı mermer tezgah ve çift lavabo yer alıyor.",
+    "en": "Grey painted wall-hung bathroom vanity with two drawers and chrome handles, topped with a white-veined marble counter and double sink."
+  },
+  "seoFilename": "gri-boyali-askili-banyo-dolabi-mermer-tezgah",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "banyo",
+      "tuvalet",
+      "ticari mekan"
+    ],
+    "finish": [
+      "gri boya",
+      "mat boya"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.72
+}

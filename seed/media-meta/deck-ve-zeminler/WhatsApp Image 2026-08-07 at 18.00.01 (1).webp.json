@@ -1,0 +1,36 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 18.00.01 (1).webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede sıcak tonlu ahşap deck zemin",
+    "en": "Warm-toned wooden deck in a garden"
+  },
+  "alt": {
+    "tr": "Yeşilliklerle çevrili bahçede, bal rengi ahşap tahtalarla döşenmiş deck zemin ve arkasında metal korkuluk",
+    "en": "Honey-colored wooden deck in a garden surrounded by greenery, with a metal railing behind it"
+  },
+  "caption": {
+    "tr": "Bahçeye yapılan ahşap deck zemin. Tahtalar yan yana düzgün döşenmiş, yüzeyde ahşabın damar deseni açıkça görülüyor.",
+    "en": "A wooden deck laid in a garden. The boards are evenly spaced and the grain of the wood is clearly visible on the surface."
+  },
+  "seoFilename": "bahce-ahsap-deck-zemin",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "teras"
+    ],
+    "finish": [
+      "vernikli",
+      "yağlı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

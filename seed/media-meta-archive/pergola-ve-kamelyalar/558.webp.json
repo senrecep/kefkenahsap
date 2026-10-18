@@ -1,0 +1,41 @@
+{
+  "source": "Pergola ve Kamelyalar/558.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz evlere bakan deck platformunun çapraz korkuluk hattı",
+    "en": "The X-braced railing line of a deck platform facing white houses"
+  },
+  "alt": {
+    "tr": "Beyaz evlerin karşısındaki deck platformunda çapraz korkuluk hattı ve üstteki çatılı kamelya, mavi deniz",
+    "en": "The X-braced railing line on a deck platform opposite white houses, with a roofed gazebo above and blue sea"
+  },
+  "caption": {
+    "tr": "Çapraz çıtalar korkuluk boyunca düzenli aralıkla tekrar ediyor. Kamelyanın direkleri deckin ortasında duruyor.",
+    "en": "The cross slats repeat at even intervals along the railing. The gazebo's posts stand in the middle of the deck."
+  },
+  "seoFilename": "beyaz-evlere-bakan-deck-platformu-capraz-korkuluk",
+  "tags": {
+    "type": [
+      "kamelya",
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

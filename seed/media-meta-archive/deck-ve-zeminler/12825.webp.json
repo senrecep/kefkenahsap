@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12825.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kırmızı çelik çerçeve üzerinde çıtalı deck alt yapısı ve beton kanal",
+    "en": "Slatted deck substructure on a red steel frame beside a concrete channel"
+  },
+  "alt": {
+    "tr": "Kırmızı çelik çerçeve üzerinde ahşap çıtalı deck alt yapısı, yanda beton kanal",
+    "en": "Slatted timber deck substructure on a red steel frame, with a concrete channel at the side"
+  },
+  "caption": {
+    "tr": "Çıtalar çelik profillere dik gelecek biçimde yerleştirilmiş. Yan tarafta kanalın içine tesisat girmiş.",
+    "en": "The battens are laid square to the steel profiles. Pipework runs into the channel at the side."
+  },
+  "seoFilename": "kirmizi-celik-cerceve-citali-deck-alt-yapisi-beton-kanal",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

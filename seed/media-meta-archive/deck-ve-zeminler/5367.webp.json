@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/5367.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Geniş alt iskelet ve dikmeler, arkada kıyı",
+    "en": "Wide sub-frame and posts, with the shore behind"
+  },
+  "alt": {
+    "tr": "Deniz kıyısında uzun bir alanı kaplayan geniş ahşap alt iskelet ve sıralı dikmeler; arkada beyaz yapılar ve araçlar",
+    "en": "Wide timber sub-frame covering a long area by the sea, with rows of posts, and white buildings and vehicles behind"
+  },
+  "caption": {
+    "tr": "İskelet kirişleri sıra sıra uzanıyor ve dikmeler ileride korkuluğun yerini gösteriyor. Zeminde kablolar ve el aletleri var.",
+    "en": "The frame joists run in rows and the posts show where the railing will go. Cables and hand tools lie on the frame."
+  },
+  "seoFilename": "genis-ahsap-alt-iskelet-ve-dikmeler-deniz-kiyisinda",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

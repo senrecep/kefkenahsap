@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/7783.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş döşemede sık yatay çıtalı uzun ahşap ekran, arkada çalılık",
+    "en": "Long horizontal-slat timber screen on stone paving, scrub behind"
+  },
+  "alt": {
+    "tr": "Taş döşeli alanda, kısmen boşluklu yatay çıtalarla örülmüş alçak uzun ahşap ekran; yanında çöp kovası",
+    "en": "Low long timber screen of partly spaced horizontal slats on a stone-paved area"
+  },
+  "caption": {
+    "tr": "Ekran çıtaları aralıklı döşenmiş, içerideki alanı örtüyor. Köşede ekranın kenarında çıtalar dikmeye bağlanıyor.",
+    "en": "The screen slats are spaced apart and cover the area inside. At the corner the slats are fixed to a post."
+  },
+  "seoFilename": "tas-doseme-sik-yatay-citali-uzun-ahsap-ekran",
+  "tags": {
+    "type": [
+      "kafes / paravan",
+      "çit"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

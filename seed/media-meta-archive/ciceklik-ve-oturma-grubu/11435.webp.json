@@ -1,0 +1,35 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/11435.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Terasta kızıl kahve tonlu köşe oturma grubu",
+    "en": "Reddish-brown corner seating set on a terrace"
+  },
+  "alt": {
+    "tr": "Açık renk karo döşeli terasta, parlak kızıl kahve tonlu ahşap köşe koltuk ve alçak sehpa",
+    "en": "Glossy reddish-brown timber corner sofa and low table on a terrace with light tiles"
+  },
+  "caption": {
+    "tr": "Teras köşesine yerleşen oturma grubu, yatay çıtalı sırtlığı ve aynı tondaki sehpasıyla tamamlanıyor.",
+    "en": "A seating set fitted into a terrace corner, with a horizontal slatted back and a matching table."
+  },
+  "seoFilename": "teras-kizil-kahve-kose-oturma-grubu",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "teras",
+      "dış mekân"
+    ],
+    "finish": [
+      "kızıl kahve ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

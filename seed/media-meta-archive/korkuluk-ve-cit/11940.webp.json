@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/11940.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bitkiler arasında köşeye kurulan telli ahşap çerçeve, çapraz destekli",
+    "en": "Wire-mesh timber frame fixed in a corner among plants, with a diagonal brace"
+  },
+  "alt": {
+    "tr": "Bambu ve çalıların arasında duvar köşesine kurulan, çapraz destekli ve tel örgü gerilmiş ahşap çerçeve; yerde kuru yapraklar",
+    "en": "A timber frame with a diagonal brace and stretched wire mesh built into a wall corner among bamboo and shrubs"
+  },
+  "caption": {
+    "tr": "Çerçeve duvarla çalı arasındaki boşluğu kapatıyor. Tel örgü alt ve üst bölümde ayrı ayrı gerilmiş.",
+    "en": "The frame closes the gap between the wall and the shrubs. Wire mesh is stretched separately across the lower and upper sections."
+  },
+  "seoFilename": "bitkiler-arasinda-koseye-kurulan-telli-ahsap-cerceve",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

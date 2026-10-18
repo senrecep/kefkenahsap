@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/14910.webp",
+  "category": "mutfak-ve-gomme-dolap",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çift kanatlı rustik dolap, üstünde kereste parçaları",
+    "en": "Rustic double-door cabinet with offcuts on top"
+  },
+  "alt": {
+    "tr": "Siyah menteşeli, koyu yanık tonlu çift kanatlı rustik ahşap dolap; üstünde atölyeden kereste parçaları",
+    "en": "A rustic timber double-door cabinet in a dark scorched tone with black hinges, with workshop timber offcuts on top"
+  },
+  "caption": {
+    "tr": "Kapaklar dikey tahtalarla yapılmış, koyu tonda ve siyah demir menteşeli. Dolabın üstünde kereste parçaları sıralanmış.",
+    "en": "The doors are made of vertical boards in a dark tone with black iron hinges. Timber offcuts are arranged on top of the cabinet."
+  },
+  "seoFilename": "cift-kanatli-siyah-mentese-rustik-ahsap-dolap-kereste",
+  "tags": {
+    "type": [
+      "gömme dolap / gardırop"
+    ],
+    "wood": [],
+    "setting": [
+      "atölyede üretim"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

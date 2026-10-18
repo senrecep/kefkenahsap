@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/13444.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kumlu bahçede yapım aşamasında çit",
+    "en": "Fence being built in a sandy garden"
+  },
+  "alt": {
+    "tr": "Kumlu bahçenin köşesinde duvara paralel kurulmuş çıtalı çit, yerde dairesel testere, kürek ve kereste",
+    "en": "Slatted fence set up parallel to the wall in the corner of a sandy garden, with a circular saw, shovel"
+  },
+  "caption": {
+    "tr": "Çit duvar boyunca iki kol halinde uzanıyor. Yapım aletleri hâlâ sahada.",
+    "en": "The fence extends along the wall in two arms. The tools are still on site."
+  },
+  "seoFilename": "kumlu-bahcede-yapim-asamasinda-cit",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

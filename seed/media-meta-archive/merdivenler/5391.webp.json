@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/5391.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar yanında merdiven yapımı, iki usta",
+    "en": "Building stairs by a stone wall, two carpenters"
+  },
+  "alt": {
+    "tr": "Taş duvar yanında basamakları kurulan ahşap merdiven ve platform; iki usta iş başında, zemin kırmızı karo",
+    "en": "Timber stairs and platform being built beside a stone wall, with two carpenters at work and a red-tiled floor"
+  },
+  "caption": {
+    "tr": "Basamaklar ve platform taşıyıcıları yerine oturtuluyor. İki usta korkuluk direkleriyle uğraşıyor.",
+    "en": "The treads and platform supports are being set in place. Two carpenters are busy with the railing posts."
+  },
+  "seoFilename": "tas-duvar-yaninda-ahsap-merdiven-yapimi-iki-usta",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

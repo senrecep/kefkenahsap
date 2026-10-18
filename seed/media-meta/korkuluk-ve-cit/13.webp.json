@@ -1,0 +1,37 @@
+{
+  "file": "13.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Yuvarlak merdiven yanında yatay çıtalı ahşap korkuluk duvarı",
+    "en": "Horizontal slat wooden railing wall beside a curved staircase"
+  },
+  "alt": {
+    "tr": "Kavisli taş basamaklı merdivenin yanında, yatay ahşap çıtalarla kaplı eğimli korkuluk duvarı ve ahşap deck zemin",
+    "en": "Sloped railing wall clad in horizontal wood slats beside a curved stone staircase, with a wooden deck floor"
+  },
+  "caption": {
+    "tr": "Deck zeminle birlikte yapılan, yatay çıtalı ve üstü geniş küpeşteli ahşap korkuluk. Merdivenin eğimini izleyen düz bir yüzeyi var.",
+    "en": "A wooden railing built together with the deck floor, with horizontal slats and a wide top rail. It forms a flat surface that follows the slope of the stairs."
+  },
+  "seoFilename": "yatay-citali-ahsap-korkuluk-duvari-merdiven",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "dış mekan",
+      "merdiven",
+      "teras",
+      "bina girişi"
+    ],
+    "finish": [
+      "doğal ton",
+      "yatay çıta"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

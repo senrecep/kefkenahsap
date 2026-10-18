@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/9534.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Pencere çevresinde yatay cephe tahtaları",
+    "en": "Horizontal facade boards around a window"
+  },
+  "alt": {
+    "tr": "Yatay ahşap cephe tahtaları, pencere çerçevesinin çevresi ve tahtalar arasından geçen koyu gri bant",
+    "en": "Horizontal timber facade boards around a window frame, with a dark grey band running across above"
+  },
+  "caption": {
+    "tr": "Tahtalar pencerenin çevresini kesintisiz saran yatay bir düzenle döşenmiş. Üstte koyu gri bir bant görünüyor.",
+    "en": "The boards are laid horizontally and run neatly around the window. A dark grey band shows at the top."
+  },
+  "seoFilename": "pencere-cevresi-yatay-cephe-tahtasi-gri-bant",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

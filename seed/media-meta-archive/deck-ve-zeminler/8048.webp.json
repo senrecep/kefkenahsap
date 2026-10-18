@@ -1,0 +1,39 @@
+{
+  "source": "Kopru ve Iskele/8048.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sığ havuz ve ahşap köprülü deck çevresi",
+    "en": "Shallow pool with a deck surround and wooden bridge"
+  },
+  "alt": {
+    "tr": "Sığ su dolu kavisli havuzun etrafındaki geniş deck kenarı ve havuzun üstündeki küçük korkuluklu ahşap köprü",
+    "en": "Wide deck surround around a shallow, water-filled curved pool, with a small timber bridge with railings over it"
+  },
+  "caption": {
+    "tr": "Deck havuzun çevresinde düzgün bir kuşak oluşturuyor. Üzerinde küçük bir köprü var.",
+    "en": "The deck forms a neat band around the pool, with a small bridge across it."
+  },
+  "seoFilename": "sig-havuz-ve-ahsap-koprulu-deck-cevresi",
+  "tags": {
+    "type": [
+      "deck",
+      "köprü"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı",
+      "ticari mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

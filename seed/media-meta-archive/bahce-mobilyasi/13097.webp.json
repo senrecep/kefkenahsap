@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/13097.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kavisli yüksek arkalıklı ahşap bank, beton alan ve arkada ağaçlar",
+    "en": "Curved high-back timber bench by a concrete area with trees behind"
+  },
+  "alt": {
+    "tr": "Ağaçlı bir bahçede, beton bir alanı yarım daire biçiminde saran, yüksek ve dikey şeritli arkalığı olan kavisli ahşap bank",
+    "en": "In a garden with trees, a curved timber bench with a high back of vertical strips wraps round a concrete area"
+  },
+  "caption": {
+    "tr": "Bank beton alanı yarım daire çizerek çevreliyor. Arkalık yüksek, ahşap şeritler dikey ve bitişik.",
+    "en": "The bench encircles the concrete area in a half circle. The back is high and the timber strips are vertical and tight together."
+  },
+  "seoFilename": "kavisli-yuksek-arkalikli-ahsap-bank-beton-alan-arkada",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

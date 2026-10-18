@@ -1,0 +1,39 @@
+{
+  "Site": { "name": "Kefken Ahşap Dekorasyon", "tagline": "İstanbul'da ve Türkiye genelinde ahşap deck, pergola ve dış mekân ahşap işleri" },
+  "Nav": {
+    "skip": "İçeriğe geç",
+    "services": "Hizmetler",
+    "allServices": "Tüm hizmetler",
+    "projects": "Projeler",
+    "gallery": "Galeri",
+    "guides": "Rehber",
+    "references": "Referanslar",
+    "about": "Hakkımızda",
+    "contact": "İletişim",
+    "menu": "Menü",
+    "close": "Kapat",
+    "language": "Dil",
+    "breadcrumb": "Konum",
+    "home": "Ana sayfa"
+  },
+  "Cta": {
+    "whatsapp": "WhatsApp'tan yazın",
+    "whatsappShort": "WhatsApp",
+    "call": "Ara",
+    "quote": "Teklif al",
+    "callUs": "Bizi arayın"
+  },
+  "Footer": {
+    "founder": "Kurucu: {name}",
+    "contact": "İletişim",
+    "hours": "Çalışma saatleri",
+    "services": "Hizmetler",
+    "legal": "Yasal",
+    "privacy": "KVKK aydınlatma metni",
+    "cookies": "Çerez politikası",
+    "rights": "Tüm hakları saklıdır.",
+    "since": "{year}'dan beri"
+  },
+  "Days": { "Mo": "Pzt", "Tu": "Sal", "We": "Çar", "Th": "Per", "Fr": "Cum", "Sa": "Cmt", "Su": "Paz" },
+  "Home": { "title": "Kefken Ahşap Dekorasyon" }
+}

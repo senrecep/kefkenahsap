@@ -1,0 +1,37 @@
+{
+  "file": "734512_672567069454562_1239721882_n.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Deniz manzaralı ahşap pergola ve deck zemin",
+    "en": "Wooden pergola and decking with sea view"
+  },
+  "alt": {
+    "tr": "Denize bakan yamaçta, ahşap kolonlar ve kirişlerle yapılmış çatılı uzun pergola; zeminde deck, kenarlarda çapraz korkuluk var",
+    "en": "Long roofed timber pergola on a seaside slope with posts, beams, a plank deck floor and cross-braced railings"
+  },
+  "caption": {
+    "tr": "Deniz kenarındaki yamaçta kurulan, çatı kirişleri açıkta duran uzun ahşap pergola. Zemin deck tahtasıyla döşenmiş, kenarlarda çapraz korkuluklar yer alıyor.",
+    "en": "A long timber pergola built on a seaside slope with exposed roof rafters. The floor is laid with deck boards and the sides have cross-braced railings."
+  },
+  "seoFilename": "deniz-manzarali-ahsap-pergola-deck-zemin",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "deniz kenarı",
+      "açık alan",
+      "yamaç",
+      "teras"
+    ],
+    "finish": [
+      "deck zemin",
+      "korkuluk"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.86
+}

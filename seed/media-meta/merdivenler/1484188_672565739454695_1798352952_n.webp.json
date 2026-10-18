@@ -1,0 +1,37 @@
+{
+  "file": "1484188_672565739454695_1798352952_n.webp",
+  "category": "merdivenler",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Sahanlıklı ahşap dış mekân merdiveni",
+    "en": "Wooden outdoor stairs with landing"
+  },
+  "alt": {
+    "tr": "Bahçede taş duvarın yanına kurulmuş sahanlıklı ve çapraz korkuluklu ahşap merdiven.",
+    "en": "Wooden outdoor stairs with landing and cross-patterned railings built next to a stone wall."
+  },
+  "caption": {
+    "tr": "Bahçe kot farkını bağlamak için uyguladığımız sahanlıklı ve çapraz korkuluklu emprenyeli ahşap dış merdiven.",
+    "en": "Pressure-treated wooden outdoor staircase with a landing and cross-braced railings built along a stone retaining wall."
+  },
+  "seoFilename": "ahsap-bahce-merdiveni-sahanlikli",
+  "tags": {
+    "wood": [
+      "emprenyeli çam",
+      "çam"
+    ],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "emprenye"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

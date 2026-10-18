@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/1829.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş yol kenarında sekizgen kamelya ve ahşap bina",
+    "en": "Octagonal gazebo beside a stone path and a timber building"
+  },
+  "alt": {
+    "tr": "Taş döşeli bir yolun yanında sekizgen kamelya, bambu bitkileri ve ahşap yapının köşesi",
+    "en": "Octagonal gazebo beside a stone-paved path, with bamboo plants and the corner of a timber building"
+  },
+  "caption": {
+    "tr": "Kamelyanın çatısı çatı kaplamasıyla bitirilmiş. Bahçe henüz yeni, taş yolun kenarında toprak görünüyor.",
+    "en": "The gazebo roof is finished with roofing. The garden is still new, with bare soil along the stone path."
+  },
+  "seoFilename": "tas-yol-kenarinda-sekizgen-kamelya",
+  "tags": {
+    "type": [
+      "kamelya"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

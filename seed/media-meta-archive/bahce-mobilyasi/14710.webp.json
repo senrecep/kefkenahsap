@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/14710.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Doğal kenarlı kalın masa üstü, parlak vernik",
+    "en": "Thick live-edge tabletop with glossy varnish"
+  },
+  "alt": {
+    "tr": "Bahçede taş zemin üzerinde, doğal kenarlı ve parlak vernikli kalın ahşap masa üstü",
+    "en": "Thick timber tabletop with natural edges and a glossy varnish over stone paving in a garden"
+  },
+  "caption": {
+    "tr": "Tablanın kenarı ağacın doğal hattını koruyor. Parlak vernik damarları öne çıkarıyor.",
+    "en": "The edge keeps the natural outline of the tree. The glossy varnish brings out the grain."
+  },
+  "seoFilename": "dogal-kenarli-kalin-ahsap-masa-ustu-parlak-vernik",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

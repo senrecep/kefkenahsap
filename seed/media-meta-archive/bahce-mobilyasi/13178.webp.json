@@ -1,0 +1,36 @@
+{
+  "source": "Ireko-Teak/13178.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dikey çıtalı duvar, lavabo ve tezgâh",
+    "en": "Vertical slatted wall, sink and counter"
+  },
+  "alt": {
+    "tr": "Dikey ahşap çıtalarla kaplı duvarın dibinde lavabo ve tezgâh, yakın çekim; kablolar ve aletler duruyor",
+    "en": "Close view of a sink and counter at the foot of a wall clad in vertical timber slats, with cables and tools lying around"
+  },
+  "caption": {
+    "tr": "Çıtalı duvarın altında gri bir tezgâh ve paslanmaz lavabo yer alıyor. Tezgâhta aletler, yerde kablo var, iş sürüyor.",
+    "en": "A grey counter and a stainless steel sink sit under the slatted wall. Tools lie on the counter and a cable on the floor, so work is still going on."
+  },
+  "seoFilename": "dikey-citali-ahsap-duvar-lavabo-ve-tezgah-yakin-cekim",
+  "tags": {
+    "type": [
+      "dış mutfak / mangal alanı",
+      "iç duvar kaplaması"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.5
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14025.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Servi çit önünde alçak ahşap kenarlık",
+    "en": "Low timber edging in front of a cypress hedge"
+  },
+  "alt": {
+    "tr": "Servi çitin önünde, tuğla kenarlı bahçe yatağının içine yapılmış alçak ahşap çiçeklik",
+    "en": "Low timber planter built inside a brick-edged garden bed in front of a cypress hedge"
+  },
+  "caption": {
+    "tr": "Ahşap yatay tahtalar yatağın arka ve yan kenarını kaplıyor. Önde tuğla bordür ve kilit taşı var.",
+    "en": "Horizontal timber boards line the back and side of the bed. A brick kerb and interlocking paving are in front."
+  },
+  "seoFilename": "servi-cit-onunde-tugla-kenarli-bahce-yatagi-icinde-alcak",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/8941.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Pencereli ahşap cephe köşesi, boyunca inen yağmur borusu",
+    "en": "Corner of a timber-clad facade with a window and a long downpipe"
+  },
+  "alt": {
+    "tr": "Köşe yapan yatay ahşap cephe kaplaması, sağda pencere ve ortadan aşağı inen bakır renkli yağmur borusu",
+    "en": "Horizontal timber facade cladding turning a corner, with a window on the right"
+  },
+  "caption": {
+    "tr": "Tahtalar köşede iki yüzeyi tek parça gibi birleştiriyor, pencere çevresi kaplamayla çerçevelenmiş.",
+    "en": "The boards join the two faces at the corner as if in one piece, and the window is framed by cladding."
+  },
+  "seoFilename": "pencereli-ahsap-cephe-kaplama-kosesi-ve-boyunca-inen-yagmur",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

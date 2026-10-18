@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/5017.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuza taşan kavisli koyu deck",
+    "en": "Curved dark deck overhanging the pool"
+  },
+  "alt": {
+    "tr": "Havuzun üzerine kavis çizerek uzanan koyu kahverengi deck; ortada kademeli ahşap fener, arkada bank ve korkuluk",
+    "en": "Dark brown deck arcing out over the pool, with a stepped timber lantern in the middle and a bench and railing behind"
+  },
+  "caption": {
+    "tr": "Platformun kenarı kavisli tahtalarla kaplanmış ve suyun üstünde duruyor. Havuz kenarındaki ızgaralı kanal deckin önünden geçiyor.",
+    "en": "The edge of the platform is clad in curved boards and stands above the water. The grated channel at the pool edge runs past the front of the deck."
+  },
+  "seoFilename": "havuza-tasan-kavisli-koyu-deck-fener-bank-ve-korkuluk",
+  "tags": {
+    "type": [
+      "deck",
+      "bank",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

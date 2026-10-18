@@ -1,0 +1,34 @@
+{
+  "file": "WhatsApp-Image-2021-06-27-at-20.13.41-3.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Çıtalı ahşap bahçe masası ve bank takımı",
+    "en": "Slatted wooden garden table and bench set"
+  },
+  "alt": {
+    "tr": "Gri beton zeminde çıtalı yüzeyli kızıl kahverengi ahşap dikdörtgen masa ve yanında aynı tarzda alçak bir bank",
+    "en": "Reddish-brown slatted wooden rectangular table with a matching low bench on a grey concrete floor"
+  },
+  "caption": {
+    "tr": "Çıtalı tablalı ahşap masa ve bank takımı, atölye zemininde yenilenmiş ve cilalanmış halde duruyor.",
+    "en": "A slatted wooden table and bench set, finished and standing on the workshop floor."
+  },
+  "seoFilename": "citali-ahsap-bahce-masasi-ve-bank-takimi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "atölye"
+    ],
+    "finish": [
+      "vernikli"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.55
+}

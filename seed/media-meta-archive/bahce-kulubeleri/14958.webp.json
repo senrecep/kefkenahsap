@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/14958.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Koyu vernikli kulübenin köşe ve yan yüzü",
+    "en": "Corner and side of a dark varnished shed"
+  },
+  "alt": {
+    "tr": "Koyu vernikli yatay kaplamalı ahşap kulübenin köşesi ve yan yüzeyi; yanında toprak ve bir beton plaka",
+    "en": "The corner and side of a dark varnished timber shed with horizontal cladding, with bare earth and a concrete slab beside it"
+  },
+  "caption": {
+    "tr": "Tahtalar köşede düzgünce kesişiyor, çatı kenarı geniş bir çıta ile bitiyor. Arkada yapraklı ağaçlar ve bir çam ağacı görünüyor.",
+    "en": "The boards meet neatly at the corner and the roof edge ends in a wide batten. Leafy trees and a pine tree show behind."
+  },
+  "seoFilename": "koyu-vernikli-yatay-kaplamali-kulube-kose-ve-yan-yuzeyi",
+  "tags": {
+    "type": [
+      "bahçe kulübesi / depo"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

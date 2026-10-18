@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/12241.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Lavantalar ve taş basamak plakaları arasında deck ve korkuluk, uzakta",
+    "en": "Deck and railing in the distance beyond lavender and stone stepping slabs"
+  },
+  "alt": {
+    "tr": "Lavanta tarhının ve çimde sıralı taş basamak plakalarının ucunda, ağaç altındaki ahşap deck ve çıtalı korkuluk",
+    "en": "A timber deck and slatted railing under a tree at the end of a lavender bed and stone stepping slabs set in the lawn"
+  },
+  "caption": {
+    "tr": "Plakalar çimden decke doğru kıvrılarak gidiyor. Deck'in korkuluğu yatay çıtalı, arkada ağaçlar var.",
+    "en": "The slabs curve from the lawn towards the deck. The deck's railing is horizontal-slatted with trees behind."
+  },
+  "seoFilename": "lavantalar-ve-tas-basamak-plakalari-arasinda-deck-korkuluk",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

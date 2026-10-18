@@ -1,0 +1,33 @@
+{
+  "source": "Pergola ve Kamelyalar/3987.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Banklı ahşap pergola",
+    "en": "Timber pergola with a built-in bench"
+  },
+  "alt": {
+    "tr": "Sarı sıvalı duvar önünde, dikey çıtalı arka paneli ve ahşap oturma bankı olan pergola",
+    "en": "Pergola with a vertical slatted back panel and a timber bench, in front of a yellow rendered wall"
+  },
+  "caption": {
+    "tr": "Duvar dibine kurulan pergolanın altında geniş bir ahşap bank var. Arkadaki dikey çıtalar oturma köşesini çevreliyor.",
+    "en": "A wide timber bench sits under a pergola built against the wall. Vertical slats behind enclose the seating corner."
+  },
+  "seoFilename": "bankli-ahsap-pergola-sari-duvar",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

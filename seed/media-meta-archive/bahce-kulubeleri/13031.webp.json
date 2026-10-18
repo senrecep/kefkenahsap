@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/13031.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Boyasız açık renk köpek kulübesi, atölyede",
+    "en": "Unpainted pale dog house in the workshop"
+  },
+  "alt": {
+    "tr": "Yeşil shingle çatılı, boyasız açık renk ahşap köpek kulübesi; arkada atölyenin kereste istifi",
+    "en": "Unpainted pale timber dog house with a green shingle roof, with the workshop's stacked boards behind"
+  },
+  "caption": {
+    "tr": "Kulübenin çerçeveli girişi ve yatay tahta duvarları açık renk, çatı kenarında beyaz bir çıta var. Arkada ahşap levhalar dikili duruyor.",
+    "en": "The framed entrance and horizontal board walls are pale and there is a white batten along the roof edge. Timber sheets stand upright behind."
+  },
+  "seoFilename": "yesil-shingle-catili-boyasiz-acik-renk-ahsap-kopek-kulubesi",
+  "tags": {
+    "type": [
+      "köpek kulübesi"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

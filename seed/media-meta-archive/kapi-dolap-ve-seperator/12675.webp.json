@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/12675.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kapağı açık duran ahşap kaplı dış mekân dolabı",
+    "en": "Open-door timber-clad outdoor cabinet"
+  },
+  "alt": {
+    "tr": "Çıta kaplı ahşap kapağı açılmış, içi boş bir dış mekân dolabı; kırmızı çatılı gövde bir duvara yaslı",
+    "en": "Outdoor cabinet with its slatted timber door open and the inside empty, with a red-roofed body set against a wall"
+  },
+  "caption": {
+    "tr": "Kapak yan taraftan açılıyor, içeride geniş bir bölme var. Dolap duvarın dibine oturtulmuş.",
+    "en": "The door opens from the side, revealing a wide compartment. The cabinet is fitted against the wall."
+  },
+  "seoFilename": "kapagi-acik-duran-ahsap-kapli-dis-mekan-dolabi",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

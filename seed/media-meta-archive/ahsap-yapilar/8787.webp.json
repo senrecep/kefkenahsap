@@ -1,0 +1,33 @@
+{
+  "source": "Ahsap Yapilar/8787.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "OSB kaplı geniş teras yüzeyi, ağaç gölgesi",
+    "en": "Wide OSB-covered terrace surface in tree shadow"
+  },
+  "alt": {
+    "tr": "Üzerine ağaç gölgesi düşen, OSB levhalarla kaplı geniş teras yüzeyi; arkada bahçe",
+    "en": "Wide terrace surface covered with OSB boards with the shadow of a tree falling on it, a garden behind"
+  },
+  "caption": {
+    "tr": "Geniş yüzey tamamen OSB levhalarla örtülmüş, üstünde dalların gölgesi var. Arkada yeşil bir bahçe görünüyor.",
+    "en": "The wide surface is completely covered with OSB boards and the shadow of branches lies across it. A green garden shows behind."
+  },
+  "seoFilename": "osb-kapli-genis-teras-yuzeyi-agac-golgesi-arkada-bahce",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.4
+}

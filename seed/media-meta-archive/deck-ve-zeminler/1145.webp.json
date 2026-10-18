@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/1145.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar ve havuz kenarında ayaklı yüksek deck",
+    "en": "Raised deck on posts beside a stone wall and pool"
+  },
+  "alt": {
+    "tr": "Taş duvarın yanında, uzun ayaklar üzerinde yükselen X korkuluklu ve pergola çatılı deck, altta kırmızı zemin ve su kenarı",
+    "en": "Raised deck on tall posts beside a stone wall with X railings and a pergola roof, with a red-tiled floor and water edge below"
+  },
+  "caption": {
+    "tr": "Deck alt zeminden yükseltilmiş ve ayaklarla taşınıyor. Üzeri çapraz korkuluk ve pergola ile çevrili.",
+    "en": "The deck is lifted off the ground on posts and bordered by cross railing and a pergola."
+  },
+  "seoFilename": "tas-duvar-ve-havuz-kenarinda-ayakli-yuksek-deck",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk",
+      "pergola"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı",
+      "ticari mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/7617.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çaprazlı ahşap kapı kanadı ve cam bölme",
+    "en": "Cross-braced timber door leaf and glass screen"
+  },
+  "alt": {
+    "tr": "Duş kabininin çaprazlı ahşap kapı kanadı, menteşeleri ve yanındaki cam bölme, yakın görünüm",
+    "en": "Close view of the cross-braced timber door leaf and hinges of a shower cabin and the glass screen beside it"
+  },
+  "caption": {
+    "tr": "Kapı kanadı dikey tahtalardan, çapraz bir kuşakla tutuluyor. Cam bölmenin ardında duş zemini ve bir armatür seçiliyor.",
+    "en": "The door leaf is made of vertical boards held by a diagonal brace. The shower floor and a fitting can be seen behind the glass screen."
+  },
+  "seoFilename": "capraz-ahsap-kapi-kanadi-ve-cam-bolme-dus-kabini-yakin",
+  "tags": {
+    "type": [
+      "duş / soyunma kabini"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

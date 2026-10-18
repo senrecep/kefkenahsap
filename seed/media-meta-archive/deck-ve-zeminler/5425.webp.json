@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/5425.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deniz kenarında çapraz korkuluklu deck",
+    "en": "Seaside deck with a cross-braced railing"
+  },
+  "alt": {
+    "tr": "Deniz kıyısında çapraz çıtalı korkuluklu deck; içeride U şeklinde uzun ahşap bank ve masa",
+    "en": "Seaside deck with a cross-braced railing, with a long U-shaped timber bench and table inside"
+  },
+  "caption": {
+    "tr": "Korkuluğun gölgeleri deck tahtalarının üstüne çizgiler bırakıyor. Platformun yan kenarında kalın bir direk yükseliyor.",
+    "en": "The railing's shadows leave lines across the deck boards. A thick post rises at the side edge of the platform."
+  },
+  "seoFilename": "deniz-kenarinda-capraz-korkuluklu-deck-uzun-bank-ve-masa",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk",
+      "bank"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

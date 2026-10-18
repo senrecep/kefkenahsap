@@ -1,0 +1,37 @@
+{
+  "file": "dd31dc6a-d195-4eb5-834d-827ca8563e34.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Makam odası: ahşap kaplama panel, kitaplık ve çalışma masası",
+    "en": "Executive office with wood veneer panels, shelving and desk"
+  },
+  "alt": {
+    "tr": "Açık meşe tonlu ahşap panel, gömme kitaplık ve çalışma masası olan ofiste gri koltuk takımı ile duvarda televizyon",
+    "en": "Office with light oak-toned wood panels, built-in shelving and a desk, grey sofa set and a wall-mounted TV"
+  },
+  "caption": {
+    "tr": "Ahşap kaplama panel, antrasit raflı kitaplık ve çalışma masası birlikte tasarlanmış bir yönetici odası. Gri koltuklar ve orta sehpa aynı renk tonlarıyla uyumlu.",
+    "en": "An executive office where wood veneer panels, an anthracite-backed bookcase and the desk were designed together. The grey seating and coffee table follow the same colour tones."
+  },
+  "seoFilename": "makam-odasi-ahsap-panel-kitaplik-calisma-masasi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "ofis",
+      "makam odası",
+      "iç mekan"
+    ],
+    "finish": [
+      "ahşap kaplama",
+      "mat cila",
+      "antrasit boya"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.82
+}

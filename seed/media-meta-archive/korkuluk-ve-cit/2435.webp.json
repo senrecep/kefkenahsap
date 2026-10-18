@@ -1,0 +1,35 @@
+{
+  "source": "Korkuluk ve Cit/2435.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Beton duvar üzerinde uzun ahşap çit",
+    "en": "Long timber fence on a concrete wall"
+  },
+  "alt": {
+    "tr": "Alçak beton duvarın üstünde uzanan, dikey tahtalı uzun ahşap çit ve arkasında ağaçlar",
+    "en": "Long timber fence of vertical boards running along the top of a low concrete wall, trees behind"
+  },
+  "caption": {
+    "tr": "Beton duvarın üzerine dikey tahtalarla kurulmuş uzun bir ahşap çit. Arkasındaki ağaçlık alanı önündeki toprak alandan ayırıyor.",
+    "en": "A long fence of vertical boards built on a concrete wall, separating the wooded plot behind from the open ground in front."
+  },
+  "seoFilename": "beton-duvar-uzerinde-uzun-ahsap-cit",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "arsa sınırı",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ahşap"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

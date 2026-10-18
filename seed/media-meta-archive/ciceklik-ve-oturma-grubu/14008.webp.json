@@ -1,0 +1,38 @@
+{
+  "source": "Kapi Dolap ve Seperator/14008.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz boyalı çiçeklik ve üstünde çıtalı bölme",
+    "en": "White-painted planter with a slatted partition above"
+  },
+  "alt": {
+    "tr": "Sergi alanında beyaz boyalı çiçeklik; arkasında yatay çıtalı yüksek bir bölme yükseliyor",
+    "en": "White-painted planter in a showroom with a tall horizontal-slat partition rising behind it"
+  },
+  "caption": {
+    "tr": "Çiçeklik alçak ve uzun, yanları yatay çıtalı. Bölme ofis masalarını çiçeklikten ayırıyor.",
+    "en": "The planter is low and long with horizontally slatted sides. The partition divides the office desks from the planter."
+  },
+  "seoFilename": "showroomda-beyaz-boyali-ciceklik-ve-ustunde-yatay-citali",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı",
+      "separatör"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

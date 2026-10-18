@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/12109.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Oluklu gri kahverengi deck tahtaları",
+    "en": "Grooved grey-brown deck boards"
+  },
+  "alt": {
+    "tr": "Gri kahverengi, oluklu deck tahtalarının yakın görünümü; üstte cam kapı ve perde",
+    "en": "Close view of grey-brown grooved deck boards, with a glass door and curtain at the top"
+  },
+  "caption": {
+    "tr": "Tahta yüzeyindeki ince olukların hepsi aynı yöne bakıyor. Derzler eşit aralıklı.",
+    "en": "The fine grooves on the board faces all run the same way. The joints are evenly spaced."
+  },
+  "seoFilename": "oluklu-gri-kahverengi-deck-tahtalari-yakin",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

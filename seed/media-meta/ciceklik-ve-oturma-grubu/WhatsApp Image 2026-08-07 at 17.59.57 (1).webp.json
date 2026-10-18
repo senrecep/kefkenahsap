@@ -1,0 +1,37 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 17.59.57 (1).webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "L şeklinde ahşap oturma grubu",
+    "en": "L-shaped wooden seating bench"
+  },
+  "alt": {
+    "tr": "Atölyede duran, koyu kahve vernikli, geniş oturaklı ve yüksek arkalıklı L şeklinde ahşap oturma bankı",
+    "en": "L-shaped wooden seating bench with a high backrest and wide seat, stained dark brown, standing in a workshop"
+  },
+  "caption": {
+    "tr": "Atölyede hazırlanan L formlu ahşap oturma grubu. Damar ve budak detayları koyu kahve boyayla öne çıkıyor; altında depolama için boşluk bırakıldı.",
+    "en": "L-shaped wooden seating unit built in our workshop. The grain and knots show through the dark brown stain, and there is open space underneath."
+  },
+  "seoFilename": "l-seklinde-ahsap-oturma-grubu",
+  "tags": {
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "atölye",
+      "iç mekan"
+    ],
+    "finish": [
+      "koyu kahve vernik",
+      "ahşap boya"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

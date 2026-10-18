@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/13829.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yukarıdan uzun yol boyunca sıralı ahşap pergola ve korkuluk",
+    "en": "Long run of timber pergola and railing seen from above"
+  },
+  "alt": {
+    "tr": "Yukarıdan görünen uzun yürüyüş yolu boyunca sıralı ahşap pergola, korkuluk ve çimlik, uzakta evler",
+    "en": "Long run of timber pergola and railing along a walkway seen from above, with lawn and houses in the distance"
+  },
+  "caption": {
+    "tr": "Yukarıdan bakıldığında pergolanın tüm uzunluğu ve kirişlerin düzenli aralığı görünüyor. Çimlik alan pergolayla yol arasında kalıyor.",
+    "en": "From above you can see the full length of the pergola and the even spacing of its beams. The lawn lies between the pergola and the path."
+  },
+  "seoFilename": "yukaridan-uzun-yol-boyunca-sirali-pergola",
+  "tags": {
+    "type": [
+      "pergola",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

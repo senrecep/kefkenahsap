@@ -1,0 +1,35 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/10568.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz boyalı kemerli oyuklu küçük ahşap yatak",
+    "en": "Small white painted timber bed with arched cut-outs"
+  },
+  "alt": {
+    "tr": "Yan panelleri kemer biçimli oyuklarla işlenmiş, beyaz boyalı küçük ahşap yatak; koyu bir sehpa üstünde",
+    "en": "A small white painted timber bed with arch-shaped cut-outs in its side panels, standing on a dark bench"
+  },
+  "caption": {
+    "tr": "Yatağın baş ve ayak panellerinde kemerli dikey oyuklar var. Beyaz boya ahşabın damarını hafifçe gösteriyor.",
+    "en": "The head and foot panels have vertical arched cut-outs. The white paint lets the grain show faintly through."
+  },
+  "seoFilename": "beyaz-boyali-kemerli-oyuklu-kucuk-ahsap-yatak",
+  "tags": {
+    "type": [
+      "yatak / karyola"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

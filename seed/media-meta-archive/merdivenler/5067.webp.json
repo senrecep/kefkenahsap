@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/5067.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dar geçitte uzanan merdiven ve çıtalı korkuluk",
+    "en": "Stairs and slatted railing in a narrow passage"
+  },
+  "alt": {
+    "tr": "İki duvar arasındaki dar geçitte yukarı uzanan ahşap merdiven; yatay çıtalı korkuluk, yanda tel çit, üstte evler",
+    "en": "Timber stairs rising through a narrow passage between two walls, with a horizontal-slat railing"
+  },
+  "caption": {
+    "tr": "Merdiven dar geçitte düz bir hatla yukarı çıkıyor. Üstte evlerin kiremit çatıları görünüyor.",
+    "en": "The stairs climb the narrow passage in a straight line. The tiled roofs of houses show above."
+  },
+  "seoFilename": "dar-gecitte-uzanan-ahsap-merdiven-citali-korkuluk-tel-cit",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

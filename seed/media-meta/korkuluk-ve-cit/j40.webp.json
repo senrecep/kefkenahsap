@@ -1,0 +1,38 @@
+{
+  "file": "j40.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe girişinde çapraz çıtalı ahşap kapı ve tel dolgulu korkuluk",
+    "en": "Wooden garden gate with cross brace and wire-mesh railing"
+  },
+  "alt": {
+    "tr": "Teras merdiveninin yanında çapraz çıtalı ahşap bahçe kapısı, tel örgü dolgulu korkuluk ve halat tutamaklı basamaklar",
+    "en": "Cross-braced wooden garden gate and wire-mesh railing beside terrace steps with a rope handrail, lawn behind"
+  },
+  "caption": {
+    "tr": "Taş cepheli evin teras merdivenine bağlanan bahçe kapısı ve korkuluk. Kapı çapraz çıtalı, aralarında tel örgü var; merdiven kenarında halat tutamak kullanılmış.",
+    "en": "A garden gate and railing leading to the terrace steps of a stone-fronted house. The gate has a cross brace and wire mesh infill, and the stair side uses a rope handrail."
+  },
+  "seoFilename": "capraz-citali-ahsap-bahce-kapisi-tel-orgulu-korkuluk",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras",
+      "merdiven",
+      "müstakil ev"
+    ],
+    "finish": [
+      "açık yeşilimsi ton",
+      "halat tutamak",
+      "tel örgü dolgu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

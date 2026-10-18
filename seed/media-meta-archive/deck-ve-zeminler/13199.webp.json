@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/13199.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ağaç yanında korkuluk önünde sökülen deck tahtaları",
+    "en": "Deck boards being lifted beside a tree and railing"
+  },
+  "alt": {
+    "tr": "Ağaç gövdesi ve çapraz korkuluk yanında eski deck tahtaları sökülürken kirişler açıkta",
+    "en": "Old deck boards lifted beside a tree trunk and a cross-braced railing, with the joists left open"
+  },
+  "caption": {
+    "tr": "Tahtalar sırayla çıkarılıyor ve altındaki kirişler görünüyor. Ağaç gövdesi deck içinden geçiyor.",
+    "en": "The boards are coming up in sequence and the joists underneath are showing. The tree trunk passes through the deck."
+  },
+  "seoFilename": "agac-yaninda-korkuluk-onunde-sokulen-deck-tahtalari",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı",
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

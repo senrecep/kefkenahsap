@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14679.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Palmiye yanında geniş cilalı deck",
+    "en": "Wide polished deck beside a palm"
+  },
+  "alt": {
+    "tr": "Gri taş zeminin kenarında, palmiyenin yanında uzanan geniş kırmızı kahverengi cilalı deck; çevresinde ince halat korkuluk",
+    "en": "Wide red-brown polished deck beside a palm at the edge of grey stone flooring, with a thin cable railing around it"
+  },
+  "caption": {
+    "tr": "Tahtalar çapraz bir yönde döşenmiş, yüzeyde cilanın parlaklığı var. Arkada ağaçlık bir manzara açılıyor.",
+    "en": "The boards are laid on a diagonal and the surface carries the shine of the finish. A tree-filled view opens up behind."
+  },
+  "seoFilename": "palmiye-yaninda-genis-cilali-kirmizi-kahverengi-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

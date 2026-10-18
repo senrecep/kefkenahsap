@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/4630.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Islak deck yüzeyi ve kapak boşlukları",
+    "en": "Wet deck surface and cover openings"
+  },
+  "alt": {
+    "tr": "Nemli, açık renkli çam deck yüzeyi; ortada iki uzun delik açılmış bir kapak bölmesi",
+    "en": "Damp, pale pine deck surface with a cover panel in the middle that has two long slots cut in it"
+  },
+  "caption": {
+    "tr": "Tahtalar boyuna döşenmiş, yüzeyde budak ve damarlar seçiliyor. Kapak bölmesi tahtalarla aynı hizada kesilmiş.",
+    "en": "The boards run lengthwise and knots and grain show on the surface. The cover panel is cut flush with the boards."
+  },
+  "seoFilename": "islak-acik-renkli-deck-yuzeyi-kapak-bosluklari",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

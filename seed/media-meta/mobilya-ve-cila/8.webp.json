@@ -1,0 +1,37 @@
+{
+  "file": "8.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Koridora gömme beyaz kapaklı dolap",
+    "en": "Built-in white panel-door cabinet in a hallway"
+  },
+  "alt": {
+    "tr": "Koridor duvarına gömülü, çift kanatlı, çerçeveli beyaz boyalı dolap; yanında koyu yeşil taş zemin ve beyaz kapı kasası",
+    "en": "Built-in white two-door cabinet with raised panels in a hallway, beside a dark green stone floor and white door frame"
+  },
+  "caption": {
+    "tr": "Koridor duvarına ölçüyle yerleştirilen, çift kanatlı ve kabartma çerçeveli mat beyaz boyalı gömme dolap.",
+    "en": "A built-in cabinet made to fit the hallway wall, with two raised-panel doors in a matte white paint finish."
+  },
+  "seoFilename": "koridor-gomme-beyaz-dolap",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "koridor",
+      "giriş",
+      "gömme dolap",
+      "ev içi"
+    ],
+    "finish": [
+      "beyaz boya",
+      "mat"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.82
+}

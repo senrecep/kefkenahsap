@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/11366.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bitkiler arasında turuncu ahşap yürüme yolu",
+    "en": "Orange timber walkway among plants"
+  },
+  "alt": {
+    "tr": "Beyaz beton kenarlı alan boyunca, bitkilerin arasına döşenmiş turuncu ahşap yürüme yolu",
+    "en": "Orange timber walkway laid between the plants along an area with a white concrete edge"
+  },
+  "caption": {
+    "tr": "Yol, beton alandan çiçek tarhına doğru dönüyor. Kenarlarda lavanta ve kırmızı yapraklı çalılar yetişiyor.",
+    "en": "The walkway turns from the concrete area towards the flower bed. Lavender and red-leaved shrubs grow at its sides."
+  },
+  "seoFilename": "beyaz-beton-kenarli-alan-boyunca-bitkiler-arasina-dosenmis",
+  "tags": {
+    "type": [
+      "deck",
+      "yürüyüş yolu"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

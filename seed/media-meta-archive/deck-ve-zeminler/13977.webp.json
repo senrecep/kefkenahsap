@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/13977.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çit önünde küçük vernikli deck",
+    "en": "Small varnished deck in front of a hedge"
+  },
+  "alt": {
+    "tr": "Yüksek çitin önünde, bej fayans kenarlı küçük bir terasa döşenmiş parlak kırmızı kahverengi deck",
+    "en": "Glossy red-brown deck on a small terrace in front of a tall hedge, bordered by beige tiles"
+  },
+  "caption": {
+    "tr": "Küçük teras alanı tek parça gibi görünen vernikli bir deckle kaplanmış. Yan tarafta bej fayans döşeme devam ediyor.",
+    "en": "The small terrace is covered with a varnished deck that reads as one piece. Beige floor tiles continue beside it."
+  },
+  "seoFilename": "cit-onunde-kucuk-vernikli-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/6063.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Geniş deck yüzeyi, sağ bölümü koyu işlenmiş",
+    "en": "Wide deck surface with the right part treated dark"
+  },
+  "alt": {
+    "tr": "Havuz kenarındaki geniş deck yüzeyinin sağ bölümü koyu bir renkle işlenmiş, sol bölümü ham tahta; uzakta havuz ve ip",
+    "en": "Wide deck at a pool edge, its right part treated dark and its left part raw timber, with the pool in the distance"
+  },
+  "caption": {
+    "tr": "Yüzey boyuna döşenmiş tahtalarla kaplı, iki renk arasındaki geçiş diyagonal bir çizgi çiziyor. Uzakta havuzun suyu üst kenarda görünüyor.",
+    "en": "The surface is covered in lengthwise boards and the transition between the two colours draws a diagonal line. The pool water shows at the upper edge in the distance."
+  },
+  "seoFilename": "genis-deck-yuzeyi-sag-bolum-koyu-sol-bolum-ham-tahta",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

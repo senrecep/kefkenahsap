@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/12459.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Koyu deck üzerinde masa, sandalyeler ve çiçekli saksı",
+    "en": "Table, chairs and a flowering pot on a dark deck"
+  },
+  "alt": {
+    "tr": "Koyu kahverengi deck üzerinde ahşap masa ve sandalyeler, kenarda pembe çiçekli bir saksı",
+    "en": "Wooden table and chairs on a dark brown deck, with a pot of pink flowers at the side"
+  },
+  "caption": {
+    "tr": "Deck evin köşesine kadar uzanıyor ve masa o köşeye yerleştirilmiş. Önünde çimen alanı açık kalıyor.",
+    "en": "The deck runs into the corner of the house and the table sits in that corner. The lawn stays open in front."
+  },
+  "seoFilename": "koyu-deck-uzerinde-masa-sandalyeler-cicekli-saksi",
+  "tags": {
+    "type": [
+      "deck",
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

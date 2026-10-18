@@ -1,0 +1,35 @@
+{
+  "file": "22-1.webp",
+  "category": "deck-ve-zeminler",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Sahil kenarı ahşap deck ve iniş merdiveni",
+    "en": "Seaside wooden deck and staircase installation"
+  },
+  "alt": {
+    "tr": "Deniz kıyısındaki kayalık alana kurulan ahşap teras ve korkuluklu iniş merdivenleri.",
+    "en": "Wooden deck terrace and stepped staircase with railings built on a rocky seashore."
+  },
+  "caption": {
+    "tr": "Deniz kenarındaki eğimli araziye uygulanan ahşap teras ve sahil iniş merdiveni. Dış ortam koşullarına dayanıklı emprenye ahşapla inşa edildi.",
+    "en": "Wooden terrace deck and access stairs built along a coastal slope, constructed with treated wood suitable for maritime conditions."
+  },
+  "seoFilename": "sahil-ahsap-deck-merdiven",
+  "tags": {
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "sahil",
+      "deniz kenarı",
+      "dış mekan"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

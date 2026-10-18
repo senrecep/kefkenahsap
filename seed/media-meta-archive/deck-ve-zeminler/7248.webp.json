@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/7248.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapı önünde sarımsı deck",
+    "en": "Yellowish deck in front of a glass door"
+  },
+  "alt": {
+    "tr": "Gri panjurlu cam kapının önüne taze döşenmiş sarımsı emprenyeli çam deck; köşede beyaz katlanır masa ve sandalyeler",
+    "en": "Freshly laid yellowish pressure-treated pine deck in front of a glass door with grey shutters, with a white folding table"
+  },
+  "caption": {
+    "tr": "Tahtalar boyuna ve eşit aralıkla döşenmiş. Solda kırmızı yapraklı bir çalı deck kenarına sarkıyor.",
+    "en": "The boards are laid lengthwise with even gaps. A red-leaved shrub leans over the deck edge on the left."
+  },
+  "seoFilename": "cam-kapi-onunde-taze-dosenmis-sarimsi-deck-beyaz-masa",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

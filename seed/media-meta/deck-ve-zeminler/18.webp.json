@@ -1,0 +1,37 @@
+{
+  "file": "18.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede oturma grubu altına ahşap deck platform",
+    "en": "Wooden deck platform under a garden seating set"
+  },
+  "alt": {
+    "tr": "Çimenlik bahçede, açık renkli bir koltuğun altına serilmiş, çerçeveli ve bal rengi tahtalardan yapılmış ahşap deck platform",
+    "en": "Honey-toned wooden deck platform with a framed border laid on a lawn beneath a light-colored garden sofa"
+  },
+  "caption": {
+    "tr": "Bahçedeki oturma grubunun altına, çimenin üzerine ayrı bir zemin olarak hazırlanan çerçeveli ahşap deck platform. Tahtalar arasındaki ton farkı malzemenin doğal damarını gösteriyor.",
+    "en": "A framed wooden deck platform built as a separate floor on the lawn under the garden seating set. The tone variation between boards shows the natural grain of the wood."
+  },
+  "seoFilename": "bahce-oturma-grubu-ahsap-deck-platform",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "havuz kenarı",
+      "açık hava",
+      "oturma alanı"
+    ],
+    "finish": [
+      "doğal ahşap tonu",
+      "vernikli"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

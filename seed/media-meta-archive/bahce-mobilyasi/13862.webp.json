@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/13862.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yuvarlak çıtalı sırtlı ahşap koltuğun yakın çekimi",
+    "en": "Close-up of a round slatted-back timber armchair"
+  },
+  "alt": {
+    "tr": "Karo terasta duran, kavisli çıtalarla örülmüş sırtlı ahşap koltuk yakından görünüyor",
+    "en": "A close view of a timber armchair with a curved slatted back on a tiled terrace, with a sofa and a red-leaved tree behind"
+  },
+  "caption": {
+    "tr": "Çıtalar sırttan yan kenara kesintisiz bir kavisle dönüyor. Oturak da çıtalı, üzerine minder konabilir.",
+    "en": "The slats curve from the back round to the sides in one sweep. The seat is slatted too, and a cushion can go on it."
+  },
+  "seoFilename": "citali-yuvarlak-sirtli-ahsap-koltugun-yakin-cekimi-karo",
+  "tags": {
+    "type": [
+      "oturma grubu"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

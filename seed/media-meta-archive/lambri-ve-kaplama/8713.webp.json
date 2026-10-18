@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/8713.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Farklı tonlarda yatay kaplama örnekleri, koridor",
+    "en": "Horizontal cladding samples in different tones in a corridor"
+  },
+  "alt": {
+    "tr": "Koridor duvarına sıralanmış, sarıdan koyu kahveye farklı tonlarda yatay ahşap kaplama numune panelleri",
+    "en": "Sample panels of horizontal timber cladding in tones from yellow to dark brown lined up on a corridor wall"
+  },
+  "caption": {
+    "tr": "Numuneler yan yana asılarak renk ve doku farkı gösteriliyor.",
+    "en": "The samples hang side by side to show differences in colour and texture."
+  },
+  "seoFilename": "farkli-tonlarda-yatay-ahsap-kaplama-ornekleri-koridor",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

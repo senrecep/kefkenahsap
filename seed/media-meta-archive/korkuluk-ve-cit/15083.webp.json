@@ -1,0 +1,35 @@
+{
+  "source": "Korkuluk ve Cit/15083.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Toprağa dikilmiş T biçimli ahşap direkler",
+    "en": "T-shaped timber posts set in the soil"
+  },
+  "alt": {
+    "tr": "Sonbahar renkli ağaçların arasındaki bahçede toprağa dikilmiş, üstü yatay kirişli T biçimli ince ahşap direkler",
+    "en": "T-shaped slender timber posts with horizontal crossbars set in the soil of a garden among autumn-coloured trees"
+  },
+  "caption": {
+    "tr": "Direkler eşit aralıklarla sıralanıyor, kenarlarına eğik destekler konmuş.",
+    "en": "The posts are lined up at even spacing, with angled props at their sides."
+  },
+  "seoFilename": "topraga-dikilmis-t-bicimli-ahsap-direkler",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.4
+}

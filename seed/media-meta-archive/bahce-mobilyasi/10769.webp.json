@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/10769.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çıtalı açık renkli ahşap masa tablası, taş zeminde",
+    "en": "Light slatted timber table top on a stone floor"
+  },
+  "alt": {
+    "tr": "Taş zemin üzerinde, açık renkli çıtalı ahşap masa tablası ve katlanır ayakları yukarıdan görünüyor",
+    "en": "A light slatted timber table top and its folding legs seen from above on stone paving, with green turf and a bucket behind"
+  },
+  "caption": {
+    "tr": "Tabla çıtaları yeni tazelenmiş görünüyor, ortasında şemsiye deliği var. Masa katlanır ayaklarıyla taş zemine oturuyor.",
+    "en": "The slats look freshly renewed and there is a parasol hole in the middle. The table stands on stone paving on its folding legs."
+  },
+  "seoFilename": "citali-acik-renkli-ahsap-masa-tablasi-tas-zemin-uzerinde",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

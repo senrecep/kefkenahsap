@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/13484.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Uzaktan kamelya, çevrede toprak zemin ve komşu ev",
+    "en": "Gazebo from a distance with bare soil and a neighbouring house"
+  },
+  "alt": {
+    "tr": "Uzaktan bakıldığında toprak zeminli bahçede duran kamelya ve arkada kırmızı çatılı komşu ev",
+    "en": "Gazebo seen from a distance in a garden of bare soil, with a red-roofed neighbouring house behind"
+  },
+  "caption": {
+    "tr": "Kamelya bahçenin ortasında küçük bir yapı olarak duruyor. Etrafında düzenleme henüz yapılmamış.",
+    "en": "The gazebo stands as a small structure in the middle of the garden. No landscaping has been done around it yet."
+  },
+  "seoFilename": "uzaktan-kamelya-toprak-zemin-komsu-ev",
+  "tags": {
+    "type": [
+      "kamelya"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

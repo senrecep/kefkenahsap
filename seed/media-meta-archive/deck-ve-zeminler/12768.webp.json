@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/12768.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş kenarlıklı eski gri deck ve korkuluk direkleri",
+    "en": "Old grey deck with stone edging and railing posts"
+  },
+  "alt": {
+    "tr": "Taş kenarlıklı eski gri ahşap deck ve korkuluk direkleri; arkada cam kapı ve yemek masası",
+    "en": "Old grey timber deck with stone edging and railing posts, with a glass door and dining table behind"
+  },
+  "caption": {
+    "tr": "Tahtalar solmuş ve gri bir ton almış, korkuluk dikmeleri de aynı şekilde yıpranmış. Teras yenileme öncesi durumda.",
+    "en": "The boards have faded to grey and the railing posts are worn in the same way. The terrace is in its state before renewal."
+  },
+  "seoFilename": "tas-kenarlikli-eski-gri-deck-korkuluk-direkleri",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

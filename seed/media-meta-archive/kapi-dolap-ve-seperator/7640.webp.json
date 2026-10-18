@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/7640.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çerçeve içinde aralıklı ahşap jaluzi cephe perdesi",
+    "en": "Louvred timber screen within a frame"
+  },
+  "alt": {
+    "tr": "Ahşap kirişli çatılı bir yapıda, çerçevelenmiş aralıklı yatay ahşap jaluzi çıtaları ve yanında camlı bölme",
+    "en": "Spaced horizontal timber louvre slats set in frames in a timber-roofed structure, with a glazed partition beside them"
+  },
+  "caption": {
+    "tr": "Jaluzi çıtaları hava ve ışığı süzüyor, aralar eşit. Çerçeve dikmeleri metal bağlantılarla sabit.",
+    "en": "The louvre slats filter air and light with even gaps. The frame posts are fixed with metal connectors."
+  },
+  "seoFilename": "cerceve-icinde-aralikli-ahsap-jaluzi-cephe-perdesi",
+  "tags": {
+    "type": [
+      "pencere / panjur",
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

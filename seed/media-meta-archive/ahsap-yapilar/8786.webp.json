@@ -1,0 +1,33 @@
+{
+  "source": "Ahsap Yapilar/8786.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "OSB levhalı teras zemini, yanında korkuluk",
+    "en": "OSB-covered terrace floor with a railing beside it"
+  },
+  "alt": {
+    "tr": "OSB levhalarla kaplanmış dar uzun teras zemini; yan tarafta ahşap korkuluk, arkada zeytin ağaçlı bahçe",
+    "en": "Long narrow terrace floor covered with OSB boards, with a timber railing at the side and a garden with olive trees behind"
+  },
+  "caption": {
+    "tr": "Zemin bir yönde uzun bir şerit halinde uzanıyor. Kenarında koyu ahşap korkuluk, aşağıda bahçe ve komşu evler var.",
+    "en": "The floor runs in a long strip in one direction. A dark timber railing stands at the edge with a garden and neighbouring houses below."
+  },
+  "seoFilename": "teras-zemini-osb-levhalarla-kaplanmis-yanda-ahsap-korkuluk",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.4
+}

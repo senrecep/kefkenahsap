@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12509.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Toprak üzerinde deck kiriş ağı",
+    "en": "Network of deck joists over bare soil"
+  },
+  "alt": {
+    "tr": "Toprak üzerine kurulan deck kiriş ağı; üst köşede çalışan bir kişi ve eşiğe uzanan metal profil görünüyor",
+    "en": "Network of deck joists laid on soil, with a worker at the top corner and a metal profile reaching the threshold"
+  },
+  "caption": {
+    "tr": "Kirişler çerçeve ve ara kirişler olarak kafes gibi birleştirilmiş. Çalışma evin kapı kenarında sürüyor.",
+    "en": "The joists are joined into a grid of frame and cross members. Work carries on at the door side of the house."
+  },
+  "seoFilename": "toprak-uzerinde-deck-kiris-agi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

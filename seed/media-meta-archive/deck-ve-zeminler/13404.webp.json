@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/13404.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimen kenarında eskimiş gri deck ve alt çıtalar",
+    "en": "Weathered grey deck at the lawn edge with its underlay battens"
+  },
+  "alt": {
+    "tr": "Çimen kenarında eskimiş gri deck ve altından görünen çıtalar, yerde bir tahta",
+    "en": "Weathered grey deck at the lawn edge with the battens under it showing and a board lying on the grass"
+  },
+  "caption": {
+    "tr": "Tahtaların uçları gri ve çatlak, kenardaki çıtalar topraktan görünüyor. Yenilemeden önceki durum bu.",
+    "en": "The board ends are grey and cracked and the battens along the edge show above the soil. This is the state before renewal."
+  },
+  "seoFilename": "cimen-kenarinda-eskimis-gri-deck-ve-alt-citalar",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/9424.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bina köşesinde vernikli çift kapaklı ahşap dolap",
+    "en": "Varnished double-door timber cabinet at the building corner"
+  },
+  "alt": {
+    "tr": "Yuvarlak pencereli duvarın dibinde, taş ve parke zeminde duran yatay tahtalı koyu vernikli çift kapaklı ahşap dolap",
+    "en": "Dark varnished horizontal-board double-door timber cabinet against a wall with a round window, on stone and cobble paving"
+  },
+  "caption": {
+    "tr": "Alçak dolap bina köşesine yaslanmış, kapakları paslanmaz kulplu. Yüzeyde ahşabın damarı vernik altından seçiliyor.",
+    "en": "The low cabinet sits against the corner of the building and its doors have stainless handles. The wood grain shows through the varnish."
+  },
+  "seoFilename": "bina-kosesinde-vernikli-ahsap-dolap",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

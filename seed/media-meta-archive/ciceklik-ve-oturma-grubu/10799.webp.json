@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/10799.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Teras kenarında sıralı kırmızımsı çiçeklikler",
+    "en": "Reddish planters in a row at the terrace edge"
+  },
+  "alt": {
+    "tr": "Teras kenarında sıralanmış, içinde yeşil çalılar olan beş kırmızımsı kahve ahşap çiçeklik",
+    "en": "Five reddish-brown timber planters with green shrubs lined up at the edge of a terrace"
+  },
+  "caption": {
+    "tr": "Çiçekliklerin dikey tahtaları vernikli. Arkada korkuluk, çam ağacı ve deniz görünüyor.",
+    "en": "The vertical boards of the planters are varnished. A railing, a conifer and the sea are visible behind."
+  },
+  "seoFilename": "teras-kenarinda-sirali-kirmizimsi-ahsap-cicekliklerde-yesil",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

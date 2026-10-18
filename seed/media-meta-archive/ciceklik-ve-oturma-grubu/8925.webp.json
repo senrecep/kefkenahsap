@@ -1,0 +1,39 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/8925.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Teras kenarında uzun çiçeklik, üstten görünüm",
+    "en": "Long planter at the terrace edge, seen from above"
+  },
+  "alt": {
+    "tr": "Teras kenarında uzanan uzun açık renkli ahşap çiçeklik; içinde yeşil çalılar ve çim otları",
+    "en": "Long light timber planter along a terrace edge, with green shrubs and grasses inside"
+  },
+  "caption": {
+    "tr": "Çiçeklik terasın kenarını boydan boya izliyor, içinde birkaç çeşit bitki var. Aşağıda yol ve park halindeki arabalar görünüyor.",
+    "en": "The planter follows the whole edge of the terrace with several kinds of plants in it. A road and parked cars are visible below."
+  },
+  "seoFilename": "teras-kenarinda-uzun-acik-renkli-ahsap-ciceklik-ustten",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

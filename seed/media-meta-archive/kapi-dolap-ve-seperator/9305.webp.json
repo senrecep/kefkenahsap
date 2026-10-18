@@ -1,0 +1,35 @@
+{
+  "source": "Kapi Dolap ve Seperator/9305.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Üç kapaklı açık renk ahşap dolap",
+    "en": "Light timber cabinet with three doors"
+  },
+  "alt": {
+    "tr": "Kiremit renkli karo zemin üzerinde yatay tahtalı üç kapaklı açık renk ahşap dolap",
+    "en": "Light timber cabinet with three horizontal board doors on a terracotta tiled patio"
+  },
+  "caption": {
+    "tr": "Alçak dolabın üç kapağı yatay tahtalardan yapıldı, dolap ahşap ayaklar üzerinde duruyor.",
+    "en": "The low cabinet has three doors of horizontal boards and stands on timber feet."
+  },
+  "seoFilename": "uc-kapakli-acik-renk-ahsap-dolap-teras",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "teras",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

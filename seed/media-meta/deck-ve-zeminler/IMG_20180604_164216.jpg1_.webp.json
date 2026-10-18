@@ -1,0 +1,35 @@
+{
+  "file": "IMG_20180604_164216.jpg1_.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede yerden yükselmeyen ahşap deck zemin",
+    "en": "Low wooden deck platform in a garden"
+  },
+  "alt": {
+    "tr": "Müstakil evin bahçesinde çimenin üzerine döşenmiş, sıcak kahverengi tonlarında ahşap deck zemin ve arkasında beyaz duvar",
+    "en": "Warm brown wooden deck laid on the lawn of a detached house garden, with a white wall behind it"
+  },
+  "caption": {
+    "tr": "Bahçedeki taş zemin ile çimen arasına döşenen, kenarı çerçeveyle toparlanmış ahşap deck. Montaj bitmiş, çevrede işçilik sonrası malzemeler duruyor.",
+    "en": "A wooden deck laid between the paved terrace and the lawn, finished with a framed edge. Installation looks complete, with a few tools and materials still around."
+  },
+  "seoFilename": "bahcede-ahsap-deck-zemin",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "müstakil ev",
+      "çimen"
+    ],
+    "finish": [
+      "doğal ahşap tonu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.82
+}

@@ -1,0 +1,33 @@
+{
+  "file": "14088607_1234325203278743_4558274487196146018_n.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe için ahşap depo, tek kapılı",
+    "en": "Wooden garden storage shed with single door"
+  },
+  "alt": {
+    "tr": "Evin bahçesinde yatay ahşap kaplamalı, tek kapılı, iki havalandırma ızgaralı ve kırmızı çatılı depo",
+    "en": "Garden storage shed with horizontal wood cladding, a single door, two vent grilles and a red roof"
+  },
+  "caption": {
+    "tr": "Ev duvarına yaslanan bahçe deposu: yatay ahşap kaplama, ortada tek kanatlı kapı, iki yanda havalandırma ızgarası.",
+    "en": "A garden shed built against the house wall: horizontal wood cladding, a single-leaf door in the middle and a vent grille on each side."
+  },
+  "seoFilename": "bahce-deposu-ahsap-kapili",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "müstakil konut"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.8
+}

@@ -1,0 +1,84 @@
+{
+  "Home": {
+    "title": "Kefken Ahşap Dekorasyon",
+    "metaTitle": "Kefken Ahşap Dekorasyon — Holzterrassen, Pergolen und Holzarbeiten",
+    "heroTitle": "Holzterrassen, Pergolen und Holzarbeiten im Außenbereich",
+    "heroText": "Besichtigung, Fertigung und Montage in Istanbul und in der ganzen Türkei. Schicken Sie uns ein Foto Ihrer Fläche per WhatsApp, dann planen wir gemeinsam.",
+    "heroSlides": "Fotos unserer Arbeiten",
+    "heroPause": "Fotowechsel anhalten",
+    "heroPlay": "Fotowechsel starten",
+    "heroSlide": "Foto {n} von {total}",
+    "galleryTitle": "Aus unseren Arbeiten",
+    "galleryAll": "Ganze Galerie ansehen",
+    "servicesTitle": "Unsere Leistungen",
+    "projectsTitle": "Ausgewählte Projekte",
+    "processTitle": "So arbeiten wir",
+    "steps": {
+      "survey": {
+        "title": "Besichtigung",
+        "text": "Wir sehen uns die Fläche vor Ort an, nehmen Maß und besprechen, wie Sie sie nutzen und was Sie erwarten."
+      },
+      "quote": {
+        "title": "Angebot",
+        "text": "Wir erstellen ein schriftliches Angebot mit Holzart, Maßen und Arbeitsleistung."
+      },
+      "build": {
+        "title": "Fertigung",
+        "text": "In der Werkstatt schneiden wir die Teile nach Maß zu, bearbeiten sie und tragen den Holzschutz auf."
+      },
+      "install": {
+        "title": "Montage",
+        "text": "Die Montage übernimmt unser eigenes Team."
+      },
+      "care": {
+        "title": "Pflege",
+        "text": "Auch danach sind wir für Ölen, Streichen und Reparaturen für Sie da."
+      }
+    },
+    "referencesTitle": "Referenzen",
+    "woodTitle": "Holzarten im Vergleich",
+    "woodIntro": "Allgemeine Eigenschaften der vier Hölzer, die im Außenbereich am häufigsten verwendet werden. Die Wahl hängt davon ab, wie viel Sonne und Wasser die Fläche abbekommt, vom Budget und davon, wie Sie das Holz pflegen möchten.",
+    "woodCols": {
+      "type": "Holz",
+      "origin": "Herkunft",
+      "durability": "Haltbarkeit im Freien",
+      "care": "Pflege",
+      "use": "Häufige Verwendung"
+    },
+    "woods": {
+      "iroko": {
+        "name": "Iroko",
+        "origin": "Hartholz aus Westafrika",
+        "durability": "Hoch; natürliche Inhaltsstoffe schützen vor Fäulnis und Insekten",
+        "care": "Regelmäßiges Ölen, damit die Farbe erhalten bleibt",
+        "use": "Terrassen, Poolumrandungen, Stege"
+      },
+      "teak": {
+        "name": "Teak",
+        "origin": "Hartholz aus Südostasien",
+        "durability": "Sehr hoch; ölhaltig, dichtfaserig, wasserbeständig",
+        "care": "Regelmäßiges Ölen; ohne Öl vergraut es silbern",
+        "use": "Boote, Terrassen, Gartenmöbel"
+      },
+      "pine": {
+        "name": "Kesseldruckimprägnierte Kiefer",
+        "origin": "Weichholz, Schutzmittel unter Druck eingebracht",
+        "durability": "Mittel; die Haltbarkeit kommt von Imprägnierung und Pflege",
+        "care": "Regelmäßig Schutzfarbe oder Lack auftragen",
+        "use": "Pergolen, Zäune, Gartenpavillons, Pflanzkästen"
+      },
+      "thermo": {
+        "name": "Thermoholz",
+        "origin": "Mit hoher Temperatur behandeltes Holz (meist Kiefer, Fichte)",
+        "durability": "Hoch; arbeitet weniger bei Feuchtigkeit, enthält keine chemischen Schutzmittel",
+        "care": "Öl gegen UV; empfindlicher gegen Stöße als massives Hartholz",
+        "use": "Fassadenverkleidung, Terrassen, Sauna"
+      }
+    },
+    "faqTitle": "Häufige Fragen",
+    "contactTitle": "Kontakt",
+    "contactText": "Schicken Sie uns ein Foto Ihrer Fläche und die ungefähren Maße per WhatsApp; wir besprechen die Arbeit und vereinbaren einen Termin zur Besichtigung.",
+    "phone": "Telefon",
+    "address": "Adresse"
+  }
+}

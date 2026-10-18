@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/6329.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çatı kirişleri arasında ahşap kaplı baca",
+    "en": "Timber-clad flue among the roof beams"
+  },
+  "alt": {
+    "tr": "Traverten kaplı bir kaidenin üstünde, çatı kirişlerinin arasından geçen ahşap kaplı baca ve yeşil kanallar",
+    "en": "Timber-clad flue and green ducts rising among the roof beams from a travertine-clad base"
+  },
+  "caption": {
+    "tr": "Baca yatay ahşap tahtalarla kaplanmış, yanında yeşil hava kanalları yükseliyor. Çatı kirişleri ve tavan tahtaları açıkta.",
+    "en": "The flue is clad in horizontal timber boards with green air ducts rising beside it. The roof beams and ceiling boards are exposed."
+  },
+  "seoFilename": "cati-kirisleri-arasinda-ahsap-kapli-baca-ve-yesil-kanallar",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

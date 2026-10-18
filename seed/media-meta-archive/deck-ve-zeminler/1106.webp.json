@@ -1,0 +1,41 @@
+{
+  "source": "Deck ve Zeminler/1106.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Palmiyeler arasında deniz kenarı decki",
+    "en": "Seaside deck among palm trees"
+  },
+  "alt": {
+    "tr": "Deniz kenarında palmiyelerin arasında açık renkli ahşap deck; arkada ahşap pergola direkleri",
+    "en": "Light timber deck among palm trees by the sea, with timber pergola posts behind"
+  },
+  "caption": {
+    "tr": "Deck geniş bir alanı kaplıyor, kenarı taş döşemeyle birleşiyor. Arkada denize bakan iki pergola görünüyor.",
+    "en": "The deck covers a wide area and meets stone paving at its edge. Two pergolas facing the sea are visible behind."
+  },
+  "seoFilename": "deniz-kenarinda-palmiyeler-arasinda-acik-renkli-ahsap-deck",
+  "tags": {
+    "type": [
+      "deck",
+      "pergola"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı",
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

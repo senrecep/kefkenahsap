@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/8334.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz piket çit ve kapı, arkada park halinde araç",
+    "en": "White picket fence and gate with a parked car behind"
+  },
+  "alt": {
+    "tr": "Taş kaplı basamaklı girişte beyaz boyalı çıtalı kapı ve iki yanda çit, arkada park edilmiş beyaz bir araç ve evler",
+    "en": "White-painted picket gate at a stone-clad stepped entrance with fence on both sides, a parked white car and houses behind"
+  },
+  "caption": {
+    "tr": "Kapı üç basamağın başında duruyor, çit taş bloklardan yükselen yan duvarlara oturuyor.",
+    "en": "The gate stands at the head of three steps, and the fence sits on low side walls of stone blocks."
+  },
+  "seoFilename": "beyaz-piket-cit-ve-kapi-arkada-park-halinde-arac",
+  "tags": {
+    "type": [
+      "çit",
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

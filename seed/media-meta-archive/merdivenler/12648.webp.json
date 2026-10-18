@@ -1,0 +1,33 @@
+{
+  "source": "Merdivenler/12648.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Çimenliğe inen ahşap bahçe merdiveni",
+    "en": "Timber garden steps down to the lawn"
+  },
+  "alt": {
+    "tr": "Beton duvar başından aşağıdaki çimenliğe inen çapraz korkuluklu ahşap merdiven, yukarıdan",
+    "en": "Cross-braced timber steps leading down from a concrete ledge to the lawn, seen from above"
+  },
+  "caption": {
+    "tr": "Üst bahçeden alt çimenliğe inen kısa ahşap merdiven. Korkuluk babaları kalın kesitli.",
+    "en": "Short timber steps leading from the upper garden down to the lawn, with heavy-section newel posts."
+  },
+  "seoFilename": "cimenlige-inen-ahsap-bahce-merdiveni-yukaridan",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

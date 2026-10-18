@@ -1,0 +1,38 @@
+{
+  "source": "Kapi Dolap ve Seperator/8375.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Terasta ayaklı, kare gözlü ahşap kafes bölme paneli",
+    "en": "Square-mesh timber lattice partition on feet on a terrace"
+  },
+  "alt": {
+    "tr": "Karo teras zemininde küçük ayaklar üzerinde duran, kare gözlü turuncu vernikli ahşap kafes bölme",
+    "en": "An orange-varnished square-mesh timber lattice partition standing on small feet on a tiled terrace floor"
+  },
+  "caption": {
+    "tr": "Panelin gözleri kare ve çok sık, çerçevesi ince. Bölme terasın bir köşesini görünümden ayırıyor.",
+    "en": "The cells of the panel are square and very close, with a slim frame. The partition separates one corner of the terrace from view."
+  },
+  "seoFilename": "terasta-ayakli-kare-gozlu-ahsap-kafes-bolme-paneli",
+  "tags": {
+    "type": [
+      "kafes / paravan",
+      "separatör"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

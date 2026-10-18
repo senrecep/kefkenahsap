@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/3707.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kavisli deck kenarı ve basamak blokları",
+    "en": "Curved deck edge and step blocks"
+  },
+  "alt": {
+    "tr": "Havuza doğru kavis çizen deck kenarı ve üzerinde kademeli ahşap basamak blokları; uzakta ahşap bir masa",
+    "en": "Deck edge curving towards the pool with stepped timber blocks on it, and a timber table in the distance"
+  },
+  "caption": {
+    "tr": "Tahtalar yay şeklindeki kenara paralel kesilmiş. Kademeli bloklar yer yer havuz çevresine konmuş.",
+    "en": "The boards are cut to follow the arc-shaped edge. Stepped blocks are placed here and there around the pool."
+  },
+  "seoFilename": "kavisli-deck-kenarinda-havuz-ve-ahsap-basamak-bloklari",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/2767.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kıyıda ahşap kamelya, önünde palmiye ve park etmiş beyaz araç",
+    "en": "Timber gazebo on the shore with a palm and a parked white van"
+  },
+  "alt": {
+    "tr": "Kıyıda ahşap kamelya, önünde palmiye ve park etmiş beyaz bir araç; arkada körfez ve beyaz evler",
+    "en": "Timber gazebo on the shore with a palm in front and a parked white van, and the bay and white houses behind"
+  },
+  "caption": {
+    "tr": "Kamelya suya bakan bir platform üzerinde duruyor, çatı kaplaması yapılıyor. Bir işçi çatıda çalışıyor.",
+    "en": "The gazebo stands on a platform facing the water while the roof covering is laid. A worker is on the roof."
+  },
+  "seoFilename": "kiyida-ahsap-kamelya-palmiye-beyaz-arac",
+  "tags": {
+    "type": [
+      "kamelya",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

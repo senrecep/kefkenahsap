@@ -1,0 +1,39 @@
+{
+  "source": "Kapi Dolap ve Seperator/9310.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yan açıdan uzun ahşap kasa, tuğla duvar önünde",
+    "en": "Long timber chest seen from the side"
+  },
+  "alt": {
+    "tr": "Tuğla duvarın önünde duran, yan açıdan görünen uzun ahşap kasa; solda dikili tahtalar, sağda bank ucu",
+    "en": "Long timber chest in front of a brick wall seen from an angle, with boards leaning on the left and a bench end on the right"
+  },
+  "caption": {
+    "tr": "Kasa kısa kenarından görünüyor. Kapaklar dikey tahtalı, üst kapak çevresinden hafifçe taşıyor.",
+    "en": "The chest is seen from its short end. The doors are vertical-boarded and the lid overhangs slightly."
+  },
+  "seoFilename": "yan-acidan-uzun-ahsap-kasa",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,39 @@
+{
+  "source": "Ahsap Yapilar/5539.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yatay çıtalı duvar ve alt panelli bar bölümü",
+    "en": "Horizontal-slat wall and bar section with lower panels"
+  },
+  "alt": {
+    "tr": "Yatay çıtalı yeşilimsi duvar ve ön yüzü açık renk tahta paneli olan, henüz bitmemiş ahşap bar bölümü",
+    "en": "A greenish horizontal-slat wall and a not yet finished timber bar section with light board panels on the front"
+  },
+  "caption": {
+    "tr": "Solda yatay çıtalı bir duvar, ortada pencere gibi açık bir bar boşluğu var. Tezgahın altı açık renk panellerle kapatılmış.",
+    "en": "On the left is a horizontal-slat wall, with an open bar opening like a window in the middle. The base of the counter is closed with light panels."
+  },
+  "seoFilename": "yatay-citali-duvar-ve-alt-panelli-bar-bolumu",
+  "tags": {
+    "type": [
+      "bar / tezgâh",
+      "separatör"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı",
+      "ticari mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

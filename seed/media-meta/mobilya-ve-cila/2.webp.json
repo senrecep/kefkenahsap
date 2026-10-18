@@ -1,0 +1,36 @@
+{
+  "file": "2.webp",
+  "category": "mobilya-ve-cila",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Özel imalat beyaz mutfak dolabı montajı",
+    "en": "Custom white kitchen cabinet installation"
+  },
+  "alt": {
+    "tr": "Montajı süren beyaz kapaklı alt ve üst mutfak dolapları ile açık renk tezgah.",
+    "en": "White upper and lower kitchen cabinets with a light-colored countertop during installation."
+  },
+  "caption": {
+    "tr": "Daire için özel ölçülerde üretilen beyaz mutfak dolapları ve tezgah montajı aşamasından bir kare.",
+    "en": "A view from the installation process of custom-built white kitchen cabinets and countertops for an apartment."
+  },
+  "seoFilename": "beyaz-mutfak-dolabi-montaji",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "mutfak",
+      "iç mekan",
+      "daire"
+    ],
+    "finish": [
+      "lake",
+      "beyaz boya"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

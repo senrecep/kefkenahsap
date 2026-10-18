@@ -1,0 +1,38 @@
+{
+  "source": "Kapi Dolap ve Seperator/14945.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Penceredeki beyaz kabin ve içindeki kablo kangalı",
+    "en": "White housing under a window with a coil of cable inside"
+  },
+  "alt": {
+    "tr": "Pembe cephede pencere altına asılmış, eğimli beyaz kapaklı ahşap kabin; içinde duvar cihazı ve kıvrılmış siyah kablo kangalı",
+    "en": "Timber housing with a sloped white lid hung under a window on a pink facade"
+  },
+  "caption": {
+    "tr": "Kabinin içindeki cihaz yağmur ve güneşten korunuyor. Kablo kangalı kabinin dibinde duruyor.",
+    "en": "The device inside is sheltered from rain and sun, with the cable coiled at the bottom of the housing."
+  },
+  "seoFilename": "pencerede-beyaz-kabin-ve-icindeki-kablo-kangali",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "giriş"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

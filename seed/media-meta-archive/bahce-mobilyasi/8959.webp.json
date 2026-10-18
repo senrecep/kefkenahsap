@@ -1,0 +1,35 @@
+{
+  "source": "Ireko-Teak/8959.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Eski, çivili ve yıpranmış alçak masa",
+    "en": "Old, nailed and worn low table"
+  },
+  "alt": {
+    "tr": "Karo zeminde duran, yüzeyi aşınmış ve çivi izleri olan eski alçak ahşap masa",
+    "en": "Old low timber table with a weathered surface and visible nails on a tiled floor"
+  },
+  "caption": {
+    "tr": "Tabla kalın tahtalardan, yüzey solmuş ve çatlak. Yenilenmeden önceki hâli gibi görünüyor.",
+    "en": "The top is made of thick boards, with a faded and cracked surface. It looks like the state before renovation."
+  },
+  "seoFilename": "karo-zeminde-eski-civili-yipranmis-alcak-ahsap-masa",
+  "tags": {
+    "type": [
+      "sehpa"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

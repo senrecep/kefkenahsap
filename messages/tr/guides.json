@@ -1,0 +1,37 @@
+{
+  "Guides": {
+    "title": "Rehber",
+    "intro": "Ahşap seçimi, bakım ve fiyatı belirleyen etkenler hakkında kısa, sade yazılar.",
+    "metaDescription": "Ahşap seçimi, bakım ve fiyatı belirleyen etkenler üzerine Kefken Ahşap Dekorasyon'dan sade rehberler.",
+    "empty": "Henüz yayında bir rehber yok. Sorunuzu WhatsApp'tan sorabilirsiniz.",
+    "updated": "Güncellendi",
+    "toc": "Bu yazıda",
+    "tocCount": "{count} başlık",
+    "faq": "Sık sorulan sorular",
+    "author": "Yazar",
+    "authorRole": "Kurucu ve usta, {company}",
+    "related": "İlgili hizmetler",
+    "projects": "Bu konudaki işlerimiz",
+    "relatedGuides": "İlgili yazılar",
+    "ctaTitle": "Kendi işiniz için konuşalım",
+    "ctaText": "Alanın birkaç fotoğrafını gönderin; uygun ahşabı ve yapılacak işi birlikte konuşalım.",
+    "table": "Tablo (yana kaydırılabilir)"
+  },
+  "WoodSamples": {
+    "title": "Ahşap numuneleri",
+    "hint": "Sürükleyerek ya da ok tuşlarıyla çevirin",
+    "note": "Dokular işlerimizin fotoğraflarından alındı.",
+    "names": {
+      "iroko": "İroko",
+      "teak": "Teak",
+      "cam": "Emprenyeli çam (sarıçam)",
+      "thermowood": "Thermowood"
+    },
+    "facts": {
+      "iroko": "Sert ağaç · dış mekânda dayanıklı · yaklaşık 660 kg/m³",
+      "cam": "Yumuşak ağaç · dış mekânda emprenye ile · yaklaşık 510 kg/m³"
+    },
+    "source": "Fotoğrafın tamamı",
+    "roledescription": "3B numune"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "source": "Ireko-Teak/13953.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Ahşap deck üzerinde bahçe bankı",
+    "en": "Garden bench on a timber deck"
+  },
+  "alt": {
+    "tr": "Çiçekli saksıların önünde, koyu tonlu ahşap deck üzerinde kollu çıtalı ahşap bank",
+    "en": "Slatted timber bench with armrests on a dark timber deck in front of flowering window boxes"
+  },
+  "caption": {
+    "tr": "Kavisli sırtlıklı çıtalı ahşap bank, koyu tonlu deck'in üzerinde duruyor.",
+    "en": "A slatted timber bench with a curved backrest standing on the dark-toned deck."
+  },
+  "seoFilename": "deck-uzerinde-kavisli-sirtlikli-ahsap-bahce-banki",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "avlu",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

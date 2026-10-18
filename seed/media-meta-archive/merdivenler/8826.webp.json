@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/8826.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimlikte çaprazlı merdiven, üstte beyaz çit",
+    "en": "Cross-braced stairs on the lawn, a white fence above"
+  },
+  "alt": {
+    "tr": "Çimlikte çaprazlı korkuluklu ahşap merdiven; duvarın üstünde beyaz çit, akşam ışığı ve mavi gökyüzü",
+    "en": "Timber stairs with a cross-braced railing on a lawn, with a white fence on top of the wall, evening light and a blue sky"
+  },
+  "caption": {
+    "tr": "Merdiven çimlikten duvarın üstüne çıkıyor, üstte beyaz çit uzanıyor. Akşam ışığında gölge basamaklara düşüyor.",
+    "en": "The stairs climb from the lawn to the top of the wall, where a white fence runs. In the evening light a shadow falls across the steps."
+  },
+  "seoFilename": "cimlikte-caprazli-korkuluklu-ahsap-merdiven-beyaz-cit-aksam",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

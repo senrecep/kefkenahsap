@@ -1,0 +1,33 @@
+{
+  "file": "27.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Havuz kenarı ahşap kabin",
+    "en": "Wooden cabin by the pool"
+  },
+  "alt": {
+    "tr": "Havuz kenarında, bahçede duran açık renkli ahşap kabin; çapraz destekli kapısı ve üstünde çıkıntılı bir saçak var.",
+    "en": "Light-colored wooden cabin standing by a garden pool, with a diagonally braced door and a projecting roof overhang."
+  },
+  "caption": {
+    "tr": "Bahçedeki havuzun kenarına yaptığımız, yatay tahta kaplı ve çapraz destekli kapılı ahşap kabin.",
+    "en": "A wooden cabin we built beside a garden pool, clad in horizontal boards with a diagonally braced door."
+  },
+  "seoFilename": "havuz-kenari-ahsap-kabin",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "havuz kenarı",
+      "dış mekan"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

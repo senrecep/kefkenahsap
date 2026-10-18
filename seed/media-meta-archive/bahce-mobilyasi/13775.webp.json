@@ -1,0 +1,39 @@
+{
+  "source": "Ireko-Teak/13775.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çiçekli bahçede çok kişilik ahşap masa ve kollu sandalyeler",
+    "en": "Large timber table and armchairs in a flowering garden"
+  },
+  "alt": {
+    "tr": "Magnolya ve çalılarla çevrili bahçede, taş döşemede çok uzun bir ahşap masa ve iki yanında kolçaklı sandalyeler",
+    "en": "On stone paving in a garden of magnolia and shrubs, a very long timber table with folding armchairs along both sides"
+  },
+  "caption": {
+    "tr": "Masa kalabalık bir sofra için yeterince uzun, çevresinde çok sayıda sandalye sıralanmış. Sandalyeler katlanıp yer açabiliyor.",
+    "en": "The table is long enough for a big gathering, with many chairs along it. The chairs fold away to save space."
+  },
+  "seoFilename": "cicekli-bahcede-cok-kisilik-ahsap-masa-ve-kollu-sandalyeler",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [
+      "teak"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/10942.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş sütunlar arasında turuncu dolgulu koyu çerçeveli bahçe kapısı",
+    "en": "Dark-framed garden gate with orange infill between stone piers"
+  },
+  "alt": {
+    "tr": "İki taş sütun arasında, turuncu kare dolgulu koyu çerçeveli çift kanatlı bahçe kapısı; önde beyaz bir araç",
+    "en": "Double-leaf garden gate with a dark frame and square orange infill between two stone piers"
+  },
+  "caption": {
+    "tr": "Kapının kanatları koyu çerçeveli ve ortada daire motifli. Taş sütunlar kapıyı iki yandan çerçeveliyor.",
+    "en": "The gate leaves have a dark frame and a circular motif in the middle. Stone piers frame the gate on both sides."
+  },
+  "seoFilename": "tas-sutunlar-arasinda-turuncu-dolgulu-bahce-kapisi",
+  "tags": {
+    "type": [
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

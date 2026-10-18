@@ -1,0 +1,36 @@
+{
+  "file": "5.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Mutfakta davlumbaz çevresi ve üst dolap montajı",
+    "en": "Kitchen hood area and wall cabinet installation"
+  },
+  "alt": {
+    "tr": "Beyaz çekmeceli mutfak tezgâhında ocak, eğimli siyah davlumbaz ve açık duran buzlu camlı üst dolaplar",
+    "en": "Kitchen with white drawers, gas hob, angled black hood and open wall cabinets with frosted glass door"
+  },
+  "caption": {
+    "tr": "Mutfak tadilatında davlumbazın çevresindeki üst dolaplar yerine takıldı, kapaklar ve menteşeler ayarlanıyor. Tezgâh üstünde silikon tüpleri duruyor.",
+    "en": "During a kitchen renovation, the wall cabinets around the hood are in place and the doors and hinges are being adjusted. Silicone tubes are still on the countertop."
+  },
+  "seoFilename": "mutfak-davlumbaz-ust-dolap-montaji",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "mutfak",
+      "iç mekan",
+      "daire"
+    ],
+    "finish": [
+      "beyaz lake",
+      "buzlu cam"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

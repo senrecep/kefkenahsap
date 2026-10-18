@@ -1,0 +1,35 @@
+{
+  "source": "Korkuluk ve Cit/15089.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sıralı T biçimli direkler ve toprak yığını",
+    "en": "Row of T-shaped posts beside a mound of earth"
+  },
+  "alt": {
+    "tr": "Bahçede uzayan sıralı T biçimli ahşap direkler, sağda taze toprak yığını, arkada sonbahar ağaçları",
+    "en": "Row of T-shaped timber posts running through a garden, with a fresh mound of earth on the right and autumn trees behind"
+  },
+  "caption": {
+    "tr": "Direk sırası bahçenin ortasından perspektifle uzaklaşıyor. Yan taraftaki toprak yeni kazılmış.",
+    "en": "The row of posts recedes through the middle of the garden. The earth beside it has been freshly dug."
+  },
+  "seoFilename": "sirali-t-bicimli-ahsap-direkler-toprak-yigini",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.4
+}

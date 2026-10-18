@@ -1,0 +1,35 @@
+{
+  "file": "WhatsApp-Image-2021-04-30-at-20.32.58-3.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe sınırında ahşap çit",
+    "en": "Wooden picket fence along a garden edge"
+  },
+  "alt": {
+    "tr": "Çim bahçenin kenarında uzanan, uçları yuvarlatılmış dikey tahtalardan yapılmış açık renkli ahşap çit",
+    "en": "Light wooden picket fence with rounded tops running along the edge of a grassy garden"
+  },
+  "caption": {
+    "tr": "Bahçenin sınırını çizen, yuvarlatılmış uçlu dikey tahtalardan oluşan ahşap çit. Arkasında çalılık bir bahçe var.",
+    "en": "A wooden picket fence with rounded tops marking the edge of a garden, with shrubs growing behind it."
+  },
+  "seoFilename": "bahce-ahsap-cit-yuvarlak-uclu",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "çim alan"
+    ],
+    "finish": [
+      "naturel"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

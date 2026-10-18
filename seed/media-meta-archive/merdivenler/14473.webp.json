@@ -1,0 +1,37 @@
+{
+  "source": "Merdivenler/14473.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Eskimiş gri ahşap basamaklar, yanında çakıl",
+    "en": "Worn grey timber steps beside gravel"
+  },
+  "alt": {
+    "tr": "Eskimiş, grileşmiş ahşap basamaklar; alt kısımda çakıl zemin",
+    "en": "Worn, greyed timber steps with a gravel floor at the foot"
+  },
+  "caption": {
+    "tr": "Basamakların üstü grileşmiş, kenarları aşınmış. Alttaki çakıl zeminle birlikte yenilenmeyi bekliyor.",
+    "en": "The step surfaces have greyed and the edges are worn. They are waiting for renewal."
+  },
+  "seoFilename": "eskimis-gri-ahsap-basamaklar-yaninda-cakil",
+  "tags": {
+    "type": [
+      "merdiven"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

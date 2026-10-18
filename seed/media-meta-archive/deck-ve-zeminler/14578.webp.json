@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14578.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yeşil panjurlu giriş önünde parlak deck",
+    "en": "Glossy deck in front of an entrance with green shutters"
+  },
+  "alt": {
+    "tr": "Yeşil panjurlu kapıların önüne döşenmiş, parlak koyu kırmızı kahverengi deck; kenarları mavi bantla korunmuş",
+    "en": "Glossy dark red-brown deck laid in front of green-shuttered doors, edges protected with blue tape"
+  },
+  "caption": {
+    "tr": "Tahtalar köşeden dönüyor ve alt kenarda basamak gibi bir pah oluşturuyor. Yan tarafta bir çalı deckin üstüne uzanıyor.",
+    "en": "The boards turn at the corner and form a step-like edge at the bottom. A shrub reaches over the deck at one side."
+  },
+  "seoFilename": "yesil-panjurlu-giris-onunde-parlak-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

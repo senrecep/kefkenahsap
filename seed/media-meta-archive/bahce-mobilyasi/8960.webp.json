@@ -1,0 +1,35 @@
+{
+  "source": "Ireko-Teak/8960.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çapraz kirişli masa üstü yakın çekim",
+    "en": "Close-up of a table top with a cross beam"
+  },
+  "alt": {
+    "tr": "Masa üstündeki tahta döşemenin ve üzerinden geçen kavisli kirişin yakın çekimi",
+    "en": "Close-up of the board layout on a table top with a curved beam running across it"
+  },
+  "caption": {
+    "tr": "Tahtalar yan yana döşenmiş, aralarındaki derzler koyu. Kavisli bir kiriş tablayı ikiye bölüyor.",
+    "en": "The boards are laid side by side with dark joints between them. A curved beam splits the top."
+  },
+  "seoFilename": "capraz-kirisli-tahta-dosemeli-masa-ustu-yakin-cekim",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

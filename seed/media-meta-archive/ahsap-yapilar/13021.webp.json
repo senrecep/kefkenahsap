@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/13021.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kulübenin içinde OSB kaplı çatı",
+    "en": "OSB-lined roof inside a shed"
+  },
+  "alt": {
+    "tr": "Kulübe içinde OSB levhayla kaplanmış çatı ve altındaki kırmızımsı lambri yüzey",
+    "en": "Roof lined with OSB board inside a shed, with a reddish panelled surface beneath"
+  },
+  "caption": {
+    "tr": "Çatı altı OSB levha ile kaplanmış. Alttaki lambri yüzey ve çapraz bir kiriş görünüyor.",
+    "en": "The underside of the roof is lined with OSB board. The panelled surface below and a diagonal beam are visible."
+  },
+  "seoFilename": "osb-kapli-kulube-cati-ici-ve-lambri-yuzey",
+  "tags": {
+    "type": [
+      "bahçe kulübesi / depo"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.5
+}

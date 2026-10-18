@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/5732.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Küp taş yol boyunca siyah çerçeveli dikey çıtalı uzun çit",
+    "en": "Long black-framed vertical-slat fence along a cobbled road"
+  },
+  "alt": {
+    "tr": "Küp taş döşeli yol kenarında uzanan, siyah çerçeveli, dikey ahşap çıtalı uzun çit; önde kırmızı çiçekli çalılar",
+    "en": "A long vertical-slat timber fence with a black frame running along a cobbled road"
+  },
+  "caption": {
+    "tr": "Çit yol boyunca çok uzun, çıtaları siyah çerçeveye aralıklı sabitlenmiş. Çiçekli çalılar çitin dibinde sıralanıyor.",
+    "en": "The fence runs a long way along the road with its slats fixed at spaced intervals in a black frame. Flowering shrubs line the foot of the fence."
+  },
+  "seoFilename": "kup-tas-yol-boyunca-siyah-cerceveli-dikey-citali-cit",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

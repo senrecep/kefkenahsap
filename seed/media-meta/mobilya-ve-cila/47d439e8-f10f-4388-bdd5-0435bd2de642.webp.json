@@ -1,0 +1,36 @@
+{
+  "file": "47d439e8-f10f-4388-bdd5-0435bd2de642.webp",
+  "category": "mobilya-ve-cila",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Özel tasarım ahşap konsol dolabı",
+    "en": "Custom designed wooden accent cabinet"
+  },
+  "alt": {
+    "tr": "Siyah gövdeli ve çizgili desenli kapakları olan ayaklı ahşap konsol dolabı, yanında saksı bitkisi.",
+    "en": "Custom black wooden accent cabinet with patterned doors next to a potted palm plant."
+  },
+  "caption": {
+    "tr": "İç mekan için özel olarak hazırlanan, siyah lake gövdeye ve desenli kapaklara sahip dekoratif ayaklı dolap uygulaması.",
+    "en": "Custom crafted accent cabinet featuring a black lacquered frame and patterned doors for interior decor."
+  },
+  "seoFilename": "ozel-tasarim-ahsap-konsol-dolap",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "iç mekan",
+      "antre",
+      "salon"
+    ],
+    "finish": [
+      "lake",
+      "siyah boya"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

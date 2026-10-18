@@ -1,0 +1,35 @@
+{
+  "source": "Kapi Dolap ve Seperator/11616.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Tel örgülü çapraz desenli ahşap bölme",
+    "en": "Cross-braced timber partition with wire mesh"
+  },
+  "alt": {
+    "tr": "Terasta saksıların önünde duran, tel örgülü ve çapraz çıtalı üç parçalı ahşap bölme",
+    "en": "Three-panel timber partition with wire mesh and cross braces in front of potted plants"
+  },
+  "caption": {
+    "tr": "Üç parçalı bölme, ahşap çerçevelere gerilmiş tel örgüden yapıldı. Her panelde çapraz çıtalar var.",
+    "en": "The three-panel partition has wire mesh set into timber frames, each with a cross brace."
+  },
+  "seoFilename": "tel-orgulu-capraz-ahsap-bolme-teras",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "teras",
+      "dış mekân"
+    ],
+    "finish": [
+      "parlak yüzey"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

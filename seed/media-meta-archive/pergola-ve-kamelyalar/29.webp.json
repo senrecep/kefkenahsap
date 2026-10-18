@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/29.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yapım aşamasında geniş çatılı ahşap iskelet",
+    "en": "Wide-roofed timber frame during construction"
+  },
+  "alt": {
+    "tr": "Geniş açıklıklı ahşap çatı iskeleti, kolonlar, çapraz destekler ve alt katta korkuluk çıtaları, yapım aşamasında",
+    "en": "Wide-span timber roof frame with posts, braces and railing slats on the lower level, still under construction"
+  },
+  "caption": {
+    "tr": "Çatı kirişleri sık aralıklarla dizilmiş, kolonlar çapraz payandalarla desteklenmiş. Yapı henüz kaplanmamış.",
+    "en": "The roof rafters are closely spaced and the posts are braced diagonally. The structure has not been clad yet."
+  },
+  "seoFilename": "genis-catili-ahsap-iskelet-yapim-asamasi",
+  "tags": {
+    "type": [
+      "pergola",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

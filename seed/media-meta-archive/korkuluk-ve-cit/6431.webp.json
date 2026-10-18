@@ -1,0 +1,40 @@
+{
+  "source": "Korkuluk ve Cit/6431.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çakıl yol kenarında sıralı direkler ve kapı çerçevesi",
+    "en": "Rows of posts and a gate frame beside a gravel road"
+  },
+  "alt": {
+    "tr": "Çakıl yolun sağında uzaklaşan ahşap çit direkleri, arkada kapı çerçevesi ve söğüt ağaçlarının gölgesinde geniş alan",
+    "en": "Timber fence posts receding on the right of a gravel road, with a gate frame behind and a wide area under willow trees"
+  },
+  "caption": {
+    "tr": "Direkler yolun kenarını izleyerek ilerliyor, kapı çerçevesi hattın ortasında duruyor.",
+    "en": "The posts follow the side of the road, and the gate frame stands in the middle of the line."
+  },
+  "seoFilename": "cakil-yol-kenarinda-sirali-cit-direkleri-ve-kapi-cercevesi",
+  "tags": {
+    "type": [
+      "çit",
+      "bahçe kapısı"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

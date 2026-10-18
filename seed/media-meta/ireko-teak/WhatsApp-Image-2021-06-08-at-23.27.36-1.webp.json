@@ -1,0 +1,37 @@
+{
+  "file": "WhatsApp-Image-2021-06-08-at-23.27.36-1.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Açık mutfakta dikey çıta panel ve çıtalı tavan",
+    "en": "Vertical slat wall and slatted ceiling in an outdoor kitchen"
+  },
+  "alt": {
+    "tr": "Açık mutfakta dikey ahşap çıtalı duvar, çıtalı tavan, gri tezgâh, paslanmaz buzdolapları ve sarkan yeşil bitkiler",
+    "en": "Outdoor kitchen with a vertical wood slat wall, slatted ceiling, grey counter, steel fridges and hanging plants"
+  },
+  "caption": {
+    "tr": "Açık mutfak alanında duvar ve tavan, aralıklı ahşap çıtalarla kaplandı. Tezgâh önündeki dolap cepheleri de aynı çıta düzeniyle yapıldı.",
+    "en": "In this outdoor kitchen, the wall and ceiling are covered with evenly spaced wood slats. The counter front uses the same slat pattern."
+  },
+  "seoFilename": "acik-mutfak-dikey-ahsap-cita-panel-tavan",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "açık mutfak",
+      "teras",
+      "duvar kaplama",
+      "tavan kaplama"
+    ],
+    "finish": [
+      "doğal ton",
+      "çıta"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

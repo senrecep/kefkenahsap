@@ -1,0 +1,37 @@
+{
+  "file": "WhatsApp-Image-2021-06-27-at-20.13.45-1-1.webp",
+  "category": "ireko-teak",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe içi iroko ahşap deck zemin kaplaması",
+    "en": "Iroko wood deck platform in garden"
+  },
+  "alt": {
+    "tr": "Çim bahçe ile veranda seramikleri arasına kurulmuş kare ahşap iroko deck platform.",
+    "en": "Square iroko wood deck platform placed on a lawn next to a tiled patio."
+  },
+  "caption": {
+    "tr": "Müstakil evin bahçesinde çim zeminle seramik alan arasına uygulanan, dış mekâna ve neme dayanıklı iroko ahşap deck zemin çalışması.",
+    "en": "Exterior iroko wood decking platform installed between the lawn and patio tiles in a private garden."
+  },
+  "seoFilename": "bahce-iroko-ahsap-deck-kaplama",
+  "tags": {
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "bahçe",
+      "veranda",
+      "teras"
+    ],
+    "finish": [
+      "deck yağı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

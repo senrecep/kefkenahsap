@@ -1,0 +1,33 @@
+{
+  "file": "WhatsApp-Image-2021-06-27-at-20.13.45-3.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede ahşap deck zemin",
+    "en": "Wooden deck floor in a garden"
+  },
+  "alt": {
+    "tr": "Evin cam kapılı cephesinin önünde, çimenlik bahçeye döşenmiş kızıl kahverengi ahşap deck zemin",
+    "en": "Reddish-brown wooden deck laid on a lawn in front of a house wall with glass doors"
+  },
+  "caption": {
+    "tr": "Evin cam kapılarının önünde, çimenlik bahçeye döşenmiş ahşap deck. Tahtalar yan yana sıralı, kenarları çimle çevrili.",
+    "en": "A wooden deck laid on the lawn in front of the glass doors of the house. The boards run side by side and the edges meet the grass."
+  },
+  "seoFilename": "bahce-ahsap-deck-zemin",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "müstakil ev",
+      "dış mekan"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

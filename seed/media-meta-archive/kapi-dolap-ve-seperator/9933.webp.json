@@ -1,0 +1,39 @@
+{
+  "source": "Korkuluk ve Cit/9933.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Açık renk kasa ve yanında eskimiş tahtalı dolap",
+    "en": "Light timber box beside a weathered cabinet"
+  },
+  "alt": {
+    "tr": "Taş döşeli avluda açık renk tahta kaplı kasanın yan yüzü; arkada koyulaşmış tahtalı çift kapaklı bir dolap ve çit",
+    "en": "Side of a light timber-clad box on a stone-paved yard, with a double-door cabinet of darkened boards and a fence behind"
+  },
+  "caption": {
+    "tr": "Yeni kasa açık renk, yanındaki eski dolap güneş ve yağmurdan kararmış. Zeminde bir kereste parçası duruyor.",
+    "en": "The new box is light in colour while the older cabinet beside it has darkened in sun and rain. A piece of timber lies on the ground."
+  },
+  "seoFilename": "acik-renk-kasa-eskimis-tahtali-dolap",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

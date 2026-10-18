@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/3770.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Aralıklı ahşap kaplanmış kolon, yanında merdiven",
+    "en": "Column clad in spaced boards with a ladder beside it"
+  },
+  "alt": {
+    "tr": "Yatay tahtalarla aralıklı kaplanmış köşe kolonu, yanında alüminyum merdiven, yerde mavi kablo ve uzun bir tahta",
+    "en": "Corner column clad in horizontal boards with gaps between them, a ladder beside it, with a blue cable"
+  },
+  "caption": {
+    "tr": "Tahtalar kolonun köşesinde bindirilerek birleşiyor, aralıklarda alt yüzey görünüyor.",
+    "en": "The boards overlap at the corner of the column, and the surface beneath shows through the gaps."
+  },
+  "seoFilename": "yatay-aralikli-ahsap-kaplanmis-kolon-yaninda-merdiven",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

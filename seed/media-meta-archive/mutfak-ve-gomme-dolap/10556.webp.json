@@ -1,0 +1,37 @@
+{
+  "source": "Mobilya ve Cila/10556.webp",
+  "category": "mutfak-ve-gomme-dolap",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Tavana kadar beyaz boyalı çok kapaklı gömme dolap",
+    "en": "Floor-to-ceiling white painted built-in wardrobe with many doors"
+  },
+  "alt": {
+    "tr": "Tavana kadar uzanan beyaz boyalı, alt ve üst kapaklı gömme dolap; metal kulplar, parke zemin",
+    "en": "A white painted built-in wardrobe reaching the ceiling, with lower and upper doors, metal handles and a parquet floor"
+  },
+  "caption": {
+    "tr": "Dolap duvardan tavana kadar tek yüzey gibi görünüyor. Altta dört, üstte dört kapak, hepsi ince metal kulplu.",
+    "en": "The wardrobe looks like a single surface from wall to ceiling. There are four doors below and four above, all with slim metal handles."
+  },
+  "seoFilename": "tavana-kadar-beyaz-boyali-cok-kapakli-gomme-dolap-parke",
+  "tags": {
+    "type": [
+      "gömme dolap / gardırop"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

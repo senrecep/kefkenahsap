@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/5855.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sarı cepheli ev yanında deck ve ahşap kasa",
+    "en": "Deck beside a yellow-fronted house, with a timber box in the corner"
+  },
+  "alt": {
+    "tr": "Taş duvar ve sarı kaplamalı evin yanında uzanan gri tonlu deck; köşede yatay tahtalı ahşap bir kasa",
+    "en": "Grey-toned deck running beside a stone wall and a yellow-clad house, with a horizontal-board timber box in the corner"
+  },
+  "caption": {
+    "tr": "Deck yerden bir kademe yüksek, kenarı çevre tahtasıyla kapalı. Toprakta beyaz bir kalıntı ve bir drenaj borusu görünüyor.",
+    "en": "The deck stands one step above ground and its edge is closed with a fascia board. A white residue and a drainage pipe show in the soil."
+  },
+  "seoFilename": "sari-cepheli-ev-yaninda-deck-ve-kosedeki-ahsap-kasa",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

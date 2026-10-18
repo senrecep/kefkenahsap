@@ -1,0 +1,39 @@
+{
+  "source": "Ireko-Teak/12815.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapılı evin terasında oval ahşap masa ve sandalyeler",
+    "en": "Oval timber table and chairs on the terrace of a house with glass doors"
+  },
+  "alt": {
+    "tr": "Deck zeminli bir terasta, yeşil çitin ve cam kapılı evin önünde",
+    "en": "On a decked terrace in front of a green hedge and a house with glass doors"
+  },
+  "caption": {
+    "tr": "Sandalyelerin sırtlığı yaslanma açısı ayarlanabilir türden. Oval masa çevresine rahat bir yerleşim veriyor.",
+    "en": "The chair backs are of the kind whose recline angle can be adjusted. The oval table gives an easy layout around it."
+  },
+  "seoFilename": "cam-kapili-evin-terasinda-oval-ahsap-masa-ve-sandalyeler",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras",
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/8931.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Koyu vernikli ahşap tahtada belirgin damarlar",
+    "en": "Prominent grain on a dark varnished timber board"
+  },
+  "alt": {
+    "tr": "Koyu kahve-turuncu vernikli, çam damarları belirgin ahşap tahta yüzeyinin geniş açılı yakın çekimi",
+    "en": "Wide-angle close-up of a dark brown-orange varnished timber board surface with prominent pine grain"
+  },
+  "caption": {
+    "tr": "Vernik damarları öne çıkarıyor, tahtalar arasındaki derz çizgisi görünüyor.",
+    "en": "The varnish brings out the grain, and the joint line between the boards is visible."
+  },
+  "seoFilename": "koyu-vernikli-damarlari-belirgin-ahsap-tahta-yuzeyi",
+  "tags": {
+    "type": [
+      "iç duvar kaplaması"
+    ],
+    "wood": [
+      "çam"
+    ],
+    "setting": [],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

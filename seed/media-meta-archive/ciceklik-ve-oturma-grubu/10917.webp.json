@@ -1,0 +1,35 @@
+{
+  "source": "Kapi Dolap ve Seperator/10917.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Avluda sıra sıra ahşap çiçeklikler",
+    "en": "A row of timber planters in a courtyard"
+  },
+  "alt": {
+    "tr": "Karo zemin üzerinde yan yana dizilmiş, yatay tahta kaplı büyük ahşap çiçeklikler",
+    "en": "Large planters clad in horizontal boards, lined up on a tiled courtyard"
+  },
+  "caption": {
+    "tr": "Yatay tahtalarla kaplanan çiçeklikler avlu boyunca sıralandı. İçleri siyah astarla kaplı.",
+    "en": "Planters clad in horizontal boards are lined up along the courtyard, each with a black liner inside."
+  },
+  "seoFilename": "avluda-sira-sira-ahsap-ciceklikler",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "avlu",
+      "dış mekân"
+    ],
+    "finish": [
+      "koyu ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

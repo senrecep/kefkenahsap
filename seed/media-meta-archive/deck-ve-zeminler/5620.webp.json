@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/5620.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ev girişi önünde deck ve beyaz masa",
+    "en": "Deck and white table at the house entrance"
+  },
+  "alt": {
+    "tr": "Ev girişindeki cam kapının önünde açık renkli emprenyeli çam deck; üstünde beyaz katlanır masa ve sandalyeler",
+    "en": "Pale pressure-treated pine deck in front of the glass door at a house entrance, with a white folding table and chairs on it"
+  },
+  "caption": {
+    "tr": "Deck çimene düz bir kenarla iniyor. Sağ kenarda sarmaşıklı bir duvar ve saksı bitkileri duruyor.",
+    "en": "The deck meets the lawn along a straight edge. An ivy-covered wall and potted plants stand at the right edge."
+  },
+  "seoFilename": "ev-girisi-onunde-acik-renkli-deck-beyaz-masa-ve-tas-basamak",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,33 @@
+{
+  "file": "WhatsApp-Image-2021-06-27-at-20.13.47-1-1.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede deck alt konstrüksiyonu ve tahta döşeme",
+    "en": "Garden deck substructure and board installation"
+  },
+  "alt": {
+    "tr": "Bahçede çakıl zemin üzerine kurulmuş ahşap alt konstrüksiyon, yanında döşenmiş deck tahtaları, arkada budanmış bir ağaç",
+    "en": "Wooden deck substructure set over gravel in a garden, with decking boards laid beside it and a pruned tree behind"
+  },
+  "caption": {
+    "tr": "Çakıl zemin üzerine ahşap taşıyıcı iskelet kuruldu, deck tahtalarının döşenmesi iskeletin yanından devam ediyor.",
+    "en": "A timber frame is set over the gravel base, and the deck boards are being laid out from the edge of the frame."
+  },
+  "seoFilename": "bahce-deck-alt-konstruksiyon-cakil-zemin",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras",
+      "dış mekan"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

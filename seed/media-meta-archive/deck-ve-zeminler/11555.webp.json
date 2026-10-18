@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/11555.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dar balkonda kırmızımsı kahve deck",
+    "en": "Reddish-brown deck on a narrow balcony"
+  },
+  "alt": {
+    "tr": "Dar balkonda kırmızımsı kahverengi ahşap deck; beyaz katlanır sandalye ve bitkiler",
+    "en": "Reddish-brown timber deck on a narrow balcony with a white folding chair and plants"
+  },
+  "caption": {
+    "tr": "Deck balkonun boyunca uzun uzun uzanıyor, ucunda küçük bir ahşap sandık duruyor. Yanda büyük yapraklı bitkiler sıralı.",
+    "en": "The deck runs the whole length of the balcony with a small timber chest at the end. Large-leaved plants line the side."
+  },
+  "seoFilename": "dar-balkonda-kirmizimsi-kahverengi-ahsap-deck-beyaz-katlanir",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "balkon"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

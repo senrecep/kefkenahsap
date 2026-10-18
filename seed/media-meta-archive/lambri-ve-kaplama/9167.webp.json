@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/9167.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz duvar yanında yatay ahşap cephe",
+    "en": "Horizontal timber facade beside a white wall"
+  },
+  "alt": {
+    "tr": "Beyaz duvarın yanında iskeleli, yatay ahşap kaplamalı bina cephesi",
+    "en": "Scaffolded building facade clad in horizontal timber next to a white wall"
+  },
+  "caption": {
+    "tr": "Cephe yatay tahtalarla kaplanmış, ortadaki koyu şeritte iki küçük pencere boşluğu var. Yanında beyaz sıvalı bir duvar duruyor.",
+    "en": "The facade is clad in horizontal boards, with two small window openings in the dark strip across the middle. A white rendered wall stands beside it."
+  },
+  "seoFilename": "beyaz-duvar-yaninda-yatay-ahsap-cephe",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

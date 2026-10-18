@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/3667.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Izgaralı havuz kenarında dar geçitli deck",
+    "en": "Deck with a narrow walkway at a grated pool edge"
+  },
+  "alt": {
+    "tr": "Izgaralı havuz kenarını saran açık renkli deck ve çimeni geçen dar bir deck geçidi; çakıl şeritli kenar",
+    "en": "Pale deck around a grated pool edge and a narrow deck walkway crossing the lawn, with a pebble-lined edge"
+  },
+  "caption": {
+    "tr": "Geçit havuz kenarından çimene dik biçimde uzanıyor. Arkada taş kaplı bir duvar ve bahçe lambası var.",
+    "en": "The walkway runs from the pool edge across the lawn. A stone-clad wall and a garden light stand behind."
+  },
+  "seoFilename": "izgarali-havuz-kenarinda-dar-gecitli-acik-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

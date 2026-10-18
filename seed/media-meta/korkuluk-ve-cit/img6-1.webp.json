@@ -1,0 +1,36 @@
+{
+  "file": "img6-1.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Emprenyeli ahşap bahçe çiti ve kapısı",
+    "en": "Pressure treated wooden garden fence and gate"
+  },
+  "alt": {
+    "tr": "Kırmızı zemin üzerinde dikey çıtalı, mandallı emprenyeli ahşap bahçe çiti ve kapısı.",
+    "en": "Pressure-treated wooden garden fence and gate with vertical slats on a red ground."
+  },
+  "caption": {
+    "tr": "Dış mekan bahçe ayrımı için uygulanan dikey çıtalı, mandallı emprenyeli çam çit ve kapı montajı.",
+    "en": "Installation of a vertical slat pressure-treated pine garden fence and gate for outdoor boundary."
+  },
+  "seoFilename": "emprenyeli-ahsap-bahce-citi-kapisi",
+  "tags": {
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "dış mekan",
+      "bahçe"
+    ],
+    "finish": [
+      "emprenye"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

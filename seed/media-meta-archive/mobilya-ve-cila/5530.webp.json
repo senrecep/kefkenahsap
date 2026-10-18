@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/5530.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Açık renkli bar tezgahı ve yatay çıtalı paravan",
+    "en": "Light timber bar counter and horizontal-slat screen"
+  },
+  "alt": {
+    "tr": "Açık renkli ahşap bar tezgahı ve yatay çıtalı yeşilimsi paravan; arkada insanlar ve örtülü bir eşya görünüyor",
+    "en": "A light timber bar counter and a greenish horizontal-slat screen, with people and a covered object visible behind"
+  },
+  "caption": {
+    "tr": "Tezgahın tablası açık renkli, ön yüzü dikey tahta panelli. Yanındaki paravan yatay çıtalardan oluşuyor.",
+    "en": "The counter top is light in colour and the front has vertical board panels. The screen beside it is made of horizontal slats."
+  },
+  "seoFilename": "acik-renkli-ahsap-bar-tezgahi-ve-yatay-citali-paravan",
+  "tags": {
+    "type": [
+      "bar / tezgâh",
+      "kafes / paravan"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

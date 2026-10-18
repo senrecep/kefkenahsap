@@ -1,0 +1,38 @@
+{
+  "file": "0549a210-04f5-48cc-bc42-6e003b7829ce.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ofis resepsiyon bankosu ve mutfak dolapları",
+    "en": "Office reception desk and kitchen cabinets"
+  },
+  "alt": {
+    "tr": "Açık renk masif ahşap üstlü L şekilli ofis bankosu, arkada beyaz mutfak dolapları, siyah çıtalı panel ve cam bölme",
+    "en": "L-shaped office counter with a light solid wood top, white kitchen cabinets, black slatted panel and glass partition behind"
+  },
+  "caption": {
+    "tr": "Açık renk ahşap kaplı L şekilli çalışma bankosu, beyaz mutfak dolapları ve siyah çıtalı duvar paneliyle bir ofis iç mekanı.",
+    "en": "An office interior with an L-shaped light wood counter, white kitchen cabinets and a black slatted wall panel."
+  },
+  "seoFilename": "ofis-bankosu-ahsap-tezgah-mutfak-dolabi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "ofis",
+      "iç mekan",
+      "mutfak",
+      "resepsiyon"
+    ],
+    "finish": [
+      "doğal ahşap tezgah",
+      "beyaz lamine",
+      "siyah çıtalı panel"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

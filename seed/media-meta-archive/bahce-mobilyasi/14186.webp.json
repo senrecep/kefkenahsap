@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14186.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Metal çerçeveli, çıtalı ahşap koltuk, ahşap görünümlü zeminde",
+    "en": "Metal-framed slatted timber armchair on wood-look flooring"
+  },
+  "alt": {
+    "tr": "Cam kapılı bir terasta, gri metal çerçeveye çıtalı ahşap sırt ve oturak takılmış, minderi olmayan bir koltuk duruyor",
+    "en": "On a terrace by glass doors, a cushionless armchair with a grey metal frame and a slatted timber back and seat"
+  },
+  "caption": {
+    "tr": "Koltuğun iskeleti gri metal, sırtı çıtalı ahşap. Henüz minder konmamış, çıtalı oturak açıkta duruyor.",
+    "en": "The frame is grey metal and the back slatted timber. No cushion has been added, so the slatted seat shows."
+  },
+  "seoFilename": "metal-cerceveli-citali-ahsap-koltuk-teras-ahsap-gorunumlu",
+  "tags": {
+    "type": [
+      "oturma grubu"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

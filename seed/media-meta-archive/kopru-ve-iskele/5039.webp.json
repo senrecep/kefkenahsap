@@ -1,0 +1,40 @@
+{
+  "source": "Kopru ve Iskele/5039.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kıyıdaki sazlık boyunca korkuluklu yürüyüş iskelesi",
+    "en": "Railed walking pier along the reeds on the shore"
+  },
+  "alt": {
+    "tr": "Sazlığın kenarında, kırmızı çatılı evin önünden göle uzanan korkuluklu ahşap iskele; ön planda çıplak ağaç dalları",
+    "en": "Railed timber pier running to the lake from in front of a red-roofed house beside reeds"
+  },
+  "caption": {
+    "tr": "Yol sazlığa paralel ilerliyor, kenarında lamba direkleri sıralanıyor. Ön plandaki dallar çerçeveyi dolduruyor.",
+    "en": "The walkway runs parallel to the reeds with lamp posts lined up along it. The branches in front fill the frame."
+  },
+  "seoFilename": "kiyidaki-sazlik-boyunca-korkuluklu-yuruyus-iskelesi",
+  "tags": {
+    "type": [
+      "iskele",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

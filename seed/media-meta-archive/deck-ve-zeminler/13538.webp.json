@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/13538.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Duvar ve sarmaşık önünde yeni döşenmiş deck",
+    "en": "Freshly laid deck in front of a wall and ivy"
+  },
+  "alt": {
+    "tr": "Duvar ve sarmaşık önünde, açık sarımsı kahverengi yeni döşenmiş dar deck",
+    "en": "Narrow freshly laid pale yellowish-brown deck in front of a wall and ivy"
+  },
+  "caption": {
+    "tr": "Deck, duvarın dibindeki dar avluyu baştan sona kaplıyor. Duvarda süs saksıları ve sarmaşık asılı duruyor.",
+    "en": "The deck covers the narrow courtyard at the foot of the wall from end to end. Decorative pots and ivy hang on the wall."
+  },
+  "seoFilename": "duvar-ve-sarmasik-onunde-yeni-dosenmis-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

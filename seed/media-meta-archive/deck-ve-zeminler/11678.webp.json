@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/11678.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deck üzerinde minderli ahşap salıncak",
+    "en": "Cushioned wooden swing on a deck"
+  },
+  "alt": {
+    "tr": "Çimen üzerine serilmiş ahşap deck ve üzerinde koyu minderli ahşap bahçe salıncağı",
+    "en": "Timber deck laid on grass with a wooden garden swing seat and dark cushions on top"
+  },
+  "caption": {
+    "tr": "Salıncak sert zemine oturuyor, ayakları çimene batmıyor. Arkada taş duvar ve beyaz çit görünüyor.",
+    "en": "The swing stands on a firm surface instead of sinking into the lawn. A stone wall and white fence show behind."
+  },
+  "seoFilename": "deck-uzerinde-minderli-ahsap-salincak",
+  "tags": {
+    "type": [
+      "deck",
+      "salıncak"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

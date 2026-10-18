@@ -1,0 +1,39 @@
+{
+  "source": "Ahsap Yapilar/1766.webp",
+  "category": "ahsap-ev-ve-bungalov",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Geniş arazide uzaktan görünen ahşap ev",
+    "en": "Timber house seen from afar on a wide plot"
+  },
+  "alt": {
+    "tr": "Açık, geniş arazide taş duvarın üstünde duran çitli ahşap ev ve yanında kamelya, uzaktan görünüm",
+    "en": "Distant view of a timber house with a fence and a gazebo beside it on open land above a stone wall"
+  },
+  "caption": {
+    "tr": "Uzaktan çekilmiş. Ahşap ev ve kamelya, taş duvarın arkasındaki geniş arazide küçük görünüyor.",
+    "en": "The shot is taken from a distance. The timber house and the gazebo look small on the wide plot behind the stone wall."
+  },
+  "seoFilename": "genis-arazide-citli-ahsap-ev-uzaktan",
+  "tags": {
+    "type": [
+      "ahşap ev / bungalov",
+      "kamelya",
+      "çit"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

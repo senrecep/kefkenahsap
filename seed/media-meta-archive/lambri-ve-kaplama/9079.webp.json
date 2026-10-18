@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/9079.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bej boyalı kaplamalı ahşap binanın pencereli cephesi",
+    "en": "Windowed facade of a beige-painted timber-clad building"
+  },
+  "alt": {
+    "tr": "Alttan görünen, bej boyalı yatay ahşap kaplamalı üç katlı bir binanın düzenli sıralı pencereli cephesi",
+    "en": "Facade of a three-storey beige-painted horizontal timber-clad building seen from below, with neatly aligned windows"
+  },
+  "caption": {
+    "tr": "Pencereler üç grup halinde sıralanıyor ve kaplamanın yatay çizgisi cepheyi boydan boya sarıyor.",
+    "en": "The windows are arranged in three groups, and the horizontal lines of the cladding run across the whole facade."
+  },
+  "seoFilename": "bej-boyali-yatay-kaplamali-ahsap-binanin-pencereli-cephesi",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

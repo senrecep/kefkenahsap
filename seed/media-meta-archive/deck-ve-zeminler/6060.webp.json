@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/6060.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yarısı koyulaştırılmış, yarısı ham deck",
+    "en": "Deck half darkened, half raw"
+  },
+  "alt": {
+    "tr": "Deck yüzeyinin üst yarısı koyu bir koruyucuyla işlenmiş, alt yarısı henüz ham; köşede lavanta ve yerde ince bir ip",
+    "en": "The upper half of the deck surface treated with a dark protector and the lower half still raw, with lavender in the corner"
+  },
+  "caption": {
+    "tr": "Çapraz döşenmiş tahtalarda iki ton arasındaki sınır net görünüyor. Sağda yüzeye gömülü bir kapak kenarı var.",
+    "en": "The line between the two tones shows clearly on the diagonally laid boards. The edge of a flush cover sits at the right."
+  },
+  "seoFilename": "deck-yuzeyinin-yarisi-koyu-yarisi-ham-ip-ve-lavanta",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

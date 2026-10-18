@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/11482.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sırtlıklı, kolçaklı ahşap bank, çapraz açıdan",
+    "en": "Timber bench with a back and arms, from a three-quarter angle"
+  },
+  "alt": {
+    "tr": "Sırtlıklı ve kolçaklı ahşap bank çapraz açıdan görünüyor; arkada ağaç, önünde yeşil zemin ve karo yol var",
+    "en": "A timber bench with a back and arms seen at an angle, with a tree behind and a green surface and tiled path in front"
+  },
+  "caption": {
+    "tr": "Bankın ayakları kalın, birleşim yerleri vidalı. Sırt tahtaları oturağa doğru hafif eğimli.",
+    "en": "The legs are thick and the joints are screwed. The back boards lean slightly toward the seat."
+  },
+  "seoFilename": "sirtlikli-kolcakli-ahsap-bank-dukkan-onu-capraz-gorunum",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

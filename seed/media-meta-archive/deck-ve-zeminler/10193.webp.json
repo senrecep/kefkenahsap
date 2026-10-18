@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/10193.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapı önünde alçak deck, kenarda basamak",
+    "en": "Low deck in front of a glass door with a small step"
+  },
+  "alt": {
+    "tr": "Binanın cam kapısı önünde, toprak zeminden hafif yükseltilmiş alçak ahşap deck; kenarda küçük bir basamak",
+    "en": "Low timber deck raised slightly above the soil in front of a building's glass door, with a small step at the edge"
+  },
+  "caption": {
+    "tr": "Deck kapıdan bahçeye doğru uzanıyor, altında kısa ayaklar var. Yeşil çit arkada duruyor.",
+    "en": "The deck extends from the door into the garden on short supports. A green hedge stands behind."
+  },
+  "seoFilename": "binanin-cam-kapisi-onunde-alcak-ahsap-deck-kenarda-kucuk",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

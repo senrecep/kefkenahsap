@@ -1,0 +1,39 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/10717.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kare ve dikdörtgen çiçeklik kutuları",
+    "en": "Square and rectangular planter boxes"
+  },
+  "alt": {
+    "tr": "Kare ve dikdörtgen biçimli ahşap çiçeklik kutuları, bir kısmı üst üste istiflenmiş",
+    "en": "Square and rectangular timber planter boxes, some stacked on top of each other"
+  },
+  "caption": {
+    "tr": "Kutuların içi siyah astarlı, köşeleri kalın direkli. Arkada apartman binaları görünüyor.",
+    "en": "The boxes have black liners and thick corner posts. Apartment buildings are visible behind."
+  },
+  "seoFilename": "kare-ve-dikdortgen-ahsap-ciceklik-kutulari-istif",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

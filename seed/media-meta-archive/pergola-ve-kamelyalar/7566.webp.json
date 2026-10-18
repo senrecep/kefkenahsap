@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/7566.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Aşağıdan görünen çıtalı ahşap tavan ve metal taşıyıcılar",
+    "en": "Slatted timber ceiling seen from below with metal beams"
+  },
+  "alt": {
+    "tr": "Aşağıdan bakıldığında metal taşıyıcı kirişlerin arasında sıralanan ahşap çıtalar ve aralarından geçen ışık",
+    "en": "Looking up at timber slats running between metal beams, with light coming through the gaps"
+  },
+  "caption": {
+    "tr": "Çıtalar metal kirişlere dik uzanıyor ve aralarında boşluk bırakılmış. Gölgelik bu aralıklarla ışığı süzüyor.",
+    "en": "The slats run across the metal beams with gaps between them. The canopy filters light through those gaps."
+  },
+  "seoFilename": "asagidan-gorunen-citali-ahsap-tavan-metal-kiris",
+  "tags": {
+    "type": [
+      "pergola",
+      "tavan kaplaması / lambri"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

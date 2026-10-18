@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/950.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Işıklı direkler arasında basamaklı ahşap yürüyüş yolu",
+    "en": "Timber walkway with steps between lamp posts"
+  },
+  "alt": {
+    "tr": "Çatılı bir girişten çimenliğe uzanan ahşap yürüyüş yolu; iki yanda ahşap korkuluk, aydınlatma direkleri ve basamaklar",
+    "en": "Timber walkway from a roofed entrance out to the lawn, with timber railings, lamp posts and steps either side"
+  },
+  "caption": {
+    "tr": "Yol sundurmanın önünden başlıyor, basamakla çimenliğe iniyor. Kenarlarda korkuluk ve lamba direkleri var.",
+    "en": "The path starts in front of the porch and steps down to the lawn. Railings and lamp posts line the sides."
+  },
+  "seoFilename": "isikli-direkler-arasinda-basamakli-yuruyus-yolu",
+  "tags": {
+    "type": [
+      "yürüyüş yolu",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

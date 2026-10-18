@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/15059.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Geniş tahta parke ve basamak kenarı",
+    "en": "Wide-plank floor and step edge"
+  },
+  "alt": {
+    "tr": "Açık renkli, geniş tahtalı ahşap zemin ve üzerine çıkan ahşap bir basamağın köşesi, yakın çekim",
+    "en": "Close-up of a pale wide-plank timber floor and the corner of a timber step rising from it"
+  },
+  "caption": {
+    "tr": "Zemin tahtalarında damar ve bir budak izi seçiliyor. Basamak zeminle uyumlu, biraz daha koyu tonda.",
+    "en": "Grain and a knot mark can be seen on the floor planks. The step matches the floor in a slightly darker tone."
+  },
+  "seoFilename": "genis-tahta-parke-ve-ahsap-basamak-kenari-yakin-plan",
+  "tags": {
+    "type": [
+      "parke / iç zemin"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

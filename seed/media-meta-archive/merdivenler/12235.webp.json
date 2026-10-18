@@ -1,0 +1,41 @@
+{
+  "source": "Merdivenler/12235.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deck platformuna çıkan çıtalı korkuluklu merdiven",
+    "en": "Stairs with a slatted railing up to a deck platform"
+  },
+  "alt": {
+    "tr": "Yükseltilmiş deck platformuna çıkan, dikey çıtalı korkuluklu açık renkli ahşap merdiven",
+    "en": "Light timber stairs with a vertical-slat railing leading up to a raised deck platform"
+  },
+  "caption": {
+    "tr": "Basamaklar toprak zeminden platforma çıkıyor. Korkuluk dikey çıtalarla yapılmış, platformun altı tahtayla kapatılmış.",
+    "en": "The steps rise from the bare ground to the platform. The railing has vertical slats and the underside of the platform is boarded in."
+  },
+  "seoFilename": "deck-platformuna-cikan-citali-korkuluklu-merdiven",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Mobilya ve Cila/13132.webp",
+  "category": "mutfak-ve-gomme-dolap",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Açık renk ahşap mutfak dolapları ve cam kapaklı üst modüller",
+    "en": "Light timber kitchen cabinets with glazed upper units"
+  },
+  "alt": {
+    "tr": "Bal rengi ahşap mutfak dolapları, cam kapaklı üst modüller, çekmeceler ve tezgâh arkasında mozaik karo",
+    "en": "Honey-toned timber kitchen cabinets with glazed upper doors, drawers and mosaic tiles behind the worktop"
+  },
+  "caption": {
+    "tr": "Alt dolaplarda kapaklar ve üç çekmece var, üst sırada cam kapaklı modüller yer alıyor. Pencere ile dolap sırası aynı hatta.",
+    "en": "The base units have doors and three drawers, and the glazed units run along the top. The window sits in line with the cabinet run."
+  },
+  "seoFilename": "acik-renk-ahsap-mutfak-dolaplari-cam-kapakli",
+  "tags": {
+    "type": [
+      "mutfak dolabı"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

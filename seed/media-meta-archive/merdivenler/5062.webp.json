@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/5062.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Merdiven altı yatay tahta kaplama ve küçük kapak",
+    "en": "Horizontal boarding under the stairs with a small hatch"
+  },
+  "alt": {
+    "tr": "Merdivenin altı yatay tahtayla kaplanmış, köşede küçük bir kapak ve kulp; solda basamaklar",
+    "en": "The underside of the stairs boarded in horizontally, with a small hatch and handle in the corner and the steps on the left"
+  },
+  "caption": {
+    "tr": "Merdiven altı depo gibi kullanılıyor. Tahta kaplamanın içine küçük bir kapak yerleştirilmiş.",
+    "en": "The space under the stairs is used as storage. A small hatch is set into the boarding."
+  },
+  "seoFilename": "merdiven-alti-yatay-tahta-kaplama-kucuk-kapak",
+  "tags": {
+    "type": [
+      "merdiven",
+      "gömme dolap / gardırop"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

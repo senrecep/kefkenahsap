@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/5015.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Koyu kahve deck, köşe bank ve ahşap fener",
+    "en": "Dark brown deck, corner bench and timber lantern"
+  },
+  "alt": {
+    "tr": "Havuz kenarında koyu kahverengi deck üzerinde köşe bank, alçak masa ve kademeli ahşap fener",
+    "en": "Corner bench, low table and a stepped timber lantern on a dark brown deck at the pool edge"
+  },
+  "caption": {
+    "tr": "Banklar dikey çıtalı sırtlıklarla platformu çevreliyor. Deck tahtaları çapraz döşenmiş ve yüzeyde gölgeler var.",
+    "en": "The benches enclose the platform with vertical-slat backs. The deck boards are laid on a diagonal and shadows fall across the surface."
+  },
+  "seoFilename": "koyu-kahve-deck-kose-bank-alcak-masa-ve-ahsap-fener",
+  "tags": {
+    "type": [
+      "deck",
+      "bank",
+      "sehpa"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

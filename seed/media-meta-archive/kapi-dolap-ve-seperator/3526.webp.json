@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/3526.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yatay tahtalı koyu ahşap çift kanatlı kapı ve sürgü",
+    "en": "Dark double door of horizontal boards with a slide bolt"
+  },
+  "alt": {
+    "tr": "Yatay tahtalarla kaplı koyu kahve ahşap çift kanatlı kapı, iki metal kulp ve ortada sürgülü kilit",
+    "en": "Dark brown double timber door clad in horizontal boards, with two metal handles and a slide bolt in the middle"
+  },
+  "caption": {
+    "tr": "Kapı kanatları yatay tahtalarla kaplı ve koyu bir tonda. İki kulp ve bir sürgü yeterli kapatma sağlıyor.",
+    "en": "The door leaves are clad in horizontal boards in a dark tone. Two handles and a bolt do the closing."
+  },
+  "seoFilename": "yatay-tahtali-koyu-ahsap-cift-kanatli-kapi-surgu",
+  "tags": {
+    "type": [
+      "kapı"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

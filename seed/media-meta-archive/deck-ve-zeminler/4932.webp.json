@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/4932.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz kenarı platformu, basamak ve deck yolu",
+    "en": "Poolside platform, step and deck path"
+  },
+  "alt": {
+    "tr": "Havuz kenarında korkuluklu gri tonlu ahşap platform ve basamaklı bir kenar; önde çimenden havuza inen ızgaralı deck yolu",
+    "en": "Grey-toned timber platform with a railing at the pool edge and a stepped side"
+  },
+  "caption": {
+    "tr": "Platformun kenarındaki kademeli bloklar basamak olarak da işe yarıyor. Yol, havuzun ızgaralı kenar kanalına paralel ilerliyor.",
+    "en": "The stepped blocks at the platform edge also work as steps. The path runs parallel to the grated channel at the pool edge."
+  },
+  "seoFilename": "havuz-kenari-platform-basamak-korkuluk-ve-deck-yolu",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk",
+      "yürüyüş yolu"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

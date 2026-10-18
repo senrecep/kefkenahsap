@@ -1,0 +1,36 @@
+{
+  "file": "9cf7fc2e-b3a4-420c-9b30-7ef174096a93.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Siyah metal iskeletli ahşap yönetici ofisi",
+    "en": "Executive office with black metal frame and wood furniture"
+  },
+  "alt": {
+    "tr": "Siyah metal çerçeveli ahşap yönetici masası, gri koltuklar, kitaplık ve sehpalar bulunan koyu tonlu ofis odası",
+    "en": "Dark office with a wood-top desk on a black metal frame, gray armchairs, shelving unit, credenza and side tables"
+  },
+  "caption": {
+    "tr": "Siyah metal iskelet ile açık tonlu ahşap yüzeyleri birleştirdiğimiz ofis mobilyası: çalışma masası, yan dolap, kitaplık ve sehpalar aynı çizgide.",
+    "en": "Office furniture combining a black metal frame with light wood surfaces: desk, credenza, shelving unit and side tables in one matching design."
+  },
+  "seoFilename": "metal-iskeletli-ahsap-yonetici-ofisi-mobilyasi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "ofis",
+      "yönetici odası",
+      "iç mekan"
+    ],
+    "finish": [
+      "mat vernik",
+      "siyah metal iskelet"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

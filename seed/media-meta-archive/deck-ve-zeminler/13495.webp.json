@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/13495.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Pencere altındaki cam kapaklı boşluğu çevreleyen deck",
+    "en": "Deck framing a glass-covered opening below a window"
+  },
+  "alt": {
+    "tr": "Pencere altındaki cam kapaklı havalandırma boşluğunun etrafına döşenmiş açık renkli deck",
+    "en": "Pale deck laid around a glass-covered ventilation opening below a window"
+  },
+  "caption": {
+    "tr": "Tahtalar boşluğun kenarına göre kesilmiş, cam kapak deck ile aynı seviyede kalıyor. Alt kattaki pencereye ışık böylece ulaşıyor.",
+    "en": "The boards are cut to the edge of the opening and the glass cover sits level with the deck. Light still reaches the window on the lower floor."
+  },
+  "seoFilename": "pencere-altindaki-cam-kapakli-boslugu-cevreleyen-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

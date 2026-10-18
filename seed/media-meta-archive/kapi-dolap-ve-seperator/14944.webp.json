@@ -1,0 +1,38 @@
+{
+  "source": "Kapi Dolap ve Seperator/14944.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz çitin yanında duvara asılı kabinin yandan görünüşü",
+    "en": "Side view of a wall housing beside a white picket fence"
+  },
+  "alt": {
+    "tr": "Pembe cephede pencerenin yanında asılı, yanı yatay tahtalı beyaz ahşap kabin, yanında beyaz çit ve parke taşlı yol",
+    "en": "White timber wall housing with a horizontally boarded side hung beside a window on a pink facade"
+  },
+  "caption": {
+    "tr": "Kabinin yan yüzü yatay tahtalı, çatısı eğimli. Alt kısmında kablo geçişi için açıklık var.",
+    "en": "The side of the housing is boarded horizontally with a sloped roof. An opening at the bottom lets the cable through."
+  },
+  "seoFilename": "beyaz-citin-yaninda-duvara-asili-kabinin-yandan-gorunusu",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "giriş"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

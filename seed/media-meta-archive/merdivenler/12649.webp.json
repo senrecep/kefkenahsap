@@ -1,0 +1,33 @@
+{
+  "source": "Merdivenler/12649.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Çimenlikte bal rengi ahşap bahçe merdiveni",
+    "en": "Honey-toned timber garden staircase on a lawn"
+  },
+  "alt": {
+    "tr": "Çimenlik üzerinde duvara paralel yükselen, çapraz korkuluklu bal rengi ahşap merdiven",
+    "en": "Honey-toned timber staircase with cross-braced railings rising along a wall from the lawn"
+  },
+  "caption": {
+    "tr": "Bahçe duvarına paralel çıkan ahşap merdiven. Korkuluklardaki çapraz dikmeler basamak eğimini izliyor.",
+    "en": "A timber staircase climbing parallel to the garden wall, with cross braces in the railings following the slope of the steps."
+  },
+  "seoFilename": "bal-rengi-ahsap-bahce-merdiveni-cimen",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

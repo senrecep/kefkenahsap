@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/14446.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yatay tahtalı çift kapağın kulp ve damar ayrıntısı",
+    "en": "Handle and grain detail of a horizontal-board double door"
+  },
+  "alt": {
+    "tr": "Koyu kahve yatay tahtalarla kaplı çift kapağın yakın çekimi, ortada iki metal kulp ve sürgü, tahta damarı belirgin",
+    "en": "Close view of a double door clad in dark brown horizontal boards"
+  },
+  "caption": {
+    "tr": "Kapak tahtaları aynı genişlikte ve araları ince. Kulplar iki kanadın birleştiği yerde duruyor.",
+    "en": "The door boards are of equal width with narrow gaps. The handles sit where the two leaves meet."
+  },
+  "seoFilename": "yatay-tahtali-cift-kapagin-kulp-ve-damar-ayrintisi",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

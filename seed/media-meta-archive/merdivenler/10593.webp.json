@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/10593.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sahanlık korkuluğu ve aşağıdaki çim alan",
+    "en": "Landing railing and the lawn below"
+  },
+  "alt": {
+    "tr": "Üstten bakışla ahşap sahanlık, çaprazlı korkuluk ve aşağıda çim alan; yanda ev cephesi",
+    "en": "Top-down view of a timber landing with a cross-braced railing and a lawn below, with the house facade at the side"
+  },
+  "caption": {
+    "tr": "Sahanlığın tahtaları açık renkli, korkuluk kalın bir direkle bitiyor. Çimlik aşağıda uzanıyor.",
+    "en": "The landing boards are light and the railing ends in a thick post. The lawn stretches out below."
+  },
+  "seoFilename": "sahanlik-korkulugu-ve-asagidaki-cim-alan",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/11932.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölyede parlak vernikli, parça birleşimli renkli masa tablası",
+    "en": "Glossy-varnished patchwork-coloured table top in the workshop"
+  },
+  "alt": {
+    "tr": "Atölye tezgâhında duran, farklı tonlarda ahşap parçalarının yan yana birleştirilmesiyle yapılmış",
+    "en": "A rectangular table top on a workshop bench made of timber pieces in different tones, joined and glossy-varnished"
+  },
+  "caption": {
+    "tr": "Tabla, farklı renkteki ahşap parçalarının yan yana getirilmesiyle yapılmış. Parlak vernik renk farklarını belirginleştiriyor.",
+    "en": "The top is made by joining pieces of wood in different colours. The glossy varnish brings out the colour differences."
+  },
+  "seoFilename": "atolyede-parlak-vernikli-parca-birlesimli-renkli-masa",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

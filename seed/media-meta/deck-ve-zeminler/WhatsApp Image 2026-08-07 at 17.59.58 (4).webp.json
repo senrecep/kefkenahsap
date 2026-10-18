@@ -1,0 +1,36 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 17.59.58 (4).webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Balkonda bal rengi ahşap deck zemin",
+    "en": "Honey-toned wooden deck on a balcony"
+  },
+  "alt": {
+    "tr": "Cam kapılı bir balkonda, korkuluk gölgesi düşen bal rengi, parlak yüzeyli dar çıtalardan oluşan ahşap deck zemin",
+    "en": "Balcony with a glossy honey-brown wooden deck of narrow slats, with railing shadows falling across it beside glass doors"
+  },
+  "caption": {
+    "tr": "Balkon zemini dar çıtalı ahşap deck ile kaplandı. Üzerindeki cila ahşabın damar yapısını ve sıcak tonunu öne çıkarıyor.",
+    "en": "The balcony floor is covered with a narrow-slat wooden deck. The finish brings out the grain and warm tone of the wood."
+  },
+  "seoFilename": "balkon-ahsap-deck-zemin",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "balkon",
+      "teras",
+      "dış mekan"
+    ],
+    "finish": [
+      "cilalı",
+      "vernikli"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

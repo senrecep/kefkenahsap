@@ -1,0 +1,35 @@
+{
+  "file": "49-1.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede çatılı ahşap kamelya",
+    "en": "Wooden gazebo with roof in a garden"
+  },
+  "alt": {
+    "tr": "Bahçede dört kolonlu, kafes şeritli ve üst kısmı kule çatılı açık renkli ahşap kamelya, önünde yuvarlak budanmış bir ağaç var",
+    "en": "Light-colored wooden gazebo with four posts, slatted trim and a raised roof top, with a round-trimmed tree in front"
+  },
+  "caption": {
+    "tr": "Dört kolonlu, ortası yükseltilmiş çatılı ve ince çıtalı kafes detaylara sahip ahşap kamelya. Alt kısmı korkulukla çevrili, çevresi bitkilerle dolu bir bahçede duruyor.",
+    "en": "A four-post wooden gazebo with a raised center roof and fine slatted lattice details. It has a low railing around the base and stands in a garden full of plants."
+  },
+  "seoFilename": "bahce-ahsap-kamelya-kafes-detayli",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "açık hava",
+      "kamelya"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

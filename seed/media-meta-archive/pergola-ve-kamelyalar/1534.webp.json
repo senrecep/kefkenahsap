@@ -1,0 +1,41 @@
+{
+  "source": "Pergola ve Kamelyalar/1534.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Balkonun üzerinde ahşap pergola, kafes panel ve çapraz korkuluk",
+    "en": "Timber pergola over a balcony with a lattice panel and X-braced rail"
+  },
+  "alt": {
+    "tr": "Balkonun üzerine kurulu ahşap pergola, yan kafes panel, çapraz çıtalı korkuluk ve sıralı saksılar",
+    "en": "Timber pergola built over a balcony, with a side lattice panel, an X-braced railing and a row of flowerpots"
+  },
+  "caption": {
+    "tr": "Pergola balkonu çatı gibi örtüyor, yan taraftaki kafes panel mahremiyet veriyor. Korkulukta saksılar duruyor.",
+    "en": "The pergola covers the balcony like a roof, and the lattice panel at the side gives privacy. Flowerpots sit along the rail."
+  },
+  "seoFilename": "balkonun-uzerinde-ahsap-pergola-kafes-capraz-korkuluk",
+  "tags": {
+    "type": [
+      "pergola",
+      "korkuluk",
+      "kafes / paravan"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "balkon"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

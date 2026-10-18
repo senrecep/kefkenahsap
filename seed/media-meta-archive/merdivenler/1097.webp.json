@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/1097.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Merdiven altı yapısı ve yerde boya kutuları",
+    "en": "Under-structure of the stairs and paint tins on the ground"
+  },
+  "alt": {
+    "tr": "Platform ve merdivenin alt yapısında ahşap direkler, kirişler; yerde boya kutuları, arkada taş duvar",
+    "en": "Timber posts and beams in the substructure of a platform and stairs, with paint tins on the ground and a stone wall behind"
+  },
+  "caption": {
+    "tr": "Direkler ve kirişler platformu taşıyor. Yerdeki boya kutuları işin henüz bitmediğini gösteriyor.",
+    "en": "Posts and beams carry the platform. The paint tins on the ground show the job is not finished yet."
+  },
+  "seoFilename": "merdiven-alti-yapisi-direkler-yerde-boya-kutulari",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

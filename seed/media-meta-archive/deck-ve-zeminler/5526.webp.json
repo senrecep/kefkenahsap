@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/5526.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Plaj restoranında palmiye arkasında deck",
+    "en": "Deck behind a palm at a beach restaurant"
+  },
+  "alt": {
+    "tr": "Plaj restoranında bitkilerin ve palmiyenin arkasında kalan deck; üzerinde masalar ve sandalyeler",
+    "en": "Deck hidden behind plants and a palm at a beach restaurant, with tables and chairs on it"
+  },
+  "caption": {
+    "tr": "Deck karenin alt kısmında bitkilerle kapanıyor, görünen kısmı küçük. Arkada deniz ve şemsiyeler seçiliyor.",
+    "en": "The deck is covered by plants in the lower part of the frame and only a small part shows. The sea and parasols can be made out behind."
+  },
+  "seoFilename": "plaj-restoraninda-bitki-ve-palmiye-arkasinda-deck-ve-masalar",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.5
+}

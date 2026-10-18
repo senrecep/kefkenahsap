@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/1525.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Pembe villaya bitişik açık renkli ahşap pergola",
+    "en": "Light timber pergola attached to a pink villa"
+  },
+  "alt": {
+    "tr": "Pembe cepheli villaya bitişik açık renkli ahşap pergola, yan duvarda cam kapı ve bahçede limon ağacı",
+    "en": "Light timber pergola attached to a villa with a pink facade, with a glass door in the side wall and a lemon tree"
+  },
+  "caption": {
+    "tr": "Pergola kirişleri evin duvarına yaslı ve iki kalın direğe oturuyor. Altındaki sundurmalık alan bahçe kapısına açılıyor.",
+    "en": "The pergola beams lean on the house wall and rest on two thick posts. The covered area opens to the garden door."
+  },
+  "seoFilename": "pembe-villaya-bitisik-acik-renkli-ahsap-pergola",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

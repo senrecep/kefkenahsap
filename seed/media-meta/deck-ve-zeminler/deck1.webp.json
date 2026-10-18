@@ -1,0 +1,34 @@
+{
+  "file": "deck1.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Çelik konstrüksiyon üzerine ahşap deck montajı",
+    "en": "Wood deck installation on a steel frame"
+  },
+  "alt": {
+    "tr": "Bahçede kırmızı çelik iskelet üzerine döşenen ahşap deck; bir kısmı tahtalı, bir kısmı alt konstrüksiyon açıkta",
+    "en": "Garden deck being laid on a red steel frame, part covered with boards and part showing the bare substructure"
+  },
+  "caption": {
+    "tr": "Bahçedeki çelik taşıyıcının üzerine deck tahtaları döşenirken. Bir tarafta alt konstrüksiyon henüz açık duruyor.",
+    "en": "Deck boards going down over a steel frame in a garden. The substructure on one side is still uncovered."
+  },
+  "seoFilename": "celik-konstruksiyon-uzerine-ahsap-deck-montaji",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "çelik konstrüksiyon",
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.86
+}

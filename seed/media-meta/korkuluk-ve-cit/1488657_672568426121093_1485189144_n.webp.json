@@ -1,0 +1,35 @@
+{
+  "file": "1488657_672568426121093_1485189144_n.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Teras için tel dolgulu ahşap korkuluk",
+    "en": "Wooden terrace railing with wire mesh infill"
+  },
+  "alt": {
+    "tr": "Fayans terasta metal ayak plakalarıyla sabitlenmiş, tel örgü dolgulu açık renk ahşap korkuluk; arkada bahçe ve tepeler",
+    "en": "Light wooden terrace railing with wire mesh infill, fixed to the tiles with metal plates, garden and hills behind"
+  },
+  "caption": {
+    "tr": "Kalın ahşap direkler ve üst tutamakla çevrilmiş teras korkuluğu. Aralara çakılan tel örgü, manzarayı kapatmadan bahçeye bakan kenarı güvenceye alıyor.",
+    "en": "A terrace railing built from thick wooden posts and a top rail. The wire mesh between them keeps the garden-facing edge safe without blocking the view."
+  },
+  "seoFilename": "tel-dolgulu-ahsap-teras-korkuluk",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "teras",
+      "bahçe",
+      "villa"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

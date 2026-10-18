@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/11343.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Fayans üzerine serilmiş, rengi eşitlenmemiş ahşap çıtalar",
+    "en": "Unevenly toned timber slats laid over tile"
+  },
+  "alt": {
+    "tr": "Beyaz fayans zeminin üzerinde uzanan, sarıdan koyu kahveye değişen lekeli renkli ahşap tahta sırası",
+    "en": "Row of timber boards on a white tiled floor, mottled from yellow to dark brown"
+  },
+  "caption": {
+    "tr": "Tahtaların rengi henüz yeknesak değil, koyu lekeler görülüyor. Bitirme işlemi öncesi bir aşama.",
+    "en": "The boards are not yet an even colour and show dark streaks. This looks like a stage before the final coat."
+  },
+  "seoFilename": "fayans-uzerine-serilmis-lekeli-ahsap-citalar",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

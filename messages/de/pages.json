@@ -1,0 +1,40 @@
+{
+  "About": {
+    "title": "Über uns",
+    "metaDescription": "{company}: Holzterrassen, Pergolen, Treppen, Türen und Möbel, gefertigt in der {district, select, none {eigenen Werkstatt} other {Werkstatt in {district}}} und vor Ort montiert.",
+    "lead": "{company} fertigt Holzarbeiten in der eigenen Werkstatt und montiert sie vor Ort.",
+    "since": "Gegründet",
+    "founder": "Gründer",
+    "workshop": "Werkstatt",
+    "seeWork": "Unsere Arbeiten ansehen"
+  },
+  "Legal": {
+    "kvkkTitle": "Datenschutzhinweise (KVKK)",
+    "kvkkDescription": "Welche personenbezogenen Daten {company} über die Website und das Angebotsformular verarbeitet, zu welchem Zweck und wie lange, sowie Ihre Rechte nach Art. 11 KVKK.",
+    "cookiesTitle": "Cookie-Richtlinie",
+    "cookiesDescription": "Welche Cookies die Website von {company} verwendet und wie Sie Ihre Auswahl ändern.",
+    "updated": "Zuletzt aktualisiert: {date}"
+  },
+  "Search": {
+    "title": "Suche",
+    "titleFor": "Ergebnisse für „{q}“",
+    "label": "Website durchsuchen",
+    "placeholder": "z. B. Pergola, Iroko-Terrasse, Treppe",
+    "submit": "Suchen",
+    "tooShort": "Geben Sie mindestens 2 Buchstaben ein.",
+    "failed": "Die Suche ist gerade nicht möglich. Versuchen Sie es etwas später erneut.",
+    "categories": "Leistungen",
+    "images": "Fotos",
+    "projects": "Projekte",
+    "guides": "Ratgeber",
+    "empty": "Zu „{q}“ haben wir nichts gefunden. Versuchen Sie ein anderes Wort oder beschreiben Sie Ihr Vorhaben per WhatsApp.",
+    "browse": "Leistungen ansehen",
+    "count": "{count, plural, one {# Ergebnis} other {# Ergebnisse}}"
+  },
+  "NotFound": {
+    "title": "Diese Seite wurde nicht gefunden",
+    "body": "Die gesuchte Seite wurde vielleicht verschoben oder entfernt. Sie können unten suchen oder sich unsere Leistungen ansehen.",
+    "popular": "Leistungen",
+    "home": "Zur Startseite"
+  }
+}

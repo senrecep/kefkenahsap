@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/1772.webp",
+  "category": "ahsap-ev-ve-bungalov",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sundurma kolonunun arasından ahşap ev",
+    "en": "Timber house framed by a porch post"
+  },
+  "alt": {
+    "tr": "Ön plandaki ahşap sundurma kolonu ve çatısının arasından, taş basamaklı yamaçtaki ahşap eve bakış",
+    "en": "View of a timber house on a slope with stone steps, framed by a timber porch post and roof in the foreground"
+  },
+  "caption": {
+    "tr": "Ön planda kalın bir ahşap kolon ve sundurma çatısı var. Arkada yamaca oturan ev ile taş basamaklar görünüyor.",
+    "en": "A thick timber post and the porch roof fill the foreground. The house on the slope and the stone steps are behind."
+  },
+  "seoFilename": "sundurma-kolonu-arasindan-ahsap-ev",
+  "tags": {
+    "type": [
+      "ahşap ev / bungalov"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

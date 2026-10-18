@@ -1,0 +1,34 @@
+{
+  "file": "66.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ağaç gövdesini saran ahşap deck ve çapraz korkuluk",
+    "en": "Wooden deck with X-pattern railing built around a tree"
+  },
+  "alt": {
+    "tr": "Çam ormanında basamaklı ahşap deck, gövdesi zeminden geçen ağaç ve çapraz çıtalı ahşap korkuluk",
+    "en": "Stepped wooden deck in a pine forest with a tree trunk passing through it and an X-pattern wooden railing"
+  },
+  "caption": {
+    "tr": "Orman içindeki deck, ağaç kesilmeden gövdenin etrafı açılarak yapıldı. Çevresinde çapraz çıtalı korkuluk ve iki basamaklı bir iniş var.",
+    "en": "This forest deck was built around the tree without cutting it down. It has an X-pattern railing along the edge and a two-step landing."
+  },
+  "seoFilename": "capraz-korkuluklu-ahsap-deck-orman",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "orman",
+      "açık hava",
+      "deck",
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

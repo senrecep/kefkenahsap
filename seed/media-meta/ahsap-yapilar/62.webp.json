@@ -1,0 +1,36 @@
+{
+  "file": "62.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Kiremit çatılı iki katlı ev, koyu ahşap saçak ve pencere çerçeveleri",
+    "en": "Two-storey house with tiled roof and dark wooden eaves and window frames"
+  },
+  "alt": {
+    "tr": "Beyaz sıvalı, alt kısmı tuğla kaplı iki katlı evde kiremit çatı, koyu renk ahşap saçaklar ve ahşap pencere çerçeveleri",
+    "en": "Two-storey white-rendered house with brick base, tiled roof, dark wooden eaves and wooden window frames"
+  },
+  "caption": {
+    "tr": "Beyaz sıvalı ve alt kısmı tuğla kaplı evin çatı saçakları ile pencere çerçeveleri koyu renkli ahşapla yapıldı. Kiremit çatı katlı hatlarla ilerliyor, yanda beyaz bir baca yükseliyor. Dış cephe işleri sürüyor.",
+    "en": "The roof eaves and window frames of this white-rendered house with a brick base are made of dark-stained wood. The tiled roof steps down in several levels, with a tall white chimney at the side. Exterior work is still in progress."
+  },
+  "seoFilename": "kiremit-catili-ev-ahsap-sacak-pencere-cercevesi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "müstakil ev",
+      "dış cephe",
+      "çatı",
+      "saçak"
+    ],
+    "finish": [
+      "koyu vernik"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

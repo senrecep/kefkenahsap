@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/8227.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sarmaşık dibinde priz yanında küçük ahşap kutu ve spot lamba",
+    "en": "Small timber box and spotlight by a socket under the ivy"
+  },
+  "alt": {
+    "tr": "Sıvalı duvarda sarmaşığın yanında, priz ve kabloların bulunduğu noktada küçük ahşap kutu ve yerde bir bahçe spotu",
+    "en": "Small timber box on a rendered wall beside ivy next to a socket and cable, with a garden spotlight on the ground"
+  },
+  "caption": {
+    "tr": "Küçük kutu priz bağlantısını örtüyor. Spot lamba kablosu kutunun yanından geçiyor.",
+    "en": "The small box covers the socket connection. The spotlight cable passes beside it."
+  },
+  "seoFilename": "sarmasik-dibinde-priz-yaninda-kucuk-ahsap-kutu-spot-lamba",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

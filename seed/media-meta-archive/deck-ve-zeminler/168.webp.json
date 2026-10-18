@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/168.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çim kenarında X korkuluklu yüksek deck sundurması",
+    "en": "Raised deck porch with X railings at the lawn edge"
+  },
+  "alt": {
+    "tr": "Çimenlik kenarında bir binanın önünde çapraz X korkuluklu, pergola çatılı yükseltilmiş deck, altında çalılar",
+    "en": "Raised deck with X-pattern railings and a pergola roof in front of a building at a lawn edge, with shrubs below"
+  },
+  "caption": {
+    "tr": "Deck çimin üzerinde alçak bir platform gibi yükselmiş. Çapraz korkuluk cepheyi boydan boya takip ediyor.",
+    "en": "The deck stands above the lawn like a low platform. The cross railing follows the front along its whole length."
+  },
+  "seoFilename": "cim-kenarinda-x-korkuluklu-yuksek-deck-sundurmasi",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk",
+      "pergola"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe",
+      "ticari mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

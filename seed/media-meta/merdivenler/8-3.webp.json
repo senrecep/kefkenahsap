@@ -1,0 +1,38 @@
+{
+  "file": "8-3.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe katı için çapraz korkuluklu ahşap dış merdiven",
+    "en": "Outdoor wooden staircase with cross-pattern railing"
+  },
+  "alt": {
+    "tr": "Villa bahçesinde çapraz çıtalı korkuluğu olan, yanı ahşap kaplı açık hava merdiveni ve arkasında çit ile servi ağaçları",
+    "en": "Outdoor wooden stairs with a cross-slat railing and clad sides in a villa garden, with a fence and cypress trees behind"
+  },
+  "caption": {
+    "tr": "Bahçeden üst kata çıkan merdiveni açık havaya uygun ahşapla yaptık. Korkuluk çapraz çıtalardan oluşuyor, merdivenin yan ve alt kısmı yatay tahtalarla kapatıldı.",
+    "en": "This exterior staircase connects the garden to the upper level. The railing is built from crossed slats, and the sides and underside are closed in with horizontal boards."
+  },
+  "seoFilename": "capraz-korkuluklu-ahsap-dis-merdiven",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "villa",
+      "dış mekan",
+      "site"
+    ],
+    "finish": [
+      "doğal ahşap tonu",
+      "çapraz korkuluk",
+      "yatay tahta kaplama"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

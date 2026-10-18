@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/3725.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kavisli platform, bank takımı ve şemsiye",
+    "en": "Curved platform, bench set and parasol"
+  },
+  "alt": {
+    "tr": "Havuza yarım daire biçiminde uzanan kavisli platform; üzerinde bank takımı, alçak masalar ve beyaz şemsiye, arkada villa",
+    "en": "Curved platform reaching into the pool in a half-round shape, with a bench set, low tables and a white parasol"
+  },
+  "caption": {
+    "tr": "Platform havuza bir dar deck geçidiyle bağlanıyor. Basamak blokları platformun ön kenarına yerleştirilmiş.",
+    "en": "The platform is linked to the pool edge by a narrow deck walkway. Step blocks are set along its front edge."
+  },
+  "seoFilename": "kavisli-platform-bank-takimi-ve-beyaz-semsiye-villa",
+  "tags": {
+    "type": [
+      "deck",
+      "bank",
+      "sehpa"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

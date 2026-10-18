@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/5854.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar ile cam kapı arasında gri deck",
+    "en": "Grey deck between a stone wall and a glass door"
+  },
+  "alt": {
+    "tr": "Taş duvar ve sürgülü cam kapı arasında uzanan, gri tonlu emprenyeli çam deck; arkada bahçenin yeşilliği görünüyor",
+    "en": "Grey-toned pressure-treated pine deck running between a stone wall and a sliding glass door"
+  },
+  "caption": {
+    "tr": "Tahtalar duvar boyunca uzanıyor ve yüzeyde ince çatlaklar belli oluyor. Duvarın üstündeki ahşap çıta alanı çevreliyor.",
+    "en": "The boards run along the wall and fine cracks show on the surface. The timber rail on top of the wall frames the space."
+  },
+  "seoFilename": "tas-duvar-ile-cam-kapi-arasinda-uzanan-gri-tonlu-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

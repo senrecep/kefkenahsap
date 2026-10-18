@@ -1,0 +1,37 @@
+{
+  "file": "11351411_958666537511279_1678817804970034383_n.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Yatay çıtalı ahşap kaplamalı WC ve lavabo kabini",
+    "en": "Slatted wood-clad toilet and washbasin enclosure"
+  },
+  "alt": {
+    "tr": "Yatay ahşap çıtalarla kaplanmış, üstü çıtalı örtülü açık girişli WC ve lavabo kabini; önünde taş döşeli zemin var",
+    "en": "Toilet and washbasin enclosure clad in horizontal wood slats with a slatted roof, open front and stone paving outside"
+  },
+  "caption": {
+    "tr": "Siyah metal çerçeveye oturtulmuş yatay ahşap çıtalı duvarlar ve çıtalı çatıyla yapılmış açık alan WC ve lavabo kabini.",
+    "en": "An outdoor toilet and washbasin unit built with horizontal wood slat walls and a slatted roof on a black metal frame."
+  },
+  "seoFilename": "yatay-citali-ahsap-kaplamali-wc-lavabo-kabini",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "outdoor",
+      "garden",
+      "public-facility"
+    ],
+    "finish": [
+      "horizontal-slats",
+      "black-metal-frame",
+      "natural-tone"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

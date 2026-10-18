@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/10084.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Duvar kenarında ıslak deck tahtaları, yakın çekim",
+    "en": "Wet deck boards beside a wall, close-up"
+  },
+  "alt": {
+    "tr": "Duvar kenarında ıslak ve parlak ahşap deck tahtalarının yakın çekimi",
+    "en": "Close-up of wet, shining timber deck boards beside a wall"
+  },
+  "caption": {
+    "tr": "Su tahtaların damarını ve budak izlerini öne çıkarıyor. Tahtalar arasında düzgün aralık var.",
+    "en": "The water brings out the grain and knots of the boards. There is an even gap between them."
+  },
+  "seoFilename": "duvar-kenarinda-islak-ahsap-deck-tahtalari-yakin-cekim",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

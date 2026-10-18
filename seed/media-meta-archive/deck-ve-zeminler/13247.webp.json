@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/13247.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bitkili duvar önünde direk yanında oluklu deck zemini",
+    "en": "Grooved decking by a post in front of a planted wall"
+  },
+  "alt": {
+    "tr": "Bitkili duvarın önünde, direk yanında kahverengi, oluklu deck zemini",
+    "en": "Brown grooved decking beside a post in front of a planted wall"
+  },
+  "caption": {
+    "tr": "Tahtalar dar ve oluklu, direğin dibinde sonlanıyor. Arkada gri taş fayanslı bir duvar ve çalılar var.",
+    "en": "The boards are narrow and grooved and end at the foot of the post. A wall of grey tiles and shrubs stands behind."
+  },
+  "seoFilename": "bitkili-duvar-onunde-direk-yaninda-oluklu-deck-zemini",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

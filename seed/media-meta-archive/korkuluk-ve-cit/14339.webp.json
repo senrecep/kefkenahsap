@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14339.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kaldırımda yandan görünen uzun çiçeklik ve yatay çıtalı paravan",
+    "en": "Long planter with a horizontal-slat screen seen from the side on the pavement"
+  },
+  "alt": {
+    "tr": "Kaldırımda yandan görünen, yatay çıtalı paravan monteli uzun ahşap çiçeklik; arkada dükkan camı ve yan binanın girişi",
+    "en": "A long timber planter with a horizontal-slat screen fixed on it, seen from the side on the pavement"
+  },
+  "caption": {
+    "tr": "Çiçeklik dar kaldırımın boyunca uzanıyor, paravan kutunun arka kenarında yükseliyor. Başka bir çiçeklik solda köşeden görünüyor.",
+    "en": "The planter runs along the narrow pavement, with the screen rising from the back edge of the box. Another planter is visible at the left corner."
+  },
+  "seoFilename": "kaldirimda-yandan-gorunen-uzun-ciceklik-paravan",
+  "tags": {
+    "type": [
+      "kafes / paravan",
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

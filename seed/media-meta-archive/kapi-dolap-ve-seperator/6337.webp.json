@@ -1,0 +1,35 @@
+{
+  "source": "Kapi Dolap ve Seperator/6337.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Çatı terasında çapraz desenli ahşap paravan",
+    "en": "Cross-braced timber screen on a roof terrace"
+  },
+  "alt": {
+    "tr": "Kiremit çatılar arasında, yatay tahtalar üzerine çapraz çıtalı ahşap paravan",
+    "en": "Timber screen of horizontal boards with a cross brace, set between tiled roofs"
+  },
+  "caption": {
+    "tr": "Çatı terasındaki paravan yatay tahtalardan yapıldı, ön yüzü çapraz çıtalarla bölündü.",
+    "en": "The screen on the roof terrace is built from horizontal boards with a cross brace across the front."
+  },
+  "seoFilename": "cati-terasi-capraz-desenli-ahsap-paravan",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "çatı terası",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

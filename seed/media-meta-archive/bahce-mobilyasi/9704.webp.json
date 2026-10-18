@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/9704.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ahşap masa üstü ve sandalye sırtlıkları, yukarıdan",
+    "en": "Timber table top and chair backs from above"
+  },
+  "alt": {
+    "tr": "Yukarıdan, ortasında şemsiye deliği olan çıtalı ahşap masa tablası ve önünde çıtalı sandalye sırtlıkları",
+    "en": "From above, the slatted top of a timber table with a parasol hole in the middle and the slatted backs of chairs in front"
+  },
+  "caption": {
+    "tr": "Masanın ortasındaki delik güneş şemsiyesi için ayrılmış. Çıtalar arasındaki aralık yağmur suyunu süzüyor.",
+    "en": "The hole in the middle of the table is for a parasol. The gaps between the slats let rainwater drain."
+  },
+  "seoFilename": "ahsap-masa-ustu-ve-sandalye-sirtliklari-yukaridan-kirmizimsi",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

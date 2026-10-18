@@ -1,0 +1,35 @@
+{
+  "source": "Kapi Dolap ve Seperator/8324.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Doğal kenarlı kalın masa tablası, damar ayrıntısı",
+    "en": "Thick live-edge table slab showing figured grain"
+  },
+  "alt": {
+    "tr": "Beton atölye zemininde yatan, doğal kenarlı, çatlak ve damarları belirgin altın kahve kalın ahşap masa tablası",
+    "en": "Thick golden-brown timber table slab lying on a concrete workshop floor, with natural edges and distinct cracks and grain"
+  },
+  "caption": {
+    "tr": "Tablanın kenarı kütüğün doğal hattını koruyor. Yüzeyde çatlak ve damar çizgileri belirgin.",
+    "en": "The edge of the slab keeps the natural line of the log. Cracks and grain lines show clearly on the surface."
+  },
+  "seoFilename": "dogal-kenarli-kalin-masa-tablasi-damar-ayrintisi",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.5
+}

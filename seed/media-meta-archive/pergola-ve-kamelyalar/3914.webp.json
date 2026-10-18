@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/3914.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz kenarında duvara bitişik pergola ve uzun ahşap saksılık",
+    "en": "Pergola against a wall by a pool with a long timber planter"
+  },
+  "alt": {
+    "tr": "Havuz kenarında duvara yaslanan açık renk ahşap pergola ve altında uzun bitkilik, arkada kiremit çatılı evler",
+    "en": "Light timber pergola leaning on a wall beside a pool, with a long planter beneath and tile-roofed houses behind"
+  },
+  "caption": {
+    "tr": "Pergola kirişleri duvardan havuza doğru uzanıyor. Duvar dibinde uzun, ahşap kaplı bir saksılık duruyor.",
+    "en": "The pergola beams reach out from the wall toward the pool. A long timber-clad planter runs along the wall's foot."
+  },
+  "seoFilename": "havuz-kenarinda-duvara-bitisik-pergola-saksilik",
+  "tags": {
+    "type": [
+      "pergola",
+      "çiçeklik / saksı"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

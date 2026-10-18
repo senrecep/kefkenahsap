@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/10839.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yukarıdan görünen avluda küçük çizgili deck",
+    "en": "Small striped deck in a courtyard seen from above"
+  },
+  "alt": {
+    "tr": "Çimenlik avluda palmiyelerin yanında duran küçük çizgili ahşap deck; yukarıdan görünüm",
+    "en": "Small striped timber deck next to palm trees in a lawned courtyard, seen from above"
+  },
+  "caption": {
+    "tr": "Deck çimin ortasına bir kilim gibi serilmiş, çevresinde kablolar uzanıyor. Üstte beton duvar ve cam korkuluk var.",
+    "en": "The deck is laid in the middle of the lawn like a rug with cables running around it. A concrete wall and a glass balustrade are above."
+  },
+  "seoFilename": "yukaridan-gorunen-cimenlik-avluda-kucuk-cizgili-ahsap-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

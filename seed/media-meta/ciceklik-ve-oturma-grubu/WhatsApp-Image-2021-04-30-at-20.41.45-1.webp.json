@@ -1,0 +1,36 @@
+{
+  "file": "WhatsApp-Image-2021-04-30-at-20.41.45-1.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Antrasit ahşap bahçe saksısı",
+    "en": "Anthracite wooden garden planter box"
+  },
+  "alt": {
+    "tr": "Taş teras kenarında duran, içinde yeşil bitkiler bulunan koyu gri ahşap saksı.",
+    "en": "Dark gray rectangular wooden planter box with green shrubs on a stone patio."
+  },
+  "caption": {
+    "tr": "Bahçe ve taş teras arasına yerleştirilen, antrasit renkte koruyucu dış cephe boyası uygulanmış dikdörtgen ahşap çiçeklik.",
+    "en": "A rectangular wooden planter box finished in anthracite exterior paint, placed between the garden lawn and stone patio."
+  },
+  "seoFilename": "antrasit-ahsap-bahce-saksisi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras",
+      "dış mekan"
+    ],
+    "finish": [
+      "boyalı",
+      "antrasit"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

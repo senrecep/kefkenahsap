@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/1547.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kırmızı çatılı dikdörtgen kamelya, kafes panelli alçak duvar",
+    "en": "Rectangular red-roofed gazebo with lattice half walls"
+  },
+  "alt": {
+    "tr": "Kırmızı çatılı uzun dikdörtgen kamelya, kafes panelli alçak duvarlar, arkada elektrik direkleri ve yol",
+    "en": "Long rectangular gazebo with a red roof and lattice half walls, with pylons and a road behind"
+  },
+  "caption": {
+    "tr": "Kamelya beton bir zemine oturuyor, alt kısımları kafes paneller kapatıyor. Çatı kenarı dalgalı bir bitişe sahip.",
+    "en": "The gazebo sits on a concrete floor with lattice panels closing the lower sections. The roof edge has a wavy finish."
+  },
+  "seoFilename": "kirmizi-catili-dikdortgen-kamelya-kafes-panelli",
+  "tags": {
+    "type": [
+      "kamelya",
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

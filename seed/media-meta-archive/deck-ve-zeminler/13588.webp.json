@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/13588.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Tozlu koyu renkli eski ahşap zemin",
+    "en": "Dusty old dark timber floor"
+  },
+  "alt": {
+    "tr": "Tozlu, koyu renkli eski ahşap zemin; arkada beyaz dolaplar ve pencere",
+    "en": "Dusty old dark timber floor with white cupboards and a window behind"
+  },
+  "caption": {
+    "tr": "Eski verniğin ve tozun altında tahtalar karardığı için yüzey donuk duruyor. Yenileme öncesi durum bu.",
+    "en": "Under the old varnish and dust the boards have darkened, so the surface looks dull. This is the state before renewal."
+  },
+  "seoFilename": "tozlu-koyu-renkli-eski-ahsap-zemin",
+  "tags": {
+    "type": [
+      "parke / iç zemin"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

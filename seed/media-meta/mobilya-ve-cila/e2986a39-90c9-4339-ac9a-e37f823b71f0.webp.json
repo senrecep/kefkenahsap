@@ -1,0 +1,35 @@
+{
+  "file": "e2986a39-90c9-4339-ac9a-e37f823b71f0.webp",
+  "category": "mobilya-ve-cila",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Özel tasarım ahşap ofis masası ve dolap ünitesi",
+    "en": "Custom wooden office desk and cabinet unit"
+  },
+  "alt": {
+    "tr": "Modern ofis odasında siyah metal iskeletli ahşap çalışma masası, arkasında kitaplık ve koltuklar.",
+    "en": "Wooden executive desk with black metal frame, background shelving, and chairs in a modern office."
+  },
+  "caption": {
+    "tr": "Modern ofisler için metal ayaklı ahşap çalışma masası ve arka duvarda raflı dolap ünitesi uygulamamız tamamlandı.",
+    "en": "Our custom wood and metal executive desk with a matching shelving and cabinet unit completed for a modern office."
+  },
+  "seoFilename": "ahsap-metal-ofis-calisma-masasi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "ofis",
+      "çalışma odası",
+      "iç mekan"
+    ],
+    "finish": [
+      "mat cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

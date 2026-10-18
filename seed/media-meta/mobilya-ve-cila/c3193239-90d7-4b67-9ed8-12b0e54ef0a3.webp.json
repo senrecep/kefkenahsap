@@ -1,0 +1,36 @@
+{
+  "file": "c3193239-90d7-4b67-9ed8-12b0e54ef0a3.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ofis girişinde siyah çerçeveli cam bölme ve dikey çıtalı panel",
+    "en": "Black-framed glass partition and vertical slat panel at an office entrance"
+  },
+  "alt": {
+    "tr": "Siyah çerçeveli cam bölmenin ardında toplantı masası ve sandalyeler; solda koyu renk dikey çıtalı ahşap panel var.",
+    "en": "Meeting table and chairs behind a black-framed glass partition, with a dark vertical slat wood panel on the left."
+  },
+  "caption": {
+    "tr": "Ofis girişinde siyah metal çerçeveli cam bölme ve yanında koyu boyalı dikey çıtalı panel. İçeride ahşap kaplı çalışma masası görünüyor.",
+    "en": "A glass partition with black metal frames at an office entrance, next to a dark-finished vertical slat panel. A wood-clad work desk is visible inside."
+  },
+  "seoFilename": "ofis-cam-bolme-dikey-citali-panel",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "ofis",
+      "iç mekan",
+      "toplantı odası"
+    ],
+    "finish": [
+      "koyu boya",
+      "mat cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.55
+}

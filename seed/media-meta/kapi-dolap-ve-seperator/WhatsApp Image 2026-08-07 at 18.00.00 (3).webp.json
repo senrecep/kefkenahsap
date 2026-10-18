@@ -1,0 +1,37 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 18.00.00 (3).webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Jaluzi panjurlu beyaz dış mekan dolap kapıları",
+    "en": "White louvered outdoor cabinet doors"
+  },
+  "alt": {
+    "tr": "Bahçe yolunda duran, siyah dövme menteşe ve kulplu, jaluzi panjur dolgulu beyaz boyalı ahşap dolap kapıları",
+    "en": "White painted wooden cabinet doors with louvered panels and black wrought-iron hinges and handles beside a stone garden path"
+  },
+  "caption": {
+    "tr": "Dış mekan için yapılan beyaz boyalı, jaluzi dolgulu dolap kapıları. Siyah el işi görünümlü menteşe ve kulplar beyaz yüzeyle güzel bir tezat oluşturuyor.",
+    "en": "White painted outdoor cabinet doors with louvered panels. The black wrought-iron style hinges and handles contrast nicely with the white surface."
+  },
+  "seoFilename": "jaluzi-panjurlu-beyaz-dis-mekan-dolap-kapilari",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "dış mekan",
+      "bahçe",
+      "dolap kapısı"
+    ],
+    "finish": [
+      "beyaz boya",
+      "siyah demir menteşe",
+      "jaluzi panjur"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

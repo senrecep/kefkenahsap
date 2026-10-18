@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14237.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yeşil deck üzerinde hamak ve taş basamak",
+    "en": "Green deck with a hammock and stone steps"
+  },
+  "alt": {
+    "tr": "Çam ağaçları ve çalılar arasında yeşile boyanmış deck, kenarında taş basamaklar, arkada asılı bir hamak",
+    "en": "Green-painted deck among pines and shrubs, with stone steps at its edge and a hammock hung behind"
+  },
+  "caption": {
+    "tr": "Deck köşeli hatlarla ağaçların arasından geçiyor. Taş basamaklar bahçeden deck seviyesine iniyor.",
+    "en": "The deck passes between the trees in angular lines. Stone steps lead from the garden up to the deck level."
+  },
+  "seoFilename": "yesil-deck-uzerinde-hamak-ve-tas-basamak",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "orman / kır"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

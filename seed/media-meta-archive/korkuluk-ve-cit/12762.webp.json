@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/12762.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Panjurlu pencere yanında beyaz boyalı ayaklı kafes panel",
+    "en": "White-painted lattice panel on feet beside a shuttered window"
+  },
+  "alt": {
+    "tr": "Panjurlu pencerenin ve camlı kapının yanında, terasta duran beyaz boyalı çaprazlı kafes panel; yan taraftan görünüş",
+    "en": "A white-painted diagonal lattice panel on the terrace beside a shuttered window and a glazed door, seen from the side"
+  },
+  "caption": {
+    "tr": "Panel pencereden bir adım ileride duruyor. Yan açıdan ayağı ve çerçevenin kalınlığı seçiliyor.",
+    "en": "The panel stands a step in front of the window. Its foot and the thickness of the frame are visible from the side."
+  },
+  "seoFilename": "panjurlu-pencere-yaninda-beyaz-boyali-ayakli-panel",
+  "tags": {
+    "type": [
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,40 @@
+{
+  "source": "Deck ve Zeminler/8168.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz merdiveninin yanından çime inen deck şeridi",
+    "en": "Deck strip running from the pool ladder to the lawn"
+  },
+  "alt": {
+    "tr": "Havuz kenarında turuncu kahve deck şeridi, solda havuz merdiveni, sağda çim ve arkada fidanlar",
+    "en": "Orange-brown deck strip along a pool, with the pool ladder on the left, lawn on the right and young trees behind"
+  },
+  "caption": {
+    "tr": "Deck şeridi havuzla çim arasında düz bir hatla uzanıyor. Tahta araları eşit.",
+    "en": "The deck strip runs in a straight line between pool and lawn, with even gaps between boards."
+  },
+  "seoFilename": "havuz-merdiveni-yanindan-cime-inen-deck-seridi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "havuz kenarı",
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

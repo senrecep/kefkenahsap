@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/15181.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam cepheli alanda beton zemin ve deck kenarı",
+    "en": "Concrete floor and deck edge in a glass-fronted area"
+  },
+  "alt": {
+    "tr": "Cam cepheli alanın önünde ıslak gri beton zemin ve sol kenarda koyu kırmızı kahverengi deck; arkada kablolar ve borular",
+    "en": "Wet grey concrete floor in front of a glass-fronted area, with dark red-brown deck on the left edge and cables"
+  },
+  "caption": {
+    "tr": "Deck betonun kenarında düz bir hatla bitiyor. Camın dibindeki toprak şeritte kablo ve borular açıkta duruyor.",
+    "en": "The deck ends in a straight line at the edge of the concrete. Cables and pipes lie exposed in the soil strip at the foot of the glass."
+  },
+  "seoFilename": "cam-cepheli-alanda-beton-zemin-ve-koyu-deck-kenari",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

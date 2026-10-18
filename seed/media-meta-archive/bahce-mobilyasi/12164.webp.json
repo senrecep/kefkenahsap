@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/12164.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş zeminde bir sıra kollu ahşap katlanır sandalye, arkasında kereste",
+    "en": "A row of folding timber armchairs on stone paving with lumber behind"
+  },
+  "alt": {
+    "tr": "Güneşli bir taş zeminde, yan yana dizilmiş kollu ve çıtalı sırtlı katlanır ahşap sandalyeler",
+    "en": "In sunlight on stone paving, a line of folding timber armchairs with slatted backs, with stacks of lumber behind"
+  },
+  "caption": {
+    "tr": "Sandalyeler tek bir sıra hâlinde duruyor. Hepsinin kolları geniş ve oturakları çıtalı.",
+    "en": "The chairs stand in a single line. All have wide arms and slatted seats."
+  },
+  "seoFilename": "tas-zeminde-bir-sira-ahsap-katlanir-kollu-sandalye-arkada",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

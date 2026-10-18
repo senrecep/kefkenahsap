@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/12901.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dikey şeritli ahşap panel önünde küçük ahşap bank",
+    "en": "Small timber bench in front of a vertical-strip timber panel"
+  },
+  "alt": {
+    "tr": "Beton zeminde, dikey ahşap şeritlerden oluşan geniş bir panelin önünde, aynı malzemeden yapılmış küçük bir bank duruyor",
+    "en": "On a concrete floor in front of a wide panel of vertical timber strips stands a small bench made from the same material"
+  },
+  "caption": {
+    "tr": "Bankın yüzeyi, arkasındaki panelle aynı farklı tonlu ahşap şeritlerden yapılmış. Küçük bir oturma köşesi gibi duruyor.",
+    "en": "The bench is made of the same multi-toned timber strips as the panel behind it. It reads as a small seating corner."
+  },
+  "seoFilename": "dikey-seritli-ahsap-panel-onunde-kucuk-ahsap-bank-beton",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

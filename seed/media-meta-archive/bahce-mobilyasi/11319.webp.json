@@ -1,0 +1,38 @@
+{
+  "source": "Ireko-Teak/11319.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar önünde sıralanmış turuncu kahve kolçaklı ahşap sandalyeler",
+    "en": "Orange-brown timber armchairs lined up in front of a stone wall"
+  },
+  "alt": {
+    "tr": "Taş duvarın önünde, karo zeminde art arda sıralanmış turuncu kahve vernikli katlanır ahşap kolçaklı sandalyeler",
+    "en": "Folding orange-brown varnished timber armchairs lined up on a tiled floor in front of a stone wall"
+  },
+  "caption": {
+    "tr": "Sandalyeler hep aynı vernik tonunda tamamlanmış ve katlanabiliyor. Sırtlıkları geriye yatık, kolçakları geniş.",
+    "en": "The chairs are all finished in the same varnish tone and fold. The backs lean back and the arms are wide."
+  },
+  "seoFilename": "tas-duvar-onunde-siralanmis-turuncu-kahve-kolcakli-ahsap",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "teras",
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,36 @@
+{
+  "file": "4cfce54c-4177-4a57-94e0-34fc0f335c48.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Beyaz çerçeveli kapaklı mutfak dolabı",
+    "en": "White shaker-style kitchen cabinets"
+  },
+  "alt": {
+    "tr": "Beyaz çerçeveli kapaklı mutfak dolapları, mermer desenli tezgah ve ocak, fırın ile gri camlı sarkıt lambalar",
+    "en": "White framed-door kitchen cabinets with a marble-look countertop, hob, oven and smoked glass pendant lights"
+  },
+  "caption": {
+    "tr": "Beyaz boyalı, çerçeveli kapaklı köşe mutfak dolabı. Çekmeceler ve üst dolaplar metal kulplu, tezgah ve arka tezgah aynı taş desenli.",
+    "en": "Corner kitchen with white painted framed-door cabinets and drawers, metal handles, and a matching stone-look countertop and backsplash."
+  },
+  "seoFilename": "beyaz-cerceveli-kapakli-mutfak-dolabi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "mutfak",
+      "iç mekan",
+      "köşe mutfak"
+    ],
+    "finish": [
+      "beyaz boya",
+      "mat cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

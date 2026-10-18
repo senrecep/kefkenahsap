@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/12785.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Koyu kırmızı kahverengi deck ve kenarda çiçeklik kutuları",
+    "en": "Dark red-brown deck with planter boxes along the edge"
+  },
+  "alt": {
+    "tr": "Koyu kırmızı kahverengi deck ve kenarında ahşap çiçeklik kutuları, sağda hortum ve bitkiler",
+    "en": "Dark red-brown deck with timber planter boxes along its edge, with a hose and plants at the right"
+  },
+  "caption": {
+    "tr": "Çiçeklik kutuları deck ile aynı koyu tonda yapılmış ve birbirine bağlanıyor. Ön tarafta çakıl dolgulu zemin açık duruyor.",
+    "en": "The planter boxes match the dark tone of the deck and join up in a row. The gravel-filled ground is still open in front."
+  },
+  "seoFilename": "koyu-kirmizi-kahverengi-deck-kenarda-ciceklik-kutulari",
+  "tags": {
+    "type": [
+      "deck",
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

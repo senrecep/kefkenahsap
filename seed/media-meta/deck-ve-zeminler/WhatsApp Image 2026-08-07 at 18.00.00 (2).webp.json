@@ -1,0 +1,36 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 18.00.00 (2).webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede ahşap zeminli oturma köşesi",
+    "en": "Sunken garden seating corner with wood decking"
+  },
+  "alt": {
+    "tr": "Beyaz duvarlı bahçe köşesinde koyu kızıl tonlu ahşap deck zemin, aynı ahşapla kaplı oturma bankı ve bahçe aydınlatmaları",
+    "en": "Garden corner with white walls, reddish-brown wood deck flooring, a matching wood bench and small garden lamps"
+  },
+  "caption": {
+    "tr": "Beyaz duvarlarla çevrili bahçe köşesinde ahşap deck zemin ve aynı ahşapla kaplanmış L biçimli oturma bankı. Duvar üstleri ve saksı kenarları da aynı ahşapla bitirildi.",
+    "en": "A garden corner enclosed by white walls, with wood deck flooring and an L-shaped bench in the same timber. The wall tops and planter edges are finished in matching wood."
+  },
+  "seoFilename": "bahce-ahsap-deck-oturma-kosesi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "oturma köşesi",
+      "teras"
+    ],
+    "finish": [
+      "vernikli",
+      "yağlı görünüm"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

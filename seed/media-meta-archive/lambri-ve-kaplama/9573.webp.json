@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/9573.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Örtülü terasta ahşap duvar ve kapı",
+    "en": "Timber wall and door on a covered terrace"
+  },
+  "alt": {
+    "tr": "Üstü örtülü terasta tahta duvar kaplaması ve çapraz çıtalı ahşap kapı; önünde masalar, yanda çöp kovası ve duvar lambaları",
+    "en": "Timber wall cladding and a cross-braced timber door on a roofed terrace, with tables in front"
+  },
+  "caption": {
+    "tr": "Teras kapalı bir çatının altında. Duvar tahtayla kaplı, kapı çapraz çıtalı. Önde ahşap masalar duruyor.",
+    "en": "The terrace sits under a roof. The wall is clad in timber and the door has a cross brace. Wooden tables stand in front."
+  },
+  "seoFilename": "ortulu-terasta-ahsap-duvar-kaplama-ve-kapi",
+  "tags": {
+    "type": [
+      "iç duvar kaplaması",
+      "kapı"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,37 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 18.00.36.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Kaldırım kenarında ahşap oturma bankı",
+    "en": "Wooden seating bench along the sidewalk"
+  },
+  "alt": {
+    "tr": "Kaldırım kenarında, siyah taş bir duvarın önüne yerleştirilmiş uzun ahşap oturma bankı; yanında park etmiş arabalar var",
+    "en": "Long wooden bench built against a dark stone wall on a sidewalk, with parked cars and shopfronts beside it"
+  },
+  "caption": {
+    "tr": "Cadde kenarındaki taş duvara oturtulmuş, ince çıtalı ahşap oturma bankı. Yürüyen ve bekleyenler için sade bir mola noktası.",
+    "en": "A slatted wooden bench set into a stone wall beside a city street, a simple resting spot for passers-by."
+  },
+  "seoFilename": "kaldirim-ahsap-oturma-banki",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "kaldırım",
+      "cadde",
+      "dış mekan",
+      "şehir mobilyası"
+    ],
+    "finish": [
+      "doğal ahşap tonu",
+      "vernikli"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

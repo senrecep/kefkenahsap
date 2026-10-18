@@ -1,0 +1,35 @@
+{
+  "source": "Ireko-Teak/15145.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölyede çıtalı şezlong ve çekmeceli parçalar",
+    "en": "Slatted lounger and drawer parts in the workshop"
+  },
+  "alt": {
+    "tr": "Atölye zemininde çıtalı ahşap şezlong gövdesi ve altında çekmeceli parçalar",
+    "en": "Slatted timber lounger body with drawer parts beneath it on the workshop floor"
+  },
+  "caption": {
+    "tr": "Şezlongun gövdesi çıtalı. Alt tarafında rayları görünen çekmeceli parçalar var.",
+    "en": "The lounger body is slatted. Underneath are drawer parts with visible runners."
+  },
+  "seoFilename": "atolyede-ahsap-sezlong-cekmeceli-parcalar",
+  "tags": {
+    "type": [
+      "şezlong"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.55
+}

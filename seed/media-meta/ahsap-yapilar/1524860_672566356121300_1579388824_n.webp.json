@@ -1,0 +1,36 @@
+{
+  "file": "1524860_672566356121300_1579388824_n.webp",
+  "category": "ahsap-yapilar",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ahşap çatı saçakları ve veranda sundurması",
+    "en": "Wooden roof eaves and porch canopy"
+  },
+  "alt": {
+    "tr": "Müstakil evin kiremit çatısı altında koyu renk ahşap saçaklar, pencere pervazları ve veranda sundurması.",
+    "en": "Dark wooden eaves, window frames, and a porch canopy on a detached tiled-roof house."
+  },
+  "caption": {
+    "tr": "Müstakil villa projesinde uygulanan ahşap çatı konstrüksiyonu, alın tahtaları, pencere söveleri ve kiremit kaplı veranda sundurması.",
+    "en": "Timber roof construction, fascia boards, window trims, and a tile-roofed porch canopy built for a private villa."
+  },
+  "seoFilename": "ahsap-cati-sacagi-ve-veranda-sundurmasi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "dış mekan",
+      "villa",
+      "bahçe"
+    ],
+    "finish": [
+      "koyu kahve boya",
+      "dış cephe verniği"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

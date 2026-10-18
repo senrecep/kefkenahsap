@@ -1,0 +1,38 @@
+{
+  "file": "940893e1-76bf-43e1-8bdb-330ba8a3aee7.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Çıtalı ön yüzlü resepsiyon tezgâhı",
+    "en": "Reception counter with fluted front panel"
+  },
+  "alt": {
+    "tr": "Dikey oluklu, metalik gri-altın tonlarda ön yüzü olan koyu çerçeveli tezgâh; yanında çiçek vazosu ve parke zemin var.",
+    "en": "Dark-framed counter with a vertically fluted, metallic grey-gold front panel, a flower vase beside it and a wood floor."
+  },
+  "caption": {
+    "tr": "Dikey oluk işlemeli ön panel, koyu renkli çerçeve ve üst tabla ile hazırlanmış tezgâh. Yüzeydeki mat metalik boya ışığı yumuşak yansıtıyor.",
+    "en": "A counter with a vertically fluted front panel, a dark frame and a dark top. The matte metallic finish reflects light softly."
+  },
+  "seoFilename": "oluklu-panelli-resepsiyon-tezgahi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "resepsiyon",
+      "ofis",
+      "iç mekan"
+    ],
+    "finish": [
+      "metalik boya",
+      "mat cila",
+      "oluklu panel"
+    ],
+    "stage": [
+      "finished",
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,36 @@
+{
+  "source": "Ahsap Yapilar/4601.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz ahşap kaplamalı bina, taş kule ve cumbalı pencere",
+    "en": "White timber-clad building with a stone tower and an oriel window"
+  },
+  "alt": {
+    "tr": "Beyaz boyalı ahşap kaplamalı yapının balkonu ve cumbalı penceresi, sağda taşla örülmüş bir kule ve önünde taş basamaklar",
+    "en": "Balcony and oriel window of a white-painted timber-clad building, with a stone-built tower on the right"
+  },
+  "caption": {
+    "tr": "Ahşap kaplamalı cephe taş kuleyle yan yana duruyor, ikisinin dokusu birbirinden net ayrılıyor.",
+    "en": "The timber-clad facade stands beside the stone tower, and the two textures are clearly distinct."
+  },
+  "seoFilename": "beyaz-boyali-ahsap-kaplamali-bina-tas-kule-ve-cumbali",
+  "tags": {
+    "type": [
+      "cephe kaplaması",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

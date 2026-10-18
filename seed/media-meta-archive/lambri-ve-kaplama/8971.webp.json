@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/8971.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "İskeleli gazbeton cephede çıta altyapısı",
+    "en": "Batten substructure on a scaffolded aerated-concrete facade"
+  },
+  "alt": {
+    "tr": "Çelik iskelenin önünde duran gazbeton cephede küçük pencere boşlukları ve dikey çıtalar, sağda kiremitli çatı kenarı",
+    "en": "Aerated-concrete facade behind steel scaffolding with small window openings and vertical battens"
+  },
+  "caption": {
+    "tr": "İskele tahta tablalarla cepheyi katlara ayırıyor, çıtalar yükseğe doğru sürüyor.",
+    "en": "The scaffold boards divide the facade into levels, and the battens continue upwards."
+  },
+  "seoFilename": "iskeleli-gazbeton-cephede-ahsap-cita-altyapisi-is-devam",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

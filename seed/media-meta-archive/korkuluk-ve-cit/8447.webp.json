@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/8447.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş sütunlar arasında kapalı ahşap kapı, yanında çöp konteyneri",
+    "en": "Closed timber gate between stone piers, with a waste bin beside it"
+  },
+  "alt": {
+    "tr": "Koyu taş sütunlar arasında kapalı duran, bölmeli açık renk ahşap çift kanatlı kapı; sağda çöp konteyneri, arkada ev",
+    "en": "A light-coloured timber double gate with panels standing closed between dark stone piers"
+  },
+  "caption": {
+    "tr": "Kapı kanatları bölmeli ve açık tonlu, tel örgü içinde duruyor. Taş sütunların üstünde lamba var.",
+    "en": "The gate leaves are panelled and light in tone with wire mesh set inside. There is a lamp on top of the stone pier."
+  },
+  "seoFilename": "tas-sutunlar-arasinda-kapali-ahsap-kapi-cop-konteyneri",
+  "tags": {
+    "type": [
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

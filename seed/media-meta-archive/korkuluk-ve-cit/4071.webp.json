@@ -1,0 +1,36 @@
+{
+  "source": "Korkuluk ve Cit/4071.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "İstinat duvarı üzerinde çapraz korkuluk",
+    "en": "Cross-braced railing on a retaining wall"
+  },
+  "alt": {
+    "tr": "Çimenli bahçe ile ağaç gövdesi arasında, istinat duvarı üstünde çapraz desenli ahşap korkuluk",
+    "en": "Cross-pattern timber railing on a retaining wall between a lawn and a tree trunk"
+  },
+  "caption": {
+    "tr": "Çapraz desenli ahşap korkuluk istinat duvarının üstünde, ağacın gövdesine kadar uzanıyor.",
+    "en": "The cross-pattern timber railing runs along the top of the retaining wall up to the tree trunk."
+  },
+  "seoFilename": "istinat-duvari-ustunde-capraz-ahsap-korkuluk-agac",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ahşap"
+    ],
+    "stage": [
+      "detail",
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

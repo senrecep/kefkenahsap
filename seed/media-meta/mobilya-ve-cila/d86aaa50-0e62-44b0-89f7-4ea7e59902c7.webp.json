@@ -1,0 +1,37 @@
+{
+  "file": "d86aaa50-0e62-44b0-89f7-4ea7e59902c7.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ev çatılı bebek odası: jaluzi kapaklı dolap ve beşik",
+    "en": "Baby room with house-roof wardrobe and crib"
+  },
+  "alt": {
+    "tr": "Bebek odasında ev çatısı biçimli, jaluzi kapaklı açık gri gardırop ve yanında aynı renkte parmaklıklı beşik",
+    "en": "Light grey house-shaped wardrobe with louvered doors beside a matching slatted crib in a nursery"
+  },
+  "caption": {
+    "tr": "Bebek odası için ölçüye göre yapılmış, çatı şeklinde jaluzi kapaklı gardırop ve aynı renge boyanmış beşik. Duvardaki küçük pencere de ahşap.",
+    "en": "A custom wardrobe with a pitched-roof top and louvered doors, with a crib painted in the same grey. The small window frame on the wall is wood too."
+  },
+  "seoFilename": "bebek-odasi-jaluzi-kapakli-dolap-besik",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bebek odası",
+      "iç mekan",
+      "çocuk odası"
+    ],
+    "finish": [
+      "boya",
+      "açık gri",
+      "mat"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,37 @@
+{
+  "file": "9fd4d9b9-a9b3-4eb8-992b-f37b834558c4.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Otel lobisinde koyu renk resepsiyon tezgâhı",
+    "en": "Dark reception counter in a hotel lobby"
+  },
+  "alt": {
+    "tr": "Cam tavanlı bir lobide koyu renk ahşap resepsiyon tezgâhı, üzerinde çiçek aranjmanı, arkada kapılı dolap ve parke zemin",
+    "en": "Dark wood reception counter with a flower arrangement in a glass-roofed lobby, with a cabinet and wood floor behind"
+  },
+  "caption": {
+    "tr": "Cam tavanlı lobide koyu cilalı resepsiyon tezgâhı. Çekmeceli ve raflı yapı, parke zeminle uyumlu duruyor; kurulum sırasında çekilmiş bir kare.",
+    "en": "A dark-finished reception counter with drawers and shelves in a glass-roofed lobby, set against the wood floor. Taken during installation."
+  },
+  "seoFilename": "lobi-resepsiyon-tezgahi-koyu-cila",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "lobi",
+      "otel",
+      "resepsiyon",
+      "iç mekan"
+    ],
+    "finish": [
+      "koyu cila",
+      "mat vernik"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.72
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/12784.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kepenk önünde deck ve köşede ahşap çiçeklikler",
+    "en": "Deck in front of a shutter with timber planters in the corner"
+  },
+  "alt": {
+    "tr": "Kepenk önünde kırmızı kahverengi deck, köşede ahşap çiçeklikler, çakıl şeridi ve sulama kabı",
+    "en": "Red-brown deck in front of a shutter with timber planters in the corner, a strip of gravel and a watering can"
+  },
+  "caption": {
+    "tr": "Çiçeklikler deck'in köşesini ve kenarını çevreliyor, böylece bitkiler zeminden yüksekte duruyor. Çakıl şeridi deck ile toprak arasında geçiş yapıyor.",
+    "en": "The planters wrap the corner and edge of the deck and keep the plants up off the ground. The gravel strip separates the deck from the soil."
+  },
+  "seoFilename": "kepenk-onunde-deck-ve-kosede-ahsap-ciceklikler",
+  "tags": {
+    "type": [
+      "deck",
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

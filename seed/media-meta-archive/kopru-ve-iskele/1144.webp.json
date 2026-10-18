@@ -1,0 +1,39 @@
+{
+  "source": "Ahsap Yapilar/1144.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kıyı boyunca uzanan ahşap platform ve pergola çatısı",
+    "en": "Long timber platform and pergola roof along the shore"
+  },
+  "alt": {
+    "tr": "Denizin kenarında uzun ahşap platform; üstünde çapraz korkuluk ve çıtalı pergola çatısı, altında kırmızımsı zemin",
+    "en": "Long timber platform by the sea with cross-braced railing and a slatted pergola roof, with reddish ground beneath"
+  },
+  "caption": {
+    "tr": "Platform kıyı şeridini boydan boya izliyor. Pergola çatısı çıtalı yapılmış ve gölge bırakıyor.",
+    "en": "The platform follows the shoreline along its whole length. The pergola roof is slatted and casts shade."
+  },
+  "seoFilename": "kiyi-boyunca-ahsap-platform-pergola-cati",
+  "tags": {
+    "type": [
+      "iskele",
+      "deck",
+      "pergola"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

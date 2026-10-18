@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/11010.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Turuncu tonlu çerçeveli alçak yatak karkası",
+    "en": "Low bed frame with an orange-toned timber surround"
+  },
+  "alt": {
+    "tr": "Parke zeminli odada, turuncu tonlu ahşap çerçeveli alçak yatak karkası ve ince başlık",
+    "en": "A low bed frame in orange-toned timber with a slim headboard, in a room with a wood floor"
+  },
+  "caption": {
+    "tr": "Karkas yer seviyesine yakın, turuncu tonda cilalı. Duvar dibinde ince bir başlık tahtası duruyor.",
+    "en": "The frame sits near floor level and is finished in an orange tone. A slim headboard board stands at the foot of the wall."
+  },
+  "seoFilename": "turuncu-tonlu-cerceveli-alcak-yatak-karkasi-ve-baslik",
+  "tags": {
+    "type": [
+      "yatak / karyola"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,39 @@
+{
+  "source": "Merdivenler/308.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar önünde ahşap blok basamaklar",
+    "en": "Chunky timber steps in front of a stone wall"
+  },
+  "alt": {
+    "tr": "Taş duvar önünde kalın tahtadan açık basamaklar; yukarıda çapraz korkuluk, arkada kütük kulübe",
+    "en": "Open steps of thick timber in front of a stone wall, with a cross-braced railing above and a log cabin behind"
+  },
+  "caption": {
+    "tr": "Basamaklar kalın tahtalardan, açık yapılmış ve taş duvarın önünde yükseliyor. Üstte kütük bir yapı görünüyor.",
+    "en": "The open steps are built of thick boards and rise in front of the stone wall. A log building shows above."
+  },
+  "seoFilename": "tas-duvar-onunde-ahsap-blok-basamaklar-kutuk-kulube",
+  "tags": {
+    "type": [
+      "merdiven"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

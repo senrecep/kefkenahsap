@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/270.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz yanı bahçede kafes panelli pergola kirişleri",
+    "en": "Pergola beams with lattice panels beside a pool garden"
+  },
+  "alt": {
+    "tr": "Havuz ve ağaçlarla çevrili bahçede, kafes panelli uzun bir ahşap iskelet ve üstte sıralı çatı kirişleri, kaplama yok",
+    "en": "Long timber frame with lattice panels in a garden with a pool and trees, with rows of roof beams on top and no covering yet"
+  },
+  "caption": {
+    "tr": "İskelet uzun kenar boyunca kafes panellerle çevrili, kirişler eşit aralıkla sıralanmış.",
+    "en": "The frame is lined with lattice panels along its long side, and the beams are spaced evenly."
+  },
+  "seoFilename": "havuz-yani-bahcede-kafes-panelli-pergola-kirisleri",
+  "tags": {
+    "type": [
+      "kafes / paravan",
+      "pergola"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.5
+}

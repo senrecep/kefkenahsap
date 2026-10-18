@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/10423.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kısmen bitmiş deck, üstte klima ve aletler",
+    "en": "Partly finished deck with an AC unit and tools above"
+  },
+  "alt": {
+    "tr": "Kısmen bitmiş deck zemini; üst kısımda klima ünitesi ve yerde artık tahtalar",
+    "en": "Partly finished deck floor with an air-conditioning unit at the top of the frame and offcuts on the ground"
+  },
+  "caption": {
+    "tr": "Tahtalar uzun bir hat boyunca düzgün sıralı. Deckin ucu henüz kesilmemiş, tahta parçaları yerde duruyor.",
+    "en": "The boards are laid in a neat line along a long run. The end of the deck is not cut yet and offcuts lie on the ground."
+  },
+  "seoFilename": "kismen-bitmis-deck-zemini-ustte-klima-unitesi-ve-aletler",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

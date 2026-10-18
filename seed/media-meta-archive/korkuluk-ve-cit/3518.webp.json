@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/3518.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çiçekli çalılar önünde alçak kütük çit",
+    "en": "Low log fence in front of flowering shrubs"
+  },
+  "alt": {
+    "tr": "Pembe ve beyaz çiçekli çalıların yanında, çimenin kenarında uzanan alçak ahşap çit, arkada taş duvar",
+    "en": "Low timber fence along the edge of a lawn beside pink and white flowering shrubs, with a stone wall behind"
+  },
+  "caption": {
+    "tr": "Çit çimin kenarını çiziyor, çiçekli çalılar ön planda renk katıyor.",
+    "en": "The fence outlines the edge of the lawn, and the flowering shrubs add colour in the foreground."
+  },
+  "seoFilename": "cicekli-calilar-onunde-yuvarlak-kutuk-cit",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.55
+}

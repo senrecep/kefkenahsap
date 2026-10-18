@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/13844.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ağaç altında çimen üzerinde parlak turuncu deck",
+    "en": "Glossy orange deck on the grass under a tree"
+  },
+  "alt": {
+    "tr": "Ağaç altında çimen üzerinde parlak turuncu deck, yanında kıvrılan hortum, arkada çalılar",
+    "en": "Glossy orange deck on the grass under a tree with a hose curling beside it and shrubs behind"
+  },
+  "caption": {
+    "tr": "Deck'in köşesi ağaç gövdesini içine almayacak biçimde girintili. Cila yüzeyi güneş altında parlatıyor.",
+    "en": "The corner of the deck is notched so it stays clear of the trunk. The varnish shines in the sun."
+  },
+  "seoFilename": "agac-altinda-cimen-uzerinde-parlak-turuncu-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

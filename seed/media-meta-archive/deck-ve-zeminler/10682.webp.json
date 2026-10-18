@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/10682.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Zemin kat dairesinin çimeni önünde altın-kahve deck",
+    "en": "Golden-brown deck in front of a ground-floor lawn"
+  },
+  "alt": {
+    "tr": "Zemin kat dairesinin çimeni önünde döşenmiş altın-kahve renkli ahşap deck; önde pembe çiçekler",
+    "en": "Golden-brown timber deck laid in front of a ground-floor flat's lawn, with pink flowers in front"
+  },
+  "caption": {
+    "tr": "Deck tahtaları eğik bir kesimle çimenle buluşuyor. Tahtaların rengi sıcak, yüzey yağ sürülmüş gibi parlıyor.",
+    "en": "The deck boards meet the grass at an angled cut. The colour is warm and the surface shines as if oiled."
+  },
+  "seoFilename": "zemin-kat-dairenin-cimeni-onunde-altin-kahve-ahsap-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

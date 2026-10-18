@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/10909.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sarmaşık önünde sıralı kare ve uzun çiçeklikler",
+    "en": "Square and long planters in a row in front of ivy"
+  },
+  "alt": {
+    "tr": "Sarmaşıklı taş duvarın önünde sıra sıra dizilmiş vernikli kare ve uzun ahşap çiçeklikler",
+    "en": "Varnished square and long timber planters lined up in front of an ivy-covered stone wall"
+  },
+  "caption": {
+    "tr": "Çiçekliklerin içi siyah astarlı, yüzeyi yatay çıtalı. Sıra duvar boyunca uzanıyor.",
+    "en": "The planters have black liners and horizontally slatted sides. The row runs along the wall."
+  },
+  "seoFilename": "yan-yana-dizilmis-vernikli-kare-ve-uzun-ahsap-ciceklikler",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

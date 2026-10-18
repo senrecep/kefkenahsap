@@ -1,0 +1,38 @@
+{
+  "source": "Kapi Dolap ve Seperator/10449.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çift kapaklı kızıl kahve jaluzi dolap",
+    "en": "Red-brown louvred double-door cabinet"
+  },
+  "alt": {
+    "tr": "Beyaz dış cephede, yağmur borusunun yanında duran, iki kanatlı jaluzi çıtalı kızıl kahve ahşap dolap; önünde deck zemin",
+    "en": "Red-brown timber cabinet with two louvred doors standing on a white exterior wall beside a downpipe"
+  },
+  "caption": {
+    "tr": "Dolap iki kanatlı ve her kanat jaluzi çıtalı. Havalanan bir iç hacim sağlıyor.",
+    "en": "The cabinet has two louvred leaves and gives a ventilated interior."
+  },
+  "seoFilename": "cift-kapakli-kizil-kahve-jaluzi-dolap",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

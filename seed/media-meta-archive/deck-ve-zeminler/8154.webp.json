@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/8154.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deck tahtası beklenen çıplak iskelet",
+    "en": "Bare joist frame waiting for deck boards"
+  },
+  "alt": {
+    "tr": "Havuz yanındaki çim alanda, kare gözlere bölünmüş ahşap taşıyıcı çerçeve ve alt kenarda döşenmiş deck tahtaları",
+    "en": "Wooden support frame divided into square bays on lawn next to a pool, with deck boards laid along the bottom edge"
+  },
+  "caption": {
+    "tr": "Çerçevenin gözleri açıkta. Tahtalar alt kenardan başlayarak üstüne döşeniyor.",
+    "en": "The bays of the frame are exposed. Boards are being laid over it starting from the bottom edge."
+  },
+  "seoFilename": "deck-tahtasi-bekleyen-ciplak-iskelet",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı",
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

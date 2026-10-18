@@ -1,0 +1,37 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 18.00.02.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Teras bahçesinde kare ahşap çiçeklikler",
+    "en": "Square wooden planters on a terrace garden"
+  },
+  "alt": {
+    "tr": "Çim zeminli teras bahçesinde sıra halinde duran üç kare ahşap çiçeklik, yanında taş basamaklar ve çit önünde çalılar",
+    "en": "Three square wooden planters in a row on a terrace lawn, with stepping stones and shrubs along the fence"
+  },
+  "caption": {
+    "tr": "Teras bahçesi için hazırladığımız, koyu kahve tonunda boyalı üç kare çiçeklik. İçleri siyah astarlı, çimin ve taş basamakların yanına sıralandı.",
+    "en": "Three square planters in a dark brown stain, made for a terrace garden. The insides are lined in black, and they sit in a row beside the lawn and stepping stones."
+  },
+  "seoFilename": "teras-bahcesi-kare-ahsap-ciceklik",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "teras",
+      "bahçe",
+      "çim alan",
+      "şehir manzarası"
+    ],
+    "finish": [
+      "koyu kahve vernik",
+      "siyah iç astar"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

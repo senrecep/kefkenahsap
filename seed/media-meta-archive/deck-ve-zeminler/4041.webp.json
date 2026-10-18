@@ -1,0 +1,40 @@
+{
+  "source": "Deck ve Zeminler/4041.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çam ormanında gövdeli deck, basamak ve korkuluk",
+    "en": "Deck with a trunk, steps and railing in a pine forest"
+  },
+  "alt": {
+    "tr": "Çam ormanında bir ağaç gövdesini saran açık renkli deck; kenarında basamaklar ve ince çıtalı ahşap korkuluk",
+    "en": "Pale deck wrapping a tree trunk in a pine forest, with steps and a thin-slat timber railing at its edge"
+  },
+  "caption": {
+    "tr": "Deck gövdenin etrafında kare boşlukla kesilmiş. Basamaklar deckin alçak ve yüksek bölümlerini bağlıyor.",
+    "en": "The deck is cut with a square opening around the trunk. The steps link the low and high parts of the deck."
+  },
+  "seoFilename": "cam-ormaninda-agac-govdesi-cevresinde-deck-basamak-ve",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "orman / kır"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

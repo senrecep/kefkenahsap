@@ -1,0 +1,37 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 18.00.06 (1).webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Havuz çevresinde çapraz döşeme ahşap deck",
+    "en": "Diagonal wood deck around a pool"
+  },
+  "alt": {
+    "tr": "Bahçede çim alan ile havuz arasında uzanan, çapraz döşenmiş açık kahverengi ahşap deck ve arkasında basamaklı teras",
+    "en": "Light brown wood deck laid diagonally between a lawn and a pool, with a stepped terrace behind"
+  },
+  "caption": {
+    "tr": "Havuz kenarında çapraz döşenen deck, çim alanla havuz arasında düzgün bir geçiş yolu oluşturuyor. Kenarlarda çerçeve gibi dönen bir bordür tahtası var.",
+    "en": "A deck laid on the diagonal beside the pool forms a clean walkway between the lawn and the water, finished with a border board running along the edges."
+  },
+  "seoFilename": "havuz-kenari-capraz-ahsap-deck",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "havuz",
+      "bahçe",
+      "teras",
+      "dış mekan"
+    ],
+    "finish": [
+      "çapraz döşeme",
+      "bordür"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

@@ -1,0 +1,34 @@
+{
+  "file": "1488129_672565726121363_62380726_n.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Eğimli arazide beton ayaklı ahşap platform altyapısı",
+    "en": "Timber platform substructure on concrete footings, sloped site"
+  },
+  "alt": {
+    "tr": "Eğimli arazide beton temel ayakları üzerine kurulmuş ahşap kiriş iskeleti, arkada dikme sırası ve deniz kenarında yerleşim",
+    "en": "Timber beam framing on concrete footings across a sloped site, with upright posts behind and a waterside town in the distance"
+  },
+  "caption": {
+    "tr": "Deniz kenarındaki eğimli arazide beton temellere oturan ahşap kirişler ve dikmeler. Zemin kaplaması henüz yapılmadan önceki taşıyıcı iskelet aşaması.",
+    "en": "Wooden beams and posts resting on concrete footings on a sloped waterside plot, photographed at the structural framing stage before any decking was laid."
+  },
+  "seoFilename": "egimli-arazide-beton-ayakli-ahsap-platform-altyapisi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "deniz kenarı",
+      "eğimli arazi",
+      "dış mekan",
+      "platform"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

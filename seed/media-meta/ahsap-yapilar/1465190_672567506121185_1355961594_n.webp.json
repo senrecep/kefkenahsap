@@ -1,0 +1,37 @@
+{
+  "file": "1465190_672567506121185_1355961594_n.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Golf pratik alanı için ahşap çatılı saha kenarı yapısı",
+    "en": "Timber-roofed golf driving range shelter"
+  },
+  "alt": {
+    "tr": "Golf atış alanında ahşap kolonlu, ahşap tavanlı uzun sundurma; kırmızı duvar önünde bank, oyuncular ve golf topları",
+    "en": "Long timber-framed golf range shelter with wooden ceiling, bench along a red wall, players and a basket of golf balls"
+  },
+  "caption": {
+    "tr": "Golf atış alanı için yapılan uzun ahşap sundurma. Ahşap kolonlar ve tavan kaplaması, atış bölmeleri ve duvar boyunca uzanan oturma bankı birlikte düşünülmüş.",
+    "en": "A long wooden shelter built for a golf driving range, with timber posts, a boarded ceiling, divided hitting bays and a bench running along the wall."
+  },
+  "seoFilename": "golf-atis-alani-ahsap-sundurma",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "golf sahası",
+      "sundurma",
+      "açık alan",
+      "spor tesisi"
+    ],
+    "finish": [
+      "doğal ahşap tonu",
+      "vernikli"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

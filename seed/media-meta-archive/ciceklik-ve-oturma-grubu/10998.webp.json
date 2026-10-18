@@ -1,0 +1,35 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/10998.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Kaldırımda bitkili ahşap çiçeklikler",
+    "en": "Planted timber planters on a pavement"
+  },
+  "alt": {
+    "tr": "Parke taşı kaldırımda, içlerinde yeşil çalılar olan iki bal rengi ahşap çiçeklik",
+    "en": "Two honey-toned timber planters with green shrubs on a paved sidewalk"
+  },
+  "caption": {
+    "tr": "Yatay tahtalarla kaplanan çiçeklikler köşe dikmeleriyle toparlanmış. İçlerindeki çalılar kaldırıma yeşillik katıyor.",
+    "en": "The planters are clad in horizontal boards and finished with corner posts. The shrubs in them bring green to the pavement."
+  },
+  "seoFilename": "kaldirim-bitkili-ahsap-ciceklik",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "kaldırım",
+      "dış mekân"
+    ],
+    "finish": [
+      "bal rengi"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

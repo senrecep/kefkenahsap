@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/1822.webp",
+  "category": "ahsap-ev-ve-bungalov",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Toprak yol kenarında taş duvarlı ahşap ev",
+    "en": "Timber house behind a stone wall by a dirt road"
+  },
+  "alt": {
+    "tr": "Toprak yolun kenarındaki taş duvarın arkasında duran, yapımı süren ahşap ev",
+    "en": "Timber house under construction behind a stone wall along a dirt road"
+  },
+  "caption": {
+    "tr": "Ev, taş duvarla yoldan ayrılmış bir arazide yükseliyor. Önde toprak yol, arkada çıplak ağaçlar var.",
+    "en": "The house rises on a plot separated from the road by a stone wall. A dirt road runs in front and bare trees stand behind."
+  },
+  "seoFilename": "toprak-yol-kenarinda-tas-duvarli-ahsap-ev-yapimi",
+  "tags": {
+    "type": [
+      "ahşap ev / bungalov"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

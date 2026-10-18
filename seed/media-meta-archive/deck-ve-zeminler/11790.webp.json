@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/11790.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Seramik teras yanında ahşap deck",
+    "en": "Timber deck beside a tiled patio"
+  },
+  "alt": {
+    "tr": "Evin seramik kaplı terasının yanında, çakıl zemin üzerine yapılmış açık renk ahşap deck",
+    "en": "Light timber deck laid on a gravel bed next to a house's tiled patio"
+  },
+  "caption": {
+    "tr": "Seramik terası bahçeye doğru genişleten, kenarları çerçeveli ahşap deck.",
+    "en": "A framed-edge timber deck that extends the tiled patio out towards the garden."
+  },
+  "seoFilename": "seramik-teras-yaninda-cerceveli-ahsap-deck",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "teras",
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

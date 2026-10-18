@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/11855.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Katlanır masa ve iki bank takımı, kilit taş zeminde",
+    "en": "Folding table and two-bench set on interlocking paving"
+  },
+  "alt": {
+    "tr": "Kilit taş döşeli zeminde, çıtalı katlanır ahşap masanın iki yanında koyu vernikli birer ahşap bank duruyor",
+    "en": "On an interlocking paved floor, a slatted folding timber table with a dark-varnished timber bench on either side"
+  },
+  "caption": {
+    "tr": "Masanın çapraz ayakları katlanıyor, banklar ise sabit kasa gibi yapılmış. Takım bir arada taşınabiliyor.",
+    "en": "The crossed legs of the table fold, while the benches are built as fixed boxes. The set can be moved together."
+  },
+  "seoFilename": "katlanir-masa-iki-bank-takimi-kilit-tas-zemin",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

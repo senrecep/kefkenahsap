@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12240.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Gövdenin çevresinde dairesel boşluklu açık renkli deck",
+    "en": "Pale deck with a round opening around the trunk"
+  },
+  "alt": {
+    "tr": "Ağaç gövdesinin çevresinde dairesel bir boşluk bırakılarak döşenmiş açık renkli deck tahtaları",
+    "en": "Pale deck boards laid with a round opening left around a tree trunk"
+  },
+  "caption": {
+    "tr": "Tahtalar gövdeye uyacak biçimde kesilmiş. Bu sayede ağaç deck içinden çıkıyor ve çevresinde boşluk kalıyor.",
+    "en": "The boards are cut to follow the trunk. The tree comes up through the deck with a gap all round it."
+  },
+  "seoFilename": "govde-cevresinde-dairesel-bosluklu-acik-renkli-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

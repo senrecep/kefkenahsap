@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/13804.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz kenarında eskimiş koyu deck ve kırmızı kahverengi korkuluk",
+    "en": "Worn dark deck and red-brown railing at the pool edge"
+  },
+  "alt": {
+    "tr": "Havuz kenarında eskimiş koyu deck ve kırmızı kahverengi korkuluk, üzerine korkuluk gölgeleri düşüyor",
+    "en": "Worn dark deck and a red-brown railing at the pool edge, with the railing's shadows falling across the boards"
+  },
+  "caption": {
+    "tr": "Tahtalar koyulaşmış ve yüzeyde aşınma izleri var. Korkuluk deck ile havuz arasında bir sınır çiziyor.",
+    "en": "The boards have darkened and the surface shows signs of wear. The railing draws a line between deck and pool."
+  },
+  "seoFilename": "havuz-kenarinda-eskimis-koyu-deck-kirmizi-korkuluk",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/12354.webp",
+  "category": "mutfak-ve-gomme-dolap",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kapakları açık raflı ahşap dolap",
+    "en": "Timber cabinet with its doors open, showing the shelves"
+  },
+  "alt": {
+    "tr": "Kapakları açık duran, içinde raflar bulunan ahşap dolap; sağ önde yatay tahta kaplı başka bir ahşap kasa",
+    "en": "A timber cabinet with its doors open and shelves inside, with another board-clad timber box at the front right"
+  },
+  "caption": {
+    "tr": "Dolabın iki kapağı açık, iç bölümde iki raf var. Sağ önde yatay tahtalı bir kasa duruyor, zemin fayans.",
+    "en": "Both doors of the cabinet are open, showing two shelves inside. A box clad in horizontal boards stands at the front right, on a tiled floor."
+  },
+  "seoFilename": "kapaklari-acik-rafli-ahsap-dolap-yaninda-baska-kasa",
+  "tags": {
+    "type": [
+      "gömme dolap / gardırop"
+    ],
+    "wood": [],
+    "setting": [
+      "atölyede üretim"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

@@ -1,0 +1,35 @@
+{
+  "source": "Korkuluk ve Cit/13740.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Ağaç çevresinde ahşap bahçe korkuluğu",
+    "en": "Timber garden railing around a tree"
+  },
+  "alt": {
+    "tr": "Bahçede ağacın gövdesini çevreleyen dikey çıtalı ahşap korkuluk ve alçak basamaklar",
+    "en": "Vertical slatted timber railing and low steps wrapped around a tree trunk in a garden"
+  },
+  "caption": {
+    "tr": "Ağacı yerinde bırakıp çevresinden dolanan ahşap korkuluk. Deck'in kenarından bahçeye inen alçak basamaklar da aynı ahşapla yapılmış.",
+    "en": "A timber railing that leaves the tree in place and wraps around it, with low steps leading from the deck down to the garden."
+  },
+  "seoFilename": "agac-cevresinde-ahsap-bahce-korkulugu",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ahşap"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,36 @@
+{
+  "file": "2-4.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Taş merdivende beyaz boyalı ahşap korkuluk",
+    "en": "White painted wooden railing on a stone garden staircase"
+  },
+  "alt": {
+    "tr": "Taş duvarlar arasındaki dış merdivenin kenarında beyaz boyalı dikey çıtalı ahşap korkuluk, üstte çapraz detaylı köşe paneli",
+    "en": "White painted wooden railing with vertical slats along an outdoor stone staircase, with an X-pattern panel at the top"
+  },
+  "caption": {
+    "tr": "Bahçedeki taş basamaklı merdivene beyaz boyalı, dikey çıtalı ahşap korkuluk yapıldı. Üst sahanlıkta çapraz desenli bir panel yer alıyor.",
+    "en": "A white painted wooden railing with vertical slats was built for a stone garden staircase. The upper landing has an X-pattern panel."
+  },
+  "seoFilename": "tas-merdiven-beyaz-ahsap-korkuluk",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "taş merdiven",
+      "villa"
+    ],
+    "finish": [
+      "beyaz boya"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

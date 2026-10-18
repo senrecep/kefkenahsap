@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/14415.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz çit önünde sökülen parçalar",
+    "en": "White fence with removed old parts in front"
+  },
+  "alt": {
+    "tr": "Taş duvar üzerinde beyaz boyalı çıtalı çit, önünde yatan siyah direk ve eski çit parçaları, arkada ev",
+    "en": "White-painted picket fence on a stone wall with a black post and old fence parts lying in front, a house behind"
+  },
+  "caption": {
+    "tr": "Yeni beyaz çit yerinde duruyor, eski demir çitin parçaları kaldırımda bekliyor.",
+    "en": "The new white fence is in place, and pieces of the old iron fence wait on the pavement."
+  },
+  "seoFilename": "beyaz-cit-yaninda-sokum-parcalari",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

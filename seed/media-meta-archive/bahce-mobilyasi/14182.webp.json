@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/14182.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Gri metal iskeletli, ahşap kolçaklı sandalyeler",
+    "en": "Grey metal chairs with timber armrests"
+  },
+  "alt": {
+    "tr": "Mavi örtünün üstünde duran koyu gri metal sandalyeler ve ahşap kolçakları",
+    "en": "Dark grey metal chairs with timber armrests standing on a blue plastic sheet"
+  },
+  "caption": {
+    "tr": "Sandalyelerin iskeleti koyu gri metal, kolçakları ahşap. Mavi naylon örtü zemini koruyor.",
+    "en": "The chair frames are dark grey metal and the armrests are timber. A blue plastic sheet protects the floor."
+  },
+  "seoFilename": "gri-metal-iskeletli-sandalyeler-ahsap-kolcak",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

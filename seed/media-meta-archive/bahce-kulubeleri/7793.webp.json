@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/7793.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yatay çıtalı kabin, arkasında deniz",
+    "en": "Slatted cabin with the sea behind"
+  },
+  "alt": {
+    "tr": "Yatay çıtalı kaplamalı, koyu üçgen üst bölümlü kabin; yanında taş döşeli kıyı ve arkada deniz",
+    "en": "Cabin with horizontal slat cladding and a dark triangular upper part, with a stone-paved shore beside it and the sea behind"
+  },
+  "caption": {
+    "tr": "Kabinin kapısı açık ve içi koyu, üst alınlığı koyu panelli. Önde taş döşeli bir yol, sağda su görünüyor.",
+    "en": "The door of the cabin is open and dark inside, and its upper gable is dark-panelled. A stone-paved path lies in front with water on the right."
+  },
+  "seoFilename": "yatay-citali-kaplamali-kabin-koyu-ucgen-ust-bolum-arkada",
+  "tags": {
+    "type": [
+      "bahçe kulübesi / depo"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

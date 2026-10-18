@@ -1,0 +1,36 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 17.59.57 (2).webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Taş duvar üzerinde beyaz ahşap bahçe çiti",
+    "en": "White wooden picket fence on a stone wall"
+  },
+  "alt": {
+    "tr": "Pembe bir evin önünde taş duvar üzerine yerleştirilmiş beyaz boyalı çıta bahçe çiti ve yanında bahçe kapısı",
+    "en": "White painted picket fence set on a stone wall in front of a pink house, with a garden gate beside it"
+  },
+  "caption": {
+    "tr": "Taş duvarın üzerine monte edilen beyaz boyalı çıta çit. Sağ tarafta aynı çizgide bir bahçe kapısı var.",
+    "en": "A white painted picket fence mounted on a stone wall, with a matching garden gate on the right."
+  },
+  "seoFilename": "tas-duvar-ustu-beyaz-ahsap-bahce-citi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "villa",
+      "site içi",
+      "dış mekan"
+    ],
+    "finish": [
+      "beyaz boya"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

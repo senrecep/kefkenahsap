@@ -1,0 +1,37 @@
+{
+  "file": "36040198_1957699650941291_1402449926159335424_n.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Yatay çıtalı dikdörtgen ahşap çiçeklik",
+    "en": "Rectangular wooden planter with horizontal slats"
+  },
+  "alt": {
+    "tr": "Kaldırım taşı zemin üzerinde, yatay çıtalarla kaplı, bal rengi vernikli dikdörtgen ahşap çiçeklik kutusu",
+    "en": "Rectangular honey-toned wooden planter box with horizontal slats, standing on paved stone ground"
+  },
+  "caption": {
+    "tr": "Yatay çıtalarla kaplanmış, üst kenarı geniş çerçeveli dikdörtgen çiçeklik. Bal rengi vernik ahşabın damarını açıkta bırakıyor, içi koyu astarla kaplı.",
+    "en": "A rectangular planter clad in horizontal slats with a wide top frame. The honey-colored finish leaves the wood grain visible, and the inside is lined in dark material."
+  },
+  "seoFilename": "yatay-citali-dikdortgen-ahsap-ciceklik",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "dış mekan",
+      "kaldırım",
+      "sokak"
+    ],
+    "finish": [
+      "vernik",
+      "bal rengi",
+      "açık damar"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

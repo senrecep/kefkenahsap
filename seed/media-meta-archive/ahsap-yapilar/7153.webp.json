@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/7153.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çok katlı binada ahşap çerçeveli cam sera",
+    "en": "Timber-framed glass conservatory on a multi-storey building"
+  },
+  "alt": {
+    "tr": "Çok katlı bir binanın alt katında ahşap çerçeveli, yeşil panelli cam çatılı sera bölümü ve üstte ahşap saçaklar",
+    "en": "Conservatory with a timber frame, green panels and a glass roof at the base of a multi-storey building, timber eaves above"
+  },
+  "caption": {
+    "tr": "Cam çatının ahşap taşıyıcıları ve yeşil panelleri belli oluyor. Üst katlarda balkonlar ve geniş ahşap saçaklar sıralanıyor.",
+    "en": "The timber frame of the glass roof and its green panels stand out. Balconies and wide timber eaves line the upper floors."
+  },
+  "seoFilename": "ahsap-cerceveli-cam-catili-sera-bolumu-ve-ahsap-sacaklar",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.5
+}

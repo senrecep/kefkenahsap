@@ -1,0 +1,40 @@
+{
+  "source": "Deck ve Zeminler/13719.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Suya uzanan deck yolu ve uçta korkuluk",
+    "en": "Deck path running out to the water with a railing at the end"
+  },
+  "alt": {
+    "tr": "Suya doğru uzanan açık renkli deck yolu ve uçta ahşap korkuluk, çevresinde çam ağaçları",
+    "en": "Pale deck path running out towards the water with a timber railing at its end, with pines around it"
+  },
+  "caption": {
+    "tr": "Yol ağaçların arasından su kıyısına kadar iniyor. Uçtaki korkuluk deck'i sudan ayırıyor.",
+    "en": "The path leads through the trees down to the water's edge. The railing at the end separates the deck from the water."
+  },
+  "seoFilename": "suya-uzanan-deck-yolu-ve-ucta-korkuluk",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk",
+      "yürüyüş yolu"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14257.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Duvar dibinde koyu vernikli uzun ahşap sedir, taş terasta",
+    "en": "Long dark-varnished timber day-bed against a wall on a stone terrace"
+  },
+  "alt": {
+    "tr": "Taş döşeli terasta, sarı duvarın dibinde bir ucunda yüksek sırtlığı olan uzun, düz tahtalı koyu vernikli ahşap sedir",
+    "en": "A long flat-planked dark-varnished timber day-bed with a high back at one end, against a yellow wall on a stone-paved terrace"
+  },
+  "caption": {
+    "tr": "Sedir terasın duvar dibini kullanıyor. Düz tahtalı üst yüzey geniş, bir uçtaki sırtlık başı destekliyor.",
+    "en": "The day-bed uses the foot of the terrace wall. The flat top is wide, and the back at one end supports the head."
+  },
+  "seoFilename": "duvar-dibinde-koyu-vernikli-uzun-ahsap-sedir-tas-terasta",
+  "tags": {
+    "type": [
+      "bank",
+      "şezlong"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

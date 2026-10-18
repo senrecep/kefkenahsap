@@ -1,0 +1,36 @@
+{
+  "file": "81e195cc-fcb3-4bc6-b4f4-24e797152c17-1.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Beyaz lake çerçeveli mutfak dolapları",
+    "en": "White painted shaker-style kitchen cabinets"
+  },
+  "alt": {
+    "tr": "Beyaz kapı söveli geniş açıklıktan görünen, beyaz çerçeveli dolapları ve ankastre ocak ile fırını olan U planlı mutfak",
+    "en": "U-shaped kitchen seen through a white framed opening, with white panel cabinets, built-in hob and oven"
+  },
+  "caption": {
+    "tr": "Geniş söveli bir açıklığın ardında, beyaz boyalı çerçeveli kapaklarla yapılmış U planlı mutfak. Dolaplar ve söve aynı beyaz tonda.",
+    "en": "A U-shaped kitchen behind a wide moulded opening, with white painted panel doors. The cabinets and door casing share the same white finish."
+  },
+  "seoFilename": "beyaz-boyali-cerceveli-mutfak-dolaplari",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "mutfak",
+      "iç mekan",
+      "daire"
+    ],
+    "finish": [
+      "beyaz boya",
+      "mat lake"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

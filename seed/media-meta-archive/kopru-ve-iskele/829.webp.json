@@ -1,0 +1,40 @@
+{
+  "source": "Kopru ve Iskele/829.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvardan göle eğimle inen yeni ahşap iskele döşemesi",
+    "en": "New pier decking sloping from the stone wall into the lake"
+  },
+  "alt": {
+    "tr": "Taş duvarın önünden göl suyuna doğru eğimle uzanan açık renk yeni tahta döşeme; yanda toprak şev ve korkuluk iskeleti",
+    "en": "New light timber decking sloping from in front of a stone wall into the lake water"
+  },
+  "caption": {
+    "tr": "Tahtalar eğimle suya giriyor, yansıması suda sarı bir iz bırakıyor. Yan taraftaki korkuluğun yalnızca çerçevesi kurulmuş.",
+    "en": "The boards run down into the water and their reflection leaves a yellow trace on it. Only the frame of the railing at the side has been built."
+  },
+  "seoFilename": "tas-duvardan-gole-egimle-inen-yeni-iskele-doseme",
+  "tags": {
+    "type": [
+      "iskele",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

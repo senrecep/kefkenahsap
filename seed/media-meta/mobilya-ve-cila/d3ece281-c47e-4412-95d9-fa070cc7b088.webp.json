@@ -1,0 +1,37 @@
+{
+  "file": "d3ece281-c47e-4412-95d9-fa070cc7b088.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Koridorda duvar boyu gömme dolaplar",
+    "en": "Floor-to-ceiling built-in cabinets in a hallway"
+  },
+  "alt": {
+    "tr": "Dar bir koridorun sol duvarını kaplayan, krem renkli, küçük topuzlu tavana kadar uzanan gömme dolap kapakları",
+    "en": "Cream-colored built-in cabinet doors with small knobs covering the left wall of a narrow hallway, up to the ceiling"
+  },
+  "caption": {
+    "tr": "Koridorun bir duvarını baştan sona kaplayan, düz kapaklı ve küçük topuzlu gömme dolaplar. Tavandaki ışık hattı duvarı aydınlatıyor.",
+    "en": "Built-in cabinets with flat doors and small knobs running along one wall of a hallway, lit by a light strip in the ceiling."
+  },
+  "seoFilename": "koridor-gomme-dolap-duvar-boyu",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "koridor",
+      "iç mekan",
+      "gömme dolap"
+    ],
+    "finish": [
+      "krem boya",
+      "düz kapak",
+      "mat yüzey"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.72
+}

@@ -1,0 +1,41 @@
+{
+  "source": "Pergola ve Kamelyalar/1203.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çok katlı ahşap pergola, çapraz korkuluk ve merdiven, altında şezlonglar",
+    "en": "Multi-level timber pergola with X-braced railing and stairs, loungers below"
+  },
+  "alt": {
+    "tr": "Çok katlı ahşap pergola, çapraz çıtalı korkuluk, merdiven ve altta sıralı şezlonglar; denize bakıyor",
+    "en": "Multi-level timber pergola with an X-braced railing, stairs and a row of sun loungers below, facing the sea"
+  },
+  "caption": {
+    "tr": "Üst platformdan aşağı inen merdiven korkuluklarla çevrili. Pergolanın çatısı kirişlerle örtülü.",
+    "en": "The stairs down from the upper platform are bordered by railings. The pergola roof is covered with slats."
+  },
+  "seoFilename": "cok-katli-ahsap-pergola-merdiven-sezlonglar",
+  "tags": {
+    "type": [
+      "pergola",
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

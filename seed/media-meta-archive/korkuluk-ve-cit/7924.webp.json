@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/7924.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çam ağaçları arasında çapraz korkuluklu deck platformu",
+    "en": "Deck platform with cross-braced railing among pine trees"
+  },
+  "alt": {
+    "tr": "Çimde çam ağaçlarının yanında, çevresi çapraz çıtalı korkuluklu alçak deck platformu; önde çimde uzanan kereste traversler",
+    "en": "A low deck platform with cross-braced railing on the lawn beside pine trees"
+  },
+  "caption": {
+    "tr": "Platform çimin üzerinde alçakta duruyor, korkuluk kenarlarını X çaprazlarla çeviriyor. Önde üç kalın kereste çimde yan yana yatıyor.",
+    "en": "The platform sits low on the lawn and its railing encloses the edges with X braces. Three thick timbers lie side by side on the grass in front."
+  },
+  "seoFilename": "cam-agaclari-arasinda-capraz-korkuluklu-deck-platformu",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "orman / kır"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

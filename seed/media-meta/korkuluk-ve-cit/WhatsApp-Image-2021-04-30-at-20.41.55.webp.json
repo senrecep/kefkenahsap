@@ -1,0 +1,36 @@
+{
+  "file": "WhatsApp-Image-2021-04-30-at-20.41.55.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Giriş önü alçak ahşap çit ve kapı",
+    "en": "Low wooden picket fence and gate at entrance"
+  },
+  "alt": {
+    "tr": "Traverten zeminli giriş alanında, çalılık ve çimen bahçesine bakan alçak, açık renkli ahşap çıta çit ve küçük kapı",
+    "en": "Low light-toned wooden picket fence with a small gate on a travertine entrance, facing a hedge and lawn"
+  },
+  "caption": {
+    "tr": "Giriş önüne yapılan alçak ahşap çit; ortadaki küçük kapıyla bahçe tarafına geçiş sağlıyor.",
+    "en": "A low wooden picket fence built at an entrance, with a small gate in the middle leading to the garden."
+  },
+  "seoFilename": "giris-onu-alcak-ahsap-cit-kapi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "giriş",
+      "bahçe",
+      "teras",
+      "dış mekan"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

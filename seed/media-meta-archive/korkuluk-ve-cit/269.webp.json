@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/269.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kafes panel yanlı pergola iskeleti, yukarıdan",
+    "en": "Pergola frame with lattice sides, seen from above"
+  },
+  "alt": {
+    "tr": "Havuz bahçesinde kare gözlü kafes panellerle çevrili dikdörtgen ahşap iskelet, üstü henüz kapanmamış kirişlerle açık",
+    "en": "Rectangular timber frame enclosed by square lattice panels in a pool garden, with the top still open on bare joists"
+  },
+  "caption": {
+    "tr": "Kafes paneller dört yanı kapatıyor, üstteki kirişler henüz örtü bekliyor.",
+    "en": "The lattice panels close off all four sides, and the joists on top are still waiting for cover."
+  },
+  "seoFilename": "kafes-panel-yanli-pergola-iskeleti-ustu-acik-yukaridan",
+  "tags": {
+    "type": [
+      "kafes / paravan",
+      "pergola"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.5
+}

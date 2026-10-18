@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/5594.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar yanında pergola kiriş ve payanda detayı",
+    "en": "Pergola beam and brace detail beside a stone wall"
+  },
+  "alt": {
+    "tr": "Taş duvarın yanında pergola kirişi, çapraz payanda ve tahta kaplı çatı alt kısmı, arkada çalılık ve kıyı",
+    "en": "Pergola beam, diagonal brace and boarded roof underside beside a stone wall, with shrubs and the shore behind"
+  },
+  "caption": {
+    "tr": "Payanda direği ana kirişe bağlıyor, çatı tahtaları kirişler üzerinde yan yana. Duvar kaba taşla örülmüş.",
+    "en": "The brace ties the post to the main beam and the roof boards sit side by side on the beams. The wall is built from rough stone."
+  },
+  "seoFilename": "tas-duvar-yaninda-pergola-kiris-payanda-detayi",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

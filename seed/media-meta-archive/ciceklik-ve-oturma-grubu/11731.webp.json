@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/11731.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Gazete serili zeminde sıralanmış çiçeklikler",
+    "en": "Planters lined up on newspaper-covered ground"
+  },
+  "alt": {
+    "tr": "Gazete serilmiş zeminde yan yana dizilmiş, vernikli ve yatay tahtalı beş ahşap çiçeklik",
+    "en": "Five varnished timber planters with horizontal boards lined up on a floor covered in newspaper"
+  },
+  "caption": {
+    "tr": "Çiçeklikler boş, içlerinde yalnızca astar var. Boyanın damlamaması için zemin gazeteyle örtülmüş.",
+    "en": "The planters are empty, with only the liner inside. Newspaper covers the floor to catch drips of finish."
+  },
+  "seoFilename": "gazete-serili-zeminde-siralanmis-vernikli-yatay-tahtali",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

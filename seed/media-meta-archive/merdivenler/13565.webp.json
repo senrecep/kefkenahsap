@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/13565.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kırmızı kahverengi merdiven ve alçak platform",
+    "en": "Red-brown stairs and low platform"
+  },
+  "alt": {
+    "tr": "Seramik zemin yanında kırmızımsı kahverengi ahşap merdiven, korkuluğu ve alçak platform",
+    "en": "Red-brown timber staircase with railing and a low platform beside a ceramic floor"
+  },
+  "caption": {
+    "tr": "Merdiven ve yanındaki alçak platform aynı kırmızımsı kahverengi tonda. Önde açık renk seramik zemin var.",
+    "en": "The stairs and the low platform beside them share the same red-brown tone. A light ceramic floor lies in front."
+  },
+  "seoFilename": "kirmizi-kahverengi-merdiven-korkuluk-platform-seramik",
+  "tags": {
+    "type": [
+      "merdiven",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

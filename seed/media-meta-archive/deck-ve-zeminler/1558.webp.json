@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/1558.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Boş havuz kenarında uzun dar deck şeridi",
+    "en": "Long narrow deck strip beside an empty pool"
+  },
+  "alt": {
+    "tr": "Henüz su doldurulmamış beyaz fayanslı havuzun kenarında uzanan, ıslak sarımsı tahtalı uzun ve dar deck şeridi",
+    "en": "Long narrow deck strip of wet yellowish boards along the edge of a white-tiled pool not yet filled with water"
+  },
+  "caption": {
+    "tr": "Şerit perspektifle uzağa kadar gidiyor ve tahtalar uzun kenara dik döşenmiş. Uzakta çalışanlar ve toprak yığınları görünüyor.",
+    "en": "The strip runs far into the distance and the boards are laid square to the long edge. Workers and soil heaps show in the distance."
+  },
+  "seoFilename": "bos-havuz-kenarinda-uzun-dar-deck-seridi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/14413.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz piket çit montajı, yerde tahta ve malzeme",
+    "en": "White picket fence during installation with boards on the ground"
+  },
+  "alt": {
+    "tr": "Taş duvar üstüne takılmış beyaz çıtalı çit, yanında dikili bir ahşap direk, yerde tahta parçaları ve alet kutusu",
+    "en": "White picket fence fitted on a stone wall, with an upright timber post beside it and board offcuts"
+  },
+  "caption": {
+    "tr": "Çit yerine takılmış ama çevrede iş malzemeleri duruyor. Kaldırım henüz temizlenmemiş.",
+    "en": "The fence is in place but work materials are still around. The pavement has not been cleared."
+  },
+  "seoFilename": "beyaz-piket-cit-montaji-yerde-tahta-ve-malzeme",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

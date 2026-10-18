@@ -1,0 +1,39 @@
+{
+  "source": "Ahsap Yapilar/1826.webp",
+  "category": "ahsap-ev-ve-bungalov",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çit arkasında iki katlı ahşap ev",
+    "en": "Two-storey timber house behind a fence"
+  },
+  "alt": {
+    "tr": "Açık renk çıtalı çitin arkasında, geometrik korkuluklu geniş balkonları olan iki katlı ahşap ev",
+    "en": "Two-storey timber house with wide balconies and geometric railings behind a light slatted fence"
+  },
+  "caption": {
+    "tr": "İki katın da balkonu aynı geometrik korkuluk desenini taşıyor. Ev çimli bir bahçenin içinde duruyor.",
+    "en": "Both balconies carry the same geometric railing pattern. The house stands in a grassy garden."
+  },
+  "seoFilename": "citin-arkasinda-iki-katli-ahsap-ev-mavi-gokyuzu",
+  "tags": {
+    "type": [
+      "ahşap ev / bungalov",
+      "çit",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

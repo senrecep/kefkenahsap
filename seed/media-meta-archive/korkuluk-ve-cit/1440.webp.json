@@ -1,0 +1,40 @@
+{
+  "source": "Korkuluk ve Cit/1440.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş kaplı temel üstünde deck ve çapraz korkuluk",
+    "en": "Deck and cross-braced railing on a stone-clad base"
+  },
+  "alt": {
+    "tr": "Taş kaplı bir temelin üstüne kurulmuş açık yeşilimsi ahşap deck ve çapraz çıtalı korkuluk, arkada sarı bir bina",
+    "en": "Light greenish timber deck with a cross-braced railing on a stone-clad base, with a yellow building behind"
+  },
+  "caption": {
+    "tr": "Deck kenarı kalın tahtayla kapatılmış, korkuluk X desenli çıtalarla köşeyi dönüyor.",
+    "en": "The deck edge is boxed in with thick boards, and the railing turns the corner with X-shaped braces."
+  },
+  "seoFilename": "tas-kapli-temel-ustunde-deck-ve-capraz-korkuluk",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

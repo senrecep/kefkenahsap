@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/11478.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Duvar önünde cilalı turuncu-kahve deck",
+    "en": "Varnished orange-brown deck in front of a wall"
+  },
+  "alt": {
+    "tr": "Gri duvarın önünde döşenmiş cilalı, turuncu-kahverengi ahşap deck zemini",
+    "en": "Varnished orange-brown timber deck floor laid in front of a grey wall"
+  },
+  "caption": {
+    "tr": "Tahtalar duvara dik döşenmiş, cila güneşte parlıyor. Duvara yakın kısımda renk biraz daha açık.",
+    "en": "The boards run at right angles to the wall and the varnish shines in the sun. The colour is a little lighter near the wall."
+  },
+  "seoFilename": "duvar-onunde-cilali-turuncu-kahverengi-ahsap-deck-zemini",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

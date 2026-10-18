@@ -1,0 +1,39 @@
+{
+  "source": "Ahsap Yapilar/2765.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Göl kıyısında pergola çatısını çakan ustalar",
+    "en": "Craftsmen fixing the pergola roof by the lake shore"
+  },
+  "alt": {
+    "tr": "Su kenarındaki deck üzerinde emprenyeli çam pergola çatısı çıtalarını çakan iki kişi, çevrede palmiyeler",
+    "en": "Two men fixing roof slats on a pressure-treated pine pergola over a lakeside deck, with palm trees around"
+  },
+  "caption": {
+    "tr": "Pergolanın çatı çıtaları sıra sıra çakılıyor. Altta deck zemin ve çapraz çıtalı bir korkuluk var.",
+    "en": "The pergola roof slats are being fixed one row at a time. Below are the deck floor and a cross-braced railing."
+  },
+  "seoFilename": "gol-kiyisinda-pergola-cati-citalari",
+  "tags": {
+    "type": [
+      "pergola",
+      "korkuluk",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

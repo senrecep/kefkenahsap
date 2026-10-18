@@ -1,0 +1,40 @@
+{
+  "source": "Kapi Dolap ve Seperator/13481.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yapım aşamasında X çaprazlı ahşap çit ve kapı, zemin hazırlanıyor",
+    "en": "X-braced timber fence and gate under construction, ground being prepared"
+  },
+  "alt": {
+    "tr": "Tuğla döşemeli alanda kurulmakta olan X çaprazlı ahşap çit ve kapı bölümü; ön tarafta toprak ve beton plakalar",
+    "en": "An X-braced timber fence and gate section being built on a brick-paved area"
+  },
+  "caption": {
+    "tr": "Kapı dikmeleri metal ayaklara bağlanıyor. Önündeki toprak zemin döşemeye hazırlanıyor.",
+    "en": "The gate posts are fixed to metal footings. The soil in front is being prepared for paving."
+  },
+  "seoFilename": "yapim-asamasinda-x-capraz-ahsap-cit-ve-kapi",
+  "tags": {
+    "type": [
+      "çit",
+      "bahçe kapısı"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

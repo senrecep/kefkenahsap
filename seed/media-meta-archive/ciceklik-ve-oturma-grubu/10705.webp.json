@@ -1,0 +1,39 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/10705.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Üç kat istiflenmiş çok sayıda çiçeklik kutusu",
+    "en": "Many planter boxes stacked three high"
+  },
+  "alt": {
+    "tr": "Teras zemininde üç sıra hâlinde üst üste yığılmış çok sayıda açık renk ahşap çiçeklik kutusu",
+    "en": "Many light timber planter boxes stacked three high on a terrace floor"
+  },
+  "caption": {
+    "tr": "Kutular aynı ölçüde ve aynı yapıda. Sevkiyata hazır gibi sıra sıra duruyor.",
+    "en": "The boxes share the same size and build. They stand in rows as if ready for delivery."
+  },
+  "seoFilename": "uc-kat-istiflenmis-cok-sayida-acik-renk-ahsap-ciceklik",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

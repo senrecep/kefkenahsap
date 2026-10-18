@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/7657.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kabinin köşe ve çatı detayı",
+    "en": "Corner and roof detail of the cabin"
+  },
+  "alt": {
+    "tr": "Yatay kaplamalı kabinin köşesi, yeşil çatı bağlantısı ve üstündeki koyu cam bölüm; yakından",
+    "en": "Close view of the corner of a cabin with horizontal cladding, the green roof junction and the dark glazed section above"
+  },
+  "caption": {
+    "tr": "Kabinin üst bölümü koyu camla kapatılmış, çatı kenarı yeşil kaplamayla bitiyor. Gökyüzü açık ve mavi.",
+    "en": "The upper section of the cabin is closed with dark glass and the roof edge ends in green covering. The sky is clear and blue."
+  },
+  "seoFilename": "kabinin-kose-ve-cati-detayi-yatay-kaplama-ve-ustte-koyu-cam",
+  "tags": {
+    "type": [
+      "bahçe kulübesi / depo"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

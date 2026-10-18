@@ -1,0 +1,37 @@
+{
+  "source": "Pergola ve Kamelyalar/5211.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sarı villa önünde beyaz boyalı ahşap pergola kirişleri",
+    "en": "White-painted timber pergola beams in front of a yellow villa"
+  },
+  "alt": {
+    "tr": "Sarı villa cephesinin önünde beyaz boyalı ahşap pergola, arkada panjurlu pencereler ve deck zemin",
+    "en": "White-painted timber pergola in front of a yellow villa facade, with shuttered windows behind and a deck floor"
+  },
+  "caption": {
+    "tr": "Pergola kirişleri cephe boyunca uzanıyor. Alt tarafta panjurlu üç pencere sıralanıyor.",
+    "en": "The pergola beams run along the facade, with three shuttered windows lined up beneath."
+  },
+  "seoFilename": "sari-villa-onunde-beyaz-boyali-ahsap-pergola",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

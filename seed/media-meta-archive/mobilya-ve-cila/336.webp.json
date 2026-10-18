@@ -1,0 +1,35 @@
+{
+  "source": "Mobilya ve Cila/336.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam duvarlı toplantı odasında beyaz masalar",
+    "en": "White tables in a glass-walled meeting room"
+  },
+  "alt": {
+    "tr": "Cam duvarlı toplantı odasında beyaz masalar, beyaz sandalyeler ve yeşil bitkiler",
+    "en": "White tables, white chairs and green plants in a glass-walled meeting room"
+  },
+  "caption": {
+    "tr": "Geniş cam duvarlı bir odada beyaz masalar yan yana duruyor. Ön planda palmiye yaprakları görünüyor.",
+    "en": "White tables stand side by side in a room with a wide glass wall. Palm leaves show in the foreground."
+  },
+  "seoFilename": "cam-duvarli-toplanti-odasinda-beyaz-masalar-ve-sandalyeler",
+  "tags": {
+    "type": [
+      "ofis mobilyası"
+    ],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.3
+}

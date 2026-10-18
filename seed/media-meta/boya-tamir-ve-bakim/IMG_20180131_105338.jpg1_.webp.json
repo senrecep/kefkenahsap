@@ -1,0 +1,38 @@
+{
+  "file": "IMG_20180131_105338.jpg1_.webp",
+  "category": "boya-tamir-ve-bakim",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe deck zeminine yağ uygulaması",
+    "en": "Applying oil to a garden deck floor"
+  },
+  "alt": {
+    "tr": "Çimenlik bahçede diz çökmüş bir usta, kırmızımsı kahverengi deck tahtalarına sünger ile koruyucu yağ sürüyor",
+    "en": "A craftsman kneels on a garden lawn, wiping protective oil onto reddish-brown deck boards with a sponge"
+  },
+  "caption": {
+    "tr": "Bahçedeki deck zeminin yarısına koruyucu yağ sürüldü; yağ çekince ahşabın damarları ve rengi belirginleşiyor. Yanındaki kova ise henüz işlem görmemiş açık renkli tahtaların hemen yanında duruyor.",
+    "en": "Protective oil has been applied to part of the garden deck, and the grain and color of the wood stand out where it has soaked in. The untreated lighter boards sit right next to it."
+  },
+  "seoFilename": "bahce-deck-yag-uygulamasi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "deck",
+      "çimenlik"
+    ],
+    "finish": [
+      "koruyucu yağ",
+      "yağ uygulaması",
+      "sünger ile uygulama"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.86
+}

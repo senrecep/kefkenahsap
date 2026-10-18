@@ -1,0 +1,39 @@
+{
+  "source": "Ireko-Teak/13153.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Metal çerçeveli terasta sık çıtalı ahşap tavan",
+    "en": "Closely slatted timber ceiling on a metal-framed terrace"
+  },
+  "alt": {
+    "tr": "Metal çerçeveli teras üzerinde sık çıtalı ahşap tavan, altında deck zemin ve örtülü bir masa, uzakta tepe",
+    "en": "Closely slatted timber ceiling on a metal-framed terrace, with a deck below, a covered table and a hillside view"
+  },
+  "caption": {
+    "tr": "Çıtalar yakın aralıklı ve çerçeveye dik. Alttaki deck tahtaları da aynı yönde uzanıyor.",
+    "en": "The slats are closely spaced and cross the frame. The deck boards below run in the same direction."
+  },
+  "seoFilename": "metal-cerceveli-terasta-sik-citali-ahsap-tavan",
+  "tags": {
+    "type": [
+      "pergola",
+      "tavan kaplaması / lambri",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

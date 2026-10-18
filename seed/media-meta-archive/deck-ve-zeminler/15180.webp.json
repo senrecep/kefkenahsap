@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/15180.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Restoran önünde deck altı çakıl ve borular",
+    "en": "Gravel and pipes under the deck in front of a restaurant"
+  },
+  "alt": {
+    "tr": "Cam cepheli restoranın önünde, deck çıkarılmış alanda açıkta kalan çakıl, borular ve su ızgarası; altta deck tahtaları",
+    "en": "Gravel, pipes and a drain grating exposed where the deck has been lifted in front of a glass-fronted restaurant"
+  },
+  "caption": {
+    "tr": "Çıkarılan bölümde çakıl dolgu ve damlama hattı gibi borular görünüyor. Yanda ızgaralı bir kanal ve beton zemin uzanıyor.",
+    "en": "In the opened section a gravel fill and pipes like drip lines show. A grated channel and concrete floor run alongside."
+  },
+  "seoFilename": "restoran-onunde-deck-alti-cakil-ve-borular-acikta",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

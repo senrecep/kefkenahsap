@@ -1,0 +1,38 @@
+{
+  "file": "1.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe katında yükseltilmiş ahşap deck",
+    "en": "Raised wooden deck in a garden"
+  },
+  "alt": {
+    "tr": "Pembe cepheli bir binanın bahçesinde, cam kapının önünde yan yüzeyleri de ahşap kaplı, yükseltilmiş bal rengi deck",
+    "en": "Raised honey-brown wooden deck with clad sides in a garden, in front of a glass door of a pink-fronted building"
+  },
+  "caption": {
+    "tr": "Zemin kat bahçesinde, cam kapının önüne kurulan yükseltilmiş deck. Yan yüzeyler de aynı ahşapla kaplandı, üzerine koyu bal tonunda vernik uygulandı.",
+    "en": "A raised deck built in front of a ground-floor glass door. The sides are clad in the same timber and the surface has a dark honey-toned finish."
+  },
+  "seoFilename": "bahce-yukseltilmis-ahsap-deck",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras",
+      "villa",
+      "dış mekan"
+    ],
+    "finish": [
+      "vernik",
+      "bal rengi"
+    ],
+    "stage": [
+      "finished",
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

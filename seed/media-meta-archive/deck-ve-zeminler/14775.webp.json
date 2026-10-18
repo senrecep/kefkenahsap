@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/14775.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Şapla düzeltilmiş eski zemin",
+    "en": "Old floor levelled with screed"
+  },
+  "alt": {
+    "tr": "Çimenin kenarında, üstü yeni şapla düzeltilmiş eski ahşap zemin; arkada yatay çıtalı ahşap korkuluk",
+    "en": "Old timber floor at the edge of a lawn, levelled on top with fresh screed, with a horizontal-slat timber railing behind"
+  },
+  "caption": {
+    "tr": "Zeminin kenarı ahşap bir çerçeveyle sınırlı. Deck döşenmeden önceki hazırlık aşaması gibi görünüyor.",
+    "en": "The edge of the floor is held by a timber frame. It looks like the preparation stage before the deck goes down."
+  },
+  "seoFilename": "sap-ile-duzeltilmis-eski-zemin-ve-ahsap-korkuluk",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

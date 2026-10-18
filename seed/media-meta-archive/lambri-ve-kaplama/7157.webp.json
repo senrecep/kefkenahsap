@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/7157.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çapraz koyu kirişli cephe, kiremit çatılı bina",
+    "en": "Facade with dark diagonal timbers and a tiled roof"
+  },
+  "alt": {
+    "tr": "Krem sıvalı yüzeyde koyu ahşap çaprazlı kirişlerle bölünmüş cephe, üstte kiremit çatı ve solda ahşap korkuluklu balkon",
+    "en": "Facade divided by dark diagonal timber beams on cream render, with a tiled roof above and a balcony"
+  },
+  "caption": {
+    "tr": "Koyu kirişler cepheyi kare ve üçgen bölmelere ayırıyor. Çatı geniş saçakla öne çıkıyor.",
+    "en": "The dark beams divide the facade into squares and triangles. The roof projects on a wide eave."
+  },
+  "seoFilename": "capraz-koyu-ahsap-kirisli-bindirme-cephe-kiremit-catili-bina",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

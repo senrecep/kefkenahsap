@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14100.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bahçede çelik ayaklı L biçimli oturma bölümü",
+    "en": "L-shaped seating on steel legs in a garden"
+  },
+  "alt": {
+    "tr": "Taş zeminli bahçede, ince metal ayaklar üzerinde yükselen koyu vernikli L biçimli ahşap oturma bölümü",
+    "en": "A dark-varnished L-shaped timber seating unit raised on thin metal legs in a stone-paved garden"
+  },
+  "caption": {
+    "tr": "Oturma bölümü ince metal ayaklarla zeminden biraz yüksekte duruyor, bu yüzden hafif görünüyor. Köşeye oturan sırt yüksek.",
+    "en": "The unit rests slightly above the ground on thin metal legs, so it looks light. The back along the corner is high."
+  },
+  "seoFilename": "bahcede-celik-ayakli-l-bicimli-koyu-vernikli-oturma-bolumu",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

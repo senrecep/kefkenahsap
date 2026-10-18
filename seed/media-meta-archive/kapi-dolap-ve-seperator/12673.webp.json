@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/12673.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Tek eğimli çatılı dolabın köşesi ve menteşeli kapağı",
+    "en": "Corner and hinged door of a single-pitch roofed cabinet"
+  },
+  "alt": {
+    "tr": "Duvar dibindeki alçak ahşap dolabın köşesi, yatay tahtalı yüzeyi, metal menteşeler ve üstteki kırmızı çatı kenarı",
+    "en": "Corner of a low timber cabinet at the foot of a wall, with horizontal boards, metal hinges and the edge of its red roof above"
+  },
+  "caption": {
+    "tr": "Köşe birleşimi düzgün kapanmış. Kapak yatay tahtalarla aynı düzlemde, menteşe kenarda.",
+    "en": "The corner joint is closed neatly. The door sits flush with the horizontal boards, hinged at the edge."
+  },
+  "seoFilename": "tek-egimli-catili-dolabin-kosesi-mentese-kapagi",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

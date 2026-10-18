@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14977.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yan yana duran iki koyu ahşap kasanın çıta ayrıntısı",
+    "en": "Slat detail on two dark timber boxes standing together"
+  },
+  "alt": {
+    "tr": "Atölyede yan yana duran koyu kahve iki ahşap kasanın yatay çıta dizilimi ve tahtalı kapakları, yanında takozlar",
+    "en": "Horizontal slat layout and boarded lids on two dark brown timber boxes side by side in a workshop, with offcuts beside them"
+  },
+  "caption": {
+    "tr": "Yan çıtalar kutuyu hem kapatıyor hem havalandırıyor. Tahta takozlar yerde duruyor.",
+    "en": "The side slats both enclose the box and let air through. Timber blocks lie on the floor beside it."
+  },
+  "seoFilename": "yan-yana-duran-iki-koyu-ahsap-kasanin-cita-ayrintisi",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/11677.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Şemsiye tenteli ahşap salıncak, beyaz çit önünde",
+    "en": "Umbrella-canopy timber swing in front of a white fence"
+  },
+  "alt": {
+    "tr": "Beyaz çitin önünde, ahşap deck üstünde duran şemsiye tenteli ve minderli ahşap salıncak",
+    "en": "Timber swing with an umbrella-style canopy and cushions on a timber deck in front of a white fence"
+  },
+  "caption": {
+    "tr": "Salıncağın tenteyi taşıyan kavisli ayakları ahşap. Altında deck zemin serilmiş.",
+    "en": "The curved legs that carry the canopy are timber. A deck floor is laid beneath."
+  },
+  "seoFilename": "semsiye-tenteli-ahsap-salincak-beyaz-cit-onunde",
+  "tags": {
+    "type": [
+      "salıncak",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

@@ -1,0 +1,38 @@
+{
+  "file": "WhatsApp-Image-2021-06-27-at-20.13.43-2-1.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede deck zemin, sandık bank ve ahşap jardinyer",
+    "en": "Garden deck with storage bench and wooden planter"
+  },
+  "alt": {
+    "tr": "Bahçede kepenkli duvarın önünde koyu kızıl kahverengi ahşap deck zemin, üzerinde kapaklı sandık bank ve ahşap çiçeklik",
+    "en": "Dark reddish-brown wooden deck in a garden beside a roller shutter, with a lidded storage bench and a wooden planter box"
+  },
+  "caption": {
+    "tr": "Çakıl taşlı bahçe köşesine yapılan ahşap deck zemin; üzerine aynı ahşaptan kapaklı sandık bank ve çiçeklik eklendi.",
+    "en": "A wooden deck built in a gravel garden corner, with a matching lidded storage bench and planter box added on top."
+  },
+  "seoFilename": "bahce-deck-zemin-sandik-bank-ahsap-ciceklik",
+  "tags": {
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "bahçe",
+      "teras",
+      "dış mekan"
+    ],
+    "finish": [
+      "vernikli",
+      "yağlı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

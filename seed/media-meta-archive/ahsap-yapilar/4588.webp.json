@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/4588.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ağaçlıklı alanda beyaz boyalı küçük kabin",
+    "en": "Small white-painted timber cabin among trees"
+  },
+  "alt": {
+    "tr": "Eski bir taş duvarın ve binanın önünde, ağaçların arasında duran beyaz boyalı küçük ahşap kabin",
+    "en": "Small white-painted timber cabin standing among trees in front of an old stone wall and building"
+  },
+  "caption": {
+    "tr": "Kabinin geniş bir penceresi var, yanında bir bank ve eski tip bir bahçe lambası duruyor. Arkada taş bir yapı seçiliyor.",
+    "en": "The cabin has a wide window with a bench and an old-style garden lamp beside it. A stone building can be made out behind."
+  },
+  "seoFilename": "agaclikli-alanda-beyaz-boyali-kucuk-ahsap-kabin",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

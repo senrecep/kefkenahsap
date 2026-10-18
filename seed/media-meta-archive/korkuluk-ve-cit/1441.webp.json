@@ -1,0 +1,40 @@
+{
+  "source": "Korkuluk ve Cit/1441.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar üzerine kurulan deck ve çapraz korkuluk",
+    "en": "Deck and cross-braced railing built on a stone wall"
+  },
+  "alt": {
+    "tr": "Taş kaplı duvarın üstüne kurulmuş açık yeşilimsi ahşap deck, köşede kalın direk ve çapraz çıtalı korkuluk",
+    "en": "Light greenish timber deck built on a stone-clad wall, with a thick corner post and a cross-braced railing"
+  },
+  "caption": {
+    "tr": "Korkuluk köşe direğinden iki yana X desenli çıtalarla açılıyor. Alt kısımda yapı artıkları duruyor.",
+    "en": "The railing spreads from the corner post in both directions with X-shaped braces. Building debris lies below."
+  },
+  "seoFilename": "tas-duvar-uzerine-kurulu-deck-capraz-korkuluk",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

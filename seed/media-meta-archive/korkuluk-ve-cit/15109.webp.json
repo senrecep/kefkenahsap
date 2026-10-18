@@ -1,0 +1,35 @@
+{
+  "source": "Korkuluk ve Cit/15109.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Uzun yatay kirişli ahşap sıra, yerde aletler",
+    "en": "Long horizontal-beam timber row with tools on the ground"
+  },
+  "alt": {
+    "tr": "Meyve bahçesinde ince direklerin taşıdığı uzun yatay ahşap kiriş, yerde bir çekiç, mavi boru ve tahta parçası",
+    "en": "Long horizontal timber beam carried on slender posts in an orchard, with a hammer, a blue pipe and a board on the ground"
+  },
+  "caption": {
+    "tr": "Kiriş eşit aralıklı dört direğe oturuyor. Çevrede kuru yapraklar ve toprak var.",
+    "en": "The beam rests on four evenly spaced posts. Dry leaves and soil surround it."
+  },
+  "seoFilename": "bahcede-uzun-yatay-kirisli-ahsap-sira-yerde-aletler",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.4
+}

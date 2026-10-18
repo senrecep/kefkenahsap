@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/4663.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Çimenlik içinde çapraz korkuluklu ahşap deck",
+    "en": "Timber deck with cross-braced railing on a lawn"
+  },
+  "alt": {
+    "tr": "Ağaçların arasında, çimenliğin ortasında çapraz korkuluklu açık renk ahşap deck",
+    "en": "Light timber deck with cross-braced railing among trees in the middle of a lawn"
+  },
+  "caption": {
+    "tr": "Ağaçların gölgesinde, çimenliğin içine oturan geniş bir ahşap deck. Kenarları çapraz desenli ahşap korkulukla çevrili.",
+    "en": "A broad timber deck set into the lawn in the shade of trees, edged with a cross-braced timber railing."
+  },
+  "seoFilename": "cimenlik-icinde-capraz-korkuluklu-ahsap-deck-park",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "park",
+      "çimenlik",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

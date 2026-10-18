@@ -1,0 +1,37 @@
+{
+  "file": "6.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede korkuluklu ahşap deck ve merdiven",
+    "en": "Garden wooden deck with railing and stairs"
+  },
+  "alt": {
+    "tr": "Bahçede ağacın çevresine kurulmuş, kızıl kahve cilalı ahşap deck, korkuluk ve taş zemine inen basamaklar",
+    "en": "Reddish-brown stained wooden deck with railing and steps down to a stone-paved garden floor, built around a tree"
+  },
+  "caption": {
+    "tr": "Bahçedeki ağacın yanına kurulan yükseltilmiş ahşap deck; dikey çıtalı korkuluk ve taş zemine inen basamaklarla tamamlandı.",
+    "en": "Raised wooden deck built beside a garden tree, finished with a vertical-slat railing and steps down to the stone paving."
+  },
+  "seoFilename": "bahce-ahsap-deck-korkuluk-merdiven",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "merdiven",
+      "korkuluk"
+    ],
+    "finish": [
+      "vernik",
+      "kızıl kahve ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

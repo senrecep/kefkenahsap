@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/12081.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çalı dibinde köşe oluşturan telli ahşap çerçeve ve çıtalı çit, toprak zeminde",
+    "en": "Wire-mesh timber frame and slat fence forming a corner on bare soil"
+  },
+  "alt": {
+    "tr": "Çalıların altında köşe oluşturan yeşil tel örgülü ahşap çerçeve ve sağdaki sivri uçlu çıtalı çit",
+    "en": "A green wire-mesh timber frame forming a corner beneath shrubs with a pointed-slat fence at right"
+  },
+  "caption": {
+    "tr": "İki panel dik açıyla birleşiyor, tel örgü sağdaki çıtalı çiti tamamlıyor. Zemin henüz çimlenmemiş, çıplak toprak.",
+    "en": "Two panels meet at a right angle and the wire mesh completes the slat fence at the right. The ground has not yet been grassed and is bare soil."
+  },
+  "seoFilename": "cali-dibinde-kose-olusturan-telli-cerceve-citali-cit",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

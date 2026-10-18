@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12211.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar önünde kısmen döşenmiş yükseltilmiş deck",
+    "en": "Partly boarded raised deck in front of a stone wall"
+  },
+  "alt": {
+    "tr": "Taş duvar önünde kirişlerin üzerine kısmen tahta döşenmiş yükseltilmiş deck",
+    "en": "Raised deck in front of a stone wall with boards laid across part of the joists"
+  },
+  "caption": {
+    "tr": "Kirişlerin bir bölümü örtülmüş, kalanı henüz açık. Altındaki toprak zemin görünüyor.",
+    "en": "One part of the joists is covered and the rest is still open. The soil underneath shows."
+  },
+  "seoFilename": "tas-duvar-onunde-kismen-doseli-yukseltilmis-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

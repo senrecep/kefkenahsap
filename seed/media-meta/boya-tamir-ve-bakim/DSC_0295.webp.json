@@ -1,0 +1,37 @@
+{
+  "file": "DSC_0295.webp",
+  "category": "boya-tamir-ve-bakim",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Kütük taşıyıcılı ahşap balkon ve direk bakımı",
+    "en": "Log column balcony maintenance and wood finishing"
+  },
+  "alt": {
+    "tr": "Koyu kahverengi boyası yenilenmiş yuvarlak kütük kolonlar ve üst kat ahşap balkon korkulukları.",
+    "en": "Dark brown stained round log columns and second floor wooden balcony railings."
+  },
+  "caption": {
+    "tr": "Müstakil evin dış cephesindeki yuvarlak kütük taşıyıcı direkler, kirişler ve balkon korkulukları koruyucu ahşap boyası ile yenilendi.",
+    "en": "Round log posts, beams, and upper deck railings of a detached house refinished with protective exterior wood stain."
+  },
+  "seoFilename": "kutuk-direk-ahsap-balkon-boya-bakim",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "müstakil ev"
+    ],
+    "finish": [
+      "koyu meşe",
+      "ahşap koruyucu boya",
+      "vernik"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

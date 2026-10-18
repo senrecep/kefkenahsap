@@ -1,0 +1,37 @@
+{
+  "Guides": {
+    "title": "Ratgeber",
+    "intro": "Kurze, einfache Texte zur Holzauswahl, zur Pflege und dazu, was den Preis bestimmt.",
+    "metaDescription": "Einfache Ratgeber von Kefken Ahşap Dekorasyon zur Holzauswahl, zur Pflege und dazu, was den Preis bestimmt.",
+    "empty": "Noch kein Ratgeber veröffentlicht. Stellen Sie Ihre Frage gern per WhatsApp.",
+    "updated": "Aktualisiert",
+    "toc": "In diesem Beitrag",
+    "tocCount": "{count, plural, one {# Abschnitt} other {# Abschnitte}}",
+    "faq": "Häufige Fragen",
+    "author": "Autor",
+    "authorRole": "Gründer und Handwerker, {company}",
+    "related": "Passende Leistungen",
+    "projects": "Unsere Arbeiten dazu",
+    "relatedGuides": "Weitere Ratgeber",
+    "ctaTitle": "Sprechen wir über Ihr Vorhaben",
+    "ctaText": "Schicken Sie uns ein paar Fotos der Fläche; dann besprechen wir gemeinsam das passende Holz und die Arbeit.",
+    "table": "Tabelle (seitlich scrollbar)"
+  },
+  "WoodSamples": {
+    "title": "Holzmuster",
+    "hint": "Zum Drehen ziehen oder die Pfeiltasten nutzen",
+    "note": "Die Texturen stammen aus Fotos unserer Arbeiten.",
+    "names": {
+      "iroko": "Iroko",
+      "teak": "Teak",
+      "cam": "Kesseldruckimprägnierte Kiefer (Waldkiefer)",
+      "thermowood": "Thermoholz"
+    },
+    "facts": {
+      "iroko": "Hartholz · draußen dauerhaft · ca. 660 kg/m³",
+      "cam": "Weichholz · draußen mit Imprägnierung · ca. 510 kg/m³"
+    },
+    "source": "Ganzes Foto ansehen",
+    "roledescription": "3D-Muster"
+  }
+}

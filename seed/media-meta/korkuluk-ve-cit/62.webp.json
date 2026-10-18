@@ -1,0 +1,36 @@
+{
+  "file": "62.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Kiremit çatılı evde koyu renk ahşap saçak ve pencere doğramaları",
+    "en": "Dark wood eaves and window frames on a tile-roofed house"
+  },
+  "alt": {
+    "tr": "Kırmızı kiremit çatılı, beyaz sıvalı ve tuğla kaplı iki katlı evde koyu kahve ahşap saçaklar ve pencere çerçeveleri",
+    "en": "Two-storey house with red tile roofs, white plaster and brick base, with dark brown wooden eaves and window frames"
+  },
+  "caption": {
+    "tr": "Beyaz sıvalı, alt kısmı tuğla kaplı evin geniş çatı saçakları ve pencere çevreleri koyu renk ahşapla yapıldı.",
+    "en": "The wide roof eaves and window surrounds of this white-plastered house with a brick base are made of dark-stained wood."
+  },
+  "seoFilename": "kiremit-catili-ev-ahsap-sacak-pencere-dogramasi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "dış cephe",
+      "müstakil ev",
+      "çatı saçağı",
+      "pencere çerçevesi"
+    ],
+    "finish": [
+      "koyu kahve"
+    ],
+    "stage": [
+      "after"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.8
+}

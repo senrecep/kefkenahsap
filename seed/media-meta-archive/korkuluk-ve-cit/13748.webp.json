@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/13748.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deck üzerinde çıtalı ahşap korkuluk",
+    "en": "Slatted timber railing on a deck"
+  },
+  "alt": {
+    "tr": "Açık tonlu yeni deck zemininin kenarında dikey çıtalı ahşap korkuluk, arkada ağaç yaprakları",
+    "en": "New light-toned decking with a vertical-slat timber railing along its edge and tree leaves behind"
+  },
+  "caption": {
+    "tr": "Korkuluk zemin kenarında yan yana çıtalarla ilerliyor, köşede merdivene doğru kıvrılıyor.",
+    "en": "The railing runs along the floor edge with evenly spaced slats and turns towards the steps at the corner."
+  },
+  "seoFilename": "deck-uzerinde-citali-ahsap-korkuluk",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

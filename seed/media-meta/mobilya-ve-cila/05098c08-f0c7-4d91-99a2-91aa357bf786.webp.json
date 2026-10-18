@@ -1,0 +1,37 @@
+{
+  "file": "05098c08-f0c7-4d91-99a2-91aa357bf786.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Geometrik desenli parlak lake ayırıcı panel",
+    "en": "Glossy lacquer divider panel with geometric cut-outs"
+  },
+  "alt": {
+    "tr": "Siyah çerçeveli, bej parlak yüzeyli ve üçgen boşluklu geometrik duvar paneli; yanında siyah deri koltuk var",
+    "en": "Beige high-gloss geometric wall panel with triangular cut-outs in a black frame, next to a black leather sofa"
+  },
+  "caption": {
+    "tr": "Bej renkli, yüksek parlaklıkta cilalı yüzeyi olan panel; üçgen boşluklardan arkadaki alan görünüyor. Siyah çerçeve ve siyah deri koltukla birlikte bir bekleme alanında duruyor.",
+    "en": "A beige panel with a high-gloss finish and triangular openings that show the space behind it. It stands in a waiting area with a black frame and a black leather sofa."
+  },
+  "seoFilename": "geometrik-desenli-parlak-ayirici-panel",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "iç mekan",
+      "bekleme alanı",
+      "ofis"
+    ],
+    "finish": [
+      "yüksek parlak",
+      "lake",
+      "bej"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.72
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14374.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Koyu deck tahtalarının yakın planı",
+    "en": "Close-up of dark deck boards"
+  },
+  "alt": {
+    "tr": "Cam kapı önündeki koyu kırmızı kahverengi deck tahtaları, düzenli aralıklar ve tahta uçlarındaki birleşim çizgileri",
+    "en": "Dark red-brown deck boards in front of a glass door, showing even gaps and the joint lines at the board ends"
+  },
+  "caption": {
+    "tr": "Yağlı yüzey damar yapısını ve tonlardaki farkı gösteriyor. Tahta uçları kapıya paralel bir hatta bitiyor.",
+    "en": "The oiled surface shows the grain structure and the differences in tone. The board ends finish in a line parallel to the door."
+  },
+  "seoFilename": "koyu-deck-tahtalari-yakin-plan-arali-birlesim",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

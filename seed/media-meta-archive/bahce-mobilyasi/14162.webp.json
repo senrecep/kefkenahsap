@@ -1,0 +1,39 @@
+{
+  "source": "Ireko-Teak/14162.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Gri taş zeminde ahşap koltuk iskeleti ve kütük dilimi tabure",
+    "en": "Timber armchair frame and a log-slice stool on grey paving"
+  },
+  "alt": {
+    "tr": "Gri taş döşemede, çıtalı oturaklı ve kolçaklı bir ahşap koltuk iskeleti ile ince siyah metal ayaklı",
+    "en": "On grey paving, a timber armchair frame with a slatted seat and arms beside a round log-slice stool on black legs"
+  },
+  "caption": {
+    "tr": "Koltuk iskeleti henüz minder almamış, çıtalı oturağı açıkta. Kütük dilimi tabure yan masa olarak da kullanılabilir.",
+    "en": "The armchair frame has no cushion yet, leaving its slatted seat bare. The log-slice stool can also serve as a side table."
+  },
+  "seoFilename": "gri-tas-zeminde-ahsap-koltuk-iskeleti-ve-metal-ayakli-kutuk",
+  "tags": {
+    "type": [
+      "oturma grubu",
+      "sehpa"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

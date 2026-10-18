@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/10611.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Evin yanında ayaklı ahşap merdiven ve sahanlık",
+    "en": "Timber stairs and landing on legs beside the house"
+  },
+  "alt": {
+    "tr": "Evin kapısının yanında ayaklar üzerinde duran ahşap merdiven, sahanlık ve çaprazlı korkuluk; taş başlık",
+    "en": "Timber stairs, landing and cross-braced railing standing on legs beside a house door, with a stone coping"
+  },
+  "caption": {
+    "tr": "Merdiven ve sahanlık ahşap ayaklar üzerinde yükseliyor. Korkuluk çaprazlı, kenarda taş başlık var.",
+    "en": "The stairs and landing stand on timber legs. The railing is cross-braced and there is a stone coping at the edge."
+  },
+  "seoFilename": "evin-yaninda-ayakli-ahsap-merdiven-sahanlik",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

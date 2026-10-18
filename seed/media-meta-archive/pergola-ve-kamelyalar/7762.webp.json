@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/7762.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deniz karşısında pergola çatı iskeleti, altında çalışan insanlar",
+    "en": "Pergola roof frame facing the sea with people working beneath"
+  },
+  "alt": {
+    "tr": "Deniz karşısında beşik çatılı ahşap pergola iskeleti, altında çalışan insanlar ve arkada kayalık kıyı",
+    "en": "Gable-roofed timber pergola frame facing the sea, with people working beneath it and a rocky shore behind"
+  },
+  "caption": {
+    "tr": "Çatı tahtaları çakılmış, çatkının iç kısmında kirişler görünüyor. Ağaç yapıya yakın duruyor.",
+    "en": "The roof boards are fixed and the rafters show on the inside of the frame. A tree stands close to the structure."
+  },
+  "seoFilename": "deniz-karsisinda-pergola-cati-iskeleti-calisan-insanlar",
+  "tags": {
+    "type": [
+      "pergola",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

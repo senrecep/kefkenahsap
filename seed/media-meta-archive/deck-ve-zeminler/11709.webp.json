@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/11709.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çit ve bitkiler arasında uzanan deck",
+    "en": "Deck running between hedge and plants"
+  },
+  "alt": {
+    "tr": "Yüksek çit ile çalılar arasında bahçede uzanan turuncu tonlu ahşap deck",
+    "en": "Orange-toned timber deck running through a garden between a tall hedge and shrubs"
+  },
+  "caption": {
+    "tr": "Deck, bahçenin uzun kenarı boyunca ilerliyor. Ön tarafta cam korkuluk ve budanmış ağaç görünüyor.",
+    "en": "The deck follows the long side of the garden. A glass railing and a trimmed tree show in front."
+  },
+  "seoFilename": "cit-ve-bitkiler-arasinda-uzanan-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

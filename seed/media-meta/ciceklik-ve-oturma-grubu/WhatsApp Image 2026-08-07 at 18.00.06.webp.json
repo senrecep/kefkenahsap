@@ -1,0 +1,34 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 18.00.06.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Parmaklıklı beyaz ahşap çiçeklik",
+    "en": "White wooden planter with slatted panel"
+  },
+  "alt": {
+    "tr": "İçi siyah, dışı beyaz boyalı uzun ahşap çiçeklik; arkasında yatay çıtalı yüksek bir panel var, atölye içinde duruyor",
+    "en": "Long white-painted wooden planter box with a black interior and a tall horizontal slatted panel at the back, standing indoors"
+  },
+  "caption": {
+    "tr": "Beyaz boyalı, yatay çıtalı panelli ahşap çiçeklik. Bitkilere destek olacak şekilde arkasına yüksek bir çıta panel eklendi.",
+    "en": "A white-painted wooden planter with a tall horizontal slat panel at the back to support climbing plants."
+  },
+  "seoFilename": "beyaz-citali-panelli-ahsap-ciceklik",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "indoor",
+      "workshop"
+    ],
+    "finish": [
+      "white paint"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

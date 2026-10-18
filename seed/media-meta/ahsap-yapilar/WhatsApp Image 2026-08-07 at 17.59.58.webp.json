@@ -1,0 +1,38 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 17.59.58.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe tezgâhı için ahşap kapaklı dolap kapakları",
+    "en": "Wooden cabinet doors for a garden counter"
+  },
+  "alt": {
+    "tr": "Beyaz boyalı bahçe tezgâhının altında, siyah demir menteşeli üç koyu kahverengi ahşap kapak ve önünde çakıl taşı zemin",
+    "en": "Three dark brown wooden doors with black iron hinges under a white garden counter, with a pebble border and lawn in front"
+  },
+  "caption": {
+    "tr": "Beyaz sıvalı bahçe tezgâhının altındaki bölmelere yapılan, dövme görünümlü menteşe ve kulplu üç ahşap kapak.",
+    "en": "Three wooden doors with wrought-style hinges and handles, fitted to the storage compartments under a white plastered garden counter."
+  },
+  "seoFilename": "bahce-tezgahi-ahsap-kapak",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "açık hava"
+    ],
+    "finish": [
+      "koyu vernik",
+      "demir menteşe",
+      "yanık ahşap görünümü"
+    ],
+    "stage": [
+      "finished",
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

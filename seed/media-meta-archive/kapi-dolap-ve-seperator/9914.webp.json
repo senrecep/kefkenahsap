@@ -1,0 +1,33 @@
+{
+  "source": "Kapi Dolap ve Seperator/9914.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Eski kalın kirişlerin önünde ahşap karkas duvar iskeleti",
+    "en": "Timber stud wall frame in front of old heavy beams"
+  },
+  "alt": {
+    "tr": "Koyu renkli eski kalın ahşap kirişlerin önünde, ince dikmelerle kurulmuş ahşap duvar karkası; arkada bahçe görünüyor",
+    "en": "Timber wall frame of slim studs built in front of dark old heavy timber beams, with a garden visible behind"
+  },
+  "caption": {
+    "tr": "Karkasın dikmeleri ve yatay çıtaları yerinde duruyor, kaplama henüz yapılmamış.",
+    "en": "The studs and horizontal rails are in place and no cladding has been fixed yet."
+  },
+  "seoFilename": "eski-kirislerin-onunde-ahsap-karkas-duvar",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.45
+}

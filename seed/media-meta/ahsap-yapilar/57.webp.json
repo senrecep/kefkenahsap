@@ -1,0 +1,37 @@
+{
+  "file": "57.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Yatay lambri kaplı üç katlı ahşap ev cephesi",
+    "en": "Three-storey wooden house with horizontal cladding"
+  },
+  "alt": {
+    "tr": "Yatay ahşap kaplamalı, kırmızımsı kahverengi vernikli üç katlı evin cephesi; pencere altlarında oyma süslemeler var.",
+    "en": "Facade of a three-storey house clad in horizontal reddish-brown varnished wood, with carved ornaments under the windows."
+  },
+  "caption": {
+    "tr": "Yatay lambri kaplamalı üç katlı ahşap ev. Pencere altlarındaki oyma süslemeler cepheye geleneksel bir görünüm veriyor.",
+    "en": "A three-storey wooden house with horizontal cladding. The carved ornaments under the windows give the facade a traditional look."
+  },
+  "seoFilename": "yatay-lambri-kapli-uc-katli-ahsap-ev-cephesi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "dış cephe",
+      "müstakil ev",
+      "bahçe"
+    ],
+    "finish": [
+      "vernik",
+      "kırmızımsı kahverengi ton",
+      "oyma süsleme"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

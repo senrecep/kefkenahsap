@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/10082.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Duvar ile cam kapı arasında deck",
+    "en": "Deck between a wall and a glass door"
+  },
+  "alt": {
+    "tr": "Duvar ile cam kapı arasında uzanan ahşap deck; güneş ve gölge tahtaların üstünde karışıyor",
+    "en": "Timber deck running between a wall and a glass door, with sun and shade mixing across the boards"
+  },
+  "caption": {
+    "tr": "Tahtaların rengi gün ışığında yeşilimsi sarıdan açık kahveye kayıyor. Yan duvarın dibinde derz çıtası görünüyor.",
+    "en": "The colour of the boards shifts from greenish yellow to light brown in the daylight. A trim batten is visible at the foot of the wall."
+  },
+  "seoFilename": "duvar-ve-cam-kapi-arasinda-uzanan-ahsap-deck-gunes-ve-golge",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

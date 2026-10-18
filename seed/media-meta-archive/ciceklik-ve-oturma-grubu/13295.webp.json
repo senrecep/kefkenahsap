@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/13295.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Uzun çiçekliğin iç yüzeyi ve bitkiler",
+    "en": "Inside of a long planter and plants"
+  },
+  "alt": {
+    "tr": "Uzun ahşap çiçekliğin içindeki ara çıtalar, su borusu ve yanındaki yeşil bitkiler, yakın çekim",
+    "en": "Close view of the cross battens, water pipe and neighbouring green plants inside a long timber planter"
+  },
+  "caption": {
+    "tr": "Çiçekliğin içinde tabanı tutan çıtalar sıralanıyor. Henüz astar ve toprak yok.",
+    "en": "Battens that hold the base are lined up inside. There is no liner or soil yet."
+  },
+  "seoFilename": "uzun-ahsap-ciceklik-ic-yuzeyi-ve-bitkiler-yakin-cekim",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14680.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ağaç altında turuncu kahverengi deck",
+    "en": "Orange-brown deck under a tree"
+  },
+  "alt": {
+    "tr": "Gri taş basamakların üstünde, bir ağacın altına yayılan geniş turuncu kahverengi deck; kenarında halat korkuluk",
+    "en": "Wide orange-brown deck spreading under a tree above grey stone steps, with a cable railing at its edge"
+  },
+  "caption": {
+    "tr": "Deck ağaç gövdesini sarıyor ve taş basamaklarla bahçe seviyesine bağlanıyor. Arkada yamaç ve yeşillik uzanıyor.",
+    "en": "The deck wraps around the tree trunk and links to garden level by stone steps. A slope and greenery stretch behind."
+  },
+  "seoFilename": "agac-altinda-turuncu-kahverengi-deck-ve-tas-basamak",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

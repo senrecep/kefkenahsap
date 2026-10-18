@@ -1,0 +1,36 @@
+{
+  "file": "10924696_890181071026493_1451770578250438917_n.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Müstakil ev verandasında ahşap sundurma yapımı",
+    "en": "Wooden veranda canopy construction for villa patio"
+  },
+  "alt": {
+    "tr": "Müstakil evin havuz başı verandasına kurulan çatılı ahşap sundurma ve taşıyıcı direkler.",
+    "en": "Wooden veranda canopy with pitched roof installed on a poolside villa patio."
+  },
+  "caption": {
+    "tr": "Müstakil evin verandasında duvara monte edilen ahşap sundurma uygulaması. Ahşap dikmeler ve çatı kaplamasıyla havuz kenarında gölgelikli bir dinlenme alanı oluşturuldu.",
+    "en": "Wall-mounted wooden veranda canopy built for a villa patio. Featuring timber posts and pitched roofing, it creates a shaded outdoor space by the pool."
+  },
+  "seoFilename": "villa-veranda-ahsap-sundurma",
+  "tags": {
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "veranda",
+      "bahçe",
+      "havuz başı"
+    ],
+    "finish": [],
+    "stage": [
+      "process",
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

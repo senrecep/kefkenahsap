@@ -1,0 +1,35 @@
+{
+  "source": "Kapi Dolap ve Seperator/14484.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Duvara dayalı açık renkli ham ahşap pencere çerçeveleri",
+    "en": "Pale unfinished timber window frames leaning on a wall"
+  },
+  "alt": {
+    "tr": "Beyaz duvara yaslanmış, üst üste istiflenmiş açık renkli ham ahşap pencere çerçeveleri",
+    "en": "Stack of pale unfinished timber window frames leaning on a white wall"
+  },
+  "caption": {
+    "tr": "Çerçeveler henüz cila ya da boya görmemiş. Montaj öncesi atölye girişinde bekliyor.",
+    "en": "The frames have not yet had a finish or paint. They wait at the workshop entrance before installation."
+  },
+  "seoFilename": "duvara-dayali-acik-renkli-ham-ahsap-pencere-cerceveleri",
+  "tags": {
+    "type": [
+      "pencere / panjur"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

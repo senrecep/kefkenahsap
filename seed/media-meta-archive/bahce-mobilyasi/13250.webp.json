@@ -1,0 +1,36 @@
+{
+  "source": "Ireko-Teak/13250.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Basamaklı dış mutfak dolapları, yakın görünüş",
+    "en": "Stepped outdoor kitchen cabinets, close view"
+  },
+  "alt": {
+    "tr": "Çıtalı ahşap duvarın önünde, basamaklı bir boşluğu olan ahşap kaplı dış mutfak dolapları; yakından",
+    "en": "Timber-clad outdoor kitchen cabinets with a stepped recess in front of a slatted timber wall, seen close up"
+  },
+  "caption": {
+    "tr": "Dolap kapakları dikey ahşap çıtalarla kaplı, tezgâh yuvaları gri çerçeveli. Ortada iki basamaklı bir bölüm var.",
+    "en": "The cabinet fronts are clad in vertical timber slats and the worktop openings have grey frames. There is a section with two steps in the middle."
+  },
+  "seoFilename": "basamakli-ahsap-kapli-dis-mutfak-dolaplari-yakin-gorunus",
+  "tags": {
+    "type": [
+      "dış mutfak / mangal alanı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.6
+}

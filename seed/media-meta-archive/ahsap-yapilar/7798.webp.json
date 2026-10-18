@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/7798.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yalıtım kaplı tavan ve panjur çıtaları",
+    "en": "Insulated ceiling and louvre slats"
+  },
+  "alt": {
+    "tr": "Ahşap kirişlerle taşınan koyu yalıtım kaplı tavan ve yandaki pencerenin panjur çıtaları",
+    "en": "Ceiling with dark insulation carried on timber beams, and louvre slats of the window at the side"
+  },
+  "caption": {
+    "tr": "Tavan kirişleri açık renk, aralarına koyu yalıtım levhaları yerleştirilmiş. Yanda panjur çıtalarından ışık sızıyor.",
+    "en": "The ceiling beams are light and dark insulation boards sit between them. Light comes through the louvre slats at the side."
+  },
+  "seoFilename": "ahsap-kirisli-koyu-yalitim-kapli-tavan-ve-panjur-citalari",
+  "tags": {
+    "type": [],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.35
+}

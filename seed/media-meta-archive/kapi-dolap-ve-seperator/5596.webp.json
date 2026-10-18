@@ -1,0 +1,35 @@
+{
+  "source": "Kapi Dolap ve Seperator/5596.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Çift kapaklı açık renk ahşap dolap",
+    "en": "Light timber cabinet with double doors"
+  },
+  "alt": {
+    "tr": "Taş duvar önünde, çapraz destekli iki kapağı olan açık renk ahşap dış mekân dolabı",
+    "en": "Light timber outdoor cabinet with two braced doors in front of a stone wall"
+  },
+  "caption": {
+    "tr": "Dolabın iki kapağı dikey tahtalardan yapıldı ve çapraz destekle güçlendirildi. Üst kısımda açık bir raf bölümü var.",
+    "en": "The two doors are made of vertical boards with diagonal braces, and there is an open shelf section above."
+  },
+  "seoFilename": "cift-kapakli-acik-renk-ahsap-dolap-tas-duvar",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "avlu",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

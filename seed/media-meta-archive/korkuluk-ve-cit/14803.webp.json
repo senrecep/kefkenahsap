@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/14803.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kiremit çatılı teras kenarında demir korkuluk",
+    "en": "Iron railing on a terrace beside a tiled roof"
+  },
+  "alt": {
+    "tr": "Balık sırtı kırmızı tuğla terasın kenarında siyah dikey demirli korkuluk ve ahşap küpeşte, solda kiremit çatı",
+    "en": "Black vertical-bar iron railing with a timber handrail along a red herringbone brick terrace, with a tiled roof on the left"
+  },
+  "caption": {
+    "tr": "Korkuluk terasın köşesini dönüyor. Zeminde ambalaj artığı duruyor.",
+    "en": "The railing turns the corner of the terrace. Packaging scraps lie on the floor."
+  },
+  "seoFilename": "kiremit-desenli-teras-demir-korkuluk-ve-kupeste",
+  "tags": {
+    "type": [
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

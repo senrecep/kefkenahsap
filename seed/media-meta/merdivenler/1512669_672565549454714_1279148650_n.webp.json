@@ -1,0 +1,36 @@
+{
+  "file": "1512669_672565549454714_1279148650_n.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bina girişinde kavisli ahşap merdiven",
+    "en": "Curved wooden entrance stairs"
+  },
+  "alt": {
+    "tr": "Bina girişinde yarım daire biçiminde, geniş basamaklı ahşap merdiven ve yanında yatay çıtalı ahşap korkuluk duvarı",
+    "en": "Wide curved wooden stairs at a building entrance, beside a horizontal-slat wooden screen wall"
+  },
+  "caption": {
+    "tr": "Bina girişi için yapılan kavisli ahşap merdiven. Basamaklar yarım daire şeklinde, yan tarafta yatay çıtalı ahşap kaplama var; zemin de ahşap döşeme.",
+    "en": "A curved wooden staircase built for a building entrance, with a horizontal-slat wooden side wall and a timber deck floor."
+  },
+  "seoFilename": "bina-girisi-kavisli-ahsap-merdiven",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bina girişi",
+      "dış mekan",
+      "merdiven"
+    ],
+    "finish": [
+      "vernikli",
+      "yatay çıta kaplama"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

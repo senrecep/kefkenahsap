@@ -1,0 +1,34 @@
+{
+  "source": "Kopru ve Iskele/11007.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Ağaçlık alanda kemerli ahşap köprü",
+    "en": "Arched timber footbridge among trees"
+  },
+  "alt": {
+    "tr": "Ağaçların arasında, taş döşeli zeminin yanında yükselen çapraz desenli korkuluklu kemerli ahşap köprü",
+    "en": "Arched timber footbridge with cross-pattern railings rising beside stone paving among trees"
+  },
+  "caption": {
+    "tr": "Ağaçlık bir alanda, taş döşemenin yanından geçen kemerli köprü. Korkuluklar çapraz desenli, köşe dikmeleri top başlıklı.",
+    "en": "An arched footbridge beside stone paving in a wooded setting. The railings have a cross pattern and the corner posts carry ball finials."
+  },
+  "seoFilename": "agaclik-alanda-kemerli-ahsap-kopru-tas-zemin",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "park",
+      "ağaçlık alan",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

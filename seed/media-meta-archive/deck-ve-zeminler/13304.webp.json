@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/13304.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Duvar önünde koyu kahverengi dikdörtgen deck ve çiçeklik",
+    "en": "Dark brown rectangular deck in front of a wall with a planter"
+  },
+  "alt": {
+    "tr": "Çimen üzerinde duvar önünde koyu kahverengi dikdörtgen deck, yanda çiçeklik, önde basamak taşı",
+    "en": "Dark brown rectangular deck on the lawn in front of a wall, with a planter at the side and a stepping stone in front"
+  },
+  "caption": {
+    "tr": "Deck tek parça gibi serilmiş ve kenarları ince bir çerçeve tahtasıyla kapanmış. Yağ rengi derinleştirmiş.",
+    "en": "The deck is laid as one panel with a slim frame board closing the edges. The oil has deepened the colour."
+  },
+  "seoFilename": "duvar-onunde-koyu-kahverengi-dikdortgen-deck-ve-ciceklik",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

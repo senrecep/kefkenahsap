@@ -1,0 +1,35 @@
+{
+  "source": "Ireko-Teak/14302.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimde kavisli ahşap hamak standı",
+    "en": "Curved timber hammock stand on the lawn"
+  },
+  "alt": {
+    "tr": "Çimenin üzerinde yatan kavisli ahşap yay ve çapraz ayak parçası",
+    "en": "Curved timber arch and cross-foot piece lying on the grass"
+  },
+  "caption": {
+    "tr": "Standın kavisli gövdesi ile çapraz ayağı yerde duruyor. Çevre kuru yapraklarla kaplı.",
+    "en": "The curved body of the stand and its cross foot lie on the ground. Dry leaves are scattered around."
+  },
+  "seoFilename": "cimde-kavisli-ahsap-hamak-standi-parcasi",
+  "tags": {
+    "type": [
+      "hamak standı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

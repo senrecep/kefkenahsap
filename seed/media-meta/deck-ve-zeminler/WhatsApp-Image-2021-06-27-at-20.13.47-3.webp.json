@@ -1,0 +1,36 @@
+{
+  "file": "WhatsApp-Image-2021-06-27-at-20.13.47-3.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede açılı ahşap deck zemin",
+    "en": "Angled wooden deck in a garden"
+  },
+  "alt": {
+    "tr": "Bahçede çalılıkların ve taş döşemenin arasında uzanan, açılı kenarlı, sarı-kahve tonlu ahşap deck zemin",
+    "en": "Honey-brown wooden deck with an angled edge running between garden shrubs and a stone paved path"
+  },
+  "caption": {
+    "tr": "Bahçedeki çalıların ve taş zeminin arasına yerleştirilmiş, kenarları açılı kesilmiş ince lamalı deck. Yüzey cilalı, damar deseni açıkta.",
+    "en": "A deck of narrow boards with angled edges, set between garden shrubs and stone paving. The finish is clear and the wood grain shows through."
+  },
+  "seoFilename": "bahce-ahsap-deck-zemin",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "teras"
+    ],
+    "finish": [
+      "vernikli",
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

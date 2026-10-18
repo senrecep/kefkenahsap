@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12467.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölye tezgahı önünde zemine serilmiş kafes çıtaları",
+    "en": "Lattice slats laid out on the floor in front of the workshop bench"
+  },
+  "alt": {
+    "tr": "Atölyede tezgahın önünde zemine serilmiş, kırmızı-kahve boyalı ahşap kafes panelleri; üstte kesim aletleri ve malzeme",
+    "en": "Red-brown painted timber lattice panels laid out on the workshop floor in front of the bench"
+  },
+  "caption": {
+    "tr": "Paneller zeminde L biçiminde açılmış. Yanda kereste parçası ve tezgahta işlenen malzeme görünüyor.",
+    "en": "The panels are laid out in an L shape on the floor. A piece of timber and material being worked on at the bench are visible."
+  },
+  "seoFilename": "atolye-tezgahi-onunde-zemine-serilmis-kafes-citalari",
+  "tags": {
+    "type": [
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

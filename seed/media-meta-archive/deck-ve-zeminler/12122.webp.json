@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/12122.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapılı girişin önünde deck şeridi",
+    "en": "Deck strip in front of a glass-door entrance"
+  },
+  "alt": {
+    "tr": "Cam kapılı, tenteli girişin önünde çimene bakan açık kahverengi deck şeridi",
+    "en": "Light brown deck strip facing the lawn in front of an awning-covered glass-door entrance"
+  },
+  "caption": {
+    "tr": "Şerit kapı eşiğinden çimene kadar inen sade bir basamaksız geçiş yapıyor. Yanda ahşap bank görünüyor.",
+    "en": "The strip makes a plain level link from the threshold to the lawn. A timber bench shows at the side."
+  },
+  "seoFilename": "cam-kapili-giris-onunde-deck-seridi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "giriş"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

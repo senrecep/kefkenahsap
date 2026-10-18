@@ -1,0 +1,38 @@
+{
+  "file": "11295928_958667710844495_7184368211604335914_n.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Deniz kenarında çapraz korkuluklu ahşap kamelya",
+    "en": "Seaside wooden gazebo with cross-braced railings"
+  },
+  "alt": {
+    "tr": "Deniz kıyısında, ahşap zeminli ve çapraz korkuluklu, tek eğimli çatı iskeleti açık duran ahşap kamelya",
+    "en": "Wooden gazebo by the sea with a decked floor, cross-pattern railings and an open single-pitch roof frame"
+  },
+  "caption": {
+    "tr": "Deniz kenarındaki arazide kurulan ahşap kamelya. Zemin döşemesi tamamlanmış, çapraz desenli korkuluklar takılmış, çatı iskeleti kirişleriyle ayakta duruyor.",
+    "en": "A wooden gazebo built on a plot by the sea. The deck floor is laid, the cross-pattern railings are in place and the roof frame stands with its rafters exposed."
+  },
+  "seoFilename": "deniz-kenari-capraz-korkuluklu-ahsap-kamelya",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "deniz kenarı",
+      "bahçe",
+      "açık hava",
+      "kamelya"
+    ],
+    "finish": [
+      "doğal ahşap",
+      "çapraz korkuluk",
+      "ahşap zemin"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

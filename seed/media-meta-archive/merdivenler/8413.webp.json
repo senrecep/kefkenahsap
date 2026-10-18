@@ -1,0 +1,33 @@
+{
+  "source": "Merdivenler/8413.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Altı çift kapaklı dolaplı ahşap merdiven",
+    "en": "Timber staircase with a double-door cupboard beneath"
+  },
+  "alt": {
+    "tr": "Duvar boyunca yükselen ahşap merdivenin altında, ahşap kaplı çift kapaklı dolap",
+    "en": "Double-door timber-clad cupboard built into the space under a staircase running along a wall"
+  },
+  "caption": {
+    "tr": "Merdivenin altındaki üçgen boşluk ahşap kaplamayla kapatılıp çift kapaklı dolaba dönüştürülmüş.",
+    "en": "The triangular space under the staircase is clad in timber and turned into a double-door cupboard."
+  },
+  "seoFilename": "merdiven-alti-cift-kapakli-ahsap-dolap",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

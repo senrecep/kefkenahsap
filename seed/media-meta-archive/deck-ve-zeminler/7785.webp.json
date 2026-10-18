@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/7785.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Gölü gören çapraz korkuluklu deck ve pergola",
+    "en": "Deck with cross-braced railing and pergola facing the lake"
+  },
+  "alt": {
+    "tr": "Göl kıyısındaki yamaçta, çapraz çıtalı korkuluklu açık renkli deck ve üstünde pergola yapısı; yan kenarda oturma bankı",
+    "en": "Pale deck with a cross-braced railing and a pergola structure above it on a slope by a lake, with a bench along the side edge"
+  },
+  "caption": {
+    "tr": "Deck taş bir duvarın üstüne ayaklarla oturuyor ve ağaç dalları altına sarkıyor. Arkada ahşap bir yapı ve uzak yerleşim görünüyor.",
+    "en": "The deck sits on legs above a stone wall and tree branches hang down over it. A timber building and a distant settlement show behind."
+  },
+  "seoFilename": "golu-goren-capraz-korkuluklu-deck-ve-pergola-yapisi",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk",
+      "pergola"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

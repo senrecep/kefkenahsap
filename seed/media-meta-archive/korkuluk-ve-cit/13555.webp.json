@@ -1,0 +1,38 @@
+{
+  "source": "Merdivenler/13555.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kahverengi ahşap korkuluk, yanında çuvallar ve taş duvar",
+    "en": "Brown timber railing beside sacks and a stone wall"
+  },
+  "alt": {
+    "tr": "Merdiven boyunca inen kahverengi cilalı ahşap korkuluk, aşağıda taş istinat duvarı üstünde çapraz çıtalı devamı",
+    "en": "Brown varnished timber railing running down a staircase, with its cross-braced continuation above a stone retaining wall"
+  },
+  "caption": {
+    "tr": "Korkuluk önce eğimli basamak boyunca sonra yatay çaprazlı bölümle devam ediyor.",
+    "en": "The railing runs first along the sloping steps and then continues as a flat cross-braced section."
+  },
+  "seoFilename": "kahverengi-ahsap-korkuluk-yaninda-cuvallar-ve-tas-duvar",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "merdiven"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

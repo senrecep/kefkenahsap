@@ -1,0 +1,35 @@
+{
+  "file": "0432a48b-0d41-4ae0-a833-ce6f23467449.webp",
+  "category": "mobilya-ve-cila",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Geometrik oymalı masif ahşap çift kanat kapı",
+    "en": "Carved wooden double door with geometric motifs"
+  },
+  "alt": {
+    "tr": "Atölyede zımparalanmış, geometrik yıldız motifli oymalara sahip masif ahşap çift kanat kapı.",
+    "en": "Sanded solid wood double door with intricate geometric star carvings in a workshop."
+  },
+  "caption": {
+    "tr": "Geleneksel geometrik oymalarıyla özenle hazırlanan masif ahşap çift kanat kapı, atölyemizde cila öncesi hazırlık aşamasında.",
+    "en": "Handcrafted solid wood double door featuring traditional geometric motifs, sanded and ready for varnishing in our workshop."
+  },
+  "seoFilename": "oymali-ahsap-cift-kanat-kapi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "workshop",
+      "interior"
+    ],
+    "finish": [
+      "raw",
+      "unfinished"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.92
+}

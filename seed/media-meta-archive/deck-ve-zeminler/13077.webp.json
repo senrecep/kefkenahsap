@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/13077.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yeşil çit köşesinde ayaklı deck alt iskeleti",
+    "en": "Deck sub-frame on legs in a green hedge corner"
+  },
+  "alt": {
+    "tr": "Yeşil çit köşesinde, çimen üzerine kurulmuş ayaklı açık renkli deck alt iskeleti",
+    "en": "Pale deck sub-frame on short legs set on the lawn in the corner of a green hedge"
+  },
+  "caption": {
+    "tr": "İskelet zeminden birkaç santim yüksekte duruyor ve ara kirişlerle bölünmüş. Üzerinde henüz tahta yok.",
+    "en": "The frame stands slightly clear of the ground and is divided by cross joists. There are no boards on it yet."
+  },
+  "seoFilename": "yesil-cit-kosesinde-ayakli-deck-alt-iskeleti",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

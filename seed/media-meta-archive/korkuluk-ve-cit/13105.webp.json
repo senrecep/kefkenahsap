@@ -1,0 +1,38 @@
+{
+  "source": "Kapi Dolap ve Seperator/13105.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Duvardaki ahşap tırmanma çıtası, sarmaşık ve iki kuş evi",
+    "en": "Wall-mounted timber climbing trellis, ivy and two birdhouses"
+  },
+  "alt": {
+    "tr": "Düz duvara monte edilmiş kare gözlü ahşap tırmanma çıtasına sarılan sarmaşık",
+    "en": "Ivy climbing a square-mesh timber trellis fixed to a plain wall"
+  },
+  "caption": {
+    "tr": "Çıtanın gözleri geniş aralıklı ve sarmaşık yukarı doğru tırmanıyor. Kuş evleri yandaki bir direğe takılmış.",
+    "en": "The cells of the trellis are widely spaced and the ivy is climbing upwards. The birdhouses are mounted on a pole at the side."
+  },
+  "seoFilename": "duvardaki-ahsap-tirmanma-citasi-sarmasik-kus-evi",
+  "tags": {
+    "type": [
+      "kafes / paravan",
+      "kuş evi"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

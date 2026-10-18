@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/5107.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar önünde yeni serilmiş küçük deck",
+    "en": "Small newly laid deck in front of a stone wall"
+  },
+  "alt": {
+    "tr": "Taş duvarın önünde, çıplak toprak zemine serilmiş küçük açık renkli deck; çevre henüz düzenlenmemiş",
+    "en": "Small pale deck laid on bare soil in front of a stone wall, with the surroundings not yet landscaped"
+  },
+  "caption": {
+    "tr": "Deck düz bir dikdörtgen olarak toprağın üstünde duruyor. Arkadaki duvar gri taş bloklarla örülmüş.",
+    "en": "The deck sits on the soil as a plain rectangle. The wall behind is built from grey stone blocks."
+  },
+  "seoFilename": "tas-duvar-onunde-toprak-zeminde-yeni-serilmis-kucuk-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

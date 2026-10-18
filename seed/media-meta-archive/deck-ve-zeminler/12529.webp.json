@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12529.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Parlak cilalı köşeli deck platformu",
+    "en": "Glossy varnished deck platform with a sharp corner"
+  },
+  "alt": {
+    "tr": "Yan yüzeyleri kaplı, parlak cilalı turuncu kahverengi köşeli deck platformu",
+    "en": "Glossy varnished orange-brown deck platform with clad sides and a sharp corner"
+  },
+  "caption": {
+    "tr": "Üst ve yan tahtalar köşede düzgün birleşiyor. Yağmur sonrası yüzeyde su damlaları kalmış.",
+    "en": "The top and side boards meet cleanly at the corner. Drops of water sit on the surface after rain."
+  },
+  "seoFilename": "parlak-cilali-koseli-deck-platformu",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

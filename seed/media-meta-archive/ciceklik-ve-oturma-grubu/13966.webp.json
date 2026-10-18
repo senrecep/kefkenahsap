@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/13966.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimen kenarında servi dolu çiçeklik",
+    "en": "Planter full of cypress beside the lawn"
+  },
+  "alt": {
+    "tr": "Çimenlik kenarında, içinde servi ağaçları yetişen vernikli yatay tahtalı ahşap çiçeklik",
+    "en": "Varnished horizontal-board timber planter with cypress trees growing in it beside a lawn"
+  },
+  "caption": {
+    "tr": "Çiçeklik duvara bitişik, köşede dönüyor. İçindeki servilerin yeşili tahtaların turuncusunu öne çıkarıyor.",
+    "en": "The planter abuts the wall and turns at the corner. The green of the cypresses sets off the orange of the boards."
+  },
+  "seoFilename": "cimenlik-kenarinda-servi-agaclari-olan-vernikli-yatay",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

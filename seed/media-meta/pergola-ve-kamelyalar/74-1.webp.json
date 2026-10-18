@@ -1,0 +1,35 @@
+{
+  "file": "74-1.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede duvara dayalı ahşap pergola ve oturma platformu",
+    "en": "Wall-side wooden pergola with seating platform in a garden"
+  },
+  "alt": {
+    "tr": "Bahçe duvarının önünde açık renk ahşap pergola, altında ahşap kaplı oturma platformu, yanında mangal ve bitkiler",
+    "en": "Light wooden pergola against a garden wall over a timber-clad seating platform, with a barbecue and plants beside it"
+  },
+  "caption": {
+    "tr": "Bahçe duvarına yaslanan, tek tarafı iki direkle taşınan pergola. Altında ahşap kaplı bir oturma platformu var; çevresi bitkilerle çevrili.",
+    "en": "A pergola leaning on the garden wall, carried by posts on one side. Underneath is a timber-clad seating platform surrounded by plants."
+  },
+  "seoFilename": "bahce-ahsap-pergola-oturma-platformu",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras",
+      "dış mekan"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.86
+}

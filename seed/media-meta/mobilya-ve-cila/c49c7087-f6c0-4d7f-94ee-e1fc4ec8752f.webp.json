@@ -1,0 +1,35 @@
+{
+  "file": "c49c7087-f6c0-4d7f-94ee-e1fc4ec8752f.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Banyo lavabo dolabı ve boy dolapları",
+    "en": "Bathroom vanity with tall storage cabinets"
+  },
+  "alt": {
+    "tr": "Zeytin yeşili mat boyalı banyo dolabı, mermer görünümlü tezgah, aynalı raf bölümü ve iki yanda boy dolapları",
+    "en": "Olive green matte bathroom cabinetry with a marble-look countertop, mirrored shelf section and tall cabinets on both sides"
+  },
+  "caption": {
+    "tr": "Askıda çekmeceli lavabo dolabı, iki yanda uzun gövdeli boy dolapları ve ışıklı aynalı raf bölümü. Gizli kulplu kapaklar mat boyalı, aynanın yanındaki dikey çıtalar ahşap görünümlü.",
+    "en": "A wall-hung vanity with drawers, tall cabinets on both sides and a lit mirrored shelf section. The doors have recessed handles and a matte painted finish, with vertical wood-look slats beside the mirror."
+  },
+  "seoFilename": "banyo-lavabo-dolabi-boy-dolaplari",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "banyo",
+      "iç mekan"
+    ],
+    "finish": [
+      "mat boya",
+      "gizli kulp"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.72
+}

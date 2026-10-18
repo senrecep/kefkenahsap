@@ -1,0 +1,35 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/11058.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çapraz ayaklı kare ahşap masa, mozaik zeminde",
+    "en": "Square timber table with crossed legs on a mosaic floor"
+  },
+  "alt": {
+    "tr": "Dükkan önündeki mozaik taş zeminde, tablası dikdörtgen tahtalardan yapılmış kare vernikli ahşap masa",
+    "en": "A square varnished timber table with a top of rectangular planks on a mosaic stone floor in front of a shop"
+  },
+  "caption": {
+    "tr": "Masa, alt tarafta çapraz birleşen ayaklarla duruyor. Vernik tahtaların rengini koyulaştırmış.",
+    "en": "The table stands on legs that cross beneath it. The varnish has deepened the colour of the boards."
+  },
+  "seoFilename": "capraz-ayakli-kare-ahsap-masa-mozaik-zeminde",
+  "tags": {
+    "type": [
+      "sehpa"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

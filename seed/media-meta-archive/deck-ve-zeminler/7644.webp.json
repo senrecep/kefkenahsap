@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/7644.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Eskimiş gri deck üzerinde sökülmüş tahtalar",
+    "en": "Removed boards on an aged grey deck"
+  },
+  "alt": {
+    "tr": "Balkonda grileşmiş eski deck; sökülmüş tahta parçaları üstünde duruyor, kenarda asma yaprakları ve bir kablo",
+    "en": "Old greyed deck on a balcony, with removed pieces of board lying on it and vine leaves and a cable at the edge"
+  },
+  "caption": {
+    "tr": "Tahtalar güneş ve yağmurdan solmuş, bazı parçalar yerinden çıkarılmış. Arkada ahşap korkuluk ve deniz görünüyor.",
+    "en": "The boards have faded in sun and rain and some pieces have been taken out. A timber railing and the sea show behind."
+  },
+  "seoFilename": "eskimis-gri-deck-uzerinde-sokulmus-tahtalar-asma-yapraklari",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "balkon"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

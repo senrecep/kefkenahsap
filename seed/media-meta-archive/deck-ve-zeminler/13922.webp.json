@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/13922.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yuvarlak binanın yanında çakıl ve taş plakalar arasında deck çerçevesi",
+    "en": "Deck frame between gravel and stone slabs beside a round building"
+  },
+  "alt": {
+    "tr": "Yuvarlak binanın yanında çakıl ve taş plakalar arasında kurulan ince bir deck alt çerçevesi",
+    "en": "Slim deck sub-frame set between gravel and stone slabs beside a round building"
+  },
+  "caption": {
+    "tr": "Çerçeve bina girişinin önünde kısa bir zemin oluşturuyor ve taş plakalı yola bağlanıyor. Üstü henüz boş.",
+    "en": "The frame makes a short floor in front of the building entrance and joins the stone-slab path. Its top is still open."
+  },
+  "seoFilename": "yuvarlak-bina-yaninda-cakil-ve-tasta-deck-cercevesi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

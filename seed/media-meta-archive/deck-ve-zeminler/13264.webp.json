@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/13264.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çalılar arasında cam çitli havuz kenarında deck yolu",
+    "en": "Deck path between shrubs along a glass-fenced pool"
+  },
+  "alt": {
+    "tr": "Çalılar arasında, cam çitli havuzun kenarında uzanan kırmızı kahverengi deck yolu",
+    "en": "Red-brown deck path running between shrubs along the edge of a glass-fenced pool"
+  },
+  "caption": {
+    "tr": "Yol sık çalıların arasından havuzun arka köşesine doğru daralıyor. Cam çit yolun bir yanını kapatıyor.",
+    "en": "The path narrows between thick shrubs towards the back corner of the pool. The glass fence closes one side of it."
+  },
+  "seoFilename": "calilar-arasinda-cam-citli-havuz-kenarinda-deck-yolu",
+  "tags": {
+    "type": [
+      "deck",
+      "yürüyüş yolu"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı",
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

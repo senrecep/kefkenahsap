@@ -1,0 +1,37 @@
+{
+  "file": "00522201-682c-48de-8467-c9fe77198b83.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Siyah parlak cilalı masa, altın yaldız desenli",
+    "en": "Black high-gloss table with gold ornamental inlay"
+  },
+  "alt": {
+    "tr": "Siyah parlak cilalı dikdörtgen masa; üst yüzeyde ve kenarlarda altın renkli süslemeli bordür deseni var",
+    "en": "Black high-gloss rectangular table with a gold ornamental border pattern on the top and along the sides"
+  },
+  "caption": {
+    "tr": "Atölyede duran siyah, yüksek parlaklıkta cilalı masa. Tablanın kenarında ve yan yüzde altın renkli süsleme işlemesi görülüyor.",
+    "en": "A black, high-gloss varnished table in the workshop, with gold-colored ornamental detailing along the top edge and the side panel."
+  },
+  "seoFilename": "siyah-parlak-cilali-masa-altin-desenli",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "atölye",
+      "iç mekan"
+    ],
+    "finish": [
+      "parlak cila",
+      "siyah boya",
+      "altın süsleme"
+    ],
+    "stage": [
+      "finished",
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

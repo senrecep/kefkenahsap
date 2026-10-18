@@ -1,0 +1,35 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/10937.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Yeşil çit önünde sıra çiçeklikler",
+    "en": "Row of timber planters with a green hedge"
+  },
+  "alt": {
+    "tr": "Kaldırım kenarında yan yana dizilmiş, içlerinde sık iğne yapraklı ağaçlar olan bal rengi ahşap çiçeklikler",
+    "en": "Honey-toned timber planters lined up along a pavement, planted with dense conifers"
+  },
+  "caption": {
+    "tr": "Yan yana dizilen çiçeklikler, içlerindeki ağaçlarla birlikte yeşil bir perde oluşturuyor.",
+    "en": "Planters set side by side, and the trees in them form a green screen."
+  },
+  "seoFilename": "sira-ahsap-ciceklik-yesil-cit",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "kaldırım",
+      "dış mekân"
+    ],
+    "finish": [
+      "bal rengi"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

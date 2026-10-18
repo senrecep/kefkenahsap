@@ -1,0 +1,34 @@
+{
+  "file": "32.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ahşap kaplı binaya çıkan merdiven ve korkuluk",
+    "en": "Wooden stairs and railing leading to a timber-clad building"
+  },
+  "alt": {
+    "tr": "Ahşap kaplı küçük binanın kapısına çıkan kalın tahta basamaklı merdiven ve çapraz çıtalı ahşap korkuluk",
+    "en": "Thick plank steps and a wooden railing with crossed slats leading up to the door of a small timber-clad building"
+  },
+  "caption": {
+    "tr": "Yatay ahşap kaplamalı binanın girişine çıkan basamaklar ve yanındaki çapraz çıtalı korkuluk. Merdiven çevredeki çimlik alanla birlikte açık havada duruyor.",
+    "en": "Steps up to the entrance of a building clad in horizontal timber, with a crossed-slat railing alongside. The staircase sits outdoors beside a lawn."
+  },
+  "seoFilename": "ahsap-merdiven-capraz-citali-korkuluk-ahsap-kaplama-bina",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "dış mekan",
+      "bahçe",
+      "giriş merdiveni",
+      "çimlik alan"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

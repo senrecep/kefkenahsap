@@ -1,0 +1,36 @@
+{
+  "source": "Ireko-Teak/11818.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Çerçeveli parlak ahşap deck kenarı",
+    "en": "Framed edge of a glossy timber deck"
+  },
+  "alt": {
+    "tr": "Koyu toprağın yanında, çerçeveli kenarı görünen parlak ahşap deck tahtaları",
+    "en": "Glossy timber deck boards with a framed edge beside dark soil"
+  },
+  "caption": {
+    "tr": "Deck köşesine yakından bakış: çerçeve tahtası döşemeyi sarıyor, tahtalar arasında düzenli boşluk var.",
+    "en": "A close look at a deck corner: a frame board wraps the boards, which are laid with even gaps."
+  },
+  "seoFilename": "parlak-ahsap-deck-kenari-cerceve-detay",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "parlak yüzey"
+    ],
+    "stage": [
+      "detail",
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

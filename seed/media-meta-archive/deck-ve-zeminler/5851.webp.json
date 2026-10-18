@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/5851.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş istinat duvarı yanında kiriş çerçevesi",
+    "en": "Joist frame beside a stone retaining wall"
+  },
+  "alt": {
+    "tr": "Taş istinat duvarı ve evin yanında kurulmuş kiriş çerçevesi; sağ tarafta deck tahtaları döşenmeye başlamış",
+    "en": "Joist frame built beside a stone retaining wall and a house, with deck boards starting to go down on the right"
+  },
+  "caption": {
+    "tr": "Çerçeve boyuna uzanıyor ve sol kenarda bir drenaj borusu duvar dibinden geçiyor. Ev cephesi sarı kaplamalı.",
+    "en": "The frame runs lengthwise and a drainage pipe passes along the foot of the wall on the left. The house front is clad in yellow."
+  },
+  "seoFilename": "tas-istinat-duvari-ve-ev-yaninda-kiris-cercevesi-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

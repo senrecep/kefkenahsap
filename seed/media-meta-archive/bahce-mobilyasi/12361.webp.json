@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/12361.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Balkonda ocaklı, mini buzdolaplı ahşap mutfak",
+    "en": "Timber kitchen on a balcony with a hob and mini fridge"
+  },
+  "alt": {
+    "tr": "Balkon zemininde, ocak ve mini buzdolabı yerleştirilmiş, kapaklı ahşap dolaplardan oluşan açık mutfak",
+    "en": "Open kitchen made of timber cabinets with lids, with a hob and a mini fridge fitted on the balcony floor"
+  },
+  "caption": {
+    "tr": "Dolaplar açık renk tahtadan, bir kapağı açılıp kapanan üst bölüme bağlı. Beyaz mini buzdolabı dolapların yanında duruyor.",
+    "en": "The cabinets are made of pale boards with a hinged lid on the upper section. A white mini fridge stands beside the cabinets."
+  },
+  "seoFilename": "balkonda-ocak-mini-buzdolabi-ve-kapakli-ahsap-dolapli-acik",
+  "tags": {
+    "type": [
+      "dış mutfak / mangal alanı"
+    ],
+    "wood": [],
+    "setting": [
+      "balkon"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.55
+}

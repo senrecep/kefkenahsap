@@ -1,0 +1,39 @@
+{
+  "source": "Kopru ve Iskele/5009.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimlikte gezinti yolu çerçevesini kuran üç usta",
+    "en": "Three craftsmen assembling a walkway frame on the lawn"
+  },
+  "alt": {
+    "tr": "Evin önündeki çimlikte, göl kıyısına uzanan ahşap yolun kirişlerini yerleştiren üç kişi; yerde taş ve kalas parçaları",
+    "en": "Three people setting the joists of a timber walkway towards the lakeshore on the lawn in front of a house"
+  },
+  "caption": {
+    "tr": "Yolun taşıyıcı çerçevesi çimin üzerinde kuruluyor. Yan taraftaki korkuluk dikmeleri şimdiden yerinde.",
+    "en": "The supporting frame of the walkway is being built on the lawn. The railing posts on the side are already in place."
+  },
+  "seoFilename": "cimlikte-gezinti-yolu-cercevesini-kuran-ustalar",
+  "tags": {
+    "type": [
+      "yürüyüş yolu",
+      "iskele"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe",
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

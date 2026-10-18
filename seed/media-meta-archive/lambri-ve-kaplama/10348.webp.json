@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/10348.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çokgen pencere çevresi ve tavan boyunca lambri",
+    "en": "Panelling around a polygonal window and along the ceiling"
+  },
+  "alt": {
+    "tr": "Tavanın ortasında yükselen, çokgen pencereyi çerçeveleyen açık renkli lambri kaplama ve dışarıdaki ağaçlar",
+    "en": "Light panelling rising in the middle of the ceiling and framing a polygonal window, with trees outside"
+  },
+  "caption": {
+    "tr": "Lambri şeritler pencere kenarında yön değiştirip çerçeve oluşturuyor.",
+    "en": "The panelling strips change direction at the window edge and form a frame."
+  },
+  "seoFilename": "cokgen-pencere-cevresi-ve-tavan-boyunca-acik-renk-lambri",
+  "tags": {
+    "type": [
+      "tavan kaplaması / lambri"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

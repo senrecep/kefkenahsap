@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/10852.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Merdiven girişinde çaprazlı korkuluk ve çimlik",
+    "en": "Cross-braced railing at the stair head, with a lawn below"
+  },
+  "alt": {
+    "tr": "Merdivenin başında çaprazlı korkuluk, kalın direk ve beyaz çit; aşağıda çimlik, uzakta evler",
+    "en": "Cross-braced railing, a thick post and a white fence at the head of the stairs, with a lawn below and houses in the distance"
+  },
+  "caption": {
+    "tr": "Korkuluk kalın bir direkle başlıyor ve basamaklar çimliğe iniyor. Uzakta bir sıra ev var.",
+    "en": "The railing starts at a thick post and the steps go down to the lawn. A row of houses stands in the distance."
+  },
+  "seoFilename": "merdiven-girisinde-caprazli-korkuluk-beyaz-cit-cimlik",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

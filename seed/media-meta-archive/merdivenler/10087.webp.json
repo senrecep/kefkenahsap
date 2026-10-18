@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/10087.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimlik üzerinde iki yandan çaprazlı korkuluklu merdiven",
+    "en": "Stairs with cross-braced railings on both sides over a lawn"
+  },
+  "alt": {
+    "tr": "Çimlik üzerinde iki yanı çapraz çıtalı korkuluklu açık renkli ahşap merdiven; arkada duvar ve çatı hattı",
+    "en": "Light timber staircase with cross-braced railings on both sides over a lawn, with a wall and roofline behind"
+  },
+  "caption": {
+    "tr": "Merdivenin iki yanında da çaprazlı korkuluk var. İlk basamak çimin üstüne oturuyor.",
+    "en": "There are cross-braced railings on both sides of the stairs. The first step rests on the grass."
+  },
+  "seoFilename": "cimlik-uzerinde-iki-yandan-caprazli-korkuluklu-merdiven",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

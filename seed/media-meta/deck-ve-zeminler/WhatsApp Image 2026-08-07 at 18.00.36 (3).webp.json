@@ -1,0 +1,37 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 18.00.36 (3).webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Çakıl taşı üzerinde ahşap bahçe yürüyüş yolu",
+    "en": "Garden walkway of wood panels over gravel"
+  },
+  "alt": {
+    "tr": "Bahçede çakıl taşı zemin üzerine döşenmiş kahverengi cilalı ahşap yürüyüş yolu ve yanında ahşap kaplı yükseltilmiş çiçeklik",
+    "en": "Brown stained wooden walkway set in gravel in a garden, beside a raised planter bed clad in matching wood boards"
+  },
+  "caption": {
+    "tr": "Çakıl dolgulu bahçe yolunda ahşap çıtalar ve tahta bölümler dönüşümlü döşendi. Yandaki yükseltilmiş çiçeklik de aynı koyu kahve tonda vernikle kaplandı.",
+    "en": "Wood slats and board sections alternate along a gravel-filled garden path. The raised planter beside it is clad in boards finished in the same dark brown tone."
+  },
+  "seoFilename": "cakil-tasi-uzerinde-ahsap-bahce-yuruyus-yolu",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "yürüyüş yolu",
+      "çiçeklik"
+    ],
+    "finish": [
+      "vernik",
+      "koyu kahve ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.82
+}

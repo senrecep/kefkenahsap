@@ -1,0 +1,37 @@
+{
+  "file": "31416809_1889822714395652_6242989522479722732_n.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ahşap bahçe depolama dolabı",
+    "en": "Wooden garden storage cabinet"
+  },
+  "alt": {
+    "tr": "Bahçe zemininde duran, iki kapaklı ve yatay çıtalı masif ahşap bahçe dolabı.",
+    "en": "Solid wood garden storage cabinet with double doors and horizontal slats on patio tiles."
+  },
+  "caption": {
+    "tr": "Bahçe ve teras kullanımına uygun, iki kapaklı ve kilit sürgülü masif ahşap dış mekân depolama dolabı.",
+    "en": "Solid wood outdoor storage cabinet with double doors and slide latch, suitable for gardens and patios."
+  },
+  "seoFilename": "ahsap-bahce-depolama-dolabi",
+  "tags": {
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "bahçe",
+      "teras",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ahşap"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

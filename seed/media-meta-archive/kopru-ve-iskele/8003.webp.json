@@ -1,0 +1,40 @@
+{
+  "source": "Kopru ve Iskele/8003.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Boş havuzun üstünde korkuluklu küçük ahşap köprü",
+    "en": "Small railed timber bridge over an empty pool"
+  },
+  "alt": {
+    "tr": "Boş, kırmızı kenarlı havuzun üzerinde basamaklı küçük ahşap köprü; iki yanda dikmeli korkuluk, arkada çam ve köşk",
+    "en": "Small timber bridge with steps over an empty red-edged pool, railing posts on both sides, a pine and a pavilion behind"
+  },
+  "caption": {
+    "tr": "Köprü iki yanındaki basamaklarla deck ile birleşiyor. Korkuluk dikmeleri üstte tek bir küpeşteyle bağlanmış.",
+    "en": "The bridge joins the deck by steps at both ends. The railing posts are tied together at the top with a single handrail."
+  },
+  "seoFilename": "bos-havuzun-ustunde-korkuluklu-kucuk-ahsap-kopru",
+  "tags": {
+    "type": [
+      "köprü",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

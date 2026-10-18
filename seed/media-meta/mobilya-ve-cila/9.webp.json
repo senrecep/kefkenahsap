@@ -1,0 +1,37 @@
+{
+  "file": "9.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Koridorda beyaz lake gömme dolap",
+    "en": "White lacquered built-in wardrobe in a hallway"
+  },
+  "alt": {
+    "tr": "Koridor boyunca uzanan, çerçeveli kapaklı beyaz boyalı gömme dolap; zeminde ahşap parke var",
+    "en": "White painted built-in wardrobe with framed panel doors along a hallway with a wooden parquet floor"
+  },
+  "caption": {
+    "tr": "Koridorun duvar boyunca ölçüye göre yapılmış, çerçeve profilli beyaz boyalı gömme dolap. Kapaklar tavana kadar çıkıyor, yüzey pürüzsüz ve mat bir cila ile bitirildi.",
+    "en": "A custom-made white painted built-in wardrobe running along the hallway wall, with framed panel doors that reach the ceiling and a smooth, matte finish."
+  },
+  "seoFilename": "koridor-beyaz-boyali-gomme-dolap",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "koridor",
+      "iç mekan",
+      "daire"
+    ],
+    "finish": [
+      "beyaz boya",
+      "mat cila",
+      "lake"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.82
+}

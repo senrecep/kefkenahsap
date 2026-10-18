@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/13965.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yatay tahtalı ahşap çit önünde ahşap ve çakıl karışımı döşeme",
+    "en": "Mixed timber and gravel paving in front of a horizontal-board timber fence"
+  },
+  "alt": {
+    "tr": "Selvi sırasının önünde yatay tahtalı alçak çit ve önünde ahşap-çakıl karışımı döşeme; sağda çimde yeşil kapak",
+    "en": "Low horizontal-board fence before a cypress row, with mixed timber and gravel paving in front and a green lid in the lawn"
+  },
+  "caption": {
+    "tr": "Çit köşeye kadar uzanıyor, önündeki döşeme tahta şeritlerle çakıl dolgulu kareleri dönüşümlü kullanıyor.",
+    "en": "The fence runs as far as the corner and the paving in front alternates timber strips and gravel-filled squares."
+  },
+  "seoFilename": "yatay-tahtali-cit-onunde-ahsap-cakil-karisimi-doseme",
+  "tags": {
+    "type": [
+      "çit",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

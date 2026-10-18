@@ -1,0 +1,36 @@
+{
+  "file": "81.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ahşap sürgülü bahçe kapısı",
+    "en": "Sliding wooden garden gate"
+  },
+  "alt": {
+    "tr": "Dikey çıtalı, çapraz kuşaklı ve siyah metal bağlantılı geniş ahşap sürgülü kapı; arkasında ahşap kaplı bir yapı görünüyor.",
+    "en": "Wide sliding wooden gate with vertical slats, diagonal braces and black metal fittings, with a wood-clad building behind it."
+  },
+  "caption": {
+    "tr": "Dikey çıtalardan yapılmış, üzerinde çapraz kuşakları ve siyah metal bağlantıları olan sürgülü ahşap bahçe kapısı. Arkasındaki ahşap kaplı yapıyla uyumlu bir renk tonunda.",
+    "en": "A sliding wooden garden gate built from vertical slats, with diagonal braces and black metal fittings. Its warm tone matches the wood-clad building behind it."
+  },
+  "seoFilename": "ahsap-surgulu-bahce-kapisi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "giriş"
+    ],
+    "finish": [
+      "vernikli",
+      "siyah metal bağlantı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

@@ -1,0 +1,36 @@
+{
+  "file": "51.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe evi yanında kafes panelli ahşap çit ve dolap",
+    "en": "Lattice panel wooden fence and storage cabinet beside a house"
+  },
+  "alt": {
+    "tr": "Evin yan duvarında kafes panelli ahşap çit, kapaklı ahşap dolap ve üzerinde ızgara çatılı bir pergola, önünde çimenlik",
+    "en": "Wooden lattice fence panels and a latched storage cabinet under a slatted pergola roof beside a house, with lawn in front"
+  },
+  "caption": {
+    "tr": "Evin yan cephesinde, dış üniteleri ve eşyaları gizleyen kafes panelli ahşap çit ile kapaklı dolap. Üstte ızgara kirişli bir pergola örtüyor.",
+    "en": "A lattice-panel wooden fence and a latched cabinet along the side of a house, screening equipment and storage. A slatted beam pergola covers the top."
+  },
+  "seoFilename": "kafes-panelli-ahsap-cit-ve-dolap",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "ev cephesi",
+      "çimenlik"
+    ],
+    "finish": [
+      "doğal ahşap",
+      "yeşilimsi emprenye tonu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

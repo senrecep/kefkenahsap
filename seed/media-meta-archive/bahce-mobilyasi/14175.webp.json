@@ -1,0 +1,38 @@
+{
+  "source": "Ireko-Teak/14175.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölyede çıtalı ahşap bank ve yanında küçük sehpa",
+    "en": "Slatted timber bench with a small table beside it in the workshop"
+  },
+  "alt": {
+    "tr": "Atölye zemininde, uzun çıtalı ahşap bank ile yanındaki küçük çıtalı sehpa ve arkada kereste yığınları",
+    "en": "On a workshop floor, a long slatted timber bench and a small slatted table beside it in reddish varnish"
+  },
+  "caption": {
+    "tr": "Bank ve sehpa aynı kırmızımsı vernikle tamamlanmış, ikisi de çıtalı. Yukarıdan bakınca çıtaların düzeni net görünüyor.",
+    "en": "The bench and table are finished in the same reddish varnish and both are slatted. Seen from above, the pattern of the slats is clear."
+  },
+  "seoFilename": "atolyede-citali-ahsap-bank-ve-yaninda-kucuk-sehpa-arkada",
+  "tags": {
+    "type": [
+      "bank",
+      "sehpa"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/12083.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimlik kenarında telli panel ve çıtalı çit, kırmızı yapraklı çalı önünde",
+    "en": "Wire-mesh panel and slat fence at the lawn edge, in front of a red-leaved shrub"
+  },
+  "alt": {
+    "tr": "Kırmızımsı yapraklı çalıların önünde, kuru çimlik alanı çeviren yeşil tel örgülü ahşap panel ve solda dikey çıtalı çit",
+    "en": "A green wire-mesh timber panel and a vertical-slat fence at the left enclosing a dry lawn area in front of red-leaved shrubs"
+  },
+  "caption": {
+    "tr": "Tel örgülü panel çalıyla çim arasına dikilmiş, çıtalı çit sol kenarda dik açıyla ona katılıyor.",
+    "en": "The wire-mesh panel is set between the shrub and the lawn, and the slat fence joins it at a right angle at the left edge."
+  },
+  "seoFilename": "cimlik-kenarinda-telli-panel-citali-cit-kirmizi-cali",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

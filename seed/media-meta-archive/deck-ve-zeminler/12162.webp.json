@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12162.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Karo zemin üzerinde yan yana duran uzun koyu çıtalar",
+    "en": "Long dark battens side by side on a tiled floor"
+  },
+  "alt": {
+    "tr": "Karo zemin üzerine yan yana dizilmiş, koyu boyalı uzun ahşap çıtalar",
+    "en": "Long dark-stained timber battens laid side by side on a tiled floor"
+  },
+  "caption": {
+    "tr": "Çıtaların uçları düzgün kesilmiş ve boyası eşit sürülmüş. Bu parçalar deck panelinde kullanılmak üzere hazırlanmış görünüyor.",
+    "en": "The batten ends are cut square and the stain is applied evenly. These pieces look prepared for use in deck panels."
+  },
+  "seoFilename": "karo-zemin-uzerinde-yan-yana-uzun-koyu-citalar",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

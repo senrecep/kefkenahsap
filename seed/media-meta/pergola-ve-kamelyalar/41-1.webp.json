@@ -1,0 +1,37 @@
+{
+  "file": "41-1.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Üçgen desenli ahşap pergola çatı kirişleri",
+    "en": "Wooden pergola roof beams in a triangular pattern"
+  },
+  "alt": {
+    "tr": "Alttan görünen koyu renkli ahşap pergola kirişleri, üçgen desen oluşturan çaprazlar ve aralarından görünen mavi gökyüzü",
+    "en": "Dark-stained wooden pergola beams seen from below, with diagonal members forming a triangle pattern against a blue sky"
+  },
+  "caption": {
+    "tr": "Pergola çatısında ana kirişlerin üzerine çapraz çıtalarla üçgen bir desen kurduk. Koyu vernikli ahşap, kenarlardaki tuğla ve beton ayaklara oturuyor.",
+    "en": "On this pergola roof, diagonal members cross the main beams to form a triangular pattern. The dark-stained timber rests on brick and concrete columns at the sides."
+  },
+  "seoFilename": "ucgen-desenli-ahsap-pergola-cati-kirisleri",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "pergola",
+      "dış mekan",
+      "çatı"
+    ],
+    "finish": [
+      "koyu renk koruyucu",
+      "vernik"
+    ],
+    "stage": [
+      "finished",
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

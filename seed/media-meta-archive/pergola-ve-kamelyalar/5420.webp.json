@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/5420.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kamelya çatı çıtaları ve kirişlerin alttan görünümü, arkada beyaz evler",
+    "en": "Gazebo roof slats and beams from below with white houses behind"
+  },
+  "alt": {
+    "tr": "Alttan görünen kamelya çatı çıtaları ve kirişleri, aralarından gökyüzü ve uzakta beyaz evler",
+    "en": "Underside of gazebo roof slats and beams, with sky showing through and white houses in the distance"
+  },
+  "caption": {
+    "tr": "Çıtalar iki yönde kesişip kafes bir desen oluşturuyor. Işık aralarından süzülüyor.",
+    "en": "The slats cross in two directions to form a lattice pattern. Light filters through the gaps."
+  },
+  "seoFilename": "kamelya-cati-citalari-kirisleri-alttan-beyaz-evler",
+  "tags": {
+    "type": [
+      "kamelya"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

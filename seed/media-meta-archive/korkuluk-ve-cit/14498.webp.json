@@ -1,0 +1,35 @@
+{
+  "source": "Korkuluk ve Cit/14498.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Tepelere bakan ahşap çevre çiti",
+    "en": "Timber perimeter fence facing the hills"
+  },
+  "alt": {
+    "tr": "Kırsal arazide yatay kirişli ahşap çitle çevrili geniş bir alan, arkada ağaçlı tepeler",
+    "en": "Large rural plot enclosed by a timber rail fence, with wooded hills behind"
+  },
+  "caption": {
+    "tr": "Yatay kirişli ahşap çit kırsal arazideki geniş bir alanı baştan sona çeviriyor.",
+    "en": "A timber rail fence runs all the way around a large area of rural land."
+  },
+  "seoFilename": "kirsal-arazi-ahsap-cevre-citi-tepe",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "kırsal arazi",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ahşap"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

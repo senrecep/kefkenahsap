@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12120.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çiçekli köşe yanında gri kahverengi boyalı deck",
+    "en": "Grey-brown stained deck beside a flowered corner"
+  },
+  "alt": {
+    "tr": "Çimen kenarında, saksı çiçekleri olan köşenin yanında gri kahverengi boyalı deck zemini",
+    "en": "Grey-brown stained decking at the lawn edge next to a corner with potted flowers"
+  },
+  "caption": {
+    "tr": "Boya tahtaların rengini eşitlemiş. Tuğla duvar ve çiçekler zeminin arka sınırını çiziyor.",
+    "en": "The stain has evened out the colour of the boards. The brick wall and flowers mark the back edge of the floor."
+  },
+  "seoFilename": "cicekli-kose-yaninda-gri-kahverengi-boyali-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

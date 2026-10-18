@@ -1,0 +1,40 @@
+{
+  "source": "Deck ve Zeminler/8879.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimenle birleşen köşeli bal rengi deck",
+    "en": "Honey-coloured deck with a corner meeting the lawn"
+  },
+  "alt": {
+    "tr": "Evin dışına döşenmiş köşeli deck alanı, bir yanı çimle sınırlı, yanında klima ünitesi ve yeşil bitkiler",
+    "en": "L-shaped deck area outside a house, bordered by lawn on one side, with an air-conditioner unit and greenery beside it"
+  },
+  "caption": {
+    "tr": "Deck köşeden dönerek çimenin kenarını izliyor. Tahtalar farklı uzunluklarda ama sıraları düzgün.",
+    "en": "The deck turns the corner and follows the lawn edge. The boards vary in length but the rows stay neat."
+  },
+  "seoFilename": "cimenle-birlesen-koseli-bal-rengi-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "bahçe",
+      "giriş"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

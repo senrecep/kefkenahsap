@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/12677.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kırmızı kaplı çatılı dış mekân dolabının menteşe ayrıntısı",
+    "en": "Hinge detail of an outdoor cabinet with a red-clad roof"
+  },
+  "alt": {
+    "tr": "Beyaz taş kaplı duvarın dibindeki ahşap dolabın kırmızı kaplama çatısı, metal menteşe ve yatay çıtalı kapak",
+    "en": "Red-clad roof of a timber cabinet at the foot of a white stone wall, with a metal hinge and horizontally slatted door"
+  },
+  "caption": {
+    "tr": "Dolabın çatısı kırmızı kaplamayla örtülü ve duvara bitişik. Menteşe kapağı yandan taşıyor.",
+    "en": "The cabinet roof is covered in red cladding and meets the wall. The hinge carries the door from the side."
+  },
+  "seoFilename": "kirmizi-kapli-catili-dis-mekan-dolabinin-mentese-ayrintisi",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

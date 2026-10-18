@@ -1,0 +1,38 @@
+{
+  "source": "Merdivenler/13005.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beton kenar üstünde ayaklı merdiven platformu",
+    "en": "Stair platform on legs by a concrete edge"
+  },
+  "alt": {
+    "tr": "Beton kenarın üstünde ayaklı ahşap platform ve çaprazlı korkuluk; arkada ağaçlar ve uzak manzara",
+    "en": "Timber platform on legs with a cross-braced railing by a concrete edge, with trees and a distant view behind"
+  },
+  "caption": {
+    "tr": "Platform ayaklar üzerinde beton kenarın hemen yanında duruyor. Korkuluk çaprazlı, arkada yeşil ağaçlar var.",
+    "en": "The platform stands on legs right beside the concrete edge. The railing is cross-braced, with green trees behind."
+  },
+  "seoFilename": "beton-kenar-ustunde-ayakli-merdiven-platformu-agaclar",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

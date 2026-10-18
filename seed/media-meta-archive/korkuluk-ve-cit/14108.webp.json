@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/14108.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Siyah dikey çıtalı korkuluk ve ahşap küpeşte",
+    "en": "Black vertical-slat railing with a timber handrail"
+  },
+  "alt": {
+    "tr": "Merdiven kenarında siyah boyalı dikey çıtalı korkuluk, üstünde turuncu tonlu ahşap küpeşte, arkada konutlar",
+    "en": "Black-painted vertical-slat railing beside a staircase, topped by an orange-toned timber handrail, with houses behind"
+  },
+  "caption": {
+    "tr": "Siyah çıtalar ahşap küpeşteyle çerçevelenmiş, sıralı çıtalar basamakların eğimini izliyor.",
+    "en": "The black slats are framed by the timber handrail and follow the slope of the steps."
+  },
+  "seoFilename": "siyah-dikey-citali-korkuluk-ahsap-kupeste",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "merdiven"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

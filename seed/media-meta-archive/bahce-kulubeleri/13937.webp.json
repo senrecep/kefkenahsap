@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/13937.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz korkuluklu verandalı oyun evi",
+    "en": "Playhouse with a white-railed veranda"
+  },
+  "alt": {
+    "tr": "Beyaz korkuluklu verandası, mavi kapısı ve pencere kepenkleri olan oyun evi; yeşil bir bahçede",
+    "en": "Playhouse with a white-railed veranda, a blue door and blue window shutters, in a green garden"
+  },
+  "caption": {
+    "tr": "Veranda iki yandan beyaz korkuluklarla çevrili, zemini ahşap. Evin çevresinde ağaçlar ve ortanca çalıları var.",
+    "en": "The veranda is edged with white railings on two sides and has a timber floor. There are trees and hydrangea bushes around the house."
+  },
+  "seoFilename": "beyaz-korkuluklu-verandali-mavi-detayli-oyun-evi-yesil",
+  "tags": {
+    "type": [
+      "çocuk oyun evi"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

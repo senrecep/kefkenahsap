@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/13345.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş tezgâhlı, ahşap şeritli bar köşesi",
+    "en": "Bar corner with a stone counter and timber strips"
+  },
+  "alt": {
+    "tr": "Deck zemin üzerinde, önü dikey ahşap şeritlerle kaplı taş tezgâhlı bar köşesi",
+    "en": "Bar corner on a deck with a stone counter and a front clad in vertical timber strips"
+  },
+  "caption": {
+    "tr": "Barın gövdesi taş görünümlü, ön yüzü dikey ahşap çıtalı. Zemin geniş deck tahtalarından oluşuyor.",
+    "en": "The body of the bar looks like stone and its front has vertical timber slats. The floor is made of wide deck boards."
+  },
+  "seoFilename": "tas-tezgahli-ahsap-seritli-bar-kosesi-ve-deck-zemin",
+  "tags": {
+    "type": [
+      "dış mutfak / mangal alanı",
+      "bar / tezgâh",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.55
+}

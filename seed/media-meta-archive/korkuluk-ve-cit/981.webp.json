@@ -1,0 +1,40 @@
+{
+  "source": "Korkuluk ve Cit/981.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Geniş deck ve yatay tahtalı korkuluk, arkada yerleşim",
+    "en": "Wide deck with a horizontal-board railing and a settlement behind"
+  },
+  "alt": {
+    "tr": "Evin köşesine yaslanan geniş açık tonlu deck ve kenarında yatay tahtalı korkuluk, arkada yamaç ve yerleşim",
+    "en": "Wide pale deck set against the corner of a house, with a horizontal-board railing at its edge and a slope with housing behind"
+  },
+  "caption": {
+    "tr": "Deck tahtaları uzun ve düzgün sıralanmış, korkuluk deck sınırını boydan boya çiziyor.",
+    "en": "The deck boards are long and neatly laid, and the railing marks the edge of the deck along its length."
+  },
+  "seoFilename": "deck-ve-yatay-tahtali-korkuluk-arkada-yerlesim",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

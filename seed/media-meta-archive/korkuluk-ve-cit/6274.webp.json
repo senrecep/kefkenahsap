@@ -1,0 +1,39 @@
+{
+  "source": "Korkuluk ve Cit/6274.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kapı direğinde galvaniz menteşe detayı",
+    "en": "Galvanised hinge detail on a gate post"
+  },
+  "alt": {
+    "tr": "Kalın ahşap direğe cıvatalı galvaniz menteşe ve ona bağlı kapı kirişi, arkada kapı kanadı ve ağaç",
+    "en": "Bolted galvanised hinge on a thick timber post with a gate rail attached, a gate leaf and a tree behind"
+  },
+  "caption": {
+    "tr": "Menteşe dört cıvatayla direğe tutturulmuş, kapı kirişi uzun bir şeritle ona bağlanıyor.",
+    "en": "The hinge is bolted to the post, and the gate rail is joined to it by a long strap."
+  },
+  "seoFilename": "kapi-diregine-galvaniz-mentese-detayi",
+  "tags": {
+    "type": [
+      "bahçe kapısı"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

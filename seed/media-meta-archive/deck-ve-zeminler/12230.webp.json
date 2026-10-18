@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/12230.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ağaç gövdeli geniş deck ve çevresindeki korkuluk",
+    "en": "Wide deck with a trunk and railing around it"
+  },
+  "alt": {
+    "tr": "Geniş çam deck zemini, ağaç gövdesi ve karşı kenarda çıtalı korkuluk",
+    "en": "Broad pine decking with a tree trunk and a slatted railing along the far edge"
+  },
+  "caption": {
+    "tr": "Tahtalar çapraz yönde uzanıyor ve zemin düzgün bir yüzey oluşturuyor. Arka planda komşu çatılar görünüyor.",
+    "en": "The boards run at an angle and make an even surface. Neighbouring roofs show in the background."
+  },
+  "seoFilename": "genis-deck-zemini-agac-govdesi-cevresinde-korkuluk",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

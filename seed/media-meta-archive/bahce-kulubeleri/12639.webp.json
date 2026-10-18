@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/12639.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ayaklar üstünde oyun evi, altında kum havuzu",
+    "en": "Playhouse on stilts with a sandpit beneath"
+  },
+  "alt": {
+    "tr": "Ayaklar üzerinde yükseltilmiş ahşap oyun evi; altında çerçeveli kum havuzu ve asılı bir salıncak",
+    "en": "Timber playhouse raised on legs, with a framed sandpit and a hanging swing seat beneath it"
+  },
+  "caption": {
+    "tr": "Oyun evinin altı açık bırakılmış, zemine kum serilmiş. Pencere kepenkli, çatı koyu kırmızı.",
+    "en": "The space beneath the playhouse is left open with sand laid on the ground. The window has a shutter and the roof is dark red."
+  },
+  "seoFilename": "ayaklar-ustunde-yukseltilmis-oyun-evi-altinda-kum-havuzu-ve",
+  "tags": {
+    "type": [
+      "çocuk oyun evi"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "orman / kır"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

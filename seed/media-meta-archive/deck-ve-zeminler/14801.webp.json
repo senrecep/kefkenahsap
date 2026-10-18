@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/14801.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Balık sırtı tuğla döşemeli teras",
+    "en": "Terrace with herringbone brick paving"
+  },
+  "alt": {
+    "tr": "Kiremit renkli balık sırtı tuğla döşemeyle kaplı teras; çevresinde siyah metal korkuluk ve uzakta ağaçlık bir manzara",
+    "en": "Terrace covered in terracotta-coloured herringbone brick paving, with a black metal railing around it"
+  },
+  "caption": {
+    "tr": "Yüzey henüz deck almamış, ortada kesik bir çıta parçası duruyor. Kenardaki kiremitli çatı ve korkuluk terası çerçeveliyor.",
+    "en": "The surface has no deck yet, and an offcut of batten sits in the middle. The tiled roof and the railing frame the terrace."
+  },
+  "seoFilename": "kiremit-rengi-balik-sirti-tugla-teras-metal-korkuluk",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.55
+}

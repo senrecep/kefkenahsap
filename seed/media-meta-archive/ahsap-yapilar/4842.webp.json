@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/4842.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Büyük ahşap kirişler ve gergiler, alttan görünüm",
+    "en": "Large timber beams and braces seen from below"
+  },
+  "alt": {
+    "tr": "Geniş açıklıklı bir çatıyı taşıyan büyük ahşap kirişler ve çapraz gergiler; üstte spotlar ve çatı kaplaması",
+    "en": "Large timber beams and diagonal braces carrying a wide roof, with spotlights and roof sheeting above"
+  },
+  "caption": {
+    "tr": "Koyu vernikli kirişler çapraz gergilerle birleşiyor. Tavanda spot lambalar ve metal çatı levhaları görünüyor.",
+    "en": "The dark varnished beams meet diagonal braces. Spotlights and metal roof sheets are visible overhead."
+  },
+  "seoFilename": "buyuk-ahsap-kirisler-ve-gergiler-spotlar-cati-kaplama",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

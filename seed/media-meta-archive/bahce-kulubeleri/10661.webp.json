@@ -1,0 +1,39 @@
+{
+  "source": "Kapi Dolap ve Seperator/10661.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kapağı açık ahşap alet dolabı, içinde raflar",
+    "en": "Timber tool cabinet with the door open showing the shelves"
+  },
+  "alt": {
+    "tr": "Gölgelik çatılı, yatay tahtalı ahşap alet dolabının kapağı açık; içinde üç raf görünüyor",
+    "en": "A timber tool cabinet with a shingle roof and horizontal boards, its door open to show three shelves inside"
+  },
+  "caption": {
+    "tr": "Dolabın içi üç rafa bölünmüş, bahçe aletleri için yeterli yer bırakıyor. Kapak geniş açılıyor.",
+    "en": "The inside is split into three shelves, leaving room for garden tools. The door opens wide."
+  },
+  "seoFilename": "alet-dolabi-kapagi-acik-raflar-gorunuyor",
+  "tags": {
+    "type": [
+      "bahçe kulübesi / depo"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

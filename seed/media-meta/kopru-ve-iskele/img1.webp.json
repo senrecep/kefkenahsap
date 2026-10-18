@@ -1,0 +1,36 @@
+{
+  "file": "img1.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Havuz üzerinde korkuluklu ahşap köprü",
+    "en": "Wooden footbridge with railings over a pool"
+  },
+  "alt": {
+    "tr": "Sığ bir havuzun üzerinde, dikmeli ve çıtalı korkulukları olan açık renkli ahşap yaya köprüsü, yanında ahşap deck zemin",
+    "en": "Light-colored wooden footbridge with post-and-slat railings over a shallow pool, beside a wooden deck floor"
+  },
+  "caption": {
+    "tr": "Havuzun iki yakasını birbirine bağlayan korkuluklu ahşap köprü. Yanındaki deck zemin de aynı tonda ahşaptan yapıldı.",
+    "en": "A wooden footbridge with railings linking both sides of a pool, next to a deck floor in a matching wood tone."
+  },
+  "seoFilename": "havuz-ustu-korkuluklu-ahsap-kopru",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "havuz",
+      "bahçe",
+      "açık alan",
+      "köprü"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

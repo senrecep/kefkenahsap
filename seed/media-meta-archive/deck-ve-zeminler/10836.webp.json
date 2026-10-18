@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/10836.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimenlikte sarı ve koyu çizgili geniş deck platformu",
+    "en": "Wide deck platform with yellow and dark stripes in a lawn"
+  },
+  "alt": {
+    "tr": "Çimenlik içine yerleştirilmiş, sarı ve koyu çizgili tahtalardan geniş ahşap deck platformu",
+    "en": "Wide timber deck platform of yellow and dark-striped boards set in a lawn"
+  },
+  "caption": {
+    "tr": "Platform çimin üzerinde dikdörtgen duruyor, kenarı kızıl-kahve bir çerçeve tahtasıyla çevrili. Arkada istinat duvarı ve merdiven var.",
+    "en": "The platform sits on the grass as a rectangle edged with a red-brown border board. A retaining wall and a stair are behind."
+  },
+  "seoFilename": "cimenlik-icinde-sari-ve-koyu-cizgili-genis-ahsap-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

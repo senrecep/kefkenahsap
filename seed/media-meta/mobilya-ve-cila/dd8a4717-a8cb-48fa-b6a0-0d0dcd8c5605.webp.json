@@ -1,0 +1,35 @@
+{
+  "file": "dd8a4717-a8cb-48fa-b6a0-0d0dcd8c5605.webp",
+  "category": "mobilya-ve-cila",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Aynalı ve pirinç çıtalı yatak odası dolabı",
+    "en": "Bedroom wardrobe with mirrors and brass trim"
+  },
+  "alt": {
+    "tr": "Yatak başı yanında, bronz aynalı ve pirinç çerçeve çıtalı koyu renk lake kapaklı dolap modülü.",
+    "en": "Dark lacquered bedroom cabinet module with bronze mirror inserts and brass trim borders next to the bed."
+  },
+  "caption": {
+    "tr": "Yatak odası için özel ölçüde üretilen, antrasit lake yüzeyli, aynalı ve pirinç detaylı dolap montajı.",
+    "en": "Custom-sized bedroom cabinet unit featuring dark lacquer finish, mirror panels, and brass trim detailing."
+  },
+  "seoFilename": "aynali-pirinc-citali-yatak-odasi-dolabi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "yatak-odasi",
+      "ic-mekan"
+    ],
+    "finish": [
+      "lake",
+      "mat"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

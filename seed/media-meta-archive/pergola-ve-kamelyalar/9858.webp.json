@@ -1,0 +1,35 @@
+{
+  "source": "Pergola ve Kamelyalar/9858.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Gri metal çerçeveli pergola, kırmızı boyalı profiller üstünde OSB levha",
+    "en": "Grey metal-framed pergola with OSB sheets on red-painted profiles"
+  },
+  "alt": {
+    "tr": "Gri metal çerçeveli pergolanın altından kırmızı boyalı profiller ve üstüne serilmiş OSB levhalar görünüyor",
+    "en": "Underside of a grey metal-framed pergola showing red-painted profiles with OSB sheets on top and a person at the edge"
+  },
+  "caption": {
+    "tr": "Metal taşıyıcılar çatı levhalarını kırmızı profillerle destekliyor. Pergola bir bahçeye açılıyor.",
+    "en": "The metal supports hold the roof sheets on red profiles. The pergola opens onto a garden."
+  },
+  "seoFilename": "gri-metal-cerceveli-pergola-kirmizi-profiller-osb",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.5
+}

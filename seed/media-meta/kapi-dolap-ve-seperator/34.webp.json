@@ -1,0 +1,32 @@
+{
+  "file": "34.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Köşe küvet için ahşap çıta kaplama",
+    "en": "Wooden slat cladding for a corner bathtub"
+  },
+  "alt": {
+    "tr": "Köşe jakuzili küvetin yuvarlak ön yüzü dikey ahşap çıtalarla kaplanmış; duvar ve zemin açık renk seramik",
+    "en": "Corner whirlpool bathtub with its curved front clad in vertical wooden slats, with light tiled walls and floor"
+  },
+  "caption": {
+    "tr": "Köşe küvetin yuvarlak ön yüzü, dikey dizilmiş ahşap çıtalarla kaplandı. Çıtalar küvetin kıvrımını takip ediyor.",
+    "en": "The curved front of a corner bathtub covered with vertically laid wooden slats that follow the curve of the tub."
+  },
+  "seoFilename": "kose-kuvet-ahsap-cita-kaplama",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "banyo",
+      "iç mekan"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.8
+}

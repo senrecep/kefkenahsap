@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/13491.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Uzun yan yana döşenmiş açık sarımsı kahverengi deck tahtaları",
+    "en": "Light yellowish-brown deck boards laid long and side by side"
+  },
+  "alt": {
+    "tr": "Açık sarımsı kahverengi deck tahtaları, uzun ve yan yana döşenmiş, yanda cam kapı ve çit",
+    "en": "Light yellowish-brown deck boards laid long and side by side, with a glass door and hedge alongside"
+  },
+  "caption": {
+    "tr": "Tahtalar tek yönde ince derzlerle ilerliyor ve damar rengi tahtadan tahtaya değişiyor. Deck kapıdan bahçeye kadar uzanıyor.",
+    "en": "The boards run one way with fine joints and the grain colour varies from board to board. The deck extends from the door out into the garden."
+  },
+  "seoFilename": "uzun-yan-yana-acik-sarimsi-kahverengi-deck-tahtalari",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/7937.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çaprazlı korkuluk ve basamaklar yakın planda",
+    "en": "Cross-braced railing and steps close up"
+  },
+  "alt": {
+    "tr": "Çaprazlı korkuluğun kalın tahtaları ve basamaklar yakından; yanda tel çit ve çalılar",
+    "en": "The thick boards of a cross-braced railing and the steps up close, with wire fencing and shrubs beside"
+  },
+  "caption": {
+    "tr": "Korkuluğun çaprazları ve el tutamağı kalın tahtadan, basamaklarla aynı açık tonda. Yanda tel çit var.",
+    "en": "The railing's cross braces and handrail are thick boards in the same light tone as the steps. Wire fencing runs alongside."
+  },
+  "seoFilename": "caprazli-korkuluk-ve-basamaklar-yakin-plan-tel-cit-yaninda",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

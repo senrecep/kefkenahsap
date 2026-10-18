@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/2404.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Koyu saçak kirişleri ve lambri tavan altı",
+    "en": "Dark eave beams and a panelled soffit"
+  },
+  "alt": {
+    "tr": "Koyu vernikli saçak kirişleri ve altındaki lambri kaplı tavan; yanında koyu pencere kasası",
+    "en": "Dark varnished eave beams and the panelled soffit beneath them, with a dark window frame beside"
+  },
+  "caption": {
+    "tr": "Saçağın kirişleri destek payandalarına oturuyor, tahtalar kirişlere dik döşenmiş. Duvar beyaz sıvalı.",
+    "en": "The eave beams rest on bracket supports and the boards are laid across the beams. The wall is white plaster."
+  },
+  "seoFilename": "koyu-vernikli-sacak-kirisleri-ve-lambri-tavan-alti-detayi",
+  "tags": {
+    "type": [
+      "sundurma / saçak / carport",
+      "tavan kaplaması / lambri"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

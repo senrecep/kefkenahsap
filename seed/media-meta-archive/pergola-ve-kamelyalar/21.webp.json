@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/21.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş binanın önünde geniş ahşap pergola ve basamaklar",
+    "en": "Wide timber pergola in front of a stone building with steps"
+  },
+  "alt": {
+    "tr": "Taş kaplı binanın önünde yükseltilmiş zeminde geniş, açık renk ahşap pergola; önünde geniş basamaklar",
+    "en": "Wide light timber pergola on a raised floor in front of a stone-clad building, with broad steps in front"
+  },
+  "caption": {
+    "tr": "Pergola kirişleri üst üste binip geniş bir gölge alanı oluşturuyor. Sarmaşık direklere tırmanmış.",
+    "en": "The pergola beams overlap to form a broad shaded area. Climbers have grown up the posts."
+  },
+  "seoFilename": "tas-binanin-onunde-genis-ahsap-pergola-basamaklar",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

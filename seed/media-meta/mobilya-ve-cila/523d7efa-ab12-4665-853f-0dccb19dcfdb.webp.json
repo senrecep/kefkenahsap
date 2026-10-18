@@ -1,0 +1,36 @@
+{
+  "file": "523d7efa-ab12-4665-853f-0dccb19dcfdb.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Krem rengi oymalı konsol ve ayna takımı",
+    "en": "Cream carved sideboard with arched mirror"
+  },
+  "alt": {
+    "tr": "Krem boyalı, altın detaylı oymalı büfe; üzerinde kemerli aynası var, sağda aynı tarzda vitrin görünüyor.",
+    "en": "Cream-painted sideboard with gilded carved details and an arched mirror above, matching display cabinet on the right."
+  },
+  "caption": {
+    "tr": "Krem cilalı, kabartma gül desenli kapakları ve altın yaldız vurgularıyla klasik tarzda büfe ve ayna. Yanındaki vitrin aynı takımdan.",
+    "en": "Classic-style sideboard and mirror in a cream finish with carved rose-pattern doors and gold accents. The display cabinet beside it belongs to the same set."
+  },
+  "seoFilename": "krem-oymali-bufe-ayna-takimi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "salon",
+      "iç mekan"
+    ],
+    "finish": [
+      "krem boya",
+      "altın yaldız",
+      "klasik"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

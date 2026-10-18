@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14651.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çalılar kenarında yeni döşenmiş dar deck",
+    "en": "Newly laid narrow deck beside shrubs"
+  },
+  "alt": {
+    "tr": "Yan geçitte, çalıların kenarında beton zemine bitişik yeni döşenmiş açık renkli dar deck şeridi",
+    "en": "Newly laid narrow pale deck strip at the edge of shrubs in a side passage, next to a concrete floor"
+  },
+  "caption": {
+    "tr": "Tahtalar boyuna uzanıyor ve kenarda çimene dönüyor. Yola devam eden gri beton zemin deckin yanında uzanıyor.",
+    "en": "The boards run lengthwise and turn towards the lawn at the edge. The grey concrete floor continues alongside the deck."
+  },
+  "seoFilename": "calilar-kenarinda-yeni-dosenmis-dar-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

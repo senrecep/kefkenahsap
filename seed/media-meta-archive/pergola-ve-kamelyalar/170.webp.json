@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/170.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Geniş ahşap deck üzerinde kalın direkli pergola ve sandalyeler",
+    "en": "Wide timber deck with a thick-post pergola and chairs"
+  },
+  "alt": {
+    "tr": "Geniş ahşap deck üzerinde kalın direkli, dal örtülü pergola, yığılmış sandalyeler ve arkada çimlik",
+    "en": "Wide timber deck with a thick-post pergola with a branch cover, stacked chairs and a lawn beyond"
+  },
+  "caption": {
+    "tr": "Kalın direkler çatıyı taşıyor, deckin kenarında çıtalı korkuluk var. Sandalyeler bir yanda üst üste duruyor.",
+    "en": "Thick posts carry the roof and a slatted rail runs along the deck edge. Chairs are stacked on one side."
+  },
+  "seoFilename": "genis-ahsap-deck-kalin-direkli-pergola-sandalyeler",
+  "tags": {
+    "type": [
+      "pergola",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/12233.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Arkada mavi branda olan sarımsı çam deck",
+    "en": "Yellowish pine deck with a blue tarp behind"
+  },
+  "alt": {
+    "tr": "Sarımsı çam deck zemini, arkada çıtalı korkuluk ve mavi branda",
+    "en": "Yellowish pine decking with a slatted railing and a blue tarp behind"
+  },
+  "caption": {
+    "tr": "Tahtalar korkuluğa dik döşenmiş. Yüzeyde budak izleri ve ahşabın açık damarı görülüyor.",
+    "en": "The boards run square to the railing. Knot marks and the pale grain of the wood are visible on the surface."
+  },
+  "seoFilename": "arkada-mavi-branda-olan-sarimsi-cam-deck",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

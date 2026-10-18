@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/9991.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Evin yan duvarında çaprazlı korkuluklu merdiven",
+    "en": "Cross-braced stairs on the side wall of a house"
+  },
+  "alt": {
+    "tr": "Evin yan duvarı boyunca yükselen çaprazlı korkuluklu ahşap merdiven; altta çimlik ve çiçekler, yanda taş blok",
+    "en": "Timber stairs with a cross-braced railing rising along the side wall of a house"
+  },
+  "caption": {
+    "tr": "Merdiven pencere hizasından yan duvar boyunca yukarı çıkıyor. Korkuluk direğinde küçük bir tabela asılı.",
+    "en": "The stairs rise along the side wall from window level. A small sign hangs on a railing post."
+  },
+  "seoFilename": "evin-yan-duvarinda-caprazli-korkuluklu-merdiven-cimlik",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

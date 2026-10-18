@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/13324.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çaprazlı korkuluk detaylı merdiven, yanda duvar",
+    "en": "Stairs with cross-braced railing detail beside a wall"
+  },
+  "alt": {
+    "tr": "Çaprazlı korkuluk detaylı ahşap merdiven; yanında duvar ve beyaz çit",
+    "en": "Timber stairs with cross-braced railing detail, with a wall and a white fence beside"
+  },
+  "caption": {
+    "tr": "Korkuluğun çaprazları yakından seçiliyor. Merdiven duvarın dibinden yukarı çıkıyor.",
+    "en": "The cross braces of the railing are clear up close. The stairs climb along the foot of the wall."
+  },
+  "seoFilename": "caprazli-korkuluk-detayi-duvar-ve-cit-yaninda-merdiven",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

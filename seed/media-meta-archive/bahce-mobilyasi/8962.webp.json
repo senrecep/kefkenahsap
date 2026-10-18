@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/8962.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş zeminli teraste uzayan masa takımı",
+    "en": "Extending table set on a stone-floored terrace"
+  },
+  "alt": {
+    "tr": "Taş döşemeli teraste, bambu çalılığının önünde açılır ahşap masa ve katlanır sandalyeler",
+    "en": "Extending timber table and folding chairs on a stone-paved terrace in front of a bamboo hedge"
+  },
+  "caption": {
+    "tr": "Masa iki ucundan uzatılabiliyor. Sandalyeler kollu ve katlanır.",
+    "en": "The table can be extended at both ends. The chairs have armrests and fold."
+  },
+  "seoFilename": "tas-zeminli-terasta-uzayan-masa-ve-katlanir-sandalyeler",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/4830.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Düz çaprazlı korkuluklu dış merdiven, önden",
+    "en": "Straight outdoor stairs with cross-braced railing, from the front"
+  },
+  "alt": {
+    "tr": "Önden görünen düz ahşap dış merdiven; çaprazlı korkuluk, yanda taş duvar ve üstte duvar",
+    "en": "Straight timber outdoor stairs seen from the front, with a cross-braced railing, a stone wall at the side and a wall above"
+  },
+  "caption": {
+    "tr": "Merdiven önden bakıldığında düz bir şerit gibi yukarı çıkıyor. Sol tarafta taş duvar var.",
+    "en": "Seen from the front the stairs rise like a straight ribbon. A stone wall runs along the left side."
+  },
+  "seoFilename": "duz-caprazli-korkuluklu-ahsap-dis-merdiven-onden",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

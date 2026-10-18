@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/10592.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Üst sahanlıktan çimlere bakış",
+    "en": "Looking from the top landing over the lawn"
+  },
+  "alt": {
+    "tr": "Üst sahanlıktan çimlik bahçeye bakış; çaprazlı korkuluklu merdiven, önde beyaz çit direği, sağda ev",
+    "en": "View from the top landing over a lawn, with a cross-braced railing, a white fence post in front and a house on the right"
+  },
+  "caption": {
+    "tr": "Sahanlığın korkuluğu çaprazlarla örülmüş. Aşağıda çimlik ve ev duvarı görünüyor.",
+    "en": "The landing's railing is braced with crosses. The lawn and the house wall are visible below."
+  },
+  "seoFilename": "ust-sahanliktan-cim-bahceye-bakis-beyaz-cit-direk",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

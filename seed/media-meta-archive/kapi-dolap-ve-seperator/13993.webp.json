@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/13993.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çalıların arkasında görünen yeşil geniş kapı cephesi",
+    "en": "Wide green door front seen behind shrubs"
+  },
+  "alt": {
+    "tr": "Ortancalar ve çalıların arkasında uzanan yeşil boyalı kasetli geniş kapı yüzeyi",
+    "en": "Wide green-painted panelled door surface running behind hydrangeas and shrubs"
+  },
+  "caption": {
+    "tr": "Kapı bahçedeki bitkilerle yarı gizlenmiş durumda. Yeşil renk bitkilerle uyum içinde.",
+    "en": "The door is half hidden by garden plants. The green blends with the foliage."
+  },
+  "seoFilename": "calilarin-arkasinda-gorunen-yesil-genis-kapi-cephesi",
+  "tags": {
+    "type": [
+      "kapı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.5
+}

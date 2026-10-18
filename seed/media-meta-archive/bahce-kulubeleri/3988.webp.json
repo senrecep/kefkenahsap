@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/3988.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Direk üstünde ahşap kuş evi, çimlikte",
+    "en": "Timber birdhouse on a pole in a lawn"
+  },
+  "alt": {
+    "tr": "Çimlik bahçede uzun bir direğin tepesine monte edilmiş, bordo çatılı çok bölmeli ahşap kuş evi",
+    "en": "A multi-compartment timber birdhouse with a dark red roof on a tall pole in a lawn, with black iron fencing and shrubs behind"
+  },
+  "caption": {
+    "tr": "Kuş evi yüksek bir direğe takılmış. Birden fazla girişi olduğu için aynı anda birkaç kuşa yer veriyor.",
+    "en": "The birdhouse is mounted on a tall pole. With several entrances it can hold more than one bird at a time."
+  },
+  "seoFilename": "direk-ustunde-ahsap-kus-evi-siyah-cit-onunde",
+  "tags": {
+    "type": [
+      "kuş evi"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

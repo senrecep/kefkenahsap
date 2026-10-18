@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14288.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz köşesinde açılı deck döşemesi",
+    "en": "Mitred deck at the pool corner"
+  },
+  "alt": {
+    "tr": "Havuzun köşesini saran, tahtaları köşede gönyeli birleşen koyu deck; üstte ahşap çatılı sundurma ve direkleri",
+    "en": "Dark deck wrapping the pool corner with boards meeting in a mitre, under a timber-roofed canopy and its posts"
+  },
+  "caption": {
+    "tr": "Köşedeki tahta birleşimi çapraz bir çizgi oluşturuyor. Sundurmanın koyu direği deckin kenarına iniyor.",
+    "en": "The board joint at the corner forms a diagonal line. A dark canopy post comes down at the edge of the deck."
+  },
+  "seoFilename": "havuz-kosesinde-acili-deck-ve-sundurma-direkleri",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/5371.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kıyıda yükseltilmiş deck yolu",
+    "en": "Raised timber deck path on the shore"
+  },
+  "alt": {
+    "tr": "Kıyıda taş zemine oturan yükseltilmiş ahşap deck yolu; korkuluk dikmeleri henüz tamamlanmamış, arkada beyaz evler",
+    "en": "Raised timber deck path resting on stone ground at the shore, with railing posts not yet complete and white houses"
+  },
+  "caption": {
+    "tr": "Yol köşede dönüyor ve deck tahtaları boyuna döşenmiş. Dikmelerin arasına korkuluk çıtaları henüz takılmamış.",
+    "en": "The path turns at the corner and the deck boards are laid lengthwise. The railing slats have not yet been fitted between the posts."
+  },
+  "seoFilename": "kiyida-yukseltilmis-ahsap-deck-yolu-korkuluk-dikmeleri",
+  "tags": {
+    "type": [
+      "deck",
+      "yürüyüş yolu",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

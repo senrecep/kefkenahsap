@@ -1,0 +1,37 @@
+{
+  "source": "Pergola ve Kamelyalar/8805.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Vernikli ahşap kiriş direk üzerine oturuyor, altta toprak ve tuğla yığını",
+    "en": "Varnished timber beam resting on a post with soil and a brick pile below"
+  },
+  "alt": {
+    "tr": "Yakından vernikli ahşap kirişin direk üzerine oturduğu birleşim, altta toprak zemin ve tuğla yığını",
+    "en": "Close view of a varnished timber beam resting on a post, with bare soil and a pile of bricks below"
+  },
+  "caption": {
+    "tr": "Direğin başı kirişin altına geçmeli oturtulmuş. Kirişin yüzeyi koyu vernikle kaplı.",
+    "en": "The head of the post is notched under the beam. The beam's surface carries a dark varnish."
+  },
+  "seoFilename": "vernikli-ahsap-kiris-direk-uzerine-oturuyor-detay",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

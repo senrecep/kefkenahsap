@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/10533.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yükseltilmiş deck kenarı, arkada evler",
+    "en": "Raised deck edge with houses behind"
+  },
+  "alt": {
+    "tr": "Yerden yükseltilmiş ahşap deck kenarı ve açık renkli tahtalar; arkada evler ve çalılık",
+    "en": "Edge of a raised timber deck with light boards, with houses and a hedge behind"
+  },
+  "caption": {
+    "tr": "Deck kalın bir kenar kirişiyle yerden ayrılıyor. Tahtaların çam damarları gün batımı ışığında seçiliyor.",
+    "en": "The deck is lifted off the ground by a thick edge beam. The pine grain of the boards shows in the evening light."
+  },
+  "seoFilename": "yukseltilmis-ahsap-deck-kenari-acik-renkli-tahtalar-arkada",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

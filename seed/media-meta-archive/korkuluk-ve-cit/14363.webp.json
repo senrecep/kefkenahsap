@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14363.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yakın çekimde paravanlı çiçeklik, arkada dükkan ve ek paravan",
+    "en": "Close-up of a planter with a screen, a shop and extra screen behind"
+  },
+  "alt": {
+    "tr": "Yatay çıtalı paravanlı ahşap çiçeklik yakından; arkada ekose duvarlı dükkan girişi ve soldaki ikinci paravan",
+    "en": "Close view of a timber planter with a horizontal-slat screen"
+  },
+  "caption": {
+    "tr": "Paravan dikmelerle kutuya bağlı, çıtalar eşit aralıklı. Çiçeklik kutusunun üst kenarı düz kapanıyor.",
+    "en": "The screen is tied to the box by posts and the slats are evenly spaced. The top edge of the planter box finishes flat."
+  },
+  "seoFilename": "yakin-cekimde-paravanli-ciceklik-dukkan-ek-paravan",
+  "tags": {
+    "type": [
+      "kafes / paravan",
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

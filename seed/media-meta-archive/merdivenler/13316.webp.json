@@ -1,0 +1,40 @@
+{
+  "source": "Korkuluk ve Cit/13316.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş zeminden çimlere inen yeni merdiven",
+    "en": "New stairs from stone paving down to the lawn"
+  },
+  "alt": {
+    "tr": "Taş döşemeden çim bahçeye inen yeni ahşap merdiven ve tırabzan; solda beyaz çit",
+    "en": "New timber stairs and handrail leading from stone paving down to a lawn, with a white fence on the left"
+  },
+  "caption": {
+    "tr": "Taş döşemenin ucundan çimlere birkaç basamak iniyor. Tırabzan kalın direklere oturuyor.",
+    "en": "A few steps lead down from the edge of the paving to the lawn. The handrail rests on thick posts."
+  },
+  "seoFilename": "tas-zeminden-cimlige-inen-yeni-ahsap-merdiven",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,35 @@
+{
+  "source": "Kopru ve Iskele/7971.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Teras içinde kavisli çıtalı köprü gövdesi, yan görünüm",
+    "en": "Arched slatted bridge body on a terrace, side view"
+  },
+  "alt": {
+    "tr": "Teras zemininde yan yatan, OSB gövdeli ve üstü kavisli çıtalı ahşap köprü gövdesi; arka planda kafes paneller ve kolonlar",
+    "en": "Timber bridge body with an OSB side and curved slatted top lying on a terrace floor"
+  },
+  "caption": {
+    "tr": "Köprü gövdesi yandan bakıldığında yumuşak bir kemer çiziyor. Zeminde döşeme kalıntıları ve koruyucu örtü var.",
+    "en": "Seen from the side the bridge body draws a soft arch. There is flooring debris and a protective sheet on the floor."
+  },
+  "seoFilename": "teras-icinde-kavisli-citali-kopru-govdesi-yan",
+  "tags": {
+    "type": [
+      "köprü"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

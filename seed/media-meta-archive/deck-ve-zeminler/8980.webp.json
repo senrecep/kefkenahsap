@@ -1,0 +1,40 @@
+{
+  "source": "Deck ve Zeminler/8980.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çim ile havuz arasında kızıl kahve deck yolu",
+    "en": "Red-brown deck path between lawn and pool"
+  },
+  "alt": {
+    "tr": "Havuz kenarını çimden ayıran kızıl kahve tonlu geniş deck şeridi, perspektifte daralıyor",
+    "en": "Wide red-brown deck strip separating the pool edge from the lawn, narrowing in perspective"
+  },
+  "caption": {
+    "tr": "Tahtalar enine döşenmiş, araları eşit. Deck bir yanda havuzla, diğer yanda çimle sınırlanıyor.",
+    "en": "The boards run across the strip with even gaps. The deck is bordered by the pool on one side and lawn on the other."
+  },
+  "seoFilename": "cim-ile-havuz-arasinda-kizil-kahve-deck-yolu",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "havuz kenarı",
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

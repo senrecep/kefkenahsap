@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/14735.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Zemin kat pencere boşluğunda yeşil panjur kanatları",
+    "en": "Green shutter leaves at a ground-floor opening"
+  },
+  "alt": {
+    "tr": "Beyaz çıkma altındaki zemin kat açıklığının iki yanında, yeşil Z çaprazlı panjur kanatları ve zeminde naylon örtü",
+    "en": "Green Z-braced shutter leaves on both sides of a ground-floor opening under a white overhang, with sheeting on the ground"
+  },
+  "caption": {
+    "tr": "Büyük kanatlar açıklığı iki yandan kapatıyor. Dar kanat sağ kenarda duruyor.",
+    "en": "The large leaves close the opening from both sides. A narrower leaf stands at the right edge."
+  },
+  "seoFilename": "zemin-kat-pencere-boslugunda-yesil-panjur-kanatlari",
+  "tags": {
+    "type": [
+      "pencere / panjur"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

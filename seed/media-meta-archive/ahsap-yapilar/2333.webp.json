@@ -1,0 +1,34 @@
+{
+  "source": "Ahsap Yapilar/2333.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Gökyüzüne karşı koyu ahşap çatı kirişleri",
+    "en": "Dark timber roof rafters against the sky"
+  },
+  "alt": {
+    "tr": "Sıvalı duvarın üstünde birleşen koyu tonlu ahşap mertekler ve mavi gökyüzü",
+    "en": "Dark timber rafters meeting above a rendered wall against a blue sky"
+  },
+  "caption": {
+    "tr": "Koyu tonlu ahşap mertekler mahyada birleşiyor, aralarından gökyüzü görünüyor.",
+    "en": "Dark timber rafters meet at the ridge, with open sky showing between them."
+  },
+  "seoFilename": "gokyuzu-koyu-ahsap-cati-mertekleri",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "dış mekân"
+    ],
+    "finish": [
+      "koyu ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

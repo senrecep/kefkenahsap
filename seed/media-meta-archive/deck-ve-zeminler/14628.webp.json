@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14628.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dar balkonda cam kapı kenarında deck",
+    "en": "Deck by the glass door on a narrow balcony"
+  },
+  "alt": {
+    "tr": "Cam kapının kenarında uzanan, dar balkona boyuna döşenmiş kırmızı kahverengi cilalı deck",
+    "en": "Red-brown polished deck laid lengthwise along a narrow balcony beside a glass door"
+  },
+  "caption": {
+    "tr": "Tahtalar balkonun derinliği boyunca ilerliyor ve alt ucunda gri zemine bağlanıyor. Sağda siyah korkuluk görünüyor.",
+    "en": "The boards run the whole length of the balcony and meet the grey floor at the bottom. A black railing shows on the right."
+  },
+  "seoFilename": "dar-balkonda-cam-kapi-kenarinda-cilali-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "balkon"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/10444.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölyede altın kahve tonlu çıtalı ahşap masa tablası, geniş çerçeveli",
+    "en": "Golden-brown slatted timber table top with a wide frame in the workshop"
+  },
+  "alt": {
+    "tr": "Atölye tezgâhının üzerinde duran, geniş gönyeli çerçevesi ve ortada uzun çıtaları olan",
+    "en": "A rectangular golden-brown varnished timber table top on a workshop bench"
+  },
+  "caption": {
+    "tr": "Tablanın dış çerçevesi köşelerde gönyeli birleşiyor, ortada uzun çıtalar boydan boya uzanıyor. Vernik tahtaların rengini derinleştirmiş.",
+    "en": "The outer frame of the top is mitred at the corners with long slats running down the middle. The varnish has deepened the colour of the wood."
+  },
+  "seoFilename": "atolyede-altin-kahve-citali-ahsap-masa-tablasi-cerceveli",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

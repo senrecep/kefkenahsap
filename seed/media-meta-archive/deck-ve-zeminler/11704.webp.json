@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/11704.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kiriş iskeletinin yarısı deckle kaplanmış",
+    "en": "Joist frame half covered with deck boards"
+  },
+  "alt": {
+    "tr": "Çakıl üzerinde kiriş iskeleti, bir bölümü deck tahtalarıyla kaplanmış, arkada oturma grubu",
+    "en": "Joist frame on gravel with part of it already covered in deck boards, a seating set behind"
+  },
+  "caption": {
+    "tr": "Döşeme kapıdan başlayıp çakıllı kısma doğru ilerliyor. Yerde matkap ve kalan tahtalar duruyor.",
+    "en": "Laying starts at the door and moves out over the gravel part. A drill and spare boards lie on the deck."
+  },
+  "seoFilename": "kiris-iskeleti-yarisi-deck-kapli",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras",
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

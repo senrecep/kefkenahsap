@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/200.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Parkta tek ahşap pergola, kalın direkler ve kirişler",
+    "en": "Single timber pergola in a park with thick posts and beams"
+  },
+  "alt": {
+    "tr": "Parkta çit ve çalıların yanında tek başına duran açık renk ahşap pergola, kalın direkler ve üst kirişler",
+    "en": "Single light timber pergola standing alone in a park beside a fence and shrubs, with thick posts and top beams"
+  },
+  "caption": {
+    "tr": "Pergola iki ayak üzerinde ve kirişler üst yönde çıkıntı yapıyor. Altında kırmızı zeminli bir alan var.",
+    "en": "The pergola stands on two legs with the beams projecting at the top. A red-surfaced area lies beneath."
+  },
+  "seoFilename": "parkta-tek-ahsap-pergola-kalin-direkler-kirisler",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

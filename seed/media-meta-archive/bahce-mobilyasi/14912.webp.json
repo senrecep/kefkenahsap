@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14912.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kalın ayaklı, kenarı perçinli koyu ahşap uzun masa",
+    "en": "Long dark timber table with thick legs and a riveted edge"
+  },
+  "alt": {
+    "tr": "Yandan görünüşte, kalın ayaklı ve kenarında perçin başları olan koyu vernikli uzun ahşap masa; arkada iç mekân var",
+    "en": "A side view of a long dark-varnished timber table with thick legs and rivet heads along its edge, with an interior behind"
+  },
+  "caption": {
+    "tr": "Masanın ayakları kalın ve ağır, alttaki bağlantı kirişi yapıyı birbirine bağlıyor. Tabla kenarında perçin başları görünüyor.",
+    "en": "The legs are thick and heavy, and a bottom beam ties the frame together. Rivet heads show along the edge of the top."
+  },
+  "seoFilename": "kalin-ayakli-kenari-perclinli-koyu-ahsap-uzun-masa-yandan",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

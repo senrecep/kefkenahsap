@@ -1,0 +1,35 @@
+{
+  "source": "Korkuluk ve Cit/14462.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Ahşap merdivenin başında bahçe kapısı",
+    "en": "Garden gate at the top of timber steps"
+  },
+  "alt": {
+    "tr": "Yeşil çalılar arasında yükselen kahverengi tonlu ahşap basamaklar ve en üstte sivri uçlu ahşap bahçe kapısı",
+    "en": "Brown toned timber steps rising between green shrubs to a picket garden gate at the top"
+  },
+  "caption": {
+    "tr": "Basamakların en üstüne aynı tonda ahşap bir bahçe kapısı yerleştirilmiş. Merdivenin bir yanında metal tırabzan var.",
+    "en": "A timber garden gate in the same tone stands at the top of the steps, with a metal handrail along one side."
+  },
+  "seoFilename": "ahsap-merdiven-basinda-sivri-uclu-bahce-kapisi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "kahverengi ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

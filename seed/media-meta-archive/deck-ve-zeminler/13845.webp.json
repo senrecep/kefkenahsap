@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/13845.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ağaç gölgesinde turuncu kahverengi cilalı deck ve hortum",
+    "en": "Orange-brown varnished deck in tree shade with a hose"
+  },
+  "alt": {
+    "tr": "Ağaç gölgesinde çimen üzerinde turuncu kahverengi cilalı deck, önde hortum",
+    "en": "Orange-brown varnished deck on the lawn in the shade of a tree, with a hose in front"
+  },
+  "caption": {
+    "tr": "Tahtalar uzun yönde ve eşit aralıkla döşenmiş, ağaç gölgesi yüzeyde benekler bırakıyor. Hortum, deck'in cilasının henüz yeni olduğunu gösteriyor.",
+    "en": "The boards run lengthwise at even spacing with the tree shade leaving flecks on the surface. The hose suggests the varnish is still fresh."
+  },
+  "seoFilename": "agac-golgesinde-turuncu-kahverengi-cilali-deck-ve-hortum",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

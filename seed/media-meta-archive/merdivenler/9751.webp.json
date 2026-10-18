@@ -1,0 +1,33 @@
+{
+  "source": "Merdivenler/9751.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Çakıl zeminde önden ahşap merdiven",
+    "en": "Timber staircase on gravel, front view"
+  },
+  "alt": {
+    "tr": "Çakıl döşeli zeminden duvar üstüne çıkan, iki yanı çapraz korkuluklu ahşap merdivenin önden görünüşü",
+    "en": "Front view of a timber staircase with cross-braced railings rising from a gravel bed to the top of a wall"
+  },
+  "caption": {
+    "tr": "Önden bakınca açık basamaklar ve iki yandaki korkuluklar simetrik bir görünüm veriyor.",
+    "en": "Seen from the front, the open treads and the railings on both sides form a symmetrical view."
+  },
+  "seoFilename": "cakil-zeminde-onden-ahsap-merdiven",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

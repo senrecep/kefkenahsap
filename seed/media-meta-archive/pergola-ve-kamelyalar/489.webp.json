@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/489.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Pergola direk ve kirişlerinin yakın görünümü, toprak ve apartmanlar",
+    "en": "Close view of pergola posts and beams with soil and apartment blocks"
+  },
+  "alt": {
+    "tr": "Yakından pergola direkleri, çapraz payandalar ve kirişler, arkada toprak yığını, duvar ve apartmanlar",
+    "en": "Close view of pergola posts, diagonal braces and beams, with a pile of soil, a wall and apartment blocks behind"
+  },
+  "caption": {
+    "tr": "Payandalar direkle kirişi köşede birleştiriyor. Gökyüzü kirişlerin arasından görünüyor.",
+    "en": "The braces tie post and beam at the corner. The sky shows between the beams."
+  },
+  "seoFilename": "pergola-direk-kiris-yakin-gorunum-toprak-apartman",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

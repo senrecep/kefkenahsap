@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/14325.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Shingle çatılı, jaluzi alt bölmeli yüksek bahçe dolabı",
+    "en": "Tall garden cabinet with a shingle roof and a louvred lower bay"
+  },
+  "alt": {
+    "tr": "Beton zeminde yatay tahtalı yanları, shingle kaplı çatısı ve jaluzi alt bölmesi olan koyu bal rengi çift kapaklı dolap",
+    "en": "Tall double-door cabinet in dark honey tone on a concrete floor, with horizontally boarded sides"
+  },
+  "caption": {
+    "tr": "Dolabın çatısı gri shingle ile kaplı, alt bölmesi havalanıyor. Kapaklar siyah menteşelerle bağlı.",
+    "en": "The roof is covered in grey shingle and the lower bay is ventilated. The doors hang on black hinges."
+  },
+  "seoFilename": "shingle-catili-jaluzi-alt-bolmeli-yuksek-bahce-dolabi",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

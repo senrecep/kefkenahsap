@@ -1,0 +1,36 @@
+{
+  "file": "cc687967-2566-4b28-9c7a-04012222e5e5.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Lacivert boyalı TV ünitesi ve dolap takımı",
+    "en": "Navy painted TV unit and wardrobe set"
+  },
+  "alt": {
+    "tr": "Yatak odasında altın şeritli lacivert TV ünitesi; yanlarda boy dolaplar, altta çekmeceler, üstte açık raflar",
+    "en": "Navy blue bedroom TV unit with gold trim, tall side wardrobes, drawers below and open shelves above"
+  },
+  "caption": {
+    "tr": "Yatak odası için yaptığımız lacivert boyalı TV ünitesi. Kapak ve çekmecelerde pirinç rengi şerit detay, metal kulplar var; yanlarda iki boy dolap yer alıyor.",
+    "en": "A navy painted TV unit made for a bedroom. The doors and drawers have brass-colored trim and metal handles, with a tall wardrobe on each side."
+  },
+  "seoFilename": "lacivert-tv-unitesi-dolap-takimi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "yatak odası",
+      "iç mekan"
+    ],
+    "finish": [
+      "lacivert boya",
+      "altın şerit detay",
+      "metal kulp"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

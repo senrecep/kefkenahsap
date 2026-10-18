@@ -1,0 +1,40 @@
+{
+  "source": "Ireko-Teak/14129.webp",
+  "category": "mutfak-ve-gomme-dolap",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Duvar boyunca uzanan dolap iskeleti ve bank üstü",
+    "en": "Cabinet frame and bench top running along the wall"
+  },
+  "alt": {
+    "tr": "Taş döşemeli giriş yanında duvar boyunca uzanan ahşap kaplı dolap iskeleti ve üstündeki bank tablası",
+    "en": "A timber-clad cabinet frame running along the wall beside a stone-paved entrance, with a bench top over it"
+  },
+  "caption": {
+    "tr": "Dolap duvarın dibinde uzun bir sıra halinde ilerliyor, üstü bank tablasıyla kapanıyor. Gözler henüz açık.",
+    "en": "The cabinet runs along the foot of the wall in one long row and is topped by a bench top. The compartments are still open."
+  },
+  "seoFilename": "duvar-boyunca-uzanan-ahsap-kapli-dolap-iskeleti-ve-bank-ustu",
+  "tags": {
+    "type": [
+      "gömme dolap / gardırop",
+      "bank",
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş",
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/13451.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölyede küçük vernikli köpek kulübesi, önden",
+    "en": "Small varnished dog house in the workshop, from the front"
+  },
+  "alt": {
+    "tr": "Atölye zemininde duran, ön girişi görünen küçük vernikli köpek kulübesi; yeşil çatılı",
+    "en": "Small varnished dog house with a green roof standing on a workshop floor, the front entrance visible"
+  },
+  "caption": {
+    "tr": "Kulübenin yeşil çatısı iki yöne eğimli, giriş açıklığı kadrajın ortasında. Arkada basamaklar ve kırmızı bir perde var.",
+    "en": "The green roof of the house slopes two ways and the entrance opening is in the middle of the frame. Steps and a red curtain are behind."
+  },
+  "seoFilename": "atolyede-kucuk-vernikli-kopek-kulubesi-on-girisi-gorunuyor",
+  "tags": {
+    "type": [
+      "köpek kulübesi"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

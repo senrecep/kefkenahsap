@@ -1,0 +1,33 @@
+{
+  "source": "Pergola ve Kamelyalar/7526.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Su kenarında küçük ahşap çardak",
+    "en": "Small timber arbour by the water"
+  },
+  "alt": {
+    "tr": "Çiçekli kayaların dibinde, koya bakan beşik çatılı küçük ahşap çardak",
+    "en": "Small gabled timber arbour at the foot of flowering rocks, facing a bay"
+  },
+  "caption": {
+    "tr": "Kıyıdaki beton zemine kurulan beşik çatılı küçük çardak. Arkasındaki kayalar mor çiçeklerle kaplı.",
+    "en": "A small gabled arbour on a concrete base by the shore. The rocks behind it are covered in purple flowers."
+  },
+  "seoFilename": "su-kenari-kucuk-cardak-cicekli-kayalar",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "deniz kenarı",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

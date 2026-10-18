@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/13751.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yeşil panjur kanadındaki menteşe ayrıntısı",
+    "en": "Hinge detail on a green shutter leaf"
+  },
+  "alt": {
+    "tr": "Yeşil boyalı, jaluzi çıtalı bir panjur kanadının dikme kısmında metal menteşe ve vida sıraları",
+    "en": "Metal hinge and screws on the stile of a green-painted louvred shutter leaf"
+  },
+  "caption": {
+    "tr": "Menteşe kanadı pervaza bağlıyor, boya yer yer aşınmış. Panjur çıtaları iki yanda görünüyor.",
+    "en": "The hinge ties the leaf to the frame and the paint is worn in places. The louvre slats show on both sides."
+  },
+  "seoFilename": "yesil-panjur-kanadindaki-mentese-ayrintisi",
+  "tags": {
+    "type": [
+      "pencere / panjur"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

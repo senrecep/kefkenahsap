@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/12562.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölye masasında beyaz boyalı jaluzi klima kutusu",
+    "en": "White-painted louvred air-conditioner box on a workshop table"
+  },
+  "alt": {
+    "tr": "Atölye masasının üzerinde duran, dikey jaluzi çıtalı yüzlü beyaz boyalı büyük kutu, arka planda atölye raflar ve tablolar",
+    "en": "Large white-painted box with a vertical louvre front standing on a workshop table, with shelves and pictures behind"
+  },
+  "caption": {
+    "tr": "Beyaz boyalı kasa dikey çıtalarla havalanıyor. Atölyede teslimden önce son kontrolü yapılıyor.",
+    "en": "The white box ventilates through its vertical slats. It is checked in the workshop before delivery."
+  },
+  "seoFilename": "atolye-masasinda-beyaz-boyali-jaluzi-klima-kutusu",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

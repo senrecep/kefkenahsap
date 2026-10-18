@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/13575.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kalın direkli korkuluk ve tahta merdiven",
+    "en": "Thick-post railing and board stairs"
+  },
+  "alt": {
+    "tr": "Evin yanında kalın direkli çaprazlı korkuluk ve tahta basamaklı merdiven; arkada cam kapılı cephe",
+    "en": "Cross-braced railing on a thick post and board-tread stairs beside a house, with a glass-doored facade behind"
+  },
+  "caption": {
+    "tr": "Korkuluk kalın bir direkle başlıyor. Basamaklar tahtayla kaplı, arkada evin cam kapıları görünüyor.",
+    "en": "The railing starts at a thick post. The treads are boards and the house's glass doors show behind."
+  },
+  "seoFilename": "kalin-direkli-korkuluk-ve-tahta-merdiven-evin-yaninda",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

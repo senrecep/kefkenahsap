@@ -1,0 +1,37 @@
+{
+  "file": "46.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Villa bahçesinde kafes panelli ahşap pergola",
+    "en": "Wooden pergola with lattice panels in a villa garden"
+  },
+  "alt": {
+    "tr": "Taş kaplı zemin üzerinde kafes panelli, üstü kirişli açık renkli ahşap pergola; arkada villalar ve çim alan",
+    "en": "Light wooden pergola with lattice panels and slatted roof on a paved base, villas and lawn in the background"
+  },
+  "caption": {
+    "tr": "Konut sitesi bahçesinde, taş kaplı zemine kurulmuş kirişli ahşap pergola. Yan yüzlerde kafes paneller var.",
+    "en": "A wooden pergola with a beam roof on a paved slab in a residential garden, with lattice panels on the sides."
+  },
+  "seoFilename": "bahce-ahsap-pergola-kafes-panelli",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "villa",
+      "konut sitesi",
+      "açık hava"
+    ],
+    "finish": [
+      "kafes panel",
+      "açık ton emprenye görünümü"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

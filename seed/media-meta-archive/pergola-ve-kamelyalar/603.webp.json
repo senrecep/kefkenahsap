@@ -1,0 +1,41 @@
+{
+  "source": "Pergola ve Kamelyalar/603.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Park alanında çatısı açık ahşap kamelya, deck ve alçak korkuluk",
+    "en": "Open-roofed timber gazebo in a park with a deck and a low rail"
+  },
+  "alt": {
+    "tr": "Söğüt ağacının altında çatı iskeleti açık ahşap kamelya, deck ve alçak korkuluk; içinde bir kişi oturuyor",
+    "en": "Timber gazebo with an exposed roof frame under a willow tree, with a deck and a low railing and one person sitting inside"
+  },
+  "caption": {
+    "tr": "Çatı kirişleri dört yöne eğimli bir çatı oluşturacak şekilde dizilmiş. Çevrede plastik sandalyeler ve başka bir kamelya görünüyor.",
+    "en": "The roof rafters are set out to form a hipped roof. Plastic chairs and another gazebo show in the surroundings."
+  },
+  "seoFilename": "parkta-catisi-acik-ahsap-kamelya-deck-alcak-korkuluk",
+  "tags": {
+    "type": [
+      "kamelya",
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

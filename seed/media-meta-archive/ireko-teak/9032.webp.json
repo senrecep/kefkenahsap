@@ -1,0 +1,35 @@
+{
+  "source": "Ireko-Teak/9032.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Aralıklı döşenmiş turuncu çıtalı yüzey",
+    "en": "Orange slatted surface with spaced boards"
+  },
+  "alt": {
+    "tr": "Alt kirişlere aralıklı vidalanmış turuncu kahve ahşap tahtaların yakın çekimi, damar ve halka çizgileri belirgin",
+    "en": "Close-up of orange-brown timber boards fixed with gaps to the joists beneath, with clear grain and ring lines"
+  },
+  "caption": {
+    "tr": "Tahtalar alt kirişlere eşit boşlukla sabitlenmiş. Aralardan alttaki yapı görünüyor.",
+    "en": "The boards are fixed to the joists with even gaps, and the structure below shows through."
+  },
+  "seoFilename": "aralikli-dosenmis-turuncu-citali-yuzey",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.4
+}

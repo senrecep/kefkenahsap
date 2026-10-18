@@ -1,0 +1,39 @@
+{
+  "source": "Korkuluk ve Cit/8274.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yeşil tel örgülü ahşap çerçeveli çit, köşe direği",
+    "en": "Timber-framed green wire-mesh fence, corner post"
+  },
+  "alt": {
+    "tr": "Çimenlik kenarında, yeşil tel örgü gerilmiş açık tonlu ahşap çerçeveli çit ve tepesi düz kalın köşe direği, arkada çalılar",
+    "en": "Light timber-framed fence with green wire mesh at the edge of a lawn, with a thick flat-topped corner post and shrubs behind"
+  },
+  "caption": {
+    "tr": "Tel örgü ahşap çerçevenin içine gerilmiş, köşe direği iki kolu birbirine bağlıyor.",
+    "en": "The wire mesh is stretched inside the timber frame, and the corner post ties the two arms together."
+  },
+  "seoFilename": "yesil-tel-orgulu-ahsap-cerceveli-cit-kose-diregi",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

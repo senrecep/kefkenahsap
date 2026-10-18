@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/9442.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çim üzerinde dar bir deck için ahşap iskelet",
+    "en": "Timber frame for a narrow deck over the lawn"
+  },
+  "alt": {
+    "tr": "Ev duvarı boyunca çimin üzerine kurulmuş, kısa ayaklara oturan dar ve uzun emprenyeli kiriş iskeleti",
+    "en": "A narrow, long pressure-treated joist frame set over lawn along a house wall, resting on short feet"
+  },
+  "caption": {
+    "tr": "İskelet çimin üzerinde ayaklara oturuyor. Tahtalar bu kirişlerin üzerine gelecek.",
+    "en": "The frame rests on small feet above the lawn. The boards will go on these joists."
+  },
+  "seoFilename": "cim-uzerinde-dar-deck-icin-ahsap-iskelet",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

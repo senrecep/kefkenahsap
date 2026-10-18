@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/7812.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam bölmeli dış duş kabininin içi",
+    "en": "Inside an outdoor shower cabin with a glass screen"
+  },
+  "alt": {
+    "tr": "Ahşap kaplı dış duş kabininin içi: cam bölme, yağmur başlıklı duş armatürü ve taş kaplı arka duvar",
+    "en": "Inside a timber-clad outdoor shower cabin: a glass screen, a shower fitting with a rain head and a stone-clad back wall"
+  },
+  "caption": {
+    "tr": "Duş başlığı ve el duşu açık renk taş kaplı duvarda duruyor. Soldaki ahşap duvar yatay tahtadan, aralıktan güneş ışığı giriyor.",
+    "en": "The shower head and handheld shower stand on a wall clad in light stone. The timber wall on the left is horizontal boards with sunlight coming through the gaps."
+  },
+  "seoFilename": "cam-bolme-ve-dus-armaturlu-ahsap-kapli-dis-dus-kabini-ici",
+  "tags": {
+    "type": [
+      "duş / soyunma kabini"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

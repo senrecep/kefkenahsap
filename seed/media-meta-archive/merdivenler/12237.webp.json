@@ -1,0 +1,35 @@
+{
+  "source": "Korkuluk ve Cit/12237.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Korkuluklu ahşap dış merdiven",
+    "en": "Outdoor timber staircase with railings"
+  },
+  "alt": {
+    "tr": "Bahçeden yükseltilmiş ahşap platforma çıkan, iki yanı korkuluklu ahşap merdiven",
+    "en": "Timber staircase with railings on both sides leading from a garden up to a raised platform"
+  },
+  "caption": {
+    "tr": "Ahşap merdiven bahçeden yükseltilmiş platforma çıkıyor. İki yandaki korkuluklar üstte platformun çevresinde devam ediyor.",
+    "en": "A timber staircase leads from the garden up to a raised platform, with railings on both sides that continue around the top."
+  },
+  "seoFilename": "korkuluklu-ahsap-dis-merdiven-bahce-platform",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ahşap"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

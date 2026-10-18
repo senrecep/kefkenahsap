@@ -1,0 +1,33 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/1142.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Deniz kenarındaki deck'te ahşap çiçeklikler",
+    "en": "Timber planters on a seaside deck"
+  },
+  "alt": {
+    "tr": "Denize bakan ahşap deck'in kenarında, çapraz korkulukların önünde duran iki dikdörtgen ahşap çiçeklik",
+    "en": "Two rectangular timber planters on the edge of a seaside deck, in front of cross-braced railings"
+  },
+  "caption": {
+    "tr": "Deck kenarındaki iki ahşap çiçeklik, korkuluk ve pergolayla aynı tonda. Arkada deniz ve kıyı boyunca uzanan teraslar görünüyor.",
+    "en": "Two timber planters on the edge of the deck, in the same tone as the railings and pergola. The sea and terraces along the shore lie behind."
+  },
+  "seoFilename": "deniz-kenari-deck-ahsap-ciceklik",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "deniz kenarı",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

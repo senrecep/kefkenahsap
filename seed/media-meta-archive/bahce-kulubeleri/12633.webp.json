@@ -1,0 +1,39 @@
+{
+  "source": "Korkuluk ve Cit/12633.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yeşil kaydıraklı, merdivenli yüksek zeminli oyun evi",
+    "en": "Raised playhouse with a green slide and a staircase"
+  },
+  "alt": {
+    "tr": "Bordo çatılı ahşap oyun evi ayaklar üzerinde yükseltilmiş; yan tarafta korkuluklu merdiven ve yeşil kaydırak var",
+    "en": "A timber playhouse with a dark red roof raised on posts, with a railed staircase and a green slide at its side"
+  },
+  "caption": {
+    "tr": "Çocuklar merdivenle yukarı çıkıp kaydırakla iniyor. Evin altı açık bırakıldığı için gölgede oynanabiliyor.",
+    "en": "Children go up by the stairs and come down by the slide. The area under the house is left open, so they can play in the shade."
+  },
+  "seoFilename": "yesil-kaydirakli-merdivenli-yuksek-oyun-evi",
+  "tags": {
+    "type": [
+      "çocuk oyun evi"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

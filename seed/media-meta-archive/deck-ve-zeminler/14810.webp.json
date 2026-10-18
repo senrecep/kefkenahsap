@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14810.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Güneşte yarı döşenmiş deck, taş plakalar yanında",
+    "en": "Half-laid deck in sunlight, beside stone slabs"
+  },
+  "alt": {
+    "tr": "Çalıların ve taş plakaların yanında, kenarında korkuluk bulunan yarı döşenmiş açık renkli deck; objektifte güneş parlaması",
+    "en": "Half-laid pale deck with a railing at its edge, beside shrubs and stone slabs, with sun flare in the lens"
+  },
+  "caption": {
+    "tr": "Sol bölümde tahtalar döşenmiş, sağda alt çıtalar açıkta kalmış. Güneş ışığı karenin üst kısmında parlama yapıyor.",
+    "en": "Boards are laid on the left and the battens are still bare on the right. Sunlight causes flare across the upper part of the frame."
+  },
+  "seoFilename": "gunes-isigi-altinda-yari-dosenmis-deck-tas-plaka-yani",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

@@ -1,0 +1,36 @@
+{
+  "file": "1559512_890181061026494_2663664331023235287_o.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede ahşap pergola yapımı",
+    "en": "Wooden pergola under construction in a garden"
+  },
+  "alt": {
+    "tr": "Bahçede kalın ahşap direkler ve kirişli pergola iskeleti, arkada palmiyeler, çit ve oyun alanı, yanında merdiven duruyor",
+    "en": "Wooden pergola frame with thick posts and beams in a garden, palm trees, hedge and play area behind, ladder beside it"
+  },
+  "caption": {
+    "tr": "Çimli bir bahçede kurulumu süren ahşap pergola. Kalın direkler ve sıralı kirişler yerine oturmuş, merdiven ve şantiye malzemeleri hâlâ yerinde.",
+    "en": "A wooden pergola being assembled in a lawn garden. The thick posts and evenly spaced beams are in place, with the ladder and site materials still around."
+  },
+  "seoFilename": "bahcede-ahsap-pergola-montaji",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "villa bahçesi",
+      "çim alan",
+      "dış mekan"
+    ],
+    "finish": [
+      "doğal ahşap"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/4114.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çıtalı korkuluklu merdiven ve yeşil metal küpeşte",
+    "en": "Slatted-railing stairs with a green metal handrail"
+  },
+  "alt": {
+    "tr": "Ağaçların altında çıtalı ahşap korkuluklu merdiven ve platform; aşağıda yeşil metal küpeşte",
+    "en": "Timber stairs and platform with slatted railings under trees, with a green metal handrail below"
+  },
+  "caption": {
+    "tr": "Merdiven dikey çıtalı korkuluklarla çevrili, alt kısımda yeşil boyalı metal bir küpeşte var.",
+    "en": "The stairs are enclosed by vertical-slat railings, with a green-painted metal handrail at the bottom."
+  },
+  "seoFilename": "citali-korkuluklu-merdiven-yesil-metal-kupeste",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

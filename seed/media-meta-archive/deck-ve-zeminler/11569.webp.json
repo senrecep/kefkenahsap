@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/11569.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Turuncu cilalı deck üzerinde masa ve sandalyeler",
+    "en": "Table and chairs on an orange varnished deck"
+  },
+  "alt": {
+    "tr": "Turuncu cilalı deck üzerinde ahşap masa ve katlanır sandalyeler; kenarda beyaz taşlar",
+    "en": "Timber table and folding chairs on an orange varnished deck, with white stones along the edge"
+  },
+  "caption": {
+    "tr": "Güneşli teras ahşap deck ile kaplı, masa ve sandalyeler cam kapıya yakın duruyor. Deck kenarında beyaz çakıl taşları sıralanmış.",
+    "en": "The sunny terrace is covered with timber deck, with the table and chairs close to the glass door. White pebbles line the edge of the deck."
+  },
+  "seoFilename": "turuncu-cilali-deck-uzerinde-ahsap-masa-ve-katlanir",
+  "tags": {
+    "type": [
+      "deck",
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

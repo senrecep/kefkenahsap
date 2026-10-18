@@ -1,0 +1,40 @@
+{
+  "source": "Deck ve Zeminler/14809.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yarım döşenmiş deck ve ahşap korkuluk",
+    "en": "Half-laid deck and timber railing"
+  },
+  "alt": {
+    "tr": "Çıtalar üzerine yarısı döşenmiş açık renkli deck; sol kenarda yatay çıtalı ahşap korkuluk, önde sarı yapraklı çalı",
+    "en": "Pale deck laid halfway over battens, with a horizontal-slat timber railing on the left and yellow-leaved shrubs in front"
+  },
+  "caption": {
+    "tr": "Döşenen tahtalar korkulukla paralel ilerliyor, sağ yarıda alt çıtalar hâlâ açıkta. Üstte kurulum için bırakılmış alet ve parçalar görünüyor.",
+    "en": "The laid boards run parallel to the railing while the battens on the right half are still bare. Tools and parts left for the installation can be seen on top."
+  },
+  "seoFilename": "yarim-dosenmis-deck-ve-ahsap-korkuluk-cita-uzerinde",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,39 @@
+{
+  "source": "Korkuluk ve Cit/9922.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Avlu köşesinde yatay çıtalı paravan, fayans zemin",
+    "en": "Horizontal-slat screen in a courtyard corner on tiled floor"
+  },
+  "alt": {
+    "tr": "Avlunun köşesinde iki yüzeyi kaplayan yatay çıtalı ahşap paravan, altta alçak beyaz duvar ve desenli fayans zemin",
+    "en": "Horizontal-slat timber screen covering two surfaces in a courtyard corner, with a low white wall below"
+  },
+  "caption": {
+    "tr": "Paravan köşeyi tamamen kapatıyor. Çıtalar arasındaki boşluk ışığı geçiriyor.",
+    "en": "The screen closes off the corner completely. Gaps between the slats let light through."
+  },
+  "seoFilename": "avlu-kosesinde-yatay-citali-ahsap-paravan-fayans-zemin",
+  "tags": {
+    "type": [
+      "kafes / paravan"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,37 @@
+{
+  "file": "WhatsApp-Image-2021-06-27-at-20.13.48-2.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede iroko deck zemin",
+    "en": "Iroko deck floor in a garden"
+  },
+  "alt": {
+    "tr": "Çimenli bahçede, beyaz duvarın önüne döşenmiş kırmızımsı kahverengi ahşap deck zemin ve kenarında bir süpürge",
+    "en": "Reddish-brown wooden deck laid on a lawn in front of a white wall, with a broom resting beside it"
+  },
+  "caption": {
+    "tr": "Çimlerin arasına yerleştirdiğimiz, kenarları çerçeveli ahşap deck zemin. Tahtalar uzun boyuna döşendi, yüzey cilalanıp bitirildi.",
+    "en": "A framed wooden deck set into the lawn. The boards run lengthwise and the surface has been oiled and finished."
+  },
+  "seoFilename": "bahcede-iroko-deck-zemin",
+  "tags": {
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "teras"
+    ],
+    "finish": [
+      "yağ cilası"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.72
+}

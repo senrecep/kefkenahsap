@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/12334.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Tenteli ahşap pergola, taş duvarlı kavisli bank ve oval masa",
+    "en": "Canvas-covered timber pergola with a curved stone-walled bench and an oval table"
+  },
+  "alt": {
+    "tr": "Gri-bej tenteli ahşap pergola, taş duvarlı kavisli bank, oval ahşap masa ve arkada çiçekli sarmaşıklar",
+    "en": "Timber pergola with a grey-beige canvas cover, a curved stone-walled bench, an oval wooden table and flowering climbers"
+  },
+  "caption": {
+    "tr": "Bankın taş tabanı çimenle çevrili. Pergolanın üstündeki tente yemek alanını güneşten koruyor.",
+    "en": "The stone base of the bench is ringed by lawn. The canvas over the pergola shades the dining area."
+  },
+  "seoFilename": "tenteli-ahsap-pergola-kavisli-bank-oval-masa",
+  "tags": {
+    "type": [
+      "pergola",
+      "bank",
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

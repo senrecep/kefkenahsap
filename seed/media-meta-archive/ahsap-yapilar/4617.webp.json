@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/4617.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cıvata bağlantılı ahşap çatı kafes kirişleri",
+    "en": "Bolted timber roof trusses"
+  },
+  "alt": {
+    "tr": "Cıvatalarla birleştirilmiş çapraz çubuklu ahşap çatı kafes kirişleri, alttan görünüm",
+    "en": "Timber roof trusses with diagonal members joined by bolts, seen from below"
+  },
+  "caption": {
+    "tr": "Kirişlerin çapraz çubukları cıvatalı levhalarla tutturulmuş. Üstte çatı tahtaları, kirişin açık yeşilimsi tonu belli oluyor.",
+    "en": "The diagonal members of the trusses are fixed with bolted plates. The roof boards sit above and the light greenish tint of the timber shows."
+  },
+  "seoFilename": "civata-baglantili-ahsap-cati-kafes-kirisleri-alttan",
+  "tags": {
+    "type": [],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

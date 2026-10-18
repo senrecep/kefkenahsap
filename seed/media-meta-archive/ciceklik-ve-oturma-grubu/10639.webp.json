@@ -1,0 +1,39 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/10639.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çiçeklik köşesi ve siyah astar, yakın çekim",
+    "en": "Planter corner and black liner, close-up"
+  },
+  "alt": {
+    "tr": "Açık renkli ahşap çiçeklik köşesinin ve içindeki siyah astarın yakın çekimi",
+    "en": "Close-up of the corner of a light timber planter and the black liner inside"
+  },
+  "caption": {
+    "tr": "Köşede kalın kare direk, üstünde yatay bir üst kuşak var. Alt kısım dikey tahta.",
+    "en": "A thick square post stands at the corner with a horizontal top rail above. The lower part is vertical boards."
+  },
+  "seoFilename": "acik-renkli-ahsap-ciceklik-kosesi-ve-siyah-astar-yakin-cekim",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

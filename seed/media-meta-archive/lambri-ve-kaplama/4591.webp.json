@@ -1,0 +1,36 @@
+{
+  "source": "Ahsap Yapilar/4591.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz ahşap kaplama, balkon korkuluğu ve cumbalı pencere",
+    "en": "White timber cladding, balcony railing and a bay window"
+  },
+  "alt": {
+    "tr": "Beyaz boyalı yatay ahşap kaplamalı cephede çıtalı balkon korkuluğu ve altında camları bölmeli cumbalı pencere",
+    "en": "Slatted balcony railing on a white-painted horizontal timber-clad facade, with a bay window of divided panes beneath"
+  },
+  "caption": {
+    "tr": "Balkon geniş bir saçakla örtülü, cumbalı pencere kaplamanın önüne çıkıyor.",
+    "en": "The balcony is covered by a wide eave, and the bay window projects from the cladding."
+  },
+  "seoFilename": "beyaz-boyali-ahsap-kaplama-balkon-korkuluk-ve-cumbali",
+  "tags": {
+    "type": [
+      "cephe kaplaması",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

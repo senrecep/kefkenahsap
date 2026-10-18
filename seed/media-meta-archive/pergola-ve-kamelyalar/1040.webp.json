@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/1040.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar ve palmiye yanında uzun beşik çatı iskeleti",
+    "en": "Long gable roof frame beside a stone wall and a palm tree"
+  },
+  "alt": {
+    "tr": "Taş istinat duvarı ve palmiyenin yanında, deck zemin üzerinde uzun bir beşik çatı iskeleti",
+    "en": "Long gable roof frame on a deck floor beside a stone retaining wall and a palm tree"
+  },
+  "caption": {
+    "tr": "İskelet uzun bir hat boyunca uzanıyor, çatı kirişleri sık aralıklı. Duvar önünde çiçekli bir yeşillik var.",
+    "en": "The frame runs along a long line with closely spaced rafters. A flowering planting grows in front of the wall."
+  },
+  "seoFilename": "tas-duvar-ve-palmiye-yaninda-uzun-cati-iskeleti",
+  "tags": {
+    "type": [
+      "pergola",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

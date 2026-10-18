@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/1192.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Pergola direkleri ve kirişleri, zeminde inşaat artıkları",
+    "en": "Pergola posts and beams with building debris on the ground"
+  },
+  "alt": {
+    "tr": "Bahçede uzun pergola direkleri ve üst kirişleri, zeminde kereste artıkları ve çiçekli çalılar",
+    "en": "Long pergola posts and top beams in a garden, with timber offcuts on the ground and flowering shrubs"
+  },
+  "caption": {
+    "tr": "Üst kirişler direklerin tepesinde dizili, çevrede taşlı zemin ve toprak yığınları var. İş henüz bitmemiş.",
+    "en": "The top beams sit on the posts, with stony ground and piles of earth around. The work is not finished yet."
+  },
+  "seoFilename": "pergola-direkleri-kirisleri-zeminde-insaat-artiklari",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

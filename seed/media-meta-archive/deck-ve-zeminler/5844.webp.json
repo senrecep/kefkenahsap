@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/5844.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dar alanda cam kapıya doğru kiriş sıraları",
+    "en": "Rows of joists towards a glass door in a narrow area"
+  },
+  "alt": {
+    "tr": "Taş duvarın kenarındaki dar alanda, beyaz örtü üzerine cam kapıya doğru dizilmiş ahşap alt kiriş sıraları",
+    "en": "Rows of timber sub-joists laid on white sheeting towards a glass door in a narrow area beside a stone wall"
+  },
+  "caption": {
+    "tr": "Kirişler enine ve boyuna kesişiyor. Duvarın dibinde bir drenaj borusunun ucu görünüyor.",
+    "en": "The joists cross lengthwise and crosswise. The end of a drainage pipe shows at the foot of the wall."
+  },
+  "seoFilename": "tas-duvar-kenarindaki-dar-alanda-cam-kapiya-dogru-kiris",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

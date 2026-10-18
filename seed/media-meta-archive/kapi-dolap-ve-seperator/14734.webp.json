@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/14734.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Köşe penceresinde açık duran yeşil ahşap panjur çifti",
+    "en": "Pair of open green timber shutters on a corner window"
+  },
+  "alt": {
+    "tr": "Beyaz evin köşesindeki pencerenin iki yanında açılmış, yeşil boyalı Z çaprazlı ahşap panjur kanatları, yanda yağmur borusu",
+    "en": "Open green-painted timber shutter leaves with Z bracing on both sides of a window at the corner of a white house"
+  },
+  "caption": {
+    "tr": "Panjur kanatları pencereyi iki yandan çerçeveliyor. Alt kısımda dış cephe çalışmasının molozu duruyor.",
+    "en": "The shutters frame the window from both sides. Debris from the exterior work still lies at the foot."
+  },
+  "seoFilename": "kose-penceresinde-acik-duran-yesil-ahsap-panjur-cifti",
+  "tags": {
+    "type": [
+      "pencere / panjur"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14141.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Duvar boyunca uzanan kapaklı ahşap oturma ve depolama ünitesi",
+    "en": "Lidded timber seating and storage unit running along a wall"
+  },
+  "alt": {
+    "tr": "Kaplama taş zeminde, yeşil kafesli duvarın dibinde uzun, koyu vernikli, kapaklı ahşap bir oturma ve depolama ünitesi duruyor",
+    "en": "A long dark-varnished timber seating and storage unit with lids stands on cobbled paving along a wall with green trellis"
+  },
+  "caption": {
+    "tr": "Ünite duvar boyunca uzanıyor, hem oturma yeri hem de depolama sağlıyor. Ön yüzdeki kapaklar ayrı ayrı açılıyor.",
+    "en": "The unit runs along the wall, giving both seating and storage. The front panels open separately."
+  },
+  "seoFilename": "duvar-boyunca-kapakli-ahsap-oturma-ve-depolama-unitesi",
+  "tags": {
+    "type": [
+      "bank",
+      "gömme dolap / gardırop"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

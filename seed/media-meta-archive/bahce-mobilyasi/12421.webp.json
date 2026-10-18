@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/12421.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bitkilerle çevrili uzun çıtalı ahşap bank, perspektiften",
+    "en": "Long slatted timber bench among plants, in perspective"
+  },
+  "alt": {
+    "tr": "Karo zemine yerleştirilmiş uzun ve dar çıtalı ahşap bank, perspektifte ince bir hat gibi uzanıyor; yanında bitkiler var",
+    "en": "A long narrow slatted timber bench on a tiled floor stretching away like a thin line in perspective, with plants beside it"
+  },
+  "caption": {
+    "tr": "Perspektiften bakınca bankın uzunluğu daha iyi anlaşılıyor. Çıtalı oturak sıralı ve düzgün.",
+    "en": "From this angle the length of the bench is easier to judge. The slatted seat is even and evenly spaced."
+  },
+  "seoFilename": "capraz-perspektifte-uzun-citali-ahsap-bank-bitkiler-arasinda",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

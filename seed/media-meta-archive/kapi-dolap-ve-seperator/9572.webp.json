@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/9572.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Koyu vernikli kapaklarda paslanmaz sürgü",
+    "en": "Stainless bolt on dark varnished doors"
+  },
+  "alt": {
+    "tr": "Yatay tahtalı koyu vernikli çift kapağın alt kısmı: ortada paslanmaz sürgü, iki yanda menteşeler",
+    "en": "Lower part of dark varnished horizontal-board double doors with a stainless bolt in the middle and hinges at the sides"
+  },
+  "caption": {
+    "tr": "Çift kapak ortadan paslanmaz bir sürgüyle kilitleniyor. Vernik tahtaların damarını belirgin bırakmış.",
+    "en": "The double doors lock in the middle with a stainless bolt. The varnish leaves the grain of the boards clear."
+  },
+  "seoFilename": "koyu-vernikli-kapaklarda-paslanmaz-surgu",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

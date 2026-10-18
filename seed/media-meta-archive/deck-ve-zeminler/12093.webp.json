@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/12093.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Toprak üzerinde deck alt kirişleri",
+    "en": "Deck sub-joists laid over bare soil"
+  },
+  "alt": {
+    "tr": "Duvar kenarında toprak üzerine dizilmiş deck alt kirişleri, önde matkap ve vida kutuları",
+    "en": "Deck sub-joists laid over bare soil along a wall, with a drill and screw tubs in front"
+  },
+  "caption": {
+    "tr": "Kirişler çerçeve şeklinde sıralanmış, bir kısmı tahtayla kapanmış. İş sürerken malzeme yerde duruyor.",
+    "en": "The joists are set out as a frame and part of it is already boarded. Materials lie on site while work continues."
+  },
+  "seoFilename": "toprak-uzerinde-deck-alt-kirisleri-matkap",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

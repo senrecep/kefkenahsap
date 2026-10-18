@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/990.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam cepheli binada ahşap direkli üst balkon ve kereste korkuluk",
+    "en": "Upper balcony on timber posts on a glass-fronted building, with timber railing"
+  },
+  "alt": {
+    "tr": "Cam cepheli binanın üstünde ahşap direklere oturan balkon; kereste korkuluk",
+    "en": "Balcony on timber posts above a glass-fronted building, with timber railing"
+  },
+  "caption": {
+    "tr": "Balkonun altı yatay tahta kaplı, direkler zemine iniyor. Korkuluk yeni, açık renkli tahtalardan yapılmış.",
+    "en": "The underside of the balcony is clad in horizontal boards and the posts run down to the ground. The railing is new, made of light boards."
+  },
+  "seoFilename": "cam-cepheli-binada-ahsap-direkli-ust-balkon",
+  "tags": {
+    "type": [
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "balkon"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

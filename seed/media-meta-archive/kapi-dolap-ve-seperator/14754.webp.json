@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/14754.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yeşil jaluzi çıtalı çift kanatlı kapı ve kol ayrıntısı",
+    "en": "Green louvred double door with handle detail"
+  },
+  "alt": {
+    "tr": "Yatay jaluzi çıtalı, koyu yeşil boyalı çift kanatlı ahşap kapı, paslanmaz kapı kolları ve önünde çakıl zemin",
+    "en": "Dark green-painted double timber door with horizontal louvre slats, stainless handles and gravel in front"
+  },
+  "caption": {
+    "tr": "Kapı kanatları yatay çıtalarla kaplı, kollar kanat ortasında. Yeşil boya yüzeyi eşit kaplamış.",
+    "en": "The door leaves are clad in horizontal slats with handles at mid-height. The green paint covers the surface evenly."
+  },
+  "seoFilename": "yesil-jaluzi-citali-cift-kanatli-kapi-kol-ayrintisi",
+  "tags": {
+    "type": [
+      "kapı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

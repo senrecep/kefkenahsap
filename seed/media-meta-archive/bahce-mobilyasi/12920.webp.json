@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/12920.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Geniş ahşap oturma ünitesinin yüksek sırtlığı, yakından",
+    "en": "High backrest of a wide timber seating unit, up close"
+  },
+  "alt": {
+    "tr": "Geniş ahşap oturma ünitesinin iki tahtadan oluşan yüksek sırtlığı ve kalın oturak kenarı yakından görünüyor",
+    "en": "A close view of the high two-board backrest and the thick seat edge of a wide timber seating unit"
+  },
+  "caption": {
+    "tr": "Sırtlık iki geniş tahtadan, oturak kenarı kalın. Çam damarları ve budaklar yüzeyde görünüyor.",
+    "en": "The backrest is two wide boards and the seat edge is thick. Pine grain and knots show on the surface."
+  },
+  "seoFilename": "genis-ahsap-oturma-unitesinin-yuksek-sirtligi-yakin-cekim",
+  "tags": {
+    "type": [
+      "bank",
+      "oturma grubu"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

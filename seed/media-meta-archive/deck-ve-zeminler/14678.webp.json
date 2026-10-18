@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14678.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Gri taş kenarında parlak kırmızı deck",
+    "en": "Glossy red deck beside grey stone"
+  },
+  "alt": {
+    "tr": "Bina duvarı dibinde gri taş zeminin kenarında uzanan, parlak kırmızı kahverengi deck; zeminde ince bir ip çekili",
+    "en": "Glossy red-brown deck laid beside grey stone flooring at the foot of a building wall, with a thin string line on the floor"
+  },
+  "caption": {
+    "tr": "Deck taş plakaların kenarına gönyeli bir hatla yaklaşıyor. İp, döşeme çizgisini gösterir biçimde tahtaların kenarında duruyor.",
+    "en": "The deck meets the stone slabs along a neat angled edge. The string lies along the board edge, marking the layout line."
+  },
+  "seoFilename": "gri-tas-kenarinda-parlak-deck-ip-isareti",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

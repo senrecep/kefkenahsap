@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/10967.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Metal çerçeveli ahşap kapı detayı, taş sütunda ahşap posta kutusu",
+    "en": "Metal-framed timber gate detail with a wooden letterbox on the stone pier"
+  },
+  "alt": {
+    "tr": "Siyah çerçeveli, ahşap dolgulu kapının daire motifli kanatları ve beyaz taş sütunun üstündeki ahşap posta kutusu",
+    "en": "Circular-motif leaves of a black-framed timber-infill gate and the red-brown wooden letterbox on the white stone pier"
+  },
+  "caption": {
+    "tr": "Kapının dolgusu dikey tahtalardan, ortada daire biçimli demir bir süs var. Sütunda küçük ahşap bir posta kutusu bulunuyor.",
+    "en": "The infill of the gate is vertical boards with a circular iron ornament in the middle. A small wooden letterbox is fixed to the pier."
+  },
+  "seoFilename": "metal-cerceveli-ahsap-kapi-detayi-ahsap-posta-kutusu",
+  "tags": {
+    "type": [
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

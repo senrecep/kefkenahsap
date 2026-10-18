@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/14414.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz boyalı alçak ahşap bahçe çiti, önünde demir korkuluk",
+    "en": "Low white-painted timber garden fence in front of an iron railing"
+  },
+  "alt": {
+    "tr": "Yeşil çalıların önünde duran, sivri uçlu beyaz boyalı alçak ahşap çit; önde kaldırımda demir süslemeli korkuluk ve bir kalas",
+    "en": "A low white-painted timber fence with pointed slats in front of green shrubs"
+  },
+  "caption": {
+    "tr": "Çitin çıtaları sivri uçlu ve beyaz boyalı, iki yatay kirişe sabitlenmiş. Önünde kaldırımda dövme demir desenli bir ızgara görünüyor.",
+    "en": "The fence slats are pointed and painted white, fixed to two horizontal rails. A wrought-iron patterned grating is visible on the pavement in front."
+  },
+  "seoFilename": "beyaz-boyali-alcak-ahsap-bahce-citi-demir-korkuluk",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

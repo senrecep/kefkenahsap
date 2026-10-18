@@ -1,0 +1,36 @@
+{
+  "source": "Korkuluk ve Cit/12767.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deck üzerinde yatay tahtalı ahşap korkuluk, arkada şantiye",
+    "en": "Horizontal-board timber railing on a deck, a building site behind"
+  },
+  "alt": {
+    "tr": "Yatay üç tahtalı, kalın çift dikmeli ahşap korkuluk ve önünde eskimiş deck tahtaları; arkada toprak ve beyaz torbalı şantiye",
+    "en": "A timber railing with three horizontal boards and thick double posts"
+  },
+  "caption": {
+    "tr": "Korkuluk tahtaları dikmelerin önüne cıvatayla bağlı, altta deck tahtaları gri-kahve. Arkada inşaat alanı görünüyor.",
+    "en": "The railing boards are bolted in front of the posts and the deck boards below are grey-brown. A building area is visible behind."
+  },
+  "seoFilename": "deck-uzerinde-yatay-tahtali-ahsap-korkuluk-santiye",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

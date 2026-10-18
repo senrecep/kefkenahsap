@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/13618.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yeşil çatılı uzun kulübe, yukarıdan",
+    "en": "Long dog house with a green roof, from above"
+  },
+  "alt": {
+    "tr": "Yukarıdan görünen, yeşil çatılı uzun köpek kulübesi ve vernikli sundurma tabanı",
+    "en": "A long dog house with a green roof and a varnished porch floor seen from above"
+  },
+  "caption": {
+    "tr": "İki ayrı yeşil çatı yüzeyi üst üste biniyor, altta sundurma tabanı uzanıyor. Atölyenin tezgâhı ve aletleri arkada görünüyor.",
+    "en": "Two separate green roof planes overlap and the porch floor extends beneath. The workshop's bench and tools show behind."
+  },
+  "seoFilename": "yesil-catili-uzun-kopek-kulubesi-ve-vernikli-sundurma-tabani",
+  "tags": {
+    "type": [
+      "köpek kulübesi"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/14028.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yukarıdan bakışla beyaz duvarlı ahşap bank ve deck, çevresinde bitkiler",
+    "en": "Timber bench and deck within white walls with plants around, from above"
+  },
+  "alt": {
+    "tr": "Yüksekten bakıldığında, beyaz sıvalı duvarların içine yerleştirilmiş koyu vernikli ahşap bank ve deck zemin",
+    "en": "From a high angle, a dark-varnished timber bench and deck floor set within white-rendered walls"
+  },
+  "caption": {
+    "tr": "Bank ve deck, beyaz duvarların oluşturduğu çukur alana oturuyor. Çevredeki bitkiler alanı yarı kapalı tutuyor.",
+    "en": "The bench and deck sit in the recess formed by the white walls. The plants around keep the area partly enclosed."
+  },
+  "seoFilename": "yukaridan-beyaz-duvarli-ahsap-bank-ve-deck-cevresinde",
+  "tags": {
+    "type": [
+      "bank",
+      "çiçeklik / saksı",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

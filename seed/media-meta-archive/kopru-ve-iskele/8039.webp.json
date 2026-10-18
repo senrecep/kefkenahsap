@@ -1,0 +1,33 @@
+{
+  "source": "Kopru ve Iskele/8039.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Havuz üzerinde kemerli ahşap köprü",
+    "en": "Arched timber footbridge over a pool"
+  },
+  "alt": {
+    "tr": "Kıvrımlı ahşap deck ile çevrili havuzun üzerinden geçen kemerli, korkuluklu ahşap köprü",
+    "en": "Arched timber footbridge with railings crossing a pool framed by a curved wooden deck"
+  },
+  "caption": {
+    "tr": "Havuzun bir ucundan öbür ucuna geçen kemerli ahşap köprü. Havuzun çevresi aynı tonda kıvrımlı bir deck ile kaplandı.",
+    "en": "An arched timber footbridge spans the pool, and a curved deck in the same tone runs around its edge."
+  },
+  "seoFilename": "havuz-uzerinde-kemerli-ahsap-kopru-deck",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "havuz",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

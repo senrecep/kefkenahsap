@@ -1,0 +1,39 @@
+{
+  "source": "Merdivenler/870.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Satranç desenli zeminde çaprazlı korkuluk detayı",
+    "en": "Detail of a cross-braced railing on a chequered floor"
+  },
+  "alt": {
+    "tr": "Gri ve beyaz satranç desenli zeminde yakından görünen kalın direkli, çapraz çıtalı açık tonlu ahşap korkuluk",
+    "en": "Close view of a thick-posted light cross-braced timber railing on a grey and white chequered floor"
+  },
+  "caption": {
+    "tr": "Yakın çekimde direk, çaprazlar ve küpeşte birleşimleri net görünüyor.",
+    "en": "The close shot shows how the post, braces and handrail join."
+  },
+  "seoFilename": "satranc-desenli-zeminde-capraz-ahsap-korkuluk-detayi",
+  "tags": {
+    "type": [
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Kopru ve Iskele/819.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar önünde dikmeli kiriş sıraları, iskele zemini hazırlığı",
+    "en": "Rows of beams on posts before a stone wall, pier base under way"
+  },
+  "alt": {
+    "tr": "Taş duvarın yanındaki kazılmış zeminde uzayan kalas kirişler ve altlarındaki yuvarlak dikmeler; arkada göl",
+    "en": "Long timber beams and the round posts under them on dug ground beside a stone wall, the lake behind"
+  },
+  "caption": {
+    "tr": "Kirişler birbirine paralel ve uzun. Dikmeler aynı hizada çakılmış.",
+    "en": "The beams are long and parallel. The posts are set in line with each other."
+  },
+  "seoFilename": "tas-duvar-onunde-dikmeli-kiris-siralari",
+  "tags": {
+    "type": [
+      "iskele"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

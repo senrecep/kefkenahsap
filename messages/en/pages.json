@@ -1,0 +1,40 @@
+{
+  "About": {
+    "title": "About us",
+    "metaDescription": "{company}: timber decking, pergolas, stairs, doors and furniture made in its {district, select, none {own} other {{district}}} workshop and installed on site.",
+    "lead": "{company} makes its woodwork in its own workshop and installs it on site.",
+    "since": "Founded",
+    "founder": "Founder",
+    "workshop": "Workshop",
+    "seeWork": "See our work"
+  },
+  "Legal": {
+    "kvkkTitle": "Privacy notice",
+    "kvkkDescription": "Personal data processed through the {company} website and quote form, purposes, retention and your rights under KVKK Art. 11.",
+    "cookiesTitle": "Cookie policy",
+    "cookiesDescription": "The cookies used on the {company} website and how to change your choice.",
+    "updated": "Last updated: {date}"
+  },
+  "Search": {
+    "title": "Search",
+    "titleFor": "Results for “{q}”",
+    "label": "Search the site",
+    "placeholder": "e.g. pergola, iroko deck, stairs",
+    "submit": "Search",
+    "tooShort": "Type at least 2 letters.",
+    "failed": "Search is not available right now. Please try again shortly.",
+    "categories": "Services",
+    "images": "Photos",
+    "projects": "Projects",
+    "guides": "Guides",
+    "empty": "Nothing found for “{q}”. Try another word or tell us about your job on WhatsApp.",
+    "browse": "Browse services",
+    "count": "{count, plural, one {# result} other {# results}}"
+  },
+  "NotFound": {
+    "title": "Page not found",
+    "body": "The page you are looking for may have moved or been removed. Search below or browse our services.",
+    "popular": "Services",
+    "home": "Back to the home page"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/3669.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dikdörtgen havuz çevresinde deck",
+    "en": "Deck around a rectangular pool"
+  },
+  "alt": {
+    "tr": "Dikdörtgen havuzun çevresini saran açık renkli deck; sağ üst köşede ahşap taşıyıcı iskelet yapısı ve uzakta çalışan biri",
+    "en": "Pale deck wrapping a rectangular pool, with a timber support frame in the upper-right corner"
+  },
+  "caption": {
+    "tr": "Havuzun uzun kenarındaki deck tamamlanmış, köşedeki ahşap kirişler henüz kaplanmamış. Çimen kenarında çakıl şerit uzanıyor.",
+    "en": "The deck along the long edge of the pool is finished and the timber joists in the corner are not yet covered. A pebble strip runs along the lawn edge."
+  },
+  "seoFilename": "dikdortgen-havuz-cevresinde-deck-ve-tasiyici-iskelet",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

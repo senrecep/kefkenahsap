@@ -1,0 +1,36 @@
+{
+  "file": "af9585f5-819c-4a6f-83ab-8c31e8b699b3.webp",
+  "category": "mobilya-ve-cila",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Restoran için ahşap bar tezgahı ve mobilyaları",
+    "en": "Wooden bar counter and furniture for restaurant"
+  },
+  "alt": {
+    "tr": "Masif ahşap tezgahlı kavisli bar bankosu ve önünde ahşap bar tabureleri bulunan restoran iç mekanı.",
+    "en": "Restaurant interior featuring a curved bar counter with solid wood top and wooden bar stools."
+  },
+  "caption": {
+    "tr": "Restoran projesi için üretilen masif ahşap tablalı kavisli bar bankosu ve uyumlu ahşap bar sandalyeleri.",
+    "en": "Custom curved bar counter with a solid wood countertop and matching wooden bar stools crafted for a restaurant interior."
+  },
+  "seoFilename": "ahsap-bar-tezgahi-ve-mobilyalari",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "iç mekan",
+      "restoran",
+      "bar"
+    ],
+    "finish": [
+      "cila",
+      "lake"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

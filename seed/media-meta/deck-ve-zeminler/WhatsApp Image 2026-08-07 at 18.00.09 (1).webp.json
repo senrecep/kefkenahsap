@@ -1,0 +1,37 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 18.00.09 (1).webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Taş duvar önünde bahçe decki",
+    "en": "Garden deck in front of a stone wall"
+  },
+  "alt": {
+    "tr": "Taş istinat duvarının önünde, eski traversle çevrili bal rengi ahşap bahçe decki ve çiçek desenli boyalı direk",
+    "en": "Honey-toned wooden garden deck edged with old timber beams, in front of a stone wall and a flower-painted post"
+  },
+  "caption": {
+    "tr": "Bahçede taş duvarın önüne döşenen ahşap deck. Tahtalar uzunlamasına sıralanmış, kenarı eski traversle çevrilmiş.",
+    "en": "A wooden deck laid in a garden against a stone wall. The boards run lengthwise and the edge is framed with old timber beams."
+  },
+  "seoFilename": "tas-duvar-onunde-bahce-decki",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras",
+      "taş duvar",
+      "dış mekan"
+    ],
+    "finish": [
+      "doğal ton",
+      "yağlı yüzey"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

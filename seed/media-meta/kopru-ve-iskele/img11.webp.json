@@ -1,0 +1,36 @@
+{
+  "file": "img11.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Dere kıyısında ahşap yürüyüş yolu ve korkuluk",
+    "en": "Wooden boardwalk and railing along the waterside"
+  },
+  "alt": {
+    "tr": "Su kenarında kamış kümelerinin yanından geçen, iki yanı yatay çıtalı ahşap korkuluklu uzun yürüyüş yolu",
+    "en": "Long wooden boardwalk with horizontal-rail railings running beside reeds along the water's edge"
+  },
+  "caption": {
+    "tr": "Su kenarına kurulan ahşap yürüyüş yolu. Kalın kare direkler ve yatay çıtalı korkuluklar yol boyunca devam ediyor, bir yanda kamışlık ve su, diğer yanda taş duvarlı yamaç var.",
+    "en": "A wooden walkway built along the waterside. Thick square posts and horizontal rails run the full length, with reeds and water on one side and a stone-walled slope on the other."
+  },
+  "seoFilename": "su-kenari-ahsap-yuruyus-yolu-korkuluk",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "su kenarı",
+      "yürüyüş yolu",
+      "dış mekan",
+      "dere kıyısı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/13837.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş döşemeli girişte çift kanatlı kapı",
+    "en": "Double-leaf gate at a paved entrance"
+  },
+  "alt": {
+    "tr": "Kilitli taş döşeme yolun başında, kare gözlü kafes desenli çift kanatlı açık kahve ahşap bahçe kapısı",
+    "en": "Double-leaf light brown timber garden gate with a square grid pattern at the end of an interlocking-paved path"
+  },
+  "caption": {
+    "tr": "Kapı yüksek taş sütunlar arasında duruyor. Arkada evin camlı girişi görünüyor.",
+    "en": "The gate stands between two stone posts. The glazed entrance of the house is visible behind."
+  },
+  "seoFilename": "tas-dosemeli-giriste-cift-kanatli-bahce-kapisi",
+  "tags": {
+    "type": [
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

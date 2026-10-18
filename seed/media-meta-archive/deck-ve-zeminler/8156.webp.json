@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/8156.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deck tahtası taşıyıcı kirişlere vidalanıyor",
+    "en": "Deck boards being fixed to the joists"
+  },
+  "alt": {
+    "tr": "Yakın çekimde kirişler üzerine döşenmiş deck tahtaları, yanında vida kabı ve açıkta kalan çerçeve gözleri",
+    "en": "Close view of deck boards laid on joists, with a tub of screws beside them and open frame bays"
+  },
+  "caption": {
+    "tr": "Tahtalar kirişlere sırayla sabitleniyor. Vida kabı işin hemen yanında duruyor.",
+    "en": "The boards are fixed to the joists one after another, with the tub of screws right beside the work."
+  },
+  "seoFilename": "deck-tahtasi-kirislere-vidalaniyor",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "iroko",
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

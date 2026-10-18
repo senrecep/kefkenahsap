@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/12285.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş ocaklı duvar ve cam kapı önünde açık renkli deck",
+    "en": "Pale deck in front of a stone-built barbecue wall and glass door"
+  },
+  "alt": {
+    "tr": "Taş ocaklı duvar ile cam kapı önünde uzanan açık renkli deck zemini, üzerinde hortum",
+    "en": "Pale decking in front of a wall with a stone-built fireplace and a glass door, a hose lying on it"
+  },
+  "caption": {
+    "tr": "Tahtalar uzun yönde ocağa doğru döşenmiş. Bahçe mutfağı ve oturma alanı olarak kullanılabilecek bir zemin oluşmuş.",
+    "en": "The boards run lengthwise towards the fireplace. They make a floor that suits an outdoor cooking and sitting area."
+  },
+  "seoFilename": "tas-ocakli-duvar-ve-cam-kapi-onunde-acik-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

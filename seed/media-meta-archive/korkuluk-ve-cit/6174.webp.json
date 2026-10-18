@@ -1,0 +1,40 @@
+{
+  "source": "Korkuluk ve Cit/6174.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş basamaklar yanında çıtalı korkuluk, arkada demir kapı",
+    "en": "Slatted railing beside stone steps with an iron gate behind"
+  },
+  "alt": {
+    "tr": "Beton basamakların yan taraflarında yükselen yeşilimsi dikey çıtalı ahşap korkuluk, üstte siyah demir kapı ve ağaç gövdeleri",
+    "en": "Greenish vertical-slat timber railing rising along both sides of concrete steps, with a black iron gate"
+  },
+  "caption": {
+    "tr": "Korkuluk basamakların eğimini izleyip sağda küpeşte gibi devam ediyor.",
+    "en": "The railing follows the slope of the steps and continues on the right like a handrail."
+  },
+  "seoFilename": "tas-basamaklar-yaninda-citali-ahsap-korkuluk-demir-kapi",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "merdiven"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

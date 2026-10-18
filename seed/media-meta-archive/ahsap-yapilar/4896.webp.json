@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/4896.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çim alanın ardında uzun ahşap sundurma",
+    "en": "Long timber shelter beyond a lawn"
+  },
+  "alt": {
+    "tr": "Geniş çim alanın karşısında duran, kırmızı kiremit çatılı ve yanları açık uzun ahşap yapı",
+    "en": "Long timber structure with a red tile roof and open sides, standing across a wide lawn"
+  },
+  "caption": {
+    "tr": "Yapı alçak bir taş duvarla ayrılmış çimlerin ardında. Ön planda ahşap bir çit parçası ve birkaç ağaç görünüyor.",
+    "en": "The structure sits beyond lawns separated by a low stone wall. A piece of timber fence and a few trees are in the foreground."
+  },
+  "seoFilename": "cim-alanin-ardinda-kiremit-catili-uzun-ahsap-sundurma",
+  "tags": {
+    "type": [
+      "sundurma / saçak / carport"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

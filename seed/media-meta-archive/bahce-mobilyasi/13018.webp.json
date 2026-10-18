@@ -1,0 +1,35 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/13018.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Desenli seramik kaplı kare ahşap sehpa, tam üstten",
+    "en": "Square timber table with a patterned ceramic top, straight from above"
+  },
+  "alt": {
+    "tr": "Tam üstten bakıldığında, mavi-beyaz desenli seramik karoların döşendiği kare sehpa yüzeyi ve koyu ahşap çerçevesi görünüyor",
+    "en": "Seen straight down, the square table top laid with blue-and-white patterned ceramic tiles and its dark timber frame"
+  },
+  "caption": {
+    "tr": "Karolar farklı desenlerde ama aynı mavi-beyaz tonda. Koyu ahşap çerçeve bunları dört yandan çevreliyor.",
+    "en": "The tiles carry different patterns but share the same blue and white tones. A dark timber frame surrounds them on all four sides."
+  },
+  "seoFilename": "desenli-seramik-kapli-kare-sehpa-tam-ustten",
+  "tags": {
+    "type": [
+      "sehpa"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

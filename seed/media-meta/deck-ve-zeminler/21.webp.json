@@ -1,0 +1,37 @@
+{
+  "file": "21.webp",
+  "category": "deck-ve-zeminler",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ahşap dış mekan merdiveni ve balkon korkuluğu",
+    "en": "Wooden outdoor staircase and balcony railing"
+  },
+  "alt": {
+    "tr": "Taş duvarlı evin dış cephesinde üst kata çıkan ahşap merdiven ve parmaklıklı korkuluklar.",
+    "en": "Wooden staircase with vertical railings leading to the upper balcony of a stone-clad house."
+  },
+  "caption": {
+    "tr": "Doğal taş kaplama ile uyumlu ahşap dış cephe, üst kata çıkan basamaklar ve balkon korkuluk imalatı.",
+    "en": "Outdoor wooden staircase and balcony railings built in harmony with the natural stone wall cladding."
+  },
+  "seoFilename": "ahsap-dis-mekan-merdiven-korkuluk",
+  "tags": {
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "dış mekan",
+      "villa",
+      "veranda"
+    ],
+    "finish": [
+      "vernik"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.95
+}

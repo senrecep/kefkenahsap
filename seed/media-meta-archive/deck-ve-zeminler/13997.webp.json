@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/13997.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimene bitişik parlak deck",
+    "en": "Glossy deck running into the lawn"
+  },
+  "alt": {
+    "tr": "Bordo kepenkli cam kapının önünde, çimenlik kenarında biten parlak çok tonlu deck",
+    "en": "Glossy multi-tone deck in front of a glass door with burgundy shutters, ending at the edge of the lawn"
+  },
+  "caption": {
+    "tr": "Deck evin girişinden çimene doğru açılıyor. Kenarında yeşil bir kapak ve duvar dibinde saksı görünüyor.",
+    "en": "The deck opens from the house entrance towards the lawn. A green cover sits beside it and a plant pot stands at the wall."
+  },
+  "seoFilename": "cimene-bitisik-parlak-deck-bordo-kepenk",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/14269.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bitki yatağı çevresinde kavisli piket çit",
+    "en": "Curved picket fence around a planting bed"
+  },
+  "alt": {
+    "tr": "Ağaç gövdesi ve çalılarla dolu bitki yatağını çeviren ucu yuvarlak, bal rengi alçak çıta çit",
+    "en": "Low honey-toned picket fence with rounded tops around a planting bed with a tree trunk and shrubs"
+  },
+  "caption": {
+    "tr": "Alçak çit bitki yatağını yoldan ayırıyor, yanında küp taş döşeme var.",
+    "en": "The low fence separates the planting bed from the path, with setts paving next to it."
+  },
+  "seoFilename": "bitki-yatagi-cevresinde-kavisli-piket-cit",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

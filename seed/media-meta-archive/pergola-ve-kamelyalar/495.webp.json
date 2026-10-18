@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/495.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Mangallı kamelyada açık renk ahşap çatı",
+    "en": "Light timber roof over a gazebo with a barbecue"
+  },
+  "alt": {
+    "tr": "Çimenliğin kenarında, altında mangal duran kamelyanın açık renk ahşap makasları ve lambri tavanı",
+    "en": "Light timber trusses and boarded ceiling of a gazebo with a barbecue, beside a lawn"
+  },
+  "caption": {
+    "tr": "Kamelyanın çatısı açık renk ahşap makaslarla taşınıyor, iç yüzü lambri kaplı. Altında bir mangal duruyor.",
+    "en": "Light timber trusses carry the gazebo roof, which is boarded on the inside, with a barbecue standing beneath it."
+  },
+  "seoFilename": "mangalli-kamelya-acik-renk-ahsap-cati",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "çimenlik",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail",
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/526.webp",
+  "category": "mutfak-ve-gomme-dolap",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kulübe duvarı boyunca raflar, boya kutuları ve çivi kovaları",
+    "en": "Shelves along a shed wall, with paint tins and nail trays"
+  },
+  "alt": {
+    "tr": "Kulübe duvarı boyunca uzanan bölmeli ahşap raflar; üstte boya kutuları, altta çivi dolu ahşap oluklar",
+    "en": "Compartmented timber shelves running along a shed wall, with paint tins above and long timber troughs of nails below"
+  },
+  "caption": {
+    "tr": "Raflar iki katlı bölmelerle duvarı baştan sona kaplıyor. En altta çivi ve vida dolu uzun ahşap oluklar var.",
+    "en": "The shelves cover the wall from end to end in two-tier compartments. Long timber troughs of nails and screws run along the bottom."
+  },
+  "seoFilename": "kulube-duvari-boyunca-ahsap-raflar-boya-kutulari-civi",
+  "tags": {
+    "type": [
+      "raf / kitaplık",
+      "bahçe kulübesi / depo"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.5
+}

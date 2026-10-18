@@ -1,0 +1,40 @@
+{
+  "source": "Korkuluk ve Cit/983.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deck inen basamak ve yatay tahtalı korkuluk",
+    "en": "Steps leaving a deck with a horizontal-board railing"
+  },
+  "alt": {
+    "tr": "Deckten aşağı inen ahşap basamakların iki yanında yatay tahtalı korkuluk, sağda yeşil çalılar, arkada çıplak ağaçlar",
+    "en": "Horizontal-board railing on both sides of timber steps leading down from a deck, with green shrubs on the right"
+  },
+  "caption": {
+    "tr": "Korkuluk basamakların kenarını izleyip aşağıya doğru alçalıyor.",
+    "en": "The railing follows the steps and steps down with them."
+  },
+  "seoFilename": "deck-inen-basamak-ve-yatay-tahtali-korkuluk-calilar",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "merdiven"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

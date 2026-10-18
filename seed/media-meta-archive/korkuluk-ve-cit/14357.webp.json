@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14357.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yol kenarında paravanlı uzun çiçeklik, arkada ikinci paravan",
+    "en": "Long planter with a screen at the roadside, a second screen behind"
+  },
+  "alt": {
+    "tr": "Asfalt yolun kaldırımında, yatay çıtalı paravanlı uzun ahşap çiçeklik; arkada ikincisi, uzakta yeşil giysili biri",
+    "en": "A long timber planter with a horizontal-slat screen on the pavement beside an asphalt road"
+  },
+  "caption": {
+    "tr": "Paravan çiçeklik kutusunun ucundan başlayıp arkada ikinci bir panele bağlanıyor. Kutu uzunlamasına yola paralel.",
+    "en": "The screen starts at the end of the planter box and joins a second panel behind. The box runs lengthwise parallel to the road."
+  },
+  "seoFilename": "yol-kenarinda-paravanli-uzun-ciceklik-ikinci-paravan",
+  "tags": {
+    "type": [
+      "kafes / paravan",
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,34 @@
+{
+  "source": "Kopru ve Iskele/1446.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Su üzerinde uzun ahşap yaya köprüsü",
+    "en": "Long timber footbridge over water"
+  },
+  "alt": {
+    "tr": "Sazlıklara doğru suyun üzerinde uzanan, ahşap zeminli ve metal korkuluklu dar yaya köprüsü",
+    "en": "Narrow footbridge with a timber deck and metal railings stretching over water towards reeds"
+  },
+  "caption": {
+    "tr": "Suyun üzerinden karşı kıyıdaki sazlıklara uzanan dar köprü. Zemin ahşap, korkuluklar metal.",
+    "en": "A narrow footbridge stretching over the water to the reeds on the far bank, with a timber deck and metal railings."
+  },
+  "seoFilename": "sazliga-uzanan-ahsap-zeminli-kopru",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "su üstü",
+      "sazlık",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

@@ -1,0 +1,37 @@
+{
+  "file": "WhatsApp-Image-2021-06-27-at-20.13.45-1-2.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede çimenlik üzerine ahşap deck alanı",
+    "en": "Wooden deck area set into the garden lawn"
+  },
+  "alt": {
+    "tr": "Bahçede çimenlerin arasına döşenmiş, bal rengi ahşap çıtalı kare deck; arkada cam kapılı teras ve şemsiye",
+    "en": "Square honey-toned slatted wooden deck laid in a garden lawn, with a glass-door terrace and umbrella behind"
+  },
+  "caption": {
+    "tr": "Müstakil bir evin bahçesinde, teras zemini ile çimenlik arasına döşenen ahşap deck. Çıtalar aynı yönde sıralanmış, kenarları düzgün kesilmiş.",
+    "en": "A wooden deck laid between the terrace paving and the lawn in a private home's garden. The slats run in one direction with neatly cut edges."
+  },
+  "seoFilename": "bahce-cimenlik-ahsap-deck-zemin",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras",
+      "çimenlik",
+      "müstakil ev"
+    ],
+    "finish": [
+      "vernikli",
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.88
+}

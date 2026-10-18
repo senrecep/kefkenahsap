@@ -1,0 +1,38 @@
+{
+  "source": "Kapi Dolap ve Seperator/14752.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Süslemeli demir kapının yanındaki yeşil panjurun yakın görünümü",
+    "en": "Closer view of the green shutter beside the ornate iron door"
+  },
+  "alt": {
+    "tr": "Süslemeli kemerli siyah demir kapının yanında, beyaz duvara oturan adaçayı yeşili jaluzi panjur kanadı ve siyah menteşeleri",
+    "en": "Sage-green louvred shutter leaf with black hinges on a white wall beside an ornate arched black iron door"
+  },
+  "caption": {
+    "tr": "Panjur kanadı çıtaları eğimli, kapı ise kafes demir işlemeli. İkisi birbirine yakın ve farklı malzemeden.",
+    "en": "The louvres of the shutter slope and the door is wrought iron. The two sit close together in different materials."
+  },
+  "seoFilename": "suslemeli-demir-kapinin-yanindaki-yesil-panjurun-yakin",
+  "tags": {
+    "type": [
+      "pencere / panjur"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş",
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

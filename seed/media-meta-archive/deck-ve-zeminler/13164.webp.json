@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/13164.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz yanında ayaklar üzerinde açık renkli ahşap platform",
+    "en": "Pale timber platform on legs beside a pool"
+  },
+  "alt": {
+    "tr": "Yer üstü havuzun yanında, ayaklar üzerinde yükseltilmiş açık renkli ahşap platform; yanda taşlar ve çalılar",
+    "en": "Pale raised timber platform on legs beside an above-ground pool, with stones and shrubs at the side"
+  },
+  "caption": {
+    "tr": "Platform havuzun kenarıyla aynı seviyede duruyor, böylece havuza çıkış kolaylaşıyor. Altında çapraz destekli ayaklar var.",
+    "en": "The platform sits level with the pool rim, which makes getting into the pool easier. Cross-braced legs carry it underneath."
+  },
+  "seoFilename": "havuz-yaninda-ayaklar-uzerinde-acik-renkli-ahsap-platform",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı",
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

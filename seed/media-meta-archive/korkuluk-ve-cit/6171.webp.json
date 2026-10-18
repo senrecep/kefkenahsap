@@ -1,0 +1,40 @@
+{
+  "source": "Korkuluk ve Cit/6171.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dikey çıtalı ahşap kapı, siyah menteşeler, kırmızı direk",
+    "en": "Vertical-slat timber gate with black hinges and a red post"
+  },
+  "alt": {
+    "tr": "Kırmızı direğe siyah menteşelerle asılı, dikey çıtalı ve çerçeveli yeşilimsi ahşap kapı, yanında aynı çıtalı korkuluk",
+    "en": "Framed greenish timber gate of vertical slats hung on black hinges from a red post, with matching slatted railing beside it"
+  },
+  "caption": {
+    "tr": "Kapı kanadı çerçeveli, çıtalar yan yana eşit aralıkla çakılmış. Yere gümüş menteşe ve sürgü takılmış.",
+    "en": "The leaf is framed, and the slats are nailed at even spacing. Silver hinges and a bolt are fitted below."
+  },
+  "seoFilename": "dikey-citali-ahsap-kapi-siyah-mentese-kirmizi-direk",
+  "tags": {
+    "type": [
+      "bahçe kapısı",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

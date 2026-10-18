@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/10684.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapılı evin önünde çim kenarlı deck",
+    "en": "Deck bordered by lawn in front of a glass-doored house"
+  },
+  "alt": {
+    "tr": "Cam kapılı evin önünde çimenle çevrili ahşap deck; önde pembe çiçekli bir bitki",
+    "en": "Timber deck bordered by lawn in front of a house with glass doors, with a pink-flowered plant in front"
+  },
+  "caption": {
+    "tr": "Deck iki cam kapının önünde yan yana uzanıyor. Tahtalar kapıya dik, kenar çıtası düz.",
+    "en": "The deck runs along the front of two glass doors. The boards run at right angles to the doors and the edge board is straight."
+  },
+  "seoFilename": "cam-kapili-evin-onunde-cim-kenarli-ahsap-deck-onde-pembe",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

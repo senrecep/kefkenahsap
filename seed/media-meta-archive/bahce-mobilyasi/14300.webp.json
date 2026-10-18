@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14300.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimde kavisli ahşap hamak standı, arkada çiçekli ağaç",
+    "en": "Curved timber hammock stand on a lawn with a flowering tree behind"
+  },
+  "alt": {
+    "tr": "Çimlik bahçede, hamağı henüz takılmamış kavisli ahşap bir hamak standı duruyor; arkada bambu ve pembe çiçekli ağaç görünüyor",
+    "en": "On a garden lawn stands a curved timber hammock stand without its hammock, with bamboo and a pink-flowering tree behind"
+  },
+  "caption": {
+    "tr": "Hamak standı kavisli iki ahşap kirişten oluşuyor ve ağaç gerektirmeden tek başına ayakta duruyor. Hamak sonradan asılıyor.",
+    "en": "The stand is made of two curved timber beams and stands on its own, without needing trees. The hammock is hung on it later."
+  },
+  "seoFilename": "cimende-kavisli-ahsap-hamak-standi-cicekli-agac",
+  "tags": {
+    "type": [
+      "hamak standı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

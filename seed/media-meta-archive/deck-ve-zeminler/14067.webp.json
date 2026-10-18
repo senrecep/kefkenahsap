@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14067.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beton zeminde deck iskeleti, yakın plan",
+    "en": "Deck frame on a concrete slab, close-up"
+  },
+  "alt": {
+    "tr": "Eğimli beton yüzeyde plastik ayaklar üzerine dizilmiş emprenyeli çam kirişler, yerde çamur izleri",
+    "en": "Pressure-treated pine joists laid over plastic pedestals on a sloping concrete surface, with mud marks on the ground"
+  },
+  "caption": {
+    "tr": "Yakından bakınca ayakların kirişleri nasıl taşıdığı görülüyor. Yan duvar boyunca iskelet düzgün bir hatta ilerliyor.",
+    "en": "Up close you can see how the pedestals carry the joists. The frame follows the side wall in a straight line."
+  },
+  "seoFilename": "beton-zeminde-deck-iskeleti-yakin-plan",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

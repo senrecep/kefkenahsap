@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/11195.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "İki koyu oluklu deck tahtası örneği",
+    "en": "Two dark grooved deck board samples"
+  },
+  "alt": {
+    "tr": "Fayans zemin üzerinde duran iki koyu kahverengi, oluklu yüzeyli deck tahtası örneği",
+    "en": "Two dark brown deck board samples with grooved surfaces lying on a tiled floor"
+  },
+  "caption": {
+    "tr": "Tahtaların yüzeyinde boyuna oluklar var, bu kaymayı azaltır. Rengi koyu kahve, kenarları düz kesilmiş.",
+    "en": "The surfaces have lengthwise grooves, which reduce slipping. The colour is dark brown and the edges are cut straight."
+  },
+  "seoFilename": "fayans-zemin-uzerinde-iki-adet-koyu-kahverengi-oluklu-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

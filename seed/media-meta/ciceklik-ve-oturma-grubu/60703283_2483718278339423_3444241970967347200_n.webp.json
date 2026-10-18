@@ -1,0 +1,37 @@
+{
+  "file": "60703283_2483718278339423_3444241970967347200_n.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Teras köşesine ahşap L oturma grubu",
+    "en": "L-shaped wooden seating for a terrace corner"
+  },
+  "alt": {
+    "tr": "Teras köşesinde çıtalı sırtlığı olan kırmızımsı kahverengi L şekilli ahşap oturma bankı ve önünde alçak ahşap puf",
+    "en": "Reddish-brown L-shaped wooden bench with slatted backrest in a terrace corner, with a low wooden ottoman in front"
+  },
+  "caption": {
+    "tr": "Teras köşesine ölçüye göre yapılan L şekilli ahşap oturma grubu. Yatay çıtalı sırtlık ve ayrı alçak puf, plastik karo zemin üzerinde duruyor.",
+    "en": "A custom-built L-shaped wooden seating set for a terrace corner. It has a horizontal slatted backrest and a separate low ottoman, set on plastic deck tiles."
+  },
+  "seoFilename": "teras-l-oturma-grubu-ahsap",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "teras",
+      "balkon",
+      "dış mekan",
+      "köşe oturma"
+    ],
+    "finish": [
+      "vernik",
+      "koyu kızıl ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

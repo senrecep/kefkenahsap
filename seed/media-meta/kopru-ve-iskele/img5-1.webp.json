@@ -1,0 +1,37 @@
+{
+  "file": "img5-1.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Havuz kenarında ahşap deck ve küçük köprü",
+    "en": "Wooden pool deck with a small footbridge"
+  },
+  "alt": {
+    "tr": "Serbest formlu havuzun çevresinde ahşap deck ve havuzun üzerinden geçen korkuluklu küçük ahşap köprü, arkada bahçe ve köşkler",
+    "en": "Freeform pool surrounded by a wooden deck, with a small railed wooden footbridge across it and garden pavilions behind"
+  },
+  "caption": {
+    "tr": "Serbest formlu havuzun kenarı ahşap deckle kaplandı, havuzun üzerine korkuluklu küçük bir ahşap köprü kuruldu. Havuz henüz boş.",
+    "en": "The edge of this freeform pool is covered with a wooden deck, and a small railed wooden footbridge spans the pool. The pool is still empty."
+  },
+  "seoFilename": "havuz-kenari-ahsap-deck-ve-kucuk-kopru",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "havuz",
+      "bahçe",
+      "açık alan",
+      "köşk"
+    ],
+    "finish": [
+      "deck kaplama",
+      "korkuluk"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

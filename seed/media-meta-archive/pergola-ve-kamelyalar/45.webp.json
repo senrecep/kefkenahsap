@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/45.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kamelya tavanı ortadan, kiriş ve lambri, merkezde ampul",
+    "en": "Gazebo ceiling seen from the centre with beams, lining and a bulb"
+  },
+  "alt": {
+    "tr": "Kamelya tavanının ortasından görünüş: merkezde ampul, çevreye açılan kirişler ve lambri tahtalar, arkada şehir",
+    "en": "View from the centre of a gazebo ceiling: a bulb at the middle, beams fanning outward and lining boards, with a town behind"
+  },
+  "caption": {
+    "tr": "Kirişler merkezden sekiz yöne açılıyor, aralarında lambri tahtalar uzanıyor. Kenarda dışarıdaki yol ve evler seçiliyor.",
+    "en": "The beams fan out from the centre in eight directions with lining boards between them. A road and houses show outside."
+  },
+  "seoFilename": "kamelya-tavani-ortadan-kiris-lambri-ampul",
+  "tags": {
+    "type": [
+      "kamelya",
+      "tavan kaplaması / lambri"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

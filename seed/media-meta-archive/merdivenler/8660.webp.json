@@ -1,0 +1,33 @@
+{
+  "source": "Merdivenler/8660.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Kapalı rıhtlı düz ahşap merdiven",
+    "en": "Straight timber staircase with closed risers"
+  },
+  "alt": {
+    "tr": "Fayans zeminden yükselen, rıhtları ahşapla kapatılmış düz merdiven ve çapraz korkuluk",
+    "en": "Straight timber staircase with boarded risers and a cross-braced railing, rising from a tiled patio"
+  },
+  "caption": {
+    "tr": "Basamak araları ahşap rıhtlarla kapatılmış düz merdiven. Bir yanda çapraz korkuluk, diğer yanda düz küpeşte var.",
+    "en": "A straight staircase with timber risers closing the gaps between treads, a cross-braced railing on one side and a plain handrail on the other."
+  },
+  "seoFilename": "kapali-rihtli-duz-ahsap-merdiven-avlu",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "avlu",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

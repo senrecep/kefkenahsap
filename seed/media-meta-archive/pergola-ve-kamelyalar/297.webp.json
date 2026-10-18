@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/297.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kamelya çatı kirişleri, lambri tavan ve kafes panelli üst bölüm",
+    "en": "Gazebo roof beams, lining ceiling and a lattice-panel band"
+  },
+  "alt": {
+    "tr": "Kamelyanın içinden çatı kirişleri, lambri tavan ve duvar üst bandında kafes paneller, arkada çimlik ve binalar",
+    "en": "Inside a gazebo: roof beams, lining-board ceiling and a band of lattice panels, with a lawn and buildings behind"
+  },
+  "caption": {
+    "tr": "Kafes paneller çatının altında yatay bir bant oluşturuyor. Kirişler tepede ortak bir noktaya iniyor.",
+    "en": "The lattice panels form a horizontal band under the roof. The beams meet at a shared point at the top."
+  },
+  "seoFilename": "kamelya-cati-kirisleri-lambri-tavan-kafes-bant",
+  "tags": {
+    "type": [
+      "kamelya",
+      "tavan kaplaması / lambri",
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

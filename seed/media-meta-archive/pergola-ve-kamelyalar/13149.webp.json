@@ -1,0 +1,35 @@
+{
+  "source": "Pergola ve Kamelyalar/13149.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Siyah metal çerçeveli pergola yapımında çatıda çalışan ekip",
+    "en": "Crew working on the roof of a black metal-framed pergola"
+  },
+  "alt": {
+    "tr": "Cam korkuluklu teras yanında siyah metal çerçeveli pergola çatısında çalışan işçiler, çevrede yeşil çimlik",
+    "en": "Workers on the roof of a black metal-framed pergola beside a glass-railed terrace, with a green lawn around"
+  },
+  "caption": {
+    "tr": "Ekip pergola çatısına tavan çıtaları ve şeffaf paneller yerleştiriyor. Kenarda cam korkuluk ve taş döşeli bir şerit var.",
+    "en": "The team is fitting ceiling slats and clear panels to the pergola roof. A glass rail and a strip of gravel run along the edge."
+  },
+  "seoFilename": "siyah-metal-cerceveli-pergola-yapiminda-ekip",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

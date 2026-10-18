@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/11889.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Evler arası geçitte ahşap merdiven ve park etmiş araç",
+    "en": "Timber stairs in a passage between houses, with a parked vehicle"
+  },
+  "alt": {
+    "tr": "İki bina arasındaki geçitte çaprazlı korkuluklu ahşap merdiven; yanda tel çit, arkada beyaz bir araç",
+    "en": "Timber stairs with a cross-braced railing in the passage between two buildings"
+  },
+  "caption": {
+    "tr": "Merdiven iki bina arasındaki dar şevde aşağı iniyor. Sağda yeşil direkli tel çit uzanıyor.",
+    "en": "The stairs go down a narrow slope between two buildings. Mesh fencing on green posts runs along the right."
+  },
+  "seoFilename": "evler-arasi-gecitte-merdiven-beyaz-arac-tel-cit",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

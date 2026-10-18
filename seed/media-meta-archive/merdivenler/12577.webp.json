@@ -1,0 +1,36 @@
+{
+  "source": "Korkuluk ve Cit/12577.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Eski gri merdiven ve korkuluğu üstten bakışla",
+    "en": "Old grey stairs and railing from above"
+  },
+  "alt": {
+    "tr": "Eski gri ahşap merdivenin basamakları ve çapraz çıtalı korkuluğu, yukarıdan çekim",
+    "en": "Steps and cross-braced railing of an old grey timber staircase, shot from above"
+  },
+  "caption": {
+    "tr": "Korkuluğun çapraz çıtaları ve basamaklar yıllanmış gri tonda. Merdiven aşağıya doğru uzanıyor.",
+    "en": "The railing's cross braces and the treads are weathered grey. The stairs run down and away."
+  },
+  "seoFilename": "eski-gri-merdiven-ve-korkulugu-ustten-bakis",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

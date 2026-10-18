@@ -1,0 +1,39 @@
+{
+  "source": "Kapi Dolap ve Seperator/9245.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çapraz destekli kapılı kasa, havuz ve çit önünde",
+    "en": "Braced-door box in front of the pool hedge"
+  },
+  "alt": {
+    "tr": "Havuz kenarında, yeşil çitin önünde duran kapılı yatay tahtalı ahşap kasa; kapıda kilit ve çapraz çıta var",
+    "en": "Horizontal-board timber box with a latch and diagonally braced door, in front of a green hedge beside the pool"
+  },
+  "caption": {
+    "tr": "Kapı kasayla aynı yatay tahtalarla kaplı, ortasından çapraz bir çıta geçiyor. Önünde havuzun kenarı görünüyor.",
+    "en": "The door is clad like the rest of the box, with a diagonal brace across it. The pool edge is in front."
+  },
+  "seoFilename": "capraz-destekli-kapili-kasa-havuz",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

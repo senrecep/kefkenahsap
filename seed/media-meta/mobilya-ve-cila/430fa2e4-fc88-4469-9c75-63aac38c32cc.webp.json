@@ -1,0 +1,37 @@
+{
+  "file": "430fa2e4-fc88-4469-9c75-63aac38c32cc.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Antrasit mavisi boyalı şömine çerçevesi",
+    "en": "Dark blue painted fireplace surround"
+  },
+  "alt": {
+    "tr": "Kaldırımda duran, koyu mavi boyalı ve kenarları hafif aşınmış ahşap şömine çerçevesi; ortasında baklava motifi var",
+    "en": "Dark blue painted wooden fireplace surround on a sidewalk, with worn edges and a diamond-shaped panel in the center"
+  },
+  "caption": {
+    "tr": "Koyu mavi boyalı, kenarlarında eskitme izleri görünen şömine çerçevesi. Silmeli sütunları ve ortadaki baklava motifiyle atölyeden çıkmış hâli.",
+    "en": "A dark blue painted fireplace surround with distressed edges, fluted side columns and a diamond motif, shown outside the workshop."
+  },
+  "seoFilename": "koyu-mavi-boyali-somine-cercevesi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "dış mekan",
+      "kaldırım",
+      "atölye çıkışı"
+    ],
+    "finish": [
+      "koyu mavi boya",
+      "eskitme",
+      "mat boya"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.72
+}

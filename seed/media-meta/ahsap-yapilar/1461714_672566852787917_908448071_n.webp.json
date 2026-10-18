@@ -1,0 +1,33 @@
+{
+  "file": "1461714_672566852787917_908448071_n.webp",
+  "category": "ahsap-yapilar",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ahşap restoran çatı ve tavan konstrüksiyonu",
+    "en": "Wooden restaurant roof and ceiling structure"
+  },
+  "alt": {
+    "tr": "Ahşap karkas çatılı ve tekerlek avizeli restoran tavanı ile masa düzeni.",
+    "en": "Timber frame ceiling with wagon wheel chandeliers over restaurant seating."
+  },
+  "caption": {
+    "tr": "Restoran ve kafeler için uygulanan taşıyıcı ahşap çatı karkası, tavan lambri kaplaması ve rustik aydınlatma detayları.",
+    "en": "Exposed timber roof framing and ceiling paneling combined with rustic chandeliers for a commercial dining space."
+  },
+  "seoFilename": "ahsap-restoran-cati-ve-tavan-yapisi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "commercial",
+      "indoor",
+      "restaurant"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

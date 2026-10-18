@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/13825.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Korkuluklu ahşap pergola ve yeşil tutamak, ahşap görünümlü zemin",
+    "en": "Railed timber pergola with a green handrail over wood-effect tiles"
+  },
+  "alt": {
+    "tr": "Yakından: korkuluklu ahşap pergola, yeşil tutamak ve ahşap görünümlü seramik zemin",
+    "en": "Close view of a railed timber pergola with a green handrail and wood-effect ceramic tiles"
+  },
+  "caption": {
+    "tr": "Üstteki kirişler sık aralıklı ve korkuluk dikey çıtalarla örülmüş. Zemin tahta desenli.",
+    "en": "The beams above are closely spaced and the railing is made of vertical slats. The floor has a plank pattern."
+  },
+  "seoFilename": "korkuluklu-ahsap-pergola-yesil-tutamak-yakin",
+  "tags": {
+    "type": [
+      "pergola",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

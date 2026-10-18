@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/12778.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapı önünde çakıl üzerine dizilmiş kirişler",
+    "en": "Joists laid on gravel in front of a glass door"
+  },
+  "alt": {
+    "tr": "Cam kapının önünde çakıl üzerine dizilmiş kirişler, üst kenarda başlanmış tahta döşemesi ve alet",
+    "en": "Joists laid on gravel in front of a glass door, with the first boards started along the top edge and tools resting on them"
+  },
+  "caption": {
+    "tr": "Döşeme kapı eşiğinden başlıyor. Üç uzun kiriş çakıl yatağında paralel uzanıyor.",
+    "en": "Laying begins at the threshold. Three long joists run parallel across the gravel bed."
+  },
+  "seoFilename": "cam-kapi-onunde-cakil-uzerine-dizilmis-kirisler",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "giriş",
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

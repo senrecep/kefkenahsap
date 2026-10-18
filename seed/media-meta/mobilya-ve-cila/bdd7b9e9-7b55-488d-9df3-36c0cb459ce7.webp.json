@@ -1,0 +1,35 @@
+{
+  "file": "bdd7b9e9-7b55-488d-9df3-36c0cb459ce7.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Siyah çift kanatlı kapı, iç içe çıtalı ahşap panel",
+    "en": "Black double door with nested slatted wood panels"
+  },
+  "alt": {
+    "tr": "Siyah boyalı çift kanatlı kapıda iç içe dikdörtgen çıtalardan oluşan ahşap paneller ve pirinç renkli uzun kulplar",
+    "en": "Black double door with nested rectangular wood slat panels and long brass-colored pull handles"
+  },
+  "caption": {
+    "tr": "Siyah boyalı çift kanatlı kapı. Her kanatta iç içe geçen dikdörtgen çıtalardan yapılmış ahşap panel var, ortada uzun antik görünümlü kulplar yer alıyor.",
+    "en": "A black-painted double door. Each leaf has a wood panel made of nested rectangular slats, with long antique-style handles in the center."
+  },
+  "seoFilename": "siyah-cift-kanatli-kapi-citali-ahsap-panel",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "iç mekan",
+      "kapı"
+    ],
+    "finish": [
+      "siyah boya",
+      "ceviz tonu cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

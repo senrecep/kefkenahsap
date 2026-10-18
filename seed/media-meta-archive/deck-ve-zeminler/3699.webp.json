@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/3699.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Korkuluklu platform yanında dar deck yolu",
+    "en": "Narrow deck path beside a railed platform"
+  },
+  "alt": {
+    "tr": "Havuz kenarında dikey çıtalı ahşap korkuluğu olan platform ve yanında çimene giden dar bir deck yolu",
+    "en": "Platform with a vertical-slat timber railing at the pool edge, with a narrow deck path leading to the lawn beside it"
+  },
+  "caption": {
+    "tr": "Platformun üzerinde büyük bir beyaz şemsiye duruyor ve içinde biri çalışıyor. Sağ tarafta taş kaplı yüksek bir duvar yükseliyor.",
+    "en": "A large white parasol stands over the platform and someone is working inside it. A tall stone-clad wall rises on the right."
+  },
+  "seoFilename": "korkuluklu-platform-yaninda-dar-deck-yolu",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,37 @@
+{
+  "file": "1fc6c46a-dc61-4c0e-af9e-beae0a0aab42.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Aynalı beyaz kasetli yemek odası dolabı",
+    "en": "White paneled dining room cabinet with mirror"
+  },
+  "alt": {
+    "tr": "Duvar boyunca uzanan beyaz kasetli dolap, ortasında ayna bölmesi; önünde gri sandalyeler ve açık renk halı var",
+    "en": "White paneled built-in cabinet along a wall with a mirrored section, grey chairs and a light rug in front"
+  },
+  "caption": {
+    "tr": "Duvar boyunca ölçüye göre yapılmış, kasetli kapakları beyaz boyalı yemek odası dolabı. Ortadaki ayna bölmesi odayı genişletiyor.",
+    "en": "A made-to-measure dining room cabinet running the length of the wall, with white painted paneled doors. The mirrored section in the middle makes the room feel larger."
+  },
+  "seoFilename": "aynali-beyaz-kasetli-yemek-odasi-dolabi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "iç mekan",
+      "yemek odası",
+      "ölçüye göre dolap"
+    ],
+    "finish": [
+      "beyaz boya",
+      "kasetli kapak",
+      "ayna"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

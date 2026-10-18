@@ -1,0 +1,35 @@
+{
+  "source": "Ireko-Teak/14167.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beton tezgâh ve yanındaki ahşap sandalyeler",
+    "en": "Concrete counter with timber chairs beside it"
+  },
+  "alt": {
+    "tr": "Beton tezgâhın üstünde ahşap çıtalı yüzey; tezgâhın yanında ahşap sandalyeler duruyor",
+    "en": "Slatted timber surface on a concrete counter, with timber chairs standing alongside it"
+  },
+  "caption": {
+    "tr": "Ahşap yüzey beton gövdeye gömülü, sandalyeler tezgâhın uzun kenarına yerleştirilmiş. Arkada gri duvar ve çim alan var.",
+    "en": "The timber surface is sunk into the concrete body and the chairs are placed along the long side of the counter. A grey wall and a lawn lie behind."
+  },
+  "seoFilename": "beton-tezgah-ustunde-ahsap-citali-yuzey-yaninda-ahsap",
+  "tags": {
+    "type": [
+      "bar / tezgâh"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.45
+}

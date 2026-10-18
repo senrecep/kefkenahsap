@@ -1,0 +1,36 @@
+{
+  "file": "WhatsApp-Image-2021-06-27-at-20.13.46-2-2.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede zemine oturan ahşap deck",
+    "en": "Garden wooden deck laid over the lawn"
+  },
+  "alt": {
+    "tr": "Çim alanın kenarında bal rengi ahşap deck, önünde şekil verilmiş zeytin ağacı ve yuvarlak budanmış şimşir çalıları",
+    "en": "Honey-toned wooden deck beside a lawn, with a shaped olive tree and rounded boxwood shrubs in front"
+  },
+  "caption": {
+    "tr": "Bahçede çimle çit arasına döşenen, zemine yakın ve geniş yüzeyli ahşap deck. Ön planda budanmış zeytin ağacı ile şimşirler var.",
+    "en": "A wide, low-profile wooden deck laid in a garden between the lawn and the hedge, with a pruned olive tree and boxwood shrubs in the foreground."
+  },
+  "seoFilename": "bahce-ahsap-deck-zemin",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "çim alan"
+    ],
+    "finish": [
+      "doğal ton",
+      "vernikli"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Kopru ve Iskele/7976.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Boş havuzun etrafında kavisli deck kenarı",
+    "en": "Curved deck edge around an empty pool"
+  },
+  "alt": {
+    "tr": "Boş ve kabuk hâlindeki havuzu saran kavisli açık renkli deck ve yanındaki granit meydan, arkada şemsiyeler",
+    "en": "Curved light deck around an empty pool shell, with granite paving beside it and parasols behind"
+  },
+  "caption": {
+    "tr": "Deck kavisi boyunca tek parça gibi dönüyor. Havuzun iç tarafı henüz kaplanmamış.",
+    "en": "The deck turns along the curve like a single piece. The inside of the pool is not yet finished."
+  },
+  "seoFilename": "bos-havuzun-etrafinda-kavisli-deck-kenari",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

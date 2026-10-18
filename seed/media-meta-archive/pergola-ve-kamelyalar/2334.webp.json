@@ -1,0 +1,37 @@
+{
+  "source": "Pergola ve Kamelyalar/2334.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Koyu renkli pergola kirişleri ve direk detayı, mavi gökyüzü",
+    "en": "Dark pergola beams and post detail against a blue sky"
+  },
+  "alt": {
+    "tr": "Mavi gökyüzüne karşı koyu renkli pergola kirişleri ve yuvarlak direk birleşimi, alttan çekim",
+    "en": "Dark pergola beams and a round post joint against a blue sky, shot from below"
+  },
+  "caption": {
+    "tr": "Kirişler yan yana ve eşit aralıkla sıralanıyor, yuvarlak direk üstte bir enine kirişe oturuyor. Kenarlar pahlanmış.",
+    "en": "The beams are laid side by side at equal spacing, and a round post meets a cross beam at the top. The edges are chamfered."
+  },
+  "seoFilename": "koyu-renkli-pergola-kirisleri-direk-detayi",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

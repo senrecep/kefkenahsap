@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/9968.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Vida sıraları belli olan koyu kırmızı deck yüzeyi",
+    "en": "Dark red deck surface with visible screw lines"
+  },
+  "alt": {
+    "tr": "Koyu kırmızı kahve renkte cilalanmış deck yüzeyi, tahta aralarında düzgün vida sıraları ve üst kenarda çimen",
+    "en": "Dark red-brown polished deck surface with neat rows of screws between boards, and lawn at the top edge"
+  },
+  "caption": {
+    "tr": "Yüzey tek tonda boyanmış ve ışığı hafifçe yansıtıyor. Vidalar tahta uçlarında hizalı.",
+    "en": "The surface carries an even colour and reflects the light slightly. The screws line up at the board ends."
+  },
+  "seoFilename": "vida-siralari-belli-koyu-kirmizi-deck-yuzeyi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

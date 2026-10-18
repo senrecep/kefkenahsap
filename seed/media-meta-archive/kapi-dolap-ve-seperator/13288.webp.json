@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/13288.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölyede yatay çıtalı yüksek klima kasası",
+    "en": "Tall horizontal-slat air-conditioner housing in the workshop"
+  },
+  "alt": {
+    "tr": "Atölye zemininde yanları yatay aralıklı çıtalı, yüzü dikey tahtalı kızıl kahve yüksek ahşap kasa, arkada merdiven",
+    "en": "Tall red-brown timber housing with horizontally slatted sides and a vertically boarded face standing on a workshop floor"
+  },
+  "caption": {
+    "tr": "Kasanın bir yüzü dikey tahta, diğer yüzler yatay çıtalı. Kasa havalanıyor ve düz bir üstü var.",
+    "en": "One face is vertical boards and the others are horizontal slats. The housing ventilates and has a flat top."
+  },
+  "seoFilename": "atolyede-yatay-citali-yuksek-klima-kasasi",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

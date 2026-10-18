@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/11469.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Pergola altında hasır oturma grubu ve bez tente",
+    "en": "Rattan seating set under a pergola with a canvas cover"
+  },
+  "alt": {
+    "tr": "Kırmızımsı vernikli pergolanın altında hasır köşe oturma grubu ve krem tente, arkada sarmaşıklı duvar",
+    "en": "Rattan corner seating under a reddish varnished pergola with a cream canvas cover, and an ivy wall behind"
+  },
+  "caption": {
+    "tr": "Oturma grubu yarım daire biçiminde yerleşmiş, ortada alçak bir sehpa var. Üstteki tente güneşi süzüyor.",
+    "en": "The seating curves in a half circle with a low table in the middle. The canvas above filters the sun."
+  },
+  "seoFilename": "hasir-oturma-grubu-vernikli-pergola-tente",
+  "tags": {
+    "type": [
+      "pergola",
+      "oturma grubu",
+      "sehpa"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

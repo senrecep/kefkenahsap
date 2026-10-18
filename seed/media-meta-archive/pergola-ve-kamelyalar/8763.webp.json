@@ -1,0 +1,37 @@
+{
+  "source": "Pergola ve Kamelyalar/8763.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çapraz kirişli pergola köşesi, yanında harçlı tuğla kolon",
+    "en": "Pergola corner with crossing beams beside a mortared brick column"
+  },
+  "alt": {
+    "tr": "Çapraz oturan kirişlerden oluşan pergola köşesi, yanında harcı görünen tuğla kolonlar ve beyaz duvar",
+    "en": "Pergola corner made of crossing beams, with brick columns showing their mortar beside it and a white wall"
+  },
+  "caption": {
+    "tr": "Çaprazlama kirişler köşede geometrik bir desen oluşturuyor. Tuğla kolonların harcı henüz sıvanmamış.",
+    "en": "The crossed beams make a geometric pattern at the corner. The mortar on the brick columns has not been rendered yet."
+  },
+  "seoFilename": "capraz-kirisli-pergola-kosesi-harcli-tugla-kolon",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

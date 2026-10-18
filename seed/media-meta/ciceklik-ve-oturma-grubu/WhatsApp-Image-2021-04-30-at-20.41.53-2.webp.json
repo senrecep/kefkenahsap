@@ -1,0 +1,37 @@
+{
+  "file": "WhatsApp-Image-2021-04-30-at-20.41.53-2.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Pencere altına açık raflı ahşap ünite",
+    "en": "Open-shelf wooden unit under the window"
+  },
+  "alt": {
+    "tr": "Pencere altında, ahşap deck zemin üzerinde duran koyu kahverengi, uzun ve alçak, açık raflı ahşap ünite",
+    "en": "Long, low dark brown wooden unit with open shelves standing under a window on a wooden deck floor"
+  },
+  "caption": {
+    "tr": "Dış mekanda pencere altındaki duvara göre ölçülmüş, koyu kahve tonlu, açık gözlü uzun ünite. Zemindeki ahşap deck ile aynı renk ailesinde.",
+    "en": "A long open-compartment unit in a dark brown tone, built to fit the wall under the window and matching the wooden deck floor beside it."
+  },
+  "seoFilename": "pencere-alti-acik-raf-unitesi-deck-teras",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "teras",
+      "dış mekan",
+      "deck zemin",
+      "pencere altı"
+    ],
+    "finish": [
+      "koyu kahverengi",
+      "ahşap koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.55
+}

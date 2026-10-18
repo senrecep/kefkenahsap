@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/14904.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölye masasında yüzeyi fırçalanmış çıtalı kapı kanadı",
+    "en": "Brushed-surface battened door leaf on a workshop bench"
+  },
+  "alt": {
+    "tr": "Atölyedeki uzun masada yatan, yüzeyi fırçalanmış, yatay çıtalarla takviyeli koyu kahve ahşap kapı kanadı",
+    "en": "Dark brown timber door leaf lying on a long workshop bench"
+  },
+  "caption": {
+    "tr": "Kapı kanadının tahta damarı öne çıkarılmış, yatay çıtalar kanadı sabitliyor. Henüz menteşe takılmamış.",
+    "en": "The grain of the leaf has been brought out and horizontal battens hold it together. No hinges are fitted yet."
+  },
+  "seoFilename": "atolye-masasinda-yuzeyi-fircalanmis-citali-kapi-kanadi",
+  "tags": {
+    "type": [
+      "kapı"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

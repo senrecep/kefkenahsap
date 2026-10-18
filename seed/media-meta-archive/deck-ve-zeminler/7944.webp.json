@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/7944.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapı önünde yeni deck ve basamak",
+    "en": "New deck and step in front of a glass door"
+  },
+  "alt": {
+    "tr": "Evin cam kapısı önünde yükseltilmiş yeni açık renkli deck ve kenarında ahşap bir basamak; çimde ışık ve gölge benekleri",
+    "en": "Raised new pale deck in front of a glass door, with a timber step at its edge and dappled light on the lawn"
+  },
+  "caption": {
+    "tr": "Deck, çimenden bir kademe yukarıda ve kenarı çerçeve tahtasıyla kapalı. Sol alt köşede yerde bir hortum duruyor.",
+    "en": "The deck sits one step above the lawn and its edge is closed with a frame board. A hose lies on the ground at the lower left."
+  },
+  "seoFilename": "cam-kapi-onunde-yeni-deck-ve-ahsap-basamak-cimde-isik-golge",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

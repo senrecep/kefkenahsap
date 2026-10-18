@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/7481.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deniz kıyısında yeşil çatılı dar ahşap çatı iskeleti",
+    "en": "Narrow timber roof frame with a green roof by the shore"
+  },
+  "alt": {
+    "tr": "Kıyıdaki betonun üzerinde dar bir ahşap çatı iskeleti, yeşil çatı kaplaması, yanında çiçekli yamaç",
+    "en": "Narrow timber roof frame with green roofing on a concrete shoreline platform, with a flowering slope beside it"
+  },
+  "caption": {
+    "tr": "İskelet sıralı direkler ve basit bir beşik çatıdan oluşuyor. Denizin hemen kenarında duruyor.",
+    "en": "The frame is made of a row of posts and a simple gable roof. It stands right at the water's edge."
+  },
+  "seoFilename": "deniz-kiyisinda-yesil-catili-dar-iskelet",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

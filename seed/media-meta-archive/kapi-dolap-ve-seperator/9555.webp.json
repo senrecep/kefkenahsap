@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/9555.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dolap köşesi ve menteşe, yuvarlak pencerenin altında",
+    "en": "Cabinet corner and hinges below a round window"
+  },
+  "alt": {
+    "tr": "Yatay tahtalı vernikli ahşap dolabın köşesi ve paslanmaz menteşeleri; üstte yuvarlak pencerenin kenarı görünüyor",
+    "en": "Corner of a varnished horizontal-board timber cabinet with stainless hinges, the edge of a round window above"
+  },
+  "caption": {
+    "tr": "Köşe birleşimi düzgün kapanıyor, menteşeler kapak boyunca eşit aralıkla sıralanmış.",
+    "en": "The corner joint closes neatly and the hinges are spaced evenly down the door."
+  },
+  "seoFilename": "dolap-kosesi-mentese-yuvarlak-pencere",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

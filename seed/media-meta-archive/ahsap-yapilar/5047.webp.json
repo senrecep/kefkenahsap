@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/5047.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Koyu ahşap kirişlerde çelik halat gergisi",
+    "en": "Steel cable tensioner on dark timber beams"
+  },
+  "alt": {
+    "tr": "Koyu ahşap kirişlerin birleştiği noktada çelik halat gergisi ve halat, yakın çekim",
+    "en": "Close-up of a steel cable tensioner and rope where dark timber beams meet"
+  },
+  "caption": {
+    "tr": "Metal gergi kirişlere bağlı, halat ile çelik tel gerilmiş. Kirişlerin arkasında tahta çatı kaplaması görünüyor.",
+    "en": "The metal tensioner is fixed to the beams with a rope and steel wire stretched across. Timber roof boarding shows behind the beams."
+  },
+  "seoFilename": "koyu-ahsap-kirislerde-celik-halat-gergisi",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

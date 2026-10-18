@@ -1,0 +1,37 @@
+{
+  "file": "5cd4edde-77aa-4a95-aa3a-00b5d4bf7a4b.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ofis resepsiyon tezgâhı ve metal çerçeveli raf",
+    "en": "Office reception counter and metal-framed shelving"
+  },
+  "alt": {
+    "tr": "Açık renk ahşap üstlü L şekilli ofis tezgâhı, antrasit dolaplar, dikey lambri duvar ve siyah metal çerçeveli raf",
+    "en": "L-shaped office counter with light wood top, charcoal cabinets, slatted wall panel and black metal-frame shelving"
+  },
+  "caption": {
+    "tr": "Ofis için hazırlanan açık renk ahşap kaplamalı tezgâh, antrasit dolaplar ve siyah metal çerçeveli, saksılı raf ünitesi.",
+    "en": "Office counter with light wood trim, charcoal cabinets and a black metal-frame shelf unit with small potted plants."
+  },
+  "seoFilename": "ofis-tezgah-metal-cerceveli-raf",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "ofis",
+      "resepsiyon",
+      "iç mekan"
+    ],
+    "finish": [
+      "doğal vernik",
+      "antrasit boya",
+      "siyah metal"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

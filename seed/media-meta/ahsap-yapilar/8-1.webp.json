@@ -1,0 +1,36 @@
+{
+  "file": "8-1.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Cephe duvarında ahşap çıta ızgara",
+    "en": "Wooden lattice trellis on a house facade"
+  },
+  "alt": {
+    "tr": "Kahverengi boyalı ev cephesinde iki pencere arasına monte edilmiş ahşap çıta ızgara, yanında çiçekli sarmaşık bitkiler",
+    "en": "Wooden lattice trellis fixed to a brown house facade between two windows, with climbing plants beside it"
+  },
+  "caption": {
+    "tr": "Kahverengi boyalı cephede, üst ve alt kat pencereleri arasına çakılan çıtalı ahşap ızgara. Sarmaşık ve süs bitkilerinin tutunması için yapıldı.",
+    "en": "A slatted wooden trellis mounted on a brown facade between the upper and lower windows, built to support climbing plants."
+  },
+  "seoFilename": "cephe-ahsap-cita-izgara",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "dış cephe",
+      "konut",
+      "bahçe",
+      "ev cephesi"
+    ],
+    "finish": [
+      "doğal ahşap rengi"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

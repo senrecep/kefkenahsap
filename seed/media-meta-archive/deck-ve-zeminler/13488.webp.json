@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/13488.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beton üzerinde çıtalar ve kısmen döşenmiş deck",
+    "en": "Battens on concrete with deck partly laid"
+  },
+  "alt": {
+    "tr": "Beton zemin üzerinde çıtalar ve bir kısmı döşenmiş deck; kenarda kereste yığını ve mavi tezgâh",
+    "en": "Battens over a concrete floor with part of the deck already laid, a stack of timber and a blue stand at the edge"
+  },
+  "caption": {
+    "tr": "Tahtalar çıtalara dik döşeniyor ve soldaki istif kalan malzemeyi gösteriyor. Zemin henüz tamamen kapanmamış.",
+    "en": "The boards go down square to the battens and the stack on the left is the remaining material. The floor is not fully covered yet."
+  },
+  "seoFilename": "beton-uzerinde-citalar-ve-kismen-doseli-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

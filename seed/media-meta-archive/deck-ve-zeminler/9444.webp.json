@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/9444.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Gönye testeresi başında deck çerçevesi",
+    "en": "Deck frame beside a mitre saw"
+  },
+  "alt": {
+    "tr": "Teras girişinde çimenin kenarında kurulu deck çerçevesi, ortada gönye testeresi ve sağda ayaklara oturan ek kollar",
+    "en": "A deck frame at the terrace entrance on the lawn edge, with a mitre saw in the middle and extra arms on feet to the right"
+  },
+  "caption": {
+    "tr": "Çerçeve kesim tezgâhı olarak kullanılan testerenin yanında ilerliyor. Sağa doğru ikinci bir kol uzanıyor.",
+    "en": "The frame advances beside the saw used for cutting. A second arm extends to the right."
+  },
+  "seoFilename": "gonye-testeresi-basinda-deck-cercevesi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras",
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

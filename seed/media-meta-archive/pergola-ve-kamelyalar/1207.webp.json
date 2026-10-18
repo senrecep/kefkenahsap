@@ -1,0 +1,33 @@
+{
+  "source": "Pergola ve Kamelyalar/1207.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Ayaklar üzerinde yükselen teras ve pergola",
+    "en": "Timber terrace and pergola raised on posts"
+  },
+  "alt": {
+    "tr": "Kiremit renkli zemin üzerinde ahşap dikmelere oturan, çapraz korkuluklu uzun teras ve üstündeki pergola",
+    "en": "Long timber terrace with cross-braced railings and a pergola, raised on posts above terracotta paving"
+  },
+  "caption": {
+    "tr": "Taş duvar boyunca ahşap dikmeler üzerinde yükselen teras. Üstünü pergola gölgeliyor, altı şezlonglar için gölgelik oluyor.",
+    "en": "A terrace raised on timber posts along a stone wall. A pergola shades the top, and the space below gives shade to the sun loungers."
+  },
+  "seoFilename": "ahsap-dikmeli-teras-pergola-kiremit-zemin",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "dış mekân",
+      "taş duvar"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

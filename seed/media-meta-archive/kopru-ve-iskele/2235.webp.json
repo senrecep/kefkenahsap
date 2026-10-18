@@ -1,0 +1,39 @@
+{
+  "source": "Ahsap Yapilar/2235.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deniz kenarı terasları: kademeli platformlar ve örtülü pergolalar",
+    "en": "Seaside terraces: stepped platforms and covered pergolas"
+  },
+  "alt": {
+    "tr": "Yukarıdan görünen, kıyıya doğru kademeli inen ahşap platformlar ve tahta örtülü pergolalar; arada palmiyeler",
+    "en": "View from above of timber platforms stepping down to the shore and pergolas roofed with boards, with palms between them"
+  },
+  "caption": {
+    "tr": "Platformlar basamaklarla birbirine bağlanıyor. Pergolaların çatısı geniş tahtalarla kaplı.",
+    "en": "The platforms are linked by steps. The pergola roofs are covered with wide boards."
+  },
+  "seoFilename": "deniz-kenari-teraslari-kademeli-platform",
+  "tags": {
+    "type": [
+      "iskele",
+      "pergola",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/8665.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Eğimli tavanda OSB ve tahta kaplama",
+    "en": "OSB and board cladding on a sloped ceiling"
+  },
+  "alt": {
+    "tr": "Eğimli tavanın üstünde OSB levha, alt kısımda çıtalara çakılmış açık renkli tahta kaplama",
+    "en": "OSB sheet at the top of a sloped ceiling, with light-coloured boards fixed to battens below"
+  },
+  "caption": {
+    "tr": "Eğimli tavanda üstte OSB levha duruyor, altında tahtalar çıtalara döşenmiş. Kaplama yapım aşamasında.",
+    "en": "OSB sheet sits at the top of the slope and boards are fixed to battens below it. The cladding is still being installed."
+  },
+  "seoFilename": "egimli-tavan-osb-ahsap-citalar-yapim",
+  "tags": {
+    "type": [
+      "tavan kaplaması / lambri"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

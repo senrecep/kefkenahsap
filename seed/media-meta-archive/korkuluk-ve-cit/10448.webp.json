@@ -1,0 +1,35 @@
+{
+  "source": "Kapi Dolap ve Seperator/10448.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Duvara dayalı yatay çıtalı açık kahve ahşap panel, altında kablolar",
+    "en": "Light brown horizontal-slat panel leaning on a wall, cables below"
+  },
+  "alt": {
+    "tr": "Gri duvarın önünde duran, sık yatay çıtalı açık kahve ahşap panel; yanda elektrik panosu, altta toprak ve kablolar",
+    "en": "A light brown timber panel with closely spaced horizontal slats leaning in front of a grey wall"
+  },
+  "caption": {
+    "tr": "Panel çıtaları eşit aralıkla yatay dizilmiş, duvara yaslanmış hâlde bekliyor. Zeminde kablolar ve toprak var.",
+    "en": "The panel slats are laid horizontally at equal gaps and the panel waits leaning against the wall. There are cables and soil on the ground."
+  },
+  "seoFilename": "duvara-dayali-yatay-citali-acik-kahve-panel",
+  "tags": {
+    "type": [
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

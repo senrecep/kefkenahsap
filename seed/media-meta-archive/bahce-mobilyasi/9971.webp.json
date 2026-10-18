@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/9971.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yuvarlatılmış köşeli masif çam tabla yüzeyi, yakından",
+    "en": "Solid pine table top with rounded corners, close up"
+  },
+  "alt": {
+    "tr": "Açık renkli masif çam tahtalardan yapılmış, köşeleri yuvarlatılmış kare tabla yüzeyi yakından görünüyor; çam budakları açıkta",
+    "en": "A close view of a square tabletop of solid pine boards with rounded corners, with knots in the grain"
+  },
+  "caption": {
+    "tr": "Tabla birkaç geniş çam tahtanın birleşiminden oluşuyor ve kenar çerçeveyle toplanıyor. Köşeler yuvarlatıldığı için çarpma riski az.",
+    "en": "The top is several wide pine boards joined and held by an edge frame. Rounded corners make bumps less of a problem."
+  },
+  "seoFilename": "yuvarlatilmis-kosel-masif-cam-tabla-yuzeyi-yakin-cekim",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [
+      "çam"
+    ],
+    "setting": [],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

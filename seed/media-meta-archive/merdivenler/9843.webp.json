@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/9843.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapılı bodrum girişinde platform ve korkuluk",
+    "en": "Platform and railing at a glass-doored basement entrance"
+  },
+  "alt": {
+    "tr": "Cam kapılı bodrum girişinin önünde ahşap platform ve çaprazlı korkuluk; yanda çimlik ve tel çit",
+    "en": "A timber platform and cross-braced railing in front of a glass-doored basement entrance, with a lawn and wire fencing beside"
+  },
+  "caption": {
+    "tr": "Platform bodrum katın cam kapısının önüne kurulmuş. Köşede kalın direkler korkuluğu taşıyor.",
+    "en": "The platform is built in front of the basement's glass door. Thick posts carry the railing at the corner."
+  },
+  "seoFilename": "cam-kapili-bodrum-girisinde-ahsap-platform-ve-caprazli",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

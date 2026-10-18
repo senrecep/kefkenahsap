@@ -1,0 +1,33 @@
+{
+  "source": "Pergola ve Kamelyalar/1533.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Balkonda kafes panelli pergola",
+    "en": "Pergola with lattice panels on a balcony"
+  },
+  "alt": {
+    "tr": "Bej cepheli evin balkonunda çapraz korkuluklu, kafes panelli ve üstü kirişli ahşap pergola",
+    "en": "Timber pergola with cross-braced railings, lattice panels and overhead beams on the balcony of a beige house"
+  },
+  "caption": {
+    "tr": "Evin balkonu ahşap pergolayla çevrilmiş. Yanda kafes paneller, önde çapraz korkuluklar var; kiriş uçları dışa taşıyor.",
+    "en": "The balcony of the house is framed by a timber pergola, with lattice panels at the side, cross-braced railings at the front and projecting beam ends."
+  },
+  "seoFilename": "balkon-kafes-panelli-ahsap-pergola",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "balkon",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

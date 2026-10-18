@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/13098.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yarım daire biçimli, dikey şeritli ahşap bank, dik açıdan",
+    "en": "Semicircular vertical-strip timber bench from a steep angle"
+  },
+  "alt": {
+    "tr": "Beton bir zemini yarım daire şeklinde çevreleyen, dikey ahşap şeritli arkalığı ve ahşap kaplı oturağı olan bank",
+    "en": "A bench with a back of vertical timber strips and a timber-covered seat curving in a half circle around a concrete floor"
+  },
+  "caption": {
+    "tr": "Bu açıdan bankın kavisi ve oturağın genişliği net görünüyor. Dikey şeritler eğriyi aksatmadan takip ediyor.",
+    "en": "From this angle the curve of the bench and the width of the seat are clear. The vertical strips follow the curve without a break."
+  },
+  "seoFilename": "yarim-daire-bicimli-dikey-seritli-ahsap-bank-beton-zemin",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,35 @@
+{
+  "source": "Korkuluk ve Cit/8281.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Teras kenarında kapılı ahşap korkuluk",
+    "en": "Terrace railing with a timber gate"
+  },
+  "alt": {
+    "tr": "Ahşap deck terasın kenarında, bitkilerin yanında küçük kapısı olan dikey çıtalı ahşap korkuluk",
+    "en": "Vertical slatted timber railing with a small gate along the edge of a wooden deck terrace"
+  },
+  "caption": {
+    "tr": "Deck terası bahçeden ayıran ahşap korkuluk, ortasındaki küçük kapıyla bahçeye geçiş veriyor.",
+    "en": "The timber railing separates the deck terrace from the garden, with a small gate in the middle for access."
+  },
+  "seoFilename": "teras-kenarinda-kapili-ahsap-korkuluk-deck",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "teras",
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ahşap"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

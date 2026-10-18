@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/12775.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yuvarlak direkli, merdivenli ahşap salıncak",
+    "en": "Round-post timber swing with ladder"
+  },
+  "alt": {
+    "tr": "Çim bahçede yuvarlak direkli, A biçiminde ayaklı ve merdivenli ahşap salıncak",
+    "en": "Timber swing with round posts, A-shaped legs and a ladder in a lawn garden"
+  },
+  "caption": {
+    "tr": "Salıncağın iki yanında A biçiminde ayaklar var. Merdiven yan direğe bağlı.",
+    "en": "There are A-shaped legs on both sides of the swing. The ladder is fixed to a side post."
+  },
+  "seoFilename": "yuvarlak-direkli-merdivenli-ahsap-salincak-cim-bahce",
+  "tags": {
+    "type": [
+      "salıncak"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

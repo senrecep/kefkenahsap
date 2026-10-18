@@ -1,0 +1,33 @@
+{
+  "source": "Ireko-Teak/9672.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cilalı küçük kollu sandalye modeli",
+    "en": "Small polished armchair model"
+  },
+  "alt": {
+    "tr": "Kızıl kahve renkte cilalı ahşap şeritlerden yapılmış küçük boy kollu sandalye modeli, arkada tabela",
+    "en": "Small armchair model made of polished red-brown timber strips, with a sign behind it"
+  },
+  "caption": {
+    "tr": "Cila şeritlerin damarını koyulaştırmış. Sırt ve oturak çıtaları eğimli birleşiyor.",
+    "en": "The polish has deepened the grain of the strips. The back and seat slats join in a curve."
+  },
+  "seoFilename": "cilali-kucuk-kollu-sandalye-modeli",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.4
+}

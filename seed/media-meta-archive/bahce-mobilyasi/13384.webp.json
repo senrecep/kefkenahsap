@@ -1,0 +1,38 @@
+{
+  "source": "Kapi Dolap ve Seperator/13384.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Fırınlı açık mutfak, çıtalı duvar önünde",
+    "en": "Open kitchen with an oven in front of a slatted wall"
+  },
+  "alt": {
+    "tr": "Çıtalı ahşap duvarın önünde fırın ve odun nişi bulunan açık mutfak; ön planda deck zemin",
+    "en": "Open kitchen with an oven and a log niche in front of a slatted timber wall, with decking in the foreground"
+  },
+  "caption": {
+    "tr": "Fırın tezgâhın ortasına yerleştirilmiş, altında odun istifi var. Çıtalı duvar tavana kadar yükseliyor, kenarda tabure görünüyor.",
+    "en": "The oven is set in the middle of the counter with a stack of logs beneath. The slatted wall rises to the ceiling and a stool shows at the edge."
+  },
+  "seoFilename": "firinli-acik-mutfak-ve-cita-duvar-bir-baska-aciyla",
+  "tags": {
+    "type": [
+      "dış mutfak / mangal alanı",
+      "iç duvar kaplaması"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.55
+}

@@ -1,0 +1,40 @@
+{
+  "source": "Kopru ve Iskele/8027.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Su dolu havuzda kıvrımlı deck ve korkuluklu köprü, arkada villa",
+    "en": "Water-filled pool with curved deck and railed bridge, villa behind"
+  },
+  "alt": {
+    "tr": "Su dolu havuzun çevresinde kıvrımlı ahşap deck ve ortasında korkuluklu kemerli köprü; arkada iki katlı bina ve şemsiyeler",
+    "en": "Winding timber deck around a water-filled pool with an arched railed bridge across the middle"
+  },
+  "caption": {
+    "tr": "Deck havuzu oval bir çerçeveyle çeviriyor. Köprü havuzun ortasından, iki ucu deck'e oturarak geçiyor.",
+    "en": "The deck frames the pool in an oval. The bridge crosses the middle of the pool with both ends resting on the deck."
+  },
+  "seoFilename": "su-dolu-havuzda-kivrimli-deck-korkuluklu-kopru",
+  "tags": {
+    "type": [
+      "köprü",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

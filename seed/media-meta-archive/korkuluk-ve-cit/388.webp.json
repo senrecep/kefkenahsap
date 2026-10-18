@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/388.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Platform üzerinde yapımı süren direk ve kirişler",
+    "en": "Posts and beams under construction on a platform"
+  },
+  "alt": {
+    "tr": "Deck platform üzerinde yan yana sıralanan kalın ahşap direkler ve üstlerinde yatay kirişler, arkada yamaç ve beyaz evler",
+    "en": "Thick timber posts with horizontal beams lined up on a deck platform, with a slope and white houses behind"
+  },
+  "caption": {
+    "tr": "Direkler kirişlerle birleşmiş, üstü henüz kapanmamış. Platform tahtaları yeni döşenmiş.",
+    "en": "The posts are joined by beams and the top is not yet covered. The platform boards are newly laid."
+  },
+  "seoFilename": "platform-uzerinde-yapimda-ahsap-direk-ve-kirisler",
+  "tags": {
+    "type": [],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.4
+}

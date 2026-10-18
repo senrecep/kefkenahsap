@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/14683.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Parlak vernikli, doğal kenarlı masa",
+    "en": "Glossy varnished live-edge table"
+  },
+  "alt": {
+    "tr": "Parlak vernikli doğal kenarlı ahşap masa ve yanında kavisli bank, arkada çiçekli bahçe",
+    "en": "Glossy varnished live-edge timber table with a curved bench beside it and a flowering garden behind"
+  },
+  "caption": {
+    "tr": "Tablanın yüzeyi parlak, damarlar derin kahve. Bank masayı yarım daire şeklinde çevreliyor.",
+    "en": "The surface is glossy with deep brown grain. The bench wraps around the table in a half circle."
+  },
+  "seoFilename": "parlak-vernikli-dogal-kenarli-masa-kavisli-bank-yaninda",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

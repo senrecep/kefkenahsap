@@ -1,0 +1,39 @@
+{
+  "source": "Kopru ve Iskele/8060.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kavisli deck kuşağı ve kemerli küçük köprü",
+    "en": "Curved deck band and a small arched bridge"
+  },
+  "alt": {
+    "tr": "Kavisli sığ havuzu saran açık renkli deck kuşağı ve üstünden geçen kemerli, korkuluklu ahşap köprü, arkada büyük bina",
+    "en": "Light deck band around a curved shallow pool with an arched timber bridge with railings over it, a large building behind"
+  },
+  "caption": {
+    "tr": "Deck havuzun hatlarını dışarıdan çerçeveliyor. Köprü kavisli korkuluğuyla havuzun üstünü kapatıyor.",
+    "en": "The deck frames the outline of the pool from outside. The bridge spans it with its curved railing."
+  },
+  "seoFilename": "kavisli-deck-kusagi-ve-kemerli-kucuk-kopru",
+  "tags": {
+    "type": [
+      "deck",
+      "köprü"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı",
+      "ticari mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

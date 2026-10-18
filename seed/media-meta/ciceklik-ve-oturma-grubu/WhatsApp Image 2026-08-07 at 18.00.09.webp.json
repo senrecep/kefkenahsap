@@ -1,0 +1,35 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 18.00.09.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Kafesli ahşap çiçeklik",
+    "en": "Wooden planter box with trellis"
+  },
+  "alt": {
+    "tr": "Duvar önünde duran, arkasında kare gözlü yüksek ahşap kafesi olan ceviz tonunda dikdörtgen çiçeklik",
+    "en": "Walnut-toned rectangular wooden planter standing against a wall with a tall square-grid trellis behind it"
+  },
+  "caption": {
+    "tr": "Yatay çıtalı dikdörtgen çiçeklik ve arkasında yüksek kafes panel. Bitkiler tırmansın diye kafes, saksı kasasına bağlı yapıldı. Koyu cevizimsi vernikle bitirildi.",
+    "en": "A rectangular planter with horizontal slats and a tall lattice panel at the back for climbing plants. Finished in a dark walnut-toned stain."
+  },
+  "seoFilename": "kafesli-ahsap-ciceklik",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "iç mekan",
+      "duvar önü"
+    ],
+    "finish": [
+      "koyu ceviz tonu",
+      "vernik"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

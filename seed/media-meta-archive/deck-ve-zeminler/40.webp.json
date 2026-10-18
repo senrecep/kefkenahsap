@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/40.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Ağaç dibinde tarhlı iki kotlu ahşap deck",
+    "en": "Two-level timber deck with a tree bed"
+  },
+  "alt": {
+    "tr": "Ağaç dibindeki bitki tarhını ahşap kenarla çevreleyen, iki kotlu açık renk ahşap deck",
+    "en": "Two-level light timber deck with a timber-edged planting bed around a tree trunk"
+  },
+  "caption": {
+    "tr": "Ağacın dibindeki tarh, deck ile aynı tonda ahşapla çevrelenmiş. Alt ve üst kotlar kavisli bir geçişle birleşiyor.",
+    "en": "The planting bed at the foot of the tree is edged in timber matching the deck, and the two levels meet in a curved step."
+  },
+  "seoFilename": "agac-dibinde-ahsap-tarhli-iki-kotlu-deck",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

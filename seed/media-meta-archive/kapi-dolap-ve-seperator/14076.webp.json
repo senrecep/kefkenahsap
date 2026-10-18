@@ -1,0 +1,38 @@
+{
+  "source": "Kapi Dolap ve Seperator/14076.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cihazı saran açık önlü dikey ahşap kabin",
+    "en": "Tall timber booth with an open front around a device"
+  },
+  "alt": {
+    "tr": "Taş döşemeli avluda, çalı çitinin önünde duran, ön yüzü açık ve içinde yuvarlak ışıklı bir cihaz bulunan koyu ahşap kabin",
+    "en": "Dark timber booth with an open front standing in a cobbled yard in front of a hedge, with a round illuminated device inside"
+  },
+  "caption": {
+    "tr": "Kabin cihazı üç yandan ve üstten koruyor, ön yüzü kullanım için açık. Zemin parke taş.",
+    "en": "The booth shields the device on three sides and from above, with the front left open for use. The ground is cobblestone."
+  },
+  "seoFilename": "cihazi-saran-acik-onlu-dikey-ahsap-kabin",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

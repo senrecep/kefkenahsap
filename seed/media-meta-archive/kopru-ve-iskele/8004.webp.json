@@ -1,0 +1,41 @@
+{
+  "source": "Kopru ve Iskele/8004.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deck yolundan başlayıp havuzu aşan korkuluklu köprü",
+    "en": "Railed bridge starting from the deck path and crossing the pool"
+  },
+  "alt": {
+    "tr": "Kıvrımlı deck yolunun ucundan boş havuzu geçen korkuluklu ahşap köprü; arkada çatılı köşk ve şemsiye",
+    "en": "Railed timber bridge crossing the empty pool from the end of a curved deck path"
+  },
+  "caption": {
+    "tr": "Deck yolu havuzun kıvrımını izleyip köprüye bağlanıyor. Köprünün korkuluğu iki yanda sıralı dikmelerden oluşuyor.",
+    "en": "The deck path follows the curve of the pool and connects to the bridge. The bridge railing is made of posts in a row on both sides."
+  },
+  "seoFilename": "deck-yolundan-baslayip-havuzu-asan-korkuluklu-kopru",
+  "tags": {
+    "type": [
+      "köprü",
+      "korkuluk",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

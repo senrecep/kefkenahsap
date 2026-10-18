@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/13393.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bahçede toprağa yerleştirilmiş çok sayıda çiçeklik",
+    "en": "Many planters set into the soil of a garden"
+  },
+  "alt": {
+    "tr": "Bahçede toprak zemine sıra sıra yerleştirilmiş çok sayıda açık renkli alçak ahşap çiçeklik",
+    "en": "Many light low timber planters set row by row into the soil of a garden"
+  },
+  "caption": {
+    "tr": "Çiçeklikler çimenlik bir alanın ucunda, ağaçların arasında duruyor. Zeminde sökülmüş çim parçaları var.",
+    "en": "The planters stand at the end of a lawn between trees. There are strips of lifted turf on the ground."
+  },
+  "seoFilename": "bahcede-toprak-zemine-yerlestirilmis-cok-sayida-acik-renkli",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

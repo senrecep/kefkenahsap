@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/12936.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kereste yığınları önünde büyük ahşap sandık bank",
+    "en": "Large timber chest bench in front of stacked lumber"
+  },
+  "alt": {
+    "tr": "Atölyede dik istiflenmiş kerestelerin önünde, düz tahtalı yüzeyi olan geniş açık renkli ahşap sandık bank",
+    "en": "A wide light timber chest bench with a plain plank top in front of lumber stood on end in a workshop"
+  },
+  "caption": {
+    "tr": "Bank kutu biçiminde, üstü düz tahtalarla kapalı. Kapağı da aynı tahtadan olduğu için tek parça görünüyor.",
+    "en": "The bench is box-shaped with a top of flat boards. The lid is made from the same boards, so it looks like one piece."
+  },
+  "seoFilename": "kereste-yiginlari-onunde-buyuk-ahsap-sandik-bank",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

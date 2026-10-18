@@ -1,0 +1,36 @@
+{
+  "source": "Ireko-Teak/14161.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beton tezgâhın ahşap çıtalı yüzeyi, arkada koli",
+    "en": "Slatted timber top of a concrete counter, a box behind"
+  },
+  "alt": {
+    "tr": "Gri beton tezgâhın ortasında ahşap çıtalı yüzey; arkada ambalajlı bir koli, çim bahçe ve gri duvar",
+    "en": "Slatted timber surface in the middle of a grey concrete counter, with a boxed item, a lawn and a grey wall behind"
+  },
+  "caption": {
+    "tr": "Teras zemini beton kaplı, tezgâh henüz tamamlanmamış gibi. Arkada duvar boyunca ambalajlı bir cihaz kolisi duruyor.",
+    "en": "The terrace floor is concrete and the counter looks unfinished. A boxed appliance stands along the wall behind."
+  },
+  "seoFilename": "beton-tezgahin-ahsap-citali-yuzeyi-arkada-koli-ve-cim-bahce",
+  "tags": {
+    "type": [
+      "bar / tezgâh"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.4
+}

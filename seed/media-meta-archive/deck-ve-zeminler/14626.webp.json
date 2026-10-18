@@ -1,0 +1,38 @@
+{
+  "source": "Ireko-Teak/14626.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Betona serilmiş ince uzun deck tahtaları",
+    "en": "Narrow deck boards laid onto a concrete slab"
+  },
+  "alt": {
+    "tr": "Beton zeminde dik açıyla sıralanmış, bal ve kahve tonlu ince uzun ahşap tahtalar",
+    "en": "Narrow honey and brown timber boards laid out side by side across a concrete floor"
+  },
+  "caption": {
+    "tr": "Tahtalar betonun üzerine yan yana serilmiş. Uç kısımda henüz bağlantı ve kesim sürüyor.",
+    "en": "The boards are laid side by side on the concrete. Fixing and cutting at the far end are still under way."
+  },
+  "seoFilename": "betona-serilmis-ince-uzun-deck-tahtalari",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras",
+      "balkon"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

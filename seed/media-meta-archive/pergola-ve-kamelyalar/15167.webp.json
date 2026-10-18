@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/15167.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çiti çevreli ahşap kamelya, içinde mavi iskele ve merdivenler",
+    "en": "Timber gazebo beside a hedge with blue scaffolding and ladders inside"
+  },
+  "alt": {
+    "tr": "Çimlik bahçede ahşap kamelya, içinde mavi çelik iskele parçaları ve merdivenler, önünde basamak taşları",
+    "en": "Timber gazebo on a lawn with blue steel scaffold sections and ladders inside, and stepping stones in front"
+  },
+  "caption": {
+    "tr": "Kamelyanın çatı alt kısmı kafes desenli, çevresinde çapraz korkuluk var. İş sürerken iskele içeride duruyor.",
+    "en": "The roof underside has a lattice pattern and there is a cross-braced rail around it. The scaffold stays inside while work continues."
+  },
+  "seoFilename": "citi-cevreli-ahsap-kamelya-mavi-iskele-merdivenler",
+  "tags": {
+    "type": [
+      "kamelya",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

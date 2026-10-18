@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/8745.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yapım aşamasındaki pergola kirişleri ve ahşap balkon",
+    "en": "Pergola beams under construction beside a timber balcony"
+  },
+  "alt": {
+    "tr": "Yapım aşamasındaki pergola kirişleri, arkada ahşap korkuluklu balkonlu bir ev ve taş duvar",
+    "en": "Pergola beams under construction with a house behind that has a timber-railed balcony, and a stone wall"
+  },
+  "caption": {
+    "tr": "Kalın kirişler yan yana, eşit aralıkla yerleştirilmiş. Üst katta ahşap korkuluklu balkon görünüyor.",
+    "en": "The thick beams are laid side by side at an even gap. A timber-railed balcony shows on the floor above."
+  },
+  "seoFilename": "yapim-asamasinda-pergola-kirisleri-ahsap-balkon",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "balkon",
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

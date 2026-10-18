@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/10088.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bahçe duvarı yanında uzanan çaprazlı merdiven",
+    "en": "Cross-braced stairs running along the garden wall"
+  },
+  "alt": {
+    "tr": "Bej bahçe duvarı yanında uzanan, çaprazlı korkuluklu ahşap merdiven; solda yeşil telörgü, duvarda lamba",
+    "en": "Timber staircase with cross-braced railings running along a beige garden wall"
+  },
+  "caption": {
+    "tr": "Merdiven dar çimlik şeridin üstünden duvar boyunca çıkıyor. Solda yeşil bir tel çit uzanıyor.",
+    "en": "The stairs climb along the wall over a narrow strip of lawn. Green mesh fencing runs on the left."
+  },
+  "seoFilename": "bahce-duvari-yaninda-uzanan-caprazli-merdiven",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

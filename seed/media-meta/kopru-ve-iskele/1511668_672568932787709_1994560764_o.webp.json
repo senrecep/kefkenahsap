@@ -1,0 +1,36 @@
+{
+  "file": "1511668_672568932787709_1994560764_o.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Göl kıyısında ahşap iskele ve korkuluk",
+    "en": "Wooden pier with railing on a lakeshore"
+  },
+  "alt": {
+    "tr": "Kıyıdan suya uzanan açık renkli ahşap iskele, ucunda üç katlı korkuluk; arkada taş duvar ve sazlık",
+    "en": "Light wooden pier extending from the bank over calm water, with a three-rail fence, a stone wall and reeds behind"
+  },
+  "caption": {
+    "tr": "Kıyıdan suya uzanan ahşap iskele; döşeme tahtaları ve uçtaki korkuluk. Çalışma yeni bitmiş, kıyıda toprak hâlâ açıkta.",
+    "en": "A wooden pier reaching out from the bank, with decking boards and a railing at the end. The work looks freshly completed, with bare soil still visible on the shore."
+  },
+  "seoFilename": "gol-kenari-ahsap-iskele-korkuluk",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "göl kenarı",
+      "kıyı",
+      "dış mekan",
+      "iskele"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

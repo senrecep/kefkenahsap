@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/13571.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çaprazlı korkuluğu takılan merdiven",
+    "en": "Stairs having the cross-braced railing fitted"
+  },
+  "alt": {
+    "tr": "Çaprazlı korkuluğu takılmakta olan ahşap merdiven; yerde kablo, yanda yeşil çit ve duvar",
+    "en": "Timber stairs with the cross-braced railing being fitted, with a cable on the ground and a green hedge and wall beside"
+  },
+  "caption": {
+    "tr": "Korkuluğun çaprazları yerine oturtuluyor. Merdivenin ilk basamağı çim zemine oturuyor.",
+    "en": "The railing's cross braces are being set in place. The first step rests on the grass."
+  },
+  "seoFilename": "caprazli-korkuluk-monte-edilen-merdiven-yerde-kablo",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

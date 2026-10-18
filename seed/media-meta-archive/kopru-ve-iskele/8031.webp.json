@@ -1,0 +1,40 @@
+{
+  "source": "Kopru ve Iskele/8031.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Köprü basamağı ve korkuluk dikmeleri, deck kenarından",
+    "en": "Bridge step and railing posts seen from the deck edge"
+  },
+  "alt": {
+    "tr": "Deck kenarından bakınca köprünün basamağı, kalın dikmeleri ve çapraz destek ayakları; arkada çam ağaçları ve binanın köşesi",
+    "en": "The bridge's step, thick posts and diagonal support legs seen from the deck edge"
+  },
+  "caption": {
+    "tr": "Korkuluk dikmeleri köprünün iki yanında üç sıra küpeşte ve dikey çıtayla sürüyor. Destek ayakları çapraz yerleştirilmiş.",
+    "en": "The railing posts run along both sides of the bridge with rails and vertical slats. The support legs are set diagonally."
+  },
+  "seoFilename": "kopru-basamagi-ve-korkuluk-dikmeleri-deck-kenarindan",
+  "tags": {
+    "type": [
+      "köprü",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

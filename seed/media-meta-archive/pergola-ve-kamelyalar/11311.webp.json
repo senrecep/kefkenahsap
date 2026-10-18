@@ -1,0 +1,41 @@
+{
+  "source": "Pergola ve Kamelyalar/11311.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kamelya içinden ahşap masa, korkuluk ve çatı kirişleri",
+    "en": "Wooden table, railing and roof rafters seen from inside a gazebo"
+  },
+  "alt": {
+    "tr": "Kamelyanın içinde ahşap masa, çıtalı korkuluk ve çatı kirişleri, dışarıda otopark ve araçlar",
+    "en": "Inside a gazebo with a wooden table, slatted railing and roof rafters, with a car park and vehicles outside"
+  },
+  "caption": {
+    "tr": "Masa kamelyanın içine yerleşmiş, kirişler çatı altına sıralanmış. Korkuluk dikey çıtalı.",
+    "en": "The table is set inside the gazebo and the rafters line the roof underside. The railing has vertical slats."
+  },
+  "seoFilename": "kamelya-ici-ahsap-masa-korkuluk-cati-kirisleri",
+  "tags": {
+    "type": [
+      "kamelya",
+      "masa ve sandalye takımı",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

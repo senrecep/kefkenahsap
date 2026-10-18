@@ -1,0 +1,37 @@
+{
+  "file": "11-1.jpg1_-1.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Teras oyun alanı ahşap güvenlik korkuluğu",
+    "en": "Wooden safety railing for terrace playground"
+  },
+  "alt": {
+    "tr": "Çocuk oyun alanını çevreleyen dikey ahşap çıtalı teras korkuluğu ve kauçuk zemin.",
+    "en": "Vertical wooden slat safety railing surrounding a terrace playground with rubber flooring."
+  },
+  "caption": {
+    "tr": "Binalar arasındaki teras çocuk oyun alanının kenarına güvenliği sağlamak amacıyla yapılan dikey ahşap çıtalı korkuluk çalışması.",
+    "en": "Vertical wooden slat safety fencing installed around a terrace playground between urban buildings."
+  },
+  "seoFilename": "teras-oyun-alani-ahsap-korkuluk",
+  "tags": {
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras",
+      "oyun alanı",
+      "dış mekan"
+    ],
+    "finish": [
+      "emprenye"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

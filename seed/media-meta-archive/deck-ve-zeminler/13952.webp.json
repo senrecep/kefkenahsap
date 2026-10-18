@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/13952.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çalılarla sınırlı uzun koyu deck ve sonunda yemek masası",
+    "en": "Long dark deck edged with shrubs ending in a dining table"
+  },
+  "alt": {
+    "tr": "Çalılarla sınırlı uzun koyu kahverengi deck, sonunda ahşap yemek masası ve sandalyeler, yanda fener",
+    "en": "Long dark brown deck edged with shrubs, with a timber dining table and chairs at the end and a lantern at the side"
+  },
+  "caption": {
+    "tr": "Deck çit boyunca uzun bir şerit hâlinde evin yan cephesinden çimene kadar iniyor. Beyaz çakıl şeridi çalıları deck'ten ayırıyor.",
+    "en": "The deck runs as a long strip along the fence from the side of the house down to the lawn. A strip of white gravel separates the shrubs from the deck."
+  },
+  "seoFilename": "calilarla-sinirli-uzun-koyu-deck-ve-sonunda-yemek-masasi",
+  "tags": {
+    "type": [
+      "deck",
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

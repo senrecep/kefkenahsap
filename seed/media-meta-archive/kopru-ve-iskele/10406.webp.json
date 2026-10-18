@@ -1,0 +1,35 @@
+{
+  "source": "Kopru ve Iskele/10406.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Farklı renkte tahtalardan yapılmış kasa numunesi",
+    "en": "Sample box section made from boards of different colours"
+  },
+  "alt": {
+    "tr": "Atölye tezgâhında duran, iki yüzü farklı renkte tahtalarla kaplanmış küçük ahşap kasa kesiti; üstte kalın kapak",
+    "en": "Small timber box section on a workshop bench clad on each side in boards of different colours, with a thick lid on top"
+  },
+  "caption": {
+    "tr": "Numunede çam kalas dikme, kırmızımsı ve açık renkli kaplama tahtaları yan yana görünüyor. Arkada atölye aletleri var.",
+    "en": "The sample shows a pine post and reddish and light cladding boards side by side. Workshop tools are in the background."
+  },
+  "seoFilename": "farkli-renkte-tahtalardan-kasa-numunesi",
+  "tags": {
+    "type": [],
+    "wood": [
+      "çam"
+    ],
+    "setting": [],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.3
+}

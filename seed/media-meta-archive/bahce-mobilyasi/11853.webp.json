@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/11853.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Katlanır ahşap masa ve iki bank, karo zeminli terasta",
+    "en": "Folding timber table and two benches on a tiled terrace"
+  },
+  "alt": {
+    "tr": "Karo döşeli açık alanda, çıtalı katlanır ahşap masanın iki yanında birer ahşap bank duruyor; arkada saksılı çiçekler var",
+    "en": "On a tiled outdoor area, a slatted folding timber table with a timber bench on each side, and potted flowers behind"
+  },
+  "caption": {
+    "tr": "Masa katlanabildiği için kullanılmadığında kolayca kaldırılır. İki bank masanın iki yanına yerleştirilmiş.",
+    "en": "The table folds, so it is easy to put away when not in use. The two benches are placed on either side of it."
+  },
+  "seoFilename": "katlanir-ahsap-masa-ve-iki-bank-teras-karo-zemin",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

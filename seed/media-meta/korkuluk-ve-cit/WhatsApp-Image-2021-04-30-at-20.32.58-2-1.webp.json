@@ -1,0 +1,35 @@
+{
+  "file": "WhatsApp-Image-2021-04-30-at-20.32.58-2-1.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe için sivri uçlu ahşap çit",
+    "en": "Pointed picket wooden garden fence"
+  },
+  "alt": {
+    "tr": "Çimenli bahçede sık dizilmiş, sivri uçlu açık renk ahşap çıtalardan yapılmış uzun çit; yanında taş basamaklar var",
+    "en": "Long fence of closely spaced light wooden pickets with pointed tops along a lawn, with stepping stones beside it"
+  },
+  "caption": {
+    "tr": "Bahçe sınırına çakılan sivri uçlu ahşap çit. Çıtalar sık dizildi, çit çimenlik boyunca düz bir hat izliyor.",
+    "en": "A pointed picket fence built along the edge of a garden. The slats are set close together and run in a straight line along the lawn."
+  },
+  "seoFilename": "sivri-uclu-ahsap-bahce-citi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "çimenlik",
+      "dış mekan"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

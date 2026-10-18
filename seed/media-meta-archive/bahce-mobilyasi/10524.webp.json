@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/10524.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Önden görünüşte yanık efektli koltuk, alçak bankın üzerinde",
+    "en": "Front view of a charred-effect armchair on a low bench"
+  },
+  "alt": {
+    "tr": "Kırmızımsı alçak bir bankın üzerinde duran, iki yanı yuvarlak yanık efektli ahşap koltuğun önden görünüşü",
+    "en": "A frontal view of a charred-effect timber armchair with rounded sides on a low reddish bench"
+  },
+  "caption": {
+    "tr": "Koltuk küçük ve kompakt, iki yanında yuvarlak panel var. Altındaki bank onu yerden yükseltiyor.",
+    "en": "The armchair is small and compact, with a rounded panel on each side. The bench beneath lifts it off the ground."
+  },
+  "seoFilename": "onden-gorunumlu-yanik-efektli-ahsap-koltuk-alcak-bank",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

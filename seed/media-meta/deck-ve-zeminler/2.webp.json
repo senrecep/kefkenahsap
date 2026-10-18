@@ -1,0 +1,37 @@
+{
+  "file": "2.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe katında kahverengi vernikli ahşap deck ve merdiven",
+    "en": "Brown stained wooden deck and steps at ground level"
+  },
+  "alt": {
+    "tr": "Cam sürgülü kapının önünde kahverengi ahşap deck, yan cephesi ve toprak zemine inen iki basamaklı ahşap merdiven",
+    "en": "Brown wooden deck in front of glass sliding doors, with a paneled side and a two-step wooden staircase down to the soil"
+  },
+  "caption": {
+    "tr": "Cam cepheli oturma alanının önüne yapılan ahşap deck. Yan yüzeyi de aynı ahşapla kaplandı, bahçeye iki basamaklı bir merdivenle iniliyor.",
+    "en": "A wooden deck built in front of a glass-fronted sitting area. The side is clad in the same wood, and a two-step staircase leads down to the garden."
+  },
+  "seoFilename": "bahce-ahsap-deck-ve-merdiven",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras",
+      "dış mekan",
+      "merdiven"
+    ],
+    "finish": [
+      "kahverengi koruyucu vernik",
+      "ahşap koruyucu boya"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

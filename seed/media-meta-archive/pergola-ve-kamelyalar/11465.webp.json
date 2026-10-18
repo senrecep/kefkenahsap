@@ -1,0 +1,37 @@
+{
+  "source": "Pergola ve Kamelyalar/11465.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bahçede koyu vernikli ahşap pergola, taş zemin ve kiremit rengi çatı",
+    "en": "Dark varnished garden pergola over paving with a tile-red roof behind"
+  },
+  "alt": {
+    "tr": "Taş zeminli bahçede koyu vernikli ahşap pergola, arkada kiremit rengi çatılı bina ve sarmaşıklı duvar",
+    "en": "Dark varnished timber pergola over a paved garden, with a red-roofed building and an ivy-covered wall behind"
+  },
+  "caption": {
+    "tr": "Direkler dört köşede duruyor ve kirişler duvara doğru uzanıyor. Zemine kirişlerin gölgesi düşüyor.",
+    "en": "The posts stand at the corners and the beams reach toward the wall. The beams cast shadows on the paving."
+  },
+  "seoFilename": "bahcede-koyu-vernikli-pergola-tas-zemin",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

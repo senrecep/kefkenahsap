@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/14355.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Menteşeli kahverengi piket kapı, ev girişi",
+    "en": "Hinged brown picket gate at a house entrance"
+  },
+  "alt": {
+    "tr": "Evin pencereli girişinin önünde beyaz sütunun yanında duran, menteşeli kahverengi çıtalı kapı",
+    "en": "Hinged brown slatted gate in front of the windowed entrance of a house, next to a white post"
+  },
+  "caption": {
+    "tr": "Çıtalı kapı bahçeye giriş yolunu kapatıyor. Menteşeler görünür durumda.",
+    "en": "The slatted gate closes the way into the garden. The hinges are visible."
+  },
+  "seoFilename": "menteseli-kahverengi-piket-kapi-ev-girisi",
+  "tags": {
+    "type": [
+      "bahçe kapısı",
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

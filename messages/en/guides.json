@@ -1,0 +1,37 @@
+{
+  "Guides": {
+    "title": "Guides",
+    "intro": "Short, plain guides on choosing timber, maintenance and what drives the price.",
+    "metaDescription": "Plain guides from Kefken Ahşap Dekorasyon on choosing timber, maintenance and what drives the price.",
+    "empty": "No guides are published yet. You can ask us your question on WhatsApp.",
+    "updated": "Updated",
+    "toc": "In this guide",
+    "tocCount": "{count, plural, one {# section} other {# sections}}",
+    "faq": "Frequently asked questions",
+    "author": "Author",
+    "authorRole": "Founder and master craftsman, {company}",
+    "related": "Related services",
+    "projects": "Our work on this",
+    "relatedGuides": "Related guides",
+    "ctaTitle": "Let's talk about your project",
+    "ctaText": "Send us a few photos of the space and we'll choose the right timber and approach together.",
+    "table": "Table (scrolls sideways)"
+  },
+  "WoodSamples": {
+    "title": "Wood samples",
+    "hint": "Drag or use the arrow keys to turn them",
+    "note": "The textures come from photos of our jobs.",
+    "names": {
+      "iroko": "Iroko",
+      "teak": "Teak",
+      "cam": "Treated pine (Scots pine)",
+      "thermowood": "Thermowood"
+    },
+    "facts": {
+      "iroko": "Hardwood · durable outdoors · approx. 660 kg/m³",
+      "cam": "Softwood · outdoors with treatment · approx. 510 kg/m³"
+    },
+    "source": "See the full photo",
+    "roledescription": "3D sample"
+  }
+}

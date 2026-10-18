@@ -1,0 +1,38 @@
+{
+  "source": "Merdivenler/14556.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dar bahçe geçidinde ahşap zemin ve korkuluk",
+    "en": "Timber walkway and railing in a narrow garden passage"
+  },
+  "alt": {
+    "tr": "Evin yan duvarı boyunca uzanan dar bahçe geçidinde kahverengi cilalı tahta zemin ve eğimli çaprazlı korkuluk, solda sarmaşık",
+    "en": "Brown varnished plank flooring and a sloping cross-braced railing in a narrow garden passage along the side of a house"
+  },
+  "caption": {
+    "tr": "Geçit tahtalarla döşenmiş, korkuluk yan kenarı boydan boya çerçeveliyor.",
+    "en": "The passage is boarded, and the railing frames the side along its length."
+  },
+  "seoFilename": "dar-bahce-geciti-kahverengi-ahsap-zemin-ve-korkuluk",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "yürüyüş yolu"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

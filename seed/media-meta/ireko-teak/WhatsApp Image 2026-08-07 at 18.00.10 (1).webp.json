@@ -1,0 +1,39 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 18.00.10 (1).webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede L formlu ahşap oturma bankı",
+    "en": "L-shaped wooden bench in the garden"
+  },
+  "alt": {
+    "tr": "Bitki ve çalılıkların yanında, taş ve çakıl döşemeli zeminde duran L formlu, altın kahve tonlarında ahşap bank",
+    "en": "L-shaped golden-brown wooden bench on a stone and pebble paved floor next to garden plants and shrubs"
+  },
+  "caption": {
+    "tr": "Taş ve çakıl döşemeli bahçe zeminine yerleştirilen, ince çıtalı oturma yüzeyi olan L formlu ahşap bank.",
+    "en": "An L-shaped wooden bench with a slatted seat, set on a garden floor paved with stone and pebbles."
+  },
+  "seoFilename": "bahce-l-formlu-ahsap-bank",
+  "tags": {
+    "wood": [
+      "iroko",
+      "teak"
+    ],
+    "setting": [
+      "bahçe",
+      "teras",
+      "dış mekan"
+    ],
+    "finish": [
+      "doğal ton",
+      "vernikli"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

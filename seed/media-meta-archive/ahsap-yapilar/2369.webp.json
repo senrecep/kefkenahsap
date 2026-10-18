@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/2369.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Koyu kirişli beyaz levha tavan",
+    "en": "White board ceiling with dark beams"
+  },
+  "alt": {
+    "tr": "Koyu kirişlerin arasında beyaz levha tavan ve sıvalı duvar, yapımı süren bir iç mekân",
+    "en": "White board ceiling between dark beams with a plastered wall, in an interior still being built"
+  },
+  "caption": {
+    "tr": "Kirişler tavanda paralel sıralanmış, aralarına beyaz levhalar döşenmiş. Alt kısımda sıvalı duvar ve açıklıklar görünüyor.",
+    "en": "The beams are lined up in parallel on the ceiling with white boards laid between them. A plastered wall and openings show below."
+  },
+  "seoFilename": "koyu-cati-kirisleri-ve-beyaz-levha-tavan-sivali-duvar",
+  "tags": {
+    "type": [
+      "tavan kaplaması / lambri"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

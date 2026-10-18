@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/13343.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Gri basamaklı merdivende halat korkuluk",
+    "en": "Rope-style railing on a grey-stepped staircase"
+  },
+  "alt": {
+    "tr": "Gölgeli gri basamakların yanında ince çelik halatlı korkuluk ve ahşap küpeşte, aşağıda çimlik",
+    "en": "Slim steel-cable railing and timber handrail next to shaded grey steps, with a lawn below"
+  },
+  "caption": {
+    "tr": "İnce halatlar küpeşteyi alttan taşıyor, çimlik basamakların hemen yanında.",
+    "en": "Slim cables support the handrail from below, and the lawn sits right beside the steps."
+  },
+  "seoFilename": "gri-basamakli-merdivende-halatli-korkuluk",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "merdiven"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/10672.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kaldırımda duran açık tonlu çift kapaklı bahçe dolabı",
+    "en": "Pale double-door garden cabinet on a paved area"
+  },
+  "alt": {
+    "tr": "Kırmızı kaldırım zemininde yatay tahta kaplı, çift kapaklı açık renkli uzun ahşap dolap, yanında palet ve kereste",
+    "en": "Tall pale timber cabinet with horizontal board cladding and two doors on a red-paved area"
+  },
+  "caption": {
+    "tr": "Dolabın kapakları yatay tahtalarla kaplı, üstü tek parça tahta. Yanındaki kereste yığınları işin sürdüğünü gösteriyor.",
+    "en": "The doors are clad in horizontal boards and the top is a single board. The stacked timber beside it shows work is under way."
+  },
+  "seoFilename": "kaldirimda-duran-acik-tonlu-cift-kapakli-bahce-dolabi",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

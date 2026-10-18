@@ -1,0 +1,31 @@
+{
+  "source": "Ahsap Yapilar/8928.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Üst üste istiflenmiş kereste kirişler",
+    "en": "Timber beams stacked on top of one another"
+  },
+  "alt": {
+    "tr": "Üst üste istiflenmiş, henüz işlenmemiş açık renk kereste kirişlerin yakın görünümü",
+    "en": "Close view of stacked pale unprocessed timber beams"
+  },
+  "caption": {
+    "tr": "Kirişlerin yüzeyinde lifler ve budaklar belli oluyor. Yığın bir şeritle bağlanmış.",
+    "en": "The grain and knots show on the surface of the beams. The stack is bound with a strap."
+  },
+  "seoFilename": "ust-uste-istiflenmis-islenmemis-kereste-kirisler",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [],
+    "finish": [],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.4
+}

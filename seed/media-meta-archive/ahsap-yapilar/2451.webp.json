@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/2451.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çatı kirişi, kolon ve cam pencere",
+    "en": "Roof beam, post and glazed window"
+  },
+  "alt": {
+    "tr": "Koyu ahşap çatı kirişi ve kolonun yanında geniş bir pencere, aşağıda kırmızı kiremit çatı",
+    "en": "A dark timber roof beam and post beside a wide window, with a red tile roof below"
+  },
+  "caption": {
+    "tr": "Çatı altındaki kiriş tek kolona dayanıyor. Aşağıda kırmızı kiremit çatılar ve komşu evler görünüyor.",
+    "en": "The beam under the roof rests on a single post. Red tile roofs and neighbouring houses show below."
+  },
+  "seoFilename": "cati-kirisi-kolon-ve-camli-pencere-ustunde-kiremit-cati",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.55
+}

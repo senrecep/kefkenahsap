@@ -1,0 +1,35 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 18.00.08 (3).webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Sarmaşık kafesli ahşap çiçeklik",
+    "en": "Wooden planter box with trellis"
+  },
+  "alt": {
+    "tr": "Atölyede duran, arkası kare kafesli ve içi yalıtımlı vernikli ahşap saksı kutusu.",
+    "en": "Varnished wooden planter box with an attached climbing trellis in a workshop."
+  },
+  "caption": {
+    "tr": "Bahçe ve teraslar için imal edilen sarmaşık kafesli ahşap çiçeklik. Dış mekan koşullarına uygun koruyucu boyası tamamlandı.",
+    "en": "Custom-made wooden planter box with a built-in lattice trellis, coated with protective wood finish for outdoor garden use."
+  },
+  "seoFilename": "kafesli-ahsap-ciceklik-saksi",
+  "tags": {
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "atölye"
+    ],
+    "finish": [
+      "vernikli"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

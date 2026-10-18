@@ -1,0 +1,38 @@
+{
+  "source": "Merdivenler/8196.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz boyalı çıtalı korkuluk ve çaprazlı kapı",
+    "en": "White-painted slatted railing and braced gate"
+  },
+  "alt": {
+    "tr": "Taş duvarın üstünde beyaz boyalı dikey çıtalı korkuluk ve ortasında X çaprazlı kapı, arkada tel çit ve kiremit çatılı evler",
+    "en": "White-painted vertical-slat railing on a stone wall with an X-braced gate, with a wire fence and tiled-roof houses behind"
+  },
+  "caption": {
+    "tr": "Beyaz korkuluk bahçenin kenarını kapatıyor, kapı aynı çıtalarla bütünleşiyor.",
+    "en": "The white railing closes the garden edge, and the gate matches the same slats."
+  },
+  "seoFilename": "beyaz-boyali-citali-korkuluk-ve-caprazli-kapi-tas-duvar",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

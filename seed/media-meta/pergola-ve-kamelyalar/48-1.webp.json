@@ -1,0 +1,36 @@
+{
+  "file": "48-1.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Deck zemin üzerinde yapım aşamasında ahşap kamelya iskeleti",
+    "en": "Wooden gazebo frame under construction on a deck"
+  },
+  "alt": {
+    "tr": "Ahşap deck zemin üzerinde kirişleri ve çapraz payandaları görünen, çatısı kurulmakta olan ahşap kamelya iskeleti",
+    "en": "Wooden gazebo frame with beams and cross braces being assembled on a timber deck, with a rocky slope behind"
+  },
+  "caption": {
+    "tr": "Deck zemin üzerinde kurulan kamelyanın taşıyıcı direkleri, kirişleri ve çatı makasları. Çevresinde çapraz parmaklıklı korkuluk hattı da görülüyor.",
+    "en": "Posts, beams and roof trusses of a gazebo going up on a timber deck, with a cross-braced railing running around the edge."
+  },
+  "seoFilename": "ahsap-kamelya-iskeleti-deck-uzerinde-yapim-asamasi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "deniz kenarı",
+      "açık alan",
+      "deck zemin",
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ahşap"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.86
+}

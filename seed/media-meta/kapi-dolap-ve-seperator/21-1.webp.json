@@ -1,0 +1,36 @@
+{
+  "file": "21-1.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Balkon için ahşap köpek kulübesi",
+    "en": "Wooden dog house for a balcony"
+  },
+  "alt": {
+    "tr": "Balkonda duran, yeşil shingle çatılı ve kemerli girişli açık renkli ahşap köpek kulübesi",
+    "en": "Light wooden dog house with a green shingle roof and an arched entrance, standing on a balcony"
+  },
+  "caption": {
+    "tr": "Yatay kaplama tahtalı, yeşil shingle çatılı ve kemerli girişli köpek kulübesi. Balkon zeminine yerleştirilmiş, ahşabı doğal renginde bırakılmış.",
+    "en": "Dog house with horizontal board cladding, a green shingle roof and an arched entrance, placed on a balcony floor with the wood left in its natural color."
+  },
+  "seoFilename": "balkon-ahsap-kopek-kulubesi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "balkon",
+      "dış mekan",
+      "evcil hayvan"
+    ],
+    "finish": [
+      "doğal renk",
+      "shingle çatı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.85
+}

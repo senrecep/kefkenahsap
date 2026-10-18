@@ -1,0 +1,37 @@
+{
+  "file": "img7-1.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Taş duvar üstü ahşap bahçe çiti",
+    "en": "Wooden garden fence on stone wall"
+  },
+  "alt": {
+    "tr": "Doğal taş istinat duvarı üzerine yerleştirilmiş sivri uçlu ahşap bahçe çiti.",
+    "en": "Picket wooden garden fence installed on a natural stone retaining wall."
+  },
+  "caption": {
+    "tr": "Müstakil ev bahçesinde taş duvar üzerine monte edilen sivri uçlu ahşap çit uygulaması.",
+    "en": "Pointed picket wooden fence application mounted over a stone wall in a private house garden."
+  },
+  "seoFilename": "tas-duvar-ustu-ahsap-bahce-citi",
+  "tags": {
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "villa"
+    ],
+    "finish": [
+      "emprenye"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.98
+}

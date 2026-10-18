@@ -1,0 +1,39 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14246.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ahşap deck üzerinde çatılı, bank tipi bahçe salıncağı",
+    "en": "Bench-type garden swing with a timber canopy on a deck"
+  },
+  "alt": {
+    "tr": "Ahşap deck zemin üzerinde, ahşap çerçeveden asılı, çatılı iki üç kişilik bank tipi bahçe salıncağı; arkada bina ve çimlik var",
+    "en": "A bench-type garden swing hung from a timber frame with a canopy on a wooden deck, with a building and lawn behind"
+  },
+  "caption": {
+    "tr": "Salıncak ahşap bir çerçeveden sallanıyor, üstü çatıyla kapalı. Çatı güneşten kısmen korur.",
+    "en": "The swing hangs from a timber frame and has a canopy overhead. The canopy gives partial shade."
+  },
+  "seoFilename": "ahsap-deck-uzerinde-ahsap-catili-bank-tipi-bahce-salincagi",
+  "tags": {
+    "type": [
+      "salıncak",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

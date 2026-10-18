@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14003.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaza boyalı yatay çıtalı paravan ve altında çiçeklik kutusu",
+    "en": "White-painted horizontal-slat screen with a planter box below"
+  },
+  "alt": {
+    "tr": "İç mekânda, beyaza boyalı sık yatay çıtalı paravan ve altındaki beyaz yatay tahtalı çiçeklik kutusu; arkada oturma alanı",
+    "en": "Indoors, a white-painted horizontal-slat screen with a white horizontal-board planter box beneath it and a seating area"
+  },
+  "caption": {
+    "tr": "Paravanın çıtaları geniş aralıklarla yatay sıralanmış. Çiçeklik kutusu da beyaz boyalı ve içi siyah astarlı.",
+    "en": "The slats of the screen are laid horizontally with wide gaps. The planter box is also painted white and lined in black inside."
+  },
+  "seoFilename": "beyaza-boyali-yatay-citali-paravan-cicekli-kutusu",
+  "tags": {
+    "type": [
+      "kafes / paravan",
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

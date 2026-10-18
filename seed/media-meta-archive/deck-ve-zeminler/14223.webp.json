@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14223.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz kenarında deck yağı sürülüyor",
+    "en": "Oil being applied to a deck beside the pool"
+  },
+  "alt": {
+    "tr": "Havuz çevresinde yarısı yağlanmış deck; yeşil tişörtlü bir usta diz çökmüş, koruyucu sürüyor",
+    "en": "Deck around a pool, half already oiled, with a craftsman in a green T-shirt kneeling and applying the protector"
+  },
+  "caption": {
+    "tr": "Deckin sürülen kısmı koyu kırmızı kahverengiye dönmüş, sürülmemiş kısım açık renkte kalmış. Kenarda su ızgarası var.",
+    "en": "The treated part has turned dark red-brown while the untreated part stays pale. A drain grating runs along the edge."
+  },
+  "seoFilename": "havuz-kenarinda-deck-yagi-suruluyor",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

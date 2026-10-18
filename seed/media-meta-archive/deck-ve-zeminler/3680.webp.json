@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/3680.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Havuzun üzerine taşan kavisli ahşap deck",
+    "en": "Curved timber deck overhanging a pool"
+  },
+  "alt": {
+    "tr": "Havuz suyunun üzerine kavisli bir kenarla taşan, dikmeler üzerinde açık renk ahşap deck",
+    "en": "Light timber deck on posts with a curved edge that reaches out over a swimming pool"
+  },
+  "caption": {
+    "tr": "Havuzun bir bölümünü örten, dikmeler üzerine oturan kavisli ahşap deck. Tahtalar kavis boyunca açılı döşenmiş.",
+    "en": "A curved timber deck on posts that covers part of the pool, with boards laid at angles along the curve."
+  },
+  "seoFilename": "havuz-uzerine-tasan-kavisli-ahsap-deck",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "havuz",
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

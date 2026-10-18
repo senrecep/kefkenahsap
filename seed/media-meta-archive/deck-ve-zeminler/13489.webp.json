@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/13489.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kısmen döşenmiş deck üzerinde gönye testere ve elektrik kabloları",
+    "en": "Mitre saw and power cables on a part-laid deck"
+  },
+  "alt": {
+    "tr": "Kısmen döşenmiş deck üzerinde gönye testere, mavi tezgâh ve elektrik kabloları; arkada cam kapı",
+    "en": "Mitre saw, blue stands and power cables on a part-laid deck, with a glass door behind"
+  },
+  "caption": {
+    "tr": "Kesim istasyonu deck'in üzerinde kurulmuş, böylece tahtalar yerinde kesilip döşeniyor. Duvara dayalı eski tuğla yığını görünüyor.",
+    "en": "The cutting station is set up right on the deck so boards are cut and laid on the spot. A pile of old bricks leans by the wall."
+  },
+  "seoFilename": "kismen-doseli-deck-uzerinde-gonye-testere-ve-kablolar",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

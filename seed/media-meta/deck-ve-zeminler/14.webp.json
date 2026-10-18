@@ -1,0 +1,33 @@
+{
+  "file": "14.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Deck altyapısı: ahşap kirişler ve çakıl dolgu",
+    "en": "Deck substructure: timber joists with gravel fill"
+  },
+  "alt": {
+    "tr": "Bahçede çakıl taşı dolgulu ahşap kiriş iskeleti, arkada bordür boyunca sıralanmış yuvarlak şimşir çalıları ve demir korkuluk",
+    "en": "Timber joist frame filled with gravel in a garden, with round boxwood shrubs and an iron fence behind"
+  },
+  "caption": {
+    "tr": "Deck döşemesinden önce bahçede hazırlanan ahşap kiriş iskeleti. Kirişlerin arası gri çakılla doldurulmuş, zemin düzgün ve su tahliyesine uygun.",
+    "en": "Timber joist frame laid out in a garden before the deck boards go on. The gaps between the joists are filled with grey gravel for a level base."
+  },
+  "seoFilename": "deck-alt-yapisi-ahsap-kiris-cakil-dolgu",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "villa bahçesi"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

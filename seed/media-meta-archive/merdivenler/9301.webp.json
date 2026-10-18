@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/9301.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Platformlu merdiven üstten, yanda tel çit ve pencere",
+    "en": "Stairs with a platform from above, wire fencing and a window"
+  },
+  "alt": {
+    "tr": "Üstten bakışla platformlu ahşap merdiven ve çaprazlı korkuluk; yanda tel çit ve evin penceresi",
+    "en": "Top view of timber stairs with a platform and cross-braced railing, with wire fencing and the house window beside"
+  },
+  "caption": {
+    "tr": "Platform ile basamaklar birbirine bağlanıyor, altı koyu bir tahtayla kapatılmış. Evin penceresi hemen yanında.",
+    "en": "The platform and steps are joined together, with the underside closed off by a dark board. The house window is right beside."
+  },
+  "seoFilename": "platformlu-ahsap-merdiven-ustten-tel-cit-ve-evin-penceresi",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

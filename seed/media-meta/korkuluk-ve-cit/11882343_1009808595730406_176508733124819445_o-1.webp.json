@@ -1,0 +1,36 @@
+{
+  "file": "11882343_1009808595730406_176508733124819445_o-1.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe terası için ahşap korkuluk ve kapı",
+    "en": "Wooden garden railing and gate for a deck"
+  },
+  "alt": {
+    "tr": "Ahşap teras zemininin kenarında dikey çıtalı açık renk korkuluk ve ortasında çapraz destekli küçük bahçe kapısı",
+    "en": "Light wooden railing with vertical slats along a deck edge and a small garden gate with cross bracing in the middle"
+  },
+  "caption": {
+    "tr": "Teras kenarına yapılan dikey çıtalı ahşap korkuluk. Ortadaki kapı bahçeye geçiş sağlıyor, arkada tel örgü görünüyor.",
+    "en": "A wooden railing with vertical slats built along a deck edge. The gate in the middle opens to the garden, with wire mesh fencing behind it."
+  },
+  "seoFilename": "ahsap-korkuluk-bahce-kapisi-teras",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras",
+      "müstakil ev",
+      "villa bahçesi"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

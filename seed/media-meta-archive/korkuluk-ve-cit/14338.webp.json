@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14338.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Paravanlı çiçeklik ve önünde bitkili kare ahşap çiçeklik",
+    "en": "Screen planter with a square timber planter holding a shrub in front"
+  },
+  "alt": {
+    "tr": "Çıtalı paravanlı uzun ahşap çiçeklik ve önünde alacalı yapraklı bir çalının dikildiği kare ahşap çiçeklik",
+    "en": "A long timber planter with a slatted screen and, in front of it"
+  },
+  "caption": {
+    "tr": "İki çiçeklik yan yana duruyor, öndeki küçük ve kare. Paravanın çıtaları yatay, kutular koyu vernikli.",
+    "en": "The two planters stand together, the one in front small and square. The screen slats are horizontal and the boxes are dark varnished."
+  },
+  "seoFilename": "paravanli-ciceklik-onunde-bitkili-kare-ciceklik",
+  "tags": {
+    "type": [
+      "kafes / paravan",
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

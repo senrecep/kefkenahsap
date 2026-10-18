@@ -1,0 +1,35 @@
+{
+  "file": "6aa73924-8e3f-4875-89a6-17b2c1a59d87.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Koyu renk cilalı klasik konsol dolap",
+    "en": "Classic console cabinet with dark varnish"
+  },
+  "alt": {
+    "tr": "Koyu kahverengi cilalı, iki yanı camlı, ortasında kapaklı bölmeleri olan klasik konsol dolap atölye zemininde duruyor",
+    "en": "Dark brown varnished classic console cabinet with glass sides and a hinged front compartment, standing on a workshop floor"
+  },
+  "caption": {
+    "tr": "Yenilenmiş klasik konsol dolap: koyu kahve cila, kıvrımlı üst tabla ve iki yanda camlı bölmeler.",
+    "en": "A refinished classic console cabinet with a dark brown varnish, a curved top and glass-fronted side sections."
+  },
+  "seoFilename": "koyu-cilali-klasik-konsol-dolap",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "atölye",
+      "iç mekan"
+    ],
+    "finish": [
+      "koyu kahve cila",
+      "vernik"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

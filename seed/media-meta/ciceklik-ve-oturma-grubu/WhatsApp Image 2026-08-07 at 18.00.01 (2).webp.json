@@ -1,0 +1,36 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 18.00.01 (2).webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede uzun ahşap yemek masası, bank ve çapraz arkalıklı sandalyeler",
+    "en": "Long wooden garden dining table with bench and cross-back chairs"
+  },
+  "alt": {
+    "tr": "Çakıllı bahçe zemininde tahta kaplamalı uzun ahşap masa, yanında bank ve çapraz arkalıklı sandalyeler",
+    "en": "Long plank wooden table on a gravel garden floor with a bench and cross-back chairs beside it"
+  },
+  "caption": {
+    "tr": "Bahçe için yaptığımız uzun masa, bank ve çapraz arkalıklı sandalyelerden oluşan dış mekân oturma grubu. Koyu ceviz tonundaki cila ahşabın damarlarını açıkta bırakıyor.",
+    "en": "An outdoor seating set made for a garden: a long plank table, a bench and cross-back chairs. The dark walnut-toned stain leaves the wood grain visible."
+  },
+  "seoFilename": "bahce-ahsap-masa-bank-sandalye-takimi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân",
+      "teras"
+    ],
+    "finish": [
+      "koyu ceviz tonu",
+      "vernik"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.86
+}

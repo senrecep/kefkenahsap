@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/14706.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz giriş pergolası, kafes panel ve beyaz çıtalı kapı",
+    "en": "White entrance pergola with a lattice panel and a white picket gate"
+  },
+  "alt": {
+    "tr": "Evin girişinde beyaz boyalı pergola, kafes yan panel ve beyaz çıtalı bahçe kapısı, iki yanda çalı",
+    "en": "White-painted pergola at a house entrance with a lattice panel and a white picket garden gate, with shrubs on both sides"
+  },
+  "caption": {
+    "tr": "Kapı ve pergola aynı beyaz tonla boyanmış. Kafes panel kapının hemen yanında duruyor.",
+    "en": "The gate and the pergola are painted the same white. The lattice panel stands right beside the gate."
+  },
+  "seoFilename": "beyaz-giris-pergolasi-kafes-panel-citali-kapi",
+  "tags": {
+    "type": [
+      "pergola",
+      "bahçe kapısı",
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

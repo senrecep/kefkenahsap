@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/10344.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beşik çatılı tavan, ince lambri ve yarım daire pencere",
+    "en": "Gable ceiling with fine panelling and a half-round window"
+  },
+  "alt": {
+    "tr": "Beşik çatı biçimli tavanda ortadan yelpaze gibi açılan ince lambri şeritleri, alt ucunda yarım daire bir pencere",
+    "en": "Gable-shaped ceiling with fine panelling strips fanning out from the ridge, with a half-round window at the lower edge"
+  },
+  "caption": {
+    "tr": "Şeritler tepe çizgisinden iki yana eşit açılıyor, tavan simetrik görünüyor.",
+    "en": "The strips fan out equally on both sides of the ridge, and the ceiling looks symmetrical."
+  },
+  "seoFilename": "besik-cati-bicimli-tavan-ince-lambri-yari-daire-pencere",
+  "tags": {
+    "type": [
+      "tavan kaplaması / lambri"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

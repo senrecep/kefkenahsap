@@ -1,0 +1,34 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 18.00.01.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede ahşap çit",
+    "en": "Wooden rail fence in a garden"
+  },
+  "alt": {
+    "tr": "Beyaz bahçe duvarının önünde, iki sıra yatay çıtalı ahşap çit; içinde toprak zemin ve çıplak ağaçlar var",
+    "en": "Wooden fence with two horizontal rails in front of a white garden wall, enclosing bare soil and leafless trees"
+  },
+  "caption": {
+    "tr": "Bahçenin bir köşesini ayıran, yatay tirelerle yapılmış ahşap çit. Arkada beyaz bahçe duvarı ve zeytin ağaçları görünüyor.",
+    "en": "A wooden fence with horizontal rails sets off one corner of the garden, with a white wall and olive trees behind it."
+  },
+  "seoFilename": "bahce-ahsap-cit",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

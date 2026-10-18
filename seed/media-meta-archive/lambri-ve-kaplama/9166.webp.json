@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/9166.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "İskele içinde giriş çıkıntısı ve ahşap tavan",
+    "en": "Entrance canopy with timber ceiling inside scaffolding"
+  },
+  "alt": {
+    "tr": "Koyu çerçeveli giriş çıkıntısının altında ahşap tavan kaplaması, iskele direkleri arasında",
+    "en": "Timber ceiling cladding under an entrance canopy with a dark frame, seen between scaffold poles"
+  },
+  "caption": {
+    "tr": "Giriş çıkıntısının altı ahşap tavanla kaplanmış, çevresinde koyu bir çerçeve var. Önünden iskele geçiyor.",
+    "en": "The underside of the entrance canopy is clad in a timber ceiling and framed in dark. Scaffolding runs across the view."
+  },
+  "seoFilename": "iskele-icinde-giris-cikintisi-ahsap-tavan",
+  "tags": {
+    "type": [
+      "cephe kaplaması",
+      "tavan kaplaması / lambri"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

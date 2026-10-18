@@ -1,0 +1,35 @@
+{
+  "file": "WhatsApp-Image-2021-06-27-at-20.13.46-1-2.webp",
+  "category": "deck-ve-zeminler",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe terası ahşap deck zemin kaplaması",
+    "en": "Garden patio wooden deck flooring"
+  },
+  "alt": {
+    "tr": "Bahçe terasında karo zemin yanına monte edilmiş çerçeveli ahşap deck kaplama alanı.",
+    "en": "Framed wooden decking platform installed beside tiled patio floor in a garden."
+  },
+  "caption": {
+    "tr": "Bahçe terasında karo seramik zeminle birleşen, doğal görünümlü ahşap deck zemin uygulaması.",
+    "en": "Natural outdoor wooden decking application integrated with the patio tile flooring in a garden."
+  },
+  "seoFilename": "bahce-terasi-ahsap-deck-kaplama",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras",
+      "dış mekan"
+    ],
+    "finish": [
+      "yağlı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

@@ -1,0 +1,36 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 17.59.59 (2).webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Havuz kenarı ahşap deck ve basamaklar",
+    "en": "Wooden pool deck with steps"
+  },
+  "alt": {
+    "tr": "Havuzun çevresini saran bal rengi ahşap deck, basamaklar, korkuluk ve ortasında bodur çalılarla küçük bir ağaç bulunan bahçe",
+    "en": "Honey-toned wooden deck around a pool, with steps, a railing and a small tree among clipped shrubs in the garden"
+  },
+  "caption": {
+    "tr": "Havuzun kenarına döşenen ahşap deck, bahçedeki ağaç ve çalı yatağını çevreleyip üst kattaki teras basamaklarına bağlanıyor.",
+    "en": "The wooden deck laid along the pool edge wraps around the tree and shrub bed and connects to the steps leading up to the terrace."
+  },
+  "seoFilename": "havuz-kenari-ahsap-deck-basamak",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "havuz kenarı",
+      "bahçe",
+      "teras",
+      "basamak"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

@@ -1,0 +1,36 @@
+{
+  "file": "47-1.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede çapraz korkuluklu ahşap pergola",
+    "en": "Wooden pergola with cross-braced railing in a garden"
+  },
+  "alt": {
+    "tr": "Palmiye ağaçları arasında, çapraz korkuluklu, ızgara çatılı iki bölümlü ahşap pergola ve altında ahşap bank",
+    "en": "Two-section wooden pergola with slatted roof and cross-braced railing among palm trees, with a wooden bench beneath"
+  },
+  "caption": {
+    "tr": "Taş duvarlı bir bahçede, palmiyelerin arasına kurulmuş ızgara çatılı ahşap pergola. Çevresinde çapraz çıtalı korkuluk var, altında oturma alanı yer alıyor.",
+    "en": "A wooden pergola with a slatted roof set among palm trees in a garden with a stone wall. It has a cross-braced railing around it and a seating area underneath."
+  },
+  "seoFilename": "capraz-korkuluklu-ahsap-pergola-bahce",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "açık alan",
+      "taş duvar",
+      "palmiye"
+    ],
+    "finish": [
+      "doğal ahşap rengi"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

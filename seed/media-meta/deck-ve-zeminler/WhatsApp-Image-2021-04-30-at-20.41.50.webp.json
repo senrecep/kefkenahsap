@@ -1,0 +1,35 @@
+{
+  "file": "WhatsApp-Image-2021-04-30-at-20.41.50.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede çimenlik üzerine ahşap deck zemin",
+    "en": "Wooden deck platform on a garden lawn"
+  },
+  "alt": {
+    "tr": "Çimenlik bahçede, yüksek yeşil çit önünde ağaç gövdesinin yanında kızılımsı kahverengi ahşap deck zemin",
+    "en": "Reddish-brown wooden deck platform on a garden lawn beside a tree trunk, in front of a tall green hedge"
+  },
+  "caption": {
+    "tr": "Bahçedeki çimenlik alana yerleştirilen, alçak ve düz bir ahşap deck zemin. Arkada sık bir çit ve çiçek açmış manolya ağacı görünüyor.",
+    "en": "A low, flat wooden deck laid on the garden lawn, with a dense hedge and a flowering magnolia tree behind it."
+  },
+  "seoFilename": "bahce-cimenlik-ahsap-deck-zemin",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "çimenlik",
+      "açık hava"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

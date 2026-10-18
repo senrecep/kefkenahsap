@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/5522.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kafe terasında vernikli pergola, ahşap deck, masalar ve sandalyeler",
+    "en": "Varnished pergola on a cafe terrace with a timber deck, tables and chairs"
+  },
+  "alt": {
+    "tr": "Kafe terasında kalın direkli vernikli ahşap pergola, ahşap deck, masalar, sandalyeler ve menü tahtası",
+    "en": "Varnished timber pergola with thick posts on a cafe terrace, with a timber deck, tables, chairs and a menu board"
+  },
+  "caption": {
+    "tr": "Pergolanın kalın direkleri terası bölümlere ayırıyor. Masalar deck üzerinde sıralı ve ağaçlar çevreyi gölgeliyor.",
+    "en": "The pergola's thick posts divide the terrace into sections. Tables are set out on the deck, shaded by trees around."
+  },
+  "seoFilename": "kafe-terasinda-vernikli-pergola-deck-masalar",
+  "tags": {
+    "type": [
+      "pergola",
+      "deck",
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "ticari mekân",
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

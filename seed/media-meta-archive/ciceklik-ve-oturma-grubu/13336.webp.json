@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/13336.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Mavi naylon üzerinde dikey tahtalı iki çiçeklik",
+    "en": "Two vertical-board planters on blue plastic"
+  },
+  "alt": {
+    "tr": "Mavi naylonun üzerinde, dikey tahtalı ve içleri siyah astarlı iki vernikli ahşap çiçeklik",
+    "en": "Two varnished vertical-board timber planters with black liners standing on blue plastic sheeting"
+  },
+  "caption": {
+    "tr": "Çiçeklikler köşeden bakınca derinliği gösteriyor. Dış yüzeyde vernik düzgün yayılmış.",
+    "en": "Seen from the corner, the planters show their depth. The varnish is spread evenly on the outside."
+  },
+  "seoFilename": "mavi-naylon-uzerinde-dikey-tahtali-vernikli-iki-ahsap",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

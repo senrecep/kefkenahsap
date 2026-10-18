@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/7936.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Üstten çaprazlı korkuluk ve basamaklar, yanda tel çit",
+    "en": "Cross-braced railing and steps from above, wire fencing beside"
+  },
+  "alt": {
+    "tr": "Üstten bakışla çaprazlı korkuluk ve basamaklar; solda tel çit, sağda evin duvarı",
+    "en": "Top view of a cross-braced railing and steps, with wire fencing on the left and the house wall on the right"
+  },
+  "caption": {
+    "tr": "Merdiven iki korkuluk arasında aşağı iniyor. Solda tel çit, sağda ev duvarı yer alıyor.",
+    "en": "The stairs go down between two railings. Wire fencing is on the left and the house wall on the right."
+  },
+  "seoFilename": "ustten-caprazli-korkuluk-ve-basamaklar-tel-cit-yaninda",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

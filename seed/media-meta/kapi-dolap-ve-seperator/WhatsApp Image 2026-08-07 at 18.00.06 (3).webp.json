@@ -1,0 +1,35 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 18.00.06 (3).webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Dış cephe ahşap pencere kepengi",
+    "en": "Exterior wooden window shutters"
+  },
+  "alt": {
+    "tr": "Açık renk duvarda siyah ferforje menteşeli, adaçayı yeşili çift kanatlı ahşap pencere kepengi.",
+    "en": "Sage green double-leaf wooden window shutters with black iron hinges on a white wall."
+  },
+  "caption": {
+    "tr": "Dış cephe penceresi için özel ölçüde üretilen, ferforje kovan menteşeli çift kanat ahşap kepenk montajı.",
+    "en": "Custom-built double-leaf wooden window shutters with decorative black hinges installed on an exterior facade."
+  },
+  "seoFilename": "ahsap-pencere-kepengi-montaji",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "dış mekan",
+      "cephe",
+      "pencere"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.95
+}

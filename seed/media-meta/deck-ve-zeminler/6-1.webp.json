@@ -1,0 +1,35 @@
+{
+  "file": "6-1.webp",
+  "category": "deck-ve-zeminler",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe için yükseltilmiş ahşap deck ve korkuluk",
+    "en": "Raised garden wood deck with railing"
+  },
+  "alt": {
+    "tr": "Çim bahçede basamağı ve ahşap korkuluğu bulunan açık renkli yükseltilmiş deck zemin.",
+    "en": "Light-toned raised wooden deck platform with railing and step in a grassy garden."
+  },
+  "caption": {
+    "tr": "Bahçe kotuna uygun yükseltilmiş karkas üzerine ahşap deck döşemesi, tek basamaklı giriş ve arka korkuluk imalatı tamamlandı.",
+    "en": "Completed installation of a raised garden timber deck featuring an entry step and perimeter wooden railing."
+  },
+  "seoFilename": "bahce-ahsap-deck-zemin-korkuluk",
+  "tags": {
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

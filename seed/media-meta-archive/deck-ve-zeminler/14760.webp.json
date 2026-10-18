@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/14760.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çalılar kenarında deck yolu ve bank",
+    "en": "Deck path beside shrubs, with a bench"
+  },
+  "alt": {
+    "tr": "Beyaz çakıl ve yuvarlak budanmış çalıların kenarında uzanan koyu kahverengi deck yolu; sonunda ahşap bir bank",
+    "en": "Dark brown deck path alongside white pebbles and round-clipped shrubs, with a timber bench at the end"
+  },
+  "caption": {
+    "tr": "Yol evin yan cephesi boyunca uzanıyor ve girişe ulaşıyor. Tahtalar enine döşenmiş, çit direkleri sağ tarafta sıralanıyor.",
+    "en": "The path runs along the side of the house and reaches the entrance. The boards are laid across and fence posts line the right side."
+  },
+  "seoFilename": "calilar-ve-beyaz-cakil-kenarinda-deck-yolu-ahsap-bank",
+  "tags": {
+    "type": [
+      "deck",
+      "yürüyüş yolu",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

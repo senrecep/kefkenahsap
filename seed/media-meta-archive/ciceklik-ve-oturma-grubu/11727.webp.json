@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/11727.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Geniş tahtalı uzun çiçeklik, ardında saksı",
+    "en": "Long wide-board planter with a pot behind it"
+  },
+  "alt": {
+    "tr": "Geniş yatay tahtalı uzun ahşap çiçeklik; ardında toprak saksı, sarmaşık ve taş duvar",
+    "en": "Long planter made of wide horizontal timber boards, with a terracotta pot, climbers and a stone wall behind"
+  },
+  "caption": {
+    "tr": "Çiçekliğin tahtaları kalın ve yatay. Köşelerinde alta inen kısa ayaklar var.",
+    "en": "The boards of the planter are thick and horizontal. Short feet drop down at the corners."
+  },
+  "seoFilename": "genis-yatay-tahtali-uzun-ahsap-ciceklik-saksi-ve-tas-duvar",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

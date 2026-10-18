@@ -1,0 +1,38 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 17.59.59 (1).webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Teras klima dış ünitesi için ahşap kafes kasa",
+    "en": "Wooden lattice cover for a terrace AC outdoor unit"
+  },
+  "alt": {
+    "tr": "Teras köşesinde klima dış ünitesini çevreleyen, çapraz çıtalı koyu cilalı ahşap kafes kasa",
+    "en": "Dark-stained wooden lattice cover with diagonal slats enclosing an AC outdoor unit in a terrace corner"
+  },
+  "caption": {
+    "tr": "Terasa kurulan klima dış ünitesi kasası. Çapraz çıtalı kafes yüzey hava geçirir, üniteyi dışarıdan gizler. Üst kısım tahta kaplama.",
+    "en": "A cover built for an AC outdoor unit on a terrace. The diagonal lattice lets air through while hiding the unit from view. The top is planked."
+  },
+  "seoFilename": "teras-klima-dis-unite-ahsap-kafes-kasa",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "teras",
+      "balkon",
+      "dış mekan",
+      "klima dış ünitesi"
+    ],
+    "finish": [
+      "koyu cila",
+      "vernik"
+    ],
+    "stage": [
+      "finished",
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

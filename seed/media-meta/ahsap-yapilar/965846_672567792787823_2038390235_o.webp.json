@@ -1,0 +1,36 @@
+{
+  "file": "965846_672567792787823_2038390235_o.webp",
+  "category": "ahsap-yapilar",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Kütük ev giriş sundurması ve ahşap çatı makası",
+    "en": "Log cabin porch and round timber truss"
+  },
+  "alt": {
+    "tr": "Kar manzaralı kütük evin yuvarlak ahşap direklerle taşınan sundurması ve çatı makası yapısı.",
+    "en": "Log cabin entrance porch with round timber posts and an exposed wooden truss in winter."
+  },
+  "caption": {
+    "tr": "Doğal yuvarlak tomruk sütunlar ve üçgen ahşap çatı makasıyla inşa edilen kütük ev sundurması; kış şartlarına dayanıklı dış cephe uygulaması.",
+    "en": "Log cabin entrance porch built with round timber columns and an exposed truss structure, designed for snowy winter conditions."
+  },
+  "seoFilename": "kutuk-ev-giris-sundurma-ahsap-cati",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "dış mekan",
+      "dağ evi",
+      "bahçe"
+    ],
+    "finish": [
+      "doğal",
+      "ahşap koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

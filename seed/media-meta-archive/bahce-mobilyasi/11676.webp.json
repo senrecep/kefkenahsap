@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/11676.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deck zemin üzerinde tenteli bahçe salıncağı",
+    "en": "Canopy garden swing on a deck floor"
+  },
+  "alt": {
+    "tr": "Çimin üzerine serilmiş ahşap deck zeminde, krem tenteli üç kişilik ahşap bahçe salıncağı",
+    "en": "Three-seat timber garden swing with a cream canopy on a timber deck laid over the lawn"
+  },
+  "caption": {
+    "tr": "Salıncak minderli, üstü krem renkli tenteyle örtülü. Arkada beyaz çit ve taş duvar var.",
+    "en": "The swing has cushions and a cream canopy over it. A white fence and a stone wall stand behind."
+  },
+  "seoFilename": "tenteli-ahsap-bahce-salincagi-deck-zemin-ustunde",
+  "tags": {
+    "type": [
+      "salıncak",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

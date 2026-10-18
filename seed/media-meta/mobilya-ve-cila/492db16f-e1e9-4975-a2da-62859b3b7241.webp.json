@@ -1,0 +1,36 @@
+{
+  "file": "492db16f-e1e9-4975-a2da-62859b3b7241.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Oymalı klasik vitrin, parlak cilalı",
+    "en": "Carved classic display cabinet with glossy varnish"
+  },
+  "alt": {
+    "tr": "Üstü oymalı, camlı bölmeleri ve kavisli yan camı olan, parlak cilalı klasik ahşap vitrin dolabı",
+    "en": "Classic wooden display cabinet with a carved crest, glass doors, a curved side glass and a glossy varnished finish"
+  },
+  "caption": {
+    "tr": "Oymalı tepelik ve kapak süslemeleri olan klasik vitrin. Yüzey cilalanmış, ahşap rengi sıcak bir bal tonunda.",
+    "en": "Classic display cabinet with a carved crest and door ornaments. The surface is varnished in a warm honey tone."
+  },
+  "seoFilename": "oymali-klasik-vitrin-cilali",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "ev içi",
+      "salon"
+    ],
+    "finish": [
+      "parlak cila",
+      "vernik",
+      "oyma detay"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.88
+}

@@ -1,0 +1,34 @@
+{
+  "file": "17190766_1441116899266238_4189142457133722602_n.webp",
+  "category": "kopru-ve-iskele",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Beyaz ahşap bahçe köprüsü",
+    "en": "White wooden garden bridge"
+  },
+  "alt": {
+    "tr": "Bahçe peyzajında taşların ve bitkilerin arasına yerleştirilmiş beyaz boyalı küçük ahşap köprü.",
+    "en": "A small white painted wooden footbridge placed among rocks and plants in a landscaped garden."
+  },
+  "caption": {
+    "tr": "Bahçe peyzajı için uygulanan, beyaz boyalı ve başlıklı dikmelere sahip dekoratif ahşap geçiş köprüsü.",
+    "en": "Decorative white painted wooden footbridge with capped posts, installed for garden landscaping."
+  },
+  "seoFilename": "beyaz-ahsap-bahce-koprusu",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "peyzaj"
+    ],
+    "finish": [
+      "beyaz boya"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

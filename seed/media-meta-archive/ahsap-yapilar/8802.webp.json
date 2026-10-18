@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/8802.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yatay çıtalı ahşap teras korkuluğu",
+    "en": "Horizontally slatted timber terrace railing"
+  },
+  "alt": {
+    "tr": "Çift katlı evin üst terasında yatay çıtalı ahşap korkuluk ve çatı; alt katta panjurlu pencereler",
+    "en": "Horizontally slatted timber railing and roof on the upper terrace of a two-storey house, with shuttered windows below"
+  },
+  "caption": {
+    "tr": "Korkuluk üç sıra yatay çıtadan oluşuyor, çatı koyu ahşap. Alt katta panjur ve mavi bantlı pencere kenarı var.",
+    "en": "The railing is made of three rows of horizontal slats and the roof is dark timber. The ground floor has shutters and a window edge with blue tape."
+  },
+  "seoFilename": "cift-katli-evde-yatay-citali-ahsap-teras-korkulugu-ve-cati",
+  "tags": {
+    "type": [
+      "sundurma / saçak / carport",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

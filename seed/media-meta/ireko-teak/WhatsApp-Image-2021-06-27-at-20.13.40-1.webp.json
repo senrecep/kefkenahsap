@@ -1,0 +1,37 @@
+{
+  "file": "WhatsApp-Image-2021-06-27-at-20.13.40-1.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Çıtalı ahşap yemek masası ve bank takımı",
+    "en": "Slatted wooden dining table and bench set"
+  },
+  "alt": {
+    "tr": "Gri beton zeminde duran, üst yüzeyi ince çıtalardan oluşan bal rengi ahşap masa ve yanında çıtalı bir bank",
+    "en": "Honey-toned wooden table with a slatted top and a matching slatted bench on a gray concrete floor"
+  },
+  "caption": {
+    "tr": "Çıtalı tablaya sahip ahşap masa ve aynı çizgide yapılmış bank, teslim öncesi atölyede çekildi.",
+    "en": "A slatted-top wooden table and a matching bench, photographed in the workshop before delivery."
+  },
+  "seoFilename": "citali-ahsap-masa-ve-bank-takimi",
+  "tags": {
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "atölye",
+      "bahçe mobilyası"
+    ],
+    "finish": [
+      "vernikli",
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

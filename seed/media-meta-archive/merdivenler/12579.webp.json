@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/12579.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Grileşmiş eski merdiven basamakları",
+    "en": "Old greyed stair treads up close"
+  },
+  "alt": {
+    "tr": "Grileşmiş, çatlamış eski ahşap merdiven basamakları ve korkuluk, yakın çekim",
+    "en": "Close-up of greyed, cracked old timber stair treads and railing"
+  },
+  "caption": {
+    "tr": "Basamakların yüzeyi grileşmiş ve çatlamış. Bir basamak yerinden oynamış.",
+    "en": "The tread surfaces have greyed and cracked. One tread has shifted out of place."
+  },
+  "seoFilename": "grilesmis-eski-merdiven-basamaklari-yakin",
+  "tags": {
+    "type": [
+      "merdiven"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

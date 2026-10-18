@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14334.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çakıl dolgulu deck alt çıtaları",
+    "en": "Deck battens set in a gravel bed"
+  },
+  "alt": {
+    "tr": "Cam kapıdan çimene doğru uzanan, aralarına çakıl serilmiş deck alt çıtaları; yerde mavi bir hortum",
+    "en": "Deck sub-battens running from a glass door towards the lawn with gravel spread between them and a blue hose on the ground"
+  },
+  "caption": {
+    "tr": "Çıtalar çakıl yatağının içinde düzgün sıralanmış. Kenarda uzun bir çalı sırası duruyor.",
+    "en": "The battens are set in order within the gravel bed. A tall row of shrubs stands along the side."
+  },
+  "seoFilename": "cakil-dolgulu-deck-alt-citalari-mavi-hortum",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

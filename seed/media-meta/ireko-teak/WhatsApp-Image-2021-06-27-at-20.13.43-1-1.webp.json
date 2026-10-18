@@ -1,0 +1,37 @@
+{
+  "file": "WhatsApp-Image-2021-06-27-at-20.13.43-1-1.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Teras üzerinde ahşap oval masa ve katlanır sandalyeler",
+    "en": "Oval wooden table and reclining chairs on a deck"
+  },
+  "alt": {
+    "tr": "Ahşap zeminli terasta ortasında şemsiye deliği olan oval masa ve etrafında çıtalı, ayarlanabilir sırtlı sandalyeler",
+    "en": "Oval slatted table with a parasol hole and slatted reclining chairs on a wooden deck terrace beside a green hedge"
+  },
+  "caption": {
+    "tr": "Ahşap zeminli terasta oval masa ve sırt açısı ayarlanabilen sandalye takımı. Ahşabın kızıl kahve tonu yenilenmiş yüzeyde net görülüyor.",
+    "en": "An oval table and a set of reclining chairs on a wooden deck terrace. The reddish-brown tone of the wood shows clearly on the refreshed surface."
+  },
+  "seoFilename": "teras-oval-ahsap-masa-sandalye-takimi",
+  "tags": {
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "teras",
+      "bahçe mobilyası",
+      "dış mekan"
+    ],
+    "finish": [
+      "vernik"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

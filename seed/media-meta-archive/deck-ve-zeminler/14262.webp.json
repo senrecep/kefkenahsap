@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/14262.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çalı ve çakıl şeridi boyunca deck yolu",
+    "en": "Deck path along shrubs and a pebble strip"
+  },
+  "alt": {
+    "tr": "Evin yanında, yuvarlak budanmış çalılar ve beyaz çakıl şeridi boyunca uzanan koyu kahverengi deck yolu",
+    "en": "Dark brown deck path beside a house, running along round-clipped shrubs and a strip of white pebbles"
+  },
+  "caption": {
+    "tr": "Tahtalar yola enine döşenmiş ve yüzey nemli parlıyor. Yol evin girişine doğru daralarak ilerliyor.",
+    "en": "The boards are laid across the path and the damp surface shines. The path narrows towards the entrance of the house."
+  },
+  "seoFilename": "cali-ve-beyaz-cakil-seridi-boyunca-deck-yolu",
+  "tags": {
+    "type": [
+      "deck",
+      "yürüyüş yolu"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

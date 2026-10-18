@@ -1,0 +1,33 @@
+{
+  "source": "Merdivenler/8825.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Krem duvar önünde ahşap bahçe merdiveni",
+    "en": "Timber garden staircase against a cream wall"
+  },
+  "alt": {
+    "tr": "Krem renkli bahçe duvarına yaslanan, çapraz korkuluklu ahşap merdiven ve sol yanda çimenlik",
+    "en": "Cross-braced timber staircase set against a cream garden wall, with a lawn to its left"
+  },
+  "caption": {
+    "tr": "Alt bahçeden duvar üstündeki seviyeye çıkan ahşap merdiven. Basamaklar açık, korkuluklar çapraz dikmeli.",
+    "en": "A timber staircase leading from the lower garden to the level above the wall, with open treads and cross-braced railings."
+  },
+  "seoFilename": "krem-duvar-onunde-ahsap-bahce-merdiveni",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

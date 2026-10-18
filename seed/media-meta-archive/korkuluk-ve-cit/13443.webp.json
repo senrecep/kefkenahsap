@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/13443.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz duvar boyunca L biçimli piket çit",
+    "en": "L-shaped picket fence along a white wall"
+  },
+  "alt": {
+    "tr": "Beyaz duvarın köşesinde L biçiminde uzanan çıtalı ahşap çit, önünde testere ve kereste parçaları",
+    "en": "L-shaped slatted timber fence in the corner of a white wall, with a circular saw and timber pieces in front"
+  },
+  "caption": {
+    "tr": "Çit köşeyi dönüyor, duvar dibindeki sıra servi fidanlarıyla devam ediyor.",
+    "en": "The fence turns the corner, and a row of young cypress trees continues along the wall."
+  },
+  "seoFilename": "beyaz-duvar-boyunca-l-bicimli-piket-cit",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

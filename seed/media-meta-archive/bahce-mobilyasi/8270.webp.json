@@ -1,0 +1,36 @@
+{
+  "source": "Ireko-Teak/8270.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deck üzerinde oval masa ve iki sandalye",
+    "en": "Oval table and two chairs on a deck"
+  },
+  "alt": {
+    "tr": "Koyu ahşap deck üzerinde oval masa ve iki katlanır ahşap sandalye",
+    "en": "Oval table and two folding timber chairs on a dark timber deck"
+  },
+  "caption": {
+    "tr": "Masa oval ve açılır tip görünümde. Sandalyeler çıtalı, zemin koyu tonlu deck.",
+    "en": "The table is oval and looks extendable. The chairs are slatted and the floor is dark-toned decking."
+  },
+  "seoFilename": "ahsap-deck-uzerinde-oval-masa-iki-katlanir-sandalye",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

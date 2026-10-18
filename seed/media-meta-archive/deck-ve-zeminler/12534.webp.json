@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12534.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cilalı yükseltilmiş deck köşesi ve toprak zemin",
+    "en": "Varnished raised deck corner over bare soil"
+  },
+  "alt": {
+    "tr": "Parlak cilalı turuncu kahverengi yükseltilmiş deck köşesi, yan kaplama ve çevresinde toprak zemin",
+    "en": "Glossy varnished orange-brown raised deck corner with side cladding and bare soil around it"
+  },
+  "caption": {
+    "tr": "Deck uzun kenar boyunca yükseliyor ve yan yüzeyi kapalı. Etrafındaki toprak yeni işten sonra düzeltilmeyi bekliyor.",
+    "en": "The deck runs a long way along its edge with the side closed in. The surrounding soil waits to be dressed after the job."
+  },
+  "seoFilename": "cilali-yukseltilmis-deck-kosesi-ve-toprak-zemin",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

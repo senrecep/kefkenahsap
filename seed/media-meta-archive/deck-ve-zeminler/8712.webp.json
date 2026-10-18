@@ -1,0 +1,33 @@
+{
+  "source": "Ireko-Teak/8712.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Açık tonlu tahtalar ve üzerine konmuş profil parçaları",
+    "en": "Pale boards with loose profile pieces on top"
+  },
+  "alt": {
+    "tr": "Açık krem tonlu ahşap deck tahtalarının üzerine bırakılmış iki profilli kenar parçası ve köşede koyu bir parça",
+    "en": "Pale cream timber deck boards with two profiled edge pieces resting on them and a darker piece in the corner"
+  },
+  "caption": {
+    "tr": "Tahtaların üstünde kenar profili parçaları duruyor, montaj için hazır. Yüzey henüz işlem görmemiş.",
+    "en": "Edge profile pieces rest on the boards, ready for fitting. The surface has not been treated yet."
+  },
+  "seoFilename": "acik-tonlu-tahtalar-uzerine-konmus-profil-parcalari",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

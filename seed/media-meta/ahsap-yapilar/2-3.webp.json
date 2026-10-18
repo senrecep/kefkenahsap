@@ -1,0 +1,33 @@
+{
+  "file": "2-3.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bordo kaplamalı çatıda kiremit dizimi",
+    "en": "Tile laying on a burgundy-covered roof"
+  },
+  "alt": {
+    "tr": "Bordo kaplamalı çatı yüzeyinde kenar boyunca dizilmiş kiremitler, yanda beyaz baca ve arkada sokak",
+    "en": "Burgundy-covered roof with clay tiles lined along the edge, a white chimney beside them and a street behind"
+  },
+  "caption": {
+    "tr": "Çatı yüzeyi bordo renkte kaplanmış, kenar boyunca kiremit dizimi sürüyor. Birkaç kiremit henüz yerine konmamış.",
+    "en": "The roof surface is covered in burgundy, and tile laying continues along the edge. A few tiles have not yet been set in place."
+  },
+  "seoFilename": "bordo-kaplamali-cati-kiremit-dizimi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "çatı"
+    ],
+    "finish": [
+      "kiremit"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.6
+}

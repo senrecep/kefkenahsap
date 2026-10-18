@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12466.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölye fayansında kırmızı-kahve boyalı kafes panelleri",
+    "en": "Red-brown painted lattice panels on the workshop tiles"
+  },
+  "alt": {
+    "tr": "Atölyede fayans zemine serilmiş, kırmızı-kahve boyalı kare gözlü ahşap kafes panelleri; yanda bir kalas, arkada alet ve kapı",
+    "en": "Red-brown painted square-mesh timber lattice panels laid on the tiled workshop floor"
+  },
+  "caption": {
+    "tr": "Kafeslerin çıtaları çapraz bindirmeli birleştirilmiş, boyası kuru. Paneller uzun bir L biçiminde yan yana serilmiş.",
+    "en": "The lattice slats are joined in crossed overlaps and the paint is dry. The panels are laid next to each other in a long L shape."
+  },
+  "seoFilename": "atolye-fayansinda-kirmizi-kahve-boyali-kafes-panelleri",
+  "tags": {
+    "type": [
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

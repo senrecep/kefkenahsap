@@ -1,0 +1,39 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14337.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çıtalı paravanlı çiçeklik, solda ahşap bank",
+    "en": "Slatted planter screen with a timber bench at left"
+  },
+  "alt": {
+    "tr": "Dükkan önünde çıtalı paravanlı ahşap çiçeklik; solda koyu kahve ahşap bank, sağ altta alacalı yapraklı küçük bir çalı",
+    "en": "Timber planter with a slatted screen in front of a shop, a dark-brown bench at left and a small variegated shrub at right"
+  },
+  "caption": {
+    "tr": "Paravan yatay çıtalarla örülmüş, iki parçadan oluşuyor. Bank ve çiçeklik aynı koyu kahve vernik tonunda.",
+    "en": "The screen is made of horizontal slats in two pieces. The bench and the planter share the same dark-brown varnish tone."
+  },
+  "seoFilename": "citali-paravanli-ciceklik-solda-ahsap-bank",
+  "tags": {
+    "type": [
+      "kafes / paravan",
+      "çiçeklik / saksı",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

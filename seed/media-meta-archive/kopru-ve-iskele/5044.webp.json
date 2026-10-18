@@ -1,0 +1,40 @@
+{
+  "source": "Kopru ve Iskele/5044.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Göle paralel uzanan yeni gezinti yolu, çimde direkler",
+    "en": "New walkway parallel to the lake with posts on the lawn"
+  },
+  "alt": {
+    "tr": "Çimlikte göl kıyısına paralel uzanan açık renk yeni tahta yol; kenarında korkuluk ve çapraz başlıklı yüksek direkler",
+    "en": "New light timber walkway parallel to the lakeshore across the lawn, with a railing and tall posts with cross-shaped heads"
+  },
+  "caption": {
+    "tr": "Yol çimin üstünde hafif yükseltilmiş. Direkler yol boyunca eşit aralıkla sıralanıyor.",
+    "en": "The walkway is raised slightly above the grass. The posts stand at even intervals along its length."
+  },
+  "seoFilename": "goele-paralel-yeni-gezinti-yolu-cimde-direkler",
+  "tags": {
+    "type": [
+      "iskele",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

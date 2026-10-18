@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/13040.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yeşil kenarlı girişli turuncu tonlu köpek kulübesi",
+    "en": "Orange-toned dog house with a green-edged entrance"
+  },
+  "alt": {
+    "tr": "Giriş çerçevesi yeşile boyalı, turuncu tonlu vernikli köpek kulübesi; çatlak beton zemin üzerinde",
+    "en": "Orange-toned varnished dog house with its entrance frame painted green, standing on cracked concrete"
+  },
+  "caption": {
+    "tr": "Kulübe yeşil shingle çatılı, yatay tahtalar turuncu tonda. Arkada tel örgü ve bir dolap görünüyor.",
+    "en": "The house has a green shingle roof and the horizontal boards are orange in tone. Wire mesh and a cabinet show behind."
+  },
+  "seoFilename": "turuncu-tonlu-vernikli-yesil-kenarli-girisli-kopek-kulubesi",
+  "tags": {
+    "type": [
+      "köpek kulübesi"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

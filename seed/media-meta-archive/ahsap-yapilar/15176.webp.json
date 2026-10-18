@@ -1,0 +1,33 @@
+{
+  "source": "Ahsap Yapilar/15176.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yeşil shingle çatı kaplaması ve sırt çıtaları",
+    "en": "Green shingle roofing and ridge battens"
+  },
+  "alt": {
+    "tr": "Yukarıdan görünen yeşil shingle çatı kaplaması ile köşelerde açık renkli ahşap sırt çıtaları",
+    "en": "Green shingle roof covering seen from above, with light timber ridge battens along the hips"
+  },
+  "caption": {
+    "tr": "Çatı yüzeyi yeşil, balık pulu biçimli shingle ile kaplanmış. Eğim birleşimlerinde açık renk ahşap çıtalar uzanıyor.",
+    "en": "The roof surface is covered in green fish-scale shingles. Light timber battens run along the joints between slopes."
+  },
+  "seoFilename": "yesil-shingle-cati-kaplamasi-ve-sirt-citalari",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.4
+}

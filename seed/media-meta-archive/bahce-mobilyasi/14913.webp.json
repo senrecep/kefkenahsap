@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/14913.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çapraz ayaklı büyük rustik masa",
+    "en": "Large rustic table with cross-braced legs"
+  },
+  "alt": {
+    "tr": "Sergi alanında duran, ayakları çapraz kirişle bağlanmış büyük rustik ahşap masa",
+    "en": "Large rustic timber table in a showroom, its legs braced with crossed beams"
+  },
+  "caption": {
+    "tr": "Masanın ayakları çapraz kirişlerle birbirine bağlanmış. Arkada tuğla duvar görünüyor.",
+    "en": "The legs are tied together with crossed beams. A brick wall is visible behind."
+  },
+  "seoFilename": "capraz-ayakli-buyuk-rustik-ahsap-masa-sergi-alani",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

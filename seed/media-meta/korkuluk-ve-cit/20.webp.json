@@ -1,0 +1,36 @@
+{
+  "file": "20.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe için kafesli ahşap çit",
+    "en": "Wooden garden fence with lattice panels"
+  },
+  "alt": {
+    "tr": "Site bahçesinde çim alanı çevreleyen, üstü kafesli ve altı dikey çıtalı açık yeşilimsi ahşap çit",
+    "en": "Light green-tinted wooden fence with lattice top and vertical slats along a lawn in a residential garden"
+  },
+  "caption": {
+    "tr": "Beton kaide üzerine kurulmuş, üst bölümü kafes, alt bölümü dikey çıtalı ahşap bahçe çiti. Köşede kafesli bir panel çiti dönüyor.",
+    "en": "Wooden garden fence on a concrete base, with a lattice upper section and vertical slats below. A lattice panel turns the corner."
+  },
+  "seoFilename": "kafesli-ahsap-bahce-citi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "site",
+      "dış mekan"
+    ],
+    "finish": [
+      "emprenye görünümlü",
+      "açık yeşilimsi ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

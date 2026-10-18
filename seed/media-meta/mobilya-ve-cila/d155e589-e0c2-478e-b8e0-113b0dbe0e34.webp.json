@@ -1,0 +1,37 @@
+{
+  "file": "d155e589-e0c2-478e-b8e0-113b0dbe0e34.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Kasetli kapaklı ahşap konsol dolabı",
+    "en": "Wooden cabinet with paneled doors"
+  },
+  "alt": {
+    "tr": "Pencere önünde, parke zeminde duran koyu kahverengi, kasetli çift kapaklı ve profilli kaideli eski tarz ahşap dolap",
+    "en": "Dark brown wooden cabinet with paneled double doors and a molded base, standing on a parquet floor in front of a window"
+  },
+  "caption": {
+    "tr": "Kasetli kapakları ve profilli kaidesiyle klasik çizgili ahşap dolap. Üst tablası parlak vernikli, gövdesi koyu tonda.",
+    "en": "A classic-style wooden cabinet with paneled doors and a molded base. The top has a glossy varnish and the body a darker tone."
+  },
+  "seoFilename": "kasetli-kapakli-ahsap-dolap",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "ev içi",
+      "oturma odası",
+      "parke zemin"
+    ],
+    "finish": [
+      "vernik",
+      "koyu ton",
+      "parlak tabla"
+    ],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/6086.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çit kapısına uzanan çimde kırmızı-kahve basamak plakaları",
+    "en": "Red-brown stepping slabs on the lawn leading to the hedge gate"
+  },
+  "alt": {
+    "tr": "Sık bir çit ve kapıya doğru uzanan çimde kırmızımsı ahşap basamak plakaları; en büyüğü ön planda",
+    "en": "Reddish timber stepping slabs on the lawn leading to a dense hedge and gate, the largest slab in the foreground"
+  },
+  "caption": {
+    "tr": "Plakalar çitin kapısına kadar düz gidiyor. Yolun iki yanında çim ve yeşil çit var.",
+    "en": "The slabs run straight to the gate in the hedge. Lawn and green hedge flank the path on both sides."
+  },
+  "seoFilename": "cit-kapisina-uzanan-cimde-kirmizi-kahve-plakalar",
+  "tags": {
+    "type": [
+      "yürüyüş yolu"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

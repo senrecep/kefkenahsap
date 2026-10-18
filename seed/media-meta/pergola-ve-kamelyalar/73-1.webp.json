@@ -1,0 +1,36 @@
+{
+  "file": "73-1.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Villa cephesine bitişik beyaz boyalı pergola",
+    "en": "White painted pergola attached to a villa façade"
+  },
+  "alt": {
+    "tr": "Kiremit çatılı, sarı cepheli bir villanın teras boyunca uzanan, duvara bitişik beyaz boyalı ahşap pergola",
+    "en": "White painted wooden pergola attached to the wall of a yellow villa with a tiled roof, running along the terrace"
+  },
+  "caption": {
+    "tr": "Villanın teras cephesine duvardan destekli olarak yapılan beyaz boyalı pergola. Kirişler sık aralıklı, kolonlar sade bırakıldı.",
+    "en": "A white painted pergola built along the villa's terrace, fixed to the wall. The beams are closely spaced and the posts kept simple."
+  },
+  "seoFilename": "villa-terasi-beyaz-boyali-ahsap-pergola",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "villa",
+      "teras",
+      "dış mekan",
+      "bahçe"
+    ],
+    "finish": [
+      "beyaz boya"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

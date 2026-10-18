@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/12246.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kirişler arasında daire testere ve kablolar",
+    "en": "Circular saw and cables between the joists"
+  },
+  "alt": {
+    "tr": "Dar toprak alanda uzun kirişler arasında duran daire testere ve dolaşmış elektrik kabloları",
+    "en": "A circular saw and tangled power cables between long joists in a narrow strip of soil"
+  },
+  "caption": {
+    "tr": "Kirişler duvar kenarındaki dar boşluğa serilmiş ve kesim işi yerinde yapılıyor. Ucunda eski bir deck basamağı görünüyor.",
+    "en": "The joists are laid in the narrow gap along the wall and cutting is done on site. An old deck step shows at the end."
+  },
+  "seoFilename": "kirisler-arasinda-daire-testere-ve-kablolar",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

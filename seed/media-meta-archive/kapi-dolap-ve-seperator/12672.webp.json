@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/12672.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz duvar dibinde tek eğimli kırmızı çatılı alçak dolap",
+    "en": "Low cabinet with a single-pitch red roof against a white wall"
+  },
+  "alt": {
+    "tr": "Taş kaplı beyaz duvarın dibinde beton sekide duran, yatay tahtalı, tek eğimli kırmızı çatılı alçak ahşap dolap",
+    "en": "Low timber cabinet with horizontal boards and a single-pitch red roof on a concrete ledge against a white wall"
+  },
+  "caption": {
+    "tr": "Dolabın çatısı duvara doğru yükseliyor, yağmur suyunu dışa akıtıyor. Yatay tahtalar kızıl kahve cilalı.",
+    "en": "The roof rises toward the wall and sheds rain outward. The horizontal boards carry a red-brown finish."
+  },
+  "seoFilename": "beyaz-duvar-dibinde-tek-egimli-kirmizi-catili-alcak-dolap",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

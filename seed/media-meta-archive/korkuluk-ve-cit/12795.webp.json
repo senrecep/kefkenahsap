@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/12795.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Terasta köşeye yerleştirilmiş kırmızı-kahve sivri çıtalı alçak ahşap çit",
+    "en": "Low red-brown pointed-slat timber fence set in a terrace corner"
+  },
+  "alt": {
+    "tr": "Siyah karo teras köşesinde, saksı bitkilerinin yanında duran kırmızı-kahve vernikli sivri çıtalı alçak ahşap çit",
+    "en": "A low red-brown varnished pointed-slat timber fence beside potted plants in a corner of a black-tiled terrace"
+  },
+  "caption": {
+    "tr": "Çit duvarın köşesine yaslanmış, çıtalar sivri ve eşit boyda. Önünde terakota ve beyaz saksılar var.",
+    "en": "The fence leans into the corner of the wall and the slats are pointed and equal in length. There are terracotta and white pots in front."
+  },
+  "seoFilename": "terasta-koseye-yerlestirilmis-kirmizi-kahve-sivri-citali-cit",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

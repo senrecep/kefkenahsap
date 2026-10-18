@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/5857.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Geniş gri deck ve köşedeki ahşap kasa",
+    "en": "Wide grey deck and corner timber box"
+  },
+  "alt": {
+    "tr": "Taş duvar ve cam kapı yanında geniş, gri tonlu deck; köşede yatay tahtalı ahşap kasa ve kapının önünde kalın çerçeve",
+    "en": "Wide grey-toned deck beside a stone wall and a glass door, with a horizontal-board timber box in the corner"
+  },
+  "caption": {
+    "tr": "Deckin ön kenarı geniş bir kenar tahtasıyla kapatılmış. Tahtalar kapıya doğru uzun yönde ilerliyor.",
+    "en": "The front edge of the deck is closed with a wide fascia board. The boards run lengthwise towards the door."
+  },
+  "seoFilename": "tas-duvar-ve-cam-kapi-yaninda-genis-gri-deck-ahsap-kasa",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

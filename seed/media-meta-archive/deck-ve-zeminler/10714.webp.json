@@ -1,0 +1,33 @@
+{
+  "source": "Deck ve Zeminler/10714.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dökülmüş boyanın altında çıplak ahşap",
+    "en": "Bare timber under flaking paint"
+  },
+  "alt": {
+    "tr": "Dökülmüş beyaz boyası altında çıplak ahşap görünen pencere veya söve yüzeyi, yakın çekim",
+    "en": "Close-up of a window or frame surface with bare timber showing under peeling white paint"
+  },
+  "caption": {
+    "tr": "Beyaz boya kabarıp soyulmuş, altındaki açık renkli ahşap ortaya çıkmış. Onarım öncesinde çekilmiş bir kare.",
+    "en": "The white paint has blistered and peeled, exposing light timber beneath. A shot taken before repair."
+  },
+  "seoFilename": "dokulmus-beyaz-boyasi-altinda-ciplak-ahsap-gorunen-pencere",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.3
+}

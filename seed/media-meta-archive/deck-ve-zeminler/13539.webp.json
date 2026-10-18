@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/13539.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Parlak cilalı turuncu ve kahverengi tonlu deck tahtaları",
+    "en": "Glossy varnished deck boards in orange and brown tones"
+  },
+  "alt": {
+    "tr": "Parlak cilalı, turuncu ve kahverengi tonlu deck tahtaları, kenarda duvar ve çalılar",
+    "en": "Glossy varnished deck boards in orange and brown tones, with a wall and shrubs at the edge"
+  },
+  "caption": {
+    "tr": "Tahtalar arasındaki ton farkı doğal damardan geliyor ve cila bunu belirginleştirmiş. Deck, duvar dibindeki dar bahçeyi dolduruyor.",
+    "en": "The tone differences between boards come from the natural grain and the varnish brings them out. The deck fills the narrow garden at the foot of the wall."
+  },
+  "seoFilename": "parlak-cilali-turuncu-ve-kahverengi-tonlu-deck-tahtalari",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

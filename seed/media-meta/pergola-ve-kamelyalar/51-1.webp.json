@@ -1,0 +1,37 @@
+{
+  "file": "51-1.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Deniz kenarında ahşap kamelya imalatı",
+    "en": "Seaside wooden gazebo installation"
+  },
+  "alt": {
+    "tr": "Deniz kıyısında, çift çatılı ve ahşap korkuluklu sekizgen kamelya.",
+    "en": "Hexagonal wooden gazebo with a two-tier roof installed by the sea."
+  },
+  "caption": {
+    "tr": "Deniz kenarındaki teras alanına kurduğumuz çift kademeli fener çatılı ahşap kamelya montajı tamamlandı.",
+    "en": "Completed installation of a two-tiered wooden gazebo placed on a seaside terrace."
+  },
+  "seoFilename": "deniz-kenari-ahsap-kamelya",
+  "tags": {
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "deniz kenarı",
+      "teras",
+      "bahçe"
+    ],
+    "finish": [
+      "şeffaf emprenye"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

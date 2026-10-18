@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/11725.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Uzun çiçeklik, arkada taş duvar ve saksı",
+    "en": "Long planter with a stone wall and pot behind"
+  },
+  "alt": {
+    "tr": "Teras kenarında uzanan, içi siyah astarlı uzun ahşap çiçeklik; arkada taş duvar ve toprak saksı",
+    "en": "Long timber planter with a black liner along a terrace edge, with a stone wall and terracotta pot behind"
+  },
+  "caption": {
+    "tr": "Çiçeklik kalın tahtalardan, köşede iki parça birleşiyor. Doğal tonlu cila tahtanın damarını gösteriyor.",
+    "en": "The planter is made of thick boards, with two parts meeting at the corner. A natural-toned finish shows the grain."
+  },
+  "seoFilename": "uzun-ahsap-ciceklik-siyah-astar-tas-duvar-ve-saksi-arkada",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,36 @@
+{
+  "file": "19.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede çerçeveli ahşap deck platformu",
+    "en": "Framed wooden deck platform in the garden"
+  },
+  "alt": {
+    "tr": "Çim zemin üzerinde çerçeveli, kahverengi ahşap deck platformu; arkada muz yaprakları, kaktüs ve beyaz silindir yastık",
+    "en": "Framed brown wooden deck platform on a lawn, with banana leaves, a cactus and a white bolster cushion behind"
+  },
+  "caption": {
+    "tr": "Bahçedeki çimlerin üzerine yerleştirilmiş, kenarları çerçeveyle çevrilmiş kare ahşap deck platformu.",
+    "en": "A square wooden deck platform with a framed border, set directly on the garden lawn."
+  },
+  "seoFilename": "bahce-ahsap-deck-platformu",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "çim zemin",
+      "dış mekan"
+    ],
+    "finish": [
+      "vernikli",
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.86
+}

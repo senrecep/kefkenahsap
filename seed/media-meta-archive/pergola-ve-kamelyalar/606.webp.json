@@ -1,0 +1,41 @@
+{
+  "source": "Pergola ve Kamelyalar/606.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Parkta kamelya iskeleti ve korkuluklu deck, çevrede piknik masaları",
+    "en": "Park gazebo frame with a railed deck and picnic tables around"
+  },
+  "alt": {
+    "tr": "Parkta kamelya iskeleti ve korkuluklu deck, çevrede piknik masaları ve çimlik, arkada bir kamelya daha",
+    "en": "Park gazebo frame with a railed deck, picnic tables and lawn around, and another gazebo in the background"
+  },
+  "caption": {
+    "tr": "Kirişler tepede sivri bir çatı kuruyor, deck çimlikten hafif yükseltilmiş. Çevrede oturma alanları dağılmış.",
+    "en": "The rafters build a pointed roof at the top and the deck is slightly raised above the lawn. Seating areas are spread around."
+  },
+  "seoFilename": "parkta-kamelya-iskeleti-korkuluklu-deck-piknik",
+  "tags": {
+    "type": [
+      "kamelya",
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

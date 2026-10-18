@@ -1,0 +1,36 @@
+{
+  "file": "36.webp",
+  "category": "merdivenler",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Dış mekân ahşap merdiven korkuluğu",
+    "en": "Outdoor wooden stair railing"
+  },
+  "alt": {
+    "tr": "Taş basamaklı dış mekân merdiveni kenarında çapraz motifli emprenyeli ahşap korkuluk.",
+    "en": "Pressure-treated wooden cross railing along outdoor stone stairs."
+  },
+  "caption": {
+    "tr": "Dış mekân taş merdiven hattı için emprenyeli çam keresteden imal ettiğimiz çapraz desenli ahşap tırabzan ve korkuluk uygulaması.",
+    "en": "Cross-pattern wooden railing built from pressure-treated pine for an outdoor stone staircase."
+  },
+  "seoFilename": "ahsap-merdiven-korkuluk-emprenyeli-cam",
+  "tags": {
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "dış mekân",
+      "bahçe"
+    ],
+    "finish": [
+      "emprenye"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

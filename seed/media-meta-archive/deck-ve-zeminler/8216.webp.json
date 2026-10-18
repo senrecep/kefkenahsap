@@ -1,0 +1,40 @@
+{
+  "source": "Deck ve Zeminler/8216.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Villa havuzunun önünde çime uzanan deck",
+    "en": "Deck reaching into the lawn in front of a villa pool"
+  },
+  "alt": {
+    "tr": "Havuz kenarında çimlere doğru açılan turuncu kahve deck, arkada sarı boyalı iki katlı evler ve masa takımı",
+    "en": "Orange-brown deck by a pool stretching into the lawn, with yellow-rendered two-storey houses and a dining set behind"
+  },
+  "caption": {
+    "tr": "Deck havuzun kenarından çime doğru açılıyor. Arkada evin giriş katındaki oturma alanı görünüyor.",
+    "en": "The deck opens from the pool edge into the lawn, with the ground-floor seating area of the house in the background."
+  },
+  "seoFilename": "villa-havuzu-onunde-cime-uzanan-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "havuz kenarı",
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

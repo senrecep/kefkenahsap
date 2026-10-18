@@ -1,0 +1,36 @@
+{
+  "file": "32.webp",
+  "category": "deck-ve-zeminler",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ahşap dış cephe kaplama ve bahçe merdiveni",
+    "en": "Timber exterior cladding and garden steps"
+  },
+  "alt": {
+    "tr": "Ahşap cephe kaplamalı kulübeye çıkan korkuluklu basamaklar ve ahşap giriş kapısı.",
+    "en": "Timber-clad hut with an exterior wooden staircase, railing, and entrance door."
+  },
+  "caption": {
+    "tr": "Açık alan için tamamlanan ahşap dış cephe kaplaması, giriş kapısı ve korkuluklu bahçe merdiveni uygulaması.",
+    "en": "Wooden exterior wall cladding, matching entrance door, and garden steps with timber railings."
+  },
+  "seoFilename": "ahsap-dis-cephe-kaplama-ve-bahce-merdiveni",
+  "tags": {
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "dış mekan",
+      "bahçe"
+    ],
+    "finish": [
+      "doğal"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.85
+}

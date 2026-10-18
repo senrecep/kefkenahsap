@@ -1,0 +1,36 @@
+{
+  "file": "96.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe deposu ve ahşap deck zemin",
+    "en": "Garden storage shed with wooden deck"
+  },
+  "alt": {
+    "tr": "Yeşil çatılı ahşap bahçe deposu, yatay kaplamalı kapısı ve önünde deck zemin; yanda istiflenmiş odun kütükleri",
+    "en": "Wooden garden shed with a green roof and horizontally clad door, deck floor in front and stacked logs beside it"
+  },
+  "caption": {
+    "tr": "Yatay lambri kaplı küçük bahçe deposu, kapısı ve önündeki ahşap deck zeminle birlikte. Yan tarafta odun istifi duruyor.",
+    "en": "A small garden shed clad in horizontal boards, with its door and the wooden deck floor in front. A stack of firewood sits to one side."
+  },
+  "seoFilename": "bahce-deposu-ahsap-deck-zemin",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "depo"
+    ],
+    "finish": [
+      "doğal ton",
+      "yatay lambri"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.72
+}

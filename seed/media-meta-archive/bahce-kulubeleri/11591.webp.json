@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/11591.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kırmızı çatılı vernikli köpek kulübesi",
+    "en": "Varnished dog house with a red roof"
+  },
+  "alt": {
+    "tr": "Taş zemin üzerinde duran, kırmızı kaplamalı çatısı olan vernikli ahşap köpek kulübesi",
+    "en": "Varnished timber dog house with a red-covered roof standing on a stone-paved floor"
+  },
+  "caption": {
+    "tr": "Kulübenin yatay tahta duvarları koyu bal renginde verniklenmiş, ön yüzde kapalı bir kapı ve kilit görünüyor.",
+    "en": "The horizontal board walls of the house are varnished a dark honey and a closed door with a latch shows on the front."
+  },
+  "seoFilename": "kirmizi-kiremitli-catisi-olan-vernikli-ahsap-kopek-kulubesi",
+  "tags": {
+    "type": [
+      "köpek kulübesi"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,38 @@
+{
+  "file": "8.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Giriş holünde beyaz çift kanatlı gömme dolap",
+    "en": "White built-in double-door cabinet in an entrance hall"
+  },
+  "alt": {
+    "tr": "Koridor girişinde duvara gömülü, çıtalı panelli beyaz boyalı çift kanatlı dolap; zemin koyu yeşil taş kaplama",
+    "en": "White painted built-in double-door cabinet with raised panels in a hallway, on a dark green stone floor"
+  },
+  "caption": {
+    "tr": "Hol duvarına ölçüye göre yapılmış, kapakları çerçeveli panel işlemeli beyaz boyalı gömme dolap. Kapılar duvarla aynı hizada duruyor.",
+    "en": "A custom-fitted white painted cabinet built into the hall wall, with framed raised-panel doors sitting flush with the wall."
+  },
+  "seoFilename": "giris-holu-beyaz-gomme-dolap",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "iç mekan",
+      "hol",
+      "koridor",
+      "giriş"
+    ],
+    "finish": [
+      "beyaz boya",
+      "mat boya",
+      "panel kapak"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.9
+}

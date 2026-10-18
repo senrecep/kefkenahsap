@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/13107.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Duvarda boyları farklı iki ahşap kafes panel, önlerinde bitkiler",
+    "en": "Two timber lattice panels of different lengths on the wall, plants in front"
+  },
+  "alt": {
+    "tr": "Duvara monte edilmiş, biri uzun biri kısa iki ahşap kafes panel; uzun olana sarmaşık tırmanıyor, altta çalılar",
+    "en": "Two timber lattice panels fixed to the wall, one long and one short, with a climber growing up the long one and shrubs below"
+  },
+  "caption": {
+    "tr": "Paneller aynı kare göz düzeninde ama farklı boyda. Alt kısımda yeşil çalılar duvar dibini dolduruyor.",
+    "en": "The panels have the same square-cell pattern but different sizes. Green shrubs fill the foot of the wall."
+  },
+  "seoFilename": "duvarda-boylari-farkli-iki-ahsap-kafes-panel",
+  "tags": {
+    "type": [
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

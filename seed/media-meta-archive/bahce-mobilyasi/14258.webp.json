@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14258.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Desenli seramik üstlü ahşap kasalı sehpa, taş döşemede",
+    "en": "Table with a patterned ceramic top and timber frame on stone paving"
+  },
+  "alt": {
+    "tr": "Camlı kapının yanındaki taş döşemede duran, üstü mavi-beyaz desenli seramik kaplı koyu ahşap kasalı alçak sehpa",
+    "en": "A low dark timber-framed table topped with blue-and-white patterned ceramic on stone paving beside a glass door"
+  },
+  "caption": {
+    "tr": "Sehpa terasta cam kapının önünde duruyor. Seramik karolar suya ve güneşe karşı ahşaptan daha dayanıklı bir yüzey sağlıyor.",
+    "en": "The table stands on the terrace by the glass door. The ceramic tiles give a top that holds up to water and sun better than timber."
+  },
+  "seoFilename": "desenli-seramik-ustlu-ahsap-kasa-sehpa-tas-doseme-uzerinde",
+  "tags": {
+    "type": [
+      "sehpa"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

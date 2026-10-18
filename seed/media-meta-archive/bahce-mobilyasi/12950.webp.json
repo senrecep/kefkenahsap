@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/12950.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapı önünde, teras zemininde uzun ahşap sedir",
+    "en": "Long timber day-bed on the terrace in front of a glass door"
+  },
+  "alt": {
+    "tr": "Taş görünümlü karo zeminli terasta, arkasında alçak sırtlığı olan uzun ahşap sedir; yanında cam sürgülü kapı ve çimlik var",
+    "en": "A long timber day-bed with a low back on a terrace with stone-effect tiles, beside a sliding glass door and a lawn"
+  },
+  "caption": {
+    "tr": "Sedir kapıdan çıkınca hemen yanda yer alıyor. Üst yüzeyi tek parça gibi düzgün, etrafı kasayla kapalı.",
+    "en": "The day-bed sits just beside the door as you step out. The top looks like one even surface and the sides are boxed in."
+  },
+  "seoFilename": "cam-kapi-onunde-teras-zemininde-uzun-ahsap-sedir-dikey",
+  "tags": {
+    "type": [
+      "bank",
+      "şezlong"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

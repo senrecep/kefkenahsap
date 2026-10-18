@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/14717.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bahçe ucunda göle bakan deck ve salıncak",
+    "en": "Deck at the end of the garden facing the lake, with a swing"
+  },
+  "alt": {
+    "tr": "Çimenlik bahçenin sonunda, göle bakan koyu renkli deck; solda ahşap bir bahçe salıncağı, yanlarda çalı çit",
+    "en": "Dark deck at the end of a lawned garden facing a lake, with a timber garden swing on the left and hedges at the sides"
+  },
+  "caption": {
+    "tr": "Deck karede uzakta ve küçük kalıyor, öne çıkan çimen ve salıncak. Yan taraftaki ağaç gövdesi kareyi iki yana ayırıyor.",
+    "en": "The deck is small and distant in the frame, while the lawn and swing stand out. A tree trunk at the side splits the frame."
+  },
+  "seoFilename": "bahce-ucunda-gole-bakan-deck-ve-salincak",
+  "tags": {
+    "type": [
+      "deck",
+      "salıncak"
+    ],
+    "wood": [],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

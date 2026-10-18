@@ -1,0 +1,35 @@
+{
+  "file": "WhatsApp-Image-2021-04-30-at-20.41.53-4.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe terası ahşap yemek masası ve duvar dekoru",
+    "en": "Garden terrace wooden dining table and wall decor"
+  },
+  "alt": {
+    "tr": "Ahşap teras zemininde ahşap yemek masası, sandalyeler ve duvarda kemerli dekoratif aynalar.",
+    "en": "Wooden dining table and chairs on a wood deck with arched decorative mirrors on the wall."
+  },
+  "caption": {
+    "tr": "Ahşap deck zemin üzerine yerleştirilen dış mekân masası, sandalyeler ve bahçe duvarındaki kemerli ayna detayları.",
+    "en": "Outdoor wooden dining table and chairs arranged on timber decking, complemented by arched wall mirrors."
+  },
+  "seoFilename": "ahsap-bahce-masasi-ve-oturma-alani",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ahşap yağı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.88
+}

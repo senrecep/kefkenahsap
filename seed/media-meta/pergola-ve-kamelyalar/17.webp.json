@@ -1,0 +1,36 @@
+{
+  "file": "17.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Taş duvar üzeri ahşap kamelya ve gölgelik",
+    "en": "Wooden gazebo and canopy on stone base"
+  },
+  "alt": {
+    "tr": "Doğal taş kaide üzerine kurulmuş, ahşap zeminli ve gölgelikli bahçe kamelyası.",
+    "en": "Wooden garden gazebo with shading canvas built over a natural stone base."
+  },
+  "caption": {
+    "tr": "Bahçe peyzajına uygun olarak doğal taş kaide üzerine uygulanan gölgelikli ahşap kamelya ve platform çalışması.",
+    "en": "Wooden gazebo with shading canopy built over a natural stone base, integrated into the garden landscape."
+  },
+  "seoFilename": "tas-duvar-uzeri-ahsap-kamelya",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "peyzaj"
+    ],
+    "finish": [
+      "koyu meşe",
+      "vernik"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/2454.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beton kenarlı yuvarlak hatlı deck",
+    "en": "Round-edged deck with a concrete border"
+  },
+  "alt": {
+    "tr": "Beton kenar şeridiyle çevrelenmiş, yuvarlak hatlı açık renkli deck; yanında zincirli bir direk ve istiflenmiş tahtalar",
+    "en": "Pale deck with a rounded outline, ringed by a concrete edge strip, with a post hung with a chain and stacked boards beside it"
+  },
+  "caption": {
+    "tr": "Tahtalar yarım daire biçimli alana dik düz çizgilerle döşenmiş. Arkada inşaat alanı ve toprak yığınları görünüyor.",
+    "en": "The boards are laid in straight lines across the semicircular area. A building site and soil heaps show behind."
+  },
+  "seoFilename": "beton-kenarli-yuvarlak-hatli-deck-zincirli-direk",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

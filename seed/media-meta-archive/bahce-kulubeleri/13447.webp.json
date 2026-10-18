@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/13447.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yeşil çatılı koyu vernikli köpek kulübesi, hafif yandan",
+    "en": "Dark varnished dog house with a green roof, slightly from the side"
+  },
+  "alt": {
+    "tr": "Hafif yandan görünen, yeşil shingle çatılı ve koyu vernikli ahşap köpek kulübesi; arkada merdiven",
+    "en": "Dark varnished timber dog house with a green shingle roof seen slightly from the side, with a ladder behind"
+  },
+  "caption": {
+    "tr": "Kulübenin ön çıkıntılı çatısı balık pulu desenli yeşil kaplamalı. Koyu cilalı duvarlar ve açık renkli giriş içi seçiliyor.",
+    "en": "The projecting front roof of the house has a green fish-scale covering. The dark polished walls and the pale inside of the entrance are visible."
+  },
+  "seoFilename": "yesil-shingle-catili-koyu-vernikli-kopek-kulubesi-hafif",
+  "tags": {
+    "type": [
+      "köpek kulübesi"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

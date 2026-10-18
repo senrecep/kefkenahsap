@@ -1,0 +1,40 @@
+{
+  "source": "Kopru ve Iskele/8378.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Köprü korkuluğu ve destek ayağı, havuzdaki palmiyeli saksı",
+    "en": "Bridge railing and support leg, palm planter in the pool"
+  },
+  "alt": {
+    "tr": "Turkuaz havuzda palmiyeli saksının yanında köprünün kalın korkuluk dikmesi ve çapraz destek ayağı; arkada köşk",
+    "en": "The bridge's thick railing post and diagonal support leg beside a palm planter in a turquoise pool, a pavilion behind"
+  },
+  "caption": {
+    "tr": "Korkuluk dikmesi deck tahtalarına sabitlenmiş, destek ayağı havuza iniyor. Havuzda palmiyeli yuvarlak saksılar sıralanıyor.",
+    "en": "The railing post is fixed to the deck boards and the support leg goes down into the pool. Round palm planters line up in the pool."
+  },
+  "seoFilename": "kopru-korkulugu-ve-destek-ayagi-havuzdaki-palmiye",
+  "tags": {
+    "type": [
+      "köprü",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

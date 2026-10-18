@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/14563.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bahçedeki eski müştemilatın yıpranmış ahşap kapıları",
+    "en": "Weathered timber doors of an old garden outbuilding"
+  },
+  "alt": {
+    "tr": "Çimenlik bahçede krem sıvalı küçük bir yapının eskimiş ahşap kapı ve kepenkleri, önünde tel örgü ve el arabası",
+    "en": "Weathered timber doors and shutters of a small cream-rendered outbuilding in a grassy garden"
+  },
+  "caption": {
+    "tr": "Kapıların boyası dökülmüş, tahtalar gri ve çatlak. Yapı yenileme öncesi durumda.",
+    "en": "The paint on the doors has flaked and the boards are grey and cracked. The building is in its pre-renovation state."
+  },
+  "seoFilename": "bahcedeki-eski-mustemilatin-yipranmis-ahsap-kapilari",
+  "tags": {
+    "type": [
+      "kapı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.55
+}

@@ -1,0 +1,37 @@
+{
+  "file": "4.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Krem renkli mutfak dolapları ve beyaz tezgah",
+    "en": "Cream kitchen cabinets with white countertop"
+  },
+  "alt": {
+    "tr": "Krem üst dolaplı, beyaz tezgahlı dar bir mutfak; tavanda siyah file sarkıt lamba, sonda camlı beyaz kapı var.",
+    "en": "Narrow kitchen with cream upper cabinets, white countertop, black mesh pendant lamp and a glazed white door at the end."
+  },
+  "caption": {
+    "tr": "Parlak krem kapaklı üst dolaplar, gri alt dolaplar ve beyaz tezgahla hazırlanmış mutfak. Dolap altlarında camlı bölmeler yer alıyor.",
+    "en": "A kitchen fitted with glossy cream upper cabinets, grey lower cabinets and a white countertop, with glazed sections along the bottom of the upper units."
+  },
+  "seoFilename": "krem-mutfak-dolabi-beyaz-tezgah",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "mutfak",
+      "iç mekan",
+      "daire"
+    ],
+    "finish": [
+      "parlak krem",
+      "lake görünümlü",
+      "gri alt dolap"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

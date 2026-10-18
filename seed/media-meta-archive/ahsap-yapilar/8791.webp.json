@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/8791.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kahverengi panjurlu, kirişli örtülü teras",
+    "en": "Covered terrace with brown shutters and timber beams"
+  },
+  "alt": {
+    "tr": "Kahverengi panjurlu pencereleri ve ahşap kirişli çatısı olan, duvar sıvaları henüz bitmemiş örtülü teras",
+    "en": "Covered terrace with brown-shuttered windows and a timber-beamed roof, the wall plaster not yet finished"
+  },
+  "caption": {
+    "tr": "Panjurlar açık, pencere kenarlarında mavi bant duruyor. Terasın önünde koyu ahşap korkuluk uzanıyor.",
+    "en": "The shutters are open and blue tape lines the window edges. A dark timber railing runs along the front of the terrace."
+  },
+  "seoFilename": "kahverengi-panjurlu-ahsap-kirisli-ortulu-teras",
+  "tags": {
+    "type": [
+      "sundurma / saçak / carport",
+      "pencere / panjur"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

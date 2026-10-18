@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/15171.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çapraz korkuluklu kamelya, önünde beyaz merdivenler ve mavi iskele",
+    "en": "X-braced gazebo with white ladders and blue scaffolding in front"
+  },
+  "alt": {
+    "tr": "Çapraz korkuluklu kamelyanın önünde iki beyaz merdiven ve mavi iskele parçaları, çimlik bahçe",
+    "en": "X-braced gazebo with two white ladders and blue scaffold parts in front, in a lawn garden"
+  },
+  "caption": {
+    "tr": "Kamelyanın çatısı kaplanmış, korkulukları çapraz çıtalı. Çalışma bitmeden merdivenler yanında duruyor.",
+    "en": "The gazebo roof is covered and its rails are cross-braced. The ladders stand beside it while work is unfinished."
+  },
+  "seoFilename": "capraz-korkuluklu-kamelya-beyaz-merdivenler",
+  "tags": {
+    "type": [
+      "kamelya",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

@@ -1,0 +1,35 @@
+{
+  "file": "WhatsApp-Image-2021-04-30-at-20.41.54-1.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe duvarı üzerinde ahşap tırmık çit",
+    "en": "Wooden picket fence on a garden wall"
+  },
+  "alt": {
+    "tr": "Alçak taş duvarın üzerinde sivri uçlu çıtalardan yapılmış açık renk ahşap çit, önünde ağaç gövdesi ve bahçe aydınlatması",
+    "en": "Light wooden picket fence with pointed slats on a low stone wall, with a tree trunk and garden spotlights in front"
+  },
+  "caption": {
+    "tr": "Alçak bahçe duvarının üzerine yapılan, sivri uçlu çıtalardan oluşan ahşap çit. Kenarda menteşeli küçük bir kapı bölümü var.",
+    "en": "A picket fence with pointed slats built on top of a low garden wall, with a small hinged gate section at the edge."
+  },
+  "seoFilename": "bahce-duvari-uzeri-ahsap-cita-cit",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "duvar üstü"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

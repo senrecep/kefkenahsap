@@ -1,0 +1,40 @@
+{
+  "source": "Deck ve Zeminler/4292.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deck yüzeyi ve korkuluk detayı",
+    "en": "Deck surface and railing detail"
+  },
+  "alt": {
+    "tr": "Ağaç gövdesinin deckten geçtiği kare boşluk ve solda kalın çapraz korkuluk parçaları",
+    "en": "The square opening where a tree trunk passes through the deck, with thick cross-brace railing pieces at the left"
+  },
+  "caption": {
+    "tr": "Tahtalar gövdenin çevresinde boşlukla bitiyor. Korkuluğun çaprazları kalın ahşap parçalardan yapılmış.",
+    "en": "The boards stop short of the trunk with a gap. The railing braces are made of thick timber pieces."
+  },
+  "seoFilename": "deck-yuzeyi-ve-capraz-korkuluk-detayi-govde-deckten-geciyor",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "orman / kır"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,37 @@
+{
+  "file": "9b47a2f4-d762-406a-90fb-6078b0364aca.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Gri patinalı dört kapaklı konsol",
+    "en": "Grey patina sideboard with four doors and drawers"
+  },
+  "alt": {
+    "tr": "Pencere önünde duran, gri çerçeveli, metal görünümlü patina cilalı kapakları ve dört çekmecesi olan uzun dolap",
+    "en": "Long sideboard by a window with a grey frame, metallic patina doors and four drawers on a wooden floor"
+  },
+  "caption": {
+    "tr": "Gri boyalı kasa ve çerçeveye, kapaklarda bakır ve gri tonlarında eskitme patina uygulanmış alçak dolap. Ortada dört çekmece, iki yanda kapaklar var.",
+    "en": "A low cabinet with a grey painted frame and doors finished in an aged copper-and-grey patina. Four drawers sit in the middle with doors on either side."
+  },
+  "seoFilename": "gri-patinali-cekmeceli-konsol-dolap",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "salon",
+      "iç mekan",
+      "parke zemin"
+    ],
+    "finish": [
+      "gri boya",
+      "patina",
+      "eskitme cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

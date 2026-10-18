@@ -1,0 +1,35 @@
+{
+  "file": "11222916_1009808809063718_1636123139185672695_o.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Çim zemin üzerinde deck alt konstrüksiyonu",
+    "en": "Deck substructure frame on a lawn"
+  },
+  "alt": {
+    "tr": "Çimlerin üzerine kurulmuş, enine ve boyuna kirişlerden oluşan açık renkli ahşap deck iskeleti",
+    "en": "Light-colored wooden deck frame of crossed joists and beams set up on a grassy lawn"
+  },
+  "caption": {
+    "tr": "Deck döşemesinden önce bahçede çimin üzerine kurulan ahşap taşıyıcı iskelet. Üzerine tahtalar çakılmayı bekliyor.",
+    "en": "The wooden support frame set up on the garden lawn before the decking boards go on. The boards are yet to be fixed on top."
+  },
+  "seoFilename": "cim-uzerinde-deck-alt-konstruksiyonu",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "açık hava",
+      "çim alan"
+    ],
+    "finish": [
+      "doğal ahşap"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/5361.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar üzerinde deck alt iskeleti",
+    "en": "Deck sub-frame on a stone wall"
+  },
+  "alt": {
+    "tr": "Deniz kıyısında taş duvarın üstüne oturtulmuş ahşap deck alt iskeleti ve yükselen direkler; önde daire testere",
+    "en": "Timber deck sub-frame and rising posts set on a stone wall by the sea, with a circular saw in front"
+  },
+  "caption": {
+    "tr": "İskelet kirişlerle ızgara biçiminde örülmüş, direkler sonradan korkuluğa dönüşecek gibi dikilmiş. Arkada bir ahşap yapı ve toprak yol görünüyor.",
+    "en": "The frame is built from joists in a grid and the posts are set up as if to become the railing later. A timber structure and an earth road show behind."
+  },
+  "seoFilename": "tas-duvar-uzerinde-deck-alt-iskeleti-direkler-ve-daire",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

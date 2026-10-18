@@ -1,0 +1,36 @@
+{
+  "file": "12.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ahşap çerçeveli yazı tahtası ve bank",
+    "en": "Wood-framed chalkboard on a bench"
+  },
+  "alt": {
+    "tr": "Koyu kahverengi ahşap çerçeveli siyah yazı tahtası, ahşap bir bankın üzerinde dükkan girişinde duruyor",
+    "en": "Black chalkboard in a dark brown wooden frame resting on a wooden bench at a shop entrance"
+  },
+  "caption": {
+    "tr": "Koyu ceviz tonunda ahşap çerçeveli siyah yazı tahtası, aynı renkte kısa bir bankın üzerinde dükkan girişinde duruyor.",
+    "en": "A black chalkboard with a dark walnut-toned wooden frame stands on a short bench in the same color at a shop entrance."
+  },
+  "seoFilename": "ahsap-cerceveli-yazi-tahtasi-ve-bank",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "dükkan girişi",
+      "dış mekan",
+      "tabela"
+    ],
+    "finish": [
+      "koyu ceviz vernik",
+      "ahşap boya"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.6
+}

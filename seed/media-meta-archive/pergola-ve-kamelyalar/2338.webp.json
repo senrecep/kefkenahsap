@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/2338.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "İskeleli binanın üstünde sıralı koyu ahşap kirişler",
+    "en": "Rows of dark timber beams above a scaffolded building"
+  },
+  "alt": {
+    "tr": "İskeleli ve sıvalı binanın çatı hizasında kademeli sıralanmış koyu renk ahşap kirişler, mavi gökyüzü",
+    "en": "Rows of dark timber beams stepped across the roofline of a scaffolded, rendered building under a blue sky"
+  },
+  "caption": {
+    "tr": "Kirişler kat kat sıralanmış ve çatı çıtalarına hazır duruyor. Bina henüz boyanmamış, iskele yerinde.",
+    "en": "The beams are laid in tiers, ready for roof slats. The building is not yet painted and the scaffold is still up."
+  },
+  "seoFilename": "iskeleli-binanin-ustunde-kademeli-kirisler",
+  "tags": {
+    "type": [
+      "pergola",
+      "sundurma / saçak / carport"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.55
+}

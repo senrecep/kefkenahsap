@@ -1,0 +1,36 @@
+{
+  "file": "img3-2.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Çayırda ahşap direkli bantlı çit",
+    "en": "Wooden post fence with green tape in a meadow"
+  },
+  "alt": {
+    "tr": "Yeşil çayırda ahşap direklere gerilmiş yeşil bantlı ve telli çit hattı, arkada ağaçlar",
+    "en": "Fence line of wooden posts with green tape and wire strung across a grassy meadow, trees behind"
+  },
+  "caption": {
+    "tr": "Açık arazide ahşap direklere yeşil bant ve tel gerilerek kurulmuş çit hattı. Büyük köşe direğinde bant tutucular ve izolatörler görülüyor.",
+    "en": "A fence line in open pasture, with green tape and wire strung between wooden posts. Tape holders and insulators are visible on the large corner post."
+  },
+  "seoFilename": "ahsap-direkli-bantli-cit-hatti",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "çayır",
+      "açık arazi",
+      "bahçe"
+    ],
+    "finish": [
+      "yeşil bant",
+      "tel"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.88
+}

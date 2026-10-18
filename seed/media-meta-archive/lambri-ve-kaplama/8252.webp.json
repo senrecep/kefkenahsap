@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/8252.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kirişli ahşap tavan ve çıtalı dolgu",
+    "en": "Timber ceiling with beams and slatted infill"
+  },
+  "alt": {
+    "tr": "Kirişler ve aralarında çıtalı dolgu bulunan eğimli ahşap tavan, altında tahta zemin",
+    "en": "Pitched timber ceiling divided by beams with slatted infill between them, over a board floor"
+  },
+  "caption": {
+    "tr": "Tavan kirişlerle bölünmüş, aralarına ince çıtalı bir dolgu yerleştirilmiş. Işık yansıması detayları silikleştiriyor.",
+    "en": "The ceiling is divided by beams with fine slats set between them. Glare from the light softens the detail."
+  },
+  "seoFilename": "citali-ahsap-tavan-hasir-dolgu-kiris",
+  "tags": {
+    "type": [
+      "tavan kaplaması / lambri"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.55
+}

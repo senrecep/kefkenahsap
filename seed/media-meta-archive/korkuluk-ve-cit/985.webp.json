@@ -1,0 +1,40 @@
+{
+  "source": "Korkuluk ve Cit/985.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Evin yanında deck, yatay tahtalı korkuluk ve çalılar",
+    "en": "Deck beside a house with a horizontal-board railing and shrubs"
+  },
+  "alt": {
+    "tr": "Evin camlı kapısının önünde L biçimli açık tonlu deck, çevresinde yatay tahtalı korkuluk ve yeşil çalılar, arkada ağaçlar",
+    "en": "L-shaped pale deck in front of a glazed door of a house, surrounded by a horizontal-board railing and green shrubs"
+  },
+  "caption": {
+    "tr": "Korkuluk deckin üç kenarını çeviriyor, çalılar korkuluğa yaslanıyor.",
+    "en": "The railing runs round three sides of the deck, and shrubs lean against it."
+  },
+  "seoFilename": "evin-yaninda-deck-yatay-tahtali-korkuluk-ve-calilar",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

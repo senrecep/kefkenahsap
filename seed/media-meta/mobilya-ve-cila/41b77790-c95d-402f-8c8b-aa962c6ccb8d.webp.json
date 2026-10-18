@@ -1,0 +1,35 @@
+{
+  "file": "41b77790-c95d-402f-8c8b-aa962c6ccb8d.webp",
+  "category": "mobilya-ve-cila",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Beyaz lake gömme yatak odası dolabı",
+    "en": "Custom white lacquered built-in wardrobe"
+  },
+  "alt": {
+    "tr": "Yatak odasına tam boy gömme yapılan, orta kısmı ızgara çıtalı beyaz lake gardırop kapakları.",
+    "en": "White lacquered built-in wardrobe with slatted center panels fitted wall-to-wall in a bedroom."
+  },
+  "caption": {
+    "tr": "Yatak odası için duvara özel ölçüde üretilen, göbek kısımları havalandırma çıtalı beyaz lake gömme gardırop uygulamamız.",
+    "en": "Custom-fit built-in bedroom wardrobe featuring a clean white lacquer finish and central slatted detail panels."
+  },
+  "seoFilename": "beyaz-lake-gomme-gardrop-imalati",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "iç mekan",
+      "yatak odası"
+    ],
+    "finish": [
+      "lake boya",
+      "beyaz boya"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

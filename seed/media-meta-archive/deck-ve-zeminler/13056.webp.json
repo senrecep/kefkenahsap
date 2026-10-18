@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/13056.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ağaç yanında küçük deck iskeleti ve yerde levha",
+    "en": "Small deck frame beside a tree with a sheet on the ground"
+  },
+  "alt": {
+    "tr": "Çimenlik üzerinde ağacın yanında kirişleri dizilmiş küçük deck iskeleti, yerde bir levha",
+    "en": "Small deck frame with joists laid out on a lawn beside a tree, with a sheet board on the ground"
+  },
+  "caption": {
+    "tr": "İskelet arka tarafta çalılara yakın duruyor. Kirişler çerçeve içinde eşit aralıklarla konmuş.",
+    "en": "The frame sits at the back close to the shrubs. The joists are set at even spacing inside it."
+  },
+  "seoFilename": "agac-yaninda-kucuk-deck-iskeleti-ve-yerde-levha",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

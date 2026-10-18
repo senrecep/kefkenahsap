@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14621.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Pencere altında konsollu raf ve deck şeridi",
+    "en": "Bracketed shelf under a window and a deck strip"
+  },
+  "alt": {
+    "tr": "Beyaz pencere altında metal konsolla duvara asılı ahşap raf, yanında açık kahverengi deck şeridi",
+    "en": "Timber shelf fixed to the wall on metal brackets under a white window, with a light brown deck strip beside it"
+  },
+  "caption": {
+    "tr": "Raf ile deck aynı açık ahşap tonunda. Yanda saksıda küçük bir ağaç ve çalılar duruyor.",
+    "en": "The shelf and the deck share the same light wood tone. A small potted tree and shrubs stand to the side."
+  },
+  "seoFilename": "pencere-altinda-konsollu-raf-ve-deck-seridi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,36 @@
+{
+  "source": "Ireko-Teak/13382.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Ahşap çıtalı dış mutfak ve odun fırını",
+    "en": "Outdoor kitchen with timber slats and a wood-fired oven"
+  },
+  "alt": {
+    "tr": "Dikey ahşap çıtalı duvar önünde ahşap kapaklı dolaplar, odun fırını ve bar tezgâhlı dış mutfak",
+    "en": "Outdoor kitchen with timber-fronted cabinets, a wood-fired oven and a bar counter against a slat wall"
+  },
+  "caption": {
+    "tr": "Dolap kapakları ve arka duvar aynı dikey ahşap çıtalarla yapılmış. Fırının altındaki bölmede odunlar duruyor.",
+    "en": "The cabinet fronts and the back wall share the same vertical timber slats, and firewood is stacked under the oven."
+  },
+  "seoFilename": "ahsap-citali-dis-mutfak-odun-firini-bar-tezgah",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "dış mutfak",
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

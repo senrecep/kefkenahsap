@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/11803.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bahçe terasında iki bölmeli çiçeklik",
+    "en": "Two-compartment planter on a garden terrace"
+  },
+  "alt": {
+    "tr": "Bahçe terasında iki bölmeli ahşap çiçeklik; arkada bisikletler, saksılar ve beton duvar",
+    "en": "Two-compartment timber planter on a garden terrace, with bicycles, pots and a concrete wall behind"
+  },
+  "caption": {
+    "tr": "Çiçekliğin içi siyah astarlı ve fidanlar dikilmiş. Yanda toprak torbaları duruyor.",
+    "en": "The planter has a black liner and saplings are planted. Bags of soil stand beside it."
+  },
+  "seoFilename": "bahce-terasinda-iki-bolmeli-ahsap-ciceklik-bisikletler-ve",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

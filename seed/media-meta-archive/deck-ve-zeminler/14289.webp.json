@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14289.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar önünde sundurmalı havuz deck'i",
+    "en": "Poolside deck with canopy before a stone wall"
+  },
+  "alt": {
+    "tr": "Havuz kenarında koyu kahverengi deck ve üstünde ahşap çatılı sundurma; arkada taş kaplı duvar",
+    "en": "Dark brown deck at the pool edge under a timber-roofed canopy, with a stone-clad wall behind"
+  },
+  "caption": {
+    "tr": "Deck tahtaları havuz kenarından sundurmanın altına doğru uzanıyor. Duvarın önünde yeşil bir çit paneli duruyor.",
+    "en": "The deck boards run from the pool edge to under the canopy. A green fence panel stands in front of the wall."
+  },
+  "seoFilename": "tas-duvar-onunde-sundurmali-havuz-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

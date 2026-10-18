@@ -1,0 +1,39 @@
+{
+  "source": "Ireko-Teak/14123.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Balkon korkuluğu önünde ışık yansıtan yağlı deck",
+    "en": "Oiled balcony deck reflecting the light"
+  },
+  "alt": {
+    "tr": "Demir korkuluklu bir terasın zemininde, altın kahve tonlu ve parlak yüzeyli yeni yağlanmış deck tahtaları",
+    "en": "Newly oiled deck boards in golden brown with a glossy surface on a terrace floor beside an iron railing"
+  },
+  "caption": {
+    "tr": "Yağ tahtaların damarını öne çıkarmış. Yüzey ıslak gibi parlıyor.",
+    "en": "The oil brings out the grain of the boards. The surface shines as if wet."
+  },
+  "seoFilename": "balkon-korkulugu-onunde-isik-yansitan-yagli-deck",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "balkon",
+      "teras"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

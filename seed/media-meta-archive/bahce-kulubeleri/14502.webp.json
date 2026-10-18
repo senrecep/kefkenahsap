@@ -1,0 +1,36 @@
+{
+  "source": "Ahsap Yapilar/14502.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ahşap kafes iskeletinin içinde köpek kulübesi",
+    "en": "Dog house inside a timber cage frame"
+  },
+  "alt": {
+    "tr": "Toprak zeminde kurulan ahşap kafes iskeletinin içinde duran köpek kulübesi; yapım sürüyor",
+    "en": "Dog house standing inside a timber cage frame built on bare earth, still under construction"
+  },
+  "caption": {
+    "tr": "Kafesin yan ve üst çerçeveleri kalaslardan çakılmış, henüz tel veya tahta ile kapatılmamış. Arkada dağ manzarası görünüyor.",
+    "en": "The side and top frames of the cage are nailed from timbers and not yet closed with mesh or boards. A mountain view shows behind."
+  },
+  "seoFilename": "toprak-zeminde-ahsap-kafes-iskeleti-icinde-kopek-kulubesi",
+  "tags": {
+    "type": [
+      "köpek kulübesi",
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

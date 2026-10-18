@@ -1,0 +1,32 @@
+{
+  "file": "3943cc9f-9f08-4174-81e9-bd4613398c79.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Camlı vitrin ve şarap gözlü ahşap dolap",
+    "en": "Glass-front wooden cabinet with wine rack"
+  },
+  "alt": {
+    "tr": "Camlı kapaklı, çekmeceli ve şarap gözlü ahşap vitrin dolabı; önünde geniş tahtalı ahşap zemin uzanıyor.",
+    "en": "Wooden display cabinet with glass doors, drawers and wine racks, set above a wide-plank wooden floor."
+  },
+  "caption": {
+    "tr": "Camlı bölmeleri, çekmeceleri ve şarap gözleri olan ahşap vitrin dolabı. Yanındaki ahşap kaplı duvar ve geniş tahtalı zemin dolapla aynı sıcak tonda.",
+    "en": "A wooden display cabinet with glass-fronted shelves, drawers and wine racks. The wood-clad wall beside it and the wide-plank floor share the same warm tone."
+  },
+  "seoFilename": "camli-vitrin-sarap-gozlu-ahsap-dolap",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "iç mekan",
+      "ticari mekan"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

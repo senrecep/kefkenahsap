@@ -1,0 +1,35 @@
+{
+  "file": "IMG_20150623_141949.jpg1_.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Kavisli ahşap kiriş imalatında tutkallama",
+    "en": "Gluing layers of a curved wooden beam"
+  },
+  "alt": {
+    "tr": "Kavisli bir ahşap yapının çıtalarının üzerine sürülmüş beyaz tutkal şeritleri, yanında OSB levha ve kapalı bir teras",
+    "en": "White glue lines on stacked wooden strips of a curved structure, with an OSB panel and a covered terrace beside it"
+  },
+  "caption": {
+    "tr": "Kavisli ahşap yapıda çıtalar kat kat tutkallanarak üst üste yapıştırılıyor. Yanda OSB levha görünüyor, zemin naylonla korunmuş.",
+    "en": "Strips of a curved wooden structure are glued layer by layer. An OSB panel sits alongside and the floor is covered with plastic sheeting."
+  },
+  "seoFilename": "kavisli-ahsap-kiris-tutkallama",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "teras",
+      "açık alan"
+    ],
+    "finish": [
+      "tutkal"
+    ],
+    "stage": [
+      "process",
+      "detail"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.6
+}

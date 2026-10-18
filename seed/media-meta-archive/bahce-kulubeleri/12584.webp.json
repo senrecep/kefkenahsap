@@ -1,0 +1,39 @@
+{
+  "source": "Korkuluk ve Cit/12584.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Oyun yapısının altından renkli boyalı basamaklar",
+    "en": "Colourful painted steps seen from beneath a play structure"
+  },
+  "alt": {
+    "tr": "Alttan bakıldığında ahşap oyun yapısının mavi, yeşil ve turuncu boyalı basamak parçaları görünüyor",
+    "en": "Seen from below, the blue, green and orange painted step pieces of a timber play structure"
+  },
+  "caption": {
+    "tr": "Çocukların basacağı basamaklar renkli boyanmış. Alt yüzde kalın kirişler yapıyı taşıyor.",
+    "en": "The steps children climb on are painted in bright colours. Thick beams underneath carry the structure."
+  },
+  "seoFilename": "oyun-yapisinin-alti-renkli-boyali-basamaklar",
+  "tags": {
+    "type": [
+      "çocuk oyun evi"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

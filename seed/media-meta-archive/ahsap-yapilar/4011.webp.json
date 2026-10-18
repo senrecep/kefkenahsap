@@ -1,0 +1,37 @@
+{
+  "source": "Pergola ve Kamelyalar/4011.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar boyunca uzanan uzun ahşap sundurma",
+    "en": "Long timber porch running along a stone wall"
+  },
+  "alt": {
+    "tr": "Yanında yürüyüş yolu bulunan, taş duvar boyunca uzanan uzun vernikli ahşap sundurma",
+    "en": "Long varnished timber porch running along a stone wall with a footpath beside it"
+  },
+  "caption": {
+    "tr": "Sundurma sıralı kalın direklerle uzun bir koridor oluşturuyor. Çatı kirişleri koyu kırmızımsı tonda.",
+    "en": "The porch forms a long corridor with its row of thick posts. The roof beams are a dark reddish tone."
+  },
+  "seoFilename": "tas-duvar-boyunca-uzanan-vernikli-ahsap-sundurma-yanda",
+  "tags": {
+    "type": [
+      "sundurma / saçak / carport"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

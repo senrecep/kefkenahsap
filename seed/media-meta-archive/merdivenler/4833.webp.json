@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/4833.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Üstten çaprazlı korkuluk, basamaklar ve hortum",
+    "en": "Cross-braced railing and treads from above, with a hose"
+  },
+  "alt": {
+    "tr": "Üstten bakışla çaprazlı korkuluk ve basamaklar; iki yanda toprak, yerde mavi bir hortum",
+    "en": "Top view of a cross-braced railing and treads, with soil on both sides and a blue hose on the ground"
+  },
+  "caption": {
+    "tr": "Basamaklar iki korkuluk arasında aşağı iniyor. Çevre düzenlemesi yapılmamış, toprak ve hortum açıkta.",
+    "en": "The treads go down between the two railings. The surroundings are not landscaped yet, with soil and a hose in the open."
+  },
+  "seoFilename": "ustten-caprazli-korkuluk-basamaklar-toprak-hortum",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

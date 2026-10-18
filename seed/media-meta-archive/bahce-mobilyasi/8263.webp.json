@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/8263.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Üç bölmeli sırtlıklı, süslü kolçaklı büyük ahşap bank",
+    "en": "Large timber bench with a three-panel back and decorative arms"
+  },
+  "alt": {
+    "tr": "Deck üzerinde duran, üç bölmeli çıtalı sırtı ve oyma desenli kolçakları olan büyük ahşap bank",
+    "en": "A large timber bench on decking with a three-panel slatted back and carved-pattern arms, with a small table beside it"
+  },
+  "caption": {
+    "tr": "Bankın sırtlığı üç ayrı bölmeye ayrılmış, oturak da aralıklı çıtalardan. Kolçaklardaki desen bankı süslüyor.",
+    "en": "The back of the bench is divided into three panels and the seat is made of spaced slats. The pattern on the arms decorates it."
+  },
+  "seoFilename": "uc-bolmeli-sirtlikli-susli-kolcakli-buyuk-ahsap-bank-deck",
+  "tags": {
+    "type": [
+      "bank",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

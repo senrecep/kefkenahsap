@@ -1,0 +1,37 @@
+{
+  "file": "1520745_672567486121187_1975903094_n.webp",
+  "category": "ahsap-yapilar",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe içi ahşap otopark sundurması",
+    "en": "Timber gable roof carport"
+  },
+  "alt": {
+    "tr": "Bahçede park halindeki aracın üzerini örten beşik çatılı masif ahşap otopark sundurması.",
+    "en": "Wooden gable roof carport structure sheltering a vehicle in a garden driveway."
+  },
+  "caption": {
+    "tr": "Müstakil bahçe içerisinde araç park alanı için inşa edilen, beşik çatılı ve taşıyıcı ahşap makaslı sundurma uygulaması.",
+    "en": "Custom built wooden carport featuring exposed roof trusses, providing sheltered parking in a garden driveway."
+  },
+  "seoFilename": "ahsap-otopark-sundurmasi",
+  "tags": {
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "bahçe",
+      "otopark",
+      "dış mekan"
+    ],
+    "finish": [
+      "ahşap boyası"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

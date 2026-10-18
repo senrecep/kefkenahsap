@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/10742.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapı yanında deck, önünde çakıl ve taş",
+    "en": "Deck beside a glass door with gravel and stone in front"
+  },
+  "alt": {
+    "tr": "Cam kapı yanındaki ahşap deck; önünde çakıl, düz taş ve büyük yeşil yapraklı bitkiler",
+    "en": "Timber deck beside a glass door with gravel, a flat stone and large green-leaved plants in front of it"
+  },
+  "caption": {
+    "tr": "Deck dar ve uzun, ucunda taş ve çakılla bahçeye bağlanıyor. Tahtalar arasında düzgün aralık bırakılmış.",
+    "en": "The deck is narrow and long, joining the garden with stone and gravel at its end. An even gap is left between the boards."
+  },
+  "seoFilename": "cam-kapi-yaninda-ahsap-deck-onunde-cakil-tas-ve-yesil",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/10446.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dikey çıtalı, geniş çerçeveli masa tablası, damarlı altın kahve",
+    "en": "Vertical-slat table top with a wide frame and golden-brown grain"
+  },
+  "alt": {
+    "tr": "Dikey konumda, geniş çerçeveli ve uzun çıtalı dikdörtgen ahşap masa tablasının altın kahve yüzeyi ve damarları",
+    "en": "An upright view of a rectangular timber table top with a wide frame and long slats"
+  },
+  "caption": {
+    "tr": "Tabla ayağa kaldırılmış hâlde fotoğraflanmış, damarlar yüzeyde net görünüyor. Vernik ahşabın altın tonunu öne çıkarıyor.",
+    "en": "The top is photographed standing on edge so the grain shows clearly. The varnish brings out the golden tone of the wood."
+  },
+  "seoFilename": "dikey-citali-masa-tablasi-genis-cerceve-damarli-altin-kahve",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

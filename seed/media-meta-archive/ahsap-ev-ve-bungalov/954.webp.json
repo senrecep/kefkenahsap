@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/954.webp",
+  "category": "ahsap-ev-ve-bungalov",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kiremit çatılı küçük ahşap ev ve çimli bahçe",
+    "en": "Small timber house with a tile roof and lawn"
+  },
+  "alt": {
+    "tr": "Yamaç önündeki çimli bahçede, kırmızı kiremit çatılı tek katlı küçük ahşap ev",
+    "en": "Small single-storey timber house with a red tile roof on a lawn in front of a wooded slope"
+  },
+  "caption": {
+    "tr": "Tek katlı ev bal rengi ahşap kaplamalı, pencereleri beyaz. Arkada ağaçlı bir yamaç yükseliyor.",
+    "en": "The single-storey house is clad in honey-coloured timber and has white window frames. A wooded slope rises behind it."
+  },
+  "seoFilename": "kiremit-catili-kucuk-ahsap-ev-cimen-bahce",
+  "tags": {
+    "type": [
+      "ahşap ev / bungalov"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,35 @@
+{
+  "file": "1479428_672566619454607_1478943160_n.webp",
+  "category": "deck-ve-zeminler",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Taş duvar üzeri ahşap teras ve deck yapımı",
+    "en": "Wooden terrace deck construction over stone wall"
+  },
+  "alt": {
+    "tr": "Taş istinat duvarı üzerine payandalarla monte edilen çapraz korkuluklu ahşap teras ve deck iskeleti.",
+    "en": "Timber deck framework with cross railings supported by diagonal struts anchored into a stone wall."
+  },
+  "caption": {
+    "tr": "Eğimli arazide taş istinat duvarına bağlanan ahşap payandalarla yükseltilmiş deck teras ve çapraz korkuluk uygulaması.",
+    "en": "Installation of an elevated wooden deck terrace and cross railings supported by diagonal brackets on a stone wall."
+  },
+  "seoFilename": "tas-duvar-uzeri-ahsap-deck-montaji",
+  "tags": {
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras",
+      "bahçe",
+      "dış mekan"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

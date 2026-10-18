@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/3692.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuza uzanan platform ve yürüyüş yolu",
+    "en": "Platform and walkway reaching into the pool"
+  },
+  "alt": {
+    "tr": "Mavi havuza doğru uzanan açık renkli deck yolu ve ucunda yükseltilmiş platform; uzakta beyaz şemsiye",
+    "en": "Pale deck walkway leading towards a blue pool with a raised platform at its end, and a white parasol in the distance"
+  },
+  "caption": {
+    "tr": "Yol havuzun taş çerçevesine yaslanıyor. Platform suyun içinde küçük bir yarımada gibi duruyor.",
+    "en": "The walkway rests against the stone frame of the pool. The platform stands in the water like a small peninsula."
+  },
+  "seoFilename": "havuza-uzanan-platform-ve-yurume-yolu-uzakta-semsiye",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

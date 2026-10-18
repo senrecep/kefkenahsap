@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/5565.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvarda mavi boyalı ahşap pencere kanatları ve kapı",
+    "en": "Blue-painted timber window leaves and door in a stone wall"
+  },
+  "alt": {
+    "tr": "Doğal taş duvarda, mavi boyalı iki kanatlı ahşap pencere ve mavi kapı; üstte mor begonvil",
+    "en": "Blue-painted two-leaf timber window and blue door in a natural stone wall, with purple bougainvillea above"
+  },
+  "caption": {
+    "tr": "Mavi boya taş duvarın rengiyle güçlü bir karşıtlık yapıyor. Pencere kanatları açık duruyor.",
+    "en": "The blue paint contrasts strongly with the colour of the stone wall. The window leaves stand open."
+  },
+  "seoFilename": "tas-duvarda-mavi-boyali-ahsap-pencere-kanatlari-kapi",
+  "tags": {
+    "type": [
+      "pencere / panjur",
+      "kapı"
+    ],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

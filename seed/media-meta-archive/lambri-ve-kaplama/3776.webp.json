@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/3776.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvarlı teras cephesinde kaplamalı kolonlar",
+    "en": "Clad columns on a terrace facade with a stone wall"
+  },
+  "alt": {
+    "tr": "Taş duvar ve sarmaşığın yanında, yatay çıtalarla kaplanmış kalın kolonlar ve camlı kapılı teras girişi, altta işçi aletleri",
+    "en": "Thick columns clad in horizontal slats beside a stone wall and climbing plants, with a glazed-door terrace entrance"
+  },
+  "caption": {
+    "tr": "Kolonlar yeşilimsi ahşapla kaplanıp tavan altındaki kirişe bağlanıyor, taş duvar yanında sarmaşık çıkıyor.",
+    "en": "The columns are clad in greenish timber and join the beam under the ceiling, with climbing plants rising along the stone wall."
+  },
+  "seoFilename": "tas-duvarli-teras-cephesinde-yatay-citali-kaplamali",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

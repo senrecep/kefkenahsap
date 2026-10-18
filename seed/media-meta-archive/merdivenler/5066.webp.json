@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/5066.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Merdiven altı kaplaması ve çaprazlı korkuluk",
+    "en": "Under-stair boarding and cross-braced railing up close"
+  },
+  "alt": {
+    "tr": "Merdiven altındaki yatay tahta kaplama ve üstteki çaprazlı korkuluk, yan yana yakın çekim",
+    "en": "Close-up of the horizontal board cladding under a staircase and the cross-braced railing above it"
+  },
+  "caption": {
+    "tr": "Eğimli kirişin altı yatay tahtalarla kapatılmış. Üstte korkuluğun çaprazları basamaklara paralel iniyor.",
+    "en": "The underside of the sloping stringer is boarded in horizontally. Above, the railing's cross braces run parallel to the steps."
+  },
+  "seoFilename": "merdiven-alti-yatay-kaplama-ve-capraz-korkuluk-yakin",
+  "tags": {
+    "type": [
+      "merdiven",
+      "gömme dolap / gardırop"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

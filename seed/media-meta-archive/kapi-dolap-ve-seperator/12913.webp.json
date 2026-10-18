@@ -1,0 +1,35 @@
+{
+  "source": "Kapi Dolap ve Seperator/12913.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Alt zemine yakın koyu yanık kapaklı eski ahşap dolap",
+    "en": "Old timber cabinet with darkened doors at ground level"
+  },
+  "alt": {
+    "tr": "Parke taşlı zeminde dikey tahtalı, koyulaşmış çift kapaklı ahşap dolap, üstünde klima dış üniteleri",
+    "en": "Double-door timber cabinet with vertical boards on cobbled paving, darkened and in places still light brown"
+  },
+  "caption": {
+    "tr": "Kapakların cilası yıpranmış, tahtalar koyulaşmış. Yenileme için durumu gösteren bir kare.",
+    "en": "The finish on the doors has worn and the boards have darkened. A frame showing the condition before renewal."
+  },
+  "seoFilename": "alt-zemine-yakin-koyu-yanik-kapakli-eski-ahsap-dolap",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

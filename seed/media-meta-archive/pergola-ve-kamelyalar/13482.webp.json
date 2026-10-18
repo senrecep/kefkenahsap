@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/13482.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yapım aşamasında kamelya köşesi, zemin çevresinde kesim artıkları",
+    "en": "Gazebo corner under construction with offcuts around the base"
+  },
+  "alt": {
+    "tr": "Yapım aşamasında kamelyanın köşesi: çapraz korkuluk, ahşap zemin ve çevresinde kesim artıkları",
+    "en": "Corner of a gazebo under construction: X-braced rail, timber floor and offcuts scattered around"
+  },
+  "caption": {
+    "tr": "Köşe direği ve çatı saçağı açıkta görünüyor. Zemin çevresinde kereste parçaları duruyor.",
+    "en": "The corner post and roof eave are clearly visible. Timber offcuts lie around the floor."
+  },
+  "seoFilename": "yapim-asamasinda-kamelya-kosesi-kesim-artiklari",
+  "tags": {
+    "type": [
+      "kamelya",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/9124.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ahşap tavan kaplama ve yan duvar kaplaması, mavi membran",
+    "en": "Timber ceiling lining and side wall cladding with a blue membrane"
+  },
+  "alt": {
+    "tr": "Dışarıya açık bir girintide dikey tahtalarla kaplanan turuncu-kahve tavan ve altta yatay duvar kaplaması, arada mavi membran",
+    "en": "Orange-brown ceiling lined in vertical boards in an open recess, with horizontal wall cladding below and a blue membrane"
+  },
+  "caption": {
+    "tr": "Tavan ve duvar kaplaması bitmiş görünüyor, aradaki şeritte altyapı hâlâ açıkta.",
+    "en": "The ceiling and wall cladding look finished, while the substructure is still exposed in the strip between."
+  },
+  "seoFilename": "ahsap-tavan-kaplama-ve-alt-yan-duvar-kaplamasi-mavi-membran",
+  "tags": {
+    "type": [
+      "tavan kaplaması / lambri",
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

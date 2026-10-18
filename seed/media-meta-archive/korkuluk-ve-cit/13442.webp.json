@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/13442.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kum zeminde yapımı süren piket çit",
+    "en": "Picket fence under construction on sandy ground"
+  },
+  "alt": {
+    "tr": "Beyaz duvarın önünde kum zeminde dizilmiş çıtalı ahşap çit, yerde hortum ve el aletleri",
+    "en": "Slatted timber fence set up on sandy ground in front of a white wall, with a hose and hand tools on the ground"
+  },
+  "caption": {
+    "tr": "Çit parçaları yerine konmuş ama çevre henüz düzenlenmemiş. Yerde kereste artıkları duruyor.",
+    "en": "The fence sections are in place but the surroundings are not finished. Offcuts of timber lie on the ground."
+  },
+  "seoFilename": "kum-zeminde-yapimi-suren-piket-cit",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

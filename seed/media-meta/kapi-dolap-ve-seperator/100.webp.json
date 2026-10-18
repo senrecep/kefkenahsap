@@ -1,0 +1,36 @@
+{
+  "file": "100.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede yatay çıtalı ahşap dış mekan dolabı",
+    "en": "Outdoor wooden cabinet with horizontal slats in a garden"
+  },
+  "alt": {
+    "tr": "Bahçede duvar kenarına yerleştirilmiş, yatay çıtalı ve cilalı koyu kahverengi ahşap kutu dolap; yanında yeşil bitkiler var",
+    "en": "Dark brown varnished wooden cabinet with horizontal slats placed against a garden wall beside green plants"
+  },
+  "caption": {
+    "tr": "Bahçe duvarının önüne yerleştirilen, yatay çıtalı ve vernikli ahşap dış mekan dolabı. Üst kapağı da aynı çıtalarla kaplandı.",
+    "en": "A varnished outdoor wooden cabinet with horizontal slats, set against a garden wall. The top panel is clad in the same slats."
+  },
+  "seoFilename": "bahce-yatay-citali-ahsap-dis-mekan-dolabi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "teras"
+    ],
+    "finish": [
+      "vernik",
+      "kahverengi ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

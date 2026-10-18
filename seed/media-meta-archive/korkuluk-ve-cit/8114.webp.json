@@ -1,0 +1,39 @@
+{
+  "source": "Korkuluk ve Cit/8114.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Piket çit numune paneli, arkada koyu sandalye",
+    "en": "Sample picket fence panel with a dark chair behind"
+  },
+  "alt": {
+    "tr": "Camlı bir duvarın önünde duran, ucu kavisli dört çıtalı açık tonlu piket çit numune paneli, arkada koyu ahşap sandalye",
+    "en": "Light picket fence sample panel of four curved-top slats standing in front of a glass wall, with a dark timber chair behind"
+  },
+  "caption": {
+    "tr": "Panel yalnızca dört çıtadan oluşuyor ve iki yatay kuşakla birleşiyor.",
+    "en": "The panel has only four pickets, joined by two horizontal rails."
+  },
+  "seoFilename": "picket-cit-numune-paneli-arkada-koyu-ahsap-sandalye",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.55
+}

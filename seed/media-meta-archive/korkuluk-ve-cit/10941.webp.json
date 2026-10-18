@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/10941.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Siyah çerçeveli, ahşap dolgulu sürgülü kapı ve yaya kapısı, küp taş girişte",
+    "en": "Black-framed sliding gate with wooden infill and a pedestrian gate"
+  },
+  "alt": {
+    "tr": "Küp taş döşeli girişte, turuncu-kahve ahşap dolgulu siyah çerçeveli geniş sürgülü kapı ve yanında daha dar yaya kapısı",
+    "en": "Wide black-framed sliding gate with orange-brown timber infill and a narrower pedestrian gate, both with circular motifs"
+  },
+  "caption": {
+    "tr": "Geniş kapı iki bölümlü, yaya kapısı taş sütunlarla ayrılıyor. Dolgular dikey tahtalardan, çerçeve siyah demir.",
+    "en": "The wide gate is in two sections and the pedestrian gate is separated by stone piers. The infill is vertical boards and the frame is black iron."
+  },
+  "seoFilename": "siyah-cerceveli-ahsap-dolgulu-surgulu-kapi-yaya-kapisi",
+  "tags": {
+    "type": [
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

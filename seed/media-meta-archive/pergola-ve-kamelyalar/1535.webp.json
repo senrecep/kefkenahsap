@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/1535.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kırmızı kiremit çatılı dört direkli ahşap kamelya, alçak korkuluk",
+    "en": "Four-post timber gazebo with a red tile roof and a low rail"
+  },
+  "alt": {
+    "tr": "Kırmızı çatılı dört direkli ahşap kamelya, alçak çıtalı korkuluk, çatı altında kafes bordür ve çim",
+    "en": "Four-post timber gazebo with a red roof, a low slatted railing and a lattice frieze under the roof, on a lawn"
+  },
+  "caption": {
+    "tr": "Kamelya düz taş zeminin üstünde duruyor, çatı altında ince kafes bir bordür dolaşıyor. Çevresi çit ve çimle çevrili.",
+    "en": "The gazebo stands on flat stone paving with a fine lattice frieze under the roof. It is surrounded by a fence and lawn."
+  },
+  "seoFilename": "kirmizi-kiremit-catili-dort-direkli-ahsap-kamelya",
+  "tags": {
+    "type": [
+      "kamelya",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

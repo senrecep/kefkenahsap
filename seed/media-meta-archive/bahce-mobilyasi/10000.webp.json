@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/10000.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Uzun vernikli ahşap masa ve bank, perspektiften yakın çekim",
+    "en": "Long varnished timber table and bench in a close perspective shot"
+  },
+  "alt": {
+    "tr": "Perspektiften yakından, kırmızımsı vernikli uzun ahşap masanın tahtaları ve yanındaki bank boylu boyunca uzanıyor",
+    "en": "A close perspective of the boards of a long reddish-varnished table and the bench beside it stretching away"
+  },
+  "caption": {
+    "tr": "Bu açıdan masanın ve bankın uzunluğu iyi anlaşılıyor. Tahtalar tek hat halinde uzaklaşıyor.",
+    "en": "This angle shows how long the table and bench are. The boards recede in a single line."
+  },
+  "seoFilename": "uzun-vernikli-ahsap-masa-ve-bank-perspektiften-yakin-cekim",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

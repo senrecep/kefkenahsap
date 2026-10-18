@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/8942.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yatay ahşap kaplama ve yağmur borusu, alt çıkıntı",
+    "en": "Horizontal timber cladding and a downpipe at the lower ledge"
+  },
+  "alt": {
+    "tr": "Açık kahve yatay ahşap cephe kaplamasında dikey inen yağmur borusu ve altta çıkma bir bölüm, solda cam yüzey",
+    "en": "Downpipe running vertically over light-brown horizontal timber facade cladding, with a projecting section below"
+  },
+  "caption": {
+    "tr": "Boru kaplama üzerinde kelepçelerle sabitlenmiş, alttaki çıkıntıya doğru kıvrılıyor.",
+    "en": "The pipe is fixed to the cladding with clamps and bends towards the ledge below."
+  },
+  "seoFilename": "yatay-ahsap-cephe-kaplama-ve-yagmur-borusu-alt-cikinti",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

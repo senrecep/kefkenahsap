@@ -1,0 +1,37 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 18.00.07.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ahşap bahçe evi iç mekânı: raflar ve askılıklar",
+    "en": "Wooden garden shed interior with shelves and hooks"
+  },
+  "alt": {
+    "tr": "Kahverengi vernikli ahşap kulübenin içi; yan duvarda askı çubukları, arka duvarda üç kademeli raf ve OSB tavan",
+    "en": "Inside of a brown-stained wooden shed with wall pegs, three tiers of shelves on the back wall and an OSB ceiling"
+  },
+  "caption": {
+    "tr": "Kahverengi koruyucu ile boyanmış ahşap kulübenin içi. Arka duvarda üç sıra raf, yan duvarda asmalık çubukları var; zemin düz beton.",
+    "en": "Interior of a wooden shed treated with a brown wood stain. Three rows of shelves line the back wall, pegs for hanging items sit on the side wall, and the floor is plain concrete."
+  },
+  "seoFilename": "ahsap-kulube-ic-mekan-raf-askilik",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "depo",
+      "kulübe içi"
+    ],
+    "finish": [
+      "kahverengi ahşap koruyucu",
+      "vernik"
+    ],
+    "stage": [
+      "finished",
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.86
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/14450.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sarmaşıklı duvar önünde çakıl zemine açılan koyu çift kapak",
+    "en": "Dark double door opening onto gravel in front of an ivy wall"
+  },
+  "alt": {
+    "tr": "Sarmaşıkla örtülü bir duvar önünde, çakıl zemine bakan ve yatay tahtalı koyu bal rengi çift kanatlı ahşap kapak",
+    "en": "Dark honey double timber door with horizontal boards facing a gravel floor in front of a wall covered in ivy"
+  },
+  "caption": {
+    "tr": "Kapaklar yeşil duvara oturmuş, yatay tahtalı yüzey sade duruyor. Önünde açık renkli çakıl serili.",
+    "en": "The doors sit in the green wall and the horizontally boarded face stays plain. Pale gravel is spread in front."
+  },
+  "seoFilename": "sarmasikli-duvar-onunde-cakil-zemine-acilan-koyu-cift-kapak",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

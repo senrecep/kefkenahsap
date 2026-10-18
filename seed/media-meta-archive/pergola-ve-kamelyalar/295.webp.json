@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/295.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kiremit renkli şiltli çatılı sekizgen ahşap kamelya, bank ve taş döşeme",
+    "en": "Octagonal timber gazebo with a tile-coloured shingle roof, a bench and paving"
+  },
+  "alt": {
+    "tr": "Kiremit renkli şilte çatılı sekizgen ahşap kamelya, cam üst bölüm, kafes alt paneller, bank ve taş döşeme",
+    "en": "Octagonal timber gazebo with a tile-coloured shingle roof, a glazed upper section, lattice lower panels, a bench and paving"
+  },
+  "caption": {
+    "tr": "Çatı tepede sivrilerek bitiyor, alt kısım kafes panellerle örülü. Çevrede bank ve toprak saksı var.",
+    "en": "The roof narrows to a point at the top and the lower part is filled with lattice panels. A bench and a terracotta planter stand nearby."
+  },
+  "seoFilename": "kiremit-renkli-siltli-catili-sekizgen-kamelya-bank",
+  "tags": {
+    "type": [
+      "kamelya",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,41 @@
+{
+  "source": "Pergola ve Kamelyalar/868.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz duvarlı teras kafede ahşap pergola, masalar ve bitkiler",
+    "en": "Timber pergola on a white-walled cafe terrace with tables and plants"
+  },
+  "alt": {
+    "tr": "Beyaz duvarlı teras kafede açık renk ahşap pergola, altında masalar, sandalyeler ve süs bitkileri, arkada ağaçlık",
+    "en": "Light timber pergola on a white-walled cafe terrace, with tables, chairs and ornamental plants beneath and trees behind"
+  },
+  "caption": {
+    "tr": "Pergola çatısı düz ve çıtalı, direkler teras kenarında sıralı. Zemin açık renkli kareli döşeli.",
+    "en": "The pergola roof is flat and slatted with posts lined along the terrace edge. The floor is paved in pale squares."
+  },
+  "seoFilename": "beyaz-duvarli-teras-kafede-ahsap-pergola-masalar",
+  "tags": {
+    "type": [
+      "pergola",
+      "masa ve sandalye takımı"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "ticari mekân",
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

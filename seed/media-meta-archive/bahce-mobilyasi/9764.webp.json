@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/9764.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Parke zeminli odada kolçaklı ahşap bank ve alçak sehpa",
+    "en": "Timber bench with arms and a low table in a room with a parquet floor"
+  },
+  "alt": {
+    "tr": "Geniş pencereli, koyu parke zeminli bir odada kolçaklı, çıtalı sırtlı ahşap bank ile önünde dikdörtgen alçak sehpa duruyor",
+    "en": "A timber bench with arms and a slatted back and a low rectangular table in a room with a dark parquet floor"
+  },
+  "caption": {
+    "tr": "Bank ve sehpa aynı koyu ahşap tonunda, iç mekânda sergileniyor. Pencerenin önündeki bu düzen bir oturma köşesi oluşturuyor.",
+    "en": "The bench and table share the same dark timber tone and are displayed indoors. Set before the window, they make a seating corner."
+  },
+  "seoFilename": "parke-zeminli-odada-kolcakli-ahsap-bank-ve-alcak-sehpa",
+  "tags": {
+    "type": [
+      "bank",
+      "sehpa"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

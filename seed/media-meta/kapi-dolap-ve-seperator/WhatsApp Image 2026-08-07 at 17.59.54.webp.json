@@ -1,0 +1,37 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 17.59.54.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Teras için çift kapaklı ahşap dolap",
+    "en": "Two-door wooden cabinet for a terrace"
+  },
+  "alt": {
+    "tr": "Teras zemininde duran, siyah menteşe ve sürgülü kolları olan koyu kahverengi çift kapaklı ahşap dolap",
+    "en": "Dark brown two-door wooden cabinet on a terrace floor with black hinges and latch handles"
+  },
+  "caption": {
+    "tr": "Teras için yaptığımız çift kapaklı dolap. Kapaklar dikey çıtalı, menteşe ve kollar siyah demir, ceviz tonunda bir koruyucu uygulandı.",
+    "en": "A two-door cabinet we built for a terrace, with vertical slatted doors, black iron hinges and handles, finished in a walnut-toned stain."
+  },
+  "seoFilename": "teras-cift-kapakli-ahsap-dolap",
+  "tags": {
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "teras",
+      "dış mekan"
+    ],
+    "finish": [
+      "ceviz tonu vernik",
+      "siyah demir menteşe"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

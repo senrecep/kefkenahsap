@@ -1,0 +1,35 @@
+{
+  "source": "Kapi Dolap ve Seperator/13292.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Bahçede yatay çıtalı ahşap kapama",
+    "en": "Horizontal slat timber enclosure in a garden"
+  },
+  "alt": {
+    "tr": "Ev duvarının dibinde, çimenlik üzerinde duran yatay çıtalı koyu ahşap kapama",
+    "en": "Dark timber enclosure with horizontal slats beside a house wall on the lawn"
+  },
+  "caption": {
+    "tr": "Duvar dibindeki kapama aralıklı yatay çıtalarla yapıldı, önünde küçük bir ağaç duruyor.",
+    "en": "The enclosure by the wall is made of spaced horizontal slats, with a small tree in front."
+  },
+  "seoFilename": "bahce-yatay-citali-koyu-ahsap-kapama",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "koyu ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

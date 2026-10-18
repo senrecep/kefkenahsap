@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/14377.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Betona sabitlenmiş kahverengi piket kapı",
+    "en": "Brown picket gate fixed to concrete"
+  },
+  "alt": {
+    "tr": "Beton zemine metal ayaklarla sabitlenmiş, kahverengi cilalı çıtalı kapı, arkada yeşillik",
+    "en": "Brown varnished slatted gate fixed to a concrete floor with metal feet, with greenery behind"
+  },
+  "caption": {
+    "tr": "Kapı ve yan çıtalar metal ayak plakalarıyla betona bağlanmış.",
+    "en": "The gate and its side pickets are bolted to the concrete with metal foot plates."
+  },
+  "seoFilename": "betona-sabitlenmis-piket-kapi-kahverengi",
+  "tags": {
+    "type": [
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

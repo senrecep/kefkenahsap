@@ -1,0 +1,35 @@
+{
+  "file": "15-1.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ahşap direkli çayır çiti",
+    "en": "Wooden post fence around a grass field"
+  },
+  "alt": {
+    "tr": "Yeşil çayırı çevreleyen, yuvarlak ahşap direklere zeytin yeşili şeritlerle çekilmiş çit; arkada ağaçlık alan var",
+    "en": "Fence of round wooden posts with olive-green bands enclosing a grass field, with trees in the background"
+  },
+  "caption": {
+    "tr": "Yuvarlak ahşap direklere yeşil şeritler gerilerek yapılmış çit, ağaçlık bir arazide çayırı çevreliyor.",
+    "en": "A fence built from round wooden posts and green bands stretched between them, enclosing a grass field in a wooded area."
+  },
+  "seoFilename": "ahsap-direkli-cayir-citi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "çayır",
+      "açık alan"
+    ],
+    "finish": [
+      "doğal"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

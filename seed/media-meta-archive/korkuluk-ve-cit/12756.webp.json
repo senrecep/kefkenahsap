@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/12756.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz boyalı ayaklı kafes panel, atölye merdiveni önünde",
+    "en": "White-painted lattice panel on feet in front of the workshop ladder"
+  },
+  "alt": {
+    "tr": "Atölyede ahşap merdivenin önünde, kırmızımsı betonda duran beyaz boyalı çaprazlı kafes panel; sol ayağı yere basıyor",
+    "en": "A white-painted lattice panel with diagonal slats standing on reddish concrete in front of a timber ladder in the workshop"
+  },
+  "caption": {
+    "tr": "Panel iki bölümlü, çaprazlar eşit ve düzgün. Yan taraftan bakınca kalınlığı ve ayağı görünüyor.",
+    "en": "The panel is in two sections and the diagonals are even and neat. Seen from the side its thickness and foot are visible."
+  },
+  "seoFilename": "beyaz-boyali-ayakli-kafes-panel-atolye-merdiveni",
+  "tags": {
+    "type": [
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

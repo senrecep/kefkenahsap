@@ -1,0 +1,37 @@
+{
+  "file": "IMG_20180503_114721.jpg1_.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe katında zemine yakın ahşap deck",
+    "en": "Low wooden deck on a garden-level terrace"
+  },
+  "alt": {
+    "tr": "Çim bahçeye açılan alçak ahşap deck üzerinde masa, iki sandalye ve pembe sardunyalı saksılar",
+    "en": "Low wooden deck beside a lawn with a small table, two chairs and pots of pink geraniums"
+  },
+  "caption": {
+    "tr": "Zemin kattaki dairenin önüne, çimle aynı hizada döşenmiş deck. Üzerine masa, iki sandalye ve sardunya saksıları yerleştirilmiş.",
+    "en": "A deck laid in front of a ground-floor flat, just above the lawn, furnished with a small table, two chairs and geranium pots."
+  },
+  "seoFilename": "bahce-zemin-kat-ahsap-deck",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras",
+      "konut",
+      "dış mekan"
+    ],
+    "finish": [
+      "doğal ton",
+      "vernik"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

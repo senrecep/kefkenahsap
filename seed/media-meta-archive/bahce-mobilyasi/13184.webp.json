@@ -1,0 +1,35 @@
+{
+  "source": "Ireko-Teak/13184.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Paslanmaz buzdolabı ve bulaşık makineli dış mutfak",
+    "en": "Outdoor kitchen with a stainless fridge and dishwasher"
+  },
+  "alt": {
+    "tr": "Çıtalı ahşap dolapların arasına yerleştirilmiş paslanmaz buzdolabı ve bulaşık makinesi olan dış mutfak tezgâhı",
+    "en": "Outdoor kitchen counter with a stainless steel fridge and a dishwasher set between slatted timber cabinets"
+  },
+  "caption": {
+    "tr": "Tezgâhın ortasında eviye var, altında paslanmaz çelik iki kapaklı buzdolabı duruyor. Sağ uçta bulaşık makinesi yer alıyor.",
+    "en": "There is a sink in the middle of the counter with a two-door stainless steel fridge beneath it. A dishwasher sits at the right-hand end."
+  },
+  "seoFilename": "dis-mutfak-tezgahi-paslanmaz-buzdolabi-ve-bulasik-makinesi",
+  "tags": {
+    "type": [
+      "dış mutfak / mangal alanı"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.6
+}

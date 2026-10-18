@@ -1,0 +1,40 @@
+{
+  "source": "Kopru ve Iskele/762.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çamurlu şantiye ardında göl boyunca korkuluklu iskele",
+    "en": "Railed pier along the lake behind a muddy building site"
+  },
+  "alt": {
+    "tr": "Tekerlek izli, toprak yığınlı şantiye zemininin ardında göl boyunca uzanan alçak korkuluklu ahşap iskele; arkada tepeler",
+    "en": "Low-railed timber pier running along the lake behind a building site of earth heaps and tyre tracks, hills in the background"
+  },
+  "caption": {
+    "tr": "İskele çalışma alanının gerisinde, suyun hemen kenarında. Önde toprak yığınları ve tekerlek izleri görünüyor.",
+    "en": "The pier lies beyond the work area, right at the water's edge. Earth heaps and tyre tracks are in the foreground."
+  },
+  "seoFilename": "camurlu-santiye-ardinda-gol-boyunca-iskele",
+  "tags": {
+    "type": [
+      "iskele",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

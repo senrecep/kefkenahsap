@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/8927.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaza boyanmış yatay cephe kaplaması yakın çekim",
+    "en": "Close view of white-painted horizontal facade cladding"
+  },
+  "alt": {
+    "tr": "Beyaz boyalı, yüzeyi hafif pürüzlü yatay ahşap cephe kaplamasının üst kenarda bir oluk ile yakın çekimi",
+    "en": "Close view of white-painted horizontal timber facade cladding with a slightly rough surface and a gutter along the top edge"
+  },
+  "caption": {
+    "tr": "Tahtaların bindirme hatları yatay gölge çizgileri oluşturuyor.",
+    "en": "The overlaps between the boards create horizontal shadow lines."
+  },
+  "seoFilename": "beyaza-boyanmis-yatay-ahsap-cephe-kaplamanin-yakin-cekimi",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

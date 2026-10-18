@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/3926.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz kenarında turuncu kahve deck, arkada bambu",
+    "en": "Orange-brown deck at the pool edge, with bamboo behind"
+  },
+  "alt": {
+    "tr": "Mavi mozaik havuzun kenarında uzanan turuncu kahverengi deck yüzeyi; arkada bambu çit ve yapı",
+    "en": "Orange-brown deck surface along the edge of a blue mosaic pool, with a bamboo screen and a building behind"
+  },
+  "caption": {
+    "tr": "Tahtalar havuzun uzun kenarına paralel döşenmiş ve yüzey cilanın ışığını yansıtıyor. Havuzun içinde ışık armatürleri ve mozaik seçiliyor.",
+    "en": "The boards are laid parallel to the long edge of the pool and the surface reflects the light of the finish. Pool lights and the mosaic show inside the pool."
+  },
+  "seoFilename": "havuz-kenarinda-turuncu-kahve-deck-ve-bambu-citi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

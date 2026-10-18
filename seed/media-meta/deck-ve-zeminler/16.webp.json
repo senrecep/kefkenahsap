@@ -1,0 +1,37 @@
+{
+  "file": "16.webp",
+  "category": "deck-ve-zeminler",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe için ahşap açık hava duş kabini ve zemin decki",
+    "en": "Outdoor wooden garden shower enclosure and deck floor"
+  },
+  "alt": {
+    "tr": "Bahçede metal çemberlerle çevrilmiş kavisli ahşap duş kabini ve deck zemin platformu.",
+    "en": "Curved outdoor wooden shower cabin with metal bands and matching timber deck flooring."
+  },
+  "caption": {
+    "tr": "Bahçe ve havuz kenarı için emprenyeli ahşaptan üretilen kavisli duş kabini; metal kuşakları ve entegre deck zemin ızgarasıyla montajı tamamlanmış hali.",
+    "en": "Curved outdoor garden shower stall built with pressure-treated timber, reinforced with metal hoops and fitted over a custom wooden deck base."
+  },
+  "seoFilename": "ahsap-bahce-dusu-deck-zemin",
+  "tags": {
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "havuz kenarı"
+    ],
+    "finish": [
+      "emprenye"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.88
+}

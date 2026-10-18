@@ -1,0 +1,36 @@
+{
+  "file": "WhatsApp-Image-2021-04-30-at-20.41.55-3.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Halat dolgulu dış merdiven korkuluğu ve ahşap küpeşte",
+    "en": "Outdoor stair railing with cable infill and wooden handrail"
+  },
+  "alt": {
+    "tr": "Gri taş basamaklı bahçe merdiveninde metal direkli, yatay çelik halatlı korkuluk ve üzerinde ahşap küpeşte",
+    "en": "Garden stairs with gray stone steps, a metal post cable railing and a wooden handrail on top"
+  },
+  "caption": {
+    "tr": "Bahçe merdiveni için yapılan korkuluk: metal direkler arasında yatay çelik halatlar, üstte ise yuvarlatılmış hatlı ahşap küpeşte var.",
+    "en": "A railing made for a garden staircase: horizontal steel cables run between metal posts, topped with a wooden handrail with softened edges."
+  },
+  "seoFilename": "bahce-merdiveni-halatli-korkuluk-ahsap-kupeste",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "merdiven"
+    ],
+    "finish": [
+      "vernikli",
+      "doğal ahşap tonu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

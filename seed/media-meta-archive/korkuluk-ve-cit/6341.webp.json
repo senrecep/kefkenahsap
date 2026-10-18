@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/6341.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çatıdaki havalandırma kanallarını çevreleyen ahşap çıta kafes",
+    "en": "Timber slat screen around rooftop ventilation ducts"
+  },
+  "alt": {
+    "tr": "Kiremit çatıda metal havalandırma kanallarının çevresine kurulmuş, yatay ve çapraz çıtalı ahşap kafes; arkada sokak ve evler",
+    "en": "Timber screen of horizontal and diagonal slats built around metal ventilation ducts on a tiled roof"
+  },
+  "caption": {
+    "tr": "Kafes kanalları üç yandan çevreliyor ve çatıdan görünümü gizliyor. Çıtalar açık renk, yeşilimsi tonlu.",
+    "en": "The screen surrounds the ducts on three sides and hides them from view. The slats are light in colour with a greenish tone."
+  },
+  "seoFilename": "catidaki-havalandirma-kanallarini-cevreleyen-cita-kafes",
+  "tags": {
+    "type": [
+      "kafes / paravan"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

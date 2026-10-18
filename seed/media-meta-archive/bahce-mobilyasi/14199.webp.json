@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/14199.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Uzatmalı ahşap masa tablası, bahçe çiti yanında",
+    "en": "Extendable timber tabletop beside the garden fence"
+  },
+  "alt": {
+    "tr": "Çit ve taş duvarın önündeki çimde, açılır parçalı turuncu ahşap masa tablası",
+    "en": "Orange timber tabletop with extension leaves on the lawn in front of a fence and stone wall"
+  },
+  "caption": {
+    "tr": "Tabla açılır parçalardan oluşuyor ve cilalı. Arkada bahçe çiti ile duvar görünüyor.",
+    "en": "The top has extension leaves and a varnished finish. A garden fence and a wall are visible behind."
+  },
+  "seoFilename": "uzatmali-ahsap-masa-tablasi-bahce-citi-yaninda",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

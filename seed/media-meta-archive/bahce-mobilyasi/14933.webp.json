@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/14933.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bahçede beyaz bloktan ocaklı fırın",
+    "en": "Garden oven with a hob built of white block"
+  },
+  "alt": {
+    "tr": "Bahçede, beyaz boyalı bloktan örülmüş ocaklı fırın ve altında üç ahşap kapaklı dolap",
+    "en": "Oven with a hob built of white-painted block in a garden, with three timber-doored cabinets beneath"
+  },
+  "caption": {
+    "tr": "Beyaz boyalı yapı sağ tarafta bacalı bir odun fırınına dönüşüyor. Dolap kapakları koyu vernikli ahşap, önünde çıplak toprak var.",
+    "en": "On the right, the white-painted structure rises into a wood-fired oven with a chimney. The cabinet doors are dark varnished timber and bare earth lies in front."
+  },
+  "seoFilename": "bahcede-beyaz-bloktan-ocakli-firin-ve-ahsap-kapakli-alt",
+  "tags": {
+    "type": [
+      "dış mutfak / mangal alanı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.5
+}

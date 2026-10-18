@@ -1,0 +1,40 @@
+{
+  "source": "Kopru ve Iskele/8030.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dikey çıtalı korkuluklu köprü, havuz üstünde yakın açı",
+    "en": "Bridge with vertical-slat railing over the pool, close angle"
+  },
+  "alt": {
+    "tr": "Su dolu havuzun üzerinde dikey çıtalı korkuluğu olan ahşap köprü; yan destek ayakları suya iniyor, arkada bina",
+    "en": "Timber bridge over a water-filled pool with a vertical-slat railing, its side support legs going down into the water"
+  },
+  "caption": {
+    "tr": "Korkuluk sık dikey çıtalarla örülmüş ve üstte küpeşteyle bitiyor. Köprü deck şeridine iki yandan oturuyor.",
+    "en": "The railing is built of closely spaced vertical slats and ends in a handrail. The bridge rests on the deck strip at both sides."
+  },
+  "seoFilename": "dikey-citali-korkuluklu-kopru-havuz-ustunde-yakin-aci",
+  "tags": {
+    "type": [
+      "köprü",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

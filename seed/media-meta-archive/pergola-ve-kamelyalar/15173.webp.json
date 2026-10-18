@@ -1,0 +1,33 @@
+{
+  "source": "Pergola ve Kamelyalar/15173.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Kamelya içinden bahçe manzarası",
+    "en": "Garden view from inside a gazebo"
+  },
+  "alt": {
+    "tr": "Lambri tavanı, ışınsal kirişleri ve çapraz korkuluklarıyla bir kamelyanın içinden çimenlik bahçe",
+    "en": "A lawn garden seen from inside a gazebo with a timber-lined ceiling, radiating rafters and cross-braced railings"
+  },
+  "caption": {
+    "tr": "Kamelyanın kirişleri tepede birleşiyor, saçak altında çapraz dolgular dolaşıyor. Korkulukların ardında yeni düzenlenmiş bir bahçe var.",
+    "en": "The gazebo's rafters meet at the top, with cross-bracing running under the eaves. Beyond the railings lies a newly planted garden."
+  },
+  "seoFilename": "kamelya-ici-capraz-korkuluk-bahce",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

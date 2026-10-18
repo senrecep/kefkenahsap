@@ -1,0 +1,39 @@
+{
+  "source": "Ireko-Teak/14421.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çıtalı ahşap tavan altında hasır avizeler ve oval masa",
+    "en": "Wicker pendant lamps and an oval table under a slatted timber ceiling"
+  },
+  "alt": {
+    "tr": "Çıtalı ahşap tavanın altında iki hasır avize, oval ahşap yemek masası ve sandalyeler, yanda çıtalı bölme",
+    "en": "Two wicker pendant lamps under a slatted timber ceiling, with an oval wooden dining table, chairs and a slatted screen"
+  },
+  "caption": {
+    "tr": "Masa ve sandalyeler açık renk ahşaptan, kenarda bitkiler ve çıtalı bir paravan var.",
+    "en": "The table and chairs are in light-toned wood, with plants and a slatted screen along the edge."
+  },
+  "seoFilename": "citali-ahsap-tavan-hasir-avize-oval-masa",
+  "tags": {
+    "type": [
+      "pergola",
+      "masa ve sandalye takımı",
+      "tavan kaplaması / lambri"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

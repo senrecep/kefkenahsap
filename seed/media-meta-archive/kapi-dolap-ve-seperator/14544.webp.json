@@ -1,0 +1,35 @@
+{
+  "source": "Kapi Dolap ve Seperator/14544.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Duvar üstünde eğimli ahşap paravan",
+    "en": "Sloped timber screen on top of a wall"
+  },
+  "alt": {
+    "tr": "Taş kaplı duvarın üstüne oturan, eğimli üst kenarlı ve yatay çıtalı ahşap paravan",
+    "en": "Timber screen with horizontal slats and a sloped top edge set on a stone-faced wall"
+  },
+  "caption": {
+    "tr": "Paravan duvarın üstüne yatay çıtalarla yapıldı, üst kenarı eğimli kesildi.",
+    "en": "The screen sits on top of the wall, built from horizontal slats with a sloped top edge."
+  },
+  "seoFilename": "duvar-ustu-egimli-ahsap-paravan",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "koyu ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

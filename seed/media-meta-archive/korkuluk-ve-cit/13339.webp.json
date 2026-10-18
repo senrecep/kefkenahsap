@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/13339.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çelik halatlı korkuluk ve turuncu ahşap küpeşte",
+    "en": "Steel-cable railing with an orange timber handrail"
+  },
+  "alt": {
+    "tr": "Gri basamaklı dış merdivenin kenarında yatay çelik halatlar ve cilalı ahşap küpeşte",
+    "en": "Horizontal steel cables and a varnished timber handrail beside an outdoor staircase with grey treads"
+  },
+  "caption": {
+    "tr": "Küpeşte basamakların eğimini izliyor, halatlar ahşap taşıyıcı ve metal direklerde geçiyor.",
+    "en": "The handrail follows the slope of the steps, and the cables run through the metal posts."
+  },
+  "seoFilename": "celik-halatli-korkuluk-ahsap-kupeste",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "merdiven"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

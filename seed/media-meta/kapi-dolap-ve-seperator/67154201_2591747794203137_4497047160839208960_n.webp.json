@@ -1,0 +1,36 @@
+{
+  "file": "67154201_2591747794203137_4497047160839208960_n.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Kırmızı çatılı ahşap köpek kulübesi",
+    "en": "Wooden dog house with red roof"
+  },
+  "alt": {
+    "tr": "Kırmızı kaplamalı beşik çatılı, yatay tahtalı ve kemerli kapılı küçük ahşap köpek kulübesi, karo zemin üzerinde",
+    "en": "Small wooden dog house with a red gable roof, horizontal boards and an arched door, standing on a paved floor"
+  },
+  "caption": {
+    "tr": "Yatay tahta kaplamalı, kırmızı çatılı ahşap köpek kulübesi. Kemerli küçük kapısında siyah demir menteşe ve sürgü var.",
+    "en": "A wooden dog house clad in horizontal boards with a red roof. The small arched door has black iron hinges and a latch."
+  },
+  "seoFilename": "ahsap-kopek-kulubesi-kirmizi-catili",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "dış mekan",
+      "restoran önü",
+      "bahçe"
+    ],
+    "finish": [
+      "vernik",
+      "siyah demir menteşe"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.8
+}

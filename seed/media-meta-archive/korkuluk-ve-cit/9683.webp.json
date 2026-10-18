@@ -1,0 +1,39 @@
+{
+  "source": "Kapi Dolap ve Seperator/9683.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş sütunlar arasında bölmeli açık renk ahşap çift kanat kapı, çöp kutulu",
+    "en": "Light panelled double timber gate between stone piers, with a bin beside it"
+  },
+  "alt": {
+    "tr": "Koyu taş sütunlar arasında, emprenyeli çam görünümlü açık renk bölmeli çift kanatlı ahşap kapı; sağda mavi torbalı çöp kutusu",
+    "en": "A light-coloured panelled double timber gate that looks like pressure-treated pine between dark stone piers"
+  },
+  "caption": {
+    "tr": "Kapının her kanadı dikey ve yatay çıtalarla bölmelere ayrılmış, aralar açık. Siyah menteşeler sütunlara sabitlenmiş.",
+    "en": "Each leaf of the gate is divided into panels by vertical and horizontal slats with open gaps. Black hinges are fixed to the piers."
+  },
+  "seoFilename": "tas-sutunlar-arasinda-bolmeli-acik-renk-cift-kanat-kapi",
+  "tags": {
+    "type": [
+      "bahçe kapısı"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

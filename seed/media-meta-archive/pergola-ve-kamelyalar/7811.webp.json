@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/7811.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çatı kirişleri altında cam bölmeli açık duş armatürü",
+    "en": "Open shower fixture with a glass screen under roof beams"
+  },
+  "alt": {
+    "tr": "Ahşap çatı kirişlerinin altında cam bölmeli ve ahşap kaplı duş alanı, duvarda yağmurlama başlığı",
+    "en": "Shower area with a glass screen and timber cladding under timber roof beams, with a rain shower head on the wall"
+  },
+  "caption": {
+    "tr": "Duş alanı açık hava çatısının altına alınmış, duvar ahşap kaplı. Çatı çıtaları aralıklı.",
+    "en": "The shower area is set under an open-air roof with timber-clad walls. The roof slats are spaced."
+  },
+  "seoFilename": "cati-kirisleri-altinda-cam-bolmeli-acik-dus",
+  "tags": {
+    "type": [
+      "pergola",
+      "duş / soyunma kabini"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

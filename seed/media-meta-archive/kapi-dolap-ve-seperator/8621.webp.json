@@ -1,0 +1,35 @@
+{
+  "source": "Kapi Dolap ve Seperator/8621.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Duvara monte dikey tahtalı, metal askılı askılık",
+    "en": "Wall-mounted coat rack of vertical boards with metal hooks"
+  },
+  "alt": {
+    "tr": "Duvara asılı, altı ayrı dikey ahşap tahtadan yapılmış ve üst-alt uçlarında metal askıları olan askılık",
+    "en": "Wall-mounted coat rack made of six separate vertical timber boards with metal hooks at their top and bottom ends"
+  },
+  "caption": {
+    "tr": "Tahtalar iki yatay çıtayla birbirine bağlı, her birinin iki ucunda askı var. Ahşabın tonları tahtadan tahtaya değişiyor.",
+    "en": "The boards are joined by two horizontal rails with a hook at each end. The tone of the timber varies from board to board."
+  },
+  "seoFilename": "duvara-monte-dikey-tahtali-metal-askili-askilik",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.5
+}

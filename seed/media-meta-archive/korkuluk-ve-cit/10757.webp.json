@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/10757.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz çıtalı çit ve yapım aşamasındaki ahşap basamak-kapı iskeleti, çim alanda",
+    "en": "White-slat fence and a timber step-and-gate frame under construction on a lawn"
+  },
+  "alt": {
+    "tr": "Çim bahçeyi çeviren beyaz boyalı alçak çit ve alçak duvarın üzerine kurulan, çapraz destekli ahşap kapı iskeleti",
+    "en": "A low white-painted fence around a lawn garden and a braced timber gate frame being built on top of a low wall"
+  },
+  "caption": {
+    "tr": "Duvar üzerinde ahşap çerçevenin dikmeleri ve çaprazı yerinde, kapı henüz kapatılmamış. Önünde bir tahta blok duruyor.",
+    "en": "The posts and diagonal brace of the timber frame are in place on the wall and the gate has not yet been closed. A timber block stands in front."
+  },
+  "seoFilename": "beyaz-citali-cit-ve-yapim-asamasinda-kapi-iskeleti",
+  "tags": {
+    "type": [
+      "çit",
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

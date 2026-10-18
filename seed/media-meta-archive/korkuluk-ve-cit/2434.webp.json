@@ -1,0 +1,39 @@
+{
+  "source": "Kapi Dolap ve Seperator/2434.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yapım aşamasında sivri uçlu dikey tahtalardan uzun ahşap çit",
+    "en": "Long timber fence of pointed vertical boards under construction"
+  },
+  "alt": {
+    "tr": "Toprak ve demir şiltelerin yanında, beton kaide üzerine sıralanan sivri uçlu dikey tahtalı uzun ahşap çit",
+    "en": "A long timber fence of pointed vertical boards being lined up on a concrete plinth beside soil and reinforcing bars"
+  },
+  "caption": {
+    "tr": "Çit tahtaları kaideye eşit aralıkla çakılıyor, hat uzağa doğru küçülerek gidiyor. Zeminde inşaat demiri ve toprak var.",
+    "en": "The fence boards are fixed to the plinth at even gaps and the line shrinks into the distance. Reinforcing bar and soil lie on the ground."
+  },
+  "seoFilename": "yapim-asamasinda-sivri-uclu-dikey-tahtali-uzun-cit",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

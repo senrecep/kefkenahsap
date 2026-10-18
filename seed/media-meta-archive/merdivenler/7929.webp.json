@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/7929.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beton duvar önünde merdiven ve cam kapıya sahanlık",
+    "en": "Stairs against a concrete wall with a landing at the glass door"
+  },
+  "alt": {
+    "tr": "Beton duvar önünde çaprazlı ahşap merdiven; cam kapının önünde küçük bir ahşap sahanlık",
+    "en": "Timber stairs with a cross-braced railing against a concrete wall, with a small timber landing in front of the glass door"
+  },
+  "caption": {
+    "tr": "Merdiven beton duvara paralel iniyor, alt ucunda cam kapıya açılan küçük bir sahanlık var. İş henüz bitmemiş.",
+    "en": "The stairs run down parallel to the concrete wall with a small landing at the bottom opening onto the glass door. The work is not finished yet."
+  },
+  "seoFilename": "beton-duvar-onunde-caprazli-ahsap-merdiven-cam-kapi-sahanlik",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

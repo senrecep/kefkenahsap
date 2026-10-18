@@ -1,0 +1,33 @@
+{
+  "source": "Pergola ve Kamelyalar/268.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Kafes panelli pergola altında teras",
+    "en": "Terrace under a pergola with lattice panels"
+  },
+  "alt": {
+    "tr": "Açık renk zeminli terasta, ahşap kafes panellerle bölünmüş, düz kirişli pergola altı",
+    "en": "Space under a flat-beamed pergola on a pale terrace, divided by timber lattice panels"
+  },
+  "caption": {
+    "tr": "Pergolanın dikmeleri arasına yerleştirilen kafes paneller terası bölümlere ayırıyor. Arkada bahçe ve şemsiyeli oturma alanı görünüyor.",
+    "en": "Lattice panels set between the pergola posts divide the terrace into sections. A garden and a seating area with an umbrella lie beyond."
+  },
+  "seoFilename": "kafes-panelli-pergola-alti-teras",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "teras",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

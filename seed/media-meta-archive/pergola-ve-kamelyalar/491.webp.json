@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/491.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Shingle çatılı korkuluklu açık renk ahşap kamelya",
+    "en": "Light timber gazebo with a shingle roof and low rails"
+  },
+  "alt": {
+    "tr": "Açık renk ahşap kamelya, shingle çatı, alt kısmı tahta korkuluklu; yanında bir motosiklet park etmiş",
+    "en": "Light timber gazebo with a shingle roof and boarded lower rails, with a scooter parked beside it"
+  },
+  "caption": {
+    "tr": "Kamelya kaldırım kenarındaki yeşil alanın üstünde duruyor. Çatı alın tahtası ve ahşap yan kafeslerle bitirilmiş.",
+    "en": "The gazebo stands on a green strip beside the pavement. The roof is finished with a fascia board and timber side frames."
+  },
+  "seoFilename": "shingle-catili-korkuluklu-acik-renk-kamelya",
+  "tags": {
+    "type": [
+      "kamelya",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

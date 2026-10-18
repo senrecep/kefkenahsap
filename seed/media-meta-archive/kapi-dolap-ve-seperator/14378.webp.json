@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/14378.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sarı cephede beyaz boyalı ahşap kayıtlı iki pencere",
+    "en": "Two white-painted timber windows on a yellow facade"
+  },
+  "alt": {
+    "tr": "Sarı boyalı cephede, taş kaplı lambri üzerinde duran beyaz ahşap doğramalı iki pencere, kare cam bölmeli",
+    "en": "Two white-painted timber windows with square panes set on a yellow facade above a stone plinth"
+  },
+  "caption": {
+    "tr": "Pencereler beyaz boyalı ahşap doğramalı, camlar küçük karelere bölünmüş. Alttaki taş kaplama cepheyi yerden ayırıyor.",
+    "en": "The windows have white-painted timber frames with small square panes. The stone plinth below lifts the facade from the ground."
+  },
+  "seoFilename": "sari-cephede-beyaz-boyali-ahsap-iki-pencere",
+  "tags": {
+    "type": [
+      "pencere / panjur"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

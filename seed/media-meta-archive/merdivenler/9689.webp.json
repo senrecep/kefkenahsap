@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/9689.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Merdiven altı yatay tahta kaplı çift kapaklı depo",
+    "en": "Double-door storage under the stairs, boarded horizontally"
+  },
+  "alt": {
+    "tr": "Merdivenin altı yatay tahtayla kaplanmış çift kapaklı bir depoya çevrilmiş; üstte çaprazlı korkuluk",
+    "en": "The space under the stairs boarded horizontally and turned into a double-door storage cupboard"
+  },
+  "caption": {
+    "tr": "Merdiven altı eğimli kirişe uyacak biçimde tahtayla kapatılmış, iki kapak kilitlenebiliyor.",
+    "en": "The space under the stairs is closed in to follow the sloping stringer, and the two doors have a latch."
+  },
+  "seoFilename": "merdiven-alti-yatay-tahta-kapli-cift-kapakli-depo",
+  "tags": {
+    "type": [
+      "merdiven",
+      "gömme dolap / gardırop"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

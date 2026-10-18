@@ -1,0 +1,37 @@
+{
+  "file": "8e9b0d34-9705-43e1-935a-7c3010a32e4b.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Otel odasında arkadan aydınlatmalı TV paneli ve çalışma masası",
+    "en": "Hotel room backlit TV panel and writing desk"
+  },
+  "alt": {
+    "tr": "Otel odasında duvara monte arkadan aydınlatmalı koyu panel, TV, uzun çalışma masası, bavul sehpası ve balık sırtı parke zemin",
+    "en": "Hotel room with a backlit dark wall panel and TV, a long desk, a luggage rack and herringbone parquet flooring"
+  },
+  "caption": {
+    "tr": "Otel odası için hazırlanan, arkasından sıcak ışık veren TV paneli, uzun çalışma masası ve bavul sehpası. Zeminde koyu tonlu balık sırtı parke var.",
+    "en": "A TV panel with warm backlighting, a long desk and a luggage rack made for a hotel room. The floor is dark herringbone parquet."
+  },
+  "seoFilename": "otel-odasi-aydinlatmali-tv-paneli-calisma-masasi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "otel odası",
+      "iç mekan",
+      "otel mobilyası"
+    ],
+    "finish": [
+      "koyu cila",
+      "arkadan aydınlatma",
+      "balık sırtı parke"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.72
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/7874.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yuvarlak direklere gerilmiş yeşil bantlı çayır çiti",
+    "en": "Pasture fence with green tape on round posts"
+  },
+  "alt": {
+    "tr": "Yeşil çayırın kenarında yuvarlak ahşap direklere gerilmiş yeşil bantlar ve ince teller, arkada ağaçlar",
+    "en": "Green tapes and thin wires stretched between round timber posts at the edge of a green meadow, with trees behind"
+  },
+  "caption": {
+    "tr": "Çit çayırı çevreliyor, önde kalın bir direk hattın ölçüsünü veriyor.",
+    "en": "The fence encloses the meadow, with a thick post in front giving the scale of the line."
+  },
+  "seoFilename": "yuvarlak-direklere-gerilmis-yesil-bantli-cayir-citi",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

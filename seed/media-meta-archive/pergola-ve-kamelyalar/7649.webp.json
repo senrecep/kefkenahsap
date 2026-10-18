@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/7649.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Hasır örtülü koyu pergola ve çapraz korkuluk, deniz manzaralı teras",
+    "en": "Dark pergola with a reed cover and an X-braced rail on a sea-view terrace"
+  },
+  "alt": {
+    "tr": "Beyaz evin terasında hasır örtülü koyu ahşap pergola, çapraz çıtalı korkuluk, palmiyeler ve deniz",
+    "en": "Dark timber pergola with a reed cover on the terrace of a white house, with an X-braced railing, palm trees and the sea"
+  },
+  "caption": {
+    "tr": "Teras masası pergolanın altında duruyor. Korkuluktaki X desenli çıtalar denize bakan manzarayı kesmiyor.",
+    "en": "A terrace table sits under the pergola. The X-patterned rail slats leave the sea view open."
+  },
+  "seoFilename": "hasir-ortulu-koyu-pergola-capraz-korkuluk-teras",
+  "tags": {
+    "type": [
+      "pergola",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

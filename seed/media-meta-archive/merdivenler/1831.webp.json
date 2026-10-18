@@ -1,0 +1,36 @@
+{
+  "source": "Ahsap Yapilar/1831.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş merdiven ve ahşap giriş çatısı",
+    "en": "Stone steps and timber entrance roof"
+  },
+  "alt": {
+    "tr": "Bahçede taş basamaklı merdiven, girişte ahşap çatı ve çıtalı çit; yukarıda balkonlu ahşap ev",
+    "en": "Stone steps in a garden with a timber entrance roof and picket fence, and a timber house with balconies above"
+  },
+  "caption": {
+    "tr": "Taş basamaklar yukarıdaki ahşap eve çıkıyor. Girişte ahşap bir çatı, yanda çıtalı bir çit var.",
+    "en": "Stone steps lead up to the timber house. A timber roof marks the entrance and a picket fence runs alongside."
+  },
+  "seoFilename": "tas-merdiven-ahsap-giris-cati-ahsap-ev",
+  "tags": {
+    "type": [
+      "merdiven",
+      "ahşap ev / bungalov"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

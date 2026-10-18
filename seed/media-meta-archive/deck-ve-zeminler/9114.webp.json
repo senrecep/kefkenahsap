@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/9114.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deck tahtalarının aralığından görünen taşıyıcı çıta",
+    "en": "Support batten visible between deck boards"
+  },
+  "alt": {
+    "tr": "Dik çekilmiş turuncu tonlu deck tahtaları, aralıktan altta çapraz duran açık renkli taşıyıcı çıta görünüyor",
+    "en": "Upright shot of orange-toned deck boards, with a pale cross batten visible through the gap beneath"
+  },
+  "caption": {
+    "tr": "Tahta araları su ve havanın geçmesine izin veriyor. Altta tahtaları taşıyan çıta seçiliyor.",
+    "en": "The gaps let water and air through. The batten that carries the boards shows underneath."
+  },
+  "seoFilename": "deck-tahtalari-araligindan-gorunen-tasiyici-cita",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

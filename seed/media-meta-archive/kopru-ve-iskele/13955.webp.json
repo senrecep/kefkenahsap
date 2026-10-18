@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/13955.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deck önünden çime uzanan basamak plakaları, bank ve mangal uzakta",
+    "en": "Stepping slabs from the lawn to a deck, with a bench and grill beyond"
+  },
+  "alt": {
+    "tr": "Çimde sıralı koyu basamak plakaları; uzakta deck üzerinde ahşap bank ve mangal, yanda kesme çalı sırası",
+    "en": "Dark stepping slabs across the lawn leading to a deck with a timber bench and a grill, a clipped hedge at the side"
+  },
+  "caption": {
+    "tr": "Plakalar çimden decke doğru bir hat çiziyor. Decke vardığınızda bank ve mangal alanı karşılıyor.",
+    "en": "The slabs draw a line from the lawn to the deck. At the deck you reach a bench and barbecue area."
+  },
+  "seoFilename": "deck-onunden-cime-basamak-plakalari-bank-mangal",
+  "tags": {
+    "type": [
+      "yürüyüş yolu",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

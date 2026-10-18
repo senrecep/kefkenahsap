@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12504.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ahşap direğe oturan eğik deck kirişleri",
+    "en": "Sloping deck joists resting on a timber post"
+  },
+  "alt": {
+    "tr": "Toprak zeminde ahşap direk üzerine oturan eğik deck kirişleri ve yatay çerçeve, arkada taş sütun",
+    "en": "Sloping deck joists resting on a timber post over soil, with a horizontal frame and a stone pillar behind"
+  },
+  "caption": {
+    "tr": "Direk, ön kirişin altından destek veriyor ve çerçeve sıfır seviyeye göre ayarlanıyor. Bu hâliyle yer eğimi iskeletle düzeltiliyor.",
+    "en": "The post props the front beam from below as the frame is set to level. In this way the frame takes up the slope of the ground."
+  },
+  "seoFilename": "ahsap-direge-oturan-egik-deck-kirisleri",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

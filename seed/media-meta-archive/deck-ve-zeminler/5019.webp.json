@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/5019.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz çevresi koyu kahve deck, yüksekten görünüş",
+    "en": "Dark brown deck around a pool, seen from above"
+  },
+  "alt": {
+    "tr": "Yukarıdan bakıldığında mavi havuzu saran koyu kahverengi deck ve karşı kıyıdaki kavisli platform; üzerinde bank ve masa",
+    "en": "From above, dark brown deck around a blue pool and a curved platform on the far side with a bench and table"
+  },
+  "caption": {
+    "tr": "Deck şeridi havuzun üç kenarını çevreliyor, platform suya doğru yarım daire çiziyor. Çimen ve çit arka planı oluşturuyor.",
+    "en": "The deck strip surrounds three sides of the pool and the platform makes a half circle towards the water. Lawn and a fence form the background."
+  },
+  "seoFilename": "havuz-cevresi-koyu-kahve-deck-yuksekten-gorunus",
+  "tags": {
+    "type": [
+      "deck",
+      "bank",
+      "sehpa"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

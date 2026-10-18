@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/14714.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Söğüt altında göle bakan deck",
+    "en": "Deck facing the lake under a willow"
+  },
+  "alt": {
+    "tr": "Sarkık dallı bir söğüdün altında, göle bakan cilalı deck; kenarında halatlı ahşap korkuluk ve bir oturma köşesi",
+    "en": "Polished deck facing a lake beneath a willow with hanging branches, with a timber railing strung with rope"
+  },
+  "caption": {
+    "tr": "Korkuluk direkleri halatla birbirine bağlı. Deckin sağ köşesinde ahşap bir bank ve kafes görünüyor.",
+    "en": "The railing posts are linked by rope. A timber bench and trellis show in the right corner of the deck."
+  },
+  "seoFilename": "sogut-altinda-goze-bakan-cilali-deck-halat-korkuluk",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

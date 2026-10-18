@@ -1,0 +1,36 @@
+{
+  "file": "50.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ahşap kazık bahçe çiti",
+    "en": "Round timber garden palisade fence"
+  },
+  "alt": {
+    "tr": "Eğimli çim bahçe sınırına yan yana dikilmiş silindirik ahşap kazıklardan oluşan bahçe çiti.",
+    "en": "Garden boundary fence made of vertical round wooden stakes along a sloped lawn."
+  },
+  "caption": {
+    "tr": "Eğimli bahçe sınırını çevrelemek için uygulanan dikey silindirik ahşap kazık çit çalışması.",
+    "en": "Vertical round timber palisade fence installed along the sloped edge of a lawn and garden."
+  },
+  "seoFilename": "ahsap-kazik-bahce-citi",
+  "tags": {
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "emprenye"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

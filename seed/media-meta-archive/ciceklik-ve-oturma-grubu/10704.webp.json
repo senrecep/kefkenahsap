@@ -1,0 +1,39 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/10704.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yan yana birleştirilen uzun çiçeklik bölmeleri",
+    "en": "Long planter sections joined side by side"
+  },
+  "alt": {
+    "tr": "Sarmaşıklı duvarın önünde yan yana dizilen uzun ahşap çiçeklik bölmeleri, montaj sürüyor",
+    "en": "Long timber planter sections lined up in front of an ivy-covered wall while assembly is under way"
+  },
+  "caption": {
+    "tr": "Bölmeler sırayla bağlanıyor, içleri siyah astarlı. Önde gazete ve boya kutusu duruyor.",
+    "en": "The sections are being joined one after another, with black liners inside. Newspaper and a paint tin lie in front."
+  },
+  "seoFilename": "yan-yana-birlestirilen-uzun-ciceklik-bolmeleri-montaj",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

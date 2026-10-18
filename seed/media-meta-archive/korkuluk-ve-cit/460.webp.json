@@ -1,0 +1,39 @@
+{
+  "source": "Korkuluk ve Cit/460.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Açık toprak sahayı çevreleyen yatay kirişli çit",
+    "en": "Horizontal-rail fence around an open dirt site"
+  },
+  "alt": {
+    "tr": "Geniş, düzeltilmiş kırmızı toprak sahanın kenarını çeviren yatay kirişli ahşap çit, arkada pembe çatılı yapılar ve ağaçlar",
+    "en": "Horizontal-rail timber fence around the edge of a wide levelled red-soil site, with pink-roofed buildings and trees behind"
+  },
+  "caption": {
+    "tr": "Çit sahanın uzun kenarı boyunca iki sıra kirişle ilerliyor ve köşede dönüyor.",
+    "en": "The fence runs along the long side of the site with two rows of rails and turns at the corner."
+  },
+  "seoFilename": "acik-toprak-sahayi-cevreleyen-yatay-kirisli-cit",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

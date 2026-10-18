@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14066.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beton üzerinde ayarlı ayaklı deck alt yapısı",
+    "en": "Deck substructure on adjustable pedestals over concrete"
+  },
+  "alt": {
+    "tr": "Beton zemine ayarlanabilir ayaklarla oturtulmuş, açık yeşil emprenyeli kirişlerden oluşan deck iskeleti",
+    "en": "Deck frame of pale green pressure-treated joists set on adjustable pedestals over a concrete slab"
+  },
+  "caption": {
+    "tr": "Kirişler eşit aralıklarla sıralanmış, her birinin altında plastik ayak var. Üstüne tahtalar henüz döşenmemiş.",
+    "en": "The joists are evenly spaced, each resting on plastic pedestals. The boards have not been laid on top yet."
+  },
+  "seoFilename": "beton-uzerinde-ayarli-ayakli-deck-alt-yapisi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

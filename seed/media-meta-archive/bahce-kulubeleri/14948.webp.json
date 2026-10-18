@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/14948.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Açık arazide koyu tonlu ahşap depo ve basamak platformu",
+    "en": "Dark-stained timber shed on open ground with a step platform"
+  },
+  "alt": {
+    "tr": "Yatay tahtalı koyu ahşap depo, önünde alçak bir ahşap basamak platformu; arkada ağaçlar var",
+    "en": "A dark timber shed with horizontal boards and a low wooden step platform in front, with trees behind"
+  },
+  "caption": {
+    "tr": "Depo koyu bir vernikle işlenmiş. Önündeki alçak platform kapıya basamak görevi görüyor.",
+    "en": "The shed has a dark varnish finish. The low platform in front works as a step to the door."
+  },
+  "seoFilename": "koyu-ahsap-depo-acik-arazi-basamak-platformu",
+  "tags": {
+    "type": [
+      "bahçe kulübesi / depo"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14974.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölyede koyu boyalı yatay çıtalı iki ahşap kutu",
+    "en": "Two dark-stained slatted timber boxes in the workshop"
+  },
+  "alt": {
+    "tr": "Atölye zeminde yan yana duran, yatay çıtalı ve üstü tahtalı, koyu kahve boyalı iki ahşap kutu",
+    "en": "Two dark brown stained timber boxes with horizontal slats and a boarded top standing side by side on a workshop floor"
+  },
+  "caption": {
+    "tr": "Kutuların gövdesi yatay çıtalarla örülmüş, üstü düz tahtalı. Atölyede montaj öncesi hazırlanıyor.",
+    "en": "The boxes have bodies of horizontal slats and flat boarded tops. They are being prepared in the workshop before fitting."
+  },
+  "seoFilename": "atolyede-koyu-boyali-yatay-citali-iki-ahsap-kutu",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

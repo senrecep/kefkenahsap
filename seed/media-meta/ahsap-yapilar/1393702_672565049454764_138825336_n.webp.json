@@ -1,0 +1,35 @@
+{
+  "file": "1393702_672565049454764_138825336_n.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Çatıda yalıtım levhası üzerine OSB döşeme",
+    "en": "OSB panels being laid over insulation boards on a roof"
+  },
+  "alt": {
+    "tr": "Mavi yalıtım levhaları üzerinde ahşap çıtalar ve çıtalara vidalanan OSB panel, kenarda çalışan usta",
+    "en": "OSB panel being fixed onto timber battens over blue insulation boards, with a worker kneeling at the edge"
+  },
+  "caption": {
+    "tr": "Yalıtım levhalarının üzerine ahşap çıtalar çakıldı, OSB paneller çıtalara tek tek sabitleniyor.",
+    "en": "Timber battens run over the insulation boards, and OSB panels are fixed onto them one by one."
+  },
+  "seoFilename": "yalitim-levhasi-ustu-osb-dosemesi",
+  "tags": {
+    "wood": [
+      "OSB"
+    ],
+    "setting": [
+      "çatı",
+      "dış mekan",
+      "şantiye"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

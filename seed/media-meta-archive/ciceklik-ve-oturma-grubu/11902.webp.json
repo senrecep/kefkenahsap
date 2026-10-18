@@ -1,0 +1,33 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/11902.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölye tezgâhında cilasız açık renkli tabure",
+    "en": "Unfinished light-coloured stool on the workshop bench"
+  },
+  "alt": {
+    "tr": "Atölye tezgâhının üzerinde duran, henüz vernik sürülmemiş açık renkli ahşap tabure",
+    "en": "Light timber stool without varnish standing on the workshop bench"
+  },
+  "caption": {
+    "tr": "Taburenin oturağı kalın tahtadan, ayakları kesik oyuklu iki yan tahta. Ölçü bandı yanında duruyor.",
+    "en": "The seat is a thick board and the legs are two side boards with a notch cut out. A tape measure lies beside it."
+  },
+  "seoFilename": "atolye-tezgahinda-vernik-uygulanmamis-acik-renkli-ahsap",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.55
+}

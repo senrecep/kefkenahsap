@@ -1,0 +1,37 @@
+{
+  "file": "42.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede çapraz korkuluklu ahşap merdiven ve geçit",
+    "en": "Wooden garden stairs and walkway with cross-braced railings"
+  },
+  "alt": {
+    "tr": "Taş duvarlı bahçede çapraz korkuluklu ahşap merdiven, sahanlık ve geçit; çevresinde palmiye ve çiçekli bitkiler var",
+    "en": "Wooden stairs, landing and walkway with cross-braced railings in a stone-walled garden among palms and flowering shrubs"
+  },
+  "caption": {
+    "tr": "Eğimli bahçede taş duvarların arasından geçen, çapraz korkuluklu ahşap merdiven ve sahanlıklar.",
+    "en": "Wooden stairs and landings with cross-braced railings winding through the stone walls of a sloped garden."
+  },
+  "seoFilename": "bahce-ahsap-merdiven-capraz-korkuluk",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "taş duvar",
+      "eğimli arazi"
+    ],
+    "finish": [
+      "doğal ton",
+      "çapraz korkuluk"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.88
+}

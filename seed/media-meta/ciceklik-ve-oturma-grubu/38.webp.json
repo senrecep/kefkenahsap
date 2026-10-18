@@ -1,0 +1,37 @@
+{
+  "file": "38.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Emprenyeli çam dikdörtgen çiçeklik",
+    "en": "Rectangular pressure-treated pine planter"
+  },
+  "alt": {
+    "tr": "Açık yeşil tonlu emprenyeli ahşaptan yapılmış büyük dikdörtgen çiçeklikler, arkada taş duvar ve kırmızı çiçekler",
+    "en": "Large rectangular planter boxes in green-tinted treated wood, with a stone wall and red flowers behind"
+  },
+  "caption": {
+    "tr": "Kalın ahşap kirişlerin üst üste dizilmesiyle yapılmış dikdörtgen çiçeklikler, teras ve bahçe düzenlemesi için hazır.",
+    "en": "Rectangular planters built from stacked thick timber beams, ready for a terrace or garden layout."
+  },
+  "seoFilename": "emprenyeli-cam-dikdortgen-ciceklik",
+  "tags": {
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras",
+      "bahçe",
+      "açık hava"
+    ],
+    "finish": [
+      "emprenye"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

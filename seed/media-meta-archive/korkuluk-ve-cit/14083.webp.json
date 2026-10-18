@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/14083.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çocuk oyun alanı önünde beyaz piket çit",
+    "en": "White picket fence in front of a children’s play area"
+  },
+  "alt": {
+    "tr": "Taş duvar üstünde çocuk oyun alanını çevreleyen beyaz boyalı çıtalı çit, arkada renkli oyuncaklar ve salıncak",
+    "en": "White-painted picket fence on a stone wall enclosing a children’s play area, with colourful toys and a swing behind"
+  },
+  "caption": {
+    "tr": "Çit oyun alanını yoldan ayırıyor, çıtalar sık aralıklarla sıralanmış.",
+    "en": "The fence separates the play area from the road, with the pickets set close together."
+  },
+  "seoFilename": "beyaz-piket-cit-cocuk-oyun-alani-onunde",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

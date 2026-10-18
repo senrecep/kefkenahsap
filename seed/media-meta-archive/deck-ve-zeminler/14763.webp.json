@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/14763.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz çakıl yanında koyu deck yolu",
+    "en": "Dark deck path beside white pebbles"
+  },
+  "alt": {
+    "tr": "Yuvarlak çalılar ve beyaz çakıl şeridi boyunca uzanan, ışık gölgeli koyu deck yolu; bina kenarında ahşap konsol ve sandalye",
+    "en": "Dark deck path with sun and shade along round shrubs and a white pebble strip, with a timber console"
+  },
+  "caption": {
+    "tr": "Tahtalar yola enine döşenmiş ve yağlı yüzeyde güneş çizgileri var. Yol uzakta evin girişine doğru daralıyor.",
+    "en": "The boards are laid across the path and the oiled surface carries lines of sunlight. The path narrows towards the house entrance in the distance."
+  },
+  "seoFilename": "beyaz-cakil-yaninda-koyu-deck-yolu-ahsap-konsol",
+  "tags": {
+    "type": [
+      "deck",
+      "yürüyüş yolu"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

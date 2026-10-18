@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/446.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kepenkli pencereli, kırmızı kapılı ahşap ev",
+    "en": "Timber house with a red door and a shuttered window"
+  },
+  "alt": {
+    "tr": "Kırmızı kapılı, yan duvarında kepenkli penceresi olan küçük ahşap ev; kauçuk zeminde",
+    "en": "Small timber house with a red door and a shuttered window on its side wall, on a rubber floor"
+  },
+  "caption": {
+    "tr": "Evin yan yüzünde küçük kepenkli bir pencere var, ön yüzünde kemerli kırmızı kapı. Çatı pul biçimli tahtalarla örtülü.",
+    "en": "The side of the house has a small shuttered window and the front a red arched door. The roof is covered in scale-shaped boards."
+  },
+  "seoFilename": "kirmizi-kapili-kepenkli-pencereli-kucuk-ahsap-kulube-lastik",
+  "tags": {
+    "type": [
+      "çocuk oyun evi"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

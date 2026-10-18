@@ -1,0 +1,35 @@
+{
+  "source": "Kapi Dolap ve Seperator/12829.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yakın açıdan telörgülü ahşap kafes çerçevesi",
+    "en": "Close-angle view of a wire-mesh timber cage frame"
+  },
+  "alt": {
+    "tr": "Atölye masasında duran, kızıl kahve ahşap çerçeveli ve telörgülü kafesin yakın görüntüsü, arkada televizyon ve raflar",
+    "en": "Close view of a red-brown timber-framed wire-mesh cage on a workshop table, with a television and shelves behind"
+  },
+  "caption": {
+    "tr": "Köşeler geçmeli birleşmiş, tel örgü çerçeveye gergin oturmuş. Kafesin üstü ayrıca örgülü.",
+    "en": "The corners are jointed and the mesh sits taut in the frame. The top is also covered with mesh."
+  },
+  "seoFilename": "yakin-acidan-telorgulu-ahsap-kafes-cercevesi",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.5
+}

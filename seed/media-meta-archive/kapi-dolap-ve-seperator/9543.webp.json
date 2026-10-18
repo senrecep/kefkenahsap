@@ -1,0 +1,38 @@
+{
+  "source": "Kapi Dolap ve Seperator/9543.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Eğimli çatılı ahşap depo, önünde çakıl şerit",
+    "en": "Pitched-roof timber store with a gravel strip in front"
+  },
+  "alt": {
+    "tr": "Çimde duran, yatay tahtalı ve tek eğimli çatılı vernikli ahşap depo; önünde çakıl şerit, arkada kiremit çatılı evler",
+    "en": "Varnished horizontal-board timber store with a single-pitch roof on the lawn, gravel strip in front and tiled roofs behind"
+  },
+  "caption": {
+    "tr": "Depo yatay tahtalı, kapaklar ortada birleşiyor. Çatı öne doğru eğimli, zemin çakılla ayrılmış.",
+    "en": "The store is clad in horizontal boards and the doors meet in the middle. The roof slopes forward and the base is edged with gravel."
+  },
+  "seoFilename": "egimli-catili-ahsap-depo-cakil-serit",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)",
+      "bahçe kulübesi / depo"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

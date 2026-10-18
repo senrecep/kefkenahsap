@@ -1,0 +1,36 @@
+{
+  "file": "5-2.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Havuz kenarında ahşap deck zemin",
+    "en": "Wooden deck flooring beside a pool"
+  },
+  "alt": {
+    "tr": "Mavi mozaikli havuzun köşesinde oluklu ahşap deck, yanında çiçek tarhı, doğal taş döşeme ve iki şezlong",
+    "en": "Grooved wooden deck at the corner of a blue mosaic pool, with a flower bed, natural stone paving and two loungers"
+  },
+  "caption": {
+    "tr": "Havuz kenarındaki traverten taşın yanına döşenmiş oluklu ahşap deck. Taş zemin ve çiçek tarhıyla bahçeye bağlanıyor.",
+    "en": "Grooved wooden decking laid next to the travertine pool coping, blending into the garden with stone paving and a flower bed."
+  },
+  "seoFilename": "havuz-kenari-ahsap-deck-zemin",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "havuz kenarı",
+      "bahçe",
+      "dış mekan"
+    ],
+    "finish": [
+      "oluklu yüzey",
+      "doğal ahşap"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.88
+}

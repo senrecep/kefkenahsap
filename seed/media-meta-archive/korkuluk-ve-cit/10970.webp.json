@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/10970.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Siyah demir çerçeveli, ahşap dolgulu bahçe kapısı ve taş sütun",
+    "en": "Garden gate with black iron frame and wooden infill beside a stone pier"
+  },
+  "alt": {
+    "tr": "Taş sütunun iki yanında siyah çerçeveli, turuncu-kahve ahşap dolgulu bahçe kapıları; dairesel demir motifler",
+    "en": "Garden gates with black frames and orange-brown timber infill on both sides of a stone pier"
+  },
+  "caption": {
+    "tr": "Ahşap dolgular dikey tahtalardan, demir çerçeve ve daire motifleriyle bir arada duruyor. Taş sütunun üstünde bir lamba var.",
+    "en": "The timber infill is vertical boards set in an iron frame with circular motifs. A lamp sits on top of the stone pier."
+  },
+  "seoFilename": "siyah-demir-cerceveli-ahsap-dolgulu-bahce-kapisi",
+  "tags": {
+    "type": [
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

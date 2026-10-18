@@ -1,0 +1,37 @@
+{
+  "source": "Pergola ve Kamelyalar/7427.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz evin kapısı önünde geniş vernikli ahşap pergola",
+    "en": "Wide varnished timber pergola in front of a white house door"
+  },
+  "alt": {
+    "tr": "Beyaz sıvalı evin kapı önünde geniş, vernikli ahşap pergola; pencerede demir parmaklık ve yan tarafta ağaç",
+    "en": "Wide varnished timber pergola in front of the door of a white rendered house, with iron window bars and a tree at the side"
+  },
+  "caption": {
+    "tr": "Pergola kirişleri girişin üzerine uzanıyor ve kalın bir direğe oturuyor. Çatı çıtalı ve yarı açık.",
+    "en": "The pergola beams reach over the entrance and rest on a thick post. The roof is slatted and half open."
+  },
+  "seoFilename": "beyaz-evin-kapisi-onunde-genis-vernikli-pergola",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

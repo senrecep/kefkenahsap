@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/14248.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Açık renkli deck üzerinde üç ahşap şezlong, taş duvar önünde",
+    "en": "Three timber loungers on light decking in front of a stone wall"
+  },
+  "alt": {
+    "tr": "Havuz kenarındaki açık renkli deck üzerinde, taş duvarın önünde sıralanmış üç kahverengi ahşap şezlong",
+    "en": "Three brown timber loungers lined up on light decking by a pool edge, in front of a stone wall and a green screen panel"
+  },
+  "caption": {
+    "tr": "Üç şezlong yan yana, aynı yöne bakacak şekilde sıralanmış. Altlarındaki açık renkli deck zemin havuz kenarını kaplıyor.",
+    "en": "The three loungers are lined up side by side facing the same way. The light decking beneath them covers the pool edge."
+  },
+  "seoFilename": "acik-renkli-deck-uzerinde-uc-ahsap-sezlong-tas-duvar-onunde",
+  "tags": {
+    "type": [
+      "şezlong",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı",
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/2208.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kıyıda ahşap merdiven ve çaprazlı korkuluk",
+    "en": "Timber steps and cross-braced railing on the shore"
+  },
+  "alt": {
+    "tr": "Taşlık kıyı zemininde yukarıdan görünen yeşilimsi ahşap merdiven ve çapraz çıtalı köşe korkuluk, arkada çalılıklı yamaç",
+    "en": "Greenish timber steps and cross-braced corner railing seen from above on rocky shore ground"
+  },
+  "caption": {
+    "tr": "Korkuluk merdiven sahanlığını iki yanından çeviriyor, kalın direk köşeyi sabitliyor.",
+    "en": "The railing wraps the stair landing on two sides, and a thick post anchors the corner."
+  },
+  "seoFilename": "kiyida-tas-zemin-ustunde-ahsap-merdiven-ve-caprazli-korkuluk",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "merdiven"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

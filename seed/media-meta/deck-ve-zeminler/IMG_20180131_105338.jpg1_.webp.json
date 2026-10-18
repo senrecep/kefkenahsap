@@ -1,0 +1,36 @@
+{
+  "file": "IMG_20180131_105338.jpg1_.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe decking zemininde yağ uygulaması",
+    "en": "Applying oil to a garden deck"
+  },
+  "alt": {
+    "tr": "Çimlik bahçede kızıl kahverengi ahşap deck zeminin yarısına yağ sürerken diz çökmüş bir usta, yanında bir kova duruyor",
+    "en": "Craftsman kneeling on a garden wood deck, applying finish to the reddish-brown boards, with a bucket beside him"
+  },
+  "caption": {
+    "tr": "Köşeleri 45 derece birleştirilmiş çerçeveli deck zeminde son kat koruyucu uygulaması sürüyor. Yağ sürülen kısım rengini belirgin şekilde koyulaştırdı.",
+    "en": "Finish is being applied to a deck with a mitred border frame. The treated section has visibly deepened in color."
+  },
+  "seoFilename": "bahce-deck-zemin-yag-uygulamasi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "çimlik",
+      "dış mekan"
+    ],
+    "finish": [
+      "yağ",
+      "koruyucu"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

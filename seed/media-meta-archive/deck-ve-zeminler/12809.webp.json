@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12809.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kırmızı boyalı çelik çerçeve üzerinde kirişler",
+    "en": "Joists on a red-painted steel frame"
+  },
+  "alt": {
+    "tr": "Taş zemin kenarında, kırmızı boyalı çelik taşıyıcı çerçeve ve üzerine yerleştirilen ahşap kirişler",
+    "en": "Red-painted steel support frame with timber joists set on it beside a stone floor"
+  },
+  "caption": {
+    "tr": "Deck'in taşıyıcısı ahşap yerine çelik profillerden kurulmuş. Üzerindeki kirişler uzun yönde sıralanıyor.",
+    "en": "The support of this deck is built from steel profiles instead of timber. The joists on top run lengthwise."
+  },
+  "seoFilename": "kirmizi-boyali-celik-cerceve-uzerinde-kirisler",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

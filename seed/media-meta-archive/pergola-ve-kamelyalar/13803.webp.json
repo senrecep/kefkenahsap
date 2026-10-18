@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/13803.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz kenarında kemerli pergola kirişleri, ahşap deck ve bank",
+    "en": "Arched pergola beams by a pool with timber deck and bench"
+  },
+  "alt": {
+    "tr": "Havuz kenarında kemer biçiminde bükülmüş pergola kirişleri, ahşap deck, bitkili ahşap saksılık ve bank",
+    "en": "Curved arched pergola beams beside a pool, with a timber deck, a planted timber planter and a bench"
+  },
+  "caption": {
+    "tr": "Kemerli kirişler pergolanın çatısını havuzun üzerine uzatıyor. Altta ahşap saksılık ve bank var.",
+    "en": "The arched beams carry the pergola roof out over the pool edge. A timber planter and a bench sit below."
+  },
+  "seoFilename": "havuz-kenarinda-kemerli-pergola-kirisleri-deck",
+  "tags": {
+    "type": [
+      "pergola",
+      "deck",
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

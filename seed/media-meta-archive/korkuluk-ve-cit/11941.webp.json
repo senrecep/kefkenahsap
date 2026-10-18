@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/11941.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çit boyunca uzanan telli ahşap çit, uzakta küçük kapı",
+    "en": "Wire-mesh timber fence along the hedge, with a small gate in the distance"
+  },
+  "alt": {
+    "tr": "Yaprakları kırmızımsı kesme çalının önünde çim şeridin kenarında uzanan telli ahşap çit; uzakta küçük bir kapı ve apartmanlar",
+    "en": "A wire-mesh timber fence along the edge of a lawn strip in front of a hedge with reddish leaves"
+  },
+  "caption": {
+    "tr": "Çit çalıyı çimden ayırıyor, tel örgü alçak ve sık. Çimde taş basamak plakaları ve bir bahçe lambası görünüyor.",
+    "en": "The fence separates the hedge from the lawn and the wire mesh is low and close. Stone stepping slabs and a garden lamp are visible on the lawn."
+  },
+  "seoFilename": "cit-boyunca-uzanan-telli-ahsap-cit-uzakta-kucuk-kapi",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

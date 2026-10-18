@@ -1,0 +1,33 @@
+{
+  "source": "Ahsap Yapilar/1576.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Hasır çatılı, taş kaplı tek katlı bina",
+    "en": "Single-storey stone-faced building with a thatched roof"
+  },
+  "alt": {
+    "tr": "Palmiyelerin arasında duran, taş kaplı duvarlı ve hasır çatılı tek katlı bina",
+    "en": "Single-storey building with stone-faced walls and a thatched roof among palm trees"
+  },
+  "caption": {
+    "tr": "Bina kapalı koyu bir kapıyla yola bakıyor. Alt kısmı taş kaplı, çatısı kuru ot ve hasırdan örülmüş.",
+    "en": "The building faces the path with a closed dark door. The lower part is stone-faced and the roof is made of dry grass and reed."
+  },
+  "seoFilename": "hasir-catili-tas-kapli-tek-katli-bina-palmiyeler",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.4
+}

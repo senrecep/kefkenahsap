@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14095.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yeni cilalanmış deck, kenarda bant",
+    "en": "Freshly finished deck with edge tape"
+  },
+  "alt": {
+    "tr": "Çimen kenarında beton üzerine döşenmiş, cilası yeni sürülmüş ıslak parlaklıkta deck",
+    "en": "Deck laid on concrete beside a lawn, with a wet-looking sheen from freshly applied finish"
+  },
+  "caption": {
+    "tr": "Tahtalar boyuna sıralanmış ve yüzey nemli parlıyor. Beton kenarda koruyucu bant şeridi duruyor.",
+    "en": "The boards run lengthwise and the surface gleams while still wet. A strip of protective tape lies along the concrete edge."
+  },
+  "seoFilename": "yeni-cilalanmis-deck-koruyucu-bant",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

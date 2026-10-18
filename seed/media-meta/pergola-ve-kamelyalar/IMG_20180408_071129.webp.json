@@ -1,0 +1,37 @@
+{
+  "file": "IMG_20180408_071129.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Yeşil shingle çatılı ahşap kamelya",
+    "en": "Wooden gazebo with green shingle roof"
+  },
+  "alt": {
+    "tr": "Yeşil shingle çatılı, kenarlarında korkuluk ve bank bulunan dörtgen ahşap kamelya, arkasında ahşap kaplı bir mangal ocağı",
+    "en": "Square wooden gazebo with a green shingle roof, railings and built-in benches, and a brick barbecue behind it"
+  },
+  "caption": {
+    "tr": "Kilit taşı zemin üzerine kurulu, iç kenarları boyunca sabit banklar olan ahşap kamelya. Çatısı yeşil shingle ile kaplı, yanında barbekü ocağı var.",
+    "en": "A wooden gazebo on interlocking paving stones, with fixed benches along the inner sides. The roof is covered in green shingles, and a barbecue stands beside it."
+  },
+  "seoFilename": "yesil-shingle-catili-ahsap-kamelya",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "dinlenme alanı",
+      "mangal alanı"
+    ],
+    "finish": [
+      "vernikli",
+      "shingle çatı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

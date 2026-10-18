@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/14402.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş döşeli yolda kafes yanlı ahşap pergola kemeri, arkada apartmanlar",
+    "en": "Lattice-sided pergola arch on a paved path with apartment blocks behind"
+  },
+  "alt": {
+    "tr": "Taş döşeli yolun üzerinde kafes yanlı ahşap pergola kemeri, çimlik alan ve arkada apartman blokları",
+    "en": "Lattice-sided timber pergola arch over a paved path, with a lawn and apartment blocks behind"
+  },
+  "caption": {
+    "tr": "Kemer yolu iki yandan çerçeveliyor, altında bir kiriş yere yatırılmış. Etrafta toprak işleri sürüyor.",
+    "en": "The arch frames the path on both sides, with a beam laid on the ground under it. Earthworks are still going on around."
+  },
+  "seoFilename": "tas-doseli-yolda-kafes-yanli-pergola-kemeri",
+  "tags": {
+    "type": [
+      "pergola",
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

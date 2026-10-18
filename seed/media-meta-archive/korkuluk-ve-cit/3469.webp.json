@@ -1,0 +1,35 @@
+{
+  "source": "Korkuluk ve Cit/3469.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Yuvarlak kazıklı alçak ahşap çit",
+    "en": "Low round post timber fence"
+  },
+  "alt": {
+    "tr": "Çakıllı bahçenin kenarında dikey yuvarlak kazıklardan yapılmış, üstü kapak tahtalı alçak ahşap çit",
+    "en": "Low timber fence of vertical round posts with a top cap rail along the edge of a gravel garden"
+  },
+  "caption": {
+    "tr": "Yan yana dizilmiş yuvarlak kazıklar bahçenin kenarını çeviriyor, üstteki kapak tahtası hattı tamamlıyor. Arkada sıra halinde iğne yapraklı fidanlar var.",
+    "en": "Round posts set side by side edge the garden and are finished with a cap rail, with a row of young conifers planted behind."
+  },
+  "seoFilename": "yuvarlak-kazikli-alcak-ahsap-cit-cakil-bahce",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ahşap"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

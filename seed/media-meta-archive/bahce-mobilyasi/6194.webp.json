@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/6194.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Fayans zeminde uzun, kapaklı ahşap bank sandık",
+    "en": "Long timber chest bench with lids on a tiled floor"
+  },
+  "alt": {
+    "tr": "Açık renkli seramik zeminli bir terasta, duvar boyunca uzanan üç kapaklı, açık tonlu ahşap kaplamalı uzun bank sandık",
+    "en": "A long timber chest bench with three lids in a light finish running along a wall on a pale ceramic-tiled terrace"
+  },
+  "caption": {
+    "tr": "Bank sandık üç ayrı kapaktan açılıyor, her bölmede eşya saklanabiliyor. Üst yüzey oturak olarak da kullanılıyor.",
+    "en": "The chest bench opens through three separate lids, and each compartment can store things. The top also serves as a seat."
+  },
+  "seoFilename": "fayans-zeminde-uzun-kapakli-ahsap-bank-sandik-acik-renkli",
+  "tags": {
+    "type": [
+      "bank",
+      "gömme dolap / gardırop"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

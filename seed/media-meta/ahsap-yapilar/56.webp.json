@@ -1,0 +1,34 @@
+{
+  "file": "56.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Beton zemin üzerinde ahşap çatı makasları ve taşıyıcı kolonlar",
+    "en": "Timber roof trusses and posts on a concrete base"
+  },
+  "alt": {
+    "tr": "Beton temel üzerinde ahşap kolonlar ve çatı makasları; çatının üstünde iki işçi, zeminde istiflenmiş kereste var.",
+    "en": "Timber posts and roof trusses on a concrete base, two workers on the roof and stacked lumber on the floor."
+  },
+  "caption": {
+    "tr": "Yapım aşamasındaki ahşap yapının çatı iskeleti. Makaslar kolonlara oturtulmuş, çatı kaplaması başlamış; zeminde kereste istifleri duruyor.",
+    "en": "Roof frame of a wooden building under construction. The trusses sit on the posts, roof decking has started, and lumber is stacked on the slab."
+  },
+  "seoFilename": "ahsap-cati-makaslari-kolonlar-yapim-asamasi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "şantiye",
+      "açık alan",
+      "göl kenarı",
+      "beton temel"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

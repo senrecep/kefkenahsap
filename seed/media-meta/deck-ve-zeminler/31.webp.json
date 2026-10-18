@@ -1,0 +1,36 @@
+{
+  "file": "31.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Parkta yuvarlak kazık korkuluklu ahşap merdiven",
+    "en": "Wooden park staircase with round log railings"
+  },
+  "alt": {
+    "tr": "Parkta eğimli arazide yuvarlak ahşap kazıklarla çevrilmiş, açık basamaklı ahşap merdiven ve çevresindeki çim alan",
+    "en": "Wooden staircase with open steps on a sloped park lawn, flanked by walls of upright round logs"
+  },
+  "caption": {
+    "tr": "Eğimli park arazisinde, iki yanı yuvarlak ahşap kazıklarla çevrilmiş basamaklı ahşap merdiven.",
+    "en": "A stepped wooden staircase on a sloped park site, bordered on both sides by upright round log posts."
+  },
+  "seoFilename": "park-merdiveni-yuvarlak-kazik-korkuluk-ahsap",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "park",
+      "bahçe",
+      "açık hava",
+      "merdiven"
+    ],
+    "finish": [
+      "naturel"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

@@ -1,0 +1,33 @@
+{
+  "source": "Ahsap Yapilar/14283.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ahşap saçak altında havuz kenarı oturma alanı",
+    "en": "Poolside seating area under a timber eave"
+  },
+  "alt": {
+    "tr": "Ahşap kaplı saçağın altından görünen, çitlerle çevrili bahçedeki masa ve sandalyeler, üstte geniş gökyüzü",
+    "en": "Table and chairs in a hedged garden seen from beneath a timber-clad eave, with wide sky above"
+  },
+  "caption": {
+    "tr": "Kadraj saçağın altından bahçeye bakıyor. Oturma alanı ve çit uzakta kalıyor.",
+    "en": "The frame looks from under the eave into the garden. The seating and hedge sit in the distance."
+  },
+  "seoFilename": "ahsap-sacak-altinda-havuz-kenari-oturma-alani",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.25
+}

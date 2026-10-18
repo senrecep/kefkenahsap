@@ -1,0 +1,37 @@
+{
+  "source": "Pergola ve Kamelyalar/6098.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çalılık önünde ahşap salıncak çatkısı",
+    "en": "Timber swing frame in front of shrubs"
+  },
+  "alt": {
+    "tr": "Çalılık ve çam ağacının önünde duran, yalnızca iskeleti görünen vernikli ahşap salıncak çatkısı",
+    "en": "Varnished timber swing frame, only the frame visible, in front of shrubs and a conifer"
+  },
+  "caption": {
+    "tr": "Çatkı A biçiminde ayaklara ve üstte çapraz bir kirişe oturuyor. Oturak henüz takılı değil.",
+    "en": "The frame rests on A-shaped legs with a diagonal beam on top. The seat is not fitted yet."
+  },
+  "seoFilename": "calilik-onunde-vernikli-ahsap-salincak-catkisi",
+  "tags": {
+    "type": [
+      "salıncak"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

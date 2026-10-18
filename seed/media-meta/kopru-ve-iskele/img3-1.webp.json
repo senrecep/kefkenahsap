@@ -1,0 +1,36 @@
+{
+  "file": "img3-1.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Havuz başında ahşap köprü ve kavisli deck",
+    "en": "Wooden bridge and curved deck around a pool"
+  },
+  "alt": {
+    "tr": "Bina önündeki serbest formlu havuzun üzerinde korkuluklu kemerli ahşap köprü, çevresinde kavisli ahşap deck",
+    "en": "Arched wooden bridge with railings over a free-form pool, surrounded by a curved wooden deck in front of a building"
+  },
+  "caption": {
+    "tr": "Bina önündeki havuzun kıvrımlı hattını izleyen ahşap deck ve havuzun üzerinden geçen korkuluklu küçük köprü.",
+    "en": "A wooden deck following the curved edge of the pool, with a small railed bridge crossing over the water."
+  },
+  "seoFilename": "havuz-ustu-ahsap-kopru-kavisli-deck",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "havuz",
+      "bahçe",
+      "otel",
+      "dış mekan"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

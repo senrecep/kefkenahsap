@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/9970.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Demir korkuluklu bahçe terasında kırmızı deck",
+    "en": "Red deck on a garden terrace with an iron railing"
+  },
+  "alt": {
+    "tr": "Demir korkuluğun ve taş sütunun yanında, çimenle çevrili kırmızı kahve deck; arka planda hasır oturma elemanı",
+    "en": "Red-brown deck beside an iron railing and stone pillar, surrounded by lawn, with wicker seating in the background"
+  },
+  "caption": {
+    "tr": "Deck terasın köşesinden çime doğru ilerliyor. Tahtalar çapraz bir hatla uzanıyor.",
+    "en": "The deck runs from the terrace corner toward the lawn, with boards on a diagonal line."
+  },
+  "seoFilename": "demir-korkuluklu-bahce-terasinda-kirmizi-deck",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "teras",
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

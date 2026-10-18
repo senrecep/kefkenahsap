@@ -1,0 +1,35 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/10523.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kavisli çıtalı taburenin oturağı ve çapraz ayakları, yakından",
+    "en": "Curved slatted stool seat and crossed legs up close"
+  },
+  "alt": {
+    "tr": "Kavisli ahşap çıtalardan oluşan tabure oturağı ve altındaki çapraz ayak birleşimi yakından görünüyor",
+    "en": "A close look at a stool seat made of curved wooden slats and the crossed leg joint beneath it"
+  },
+  "caption": {
+    "tr": "Çıtaların aralığı ve eğimi oturağı rahat yapıyor. Çapraz ayak bağlantısı yapıyı sağlam tutuyor.",
+    "en": "The spacing and curve of the slats make the seat comfortable. The crossed leg joint keeps the build solid."
+  },
+  "seoFilename": "kavisli-citali-tabure-oturak-yakin-capraz-ayak",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14180.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Pencere altında bal rengi deck",
+    "en": "Honey-coloured deck under a window"
+  },
+  "alt": {
+    "tr": "Gri zemin kenarında, pencere altındaki ahşap rafın önüne döşenmiş bal rengi cilalı deck",
+    "en": "Honey-toned varnished deck laid beside a grey surface, in front of a timber shelf under a window"
+  },
+  "caption": {
+    "tr": "Çimenin önünde duran küçük deck alanı yeni cilalanmış. Köşede bir sandalye ve çöp torbası duruyor.",
+    "en": "The small deck area in front of the lawn has just been finished. A chair and a rubbish bag stand in the corner."
+  },
+  "seoFilename": "pencere-altinda-bal-rengi-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

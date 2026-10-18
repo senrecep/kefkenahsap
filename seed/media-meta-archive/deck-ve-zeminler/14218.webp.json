@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/14218.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Gövdelerin çevresinde dolanan ahşap deck",
+    "en": "Timber deck winding around trunks"
+  },
+  "alt": {
+    "tr": "Çalı çitin yanında iki ağaç gövdesinin çevresinden geçen, açık renkli ahşap deck",
+    "en": "Pale timber deck passing around two tree trunks beside a hedge"
+  },
+  "caption": {
+    "tr": "Deck gövdelerin etrafında kare boşluklarla kesilmiş. Arkada ahşap bir yapının çatısı görünüyor.",
+    "en": "The deck is notched with square openings around the trunks. The roof of a timber building shows in the background."
+  },
+  "seoFilename": "govdelerin-cevresinde-ahsap-deck-cali-kenari",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "orman / kır"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/13083.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bahçenin ucunda çit önünde küçük deck",
+    "en": "Small deck at the far end of the garden by the hedge"
+  },
+  "alt": {
+    "tr": "Çimen bahçenin ucunda, çit önünde uzaktan görünen küçük ve açık renkli deck",
+    "en": "Small pale deck seen from a distance at the far end of a lawn garden in front of a hedge"
+  },
+  "caption": {
+    "tr": "Uzaktan bakınca deck bahçenin köşesinde kendi başına bir zemin oluşturuyor. Çevresinde yalnızca çim var.",
+    "en": "From a distance the deck stands as a floor of its own in the corner of the garden. Only lawn surrounds it."
+  },
+  "seoFilename": "bahcenin-ucunda-cit-onunde-kucuk-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

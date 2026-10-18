@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/9967.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş sütunun yanında kırmızı kahve cilalı deck",
+    "en": "Red-brown polished deck beside a stone pillar"
+  },
+  "alt": {
+    "tr": "Taş kaplı sütun ve demir korkuluğun yanında, yüzeyi ıslak gibi parlayan kırmızı kahve deck tahtaları",
+    "en": "Red-brown deck boards with a wet-look sheen beside a stone-clad pillar and an iron railing"
+  },
+  "caption": {
+    "tr": "Tahtalar koyu kırmızı bir tonla yenilenmiş, damar yüzeyde seçiliyor. Vida başları düzgün sıralı.",
+    "en": "The boards were refreshed in a deep red tone and the grain still shows. Screw heads sit in neat lines."
+  },
+  "seoFilename": "tas-sutunun-yaninda-kirmizi-kahve-cilali-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

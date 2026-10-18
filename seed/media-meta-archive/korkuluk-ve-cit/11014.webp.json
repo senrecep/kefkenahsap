@@ -1,0 +1,37 @@
+{
+  "source": "Merdivenler/11014.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Açık duran beyaz piket bahçe kapısı",
+    "en": "Open white picket garden gate"
+  },
+  "alt": {
+    "tr": "Taş duvarın yanında açık duran beyaz boyalı çıtalı kapı kanadı, arkada çimlik ve ev, önde gölgeli taş zemin",
+    "en": "White-painted picket gate leaf standing open beside a stone wall, with a lawn and a house behind"
+  },
+  "caption": {
+    "tr": "Kapı kanadı yana açılmış, bahçeye giden yol görünür hâle gelmiş.",
+    "en": "The gate leaf is swung aside, opening the way to the garden."
+  },
+  "seoFilename": "beyaz-piket-bahce-kapisi-acik-arkada-cimlik",
+  "tags": {
+    "type": [
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

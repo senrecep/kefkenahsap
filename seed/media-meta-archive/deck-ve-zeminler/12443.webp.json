@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/12443.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kumlu zemine döşenmiş koyu deck şeridi",
+    "en": "Dark deck strip laid on a sandy base"
+  },
+  "alt": {
+    "tr": "Çit boyunca uzanan, kumlu zemine döşenmiş koyu kahverengi deck şeridi",
+    "en": "Dark brown deck strip laid on a sandy base along a fence"
+  },
+  "caption": {
+    "tr": "Tahtalar yol boyunca enine döşenmiş ve kenarlar düz kesilmiş. Yolun yanındaki kum henüz düzeltilmemiş.",
+    "en": "The boards run across the path and the edges are cut straight. The sand beside the path has not been dressed yet."
+  },
+  "seoFilename": "kumlu-zemine-dosenmis-koyu-deck-seridi",
+  "tags": {
+    "type": [
+      "deck",
+      "yürüyüş yolu"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

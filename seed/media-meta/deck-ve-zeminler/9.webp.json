@@ -1,0 +1,35 @@
+{
+  "file": "9.webp",
+  "category": "deck-ve-zeminler",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Çim içi ahşap adım taşları ve yürüme yolu",
+    "en": "Wooden stepping walkway on garden lawn"
+  },
+  "alt": {
+    "tr": "Yeşil çimler üzerine aralıklarla dizilmiş dikdörtgen ahşap yürüme basamakları.",
+    "en": "Rectangular wooden stepping boards laid sequentially along a green lawn."
+  },
+  "caption": {
+    "tr": "Bahçe peyzajında çim alanın ezilmesini önleyen, doğal dokulu ahşap basamaklarla hazırlanmış yürüyüş hattı.",
+    "en": "A natural wooden pathway designed with stepping boards embedded into the garden lawn to protect the grass."
+  },
+  "seoFilename": "bahce-cim-ici-ahsap-yurume-yolu",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "çim alan"
+    ],
+    "finish": [
+      "ahşap yağı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

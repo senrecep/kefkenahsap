@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/5113.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bina girişinde fayans önünde deck",
+    "en": "Deck in front of tiles at a building entrance"
+  },
+  "alt": {
+    "tr": "Bina girişindeki fayans zeminin önüne döşenmiş kırmızımsı kahverengi ahşap deck; yanında lavanta bitkileri",
+    "en": "Reddish-brown timber deck laid in front of the tiled floor at a building entrance, with lavender plants beside it"
+  },
+  "caption": {
+    "tr": "Deck girişin önünde dikdörtgen bir paspas alanı gibi duruyor. Kenarında toprak ve yeşil bitkiler görünüyor.",
+    "en": "The deck sits in front of the entrance like a rectangular landing. Soil and green plants show along its edge."
+  },
+  "seoFilename": "bina-girisinde-fayans-onunde-kirmizimsi-ahsap-deck-lavanta",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

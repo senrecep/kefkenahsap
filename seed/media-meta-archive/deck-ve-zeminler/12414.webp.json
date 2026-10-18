@@ -1,0 +1,39 @@
+{
+  "source": "Korkuluk ve Cit/12414.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz ahşap evin sundurmasında yıpranmış deck zemini",
+    "en": "Weathered deck floor on the porch of a white timber house"
+  },
+  "alt": {
+    "tr": "Beyaz boyalı ahşap evin giriş sundurmasında beyaz korkuluk ve gri renkte yıpranmış zemin tahtaları",
+    "en": "Weathered grey floor boards on the entrance porch of a white-painted timber house, with a white railing"
+  },
+  "caption": {
+    "tr": "Zemin tahtaları solmuş ve griye dönmüş. Beyaz korkuluk ve duvar kaplaması durumunu koruyor.",
+    "en": "The floor boards have faded to grey. The white railing and wall cladding are in better condition."
+  },
+  "seoFilename": "beyaz-ahsap-evin-sundurmasinda-yipranmis-deck-zemini",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş",
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

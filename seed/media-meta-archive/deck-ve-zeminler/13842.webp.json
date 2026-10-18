@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/13842.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ağaç yanında güneşli cilalı dikdörtgen deck ve yeşil bank",
+    "en": "Sunny varnished rectangular deck by a tree with a green bench"
+  },
+  "alt": {
+    "tr": "Çimen üzerinde ağaç yanında güneşli, parlak turuncu kahverengi dikdörtgen deck; arkada yeşil bir bank",
+    "en": "Sunlit glossy orange-brown rectangular deck on the lawn beside a tree, with a green bench behind"
+  },
+  "caption": {
+    "tr": "Deck'in bir köşesi ağaç gövdesine göre girintili kesilmiş. Güneş, yaprak gölgeleriyle cilalı yüzeyde lekeler oluşturuyor.",
+    "en": "One corner of the deck is cut back to clear the tree trunk. The sun makes dappled patches with leaf shadows on the glossy surface."
+  },
+  "seoFilename": "agac-yaninda-gunesli-cilali-dikdortgen-deck-ve-yesil-bank",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

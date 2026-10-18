@@ -1,0 +1,36 @@
+{
+  "file": "1491728_672565209454748_1511458856_n.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Çatı çıkmalı tek katlı ahşap kabin",
+    "en": "Single-storey wooden cabin with roof overhang"
+  },
+  "alt": {
+    "tr": "Yeşilimsi emprenye tonunda yatay kaplamalı, geniş pencereli ve yanında sundurması olan tek katlı ahşap kabin",
+    "en": "Single-storey wooden cabin with horizontal cladding, a wide window and a side canopy, in a greenish treated-wood tone"
+  },
+  "caption": {
+    "tr": "Taş zemin üzerine kurulmuş, yatay kaplamalı ve çift kanatlı geniş pencereli ahşap kabin. Sol tarafında kolonlarla taşınan açık bir sundurma var.",
+    "en": "A wooden cabin on a stone-paved ground, clad in horizontal boards with a wide two-section window. An open canopy supported by posts extends on the left side."
+  },
+  "seoFilename": "ahsap-kabin-sundurmali-yatay-kaplama",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "açık alan",
+      "yamaç"
+    ],
+    "finish": [
+      "emprenye tonu",
+      "yatay kaplama"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

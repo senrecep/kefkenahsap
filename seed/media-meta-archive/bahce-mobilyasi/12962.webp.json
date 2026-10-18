@@ -1,0 +1,38 @@
+{
+  "source": "Ireko-Teak/12962.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beton atölye zemininde çıtalı ahşap şezlong ve oturma elemanları",
+    "en": "Slatted timber lounger and seating pieces on a concrete workshop floor"
+  },
+  "alt": {
+    "tr": "Beton atölye zemininde çıtalı ahşap şezlong, arkasında kırmızımsı vernikli koltuk iskeleti ve duvara yaslı bir panel",
+    "en": "On a concrete workshop floor, a slatted timber lounger with a reddish seat frame and a timber panel behind it"
+  },
+  "caption": {
+    "tr": "Şezlong çıtalı ve alçak, ayrı bir koltuk iskeleti ve yan masa yanında duruyor. Hepsi atölyede toplanmış durumda.",
+    "en": "The lounger is slatted and low, with a separate seat frame and side table next to it. All are gathered in the workshop."
+  },
+  "seoFilename": "beton-atolye-zemininde-citali-ahsap-sezlong-ve-oturma",
+  "tags": {
+    "type": [
+      "şezlong",
+      "oturma grubu"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

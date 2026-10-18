@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/12321.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapı girişi önünde dikdörtgen kahverengi deck",
+    "en": "Rectangular brown deck at a glass-door entrance"
+  },
+  "alt": {
+    "tr": "Cam kapı girişinin önünde çimene bitişik, kahverengi dikdörtgen ahşap deck",
+    "en": "Brown rectangular timber deck at a glass-door entrance, meeting the lawn"
+  },
+  "caption": {
+    "tr": "Deck evin duvarına yaslanıyor ve kapıdan çimene geçişi düzlüyor. Ön kenar çimenle düz bir hat çiziyor.",
+    "en": "The deck sits against the house wall and levels the way from the door onto the lawn. Its front edge runs straight along the grass."
+  },
+  "seoFilename": "cam-kapi-girisi-onunde-dikdortgen-kahverengi-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "giriş"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

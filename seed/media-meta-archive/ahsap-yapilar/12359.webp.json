@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/12359.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yatay lambri tahtalı açık renkli panel",
+    "en": "Light timber panel of horizontal tongue-and-groove boards"
+  },
+  "alt": {
+    "tr": "Yatay lambri tahtaları birleştirilerek yapılmış, duvara dayalı büyük açık renkli ahşap panel",
+    "en": "Large light timber panel made of horizontal cladding boards, leaning against a workshop wall"
+  },
+  "caption": {
+    "tr": "Tahtalar dil-yiv birleşimle yan yana gelmiş, yüzeyde budak izleri var. Panel atölyede duvara yaslanıyor.",
+    "en": "The boards are joined side by side and knots show on the surface. The panel rests against a wall in the workshop."
+  },
+  "seoFilename": "yatay-lambri-tahtali-acik-renkli-panel",
+  "tags": {
+    "type": [],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.4
+}

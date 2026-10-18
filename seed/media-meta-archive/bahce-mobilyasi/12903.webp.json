@@ -1,0 +1,39 @@
+{
+  "source": "Ireko-Teak/12903.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dikey şeritli kasa ve küçük oturak, arkada beyaz panolar ile yeşilimsi tahtalar",
+    "en": "Vertical-strip box and small seat with white boards and greenish planks behind"
+  },
+  "alt": {
+    "tr": "Beton zeminde, dikey ahşap şeritli bir kasa ve önündeki küçük oturak",
+    "en": "On a concrete floor, a box of vertical timber strips with a small seat in front"
+  },
+  "caption": {
+    "tr": "Kasanın yüzeyi ve oturak aynı dikey şeritli yapıda. Biraz geriden çekilen karede arkadaki malzemeler de görünüyor.",
+    "en": "The box and the seat share the same vertical-strip build. This slightly wider frame also shows the materials behind."
+  },
+  "seoFilename": "dikey-seritli-kasa-ve-kucuk-oturak-beyaz-panolar-ve-yesil",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

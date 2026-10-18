@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/12929.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Uzaktan görünüşte yüksek sırtlı açık renkli oturma ünitesi",
+    "en": "Distant view of a light high-back seating unit in the workshop"
+  },
+  "alt": {
+    "tr": "Atölyenin gri zemininde duran, açık yeşil çam tahtalardan yapılmış uzun, yüksek sırtlı ahşap oturma ünitesi",
+    "en": "A long high-backed timber seating unit of light-green pine boards on the grey floor of a workshop"
+  },
+  "caption": {
+    "tr": "Ünitenin boyu geniş bir sedir kadar uzun. Sırt, uzun kenarda ve bir yan tarafta yükseliyor.",
+    "en": "The unit is as long as a broad day-bed. The back rises along the long side and on one end."
+  },
+  "seoFilename": "uzaktan-atolye-zemininde-yuksek-sirtli-oturma-unitesi",
+  "tags": {
+    "type": [
+      "bank",
+      "oturma grubu"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

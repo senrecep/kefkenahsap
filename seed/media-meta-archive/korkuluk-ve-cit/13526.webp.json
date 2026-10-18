@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/13526.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çapraz geçmeli ahşap korkuluk ve kapı",
+    "en": "Cross-braced timber railing and gate"
+  },
+  "alt": {
+    "tr": "Taş şerit boyunca uzanan, çapraz çıtalı koyu bal tonlu ahşap korkuluk ve menteşeli kapı kanadı",
+    "en": "Dark honey-toned timber railing with X-bracing and a hinged gate leaf along a stone kerb"
+  },
+  "caption": {
+    "tr": "Çapraz çıtalar korkuluğa X desenli bir yüz veriyor. Kapı kanadı aynı çerçevede.",
+    "en": "The X-shaped braces give the railing its pattern, and the gate leaf sits in the same frame."
+  },
+  "seoFilename": "capraz-gecmeli-ahsap-korkuluk-ve-kapi",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/1002.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yapım aşamasında iskele: kirişler üstüne ilk tahtalar",
+    "en": "Pier under construction: first boards over the joists"
+  },
+  "alt": {
+    "tr": "Yamaç önünde, deniz üzerinde kurulan iskelenin kiriş çerçevesi üstüne tahtaların döşenmesi; uzun dikmeler yükseliyor",
+    "en": "Boards being laid over the joist frame of a pier built on the sea in front of a hillside, with tall posts standing"
+  },
+  "caption": {
+    "tr": "Tahtalar kirişlere sıra sıra oturtuluyor, dikmeler henüz kesilmemiş. Arkada yamaçta beyaz evler görünüyor.",
+    "en": "The boards are set on the joists row by row and the posts have not yet been cut. White houses stand on the hillside behind."
+  },
+  "seoFilename": "yapim-asamasinda-iskele-kirisler-ilk-tahtalar",
+  "tags": {
+    "type": [
+      "iskele",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

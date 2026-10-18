@@ -1,0 +1,40 @@
+{
+  "source": "Deck ve Zeminler/3909.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Direk ve beyaz duvar önünde ahşap kaplamalı oturma bölmesi",
+    "en": "Timber-clad seating unit beside a post and a white wall"
+  },
+  "alt": {
+    "tr": "Açık yeşil emprenyeli çam tahtalarla kaplı, ahşap direkli oturma bölmesi; arkasında açık renk bir duvar",
+    "en": "A seating unit clad in light-green pressure-treated pine with a timber post, in front of a pale wall"
+  },
+  "caption": {
+    "tr": "Oturma bölmesinin yan yüzü yatay tahtalarla kaplı, üst yüzü ise düz bir oturak. Direk, bölmenin köşesinde yükseliyor.",
+    "en": "The side of the seating unit is clad in horizontal boards and the top is a flat seat. A post rises at the corner of the unit."
+  },
+  "seoFilename": "ahsap-kaplamali-oturma-bolmesi-direk-ve-beyaz-duvar-onunde",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

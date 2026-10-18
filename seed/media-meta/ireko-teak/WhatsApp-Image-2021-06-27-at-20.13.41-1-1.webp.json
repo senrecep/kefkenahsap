@@ -1,0 +1,37 @@
+{
+  "file": "WhatsApp-Image-2021-06-27-at-20.13.41-1-1.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Aralıklı çıtalı ahşap bank",
+    "en": "Slatted wooden bench"
+  },
+  "alt": {
+    "tr": "Atölyede zeminde duran, aralıklı dört çıtalı oturma yüzeyi ve kalın çerçevesi olan kızıl kahverengi ahşap bank",
+    "en": "Reddish-brown wooden bench with four spaced slats and a thick frame, standing on a workshop floor"
+  },
+  "caption": {
+    "tr": "Atölyede hazırlanan çıtalı ahşap bank. Oturma yüzeyindeki aralıklar suyun akıp gitmesine izin veriyor, cilalı yüzey ahşabın damarlarını öne çıkarıyor.",
+    "en": "A slatted wooden bench built in our workshop. The gaps in the seat let water drain, and the varnished surface shows off the wood grain."
+  },
+  "seoFilename": "citali-ahsap-bank-atolye",
+  "tags": {
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "atölye",
+      "bank"
+    ],
+    "finish": [
+      "vernikli",
+      "cilalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

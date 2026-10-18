@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/10854.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kabuklu yuvarlak kütük kesiti, yıllık halkalar",
+    "en": "Round log slice with bark, growth rings"
+  },
+  "alt": {
+    "tr": "Beton zeminde duran, kabuğu üstünde yuvarlak ağaç kütüğü kesiti; yıllık halkalar belirgin",
+    "en": "Round slice of a tree trunk with its bark on, standing on a concrete floor, with the growth rings clear"
+  },
+  "caption": {
+    "tr": "Kesit cilalı, halkalar ortadan dışa doğru açık. Yanda ikinci bir kütük dilimi kısmen görünüyor.",
+    "en": "The cut face is polished and the rings open outwards from the centre. A second log slice is partly visible beside it."
+  },
+  "seoFilename": "beton-zeminde-kabuklu-yuvarlak-agac-kutuk-kesiti-yillik",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.4
+}

@@ -1,0 +1,39 @@
+{
+  "source": "Kopru ve Iskele/8051.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Alçak açıdan havuz, deck ve ahşap köprü",
+    "en": "Low view of pool, deck and timber bridge"
+  },
+  "alt": {
+    "tr": "Alçak açıdan çekilmiş, deck kuşaklı sığ havuz ve uzaktaki ahşap köprü, arkada iki katlı bina",
+    "en": "Low-angle view of a shallow pool with a deck border and a timber bridge in the distance, with a two-storey building behind"
+  },
+  "caption": {
+    "tr": "Deck kenarı havuzla meydan arasında alçak bir basamak gibi duruyor. Köprü havuzun öbür ucunda.",
+    "en": "The deck edge sits like a low step between the pool and the plaza. The bridge stands at the far end."
+  },
+  "seoFilename": "alcak-acidan-havuz-deck-ve-ahsap-kopru",
+  "tags": {
+    "type": [
+      "deck",
+      "köprü"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı",
+      "ticari mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

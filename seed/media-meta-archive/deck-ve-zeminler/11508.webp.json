@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/11508.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yarısı koruyucu sürülmüş, yarısı gri deck",
+    "en": "Deck half protected, half still grey"
+  },
+  "alt": {
+    "tr": "Pencere önünde yarısına koyu koruyucu sürülmüş, yarısı gri eski haliyle duran ahşap deck",
+    "en": "Timber deck in front of a window, half treated with a dark protective coat and half still in its old grey state"
+  },
+  "caption": {
+    "tr": "Koruyucu sürülen kısım turuncu-kahveye dönmüş, sürülmeyen kısım gri. İkisi arasındaki fark net.",
+    "en": "The treated part has turned orange-brown and the untreated part is grey. The difference between the two is clear."
+  },
+  "seoFilename": "pencere-onunde-deck-yarisi-koyu-koruyucu-ile-boyanmis-yarisi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

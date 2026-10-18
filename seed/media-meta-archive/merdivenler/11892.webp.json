@@ -1,0 +1,33 @@
+{
+  "source": "Merdivenler/11892.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Avluda cam kapı yanında ahşap merdiven",
+    "en": "Timber staircase beside a glass door in a courtyard"
+  },
+  "alt": {
+    "tr": "Fayans döşeli avluda, taş kaplı duvar ile cam kapı arasında yükselen düz ahşap merdiven",
+    "en": "Straight timber staircase rising between a stone-clad wall and a glass door in a tiled courtyard"
+  },
+  "caption": {
+    "tr": "Alt kattaki avludan bahçe seviyesine çıkan düz ahşap merdiven. Korkuluklar çapraz dikmeli.",
+    "en": "A straight timber staircase leading from a lower courtyard up to garden level, with cross-braced railings."
+  },
+  "seoFilename": "avluda-cam-kapi-yaninda-ahsap-merdiven",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "avlu",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

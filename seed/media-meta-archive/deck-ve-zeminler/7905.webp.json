@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/7905.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dikey çıtalı korkuluklu balkonda boyanan deck",
+    "en": "Deck being painted on a balcony with a vertical-slat railing"
+  },
+  "alt": {
+    "tr": "Dikey çıtalı ahşap korkuluğu olan balkonda, kahverengiye boyanan deck; yerde açık bir boya kutusu ve kırmızı saplı rulo",
+    "en": "Deck being painted brown on a balcony with a vertical-slat timber railing, with an open paint tin"
+  },
+  "caption": {
+    "tr": "Boya yüzeyi koyulaştırıyor ve tahtaların damarını gizlemiyor. Korkuluğun arkasında su kenarı ve bitkiler görünüyor.",
+    "en": "The paint deepens the surface and leaves the grain visible. Water and plants show behind the railing."
+  },
+  "seoFilename": "dikey-citali-korkuluklu-balkon-deck-boya-kutusu-ve-rulo",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "balkon"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

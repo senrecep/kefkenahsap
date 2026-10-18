@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/14887.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Vernikli katlanır kollu sandalyeler",
+    "en": "Varnished folding armchairs"
+  },
+  "alt": {
+    "tr": "Sergi alanında sıralanmış, çıtalı sırtlı vernikli katlanır kollu ahşap sandalyeler",
+    "en": "Varnished timber folding armchairs with slatted backs lined up in a display area"
+  },
+  "caption": {
+    "tr": "Sandalyelerin kolçakları var ve katlanıyor. Arkada tuğla duvar ve bir ofis masası görünüyor.",
+    "en": "The chairs have armrests and fold flat. A brick wall and an office desk are visible behind."
+  },
+  "seoFilename": "vernikli-katlanir-kollu-sandalyeler-sergi-alani",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

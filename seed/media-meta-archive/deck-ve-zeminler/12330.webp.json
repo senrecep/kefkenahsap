@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12330.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölyede çerçeveli alçak deck platform modülü",
+    "en": "Low framed deck platform module in the workshop"
+  },
+  "alt": {
+    "tr": "Atölyede fayans zemin üzerinde duran çerçeveli, koyu ve açık tahtalı alçak deck platform modülü, yanında ahşap raf",
+    "en": "Low framed deck platform module on a tiled workshop floor, boards in dark and light tones, with a timber shelf unit beside it"
+  },
+  "caption": {
+    "tr": "Modül kendi ayaklarının üzerinde duruyor ve kenarı çerçeveyle toplanmış. Hazır parça atölyeden çıkıp yerine konacak.",
+    "en": "The module stands on its own feet with the edge held by a frame. The finished piece will leave the workshop to be set in place."
+  },
+  "seoFilename": "atolyede-cerceveli-alcak-deck-platform-modulu",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

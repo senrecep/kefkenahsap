@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/6292.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Gri eskimiş ahşap bahçe bankı, çimde gölgeler",
+    "en": "Weathered grey timber garden bench with shadows on the grass"
+  },
+  "alt": {
+    "tr": "Güneşten grileşmiş ahşap bahçe bankının kafes desenli sırtlığı ve çıtalı oturağı yakından görünüyor",
+    "en": "A close view of the lattice-patterned back and slatted seat of a sun-greyed timber garden bench"
+  },
+  "caption": {
+    "tr": "Bankın kafes desenli sırtlığı ve oturak çıtaları açıkta, gri ve çatlaklı. Yüzey yenilenmeye ihtiyaç duyuyor.",
+    "en": "The lattice back and seat slats are exposed, grey and cracked. The surface needs renewing."
+  },
+  "seoFilename": "gri-eskimis-ahsap-bahce-banki-yakin-cekim-cimde-golgeler",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "before",
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/14835.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Zeytin ağacı altında L şekilli deck",
+    "en": "L-shaped deck under an olive tree"
+  },
+  "alt": {
+    "tr": "Zeytin ağacının altına dönen L şekilli deck; arkada yatay çıtalı korkuluk ve oturma bölmesi, önde gri bir saksı ve taş döşeme",
+    "en": "L-shaped deck turning under an olive tree, with a horizontal-slat railing and seating box behind and a grey planter"
+  },
+  "caption": {
+    "tr": "Deck ağacın gövdesi için bir köşe bırakıyor, tahtalar iki yönde döşenmiş. Gri ahşap saksı taş döşemenin kenarında duruyor.",
+    "en": "The deck leaves a corner for the tree trunk and the boards are laid in two directions. The grey timber planter stands at the edge of the paving."
+  },
+  "seoFilename": "zeytin-agaci-altinda-l-seklinde-deck-gri-saksi",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

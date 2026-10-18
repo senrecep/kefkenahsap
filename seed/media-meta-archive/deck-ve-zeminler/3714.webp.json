@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/3714.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz kenarında kavisli korkuluklu platform",
+    "en": "Curved-railing seating platform at a pool"
+  },
+  "alt": {
+    "tr": "Havuz kenarında kavisli korkuluklu yükseltilmiş oturma platformu; üzerinde beyaz şemsiye, önünde yan deck yolu",
+    "en": "Raised seating platform with a curved railing at the pool edge, with a white parasol above and a side deck path in front"
+  },
+  "caption": {
+    "tr": "Korkuluk platformun yuvarlak köşesini izliyor ve içinde bank takımı görünüyor. Platforma yandaki deck yolundan çıkılıyor.",
+    "en": "The railing follows the rounded corner of the platform and a bench set shows inside. The platform is reached by the deck path at the side."
+  },
+  "seoFilename": "havuz-kenarinda-kavisli-korkuluklu-oturma-platformu",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk",
+      "bank"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

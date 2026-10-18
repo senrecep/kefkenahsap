@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/13637.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bambu ve taş duvar önünde çok uzun ahşap bank",
+    "en": "Very long timber bench in front of bamboo and a stone wall"
+  },
+  "alt": {
+    "tr": "Beton zeminde, alçak bir bambu bahçesi ve taş duvarın önünde uzanan, dikey şeritli arkalığı olan çok uzun ahşap bank",
+    "en": "A very long timber bench with a back of vertical strips on a concrete floor in front of a bamboo bed and stone wall"
+  },
+  "caption": {
+    "tr": "Bank bahçe duvarının boyunca kesintisiz uzanıyor. Uzun hattı, arkadaki bambu kuşağıyla birlikte bütün bir oturma şeridi oluşturuyor.",
+    "en": "The bench runs without a break along the garden wall. Its long line together with the bamboo band behind forms a full seating strip."
+  },
+  "seoFilename": "bambu-ve-tas-duvar-onunde-cok-uzun-ahsap-bank-beton-zemin",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/13613.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kulübe giriş açıklığı ve vernikli taban",
+    "en": "Dog house entrance opening and varnished floor"
+  },
+  "alt": {
+    "tr": "Köpek kulübesinin giriş açıklığı ve önündeki vernikli ahşap taban; yakın çekim",
+    "en": "Close-up of the entrance opening of a dog house and the varnished timber floor in front of it"
+  },
+  "caption": {
+    "tr": "Giriş basit bir çerçeveyle çevrili, içeride OSB gibi bir arka yüzey görünüyor. Taban tahtaları parlak bal rengi.",
+    "en": "The entrance is framed simply with an OSB-like back surface visible inside. The floorboards are a glossy honey colour."
+  },
+  "seoFilename": "kulube-giris-acikligi-ve-vernikli-ahsap-taban-yakin-cekim",
+  "tags": {
+    "type": [
+      "köpek kulübesi"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,36 @@
+{
+  "source": "Ireko-Teak/14194.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bal rengi ahşap kanepeler ve masa",
+    "en": "Honey-coloured timber sofas and table"
+  },
+  "alt": {
+    "tr": "Atölyede sıralanmış iki çıtalı ahşap kanepe ve arkadaki masa, duvarda alet panosu",
+    "en": "Two slatted timber sofas and a table lined up in the workshop, with a tool board on the wall"
+  },
+  "caption": {
+    "tr": "İki kanepe ve bir masa bal rengi ahşaptan. Duvarda aletlerin asılı olduğu bir pano var.",
+    "en": "Two sofas and a table in honey-coloured timber. A tool board hangs on the wall."
+  },
+  "seoFilename": "iki-kanepe-ve-masa-bal-rengi-ahsap-atolye",
+  "tags": {
+    "type": [
+      "oturma grubu",
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

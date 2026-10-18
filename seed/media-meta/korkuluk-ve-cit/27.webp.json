@@ -1,0 +1,37 @@
+{
+  "file": "27.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Havuz başı ahşap soyunma kabini",
+    "en": "Poolside wooden changing stall"
+  },
+  "alt": {
+    "tr": "Havuz kenarında yeşilliklerin önünde duran ahşap kapılı soyunma kabini.",
+    "en": "Wooden changing cabin with a slatted door placed by the poolside garden."
+  },
+  "caption": {
+    "tr": "Havuz başında dış mekan şartlarına uygun ahşaptan üretilen tek kapılı soyunma kabini.",
+    "en": "Single-door wooden changing stall crafted for poolside use against a garden backdrop."
+  },
+  "seoFilename": "havuz-basi-ahsap-soyunma-kabini",
+  "tags": {
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "havuz kenarı",
+      "bahçe",
+      "dış mekan"
+    ],
+    "finish": [
+      "doğal"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.95
+}

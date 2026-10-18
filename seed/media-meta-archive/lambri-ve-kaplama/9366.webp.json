@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/9366.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz boyalı ahşap cephe ve bordo panjurlar",
+    "en": "White painted timber facade with burgundy shutters"
+  },
+  "alt": {
+    "tr": "Beyaz boyalı yatay ahşap kaplamalı binada bordo panjurlar ve girişte taş basamaklar",
+    "en": "White painted horizontal timber cladding on a building with burgundy shutters and stone steps at the entrance"
+  },
+  "caption": {
+    "tr": "Beyaz boyalı tahtalar binayı baştan sona sarıyor. Pencerelerdeki bordo panjurlar beyazın yanında öne çıkıyor.",
+    "en": "White painted boards wrap the whole building. The burgundy shutters on the windows stand out against the white."
+  },
+  "seoFilename": "beyaz-boyali-ahsap-kaplama-bordo-panjur",
+  "tags": {
+    "type": [
+      "cephe kaplaması",
+      "pencere / panjur"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

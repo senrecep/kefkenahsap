@@ -1,0 +1,41 @@
+{
+  "source": "Deck ve Zeminler/3721.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Şemsiyeli deck platformu: kavisli korkuluk ve havuz kenarı",
+    "en": "Deck platform with an umbrella: curved railing and pool edge"
+  },
+  "alt": {
+    "tr": "Büyük bir şemsiyenin gölgelediği deck platformunun kavisli, dikey çıtalı korkuluğu; yanda havuz, köşede ahşap lamba kutusu",
+    "en": "The curved vertical-slat railing of a deck platform shaded by a large umbrella"
+  },
+  "caption": {
+    "tr": "Korkuluk platformu yarım daire biçiminde çevreliyor, ortasından şemsiye direği geçiyor. Havuz kenarında küçük bir ahşap lamba kutusu duruyor.",
+    "en": "The railing encloses the platform in a half circle with the umbrella pole running through the middle. A small timber lamp box stands at the pool edge."
+  },
+  "seoFilename": "semsiyeli-deck-platformu-kavisli-korkuluk-havuz",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı",
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

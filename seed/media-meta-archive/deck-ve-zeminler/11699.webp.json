@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/11699.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Farklı yönlü paneller halinde koyu deck",
+    "en": "Dark deck laid in panels with alternating direction"
+  },
+  "alt": {
+    "tr": "Çimen kenarındaki teras zemininde koyu kahverengi oluklu deck tahtaları, panellerin yönü değişiyor",
+    "en": "Dark brown grooved deck boards on a terrace beside the lawn, with the panels changing direction"
+  },
+  "caption": {
+    "tr": "Tahtalar bölümler halinde dönüşümlü döşenmiş, bu yüzden zeminde geometrik bir desen oluşmuş.",
+    "en": "The boards are laid in alternating sections, which gives the floor a geometric pattern."
+  },
+  "seoFilename": "koyu-oluklu-deck-farkli-yonlu-paneller",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras",
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

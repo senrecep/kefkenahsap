@@ -1,0 +1,36 @@
+{
+  "file": "1511407_672566762787926_136528022_n.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe için korkuluklu ahşap pergola",
+    "en": "Wooden garden pergola with railings"
+  },
+  "alt": {
+    "tr": "Bahçe içinde emprenye ahşaptan yapılmış, korkuluklu ve mertek çatılı açık pergola.",
+    "en": "Outdoor wooden pergola with perimeter railings and open rafter roof in a green garden."
+  },
+  "caption": {
+    "tr": "Bahçede oturma alanı için tasarlanan emprenyeli çam pergola. Korkuluk detayları ve açık üst ızgarasıyla gölgelik alan sunar.",
+    "en": "Pressure-treated pine pergola designed for a garden sitting area, featuring protective railings and an open rafter roof."
+  },
+  "seoFilename": "korkuluklu-ahsap-bahce-pergola",
+  "tags": {
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "emprenye"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

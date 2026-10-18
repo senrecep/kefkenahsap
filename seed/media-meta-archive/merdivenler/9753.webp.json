@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/9753.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Duvarlar arasında çaprazlı korkuluk ve basamaklar",
+    "en": "Cross-braced railing and steps between walls"
+  },
+  "alt": {
+    "tr": "İki duvar arasında çaprazlı korkuluklu ahşap merdiven; yanda tel çit, arkada duran bir araç",
+    "en": "Timber stairs with a cross-braced railing between two walls, with wire fencing at the side and a vehicle parked behind"
+  },
+  "caption": {
+    "tr": "Merdiven iki beyaz duvar arasında yükseliyor. Çevre düzenlenmemiş, toprak zemin açıkta.",
+    "en": "The stairs rise between two white walls. The surroundings are not landscaped and the bare ground is open."
+  },
+  "seoFilename": "duvar-arasinda-caprazli-korkuluk-ve-basamaklar-yaninda-arac",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

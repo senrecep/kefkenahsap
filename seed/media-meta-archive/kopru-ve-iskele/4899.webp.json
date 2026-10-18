@@ -1,0 +1,34 @@
+{
+  "source": "Kopru ve Iskele/4899.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Sazlıklar arasında ahşap iskele yolu",
+    "en": "Timber boardwalk through the reeds"
+  },
+  "alt": {
+    "tr": "Bir yanında çimenlik, öbür yanında sazlık ve su olan, iki yanı korkuluklu ahşap yürüyüş yolu",
+    "en": "Timber boardwalk with railings on both sides, between a lawn and reeds at the water's edge"
+  },
+  "caption": {
+    "tr": "Su kenarı boyunca uzanan, iki yanı korkuluklu ahşap yürüyüş yolu. Yolun yanında sazlıklar, suda bir tekne görünüyor.",
+    "en": "A timber boardwalk running along the water with railings on both sides. Reeds line the edge and a boat sits on the water nearby."
+  },
+  "seoFilename": "sazlik-arasi-ahsap-iskele-yolu",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "su kenarı",
+      "sazlık",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

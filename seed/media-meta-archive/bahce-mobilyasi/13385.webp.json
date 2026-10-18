@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/13385.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Odun fırınlı, çıtalı dış mutfak ve taş bar",
+    "en": "Outdoor kitchen with a wood-fired oven and a stone bar"
+  },
+  "alt": {
+    "tr": "Çıtalı ahşap paravan arasında odun fırını olan dış mutfak; yanında taş bar ve tabureler",
+    "en": "Outdoor kitchen with a wood-fired oven between slatted timber screens, with a stone bar and stools beside it"
+  },
+  "caption": {
+    "tr": "Mutfağın arkasındaki fayans turkuaz renkte, yanda taş görünümlü bir bar uzanıyor. Barın önünde iki tabure duruyor.",
+    "en": "The tiles behind the kitchen are turquoise and a bar that looks like stone runs alongside. Two stools stand in front of the bar."
+  },
+  "seoFilename": "odun-firinli-citali-ahsap-dis-mutfak-yan-tas-bar-ve",
+  "tags": {
+    "type": [
+      "dış mutfak / mangal alanı",
+      "bar / tezgâh",
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.6
+}

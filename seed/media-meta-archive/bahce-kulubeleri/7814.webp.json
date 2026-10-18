@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/7814.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Duş kabini içinde ayna, bank ve çıtalı tavan",
+    "en": "Inside a shower cabin: mirror, bench and slatted ceiling"
+  },
+  "alt": {
+    "tr": "Duş kabininin içinde yatay kaplı ahşap duvar, ayna, küçük bir raf, bank ve çıtalı tavan",
+    "en": "Inside a shower cabin with a horizontally boarded timber wall, a mirror, a small shelf, a bench and a slatted ceiling"
+  },
+  "caption": {
+    "tr": "Ayna duvarın ortasına yerleştirilmiş, altında küçük bir taş raf var. Sol tarafta ahşap bir bank, üstte aralıklı çıtalı tavan duruyor.",
+    "en": "The mirror is set into the middle of the wall with a small stone shelf below it. A timber bench stands on the left with a spaced-slat ceiling above."
+  },
+  "seoFilename": "dus-kabini-icinde-yatay-kapli-duvar-ayna-bank-ve-citali",
+  "tags": {
+    "type": [
+      "duş / soyunma kabini"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

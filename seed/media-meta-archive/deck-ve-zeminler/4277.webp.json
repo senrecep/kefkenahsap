@@ -1,0 +1,40 @@
+{
+  "source": "Deck ve Zeminler/4277.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Toprak üzerinde yükseltilmiş deck ve çapraz korkuluk",
+    "en": "Raised deck and cross-braced railing over soil"
+  },
+  "alt": {
+    "tr": "Çam gövdeleri arasında, çıplak toprağın üzerine ayaklarla yükseltilmiş açık renkli deck; X çıtalı korkuluk ve arkada villa",
+    "en": "Pale deck raised on legs over bare soil among pine trunks, with an X-braced railing and a villa behind"
+  },
+  "caption": {
+    "tr": "Deck ve korkuluk tamamlanmış, çevresi henüz düzenlenmemiş. Korkuluk deckin üç kenarını çevreliyor.",
+    "en": "The deck and railing are complete while the surroundings are not yet landscaped. The railing runs around three edges of the deck."
+  },
+  "seoFilename": "toprak-uzerinde-yukseltilmis-deck-ve-capraz-korkuluk-villa",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "orman / kır"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

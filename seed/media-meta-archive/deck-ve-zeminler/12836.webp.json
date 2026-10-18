@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12836.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar kenarında çelik direkli geniş deck",
+    "en": "Wide deck on steel posts beside a stone wall"
+  },
+  "alt": {
+    "tr": "Yamaçta çelik direkler üzerine kurulmuş, açık renkli geniş deck; kenarında taş duvar",
+    "en": "Wide pale deck built on steel posts on a slope, with a stone wall at its edge"
+  },
+  "caption": {
+    "tr": "Deck yamaçtan taşıyor ve altında çelik direkler görünüyor. Tahtalar uzun yönde tek parça gibi döşenmiş.",
+    "en": "The deck overhangs the slope with steel posts visible below. The boards run lengthwise in one clean sweep."
+  },
+  "seoFilename": "tas-duvar-kenarinda-celik-direkli-genis-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

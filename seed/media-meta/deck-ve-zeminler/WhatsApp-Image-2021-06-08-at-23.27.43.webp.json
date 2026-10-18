@@ -1,0 +1,35 @@
+{
+  "file": "WhatsApp-Image-2021-06-08-at-23.27.43.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Havuz kenarı ahşap deck ve giriş rampası",
+    "en": "Wooden pool deck with access ramp"
+  },
+  "alt": {
+    "tr": "Çim bahçedeki üst zemin havuzun kenarında ahşap deck platformu ve yere inen eğimli ahşap rampa, havuzda pembe şamandıra",
+    "en": "Wooden deck platform beside an above-ground pool in a lawn garden, with a sloped wooden ramp and a pink float in the water"
+  },
+  "caption": {
+    "tr": "Bahçedeki yüzme havuzunun kenarına yapılan ahşap deck. Tahtalar havuz seviyesinde döşenmiş, çime doğru inen bir rampayla bitiyor.",
+    "en": "A wooden deck built along the edge of a garden pool. The boards sit at pool level and end in a ramp that slopes down to the lawn."
+  },
+  "seoFilename": "havuz-kenari-ahsap-deck-rampa",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "havuz",
+      "dış mekan"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

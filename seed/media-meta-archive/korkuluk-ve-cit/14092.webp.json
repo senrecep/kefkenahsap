@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/14092.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Otopark önünde beyaz piket çit",
+    "en": "White picket fence in front of a car park"
+  },
+  "alt": {
+    "tr": "Taş duvarın üstünde uzanan beyaz boyalı çıtalı çit, arkada kapalı otopark ve araç",
+    "en": "White-painted picket fence on a stone wall, with a covered car park and a vehicle behind"
+  },
+  "caption": {
+    "tr": "Çit kaldırım kenarındaki taş duvarı izliyor. Çıtaların uçları yuvarlatılmış.",
+    "en": "The fence follows the stone wall along the pavement. The tops of the pickets are rounded."
+  },
+  "seoFilename": "otopark-onunde-beyaz-piket-cit",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

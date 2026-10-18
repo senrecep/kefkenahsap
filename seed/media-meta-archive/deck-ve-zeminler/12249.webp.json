@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/12249.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yan bahçede cam kapı boyunca eskimiş deck",
+    "en": "Weathered deck along the glass door in a side garden"
+  },
+  "alt": {
+    "tr": "Yan bahçede cam kapı boyunca uzanan, eskimiş ve yer yer yıkanmış ya da lekelenmiş koyu deck",
+    "en": "Weathered dark deck running along a glass door in a side garden, washed pale in places and stained in others"
+  },
+  "caption": {
+    "tr": "Yıkanan bölümde ahşap açılmış, kalan kısım koyu ve lekeli duruyor. Bu, bakım öncesi durumu gösteriyor.",
+    "en": "The washed part has lightened while the rest stays dark and patchy. This shows the state before maintenance."
+  },
+  "seoFilename": "yan-bahcede-cam-kapi-boyunca-eskimis-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/9440.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çıtalı korkuluklu uzun merdiven, çim ve beyaz çit",
+    "en": "Long stairs with a slatted railing, lawn and white fence"
+  },
+  "alt": {
+    "tr": "Çıtalı ahşap korkuluklu uzun ahşap merdiven; altta çimlik, üstte beyaz çıtalı çit",
+    "en": "Long timber stairs with a vertical-slat timber railing, with lawn below and a white picket fence above"
+  },
+  "caption": {
+    "tr": "Dikey çıtalı korkuluk basamaklarla birlikte yukarı çıkıyor. Merdiven çimlikten üst düzeye uzanıyor.",
+    "en": "The vertical-slat railing climbs along with the steps. The stairs reach from the lawn to the upper level."
+  },
+  "seoFilename": "citali-ahsap-korkuluklu-uzun-merdiven-cim-ve-beyaz-cit",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/14677.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Direkler üzerinde yükseltilmiş deck platformu",
+    "en": "Raised deck platform on posts"
+  },
+  "alt": {
+    "tr": "Bina yanında ahşap direklere oturan, ince halatlı korkuluğa sahip yükseltilmiş koyu kırmızı kahverengi deck platformu",
+    "en": "Raised dark red-brown deck platform beside a building, resting on timber posts, with a railing of thin cables"
+  },
+  "caption": {
+    "tr": "Platformun altı koyu renkli ahşapla kaplanmış, direkler çimene iniyor. Altında yeşil bir çalı duvarı ve taş basamaklı bir yol görünüyor.",
+    "en": "The underside of the platform is clad in dark timber and the posts go down to the lawn. A wall of green shrubs and a path of stepping stones show below."
+  },
+  "seoFilename": "direkler-uzerinde-yukseltilmis-deck-platformu",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

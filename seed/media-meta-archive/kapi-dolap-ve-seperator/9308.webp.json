@@ -1,0 +1,39 @@
+{
+  "source": "Kapi Dolap ve Seperator/9308.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kapağı açık, içi boş ahşap kasa",
+    "en": "Empty timber chest with its door open"
+  },
+  "alt": {
+    "tr": "Kapağı sonuna kadar açılmış uzun ahşap kasanın içi: yan ve arka duvarlar tahta, zemin tahta döşeli",
+    "en": "Inside of a long timber chest with the door fully open: boarded walls and a boarded floor"
+  },
+  "caption": {
+    "tr": "Kasanın içi boş. Zeminde ve duvarlarda aynı tahta kaplama kullanılmış, kapak kalın bir çerçeveye oturuyor.",
+    "en": "The chest is empty. The same boarding is used on the floor and walls, and the door hangs on a thick frame."
+  },
+  "seoFilename": "kapagi-acik-ici-bos-ahsap-kasa",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

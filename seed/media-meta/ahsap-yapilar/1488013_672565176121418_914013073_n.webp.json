@@ -1,0 +1,36 @@
+{
+  "file": "1488013_672565176121418_914013073_n.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Deniz kenarında ahşap platform ve pergolalar",
+    "en": "Wooden deck and pergolas by the sea"
+  },
+  "alt": {
+    "tr": "Deniz kıyısında geniş ahşap platform, arkasında pergolalar, korkuluklu ahşap yürüyüş yolu, taş duvar ve palmiyeler",
+    "en": "Wide wooden deck on the seaside with pergolas, a railed wooden walkway, a stone wall and palm trees"
+  },
+  "caption": {
+    "tr": "Deniz manzaralı yamaçta kurulan ahşap platform, pergolalar ve korkuluklu yürüyüş yolu. Taş duvar ve merdivenle birlikte araziye uyumlu bir düzen oluşturuyor.",
+    "en": "A wooden deck, pergolas and a railed walkway built on a sea-view slope, fitted to the terrain together with the stone wall and steps."
+  },
+  "seoFilename": "deniz-kenari-ahsap-platform-pergola",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "deniz kenarı",
+      "açık alan",
+      "otel",
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.86
+}

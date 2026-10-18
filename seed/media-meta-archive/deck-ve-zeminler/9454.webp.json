@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/9454.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çit önünde açık renkli bahçe deck alanı",
+    "en": "Pale garden deck in front of a hedge"
+  },
+  "alt": {
+    "tr": "Telörgü çit ve çalı sırasının önünde, güneş ışığı alan açık renkli yeni deck yüzeyi",
+    "en": "New light deck surface in front of a wire fence and a row of shrubs, catching the sunlight"
+  },
+  "caption": {
+    "tr": "Deck bahçenin köşesine düz kenarlarla yerleşmiş. Tahtalar uzun yönde döşenmiş.",
+    "en": "The deck sits in the corner of the garden with straight edges. The boards run lengthwise."
+  },
+  "seoFilename": "cit-onunde-acik-renkli-bahce-deck-alani",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

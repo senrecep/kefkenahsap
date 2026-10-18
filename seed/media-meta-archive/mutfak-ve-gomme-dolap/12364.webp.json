@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/12364.webp",
+  "category": "mutfak-ve-gomme-dolap",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Balkonda ahşap duvarda raflar ve alt dolap",
+    "en": "Shelves on a timber wall and the cabinet below, on a balcony"
+  },
+  "alt": {
+    "tr": "Balkonda tahta kaplı duvara siyah braketlerle monte edilmiş iki raf ve altında kapaklı dolap; ötede cam korkuluk ve tepeler",
+    "en": "Two shelves on black brackets on a board-clad wall on a balcony, with a cabinet with doors beneath"
+  },
+  "caption": {
+    "tr": "Duvarın tahta kaplaması rafların arkasına kadar çıkıyor. Altındaki dolap yatay tahtalarla kaplı, ötede tepeler görünüyor.",
+    "en": "The wall's board cladding rises behind the shelves. The cabinet below is clad in horizontal boards, with hills in view beyond."
+  },
+  "seoFilename": "balkonda-ahsap-kapli-duvarda-siyah-braketli-raflar-ve",
+  "tags": {
+    "type": [
+      "raf / kitaplık",
+      "gömme dolap / gardırop"
+    ],
+    "wood": [],
+    "setting": [
+      "balkon"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

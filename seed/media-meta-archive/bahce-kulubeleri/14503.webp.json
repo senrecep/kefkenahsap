@@ -1,0 +1,36 @@
+{
+  "source": "Ahsap Yapilar/14503.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kafes iskeleti ve içindeki kulübe, yandan",
+    "en": "Cage frame and the kennel inside, side view"
+  },
+  "alt": {
+    "tr": "Toprak yığınının yanında kurulan ahşap kafes iskeleti ve içindeki köpek kulübesi, yandan görünüm",
+    "en": "Timber cage frame built beside a heap of earth and the dog house inside it, seen from the side"
+  },
+  "caption": {
+    "tr": "Kafes uzun bir dikdörtgen planlı, çerçevesi kalaslarla örülmüş. İçinde kırmızımsı bir kulübe görünüyor, arkada dağ var.",
+    "en": "The cage has a long rectangular plan and its frame is built from timbers. A reddish kennel shows inside with a mountain behind."
+  },
+  "seoFilename": "kafes-iskeleti-ve-icindeki-kulube-yandan",
+  "tags": {
+    "type": [
+      "köpek kulübesi",
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

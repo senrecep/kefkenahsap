@@ -1,0 +1,40 @@
+{
+  "source": "Korkuluk ve Cit/4054.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deck kenarında çapraz çıtalı korkuluk, çam ormanı",
+    "en": "Cross-braced railing at a deck edge in a pine forest"
+  },
+  "alt": {
+    "tr": "Çam ormanının içinde, açık tonlu deck platformun kenarında X çaprazlı ahşap korkuluk ve yeni serilmiş çim",
+    "en": "X-braced timber railing at the edge of a light deck platform in a pine forest, with freshly laid turf"
+  },
+  "caption": {
+    "tr": "Korkuluk çimlik tarafını kapatıyor, solda deck basamaklara bağlanıyor.",
+    "en": "The railing closes off the lawn side, and on the left the deck joins the steps."
+  },
+  "seoFilename": "deck-kenarinda-capraz-citali-korkuluk-cam-ormani",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "orman / kır"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

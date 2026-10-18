@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/11611.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Siyah çerçeveli yatay tahta kaplı kapı kanadı, dikey metal kulpla",
+    "en": "Black-framed door leaf clad in horizontal boards with a vertical metal handle"
+  },
+  "alt": {
+    "tr": "Siyah metal çerçeveli, yatay tahta dolgulu kapı kanadı ve dikey uzun kulp yakından; yanında kapının ikinci bölümü",
+    "en": "Close view of a door leaf with a black metal frame, horizontal-board infill and a long vertical handle"
+  },
+  "caption": {
+    "tr": "Kapı tahtaları yatay ve açık bal rengi. Kulp çerçeve profilinin yanında dik duruyor.",
+    "en": "The door boards are horizontal and light honey-coloured. The handle stands upright beside the frame profile."
+  },
+  "seoFilename": "siyah-cerceveli-yatay-tahta-kapi-kanadi-dikey-kulp",
+  "tags": {
+    "type": [
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

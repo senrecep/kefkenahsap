@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/14173.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Gri blok gövdeli, ahşap kapaklı dolap",
+    "en": "Cabinet with a grey block body and timber doors"
+  },
+  "alt": {
+    "tr": "Üstünde açık bir boşluk bırakılmış gri blok gövdeli, çift kapaklı ahşap dolap; önünde çakıl",
+    "en": "Two-door timber cabinet with a grey block body and an open cut-out on top, with gravel in front"
+  },
+  "caption": {
+    "tr": "Dolabın gövdesi gri, kapakları bal rengi ahşap. Üst yüzeyde bir cihaz için dikdörtgen bir boşluk kalmış, zemin çakıl.",
+    "en": "The body of the cabinet is grey and the doors are honey-coloured timber. A rectangular opening is left in the top for an appliance and the ground is gravel."
+  },
+  "seoFilename": "gri-blok-govdeli-ahsap-kapakli-dolap-ustu-acik-bosluklu",
+  "tags": {
+    "type": [
+      "dış mutfak / mangal alanı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.5
+}

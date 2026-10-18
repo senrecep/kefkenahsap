@@ -1,0 +1,36 @@
+{
+  "file": "35.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe için ahşap çit ve pergola",
+    "en": "Wooden garden fence and pergola"
+  },
+  "alt": {
+    "tr": "Pembe bir binanın önünde, dikmeler arasında dik çıtalı açık renk ahşap bahçe çiti ve arkasında ahşap pergola",
+    "en": "Light wooden garden fence with vertical slats in front of a pink building, with a wooden pergola behind it"
+  },
+  "caption": {
+    "tr": "Bahçeyi çevreleyen, dik çıtalı ahşap çit. Arkasında aynı tonda bir pergola duruyor.",
+    "en": "A wooden fence with vertical slats runs along the garden, with a pergola in the same tone behind it."
+  },
+  "seoFilename": "bahce-ahsap-cit-pergola",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "site bahçesi",
+      "dış mekan"
+    ],
+    "finish": [
+      "emprenye görünümlü",
+      "açık yeşilimsi ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

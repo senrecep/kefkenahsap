@@ -1,0 +1,35 @@
+{
+  "file": "3.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Beyaz boyalı panelli mutfak dolapları",
+    "en": "White painted panel-door kitchen cabinets"
+  },
+  "alt": {
+    "tr": "Beyaz panelli kapaklı mutfak dolapları, ankastre fırın, ocak, davlumbaz, evye ve gri laminat zemin",
+    "en": "White panel-door kitchen cabinets with built-in oven, hob, hood, sink and light grey laminate floor"
+  },
+  "caption": {
+    "tr": "Beyaz boyalı, çerçeveli kapaklı mutfak dolapları. Üst dolaplarda camlı iki kapak, alt tarafta çekmeceler ve ankastre fırın yer alıyor.",
+    "en": "Kitchen cabinets with white painted framed doors. Two glazed doors sit in the upper row, with drawers and a built-in oven below."
+  },
+  "seoFilename": "beyaz-panelli-mutfak-dolabi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "mutfak",
+      "ev içi"
+    ],
+    "finish": [
+      "beyaz boya",
+      "mat cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

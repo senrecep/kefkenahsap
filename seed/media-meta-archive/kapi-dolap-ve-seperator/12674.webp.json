@@ -1,0 +1,35 @@
+{
+  "source": "Kapi Dolap ve Seperator/12674.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Duvar boyunca uzanan ahşap dolap",
+    "en": "Timber cabinet along a wall"
+  },
+  "alt": {
+    "tr": "Bina duvarı boyunca uzanan, yatay tahtalı kapakları ve metal menteşeleri olan ahşap dolap",
+    "en": "Timber cabinet with horizontal board doors and metal hinges running along a building wall"
+  },
+  "caption": {
+    "tr": "Dolap bina duvarı boyunca uzanıyor, kapakları yatay tahtalardan yapıldı ve parlak bir yüzeyle bitirildi.",
+    "en": "The cabinet runs along the building wall, its doors made of horizontal boards with a glossy finish."
+  },
+  "seoFilename": "duvar-boyunca-ahsap-dolap-yatay-tahta",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "parlak yüzey"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

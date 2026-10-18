@@ -1,0 +1,36 @@
+{
+  "file": "837a1af1-4823-44d6-917b-59f095d37efb.webp",
+  "category": "mobilya-ve-cila",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Klasik oymalı camlı vitrin cila ve boyama",
+    "en": "Classic carved display cabinet refinishing"
+  },
+  "alt": {
+    "tr": "Beyaz patineli ve yaldız detaylı oymalı klasik ahşap vitrin dolap.",
+    "en": "Classic carved wooden display cabinet with white distressed finish and gold accents."
+  },
+  "caption": {
+    "tr": "Atölyemizde cila ve boya yenilemesi tamamlanan klasik oymalı vitrin ve takım mobilyaların teslimat aşaması.",
+    "en": "Delivery stage of a refinished classic carved display cabinet and matching furniture with white patina and gold trim."
+  },
+  "seoFilename": "klasik-oymali-vitrin-cila-yenileme",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "salon",
+      "ic-mekan"
+    ],
+    "finish": [
+      "patine",
+      "lake",
+      "eskitme"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

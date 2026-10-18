@@ -1,0 +1,36 @@
+{
+  "file": "86fb075e-3647-40dc-b134-6ddc810b04ae.webp",
+  "category": "mobilya-ve-cila",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Özel tasarım ahşap ofis masası ve duvar ünitesi",
+    "en": "Custom wood executive desk and wall unit"
+  },
+  "alt": {
+    "tr": "Ahşap çalışma masası, antrasit raflı duvar ünitesi ve oturma grubuyla döşenmiş modern yönetici ofisi.",
+    "en": "Modern executive office featuring a wooden desk, dark gray open shelving unit, and lounge seating."
+  },
+  "caption": {
+    "tr": "Yönetici odası için hazırlanan özel ölçü ahşap çalışma masası, depolama dolapları ve antrasit nişli duvar raf ünitesi.",
+    "en": "Custom wooden executive desk paired with low storage credenzas and dark gray niche wall shelving in an office interior."
+  },
+  "seoFilename": "ahsap-ofis-masasi-ve-duvar-unitesi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "ofis",
+      "iç mekan",
+      "yönetici odası"
+    ],
+    "finish": [
+      "mat",
+      "ahşap kaplama"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

@@ -1,0 +1,39 @@
+{
+  "source": "Ahsap Yapilar/1824.webp",
+  "category": "ahsap-ev-ve-bungalov",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Desenli balkon korkuluklu ev, alttan görünüş",
+    "en": "House with patterned balcony railings, seen from below"
+  },
+  "alt": {
+    "tr": "Çıtalı çitin arkasından, alttan bakılan iki katlı ahşap evin desenli balkon korkulukları",
+    "en": "Patterned balcony railings of a two-storey timber house, looking up from behind a slatted fence"
+  },
+  "caption": {
+    "tr": "Balkon korkuluklarındaki geometrik kafes desen alttan net seçiliyor. Çatı geniş saçaklı.",
+    "en": "The geometric lattice pattern of the railings stands out clearly from below. The roof has wide eaves."
+  },
+  "seoFilename": "alttan-desenli-balkon-korkuluklari-ahsap-ev",
+  "tags": {
+    "type": [
+      "ahşap ev / bungalov",
+      "korkuluk",
+      "çit"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

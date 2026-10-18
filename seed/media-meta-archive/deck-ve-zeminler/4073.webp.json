@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/4073.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Ağaçlar arasında basamaklı ahşap deck",
+    "en": "Stepped timber deck among trees"
+  },
+  "alt": {
+    "tr": "Çam ağaçlarının arasında, basamaklarla yükselen ve çapraz korkulukla çevrili ahşap deck",
+    "en": "Timber deck rising in steps among pine trees, edged with cross-braced railing"
+  },
+  "caption": {
+    "tr": "İki kotlu bu deck'te alt ve üst platform geniş basamaklarla birleşiyor. Ağaç gövdeleri deck'in içinden yükseliyor.",
+    "en": "On this two-level deck, wide steps join the lower and upper platforms, with tree trunks rising through the boards."
+  },
+  "seoFilename": "basamakli-iki-kotlu-ahsap-deck-cam-agaclari",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "ağaçlık alan",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

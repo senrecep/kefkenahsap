@@ -1,0 +1,35 @@
+{
+  "file": "f89b2124-f727-4a40-a424-81c25e5be94d.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Eski vitrinli büfe, restorasyon öncesi",
+    "en": "Old display cabinet before restoration"
+  },
+  "alt": {
+    "tr": "Kıvrımlı camlı yan bölmeleri, ortada kapaklı ve çift kapılı ahşap yer büfesi; cilası eskimiş, yüzeyi lekeli",
+    "en": "Wooden cabinet with curved glass side doors, a center flap and double doors; the finish is worn and the surface stained"
+  },
+  "caption": {
+    "tr": "Yan bölmeleri camlı, kıvrımlı hatlara ve oyma ayaklara sahip eski büfe. Cilası yıpranmış, kaplaması solmuş durumda; yenileme için atölyeye geldi.",
+    "en": "An old cabinet with curved glass side sections and carved feet. The varnish is worn and the veneer has faded; it came to the workshop for restoration."
+  },
+  "seoFilename": "eski-camli-bufe-restorasyon-oncesi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "ev içi",
+      "atölye"
+    ],
+    "finish": [
+      "eski cila",
+      "yıpranmış vernik"
+    ],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.82
+}

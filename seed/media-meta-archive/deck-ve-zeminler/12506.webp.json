@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/12506.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapı önünde kalın kirişler ve alüminyum profil",
+    "en": "Thick joists and an aluminium profile at the glass door"
+  },
+  "alt": {
+    "tr": "Cam kapının önünde toprak üzerine yerleştirilmiş kalın ahşap kirişler ve kapı eşiğine yaslanan alüminyum profil",
+    "en": "Thick timber joists laid on soil in front of a glass door, with an aluminium profile along the threshold"
+  },
+  "caption": {
+    "tr": "Kirişler kapıdan dışarı doğru eşit aralıklarla sıralanıyor. Profil, deck'in kapı eşiğiyle birleşeceği yeri belirliyor.",
+    "en": "The joists run out from the door at even spacing. The profile marks where the deck will meet the door threshold."
+  },
+  "seoFilename": "cam-kapi-onunde-kalin-kirisler-aluminyum-profil",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe",
+      "giriş"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

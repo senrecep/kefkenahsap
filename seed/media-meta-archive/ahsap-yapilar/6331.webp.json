@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/6331.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Traverten kaide üstünde ahşap kaplı baca bölümü",
+    "en": "Timber-clad flue section on a travertine base"
+  },
+  "alt": {
+    "tr": "Traverten kaplı kaidenin üstünde yükselen ahşap kaplı baca bölümü ve çevresindeki çapraz çatı kirişleri",
+    "en": "Timber-clad flue section rising from a travertine-clad base, with crossing roof beams around it"
+  },
+  "caption": {
+    "tr": "Alttan çekilmiş kadrajda baca bölümü kirişli tavana doğru yükseliyor. Kaide açık renk taş kaplı, çatıda gergi telleri görünüyor.",
+    "en": "In this view from below the flue rises towards the beamed ceiling. The base is clad in light stone and tension wires show in the roof."
+  },
+  "seoFilename": "cati-kirisleri-arasinda-ahsap-kapli-baca-bolumu-ve-traverten",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Kopru ve Iskele/7837.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ağaç altında çapraz korkuluklu köşe bankı",
+    "en": "Corner bench with cross railings under a tree"
+  },
+  "alt": {
+    "tr": "Ağacın altındaki bahçe yolunda, çapraz korkuluklarla çevrili köşe oturma bankı",
+    "en": "Corner seating bench ringed by cross-braced railings on a garden path under a tree"
+  },
+  "caption": {
+    "tr": "Banklar çıtalı ve köşede birleşiyor. Korkuluklar çapraz kirişli, ahşap doğal tonda.",
+    "en": "The benches are slatted and meet at the corner. The railings are cross-braced, in natural-toned timber."
+  },
+  "seoFilename": "agac-altinda-capraz-korkuluklu-kose-oturma-banki",
+  "tags": {
+    "type": [
+      "bank",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

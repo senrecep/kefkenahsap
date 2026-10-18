@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/12520.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Tuğla kolon yanında yan kaplamalı yükseltilmiş deck",
+    "en": "Raised deck with side cladding beside a brick column"
+  },
+  "alt": {
+    "tr": "Kolon yanında yükseltilmiş açık renkli deck, yan yüzeyi yatay tahtalarla kaplı, önünde toprak",
+    "en": "Raised pale deck beside a column with its side face clad in horizontal boards and bare soil in front"
+  },
+  "caption": {
+    "tr": "Deck'in yan yüzeyi kapatılmış, üst tahtalar döşenmiş. Çevre toprağı henüz düzeltilmemiş.",
+    "en": "The side face of the deck is closed in and the top boards are down. The surrounding soil has yet to be dressed."
+  },
+  "seoFilename": "tugla-kolon-yaninda-yan-kapli-yukseltilmis-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

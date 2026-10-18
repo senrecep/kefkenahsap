@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/14121.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sarı cepheli evin beyaz boyalı camlı giriş kabini",
+    "en": "White-painted glazed entrance porch on a yellow house"
+  },
+  "alt": {
+    "tr": "Sarı boyalı bir evin girişinde, beyaz ahşap doğramalı ve camlı küçük bir giriş kabini, önünde kırmızı tuğla kenarlı yol",
+    "en": "Small glazed entrance porch with white timber frames on a yellow house, with a path edged in red brick in front"
+  },
+  "caption": {
+    "tr": "Giriş kabininin çift kanatlı kapısı ve yan camları beyaz boyalı ahşap doğramadan. Önünde tuğla kenarlı patika uzanıyor.",
+    "en": "The porch's double door and side panes are in white-painted timber. A brick-edged path leads to it."
+  },
+  "seoFilename": "sari-cepheli-evin-beyaz-boyali-camli-giris-kabini",
+  "tags": {
+    "type": [
+      "kapı"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

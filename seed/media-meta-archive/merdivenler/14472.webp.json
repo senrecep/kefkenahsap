@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/14472.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar kenarında ahşap basamaklar ve çıtalı korkuluk",
+    "en": "Timber steps and slatted railing by a stone wall"
+  },
+  "alt": {
+    "tr": "Taş istinat duvarının yanında ahşap basamaklar ve kalın direkli çıtalı korkuluk; arkada yeşil çit",
+    "en": "Timber steps and a slatted railing with thick posts beside a stone retaining wall, with a green hedge behind"
+  },
+  "caption": {
+    "tr": "Korkuluğun kalın direkleri basamakların kenarında duruyor. Arkada taş duvar ve yeşil bir çit var.",
+    "en": "The railing's thick posts stand at the edge of the steps. A stone wall and a green hedge are behind."
+  },
+  "seoFilename": "tas-duvar-kenarinda-ahsap-basamak-citali-korkuluk",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

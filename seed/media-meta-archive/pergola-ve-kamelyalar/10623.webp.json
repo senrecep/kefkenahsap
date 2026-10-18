@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/10623.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Altgen çatılı kamelyada çevre banklar, desenli taş zemin",
+    "en": "Hexagonal gazebo with bench seating all round on patterned paving"
+  },
+  "alt": {
+    "tr": "Altıgen çatılı ahşap kamelyanın içinde çevreyi saran bankları, sırt dayanaklı oturma yeri ve desenli kilit taş zemin",
+    "en": "Inside a hexagonal timber gazebo with benches running round the sides, a backrest seat and patterned interlocking paving"
+  },
+  "caption": {
+    "tr": "Banklar korkuluk boyunca uzanıyor, köşede sırtlıklı bir oturma yeri var. Direkler kalın ve vernikli.",
+    "en": "The benches run along the rail and one corner has a seat with a backrest. The posts are thick and varnished."
+  },
+  "seoFilename": "altgen-catili-kamelya-cevre-banklari-tas-zemin",
+  "tags": {
+    "type": [
+      "kamelya",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

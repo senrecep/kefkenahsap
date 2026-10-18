@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/5994.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kırmızı duvarlı ev önünde iki tonlu deck",
+    "en": "Two-tone deck in front of a red-walled house"
+  },
+  "alt": {
+    "tr": "Çimen üzerinde, kırmızı duvarlı evin cam kapılarının önünde duran deck; sağ yarısı sol yarısından daha koyu ve lekeli",
+    "en": "Deck on a lawn in front of the glass doors of a red-walled house, with its right half darker and more stained than the left"
+  },
+  "caption": {
+    "tr": "İki parçalı deckin ortasında bir aralık var, tahtalar yatay döşenmiş. Kenarda ortanca çiçekleri ve gri taş plaka görünüyor.",
+    "en": "There is a gap in the middle of the two-part deck and the boards are laid crosswise. Hydrangeas and a grey stone slab show at the edge."
+  },
+  "seoFilename": "kirmizi-duvarli-ev-onunde-yari-koyulasmis-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

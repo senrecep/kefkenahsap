@@ -1,0 +1,37 @@
+{
+  "source": "Boya Tamir ve Bakim/180.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimende kahverengi vernikli piknik masası",
+    "en": "Brown-varnished picnic table on the lawn"
+  },
+  "alt": {
+    "tr": "Yeşil çimde, bankları masaya bağlı kahverengi vernikli ahşap piknik masası",
+    "en": "A brown-varnished wooden picnic table with attached benches on a green lawn"
+  },
+  "caption": {
+    "tr": "Piknik masasının bankları ayaklara sabit, dolayısıyla tek parça duruyor. Tahtalar vernikle korunmuş.",
+    "en": "The benches of the picnic table are fixed to the legs, so it stands as one piece. The boards are protected with varnish."
+  },
+  "seoFilename": "cimende-kahverengi-vernikli-piknik-masasi",
+  "tags": {
+    "type": [
+      "piknik masası"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

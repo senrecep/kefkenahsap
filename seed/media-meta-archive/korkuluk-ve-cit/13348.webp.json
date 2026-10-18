@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/13348.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Turkuaz seramik üstünde dikey çıta kaplama",
+    "en": "Vertical slat cladding over turquoise ceramic tiles"
+  },
+  "alt": {
+    "tr": "Taş tezgâhın arkasında turkuaz ve yeşil seramik, üstünde sık dikey ahşap çıtalar",
+    "en": "Turquoise and green ceramic tiles behind a stone counter, topped by closely spaced vertical timber slats"
+  },
+  "caption": {
+    "tr": "Ahşap çıtalar seramik şeridin üstünden tavana doğru sıralanıyor.",
+    "en": "The timber slats line up above the ceramic band."
+  },
+  "seoFilename": "turkuaz-seramik-ve-dikey-ahsap-cita-kaplama",
+  "tags": {
+    "type": [
+      "kafes / paravan",
+      "dış mutfak / mangal alanı"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.45
+}

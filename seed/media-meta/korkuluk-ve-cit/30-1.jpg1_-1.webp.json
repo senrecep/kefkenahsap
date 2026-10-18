@@ -1,0 +1,36 @@
+{
+  "file": "30-1.jpg1_-1.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Site bahçesinde yuvarlak kazıklı ahşap çit",
+    "en": "Round log wooden fence in a residential complex garden"
+  },
+  "alt": {
+    "tr": "Çim alan ve yürüyüş yolu boyunca uzanan, yuvarlak ahşap kazıklardan yapılmış çit ve üst bölümde parmaklıklı korkuluk",
+    "en": "Fence of round wooden posts along a lawn and walkway, with a railing section on top, beside apartment blocks"
+  },
+  "caption": {
+    "tr": "Apartman sitesinin bahçesinde, çocuk oyun alanının yanında yuvarlak ahşap kazıklarla yaptığımız çit. Üst bölümde yatay kirişli korkuluk kısmı var, önüne servi ve çalılar dikilmiş.",
+    "en": "A fence built from round wooden posts in the garden of an apartment complex, next to a children's play area. The top section has a horizontal-rail railing, with cypress and shrubs planted in front."
+  },
+  "seoFilename": "site-bahcesi-yuvarlak-kazik-ahsap-cit",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "site bahçesi",
+      "bahçe",
+      "çocuk oyun alanı",
+      "dış mekan"
+    ],
+    "finish": [
+      "yeşil emprenye görünümlü"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

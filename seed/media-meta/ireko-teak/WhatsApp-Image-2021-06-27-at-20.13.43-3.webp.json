@@ -1,0 +1,37 @@
+{
+  "file": "WhatsApp-Image-2021-06-27-at-20.13.43-3.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede yarım kalmış ahşap deck montajı",
+    "en": "Garden wood deck installation in progress"
+  },
+  "alt": {
+    "tr": "Bahçede kırmızı boyalı çelik iskelet üzerine döşenmeye başlanmış ahşap deck tahtaları, yanında taş duvar ve havuz boşluğu",
+    "en": "Wood deck boards being laid over a red-painted steel frame in a garden, beside a stone wall and a pool excavation"
+  },
+  "caption": {
+    "tr": "Kırmızı boyalı çelik alt yapı üzerine deck tahtalarının döşenmesi sürüyor. Tahtaların yarısı yerinde, kalan kısımda iskelet açıkta.",
+    "en": "Deck boards are going down over a red-painted steel substructure. Half the boards are in place and the rest of the frame is still exposed."
+  },
+  "seoFilename": "celik-iskelet-uzerine-ahsap-deck-montaji",
+  "tags": {
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "bahçe",
+      "havuz kenarı",
+      "teras"
+    ],
+    "finish": [
+      "doğal"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

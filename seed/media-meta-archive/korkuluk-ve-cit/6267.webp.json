@@ -1,0 +1,39 @@
+{
+  "source": "Korkuluk ve Cit/6267.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ağaçlar arasında yeni dikilmiş çit direkleri",
+    "en": "Newly set fence posts among trees"
+  },
+  "alt": {
+    "tr": "Söğüt benzeri ağaçların altında, çakıl yolun kenarına sıralanmış ince ahşap direkler, yerde kereste ve beyaz bir hortum",
+    "en": "Slender timber posts lined up beside a gravel track beneath willow-like trees, with timber and a white hose on the ground"
+  },
+  "caption": {
+    "tr": "Direkler yerine dikilmiş ama kirişleri henüz takılmamış. Uzakta bir kapı iskeleti seçiliyor.",
+    "en": "The posts are set but the rails are not on yet. A gate frame shows in the distance."
+  },
+  "seoFilename": "agaclar-arasinda-yeni-dikilmis-cit-direkleri-cakil-yol",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

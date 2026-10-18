@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/12754.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölyede beyaz boyalı çaprazlama çıtalı, ayaklı ahşap kafes panel",
+    "en": "White-painted diagonal lattice timber panel on feet in the workshop"
+  },
+  "alt": {
+    "tr": "Atölyede kırmızımsı zeminde duran, beyaz boyalı, çapraz çıtalı iki bölümlü ahşap kafes panel; altta iki küçük ayak",
+    "en": "A two-section white-painted timber lattice panel with diagonal slats standing on a reddish floor in a workshop"
+  },
+  "caption": {
+    "tr": "Panel iki parçadan oluşuyor, çıtalar çapraz bindirilmiş. Her iki ucunda küçük L ayaklar panelin devrilmesini önlüyor.",
+    "en": "The panel is made of two pieces with crossed overlapping slats. Small L-shaped feet at both ends stop the panel from tipping."
+  },
+  "seoFilename": "atolyede-beyaz-boyali-capraz-citali-ayakli-kafes-panel",
+  "tags": {
+    "type": [
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

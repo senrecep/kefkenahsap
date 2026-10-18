@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/13169.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yükseltilmiş platformun çaprazlı ayakları ve suni çim",
+    "en": "Cross-braced legs of a raised platform and artificial turf"
+  },
+  "alt": {
+    "tr": "Yükseltilmiş ahşap platformun çaprazlı ayakları ve altındaki suni çim kenarının yakın görünümü",
+    "en": "Close view of the cross-braced legs of a raised timber platform and the edge of the artificial turf beneath"
+  },
+  "caption": {
+    "tr": "Ayaklar çapraz parçayla sabitlenmiş ve platformun kenarına oturuyor. Suni çim altta kıvrılmış duruyor.",
+    "en": "The legs are braced by a diagonal piece and meet the edge of the platform. The artificial turf curls up at the bottom."
+  },
+  "seoFilename": "yukseltilmis-platformun-capraz-ayaklari-ve-suni-cim",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı",
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

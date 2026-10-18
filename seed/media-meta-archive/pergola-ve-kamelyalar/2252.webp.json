@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/2252.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çok katlı ahşap yapı, merdiven ve beton zemin, yapım sürüyor",
+    "en": "Multi-level timber structure with stairs and a concrete floor under construction"
+  },
+  "alt": {
+    "tr": "Beton zemin üzerinde çok katlı ahşap yapı iskeleti, çapraz destekler, merdiven ve basamak korkuluğu, yapım sürüyor",
+    "en": "Multi-level timber frame on a concrete floor with diagonal supports, stairs and a stair railing, still under construction"
+  },
+  "caption": {
+    "tr": "Direkler ve payandalar uzun bir hat boyunca sıralanıyor, üst katta merdiven yükseliyor. Zeminde ışık-gölge çizgileri var.",
+    "en": "Posts and braces run along a long line with stairs rising to the upper level. Light and shadow lines cross the floor."
+  },
+  "seoFilename": "cok-katli-ahsap-yapi-merdiven-beton-zemin",
+  "tags": {
+    "type": [
+      "pergola",
+      "merdiven"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

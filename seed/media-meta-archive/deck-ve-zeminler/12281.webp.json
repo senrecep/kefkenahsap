@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12281.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kolon yanında yeşil hortumlu açık gri deck",
+    "en": "Light grey deck beside a column with a green hose"
+  },
+  "alt": {
+    "tr": "Kolonun yanında açık gri kahverengi deck, üzerinde yeşil hortum ve küçük bir ahşap bank",
+    "en": "Light grey-brown deck beside a column, with a green hose and a small timber stool on it"
+  },
+  "caption": {
+    "tr": "Tahtalar emprenyeden gelen yeşilimsi tonunu yer yer koruyor. Deck'in kenarı çimene doğru eğri bir çizgi çiziyor.",
+    "en": "The boards keep a trace of the greenish tone from pressure treatment. The deck edge curves towards the lawn."
+  },
+  "seoFilename": "kolon-yaninda-yesil-hortumlu-acik-gri-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

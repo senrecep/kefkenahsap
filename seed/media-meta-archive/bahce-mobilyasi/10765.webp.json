@@ -1,0 +1,38 @@
+{
+  "source": "Ireko-Teak/10765.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çıtalı ahşap katlanır sandalye, arkada ahşap saksı ve sarmaşık",
+    "en": "Slatted timber folding chair with a timber planter and ivy behind"
+  },
+  "alt": {
+    "tr": "Karo zeminde duran, yüksek çıtalı sırtlığı olan katlanır ahşap sandalye; arkasında ahşap bir çiçeklik ve sarmaşıklı duvar var",
+    "en": "A folding timber chair with a tall slatted back on a tiled floor, with a timber planter and an ivy-covered wall behind"
+  },
+  "caption": {
+    "tr": "Sandalye katlanabiliyor, oturağı ve sırtlığı ince çıtalardan. Yüzey yeni vernikle parlıyor.",
+    "en": "The chair folds, and its seat and back are thin slats. The surface shines with fresh varnish."
+  },
+  "seoFilename": "citali-ahsap-katlanir-sandalye-arkada-ahsap-saksi-ve",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı",
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

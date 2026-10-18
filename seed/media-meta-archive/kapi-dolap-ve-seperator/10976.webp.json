@@ -1,0 +1,35 @@
+{
+  "source": "Kapi Dolap ve Seperator/10976.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Yatay çıtalı açık renk ahşap kapama",
+    "en": "Light timber slatted enclosure"
+  },
+  "alt": {
+    "tr": "Avluda üstü düz kapaklı, dört yanı aralıklı yatay çıtalarla kaplı açık renk ahşap kutu",
+    "en": "Light timber box with a flat top and spaced horizontal slats on every side, in a courtyard"
+  },
+  "caption": {
+    "tr": "Kapamanın dört yanı aralıklı yatay çıtalarla kaplandı, üstü düz bir tablayla kapatıldı.",
+    "en": "Spaced horizontal slats wrap all sides of the enclosure, which is closed with a flat top."
+  },
+  "seoFilename": "avlu-acik-renk-yatay-citali-ahsap-kapama",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "avlu",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,37 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 17.59.58 (3).webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Havuz çevresi ahşap deck",
+    "en": "Wooden pool deck"
+  },
+  "alt": {
+    "tr": "Bahçedeki dikdörtgen havuzun çevresini saran, kısa tahtalardan döşenmiş ahşap deck ve paslanmaz halat korkuluk",
+    "en": "Wooden deck of short boards around a rectangular garden pool, with a stainless steel cable railing"
+  },
+  "caption": {
+    "tr": "Havuzun iki yanını saran deck, kısa tahtaların karışık dizilişiyle döşendi. Kenarda paslanmaz halat korkuluk var, arkada çit ve çim alan görünüyor.",
+    "en": "The deck wraps two sides of the pool, laid in a staggered pattern of short boards. A stainless steel cable railing runs along the edge, with a hedge and lawn behind."
+  },
+  "seoFilename": "havuz-cevresi-ahsap-deck",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "havuz",
+      "bahçe",
+      "dış mekan",
+      "villa"
+    ],
+    "finish": [
+      "doğal ton",
+      "paslanmaz korkuluk"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

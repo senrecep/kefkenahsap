@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/12222.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yükseltilmiş deck'in yan görünüşü ve korkuluğu",
+    "en": "Side view of a raised deck and its railing"
+  },
+  "alt": {
+    "tr": "Yükseltilmiş deck'in yan görünüşü: korkuluk, yatay tahta kaplı yan yüzey ve beton ayaklar",
+    "en": "Side of a raised deck showing the railing, a horizontally clad side face and concrete footings"
+  },
+  "caption": {
+    "tr": "Deck'in kenarı yatay tahtalarla kapatılmış, üstünde çıtalı korkuluk var. Altta beton ayaklar zemine basıyor.",
+    "en": "The deck edge is closed with horizontal boards and carries a slatted railing. Concrete footings carry it at the bottom."
+  },
+  "seoFilename": "yukseltilmis-deck-yan-gorunusu-korkuluk-beton-ayak",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,37 @@
+{
+  "file": "38.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Dikdörtgen ahşap saksı kutuları",
+    "en": "Rectangular wooden planter boxes"
+  },
+  "alt": {
+    "tr": "Açık yeşil emprenyeli görünümlü kalın ahşap tahtalardan yapılmış dikdörtgen saksı kutuları, arkada taş duvar ve çiçekler",
+    "en": "Rectangular planter boxes of thick green-tinted wooden boards, with a stone wall and flowers behind"
+  },
+  "caption": {
+    "tr": "Kalın tahtaların üst üste bindirilmesiyle yapılmış, dış mekânda kullanılan dikdörtgen ahşap saksı kutuları.",
+    "en": "Rectangular wooden planter boxes for outdoor use, built from thick boards stacked in layers."
+  },
+  "seoFilename": "dikdortgen-ahsap-saksi-kutulari",
+  "tags": {
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras",
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "emprenye"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.6
+}

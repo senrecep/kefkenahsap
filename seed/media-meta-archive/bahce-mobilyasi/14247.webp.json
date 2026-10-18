@@ -1,0 +1,39 @@
+{
+  "source": "Ireko-Teak/14247.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deck terasta ahşap koltuk takımı",
+    "en": "Timber seating set on a decked terrace"
+  },
+  "alt": {
+    "tr": "Cam kapılı evin deck terasında ahşap kanepe, koltuklar ve orta masa",
+    "en": "Timber sofa, armchairs and centre table on the decked terrace of a house with glass doors"
+  },
+  "caption": {
+    "tr": "Koltuk takımı kanepe, iki koltuk ve orta masadan oluşuyor. Cilalı ahşap, deck zemine iyi oturmuş.",
+    "en": "The set has a sofa, two armchairs and a centre table. The varnished timber sits well on the deck floor."
+  },
+  "seoFilename": "teras-ahsap-koltuk-takimi-deck-zemin-cam-kapi",
+  "tags": {
+    "type": [
+      "oturma grubu",
+      "sehpa",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

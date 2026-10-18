@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/15077.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çakıl aralıklı grileşmiş deck",
+    "en": "Greyed deck with gravel gaps"
+  },
+  "alt": {
+    "tr": "Tahtaları aralarındaki çakıl şeritlerle ayrılan grileşmiş deck; solda ahşap bir masa, köşede bir ayakkabı ucu",
+    "en": "Greyed deck whose boards are separated by gravel strips, with a timber table on the left and the tip of a shoe in the corner"
+  },
+  "caption": {
+    "tr": "Deck eskimiş ve gri bir ton almış. Çakıl şeritleri kare boyunca çapraz ilerliyor.",
+    "en": "The deck has weathered to a grey tone. The gravel strips run diagonally across the frame."
+  },
+  "seoFilename": "cakil-araliklari-olan-grilesmis-deck-ve-ahsap-masa",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

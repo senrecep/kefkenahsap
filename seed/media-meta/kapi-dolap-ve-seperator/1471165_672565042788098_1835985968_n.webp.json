@@ -1,0 +1,35 @@
+{
+  "file": "1471165_672565042788098_1835985968_n.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Dış ünite için yatay çıtalı ahşap kafes",
+    "en": "Slatted wooden enclosure for an outdoor unit"
+  },
+  "alt": {
+    "tr": "Bahçede çimenlik üzerinde, dış üniteyi çevreleyen koyu iskeletli yatay çıtalı ahşap kafes",
+    "en": "Horizontal wooden slat enclosure with a dark frame surrounding an outdoor unit on a garden lawn"
+  },
+  "caption": {
+    "tr": "Bahçedeki dış ünite için yaptığımız yatay çıtalı ahşap kafes. Çıtalar arası açık bırakıldığı için hava geçiyor, ünite de dışarıdan görünmüyor.",
+    "en": "A horizontal slatted wooden enclosure we built for an outdoor unit in a garden. The gaps between slats let air through while keeping the unit out of sight."
+  },
+  "seoFilename": "dis-unite-ahsap-kafes-bahce",
+  "tags": {
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "villa"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

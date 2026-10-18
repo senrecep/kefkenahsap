@@ -1,0 +1,37 @@
+{
+  "file": "4adfcf53-0e70-43a0-b805-c8454c4230cb.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ofis karşılama alanında lamelli duvar ve ahşap tezgah",
+    "en": "Office lounge with slatted wall panel and wooden counter"
+  },
+  "alt": {
+    "tr": "Koyu lamelli ahşap duvarın önünde krem kanepe, yuvarlak sehpa ve açık renkli ahşap tezgah bulunan loş ışıklı ofis köşesi",
+    "en": "Dimly lit office lounge with a cream sofa and round table in front of a dark slatted wall, beside a light wooden counter"
+  },
+  "caption": {
+    "tr": "Koyu renk lamelli duvar panelinin önünde oturma grubu, yanında doğal tonlu ahşap tezgah. Duvar ışıkları lamelleri öne çıkarıyor.",
+    "en": "A seating area in front of a dark slatted wall panel, with a natural-toned wooden counter beside it. The wall lights highlight the slats."
+  },
+  "seoFilename": "lamelli-duvar-ahsap-tezgah-ofis-karsilama",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "ofis",
+      "karşılama alanı",
+      "iç mekan"
+    ],
+    "finish": [
+      "siyah boyalı lamel",
+      "doğal ahşap tezgah",
+      "vernikli yüzey"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.72
+}

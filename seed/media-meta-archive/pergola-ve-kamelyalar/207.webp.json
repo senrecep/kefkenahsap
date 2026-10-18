@@ -1,0 +1,41 @@
+{
+  "source": "Pergola ve Kamelyalar/207.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Mor salkımlı geniş pergola çatısı ve altında ahşap deck",
+    "en": "Broad pergola roof with purple wisteria over a timber deck"
+  },
+  "alt": {
+    "tr": "Üstü mor salkımlarla kaplı geniş pergola çatısı, altı lambri kaplı, ahşap deck ve kenarda iki kişi",
+    "en": "Broad pergola roof topped with purple wisteria, a lined underside and a timber deck, with two people at the edge"
+  },
+  "caption": {
+    "tr": "Çatının altı lambri tahtalarla kaplanmış ve ince direklerle taşınıyor. Üstte salkımlar çatının kenarından sarkıyor.",
+    "en": "The underside of the roof is lined with boards on slim posts. Wisteria clusters hang over the roof edge above."
+  },
+  "seoFilename": "mor-salkimli-genis-pergola-cati-ahsap-deck",
+  "tags": {
+    "type": [
+      "pergola",
+      "deck",
+      "tavan kaplaması / lambri"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

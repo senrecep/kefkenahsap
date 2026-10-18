@@ -1,0 +1,35 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14924.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Ağaç gölgesinde ahşap yemek masası",
+    "en": "Timber dining table in the shade of trees"
+  },
+  "alt": {
+    "tr": "Kumlu bahçe zemininde koyu kahve tonlu tahta tablalı masa ve yanındaki bank",
+    "en": "Dark brown timber table with a plank top and a bench beside it, on sandy garden ground"
+  },
+  "caption": {
+    "tr": "Ağaçların altına yerleştirilen masa ve bank aynı koyu tonda. Masanın ayakları alt kayıtla birbirine bağlanmış.",
+    "en": "The table and bench under the trees share the same dark tone. The table legs are joined by a lower stretcher."
+  },
+  "seoFilename": "agac-golgesi-koyu-ahsap-masa-bank",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "koyu kahve ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

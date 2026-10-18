@@ -1,0 +1,34 @@
+{
+  "source": "Merdivenler/2209.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Pergolalı terasa çıkan ahşap merdiven",
+    "en": "Timber staircase up to a pergola-covered terrace"
+  },
+  "alt": {
+    "tr": "Deniz kenarında, çapraz korkuluklu ahşap merdivenin pergolalı üst terasa çıkışı",
+    "en": "Timber staircase with cross-braced railings climbing to a pergola-covered terrace by the sea"
+  },
+  "caption": {
+    "tr": "Alt sahanlıktan pergolalı üst terasa çıkan ahşap merdiven. Korkuluklarda çapraz dikmeler kullanılmış.",
+    "en": "A timber staircase rising from a lower landing to a pergola-covered terrace. The railings use cross-braced panels."
+  },
+  "seoFilename": "pergolali-terasa-cikan-ahsap-merdiven-deniz",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "deniz kenarı",
+      "teras",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

@@ -1,0 +1,40 @@
+{
+  "source": "Deck ve Zeminler/14202.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çam ağaçları arasında dolanan deck yolu",
+    "en": "Deck path winding between pine trees"
+  },
+  "alt": {
+    "tr": "Ağaç gövdelerinin arasından kıvrılarak geçen, işlenmemiş açık yeşilimsi emprenyeli çam deck yolu; yanda bahçe lambası",
+    "en": "Unfinished pale greenish pressure-treated pine deck path curving between tree trunks, with a garden lamp beside it"
+  },
+  "caption": {
+    "tr": "Yol ağaçları kesmeden aralarından geçiyor. Tahtalar uzun yönde döşenmiş ve yüzey henüz boya almamış.",
+    "en": "The path passes between the trees without cutting them. Boards are laid lengthwise and the surface has no finish yet."
+  },
+  "seoFilename": "cam-agaclari-arasinda-dolanan-deck-yolu",
+  "tags": {
+    "type": [
+      "deck",
+      "yürüyüş yolu"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "orman / kır"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

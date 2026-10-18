@@ -1,0 +1,37 @@
+{
+  "file": "49.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Site bahçesi için ahşap çit ve pergole",
+    "en": "Wooden fence and pergola for a housing complex garden"
+  },
+  "alt": {
+    "tr": "Kaldırım boyunca uzanan açık tonlu ahşap çit, üstünde pergole ve kuş evi, önünde yeşil örtü bitkileri, arkada pembe konutlar",
+    "en": "Light wooden fence along a sidewalk with a pergola and birdhouse, green ground cover in front, pink houses behind"
+  },
+  "caption": {
+    "tr": "Konut bahçesini kaldırımdan ayıran, dikey çıtalı ahşap çit. Köşede pergole ve ahşap kuş evi var, çitin önü örtü bitkileriyle kaplı.",
+    "en": "A wooden fence with vertical slats separates the residential garden from the sidewalk. A pergola and a wooden birdhouse sit at the corner, and ground cover plants run along the front."
+  },
+  "seoFilename": "konut-bahcesi-ahsap-cit-pergole",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "konut bahçesi",
+      "site",
+      "kaldırım",
+      "dış mekan"
+    ],
+    "finish": [
+      "doğal ton",
+      "emprenye görünümlü"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

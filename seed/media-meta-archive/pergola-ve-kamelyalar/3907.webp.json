@@ -1,0 +1,33 @@
+{
+  "source": "Pergola ve Kamelyalar/3907.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Sarı duvar önünde ahşap pergola",
+    "en": "Timber pergola against a yellow wall"
+  },
+  "alt": {
+    "tr": "Sarı sıvalı yüksek duvara yaslanan, açık renk ahşaptan tek sıra dikmeli pergola",
+    "en": "Light timber pergola on a single row of posts, set against a tall yellow rendered wall"
+  },
+  "caption": {
+    "tr": "Bahçedeki yüksek duvar boyunca kurulan pergola, duvar dibinde gölgeli bir köşe oluşturuyor.",
+    "en": "A pergola built along a tall garden wall, creating a shaded corner at its foot."
+  },
+  "seoFilename": "sari-duvar-onunde-ahsap-pergola",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/12622.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Direkler üzerinde oyun evi ve el merdiveni",
+    "en": "Playhouse on posts with a ladder"
+  },
+  "alt": {
+    "tr": "Direkler üzerinde yükseltilmiş kırmızı çatılı ahşap oyun evi; el merdiveni, yeşil kaydırak ve salıncak",
+    "en": "Raised timber playhouse with a red roof on posts, with a ladder, a green slide and a swing"
+  },
+  "caption": {
+    "tr": "Oyun evine ahşap el merdiveniyle çıkılıyor. Alttaki dört direğin arası açık, yan tarafta yeşil kaydırak uzanıyor.",
+    "en": "The playhouse is reached by a timber ladder. The space between the four posts below is open and a green slide runs down the side."
+  },
+  "seoFilename": "direkler-uzerinde-ahsap-oyun-evi-el-merdiveni-yesil-kaydirak",
+  "tags": {
+    "type": [
+      "çocuk oyun evi",
+      "salıncak"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "orman / kır"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

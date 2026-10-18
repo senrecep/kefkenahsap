@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/9703.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Üst üste dizilmiş katlanır kollu sandalyeler",
+    "en": "Stacked folding armchairs"
+  },
+  "alt": {
+    "tr": "Terasta üst üste dizilmiş vernikli, kollu ve katlanır ahşap sandalyeler",
+    "en": "Varnished timber folding armchairs stacked on top of each other on a terrace"
+  },
+  "caption": {
+    "tr": "Sandalyelerin sırt ve oturakları çıtalı. Hepsi aynı modelden ve aynı tonda.",
+    "en": "The chair backs and seats are slatted. They are all the same model and shade."
+  },
+  "seoFilename": "terasta-ust-uste-dizilmis-katlanir-kollu-sandalyeler",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

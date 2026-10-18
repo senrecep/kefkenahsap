@@ -1,0 +1,40 @@
+{
+  "source": "Kopru ve Iskele/8038.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dikey çıtalı ahşap korkuluk ve küpeşte yakın çekimi, havuz kenarında",
+    "en": "Close-up of a vertical-slat timber railing and handrail beside a pool"
+  },
+  "alt": {
+    "tr": "Havuz kenarındaki deck üzerinde kalın dikmeli, dikey çıtalı ahşap korkuluk ve küpeşte yakından; arkada yuvarlak havuz kenarı",
+    "en": "Close view of a vertical-slat timber railing and handrail with a thick post on a deck beside a pool, a round pool edge behind"
+  },
+  "caption": {
+    "tr": "Çıtalar iki yatay kuşak arasında eşit aralıkla sıralı, dikme kalın. Korkuluk deck'in kenarını kavisle izliyor.",
+    "en": "The slats are evenly spaced between two horizontal rails and the post is thick. The railing follows the edge of the deck in a curve."
+  },
+  "seoFilename": "dikey-citali-ahsap-korkuluk-kupeste-yakin-cekim-havuz",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

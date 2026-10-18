@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/8164.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz kenarında koyu kahverengi büyük ahşap masa",
+    "en": "Large dark brown timber table by a swimming pool"
+  },
+  "alt": {
+    "tr": "Taş döşeli zeminde, arka planda havuz ve çimlik bulunan, tablası parlak vernikli büyük koyu kahverengi ahşap masa",
+    "en": "A large dark brown timber table with a glossy varnished top on stone paving, with a pool and lawn in the background"
+  },
+  "caption": {
+    "tr": "Masa havuz başında, taş zeminde duruyor. Parlak vernik tabla yüzeyini nemden koruyor.",
+    "en": "The table sits by the pool on stone paving. The glossy varnish protects the top from moisture."
+  },
+  "seoFilename": "havuz-kenarinda-koyu-kahve-parlak-buyuk-ahsap-masa-tas",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı",
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

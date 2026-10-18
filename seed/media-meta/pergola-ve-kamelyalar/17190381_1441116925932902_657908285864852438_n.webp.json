@@ -1,0 +1,36 @@
+{
+  "file": "17190381_1441116925932902_657908285864852438_n.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe duvarında kemerli ahşap kafes panel",
+    "en": "Arched wooden trellis panel on a garden wall"
+  },
+  "alt": {
+    "tr": "Beyaz tuğla desenli bahçe duvarında, iki eşkenar dörtgen boşluklu, kemerli ahşap kafes panel ve yan çıtalı bölmeler",
+    "en": "Arched wooden trellis panel with two diamond openings set into a white brick-pattern garden wall, with slatted side sections"
+  },
+  "caption": {
+    "tr": "Beyaz tuğla görünümlü bahçe duvarına yerleştirilmiş, üstü kemerli ahşap kafes panel. Ortada iki eşkenar dörtgen boşluk, iki yanda çıtalı bölmeler var.",
+    "en": "An arched wooden trellis panel set into a white brick-look garden wall, with two diamond-shaped openings in the middle and slatted sections on each side."
+  },
+  "seoFilename": "kemerli-ahsap-kafes-bahce-paneli",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "bahçe duvarı",
+      "dış mekan"
+    ],
+    "finish": [
+      "doğal",
+      "gri patinalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.72
+}

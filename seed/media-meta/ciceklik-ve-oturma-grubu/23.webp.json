@@ -1,0 +1,36 @@
+{
+  "file": "23.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Teras için ahşap çiçeklik sandıkları",
+    "en": "Wooden planter boxes for a terrace"
+  },
+  "alt": {
+    "tr": "Teras zemininde üst üste dizilmiş, yatay çıtalı açık renk ahşap dikdörtgen çiçeklik sandıkları; öndeki sandığın içi açık",
+    "en": "Light wooden rectangular planter boxes with horizontal slats stacked on a terrace floor, the front box open at the top"
+  },
+  "caption": {
+    "tr": "Terasa yerleştirilecek dikdörtgen ahşap çiçeklikler. Yatay çıtalarla kaplanmış, üst kenarı çerçeveli sandıklar kurulum öncesi istiflenmiş halde.",
+    "en": "Rectangular wooden planters made for a terrace. The slat-clad boxes with framed top edges are stacked before installation."
+  },
+  "seoFilename": "teras-ahsap-ciceklik-sandiklari",
+  "tags": {
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "teras",
+      "balkon"
+    ],
+    "finish": [
+      "doğal renk"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

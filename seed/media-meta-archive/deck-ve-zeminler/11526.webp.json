@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/11526.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Turuncu tonlu deck tahtalarının yakın çekimi",
+    "en": "Close-up of orange-toned deck boards"
+  },
+  "alt": {
+    "tr": "Yakın çekimde turuncu tonlu koruyucu sürülmüş deck tahtaları ve çamın ahşap damarları",
+    "en": "Close-up of deck boards treated with an orange-toned protective coat, showing the grain of the pine"
+  },
+  "caption": {
+    "tr": "Koruyucu tahtanın damarını kapatmadan renk veriyor. Budak izleri ve boyuna derzler belirgin.",
+    "en": "The coat gives colour without hiding the grain. Knots and the lengthwise joints stand out."
+  },
+  "seoFilename": "yakin-cekimde-turuncu-tonlu-boyali-deck-tahtalari-ve-ahsap",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

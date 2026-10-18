@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/14696.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölyede beyaz boyalı piket çit paneli",
+    "en": "White-painted picket fence panel in the workshop"
+  },
+  "alt": {
+    "tr": "Atölyede masa üzerinde duran, sivri uçlu beyaz boyalı çıtalardan oluşan çit paneli, yanında sandalyeler",
+    "en": "Fence panel of pointed white-painted pickets lying on a workshop table, with chairs beside it"
+  },
+  "caption": {
+    "tr": "Çıtalar iki arka kuşağa bağlanmış ve boyası kurumuş görünüyor. Panel montaja hazır.",
+    "en": "The pickets are tied to two back rails and the paint looks dry. The panel is ready for installation."
+  },
+  "seoFilename": "atolyede-beyaz-boyali-piket-cit-paneli",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

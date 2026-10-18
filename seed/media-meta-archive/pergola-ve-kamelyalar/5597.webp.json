@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/5597.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yamaçta kademeli ahşap çatılı yürüyüş alanları, aşağıda deniz",
+    "en": "Stepped timber-roofed walking areas on a slope with the sea below"
+  },
+  "alt": {
+    "tr": "Yamaçta kademeli sıralanan ahşap çatılı alanlar ve deck yürüyüşleri, yeşillik arasında aşağıda turkuaz deniz",
+    "en": "Stepped timber-roofed areas and deck walkways on a slope among greenery, with turquoise sea below"
+  },
+  "caption": {
+    "tr": "Çatılar yamacın eğimini izleyerek aşağı doğru kademeleniyor. Aralarında deck yollar uzanıyor.",
+    "en": "The roofs step down following the slope of the hillside. Deck paths run between them."
+  },
+  "seoFilename": "yamacta-kademeli-ahsap-catili-yuruyus-alanlari",
+  "tags": {
+    "type": [
+      "pergola",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

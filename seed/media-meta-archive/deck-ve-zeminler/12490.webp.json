@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/12490.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yosunlu zeminde sökülmüş eski kirişler",
+    "en": "Removed old joists on mossy ground"
+  },
+  "alt": {
+    "tr": "Yosunlu zeminde sökülmüş eski yeşil kirişler ve çürümüş tahta parçaları, üstte taş sütun",
+    "en": "Old green joists taken out and rotted board pieces on mossy ground, with a stone pillar at the top"
+  },
+  "caption": {
+    "tr": "Alttaki tahtalar nemden çürümüş ve yosun tutmuş. Yeni deck için zemin önce açılıyor.",
+    "en": "The boards underneath have rotted from damp and gone mossy. The ground is being opened up for the new deck first."
+  },
+  "seoFilename": "yosunlu-zeminde-sokulmus-eski-kirisler",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

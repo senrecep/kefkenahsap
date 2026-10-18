@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/10507.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimenle çevrili kırmızımsı deck",
+    "en": "Reddish deck surrounded by lawn"
+  },
+  "alt": {
+    "tr": "Yeşil çimenle çevrili, kırmızımsı ve yağ görünümlü ahşap deck; arkada cam kapılı bina",
+    "en": "Reddish, oil-finished-looking timber deck surrounded by green lawn, with a building with glass doors behind"
+  },
+  "caption": {
+    "tr": "Deck çimenin üstüne köşeli bir alan olarak yerleştirilmiş. Tahtaların rengi kızıl-kahve, yüzey parlak.",
+    "en": "The deck sits on the lawn as a corner-cut area. The boards are red-brown and the surface is glossy."
+  },
+  "seoFilename": "yesil-cimenle-cevrili-kirmizimsi-yag-gorunumlu-ahsap-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

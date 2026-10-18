@@ -1,0 +1,37 @@
+{
+  "source": "Pergola ve Kamelyalar/4010.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kalın vernikli kiriş ve makas detayı",
+    "en": "Detail of a thick varnished beam and truss"
+  },
+  "alt": {
+    "tr": "Taş duvarın önünde, kalın vernikli kiriş, kolon ve çapraz makas detayı",
+    "en": "Detail of a thick varnished beam, post and diagonal truss in front of a stone wall"
+  },
+  "caption": {
+    "tr": "Kalın bir kolon yatay kirişe bağlanıyor, aralarında çapraz bağlantılar uzanıyor. Arkada iri taşlı duvar görünüyor.",
+    "en": "A thick post joins a horizontal beam with diagonal ties running between them. A wall of large stones shows behind."
+  },
+  "seoFilename": "vernikli-kalin-kiris-ve-cati-makas-detayi-tas-duvar-onu",
+  "tags": {
+    "type": [
+      "sundurma / saçak / carport"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

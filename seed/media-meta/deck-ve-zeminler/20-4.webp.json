@@ -1,0 +1,38 @@
+{
+  "file": "20-4.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Havuz kenarında koyu renkli ahşap deck",
+    "en": "Dark wood deck beside a pool"
+  },
+  "alt": {
+    "tr": "Havuz kenarında çimenlik bahçeye uzanan, koyu kızıl kahverengi geniş ahşap deck zemin; yanında lavanta ve taş kaplama",
+    "en": "Wide dark reddish-brown wood deck beside a pool, extending to a lawn, with lavender and stone paving alongside"
+  },
+  "caption": {
+    "tr": "Havuz çevresinde, çimenlik alanla taş kaplama arasına döşenmiş koyu tonlu ahşap deck. Kenarda ızgaralı su kanalı ve lavanta bitkileri var.",
+    "en": "A dark-toned wood deck laid between the lawn and the stone paving around a pool, with a grated drainage channel and lavender plants along the edge."
+  },
+  "seoFilename": "havuz-kenari-ahsap-deck-zemin",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "havuz",
+      "bahçe",
+      "dış mekan",
+      "villa bahçesi"
+    ],
+    "finish": [
+      "koyu ton",
+      "vernikli",
+      "yağlı görünüm"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/3607.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yeşilimsi deck zemin ve ahşap bar tezgâhı",
+    "en": "Greenish deck floor and timber bar counter"
+  },
+  "alt": {
+    "tr": "Üstü kapalı bir açık hava alanında yeşilimsi emprenyeli çam deck zemin; arkada ahşap bar tezgâhı ve yüksek tabureler",
+    "en": "Greenish pressure-treated pine deck floor in a covered outdoor area, with a timber bar counter and high stools behind"
+  },
+  "caption": {
+    "tr": "Tahtalar tezgâha dik olarak döşenmiş. Arka planda taş duvar ve ahşap sandalyeler görünüyor.",
+    "en": "The boards are laid square to the counter. A stone wall and timber chairs show in the background."
+  },
+  "seoFilename": "yesilimsi-deck-zemin-ve-ahsap-bar-tezgahi",
+  "tags": {
+    "type": [
+      "deck",
+      "bar / tezgâh"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

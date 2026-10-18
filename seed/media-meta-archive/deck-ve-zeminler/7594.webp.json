@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/7594.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam bölmeli duş kabininde deck zemin",
+    "en": "Deck floor in a glass-partitioned shower cabin"
+  },
+  "alt": {
+    "tr": "Cam bölmeli bir duş kabininin zeminine döşenmiş, ıslak parlayan yatay tahtalı deck; yan duvarlar fayans kaplı",
+    "en": "Deck of horizontal boards laid on the floor of a glass-partitioned shower cabin, shining wet, with tiled side walls"
+  },
+  "caption": {
+    "tr": "Tahtalar kabin girişine paralel döşenmiş ve yüzeyde su damlaları duruyor. Tahtalar arasında su süzülmesi için aralık bırakılmış.",
+    "en": "The boards are laid parallel to the cabin entrance and water droplets sit on the surface. Gaps are left between the boards for water to drain."
+  },
+  "seoFilename": "cam-bolmeli-dus-kabini-icinde-islak-deck-zemin",
+  "tags": {
+    "type": [
+      "deck",
+      "duş / soyunma kabini"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

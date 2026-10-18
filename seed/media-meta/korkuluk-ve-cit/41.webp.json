@@ -1,0 +1,37 @@
+{
+  "file": "41.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Havuz kenarı ahşap korkuluk",
+    "en": "Wooden railing beside a pool"
+  },
+  "alt": {
+    "tr": "Havuz kenarındaki taş zemin teras boyunca uzanan, tel örgü dolgulu açık renkli ahşap korkuluk ve arkada ormanlık tepe",
+    "en": "Light wooden railing with wire mesh infill along a pool terrace, with a wooded hillside behind"
+  },
+  "caption": {
+    "tr": "Havuz terasının çevresine yapılan ahşap korkuluk. Direkler arasına tel örgü çekildi, köşede çapraz çıtalı bir bölüm var.",
+    "en": "Wooden railing around a pool terrace, with wire mesh between the posts and a cross-braced section near the corner."
+  },
+  "seoFilename": "havuz-kenari-ahsap-korkuluk",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "havuz",
+      "teras",
+      "bahçe",
+      "villa"
+    ],
+    "finish": [
+      "tel örgü dolgu",
+      "açık ton vernik"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

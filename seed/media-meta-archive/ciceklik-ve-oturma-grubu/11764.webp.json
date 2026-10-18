@@ -1,0 +1,36 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/11764.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Çim kenarında uzun ahşap çiçeklik",
+    "en": "Long timber planter along a lawn"
+  },
+  "alt": {
+    "tr": "Çimenlik boyunca uzanan, içinde iğne yapraklı ağaçlar olan bal rengi yatay tahtalı çiçeklik",
+    "en": "Honey-toned horizontal-board planter along a lawn, planted with conifers"
+  },
+  "caption": {
+    "tr": "Bina kenarındaki uzun çiçeklik, içindeki ağaçlarla yeşil bir perde oluşturuyor. Toprağın üstü kırmızı çakılla örtülmüş.",
+    "en": "The long planter beside the building forms a green screen with the trees in it. The soil is topped with red gravel."
+  },
+  "seoFilename": "cim-kenari-uzun-ahsap-ciceklik-cakil",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "çimenlik",
+      "dış mekân"
+    ],
+    "finish": [
+      "bal rengi"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

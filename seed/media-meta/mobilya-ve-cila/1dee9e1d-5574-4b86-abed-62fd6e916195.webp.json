@@ -1,0 +1,37 @@
+{
+  "file": "1dee9e1d-5574-4b86-abed-62fd6e916195.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Dar kesim desenli koyu renk parlak kapı",
+    "en": "Dark glossy door with cut-out pattern strip"
+  },
+  "alt": {
+    "tr": "Yarı açık koyu renk parlak kapı, kenarında oyma desenli dikey şerit; arkada altın desenli duvarlı ofis odası ve masa",
+    "en": "Half-open dark glossy door with a pierced pattern strip along its edge, office with patterned wallpaper and desk behind"
+  },
+  "caption": {
+    "tr": "Koyu renk, parlak cilalı kapı kanadı. Kenardaki dikey şeritte lazer kesim benzeri oyma bir desen var. Kapının ardında ofis odası görünüyor.",
+    "en": "A dark, high-gloss door leaf with a vertical pierced pattern strip along its edge. An office room is visible beyond the door."
+  },
+  "seoFilename": "koyu-parlak-kapi-desenli-serit",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "ofis",
+      "iç mekan",
+      "kapı"
+    ],
+    "finish": [
+      "parlak cila",
+      "koyu renk",
+      "oyma desen"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

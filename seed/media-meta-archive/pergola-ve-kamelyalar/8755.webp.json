@@ -1,0 +1,37 @@
+{
+  "source": "Pergola ve Kamelyalar/8755.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Alçı sıvalı balkon yanında vernikli pergola kirişleri ve panjurlar",
+    "en": "Varnished pergola beams beside a plastered balcony with shutters"
+  },
+  "alt": {
+    "tr": "Sıvalı balkonun yanında vernikli pergola kirişleri, çapraz payandalar ve üstte panjurlu pencereler",
+    "en": "Varnished pergola beams beside a plastered balcony, with diagonal braces and shuttered windows above"
+  },
+  "caption": {
+    "tr": "Kirişler balkon bandına yaslanıyor, payandalar yükü paylaştırıyor. Pencerelerin kenarları henüz bantlı.",
+    "en": "The beams rest on the balcony slab and braces share the load. The window edges are still taped."
+  },
+  "seoFilename": "alci-sivali-balkon-yaninda-vernikli-pergola-panjurlar",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

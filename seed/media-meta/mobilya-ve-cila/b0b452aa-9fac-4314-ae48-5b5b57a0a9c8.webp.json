@@ -1,0 +1,36 @@
+{
+  "file": "b0b452aa-9fac-4314-ae48-5b5b57a0a9c8.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Beyaz boyalı camlı çift kanatlı kapı",
+    "en": "White painted double door with glass panels"
+  },
+  "alt": {
+    "tr": "Duvar içine yerleştirilmiş, beyaz boyalı çıtalı çerçeveye sahip, uzun cam panelli çift kanatlı kapı; üstünde klima var",
+    "en": "White painted double door with tall glass panels and molded frame, set into a wall below an air conditioner"
+  },
+  "caption": {
+    "tr": "Beyaz mat boyalı, uzun camlı çift kanatlı kapı. Çevresindeki çıtalı pervaz ve süpürgelik aynı beyaz tonda yapıldı.",
+    "en": "A white painted double door with tall glass panels. The molded trim and baseboards around it match the same white finish."
+  },
+  "seoFilename": "beyaz-boyali-camli-cift-kanatli-kapi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "iç mekan",
+      "daire",
+      "kapı"
+    ],
+    "finish": [
+      "beyaz boya",
+      "çıtalı panel"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

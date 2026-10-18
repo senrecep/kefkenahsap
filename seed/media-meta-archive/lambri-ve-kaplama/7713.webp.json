@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/7713.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kırmızımsı vernikli çıtalı tavan",
+    "en": "Reddish varnished slatted ceiling"
+  },
+  "alt": {
+    "tr": "Balkon üstünde kırmızımsı vernikli, sık sıralı ahşap çıtalarla kaplanmış tavan",
+    "en": "Ceiling over a balcony clad in closely spaced reddish varnished timber slats"
+  },
+  "caption": {
+    "tr": "Çıtalar birbirine yakın aralıklarla sıralanmış ve kırmızımsı vernikle parlıyor. Altta açık renk fayans görünüyor.",
+    "en": "The slats sit close together and shine with a reddish varnish. Light tiles show below."
+  },
+  "seoFilename": "kirmizimsi-vernikli-citali-tavan",
+  "tags": {
+    "type": [
+      "tavan kaplaması / lambri"
+    ],
+    "wood": [],
+    "setting": [
+      "balkon"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

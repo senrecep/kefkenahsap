@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/8877.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Alçak açıdan damarı öne çıkan deck tahtaları",
+    "en": "Deck boards with grain brought out at a low angle"
+  },
+  "alt": {
+    "tr": "Alçak açıdan çekilmiş, sarıdan kahveye dalgalı damarlı ve ışığı yansıtan deck tahtaları",
+    "en": "Deck boards shot at a low angle, with wavy yellow-to-brown grain and a light-catching surface"
+  },
+  "caption": {
+    "tr": "Yan ışıkta damar deseni net seçiliyor. Tahtaların birleşimi düzgün.",
+    "en": "In side light the grain pattern is clear. The joints between boards are tidy."
+  },
+  "seoFilename": "alcak-acidan-damari-one-cikan-deck-tahtalari",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "iroko"
+    ],
+    "setting": [],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

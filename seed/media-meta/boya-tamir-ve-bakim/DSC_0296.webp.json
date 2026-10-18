@@ -1,0 +1,38 @@
+{
+  "file": "DSC_0296.webp",
+  "category": "boya-tamir-ve-bakim",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Yuvarlak kütük balkon ve taşıyıcı direkler",
+    "en": "Round log balcony and support posts"
+  },
+  "alt": {
+    "tr": "Ağaçların arasındaki evde yuvarlak kütük kirişli ahşap balkon, kütük direkler, kiriş uçları ve alttaki yeşil kapılar",
+    "en": "Wooden balcony with round log beams and posts on a house among trees, with green doors below"
+  },
+  "caption": {
+    "tr": "Yuvarlak kütüklerden yapılmış balkon ve taşıyıcı direkler. Koyu tonlu vernikli yüzey bakım sonrası düzgün görünüyor.",
+    "en": "Balcony and support posts made of round logs, with a dark stained finish that looks even after maintenance."
+  },
+  "seoFilename": "kutuk-balkon-direk-ahsap-bakim",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "balkon",
+      "dış mekan",
+      "bahçe",
+      "kütük ev"
+    ],
+    "finish": [
+      "koyu vernik",
+      "lazür"
+    ],
+    "stage": [
+      "finished",
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

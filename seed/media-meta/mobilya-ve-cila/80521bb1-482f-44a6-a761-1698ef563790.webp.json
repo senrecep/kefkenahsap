@@ -1,0 +1,37 @@
+{
+  "file": "80521bb1-482f-44a6-a761-1698ef563790.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Çıtalı kapaklı gömme dolaplar",
+    "en": "Built-in wardrobes with panel moldings"
+  },
+  "alt": {
+    "tr": "Salonda gri boyalı çıtalı kapaklı gömme dolaplar, camlı çift kanatlı kapı, tavan silmesi ve koyu renk parke zemin",
+    "en": "Grey painted built-in cabinets with raised panel doors, a glazed double door, ceiling cornice and dark wood floor"
+  },
+  "caption": {
+    "tr": "Duvar boyunca uzanan, çıta detaylı kapaklara sahip gömme dolaplar. Boyalı yüzeyler tavan silmesi ve duvar rengiyle uyumlu.",
+    "en": "Built-in cabinets running along the wall with moulded panel doors. The painted finish matches the ceiling cornice and wall color."
+  },
+  "seoFilename": "citali-kapakli-gomme-dolap-boyali",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "iç mekan",
+      "salon",
+      "daire"
+    ],
+    "finish": [
+      "boyalı",
+      "mat boya",
+      "çıtalı kapak"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/3723.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Balıksırtı deck üzerinde köşe bank",
+    "en": "Corner bench on herringbone decking"
+  },
+  "alt": {
+    "tr": "Balıksırtı düzeninde döşenmiş deck üzerinde korkuluklu bir köşe bank ve alçak ahşap masa; arkada çapraz korkuluklu çit",
+    "en": "Corner bench with a railing back and a low timber table on deck laid in a herringbone pattern"
+  },
+  "caption": {
+    "tr": "Tahtaların balıksırtı deseni zemini canlandırıyor. Bank, masa ve korkuluk aynı açık ahşap tonunda.",
+    "en": "The herringbone pattern of the boards enlivens the floor. The bench, table and railing are all in the same pale timber tone."
+  },
+  "seoFilename": "balik-sirti-deck-uzerinde-korkuluklu-kose-bank",
+  "tags": {
+    "type": [
+      "deck",
+      "bank",
+      "sehpa"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

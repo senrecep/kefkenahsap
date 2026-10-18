@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/9132.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Terasta kollu ahşap koltuklar",
+    "en": "Timber armchairs on the terrace"
+  },
+  "alt": {
+    "tr": "Taş duvarın önündeki teraste, çıtalı oturaklı iki kollu ahşap koltuk",
+    "en": "Two timber armchairs with slatted seats on a terrace in front of a stone wall"
+  },
+  "caption": {
+    "tr": "Koltukların kolçakları geniş, oturakları çıtalı. Cila kırmızımsı bir ton veriyor.",
+    "en": "The armrests are wide and the seats slatted. The varnish gives a reddish tone."
+  },
+  "seoFilename": "terasta-kollu-ahsap-koltuklar-tas-duvar",
+  "tags": {
+    "type": [
+      "oturma grubu"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

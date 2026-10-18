@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/12970.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yatay kaplamalı köpek kulübesi, yeşil çatılı",
+    "en": "Dog house with horizontal boarding and a green roof"
+  },
+  "alt": {
+    "tr": "Yatay tahta kaplamalı, yeşil shingle çatılı vernikli köpek kulübesi; yan yüzünde giriş açıklığı görünüyor",
+    "en": "Varnished dog house with horizontal board cladding and a green shingle roof, the entrance opening visible on the side"
+  },
+  "caption": {
+    "tr": "Kulübenin gövdesi koyu bal rengi ahşap, çatı balık pulu biçimli yeşil kaplama. Girişin içinde saman gibi bir serilmiş taban var.",
+    "en": "The body of the house is dark honey-coloured timber with a fish-scale green roof covering. There is a straw-like floor laid inside the entrance."
+  },
+  "seoFilename": "yesil-shingle-catili-yatay-kaplamali-kopek-kulubesi-giris",
+  "tags": {
+    "type": [
+      "köpek kulübesi"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

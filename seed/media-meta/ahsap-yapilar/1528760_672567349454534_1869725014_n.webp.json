@@ -1,0 +1,37 @@
+{
+  "file": "1528760_672567349454534_1869725014_n.webp",
+  "category": "ahsap-yapilar",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe için emprenyeli ahşap büfe ve kulübe",
+    "en": "Impregnated pine wooden shed and kiosk"
+  },
+  "alt": {
+    "tr": "Bahçede tek eğimli çatılı, camlı kapılı emprenyeli ahşap büfe kulübesi.",
+    "en": "Treated pine wooden garden kiosk with a glass door and single-pitch roof."
+  },
+  "caption": {
+    "tr": "Site bahçesine kurulan, servis pencereli ve tek eğimli çatılı emprenyeli ahşap kulübe.",
+    "en": "Outdoor wooden kiosk shed with a service window and treated pine siding, installed in a garden."
+  },
+  "seoFilename": "emprenyeli-ahsap-bufe-kulube",
+  "tags": {
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "site"
+    ],
+    "finish": [
+      "emprenye"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

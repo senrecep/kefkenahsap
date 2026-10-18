@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/15056.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Alet panoları önünde uzun L oturma platformu, atölyede",
+    "en": "Long L seating platform in front of tool boards in the workshop"
+  },
+  "alt": {
+    "tr": "Arka planda alet panoları ve dolapların bulunduğu atölyede",
+    "en": "A long dark-varnished L-shaped timber seating platform in a workshop with tool boards and cabinets behind"
+  },
+  "caption": {
+    "tr": "Platform atölyenin köşesine kurulmuş, kolu uzun ve yüzeyi tahtalarla kaplı. Yüksek sırtlık duvar boyunca devam ediyor.",
+    "en": "The platform is set in a workshop corner with one long arm and a planked surface. The high back runs along the wall."
+  },
+  "seoFilename": "atolyede-uzun-l-oturma-platformu-alet-panolari-onunde",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

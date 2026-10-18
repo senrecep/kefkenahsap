@@ -1,0 +1,33 @@
+{
+  "source": "Merdivenler/13003.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Çit ile duvar arasında düz ahşap merdiven",
+    "en": "Straight timber staircase between a hedge and a wall"
+  },
+  "alt": {
+    "tr": "Çimenlikten yükselen, açık basamaklı düz ahşap bahçe merdiveninin önden görünüşü",
+    "en": "Front view of a straight open-tread timber garden staircase rising from the lawn"
+  },
+  "caption": {
+    "tr": "Yeşil çit ile bahçe duvarı arasına yerleştirilmiş düz ahşap merdiven. Basamaklar açık, iki yanda korkuluk var.",
+    "en": "A straight timber staircase set between a green hedge and the garden wall, with open treads and railings on both sides."
+  },
+  "seoFilename": "duz-ahsap-bahce-merdiveni-cit-onden",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

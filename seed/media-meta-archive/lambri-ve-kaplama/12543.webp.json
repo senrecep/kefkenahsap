@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/12543.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cumbalı ev cephesinde vernikli ahşap kaplama",
+    "en": "Varnished timber cladding on a bay-windowed house facade"
+  },
+  "alt": {
+    "tr": "Cumbalı bir evin cephesinde kırmızımsı kahve tonlu vernikli yatay ahşap kaplama ve ahşap giriş kapısı, önde gri taş kaldırım",
+    "en": "Reddish-brown varnished horizontal timber cladding on the facade of a house with a bay window, with a timber entrance door"
+  },
+  "caption": {
+    "tr": "Kaplama cumbanın altındaki payandalara kadar sürüyor. Giriş kapısı aynı tonda.",
+    "en": "The cladding carries down to the brackets under the bay. The entrance door matches in tone."
+  },
+  "seoFilename": "cumbali-ev-cephesinde-vernikli-ahsap-kaplama-ve-kapi",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

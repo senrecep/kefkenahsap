@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/5064.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yan tarafı tahta kaplı çaprazlı merdiven",
+    "en": "Cross-braced stairs with a boarded side"
+  },
+  "alt": {
+    "tr": "Çaprazlı korkuluklu merdiven; yan tarafı tahtayla kaplı, ayakları toprağa gömülü, arkada tel çit",
+    "en": "Stairs with a cross-braced railing and the side clad in boards, legs set into the soil, with wire fencing behind"
+  },
+  "caption": {
+    "tr": "Merdivenin yanı baştan sona tahtayla kaplanmış. Kalın ayaklar toprağa oturuyor.",
+    "en": "The side of the stairs is boarded in from end to end. Thick legs are set into the soil."
+  },
+  "seoFilename": "yan-tarafi-tahta-kapli-caprazli-korkuluklu-merdiven-tel-cit",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

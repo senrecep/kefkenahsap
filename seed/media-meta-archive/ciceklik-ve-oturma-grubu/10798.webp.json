@@ -1,0 +1,40 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/10798.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kafe önünde iki büyük uzun çiçeklik",
+    "en": "Two large long planters outside a café"
+  },
+  "alt": {
+    "tr": "Kafenin önünde yan yana duran iki büyük, uzun ve açık renk ahşap çiçeklik",
+    "en": "Two large, long, light timber planters side by side in front of a café"
+  },
+  "caption": {
+    "tr": "Çiçeklikler uzun, dikey tahta kaplı. Zemin yeşil halı ile karo karışımı.",
+    "en": "The planters are long and clad in vertical boards. The floor is a mix of green carpet and tiles."
+  },
+  "seoFilename": "kafe-onunde-iki-buyuk-uzun-ahsap-ciceklik",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "ticari mekân",
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

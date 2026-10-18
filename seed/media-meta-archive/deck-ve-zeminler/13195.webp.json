@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/13195.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz kenarında ızgara yanındaki kaplanmamış alan",
+    "en": "Unboarded patch beside a drainage grille at the pool edge"
+  },
+  "alt": {
+    "tr": "Havuz kenarında pembemsi deck, yanında ızgara ve henüz kaplanmamış bir alan",
+    "en": "Pinkish deck at the pool edge with a drainage grille beside it and a patch not yet boarded"
+  },
+  "caption": {
+    "tr": "Deck ızgaranın etrafını dolaşıyor ve kaplanmamış bölüm sonra kapatılacak. Betonu ve kenar taşları açıkta duruyor.",
+    "en": "The deck goes round the grille and the open patch will be closed later. The concrete and edge stones are still exposed."
+  },
+  "seoFilename": "havuz-kenarinda-izgara-yanindaki-kaplanmamis-alan",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

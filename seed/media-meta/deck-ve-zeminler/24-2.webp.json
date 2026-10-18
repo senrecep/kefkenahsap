@@ -1,0 +1,37 @@
+{
+  "file": "24-2.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Çam ağaçlarının arasında basamaklı ahşap deck",
+    "en": "Stepped wooden deck among pine trees"
+  },
+  "alt": {
+    "tr": "Çam ormanında, ağaç gövdesinin çevresinden geçen basamaklı açık renk ahşap deck ve çapraz çıtalı korkuluk",
+    "en": "Light wooden deck with steps and an X-pattern railing built around a tree trunk in a pine forest"
+  },
+  "caption": {
+    "tr": "Orman içinde, ağacın etrafı açık bırakılarak kurulan basamaklı deck. Çapraz çıtalı korkuluk zemini çevreliyor.",
+    "en": "A stepped deck built in the forest with an opening left around the tree. A cross-braced railing runs along the edge."
+  },
+  "seoFilename": "cam-agaclari-arasinda-basamakli-ahsap-deck",
+  "tags": {
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "orman",
+      "bahçe",
+      "açık hava"
+    ],
+    "finish": [
+      "doğal"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

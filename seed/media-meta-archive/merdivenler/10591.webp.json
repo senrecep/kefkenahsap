@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/10591.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Duvarlar arasında uzanan merdiven ve kırmızı yapraklı çalılar",
+    "en": "Stairs between two walls with red-leaved shrubs"
+  },
+  "alt": {
+    "tr": "İki duvar arasında uzanan ahşap merdiven; solda kırmızı yapraklı çalılar, en üstte beyaz çıtalı çit",
+    "en": "Timber staircase running between two walls, with red-leaved shrubs on the left and a white picket fence at the very top"
+  },
+  "caption": {
+    "tr": "Merdiven önden bakıldığında iki duvarın arasında dümdüz yükseliyor. Basamak araları açık.",
+    "en": "Seen from the front, the stairs rise straight between the two walls. The treads are open."
+  },
+  "seoFilename": "duvarlar-arasinda-uzanan-merdiven-kirmizi-yaprakli-calilar",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

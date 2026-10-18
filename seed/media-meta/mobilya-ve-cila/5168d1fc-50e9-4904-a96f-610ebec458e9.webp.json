@@ -1,0 +1,35 @@
+{
+  "file": "5168d1fc-50e9-4904-a96f-610ebec458e9.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Banyo dolapları ve çıtalı ahşap panel",
+    "en": "Bathroom cabinetry with slatted wood panel"
+  },
+  "alt": {
+    "tr": "Gri mat banyo dolapları, mermer tezgâhlı asma lavabo çekmeceleri ve aynanın yanında dikey çıtalı ahşap panel",
+    "en": "Matte grey bathroom cabinets, wall-hung vanity drawers with a marble top, and a vertical slatted wood panel beside the mirror"
+  },
+  "caption": {
+    "tr": "Gri mat kapaklı banyo dolapları ve asma lavabo çekmeceleri. Aynanın yanındaki dikey çıtalı ahşap panel, sade yüzeylere sıcak bir kontrast katıyor.",
+    "en": "Matte grey bathroom cabinets with a wall-hung vanity unit. The vertical slatted wood panel beside the mirror adds a warm contrast to the plain surfaces."
+  },
+  "seoFilename": "banyo-dolabi-citali-ahsap-panel",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "banyo",
+      "iç mekan"
+    ],
+    "finish": [
+      "mat boya",
+      "çıtalı panel"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

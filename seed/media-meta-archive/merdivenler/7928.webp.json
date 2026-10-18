@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/7928.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Üstten geniş basamaklar ve korkuluk gölgeleri",
+    "en": "Wide steps from above with railing shadows"
+  },
+  "alt": {
+    "tr": "Üstten bakışla geniş ahşap basamaklar, yan duvar ve basamaklara düşen çaprazlı korkuluk gölgeleri",
+    "en": "Wide timber steps seen from above, with a side wall and the shadows of a cross-braced railing falling across the treads"
+  },
+  "caption": {
+    "tr": "Güneş korkuluğun çapraz gölgelerini basamakların üstüne düşürüyor. Basamaklar geniş ve açık renkli.",
+    "en": "The sun casts the railing's cross-braced shadows over the treads. The steps are wide and light in colour."
+  },
+  "seoFilename": "ustten-genis-basamaklar-korkuluk-golgeleri-duvar",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

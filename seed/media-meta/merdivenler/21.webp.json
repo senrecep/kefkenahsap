@@ -1,0 +1,35 @@
+{
+  "file": "21.webp",
+  "category": "merdivenler",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ahşap dış mekân merdiveni ve korkuluk",
+    "en": "Exterior wooden staircase and railing"
+  },
+  "alt": {
+    "tr": "Ahşap ve taş cepheli evin üst katına çıkan ahşap dış mekân merdiveni ve trabzanları.",
+    "en": "Exterior wooden staircase with railings leading up to the upper deck of a timber house."
+  },
+  "caption": {
+    "tr": "Ahşap ve doğal taş cepheli yapının üst terasına bağlanan dış mekân ahşap merdiveni ve güvenlik korkulukları.",
+    "en": "Outdoor wooden staircase and railings providing access to the upper level of a timber and stone-clad house."
+  },
+  "seoFilename": "ahsap-dis-mekan-merdiven-korkuluk",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "dış mekân",
+      "bahçe",
+      "teras"
+    ],
+    "finish": [
+      "şeffaf koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

@@ -1,0 +1,41 @@
+{
+  "source": "Pergola ve Kamelyalar/407_2.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kafes panelli pergola altında ahşap masa ve köşe bank, taş zemin",
+    "en": "Timber table and corner bench under a lattice-panel pergola on stone paving"
+  },
+  "alt": {
+    "tr": "Kafes panelli pergolanın altında taş zeminde ahşap masa ve köşe bank, üstte kirişler, arkada orman",
+    "en": "Timber table and corner bench under a pergola with a lattice panel, on stone paving and a wooded hill behind"
+  },
+  "caption": {
+    "tr": "Köşe bank taş zemine yerleşik, masa tahtaları açık renk. Kafes panel oturma alanını arkadan kapatıyor.",
+    "en": "The corner bench is built into the stone paving and the table boards are pale. The lattice panel screens the seating area from behind."
+  },
+  "seoFilename": "kafes-panelli-pergola-altinda-ahsap-masa-kose-bank",
+  "tags": {
+    "type": [
+      "pergola",
+      "bank",
+      "masa ve sandalye takımı"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

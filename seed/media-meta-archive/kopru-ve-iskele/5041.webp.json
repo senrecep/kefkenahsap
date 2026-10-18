@@ -1,0 +1,40 @@
+{
+  "source": "Kopru ve Iskele/5041.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yakından görünen yatay tahtalı korkuluk ve göle uzanan yol",
+    "en": "Close view of the horizontal railing and the walkway to the lake"
+  },
+  "alt": {
+    "tr": "Yatay tahtalı kalın korkuluk dikmeleri ön planda; arkada göle doğru uzanan açık renk tahta yol ve sazlık",
+    "en": "Thick posts with a horizontal-board railing in the foreground and a light timber walkway running to the lake beside reeds"
+  },
+  "caption": {
+    "tr": "Korkuluk yol boyunca üç sıra tahtayla sürüyor. Kıyıda sazlık, karşıda ağaçlar var.",
+    "en": "The railing continues along the walkway with three rails. Reeds line the shore and there are trees on the far side."
+  },
+  "seoFilename": "yakindan-yatay-tahtali-korkuluk-goele-uzanan-yol",
+  "tags": {
+    "type": [
+      "iskele",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

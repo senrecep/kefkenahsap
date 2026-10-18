@@ -1,0 +1,36 @@
+{
+  "file": "68bbda53-f679-4447-a23f-e258cc48dbb6.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Çerçeveli kapaklı ahşap konsol dolap",
+    "en": "Wooden cabinet with framed panel doors"
+  },
+  "alt": {
+    "tr": "Pencere önünde duran, çerçeveli kapakları ve parlak cilalı üstü olan koyu kahverengi ahşap dolap",
+    "en": "Dark brown wooden cabinet with framed panel doors and a glossy varnished top, standing by a window"
+  },
+  "caption": {
+    "tr": "Koyu tonda cilalanmış, kapak ve yan yüzeylerinde çerçeveli kabartmalar bulunan ahşap dolap. Cila yüzeyi pürüzsüz ve parlak.",
+    "en": "A wooden cabinet finished in a dark varnish, with raised framed panels on the doors and side. The varnished surface is smooth and glossy."
+  },
+  "seoFilename": "cerceveli-kapakli-ahsap-dolap-cila",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "iç mekan",
+      "salon",
+      "pencere önü"
+    ],
+    "finish": [
+      "koyu cila",
+      "parlak vernik"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

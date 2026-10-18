@@ -1,0 +1,38 @@
+{
+  "file": "WhatsApp-Image-2021-06-27-at-20.13.38-1.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede iroko deck zemin",
+    "en": "Iroko garden deck platform"
+  },
+  "alt": {
+    "tr": "Çim bahçenin ortasında, kızıl kahve tonlu ahşap çıtalardan yapılmış alçak deck zemin ve kenarında kalın bir çerçeve",
+    "en": "Low wooden deck platform of reddish-brown slats on a lawn, edged with a thick wooden frame"
+  },
+  "caption": {
+    "tr": "Çimlerin üzerine kurulan iroko deck zemin. Dar çıtalar yan yana döşendi, kenarlar çerçeveyle kapatıldı.",
+    "en": "Iroko deck platform laid on the lawn, with narrow slats set side by side and the edges closed with a frame."
+  },
+  "seoFilename": "bahcede-iroko-deck-zemin",
+  "tags": {
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "çim alan"
+    ],
+    "finish": [
+      "doğal ton",
+      "yağlı yüzey"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

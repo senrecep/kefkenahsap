@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/13347.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş tezgâh kenarında metal profil ve ahşap çıtalar",
+    "en": "Metal edge profile and timber slats by a stone counter"
+  },
+  "alt": {
+    "tr": "Taş tezgâhın kenarında parlak metal profil, arkada dikey ahşap çıtalar ve yeşil seramik, yanda ambalaj artığı",
+    "en": "Shiny metal edge profile on a stone counter with vertical timber slats and green tiles behind, packaging scraps beside it"
+  },
+  "caption": {
+    "tr": "Tezgâh montajı sürüyor gibi duruyor. Metal profil taşın kenarını çerçeveliyor.",
+    "en": "The counter looks mid-installation. The metal profile frames the edge of the stone."
+  },
+  "seoFilename": "tas-tezgah-kenarinda-metal-profil-ve-citalar",
+  "tags": {
+    "type": [
+      "kafes / paravan",
+      "dış mutfak / mangal alanı"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.35
+}

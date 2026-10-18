@@ -1,0 +1,37 @@
+{
+  "file": "1475806_672567729454496_1398453559_n.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçeli iki katlı ahşap ev",
+    "en": "Two-storey timber house with garden"
+  },
+  "alt": {
+    "tr": "Taş duvarlı bahçenin ardında, balkonlu ve kiremit çatılı iki katlı ahşap ev; önünde servi ağaçları var",
+    "en": "Two-storey timber house with balcony and pitched roof behind a stone wall and lawn with small cypress trees"
+  },
+  "caption": {
+    "tr": "Ağaçların arasında yer alan, geniş balkonlu ve taş bacalı iki katlı ahşap ev. Cephede kütük görünümlü kaplama kullanılmış.",
+    "en": "A two-storey timber house set among trees, with a wide balcony and a stone chimney. The facade is clad in log-style boards."
+  },
+  "seoFilename": "bahceli-iki-katli-ahsap-ev",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "orman kenarı",
+      "balkon",
+      "dış mekan"
+    ],
+    "finish": [
+      "vernikli",
+      "kahverengi ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

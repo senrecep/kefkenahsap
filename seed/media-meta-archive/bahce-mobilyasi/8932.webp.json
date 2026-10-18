@@ -1,0 +1,35 @@
+{
+  "source": "Kapi Dolap ve Seperator/8932.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dikey tahtalardan yuvarlak masa tablası",
+    "en": "Round tabletop made of vertical boards"
+  },
+  "alt": {
+    "tr": "Dikey tahtaların yan yana getirilmesiyle yapılmış yuvarlak masa tablasının yakın çekimi",
+    "en": "Close-up of a round table top made by joining boards side by side"
+  },
+  "caption": {
+    "tr": "Tahtalar bitişik dizilmiş, damarlar belirgin. Koyu kahve cila yüzeyi kaplıyor.",
+    "en": "The boards are fitted closely and the grain is clear. A dark brown varnish covers the surface."
+  },
+  "seoFilename": "dikey-tahtalardan-yuvarlak-masa-tablasi-yakin-cekim",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/8827.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Parlak ışıkta ahşap basamaklar ve çaprazlı korkuluk",
+    "en": "Timber steps and cross-braced railing in bright light"
+  },
+  "alt": {
+    "tr": "Önden yakın çekim ahşap basamaklar ve çaprazlı korkuluk; arkada tel çit ve beyaz çıtalı çit",
+    "en": "Close frontal view of timber steps and a cross-braced railing, with wire fencing and a white picket fence behind"
+  },
+  "caption": {
+    "tr": "Basamaklar parlak güneşte altın sarısı görünüyor. Korkuluğun çaprazları iki yanda yükseliyor.",
+    "en": "The steps look golden yellow in the bright sun. The railing's cross braces rise on both sides."
+  },
+  "seoFilename": "parlak-isikta-ahsap-basamaklar-ve-caprazli-korkuluk-onden",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

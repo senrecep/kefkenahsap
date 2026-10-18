@@ -1,0 +1,33 @@
+{
+  "source": "Ireko-Teak/9666.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ham ahşaptan küçük kollu sandalye modeli",
+    "en": "Small armchair model in raw timber"
+  },
+  "alt": {
+    "tr": "Ham ve açık renkli ahşap şeritlerin birleştirilmesiyle yapılmış küçük boy kollu sandalye modeli, arkada tabela",
+    "en": "Small armchair model made from joined strips of raw, light timber, with a sign behind it"
+  },
+  "caption": {
+    "tr": "Sandalye modeli şeritler yan yana yapıştırılarak yapılmış. Henüz cila sürülmemiş.",
+    "en": "The chair model is built from strips glued side by side. No finish has been applied yet."
+  },
+  "seoFilename": "ham-ahsaptan-kucuk-kollu-sandalye-modeli",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.4
+}

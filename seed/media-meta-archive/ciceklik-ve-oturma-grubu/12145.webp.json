@@ -1,0 +1,39 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/12145.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dikey tahtalı çiçeklik köşesi",
+    "en": "Corner of a vertical-board planter"
+  },
+  "alt": {
+    "tr": "Açık renkli dikey tahtalı ahşap çiçeklik köşesindeki kalın direk ve siyah astar, yakın çekim",
+    "en": "Close-up of the thick corner post and black liner of a light timber planter with vertical boards"
+  },
+  "caption": {
+    "tr": "Köşe direği tahtaların dışına taşıyor, üstte çıtalı bir kuşak var. Yan tahtalar dikey.",
+    "en": "The corner post stands proud of the boards, with a rail along the top. The side boards run vertically."
+  },
+  "seoFilename": "acik-renkli-dikey-tahtali-ciceklik-kosesi-siyah-astar-yakin",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

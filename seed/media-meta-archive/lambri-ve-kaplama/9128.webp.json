@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/9128.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Köşede yatay lambri cephe kaplaması",
+    "en": "Horizontal panelling on a facade corner"
+  },
+  "alt": {
+    "tr": "Bina köşesinde yatay döşenmiş lambri cephe kaplaması; üstte asılı bir afiş var",
+    "en": "Horizontal timber panelling on a building corner, with a banner hanging above"
+  },
+  "caption": {
+    "tr": "Bina köşesinde tahtalar yatay döşenmiş, damarlar açıkta. Üst kısımda bir afiş asılı.",
+    "en": "The boards run horizontally round the corner with the grain showing. A banner hangs across the upper part."
+  },
+  "seoFilename": "kosede-yatay-lambri-cephe",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

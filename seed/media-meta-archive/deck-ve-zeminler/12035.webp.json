@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12035.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Süs bitkileri yanında parlak turuncu deck",
+    "en": "Bright orange deck beside ornamental plants"
+  },
+  "alt": {
+    "tr": "Süs bitkileri ve beyaz kolonun yanında parlak turuncu ahşap deck zemini",
+    "en": "Bright orange timber decking next to ornamental plants and a white column"
+  },
+  "caption": {
+    "tr": "Tahtalar bahçeye doğru uzanıyor ve çalıların etrafında kıvrılıyor. Yüzey ışıkta parlıyor.",
+    "en": "The boards run out towards the garden and step around the shrubs. The surface shines in the light."
+  },
+  "seoFilename": "suslu-bitkiler-yaninda-parlak-turuncu-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

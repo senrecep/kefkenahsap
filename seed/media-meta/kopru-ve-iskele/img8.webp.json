@@ -1,0 +1,36 @@
+{
+  "file": "img8.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "T planlı ahşap deniz iskelesi",
+    "en": "T-shaped wooden sea pier"
+  },
+  "alt": {
+    "tr": "Kumlu kıyıdan denize uzanan, ucu T biçiminde ahşap iskele; arkada sakin deniz ve uzaktaki tepeler görünüyor",
+    "en": "T-shaped wooden pier extending from a sandy shore into calm sea, with hills in the distance"
+  },
+  "caption": {
+    "tr": "Kıyıdan denize uzanan, ucu T şeklinde yapılmış ahşap iskele. Yüzme alanını gösteren şamandıra hattı yanında görülüyor.",
+    "en": "A wooden pier running out from the shore and ending in a T-shaped platform, with a line of buoys marking the swimming area beside it."
+  },
+  "seoFilename": "t-planli-ahsap-deniz-iskelesi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "deniz",
+      "kıyı",
+      "iskele",
+      "plaj"
+    ],
+    "finish": [
+      "doğal ahşap"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

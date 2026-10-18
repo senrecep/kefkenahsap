@@ -1,0 +1,39 @@
+{
+  "source": "Ireko-Teak/14653.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çalı kenarında spot ışıklı dar deck yolu",
+    "en": "Narrow deck path with spotlights beside shrubs"
+  },
+  "alt": {
+    "tr": "Beton zeminde çalıların yanından uzanan dar deck yolu, kenar bordürde gömülü iki spot lamba",
+    "en": "Narrow deck path on concrete next to shrubs, with two spotlights set into the kerb"
+  },
+  "caption": {
+    "tr": "Deck çalılığın kenarını izliyor, bordürdeki spotlar akşam yolu aydınlatacak.",
+    "en": "The deck follows the edge of the planting, and the kerb spotlights will light the path in the evening."
+  },
+  "seoFilename": "cali-kenarinda-spot-isikli-dar-deck-yolu",
+  "tags": {
+    "type": [
+      "deck",
+      "yürüyüş yolu"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

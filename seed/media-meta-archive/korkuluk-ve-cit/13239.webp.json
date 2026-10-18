@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/13239.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Pencere altında küçük çıtalı çit kapısı",
+    "en": "Small slatted fence gate under a window"
+  },
+  "alt": {
+    "tr": "Yeşil çalıların arasında, pencerenin altında açık tonlu ahşap çıtalı küçük çit kapısı",
+    "en": "Small light-toned slatted timber gate between green shrubs under a window"
+  },
+  "caption": {
+    "tr": "Çıtalı kapı çimlikten evin duvarına doğru uzanan çitin ucunda duruyor.",
+    "en": "The slatted gate stands at the end of the fence that runs from the lawn towards the house wall."
+  },
+  "seoFilename": "pencere-altinda-kucuk-citali-kapi",
+  "tags": {
+    "type": [
+      "çit",
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

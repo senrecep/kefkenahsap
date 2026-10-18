@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/14156.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dar çiçeklikte otlar, yanında gri kafes",
+    "en": "Grasses in a narrow planter beside a grey trellis"
+  },
+  "alt": {
+    "tr": "Dar bir ahşap çiçeklik içinde yeşeren otlar; yanda gri metal kafes ve yağmur borusu",
+    "en": "Grasses growing in a narrow timber planter, with a grey metal trellis and a downpipe beside it"
+  },
+  "caption": {
+    "tr": "Çiçeklik duvar dibine sıkışmış, yan tahtaları dar. Kafes ve boru kare içinde dikey çizgiler oluşturuyor.",
+    "en": "The planter is squeezed against the foot of the wall with narrow side boards. The trellis and pipe form vertical lines in the frame."
+  },
+  "seoFilename": "dar-ahsap-ciceklik-icinde-otlar-gri-metal-kafes-ve-yagmur",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

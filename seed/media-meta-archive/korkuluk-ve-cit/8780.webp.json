@@ -1,0 +1,37 @@
+{
+  "source": "Pergola ve Kamelyalar/8780.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Korkuluk kirişi ve panjurlu pencere yakın görünüm",
+    "en": "Close view of a railing beam and a shuttered window"
+  },
+  "alt": {
+    "tr": "Kalın koyu ahşap korkuluk kirişinin arkasında kahverengi panjurlu pencere, sağda kaplama tahtaları ve çatı",
+    "en": "Thick dark timber railing beam in front of a window with brown shutters, with decking boards and a roof on the right"
+  },
+  "caption": {
+    "tr": "Korkuluk üst kirişi pencere önünde düz bir hat çiziyor, kalın direğe oturuyor.",
+    "en": "The top beam of the railing runs in a straight line in front of the window and rests on a thick post."
+  },
+  "seoFilename": "ahsap-korkuluk-kirisi-ve-panjurlu-pencere-yakin",
+  "tags": {
+    "type": [
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.55
+}

@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/9749.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ev duvarı boyunca çaprazlı merdiven, toprak zemin",
+    "en": "Cross-braced stairs along a house wall, on bare soil"
+  },
+  "alt": {
+    "tr": "Ev duvarı boyunca çaprazlı korkuluklu ahşap merdiven; zemin açık toprak, üstte kalın direk",
+    "en": "Timber stairs with a cross-braced railing along a house wall, with open soil below and a thick post at the top"
+  },
+  "caption": {
+    "tr": "Merdiven evin duvarı boyunca çapraz bir hatla yükseliyor. Kalın direk korkuluğun başında duruyor.",
+    "en": "The stairs rise diagonally along the wall of the house. A thick post stands at the head of the railing."
+  },
+  "seoFilename": "ev-duvari-boyunca-caprazli-korkuluklu-ahsap-merdiven-toprak",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

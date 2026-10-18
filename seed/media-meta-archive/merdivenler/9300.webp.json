@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/9300.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Duvar yanında platform, çaprazlı korkuluk ve basamaklar",
+    "en": "Platform, cross-braced railing and steps beside a wall"
+  },
+  "alt": {
+    "tr": "Pembe duvar yanında platform, basamaklar ve çaprazlı korkuluk; köşede kısa bir korkuluk parçası",
+    "en": "A platform, steps and a cross-braced railing beside a pink wall, with a short length of railing at the corner"
+  },
+  "caption": {
+    "tr": "Platformdan aşağı inen basamaklar duvarın dibinde bitiyor. Kalın direkler korkuluğu taşıyor.",
+    "en": "The steps going down from the platform end at the foot of the wall. Thick posts carry the railing."
+  },
+  "seoFilename": "duvar-yaninda-platform-caprazli-korkuluk-ve-basamaklar",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

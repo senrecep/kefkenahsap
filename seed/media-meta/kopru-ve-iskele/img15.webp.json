@@ -1,0 +1,35 @@
+{
+  "file": "img15.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Göl kenarında ahşap yürüyüş yolu ve korkuluk",
+    "en": "Wooden walkway and railing along the lakeshore"
+  },
+  "alt": {
+    "tr": "Göl kenarında uzanan ahşap zemin döşemeli yürüyüş yolu ve iki yanında yatay çıtalı ahşap korkuluklar",
+    "en": "Wooden boardwalk along a lakeshore with horizontal-rail wooden railings on both sides"
+  },
+  "caption": {
+    "tr": "Göl kenarındaki yürüyüş yolunun tahta döşemesi ve iki yanındaki kalın direkli, üç sıra yatay çıtalı korkuluklar.",
+    "en": "The plank decking of a lakeside walkway, with thick posts and three horizontal rails on both sides."
+  },
+  "seoFilename": "gol-kenari-ahsap-yuruyus-yolu-korkuluk",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "göl kenarı",
+      "yürüyüş yolu",
+      "açık hava"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

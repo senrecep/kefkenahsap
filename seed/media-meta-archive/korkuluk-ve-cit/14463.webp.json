@@ -1,0 +1,38 @@
+{
+  "source": "Ireko-Teak/14463.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sivri uçlu kırmızımsı kahve ahşap çit kapağı, deck üstünde",
+    "en": "Pointed-top reddish-brown timber fence gate on the deck"
+  },
+  "alt": {
+    "tr": "Çimde taş yürüyüşün yanında, kırmızımsı kahve vernikli sivri uçlu dikey çıtalı çit kapağı; altta deck tahtaları",
+    "en": "A reddish-brown varnished pointed vertical-slat fence gate on the lawn beside a stone walkway, with deck boards below"
+  },
+  "caption": {
+    "tr": "Çıtaların uçları sivri kesilmiş, iki yatay kirişe sabitlenmiş. Kapak deck zemininin üstünde duruyor.",
+    "en": "The tops of the slats are cut to points and fixed to two horizontal rails. The gate stands on the deck floor."
+  },
+  "seoFilename": "sivri-uclu-kirmizimsi-kahve-cit-kapagi-deck-ustunde",
+  "tags": {
+    "type": [
+      "bahçe kapısı",
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

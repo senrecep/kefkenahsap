@@ -1,0 +1,36 @@
+{
+  "file": "DSC_0287.webp",
+  "category": "boya-tamir-ve-bakim",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Kütük direkli sundurmada bakım ve onarım",
+    "en": "Maintenance and repair on a log-column porch"
+  },
+  "alt": {
+    "tr": "Bahçeye bakan sundurmada koyu boyalı kütük direkler, geçici kalaslarla desteklenen kirişler ve çalışan bir usta",
+    "en": "Covered porch facing a garden with dark-stained log columns, beams held by temporary timber props, and a worker nearby"
+  },
+  "caption": {
+    "tr": "Sundurmanın yuvarlak kütük direkleri ve tavan kirişleri üzerinde çalışırken tavan geçici kalaslarla desteklendi. Direklerin bir kısmı koyu renkle boyanmış, bir kısmı henüz ham.",
+    "en": "Work on the porch's round log columns and ceiling beams, with the roof held up by temporary timber props. Some columns are already finished in a dark tone, others are still raw."
+  },
+  "seoFilename": "kutuk-direkli-sundurma-bakim-onarim",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "sundurma",
+      "teras",
+      "bahçe",
+      "dış mekan"
+    ],
+    "finish": [
+      "koyu kahverengi"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

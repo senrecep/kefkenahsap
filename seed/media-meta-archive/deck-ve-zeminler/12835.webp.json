@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12835.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yamaçta çelik ayaklı geniş açık renkli deck",
+    "en": "Wide pale deck on steel legs over a slope"
+  },
+  "alt": {
+    "tr": "Çelik ayaklar üzerinde yamaçtan taşan geniş, açık renkli ahşap deck",
+    "en": "Wide pale timber deck on steel legs, reaching out over a slope"
+  },
+  "caption": {
+    "tr": "Tahtalar yamaç boyunca uzun yönde döşenmiş. Altında çelik ayaklar ve çevresinde palmiye gibi bitkiler görünüyor.",
+    "en": "The boards run lengthwise along the slope. Steel legs show underneath, with palm-like plants around."
+  },
+  "seoFilename": "yamacta-celik-ayakli-genis-acik-renkli-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

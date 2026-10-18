@@ -1,0 +1,39 @@
+{
+  "source": "Ahsap Yapilar/1795.webp",
+  "category": "ahsap-ev-ve-bungalov",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Evin içinden balkon korkuluğu ve bahçe manzarası",
+    "en": "Balcony railing and garden seen from inside the house"
+  },
+  "alt": {
+    "tr": "Yatay tahta kaplı duvarların yanında, balkon korkuluğunun ardında bahçe görünen ahşap ev içi",
+    "en": "Inside a timber house with horizontally boarded walls, a garden visible past the balcony railing"
+  },
+  "caption": {
+    "tr": "İç duvarlar yatay tahta ile kaplı. Balkon korkuluğunun arkasında dikili fidanlı bir bahçe uzanıyor.",
+    "en": "The inner walls are boarded horizontally. Behind the balcony railing lies a garden planted with young trees."
+  },
+  "seoFilename": "balkon-korkulugu-ve-bahce-manzarasi-ic-mekandan",
+  "tags": {
+    "type": [
+      "ahşap ev / bungalov",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "iç mekân",
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

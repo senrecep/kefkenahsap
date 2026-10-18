@@ -1,0 +1,38 @@
+{
+  "file": "WhatsApp-Image-2021-06-27-at-20.13.47-2.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede iroko deck zemin",
+    "en": "Iroko garden deck flooring"
+  },
+  "alt": {
+    "tr": "Bahçede çalılıkların ve taş döşemenin yanında uzanan, bal rengi dar tahtalardan yapılmış ahşap deck zemin",
+    "en": "Honey-colored narrow plank wood deck beside shrubs and stone paving in a garden"
+  },
+  "caption": {
+    "tr": "Bahçeye döşenen ahşap deck zemin. Dar tahtalar boyuna sıralanmış, kenarı bitiş profiliyle kapatılmış; bitki yatağı ve taş döşemeyle yan yana duruyor.",
+    "en": "Wood deck flooring laid in a garden. Narrow boards run lengthwise with a trimmed edge, sitting next to a planting bed and stone paving."
+  },
+  "seoFilename": "bahce-iroko-deck-zemin",
+  "tags": {
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "bahçe",
+      "deck",
+      "dış mekan"
+    ],
+    "finish": [
+      "doğal ton",
+      "yağlı bitiş"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

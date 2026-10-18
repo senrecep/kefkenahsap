@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/3767.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Camlı kapılar çevresinde yatay emprenyeli kaplama",
+    "en": "Horizontal pressure-treated cladding around glazed doors"
+  },
+  "alt": {
+    "tr": "Teras girişindeki camlı kapıların ve kolonların çevresini saran yeşilimsi yatay ahşap kaplama, önde mavi kova ve aletler",
+    "en": "Greenish horizontal timber cladding wrapped around glazed doors and columns at a terrace entrance, with a blue bucket"
+  },
+  "caption": {
+    "tr": "Kaplama tahtaları kolonların çevresinde aralıklı döşenmiş, iş hâlâ sürüyor.",
+    "en": "The cladding boards are laid with gaps round the columns, and the work is still going on."
+  },
+  "seoFilename": "camli-kapilarin-cevresinde-yatay-emprenyeli-kaplama-mavi",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

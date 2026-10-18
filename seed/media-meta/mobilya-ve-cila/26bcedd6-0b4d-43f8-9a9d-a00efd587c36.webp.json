@@ -1,0 +1,36 @@
+{
+  "file": "26bcedd6-0b4d-43f8-9a9d-a00efd587c36.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Turkuaz boyalı siyah minderli sandıklı bank",
+    "en": "Turquoise painted storage bench with black cushions"
+  },
+  "alt": {
+    "tr": "Turkuaz boyalı, üstü siyah deri minderli, önünde oymalı süs ve Yunan kıvrımı bandı olan sandıklı bank",
+    "en": "Turquoise painted storage bench with black leather cushions, a carved ornament and a Greek key band on the front"
+  },
+  "caption": {
+    "tr": "Turkuaz renge boyanmış, üstü iki parça siyah deri minderli sandıklı bank. Ön yüzde oyma süs ve Yunan kıvrımı şeridi var, dört ayak üzerinde duruyor.",
+    "en": "A storage bench painted turquoise, with two black leather cushions on top. The front has a carved ornament and a Greek key strip, and it stands on four short legs."
+  },
+  "seoFilename": "turkuaz-boyali-siyah-minderli-sandikli-bank",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "atölye",
+      "iç mekan"
+    ],
+    "finish": [
+      "turkuaz boya",
+      "siyah deri döşeme",
+      "oyma süs"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/10422.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yeni döşenmiş deck, çevresi çıplak toprak",
+    "en": "Newly laid deck with bare soil around it"
+  },
+  "alt": {
+    "tr": "Yeni döşenmiş ahşap deck zemini; çevresi çıplak toprak, arkada klima ünitesi",
+    "en": "Newly laid timber deck floor with bare soil around it and an AC unit behind"
+  },
+  "caption": {
+    "tr": "Deck L biçiminde bir köşeyi dönüyor, kenarı çerçeve tahtasıyla kapatılmış. Toprak henüz düzeltilmemiş.",
+    "en": "The deck turns an L-shaped corner and its edge is closed with a border board. The soil has not been levelled yet."
+  },
+  "seoFilename": "yeni-dosenmis-ahsap-deck-zemini-cevresi-cirpik-toprak-klima",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

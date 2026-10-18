@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/14023.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar yanında beyaz çift kanatlı kapı",
+    "en": "White double-leaf gate beside a stone wall"
+  },
+  "alt": {
+    "tr": "Basamaklı eşik önünde, taş sütunlar arasında çapraz kuşaklı beyaz boyalı çift kanatlı ahşap kapı, arkada camlı giriş",
+    "en": "White-painted double-leaf timber gate with diagonal braces between stone posts in front of a stepped threshold"
+  },
+  "caption": {
+    "tr": "Kapı evin cam kapılı girişine açılıyor. Eşikte kısa bir taş basamak var.",
+    "en": "The gate opens towards the glazed front door of the house, with a short stone step at the threshold."
+  },
+  "seoFilename": "tas-duvar-yaninda-beyaz-cift-kanat-kapi",
+  "tags": {
+    "type": [
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/400.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Basamak ve X korkuluklu, pergola çatısı yükselen deck",
+    "en": "Deck with steps and X railings as the pergola roof goes up"
+  },
+  "alt": {
+    "tr": "Eğimli arazide basamaklarla bağlanan iki seviyeli deck, çapraz X korkuluklar ve yükselen pergola kirişleri, çalışan ustalar",
+    "en": "Two-level deck on sloping ground joined by steps, with X-pattern railings and pergola beams rising overhead"
+  },
+  "caption": {
+    "tr": "Üst ve alt platform basamakla bağlanmış. Pergola çatı kirişleri henüz monte ediliyor.",
+    "en": "The upper and lower platforms are joined by steps. The pergola roof beams are still being fitted."
+  },
+  "seoFilename": "basamak-ve-x-korkuluklu-pergola-cati-yukselen-deck",
+  "tags": {
+    "type": [
+      "deck",
+      "korkuluk",
+      "pergola"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe",
+      "ticari mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,37 @@
+{
+  "file": "5-1.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Yatay çıtalı kare ahşap çiçeklik",
+    "en": "Square wooden planter with horizontal slats"
+  },
+  "alt": {
+    "tr": "Yatay ahşap çıtalarla kaplı, üstü çerçeveli kare çiçeklik; içi siyah membranla kaplı, atölyede fayans zeminde duruyor",
+    "en": "Square wooden planter clad in horizontal slats with a framed top rim and a black liner inside, on a tiled workshop floor"
+  },
+  "caption": {
+    "tr": "Atölyede hazırlanan kare çiçeklik. Yan yüzeyler yatay çıtalarla kaplandı, üst kenara çerçeve çakıldı, iç kısma siyah su yalıtım membranı serildi.",
+    "en": "A square planter built in our workshop. The sides are clad in horizontal slats, the top has a framed rim, and the inside is lined with a black membrane."
+  },
+  "seoFilename": "yatay-citali-kare-ahsap-ciceklik",
+  "tags": {
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "atölye",
+      "bahçe",
+      "teras"
+    ],
+    "finish": [
+      "doğal"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

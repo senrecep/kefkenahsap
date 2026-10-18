@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/10838.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz duvar önünde çizgili kızıl deck platformu",
+    "en": "Striped red deck platform in front of a white wall"
+  },
+  "alt": {
+    "tr": "Çimende, beyaz duvarın önünde duran çok çizgili tahtalardan kızıl ahşap deck platformu",
+    "en": "Red timber deck platform of many-striped boards standing on the lawn in front of a white wall"
+  },
+  "caption": {
+    "tr": "Tahtaların rengi sarıdan koyu kızıla geçiyor, bu çizgili görünüm deckin karakteri. Platform çimenden hafif yüksekte duruyor.",
+    "en": "The colour of the boards runs from yellow to dark red, and this striped look is the character of the deck. The platform sits slightly above the lawn."
+  },
+  "seoFilename": "cimende-beyaz-duvar-onunde-cok-cizgili-kizil-ahsap-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

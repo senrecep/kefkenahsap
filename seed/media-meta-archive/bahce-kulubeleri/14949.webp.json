@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/14949.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ağaçlar arasında koyu vernikli tek eğimli kulübe",
+    "en": "Dark varnished mono-pitch shed among trees"
+  },
+  "alt": {
+    "tr": "Yatay kaplamalı, tek eğimli çatılı koyu vernikli ahşap kulübe; ağaçların arasında, yanında sekü",
+    "en": "Dark varnished timber shed with horizontal cladding and a mono-pitch roof among trees, with a step platform beside it"
+  },
+  "caption": {
+    "tr": "Kulübe toprak zemine yerleşmiş, çatı kenarı ince bir çıtayla bitiyor. Sağ tarafta koyu ahşap bir basamak platformu duruyor.",
+    "en": "The shed is set on bare earth and the roof edge ends in a thin batten. A dark timber step platform stands on the right."
+  },
+  "seoFilename": "agaclar-arasinda-koyu-vernikli-yatay-kaplamali-tek-egimli",
+  "tags": {
+    "type": [
+      "bahçe kulübesi / depo"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

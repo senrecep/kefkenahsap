@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/14589.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvarlı kavisli ahşap bank ve doğal kenarlı masa",
+    "en": "Curved timber bench on a stone base with a live-edge table"
+  },
+  "alt": {
+    "tr": "Tenteli kamelyanın altında taş duvar üzerine oturan kavisli ahşap bank ve doğal kenarlı oval masa, taş zemin",
+    "en": "Curved timber bench on a stone wall and an oval live-edge table under a canvas-covered gazebo, on stone paving"
+  },
+  "caption": {
+    "tr": "Bankın arkalığı tahta çıtalı ve kıvrımlı. Masanın kenarı ağacın doğal çizgisini koruyor.",
+    "en": "The bench back is slatted and curved. The edge of the table keeps the natural line of the wood."
+  },
+  "seoFilename": "tas-duvarli-kavisli-ahsap-bank-dogal-kenarli-masa",
+  "tags": {
+    "type": [
+      "kamelya",
+      "bank",
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/12078.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çalıların önünde toprak alanı çevreleyen telli ahşap çit, yakın görünüm",
+    "en": "Wire-mesh timber fence around a soil area in front of shrubs, close view"
+  },
+  "alt": {
+    "tr": "Çiçekli çalıların önünde, toprak alanın kenarında yeşil tel örgülü ahşap çit paneli ve sağda sivri çıtalı çit",
+    "en": "Green wire-mesh timber fence panel at the edge of a soil area in front of flowering shrubs, a pointed-slat fence at right"
+  },
+  "caption": {
+    "tr": "Tel örgülü panel iki dikme arasında gerili, çıtalı çit dik açıyla ona bağlanıyor. Alanın içinde toprak görünüyor.",
+    "en": "The wire-mesh panel is stretched between two posts and the slat fence joins it at a right angle. Soil is visible inside the area."
+  },
+  "seoFilename": "calilarin-onunde-toprak-alani-cevreleyen-telli-cit",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

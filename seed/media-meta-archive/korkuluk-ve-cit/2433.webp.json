@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/2433.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar üstüne açık renk çıta çakan usta, arkada villa",
+    "en": "Craftsman fixing light slats on a stone wall, villa behind"
+  },
+  "alt": {
+    "tr": "Taş duvarın üzerine sivri uçlu açık renk dikey çıtalı çit çakılıyor; çalışan usta ve arkada kiremit çatılı iki katlı villa",
+    "en": "A pointed vertical-slat fence in light timber being fixed on top of a stone wall"
+  },
+  "caption": {
+    "tr": "Çit çıtaları duvarın üstüne sıralı bağlanıyor. Çıtalar yeşilimsi emprenyeli çam görünümünde.",
+    "en": "The fence slats are being fixed in a row along the top of the wall. The slats look like greenish pressure-treated pine."
+  },
+  "seoFilename": "tas-duvar-ustune-acik-renk-cita-cakan-usta",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

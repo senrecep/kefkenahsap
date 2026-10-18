@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/7597.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deck zeminli açık kabin, içinde ahşap bank",
+    "en": "Open timber cabin with a deck floor and a built-in bench"
+  },
+  "alt": {
+    "tr": "Yatay tahtalarla kaplı açık ahşap kabinin içinde duvara bağlı bir bank, zeminde aralıklı deck tahtaları var",
+    "en": "Inside an open timber cabin clad in horizontal boards, a bench fixed to the wall and a floor of spaced deck boards"
+  },
+  "caption": {
+    "tr": "Kabinin zemini aralıklı deck tahtalarından, duvarı yatay kaplamadan oluşuyor. Köşedeki bank duvara sabit.",
+    "en": "The cabin floor is made of spaced deck boards and the walls of horizontal cladding. The bench in the corner is fixed to the wall."
+  },
+  "seoFilename": "deck-zeminli-acik-kabin-ici-bank",
+  "tags": {
+    "type": [
+      "duş / soyunma kabini",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

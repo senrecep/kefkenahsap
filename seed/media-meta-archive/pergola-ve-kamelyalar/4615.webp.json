@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/4615.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kamelya çatı kirişleri ve direk bağlantısı, açık renk lambri tavan",
+    "en": "Gazebo roof rafters and post joint under a light lining"
+  },
+  "alt": {
+    "tr": "Kamelyanın içinden çatı kirişleri, direk birleşimi ve açık renk lambri tavan kaplaması",
+    "en": "Gazebo roof rafters, the post joint and a light timber-lined ceiling seen from inside"
+  },
+  "caption": {
+    "tr": "Kirişler direğin üstünde birleşiyor, aralarında dar lambri tahtalar yan yana sıralanmış.",
+    "en": "The rafters meet above the post, with narrow lining boards laid side by side between them."
+  },
+  "seoFilename": "kamelya-kiris-direk-birlesimi-lambri-tavan",
+  "tags": {
+    "type": [
+      "kamelya",
+      "tavan kaplaması / lambri"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

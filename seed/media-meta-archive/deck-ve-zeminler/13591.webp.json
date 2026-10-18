@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/13591.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz dolaplı odada vernikli koyu parke",
+    "en": "Varnished dark parquet in a room with white cupboards"
+  },
+  "alt": {
+    "tr": "Beyaz dolaplı odada parlak vernikli koyu kahverengi ahşap parke zemini",
+    "en": "Glossy varnished dark brown timber parquet floor in a room with white cupboards"
+  },
+  "caption": {
+    "tr": "Verniklenen zemin pencere ışığını ve dolapları yansıtıyor. Tahtalar uzun yönde döşenmiş ve derzleri temiz.",
+    "en": "The varnished floor reflects the window light and the cupboards. The boards run lengthwise with clean joints."
+  },
+  "seoFilename": "beyaz-dolapli-odada-vernikli-koyu-parke",
+  "tags": {
+    "type": [
+      "parke / iç zemin"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,41 @@
+{
+  "source": "Ireko-Teak/8875.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz kenarı, ahşap kaplı modern evin deck terası",
+    "en": "Deck terrace of a timber-clad modern house at the pool edge"
+  },
+  "alt": {
+    "tr": "Ahşap kaplı cephenin ve cam kapıların önünde havuza kadar uzanan turuncu deck, duvara yaslı kafesli kapak kutusu",
+    "en": "Light orange deck reaching the pool in front of a timber-clad facade and glass doors"
+  },
+  "caption": {
+    "tr": "Deck cephedeki ahşapla uyumlu bir tonda. Havuzun kenarında koyu bir taş bordürle bitiyor.",
+    "en": "The deck matches the tone of the timber on the facade and ends at the pool with a dark stone coping."
+  },
+  "seoFilename": "havuz-kenari-ahsap-kapli-modern-ev-deck-terasi",
+  "tags": {
+    "type": [
+      "deck",
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "havuz kenarı",
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/13446.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Koyu vernikli köpek kulübesi, ön cepheden",
+    "en": "Dark varnished dog house from the front"
+  },
+  "alt": {
+    "tr": "Atölye zemininde ön cepheden görünen, koyu vernikli ahşap köpek kulübesi; öne taşan geniş çatı kenarı",
+    "en": "Dark varnished timber dog house seen from the front on a workshop floor, with the roof edges projecting forward"
+  },
+  "caption": {
+    "tr": "Kulübenin çatı kenarları ön tarafa uzanıyor, giriş açıklığı basit bir çerçeveyle çevrili. Arkada beyaz duvar ve basamaklar var.",
+    "en": "The roof edges of the house extend towards the front and the entrance opening is framed simply. A white wall and steps are behind."
+  },
+  "seoFilename": "koyu-vernikli-ahsap-kopek-kulubesi-on-cepheden-atolye",
+  "tags": {
+    "type": [
+      "köpek kulübesi"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,35 @@
+{
+  "file": "WhatsApp-Image-2021-04-30-at-20.41.54-2.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe yolunda ahşap çıta çit ve kapı",
+    "en": "Wooden picket fence and gate on a garden path"
+  },
+  "alt": {
+    "tr": "Taş basamaklı bahçe yolunu kesen alçak ahşap çıta çit ve kapı, arkada ağaç ve ahşap oturma alanı",
+    "en": "Low wooden picket fence and gate across a stepping-stone garden path, with a tree and wooden seating area behind"
+  },
+  "caption": {
+    "tr": "Bahçeyi ikiye ayıran alçak çıta çit ve taş patikanın üzerindeki küçük kapı. Arka tarafta ahşap oturma alanı görünüyor.",
+    "en": "A low picket fence dividing the garden, with a small gate over the stone path. A wooden seating area is visible behind it."
+  },
+  "seoFilename": "bahce-yolu-ahsap-cita-cit-ve-kapi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "bahçe yolu",
+      "villa"
+    ],
+    "finish": [
+      "doğal ahşap tonu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.86
+}

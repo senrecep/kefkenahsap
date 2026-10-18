@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/14270.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çalılık çevresinde kısa ahşap çit",
+    "en": "Short timber fence around a hedge bed"
+  },
+  "alt": {
+    "tr": "Sık yeşil çalılığın arkasında köşe yapan, ucu yuvarlak çıtalı kısa bal rengi ahşap çit ve bir ağaç gövdesi",
+    "en": "Short honey-toned slatted fence with rounded tops forming a corner behind dense green shrubs, with a tree trunk"
+  },
+  "caption": {
+    "tr": "Çit çalılığın arkasında iki kol halinde uzanıyor.",
+    "en": "The fence runs behind the shrubs in two arms."
+  },
+  "seoFilename": "calilik-cevresinde-kisa-kavisli-ahsap-cit",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

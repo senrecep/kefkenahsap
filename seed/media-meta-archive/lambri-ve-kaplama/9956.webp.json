@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/9956.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Koyu gri boyalı yatay cephe, önünde bitkiler",
+    "en": "Dark grey painted horizontal facade behind plants"
+  },
+  "alt": {
+    "tr": "Koyu gri boyalı yatay ahşap cephe kaplaması; pencere boşlukları ve önünde yeşil bitkiler",
+    "en": "Horizontal timber facade cladding painted dark grey, with window openings and green plants in front"
+  },
+  "caption": {
+    "tr": "Yatay tahtalar koyu griye boyanmış. Cephenin önünde yeşil bitkiler yükseliyor.",
+    "en": "The horizontal boards are painted dark grey. Green plants rise in front of the facade."
+  },
+  "seoFilename": "koyu-gri-boyali-yatay-cephe-bitkilerin-arkasi",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

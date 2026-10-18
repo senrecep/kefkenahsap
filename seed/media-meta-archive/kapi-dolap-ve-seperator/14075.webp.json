@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/14075.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çit boyunca uzayan dolabın eğik açıdan görünümü",
+    "en": "Angled view of the cabinet running along the hedge"
+  },
+  "alt": {
+    "tr": "Taş tabanın üzerinde çalı çitinin altında yan yana sıralı koyu ahşap kapaklı uzun dolap, önünde parke taş zemin",
+    "en": "Long cabinet with a row of dark timber doors on a stone base under a hedge, with cobbled paving in front"
+  },
+  "caption": {
+    "tr": "Kapaklar sıralı ve eşit, menteşeler ince bir hatla görünüyor. Dolap çitin dibine yaslanmış.",
+    "en": "The doors are evenly lined up and the hinges show as thin lines. The cabinet sits against the foot of the hedge."
+  },
+  "seoFilename": "cit-boyunca-uzayan-dolabin-egik-acidan-gorunumu",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

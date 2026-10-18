@@ -1,0 +1,34 @@
+{
+  "source": "Kopru ve Iskele/8082.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Yukarıdan havuz ve ahşap köprü",
+    "en": "Pool and timber footbridge from above"
+  },
+  "alt": {
+    "tr": "Yukarıdan görülen, kıvrımlı ahşap deck ile çevrili havuz ve üzerindeki kemerli köprü",
+    "en": "View from above of a pool edged with curved wooden decking and an arched footbridge"
+  },
+  "caption": {
+    "tr": "Yukarıdan bakınca havuzun kıvrımlı hattını izleyen deck ve köprünün kemeri net görünüyor.",
+    "en": "From above, the deck following the curved outline of the pool and the arch of the bridge are easy to see."
+  },
+  "seoFilename": "havuz-ahsap-kopru-kusbakisi-avlu",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "havuz",
+      "avlu",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

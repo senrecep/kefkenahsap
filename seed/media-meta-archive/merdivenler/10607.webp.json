@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/10607.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bodrum girişine inen ahşap merdiven",
+    "en": "Timber stairs down to a basement entrance"
+  },
+  "alt": {
+    "tr": "Evin bodrum girişine inen çaprazlı korkuluklu ahşap merdiven; taş duvar ve park etmiş bir araç görünüyor",
+    "en": "Timber staircase with cross-braced railing going down to a house's basement entrance"
+  },
+  "caption": {
+    "tr": "Merdiven yanda taş bir duvarla çevrili girişe iniyor. Korkuluk çaprazlarla örülmüş.",
+    "en": "The stairs go down to an entrance bordered by a stone wall. The railing is braced with crosses."
+  },
+  "seoFilename": "bodrum-girisine-inen-ahsap-merdiven-arac-arkada",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

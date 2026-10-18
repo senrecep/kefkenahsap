@@ -1,0 +1,37 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 18.00.07 (1).webp",
+  "category": "deck-ve-zeminler",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Villa bahçesinde havuz kenarı ahşap deck uygulaması",
+    "en": "Poolside wood decking in villa garden"
+  },
+  "alt": {
+    "tr": "Müstakil evin bahçesindeki kavisli havuzun çevresine döşenmiş ahşap deck kaplama ve güneşlenme alanı.",
+    "en": "Curved wooden decking border and sunbathing platform installed around an outdoor swimming pool."
+  },
+  "caption": {
+    "tr": "Özel formlu bahçe havuzunun etrafına kavisli hatlara uygun olarak uygulanan ahşap deck ve güneşlenme platformu.",
+    "en": "Custom curved wooden deck installation and sunbathing area around an outdoor swimming pool in a private garden."
+  },
+  "seoFilename": "havuz-kenari-ahsap-deck-kaplama",
+  "tags": {
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "bahçe",
+      "havuz kenarı",
+      "villa"
+    ],
+    "finish": [
+      "deck yağı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

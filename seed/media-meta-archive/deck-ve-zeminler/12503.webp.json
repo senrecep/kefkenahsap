@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12503.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Eğimli toprakta taş sütunlu bahçe önünde deck kirişleri",
+    "en": "Deck bearers on sloping soil in front of a stone-pillared garden"
+  },
+  "alt": {
+    "tr": "Eğimli toprakta, taş sütunlu bahçenin önünde açık renkli deck taşıyıcı kirişleri",
+    "en": "Pale deck bearers on sloping soil in front of a garden with stone pillars"
+  },
+  "caption": {
+    "tr": "Taşıyıcı kirişler eğimi telafi edecek şekilde yerden farklı yüksekliklerde duruyor. Yukarıda sık aralıklı ara kirişler görünüyor.",
+    "en": "The bearers stand at different heights off the ground to make up the slope. Closely spaced cross joists show further up."
+  },
+  "seoFilename": "egimli-toprakta-tas-sutunlu-bahce-onunde-deck-kirisleri",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

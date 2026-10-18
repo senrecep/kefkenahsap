@@ -1,0 +1,37 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 18.00.35.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ateş çukurlu bahçe köşesinde L formlu ahşap oturma bankı",
+    "en": "L-shaped wooden bench around a garden fire pit"
+  },
+  "alt": {
+    "tr": "Taş döşeli bahçede yuvarlak ateş çukurunun arkasında uzanan L biçimli ahşap oturma bankı, çevresinde bitkiler var",
+    "en": "L-shaped wooden bench behind a round fire pit on a stone-paved garden patio, surrounded by plants"
+  },
+  "caption": {
+    "tr": "Taş zeminli bahçe köşesinde, ateş çukurunu çevreleyen L formlu ahşap oturma bankı. Çevresi bitkilerle çevrili, uzakta açık bir manzara görünüyor.",
+    "en": "An L-shaped wooden bench wraps around a fire pit on a stone-paved garden corner, with plants all around and an open view in the distance."
+  },
+  "seoFilename": "ates-cukurlu-bahce-l-ahsap-oturma-banki",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "oturma alanı",
+      "ateş çukuru",
+      "dış mekan"
+    ],
+    "finish": [
+      "doğal ton",
+      "yağ bakımlı görünüm"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.6
+}

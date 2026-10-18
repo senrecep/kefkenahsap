@@ -1,0 +1,39 @@
+{
+  "source": "Korkuluk ve Cit/2228.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beton yol kenarında çapraz çıtalı ahşap korkuluk",
+    "en": "Cross-braced timber railing beside a concrete path"
+  },
+  "alt": {
+    "tr": "Beton yolun kenarında uzanan çapraz çıtalı açık tonlu ahşap korkuluk, arkada pergola ve ahşap çatılı bir kameriye",
+    "en": "Light timber cross-braced railing along a concrete path, with a pergola and a timber-roofed shelter behind"
+  },
+  "caption": {
+    "tr": "Korkuluk beton yolu bahçeden ayırıyor, yer yer inşaat artığı duruyor.",
+    "en": "The railing separates the concrete path from the garden, with building debris here and there."
+  },
+  "seoFilename": "beton-yol-kenarinda-capraz-citali-ahsap-korkuluk",
+  "tags": {
+    "type": [
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

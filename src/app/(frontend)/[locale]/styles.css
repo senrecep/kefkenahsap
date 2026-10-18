@@ -1,0 +1,145 @@
+@import 'tailwindcss';
+
+/* Design tokens — direction contract in .impeccable/surfaces/src-app-frontend-locale-page-tsx.md */
+@theme {
+  --color-paper: #fbfaf7;       /* warm white ground */
+  --color-ink: #1d1f1c;         /* text */
+  --color-ink-soft: #5c5f58;    /* secondary text (6.2:1 on paper) */
+  --color-line: #e4e1da;        /* hairlines */
+  --color-mist: #f2f0eb;        /* quiet surfaces */
+  --color-action: #0b7a3e;      /* buttons/links (5.2:1 on paper, white text 5.4:1) */
+  --color-action-deep: #075c2e; /* hover/pressed */
+  --color-leaf: #39b54a;        /* logo accent, decorative lines only (not text) */
+  --color-brand: #009444;       /* logo green, logo only */
+  --color-error: #b42318;       /* form errors (6.5:1 on paper) */
+  --color-error-soft: #fef3f2;
+
+  --font-display: var(--font-arabic), var(--font-montserrat-cyr), var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+  --font-body: var(--font-arabic), var(--font-source-sans-cyr), var(--font-source-sans), ui-sans-serif, system-ui, sans-serif;
+
+  --radius-photo: 10px;
+  --radius-control: 10px;
+  --shadow-float: 0 8px 24px -8px rgb(29 31 28 / 0.28), 0 2px 6px -2px rgb(29 31 28 / 0.16);
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* The one authored moment: the hero photo settles in while its scrim fades up (image is visible from frame one). */
+  --animate-settle: settle 1.8s var(--ease-out-expo) both;
+  --animate-scrim: scrim 1.2s var(--ease-out-expo) both;
+  @keyframes settle { from { transform: scale(1.04); } }
+  @keyframes scrim { from { opacity: 0.8; } }
+  /* Hero slideshow (#187): every following photo settles the same way, slower, across its whole stay (fade in + ~6.5s +
+     fade out). It ends at scale 1, so the reduced-motion rule (animations cut to 0.01ms) leaves it still and unzoomed. */
+  --animate-drift: drift 9s cubic-bezier(0.25, 0.1, 0.25, 1) both;
+  --animate-progress: progress linear both;
+  @keyframes drift { from { transform: scale(1.06); } }
+  @keyframes progress { from { transform: scaleX(0); } }
+}
+
+@layer base {
+  html {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    scrollbar-color: var(--color-ink-soft) var(--color-mist);
+    /* The fonts stop at 600 (src/app/fonts/README.md): never fake a heavier weight. */
+    font-synthesis-weight: none;
+  }
+  body {
+    font-size: 1.0625rem; /* 17px */
+    line-height: 1.6;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    line-height: 1.15;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+  /* Browser default is bold (700); the type system's emphasis weight is 600. */
+  strong, b, th { font-weight: 600; }
+  p { text-wrap: pretty; }
+  ::selection { background: var(--color-action); color: #fff; }
+  /* Two-tone ring: white inner + ink outer. One of the two always holds ≥3:1 against any ground (paper, footer, photo, lightbox). */
+  :focus-visible { outline: 3px solid var(--color-ink); outline-offset: 2px; box-shadow: 0 0 0 2px #fff; border-radius: 4px; }
+  a { text-underline-offset: 0.2em; text-decoration-thickness: 1px; }
+  input, textarea { caret-color: var(--color-action); }
+  img { max-width: 100%; height: auto; }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+  }
+}
+
+/* The same ring for a visible stand-in of a visually hidden control (e.g. `peer-focus-visible:focus-ring`). */
+@utility focus-ring {
+  outline: 3px solid var(--color-ink);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px #fff;
+}
+
+/* One-line chip rail (gallery filters): sideways scroll with snap, end fade so a cut-off chip reads as "more".
+   Block padding keeps the focus ring inside the scrollport; the end padding clears the fade at full scroll. */
+@utility rail {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  scroll-padding-inline: 1rem 2.5rem;
+  padding-block: 0.5rem;
+  margin-block: -0.5rem;
+  padding-inline-end: 2.5rem;
+  scrollbar-width: none;
+  mask-image: linear-gradient(to right, #000 calc(100% - 2.5rem), transparent);
+  &:dir(rtl) { mask-image: linear-gradient(to left, #000 calc(100% - 2.5rem), transparent); }
+  & > * { scroll-snap-align: start; }
+  /* Mouse: the previous/next arrows sit over the ends, so scrolled-to and focused chips keep clear of them. */
+  @media (pointer: fine) { scroll-padding-inline: 3rem; }
+}
+
+/* Arabic letters join: any tracking (tracking-tight/-wide) breaks the joins, and there is no uppercase.
+   Unlayered, so it wins over the tracking utilities. */
+:lang(ar),
+:lang(ar) * {
+  letter-spacing: 0;
+}
+
+/* Gallery masonry (#215): the tiles render once; each carries its column and offset for the 2 / 3 / 4-column layouts
+   (--cN column, --yN column widths above it, --kN tiles above it, from src/lib/gallery/masonry.ts placements) and is
+   placed for the active breakpoint. Same geometry as the former flex columns: Container width, gap 0.5 / 0.75 / 1rem. */
+@layer components {
+  .masonry { container-type: inline-size; }
+  .masonry > ul {
+    --n: 2;
+    --gap: 0.5rem;
+    --cw: calc((100cqw - (var(--n) - 1) * var(--gap)) / var(--n));
+    position: relative;
+    height: var(--h2);
+    @media (width >= 40rem) { --gap: 0.75rem; }
+    @media (width >= 48rem) { --n: 3; --gap: 1rem; height: var(--h3); }
+    @media (width >= 64rem) { --n: 4; height: var(--h4); }
+  }
+  .masonry > ul > li {
+    --c: var(--c2);
+    --y: var(--y2);
+    --k: var(--k2);
+    position: absolute;
+    inset-block-start: calc(var(--y) * var(--cw) + var(--k) * var(--gap));
+    inset-inline-start: calc(var(--c) * (var(--cw) + var(--gap)));
+    width: var(--cw);
+    @media (width >= 48rem) { --c: var(--c3); --y: var(--y3); --k: var(--k3); }
+    @media (width >= 64rem) { --c: var(--c4); --y: var(--y4); --k: var(--k4); }
+  }
+  /* Print: no container-relative placement; the tiles flow one under another, none split across pages. */
+  @media print {
+    .masonry > ul { height: auto; }
+    .masonry > ul > li { position: static; width: auto; margin-block-end: 0.5rem; break-inside: avoid; }
+  }
+  /* A fixed (trimmed) grid drops some tiles per layout. */
+  @media (width < 48rem) { .masonry-hide-2 { display: none; } }
+  @media (48rem <= width < 64rem) { .masonry-hide-3 { display: none; } }
+  @media (width >= 64rem) { .masonry-hide-4 { display: none; } }
+}

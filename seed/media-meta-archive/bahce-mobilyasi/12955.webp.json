@@ -1,0 +1,39 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/12955.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Vernikli sedirin kapaklı depolama bölmesi, yakından",
+    "en": "Lidded storage compartment of a varnished day-bed, close up"
+  },
+  "alt": {
+    "tr": "Vernikli ahşap sedirin kapağı aralık, içindeki açık renkli depolama bölmesi görünüyor; yan yüzey çam tahtalı",
+    "en": "A varnished timber day-bed with its lid ajar showing the pale storage compartment inside, with pine boards on the side"
+  },
+  "caption": {
+    "tr": "Sedirin üstü kapak gibi kalkıyor, içinde yastık veya bahçe eşyası saklanabilecek bir bölme var.",
+    "en": "The top lifts like a lid, and underneath there is a compartment for cushions or garden items."
+  },
+  "seoFilename": "vernikli-sedirin-kapakli-depolama-bolmesi-yakin-cekim",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/7156.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Koyu vernikli kemerli ahşap pergola ve çıtalı korkuluk, kırmızı kaldırım",
+    "en": "Dark varnished arched timber pergola and slatted rail beside a red pavement"
+  },
+  "alt": {
+    "tr": "Kırmızı kaldırım kenarında koyu vernikli kemerli ahşap pergola ve çıtalı korkuluk, uzakta ahşap detaylı evler",
+    "en": "Dark varnished arched timber pergola and slatted railing beside a red pavement, with timber-detailed houses in the distance"
+  },
+  "caption": {
+    "tr": "Kemerli kirişler pergola boyunca uzanıyor, korkuluk kalın dikmelerle ayrılıyor. Yan taraftaki yolda kırmızı döşeme var.",
+    "en": "The arched beams run along the pergola and the railing is divided by thick uprights. The path beside it has red paving."
+  },
+  "seoFilename": "koyu-vernikli-kemerli-ahsap-pergola-kirmizi-kaldirim",
+  "tags": {
+    "type": [
+      "pergola",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

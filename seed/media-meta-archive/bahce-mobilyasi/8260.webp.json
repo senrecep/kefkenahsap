@@ -1,0 +1,35 @@
+{
+  "source": "Ireko-Teak/8260.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Oval ahşap masa üstü yakından",
+    "en": "Oval timber tabletop up close"
+  },
+  "alt": {
+    "tr": "Teraste duran oval ahşap masanın çıtalı üstü, arkada katlanır sandalyeler",
+    "en": "Slatted top of an oval timber table on a terrace, folding chairs behind"
+  },
+  "caption": {
+    "tr": "Masanın üstü ince çıtalardan, kenarında oval bir çerçeve dolanıyor. Arkada sandalyeler görünüyor.",
+    "en": "The tabletop is made of narrow slats with an oval frame around the edge. Chairs are visible behind."
+  },
+  "seoFilename": "oval-ahsap-masa-ustu-yakin-cekim-cita-doseme",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

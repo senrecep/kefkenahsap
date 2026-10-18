@@ -1,0 +1,33 @@
+{
+  "source": "Merdivenler/1195.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Palmiyeli bahçede çapraz ahşap korkuluk",
+    "en": "Cross-braced timber railing in a palm garden"
+  },
+  "alt": {
+    "tr": "Taş duvarın üst kenarı boyunca uzanan çapraz dikmeli ahşap korkuluk, arkada palmiyeler ve pergolalar",
+    "en": "Cross-braced timber railing along the top of a stone wall, with palm trees and pergolas behind"
+  },
+  "caption": {
+    "tr": "Taş duvarın üstündeki yolu çevreleyen ahşap korkuluk. Arka planda ahşap pergolalar ve bir kamelya görülüyor.",
+    "en": "A timber railing runs along a path above a stone wall, with timber pergolas and a gazebo in the background."
+  },
+  "seoFilename": "palmiyeli-bahcede-capraz-ahsap-korkuluk",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

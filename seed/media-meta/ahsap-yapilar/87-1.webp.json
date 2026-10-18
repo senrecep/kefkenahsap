@@ -1,0 +1,36 @@
+{
+  "file": "87-1.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede yuvarlak ahşap duş kabini",
+    "en": "Round wooden outdoor shower in the garden"
+  },
+  "alt": {
+    "tr": "Bahçede çıta ve metal şeritlerle yapılmış yuvarlak ahşap duş kabini, içinde duş başlığı ve telli sabunluk, zemini ahşap deck",
+    "en": "Round slatted wooden outdoor shower with metal bands in a garden, with a shower head, wire caddy and wooden deck floor"
+  },
+  "caption": {
+    "tr": "Bahçeye yapılan yarım daire planlı açık hava duşu. Dikey ahşap çıtalar metal şeritlerle bağlanmış, zemin deck döşeli, çevresinde beyaz çakıl taşları var.",
+    "en": "An open-air shower with a curved plan built in a garden. Vertical wooden slats are held by metal bands, the floor is decked, and white pebbles surround the base."
+  },
+  "seoFilename": "bahce-ahsap-dus-kabini",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "açık hava",
+      "dış mekan"
+    ],
+    "finish": [
+      "doğal ton",
+      "metal şerit"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

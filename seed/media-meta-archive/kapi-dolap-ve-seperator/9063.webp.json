@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/9063.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bahçe duvarında ahşap kapı ve iki jaluzi panel",
+    "en": "Timber door and two louvred panels on a garden wall"
+  },
+  "alt": {
+    "tr": "Krem bahçe duvarında açık kahve ahşap çift kanatlı kapı, iki küçük jaluzi panel ve yanındaki spiral merdiven, önde çimenlik",
+    "en": "Light brown double timber door and two small louvred panels on a cream garden wall"
+  },
+  "caption": {
+    "tr": "Duvardaki kapı ve paneller aynı tonda ahşaptan. Çimenlik bahçe duvarın önünde uzanıyor.",
+    "en": "The door and panels on the wall are in the same tone of timber. The lawn extends in front of the wall."
+  },
+  "seoFilename": "bahce-duvarinda-ahsap-kapi-ve-iki-jaluzi-panel",
+  "tags": {
+    "type": [
+      "kapı",
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

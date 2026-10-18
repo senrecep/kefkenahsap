@@ -1,0 +1,36 @@
+{
+  "file": "53a0ec22-f300-4179-bcdd-ce439f97153f.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Aynalı beyaz portmanto dolap",
+    "en": "White hallway cabinet with mirrored door"
+  },
+  "alt": {
+    "tr": "Giriş holünde duvara yaslı, bir kapağı beyaz diğeri aynalı iki kapaklı uzun dolap",
+    "en": "Tall two-door cabinet in a hallway, one white door and one mirrored door, standing against the wall"
+  },
+  "caption": {
+    "tr": "Giriş holüne yerleştirilmiş iki kapaklı dolap: bir kapak beyaz, diğeri boydan boya ayna.",
+    "en": "Two-door cabinet placed in an entrance hall: one white door and one full-length mirrored door."
+  },
+  "seoFilename": "aynali-beyaz-portmanto-dolap",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "iç mekan",
+      "giriş holü",
+      "ev"
+    ],
+    "finish": [
+      "beyaz",
+      "ayna kapak"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

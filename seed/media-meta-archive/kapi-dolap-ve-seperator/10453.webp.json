@@ -1,0 +1,35 @@
+{
+  "source": "Kapi Dolap ve Seperator/10453.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Yatay çıtalı ahşap bölme ve kapı",
+    "en": "Horizontal slat timber screen and door"
+  },
+  "alt": {
+    "tr": "Bina girişinde yatay çıtalı ahşap bölme ve aynı desende iki kanatlı kapı",
+    "en": "Horizontal slat timber screen beside a building entrance, with a matching double door"
+  },
+  "caption": {
+    "tr": "Bölme ve kapı aynı aralıklı yatay çıtalarla yapıldı, kapı kapalıyken bölmeyle tek bir yüzey gibi görünüyor.",
+    "en": "The screen and door share the same spaced horizontal slats, so the closed door reads as one surface with the screen."
+  },
+  "seoFilename": "bina-girisi-yatay-citali-ahsap-bolme-kapi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bina girişi",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

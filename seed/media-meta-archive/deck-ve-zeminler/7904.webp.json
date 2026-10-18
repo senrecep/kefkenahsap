@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/7904.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kırmızı duvarlı evin önünde boyalı deck",
+    "en": "Painted deck in front of a red-walled house"
+  },
+  "alt": {
+    "tr": "Kırmızı duvarlı evin cam kapıları önünde, kırmızı kahverengiye boyanmış deck; tahtaların damarları boyanın altından seçiliyor",
+    "en": "Deck painted red-brown in front of the glass doors of a red-walled house"
+  },
+  "caption": {
+    "tr": "Tahtalar yatay döşenmiş ve yüzey düzgün bir tonda boyanmış. Üstte evin cam kapıları ve beyaz çerçeveleri görünüyor.",
+    "en": "The boards are laid horizontally and the surface is painted in an even tone. The glass doors of the house and their white frames show at the top."
+  },
+  "seoFilename": "kirmizi-duvarli-evin-cam-kapilari-onunde-kirmizi-kahve",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

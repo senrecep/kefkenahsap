@@ -1,0 +1,37 @@
+{
+  "file": "WhatsApp-Image-2021-06-27-at-20.13.46-1-1.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe girişinde iroko deck zemin",
+    "en": "Iroko deck section at a garden entrance"
+  },
+  "alt": {
+    "tr": "Bej fayans teras içine yerleştirilmiş, bal rengi ahşap çıtalardan yapılmış dikdörtgen deck alanı; yanında toprak bahçe var",
+    "en": "Rectangular honey-colored wooden deck inset into a beige tiled terrace, with bare garden soil beside it"
+  },
+  "caption": {
+    "tr": "Fayans terasın içine yerleştirilen, kenarı ahşap çerçeveyle bitirilmiş deck alanı. Yanındaki bahçe düzenlemesi henüz tamamlanmamış.",
+    "en": "A deck section set into a tiled terrace and finished with a wooden border. The garden next to it is still being landscaped."
+  },
+  "seoFilename": "iroko-deck-zemin-bahce-girisi",
+  "tags": {
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "bahçe",
+      "teras",
+      "dış mekan"
+    ],
+    "finish": [
+      "doğal ahşap tonu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.72
+}

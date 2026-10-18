@@ -1,0 +1,37 @@
+{
+  "file": "img2.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Kavisli ahşap köprü iskeleti montajı",
+    "en": "Curved timber bridge frame under assembly"
+  },
+  "alt": {
+    "tr": "Kavisli lamine ahşap kirişler, diagonal destekler ve dikey direkler; arkada ağaçlar ve yürüyüş yolu görünüyor.",
+    "en": "Curved laminated timber beams with diagonal braces and vertical posts, trees and a walkway in the background."
+  },
+  "caption": {
+    "tr": "Küçük bir park köprüsünün montaj aşaması: kavisli kirişler yerine oturtulmuş, korkuluk direkleri ve çapraz destekler ayakta.",
+    "en": "Assembly stage of a small garden bridge: the curved beams are in place, with railing posts and diagonal braces standing."
+  },
+  "seoFilename": "kavisli-ahsap-kopru-iskeleti-montaj",
+  "tags": {
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "park",
+      "bahçe",
+      "dış mekan"
+    ],
+    "finish": [
+      "doğal ahşap"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.82
+}

@@ -1,0 +1,36 @@
+{
+  "file": "7be9f728-db45-4d22-8fde-a7788e614ab7.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Aynalı sürgülü gardırop, geometrik desenli",
+    "en": "Sliding wardrobe with mirror and geometric pattern"
+  },
+  "alt": {
+    "tr": "Yatak odasında üç kapaklı beyaz sürgülü gardırop; ortada ayna, yanlardaki kapaklarda altın renkli geometrik desen şeritleri",
+    "en": "White three-door sliding wardrobe in a bedroom with a center mirror and gold geometric pattern strips on the side doors"
+  },
+  "caption": {
+    "tr": "Beyaz boyalı, üç kapaklı sürgülü gardırop. Ortadaki aynalı kapağın iki yanında yıldız geçmeli geometrik desen işlenmiş.",
+    "en": "A white-painted sliding wardrobe with three doors. The mirrored center door is flanked by doors carrying a star-based geometric pattern."
+  },
+  "seoFilename": "aynali-surgulu-gardirop-geometrik-desen",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "yatak odası",
+      "iç mekan"
+    ],
+    "finish": [
+      "beyaz boya",
+      "ayna",
+      "geometrik desen"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

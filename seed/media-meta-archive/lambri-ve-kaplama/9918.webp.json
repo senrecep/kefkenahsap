@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/9918.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yatay çıtalı duvar kaplaması ve paravan",
+    "en": "Horizontal board wall cladding and screen"
+  },
+  "alt": {
+    "tr": "Fayans zeminli alanda yatay tahta duvar kaplaması; sağda daha aralıklı çıtalı paravan bölümü",
+    "en": "Horizontal board wall cladding over a tiled floor, with a more widely spaced slatted screen section on the right"
+  },
+  "caption": {
+    "tr": "Gri yeşil tonlu tahtalar duvarı yatay kaplıyor. Sağda çıtaları daha seyrek bir paravan duruyor.",
+    "en": "Grey-green boards clad the wall horizontally. On the right a screen with wider-spaced slats stands."
+  },
+  "seoFilename": "yatay-citali-duvar-paravan-fayans-zemin",
+  "tags": {
+    "type": [
+      "iç duvar kaplaması"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

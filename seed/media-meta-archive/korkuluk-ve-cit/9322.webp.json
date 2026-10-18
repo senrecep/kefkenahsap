@@ -1,0 +1,38 @@
+{
+  "source": "Kapi Dolap ve Seperator/9322.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz boyalı alçak ahşap çit ve kapı, arkada ev ve tel çit",
+    "en": "Low white-painted timber fence and gate, with a house and wire fence behind"
+  },
+  "alt": {
+    "tr": "Çimlik kenarında, sivri uçlu beyaz boyalı alçak ahşap çit ve kapı; arkada kırmızı çatılı ev ve yeşil tel çit",
+    "en": "A low white-painted pointed-slat timber fence and gate at the lawn edge, with a red-roofed house and green wire fence behind"
+  },
+  "caption": {
+    "tr": "Çit çıtaları sivri uçlu ve beyaz, çimlikle bahçe arasını ayırıyor. Köşede kapı çitle aynı yükseklikte.",
+    "en": "The fence slats are pointed and white and separate the lawn from the garden. At the corner the gate is the same height as the fence."
+  },
+  "seoFilename": "beyaz-boyali-alcak-ahsap-cit-ve-kapi-ev-tel-cit",
+  "tags": {
+    "type": [
+      "çit",
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/4627.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz çevresinde yeni deck",
+    "en": "New deck around a pool"
+  },
+  "alt": {
+    "tr": "Mozaik fayanslı havuzun çevresine döşenmiş yeni açık renkli deck; arkada çalılık, bambu ve kiremit çatılı villalar",
+    "en": "New pale deck laid around a mosaic-tiled pool, with shrubs, bamboo and tile-roofed villas behind"
+  },
+  "caption": {
+    "tr": "Tahtalar havuzun taş kenarına dik gelecek biçimde döşenmiş. Yüzeyde nem parlaması var.",
+    "en": "The boards are laid to meet the stone edge of the pool squarely. The surface has a damp sheen."
+  },
+  "seoFilename": "havuz-cevresinde-yeni-acik-renkli-deck-calilik-ve-villalar",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

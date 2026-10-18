@@ -1,0 +1,35 @@
+{
+  "file": "17.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Havuz kenarında ahşap deck ve bahçe mobilyası",
+    "en": "Wooden pool deck with garden furniture"
+  },
+  "alt": {
+    "tr": "Havuz kenarındaki ahşap deck üzerinde masa, bank ve kollu sandalyelerden oluşan açık renkli ahşap bahçe takımı",
+    "en": "Light wooden garden set with table, bench and armchairs on a timber deck beside a swimming pool"
+  },
+  "caption": {
+    "tr": "Havuzun kenarına döşenen ahşap deck ve üzerine yerleştirilen masa, bank ve sandalye takımı. Önde beyaz çakıl taşlı çiçeklikler var.",
+    "en": "A timber deck laid beside the pool, with a table, bench and chair set on top. White pebble planters run along the front."
+  },
+  "seoFilename": "havuz-kenari-ahsap-deck-bahce-masa-takimi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "havuz kenarı",
+      "bahçe",
+      "açık hava"
+    ],
+    "finish": [
+      "doğal ahşap"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/14715.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Palmiye gövdesi çevresinde deck",
+    "en": "Deck around a palm trunk"
+  },
+  "alt": {
+    "tr": "Palmiye gövdesi için boşluk bırakılmış cilalı deck; arkada kafes panelli ahşap saksılık ve kenarda halat korkuluk",
+    "en": "Polished deck with an opening for a palm trunk, a timber planter with a lattice panel behind and a rope railing at the edge"
+  },
+  "caption": {
+    "tr": "Palmiyenin yanında çakıl taşlarıyla çevrili bir çimen şeridi var. Deckin ucundan söğüt dalları ve göl görünüyor.",
+    "en": "A strip of lawn edged with pebbles lies beside the palm. Willow branches and the lake show beyond the deck."
+  },
+  "seoFilename": "palmiye-govdesi-cevresinde-deck-ve-kafesli-saksilik",
+  "tags": {
+    "type": [
+      "deck",
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

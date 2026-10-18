@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/9750.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çakıl ve toprak zeminde çaprazlı merdiven",
+    "en": "Cross-braced stairs on gravel and soil"
+  },
+  "alt": {
+    "tr": "Çakıl serili toprak zeminde çaprazlı korkuluklu ahşap merdiven; arkada beyaz duvar ve beyaz bir araç",
+    "en": "Timber stairs with a cross-braced railing on soil laid with gravel, with a white wall and a white vehicle behind"
+  },
+  "caption": {
+    "tr": "Merdivenin ilk basamağı çakıl yatağına oturuyor. İki yanda çaprazlı korkuluk, arkada beyaz bir duvar var.",
+    "en": "The first step rests on a bed of gravel. Cross-braced railings stand on both sides with a white wall behind."
+  },
+  "seoFilename": "cakil-ve-toprak-zeminde-caprazli-korkuluklu-ahsap-merdiven",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

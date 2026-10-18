@@ -1,0 +1,36 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 17.59.55 (2).webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede ahşap aletlik",
+    "en": "Wooden garden tool shed"
+  },
+  "alt": {
+    "tr": "Çim bir bahçede, ağaçların arasında duran, kahverengi vernikli yatay ahşap kaplamalı küçük aletlik ve çift kanatlı kapısı",
+    "en": "Small garden shed with brown stained horizontal wood cladding and double doors, set on a lawn among trees"
+  },
+  "caption": {
+    "tr": "Bahçeye yapılan küçük ahşap aletlik. Yatay çıtalı kaplaması ceviz tonunda koruyucu ile boyanmış, beton kaide üzerine oturuyor, kapısı çift kanatlı.",
+    "en": "A small wooden tool shed built for a garden. Horizontal cladding in a walnut-toned protective finish, set on a concrete base, with double doors."
+  },
+  "seoFilename": "bahce-ahsap-aletlik",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "çim alan",
+      "açık hava"
+    ],
+    "finish": [
+      "ceviz tonu",
+      "koruyucu vernik"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

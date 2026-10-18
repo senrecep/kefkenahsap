@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/9995.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kırmızımsı vernikli kalın tahtalı masa ve bank, yakından",
+    "en": "Reddish-varnished thick-board table and bench up close"
+  },
+  "alt": {
+    "tr": "Yakın çekimde, kırmızımsı vernikli kalın tahtalardan yapılmış masa tablası ve yanındaki bankın oturağı görünüyor",
+    "en": "A close view of the thick reddish-varnished boards of a table top and the seat of the bench beside it"
+  },
+  "caption": {
+    "tr": "Tabla üç kalın tahtadan oluşuyor. Alt çerçeve ve ayaklar birbirine bağlanarak masayı sabit tutuyor.",
+    "en": "The top is three thick boards. The lower frame and legs are tied together to keep the table steady."
+  },
+  "seoFilename": "kirmizimsi-vernikli-kalin-tahtali-masa-ve-bank-yakin-cekim",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "ticari mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

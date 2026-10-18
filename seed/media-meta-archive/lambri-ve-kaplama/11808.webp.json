@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/11808.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Balkonlu beyaz ahşap kaplamalı bina, yandan",
+    "en": "White timber-clad building with balconies seen from the side"
+  },
+  "alt": {
+    "tr": "Sokak köşesinde, beyaz boyalı yatay ahşap kaplamalı çok katlı bina cephesi ve işlemeli balkon korkulukları",
+    "en": "White-painted horizontal timber-clad multi-storey building at a street corner with ornate balcony railings"
+  },
+  "caption": {
+    "tr": "Ahşap kaplama üst katları örtüyor, balkonların altında kabartmalı konsollar görünüyor.",
+    "en": "Timber cladding covers the upper floors, and moulded brackets show under the balconies."
+  },
+  "seoFilename": "beyaz-boyali-ahsap-kaplamali-balkonlu-bina-cephesi-yandan",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

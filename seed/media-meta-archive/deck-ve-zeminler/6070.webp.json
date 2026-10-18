@@ -1,0 +1,40 @@
+{
+  "source": "Deck ve Zeminler/6070.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz önünde bal rengi geniş deck",
+    "en": "Wide honey-coloured deck in front of a pool"
+  },
+  "alt": {
+    "tr": "Havuz önünde yayılan bal rengi geniş deck; arkada beyaz bir bahçe bankı, lavantalar ve saksılar",
+    "en": "Wide honey-coloured deck spreading in front of a pool, with a white garden bench, lavender and planters behind"
+  },
+  "caption": {
+    "tr": "Tahtalar yatay döşenmiş ve güneşte altın bir parlaklık veriyor. Havuz suyu üst kenarda mavi bir şerit oluşturuyor.",
+    "en": "The boards are laid crosswise and give a golden gleam in the sun. The pool water forms a blue strip along the top edge."
+  },
+  "seoFilename": "havuz-onunde-bal-rengi-genis-deck-beyaz-bank-ve-saksilar",
+  "tags": {
+    "type": [
+      "deck",
+      "bank"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/6095.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kolçaklı ahşap bank ve yanında kapaklı ahşap sandık",
+    "en": "Timber bench with arms and a lidded timber chest beside it"
+  },
+  "alt": {
+    "tr": "Güneşli bir terasta, çıtalı sırtlı kolçaklı ahşap bank ve yanında üstü kapalı bir ahşap sandık duruyor",
+    "en": "On a sunny terrace, a timber bench with arms and a slatted back with a closed timber chest beside it"
+  },
+  "caption": {
+    "tr": "Bankın yanındaki sandık hem depolama hem de küçük bir yan masa işi görüyor. İkisi de aynı ahşap tonunda.",
+    "en": "The chest beside the bench serves as both storage and a small side table. Both are in the same timber tone."
+  },
+  "seoFilename": "kolcakli-ahsap-bank-ve-yaninda-kapakli-ahsap-sandik",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

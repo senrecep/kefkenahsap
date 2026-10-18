@@ -1,0 +1,33 @@
+{
+  "source": "Merdivenler/7938.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "İki duvar arasında açık basamaklı merdiven",
+    "en": "Open-tread staircase between two walls"
+  },
+  "alt": {
+    "tr": "İki sıvalı duvarın arasında, beyaz ahşap çite doğru yükselen çapraz korkuluklu ahşap merdiven",
+    "en": "Cross-braced timber staircase rising between two rendered walls towards a white timber fence"
+  },
+  "caption": {
+    "tr": "Dar bir geçitte iki duvar arasına yerleştirilmiş ahşap merdiven. Üst bahçede beyaz ahşap çit var.",
+    "en": "A timber staircase fitted into a narrow passage between two walls, with a white timber fence in the upper garden."
+  },
+  "seoFilename": "iki-duvar-arasinda-acik-basamakli-merdiven",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

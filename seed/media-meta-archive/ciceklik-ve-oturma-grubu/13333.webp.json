@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/13333.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Mavi örtü üzerinde yeni vernikli çiçeklikler",
+    "en": "Freshly varnished planters on a blue sheet"
+  },
+  "alt": {
+    "tr": "Atölyede mavi örtünün üzerinde sıralanmış, yeni vernik sürülmüş dikey tahtalı ahşap çiçeklikler",
+    "en": "Vertical-board timber planters freshly varnished and lined up on a blue sheet in the workshop"
+  },
+  "caption": {
+    "tr": "Çiçeklikler turuncu-kahve tonda, içleri koruyucu astarlı. Zemin vernik damlamasına karşı örtülmüş.",
+    "en": "The planters are orange-brown with a protective liner inside. The floor is covered against drips of varnish."
+  },
+  "seoFilename": "atolyede-mavi-ortu-uzerinde-vernik-surulmus-ahsap",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

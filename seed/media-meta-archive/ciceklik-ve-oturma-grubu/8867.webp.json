@@ -1,0 +1,36 @@
+{
+  "source": "Ahsap Yapilar/8867.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yatay cephe önünde uzun ahşap çiçeklik",
+    "en": "Long planter in front of horizontal cladding"
+  },
+  "alt": {
+    "tr": "Yatay ahşap kaplı duvarın önünde, çakıl yanında, ahşap çerçeveli uzun çiçeklik ve yeni dikilmiş fidanlar",
+    "en": "Long timber-framed planter with newly planted saplings in front of a horizontally clad wall, beside gravel"
+  },
+  "caption": {
+    "tr": "Çiçekliğin çerçevesi açık renk ahşap. Fidanlar yeni dikilmiş, çevrede çakıl serili.",
+    "en": "The planter frame is light timber. The saplings are freshly planted and gravel is laid around."
+  },
+  "seoFilename": "yatay-cephe-onunde-ahsap-cerceveli-uzun-ciceklik-kutusu",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı",
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

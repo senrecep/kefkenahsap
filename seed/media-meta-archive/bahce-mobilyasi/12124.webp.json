@@ -1,0 +1,35 @@
+{
+  "source": "Ireko-Teak/12124.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölyede çapraz kavisli ayaklı ahşap masa iskeleti parçası",
+    "en": "Part of a timber table base with curved crossed legs in the workshop"
+  },
+  "alt": {
+    "tr": "Atölyede beyaz bir tezgâhın üzerinde, kavisli kollarla X biçiminde birleşen ahşap masa ayağı ve uzun bir kiriş görünüyor",
+    "en": "On a white workshop bench, a timber table base whose curved arms meet in an X, with a long beam attached"
+  },
+  "caption": {
+    "tr": "Masa ayağı iki kavisli kolun ortada birleşmesiyle oluşuyor. Atölyede henüz boyanmadan, ham hâlde duruyor.",
+    "en": "The base is made of two curved arms joined in the middle. It sits in the workshop still raw, before finishing."
+  },
+  "seoFilename": "atolyede-capraz-ayakli-ahsap-masa-iskeleti-parcasi-beyaz",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

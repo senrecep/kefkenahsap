@@ -1,0 +1,41 @@
+{
+  "source": "Pergola ve Kamelyalar/35.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Davlumbazlı ahşap mangal masası ve banklar",
+    "en": "Timber barbecue table with a hood and benches"
+  },
+  "alt": {
+    "tr": "Ortasında ocak ve üstünde davlumbaz bulunan ahşap mangal masası; çevresinde çapraz korkuluk ve banklar",
+    "en": "Timber barbecue table with a hob in the middle and a hood above, surrounded by cross-braced railings and benches"
+  },
+  "caption": {
+    "tr": "Masanın dört yanında ahşap banklar var, korkuluklar çapraz çıtalı. Yapı çimli bir bahçede, arkada ev görünüyor.",
+    "en": "There are timber benches on all sides of the table and the railings have crossed slats. The structure stands in a lawned garden with a house behind."
+  },
+  "seoFilename": "ocak-ve-davlumbazli-ahsap-mangal-masasi-capraz-korkuluk-ve",
+  "tags": {
+    "type": [
+      "dış mutfak / mangal alanı",
+      "bank",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.55
+}

@@ -1,0 +1,41 @@
+{
+  "source": "Kopru ve Iskele/8009.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kıvrımlı deck kenarından görülen korkuluklu ahşap köprü",
+    "en": "Railed timber bridge seen from the curved deck edge"
+  },
+  "alt": {
+    "tr": "Çevresi deckle kaplı, boş havuzun üzerinde duran korkuluklu köprü; ön planda kıvrılan deck kenarı, arkada köşk",
+    "en": "Railed bridge over an empty pool framed by decking, with the curved deck edge in the foreground and a pavilion behind"
+  },
+  "caption": {
+    "tr": "Deck havuzun etrafını yumuşak bir eğriyle sarıyor. Köprü havuzun dar bölümünü tek açıklıkla geçiyor.",
+    "en": "The decking wraps around the pool in a gentle curve. The bridge crosses the narrow part of the pool in a single span."
+  },
+  "seoFilename": "kivrimli-deck-kenarindan-gorulen-korkuluklu-kopru",
+  "tags": {
+    "type": [
+      "köprü",
+      "korkuluk",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

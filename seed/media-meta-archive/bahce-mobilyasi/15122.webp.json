@@ -1,0 +1,35 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/15122.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölyede tezgâh üzerinde iki işlenmemiş açık renkli ahşap masa",
+    "en": "Two unfinished light timber tables on a workshop bench"
+  },
+  "alt": {
+    "tr": "Atölye tezgâhının üstünde yan yana duran, henüz vernik veya boya sürülmemiş iki açık renkli ahşap masa",
+    "en": "Two light timber tables standing side by side on a workshop bench with no varnish or paint yet, hand tools hung behind"
+  },
+  "caption": {
+    "tr": "Masalar hâlâ ham ahşap görünümünde, vernik veya boya henüz sürülmemiş. Tablalar birkaç geniş tahtadan oluşuyor.",
+    "en": "The tables are still raw wood, with no varnish or paint applied yet. The tops are made from a few wide boards."
+  },
+  "seoFilename": "atolyede-tezgah-uzerinde-iki-islenmemis-ahsap-masa",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

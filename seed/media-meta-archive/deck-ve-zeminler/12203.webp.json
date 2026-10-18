@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12203.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ağaç yanında beton ayaklı yükseltilmiş deck iskeleti",
+    "en": "Raised deck frame on concrete footings beside a tree"
+  },
+  "alt": {
+    "tr": "Ağaç yanında beton ayaklar üzerine oturtulmuş direklerle yükseltilmiş deck taşıyıcı iskeleti",
+    "en": "Raised deck bearer frame on posts standing on concrete footings beside a tree"
+  },
+  "caption": {
+    "tr": "Direkler kirişleri zeminden yukarıda tutuyor. Taş duvar ve ağaç gövdesi arka planda görünüyor.",
+    "en": "Posts hold the beams up off the ground. A stone wall and a tree trunk show in the background."
+  },
+  "seoFilename": "agac-yaninda-beton-ayakli-yukseltilmis-deck-iskeleti",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

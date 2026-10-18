@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/505.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sahil kenarı meydanda taş zemin üzerinde çok sıralı geniş pergola iskeleti",
+    "en": "Multi-row wide pergola frame on a stone-paved waterfront square"
+  },
+  "alt": {
+    "tr": "Sahil kenarındaki taş döşeli meydanda çok sıralı geniş ahşap pergola iskeleti, kalın direkler ve payandalar",
+    "en": "Multi-row wide timber pergola frame on a stone-paved waterfront square, with thick posts and braces"
+  },
+  "caption": {
+    "tr": "Pergola sıraları meydanın uzunluğunu boydan boya geçiyor. Yan tarafta paslanmaz korkuluklu bir merdiven var.",
+    "en": "The pergola rows run the full length of the square. A stair with a stainless rail stands on one side."
+  },
+  "seoFilename": "sahil-meydaninda-cok-sirali-genis-pergola-iskeleti",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "ticari mekân",
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

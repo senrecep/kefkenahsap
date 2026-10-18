@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/12419.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Uzun ve dar, çıtalı oturaklı koyu vernikli ahşap bank",
+    "en": "Long narrow dark-varnished bench with a slatted seat"
+  },
+  "alt": {
+    "tr": "Karo zeminde duran, üç çıtalı oturağı olan uzun ve dar koyu vernikli ahşap bank; arkasında yeşil bitkiler var",
+    "en": "A long narrow dark-varnished timber bench with a three-slat seat on a tiled floor, with green plants behind it"
+  },
+  "caption": {
+    "tr": "Bank uzun ama dar; oturak üç çıtadan oluşuyor. Alt bağlantılar ayakları birbirine bağlayıp yapıyı sabitliyor.",
+    "en": "The bench is long but narrow, with a seat made of three slats. The lower crosspieces tie the legs together to stiffen it."
+  },
+  "seoFilename": "uzun-dar-citali-oturakli-koyu-vernikli-bank-karo-zemin",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

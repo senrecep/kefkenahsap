@@ -1,0 +1,39 @@
+{
+  "source": "Pergola ve Kamelyalar/14281.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Lambri tavanlı çatı altında çıtalı panel",
+    "en": "Slatted panel under a panelled-ceiling roof"
+  },
+  "alt": {
+    "tr": "Lambri kaplı tavanlı bir çatının altında yatay çıtalı ahşap panel ve deck zemin; ileride havuz",
+    "en": "Horizontally slatted timber panel and deck floor under a roof with a panelled ceiling, with a pool beyond"
+  },
+  "caption": {
+    "tr": "Panel çatının altında yan duvar işi görüyor, altındaki taş kaplı kaide havuza bakıyor. Zemin deck tahtası.",
+    "en": "The panel acts as a side wall under the roof and the stone-clad base below it looks onto the pool. The floor is decking."
+  },
+  "seoFilename": "lambri-tavanli-cati-altinda-citali-ahsap-panel-ve-deck-zemin",
+  "tags": {
+    "type": [
+      "sundurma / saçak / carport",
+      "kafes / paravan",
+      "tavan kaplaması / lambri"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

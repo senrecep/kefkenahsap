@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/527.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beton duvar arasında ahşap basamaklı iç merdiven",
+    "en": "Indoor staircase with timber treads between concrete walls"
+  },
+  "alt": {
+    "tr": "Beton duvarlar arasında açık renkli ahşap basamaklı iç merdiven; yanında tahta kaplanmış kolon ve kiriş",
+    "en": "Indoor staircase with light timber treads between concrete walls, with a board-clad column and beam beside it"
+  },
+  "caption": {
+    "tr": "Merdiven beton duvarın yanında yükseliyor. Kolon ve kirişin üstü tahtayla kaplanmış.",
+    "en": "The staircase climbs beside the concrete wall. The column and beam are clad in boards."
+  },
+  "seoFilename": "beton-duvar-arasi-ic-merdiven-kaplamali-kolon",
+  "tags": {
+    "type": [
+      "merdiven",
+      "iç duvar kaplaması"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

@@ -1,0 +1,40 @@
+{
+  "source": "Kopru ve Iskele/4903.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sazlıklı göl kenarında korkuluklu ahşap iskele yolu",
+    "en": "Railed timber pier walkway beside a reedy lake"
+  },
+  "alt": {
+    "tr": "Sazlık ve küçük bir tekne yanından geçen, kenarlarında korkuluk bulunan açık renk ahşap iskele yolu; karşıda tepeler",
+    "en": "Light timber pier walkway with railings alongside reeds and a small boat, hills on the far shore"
+  },
+  "caption": {
+    "tr": "Tahtalar iskele yönünde uzunlamasına döşenmiş, sol kenarda korkuluk sürüyor. Sağda sazlık ve tekne var.",
+    "en": "The deck boards run lengthwise along the pier and the railing continues on the left. Reeds and a boat are on the right."
+  },
+  "seoFilename": "sazlikli-gol-kenarinda-korkuluklu-iskele-yolu",
+  "tags": {
+    "type": [
+      "iskele",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

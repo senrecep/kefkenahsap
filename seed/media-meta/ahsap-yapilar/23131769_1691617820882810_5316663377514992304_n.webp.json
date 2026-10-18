@@ -1,0 +1,36 @@
+{
+  "file": "23131769_1691617820882810_5316663377514992304_n.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Eğimli çatı altı ahşap lambri kaplama",
+    "en": "Pitched ceiling wood paneling"
+  },
+  "alt": {
+    "tr": "Eğimli tavanda bal rengi vernikli ahşap lambri kaplama, köşelerde kalın ahşap kirişler ve farklı yönlerde uzanan tahtalar",
+    "en": "Honey-toned varnished wood paneling on a pitched ceiling with thick timber beams and boards running in different directions"
+  },
+  "caption": {
+    "tr": "Eğimli tavan yüzeyine lambri çakılmış, kiriş birleşimleri ve tahta yönleri düzenli işlenmiş. Bal rengi vernik ahşabın damarını açıkta bırakıyor.",
+    "en": "Tongue-and-groove paneling fitted to a pitched ceiling, with neat beam joints and board directions. The honey-toned varnish leaves the wood grain visible."
+  },
+  "seoFilename": "egimli-tavan-ahsap-lambri-kaplama",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "iç mekan",
+      "çatı arası",
+      "tavan"
+    ],
+    "finish": [
+      "vernik",
+      "bal rengi"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

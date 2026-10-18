@@ -1,0 +1,36 @@
+{
+  "file": "18-1.webp",
+  "category": "deck-ve-zeminler",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe taş duvar yanı ahşap deck kaplama",
+    "en": "Garden timber decking along stone wall"
+  },
+  "alt": {
+    "tr": "Taş istinat duvarı kenarına boylu boyunca döşenmiş açık renkli ahşap zemin kaplaması.",
+    "en": "Light-toned wooden decking laid along a natural stone retaining wall in a backyard."
+  },
+  "caption": {
+    "tr": "Bahçe oturma alanında taş duvar hizasına uygulanan ahşap zemin kaplaması. Duvar kenarındaki ahşap dikme ve küpeştelerle bütünlük sağlandı.",
+    "en": "Outdoor timber deck installation running alongside a stone garden wall, detailed with matching timber framing."
+  },
+  "seoFilename": "bahce-tas-duvar-yani-ahsap-deck",
+  "tags": {
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "bahçe",
+      "veranda"
+    ],
+    "finish": [
+      "doğal"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

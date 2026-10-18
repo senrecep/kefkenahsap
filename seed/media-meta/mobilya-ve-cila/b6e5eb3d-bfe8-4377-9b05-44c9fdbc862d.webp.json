@@ -1,0 +1,38 @@
+{
+  "file": "b6e5eb3d-bfe8-4377-9b05-44c9fdbc862d.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Salonda duvar boyu TV ünitesi ve vitrinli dolap",
+    "en": "Wall-length TV unit and glass display cabinet in a living room"
+  },
+  "alt": {
+    "tr": "Salonda beyaz mat dolaplar, ahşap kaplı TV bölümü, camlı ışıklı vitrin ve tavanda gizli LED aydınlatma",
+    "en": "Living room wall of matte white cabinets with a wood-clad TV section, lit glass display and hidden ceiling LEDs"
+  },
+  "caption": {
+    "tr": "Duvar boyunca uzanan beyaz mat dolaplar, ahşap kaplı TV bölümü ve ışıklı camlı vitrin. Montaj sürerken yerinde çekildi.",
+    "en": "White matte cabinets running the full wall, a wood-clad TV section and a lit glass display. Taken on site while installation was still underway."
+  },
+  "seoFilename": "salon-tv-unitesi-vitrinli-beyaz-dolap",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "salon",
+      "ev içi",
+      "TV ünitesi",
+      "vitrin"
+    ],
+    "finish": [
+      "beyaz mat boya",
+      "ahşap kaplama",
+      "LED aydınlatma"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

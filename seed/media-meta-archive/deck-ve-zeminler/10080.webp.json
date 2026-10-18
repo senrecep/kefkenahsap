@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/10080.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dar yan teras boyunca yeni döşenmiş deck",
+    "en": "Newly laid deck along a narrow side terrace"
+  },
+  "alt": {
+    "tr": "Dar yan teras boyunca uzanan, yeni döşenmiş ve ıslak parlayan açık renkli ahşap deck",
+    "en": "Newly laid light timber deck along a narrow side terrace, gleaming wet"
+  },
+  "caption": {
+    "tr": "Deck tahtaları teras boyunca uzun uzun döşenmiş, ıslak yüzeyde damarlar öne çıkıyor. Yanında cam kapı ve duvar var.",
+    "en": "The deck boards run the full length of the terrace and the grain stands out on the wet surface. A glass door and a wall are alongside."
+  },
+  "seoFilename": "dar-yan-teras-boyunca-yeni-dosenmis-islak-parlayan-acik",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

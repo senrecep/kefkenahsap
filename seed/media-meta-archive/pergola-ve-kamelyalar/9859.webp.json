@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/9859.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çelik karkas üzerine OSB kaplı çatı, altında çalışan ustalar",
+    "en": "OSB-clad roof on a steel frame with workers beneath"
+  },
+  "alt": {
+    "tr": "Çelik taşıyıcılar üzerine döşenmiş OSB kaplı çatı, altında merdiven başında çalışan iki kişi, arkada bahçe",
+    "en": "OSB-clad roof laid over steel supports, with two people working by a ladder beneath and a garden behind"
+  },
+  "caption": {
+    "tr": "Çatı tahtaları kırmızı boyalı çelik profillerin üstüne oturuyor. Altı henüz açık, ahşap kaplama yok.",
+    "en": "The roof panels sit on red-painted steel profiles. The underside is still open, with no timber lining yet."
+  },
+  "seoFilename": "celik-karkas-uzerine-osb-kapli-cati",
+  "tags": {
+    "type": [
+      "pergola"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.5
+}

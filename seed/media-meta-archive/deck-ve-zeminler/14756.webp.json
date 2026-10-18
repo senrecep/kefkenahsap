@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14756.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Camlı güvenlik çitli havuzu saran deck",
+    "en": "Deck curving around a pool with a glass safety fence"
+  },
+  "alt": {
+    "tr": "Çimenin kenarında, camlı güvenlik çitiyle çevrili havuzun kıvrımlı kenarını izleyen koyu kahverengi deck şeridi",
+    "en": "Dark brown deck strip following the curved edge of a pool enclosed by a glass safety fence, beside a lawn"
+  },
+  "caption": {
+    "tr": "Deck çimenle havuz arasında yay çizerek ilerliyor. Arkada evin camlı kapıları ve çalılar görünüyor.",
+    "en": "The deck arcs between the lawn and the pool. The glass doors of the house and shrubs show behind."
+  },
+  "seoFilename": "kivrimli-koyu-deck-camli-guvenlik-citli-havuz",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

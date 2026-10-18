@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/10393.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapılı bina önünde deck altyapısı",
+    "en": "Deck substructure in front of a building with glass doors"
+  },
+  "alt": {
+    "tr": "Cam kapılı bina önünde toprak üzerine kurulmuş ahşap deck altyapısı; kirişler çerçeveye bağlanmış",
+    "en": "Timber deck substructure set on soil in front of a building with glass doors, joists fixed to a frame"
+  },
+  "caption": {
+    "tr": "Kirişler düzgün aralıkla sıralanmış, çerçeve duvara paralel. Tahtalar henüz çakılmamış.",
+    "en": "The joists are laid at even spacing and the frame is parallel to the wall. The boards have not been fixed yet."
+  },
+  "seoFilename": "cam-kapili-bina-onunde-toprak-uzerine-kurulmus-ahsap-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

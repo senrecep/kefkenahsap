@@ -1,0 +1,36 @@
+{
+  "file": "25446077_1742117339166191_7442840058023385323_n.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ahşap jaluzi panel",
+    "en": "Wooden louvered panel"
+  },
+  "alt": {
+    "tr": "Atölyede yere dayalı, geniş çerçeveli ve yatay jaluzi çıtalı işlenmemiş açık renkli ahşap panel",
+    "en": "Light unfinished wooden panel with a wide frame and horizontal louver slats, leaning on a workshop floor"
+  },
+  "caption": {
+    "tr": "Geniş çerçeveli, yatay çıtalı ahşap jaluzi panel. Atölyede, cila öncesi hâliyle görülüyor.",
+    "en": "A wooden louvered panel with a wide frame and horizontal slats, shown in the workshop before finishing."
+  },
+  "seoFilename": "ahsap-jaluzi-panel-atolye",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "atölye",
+      "iç mekan"
+    ],
+    "finish": [
+      "işlenmemiş",
+      "doğal ahşap"
+    ],
+    "stage": [
+      "process",
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.78
+}

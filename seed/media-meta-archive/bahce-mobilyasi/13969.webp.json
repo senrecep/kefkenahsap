@@ -1,0 +1,40 @@
+{
+  "source": "Ireko-Teak/13969.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bambu önünde yuvarlak ahşap masa ve paslanmaz ayaklı sandalyeler",
+    "en": "Round timber table and steel-legged chairs in front of bamboo"
+  },
+  "alt": {
+    "tr": "Bambu perdesinin önünde dilim dilim çıtalı yuvarlak ahşap masa ve paslanmaz çelik ayaklı kumaş oturaklı sandalyeler",
+    "en": "In front of a bamboo screen, a round timber table with slats laid in wedges and steel-framed fabric-seat chairs"
+  },
+  "caption": {
+    "tr": "Masanın çıtaları dört dilim hâlinde birleşiyor ve ortada tek ayakla taşınıyor. Sandalyeler ahşapla zıt, ince metal gövdeli.",
+    "en": "The slats of the table meet in four segments and the top rests on a single central base. The chairs contrast with the wood, with slim metal frames."
+  },
+  "seoFilename": "bambu-onunde-yuvarlak-ahsap-masa-paslanmaz-ayakli",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [
+      "teak"
+    ],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

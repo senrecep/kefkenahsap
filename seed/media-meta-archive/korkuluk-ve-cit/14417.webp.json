@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/14417.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Trafik levhası yanında beyaz piket çit",
+    "en": "White picket fence next to a traffic sign"
+  },
+  "alt": {
+    "tr": "Taş duvar üzerinde beyaz boyalı çıtalı çit, yanında yaya geçidi ve hız sınırı levhası, önde çöp kovası",
+    "en": "White-painted picket fence on a stone wall, with a pedestrian-crossing sign, a speed-limit sign and a bin in front"
+  },
+  "caption": {
+    "tr": "Çit sokak köşesindeki duvarı boydan boya kaplıyor. Önünde kaldırımda trafik direği duruyor.",
+    "en": "The fence covers the wall along the street corner. A sign post stands on the pavement in front."
+  },
+  "seoFilename": "beyaz-piket-cit-trafik-levhasi-yaninda",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

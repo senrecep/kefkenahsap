@@ -1,0 +1,38 @@
+{
+  "source": "Kapi Dolap ve Seperator/14751.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kemerli demir kapının yanında küçük yeşil jaluzi panjur",
+    "en": "Small green louvred shutter beside an arched iron door"
+  },
+  "alt": {
+    "tr": "Kemerli işlemeli siyah demir kapının yanında beyaz duvardaki dar, adaçayı yeşili jaluzi panjur ve yağmur borusu",
+    "en": "Narrow sage-green louvred shutter on a white wall beside an arched, ornate black iron door at a stone-paved entrance"
+  },
+  "caption": {
+    "tr": "Panjur dar ve uzun, kapıya yakın duruyor. Yeşil ton beyaz duvarda belirgin.",
+    "en": "The shutter is narrow and tall and sits close to the door. The green tone stands out on the white wall."
+  },
+  "seoFilename": "kemerli-demir-kapinin-yaninda-kucuk-yesil-jaluzi-panjur",
+  "tags": {
+    "type": [
+      "pencere / panjur"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş",
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

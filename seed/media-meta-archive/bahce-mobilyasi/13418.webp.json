@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/13418.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bank oturağının kenar detayı, gömme spot deliğiyle",
+    "en": "Edge detail of a bench seat with a recessed spot fitting"
+  },
+  "alt": {
+    "tr": "Yakın çekimde, parlak vernikli ahşap bank oturağının köşe kenarı",
+    "en": "A close view of the corner edge of a glossy-varnished timber bench seat"
+  },
+  "caption": {
+    "tr": "Oturak kenarına küçük bir aydınlatma gömülmüş. Parlak vernik ahşabın damarını ve rengini öne çıkarıyor.",
+    "en": "A small light is set into the seat edge. The glossy varnish brings out the grain and colour of the wood."
+  },
+  "seoFilename": "bank-oturagi-kenarinda-ahsap-ve-gomme-spot-yakin-cekim",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

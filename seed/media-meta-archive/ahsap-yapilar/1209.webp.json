@@ -1,0 +1,36 @@
+{
+  "source": "Ahsap Yapilar/1209.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Deniz kıyısında ahşap gölgelikli güneşlenme terası",
+    "en": "Seaside sun terrace with a timber shade roof"
+  },
+  "alt": {
+    "tr": "Kayalık kıyı boyunca uzanan ahşap yürüyüş yolu ve şezlongların üstünde ahşap çatılı gölgelik",
+    "en": "Timber boardwalk along a rocky shore with a slatted timber shade roof over sun loungers"
+  },
+  "caption": {
+    "tr": "Kıyı boyunca uzanan ahşap yürüyüş yolu, şezlongların üstündeki ahşap çatılı gölgeliğe bağlanıyor. Çapraz dikmeli korkuluklar yolu iki yandan çeviriyor.",
+    "en": "A timber boardwalk runs along the shore to a shade structure over the sun loungers, with cross-braced railings on both sides."
+  },
+  "seoFilename": "deniz-kiyisi-ahsap-golgelik-gunes-terasi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "deniz kenarı",
+      "teras",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/12884.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Gri ahşap masa altında yarısı yıkanmış deck",
+    "en": "Deck half washed under a grey timber table"
+  },
+  "alt": {
+    "tr": "Turuncu kahverengi deck üzerinde gri eski ahşap masa; deck'in yarısı ıslak ve yıkanmış",
+    "en": "Orange-brown deck with an old grey timber table on it, half the deck wet and freshly washed"
+  },
+  "caption": {
+    "tr": "Yıkanan kısım rengini geri almış, kuru kalan bölüm daha soluk duruyor. Bakım sırasında masa deck'in üzerinde bırakılmış.",
+    "en": "The washed part has regained its colour while the dry part looks duller. The table was left on the deck during the cleaning."
+  },
+  "seoFilename": "gri-ahsap-masa-altinda-yarisi-yikanmis-deck",
+  "tags": {
+    "type": [
+      "deck",
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/12886.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bitkili çiçeklik, arkasında çıtalı panel",
+    "en": "Planter with a slatted panel behind"
+  },
+  "alt": {
+    "tr": "Köşeden görünen bitkili ahşap çiçeklik ve arkasında yükselen yatay çıtalı ahşap panel",
+    "en": "Timber planter with plants seen from the corner, with a horizontal-slat timber panel rising behind it"
+  },
+  "caption": {
+    "tr": "Panel çıtaları aralıklı, arkasından gri bir perde görünüyor. Çiçeklikte taş kaplı bir toprak yüzeyi var.",
+    "en": "The panel slats are spaced and a grey blind shows through. The planter has a stone-topped soil surface."
+  },
+  "seoFilename": "ciceklik-icinde-bitki-arkasinda-yatay-citali-ahsap-panel",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı",
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

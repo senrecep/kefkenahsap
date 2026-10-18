@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/8033.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kavisli havuz kenarında açık tonlu deck",
+    "en": "Light-toned deck along a curved pool edge"
+  },
+  "alt": {
+    "tr": "Kavisli havuz kenarını izleyen açık renkli deck, yanında granit zemin ve taş şerit",
+    "en": "Light deck following the curved edge of a pool, with granite paving and a stone strip beside it"
+  },
+  "caption": {
+    "tr": "Deck, havuzun kavisli kenarını takip ediyor. Yanındaki granit zeminle düzgün bir geçiş yapıyor.",
+    "en": "The deck follows the curve of the pool and meets the granite paving in a clean line."
+  },
+  "seoFilename": "kavisli-havuz-kenari-acik-ton-deck",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

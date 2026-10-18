@@ -1,0 +1,37 @@
+{
+  "file": "25.webp",
+  "category": "deck-ve-zeminler",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Emprenyeli çam bahçe deck ve ahşap korkuluk uygulaması",
+    "en": "Pressure treated pine garden decking with railings"
+  },
+  "alt": {
+    "tr": "Eğimli bahçede basamaklı ve yatay çıtalı ahşap korkuluklu geniş emprenye çam deck zemin.",
+    "en": "Treated pine garden deck with steps and horizontal wooden railings overlooking a valley."
+  },
+  "caption": {
+    "tr": "Eğimli bahçe terasında uygulanan emprenyeli çam deck zemin kaplaması ve basamaklı ahşap korkuluklar. Açık hava koşullarına dayanıklı biçimde monte edildi.",
+    "en": "Pressure treated pine wood decking and matching railings installed on a sloped garden terrace, built for outdoor durability."
+  },
+  "seoFilename": "emprenyeli-cam-bahce-deck-korkuluk",
+  "tags": {
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe",
+      "teras",
+      "dış mekan"
+    ],
+    "finish": [
+      "emprenye"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

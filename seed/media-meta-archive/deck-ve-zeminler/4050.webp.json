@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/4050.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Havuz kenarında çapraz korkuluklu ahşap deck",
+    "en": "Poolside timber deck with cross-braced railing"
+  },
+  "alt": {
+    "tr": "Çam ağaçlarının önünde, havuz kenarına uzanan çapraz korkuluklu açık renk ahşap deck",
+    "en": "Light timber deck with cross-braced railing running to a pool's edge in front of pine trees"
+  },
+  "caption": {
+    "tr": "Çam ağaçlarının kenarında, havuza kadar uzanan geniş bir ahşap deck. Çimenliği çevreleyen çapraz desenli korkuluk deck boyunca devam ediyor.",
+    "en": "A wide timber deck reaching the pool at the edge of the pines. The cross-braced railing around the lawn carries on along the deck."
+  },
+  "seoFilename": "havuz-kenari-capraz-korkuluklu-ahsap-deck-cam-agaclari",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "havuz kenarı",
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

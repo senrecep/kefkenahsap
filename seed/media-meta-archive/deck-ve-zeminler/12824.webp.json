@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/12824.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çelik ayaklar üzerinde yükseltilmiş geniş deck alt yapısı",
+    "en": "Wide deck substructure raised on steel legs"
+  },
+  "alt": {
+    "tr": "Yamaçta çelik ayaklar üzerinde yükseltilmiş geniş deck alt yapısı, üzerine çıtalar dizilmiş",
+    "en": "Wide deck substructure raised on steel legs on a slope, with battens laid across it"
+  },
+  "caption": {
+    "tr": "Platform yamaçtan dışarı doğru çıkıyor ve altı boş kalıyor. Ayakları bu yüzden çelikten yapılmış.",
+    "en": "The platform reaches out over the slope with empty space beneath. That is why its legs are made of steel."
+  },
+  "seoFilename": "celik-ayaklar-uzerinde-yukseltilmis-genis-deck-alt-yapisi",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

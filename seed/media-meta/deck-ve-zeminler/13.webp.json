@@ -1,0 +1,36 @@
+{
+  "file": "13.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Villa yan bahçesinde koyu renkli ahşap deck",
+    "en": "Dark wood deck along a villa side garden"
+  },
+  "alt": {
+    "tr": "Sarı cepheli bir evin yanında, çit boyunca uzanan koyu kahverengi ahşap deck; bir usta zeminin ucunda çalışıyor.",
+    "en": "Dark brown wooden deck beside a yellow house, running along a fence, with a worker kneeling at its far end."
+  },
+  "caption": {
+    "tr": "Evin yan cephesindeki bahçe geçişine döşenen ahşap deck. Usta, zemin son kontrollerinden geçerken çalışmaya devam ediyor.",
+    "en": "A wooden deck laid along the side garden path of a house, with a craftsman still at work on the surface."
+  },
+  "seoFilename": "villa-yan-bahce-ahsap-deck-uygulamasi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "villa",
+      "bahçe",
+      "dış mekan",
+      "yan cephe"
+    ],
+    "finish": [
+      "doğal koyu ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

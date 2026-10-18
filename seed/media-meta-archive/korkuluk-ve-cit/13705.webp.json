@@ -1,0 +1,38 @@
+{
+  "source": "Kopru ve Iskele/13705.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Gölet üzerinde ip ile tutulan, yapım aşamasındaki ahşap korkuluk iskeleti",
+    "en": "Timber railing frame under construction held by a rope over a pond"
+  },
+  "alt": {
+    "tr": "Gölet suyunun üstüne uzanan ahşap korkuluk iskeletinin kirişleri; üstte ip ve eğilmiş bir ağaç gövdesi",
+    "en": "The beams of a timber railing frame reaching out over pond water"
+  },
+  "caption": {
+    "tr": "Kirişler suyun üstünde çapraz kesişiyor, ip kirişi tutuyor. Suyun yüzeyinde ağaç ve gökyüzü yansıyor.",
+    "en": "The beams cross over the water and a rope holds a beam. Trees and sky are reflected on the water surface."
+  },
+  "seoFilename": "golet-ustunde-ip-ile-tutulan-korkuluk-iskeleti",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "iskele"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.5
+}

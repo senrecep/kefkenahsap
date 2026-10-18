@@ -1,0 +1,36 @@
+{
+  "file": "26165828_1750114745033117_4637695302055954385_n.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Yatay çıtalı ahşap separatör ve çift kanatlı kapı",
+    "en": "Horizontal slat wood screen and double door"
+  },
+  "alt": {
+    "tr": "Teras kenarında yatay çıtalı ahşap separatör, çift kanatlı çıtalı kapı, önde panjurlu ahşap sandık ve ahşap deck zemin",
+    "en": "Horizontal slatted wood screen with a double slatted door on a terrace, a louvered wood box in front and a wood deck floor"
+  },
+  "caption": {
+    "tr": "Teras kenarında yatay çıtalarla yapılmış separatör ve aynı çıta düzenindeki çift kanatlı kapı. Önde panjur detaylı bir ahşap sandık, yerde ahşap deck var.",
+    "en": "A terrace screen built from horizontal slats, with a double door in the same slat pattern. A wood box with louvered panels stands in front, and the floor is wood decking."
+  },
+  "seoFilename": "citali-ahsap-seperator-ve-kapi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "teras",
+      "bahçe",
+      "dış mekan"
+    ],
+    "finish": [
+      "doğal ahşap",
+      "yatay çıta"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.86
+}

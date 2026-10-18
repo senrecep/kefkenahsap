@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/14431.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölyede işlenen kalın masa tablası",
+    "en": "Thick tabletop being worked in the workshop"
+  },
+  "alt": {
+    "tr": "Atölyede kalın bir ahşap masa tablası, arka duvarda alet panosu",
+    "en": "Thick timber tabletop in the workshop with a tool board on the back wall"
+  },
+  "caption": {
+    "tr": "Tabla kalın ve çıtalı, yüzeyine koruyucu sürülmüş. Arkada aletlerin asılı olduğu pano görünüyor.",
+    "en": "The top is thick and slatted, with a protective coat applied. A board of hanging tools is visible behind."
+  },
+  "seoFilename": "atolyede-islenen-kalin-ahsap-masa-tablasi",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

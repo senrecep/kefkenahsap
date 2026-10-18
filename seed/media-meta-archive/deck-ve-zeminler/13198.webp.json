@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/13198.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sökülmüş eski gri deck, açıkta kirişler ve matkap",
+    "en": "Stripped old grey deck with joists and a drill"
+  },
+  "alt": {
+    "tr": "Eski gri deck'in sökülen bölümünde açıkta kalan kirişler; yerde matkap ve çıta",
+    "en": "Joists exposed where an old grey deck has been taken up, with a drill and a batten on the ground"
+  },
+  "caption": {
+    "tr": "Eski tahtalar kirişlerden vidalarla çıkarılıyor. Sağlam kalan kirişler yeni döşemede kullanılacak gibi görünüyor.",
+    "en": "The old boards are being unscrewed from the joists. The joists that are sound look as if they will take the new boarding."
+  },
+  "seoFilename": "sokulmus-eski-gri-deck-aciktaki-kirisler-ve-matkap",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

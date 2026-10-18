@@ -1,0 +1,35 @@
+{
+  "source": "Korkuluk ve Cit/12640.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Kaydıraklı ahşap çocuk oyun evi",
+    "en": "Timber children's playhouse with a slide"
+  },
+  "alt": {
+    "tr": "Ağaçlık bahçede yükseltilmiş ahşap oyun evi, korkuluklu merdiveni, yeşil kaydırağı ve altında kum havuzu",
+    "en": "Raised timber playhouse in a wooded garden with a railed stair, green slide and a sandpit underneath"
+  },
+  "caption": {
+    "tr": "Ayaklar üzerindeki oyun evine korkuluklu ahşap merdivenle çıkılıyor. Altında kum havuzu, yanında kaydırak var.",
+    "en": "A railed timber stair leads up to the raised playhouse, with a sandpit underneath and a slide alongside."
+  },
+  "seoFilename": "kaydirakli-ahsap-cocuk-oyun-evi-bahce",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "oyun alanı"
+    ],
+    "finish": [
+      "doğal ahşap"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

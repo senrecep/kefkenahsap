@@ -1,0 +1,35 @@
+{
+  "source": "Ireko-Teak/11317.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Mavi örtü üzerinde boyanmakta olan kolçaklı ahşap sandalye",
+    "en": "Timber armchair being painted on a blue sheet"
+  },
+  "alt": {
+    "tr": "Mavi plastik örtünün üzerinde, kolçaklı ve geniş çıtalı ahşap bir sandalye vernik veya boya işlemi için bekliyor",
+    "en": "A timber armchair with wide slats stands on a blue plastic sheet awaiting varnish or paint, with a paint tin beside it"
+  },
+  "caption": {
+    "tr": "Sandalye teras zeminine serilmiş örtünün üzerinde işleniyor. Yanındaki kutuda yeni kat için boya hazır.",
+    "en": "The chair is being worked on over a sheet spread on the terrace floor. The tin beside it holds the paint for the new coat."
+  },
+  "seoFilename": "mavi-ortu-uzerinde-kolcakli-ahsap-sandalye-boyaniyor",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

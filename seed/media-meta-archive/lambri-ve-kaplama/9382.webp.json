@@ -1,0 +1,36 @@
+{
+  "source": "Ahsap Yapilar/9382.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz çok katlı ahşap bina, kahverengi doğramalar",
+    "en": "White multi-storey timber building with brown window frames"
+  },
+  "alt": {
+    "tr": "Beyaz boyalı yatay kaplamalı çok katlı ahşap bina; kahverengi pencere doğramaları, üstte balkon ve altta taş duvar",
+    "en": "Multi-storey timber building clad in white painted horizontal boards, with brown window frames, a balcony and a stone base"
+  },
+  "caption": {
+    "tr": "Beyaz boyalı yatay tahtalar cepheyi kaplıyor, pencere doğramaları kahverengi. Balkon ve taş duvarlı alt kat da görünüyor.",
+    "en": "White painted horizontal boards cover the facade and the window frames are brown. A balcony and a stone-walled lower level are also in view."
+  },
+  "seoFilename": "beyaz-ahsap-bina-kahverengi-dograma-balkon",
+  "tags": {
+    "type": [
+      "cephe kaplaması",
+      "pencere / panjur"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

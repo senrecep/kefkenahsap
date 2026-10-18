@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/13315.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş döşemede beyaz piket çit",
+    "en": "White picket fence by a stone-paved path"
+  },
+  "alt": {
+    "tr": "Kare taş döşeli yolun kenarında beyaz boyalı çıtalı çit ve iki ahşap direk, arkada yeşillik",
+    "en": "White-painted picket fence with two timber posts beside a stone-paved path, greenery behind"
+  },
+  "caption": {
+    "tr": "Beyaz çıtalar taş yolun iki yanında kısa bir bölme oluşturuyor.",
+    "en": "The white pickets form a short divider on either side of the stone path."
+  },
+  "seoFilename": "tas-dosemede-beyaz-piket-cit",
+  "tags": {
+    "type": [
+      "çit",
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

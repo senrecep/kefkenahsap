@@ -1,0 +1,37 @@
+{
+  "file": "fa10be40-c2f9-4dd2-bc41-d8cbf58b4a66.webp",
+  "category": "mobilya-ve-cila",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Özel tasarım patinalı camlı vitrin dolap",
+    "en": "Custom patina glazed display cabinet"
+  },
+  "alt": {
+    "tr": "Gri gövdeli, eskitme bronz ton kapaklı ve cam bölmeli ahşap vitrin dolap.",
+    "en": "Wooden display cabinet with grey frame, antique bronze tone doors, and glass panels."
+  },
+  "caption": {
+    "tr": "Gri lakeli gövdesi, oluklu köşe detayları ve eskitme patinalı kapaklarıyla tamamlanmış özel ölçü ahşap vitrin dolap çalışması.",
+    "en": "Custom display cabinet finished with a grey lacquered frame, fluted corner details, and antique patina door surfaces."
+  },
+  "seoFilename": "ozel-tasarim-eskitme-camli-vitrin-dolap",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "salon",
+      "ic-mekan",
+      "yemek-odasi"
+    ],
+    "finish": [
+      "lake",
+      "eskitme",
+      "patina"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

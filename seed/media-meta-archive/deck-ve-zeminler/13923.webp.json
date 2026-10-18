@@ -1,0 +1,36 @@
+{
+  "source": "Deck ve Zeminler/13923.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Lavanta yanında taş plakalı yol ve başlayan deck çerçevesi",
+    "en": "Stone-slab path by lavender leading to a starting deck frame"
+  },
+  "alt": {
+    "tr": "Lavanta yanında çakıl ve taş plakalı yürüyüş yolu ile başlayan deck çerçevesi, çimen kenarında",
+    "en": "Gravel and stone-slab walkway beside lavender leading into a deck frame at the lawn edge"
+  },
+  "caption": {
+    "tr": "Taş plakalar çakıl yatağında sıralı ve deck çerçevesine bağlanıyor. Çerçevenin içi henüz açık.",
+    "en": "The stone slabs sit in order in the gravel bed and lead into the deck frame. The inside of the frame is still open."
+  },
+  "seoFilename": "lavanta-yaninda-tas-plakali-yol-ve-baslayan-deck-cercevesi",
+  "tags": {
+    "type": [
+      "deck",
+      "yürüyüş yolu"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/6340.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çapraz destekli yatay kaplama panel, yanında kiremit çatı",
+    "en": "Horizontal-clad panel with cross supports beside a tiled roof"
+  },
+  "alt": {
+    "tr": "Dik direkler ve X çaprazlarla desteklenmiş yatay ahşap tahta kaplı geniş bir panel, sağda kiremitli bir çatı",
+    "en": "Wide panel of horizontal timber boards supported by upright posts and X-braces, with a tiled roof on the right"
+  },
+  "caption": {
+    "tr": "Panel henüz yerine takılmamış gibi duruyor. Çaprazlar tahtaları düz tutuyor.",
+    "en": "The panel looks as if it has not yet been fitted. The braces keep the boards flat."
+  },
+  "seoFilename": "capraz-destekli-yatay-ahsap-kaplama-panel-yaninda-kiremit",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [],
+    "finish": [],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

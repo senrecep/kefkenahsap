@@ -1,0 +1,37 @@
+{
+  "source": "Pergola ve Kamelyalar/2416.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yan girişte direkli küçük saçak",
+    "en": "Small canopy with posts at a side entrance"
+  },
+  "alt": {
+    "tr": "Yan girişte dört direkle taşınan koyu ahşap küçük saçak; çevrede kum yığını ve karton kutular",
+    "en": "Small dark timber canopy carried on posts at a side entrance, with a pile of sand and cardboard boxes around it"
+  },
+  "caption": {
+    "tr": "Saçak beyaz duvarın köşesinde, altında tuğla kaide başlıyor. Zemin henüz bitmemiş, kum ve kutular bırakılmış.",
+    "en": "The canopy sits at the corner of the white wall and a brick base begins beneath it. The ground is unfinished with sand and boxes left around."
+  },
+  "seoFilename": "yan-giriste-direkli-koyu-ahsap-kucuk-sacak-kum-ve-karton",
+  "tags": {
+    "type": [
+      "sundurma / saçak / carport"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

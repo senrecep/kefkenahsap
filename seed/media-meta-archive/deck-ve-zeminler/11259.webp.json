@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/11259.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Zımparalanmış, turuncu lekeli ahşap döşeme",
+    "en": "Sanded wooden flooring with orange stains"
+  },
+  "alt": {
+    "tr": "İç mekânda zemine serilmiş, yüzeyi zımparalanmış ve turuncu lekeli ahşap döşeme",
+    "en": "Wooden flooring laid indoors, sanded and carrying orange stains"
+  },
+  "caption": {
+    "tr": "Tahtalar yan yana döşenmiş ve zımparalanmış, üstünde turuncu lekeler kalmış. Cila ya da boya sürülmeden önceki aşama.",
+    "en": "The boards are laid side by side and sanded, with orange stains left on them. This is the stage before varnish or paint."
+  },
+  "seoFilename": "iceride-zemine-serilmis-yuzeyi-zimparalanmis-turuncu-lekeli",
+  "tags": {
+    "type": [
+      "parke / iç zemin"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

@@ -1,0 +1,36 @@
+{
+  "source": "Korkuluk ve Cit/6166.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Giriş kapısı önünde ahşap korkuluk",
+    "en": "Timber railing in front of an entrance"
+  },
+  "alt": {
+    "tr": "Bina girişinin önünde, kalın küpeşteli dikey tahtalı ahşap korkuluk ve yanında küçük bir ahşap kapı",
+    "en": "Vertical board timber railing with a thick handrail in front of a building entrance, with a small timber gate"
+  },
+  "caption": {
+    "tr": "Dikey tahtalar arasında dar boşluklar bırakılmış, üstü kalın bir küpeşteyle kapatılmış. Korkuluk giriş kapısının önündeki alanı yan bahçeden ayırıyor.",
+    "en": "Vertical boards are set with narrow gaps and capped with a thick handrail, separating the entrance area from the garden at the side."
+  },
+  "seoFilename": "giris-onunde-dikey-tahtali-ahsap-korkuluk",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bina girişi",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ahşap"
+    ],
+    "stage": [
+      "detail",
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,33 @@
+{
+  "source": "Ahsap Yapilar/9864.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kırmızı membran kaplı çatı, arkada bahçe ve yol",
+    "en": "Red membrane roof with a garden and path behind"
+  },
+  "alt": {
+    "tr": "Kırmızı membranla kaplı düz çatı; arkada çimli bahçe, yol ve ağaçlar",
+    "en": "Flat roof covered with a red membrane, with a lawned garden, a path and trees behind"
+  },
+  "caption": {
+    "tr": "Çatının köşesi yukarıdan görünüyor. Arkada bahçe yolu, çim alan ve koyu yeşil ağaçlar yer alıyor.",
+    "en": "The corner of the roof is seen from above. A garden path, a lawn and dark green trees lie behind."
+  },
+  "seoFilename": "kirmizi-membran-kapli-duz-cati-arkada-bahce-ve-yol",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.4
+}

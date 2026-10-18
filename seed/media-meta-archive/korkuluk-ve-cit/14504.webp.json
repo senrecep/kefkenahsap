@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/14504.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Geniş arazide çit ve çerçeveli kapı",
+    "en": "Fence and framed gate on a wide plot"
+  },
+  "alt": {
+    "tr": "Geniş açık arazide uzanan yatay çıtalı çit, önde ahşap kapı çerçevesi, arka planda tepeler ve birkaç bina",
+    "en": "Horizontal-rail fence across a wide open plot, a timber gate frame in front, with hills and a few buildings behind"
+  },
+  "caption": {
+    "tr": "Çit arazinin kenarlarını izliyor, uzakta araçlar ve binalar görünüyor.",
+    "en": "The fence follows the edges of the plot, with vehicles and buildings in the distance."
+  },
+  "seoFilename": "genis-arazide-cit-ve-cerceveli-kapi-uzakta-binalar",
+  "tags": {
+    "type": [
+      "çit",
+      "bahçe kapısı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/11449.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deck modülünün yakın çekimi, dik çıtalar",
+    "en": "Close-up of a deck module, upright battens"
+  },
+  "alt": {
+    "tr": "Atölyede deck modülünün yakın çekimi; tahtalar ve kenarlarda dik duran çıtalar görünüyor",
+    "en": "Close-up of a deck module in the workshop, showing the boards and the battens standing upright at the edges"
+  },
+  "caption": {
+    "tr": "Çıtalar tahtaların uçlarına dik oturuyor. Yüzeyde yeni sürülmüş vernik parlıyor.",
+    "en": "The battens sit at right angles to the ends of the boards. Freshly applied varnish shines on the surface."
+  },
+  "seoFilename": "atolyede-deck-modulunun-yakin-cekimi-tahtalar-ve-dik-citalar",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

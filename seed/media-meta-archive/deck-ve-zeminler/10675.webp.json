@@ -1,0 +1,39 @@
+{
+  "source": "Deck ve Zeminler/10675.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapı önünde alt kiriş çerçevesi",
+    "en": "Joist frame in front of a glass door"
+  },
+  "alt": {
+    "tr": "Cam kapı önünde toprak üzerine kurulu ahşap deck alt kiriş çerçevesi; yanda çim ve iş aletleri",
+    "en": "Timber deck joist frame set on soil in front of a glass door, with grass and tools beside it"
+  },
+  "caption": {
+    "tr": "Kirişler hem boyuna hem enine bağlanmış, altlarında takozlar var. Çerçevenin kenarında bir vida kutusu duruyor.",
+    "en": "The joists are tied lengthways and crossways with blocks beneath them. A box of screws sits at the edge of the frame."
+  },
+  "seoFilename": "cam-kapi-onunde-toprak-uzerine-kurulu-ahsap-deck-alt-kiris",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

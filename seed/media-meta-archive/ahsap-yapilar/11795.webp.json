@@ -1,0 +1,37 @@
+{
+  "source": "Pergola ve Kamelyalar/11795.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yan girişte ahşap kirişli küçük sundurma",
+    "en": "Small timber-beamed porch at a side entrance"
+  },
+  "alt": {
+    "tr": "Binanın yan girişine yapılmış, koyu vernikli ahşap kirişli küçük sundurma; yanda uydu çanağı",
+    "en": "Small porch with dark varnished timber beams built at the side entrance of a building, with a satellite dish beside it"
+  },
+  "caption": {
+    "tr": "Sundurma ince çıtalı çatısıyla girişi gölgeliyor. Koyu kirişler köşelerde iki kalın direğe bağlanıyor.",
+    "en": "The porch shades the entrance with its thin-slatted roof. The dark beams join two thick posts at the corners."
+  },
+  "seoFilename": "bina-yan-girisinde-ahsap-kirisli-kucuk-sundurma-uydu-canagi",
+  "tags": {
+    "type": [
+      "sundurma / saçak / carport"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

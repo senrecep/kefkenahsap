@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/14282.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Lambri tavanlı çatı kenarı ve beyaz kolon",
+    "en": "Eave of a panelled-ceiling roof and a white post"
+  },
+  "alt": {
+    "tr": "Çatının lambri kaplı alt yüzü, beyaz bir kolon ve yanındaki çıtalı ahşap panel, alttan görünüm",
+    "en": "Panelled underside of a roof, a white post and a slatted timber panel beside it, seen from below"
+  },
+  "caption": {
+    "tr": "Çatı tahtaları kirişlerin arasına dizilmiş, yanda beyaz bir kolon yükseliyor. Panelin arkasında yeşil bir çit var.",
+    "en": "The roof boards are laid between the beams with a white post rising at the side. A green fence stands behind the panel."
+  },
+  "seoFilename": "lambri-tavanli-cati-kenari-beyaz-kolon-ve-citali-ahsap-panel",
+  "tags": {
+    "type": [
+      "sundurma / saçak / carport",
+      "kafes / paravan"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

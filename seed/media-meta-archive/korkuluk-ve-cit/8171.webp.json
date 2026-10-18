@@ -1,0 +1,35 @@
+{
+  "source": "Korkuluk ve Cit/8171.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Taş merdiven boyunca ahşap korkuluk",
+    "en": "Timber railing along stone steps"
+  },
+  "alt": {
+    "tr": "Çimenliğin yanında taş basamaklar boyunca yükselen dikey tahtalı ahşap korkuluk",
+    "en": "Vertical board timber railing rising along stone steps beside a lawn"
+  },
+  "caption": {
+    "tr": "Taş basamakların kenarına eğimi izleyen ahşap korkuluk yapılmış. Üstte korkuluk düz devam ediyor.",
+    "en": "A timber railing follows the slope of the stone steps and carries on level at the top."
+  },
+  "seoFilename": "tas-merdiven-boyunca-ahsap-korkuluk-cimen",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "doğal ahşap"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

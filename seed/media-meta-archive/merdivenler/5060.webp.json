@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/5060.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Cam kapılı eve yakın merdiven, yanı tahta kaplı",
+    "en": "Stairs near a glass-doored house, side boarded in"
+  },
+  "alt": {
+    "tr": "Cam kapılı evin yanında çaprazlı korkuluklu ahşap merdiven; merdivenin yan yüzü yatay tahtayla kaplı",
+    "en": "Timber stairs with a cross-braced railing beside a house with glass doors"
+  },
+  "caption": {
+    "tr": "Merdivenin altı ve yanı yatay tahtayla kapatılmış. Arkada cam kapılı bir cephe ve tel çit görünüyor.",
+    "en": "The underside and side of the stairs are boarded in horizontally. A glass-doored facade and wire fencing show behind."
+  },
+  "seoFilename": "cam-kapili-eve-yakin-merdiven-yan-tahta-kaplama",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

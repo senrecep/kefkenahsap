@@ -1,0 +1,40 @@
+{
+  "source": "Korkuluk ve Cit/8279.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Telli ahşap çit ve çaprazlı kapı, çimde taş basamaklar",
+    "en": "Wire-mesh timber fence and braced gate with stepping stones on the lawn"
+  },
+  "alt": {
+    "tr": "Çimdeki taş basamakların sonunda çapraz kuşaklı ahşap kapı ve yanında yeşil tel örgülü çit, solda budanmış çalı",
+    "en": "Braced timber gate at the end of stepping stones across a lawn, with a green wire-mesh fence beside it"
+  },
+  "caption": {
+    "tr": "Taşlar kapıya kadar giden bir patika çiziyor. Çit yola paralel uzanıyor.",
+    "en": "The stones mark a path to the gate. The fence runs parallel to the path."
+  },
+  "seoFilename": "telli-ahsap-cit-ve-capraz-kapi-cimde-tas-basamaklar",
+  "tags": {
+    "type": [
+      "çit",
+      "bahçe kapısı"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

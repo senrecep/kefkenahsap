@@ -1,0 +1,34 @@
+{
+  "source": "Pergola ve Kamelyalar/2206.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Bahçeye bakan pergola köşesi",
+    "en": "Pergola corner overlooking a garden"
+  },
+  "alt": {
+    "tr": "Kalın dikme ve kirişlerin birleştiği pergola köşesi; çapraz korkulukların ardında palmiyeli bahçe",
+    "en": "Corner of a pergola where heavy posts and beams meet, with a palm garden beyond cross-braced railings"
+  },
+  "caption": {
+    "tr": "Pergolanın kiriş ve dikme birleşimi yakından görülüyor. Çıtalı örtünün altından palmiyeli bahçe ve patika uzanıyor.",
+    "en": "A close look at where the pergola's beams meet the post. Below the slatted cover, the garden with its palms and path stretches out."
+  },
+  "seoFilename": "pergola-kose-birlesimi-palmiyeli-bahce",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "detail",
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

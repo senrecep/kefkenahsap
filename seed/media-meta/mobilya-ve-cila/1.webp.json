@@ -1,0 +1,37 @@
+{
+  "file": "1.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Beyaz üst, gri alt dolaplı L mutfak",
+    "en": "L-shaped kitchen with white upper and grey lower cabinets"
+  },
+  "alt": {
+    "tr": "Beyaz üst dolapları ve gri çekmeceli alt dolapları olan L şekilli mutfak, tezgah ve armatürler henüz takılmamış",
+    "en": "L-shaped kitchen with white upper cabinets and grey lower drawers, countertop and fittings not yet installed"
+  },
+  "caption": {
+    "tr": "Çerçeveli kapaklı beyaz üst dolaplar ve gri boyalı alt dolaplar yerine monte edildi. Mutfakta tezgah ve son montaj işleri devam ediyor.",
+    "en": "White upper cabinets with framed doors and grey painted lower cabinets are in place. Countertop and final installation work are still ongoing."
+  },
+  "seoFilename": "beyaz-ust-gri-alt-dolapli-l-mutfak",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "mutfak",
+      "iç mekan",
+      "daire"
+    ],
+    "finish": [
+      "beyaz boya",
+      "gri boya",
+      "çerçeveli kapak"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

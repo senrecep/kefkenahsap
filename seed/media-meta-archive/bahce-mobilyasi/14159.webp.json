@@ -1,0 +1,36 @@
+{
+  "source": "Ireko-Teak/14159.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beton gövdeli tezgâhın ahşap iç yüzeyi",
+    "en": "Timber inner surface of a concrete-bodied counter"
+  },
+  "alt": {
+    "tr": "Beton gövdeli uzun tezgâhın içine yerleştirilmiş ahşap tahta yüzey; arkada gri duvar ve çim",
+    "en": "Timber board surface set into a long concrete-bodied counter, with a grey wall and lawn behind"
+  },
+  "caption": {
+    "tr": "Beton çerçevenin ortasında yatay ahşap tahtalardan bir yüzey uzanıyor. Arkada gri bir duvar ve bahçe var.",
+    "en": "A surface of horizontal timber boards runs through the middle of the concrete frame. A grey wall and a garden lie behind."
+  },
+  "seoFilename": "beton-govdeli-tezgah-icine-yerlestirilmis-citali-ahsap-ic",
+  "tags": {
+    "type": [
+      "bar / tezgâh"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.45
+}

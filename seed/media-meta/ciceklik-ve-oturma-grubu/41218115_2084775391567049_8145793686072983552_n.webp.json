@@ -1,0 +1,37 @@
+{
+  "file": "41218115_2084775391567049_8145793686072983552_n.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Yatay çıtalı ahşap çiçeklik",
+    "en": "Horizontal slat wooden planter box"
+  },
+  "alt": {
+    "tr": "Kiremit tonunda vernikli, yatay çıtalı dikdörtgen ahşap çiçeklik; içinde yeşil yapraklı bir bitki, zemin gri beton parke",
+    "en": "Rectangular wooden planter with horizontal slats in a warm orange-brown stain, holding a leafy green shrub on grey paving"
+  },
+  "caption": {
+    "tr": "Yatay çıtalarla çakılmış, köşeleri kalın dikmelerle sabitlenmiş dikdörtgen çiçeklik. Sıcak bal rengi koruyucu ile boyanmış, taş parke zeminde duruyor.",
+    "en": "A rectangular planter built from horizontal slats with thick corner posts, finished in a warm honey-brown stain and set on a stone paved floor."
+  },
+  "seoFilename": "yatay-citali-ahsap-ciceklik",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras",
+      "dış mekan"
+    ],
+    "finish": [
+      "vernik",
+      "ahşap koruyucu",
+      "bal rengi"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

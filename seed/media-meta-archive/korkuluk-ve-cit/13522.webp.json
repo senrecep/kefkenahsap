@@ -1,0 +1,35 @@
+{
+  "source": "Korkuluk ve Cit/13522.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Taş duvar üstünde kahverengi ahşap korkuluk",
+    "en": "Brown timber railing on a stone wall"
+  },
+  "alt": {
+    "tr": "Taş kaplı istinat duvarının üstünde ve yanındaki merdivende devam eden kahverengi tonlu ahşap korkuluk",
+    "en": "Brown toned timber railing along a stone clad retaining wall, continuing down the steps beside it"
+  },
+  "caption": {
+    "tr": "Dikey çıtalı korkuluğun aralarına çapraz desenli paneller yerleştirilmiş. Korkuluk duvarın ucundaki ahşap merdivenden aşağı iniyor.",
+    "en": "Cross-pattern panels are set between the vertical balusters, and the railing runs down the timber steps at the end of the wall."
+  },
+  "seoFilename": "tas-duvar-ustunde-kahverengi-ahsap-korkuluk",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekân"
+    ],
+    "finish": [
+      "kahverengi ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

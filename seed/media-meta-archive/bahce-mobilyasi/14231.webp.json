@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/14231.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yuvarlak koyu ahşap masa ve tepsi tabla",
+    "en": "Round dark timber table and tray top"
+  },
+  "alt": {
+    "tr": "Panjurlu kapının önünde, yuvarlak koyu ahşap masa ile yanında duran çıtalı tepsi tabla",
+    "en": "Round dark timber table in front of a shuttered door, with a slatted tray top beside it"
+  },
+  "caption": {
+    "tr": "Masanın tablası yuvarlak ve koyu tonda. Yanındaki katlanır tepsi tabla çıtalı.",
+    "en": "The tabletop is round and dark-toned. The folding tray top beside it is slatted."
+  },
+  "seoFilename": "yuvarlak-koyu-ahsap-masa-katlanir-tepsi-tabla",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

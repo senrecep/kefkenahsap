@@ -1,0 +1,40 @@
+{
+  "source": "Ahsap Yapilar/2236.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yeşil shingle çatılı ahşap yapı ve çıtalı bölme duvar",
+    "en": "Timber structure with a green shingle roof and a slatted screen wall"
+  },
+  "alt": {
+    "tr": "Yeşil shingle çatılı ahşap yapı, önünde yeni çakılmış deck zemin, arkada koyu renkli çıtalı bölme",
+    "en": "Timber structure with a green shingle roof, a newly laid deck in front and a dark slatted screen behind"
+  },
+  "caption": {
+    "tr": "Çatı kirişleri açıkta duruyor, deck tahtaları henüz temiz. Çıtalı duvar alanı bölüyor.",
+    "en": "The roof beams are left exposed and the deck boards are still clean. The slatted wall divides the space."
+  },
+  "seoFilename": "yesil-shingle-catili-yapi-citali-bolme",
+  "tags": {
+    "type": [
+      "kamelya",
+      "deck",
+      "separatör"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı",
+      "ticari mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

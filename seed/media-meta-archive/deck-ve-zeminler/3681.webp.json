@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/3681.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yarısı kaplı platform, yarısı kiriş iskeleti",
+    "en": "Platform half covered, half bare joists"
+  },
+  "alt": {
+    "tr": "Bir yarısı deck tahtalarıyla kaplanmış, diğer yarısında çapraz ahşap kirişlerin açıkta durduğu platform",
+    "en": "Platform with one half covered in deck boards and the other half showing crossing timber joists"
+  },
+  "caption": {
+    "tr": "Kaplanan bölümün altında ayaklar ve kenar tahtaları görülüyor. Arkada çit ve bahçe duvarı yer alıyor.",
+    "en": "Legs and edge boards show beneath the covered part. A fence and a garden wall stand behind."
+  },
+  "seoFilename": "yarisi-kapli-platform-ve-acikta-kalan-kiris-iskeleti",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

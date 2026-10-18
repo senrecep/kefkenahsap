@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/9173.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Duvara yaslı dönüşlü merdiven, yerde artık parçalar",
+    "en": "Wall-side stairs with a turn, offcuts on the ground"
+  },
+  "alt": {
+    "tr": "Duvara yaslı, dönüşlü ahşap merdiven ve üstte çaprazlı korkuluklu sahanlık; yerde kereste artıkları",
+    "en": "Timber stairs with a turn against a wall, with a landing and cross-braced railing at the top and timber offcuts on the ground"
+  },
+  "caption": {
+    "tr": "Merdiven duvara yaslanarak yükseliyor ve üstte bir sahanlığa varıyor. Altta kereste artıkları bırakılmış.",
+    "en": "The stairs rise against the wall and reach a landing at the top. Timber offcuts are left on the ground below."
+  },
+  "seoFilename": "duvara-yasli-donuslu-ahsap-merdiven-yerde-artik-parcalar",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

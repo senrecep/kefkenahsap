@@ -1,0 +1,40 @@
+{
+  "source": "Deck ve Zeminler/8161.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz kenarında kızıl tonlu deck",
+    "en": "Reddish deck along the pool edge"
+  },
+  "alt": {
+    "tr": "Havuzun yanında uzanan kızıl kahverengi deck, solda çim, arkada bahçe mobilyaları ve ev",
+    "en": "Reddish-brown deck along a pool with lawn on the left and garden furniture and a house behind"
+  },
+  "caption": {
+    "tr": "Deck sıcak kızıl bir tonda. Havuz kenarı boyunca düz bir şerit halinde uzanıyor.",
+    "en": "The deck has a warm reddish tone and runs in a straight band along the pool."
+  },
+  "seoFilename": "kizil-tonlu-deck-havuz-kenari",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "havuz kenarı",
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

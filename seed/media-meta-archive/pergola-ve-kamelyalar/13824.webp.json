@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/13824.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Bahçe yolu kenarında çıtalı korkuluklu ahşap pergola",
+    "en": "Timber pergola with a slatted rail beside a garden path"
+  },
+  "alt": {
+    "tr": "Bahçe yolunun kenarında yükseltilmiş platform üzerinde çıtalı korkuluklu ahşap pergola, aşağıda çalılar",
+    "en": "Timber pergola with a slatted rail on a raised platform beside a garden path, with shrubs below"
+  },
+  "caption": {
+    "tr": "Pergola yol boyunca uzanan platformun üzerinde duruyor. Yol kenarında yeşil bir tutamak bulunuyor.",
+    "en": "The pergola stands on a platform running along the path. A green handrail lines the edge of the path."
+  },
+  "seoFilename": "bahce-yolu-kenarinda-citali-korkuluklu-pergola",
+  "tags": {
+    "type": [
+      "pergola",
+      "korkuluk"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

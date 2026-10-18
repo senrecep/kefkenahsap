@@ -1,0 +1,38 @@
+{
+  "source": "Kopru ve Iskele/820.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kıyı şevinde kademeli kiriş çerçevesi, suya doğru",
+    "en": "Stepped joist frame down the bank towards the water"
+  },
+  "alt": {
+    "tr": "Taş duvarın önünde, göle doğru basamak basamak inen kazılmış zeminde sıralı ahşap kirişler; çamurlu su kenarı",
+    "en": "Rows of timber beams on dug ground stepping down towards the lake in front of a stone wall, with a muddy waterside"
+  },
+  "caption": {
+    "tr": "Kirişler kıyı eğimini kademe kademe izliyor. Uzakta üst düzlükte masa gibi bir ahşap yapı duruyor.",
+    "en": "The beams follow the slope of the bank in steps. A table-like timber structure stands in the distance on the upper level."
+  },
+  "seoFilename": "kiyi-sevinde-kademeli-kiris-cercevesi-suya-dogru",
+  "tags": {
+    "type": [
+      "iskele",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

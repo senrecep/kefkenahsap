@@ -1,0 +1,37 @@
+{
+  "source": "Pergola ve Kamelyalar/4013.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvarlı yapı önünde kiriş, direk ve ahşap kapı",
+    "en": "Beams, posts and a timber door in front of a stone-walled building"
+  },
+  "alt": {
+    "tr": "Taş duvarlı bir yapının önünde vernikli kirişler, kalın direkler ve sağda ahşap bir kapı",
+    "en": "Varnished beams, thick posts and a timber door on the right in front of a stone-walled building"
+  },
+  "caption": {
+    "tr": "Çatı kirişleri çapraz biçimde kesişiyor, direkler taş duvara duvarın yakınında duruyor. Tahta tavan kirişlerin arasında uzanıyor.",
+    "en": "The roof beams cross diagonally and the posts stand a short distance from the stone wall. A board ceiling runs between the beams."
+  },
+  "seoFilename": "tas-duvarli-yapi-onunde-vernikli-kiris-direk-ve-ahsap-kapi",
+  "tags": {
+    "type": [
+      "sundurma / saçak / carport"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

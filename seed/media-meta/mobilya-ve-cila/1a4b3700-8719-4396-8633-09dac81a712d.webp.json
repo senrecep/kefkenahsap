@@ -1,0 +1,35 @@
+{
+  "file": "1a4b3700-8719-4396-8633-09dac81a712d.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Yuvarlak çekmeceli komodin",
+    "en": "Round bedside table with drawer"
+  },
+  "alt": {
+    "tr": "Köşede duran yuvarlak, koyu renkli çekmeceli komodin; üstünde yanan metal başucu lambası, altında siyah metal çerçeve",
+    "en": "Round dark bedside table with a single drawer in a corner, a lit metal lamp on top and a black metal frame below"
+  },
+  "caption": {
+    "tr": "Koyu cilalı, tek çekmeceli yuvarlak komodin. Siyah metal ayaklı gövde ve pirinç renkli küçük tutacağıyla parke zeminli odanın köşesinde duruyor.",
+    "en": "A round bedside table with a dark varnished finish and a single drawer. It stands in the corner of a room with a parquet floor, on a black metal frame with a small brass-colored knob."
+  },
+  "seoFilename": "yuvarlak-cekmeceli-komodin",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "yatak odası",
+      "iç mekan"
+    ],
+    "finish": [
+      "koyu cila",
+      "mat vernik"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

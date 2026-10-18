@@ -1,0 +1,35 @@
+{
+  "file": "WhatsApp-Image-2021-06-27-at-20.13.42-2-1.webp",
+  "category": "ireko-teak",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Çelik taşıyıcı üzerine ahşap deck zemin",
+    "en": "Wooden deck floor on a steel frame"
+  },
+  "alt": {
+    "tr": "Çelik taşıyıcı üzerine döşenmiş geniş ahşap deck zemin, arkada taş duvar ve yamaçta ağaçlar",
+    "en": "Wide wooden deck laid on a steel frame, with a stone wall and trees on the hillside behind"
+  },
+  "caption": {
+    "tr": "Yamaca bakan bahçede çelik iskelet üzerine döşediğimiz deck zemin. Tahtalar yan yana düz sıralanmış, kenar profili de aynı ahşapla kapatılmış.",
+    "en": "A deck floor we laid over a steel frame in a garden facing a slope. The boards run in straight rows and the edge is trimmed in the same wood."
+  },
+  "seoFilename": "celik-tasiyici-uzerine-ahsap-deck-zemin",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras",
+      "dış mekan"
+    ],
+    "finish": [
+      "doğal"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.72
+}

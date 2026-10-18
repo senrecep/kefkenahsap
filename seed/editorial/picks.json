@@ -1,0 +1,218 @@
+{
+  "_note": "#150 editorial picks, chosen by looking at the approved photos. Media by seedKey, projects by photo-cluster key, categories by TR slug, FAQ by TR category slug + index into its seed FAQ. Loader: scripts/seed/editorial.ts (fills only empty fields). The owner can change any of this in the admin.",
+  "hero": {
+    "seedKey": "deck-ve-zeminler/WhatsApp Image 2026-08-07 at 18.00.01 (3).webp",
+    "focal": {
+      "x": 50,
+      "y": 58
+    },
+    "reason": "Finished garden terrace deck with railing built around a mature tree: a complete outdoor job, sharp, landscape; the small watermark sits on the boards left of the tree, not on the subject."
+  },
+  "mobileHero": {
+    "seedKey": "deck-ve-zeminler/WhatsApp Image 2026-08-07 at 17.59.57 (3).webp",
+    "reason": "Portrait stepped iroko deck under a tree with a pergola behind: the deck, tree and pergola fill the upper half the phone shows clear of the text; only lawn and stepping stones sit under the H1. The watermark (mid-frame on every portrait) falls on the deck edge, not on the text."
+  },
+  "featuredProjects": [
+    {
+      "cluster": "3dcd0f485042",
+      "cover": "ireko-teak/WhatsApp-Image-2021-06-08-at-23.27.42-1.webp",
+      "reason": "Slatted pergola, wall cladding and outdoor kitchen on a terrace: the most finished, design-led outdoor job; wide cover shows the whole space."
+    },
+    {
+      "cluster": "2e2333d9f45d",
+      "cover": "pergola-ve-kamelyalar/251820_406039149440690_716310992_n.webp",
+      "reason": "Large terrace deck, cross railings, stair and roofed kamelya on a seaside slope: shows scale and several services in one job."
+    },
+    {
+      "cluster": "5468593ff723",
+      "cover": "ireko-teak/WhatsApp-Image-2021-06-08-at-23.27.45.webp",
+      "reason": "Curved iroko seating bench in a garden: bespoke workshop craft, clean recent photo."
+    },
+    {
+      "cluster": "5d3f916c5c27",
+      "cover": "merdivenler/24-3.webp",
+      "reason": "Cross-railed outdoor stair with a landing from the lawn to a villa's upper level: the whole stair in frame; a different photo from the Merdivenler cover."
+    },
+    {
+      "cluster": "251cab6282a8",
+      "cover": "deck-ve-zeminler/WhatsApp-Image-2021-06-27-at-20.13.45-3.webp",
+      "reason": "Garden deck at a villa's glass doors: the typical homeowner job, warm finished boards on lawn."
+    },
+    {
+      "cluster": "895d59681133",
+      "cover": "deck-ve-zeminler/WhatsApp Image 2026-08-07 at 17.59.55.webp",
+      "reason": "Oiled deck with metal railing at a garden edge: recent photo, completes a row of three on desktop."
+    }
+  ],
+  "categoryCovers": {
+    "sundurma-ve-ahsap-cati": {
+      "seedKey": "ahsap-yapilar/60.webp",
+      "reason": "#172: dark timber eaves and rafters on a white house, single watermark; the old cover (a cabin) belongs to Ahşap Ev ve Bungalov now. No live porch photo is rated good; this is the best ok one."
+    },
+    "deck-ve-zeminler": {
+      "seedKey": "deck-ve-zeminler/IMG_20180503_114721.jpg1_.webp",
+      "reason": "Ground-floor garden deck with flower boxes and seating, 2560 px wide, small watermark; replaces the stacked-watermark header."
+    },
+    "pergola-ve-kamelyalar": {
+      "seedKey": "pergola-ve-kamelyalar/12794668_1111882005523064_8626405051701727182_o-2.webp",
+      "reason": "#175: dark-stained pergola beams against a clear sky, 2048 px, one small watermark; the earlier pick (47-1) was rejected by the photo review."
+    },
+    "korkuluk-ve-cit": {
+      "seedKey": "korkuluk-ve-cit/WhatsApp Image 2026-08-07 at 17.59.57 (2).webp",
+      "reason": "White picket fence and gate on a stone wall in front of a house: the whole run reads in a 21:9 crop, 1600 px, only a faint single-line mark on the pickets (#156: replaces the picket fence whose two-line mark crossed the frame)."
+    },
+    "kopru-ve-iskele": {
+      "seedKey": "kopru-ve-iskele/img10.webp",
+      "reason": "Arched garden bridge with cross railings, faint watermark; replaces the stacked-watermark header."
+    },
+    "merdivenler": {
+      "seedKey": "merdivenler/33-1.webp",
+      "reason": "Complete cross-railed garden stair against a house wall; replaces the empty under-stair cavity."
+    },
+    "ciceklik-ve-oturma-grubu": {
+      "seedKey": "ciceklik-ve-oturma-grubu/IMG_20180601_103750.webp",
+      "reason": "Terrace planters around a deck with a Bosphorus view, 3264 px wide."
+    },
+    "kapi-dolap-ve-seperator": {
+      "seedKey": "kapi-dolap-ve-seperator/102.webp",
+      "reason": "Slatted outdoor storage cabinet, finished and front-on, 2560 px wide."
+    },
+    "ireko-teak": {
+      "seedKey": "ireko-teak/WhatsApp-Image-2021-06-08-at-23.27.44-3-1.webp",
+      "reason": "#175: curved iroko bench wrapping a garden terrace, 1600 px, rated good by the photo review; the earlier pick (20.13.46-2-1) was rejected by it."
+    },
+    "mobilya-ve-cila": {
+      "seedKey": "mobilya-ve-cila/86fb075e-3647-40dc-b134-6ddc810b04ae.webp",
+      "reason": "Finished office with a wooden desk and wall unit: tidy, lit, the furniture is the subject."
+    },
+    "boya-tamir-ve-bakim": {
+      "seedKey": "boya-tamir-ve-bakim/10426910_890180967693170_7525110688328373046_n-1.webp",
+      "reason": "Pressure-washing a deck in a garden: says maintenance at a glance, bright; replaces the dim close-up."
+    }
+  },
+  "faq": [
+    {
+      "category": "deck-ve-zeminler",
+      "index": 0,
+      "reason": "Pine or iroko: the first question most deck enquiries ask."
+    },
+    {
+      "category": "deck-ve-zeminler",
+      "index": 2,
+      "reason": "Deck over an existing concrete or tiled terrace: common for villas and flats."
+    },
+    {
+      "category": "pergola-ve-kamelyalar",
+      "index": 0,
+      "reason": "Pergola or kamelya: the second-biggest service, a real decision question."
+    },
+    {
+      "category": "deck-ve-zeminler",
+      "index": 3,
+      "reason": "How often to oil a deck: aftercare."
+    },
+    {
+      "category": "boya-tamir-ve-bakim",
+      "index": 0,
+      "reason": "Maintenance of decks built by another company: widens who can call."
+    },
+    {
+      "category": "sundurma-ve-ahsap-cati",
+      "index": 3,
+      "reason": "Who does the work: own workshop and own crew, true for every service."
+    }
+  ],
+  "swaps": {
+    "_note": "#156: covers re-picked for lighter watermarks (seedKeys). scripts/seed/editorial-swaps.ts replaces a cover only while the database still holds `from` (exact id); for a project `from: null` also needs the first gallery photo to still be `firstPhoto` (the hero the page computes). Guide keys are seed/content/guides file names, whose `cover` already names `to` for new databases. projectCategories: category links the photos clearly show (key: photo-cluster key), appended after the seeded category, never reordered, and only while a project still has exactly `from`.",
+    "guideCovers": {
+      "ahsap-turleri": {
+        "from": "ireko-teak/WhatsApp-Image-2021-06-27-at-20.13.47-2.webp",
+        "to": "deck-ve-zeminler/IMG_20180604_164216.jpg1_.webp",
+        "reason": "Whole iroko deck on a lawn showing the hardwood's natural colour range, 1600 px; one faint single-line mark on the boards instead of the doubled mark across the centre. A ladder and a cable stay at the frame edges."
+      },
+      "havuz-kenari-deck": {
+        "from": "deck-ve-zeminler/17.webp",
+        "to": "deck-ve-zeminler/10-1.webp",
+        "reason": "Pool with a deck around it, seating platform, loungers and walkway: the whole poolside job; a small single-line mark on the deck edge instead of the big two-line mark and camera date stamp. 1024 px wide."
+      },
+      "thermowood-nedir": {
+        "from": "deck-ve-zeminler/15.webp",
+        "to": "deck-ve-zeminler/9-2.webp",
+        "reason": "Finished raised garden deck with cross railings among pines, already 16:9; a small single-line mark on the railing instead of the big two-line mark over the boards. 1030 px wide."
+      },
+      "pergola-mi-kamelya-mi": {
+        "from": "pergola-ve-kamelyalar/IMG_20180408_071129.webp",
+        "to": "pergola-ve-kamelyalar/600585_406043102773628_2044150304_n.webp",
+        "reason": "Hip-roofed seaside kamelya from inside: rafters, slatted roof and cross railings, 2000 px; a single-line mark on one roof beam instead of the two-line mark over the kamelya."
+      }
+    },
+    "categoryCovers": {
+      "korkuluk-ve-cit": {
+        "from": "korkuluk-ve-cit/img7-1.webp",
+        "to": "korkuluk-ve-cit/WhatsApp Image 2026-08-07 at 17.59.57 (2).webp",
+        "reason": "See categoryCovers.korkuluk-ve-cit."
+      },
+      "sundurma-ve-ahsap-cati": {
+        "from": "ahsap-yapilar/55-1.webp",
+        "to": "ahsap-yapilar/60.webp",
+        "reason": "#172: see categoryCovers.sundurma-ve-ahsap-cati. Run after categories-rename.ts (found by the new TR slug)."
+      },
+      "pergola-ve-kamelyalar": {
+        "from": "pergola-ve-kamelyalar/47-1.webp",
+        "to": "pergola-ve-kamelyalar/12794668_1111882005523064_8626405051701727182_o-2.webp",
+        "reason": "#175: see categoryCovers.pergola-ve-kamelyalar."
+      },
+      "ireko-teak": {
+        "from": "ireko-teak/WhatsApp-Image-2021-06-27-at-20.13.46-2-1.webp",
+        "to": "ireko-teak/WhatsApp-Image-2021-06-08-at-23.27.44-3-1.webp",
+        "reason": "#175: see categoryCovers.ireko-teak."
+      }
+    },
+    "projectCovers": {
+      "dea60c169453": {
+        "from": null,
+        "firstPhoto": "kopru-ve-iskele/1472755_890180847693182_3594639781431809733_n.webp",
+        "to": "kopru-ve-iskele/img11.webp",
+        "reason": "Su kenarında ahşap yürüme yolu: every photo of this job carries a large mark. This one is the sharpest (2048 px vs an upscaled 960 px). Its two-line mark sits on the side rail and the bank, not doubled across the walkway like the current first photo's."
+      }
+    }
+  },
+  "projectCategories": {
+    "3dcd0f485042": {
+      "from": [
+        "ireko-teak"
+      ],
+      "add": [
+        "pergola-ve-kamelyalar"
+      ],
+      "reason": "Terasta pergola, çıtalı duvar ve dış mutfak: a slatted timber pergola roof is the subject of most of its photos, including the cover."
+    },
+    "2e2333d9f45d": {
+      "from": [
+        "pergola-ve-kamelyalar"
+      ],
+      "add": [
+        "korkuluk-ve-cit"
+      ],
+      "reason": "Ahşap teras, korkuluk ve çatılı kamelya: cross railings run around the whole terrace in its cover and second photo. The short stair is secondary, so no Merdivenler link."
+    },
+    "5d3f916c5c27": {
+      "from": [
+        "merdivenler"
+      ],
+      "add": [
+        "korkuluk-ve-cit"
+      ],
+      "reason": "Çapraz korkuluklu ahşap dış merdiven: the cross-pattern balustrade on the stair and landing is half the job in every photo."
+    },
+    "dea60c169453": {
+      "from": [
+        "kopru-ve-iskele"
+      ],
+      "add": [
+        "korkuluk-ve-cit"
+      ],
+      "reason": "Su kenarında ahşap yürüme yolu: three-rail timber railings line both sides of the walkway in all three photos."
+    }
+  }
+}

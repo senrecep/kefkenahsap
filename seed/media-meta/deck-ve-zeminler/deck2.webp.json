@@ -1,0 +1,35 @@
+{
+  "file": "deck2.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede ıslak ahşap deck ve yükseltilmiş ahşap bitki yatakları",
+    "en": "Wet wooden deck and raised wooden planter beds in a garden"
+  },
+  "alt": {
+    "tr": "Bahçede ıslak kırmızımsı ahşap deck, yanında ahşap yükseltilmiş bitki yatakları, taş basamak plakaları ve yeşil telli çit",
+    "en": "Wet reddish wooden deck in a garden with raised wooden planter beds, stepping stones and a green wire fence"
+  },
+  "caption": {
+    "tr": "Bahçe zemininde ahşap deck, iki yanda ahşap yükseltilmiş yatak ve ortada taş plakalı geçit.",
+    "en": "A wooden deck at the garden edge, with raised wooden beds on both sides and a stepping-stone path between them."
+  },
+  "seoFilename": "bahce-ahsap-deck-yukseltilmis-bitki-yatagi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "site bahçesi",
+      "açık hava"
+    ],
+    "finish": [
+      "vernikli"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

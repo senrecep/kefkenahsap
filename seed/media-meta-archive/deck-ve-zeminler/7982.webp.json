@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/7982.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuz kenarında deck altyapısı ve dikmeler",
+    "en": "Pool-side deck substructure with posts"
+  },
+  "alt": {
+    "tr": "Havuz kenarında emprenyeli çam dikmeler ve taşıyıcı kirişler, önde döşenmiş deck tahtaları",
+    "en": "Pressure-treated pine posts and support beams by a pool, with laid deck boards in the foreground"
+  },
+  "caption": {
+    "tr": "Emprenyeli çam dikmeler ve kirişler yerine oturtulmuş, deck tahtaları ön kısımda döşenmeye başlanmış.",
+    "en": "The pressure-treated pine posts and beams are in place and the deck boards are being laid at the front."
+  },
+  "seoFilename": "havuz-kenari-deck-altyapisi-dikmeler",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

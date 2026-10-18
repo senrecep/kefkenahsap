@@ -1,0 +1,41 @@
+{
+  "source": "Kopru ve Iskele/8042.webp",
+  "category": "kopru-ve-iskele",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuzu aşan korkuluklu köprü, önde deck şeridi",
+    "en": "Railed bridge across the pool with a deck strip in front"
+  },
+  "alt": {
+    "tr": "Su dolu havuzun üstünde korkuluklu ahşap köprü; önde deck şeridi, arkada bina ve ağaçlar, köprü ayakları çapraz",
+    "en": "Railed timber bridge across a water-filled pool, deck strip in front, a building and trees behind and diagonal bridge legs"
+  },
+  "caption": {
+    "tr": "Köprü uzun bir açıklığı korkuluklarla geçiyor. Çapraz ayaklar köprüyü havuzun kenarına yaslıyor.",
+    "en": "The bridge crosses a long opening with railings on both sides. Diagonal legs brace the bridge against the pool edge."
+  },
+  "seoFilename": "havuzu-asan-korkuluklu-kopru-onde-deck-seridi",
+  "tags": {
+    "type": [
+      "köprü",
+      "korkuluk",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

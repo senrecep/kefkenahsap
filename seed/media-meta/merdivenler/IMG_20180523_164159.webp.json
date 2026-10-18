@@ -1,0 +1,37 @@
+{
+  "file": "IMG_20180523_164159.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ahşap kulübenin çimento şaplı zemini",
+    "en": "Cement screed floor inside a wooden shed"
+  },
+  "alt": {
+    "tr": "Çimento şapı dökülmüş ahşap kulübe zemini, arkada lambri kaplı duvar ve önünde çim zemin",
+    "en": "Wooden shed interior with a smooth cement screed floor, paneled back wall and grass in front"
+  },
+  "caption": {
+    "tr": "Ahşap kulübenin iç zemini düz çimento şapla kaplandı. Duvarlar lambri kaplama, dışarıda çimen var.",
+    "en": "The inside floor of the wooden shed has been finished with a flat cement screed. The walls are clad in tongue-and-groove boards, with lawn outside."
+  },
+  "seoFilename": "ahsap-kulube-cimento-sap-zemin",
+  "tags": {
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "bahçe",
+      "dış mekan"
+    ],
+    "finish": [
+      "doğal"
+    ],
+    "stage": [
+      "process",
+      "detail"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.8
+}

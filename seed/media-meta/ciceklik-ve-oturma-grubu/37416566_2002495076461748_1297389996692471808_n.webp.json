@@ -1,0 +1,36 @@
+{
+  "file": "37416566_2002495076461748_1297389996692471808_n.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Siyah çerçeveli ahşap çıtalı çift kanatlı bahçe kapısı",
+    "en": "Double garden gate with black frame and wooden slats"
+  },
+  "alt": {
+    "tr": "Taş kaplı iki sütun arasında, siyah metal çerçeveli, dikey ahşap çıtalı çift kanatlı bahçe kapısı",
+    "en": "Double garden gate with black metal frame and vertical wooden slats between two stone-clad pillars"
+  },
+  "caption": {
+    "tr": "İki taş sütunun arasına yerleştirilmiş çift kanatlı bahçe kapısı. Siyah metal çerçevenin içinde dikey ahşap çıtalar var, bal rengi vernik ahşabın damarını açıkta bırakıyor.",
+    "en": "A double-leaf garden gate set between two stone pillars. Vertical wooden slats sit inside a black metal frame, and the honey-toned finish leaves the wood grain visible."
+  },
+  "seoFilename": "siyah-cerceveli-ahsap-citali-bahce-kapisi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "giriş",
+      "dış mekan"
+    ],
+    "finish": [
+      "vernik",
+      "siyah metal çerçeve"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.9
+}

@@ -1,0 +1,19 @@
+{
+  "file": "WhatsApp-Image-2021-04-30-at-20.41.55-1.webp",
+  "category": "boya-tamir-ve-bakim",
+  "model": "claude-opus-5.5 (manual, session)",
+  "promptVersion": "tagImage@1",
+  "title": { "tr": "Bakımı yapılmış ahşap bahçe masası ve bank", "en": "Restored wooden garden table and bench" },
+  "alt": {
+    "tr": "Atölye zemininde yağlanıp parlatılmış, çıtalı ahşap bahçe masası ve önünde aynı tonda bank",
+    "en": "Slatted wooden garden table and matching bench, oiled and refinished, standing on a workshop floor"
+  },
+  "caption": {
+    "tr": "Zımparalanıp yeniden yağlanan çıtalı bahçe masası ve bankı, teslimden önce atölyede.",
+    "en": "A slatted garden table and bench after sanding and re-oiling, in the workshop before delivery."
+  },
+  "seoFilename": "ahsap-bahce-masasi-ve-bank-bakimi",
+  "tags": { "wood": [], "setting": ["atölye", "bahçe mobilyası"], "finish": ["yağlı", "doğal ton"], "stage": ["after"] },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

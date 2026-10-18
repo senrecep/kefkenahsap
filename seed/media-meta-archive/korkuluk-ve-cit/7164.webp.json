@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/7164.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çapraz kirişli cephe, balkon korkuluğu ve çatı saçağı",
+    "en": "Diagonally framed facade, balcony railing and roof eaves"
+  },
+  "alt": {
+    "tr": "Mavi gökyüzü altında, çapraz ahşap kirişli cephe; küçük pencereler, balkon korkuluğu ve geniş çatı saçağı",
+    "en": "Under a blue sky, a facade with diagonal timber framing, small windows, a balcony railing and wide roof eaves"
+  },
+  "caption": {
+    "tr": "Cephedeki kirişler X ve eğik hatlarla pencereleri çerçeveliyor. Balkon korkuluğu aynı çapraz desenle yapılmış.",
+    "en": "The framing on the facade surrounds the windows with X and slanted lines. The balcony railing is made with the same crossed pattern."
+  },
+  "seoFilename": "capraz-kirisli-cephe-balkon-korkulugu-cati-sacagi",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

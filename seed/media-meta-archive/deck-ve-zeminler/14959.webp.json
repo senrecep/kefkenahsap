@@ -1,0 +1,35 @@
+{
+  "source": "Deck ve Zeminler/14959.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Toprak zeminde alçak ahşap platform",
+    "en": "Low timber platform on bare ground"
+  },
+  "alt": {
+    "tr": "Çam ağaçları ve çimen kenarındaki toprak zemine konmuş, aralıklı çıtalardan yapılmış alçak dikdörtgen koyu ahşap platform",
+    "en": "Low rectangular dark timber platform made of spaced slats, set on bare ground beside pines and lawn"
+  },
+  "caption": {
+    "tr": "Platform yerden bir kademe yüksekte duruyor ve kenarları kapalı. Etrafında dökülmüş yapraklar ve çakıl var.",
+    "en": "The platform stands one step above the ground and has closed sides. Fallen leaves and gravel lie around it."
+  },
+  "seoFilename": "topraga-oturan-alcak-dikdortgen-koyu-ahsap-platform",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.6
+}

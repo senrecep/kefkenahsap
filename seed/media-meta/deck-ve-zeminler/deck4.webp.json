@@ -1,0 +1,35 @@
+{
+  "file": "deck4.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçede yükseltilmiş ahşap deck zemin",
+    "en": "Raised wooden deck in a garden"
+  },
+  "alt": {
+    "tr": "Yeşilliğe bakan, çelik karkas üzerine döşenmiş, dar tahtalardan oluşan geniş ahşap deck yüzeyi ve kenar bandı",
+    "en": "Wide wooden deck of narrow boards laid on a steel frame, facing a green garden, with a trim board along the edge"
+  },
+  "caption": {
+    "tr": "Çelik taşıyıcı üzerine döşenen deck, uzun ve dar tahtalarla yapıldı. Kenar kısmı aynı ahşapla kaplandı, arka tarafta istinat duvarı görünüyor.",
+    "en": "A deck laid over a steel support frame using long, narrow boards. The edge is finished with the same timber, and a retaining wall is visible behind it."
+  },
+  "seoFilename": "celik-karkas-uzerine-ahsap-deck-zemin",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras",
+      "dış mekan"
+    ],
+    "finish": [
+      "doğal ahşap tonu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.82
+}

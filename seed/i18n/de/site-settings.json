@@ -1,0 +1,18 @@
+{
+  "phones": [
+    { "number": "0532 295 84 16", "label": "Mobil / WhatsApp" },
+    { "number": "0212 322 43 59", "label": "Festnetz" }
+  ],
+  "areaServed": [
+    { "kind": "city", "name": "Istanbul" },
+    { "kind": "country", "name": "Türkei" }
+  ],
+  "whatsappTemplates": {
+    "default": "Guten Tag, ich möchte mich über Ihre Holzarbeiten informieren.",
+    "category": "Guten Tag, ich möchte mich über „{category}“ informieren. ({url})",
+    "project": "Guten Tag, ich interessiere mich für eine ähnliche Arbeit wie Ihr Projekt „{project}“. ({url})",
+    "image": "Guten Tag, ich interessiere mich für eine ähnliche Arbeit wie auf diesem Foto: {url}",
+    "contact": "Guten Tag, ich möchte ein Angebot anfordern."
+  },
+  "defaultDescription": "Kefken Ahşap Dekorasyon: In unserer Werkstatt in Arnavutköy, Istanbul, fertigen und montieren wir Holzterrassen, Pergolen, Gartenpavillons, Geländer, Treppen und weitere Holzarbeiten für den Außenbereich. Pflege und Reparatur übernehmen wir ebenfalls."
+}

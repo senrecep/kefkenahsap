@@ -1,0 +1,38 @@
+{
+  "source": "Ireko-Teak/13222.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beyaz kolon yanında ahşap bank, sehpa ve yatırılmış ahşap panel",
+    "en": "Timber bench, small table and a leaning timber panel by a white column"
+  },
+  "alt": {
+    "tr": "Taş kaplı sütunlu bir terasta, beyaz kolonun yanında ahşap bank ve küçük bir sehpa duruyor",
+    "en": "On a terrace with stone-clad columns, a timber bench and a small table beside a white column"
+  },
+  "caption": {
+    "tr": "Mobilyalar teras sütunlarının arasında, taş zeminde bir arada duruyor. Yere yaslanan panel henüz yerine takılmamış görünüyor.",
+    "en": "The furniture stands together between the terrace columns on stone paving. The panel leaning on the floor looks not yet fitted."
+  },
+  "seoFilename": "beyaz-kolon-yaninda-ahsap-bank-sehpa-ve-yatirilmis-panel-tas",
+  "tags": {
+    "type": [
+      "bank",
+      "sehpa"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

@@ -1,0 +1,4 @@
+iroko.webp: the top rail of the oiled iroko cabinet frame in "İroko deck zemin, ahşap dolap kapağı" (iroko-deck-zemin-ahsap-dolap-kapagi.webp, #156)
+cam.webp: the front fascia board of media 1307 "Bahçede emprenyeli çam deck zemin" (bahce-emprenyeli-cam-deck-zemin.webp)
+Both: one board each from Kefken Ahşap job photos in the media library, levelled and cropped by scripts/wood-textures.ts
+to 1024×128 (the plank's 8:1 face). Colours are the photos' own: no tint or grading. No drawn textures (DESIGN.md).

@@ -1,0 +1,36 @@
+{
+  "file": "img5-2.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe çiti ve çapraz kollu ahşap kapı",
+    "en": "Garden fence with wire mesh and cross-braced wooden gate"
+  },
+  "alt": {
+    "tr": "Çim alanı çevreleyen, yeşil tel örgü dolgulu ahşap bahçe çiti ve uzakta çapraz kollu küçük bir ahşap kapı",
+    "en": "Wooden garden fence with green wire mesh along a lawn, with a small cross-braced wooden gate in the distance"
+  },
+  "caption": {
+    "tr": "Çalı sırasının önünden geçen, tel örgü dolgulu ahşap bahçe çiti. Çitin ucunda çapraz kollu bir kapı var, önünde taş basamaklı yürüyüş yolu uzanıyor.",
+    "en": "A wooden garden fence with wire mesh infill runs in front of a row of shrubs. A cross-braced gate sits at the far end, with stepping stones leading toward it."
+  },
+  "seoFilename": "tel-orgulu-ahsap-bahce-citi-ve-kapi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "çim alan",
+      "site bahçesi"
+    ],
+    "finish": [
+      "doğal ton",
+      "tel örgü dolgu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

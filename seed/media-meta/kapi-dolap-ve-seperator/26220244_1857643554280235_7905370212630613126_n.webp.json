@@ -1,0 +1,36 @@
+{
+  "file": "26220244_1857643554280235_7905370212630613126_n.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ahşap kapıda paslanmaz sürgü ve tutamak",
+    "en": "Stainless latch and handle on a wooden door"
+  },
+  "alt": {
+    "tr": "Dikey ahşap tahtalı kapıda parlak metal sürgü ve altında paslanmaz tutamak, yakın çekim",
+    "en": "Close-up of a shiny metal latch and a stainless handle on a door made of vertical wooden boards"
+  },
+  "caption": {
+    "tr": "Dikey tahtalardan yapılmış kapıya vidalı, parlak metal sürgü ve kulp takıldı. Damarlı, açık tonlu ahşap yüzey ve çelik donanım yakın planda görünüyor.",
+    "en": "A door of vertical boards fitted with a screw-mounted shiny metal latch and handle. The grained, light-toned wood and the steel hardware are shown up close."
+  },
+  "seoFilename": "ahsap-kapi-surgu-tutamak-detay",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "kapı",
+      "dış mekan"
+    ],
+    "finish": [
+      "paslanmaz sürgü",
+      "metal tutamak"
+    ],
+    "stage": [
+      "detail",
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

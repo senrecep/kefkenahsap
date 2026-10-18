@@ -1,0 +1,39 @@
+{
+  "source": "Kapi Dolap ve Seperator/9309.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Uzun yatay tahtalı kasa, bir kapağı açık",
+    "en": "Long horizontal-board chest with one door open"
+  },
+  "alt": {
+    "tr": "Karo terasta duran uzun yatay tahtalı ahşap kasa; iki kapaktan biri açık, arkada tuğla duvar ve bank",
+    "en": "Long horizontal-board timber chest on a tiled terrace, one of two doors open, brick wall and bench behind"
+  },
+  "caption": {
+    "tr": "Kasa iki kapaklı, üstü düz bir kapakla kapanıyor. Açık kapaktan içindeki boşluk görünüyor.",
+    "en": "The chest has two doors and a flat lid. The open door shows the empty space inside."
+  },
+  "seoFilename": "uzun-yatay-tahtali-kasa-acik-kapak",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

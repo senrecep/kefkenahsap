@@ -1,0 +1,38 @@
+{
+  "source": "Deck ve Zeminler/13706.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimen ve basamak taşları önünde deck alt kirişleri",
+    "en": "Deck sub-joists beyond the lawn and stepping stones"
+  },
+  "alt": {
+    "tr": "Çimen ve basamak taşları önünde açık renkli deck alt kirişleri, arkada ağaçlar ve su",
+    "en": "Pale deck sub-joists beyond the lawn and stepping stones, with trees and water behind"
+  },
+  "caption": {
+    "tr": "İskelet bahçenin su kenarına yakın ucuna kurulmuş. Önündeki taşlar yürüyüş izini gösteriyor.",
+    "en": "The frame is set up at the end of the garden near the water. The stones in front show the walking line."
+  },
+  "seoFilename": "cimen-ve-basamak-taslari-onunde-deck-alt-kirisleri",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe",
+      "su kenarı"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

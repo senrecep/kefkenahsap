@@ -1,0 +1,38 @@
+{
+  "file": "60823172_2490831890961395_4779172571692138496_n.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "LED aydınlatmalı ahşap tabela panosu",
+    "en": "Wood sign panel with LED backlighting"
+  },
+  "alt": {
+    "tr": "Atölye tezgâhında duran, kenarlarından LED ışık veren yatay ahşap tabela panosu; üzerinde yeşil logo ve yazı var",
+    "en": "Horizontal wooden sign panel on a workshop bench, lit by LED strips along the edges, with a green logo and lettering"
+  },
+  "caption": {
+    "tr": "Atölyede hazırlanan, çerçeveli ve gizli LED şeritle aydınlatılan ahşap pano. Üzerinde yeşil bir logo ve yazı bulunuyor.",
+    "en": "A framed wooden panel built in our workshop and lit by hidden LED strips, with a green logo and lettering on its face."
+  },
+  "seoFilename": "led-aydinlatmali-ahsap-tabela-panosu",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "atölye",
+      "tezgâh",
+      "iç mekan"
+    ],
+    "finish": [
+      "LED aydınlatma",
+      "yanık görünümlü vernik",
+      "logo uygulaması"
+    ],
+    "stage": [
+      "finished",
+      "detail"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.72
+}

@@ -1,0 +1,36 @@
+{
+  "file": "47.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe terasında çapraz çıtalı ahşap merdiven korkuluğu",
+    "en": "Wooden stair railing with cross bracing on a garden deck"
+  },
+  "alt": {
+    "tr": "Ahşap teras güvertesinden bahçeye inen basamaklarda kalın direkli, çapraz çıtalı yeşilimsi ahşap korkuluk",
+    "en": "Greenish wooden stair railing with thick posts and cross bracing beside garden steps leading down from a timber deck"
+  },
+  "caption": {
+    "tr": "Ahşap teras güvertesinden bahçeye inen basamaklara yapılmış korkuluk. Kalın kare direkler, çapraz çıtalar ve üstte düz tutamak var; direk altları metal bağlantı plakasıyla sabitlenmiş.",
+    "en": "A railing built along the steps that lead from a timber deck down to the garden. It has thick square posts, cross braces and a flat top rail, with the post bases fixed by metal connector plates."
+  },
+  "seoFilename": "bahce-terasi-capraz-citali-ahsap-merdiven-korkulugu",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras",
+      "dış mekan",
+      "taş duvar"
+    ],
+    "finish": [
+      "yeşilimsi emprenye tonu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

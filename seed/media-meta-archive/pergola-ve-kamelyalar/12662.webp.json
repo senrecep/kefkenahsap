@@ -1,0 +1,37 @@
+{
+  "source": "Pergola ve Kamelyalar/12662.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Hasır çatılı küçük ahşap kamelya, çimenlik bahçe",
+    "en": "Small timber gazebo with a thatched roof on a lawn"
+  },
+  "alt": {
+    "tr": "Çimenlik bahçede çit önünde duran küçük, hasır çatılı ahşap kamelya ve iki basamak; çimde sararmış yapraklar",
+    "en": "Small timber gazebo with a thatched roof on a lawn in front of a hedge, with two steps and yellowed leaves on the grass"
+  },
+  "caption": {
+    "tr": "Dört direkli kamelyanın zemini ahşap, çatısı sazdan. Önünde iki basamak var.",
+    "en": "The four-post gazebo has a timber floor and a thatched roof. Two steps lead up to it."
+  },
+  "seoFilename": "hasir-catili-kucuk-ahsap-kamelya-cimenlik",
+  "tags": {
+    "type": [
+      "kamelya"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

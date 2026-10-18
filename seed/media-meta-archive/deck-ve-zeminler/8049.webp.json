@@ -1,0 +1,39 @@
+{
+  "source": "Kopru ve Iskele/8049.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Yuvarlak havuzcuğu çevreleyen deck ve küçük köprü",
+    "en": "Deck around a round pool with a small bridge"
+  },
+  "alt": {
+    "tr": "Yuvarlak bir havuzcuk ve kavisli sığ havuzun etrafını saran deck, arkada korkuluklu ahşap köprü, sol tarafta birkaç kişi",
+    "en": "Deck wrapping around a small round pool and a curved shallow pool"
+  },
+  "caption": {
+    "tr": "Deck iki havuzun çevresini tek parça gibi dolaşıyor. Arkada küçük köprü görünüyor.",
+    "en": "The deck runs around both pools as one piece. A small bridge is visible in the back."
+  },
+  "seoFilename": "yuvarlak-havuzcugu-cevreleyen-deck-kucuk-kopru",
+  "tags": {
+    "type": [
+      "deck",
+      "köprü"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "havuz kenarı",
+      "ticari mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

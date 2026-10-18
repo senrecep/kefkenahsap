@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/13280.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çakıl kenarında basamak gibi ilerleyen deck panelleri",
+    "en": "Deck panels stepping along a gravel edge"
+  },
+  "alt": {
+    "tr": "Çakıl dolgulu kenarda basamak şeklinde ilerleyen deck panelleri ve ahşap kenar kirişleri",
+    "en": "Deck panels stepping along a gravel-filled edge, with timber edge beams"
+  },
+  "caption": {
+    "tr": "Paneller kenar kirişine oturuyor ve eğri hatta uyacak biçimde kademeli duruyor. Çakıl yanda drenaj sağlıyor gibi görünüyor.",
+    "en": "The panels rest on the edge beam and step to follow the curved line. The gravel beside them looks to be giving drainage."
+  },
+  "seoFilename": "cakil-kenarinda-basamak-gibi-ilerleyen-deck-panelleri",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

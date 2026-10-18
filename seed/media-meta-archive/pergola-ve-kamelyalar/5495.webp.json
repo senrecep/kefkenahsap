@@ -1,0 +1,33 @@
+{
+  "source": "Pergola ve Kamelyalar/5495.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-opus-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-14",
+  "title": {
+    "tr": "Taş duvar üzerinde konsollu kamelya",
+    "en": "Gazebo cantilevered over a stone wall"
+  },
+  "alt": {
+    "tr": "Taş istinat duvarının üstünde ahşap payandalarla taşınan, çapraz korkuluklu, tek eğimli çatılı kamelya",
+    "en": "Gazebo with a mono-pitch roof and cross-braced railings, carried on timber braces above a stone retaining wall"
+  },
+  "caption": {
+    "tr": "Taş duvarın kenarına oturan kamelya, ahşap payandalarla dışa taşıyor. Arkasında ahşap bir kulübe görünüyor.",
+    "en": "The gazebo sits on the edge of a stone wall and projects outward on timber braces. A timber cabin stands behind it."
+  },
+  "seoFilename": "tas-duvar-uzerinde-konsollu-kamelya",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "taş duvar",
+      "dış mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

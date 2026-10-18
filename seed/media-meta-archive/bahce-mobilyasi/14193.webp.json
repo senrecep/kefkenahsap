@@ -1,0 +1,35 @@
+{
+  "source": "Ireko-Teak/14193.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölyede çıtalı ahşap kanepe iskeleti",
+    "en": "Slatted timber sofa frame in the workshop"
+  },
+  "alt": {
+    "tr": "Çıtalı oturaklı, kollu ve kızak ayaklı ahşap kanepe iskeleti, arkada atölye eşyaları",
+    "en": "Timber sofa frame with slatted seat, armrests and skid legs, workshop items behind"
+  },
+  "caption": {
+    "tr": "Kanepenin iskeleti işlenmiş, boyası ve minderi yok. Arkada atölyenin dolapları duruyor.",
+    "en": "The sofa frame is machined but has no finish or cushions yet. Workshop cabinets stand behind it."
+  },
+  "seoFilename": "atolyede-ahsap-koltuk-iskeleti-cikma-kollu",
+  "tags": {
+    "type": [
+      "oturma grubu"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

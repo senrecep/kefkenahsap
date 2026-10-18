@@ -1,0 +1,37 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/13390.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Atölyede beş uzun çiçeklik yan yana",
+    "en": "Five long planters side by side in the workshop"
+  },
+  "alt": {
+    "tr": "Atölye zemininde mavi naylon üzerinde yan yana dizilmiş beş uzun ahşap çiçeklik",
+    "en": "Five long timber planters lined up side by side on blue plastic on the workshop floor"
+  },
+  "caption": {
+    "tr": "Çiçeklikler ayaklı ve alçak, içleri siyah astarlı. Arkada beton duvar var.",
+    "en": "The planters are low and stand on short feet, with black liners. A concrete wall is behind."
+  },
+  "seoFilename": "atolye-zemininde-mavi-naylon-uzerinde-bes-adet-uzun-ahsap",
+  "tags": {
+    "type": [
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

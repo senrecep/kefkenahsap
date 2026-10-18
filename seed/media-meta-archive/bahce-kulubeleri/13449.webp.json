@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/13449.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Koyu vernikli kulübenin yan görünümü",
+    "en": "Side view of a dark varnished dog house"
+  },
+  "alt": {
+    "tr": "Yatay kaplamalı koyu vernikli köpek kulübesinin yeşil shingle çatılı yan yüzü",
+    "en": "The side of a dark varnished dog house with horizontal cladding and a green shingle roof"
+  },
+  "caption": {
+    "tr": "Yan yüzeyde yatay tahtalar sıkıca dizilmiş, çatı balık pulu desenli. Arkada atölyenin kereste rafı var.",
+    "en": "The horizontal boards on the side are tightly laid and the roof has a fish-scale pattern. The workshop's timber rack is behind."
+  },
+  "seoFilename": "yatay-kaplamali-koyu-vernikli-kulubenin-yesil-catili-yan",
+  "tags": {
+    "type": [
+      "köpek kulübesi"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

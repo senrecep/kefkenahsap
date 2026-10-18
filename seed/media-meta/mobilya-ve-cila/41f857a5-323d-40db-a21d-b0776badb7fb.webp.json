@@ -1,0 +1,35 @@
+{
+  "file": "41f857a5-323d-40db-a21d-b0776badb7fb.webp",
+  "category": "mobilya-ve-cila",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ahşap tablalı koyu renk alçak dolap",
+    "en": "Low dark cabinet with wooden top"
+  },
+  "alt": {
+    "tr": "Oturma odasında koyu renk çekmeceli alçak dolap, üstünde bal rengi ahşap tabla; yanında yuvarlak sehpa ve desenli perde var",
+    "en": "Low dark drawer cabinet with a honey-toned wooden top in a living room, beside a round coffee table and patterned curtain"
+  },
+  "caption": {
+    "tr": "Koyu boyalı gövde ve çekmeceli alçak dolap, üstte vernikli ahşap tabla ile oturma odasına yerleştirildi.",
+    "en": "A low cabinet with a dark painted body and drawers, topped with a varnished wooden surface, placed in a living room."
+  },
+  "seoFilename": "ahsap-tablali-koyu-alcak-dolap",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "oturma odası",
+      "iç mekan"
+    ],
+    "finish": [
+      "vernik",
+      "koyu boya"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

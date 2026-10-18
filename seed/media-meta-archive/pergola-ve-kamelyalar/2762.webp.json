@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/2762.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvar üzerinde yükseltilmiş çapraz korkuluklu kamelya, çatı yapımda",
+    "en": "Raised gazebo on a stone wall with an X-braced rail, roof under construction"
+  },
+  "alt": {
+    "tr": "Taş duvarın üzerinde yükseltilmiş, çapraz korkuluklu ahşap kamelya; çatı örtüsü yapım aşamasında, arkada palmiyeler",
+    "en": "Raised timber gazebo on a stone wall with an X-braced railing, the roof covering still being laid and palm trees behind"
+  },
+  "caption": {
+    "tr": "Kamelya taş istinat duvarının kenarına oturuyor, çatı kirişleri açıkta. Denize bakan beyaz evler uzakta kalıyor.",
+    "en": "The gazebo sits on the edge of the stone retaining wall with the roof rafters exposed. White houses facing the sea lie in the distance."
+  },
+  "seoFilename": "tas-duvar-uzerinde-yukseltilmis-kamelya-capraz-korkuluk",
+  "tags": {
+    "type": [
+      "kamelya",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

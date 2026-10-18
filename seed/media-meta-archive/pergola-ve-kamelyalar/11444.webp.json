@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/11444.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Şeffaf çatılı ahşap pergola kirişleri ve yan tarafta bank",
+    "en": "Pergola beams under a clear roof with a bench alongside"
+  },
+  "alt": {
+    "tr": "Şeffaf çatı örtüsü altında sıralanan ahşap pergola kirişleri, yanda ahşap bank ve çevrede çatılar",
+    "en": "Rows of timber pergola beams under a clear roof sheet, with a timber bench alongside and rooftops around"
+  },
+  "caption": {
+    "tr": "Kirişler aralıklı sıralanmış ve üstte şeffaf levha duruyor. Yan tarafta çıtalı bir bank var.",
+    "en": "The beams stand in spaced rows with a clear sheet on top. A slatted bench stands at the side."
+  },
+  "seoFilename": "seffaf-catili-ahsap-pergola-kirisleri-bank",
+  "tags": {
+    "type": [
+      "pergola",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

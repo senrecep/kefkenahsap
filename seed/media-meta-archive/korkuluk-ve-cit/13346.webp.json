@@ -1,0 +1,38 @@
+{
+  "source": "Korkuluk ve Cit/13346.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Dikey çıtalı panel ve turkuaz tezgâh arkası",
+    "en": "Vertical slat panel above a turquoise tiled counter"
+  },
+  "alt": {
+    "tr": "Dikey ahşap çıtalı panelin altında turkuaz balık pulu seramik, taş tezgâh ve çelik musluk",
+    "en": "Vertical timber slat panel above turquoise scale-pattern tiles, a stone counter and a steel tap"
+  },
+  "caption": {
+    "tr": "Ahşap çıtalar tezgâhın arkasında yukarı doğru uzanıyor. Alt kısımda seramik ve musluk görünüyor.",
+    "en": "Timber slats rise behind the counter. Tiles and a tap show along the bottom."
+  },
+  "seoFilename": "dikey-citali-panel-turkuaz-tezgah-arkasi",
+  "tags": {
+    "type": [
+      "kafes / paravan",
+      "dış mutfak / mangal alanı"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.4
+}

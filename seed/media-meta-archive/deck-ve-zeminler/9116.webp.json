@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/9116.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deck tahtası ucu ve damar deseni",
+    "en": "End of a deck board and its grain pattern"
+  },
+  "alt": {
+    "tr": "Turuncu tonlu deck tahtasının yakın çekimi, belirgin yıllık damarlar ve tahta ucunda küçük bir metal bağlantı",
+    "en": "Close-up of an orange-toned deck board with distinct growth-ring grain and a small metal fixing at the board end"
+  },
+  "caption": {
+    "tr": "Tahtanın damarı yüzeyde net okunuyor. Tahta uç kısmında metal bir parçayla sabitlenmiş.",
+    "en": "The grain is clearly readable on the surface. The board is fixed at its end with a small metal part."
+  },
+  "seoFilename": "deck-tahtasi-ucu-damar-deseni",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

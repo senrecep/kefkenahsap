@@ -1,0 +1,40 @@
+{
+  "source": "Merdivenler/9890.webp",
+  "category": "merdivenler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Basamaklar ve iki yanda çaprazlı korkuluk, üstten",
+    "en": "Steps with cross-braced railings on both sides, from above"
+  },
+  "alt": {
+    "tr": "Üstten bakışla düz basamaklar ve iki yanda çaprazlı korkuluk; yanda çimlik ve çiçekler",
+    "en": "Straight steps seen from above with cross-braced railings on both sides, with a lawn and flowers beside"
+  },
+  "caption": {
+    "tr": "Basamaklar iki çaprazlı korkuluğun arasında düz iniyor. Sağda çimlik ve pembe çiçekler görünüyor.",
+    "en": "The steps go straight down between the two cross-braced railings. A lawn and pink flowers show on the right."
+  },
+  "seoFilename": "ustten-bakisla-basamaklar-ve-iki-yanda-caprazli-korkuluk",
+  "tags": {
+    "type": [
+      "merdiven",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,39 @@
+{
+  "source": "Korkuluk ve Cit/459.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Toprak alan kenarında beton ayaklı ahşap çit",
+    "en": "Timber fence on concrete footings at the edge of a dirt area"
+  },
+  "alt": {
+    "tr": "Çamurlu toprak alanın kenarında beton ayaklara oturan yeşilimsi ahşap direkler ve eğik destekli yatay kirişler, arkada orman",
+    "en": "Greenish timber posts on concrete footings along a muddy plot with horizontal rails and angled props, a forest"
+  },
+  "caption": {
+    "tr": "Direkler yeni dikilmiş, yanlarda eğik destekler sabitleme için duruyor.",
+    "en": "The posts are freshly set, with angled props holding them in place."
+  },
+  "seoFilename": "toprak-alan-kenarinda-beton-ayakli-ahsap-cit-arkada-orman",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

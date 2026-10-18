@@ -15,9 +15,9 @@ User-visible copy is in Turkish. Code, identifiers, commits and tests are in Eng
 - **Never invent a claim.** Years of experience ("30 yıl"), project counts, prices, testimonials and certificates come only from the admin (siteSettings / collections). An empty field renders nothing.
 - **Don't add a feature outside the plan.** If something is needed, add it to the "Açık noktalar" section of `docs/PLAN.md` and ask.
 - Stack is fixed: bun, Next 16 App Router, Payload 3.x (the version pinned in the spike), Postgres 17, Tailwind 4, next-intl 4, Vercel AI SDK + OpenRouter, Motion / GSAP / OGL (lazy loaded only). Ask before adding a new dependency. Don't add a package for something a few lines can do.
-- Next 16: `proxy.ts` (not `middleware`), `revalidateTag(tag, 'max')`.
+- Next 16: `proxy.ts` (not `middleware`); the Payload revalidate hooks use `revalidateTag(tag, { expire: 0 })` (read-your-writes from route handlers, #192), elsewhere `revalidateTag(tag, 'max')`.
 - No hardcoded locales: always use `routing.locales` and Payload `localization`. Write CSS with logical properties (`ms-`/`me-`, `start`/`end`) — Arabic RTL comes later.
-- Media is served directly from the CDN (`media.kefkenahsap.com`), never through `/api/media/file`. Lead photos go only to the private bucket.
+- Media is served directly from the CDN (`cdn.kefkenahsap.com`), never through `/api/media/file`. Lead photos go only to a private disk volume, never the CDN bucket. No clean originals of watermarked uploads are kept (#204).
 - Performance budget: initial JS ≤150KB gz, Lighthouse mobile ≥95, CLS <0.05. Any heavy library goes behind a dynamic import.
 - Accessibility: WCAG 2.2 AA. Published images must have approved alt text. Admin tap targets are ≥48px.
 - Secrets come only from env. `.env*` is never committed.
@@ -49,7 +49,7 @@ Use the `oh-my-claudecode:tdd` workflow. One test, one implementation, small ste
 
 ## Error handling: tsentials
 
-Use [`tsentials`](https://github.com/senrecep/tsentials) (latest at plan time: v0.1.12). Install its skills once at the start of F0: `npx skills add senrecep/tsentials`. Use them for the correct API and import paths.
+Use [`tsentials`](https://github.com/senrecep/tsentials) (pinned: v1.0.0, see #134; 0.1.x → 1.0 behaviour changes: its `docs/BEHAVIOUR-CHANGES.md`). Install its skills once at the start of F0: `npx skills add senrecep/tsentials`. Use them for the correct API and import paths.
 
 - **Return `Result<T>` from domain and service functions.** Don't throw inside the domain. Every seam above returns `Result<T>` / `ResultAsync<T>`.
 - Create errors with `Err.*`. Codes are `Area.Reason`, e.g. `Lead.PhoneRequired`, `Legacy.UnknownMedia`, `AI.BudgetExceeded`, `Translate.SchemaMismatch`.
@@ -69,20 +69,25 @@ Use [`tsentials`](https://github.com/senrecep/tsentials) (latest at plan time: v
 
 ## AI content
 
-- Prompts live in `src/ai/prompts/` as TS modules with a version constant. Turkish rules are in `docs/AI-PROMPTS.md`: correct Turkish characters, apostrophe before suffixes on proper nouns, no translationese, no list of clichés ("eşsiz", "hayallerinizdeki"…), and no invented facts.
+- Prompts live in `src/ai/prompts/` as TS modules with a version constant. Turkish rules are in `docs/CONTENT-STYLE-TR.md` (prompt summary: `src/ai/prompts/turkish.ts`, workflow: `docs/AI-PROMPTS.md`): correct Turkish characters, apostrophe before suffixes on proper nouns, no translationese, no list of clichés ("eşsiz", "hayallerinizdeki"…), and no invented facts.
 - Nothing is published automatically. AI output always lands in a `pending`/draft state.
 - Seed metadata (568 images) is prepared locally with Claude and reviewed, then loaded as `approved`. Runtime `tagImage` is for new uploads only.
 
-## Commands (fill in during F0)
+## Commands
 
 ```bash
 bun install
-bun dev                      # Next + Payload (localhost:3000, /admin)
-bun test                     # vitest
-bun run test:e2e             # playwright
+cp ../../kefkenahsap.dev.env .env       # worktree; from the main checkout: cp ../kefkenahsap.dev.env .env (else cp .env.example .env)
+docker compose --profile local up -d    # postgres:5433 + S3 (RustFS :9000, console :9001), host networking
+bun dev                                 # Next + Payload (localhost:3000 → /tr, /admin)
+bun run test                            # vitest: unit (src/**/*.test.ts) + int (tests/int, needs postgres)
+bun run test:e2e                        # playwright (starts bun dev if not running)
 bun run typecheck && bun run lint
-docker compose --profile local up -d   # postgres + minio (+ umami)
+bun run check:generated                 # payload types + admin import map are committed and current (CI enforces it)
+bun run migrate:create <name>           # schema changes only via migrations (push is off)
 ```
+
+Agent skills are installed: `.claude/skills/payload` (Payload reference) and `.claude/skills/tsentials*`.
 
 ## Work order and GitHub flow
 
@@ -108,6 +113,9 @@ Phases come from the ultragoal ledger: F0 spike → F1 launch → F2 content and
   4. TDD commits use Conventional Commits and reference the issue (`feat(legacy): resolve WP size variants (#20)`).
   5. Open the PR against `development`. Put `Closes #<no>` and `Part of #<epic>` in the body, add the matching labels and milestone, and list the acceptance criteria as a checklist with evidence (test output, screenshots, Lighthouse).
   6. Merge only when CI is green and the `code-reviewer` / `verifier` review is clean (squash). Then remove the worktree.
+- PRs target `development`, so `Closes #n` does **not** auto-close issues (GitHub only does that on the default branch). After merge, close the issue manually with a link to the PR and run `scripts/github/status.sh <n> Done`.
+- Payload config changes need `bun run generate:types` + `bun run generate:importmap` (otherwise rich-text/admin components silently fail to render) and a migration.
+- Design detector: the impeccable hook is enabled in `.impeccable/config.json`; if no per-edit reminders appear, run `$HOME/.claude/skills/impeccable/scripts/impeccable detect --json <changed UI files>` once before opening a UI PR.
 - When the epic's last sub-issue closes, check the epic's acceptance criteria with evidence, close the epic, and run the ultragoal `checkpoint`.
 - `development` → `main` (production) happens at the end of the phase through a release PR. The F1 release is the launch issue.
 - New work that comes up is never done silently: open a new issue (link it to the right epic as a sub-issue) and write it into the plan.

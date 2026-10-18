@@ -1,0 +1,36 @@
+{
+  "file": "1505035_672567942787808_1477538339_n.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Deniz kenarı ahşap pergola ve platform imalatı",
+    "en": "Seaside wooden pergola and platform construction"
+  },
+  "alt": {
+    "tr": "Deniz kıyısında ahşap platform üzerine kurulan pergola ve gölgelik karkas iskeleti.",
+    "en": "Timber pergola and shade frame under construction on an oceanfront wooden platform."
+  },
+  "caption": {
+    "tr": "Kıyı şeridine kurduğumuz geniş ahşap teras platformu, korkuluklar ve pergola karkaslarının montaj aşaması. Dış mekana uygun emprenyeli çam kullanılmıştır.",
+    "en": "Installation stage of a seaside wooden deck platform with railings and pergola framework, built using pressure-treated pine."
+  },
+  "seoFilename": "deniz-kenari-ahsap-pergola-platform-kurulumu",
+  "tags": {
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "sahil",
+      "dış mekan"
+    ],
+    "finish": [
+      "emprenye"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

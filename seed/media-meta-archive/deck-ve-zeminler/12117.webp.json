@@ -1,0 +1,40 @@
+{
+  "source": "Deck ve Zeminler/12117.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Köşede ahşap bank bulunan işlenmemiş deck",
+    "en": "Untreated deck with a timber bench in the corner"
+  },
+  "alt": {
+    "tr": "Duvar kenarındaki köşede ahşap oturma bankı olan, açık renkli ve işlenmemiş deck zemini",
+    "en": "Pale untreated decking with a built-in timber seat in the corner against the wall"
+  },
+  "caption": {
+    "tr": "Bank deckin köşesine bitişik yapılmış ve arkasında yeşil bitkiler var. Tahtalar çapraz yönde ilerliyor.",
+    "en": "The bench is built against the corner of the deck with greenery behind it. The boards run diagonally."
+  },
+  "seoFilename": "kosede-ahsap-bank-islenmemis-deck",
+  "tags": {
+    "type": [
+      "deck",
+      "bank"
+    ],
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "before"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

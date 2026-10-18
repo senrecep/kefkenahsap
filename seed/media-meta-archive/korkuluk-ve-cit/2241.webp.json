@@ -1,0 +1,40 @@
+{
+  "source": "Korkuluk ve Cit/2241.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deniz kenarı deckinde çapraz geçmeli korkuluk",
+    "en": "Cross-jointed railing on a seaside deck"
+  },
+  "alt": {
+    "tr": "Kıyıdaki açık tonlu deck üzerinde, köşeyi dönen kalın çapraz geçmeli ahşap korkuluk, arkada koy ve beyaz evler",
+    "en": "Thick cross-jointed timber railing turning the corner of a light seaside deck, with a bay and white houses behind"
+  },
+  "caption": {
+    "tr": "Korkuluk köşede kalın direkle sağlamlaşıyor, çaprazlar iki kolu birleştiriyor.",
+    "en": "The railing is strengthened at the corner by a thick post, and the braces tie both arms together."
+  },
+  "seoFilename": "deniz-kenari-deckinde-capraz-gecmeli-korkuluk",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "deck"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "su kenarı"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

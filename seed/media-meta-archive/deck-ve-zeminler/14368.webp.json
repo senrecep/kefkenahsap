@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14368.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimen kenarında koyu deck ve bitkiler",
+    "en": "Dark deck edge beside lawn and plants"
+  },
+  "alt": {
+    "tr": "Yeşil bitkilerin önünde çimene kavuşan koyu deck kenarı; önde plastik bir kutu ve eşyalar duruyor",
+    "en": "Dark deck edge meeting the lawn in front of green plants, with a plastic box and other items in the foreground"
+  },
+  "caption": {
+    "tr": "Görüntü dağınık: deck sol kenarda küçük bir bölüm olarak görünüyor, öne çıkan şey eşyalar ve çimen.",
+    "en": "The frame is cluttered: the deck appears as a small section at the left edge, and the items and lawn stand out more."
+  },
+  "seoFilename": "cimen-kenarinda-koyu-deck-ve-bitkili-cit",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.55
+}

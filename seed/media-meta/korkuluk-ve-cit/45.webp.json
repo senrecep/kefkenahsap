@@ -1,0 +1,36 @@
+{
+  "file": "45.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Ahşap dolgulu demir çerçeveli sürgülü bahçe kapısı",
+    "en": "Sliding garden gate with wood panels in a black iron frame"
+  },
+  "alt": {
+    "tr": "Siyah demir çerçeveli, yatay ahşap panelli sürgülü kapı; arkada taş duvar, kıvrımlı demir süslemeli sütun ve yeşil tepe",
+    "en": "Sliding gate with horizontal wood panels in a black iron frame, beside a stone wall and a pillar with scrollwork"
+  },
+  "caption": {
+    "tr": "Siyah demir çerçevenin içine yatay ahşap panel dolgu yapılmış sürgülü kapı. Yanında taş duvar, üstünde kıvrımlı demir süsleme var.",
+    "en": "A sliding gate with horizontal wood panels set into a black iron frame, next to a stone wall and topped with scrolled ironwork."
+  },
+  "seoFilename": "ahsap-dolgulu-demir-surgulu-bahce-kapisi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "taş duvar"
+    ],
+    "finish": [
+      "vernikli",
+      "siyah demir çerçeve"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

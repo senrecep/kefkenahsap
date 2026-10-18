@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/13128.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Deck zeminde ahşap dolaplı dış mutfak tezgâhı",
+    "en": "Outdoor kitchen counter with timber cabinets on a deck"
+  },
+  "alt": {
+    "tr": "Ahşap deck zemin üzerinde, gömme cihazlı ahşap dolaplarla yapılmış dış mutfak tezgâhı",
+    "en": "Outdoor kitchen counter on a timber deck, built with timber cabinets and built-in appliances"
+  },
+  "caption": {
+    "tr": "Dolaplar bal rengi ahşap, tezgâh koyu gri. Cihazlar dolapların içine yerleştirilmiş, önünde deck zemin uzanıyor.",
+    "en": "The cabinets are honey-coloured timber and the worktop is dark grey. The appliances are fitted into the cabinets, with the deck in front."
+  },
+  "seoFilename": "deck-zeminde-ahsap-dolapli-dis-mutfak-tezgahi",
+  "tags": {
+    "type": [
+      "dış mutfak / mangal alanı"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.55
+}

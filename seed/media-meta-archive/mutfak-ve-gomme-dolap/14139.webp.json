@@ -1,0 +1,39 @@
+{
+  "source": "Ireko-Teak/14139.webp",
+  "category": "mutfak-ve-gomme-dolap",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Beton basamak yanında çift kanatlı ahşap dolap",
+    "en": "Double-door timber cabinet beside a concrete step"
+  },
+  "alt": {
+    "tr": "Beton basamağın yanında, küp taş zeminde çift kanatlı yatay panelli ahşap dolap",
+    "en": "A double-door horizontal-panel timber cabinet on cobblestone paving beside a concrete step"
+  },
+  "caption": {
+    "tr": "Dolabın iki kanadı yatay tahtalarla kaplı, aradaki ince birleşim çizgisi görünüyor. Yanında beton basamaklar var.",
+    "en": "The two leaves of the cabinet are clad in horizontal boards with the thin seam between them visible. Concrete steps lie alongside."
+  },
+  "seoFilename": "beton-basamak-yaninda-cift-kanatli-yatay-panelli-ahsap-dolap",
+  "tags": {
+    "type": [
+      "gömme dolap / gardırop",
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş",
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

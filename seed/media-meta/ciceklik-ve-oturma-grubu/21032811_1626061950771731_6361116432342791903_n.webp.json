@@ -1,0 +1,36 @@
+{
+  "file": "21032811_1626061950771731_6361116432342791903_n.webp",
+  "category": "ciceklik-ve-oturma-grubu",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Sekizgen ahşap çiçeklik",
+    "en": "Octagonal wooden planter"
+  },
+  "alt": {
+    "tr": "Dış mekanda taş zemin üzerinde duran, dikey tahta kaplı, kızıl kahve cilalı sekizgen büyük ahşap çiçeklik",
+    "en": "Large octagonal wooden planter with vertical slats and a red-brown stain, standing on a paved outdoor floor"
+  },
+  "caption": {
+    "tr": "Dikey tahta kaplamalı, kızıl kahve vernikli sekizgen çiçeklik. İçi su yalıtım membranıyla kaplanmış, üst ve alt kısmında çerçeve profili var.",
+    "en": "Octagonal planter clad in vertical boards with a red-brown stain. The inside is lined with a waterproofing membrane, with a trim frame along the top and bottom."
+  },
+  "seoFilename": "sekizgen-ahsap-ciceklik",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "teras"
+    ],
+    "finish": [
+      "vernik",
+      "kızıl kahve"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.9
+}

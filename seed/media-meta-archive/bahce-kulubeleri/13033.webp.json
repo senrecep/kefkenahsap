@@ -1,0 +1,37 @@
+{
+  "source": "Ahsap Yapilar/13033.webp",
+  "category": "bahce-kulubeleri",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Boyasız yatay kaplamalı köpek kulübesi, yandan",
+    "en": "Unpainted dog house with horizontal boards, side view"
+  },
+  "alt": {
+    "tr": "Boyasız ahşap yatay kaplamalı, yeşil çatılı köpek kulübesi; yan görünüm ve arkada atölye",
+    "en": "Dog house with unpainted horizontal timber cladding and a green roof, side view with the workshop behind"
+  },
+  "caption": {
+    "tr": "Yan duvarda yatay tahtaların birleşimi ve budak izleri görünüyor. Arkada merdiven ve raflar atölyenin içini gösteriyor.",
+    "en": "The joints of the horizontal boards and knots show on the side wall. A staircase and shelves behind show the inside of the workshop."
+  },
+  "seoFilename": "boyasiz-ahsap-yatay-kaplamali-yesil-catili-kopek-kulubesi",
+  "tags": {
+    "type": [
+      "köpek kulübesi"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,40 @@
+{
+  "source": "Deck ve Zeminler/14205.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çalılar yanında ilerleyen deck yolu",
+    "en": "Deck path running along a hedge"
+  },
+  "alt": {
+    "tr": "Sık çalı sırasının kenarında, çam gövdelerinin arasından uzanan açık renkli emprenyeli çam deck yolu",
+    "en": "Pale pressure-treated pine deck path stretching between pine trunks beside a dense row of shrubs"
+  },
+  "caption": {
+    "tr": "Dar bir şerit hâlinde ilerleyen deck, gövdelerin çevresinde boşluk bırakıyor. Yüzeyde tahta damarları ve budaklar seçiliyor.",
+    "en": "The deck runs as a narrow strip and leaves gaps around the trunks. Grain and knots are visible on the surface."
+  },
+  "seoFilename": "calilar-yaninda-ilerleyen-deck-yolu",
+  "tags": {
+    "type": [
+      "deck",
+      "yürüyüş yolu"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "orman / kır"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

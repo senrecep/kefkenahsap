@@ -1,0 +1,38 @@
+{
+  "source": "Pergola ve Kamelyalar/12189.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Taş duvarlı yuvarlak ahşap bank üzerinde pergola, çim ve beyaz çakıl",
+    "en": "Pergola over a round stone-walled bench with lawn and white pebbles"
+  },
+  "alt": {
+    "tr": "Bahçede taş duvarlı yuvarlak bank üzerinde ahşap pergola, çevrede çim, beyaz çakıl ve çit",
+    "en": "Timber pergola over a round stone-walled bench in a garden, with lawn, white pebbles and a hedge around"
+  },
+  "caption": {
+    "tr": "Pergola direkleri bankın üzerine basıyor. Arkada kesilmiş bir bitki çiti ve uzakta tarla görünüyor.",
+    "en": "The pergola posts rest on the bench. A trimmed hedge shows behind and fields lie in the distance."
+  },
+  "seoFilename": "tas-duvarli-yuvarlak-bank-ustunde-pergola-cim",
+  "tags": {
+    "type": [
+      "pergola",
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

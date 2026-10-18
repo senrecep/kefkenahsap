@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/13514.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Izgara paravanın alt kısmı ve siyah astarlı çiçeklik kutusu",
+    "en": "Lower part of the lattice screen and the black-lined planter box"
+  },
+  "alt": {
+    "tr": "Vernikli ahşap ızgara paravanın alt kısmı ve önündeki siyah astarlı çiçeklik kutusu yakından; atölye zemininde",
+    "en": "Close-up of the lower part of a varnished timber lattice screen and the black-lined planter box in front of it"
+  },
+  "caption": {
+    "tr": "Çiçeklik kutusunun içi siyah naylonla kaplı, toprak için hazır. Izgara çıtaları kutunun arka kenarına oturuyor.",
+    "en": "The inside of the planter box is lined in black sheeting, ready for soil. The lattice slats are fixed to the back edge of the box."
+  },
+  "seoFilename": "izgara-paravanin-alt-kismi-siyah-astarli-cicekli",
+  "tags": {
+    "type": [
+      "kafes / paravan",
+      "çiçeklik / saksı"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

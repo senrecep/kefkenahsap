@@ -1,0 +1,40 @@
+{
+  "source": "Pergola ve Kamelyalar/13483.webp",
+  "category": "pergola-ve-kamelyalar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Gri çatılı ahşap kamelya, çapraz korkuluk ve çevre duvarı",
+    "en": "Grey-roofed timber gazebo with X-braced rails and a boundary wall"
+  },
+  "alt": {
+    "tr": "Gri çatı kaplı ahşap kamelya, çapraz çıtalı korkuluk, arkada ev ve servi sırası boyunca çevre duvarı",
+    "en": "Timber gazebo with a grey roof covering and X-braced rails, with a house and a boundary wall lined with cypresses behind"
+  },
+  "caption": {
+    "tr": "Kamelya dört direkle taşınıyor, korkuluk her yüzde çaprazlanıyor. Çevresinde fidanlar ve toprak var.",
+    "en": "The gazebo is carried on four posts with crossed rails on every side. Saplings and soil surround it."
+  },
+  "seoFilename": "gri-catili-ahsap-kamelya-capraz-korkuluk-cevre-duvari",
+  "tags": {
+    "type": [
+      "kamelya",
+      "korkuluk"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

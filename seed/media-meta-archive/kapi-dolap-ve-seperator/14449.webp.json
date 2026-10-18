@@ -1,0 +1,37 @@
+{
+  "source": "Kapi Dolap ve Seperator/14449.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Z çaprazlı açık kapağı ve içinde mavi çerçeve olan dolap",
+    "en": "Cabinet with a Z-braced open door and a blue frame inside"
+  },
+  "alt": {
+    "tr": "Koyu ahşap dolabın Z çaprazlı kapak kanadı açık, içinde açık mavi boyalı bir çerçeve ve duvarda ampul",
+    "en": "Dark timber cabinet with its Z-braced door leaf open, showing a light blue painted frame inside and a light bulb on the wall"
+  },
+  "caption": {
+    "tr": "Kapak kanadının arkasında Z çapraz var, kapağı düz tutuyor. İçeride mavi bir çerçeve durmaktadır.",
+    "en": "A Z-brace on the back keeps the door flat. A blue frame stands inside."
+  },
+  "seoFilename": "z-capraz-acik-kapagi-icinde-mavi-cerceve-olan-dolap",
+  "tags": {
+    "type": [
+      "dış mekân dolabı / kasa (klima, sayaç, çöp)"
+    ],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.65
+}

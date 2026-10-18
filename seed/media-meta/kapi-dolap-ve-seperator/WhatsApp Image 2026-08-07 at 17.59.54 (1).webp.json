@@ -1,0 +1,37 @@
+{
+  "file": "WhatsApp Image 2026-08-07 at 17.59.54 (1).webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Taş duvar önünde ahşap depo dolabı",
+    "en": "Wooden storage cabinet against a stone wall"
+  },
+  "alt": {
+    "tr": "Taş duvar önünde, koyu kahverengi dikey kaplamalı, siyah menteşeli ahşap dolap kapakları ve altında taş blok sıra",
+    "en": "Dark brown vertical-plank wooden cabinet doors with black hinges set against a stone wall, above a row of stone blocks"
+  },
+  "caption": {
+    "tr": "Bahçede taş duvarın önüne yapılmış, siyah menteşeli, koyu cilalı dikey kaplamalı ahşap dolap kapakları.",
+    "en": "Wooden cabinet doors with black hinges and a dark stained vertical plank finish, built in front of a garden stone wall."
+  },
+  "seoFilename": "tas-duvar-onu-ahsap-depo-dolabi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "dış mekan",
+      "taş duvar"
+    ],
+    "finish": [
+      "koyu ceviz tonu",
+      "vernik",
+      "siyah menteşe"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

@@ -1,0 +1,40 @@
+{
+  "source": "Deck ve Zeminler/8160.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Havuzdan çime uzanan dar deck yolu",
+    "en": "Narrow deck strip leading from the pool to the lawn"
+  },
+  "alt": {
+    "tr": "Havuz merdiveninin yanından çimlere doğru daralan uzun deck yüzeyi, arkada ağaçlar ve evler",
+    "en": "Long deck surface narrowing from the pool ladder toward the lawn, with trees and houses behind"
+  },
+  "caption": {
+    "tr": "Tahtalar uzun yönde döşenmiş ve perspektifte daralıyor. Çim ile deck arasındaki kenar düz.",
+    "en": "The boards run lengthwise and narrow in perspective. The edge between lawn and deck is straight."
+  },
+  "seoFilename": "havuzdan-cime-uzanan-dar-deck-yolu",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [
+      "iroko"
+    ],
+    "setting": [
+      "havuz kenarı",
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

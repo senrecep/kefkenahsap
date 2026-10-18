@@ -1,0 +1,36 @@
+{
+  "file": "WhatsApp-Image-2021-04-30-at-20.32.57-1-1.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Bahçe ahşap çit montajı ve zımpara aşaması",
+    "en": "Garden wooden fence installation and sanding process"
+  },
+  "alt": {
+    "tr": "Çim bahçe kenarında uzanan sivri uçlu ahşap çit ve zeminde duran zımpara makinesi.",
+    "en": "Pointed wooden picket fence installed along a garden lawn with a sanding tool on the grass."
+  },
+  "caption": {
+    "tr": "Bahçe sınırını belirlemek amacıyla uygulanan dikey çıtalı ahşap bahçe çiti, montaj ve zımparalama aşamasında.",
+    "en": "Vertical slat wooden fence installed along the garden boundary, shown during assembly and surface sanding."
+  },
+  "seoFilename": "ahsap-bahce-citi-montaji",
+  "tags": {
+    "wood": [
+      "çam"
+    ],
+    "setting": [
+      "bahçe",
+      "dış mekan"
+    ],
+    "finish": [
+      "ham"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

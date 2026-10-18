@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/9126.webp",
+  "category": "lambri-ve-kaplama",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "İskele önünde yatay ahşap cephe kaplaması",
+    "en": "Horizontal timber facade cladding behind scaffolding"
+  },
+  "alt": {
+    "tr": "İskeleyle çevrili binada yatay tahtalı ahşap cephe kaplaması; ortada pencere hizasında koyu membran bant",
+    "en": "Horizontal timber facade cladding on a scaffolded building, with a dark membrane band across the window level"
+  },
+  "caption": {
+    "tr": "Cephede yatay tahtalar yükseliyor. Ortadaki pencere hizasında kaplama henüz yok, yerinde koyu membran görünüyor.",
+    "en": "The horizontal boards are rising up the facade. At window level the cladding is not on yet and the dark membrane shows."
+  },
+  "seoFilename": "iskele-onunde-yatay-ahsap-cephe-kaplama",
+  "tags": {
+    "type": [
+      "cephe kaplaması"
+    ],
+    "wood": [],
+    "setting": [],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

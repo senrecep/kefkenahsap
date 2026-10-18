@@ -1,0 +1,38 @@
+{
+  "source": "Ahsap Yapilar/14737.webp",
+  "category": "kapi-dolap-ve-seperator",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Sundurma altında açık duran yeşil panjurlu pencere",
+    "en": "Window with open green shutters under a porch roof"
+  },
+  "alt": {
+    "tr": "Beyaz sütunlu sundurma altında, açık duran yeşil panjur kanatlı pencere boşluğu ve önünde taş zemin",
+    "en": "Window opening with open green shutter leaves under a porch with a white column, with stone paving in front"
+  },
+  "caption": {
+    "tr": "Panjur kanatları pervazın iki yanında açık, Z çaprazları dışarıya bakıyor. Önünde taş zemin güneş alıyor.",
+    "en": "The shutter leaves stand open at both sides of the frame with the Z bracing facing out. Stone paving catches the sun in front."
+  },
+  "seoFilename": "sundurma-altinda-acik-duran-yesil-panjurlu-pencere",
+  "tags": {
+    "type": [
+      "pencere / panjur"
+    ],
+    "wood": [],
+    "setting": [
+      "giriş",
+      "bahçe"
+    ],
+    "finish": [
+      "boyalı"
+    ],
+    "stage": [
+      "after"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

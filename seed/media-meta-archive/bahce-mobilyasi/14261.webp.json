@@ -1,0 +1,38 @@
+{
+  "source": "Ireko-Teak/14261.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Koyu deck üzerinde uzun yemek masası",
+    "en": "Long dining table on a dark deck"
+  },
+  "alt": {
+    "tr": "Koyu renkli deck terasta uzun ahşap yemek masası, çevresinde hasır ve beyaz sandalyeler",
+    "en": "Long timber dining table on a dark decked terrace, surrounded by wicker and white chairs"
+  },
+  "caption": {
+    "tr": "Masanın tablası geniş kalaslardan oluşuyor. Çevresinde hasır örgülü ve beyaz sandalyeler var.",
+    "en": "The tabletop is made of wide boards. Wicker-woven and white chairs stand around it."
+  },
+  "seoFilename": "koyu-deck-uzerinde-uzun-ahsap-yemek-masasi",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı",
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

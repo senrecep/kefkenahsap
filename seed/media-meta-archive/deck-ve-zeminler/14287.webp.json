@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/14287.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimen ve palmiye yanında koyu deck",
+    "en": "Dark deck beside lawn and palm"
+  },
+  "alt": {
+    "tr": "Havuzun kenarında, çimen ve iri palmiye yaprakları arasında uzanan koyu kahverengi deck şeridi",
+    "en": "Dark brown deck strip along the pool edge between lawn and large palm fronds"
+  },
+  "caption": {
+    "tr": "Deck havuzun taş çerçevesini izliyor. Arkada taş kaplı duvar ve bir mangal alanı görünüyor.",
+    "en": "The deck follows the stone frame of the pool. A stone-clad wall and a barbecue area show in the background."
+  },
+  "seoFilename": "cimen-ve-palmiye-yaninda-koyu-havuz-kenari",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "yağ / koruyucu"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}

@@ -1,0 +1,38 @@
+{
+  "source": "Ciceklik ve Oturma Grubu/12365.webp",
+  "category": "mutfak-ve-gomme-dolap",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ahşap duvarda iki raf ve altında kapaklı dolap",
+    "en": "Two shelves on a timber wall with a cabinet beneath"
+  },
+  "alt": {
+    "tr": "Tahta kaplı duvarda siyah braketli iki raf ve altında siyah menteşeli kapaklı dolap, yakından",
+    "en": "Two shelves on black brackets on a board-clad wall and a cabinet with black-hinged doors beneath, seen close up"
+  },
+  "caption": {
+    "tr": "Raflar duvardaki yatay tahtaların üstüne siyah süslü braketlerle oturuyor. Dolabın kapaklarında siyah demir menteşeler var.",
+    "en": "The shelves sit on black decorative brackets over the horizontal boards of the wall. The cabinet doors have black iron hinges."
+  },
+  "seoFilename": "ahsap-duvarda-siyah-braketli-iki-raf-ve-altinda-kapakli",
+  "tags": {
+    "type": [
+      "raf / kitaplık",
+      "gömme dolap / gardırop"
+    ],
+    "wood": [],
+    "setting": [
+      "balkon"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

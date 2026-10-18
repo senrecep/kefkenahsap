@@ -1,0 +1,40 @@
+{
+  "source": "Korkuluk ve Cit/8887.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimliğe inen basamaklar ve çapraz korkuluk",
+    "en": "Steps down to a lawn with a cross-braced railing"
+  },
+  "alt": {
+    "tr": "Yeşil çimliğe inen ahşap basamakların iki yanında kalın direkli, çapraz çıtalı açık tonlu korkuluk",
+    "en": "Light cross-braced railing with thick posts on both sides of timber steps leading down to a green lawn"
+  },
+  "caption": {
+    "tr": "Üstten bakışta korkuluk basamakların iki yanını boydan boya çerçeveliyor.",
+    "en": "Seen from above, the railing frames both sides of the steps along their whole length."
+  },
+  "seoFilename": "cimlik-uzerine-inen-basamaklar-ve-capraz-citali-korkuluk",
+  "tags": {
+    "type": [
+      "korkuluk",
+      "merdiven"
+    ],
+    "wood": [
+      "emprenyeli çam"
+    ],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "doğal ton"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.8
+}

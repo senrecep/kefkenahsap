@@ -1,0 +1,37 @@
+{
+  "source": "Deck ve Zeminler/10128.webp",
+  "category": "deck-ve-zeminler",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Kare deck platformunun yan ve üst yüzeyi",
+    "en": "Side and top of a square deck platform"
+  },
+  "alt": {
+    "tr": "Havuz kenarındaki kare ahşap deck platformunun yan ve üst yüzeyi; yanında beton zemin ve beyaz kapak",
+    "en": "Side and top surface of a square timber deck platform beside a pool, with a concrete base and white cover next to it"
+  },
+  "caption": {
+    "tr": "Platformun kenar kirişi kalın, üst tahtalar vernikli. Beton zemin üzerinde bir kapak duruyor.",
+    "en": "The edge beam of the platform is thick and the top boards are varnished. A cover sits on the concrete base."
+  },
+  "seoFilename": "havuz-kenarindaki-kare-ahsap-deck-platformunun-yan-ve-ust",
+  "tags": {
+    "type": [
+      "deck"
+    ],
+    "wood": [],
+    "setting": [
+      "havuz kenarı"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

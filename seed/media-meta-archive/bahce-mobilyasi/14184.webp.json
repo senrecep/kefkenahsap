@@ -1,0 +1,36 @@
+{
+  "source": "Ireko-Teak/14184.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Metal çerçeveli, ahşap tablalı masa",
+    "en": "Table with a metal frame and timber top"
+  },
+  "alt": {
+    "tr": "Deck zeminli balkonda, ahşap çıtalı tablası ve gri metal çerçevesiyle masa",
+    "en": "Table with a slatted timber top and grey metal frame on a decked balcony"
+  },
+  "caption": {
+    "tr": "Masanın tablası ahşap çıtalardan, çerçevesi gri metalden. Yanında mavi bir örtü duruyor.",
+    "en": "The tabletop is made of timber slats and the frame is grey metal. A blue sheet lies beside it."
+  },
+  "seoFilename": "metal-cerceveli-ahsap-tablali-masa-deck-balkon",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "balkon",
+      "teras"
+    ],
+    "finish": [],
+    "stage": [
+      "process"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

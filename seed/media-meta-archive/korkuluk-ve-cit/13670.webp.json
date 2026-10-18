@@ -1,0 +1,37 @@
+{
+  "source": "Korkuluk ve Cit/13670.webp",
+  "category": "korkuluk-ve-cit",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Ahşap zeminde piket çit parçası",
+    "en": "Picket fence section on a boarded floor"
+  },
+  "alt": {
+    "tr": "Tahta zemin üzerinde duran, yatay iki çıta ile birleşen sivri uçlu çit parçası, arkada taş duvar",
+    "en": "Pointed picket fence section on a boarded floor, joined by two horizontal rails, with a stone wall behind"
+  },
+  "caption": {
+    "tr": "Çıtalar iki yatay kuşakla sabitlenmiş. Altındaki zemin de aynı bal tonunda.",
+    "en": "The pickets are fixed with two horizontal rails. The floor beneath has the same honey tone."
+  },
+  "seoFilename": "tahta-zeminde-piket-cit-parcasi",
+  "tags": {
+    "type": [
+      "çit"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.7
+}

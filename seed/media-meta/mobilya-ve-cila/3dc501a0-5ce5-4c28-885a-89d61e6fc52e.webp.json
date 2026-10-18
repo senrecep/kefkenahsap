@@ -1,0 +1,35 @@
+{
+  "file": "3dc501a0-5ce5-4c28-885a-89d61e6fc52e.webp",
+  "category": "mobilya-ve-cila",
+  "model": "google/gemini-3.8-flash",
+  "promptVersion": "tagImage@1",
+  "title": {
+    "tr": "Mermer tezgahlı lake banyo dolabı",
+    "en": "Lacquered bathroom vanity with marble countertop"
+  },
+  "alt": {
+    "tr": "Mermer tezgahlı, antrasit parlak banyo dolabı, çanak lavabo ve gizli aydınlatmalı ayna.",
+    "en": "Modern floating bathroom vanity with marble countertop, glossy dark cabinet, and backlit mirror."
+  },
+  "caption": {
+    "tr": "Özel ölçü üretilen asma banyo dolabı; koyu ton mermer tezgah, parlak lake kapaklar ve gizli aydınlatmalı ayna ünitesiyle tamamlandı.",
+    "en": "Custom floating bathroom vanity completed with a dark marble countertop, glossy lacquered finish, and a backlit mirror unit."
+  },
+  "seoFilename": "mermer-tezgahli-lake-banyo-dolabi",
+  "tags": {
+    "wood": [],
+    "setting": [
+      "banyo",
+      "iç mekan"
+    ],
+    "finish": [
+      "lake",
+      "parlak cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.95
+}

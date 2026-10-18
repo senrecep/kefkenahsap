@@ -1,0 +1,38 @@
+{
+  "source": "Ireko-Teak/13417.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Islak beton zeminde çok uzun ahşap bank, uçları çapraz kesilmiş",
+    "en": "Very long timber bench on wet concrete with mitred ends"
+  },
+  "alt": {
+    "tr": "Islak beton zemin üzerinde, çaprazlanan oturak tahtaları ve dikey arkalığıyla uzayıp giden çok uzun ahşap bank",
+    "en": "A very long timber bench on wet concrete with angled seat boards and a vertical back"
+  },
+  "caption": {
+    "tr": "Oturak tahtaları çapraz döşenmiş, bankın ucu da açılı kesilmiş. Bank uzun bir hat boyunca kesintisiz devam ediyor.",
+    "en": "The seat boards are laid at an angle and the end of the bench is cut at an angle too. The bench runs on without a break along a long line."
+  },
+  "seoFilename": "islak-beton-zeminde-cok-uzun-ahsap-bank-metal-ayakli-capraz",
+  "tags": {
+    "type": [
+      "bank"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe",
+      "teras"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.85
+}

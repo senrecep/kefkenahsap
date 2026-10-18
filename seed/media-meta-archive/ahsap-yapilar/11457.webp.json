@@ -1,0 +1,35 @@
+{
+  "source": "Ahsap Yapilar/11457.webp",
+  "category": "ahsap-yapilar",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Işıklı ahşap panonun çıta dokusu",
+    "en": "Slat texture of a lit timber panel"
+  },
+  "alt": {
+    "tr": "Yakından çekilmiş, üstünde yeşil logo bulunan ve çıtaları arkadan aydınlatılan ahşap pano",
+    "en": "Close-up of a timber panel with a green logo and backlit slats"
+  },
+  "caption": {
+    "tr": "Çıtalar koyu bal rengi, aralarından sarı ışık geçiyor. Panonun çerçevesi daha koyu ahşaptan.",
+    "en": "The slats are dark honey in colour with yellow light passing between them. The frame of the panel is a darker timber."
+  },
+  "seoFilename": "yakindan-isikli-ahsap-pano-cita-dokusu",
+  "tags": {
+    "type": [],
+    "wood": [],
+    "setting": [
+      "iç mekân"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "detail"
+    ]
+  },
+  "categoryAgrees": false,
+  "confidence": 0.3
+}

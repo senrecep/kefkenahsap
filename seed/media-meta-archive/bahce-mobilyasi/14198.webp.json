@@ -1,0 +1,37 @@
+{
+  "source": "Ireko-Teak/14198.webp",
+  "category": "bahce-mobilyasi",
+  "model": "anthropic/claude-sonnet-5.5",
+  "promptVersion": "tagImage@2",
+  "generatedAt": "2026-10-16",
+  "title": {
+    "tr": "Çimde turuncu cilalı uzun masa tablası",
+    "en": "Long orange-varnished tabletop on the lawn"
+  },
+  "alt": {
+    "tr": "Çimenin üzerinde duran, turuncu tonlu cilalı uzun ahşap masa tablası",
+    "en": "Long timber tabletop with an orange-toned varnish resting on the grass"
+  },
+  "caption": {
+    "tr": "Uzun tablanın cilası turuncuya yakın bir ton veriyor. Masa bahçedeki çimde duruyor.",
+    "en": "The varnish gives the long top an orange tone. The table stands on the garden lawn."
+  },
+  "seoFilename": "cimde-turuncu-cilali-uzun-masa-tablasi",
+  "tags": {
+    "type": [
+      "masa ve sandalye takımı"
+    ],
+    "wood": [],
+    "setting": [
+      "bahçe"
+    ],
+    "finish": [
+      "vernik / cila"
+    ],
+    "stage": [
+      "finished"
+    ]
+  },
+  "categoryAgrees": true,
+  "confidence": 0.75
+}
