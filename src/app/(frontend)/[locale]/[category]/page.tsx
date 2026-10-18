@@ -1,6 +1,6 @@
 import { CategoryPage, generateMetadata as metadata } from './view'
 
-// #211: the bare URL is ISR (rendered on its first request, see the locale layout). ?sayfa (and live preview's ?preview)
+// #211: the bare URL is ISR (rendered on its first request, see the locale layout). ?sayfa=N
 // is rewritten by proxy.ts to /_q/<category>, which renders the same view per request.
 type Props = { params: Parameters<typeof CategoryPage>[0]['params'] }
 const none = Promise.resolve({})

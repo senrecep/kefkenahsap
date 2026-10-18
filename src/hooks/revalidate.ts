@@ -22,6 +22,13 @@ export const revalidateAfterChange =
     bust(tags)
     return doc
   }
+/** Like revalidateAfterChange, but only for saves that `affects` says the public pages can show (#211). */
+export const revalidateAfterChangeIf =
+  (affects: (doc: Record<string, unknown>, previousDoc: Record<string, unknown> | undefined) => boolean, ...tags: string[]): CollectionAfterChangeHook =>
+  ({ doc, previousDoc }) => {
+    if (affects(doc, previousDoc)) bust(tags)
+    return doc
+  }
 export const revalidateAfterDelete =
   (...tags: string[]): CollectionAfterDeleteHook =>
   ({ doc }) => {

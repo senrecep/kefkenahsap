@@ -21,11 +21,11 @@ import { changedFields, type I18nSync } from '@/lib/media/i18nSync'
 import { mediaFileURL } from '@/lib/media/url'
 import { createCdnPurger, mediaPublicURLs } from '@/lib/media/cdn-purge'
 import { createReporter } from '@/lib/observability/report'
-import { checkPublishable, type MediaStatus } from '@/lib/media/publish'
+import { changeIsPublic, checkPublishable, type MediaStatus } from '@/lib/media/publish'
 import { SEO_RENAME_QUEUE, isSeoNamed, needsSeoRename, stemOf } from '@/lib/media/seoName'
 import { approvalTags, type TagRef } from '@/lib/media/taxonomy'
 import { applyWatermark, isStampable } from '@/lib/media/watermark'
-import { revalidateAfterChange, revalidateAfterDelete } from '@/hooks/revalidate'
+import { revalidateAfterChangeIf, revalidateAfterDelete } from '@/hooks/revalidate'
 
 // WebP only: sources are already WebP; AVIF would double storage and encode time (PLAN §3.3).
 // 480: 2-column phone grids render ~184 CSS px, which at DPR 1.75–2.6 needs 322–480 px; without it they fetched 640 (#116).
@@ -303,7 +303,7 @@ export const Media: CollectionConfig = {
     beforeOperation: [stampUpload],
     afterOperation: [sendCdnPurge],
     beforeChange: [truthfulWatermark, placeholder, publishGate, attachSuggestedTags, trackTranslations],
-    afterChange: [purgeReplacedFile, revalidateAfterChange('media', 'categories', 'projects'), queueAiSuggestion, queueTranslation, queueSeoRename],
+    afterChange: [purgeReplacedFile, revalidateAfterChangeIf(changeIsPublic, 'media', 'categories', 'projects'), queueAiSuggestion, queueTranslation, queueSeoRename],
     afterDelete: [revalidateAfterDelete('media', 'categories', 'projects'), purgeDeletedFile],
   },
   fields: [

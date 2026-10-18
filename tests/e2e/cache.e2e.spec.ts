@@ -1,3 +1,6 @@
+import { readdirSync } from 'fs'
+import path from 'path'
+
 import { expect, test } from '@playwright/test'
 
 import { adminApi, createDoc, deleteDocs } from '../helpers/content'
@@ -42,7 +45,23 @@ test.describe('Public page caching', () => {
     expect(await res.text()).toMatch(/<meta name="robots" content="noindex/)
   })
 
-  test('the internal query route is not reachable from outside', async ({ request }) => {
-    expect((await request.get('/tr/_q/galeri')).status()).toBe(404)
+  test('the internal query route is not reachable from outside, however it is escaped', async ({ request }) => {
+    for (const path of ['/tr/_q/galeri', '/tr/%5Fq/galeri', '/tr/%5fq/projeler', '/tr/_q/deck-ve-zeminler']) expect((await request.get(path)).status(), path).toBe(404)
+  })
+
+  test('a tracking-only query stays on the cached page', async ({ request }) => {
+    await request.get('/tr/galeri')
+    const res = await request.get('/tr/galeri?utm_source=e2e&gclid=1')
+    expect(res.headers()['cache-control']).toMatch(/s-maxage=\d+/)
+  })
+
+  test('made-up URLs leave nothing on disk (no unbounded cache from scans)', async ({ request }) => {
+    const stamp = `e2e-yok-${Date.now()}`
+    for (const url of [`/tr/${stamp}`, `/en/gallery/${stamp}`, `/tr/projeler/${stamp}`, `/tr/rehber/${stamp}`, `/tr/bolgeler/${stamp}`]) {
+      expect((await request.get(url)).status(), url).toBe(404)
+    }
+    // The ISR cache is a bounded in-memory LRU (next.config.ts isrFlushToDisk: false): nothing is written per URL.
+    const dir = path.join(process.cwd(), '.next/server')
+    expect(readdirSync(dir, { recursive: true }).map(String).filter((f) => f.includes(stamp))).toEqual([])
   })
 })

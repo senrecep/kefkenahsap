@@ -15,7 +15,10 @@ const nextConfig: NextConfig = {
   skipTrailingSlashRedirect: true,
   // Quote form: photos are downscaled in the browser (≤2560px WebP, re-encoded if >3 MB), so 5 fit well under 16 MB.
   // proxy.ts buffers request bodies (default 10 MB) and that limit is global, so keep both at the same modest ceiling.
-  experimental: { serverActions: { bodySizeLimit: '16mb' }, proxyClientMaxBodySize: '16mb' },
+  // ISR pages (#211) and cached data live in a bounded in-memory LRU, not on disk: every made-up URL renders a 404 that
+  // Next would otherwise write to .next/server/route-cache for good (bot scans). A restart only means re-rendering on demand.
+  cacheMaxMemorySize: 128 * 1024 * 1024,
+  experimental: { serverActions: { bodySizeLimit: '16mb' }, proxyClientMaxBodySize: '16mb', isrFlushToDisk: false },
   webpack: (webpackConfig) => {
     webpackConfig.resolve.extensionAlias = {
       '.cjs': ['.cts', '.cjs'],

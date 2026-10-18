@@ -6,9 +6,14 @@ const localized = (route: Route, locale: string) => {
   return typeof p === 'string' ? p : p[locale as keyof typeof p]
 }
 
-// Pages whose query string changes what they render; the rest ignore it, so they stay on their cached copy.
-const LISTS: Route[] = ['/galeri', '/projeler']
-const LIST_PATHS = new Map(routing.locales.flatMap((l) => LISTS.map((r) => [`/${l}${localized(r, l)}`, `/${l}/_q${r}`])))
+// The query keys each page reads (galeri/view.tsx, projeler/view.tsx, [category]/view.tsx). Any other key (utm_*, gclid,
+// fbclid…) changes nothing on the page, so it stays on the cached copy.
+const LISTS: [Route, readonly string[]][] = [
+  ['/galeri', ['kategori', 'etiket', 'sayfa']],
+  ['/projeler', ['kategori']],
+]
+const CATEGORY_KEYS = ['sayfa']
+const LIST_PATHS = new Map<string, { to: string; keys: readonly string[] }>(routing.locales.flatMap((l) => LISTS.map(([r, keys]) => [`/${l}${localized(r, l)}`, { to: `/${l}/_q${r}`, keys }] as const)))
 // First segments of fixed routes in any locale: under /<locale>/ any other single segment is a category.
 const FIXED = new Set(
   Object.entries(routing.pathnames)
@@ -18,14 +23,15 @@ const FIXED = new Set(
 )
 
 /**
- * #211: the internal per-request route for a public URL that carries a query string, or null when the cached page serves
- * it. Gallery / project list filters, the no-JS "?sayfa=N" pages and live preview render under /<locale>/_q/…, so the
+ * #211: the internal per-request route for a public URL whose query string changes the page, or null when the cached
+ * page serves it. Gallery / project list filters and the no-JS "?sayfa=N" pages render under /<locale>/_q/…, so the
  * bare URLs can be ISR (reading searchParams would make every visit to them dynamic).
  */
-export function queryRoute(pathname: string): string | null {
+export function queryRoute(pathname: string, query: URLSearchParams): string | null {
+  const reads = (keys: readonly string[]) => keys.some((k) => query.has(k))
   const list = LIST_PATHS.get(pathname)
-  if (list) return list
+  if (list) return reads(list.keys) ? list.to : null
   const m = /^\/([^/]+)\/([^/]+)$/.exec(pathname)
-  if (!m || !(routing.locales as readonly string[]).includes(m[1]!) || FIXED.has(m[2]!)) return null
+  if (!m || !(routing.locales as readonly string[]).includes(m[1]!) || FIXED.has(m[2]!) || !reads(CATEGORY_KEYS)) return null
   return `/${m[1]}/_q/${m[2]}`
 }

@@ -78,7 +78,12 @@ export function ContactForm({
   const formRef = useRef<HTMLFormElement>(null)
   // Read on the client so the page itself stays cached (#211); the server action keeps only the known utm_* keys.
   const [utm, setUtm] = useState<[string, string][]>([])
-  useEffect(() => setUtm([...new URLSearchParams(window.location.search)].filter(([k]) => k.startsWith('utm_'))), [])
+  useEffect(() => {
+    // One input per key, the first value wins (as pickUtm reads a repeated key).
+    const first = new Map<string, string>()
+    for (const [k, v] of new URLSearchParams(window.location.search)) if (k.startsWith('utm_') && !first.has(k)) first.set(k, v)
+    setUtm([...first])
+  }, [])
   const widgetRef = useRef<HTMLDivElement>(null)
   const widgetId = useRef<string | null>(null)
   // interaction-only: the check usually passes unseen. The widget box only gets its margin while Turnstile actually shows
