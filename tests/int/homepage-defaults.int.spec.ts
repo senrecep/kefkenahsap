@@ -31,10 +31,10 @@ afterAll(async () => {
 
 describe('homepage defaults, locale by locale', () => {
   it('fills tr then en without touching the other locale or the block ids', async () => {
-    // Start from a known state: every heading and the steps empty in both locales, same rows.
-    const emptied = (l: HomeBlock[]) => l.map((b) => ({ ...b, ...('heading' in b ? { heading: '' } : {}), ...(b.blockType === 'process' ? { steps: [] } : {}) }))
-    await write('tr', emptied(await read('tr')))
-    await write('en', emptied(await read('en')))
+    // Own fixture (CI starts with no homepage): three sections, empty headings, no steps, the same rows in both locales.
+    const rows = [{ blockType: 'services', enabled: true, heading: '' }, { blockType: 'process', enabled: true, heading: '', steps: [] }, { blockType: 'contact', enabled: true, heading: '' }]
+    await write('tr', rows as never)
+    await write('en', (await read('tr')).map((b) => ({ ...b })))
     const ids = (await read('tr')).map((b) => b.id)
     expect(ids.length).toBeGreaterThan(0)
 
