@@ -106,3 +106,40 @@
 :lang(ar) * {
   letter-spacing: 0;
 }
+
+/* Gallery masonry (#215): the tiles render once; each carries its column and offset for the 2 / 3 / 4-column layouts
+   (--cN column, --yN column widths above it, --kN tiles above it, from src/lib/gallery/masonry.ts placements) and is
+   placed for the active breakpoint. Same geometry as the former flex columns: Container width, gap 0.5 / 0.75 / 1rem. */
+@layer components {
+  .masonry { container-type: inline-size; }
+  .masonry > ul {
+    --n: 2;
+    --gap: 0.5rem;
+    --cw: calc((100cqw - (var(--n) - 1) * var(--gap)) / var(--n));
+    position: relative;
+    height: var(--h2);
+    @media (width >= 40rem) { --gap: 0.75rem; }
+    @media (width >= 48rem) { --n: 3; --gap: 1rem; height: var(--h3); }
+    @media (width >= 64rem) { --n: 4; height: var(--h4); }
+  }
+  .masonry > ul > li {
+    --c: var(--c2);
+    --y: var(--y2);
+    --k: var(--k2);
+    position: absolute;
+    inset-block-start: calc(var(--y) * var(--cw) + var(--k) * var(--gap));
+    inset-inline-start: calc(var(--c) * (var(--cw) + var(--gap)));
+    width: var(--cw);
+    @media (width >= 48rem) { --c: var(--c3); --y: var(--y3); --k: var(--k3); }
+    @media (width >= 64rem) { --c: var(--c4); --y: var(--y4); --k: var(--k4); }
+  }
+  /* Print: no container-relative placement; the tiles flow one under another, none split across pages. */
+  @media print {
+    .masonry > ul { height: auto; }
+    .masonry > ul > li { position: static; width: auto; margin-block-end: 0.5rem; break-inside: avoid; }
+  }
+  /* A fixed (trimmed) grid drops some tiles per layout. */
+  @media (width < 48rem) { .masonry-hide-2 { display: none; } }
+  @media (48rem <= width < 64rem) { .masonry-hide-3 { display: none; } }
+  @media (width >= 64rem) { .masonry-hide-4 { display: none; } }
+}

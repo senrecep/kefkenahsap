@@ -9,12 +9,14 @@ test.describe('gallery', () => {
     await expect(page.getByRole('heading', { level: 1, name: 'Galeri' })).toBeVisible()
     const visible = page.locator('[data-gallery-item]:visible')
     await expect(visible).toHaveCount(PAGE_SIZE)
-    // LCP (#129, #211): the phone (2-column) copy's first two rows load eagerly, the likeliest LCP card of them with high
+    // #215: the grid renders once: every card in the DOM is the visible one, each photo exactly once.
+    const all = page.locator('[data-gallery-item]')
+    await expect(all).toHaveCount(PAGE_SIZE)
+    expect(new Set(await all.evaluateAll((a) => a.map((x) => x.getAttribute('href')))).size).toBe(PAGE_SIZE)
+    // LCP (#129, #211): the phone layout's first two rows load eagerly, the likeliest LCP card of them with high
     // priority; everything else stays lazy.
-    const eager = page.locator('[data-gallery-item] img[loading="eager"]')
-    expect(await eager.count()).toBe(4)
+    await expect(page.locator('[data-gallery-item] img[loading="eager"]')).toHaveCount(4)
     await expect(page.locator('[data-gallery-item] img[fetchpriority="high"]')).toHaveCount(1)
-    for (const img of await eager.all()) await expect(img.locator('xpath=ancestor::div[contains(@class, "grid-cols-2")]')).toHaveCount(1)
 
     // Scrolling to the end appends the next page from the feed.
     await page.getByRole('link', { name: 'Daha fazla göster' }).scrollIntoViewIfNeeded()
@@ -106,6 +108,35 @@ test.describe('gallery', () => {
     await expect(page.getByRole('heading', { level: 1, name: 'Gallery' })).toBeVisible()
     await expect(page.locator('[data-gallery-item]:visible')).toHaveCount(PAGE_SIZE * 2)
     await expect(page.getByRole('link', { name: 'Show more' })).toHaveAttribute('href', /sayfa=3/)
+  })
+
+  for (const width of [390, 768, 1280]) {
+    test(`masonry at ${width}px: columns of equal width, tiles stacked by the gap, no overlap, grid as tall as its columns (#215)`, async ({ page }) => {
+      await page.setViewportSize({ width, height: 900 })
+      await page.goto('/tr/galeri')
+      // One snapshot of the tiles and the grid: on a short grid (CI's small seed) the feed appends the next page as soon as
+      // the page loads, so separate reads could see two different grids.
+      const { boxes, ul } = await page.locator('.masonry > ul').evaluate((u) => ({
+        boxes: [...u.querySelectorAll<HTMLElement>('[data-gallery-item]')].filter((x) => x.offsetParent).map((x) => x.getBoundingClientRect().toJSON() as DOMRect),
+        ul: u.getBoundingClientRect().bottom,
+      }))
+      const cols = [...new Set(boxes.map((b) => Math.round(b.x)))]
+      expect(cols).toHaveLength(width < 768 ? 2 : width < 1024 ? 3 : 4)
+      expect(new Set(boxes.map((b) => Math.round(b.width))).size).toBe(1)
+      const gap = width < 640 ? 8 : width < 768 ? 12 : 16
+      for (const x of cols) {
+        const col = boxes.filter((b) => Math.round(b.x) === x).sort((p, q) => p.y - q.y)
+        for (let i = 1; i < col.length; i++) expect(Math.abs(col[i]!.y - col[i - 1]!.bottom - gap)).toBeLessThan(1)
+      }
+      expect(Math.abs(ul - Math.max(...boxes.map((b) => b.bottom)))).toBeLessThan(1)
+    })
+  }
+
+  test('RTL: the masonry mirrors, the first column is on the right (#215)', async ({ page }) => {
+    await page.setViewportSize({ width: 390, height: 900 })
+    await page.goto('/ar/gallery')
+    const xs = await page.locator('[data-gallery-item]:visible').evaluateAll((a) => a.slice(0, 2).map((x) => x.getBoundingClientRect().x))
+    expect(xs[0]!).toBeGreaterThan(xs[1]!)
   })
 
   test('unfiltered: curated first page, then the feed covers the rest with no repeats', async ({ page, request }) => {
