@@ -1,3 +1,4 @@
+import { MediaLocalesSyncField as MediaLocalesSyncField_70c91c50f4bc017b487276e277377966 } from '../../../components/admin/ai/MediaLocalesSync'
 import { LocaleStatus as LocaleStatus_d148a0381d704b50bc93bb508ae88af8 } from '../../../components/admin/ai/LocaleStatus'
 import { AiTranslateButton as AiTranslateButton_c9c5e6e6492096d68d426c279d267e9f } from '../../../components/admin/ai/AiTranslateButton'
 import { RscEntryLexicalCell as RscEntryLexicalCell_44fe37237e0ebf4470c9990d8cb7b07e } from '@payloadcms/richtext-lexical/rsc'
@@ -40,6 +41,7 @@ import { S3ClientUploadHandler as S3ClientUploadHandler_f97aa6c64367fa259c5bc056
 
 /** @type import('payload').ImportMap */
 export const importMap = {
+  "/components/admin/ai/MediaLocalesSync#MediaLocalesSyncField": MediaLocalesSyncField_70c91c50f4bc017b487276e277377966,
   "/components/admin/ai/LocaleStatus#LocaleStatus": LocaleStatus_d148a0381d704b50bc93bb508ae88af8,
   "/components/admin/ai/AiTranslateButton#AiTranslateButton": AiTranslateButton_c9c5e6e6492096d68d426c279d267e9f,
   "@payloadcms/richtext-lexical/rsc#RscEntryLexicalCell": RscEntryLexicalCell_44fe37237e0ebf4470c9990d8cb7b07e,

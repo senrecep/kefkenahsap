@@ -21,6 +21,9 @@ beforeAll(async () => {
   const { default: config } = await import('@/payload.config')
   payload = await getPayload({ config: await config })
   await payload.updateGlobal({ slug: 'aiSettings', data: { monthlyBudgetUsd: 1000, tagImage: [] } })
+  // #203: TR edits in other int files leave translateMedia jobs on the default queue; a bare run() (limit 10, oldest
+  // first) could fill up on them before reaching this file's tagImage job.
+  await payload.delete({ collection: 'payload-jobs', where: { taskSlug: { equals: 'translateMedia' }, completedAt: { exists: false } } })
 })
 afterAll(async () => {
   for (const c of created.reverse()) await payload.delete({ collection: c.collection, id: c.id }).catch(() => {})

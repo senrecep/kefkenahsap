@@ -1,3 +1,6 @@
+import { routing } from '@/i18n/routing'
+
+import type { I18nSync } from './i18nSync'
 import type { MediaStatus } from './publish'
 import { approvalTags, type TagRef } from './taxonomy'
 
@@ -81,4 +84,16 @@ export function aiReview(doc: { aiSuggestion?: unknown; tags?: (number | { id: n
     doubtful: (typeof confidence === 'number' && confidence < 0.5) || categoryAgrees === false,
     addTags: added.map((id) => tags.find((t) => t.id === id)!.name),
   }
+}
+
+/** #203: the card line about the other languages, from the photo's stored i18nSync state (no hashing in the browser). */
+export function localesStatus(sync: I18nSync | null | undefined): { tone: BadgeTone; label: string } {
+  if (sync?.pending?.length) return { tone: 'busy', label: 'TR değişti, çeviriliyor…' }
+  const names = (reason: string) => routing.locales.filter((l) => sync?.stale?.[l] === reason).map((l) => l.toUpperCase())
+  const parts = [
+    [names('edited'), 'Elle düzenlendi, güncel olmayabilir'],
+    [names('failed'), 'Çevrilemedi, eski olabilir'],
+  ] as const
+  const label = parts.filter(([l]) => l.length).map(([l, text]) => `${text}: ${l.join(', ')}`).join(' · ')
+  return label ? { tone: 'wait', label } : { tone: 'ok', label: 'Diller: güncel' }
 }

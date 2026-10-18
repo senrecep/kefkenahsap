@@ -8,6 +8,7 @@ import { aiModel, resolveChain } from '@/ai/models'
 import { knownTypes, TAG_IMAGE_PROMPT_VERSION, TagImageSchema, tagImageSystem, tagImageTypesLine } from '@/ai/prompts/tagImage'
 import { failureUsage, runStructured } from '@/ai/run'
 import { monthUsage } from '@/ai/usage'
+import { type I18nSync, SYNC_FIELDS, type SyncField, textHash } from '@/lib/media/i18nSync'
 
 /** AI suggestion for a newly uploaded image. Fills only empty fields; the image stays "pending" until a person approves it. */
 export const tagImageTask: TaskConfig<'tagImage'> = {
@@ -15,6 +16,8 @@ export const tagImageTask: TaskConfig<'tagImage'> = {
   retries: 1,
   inputSchema: [{ name: 'mediaId', type: 'text', required: true }],
   outputSchema: [{ name: 'result', type: 'text' }],
+  // #203: never at the same time as translateMedia on the same photo (same key).
+  concurrency: ({ input }) => `media:${input.mediaId}`,
   handler: async ({ input, req }) => {
     const { payload } = req
     const settings = await payload.findGlobal({ slug: 'aiSettings', req })
@@ -64,17 +67,29 @@ export const tagImageTask: TaskConfig<'tagImage'> = {
     const output = { ...run.value.output, tags: { ...run.value.output.tags, type: knownTypes(run.value.output.tags.type, types) } }
     await payload.create({ collection: 'ai-usage', data: { task: 'tagImage', ok: true, model, costUsd, inputTokens, outputTokens, docRef }, req })
 
-    const ctx = { skipAi: true }
+    // Fresh per write: Payload keeps the object as req.context and hooks add keys to it.
+    const ctx = () => ({ skipAi: true })
     const blank = (v: unknown) => v == null || v === ''
     // #192: one read of every locale (no fallback: an empty field reads as empty), then a write per locale that has an
     // empty field. Text a person wrote in any locale is kept.
     const all = (await payload.findByID({ collection: 'media', id: media.id, locale: 'all', depth: 0, req })) as unknown as Record<
-      'title' | 'alt' | 'caption',
+      SyncField,
       Partial<Record<string, string | null>> | null
-    >
+    > & { i18nSync?: I18nSync | null }
+    // #203: each locale field filled here records the TR text it was made from and its own text, so a later TR edit
+    // can tell AI text (rewritten by translateMedia) from a person's (kept, flagged stale).
+    const trText = (f: SyncField) => (blank(all[f]?.[routing.defaultLocale]) ? output[f][routing.defaultLocale] : all[f]![routing.defaultLocale]!)
+    let sync = all.i18nSync ?? null
     for (const locale of routing.locales) {
-      const data = Object.fromEntries((['title', 'alt', 'caption'] as const).filter((f) => blank(all[f]?.[locale])).map((f) => [f, output[f][locale]]))
-      if (Object.keys(data).length) await payload.update({ collection: 'media', id: media.id, locale, context: ctx, req, data })
+      const fields = SYNC_FIELDS.filter((f) => blank(all[f]?.[locale]))
+      if (!fields.length) continue
+      const data: Record<string, unknown> = Object.fromEntries(fields.map((f) => [f, output[f][locale]]))
+      if (locale !== routing.defaultLocale) {
+        const prov = Object.fromEntries(fields.map((f) => [f, { src: textHash(trText(f)), ai: textHash(output[f][locale]) }]))
+        sync = { ...sync, prov: { ...sync?.prov, [locale]: { ...sync?.prov?.[locale], ...prov } } }
+        data.i18nSync = sync
+      }
+      await payload.update({ collection: 'media', id: media.id, locale, context: ctx(), req, data })
     }
     // Written last: the suggestion marks the job done (see the idempotency check above), so a failure before this
     // point leaves it unmarked and a retry fills the locales still empty.
@@ -82,7 +97,7 @@ export const tagImageTask: TaskConfig<'tagImage'> = {
       collection: 'media',
       id: media.id,
       locale: 'tr',
-      context: ctx,
+      context: ctx(),
       req,
       data: {
         ...(blank(media.seoFilename) ? { seoFilename: output.seoFilename } : {}),

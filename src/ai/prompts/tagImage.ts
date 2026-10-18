@@ -15,9 +15,9 @@ const storedPerLocale = (s: z.ZodString) =>
   z.object(Object.fromEntries(LOCALES.map((l) => [l, l === 'tr' || l === 'en' ? s : s.optional()])) as Record<Locale, z.ZodOptional<z.ZodString>>)
 
 // #192: one call returns the texts in every site locale (tagImage@4); before it only TR and EN.
-const TITLE = z.string().min(3).max(80)
-const ALT = z.string().min(5).max(125)
-const CAPTION = z.string().max(240)
+export const TITLE = z.string().min(3).max(80)
+export const ALT = z.string().min(5).max(125)
+export const CAPTION = z.string().max(240)
 
 export const TagImageSchema = z.object({
   title: perLocale(TITLE),
@@ -57,7 +57,7 @@ export const LANGUAGE_GUIDANCE: Record<Locale, string> = {
 }
 
 // House terms per language, from docs/CONTENT-STYLE-TR.md §8 and the native-editor review in PR #181.
-const TERMS = `Terimler (TR → EN / RU / DE / AR):
+export const TERMS = `Terimler (TR → EN / RU / DE / AR):
   - deck, ahşap zemin → decking / настил, дек (deck tahtası: террасная доска; "деккинг" değil) / Terrasse, Terrassenboden (deck tahtası: Terrassendielen; "Deckdielen" değil) / ديكينغ (asla ديك)
   - deck alt yapısı (kiriş) → joists, subframe / лаги / Unterkonstruktion / الهيكل السفلي
   - kamelya → gazebo / беседка / Pavillon / كشك (eril; asla كاميليا)

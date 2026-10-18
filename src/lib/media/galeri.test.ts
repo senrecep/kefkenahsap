@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { aiReview, fitWithin, initialFilter, isTruncated, MEDIA_LIMIT, mediaBadge, reorder, statusCounts } from './galeri'
+import { aiReview, fitWithin, initialFilter, isTruncated, localesStatus, MEDIA_LIMIT, mediaBadge, reorder, statusCounts } from './galeri'
 import type { TagRef } from './taxonomy'
 
 describe('fitWithin (client downscale to a 2560px long edge, PLAN §4)', () => {
@@ -166,5 +166,24 @@ describe('aiReview (#192: what the Galeri card shows about the AI suggestion bef
     expect(aiReview({ aiSuggestion: { confidence: '0.2', categoryAgrees: 'no' } }, TAGS)).toEqual({ doubtful: false, addTags: [] })
     expect(aiReview({ aiSuggestion: null }, TAGS)).toBeNull()
     expect(aiReview({}, TAGS)).toBeNull()
+  })
+})
+
+describe('localesStatus (#203: the Galeri card line about the other languages)', () => {
+  it('a photo whose TR text changed and whose job has not run yet is being translated', () => {
+    expect(localesStatus({ pending: ['alt'], stale: { de: 'edited' } })).toEqual({ tone: 'busy', label: 'TR değişti, çeviriliyor…' })
+  })
+  it('names the hand-edited locales that may be out of date, in site order', () => {
+    expect(localesStatus({ stale: { ar: 'edited', de: 'edited' } })).toEqual({ tone: 'wait', label: 'Elle düzenlendi, güncel olmayabilir: DE, AR' })
+  })
+  it('names the locales that were not translated (budget, model error, AI off)', () => {
+    expect(localesStatus({ stale: { en: 'failed', de: 'edited' } })).toEqual({
+      tone: 'wait',
+      label: 'Elle düzenlendi, güncel olmayabilir: DE · Çevrilemedi, eski olabilir: EN',
+    })
+  })
+  it('nothing pending or stale (or no record at all) is up to date', () => {
+    expect(localesStatus(null)).toEqual({ tone: 'ok', label: 'Diller: güncel' })
+    expect(localesStatus({ prov: {} })).toEqual({ tone: 'ok', label: 'Diller: güncel' })
   })
 })

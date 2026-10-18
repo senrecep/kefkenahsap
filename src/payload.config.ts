@@ -3,6 +3,7 @@ import { FixedToolbarFeature, lexicalEditor } from '@payloadcms/richtext-lexical
 import path from 'path'
 import { buildConfig } from 'payload'
 import { fileURLToPath } from 'url'
+import { SystemDateTimeProvider } from 'tsentials/time'
 import sharp from 'sharp'
 
 import { Users } from './collections/Users'
@@ -18,10 +19,12 @@ import { Leads } from './collections/Leads'
 import { LeadPhotos } from './collections/LeadPhotos'
 import { purgeExpiredLeads } from './jobs/purgeExpiredLeads'
 import { tagImageTask } from './jobs/tagImage'
+import { releaseStuckMediaJobs } from './jobs/releaseStuck'
+import { translateMediaTask } from './jobs/translateMedia'
 import { AiUsage } from './collections/AiUsage'
 import { AiSettings } from './globals/AiSettings'
 import { isFakeAi } from './ai/models'
-import { aiDraftEndpoint, aiTranslateEndpoint } from './endpoints/ai'
+import { aiDraftEndpoint, aiTranslateEndpoint, aiTranslateMediaEndpoint } from './endpoints/ai'
 import { resendAdapter } from '@payloadcms/email-resend'
 import { redirectsPlugin } from '@payloadcms/plugin-redirects'
 import { hiddenFromEditor, isStaff } from './access'
@@ -96,6 +99,7 @@ export default buildConfig({
       },
     },
     aiTranslateEndpoint,
+    aiTranslateMediaEndpoint,
     aiDraftEndpoint,
   ],
   // The admin is Turkish only (one editor, one language); content localization below is separate.
@@ -130,10 +134,20 @@ export default buildConfig({
     // The Homepage global always publishes every language (see its beforeOperation hook).
     defaultLocalePublishOption: 'active',
   },
+  // #203: photo jobs left "processing" by a process that died would block their photo forever (concurrency key).
+  onInit: async (payload) => {
+    const released = await releaseStuckMediaJobs(payload, SystemDateTimeProvider).catch((err: unknown) => {
+      payload.logger.warn({ err }, 'jobs: could not release stuck photo jobs')
+      return 0
+    })
+    if (released) payload.logger.warn(`jobs: released ${released} stuck photo job(s)`)
+  },
   jobs: {
-    tasks: [purgeExpiredLeads, tagImageTask],
+    tasks: [purgeExpiredLeads, tagImageTask, translateMediaTask],
     // Runs queued jobs (AI tagging, retention, purge) every minute; tasks are added per feature.
     autoRun: [{ cron: '* * * * *', queue: 'default' }],
+    // tagImage + translateMedia: one job per photo at a time (adds payload_jobs.concurrency_key).
+    enableConcurrencyControl: true,
     // Never under Vitest: tests run the queue themselves, and a cron tick between a test's queue() and run() took the job
     // away from it (flaky ai-tag int test, #192).
     shouldAutoRun: () => process.env.NODE_ENV !== 'test',
