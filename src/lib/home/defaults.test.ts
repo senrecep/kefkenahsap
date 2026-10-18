@@ -18,7 +18,7 @@ const messages = {
 
 const layout = (locale: 'tr' | 'en') => [
   { id: 'h', blockType: 'hero', enabled: true, heading: locale === 'en' ? 'Own hero' : null },
-  { id: 'g', blockType: 'featuredGallery', enabled: true, heading: locale === 'en' ? '   ' : '', limit: 24 },
+  { id: 'g', blockType: 'featuredGallery', enabled: true, heading: '', limit: 24 },
   { id: 'p', blockType: 'process', enabled: false, steps: locale === 'en' ? [{ id: 'x', title: 'Mine', text: 'kept' }] : [] },
   { id: 'f', blockType: 'faq', enabled: true, heading: locale === 'tr' ? 'Own faq' : undefined, items: locale === 'tr' ? [{ id: 'q', q: 'Q', a: 'A' }] : [] },
   { id: 'c', blockType: 'contact', enabled: true },
@@ -40,6 +40,13 @@ describe('fillHomeDefaults', () => {
     expect(en.filled).not.toContain('hero.heading')
     expect(en.filled).toContain('hero.subheading')
     expect(en.layout[3]).toMatchObject({ heading: 'E-faq' })
+  })
+
+  it('treats whitespace as a value (the site renders it as is) and skips a missing message', () => {
+    const blocks = [{ blockType: 'services', heading: '  ' }, { blockType: 'contact', heading: null }]
+    const out = fillHomeDefaults(blocks, { ...messages.tr, contactTitle: undefined } as never)
+    expect(out.layout).toEqual(blocks)
+    expect(out.filled).toEqual([])
   })
 
   it('fills the process steps only where the list is empty', () => {

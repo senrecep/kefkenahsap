@@ -1,6 +1,9 @@
 // #213: copies the site's built-in homepage text (messages/<locale>/home.json) into the admin fields that are still empty,
 // so the Ana Sayfa global shows what the site shows. Never overwrites a value; a re-run writes nothing.
 //   bun run payload run scripts/seed/homepage-defaults.ts -- --dry-run | --yes [--use-draft]
+import { writeFileSync } from 'node:fs'
+import os from 'node:os'
+import path from 'node:path'
 import { getPayload } from 'payload'
 
 import { routing } from '@/i18n/routing'
@@ -24,8 +27,10 @@ const read = async (locale: string, draft: boolean) => {
   return { status: g._status, layout: (g.layout ?? []) as unknown as HomeBlock[] }
 }
 const latest = await read(routing.defaultLocale, true)
-const publish = latest.status === 'published'
-if (!publish && !process.argv.includes('--use-draft')) {
+// A draft identical to the published version is published too (nothing unreleased in it); --use-draft keeps a draft a draft.
+const useDraft = process.argv.includes('--use-draft')
+const publish = latest.status === 'published' || !useDraft
+if (latest.status !== 'published' && !useDraft) {
   for (const locale of routing.locales) {
     if (JSON.stringify((await read(locale, true)).layout) !== JSON.stringify((await read(locale, false)).layout)) {
       console.error(`${dry}homepage: the latest version is a draft that differs from the published one. Publishing would release the owner's unpublished edits. Check the versions in the admin; re-run with --use-draft to fill that draft instead. Nothing written.`)
@@ -53,19 +58,37 @@ for (const locale of routing.locales) {
 }
 if (!fields || dryRun) process.exit(0)
 
+// Snapshot of every locale (and the latest version) before writing; restored if anything below fails.
+const snapshot = await payload.findGlobal({ slug: 'homepage', locale: 'all', draft: false, depth: 0 })
+const snapshotVersion = (await payload.findGlobalVersions({ slug: 'homepage', where: { latest: { equals: true } }, limit: 1, depth: 0, locale: 'all' })).docs[0]
+const snapshotFile = path.join(os.tmpdir(), `homepage-snapshot-${Date.now()}.json`)
+writeFileSync(snapshotFile, JSON.stringify({ snapshot, snapshotVersion }))
+console.log(`snapshot: ${snapshotFile}`)
+const restore = async () => {
+  await payload.db.updateGlobal({ slug: 'homepage', data: snapshot as unknown as Record<string, unknown> })
+  if (snapshotVersion) await payload.db.createGlobalVersion({ globalSlug: 'homepage', versionData: snapshotVersion.version, autosave: false, createdAt: snapshotVersion.createdAt, updatedAt: new Date().toISOString() })
+  console.error('homepage: restored the snapshot')
+}
+
 const untouched = new Map<string, string>()
 for (const locale of routing.locales) untouched.set(locale, JSON.stringify((await read(locale, true)).layout))
-for (const [locale, layout] of planned) {
-  if (JSON.stringify(layout) === untouched.get(locale)) continue
-  // beforeOperation drops publishSpecificLocale, so a published write publishes every locale.
-  await payload.updateGlobal({ slug: 'homepage', locale: locale as never, draft: !publish, data: { layout: layout as never, _status: publish ? 'published' : 'draft' }, depth: 0 })
-}
 // Read back: every locale must equal its plan, block ids included; only the step/item row ids are new.
 const shape = (l: HomeBlock[]) => JSON.stringify([l.map((b) => b.id), JSON.stringify(l, (k, v) => (k === 'id' ? undefined : v))])
-const bad = []
-for (const [locale, layout] of planned) if (shape((await read(locale, !publish)).layout) !== shape(layout)) bad.push(locale)
+const bad: string[] = []
+try {
+  for (const [locale, layout] of planned) {
+    if (JSON.stringify(layout) === untouched.get(locale)) continue
+    // beforeOperation drops publishSpecificLocale, so a published write publishes every locale.
+    await payload.updateGlobal({ slug: 'homepage', locale: locale as never, draft: !publish, data: { layout: layout as never, _status: publish ? 'published' : 'draft' }, depth: 0 })
+  }
+  for (const [locale, layout] of planned) if (shape((await read(locale, !publish)).layout) !== shape(layout)) bad.push(locale)
+} catch (err) {
+  console.error(err)
+  bad.push('write error')
+}
 if (bad.length) {
-  console.error(`homepage: read-back differs from the plan for ${bad.join(', ')}; check the versions in the admin`)
+  console.error(`homepage: read-back differs from the plan (${bad.join(', ')})`)
+  await restore()
   process.exit(1)
 }
 console.log(`homepage: ${fields} fields filled${publish ? ' and published' : ' as a draft'}; restart or redeploy the app to show it right away`)
