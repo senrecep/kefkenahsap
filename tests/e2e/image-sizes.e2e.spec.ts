@@ -4,11 +4,13 @@ import { expect, test } from '@playwright/test'
 // than it needs. Measured on a phone viewport (Lighthouse's mobile profile), where every byte counts.
 test.use({ viewport: { width: 412, height: 823 }, deviceScaleFactor: 1.75, isMobile: true, hasTouch: true })
 
-const PAGES = ['/tr', '/tr/galeri', '/tr/projeler']
+// The category: global-setup's on an empty (CI) DB, else the launch seed's. Its page has the hero and the photo grid.
+const PAGES = ['/tr', '/tr/galeri', 'category']
 
 for (const path of PAGES) {
-  test(`sizes matches the rendered width on a phone: ${path}`, async ({ page }) => {
-    await page.goto(path)
+  test(`sizes matches the rendered width on a phone: ${path}`, async ({ page, request }) => {
+    const url = path === 'category' ? ((await request.get('/tr/e2e-deck')).ok() ? '/tr/e2e-deck' : '/tr/deck-ve-zeminler') : path
+    await page.goto(url)
     const rows = await page.$$eval('img[sizes]', (imgs: HTMLImageElement[]) =>
       imgs
         .filter((img) => img.offsetWidth > 0)
