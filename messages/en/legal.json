@@ -34,7 +34,7 @@
     "recipients": {
       "title": "Who do we share it with?",
       "intro": "We do not sell your data or share it with anyone for advertising or marketing. We use these service providers to run the site:",
-      "cloudflare": "<b>Cloudflare, Inc. (USA):</b> site traffic passes through Cloudflare's network (fast loading and security). It runs the Turnstile check on the form. Site images and the off-server copy of database and photo backups are kept in Cloudflare R2 storage, in a private area.",
+      "cloudflare": "<b>Cloudflare, Inc. (USA):</b> site traffic passes through Cloudflare's network (fast loading and security). It runs the Turnstile check on the form. Site images and the off-server copy of database and photo backups are kept in Cloudflare R2 storage, in a private area. With Cloudflare Web Analytics, performance data measured while a page loads (page address, referrer, browser, operating system and country) goes to Cloudflare; data of visitors in the European Union is excluded from this measurement.",
       "resend": "<b>Resend (USA):</b> sends us a notification e-mail when a new request arrives. The e-mail contains your name, phone, e-mail, service, location, message, and the page and language you sent the form from; photos are not attached.",
       "gmail": "<b>Google (Gmail, USA):</b> the mailbox that receives those notifications and where we write to you.",
       "ga": "<b>Google (Analytics, USA):</b> visit statistics, only if you accept cookies.",
@@ -119,6 +119,10 @@
     "umami": {
       "title": "Cookieless visit statistics",
       "text": "With Umami we count which pages are opened and which links are clicked. Umami runs on our own server, uses no cookies and does not identify you."
+    },
+    "cfAnalytics": {
+      "title": "Cookieless page-speed measurement by Cloudflare",
+      "text": "Cloudflare adds a small script to the page to measure how fast pages load. This measurement sets no cookie and stores no identifier in your browser, so it does not depend on consent. Data of visitors in the European Union is excluded from this measurement."
     },
     "map": {
       "title": "Map",

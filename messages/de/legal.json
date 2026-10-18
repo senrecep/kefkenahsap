@@ -34,7 +34,7 @@
     "recipients": {
       "title": "An wen geben wir Daten weiter?",
       "intro": "Wir verkaufen Ihre Daten nicht und geben sie nicht für Werbung oder Marketing weiter. Für den Betrieb der Website nutzen wir diese Dienstleister:",
-      "cloudflare": "<b>Cloudflare, Inc. (USA):</b> Der Datenverkehr der Website läuft über das Netz von Cloudflare (schnelles Laden und Sicherheit). Cloudflare führt die Turnstile-Prüfung im Formular durch. Website-Bilder sowie die externe Kopie der Datenbank- und Fotosicherungen liegen im Speicher Cloudflare R2, in einem nicht öffentlichen Bereich.",
+      "cloudflare": "<b>Cloudflare, Inc. (USA):</b> Der Datenverkehr der Website läuft über das Netz von Cloudflare (schnelles Laden und Sicherheit). Cloudflare führt die Turnstile-Prüfung im Formular durch. Website-Bilder sowie die externe Kopie der Datenbank- und Fotosicherungen liegen im Speicher Cloudflare R2, in einem nicht öffentlichen Bereich. Mit Cloudflare Web Analytics werden beim Laden einer Seite gemessene Leistungsdaten (Seitenadresse, Referrer, Browser, Betriebssystem und Land) an Cloudflare übermittelt; die Daten von Besucherinnen und Besuchern aus der Europäischen Union sind von dieser Messung ausgenommen.",
       "resend": "<b>Resend (USA):</b> sendet uns bei einer neuen Anfrage eine Benachrichtigungs-E-Mail. Sie enthält Name, Telefon, E-Mail, Leistung, Ort, Nachricht sowie Seite und Sprache, von der aus Sie das Formular gesendet haben; Fotos werden nicht angehängt.",
       "gmail": "<b>Google (Gmail, USA):</b> das Postfach, in dem diese Benachrichtigungen eingehen und über das wir Ihnen schreiben.",
       "ga": "<b>Google (Analytics, USA):</b> Besuchsstatistik, nur wenn Sie Cookies akzeptieren.",
@@ -119,6 +119,10 @@
     "umami": {
       "title": "Cookielose Besuchsstatistik",
       "text": "Mit Umami zählen wir, welche Seiten aufgerufen und welche Links angeklickt werden. Umami läuft auf unserem eigenen Server, setzt keine Cookies und identifiziert Sie nicht."
+    },
+    "cfAnalytics": {
+      "title": "Cookielose Seitengeschwindigkeits-Messung von Cloudflare",
+      "text": "Cloudflare fügt der Seite ein kleines Skript hinzu, um zu messen, wie schnell Seiten laden. Diese Messung setzt kein Cookie und speichert keine Kennung in Ihrem Browser, deshalb hängt sie nicht von einer Einwilligung ab. Die Daten von Besucherinnen und Besuchern aus der Europäischen Union sind von dieser Messung ausgenommen."
     },
     "map": {
       "title": "Karte",

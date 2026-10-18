@@ -7,6 +7,7 @@ export const cookiesSections = (u: Uses): Section[] => [
   { id: 'necessary', p: ['intro'], list: ['locale', ...on(u.ga, 'consent'), 'cloudflare', 'turnstile', 'admin'] },
   u.ga ? { id: 'analytics', p: ['intro'], list: ['ga'], after: ['optIn', 'withdraw'] } : { id: 'noAnalytics', p: ['text'] },
   ...(u.umami ? [{ id: 'umami', p: ['text'] }] : []),
+  { id: 'cfAnalytics', p: ['text'] },
   ...(u.map ? [{ id: 'map', p: ['text'] }] : []),
   { id: 'links', p: ['text'] },
   { id: 'choice', p: [...on(u.ga, 'footer'), 'browser', 'more'] },

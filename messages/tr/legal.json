@@ -34,7 +34,7 @@
     "recipients": {
       "title": "Verilerinizi kimlerle paylaşıyoruz?",
       "intro": "Verilerinizi satmıyoruz, reklam veya pazarlama için kimseyle paylaşmıyoruz. Siteyi çalıştırmak için şu hizmet sağlayıcıları kullanıyoruz:",
-      "cloudflare": "<b>Cloudflare, Inc. (ABD):</b> sitenin trafiği Cloudflare ağından geçer (hızlı yükleme ve güvenlik). Formdaki Turnstile doğrulamasını yapar. Site görselleri ile veritabanı ve fotoğraf yedeklerinin sunucu dışındaki kopyası Cloudflare R2 depolamasında, herkese kapalı bir alanda durur.",
+      "cloudflare": "<b>Cloudflare, Inc. (ABD):</b> sitenin trafiği Cloudflare ağından geçer (hızlı yükleme ve güvenlik). Formdaki Turnstile doğrulamasını yapar. Site görselleri ile veritabanı ve fotoğraf yedeklerinin sunucu dışındaki kopyası Cloudflare R2 depolamasında, herkese kapalı bir alanda durur. Cloudflare Web Analytics ile sayfa yüklenirken ölçülen performans verileri (sayfa adresi, yönlendiren sayfa, tarayıcı, işletim sistemi ve ülke) Cloudflare'e gider; Avrupa Birliği'ndeki ziyaretçilerin verileri bu ölçüme dahil edilmez.",
       "resend": "<b>Resend (ABD):</b> yeni talep geldiğinde bize bildirim e-postası gönderir. E-postada adınız, telefonunuz, e-postanız, hizmet, konum, mesajınız ve formu gönderdiğiniz sayfa ile dil yer alır; fotoğraflar e-postaya eklenmez.",
       "gmail": "<b>Google (Gmail, ABD):</b> bildirim e-postalarının geldiği ve sizinle yazıştığımız e-posta kutumuz.",
       "ga": "<b>Google (Analytics, ABD):</b> yalnızca çerez onayı verirseniz ziyaret istatistikleri.",
@@ -119,6 +119,10 @@
     "umami": {
       "title": "Çerezsiz ziyaret istatistiği",
       "text": "Umami ile hangi sayfaların açıldığını ve hangi bağlantılara tıklandığını sayarız. Umami kendi sunucumuzda çalışır, çerez kullanmaz ve sizi tanımlamaz."
+    },
+    "cfAnalytics": {
+      "title": "Cloudflare ile çerezsiz sayfa hızı ölçümü",
+      "text": "Cloudflare, sayfaların ne kadar hızlı yüklendiğini ölçmek için sayfaya küçük bir betik ekler. Bu ölçüm çerez yerleştirmez ve tarayıcınıza bir tanımlayıcı kaydetmez; bu yüzden onaya bağlı değildir. Avrupa Birliği'ndeki ziyaretçilerin verileri bu ölçüme dahil edilmez."
     },
     "map": {
       "title": "Harita",
