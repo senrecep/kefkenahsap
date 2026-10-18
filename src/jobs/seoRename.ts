@@ -2,7 +2,7 @@ import type { TaskConfig } from 'payload'
 
 import { purgeURLs } from '@/collections/Media'
 import { mediaPublicURLs } from '@/lib/media/cdn-purge'
-import { anyExists, copyObjects, deleteObjects, mediaBucket } from '@/lib/media/renameStored'
+import { anyExists, copyObjects, deleteObjects, mediaBucket, storedFiles } from '@/lib/media/renameStored'
 import { needsSeoRename, pickSeoName, renamePlan, stemOf } from '@/lib/media/seoName'
 
 /**
@@ -43,7 +43,8 @@ export const seoRenameTask: TaskConfig<'seoRename'> = {
       plan = renamePlan({ filename, sizes: doc.sizes }, name)
     }
 
-    const copied = await copyObjects(s3, bucket, doc.prefix, plan.moves)
+    const types = new Map(storedFiles(doc).map((f) => [f.filename, f.contentType]))
+    const copied = await copyObjects(s3, bucket, doc.prefix, plan.moves.map((m) => ({ ...m, contentType: types.get(m.from) ?? doc.mimeType ?? 'image/webp' })))
     if (!copied.ok) throw new Error(copied.errors.map((e) => e.description).join('; '))
 
     const sizes = Object.fromEntries(Object.entries(doc.sizes ?? {}).map(([k, v]) => [k, plan.sizes[k] ? { ...v, filename: plan.sizes[k] } : v]))

@@ -88,6 +88,7 @@ Work through the phases in order and tick each step. Never paste a secret value 
 ### 1B. Tokens and config
 
 6. [ ] **[Owner]** Cloudflare purge token (#185): My Profile → API Tokens → Custom. Permission **Zone → Cache Purge → Purge**, zone `kefkenahsap.com` only. The same token goes to dev and prod.
+   - [ ] **[Owner]** Cloudflare cache rule `kefken: cdn immutable` must not cache errors for a year (#216, `docs/RUNBOOK.md` "CDN must not cache 404s for a year"): Edge TTL by status code, `200-299` = 1 year, `400-599` = no store (or 404 = 60 s). After the app that sets `Cache-Control` on every object is deployed, Browser TTL → "Respect origin".
 7. [ ] **[Owner]** R2 backup token (#51): R2 → Manage API tokens → **Object Read & Write, bucket `kefkenahsap-backups` only**. Also add a 30-day lifecycle rule on that bucket. Never widen the app's media token.
    - **Gated (KVKK notice, #195):** the privacy notice says the off-server backup copy is kept 30 days. Token, lifecycle rule and `COMPOSE_PROFILES` including `backup` (`backup`, or `observability,backup`) are required for go, and 2.23 must show the R2 upload, not `R2 upload skipped`.
 8. [ ] **[Owner]** GlitchTip prod. Recommended: the existing instance at https://glitchtip-dev.kefkenahsap.com, org `kefkenahsap`, new project `kefkenahsap-production`, and copy its DSN.

@@ -50,6 +50,15 @@ async function upload(name: string, shade: number) {
 const create = async (name: string, shade: number) =>
   payload.create({ collection: 'media', data: {}, filePath: await upload(name, shade), context: { skipAi: true } })
 
+// #216: a new upload purges its own URLs (fire-and-forget); the tests below that are about deletes and replacements wait for
+// that purge and forget it.
+const createQuiet = async (name: string, shade: number) => {
+  const doc = await create(name, shade)
+  await vi.waitFor(() => expect(purged.length).toBeGreaterThan(0))
+  purged.length = 0
+  return doc
+}
+
 // Sizes that would upscale (w1280, w1920 of a 1000 px image) share the original-size file, so each URL appears once.
 const urlsOf = (doc: { filename?: string | null; prefix?: string | null; sizes?: object | null }) => [
   ...new Set(
@@ -77,12 +86,24 @@ afterAll(async () => {
   vi.restoreAllMocks()
 })
 
+it('#216: a new upload purges its original and every size, so a cached 404 at a reused key is never served; objects carry a year-long immutable Cache-Control', async () => {
+  const doc = await create('new', 70)
+  created.push(doc.id)
+  await vi.waitFor(() => expect(purged.length).toBeGreaterThan(0))
+  expect(purgedFiles()).toEqual([...urlsOf(doc)].sort())
+  expect(purged.every((p) => p.url === ENDPOINT && p.auth === 'Bearer test-token')).toBe(true)
+  // Checked on every stored object, with the content type the size has.
+  for (const f of [doc.filename, ...Object.values(doc.sizes ?? {}).map((x) => x?.filename)].filter((f): f is string => Boolean(f))) {
+    const head = await s3.send(new HeadObjectCommand({ Bucket: process.env.S3_BUCKET!, Key: [doc.prefix, f].filter(Boolean).join('/') }))
+    expect([f, head.CacheControl, head.ContentType]).toEqual([f, 'public, max-age=31536000, immutable', 'image/webp'])
+  }
+})
+
 it('deleting a media doc purges its main file and every size, after they left storage', async () => {
-  const doc = await create('del', 90)
+  const doc = await createQuiet('del', 90)
   const expected = urlsOf(doc)
   expect(expected.length).toBeGreaterThan(5) // main + sizes up to 960 + portrait
   expect(await Promise.all(expected.map(stored))).toEqual(expected.map(() => true))
-  expect(purged).toEqual([]) // a new upload purges nothing
 
   await payload.delete({ collection: 'media', id: doc.id })
   await vi.waitFor(() => expect(purged.length).toBeGreaterThan(0))
@@ -92,23 +113,26 @@ it('deleting a media doc purges its main file and every size, after they left st
 })
 
 it('a bulk delete purges every deleted doc once, after storage', async () => {
-  const docs = [await create('bulk-a', 40), await create('bulk-b', 50)]
+  const docs = [await createQuiet('bulk-a', 40), await createQuiet('bulk-b', 50)]
   await payload.delete({ collection: 'media', where: { id: { in: docs.map((d) => d.id) } } })
   await vi.waitFor(() => expect(purged.length).toBeGreaterThan(0))
   expect(purgedFiles()).toEqual(docs.flatMap(urlsOf).sort())
   expect(purged.flatMap((p) => p.stillStored)).toEqual([])
 })
 
-it('replacing the file purges the previous files only, after storage; a plain re-save purges nothing', async () => {
-  const doc = await create('rep', 120)
+it('replacing the file purges the previous and the new files, the old ones after they left storage; a plain re-save purges nothing', async () => {
+  const doc = await createQuiet('rep', 120)
   created.push(doc.id)
 
   await payload.update({ collection: 'media', id: doc.id, data: { title: 'Yeniden kaydedildi' }, context: { skipAi: true } })
   const updated = await payload.update({ collection: 'media', id: doc.id, data: {}, filePath: await upload('rep-next', 200), context: { skipAi: true } })
   expect(updated.filename).not.toBe(doc.filename)
   await vi.waitFor(() => expect(purged.length).toBeGreaterThan(0))
-  expect(purgedFiles()).toEqual([...urlsOf(doc)].sort())
-  expect(purged.flatMap((p) => p.stillStored)).toEqual([])
+  expect(purgedFiles()).toEqual([...new Set([...urlsOf(doc), ...urlsOf(updated)])].sort()) // #216: the new file's URLs too
+  expect(purged.flatMap((p) => p.stillStored.filter((u) => !urlsOf(updated).includes(u)))).toEqual([]) // the old ones are gone from storage
+  // #216: the replacement's objects carry the Cache-Control too.
+  const head = await s3.send(new HeadObjectCommand({ Bucket: process.env.S3_BUCKET!, Key: [updated.prefix, updated.filename].filter(Boolean).join('/') }))
+  expect(head.CacheControl).toBe('public, max-age=31536000, immutable')
 })
 
 it('a Cloudflare failure never fails the delete', async () => {

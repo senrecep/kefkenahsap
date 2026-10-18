@@ -7,6 +7,7 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import type { Media } from '@/payload-types'
 import {
   aiReview,
+  aiStalled,
   fitWithin,
   initialFilter,
   isTruncated,
@@ -22,7 +23,7 @@ import { MediaLocalesSync } from './ai/MediaLocalesSync'
 import './galeri.css'
 
 type Option = { id: number; name: string }
-type Item = Pick<Media, 'id' | 'status' | 'title' | 'alt' | 'aiSuggestion' | 'i18nSync' | 'tags' | 'url' | 'filename' | 'sizes' | '_media_media_order'>
+type Item = Pick<Media, 'id' | 'status' | 'title' | 'alt' | 'aiSuggestion' | 'aiFailure' | 'updatedAt' | 'i18nSync' | 'tags' | 'url' | 'filename' | 'sizes' | '_media_media_order'>
 type QueueEntry = { key: string; name: string; state: 'waiting' | 'working' | 'done' | 'error'; message?: string }
 
 const MAX_EDGE = 2560
@@ -222,6 +223,20 @@ export function GaleriClient({ categories, projects, tags }: { categories: Optio
   }
 
   /** #203: re-reads one photo after "Diğer dillere yeniden çevir", so its card shows the new language state. */
+  /** #216: "Yeniden dene": queues the AI suggestion again, then shows the card as "AI hazırlıyor…". */
+  async function retryAi(id: number) {
+    setBusy(id)
+    setCardError((errs) => ({ ...errs, [id]: '' }))
+    try {
+      await api('/api/ai/tag-media', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ id }) })
+      await refresh(id)
+    } catch (e) {
+      setCardError((errs) => ({ ...errs, [id]: (e as Error).message }))
+    } finally {
+      setBusy(null)
+    }
+  }
+
   async function refresh(id: number) {
     try {
       const doc = await api<Item>(`/api/media/${id}?depth=0&locale=tr`)
@@ -453,7 +468,7 @@ export function GaleriClient({ categories, projects, tags }: { categories: Optio
           <ol className="galeri__sortlist">
             {items.map((m, i) => {
               const label = nameOf(m)
-              const badge = mediaBadge(m)
+              const badge = mediaBadge(m, Date.now())
               const src = m.sizes?.w320?.url || m.url || ''
               const last = items.length - 1
               return (
@@ -488,6 +503,12 @@ export function GaleriClient({ categories, projects, tags }: { categories: Optio
                       En sona
                     </button>
                   </div>
+                  {aiStalled(m, Date.now()) && (
+                    <button type="button" className="galeri__btn" disabled={busy === m.id} onClick={() => void retryAi(m.id)}>
+                      {busy === m.id ? 'Sıraya alınıyor…' : 'AI önerisini yeniden dene'}
+                    </button>
+                  )}
+
                   {cardError[m.id] && (
                     <p className="galeri__error" role="alert">
                       {cardError[m.id]}
@@ -510,7 +531,7 @@ export function GaleriClient({ categories, projects, tags }: { categories: Optio
           )}
           <ol className="galeri__grid">
             {visible.map(({ m, i }) => {
-              const badge = mediaBadge(m)
+              const badge = mediaBadge(m, Date.now())
               const src = m.sizes?.w640?.url || m.url || ''
               const label = nameOf(m)
               return (

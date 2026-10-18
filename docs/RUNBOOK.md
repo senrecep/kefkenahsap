@@ -79,6 +79,14 @@ Media is served from `cdn.kefkenahsap.com` / `cdn-dev.kefkenahsap.com` with a on
 - **Pending (owner):** in Cloudflare → My Profile → API Tokens → Create Custom Token, permission **Zone → Cache Purge → Purge** only, Zone Resources **Include → Specific zone → kefkenahsap.com**, nothing else (no DNS, no edit scopes, no other zones). Put it in the Dokploy env of **both** `development` and `production` as `CLOUDFLARE_PURGE_TOKEN`, with `CLOUDFLARE_ZONE_ID=04160cf76d6ba4ad5d37d83145eaae57`; update the raw compose in Dokploy from `docker-compose.dokploy.yml` (it now passes both variables to `app`), then redeploy. Until then the app logs once `media: CLOUDFLARE_ZONE_ID / CLOUDFLARE_PURGE_TOKEN not set; …` and skips the purge.
 - Files deleted before the token was set are still cached: purge them by URL from the Cloudflare dashboard (Caching → Configuration → Custom Purge), or wait out the cache.
 
+### CDN must not cache 404s for a year (#216)
+
+Incident 2026-10-18: a photo's old URLs were requested after a rename and answered 404; the `kefken: cdn immutable` rule cached that 404 for a year (`cache-control: max-age=31536000`, `cf-cache-status: HIT`). A new upload that reused the same keys then kept getting the cached 404.
+
+- **App side (in code):** every new upload (create and file replace) purges its own URLs (original + all sizes) after the objects are written, and every object the app writes (upload, SEO rename copies, `add-sizes` script) carries `Cache-Control: public, max-age=31536000, immutable` and its content type. `tagImage` reads the image from the bucket, never from the CDN.
+- **Pending (owner, Cloudflare dashboard, no code change):** on the `kefken: cdn immutable` rule set **Edge TTL → "Use status code TTL"** with `200-299` = 1 year and `400-599` = **No store / do not cache** (at most `404` = 60 s if no-store is not offered). Once the app with the header above is deployed, set **Browser TTL → "Respect origin"** (`respect_origin`): the browser then keeps files for a year only because the app says so, not for error pages.
+- Check: `curl -sI https://cdn.kefkenahsap.com/does-not-exist.webp | grep -iE 'cache-control|cf-cache-status'` must not show `max-age=31536000`. A stuck 404 on a real file: purge its URL (Caching → Custom Purge).
+
 ### Page caching and Cloudflare HTML (#211)
 
 Public pages are ISR: Next renders each one on its first request and keeps it in `.next` until a Payload save revalidates its tags (immediately, #192) or its data's `revalidate` time passes (1 h). Responses carry `Cache-Control: s-maxage=3600, stale-while-revalidate=…`. Query URLs that change a page (`?kategori`, `?etiket`, `?sayfa`) render per request (`no-store`); tracking parameters stay on the cached page. Unknown URLs answer 404 without being stored.

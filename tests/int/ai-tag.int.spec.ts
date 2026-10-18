@@ -1,12 +1,15 @@
 // #28 tagImage job against a mock model (no network to OpenRouter in tests).
+import { GetObjectCommand, S3Client } from '@aws-sdk/client-s3'
 import { mkdirSync } from 'fs'
 import os from 'os'
 import path from 'path'
-import { getPayload, type Payload } from 'payload'
+import { createLocalReq, getPayload, type Payload } from 'payload'
 import sharp from 'sharp'
 import { afterAll, beforeAll, describe, expect, it, vi } from 'vitest'
 
-import { FAKE_TAG_IMAGE } from '@/ai/fake'
+import { FAKE_TAG_IMAGE, fakeHooks } from '@/ai/fake'
+import { retryTagImage } from '@/ai/tagMedia'
+import { mediaBadge } from '@/lib/media/galeri'
 
 // Model calls go to the deterministic fake (AI_FAKE_PROVIDER=1, set in vitest.setup.ts).
 const SUGGESTION = FAKE_TAG_IMAGE
@@ -87,6 +90,8 @@ describe('tagImage job', () => {
     await payload.jobs.run()
     const tr = await payload.findByID({ collection: 'media', id: m.id, locale: 'tr' })
     expect(tr.alt ?? null).toBeNull()
+    // #216: refused for the budget is a visible state, not silence.
+    expect((tr.aiFailure as { code: string }).code).toBe('AI.BudgetExceeded')
     await payload.updateGlobal({ slug: 'aiSettings', data: { monthlyBudgetUsd: 1000 } })
   })
 
@@ -182,5 +187,96 @@ describe('tagImage job', () => {
       if (envChain !== undefined) process.env.AI_TAGIMAGE_MODELS = envChain
       await payload.updateGlobal({ slug: 'aiSettings', data: { tagImage: [] } })
     }
+  })
+  describe('#216: storage read and visible failures', () => {
+    const queueAndRun = async (id: number | string) => {
+      await payload.jobs.queue({ task: 'tagImage', input: { mediaId: String(id) } })
+      await payload.jobs.run()
+      return payload.findByID({ collection: 'media', id, locale: 'tr' })
+    }
+    const NOW = Date.now()
+
+    it('reads the image from storage: a CDN that answers 404 for its URL changes nothing', async () => {
+      const m = await payload.create({ collection: 'media', data: {}, filePath: IMG })
+      created.push({ collection: 'media', id: m.id })
+      // Every http(s) request answers 404, as a CDN with a cached 404 for the reused key would.
+      const spy = vi.spyOn(globalThis, 'fetch').mockImplementation(async () => new Response('not found', { status: 404 }))
+      try {
+        const tr = await queueAndRun(m.id)
+        expect((tr.aiSuggestion as { at?: string }).at).toBeTruthy()
+        expect(tr.aiFailure ?? null).toBeNull()
+        expect(spy).not.toHaveBeenCalled()
+      } finally {
+        spy.mockRestore()
+      }
+      const usage = await payload.find({ collection: 'ai-usage', where: { docRef: { equals: `media:${m.id}` } } })
+      usage.docs.forEach((d) => created.push({ collection: 'ai-usage', id: d.id }))
+    })
+
+    it('a storage read failure leaves a failed state the Galeri card shows; no model call, no cost row', async () => {
+      const m = await payload.create({ collection: 'media', data: {}, filePath: IMG })
+      created.push({ collection: 'media', id: m.id })
+      const send = S3Client.prototype.send
+      const spy = vi.spyOn(S3Client.prototype, 'send').mockImplementation(function (this: S3Client, command: unknown) {
+        if (command instanceof GetObjectCommand) return Promise.reject(Object.assign(new Error('boom'), { name: 'NoSuchKey' }))
+        return (send as (c: unknown) => Promise<unknown>).call(this, command) as never
+      } as never)
+      let tr
+      try {
+        tr = await queueAndRun(m.id)
+      } finally {
+        spy.mockRestore()
+      }
+      expect(tr.aiSuggestion ?? null).toBeNull()
+      expect((tr.aiFailure as { code: string; at: string }).code).toBe('Media.StorageReadFailed')
+      expect(mediaBadge(tr, NOW).label).toBe('AI önerisi alınamadı')
+      const usage = await payload.find({ collection: 'ai-usage', where: { docRef: { equals: `media:${m.id}` } } })
+      expect(usage.totalDocs).toBe(0)
+    })
+
+    it('a model failure is visible too, and still has its ai-usage row', async () => {
+      const m = await payload.create({ collection: 'media', data: {}, filePath: IMG })
+      created.push({ collection: 'media', id: m.id })
+      fakeHooks.beforeAnswer = () => Promise.reject(new Error('provider down'))
+      let tr
+      try {
+        tr = await queueAndRun(m.id)
+      } finally {
+        delete fakeHooks.beforeAnswer
+      }
+      expect((tr.aiFailure as { code: string }).code).toBeTruthy()
+      expect(mediaBadge(tr, NOW).label).toBe('AI önerisi alınamadı')
+      const usage = await payload.find({ collection: 'ai-usage', where: { docRef: { equals: `media:${m.id}` } } })
+      usage.docs.forEach((d) => created.push({ collection: 'ai-usage', id: d.id }))
+      expect(usage.docs.map((d) => d.ok)).toEqual([false])
+    })
+
+    it('retry clears the failed state, queues the job, and the next run fills the photo', async () => {
+      const m = await payload.create({ collection: 'media', data: {}, filePath: IMG })
+      created.push({ collection: 'media', id: m.id })
+      await payload.update({ collection: 'media', id: m.id, locale: 'tr', context: { skipAi: true }, data: { aiFailure: { code: 'Media.StorageReadFailed', at: new Date().toISOString() } } })
+      const r = await retryTagImage({ payload, req: await createLocalReq({}, payload), id: m.id })
+      expect(r.ok && r.value).toEqual({ queued: true })
+      const cleared = await payload.findByID({ collection: 'media', id: m.id, locale: 'tr' })
+      expect(cleared.aiFailure ?? null).toBeNull()
+      await payload.jobs.run()
+      const tr = await payload.findByID({ collection: 'media', id: m.id, locale: 'tr' })
+      expect((tr.aiSuggestion as { at?: string }).at).toBeTruthy()
+      const usage = await payload.find({ collection: 'ai-usage', where: { docRef: { equals: `media:${m.id}` } } })
+      usage.docs.forEach((d) => created.push({ collection: 'ai-usage', id: d.id }))
+    })
+
+    it('retry on a photo that already has its suggestion queues nothing; an unknown photo is NotFound', async () => {
+      const m = await payload.create({ collection: 'media', data: {}, filePath: IMG })
+      created.push({ collection: 'media', id: m.id })
+      await queueAndRun(m.id)
+      const req = await createLocalReq({}, payload)
+      const done = await retryTagImage({ payload, req, id: m.id })
+      expect(done.ok && done.value).toEqual({ queued: false })
+      const missing = await retryTagImage({ payload, req, id: 987654321 })
+      expect(!missing.ok && missing.errors[0]?.code).toBe('Media.NotFound')
+      const usage = await payload.find({ collection: 'ai-usage', where: { docRef: { equals: `media:${m.id}` } } })
+      usage.docs.forEach((d) => created.push({ collection: 'ai-usage', id: d.id }))
+    })
   })
 })

@@ -26,7 +26,7 @@ import { SEO_RENAME_QUEUE } from './lib/media/seoName'
 import { AiUsage } from './collections/AiUsage'
 import { AiSettings } from './globals/AiSettings'
 import { isFakeAi } from './ai/models'
-import { aiDraftEndpoint, aiTranslateEndpoint, aiTranslateMediaEndpoint } from './endpoints/ai'
+import { aiDraftEndpoint, aiTranslateEndpoint, aiTagMediaEndpoint, aiTranslateMediaEndpoint } from './endpoints/ai'
 import { resendAdapter } from '@payloadcms/email-resend'
 import { redirectsPlugin } from '@payloadcms/plugin-redirects'
 import { hiddenFromEditor, isStaff } from './access'
@@ -102,6 +102,7 @@ export default buildConfig({
     },
     aiTranslateEndpoint,
     aiTranslateMediaEndpoint,
+    aiTagMediaEndpoint,
     aiDraftEndpoint,
   ],
   // The admin is Turkish only (one editor, one language); content localization below is separate.

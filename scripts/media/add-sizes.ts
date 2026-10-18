@@ -13,6 +13,7 @@ import sharp, { type OutputInfo } from 'sharp'
 
 import config from '@/payload.config'
 import { MEDIA_WIDTHS, PORTRAIT } from '@/collections/Media'
+import { MEDIA_CACHE_CONTROL } from '@/lib/media/renameStored'
 import { cropAroundFocalPoint, derivativeFilename, needsDerivative } from '@/lib/media/derivative'
 import { databaseHost, isLocalHost } from '@/lib/quality/target'
 
@@ -65,7 +66,7 @@ for (let page = 1, more = true; more; page++) {
       const sizes: Record<string, unknown> = {}
       const save = async (name: string, { data, info }: { data: Buffer; info: OutputInfo }) => {
         const filename = derivativeFilename(doc.filename!, info.width, info.height)
-        if (!dryRun) await s3.send(new PutObjectCommand({ Bucket: bucket, Key: key(filename), Body: data, ContentType: 'image/webp' }))
+        if (!dryRun) await s3.send(new PutObjectCommand({ Bucket: bucket, Key: key(filename), Body: data, ContentType: 'image/webp', CacheControl: MEDIA_CACHE_CONTROL }))
         sizes[name] = { filename, width: info.width, height: info.height, mimeType: 'image/webp', filesize: data.length }
       }
       for (const [name, width] of todo) {

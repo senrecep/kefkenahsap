@@ -127,6 +127,11 @@ it('approving queues a job that renames the original and every size, moves the o
   // Same bytes: nothing is re-encoded, so the mark is not stacked.
   expect(await bytes(doc.prefix, `${seo}.webp`)).toEqual(stampedBefore)
   expect(await bytes(doc.prefix, `${seo}-480x336.webp`)).toEqual(w480Before)
+  // #216: the copies carry the year-long immutable Cache-Control and their content type (CopyObject REPLACE).
+  for (const f of newFiles) {
+    const head = await s3.send(new HeadObjectCommand({ Bucket: bucket, Key: key(doc.prefix, f) }))
+    expect([f, head.CacheControl, head.ContentType]).toEqual([f, 'public, max-age=31536000, immutable', 'image/webp'])
+  }
 
   const oldURLs = oldFiles.map((f) => new URL(`${BASE}/${key(doc.prefix, f)}`).href)
   const newURLs = newFiles.map((f) => new URL(`${BASE}/${key(doc.prefix, f)}`).href)

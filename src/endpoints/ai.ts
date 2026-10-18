@@ -4,6 +4,7 @@ import { Err } from 'tsentials/errors'
 import { aiErrorResponse, aiGate, aiLimiter, isJsonRequest, positiveId } from '@/ai/guard'
 import { isDraftable, parseNotes } from '@/ai/draft/draft'
 import { draftDocument } from '@/ai/draft/run'
+import { retryTagImage } from '@/ai/tagMedia'
 import { syncMediaLocales } from '@/ai/translate/media'
 import { translateDocument } from '@/ai/translate/run'
 import { isTranslatable } from '@/ai/translate/segments'
@@ -11,6 +12,7 @@ import { isTranslatable } from '@/ai/translate/segments'
 const translateLimiter = aiLimiter()
 const draftLimiter = aiLimiter()
 const mediaLimiter = aiLimiter()
+const tagLimiter = aiLimiter()
 
 /** POST /api/ai/translate { collection, id }: the "AI ile çevir" button. */
 export const aiTranslateEndpoint: Endpoint = {
@@ -58,6 +60,28 @@ export const aiTranslateMediaEndpoint: Endpoint = {
     } catch (e) {
       req.payload.logger.error({ err: e, msg: 'ai translate-media failed' })
       return aiErrorResponse(Err.unexpected('Translate.SaveFailed', 'save failed (see error log)'))
+    }
+  },
+}
+
+/** POST /api/ai/tag-media { id }: "Yeniden dene" on a Galeri card whose AI suggestion failed (#216). Queues tagImage again. */
+export const aiTagMediaEndpoint: Endpoint = {
+  path: '/ai/tag-media',
+  method: 'post',
+  handler: async (req) => {
+    const log = (o: { code: string; detail: string }) => req.payload.logger.warn({ ...o, msg: 'ai tag-media refused/failed' })
+    if (!isJsonRequest(req.headers)) return aiErrorResponse(Err.validation('AI.BadContentType', 'non-JSON body'), log)
+    const gate = await aiGate(req.payload, req, tagLimiter)
+    if (!gate.ok) return aiErrorResponse(gate.errors[0]!, log)
+    await addDataAndFileToRequest(req)
+    const id = positiveId((req.data as { id?: unknown } | undefined)?.id)
+    if (id === undefined) return aiErrorResponse(Err.validation('Translate.BadRequest', `id=${String((req.data as { id?: unknown })?.id)}`), log)
+    try {
+      const r = await retryTagImage({ payload: req.payload, req, id })
+      return r.ok ? Response.json(r.value) : aiErrorResponse(r.errors[0]!, log)
+    } catch (e) {
+      req.payload.logger.error({ err: e, msg: 'ai tag-media failed' })
+      return aiErrorResponse(Err.unexpected('Draft.SaveFailed', 'queue failed (see error log)'))
     }
   },
 }
