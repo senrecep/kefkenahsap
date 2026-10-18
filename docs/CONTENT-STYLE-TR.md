@@ -119,7 +119,7 @@ Kontrol yöntemi: cümleyi sesli okuyun. Usta telefonda bu cümleyi kurmazdı di
    - **thermowood** ısıl işlemle boyutsal kararlılık kazanır, çürümeye dayanımı artar; buna karşılık daha kırılgandır, eğilme dayanımı düşer. Özgül ağırlık veya ömür gibi rakamlar kaynak gösterilmeden yazılmaz.
    - Bilimsel adlarda güncel ad kullanılır: iroko *Milicia excelsa* (eski sitedeki *Chlorophora excelsa* eski addır), teak *Tectona grandis*, sarıçam *Pinus sylvestris*.
 4. **Rakam yalnızca kaynağıyla yazılır.** Eski site tablosundaki özgül ağırlık gibi değerler "yaklaşık, kaynaklarda verilen değer" diye sunulur. Firma ölçümü gibi gösterilmez.
-5. **Sözü edilen hizmet gerçekten verilmeli.** "Garaj kapısı", "kaydırmaz basamak", "beton temel" gibi işler yalnızca firma yaptığını teyit ettiyse yazılır (bkz. `docs/content/CHECKLIST.md`).
+5. **Sözü edilen hizmet gerçekten verilmeli.** Bir iş yalnızca firma yaptığını teyit ettiyse yazılır (bkz. `docs/content/CHECKLIST.md`). Sahip 18.10.2026'da teyit etti: garaj kapısı, beton temel, metal ve karma korkuluk, pergolada tente / şeffaf örtü / oluk ve kamelya çatı örtüsü yapılır. Kumaş/örtü, metal ve beton işlerinde uygun ustayı firma ayarlar ve işi anahtar teslim bitirir; metinde "ustalarımız kaynak yapar / beton döker" gibi yazılmaz. Kaydırmaz basamak detayı, toplantı masası ve yönetici ofisi mobilyası yapılmaz, yazılmaz.
 6. **Zaman ifadesi yazılmaz.** "Bugün", "bu yıl", "son yıllarda" gibi ifadeler metin eskidiğinde yanlış olur. Tarih gerekiyorsa "Güncellendi" alanı kullanılır.
 
 ## 8. Terim sözlüğü (TR ↔ EN)
@@ -145,7 +145,7 @@ Kontrol yöntemi: cümleyi sesli okuyun. Usta telefonda bu cümleyi kurmazdı di
 | küpeşte | handrail | |
 | çit | fence | |
 | bahçe kapısı | garden gate | |
-| seperatör (bölme) | partition, room divider | TR yazımı açık soru (§9). |
+| separatör (bölme) | partition, room divider | TR yazımı "separatör" (sahip kararı, 18.10.2026). Slug `kapi-dolap-ve-seperator` değişmez. |
 | cila | lacquer, polish (genel: finish) | varnish = vernik. Genel son kat için "finish". |
 | vernik | varnish | |
 | ahşap yağı | wood oil, decking oil | |
@@ -168,5 +168,5 @@ Kontrol yöntemi: cümleyi sesli okuyun. Usta telefonda bu cümleyi kurmazdı di
 ## 9. Açık sorular (sahip teyidi bekliyor)
 
 - **Yabancı cins isimlerde kesme işareti (§4.3).** "deck'in" mi, "deckin" mi? Ev kuralı kesme işaretli yazımdır. TDK'nin güncel kuralıyla karşılaştırılmalı.
-- **"Seperatör" mü, "separatör" mü?** Eski site "Seperatör" yazıyor. Slug `kapi-dolap-ve-seperator` değişmez; kategori adı ve metinler için karar bekleniyor (#34 CHECKLIST).
+- ~~**"Seperatör" mü, "separatör" mü?**~~ Karar verildi (sahip, 18.10.2026, #223): kategori adında ve TR metinlerde **"Separatör"** yazılır. Slug `kapi-dolap-ve-seperator`, etiket slug'ı `seperator` ve eski yönlendirmeler değişmez.
 - **"mekân" mı, "mekan" mı?** Seed metinleri şapkalı "mekân" kullanıyor; şimdilik bu korunur.

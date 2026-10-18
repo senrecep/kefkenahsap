@@ -13,7 +13,7 @@ export const SEED_CATEGORIES: SeedCategory[] = [
   { key: 'kopru-ve-iskele', folder: 'Kopru ve Iskele', slug: { tr: 'kopru-ve-iskele', en: 'bridges-and-piers' }, name: { tr: 'Köprü ve İskele', en: 'Bridges and Piers' } },
   { key: 'merdivenler', folder: 'Merdivenler', slug: { tr: 'merdivenler', en: 'stairs' }, name: { tr: 'Merdivenler', en: 'Stairs' } },
   { key: 'ciceklik-ve-oturma-grubu', folder: 'Ciceklik ve Oturma Grubu', slug: { tr: 'ciceklik-ve-oturma-grubu', en: 'planters-and-seating' }, name: { tr: 'Çiçeklik ve Oturma Grubu', en: 'Planters and Seating' } },
-  { key: 'kapi-dolap-ve-seperator', folder: 'Kapi Dolap ve Seperator', slug: { tr: 'kapi-dolap-ve-seperator', en: 'doors-cabinets-and-partitions' }, name: { tr: 'Kapı, Dolap ve Seperatör', en: 'Doors, Cabinets and Partitions' } },
+  { key: 'kapi-dolap-ve-seperator', folder: 'Kapi Dolap ve Seperator', slug: { tr: 'kapi-dolap-ve-seperator', en: 'doors-cabinets-and-partitions' }, name: { tr: 'Kapı, Dolap ve Separatör', en: 'Doors, Cabinets and Partitions' } },
   { key: 'ireko-teak', folder: 'Ireko-Teak', slug: { tr: 'ireko-teak', en: 'iroko-and-teak' }, name: { tr: 'İroko ve Teak', en: 'Iroko and Teak' } },
   { key: 'mobilya-ve-cila', folder: 'Mobilya ve Cila', slug: { tr: 'mobilya-ve-cila', en: 'furniture-and-finishing' }, name: { tr: 'Mobilya ve Cila', en: 'Furniture and Finishing' } },
   { key: 'boya-tamir-ve-bakim', folder: 'Boya Tamir ve Bakim', slug: { tr: 'boya-tamir-ve-bakim', en: 'painting-repair-and-maintenance' }, name: { tr: 'Boya, Tamir ve Bakım', en: 'Painting, Repair and Maintenance' } },

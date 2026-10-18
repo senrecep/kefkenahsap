@@ -39,7 +39,7 @@
     {"axis": "type", "name": {"tr": "Yatak / karyola", "en": "Bed"}, "slug": {"tr": "yatak", "en": "bed"}},
     {"axis": "type", "name": {"tr": "Kapı", "en": "Door"}, "slug": {"tr": "kapi", "en": "door"}},
     {"axis": "type", "name": {"tr": "Pencere / panjur", "en": "Window / shutter"}, "slug": {"tr": "pencere-panjur", "en": "window-shutter"}},
-    {"axis": "type", "name": {"tr": "Seperatör", "en": "Room divider"}, "slug": {"tr": "seperator", "en": "room-divider"}},
+    {"axis": "type", "name": {"tr": "Separatör", "en": "Room divider"}, "slug": {"tr": "seperator", "en": "room-divider"}},
     {"axis": "type", "name": {"tr": "Tavan kaplaması / lambri", "en": "Wooden ceiling"}, "slug": {"tr": "tavan-kaplama", "en": "wooden-ceiling"}},
     {"axis": "type", "name": {"tr": "İç duvar kaplaması", "en": "Interior wall panelling"}, "slug": {"tr": "duvar-kaplama", "en": "interior-wall-panelling"}},
     {"axis": "type", "name": {"tr": "Cephe kaplaması", "en": "Facade cladding"}, "slug": {"tr": "cephe-kaplama", "en": "facade-cladding"}},
