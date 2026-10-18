@@ -115,6 +115,10 @@ Public pages are ISR: Next renders each one on its first request and keeps it in
 - Development: behind Basic auth every page answers `Cache-Control: private, no-store`, so no shared cache keeps an authorised page; Next's own ISR still works there.
 - Not done, owner decision: turn off Cloudflare **Email Obfuscation** (rewrites the HTML, risks React hydration errors, adds a script) and **Web Analytics** (Umami + consented GA4 already cover it; the beacon adds ~10 KB of legacy JS).
 
+### Cloudflare Web Analytics (RUM) (#221)
+
+Owner decision 2026-10-18: Web Analytics stays **on** for `kefkenahsap.com` in the zone's automatic mode "Enable, excluding visitor data in the EU". Cloudflare injects a cookieless beacon (`static.cloudflareinsights.com`) at the edge; nothing in the app loads it. It sends page-load performance data (Core Web Vitals, page URL, referrer, and browser/OS/country derived by Cloudflare) to Cloudflare, sets no cookie and is therefore not behind the consent banner. The KVKK notice (Cloudflare recipient entry) and the cookie policy (`cfAnalytics` section) say so in all locales; if the setting is turned off, remove both texts and bump `KVKK_TEXT_DATE` + the hash in `src/content/legal/legal.test.ts`. Check: Cloudflare → Analytics & Logs → Web Analytics.
+
 ### Loading translations
 
 Translations for the locales other than TR/EN live in `seed/i18n/<locale>/`, which mirrors `seed/` (`content/**`, `media-meta/**`, `media-meta-archive/**`). TR/EN text fixes for the seeded photos live in `seed/i18n/sentence-case.json` (titles) and `seed/i18n/text-fixes.json` (any field, e.g. captions). The loaders fill only empty fields and skip missing files. A re-run writes nothing.

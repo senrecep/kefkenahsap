@@ -43,7 +43,7 @@ Başarı (lansmandan 3 ay sonra ölçülür):
 | Animasyon | Motion (UI), GSAP ScrollTrigger (scroll), OGL (hero shader, 3D numune) | hepsi lazy |
 | Galeri | Kendi masonry (sunucuda bilinen en-boy oranıyla, CLS=0) + PhotoSwipe 5 lightbox | |
 | Hata | GlitchTip (`@sentry/nextjs` SDK) | |
-| Analitik | Umami (çerezsiz) + GA4 (Consent Mode v2) + GSC | |
+| Analitik | Umami (çerezsiz) + GA4 (Consent Mode v2) + GSC + Cloudflare Web Analytics (çerezsiz RUM, bölgenin otomatik modu "AB ziyaretçi verisi hariç"; sahip kararı 2026-10-18, #221) | |
 | CDN/Güvenlik | Cloudflare (DNS, proxy, Cache Rules, Turnstile, WAF — AI botları açık) | |
 
 ### 3.2 Servisler (tek `docker-compose.yml`, her yerde çalışır)
