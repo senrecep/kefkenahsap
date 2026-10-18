@@ -8,6 +8,7 @@ import { getPayload, type Payload } from 'payload'
 import sharp from 'sharp'
 import { afterAll, afterEach, beforeAll, expect, it, vi } from 'vitest'
 
+import { SEO_RENAME_QUEUE } from '@/lib/media/seoName'
 import config from '@/payload.config'
 
 let payload: Payload
@@ -140,6 +141,13 @@ it('approving through the English edit form still names the file from the SEO na
   expect((await read(doc.id)).filename).toBe(`${seo}.webp`)
 })
 
+it('approving queues the job on its own queue, not the default one', async () => {
+  const doc = await create({ seoFilename: `seo-queue-${run}` })
+  await approve(doc.id)
+  const [job] = await openJobs(doc.id)
+  expect(job!.queue).toBe(SEO_RENAME_QUEUE)
+})
+
 it('a document created as approved gets renamed too', async () => {
   const seo = `seo-created-${run}`
   const doc = await create({ seoFilename: seo, status: 'approved' })
@@ -188,7 +196,7 @@ it('a later approval, edit or seoFilename change renames nothing; re-running the
   await payload.update({ collection: 'media', id: doc.id, data: { title: 'Yeni başlık', seoFilename: `${seo}-yeni` }, context: { skipAi: true } })
   await approve(doc.id)
   expect(await openJobs(doc.id)).toHaveLength(0)
-  const job = await payload.jobs.queue({ task: 'seoRename', input: { mediaId: String(doc.id) } })
+  const job = await payload.jobs.queue({ task: 'seoRename', input: { mediaId: String(doc.id) }, queue: SEO_RENAME_QUEUE })
   purged.length = 0
   await payload.jobs.runByID({ id: job.id })
   const again = await read(doc.id)
@@ -321,7 +329,7 @@ it('a forced job renames a hidden photo (the one-off script)', async () => {
   const seo = `seo-force-${run}`
   const doc = await create({ seoFilename: seo, status: 'hidden' })
   expect(await openJobs(doc.id)).toHaveLength(0)
-  const job = await payload.jobs.queue({ task: 'seoRename', input: { mediaId: String(doc.id), force: true } })
+  const job = await payload.jobs.queue({ task: 'seoRename', input: { mediaId: String(doc.id), force: true }, queue: SEO_RENAME_QUEUE })
   await payload.jobs.runByID({ id: job.id })
   const done = await read(doc.id)
   expect(done.filename).toBe(`${seo}.webp`)

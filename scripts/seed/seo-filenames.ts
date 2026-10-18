@@ -8,7 +8,7 @@
 // Run: bun run payload run scripts/seed/seo-filenames.ts [-- --dry-run | --yes]
 import { getPayload } from 'payload'
 
-import { needsSeoRename } from '@/lib/media/seoName'
+import { SEO_RENAME_QUEUE, needsSeoRename } from '@/lib/media/seoName'
 import config from '@/payload.config'
 
 import { guardTarget } from './i18n'
@@ -26,7 +26,7 @@ let count = 0
 
 for (const doc of todo) {
   try {
-    if (!dryRun) await payload.jobs.queue({ task: 'seoRename', input: { mediaId: String(doc.id), force: true } })
+    if (!dryRun) await payload.jobs.queue({ task: 'seoRename', input: { mediaId: String(doc.id), force: true }, queue: SEO_RENAME_QUEUE })
     console.log(`#${doc.id} [${doc.status}] ${doc.filename}`)
     count++
   } catch (err) {

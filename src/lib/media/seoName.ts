@@ -2,6 +2,9 @@ import { slugify } from '@/lib/slug'
 
 /** #209: stored media files carry the SEO name, not the upload name. Pure naming rules; the storage work is in renameStored.ts. */
 
+/** Own job queue (payload.config.ts autoRun): a bulk approve must not crowd the default queue. Pass it to jobs.queue. */
+export const SEO_RENAME_QUEUE = 'media-files'
+
 const MAX = 60
 const dot = (filename: string) => filename.lastIndexOf('.')
 export const stemOf = (filename: string) => (dot(filename) < 0 ? filename : filename.slice(0, dot(filename)))

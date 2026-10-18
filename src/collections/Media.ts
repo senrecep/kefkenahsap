@@ -22,7 +22,7 @@ import { mediaFileURL } from '@/lib/media/url'
 import { createCdnPurger, mediaPublicURLs } from '@/lib/media/cdn-purge'
 import { createReporter } from '@/lib/observability/report'
 import { checkPublishable, type MediaStatus } from '@/lib/media/publish'
-import { isSeoNamed, needsSeoRename, stemOf } from '@/lib/media/seoName'
+import { SEO_RENAME_QUEUE, isSeoNamed, needsSeoRename, stemOf } from '@/lib/media/seoName'
 import { approvalTags, type TagRef } from '@/lib/media/taxonomy'
 import { applyWatermark, isStampable } from '@/lib/media/watermark'
 import { revalidateAfterChange, revalidateAfterDelete } from '@/hooks/revalidate'
@@ -233,7 +233,7 @@ const queueAiSuggestion: CollectionAfterChangeHook = async ({ doc, operation, re
 const queueSeoRename: CollectionAfterChangeHook = async ({ doc, req }) => {
   if (req.context.skipCloudStorage || req.context.seoRenameJob || !needsSeoRename(doc)) return doc
   try {
-    await req.payload.jobs.queue({ task: 'seoRename', input: { mediaId: String(doc.id) }, req })
+    await req.payload.jobs.queue({ task: 'seoRename', input: { mediaId: String(doc.id) }, queue: SEO_RENAME_QUEUE, req })
   } catch (err) {
     // The photo stays under its upload name; scripts/seed/seo-filenames.ts renames it later.
     req.payload.logger.warn({ err, media: doc.id }, 'media: could not queue seoRename')
