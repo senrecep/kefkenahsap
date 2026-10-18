@@ -105,7 +105,7 @@ Tüm metin alanları `localized: true`. Taslak/versiyon (`versions.drafts`) + Li
 
 ### Global'ler
 - **siteSettings**: şirket adı, kuruluş yılı (boşsa hiçbir "X yıl" ifadesi render edilmez), kurucu/usta, ekip, proje sayısı, NAP (adres, geo, telefonlar, e-posta), çalışma saatleri, WhatsApp numarası + **mesaj şablonları** (sayfa türüne göre), sosyal profiller (Instagram, Facebook, GBP URL), hizmet bölgeleri (areaServed).
-- **homepage**: blok listesi (aç/kapa + sıralama) — Hero (görsel + en fazla 6 sonraki slayt, sürükleyerek sıralanır; #187, sahibin 2026-10-17 isteği), Öne çıkan galeri, Hizmetler, Öne çıkan projeler, Süreç, Referanslar, Ahşap türleri, SSS, İletişim.
+- **homepage**: blok listesi (aç/kapa + sıralama) — Hero (görsel + en fazla 6 sonraki slayt, sürükleyerek sıralanır; #187, sahibin 2026-10-17 isteği), Öne çıkan galeri, Hizmetler, Öne çıkan projeler, Süreç, Referanslar, Ahşap türleri, SSS, İletişim. Boş başlık/adım alanları sitede `messages` varsayılanına düşer (güvenlik ağı); `scripts/seed/homepage-defaults.ts` bunları admin alanlarına bir kez yazar (#213).
 - **navigation**: header/footer linkleri.
 - **aiSettings**: görev bazlı model zinciri (bkz. §8), aylık bütçe limiti, terim sözlüğü (TR↔EN↔…).
 

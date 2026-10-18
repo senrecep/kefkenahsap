@@ -119,6 +119,14 @@ bun run payload run scripts/seed/guides-finish.ts -- --dry-run && bun run payloa
 bun run payload run scripts/seed/editorial-swaps.ts -- --dry-run && bun run payload run scripts/seed/editorial-swaps.ts
 ```
 
+### Homepage defaults in the admin (#213)
+
+An empty section heading (or empty Süreç steps) still renders: the site falls back to `messages/<locale>/home.json`. `scripts/seed/homepage-defaults.ts` copies exactly that text into the empty admin fields of every locale (headings, hero subheading, Süreç steps), so the admin shows what the site shows. It never overwrites a value, keeps block ids and order, and publishes (every locale, like the admin's publish button). It refuses when the latest version is a draft that differs from the published one (`--use-draft` fills that draft instead). It checks that the text the site renders is unchanged and reads every locale back after writing. A re-run writes nothing.
+
+```bash
+bun run payload run scripts/seed/homepage-defaults.ts -- --dry-run && bun run payload run scripts/seed/homepage-defaults.ts -- --yes
+```
+
 ### Category rename and new categories (#172)
 
 Run only after the owner has approved it. Until then, the deployed code works with the old data. "Ahşap Yapılar" stays live under its old slugs, and the new slugs (`/tr/sundurma-ve-ahsap-cati`…) redirect to them.

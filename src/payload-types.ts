@@ -1544,7 +1544,13 @@ export interface Homepage {
              * İlk slayt yukarıdaki görseldir; buradaki fotoğraflar sırayla onu izler (en fazla 6). Sürükleyerek sıralayın. Boş bırakırsanız tek fotoğraf gösterilir. Sonradan gizlenen bir fotoğrafı yayınlamadan önce buradan çıkarın.
              */
             slides?: (number | Media)[] | null;
+            /**
+             * Boş bırakılırsa sitedeki varsayılan başlık kullanılır.
+             */
             heading?: string | null;
+            /**
+             * Boş bırakılırsa sitedeki varsayılan alt başlık kullanılır.
+             */
             subheading?: string | null;
             id?: string | null;
             blockName?: string | null;
@@ -1552,6 +1558,9 @@ export interface Homepage {
           }
         | {
             enabled?: boolean | null;
+            /**
+             * Boş bırakılırsa sitedeki varsayılan başlık kullanılır.
+             */
             heading?: string | null;
             limit?: number | null;
             id?: string | null;
@@ -1560,6 +1569,9 @@ export interface Homepage {
           }
         | {
             enabled?: boolean | null;
+            /**
+             * Boş bırakılırsa sitedeki varsayılan başlık kullanılır.
+             */
             heading?: string | null;
             id?: string | null;
             blockName?: string | null;
@@ -1567,6 +1579,9 @@ export interface Homepage {
           }
         | {
             enabled?: boolean | null;
+            /**
+             * Boş bırakılırsa sitedeki varsayılan başlık kullanılır.
+             */
             heading?: string | null;
             id?: string | null;
             blockName?: string | null;
@@ -1574,7 +1589,13 @@ export interface Homepage {
           }
         | {
             enabled?: boolean | null;
+            /**
+             * Boş bırakılırsa sitedeki varsayılan başlık kullanılır.
+             */
             heading?: string | null;
+            /**
+             * Liste boş bırakılırsa sitedeki varsayılan adımlar gösterilir.
+             */
             steps?:
               | {
                   title: string;
@@ -1588,6 +1609,9 @@ export interface Homepage {
           }
         | {
             enabled?: boolean | null;
+            /**
+             * Boş bırakılırsa sitedeki varsayılan başlık kullanılır.
+             */
             heading?: string | null;
             id?: string | null;
             blockName?: string | null;
@@ -1595,6 +1619,9 @@ export interface Homepage {
           }
         | {
             enabled?: boolean | null;
+            /**
+             * Boş bırakılırsa sitedeki varsayılan başlık kullanılır.
+             */
             heading?: string | null;
             id?: string | null;
             blockName?: string | null;
@@ -1602,6 +1629,9 @@ export interface Homepage {
           }
         | {
             enabled?: boolean | null;
+            /**
+             * Boş bırakılırsa sitedeki varsayılan başlık kullanılır.
+             */
             heading?: string | null;
             items?:
               | {
@@ -1616,6 +1646,9 @@ export interface Homepage {
           }
         | {
             enabled?: boolean | null;
+            /**
+             * Boş bırakılırsa sitedeki varsayılan başlık kullanılır.
+             */
             heading?: string | null;
             id?: string | null;
             blockName?: string | null;

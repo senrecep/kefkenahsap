@@ -9,7 +9,8 @@ const enabled = { name: 'enabled', type: 'checkbox' as const, defaultValue: true
 // image/mobileImage: filterOptions also validates on save, and a hero photo hidden later must not block every save
 // (the page already falls back for it).
 const approvedOnly = { status: { equals: 'approved' } } as const
-const heading = { name: 'heading', type: 'text' as const, localized: true, label: 'Başlık' }
+// An empty heading/steps list still renders: the page falls back to its built-in default text (messages/*/home.json).
+const heading = { name: 'heading', type: 'text' as const, localized: true, label: 'Başlık', admin: { description: 'Boş bırakılırsa sitedeki varsayılan başlık kullanılır.' } }
 
 const blocks: Block[] = [
   {
@@ -39,7 +40,7 @@ const blocks: Block[] = [
         },
       },
       heading,
-      { name: 'subheading', type: 'textarea', localized: true, label: 'Alt başlık' },
+      { name: 'subheading', type: 'textarea', localized: true, label: 'Alt başlık', admin: { description: 'Boş bırakılırsa sitedeki varsayılan alt başlık kullanılır.' } },
     ],
   },
   { slug: 'featuredGallery', labels: { singular: 'Öne çıkan galeri', plural: 'Öne çıkan galeri' }, fields: [enabled, heading, { name: 'limit', type: 'number', defaultValue: 24, label: 'Gösterilecek fotoğraf sayısı' }] },
@@ -57,6 +58,7 @@ const blocks: Block[] = [
         localized: true,
         label: 'Adımlar',
         labels: { singular: 'Adım', plural: 'Adımlar' },
+        admin: { description: 'Liste boş bırakılırsa sitedeki varsayılan adımlar gösterilir.' },
         fields: [{ name: 'title', type: 'text', required: true, label: 'Başlık' }, { name: 'text', type: 'textarea', label: 'Açıklama' }],
       },
     ],
