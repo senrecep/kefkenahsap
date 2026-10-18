@@ -6,15 +6,16 @@ import { buttonClass } from '@/components/ui/button'
 import { Picture } from '@/components/ui/Picture'
 import type { GalleryItem } from '@/lib/gallery/item'
 import type { GalleryLabels } from '@/lib/gallery/labels'
-import { distribute, evenColumns, largestFirstScreenItem } from '@/lib/gallery/masonry'
+import { distribute, evenColumns, largestFirstScreenItem, placements } from '@/lib/gallery/masonry'
 
 import type { LightboxProps } from './Lightbox'
 
-// One server-computed layout per breakpoint; the hidden copies are display:none, so their lazy images never load.
+// One server-computed column layout per breakpoint (2 / 3 / 4 columns, `.masonry` in styles.css). The tiles render once
+// and CSS places them for the active breakpoint (#215); `media` picks that layout for the lightbox on click.
 const LAYOUTS = [
-  { cols: 2, className: 'grid grid-cols-2 gap-2 sm:gap-3 md:hidden' },
-  { cols: 3, className: 'hidden grid-cols-3 gap-4 md:grid lg:hidden' },
-  { cols: 4, className: 'hidden grid-cols-4 gap-4 lg:grid' },
+  { cols: 2, media: '(max-width: 47.99rem)' },
+  { cols: 3, media: '(min-width: 48rem) and (max-width: 63.99rem)' },
+  { cols: 4, media: '(min-width: 64rem)' },
 ] as const
 // Scrolling loads at most this many pages by itself; then the button takes over so the footer stays reachable.
 const AUTO_PAGES = 2
@@ -22,8 +23,8 @@ const AUTO_PAGES = 2
 const SIZES = '(min-width: 1280px) 296px, (min-width: 1024px) calc(25vw - 1.5rem), (min-width: 768px) calc(33.4vw - 1.6rem), calc(50vw - 1.25rem)'
 // `priority` (a grid at the top of the page): the phone grid's likely LCP card, the tallest of the first two rows, loads
 // with high priority (#129); the other cards of those rows load eagerly at normal priority, as a lazy image only starts
-// after layout and the real LCP card can be another one (#211). Only in the 2-column copy, because an eager image in a
-// display:none copy still downloads (on desktop it resolves to the w320 the visible grid uses anyway).
+// after layout and the real LCP card can be another one (#211). Picked from the phone layout; on wider screens these are
+// still first-screen cards.
 const FIRST_SCREEN_ROWS = 2
 
 /** Masonry gallery: SSR first page, infinite feed appended to column ends, lightbox loaded on first open. */
@@ -67,7 +68,7 @@ export function GalleryGridClient({
         const columns = trim ? evenColumns(items, all) : all
         // The photos this layout shows, in feed order: what its lightbox steps through.
         const shown = trim ? columns.flat().sort((a, b) => a - b) : null
-        return { ...l, columns, shown }
+        return { ...l, columns, shown, ...placements(items, columns) }
       }),
     [items, trim],
   )
@@ -125,49 +126,50 @@ export function GalleryGridClient({
     setSeq(shown)
     setOpen(shown ? shown.indexOf(index) : index)
   }
-  const onCardClick = (e: MouseEvent<HTMLAnchorElement>, index: number, shown: number[] | null) => {
+  const onCardClick = (e: MouseEvent<HTMLAnchorElement>, index: number) => {
     if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return
     e.preventDefault()
-    void openAt(index, shown)
+    // The layout on screen now decides which photos (a trimmed grid hides some per layout) the lightbox steps through.
+    const active = layouts.find((l) => window.matchMedia(l.media).matches) ?? phone
+    void openAt(index, active.shown)
   }
   const lightboxItems = seq ? seq.map((i) => items[i]!) : items
 
   return (
     <div>
-      {layouts.map((layout) => (
-        <div key={layout.cols} className={layout.className}>
-          {layout.columns.map((col, c) => (
-            <ul key={c} className="flex min-w-0 flex-col gap-2 sm:gap-3 md:gap-4">
-              {col.map((i, row) => {
-                const item = items[i]!
-                return (
-                  <li key={item.id}>
-                    <a
-                      href={item.href}
-                      onClick={(e) => onCardClick(e, i, layout.shown)}
-                      data-gallery-item
-                      data-umami-event="gallery_open"
-                      className="group block overflow-hidden rounded-[var(--radius-photo)]"
-                    >
-                      <Picture
-                        media={item.media}
-                        alt={item.alt}
-                        altLang={item.altLang}
-                        sizes={SIZES}
-                        maxWidth={960}
-                        // Hidden on desktop yet still fetched: it resolves to the w320 the visible grid shows, so no extra bytes.
-                        priority={layout === phone && i === lcpItem}
-                        eager={priority && layout === phone && row < FIRST_SCREEN_ROWS}
-                        imgClassName="transition-transform duration-500 ease-[var(--ease-out-expo)] group-hover:scale-[1.03]"
-                      />
-                    </a>
-                  </li>
-                )
-              })}
-            </ul>
-          ))}
-        </div>
-      ))}
+      {/* One list in feed order (DOM, tab and lightbox order agree); each tile carries its place in every layout. */}
+      <div className="masonry">
+        <ul style={Object.fromEntries(layouts.map((l) => [`--h${l.cols}`, l.height]))}>
+          {items.map((item, i) => {
+            const place = Object.fromEntries(layouts.flatMap((l) => { const p = l.at[i]; return p ? [[`--c${l.cols}`, p.col], [`--y${l.cols}`, p.y], [`--k${l.cols}`, p.k]] : [] }))
+            // A trimmed grid hides a tile in the layouts that drop it (masonry-hide-N in styles.css).
+            const hidden = layouts.filter((l) => !l.at[i]).map((l) => `masonry-hide-${l.cols}`).join(' ')
+            const top = phone.at[i]
+            return (
+              <li key={item.id} style={place} className={hidden || undefined}>
+                <a
+                  href={item.href}
+                  onClick={(e) => onCardClick(e, i)}
+                  data-gallery-item
+                  data-umami-event="gallery_open"
+                  className="group block overflow-hidden rounded-[var(--radius-photo)]"
+                >
+                  <Picture
+                    media={item.media}
+                    alt={item.alt}
+                    altLang={item.altLang}
+                    sizes={SIZES}
+                    maxWidth={960}
+                    priority={i === lcpItem}
+                    eager={priority && top !== undefined && top.k < FIRST_SCREEN_ROWS}
+                    imgClassName="transition-transform duration-500 ease-[var(--ease-out-expo)] group-hover:scale-[1.03]"
+                  />
+                </a>
+              </li>
+            )
+          })}
+        </ul>
+      </div>
 
       {cursor && (
         <div ref={sentinel} className="mt-6 flex flex-col items-center gap-4">

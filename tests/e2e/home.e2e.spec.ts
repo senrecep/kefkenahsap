@@ -73,6 +73,9 @@ test.describe('homepage', () => {
     const tiles = page.locator('[data-gallery-item]:visible')
     const shown = await tiles.count()
     expect(shown).toBeGreaterThan(0)
+    // #215: rendered once; a trimmed tile stays in the DOM only as a hidden card of this layout, never as a copy.
+    const hrefs = await page.locator('[data-gallery-item]').evaluateAll((a) => a.map((x) => x.getAttribute('href')))
+    expect(new Set(hrefs).size).toBe(hrefs.length)
     await tiles.first().click()
     await expect(page.getByRole('dialog').getByText(new RegExp(`^1 / ${shown}$`))).toBeVisible()
   })

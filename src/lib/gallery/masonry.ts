@@ -110,3 +110,25 @@ export function evenColumns(items: readonly Box[], columns: readonly number[][],
   const plain = trimColumns(items, columns)
   return even.flat().length >= plain.flat().length ? even : plain
 }
+
+export type Placement = { col: number; y: number; k: number }
+const round = (n: number) => Math.round(n * 1e6) / 1e6
+
+/**
+ * #215: one rendered grid instead of a copy per breakpoint. For a column layout: each tile's column, how far down it
+ * starts (`y` in column widths, `k` tiles above it, i.e. gaps) and the grid height as a CSS length over `--cw` (column
+ * width) and `--gap`, so CSS can place the tiles at any width. Unplaced (trimmed) tiles get `undefined`.
+ */
+export function placements(items: readonly Box[], columns: readonly number[][]): { at: (Placement | undefined)[]; height: string } {
+  const ratio = (b: Box) => (b.width && b.height ? b.height / b.width : 1)
+  const at: (Placement | undefined)[] = items.map(() => undefined)
+  const tails = columns.map((col, c) => {
+    let y = 0
+    col.forEach((i, k) => {
+      at[i] = { col: c, y: round(y), k }
+      y += ratio(items[i]!)
+    })
+    return col.length ? `calc(${round(y)} * var(--cw) + ${col.length - 1} * var(--gap))` : '0px'
+  })
+  return { at, height: `max(${tails.join(', ')})` }
+}

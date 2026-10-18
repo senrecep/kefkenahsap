@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { balanceColumns, distribute, evenColumns, largestFirstScreenItem, trimColumns } from './masonry'
+import { balanceColumns, distribute, evenColumns, largestFirstScreenItem, placements, trimColumns } from './masonry'
 
 // Ratios chosen so the hand-computed column heights are exact.
 const landscape = { width: 400, height: 200 } // 0.5
@@ -153,5 +153,23 @@ describe('evenColumns (#156: the homepage grid, a fixed set)', () => {
       const items = Array.from({ length: 16 }, () => r(ratios[Math.floor(rnd() * ratios.length)]!))
       for (const n of [2, 3, 4]) expect(evenColumns(items, distribute(items, n)).flat().length).toBeGreaterThanOrEqual(trimColumns(items, distribute(items, n)).flat().length)
     }
+  })
+})
+
+// #215: one rendered grid, positioned per breakpoint from these numbers (CSS calc), instead of a copy per breakpoint.
+describe('placements (where each tile sits in a column layout)', () => {
+  // ratio = height / width: A square 1, B landscape 0.5, C portrait 2, D no size (counts as square, like distribute).
+  const items = [{ width: 10, height: 10 }, { width: 20, height: 10 }, { width: 10, height: 20 }, {}]
+  it('gives each placed tile its column, the column widths above it and the tiles above it', () => {
+    const { at } = placements(items, [[0, 2], [1, 3]])
+    expect(at).toEqual([{ col: 0, y: 0, k: 0 }, { col: 1, y: 0, k: 0 }, { col: 0, y: 1, k: 1 }, { col: 1, y: 0.5, k: 1 }])
+  })
+  it('leaves a trimmed tile unplaced', () => {
+    expect(placements(items, [[0], [1]]).at).toEqual([{ col: 0, y: 0, k: 0 }, { col: 1, y: 0, k: 0 }, undefined, undefined])
+  })
+  it('sizes the grid by its tallest column, gaps between tiles included', () => {
+    // col 0: 1 + 2 = 3 widths and one gap; col 1: 0.5 + 1 = 1.5 widths and one gap.
+    expect(placements(items, [[0, 2], [1, 3]]).height).toBe('max(calc(3 * var(--cw) + 1 * var(--gap)), calc(1.5 * var(--cw) + 1 * var(--gap)))')
+    expect(placements(items, [[0], []]).height).toBe('max(calc(1 * var(--cw) + 0 * var(--gap)), 0px)')
   })
 })
