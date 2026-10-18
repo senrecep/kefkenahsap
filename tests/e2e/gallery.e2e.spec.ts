@@ -9,9 +9,11 @@ test.describe('gallery', () => {
     await expect(page.getByRole('heading', { level: 1, name: 'Galeri' })).toBeVisible()
     const visible = page.locator('[data-gallery-item]:visible')
     await expect(visible).toHaveCount(PAGE_SIZE)
-    // LCP (#129): exactly one card, in the phone (2-column) copy, loads eagerly; everything else stays lazy.
+    // LCP (#129, #211): the phone (2-column) copy's first two rows load eagerly, the likeliest LCP card of them with high
+    // priority; everything else stays lazy.
     const eager = page.locator('[data-gallery-item] img[loading="eager"]')
-    expect(await eager.count()).toBe(1)
+    expect(await eager.count()).toBe(4)
+    await expect(page.locator('[data-gallery-item] img[fetchpriority="high"]')).toHaveCount(1)
     for (const img of await eager.all()) await expect(img.locator('xpath=ancestor::div[contains(@class, "grid-cols-2")]')).toHaveCount(1)
 
     // Scrolling to the end appends the next page from the feed.
