@@ -34,7 +34,7 @@ The site is a public portfolio and lead generator, replacing a 2018 WordPress si
 
 ## Operating Context
 
-- Work categories (16, #172): Sundurma ve Ahşap Çatı (formerly Ahşap Yapılar), Boya Tamir ve Bakım, Çiçeklik ve Oturma Grubu, Deck ve Zeminler, Ireko-Teak, Kapı Dolap ve Seperatör, Köprü ve İskele, Korkuluk ve Çit, Merdivenler, Mobilya ve Cila, Pergola ve Kamelyalar, Bahçe ve Köpek Kulübeleri, Ahşap Ev ve Bungalov, Bahçe Mobilyası, Mutfak ve Gömme Dolap, Lambri ve Kaplama.
+- Work categories (16, #172): Sundurma ve Ahşap Çatı (formerly Ahşap Yapılar), Boya Tamir ve Bakım, Çiçeklik ve Oturma Grubu, Deck ve Zeminler, Ireko-Teak, Kapı Dolap ve Separatör, Köprü ve İskele, Korkuluk ve Çit, Merdivenler, Mobilya ve Cila, Pergola ve Kamelyalar, Bahçe ve Köpek Kulübeleri, Ahşap Ev ve Bungalov, Bahçe Mobilyası, Mutfak ve Gömme Dolap, Lambri ve Kaplama.
 - Content model: categories, tags (wood species, setting, color/finish, before/after/process/detail), projects (location, year, wood, size, duration, finish, testimonial), guides/blog, admin-managed region pages, references.
 - Location: Mavigöl, Münteha Sk. No:31, Arnavutköy/İstanbul. Service area is Istanbul first, then all of Türkiye.
 - Contact channels: WhatsApp/GSM 0532 295 84 16, landline 0212 322 43 59, kefkenahsapdekorasyon@gmail.com (info@kefkenahsap.com once active). Instagram (instagram.com/kefken_ahsap_dek_gokturk; the handle will be renamed), Facebook (facebook.com/kefkenahsapdekorasyon) and a verified Google Business Profile (5.0, 9 reviews) exist.

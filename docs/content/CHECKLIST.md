@@ -1,6 +1,6 @@
 # İçerik kontrol listesi (#34): ilk TR + EN geçişi
 
-**Durum: TASLAK. Sahibinin onayını bekliyor.** Metinler `seed/content/**` altında. `scripts/seed/content.ts` bunları **taslak** (draft) olarak yükler. Yayına alma, admin'de "Yayınla" ile yapılır.
+**Durum: sahip onay sorularını 18.10.2026'da yanıtladı (#223).** Kararlar aşağıda her maddenin yanında "Karar (18.10.2026)" olarak yazılı; metinler 5 dilde (tr, en, ru, de, ar) buna göre düzeltildi. Açık kalanlar en altta, "Açık kalanlar" bölümünde; hiçbiri yayını engellemiyor. Metinler `seed/content/**` altında. `scripts/seed/content.ts` bunları **taslak** (draft) olarak yükler. Yayına alma, admin'de "Yayınla" ile yapılır.
 
 Sayılar `src/lib/content/content.test.ts` ile aynı kuraldan üretildi (`wordCount`). Testler her kategori için şunları zorunlu tutar:
 - Açıklama TR ve EN'de 300–600 kelime.
@@ -20,7 +20,7 @@ Sayılar `src/lib/content/content.test.ts` ile aynı kuraldan üretildi (`wordCo
 | Köprü ve İskele | 19 | 47 | 340 / 415 | 5 | 5 / 5 | ✓ |
 | Merdivenler | 17 | 26 | 309 / 397 | 4 | 5 / 5 | ✓ |
 | Çiçeklik ve Oturma Grubu | 16 | 39 | 319 / 410 | 4 | 5 / 5 | ✓ |
-| Kapı, Dolap ve Seperatör | 19 | 39 | 325 / 410 | 5 | 5 / 5 | ✓ |
+| Kapı, Dolap ve Separatör | 19 | 39 | 325 / 410 | 5 | 5 / 5 | ✓ |
 | İroko ve Teak | 18 | 37 | 354 / 424 | 5 | 6 / 6 | ✓ |
 | Mobilya ve Cila | 18 | 32 | 311 / 398 | 5 | 5 / 5 | ✓ |
 | Boya, Tamir ve Bakım | 17 | 33 | 309 / 392 | 4 | 6 / 6 | ✓ |
@@ -46,55 +46,55 @@ Her kategoride ortak olanlar:
   - İş türlerine örnekler: köpek kulübesi, kemerli köprü, T iskele, klima kasası, tekne konsolu.
 - **Eski siteden alınanlar:** "her türlü ahşap ve emprenyeli ahşap imalat ve montaj", "gelenekten geleceğe uzanan ahşap sevdamız", "her türlü tamirat ve bakım işleri yapılır" ve Hizmetlerimiz listesi.
 - **Eski siteden bilerek alınmayanlar** (CLAUDE.md, decisions #33/#54): "30 senelik tecrübe", "hızlı teslim", "yüksek kalite", "uzman ekipler", "ileri yapım teknikleri".
-- **Thermowood ve kompozit kategori metinlerinde yok.** Ne eski sitede ne fotoğraf etiketlerinde geçiyor. Thermowood yalnızca "Ahşap türleri" rehberinde (#49) genel bilgi olarak anlatılıyor; firmanın thermowood işi yaptığı söylenmiyor.
+- **Thermowood ve kompozit kategori metinlerinde yok.** Ne eski sitede ne fotoğraf etiketlerinde geçiyor. Thermowood yalnızca "Ahşap türleri" rehberinde (#49) genel bilgi olarak anlatılıyor; firmanın thermowood işi yaptığı söylenmiyor. → **Karar (18.10.2026): firma thermowood ile çalışıyor. Deck ve Zeminler'e ve Thermowood rehberine birer cümle eklendi (#223). Kompozit hâlâ yok.**
 
 ## Sahibinin onaylaması gereken cümleler
 
 Genel bilgi ya da fotoğraf etiketlerinden çıkarım. Yanlışsa düzeltilmeli veya silinmeli.
 
 **Bakım aralıkları (genel bilgi, firmaya özgü değil)**
-1. Deck: "yılda en az bir kez yıkamak … yağla beslemek", "Genellikle yılda bir kez yeterlidir."
-2. İroko/Teak: "yılda bir ya da iki kez yıkayıp … yağ sürmek yeterlidir."
-3. Ahşap Yapılar: "Genellikle birkaç yılda bir yapılan zımpara ve boya ile…"
-4. Boya, Tamir ve Bakım: "Deck gibi yatay yüzeyler genellikle yılda bir yağ ister." Ayrıca bakım mevsimi olarak ilkbahar ve sonbahar öneriliyor.
-5. Köprü ve İskele: "Bağlantı cıvatalarını ve korkuluk dikmelerini her sezon kontrol etmek gerekir."
+1. Deck: "yılda en az bir kez yıkamak … yağla beslemek", "Genellikle yılda bir kez yeterlidir." → **Karar (18.10.2026): doğru, kalır.**
+2. İroko/Teak: "yılda bir ya da iki kez yıkayıp … yağ sürmek yeterlidir." → **Karar (18.10.2026): doğru, kalır.**
+3. Ahşap Yapılar: "Genellikle birkaç yılda bir yapılan zımpara ve boya ile…" → **Karar (18.10.2026): doğru, kalır.**
+4. Boya, Tamir ve Bakım: "Deck gibi yatay yüzeyler genellikle yılda bir yağ ister." Ayrıca bakım mevsimi olarak ilkbahar ve sonbahar öneriliyor. → **Karar (18.10.2026): doğru, kalır.**
+5. Köprü ve İskele: "Bağlantı cıvatalarını ve korkuluk dikmelerini her sezon kontrol etmek gerekir." → **Karar (18.10.2026): doğru, kalır.**
 
 **Malzeme ve yöntem**
 
-6. İroko/Teak: "maliyeti genellikle daha düşüktür", "Teak, tekne güvertelerinde … geleneksel olarak kullanılan ağaçtır", "emprenye gibi bir ön işleme gerek duymadan". Bunlar genel bilgi.
-7. Köprü ve İskele: kavisli kirişlerin "ince ahşap katmanları tutkallayıp kalıp üzerinde presleyerek" yapıldığı yazıyor. Kaynak, kavisli kirişin tutkallandığını gösteren bir fotoğraf başlığı. Yöntem doğru mu?
-8. Köprü ve İskele: "Suyun içine inen ayaklarda … beton ya da metal taşıyıcılar da kullanılabilir."
-9. Çiçeklik: iç yüzeyin "bir astar ya da örtüyle" kaplandığı, tabanda tahliye deliği bırakıldığı ve kasanın yükseltildiği yazıyor. Uygulamanız böyle mi?
-10. Metal kasa (kaynak: metal kasalı ve sürgülü kapı fotoğrafları):
+6. İroko/Teak: "maliyeti genellikle daha düşüktür", "Teak, tekne güvertelerinde … geleneksel olarak kullanılan ağaçtır", "emprenye gibi bir ön işleme gerek duymadan". Bunlar genel bilgi. → **Karar (18.10.2026): doğru, kalır.**
+7. Köprü ve İskele: kavisli kirişlerin "ince ahşap katmanları tutkallayıp kalıp üzerinde presleyerek" yapıldığı yazıyor. Kaynak, kavisli kirişin tutkallandığını gösteren bir fotoğraf başlığı. Yöntem doğru mu? → **Karar (18.10.2026): doğru, kalır.**
+8. Köprü ve İskele: "Suyun içine inen ayaklarda … beton ya da metal taşıyıcılar da kullanılabilir." → **Karar (18.10.2026): doğru, kalır.**
+9. Çiçeklik: iç yüzeyin "bir astar ya da örtüyle" kaplandığı, tabanda tahliye deliği bırakıldığı ve kasanın yükseltildiği yazıyor. Uygulamanız böyle mi? → **Karar (18.10.2026): doğru, kalır.**
+10. Metal kasa (kaynak: metal kasalı ve sürgülü kapı fotoğrafları): → **Karar (18.10.2026): doğru, kalır. Metal işini firma uygun ustaya yaptırır, işi anahtar teslim bitirir.**
     - Kapı/Dolap gövdesi: "Geniş kapı kanatlarında ahşabı metal bir kasayla taşımak…"
     - Kapı/Dolap SSS: "Geniş ya da sürgülü kapılarda taşıyıcı metal bir kasa, görünen yüz ahşap çıta olabilir."
     - Korkuluk ve Çit SSS: "Geniş kapılarda kanat metal bir kasayla güçlendirilebilir."
-11. Mobilya: "gövde ve iç bölmelerde … levha malzemeler kullanılabilir". Fotoğraf etiketlerinde yalnızca meşe var.
-12. Ahşap Yapılar: "OSB gibi levhalardan da yararlanılabilir". Fotoğraf etiketinden alındı.
-13. Merdivenler (SSS): "İstenirse basamak yüzeyine kaydırmaz detaylar eklenebilir." Bu hizmeti veriyor musunuz?
-14. Klima kasası (SSS): "servis için de kapak ya da sökülebilir panel bırakılır."
-15. Atölye adımları (iş akışı doğru mu?):
+11. Mobilya: "gövde ve iç bölmelerde … levha malzemeler kullanılabilir". Fotoğraf etiketlerinde yalnızca meşe var. → **Karar (18.10.2026): doğru, kalır.**
+12. Ahşap Yapılar: "OSB gibi levhalardan da yararlanılabilir". Fotoğraf etiketinden alındı. → **Karar (18.10.2026): doğru, kalır.**
+13. Merdivenler (SSS): "İstenirse basamak yüzeyine kaydırmaz detaylar eklenebilir." Bu hizmeti veriyor musunuz? → **Karar (18.10.2026): bu hizmet verilmiyor; cümle 5 dilde çıkarıldı (#223).**
+14. Klima kasası (SSS): "servis için de kapak ya da sökülebilir panel bırakılır." → **Karar (18.10.2026): doğru, kalır.**
+15. Atölye adımları (iş akışı doğru mu?): → **Karar (18.10.2026): doğru, kalır.**
     - Deck, adım 3: "gerekirse ilk koruyucu kat burada uygulanır."
     - İroko ve Teak, adım 3: "ilk yağ katı uygulanır"; adım 4: "son yağlama yapılır."
     - Mobilya, adım 3: "boya ve cilası atölyede uygulanır."
 
 **Hizmet kapsamı**
 
-16. Ahşap Yapılar: "WC ve duş kabini", "köpek kulübeleri" (fotoğraf başlıkları) ve "Türkiye'nin farklı yerlerinde de çalışıyoruz". Hakkımızda: "yurt dışında, Libya'da da çalıştık" (PRODUCT.md).
-17. Mobilya: "Toplantı masaları ve yönetici ofisi mobilyaları", "Tekne kamaraları için çalışma masası, konsol ve dolaplar". Kaynak fotoğraf başlıkları.
-18. Hakkımızda: "Murat Şen, marangoz babasının yanında ahşapla büyüdü ve gençliğinde mesleği tam zamanlı sürdürmeye başladı" ve "Zanaatımız iki kuşaktır aynı ailenin elinde." Kaynak decisions #63; kesin yıl bilerek yazılmadı.
-19. İletişim: "Mesajınızı aldıktan sonra işi sizinle konuşuyor, uygun bir günde yeri görmeye geliyoruz." Keşif ücretli mi ücretsiz mi bilinmediği için bundan hiç bahsedilmedi.
-20. Firmanın çalışma alışkanlığı (fotoğraflardan çıkarım): "Çoğu işte deck'i korkuluk, merdiven ya da çiçeklikle birlikte tamamlıyoruz" (Deck); "Merdiven çoğu zaman bir deck, teras ya da çit işinin parçası olarak geliyor" ve "çoğu işte merdiveni deck, teras ya da çit ile birlikte yapıyoruz" (Merdivenler); "çoğu zaman bir deck ya da teras işiyle birlikte" (Çiçeklik).
+16. Ahşap Yapılar: "WC ve duş kabini", "köpek kulübeleri" (fotoğraf başlıkları) ve "Türkiye'nin farklı yerlerinde de çalışıyoruz". Hakkımızda: "yurt dışında, Libya'da da çalıştık" (PRODUCT.md). → **Karar (18.10.2026): WC ve duş kabini, köpek kulübesi, Türkiye geneli ve Libya doğru, kalır.**
+17. Mobilya: "Toplantı masaları ve yönetici ofisi mobilyaları", "Tekne kamaraları için çalışma masası, konsol ve dolaplar". Kaynak fotoğraf başlıkları. → **Karar (18.10.2026): toplantı masası ve yönetici ofisi mobilyası yapılmıyor, madde 5 dilde çıkarıldı; tekne kamarası mobilyası doğru, kalır (#223).**
+18. Hakkımızda: "Murat Şen, marangoz babasının yanında ahşapla büyüdü ve gençliğinde mesleği tam zamanlı sürdürmeye başladı" ve "Zanaatımız iki kuşaktır aynı ailenin elinde." Kaynak decisions #63; kesin yıl bilerek yazılmadı. → **Karar (18.10.2026): doğru, kalır.**
+19. İletişim: "Mesajınızı aldıktan sonra işi sizinle konuşuyor, uygun bir günde yeri görmeye geliyoruz." Keşif ücretli mi ücretsiz mi bilinmediği için bundan hiç bahsedilmedi. → **Karar (18.10.2026): keşif ücretinden hiç söz edilmez; metin değişmedi.**
+20. Firmanın çalışma alışkanlığı (fotoğraflardan çıkarım): "Çoğu işte deck'i korkuluk, merdiven ya da çiçeklikle birlikte tamamlıyoruz" (Deck); "Merdiven çoğu zaman bir deck, teras ya da çit işinin parçası olarak geliyor" ve "çoğu işte merdiveni deck, teras ya da çit ile birlikte yapıyoruz" (Merdivenler); "çoğu zaman bir deck ya da teras işiyle birlikte" (Çiçeklik). → Yanıtlanmadı; açık kalanlarda (engelleyici değil).
 
 ## Açık sorular
 
-- **Beton temel:** Ahşap Yapılar'da "Temel ya da zemin hazırlığının ardından yapı yerinde kurulur" (adım 4) ve "beton ya da taş bir temelin veya ayakların üzerine kurulur" (SSS) yazıyor. Beton temeli firma kendisi mi yapıyor, yoksa müşteri ya da başka bir usta mı hazırlıyor?
-- **"Seperatör" yazımı:** eski sitedeki kategori adı ve metinler "Seperatör" diyor. Standart yazım "separatör" olabilir (TDK'den teyit edilmeli). Kategori adı ve metinler hangisiyle kalsın? (Slug `kapi-dolap-ve-seperator` eski URL olduğu için değişmez.)
+- **Beton temel:** Ahşap Yapılar'da "Temel ya da zemin hazırlığının ardından yapı yerinde kurulur" (adım 4) ve "beton ya da taş bir temelin veya ayakların üzerine kurulur" (SSS) yazıyor. Beton temeli firma kendisi mi yapıyor, yoksa müşteri ya da başka bir usta mı hazırlıyor? → **Karar (18.10.2026): beton temeli firma uygun ustaya yaptırır. Ahşap Ev ve Bungalov'da kaide adımına "Beton temel için uygun ustayı biz ayarlıyoruz." eklendi (#223).**
+- **"Seperatör" yazımı:** eski sitedeki kategori adı ve metinler "Seperatör" diyor. Standart yazım "separatör" olabilir (TDK'den teyit edilmeli). Kategori adı ve metinler hangisiyle kalsın? (Slug `kapi-dolap-ve-seperator` eski URL olduğu için değişmez.) → **Karar (18.10.2026): "Separatör". Kategori adı, metinler, etiket adı ve fotoğraf metinleri TR'de düzeltildi; slug `kapi-dolap-ve-seperator`, etiket slug'ı `seperator` ve eski yönlendirmeler değişmedi (#223).**
 - **Eski Hizmetlerimiz sayfasındaki bağlantılar** büyük olasılıkla yanlış:
   - "Gazebo" Boya, Tamir ve Bakım'a gidiyor.
   - "Garaj ve Garaj Kapıları" ile "Dış Cephe Ahşap Kaplama" Pergola'ya gidiyor.
 
-  Metinlerde cephe kaplaması Ahşap Yapılar'a, bahçe kapıları Kapı, Dolap ve Seperatör ile Korkuluk ve Çit'e yazıldı. Garaj kapısı hiçbir metinde yok. Garaj kapısı yapılıyor mu?
+  Metinlerde cephe kaplaması Ahşap Yapılar'a, bahçe kapıları Kapı, Dolap ve Separatör ile Korkuluk ve Çit'e yazıldı. Garaj kapısı hiçbir metinde yok. Garaj kapısı yapılıyor mu? → **Karar (18.10.2026): garaj kapısı yapılıyor. Kapı, Dolap ve Separatör'de kapıların anlatıldığı paragrafa bir cümle eklendi (#223).**
 - **İroko numunesinin kaynağı (#156):** rehberdeki "Ahşap numuneleri" bloğunda iroko dokusu artık "İroko deck zemin, ahşap dolap kapağı" fotoğrafındaki dolap kapağı çerçevesinin üst çıtasından kesiliyor (eskiden deck'in kenar tahtasıydı; çok inceydi). Fotoğrafın adı zemini iroko diye anlatıyor; kapak çerçevesinin de iroko olduğunu varsaydık. Kapak çerçevesi iroko değilse söyleyin: numune başka bir iroko fotoğrafından kesilir ya da düz fotoğraf olarak gösterilir.
 - **Teak ve thermowood için yakın çekim fotoğraf (#60):** rehberdeki "Ahşap numuneleri" bloğu şimdilik yalnızca iroko ve emprenyeli çamı gösteriyor, çünkü arşivde teak ya da thermowood fotoğrafı yok ve ahşap çizilmiyor (DESIGN.md). Her biri için filigransız, düz bir yüzeye yakından çekilmiş bir fotoğraf gönderilirse doku `scripts/wood-textures.ts` ile kırpılır, `src/lib/wood/samples.ts` içinde yolu girilir ve numune sayfada görünür; başka değişiklik gerekmez.
 
@@ -102,16 +102,16 @@ Genel bilgi ya da fotoğraf etiketlerinden çıkarım. Yanlışsa düzeltilmeli 
 
 Dört rehber (`seed/content/guides/*.json`) taslak olarak yüklenir. Sahibin onaylaması gerekenler:
 
-1. **Yazar adı:** Rehberlerin altında "Murat Şen · Kurucu ve usta" yazsın mı? Her rehberde "Yazar kutusunu göster" kutusu varsayılan olarak kapalıdır; onay gelince açılır.
+1. **Yazar adı:** Rehberlerin altında "Murat Şen · Kurucu ve usta" yazsın mı? Her rehberde "Yazar kutusunu göster" kutusu varsayılan olarak kapalıdır; onay gelince açılır. → **Karar (18.10.2026): evet. Yazar kutusu bütün rehberlerde açık; ad siteSettings.founder.name'den ("Murat Şen"), "Kurucu ve usta" arayüz metninden gelir (#223).**
 2. **Yayın sırası:** "İroko mu teak mi?" ve "Pergola fiyatını ne belirler?" rehberleri "Ahşap türleri" rehberine bağlantı veriyor. Yayınlanmamış rehbere giden bağlantı sitede düz metin olarak görünür; dördünü birlikte yayınlamak en temizi.
 3. **Ahşap türleri tablosu:** tür listesi (sedir, sarıçam, ladin, iroko, teak, meşe, meranti, sapelli) ve yoğunluklar eski sitedeki tablodan alındı, "kaynaklardaki yaklaşık değer" diye sunuluyor. "Dış mekânda" sütunu (Evet / Emprenye ile / Kısmen) genel bilgidir. Hiç çalışmadığınız türler tablodan çıkarılsın mı?
-4. **Thermowood satırı** eski tabloda yoktu; genel bilgi olarak eklendi ("toprakla temas etmeyen yerlerde", "daha kırılgandır").
-5. **Yağlama aralığı:** "Yağlama aralığını kullanılan ürün ve yüzeyin aldığı güneş belirler; çoğu üretici güneş alan zeminlerde yılda bir ya da iki kat önerir." Uygulamanızla uyumlu mu?
-6. **Deck bakımı:** "deckte vernik gibi film oluşturan katlar genellikle önerilmez", "iroko ve teak deckler genellikle boyanmaz, yağlanır", "yüksek basınçlı yıkama makinesini yakından tutmayın". Doğru mu?
-7. **Deck tahtası bağlantısı:** "vidayla ya da gizli klipsle tutturulur" yazıyor. Siz hangisini kullanıyorsunuz?
-8. **Başka firmaların işleri:** "Kendi yaptığımız ya da başka firmaların döşediği decklerin bakımını ve onarımını yapıyoruz." (Deck kategorisindeki cümleyle aynı.) Doğru mu?
-9. **Pergola rehberi:** fiyat yok, yalnızca etkenler var. Tente, şeffaf örtü ve oluk hizmet olarak değil, "ahşap dışı parçalar ayrı malzeme ve uygulama gerektirir" diye anlatılıyor. Bunları siz de yapıyor musunuz, yoksa başka bir ustaya mı yönlendiriyorsunuz?
-10. **Pergola SSS:** "Pergolaya sonradan çatı çoğu zaman eklenebilir, ama kirişlerin ek yükü taşıyıp taşımayacağına bakmak gerekir." Doğru mu?
+4. **Thermowood satırı** eski tabloda yoktu; genel bilgi olarak eklendi ("toprakla temas etmeyen yerlerde", "daha kırılgandır"). → **Karar (18.10.2026): doğru, kalır.**
+5. **Yağlama aralığı:** "Yağlama aralığını kullanılan ürün ve yüzeyin aldığı güneş belirler; çoğu üretici güneş alan zeminlerde yılda bir ya da iki kat önerir." Uygulamanızla uyumlu mu? → **Karar (18.10.2026): doğru, kalır.**
+6. **Deck bakımı:** "deckte vernik gibi film oluşturan katlar genellikle önerilmez", "iroko ve teak deckler genellikle boyanmaz, yağlanır", "yüksek basınçlı yıkama makinesini yakından tutmayın". Doğru mu? → **Karar (18.10.2026): doğru, kalır.**
+7. **Deck tahtası bağlantısı:** "vidayla ya da gizli klipsle tutturulur" yazıyor. Siz hangisini kullanıyorsunuz? → **Karar (18.10.2026): ikisi de, işe göre. Rehberde "biz işe göre ikisini de kullanıyoruz" yazıyor (#223).**
+8. **Başka firmaların işleri:** "Kendi yaptığımız ya da başka firmaların döşediği decklerin bakımını ve onarımını yapıyoruz." (Deck kategorisindeki cümleyle aynı.) Doğru mu? → **Karar (18.10.2026): doğru, kalır.**
+9. **Pergola rehberi:** fiyat yok, yalnızca etkenler var. Tente, şeffaf örtü ve oluk hizmet olarak değil, "ahşap dışı parçalar ayrı malzeme ve uygulama gerektirir" diye anlatılıyor. Bunları siz de yapıyor musunuz, yoksa başka bir ustaya mı yönlendiriyorsunuz? → **Karar (18.10.2026): tente, şeffaf örtü ve oluk yapılıyor; bu işler için uygun ustayı firma ayarlar, pergolayı anahtar teslim bitirir. İki pergola rehberine yazıldı (#223).**
+10. **Pergola SSS:** "Pergolaya sonradan çatı çoğu zaman eklenebilir, ama kirişlerin ek yükü taşıyıp taşımayacağına bakmak gerekir." Doğru mu? → **Karar (18.10.2026): doğru, kalır.**
 11. **EN metinler** ilk çeviridir; bir İngilizce okurun gözden geçirmesi iyi olur.
 
 ## Rehberler (#58)
@@ -128,19 +128,19 @@ Beş yeni rehber (`seed/content/guides/`) aynı yükleyiciyle taslak olarak yük
 
 Sahibin onaylaması gerekenler:
 
-1. **Thermowood işi:** Rehber thermowood'u yalnızca genel bilgi olarak anlatıyor; firmanın thermowood ile çalıştığı yazmıyor. Thermowood ile iş yapıyor musunuz? Yapıyorsanız rehbere ve Deck kategorisine bir cümle eklenebilir.
-2. **Thermowood deck:** "Deck'te genellikle yalnızca tahtalar thermowood olur, altındaki kirişler emprenyeli çamdır" ve "vidalamadan önce kılavuz delik açmak yaygındır" yazıyor. Doğru mu?
-3. **Emprenye, kesilen uçlar:** "Kesilen uçlara ve deliklere uç koruyucu sürmek yaygındır." Siz de uyguluyor musunuz?
-4. **Emprenye, bağlantı:** "Paslanmaz ya da galvanizli vida ve bağlantı parçaları tercih edilir" (emprenye, korkuluk ve havuz rehberlerinde). Kullandığınız vida ve cıvata bu mu?
+1. **Thermowood işi:** Rehber thermowood'u yalnızca genel bilgi olarak anlatıyor; firmanın thermowood ile çalıştığı yazmıyor. Thermowood ile iş yapıyor musunuz? Yapıyorsanız rehbere ve Deck kategorisine bir cümle eklenebilir. → **Karar (18.10.2026): evet. Thermowood rehberine ve Deck ve Zeminler'e birer cümle eklendi (#223).**
+2. **Thermowood deck:** "Deck'te genellikle yalnızca tahtalar thermowood olur, altındaki kirişler emprenyeli çamdır" ve "vidalamadan önce kılavuz delik açmak yaygındır" yazıyor. Doğru mu? → **Karar (18.10.2026): doğru, kalır.**
+3. **Emprenye, kesilen uçlar:** "Kesilen uçlara ve deliklere uç koruyucu sürmek yaygındır." Siz de uyguluyor musunuz? → **Karar (18.10.2026): doğru, kalır.**
+4. **Emprenye, bağlantı:** "Paslanmaz ya da galvanizli vida ve bağlantı parçaları tercih edilir" (emprenye, korkuluk ve havuz rehberlerinde). Kullandığınız vida ve cıvata bu mu? → **Karar (18.10.2026): doğru, kalır.**
 5. **Emprenye, koruma düzeyi:** "Toprağa ya da suya girecek parçalar için bu kullanıma uygun olduğu belirtilen ürün seçilir" yazıyor; sınıf adı ya da numarası yazılmadı. Tedarikçinizin verdiği sınıfı yazmak ister misiniz?
-6. **Metal korkuluk:** Rehber metal ve karma (metal dikme + ahşap küpeşte) korkuluğu yalnızca genel bilgi olarak anlatıyor; firmanın yaptığı yazmıyor. Metal ya da karma korkuluk yapıyor musunuz, yoksa yalnızca ahşap kısmını mı? (Proje taslağı "Balkon deck'i ve metal korkuluk" fotoğraflarındaki metal korkuluğu siz mi yaptınız?)
+6. **Metal korkuluk:** Rehber metal ve karma (metal dikme + ahşap küpeşte) korkuluğu yalnızca genel bilgi olarak anlatıyor; firmanın yaptığı yazmıyor. Metal ya da karma korkuluk yapıyor musunuz, yoksa yalnızca ahşap kısmını mı? (Proje taslağı "Balkon deck'i ve metal korkuluk" fotoğraflarındaki metal korkuluğu siz mi yaptınız?) → **Karar (18.10.2026): metal ve karma korkuluk yapılıyor; metal kısmı için uygun ustayı firma ayarlar, korkuluğu anahtar teslim bitirir. Korkuluk rehberine yazıldı (#223).**
 7. **Korkuluk yüksekliği:** Yükseklik ve dolgu aralığı için rakam yazılmadı, "yapının kullanımına ve ilgili yönetmeliğe göre belirlenir" deniyor. Bir ölçü yazılsın mı? Yazılacaksa kaynağı ne?
-8. **Küpeşte ve dikme başı:** "Küpeştenin üstüne hafif bir eğim vermek ya da dikme başlarını eğimli kesmek suyun üstte durmasını önler." Uygulamanızla uyumlu mu?
-9. **Havuz kenarı, oluklu tahta:** Oluklu deck tahtası genel bilgi olarak geçiyor ("tutunmayı artırabilir, ama düzenli fırçalanmaları gerekir"). Açık soru 13 (kaydırmaz detay) ile bağlantılı. Bunu kullanıyor musunuz?
-10. **Havuz kenarı, sökülebilir bölüm:** "Havuzun teknik kapakları deck'in altında kalacaksa onlara ulaşmak için deck'te sökülebilir bir bölüm bırakmak gerekir." Böyle yapıyor musunuz?
+8. **Küpeşte ve dikme başı:** "Küpeştenin üstüne hafif bir eğim vermek ya da dikme başlarını eğimli kesmek suyun üstte durmasını önler." Uygulamanızla uyumlu mu? → **Karar (18.10.2026): doğru, kalır.**
+9. **Havuz kenarı, oluklu tahta:** Oluklu deck tahtası genel bilgi olarak geçiyor ("tutunmayı artırabilir, ama düzenli fırçalanmaları gerekir"). Açık soru 13 (kaydırmaz detay) ile bağlantılı. Bunu kullanıyor musunuz? → **Karar (18.10.2026): kaydırmaz detay hizmeti verilmiyor. Oluklu tahta yalnızca genel bilgi olarak kalır; firmanın sunduğu bir iş gibi yazılmıyor.**
+10. **Havuz kenarı, sökülebilir bölüm:** "Havuzun teknik kapakları deck'in altında kalacaksa onlara ulaşmak için deck'te sökülebilir bir bölüm bırakmak gerekir." Böyle yapıyor musunuz? → **Karar (18.10.2026): doğru, kalır.**
 11. **Havuz kenarı, yağ:** "Yağın havuz kenarında kullanıma uygun olduğunu ürünün talimatından kontrol edin." Havuz kenarında kullandığınız bir ürün türü varsa yazılabilir.
-12. **Kamelya:** "Kamelyanın çatısı ahşap kaplama üzerine örtüyle yapılır", "Kamelya çoğu zaman kendi ahşap döşemesiyle birlikte yapılır; döşeme yerden yükseltilir." Doğru mu? Çatı örtüsünü (shingle vb.) ve oluğu siz mi yapıyorsunuz? (#49 soru 9 ile aynı.)
-13. **Tanımlar:** Kamelya "kapalı çatılı, çoğu zaman bağımsız yapı", çardak "daha basit, açık, üzerine bitki sarılan yapı" diye anlatılıyor. Sizin ve müşterilerinizin kullandığı anlamla uyuşuyor mu?
+12. **Kamelya:** "Kamelyanın çatısı ahşap kaplama üzerine örtüyle yapılır", "Kamelya çoğu zaman kendi ahşap döşemesiyle birlikte yapılır; döşeme yerden yükseltilir." Doğru mu? Çatı örtüsünü (shingle vb.) ve oluğu siz mi yapıyorsunuz? (#49 soru 9 ile aynı.) → **Karar (18.10.2026): doğru. Çatı örtüsü (shingle vb.) yapılıyor; uygun ustayı firma ayarlar, kamelyayı anahtar teslim bitirir. Rehbere yazıldı (#223).**
+13. **Tanımlar:** Kamelya "kapalı çatılı, çoğu zaman bağımsız yapı", çardak "daha basit, açık, üzerine bitki sarılan yapı" diye anlatılıyor. Sizin ve müşterilerinizin kullandığı anlamla uyuşuyor mu? → **Karar (18.10.2026): doğru, kalır.**
 14. **Yayın sırası:** Yeni rehberler birbirine ve #49 rehberlerine bağlantı veriyor (ör. Pergola mı kamelya mı? → Emprenyeli ahşap nedir?, Pergola fiyatını ne belirler?). Yayınlanmamış rehbere giden bağlantı düz metin görünür; birlikte yayınlamak en temizi.
 15. **EN metinler** ilk geçiştir; bir İngilizce okurun gözden geçirmesi iyi olur.
 
@@ -171,7 +171,7 @@ Her kategori için şunlar gerekiyor (admin › Kategoriler › "Fiyat rehberi")
 | Köprü ve İskele | | | | | |
 | Merdivenler | | | | | |
 | Çiçeklik ve Oturma Grubu | | | | | |
-| Kapı, Dolap ve Seperatör | | | | | |
+| Kapı, Dolap ve Separatör | | | | | |
 | İroko ve Teak | | | | | |
 | Mobilya ve Cila | | | | | |
 | Boya, Tamir ve Bakım | | | | | |
@@ -219,7 +219,7 @@ Son kat bilgisi ("yağlı", "vernikli") hikâyelere tahminle yazılmaz; gerçek 
 
 ## Kategori metinleri ve SSS (#61)
 
-Kategori metinleri ve SSS #34'te yazıldı ve testler bunları her kategori için zorunlu tutuyor (300–600 kelime, soru H2'ler, 4–6 SSS). Yukarıdaki "Sahibinin onaylaması gereken cümleler" ve "Açık sorular" sahibine sorulan sorulardır, metin boşluğu değildir. Bu yüzden bu geçişte kategori metinlerine dokunulmadı. Sahibin cevapları gelince ilgili cümleler düzeltilecek ya da silinecek.
+Kategori metinleri ve SSS #34'te yazıldı ve testler bunları her kategori için zorunlu tutuyor (300–600 kelime, soru H2'ler, 4–6 SSS). Yukarıdaki "Sahibinin onaylaması gereken cümleler" ve "Açık sorular" sahibine sorulan sorulardır, metin boşluğu değildir. Bu yüzden bu geçişte kategori metinlerine dokunulmadı. Sahibin 18.10.2026 cevapları #223'te 5 dilde işlendi: tohum metinleri (`seed/content/**`, `seed/i18n/*/content/**`) ve kurulu veritabanı için tek seferlik betik `scripts/seed/owner-answers.ts` (kurallar: `src/lib/content/owner-answers.ts`).
 
 "Notlar"daki boş SEO alanları (`seo.title` / `seo.description`) bir boşluk değildir. Kategori sayfası boş `seo.title` için kategori adını, boş `seo.description` için kısa açıklamayı kullanır (`src/app/(frontend)/[locale]/[category]/page.tsx`). Bu yüzden bu alanlar da boş bırakıldı.
 
@@ -246,3 +246,17 @@ Kontrol edilecekler:
 Sahibin işleri:
 1. Kategori, proje, rehber ve görsel metinlerinin Arapçası (admin'deki "AI ile çevir" AR taslağı da üretir, anadili kontrolü şart). **Arapça başlıktan slug üretilmez**: her dokümana Latin harfli bir AR slug elle girilmeli (ör. EN slug'ı). AR'da en az bir kategori ad + slug ile yayınlanana kadar AR sayfaları noindex kalır.
 2. KVKK ve çerez metinleri AR'da İngilizce gösterilir; hukukçu onaylı çeviri admin'den girilebilir.
+
+## Açık kalanlar (18.10.2026 itibarıyla, engelleyici değil)
+
+Sahip 18.10.2026'da onay sorularını yanıtladı (#223). Aşağıdakiler hâlâ açık; hiçbiri metinleri ya da yayını engellemiyor. Bilgi gelince ilgili yere işlenir.
+
+- **Fiyat rehberi (#61):** kategori başına birim, aralık, para birimi ve tarih. Gelene kadar `priceGuide` boş kalır ve sitede fiyat görünmez.
+- **Teak ve thermowood yakın çekim fotoğrafı (#60):** gelince "Ahşap numuneleri" bloğuna eklenir.
+- **İroko numunesinin çerçevesi (#156):** dolap kapağı çerçevesinin iroko olduğu teyit edilmedi.
+- **EN metinlerin anadili okuması** (#49 madde 11, #58 madde 15); RU/DE/AR anadili okuması (#63, #64) da açık.
+- **Ahşap türleri tablosu (#49 madde 3):** çalışılmayan türler tablodan çıkarılsın mı?
+- **Emprenye koruma sınıfı (#58 madde 5), korkuluk yüksekliği ölçüsü (#58 madde 7), havuz kenarında kullanılan yağ (#58 madde 11):** yazılmadı; gerekirse sahibin verdiği bilgiyle eklenir.
+- **Çalışma alışkanlığı cümleleri** ("Sahibinin onaylaması gereken cümleler" madde 20).
+- **Proje taslaklarındaki sorular** ("Proje taslakları (#61)" tablosu): il/ilçe, yıl, ölçü, ahşap türü, son kat.
+- **Ofis fotoğraflarının metinleri:** dört fotoğrafın açıklamasında "yönetici ofisi" ya da "toplantı masası" geçiyor (`seed/media-meta/mobilya-ve-cila/` altında `9cf7fc2e…`, `c3193239…`, `86fb075e…`, `d01889b4…`). Bunlar fotoğrafta görüneni anlatıyor, hizmet iddiası değil; ama firma bu mobilyaları yapmıyorsa hangi parçanın firmanın işi olduğu (ör. duvar çıtası) netleşince metinler düzeltilebilir.

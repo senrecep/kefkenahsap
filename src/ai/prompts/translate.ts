@@ -5,7 +5,7 @@ import { z } from 'zod'
 import type { Segment } from '../translate/segments'
 import { TURKISH_RULES } from './turkish'
 
-export const TRANSLATE_PROMPT_VERSION = 'translate@1'
+export const TRANSLATE_PROMPT_VERSION = 'translate@2'
 
 export type GlossaryEntry = { tr: string; en: string }
 
@@ -28,7 +28,7 @@ export const DEFAULT_GLOSSARY: GlossaryEntry[] = [
   { tr: 'küpeşte', en: 'handrail' },
   { tr: 'çit', en: 'fence' },
   { tr: 'bahçe kapısı', en: 'garden gate' },
-  { tr: 'seperatör (bölme)', en: 'partition, room divider' },
+  { tr: 'separatör (bölme)', en: 'partition, room divider' },
   { tr: 'cila', en: 'lacquer, polish (general: finish)' },
   { tr: 'vernik', en: 'varnish' },
   { tr: 'ahşap yağı', en: 'wood oil, decking oil' },

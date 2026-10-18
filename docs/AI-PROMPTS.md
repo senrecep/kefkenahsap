@@ -53,7 +53,7 @@ Sahip kararı 2026-10-18: bir fotoğrafın TR başlığı, alt metni ya da açı
 - **Seed fotoğrafları** (~568, #203 öncesi yüklendi): TR dışı metinleri seed AI hattında üretildi ve elle düzenlenmedi; `scripts/seed/media-provenance.ts` (`bun run payload run scripts/seed/media-provenance.ts -- --dry-run | --yes`) yalnızca `seedKey`'i olan ve kaydı olmayan fotoğraflara mevcut metinleri AI metni olarak kaydeder (`backfillSync`); admin'den yüklenmiş fotoğraflara dokunmaz, yalnızca sayısını yazar. Metne dokunmaz, boş alanları çeviriye bırakır, `skipAi` ile yazar (iş kuyruğa girmez), kaydı olanı atlar. Bundan sonra TR düzenlemesi bu fotoğrafları da otomatik çevirir.
 - **Durum yoklama**: "TR değişti, çeviriliyor…" görünürken kart ve düzenleme sayfası durumu 10 sn'de bir okur (en çok 3 dk, yalnızca sekme görünürken); iş bitince sayfa yenilenmeden "Diller: güncel" olur; 3 dk dolarsa "Durum için sayfayı yenileyin." eklenir. Galeri'de metin düzenleyicisi açıkken düğme kapalıdır (kaydedilmemiş TR metni çevrilmez).
 
-## Çeviri (`prompts/translate.ts`, `translate@1`)
+## Çeviri (`prompts/translate.ts`, `translate@2`)
 Admin'de kategori, proje, sayfa ve yazı düzenleme ekranının yan panelindeki **AI ile çevir** düğmesi (`POST /api/ai/translate`):
 - Başlığı (kategoride adı) boş olan diller hedeftir; kaynak, başlığı dolu ilk dildir. Tüm hedef diller tek çağrıda istenir.
 - Modele yalnızca düz metin alanları ve Lexical metin düğümleri gider (`src/ai/translate/segments.ts`); zengin metin JSON'u düğüm düğüm aynı kurulur, yalnızca `text` değerleri değişir. Hedef dilde dolu olan alan gönderilmez ve üzerine yazılmaz. Müşteri yorumu çevrilmez.

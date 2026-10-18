@@ -4,7 +4,7 @@
   "model": "anthropic/claude-sonnet-5.5",
   "promptVersion": "tagImage@1",
   "title": {
-    "tr": "Yatak başı ahşap panel seperatör",
+    "tr": "Yatak başı ahşap panel separatör",
     "en": "Wooden panel headboard partition"
   },
   "alt": {
@@ -22,7 +22,7 @@
       "yatak odası",
       "iç mekan",
       "yatak başı",
-      "seperatör"
+      "separatör"
     ],
     "finish": [
       "koyu kahverengi",
