@@ -43,6 +43,10 @@ export function openRouterModel(id: string): LanguageModel {
  */
 export const isFakeAi = (env: Record<string, string | undefined> = process.env) => env.AI_FAKE_PROVIDER === '1' && !env.SITE_ENV
 
+/** #216: will AI jobs run at all? The admin setting is on and there is a key (or the fake model). */
+export const aiAvailable = (enabled: boolean | null | undefined, env: Record<string, string | undefined> = process.env) =>
+  enabled !== false && (Boolean(env.OPENROUTER_API_KEY) || isFakeAi(env))
+
 /** The one model getter every AI task uses: OpenRouter, or the deterministic fake (loaded only in fake mode). */
 export function aiModel(task: AiTask): (id: string) => Promise<LanguageModel> {
   return async (id) => (isFakeAi() ? (await import('./fake')).fakeModel(task, id) : openRouterModel(id))

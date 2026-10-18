@@ -7,6 +7,7 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import type { Media } from '@/payload-types'
 import {
   aiReview,
+  aiStalled,
   fitWithin,
   initialFilter,
   isTruncated,
@@ -22,7 +23,7 @@ import { MediaLocalesSync } from './ai/MediaLocalesSync'
 import './galeri.css'
 
 type Option = { id: number; name: string }
-type Item = Pick<Media, 'id' | 'status' | 'title' | 'alt' | 'aiSuggestion' | 'i18nSync' | 'tags' | 'url' | 'filename' | 'sizes' | '_media_media_order'>
+type Item = Pick<Media, 'id' | 'status' | 'title' | 'alt' | 'aiSuggestion' | 'aiFailure' | 'updatedAt' | 'i18nSync' | 'tags' | 'url' | 'filename' | 'sizes' | '_media_media_order'>
 type QueueEntry = { key: string; name: string; state: 'waiting' | 'working' | 'done' | 'error'; message?: string }
 
 const MAX_EDGE = 2560
@@ -82,7 +83,13 @@ function readStored(): { category?: number; project?: number } {
   }
 }
 
-export function GaleriClient({ categories, projects, tags }: { categories: Option[]; projects: Option[]; tags: TagRef[] }) {
+export function GaleriClient({ aiEnabled, categories, projects, tags }: { aiEnabled: boolean; categories: Option[]; projects: Option[]; tags: TagRef[] }) {
+  // #216: re-read every minute so a card whose job vanished flips to the failed state without a reload.
+  const [now, setNow] = useState(() => Date.now())
+  useEffect(() => {
+    const t = setInterval(() => setNow(Date.now()), 60_000)
+    return () => clearInterval(t)
+  }, [])
   const [category, setCategory] = useState<number | undefined>(categories[0]?.id)
   const [project, setProject] = useState<number | undefined>()
   // #169: uploads get the site watermark unless the editor opts out for this batch.
@@ -216,6 +223,20 @@ export function GaleriClient({ categories, projects, tags }: { categories: Optio
       // Approval fails without Turkish alt text: open the editor right away.
       if (data.status === 'approved') setEditing(id)
       return false
+    } finally {
+      setBusy(null)
+    }
+  }
+
+  /** #216: "Yeniden dene": queues the AI suggestion again, then shows the card as "AI hazırlıyor…". */
+  async function retryAi(id: number) {
+    setBusy(id)
+    setCardError((errs) => ({ ...errs, [id]: '' }))
+    try {
+      await api('/api/ai/tag-media', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ id }) })
+      await refresh(id)
+    } catch (e) {
+      setCardError((errs) => ({ ...errs, [id]: (e as Error).message }))
     } finally {
       setBusy(null)
     }
@@ -453,7 +474,7 @@ export function GaleriClient({ categories, projects, tags }: { categories: Optio
           <ol className="galeri__sortlist">
             {items.map((m, i) => {
               const label = nameOf(m)
-              const badge = mediaBadge(m)
+              const badge = mediaBadge(m, now, aiEnabled)
               const src = m.sizes?.w320?.url || m.url || ''
               const last = items.length - 1
               return (
@@ -510,7 +531,7 @@ export function GaleriClient({ categories, projects, tags }: { categories: Optio
           )}
           <ol className="galeri__grid">
             {visible.map(({ m, i }) => {
-              const badge = mediaBadge(m)
+              const badge = mediaBadge(m, now, aiEnabled)
               const src = m.sizes?.w640?.url || m.url || ''
               const label = nameOf(m)
               return (
@@ -570,6 +591,11 @@ export function GaleriClient({ categories, projects, tags }: { categories: Optio
                   )}
 
                   <div className="galeri__actions">
+                    {aiStalled(m, now, aiEnabled) && (
+                      <button type="button" className="galeri__btn" disabled={busy === m.id} onClick={() => void retryAi(m.id)}>
+                        {busy === m.id ? 'Sıraya alınıyor…' : 'AI önerisini yeniden dene'}
+                      </button>
+                    )}
                     {m.status !== 'approved' && (
                       <button
                         type="button"

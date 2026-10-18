@@ -225,6 +225,15 @@ export interface Media {
     | number
     | boolean
     | null;
+  aiFailure?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
   seoFilename?: string | null;
   category?: (number | null) | Category;
   tags?: (number | Tag)[] | null;
@@ -997,6 +1006,7 @@ export interface MediaSelect<T extends boolean = true> {
   alt?: T;
   caption?: T;
   i18nSync?: T;
+  aiFailure?: T;
   seoFilename?: T;
   category?: T;
   tags?: T;

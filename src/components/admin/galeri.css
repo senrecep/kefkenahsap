@@ -315,6 +315,11 @@
   color: var(--theme-warning-800);
 }
 
+.galeri__badge[data-tone='bad'] {
+  background: var(--theme-error-100);
+  color: var(--theme-error-800);
+}
+
 .galeri__badge[data-tone='muted'] {
   background: var(--theme-elevation-800);
   color: var(--theme-elevation-0);

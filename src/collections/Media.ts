@@ -19,6 +19,7 @@ import { isFakeAi } from '@/ai/models'
 import { routing } from '@/i18n/routing'
 import { changedFields, type I18nSync } from '@/lib/media/i18nSync'
 import { mediaFileURL } from '@/lib/media/url'
+import { applyCacheControl, CACHE_CONTROL_BUDGET_MS, mediaBucket, storedFiles } from '@/lib/media/renameStored'
 import { createCdnPurger, mediaPublicURLs } from '@/lib/media/cdn-purge'
 import { createReporter } from '@/lib/observability/report'
 import { changeIsPublic, checkPublishable, type MediaStatus } from '@/lib/media/publish'
@@ -89,6 +90,7 @@ const truthfulWatermark: CollectionBeforeChangeHook = ({ data, operation, req })
 let purgeSkipLogged = false
 let reportPurge: ReturnType<typeof createReporter> | undefined
 const PURGE_URLS = 'cdnPurgeURLs'
+const CACHE_FILES = 'cacheNewFiles'
 const purgeBase = () => process.env.MEDIA_PUBLIC_URL ?? ''
 
 /** Collects URLs during the operation; sendCdnPurge sends them once the storage plugin has deleted the objects. */
@@ -102,6 +104,8 @@ function queuePurge(req: PayloadRequest, urls: string[]) {
  * under new names); added sizes purge nothing.
  */
 const purgeReplacedFile: CollectionAfterChangeHook = ({ doc, operation, previousDoc, req }) => {
+  // #216: a new document's URLs too: a 404 cached for a key the upload reuses would otherwise be served for a year.
+  if (operation === 'create') queuePurge(req, mediaPublicURLs(doc, purgeBase()))
   // #209: the seoRename job purges its own old URLs, after it has deleted the old objects.
   if (operation !== 'update' || !previousDoc || req.context.seoRenameJob) return doc
   const before = mediaPublicURLs(previousDoc, purgeBase())
@@ -109,7 +113,15 @@ const purgeReplacedFile: CollectionAfterChangeHook = ({ doc, operation, previous
   const replaced = req.context.mediaFileReplaced === true
   // Payload runs afterChange again for the internal follow-up save of the same request: only the first one is the replacement.
   delete req.context.mediaFileReplaced
-  queuePurge(req, replaced ? before : before.filter((u) => !after.has(u)))
+  queuePurge(req, replaced ? [...before, ...after] : before.filter((u) => !after.has(u)))
+  return doc
+}
+
+/** #216: collects the files of a new upload; sendCdnPurge sets their Cache-Control once the storage plugin has written them. */
+const cacheNewFiles: CollectionAfterChangeHook = ({ doc, operation, req }) => {
+  if (req.context.skipCloudStorage || req.context.seoRenameJob) return doc
+  if (operation !== 'create' && req.context.mediaFileReplaced !== true) return doc
+  ;((req.context[CACHE_FILES] ??= []) as { prefix: string | null | undefined; media: number | string; files: ReturnType<typeof storedFiles> }[]).push({ prefix: doc.prefix, media: doc.id, files: storedFiles(doc) })
   return doc
 }
 
@@ -124,10 +136,20 @@ const purgeDeletedFile: CollectionAfterDeleteHook = ({ doc, req }) => {
  * which deletes the old objects: purging earlier would let a request in between re-cache them for a year.
  * Fire-and-forget: the save/delete never waits on, or fails because of, Cloudflare. Without the env it is skipped.
  */
-const sendCdnPurge: CollectionAfterOperationHook<'media'> = ({ req, result }) => {
+const sendCdnPurge: CollectionAfterOperationHook<'media'> = async ({ req, result }) => {
   // The storage plugin's nested metadata update runs inside the outer operation, before its deletes.
+  if (req.context.skipCloudStorage) return result
+  // #216: before the purge, so nothing is purged and re-cached without the header. The upload stands if this fails.
+  const written = req.context[CACHE_FILES] as { prefix: string | null | undefined; media: number | string; files: ReturnType<typeof storedFiles> }[] | undefined
+  delete req.context[CACHE_FILES]
+  const { bucket, s3 } = mediaBucket()
+  const signal = AbortSignal.timeout(CACHE_CONTROL_BUDGET_MS) // one budget for all; a slow bucket delays the save by at most this
+  for (const w of written ?? []) {
+    const r = await applyCacheControl(s3, bucket, w.prefix, w.files, signal)
+    if (!r.ok) req.payload.logger.warn({ errors: r.errors, media: w.media }, 'media: could not set Cache-Control on the new files')
+  }
   const urls = req.context[PURGE_URLS] as string[] | undefined
-  if (!urls?.length || req.context.skipCloudStorage) return result
+  if (!urls?.length) return result
   delete req.context[PURGE_URLS]
   void purgeURLs(req, urls)
   return result
@@ -303,7 +325,7 @@ export const Media: CollectionConfig = {
     beforeOperation: [stampUpload],
     afterOperation: [sendCdnPurge],
     beforeChange: [truthfulWatermark, placeholder, publishGate, attachSuggestedTags, trackTranslations],
-    afterChange: [purgeReplacedFile, revalidateAfterChangeIf(changeIsPublic, 'media', 'categories', 'projects'), queueAiSuggestion, queueTranslation, queueSeoRename],
+    afterChange: [cacheNewFiles, purgeReplacedFile, revalidateAfterChangeIf(changeIsPublic, 'media', 'categories', 'projects'), queueAiSuggestion, queueTranslation, queueSeoRename],
     afterDelete: [revalidateAfterDelete('media', 'categories', 'projects'), purgeDeletedFile],
   },
   fields: [
@@ -331,6 +353,8 @@ export const Media: CollectionConfig = {
     },
     // #203: provenance of the AI-made locale texts, pending TR fields, stale locales (src/lib/media/i18nSync.ts).
     { name: 'i18nSync', type: 'json', access: { read: ({ req }) => Boolean(roleOf(req.user)) }, admin: { hidden: true } },
+    // #216: why the last tagImage run ended without a suggestion ({ code, at }); cleared by a retry or a success. Galeri shows it.
+    { name: 'aiFailure', type: 'json', access: { read: ({ req }) => Boolean(roleOf(req.user)), update: () => false }, admin: { hidden: true } },
     { name: 'seoFilename', type: 'text', label: 'SEO dosya adı', index: true, admin: { position: 'sidebar' } },
     { name: 'category', type: 'relationship', relationTo: 'categories', index: true, label: 'Kategori' },
     { name: 'tags', type: 'relationship', relationTo: 'tags', hasMany: true, label: 'Etiketler' },

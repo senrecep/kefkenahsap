@@ -2,6 +2,7 @@ import type { AdminViewServerProps } from 'payload'
 import { DefaultTemplate } from '@payloadcms/next/templates'
 import { redirect } from 'next/navigation'
 
+import { aiAvailable } from '@/ai/models'
 import { GaleriClient } from './GaleriClient'
 
 /** /admin/galeri — mobile-first upload, review and ordering of category media (PLAN §4 "Admin deneyimi"). */
@@ -11,11 +12,12 @@ export async function GaleriView({ initPageResult, params, searchParams }: Admin
   if (!user?.role) redirect(`${req.payload.config.routes.admin}/login`)
 
   const query = { depth: 0, limit: 200, locale: 'tr', overrideAccess: false, pagination: false, req } as const
-  const [categories, projects, tags] = await Promise.all([
+  const [categories, projects, tags, aiSettings] = await Promise.all([
     req.payload.find({ ...query, collection: 'categories', sort: '_order', select: { name: true } }),
     req.payload.find({ ...query, collection: 'projects', sort: '-updatedAt', select: { title: true } }),
     // #192: the same tag list the approve hook matches against (attachSuggestedTags), for the "will attach" preview.
     req.payload.find({ ...query, collection: 'tags', limit: 0, select: { axis: true, slug: true, name: true } }),
+    req.payload.findGlobal({ slug: 'aiSettings', depth: 0, select: { enabled: true } }),
   ])
 
   return (
@@ -31,6 +33,7 @@ export async function GaleriView({ initPageResult, params, searchParams }: Admin
       visibleEntities={{ collections: visibleEntities?.collections, globals: visibleEntities?.globals }}
     >
       <GaleriClient
+        aiEnabled={aiAvailable(aiSettings.enabled)}
         categories={categories.docs.map((c) => ({ id: c.id, name: c.name || `#${c.id}` }))}
         projects={projects.docs.map((p) => ({ id: p.id, name: p.title || `#${p.id}` }))}
         tags={tags.docs.map((t) => ({ id: t.id, axis: t.axis, slug: t.slug ?? '', name: t.name }))}

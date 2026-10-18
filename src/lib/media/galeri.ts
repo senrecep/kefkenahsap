@@ -10,16 +10,33 @@ export function fitWithin(width: number, height: number, max: number): { width: 
   return { width: Math.round(width * scale), height: Math.round(height * scale) }
 }
 
-export type BadgeTone = 'ok' | 'wait' | 'busy' | 'muted'
+export type BadgeTone = 'ok' | 'wait' | 'busy' | 'muted' | 'bad'
+
+/** #216: a photo no save has touched for this long has no tagImage job working on it any more (a job takes seconds; retries are queued minutes apart). */
+export const AI_STALL_MS = 15 * 60_000
+
+type AiState = { status?: MediaStatus | null; aiSuggestion?: unknown; alt?: string | null; aiFailure?: unknown; updatedAt?: string | null }
+
+/**
+ * #216: a pending photo with nothing to review (no suggestion, no alt text) whose tagImage job failed (aiFailure, written
+ * by the job) or is gone (the row is deleted on completion, so only the clock can tell): shows "AI önerisi alınamadı"
+ * and the retry button instead of waiting forever.
+ */
+export function aiStalled(doc: AiState, nowMs: number, aiEnabled: boolean): boolean {
+  if (!aiEnabled || doc.status === 'approved' || doc.status === 'hidden' || doc.aiSuggestion || doc.alt?.trim()) return false
+  if (doc.aiFailure) return true
+  const touched = doc.updatedAt ? Date.parse(doc.updatedAt) : NaN
+  return nowMs - touched >= AI_STALL_MS
+}
 
 /** Status badge shown on each Galeri card. A pending image is "ready to review" once it has an AI suggestion or alt text. */
-export function mediaBadge(doc: { status?: MediaStatus | null; aiSuggestion?: unknown; alt?: string | null }): {
-  tone: BadgeTone
-  label: string
-} {
+export function mediaBadge(doc: AiState, nowMs: number, aiEnabled: boolean): { tone: BadgeTone; label: string } {
   if (doc.status === 'approved') return { tone: 'ok', label: 'Yayında' }
   if (doc.status === 'hidden') return { tone: 'muted', label: 'Gizli' }
   if (doc.aiSuggestion || doc.alt?.trim()) return { tone: 'wait', label: 'Onay bekliyor' }
+  // AI is off (setting or no key): no job is coming, so neither "hazırlıyor" nor an error is true.
+  if (!aiEnabled) return { tone: 'muted', label: 'AI kapalı' }
+  if (aiStalled(doc, nowMs, true)) return { tone: 'bad', label: 'AI önerisi alınamadı' }
   return { tone: 'busy', label: 'AI hazırlıyor…' }
 }
 
