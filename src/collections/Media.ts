@@ -19,7 +19,7 @@ import { isFakeAi } from '@/ai/models'
 import { routing } from '@/i18n/routing'
 import { changedFields, type I18nSync } from '@/lib/media/i18nSync'
 import { mediaFileURL } from '@/lib/media/url'
-import { applyCacheControl, mediaBucket, storedFiles } from '@/lib/media/renameStored'
+import { applyCacheControl, CACHE_CONTROL_BUDGET_MS, mediaBucket, storedFiles } from '@/lib/media/renameStored'
 import { createCdnPurger, mediaPublicURLs } from '@/lib/media/cdn-purge'
 import { createReporter } from '@/lib/observability/report'
 import { changeIsPublic, checkPublishable, type MediaStatus } from '@/lib/media/publish'
@@ -143,8 +143,9 @@ const sendCdnPurge: CollectionAfterOperationHook<'media'> = async ({ req, result
   const written = req.context[CACHE_FILES] as { prefix: string | null | undefined; media: number | string; files: ReturnType<typeof storedFiles> }[] | undefined
   delete req.context[CACHE_FILES]
   const { bucket, s3 } = mediaBucket()
+  const signal = AbortSignal.timeout(CACHE_CONTROL_BUDGET_MS) // one budget for all; a slow bucket delays the save by at most this
   for (const w of written ?? []) {
-    const r = await applyCacheControl(s3, bucket, w.prefix, w.files)
+    const r = await applyCacheControl(s3, bucket, w.prefix, w.files, signal)
     if (!r.ok) req.payload.logger.warn({ errors: r.errors, media: w.media }, 'media: could not set Cache-Control on the new files')
   }
   const urls = req.context[PURGE_URLS] as string[] | undefined

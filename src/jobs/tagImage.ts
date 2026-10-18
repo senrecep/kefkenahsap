@@ -26,6 +26,8 @@ export const tagImageTask: TaskConfig<'tagImage'> = {
     if (!media) return { output: { result: 'Media.NotFound' } }
     // Idempotent: a retried job never pays twice for the same image.
     if ((media.aiSuggestion as { at?: string } | null)?.at) return { output: { result: 'skipped:already-suggested' } }
+    // #216: a photo that is live or hidden is never AI-filled (a retry or a late job must not touch a published photo).
+    if (media.status === 'approved' || media.status === 'hidden') return { output: { result: 'skipped:not-pending' } }
     // #216: every other way out leaves a state on the photo; without it the Galeri card would wait for a suggestion forever.
     const fail = async (code: string) => {
       await payload.update({ collection: 'media', id: media.id, locale: 'tr', context: { skipAi: true }, req, depth: 0, data: { aiFailure: { code, at: SystemDateTimeProvider.utcNow().toISOString() } } })

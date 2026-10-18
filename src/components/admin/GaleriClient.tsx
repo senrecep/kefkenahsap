@@ -83,7 +83,13 @@ function readStored(): { category?: number; project?: number } {
   }
 }
 
-export function GaleriClient({ categories, projects, tags }: { categories: Option[]; projects: Option[]; tags: TagRef[] }) {
+export function GaleriClient({ aiEnabled, categories, projects, tags }: { aiEnabled: boolean; categories: Option[]; projects: Option[]; tags: TagRef[] }) {
+  // #216: re-read every minute so a card whose job vanished flips to the failed state without a reload.
+  const [now, setNow] = useState(() => Date.now())
+  useEffect(() => {
+    const t = setInterval(() => setNow(Date.now()), 60_000)
+    return () => clearInterval(t)
+  }, [])
   const [category, setCategory] = useState<number | undefined>(categories[0]?.id)
   const [project, setProject] = useState<number | undefined>()
   // #169: uploads get the site watermark unless the editor opts out for this batch.
@@ -222,7 +228,6 @@ export function GaleriClient({ categories, projects, tags }: { categories: Optio
     }
   }
 
-  /** #203: re-reads one photo after "Diğer dillere yeniden çevir", so its card shows the new language state. */
   /** #216: "Yeniden dene": queues the AI suggestion again, then shows the card as "AI hazırlıyor…". */
   async function retryAi(id: number) {
     setBusy(id)
@@ -237,6 +242,7 @@ export function GaleriClient({ categories, projects, tags }: { categories: Optio
     }
   }
 
+  /** #203: re-reads one photo after "Diğer dillere yeniden çevir", so its card shows the new language state. */
   async function refresh(id: number) {
     try {
       const doc = await api<Item>(`/api/media/${id}?depth=0&locale=tr`)
@@ -468,7 +474,7 @@ export function GaleriClient({ categories, projects, tags }: { categories: Optio
           <ol className="galeri__sortlist">
             {items.map((m, i) => {
               const label = nameOf(m)
-              const badge = mediaBadge(m, Date.now())
+              const badge = mediaBadge(m, now, aiEnabled)
               const src = m.sizes?.w320?.url || m.url || ''
               const last = items.length - 1
               return (
@@ -503,12 +509,6 @@ export function GaleriClient({ categories, projects, tags }: { categories: Optio
                       En sona
                     </button>
                   </div>
-                  {aiStalled(m, Date.now()) && (
-                    <button type="button" className="galeri__btn" disabled={busy === m.id} onClick={() => void retryAi(m.id)}>
-                      {busy === m.id ? 'Sıraya alınıyor…' : 'AI önerisini yeniden dene'}
-                    </button>
-                  )}
-
                   {cardError[m.id] && (
                     <p className="galeri__error" role="alert">
                       {cardError[m.id]}
@@ -531,7 +531,7 @@ export function GaleriClient({ categories, projects, tags }: { categories: Optio
           )}
           <ol className="galeri__grid">
             {visible.map(({ m, i }) => {
-              const badge = mediaBadge(m, Date.now())
+              const badge = mediaBadge(m, now, aiEnabled)
               const src = m.sizes?.w640?.url || m.url || ''
               const label = nameOf(m)
               return (
@@ -591,6 +591,11 @@ export function GaleriClient({ categories, projects, tags }: { categories: Optio
                   )}
 
                   <div className="galeri__actions">
+                    {aiStalled(m, now, aiEnabled) && (
+                      <button type="button" className="galeri__btn" disabled={busy === m.id} onClick={() => void retryAi(m.id)}>
+                        {busy === m.id ? 'Sıraya alınıyor…' : 'AI önerisini yeniden dene'}
+                      </button>
+                    )}
                     {m.status !== 'approved' && (
                       <button
                         type="button"

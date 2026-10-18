@@ -1,9 +1,11 @@
 import { addDataAndFileToRequest, type Endpoint } from 'payload'
 import { Err } from 'tsentials/errors'
+import { SystemDateTimeProvider } from 'tsentials/time'
 
 import { aiErrorResponse, aiGate, aiLimiter, isJsonRequest, positiveId } from '@/ai/guard'
 import { isDraftable, parseNotes } from '@/ai/draft/draft'
 import { draftDocument } from '@/ai/draft/run'
+import { aiAvailable } from '@/ai/models'
 import { retryTagImage } from '@/ai/tagMedia'
 import { syncMediaLocales } from '@/ai/translate/media'
 import { translateDocument } from '@/ai/translate/run'
@@ -77,11 +79,11 @@ export const aiTagMediaEndpoint: Endpoint = {
     const id = positiveId((req.data as { id?: unknown } | undefined)?.id)
     if (id === undefined) return aiErrorResponse(Err.validation('Translate.BadRequest', `id=${String((req.data as { id?: unknown })?.id)}`), log)
     try {
-      const r = await retryTagImage({ payload: req.payload, req, id })
+      const r = await retryTagImage({ payload: req.payload, req, id, aiEnabled: aiAvailable(gate.value.settings.enabled), nowMs: SystemDateTimeProvider.utcNowMs() })
       return r.ok ? Response.json(r.value) : aiErrorResponse(r.errors[0]!, log)
     } catch (e) {
       req.payload.logger.error({ err: e, msg: 'ai tag-media failed' })
-      return aiErrorResponse(Err.unexpected('Draft.SaveFailed', 'queue failed (see error log)'))
+      return aiErrorResponse(Err.unexpected('AI.QueueFailed', 'queue failed (see error log)'))
     }
   },
 }

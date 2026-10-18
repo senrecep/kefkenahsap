@@ -1,7 +1,7 @@
 // #185: deleting media, or replacing its file, purges the old files' CDN URLs from the Cloudflare edge cache — only
 // after the storage plugin has deleted the objects, so no request in between can re-cache them for a year.
 // Only the Cloudflare API is faked (global fetch, which tsentials fetchResult uses); DB and S3 are real.
-import { HeadObjectCommand, S3Client } from '@aws-sdk/client-s3'
+import { CopyObjectCommand, HeadObjectCommand, S3Client } from '@aws-sdk/client-s3'
 import { mkdirSync } from 'fs'
 import os from 'os'
 import path from 'path'
@@ -97,6 +97,26 @@ it('#216: a new upload purges its original and every size, so a cached 404 at a 
     const head = await s3.send(new HeadObjectCommand({ Bucket: process.env.S3_BUCKET!, Key: [doc.prefix, f].filter(Boolean).join('/') }))
     expect([f, head.CacheControl, head.ContentType]).toEqual([f, 'public, max-age=31536000, immutable', 'image/webp'])
   }
+})
+
+it('#216: a bucket that hangs on the Cache-Control rewrite delays the upload by the 5 s budget at most; the upload and its purge stand', async () => {
+  const send = S3Client.prototype.send
+  const spy = vi.spyOn(S3Client.prototype, 'send').mockImplementation(function (this: S3Client, command: unknown, options?: { abortSignal?: AbortSignal }) {
+    if (command instanceof CopyObjectCommand)
+      return new Promise((_, reject) => options?.abortSignal?.addEventListener('abort', () => reject(new Error('aborted')))) as never
+    return (send as (c: unknown, o?: unknown) => Promise<unknown>).call(this, command, options) as never
+  } as never)
+  const started = Date.now()
+  let doc
+  try {
+    doc = await create('slow', 60)
+  } finally {
+    spy.mockRestore()
+  }
+  created.push(doc.id)
+  expect(Date.now() - started).toBeLessThan(15_000)
+  await vi.waitFor(() => expect(purged.length).toBeGreaterThan(0))
+  expect(purgedFiles()).toEqual([...urlsOf(doc)].sort())
 })
 
 it('deleting a media doc purges its main file and every size, after they left storage', async () => {

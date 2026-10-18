@@ -31,40 +31,49 @@ describe('mediaBadge (status → Turkish badge)', () => {
   const failedBadge = { tone: 'bad', label: 'AI önerisi alınamadı' }
 
   it('maps approved and hidden directly', () => {
-    expect(mediaBadge({ status: 'approved' }, NOW)).toEqual({ tone: 'ok', label: 'Yayında' })
-    expect(mediaBadge({ status: 'hidden' }, NOW)).toEqual({ tone: 'muted', label: 'Gizli' })
+    expect(mediaBadge({ status: 'approved' }, NOW, true)).toEqual({ tone: 'ok', label: 'Yayında' })
+    expect(mediaBadge({ status: 'hidden' }, NOW, true)).toEqual({ tone: 'muted', label: 'Gizli' })
   })
 
   it('shows "AI hazırlıyor…" for a fresh pending image with no suggestion and no alt yet', () => {
-    expect(mediaBadge({ status: 'pending', ...fresh }, NOW)).toEqual({ tone: 'busy', label: 'AI hazırlıyor…' })
-    expect(mediaBadge({ status: 'pending', aiSuggestion: null, alt: '', ...fresh }, NOW)).toEqual({ tone: 'busy', label: 'AI hazırlıyor…' })
+    expect(mediaBadge({ status: 'pending', ...fresh }, NOW, true)).toEqual({ tone: 'busy', label: 'AI hazırlıyor…' })
+    expect(mediaBadge({ status: 'pending', aiSuggestion: null, alt: '', ...fresh }, NOW, true)).toEqual({ tone: 'busy', label: 'AI hazırlıyor…' })
   })
 
   it('shows "Onay bekliyor" once there is a suggestion or alt text to review', () => {
-    expect(mediaBadge({ status: 'pending', aiSuggestion: { at: '2026-10-14' }, ...old }, NOW)).toEqual({ tone: 'wait', label: 'Onay bekliyor' })
-    expect(mediaBadge({ status: 'pending', alt: 'Teras deck', ...old }, NOW)).toEqual({ tone: 'wait', label: 'Onay bekliyor' })
+    expect(mediaBadge({ status: 'pending', aiSuggestion: { at: '2026-10-14' }, ...old }, NOW, true)).toEqual({ tone: 'wait', label: 'Onay bekliyor' })
+    expect(mediaBadge({ status: 'pending', alt: 'Teras deck', ...old }, NOW, true)).toEqual({ tone: 'wait', label: 'Onay bekliyor' })
   })
 
   it('treats a missing status as pending (field default)', () => {
-    expect(mediaBadge({ status: null, ...fresh }, NOW).label).toBe('AI hazırlıyor…')
+    expect(mediaBadge({ status: null, ...fresh }, NOW, true).label).toBe('AI hazırlıyor…')
   })
 
   it('#216: a recorded failure replaces "AI hazırlıyor…" at once', () => {
-    expect(mediaBadge({ status: 'pending', aiFailure: { code: 'Media.StorageReadFailed', at: '2026-10-18T11:59:00Z' }, ...fresh }, NOW)).toEqual(failedBadge)
+    expect(mediaBadge({ status: 'pending', aiFailure: { code: 'Media.StorageReadFailed', at: '2026-10-18T11:59:00Z' }, ...fresh }, NOW, true)).toEqual(failedBadge)
   })
 
   it('#216: a photo nothing has touched for 15 minutes cannot say "AI hazırlıyor…" (the job row is gone)', () => {
-    expect(mediaBadge({ status: 'pending', ...old }, NOW)).toEqual(failedBadge)
-    expect(mediaBadge({ status: 'pending', updatedAt: '2026-10-18T11:45:00Z' }, NOW).label).toBe('AI önerisi alınamadı') // exactly 15 min
-    expect(mediaBadge({ status: 'pending', updatedAt: '2026-10-18T11:45:01Z' }, NOW).label).toBe('AI hazırlıyor…')
+    expect(mediaBadge({ status: 'pending', ...old }, NOW, true)).toEqual(failedBadge)
+    expect(mediaBadge({ status: 'pending', updatedAt: '2026-10-18T11:45:00Z' }, NOW, true).label).toBe('AI önerisi alınamadı') // exactly 15 min
+    expect(mediaBadge({ status: 'pending', updatedAt: '2026-10-18T11:45:01Z' }, NOW, true).label).toBe('AI hazırlıyor…')
+  })
+
+  it('#216: with AI off a pending photo with nothing to review says "AI kapalı", never "hazırlıyor" or the error', () => {
+    const off = { tone: 'muted', label: 'AI kapalı' }
+    expect(mediaBadge({ status: 'pending', ...fresh }, NOW, false)).toEqual(off)
+    expect(mediaBadge({ status: 'pending', ...old }, NOW, false)).toEqual(off)
+    expect(mediaBadge({ status: 'pending', aiFailure: { code: 'x' }, ...old }, NOW, false)).toEqual(off)
+    expect(mediaBadge({ status: 'pending', alt: 'Teras', ...old }, NOW, false).label).toBe('Onay bekliyor')
+    expect(aiStalled({ status: 'pending', ...old }, NOW, false)).toBe(false)
   })
 
   it('#216: aiStalled drives the "Yeniden dene" button; a suggestion or approved status never stalls', () => {
-    expect(aiStalled({ status: 'pending', ...old }, NOW)).toBe(true)
-    expect(aiStalled({ status: 'pending', ...fresh }, NOW)).toBe(false)
-    expect(aiStalled({ status: 'pending', aiFailure: { code: 'AI.AllModelsFailed' }, ...fresh }, NOW)).toBe(true)
-    expect(aiStalled({ status: 'pending', aiSuggestion: { at: 'x' }, aiFailure: { code: 'x' }, ...old }, NOW)).toBe(false)
-    expect(aiStalled({ status: 'approved', ...old }, NOW)).toBe(false)
+    expect(aiStalled({ status: 'pending', ...old }, NOW, true)).toBe(true)
+    expect(aiStalled({ status: 'pending', ...fresh }, NOW, true)).toBe(false)
+    expect(aiStalled({ status: 'pending', aiFailure: { code: 'AI.AllModelsFailed' }, ...fresh }, NOW, true)).toBe(true)
+    expect(aiStalled({ status: 'pending', aiSuggestion: { at: 'x' }, aiFailure: { code: 'x' }, ...old }, NOW, true)).toBe(false)
+    expect(aiStalled({ status: 'approved', ...old }, NOW, true)).toBe(false)
   })
 })
 

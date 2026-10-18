@@ -63,17 +63,20 @@ export async function anyExists(s3: Send, bucket: string, prefix: string | null 
   return found.some(Boolean)
 }
 
-const copyOne = (s3: Send, bucket: string, prefix: string | null | undefined, m: Move) => {
+/** #216: the Cache-Control rewrite of a new upload runs inside the save (it holds the DB transaction), so it gets this long in total. */
+export const CACHE_CONTROL_BUDGET_MS = 5_000
+
+const copyOne = (s3: Send, bucket: string, prefix: string | null | undefined, m: Move, signal?: AbortSignal) => {
   const source = key(prefix, m.from).split('/').map(encodeURIComponent).join('/')
   // REPLACE: a copy keeps the source's metadata otherwise, and then CacheControl/ContentType could not be set.
-  return s3.send(new CopyObjectCommand({ Bucket: bucket, Key: key(prefix, m.to), CopySource: `${bucket}/${source}`, MetadataDirective: 'REPLACE', CacheControl: MEDIA_CACHE_CONTROL, ContentType: m.contentType }))
+  return s3.send(new CopyObjectCommand({ Bucket: bucket, Key: key(prefix, m.to), CopySource: `${bucket}/${source}`, MetadataDirective: 'REPLACE', CacheControl: MEDIA_CACHE_CONTROL, ContentType: m.contentType }), { abortSignal: signal })
 }
 
 /** #216: the Payload S3 adapter cannot set Cache-Control on its uploads, so a new file's objects are rewritten in place with it. */
-export async function applyCacheControl(s3: Send, bucket: string, prefix: string | null | undefined, files: { filename: string; contentType: string }[]): Promise<Result<void>> {
+export async function applyCacheControl(s3: Send, bucket: string, prefix: string | null | undefined, files: { filename: string; contentType: string }[], signal?: AbortSignal): Promise<Result<void>> {
   return Result.tryAsync(
     async () => {
-      await Promise.all(files.map((f) => copyOne(s3, bucket, prefix, { from: f.filename, to: f.filename, contentType: f.contentType })))
+      await Promise.all(files.map((f) => copyOne(s3, bucket, prefix, { from: f.filename, to: f.filename, contentType: f.contentType }, signal)))
     },
     (e) => Err.unexpected('Media.CacheControlFailed', String(e)),
   )

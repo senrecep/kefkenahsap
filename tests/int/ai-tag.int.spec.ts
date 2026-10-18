@@ -9,6 +9,7 @@ import { afterAll, beforeAll, describe, expect, it, vi } from 'vitest'
 
 import { FAKE_TAG_IMAGE, fakeHooks } from '@/ai/fake'
 import { retryTagImage } from '@/ai/tagMedia'
+import { aiTagMediaEndpoint } from '@/endpoints/ai'
 import { mediaBadge } from '@/lib/media/galeri'
 
 // Model calls go to the deterministic fake (AI_FAKE_PROVIDER=1, set in vitest.setup.ts).
@@ -229,7 +230,7 @@ describe('tagImage job', () => {
       }
       expect(tr.aiSuggestion ?? null).toBeNull()
       expect((tr.aiFailure as { code: string; at: string }).code).toBe('Media.StorageReadFailed')
-      expect(mediaBadge(tr, NOW).label).toBe('AI önerisi alınamadı')
+      expect(mediaBadge(tr, NOW, true).label).toBe('AI önerisi alınamadı')
       const usage = await payload.find({ collection: 'ai-usage', where: { docRef: { equals: `media:${m.id}` } } })
       expect(usage.totalDocs).toBe(0)
     })
@@ -245,17 +246,26 @@ describe('tagImage job', () => {
         delete fakeHooks.beforeAnswer
       }
       expect((tr.aiFailure as { code: string }).code).toBeTruthy()
-      expect(mediaBadge(tr, NOW).label).toBe('AI önerisi alınamadı')
+      expect(mediaBadge(tr, NOW, true).label).toBe('AI önerisi alınamadı')
       const usage = await payload.find({ collection: 'ai-usage', where: { docRef: { equals: `media:${m.id}` } } })
       usage.docs.forEach((d) => created.push({ collection: 'ai-usage', id: d.id }))
       expect(usage.docs.map((d) => d.ok)).toEqual([false])
     })
 
-    it('retry clears the failed state, queues the job, and the next run fills the photo', async () => {
+    const failed = async () => {
       const m = await payload.create({ collection: 'media', data: {}, filePath: IMG })
       created.push({ collection: 'media', id: m.id })
       await payload.update({ collection: 'media', id: m.id, locale: 'tr', context: { skipAi: true }, data: { aiFailure: { code: 'Media.StorageReadFailed', at: new Date().toISOString() } } })
-      const r = await retryTagImage({ payload, req: await createLocalReq({}, payload), id: m.id })
+      return m
+    }
+    const retry = async (id: number, over: { aiEnabled?: boolean } = {}) =>
+      retryTagImage({ payload, req: await createLocalReq({}, payload), id, aiEnabled: over.aiEnabled ?? true, nowMs: Date.now() })
+    const jobsFor = async (id: number) =>
+      (await payload.find({ collection: 'payload-jobs', where: { taskSlug: { equals: 'tagImage' }, completedAt: { exists: false } }, limit: 500, depth: 0 })).docs.filter((j) => (j.input as { mediaId?: string }).mediaId === String(id))
+
+    it('retry clears the failed state, queues the job, and the next run fills the photo', async () => {
+      const m = await failed()
+      const r = await retry(m.id)
       expect(r.ok && r.value).toEqual({ queued: true })
       const cleared = await payload.findByID({ collection: 'media', id: m.id, locale: 'tr' })
       expect(cleared.aiFailure ?? null).toBeNull()
@@ -266,17 +276,65 @@ describe('tagImage job', () => {
       usage.docs.forEach((d) => created.push({ collection: 'ai-usage', id: d.id }))
     })
 
-    it('retry on a photo that already has its suggestion queues nothing; an unknown photo is NotFound', async () => {
-      const m = await payload.create({ collection: 'media', data: {}, filePath: IMG })
-      created.push({ collection: 'media', id: m.id })
-      await queueAndRun(m.id)
-      const req = await createLocalReq({}, payload)
-      const done = await retryTagImage({ payload, req, id: m.id })
-      expect(done.ok && done.value).toEqual({ queued: false })
-      const missing = await retryTagImage({ payload, req, id: 987654321 })
+    it('retry is refused unless the card shows the failed state: fresh, suggested, approved, hidden; nothing is queued or paid', async () => {
+      const fresh = await payload.create({ collection: 'media', data: {}, filePath: IMG })
+      const done = await payload.create({ collection: 'media', data: {}, filePath: IMG })
+      const approved = await payload.create({ collection: 'media', data: { status: 'approved', alt: 'x', title: 'x' }, filePath: IMG, context: { skipAi: true } })
+      const hidden = await failed()
+      await payload.update({ collection: 'media', id: hidden.id, data: { status: 'hidden' }, context: { skipAi: true } })
+      for (const m of [fresh, done, approved]) created.push({ collection: 'media', id: m.id })
+      await queueAndRun(done.id)
+      const before = (await payload.find({ collection: 'ai-usage', where: { docRef: { in: [fresh, done, approved, hidden].map((m) => `media:${m.id}`) } } })).totalDocs
+      for (const m of [fresh, done, approved, hidden]) {
+        const r = await retry(m.id)
+        expect([m.id, !r.ok && r.errors[0]?.code]).toEqual([m.id, 'AI.RetryNotNeeded'])
+        expect(await jobsFor(m.id)).toEqual([])
+      }
+      const after = await payload.find({ collection: 'ai-usage', where: { docRef: { in: [fresh, done, approved, hidden].map((m) => `media:${m.id}`) } } })
+      expect(after.totalDocs).toBe(before)
+      after.docs.forEach((d) => created.push({ collection: 'ai-usage', id: d.id }))
+    })
+
+    it('retry with AI off is refused; an unknown photo is NotFound', async () => {
+      const m = await failed()
+      const off = await retry(m.id, { aiEnabled: false })
+      expect(!off.ok && off.errors[0]?.code).toBe('AI.Disabled')
+      expect(await jobsFor(m.id)).toEqual([])
+      const missing = await retry(987654321)
       expect(!missing.ok && missing.errors[0]?.code).toBe('Media.NotFound')
-      const usage = await payload.find({ collection: 'ai-usage', where: { docRef: { equals: `media:${m.id}` } } })
-      usage.docs.forEach((d) => created.push({ collection: 'ai-usage', id: d.id }))
+    })
+
+    it('a tagImage job never fills an approved or hidden photo', async () => {
+      const m = await payload.create({ collection: 'media', data: { status: 'approved', title: 'x', alt: 'x' }, filePath: IMG, context: { skipAi: true } })
+      created.push({ collection: 'media', id: m.id })
+      const job = await payload.jobs.queue({ task: 'tagImage', input: { mediaId: String(m.id) } })
+      const { jobStatus } = await payload.jobs.run()
+      expect(jobStatus?.[String(job.id)]?.status).toBe('success')
+      const tr = await payload.findByID({ collection: 'media', id: m.id, locale: 'tr' })
+      expect(tr.aiSuggestion ?? null).toBeNull()
+    })
+
+    it('POST /api/ai/tag-media: 401 without staff, 403 when AI is off, 200 queues for a failed photo', async () => {
+      const post = async (user: unknown, id: number) => {
+        const req = Object.assign(await createLocalReq({ user: user as never }, payload), { method: 'POST', body: {}, headers: new Headers({ 'content-type': 'application/json' }), text: async () => JSON.stringify({ id }) })
+        return aiTagMediaEndpoint.handler(req as never)
+      }
+      const m = await failed()
+      expect((await post(null, m.id)).status).toBe(401)
+      const email = `tag-${Date.now()}@local.test`
+      const user = await payload.create({ collection: 'users', data: { email, password: `pw-${Date.now()}`, name: 'Tag', role: 'admin' } })
+      try {
+        await payload.updateGlobal({ slug: 'aiSettings', data: { enabled: false } })
+        const off = await post({ ...user, collection: 'users' }, m.id)
+        expect([off.status, (await off.json()).code]).toEqual([403, 'AI.Disabled'])
+        await payload.updateGlobal({ slug: 'aiSettings', data: { enabled: true } })
+        const ok = await post({ ...user, collection: 'users' }, m.id)
+        expect([ok.status, await ok.json()]).toEqual([200, { queued: true }])
+        expect(await jobsFor(m.id)).toHaveLength(1)
+      } finally {
+        await payload.updateGlobal({ slug: 'aiSettings', data: { enabled: true } })
+        await payload.delete({ collection: 'users', id: user.id }).catch(() => {})
+      }
     })
   })
 })

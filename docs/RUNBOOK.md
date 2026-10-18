@@ -85,6 +85,8 @@ Incident 2026-10-18: a photo's old URLs were requested after a rename and answer
 
 - **App side (in code):** every new upload (create and file replace) purges its own URLs (original + all sizes) after the objects are written, and every object the app writes (upload, SEO rename copies, `add-sizes` script) carries `Cache-Control: public, max-age=31536000, immutable` and its content type. `tagImage` reads the image from the bucket, never from the CDN.
 - **Pending (owner, Cloudflare dashboard, no code change):** on the `kefken: cdn immutable` rule set **Edge TTL → "Use status code TTL"** with `200-299` = 1 year and `400-599` = **No store / do not cache** (at most `404` = 60 s if no-store is not offered). Once the app with the header above is deployed, set **Browser TTL → "Respect origin"** (`respect_origin`): the browser then keeps files for a year only because the app says so, not for error pages.
+- **Time bound:** the Cache-Control rewrite runs inside the upload request (it holds the DB transaction), so it has 5 s in total (`CACHE_CONTROL_BUDGET_MS`). On a slow bucket the upload still succeeds and the purge still goes out; the objects then keep no `Cache-Control` and the log shows `media: could not set Cache-Control on the new files`.
+- **Post-deploy check:** upload a photo on dev, then `curl -sI <its cdn-dev URL> | grep -i cache-control` must show `cache-control: public, max-age=31536000, immutable`. Only then switch the zone's Browser TTL to `respect_origin`.
 - Check: `curl -sI https://cdn.kefkenahsap.com/does-not-exist.webp | grep -iE 'cache-control|cf-cache-status'` must not show `max-age=31536000`. A stuck 404 on a real file: purge its URL (Caching → Custom Purge).
 
 ### Page caching and Cloudflare HTML (#211)
