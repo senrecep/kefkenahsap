@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { balanceColumns, distribute, evenColumns, largestFirstScreenItem, placements, trimColumns } from './masonry'
+import { balanceColumns, distribute, evenColumns, largestFirstScreenItem, placements, ratio, trimColumns } from './masonry'
 
 // Ratios chosen so the hand-computed column heights are exact.
 const landscape = { width: 400, height: 200 } // 0.5
@@ -171,5 +171,12 @@ describe('placements (where each tile sits in a column layout)', () => {
     // col 0: 1 + 2 = 3 widths and one gap; col 1: 0.5 + 1 = 1.5 widths and one gap.
     expect(placements(items, [[0, 2], [1, 3]]).height).toBe('max(calc(3 * var(--cw) + 1 * var(--gap)), calc(1.5 * var(--cw) + 1 * var(--gap)))')
     expect(placements(items, [[0], []]).height).toBe('max(calc(1 * var(--cw) + 0 * var(--gap)), 0px)')
+  })
+})
+
+describe('ratio (one tile height per unit of width, shared by layout and the drawn tile)', () => {
+  it('is height / width', () => expect(ratio({ width: 20, height: 10 })).toBe(0.5))
+  it('treats a photo without stored dimensions as square, so its slot and its drawn tile agree', () => {
+    for (const b of [{}, { width: 0, height: 5 }, { width: 5, height: null }]) expect(ratio(b)).toBe(1)
   })
 })

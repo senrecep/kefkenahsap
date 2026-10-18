@@ -1,5 +1,8 @@
 export type Box = { width?: number | null; height?: number | null }
 
+/** Height per unit of width; a photo without stored dimensions counts as square (its tile is drawn square, #215). */
+export const ratio = (b: Box) => (b.width && b.height ? b.height / b.width : 1)
+
 /**
  * Masonry columns from known aspect ratios: each item goes to the shortest column so far (ties → lowest index).
  * Greedy and order-preserving, so appending items never moves the ones already placed (no layout shift).
@@ -11,7 +14,7 @@ export function distribute(items: readonly Box[], count: number): number[][] {
   items.forEach((item, i) => {
     const col = heights.indexOf(Math.min(...heights))
     columns[col]!.push(i)
-    heights[col]! += item.width && item.height ? item.height / item.width : 1
+    heights[col]! += ratio(item)
   })
   return columns
 }
@@ -21,7 +24,6 @@ export function distribute(items: readonly Box[], count: number): number[][] {
  * each column; a tie goes to the earlier one in document order (column by column), which is what Chrome reports.
  */
 export function largestFirstScreenItem(items: readonly Box[], columns: readonly number[][], rows: number): number | undefined {
-  const ratio = (b: Box) => (b.width && b.height ? b.height / b.width : 1)
   let best: number | undefined
   for (const col of columns) for (const i of col.slice(0, rows)) if (best === undefined || ratio(items[i]!) > ratio(items[best]!)) best = i
   return best
@@ -32,7 +34,6 @@ export function largestFirstScreenItem(items: readonly Box[], columns: readonly 
  * shortest column's, so the grid ends on a near-even line. A column always keeps its first tile.
  */
 export function trimColumns(items: readonly Box[], columns: readonly number[][]): number[][] {
-  const ratio = (b: Box) => (b.width && b.height ? b.height / b.width : 1)
   const heights = columns.map((col) => col.reduce((h, i) => h + ratio(items[i]!), 0))
   const target = Math.min(...heights)
   return columns.map((col, c) => {
@@ -82,7 +83,7 @@ function improve(columns: readonly number[][], score: Score): number[][] {
 }
 
 const heightsOf = (items: readonly Box[], columns: readonly number[][], gap: number) =>
-  columns.map((c) => c.reduce((h, i) => h + (items[i]!.width && items[i]!.height ? items[i]!.height! / items[i]!.width! : 1) + gap, 0))
+  columns.map((c) => c.reduce((h, i) => h + ratio(items[i]!) + gap, 0))
 
 /**
  * Evens the columns by moving or swapping tiles between them, lowering the sum of squared column heights. `gap`: the
@@ -120,7 +121,6 @@ const round = (n: number) => Math.round(n * 1e6) / 1e6
  * width) and `--gap`, so CSS can place the tiles at any width. Unplaced (trimmed) tiles get `undefined`.
  */
 export function placements(items: readonly Box[], columns: readonly number[][]): { at: (Placement | undefined)[]; height: string } {
-  const ratio = (b: Box) => (b.width && b.height ? b.height / b.width : 1)
   const at: (Placement | undefined)[] = items.map(() => undefined)
   const tails = columns.map((col, c) => {
     let y = 0

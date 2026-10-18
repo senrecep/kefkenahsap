@@ -128,6 +128,13 @@ test.describe('gallery', () => {
     })
   }
 
+  test('RTL: the masonry mirrors, the first column is on the right (#215)', async ({ page }) => {
+    await page.setViewportSize({ width: 390, height: 900 })
+    await page.goto('/ar/gallery')
+    const xs = await page.locator('[data-gallery-item]:visible').evaluateAll((a) => a.slice(0, 2).map((x) => x.getBoundingClientRect().x))
+    expect(xs[0]!).toBeGreaterThan(xs[1]!)
+  })
+
   test('unfiltered: curated first page, then the feed covers the rest with no repeats', async ({ page, request }) => {
     await page.goto('/tr/galeri')
     const first = await page.locator('[data-gallery-item]:visible').evaluateAll((a) => a.map((x) => x.getAttribute('href')!))

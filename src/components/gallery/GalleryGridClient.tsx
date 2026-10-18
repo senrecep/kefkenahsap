@@ -6,16 +6,16 @@ import { buttonClass } from '@/components/ui/button'
 import { Picture } from '@/components/ui/Picture'
 import type { GalleryItem } from '@/lib/gallery/item'
 import type { GalleryLabels } from '@/lib/gallery/labels'
-import { distribute, evenColumns, largestFirstScreenItem, placements } from '@/lib/gallery/masonry'
+import { distribute, evenColumns, largestFirstScreenItem, placements, ratio } from '@/lib/gallery/masonry'
 
 import type { LightboxProps } from './Lightbox'
 
 // One server-computed column layout per breakpoint (2 / 3 / 4 columns, `.masonry` in styles.css). The tiles render once
 // and CSS places them for the active breakpoint (#215); `media` picks that layout for the lightbox on click.
 const LAYOUTS = [
-  { cols: 2, media: '(max-width: 47.99rem)' },
-  { cols: 3, media: '(min-width: 48rem) and (max-width: 63.99rem)' },
-  { cols: 4, media: '(min-width: 64rem)' },
+  { cols: 2, media: '(width < 48rem)' },
+  { cols: 3, media: '(48rem <= width < 64rem)' },
+  { cols: 4, media: '(width >= 64rem)' },
 ] as const
 // Scrolling loads at most this many pages by itself; then the button takes over so the footer stays reachable.
 const AUTO_PAGES = 2
@@ -153,6 +153,9 @@ export function GalleryGridClient({
                   data-gallery-item
                   data-umami-event="gallery_open"
                   className="group block overflow-hidden rounded-[var(--radius-photo)]"
+                  // The tile is drawn at the ratio its slot was laid out with (a photo without stored dimensions is
+                  // square, cropped by object-cover), so absolutely placed tiles never overlap; an empty Picture keeps it.
+                  style={{ aspectRatio: `1 / ${ratio(item)}` }}
                 >
                   <Picture
                     media={item.media}
@@ -160,6 +163,7 @@ export function GalleryGridClient({
                     altLang={item.altLang}
                     sizes={SIZES}
                     maxWidth={960}
+                    className="h-full"
                     priority={i === lcpItem}
                     eager={priority && top !== undefined && top.k < FIRST_SCREEN_ROWS}
                     imgClassName="transition-transform duration-500 ease-[var(--ease-out-expo)] group-hover:scale-[1.03]"

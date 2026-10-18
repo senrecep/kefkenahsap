@@ -133,6 +133,11 @@
     @media (width >= 48rem) { --c: var(--c3); --y: var(--y3); --k: var(--k3); }
     @media (width >= 64rem) { --c: var(--c4); --y: var(--y4); --k: var(--k4); }
   }
+  /* Print: no container-relative placement; the tiles flow one under another, none split across pages. */
+  @media print {
+    .masonry > ul { height: auto; }
+    .masonry > ul > li { position: static; width: auto; margin-block-end: 0.5rem; break-inside: avoid; }
+  }
   /* A fixed (trimmed) grid drops some tiles per layout. */
   @media (width < 48rem) { .masonry-hide-2 { display: none; } }
   @media (48rem <= width < 64rem) { .masonry-hide-3 { display: none; } }
