@@ -21,6 +21,8 @@ import { purgeExpiredLeads } from './jobs/purgeExpiredLeads'
 import { tagImageTask } from './jobs/tagImage'
 import { releaseStuckMediaJobs } from './jobs/releaseStuck'
 import { translateMediaTask } from './jobs/translateMedia'
+import { seoRenameTask } from './jobs/seoRename'
+import { SEO_RENAME_QUEUE } from './lib/media/seoName'
 import { AiUsage } from './collections/AiUsage'
 import { AiSettings } from './globals/AiSettings'
 import { isFakeAi } from './ai/models'
@@ -143,9 +145,15 @@ export default buildConfig({
     if (released) payload.logger.warn(`jobs: released ${released} stuck photo job(s)`)
   },
   jobs: {
-    tasks: [purgeExpiredLeads, tagImageTask, translateMediaTask],
+    tasks: [purgeExpiredLeads, tagImageTask, translateMediaTask, seoRenameTask],
     // Runs queued jobs (AI tagging, retention, purge) every minute; tasks are added per feature.
-    autoRun: [{ cron: '* * * * *', queue: 'default' }],
+    // seoRename has its own queue (SEO_RENAME_QUEUE): after a bulk approve its jobs would otherwise fill the default queue's
+    // 10-per-run limit and delay translations and tagging. The per-photo concurrency key is not queue-scoped, so a photo's
+    // jobs still never run together. The default queue's limit is raised for the same reason (many uploads queue tagImage).
+    autoRun: [
+      { cron: '* * * * *', queue: 'default', limit: 50 },
+      { cron: '* * * * *', queue: SEO_RENAME_QUEUE, limit: 50 },
+    ],
     // tagImage + translateMedia: one job per photo at a time (adds payload_jobs.concurrency_key).
     enableConcurrencyControl: true,
     // Never under Vitest: tests run the queue themselves, and a cron tick between a test's queue() and run() took the job
