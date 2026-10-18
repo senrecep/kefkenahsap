@@ -94,8 +94,9 @@ describe('leads', () => {
     const fresh = await payload.create({ collection: 'leads', data: { name: `Yeni ${stamp}`, phone: '905321112233', consentKvkk: true } })
     created.push({ collection: 'leads', id: fresh.id })
 
-    await payload.jobs.queue({ task: 'purgeExpiredLeads', input: {} })
-    await payload.jobs.run()
+    // By id: jobs.run() takes the oldest queued jobs first, and other suites leave some (e.g. seoRename after an approval).
+    const job = await payload.jobs.queue({ task: 'purgeExpiredLeads', input: {} })
+    await payload.jobs.runByID({ id: job.id })
 
     await expect(payload.findByID({ collection: 'leads', id: old.id })).rejects.toThrow()
     await expect(payload.findByID({ collection: 'lead-photos', id: photo.id })).rejects.toThrow()

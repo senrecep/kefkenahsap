@@ -15,7 +15,19 @@ export function isSeoNamed(filename: string | null | undefined, seoFilename: str
   const seo = seoFilename?.trim()
   if (!filename || !seo) return false
   const stem = stemOf(filename)
-  return stem === seo || (stem.startsWith(`${seo}-`) && /^\d+$/.test(stem.slice(seo.length + 1)))
+  return stem === seo || (stem.startsWith(`${seo}-`) && /^\d{1,3}$/.test(stem.slice(seo.length + 1)))
+}
+
+/**
+ * Should a seoRename job rename this document's stored files? Approved (or, forced by the one-off script, hidden), not
+ * seeded, never renamed by the job (`seoRenamed`, reset when its file is replaced), and not already SEO-named.
+ */
+export function needsSeoRename(
+  doc: { status?: string | null; filename?: string | null; seoFilename?: string | null; seedKey?: string | null; seoRenamed?: boolean | null },
+  { force = false }: { force?: boolean } = {},
+): boolean {
+  const live = doc.status === 'approved' || (force && doc.status === 'hidden')
+  return live && !!doc.filename && !doc.seedKey && !doc.seoRenamed && !isSeoNamed(doc.filename, doc.seoFilename)
 }
 
 /** seoFilename, else the TR title slug, else kefken-ahsap-<id>; made unique against `taken` (stems) with -2, -3 … */

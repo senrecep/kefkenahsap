@@ -1,8 +1,8 @@
-import { CopyObjectCommand, DeleteObjectsCommand, S3Client } from '@aws-sdk/client-s3'
+import { CopyObjectCommand, DeleteObjectsCommand, HeadObjectCommand, S3Client } from '@aws-sdk/client-s3'
 import { Err } from 'tsentials/errors'
 import { Result } from 'tsentials/result'
 
-/** #209: moves a media document's stored objects to their SEO names. Copy first (a failure undoes its own copies); the old objects are deleted by the caller once the document points at the new ones. */
+/** #209: moves a media document's stored objects to their SEO names. Copy first (a failure undoes its own copies); the caller deletes the old objects once the document points at the new ones. */
 
 type Send = Pick<S3Client, 'send'>
 type Move = { from: string; to: string }
@@ -32,19 +32,25 @@ export async function deleteObjects(s3: Send, bucket: string, prefix: string | n
   )
 }
 
-/** Copies every object to its new key. On failure the copies made so far are removed and nothing else has changed. */
+/** Does any of these objects exist? Names are chosen against the bucket, so two processes never overwrite each other's file. */
+export async function anyExists(s3: Send, bucket: string, prefix: string | null | undefined, filenames: string[]): Promise<boolean> {
+  const found = await Promise.all(filenames.map((f) => s3.send(new HeadObjectCommand({ Bucket: bucket, Key: key(prefix, f) })).then(() => true, (e: { name?: string }) => {
+    if (e?.name === 'NotFound' || e?.name === 'NoSuchKey') return false
+    throw e
+  })))
+  return found.some(Boolean)
+}
+
+/** Copies every object to its new key, in parallel. On any failure the copies that succeeded are removed. */
 export async function copyObjects(s3: Send, bucket: string, prefix: string | null | undefined, moves: Move[]): Promise<Result<void>> {
-  const done: string[] = []
-  const copied = await Result.tryAsync(
-    async () => {
-      for (const m of moves) {
-        const source = key(prefix, m.from).split('/').map(encodeURIComponent).join('/')
-        await s3.send(new CopyObjectCommand({ Bucket: bucket, Key: key(prefix, m.to), CopySource: `${bucket}/${source}` }))
-        done.push(m.to)
-      }
-    },
-    (e) => Err.unexpected('Media.CopyFailed', String(e)),
+  const settled = await Promise.allSettled(
+    moves.map((m) => {
+      const source = key(prefix, m.from).split('/').map(encodeURIComponent).join('/')
+      return s3.send(new CopyObjectCommand({ Bucket: bucket, Key: key(prefix, m.to), CopySource: `${bucket}/${source}` }))
+    }),
   )
-  if (!copied.ok) await deleteObjects(s3, bucket, prefix, done)
-  return copied
+  const failed = settled.flatMap((r, i) => (r.status === 'rejected' ? [`${moves[i]!.from}: ${String(r.reason)}`] : []))
+  if (!failed.length) return Result.ok()
+  await deleteObjects(s3, bucket, prefix, moves.filter((_, i) => settled[i]!.status === 'fulfilled').map((m) => m.to))
+  return Result.failure(Err.unexpected('Media.CopyFailed', failed.join('; ')))
 }

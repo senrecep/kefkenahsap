@@ -150,6 +150,7 @@ export interface Config {
       purgeExpiredLeads: TaskPurgeExpiredLeads;
       tagImage: TaskTagImage;
       translateMedia: TaskTranslateMedia;
+      seoRename: TaskSeoRename;
       inline: {
         input: unknown;
         output: unknown;
@@ -235,6 +236,7 @@ export interface Media {
    * İşaretlenirse yeni yüklenen dosyaya "kefkenahsap.com" filigranı basılmaz.
    */
   skipWatermark?: boolean | null;
+  seoRenamed?: boolean | null;
   lqip?: string | null;
   seedKey?: string | null;
   dominantColor?: string | null;
@@ -796,7 +798,7 @@ export interface PayloadJob {
     | {
         executedAt: string;
         completedAt: string;
-        taskSlug: 'inline' | 'purgeExpiredLeads' | 'tagImage' | 'translateMedia';
+        taskSlug: 'inline' | 'purgeExpiredLeads' | 'tagImage' | 'translateMedia' | 'seoRename';
         taskID: string;
         input?:
           | {
@@ -829,7 +831,7 @@ export interface PayloadJob {
         id?: string | null;
       }[]
     | null;
-  taskSlug?: ('inline' | 'purgeExpiredLeads' | 'tagImage' | 'translateMedia') | null;
+  taskSlug?: ('inline' | 'purgeExpiredLeads' | 'tagImage' | 'translateMedia' | 'seoRename') | null;
   queue?: string | null;
   waitUntil?: string | null;
   processing?: boolean | null;
@@ -994,6 +996,7 @@ export interface MediaSelect<T extends boolean = true> {
   capturedAt?: T;
   watermark?: T;
   skipWatermark?: T;
+  seoRenamed?: T;
   lqip?: T;
   seedKey?: T;
   dominantColor?: T;
@@ -1975,6 +1978,19 @@ export interface TaskTagImage {
 export interface TaskTranslateMedia {
   input: {
     mediaId: string;
+  };
+  output: {
+    result?: string | null;
+  };
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "TaskSeoRename".
+ */
+export interface TaskSeoRename {
+  input: {
+    mediaId: string;
+    force?: boolean | null;
   };
   output: {
     result?: string | null;

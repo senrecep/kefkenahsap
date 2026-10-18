@@ -21,6 +21,7 @@ import { purgeExpiredLeads } from './jobs/purgeExpiredLeads'
 import { tagImageTask } from './jobs/tagImage'
 import { releaseStuckMediaJobs } from './jobs/releaseStuck'
 import { translateMediaTask } from './jobs/translateMedia'
+import { seoRenameTask } from './jobs/seoRename'
 import { AiUsage } from './collections/AiUsage'
 import { AiSettings } from './globals/AiSettings'
 import { isFakeAi } from './ai/models'
@@ -143,7 +144,7 @@ export default buildConfig({
     if (released) payload.logger.warn(`jobs: released ${released} stuck photo job(s)`)
   },
   jobs: {
-    tasks: [purgeExpiredLeads, tagImageTask, translateMediaTask],
+    tasks: [purgeExpiredLeads, tagImageTask, translateMediaTask, seoRenameTask],
     // Runs queued jobs (AI tagging, retention, purge) every minute; tasks are added per feature.
     autoRun: [{ cron: '* * * * *', queue: 'default' }],
     // tagImage + translateMedia: one job per photo at a time (adds payload_jobs.concurrency_key).

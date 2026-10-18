@@ -1,4 +1,3 @@
-import path from 'node:path'
 import sharp from 'sharp'
 import {
   APIError,
@@ -21,10 +20,9 @@ import { routing } from '@/i18n/routing'
 import { changedFields, type I18nSync } from '@/lib/media/i18nSync'
 import { mediaFileURL } from '@/lib/media/url'
 import { createCdnPurger, mediaPublicURLs } from '@/lib/media/cdn-purge'
-import { copyObjects, deleteObjects, mediaBucket } from '@/lib/media/renameStored'
-import { isSeoNamed, pickSeoName, renamePlan, stemOf } from '@/lib/media/seoName'
 import { createReporter } from '@/lib/observability/report'
 import { checkPublishable, type MediaStatus } from '@/lib/media/publish'
+import { needsSeoRename } from '@/lib/media/seoName'
 import { approvalTags, type TagRef } from '@/lib/media/taxonomy'
 import { applyWatermark, isStampable } from '@/lib/media/watermark'
 import { revalidateAfterChange, revalidateAfterDelete } from '@/hooks/revalidate'
@@ -51,18 +49,12 @@ const stampUpload: CollectionBeforeOperationHook = async ({ args, operation, req
   if ((operation !== 'create' && operation !== 'update') || !file?.data?.length) return args
   // One file for many documents is not supported.
   if (operation === 'update' && 'where' in args && args.where) throw new APIError('Dosya yalnızca tek bir görselde değiştirilebilir.', 400, null, true)
-  const data = (args.data ??= {}) as { watermark?: string | null; skipWatermark?: boolean }
+  const data = (args.data ??= {}) as { watermark?: string | null; skipWatermark?: boolean; seoRenamed?: boolean }
   // Any new file on an existing document replaces the old one (purgeReplacedFile).
   if (operation === 'update') {
     req.context.mediaFileReplaced = true
-    // #209: a document that already has its SEO-named file keeps that name (no upload name, no `-1` twin).
-    const id = (args as { id?: number | string }).id
-    const doc = id === undefined ? null : await req.payload.findByID({ collection: 'media', id, depth: 0, select: { filename: true, seoFilename: true } }).catch(() => null)
-    if (doc?.filename && isSeoNamed(doc.filename, doc.seoFilename)) {
-      file.name = `${stemOf(doc.filename)}${path.extname(file.name)}`
-      // Payload would otherwise find the name taken (by this very document) and store `<name>-1`.
-      ;(args as { overwriteExistingFiles?: boolean }).overwriteExistingFiles = true
-    }
+    // #209: the new file has the upload's name again: the seoRename job gives it its SEO name.
+    data.seoRenamed = false
   }
   // Seeds/imports declare files that already carry the pipeline's mark. On update the admin echoes the stored state,
   // which describes the replaced file, not the new one.
@@ -88,73 +80,6 @@ const truthfulWatermark: CollectionBeforeChangeHook = ({ data, operation, req })
   return data
 }
 
-const RENAMED = 'seoRenamedObjects'
-// Names handed out in this process whose write may not be visible in the DB yet (bulk approve runs docs concurrently).
-const reserved = new Map<string, number | string>()
-let nameLock: Promise<unknown> = Promise.resolve()
-
-/**
- * #209: an admin upload is stored under its upload name. When a document is first approved (or the one-off script
- * forces it: context.seoRename = 'force') and its file is not yet named after its SEO name, the original and every size
- * are copied to `<seoName>.<ext>` / `<seoName>-<W>x<H>.<ext>` and this write points the document at the copies, so the
- * upload pipeline (watermark, resizing) never runs again. "Approved once" is not stored: a file that already carries
- * its SEO name is never renamed, so public URLs stay stable. The old objects go in deleteRenamedObjects, after the
- * write is committed; their CDN URLs are purged by purgeReplacedFile. A failed copy rejects the write, which leaves the
- * document untouched.
- */
-const renameToSeoName: CollectionBeforeChangeHook = async ({ data, operation, originalDoc, req }) => {
-  // Seeded photos are named by the seed and keep their URLs (the legacy redirect map points at them).
-  if (operation !== 'update' || !originalDoc?.filename || originalDoc.seedKey || req.file?.data?.length) return data
-  const approving = data.status === 'approved' && originalDoc.status !== 'approved'
-  if (!approving && req.context.seoRename !== 'force') return data
-  const seo = (data.seoFilename ?? originalDoc.seoFilename) as string | null | undefined
-  if (isSeoNamed(originalDoc.filename, seo)) return data
-
-  // The Turkish title, whichever locale is being edited (no `req`: see publishGate).
-  let titleTr: string | null | undefined
-  if (req.locale === 'all') titleTr = (data.title as Record<string, string> | undefined)?.tr
-  else if (req.locale === 'tr') titleTr = data.title ?? originalDoc.title
-  if (titleTr === undefined) titleTr = (await req.payload.findByID({ collection: 'media', id: originalDoc.id, locale: 'tr', depth: 0, select: { title: true } })).title
-
-  const picking = nameLock.then(async () => {
-    const first = pickSeoName({ seoFilename: seo, titleTr, id: originalDoc.id, taken: new Set() })
-    const found = await req.payload.find({ collection: 'media', where: { filename: { contains: first } }, pagination: false, depth: 0, select: { filename: true } })
-    const taken = new Set([
-      ...found.docs.filter((d) => d.id !== originalDoc.id).map((d) => stemOf(d.filename ?? '')),
-      ...[...reserved].filter(([, owner]) => owner !== originalDoc.id).map(([n]) => n),
-    ])
-    const picked = pickSeoName({ seoFilename: seo, titleTr, id: originalDoc.id, taken })
-    reserved.set(picked, originalDoc.id)
-    return picked
-  })
-  nameLock = picking.catch(() => undefined) // one failed lookup must not block the next approval
-  const name = await picking
-
-  const plan = renamePlan(originalDoc, name)
-  const { bucket, s3 } = mediaBucket()
-  const copied = await copyObjects(s3, bucket, originalDoc.prefix, plan.moves)
-  if (!copied.ok) {
-    req.payload.logger.error({ errors: copied.errors, media: originalDoc.id }, 'media: SEO rename failed; document unchanged')
-    throw new APIError('Dosya SEO adıyla yeniden adlandırılamadı; görsel değiştirilmedi. Tekrar deneyin.', 500, null, true)
-  }
-  const sizes = Object.fromEntries(Object.entries((originalDoc.sizes ?? {}) as Record<string, object>).map(([k, v]) => [k, plan.sizes[k] ? { ...v, filename: plan.sizes[k] } : v]))
-  ;((req.context[RENAMED] ??= []) as { prefix?: string | null; filenames: string[] }[]).push({ prefix: originalDoc.prefix, filenames: plan.moves.map((m) => m.from) })
-  return { ...data, filename: plan.filename, sizes, ...(seo?.trim() ? {} : { seoFilename: name }) }
-}
-
-/** Deletes the objects renameToSeoName replaced. After the commit, before the CDN purge; a failure only leaves garbage. */
-const deleteRenamedObjects: CollectionAfterOperationHook<'media'> = async ({ req, result }) => {
-  const renamed = req.context[RENAMED] as { prefix?: string | null; filenames: string[] }[] | undefined
-  if (!renamed?.length || req.context.skipCloudStorage) return result
-  delete req.context[RENAMED]
-  const { bucket, s3 } = mediaBucket()
-  for (const r of renamed) {
-    const deleted = await deleteObjects(s3, bucket, r.prefix, r.filenames)
-    if (!deleted.ok) req.payload.logger.warn({ errors: deleted.errors, files: r.filenames }, 'media: old objects not deleted after SEO rename')
-  }
-  return result
-}
-
 let purgeSkipLogged = false
 let reportPurge: ReturnType<typeof createReporter> | undefined
 const PURGE_URLS = 'cdnPurgeURLs'
@@ -171,7 +96,8 @@ function queuePurge(req: PayloadRequest, urls: string[]) {
  * under new names); added sizes purge nothing.
  */
 const purgeReplacedFile: CollectionAfterChangeHook = ({ doc, operation, previousDoc, req }) => {
-  if (operation !== 'update' || !previousDoc) return doc
+  // #209: the seoRename job purges its own old URLs, after it has deleted the old objects.
+  if (operation !== 'update' || !previousDoc || req.context.seoRenameJob) return doc
   const before = mediaPublicURLs(previousDoc, purgeBase())
   const after = new Set(mediaPublicURLs(doc, purgeBase()))
   const replaced = req.context.mediaFileReplaced === true
@@ -197,12 +123,18 @@ const sendCdnPurge: CollectionAfterOperationHook<'media'> = ({ req, result }) =>
   const urls = req.context[PURGE_URLS] as string[] | undefined
   if (!urls?.length || req.context.skipCloudStorage) return result
   delete req.context[PURGE_URLS]
+  void purgeURLs(req, urls)
+  return result
+}
+
+/** Purges these CDN URLs (fire-and-forget callers ignore the promise; it never rejects). Without the env it only warns. */
+export function purgeURLs(req: PayloadRequest, urls: string[]): Promise<void> {
   const zoneId = process.env.CLOUDFLARE_ZONE_ID
   const token = process.env.CLOUDFLARE_PURGE_TOKEN
   if (!zoneId || !token) {
     if (!purgeSkipLogged) req.payload.logger.warn('media: CLOUDFLARE_ZONE_ID / CLOUDFLARE_PURGE_TOKEN not set; deleted or replaced files stay in the CDN cache')
     purgeSkipLogged = true
-    return result
+    return Promise.resolve()
   }
   const unique = [...new Set(urls)]
   const failed = (err: unknown) => {
@@ -215,8 +147,7 @@ const sendCdnPurge: CollectionAfterOperationHook<'media'> = ({ req, result }) =>
     const http = req.payloadAPI !== 'local'
     reportPurge(new Error(`Cloudflare.PurgeFailed: ${detail}`), { path: http ? req.pathname : '(local api)', method: (http && req.method) || '(local api)' }, 'media.cdnPurge')
   }
-  createCdnPurger({ zoneId, token })(unique).then((r) => r.ok || failed(r.errors), failed)
-  return result
+  return createCdnPurger({ zoneId, token })(unique).then((r) => void (r.ok || failed(r.errors)), failed)
 }
 
 /** Tiny blurred placeholder + dominant colour, computed once at upload (skeleton/LQIP, CLS-free gallery). */
@@ -288,6 +219,22 @@ const queueAiSuggestion: CollectionAfterChangeHook = async ({ doc, operation, re
   return doc
 }
 
+/**
+ * #209: an approved photo whose file still has its upload name gets a seoRename job (src/jobs/seoRename.ts). Queued with
+ * `req`, so the job row exists only if this save commits; the job re-checks the photo, so a duplicate is a no-op.
+ * The storage plugin's nested metadata update and the job's own update never queue.
+ */
+const queueSeoRename: CollectionAfterChangeHook = async ({ doc, req }) => {
+  if (req.context.skipCloudStorage || req.context.seoRenameJob || !needsSeoRename(doc)) return doc
+  try {
+    await req.payload.jobs.queue({ task: 'seoRename', input: { mediaId: String(doc.id) }, req })
+  } catch (err) {
+    // The photo stays under its upload name; scripts/seed/seo-filenames.ts renames it later.
+    req.payload.logger.warn({ err, media: doc.id }, 'media: could not queue seoRename')
+  }
+  return doc
+}
+
 const TRANSLATE_QUEUED = 'translateMediaIds'
 
 /**
@@ -348,9 +295,9 @@ export const Media: CollectionConfig = {
   access: { read: approvedOrStaff, create: isStaff, update: isStaff, delete: isStaff },
   hooks: {
     beforeOperation: [stampUpload],
-    afterOperation: [deleteRenamedObjects, sendCdnPurge],
-    beforeChange: [truthfulWatermark, placeholder, publishGate, renameToSeoName, attachSuggestedTags, trackTranslations],
-    afterChange: [purgeReplacedFile, revalidateAfterChange('media', 'categories', 'projects'), queueAiSuggestion, queueTranslation],
+    afterOperation: [sendCdnPurge],
+    beforeChange: [truthfulWatermark, placeholder, publishGate, attachSuggestedTags, trackTranslations],
+    afterChange: [purgeReplacedFile, revalidateAfterChange('media', 'categories', 'projects'), queueAiSuggestion, queueTranslation, queueSeoRename],
     afterDelete: [revalidateAfterDelete('media', 'categories', 'projects'), purgeDeletedFile],
   },
   fields: [
@@ -404,6 +351,8 @@ export const Media: CollectionConfig = {
       // Payload makes virtual fields read-only unless told otherwise; this one is an instruction for the upload, not stored.
       admin: { position: 'sidebar', readOnly: false, description: 'İşaretlenirse yeni yüklenen dosyaya "kefkenahsap.com" filigranı basılmaz.' },
     },
+    // #209: set by the seoRename job once the stored files carry the SEO name; cleared when the file is replaced. Never renamed twice.
+    { name: 'seoRenamed', type: 'checkbox', defaultValue: false, admin: { readOnly: true, hidden: true } },
     { name: 'lqip', type: 'text', admin: { readOnly: true, hidden: true } },
     // Stable identity of seeded images (<category>/<source file>) so the seed is idempotent.
     { name: 'seedKey', type: 'text', unique: true, index: true, admin: { readOnly: true, hidden: true } },

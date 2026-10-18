@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { isSeoNamed, pickSeoName, renamePlan } from './seoName'
+import { isSeoNamed, needsSeoRename, pickSeoName, renamePlan } from './seoName'
 
 describe('isSeoNamed (#209)', () => {
   it('is true when the stem is the SEO name or its collision-suffixed form', () => {
@@ -11,6 +11,7 @@ describe('isSeoNamed (#209)', () => {
   it('is false for an upload name, a different SEO name or no SEO name', () => {
     expect(isSeoNamed('WhatsApp Image 2026-10-17 at 01.09.24.webp', 'bahce-evi')).toBe(false)
     expect(isSeoNamed('bahce-evi-kapi.webp', 'bahce-evi')).toBe(false)
+    expect(isSeoNamed('kamelya-2026.webp', 'kamelya')).toBe(false) // a year is not a collision suffix
     expect(isSeoNamed('bahce-evi.webp', '')).toBe(false)
     expect(isSeoNamed('bahce-evi.webp', null)).toBe(false)
     expect(isSeoNamed(null, 'bahce-evi')).toBe(false)
@@ -72,5 +73,23 @@ describe('renamePlan (#209)', () => {
     const plan = renamePlan({ filename: 'a.jpeg', sizes: { w320: { filename: 'other.jpeg' } } }, 'x')
     expect(plan.filename).toBe('x.jpeg')
     expect(plan.sizes).toEqual({ w320: 'x-w320.jpeg' })
+  })
+})
+
+describe('needsSeoRename (#209)', () => {
+  const doc = { status: 'approved', filename: 'IMG_1.webp', seoFilename: 'bahce-evi' }
+  it('is true for an approved upload whose file is not SEO-named', () => {
+    expect(needsSeoRename(doc)).toBe(true)
+    expect(needsSeoRename({ ...doc, seoFilename: '' })).toBe(true)
+  })
+  it('is false for pending/hidden (unless forced), seeded, renamed or already SEO-named files', () => {
+    expect(needsSeoRename({ ...doc, status: 'pending' })).toBe(false)
+    expect(needsSeoRename({ ...doc, status: 'hidden' })).toBe(false)
+    expect(needsSeoRename({ ...doc, status: 'hidden' }, { force: true })).toBe(true)
+    expect(needsSeoRename({ ...doc, status: 'pending' }, { force: true })).toBe(false) // pending is renamed once approved
+    expect(needsSeoRename({ ...doc, seedKey: 'x/y.webp' })).toBe(false)
+    expect(needsSeoRename({ ...doc, seoRenamed: true })).toBe(false)
+    expect(needsSeoRename({ ...doc, filename: 'bahce-evi-2.webp' })).toBe(false)
+    expect(needsSeoRename({ ...doc, filename: null })).toBe(false)
   })
 })
