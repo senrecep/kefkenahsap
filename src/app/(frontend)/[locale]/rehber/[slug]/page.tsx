@@ -67,15 +67,24 @@ export default async function GuidePage({ params }: Props) {
   const faq = guide.faq ?? []
   const site = siteUrl().replace(/\/$/, '')
   const url = `${site}${getPathname({ locale, href: { pathname: '/rehber/[slug]', params: { slug } } })}`
+  const day = (iso: string) => format.dateTime(new Date(iso), { dateStyle: 'long' })
+  // "Updated" is shown only when it differs from the publish date by a day or more.
+  const showUpdated = new Date(guide.updatedAt).getTime() - new Date(guide.createdAt).getTime() >= 86_400_000
   const updated = (
     <>
-      {t('updated')}: <time dateTime={guide.updatedAt}>{format.dateTime(new Date(guide.updatedAt), { dateStyle: 'long' })}</time>
+      {t('published')}: <time dateTime={guide.createdAt}>{day(guide.createdAt)}</time>
+      {showUpdated && (
+        <>
+          {' · '}
+          {t('updated')}: <time dateTime={guide.updatedAt}>{day(guide.updatedAt)}</time>
+        </>
+      )}
     </>
   )
 
   return (
     <>
-      {/* Only what the page shows: title, excerpt, the "updated" date, the byline when shown, and the FAQ list. */}
+      {/* Only what the page shows: title, excerpt, the published and updated dates, the byline when shown, and the FAQ list. */}
       <JsonLd
         data={[
           articleJsonLd({
@@ -86,10 +95,9 @@ export default async function GuidePage({ params }: Props) {
             author: founder?.name,
             authorUrl: site + getPathname({ locale, href: '/hakkimizda' }),
             datePublished: guide.createdAt,
-            dateModified: guide.updatedAt,
+            dateModified: showUpdated ? guide.updatedAt : guide.createdAt,
             image: cover && responsiveImage(cover, { minWidth: 1200 }).src,
-            publisher: { name: settings.companyName, logo: `${site}/brand/logo.png` },
-          }),
+                      }),
           faqJsonLd(faq),
         ]}
       />

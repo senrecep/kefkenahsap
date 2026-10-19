@@ -178,7 +178,6 @@ describe('creativeWorkJsonLd (project)', () => {
         year: 2021,
         place: ['Sarıyer', 'İstanbul'],
         materials: ['Iroko'],
-        dateModified: '2026-10-10T08:00:00.000Z',
         about: ['Deck', 'Pergola'],
         images: [{ url: 'https://cdn/1.webp', caption: 'Teras' }],
       }),
@@ -189,7 +188,6 @@ describe('creativeWorkJsonLd (project)', () => {
       url: `${SITE}/tr/projeler/kosk`,
       description: 'Iroko teras.',
       dateCreated: '2021',
-      dateModified: '2026-10-10T08:00:00.000Z',
       about: [{ '@type': 'Thing', name: 'Deck' }, { '@type': 'Thing', name: 'Pergola' }],
       contentLocation: { '@type': 'Place', name: 'Sarıyer, İstanbul' },
       material: ['Iroko'],
@@ -229,7 +227,7 @@ describe('imageObjectJsonLd (photo page)', () => {
 })
 
 describe('articleJsonLd (guide)', () => {
-  it('headline, author with profile URL, dates, image, publisher with logo', () => {
+  it('headline, author with profile URL, dates, image, publisher reference', () => {
     expect(
       articleJsonLd({
         site: SITE,
@@ -240,7 +238,6 @@ describe('articleJsonLd (guide)', () => {
         datePublished: '2026-10-01',
         dateModified: '2026-10-10',
         image: 'https://cdn/cover-1280.webp',
-        publisher: { name: 'Kefken Ahşap', logo: `${SITE}/brand/logo.png` },
       }),
     ).toEqual({
       '@context': 'https://schema.org',
@@ -251,23 +248,21 @@ describe('articleJsonLd (guide)', () => {
       author: { '@type': 'Person', name: 'Murat Şen', url: `${SITE}/tr/hakkimizda` },
       datePublished: '2026-10-01',
       dateModified: '2026-10-10',
-      publisher: { '@type': 'Organization', '@id': BIZ, name: 'Kefken Ahşap', logo: { '@type': 'ImageObject', url: `${SITE}/brand/logo.png` } },
+      publisher: { '@id': BIZ },
     })
   })
-  it('without a publisher detail it still points at the business node', () => {
-    expect(articleJsonLd({ site: SITE, headline: 'X', url: `${SITE}/tr/rehber/x` }).publisher).toEqual({ '@id': BIZ })
-  })
-  it('headline is cut to 110 characters, and left alone at 110', () => {
+  it('headline is cut to 110 characters (counted in code points), and left alone at 110', () => {
     const at110 = 'a'.repeat(110)
     expect(articleJsonLd({ site: SITE, headline: at110, url: 'u' }).headline).toBe(at110)
     const cut = articleJsonLd({ site: SITE, headline: 'b'.repeat(111), url: 'u' }).headline as string
     expect(cut).toBe(`${'b'.repeat(109)}…`)
     expect(cut).toHaveLength(110)
+    expect(Array.from(articleJsonLd({ site: SITE, headline: '😀'.repeat(111), url: 'u' }).headline as string)).toHaveLength(110)
   })
 })
 
 describe('pageJsonLd (ContactPage, AboutPage, CollectionPage)', () => {
-  const o = { site: SITE, name: 'İletişim', url: `${SITE}/tr/iletisim`, description: 'Bize yazın.', locale: 'tr' }
+  const o = { site: SITE, name: 'İletişim', path: '/tr/iletisim', description: 'Bize yazın.', locale: 'tr' }
   it('contact page: part of the site, the business is its main entity', () => {
     expect(pageJsonLd('ContactPage', o)).toEqual({
       '@context': 'https://schema.org',

@@ -36,7 +36,7 @@ export default async function ServicesPage({ params }: { params: Params }) {
   return (
     <>
       <Container className="pt-10 md:pt-16">
-        <JsonLd data={pageJsonLd('CollectionPage', { site, name: t('title'), url: site + path, description: t('description'), locale })} />
+        <JsonLd data={pageJsonLd('CollectionPage', { site, name: t('title'), path, description: t('description'), locale })} />
         <Breadcrumb locale={locale} className="mb-6" items={[{ name: t('title'), path }]} />
         <h1 className="text-[2.1rem] leading-[1.08] md:text-[3.2rem]">{t('title')}</h1>
         <p className="mt-5 max-w-[62ch] text-[1.15rem] text-ink-soft md:text-[1.25rem]">{t('description')}</p>

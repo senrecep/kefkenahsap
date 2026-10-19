@@ -129,7 +129,6 @@ export const creativeWorkJsonLd = (o: {
   url: string
   description?: Text
   year?: number | null
-  dateModified?: Text
   about?: Text[]
   place?: Text[]
   materials?: string[]
@@ -142,7 +141,6 @@ export const creativeWorkJsonLd = (o: {
     url: o.url,
     description: o.description,
     dateCreated: o.year ? String(o.year) : undefined,
-    dateModified: o.dateModified,
     about: o.about?.map((name) => ({ '@type': 'Thing', name })),
     contentLocation: place ? { '@type': 'Place', name: place } : undefined,
     material: o.materials,
@@ -175,7 +173,7 @@ export const imageObjectJsonLd = (o: {
   })
 
 const HEADLINE_MAX = 110
-const clip = (t: string) => (t.length > HEADLINE_MAX ? `${t.slice(0, HEADLINE_MAX - 1)}…` : t)
+const clip = (t: string) => (Array.from(t).length > HEADLINE_MAX ? `${Array.from(t).slice(0, HEADLINE_MAX - 1).join('')}…` : t)
 
 export const articleJsonLd = (o: {
   site: string
@@ -187,7 +185,6 @@ export const articleJsonLd = (o: {
   dateModified?: Text
   image?: Text
   description?: Text
-  publisher?: { name: string; logo?: Text }
 }) =>
   node({
     '@type': 'Article',
@@ -198,15 +195,15 @@ export const articleJsonLd = (o: {
     author: { '@type': 'Person', name: o.author, url: o.author?.trim() ? o.authorUrl : undefined },
     datePublished: o.datePublished,
     dateModified: o.dateModified,
-    publisher: { '@type': o.publisher ? 'Organization' : undefined, '@id': businessId(o.site), name: o.publisher?.name, logo: o.publisher?.logo ? { '@type': 'ImageObject', url: o.publisher.logo } : undefined },
+    publisher: { '@id': businessId(o.site) },
   })
 
 /** The page's own type (contact, about, listings); the business is the main entity of contact and about. */
-export const pageJsonLd = (type: 'ContactPage' | 'AboutPage' | 'CollectionPage', o: { site: string; name: string; url: string; description?: Text; locale: string }) =>
+export const pageJsonLd = (type: 'ContactPage' | 'AboutPage' | 'CollectionPage', o: { site: string; name: string; path: string; description?: Text; locale: string }) =>
   node({
     '@type': type,
     name: o.name,
-    url: o.url,
+    url: `${o.site.replace(/\/$/, '')}${o.path}`,
     description: o.description,
     inLanguage: o.locale,
     isPartOf: { '@id': websiteId(o.site) },

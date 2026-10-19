@@ -32,7 +32,7 @@ export default async function GuidesIndex({ params }: Props) {
   const path = getPathname({ locale, href: '/rehber' })
   return (
     <Container className="pt-8 pb-20 md:pt-12">
-      <JsonLd data={pageJsonLd('CollectionPage', { site, name: t('title'), url: site + path, description: t('intro'), locale })} />
+      <JsonLd data={pageJsonLd('CollectionPage', { site, name: t('title'), path, description: t('intro'), locale })} />
       <Breadcrumb locale={locale} className="mb-6" items={[{ name: t('title'), path }]} />
       <header className="max-w-[46rem]">
         <h1 className="text-[clamp(2rem,4vw,3rem)]">{t('title')}</h1>

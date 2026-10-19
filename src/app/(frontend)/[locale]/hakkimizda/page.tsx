@@ -57,7 +57,7 @@ export default async function AboutPage({ params }: Props) {
 
   return (
     <Container className="pt-10 pb-6 md:pt-14">
-      <JsonLd data={pageJsonLd('AboutPage', { site: siteUrl().replace(/\/$/, ''), name: title, url: siteUrl().replace(/\/$/, '') + path, locale })} />
+      <JsonLd data={pageJsonLd('AboutPage', { site: siteUrl().replace(/\/$/, ''), name: title, path, locale })} />
       <Breadcrumb locale={locale} className="mb-6" items={[{ name: title, path }]} />
       <div className={`grid gap-12 ${photos.length ? 'lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-16' : ''}`}>
         <div>

@@ -57,7 +57,7 @@ export async function GalleryPage({ params, searchParams }: Props) {
   return (
     <>
       <Container className="pt-8 md:pt-12">
-        <JsonLd data={pageJsonLd('CollectionPage', { site: siteUrl().replace(/\/$/, ''), name: t('title'), url: siteUrl().replace(/\/$/, '') + base, description: t('intro'), locale })} />
+        <JsonLd data={pageJsonLd('CollectionPage', { site: siteUrl().replace(/\/$/, ''), name: t('title'), path: base, description: t('intro'), locale })} />
         <Breadcrumb locale={locale} className="mb-6" items={[{ name: t('title'), path: base }]} />
         <h1 className="text-[clamp(2rem,4vw,3rem)]">{category ? `${t('title')}: ${category.name}` : t('title')}</h1>
         <p className="mt-3 max-w-[60ch] text-ink-soft">{t('intro')}</p>

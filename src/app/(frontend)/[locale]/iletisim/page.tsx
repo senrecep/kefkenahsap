@@ -60,7 +60,7 @@ export default async function ContactPage({ params }: Props) {
 
   return (
     <Container className="pt-10 pb-6 md:pt-14">
-      <JsonLd data={pageJsonLd('ContactPage', { site: siteUrl().replace(/\/$/, ''), name: t('title'), url: siteUrl().replace(/\/$/, '') + path, description: t('intro'), locale })} />
+      <JsonLd data={pageJsonLd('ContactPage', { site: siteUrl().replace(/\/$/, ''), name: t('title'), path, description: t('intro'), locale })} />
       <Breadcrumb locale={locale} className="mb-6" items={[{ name: t('title'), path }]} />
       <h1 className="font-[family-name:var(--font-display)] text-[clamp(2rem,4vw,3rem)] font-semibold tracking-tight text-balance">{t('title')}</h1>
       <p className="mt-3 max-w-[60ch] text-lg text-ink-soft">{t('intro')}</p>

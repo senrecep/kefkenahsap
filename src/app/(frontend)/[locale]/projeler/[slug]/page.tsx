@@ -68,7 +68,6 @@ export default async function ProjectPage({ params }: { params: Params }) {
     name: project.title,
     url: wa.vars.url,
     year: project.year,
-    dateModified: project.updatedAt,
     about: chips.map((c) => c.name),
     place: [project.district, project.city],
     materials: Array.isArray(wood) ? wood : [],
