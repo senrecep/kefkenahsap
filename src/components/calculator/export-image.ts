@@ -39,7 +39,9 @@ export async function renderQuoteImage(a: Args): Promise<Blob> {
   // whole load, and the text then still draws with the faces that did load.
   const faces = (list: string, weight: number) =>
     list.split(',').map((f) => f.trim()).filter((f) => f && !/^(ui-sans-serif|system-ui|sans-serif)$/.test(f)).map((f) => document.fonts.load(`${weight} 32px ${f}`, text))
-  const [logo] = await Promise.all([loadImage(a.logoSrc), Promise.allSettled([...faces(display, 600), ...faces(body, 400)])])
+  // Never wait on fonts for more than 3 s: a stalled face must not block the export (it then draws with a fallback).
+  const fonts = Promise.race([Promise.allSettled([...faces(display, 600), ...faces(body, 400)]), new Promise((r) => setTimeout(r, 3000))])
+  const [logo] = await Promise.all([loadImage(a.logoSrc), fonts])
 
   const canvas = document.createElement('canvas')
   canvas.width = W
