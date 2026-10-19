@@ -15,7 +15,7 @@ import { WhatsAppButton } from '@/components/ui/WhatsAppButton'
 import { buttonClass } from '@/components/ui/button'
 import { getPathname, Link } from '@/i18n/navigation'
 import { routing, type Locale } from '@/i18n/routing'
-import { galleryLimit, hasRichText, pageFromQuery, priceGuide } from '@/lib/category/category'
+import { CALCULATOR_CATEGORIES, galleryLimit, hasRichText, pageFromQuery, priceGuide } from '@/lib/category/category'
 import { renameRedirect } from '@/lib/category/rename'
 import { areaLine } from '@/lib/company'
 import { telLink } from '@/lib/contact'
@@ -32,10 +32,6 @@ import { pageMetadata } from '@/lib/seo/page-metadata'
 type Params = Promise<{ locale: Locale; category: string }>
 type Query = { sayfa?: string | string[] } & Record<string, string | string[] | undefined>
 type Search = Promise<Query>
-
-// #233: categories whose jobs are built from sawn timber link to the material calculator (default-locale slugs, so the
-// choice holds in every page language).
-const CALCULATOR_CATEGORIES = new Set(['deck-ve-zeminler', 'pergola-ve-kamelyalar', 'korkuluk-ve-cit', 'merdivenler', 'sundurma-ve-ahsap-cati', 'ahsap-ev-ve-bungalov', 'kopru-ve-iskele'])
 
 const categoryPath = (locale: Locale, slug: string) => getPathname({ locale, href: { pathname: '/[category]', params: { category: slug } } })
 

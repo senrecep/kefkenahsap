@@ -2,12 +2,17 @@ import { Err } from 'tsentials/errors'
 import { safeJsonParse } from 'tsentials/json'
 import { Result } from 'tsentials/result'
 
+import { normalizeDigits } from './number'
 import { EXTRA_UNITS, LENGTH_UNITS, VAT_RATES, type ExtraInput, type QuoteInput, type TimberInput } from './quote'
 
 export const MAX_ROWS = 50
-const MAX_LINK = 12_000
 const CAP = { num: 24, desc: 80, customer: 80, job: 120, note: 500 }
-const VERSION = '1'
+// v2: values as typed, read by language-independent rules (number.ts). v1 links were read with the page's rules and
+// shared from the Turkish page, so they are migrated as Turkish (#236 review).
+const VERSION = '2'
+// Above the largest quote the form can hold (MAX_ROWS rows, every field at its cap, 3-byte UTF-8 characters: 55 021
+// characters, codec.test.ts); a URL fragment of this size is fine in every browser.
+const MAX_LINK = 80_000
 
 const invalid = () => Err.validation('Calc.LinkInvalid', 'The shared calculation could not be read.')
 
@@ -64,6 +69,7 @@ function unpack(x: unknown): Result<QuoteInput> {
     rows(extras, 4) &&
     extras.every((r) => oneOf(EXTRA_UNITS, r[2])) &&
     Array.isArray(vat) &&
+    vat.length === 2 &&
     oneOf([0, 1], vat[0]) &&
     oneOf(VAT_RATES, vat[1]) &&
     strs(meta, 3)
@@ -85,8 +91,31 @@ export function decodeQuote(link: string): Result<QuoteInput> {
   if (link.length > MAX_LINK) return Result.failure(Err.validation('Calc.LinkTooLong', 'The shared calculation is too long.'))
   const dot = link.indexOf('.')
   if (dot < 1) return Result.failure(invalid())
-  if (link.slice(0, dot) !== VERSION) return Result.failure(Err.validation('Calc.LinkVersion', 'Unknown calculation version.'))
-  return Result.then(Result.then(fromBase64Url(link.slice(dot + 1)), (json) => Result.mapError(safeJsonParse(json), () => [invalid()])), unpack)
+  const version = link.slice(0, dot)
+  if (version !== VERSION && version !== '1') return Result.failure(Err.validation('Calc.LinkVersion', 'Unknown calculation version.'))
+  const r = Result.then(Result.then(fromBase64Url(link.slice(dot + 1)), (json) => Result.mapError(safeJsonParse(json), () => [invalid()])), unpack)
+  return version === '1' ? Result.map(r, fromV1) : r
+}
+
+/** A v1 price, read as the Turkish page read it ("20.000" = 20 000; zeros after the decimals dropped), written unambiguously. */
+export function v1Money(raw: string): string {
+  const s = normalizeDigits(raw)
+  const m = /^(\d{1,3}(?:[. ]\d{3})+)(?:,(\d*))?$/.exec(s) ?? /^(\d*)(?:[.,](\d*))?$/.exec(s)
+  if (!m || !`${m[1]}${m[2] ?? ''}`) return raw
+  const frac = (m[2] ?? '').replace(/0+$/, '')
+  if (frac.length > 2) return raw
+  const int = m[1]!.replace(/\D/g, '') || '0'
+  return frac ? `${int},${frac}` : int
+}
+// A v1 dimension "1.000" was 1 (decimal point); one more zero keeps that value and is no longer ambiguous.
+const v1Decimal = (raw: string) => (/^-?[1-9]\d{0,2}[.,]\d{3}$/.test(normalizeDigits(raw)) ? `${raw.trim()}0` : raw)
+function fromV1(q: QuoteInput): QuoteInput {
+  return {
+    ...q,
+    timber: q.timber.map((r) => ({ t: v1Decimal(r.t), w: v1Decimal(r.w), l: v1Decimal(r.l), q: v1Decimal(r.q), p: v1Money(r.p) })),
+    waste: v1Decimal(q.waste),
+    extras: q.extras.map((r) => ({ ...r, q: v1Decimal(r.q), p: v1Money(r.p) })),
+  }
 }
 
 /** Whether anything has been typed: only then does the page put the calculation into its address. */

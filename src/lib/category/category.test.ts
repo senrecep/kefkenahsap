@@ -1,7 +1,9 @@
 import { describe, expect, it } from 'vitest'
+
+import { SEED_CATEGORIES } from '@/seed/categories'
 import { Maybe } from 'tsentials/maybe'
 
-import { byCategoryOrder, galleryLimit, hasRichText, pageFromQuery, priceGuide } from './category'
+import { byCategoryOrder, CALCULATOR_CATEGORIES, galleryLimit, hasRichText, pageFromQuery, priceGuide } from './category'
 
 describe('pageFromQuery (?sayfa=)', () => {
   it('accepts positive integers', () => {
@@ -77,5 +79,13 @@ describe('byCategoryOrder (#148: outdoor work first on the projects index)', () 
 
   it('compares fractional keys by code point, not locale ("a9" < "aa" < "b0")', () => {
     expect([p('b', 'b0'), p('aa', 'aa'), p('a9', 'a9')].sort(byCategoryOrder).map((x) => x.name)).toEqual(['a9', 'aa', 'b'])
+  })
+})
+
+describe('CALCULATOR_CATEGORIES (#233)', () => {
+  it('names only categories that exist, by their current default-locale slug (a renamed slug would silently drop the link)', () => {
+    const slugs = new Set(SEED_CATEGORIES.map((c) => c.slug.tr))
+    expect([...CALCULATOR_CATEGORIES].filter((s) => !slugs.has(s))).toEqual([])
+    expect(CALCULATOR_CATEGORIES.size).toBe(7)
   })
 })

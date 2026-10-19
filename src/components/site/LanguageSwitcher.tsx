@@ -70,7 +70,8 @@ export function LanguageSwitcher({
     if (alt?.href) {
       e.preventDefault()
       if (details.current) details.current.open = false // not restored open from the bfcache on Back
-      window.location.assign(alt.href)
+      // The calculator's quote (#c=…, #233) travels along: it reads the same in every language.
+      window.location.assign(alt.href + (location.hash.startsWith('#c=') ? location.hash : ''))
     }
   }
 

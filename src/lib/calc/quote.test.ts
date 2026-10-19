@@ -8,9 +8,9 @@ import { computeQuote, emptyQuote, roundHalfUp, type ExtraInput, type QuoteInput
 const row = (t: string, w: string, l: string, q: string, p = ''): TimberInput => ({ t, w, l, q, p })
 const extra = (d: string, q: string, u: ExtraInput['u'], p: string): ExtraInput => ({ d, q, u, p })
 const quote = (patch: Partial<QuoteInput>): QuoteInput => ({ ...emptyQuote(), ...patch })
-const totals = (q: QuoteInput) => computeQuote(q, 'tr').totals
+const totals = (q: QuoteInput) => computeQuote(q).totals
 const codes = (q: QuoteInput) =>
-  computeQuote(q, 'tr').errors.map((e) => `${e.metadata?.get('section')}${e.metadata?.get('row')}.${e.metadata?.get('field')}:${e.code}`)
+  computeQuote(q).errors.map((e) => `${e.metadata?.get('section')}${e.metadata?.get('row')}.${e.metadata?.get('field')}:${e.code}`)
 
 describe('audit cases A–G (old app output → corrected value)', () => {
   it('A: 5×10×400 cm, 10 pcs, 20 000 ₺/m³ → 0,2 m³ / 4 000,00 / 800,00 / 4 800,00', () => {
@@ -26,7 +26,7 @@ describe('audit cases A–G (old app output → corrected value)', () => {
   })
 
   it('C: 1.8×10.1×300, 3 pcs, 12 345 → 0,016362 m³ / 201,99 / 40,40 / 242,39 (old lost the kuruş)', () => {
-    const q = computeQuote(quote({ timber: [row('1.8', '10.1', '300', '3', '12345')] }), 'tr')
+    const q = computeQuote(quote({ timber: [row('1.8', '10.1', '300', '3', '12345')] }))
     expect(q.totals.m3).toBeCloseTo(0.016362, 12)
     // 0.016362 × 12 345 = 201.98889 → 201,99; 20 199 × 0.20 = 4 039.8 → 40,40; 201,99 + 40,40 = 242,39
     expect([q.totals.subtotalKurus, q.totals.vatKurus, q.totals.grandKurus]).toEqual([20_199, 4_040, 24_239])
@@ -48,7 +48,7 @@ describe('audit cases A–G (old app output → corrected value)', () => {
   it('G: a negative dimension, a fractional piece count and an empty field are errors, and the row is left out', () => {
     const q = quote({ timber: [row('-5', '10', '400', '10', '20000'), row('5', '10', '400', '2,5', '20000'), row('5', '', '400', '10', '20000')] })
     expect(codes(q)).toEqual(['timber0.t:Calc.NotPositive', 'timber1.q:Calc.NotInteger', 'timber2.w:Calc.Required'])
-    expect(computeQuote(q, 'tr').ok).toBe(false)
+    expect(computeQuote(q).ok).toBe(false)
     expect(totals(q).grandKurus).toBe(0)
   })
 })
@@ -67,13 +67,13 @@ describe('units, waste, extra items and KDV (owner decisions 2026-10-19)', () =>
   })
 
   it('extra items: 2,5 kg × 180 = 450,00; götürü is always 1 × price', () => {
-    const q = computeQuote(quote({ extras: [extra('Vida', '2,5', 'kg', '180'), extra('Nakliye', '3', 'goturu', '1.500')] }), 'tr')
+    const q = computeQuote(quote({ extras: [extra('Vida', '2,5', 'kg', '180'), extra('Nakliye', '3', 'goturu', '1500')] }))
     expect(q.extras.map((r) => Result.isSuccess(r) && r.value?.kurus)).toEqual([45_000, 150_000])
     expect(q.totals.extrasKurus).toBe(195_000)
   })
 
   it('A + both extras → subtotal 5 950,00; KDV 1 190,00; total 7 140,00', () => {
-    const t = totals(quote({ timber: [row('5', '10', '400', '10', '20.000')], extras: [extra('Vida', '2,5', 'kg', '180'), extra('Nakliye', '', 'goturu', '1500')] }))
+    const t = totals(quote({ timber: [row('5', '10', '400', '10', '20.000,00')], extras: [extra('Vida', '2,5', 'kg', '180'), extra('Nakliye', '', 'goturu', '1500')] }))
     expect([t.subtotalKurus, t.vatKurus, t.grandKurus]).toEqual([595_000, 119_000, 714_000])
   })
 
@@ -88,7 +88,7 @@ describe('units, waste, extra items and KDV (owner decisions 2026-10-19)', () =>
   })
 
   it('a row without a price still counts its volume, and adds nothing to the amount', () => {
-    const q = computeQuote(quote({ timber: [row('5', '10', '400', '10')] }), 'tr')
+    const q = computeQuote(quote({ timber: [row('5', '10', '400', '10')] }))
     expect(q.ok).toBe(true)
     expect(q.totals.m3).toBeCloseTo(0.2, 12)
     expect(q.totals.grandKurus).toBe(0)
@@ -105,9 +105,32 @@ describe('units, waste, extra items and KDV (owner decisions 2026-10-19)', () =>
   })
 
   it('warns (without blocking) when a length looks like metres typed into cm', () => {
-    const q = computeQuote(quote({ timber: [row('5', '10', '4', '10', '20000')] }), 'tr')
+    const q = computeQuote(quote({ timber: [row('5', '10', '4', '10', '20000')] }))
     expect(q.ok).toBe(true)
     expect(Result.isSuccess(q.timber[0]!) && q.timber[0].value?.suspiciousLength).toBe(true)
+  })
+})
+
+describe('#236 review: ambiguous and oversized input', () => {
+  it('an ambiguous "1.000" (pieces) or "20.000" (price) is an error, not 1 piece or 20 ₺', () => {
+    expect(codes(quote({ timber: [row('5', '10', '400', '1.000', '20.000')] }))).toEqual(['timber0.q:Calc.Ambiguous', 'timber0.p:Calc.Ambiguous'])
+    expect(codes(quote({ extras: [extra('Vida', '1.000', 'adet', '2,5')] }))).toEqual(['extras0.q:Calc.Ambiguous'])
+  })
+
+  it('a line above 100 000 000 000 ₺ is too large (totals stay exact integers)', () => {
+    // 20 m × 20 m × 20 m × 100 000 pcs = 800 000 000 m³; × 100 000 ₺ = 8 × 10^13 ₺ = 8 × 10^15 kuruş > 10^13
+    const big = quote({ units: ['m', 'm', 'm'], timber: [row('20', '20', '20', '100000', '100000')] })
+    expect(codes(big)).toEqual(['timber0.p:Calc.TooLarge'])
+    // 1 m³ × 99 999 999 999,99 ₺ = 9 999 999 999 999 kuruş: still allowed
+    const max = computeQuote(quote({ units: ['m', 'm', 'm'], timber: [row('1', '1', '1', '1', '99999999999,99')] }))
+    expect(max.totals.timberKurus).toBe(9_999_999_999_999)
+    expect(codes(quote({ extras: [extra('x', '1000000', 'adet', '99999999999')] }))).toEqual(['extras0.p:Calc.TooLarge'])
+  })
+
+  it('lines carry the parsed values the export prints (not the raw input)', () => {
+    const q = computeQuote(quote({ timber: [row('2,5', '10', '400', '10', '20.000,5')], extras: [extra('Vida', '2,5', 'kg', '180')] }))
+    expect(q.timber[0]!.ok && q.timber[0].value).toMatchObject({ dims: [2.5, 10, 400], pieces: 10, priceKurus: 2_000_050 })
+    expect(q.extras[0]!.ok && q.extras[0].value).toMatchObject({ qty: 2.5, priceKurus: 18_000, kurus: 45_000 })
   })
 })
 
@@ -133,7 +156,6 @@ describe('the totals are always the sum of the lines shown', () => {
           extras: Array.from({ length: rnd(3) }, () => extra('x', dec(), 'kg', `${rnd(900)},${rnd(99)}`)),
           vat: { on: true, rate: ([20, 10, 1, 0] as const)[rnd(4) - 1]! },
         }),
-        'tr',
       )
       const lines = [...q.timber, ...q.extras].map((r: Result<{ kurus: number | null } | null>) => (r.ok ? (r.value?.kurus ?? 0) : 0))
       expect(lines.reduce((s, k) => s + k, 0) + q.totals.wasteKurus).toBe(q.totals.subtotalKurus)

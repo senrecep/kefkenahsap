@@ -44,12 +44,16 @@ export async function renderQuoteImage(a: Args): Promise<Blob> {
   const [logo] = await Promise.all([loadImage(a.logoSrc), fonts])
 
   const canvas = document.createElement('canvas')
-  canvas.width = W
-  canvas.height = draw(canvas.getContext('2d')!, true) // measure, then draw at the real height
-  draw(canvas.getContext('2d')!, false)
+  const height = draw(canvas.getContext('2d')!, true) // measure, then draw at the real height
+  const scale = canvasScale(W, height)
+  canvas.width = Math.floor(W * scale)
+  canvas.height = Math.floor(height * scale)
+  const ctx = canvas.getContext('2d')!
+  ctx.scale(scale, scale)
+  draw(ctx, false, height)
   return new Promise((resolve, reject) => canvas.toBlob((b) => (b ? resolve(b) : reject(new Error('toBlob'))), 'image/png'))
 
-  function draw(ctx: CanvasRenderingContext2D, dry: boolean): number {
+  function draw(ctx: CanvasRenderingContext2D, dry: boolean, fullHeight = 0): number {
     const xs = a.rtl ? W - PAD : PAD // inline start
     const xe = a.rtl ? PAD : W - PAD // inline end
     ctx.direction = a.rtl ? 'rtl' : 'ltr'
@@ -62,21 +66,7 @@ export async function renderQuoteImage(a: Args): Promise<Blob> {
       ctx.textAlign = align
       ctx.fillText(t, x, y)
     }
-    const wrap = (t: string, max: number) => {
-      const out: string[] = []
-      for (const para of t.split('\n')) {
-        let cur = ''
-        for (const word of para.split(' ')) {
-          const next = cur ? `${cur} ${word}` : word
-          if (cur && ctx.measureText(next).width > max) {
-            out.push(cur)
-            cur = word
-          } else cur = next
-        }
-        out.push(cur)
-      }
-      return out
-    }
+    const wrap = (t: string, max: number) => wrapText(t, max, (x) => ctx.measureText(x).width)
     const para = (t: string, color: string, lh: number) => {
       for (const l of wrap(t, W - 2 * PAD)) {
         y += lh
@@ -92,12 +82,12 @@ export async function renderQuoteImage(a: Args): Promise<Blob> {
 
     if (!dry) {
       ctx.fillStyle = PAPER
-      ctx.fillRect(0, 0, W, ctx.canvas.height)
+      ctx.fillRect(0, 0, W, fullHeight)
       // Watermark: the logo, centred and faint.
       const ww = W * 0.7
       const wh = (ww * logo.naturalHeight) / logo.naturalWidth
       ctx.globalAlpha = 0.06
-      ctx.drawImage(logo, (W - ww) / 2, (ctx.canvas.height - wh) / 2, ww, wh)
+      ctx.drawImage(logo, (W - ww) / 2, (fullHeight - wh) / 2, ww, wh)
       ctx.globalAlpha = 1
     }
 
@@ -186,6 +176,34 @@ export async function renderQuoteImage(a: Args): Promise<Blob> {
     return Math.ceil(y + PAD)
   }
 }
+
+/** Lines that fit `max`, broken at spaces and line breaks; a word longer than a line is broken where it overflows. */
+export function wrapText(text: string, max: number, width: (s: string) => number): string[] {
+  const out: string[] = []
+  for (const para of text.split('\n')) {
+    let cur = ''
+    for (let word of para.split(' ')) {
+      while (width(word) > max) {
+        if (cur) out.push(cur)
+        cur = ''
+        let i = word.length
+        while (i > 1 && width(word.slice(0, i)) > max) i--
+        out.push(word.slice(0, i))
+        word = word.slice(i)
+      }
+      const next = cur ? `${cur} ${word}` : word
+      if (cur && width(next) > max) {
+        out.push(cur)
+        cur = word
+      } else cur = next
+    }
+    out.push(cur)
+  }
+  return out
+}
+
+/** Down-scaling for a very long quote: canvases above ~16 M px (iOS Safari) or 15 000 px tall fail to export. */
+export const canvasScale = (w: number, h: number) => Math.min(1, 15_000 / h, Math.sqrt(16_000_000 / (w * h)))
 
 /** File name in Istanbul time: kefken-hesap-2026-10-19-1433.png */
 export function fileName(date: Date) {

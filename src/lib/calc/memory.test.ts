@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { MAX_REMEMBERED, MAX_SAVED, parseRemembered, parseSaved, remember, saveEntry, suggest, type SavedEntry } from './memory'
+import { MAX_REMEMBERED, MAX_SAVED, parseRemembered, parseRememberedV1, parseSaved, remember, saveEntry, suggest, type SavedEntry } from './memory'
 
 const at = (min: number) => new Date(Date.UTC(2026, 9, 19, 9, min))
 const entry = (id: string, min = 0): SavedEntry => ({ id, title: id, savedAt: at(min).toISOString(), link: `1.${id}` })
@@ -55,6 +55,11 @@ describe('remembered extra items (suggestions while typing)', () => {
     expect(suggest(mem, 'ince').map((m) => m.d)).toEqual(['İnce zımpara'])
     expect(suggest(mem, 'Nakliye')).toEqual([])
     expect(suggest(mem, '').length).toBe(3)
+  })
+
+  it('migrates prices remembered before #236 with the Turkish rules they were typed under', () => {
+    const v1 = JSON.stringify([{ d: 'Nakliye', u: 'goturu', p: '1.500', n: 2, t: 5 }, { d: 'Vida', u: 'kg', p: '180,50', n: 1, t: 4 }])
+    expect(parseRememberedV1(v1).map((m) => m.p)).toEqual(['1500', '180,5'])
   })
 
   it('reads only well-formed storage', () => {

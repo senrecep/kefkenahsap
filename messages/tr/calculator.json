@@ -110,6 +110,7 @@
         "Calc.TooLarge": "Değer çok büyük.",
         "Calc.Negative": "Negatif olamaz.",
         "Calc.TooManyDecimals": "En fazla iki ondalık girin.",
+        "Calc.Ambiguous": "Belirsiz sayı: binlik için 1000, ondalık için 1,5 gibi yazın.",
         "Calc.OutOfRange": "0 ile 100 arasında olmalı."
       }
     }

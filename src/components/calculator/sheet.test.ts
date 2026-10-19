@@ -12,18 +12,19 @@ describe('buildSheet (the PNG / print content)', () => {
   it('lists the rows, totals and branding of case A with extras, KDV 20 % (hand-computed: 5 950,00 + 1 190,00 = 7 140,00)', () => {
     const input: QuoteInput = {
       ...emptyQuote(),
-      timber: [{ t: '5', w: '10', l: '400', q: '10', p: '20.000' }, { t: '', w: '', l: '', q: '', p: '' }],
-      extras: [{ d: 'Vida', q: '2,5', u: 'kg', p: '180' }, { d: 'Nakliye', q: '', u: 'goturu', p: '1500' }],
+      timber: [{ t: '5,0', w: '10', l: '400', q: '10', p: '20.000,00' }, { t: '', w: '', l: '', q: '', p: '' }],
+      extras: [{ d: 'Vida', q: '2.5', u: 'kg', p: '180' }, { d: 'Nakliye', q: '', u: 'goturu', p: '1500' }],
       meta: { customer: 'Ahmet Bey', job: '', note: '' },
     }
-    const s = buildSheet(input, computeQuote(input, 'tr'), ui, 'tr', new Date('2026-10-19T11:33:00Z'))
+    const s = buildSheet(input, computeQuote(input), ui, 'tr', new Date('2026-10-19T11:33:00Z'))
     expect(s.title).toBe('Malzeme ve teklif hesaplayıcı')
     expect(s.customer).toBe('Müşteri: Ahmet Bey')
     expect(s.note).toBeUndefined()
     expect(plain(s.stamp!)).toBe('19 Ekim 2026 14:33 TSİ')
-    expect(s.timber.map((l) => [plain(l.text), l.value])).toEqual([['5 × 10 × 400 cm · 10 adet', '₺4.000,00']])
+    // Parsed values, formatted for the page: '5,0' → 5, '20.000,00' → ₺20.000,00, '2.5' → 2,5 (#236 review).
+    expect(s.timber.map((l) => [plain(l.text), plain(l.sub!), l.value])).toEqual([['5 × 10 × 400 cm · 10 adet', '0,200 m³ · ₺20.000,00/m³', '₺4.000,00']])
     expect(s.extras.map((l) => [l.text, plain(l.sub!), l.value])).toEqual([
-      ['Vida', '2,5 kg × 180 ₺', '₺450,00'],
+      ['Vida', '2,5 kg × ₺180,00', '₺450,00'],
       ['Nakliye', 'götürü', '₺1.500,00'],
     ])
     expect(s.totals.map((l) => `${l.text}=${plain(l.value)}`)).toEqual([

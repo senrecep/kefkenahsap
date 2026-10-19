@@ -26,29 +26,31 @@ export type Sheet = {
 export function buildSheet(state: QuoteInput, quote: Quote, ui: CalcUi, locale: string, date: Date | null): Sheet {
   const money = (k: number) => formatMoney(k, locale)
   const m3 = (v: number) => ltr(`${formatM3(v, locale)} m³`)
+  const n = new Intl.NumberFormat(locale, { numberingSystem: 'latn', maximumFractionDigits: 4 }).format
   const [u0, u1, u2] = state.units
   const sameUnit = u0 === u1 && u1 === u2
-  const t = quote.totals
+  const tot = quote.totals
   const timber = state.timber.flatMap((r, i) => {
     const line = quote.timber[i]
     if (!line?.ok || !line.value) return []
-    const dims = ltr(sameUnit ? `${r.t.trim()} × ${r.w.trim()} × ${r.l.trim()} ${u0}` : `${r.t.trim()} ${u0} × ${r.w.trim()} ${u1} × ${r.l.trim()} ${u2}`)
-    const price = line.value.kurus === null ? undefined : `${ltr(r.p.trim())} ${ui.perM3}`
-    return [{ text: `${dims} · ${ltr(r.q.trim())} ${ui.pieceShort}`, sub: [m3(line.value.m3), price].filter(Boolean).join(' · '), value: line.value.kurus === null ? '—' : money(line.value.kurus) }]
+    const [t, w, l] = line.value.dims.map(n)
+    const dims = ltr(sameUnit ? `${t} × ${w} × ${l} ${u0}` : `${t} ${u0} × ${w} ${u1} × ${l} ${u2}`)
+    const price = line.value.priceKurus === null ? undefined : ltr(`${money(line.value.priceKurus)}/m³`)
+    return [{ text: `${dims} · ${ltr(n(line.value.pieces))} ${ui.pieceShort}`, sub: [m3(line.value.m3), price].filter(Boolean).join(' · '), value: line.value.kurus === null ? '—' : money(line.value.kurus) }]
   })
   const extras = state.extras.flatMap((r, i) => {
     const line = quote.extras[i]
     if (!line?.ok || !line.value) return []
-    const qty = r.u === 'goturu' ? ui.unitNames.goturu : `${ltr(r.q.trim())} ${ui.unitNames[r.u]} × ${ltr(`${r.p.trim()} ₺`)}`
+    const qty = r.u === 'goturu' ? ui.unitNames.goturu : `${ltr(n(line.value.qty))} ${ui.unitNames[r.u]} × ${ltr(money(line.value.priceKurus))}`
     return [{ text: r.d.trim(), sub: qty, value: money(line.value.kurus) }]
   })
   const totals: SheetLine[] = [
-    { text: ui.timberVolume, value: m3(t.m3) },
-    { text: ui.timberAmount, value: money(t.timberKurus) },
-    ...(t.wasteKurus > 0 || t.wasteM3 > 0 ? [{ text: fill(ui.wasteLine, { rate: state.waste.trim() }), value: `${ltr(`+${formatM3(t.wasteM3, locale)} m³`)} · ${money(t.wasteKurus)}` }] : []),
-    ...(extras.length ? [{ text: ui.extrasAmount, value: money(t.extrasKurus) }] : []),
-    { text: ui.subtotal, value: money(t.subtotalKurus), strong: true },
-    ...(state.vat.on ? [{ text: fill(ui.vatLine, { rate: state.vat.rate }), value: money(t.vatKurus) }] : []),
+    { text: ui.timberVolume, value: m3(tot.m3) },
+    { text: ui.timberAmount, value: money(tot.timberKurus) },
+    ...(tot.wasteKurus > 0 || tot.wasteM3 > 0 ? [{ text: fill(ui.wasteLine, { rate: state.waste.trim() }), value: `${ltr(`+${formatM3(tot.wasteM3, locale)} m³`)} · ${money(tot.wasteKurus)}` }] : []),
+    ...(extras.length ? [{ text: ui.extrasAmount, value: money(tot.extrasKurus) }] : []),
+    { text: ui.subtotal, value: money(tot.subtotalKurus), strong: true },
+    ...(state.vat.on ? [{ text: fill(ui.vatLine, { rate: state.vat.rate }), value: money(tot.vatKurus) }] : []),
   ]
   const job = state.meta.job.trim()
   const customer = state.meta.customer.trim()
@@ -61,7 +63,7 @@ export function buildSheet(state: QuoteInput, quote: Quote, ui: CalcUi, locale: 
     timber,
     extras,
     totals,
-    grand: { text: ui.total, value: money(t.grandKurus), strong: true },
+    grand: { text: ui.total, value: money(tot.grandKurus), strong: true },
     footer: [ui.exclVat, ui.disclaimer, ui.prepared, 'kefkenahsap.com'],
   }
 }

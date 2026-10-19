@@ -110,6 +110,7 @@
         "Calc.TooLarge": "Der Wert ist zu groß.",
         "Calc.Negative": "Darf nicht negativ sein.",
         "Calc.TooManyDecimals": "Höchstens zwei Nachkommastellen.",
+        "Calc.Ambiguous": "Mehrdeutige Zahl: 1000 für tausend oder 1,5 für eine Dezimalzahl schreiben.",
         "Calc.OutOfRange": "Muss zwischen 0 und 100 liegen."
       }
     }

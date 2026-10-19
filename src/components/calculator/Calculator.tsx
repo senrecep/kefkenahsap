@@ -6,8 +6,8 @@ import type { AppError } from 'tsentials/errors'
 
 import { buttonClass } from '@/components/ui/button'
 import { decodeQuote, encodeQuote, isFilled, MAX_ROWS } from '@/lib/calc/codec'
-import { formatM3, formatMoney } from '@/lib/calc/format'
-import { parseRemembered, parseSaved, remember, saveEntry, type SavedEntry } from '@/lib/calc/memory'
+import { formatM3, formatMoney, ISTANBUL } from '@/lib/calc/format'
+import { parseRemembered, parseRememberedV1, parseSaved, remember, saveEntry, type SavedEntry } from '@/lib/calc/memory'
 import {
   computeQuote,
   emptyExtra,
@@ -29,7 +29,8 @@ import { fill, type CalcUi } from './ui'
 
 const HASH = '#c='
 const SAVED_KEY = 'kefken.calc.saved.v1'
-const EXTRAS_KEY = 'kefken.calc.extras.v1'
+const EXTRAS_KEY = 'kefken.calc.extras.v2'
+const EXTRAS_KEY_V1 = 'kefken.calc.extras.v1' // prices read with the page's rules before #236; migrated on read
 
 type T = TimberInput & { id: number }
 type X = ExtraInput & { id: number }
@@ -126,7 +127,7 @@ const fieldCls =
   'block min-h-12 w-full rounded-[var(--radius-control)] border bg-white px-3.5 text-base text-ink tabular-nums placeholder:text-ink-soft focus:border-action aria-[invalid=true]:border-error'
 const labelCls = 'mb-1.5 block font-[family-name:var(--font-display)] text-[0.875rem] font-semibold text-ink'
 const iconBtn =
-  'inline-flex size-11 items-center justify-center rounded-[var(--radius-control)] text-ink-soft transition-colors duration-150 hover:bg-mist hover:text-ink disabled:opacity-40'
+  'inline-flex size-12 items-center justify-center rounded-[var(--radius-control)] text-ink-soft transition-colors duration-150 hover:bg-mist hover:text-ink disabled:opacity-40'
 
 export type CalculatorProps = { locale: string; ui: CalcUi; logoSrc: string }
 
@@ -137,8 +138,9 @@ export function Calculator({ locale, ui, logoSrc }: CalculatorProps) {
   const [status, setStatus] = useState<{ text: string; tone: 'ok' | 'error' } | null>(null)
   const savedRaw = useStored(SAVED_KEY)
   const memoryRaw = useStored(EXTRAS_KEY)
+  const memoryV1 = useStored(EXTRAS_KEY_V1)
   const saved = useMemo(() => parseSaved(savedRaw), [savedRaw])
-  const memory = useMemo(() => parseRemembered(memoryRaw), [memoryRaw])
+  const memory = useMemo(() => (memoryRaw === null ? parseRememberedV1(memoryV1) : parseRemembered(memoryRaw)), [memoryRaw, memoryV1])
   const [savedId, setSavedId] = useState<string | null>(null)
   const [busy, setBusy] = useState(false)
   const [live, setLive] = useState('')
@@ -146,25 +148,32 @@ export function Calculator({ locale, ui, logoSrc }: CalculatorProps) {
   const uid = useId()
 
   // Totals are derived from the current rows on every render (bug E: no watcher, no stale copy).
-  const quote = useMemo(() => computeQuote(state, locale), [state, locale])
+  const quote = useMemo(() => computeQuote(state), [state])
   const errors = useMemo(() => errorMap(quote.errors), [quote.errors])
   const filled = isFilled(state)
   const money = (k: number) => formatMoney(k, locale)
+  // No grouping: a lone "20.000" is ambiguous and rejected (number.ts).
+  const priceExample = new Intl.NumberFormat(locale, { numberingSystem: 'latn', useGrouping: false }).format(20000)
 
-  // A shared link (#c=…) is read after hydration only (the server render is the empty form). `data-ready` marks the
-  // hydrated island (e2e waits for it: text typed into the server HTML before hydration is not kept).
+  // A shared link (#c=…) is read after hydration only (the server render is the empty form), in a microtask: it runs in
+  // a background tab too (requestAnimationFrame does not). Until it has run, the address writer below leaves the URL
+  // alone, so an unread link is never replaced (#236 review). `data-ready` marks the hydrated island for e2e.
+  const hashRead = useRef(false)
   useEffect(() => {
     root.current?.setAttribute('data-ready', '')
+    let live = true
     const open = () => {
+      if (!live) return
+      hashRead.current = true
       if (!location.hash.startsWith(HASH)) return
       const r = decodeQuote(location.hash.slice(HASH.length))
       if (r.ok) dispatch({ type: 'load', quote: r.value })
       else setStatus({ text: ui.linkInvalid, tone: 'error' })
     }
-    const id = requestAnimationFrame(open)
+    queueMicrotask(open)
     window.addEventListener('hashchange', open)
     return () => {
-      cancelAnimationFrame(id)
+      live = false
       window.removeEventListener('hashchange', open)
     }
   }, [ui.linkInvalid])
@@ -172,6 +181,7 @@ export function Calculator({ locale, ui, logoSrc }: CalculatorProps) {
   // The address always carries the current calculation (bookmarkable); a fragment never reaches the server or its logs.
   useEffect(() => {
     const id = setTimeout(() => {
+      if (!hashRead.current) return
       const url = `${location.pathname}${location.search}${filled ? HASH + encodeQuote(state) : ''}`
       if (url !== `${location.pathname}${location.search}${location.hash}`) history.replaceState(history.state, '', url)
     }, 300)
@@ -216,7 +226,8 @@ export function Calculator({ locale, ui, logoSrc }: CalculatorProps) {
 
   const shareLink = async () => {
     if (!ready()) return
-    const url = location.href
+    // Built from the current state, not the address bar (which is updated 300 ms later).
+    const url = `${location.origin}${location.pathname}${location.search}${HASH}${encodeQuote(state)}`
     track('calc_share_link')
     if (navigator.share && matchMedia('(pointer: coarse)').matches) {
       await navigator.share({ title: state.meta.job || ui.untitled, url }).catch(() => undefined)
@@ -375,7 +386,7 @@ export function Calculator({ locale, ui, logoSrc }: CalculatorProps) {
           </div>
 
           {/* Column heads (desktop): the inputs keep their own labels for assistive tech. */}
-          <div aria-hidden className="mt-6 hidden gap-3 border-b border-line pb-2 text-[0.875rem] text-ink-soft md:grid md:grid-cols-[repeat(4,minmax(0,1fr))_minmax(0,1.5fr)_8.5rem_5.75rem]">
+          <div aria-hidden className="mt-6 hidden gap-3 border-b border-line pb-2 text-[0.875rem] text-ink-soft md:grid md:grid-cols-[repeat(4,minmax(0,1fr))_minmax(0,1.5fr)_8.5rem_6rem]">
             {dimLabels.map((l, i) => (
               <span key={l} className="font-[family-name:var(--font-display)] font-semibold text-ink">
                 {l} <span className="font-[family-name:var(--font-body)] font-normal text-ink-soft">({state.units[i]})</span>
@@ -415,12 +426,12 @@ export function Calculator({ locale, ui, logoSrc }: CalculatorProps) {
               return (
                 <li key={r.id} data-timber-row className="border-b border-line py-5 md:py-3">
                   <p className="mb-3 text-[0.95rem] font-semibold text-ink-soft md:hidden">{rowName}</p>
-                  <div className="grid grid-cols-6 items-start gap-3 md:grid-cols-[repeat(4,minmax(0,1fr))_minmax(0,1.5fr)_8.5rem_5.75rem]">
+                  <div className="grid grid-cols-6 items-start gap-3 md:grid-cols-[repeat(4,minmax(0,1fr))_minmax(0,1.5fr)_8.5rem_6rem]">
                     {field('t', ui.thickness, state.units[0], { example: '5', className: 'col-span-2 md:col-span-1' })}
                     {field('w', ui.width, state.units[1], { example: '10', className: 'col-span-2 md:col-span-1' })}
                     {field('l', ui.length, state.units[2], { example: '400', className: 'col-span-2 md:col-span-1' })}
                     {field('q', ui.pieces, ui.pieceShort, { numeric: true, example: '10', className: 'col-span-2 md:col-span-1' })}
-                    {field('p', ui.price, ui.perM3, { example: '20.000', className: 'col-span-4 md:col-span-1' })}
+                    {field('p', ui.price, ui.perM3, { example: priceExample, className: 'col-span-4 md:col-span-1' })}
                     <p className="col-span-4 flex min-h-12 flex-col justify-center text-start tabular-nums md:col-span-1 md:items-end md:text-end">
                       <span className="sr-only">{`${ui.volume} · ${ui.amount}, ${rowName}: `}</span>
                       <bdi className="font-[family-name:var(--font-display)] font-semibold text-ink">{value ? `${formatM3(value.m3, locale)} m³` : '—'}</bdi>
@@ -482,7 +493,7 @@ export function Calculator({ locale, ui, logoSrc }: CalculatorProps) {
             ))}
           </datalist>
           {state.extras.length > 0 && (
-            <div aria-hidden className="mt-6 hidden gap-3 border-b border-line pb-2 font-[family-name:var(--font-display)] text-[0.875rem] font-semibold text-ink md:grid md:grid-cols-[minmax(0,2.4fr)_minmax(0,1fr)_minmax(0,1.1fr)_minmax(0,1.3fr)_8.5rem_2.75rem]">
+            <div aria-hidden className="mt-6 hidden gap-3 border-b border-line pb-2 font-[family-name:var(--font-display)] text-[0.875rem] font-semibold text-ink md:grid md:grid-cols-[minmax(0,2.4fr)_minmax(0,1fr)_minmax(0,1.1fr)_minmax(0,1.3fr)_8.5rem_3rem]">
               <span>{ui.description}</span>
               <span>{ui.quantity}</span>
               <span>{ui.unit}</span>
@@ -506,7 +517,7 @@ export function Calculator({ locale, ui, logoSrc }: CalculatorProps) {
               return (
                 <li key={r.id} data-extra-row className="border-b border-line py-5 md:py-3">
                   <p className="mb-3 text-[0.95rem] font-semibold text-ink-soft md:hidden">{rowName}</p>
-                  <div className="grid grid-cols-6 items-start gap-3 md:grid-cols-[minmax(0,2.4fr)_minmax(0,1fr)_minmax(0,1.1fr)_minmax(0,1.3fr)_8.5rem_2.75rem]">
+                  <div className="grid grid-cols-6 items-start gap-3 md:grid-cols-[minmax(0,2.4fr)_minmax(0,1fr)_minmax(0,1.1fr)_minmax(0,1.3fr)_8.5rem_3rem]">
                     <div className="col-span-6 md:col-span-1">
                       <label htmlFor={descId} className={`${labelCls} md:sr-only`}>
                         {ui.description}
@@ -694,7 +705,7 @@ export function Calculator({ locale, ui, logoSrc }: CalculatorProps) {
                   <li key={e.id} className="flex items-center gap-2 border-t border-line py-2">
                     <span className="min-w-0 flex-1">
                       <span className="block truncate">{e.title}</span>
-                      <span className="block text-[0.875rem] text-ink-soft">{new Date(e.savedAt).toLocaleString(locale, { dateStyle: 'medium', timeStyle: 'short', numberingSystem: 'latn' })}</span>
+                      <span className="block text-[0.875rem] text-ink-soft">{new Date(e.savedAt).toLocaleString(locale, { dateStyle: 'medium', timeStyle: 'short', numberingSystem: 'latn', timeZone: ISTANBUL })}</span>
                     </span>
                     <button type="button" onClick={() => openSaved(e)} className="min-h-11 rounded-[var(--radius-control)] px-3 font-[family-name:var(--font-display)] text-[0.95rem] font-semibold text-action hover:bg-mist hover:text-action-deep">
                       {ui.open}

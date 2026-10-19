@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest'
 import { Result } from 'tsentials/result'
 
 import { decodeQuote, encodeQuote, isFilled, MAX_ROWS } from './codec'
-import { emptyQuote, type QuoteInput } from './quote'
+import { computeQuote, emptyQuote, type QuoteInput } from './quote'
 
 const full: QuoteInput = {
   units: ['mm', 'cm', 'm'],
@@ -18,12 +18,13 @@ const full: QuoteInput = {
   vat: { on: false, rate: 10 },
   meta: { customer: 'Ahmet Bey', job: 'Veranda deck', note: 'Iroko, 2. kat\nkeşif sonrası' },
 }
+const b64 = (s: string) => btoa(String.fromCharCode(...new TextEncoder().encode(s))).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '')
 const code = (r: Result<unknown>) => (Result.isFailure(r) ? r.errors[0]?.code : 'ok')
 
 describe('quote ↔ share-link codec (versioned, compact)', () => {
   it('round-trips every field, Turkish characters and line breaks included', () => {
     const encoded = encodeQuote(full)
-    expect(encoded).toMatch(/^1\.[A-Za-z0-9_-]+$/) // URL-safe, version first
+    expect(encoded).toMatch(/^2\.[A-Za-z0-9_-]+$/) // URL-safe, version first
     expect(decodeQuote(encoded)).toEqual(Result.success(full))
   })
 
@@ -37,13 +38,43 @@ describe('quote ↔ share-link codec (versioned, compact)', () => {
 
   it.each([
     ['', 'Calc.LinkInvalid'],
-    ['2.e30', 'Calc.LinkVersion'],
+    ['3.e30', 'Calc.LinkVersion'],
     ['1.%%%', 'Calc.LinkInvalid'],
     ['1.a', 'Calc.LinkInvalid'], // not a whole base64 group
     [`1.${btoa('{"x":1}').replace(/=+$/, '')}`, 'Calc.LinkInvalid'], // valid JSON, wrong shape
-    [`1.${'A'.repeat(20_000)}`, 'Calc.LinkTooLong'],
+    [`2.${'A'.repeat(100_000)}`, 'Calc.LinkTooLong'],
   ])('rejects %j', (input, expected) => {
     expect(code(decodeQuote(input))).toBe(expected)
+  })
+
+  it('rejects a VAT pair with extra entries', () => {
+    const packed = [['cm', 'cm', 'cm'], [], '', [], [1, 20, 99], ['', '', '']]
+    expect(code(decodeQuote(`2.${b64(JSON.stringify(packed))}`))).toBe('Calc.LinkInvalid')
+  })
+
+  it('round-trips the largest quote the form allows (50 + 50 rows, every field full, worst-case characters)', () => {
+    const worst = (n: number) => '\u20ac'.repeat(n) // 3 UTF-8 bytes per character: the longest a field can encode to
+    const huge: QuoteInput = {
+      units: ['mm', 'cm', 'm'],
+      timber: Array.from({ length: MAX_ROWS }, () => ({ t: worst(24), w: worst(24), l: worst(24), q: worst(24), p: worst(24) })),
+      waste: worst(24),
+      extras: Array.from({ length: MAX_ROWS }, () => ({ d: worst(80), q: worst(24), u: 'goturu' as const, p: worst(24) })),
+      vat: { on: true, rate: 20 },
+      meta: { customer: worst(80), job: worst(120), note: worst(500) },
+    }
+    expect(decodeQuote(encodeQuote(huge))).toEqual(Result.success(huge))
+  })
+
+  it('reads an old v1 link with the Turkish rules it was written under (#236 review)', () => {
+    // v1 = the same packing; "20.000" was 20 000 ₺, "20,500" 20,50 ₺ and a dimension "1.000" was 1 (decimal point).
+    const v1 = [['cm', 'cm', 'cm'], [['5', '10', '400', '10', '20.000'], ['1.000', '100', '100', '1', '20,500']], '', [['Nakliye', '', 'goturu', '1.500']], [1, 20], ['', '', '']]
+    const r = decodeQuote(`1.${b64(JSON.stringify(v1))}`)
+    expect(Result.isSuccess(r)).toBe(true)
+    if (!Result.isSuccess(r)) return
+    expect(r.value.timber.map((x) => [x.t, x.p])).toEqual([['5', '20000'], ['1.0000', '20,5']])
+    // 0,2 m³ × 20 000 = 4 000,00; 0,01 m³ × 20,50 = 0,205 → 0,21; + 1 500,00 = 5 500,21; KDV 1 100,04 (110 004,2 kr); 6 600,25
+    const t = computeQuote(r.value).totals
+    expect([t.subtotalKurus, t.vatKurus, t.grandKurus]).toEqual([550_021, 110_004, 660_025])
   })
 
   it('rejects an unknown unit or VAT rate rather than guessing', () => {

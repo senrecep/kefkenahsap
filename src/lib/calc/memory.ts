@@ -1,6 +1,7 @@
 import { safeJsonParse } from 'tsentials/json'
 import { Result } from 'tsentials/result'
 
+import { v1Money } from './codec'
 import { EXTRA_UNITS, type ExtraInput, type ExtraUnit } from './quote'
 
 // Device-only lists (localStorage): saved calculations and the extra items a user keeps typing. Nothing leaves the device.
@@ -24,6 +25,9 @@ export const parseSaved = (raw: string | null) =>
 
 export const parseRemembered = (raw: string | null) =>
   list<Remembered>(raw, (x) => isStr(x.d) && EXTRA_UNITS.includes(x.u as ExtraUnit) && isStr(x.p) && typeof x.n === 'number' && typeof x.t === 'number').slice(0, MAX_REMEMBERED)
+
+/** The list kept before #236, whose prices were read with the page's rules (Turkish): rewritten unambiguously. */
+export const parseRememberedV1 = (raw: string | null) => parseRemembered(raw).map((m) => ({ ...m, p: v1Money(m.p) }))
 
 /** Newest first; saving under an existing id replaces it. */
 export const saveEntry = (saved: SavedEntry[], e: SavedEntry) => [e, ...saved.filter((s) => s.id !== e.id)].slice(0, MAX_SAVED)

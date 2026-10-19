@@ -110,6 +110,7 @@
         "Calc.TooLarge": "The value is too large.",
         "Calc.Negative": "Cannot be negative.",
         "Calc.TooManyDecimals": "Use at most two decimals.",
+        "Calc.Ambiguous": "Ambiguous number: write 1000 for a thousand or 1.5 for a decimal.",
         "Calc.OutOfRange": "Must be between 0 and 100."
       }
     }
