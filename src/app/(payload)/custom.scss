@@ -661,26 +661,26 @@ html[data-theme='dark'] .brand-logo {
     overflow: visible;
   }
 
-  .preview-sizes {
+  .drawer--is-open .preview-sizes {
     display: block;
     block-size: auto;
     max-block-size: none;
     min-block-size: 0;
   }
 
-  .preview-sizes__imageWrap,
-  .preview-sizes__listWrap {
+  .drawer--is-open .preview-sizes__imageWrap,
+  .drawer--is-open .preview-sizes__listWrap {
     block-size: auto;
     min-block-size: 0;
     overflow: visible;
   }
 
-  .preview-sizes__listWrap::after {
+  .drawer--is-open .preview-sizes__listWrap::after {
     display: none;
   }
 
   /* Fits the screen width; a tap opens it full size in a new tab (MediaDownload.tsx) for pinch-zoom. */
-  .preview-sizes__preview {
+  .drawer--is-open .preview-sizes__preview {
     display: block;
     inline-size: 100%;
     max-inline-size: 100%;

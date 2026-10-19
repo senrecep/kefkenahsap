@@ -2,11 +2,13 @@ import type { Endpoint } from 'payload'
 
 import { roleOf } from '@/access'
 import { positiveId } from '@/ai/guard'
-import { downloadFilename, toDownloadJpeg } from '@/lib/media/download'
+import { createLimiter, downloadFilename, toDownloadJpeg } from '@/lib/media/download'
 import { mediaBucket, readObject } from '@/lib/media/renameStored'
 
 const NO_STORE = { 'Cache-Control': 'private, no-store' }
 const fail = (status: number, message: string) => Response.json({ message }, { status, headers: NO_STORE })
+// Each encode holds a full-size decode in memory: two at a time per process.
+const encodes = createLimiter(2)
 
 /**
  * GET /api/media/:id/download (#230): "İndir" in Galeri and the media edit view. Staff only. The stored original (already
@@ -23,13 +25,16 @@ export const mediaDownloadEndpoint: Endpoint = {
     const doc = id === undefined ? null : await req.payload.findByID({ collection: 'media', id, depth: 0, disableErrors: true, req })
     if (!doc?.filename) return fail(404, 'Fotoğraf bulunamadı; silinmiş olabilir.')
     const { s3, bucket } = mediaBucket()
-    const bytes = await readObject(s3, bucket, doc.prefix, doc.filename)
-    const jpeg = bytes.ok ? await toDownloadJpeg(bytes.value) : bytes
+    const jpeg = await encodes(async () => {
+      const bytes = await readObject(s3, bucket, doc.prefix, doc.filename!)
+      return bytes.ok ? toDownloadJpeg(bytes.value) : bytes
+    })
     if (!jpeg.ok) {
-      req.payload.logger.error({ id, code: jpeg.errors[0]?.code, detail: jpeg.errors[0]?.description, msg: 'media download failed' })
-      return fail(500, 'Fotoğraf indirilemedi. Tekrar deneyin.')
+      const code = jpeg.errors[0]?.code
+      req.payload.logger.error({ id, code, detail: jpeg.errors[0]?.description, msg: 'media download failed' })
+      return code === 'Media.TooLarge' ? fail(413, 'Fotoğraf indirilemeyecek kadar büyük.') : fail(500, 'Fotoğraf indirilemedi. Tekrar deneyin.')
     }
-    return new Response(new Uint8Array(jpeg.value), {
+    return new Response(jpeg.value, {
       headers: {
         ...NO_STORE,
         'Content-Type': 'image/jpeg',
