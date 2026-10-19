@@ -10,14 +10,22 @@ import type { Locale } from '@/i18n/routing'
  */
 export type TextRule = { locale: Locale; old: string; new: string; whole?: boolean }
 
-// "We arrange the right specialist and deliver it complete": the owner coordinates fabric/cover, metal and concrete
-// work; his own team never welds or pours. Every added sentence says so.
+// "We arrange the right specialist and deliver it complete": the owner coordinates fabric/cover and metal work; his own
+// team never welds. Concrete: his team pours small jobs, big ones get a specialist and machinery (2026-10-19).
 const byLocale = (o: Record<Locale, [string, string]>, whole?: boolean): TextRule[] =>
   (Object.entries(o) as [Locale, [string, string]][]).map(([locale, [old, next]]) => ({ locale, old, new: next, ...(whole ? { whole } : {}) }))
 const append = (o: Record<Locale, [string, string]>): Record<Locale, [string, string]> =>
   Object.fromEntries(Object.entries(o).map(([l, [old, add]]) => [l, [old, `${old} ${add}`]])) as Record<Locale, [string, string]>
 const remove = (o: Record<Locale, string>): Record<Locale, [string, string]> =>
   Object.fromEntries(Object.entries(o).map(([l, old]) => [l, [old, '']])) as Record<Locale, [string, string]>
+
+const CONCRETE: Record<Locale, string> = {
+  tr: 'Küçük işlerde betonu kendi ekibimiz döker; çok beton gereken büyük işlerde usta ve makine desteği alırız.',
+  en: 'On small jobs our own team pours the concrete; on large jobs that need a lot of concrete we bring in specialists and machinery.',
+  ru: 'На небольших объектах бетон заливает наша бригада; на крупных, где нужно много бетона, мы привлекаем мастеров и технику.',
+  de: 'Bei kleinen Aufträgen gießt unser eigenes Team den Beton; bei großen Aufträgen mit viel Beton holen wir Fachleute und Maschinen dazu.',
+  ar: 'في الأعمال الصغيرة يصبّ فريقنا الخرسانة بنفسه، وفي الأعمال الكبيرة التي تحتاج إلى كمية كبيرة من الخرسانة نستعين بحِرَفيين متخصصين وبالآلات.',
+}
 
 export const OWNER_ANSWER_RULES: TextRule[] = [
   // 5: TR display name "Separatör"; the slug kapi-dolap-ve-seperator and the tag slug `seperator` stay (no ö: never matched).
@@ -160,14 +168,23 @@ export const OWNER_ANSWER_RULES: TextRule[] = [
       ar: ['وفي مصاريع الأبواب العريضة يمنع حملُ الخشب على إطار معدني ترهّلَ المصراع مع الوقت.', 'ونصنع أيضًا أبواب المرائب، ونتولى ترتيب الحِرَفي المناسب للأعمال المعدنية ونسلّم الباب جاهزًا بالكامل.'],
     }),
   ),
-  // 1: concrete foundation (Ahşap Ev ve Bungalov, the base step; the old open question in CHECKLIST).
+  // 1: concrete foundation (Ahşap Ev ve Bungalov, the base step; the old open question in CHECKLIST). Owner, 2026-10-19:
+  // small jobs his own team pours; big ones bring in a specialist and machinery. The replace runs first, so a document
+  // that still has the 18.10 sentence is updated in place and the append below then finds it already there.
+  ...byLocale({
+    tr: ['Beton temel için uygun ustayı biz ayarlıyoruz.', CONCRETE.tr],
+    en: ['We arrange the right specialist for a concrete foundation.', CONCRETE.en],
+    ru: ['Для бетонного фундамента мы сами привлекаем нужного мастера.', CONCRETE.ru],
+    de: ['Für ein Betonfundament holen wir den passenden Fachbetrieb dazu.', CONCRETE.de],
+    ar: ['ونتولى نحن ترتيب الحِرَفي المناسب للأساس الخرساني.', CONCRETE.ar],
+  }),
   ...byLocale(
     append({
-      tr: ['Ev, zemine göre hazırlanan bir temel ya da kaide üzerine oturur.', 'Beton temel için uygun ustayı biz ayarlıyoruz.'],
-      en: ['The house sits on a foundation or base prepared to suit the ground.', 'We arrange the right specialist for a concrete foundation.'],
-      ru: ['Дом ставится на фундамент или цоколь, подготовленный под грунт.', 'Для бетонного фундамента мы сами привлекаем нужного мастера.'],
-      de: ['Das Haus steht auf einem dem Boden entsprechend vorbereiteten Fundament oder Sockel.', 'Für ein Betonfundament holen wir den passenden Fachbetrieb dazu.'],
-      ar: ['يقوم البيت على أساس أو قاعدة تُجهَّز بحسب الأرض.', 'ونتولى نحن ترتيب الحِرَفي المناسب للأساس الخرساني.'],
+      tr: ['Ev, zemine göre hazırlanan bir temel ya da kaide üzerine oturur.', CONCRETE.tr],
+      en: ['The house sits on a foundation or base prepared to suit the ground.', CONCRETE.en],
+      ru: ['Дом ставится на фундамент или цоколь, подготовленный под грунт.', CONCRETE.ru],
+      de: ['Das Haus steht auf einem dem Boden entsprechend vorbereiteten Fundament oder Sockel.', CONCRETE.de],
+      ar: ['يقوم البيت على أساس أو قاعدة تُجهَّز بحسب الأرض.', CONCRETE.ar],
     }),
   ),
 ]
