@@ -625,3 +625,67 @@ html[data-theme='dark'] .brand-logo {
 .required {
   color: var(--theme-error-750);
 }
+
+/* #230: "İndir" (media edit view) is a link styled as .ai-btn: it needs a box for the 48px height. */
+.media-download .ai-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+/* #230: Payload's "Önizleme boyutları" drawer on phones split 100vh into a 60% image box and a 40% inner scroller with a
+   hidden scrollbar. Worse, on iOS the open drawer locks body scroll (body-scroll-lock) with the <dialog> itself as the
+   only element allowed to scroll; the dialog never scrolled (overflow: hidden), so every touchmove was cancelled and
+   nothing inside could scroll. On phones the dialog becomes the one vertical scroller and the content flows at its
+   natural height; 100dvh keeps its end above Safari's toolbar. */
+@media (max-width: 768px) {
+  .drawer--is-open:has(.preview-sizes) {
+    block-size: 100dvh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y pinch-zoom;
+  }
+
+  .drawer--is-open:has(.preview-sizes) .drawer__content {
+    align-self: flex-start;
+    block-size: auto;
+    min-block-size: 100%;
+    overflow: visible;
+  }
+
+  .drawer--is-open:has(.preview-sizes) .drawer__content-children {
+    block-size: auto;
+    overflow: visible;
+  }
+
+  .drawer--is-open .preview-sizes {
+    display: block;
+    block-size: auto;
+    max-block-size: none;
+    min-block-size: 0;
+  }
+
+  .drawer--is-open .preview-sizes__imageWrap,
+  .drawer--is-open .preview-sizes__listWrap {
+    block-size: auto;
+    min-block-size: 0;
+    overflow: visible;
+  }
+
+  .drawer--is-open .preview-sizes__listWrap::after {
+    display: none;
+  }
+
+  /* Fits the screen width; a tap opens it full size in a new tab (MediaDownload.tsx) for pinch-zoom. */
+  .drawer--is-open .preview-sizes__preview {
+    display: block;
+    inline-size: 100%;
+    max-inline-size: 100%;
+    block-size: auto;
+    max-block-size: none;
+    cursor: zoom-in;
+  }
+}

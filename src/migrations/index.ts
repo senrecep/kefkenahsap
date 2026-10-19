@@ -28,6 +28,7 @@ import * as migration_20261017_224837_translate_media from './20261017_224837_tr
 import * as migration_20261018_093407_seo_rename from './20261018_093407_seo_rename';
 import * as migration_20261018_095155_seo_retired_stems from './20261018_095155_seo_retired_stems';
 import * as migration_20261018_143027_ai_failure from './20261018_143027_ai_failure';
+import * as migration_20261019_092522_google_review from './20261019_092522_google_review';
 
 export const migrations = [
   {
@@ -178,6 +179,11 @@ export const migrations = [
   {
     up: migration_20261018_143027_ai_failure.up,
     down: migration_20261018_143027_ai_failure.down,
-    name: '20261018_143027_ai_failure'
+    name: '20261018_143027_ai_failure',
+  },
+  {
+    up: migration_20261019_092522_google_review.up,
+    down: migration_20261019_092522_google_review.down,
+    name: '20261019_092522_google_review'
   },
 ];

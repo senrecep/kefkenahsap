@@ -10,6 +10,7 @@ import { getRegions } from '@/lib/data/regions'
 import { getNavCategories, getSiteSettings } from '@/lib/data/site'
 
 import { CookiePreferencesButton } from './CookiePreferencesButton'
+import { GoogleReviewLink } from './GoogleReviewLink'
 
 export async function Footer({ locale }: { locale: Locale }) {
   const [t, tNav, tDays, tConsent, tRegions, settings, categories, regions] = await Promise.all([
@@ -112,9 +113,12 @@ export async function Footer({ locale }: { locale: Locale }) {
               <li><CookiePreferencesButton label={tConsent('preferences')} className="text-start text-paper/90 hover:underline" /></li>
             )}
           </ul>
-          <div className="mt-6 flex gap-3">
+          <div className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2">
             {settings.social?.instagram && <a href={settings.social.instagram} rel="noopener me" target="_blank" className="text-paper/90 hover:underline">Instagram</a>}
             {settings.social?.facebook && <a href={settings.social.facebook} rel="noopener me" target="_blank" className="text-paper/90 hover:underline">Facebook</a>}
+            <GoogleReviewLink href={settings.social?.googleReview} place="footer" className="inline-flex items-center gap-1.5 text-paper/90 hover:underline">
+              {t('googleReview')}
+            </GoogleReviewLink>
           </div>
           {tel && <a href={tel.href} className="mt-6 inline-block font-[family-name:var(--font-display)] text-xl font-semibold"><bdi dir="ltr" className="whitespace-nowrap">{tel.label}</bdi></a>}
         </div>
