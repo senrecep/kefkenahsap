@@ -27,6 +27,9 @@
   "References": {
     "title": "Referanslar",
     "description": "Birlikte çalıştığımız siteler, kurumlar ve firmalar.",
-    "empty": "Referans listesi hazırlanıyor."
+    "empty": "Referans listesi hazırlanıyor.",
+    "reviewTitle": "Bizimle çalıştınız mı?",
+    "reviewText": "Deneyiminizi Google'da paylaşırsanız, bizi araştıran başka müşterilere de yol göstermiş olursunuz.",
+    "reviewButton": "Google'da yorum bırakın"
   }
 }

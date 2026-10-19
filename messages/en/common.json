@@ -32,7 +32,8 @@
     "privacy": "Privacy notice",
     "cookies": "Cookie policy",
     "rights": "All rights reserved.",
-    "since": "since {year}"
+    "since": "since {year}",
+    "googleReview": "Leave us a Google review"
   },
   "Days": { "Mo": "Mon", "Tu": "Tue", "We": "Wed", "Th": "Thu", "Fr": "Fri", "Sa": "Sat", "Su": "Sun" },
   "Home": { "title": "Kefken Wood Decoration" }

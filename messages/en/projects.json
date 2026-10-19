@@ -27,6 +27,9 @@
   "References": {
     "title": "References",
     "description": "Residential sites, institutions and companies we have worked with.",
-    "empty": "The reference list is being prepared."
+    "empty": "The reference list is being prepared.",
+    "reviewTitle": "Have you worked with us?",
+    "reviewText": "Sharing your experience on Google helps others who are looking for a contractor like us.",
+    "reviewButton": "Leave us a Google review"
   }
 }

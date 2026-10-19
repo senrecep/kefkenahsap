@@ -187,6 +187,13 @@ export const SiteSettings: GlobalConfig = {
                 { name: 'instagram', type: 'text', validate: validateHref, label: 'Instagram linki' },
                 { name: 'facebook', type: 'text', validate: validateHref, label: 'Facebook linki' },
                 { name: 'googleBusiness', type: 'text', validate: validateHref, label: 'Google İşletme Profili linki' },
+                {
+                  name: 'googleReview',
+                  type: 'text',
+                  validate: validateHref,
+                  label: 'Google yorum linki',
+                  admin: { description: 'Google İşletme Profili\'ndeki "Yorum iste" bağlantısı. Doluysa footer\'da ve Referanslar sayfasında "Google\'da yorum bırakın" bağlantısı çıkar; boşsa hiçbir şey görünmez.' },
+                },
               ],
             },
             { name: 'defaultDescription', type: 'textarea', localized: true, label: 'Varsayılan meta açıklama' },
