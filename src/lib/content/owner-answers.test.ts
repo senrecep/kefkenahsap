@@ -44,6 +44,14 @@ describe('applyTextRules', () => {
     expect(twice.hits.size).toBe(0)
   })
 
+  it('concrete (2026-10-19): a text with the 18.10 sentence gets the new one in its place, once', () => {
+    const rules = OWNER_ANSWER_RULES.filter((r) => r.locale === 'tr')
+    const base = 'Ev, zemine göre hazırlanan bir temel ya da kaide üzerine oturur.'
+    const now = `${base} Küçük işlerde betonu kendi ekibimiz döker; çok beton gereken büyük işlerde usta ve makine desteği alırız.`
+    expect(applyTextRules(`${base} Beton temel için uygun ustayı biz ayarlıyoruz.\n4. İskelet`, rules).value).toBe(`${now}\n4. İskelet`)
+    expect(applyTextRules(`${base}\n4. İskelet`, rules).value).toBe(`${now}\n4. İskelet`)
+  })
+
   it('returns the same object when nothing matches', () => {
     const doc = { title: 'Pergola', faq: [{ q: 'a', a: 'b' }] }
     expect(applyTextRules(doc, [tr('Seperatör', 'Separatör')]).value).toBe(doc)
