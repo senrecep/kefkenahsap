@@ -1,6 +1,7 @@
 import { expect, test, type APIRequestContext } from '@playwright/test'
 
 import { adminApi, createDoc, deleteDocs, uploadPhoto } from '../helpers/content'
+import { sitemapChildren } from '../helpers/sitemap'
 
 // PLAN §7 Teknik 6, 8, 9. Self-contained: its own bilingual category (with an FAQ and a titled photo) and a
 // Turkish-only one, created through the REST API (so Payload hooks revalidate the cached loaders) and removed.
@@ -9,9 +10,7 @@ type Entry = { loc: string; alternates: Record<string, string>; images: string[]
 const path = (u: string) => new URL(u).pathname
 
 async function sitemap(request: APIRequestContext): Promise<Entry[]> {
-  const res = await request.get('/sitemap.xml')
-  expect(res.status()).toBe(200)
-  const xml = await res.text()
+  const xml = (await sitemapChildren(request)).map((c) => c.xml).join('\n')
   return [...xml.matchAll(/<url>([\s\S]*?)<\/url>/g)].map(([, body]) => ({
     loc: body!.match(/<loc>([^<]+)<\/loc>/)![1]!,
     alternates: Object.fromEntries([...body!.matchAll(/hreflang="([^"]+)" href="([^"]+)"/g)].map((m) => [m[1]!, path(m[2]!)])),
@@ -112,6 +111,25 @@ test.describe('robots, sitemap, llms.txt', () => {
     for (const u of [...fixed, trGuide!, at(`/en/guides/${guide.en}`)!, trService!, at(`/en/${both.en}`)!, at(`/tr/${trOnly}`)!, photoEntry]) await expectIndexable(request, u)
     // Search is noindex and disallowed: never listed.
     expect(urls.some((u) => /\/(ara|search)$/.test(path(u.loc)))).toBe(false)
+  })
+
+  test('sitemap.xml is an index of per-locale page and photo sitemaps, each small and cacheable at the edge', async ({ request }) => {
+    const index = await request.get('/sitemap.xml')
+    expect(index.headers()['content-type']).toContain('xml')
+    expect(await index.text()).toContain('<sitemapindex')
+    const children = await sitemapChildren(request)
+    expect(children.map((c) => c.path)).toEqual(expect.arrayContaining(['/sitemaps/tr-pages.xml', '/sitemaps/tr-photos.xml', '/sitemaps/en-pages.xml']))
+    for (const c of children) {
+      const locale = c.path.match(/^\/sitemaps\/([a-z]{2})-(pages|photos)\.xml$/)![1]!
+      const locs = [...c.xml.matchAll(/<url>\s*<loc>([^<]+)<\/loc>/g)].map((m) => path(m[1]!))
+      expect(locs.length, c.path).toBeGreaterThan(0)
+      expect(locs.length, c.path).toBeLessThanOrEqual(50_000)
+      expect(Buffer.byteLength(c.xml), c.path).toBeLessThan(5 * 1024 * 1024)
+      // Only that locale's URLs: the others are in their own child.
+      expect(locs.every((p) => p === `/${locale}` || p.startsWith(`/${locale}/`)), c.path).toBe(true)
+      expect(c.cacheControl, c.path).toMatch(/s-maxage=\d+/)
+    }
+    expect((await request.get('/sitemaps/xx-pages.xml')).status()).toBe(404)
   })
 
   test('llms.txt: Key Facts and live service links; llms-full.txt adds the visible FAQ', async ({ request }) => {

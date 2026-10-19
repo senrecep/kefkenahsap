@@ -7,6 +7,7 @@ import type { Media } from '@/payload-types'
 
 import { withDefaultAlt } from './media-alt'
 import { getPayload, TAGS } from './payload'
+import { getServicesAllLocales } from './seo'
 
 const HOUR = 3600
 // The local API bypasses collection access, so public filters are explicit here.
@@ -79,12 +80,14 @@ export const getServiceTiles = (locale: Locale) =>
     { tags: [TAGS.categories, TAGS.media], revalidate: HOUR },
   )()
 
-/** Locales with at least one live service (dil-yayında: slug + name), plus the default: the input for fixedRoutePaths. */
+/**
+ * Locales with at least one live service (dil-yayında: slug + name), plus the default: the input for fixedRoutePaths.
+ * One light all-locale query (names and slugs only), not five service-tile queries with their photos: every fixed
+ * route's hreflang and the sitemap ask for this, and cold those took ~9 s.
+ */
 export const getContentLocales = async () => {
-  const live = await Promise.all(
-    routing.locales.map(async (l) => l === routing.defaultLocale || (await getServiceTiles(l)).some((c) => c.name?.trim())),
-  )
-  return routing.locales.filter((_, i) => live[i])
+  const services = await getServicesAllLocales()
+  return routing.locales.filter((l) => l === routing.defaultLocale || services.some((s) => s.paths[l]))
 }
 
 /** Published guides that list this category under "İlgili hizmetler", with their own slug + title in this locale. */
