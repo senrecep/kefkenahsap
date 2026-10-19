@@ -1,0 +1,52 @@
+name: Lighthouse
+
+# Weekly Lighthouse CI against production (budgets: lighthouserc.cjs). Moved out of the PR run (#234): lab scores on a
+# shared runner are noisy and it added ~11 min to every PR. Reported only; read the job result and the uploaded report.
+on:
+  schedule:
+    - cron: '0 5 * * 1' # Mondays 05:00 UTC
+  workflow_dispatch:
+    inputs:
+      base_url:
+        description: Site to audit
+        default: https://www.kefkenahsap.com
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lighthouse
+  cancel-in-progress: false
+
+jobs:
+  lighthouse:
+    runs-on: [self-hosted, kefken]
+    timeout-minutes: 30
+    env:
+      BASE: ${{ inputs.base_url || 'https://www.kefkenahsap.com' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.3.14
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: bun install --frozen-lockfile
+      - name: Install Playwright browser
+        run: bunx playwright install --with-deps chromium
+      - name: Lighthouse CI
+        run: |
+          # Home, services, gallery, contact in tr and en (localized paths: src/i18n/routing.ts), contact + home in ar.
+          export LHCI_URLS="$BASE/tr,$BASE/tr/hizmetlerimiz,$BASE/tr/galeri,$BASE/tr/iletisim,$BASE/en,$BASE/en/services,$BASE/en/gallery,$BASE/en/contact,$BASE/ar,$BASE/ar/contact"
+          export CHROME_PATH="$(node -e "console.log(require('playwright-core').chromium.executablePath())")"
+          bunx lhci collect --config=lighthouserc.cjs
+          bunx lhci upload --config=lighthouserc.cjs
+          bunx lhci assert --config=lighthouserc.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lighthouse
+          path: .lighthouseci/
+          include-hidden-files: true
+          retention-days: 30

@@ -108,14 +108,14 @@ Phases come from the ultragoal ledger: F0 spike → F1 launch → F2 content and
 - **Order**: work the epic's sub-issues top to bottom. Don't start an issue until the issues in its "Bağımlılıklar" (dependencies) line are closed.
 - **One issue = one branch = one worktree = one PR**:
   1. Set the issue to "In Progress" on the board and assign it.
-  2. Create a branch from `development`: `feat/<no>-<slug>`, `spike/<no>-<slug>`, `chore/…`, `docs/…` or `design/…`.
-  3. `git worktree add ../kefkenahsap-wt/<no>-<slug> -b <branch> development`. Parallel work happens only in separate worktrees.
+  2. Create a branch from `main`: `feat/<no>-<slug>`, `spike/<no>-<slug>`, `chore/…`, `docs/…` or `design/…`.
+  3. `git worktree add ../kefkenahsap-wt/<no>-<slug> -b <branch> origin/main`. Parallel work happens only in separate worktrees.
   4. TDD commits use Conventional Commits and reference the issue (`feat(legacy): resolve WP size variants (#20)`).
-  5. Open the PR against `development`. Put `Closes #<no>` and `Part of #<epic>` in the body, add the matching labels and milestone, and list the acceptance criteria as a checklist with evidence (test output, screenshots, Lighthouse).
+  5. Open the PR against `main`. Put `Closes #<no>` and `Part of #<epic>` in the body, add the matching labels and milestone, and list the acceptance criteria as a checklist with evidence (test output, screenshots, Lighthouse).
   6. Merge only when CI is green and the `code-reviewer` / `verifier` review is clean (squash). Then remove the worktree.
-- PRs target `development`, so `Closes #n` does **not** auto-close issues (GitHub only does that on the default branch). After merge, close the issue manually with a link to the PR and run `scripts/github/status.sh <n> Done`.
+- PRs target `main` (the default branch), so `Closes #n` closes the issue on merge. Merging a PR **is the production deploy** (once `PRODUCTION_DEPLOY_APPROVED=true`): the push to `main` only builds and deploys, the checks ran on the PR. Branch protection on `main`: require the `static`, `test` and `e2e (1/2/3)` checks and "Require branches to be up to date before merging".
 - Payload config changes need `bun run generate:types` + `bun run generate:importmap` (otherwise rich-text/admin components silently fail to render) and a migration.
 - Design detector: the impeccable hook is enabled in `.impeccable/config.json`; if no per-edit reminders appear, run `$HOME/.claude/skills/impeccable/scripts/impeccable detect --json <changed UI files>` once before opening a UI PR.
 - When the epic's last sub-issue closes, check the epic's acceptance criteria with evidence, close the epic, and run the ultragoal `checkpoint`.
-- `development` → `main` (production) happens at the end of the phase through a release PR. The F1 release is the launch issue.
+- The `development` branch and the dev environment are retired (owner decision 2026-10-19): no release PRs, no `development` target. The branch stays until the owner deletes it.
 - New work that comes up is never done silently: open a new issue (link it to the right epic as a sub-issue) and write it into the plan.

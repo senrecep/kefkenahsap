@@ -37,9 +37,13 @@ ssh senrecep "docker rm -f kefken-gh-runner-$N; mkdir -p /var/lib/kefken-runner-
 
 ## Deploys
 
-`development` / `main` pushes → CI `check` → `deploy` job calls Dokploy `compose.deploy` with the environment's `DOKPLOY_API_KEY` secret and `DOKPLOY_COMPOSE_ID` variable (GitHub environments `development` / `production`).
+PRs to `main` run CI (`static`, `test`, `e2e` in 3 shards). A push to `main` (the merge) runs only the `deploy` job: it builds the image and calls Dokploy `compose.deploy` with the `production` environment's `DOKPLOY_API_KEY` secret and `DOKPLOY_COMPOSE_ID` variable. Deploys queue and never overlap. The dev environment and the `development` branch are retired (2026-10-19).
 
-### Development environment
+**Recommended branch protection on `main` (owner, Settings → Branches):** require status checks `static`, `test`, `e2e (1)`, `e2e (2)`, `e2e (3)`, and enable "Require branches to be up to date before merging" (the merge itself does not re-run tests, so a stale branch would deploy untested). Optionally require a PR review.
+
+Lighthouse CI runs weekly (Mondays) and on demand against production: `.github/workflows/lighthouse.yml`, report in the run's artifacts.
+
+### Development environment (retired 2026-10-19; kept as history)
 
 - Dokploy compose `app` (id `4bzOPqDN2wxfKo-57uaGV`) in project `kefkenahsap` / environment `development`, raw compose = `docker-compose.dokploy.yml`, isolated deployment.
 - Domain `development.kefkenahsap.com` → service `app:3000`, Let's Encrypt; Cloudflare proxied.

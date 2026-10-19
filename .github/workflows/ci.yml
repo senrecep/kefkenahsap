@@ -1,16 +1,19 @@
 name: CI
 
+# Checks run on pull requests to main. A push to main (merge) only deploys: the PR's checks already ran on the same
+# code, and branch protection requires the branch to be up to date before merging. Lighthouse: lighthouse.yml.
 on:
   pull_request:
+    branches: [main]
   push:
-    branches: [development, main]
+    branches: [main]
 
 permissions:
   contents: read
 
 concurrency:
-  group: ci-${{ github.ref }}
-  # Superseded PR runs are cancelled; pushes to deploy branches always finish.
+  group: ci-${{ github.event_name }}-${{ github.ref }}
+  # A newer push to a PR cancels its older run; a deploy is never cancelled, and deploys queue (see the deploy job).
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 env:
@@ -35,14 +38,31 @@ env:
   AI_FAKE_PROVIDER: '1'
 
 jobs:
-  check:
+  static:
     # Self-hosted runner on the Dokploy server (docs/RUNBOOK.md): GitHub-hosted minutes are unavailable for this account.
     runs-on: [self-hosted, kefken]
     # The self-hosted runner has the host Docker socket: never run code from forks on it.
-    if: github.event_name == 'push' || github.event.pull_request.head.repo.full_name == github.repository
-    timeout-minutes: 50
-    # Data dirs are tmpfs: the images declare a VOLUME, and the runner removes service containers but not their
-    # anonymous volumes, which piled up on the shared host (#206).
+    if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.3.14
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: bun install --frozen-lockfile
+      - run: bun run typecheck
+      - run: bun run lint
+      - name: Generated files are committed
+        run: bun run check:generated
+
+  test:
+    # Self-hosted runner on the Dokploy server (docs/RUNBOOK.md): GitHub-hosted minutes are unavailable for this account.
+    runs-on: [self-hosted, kefken]
+    if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+    timeout-minutes: 20
     services:
       postgres:
         image: postgres:17-alpine
@@ -89,71 +109,108 @@ jobs:
           aws s3 mb s3://kefken-leads
           aws s3api put-bucket-policy --bucket kefken-media --policy '{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Principal":"*","Action":["s3:GetObject"],"Resource":["arn:aws:s3:::kefken-media/*"]}]}'
 
-      - run: bun run typecheck
-      - run: bun run lint
-      - name: Generated files are committed
-        run: bun run check:generated
+      - name: Create S3 buckets
+        run: |
+          aws() { docker run --rm --network host -e AWS_ACCESS_KEY_ID=ciaccess -e AWS_SECRET_ACCESS_KEY=cisecret123 -e AWS_DEFAULT_REGION=us-east-1 amazon/aws-cli:2.38.0 --endpoint-url=http://localhost:${{ job.services.s3.ports['9000'] }} "$@"; }
+          for i in $(seq 1 30); do aws s3 ls >/dev/null 2>&1 && break; sleep 1; done
+          aws s3 mb s3://kefken-media
+          aws s3 mb s3://kefken-leads
+          aws s3api put-bucket-policy --bucket kefken-media --policy '{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Principal":"*","Action":["s3:GetObject"],"Resource":["arn:aws:s3:::kefken-media/*"]}]}'
       - name: Unit + integration tests
         run: bun run test
 
+  e2e:
+    # Self-hosted runner on the Dokploy server (docs/RUNBOOK.md): GitHub-hosted minutes are unavailable for this account.
+    runs-on: [self-hosted, kefken]
+    if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [1, 2, 3]
+    services:
+      postgres:
+        image: postgres:17-alpine
+        env:
+          POSTGRES_USER: kefken
+          POSTGRES_PASSWORD: kefken
+          POSTGRES_DB: kefken
+        ports: ['5432']
+        options: >-
+          --health-cmd "pg_isready -U kefken" --health-interval 5s --health-retries 20
+          --tmpfs /var/lib/postgresql/data
+      s3:
+        image: rustfs/rustfs:1.0.1
+        env:
+          RUSTFS_ACCESS_KEY: ciaccess
+          RUSTFS_SECRET_KEY: cisecret123
+        ports: ['9000']
+        options: --tmpfs /data:uid=10001,gid=10001 # rustfs runs as uid 10001
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.3.14
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: bun install --frozen-lockfile
+      - name: Point env at this job's service ports
+        run: |
+          PG=${{ job.services.postgres.ports['5432'] }}; S3=${{ job.services.s3.ports['9000'] }}
+          echo "DATABASE_URL=postgres://kefken:kefken@localhost:$PG/kefken" >> "$GITHUB_ENV"
+          echo "S3_ENDPOINT=http://localhost:$S3" >> "$GITHUB_ENV"
+          echo "MEDIA_PUBLIC_URL=http://localhost:$S3/kefken-media" >> "$GITHUB_ENV"
+          PORT=$(node -e "const s=require('net').createServer().listen(0,()=>{console.log(s.address().port);s.close()})")
+          echo "E2E_PORT=$PORT" >> "$GITHUB_ENV"
+          # Inlined at build time: canonical/hreflang must point at the server Lighthouse audits (#52).
+          echo "NEXT_PUBLIC_SITE_URL=http://localhost:$PORT" >> "$GITHUB_ENV"
+
+      - name: Create S3 buckets
+        run: |
+          aws() { docker run --rm --network host -e AWS_ACCESS_KEY_ID=ciaccess -e AWS_SECRET_ACCESS_KEY=cisecret123 -e AWS_DEFAULT_REGION=us-east-1 amazon/aws-cli:2.38.0 --endpoint-url=http://localhost:${{ job.services.s3.ports['9000'] }} "$@"; }
+          for i in $(seq 1 30); do aws s3 ls >/dev/null 2>&1 && break; sleep 1; done
+          aws s3 mb s3://kefken-media
+          aws s3 mb s3://kefken-leads
+          aws s3api put-bucket-policy --bucket kefken-media --policy '{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Principal":"*","Action":["s3:GetObject"],"Resource":["arn:aws:s3:::kefken-media/*"]}]}'
+
+      - name: Create S3 buckets
+        run: |
+          aws() { docker run --rm --network host -e AWS_ACCESS_KEY_ID=ciaccess -e AWS_SECRET_ACCESS_KEY=cisecret123 -e AWS_DEFAULT_REGION=us-east-1 amazon/aws-cli:2.38.0 --endpoint-url=http://localhost:${{ job.services.s3.ports['9000'] }} "$@"; }
+          for i in $(seq 1 30); do aws s3 ls >/dev/null 2>&1 && break; sleep 1; done
+          aws s3 mb s3://kefken-media
+          aws s3 mb s3://kefken-leads
+          aws s3api put-bucket-policy --bucket kefken-media --policy '{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Principal":"*","Action":["s3:GetObject"],"Resource":["arn:aws:s3:::kefken-media/*"]}]}'
       - name: Install Playwright browser
         run: bunx playwright install --with-deps chromium
+      # Each shard builds for itself: a build is ~50 s, cheaper than shipping .next through artifacts between runners.
       - name: Build
         run: bun run build
-      - name: E2E (production build)
+      - name: E2E (production build, shard ${{ matrix.shard }}/3)
         env:
           E2E_START_COMMAND: bun run start -- -p ${{ env.E2E_PORT }}
           # Full axe matrix for these; other locales get home/category/contact/404 on mobile (tests/e2e/a11y.e2e.spec.ts).
           A11Y_FULL_LOCALES: tr,en
-        run: bun run test:e2e
+        run: bun run test:e2e -- --shard=${{ matrix.shard }}/3
       - uses: actions/upload-artifact@v4
         if: failure()
         with:
-          name: playwright-report
+          name: playwright-report-${{ matrix.shard }}
           path: test-results/
           retention-days: 7
 
-      # Lighthouse CI (#52): budgets from lighthouserc.cjs on the same production build. Reported, not blocking:
-      # lab scores on a shared runner are noisy, and CI photos are synthetic (real-photo scores: docs/quality/).
-      - name: Lighthouse CI
-        id: lhci
-        continue-on-error: true
-        run: |
-          bun run payload run scripts/quality/fixtures.ts
-          # Local-API writes can't revalidate the data cache the e2e server left behind.
-          rm -rf .next/cache
-          node_modules/.bin/next start -p "$E2E_PORT" > lhci-server.log 2>&1 &
-          trap "kill $! || true" EXIT
-          for i in $(seq 60); do curl -sf -o /dev/null "http://localhost:$E2E_PORT/brand/logo.png" && break; sleep 1; done
-          # Every key template for tr/en (job time: ~14 s per run × 3 runs per URL). ru/de share the LTR layout and are
-          # covered by the reduced axe matrix; for RTL, the templates whose layout it changes most (#63).
-          export LHCI_LOCALES="tr,en,ar:home+category+gallery+contact"
-          export CHROME_PATH="$(node -e "console.log(require('playwright-core').chromium.executablePath())")" LHCI_BASE_URL="http://localhost:$E2E_PORT"
-          # Warm-up: a cold first render streams metadata into <body>, which Lighthouse reads as a missing description.
-          for u in $(node -p "require('./lighthouserc.cjs').ci.collect.url.join(' ')"); do curl -s -o /dev/null "$u"; done
-          bunx lhci collect --config=lighthouserc.cjs
-          bunx lhci upload --config=lighthouserc.cjs
-          bunx lhci assert --config=lighthouserc.cjs
-      - uses: actions/upload-artifact@v4
-        if: always() && steps.lhci.outcome != 'skipped'
-        with:
-          name: lighthouse
-          path: .lighthouseci/
-          include-hidden-files: true
-          retention-days: 14
-
   deploy:
-    # Builds the image on the server, then Dokploy redeploys the compose; only after checks pass on a deploy branch.
-    needs: check
+    # Builds the image on the server, then Dokploy redeploys the compose. Merging into main is the deploy; the checks ran on the PR.
     # Production deploys stay off until the owner sets the repo variable PRODUCTION_DEPLOY_APPROVED=true (launch, #53).
-    if: >-
-      github.event_name == 'push' &&
-      (github.ref == 'refs/heads/development' || (github.ref == 'refs/heads/main' && vars.PRODUCTION_DEPLOY_APPROVED == 'true'))
+    if: github.event_name == 'push' && vars.PRODUCTION_DEPLOY_APPROVED == 'true'
     runs-on: [self-hosted, kefken]
-    concurrency: deploy-${{ github.ref }}
-    environment: ${{ github.ref == 'refs/heads/main' && 'production' || 'development' }}
+    # Deploys never overlap and never cancel each other: the next one waits.
+    concurrency:
+      group: deploy-production
+      cancel-in-progress: false
+    environment: production
     env:
-      SITE_ENV: ${{ github.ref == 'refs/heads/main' && 'production' || 'development' }}
+      SITE_ENV: production
     steps:
       - uses: actions/checkout@v4
       # Built straight into the server's Docker (the runner uses the host socket); Dokploy runs this image.
@@ -181,7 +238,7 @@ jobs:
         run: |
           if [ -z "$DOKPLOY_API_KEY" ] || [ -z "$COMPOSE_ID" ]; then
             echo "::warning::Dokploy deploy is not configured for this environment"
-            [ "$GITHUB_REF" = refs/heads/main ] && exit 1 || exit 0
+            exit 1
           fi
           curl -fsS -o /dev/null -X POST "$DOKPLOY_URL/api/compose.deploy" \
             -H "x-api-key: $DOKPLOY_API_KEY" -H 'Content-Type: application/json' \
