@@ -22,12 +22,11 @@ test.describe('gallery', () => {
     await page.getByRole('link', { name: 'Daha fazla göster' }).scrollIntoViewIfNeeded()
     await expect.poll(() => visible.count(), { timeout: 20_000 }).toBeGreaterThan(PAGE_SIZE)
 
-    // Lightbox: opens on click, URL follows the image, arrows move, Esc closes and restores the URL.
+    // Lightbox: opens on click, arrows move, Esc closes; the URL stays on the grid (#226).
     await visible.first().click()
     const dialog = page.getByRole('dialog', { name: 'Fotoğraf görüntüleyici' })
     await expect(dialog).toBeVisible()
     await expect(dialog.getByText(/^1 \/ \d+$/)).toBeVisible()
-    await expect(page).toHaveURL(/\/tr\/galeri\/[a-z0-9-]+$/)
     await page.keyboard.press('ArrowRight')
     await expect(dialog.getByText(/^2 \/ \d+$/)).toBeVisible()
     await page.keyboard.press('Escape')
@@ -41,6 +40,73 @@ test.describe('gallery', () => {
     await expect(chip).toHaveAttribute('aria-current', 'page')
     expect(await visible.count()).toBeGreaterThan(0)
   })
+
+  // #226: the lightbox stays open (no document navigation to the photo's page), steps through the grid, and its link
+  // opens the photo's page. Checked after a pause: the hard navigation came ~300 ms after the click.
+  for (const [path, width] of [['/tr', 390], ['/tr/galeri', 1280]] as const) {
+    test(`${path} at ${width}px: the lightbox stays open, steps, and links to the photo page (#226)`, async ({ page }) => {
+      await page.setViewportSize({ width, height: 860 })
+      // Umami's tracker (production only) takes over every click on an `a[data-umami-event]`: capture phase,
+      // preventDefault, then `location.href = a.href` once the event is sent. That was the hard navigation.
+      await page.addInitScript(() =>
+        document.addEventListener(
+          'click',
+          (e) => {
+            const a = (e.target as Element).closest?.('a[data-umami-event]') as HTMLAnchorElement | null
+            if (!a?.href || a.target === '_blank') return
+            e.preventDefault()
+            setTimeout(() => (location.href = a.href), 100)
+          },
+          true,
+        ),
+      )
+      await page.goto(path)
+      const tile = page.locator('[data-gallery-item]:visible').first()
+      await tile.scrollIntoViewIfNeeded()
+      const gridUrl = page.url()
+      const scrollY = await page.evaluate(() => window.scrollY)
+      await page.evaluate(() => ((window as unknown as { __grid: boolean }).__grid = true))
+      const documents: string[] = []
+      page.on('request', (r) => r.resourceType() === 'document' && documents.push(r.url()))
+
+      await tile.click()
+      const dialog = page.getByRole('dialog', { name: 'Fotoğraf görüntüleyici' })
+      await expect(dialog).toBeVisible()
+      await page.waitForTimeout(1500)
+      await expect(dialog).toBeVisible()
+      expect(documents).toEqual([])
+      expect(await page.evaluate(() => (window as unknown as { __grid?: boolean }).__grid)).toBe(true)
+      await expect(dialog.getByText(/^1 \/ \d+$/)).toBeVisible()
+
+      // Next (arrow key on desktop, swipe on a phone) changes the photo.
+      const title = await dialog.getByRole('heading', { level: 2 }).textContent()
+      if (width < 768) {
+        const img = dialog.locator('img')
+        const box = (await img.boundingBox())!
+        const y = box.y + box.height / 2
+        await img.dispatchEvent('pointerdown', { clientX: box.x + box.width - 20, clientY: y })
+        await img.dispatchEvent('pointerup', { clientX: box.x + 20, clientY: y })
+      } else {
+        await page.keyboard.press('ArrowRight')
+      }
+      await expect(dialog.getByText(/^2 \/ \d+$/)).toBeVisible()
+      await expect(dialog.getByRole('heading', { level: 2 })).not.toHaveText(title!)
+
+      // Closing returns to the grid where it was.
+      await page.keyboard.press('Escape')
+      await expect(dialog).toBeHidden()
+      expect(page.url()).toBe(gridUrl)
+      expect(await page.evaluate(() => window.scrollY)).toBe(scrollY)
+
+      // The lightbox link opens the photo's own page.
+      await tile.click()
+      await expect(dialog).toBeVisible()
+      const photo = (await dialog.getByRole('heading', { level: 2 }).textContent())!
+      await dialog.getByRole('link', { name: 'Fotoğrafın sayfası' }).click()
+      await expect(page).toHaveURL(/\/tr\/galeri\/[a-z0-9-]+$/)
+      await expect(page.getByRole('heading', { level: 1 })).toHaveText(photo)
+    })
+  }
 
   test('filters stay compact: types ranked per service, the rest behind "more filters"', async ({ page }) => {
     await page.goto('/tr/galeri')
