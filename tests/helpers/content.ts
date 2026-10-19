@@ -56,6 +56,21 @@ export async function ensureWhatsApp(api: APIRequestContext): Promise<() => Prom
 }
 
 /**
+ * Admin screens that open the homepage global need layout rows (block toggles, row actions). An empty DB (CI) has none:
+ * give it two photo-less blocks, and return a function that puts the previous layout back. A DB with rows is left as is.
+ */
+export async function ensureHomepageRows(api: APIRequestContext): Promise<() => Promise<void>> {
+  const current = await (await api.get('/api/globals/homepage?locale=tr&depth=0')).json()
+  const layout = (current.layout ?? []) as unknown[]
+  if (layout.length > 0) return async () => {}
+  const res = await api.post('/api/globals/homepage?locale=tr', { data: { layout: [{ blockType: 'services' }, { blockType: 'faq' }], _status: 'published' } })
+  expect(res.ok(), await res.text()).toBe(true)
+  return async () => {
+    await api.post('/api/globals/homepage?locale=tr', { data: { layout, _status: current._status ?? 'published' } })
+  }
+}
+
+/**
  * #187: a published homepage whose first hero shows at least three photos. A DB that already has them (the local seed)
  * is left as is; otherwise (CI's empty DB) the hero gets approved landscape photos. Returns a restore function that puts
  * the previous layout back.

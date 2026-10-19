@@ -17,7 +17,10 @@ const plan = process.env.LHCI_LOCALES
       return [locale, only ? only.split('+') : KEY_TEMPLATES]
     })
   : Object.keys(targets).map((locale) => [locale, KEY_TEMPLATES])
-const paths = plan.flatMap(([locale, templates]) => templates.map((t) => targets[locale]?.[t]).filter(Boolean))
+// LHCI_URLS (comma-separated, absolute) replaces the plan: the weekly run against production (lighthouse.yml) has no fixtures.
+const urls = process.env.LHCI_URLS
+  ? process.env.LHCI_URLS.split(',').map((u) => u.trim())
+  : plan.flatMap(([locale, templates]) => templates.map((t) => targets[locale]?.[t]).filter(Boolean)).map((p) => base + p)
 
 // #233 material calculator (every locale's path): its island (~14 KB gz: form, exact BigInt arithmetic, tsentials
 // Result/json for the share link) is split from first load with next/dynamic and fetched right after it, so the
@@ -39,7 +42,7 @@ const assertions = (scriptKb) => ({
 module.exports = {
   ci: {
     collect: {
-      url: paths.map((p) => base + p),
+      url: urls,
       numberOfRuns: 3,
       settings: {
         // The self-hosted runner crashed the tab (TARGET_CRASHED) during the full-page screenshot: small /dev/shm.
@@ -47,7 +50,7 @@ module.exports = {
         disableFullPageScreenshot: true,
         // Non-production builds send `X-Robots-Tag: noindex` on purpose (next.config.ts, fixed at build time).
         // Skipped audits leave the SEO score, so every other SEO audit still counts.
-        skipAudits: ['is-crawlable'],
+        skipAudits: process.env.LHCI_URLS ? [] : ['is-crawlable'], // production is indexable, so the audit counts there
       },
     },
     assert: {

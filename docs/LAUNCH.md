@@ -1,5 +1,7 @@
 # Launch: go-live runbook (#53)
 
+> **2026-10-19:** the dev environment and the `development` branch flow are retired (#234): PRs go to `main` and merging deploys production. Where this playbook says `development`, `origin/development` or a `development → main` release PR, read `main`; dev-environment steps apply only if the owner brings a dev environment back.
+
 Production gets its data by **promoting development**, not by re-seeding. Dev holds the curated state: 16 categories, 53+ tags, 3,222 approved photos with texts in 5 locales, the hero slideshow, editorial picks and the owner's own edits. Most of it was loaded over time by one-off scripts (RUNBOOK → Loading translations, #146, #156, #172, #175, #180), and a re-seed could not reproduce it. The promotion has two parts:
 - a sanitized `pg_dump` of the dev DB, restored into prod (`scripts/launch/promote-sanitize.sql`);
 - a server-side copy of the R2 objects from `kefkenahsap/dev/` to the bucket root;

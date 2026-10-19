@@ -4,6 +4,7 @@ import sharp from 'sharp'
 
 import config from '../../src/payload.config.js'
 import { visualProblems } from '../helpers/admin-visual'
+import { adminApi, ensureHomepageRows } from '../helpers/content'
 import { login } from '../helpers/login'
 
 // #167: the 48px tap areas must grow invisibly. In light and dark, on a phone and a desktop, with menus, drawers and
@@ -22,7 +23,10 @@ const category = `E2E Visual ${run}`
 test.describe('admin visual: tap areas grow invisibly', () => {
   test.describe.configure({ mode: 'serial', timeout: 300_000 })
 
+  // The homepage screen needs layout rows; an empty DB (CI, sharded) has none, so make sure they exist.
+  let restoreHomepage = async () => {}
   test.beforeAll(async () => {
+    restoreHomepage = await ensureHomepageRows(await adminApi())
     const payload = await getPayload({ config })
     await payload.create({ collection: 'users', data: user })
     ids.category = (await payload.create({ collection: 'categories', locale: 'tr', data: { name: category } })).id
@@ -49,6 +53,7 @@ test.describe('admin visual: tap areas grow invisibly', () => {
   })
 
   test.afterAll(async () => {
+    await restoreHomepage()
     const payload = await getPayload({ config })
     if (ids.category) {
       await payload.delete({ collection: 'media', where: { category: { equals: ids.category } } })
