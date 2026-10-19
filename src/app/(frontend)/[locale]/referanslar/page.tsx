@@ -1,17 +1,19 @@
 import type { Metadata } from 'next'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
 
+import { Breadcrumb } from '@/components/site/Breadcrumb'
 import { CtaBand } from '@/components/site/CtaBand'
 import { GoogleReviewLink } from '@/components/site/GoogleReviewLink'
 import { JsonLd } from '@/components/seo/JsonLd'
 import { buttonClass } from '@/components/ui/button'
 import { Container } from '@/components/ui/Container'
 import { Picture } from '@/components/ui/Picture'
-import { Link } from '@/i18n/navigation'
+import { getPathname, Link } from '@/i18n/navigation'
 import type { Locale } from '@/i18n/routing'
 import { getProjectCards, getReferences } from '@/lib/data/projects'
 import { getSiteSettings } from '@/lib/data/site'
-import { itemListJsonLd } from '@/lib/seo/jsonld'
+import { siteUrl } from '@/lib/seo/alternates'
+import { itemListJsonLd, pageJsonLd } from '@/lib/seo/jsonld'
 import { pageMetadata, staticPaths } from '@/lib/seo/page-metadata'
 
 type Params = Promise<{ locale: Locale }>
@@ -33,10 +35,13 @@ export default async function ReferencesPage({ params }: { params: Params }) {
   const rows = refs.map((r) => ({ ...r, cover: r.projects[0] && covers.get(r.projects[0].id) }))
   const pictured = rows.filter((r) => r.cover)
   const plain = rows.filter((r) => !r.cover)
+  const site = siteUrl().replace(/\/$/, '')
+  const path = getPathname({ locale, href: '/referanslar' })
   return (
     <>
       <Container className="pt-10 md:pt-16">
-        <JsonLd data={itemListJsonLd(refs.map((r) => ({ name: r.name })))} />
+        <JsonLd data={[pageJsonLd('CollectionPage', { site, name: t('title'), path, description: t('description'), locale }), itemListJsonLd(refs.map((r) => ({ name: r.name })))]} />
+        <Breadcrumb locale={locale} className="mb-6" items={[{ name: t('title'), path }]} />
         <h1 className="text-[2.1rem] leading-[1.08] md:text-[3.2rem]">{t('title')}</h1>
         <p className="mt-5 max-w-[62ch] text-[1.15rem] text-ink-soft md:text-[1.25rem]">{t('description')}</p>
         {refs.length > 0 ? (

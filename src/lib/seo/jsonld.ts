@@ -12,6 +12,7 @@ type Json = Record<string, unknown>
 
 const CONTEXT = 'https://schema.org'
 const businessId = (site: string) => `${site.replace(/\/$/, '')}/#business`
+const websiteId = (site: string) => `${site.replace(/\/$/, '')}/#website`
 
 /** Drops null/undefined/blank strings/empty arrays, and objects left with nothing but their @type (an @id reference stays). */
 function compact<T>(v: T): T | undefined {
@@ -84,7 +85,7 @@ export function businessJsonLd(s: BusinessInput, o: { site: string; url: string;
 
 /** WebSite node (SearchAction retired in 2024: not added). */
 export const websiteJsonLd = (o: { name: string; site: string; url: string; locale: string }) =>
-  node({ '@type': 'WebSite', '@id': `${o.site.replace(/\/$/, '')}/#website`, name: o.name, url: o.url, inLanguage: o.locale, publisher: { '@id': businessId(o.site) } })
+  node({ '@type': 'WebSite', '@id': websiteId(o.site), name: o.name, url: o.url, inLanguage: o.locale, publisher: { '@id': businessId(o.site) } })
 
 /** A free in-browser tool (the material and quote calculator, #233); no rating or price: none is shown on the page. */
 export const webApplicationJsonLd = (o: { site: string; name: string; url: string; description?: Text; locale: string }) =>
@@ -128,6 +129,7 @@ export const creativeWorkJsonLd = (o: {
   url: string
   description?: Text
   year?: number | null
+  about?: Text[]
   place?: Text[]
   materials?: string[]
   images?: { url: string; caption?: Text }[]
@@ -139,10 +141,11 @@ export const creativeWorkJsonLd = (o: {
     url: o.url,
     description: o.description,
     dateCreated: o.year ? String(o.year) : undefined,
+    about: o.about?.map((name) => ({ '@type': 'Thing', name })),
     contentLocation: place ? { '@type': 'Place', name: place } : undefined,
     material: o.materials,
     creator: { '@id': businessId(o.site) },
-    image: o.images?.map((i) => ({ '@type': 'ImageObject', contentUrl: i.url, caption: i.caption })),
+    image: o.images?.map((i) => ({ '@type': 'ImageObject', url: i.url, contentUrl: i.url, caption: i.caption })),
   })
 }
 
@@ -169,17 +172,42 @@ export const imageObjectJsonLd = (o: {
     copyrightNotice: o.copyrightNotice,
   })
 
-export const articleJsonLd = (o: { site: string; headline: string; url: string; author?: Text; datePublished?: Text; dateModified?: Text; image?: Text; description?: Text }) =>
+const HEADLINE_MAX = 110
+const clip = (t: string) => (Array.from(t).length > HEADLINE_MAX ? `${Array.from(t).slice(0, HEADLINE_MAX - 1).join('')}…` : t)
+
+export const articleJsonLd = (o: {
+  site: string
+  headline: string
+  url: string
+  author?: Text
+  authorUrl?: Text
+  datePublished?: Text
+  dateModified?: Text
+  image?: Text
+  description?: Text
+}) =>
   node({
     '@type': 'Article',
-    headline: o.headline,
+    headline: clip(o.headline),
     url: o.url,
     description: o.description,
     image: o.image,
-    author: { '@type': 'Person', name: o.author },
+    author: { '@type': 'Person', name: o.author, url: o.author?.trim() ? o.authorUrl : undefined },
     datePublished: o.datePublished,
     dateModified: o.dateModified,
     publisher: { '@id': businessId(o.site) },
+  })
+
+/** The page's own type (contact, about, listings); the business is the main entity of contact and about. */
+export const pageJsonLd = (type: 'ContactPage' | 'AboutPage' | 'CollectionPage', o: { site: string; name: string; path: string; description?: Text; locale: string }) =>
+  node({
+    '@type': type,
+    name: o.name,
+    url: `${o.site.replace(/\/$/, '')}${o.path}`,
+    description: o.description,
+    inLanguage: o.locale,
+    isPartOf: { '@id': websiteId(o.site) },
+    mainEntity: type === 'CollectionPage' ? undefined : { '@id': businessId(o.site) },
   })
 
 export function itemListJsonLd(items: { name: string; url?: Text }[]) {

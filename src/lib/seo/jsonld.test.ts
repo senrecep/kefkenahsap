@@ -8,6 +8,7 @@ import {
   faqJsonLd,
   imageObjectJsonLd,
   itemListJsonLd,
+  pageJsonLd,
   safeJsonLd,
   serviceJsonLd,
   webApplicationJsonLd, websiteJsonLd,
@@ -177,6 +178,7 @@ describe('creativeWorkJsonLd (project)', () => {
         year: 2021,
         place: ['Sarıyer', 'İstanbul'],
         materials: ['Iroko'],
+        about: ['Deck', 'Pergola'],
         images: [{ url: 'https://cdn/1.webp', caption: 'Teras' }],
       }),
     ).toEqual({
@@ -186,10 +188,11 @@ describe('creativeWorkJsonLd (project)', () => {
       url: `${SITE}/tr/projeler/kosk`,
       description: 'Iroko teras.',
       dateCreated: '2021',
+      about: [{ '@type': 'Thing', name: 'Deck' }, { '@type': 'Thing', name: 'Pergola' }],
       contentLocation: { '@type': 'Place', name: 'Sarıyer, İstanbul' },
       material: ['Iroko'],
       creator: { '@id': BIZ },
-      image: [{ '@type': 'ImageObject', contentUrl: 'https://cdn/1.webp', caption: 'Teras' }],
+      image: [{ '@type': 'ImageObject', url: 'https://cdn/1.webp', contentUrl: 'https://cdn/1.webp', caption: 'Teras' }],
     })
   })
   it('skips missing year, place, materials and photos', () => {
@@ -224,19 +227,62 @@ describe('imageObjectJsonLd (photo page)', () => {
 })
 
 describe('articleJsonLd (guide)', () => {
-  it('headline, author, dates, publisher', () => {
+  it('headline, author with profile URL, dates, image, publisher reference', () => {
     expect(
-      articleJsonLd({ site: SITE, headline: 'Deck bakımı', url: `${SITE}/tr/rehber/deck-bakimi`, author: 'Murat Şen', datePublished: '2026-10-01', dateModified: '2026-10-10' }),
+      articleJsonLd({
+        site: SITE,
+        headline: 'Deck bakımı',
+        url: `${SITE}/tr/rehber/deck-bakimi`,
+        author: 'Murat Şen',
+        authorUrl: `${SITE}/tr/hakkimizda`,
+        datePublished: '2026-10-01',
+        dateModified: '2026-10-10',
+        image: 'https://cdn/cover-1280.webp',
+      }),
     ).toEqual({
       '@context': 'https://schema.org',
       '@type': 'Article',
       headline: 'Deck bakımı',
       url: `${SITE}/tr/rehber/deck-bakimi`,
-      author: { '@type': 'Person', name: 'Murat Şen' },
+      image: 'https://cdn/cover-1280.webp',
+      author: { '@type': 'Person', name: 'Murat Şen', url: `${SITE}/tr/hakkimizda` },
       datePublished: '2026-10-01',
       dateModified: '2026-10-10',
       publisher: { '@id': BIZ },
     })
+  })
+  it('headline is cut to 110 characters (counted in code points), and left alone at 110', () => {
+    const at110 = 'a'.repeat(110)
+    expect(articleJsonLd({ site: SITE, headline: at110, url: 'u' }).headline).toBe(at110)
+    const cut = articleJsonLd({ site: SITE, headline: 'b'.repeat(111), url: 'u' }).headline as string
+    expect(cut).toBe(`${'b'.repeat(109)}…`)
+    expect(cut).toHaveLength(110)
+    expect(Array.from(articleJsonLd({ site: SITE, headline: '😀'.repeat(111), url: 'u' }).headline as string)).toHaveLength(110)
+  })
+})
+
+describe('pageJsonLd (ContactPage, AboutPage, CollectionPage)', () => {
+  const o = { site: SITE, name: 'İletişim', path: '/tr/iletisim', description: 'Bize yazın.', locale: 'tr' }
+  it('contact page: part of the site, the business is its main entity', () => {
+    expect(pageJsonLd('ContactPage', o)).toEqual({
+      '@context': 'https://schema.org',
+      '@type': 'ContactPage',
+      name: 'İletişim',
+      url: `${SITE}/tr/iletisim`,
+      description: 'Bize yazın.',
+      inLanguage: 'tr',
+      isPartOf: { '@id': `${SITE}/#website` },
+      mainEntity: { '@id': BIZ },
+    })
+  })
+  it('about page has the business as main entity too', () => {
+    expect(pageJsonLd('AboutPage', o).mainEntity).toEqual({ '@id': BIZ })
+  })
+  it('collection page names no main entity and skips an empty description', () => {
+    const c = pageJsonLd('CollectionPage', { ...o, description: ' ' })
+    expect(c['@type']).toBe('CollectionPage')
+    expect(c).not.toHaveProperty('mainEntity')
+    expect(c).not.toHaveProperty('description')
   })
 })
 

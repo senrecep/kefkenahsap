@@ -5,6 +5,7 @@ import { getFormatter, getTranslations, setRequestLocale } from 'next-intl/serve
 import { ContentPage } from '@/components/content/ContentPage'
 import { CookiesDraft } from '@/content/legal/cookies'
 import { legalUses } from '@/content/legal/kvkk'
+import { getPathname } from '@/i18n/navigation'
 import type { Locale } from '@/i18n/routing'
 import { CMS_PAGES, getPage, getPageTitles } from '@/lib/data/pages'
 import { KVKK_TEXT_DATE } from '@/lib/leads/validate'
@@ -33,13 +34,13 @@ export default async function Page({ params }: Props) {
   const [t, format, page, settings] = await Promise.all([getTranslations('Legal'), getFormatter(), getPage(locale, SLUGS), getSiteSettings(locale)])
   if (page?.body)
     return (
-      <ContentPage title={page.title} note={t('updated', { date: format.dateTime(new Date(page.updatedAt), { dateStyle: 'long' }) })}>
+      <ContentPage locale={locale} path={getPathname({ locale, href: '/cerez-politikasi' })} title={page.title} note={t('updated', { date: format.dateTime(new Date(page.updatedAt), { dateStyle: 'long' }) })}>
         <RichText data={page.body} />
       </ContentPage>
     )
   // In-repo template: dated by KVKK_TEXT_DATE, the same version the contact form's consent stores.
   return (
-    <ContentPage title={t('cookiesTitle')} note={t('updated', { date: format.dateTime(new Date(KVKK_TEXT_DATE), { dateStyle: 'long' }) })}>
+    <ContentPage locale={locale} path={getPathname({ locale, href: '/cerez-politikasi' })} title={t('cookiesTitle')} note={t('updated', { date: format.dateTime(new Date(KVKK_TEXT_DATE), { dateStyle: 'long' }) })}>
       <CookiesDraft
         locale={locale}
         name={settings.companyName}
