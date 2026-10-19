@@ -3,7 +3,7 @@ import { getPayload } from 'payload'
 import sharp from 'sharp'
 
 import config from '../../src/payload.config.js'
-import { adminApi, ensureHeroSlides } from '../helpers/content'
+import { adminApi, ensureHomepageRows } from '../helpers/content'
 import { login } from '../helpers/login'
 
 // #157: every control a finger can hit on the editor's screens is at least 48×48 CSS px, for admins and editors,
@@ -71,7 +71,7 @@ test.describe('admin tap targets', () => {
   // The homepage screen needs layout rows; an empty DB (CI, sharded) has none, so make sure they exist.
   let restoreHomepage = async () => {}
   test.beforeAll(async () => {
-    restoreHomepage = await ensureHeroSlides(await adminApi())
+    restoreHomepage = await ensureHomepageRows(await adminApi())
     const payload = await getPayload({ config })
     for (const u of users) await payload.create({ collection: 'users', data: u })
     categoryId = (await payload.create({ collection: 'categories', locale: 'tr', data: { name: category } })).id
