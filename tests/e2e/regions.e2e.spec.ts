@@ -1,6 +1,7 @@
 import { type APIRequestContext, expect, test } from '@playwright/test'
 
 import { adminApi, createDoc, deleteDocs, uploadPhoto } from '../helpers/content'
+import { sitemapText } from '../helpers/sitemap'
 
 // #59 region pages + publish gate (decision #25). Self-contained: two regions with the same hand-written-length body,
 // one with 3 published projects (passes: indexed, in the sitemap and footer) and one with 2 (fails: noindex, unlisted).
@@ -96,7 +97,7 @@ test.describe('region pages and publish gate', () => {
     await expect(page.locator('footer').getByRole('link', { name: pass.name })).toHaveAttribute('href', path)
 
     // revalidateTag(…, 'max') is stale-while-revalidate: the sitemap may need one more request to catch up.
-    await expect.poll(async () => (await request.get('/sitemap.xml')).text(), { timeout: 20_000 }).toContain(`/tr/bolgeler/${pass.slug}</loc>`)
+    await expect.poll(async () => sitemapText(request), { timeout: 20_000 }).toContain(`/tr/bolgeler/${pass.slug}</loc>`)
   })
 
   test('English page of the passing region: 2 English projects → noindex, and TR lists no English hreflang', async ({ request }) => {
@@ -108,7 +109,7 @@ test.describe('region pages and publish gate', () => {
     expect(jsonLd(html).filter((n) => n['@type'] === 'BreadcrumbList')).toEqual([])
     const tr = await (await request.get(`/tr/bolgeler/${pass.slug}`)).text()
     expect(tr).not.toMatch(/<link rel="alternate" hrefLang="en"/)
-    expect(await (await request.get('/sitemap.xml')).text()).not.toContain(passEn.slug)
+    expect(await sitemapText(request)).not.toContain(passEn.slug)
   })
 
   test('failing region (2 published projects + 1 draft): noindex, no canonical, not in the sitemap or footer', async ({ page, request }) => {
@@ -127,7 +128,7 @@ test.describe('region pages and publish gate', () => {
     await expect(page.getByRole('navigation', { name: 'Konum' }).locator('li')).toHaveText(['Ana sayfa', fail.name])
     await expect(page.locator('footer').getByRole('link', { name: fail.name })).toHaveCount(0)
 
-    const xml = await (await request.get('/sitemap.xml')).text()
+    const xml = await sitemapText(request)
     expect(xml).not.toContain(fail.slug)
   })
 

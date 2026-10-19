@@ -32,7 +32,9 @@ export function smokeChecks(opts: { site: string; mediaBase: string; production:
     opts.production
       ? { path: '/robots.txt', status: 200, bodyIncludes: [`Sitemap: ${site}/sitemap.xml`], bodyExcludes: [/^Disallow: \/\s*$/m] }
       : { path: '/robots.txt', status: 200, bodyMatches: [/^Disallow: \/\s*$/m], bodyExcludes: [/^Sitemap:/im] },
-    { path: '/sitemap.xml', status: 200, bodyIncludes: ['<urlset', `<loc>${site}/tr</loc>`] },
+    // An index of per-locale child sitemaps; the Turkish pages one lists the home page.
+    { path: '/sitemap.xml', status: 200, bodyIncludes: ['<sitemapindex', `<loc>${site}/sitemaps/tr-pages.xml</loc>`] },
+    { path: '/sitemaps/tr-pages.xml', status: 200, bodyIncludes: ['<urlset', `<loc>${site}/tr</loc>`] },
     // Old WordPress URLs: one 301 each (pages, the WP home page, a size variant, an attachment page).
     { path: '/deck-ve-zeminler/', status: 301, location: '/tr/deck-ve-zeminler' },
     { path: '/ireko-teak/', status: 301, location: '/tr/ireko-teak' },

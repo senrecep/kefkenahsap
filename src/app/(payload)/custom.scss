@@ -189,6 +189,27 @@ a.pill {
   block-size: 48px;
 }
 
+/* #241: a picked photo's row (upload fields, e.g. the hero slides) on a phone: the 22px edit and remove icons sat 0px apart,
+   so their 48px tap areas covered each other, and the file name link ran on under them (clipped only by its <p>).
+   Each button becomes its own 48px box, and the link a 48px-high block that ends where its column does. */
+@media (max-width: 768px) {
+  .upload-relationship-details__details {
+    margin-inline-end: 0;
+  }
+
+  .upload-relationship-details__filename a {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 48px;
+  }
+
+  .upload-relationship-details__actions .btn {
+    min-inline-size: 48px;
+    min-block-size: 48px;
+  }
+}
+
 .copy-to-clipboard,
 .relationship--single-value__drawer-toggler {
   @include hit-area;

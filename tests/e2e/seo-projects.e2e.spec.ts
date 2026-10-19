@@ -78,6 +78,13 @@ test.describe('project SEO', () => {
     expect(work!.material).toEqual([`E2E Teak ${stamp}`])
     expect(visible).toContain(`E2E Teak ${stamp}`)
     expect((work!.image as unknown[]).length).toBe(2)
+    for (const i of work!.image as { url: string; contentUrl: string }[]) expect(i.url).toBe(i.contentUrl)
+    // The category chips are shown on the page; no date is shown, so none is claimed.
+    expect(work!.about).toEqual([{ '@type': 'Thing', name: `E2E SEO Kategori ${stamp}` }])
+    expect(visible).toContain(`E2E SEO Kategori ${stamp}`)
+    expect(work).not.toHaveProperty('dateModified')
+    const crumbs = jsonLd(html).find((n) => n['@type'] === 'BreadcrumbList')
+    expect((crumbs!.itemListElement as { name: string; item: string }[]).at(-1)).toMatchObject({ name: title, item: work!.url })
     expect(new URL(work!.url as string).pathname).toBe(path)
   })
 

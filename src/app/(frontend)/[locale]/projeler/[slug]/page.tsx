@@ -4,6 +4,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 import { Maybe } from 'tsentials/maybe'
 
+import { Breadcrumb } from '@/components/site/Breadcrumb'
 import { ProjectCard } from '@/components/projects/ProjectCard'
 import { CtaBand } from '@/components/site/CtaBand'
 import { JsonLd } from '@/components/seo/JsonLd'
@@ -49,7 +50,7 @@ export default async function ProjectPage({ params }: { params: Params }) {
   const data = await getProject(locale, slug)
   if (!data) notFound()
   const { project, gallery, cover } = data
-  const [t, tCta, cards] = await Promise.all([getTranslations('Project'), getTranslations('Cta'), getProjectCards(locale)])
+  const [t, tCta, tList, cards] = await Promise.all([getTranslations('Project'), getTranslations('Cta'), getTranslations('Projects'), getProjectCards(locale)])
 
   const facts = projectFacts(project as Parameters<typeof projectFacts>[0], locale, { m2: t('units.m2'), m: t('units.m'), piece: t('units.piece') })
   const chips = categoryChips(project.categories)
@@ -67,6 +68,7 @@ export default async function ProjectPage({ params }: { params: Params }) {
     name: project.title,
     url: wa.vars.url,
     year: project.year,
+    about: chips.map((c) => c.name),
     place: [project.district, project.city],
     materials: Array.isArray(wood) ? wood : [],
     images: [hero, ...photos].filter((m) => m !== undefined).map((m) => ({ url: responsiveImage(m).src })),
@@ -76,6 +78,14 @@ export default async function ProjectPage({ params }: { params: Params }) {
     <>
       <JsonLd data={work} />
       <Container as="header" className="pt-10 pb-8 md:pt-16 md:pb-10">
+        <Breadcrumb
+          locale={locale}
+          className="mb-6"
+          items={[
+            { name: tList('title'), path: getPathname({ locale, href: '/projeler' }) },
+            { name: project.title, path: projectPath(locale, slug) },
+          ]}
+        />
         <h1 className="max-w-[24ch] text-[2.1rem] leading-[1.08] md:text-[3.2rem]">{project.title}</h1>
         {chips.length > 0 && (
           <ul aria-label={t('categories')} className="mt-5 flex flex-wrap gap-2">

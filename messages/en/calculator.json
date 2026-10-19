@@ -96,7 +96,7 @@
       "linkInvalid": "The shared calculation could not be read; you are starting with an empty form.",
       "storageOff": "This browser does not allow saving on the device.",
       "suspiciousLength": "Length is under 30 cm. Did you enter it in metres?",
-      "placeholder": "e.g. {value}",
+      "placeholder": "{value}",
       "totalLive": "Total {total}",
       "prepared": "Prepared with the Kefken Ahşap material and quote calculator",
       "timeZone": "Türkiye time",

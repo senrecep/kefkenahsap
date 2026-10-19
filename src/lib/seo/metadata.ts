@@ -32,6 +32,9 @@ export const fullTitle = (title: Title, siteName: string) => (typeof title === '
 
 const TITLE_MAX = 60
 
+// Google Discover / rich results need large image previews and unlimited snippets on indexable pages.
+const PREVIEW = { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1, 'max-video-preview': -1 } as const
+
 export function buildMetadata(args: {
   locale: string
   title: Title
@@ -52,12 +55,12 @@ export function buildMetadata(args: {
   const title = typeof args.title === 'string' ? args.title : args.title.absolute
   const text = { title, ...(args.description?.trim() ? { description: args.description.trim() } : {}) }
   const images = args.ownOgImage ? {} : { images: [args.ogImage] }
-  const robots = args.noindex ? { index: false, follow: true } : seo.robots
+  const robots = args.noindex ? { index: false, follow: true } : (seo.robots ?? PREVIEW)
   return {
     title: args.title,
     ...(text.description ? { description: text.description } : {}),
     alternates: seo.alternates,
-    ...(robots ? { robots } : {}),
+    robots,
     openGraph: { type: 'website', siteName: args.siteName, ...text, ...seo.openGraph, ...images },
     twitter: { card: 'summary_large_image', ...text, ...images },
   }

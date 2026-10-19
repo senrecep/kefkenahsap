@@ -52,7 +52,7 @@ describe.each(locales)('%s overlays', (locale) => {
   it.each(['media-meta', 'media-meta-archive'])('%s: one valid file per photo', (dir) => {
     expect(files(`i18n/${locale}/${dir}`)).toEqual(files(dir))
     for (const f of files(dir)) read(locale, `${dir}/${f}`, parseMediaMetaOverlay)
-  })
+  }, 30_000) // thousands of files: blows the 5 s default on a loaded CI runner
 })
 
 // #156: an ar title alone transliterates crudely (ardyat-khshbya), so every ar project carries a hand-written Latin slug.

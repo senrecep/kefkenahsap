@@ -3,17 +3,21 @@ import type { Metadata } from 'next'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
 import { Maybe } from 'tsentials/maybe'
 
+import { JsonLd } from '@/components/seo/JsonLd'
+import { Breadcrumb } from '@/components/site/Breadcrumb'
 import { proseClass } from '@/components/content/ContentPage'
 import { Container } from '@/components/ui/Container'
 import { Picture } from '@/components/ui/Picture'
 import { buttonClass } from '@/components/ui/button'
 import { WhatsAppButton } from '@/components/ui/WhatsAppButton'
-import { Link } from '@/i18n/navigation'
+import { getPathname, Link } from '@/i18n/navigation'
 import type { Locale } from '@/i18n/routing'
 import { sinceYear } from '@/lib/company'
 import { getWorkPhotos } from '@/lib/data/gallery'
 import { CMS_PAGES, getPage, getPageTitles } from '@/lib/data/pages'
 import { getSiteSettings } from '@/lib/data/site'
+import { siteUrl } from '@/lib/seo/alternates'
+import { pageJsonLd } from '@/lib/seo/jsonld'
 import { cmsPagePaths, pageMetadata } from '@/lib/seo/page-metadata'
 
 const SLUGS = CMS_PAGES['/hakkimizda']
@@ -48,11 +52,16 @@ export default async function AboutPage({ params }: Props) {
     (a?.district || a?.city) && { k: t('workshop'), v: [a?.district, a?.city].filter(Boolean).join(', ') },
   ].filter((f): f is { k: string; v: string } => Boolean(f))
 
+  const title = page?.title ?? t('title')
+  const path = getPathname({ locale, href: '/hakkimizda' })
+
   return (
     <Container className="pt-10 pb-6 md:pt-14">
+      <JsonLd data={pageJsonLd('AboutPage', { site: siteUrl().replace(/\/$/, ''), name: title, path, locale })} />
+      <Breadcrumb locale={locale} className="mb-6" items={[{ name: title, path }]} />
       <div className={`grid gap-12 ${photos.length ? 'lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-16' : ''}`}>
         <div>
-          <h1 className="font-[family-name:var(--font-display)] text-[clamp(2rem,4vw,3rem)] font-semibold tracking-tight text-balance">{page?.title ?? t('title')}</h1>
+          <h1 className="font-[family-name:var(--font-display)] text-[clamp(2rem,4vw,3rem)] font-semibold tracking-tight text-balance">{title}</h1>
           <div className={`mt-6 ${proseClass}`}>
             {page?.body ? <RichText data={page.body} /> : <p className="text-xl">{t('lead', { company: settings.companyName })}</p>}
           </div>

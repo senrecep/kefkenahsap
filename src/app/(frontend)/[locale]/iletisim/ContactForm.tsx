@@ -46,6 +46,8 @@ async function prepare(file: File): Promise<File> {
 
 const field =
   'block w-full rounded-[var(--radius-control)] border border-ink/25 bg-white px-3.5 py-3 text-base text-ink placeholder:text-ink-soft/80 focus:border-action aria-[invalid=true]:border-error'
+const selectField =
+  'block w-full rounded-[var(--radius-control)] border border-ink/25 bg-white text-base text-ink focus:border-action aria-[invalid=true]:border-error'
 const labelCls = 'mb-1.5 block font-[family-name:var(--font-display)] text-sm font-semibold text-ink'
 
 /** Form copy translated on the server, so the page ships no i18n runtime (JS budget, #52). */
@@ -229,7 +231,7 @@ export function ContactForm({
       </div>
       <div>
         {label('service', t('service'))}
-        <select id="service" name="service" defaultValue="" className={field}>
+        <select id="service" name="service" defaultValue="" className={selectField}>
           <option value="">{t('servicePlaceholder')}</option>
           {services.map((s) => (
             <option key={s} value={s}>{s}</option>

@@ -2,6 +2,7 @@ import { expect, test, type APIRequestContext } from '@playwright/test'
 
 import { localeDir, routing } from '../../src/i18n/routing'
 import { adminApi, createDoc, deleteDocs } from '../helpers/content'
+import { sitemapText } from '../helpers/sitemap'
 
 // #64/#63: every locale in routing.locales is routed and rendered; a locale with no content of its own (no live
 // category) is noindex on every fixed route and stays out of hreflang and the sitemap (PLAN §5.1 dil-yayında).
@@ -42,7 +43,7 @@ test.describe('new locales without content', () => {
     for (const l of NEW) await expect.poll(async () => (await page(request, `/${l}`)).robots, { timeout: 30_000 }).toContain('noindex')
     await expect.poll(async () => (await page(request, '/tr')).hreflang.some((h) => NEW.includes(h as never)), { timeout: 30_000 }).toBe(false)
     const leaked = fixedLoc(NEW)
-    await expect.poll(async () => leaked.test(await (await request.get('/sitemap.xml')).text()), { timeout: 30_000 }).toBe(false)
+    await expect.poll(async () => leaked.test(await sitemapText(request)), { timeout: 30_000 }).toBe(false)
   })
 
   for (const l of NEW) {
@@ -66,7 +67,7 @@ test.describe('new locales without content', () => {
       expect(m.robots, path).not.toContain('noindex')
       for (const l of NEW) expect(m.hreflang, path).not.toContain(l)
     }
-    const xml = await (await request.get('/sitemap.xml')).text()
+    const xml = await sitemapText(request)
     for (const l of NEW) expect(xml, l).not.toMatch(fixedLoc([l]))
     const llms = await (await request.get('/llms.txt')).text()
     for (const l of NEW) expect(llms, l).not.toContain(`Services (${l})`)
@@ -106,15 +107,15 @@ test.describe('a locale goes live with its content (data-driven)', () => {
   test.afterAll(async ({ request }) => {
     await deleteDocs(api, 'categories', ids)
     await expect.poll(async () => (await page(request, '/tr')).hreflang, { timeout: 30_000 }).not.toContain(l)
-    await expect.poll(async () => (await request.get('/sitemap.xml')).text(), { timeout: 30_000 }).not.toMatch(fixedLoc([l]))
+    await expect.poll(async () => sitemapText(request), { timeout: 30_000 }).not.toMatch(fixedLoc([l]))
   })
 
   test(`one live ${l} category makes the ${l} fixed routes indexable, in hreflang and in the sitemap`, async ({ request, playwright, baseURL }) => {
     // Cache tags are revalidated stale-while-revalidate ('max'), so the first hit may still be the old page.
     await expect.poll(async () => (await page(request, `/${l}`)).robots, { timeout: 20_000 }).not.toContain('noindex')
     await expect.poll(async () => (await page(request, '/tr')).hreflang, { timeout: 20_000 }).toContain(l)
-    await expect.poll(async () => (await request.get('/sitemap.xml')).text(), { timeout: 20_000 }).toMatch(new RegExp(`<loc>[^<]*/${l}</loc>`))
-    expect(await (await request.get('/sitemap.xml')).text()).toContain(`/${l}/e2e-${l}-${stamp}`)
+    await expect.poll(async () => sitemapText(request), { timeout: 20_000 }).toMatch(new RegExp(`<loc>[^<]*/${l}</loc>`))
+    expect(await sitemapText(request)).toContain(`/${l}/e2e-${l}-${stamp}`)
     // …the switcher now links it…
     expect((await page(request, '/tr')).html).toMatch(new RegExp(`<a href="/${l}" hrefLang="${l}"`))
     // …and `/` now sends a browser that prefers it there (a fresh context: no NEXT_LOCALE cookie from the visits above).

@@ -52,11 +52,18 @@ test.describe('guide SEO', () => {
     expect(article!.description).toBe(withAuthor.excerpt)
     expect(visible).toContain(withAuthor.excerpt)
     expect(new URL(article!.url as string).pathname).toBe(path)
-    // dateModified is the visible "updated" <time datetime>.
+    // dateModified is a visible <time datetime> (the published one when updated within a day of it).
     expect(html).toContain(`dateTime="${article!.dateModified as string}"`)
-    expect(article).not.toHaveProperty('datePublished')
+    expect(new Date(article!.datePublished as string).getTime()).toBeLessThanOrEqual(new Date(article!.dateModified as string).getTime())
+    expect((article!.headline as string).length).toBeLessThanOrEqual(110)
+    const biz = nodes.find((n) => n['@type'] === 'HomeAndConstructionBusiness')
+    expect(article!.publisher).toEqual({ '@id': biz!['@id'] })
+    expect(biz!.logo).toBeTruthy()
+    // Both dates in the JSON-LD are visible <time> values.
+    expect(html).toContain(`dateTime="${article!.datePublished as string}"`)
     if (founder) {
-      expect(article!.author).toEqual({ '@type': 'Person', name: founder })
+      expect(article!.author).toMatchObject({ '@type': 'Person', name: founder })
+      expect(new URL((article!.author as { url: string }).url).pathname).toBe('/tr/hakkimizda')
       expect(visible).toContain(founder)
     } else expect(article).not.toHaveProperty('author')
 

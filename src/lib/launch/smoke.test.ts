@@ -12,7 +12,7 @@ const ok = (body = '') => ({ status: 200, location: null, body })
 
 describe('smokeChecks (launch #53)', () => {
   it('covers health, key pages, robots, sitemap', () => {
-    for (const p of ['/api/health', '/tr', '/en', '/tr/deck-ve-zeminler', '/tr/iletisim', '/robots.txt', '/sitemap.xml']) {
+    for (const p of ['/api/health', '/tr', '/en', '/tr/deck-ve-zeminler', '/tr/iletisim', '/robots.txt', '/sitemap.xml', '/sitemaps/tr-pages.xml']) {
       expect(byPath(p)?.status, p).toBe(200)
     }
   })
@@ -78,9 +78,12 @@ describe('evaluate', () => {
     expect(evaluate(devRobots, ok('User-Agent: *\nDisallow: /admin\n'), SITE).length).toBeGreaterThan(0)
   })
 
-  it('sitemap must list the site home page', () => {
-    const sm: Check = byPath('/sitemap.xml')
-    expect(evaluate(sm, ok(`<urlset><url><loc>${SITE}/tr</loc></url></urlset>`), SITE)).toEqual([])
-    expect(evaluate(sm, ok('<urlset></urlset>'), SITE).length).toBeGreaterThan(0)
+  it('the sitemap index must list the Turkish pages sitemap, and that one the site home page', () => {
+    const index: Check = byPath('/sitemap.xml')
+    expect(evaluate(index, ok(`<sitemapindex><sitemap><loc>${SITE}/sitemaps/tr-pages.xml</loc></sitemap></sitemapindex>`), SITE)).toEqual([])
+    expect(evaluate(index, ok(`<urlset><url><loc>${SITE}/tr</loc></url></urlset>`), SITE).length).toBeGreaterThan(0)
+    const pages: Check = byPath('/sitemaps/tr-pages.xml')
+    expect(evaluate(pages, ok(`<urlset><url><loc>${SITE}/tr</loc></url></urlset>`), SITE)).toEqual([])
+    expect(evaluate(pages, ok('<urlset></urlset>'), SITE).length).toBeGreaterThan(0)
   })
 })

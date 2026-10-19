@@ -18,7 +18,8 @@ describe('buildMetadata', () => {
     expect(m.title).toBe('Deck ve Zeminler')
     expect(m.description).toBe('Iroko ve teak deck.')
     expect(m.alternates?.canonical).toBe(`${SITE}/tr/deck-ve-zeminler`)
-    expect(m.robots).toBeUndefined()
+    // Discover / rich results: full-size previews on every indexable page.
+    expect(m.robots).toEqual({ index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1, 'max-video-preview': -1 })
     expect(m.openGraph).toEqual({
       type: 'website',
       siteName: 'Kefken Ahşap Dekorasyon',

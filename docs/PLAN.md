@@ -199,7 +199,7 @@ F2: Rehber dizini + yazı şablonu (TOC, FAQ, "AI'ya kopyala" butonu, yazar kutu
 5. HTTPS, güvenlik başlıkları, ETag/Last-Modified, gerçek 404 (soft-404 yok), tek hop redirect.
 6. Tek kaynak `app/robots.ts`: Googlebot, Bingbot, OAI-SearchBot, ChatGPT-User, GPTBot, Claude-SearchBot, Claude-User, ClaudeBot, PerplexityBot, Perplexity-User, Applebot, DuckAssistBot, Google-Extended, CCBot — **hepsine izin** (karar #31). **Tek `User-agent: *` grubu** (bot bazlı gruplar `*` kurallarını ezer ve `/admin` disallow'u kaybettirir): `/admin`, `/api`, `/*/ara` disallow; bot adları yalnızca dokümantasyonda listelenir.
 7. Cloudflare "Block AI bots" / "AI Labyrinth" kapalı; WAF botları engellemiyor (lansman checklist'i).
-8. `app/sitemap.ts` (+ image sitemap): Payload `updatedAt` ile `lastmod`, dil alternatifleri; sadece indekslenebilir sayfalar.
+8. Sitemap (+ image sitemap): Payload `updatedAt` ile `lastmod`, dil alternatifleri; sadece indekslenebilir sayfalar. `/sitemap.xml` bir dizin: her dil için sayfalar ve galeri fotoğrafları ayrı alt sitemap (`/sitemaps/<dil>-pages.xml`, `/sitemaps/<dil>-photos.xml`), CDN'de önbelleklenebilir (#243).
 9. `llms.txt` + `llms-full.txt` (Key Facts bloğu: NAP, hizmetler, bölgeler, kuruluş yılı — siteSettings'ten üretilir).
 
 **Structured data** (`safeJsonLd` helper, görünür metinle birebir)
