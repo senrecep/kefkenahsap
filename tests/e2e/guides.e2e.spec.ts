@@ -98,7 +98,7 @@ test.describe('guides', () => {
     await page.goto('/tr/rehber')
     await expect(page.getByRole('heading', { level: 1, name: 'Rehber' })).toBeVisible()
     // Index is cached per hour: assert structure, not this run's fixture.
-    const links = page.locator('main ol a')
+    const links = page.locator('main ol:not(nav ol) a')
     for (const href of await links.evaluateAll((as) => as.map((a) => a.getAttribute('href')))) expect(href).toMatch(/^\/tr\/rehber\/[a-z0-9-]+$/)
     if ((await links.count()) === 0) await expect(page.getByText('Henüz yayında bir rehber yok.', { exact: false })).toBeVisible()
     await page.screenshot({ path: 'docs/screens/guides-index-desktop.png', fullPage: true })
