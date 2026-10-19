@@ -86,6 +86,21 @@ export function businessJsonLd(s: BusinessInput, o: { site: string; url: string;
 export const websiteJsonLd = (o: { name: string; site: string; url: string; locale: string }) =>
   node({ '@type': 'WebSite', '@id': `${o.site.replace(/\/$/, '')}/#website`, name: o.name, url: o.url, inLanguage: o.locale, publisher: { '@id': businessId(o.site) } })
 
+/** A free in-browser tool (the material and quote calculator, #233); no rating or price: none is shown on the page. */
+export const webApplicationJsonLd = (o: { site: string; name: string; url: string; description?: Text; locale: string }) =>
+  node({
+    '@type': 'WebApplication',
+    name: o.name,
+    url: o.url,
+    description: o.description,
+    inLanguage: o.locale,
+    applicationCategory: 'UtilitiesApplication',
+    operatingSystem: 'Any',
+    browserRequirements: 'Requires JavaScript',
+    isAccessibleForFree: true,
+    publisher: { '@id': businessId(o.site) },
+  })
+
 export const serviceJsonLd = (o: { site: string; name: string; url: string; description?: Text; image?: Text; areaServed?: string[] }) =>
   node({
     '@type': 'Service',

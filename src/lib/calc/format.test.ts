@@ -3,7 +3,7 @@ import { describe, expect, it } from 'vitest'
 import { formatM3, formatMoney, formatStamp, ISTANBUL } from './format'
 
 // Intl separates currency and number with a no-break space in some locales; compare with plain spaces.
-const plain = (s: string) => s.replace(/[  ]/g, ' ').replace(/[‎‏؜]/g, '')
+const plain = (s: string) => s.replace(/[\u00a0\u202f]/g, ' ').replace(/[\u200e\u200f\u061c]/g, '')
 
 describe('formatM3: three decimals, never a misleading 0 (bug D)', () => {
   it.each([

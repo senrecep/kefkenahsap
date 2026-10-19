@@ -51,7 +51,7 @@ describe('parseMoney: integer kuruş, the locale grouping separator is understoo
     ['en', '20,000.5', 2_000_050],
     ['en', '20.5', 2050],
     ['ru', '20 000', 2_000_000],
-    ['ru', '20 000,5', 2_000_050], // no-break space, as ru formats it
+    ['ru', '20\u00a0000,5', 2_000_050], // no-break space, as ru formats it
     ['ar', '20,000', 2_000_000],
   ])('%s %s', (locale, input, kurus) => {
     expect(parseMoney(input, locale)).toEqual(Result.success(kurus))

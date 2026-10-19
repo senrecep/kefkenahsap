@@ -36,6 +36,8 @@ export async function Header({ locale }: { locale: Locale }) {
     { href: '/galeri', label: t('gallery') } as const,
     { href: '/rehber', label: t('guides') } as const,
     { href: '/referanslar', label: t('references') } as const,
+    // #233: a seventh desktop link fits only from xl (at lg the row overflowed in de/ru); the mobile menu always lists it.
+    { href: '/malzeme-hesaplayici', label: t('calculator'), wide: true } as const,
     { href: '/iletisim', label: t('contact') } as const,
   ]
 
@@ -65,7 +67,7 @@ export async function Header({ locale }: { locale: Locale }) {
             </div>
           </div>
           {links.map((l) => (
-            <Link key={l.href} href={l.href} className={linkCls}>
+            <Link key={l.href} href={l.href} className={'wide' in l ? linkCls.replace('inline-flex', 'hidden xl:inline-flex') : linkCls}>
               {l.label}
             </Link>
           ))}

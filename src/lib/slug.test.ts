@@ -101,4 +101,8 @@ describe('RESERVED_CATEGORY_SLUGS (#172)', () => {
     for (const s of ['ahsap-yapilar', 'wooden-structures', 'derevyannye-konstruktsii', 'holzbauten', 'hayakil-khashabiya']) expect(RESERVED_CATEGORY_SLUGS.has(s), s).toBe(true)
     expect(RESERVED_CATEGORY_SLUGS.has('sundurma-ve-ahsap-cati')).toBe(false)
   })
+
+  it('holds the calculator page in every locale (#233), so no category can shadow it', () => {
+    for (const s of ['malzeme-hesaplayici', 'material-calculator', 'kalkulyator-materialov', 'materialrechner']) expect(RESERVED_CATEGORY_SLUGS.has(s), s).toBe(true)
+  })
 })

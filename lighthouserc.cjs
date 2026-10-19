@@ -5,7 +5,7 @@
 const { existsSync, readFileSync } = require('node:fs')
 
 const TARGETS = `${__dirname}/.quality-targets.json`
-const KEY_TEMPLATES = ['home', 'category', 'gallery', 'project', 'contact', 'guide']
+const KEY_TEMPLATES = ['home', 'category', 'gallery', 'project', 'contact', 'guide', 'calculator']
 const base = process.env.LHCI_BASE_URL ?? 'http://localhost:3210'
 // assert/upload load this config too; only collect needs the paths.
 const targets = existsSync(TARGETS) ? JSON.parse(readFileSync(TARGETS, 'utf8')) : {}

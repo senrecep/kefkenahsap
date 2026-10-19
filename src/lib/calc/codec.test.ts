@@ -64,5 +64,7 @@ describe('quote ↔ share-link codec (versioned, compact)', () => {
     expect(isFilled({ ...emptyQuote(), units: ['mm', 'cm', 'cm'] })).toBe(false)
     expect(isFilled(full)).toBe(true)
     expect(isFilled({ ...emptyQuote(), meta: { customer: 'A', job: '', note: '' } })).toBe(true)
+    // UI rows carry a numeric key next to the typed fields
+    expect(isFilled({ ...emptyQuote(), timber: [{ ...emptyQuote().timber[0]!, id: 1 } as never] })).toBe(false)
   })
 })

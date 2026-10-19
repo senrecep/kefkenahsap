@@ -143,3 +143,12 @@
   @media (48rem <= width < 64rem) { .masonry-hide-3 { display: none; } }
   @media (width >= 64rem) { .masonry-hide-4 { display: none; } }
 }
+
+/* #233 "PDF olarak kaydet": on the calculator page print keeps only the quote sheet (the form itself is print:hidden). */
+@media print {
+  @page { margin: 12mm; }
+  html, body { background: #fff; }
+  body:has([data-calc-print]) > :not(main),
+  body:has([data-calc-print]) main > :not([data-calc-tool]) { display: none !important; }
+  body:has([data-calc-print]) [data-calc-tool] { margin: 0; padding: 0; max-width: none; }
+}

@@ -13,7 +13,7 @@ import { sitemapEntries } from '@/lib/seo/sitemap'
 export const dynamic = 'force-dynamic'
 
 // Fixed, indexable routes (search is noindex and robots-disallowed, so it is not listed).
-const STATIC = ['/', '/hizmetlerimiz', '/galeri', '/projeler', '/referanslar', '/hakkimizda', '/iletisim', '/kvkk', '/cerez-politikasi', '/rehber'] as const
+const STATIC = ['/', '/hizmetlerimiz', '/galeri', '/projeler', '/referanslar', '/hakkimizda', '/iletisim', '/kvkk', '/cerez-politikasi', '/rehber', '/malzeme-hesaplayici'] as const
 
 // The guide index is noindex in a locale with no published guide yet (thin page), so it is listed only where it has some.
 const guideIndexPaths = async () => {

@@ -15,7 +15,7 @@ export function normalizeDigits(input: string): string {
     .replace(/[۰-۹]/g, (c) => String(c.charCodeAt(0) - 0x06f0))
     .replace(/٫/g, '.')
     .replace(/٬/g, ',')
-    .replace(/[\s  ]+/g, ' ')
+    .replace(/[\s\u00a0\u202f]+/g, ' ')
 }
 
 const toDec = (sign: string, int: string, frac: string): Dec => ({ n: BigInt(`${sign}${int || '0'}${frac}`), s: frac.length })

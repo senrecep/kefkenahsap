@@ -91,4 +91,4 @@ export function decodeQuote(link: string): Result<QuoteInput> {
 
 /** Whether anything has been typed: only then does the page put the calculation into its address. */
 export const isFilled = (q: QuoteInput) =>
-  [...q.timber.flatMap((r) => Object.values(r)), q.waste, ...q.extras.flatMap((r) => [r.d, r.q, r.p]), ...Object.values(q.meta)].some((s) => s.trim() !== '')
+  [...q.timber.flatMap((r) => [r.t, r.w, r.l, r.q, r.p]), q.waste, ...q.extras.flatMap((r) => [r.d, r.q, r.p]), q.meta.customer, q.meta.job, q.meta.note].some((s) => s.trim() !== '')

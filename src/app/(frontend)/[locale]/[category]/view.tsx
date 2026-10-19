@@ -14,7 +14,7 @@ import { Picture } from '@/components/ui/Picture'
 import { WhatsAppButton } from '@/components/ui/WhatsAppButton'
 import { buttonClass } from '@/components/ui/button'
 import { getPathname, Link } from '@/i18n/navigation'
-import type { Locale } from '@/i18n/routing'
+import { routing, type Locale } from '@/i18n/routing'
 import { galleryLimit, hasRichText, pageFromQuery, priceGuide } from '@/lib/category/category'
 import { renameRedirect } from '@/lib/category/rename'
 import { areaLine } from '@/lib/company'
@@ -32,6 +32,10 @@ import { pageMetadata } from '@/lib/seo/page-metadata'
 type Params = Promise<{ locale: Locale; category: string }>
 type Query = { sayfa?: string | string[] } & Record<string, string | string[] | undefined>
 type Search = Promise<Query>
+
+// #233: categories whose jobs are built from sawn timber link to the material calculator (default-locale slugs, so the
+// choice holds in every page language).
+const CALCULATOR_CATEGORIES = new Set(['deck-ve-zeminler', 'pergola-ve-kamelyalar', 'korkuluk-ve-cit', 'merdivenler', 'sundurma-ve-ahsap-cati', 'ahsap-ev-ve-bungalov', 'kopru-ve-iskele'])
 
 const categoryPath = (locale: Locale, slug: string) => getPathname({ locale, href: { pathname: '/[category]', params: { category: slug } } })
 
@@ -81,10 +85,11 @@ export async function CategoryPage({ params, searchParams }: { params: Params; s
   const photos = rest.slice(0, limit)
   const hasMore = data.hasMore || rest.length > limit
 
-  const [t, tCta, tNav, format, settings, projects, guides] = await Promise.all([
+  const [t, tCta, tNav, tCalc, format, settings, projects, guides] = await Promise.all([
     getTranslations('Category'),
     getTranslations('Cta'),
     getTranslations('Nav'),
+    getTranslations('Calculator'),
     getFormatter(),
     getSiteSettings(locale),
     getProjectCards(locale).then((cards) => cards.filter((c) => c.categories.some((x) => x.id === category.id)).slice(0, 6)),
@@ -128,6 +133,15 @@ export async function CategoryPage({ params, searchParams }: { params: Params; s
             {tCta('quote')}
           </Link>
         </div>
+        {CALCULATOR_CATEGORIES.has(data.locales[routing.defaultLocale]?.slug ?? '') && (
+          <p className="mt-5 text-ink-soft">
+            <Link href="/malzeme-hesaplayici" className="inline-flex min-h-11 items-center gap-1.5 font-[family-name:var(--font-display)] font-semibold text-action hover:text-action-deep hover:underline">
+              {tCalc('categoryLink')}
+              <ArrowRight aria-hidden size={18} strokeWidth={1.75} className="rtl:rotate-180" />
+            </Link>
+            <span className="ms-2">{tCalc('categoryLinkText')}</span>
+          </p>
+        )}
       </Container>
 
       {hero && (
