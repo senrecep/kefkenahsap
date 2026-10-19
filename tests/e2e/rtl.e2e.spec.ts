@@ -2,6 +2,7 @@ import { expect, test, type APIRequestContext, type Page } from '@playwright/tes
 
 import { localeDir, routing } from '../../src/i18n/routing'
 import { adminApi, createDoc, deleteDocs, uploadPhoto } from '../helpers/content'
+import { sitemapText } from '../helpers/sitemap'
 
 // #63: every RTL locale renders right-to-left (dir on <html>), with its own font, mirrored lightbox keys, and
 // phone numbers kept left-to-right. A stamped category translated into the locale gives the category page content.
@@ -32,7 +33,7 @@ for (const l of RTL) {
     test.afterAll(async ({ request }) => {
       await deleteDocs(api, 'media', ids.media)
       await deleteDocs(api, 'categories', ids.categories)
-      await expect.poll(async () => (await request.get('/sitemap.xml')).text(), { timeout: 30_000 }).not.toContain(`/${l}/`)
+      await expect.poll(async () => sitemapText(request), { timeout: 30_000 }).not.toContain(`/${l}/`)
       const tr = async () => (await (await request.get('/tr')).text()).includes(`<link rel="alternate" hrefLang="${l}"`)
       await expect.poll(tr, { timeout: 30_000 }).toBe(false)
     })
