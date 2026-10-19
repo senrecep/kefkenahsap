@@ -42,7 +42,9 @@ test.describe('upload field actions on a phone', () => {
     const res = await api.post('/api/globals/homepage?locale=tr&draft=true', { data: { layout: next, _status: 'draft' } })
     expect(res.ok(), await res.text()).toBe(true)
     restore = async () => {
-      await api.post('/api/globals/homepage?locale=tr', { data: { layout, _status: current._status ?? 'published' } })
+      // A failed restore would leave the latest draft pointing at the photos deleted next.
+      const back = await api.post('/api/globals/homepage?locale=tr', { data: { layout, _status: current._status ?? 'published' } })
+      expect(back.ok(), await back.text()).toBe(true)
     }
   })
 
