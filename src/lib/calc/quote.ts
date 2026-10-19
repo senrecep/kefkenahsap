@@ -72,7 +72,7 @@ const blank = (...xs: string[]) => xs.every((x) => !x.trim())
 
 /** A decimal field: parsed, > 0 and ≤ max (max given as n / 10^s units of the same scale). */
 function positive(raw: string, ctx: Ctx, field: string, errors: AppError[], max?: Dec): Dec | null {
-  const r = parseDecimal(raw, ctx.locale)
+  const r = parseDecimal(raw, ctx.locale, { count: field === 'q' })
   if (!r.ok) return errors.push(fail(ctx, field, r.errors[0]!)), null
   const d = r.value
   if (d.n <= 0n) return errors.push(v(ctx, field, 'Calc.NotPositive')), null

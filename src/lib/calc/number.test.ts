@@ -119,3 +119,24 @@ describe('canonical storage ↔ the page language (links, saved quotes, remember
     expect(forLocale('abc', 'tr')).toBe('abc')
   })
 })
+
+describe('counts (pieces, quantities): the decimal mark before exactly "000" is ambiguous (#236 re-review)', () => {
+  it.each([
+    ['tr', '1,000'],
+    ['de', '1,000'],
+    ['ru', '1,000'],
+    ['en', '1.000'],
+    ['ar', '1.000'],
+  ])('%s %j is not silently 1', (locale, input) => {
+    expect(code(parseDecimal(input, locale, { count: true }))).toBe('Calc.Ambiguous')
+    expect(parseDecimal(input, locale)).toEqual(dec(1000, 3)) // a dimension: 1,000 cm is just 1 cm
+  })
+  it.each([
+    ['tr', '1.000', dec(1000, 0)],
+    ['tr', '2,5', dec(25, 1)],
+    ['tr', '0,000', dec(0, 3)],
+    ['en', '1,000', dec(1000, 0)],
+  ])('%s %j still reads', (locale, input, expected) => {
+    expect(parseDecimal(input, locale, { count: true })).toEqual(expected)
+  })
+})

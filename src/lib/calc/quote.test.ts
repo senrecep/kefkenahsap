@@ -119,6 +119,10 @@ describe('#236 review: ambiguous and oversized input', () => {
     expect([t.subtotalKurus, t.vatKurus, t.grandKurus]).toEqual([40_000_000, 8_000_000, 48_000_000])
   })
 
+  it('a count "1,000" on tr (decimal mark + three zeros) is ambiguous, not 1 piece (#236 re-review)', () => {
+    expect(codes(quote({ timber: [row('5', '10', '400', '1,000', '20000')], extras: [extra('Vida', '1,000', 'kg', '5')] }))).toEqual(['timber0.q:Calc.Ambiguous', 'extras0.q:Calc.Ambiguous'])
+  })
+
   it('the same text reads by the page language: en "20,000" is 20 000 ₺; en order on tr is ambiguous', () => {
     const en = computeQuote(quote({ timber: [row('5', '10', '400', '10', '20,000')] }), 'en').totals
     expect(en.timberKurus).toBe(400_000)

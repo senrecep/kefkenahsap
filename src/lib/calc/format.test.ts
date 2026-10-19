@@ -55,6 +55,8 @@ describe('echoValue: the value as read, shown under a field so a misread is visi
     expect(echoValue('', 'number', 'tr')).toBeNull()
     expect(echoValue('abc', 'number', 'tr')).toBeNull()
     expect(echoValue('400', 'number', 'tr')).toBeNull()
+    expect(echoValue('1,000', 'count', 'tr')).toBeNull() // an ambiguous count is not echoed as 1
+    expect(echoValue('0,505', 'money', 'tr')).toBeNull() // the price field rejects three decimals: no echo of ₺0,51 (#236 re-review)
     expect(echoValue('2,5', 'number', 'tr')).toBeNull()
   })
 })

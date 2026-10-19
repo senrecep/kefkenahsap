@@ -418,7 +418,7 @@ export function Calculator({ locale, ui, logoSrc }: CalculatorProps) {
                     numeric={opts.numeric}
                     placeholder={fill(ui.placeholder, { value: opts.example })}
                     error={errorFor(k) && ui.errors[errorFor(k) as keyof CalcUi['errors']]}
-                    echo={echoValue(r[f], f === 'p' ? 'money' : 'number', locale)}
+                    echo={echoValue(r[f], f === 'p' ? 'money' : f === 'q' ? 'count' : 'number', locale)}
                     className={opts.className}
                     onChange={(v) => dispatch({ type: 'timber', id: r.id, field: f, value: v })}
                     onBlur={() => touch(k)}
@@ -556,7 +556,7 @@ export function Calculator({ locale, ui, logoSrc }: CalculatorProps) {
                       hint={lump ? ui.lumpSum : undefined}
                       hintHidden
                       error={err('q')}
-                      echo={lump ? null : echoValue(r.q, 'number', locale)}
+                      echo={lump ? null : echoValue(r.q, 'count', locale)}
                       className="col-span-2 md:col-span-1"
                       onChange={(v) => dispatch({ type: 'extra', id: r.id, patch: { q: v } })}
                       onBlur={() => touch(errKey('extras', i, 'q'))}

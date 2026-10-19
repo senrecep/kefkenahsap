@@ -1,4 +1,4 @@
-import { parseDecimal } from './number'
+import { parseDecimal, parseMoney } from './number'
 
 export const ISTANBUL = 'Europe/Istanbul'
 
@@ -23,13 +23,18 @@ export const formatStamp = (date: Date, locale: string) =>
  * The value of a typed field as the page read it (owner decision 2026-10-19): money in lira with kuruş, other numbers
  * without grouping ("1.000" on tr shows 1000). Null when the field is empty, unreadable, or already reads as typed.
  */
-export function echoValue(raw: string, kind: 'money' | 'number', locale: string): string | null {
-  const r = parseDecimal(raw, locale)
-  if (!raw.trim() || !r.ok) return null
-  const value = Number(r.value.n) / 10 ** r.value.s
-  const text =
-    kind === 'money'
-      ? formatMoney(Math.round(value * 100), locale)
-      : new Intl.NumberFormat(locale, { ...nu, useGrouping: false, maximumFractionDigits: 6 }).format(value)
+export function echoValue(raw: string, kind: 'money' | 'number' | 'count', locale: string): string | null {
+  if (!raw.trim()) return null
+  let text: string
+  if (kind === 'money') {
+    // The price field's own parser: no echo of a value the field rejects ("0,505").
+    const r = parseMoney(raw, locale)
+    if (!r.ok) return null
+    text = formatMoney(r.value, locale)
+  } else {
+    const r = parseDecimal(raw, locale, { count: kind === 'count' })
+    if (!r.ok) return null
+    text = new Intl.NumberFormat(locale, { ...nu, useGrouping: false, maximumFractionDigits: 6 }).format(Number(r.value.n) / 10 ** r.value.s)
+  }
   return text === raw.trim() ? null : text
 }
