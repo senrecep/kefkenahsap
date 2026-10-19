@@ -96,7 +96,7 @@
       "linkInvalid": "Paylaşılan hesap okunamadı; boş formla başladınız.",
       "storageOff": "Bu tarayıcı cihaza kaydetmeye izin vermiyor.",
       "suspiciousLength": "Boy 30 cm'den kısa. Metre olarak mı girdiniz?",
-      "placeholder": "örn. {value}",
+      "placeholder": "{value}",
       "totalLive": "Genel toplam {total}",
       "prepared": "Kefken Ahşap malzeme ve teklif hesaplayıcı ile hazırlanmıştır",
       "timeZone": "TSİ",

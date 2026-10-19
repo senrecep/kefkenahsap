@@ -65,6 +65,22 @@
   ::selection { background: var(--color-action); color: #fff; }
   /* Two-tone ring: white inner + ink outer. One of the two always holds ≥3:1 against any ground (paper, footer, photo, lightbox). */
   :focus-visible { outline: 3px solid var(--color-ink); outline-offset: 2px; box-shadow: 0 0 0 2px #fff; border-radius: 4px; }
+  /* #238: iOS Safari leaves a native select's text high when it has a min-height. No native look: equal block padding
+     round a set line-height centres it everywhere (≥48px tall), the chevron sits at the inline end (left in RTL).
+     Components add only colour, border and radius. Forced colours: back to the native control and its own arrow. */
+  select {
+    appearance: none;
+    padding-block: 0.75rem;
+    padding-inline: 0.875rem 2.5rem;
+    line-height: 1.5rem;
+    text-overflow: ellipsis;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none' stroke='%231d1f1c' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m5 8 5 5 5-5'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    background-position: right 0.75rem center;
+    &:dir(rtl) { background-position: left 0.75rem center; }
+    @media (forced-colors: active) { appearance: auto; background-image: none; padding-inline-end: 0.875rem; }
+  }
   a { text-underline-offset: 0.2em; text-decoration-thickness: 1px; }
   input, textarea { caret-color: var(--color-action); }
   img { max-width: 100%; height: auto; }

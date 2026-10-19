@@ -96,7 +96,7 @@
       "linkInvalid": "Die geteilte Berechnung konnte nicht gelesen werden; Sie beginnen mit einem leeren Formular.",
       "storageOff": "Dieser Browser erlaubt kein Speichern auf dem Gerät.",
       "suspiciousLength": "Die Länge ist unter 30 cm. Haben Sie sie in Metern eingegeben?",
-      "placeholder": "z. B. {value}",
+      "placeholder": "{value}",
       "totalLive": "Gesamtsumme {total}",
       "prepared": "Erstellt mit dem Material- und Angebotsrechner von Kefken Ahşap",
       "timeZone": "türkische Zeit",
