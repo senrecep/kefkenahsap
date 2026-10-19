@@ -129,6 +129,9 @@ export function GalleryGridClient({
   const onCardClick = (e: MouseEvent<HTMLAnchorElement>, index: number) => {
     if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return
     e.preventDefault()
+    // Tracked here, not with `data-umami-event` on the card: Umami follows such links itself (`location.href`) and that
+    // full page load replaced the lightbox (#226).
+    window.umami?.track('gallery_open')
     // The layout on screen now decides which photos (a trimmed grid hides some per layout) the lightbox steps through.
     const active = layouts.find((l) => window.matchMedia(l.media).matches) ?? phone
     void openAt(index, active.shown)
@@ -151,7 +154,6 @@ export function GalleryGridClient({
                   href={item.href}
                   onClick={(e) => onCardClick(e, i)}
                   data-gallery-item
-                  data-umami-event="gallery_open"
                   className="group block overflow-hidden rounded-[var(--radius-photo)]"
                   // The tile is drawn at the ratio its slot was laid out with (a photo without stored dimensions is
                   // square, cropped by object-cover), so absolutely placed tiles never overlap; an empty Picture keeps it.
