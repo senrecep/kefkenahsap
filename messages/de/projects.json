@@ -31,6 +31,9 @@
   "References": {
     "title": "Referenzen",
     "description": "Wohnanlagen, Einrichtungen und Firmen, mit denen wir gearbeitet haben.",
-    "empty": "Die Referenzliste wird vorbereitet."
+    "empty": "Die Referenzliste wird vorbereitet.",
+    "reviewTitle": "Haben Sie mit uns gearbeitet?",
+    "reviewText": "Mit einer Bewertung auf Google helfen Sie anderen, die einen Handwerksbetrieb wie uns suchen.",
+    "reviewButton": "Bewertung auf Google schreiben"
   }
 }
