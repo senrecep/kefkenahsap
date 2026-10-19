@@ -123,6 +123,7 @@ The density is calm and documentary. Pages are photo grids and hairline lists se
 
 Recorded adaptations from the direction contract (accepted deviations, not drift):
 - The header has six links, adding "Rehber". Five show while "Projeler" is hidden; it is hidden from the nav while no project is published, but its route still works.
+- "Hesaplayıcı" (#233) is a seventh header link shown from `xl` (1280px) only, because seven links overflowed the `lg` row in de/ru; the mobile menu and the footer always list it. The calculator page is an Operate surface inside this system: hairline row lists, tabular numerals, the summary as a sticky hairline list closed by a 2px ink rule, no cards.
 - Gallery facets are category only. Wood-type and place facets are deferred until that tag data exists; the tag row renders only once tags exist.
 - Page 1 of an unfiltered `/galeri` is a curated selection, not a raw chronological feed.
 - The planned WebGL / GSAP hero effect was skipped to stay inside the 150KB JS budget. The hero motion is CSS only.

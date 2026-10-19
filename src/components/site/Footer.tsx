@@ -13,12 +13,13 @@ import { CookiePreferencesButton } from './CookiePreferencesButton'
 import { GoogleReviewLink } from './GoogleReviewLink'
 
 export async function Footer({ locale }: { locale: Locale }) {
-  const [t, tNav, tDays, tConsent, tRegions, settings, categories, regions] = await Promise.all([
+  const [t, tNav, tDays, tConsent, tRegions, tCalc, settings, categories, regions] = await Promise.all([
     getTranslations('Footer'),
     getTranslations('Nav'),
     getTranslations('Days'),
     getTranslations('Consent'),
     getTranslations('Regions'),
+    getTranslations('Calculator'),
     getSiteSettings(locale),
     getNavCategories(locale).then((cs) => cs.filter((c) => c.slug)),
     // Only regions that pass the publish gate are linked; the rest stay unlisted (noindex).
@@ -37,6 +38,7 @@ export async function Footer({ locale }: { locale: Locale }) {
           {Maybe.isSome(since) && <p className="mt-1 text-paper/75">{t('since', { year: since.value })}</p>}
           {settings.founder?.name && <p className="mt-4 text-paper/85">{t('founder', { name: settings.founder.name })}</p>}
           <Link href="/hakkimizda" className="mt-4 inline-block text-paper/90 hover:underline">{tNav('about')}</Link>
+          <Link href="/malzeme-hesaplayici" className="mt-2 block w-fit text-paper/90 hover:underline">{tCalc('title')}</Link>
         </div>
         <div>
           <p className={h}>{t('contact')}</p>

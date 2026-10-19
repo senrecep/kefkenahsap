@@ -1,4 +1,5 @@
 // One JSON per page/feature keeps parallel work conflict-free; add new namespaces here.
+import calculator from './calculator.json'
 import category from './category.json'
 import common from './common.json'
 import consent from './consent.json'
@@ -23,5 +24,6 @@ const messages = {
   ...projects,
   ...regions,
   ...category,
+  ...calculator,
 }
 export default messages

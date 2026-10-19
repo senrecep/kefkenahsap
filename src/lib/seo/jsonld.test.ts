@@ -10,7 +10,7 @@ import {
   itemListJsonLd,
   safeJsonLd,
   serviceJsonLd,
-  websiteJsonLd,
+  webApplicationJsonLd, websiteJsonLd,
 } from './jsonld'
 
 const SITE = 'https://www.kefkenahsap.com'
@@ -101,6 +101,25 @@ describe('websiteJsonLd', () => {
     const out = websiteJsonLd({ name: 'Kefken', site: SITE, url: `${SITE}/tr`, locale: 'tr' })
     expect(out).toEqual({ '@context': 'https://schema.org', '@type': 'WebSite', '@id': `${SITE}/#website`, name: 'Kefken', url: `${SITE}/tr`, inLanguage: 'tr', publisher: { '@id': BIZ } })
     expect(JSON.stringify(out)).not.toContain('SearchAction')
+  })
+})
+
+describe('webApplicationJsonLd', () => {
+  it('a free browser tool published by the business, in the page language', () => {
+    const url = `${SITE}/tr/malzeme-hesaplayici`
+    expect(webApplicationJsonLd({ site: SITE, name: 'Malzeme ve teklif hesaplayıcı', url, description: 'Kereste m³ ve teklif.', locale: 'tr' })).toEqual({
+      '@context': 'https://schema.org',
+      '@type': 'WebApplication',
+      name: 'Malzeme ve teklif hesaplayıcı',
+      url,
+      description: 'Kereste m³ ve teklif.',
+      inLanguage: 'tr',
+      applicationCategory: 'UtilitiesApplication',
+      operatingSystem: 'Any',
+      browserRequirements: 'Requires JavaScript',
+      isAccessibleForFree: true,
+      publisher: { '@id': BIZ },
+    })
   })
 })
 

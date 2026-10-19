@@ -10,7 +10,7 @@ import { routing } from '../../src/i18n/routing'
 const TAGS = ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa']
 const VIEWPORTS = { desktop: { width: 1440, height: 900 }, mobile: { width: 390, height: 844 } }
 // Every localized template path, from routing.locales + getPathname (scripts/quality/fixtures.ts).
-const TEMPLATES = ['home', 'services', 'category', 'gallery', 'image', 'projects', 'project', 'references', 'about', 'contact', 'kvkk', 'cookies', 'search', 'searchEmpty', 'notFound', 'guides', 'guide'] as const
+const TEMPLATES = ['home', 'services', 'category', 'gallery', 'image', 'projects', 'project', 'references', 'about', 'contact', 'kvkk', 'cookies', 'search', 'searchEmpty', 'notFound', 'guides', 'guide', 'calculator'] as const
 const fixtures = (flag = '') => execSync(`bun run payload run scripts/quality/fixtures.ts${flag}`, { stdio: 'inherit' })
 
 type Messages = { Nav: { menu: string }; Consent: { label: string; preferences: string }; Contact: { submit: string } }

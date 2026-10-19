@@ -22,6 +22,7 @@ export const routing = defineRouting({
     '/ara': { tr: '/ara', en: '/search', ru: '/poisk', de: '/suche', ar: '/search' },
     '/kvkk': { tr: '/kvkk', en: '/privacy', ru: '/konfidentsialnost', de: '/datenschutz', ar: '/privacy' },
     '/cerez-politikasi': { tr: '/cerez-politikasi', en: '/cookies', ru: '/cookies', de: '/cookies', ar: '/cookies' },
+    '/malzeme-hesaplayici': { tr: '/malzeme-hesaplayici', en: '/material-calculator', ru: '/kalkulyator-materialov', de: '/materialrechner', ar: '/material-calculator' },
     '/[category]': '/[category]',
   },
 })

@@ -25,6 +25,9 @@ function loadGa(gaId: string, locale: string) {
   s.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(gaId)}`
   document.head.appendChild(s)
   window.gtag!('js', new Date())
+  // No page_location override: it would freeze every later client-side page_view on this first URL. gtag.js leaves the
+  // URL fragment out of `dl` by itself (#236 review: checked on the calculator, whose #c=… holds a customer name, for
+  // the first page_view and the ones after its history updates).
   window.gtag!('config', gaId)
 }
 
