@@ -1,11 +1,16 @@
 import type { Metadata } from 'next'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
 
+import { JsonLd } from '@/components/seo/JsonLd'
+import { Breadcrumb } from '@/components/site/Breadcrumb'
 import { GuideCard } from '@/components/guides/GuideCard'
 import { Container } from '@/components/ui/Container'
 import { WhatsAppButton } from '@/components/ui/WhatsAppButton'
+import { getPathname } from '@/i18n/navigation'
 import type { Locale } from '@/i18n/routing'
 import { getGuides } from '@/lib/data/guides'
+import { siteUrl } from '@/lib/seo/alternates'
+import { pageJsonLd } from '@/lib/seo/jsonld'
 import { pageMetadata, staticPaths } from '@/lib/seo/page-metadata'
 
 type Props = { params: Promise<{ locale: Locale }> }
@@ -23,8 +28,12 @@ export default async function GuidesIndex({ params }: Props) {
   setRequestLocale(locale)
   const [t, guides] = await Promise.all([getTranslations('Guides'), getGuides(locale)])
 
+  const site = siteUrl().replace(/\/$/, '')
+  const path = getPathname({ locale, href: '/rehber' })
   return (
     <Container className="pt-8 pb-20 md:pt-12">
+      <JsonLd data={pageJsonLd('CollectionPage', { site, name: t('title'), url: site + path, description: t('intro'), locale })} />
+      <Breadcrumb locale={locale} className="mb-6" items={[{ name: t('title'), path }]} />
       <header className="max-w-[46rem]">
         <h1 className="text-[clamp(2rem,4vw,3rem)]">{t('title')}</h1>
         <p className="mt-4 text-lg text-ink-soft">{t('intro')}</p>

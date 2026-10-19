@@ -22,6 +22,7 @@ import { getSiteSettings } from '@/lib/data/site'
 import { metaDescription } from '@/lib/guides/meta'
 import { guideProjects, relatedGuides } from '@/lib/guides/related'
 import { tableOfContents, type TocItem } from '@/lib/guides/toc'
+import { responsiveImage } from '@/lib/media/image'
 import { siteUrl } from '@/lib/seo/alternates'
 import { hasWoodSamples } from '@/lib/wood/samples'
 import { articleJsonLd, faqJsonLd } from '@/lib/seo/jsonld'
@@ -77,7 +78,18 @@ export default async function GuidePage({ params }: Props) {
       {/* Only what the page shows: title, excerpt, the "updated" date, the byline when shown, and the FAQ list. */}
       <JsonLd
         data={[
-          articleJsonLd({ site, headline: guide.title, url, description: guide.excerpt, author: founder?.name, dateModified: guide.updatedAt }),
+          articleJsonLd({
+            site,
+            headline: guide.title,
+            url,
+            description: guide.excerpt,
+            author: founder?.name,
+            authorUrl: site + getPathname({ locale, href: '/hakkimizda' }),
+            datePublished: guide.createdAt,
+            dateModified: guide.updatedAt,
+            image: cover && responsiveImage(cover, { minWidth: 1200 }).src,
+            publisher: { name: settings.companyName, logo: `${site}/brand/logo.png` },
+          }),
           faqJsonLd(faq),
         ]}
       />

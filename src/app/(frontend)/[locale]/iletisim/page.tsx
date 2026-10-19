@@ -2,6 +2,8 @@ import { Mail, MapPin, Phone } from 'lucide-react'
 import type { Metadata } from 'next'
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server'
 
+import { JsonLd } from '@/components/seo/JsonLd'
+import { Breadcrumb } from '@/components/site/Breadcrumb'
 import { LocationMap } from '@/components/site/LocationMap'
 import { Container } from '@/components/ui/Container'
 import { buttonClass } from '@/components/ui/button'
@@ -11,6 +13,8 @@ import type { Locale } from '@/i18n/routing'
 import { directionsUrl, telLink, waLink } from '@/lib/contact'
 import { getNavCategories, getSiteSettings } from '@/lib/data/site'
 import { MAX_PHOTOS } from '@/lib/leads/validate'
+import { siteUrl } from '@/lib/seo/alternates'
+import { pageJsonLd } from '@/lib/seo/jsonld'
 import { pageMetadata, staticPaths } from '@/lib/seo/page-metadata'
 
 import { ContactForm, type ContactCopy } from './ContactForm'
@@ -52,8 +56,12 @@ export default async function ContactPage({ params }: Props) {
     }),
   }
 
+  const path = getPathname({ locale, href: '/iletisim' })
+
   return (
     <Container className="pt-10 pb-6 md:pt-14">
+      <JsonLd data={pageJsonLd('ContactPage', { site: siteUrl().replace(/\/$/, ''), name: t('title'), url: siteUrl().replace(/\/$/, '') + path, description: t('intro'), locale })} />
+      <Breadcrumb locale={locale} className="mb-6" items={[{ name: t('title'), path }]} />
       <h1 className="font-[family-name:var(--font-display)] text-[clamp(2rem,4vw,3rem)] font-semibold tracking-tight text-balance">{t('title')}</h1>
       <p className="mt-3 max-w-[60ch] text-lg text-ink-soft">{t('intro')}</p>
 
@@ -140,7 +148,7 @@ export default async function ContactPage({ params }: Props) {
             siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY}
             services={categories.map((c) => c.name).filter(Boolean)}
             whatsappHref={waLink(settings, { kind: 'contact' })}
-            sourcePage={getPathname({ locale, href: '/iletisim' })}
+            sourcePage={path}
           />
         </section>
       </div>
