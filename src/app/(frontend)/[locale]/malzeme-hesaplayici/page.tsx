@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server'
 
-import { Calculator } from '@/components/calculator/Calculator'
+import { CalculatorLazy } from '@/components/calculator/CalculatorLazy'
 import type { CalcUi } from '@/components/calculator/ui'
 import { JsonLd } from '@/components/seo/JsonLd'
 import { Breadcrumb } from '@/components/site/Breadcrumb'
@@ -39,11 +39,9 @@ export default async function CalculatorPage({ params }: { params: Params }) {
         <h1 className="mt-6 max-w-[22ch] text-[2.1rem] leading-[1.08] md:text-[3.2rem]">{t('title')}</h1>
         <p className="mt-5 max-w-[62ch] text-[1.15rem] text-ink-soft md:text-[1.25rem]">{t('description')}</p>
       </Container>
-      {/* Container classes on a plain div: print keeps only this block (styles.css, [data-calc-tool]). The island is
-          imported directly: it is this route's own chunk, and a React.lazy split streamed it as a late Suspense swap
-          (CLS 0.5 on Lighthouse mobile). The PNG export stays a separate chunk loaded on its first click. */}
+      {/* Container classes on a plain div: print keeps only this block (styles.css, [data-calc-tool]). */}
       <div data-calc-tool className="mx-auto mt-10 w-full max-w-7xl px-4 md:mt-12 md:px-6">
-        <Calculator locale={locale} ui={ui} logoSrc="/brand/logo.webp" />
+        <CalculatorLazy locale={locale} ui={ui} logoSrc="/brand/logo.webp" />
       </div>
       <Container as="section" aria-labelledby="calc-how" className="mt-20 grid gap-x-12 gap-y-10 md:mt-24 lg:grid-cols-2">
         <div>

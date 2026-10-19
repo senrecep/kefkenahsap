@@ -41,7 +41,7 @@ Bu, "fiyat uydurma, fiyatlar yalnızca CMS'ten gelir" kuralıyla uyumludur.
 - Müşteri adı, iş başlığı, not. Yalnızca doldurulursa paylaşım linkine ve dışa aktarmalara girer.
 
 ### 1.5 Kaydet, paylaş, dışa aktar
-- **URL durumu**: sürümlü, kısa (`#c=1.<base64url JSON>`), yer imine eklenebilir. **URL parçası (fragment)** kullanıldı: hiç sunucuya, erişim kayıtlarına, Cloudflare'e ya da analitiğe gitmez (müşteri adı içinde olabilir, KVKK). Sayfa tek bir ISR belgesi kalır (#211); dolu hesap ayrı bir URL olarak taranmaz, kanonik temiz sayfadır (sahibin "dolu durumda noindex" isteği böylece yapısal olarak karşılanır).
+- **URL durumu**: sürümlü, kısa (`#c=1.<base64url JSON>`), yer imine eklenebilir. **URL parçası (fragment)** kullanıldı: tarayıcı onu hiçbir istekte göndermez, yani sunucuya, erişim kayıtlarına ve Cloudflare proxy'sine gitmez (müşteri adı içinde olabilir, KVKK). İstemci tarafı ölçüm adresi kendisi okur: Umami betiği `history.replaceState`'i izliyor ve parçayı gönderiyordu; `data-exclude-hash="true"` ile kapatıldı (betik kaynağında doğrulandı). GA4 (onaydan sonra) ve Cloudflare Web Analytics'in parçayı gönderip göndermediği yerelde doğrulanamadı; yayından sonra kontrol edilmeli. Sayfa tek bir ISR belgesi kalır (#211); dolu hesap ayrı bir URL olarak taranmaz, kanonik temiz sayfadır (sahibin "dolu durumda noindex" isteği böylece yapısal olarak karşılanır).
 - **Cihazda kayıt**: en çok 30 kayıt; aç, sil. Sunucu kaydı **yok**.
 - **PNG**: Canvas 2D (bağımlılık yok, tıklamada yüklenen ayrı parça). Telefonda Web Share (dosya ile), değilse indirme (`kefken-hesap-YYYY-AA-GG-SSDD.png`, İstanbul saati).
 - **PDF**: yazdırma stil sayfası + `window.print()` ("PDF olarak kaydet").
@@ -76,7 +76,7 @@ Erişim: header menüsü ("Hesaplayıcı"), footer, kategori sayfalarında "Malz
 
 ### 2.3 Arayüz
 - Sunucu: H1, kısa açıklama, "Nasıl hesaplanır?" ve "Bilmeniz gerekenler" (indekslenir), kapanış bandı. WebApplication + BreadcrumbList JSON-LD.
-- Ada: `CalculatorLazy` (React.lazy; sunucu formu HTML olarak basar, JS ayrı parça). PNG kodu ikinci bir parça, ilk tıklamada iner.
+- Ada: `CalculatorLazy` (`next/dynamic`, SSR açık): sunucu formu HTML'de yerinde basar, adanın JS'i ayrı parça olarak ilk yükten sonra iner (ilk yük +1,8 KB gz). `React.lazy` denendi: form geç bir Suspense değişimiyle akıtıldı, Lighthouse mobil CLS 0,5 çıktı. PNG kodu ikinci bir parça, ilk tıklamada iner.
 - Toplamlar her render'da saf fonksiyondan (E hatası yapısal olarak imkânsız).
 - Masaüstü: satırlar tek satırlık ızgara, özet sağda yapışkan (≥1280 px). Mobil: satır başına 3+2 alan ızgarası, özet satırlardan sonra; yatay kaydırma yok, dokunma hedefleri ≥ 44 px.
 - Erişilebilirlik: her alanda etiket (satır numarasıyla), birim alanın içinde, hata `aria-describedby` + `aria-invalid`, toplam `aria-live` (yazma durunca), satır silinince odak yönetimi, Enter sonraki alana geçer.

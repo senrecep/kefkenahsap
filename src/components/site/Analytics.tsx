@@ -8,14 +8,17 @@ import { CookieConsent } from './CookieConsent'
 // Consent Mode v2 defaults: everything denied until the visitor accepts (GA4 is not even loaded before that).
 const consentDefaults = `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}window.gtag=gtag;gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied'});`
 
-/** Umami (cookieless, always on when configured) + GA4 behind the cookie banner (when configured). */
+/**
+ * Umami (cookieless, always on when configured) + GA4 behind the cookie banner (when configured). Umami drops the URL
+ * fragment (`data-exclude-hash`): the calculator keeps its quote, customer name included, in `#c=…` (#233).
+ */
 export function Analytics({ locale, settings }: { locale: string; settings: { gaId?: string | null } }) {
   const gaId = gaIdOf(settings)
   const umamiSrc = process.env.NEXT_PUBLIC_UMAMI_SRC
   const umamiId = process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID
   return (
     <>
-      {umamiSrc && umamiId && <script defer src={umamiSrc} data-website-id={umamiId} data-domains="kefkenahsap.com,www.kefkenahsap.com" />}
+      {umamiSrc && umamiId && <script defer src={umamiSrc} data-website-id={umamiId} data-domains="kefkenahsap.com,www.kefkenahsap.com" data-exclude-hash="true" />}
       {gaId && (
         <>
           {/* Inline so it runs during parsing, before any client code can call gtag. */}
