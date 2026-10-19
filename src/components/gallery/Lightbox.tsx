@@ -19,7 +19,7 @@ export type LightboxProps = {
 const control =
   'inline-flex size-12 items-center justify-center rounded-full bg-black/45 text-white shadow-[var(--shadow-float)] transition-colors hover:bg-black/70 disabled:opacity-30'
 
-/** Native modal <dialog> (focus stays inside, Esc closes, focus returns to the card). The URL follows the open image. */
+/** Native modal <dialog> (focus stays inside, Esc closes, focus returns to the card). The URL stays on the grid (#226). */
 export function Lightbox({ items, index, total, onIndex, onClose, labels }: LightboxProps) {
   const dialog = useRef<HTMLDialogElement>(null)
   const swipeX = useRef<number | null>(null)
@@ -30,18 +30,10 @@ export function Lightbox({ items, index, total, onIndex, onClose, labels }: Ligh
 
   useEffect(() => {
     const d = dialog.current!
-    const back = window.location.href
     const opener = document.activeElement as HTMLElement | null
     if (!d.open) d.showModal()
-    return () => {
-      window.history.replaceState(window.history.state, '', back)
-      opener?.focus()
-    }
+    return () => opener?.focus()
   }, [])
-
-  useEffect(() => {
-    window.history.replaceState(window.history.state, '', item.href)
-  }, [item.href])
 
   // Go to the photo shown on the right/left side. In RTL the order is mirrored: "next" sits on the left.
   const toward = (right: boolean) => {
