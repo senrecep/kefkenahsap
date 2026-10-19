@@ -90,20 +90,27 @@ export const getSitemapPageDocs = () =>
   )()
 
 /**
+ * One photo as the sitemap cache keeps it: compact, as Next refuses data-cache entries over 2 MB (~0.8 MB for 3,300).
+ * shortcut: one cache entry for all photos; past ~8,000 photos cache per locale instead.
+ */
+type SitemapPhoto = { slug: string; live: string[]; src: string; lastModified: string }
+
+/**
  * Approved gallery photos (the gallery's own filter: approved + an SEO filename), every locale's title, one SQL query.
  * The Payload find (locale 'all', afterRead per photo) took ~5 s cold for 3,300 photos; this reads only the columns the
- * sitemap needs and builds the CDN URLs with the storage plugin's own generateFileURL (mediaFileURL), never trusting
- * stored URL columns. tests/int/sitemap-photos checks it against the Payload read. Public data only (status approved).
+ * sitemap needs (~30 ms) and builds the CDN URLs with the storage plugin's own generateFileURL (mediaFileURL), never
+ * trusting stored URL columns. tests/int/sitemap-photos checks it against the Payload read. Public data only (approved).
  */
-export async function loadSitemapPhotoDocs(payload: Payload): Promise<SitemapDoc[]> {
+async function loadSitemapPhotos(payload: Payload): Promise<SitemapPhoto[]> {
   const sizes = (payload.collections.media.config.upload.imageSizes ?? []).map((s) => s.name)
   // Size names are already snake case (w320…, portrait), as Payload names their columns.
   const col = (name: string, field: string) => sql.raw(`m."sizes_${name}_${field}"`)
   const res = await (payload.db as unknown as PostgresAdapter).drizzle.execute(sql`
     SELECT m."seo_filename" AS slug, m."updated_at" AS updated, m."filename", m."prefix", m."width", m."height",
       ${sql.join(sizes.map((n, i) => sql`${col(n, 'filename')} AS ${sql.raw(`"f${i}"`)}, ${col(n, 'width')} AS ${sql.raw(`"w${i}"`)}`), sql`, `)},
-      (SELECT json_object_agg(l."_locale", l."title") FROM "media_locales" l WHERE l."_parent_id" = m."id") AS titles
+      l."titles"
     FROM "media" m
+    LEFT JOIN (SELECT "_parent_id", json_object_agg("_locale", "title") AS titles FROM "media_locales" GROUP BY "_parent_id") l ON l."_parent_id" = m."id"
     WHERE m."status" = 'approved' AND m."seo_filename" IS NOT NULL
     ORDER BY m."id" DESC`)
   return res.rows.map((r) => {
@@ -115,12 +122,19 @@ export async function loadSitemapPhotoDocs(payload: Payload): Promise<SitemapDoc
       height: row.height == null ? null : Number(row.height),
       sizes: Object.fromEntries(sizes.map((n, i) => [n, { url: url(row[`f${i}`] as string | null), width: row[`w${i}`] == null ? null : Number(row[`w${i}`]) }])),
     }
-    const src = responsiveImage(media).src
-    const slug = Object.fromEntries(routing.locales.map((l) => [l, row.slug]))
-    return { paths: docPaths(slug, row.titles, imagePath), lastModified: new Date(row.updated).toISOString(), images: src ? [src] : [] }
+    const paths = docPaths(Object.fromEntries(routing.locales.map((l) => [l, row.slug])), row.titles, imagePath)
+    return { slug: row.slug, live: routing.locales.filter((l) => paths[l]), src: responsiveImage(media).src, lastModified: new Date(row.updated).toISOString() }
   })
 }
 
+const photoDoc = (p: SitemapPhoto): SitemapDoc => ({
+  paths: Object.fromEntries(routing.locales.map((l) => [l, p.live.includes(l) ? imagePath(l, p.slug) : null])),
+  lastModified: p.lastModified,
+  images: p.src ? [p.src] : [],
+})
+
+export const loadSitemapPhotoDocs = async (payload: Payload) => (await loadSitemapPhotos(payload)).map(photoDoc)
+
 /** Photo sitemaps: cached under the media tag, so a photo save refreshes them at once (#192). */
-export const getSitemapPhotoDocs = () =>
-  unstable_cache(async () => loadSitemapPhotoDocs(await getPayload()), ['seoSitemapPhotoDocs'], { tags: [TAGS.media], revalidate: HOUR })()
+export const getSitemapPhotoDocs = async () =>
+  (await unstable_cache(async () => loadSitemapPhotos(await getPayload()), ['seoSitemapPhotos'], { tags: [TAGS.media], revalidate: HOUR })()).map(photoDoc)
