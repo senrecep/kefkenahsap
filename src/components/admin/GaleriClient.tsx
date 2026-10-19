@@ -20,6 +20,7 @@ import {
 import type { I18nSync } from '@/lib/media/i18nSync'
 import type { TagRef } from '@/lib/media/taxonomy'
 import { MediaLocalesSync } from './ai/MediaLocalesSync'
+import { mediaDownloadHref } from './MediaDownload'
 import './galeri.css'
 
 type Option = { id: number; name: string }
@@ -614,6 +615,9 @@ export function GaleriClient({ aiEnabled, categories, projects, tags }: { aiEnab
                     <Link className="galeri__btn" href={`/admin/collections/media/${m.id}`}>
                       Düzenle
                     </Link>
+                    <a className="galeri__btn" href={mediaDownloadHref(m.id)} download aria-label={`İndir: ${label}`}>
+                      İndir
+                    </a>
                     {canMove && (
                       <>
                         <button

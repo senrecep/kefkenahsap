@@ -33,7 +33,8 @@
     "privacy": "KVKK aydınlatma metni",
     "cookies": "Çerez politikası",
     "rights": "Tüm hakları saklıdır.",
-    "since": "{year}'dan beri"
+    "since": "{year}'dan beri",
+    "googleReview": "Google'da yorum bırakın"
   },
   "Days": { "Mo": "Pzt", "Tu": "Sal", "We": "Çar", "Th": "Per", "Fr": "Cum", "Sa": "Cmt", "Su": "Paz" },
   "Home": { "title": "Kefken Ahşap Dekorasyon" }

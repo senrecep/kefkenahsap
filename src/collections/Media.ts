@@ -27,6 +27,7 @@ import { SEO_RENAME_QUEUE, isSeoNamed, needsSeoRename, stemOf } from '@/lib/medi
 import { approvalTags, type TagRef } from '@/lib/media/taxonomy'
 import { applyWatermark, isStampable } from '@/lib/media/watermark'
 import { revalidateAfterChangeIf, revalidateAfterDelete } from '@/hooks/revalidate'
+import { mediaDownloadEndpoint } from '@/endpoints/mediaDownload'
 
 // WebP only: sources are already WebP; AVIF would double storage and encode time (PLAN §3.3).
 // 480: 2-column phone grids render ~184 CSS px, which at DPR 1.75–2.6 needs 322–480 px; without it they fetched 640 (#116).
@@ -320,6 +321,7 @@ export const Media: CollectionConfig = {
     pagination: { defaultLimit: 50 },
   },
   defaultSort: '-createdAt',
+  endpoints: [mediaDownloadEndpoint],
   access: { read: approvedOrStaff, create: isStaff, update: isStaff, delete: isStaff },
   hooks: {
     beforeOperation: [stampUpload],
@@ -329,6 +331,8 @@ export const Media: CollectionConfig = {
     afterDelete: [revalidateAfterDelete('media', 'categories', 'projects'), purgeDeletedFile],
   },
   fields: [
+    // #230: "İndir" right under the upload preview (first main-column field).
+    { name: 'download', type: 'ui', admin: { components: { Field: '/components/admin/MediaDownload#MediaDownloadField' } } },
     {
       name: 'status',
       type: 'select',
