@@ -123,6 +123,7 @@ for (const locale of locales) {
     projects: p('/projeler'),
     project: p({ pathname: '/projeler/[slug]', params: { slug: slug(F.project, locale) } }),
     references: p('/referanslar'),
+    calculator: p('/malzeme-hesaplayici'),
     about: p('/hakkimizda'),
     contact: p('/iletisim'),
     kvkk: p('/kvkk'),

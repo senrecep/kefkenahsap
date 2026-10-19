@@ -98,6 +98,8 @@ test.describe('robots, sitemap, llms.txt', () => {
     const trGuide = at(`/tr/rehber/${guide.tr}`)
     expect(trGuide?.alternates).toEqual({ tr: `/tr/rehber/${guide.tr}`, en: `/en/guides/${guide.en}`, 'x-default': `/tr/rehber/${guide.tr}` })
     expect(at('/tr/rehber')).toBeTruthy()
+    // #233: the material calculator is a fixed, indexable route.
+    expect(at('/tr/malzeme-hesaplayici')).toBeTruthy()
     // Photo page with its image (image sitemap extension).
     const photoEntry = at(`/en/gallery/${photo}`)!
     expect(photoEntry.images).toHaveLength(1)

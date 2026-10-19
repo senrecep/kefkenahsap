@@ -14,8 +14,8 @@ import { Picture } from '@/components/ui/Picture'
 import { WhatsAppButton } from '@/components/ui/WhatsAppButton'
 import { buttonClass } from '@/components/ui/button'
 import { getPathname, Link } from '@/i18n/navigation'
-import type { Locale } from '@/i18n/routing'
-import { galleryLimit, hasRichText, pageFromQuery, priceGuide } from '@/lib/category/category'
+import { routing, type Locale } from '@/i18n/routing'
+import { CALCULATOR_CATEGORIES, galleryLimit, hasRichText, pageFromQuery, priceGuide } from '@/lib/category/category'
 import { renameRedirect } from '@/lib/category/rename'
 import { areaLine } from '@/lib/company'
 import { telLink } from '@/lib/contact'
@@ -81,10 +81,11 @@ export async function CategoryPage({ params, searchParams }: { params: Params; s
   const photos = rest.slice(0, limit)
   const hasMore = data.hasMore || rest.length > limit
 
-  const [t, tCta, tNav, format, settings, projects, guides] = await Promise.all([
+  const [t, tCta, tNav, tCalc, format, settings, projects, guides] = await Promise.all([
     getTranslations('Category'),
     getTranslations('Cta'),
     getTranslations('Nav'),
+    getTranslations('Calculator'),
     getFormatter(),
     getSiteSettings(locale),
     getProjectCards(locale).then((cards) => cards.filter((c) => c.categories.some((x) => x.id === category.id)).slice(0, 6)),
@@ -128,6 +129,15 @@ export async function CategoryPage({ params, searchParams }: { params: Params; s
             {tCta('quote')}
           </Link>
         </div>
+        {CALCULATOR_CATEGORIES.has(data.locales[routing.defaultLocale]?.slug ?? '') && (
+          <p className="mt-5 text-ink-soft">
+            <Link href="/malzeme-hesaplayici" className="inline-flex min-h-11 items-center gap-1.5 font-[family-name:var(--font-display)] font-semibold text-action hover:text-action-deep hover:underline">
+              {tCalc('categoryLink')}
+              <ArrowRight aria-hidden size={18} strokeWidth={1.75} className="rtl:rotate-180" />
+            </Link>
+            <span className="ms-2">{tCalc('categoryLinkText')}</span>
+          </p>
+        )}
       </Container>
 
       {hero && (

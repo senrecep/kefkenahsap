@@ -1,6 +1,9 @@
+import { getTranslations } from 'next-intl/server'
+
 import { routing } from '@/i18n/routing'
 import { siteUrl } from '@/lib/seo/alternates'
 import { keyFacts, llmsTxt } from '@/lib/seo/llms'
+import { staticPaths } from '@/lib/seo/page-metadata'
 
 import { getServicesAllLocales } from './seo'
 import { getSiteSettings } from './site'
@@ -37,7 +40,17 @@ export async function renderLlms(full: boolean) {
         return { name: c.name![l]!, url: `${site}${c.paths[l]}`, text: full ? [c.shortDesc?.[l], ...faq].filter(Boolean).join('\n\n') : c.shortDesc?.[l] }
       }),
   })).filter((sec) => sec.items.length) // a locale with no live service yet gets no empty heading
-  return llmsTxt({ title: s.companyName, summary: s.defaultDescription, facts, sections, full })
+  // #233: the material and quote calculator, in every locale where the page is live.
+  const calc = await staticPaths('/malzeme-hesaplayici')
+  const tools = await Promise.all(
+    routing.locales
+      .filter((l) => calc[l])
+      .map(async (l) => {
+        const t = await getTranslations({ locale: l, namespace: 'Calculator' })
+        return { name: t('title'), url: `${site}${calc[l]}`, text: t('description') }
+      }),
+  )
+  return llmsTxt({ title: s.companyName, summary: s.defaultDescription, facts, sections: [...sections, { title: 'Tools', items: tools }], full })
 }
 
 export const llmsResponse = async (full: boolean) =>

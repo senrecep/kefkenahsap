@@ -60,3 +60,9 @@ const firstOrder = (p: { categories: { _order?: string | null }[] }) => p.catego
 /** #148: projects by their first category's admin order (deck, pergola … before furniture), for a stable Array#sort. */
 export const byCategoryOrder = (a: { categories: { _order?: string | null }[] }, b: { categories: { _order?: string | null }[] }) =>
   firstOrder(a) < firstOrder(b) ? -1 : firstOrder(a) > firstOrder(b) ? 1 : 0
+
+/**
+ * #233: categories whose jobs are built from sawn timber link to the material calculator. Default-locale slugs, so the
+ * choice holds in every page language (category.test.ts checks them against the seed).
+ */
+export const CALCULATOR_CATEGORIES: ReadonlySet<string> = new Set(['deck-ve-zeminler', 'pergola-ve-kamelyalar', 'korkuluk-ve-cit', 'merdivenler', 'sundurma-ve-ahsap-cati', 'ahsap-ev-ve-bungalov', 'kopru-ve-iskele'])

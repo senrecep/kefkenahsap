@@ -23,7 +23,7 @@ Başarı (lansmandan 3 ay sonra ölçülür):
 - WhatsApp Business API, chatbot.
 - Otomatik (onaysız) AI içerik yayını, şablon "doorway" bölge sayfaları.
 - Prometheus/Grafana/Loki (tek site için ağır).
-- E-ticaret, online ödeme, fiyat hesaplayıcı.
+- E-ticaret, online ödeme. (Fiyat hesaplayıcı 2026-10-19'da sahip kararıyla kapsama alındı: Kefken fiyatı göstermez, kullanıcı kendi fiyatını girer; bkz. F2 ve `docs/calculator/PLAN.md`.)
 
 ---
 
@@ -138,6 +138,7 @@ Tüm metin alanları `localized: true`. Taslak/versiyon (`versions.drafts`) + Li
 | Referanslar / Hakkımızda / İletişim | `/tr/referanslar`, `/tr/hakkimizda`, `/tr/iletisim` | `/en/references`, `/en/about`, `/en/contact` | `/ru/klienty`, `/ru/o-nas`, `/ru/kontakty` | `/de/referenzen`, `/de/ueber-uns`, `/de/kontakt` |
 | Arama | `/tr/ara?q=` (noindex) | `/en/search?q=` | `/ru/poisk?q=` | `/de/suche?q=` |
 | Yasal | `/tr/kvkk`, `/tr/cerez-politikasi` | `/en/privacy`, `/en/cookies` | `/ru/konfidentsialnost`, `/ru/cookies` | `/de/datenschutz`, `/de/cookies` |
+| Malzeme ve teklif hesaplayıcı (#233) | `/tr/malzeme-hesaplayici` | `/en/material-calculator` | `/ru/kalkulyator-materialov` | `/de/materialrechner` |
 
 - Kanonik host **www.kefkenahsap.com**; `kefkenahsap.com` → www (Cloudflare tek kural, host+path birlikte, 301).
 - `/` → çerez (`NEXT_LOCALE`) + `Accept-Language` ile, **yalnızca içeriği olan dillerden** biri (sabit rotalarla aynı kural, `getContentLocales`; içeriği olmayan tercih edilen dil atlanır, hiçbiri yoksa `/tr`; #64 kararı, `rootLocale`) (**302**, `/` Cloudflare cache bypass; `x-default` = `/tr`).
@@ -309,6 +310,8 @@ F2: Rehber dizini + yazı şablonu (TOC, FAQ, "AI'ya kopyala" butonu, yazar kutu
 - Kalan rehberler (AI taslak → insan onayı; lansmanda 3–4 temel rehber F1'de yayınlanır: Iroko mu Teak mi?, Deck bakımı, Ahşap türleri karşılaştırma, Pergola fiyatını ne belirler?). Liste: Iroko mu Teak mi?, Deck bakımı ne zaman?, Pergola fiyatını ne belirler?, Emprenyeli ahşap nedir?, Thermowood avantajları, Ahşap korkuluk mu metal mi?, Havuz kenarı deck rehberi, Ahşap türleri karşılaştırma tablosu (eski "ağaç cinsleri" içeriğinden).
 - Admin "AI ile çevir" / "AI ile taslak" butonları, aiSettings model seçici (OpenRouter `/models` listesi), maliyet paneli.
 - Bölge sayfaları (admin'den, publishGate'li), OGL 3D numune.
+- **Malzeme ve teklif hesaplayıcı** (sahip kararı 2026-10-19, #233; ayrıntı `docs/calculator/PLAN.md`): kereste m³ ve tutarı (mm/cm/m birim seçimi, fire %), ek kalemler (götürü dahil, cihazda hatırlanır), KDV hariç fiyat + KDV anahtarı (20/10/1/0), kuruş hassasiyetinde toplamlar; paylaşım linki (URL parçası, sunucuya gitmez) + cihazda kayıt; markalı PNG (Canvas) ve PDF (yazdırma). Sunucu kaydı ve yeni bağımlılık yok. Eski `wood-material-calculator` uygulamasının yerini alır.
+- **Faz 2 takip işi: deck / zemin hesaplayıcısı** (m² → tahta, kiriş, vida/klips, fire). Sabitler Murat Şen'den gelecek; gelmeden başlanmaz.
 - Kategori metinleri + SSS'lerin tamamlanması; proje kayıtlarının zenginleştirilmesi.
 
 ### F3 — Genişleme
@@ -342,6 +345,7 @@ F2: Rehber dizini + yazı şablonu (TOC, FAQ, "AI'ya kopyala" butonu, yazar kutu
 - [ ] Instagram kullanıcı adının marka ile tutarlı hale getirilmesi → siteSettings'te URL güncelle.
 - [ ] Murat Şen'in mesleğe başlama yılının teyidi → siteSettings (o zamana kadar yalnızca "2009'dan beri").
 - [ ] info@kefkenahsap.com (MX/Mailu) — ayrı iş.
+- [ ] Hesaplayıcı (#233) yayına alınıp baba 1–2 hafta kullandıktan sonra: `wood-material-calculator.senrecep.com/*` → `https://www.kefkenahsap.com/tr/malzeme-hesaplayici` 301 (Dokploy/Traefik redirect), eski Vue uygulaması kapatılır. Sahibin onayıyla.
 
 ## 14. Riskler
 | Risk | Etki | Önlem |
