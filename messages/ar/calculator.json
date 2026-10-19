@@ -96,7 +96,7 @@
       "linkInvalid": "تعذّرت قراءة الحساب المُشارَك؛ بدأت بنموذج فارغ.",
       "storageOff": "هذا المتصفح لا يسمح بالحفظ على الجهاز.",
       "suspiciousLength": "الطول أقل من 30 سم. هل أدخلته بالأمتار؟",
-      "placeholder": "مثلًا {value}",
+      "placeholder": "{value}",
       "totalLive": "الإجمالي {total}",
       "prepared": "أُعدّ باستخدام حاسبة المواد وعروض الأسعار من Kefken Ahşap",
       "timeZone": "بتوقيت تركيا",

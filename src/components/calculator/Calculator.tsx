@@ -365,15 +365,15 @@ export function Calculator({ locale, ui, logoSrc }: CalculatorProps) {
             <h2 id={`${uid}-timber`} className="text-[1.5rem] md:text-[1.75rem]">
               {ui.timber}
             </h2>
-            <fieldset className="flex flex-wrap items-end gap-3">
+            <fieldset className="grid w-full grid-cols-6 gap-3 md:flex md:w-auto md:flex-wrap md:items-end">
               <legend className="sr-only">{ui.units}</legend>
               {dimLabels.map((label, i) => (
-                <label key={label} className="grid gap-1 text-[0.875rem] text-ink-soft">
+                <label key={label} className="col-span-2 grid gap-1 text-[0.875rem] text-ink-soft md:col-auto">
                   <span className="font-[family-name:var(--font-display)] font-semibold text-ink">{label}</span>
                   <select
                     value={state.units[i]}
                     onChange={(e) => dispatch({ type: 'unit', index: i, unit: e.target.value as LengthUnit })}
-                    className="min-h-11 rounded-[var(--radius-control)] border border-ink/25 bg-white ps-3 pe-8 text-base text-ink focus:border-action"
+                    className="rounded-[var(--radius-control)] border border-ink/25 bg-white text-base text-ink focus:border-action"
                   >
                     {LENGTH_UNITS.map((u) => (
                       <option key={u} value={u}>
@@ -570,7 +570,7 @@ export function Calculator({ locale, ui, logoSrc }: CalculatorProps) {
                         id={`${uid}-x${r.id}u`}
                         value={r.u}
                         onChange={(e) => dispatch({ type: 'extra', id: r.id, patch: { u: e.target.value as ExtraInput['u'] } })}
-                        className={`${fieldCls} border-ink/25 px-2.5`}
+                        className="block w-full rounded-[var(--radius-control)] border border-ink/25 bg-white text-base text-ink focus:border-action"
                       >
                         {EXTRA_UNITS.map((u) => (
                           <option key={u} value={u}>
@@ -649,7 +649,7 @@ export function Calculator({ locale, ui, logoSrc }: CalculatorProps) {
                 value={state.vat.rate}
                 disabled={!state.vat.on}
                 onChange={(e) => dispatch({ type: 'vat', rate: Number(e.target.value) as VatRate })}
-                className="min-h-11 rounded-[var(--radius-control)] border border-ink/25 bg-white ps-3 pe-8 text-base text-ink focus:border-action disabled:opacity-50"
+                className="rounded-[var(--radius-control)] border border-ink/25 bg-white text-base text-ink focus:border-action disabled:opacity-50"
               >
                 {VAT_RATES.map((r) => (
                   <option key={r} value={r}>
