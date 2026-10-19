@@ -1538,6 +1538,10 @@ export interface SiteSetting {
     instagram?: string | null;
     facebook?: string | null;
     googleBusiness?: string | null;
+    /**
+     * Google İşletme Profili'ndeki "Yorum iste" bağlantısı. Doluysa footer'da ve Referanslar sayfasında "Google'da yorum bırakın" bağlantısı çıkar; boşsa hiçbir şey görünmez.
+     */
+    googleReview?: string | null;
   };
   defaultDescription?: string | null;
   defaultOgImage?: (number | null) | Media;
@@ -1824,6 +1828,7 @@ export interface SiteSettingsSelect<T extends boolean = true> {
         instagram?: T;
         facebook?: T;
         googleBusiness?: T;
+        googleReview?: T;
       };
   defaultDescription?: T;
   defaultOgImage?: T;
