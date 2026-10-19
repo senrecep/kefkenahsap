@@ -2,7 +2,7 @@ import type { GlobalConfig } from 'payload'
 
 import { isAdminField, isStaff } from '@/access'
 import { validateGaId } from '@/lib/analytics'
-import { validateHref, validateMapEmbedUrl } from '@/lib/http/safe-href'
+import { validateHref, validateHttpsUrl, validateMapEmbedUrl } from '@/lib/http/safe-href'
 import { revalidateGlobal } from '@/hooks/revalidate'
 
 // Single source for NAP, founder facts, socials and WhatsApp templates (schema.org, footer, llms.txt read from here).
@@ -190,7 +190,7 @@ export const SiteSettings: GlobalConfig = {
                 {
                   name: 'googleReview',
                   type: 'text',
-                  validate: validateHref,
+                  validate: validateHttpsUrl,
                   label: 'Google yorum linki',
                   admin: { description: 'Google İşletme Profili\'ndeki "Yorum iste" bağlantısı. Doluysa footer\'da ve Referanslar sayfasında "Google\'da yorum bırakın" bağlantısı çıkar; boşsa hiçbir şey görünmez.' },
                 },

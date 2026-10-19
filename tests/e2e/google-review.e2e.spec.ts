@@ -35,12 +35,17 @@ test.afterAll(async () => {
 })
 
 test.describe('Google review link', () => {
+  // Up to two reload-until-fresh waits (30 s each) per test.
+  test.describe.configure({ timeout: 90_000 })
   test('renders nothing in the footer or on Referanslar when the field is empty', async ({ page }) => {
     await setReview(null)
+    // Only an absolute https link is accepted.
+    const http = await api.post('/api/globals/siteSettings?locale=tr', { data: { social: { ...original.social, googleReview: 'http://g.page/r/x/review' } } })
+    expect(http.status()).toBe(400)
     await gotoUntil(page, '/tr/referanslar', 0)
     await expect(page.getByText("Google'da yorum bırakın")).toHaveCount(0)
     await expect(page.getByRole('heading', { name: 'Bizimle çalıştınız mı?' })).toHaveCount(0)
-    await page.goto('/tr')
+    await gotoUntil(page, '/tr', 0)
     await expect(page.locator('footer').getByText("Google'da yorum bırakın")).toHaveCount(0)
   })
 

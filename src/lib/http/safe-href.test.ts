@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { isMapEmbedUrl, isSafeHref } from './safe-href'
+import { isMapEmbedUrl, isSafeHref, validateHttpsUrl } from './safe-href'
 
 describe('isSafeHref', () => {
   it('allows site-relative paths and http(s) URLs', () => {
@@ -20,5 +20,15 @@ describe('isMapEmbedUrl', () => {
   it('rejects other hosts, schemes and paths', () => {
     for (const h of ['http://www.google.com/maps/embed?pb=x', 'https://www.google.com.evil.com/maps/embed?pb=x', 'https://www.google.com/maps/place/x', 'javascript:alert(1)', '', null, undefined])
       expect(isMapEmbedUrl(h)).toBe(false)
+  })
+})
+
+describe('validateHttpsUrl (#229)', () => {
+  it('accepts empty or an absolute https URL', () => {
+    for (const v of [null, undefined, '', 'https://g.page/r/CR2jWPAf5IeAEBM/review']) expect(validateHttpsUrl(v)).toBe(true)
+  })
+  it('rejects http, site paths and script URLs with a Turkish message', () => {
+    for (const v of ['http://g.page/r/x/review', '/referanslar', 'javascript:alert(1)', 'g.page/r/x', 'https://'])
+      expect(validateHttpsUrl(v)).toBe('Yalnızca https:// ile başlayan tam bir adres girin (Google İşletme Profili → Yorum iste → bağlantıyı kopyala).')
   })
 })
