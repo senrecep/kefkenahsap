@@ -35,7 +35,8 @@
     "privacy": "Datenschutzhinweise (KVKK)",
     "cookies": "Cookie-Richtlinie",
     "rights": "Alle Rechte vorbehalten.",
-    "since": "seit {year}"
+    "since": "seit {year}",
+    "googleReview": "Bewertung auf Google schreiben"
   },
   "Days": {
     "Mo": "Mo",
