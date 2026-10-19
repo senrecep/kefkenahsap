@@ -16,7 +16,7 @@ describe('buildSheet (the PNG / print content)', () => {
       extras: [{ d: 'Vida', q: '2.5', u: 'kg', p: '180' }, { d: 'Nakliye', q: '', u: 'goturu', p: '1500' }],
       meta: { customer: 'Ahmet Bey', job: '', note: '' },
     }
-    const s = buildSheet(input, computeQuote(input), ui, 'tr', new Date('2026-10-19T11:33:00Z'))
+    const s = buildSheet(input, computeQuote(input, 'tr'), ui, 'tr', new Date('2026-10-19T11:33:00Z'))
     expect(s.title).toBe('Malzeme ve teklif hesaplayıcı')
     expect(s.customer).toBe('Müşteri: Ahmet Bey')
     expect(s.note).toBeUndefined()

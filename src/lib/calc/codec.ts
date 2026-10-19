@@ -2,13 +2,14 @@ import { Err } from 'tsentials/errors'
 import { safeJsonParse } from 'tsentials/json'
 import { Result } from 'tsentials/result'
 
-import { normalizeDigits } from './number'
+import { canonical, forLocale, normalizeDigits, parseDecimal } from './number'
 import { EXTRA_UNITS, LENGTH_UNITS, VAT_RATES, type ExtraInput, type QuoteInput, type TimberInput } from './quote'
 
 export const MAX_ROWS = 50
 const CAP = { num: 24, desc: 80, customer: 80, job: 120, note: 500 }
-// v2: values as typed, read by language-independent rules (number.ts). v1 links were read with the page's rules and
-// shared from the Turkish page, so they are migrated as Turkish (#236 review).
+// v2: every number is stored canonically ("20000.5": digits, "." decimal, no grouping), parsed with the rules of the
+// page it was typed on and written back for the page that opens it, so a link means the same in every language
+// (#236 review). v1 stored what was typed on the Turkish page; it is migrated with the rules it was read under then.
 const VERSION = '2'
 // Above the largest quote the form can hold (MAX_ROWS rows, every field at its cap, 3-byte UTF-8 characters: 55 021
 // characters, codec.test.ts); a URL fragment of this size is fine in every browser.
@@ -40,8 +41,8 @@ const fromBase64Url = (s: string): Result<string> => {
 }
 
 /** The calculation as a versioned, URL-safe string ("1.<base64url JSON>") for the share link. */
-export function encodeQuote(input: QuoteInput): string {
-  const q = clamp(input)
+export function encodeQuote(input: QuoteInput, locale: string): string {
+  const q = mapNumbers(clamp(input), (v) => toCanonical(v, locale))
   const packed: Packed = [
     q.units,
     q.timber.map((r) => [r.t, r.w, r.l, r.q, r.p]),
@@ -87,17 +88,29 @@ function unpack(x: unknown): Result<QuoteInput> {
 }
 
 /** A shared link's calculation, or a failure (the page then starts with the empty form). */
-export function decodeQuote(link: string): Result<QuoteInput> {
+export function decodeQuote(link: string, locale: string): Result<QuoteInput> {
   if (link.length > MAX_LINK) return Result.failure(Err.validation('Calc.LinkTooLong', 'The shared calculation is too long.'))
   const dot = link.indexOf('.')
   if (dot < 1) return Result.failure(invalid())
   const version = link.slice(0, dot)
   if (version !== VERSION && version !== '1') return Result.failure(Err.validation('Calc.LinkVersion', 'Unknown calculation version.'))
   const r = Result.then(Result.then(fromBase64Url(link.slice(dot + 1)), (json) => Result.mapError(safeJsonParse(json), () => [invalid()])), unpack)
-  return version === '1' ? Result.map(r, fromV1) : r
+  return Result.map(version === '1' ? Result.map(r, fromV1) : r, (q) => mapNumbers(q, (v) => forLocale(v, locale)))
 }
 
-/** A v1 price, read as the Turkish page read it ("20.000" = 20 000; zeros after the decimals dropped), written unambiguously. */
+/** A typed number in its canonical form; text that does not parse is kept as typed (the form shows its error). */
+const toCanonical = (v: string, locale: string) => {
+  const r = parseDecimal(v, locale)
+  return r.ok ? canonical(r.value) : v
+}
+const mapNumbers = (q: QuoteInput, f: (v: string) => string): QuoteInput => ({
+  ...q,
+  timber: q.timber.map((r) => ({ t: f(r.t), w: f(r.w), l: f(r.l), q: f(r.q), p: f(r.p) })),
+  waste: f(q.waste),
+  extras: q.extras.map((r) => ({ ...r, q: f(r.q), p: f(r.p) })),
+})
+
+/** A v1 price, read as the Turkish page read it then ("20.000" = 20 000; zeros after the decimals dropped), canonical. */
 export function v1Money(raw: string): string {
   const s = normalizeDigits(raw)
   const m = /^(\d{1,3}(?:[. ]\d{3})+)(?:,(\d*))?$/.exec(s) ?? /^(\d*)(?:[.,](\d*))?$/.exec(s)
@@ -105,10 +118,13 @@ export function v1Money(raw: string): string {
   const frac = (m[2] ?? '').replace(/0+$/, '')
   if (frac.length > 2) return raw
   const int = m[1]!.replace(/\D/g, '') || '0'
-  return frac ? `${int},${frac}` : int
+  return frac ? `${int}.${frac}` : int
 }
-// A v1 dimension "1.000" was 1 (decimal point); one more zero keeps that value and is no longer ambiguous.
-const v1Decimal = (raw: string) => (/^-?[1-9]\d{0,2}[.,]\d{3}$/.test(normalizeDigits(raw)) ? `${raw.trim()}0` : raw)
+// A v1 dimension or quantity had no grouping: one "," or "." was the decimal point ("1.000" was 1), canonical.
+const v1Decimal = (raw: string) => {
+  const s = normalizeDigits(raw)
+  return /^-?\d*[.,]?\d*$/.test(s) && /\d/.test(s) ? s.replace(',', '.') : raw
+}
 function fromV1(q: QuoteInput): QuoteInput {
   return {
     ...q,

@@ -6,7 +6,8 @@ import type { AppError } from 'tsentials/errors'
 
 import { buttonClass } from '@/components/ui/button'
 import { decodeQuote, encodeQuote, isFilled, MAX_ROWS } from '@/lib/calc/codec'
-import { formatM3, formatMoney, ISTANBUL } from '@/lib/calc/format'
+import { echoValue, formatM3, formatMoney, ISTANBUL } from '@/lib/calc/format'
+import { forLocale } from '@/lib/calc/number'
 import { parseRemembered, parseRememberedV1, parseSaved, remember, saveEntry, type SavedEntry } from '@/lib/calc/memory'
 import {
   computeQuote,
@@ -148,7 +149,7 @@ export function Calculator({ locale, ui, logoSrc }: CalculatorProps) {
   const uid = useId()
 
   // Totals are derived from the current rows on every render (bug E: no watcher, no stale copy).
-  const quote = useMemo(() => computeQuote(state), [state])
+  const quote = useMemo(() => computeQuote(state, locale), [state, locale])
   const errors = useMemo(() => errorMap(quote.errors), [quote.errors])
   const filled = isFilled(state)
   const money = (k: number) => formatMoney(k, locale)
@@ -166,7 +167,7 @@ export function Calculator({ locale, ui, logoSrc }: CalculatorProps) {
       if (!live) return
       hashRead.current = true
       if (!location.hash.startsWith(HASH)) return
-      const r = decodeQuote(location.hash.slice(HASH.length))
+      const r = decodeQuote(location.hash.slice(HASH.length), locale)
       if (r.ok) dispatch({ type: 'load', quote: r.value })
       else setStatus({ text: ui.linkInvalid, tone: 'error' })
     }
@@ -176,17 +177,17 @@ export function Calculator({ locale, ui, logoSrc }: CalculatorProps) {
       live = false
       window.removeEventListener('hashchange', open)
     }
-  }, [ui.linkInvalid])
+  }, [ui.linkInvalid, locale])
 
   // The address always carries the current calculation (bookmarkable); a fragment never reaches the server or its logs.
   useEffect(() => {
     const id = setTimeout(() => {
       if (!hashRead.current) return
-      const url = `${location.pathname}${location.search}${filled ? HASH + encodeQuote(state) : ''}`
+      const url = `${location.pathname}${location.search}${filled ? HASH + encodeQuote(state, locale) : ''}`
       if (url !== `${location.pathname}${location.search}${location.hash}`) history.replaceState(history.state, '', url)
     }, 300)
     return () => clearTimeout(id)
-  }, [state, filled])
+  }, [state, filled, locale])
 
   // Screen readers hear the total once typing pauses, not on every key.
   const totalText = money(quote.totals.grandKurus)
@@ -199,7 +200,7 @@ export function Calculator({ locale, ui, logoSrc }: CalculatorProps) {
   const rememberExtras = () => {
     const valid = state.extras.filter((_, i) => quote.extras[i]?.ok && quote.extras[i].value)
     if (!valid.length) return
-    store.set(EXTRAS_KEY, remember(memory, valid, new Date()))
+    store.set(EXTRAS_KEY, remember(memory, valid, new Date(), locale))
   }
   const rememberRef = useRef(rememberExtras)
   useEffect(() => {
@@ -227,7 +228,7 @@ export function Calculator({ locale, ui, logoSrc }: CalculatorProps) {
   const shareLink = async () => {
     if (!ready()) return
     // Built from the current state, not the address bar (which is updated 300 ms later).
-    const url = `${location.origin}${location.pathname}${location.search}${HASH}${encodeQuote(state)}`
+    const url = `${location.origin}${location.pathname}${location.search}${HASH}${encodeQuote(state, locale)}`
     track('calc_share_link')
     if (navigator.share && matchMedia('(pointer: coarse)').matches) {
       await navigator.share({ title: state.meta.job || ui.untitled, url }).catch(() => undefined)
@@ -241,7 +242,7 @@ export function Calculator({ locale, ui, logoSrc }: CalculatorProps) {
     if (!ready()) return
     const id = savedId ?? crypto.randomUUID()
     const title = [state.meta.job, state.meta.customer].filter((s) => s.trim()).join(' · ') || ui.untitled
-    const next = saveEntry(saved, { id, title, savedAt: new Date().toISOString(), link: encodeQuote(state) })
+    const next = saveEntry(saved, { id, title, savedAt: new Date().toISOString(), link: encodeQuote(state, locale) })
     track('calc_save_local')
     if (!store.set(SAVED_KEY, next)) return setStatus({ text: ui.storageOff, tone: 'error' })
     setSavedId(id)
@@ -249,7 +250,7 @@ export function Calculator({ locale, ui, logoSrc }: CalculatorProps) {
   }
 
   const openSaved = (e: SavedEntry) => {
-    const r = decodeQuote(e.link)
+    const r = decodeQuote(e.link, locale)
     if (!r.ok) return setStatus({ text: ui.linkInvalid, tone: 'error' })
     dispatch({ type: 'load', quote: r.value })
     setSavedId(e.id)
@@ -417,6 +418,7 @@ export function Calculator({ locale, ui, logoSrc }: CalculatorProps) {
                     numeric={opts.numeric}
                     placeholder={fill(ui.placeholder, { value: opts.example })}
                     error={errorFor(k) && ui.errors[errorFor(k) as keyof CalcUi['errors']]}
+                    echo={echoValue(r[f], f === 'p' ? 'money' : 'number', locale)}
                     className={opts.className}
                     onChange={(v) => dispatch({ type: 'timber', id: r.id, field: f, value: v })}
                     onBlur={() => touch(k)}
@@ -473,6 +475,7 @@ export function Calculator({ locale, ui, logoSrc }: CalculatorProps) {
               value={state.waste}
               placeholder="0"
               hint={ui.wasteHint}
+              echo={echoValue(state.waste, 'number', locale)}
               error={errorFor('waste:0:waste') && ui.errors[errorFor('waste:0:waste') as keyof CalcUi['errors']]}
               className="w-full sm:w-56"
               onChange={(v) => dispatch({ type: 'waste', value: v })}
@@ -537,7 +540,7 @@ export function Calculator({ locale, ui, logoSrc }: CalculatorProps) {
                           const d = e.target.value
                           // Picking a remembered item fills its unit and last price, unless a price is already typed.
                           const hit = memory.find((m) => m.d.toLocaleLowerCase('tr') === d.trim().toLocaleLowerCase('tr'))
-                          dispatch({ type: 'extra', id: r.id, patch: hit && !r.p.trim() ? { d, u: hit.u, p: hit.p } : { d } })
+                          dispatch({ type: 'extra', id: r.id, patch: hit && !r.p.trim() ? { d, u: hit.u, p: forLocale(hit.p, locale) } : { d } })
                         }}
                         onBlur={() => touch(errKey('extras', i, 'd'))}
                         className={`${fieldCls} ${err('d') ? 'border-error' : 'border-ink/25'}`}
@@ -553,6 +556,7 @@ export function Calculator({ locale, ui, logoSrc }: CalculatorProps) {
                       hint={lump ? ui.lumpSum : undefined}
                       hintHidden
                       error={err('q')}
+                      echo={lump ? null : echoValue(r.q, 'number', locale)}
                       className="col-span-2 md:col-span-1"
                       onChange={(v) => dispatch({ type: 'extra', id: r.id, patch: { q: v } })}
                       onBlur={() => touch(errKey('extras', i, 'q'))}
@@ -583,6 +587,7 @@ export function Calculator({ locale, ui, logoSrc }: CalculatorProps) {
                       value={r.p}
                       placeholder={fill(ui.placeholder, { value: '180' })}
                       error={err('p')}
+                      echo={echoValue(r.p, 'money', locale)}
                       className="col-span-2 md:col-span-1"
                       onChange={(v) => dispatch({ type: 'extra', id: r.id, patch: { p: v } })}
                       onBlur={() => touch(errKey('extras', i, 'p'))}
@@ -773,13 +778,16 @@ function NumberField(p: {
   placeholder?: string
   hint?: string
   hintHidden?: boolean
+  /** The value as read (echoValue), shown under the field unless it errs. */
+  echo?: string | null
   error?: string | false
   disabled?: boolean
   className?: string
   onChange: (v: string) => void
   onBlur?: () => void
 }) {
-  const described = [p.error && `${p.id}-e`, p.hint && `${p.id}-h`].filter(Boolean).join(' ') || undefined
+  const echo = !p.error && p.echo
+  const described = [p.error && `${p.id}-e`, echo && `${p.id}-v`, p.hint && `${p.id}-h`].filter(Boolean).join(' ') || undefined
   return (
     <div className={p.className}>
       <label htmlFor={p.id} className={`${labelCls} ${p.srSuffix ? 'md:sr-only' : ''}`}>
@@ -810,6 +818,11 @@ function NumberField(p: {
         )}
       </div>
       {p.error && <FieldError id={`${p.id}-e`}>{p.error}</FieldError>}
+      {echo && (
+        <p id={`${p.id}-v`} className="mt-1 text-[0.875rem] text-ink-soft tabular-nums">
+          = <bdi>{echo}</bdi>
+        </p>
+      )}
       {p.hint && (
         <p id={`${p.id}-h`} className={p.hintHidden ? 'sr-only' : 'mt-1.5 text-[0.9rem] text-ink-soft'}>
           {p.hint}

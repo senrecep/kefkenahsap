@@ -5,18 +5,19 @@ const URL = '/tr/malzeme-hesaplayici'
 const VIEWPORTS = { desktop: { width: 1440, height: 900 }, mobile: { width: 390, height: 844 } }
 
 const field = (page: Page, label: string, row = 1) => page.getByLabel(`${label}, ${row}. satır`, { exact: true })
+const EN = { Kalınlık: 'Thickness', En: 'Width', Boy: 'Length', Adet: 'Pieces', Fiyat: 'Price' } as Record<string, string>
 const summary = (page: Page) => page.locator('aside')
 // Waits for the hydrated island: text typed into the server HTML before hydration is not kept.
 async function open(page: Page, url = URL) {
   await page.goto(url)
   await page.locator('[data-ready]').waitFor()
 }
-async function fillRow(page: Page, row: number, [t, w, l, q, p]: string[]) {
-  await field(page, 'Kalınlık', row).fill(t!)
-  await field(page, 'En', row).fill(w!)
-  await field(page, 'Boy', row).fill(l!)
-  await field(page, 'Adet', row).fill(q!)
-  await field(page, 'Fiyat', row).fill(p!)
+async function fillRow(page: Page, row: number, values: string[], en?: 'row') {
+  const labels = ['Kalınlık', 'En', 'Boy', 'Adet', 'Fiyat']
+  for (const [i, v] of values.entries()) {
+    const l = labels[i]!
+    await (en ? page.getByLabel(`${EN[l]}, row ${row}`, { exact: true }) : field(page, l, row)).fill(v)
+  }
 }
 
 for (const [device, viewport] of Object.entries(VIEWPORTS)) {
@@ -121,12 +122,25 @@ test.describe('#236 review', () => {
     await expect(summary(page)).toContainText('₺4,800.00')
   })
 
-  test('"20.000" is ambiguous: an error with a clear message, not a silent 20 ₺', async ({ page }) => {
+  test('owner decision: tr "20.000" is twenty thousand, "2.5" a decimal; the value as read shows under the field', async ({ page }) => {
     await open(page)
-    await fillRow(page, 1, ['5', '10', '400', '1.000', '20.000'])
+    await fillRow(page, 1, ['2.5', '10', '400', '10', '20.000']) // 2,5 × 10 × 400 cm × 10 = 0,1 m³ × 20 000 = 2 000,00 + KDV = 2 400,00
+    await expect(summary(page)).toContainText('0,100 m³')
+    await expect(summary(page)).toContainText('₺2.400,00')
+    await expect(field(page, 'Fiyat')).toHaveAccessibleDescription('= ₺20.000,00')
+    await expect(field(page, 'Kalınlık')).toHaveAccessibleDescription('= 2,5')
+    await fillRow(page, 1, ['5', '10', '400', '10', '20.000']) // A: 4 800,00
+    await expect(summary(page)).toContainText('₺4.800,00')
+  })
+
+  test('en "20,000" is twenty thousand; en order typed on the tr page is an error with a clear message', async ({ page }) => {
+    await open(page, '/en/material-calculator')
+    await fillRow(page, 1, ['5', '10', '400', '10', '20,000'], 'row')
+    await expect(summary(page)).toContainText('₺4,800.00')
+    await open(page)
+    await fillRow(page, 1, ['5', '10', '400', '10', '20,000.50'])
     await field(page, 'Fiyat').blur()
     await expect(field(page, 'Fiyat')).toHaveAccessibleDescription('Belirsiz sayı: binlik için 1000, ondalık için 1,5 gibi yazın.')
-    await expect(field(page, 'Adet')).toHaveAttribute('aria-invalid', 'true')
   })
 
   test('a link opened in a background tab is not overwritten before it is read', async ({ page }) => {

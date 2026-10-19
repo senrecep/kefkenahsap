@@ -64,7 +64,7 @@ export function roundHalfUp(n: bigint, s: number): number {
   return Number((n * 2n + d) / (2n * d))
 }
 
-type Ctx = { section: string; row: number }
+type Ctx = { section: string; row: number; locale: string }
 const fail = (ctx: Ctx, field: string, error: AppError) =>
   Err.validation(error.code, error.description, ErrorMetadata.fromRecord({ section: ctx.section, row: ctx.row, field }))
 const v = (ctx: Ctx, field: string, code: string) => Err.validation(code, code, ErrorMetadata.fromRecord({ section: ctx.section, row: ctx.row, field }))
@@ -72,7 +72,7 @@ const blank = (...xs: string[]) => xs.every((x) => !x.trim())
 
 /** A decimal field: parsed, > 0 and ≤ max (max given as n / 10^s units of the same scale). */
 function positive(raw: string, ctx: Ctx, field: string, errors: AppError[], max?: Dec): Dec | null {
-  const r = parseDecimal(raw)
+  const r = parseDecimal(raw, ctx.locale)
   if (!r.ok) return errors.push(fail(ctx, field, r.errors[0]!)), null
   const d = r.value
   if (d.n <= 0n) return errors.push(v(ctx, field, 'Calc.NotPositive')), null
@@ -81,13 +81,13 @@ function positive(raw: string, ctx: Ctx, field: string, errors: AppError[], max?
 }
 
 function money(raw: string, ctx: Ctx, errors: AppError[]): number | null {
-  const r = parseMoney(raw)
+  const r = parseMoney(raw, ctx.locale)
   return r.ok ? r.value : (errors.push(fail(ctx, 'p', r.errors[0]!)), null)
 }
 
-function timberLine(input: TimberInput, units: QuoteInput['units'], row: number): Result<TimberLine | null> {
+function timberLine(input: TimberInput, units: QuoteInput['units'], row: number, locale: string): Result<TimberLine | null> {
   if (blank(input.t, input.w, input.l, input.q, input.p)) return Result.success(null)
-  const ctx = { section: 'timber', row }
+  const ctx = { section: 'timber', row, locale }
   const errors: AppError[] = []
   const dims = (['t', 'w', 'l'] as const).map((f, i) => positive(input[f], ctx, f, errors, { n: BigInt(MAX_METRES) * pow10(UNIT_SCALE[units[i]!]), s: 0 }))
   const q = positive(input.q, ctx, 'q', errors, { n: BigInt(MAX_PIECES), s: 0 })
@@ -113,10 +113,10 @@ function timberLine(input: TimberInput, units: QuoteInput['units'], row: number)
   })
 }
 
-function extraLine(input: ExtraInput, row: number): Result<ExtraLine | null> {
+function extraLine(input: ExtraInput, row: number, locale: string): Result<ExtraLine | null> {
   const lumpSum = input.u === 'goturu'
   if (blank(input.d, lumpSum ? '' : input.q, input.p)) return Result.success(null)
-  const ctx = { section: 'extras', row }
+  const ctx = { section: 'extras', row, locale }
   const errors: AppError[] = []
   if (!input.d.trim()) errors.push(v(ctx, 'd', 'Calc.Required'))
   // götürü (lump sum): the quantity is always 1.
@@ -128,10 +128,10 @@ function extraLine(input: ExtraInput, row: number): Result<ExtraLine | null> {
   return Result.success({ kurus: roundHalfUp(kurus, q!.s), qty: num(q!), priceKurus: price! })
 }
 
-function wastePercent(raw: string): Result<Dec | null> {
+function wastePercent(raw: string, locale: string): Result<Dec | null> {
   if (!raw.trim()) return Result.success(null)
-  const ctx = { section: 'waste', row: 0 }
-  const r = parseDecimal(raw)
+  const ctx = { section: 'waste', row: 0, locale }
+  const r = parseDecimal(raw, locale)
   if (!r.ok) return Result.failure(fail(ctx, 'waste', r.errors[0]!))
   const out = r.value.n < 0n || r.value.n > 100n * pow10(r.value.s)
   return out ? Result.failure(v(ctx, 'waste', 'Calc.OutOfRange')) : Result.success(r.value)
@@ -144,13 +144,13 @@ const sum = (xs: number[]) => xs.reduce((s, x) => s + x, 0)
 /**
  * The whole quote, derived from the current input on every call (bug E: the old app watched a stale array). Money is
  * integer kuruş: each line is rounded once, the subtotal is the sum of the shown lines, and KDV is computed on that
- * rounded subtotal, so the lines on screen and in an export always add up (bug F). Entered prices exclude KDV. Nothing
- * here depends on the page language (#236 review): a link or saved quote means the same everywhere.
+ * rounded subtotal, so the lines on screen and in an export always add up (bug F). Entered prices exclude KDV. Numbers are read
+ * as typed on a page in `locale` (number.ts); links and saved quotes store them canonically (codec.ts).
  */
-export function computeQuote(input: QuoteInput): Quote {
-  const timber = input.timber.map((r, i) => timberLine(r, input.units, i))
-  const extras = input.extras.map((r, i) => extraLine(r, i))
-  const waste = wastePercent(input.waste)
+export function computeQuote(input: QuoteInput, locale: string): Quote {
+  const timber = input.timber.map((r, i) => timberLine(r, input.units, i, locale))
+  const extras = input.extras.map((r, i) => extraLine(r, i, locale))
+  const waste = wastePercent(input.waste, locale)
   const lines = timber.map(value).filter((l) => l !== null)
   const m3 = sum(lines.map((l) => l.m3))
   const timberKurus = sum(lines.map((l) => l.kurus ?? 0))

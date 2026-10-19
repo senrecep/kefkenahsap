@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { formatM3, formatMoney, formatStamp, ISTANBUL } from './format'
+import { echoValue, formatM3, formatMoney, formatStamp, ISTANBUL } from './format'
 
 // Intl separates currency and number with a no-break space in some locales; compare with plain spaces.
 const plain = (s: string) => s.replace(/[\u00a0\u202f]/g, ' ').replace(/[\u200e\u200f\u061c]/g, '')
@@ -37,5 +37,24 @@ describe('formatStamp: Europe/Istanbul whatever the device time zone', () => {
   it('formats 2026-10-19T11:33Z as 14:33 in Istanbul', () => {
     expect(ISTANBUL).toBe('Europe/Istanbul')
     expect(plain(formatStamp(new Date('2026-10-19T11:33:00Z'), 'tr'))).toBe('19 Ekim 2026 14:33')
+  })
+})
+
+describe('echoValue: the value as read, shown under a field so a misread is visible at once (owner decision)', () => {
+  it.each([
+    ['tr', '20.000', 'money', '₺20.000,00'],
+    ['tr', '20000', 'money', '₺20.000,00'],
+    ['en', '20,000', 'money', '₺20,000.00'],
+    ['tr', '2.5', 'number', '2,5'], // phone keypad dot read as the decimal point
+    ['tr', '1.000', 'number', '1000'], // a thousand: shown without grouping, so it cannot read as 1
+    ['en', '2,5', 'number', '2.5'],
+  ] as const)('%s %j (%s) → %s', (locale, raw, kind, expected) => {
+    expect(echoValue(raw, kind, locale)?.replace(/[  ]/g, ' ')).toBe(expected)
+  })
+  it('nothing for an empty or unreadable field, or one that already reads exactly as typed', () => {
+    expect(echoValue('', 'number', 'tr')).toBeNull()
+    expect(echoValue('abc', 'number', 'tr')).toBeNull()
+    expect(echoValue('400', 'number', 'tr')).toBeNull()
+    expect(echoValue('2,5', 'number', 'tr')).toBeNull()
   })
 })

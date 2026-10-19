@@ -2,6 +2,7 @@ import { safeJsonParse } from 'tsentials/json'
 import { Result } from 'tsentials/result'
 
 import { v1Money } from './codec'
+import { canonical, parseDecimal } from './number'
 import { EXTRA_UNITS, type ExtraInput, type ExtraUnit } from './quote'
 
 // Device-only lists (localStorage): saved calculations and the extra items a user keeps typing. Nothing leaves the device.
@@ -32,14 +33,15 @@ export const parseRememberedV1 = (raw: string | null) => parseRemembered(raw).ma
 /** Newest first; saving under an existing id replaces it. */
 export const saveEntry = (saved: SavedEntry[], e: SavedEntry) => [e, ...saved.filter((s) => s.id !== e.id)].slice(0, MAX_SAVED)
 
-/** Adds the described extra items (description, unit, last price), most recently used first. */
-export function remember(mem: Remembered[], extras: ExtraInput[], now: Date): Remembered[] {
+/** Adds the described extra items (description, unit, last price, canonical), most recently used first. */
+export function remember(mem: Remembered[], extras: ExtraInput[], now: Date, locale: string): Remembered[] {
   let out = mem
   for (const x of extras) {
     const d = x.d.trim()
     if (!d) continue
     const prev = out.find((m) => fold(m.d) === fold(d))
-    out = [{ d, u: x.u, p: x.p.trim(), n: (prev?.n ?? 0) + 1, t: now.getTime() }, ...out.filter((m) => m !== prev)]
+    const price = parseDecimal(x.p, locale) // stored canonically: it is offered again on pages in any language
+    out = [{ d, u: x.u, p: price.ok ? canonical(price.value) : x.p.trim(), n: (prev?.n ?? 0) + 1, t: now.getTime() }, ...out.filter((m) => m !== prev)]
   }
   return out.sort((a, b) => b.t - a.t).slice(0, MAX_REMEMBERED)
 }

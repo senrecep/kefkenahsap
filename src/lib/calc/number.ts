@@ -20,55 +20,62 @@ export function normalizeDigits(input: string): string {
 
 const toDec = (sign: string, int: string, frac: string): Dec => ({ n: BigInt(`${sign}${int || '0'}${frac}`), s: frac.length })
 
-const ambiguous = () => Err.validation('Calc.Ambiguous', 'A lone separator before three digits could be thousands or decimals.')
-// "1.000", "20,500": a lone separator after 1–3 digits (not a leading 0) before exactly three digits reads as thousands
-// in one language and as decimals in another. It is never guessed: the rules below do not depend on the page language,
-// so a share link or a saved quote means the same on /tr and /en (#236 review).
-const isAmbiguous = (int: string, frac: string | undefined) => /^[1-9]\d{0,2}$/.test(int) && frac?.length === 3
+const ambiguous = () => Err.validation('Calc.Ambiguous', 'Separators that contradict the page language.')
+const esc = (c: string) => c.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+
+/** The page language's grouping and decimal characters (Latin digits, as the site formats them). */
+function separators(locale: string) {
+  const parts = new Intl.NumberFormat(locale, { numberingSystem: 'latn' }).formatToParts(12345.6)
+  // ru groups with a no-break space; input spaces are normalised to ' '.
+  const of = (type: string) => normalizeDigits(parts.find((p) => p.type === type)?.value ?? '') || ' '
+  return { group: of('group'), decimal: of('decimal') }
+}
 
 /**
- * A dimension, quantity or percentage as typed: `,` and `.` are both the decimal separator (bug B: the old app dropped
- * the comma and read "2,5" as 25), Arabic-Indic digits are accepted, grouping is not ("1.000,5" is rejected).
+ * A number as typed on a page in `locale` (owner decision 2026-10-19): that language's grouping is read as thousands
+ * when the groups have exactly three digits (tr "20.000" = 20 000, en "1,000.5"), its decimal separator as the decimal
+ * point, a space always as grouping. Phone keypads: the other separator ("2.5" on tr, "2,5" on en) is a decimal when
+ * three digits do not follow it. Input that contradicts the language ("1,000.5" on tr) is ambiguous, never guessed;
+ * wrong group sizes are invalid. Arabic-Indic digits and Arabic separators are accepted everywhere.
  */
-export function parseDecimal(input: string): Result<Dec> {
+export function parseDecimal(input: string, locale: string): Result<Dec> {
   const s = normalizeDigits(input)
   if (!s) return Result.failure(required())
-  const m = /^(-?)(\d*)(?:[.,](\d*))?$/.exec(s)
-  if (!m || !`${m[2]}${m[3] ?? ''}`) return Result.failure(invalid())
-  if (isAmbiguous(m[2]!, m[3])) return Result.failure(ambiguous())
-  return Result.success(toDec(m[1]!, m[2]!, m[3] ?? ''))
+  const sign = s.startsWith('-') ? '-' : ''
+  const body = sign ? s.slice(1) : s
+  const { group, decimal } = separators(locale)
+  const other = decimal === ',' ? '.' : ','
+  const d = esc(decimal)
+  const plain = new RegExp(`^(\\d*)(?:${d}(\\d*))?$`).exec(body)
+  if (plain && `${plain[1]}${plain[2] ?? ''}`) return Result.success(toDec(sign, plain[1]!, plain[2] ?? ''))
+  const g = group === ' ' ? ' ' : `[${esc(group)} ]`
+  const grouped = new RegExp(`^([1-9]\\d{0,2})((?:${g}\\d{3})+)(?:${d}(\\d+))?$`).exec(body)
+  if (grouped) return Result.success(toDec(sign, grouped[1]! + grouped[2]!.replace(/\D/g, ''), grouped[3] ?? ''))
+  const lone = new RegExp(`^(\\d*)${esc(other)}(\\d+)$`).exec(body)
+  // "2.5" / "0.500" on tr: the other separator cannot be grouping here, so it is the decimal point.
+  if (lone && (lone[2]!.length !== 3 || !/[1-9]/.test(lone[1]!))) return Result.success(toDec(sign, lone[1]!, lone[2]!))
+  if (lone || (body.includes('.') && body.includes(','))) return Result.failure(ambiguous())
+  return Result.failure(invalid())
 }
 
 const MAX_KURUS = 1e13
 
-/**
- * A price to integer kuruş. Grouping is understood when it cannot be anything else: a repeated separator
- * ("1.234.567"), a space, or a different decimal separator after it ("20.000,50", "20,000.50"). A lone separator
- * before three digits ("20.000") is ambiguous; any other lone separator is the decimal point. At most two decimals,
- * counted as typed (trailing zeros included).
- */
-export function parseMoney(input: string): Result<number> {
-  const s = normalizeDigits(input)
-  if (!s) return Result.failure(required())
-  const negative = s.startsWith('-')
-  const body = negative ? s.slice(1) : s
-  let int: string
-  let frac: string
-  const grouped = /^([1-9]\d{0,2})((?:([., ])\d{3})(?:\3\d{3})*)(?:([.,])(\d+))?$/.exec(body)
-  if (grouped) {
-    const [, head, groups, sep, dot, decimals] = grouped
-    if (dot && dot === sep) return Result.failure(invalid())
-    if (!dot && sep !== ' ' && groups!.length === 4) return Result.failure(ambiguous())
-    int = head! + groups!.replace(/\D/g, '')
-    frac = decimals ?? ''
-  } else {
-    const plain = /^(\d*)(?:[.,](\d*))?$/.exec(body)
-    if (!plain || !`${plain[1]}${plain[2] ?? ''}`) return Result.failure(invalid())
-    int = plain[1]!
-    frac = plain[2] ?? ''
-  }
-  if (negative) return Result.failure(Err.validation('Calc.Negative', 'Must not be negative.'))
-  if (frac.length > 2) return Result.failure(Err.validation('Calc.TooManyDecimals', 'At most two decimals.'))
-  const kurus = Number(int || '0') * 100 + Number(frac.padEnd(2, '0'))
+/** A price as typed on a page in `locale` (rules of parseDecimal), to integer kuruş; at most two decimals as typed. */
+export function parseMoney(input: string, locale: string): Result<number> {
+  const r = parseDecimal(input, locale)
+  if (!r.ok) return r
+  const { n, s } = r.value
+  if (n < 0n) return Result.failure(Err.validation('Calc.Negative', 'Must not be negative.'))
+  if (s > 2) return Result.failure(Err.validation('Calc.TooManyDecimals', 'At most two decimals.'))
+  const kurus = Number(n) * 10 ** (2 - s)
   return Result.successIf(kurus <= MAX_KURUS, kurus, Err.validation('Calc.TooLarge', 'Too large.'))
 }
+
+/** Canonical stored form of a parsed number: digits, "." as the decimal point, no grouping ("20000.5"). */
+export const canonical = (d: Dec) => {
+  const abs = (d.n < 0n ? -d.n : d.n).toString().padStart(d.s + 1, '0')
+  return `${d.n < 0n ? '-' : ''}${d.s ? `${abs.slice(0, -d.s)}.${abs.slice(-d.s)}` : abs}`
+}
+
+/** A canonical value written for typing on a page in `locale` (its decimal separator, no grouping). */
+export const forLocale = (value: string, locale: string) => (/^-?\d+(\.\d+)?$/.test(value) ? value.replace('.', separators(locale).decimal) : value)
