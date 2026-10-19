@@ -3,6 +3,7 @@ import { getPayload } from 'payload'
 import sharp from 'sharp'
 
 import config from '../../src/payload.config.js'
+import { adminApi, ensureHeroSlides } from '../helpers/content'
 import { login } from '../helpers/login'
 
 // #157: every control a finger can hit on the editor's screens is at least 48×48 CSS px, for admins and editors,
@@ -67,7 +68,10 @@ let pageId: number
 test.describe('admin tap targets', () => {
   test.describe.configure({ mode: 'serial', timeout: 300_000 })
 
+  // The homepage screen needs layout rows; an empty DB (CI, sharded) has none, so make sure they exist.
+  let restoreHomepage = async () => {}
   test.beforeAll(async () => {
+    restoreHomepage = await ensureHeroSlides(await adminApi())
     const payload = await getPayload({ config })
     for (const u of users) await payload.create({ collection: 'users', data: u })
     categoryId = (await payload.create({ collection: 'categories', locale: 'tr', data: { name: category } })).id
@@ -94,6 +98,7 @@ test.describe('admin tap targets', () => {
   })
 
   test.afterAll(async () => {
+    await restoreHomepage()
     const payload = await getPayload({ config })
     // Never delete with an undefined filter: if beforeAll failed early there is no category to clean up.
     if (categoryId) {

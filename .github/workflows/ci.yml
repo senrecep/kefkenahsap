@@ -38,26 +38,6 @@ env:
   AI_FAKE_PROVIDER: '1'
 
 jobs:
-  static:
-    # Self-hosted runner on the Dokploy server (docs/RUNBOOK.md): GitHub-hosted minutes are unavailable for this account.
-    runs-on: [self-hosted, kefken]
-    # The self-hosted runner has the host Docker socket: never run code from forks on it.
-    if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
-    timeout-minutes: 15
-    steps:
-      - uses: actions/checkout@v4
-      - uses: oven-sh/setup-bun@v2
-        with:
-          bun-version: 1.3.14
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 24
-      - run: bun install --frozen-lockfile
-      - run: bun run typecheck
-      - run: bun run lint
-      - name: Generated files are committed
-        run: bun run check:generated
-
   test:
     # Self-hosted runner on the Dokploy server (docs/RUNBOOK.md): GitHub-hosted minutes are unavailable for this account.
     runs-on: [self-hosted, kefken]
@@ -116,6 +96,10 @@ jobs:
           aws s3 mb s3://kefken-media
           aws s3 mb s3://kefken-leads
           aws s3api put-bucket-policy --bucket kefken-media --policy '{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Principal":"*","Action":["s3:GetObject"],"Resource":["arn:aws:s3:::kefken-media/*"]}]}'
+      - run: bun run typecheck
+      - run: bun run lint
+      - name: Generated files are committed
+        run: bun run check:generated
       - name: Unit + integration tests
         run: bun run test
 
@@ -127,7 +111,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        shard: [1, 2, 3]
+        shard: [1, 2]
     services:
       postgres:
         image: postgres:17-alpine
@@ -186,12 +170,12 @@ jobs:
       # Each shard builds for itself: a build is ~50 s, cheaper than shipping .next through artifacts between runners.
       - name: Build
         run: bun run build
-      - name: E2E (production build, shard ${{ matrix.shard }}/3)
+      - name: E2E (production build, shard ${{ matrix.shard }}/2)
         env:
           E2E_START_COMMAND: bun run start -- -p ${{ env.E2E_PORT }}
           # Full axe matrix for these; other locales get home/category/contact/404 on mobile (tests/e2e/a11y.e2e.spec.ts).
           A11Y_FULL_LOCALES: tr,en
-        run: bun run test:e2e -- --shard=${{ matrix.shard }}/3
+        run: bun run test:e2e -- --shard=${{ matrix.shard }}/2
       - uses: actions/upload-artifact@v4
         if: failure()
         with:

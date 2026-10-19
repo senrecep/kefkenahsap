@@ -37,9 +37,9 @@ ssh senrecep "docker rm -f kefken-gh-runner-$N; mkdir -p /var/lib/kefken-runner-
 
 ## Deploys
 
-PRs to `main` run CI (`static`, `test`, `e2e` in 3 shards). A push to `main` (the merge) runs only the `deploy` job: it builds the image and calls Dokploy `compose.deploy` with the `production` environment's `DOKPLOY_API_KEY` secret and `DOKPLOY_COMPOSE_ID` variable. Deploys queue and never overlap. The dev environment and the `development` branch are retired (2026-10-19).
+PRs to `main` run CI (`test` = typecheck, lint, generated files, unit + integration; `e2e` in 2 shards, so the run fits the 3 runners). A push to `main` (the merge) runs only the `deploy` job: it builds the image and calls Dokploy `compose.deploy` with the `production` environment's `DOKPLOY_API_KEY` secret and `DOKPLOY_COMPOSE_ID` variable. Deploys queue and never overlap. The dev environment and the `development` branch are retired (2026-10-19).
 
-**Recommended branch protection on `main` (owner, Settings → Branches):** require status checks `static`, `test`, `e2e (1)`, `e2e (2)`, `e2e (3)`, and enable "Require branches to be up to date before merging" (the merge itself does not re-run tests, so a stale branch would deploy untested). Optionally require a PR review.
+**Recommended branch protection on `main` (owner, Settings → Branches):** require status checks `test`, `e2e (1)`, `e2e (2)`, and enable "Require branches to be up to date before merging" (the merge itself does not re-run tests, so a stale branch would deploy untested). Optionally require a PR review.
 
 Lighthouse CI runs weekly (Mondays) and on demand against production: `.github/workflows/lighthouse.yml`, report in the run's artifacts.
 
