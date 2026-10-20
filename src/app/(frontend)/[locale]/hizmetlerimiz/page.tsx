@@ -15,17 +15,18 @@ import { galleryTileCover, galleryTileFills } from '@/lib/gallery/curate'
 import { siteUrl } from '@/lib/seo/alternates'
 import { pageJsonLd } from '@/lib/seo/jsonld'
 import { pageMetadata, staticPaths } from '@/lib/seo/page-metadata'
+import { requireLocale } from '@/i18n/require-locale'
 
 type Params = Promise<{ locale: Locale }>
 
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
-  const { locale } = await params
+  const { locale } = await requireLocale(params)
   const t = await getTranslations({ locale, namespace: 'Services' })
   return pageMetadata({ locale, title: t('title'), description: t('description'), paths: await staticPaths('/hizmetlerimiz') })
 }
 
 export default async function ServicesPage({ params }: { params: Params }) {
-  const { locale } = await params
+  const { locale } = await requireLocale(params)
   setRequestLocale(locale)
   const [t, tGallery, tiles, curated] = await Promise.all([getTranslations('Services'), getTranslations('Gallery'), getServiceTiles(locale), getFeaturedImages(locale, 24).catch(() => [])])
   const cover = galleryTileCover(curated, tiles)

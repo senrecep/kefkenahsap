@@ -16,18 +16,19 @@ import { categoryFilter } from '@/lib/projects/facts'
 import { siteUrl } from '@/lib/seo/alternates'
 import { itemListJsonLd, pageJsonLd } from '@/lib/seo/jsonld'
 import { pageMetadata, staticPaths } from '@/lib/seo/page-metadata'
+import { requireLocale } from '@/i18n/require-locale'
 
 type Params = Promise<{ locale: Locale }>
 type Search = Promise<{ kategori?: string | string[] }>
 
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
-  const { locale } = await params
+  const { locale } = await requireLocale(params)
   const t = await getTranslations({ locale, namespace: 'Projects' })
   return pageMetadata({ locale, title: t('title'), description: t('description'), paths: await staticPaths('/projeler') })
 }
 
 export async function ProjectsPage({ params, searchParams }: { params: Params; searchParams: Search }) {
-  const { locale } = await params
+  const { locale } = await requireLocale(params)
   setRequestLocale(locale)
   // #148: outdoor work first (first category's admin order), newest first within a category.
   const [t, cards, { kategori }] = await Promise.all([getTranslations('Projects'), getProjectCards(locale).then((c) => [...c].sort(byCategoryOrder)), searchParams])

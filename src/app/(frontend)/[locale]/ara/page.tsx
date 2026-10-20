@@ -15,6 +15,7 @@ import { getNavCategories } from '@/lib/data/site'
 import { searchSite } from '@/lib/search/search'
 import { resultSections } from '@/lib/search/sections'
 import { pageMetadata, staticPaths } from '@/lib/seo/page-metadata'
+import { requireLocale } from '@/i18n/require-locale'
 
 // Per group; a full group shows "24+" since more matches may exist.
 const LIMIT = 24
@@ -25,7 +26,7 @@ type Props = { params: Promise<{ locale: string }>; searchParams: Promise<{ q?: 
 export const dynamic = 'force-dynamic'
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { locale } = await params
+  const { locale } = await requireLocale(params)
   const t = await getTranslations({ locale, namespace: 'Search' })
   // Search result pages are never indexed (PLAN §5.1); robots.ts also disallows /*/ara.
   return pageMetadata({ locale: locale as Locale, title: t('title'), paths: await staticPaths('/ara'), noindex: true })
@@ -34,7 +35,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 const h2 = 'font-[family-name:var(--font-display)] text-xl font-semibold'
 
 export default async function SearchPage({ params, searchParams }: Props) {
-  const { locale: l } = await params
+  const { locale: l } = await requireLocale(params)
   const locale = l as Locale
   setRequestLocale(locale)
   const raw = (await searchParams).q

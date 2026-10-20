@@ -11,6 +11,7 @@ import { firstHero as findFirstHero, homeSections } from '@/lib/home/sections'
 import { heroSlides } from '@/lib/home/slides'
 import { pageMetadata, staticPaths } from '@/lib/seo/page-metadata'
 import type { Homepage } from '@/payload-types'
+import { requireLocale } from '@/i18n/require-locale'
 
 type Props = { params: Promise<{ locale: Locale }> }
 type Block = NonNullable<Homepage['layout']>[number]
@@ -18,7 +19,7 @@ type Block = NonNullable<Homepage['layout']>[number]
 type Fields<T extends Block['blockType']> = Partial<Extract<Block, { blockType: T }>>
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { locale } = await params
+  const { locale } = await requireLocale(params)
   const [t, settings] = await Promise.all([getTranslations({ locale, namespace: 'Home' }), getSiteSettings(locale)])
   return pageMetadata({
     locale,
@@ -39,7 +40,7 @@ async function Isolated({ name, render, fallback }: { name: string; render: () =
 }
 
 export default async function HomePage({ params }: Props) {
-  const { locale } = await params
+  const { locale } = await requireLocale(params)
   setRequestLocale(locale)
   const homepage = await getHomepage(locale).catch((err) => {
     console.error('homepage global failed; using default sections', err)

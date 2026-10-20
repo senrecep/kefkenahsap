@@ -15,11 +15,12 @@ import { PAGE_SIZE, parseGalleryQuery } from '@/lib/gallery/query'
 import { siteUrl } from '@/lib/seo/alternates'
 import { pageJsonLd } from '@/lib/seo/jsonld'
 import { pageMetadata, staticPaths } from '@/lib/seo/page-metadata'
+import { requireLocale } from '@/i18n/require-locale'
 
 type Props = { params: Promise<{ locale: Locale }>; searchParams: Promise<Record<string, string | string[] | undefined>> }
 
 export async function generateMetadata({ params, searchParams }: Props): Promise<Metadata> {
-  const [{ locale }, query] = await Promise.all([params, searchParams])
+  const [{ locale }, query] = await Promise.all([requireLocale(params), searchParams])
   const parsed = parseGalleryQuery(query)
   const t = await getTranslations({ locale, namespace: 'Gallery' })
   return pageMetadata({
@@ -33,7 +34,7 @@ export async function generateMetadata({ params, searchParams }: Props): Promise
 }
 
 export async function GalleryPage({ params, searchParams }: Props) {
-  const { locale } = await params
+  const { locale } = await requireLocale(params)
   setRequestLocale(locale)
   const parsed = parseGalleryQuery(await searchParams)
   if (!parsed.ok) notFound()

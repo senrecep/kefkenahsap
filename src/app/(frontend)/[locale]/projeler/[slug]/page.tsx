@@ -22,6 +22,7 @@ import { publicTestimonial } from '@/lib/projects/testimonial'
 import { siteUrl } from '@/lib/seo/alternates'
 import { creativeWorkJsonLd } from '@/lib/seo/jsonld'
 import { pageMetadata } from '@/lib/seo/page-metadata'
+import { requireLocale } from '@/i18n/require-locale'
 
 type Params = Promise<{ locale: Locale; slug: string }>
 
@@ -33,7 +34,7 @@ const hasText = (n: LexicalNode | undefined): boolean => Boolean(n && (n.type ==
 export const generateStaticParams = () => []
 
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
-  const { locale, slug } = await params
+  const { locale, slug } = await requireLocale(params)
   const data = await getProject(locale, safeDecode(slug))
   // notFound() here sets a real 404 status before the page body streams.
   if (!data) notFound()
@@ -44,7 +45,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
 }
 
 export default async function ProjectPage({ params }: { params: Params }) {
-  const { locale, slug: raw } = await params
+  const { locale, slug: raw } = await requireLocale(params)
   setRequestLocale(locale)
   const slug = safeDecode(raw)
   const data = await getProject(locale, slug)

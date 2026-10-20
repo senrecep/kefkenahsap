@@ -28,6 +28,7 @@ import { responsiveImage } from '@/lib/media/image'
 import { siteUrl } from '@/lib/seo/alternates'
 import { faqJsonLd, serviceJsonLd } from '@/lib/seo/jsonld'
 import { pageMetadata } from '@/lib/seo/page-metadata'
+import { requireLocale } from '@/i18n/require-locale'
 
 type Params = Promise<{ locale: Locale; category: string }>
 type Query = { sayfa?: string | string[] } & Record<string, string | string[] | undefined>
@@ -50,7 +51,7 @@ async function categoryOrRedirect(locale: Locale, slug: string, limit: number, q
 }
 
 export async function generateMetadata({ params, searchParams }: { params: Params; searchParams: Search }): Promise<Metadata> {
-  const [{ locale, category: slug }, query] = await Promise.all([params, searchParams])
+  const [{ locale, category: slug }, query] = await Promise.all([requireLocale(params), searchParams])
   const { sayfa } = query
   // notFound()/permanentRedirect() here set a real status before the page body streams.
   const { category, locales } = await categoryOrRedirect(locale, safeDecode(slug), galleryLimit(1) + 1, query)
@@ -66,7 +67,7 @@ export async function generateMetadata({ params, searchParams }: { params: Param
 }
 
 export async function CategoryPage({ params, searchParams }: { params: Params; searchParams: Search }) {
-  const { locale, category: rawSlug } = await params
+  const { locale, category: rawSlug } = await requireLocale(params)
   setRequestLocale(locale)
   const slug = safeDecode(rawSlug)
   const query = await searchParams

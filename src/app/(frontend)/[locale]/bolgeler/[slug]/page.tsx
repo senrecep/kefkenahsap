@@ -16,6 +16,7 @@ import { safeDecode } from '@/lib/http/safe-decode'
 import { bodyText } from '@/lib/regions/gate'
 import { siteUrl } from '@/lib/seo/alternates'
 import { pageMetadata } from '@/lib/seo/page-metadata'
+import { requireLocale } from '@/i18n/require-locale'
 
 type Params = Promise<{ locale: Locale; slug: string }>
 
@@ -23,7 +24,7 @@ type Params = Promise<{ locale: Locale; slug: string }>
 export const generateStaticParams = () => []
 
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
-  const { locale, slug } = await params
+  const { locale, slug } = await requireLocale(params)
   const data = await getRegion(locale, safeDecode(slug))
   if (!data) notFound()
   // `paths` is null for every locale that fails the publish gate: that page is noindex and out of hreflang.
@@ -36,7 +37,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
 }
 
 export default async function RegionPage({ params }: { params: Params }) {
-  const { locale, slug: raw } = await params
+  const { locale, slug: raw } = await requireLocale(params)
   setRequestLocale(locale)
   const slug = safeDecode(raw)
   const data = await getRegion(locale, slug)

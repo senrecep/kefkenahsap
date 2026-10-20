@@ -18,18 +18,19 @@ import { pageJsonLd } from '@/lib/seo/jsonld'
 import { pageMetadata, staticPaths } from '@/lib/seo/page-metadata'
 
 import { ContactForm, type ContactCopy } from './ContactForm'
+import { requireLocale } from '@/i18n/require-locale'
 
 type Props = { params: Promise<{ locale: string }> }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { locale } = await params
+  const { locale } = await requireLocale(params)
   const t = await getTranslations({ locale, namespace: 'Contact' })
   // metaTitle already names the company, so it bypasses the layout's "| company" template.
   return pageMetadata({ locale: locale as Locale, title: { absolute: t('metaTitle') }, description: t('metaDescription'), paths: await staticPaths('/iletisim') })
 }
 
 export default async function ContactPage({ params }: Props) {
-  const { locale: l } = await params
+  const { locale: l } = await requireLocale(params)
   const locale = l as Locale
   setRequestLocale(locale)
   const [t, tDays, settings, categories] = await Promise.all([

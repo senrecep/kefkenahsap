@@ -19,6 +19,7 @@ import { getSiteSettings } from '@/lib/data/site'
 import { siteUrl } from '@/lib/seo/alternates'
 import { pageJsonLd } from '@/lib/seo/jsonld'
 import { cmsPagePaths, pageMetadata } from '@/lib/seo/page-metadata'
+import { requireLocale } from '@/i18n/require-locale'
 
 const SLUGS = CMS_PAGES['/hakkimizda']
 // The jobs that show capacity (PRODUCT.md positioning): bridges and piers, then timber structures.
@@ -27,7 +28,7 @@ const WORK_CATEGORIES = ['kopru-ve-iskele', 'sundurma-ve-ahsap-cati', 'ahsap-yap
 type Props = { params: Promise<{ locale: string }> }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { locale } = await params
+  const { locale } = await requireLocale(params)
   const [t, page, settings] = await Promise.all([getTranslations({ locale, namespace: 'About' }), getPage(locale as Locale, SLUGS), getSiteSettings(locale as Locale)])
   // An admin-written SEO title is complete; otherwise the layout template appends the company name.
   return pageMetadata({
@@ -39,7 +40,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function AboutPage({ params }: Props) {
-  const { locale: l } = await params
+  const { locale: l } = await requireLocale(params)
   const locale = l as Locale
   setRequestLocale(locale)
   const [t, page, settings, photos] = await Promise.all([getTranslations('About'), getPage(locale, SLUGS), getSiteSettings(locale), getWorkPhotos(locale, WORK_CATEGORIES, 3)])
