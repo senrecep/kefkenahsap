@@ -12,19 +12,20 @@ import type { Locale } from '@/i18n/routing'
 import { siteUrl } from '@/lib/seo/alternates'
 import { webApplicationJsonLd } from '@/lib/seo/jsonld'
 import { pageMetadata, staticPaths } from '@/lib/seo/page-metadata'
+import { requireLocale } from '@/i18n/require-locale'
 
 type Params = Promise<{ locale: Locale }>
 
 // The calculation lives in the URL fragment (#c=…), which never reaches the server: the page stays one cached
 // document, and a filled link is never a separate URL to index (its canonical is this clean page).
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
-  const { locale } = await params
+  const { locale } = await requireLocale(params)
   const t = await getTranslations({ locale, namespace: 'Calculator' })
   return pageMetadata({ locale, title: t('title'), description: t('description'), paths: await staticPaths('/malzeme-hesaplayici') })
 }
 
 export default async function CalculatorPage({ params }: { params: Params }) {
-  const { locale } = await params
+  const { locale } = await requireLocale(params)
   setRequestLocale(locale)
   const [t, messages] = await Promise.all([getTranslations('Calculator'), getMessages()])
   const ui: CalcUi = { ...(messages as unknown as { Calculator: { ui: Omit<CalcUi, 'title'> } }).Calculator.ui, title: t('title') }

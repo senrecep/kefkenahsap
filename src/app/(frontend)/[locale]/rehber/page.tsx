@@ -12,11 +12,12 @@ import { getGuides } from '@/lib/data/guides'
 import { siteUrl } from '@/lib/seo/alternates'
 import { pageJsonLd } from '@/lib/seo/jsonld'
 import { pageMetadata, staticPaths } from '@/lib/seo/page-metadata'
+import { requireLocale } from '@/i18n/require-locale'
 
 type Props = { params: Promise<{ locale: Locale }> }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { locale } = await params
+  const { locale } = await requireLocale(params)
   const t = await getTranslations({ locale, namespace: 'Guides' })
   const empty = (await getGuides(locale)).length === 0
   // An empty index is a thin page: keep it out of the index until the first guide is published.
@@ -24,7 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function GuidesIndex({ params }: Props) {
-  const { locale } = await params
+  const { locale } = await requireLocale(params)
   setRequestLocale(locale)
   const [t, guides] = await Promise.all([getTranslations('Guides'), getGuides(locale)])
 

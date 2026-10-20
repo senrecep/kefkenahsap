@@ -17,6 +17,7 @@ import { responsiveImage } from '@/lib/media/image'
 import { siteUrl } from '@/lib/seo/alternates'
 import { imageObjectJsonLd } from '@/lib/seo/jsonld'
 import { pageMetadata } from '@/lib/seo/page-metadata'
+import { requireLocale } from '@/i18n/require-locale'
 
 type Props = { params: Promise<{ locale: Locale; slug: string }> }
 
@@ -24,7 +25,7 @@ type Props = { params: Promise<{ locale: Locale; slug: string }> }
 export const generateStaticParams = () => []
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { locale, slug } = await params
+  const { locale, slug } = await requireLocale(params)
   const image = await getImage(locale, slug)
   if (!image) return {}
   // A locale without its own title shows Turkish fallback text: noindex, and left out of hreflang.
@@ -35,7 +36,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function ImagePage({ params }: Props) {
-  const { locale, slug } = await params
+  const { locale, slug } = await requireLocale(params)
   setRequestLocale(locale)
   const image = await getImage(locale, slug)
   if (!image) notFound()

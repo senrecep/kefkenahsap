@@ -27,6 +27,7 @@ import { siteUrl } from '@/lib/seo/alternates'
 import { hasWoodSamples } from '@/lib/wood/samples'
 import { articleJsonLd, faqJsonLd } from '@/lib/seo/jsonld'
 import { pageMetadata } from '@/lib/seo/page-metadata'
+import { requireLocale } from '@/i18n/require-locale'
 
 type Props = { params: Promise<{ locale: Locale; slug: string }> }
 
@@ -34,7 +35,7 @@ type Props = { params: Promise<{ locale: Locale; slug: string }> }
 export const generateStaticParams = () => []
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { locale, slug } = await params
+  const { locale, slug } = await requireLocale(params)
   const found = await getGuide(locale, slug)
   if (!found) return {}
   const { guide, paths } = found
@@ -43,7 +44,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function GuidePage({ params }: Props) {
-  const { locale, slug } = await params
+  const { locale, slug } = await requireLocale(params)
   setRequestLocale(locale)
   const found = await getGuide(locale, slug)
   if (!found) notFound()

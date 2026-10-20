@@ -74,6 +74,8 @@ export default buildConfig({
   // CSRF: in a deployed image (SITE_ENV) the auth cookie is accepted only from the site's own origin.
   // Local dev and CI run on varying ports, so no list there (SameSite=Lax cookie + JSON-only AI endpoints still apply).
   csrf: process.env.SITE_ENV && process.env.NEXT_PUBLIC_SITE_URL ? [new URL(process.env.NEXT_PUBLIC_SITE_URL).origin] : [],
+  // Nothing uses GraphQL (the site reads through the Local API); off, scanners get a 404 and the duplicate-type schema build never runs.
+  graphQL: { disable: true },
   collections: [Users, Media, Categories, Tags, Projects, References, Pages, Guides, Regions, Leads, LeadPhotos, AiUsage],
   // Real e-mail only outside tests; without a key Payload logs e-mails to the console.
   email:

@@ -15,17 +15,18 @@ import { getSiteSettings } from '@/lib/data/site'
 import { siteUrl } from '@/lib/seo/alternates'
 import { itemListJsonLd, pageJsonLd } from '@/lib/seo/jsonld'
 import { pageMetadata, staticPaths } from '@/lib/seo/page-metadata'
+import { requireLocale } from '@/i18n/require-locale'
 
 type Params = Promise<{ locale: Locale }>
 
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
-  const { locale } = await params
+  const { locale } = await requireLocale(params)
   const t = await getTranslations({ locale, namespace: 'References' })
   return pageMetadata({ locale, title: t('title'), description: t('description'), paths: await staticPaths('/referanslar') })
 }
 
 export default async function ReferencesPage({ params }: { params: Params }) {
-  const { locale } = await params
+  const { locale } = await requireLocale(params)
   setRequestLocale(locale)
   const [t, refs, cards, settings] = await Promise.all([getTranslations('References'), getReferences(locale), getProjectCards(locale), getSiteSettings(locale)])
   const review = settings.social?.googleReview

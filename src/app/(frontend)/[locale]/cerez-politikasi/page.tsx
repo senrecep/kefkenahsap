@@ -11,12 +11,13 @@ import { CMS_PAGES, getPage, getPageTitles } from '@/lib/data/pages'
 import { KVKK_TEXT_DATE } from '@/lib/leads/validate'
 import { getSiteSettings } from '@/lib/data/site'
 import { cmsPagePaths, pageMetadata } from '@/lib/seo/page-metadata'
+import { requireLocale } from '@/i18n/require-locale'
 
 const SLUGS = CMS_PAGES['/cerez-politikasi']
 type Props = { params: Promise<{ locale: string }> }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { locale } = await params
+  const { locale } = await requireLocale(params)
   const [t, page, settings] = await Promise.all([getTranslations({ locale, namespace: 'Legal' }), getPage(locale as Locale, SLUGS), getSiteSettings(locale as Locale)])
   // An admin-written SEO title is complete; otherwise the layout template appends the company name.
   return pageMetadata({
@@ -28,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function Page({ params }: Props) {
-  const { locale: l } = await params
+  const { locale: l } = await requireLocale(params)
   const locale = l as Locale
   setRequestLocale(locale)
   const [t, format, page, settings] = await Promise.all([getTranslations('Legal'), getFormatter(), getPage(locale, SLUGS), getSiteSettings(locale)])
