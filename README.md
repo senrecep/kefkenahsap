@@ -10,7 +10,7 @@
 [![Next.js](https://img.shields.io/badge/Next.js-16-black?style=flat-square&logo=nextdotjs)](https://nextjs.org)
 [![Payload](https://img.shields.io/badge/Payload-3-000000?style=flat-square&logo=payloadcms)](https://payloadcms.com)
 
-Multilingual portfolio and quote-request site for a woodwork and decking business in Kefken, Kocaeli, built on Next.js and Payload CMS.
+Multilingual portfolio and quote-request website built on Next.js and Payload CMS.
 
 **Live site: [www.kefkenahsap.com](https://www.kefkenahsap.com)**
 
@@ -18,7 +18,7 @@ Multilingual portfolio and quote-request site for a woodwork and decking busines
 
 ## What it is
 
-The website of Kefken Ahşap Dekorasyon, a contractor that builds and installs decks, pergolas, gazebos, fences, stairs, doors, and wood furniture. Visitors browse photos of finished work, read guides, and contact the business on WhatsApp or through a form with photo upload.
+A content-managed portfolio site: visitors browse photos of finished work, read guides, and get in touch on WhatsApp or through a form with photo upload.
 
 - **Five languages:** Turkish, English, Russian, German, Arabic (RTL), with translated URLs and hreflang.
 - **Payload admin** at `/admin` for categories, projects, references, guides, pages, photos, and inquiries.
