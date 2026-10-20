@@ -63,7 +63,7 @@ Code, identifiers, commits, and tests are in English.
 
 ## CI on Pull Requests
 
-CI runs on self-hosted runners that belong to the maintainer, not on GitHub-hosted runners. For that reason the test and e2e jobs only run for branches of this repository. A PR from a fork gets no CI run on those runners, and any workflow run triggered by a fork needs maintainer approval first. The maintainer will run the checks locally or on a branch before merging.
+CI runs on self-hosted runners that belong to the maintainer, not on GitHub-hosted runners. Workflows on pull requests from forks therefore never run without the maintainer's approval, and the maintainer will normally run the checks on a branch of this repository instead before merging.
 
 ## Reporting Issues
 
