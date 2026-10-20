@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "kefkenahsap.com — Next.js 16 + Payload 3",
   "type": "module",
+  "license": "MIT",
   "scripts": {
     "dev": "cross-env NODE_OPTIONS=--no-deprecation next dev",
     "build": "cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=6144\" next build",
