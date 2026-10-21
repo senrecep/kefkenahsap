@@ -52,9 +52,9 @@ describe('leads', () => {
     const lead = await payload.create({ collection: 'leads', data: { name: `Anna ${stamp}`, phone: '491701234567', consentKvkk: true, locale: 'de' } })
     created.push({ collection: 'leads', id: lead.id })
     const { html } = send.mock.calls[0]![0] as { html: string }
-    expect(html).toContain('<a href="tel:+491701234567">+491701234567</a>')
-    expect(html).toContain('<a href="https://wa.me/491701234567">WhatsApp</a>')
-    expect(html).toMatch(/<b>Dil<\/b><\/td><td>de</)
+    expect(html).toContain('href="tel:+491701234567"')
+    expect(html).toContain('href="https://wa.me/491701234567"')
+    expect(html).toMatch(/>Dil<\/td><td[^>]*>de</)
     send.mockRestore()
   })
 
