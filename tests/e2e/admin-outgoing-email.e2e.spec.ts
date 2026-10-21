@@ -62,3 +62,16 @@ test('a lead reply opens as a prefilled draft that is previewed and sent only af
   expect(asked).toContain(`ayse-${run}@example.com`)
   expect((await payload.findByID({ collection: 'outgoing-emails', id, depth: 0 })).status).toBe('draft')
 })
+
+// The notification e-mail's "E-posta ile yanıtla" is usually tapped in a mail app's browser, without an admin session.
+test('the reply link from the notification e-mail survives the login and still prefills', async ({ page }) => {
+  test.setTimeout(120_000)
+  await page.goto(`/admin/collections/outgoing-emails/create?lead=${leadId}`)
+  await page.waitForURL(/\/admin\/login/)
+  await page.fill('#field-email', user.email)
+  await page.fill('#field-password', user.password)
+  await page.click('button[type="submit"]')
+  await page.waitForURL(/\/admin\/collections\/outgoing-emails\/create\?lead=\d+/)
+  await expect(page.locator('#field-to')).toHaveValue(`ayse-${run}@example.com`)
+  await expect(page.locator('#field-subject')).toHaveValue('Talebiniz hakkında — Deck')
+})
