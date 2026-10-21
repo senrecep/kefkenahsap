@@ -14,6 +14,12 @@
         "rule": "overused-font",
         "value": "montserrat",
         "createdAt": "2026-10-17T16:51:03.666Z"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "roboto",
+        "createdAt": "2026-10-21T11:13:13.508Z",
+        "reason": "email system font stack: mail clients cannot load the site's web fonts"
       }
     ]
   }

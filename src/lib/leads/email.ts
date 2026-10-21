@@ -16,11 +16,13 @@ const esc = (s: unknown) => String(s).replace(/[&<>"']/g, (c) => `&#${c.charCode
 
 const FONT = "font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif"
 
-/** Bulletproof button: the colour sits on the table cell, so Outlook (Word engine) renders it too. */
-const button = (href: string, label: string) =>
+/** Bulletproof button: the colour sits on the table cell, so Outlook (Word engine) renders it too. Secondary = outlined, so calling stays the obvious first action. */
+const button = (href: string, label: string, secondary = false) =>
   `<tr><td style="padding:0 0 10px 0"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>` +
-  `<td align="center" bgcolor="#0b7a3e" style="background-color:#0b7a3e;border-radius:6px">` +
-  `<a href="${esc(href)}" style="display:block;padding:14px 20px;${FONT};font-size:16px;line-height:20px;font-weight:600;color:#ffffff;text-decoration:none">${esc(label)}</a>` +
+  (secondary
+    ? `<td align="center" bgcolor="#ffffff" style="background-color:#ffffff;border:2px solid #0b7a3e;border-radius:6px">`
+    : `<td align="center" bgcolor="#0b7a3e" style="background-color:#0b7a3e;border-radius:6px">`) +
+  `<a href="${esc(href)}" style="display:block;padding:${secondary ? '12px' : '14px'} 20px;${FONT};font-size:16px;line-height:20px;font-weight:600;color:${secondary ? '#0b7a3e' : '#ffffff'};text-decoration:none">${esc(label)}</a>` +
   `</td></tr></table></td></tr>`
 
 /** Pure renderer for the new-lead notification. Every lead value is untrusted and escaped. Phone is E.164 digits without "+". */
@@ -46,8 +48,8 @@ export function leadEmail(doc: LeadEmailDoc, siteUrl: string): { subject: string
   const buttons = [
     phone && button(`tel:+${phone}`, 'Ara'),
     phone && button(`https://wa.me/${phone}`, 'WhatsApp'),
-    doc.email && button(`mailto:${doc.email}`, 'E-posta ile yanıtla'),
-    button(panel, 'Talebi panelde aç'),
+    doc.email && button(`mailto:${doc.email}`, 'E-posta ile yanıtla', true),
+    button(panel, 'Talebi panelde aç', true),
   ].filter(Boolean)
 
   const detail = lines
