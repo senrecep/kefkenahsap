@@ -51,6 +51,8 @@ export const Leads: CollectionConfig = {
       { name: 'district', type: 'text', label: 'İlçe' },
     ] },
     { name: 'message', type: 'textarea', label: 'Mesaj' },
+    // #254: reply from the admin (branded e-mail, owner gets a BCC copy).
+    { name: 'reply', type: 'ui', admin: { components: { Field: '/components/admin/OutgoingEmail#LeadEmailButton' } } },
     { name: 'photos', type: 'upload', relationTo: 'lead-photos', hasMany: true, label: 'Fotoğraflar' },
     {
       name: 'status',

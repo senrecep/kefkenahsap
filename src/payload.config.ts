@@ -17,6 +17,7 @@ import { Guides } from './collections/Guides'
 import { Regions } from './collections/Regions'
 import { Leads } from './collections/Leads'
 import { LeadPhotos } from './collections/LeadPhotos'
+import { OutgoingEmails } from './collections/OutgoingEmails'
 import { purgeExpiredLeads } from './jobs/purgeExpiredLeads'
 import { tagImageTask } from './jobs/tagImage'
 import { releaseStuckMediaJobs } from './jobs/releaseStuck'
@@ -76,7 +77,7 @@ export default buildConfig({
   csrf: process.env.SITE_ENV && process.env.NEXT_PUBLIC_SITE_URL ? [new URL(process.env.NEXT_PUBLIC_SITE_URL).origin] : [],
   // Nothing uses GraphQL (the site reads through the Local API); off, scanners get a 404 and the duplicate-type schema build never runs.
   graphQL: { disable: true },
-  collections: [Users, Media, Categories, Tags, Projects, References, Pages, Guides, Regions, Leads, LeadPhotos, AiUsage],
+  collections: [Users, Media, Categories, Tags, Projects, References, Pages, Guides, Regions, Leads, LeadPhotos, OutgoingEmails, AiUsage],
   // Real e-mail only outside tests; without a key Payload logs e-mails to the console.
   email:
     process.env.RESEND_API_KEY && process.env.NODE_ENV !== 'test'

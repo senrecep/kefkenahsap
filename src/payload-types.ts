@@ -78,6 +78,7 @@ export interface Config {
     regions: Region;
     leads: Lead;
     'lead-photos': LeadPhoto;
+    'outgoing-emails': OutgoingEmail;
     'ai-usage': AiUsage;
     redirects: Redirect;
     'payload-kv': PayloadKv;
@@ -109,6 +110,7 @@ export interface Config {
     regions: RegionsSelect<false> | RegionsSelect<true>;
     leads: LeadsSelect<false> | LeadsSelect<true>;
     'lead-photos': LeadPhotosSelect<false> | LeadPhotosSelect<true>;
+    'outgoing-emails': OutgoingEmailsSelect<false> | OutgoingEmailsSelect<true>;
     'ai-usage': AiUsageSelect<false> | AiUsageSelect<true>;
     redirects: RedirectsSelect<false> | RedirectsSelect<true>;
     'payload-kv': PayloadKvSelect<false> | PayloadKvSelect<true>;
@@ -701,6 +703,41 @@ export interface LeadPhoto {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "outgoing-emails".
+ */
+export interface OutgoingEmail {
+  id: number;
+  to: string;
+  toName?: string | null;
+  subject: string;
+  /**
+   * Selamlamayı da siz yazın. İmza (ad, telefon, e-posta) otomatik eklenir.
+   */
+  body: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  };
+  lead?: (number | null) | Lead;
+  status?: ('draft' | 'sent' | 'failed') | null;
+  sentAt?: string | null;
+  error?: string | null;
+  retentionUntil?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "ai-usage".
  */
 export interface AiUsage {
@@ -919,6 +956,10 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'lead-photos';
         value: number | LeadPhoto;
+      } | null)
+    | ({
+        relationTo: 'outgoing-emails';
+        value: number | OutgoingEmail;
       } | null)
     | ({
         relationTo: 'ai-usage';
@@ -1351,6 +1392,23 @@ export interface LeadPhotosSelect<T extends boolean = true> {
               filename?: T;
             };
       };
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "outgoing-emails_select".
+ */
+export interface OutgoingEmailsSelect<T extends boolean = true> {
+  to?: T;
+  toName?: T;
+  subject?: T;
+  body?: T;
+  lead?: T;
+  status?: T;
+  sentAt?: T;
+  error?: T;
+  retentionUntil?: T;
+  updatedAt?: T;
+  createdAt?: T;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -2015,6 +2073,7 @@ export interface TaskPurgeExpiredLeads {
   input?: unknown;
   output: {
     deleted?: number | null;
+    deletedEmails?: number | null;
   };
 }
 /**
