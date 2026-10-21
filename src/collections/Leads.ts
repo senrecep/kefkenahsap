@@ -2,6 +2,7 @@ import type { CollectionAfterChangeHook, CollectionBeforeChangeHook, CollectionC
 import { SystemDateTimeProvider } from 'tsentials/time'
 
 import { isStaff } from '@/access'
+import { leadEmail } from '@/lib/leads/email'
 import { retentionUntil } from '@/lib/leads/validate'
 
 // Server-side only: retention date and the moment consent was given are never taken from client input.
@@ -19,28 +20,10 @@ const notify: CollectionAfterChangeHook = async ({ doc, operation, req }) => {
     req.payload.logger.warn({ lead: doc.id }, 'lead notification skipped: RESEND_API_KEY is not set')
     return doc
   }
-  const esc = (s: string) => String(s).replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`)
-  // Stored as E.164 digits without "+" (validateLead), so the same value dials and opens WhatsApp from any country.
-  const phone = esc(String(doc.phone ?? ''))
-  const rows: [string, unknown, string?][] = [
-    ['Ad', doc.name],
-    ['Telefon', doc.phone, `<a href="tel:+${phone}">+${phone}</a> · <a href="https://wa.me/${phone}">WhatsApp</a>`],
-    ['E-posta', doc.email],
-    ['Hizmet', doc.service],
-    ['Konum', [doc.district, doc.city].filter(Boolean).join(', ')],
-    ['Mesaj', doc.message],
-    ['Sayfa', doc.sourcePage],
-    ['Dil', doc.locale],
-    ['Fotoğraf', doc.photos?.length ? `${doc.photos.length} adet (panelde)` : ''],
-  ]
-  const lines = rows.filter(([, v]) => v)
   try {
     await req.payload.sendEmail({
       to,
-      subject: `Yeni talep #${doc.id}${doc.service ? ` — ${doc.service}` : ''}`,
-      html:
-        `<p>Siteden yeni bir talep geldi.</p><table>${lines.map(([k, v, html]) => `<tr><td><b>${k}</b></td><td>${html ?? esc(String(v))}</td></tr>`).join('')}</table>` +
-        `<p><a href="${process.env.NEXT_PUBLIC_SITE_URL}/admin/collections/leads/${doc.id}">Talebi panelde aç</a></p>`,
+      ...leadEmail(doc, process.env.NEXT_PUBLIC_SITE_URL ?? ''),
     })
   } catch (err) {
     const e = err as Error
