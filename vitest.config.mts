@@ -11,7 +11,8 @@ export default defineConfig({
         extends: true,
         // Pure seams: no DB, no network.
         // next-intl is inlined so its extensionless `next/*` imports resolve (pathname parity test).
-        test: { name: 'unit', environment: 'node', include: ['src/**/*.test.ts', 'src/**/*.test.tsx'], server: { deps: { inline: ['next-intl'] } } },
+        // CI runners share the host with the e2e shards; heavy property and content-scan tests blow the 5 s default there.
+        test: { name: 'unit', environment: 'node', testTimeout: 30_000, include: ['src/**/*.test.ts', 'src/**/*.test.tsx'], server: { deps: { inline: ['next-intl'] } } },
       },
       {
         extends: true,
