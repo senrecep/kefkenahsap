@@ -1,8 +1,10 @@
 // #256: "Şablon seç" on a lead-prefilled draft fills subject + body with the lead's data; the preview shows the buttons;
 // "Gönder" asks again while [..] parts are unfilled (dismissed here, so nothing is ever sent).
+import type { PostgresAdapter } from '@payloadcms/db-postgres'
 import { expect, test, type Page } from '@playwright/test'
 import { getPayload, type Payload } from 'payload'
 
+import { seedEmailTemplates } from '../../src/migrations/20261021_121236_email_templates.js'
 import config from '../../src/payload.config.js'
 import { login } from '../helpers/login'
 
@@ -16,6 +18,8 @@ test.beforeAll(async () => {
   // This process must not mail the lead notification (a real key may be in .env).
   delete process.env.RESEND_API_KEY
   payload = await getPayload({ config })
+  // The migration seeds them; a no-op unless this database's table is empty.
+  await seedEmailTemplates((payload.db as unknown as PostgresAdapter).drizzle as never)
   await payload.create({ collection: 'users', data: user })
   leadId = (await payload.create({ collection: 'leads', data: { name: `Ayşe ${run}`, phone: '905321112233', email: `ayse-${run}@example.com`, service: 'Deck', consentKvkk: true } })).id
   doneTemplateId = (await payload.find({ collection: 'email-templates', where: { name: { equals: 'İş tamamlandı' } }, limit: 1 })).docs[0]!.id
