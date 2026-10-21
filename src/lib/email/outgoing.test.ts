@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { outgoingEmail, recipient, sendDenied, type Signature } from './outgoing'
+import { buttonUrl, outgoingEmail, recipient, sendDenied, type Signature } from './outgoing'
 
 const site = 'https://www.kefkenahsap.com'
 const text = (t: string, format = 0) => ({ type: 'text', text: t, format, detail: 0, mode: 'normal', style: '', version: 1 })
@@ -130,6 +130,49 @@ describe('outgoingEmail', () => {
   it('puts link targets into the plain-text part', () => {
     const { text: plain } = render(doc(block('paragraph', [text('Bakınız '), link('https://www.kefkenahsap.com/tr/deck', 'deck sayfası'), link('javascript:x', ' kötü')])))
     expect(plain.split('\n')[0]).toBe('Bakınız deck sayfası (https://www.kefkenahsap.com/tr/deck) kötü')
+  })
+})
+
+// #256: "Buton" block of the e-mail editor.
+const button = (label: string, url: string, style = 'dolu') => ({ type: 'block', version: 2, format: '', fields: { id: label, blockName: '', blockType: 'button', label, url, style } })
+
+describe('button block (#256)', () => {
+  it('renders a filled button as a bulletproof green table cell, ≥44px, inline styles only', () => {
+    const { html } = render(doc(block('paragraph', [text('Merhaba')]), button("WhatsApp'tan yazın", 'https://wa.me/905322958416')))
+    const cell = html.match(/<table role="presentation" width="100%"[^>]*><tr><td style="padding:0 0 10px 0">.*?<\/table><\/td><\/tr><\/table>/)?.[0]
+    expect(cell).toBeDefined()
+    expect(cell).toContain('<td align="center" bgcolor="#0b7a3e" style="background-color:#0b7a3e;border-radius:6px">')
+    expect(cell).toMatch(/<a href="https:\/\/wa\.me\/905322958416" style="display:block;padding:14px 20px;[^"]*line-height:20px;[^"]*color:#ffffff;[^"]*">WhatsApp&#39;tan yazın<\/a>/)
+    expect(html).not.toContain('class=')
+  })
+
+  it('renders an outlined button with a 2px green border and green text, still ≥44px', () => {
+    const { html } = render(doc(button('Yaptığımız işler', 'https://www.kefkenahsap.com/tr/galeri', 'cerceveli')))
+    expect(html).toContain('<td align="center" bgcolor="#ffffff" style="background-color:#ffffff;border:2px solid #0b7a3e;border-radius:6px">')
+    // 12px + 20px line + 12px + 2 × 2px border = 48px
+    expect(html).toMatch(/<a href="https:\/\/www\.kefkenahsap\.com\/tr\/galeri" style="display:block;padding:12px 20px;[^"]*color:#0b7a3e;[^"]*">Yaptığımız işler<\/a>/)
+  })
+
+  it('escapes the label and URL; an unsafe URL keeps only the label as text', () => {
+    const { html } = render(doc(button('<b>x</b>', 'https://x.co/?a="><script>'), button('kötü', 'javascript:alert(1)')))
+    expect(html).toContain('href="https://x.co/?a=&#34;&#62;&#60;script&#62;"')
+    expect(html).toContain('&#60;b&#62;x&#60;/b&#62;')
+    expect(html.toLowerCase()).not.toContain('javascript:')
+    expect(html).toMatch(/<p style="[^"]+">kötü<\/p>/)
+  })
+
+  it('writes "label: url" on its own paragraph in the plain-text part', () => {
+    const { text: plain } = render(
+      doc(block('paragraph', [text('Fotoğraf gönderin.')]), button("WhatsApp'tan yazın", 'https://wa.me/905322958416'), button('Galeri', 'tel:+905322958416', 'cerceveli'), block('paragraph', [text('İyi günler dileriz,')])),
+    )
+    expect(plain.split('\n--')[0]).toBe("Fotoğraf gönderin.\n\nWhatsApp'tan yazın: https://wa.me/905322958416\n\nGaleri: tel:+905322958416\n\nİyi günler dileriz,\n")
+  })
+})
+
+describe('buttonUrl validation (#256)', () => {
+  it('accepts http, https, mailto and tel; refuses the rest in Turkish', () => {
+    for (const ok of ['https://wa.me/905322958416', 'http://example.com', 'mailto:info@kefkenahsap.com', 'tel:+905322958416']) expect(buttonUrl(ok)).toBe(true)
+    for (const bad of ['javascript:alert(1)', '/tr/galeri', 'www.kefkenahsap.com', '', null]) expect(buttonUrl(bad)).toMatch(/https:\/\//)
   })
 })
 

@@ -1,21 +1,11 @@
-import {
-  BoldFeature,
-  FixedToolbarFeature,
-  HeadingFeature,
-  ItalicFeature,
-  LinkFeature,
-  OrderedListFeature,
-  ParagraphFeature,
-  UnderlineFeature,
-  UnorderedListFeature,
-  lexicalEditor,
-} from '@payloadcms/richtext-lexical'
 import type { CollectionBeforeChangeHook, CollectionConfig, FieldAccess, Where } from 'payload'
 import { SystemDateTimeProvider } from 'tsentials/time'
 
 import { isStaff, roleOf } from '@/access'
 import { outgoingEmailPreviewEndpoint, outgoingEmailSendEndpoint } from '@/endpoints/outgoingEmail'
 import { retentionUntil } from '@/lib/leads/validate'
+
+import { emailBodyEditor } from './emailBody'
 
 // Status and its timestamps are written only by the send endpoint (Local API), never through the admin form or REST.
 const serverOnly: { create: FieldAccess; update: FieldAccess } = { create: () => false, update: () => false }
@@ -43,6 +33,8 @@ export const OutgoingEmails: CollectionConfig = {
   endpoints: [outgoingEmailSendEndpoint, outgoingEmailPreviewEndpoint],
   fields: [
     { name: 'prefill', type: 'ui', admin: { components: { Field: '/components/admin/OutgoingEmail#LeadPrefill' } } },
+    // #256: "Şablon seç" fills the subject and body from an e-mail template (drafts only).
+    { name: 'template', type: 'ui', admin: { components: { Field: '/components/admin/OutgoingEmail#TemplatePicker' } } },
     { type: 'row', fields: [
       { name: 'to', type: 'email', required: true, label: 'Alıcı e-posta' },
       { name: 'toName', type: 'text', label: 'Alıcı adı' },
@@ -54,20 +46,7 @@ export const OutgoingEmails: CollectionConfig = {
       required: true,
       label: 'Metin',
       admin: { description: 'Selamlamayı da siz yazın. İmza (ad, telefon, e-posta) otomatik eklenir.' },
-      editor: lexicalEditor({
-        features: () => [
-          ParagraphFeature(),
-          HeadingFeature({ enabledHeadingSizes: ['h2', 'h3'] }),
-          BoldFeature(),
-          ItalicFeature(),
-          UnderlineFeature(),
-          UnorderedListFeature(),
-          OrderedListFeature(),
-          // No internal links: an e-mail needs a full address (https://, mailto:, tel:).
-          LinkFeature({ enabledCollections: [] }),
-          FixedToolbarFeature(),
-        ],
-      }),
+      editor: emailBodyEditor,
     },
     { name: 'lead', type: 'relationship', relationTo: 'leads', label: 'İlgili talep', admin: { position: 'sidebar' } },
     { name: 'actions', type: 'ui', admin: { position: 'sidebar', components: { Field: '/components/admin/OutgoingEmail#OutgoingEmailActions' } } },
