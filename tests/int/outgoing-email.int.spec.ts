@@ -2,12 +2,13 @@
 import { createLocalReq, getPayload, type Payload } from 'payload'
 import { afterAll, afterEach, beforeAll, describe, expect, it, vi } from 'vitest'
 
-import { outgoingEmailPreviewEndpoint, outgoingEmailSendEndpoint } from '@/endpoints/outgoingEmail'
+import { outgoingEmailPreviewEndpoint, outgoingEmailSendEndpoint, sendLimits } from '@/endpoints/outgoingEmail'
 import config from '@/payload.config'
 
 let payload: Payload
-let staff: Record<string, unknown>
-const created: { collection: 'outgoing-emails' | 'users'; id: number }[] = []
+let staff: Record<string, unknown> // admin: may send to any address
+let editor: Record<string, unknown> // only to the linked lead's own address
+const created: { collection: 'outgoing-emails' | 'users' | 'leads'; id: number }[] = []
 const stamp = Date.now()
 
 const body = (t: string) =>
@@ -24,19 +25,23 @@ const body = (t: string) =>
 
 beforeAll(async () => {
   payload = await getPayload({ config: await config })
-  const user = await payload.create({ collection: 'users', data: { email: `outgoing-${stamp}@local.test`, password: `pw-${stamp}`, name: 'Outgoing', role: 'editor' } })
-  created.push({ collection: 'users', id: user.id })
-  staff = { ...user, collection: 'users' }
+  const mk = async (role: 'admin' | 'editor') => {
+    const u = await payload.create({ collection: 'users', data: { email: `outgoing-${role}-${stamp}@local.test`, password: `pw-${stamp}`, name: 'Outgoing', role } })
+    created.push({ collection: 'users', id: u.id })
+    return { ...u, collection: 'users' }
+  }
+  staff = await mk('admin')
+  editor = await mk('editor')
 })
 afterAll(async () => {
   for (const c of created.reverse()) await payload.delete({ collection: c.collection, id: c.id }).catch(() => {})
 })
 afterEach(() => vi.restoreAllMocks())
 
-async function draft(subject = `Talebiniz hakkında — Deck ${stamp}`) {
+async function draft(subject = `Talebiniz hakkında — Deck ${stamp}`, extra: { to?: string; lead?: number } = {}) {
   const doc = await payload.create({
     collection: 'outgoing-emails',
-    data: { to: 'ayse@example.com', toName: 'Ayşe Yılmaz', subject, body: body('Merhaba Ayşe Hanım, keşif için yarın uygunuz.') },
+    data: { to: 'ayse@example.com', toName: 'Ayşe Yılmaz', subject, body: body('Merhaba Ayşe Hanım, keşif için yarın uygunuz.'), ...extra },
   })
   created.push({ collection: 'outgoing-emails', id: doc.id })
   return doc
@@ -47,8 +52,17 @@ const call = async (endpoint: typeof outgoingEmailSendEndpoint, method: string, 
   return endpoint.handler(req as never)
 }
 const send = (user: unknown, id: number | string) => call(outgoingEmailSendEndpoint, 'POST', user, id)
+async function lead(email: string, retentionUntil?: string) {
+  const send = vi.spyOn(payload, 'sendEmail').mockResolvedValue(undefined as never) // the lead notification
+  const l = await payload.create({ collection: 'leads', data: { name: `Ayşe ${stamp}`, phone: '905321112233', email, consentKvkk: true } })
+  send.mockRestore()
+  if (retentionUntil) await payload.update({ collection: 'leads', id: l.id, data: { retentionUntil } })
+  created.push({ collection: 'leads', id: l.id })
+  return l
+}
 const mockResend = () => {
   process.env.RESEND_API_KEY ||= 're_test'
+  process.env.NEXT_PUBLIC_SITE_URL ||= 'https://www.kefkenahsap.com'
   return vi.spyOn(payload, 'sendEmail').mockResolvedValue({ id: 're_1' } as never)
 }
 
@@ -115,15 +129,81 @@ describe('outgoing e-mails (#254)', () => {
     expect(spy).toHaveBeenCalledTimes(1)
   })
 
-  it('without a Resend key nothing is sent or logged, and the draft stays a draft', async () => {
-    const key = process.env.RESEND_API_KEY
-    delete process.env.RESEND_API_KEY
-    const spy = vi.spyOn(payload, 'sendEmail')
-    const doc = await draft()
-    expect((await send(staff, doc.id)).status).toBe(503)
+  it('without a Resend key or site URL nothing is sent or logged, and the draft stays a draft', async () => {
+    const spy = mockResend()
+    const sentDoc = await draft()
+    expect((await send(staff, sentDoc.id)).status).toBe(200)
+    spy.mockClear()
+    for (const name of ['RESEND_API_KEY', 'NEXT_PUBLIC_SITE_URL']) {
+      const value = process.env[name]
+      delete process.env[name]
+      const doc = await draft()
+      expect((await send(staff, doc.id)).status).toBe(503)
+      expect((await send(staff, sentDoc.id)).status).toBe(409) // "already sent" is answered first
+      expect((await payload.findByID({ collection: 'outgoing-emails', id: doc.id })).status).toBe('draft')
+      process.env[name] = value
+    }
     expect(spy).not.toHaveBeenCalled()
-    expect((await payload.findByID({ collection: 'outgoing-emails', id: doc.id })).status).toBe('draft')
-    if (key) process.env.RESEND_API_KEY = key
+  })
+
+  it('editors send only to the linked lead’s own address; admins anywhere', async () => {
+    const l = await lead(`ayse-${stamp}@example.com`)
+    const spy = mockResend()
+    const ok = await draft(undefined, { lead: l.id, to: `AYSE-${stamp}@Example.com` })
+    const other = await draft(undefined, { lead: l.id, to: 'someone@example.com' })
+    const loose = await draft(undefined, { to: `ayse-${stamp}@example.com` })
+    for (const d of [other, loose]) {
+      const res = await send(editor, d.id)
+      expect(res.status).toBe(403)
+      expect((await res.json()).message).toMatch(/talebin e-posta adresine/)
+    }
+    expect(spy).not.toHaveBeenCalled()
+    expect((await send(editor, ok.id)).status).toBe(200)
+    expect((await send(staff, other.id)).status).toBe(200)
+    expect(spy).toHaveBeenCalledTimes(2)
+  })
+
+  it('sends the row as stored at the claim, not the copy read before it', async () => {
+    const spy = mockResend()
+    const doc = await draft('eski konu')
+    await payload.update({ collection: 'outgoing-emails', id: doc.id, data: { subject: 'yeni konu' } })
+    const read = payload.findByID.bind(payload)
+    vi.spyOn(payload, 'findByID').mockImplementationOnce((async () => doc) as never).mockImplementation(read as never)
+    expect((await send(staff, doc.id)).status).toBe(200)
+    expect((spy.mock.calls[0]![0] as { subject: string }).subject).toBe('yeni konu')
+  })
+
+  it('a hung Resend call ends as "Hata" after the timeout', async () => {
+    process.env.RESEND_API_KEY ||= 're_test'
+    vi.spyOn(payload, 'sendEmail').mockReturnValue(new Promise(() => {}) as never)
+    const limit = sendLimits.timeoutMs
+    sendLimits.timeoutMs = 50
+    const doc = await draft()
+    const res = await send(staff, doc.id)
+    sendLimits.timeoutMs = limit
+    expect(res.status).toBe(502)
+    const after = await payload.findByID({ collection: 'outgoing-emails', id: doc.id })
+    expect(after.status).toBe('failed')
+    expect(after.error).toMatch(/zaman aşımı/i)
+  })
+
+  it('a database error after the send never changes the answer about the e-mail', async () => {
+    process.env.RESEND_API_KEY ||= 're_test'
+    vi.spyOn(payload, 'sendEmail').mockRejectedValue(new Error('boom'))
+    vi.spyOn(payload, 'update').mockRejectedValue(new Error('db down'))
+    const doc = await draft()
+    expect((await send(staff, doc.id)).status).toBe(502)
+  })
+
+  it('only admins delete a sent e-mail', async () => {
+    mockResend()
+    const sent = await draft()
+    await send(staff, sent.id)
+    const open = await draft()
+    await expect(payload.delete({ collection: 'outgoing-emails', id: sent.id, overrideAccess: false, user: editor as never })).rejects.toThrow()
+    await payload.delete({ collection: 'outgoing-emails', id: open.id, overrideAccess: false, user: editor as never })
+    await payload.delete({ collection: 'outgoing-emails', id: sent.id, overrideAccess: false, user: staff as never })
+    await expect(payload.findByID({ collection: 'outgoing-emails', id: sent.id })).rejects.toThrow()
   })
 
   it('refuses anyone who is not signed-in staff', async () => {
@@ -166,5 +246,14 @@ describe('outgoing e-mails (#254)', () => {
     await payload.jobs.runByID({ id: job.id })
     await expect(payload.findByID({ collection: 'outgoing-emails', id: old.id })).rejects.toThrow()
     expect((await payload.findByID({ collection: 'outgoing-emails', id: fresh.id })).id).toBe(fresh.id)
+  })
+
+  it('purging an expired lead also deletes the e-mails written to it', async () => {
+    const l = await lead(`eski-${stamp}@example.com`, '2020-01-01T00:00:00.000Z')
+    const reply = await draft(undefined, { lead: l.id, to: `eski-${stamp}@example.com` })
+    const job = await payload.jobs.queue({ task: 'purgeExpiredLeads', input: {} })
+    await payload.jobs.runByID({ id: job.id })
+    await expect(payload.findByID({ collection: 'leads', id: l.id })).rejects.toThrow()
+    await expect(payload.findByID({ collection: 'outgoing-emails', id: reply.id })).rejects.toThrow()
   })
 })

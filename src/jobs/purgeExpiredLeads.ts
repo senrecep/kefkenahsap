@@ -1,7 +1,7 @@
 import type { TaskConfig } from 'payload'
 import { SystemDateTimeProvider } from 'tsentials/time'
 
-/** Daily KVKK retention: deletes leads past `retentionUntil` and their photos, and expired outgoing e-mails (#254). */
+/** Daily KVKK retention: deletes leads past `retentionUntil` with their photos and the e-mails written to them, and expired outgoing e-mails (#254). */
 export const purgeExpiredLeads: TaskConfig<'purgeExpiredLeads'> = {
   slug: 'purgeExpiredLeads',
   schedule: [{ cron: '0 3 * * *', queue: 'default' }],
@@ -20,6 +20,8 @@ export const purgeExpiredLeads: TaskConfig<'purgeExpiredLeads'> = {
     for (const lead of expired.docs) {
       const photoIds = (lead.photos ?? []).map((p) => (typeof p === 'object' ? p.id : p))
       try {
+        // #254: replies written to this lead hold its address too; they go with it.
+        await req.payload.delete({ collection: 'outgoing-emails', where: { lead: { equals: lead.id } }, req })
         // Lead first: a half-finished run never leaves a lead pointing at deleted photos.
         await req.payload.delete({ collection: 'leads', id: lead.id, req })
         if (photoIds.length) await req.payload.delete({ collection: 'lead-photos', where: { id: { in: photoIds } }, req })

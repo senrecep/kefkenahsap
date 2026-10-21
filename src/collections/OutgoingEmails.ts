@@ -13,7 +13,7 @@ import {
 import type { CollectionBeforeChangeHook, CollectionConfig, FieldAccess, Where } from 'payload'
 import { SystemDateTimeProvider } from 'tsentials/time'
 
-import { isStaff } from '@/access'
+import { isStaff, roleOf } from '@/access'
 import { outgoingEmailPreviewEndpoint, outgoingEmailSendEndpoint } from '@/endpoints/outgoingEmail'
 import { retentionUntil } from '@/lib/leads/validate'
 
@@ -32,7 +32,13 @@ export const OutgoingEmails: CollectionConfig = {
   labels: { singular: 'Giden E-posta', plural: 'Giden E-postalar' },
   admin: { useAsTitle: 'subject', defaultColumns: ['subject', 'to', 'status', 'sentAt'], group: 'Talepler', hideAPIURL: true },
   // A sent e-mail stays exactly what was sent: only drafts can be edited.
-  access: { read: isStaff, create: isStaff, update: (args) => isStaff(args) && ({ status: { equals: 'draft' } } satisfies Where), delete: isStaff },
+  access: {
+    read: isStaff,
+    create: isStaff,
+    update: (args) => isStaff(args) && ({ status: { equals: 'draft' } } satisfies Where),
+    // Owner decision: the record of a sent e-mail is removed only by an admin (or by the retention job).
+    delete: ({ req }) => (roleOf(req.user) === 'admin' ? true : Boolean(roleOf(req.user)) && ({ status: { not_equals: 'sent' } } satisfies Where)),
+  },
   hooks: { beforeChange: [freshDraft] },
   endpoints: [outgoingEmailSendEndpoint, outgoingEmailPreviewEndpoint],
   fields: [

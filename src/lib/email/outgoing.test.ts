@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { outgoingEmail, recipient, type Signature } from './outgoing'
+import { outgoingEmail, recipient, sendDenied, type Signature } from './outgoing'
 
 const site = 'https://www.kefkenahsap.com'
 const text = (t: string, format = 0) => ({ type: 'text', text: t, format, detail: 0, mode: 'normal', style: '', version: 1 })
@@ -139,5 +139,18 @@ describe('recipient', () => {
     expect(recipient('a@b.co', 'Ayşe "Y" <x>, evil@x.com;\r\nBcc: z@z.co\\')).toBe('"Ayşe Y x evil@x.com Bcc: z@z.co" <a@b.co>')
     expect(recipient('a@b.co', '  ')).toBe('a@b.co')
     expect(recipient('a@b.co', null)).toBe('a@b.co')
+  })
+})
+
+describe('sendDenied', () => {
+  it('lets admins send anywhere', () => {
+    expect(sendDenied({ role: 'admin', to: 'x@y.co' })).toBeUndefined()
+  })
+  it('lets editors send only to the linked lead’s own address (any case)', () => {
+    expect(sendDenied({ role: 'editor', to: 'Ayse@Example.com', leadEmail: 'ayse@example.COM' })).toBeUndefined()
+    expect(sendDenied({ role: 'editor', to: 'other@example.com', leadEmail: 'ayse@example.com' })).toMatch(/talebin e-posta adresine/)
+    expect(sendDenied({ role: 'editor', to: 'ayse@example.com' })).toMatch(/talebin e-posta adresine/)
+    expect(sendDenied({ role: 'editor', to: 'ayse@example.com', leadEmail: '' })).toMatch(/talebin e-posta adresine/)
+    expect(sendDenied({ role: undefined, to: 'ayse@example.com', leadEmail: 'ayse@example.com' })).toMatch(/yetkiniz yok/)
   })
 })

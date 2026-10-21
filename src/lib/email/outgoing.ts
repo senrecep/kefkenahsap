@@ -129,3 +129,16 @@ export function outgoingEmail({
 
   return { html, text }
 }
+
+/**
+ * Owner decision (#254 review): admins may write to any address; other staff only reply to a lead, at the address that
+ * lead left. Returns the Turkish refusal, or undefined when sending is allowed.
+ */
+export function sendDenied({ role, to, leadEmail }: { role?: string; to: string; leadEmail?: string | null }): string | undefined {
+  if (role === 'admin') return undefined
+  if (!role) return 'Bu işlem için yetkiniz yok.'
+  const lead = leadEmail?.trim().toLowerCase()
+  return lead && lead === to.trim().toLowerCase()
+    ? undefined
+    : 'Yalnızca bağlı talebin e-posta adresine gönderebilirsiniz. Başka adrese göndermek için yöneticiye başvurun.'
+}
