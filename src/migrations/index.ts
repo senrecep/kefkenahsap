@@ -30,6 +30,7 @@ import * as migration_20261018_095155_seo_retired_stems from './20261018_095155_
 import * as migration_20261018_143027_ai_failure from './20261018_143027_ai_failure';
 import * as migration_20261019_092522_google_review from './20261019_092522_google_review';
 import * as migration_20261021_113137_outgoing_emails from './20261021_113137_outgoing_emails';
+import * as migration_20261021_121236_email_templates from './20261021_121236_email_templates';
 
 export const migrations = [
   {
@@ -190,6 +191,11 @@ export const migrations = [
   {
     up: migration_20261021_113137_outgoing_emails.up,
     down: migration_20261021_113137_outgoing_emails.down,
-    name: '20261021_113137_outgoing_emails'
+    name: '20261021_113137_outgoing_emails',
+  },
+  {
+    up: migration_20261021_121236_email_templates.up,
+    down: migration_20261021_121236_email_templates.down,
+    name: '20261021_121236_email_templates'
   },
 ];

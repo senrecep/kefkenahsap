@@ -100,7 +100,8 @@ Tüm metin alanları `localized: true`. Taslak/versiyon (`versions.drafts`) + Li
 | **references** | name, location, projects (rel), logo (opsiyonel, izinliyse) |
 | **pages** | Hakkımızda, KVKK, Çerez Politikası, Süreç; blocks |
 | **leads** (Talepler) | name*, phone*, email, service, city/district, message, photos (≤5, private disk volume), consentKvkk*, locale, sourcePage, utm, status (`new` / `contacted` / `closed`), retentionUntil (+2 yıl, job ile silinir) |
-| **outgoing-emails** (Giden E-postalar, #254) | to*, toName, subject*, body* (Lexical: paragraf, kalın/italik/altı çizili, link, listeler, H2–H3), lead, status (`draft` / `sent` / `failed`, yalnızca sunucu yazar), sentAt, error, retentionUntil (+2 yıl, aynı job ile silinir) |
+| **outgoing-emails** (Giden E-postalar, #254) | to*, toName, subject*, body* (Lexical: paragraf, kalın/italik/altı çizili, link, listeler, H2–H3, Buton bloğu #256), lead, status (`draft` / `sent` / `failed`, yalnızca sunucu yazar), sentAt, error, retentionUntil (+2 yıl, aynı job ile silinir) |
+| **email-templates** (E-posta Şablonları, #256) | name* (benzersiz), description, subject*, body* (giden e-postayla aynı editör + Buton bloğu), order. `{ad}`/`{hizmet}`/`{konum}` talepten dolar. 7 hazır şablon migration ile (tablo boşsa) |
 | **redirects** | `@payloadcms/plugin-redirects` (from, to, type 301) |
 | **aiUsage** | task, model, tokensIn/Out, costUsd (OpenRouter generation endpoint'inden), docRef, createdAt |
 
@@ -313,6 +314,7 @@ F2: Rehber dizini + yazı şablonu (TOC, FAQ, "AI'ya kopyala" butonu, yazar kutu
 - Bölge sayfaları (admin'den, publishGate'li), OGL 3D numune.
 - **Malzeme ve teklif hesaplayıcı** (sahip kararı 2026-10-19, #233; ayrıntı `docs/calculator/PLAN.md`): kereste m³ ve tutarı (mm/cm/m birim seçimi, fire %), ek kalemler (götürü dahil, cihazda hatırlanır), KDV hariç fiyat + KDV anahtarı (20/10/1/0), kuruş hassasiyetinde toplamlar; paylaşım linki (URL parçası, sunucuya gitmez) + cihazda kayıt; markalı PNG (Canvas) ve PDF (yazdırma). Sunucu kaydı ve yeni bağımlılık yok. Eski `wood-material-calculator` uygulamasının yerini alır.
 - **Giden e-posta** (sahip onayı 2026-10-21, #254): panelden markalı e-posta (talep bildirimiyle aynı kabuk + Site Bilgileri'nden imza). Önce taslak, sonra onaylı "Gönder" (bir kez); `info@` adına, sahibine BCC; "Önizle" yeni sekmede. Talepten ve talep bildirimindeki "E-posta ile yanıtla"dan dolu taslak açılır. KVKK: +2 yıl sonra silinir.
+- **E-posta şablonları** (sahip onayı 2026-10-21, #256): taslakta "Şablon seç" konu + metni doldurur (`create?lead=&template=` de çalışır); `{ad}`/`{hizmet}`/`{konum}` talepten, boş olanlar `[ad]` olarak kalır. Metinde Buton bloğu (dolu / çerçeveli; http/https/mailto/tel). Doldurulmamış `[...]`/`{...}` varsa "Gönder" ek onay ister. 7 hazır şablon (teklif cevabı, keşif teyidi, fiyat teklifi, hatırlatma, iş başlangıcı, iş tamamlandı, nazik ret).
 - **Faz 2 takip işi: deck / zemin hesaplayıcısı** (m² → tahta, kiriş, vida/klips, fire). Sabitler Murat Şen'den gelecek; gelmeden başlanmaz.
 - Kategori metinleri + SSS'lerin tamamlanması; proje kayıtlarının zenginleştirilmesi.
 

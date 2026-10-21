@@ -4,7 +4,7 @@ import { convertLexicalToPlaintext, type PlaintextConverters } from '@payloadcms
 
 import { normalizeTrPhone, whatsappUrl } from '@/lib/whatsapp'
 
-import { FONT, emailShell, esc } from './layout'
+import { FONT, button, emailShell, esc } from './layout'
 
 /** From Site Bilgileri; an empty field is left out of the signature. */
 export type Signature = {
@@ -23,6 +23,13 @@ export const safeHref = (url: unknown): string | undefined => {
   const u = typeof url === 'string' ? url.trim() : ''
   return /^(https?:\/\/|mailto:|tel:)/i.test(u) ? u : undefined
 }
+
+/** Field validation of the "Buton" block's address (#256): the same schemes `safeHref` turns into links. */
+export const buttonUrl = (url: unknown): true | string =>
+  safeHref(url) ? true : 'Adres https://, http://, mailto: ya da tel: ile başlamalı (örn. https://wa.me/90532…).'
+
+/** "Buton" block (#256): label, address, `dolu` (filled) or `cerceveli` (outlined). */
+type ButtonNode = { fields: { blockType: string; label?: string | null; url?: string | null; style?: string | null } }
 
 // One converter for both `link` and `autolink` nodes.
 type LinkLike = { children: SerializedLexicalNode[]; fields?: { url?: string | null; linkType?: string | null } }
@@ -51,6 +58,17 @@ const HTML: HTMLConverters = {
   listitem: ({ node, nodesToHTML }) => `<li style="margin:0 0 4px 0">${nodesToHTML({ nodes: node.children }).join('')}</li>`,
   link: htmlLink,
   autolink: htmlLink,
+  // One button per row: the shell's bulletproof button (as in the lead notification) in its own table, or the bare label
+  // when the address is not safe.
+  blocks: {
+    button: ({ node }: { node: ButtonNode }) => {
+      const href = safeHref(node.fields.url)
+      const label = node.fields.label ?? ''
+      return href
+        ? `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 6px 0">${button(href, label, node.fields.style === 'cerceveli')}</table>`
+        : `<p style="margin:0 0 16px 0">${esc(label)}</p>`
+    },
+  },
   unknown: () => '',
 }
 
@@ -59,7 +77,17 @@ const plainLink = ({ node, nodesToPlaintext }: { node: LinkLike; nodesToPlaintex
   const href = linkHref(node)
   return href && href !== label ? `${label} (${href})` : label
 }
-const PLAIN: PlaintextConverters = { link: plainLink, autolink: plainLink }
+const PLAIN: PlaintextConverters = {
+  link: plainLink,
+  autolink: plainLink,
+  // Its own paragraph: the default converter adds the blank line only before paragraphs, headings and lists.
+  blocks: {
+    button: ({ node, childIndex }: { node: ButtonNode; childIndex: number }) => {
+      const href = safeHref(node.fields.url)
+      return `${childIndex ? '\n\n' : ''}${node.fields.label ?? ''}${href ? `: ${href}` : ''}`
+    },
+  },
+}
 
 const host = (siteUrl: string) => (URL.canParse(siteUrl) ? new URL(siteUrl).host : '')
 

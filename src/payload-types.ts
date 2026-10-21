@@ -79,6 +79,7 @@ export interface Config {
     leads: Lead;
     'lead-photos': LeadPhoto;
     'outgoing-emails': OutgoingEmail;
+    'email-templates': EmailTemplate;
     'ai-usage': AiUsage;
     redirects: Redirect;
     'payload-kv': PayloadKv;
@@ -111,6 +112,7 @@ export interface Config {
     leads: LeadsSelect<false> | LeadsSelect<true>;
     'lead-photos': LeadPhotosSelect<false> | LeadPhotosSelect<true>;
     'outgoing-emails': OutgoingEmailsSelect<false> | OutgoingEmailsSelect<true>;
+    'email-templates': EmailTemplatesSelect<false> | EmailTemplatesSelect<true>;
     'ai-usage': AiUsageSelect<false> | AiUsageSelect<true>;
     redirects: RedirectsSelect<false> | RedirectsSelect<true>;
     'payload-kv': PayloadKvSelect<false> | PayloadKvSelect<true>;
@@ -738,6 +740,43 @@ export interface OutgoingEmail {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "email-templates".
+ */
+export interface EmailTemplate {
+  id: number;
+  name: string;
+  description?: string | null;
+  /**
+   * {ad}, {hizmet}, {konum} talepten otomatik dolar.
+   */
+  subject: string;
+  /**
+   * {ad}, {hizmet}, {konum} talepten otomatik dolar; [köşeli parantezli] yerleri gönderirken siz doldurun. İmza otomatik eklenir.
+   */
+  body: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  };
+  /**
+   * Küçük sayı listede önce gelir.
+   */
+  order?: number | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "ai-usage".
  */
 export interface AiUsage {
@@ -960,6 +999,10 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'outgoing-emails';
         value: number | OutgoingEmail;
+      } | null)
+    | ({
+        relationTo: 'email-templates';
+        value: number | EmailTemplate;
       } | null)
     | ({
         relationTo: 'ai-usage';
@@ -1407,6 +1450,19 @@ export interface OutgoingEmailsSelect<T extends boolean = true> {
   sentAt?: T;
   error?: T;
   retentionUntil?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "email-templates_select".
+ */
+export interface EmailTemplatesSelect<T extends boolean = true> {
+  name?: T;
+  description?: T;
+  subject?: T;
+  body?: T;
+  order?: T;
   updatedAt?: T;
   createdAt?: T;
 }
