@@ -18,6 +18,8 @@ export type LeadEmailDoc = {
 export function leadEmail(doc: LeadEmailDoc, siteUrl: string): { subject: string; html: string; text: string } {
   const phone = String(doc.phone ?? '').replace(/\D/g, '')
   const panel = `${siteUrl}/admin/collections/leads/${doc.id}`
+  // #254: a branded reply written in the admin (prefilled from this lead), not the mail app.
+  const reply = `${siteUrl}/admin/collections/outgoing-emails/create?lead=${doc.id}`
   const place = [doc.district, doc.city].filter(Boolean).join(', ')
   const rows: [string, string, string?][] = [
     ['Ad', String(doc.name ?? '')],
@@ -37,7 +39,7 @@ export function leadEmail(doc: LeadEmailDoc, siteUrl: string): { subject: string
   const buttons = [
     phone && button(`tel:+${phone}`, 'Ara'),
     phone && button(`https://wa.me/${phone}`, 'WhatsApp'),
-    doc.email && button(`mailto:${doc.email}`, 'E-posta ile yanıtla', true),
+    doc.email && button(reply, 'E-posta ile yanıtla', true),
     button(panel, 'Talebi panelde aç', true),
   ].filter(Boolean)
 
@@ -69,7 +71,7 @@ export function leadEmail(doc: LeadEmailDoc, siteUrl: string): { subject: string
     '',
     phone && `Ara: tel:+${phone}`,
     phone && `WhatsApp: https://wa.me/${phone}`,
-    doc.email && `E-posta ile yanıtla: mailto:${doc.email}`,
+    doc.email && `E-posta ile yanıtla: ${reply}`,
     `Talebi panelde aç: ${panel}`,
     '',
     'Bu e-posta kefkenahsap.com iletişim formundan otomatik gönderildi.',

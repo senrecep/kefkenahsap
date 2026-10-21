@@ -45,11 +45,13 @@ describe('leadEmail', () => {
     expect(html).toContain('2 adet (panelde)')
   })
 
-  it('shows the mailto button only when an email is given', () => {
-    expect(leadEmail(base, site).html).not.toContain('mailto:')
-    const { html } = leadEmail({ ...base, email: 'a@b.co' }, site)
-    expect(html).toContain('href="mailto:a@b.co"')
+  it('the reply button opens a prefilled admin e-mail (#254), only when an email is given', () => {
+    expect(leadEmail(base, site).html).not.toContain('E-posta ile yanıtla')
+    const { html, text } = leadEmail({ ...base, email: 'a@b.co' }, site)
+    expect(html).toContain('href="https://kefkenahsap.com/admin/collections/outgoing-emails/create?lead=42"')
     expect(html).toContain('E-posta ile yanıtla')
+    expect(html).not.toContain('mailto:')
+    expect(text).toContain('E-posta ile yanıtla: https://kefkenahsap.com/admin/collections/outgoing-emails/create?lead=42')
   })
 
   it('includes the panel link and the logo', () => {
