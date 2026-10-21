@@ -100,6 +100,7 @@ Tüm metin alanları `localized: true`. Taslak/versiyon (`versions.drafts`) + Li
 | **references** | name, location, projects (rel), logo (opsiyonel, izinliyse) |
 | **pages** | Hakkımızda, KVKK, Çerez Politikası, Süreç; blocks |
 | **leads** (Talepler) | name*, phone*, email, service, city/district, message, photos (≤5, private disk volume), consentKvkk*, locale, sourcePage, utm, status (`new` / `contacted` / `closed`), retentionUntil (+2 yıl, job ile silinir) |
+| **outgoing-emails** (Giden E-postalar, #254) | to*, toName, subject*, body* (Lexical: paragraf, kalın/italik/altı çizili, link, listeler, H2–H3), lead, status (`draft` / `sent` / `failed`, yalnızca sunucu yazar), sentAt, error, retentionUntil (+2 yıl, aynı job ile silinir) |
 | **redirects** | `@payloadcms/plugin-redirects` (from, to, type 301) |
 | **aiUsage** | task, model, tokensIn/Out, costUsd (OpenRouter generation endpoint'inden), docRef, createdAt |
 
@@ -110,7 +111,7 @@ Tüm metin alanları `localized: true`. Taslak/versiyon (`versions.drafts`) + Li
 - **aiSettings**: görev bazlı model zinciri (bkz. §8), aylık bütçe limiti, terim sözlüğü (TR↔EN↔…).
 
 ### Admin deneyimi (60 yaş testi)
-- Editör rolü: sol menüde yalnızca **Galeri, Projeler, Talepler, Yazılar, Site Bilgileri**; geri kalanı gizli.
+- Editör rolü: sol menüde yalnızca **Galeri, Projeler, Talepler, Giden E-postalar, Yazılar, Site Bilgileri**; geri kalanı gizli.
 - **Özel "Galeri" view'u** (`/admin/galeri`, mobil öncelikli):
   1. Üstte büyük kategori/proje seçici.
   2. "Fotoğraf ekle" → kamera/galeri, çoklu seçim; tarayıcıda 2560px'e küçültme + EXIF GPS temizleme; ilerleme çubuğu.
@@ -118,7 +119,7 @@ Tüm metin alanları `localized: true`. Taslak/versiyon (`versions.drafts`) + Li
   4. Büyük küçük resimlerle sürükle-bırak sıralama (dokunmatikte uzun-bas-sürükle; ayrıca ↑↓ butonları erişilebilirlik için).
 - PWA manifest (admin), ana ekrana eklenebilir.
 - Dokunma hedefleri ≥48px, admin yazı boyutu büyütülmüş, TR arayüz.
-- Talepler: yeni talep e-postası + admin listesinde "Ara / WhatsApp'la yaz" butonları.
+- Talepler: yeni talep e-postası + admin listesinde "Ara / WhatsApp'la yaz" butonları. Yanıt: talepte "E-posta gönder" (#254).
 
 ---
 
@@ -311,6 +312,7 @@ F2: Rehber dizini + yazı şablonu (TOC, FAQ, "AI'ya kopyala" butonu, yazar kutu
 - Admin "AI ile çevir" / "AI ile taslak" butonları, aiSettings model seçici (OpenRouter `/models` listesi), maliyet paneli.
 - Bölge sayfaları (admin'den, publishGate'li), OGL 3D numune.
 - **Malzeme ve teklif hesaplayıcı** (sahip kararı 2026-10-19, #233; ayrıntı `docs/calculator/PLAN.md`): kereste m³ ve tutarı (mm/cm/m birim seçimi, fire %), ek kalemler (götürü dahil, cihazda hatırlanır), KDV hariç fiyat + KDV anahtarı (20/10/1/0), kuruş hassasiyetinde toplamlar; paylaşım linki (URL parçası, sunucuya gitmez) + cihazda kayıt; markalı PNG (Canvas) ve PDF (yazdırma). Sunucu kaydı ve yeni bağımlılık yok. Eski `wood-material-calculator` uygulamasının yerini alır.
+- **Giden e-posta** (sahip onayı 2026-10-21, #254): panelden markalı e-posta (talep bildirimiyle aynı kabuk + Site Bilgileri'nden imza). Önce taslak, sonra onaylı "Gönder" (bir kez); `info@` adına, sahibine BCC; "Önizle" yeni sekmede. Talepten ve talep bildirimindeki "E-posta ile yanıtla"dan dolu taslak açılır. KVKK: +2 yıl sonra silinir.
 - **Faz 2 takip işi: deck / zemin hesaplayıcısı** (m² → tahta, kiriş, vida/klips, fire). Sabitler Murat Şen'den gelecek; gelmeden başlanmaz.
 - Kategori metinleri + SSS'lerin tamamlanması; proje kayıtlarının zenginleştirilmesi.
 

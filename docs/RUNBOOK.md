@@ -250,8 +250,9 @@ SEED_REMOTE=1 bun run payload run scripts/seed/text-fixes-180.ts -- --yes
 
 ### Monthly: delete notification mails and WhatsApp chats older than 2 years (KVKK notice, #195)
 
-The privacy notice promises that notification e-mails and WhatsApp messages are kept for 2 years. Nothing deletes them automatically, so once a month:
+The privacy notice promises that notification e-mails and WhatsApp messages are kept for 2 years. In the admin, the daily retention job deletes leads, their photos and outgoing e-mails ("Giden E-postalar") after 2 years; when a lead is deleted, the e-mails written to it go with it. Nothing deletes the mailbox and WhatsApp copies automatically, so once a month:
 - Gmail (the `LEADS_NOTIFY_EMAIL` inbox): search `older_than:2y from:<sender>`, where `<sender>` is the Resend from-address of the "Yeni talep" mails. Select all results, delete them, then empty the Bin.
+- Gmail, same inbox: also search `older_than:2y from:info@kefkenahsap.com`. These are the BCC copies of e-mails sent from the admin ("Giden E-postalar", #254). Delete them the same way.
 - WhatsApp (the business phone): delete chats with customers whose last message is older than 2 years.
 
 - **After saving in the admin, the public page shows the new version on the next load** (#192). The revalidate hooks expire the cached data at once (`revalidateTag(tag, { expire: 0 })` in `src/hooks/revalidate.ts`), so the first visit after a save waits for a fresh render (a second or two) instead of showing the old page. Before #192 they used `'max'` (stale-while-revalidate): the first load after a save showed the old version, the next one the new. Still possible after a save: a tab that was already open keeps its page until it is reloaded, and a scripted seed run (no Next runtime) needs an app restart, as the seed sections below say.
