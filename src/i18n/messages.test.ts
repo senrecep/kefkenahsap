@@ -12,3 +12,11 @@ describe('messages', () => {
     expect(keys(await load(l)).sort()).toEqual(keys(await load(routing.defaultLocale)).sort())
   })
 })
+
+// Search results cut a title at ~60 characters; the homepage title is the one shared most.
+describe('Home.metaTitle', () => {
+  it.each(routing.locales)('%s fits in 60 characters', async (l) => {
+    const { Home } = (await load(l)) as { Home: { metaTitle: string } }
+    expect(Home.metaTitle.length).toBeLessThanOrEqual(60)
+  })
+})
