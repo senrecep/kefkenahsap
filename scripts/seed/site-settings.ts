@@ -18,7 +18,7 @@ const EN: SiteSettingsOverlay = {
   ],
   whatsappTemplates: EN_WHATSAPP_TEMPLATES,
   defaultDescription:
-    'Kefken Ahşap Dekorasyon builds and installs timber decking, pergolas, gazebos, railings, stairs and outdoor woodwork from its workshop in Arnavutköy, Istanbul — and maintains and repairs them too.',
+    'We build timber decks, pergolas, gazebos, railings and stairs in our Arnavutköy, Istanbul workshop and install them on site. We also repair and maintain them.',
 }
 
 const TR = {
@@ -55,7 +55,7 @@ const TR = {
     facebook: 'https://www.facebook.com/kefkenahsapdekorasyon',
   },
   defaultDescription:
-    "Kefken Ahşap Dekorasyon: İstanbul Arnavutköy'deki atölyemizde ahşap deck, pergola, kamelya, korkuluk, merdiven ve dış mekân ahşap işlerini imal edip monte ediyoruz. Bakım ve tamir de yapıyoruz.",
+    "İstanbul Arnavutköy'deki atölyemizde ahşap deck, pergola, kamelya, korkuluk ve merdiven imal edip monte ediyoruz. Bakım ve tamir de yapıyoruz.",
 }
 
 /**

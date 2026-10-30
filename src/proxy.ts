@@ -42,8 +42,8 @@ export default function proxy(req: NextRequest) {
     return legacyRedirect(to, status)
   }
 
-  // Admin PWA assets hold no secrets; browsers fetch the manifest without credentials, so exempt them (installability on dev).
-  if (pathname === '/admin.webmanifest' || pathname.startsWith('/brand/pwa-')) return NextResponse.next()
+  // PWA manifests and icons hold no secrets; browsers fetch the manifest without credentials, so exempt them (installability on dev).
+  if (pathname === '/admin.webmanifest' || pathname === '/site.webmanifest' || pathname.startsWith('/brand/pwa-')) return NextResponse.next()
 
   // The deployed development environment sits entirely behind HTTP Basic auth (pages, admin, API, files)
   // and fails closed when the credential is missing. SITE_BASIC_AUTH=off opens it on purpose (pages stay noindex).

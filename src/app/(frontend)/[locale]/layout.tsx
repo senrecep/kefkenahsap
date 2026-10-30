@@ -41,6 +41,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const ogImage = await siteOgImageFor(locale, settings.defaultOgImage)
   return {
     metadataBase: new URL(siteUrl()),
+    // Public-site manifest; the admin links its own /admin-scoped one (payload.config.ts).
+    manifest: '/site.webmanifest',
     title: { template: `%s | ${settings.companyName}`, default: settings.companyName },
     ...(settings.defaultDescription ? { description: settings.defaultDescription } : {}),
     openGraph: { type: 'website', siteName: settings.companyName, locale: ogLocale(locale), images: [ogImage] },

@@ -1657,6 +1657,9 @@ export interface SiteSetting {
      */
     googleReview?: string | null;
   };
+  /**
+   * En fazla 160 karakter; Google daha uzununu keser.
+   */
   defaultDescription?: string | null;
   defaultOgImage?: (number | null) | Media;
   /**

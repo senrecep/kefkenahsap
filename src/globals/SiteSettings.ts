@@ -196,7 +196,13 @@ export const SiteSettings: GlobalConfig = {
                 },
               ],
             },
-            { name: 'defaultDescription', type: 'textarea', localized: true, label: 'Varsayılan meta açıklama' },
+            {
+              name: 'defaultDescription',
+              type: 'textarea',
+              localized: true,
+              label: 'Varsayılan meta açıklama',
+              admin: { description: 'En fazla 160 karakter; Google daha uzununu keser.' },
+            },
             { name: 'defaultOgImage', type: 'upload', relationTo: 'media', label: 'Varsayılan paylaşım görseli (WhatsApp, Facebook)' },
             {
               name: 'gaId',

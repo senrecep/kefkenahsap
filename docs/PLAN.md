@@ -119,6 +119,7 @@ Tüm metin alanları `localized: true`. Taslak/versiyon (`versions.drafts`) + Li
   3. Yüklenen her görsel "AI düşünüyor…" → "Onay bekliyor" rozetiyle düşer; karta dokununca önerilen başlık/alt metin, **tek tuş "Onayla"**, "Düzenle", "Gizle".
   4. Büyük küçük resimlerle sürükle-bırak sıralama (dokunmatikte uzun-bas-sürükle; ayrıca ↑↓ butonları erişilebilirlik için).
 - PWA manifest (admin), ana ekrana eklenebilir.
+- Public site: `favicon.ico` + 16/32 PNG ikon + `site.webmanifest` (scope `/`; admin kendi `/admin` manifestini korur) (#258).
 - Dokunma hedefleri ≥48px, admin yazı boyutu büyütülmüş, TR arayüz.
 - Talepler: yeni talep e-postası + admin listesinde "Ara / WhatsApp'la yaz" butonları. Yanıt: talepte "E-posta gönder" (#254).
 
