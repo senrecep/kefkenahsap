@@ -18,7 +18,7 @@ const EN: SiteSettingsOverlay = {
   ],
   whatsappTemplates: EN_WHATSAPP_TEMPLATES,
   defaultDescription:
-    'Timber decking, pergolas, gazebos, railings and stairs, built in our workshop in Arnavutköy, Istanbul and installed on site. We repair and maintain them too.',
+    'We build timber decks, pergolas, gazebos, railings and stairs in our Arnavutköy, Istanbul workshop and install them on site. We also repair and maintain them.',
 }
 
 const TR = {
